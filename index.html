@@ -1199,7 +1199,7 @@
         <select class="sel-tts-voice" title="読み上げに使う音声を選択"></select>
       </div>
 
-      <h2>本文で使用した単語一覧（このレッスン）</h2>
+      <h2>このレッスンの新出単語（本文で赤字）</h2>
       <div class="vocab-current" id="vocab-beginner"></div>
 
       <h2 class="cumulative-heading">このレッスンまでに累計で出た単語</h2>
@@ -10149,7 +10149,7 @@
         <button class="btn-next-lesson" type="button" data-book="middle">次のレッスンへ →</button>
       </div>
 
-      <h2>本文で使用した単語一覧（このレッスン）</h2>
+      <h2>このレッスンの新出単語（本文で赤字）</h2>
       <div class="vocab-current" id="vocab-middle"></div>
 
 
@@ -13484,7 +13484,7 @@
         <button class="btn-next-lesson" type="button" data-book="high1">次のレッスンへ →</button>
       </div>
 
-      <h2>本文で使用した単語一覧（このレッスン）</h2>
+      <h2>このレッスンの新出単語（本文で赤字）</h2>
       <div class="vocab-current" id="vocab-high1"></div>
 
 
@@ -17285,7 +17285,7 @@
         <button class="btn-next-lesson" type="button" data-book="high2">次のレッスンへ →</button>
       </div>
 
-      <h2>本文で使用した単語一覧（このレッスン）</h2>
+      <h2>このレッスンの新出単語（本文で赤字）</h2>
       <div class="vocab-current" id="vocab-high2"></div>
 
 
@@ -20363,7 +20363,7 @@
         <button class="btn-next-lesson" type="button" data-book="high3">次のレッスンへ →</button>
       </div>
 
-      <h2>本文で使用した単語一覧（このレッスン）</h2>
+      <h2>このレッスンの新出単語（本文で赤字）</h2>
       <div class="vocab-current" id="vocab-high3"></div>
 
 
@@ -20499,13 +20499,7 @@
         isNew: el.classList.contains('new-word')
       });
     });
-    current.querySelectorAll('.we').forEach(el => {
-      const base = (el.getAttribute('data-base-saved') || '').toLowerCase();
-      if(!base || thisMap.has(base)) return;
-      thisMap.set(base, {
-        base, ipa: '', ja: el.getAttribute('data-ja') || '', pos: '',
-        isNew: el.classList.contains('new-word')
-      });
+    // (.we loop removed — only .w featured words counted)
     });
     function renderTable(rows, targetEl){
       const t = document.createElement('table');
@@ -20801,7 +20795,7 @@ function buildQuiz(book, idStr){
     // Collect unique new-word (base,ja) pairs from current lesson
     const seen = new Set();
     const newWords = [];
-    lesson.querySelectorAll('.w.new-word, .we.new-word').forEach(el => {
+    lesson.querySelectorAll('.w.new-word').forEach(el => {
       const base = (el.getAttribute('data-base-saved') || '').toLowerCase();
       const ja = (el.getAttribute('data-ja') || '').trim();
       if(!base || !ja || seen.has(base)) return;

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>歌と日本語混じりで覚える英文サイト</title>
+<title>歌と日本語混じりで覚える英語学習サイト</title>
 <style>
   :root {
     --fg: #1f2937;
@@ -277,7 +277,7 @@
     font-size: 2rem; font-weight: 700;
     box-shadow: 0 8px 24px rgba(0,0,0,0.25);
     z-index: 9999;
-    animation: quizToast 2s ease-out forwards;
+    animation: quizToast 0.5s ease-out forwards;
     pointer-events: none;
   }
   .quiz-toast.wrong { background: #ef4444; }
@@ -342,7 +342,7 @@
 <body>
 <div class="page-header">
   <div class="wrap">
-    <h1>歌と日本語混じりで覚える英文サイト</h1>
+    <h1>歌と日本語混じりで覚える英語学習サイト</h1>
     <p class="page-subtitle">中学生レベル〜高校まで、歌と日本語でつながる英文学習</p>
   </div>
 </div>
@@ -1379,6 +1379,10 @@
         <div class="yt-embed-wrap">
           <iframe loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+      </div>
+
+      <div class="next-lesson-wrap">
+        <button class="btn-next-lesson" type="button" data-book="beginner">次のレッスンへ →</button>
       </div>
 
       <h2>このレッスンの新出単語（本文で赤字）</h2>
@@ -7751,7 +7755,7 @@
           <span class="we" data-base="my" data-ja="私の">my</span>
           <span class="we" data-base="healthy" data-ja="元気な">healthy</span>
           <span class="we" data-base="self" data-ja="自分">self</span>.
-          <span class="we" data-base="looking" data-ja="見ながら">looking</span>
+          <span class="we" data-base="looking" data-ja="見ながら">Looking</span>
           <span class="we" data-base="at" data-ja="〜を">at</span>
           <span class="we" data-base="the" data-ja="その">the</span>
           <span class="we" data-base="stars" data-ja="星">stars</span>
@@ -9597,7 +9601,7 @@
           <span class="we" data-base="okay" data-ja="大丈夫">okay</span>
           <span class="we" data-base="to" data-ja="〜すること">to</span>
           <span class="we" data-base="lose" data-ja="負ける">lose</span>.
-          <span class="we" data-base="having" data-ja="〜持つこと">having</span>
+          <span class="we" data-base="having" data-ja="〜持つこと">Having</span>
           <span class="we" data-base="fun" data-ja="楽しみ">fun</span>
           <span class="we" data-base="is" data-ja="〜です">is</span>
           <span class="we" data-base="the" data-ja="その">the</span>
@@ -20616,10 +20620,14 @@
     return ruby;
   }
 
-  // Save original base values once
+  // Save original base values once (data-base-saved = lowercase lookup; data-display = case-preserved text)
   document.querySelectorAll('.w, .we').forEach(el => {
+    const text = el.textContent.trim();
     if(!el.getAttribute('data-base-saved')){
-      el.setAttribute('data-base-saved', el.getAttribute('data-base') || el.textContent.trim());
+      el.setAttribute('data-base-saved', el.getAttribute('data-base') || text.toLowerCase());
+    }
+    if(!el.getAttribute('data-display')){
+      el.setAttribute('data-display', text);
     }
   });
 
@@ -20665,18 +20673,18 @@
       }
     });
     document.querySelectorAll('.w').forEach(el => {
-      const base = el.getAttribute('data-base-saved');
+      const display = el.getAttribute('data-display') || el.getAttribute('data-base-saved');
       const ipa  = el.getAttribute('data-ipa') || '';
       const ja   = el.getAttribute('data-ja')  || '';
-      el.replaceChildren(document.createTextNode(base));
-      if(mode==='ipa' && ipa)      el.replaceChildren(makeRuby(base, ipa));
-      else if(mode==='ja' && ja)   el.replaceChildren(makeRuby(base, ja));
+      el.replaceChildren(document.createTextNode(display));
+      if(mode==='ipa' && ipa)      el.replaceChildren(makeRuby(display, ipa));
+      else if(mode==='ja' && ja)   el.replaceChildren(makeRuby(display, ja));
     });
     document.querySelectorAll('.we').forEach(el => {
-      const base = el.getAttribute('data-base-saved');
+      const display = el.getAttribute('data-display') || el.getAttribute('data-base-saved');
       const ja   = el.getAttribute('data-ja') || '';
-      el.replaceChildren(document.createTextNode(base));
-      if(mode==='en-ja' && ja)     el.replaceChildren(makeRuby(base, ja));
+      el.replaceChildren(document.createTextNode(display));
+      if(mode==='en-ja' && ja)     el.replaceChildren(makeRuby(display, ja));
     });
   }
 
@@ -21053,7 +21061,7 @@
     toast.className = 'quiz-toast' + (kind === 'wrong' ? ' wrong' : '');
     toast.textContent = text;
     document.body.appendChild(toast);
-    setTimeout(() => toast.remove(), 2050);
+    setTimeout(() => toast.remove(), 550);
   }
 function buildQuiz(book, idStr){
     if(!book || book.id === 'book-beginner') return;

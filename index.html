@@ -20579,37 +20579,6 @@
       }
     });
   }
-  }
-  function openYtModal(videoId){
-    let modal = document.getElementById('yt-modal');
-    if(!modal){
-      modal = document.createElement('div');
-      modal.id = 'yt-modal';
-      modal.className = 'yt-modal';
-      modal.innerHTML = '<div class="yt-modal-inner"><button class="yt-modal-close" type="button" aria-label="閉じる">✕</button><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
-      document.body.appendChild(modal);
-      modal.addEventListener('click', e => { if(e.target === modal) closeYtModal(); });
-      modal.querySelector('.yt-modal-close').addEventListener('click', closeYtModal);
-    }
-    modal.querySelector('iframe').src = 'https://www.youtube.com/embed/' + encodeURIComponent(videoId) + '?autoplay=1&rel=0';
-    modal.hidden = false;
-  }
-  function closeYtModal(){
-    const modal = document.getElementById('yt-modal');
-    if(modal){
-      modal.querySelector('iframe').src = '';
-      modal.hidden = true;
-    }
-  }
-  document.addEventListener('keydown', e => { if(e.key === 'Escape') closeYtModal(); });
-  document.addEventListener('click', e => {
-    const btn = e.target.closest('.btn-youtube');
-    if(!btn) return;
-    const sec = btn.closest('.yt-section');
-    if(!sec) return;
-    const vid = sec.dataset.videoId;
-    if(vid) openYtModal(vid);
-  });
 
   function showLesson(idStr){
     const book = activeBookEl();

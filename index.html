@@ -167,72 +167,38 @@
     transition: all .15s;
   }
   .btn-quiz-retry:hover { background: #fbbf24; color: #78350f; border-color: #d97706; }
-  /* ---------- YouTube embed ---------- */
+  /* ---------- YouTube embed (inline) ---------- */
   .yt-section {
     margin: 18px 0;
-    padding: 16px;
+    padding: 14px;
     background: linear-gradient(135deg, #fff1f2, #fee2e2);
     border: 2px solid #fca5a5;
     border-radius: 12px;
-    text-align: center;
   }
   .yt-section[hidden] { display: none; }
   .yt-section .yt-label {
-    font-size: .92rem;
+    font-size: .95rem;
     color: #991b1b;
-    margin-bottom: 8px;
-    font-weight: 600;
-  }
-  .btn-youtube {
-    display: inline-block;
-    background: #dc2626;
-    color: #fff;
-    border: none;
-    padding: 11px 26px;
-    border-radius: 8px;
-    font-size: 1rem;
+    margin-bottom: 10px;
     font-weight: 700;
-    cursor: pointer;
-    transition: all .15s;
+    text-align: center;
   }
-  .btn-youtube:hover { background: #b91c1c; transform: translateY(-1px); box-shadow: 0 4px 10px rgba(220,38,38,.35); }
-  .btn-youtube::before { content: "▶ "; }
-  .yt-modal {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,.85);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    padding: 20px;
-  }
-  .yt-modal[hidden] { display: none; }
-  .yt-modal-inner {
+  .yt-embed-wrap {
     position: relative;
-    width: min(1100px, 100%);
-    aspect-ratio: 16 / 9;
-    background: #000;
-    border-radius: 8px;
+    padding-bottom: 56.25%;
+    height: 0;
     overflow: hidden;
+    border-radius: 8px;
+    background: #000;
+    box-shadow: 0 4px 14px rgba(0,0,0,.2);
   }
-  .yt-modal-inner iframe {
-    width: 100%; height: 100%; border: 0; display: block;
-  }
-  .yt-modal-close {
+  .yt-embed-wrap iframe {
     position: absolute;
-    top: -14px; right: -14px;
-    width: 40px; height: 40px;
-    border-radius: 50%;
-    background: #fff;
-    color: #111;
-    border: 2px solid #111;
-    font-size: 1.2rem;
-    font-weight: 900;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0,0,0,.4);
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
   }
-  .yt-modal-close:hover { background: #fef3c7; }
 
 </style>
 </head>
@@ -1267,8 +1233,10 @@
       </div>
 
             <div class="yt-section" data-yt-book="beginner" hidden>
-        <div class="yt-label">📺 この レッスンの解説動画（YouTube）</div>
-        <button class="btn-youtube" type="button">YouTubeで見る</button>
+        <div class="yt-label">🎵 歌で覚える英文動画（YouTube）</div>
+        <div class="yt-embed-wrap">
+          <iframe loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
 
       <h2>このレッスンの新出単語（本文で赤字）</h2>
@@ -10213,8 +10181,10 @@
       </div>
 
             <div class="yt-section" data-yt-book="middle" hidden>
-        <div class="yt-label">📺 この レッスンの解説動画（YouTube）</div>
-        <button class="btn-youtube" type="button">YouTubeで見る</button>
+        <div class="yt-label">🎵 歌で覚える英文動画（YouTube）</div>
+        <div class="yt-embed-wrap">
+          <iframe loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
 
       <div class="vocab-quiz" data-quiz-book="middle">
@@ -13553,8 +13523,10 @@
       </div>
 
             <div class="yt-section" data-yt-book="high1" hidden>
-        <div class="yt-label">📺 この レッスンの解説動画（YouTube）</div>
-        <button class="btn-youtube" type="button">YouTubeで見る</button>
+        <div class="yt-label">🎵 歌で覚える英文動画（YouTube）</div>
+        <div class="yt-embed-wrap">
+          <iframe loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
 
       <div class="vocab-quiz" data-quiz-book="high1">
@@ -17359,8 +17331,10 @@
       </div>
 
             <div class="yt-section" data-yt-book="high2" hidden>
-        <div class="yt-label">📺 この レッスンの解説動画（YouTube）</div>
-        <button class="btn-youtube" type="button">YouTubeで見る</button>
+        <div class="yt-label">🎵 歌で覚える英文動画（YouTube）</div>
+        <div class="yt-embed-wrap">
+          <iframe loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
 
       <div class="vocab-quiz" data-quiz-book="high2">
@@ -20442,8 +20416,10 @@
       </div>
 
             <div class="yt-section" data-yt-book="high3" hidden>
-        <div class="yt-label">📺 この レッスンの解説動画（YouTube）</div>
-        <button class="btn-youtube" type="button">YouTubeで見る</button>
+        <div class="yt-label">🎵 歌で覚える英文動画（YouTube）</div>
+        <div class="yt-embed-wrap">
+          <iframe loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
 
       <div class="vocab-quiz" data-quiz-book="high3">
@@ -20563,7 +20539,7 @@
   }
 
 
-  /* ========== YouTube embed feature ========== */
+  /* ========== YouTube embed feature (inline) ========== */
   let ytMap = null;
   let ytMapPromise = null;
   function loadYtMap(){
@@ -20581,21 +20557,28 @@
     if(!b) return null;
     return b[lessonStr] || b[String(lessonStr)] || null;
   }
+  function clearAllYtIframes(){
+    document.querySelectorAll('.yt-section iframe').forEach(f => { f.src = ''; });
+  }
   function updateYtSection(book, lessonStr){
     if(!book) return;
+    // Stop any currently playing video (from other books/lessons)
+    clearAllYtIframes();
     const bookId = book.dataset.book;
     const sec = book.querySelector('.yt-section');
     if(!sec) return;
     loadYtMap().then(() => {
       const vid = ytVideoIdFor(bookId, lessonStr);
-      if(vid){
+      const iframe = sec.querySelector('iframe');
+      if(vid && iframe){
         sec.hidden = false;
-        sec.dataset.videoId = vid;
+        iframe.src = 'https://www.youtube.com/embed/' + encodeURIComponent(vid) + '?rel=0';
       } else {
         sec.hidden = true;
-        delete sec.dataset.videoId;
+        if(iframe) iframe.src = '';
       }
     });
+  }
   }
   function openYtModal(videoId){
     let modal = document.getElementById('yt-modal');

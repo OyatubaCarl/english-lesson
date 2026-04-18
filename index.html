@@ -3,58 +3,195 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>英語長文 統合版（中学生編＋高校編1〜3）</title>
+<title>歌と日本語混じりで覚える英文サイト</title>
 <style>
-  :root { --fg:#222; --muted:#666; --accent:#2563eb; --new:#dc2626; --bg:#fff; --border:#e5e7eb; }
-  body { font-family: "Hiragino Sans","Yu Gothic",Meiryo,sans-serif; line-height:1.9; color:var(--fg); background:var(--bg); margin:0; }
-  .wrap { max-width: 920px; margin: 20px auto; padding: 16px; }
-  h1 { font-size:1.25rem; margin:.2em 0 .6em }
-  h2 { font-size:1.1rem; margin-top: 1.8rem; padding-top:.5rem; border-top: 1px solid var(--border); }
-  h3 { font-size:1rem; margin: .6em 0 .3em; color: #374151; }
-  .toolbar { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin: 8px 0 12px; }
-  .toolbar button, .toolbar select {
-    border:1px solid #ddd; background:#f7f7f7; padding:8px 12px; border-radius:10px; cursor:pointer; font-size:.95rem;
+  :root {
+    --fg: #1f2937;
+    --fg-soft: #374151;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --accent-dark: #1d4ed8;
+    --accent-soft: #eff6ff;
+    --new: #dc2626;
+    --bg: #fafafa;
+    --card: #ffffff;
+    --border: #e5e7eb;
+    --border-soft: #f3f4f6;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,.04), 0 1px 3px rgba(0,0,0,.06);
+    --shadow-md: 0 4px 10px rgba(0,0,0,.04), 0 2px 6px rgba(0,0,0,.05);
+    --radius: 14px;
   }
-  .toolbar button[aria-pressed="true"] { border-color:var(--accent); color:var(--accent); background:#eef4ff; }
-  .toolbar label { font-weight:600; color:#374151; margin-right:4px; }
-  ruby rt { font-size:.62em; color:var(--muted); }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans","Yu Gothic",Meiryo,system-ui,-apple-system,"Segoe UI",sans-serif;
+    line-height: 1.85;
+    color: var(--fg);
+    background: var(--bg);
+    margin: 0;
+    letter-spacing: .01em;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 18px 48px; }
+  /* Page header: gradient banner */
+  .page-header {
+    background: linear-gradient(135deg, #1e40af 0%, #2563eb 55%, #3b82f6 100%);
+    color: #fff;
+    padding: 30px 0 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 12px rgba(37, 99, 235, .2);
+  }
+  .page-header .wrap { padding-top: 0; padding-bottom: 0; }
+  h1 {
+    font-size: 1.65rem;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: .02em;
+    text-shadow: 0 1px 3px rgba(0,0,0,.15);
+  }
+  .page-subtitle {
+    font-size: .95rem;
+    opacity: .92;
+    margin: 6px 0 0;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    padding-top: .6rem;
+    border-top: 1px solid var(--border);
+    color: var(--fg);
+    letter-spacing: .01em;
+  }
+  h3 { font-size: 1rem; margin: .6em 0 .3em; color: var(--fg-soft); font-weight: 700; }
+  .toolbar {
+    display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+    margin: 10px 0 14px;
+    padding: 10px 12px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+  .toolbar button, .toolbar select {
+    border: 1px solid #d1d5db;
+    background: #fff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: .93rem;
+    color: var(--fg-soft);
+    transition: all .15s;
+    font-family: inherit;
+  }
+  .toolbar button:hover, .toolbar select:hover { border-color: var(--accent); color: var(--accent); }
+  .toolbar button[aria-pressed="true"] {
+    border-color: var(--accent);
+    color: #fff;
+    background: var(--accent);
+    font-weight: 600;
+  }
+  .toolbar label { font-weight: 600; color: var(--fg-soft); margin-right: 4px; font-size: .9rem; }
+  ruby rt { font-size: .62em; color: var(--muted); font-weight: 400; }
   p { margin: 0 0 1em; }
-  .hint { color:var(--muted); font-size:.9em; margin:.2em 0 1em; }
-  .hidden { display:none !important; }
+  .hint { color: var(--muted); font-size: .9em; margin: .2em 0 1em; }
+  .hidden { display: none !important; }
   .new-word { color: var(--new); font-weight: 600; }
   .new-word ruby rt { color: #ef4444; }
-  /* 英語本文（EN body）内の新出語は赤字にしない */
   .we.new-word { color: inherit; font-weight: normal; }
   .we.new-word ruby rt { color: var(--muted); }
-  .grammar-box { background:#f8fafc; border:1px solid var(--border); border-radius:10px; padding:.7rem 1rem; margin:.4em 0 1em; font-size:.92rem; }
-  .grammar-box .g-title { color: var(--accent); font-weight:700; font-size:1rem; display:block; margin-bottom:.3em; }
-  .grammar-box .g-desc { margin:.2em 0 .5em; }
-  .grammar-box .g-ex-label { color:#374151; font-weight:700; }
-  .grammar-box ul { margin:.2em 0 .2em 1.2em; padding:0; }
-  .grammar-box em { color:#0f172a; font-style:italic; }
-  .grammar-box .ja { color:#475569; }
-  table { width:100%; border-collapse: collapse; font-size: .93rem; margin: .4em 0 1em; }
-  th, td { border-bottom: 1px solid var(--border); padding: .45rem .5rem; text-align: left; vertical-align: top; }
-  th { background: #f8fafc; }
-  .new-row td { color: var(--new); font-weight:600; }
-  .passage-title { font-size:1rem; font-weight:700; color:#1f2937; margin: .6em 0 .3em; padding:.3em .6em; background:#eef4ff; border-left:4px solid var(--accent); border-radius:4px; }
+  .grammar-box {
+    background: #fefce8;
+    border: 1px solid #fde68a;
+    border-left: 4px solid #f59e0b;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 14px 0 18px;
+    font-size: .93rem;
+    box-shadow: var(--shadow-sm);
+  }
+  .grammar-box .g-title {
+    color: #b45309;
+    font-weight: 700;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: .4em;
+  }
+  .grammar-box .g-desc { margin: .2em 0 .5em; line-height: 1.8; }
+  .grammar-box .g-ex-label { color: var(--fg-soft); font-weight: 700; }
+  .grammar-box ul { margin: .3em 0 .2em 1.3em; padding: 0; }
+  .grammar-box em { color: #0f172a; font-style: italic; }
+  .grammar-box .ja { color: #64748b; }
+  table {
+    width: 100%; border-collapse: collapse; font-size: .93rem; margin: .6em 0 1.2em;
+    background: var(--card); border-radius: 10px; overflow: hidden;
+    box-shadow: var(--shadow-sm);
+  }
+  th, td { border-bottom: 1px solid var(--border-soft); padding: .55rem .7rem; text-align: left; vertical-align: top; }
+  th { background: #f9fafb; font-weight: 700; color: var(--fg-soft); font-size: .9rem; }
+  tr:last-child td { border-bottom: none; }
+  .new-row td { color: var(--new); font-weight: 600; }
+  .passage-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent-dark);
+    margin: .8em 0 .4em;
+    padding: .5em .8em;
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    border-radius: 6px;
+  }
   .clickable-word { cursor: pointer; }
   .clickable-word:hover td { background: #eff6ff; }
   .clickable-word:active td { background: #dbeafe; }
 
   /* Book switcher */
-  .book-chooser { gap:12px; margin: 12px 0 20px; padding: 14px; background: #f0f9ff; border-radius: 12px; border: 2px solid #93c5fd; flex-wrap: wrap; }
-  .book-chooser .chooser-title { font-weight:700; color: #1e40af; margin-right:8px; font-size:1.05rem; }
-  .btn-book {
-    border: 2px solid #3b82f6; background:#fff; color: #1e40af;
-    padding: 10px 16px; border-radius: 10px; cursor: pointer; font-size: .98rem; font-weight:600;
-    transition: all .15s;
+  .book-chooser {
+    gap: 10px;
+    margin: 0 0 24px;
+    padding: 18px 20px;
+    background: linear-gradient(135deg, #f0f9ff, #dbeafe);
+    border-radius: var(--radius);
+    border: 1px solid #bfdbfe;
+    box-shadow: var(--shadow-md);
+    flex-wrap: wrap;
   }
-  .btn-book:hover { background: #dbeafe; }
-  .btn-book[aria-pressed="true"] { background: #2563eb; color:#fff; border-color: #1e40af; }
-  .book-title { color: #1e40af; font-size:1.15rem; padding: .8em 1em; background: #eff6ff; border-radius: 10px; margin: .8em 0 1em; border-left: 5px solid #2563eb; }
+  .book-chooser .chooser-title {
+    font-weight: 700; color: #1e3a8a; margin-right: 8px; font-size: 1rem;
+    width: 100%; margin-bottom: 6px;
+  }
+  .btn-book {
+    border: 2px solid #3b82f6;
+    background: #fff;
+    color: #1e40af;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: .98rem;
+    font-weight: 700;
+    transition: all .15s;
+    box-shadow: var(--shadow-sm);
+  }
+  .btn-book:hover { background: #eff6ff; transform: translateY(-1px); box-shadow: var(--shadow-md); }
+  .btn-book[aria-pressed="true"] {
+    background: linear-gradient(135deg, #1e40af, #2563eb);
+    color: #fff;
+    border-color: #1e3a8a;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, .4);
+  }
+  .book-title {
+    color: #1e3a8a;
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: .9em 1.1em;
+    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+    border-radius: 10px;
+    margin: .4em 0 1.2em;
+    border-left: 5px solid var(--accent);
+    box-shadow: var(--shadow-sm);
+  }
   .book.hidden { display: none !important; }
-  .book > h2.book-title { border-top: none; padding-top: .8em; }
+  .book > h2.book-title { border-top: none; padding-top: .9em; }
 
   /* Click-to-speak on passage words */
   .w, .we { cursor: pointer; border-radius: 3px; transition: background .12s; }
@@ -203,9 +340,14 @@
 </style>
 </head>
 <body>
+<div class="page-header">
   <div class="wrap">
-    <h1>英語長文：統合版（中学生編＋高校編 1〜3）</h1>
+    <h1>歌と日本語混じりで覚える英文サイト</h1>
+    <p class="page-subtitle">中学生レベル〜高校まで、歌と日本語でつながる英文学習</p>
+  </div>
+</div>
 
+  <div class="wrap">
     <div class="book-chooser toolbar" role="group" aria-label="教材選択">
       <span class="chooser-title">📚 教材を選ぶ:</span>
       <button class="btn-book" data-book="beginner" type="button" aria-pressed="false">📒 入門編</button>
@@ -1370,7 +1512,7 @@
            <span class="w" data-base="eyes" data-ipa="/aɪz/" data-ja="目" data-pos="noun">eyes</span> はぱっちりとした
            <span class="w" data-base="black" data-ipa="/blæk/" data-ja="黒い" data-pos="adj">black</span>。だれもが好きになってしまう犬です。</p>
 
-        <p><span class="w" data-base="every" data-ipa="/ˈɛvri/" data-ja="毎〜" data-pos="det">every</span>
+        <p><span class="w" data-base="every" data-ipa="/ˈɛvri/" data-ja="毎〜" data-pos="det">Every</span>
            <span class="w" data-base="morning" data-ipa="/ˈmɔːrnɪŋ/" data-ja="朝" data-pos="noun">morning</span>、わたしは
            <span class="w" data-base="sister" data-ipa="/ˈsɪstər/" data-ja="妹" data-pos="noun">sister</span> と一緒に
            <span class="w" data-base="school" data-ipa="/skuːl/" data-ja="学校" data-pos="noun">school</span> へ
@@ -1385,7 +1527,7 @@
            <span class="w" data-base="sister" data-ipa="/ˈsɪstər/" data-ja="妹" data-pos="noun">sister</span> は
            <span class="w" data-base="flowers" data-ipa="/ˈflaʊərz/" data-ja="花(複)" data-pos="noun">flowers</span> を見るのが大好きです。</p>
 
-        <p><span class="w" data-base="yesterday" data-ipa="/ˈjɛstərdeɪ/" data-ja="昨日" data-pos="adv">yesterday</span> は本当に
+        <p><span class="w" data-base="yesterday" data-ipa="/ˈjɛstərdeɪ/" data-ja="昨日" data-pos="adv">Yesterday</span> は本当に
            <span class="w" data-base="good" data-ipa="/ɡʊd/" data-ja="良い" data-pos="adj">good</span> な
            <span class="w" data-base="day" data-ipa="/deɪ/" data-ja="日" data-pos="noun">day</span> で、
            <span class="w" data-base="Pochi" data-ipa="/ˈpoʊtʃi/" data-ja="ポチ" data-pos="noun">Pochi</span> と
@@ -1566,12 +1708,12 @@
            <span class="w" data-base="all" data-ipa="/ɔːl/" data-ja="すべての" data-pos="det">all</span> 日
            <span class="w" data-base="together" data-ipa="/təˈɡɛðər/" data-ja="一緒に" data-pos="adv">together</span> に過ごしました。</p>
 
-        <p><span class="w" data-base="lunch" data-ipa="/lʌntʃ/" data-ja="昼食" data-pos="noun">lunch</span> には、母が用意してくれた
+        <p><span class="w" data-base="lunch" data-ipa="/lʌntʃ/" data-ja="昼食" data-pos="noun">Lunch</span> には、母が用意してくれた
            <span class="w" data-base="bread" data-ipa="/brɛd/" data-ja="パン" data-pos="noun">bread</span> と
            <span class="w" data-base="fish" data-ipa="/fɪʃ/" data-ja="魚" data-pos="noun">fish</span> を食べました。
            <span class="w" data-base="delicious" data-ipa="/dɪˈlɪʃəs/" data-ja="とてもおいしい" data-pos="adj">delicious</span> でした。</p>
 
-        <p><span class="w" data-base="evening" data-ipa="/ˈiːvnɪŋ/" data-ja="夕方" data-pos="noun">evening</span> になる頃、わたしたちは少し
+        <p><span class="w" data-base="evening" data-ipa="/ˈiːvnɪŋ/" data-ja="夕方" data-pos="noun">Evening</span> になる頃、わたしたちは少し
            <span class="w" data-base="tired" data-ipa="/ˈtaɪərd/" data-ja="疲れた" data-pos="adj">tired</span> でした、
            <span class="w" data-base="but" data-ipa="/bʌt/" data-ja="しかし" data-pos="conj">but</span>、心はとても満たされた一日でした。</p>
       </div>
@@ -1890,7 +2032,7 @@
       
       <h3 class="passage-title">本文「新しい友達トム」</h3>
       <div class="jp-body">
-        <p><span class="w" data-base="today" data-ipa="/təˈdeɪ/" data-ja="今日" data-pos="adv">today</span>、わたしたちのクラスに新しい
+        <p><span class="w" data-base="today" data-ipa="/təˈdeɪ/" data-ja="今日" data-pos="adv">Today</span>、わたしたちのクラスに新しい
            <span class="w" data-base="boy" data-ipa="/bɔɪ/" data-ja="男の子" data-pos="noun">boy</span> が
            <span class="w" data-base="came" data-ipa="/keɪm/" data-ja="来た" data-pos="verb">came</span> しました。名前は
            <span class="w" data-base="Tom" data-ipa="/tɑːm/" data-ja="トム" data-pos="noun">Tom</span>。</p>
@@ -2052,7 +2194,7 @@
       
       <h3 class="passage-title">本文「祖母を訪ねる計画」</h3>
       <div class="jp-body">
-        <p><span class="w" data-base="tomorrow" data-ipa="/təˈmɔːroʊ/" data-ja="明日" data-pos="adv">tomorrow</span> は
+        <p><span class="w" data-base="tomorrow" data-ipa="/təˈmɔːroʊ/" data-ja="明日" data-pos="adv">Tomorrow</span> は
            <span class="w" data-base="Saturday" data-ipa="/ˈsætərdeɪ/" data-ja="土曜日" data-pos="noun">Saturday</span> です。しばらく会っていない
            <span class="w" data-base="grandmother" data-ipa="/ˈɡrænˌmʌðər/" data-ja="祖母" data-pos="noun">grandmother</span> を、妹と一緒に訪ねる予定です。</p>
 
@@ -2368,7 +2510,7 @@
            <span class="w" data-base="children" data-ipa="/ˈtʃɪldrən/" data-ja="子どもたち" data-pos="noun">children</span> に
            <span class="w" data-base="teach" data-ipa="/tiːtʃ/" data-ja="教える" data-pos="verb">teach</span> することができたら、どんなに嬉しいでしょう。</p>
 
-        <p><span class="w" data-base="future" data-ipa="/ˈfjuːtʃər/" data-ja="未来" data-pos="noun">future</span> には、たくさんの
+        <p><span class="w" data-base="future" data-ipa="/ˈfjuːtʃər/" data-ja="未来" data-pos="noun">Future</span> には、たくさんの
            <span class="w" data-base="people" data-ipa="/ˈpiːpəl/" data-ja="人々" data-pos="noun">people</span> を
            <span class="w" data-base="help" data-ipa="/hɛlp/" data-ja="助ける" data-pos="verb">help</span> したい、そう強く思っています。祖母は静かに聞いて、『その夢を大切にしなさい』と優しく微笑みました。</p>
       </div>
@@ -3473,7 +3615,7 @@
            <span class="w" data-base="under" data-ipa="/ˈʌndər/" data-ja="〜の下に" data-pos="prep">under</span> には、古い
            <span class="w" data-base="rock" data-ipa="/rɑːk/" data-ja="岩" data-pos="noun">rock</span> があって、子どもたちがよく腰かけて休んでいます。</p>
 
-        <p><span class="w" data-base="summer" data-ipa="/ˈsʌmər/" data-ja="夏" data-pos="noun">summer</span> の晴れた日には、
+        <p><span class="w" data-base="summer" data-ipa="/ˈsʌmər/" data-ja="夏" data-pos="noun">Summer</span> の晴れた日には、
            <span class="w" data-base="grass" data-ipa="/ɡræs/" data-ja="芝生・草" data-pos="noun">grass</span> の上で友達と遊ぶ子どもたちが数えきれません。</p>
 
         <p>『公園の奥に
@@ -3663,11 +3805,11 @@
            <span class="w" data-base="baseball" data-ipa="/ˈbeɪsbɔːl/" data-ja="野球" data-pos="noun">baseball</span> を
            <span class="w" data-base="plays" data-ipa="/pleɪz/" data-ja="する(3単現)" data-pos="verb">plays</span> している時間、わたしは家で静かに本を読んでいます。二人とも、違う形で自分の夏を楽しんでいます。</p>
 
-        <p><span class="w" data-base="although" data-ipa="/ɔːlˈðoʊ/" data-ja="〜だけれども" data-pos="conj">although</span> ときどき
+        <p><span class="w" data-base="although" data-ipa="/ɔːlˈðoʊ/" data-ja="〜だけれども" data-pos="conj">Although</span> ときどき
            <span class="w" data-base="rainy" data-ipa="/ˈreɪni/" data-ja="雨の" data-pos="adj">rainy</span> な日があっても、
            <span class="w" data-base="still" data-ipa="/stɪl/" data-ja="それでも" data-pos="adv">still</span>、夏はやっぱり楽しい季節です。</p>
 
-        <p><span class="w" data-base="if" data-ipa="/ɪf/" data-ja="もし〜なら" data-pos="conj">if</span> 明日、
+        <p><span class="w" data-base="if" data-ipa="/ɪf/" data-ja="もし〜なら" data-pos="conj">If</span> 明日、
            <span class="w" data-base="sunny" data-ipa="/ˈsʌni/" data-ja="晴れた" data-pos="adj">sunny</span> な日になったら、妹と家族で近くの浜辺までまた遊びに行こうと思います。</p>
       </div>
 
@@ -6515,7 +6657,7 @@
            <span class="w" data-base="through" data-ipa="/θruː/" data-ja="〜を通り抜けて" data-pos="prep">through</span> 歩き、池の周りをゆっくりと一周しました。池の中では、魚がゆっくりと泳いでいます。池の
            <span class="w" data-base="beside" data-ipa="/bɪˈsaɪd/" data-ja="〜のそばに" data-pos="prep">beside</span> には、古いベンチがひっそりと置かれていました。</p>
 
-        <p><span class="w" data-base="during" data-ipa="/ˈdʊərɪŋ/" data-ja="〜の間ずっと" data-pos="prep">during</span> その散歩の時間、わたしたちは本当にたくさんの話をしました。今日のこと、明日のこと、そしてこれからの夢のこと。</p>
+        <p><span class="w" data-base="during" data-ipa="/ˈdʊərɪŋ/" data-ja="〜の間ずっと" data-pos="prep">During</span> その散歩の時間、わたしたちは本当にたくさんの話をしました。今日のこと、明日のこと、そしてこれからの夢のこと。</p>
       </div>
 
       <div class="en-body hidden">
@@ -7701,7 +7843,7 @@
            <span class="w" data-base="branch" data-ipa="/bræntʃ/" data-ja="枝" data-pos="noun">branch</span> が静かに水面のほうを向いていました。木から落ちた一枚の
            <span class="w" data-base="leaf" data-ipa="/liːf/" data-ja="葉" data-pos="noun">leaf</span> が、ゆっくりと水の上を流れていきます。</p>
 
-        <p><span class="w" data-base="wave" data-ipa="/weɪv/" data-ja="波" data-pos="noun">wave</span> のない静かな水面に、自分の
+        <p><span class="w" data-base="wave" data-ipa="/weɪv/" data-ja="波" data-pos="noun">Wave</span> のない静かな水面に、自分の
            <span class="w" data-base="shadow" data-ipa="/ˈʃædoʊ/" data-ja="影" data-pos="noun">shadow</span> が映っていました。風が少し吹くと、水面はきらきらと
            <span class="w" data-base="light" data-ipa="/laɪt/" data-ja="光" data-pos="noun">light</span> を反射しました。</p>
 
@@ -7712,7 +7854,7 @@
         <p>冷たい夜気のなか、足元の石は、まだ昼の陽の温かさをわずかに残していました。冬の朝になると、この lake の表面は薄い
            <span class="w" data-base="ice" data-ipa="/aɪs/" data-ja="氷" data-pos="noun">ice</span> で覆われるそうです。</p>
 
-        <p><span class="w" data-base="ocean" data-ipa="/ˈoʊʃən/" data-ja="大洋・海" data-pos="noun">ocean</span> のように広くはないけれど、この小さな水辺は、わたしたちの町の大切な宝物です。毎日のように訪れても、同じ表情は二度とありません。</p>
+        <p><span class="w" data-base="ocean" data-ipa="/ˈoʊʃən/" data-ja="大洋・海" data-pos="noun">Ocean</span> のように広くはないけれど、この小さな水辺は、わたしたちの町の大切な宝物です。毎日のように訪れても、同じ表情は二度とありません。</p>
       </div>
 
       <div class="en-body hidden">
@@ -7909,7 +8051,7 @@
       <div class="jp-body">
         <p>夏休みのある日、家族みんなで祖父の小さな農場を訪ねました。田舎の空気はとても澄んでいて、そこには町では出会えない動物たちがたくさんいました。</p>
 
-        <p><span class="w" data-base="cow" data-ipa="/kaʊ/" data-ja="牛" data-pos="noun">cow</span> が大きな目で、のんびりとこちらを見つめていました。
+        <p><span class="w" data-base="cow" data-ipa="/kaʊ/" data-ja="牛" data-pos="noun">Cow</span> が大きな目で、のんびりとこちらを見つめていました。
            <span class="w" data-base="pig" data-ipa="/pɪɡ/" data-ja="ぶた" data-pos="noun">pig</span> は柵の向こうで鼻をうごめかし、
            <span class="w" data-base="sheep" data-ipa="/ʃiːp/" data-ja="ひつじ" data-pos="noun">sheep</span> は白い毛をふわふわさせながら草を食べていました。</p>
 
@@ -8416,7 +8558,7 @@
         <p>叔父は近いうちに日本に帰ってくるそうです。『その時には、
            <span class="w" data-base="airport" data-ipa="/ˈɛrˌpɔːrt/" data-ja="空港" data-pos="noun">airport</span> まで迎えに来てね』と手紙にはありました。わたしと妹は、いまからその日を楽しみに待っています。</p>
 
-        <p><span class="w" data-base="travel" data-ipa="/ˈtrævəl/" data-ja="旅" data-pos="noun">travel</span> は、新しい景色だけでなく、自分の中にある新しい気持ちにも出会える時間なのだと、わたしは思います。</p>
+        <p><span class="w" data-base="travel" data-ipa="/ˈtrævəl/" data-ja="旅" data-pos="noun">Travel</span> は、新しい景色だけでなく、自分の中にある新しい気持ちにも出会える時間なのだと、わたしは思います。</p>
       </div>
 
       <div class="en-body hidden">
@@ -10891,7 +11033,7 @@
 
         <p>朝起きたとき<span class="w" data-base="unless" data-ipa="/ənˈles/" data-ja="〜しない限り" data-pos="conj">unless</span> 空が真っ黒でなければ、予定通りに進めることにした。雨が降ったら<span class="w" data-base="however" data-ipa="/haʊˈevər/" data-ja="しかしながら" data-pos="adv">however</span> 午後にずらす。気分が良くなっていく<span class="w" data-base="whenever" data-ipa="/wenˈevər/" data-ja="〜するたび" data-pos="conj">whenever</span>、計画も明るくなっていった。</p>
 
-        <p><span class="w" data-base="although" data-ipa="/ɔːlˈðoʊ/" data-ja="〜だけれども" data-pos="conj">although</span> 疲れていたが、母はサンドイッチを作ると言ってくれた。サンドイッチが<span class="w" data-base="entire" data-ipa="/ɪnˈtaɪər/" data-ja="全体の" data-pos="adj">entire</span> 籠いっぱいに並ぶのは、いつも<span class="w" data-base="pleasant" data-ipa="/ˈplezənt/" data-ja="心地よい" data-pos="adj">pleasant</span> な光景だ。</p>
+        <p><span class="w" data-base="although" data-ipa="/ɔːlˈðoʊ/" data-ja="〜だけれども" data-pos="conj">Although</span> 疲れていたが、母はサンドイッチを作ると言ってくれた。サンドイッチが<span class="w" data-base="entire" data-ipa="/ɪnˈtaɪər/" data-ja="全体の" data-pos="adj">entire</span> 籠いっぱいに並ぶのは、いつも<span class="w" data-base="pleasant" data-ipa="/ˈplezənt/" data-ja="心地よい" data-pos="adj">pleasant</span> な光景だ。</p>
 
         <p>その日が近づくにつれて、姉の表情は<span class="w" data-base="remain" data-ipa="/rɪˈmeɪn/" data-ja="残る" data-pos="verb">remain</span> 穏やかなままで、<span class="w" data-base="depend" data-ipa="/dɪˈpend/" data-ja="頼る" data-pos="verb">depend</span> すべてが天気に<span class="w" data-base="gather" data-ipa="/ˈɡæðər/" data-ja="集まる" data-pos="verb">gather</span> している、という事実が家族を静かに結びつけていた。</p>
       </div>
@@ -12847,7 +12989,7 @@
 
         <p>一八五九年、『種の起源』という<span class="w" data-base="publication" data-ipa="/ˌpʌblɪˈkeɪʃən/" data-ja="出版" data-pos="noun">publication</span> が世界に衝撃を与えた。<span class="w" data-base="evolution" data-ipa="/ˌevəˈluːʃən/" data-ja="進化" data-pos="noun">evolution</span> という考え方は、時代の<span class="w" data-base="belief" data-ipa="/bɪˈliːf/" data-ja="信念" data-pos="noun">belief</span> を揺るがした。</p>
 
-        <p><span class="w" data-base="although" data-ipa="/ɔːlˈðoʊ/" data-ja="〜だけれども" data-pos="conj">although</span> 激しい批判があったけれども、ダーウィンの<span class="w" data-base="theory" data-ipa="/ˈθiːəri/" data-ja="理論" data-pos="noun">theory</span> は時間をかけて受け入れられた。自然は、静かに、しかし深く、<span class="w" data-base="generation" data-ipa="/ˌdʒenəˈreɪʃən/" data-ja="世代" data-pos="noun">generation</span> を越えて変わっていくものなのだ。</p>
+        <p><span class="w" data-base="although" data-ipa="/ɔːlˈðoʊ/" data-ja="〜だけれども" data-pos="conj">Although</span> 激しい批判があったけれども、ダーウィンの<span class="w" data-base="theory" data-ipa="/ˈθiːəri/" data-ja="理論" data-pos="noun">theory</span> は時間をかけて受け入れられた。自然は、静かに、しかし深く、<span class="w" data-base="generation" data-ipa="/ˌdʒenəˈreɪʃən/" data-ja="世代" data-pos="noun">generation</span> を越えて変わっていくものなのだ。</p>
       </div>
 
       <div class="en-body hidden">
@@ -12998,7 +13140,7 @@
 
         <p>初演の夜、ベートーヴェンは舞台に立った。彼は指揮台に向かったが、もはや音を聞くことはできなかった。終演後、拍手が場内を埋めていたが、彼は背を向けたまま、それに気づかなかった。</p>
 
-        <p><span class="w" data-base="singer" data-ipa="/ˈsɪŋər/" data-ja="歌手" data-pos="noun">singer</span> の一人がそっと彼の腕に触れ、<span class="w" data-base="turn" data-ipa="/tɜːrn/" data-ja="振り返る" data-pos="verb">turn</span> 振り返らせた。そこには、立ち上がって拍手を送る<span class="w" data-base="audience" data-ipa="/ˈɔːdiəns/" data-ja="観客" data-pos="noun">audience</span> の姿があった。</p>
+        <p><span class="w" data-base="singer" data-ipa="/ˈsɪŋər/" data-ja="歌手" data-pos="noun">Singer</span> の一人がそっと彼の腕に触れ、<span class="w" data-base="turn" data-ipa="/tɜːrn/" data-ja="振り返る" data-pos="verb">turn</span> 振り返らせた。そこには、立ち上がって拍手を送る<span class="w" data-base="audience" data-ipa="/ˈɔːdiəns/" data-ja="観客" data-pos="noun">audience</span> の姿があった。</p>
 
         <p>沈黙が彼を閉じ込めたのではない。沈黙が彼を、人類へ向けて開かせたのだ。第九は、ベートーヴェンの<span class="w" data-base="overcome" data-ipa="/ˌoʊvərˈkʌm/" data-ja="克服する" data-pos="verb">overcome</span> した<span class="w" data-base="suffering" data-ipa="/ˈsʌfərɪŋ/" data-ja="苦しみ" data-pos="noun">suffering</span> の結晶である。</p>
       </div>
@@ -14062,7 +14204,7 @@
 
         <p>感染した<span class="w" data-base="patient" data-ipa="/ˈpeɪʃənt/" data-ja="患者" data-pos="noun">patient</span> たちは、各地の<span class="w" data-base="hospital" data-ipa="/ˈhɑːspɪtl/" data-ja="病院" data-pos="noun">hospital</span> へ運ばれた。集中治療室は、たちまち満員となった。医師と看護師は、自らの<span class="w" data-base="risk" data-ipa="/rɪsk/" data-ja="危険" data-pos="noun">risk</span> を顧みず働いた。</p>
 
-        <p><span class="w" data-base="symptoms" data-ipa="/ˈsɪmptəmz/" data-ja="症状" data-pos="noun">symptoms</span> は人によって異なった。発熱、咳、息切れ。多くの人は軽症だったが、高齢者や持病のある人は重症化しやすかった。</p>
+        <p><span class="w" data-base="symptoms" data-ipa="/ˈsɪmptəmz/" data-ja="症状" data-pos="noun">Symptoms</span> は人によって異なった。発熱、咳、息切れ。多くの人は軽症だったが、高齢者や持病のある人は重症化しやすかった。</p>
 
         <p>研究者たちは前例のない速さで<span class="w" data-base="vaccine" data-ipa="/vækˈsiːn/" data-ja="ワクチン" data-pos="noun">vaccine</span> を<span class="w" data-base="developed" data-ipa="/dɪˈveləpt/" data-ja="開発した" data-pos="verb">developed</span> した。1年あまりで複数のワクチンが承認され、世界中で接種が始まった。</p>
 
@@ -14124,7 +14266,7 @@
       <div class="jp-body">
         <p>20世紀の初め、世界の<span class="w" data-base="population" data-ipa="/ˌpɑːpjəˈleɪʃən/" data-ja="人口" data-pos="noun">population</span> のうち、<span class="w" data-base="urban" data-ipa="/ˈɜːrbən/" data-ja="都市の" data-pos="adj">urban</span> 地域に住む人は10人に1人ほどだった。今では半分以上が都市に住んでいる。</p>
 
-        <p><span class="w" data-base="urbanization" data-ipa="/ˌɜːrbənɪˈzeɪʃən/" data-ja="都市化" data-pos="noun">urbanization</span> は、雇用、教育、医療といった機会を集中させる一方、深刻な課題ももたらしてきた。<span class="w" data-base="traffic" data-ipa="/ˈtræfɪk/" data-ja="交通" data-pos="noun">traffic</span> 渋滞、住宅価格の高騰、空気の<span class="w" data-base="pollution" data-ipa="/pəˈluːʃən/" data-ja="汚染" data-pos="noun">pollution</span>。</p>
+        <p><span class="w" data-base="urbanization" data-ipa="/ˌɜːrbənɪˈzeɪʃən/" data-ja="都市化" data-pos="noun">Urbanization</span> は、雇用、教育、医療といった機会を集中させる一方、深刻な課題ももたらしてきた。<span class="w" data-base="traffic" data-ipa="/ˈtræfɪk/" data-ja="交通" data-pos="noun">traffic</span> 渋滞、住宅価格の高騰、空気の<span class="w" data-base="pollution" data-ipa="/pəˈluːʃən/" data-ja="汚染" data-pos="noun">pollution</span>。</p>
 
         <p>東京、ニューヨーク、ロンドン、上海。世界の主要な都市は、そのいずれもが、人口の<span class="w" data-base="density" data-ipa="/ˈdensəti/" data-ja="密度" data-pos="noun">density</span> と<span class="w" data-base="infrastructure" data-ipa="/ˈɪnfrəstrʌktʃər/" data-ja="インフラ" data-pos="noun">infrastructure</span> の限界に直面している。</p>
 
@@ -14264,7 +14406,7 @@
 
         <p>地域社会は、独居高齢者を支えるためのさまざまな取り組みを行っている。<span class="w" data-base="volunteer" data-ipa="/ˌvɑːlənˈtɪər/" data-ja="ボランティア" data-pos="noun">volunteer</span> が定期的に訪問し、介護施設は新しい技術で人手不足を補おうとしている。</p>
 
-        <p><span class="w" data-base="generation" data-ipa="/ˌdʒenəˈreɪʃən/" data-ja="世代" data-pos="noun">generation</span> 間の支え合いは、これからの社会の根幹となる。若い世代と高齢世代、それぞれが互いを尊重し、支え合うこと。それが、長く生きる社会の本当の豊かさを生む。</p>
+        <p><span class="w" data-base="generation" data-ipa="/ˌdʒenəˈreɪʃən/" data-ja="世代" data-pos="noun">Generation</span> 間の支え合いは、これからの社会の根幹となる。若い世代と高齢世代、それぞれが互いを尊重し、支え合うこと。それが、長く生きる社会の本当の豊かさを生む。</p>
       </div>
 
       <div class="en-body hidden">
@@ -14322,7 +14464,7 @@
       <div class="jp-body">
         <p>民主主義の社会において、報道、すなわち<span class="w" data-base="press" data-ipa="/pres/" data-ja="報道機関" data-pos="noun">press</span> は「第四の権力」と呼ばれてきた。立法、行政、司法に並ぶ、社会を支える柱の一つだ。</p>
 
-        <p><span class="w" data-base="journalist" data-ipa="/ˈdʒɜːrnəlɪst/" data-ja="ジャーナリスト" data-pos="noun">journalist</span> たちは、政府や企業の不正を<span class="w" data-base="reveal" data-ipa="/rɪˈviːl/" data-ja="明らかにする" data-pos="verb">reveal</span> し、市民にそれを伝える役割を担っている。<span class="w" data-base="investigative" data-ipa="/ɪnˈvestɪɡətɪv/" data-ja="調査の" data-pos="adj">investigative</span> 報道は、しばしば社会を変えるきっかけとなってきた。</p>
+        <p><span class="w" data-base="journalist" data-ipa="/ˈdʒɜːrnəlɪst/" data-ja="ジャーナリスト" data-pos="noun">Journalist</span> たちは、政府や企業の不正を<span class="w" data-base="reveal" data-ipa="/rɪˈviːl/" data-ja="明らかにする" data-pos="verb">reveal</span> し、市民にそれを伝える役割を担っている。<span class="w" data-base="investigative" data-ipa="/ɪnˈvestɪɡətɪv/" data-ja="調査の" data-pos="adj">investigative</span> 報道は、しばしば社会を変えるきっかけとなってきた。</p>
 
         <p>1972年のウォーターゲート事件では、二人の若い記者の取材によってアメリカの大統領が辞任に追い込まれた。それは、報道の力が<span class="w" data-base="authority" data-ipa="/əˈθɔːrəti/" data-ja="権威" data-pos="noun">authority</span> をも揺さぶることを示す例だった。</p>
 
@@ -14531,7 +14673,7 @@
 
         <p>近年の研究は、私たちの<span class="w" data-base="decision" data-ipa="/dɪˈsɪʒən/" data-ja="決定" data-pos="noun">decision</span> が、いかに多くの<span class="w" data-base="bias" data-ipa="/ˈbaɪəs/" data-ja="偏見" data-pos="noun">bias</span> によって歪められているかを明らかにしてきた。<span class="w" data-base="rational" data-ipa="/ˈræʃənl/" data-ja="合理的な" data-pos="adj">rational</span> でいたいと願いながらも、私たちは<span class="w" data-base="emotion" data-ipa="/ɪˈmoʊʃən/" data-ja="感情" data-pos="noun">emotion</span> や<span class="w" data-base="assumption" data-ipa="/əˈsʌmpʃən/" data-ja="仮定" data-pos="noun">assumption</span> によって判断を曲げられてしまう。</p>
 
-        <p><span class="w" data-base="anxiety" data-ipa="/æŋˈzaɪəti/" data-ja="不安" data-pos="noun">anxiety</span> や<span class="w" data-base="depression" data-ipa="/dɪˈpreʃən/" data-ja="うつ" data-pos="noun">depression</span> を抱える人びとに対する<span class="w" data-base="therapy" data-ipa="/ˈθerəpi/" data-ja="療法" data-pos="noun">therapy</span> も、心理学の大きな貢献の一つだ。心の科学は、私たちが自分自身をよりよく理解するための道具なのである。</p>
+        <p><span class="w" data-base="anxiety" data-ipa="/æŋˈzaɪəti/" data-ja="不安" data-pos="noun">Anxiety</span> や<span class="w" data-base="depression" data-ipa="/dɪˈpreʃən/" data-ja="うつ" data-pos="noun">depression</span> を抱える人びとに対する<span class="w" data-base="therapy" data-ipa="/ˈθerəpi/" data-ja="療法" data-pos="noun">therapy</span> も、心理学の大きな貢献の一つだ。心の科学は、私たちが自分自身をよりよく理解するための道具なのである。</p>
       </div>
 
       <div class="en-body hidden">
@@ -15336,7 +15478,7 @@
 
         <p>夏目漱石の『こころ』、ドストエフスキーの『罪と罰』。これらの<span class="w" data-base="novel" data-ipa="/ˈnɑːvl/" data-ja="小説" data-pos="noun">novel</span> は、人間の心の暗い部分にまで光を当てる。文学はしばしば、私たちが目をそむけたい問いを、正面から差し出してくる。</p>
 
-        <p><span class="w" data-base="poetry" data-ipa="/ˈpoʊətri/" data-ja="詩" data-pos="noun">poetry</span> もまた、文学の重要な一部だ。少ない言葉で、ある瞬間の本質を捕まえる。<span class="w" data-base="metaphor" data-ipa="/ˈmetəfɔːr/" data-ja="隠喩" data-pos="noun">metaphor</span> や象徴を通して、詩は私たちの心の奥に直接届く。</p>
+        <p><span class="w" data-base="poetry" data-ipa="/ˈpoʊətri/" data-ja="詩" data-pos="noun">Poetry</span> もまた、文学の重要な一部だ。少ない言葉で、ある瞬間の本質を捕まえる。<span class="w" data-base="metaphor" data-ipa="/ˈmetəfɔːr/" data-ja="隠喩" data-pos="noun">metaphor</span> や象徴を通して、詩は私たちの心の奥に直接届く。</p>
 
         <p>映画やインターネットが日常に満ちあふれた今でも、文学が消えないのはなぜだろう。それはおそらく、本を一人静かに読むという体験そのものが、私たちが自分自身と対話するための、かけがえのない時間だからである。<span class="w" data-base="reader" data-ipa="/ˈriːdər/" data-ja="読者" data-pos="noun">reader</span> と作家とのあいだに生まれる静かな対話が、文学の本当の力なのである。</p>
       </div>
@@ -15600,13 +15742,13 @@
       <div class="jp-body">
         <p>世界には現在、約7000の<span class="w" data-base="language" data-ipa="/ˈlæŋɡwɪdʒ/" data-ja="言語" data-pos="noun">language</span> が話されているとされる。それぞれの言語は、その言語を話す人びとの世界の見方を映し出している。</p>
 
-        <p><span class="w" data-base="translation" data-ipa="/trænsˈleɪʃən/" data-ja="翻訳" data-pos="noun">translation</span> とは、一つの言語の意味を、別の言語の言葉で再構築する作業である。しかしそれは、単なる単語の置き換えではない。</p>
+        <p><span class="w" data-base="translation" data-ipa="/trænsˈleɪʃən/" data-ja="翻訳" data-pos="noun">Translation</span> とは、一つの言語の意味を、別の言語の言葉で再構築する作業である。しかしそれは、単なる単語の置き換えではない。</p>
 
         <p>たとえば、日本語の「もったいない」「いただきます」「お疲れさま」といった<span class="w" data-base="expression" data-ipa="/ɪkˈspreʃən/" data-ja="表現" data-pos="noun">expression</span> は、英語に<span class="w" data-base="literally" data-ipa="/ˈlɪtərəli/" data-ja="文字通りに" data-pos="adv">literally</span> 訳すことができない。これらの言葉には、日本の文化と感性が深く溶け込んでいる。</p>
 
         <p>逆に、英語の「serendipity」「nostalgia」「privacy」のような言葉も、日本語の一語に置き換えるのは難しい。それぞれの言語が、それぞれの文化的な<span class="w" data-base="context" data-ipa="/ˈkɑːntekst/" data-ja="文脈" data-pos="noun">context</span> の中で意味を持つからだ。</p>
 
-        <p><span class="w" data-base="poetry" data-ipa="/ˈpoʊətri/" data-ja="詩" data-pos="noun">poetry</span> の翻訳は、最も難しい挑戦の一つである。詩のリズム、響き、行間の余白までを、別の言語で再現することは、ほぼ不可能に近い。それでも翻訳者たちは、原作の精神を別の言語で生き返らせようと、長い時間を捧げる。</p>
+        <p><span class="w" data-base="poetry" data-ipa="/ˈpoʊətri/" data-ja="詩" data-pos="noun">Poetry</span> の翻訳は、最も難しい挑戦の一つである。詩のリズム、響き、行間の余白までを、別の言語で再現することは、ほぼ不可能に近い。それでも翻訳者たちは、原作の精神を別の言語で生き返らせようと、長い時間を捧げる。</p>
 
         <p>近年、AIによる<span class="w" data-base="machine" data-ipa="/məˈʃiːn/" data-ja="機械" data-pos="noun">machine</span> 翻訳の精度が急速に向上した。グーグル翻訳やDeepLは、日常の意思疎通を大きく助けてくれる。しかし、文化的な<span class="w" data-base="nuance" data-ipa="/ˈnuːɑːns/" data-ja="ニュアンス" data-pos="noun">nuance</span> や文学的な美しさを翻訳することは、いまだ人間の<span class="w" data-base="translator" data-ipa="/trænsˈleɪtər/" data-ja="翻訳者" data-pos="noun">translator</span> の仕事である。</p>
 
@@ -15800,7 +15942,7 @@
 
         <p>しかし、希望もある。各国政府やNGOは保護区を設定し、絶滅危惧種の<span class="w" data-base="breeding" data-ipa="/ˈbriːdɪŋ/" data-ja="繁殖" data-pos="noun">breeding</span> プログラムを進めている。科学者たちは個体数を<span class="w" data-base="monitor" data-ipa="/ˈmɑːnɪtər/" data-ja="監視する" data-pos="verb">monitor</span> し、<span class="w" data-base="assessment" data-ipa="/əˈsesmənt/" data-ja="評価" data-pos="noun">assessment</span> に基づいた保護計画を立てている。</p>
 
-        <p><span class="w" data-base="biodiversity" data-ipa="/ˌbaɪoʊdaɪˈvɜːrsəti/" data-ja="生物多様性" data-pos="noun">biodiversity</span> は、私たちの食料、医薬品、そして地球の気候を支える基盤である。それを守ることは、ひいては私たち自身を守ることなのだ。</p>
+        <p><span class="w" data-base="biodiversity" data-ipa="/ˌbaɪoʊdaɪˈvɜːrsəti/" data-ja="生物多様性" data-pos="noun">Biodiversity</span> は、私たちの食料、医薬品、そして地球の気候を支える基盤である。それを守ることは、ひいては私たち自身を守ることなのだ。</p>
       </div>
 
       <div class="en-body hidden">
@@ -16038,7 +16180,7 @@
 
         <p>やがて会社は<span class="w" data-base="competitive" data-ipa="/kəmˈpetətɪv/" data-ja="競争の激しい" data-pos="adj">competitive</span> な市場で頭角を現した。海外の<span class="w" data-base="client" data-ipa="/ˈklaɪənt/" data-ja="顧客" data-pos="noun">client</span> との<span class="w" data-base="contract" data-ipa="/ˈkɑːntrækt/" data-ja="契約" data-pos="noun">contract</span> を獲得し、<span class="w" data-base="expansion" data-ipa="/ɪkˈspænʃən/" data-ja="拡大" data-pos="noun">expansion</span> の波に乗った。</p>
 
-        <p><span class="w" data-base="chairman" data-ipa="/ˈtʃermən/" data-ja="会長" data-pos="noun">chairman</span> となった創業者は、年に一度の<span class="w" data-base="conference" data-ipa="/ˈkɑːnfərəns/" data-ja="会議" data-pos="noun">conference</span> で全<span class="w" data-base="employee" data-ipa="/ɪmˈplɔɪiː/" data-ja="従業員" data-pos="noun">employee</span> に語りかけた。「我々の強みは<span class="w" data-base="strategy" data-ipa="/ˈstrætədʒi/" data-ja="戦略" data-pos="noun">strategy</span> ではなく、一人ひとりの誠意だ」と。</p>
+        <p><span class="w" data-base="chairman" data-ipa="/ˈtʃermən/" data-ja="会長" data-pos="noun">Chairman</span> となった創業者は、年に一度の<span class="w" data-base="conference" data-ipa="/ˈkɑːnfərəns/" data-ja="会議" data-pos="noun">conference</span> で全<span class="w" data-base="employee" data-ipa="/ɪmˈplɔɪiː/" data-ja="従業員" data-pos="noun">employee</span> に語りかけた。「我々の強みは<span class="w" data-base="strategy" data-ipa="/ˈstrætədʒi/" data-ja="戦略" data-pos="noun">strategy</span> ではなく、一人ひとりの誠意だ」と。</p>
 
         <p>今日、この会社は<span class="w" data-base="commercial" data-ipa="/kəˈmɜːrʃəl/" data-ja="商業の" data-pos="adj">commercial</span> な成功を収めながらも、地域社会への貢献を忘れない。<span class="w" data-base="administration" data-ipa="/ədˌmɪnɪˈstreɪʃən/" data-ja="管理" data-pos="noun">administration</span> の透明性、従業員の<span class="w" data-base="promote" data-ipa="/prəˈmoʊt/" data-ja="昇進させる" data-pos="verb">promote</span> の公平さ。小さな会社のこの物語は、ビジネスの成功が数字だけでは測れないことを教えてくれる。</p>
       </div>
@@ -16137,7 +16279,7 @@
       <div class="jp-body">
         <p>世界の<span class="w" data-base="population" data-ipa="/ˌpɑːpjəˈleɪʃən/" data-ja="人口" data-pos="noun">population</span> は80億人を超えた。しかし今なお、8億人以上が十分な食料を得られず、<span class="w" data-base="hunger" data-ipa="/ˈhʌŋɡər/" data-ja="飢餓" data-pos="noun">hunger</span> に苦しんでいる。</p>
 
-        <p><span class="w" data-base="agriculture" data-ipa="/ˈæɡrɪkʌltʃər/" data-ja="農業" data-pos="noun">agriculture</span> は、人類最古の産業の一つであり、文明の基盤でもある。古代メソポタミアでの灌漑農業の発明以来、人類は<span class="w" data-base="crop" data-ipa="/krɑːp/" data-ja="作物" data-pos="noun">crop</span> の品種改良と技術革新によって、収穫量を何倍にも引き上げてきた。</p>
+        <p><span class="w" data-base="agriculture" data-ipa="/ˈæɡrɪkʌltʃər/" data-ja="農業" data-pos="noun">Agriculture</span> は、人類最古の産業の一つであり、文明の基盤でもある。古代メソポタミアでの灌漑農業の発明以来、人類は<span class="w" data-base="crop" data-ipa="/krɑːp/" data-ja="作物" data-pos="noun">crop</span> の品種改良と技術革新によって、収穫量を何倍にも引き上げてきた。</p>
 
         <p>20世紀の「緑の革命」では、高収量品種の開発と化学<span class="w" data-base="fertilizer" data-ipa="/ˈfɜːrtəlaɪzər/" data-ja="肥料" data-pos="noun">fertilizer</span> の普及によって、アジアとアフリカの食料生産は飛躍的に増えた。しかし一方で、<span class="w" data-base="pesticide" data-ipa="/ˈpestɪsaɪd/" data-ja="農薬" data-pos="noun">pesticide</span> や肥料の過剰使用は土壌と水を汚染し、長期的な問題を引き起こしている。</p>
 
@@ -16544,7 +16686,7 @@
 
         <p>インターネットの<span class="w" data-base="emergence" data-ipa="/ɪˈmɜːrdʒəns/" data-ja="出現" data-pos="noun">emergence</span> は、この問題を<span class="w" data-base="considerably" data-ipa="/kənˈsɪdərəbli/" data-ja="かなり" data-pos="adv">considerably</span> 複雑にした。SNS上の発言は<span class="w" data-base="instantly" data-ipa="/ˈɪnstəntli/" data-ja="即座に" data-pos="adv">instantly</span> 拡散し、取り消すことは<span class="w" data-base="virtually" data-ipa="/ˈvɜːrtʃuəli/" data-ja="事実上" data-pos="adv">virtually</span> 不可能だ。</p>
 
-        <p><span class="w" data-base="activist" data-ipa="/ˈæktɪvɪst/" data-ja="活動家" data-pos="noun">activist</span> たちは、表現の自由を守るために闘い続けている。その一方で、<span class="w" data-base="victim" data-ipa="/ˈvɪktɪm/" data-ja="被害者" data-pos="noun">victim</span> を守るための法整備も求められている。</p>
+        <p><span class="w" data-base="activist" data-ipa="/ˈæktɪvɪst/" data-ja="活動家" data-pos="noun">Activist</span> たちは、表現の自由を守るために闘い続けている。その一方で、<span class="w" data-base="victim" data-ipa="/ˈvɪktɪm/" data-ja="被害者" data-pos="noun">victim</span> を守るための法整備も求められている。</p>
 
         <p>大切なのは、自分とは<span class="w" data-base="contrary" data-ipa="/ˈkɑːntreri/" data-ja="反対の" data-pos="adj">contrary</span> な意見にも耳を傾ける<span class="w" data-base="attitude" data-ipa="/ˈætɪtuːd/" data-ja="態度" data-pos="noun">attitude</span> だ。対話を<span class="w" data-base="maintain" data-ipa="/meɪnˈteɪn/" data-ja="維持する" data-pos="verb">maintain</span> する限り、社会は分断を<span class="w" data-base="avoid" data-ipa="/əˈvɔɪd/" data-ja="避ける" data-pos="verb">avoid</span> できる。表現の自由とは、聞く自由でもある。</p>
       </div>
@@ -16587,7 +16729,7 @@
       <div class="jp-body">
         <p>現代人は、かつてないほど便利な暮らしを送っている。しかしその代償として、心身の健康が<span class="w" data-base="neglect" data-ipa="/nɪˈɡlekt/" data-ja="怠る" data-pos="verb">neglect</span> されがちだ。</p>
 
-        <p><span class="w" data-base="lung" data-ipa="/lʌŋ/" data-ja="肺" data-pos="noun">lung</span> の機能は運動不足で低下し、<span class="w" data-base="muscle" data-ipa="/ˈmʌsl/" data-ja="筋肉" data-pos="noun">muscle</span> は使わなければ<span class="w" data-base="diminish" data-ipa="/dɪˈmɪnɪʃ/" data-ja="減少する" data-pos="verb">diminish</span> する。座りっぱなしの生活は、糖尿病や心臓<span class="w" data-base="disease" data-ipa="/dɪˈziːz/" data-ja="病気" data-pos="noun">disease</span> の<span class="w" data-base="factor" data-ipa="/ˈfæktər/" data-ja="要因" data-pos="noun">factor</span> となる。</p>
+        <p><span class="w" data-base="lung" data-ipa="/lʌŋ/" data-ja="肺" data-pos="noun">Lung</span> の機能は運動不足で低下し、<span class="w" data-base="muscle" data-ipa="/ˈmʌsl/" data-ja="筋肉" data-pos="noun">muscle</span> は使わなければ<span class="w" data-base="diminish" data-ipa="/dɪˈmɪnɪʃ/" data-ja="減少する" data-pos="verb">diminish</span> する。座りっぱなしの生活は、糖尿病や心臓<span class="w" data-base="disease" data-ipa="/dɪˈziːz/" data-ja="病気" data-pos="noun">disease</span> の<span class="w" data-base="factor" data-ipa="/ˈfæktər/" data-ja="要因" data-pos="noun">factor</span> となる。</p>
 
         <p>睡眠の質も<span class="w" data-base="crucial" data-ipa="/ˈkruːʃəl/" data-ja="重大な" data-pos="adj">crucial</span> だ。夜遅くまでスマートフォンの<span class="w" data-base="screen" data-ipa="/skriːn/" data-ja="画面" data-pos="noun">screen</span> を見つめていると、脳は<span class="w" data-base="intense" data-ipa="/ɪnˈtens/" data-ja="激しい" data-pos="adj">intense</span> な光刺激を受け、眠りが浅くなる。<span class="w" data-base="consequently" data-ipa="/ˈkɑːnsəkwentli/" data-ja="結果として" data-pos="adv">consequently</span>、翌日の集中力は<span class="w" data-base="considerably" data-ipa="/kənˈsɪdərəbli/" data-ja="かなり" data-pos="adv">considerably</span> 落ちる。</p>
 
@@ -16636,11 +16778,11 @@
       <div class="jp-body">
         <p>都市部の住宅<span class="w" data-base="expense" data-ipa="/ɪkˈspens/" data-ja="費用" data-pos="noun">expense</span> は年々上昇している。若い世代の多くは、<span class="w" data-base="rent" data-ipa="/rent/" data-ja="家賃" data-pos="noun">rent</span> すら<span class="w" data-base="afford" data-ipa="/əˈfɔːrd/" data-ja="余裕がある" data-pos="verb">afford</span> できず、親と同居を続けている。</p>
 
-        <p><span class="w" data-base="mortgage" data-ipa="/ˈmɔːrɡɪdʒ/" data-ja="住宅ローン" data-pos="noun">mortgage</span> を組んでマイホームを手に入れるのは、かつてのような「当たり前」ではなくなった。不動産<span class="w" data-base="estate" data-ipa="/ɪˈsteɪt/" data-ja="不動産" data-pos="noun">estate</span> の価格は、<span class="w" data-base="earnings" data-ipa="/ˈɜːrnɪŋz/" data-ja="収入" data-pos="noun">earnings</span> の上昇をはるかに上回るペースで<span class="w" data-base="increase" data-ipa="/ɪnˈkriːs/" data-ja="増加する" data-pos="verb">increase</span> しているからだ。</p>
+        <p><span class="w" data-base="mortgage" data-ipa="/ˈmɔːrɡɪdʒ/" data-ja="住宅ローン" data-pos="noun">Mortgage</span> を組んでマイホームを手に入れるのは、かつてのような「当たり前」ではなくなった。不動産<span class="w" data-base="estate" data-ipa="/ɪˈsteɪt/" data-ja="不動産" data-pos="noun">estate</span> の価格は、<span class="w" data-base="earnings" data-ipa="/ˈɜːrnɪŋz/" data-ja="収入" data-pos="noun">earnings</span> の上昇をはるかに上回るペースで<span class="w" data-base="increase" data-ipa="/ɪnˈkriːs/" data-ja="増加する" data-pos="verb">increase</span> しているからだ。</p>
 
         <p>この問題は<span class="w" data-base="domestic" data-ipa="/dəˈmestɪk/" data-ja="国内の" data-pos="adj">domestic</span> な政策課題として、各国で<span class="w" data-base="intense" data-ipa="/ɪnˈtens/" data-ja="激しい" data-pos="adj">intense</span> な議論を呼んでいる。<span class="w" data-base="mayor" data-ipa="/meɪər/" data-ja="市長" data-pos="noun">mayor</span> や<span class="w" data-base="governor" data-ipa="/ˈɡʌvərnər/" data-ja="知事" data-pos="noun">governor</span> は対策を<span class="w" data-base="propose" data-ipa="/prəˈpoʊz/" data-ja="提案する" data-pos="verb">propose</span> するが、<span class="w" data-base="effect" data-ipa="/ɪˈfekt/" data-ja="効果" data-pos="noun">effect</span> は限定的だ。</p>
 
-        <p><span class="w" data-base="numerous" data-ipa="/ˈnuːmərəs/" data-ja="多数の" data-pos="adj">numerous</span> な<span class="w" data-base="resident" data-ipa="/ˈrezɪdənt/" data-ja="住民" data-pos="noun">resident</span> が、より安い<span class="w" data-base="suburb" data-ipa="/ˈsʌbɜːrb/" data-ja="郊外" data-pos="noun">suburb</span> へと移り住んでいる。しかし通勤時間は<span class="w" data-base="considerably" data-ipa="/kənˈsɪdərəbli/" data-ja="かなり" data-pos="adv">considerably</span> 長くなり、暮らしの<span class="w" data-base="quality" data-ipa="/ˈkwɑːləti/" data-ja="質" data-pos="noun">quality</span> が下がる<span class="w" data-base="outcome" data-ipa="/ˈaʊtkʌm/" data-ja="結果" data-pos="noun">outcome</span> も生まれている。</p>
+        <p><span class="w" data-base="numerous" data-ipa="/ˈnuːmərəs/" data-ja="多数の" data-pos="adj">Numerous</span> な<span class="w" data-base="resident" data-ipa="/ˈrezɪdənt/" data-ja="住民" data-pos="noun">resident</span> が、より安い<span class="w" data-base="suburb" data-ipa="/ˈsʌbɜːrb/" data-ja="郊外" data-pos="noun">suburb</span> へと移り住んでいる。しかし通勤時間は<span class="w" data-base="considerably" data-ipa="/kənˈsɪdərəbli/" data-ja="かなり" data-pos="adv">considerably</span> 長くなり、暮らしの<span class="w" data-base="quality" data-ipa="/ˈkwɑːləti/" data-ja="質" data-pos="noun">quality</span> が下がる<span class="w" data-base="outcome" data-ipa="/ˈaʊtkʌm/" data-ja="結果" data-pos="noun">outcome</span> も生まれている。</p>
 
         <p>住宅問題は<span class="w" data-base="merely" data-ipa="/ˈmɪrli/" data-ja="単に" data-pos="adv">merely</span> 経済の問題ではない。安定した住まいは、子どもの教育、住民の健康、そして地域の<span class="w" data-base="stability" data-ipa="/stəˈbɪləti/" data-ja="安定" data-pos="noun">stability</span> に直結する。<span class="w" data-base="adequate" data-ipa="/ˈædɪkwət/" data-ja="十分な" data-pos="adj">adequate</span> な住まいはすべての人の<span class="w" data-base="right" data-ipa="/raɪt/" data-ja="権利" data-pos="noun">right</span> であるべきだ。</p>
       </div>
@@ -16739,7 +16881,7 @@
 
         <p>冷戦終結後も、地域紛争、テロリズム、サイバー攻撃など、新たな脅威が<span class="w" data-base="emerge" data-ipa="/ɪˈmɜːrdʒ/" data-ja="現れる" data-pos="verb">emerge</span> している。いかなる問題も、一国だけでは<span class="w" data-base="resolve" data-ipa="/rɪˈzɑːlv/" data-ja="解決する" data-pos="verb">resolve</span> できない。</p>
 
-        <p><span class="w" data-base="diplomat" data-ipa="/ˈdɪpləmæt/" data-ja="外交官" data-pos="noun">diplomat</span> の仕事は、対立する利害のあいだに橋を架けることだ。<span class="w" data-base="oppose" data-ipa="/əˈpoʊz/" data-ja="反対する" data-pos="verb">oppose</span> し合う国家が、<span class="w" data-base="mutual" data-ipa="/ˈmjuːtʃuəl/" data-ja="相互の" data-pos="adj">mutual</span> な利益を見出すこと。それが、外交の<span class="w" data-base="ultimate" data-ipa="/ˈʌltɪmət/" data-ja="究極の" data-pos="adj">ultimate</span> な<span class="w" data-base="objective" data-ipa="/əbˈdʒektɪv/" data-ja="目的" data-pos="noun">objective</span> である。</p>
+        <p><span class="w" data-base="diplomat" data-ipa="/ˈdɪpləmæt/" data-ja="外交官" data-pos="noun">Diplomat</span> の仕事は、対立する利害のあいだに橋を架けることだ。<span class="w" data-base="oppose" data-ipa="/əˈpoʊz/" data-ja="反対する" data-pos="verb">oppose</span> し合う国家が、<span class="w" data-base="mutual" data-ipa="/ˈmjuːtʃuəl/" data-ja="相互の" data-pos="adj">mutual</span> な利益を見出すこと。それが、外交の<span class="w" data-base="ultimate" data-ipa="/ˈʌltɪmət/" data-ja="究極の" data-pos="adj">ultimate</span> な<span class="w" data-base="objective" data-ipa="/əbˈdʒektɪv/" data-ja="目的" data-pos="noun">objective</span> である。</p>
       </div>
 
       <div class="en-body hidden">
@@ -16780,7 +16922,7 @@
       <div class="jp-body">
         <p>地球上には、既知の<span class="w" data-base="mammal" data-ipa="/ˈmæml/" data-ja="哺乳類" data-pos="noun">mammal</span> だけでも6,000種以上がいる。<span class="w" data-base="insect" data-ipa="/ˈɪnsekt/" data-ja="昆虫" data-pos="noun">insect</span> に至っては数百万種とも推定される。</p>
 
-        <p><span class="w" data-base="tropical" data-ipa="/ˈtrɑːpɪkl/" data-ja="熱帯の" data-pos="adj">tropical</span> 雨林は、地球表面のわずか6%を覆うにすぎないが、全<span class="w" data-base="species" data-ipa="/ˈspiːʃiːz/" data-ja="種" data-pos="noun">species</span> の半分以上がそこに<span class="w" data-base="dwell" data-ipa="/dwel/" data-ja="住む" data-pos="verb">dwell</span> している。この「生物多様性のホットスポット」は、急速に縮小しつつある。</p>
+        <p><span class="w" data-base="tropical" data-ipa="/ˈtrɑːpɪkl/" data-ja="熱帯の" data-pos="adj">Tropical</span> 雨林は、地球表面のわずか6%を覆うにすぎないが、全<span class="w" data-base="species" data-ipa="/ˈspiːʃiːz/" data-ja="種" data-pos="noun">species</span> の半分以上がそこに<span class="w" data-base="dwell" data-ipa="/dwel/" data-ja="住む" data-pos="verb">dwell</span> している。この「生物多様性のホットスポット」は、急速に縮小しつつある。</p>
 
         <p>原因は<span class="w" data-base="numerous" data-ipa="/ˈnuːmərəs/" data-ja="多数の" data-pos="adj">numerous</span> にある。伐採、農地への転換、<span class="w" data-base="urban" data-ipa="/ˈɜːrbən/" data-ja="都市の" data-pos="adj">urban</span> 開発。人間の活動が、動物たちの<span class="w" data-base="habitat" data-ipa="/ˈhæbɪtæt/" data-ja="生息地" data-pos="noun">habitat</span> を<span class="w" data-base="steadily" data-ipa="/ˈstedɪli/" data-ja="着実に" data-pos="adv">steadily</span> 奪っている。</p>
 
@@ -16833,7 +16975,7 @@
 
         <p>オフィスでは、大量のデータを<span class="w" data-base="handle" data-ipa="/ˈhændl/" data-ja="扱う" data-pos="verb">handle</span> するために<span class="w" data-base="equipment" data-ipa="/ɪˈkwɪpmənt/" data-ja="設備" data-pos="noun">equipment</span> が<span class="w" data-base="install" data-ipa="/ɪnˈstɔːl/" data-ja="設置する" data-pos="verb">install</span> されている。会議は遠隔で行われ、書類は<span class="w" data-base="electronic" data-ipa="/ˌelekˈtrɑːnɪk/" data-ja="電子の" data-pos="adj">electronic</span> に署名される。</p>
 
-        <p><span class="w" data-base="vehicle" data-ipa="/ˈviːɪkl/" data-ja="車両" data-pos="noun">vehicle</span> の電動化は、排気ガスを<span class="w" data-base="eliminate" data-ipa="/ɪˈlɪmɪneɪt/" data-ja="排除する" data-pos="verb">eliminate</span> し、都市の空気を<span class="w" data-base="considerably" data-ipa="/kənˈsɪdərəbli/" data-ja="かなり" data-pos="adv">considerably</span> きれいにすると期待されている。<span class="w" data-base="battery" data-ipa="/ˈbætəri/" data-ja="電池" data-pos="noun">battery</span> 技術の<span class="w" data-base="enhance" data-ipa="/ɪnˈhæns/" data-ja="高める" data-pos="verb">enhance</span> も急速に進んでいる。</p>
+        <p><span class="w" data-base="vehicle" data-ipa="/ˈviːɪkl/" data-ja="車両" data-pos="noun">Vehicle</span> の電動化は、排気ガスを<span class="w" data-base="eliminate" data-ipa="/ɪˈlɪmɪneɪt/" data-ja="排除する" data-pos="verb">eliminate</span> し、都市の空気を<span class="w" data-base="considerably" data-ipa="/kənˈsɪdərəbli/" data-ja="かなり" data-pos="adv">considerably</span> きれいにすると期待されている。<span class="w" data-base="battery" data-ipa="/ˈbætəri/" data-ja="電池" data-pos="noun">battery</span> 技術の<span class="w" data-base="enhance" data-ipa="/ɪnˈhæns/" data-ja="高める" data-pos="verb">enhance</span> も急速に進んでいる。</p>
 
         <p>一方で、<span class="w" data-base="privacy" data-ipa="/ˈpraɪvəsi/" data-ja="プライバシー" data-pos="noun">privacy</span> の<span class="w" data-base="exposure" data-ipa="/ɪkˈspoʊʒər/" data-ja="露出" data-pos="noun">exposure</span> や、デジタル<span class="w" data-base="divide" data-ipa="/dɪˈvaɪd/" data-ja="格差" data-pos="noun">divide</span> の問題は深刻さを増している。技術の恩恵を<span class="w" data-base="fairly" data-ipa="/ˈferli/" data-ja="公正に" data-pos="adv">fairly</span> に分配することが、社会の<span class="w" data-base="obligation" data-ipa="/ˌɑːblɪˈɡeɪʃən/" data-ja="義務" data-pos="noun">obligation</span> となっている。</p>
 
@@ -16880,9 +17022,9 @@
 
         <p>わたしたちは、いつも<span class="w" data-base="correct" data-ipa="/kəˈrekt/" data-ja="正しい" data-pos="adj">correct</span> な選択ができるわけではない。<span class="w" data-base="fault" data-ipa="/fɔːlt/" data-ja="過失" data-pos="noun">fault</span> を犯し、<span class="w" data-base="regret" data-ipa="/rɪˈɡret/" data-ja="後悔" data-pos="noun">regret</span> することもある。しかし<span class="w" data-base="failure" data-ipa="/ˈfeɪljər/" data-ja="失敗" data-pos="noun">failure</span> こそが、次の一歩への<span class="w" data-base="insight" data-ipa="/ˈɪnsaɪt/" data-ja="洞察" data-pos="noun">insight</span> をもたらす。</p>
 
-        <p><span class="w" data-base="fear" data-ipa="/fɪər/" data-ja="恐れ" data-pos="noun">fear</span> は、しばしば私たちの足を止める。「失敗したらどうしよう」「笑われたらどうしよう」。その<span class="w" data-base="impulse" data-ipa="/ˈɪmpʌls/" data-ja="衝動" data-pos="noun">impulse</span> を押し殺し、一歩踏み出すことが<span class="w" data-base="courage" data-ipa="/ˈkɜːrɪdʒ/" data-ja="勇気" data-pos="noun">courage</span> なのだ。</p>
+        <p><span class="w" data-base="fear" data-ipa="/fɪər/" data-ja="恐れ" data-pos="noun">Fear</span> は、しばしば私たちの足を止める。「失敗したらどうしよう」「笑われたらどうしよう」。その<span class="w" data-base="impulse" data-ipa="/ˈɪmpʌls/" data-ja="衝動" data-pos="noun">impulse</span> を押し殺し、一歩踏み出すことが<span class="w" data-base="courage" data-ipa="/ˈkɜːrɪdʒ/" data-ja="勇気" data-pos="noun">courage</span> なのだ。</p>
 
-        <p><span class="w" data-base="fate" data-ipa="/feɪt/" data-ja="運命" data-pos="noun">fate</span> という言葉がある。しかし運命は、あらかじめ決まったものではない。私たちは日々の<span class="w" data-base="decision" data-ipa="/dɪˈsɪʒən/" data-ja="決定" data-pos="noun">decision</span> によって、自分の道を<span class="w" data-base="determine" data-ipa="/dɪˈtɜːrmɪn/" data-ja="決定する" data-pos="verb">determine</span> していく。</p>
+        <p><span class="w" data-base="fate" data-ipa="/feɪt/" data-ja="運命" data-pos="noun">Fate</span> という言葉がある。しかし運命は、あらかじめ決まったものではない。私たちは日々の<span class="w" data-base="decision" data-ipa="/dɪˈsɪʒən/" data-ja="決定" data-pos="noun">decision</span> によって、自分の道を<span class="w" data-base="determine" data-ipa="/dɪˈtɜːrmɪn/" data-ja="決定する" data-pos="verb">determine</span> していく。</p>
 
         <p>ある<span class="w" data-base="philosopher" data-ipa="/fəˈlɑːsəfər/" data-ja="哲学者" data-pos="noun">philosopher</span> は言った。「人生は<span class="w" data-base="forward" data-ipa="/ˈfɔːrwərd/" data-ja="前方へ" data-pos="adv">forward</span> に生きるしかないが、理解するのは<span class="w" data-base="backward" data-ipa="/ˈbækwərd/" data-ja="後方に" data-pos="adv">backward</span> にしかできない。」<span class="w" data-base="precisely" data-ipa="/prɪˈsaɪsli/" data-ja="正確に" data-pos="adv">precisely</span> その通りかもしれない。</p>
 
@@ -17227,9 +17369,9 @@
       <div class="jp-body">
         <p>結婚という制度は、時代とともに<span class="w" data-base="evolve" data-ipa="/ɪˈvɑːlv/" data-ja="進化する" data-pos="verb">evolve</span> してきた。かつては家と家の結びつき、<span class="w" data-base="alliance" data-ipa="/əˈlaɪəns/" data-ja="同盟" data-pos="noun">alliance</span> としての意味が強かった。今では、二人の個人の愛情と選択が<span class="w" data-base="primary" data-ipa="/ˈpraɪmeri/" data-ja="主要な" data-pos="adj">primary</span> な理由となっている。</p>
 
-        <p><span class="w" data-base="anniversary" data-ipa="/ˌænəˈvɜːrsəri/" data-ja="記念日" data-pos="noun">anniversary</span> を重ねるたびに、夫婦は互いをより深く知る。しかし時に、すべてがうまくいくとは限らない。<span class="w" data-base="conflict" data-ipa="/ˈkɑːnflɪkt/" data-ja="紛争" data-pos="noun">conflict</span> が積もり、<span class="w" data-base="intimate" data-ipa="/ˈɪntɪmət/" data-ja="親密な" data-pos="adj">intimate</span> な関係が冷めていくこともある。</p>
+        <p><span class="w" data-base="anniversary" data-ipa="/ˌænəˈvɜːrsəri/" data-ja="記念日" data-pos="noun">Anniversary</span> を重ねるたびに、夫婦は互いをより深く知る。しかし時に、すべてがうまくいくとは限らない。<span class="w" data-base="conflict" data-ipa="/ˈkɑːnflɪkt/" data-ja="紛争" data-pos="noun">conflict</span> が積もり、<span class="w" data-base="intimate" data-ipa="/ˈɪntɪmət/" data-ja="親密な" data-pos="adj">intimate</span> な関係が冷めていくこともある。</p>
 
-        <p><span class="w" data-base="divorce" data-ipa="/dɪˈvɔːrs/" data-ja="離婚" data-pos="noun">divorce</span> 率は世界中で上昇している。これを<span class="w" data-base="negative" data-ipa="/ˈneɡətɪv/" data-ja="否定的な" data-pos="adj">negative</span> な現象としてのみ見るのは<span class="w" data-base="appropriate" data-ipa="/əˈproʊpriət/" data-ja="適切な" data-pos="adj">appropriate</span> ではない。個人の幸福を優先する社会の、一つの<span class="w" data-base="aspect" data-ipa="/ˈæspekt/" data-ja="側面" data-pos="noun">aspect</span> でもあるからだ。</p>
+        <p><span class="w" data-base="divorce" data-ipa="/dɪˈvɔːrs/" data-ja="離婚" data-pos="noun">Divorce</span> 率は世界中で上昇している。これを<span class="w" data-base="negative" data-ipa="/ˈneɡətɪv/" data-ja="否定的な" data-pos="adj">negative</span> な現象としてのみ見るのは<span class="w" data-base="appropriate" data-ipa="/əˈproʊpriət/" data-ja="適切な" data-pos="adj">appropriate</span> ではない。個人の幸福を優先する社会の、一つの<span class="w" data-base="aspect" data-ipa="/ˈæspekt/" data-ja="側面" data-pos="noun">aspect</span> でもあるからだ。</p>
 
         <p>離婚の背景は<span class="w" data-base="complicated" data-ipa="/ˈkɑːmplɪkeɪtɪd/" data-ja="複雑な" data-pos="adj">complicated</span> だ。経済的な<span class="w" data-base="strain" data-ipa="/streɪn/" data-ja="負担" data-pos="noun">strain</span>、価値観の<span class="w" data-base="difference" data-ipa="/ˈdɪfrəns/" data-ja="違い" data-pos="noun">difference</span>、子育ての<span class="w" data-base="burden" data-ipa="/ˈbɜːrdn/" data-ja="重荷" data-pos="noun">burden</span>。一つの原因に<span class="w" data-base="attribute" data-ipa="/əˈtrɪbjuːt/" data-ja="帰する" data-pos="verb">attribute</span> することはできない。</p>
 
@@ -17446,7 +17588,7 @@
 
         <p>突然、前方から<span class="w" data-base="blast" data-ipa="/blæst/" data-ja="爆風" data-pos="noun">blast</span> の音が響いた。<span class="w" data-base="commander" data-ipa="/kəˈmændər/" data-ja="指揮官" data-pos="noun">commander</span> が低い声で指示を出す。「散開。全員、地面に伏せろ。」</p>
 
-        <p><span class="w" data-base="bullet" data-ipa="/ˈbʊlɪt/" data-ja="弾丸" data-pos="noun">bullet</span> が木々の間を飛び交う。<span class="w" data-base="combat" data-ipa="/ˈkɑːmbæt/" data-ja="戦闘" data-pos="noun">combat</span> が始まった。若い兵士の隣で、仲間が倒れた。<span class="w" data-base="bloody" data-ipa="/ˈblʌdi/" data-ja="血まみれの" data-pos="adj">bloody</span> な光景が広がる。</p>
+        <p><span class="w" data-base="bullet" data-ipa="/ˈbʊlɪt/" data-ja="弾丸" data-pos="noun">Bullet</span> が木々の間を飛び交う。<span class="w" data-base="combat" data-ipa="/ˈkɑːmbæt/" data-ja="戦闘" data-pos="noun">combat</span> が始まった。若い兵士の隣で、仲間が倒れた。<span class="w" data-base="bloody" data-ipa="/ˈblʌdi/" data-ja="血まみれの" data-pos="adj">bloody</span> な光景が広がる。</p>
 
         <p>数分後、<span class="w" data-base="shooting" data-ipa="/ˈʃuːtɪŋ/" data-ja="射撃" data-pos="noun">shooting</span> がやみ、辺りは不気味な静けさに包まれた。兵士たちは震えながら立ち上がる。誰が生き残り、誰が失われたのか。</p>
 
@@ -17707,7 +17849,7 @@
 
         <p>しかし、SNSに映るのは他人の人生の<span class="w" data-base="portion" data-ipa="/ˈpɔːrʃən/" data-ja="部分" data-pos="noun">portion</span>、それも<span class="w" data-base="deliberately" data-ipa="/dɪˈlɪbərətli/" data-ja="故意に" data-pos="adv">deliberately</span> 選ばれた、最もきらびやかな瞬間だけだ。誰もが<span class="w" data-base="behind" data-ipa="/bɪˈhaɪnd/" data-ja="〜の後ろに" data-pos="prep">behind</span> のカメラで、日常の疲れや悩みを隠している。</p>
 
-        <p><span class="w" data-base="psychologist" data-ipa="/saɪˈkɑːlədʒɪst/" data-ja="心理学者" data-pos="noun">psychologist</span> たちは、過度なSNS使用がうつ病と<span class="w" data-base="anxiety" data-ipa="/æŋˈzaɪəti/" data-ja="不安" data-pos="noun">anxiety</span> の<span class="w" data-base="basis" data-ipa="/ˈbeɪsɪs/" data-ja="基盤" data-pos="noun">basis</span> となり得ることを<span class="w" data-base="indicate" data-ipa="/ˈɪndɪkeɪt/" data-ja="示す" data-pos="verb">indicate</span> している。特に若者、<span class="w" data-base="especially" data-ipa="/ɪˈspeʃəli/" data-ja="特に" data-pos="adv">especially</span> ティーンエイジャーにとって、その<span class="w" data-base="consequence" data-ipa="/ˈkɑːnsəkwens/" data-ja="結果" data-pos="noun">consequence</span> は深刻だ。</p>
+        <p><span class="w" data-base="psychologist" data-ipa="/saɪˈkɑːlədʒɪst/" data-ja="心理学者" data-pos="noun">Psychologist</span> たちは、過度なSNS使用がうつ病と<span class="w" data-base="anxiety" data-ipa="/æŋˈzaɪəti/" data-ja="不安" data-pos="noun">anxiety</span> の<span class="w" data-base="basis" data-ipa="/ˈbeɪsɪs/" data-ja="基盤" data-pos="noun">basis</span> となり得ることを<span class="w" data-base="indicate" data-ipa="/ˈɪndɪkeɪt/" data-ja="示す" data-pos="verb">indicate</span> している。特に若者、<span class="w" data-base="especially" data-ipa="/ɪˈspeʃəli/" data-ja="特に" data-pos="adv">especially</span> ティーンエイジャーにとって、その<span class="w" data-base="consequence" data-ipa="/ˈkɑːnsəkwens/" data-ja="結果" data-pos="noun">consequence</span> は深刻だ。</p>
 
         <p>解決策は、SNSを完全にやめることではない。距離を取り、自分の人生に目を向けること。他人の<span class="w" data-base="peak" data-ipa="/piːk/" data-ja="頂点" data-pos="noun">peak</span> と自分の<span class="w" data-base="average" data-ipa="/ˈævərɪdʒ/" data-ja="平均" data-pos="noun">average</span> を比べる愚かさから離れること。</p>
 
@@ -18081,7 +18223,7 @@
 
         <p>しかし言葉は、癒しの力も持つ。「ありがとう」「大丈夫だよ」「あなたは一人じゃない」。こうした言葉が、倒れそうな誰かを立ち上がらせる。</p>
 
-        <p><span class="w" data-base="indeed" data-ipa="/ɪnˈdiːd/" data-ja="確かに" data-pos="adv">indeed</span>、言葉は武器でもあり、薬でもある。どちらとして使うかは、私たち一人ひとりの選択にかかっている。</p>
+        <p><span class="w" data-base="indeed" data-ipa="/ɪnˈdiːd/" data-ja="確かに" data-pos="adv">Indeed</span>、言葉は武器でもあり、薬でもある。どちらとして使うかは、私たち一人ひとりの選択にかかっている。</p>
 
         <p>今日一日、あなたが発する言葉を意識してみてほしい。誰かの心を軽くするために、あなたは何を<span class="w" data-base="offer" data-ipa="/ˈɔːfər/" data-ja="提供する" data-pos="verb">offer</span> できるだろうか。</p>
       </div>
@@ -18297,7 +18439,7 @@
 
         <p>社会学者は、この変化を「価値観の<span class="w" data-base="phase" data-ipa="/feɪz/" data-ja="段階" data-pos="noun">phase</span> 転換」と呼ぶ。<span class="w" data-base="rating" data-ipa="/ˈreɪtɪŋ/" data-ja="評価" data-pos="noun">rating</span> や地位への<span class="w" data-base="resistance" data-ipa="/rɪˈzɪstəns/" data-ja="抵抗" data-pos="noun">resistance</span> が強まり、個人の幸福と健康が<span class="w" data-base="prime" data-ipa="/praɪm/" data-ja="主要な" data-pos="adj">prime</span> な関心事となっている。</p>
 
-        <p><span class="w" data-base="nevertheless" data-ipa="/ˌnevərðəˈles/" data-ja="それにもかかわらず" data-pos="adv">nevertheless</span>、<span class="w" data-base="conventional" data-ipa="/kənˈvenʃənl/" data-ja="従来の" data-pos="adj">conventional</span> な成功観を完全に捨てるのは難しい。親世代の<span class="w" data-base="expectation" data-ipa="/ˌekspekˈteɪʃən/" data-ja="期待" data-pos="noun">expectation</span>、社会の<span class="w" data-base="pressure" data-ipa="/ˈpreʃər/" data-ja="圧力" data-pos="noun">pressure</span>、自分自身の不安。</p>
+        <p><span class="w" data-base="nevertheless" data-ipa="/ˌnevərðəˈles/" data-ja="それにもかかわらず" data-pos="adv">Nevertheless</span>、<span class="w" data-base="conventional" data-ipa="/kənˈvenʃənl/" data-ja="従来の" data-pos="adj">conventional</span> な成功観を完全に捨てるのは難しい。親世代の<span class="w" data-base="expectation" data-ipa="/ˌekspekˈteɪʃən/" data-ja="期待" data-pos="noun">expectation</span>、社会の<span class="w" data-base="pressure" data-ipa="/ˈpreʃər/" data-ja="圧力" data-pos="noun">pressure</span>、自分自身の不安。</p>
 
         <p>重要なのは、「他人の<span class="w" data-base="description" data-ipa="/dɪˈskrɪpʃən/" data-ja="描写" data-pos="noun">description</span> による成功」ではなく、「自分が自分らしく生きていると感じられる人生」を<span class="w" data-base="achieve" data-ipa="/əˈtʃiːv/" data-ja="達成する" data-pos="verb">achieve</span> することだ。</p>
 
@@ -18782,7 +18924,7 @@
 
         <p>日本国憲法は1947年に施行された。<span class="w" data-base="foreign" data-ipa="/ˈfɔːrən/" data-ja="外国の" data-pos="adj">foreign</span> の占領下で制定されたという経緯から、「押し付け憲法」との<span class="w" data-base="criticism" data-ipa="/ˈkrɪtɪsɪzəm/" data-ja="批判" data-pos="noun">criticism</span> もある。しかし同時に、戦後日本の平和と繁栄を支えてきたことも事実だ。</p>
 
-        <p><span class="w" data-base="amendment" data-ipa="/əˈmendmənt/" data-ja="修正条項" data-pos="noun">amendment</span> には、国会議員の3分の2以上の賛成と、国民投票が必要だ。このため、現在まで一度も改正されていない。</p>
+        <p><span class="w" data-base="amendment" data-ipa="/əˈmendmənt/" data-ja="修正条項" data-pos="noun">Amendment</span> には、国会議員の3分の2以上の賛成と、国民投票が必要だ。このため、現在まで一度も改正されていない。</p>
 
         <p>憲法改正をめぐる議論は、長年続いている。特に焦点となるのは第9条、すなわち戦争放棄条項だ。賛成派は、安全保障環境の変化に<span class="w" data-base="deal" data-ipa="/diːl/" data-ja="対処する" data-pos="verb">deal</span> するには改正が必要と主張する。反対派は、平和主義を<span class="w" data-base="retain" data-ipa="/rɪˈteɪn/" data-ja="保持する" data-pos="verb">retain</span> すべきだと<span class="w" data-base="insist" data-ipa="/ɪnˈsɪst/" data-ja="主張する" data-pos="verb">insist</span> する。</p>
 
@@ -18942,7 +19084,7 @@
       <div class="jp-body">
         <p>政治とお金の関係は、古今東西、民主主義の永遠の課題である。政治家、すなわち<span class="w" data-base="politician" data-ipa="/ˌpɑːlɪˈtɪʃən/" data-ja="政治家" data-pos="noun">politician</span> は、有権者の意思を代表することを<span class="w" data-base="swear" data-ipa="/swer/" data-ja="誓う" data-pos="verb">swear</span> する。しかし実際には、選挙資金の<span class="w" data-base="source" data-ipa="/sɔːrs/" data-ja="源" data-pos="noun">source</span> に縛られる。</p>
 
-        <p><span class="w" data-base="democrat" data-ipa="/ˈdeməkræt/" data-ja="民主主義者" data-pos="noun">democrat</span> であれ共和党員であれ、政治活動には大金がかかる。選挙運動、広告、スタッフの給料。この資金をどこから<span class="w" data-base="obtain" data-ipa="/əbˈteɪn/" data-ja="得る" data-pos="verb">obtain</span> するかが問題となる。</p>
+        <p><span class="w" data-base="democrat" data-ipa="/ˈdeməkræt/" data-ja="民主主義者" data-pos="noun">Democrat</span> であれ共和党員であれ、政治活動には大金がかかる。選挙運動、広告、スタッフの給料。この資金をどこから<span class="w" data-base="obtain" data-ipa="/əbˈteɪn/" data-ja="得る" data-pos="verb">obtain</span> するかが問題となる。</p>
 
         <p>企業献金は、長年論争の対象だ。企業が<span class="w" data-base="grant" data-ipa="/ɡrænt/" data-ja="補助金" data-pos="noun">grant</span> を出せば、その企業に有利な政策を期待する。「企業の<span class="w" data-base="supporter" data-ipa="/səˈpɔːrtər/" data-ja="支持者" data-pos="noun">supporter</span> になる」ことが、<span class="w" data-base="imply" data-ipa="/ɪmˈplaɪ/" data-ja="暗示する" data-pos="verb">imply</span> される期待となる。</p>
 
@@ -19753,7 +19895,7 @@
 
         <p>食料生産は、現在より70%増やす必要があるとされる。しかし耕作地は増やせない。むしろ気候変動や砂漠化で、耕作可能な土地は減っている。</p>
 
-        <p><span class="w" data-base="fiber" data-ipa="/ˈfaɪbər/" data-ja="繊維" data-pos="noun">fiber</span> の豊富な植物性食品への転換、<span class="w" data-base="extra" data-ipa="/ˈekstrə/" data-ja="余分な" data-pos="adj">extra</span> な肉類の削減、昆虫食。これらの代替案が<span class="w" data-base="propose" data-ipa="/prəˈpoʊz/" data-ja="提案する" data-pos="verb">propose</span> されている。</p>
+        <p><span class="w" data-base="fiber" data-ipa="/ˈfaɪbər/" data-ja="繊維" data-pos="noun">Fiber</span> の豊富な植物性食品への転換、<span class="w" data-base="extra" data-ipa="/ˈekstrə/" data-ja="余分な" data-pos="adj">extra</span> な肉類の削減、昆虫食。これらの代替案が<span class="w" data-base="propose" data-ipa="/prəˈpoʊz/" data-ja="提案する" data-pos="verb">propose</span> されている。</p>
 
         <p>注目されているのは、垂直農法だ。都市のビルの中で、水耕栽培で野菜を育てる。<span class="w" data-base="extensive" data-ipa="/ɪkˈstensɪv/" data-ja="広範な" data-pos="adj">extensive</span> な農地を必要とせず、都市近郊で新鮮な野菜を供給できる。</p>
 
@@ -20238,7 +20380,7 @@
 
         <p>しかし暗い面も見た。銃犯罪、人種差別、医療費の高さ。数億人が健康保険を持たず、病気になれば<span class="w" data-base="bind" data-ipa="/baɪnd/" data-ja="結ぶ" data-pos="verb">bind</span> 借金と共に生きねばならない。</p>
 
-        <p><span class="w" data-base="gear" data-ipa="/ɡɪər/" data-ja="装備" data-pos="noun">gear</span> を背負ったホームレスが、高層ビルの足元に横たわっている。</p>
+        <p><span class="w" data-base="gear" data-ipa="/ɡɪər/" data-ja="装備" data-pos="noun">Gear</span> を背負ったホームレスが、高層ビルの足元に横たわっている。</p>
 
         <p>日本に帰国して、改めて気づいたこと。安全性、清潔さ、時間の正確さ。深夜の駅で一人歩いて<span class="w" data-base="asleep" data-ipa="/əˈsliːp/" data-ja="眠って" data-pos="adj">asleep</span> の女性を、アメリカでは見かけない。</p>
 
@@ -20293,7 +20435,7 @@
 
         <p>今日の<span class="w" data-base="affair" data-ipa="/əˈfer/" data-ja="事柄" data-pos="noun">affair</span> は、<span class="w" data-base="joint" data-ipa="/dʒɔɪnt/" data-ja="共同の" data-pos="adj">joint</span> 研究プロジェクトの最終発表だ。アメリカの大学との共同研究で、新薬の開発に成功した。</p>
 
-        <p><span class="w" data-base="secretary" data-ipa="/ˈsekrəteri/" data-ja="秘書" data-pos="noun">secretary</span> の山田さんが、プレゼンの準備を整えた。参加者は<span class="w" data-base="male" data-ipa="/meɪl/" data-ja="男性の" data-pos="adj">male</span> と女性、ほぼ同数だ。</p>
+        <p><span class="w" data-base="secretary" data-ipa="/ˈsekrəteri/" data-ja="秘書" data-pos="noun">Secretary</span> の山田さんが、プレゼンの準備を整えた。参加者は<span class="w" data-base="male" data-ipa="/meɪl/" data-ja="男性の" data-pos="adj">male</span> と女性、ほぼ同数だ。</p>
 
         <p>発表では、新薬の<span class="w" data-base="liquid" data-ipa="/ˈlɪkwɪd/" data-ja="液体" data-pos="noun">liquid</span> 化合物の特性を説明した。実験用の<span class="w" data-base="unit" data-ipa="/ˈjuːnɪt/" data-ja="単位" data-pos="noun">unit</span> は微量でも効果があり、副作用は少ない。</p>
 

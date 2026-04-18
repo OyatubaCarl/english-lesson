@@ -167,6 +167,73 @@
     transition: all .15s;
   }
   .btn-quiz-retry:hover { background: #fbbf24; color: #78350f; border-color: #d97706; }
+  /* ---------- YouTube embed ---------- */
+  .yt-section {
+    margin: 18px 0;
+    padding: 16px;
+    background: linear-gradient(135deg, #fff1f2, #fee2e2);
+    border: 2px solid #fca5a5;
+    border-radius: 12px;
+    text-align: center;
+  }
+  .yt-section[hidden] { display: none; }
+  .yt-section .yt-label {
+    font-size: .92rem;
+    color: #991b1b;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .btn-youtube {
+    display: inline-block;
+    background: #dc2626;
+    color: #fff;
+    border: none;
+    padding: 11px 26px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .15s;
+  }
+  .btn-youtube:hover { background: #b91c1c; transform: translateY(-1px); box-shadow: 0 4px 10px rgba(220,38,38,.35); }
+  .btn-youtube::before { content: "▶ "; }
+  .yt-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 20px;
+  }
+  .yt-modal[hidden] { display: none; }
+  .yt-modal-inner {
+    position: relative;
+    width: min(1100px, 100%);
+    aspect-ratio: 16 / 9;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .yt-modal-inner iframe {
+    width: 100%; height: 100%; border: 0; display: block;
+  }
+  .yt-modal-close {
+    position: absolute;
+    top: -14px; right: -14px;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #111;
+    border: 2px solid #111;
+    font-size: 1.2rem;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,.4);
+  }
+  .yt-modal-close:hover { background: #fef3c7; }
+
 </style>
 </head>
 <body>
@@ -1197,6 +1264,11 @@
         </select>
         <label>音声:</label>
         <select class="sel-tts-voice" title="読み上げに使う音声を選択"></select>
+      </div>
+
+            <div class="yt-section" data-yt-book="beginner" hidden>
+        <div class="yt-label">📺 この レッスンの解説動画（YouTube）</div>
+        <button class="btn-youtube" type="button">YouTubeで見る</button>
       </div>
 
       <h2>このレッスンの新出単語（本文で赤字）</h2>
@@ -10140,6 +10212,11 @@
         <select class="sel-tts-voice" title="読み上げに使う音声を選択"></select>
       </div>
 
+            <div class="yt-section" data-yt-book="middle" hidden>
+        <div class="yt-label">📺 この レッスンの解説動画（YouTube）</div>
+        <button class="btn-youtube" type="button">YouTubeで見る</button>
+      </div>
+
       <div class="vocab-quiz" data-quiz-book="middle">
         <h2 class="quiz-heading">📝 単語確認テスト（このレッスンの新出語）</h2>
         <div class="vocab-quiz-content" id="quiz-middle"></div>
@@ -13473,6 +13550,11 @@
         </select>
         <label>音声:</label>
         <select class="sel-tts-voice" title="読み上げに使う音声を選択"></select>
+      </div>
+
+            <div class="yt-section" data-yt-book="high1" hidden>
+        <div class="yt-label">📺 この レッスンの解説動画（YouTube）</div>
+        <button class="btn-youtube" type="button">YouTubeで見る</button>
       </div>
 
       <div class="vocab-quiz" data-quiz-book="high1">
@@ -17276,6 +17358,11 @@
         <select class="sel-tts-voice" title="読み上げに使う音声を選択"></select>
       </div>
 
+            <div class="yt-section" data-yt-book="high2" hidden>
+        <div class="yt-label">📺 この レッスンの解説動画（YouTube）</div>
+        <button class="btn-youtube" type="button">YouTubeで見る</button>
+      </div>
+
       <div class="vocab-quiz" data-quiz-book="high2">
         <h2 class="quiz-heading">📝 単語確認テスト（このレッスンの新出語）</h2>
         <div class="vocab-quiz-content" id="quiz-high2"></div>
@@ -20354,6 +20441,11 @@
         <select class="sel-tts-voice" title="読み上げに使う音声を選択"></select>
       </div>
 
+            <div class="yt-section" data-yt-book="high3" hidden>
+        <div class="yt-label">📺 この レッスンの解説動画（YouTube）</div>
+        <button class="btn-youtube" type="button">YouTubeで見る</button>
+      </div>
+
       <div class="vocab-quiz" data-quiz-book="high3">
         <h2 class="quiz-heading">📝 単語確認テスト（このレッスンの新出語）</h2>
         <div class="vocab-quiz-content" id="quiz-high3"></div>
@@ -20470,6 +20562,72 @@
     });
   }
 
+
+  /* ========== YouTube embed feature ========== */
+  let ytMap = null;
+  let ytMapPromise = null;
+  function loadYtMap(){
+    if(ytMap !== null) return Promise.resolve(ytMap);
+    if(ytMapPromise) return ytMapPromise;
+    ytMapPromise = fetch('youtube-map.json?v=' + Date.now())
+      .then(r => r.ok ? r.json() : {})
+      .catch(() => ({}))
+      .then(data => { ytMap = data || {}; return ytMap; });
+    return ytMapPromise;
+  }
+  function ytVideoIdFor(book, lessonStr){
+    if(!ytMap) return null;
+    const b = ytMap[book];
+    if(!b) return null;
+    return b[lessonStr] || b[String(lessonStr)] || null;
+  }
+  function updateYtSection(book, lessonStr){
+    if(!book) return;
+    const bookId = book.dataset.book;
+    const sec = book.querySelector('.yt-section');
+    if(!sec) return;
+    loadYtMap().then(() => {
+      const vid = ytVideoIdFor(bookId, lessonStr);
+      if(vid){
+        sec.hidden = false;
+        sec.dataset.videoId = vid;
+      } else {
+        sec.hidden = true;
+        delete sec.dataset.videoId;
+      }
+    });
+  }
+  function openYtModal(videoId){
+    let modal = document.getElementById('yt-modal');
+    if(!modal){
+      modal = document.createElement('div');
+      modal.id = 'yt-modal';
+      modal.className = 'yt-modal';
+      modal.innerHTML = '<div class="yt-modal-inner"><button class="yt-modal-close" type="button" aria-label="閉じる">✕</button><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
+      document.body.appendChild(modal);
+      modal.addEventListener('click', e => { if(e.target === modal) closeYtModal(); });
+      modal.querySelector('.yt-modal-close').addEventListener('click', closeYtModal);
+    }
+    modal.querySelector('iframe').src = 'https://www.youtube.com/embed/' + encodeURIComponent(videoId) + '?autoplay=1&rel=0';
+    modal.hidden = false;
+  }
+  function closeYtModal(){
+    const modal = document.getElementById('yt-modal');
+    if(modal){
+      modal.querySelector('iframe').src = '';
+      modal.hidden = true;
+    }
+  }
+  document.addEventListener('keydown', e => { if(e.key === 'Escape') closeYtModal(); });
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('.btn-youtube');
+    if(!btn) return;
+    const sec = btn.closest('.yt-section');
+    if(!sec) return;
+    const vid = sec.dataset.videoId;
+    if(vid) openYtModal(vid);
+  });
+
   function showLesson(idStr){
     const book = activeBookEl();
     if(!book) return;
@@ -20481,6 +20639,7 @@
     // Reset flip states on lesson change
     book.querySelectorAll('.grammar-box .g-desc strong.revealed, .grammar-box li em .flip-word.revealed').forEach(el => el.classList.remove('revealed'));
     buildVocab(book, idStr);
+    updateYtSection(book, idStr);
   }
 
   function buildVocab(book, currentIdStr){
@@ -20761,6 +20920,25 @@
   // ようこそメッセージを表示
   const hintEl = document.getElementById('welcome-hint');
   if(hintEl) hintEl.classList.remove('hidden');
+
+  // URL deep-link: ?book=middle&lesson=5 で特定レッスンを直接開く
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const bookParam = params.get('book');
+    const lessonParam = params.get('lesson');
+    if(bookParam && document.getElementById('book-' + bookParam)){
+      switchBook(bookParam);
+      if(lessonParam){
+        const book = document.getElementById('book-' + bookParam);
+        const sel = book && book.querySelector('.lesson-select');
+        if(sel && sel.querySelector(`option[value="${lessonParam}"]`)){
+          sel.value = lessonParam;
+          showLesson(lessonParam);
+        }
+      }
+    }
+  } catch(e){ console.warn('URL deep-link failed:', e); }
+
   /* ========== Vocabulary Quiz ========== */
   const quizState = new WeakMap(); // container -> {words, index}
 

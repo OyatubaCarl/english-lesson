@@ -21310,15 +21310,7 @@ function buildQuiz(book, idStr){
         if(allMatched(book)){
           s.failedAttempts = 0;
           showFeedback(book, 'ok');
-          setTimeout(() => {
-            // Replay full sentence then advance
-            const full = s.sentences[s.index];
-            try { stopAll(); } catch(e){}
-            speak(full, 'en-US', {
-              onend: () => advance(book),
-              onerror: () => advance(book)
-            });
-          }, 900);
+          setTimeout(() => advance(book), 900);
         } else {
           s.failedAttempts++;
           if(s.failedAttempts < 5){
@@ -21405,14 +21397,17 @@ function buildQuiz(book, idStr){
 
     function advance(book){
       const s = state.get(book);
-      if(!s) return;
+      if(!s || s.advancing) return;
+      s.advancing = true;
       stopRecognition(book, false);
       s.index++;
       if(s.index >= s.sentences.length){
         s.active = false;
         show(book, 'done');
+        s.advancing = false;
       } else {
         renderTarget(book);
+        s.advancing = false;
         speakAndListen(book);
       }
     }

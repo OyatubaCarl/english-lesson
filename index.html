@@ -21233,10 +21233,16 @@ function buildQuiz(book, idStr){
       });
     }
 
-    function allMatched(book){
+    function matchRatio_(book){
       const s = state.get(book);
       const set = createMatchSet(s.recognizedWords);
-      return s.targetWords.every(w => wordMatched(w, set));
+      if(!s.targetWords.length) return 0;
+      let hit = 0;
+      s.targetWords.forEach(w => { if(wordMatched(w, set)) hit++; });
+      return hit / s.targetWords.length;
+    }
+    function allMatched(book){
+      return matchRatio_(book) >= 0.8;
     }
 
     function showFeedback(book, kind){

@@ -378,7 +378,7 @@
     border: 2px solid #16a34a;
     background: #16a34a;
     color: #fff;
-    padding: 11px 26px;
+    padding: 12px 28px;
     border-radius: 10px;
     cursor: pointer;
     font-size: 1rem;
@@ -422,26 +422,59 @@
   .shadowing .sh-match.good { color: #059669; }
   .shadowing .sh-match.bad { color: #b91c1c; }
 
-  .shadowing .sh-controls { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+  .shadowing .sh-controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 8px;
+  }
   .shadowing .sh-controls button {
     border: 2px solid #16a34a;
     background: #fff;
     color: #14532d;
-    padding: 10px 18px;
+    padding: 9px 16px;
     border-radius: 8px;
     cursor: pointer;
-    font-size: .95rem;
+    font-size: .93rem;
     font-weight: 600;
     transition: all .15s;
     font-family: inherit;
   }
   .shadowing .sh-controls button:hover:not(:disabled) { background: #dcfce7; }
-  .shadowing .sh-controls .btn-sh-listen { background: #16a34a; color: #fff; }
-  .shadowing .sh-controls .btn-sh-listen:hover:not(:disabled) { background: #15803d; }
+  .shadowing .sh-controls button:disabled { opacity: .45; cursor: not-allowed; }
+  .shadowing .sh-controls .btn-sh-stop { border-color: #94a3b8; color: #475569; }
+  .shadowing .sh-controls .btn-sh-stop:hover:not(:disabled) { background: #f1f5f9; }
   .shadowing .sh-controls .btn-sh-skip { border-color: #cbd5e1; color: #64748b; }
-  .shadowing .sh-controls button:disabled { opacity: .5; cursor: not-allowed; }
-  .shadowing .sh-controls .btn-sh-listen.listening { background: #dc2626; border-color: #dc2626; color: #fff; animation: shListeningPulse 1.2s ease-in-out infinite; }
-  @keyframes shListeningPulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+
+  .shadowing .sh-status {
+    display: inline-block;
+    padding: 7px 16px;
+    border-radius: 50px;
+    font-size: .88rem;
+    font-weight: 700;
+    border: 1px solid #cbd5e1;
+    background: #f1f5f9;
+    color: #64748b;
+    user-select: none;
+  }
+  .shadowing .sh-status.sh-status-active {
+    background: #dc2626;
+    border-color: #dc2626;
+    color: #fff;
+    animation: shStatusPulse 1.2s ease-in-out infinite;
+  }
+  .shadowing .sh-status.sh-status-resume {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #fff;
+    cursor: pointer;
+  }
+  .shadowing .sh-status.sh-status-resume:hover { background: #1d4ed8; }
+  @keyframes shStatusPulse {
+    0%,100% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+  }
 
   .shadowing .sh-done-msg { color: #059669; font-size: 1.1rem; font-weight: 700; margin: 0 0 .8em; text-align: center; }
   .shadowing .btn-sh-retry {
@@ -457,6 +490,7 @@
     transition: all .15s;
   }
   .shadowing .btn-sh-retry:hover { background: #fbbf24; color: #78350f; border-color: #d97706; }
+
 
 
 </style>
@@ -1187,8 +1221,8 @@
       <div class="shadowing" data-sh-book="beginner">
         <h2 class="sh-heading">🎤 シャドウイング練習</h2>
         <div class="sh-intro">
-          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。発音が80%以上一致すると次の文に進みます。</p>
-          <button class="btn-sh-start" type="button">シャドウイング練習を始める</button>
+          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。80%以上の単語が一致すると次の文に進みます。</p>
+          <button class="btn-sh-start" type="button">▶ シャドウイング練習を始める</button>
         </div>
         <div class="sh-active hidden">
           <div class="sh-progress">文 <span class="sh-index">1</span> / <span class="sh-total">0</span></div>
@@ -1196,8 +1230,9 @@
           <div class="sh-recognized"></div>
           <div class="sh-match"></div>
           <div class="sh-controls">
-            <button class="btn-sh-play" type="button">🔊 聞く</button>
-            <button class="btn-sh-listen" type="button">🎤 発音する</button>
+            <div class="sh-status sh-status-idle" tabindex="0" role="button">認識停止中</div>
+            <button class="btn-sh-replay" type="button">🔊 もう一度再生</button>
+            <button class="btn-sh-stop" type="button">■ 停止</button>
             <button class="btn-sh-skip" type="button">スキップ →</button>
           </div>
         </div>
@@ -10167,8 +10202,8 @@
       <div class="shadowing" data-sh-book="middle">
         <h2 class="sh-heading">🎤 シャドウイング練習</h2>
         <div class="sh-intro">
-          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。発音が80%以上一致すると次の文に進みます。</p>
-          <button class="btn-sh-start" type="button">シャドウイング練習を始める</button>
+          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。80%以上の単語が一致すると次の文に進みます。</p>
+          <button class="btn-sh-start" type="button">▶ シャドウイング練習を始める</button>
         </div>
         <div class="sh-active hidden">
           <div class="sh-progress">文 <span class="sh-index">1</span> / <span class="sh-total">0</span></div>
@@ -10176,8 +10211,9 @@
           <div class="sh-recognized"></div>
           <div class="sh-match"></div>
           <div class="sh-controls">
-            <button class="btn-sh-play" type="button">🔊 聞く</button>
-            <button class="btn-sh-listen" type="button">🎤 発音する</button>
+            <div class="sh-status sh-status-idle" tabindex="0" role="button">認識停止中</div>
+            <button class="btn-sh-replay" type="button">🔊 もう一度再生</button>
+            <button class="btn-sh-stop" type="button">■ 停止</button>
             <button class="btn-sh-skip" type="button">スキップ →</button>
           </div>
         </div>
@@ -13532,8 +13568,8 @@
       <div class="shadowing" data-sh-book="high1">
         <h2 class="sh-heading">🎤 シャドウイング練習</h2>
         <div class="sh-intro">
-          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。発音が80%以上一致すると次の文に進みます。</p>
-          <button class="btn-sh-start" type="button">シャドウイング練習を始める</button>
+          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。80%以上の単語が一致すると次の文に進みます。</p>
+          <button class="btn-sh-start" type="button">▶ シャドウイング練習を始める</button>
         </div>
         <div class="sh-active hidden">
           <div class="sh-progress">文 <span class="sh-index">1</span> / <span class="sh-total">0</span></div>
@@ -13541,8 +13577,9 @@
           <div class="sh-recognized"></div>
           <div class="sh-match"></div>
           <div class="sh-controls">
-            <button class="btn-sh-play" type="button">🔊 聞く</button>
-            <button class="btn-sh-listen" type="button">🎤 発音する</button>
+            <div class="sh-status sh-status-idle" tabindex="0" role="button">認識停止中</div>
+            <button class="btn-sh-replay" type="button">🔊 もう一度再生</button>
+            <button class="btn-sh-stop" type="button">■ 停止</button>
             <button class="btn-sh-skip" type="button">スキップ →</button>
           </div>
         </div>
@@ -17363,8 +17400,8 @@
       <div class="shadowing" data-sh-book="high2">
         <h2 class="sh-heading">🎤 シャドウイング練習</h2>
         <div class="sh-intro">
-          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。発音が80%以上一致すると次の文に進みます。</p>
-          <button class="btn-sh-start" type="button">シャドウイング練習を始める</button>
+          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。80%以上の単語が一致すると次の文に進みます。</p>
+          <button class="btn-sh-start" type="button">▶ シャドウイング練習を始める</button>
         </div>
         <div class="sh-active hidden">
           <div class="sh-progress">文 <span class="sh-index">1</span> / <span class="sh-total">0</span></div>
@@ -17372,8 +17409,9 @@
           <div class="sh-recognized"></div>
           <div class="sh-match"></div>
           <div class="sh-controls">
-            <button class="btn-sh-play" type="button">🔊 聞く</button>
-            <button class="btn-sh-listen" type="button">🎤 発音する</button>
+            <div class="sh-status sh-status-idle" tabindex="0" role="button">認識停止中</div>
+            <button class="btn-sh-replay" type="button">🔊 もう一度再生</button>
+            <button class="btn-sh-stop" type="button">■ 停止</button>
             <button class="btn-sh-skip" type="button">スキップ →</button>
           </div>
         </div>
@@ -20471,8 +20509,8 @@
       <div class="shadowing" data-sh-book="high3">
         <h2 class="sh-heading">🎤 シャドウイング練習</h2>
         <div class="sh-intro">
-          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。発音が80%以上一致すると次の文に進みます。</p>
-          <button class="btn-sh-start" type="button">シャドウイング練習を始める</button>
+          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。80%以上の単語が一致すると次の文に進みます。</p>
+          <button class="btn-sh-start" type="button">▶ シャドウイング練習を始める</button>
         </div>
         <div class="sh-active hidden">
           <div class="sh-progress">文 <span class="sh-index">1</span> / <span class="sh-total">0</span></div>
@@ -20480,8 +20518,9 @@
           <div class="sh-recognized"></div>
           <div class="sh-match"></div>
           <div class="sh-controls">
-            <button class="btn-sh-play" type="button">🔊 聞く</button>
-            <button class="btn-sh-listen" type="button">🎤 発音する</button>
+            <div class="sh-status sh-status-idle" tabindex="0" role="button">認識停止中</div>
+            <button class="btn-sh-replay" type="button">🔊 もう一度再生</button>
+            <button class="btn-sh-stop" type="button">■ 停止</button>
             <button class="btn-sh-skip" type="button">スキップ →</button>
           </div>
         </div>
@@ -21087,7 +21126,7 @@ function buildQuiz(book, idStr){
 
   /* ========== Shadowing practice ========== */
   (function(){
-    const state = new WeakMap(); // book -> {sentences, index, recognition, running}
+    const state = new WeakMap();
     const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 
     function extractSentences(book){
@@ -21096,16 +21135,15 @@ function buildQuiz(book, idStr){
       const en = lesson.querySelector('.en-body');
       if(!en) return [];
       return [...en.querySelectorAll('p')].map(p => {
-        let t = p.textContent.replace(/\s+/g, ' ').trim();
-        // Strip speaker label like "(Yuki) " at the start
-        t = t.replace(/^\([^)]+\)\s*/, '');
-        return t;
-      }).filter(t => t.length);
+        let txt = p.textContent.replace(/\s+/g, ' ').trim();
+        txt = txt.replace(/^\([^)]+\)\s*/, '');
+        return txt;
+      }).filter(txt => txt.length);
     }
 
     function normalize(s){
       return s.toLowerCase()
-        .replace(/[.,!?;:""''""\(\)]/g, '')
+        .replace(/[.,!?;:"""''()]/g, '')
         .replace(/\s+/g, ' ')
         .trim();
     }
@@ -21128,6 +21166,22 @@ function buildQuiz(book, idStr){
       sh.querySelector('.sh-done').classList.toggle('hidden', phase !== 'done');
     }
 
+    function setStatus(book, mode){
+      const el = book.querySelector('.sh-status');
+      if(!el) return;
+      el.classList.remove('sh-status-active', 'sh-status-idle', 'sh-status-resume');
+      if(mode === 'active'){
+        el.textContent = '認識中';
+        el.classList.add('sh-status-active');
+      } else if(mode === 'resume'){
+        el.textContent = '▶ 認識再開（クリック）';
+        el.classList.add('sh-status-resume');
+      } else {
+        el.textContent = '認識停止中';
+        el.classList.add('sh-status-idle');
+      }
+    }
+
     function renderCurrent(book){
       const s = state.get(book);
       const sh = book.querySelector('.shadowing');
@@ -21140,66 +21194,58 @@ function buildQuiz(book, idStr){
       m.className = 'sh-match';
     }
 
-    function stopListening(book){
+    function stopRecognition(book, manual){
       const s = state.get(book);
-      if(s && s.recognition){
-        try { s.recognition.abort(); } catch(e){}
-        s.recognition = null;
+      if(s){
+        if(manual) s.manuallyStopped = true;
+        if(s.recognition){
+          try { s.recognition.abort(); } catch(e){}
+          s.recognition = null;
+        }
       }
-      const btn = book.querySelector('.btn-sh-listen');
-      if(btn) btn.classList.remove('listening');
+      setStatus(book, manual ? 'resume' : 'idle');
     }
 
     function resetShadowing(book){
-      stopListening(book);
-      stopAll();
+      try { stopAll(); } catch(e){}
+      const s = state.get(book);
+      if(s && s.recognition){
+        try { s.recognition.abort(); } catch(e){}
+      }
       state.delete(book);
       show(book, 'intro');
     }
 
-    function startShadowing(book){
-      const sentences = extractSentences(book);
-      if(!sentences.length){
-        alert('このレッスンにはシャドウイング可能な英文がありません。');
-        return;
-      }
-      state.set(book, { sentences, index: 0, recognition: null });
-      show(book, 'active');
-      renderCurrent(book);
-    }
-
-    function playSentence(book){
-      stopAll();
-      stopListening(book);
-      const s = state.get(book);
-      if(!s) return;
-      const text = s.sentences[s.index];
-      speak(text, 'en-US', { onend: () => startListening(book) });
-    }
-
-    function startListening(book){
+    function beginListening(book){
       if(!SR){
         book.querySelector('.shadowing .sh-recognized').textContent = '⚠️ このブラウザは音声認識に対応していません（ChromeまたはSafariをお使いください）';
+        setStatus(book, 'idle');
         return;
       }
-      stopListening(book);
       const s = state.get(book);
       if(!s) return;
+      if(s.recognition){
+        try { s.recognition.abort(); } catch(e){}
+        s.recognition = null;
+      }
       const rec = new SR();
       rec.lang = 'en-US';
       rec.maxAlternatives = 3;
       rec.interimResults = true;
       rec.continuous = false;
+
       const sh = book.querySelector('.shadowing');
       const recEl = sh.querySelector('.sh-recognized');
       const matchEl = sh.querySelector('.sh-match');
-      const listenBtn = sh.querySelector('.btn-sh-listen');
+
       recEl.textContent = '🎤 聞いています…';
       matchEl.textContent = '';
       matchEl.className = 'sh-match';
-      if(listenBtn) listenBtn.classList.add('listening');
+      s.errorFlag = false;
+      s.manuallyStopped = false;
 
       let finalTranscript = '';
+
       rec.onresult = (ev) => {
         let interim = '';
         for(let i = ev.resultIndex; i < ev.results.length; i++){
@@ -21210,64 +21256,100 @@ function buildQuiz(book, idStr){
         recEl.textContent = '「' + (finalTranscript + interim).trim() + '」';
       };
       rec.onerror = (ev) => {
-        recEl.textContent = '⚠️ 認識エラー: ' + ev.error + '（やり直してください）';
-        if(listenBtn) listenBtn.classList.remove('listening');
+        console.warn('shadowing recognition error:', ev.error);
+        s.errorFlag = true;
       };
       rec.onend = () => {
-        if(listenBtn) listenBtn.classList.remove('listening');
-        const target = s.sentences[s.index];
-        const ratio = matchRatio(target, finalTranscript);
-        const pct = Math.round(ratio * 100);
-        if(!finalTranscript.trim()){
-          // nothing heard
+        s.recognition = null;
+        if(s.errorFlag){
+          recEl.textContent = '⚠️ 認識エラー（青いピルをクリックで再開、🔊もう一度再生で再試行）';
+          setStatus(book, 'resume');
           return;
         }
-        matchEl.textContent = pct + '% 一致';
+        if(s.manuallyStopped){
+          setStatus(book, 'resume');
+          return;
+        }
+        const target = s.sentences[s.index];
+        if(!finalTranscript.trim()){
+          setStatus(book, 'resume');
+          return;
+        }
+        const ratio = matchRatio(target, finalTranscript);
+        const pct = Math.round(ratio * 100);
         if(ratio >= 0.8){
           matchEl.classList.add('good');
           matchEl.textContent = '✅ ' + pct + '% 一致！';
+          setStatus(book, 'idle');
           setTimeout(() => advance(book), 1200);
         } else {
           matchEl.classList.add('bad');
-          matchEl.textContent = '💭 ' + pct + '% 一致 — もう一度トライしてみましょう';
+          matchEl.textContent = '💭 ' + pct + '% 一致 — もう一度再生してトライ！';
+          setStatus(book, 'resume');
         }
       };
       s.recognition = rec;
+      setStatus(book, 'active');
       try { rec.start(); }
       catch(e){
         recEl.textContent = '⚠️ 認識を開始できませんでした: ' + e.message;
-        if(listenBtn) listenBtn.classList.remove('listening');
+        setStatus(book, 'resume');
       }
+    }
+
+    function playAndListen(book){
+      try { stopAll(); } catch(e){}
+      stopRecognition(book, false);
+      const s = state.get(book);
+      if(!s) return;
+      const text = s.sentences[s.index];
+      speak(text, 'en-US', {
+        onend: () => beginListening(book),
+        onerror: () => beginListening(book)
+      });
+    }
+
+    function startShadowing(book){
+      const sentences = extractSentences(book);
+      if(!sentences.length){
+        alert('このレッスンにはシャドウイング可能な英文がありません。');
+        return;
+      }
+      state.set(book, { sentences, index: 0, recognition: null, errorFlag: false, manuallyStopped: false });
+      show(book, 'active');
+      renderCurrent(book);
+      playAndListen(book);
     }
 
     function advance(book){
       const s = state.get(book);
       if(!s) return;
-      stopListening(book);
+      stopRecognition(book, false);
       s.index++;
       if(s.index >= s.sentences.length){
         show(book, 'done');
       } else {
         renderCurrent(book);
+        playAndListen(book);
       }
     }
 
-    // Delegated click
     document.addEventListener('click', (e) => {
+      const statusEl = e.target.closest('.sh-status');
+      if(statusEl && statusEl.classList.contains('sh-status-resume')){
+        const book = statusEl.closest('.book');
+        if(book) beginListening(book);
+        return;
+      }
       const book = e.target.closest('.book');
       if(!book) return;
       if(e.target.matches('.btn-sh-start')) startShadowing(book);
-      else if(e.target.matches('.btn-sh-play')) playSentence(book);
-      else if(e.target.matches('.btn-sh-listen')){
-        const s = state.get(book);
-        if(s && s.recognition){ stopListening(book); }
-        else { startListening(book); }
-      }
+      else if(e.target.matches('.btn-sh-replay')) playAndListen(book);
+      else if(e.target.matches('.btn-sh-stop')) stopRecognition(book, true);
       else if(e.target.matches('.btn-sh-skip')) advance(book);
       else if(e.target.matches('.btn-sh-retry')) startShadowing(book);
     });
 
-    // Expose reset so other code (showLesson / switchBook) can call it
     window.__resetShadowing = resetShadowing;
   })();
 

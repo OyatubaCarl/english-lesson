@@ -102,12 +102,22 @@ def build_description(book, num, lesson, yt_map, overrides):
     deep_link = f'{SITE_URL}?book={book}&lesson={num}'
 
     parts = [
+        f'📖 動画の英文・解説・単語テスト → {deep_link}',
+        '',
         lesson['h2'],
         f'対象: {target_level}',
         '',
-        '▼ 学習サイト（本文・解説・単語テスト）',
-        SITE_URL,
-        f'このレッスンのページ: {deep_link}',
+        '▼ この動画について',
+        'この動画で歌われている英文は、上のリンク先のサイトに全文掲載されています。',
+        '日本語訳・発音記号・文法解説・単語テストもサイトで学習できます。',
+        '',
+        '▼ このレッスンで学ぶこと',
+        grammar_expl,
+        '',
+        '▼ 使い方',
+        '1. 上のリンクでサイトを開き、本文を読む（日本語訳・発音記号つき）',
+        '2. この動画で耳と目から定着',
+        '3. サイトで単語テストに挑戦',
         '',
         '▼ 生成AIについて（注意）',
         'このコンテンツは以下のAIを使って作成しています：',
@@ -117,14 +127,6 @@ def build_description(book, num, lesson, yt_map, overrides):
         'AIの特性上、人物の見た目が場面によって変わる、細部が不自然などの点があります。',
         '英文もまれに不自然な表現が残ることがあります。',
         '英語学習の補助としてお使いください。',
-        '',
-        '▼ おすすめの使い方',
-        '1. サイトで本文を読む（日本語訳・発音記号つき）',
-        '2. この動画で耳と目から定着',
-        '3. サイトで単語テストに挑戦',
-        '',
-        '▼ このレッスンで学ぶこと',
-        grammar_expl,
     ]
     if extra_note:
         parts += ['', extra_note]
@@ -132,6 +134,7 @@ def build_description(book, num, lesson, yt_map, overrides):
         parts += ['', prev_next_block.lstrip()]
     parts += [
         '',
+        f'学習サイトトップ: {SITE_URL}',
         f'チャンネル登録で新着レッスンのお知らせ → {CHANNEL_URL}',
         '',
         '#英語学習 #中学英語 #高校英語 #英文法 #英語リスニング #Suno #revidai',

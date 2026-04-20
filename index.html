@@ -402,25 +402,37 @@
     border-radius: 10px;
     margin: 6px 0 12px;
     min-height: 1.6em;
-    line-height: 1.55;
+    line-height: 1.8;
     letter-spacing: .01em;
   }
-  .shadowing .sh-recognized {
-    font-size: .95rem;
-    color: #475569;
-    min-height: 1.5em;
-    padding: 6px 10px;
-    margin: 0 0 6px;
-    font-style: italic;
+  .shadowing .sh-word {
+    display: inline-block;
+    padding: 2px 6px;
+    margin: 1px 1px;
+    border-radius: 5px;
+    transition: background .2s, color .2s;
   }
-  .shadowing .sh-match {
-    font-size: 1rem;
-    font-weight: 700;
-    min-height: 1.4em;
-    padding: 4px 0;
+  .shadowing .sh-word.matched {
+    background: #bbf7d0;
+    color: #14532d;
+    animation: shMatchPop .35s ease-out;
   }
-  .shadowing .sh-match.good { color: #059669; }
-  .shadowing .sh-match.bad { color: #b91c1c; }
+  @keyframes shMatchPop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+  }
+
+  .shadowing .sh-feedback {
+    min-height: 2.4em;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.4rem;
+    padding: 6px 0;
+  }
+  .shadowing .sh-feedback.again { color: #f59e0b; }
+  .shadowing .sh-feedback.ok { color: #059669; font-size: 2.2rem; }
+  .shadowing .sh-feedback.forward { color: #b45309; }
 
   .shadowing .sh-controls {
     display: flex;
@@ -464,13 +476,6 @@
     color: #fff;
     animation: shStatusPulse 1.2s ease-in-out infinite;
   }
-  .shadowing .sh-status.sh-status-resume {
-    background: #2563eb;
-    border-color: #2563eb;
-    color: #fff;
-    cursor: pointer;
-  }
-  .shadowing .sh-status.sh-status-resume:hover { background: #1d4ed8; }
   @keyframes shStatusPulse {
     0%,100% { transform: scale(1); }
     50% { transform: scale(1.04); }
@@ -490,6 +495,7 @@
     transition: all .15s;
   }
   .shadowing .btn-sh-retry:hover { background: #fbbf24; color: #78350f; border-color: #d97706; }
+
 
 
 
@@ -1221,16 +1227,15 @@
       <div class="shadowing" data-sh-book="beginner">
         <h2 class="sh-heading">🎤 シャドウイング練習</h2>
         <div class="sh-intro">
-          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。80%以上の単語が一致すると次の文に進みます。</p>
+          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。全ての単語が認識できたら次の文に進みます。初回はマイクの使用許可を求められます。</p>
           <button class="btn-sh-start" type="button">▶ シャドウイング練習を始める</button>
         </div>
         <div class="sh-active hidden">
           <div class="sh-progress">文 <span class="sh-index">1</span> / <span class="sh-total">0</span></div>
           <div class="sh-target"></div>
-          <div class="sh-recognized"></div>
-          <div class="sh-match"></div>
+          <div class="sh-feedback"></div>
           <div class="sh-controls">
-            <div class="sh-status sh-status-idle" tabindex="0" role="button">認識停止中</div>
+            <div class="sh-status sh-status-idle">認識停止中</div>
             <button class="btn-sh-replay" type="button">🔊 もう一度再生</button>
             <button class="btn-sh-stop" type="button">■ 停止</button>
             <button class="btn-sh-skip" type="button">スキップ →</button>
@@ -10202,16 +10207,15 @@
       <div class="shadowing" data-sh-book="middle">
         <h2 class="sh-heading">🎤 シャドウイング練習</h2>
         <div class="sh-intro">
-          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。80%以上の単語が一致すると次の文に進みます。</p>
+          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。全ての単語が認識できたら次の文に進みます。初回はマイクの使用許可を求められます。</p>
           <button class="btn-sh-start" type="button">▶ シャドウイング練習を始める</button>
         </div>
         <div class="sh-active hidden">
           <div class="sh-progress">文 <span class="sh-index">1</span> / <span class="sh-total">0</span></div>
           <div class="sh-target"></div>
-          <div class="sh-recognized"></div>
-          <div class="sh-match"></div>
+          <div class="sh-feedback"></div>
           <div class="sh-controls">
-            <div class="sh-status sh-status-idle" tabindex="0" role="button">認識停止中</div>
+            <div class="sh-status sh-status-idle">認識停止中</div>
             <button class="btn-sh-replay" type="button">🔊 もう一度再生</button>
             <button class="btn-sh-stop" type="button">■ 停止</button>
             <button class="btn-sh-skip" type="button">スキップ →</button>
@@ -13568,16 +13572,15 @@
       <div class="shadowing" data-sh-book="high1">
         <h2 class="sh-heading">🎤 シャドウイング練習</h2>
         <div class="sh-intro">
-          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。80%以上の単語が一致すると次の文に進みます。</p>
+          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。全ての単語が認識できたら次の文に進みます。初回はマイクの使用許可を求められます。</p>
           <button class="btn-sh-start" type="button">▶ シャドウイング練習を始める</button>
         </div>
         <div class="sh-active hidden">
           <div class="sh-progress">文 <span class="sh-index">1</span> / <span class="sh-total">0</span></div>
           <div class="sh-target"></div>
-          <div class="sh-recognized"></div>
-          <div class="sh-match"></div>
+          <div class="sh-feedback"></div>
           <div class="sh-controls">
-            <div class="sh-status sh-status-idle" tabindex="0" role="button">認識停止中</div>
+            <div class="sh-status sh-status-idle">認識停止中</div>
             <button class="btn-sh-replay" type="button">🔊 もう一度再生</button>
             <button class="btn-sh-stop" type="button">■ 停止</button>
             <button class="btn-sh-skip" type="button">スキップ →</button>
@@ -17400,16 +17403,15 @@
       <div class="shadowing" data-sh-book="high2">
         <h2 class="sh-heading">🎤 シャドウイング練習</h2>
         <div class="sh-intro">
-          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。80%以上の単語が一致すると次の文に進みます。</p>
+          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。全ての単語が認識できたら次の文に進みます。初回はマイクの使用許可を求められます。</p>
           <button class="btn-sh-start" type="button">▶ シャドウイング練習を始める</button>
         </div>
         <div class="sh-active hidden">
           <div class="sh-progress">文 <span class="sh-index">1</span> / <span class="sh-total">0</span></div>
           <div class="sh-target"></div>
-          <div class="sh-recognized"></div>
-          <div class="sh-match"></div>
+          <div class="sh-feedback"></div>
           <div class="sh-controls">
-            <div class="sh-status sh-status-idle" tabindex="0" role="button">認識停止中</div>
+            <div class="sh-status sh-status-idle">認識停止中</div>
             <button class="btn-sh-replay" type="button">🔊 もう一度再生</button>
             <button class="btn-sh-stop" type="button">■ 停止</button>
             <button class="btn-sh-skip" type="button">スキップ →</button>
@@ -20509,16 +20511,15 @@
       <div class="shadowing" data-sh-book="high3">
         <h2 class="sh-heading">🎤 シャドウイング練習</h2>
         <div class="sh-intro">
-          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。80%以上の単語が一致すると次の文に進みます。</p>
+          <p>英文を1文ずつ聞いて、声に出して真似してみましょう。全ての単語が認識できたら次の文に進みます。初回はマイクの使用許可を求められます。</p>
           <button class="btn-sh-start" type="button">▶ シャドウイング練習を始める</button>
         </div>
         <div class="sh-active hidden">
           <div class="sh-progress">文 <span class="sh-index">1</span> / <span class="sh-total">0</span></div>
           <div class="sh-target"></div>
-          <div class="sh-recognized"></div>
-          <div class="sh-match"></div>
+          <div class="sh-feedback"></div>
           <div class="sh-controls">
-            <div class="sh-status sh-status-idle" tabindex="0" role="button">認識停止中</div>
+            <div class="sh-status sh-status-idle">認識停止中</div>
             <button class="btn-sh-replay" type="button">🔊 もう一度再生</button>
             <button class="btn-sh-stop" type="button">■ 停止</button>
             <button class="btn-sh-skip" type="button">スキップ →</button>
@@ -21129,6 +21130,47 @@ function buildQuiz(book, idStr){
     const state = new WeakMap();
     const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 
+    // --- Contractions and matching (mirrors reference) ---
+    const CONTRACTIONS = {
+      "i'm":["i","am"],"im":["i","am"],"i've":["i","have"],"i'll":["i","will"],
+      "you're":["you","are"],"you've":["you","have"],"you'll":["you","will"],
+      "he's":["he","is","has"],"she's":["she","is","has"],"it's":["it","is","has"],
+      "we're":["we","are"],"we've":["we","have"],"we'll":["we","will"],
+      "they're":["they","are"],"they've":["they","have"],"they'll":["they","will"],
+      "that's":["that","is","has"],"there's":["there","is","has"],"here's":["here","is","has"],
+      "what's":["what","is","has"],"who's":["who","is","has"],"where's":["where","is","has"],
+      "how's":["how","is","has"],"let's":["let","us"],
+      "can't":["can","not","cannot"],"won't":["will","not"],"don't":["do","not"],
+      "doesn't":["does","not"],"didn't":["did","not"],"isn't":["is","not"],
+      "aren't":["are","not"],"wasn't":["was","not"],"weren't":["were","not"],
+      "hasn't":["has","not"],"haven't":["have","not"],"hadn't":["had","not"],
+      "couldn't":["could","not"],"wouldn't":["would","not"],"shouldn't":["should","not"]
+    };
+    function normWord(w){ return String(w).toLowerCase().replace(/[.,!?;:"""''()]/g, ''); }
+    function createMatchSet(words){
+      const s = new Set();
+      for(const w of words){
+        const n = normWord(w);
+        s.add(n);
+        s.add(n.replace(/'/g,''));
+        s.add(n.replace(/'s$/, ''));
+        if(CONTRACTIONS[n]) CONTRACTIONS[n].forEach(x => s.add(x));
+      }
+      return s;
+    }
+    function wordMatched(target, set){
+      const n = normWord(target);
+      if(set.has(n)) return true;
+      if(set.has(n.replace(/'/g,''))) return true;
+      const base = n.replace(/'s$/, '');
+      if(set.has(base)) return true;
+      if(CONTRACTIONS[n]){
+        const mains = CONTRACTIONS[n].slice(0, 2);
+        if(mains.every(x => set.has(x))) return true;
+      }
+      return false;
+    }
+
     function extractSentences(book){
       const lesson = book.querySelector('section.lesson:not(.hidden)');
       if(!lesson) return [];
@@ -21141,23 +21183,6 @@ function buildQuiz(book, idStr){
       }).filter(txt => txt.length);
     }
 
-    function normalize(s){
-      return s.toLowerCase()
-        .replace(/[.,!?;:"""''()]/g, '')
-        .replace(/\s+/g, ' ')
-        .trim();
-    }
-
-    function matchRatio(target, recognized){
-      const tw = normalize(target).split(' ').filter(Boolean);
-      const rw = normalize(recognized).split(' ').filter(Boolean);
-      if(!tw.length) return 0;
-      const rSet = new Set(rw);
-      let hit = 0;
-      tw.forEach(w => { if(rSet.has(w)) hit++; });
-      return hit / tw.length;
-    }
-
     function show(book, phase){
       const sh = book.querySelector('.shadowing');
       if(!sh) return;
@@ -21166,142 +21191,183 @@ function buildQuiz(book, idStr){
       sh.querySelector('.sh-done').classList.toggle('hidden', phase !== 'done');
     }
 
-    function setStatus(book, mode){
+    function setStatus(book, active){
       const el = book.querySelector('.sh-status');
       if(!el) return;
-      el.classList.remove('sh-status-active', 'sh-status-idle', 'sh-status-resume');
-      if(mode === 'active'){
+      if(active){
         el.textContent = '認識中';
         el.classList.add('sh-status-active');
-      } else if(mode === 'resume'){
-        el.textContent = '▶ 認識再開（クリック）';
-        el.classList.add('sh-status-resume');
       } else {
         el.textContent = '認識停止中';
-        el.classList.add('sh-status-idle');
+        el.classList.remove('sh-status-active');
       }
     }
 
-    function renderCurrent(book){
+    function renderTarget(book){
       const s = state.get(book);
       const sh = book.querySelector('.shadowing');
       sh.querySelector('.sh-index').textContent = s.index + 1;
       sh.querySelector('.sh-total').textContent = s.sentences.length;
-      sh.querySelector('.sh-target').textContent = s.sentences[s.index];
-      sh.querySelector('.sh-recognized').textContent = '';
-      const m = sh.querySelector('.sh-match');
-      m.textContent = '';
-      m.className = 'sh-match';
+      const targetEl = sh.querySelector('.sh-target');
+      targetEl.innerHTML = '';
+      const words = s.sentences[s.index].split(/\s+/);
+      s.targetWords = words;
+      words.forEach((w, i) => {
+        const span = document.createElement('span');
+        span.className = 'sh-word';
+        span.textContent = w;
+        targetEl.appendChild(span);
+        if(i < words.length - 1) targetEl.appendChild(document.createTextNode(' '));
+      });
+      sh.querySelector('.sh-feedback').textContent = '';
+      sh.querySelector('.sh-feedback').className = 'sh-feedback';
+      s.recognizedWords = [];
+      s.failedAttempts = 0;
+    }
+
+    function updateMatched(book){
+      const s = state.get(book);
+      const sh = book.querySelector('.shadowing');
+      const set = createMatchSet(s.recognizedWords);
+      sh.querySelectorAll('.sh-target .sh-word').forEach((span, i) => {
+        if(wordMatched(s.targetWords[i], set)) span.classList.add('matched');
+      });
+    }
+
+    function allMatched(book){
+      const s = state.get(book);
+      const set = createMatchSet(s.recognizedWords);
+      return s.targetWords.every(w => wordMatched(w, set));
+    }
+
+    function showFeedback(book, kind){
+      // kind: 'again' | 'ok' | 'forward'
+      const el = book.querySelector('.shadowing .sh-feedback');
+      if(!el) return;
+      el.className = 'sh-feedback ' + kind;
+      if(kind === 'ok') el.textContent = '◯';
+      else if(kind === 'forward') el.textContent = '先に進みます';
+      else el.textContent = 'もう一度';
     }
 
     function stopRecognition(book, manual){
       const s = state.get(book);
       if(s){
-        if(manual) s.manuallyStopped = true;
+        if(manual) s.manualStop = true;
         if(s.recognition){
+          s.recognition.onend = null;
+          s.recognition.onresult = null;
+          s.recognition.onerror = null;
           try { s.recognition.abort(); } catch(e){}
           s.recognition = null;
         }
       }
-      setStatus(book, manual ? 'resume' : 'idle');
+      setStatus(book, false);
     }
 
     function resetShadowing(book){
       try { stopAll(); } catch(e){}
-      const s = state.get(book);
-      if(s && s.recognition){
-        try { s.recognition.abort(); } catch(e){}
-      }
+      stopRecognition(book, true);
       state.delete(book);
       show(book, 'intro');
     }
 
     function beginListening(book){
       if(!SR){
-        book.querySelector('.shadowing .sh-recognized').textContent = '⚠️ このブラウザは音声認識に対応していません（ChromeまたはSafariをお使いください）';
-        setStatus(book, 'idle');
+        const fb = book.querySelector('.shadowing .sh-feedback');
+        fb.textContent = '⚠️ このブラウザは音声認識に対応していません（ChromeかEdgeを使用してください）';
+        fb.className = 'sh-feedback forward';
         return;
       }
       const s = state.get(book);
-      if(!s) return;
+      if(!s || !s.active) return;
       if(s.recognition){
         try { s.recognition.abort(); } catch(e){}
         s.recognition = null;
       }
       const rec = new SR();
       rec.lang = 'en-US';
-      rec.maxAlternatives = 3;
-      rec.interimResults = true;
+      rec.maxAlternatives = 5;
       rec.continuous = false;
-
-      const sh = book.querySelector('.shadowing');
-      const recEl = sh.querySelector('.sh-recognized');
-      const matchEl = sh.querySelector('.sh-match');
-
-      recEl.textContent = '🎤 聞いています…';
-      matchEl.textContent = '';
-      matchEl.className = 'sh-match';
-      s.errorFlag = false;
-      s.manuallyStopped = false;
-
-      let finalTranscript = '';
+      rec.interimResults = false;
+      s.recognition = rec;
+      s.resultHandled = false;
+      s.errorOccurred = false;
+      s.manualStop = false;
 
       rec.onresult = (ev) => {
-        let interim = '';
-        for(let i = ev.resultIndex; i < ev.results.length; i++){
-          const txt = ev.results[i][0].transcript;
-          if(ev.results[i].isFinal) finalTranscript += txt + ' ';
-          else interim += txt;
+        const transcript = ev.results[0][0].transcript;
+        const spoken = transcript.toLowerCase().split(/\s+/).map(normWord).filter(Boolean);
+        s.recognizedWords = s.recognizedWords.concat(spoken);
+        updateMatched(book);
+        s.resultHandled = true;
+
+        if(allMatched(book)){
+          s.failedAttempts = 0;
+          showFeedback(book, 'ok');
+          setTimeout(() => {
+            // Replay full sentence then advance
+            const full = s.sentences[s.index];
+            try { stopAll(); } catch(e){}
+            speak(full, 'en-US', {
+              onend: () => advance(book),
+              onerror: () => advance(book)
+            });
+          }, 900);
+        } else {
+          s.failedAttempts++;
+          if(s.failedAttempts < 5){
+            showFeedback(book, 'again');
+            setTimeout(() => {
+              if(state.get(book) && state.get(book).active) beginListening(book);
+            }, 900);
+          } else {
+            s.failedAttempts = 0;
+            showFeedback(book, 'forward');
+            setTimeout(() => advance(book), 1000);
+          }
         }
-        recEl.textContent = '「' + (finalTranscript + interim).trim() + '」';
       };
+
       rec.onerror = (ev) => {
         console.warn('shadowing recognition error:', ev.error);
-        s.errorFlag = true;
+        s.errorOccurred = true;
+        if(ev.error === 'not-allowed' || ev.error === 'service-not-allowed'){
+          const fb = book.querySelector('.shadowing .sh-feedback');
+          fb.textContent = '⚠️ マイクの使用が許可されていません。ブラウザの設定で許可してください。';
+          fb.className = 'sh-feedback forward';
+        }
       };
+
       rec.onend = () => {
         s.recognition = null;
-        if(s.errorFlag){
-          recEl.textContent = '⚠️ 認識エラー（青いピルをクリックで再開、🔊もう一度再生で再試行）';
-          setStatus(book, 'resume');
-          return;
-        }
-        if(s.manuallyStopped){
-          setStatus(book, 'resume');
-          return;
-        }
-        const target = s.sentences[s.index];
-        if(!finalTranscript.trim()){
-          setStatus(book, 'resume');
-          return;
-        }
-        const ratio = matchRatio(target, finalTranscript);
-        const pct = Math.round(ratio * 100);
-        if(ratio >= 0.8){
-          matchEl.classList.add('good');
-          matchEl.textContent = '✅ ' + pct + '% 一致！';
-          setStatus(book, 'idle');
-          setTimeout(() => advance(book), 1200);
-        } else {
-          matchEl.classList.add('bad');
-          matchEl.textContent = '💭 ' + pct + '% 一致 — もう一度再生してトライ！';
-          setStatus(book, 'resume');
+        setStatus(book, false);
+        // If onresult already scheduled next action OR manual stop OR error — don't auto-restart
+        if(s.resultHandled) return;
+        if(s.manualStop) return;
+        if(s.errorOccurred) return;
+        // Silence — auto-restart listening (no re-speak)
+        if(state.get(book) && state.get(book).active){
+          setTimeout(() => beginListening(book), 300);
         }
       };
-      s.recognition = rec;
-      setStatus(book, 'active');
+
+      setStatus(book, true);
       try { rec.start(); }
       catch(e){
-        recEl.textContent = '⚠️ 認識を開始できませんでした: ' + e.message;
-        setStatus(book, 'resume');
+        console.warn('rec.start threw:', e);
+        const fb = book.querySelector('.shadowing .sh-feedback');
+        fb.textContent = '⚠️ 認識を開始できませんでした: ' + (e.message || e);
+        fb.className = 'sh-feedback forward';
+        setStatus(book, false);
       }
     }
 
-    function playAndListen(book){
+    function speakAndListen(book){
+      const s = state.get(book);
+      if(!s || !s.active) return;
       try { stopAll(); } catch(e){}
       stopRecognition(book, false);
-      const s = state.get(book);
-      if(!s) return;
       const text = s.sentences[s.index];
       speak(text, 'en-US', {
         onend: () => beginListening(book),
@@ -21315,10 +21381,21 @@ function buildQuiz(book, idStr){
         alert('このレッスンにはシャドウイング可能な英文がありません。');
         return;
       }
-      state.set(book, { sentences, index: 0, recognition: null, errorFlag: false, manuallyStopped: false });
+      state.set(book, {
+        sentences,
+        index: 0,
+        recognition: null,
+        recognizedWords: [],
+        targetWords: [],
+        failedAttempts: 0,
+        active: true,
+        resultHandled: false,
+        errorOccurred: false,
+        manualStop: false
+      });
       show(book, 'active');
-      renderCurrent(book);
-      playAndListen(book);
+      renderTarget(book);
+      speakAndListen(book);
     }
 
     function advance(book){
@@ -21327,24 +21404,20 @@ function buildQuiz(book, idStr){
       stopRecognition(book, false);
       s.index++;
       if(s.index >= s.sentences.length){
+        s.active = false;
         show(book, 'done');
       } else {
-        renderCurrent(book);
-        playAndListen(book);
+        renderTarget(book);
+        speakAndListen(book);
       }
     }
 
+    // Event delegation
     document.addEventListener('click', (e) => {
-      const statusEl = e.target.closest('.sh-status');
-      if(statusEl && statusEl.classList.contains('sh-status-resume')){
-        const book = statusEl.closest('.book');
-        if(book) beginListening(book);
-        return;
-      }
       const book = e.target.closest('.book');
       if(!book) return;
       if(e.target.matches('.btn-sh-start')) startShadowing(book);
-      else if(e.target.matches('.btn-sh-replay')) playAndListen(book);
+      else if(e.target.matches('.btn-sh-replay')) speakAndListen(book);
       else if(e.target.matches('.btn-sh-stop')) stopRecognition(book, true);
       else if(e.target.matches('.btn-sh-skip')) advance(book);
       else if(e.target.matches('.btn-sh-retry')) startShadowing(book);

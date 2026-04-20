@@ -21180,16 +21180,60 @@ function buildQuiz(book, idStr){
       return false;
     }
 
+    const SH_MAX_WORDS = 15;  // max words per shadowing chunk (recommended 10-15)
+
+    function splitLongSentence_(sent){
+      const words = sent.split(/\s+/).filter(Boolean);
+      if(words.length <= SH_MAX_WORDS) return [sent];
+      // Try splitting at commas/semicolons first
+      const parts = sent.split(/[,;]\s+/).map(p => p.trim()).filter(Boolean);
+      const chunks = [];
+      let buf = '';
+      for(const p of parts){
+        const bw = buf ? buf.split(/\s+/).length : 0;
+        const pw = p.split(/\s+/).length;
+        if(bw + pw > SH_MAX_WORDS && buf){
+          chunks.push(buf);
+          buf = p;
+        } else {
+          buf = buf ? (buf + ', ' + p) : p;
+        }
+      }
+      if(buf) chunks.push(buf);
+      // Hard-split any chunk that is still too long
+      const out = [];
+      for(const c of chunks){
+        const w = c.split(/\s+/);
+        if(w.length <= SH_MAX_WORDS){ out.push(c); continue; }
+        for(let i = 0; i < w.length; i += SH_MAX_WORDS){
+          out.push(w.slice(i, i + SH_MAX_WORDS).join(' '));
+        }
+      }
+      return out;
+    }
+
     function extractSentences(book){
       const lesson = book.querySelector('section.lesson:not(.hidden)');
       if(!lesson) return [];
       const en = lesson.querySelector('.en-body');
       if(!en) return [];
-      return [...en.querySelectorAll('p')].map(p => {
+      const result = [];
+      [...en.querySelectorAll('p')].forEach(p => {
         let txt = p.textContent.replace(/\s+/g, ' ').trim();
         txt = txt.replace(/^\([^)]+\)\s*/, '');
-        return txt;
-      }).filter(txt => txt.length);
+        if(!txt) return;
+        // Split by sentence-end punctuation (. ! ?), keeping each sentence's closing mark
+        const sents = txt.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [txt];
+        sents.forEach(s => {
+          s = s.trim();
+          if(!s) return;
+          splitLongSentence_(s).forEach(chunk => {
+            chunk = chunk.trim();
+            if(chunk) result.push(chunk);
+          });
+        });
+      });
+      return result;
     }
 
     function show(book, phase){

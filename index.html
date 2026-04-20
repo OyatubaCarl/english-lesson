@@ -470,11 +470,21 @@
     color: #64748b;
     user-select: none;
   }
+  .shadowing .sh-status.sh-status-tts {
+    background: #f59e0b;
+    border-color: #f59e0b;
+    color: #fff;
+  }
   .shadowing .sh-status.sh-status-active {
     background: #dc2626;
     border-color: #dc2626;
     color: #fff;
     animation: shStatusPulse 1.2s ease-in-out infinite;
+  }
+  .shadowing .sh-status.sh-status-processing {
+    background: #6366f1;
+    border-color: #6366f1;
+    color: #fff;
   }
   @keyframes shStatusPulse {
     0%,100% { transform: scale(1); }
@@ -21190,15 +21200,21 @@ function buildQuiz(book, idStr){
       sh.querySelector('.sh-done').classList.toggle('hidden', phase !== 'done');
     }
 
-    function setStatus(book, active){
+    function setStatus(book, state){
       const el = book.querySelector('.sh-status');
       if(!el) return;
-      if(active){
-        el.textContent = '認識中';
+      el.classList.remove('sh-status-active', 'sh-status-tts', 'sh-status-processing');
+      if(state === 'tts'){
+        el.textContent = '🔊 読み上げ中';
+        el.classList.add('sh-status-tts');
+      } else if(state === 'listening'){
+        el.textContent = '🎤 英文を読み上げてください';
         el.classList.add('sh-status-active');
+      } else if(state === 'processing'){
+        el.textContent = '⏳ 判別中';
+        el.classList.add('sh-status-processing');
       } else {
         el.textContent = '認識停止中';
-        el.classList.remove('sh-status-active');
       }
     }
 
@@ -21267,7 +21283,7 @@ function buildQuiz(book, idStr){
           s.recognition = null;
         }
       }
-      setStatus(book, false);
+      setStatus(book, 'idle');
     }
 
     function resetShadowing(book){
@@ -21326,6 +21342,10 @@ function buildQuiz(book, idStr){
         }
       };
 
+      rec.onspeechend = () => {
+        setStatus(book, 'processing');
+      };
+
       rec.onerror = (ev) => {
         console.warn('shadowing recognition error:', ev.error);
         s.errorOccurred = true;
@@ -21338,7 +21358,7 @@ function buildQuiz(book, idStr){
 
       rec.onend = () => {
         s.recognition = null;
-        setStatus(book, false);
+        setStatus(book, 'idle');
         // If onresult already scheduled next action OR manual stop OR error — don't auto-restart
         if(s.resultHandled) return;
         if(s.manualStop) return;
@@ -21349,14 +21369,14 @@ function buildQuiz(book, idStr){
         }
       };
 
-      setStatus(book, true);
+      setStatus(book, 'listening');
       try { rec.start(); }
       catch(e){
         console.warn('rec.start threw:', e);
         const fb = book.querySelector('.shadowing .sh-feedback');
         fb.textContent = '⚠️ 認識を開始できませんでした: ' + (e.message || e);
         fb.className = 'sh-feedback forward';
-        setStatus(book, false);
+        setStatus(book, 'idle');
       }
     }
 
@@ -21365,6 +21385,7 @@ function buildQuiz(book, idStr){
       if(!s || !s.active) return;
       try { stopAll(); } catch(e){}
       stopRecognition(book, false);
+      setStatus(book, 'tts');
       const text = s.sentences[s.index];
       speak(text, 'en-US', {
         onend: () => beginListening(book),

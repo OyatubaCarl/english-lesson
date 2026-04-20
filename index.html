@@ -417,6 +417,12 @@
     color: #14532d;
     animation: shMatchPop .35s ease-out;
   }
+  .shadowing .sh-word.auto-matched {
+    background: #d1fae5;
+    color: #065f46;
+    border: 1px dashed #10b981;
+    animation: none;
+  }
   @keyframes shMatchPop {
     0% { transform: scale(1); }
     50% { transform: scale(1.15); }
@@ -21170,6 +21176,78 @@ function buildQuiz(book, idStr){
       "hasn't":["has","not"],"haven't":["have","not"],"hadn't":["had","not"],
       "couldn't":["could","not"],"wouldn't":["would","not"],"shouldn't":["should","not"]
     };
+
+    // --- A. Numeric normalization (digit ↔ word) ---
+    const NUM_WORDS = {
+      '0':'zero','1':'one','2':'two','3':'three','4':'four','5':'five',
+      '6':'six','7':'seven','8':'eight','9':'nine','10':'ten',
+      '11':'eleven','12':'twelve','13':'thirteen','14':'fourteen',
+      '15':'fifteen','16':'sixteen','17':'seventeen','18':'eighteen','19':'nineteen',
+      '20':'twenty','30':'thirty','40':'forty','50':'fifty',
+      '60':'sixty','70':'seventy','80':'eighty','90':'ninety',
+      '100':'hundred','1000':'thousand'
+    };
+    const WORD_NUMS = Object.fromEntries(Object.entries(NUM_WORDS).map(([k,v])=>[v,k]));
+    const ORDINALS = {
+      '1st':'first','2nd':'second','3rd':'third','4th':'fourth','5th':'fifth',
+      '6th':'sixth','7th':'seventh','8th':'eighth','9th':'ninth','10th':'tenth',
+      '11th':'eleventh','12th':'twelfth','13th':'thirteenth','20th':'twentieth',
+      '21st':'twenty-first','30th':'thirtieth','100th':'hundredth'
+    };
+    const ORDINAL_WORDS = Object.fromEntries(Object.entries(ORDINALS).map(([k,v])=>[v,k]));
+    function numericAlts(w){
+      const alts = [];
+      if(NUM_WORDS[w]) alts.push(NUM_WORDS[w]);
+      if(WORD_NUMS[w]) alts.push(WORD_NUMS[w]);
+      if(ORDINALS[w]) alts.push(ORDINALS[w]);
+      if(ORDINAL_WORDS[w]) alts.push(ORDINAL_WORDS[w]);
+      return alts;
+    }
+
+    // --- B. Always-matched proper nouns / hard-to-recognize words ---
+    const ALWAYS_MATCHED_NAMES = new Set([
+      'yuki','tom','mary','mike','pochi','max','mom','dad','mr','mrs','ms',
+      'green','tokyo','japan','new','york'
+    ]);
+    function isLikelyProperNoun(word, index, allWords){
+      const clean = normWord(word);
+      if(ALWAYS_MATCHED_NAMES.has(clean)) return true;
+      if(index === 0) return false;
+      const prev = allWords[index - 1] || '';
+      if(/[.!?]$/.test(prev)) return false;
+      return /^[A-Z][a-z]+/.test(word);
+    }
+
+    // --- C. Fuzzy match (Levenshtein distance) ---
+    function levenshtein(a, b){
+      if(a === b) return 0;
+      if(!a.length) return b.length;
+      if(!b.length) return a.length;
+      const m = a.length, n = b.length;
+      const dp = new Array(n + 1);
+      for(let j = 0; j <= n; j++) dp[j] = j;
+      for(let i = 1; i <= m; i++){
+        let prev = dp[0];
+        dp[0] = i;
+        for(let j = 1; j <= n; j++){
+          const tmp = dp[j];
+          if(a[i-1] === b[j-1]) dp[j] = prev;
+          else dp[j] = 1 + Math.min(prev, dp[j-1], dp[j]);
+          prev = tmp;
+        }
+      }
+      return dp[n];
+    }
+    function fuzzyMatch(targetWord, recognizedSet){
+      const t = normWord(targetWord);
+      if(!t || t.length < 5) return false;
+      const thr = Math.min(2, Math.floor(t.length / 4));
+      for(const r of recognizedSet){
+        if(!r || Math.abs(r.length - t.length) > thr) continue;
+        if(levenshtein(t, r) <= thr) return true;
+      }
+      return false;
+    }
     function normWord(w){ return String(w).toLowerCase().replace(/[.,!?;:"""''()]/g, ''); }
     function createMatchSet(words){
       const s = new Set();
@@ -21179,6 +21257,7 @@ function buildQuiz(book, idStr){
         s.add(n.replace(/'/g,''));
         s.add(n.replace(/'s$/, ''));
         if(CONTRACTIONS[n]) CONTRACTIONS[n].forEach(x => s.add(x));
+        numericAlts(n).forEach(x => s.add(x));
       }
       return s;
     }
@@ -21192,6 +21271,10 @@ function buildQuiz(book, idStr){
         const mains = CONTRACTIONS[n].slice(0, 2);
         if(mains.every(x => set.has(x))) return true;
       }
+      for(const alt of numericAlts(n)){
+        if(set.has(alt)) return true;
+      }
+      if(fuzzyMatch(target, set)) return true;
       return false;
     }
 
@@ -21286,10 +21369,15 @@ function buildQuiz(book, idStr){
       targetEl.innerHTML = '';
       const words = s.sentences[s.index].split(/\s+/);
       s.targetWords = words;
+      s.autoMatched = new Set();
       words.forEach((w, i) => {
         const span = document.createElement('span');
         span.className = 'sh-word';
         span.textContent = w;
+        if(isLikelyProperNoun(w, i, words)){
+          span.classList.add('matched', 'auto-matched');
+          s.autoMatched.add(i);
+        }
         targetEl.appendChild(span);
         if(i < words.length - 1) targetEl.appendChild(document.createTextNode(' '));
       });
@@ -21313,7 +21401,10 @@ function buildQuiz(book, idStr){
       const set = createMatchSet(s.recognizedWords);
       if(!s.targetWords.length) return 0;
       let hit = 0;
-      s.targetWords.forEach(w => { if(wordMatched(w, set)) hit++; });
+      s.targetWords.forEach((w, i) => {
+        if(s.autoMatched && s.autoMatched.has(i)) hit++;
+        else if(wordMatched(w, set)) hit++;
+      });
       return hit / s.targetWords.length;
     }
     function allMatched(book){

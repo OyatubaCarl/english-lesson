@@ -20652,13 +20652,30 @@
   // Mark new words for every book up-front (independent seen-sets per book)
   document.querySelectorAll('.book').forEach(b => markNewWordsForBook(b));
 
+  function applyModeToLesson(mode, lesson){
+    if(!lesson) return;
+    lesson.querySelectorAll('.w').forEach(el => {
+      const display = el.getAttribute('data-display') || el.getAttribute('data-base-saved');
+      const ipa  = el.getAttribute('data-ipa') || '';
+      const ja   = el.getAttribute('data-ja')  || '';
+      el.replaceChildren(document.createTextNode(display));
+      if(mode==='ipa' && ipa)      el.replaceChildren(makeRuby(display, ipa));
+      else if(mode==='ja' && ja)   el.replaceChildren(makeRuby(display, ja));
+    });
+    lesson.querySelectorAll('.we').forEach(el => {
+      const display = el.getAttribute('data-display') || el.getAttribute('data-base-saved');
+      const ja   = el.getAttribute('data-ja') || '';
+      el.replaceChildren(document.createTextNode(display));
+      if(mode==='en-ja' && ja)     el.replaceChildren(makeRuby(display, ja));
+    });
+  }
   function applyMode(mode){
     localStorage.setItem(KEY_MODE, mode);
     // Set pressed state on all mode buttons
     document.querySelectorAll('.btn-mode').forEach(b => {
       b.setAttribute('aria-pressed', String(b.dataset.mode===mode));
     });
-    // Toggle jp/en body visibility in all lessons
+    // Toggle jp/en body visibility in all lessons (cheap — just class flip)
     document.querySelectorAll('.lesson').forEach(lesson => {
       const jp = lesson.querySelector('.jp-body');
       const en = lesson.querySelector('.en-body');
@@ -20670,20 +20687,9 @@
         en && en.classList.add('hidden');
       }
     });
-    document.querySelectorAll('.w').forEach(el => {
-      const display = el.getAttribute('data-display') || el.getAttribute('data-base-saved');
-      const ipa  = el.getAttribute('data-ipa') || '';
-      const ja   = el.getAttribute('data-ja')  || '';
-      el.replaceChildren(document.createTextNode(display));
-      if(mode==='ipa' && ipa)      el.replaceChildren(makeRuby(display, ipa));
-      else if(mode==='ja' && ja)   el.replaceChildren(makeRuby(display, ja));
-    });
-    document.querySelectorAll('.we').forEach(el => {
-      const display = el.getAttribute('data-display') || el.getAttribute('data-base-saved');
-      const ja   = el.getAttribute('data-ja') || '';
-      el.replaceChildren(document.createTextNode(display));
-      if(mode==='en-ja' && ja)     el.replaceChildren(makeRuby(display, ja));
-    });
+    // Only render spans for the CURRENTLY visible lesson (huge speedup).
+    // Other lessons get rendered when their showLesson() fires.
+    applyModeToLesson(mode, currentLessonEl());
   }
 
 
@@ -20741,6 +20747,9 @@
     buildVocab(book, idStr);
     updateYtSection(book, idStr);
     if(window.__resetShadowing) window.__resetShadowing(book);
+    // Re-apply current mode to the newly visible lesson (spans may be stale from previous mode)
+    const _curLesson = book.querySelector('section.lesson:not(.hidden)');
+    applyModeToLesson(localStorage.getItem(KEY_MODE) || 'plain', _curLesson);
   }
 
   function buildVocab(book, currentIdStr){

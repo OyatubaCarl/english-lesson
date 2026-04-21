@@ -464,6 +464,8 @@
   .shadowing .sh-controls .btn-sh-stop { border-color: #94a3b8; color: #475569; }
   .shadowing .sh-controls .btn-sh-stop:hover:not(:disabled) { background: #f1f5f9; }
   .shadowing .sh-controls .btn-sh-skip { border-color: #cbd5e1; color: #64748b; }
+  .shadowing .sh-controls .btn-sh-end { border-color: #fca5a5; color: #b91c1c; }
+  .shadowing .sh-controls .btn-sh-end:hover:not(:disabled) { background: #fee2e2; }
 
   .shadowing .sh-status {
     display: inline-block;
@@ -1265,6 +1267,7 @@
             <button class="btn-sh-replay" type="button">🔊 もう一度再生</button>
             <button class="btn-sh-stop" type="button">■ 停止</button>
             <button class="btn-sh-skip" type="button">スキップ →</button>
+            <button class="btn-sh-end" type="button">✕ 終了</button>
           </div>
         </div>
         <div class="sh-done hidden">
@@ -10246,6 +10249,7 @@
             <button class="btn-sh-replay" type="button">🔊 もう一度再生</button>
             <button class="btn-sh-stop" type="button">■ 停止</button>
             <button class="btn-sh-skip" type="button">スキップ →</button>
+            <button class="btn-sh-end" type="button">✕ 終了</button>
           </div>
         </div>
         <div class="sh-done hidden">
@@ -13612,6 +13616,7 @@
             <button class="btn-sh-replay" type="button">🔊 もう一度再生</button>
             <button class="btn-sh-stop" type="button">■ 停止</button>
             <button class="btn-sh-skip" type="button">スキップ →</button>
+            <button class="btn-sh-end" type="button">✕ 終了</button>
           </div>
         </div>
         <div class="sh-done hidden">
@@ -17444,6 +17449,7 @@
             <button class="btn-sh-replay" type="button">🔊 もう一度再生</button>
             <button class="btn-sh-stop" type="button">■ 停止</button>
             <button class="btn-sh-skip" type="button">スキップ →</button>
+            <button class="btn-sh-end" type="button">✕ 終了</button>
           </div>
         </div>
         <div class="sh-done hidden">
@@ -20553,6 +20559,7 @@
             <button class="btn-sh-replay" type="button">🔊 もう一度再生</button>
             <button class="btn-sh-stop" type="button">■ 停止</button>
             <button class="btn-sh-skip" type="button">スキップ →</button>
+            <button class="btn-sh-end" type="button">✕ 終了</button>
           </div>
         </div>
         <div class="sh-done hidden">
@@ -21433,6 +21440,11 @@ function buildQuiz(book, idStr){
           s.recognition.onend = null;
           s.recognition.onresult = null;
           s.recognition.onerror = null;
+          s.recognition.onspeechend = null;
+          s.recognition.onspeechstart = null;
+          s.recognition.onaudioend = null;
+          s.recognition.onaudiostart = null;
+          s.recognition.onstart = null;
           try { s.recognition.abort(); } catch(e){}
           s.recognition = null;
         }
@@ -21595,7 +21607,17 @@ function buildQuiz(book, idStr){
       else if(e.target.matches('.btn-sh-replay')) speakAndListen(book);
       else if(e.target.matches('.btn-sh-stop')) stopRecognition(book, true);
       else if(e.target.matches('.btn-sh-skip')) advance(book);
+      else if(e.target.matches('.btn-sh-end')) resetShadowing(book);
       else if(e.target.matches('.btn-sh-retry')) startShadowing(book);
+    });
+
+    // Auto-stop when tab goes hidden (prevents runaway recognition)
+    document.addEventListener('visibilitychange', () => {
+      if(document.hidden){
+        document.querySelectorAll('.book').forEach(b => {
+          if(state.get(b)) resetShadowing(b);
+        });
+      }
     });
 
     window.__resetShadowing = resetShadowing;

@@ -21317,7 +21317,11 @@ function buildQuiz(book, idStr){
       if(!en) return [];
       const result = [];
       [...en.querySelectorAll('p')].forEach(p => {
-        let txt = p.textContent.replace(/\s+/g, ' ').trim();
+        // Clone and strip <rt> (ruby annotations) so furigana/ipa text
+        // never leaks into the shadowing target
+        const clone = p.cloneNode(true);
+        clone.querySelectorAll('rt').forEach(rt => rt.remove());
+        let txt = clone.textContent.replace(/\s+/g, ' ').trim();
         txt = txt.replace(/^\([^)]+\)\s*/, '');
         if(!txt) return;
         // Split by sentence-end punctuation (. ! ?), keeping each sentence's closing mark

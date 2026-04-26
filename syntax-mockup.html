@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>構文解析 モード — 1ページ分モック（H60）</title>
+<style>
+  :root {
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --ink: #0f172a;
+    --muted: #64748b;
+    --s: #2563eb;
+    --v: #dc2626;
+    --o: #059669;
+    --c: #ea580c;
+    --m: #64748b;
+    --sub: #7c3aed;
+    --sub2: #db2777;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 18px 60px;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  header h1 { font-size: 1.25rem; margin: 0 0 .2em; }
+  header .lead { color: var(--muted); font-size: .9rem; margin: 0 0 1.2em; }
+
+  .lesson {
+    background: var(--card);
+    border-radius: 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.06);
+    padding: 18px 22px 24px;
+  }
+  .lesson h2 { font-size: 1.08rem; color: #1e40af; margin: 0 0 .6em; }
+
+  .mode-bar {
+    display: flex; flex-wrap: wrap; gap: 6px;
+    padding: 10px 0 14px;
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 16px;
+    position: sticky; top: 0; background: white; z-index: 10;
+  }
+  .btn-mode {
+    background: #f1f5f9; border: 1px solid #cbd5e1;
+    color: #334155; padding: 6px 12px;
+    border-radius: 8px; font-size: .88rem; font-weight: 600;
+    cursor: pointer; transition: background .12s, border-color .12s;
+  }
+  .btn-mode:hover:not(.active) { background: #e0f2fe; border-color: #0284c7; }
+  .btn-mode.active {
+    background: #1e40af; border-color: #1e40af; color: white;
+  }
+  .btn-mode.placeholder { opacity: .55; cursor: not-allowed; }
+
+  .body-plain {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.1rem; line-height: 1.85;
+  }
+  .body-plain p { margin: 0 0 .9em; }
+
+  .body-syntax { font-family: Georgia, "Times New Roman", serif; font-size: 1.05rem; }
+  .body-syntax .para {
+    padding: 22px 14px 26px;
+    background: #fffbeb;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    position: relative;
+  }
+  .body-syntax .para::before {
+    content: "¶ " attr(data-pnum);
+    position: absolute; top: 8px; right: 12px;
+    font-size: .75rem; color: #ca8a04; font-weight: 700;
+    font-family: -apple-system, "Hiragino Sans", sans-serif;
+  }
+  .body-syntax .sentence {
+    display: block;
+    line-height: 3.8;
+    padding: 6px 0 4px;
+    border-bottom: 1px dashed #fde68a;
+    margin-bottom: 6px;
+  }
+  .body-syntax .sentence:last-child { border-bottom: none; }
+
+  .tok {
+    display: inline-block; position: relative; padding: 0 3px;
+  }
+  .tok > .lab {
+    position: absolute; left: 50%; transform: translateX(-50%);
+    bottom: -1.35em;
+    font-family: -apple-system, "Hiragino Sans", sans-serif;
+    font-size: .72rem; font-weight: 800; letter-spacing: .02em;
+    white-space: nowrap;
+  }
+  .tok.lS > .lab { color: var(--s); }
+  .tok.lV > .lab { color: var(--v); }
+  .tok.lO > .lab { color: var(--o); }
+  .tok.lC > .lab { color: var(--c); }
+  .tok.lM > .lab { color: var(--m); }
+
+  .tok > .ja {
+    position: absolute; left: 50%; transform: translateX(-50%);
+    top: -1.35em;
+    font-family: -apple-system, "Hiragino Sans", sans-serif;
+    font-size: .76rem; color: #334155; white-space: nowrap;
+    display: none;
+  }
+  body.with-ja .tok > .ja { display: block; }
+  body.with-ja .body-syntax .sentence { line-height: 5.0; }
+  body.with-ja .chunk { line-height: 4.6; margin-top: 26px; padding-top: 10px; }
+
+  .chunk {
+    display: inline-block; position: relative;
+    border: 2px solid var(--s);
+    border-radius: 6px;
+    padding: 2px 8px 2px;
+    margin: 18px 2px 2px;
+    background: rgba(219, 234, 254, .35);
+    vertical-align: baseline;
+    line-height: 3.4;
+  }
+  .chunk > .role {
+    position: absolute; top: -0.85em; left: 8px;
+    font-family: -apple-system, "Hiragino Sans", sans-serif;
+    font-size: .7rem; font-weight: 700;
+    background: var(--s); color: #fff;
+    padding: 1px 7px; border-radius: 4px;
+    white-space: nowrap; line-height: 1.3;
+  }
+  .chunk.role-S { border-color: var(--s); background: rgba(219,234,254,.4); }  .chunk.role-S > .role { background: var(--s); }
+  .chunk.role-O { border-color: var(--o); background: rgba(209,250,229,.45); } .chunk.role-O > .role { background: var(--o); }
+  .chunk.role-C { border-color: var(--c); background: rgba(254,215,170,.45); } .chunk.role-C > .role { background: var(--c); }
+  .chunk.role-M { border-color: var(--m); background: rgba(226,232,240,.6); }  .chunk.role-M > .role { background: var(--m); }
+  .chunk.sub  { border-style: dashed; border-color: var(--sub);  background: rgba(237, 233, 254, .45); }
+  .chunk.sub  > .role { background: var(--sub); }
+  .chunk.sub2 { border-style: dashed; border-color: var(--sub2); background: rgba(252, 231, 243, .45); }
+  .chunk.sub2 > .role { background: var(--sub2); }
+
+  .meta-row {
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    margin: 8px 2px 4px;
+    font-size: .84rem; color: #475569;
+    font-family: -apple-system, "Hiragino Sans", sans-serif;
+  }
+  .pattern {
+    display: inline-block;
+    background: #1e40af; color: #fff;
+    padding: 2px 10px; border-radius: 18px;
+    font-size: .76rem; font-weight: 700;
+  }
+
+  .footnote-legend {
+    margin-top: 20px; padding: 12px 14px;
+    background: #f1f5f9; border-radius: 8px;
+    font-size: .82rem; color: var(--muted); line-height: 1.8;
+  }
+  .footnote-legend h3 { font-size: .88rem; color: #334155; margin: 0 0 .4em; font-weight: 700; }
+  .footnote-legend .lg-row { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+  .footnote-legend .sw { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 5px; vertical-align: middle; }
+  .footnote-legend code { background: white; padding: 1px 5px; border-radius: 3px; font-size: .85em; }
+</style>
+</head>
+<body class="with-ja">
+  <header>
+    <h1>🔍 構文解析モード — 1ページ分モック</h1>
+    <p class="lead">
+      題材: <b>Lesson H60 — 核兵器と国際協力</b>（全6段落・18文）を丸ごと構文解析。<br>
+      初期は <code>⑧ 構文解析＋英和</code>。スクロールして全体の密度感を確認してください。
+    </p>
+  </header>
+
+  <article class="lesson">
+    <h2>Lesson H60 — 核兵器と国際協力</h2>
+
+    <div class="mode-bar">
+      <button class="btn-mode placeholder" type="button">① 標準</button>
+      <button class="btn-mode placeholder" type="button">② ルビ</button>
+      <button class="btn-mode placeholder" type="button">③ 発音記号</button>
+      <button class="btn-mode placeholder" type="button">④ 英文のみ</button>
+      <button class="btn-mode placeholder" type="button">⑤ 英和</button>
+      <button class="btn-mode placeholder" type="button">⑥ 日本語訳</button>
+      <button class="btn-mode" type="button" data-mode="syntax">⑦ 構文解析</button>
+      <button class="btn-mode active" type="button" data-mode="syntax-ja">⑧ 構文解析＋英和</button>
+      <button class="btn-mode" type="button" data-mode="plain" style="margin-left:auto;">← 通常表示</button>
+    </div>
+
+    <!-- ===== PLAIN BODY (hidden) ===== -->
+    <div class="body-plain" style="display:none;">
+      <p>On August 6, 1945, the world's first atomic bomb was dropped on Hiroshima. Three days later, a second one was dropped on Nagasaki. In both cities, over 200,000 people lost their lives, either at once or in the months that followed.</p>
+      <p>After the war, the world entered the age of nuclear weapon. The United States and the Soviet Union raced to develop nuclear arms, and the conflict between the two camps was called the Cold War. The threat of conflict reached every corner of the world.</p>
+      <p>A world frightened by the danger of nuclear war signed the Nuclear Non-Proliferation Treaty, the NPT, in 1968. It is an international treaty that tries to prevent more countries from holding nuclear weapons.</p>
+      <p>But even after the Cold War ended, conflict in the world has not vanished. Regional wars continue, and the number of refugee keeps rising. Syria, Ukraine, Sudan, Myanmar. Many victim have been driven from their homes.</p>
+      <p>The United Nations has provided a place for negotiation and mediation to prevent war. But when the permanent members of the Security Council disagree, the UN becomes powerless. The limit of diplomacy remains a great challenge.</p>
+      <p>Peace is not simply the absence of war. True peace is born only when there is the will to respect one another, to speak with one another, and to seek reconciliation. To pass on the memory of Hiroshima and Nagasaki across generations is our responsibility for the future.</p>
+    </div>
+
+    <!-- ===== SYNTAX BODY ===== -->
+    <div class="body-syntax">
+
+      <!-- ======== Paragraph 1 ======== -->
+      <div class="para" data-pnum="1">
+        <!-- P1-S1 -->
+        <div class="sentence">
+          <span class="chunk role-M"><span class="role">M（時）</span>
+            <span class="tok"><span class="ja">〜に</span>On</span>
+            <span class="tok"><span class="ja">8月6日</span>August 6,</span>
+            <span class="tok"><span class="ja">1945年</span>1945</span>
+          </span>,
+          <span class="chunk role-S"><span class="role">S（名詞句）</span>
+            <span class="tok"><span class="ja">世界</span>the world's</span>
+            <span class="tok"><span class="ja">最初の</span>first</span>
+            <span class="tok"><span class="ja">原爆</span>atomic bomb</span>
+          </span>
+          <span class="tok lV"><span class="lab">V</span>was dropped<span class="ja">投下された</span></span>
+          <span class="chunk role-M"><span class="role">M（場所）</span>
+            <span class="tok"><span class="ja">〜に</span>on</span>
+            <span class="tok"><span class="ja">広島</span>Hiroshima</span>
+          </span>.
+          <div class="meta-row"><span class="pattern">第1文型 SV（受動）＋M</span></div>
+        </div>
+
+        <!-- P1-S2 -->
+        <div class="sentence">
+          <span class="chunk role-M"><span class="role">M（時）</span>
+            <span class="tok"><span class="ja">3日</span>Three days</span>
+            <span class="tok"><span class="ja">後</span>later</span>
+          </span>,
+          <span class="chunk role-S"><span class="role">S（名詞句）</span>
+            <span class="tok"><span class="ja">2発目</span>a second one</span>
+          </span>
+          <span class="tok lV"><span class="lab">V</span>was dropped<span class="ja">投下された</span></span>
+          <span class="chunk role-M"><span class="role">M（場所）</span>
+            <span class="tok"><span class="ja">〜に</span>on</span>
+            <span class="tok"><span class="ja">長崎</span>Nagasaki</span>
+          </span>.
+          <div class="meta-row"><span class="pattern">第1文型 SV（受動）＋M</span></div>
+        </div>
+
+        <!-- P1-S3 -->
+        <div class="sentence">
+          <span class="chunk role-M"><span class="role">M（場所）</span>
+            <span class="tok"><span class="ja">〜で</span>In</span>
+            <span class="tok"><span class="ja">両方の</span>both</span>
+            <span class="tok"><span class="ja">都市</span>cities</span>
+          </span>,
+          <span class="chunk role-S"><span class="role">S（名詞句）</span>
+            <span class="tok"><span class="ja">〜以上の</span>over</span>
+            <span class="tok"><span class="ja">20万</span>200,000</span>
+            <span class="tok"><span class="ja">人々</span>people</span>
+          </span>
+          <span class="tok lV"><span class="lab">V</span>lost<span class="ja">失った</span></span>
+          <span class="chunk role-O"><span class="role">O（名詞句）</span>
+            <span class="tok"><span class="ja">彼らの</span>their</span>
+            <span class="tok"><span class="ja">命</span>lives</span>
+          </span>,
+          <span class="chunk role-M"><span class="role">M（時・並列 either A or B）</span>
+            <span class="tok"><span class="ja">即時に</span>either at once</span>
+            <span class="tok"><span class="ja">〜または</span>or</span>
+            <span class="tok"><span class="ja">〜のうちに</span>in the months</span>
+            <span class="chunk sub"><span class="role">関係詞節（months を修飾）</span>
+              <span class="tok"><span class="lab" style="color:#7c3aed">S'(=months)</span>that<span class="ja">（それが）</span></span>
+              <span class="tok lV"><span class="lab">V'</span>followed<span class="ja">続いた</span></span>
+            </span>
+          </span>.
+          <div class="meta-row"><span class="pattern">第3文型 SVO＋M</span><span>関係詞節が months を修飾</span></div>
+        </div>
+      </div>
+
+      <!-- ======== Paragraph 2 ======== -->
+      <div class="para" data-pnum="2">
+        <!-- P2-S1 -->
+        <div class="sentence">
+          <span class="chunk role-M"><span class="role">M（時）</span>
+            <span class="tok"><span class="ja">〜の後</span>After</span>
+            <span class="tok"><span class="ja">戦争</span>the war</span>
+          </span>,
+          <span class="chunk role-S"><span class="role">S</span>
+            <span class="tok"><span class="ja">世界</span>the world</span>
+          </span>
+          <span class="tok lV"><span class="lab">V</span>entered<span class="ja">入った</span></span>
+          <span class="chunk role-O"><span class="role">O（名詞句）</span>
+            <span class="tok"><span class="ja">時代</span>the age</span>
+            <span class="chunk sub"><span class="role">of ～（age を修飾）</span>
+              <span class="tok"><span class="ja">〜の</span>of</span>
+              <span class="tok"><span class="ja">核兵器</span>nuclear weapon</span>
+            </span>
+          </span>.
+          <div class="meta-row"><span class="pattern">第3文型 SVO＋M</span></div>
+        </div>
+
+        <!-- P2-S2 -->
+        <div class="sentence">
+          <span class="chunk role-S"><span class="role">S（並列名詞句）</span>
+            <span class="tok"><span class="ja">米国</span>The United States</span>
+            <span class="tok"><span class="ja">〜と</span>and</span>
+            <span class="tok"><span class="ja">ソ連</span>the Soviet Union</span>
+          </span>
+          <span class="tok lV"><span class="lab">V</span>raced<span class="ja">競った</span></span>
+          <span class="chunk role-M"><span class="role">M（目的・to-不定詞）</span>
+            <span class="tok"><span class="ja">開発すること</span>to develop</span>
+            <span class="tok"><span class="ja">核兵器</span>nuclear arms</span>
+          </span>,
+          <span class="tok"><span class="ja">そして</span>and</span>
+          <span class="chunk role-S"><span class="role">S（後半節の主語）</span>
+            <span class="tok"><span class="ja">対立</span>the conflict</span>
+            <span class="chunk sub"><span class="role">between ～（conflict を修飾）</span>
+              <span class="tok"><span class="ja">〜の間の</span>between</span>
+              <span class="tok"><span class="ja">二つの陣営</span>the two camps</span>
+            </span>
+          </span>
+          <span class="tok lV"><span class="lab">V</span>was called<span class="ja">呼ばれた</span></span>
+          <span class="chunk role-C"><span class="role">C（名詞句）</span>
+            <span class="tok"><span class="ja">冷戦</span>the Cold War</span>
+          </span>.
+          <div class="meta-row"><span class="pattern">前半: SV＋M（目的）</span><span class="pattern">後半: SVC（SVOC の受動）</span><span>and で2節を並列</span></div>
+        </div>
+
+        <!-- P2-S3 -->
+        <div class="sentence">
+          <span class="chunk role-S"><span class="role">S（名詞句）</span>
+            <span class="tok"><span class="ja">脅威</span>The threat</span>
+            <span class="chunk sub"><span class="role">of ～（threat を修飾）</span>
+              <span class="tok"><span class="ja">〜の</span>of</span>
+              <span class="tok"><span class="ja">衝突</span>conflict</span>
+            </span>
+          </span>
+          <span class="tok lV"><span class="lab">V</span>reached<span class="ja">及んだ</span></span>
+          <span class="chunk role-O"><span class="role">O（名詞句）</span>
+            <span class="tok"><span class="ja">あらゆる</span>every</span>
+            <span class="tok"><span class="ja">片隅</span>corner</span>
+            <span class="chunk sub"><span class="role">of ～（corner を修飾）</span>
+              <span class="tok"><span class="ja">〜の</span>of</span>
+              <span class="tok"><span class="ja">世界</span>the world</span>
+            </span>
+          </span>.
+          <div class="meta-row"><span class="pattern">第3文型 SVO</span></div>
+        </div>
+      </div>
+
+      <!-- ======== Paragraph 3 ======== -->
+      <div class="para" data-pnum="3">
+        <!-- P3-S1 -->
+        <div class="sentence">
+          <span class="chunk role-S"><span class="role">S（名詞句 + 過去分詞句の後置修飾）</span>
+            <span class="tok"><span class="ja">世界</span>A world</span>
+            <span class="chunk sub"><span class="role">過去分詞句（world を修飾）</span>
+              <span class="tok"><span class="ja">怯えた</span>frightened</span>
+              <span class="tok"><span class="ja">〜によって</span>by</span>
+              <span class="tok"><span class="ja">危険</span>the danger</span>
+              <span class="tok"><span class="ja">〜の</span>of</span>
+              <span class="tok"><span class="ja">核戦争</span>nuclear war</span>
+            </span>
+          </span>
+          <span class="tok lV"><span class="lab">V</span>signed<span class="ja">署名した</span></span>
+          <span class="chunk role-O"><span class="role">O（名詞句、同格）</span>
+            <span class="tok"><span class="ja">核拡散防止条約</span>the Nuclear Non-Proliferation Treaty</span>,
+            <span class="tok"><span class="ja">NPT</span>the NPT</span>
+          </span>,
+          <span class="chunk role-M"><span class="role">M（時）</span>
+            <span class="tok"><span class="ja">〜に</span>in</span>
+            <span class="tok"><span class="ja">1968年</span>1968</span>
+          </span>.
+          <div class="meta-row"><span class="pattern">第3文型 SVO＋M</span><span>主語が分詞句で後置修飾されている</span></div>
+        </div>
+
+        <!-- P3-S2 -->
+        <div class="sentence">
+          <span class="tok lS"><span class="lab">S</span>It<span class="ja">それ（=NPT）</span></span>
+          <span class="tok lV"><span class="lab">V</span>is<span class="ja">は〜だ</span></span>
+          <span class="chunk role-C"><span class="role">C（名詞句 + 関係詞節）</span>
+            <span class="tok"><span class="ja">国際条約</span>an international treaty</span>
+            <span class="chunk sub"><span class="role">関係詞節（treaty を修飾）</span>
+              <span class="tok"><span class="lab" style="color:#7c3aed">S'(=treaty)</span>that<span class="ja">（それが）</span></span>
+              <span class="tok lV"><span class="lab">V'</span>tries<span class="ja">試みる</span></span>
+              <span class="chunk sub2"><span class="role">O'（to-不定詞）</span>
+                <span class="tok"><span class="ja">妨ぐこと</span>to prevent</span>
+                <span class="tok"><span class="ja">より多くの国を</span>more countries</span>
+                <span class="tok"><span class="ja">〜から</span>from</span>
+                <span class="tok"><span class="ja">保有すること</span>holding</span>
+                <span class="tok"><span class="ja">核兵器</span>nuclear weapons</span>
+              </span>
+            </span>
+          </span>.
+          <div class="meta-row"><span class="pattern">第2文型 SVC</span><span><code>prevent A from -ing</code> 構文</span></div>
+        </div>
+      </div>
+
+      <!-- ======== Paragraph 4 ======== -->
+      <div class="para" data-pnum="4">
+        <!-- P4-S1 -->
+        <div class="sentence">
+          <span class="tok"><span class="ja">しかし</span>But</span>
+          <span class="chunk role-M"><span class="role">M（時の副詞節）</span>
+            <span class="tok"><span class="ja">〜さえ</span>even</span>
+            <span class="tok"><span class="ja">〜の後</span>after</span>
+            <span class="tok"><span class="lab" style="color:#7c3aed">S'</span>the Cold War<span class="ja">冷戦</span></span>
+            <span class="tok lV"><span class="lab">V'</span>ended<span class="ja">終わった</span></span>
+          </span>,
+          <span class="chunk role-S"><span class="role">S（名詞句）</span>
+            <span class="tok"><span class="ja">対立</span>conflict</span>
+            <span class="chunk sub"><span class="role">in ～（conflict を修飾）</span>
+              <span class="tok"><span class="ja">〜の中の</span>in</span>
+              <span class="tok"><span class="ja">世界</span>the world</span>
+            </span>
+          </span>
+          <span class="tok lV"><span class="lab">V</span>has not vanished<span class="ja">消えていない</span></span>.
+          <div class="meta-row"><span class="pattern">第1文型 SV＋M</span><span>現在完了の否定</span></div>
+        </div>
+
+        <!-- P4-S2 -->
+        <div class="sentence">
+          <span class="chunk role-S"><span class="role">S</span>
+            <span class="tok"><span class="ja">地域の</span>Regional</span>
+            <span class="tok"><span class="ja">戦争</span>wars</span>
+          </span>
+          <span class="tok lV"><span class="lab">V</span>continue<span class="ja">続く</span></span>,
+          <span class="tok"><span class="ja">そして</span>and</span>
+          <span class="chunk role-S"><span class="role">S（後半節の主語）</span>
+            <span class="tok"><span class="ja">数</span>the number</span>
+            <span class="chunk sub"><span class="role">of ～（number を修飾）</span>
+              <span class="tok"><span class="ja">〜の</span>of</span>
+              <span class="tok"><span class="ja">難民</span>refugee</span>
+            </span>
+          </span>
+          <span class="tok lV"><span class="lab">V</span>keeps<span class="ja">〜し続ける</span></span>
+          <span class="tok lO"><span class="lab">O</span>rising<span class="ja">上昇すること</span></span>.
+          <div class="meta-row"><span class="pattern">前半: 第1文型 SV</span><span class="pattern">後半: 第3文型 SVO</span></div>
+        </div>
+
+        <!-- P4-S3 -->
+        <div class="sentence">
+          <span class="chunk role-M" style="border-style:dashed"><span class="role">名詞句の列挙（省略文・体言止め）</span>
+            <span class="tok"><span class="ja">シリア</span>Syria</span>,
+            <span class="tok"><span class="ja">ウクライナ</span>Ukraine</span>,
+            <span class="tok"><span class="ja">スーダン</span>Sudan</span>,
+            <span class="tok"><span class="ja">ミャンマー</span>Myanmar</span>
+          </span>.
+          <div class="meta-row"><span class="pattern">文型なし（省略文）</span><span>具体例の列挙。前文の「地域戦争」の例</span></div>
+        </div>
+
+        <!-- P4-S4 -->
+        <div class="sentence">
+          <span class="chunk role-S"><span class="role">S</span>
+            <span class="tok"><span class="ja">多くの</span>Many</span>
+            <span class="tok"><span class="ja">犠牲者</span>victim</span>
+          </span>
+          <span class="tok lV"><span class="lab">V</span>have been driven<span class="ja">追いやられた</span></span>
+          <span class="chunk role-M"><span class="role">M（場所・起点）</span>
+            <span class="tok"><span class="ja">〜から</span>from</span>
+            <span class="tok"><span class="ja">家</span>their homes</span>
+          </span>.
+          <div class="meta-row"><span class="pattern">第1文型 SV（現在完了・受動）＋M</span></div>
+        </div>
+      </div>
+
+      <!-- ======== Paragraph 5 ======== -->
+      <div class="para" data-pnum="5">
+        <!-- P5-S1 -->
+        <div class="sentence">
+          <span class="chunk role-S"><span class="role">S</span>
+            <span class="tok"><span class="ja">国連</span>The United Nations</span>
+          </span>
+          <span class="tok lV"><span class="lab">V</span>has provided<span class="ja">提供してきた</span></span>
+          <span class="chunk role-O"><span class="role">O（名詞句）</span>
+            <span class="tok"><span class="ja">場</span>a place</span>
+            <span class="chunk sub"><span class="role">for ～（place を修飾）</span>
+              <span class="tok"><span class="ja">〜のための</span>for</span>
+              <span class="tok"><span class="ja">交渉</span>negotiation</span>
+              <span class="tok"><span class="ja">〜と</span>and</span>
+              <span class="tok"><span class="ja">仲介</span>mediation</span>
+            </span>
+            <span class="chunk sub2"><span class="role">M（to-不定詞・目的）</span>
+              <span class="tok"><span class="ja">防ぐこと</span>to prevent</span>
+              <span class="tok"><span class="ja">戦争</span>war</span>
+            </span>
+          </span>.
+          <div class="meta-row"><span class="pattern">第3文型 SVO</span><span>名詞句を2層の修飾で拡張</span></div>
+        </div>
+
+        <!-- P5-S2 -->
+        <div class="sentence">
+          <span class="tok"><span class="ja">しかし</span>But</span>
+          <span class="chunk role-M"><span class="role">M（時の副詞節 when...）</span>
+            <span class="tok"><span class="ja">〜のとき</span>when</span>
+            <span class="chunk sub"><span class="role">S'（名詞句）</span>
+              <span class="tok"><span class="ja">常任理事国</span>the permanent members</span>
+              <span class="chunk sub2"><span class="role">of ～（members を修飾）</span>
+                <span class="tok"><span class="ja">〜の</span>of</span>
+                <span class="tok"><span class="ja">安保理</span>the Security Council</span>
+              </span>
+            </span>
+            <span class="tok lV"><span class="lab">V'</span>disagree<span class="ja">意見が分かれる</span></span>
+          </span>,
+          <span class="chunk role-S"><span class="role">S</span>
+            <span class="tok"><span class="ja">国連</span>the UN</span>
+          </span>
+          <span class="tok lV"><span class="lab">V</span>becomes<span class="ja">〜になる</span></span>
+          <span class="tok lC"><span class="lab">C</span>powerless<span class="ja">無力</span></span>.
+          <div class="meta-row"><span class="pattern">第2文型 SVC＋M</span></div>
+        </div>
+
+        <!-- P5-S3 -->
+        <div class="sentence">
+          <span class="chunk role-S"><span class="role">S（名詞句）</span>
+            <span class="tok"><span class="ja">限界</span>The limit</span>
+            <span class="chunk sub"><span class="role">of ～（limit を修飾）</span>
+              <span class="tok"><span class="ja">〜の</span>of</span>
+              <span class="tok"><span class="ja">外交</span>diplomacy</span>
+            </span>
+          </span>
+          <span class="tok lV"><span class="lab">V</span>remains<span class="ja">依然として〜である</span></span>
+          <span class="chunk role-C"><span class="role">C（名詞句）</span>
+            <span class="tok"><span class="ja">大きな</span>a great</span>
+            <span class="tok"><span class="ja">課題</span>challenge</span>
+          </span>.
+          <div class="meta-row"><span class="pattern">第2文型 SVC</span></div>
+        </div>
+      </div>
+
+      <!-- ======== Paragraph 6 ======== -->
+      <div class="para" data-pnum="6">
+        <!-- P6-S1 -->
+        <div class="sentence">
+          <span class="tok lS"><span class="lab">S</span>Peace<span class="ja">平和</span></span>
+          <span class="tok lV"><span class="lab">V</span>is<span class="ja">は〜だ</span></span>
+          <span class="chunk role-M" style="border-style:dashed"><span class="role">M（否定副詞）</span>
+            <span class="tok"><span class="ja">単に〜ない</span>not simply</span>
+          </span>
+          <span class="chunk role-C"><span class="role">C（名詞句）</span>
+            <span class="tok"><span class="ja">不在</span>the absence</span>
+            <span class="chunk sub"><span class="role">of ～（absence を修飾）</span>
+              <span class="tok"><span class="ja">〜の</span>of</span>
+              <span class="tok"><span class="ja">戦争</span>war</span>
+            </span>
+          </span>.
+          <div class="meta-row"><span class="pattern">第2文型 SVC</span></div>
+        </div>
+
+        <!-- P6-S2 -->
+        <div class="sentence">
+          <span class="chunk role-S"><span class="role">S</span>
+            <span class="tok"><span class="ja">真の</span>True</span>
+            <span class="tok"><span class="ja">平和</span>peace</span>
+          </span>
+          <span class="tok lV"><span class="lab">V</span>is born<span class="ja">生まれる</span></span>
+          <span class="tok lM"><span class="lab">M</span>only<span class="ja">〜のときだけ</span></span>
+          <span class="chunk role-M"><span class="role">M（時の副詞節 when...）</span>
+            <span class="tok"><span class="ja">〜のとき</span>when</span>
+            <span class="tok lM"><span class="lab">(虚辞)</span>there<span class="ja">（虚辞）</span></span>
+            <span class="tok lV"><span class="lab">V'</span>is<span class="ja">ある</span></span>
+            <span class="chunk sub"><span class="role">S'（the will + 同格 to-不定詞）</span>
+              <span class="tok"><span class="ja">意志</span>the will</span>
+              <span class="chunk sub2"><span class="role">3つの並列 to-不定詞（the will を修飾）</span>
+                <span class="tok"><span class="ja">尊重すること</span>to respect</span>
+                <span class="tok"><span class="ja">互いを</span>one another</span>,
+                <span class="tok"><span class="ja">話し合うこと</span>to speak</span>
+                <span class="tok"><span class="ja">互いと</span>with one another</span>,
+                <span class="tok"><span class="ja">そして</span>and</span>
+                <span class="tok"><span class="ja">求めること</span>to seek</span>
+                <span class="tok"><span class="ja">和解</span>reconciliation</span>
+              </span>
+            </span>
+          </span>.
+          <div class="meta-row"><span class="pattern">第1文型 SV（受動）＋M</span></div>
+        </div>
+
+        <!-- P6-S3 -->
+        <div class="sentence">
+          <span class="chunk role-S"><span class="role">S（to-不定詞の名詞的用法）</span>
+            <span class="tok"><span class="lab" style="color:#dc2626">V"</span>To pass on<span class="ja">伝えていくこと</span></span>
+            <span class="chunk sub"><span class="role">O"（pass on の目的語）</span>
+              <span class="tok"><span class="ja">記憶</span>the memory</span>
+              <span class="chunk sub2"><span class="role">of ～（memory を修飾）</span>
+                <span class="tok"><span class="ja">〜の</span>of</span>
+                <span class="tok"><span class="ja">広島</span>Hiroshima</span>
+                <span class="tok"><span class="ja">〜と</span>and</span>
+                <span class="tok"><span class="ja">長崎</span>Nagasaki</span>
+              </span>
+            </span>
+            <span class="tok"><span class="lab" style="color:#64748b">M"</span>across generations<span class="ja">世代を超えて</span></span>
+          </span>
+          <span class="tok lV"><span class="lab">V</span>is<span class="ja">は〜だ</span></span>
+          <span class="chunk role-C"><span class="role">C（名詞句）</span>
+            <span class="tok"><span class="ja">私たちの責任</span>our responsibility</span>
+            <span class="chunk sub"><span class="role">for ～（responsibility を修飾）</span>
+              <span class="tok"><span class="ja">〜への</span>for</span>
+              <span class="tok"><span class="ja">未来</span>the future</span>
+            </span>
+          </span>.
+          <div class="meta-row"><span class="pattern">第2文型 SVC</span><span>to-不定詞句が主語</span></div>
+        </div>
+      </div>
+    </div><!-- /.body-syntax -->
+
+    <!-- ===== 凡例・節句の解説（下配置） ===== -->
+    <div class="footnote-legend">
+      <h3>凡例・解説</h3>
+      <div class="lg-row" style="margin-bottom:.6em;">
+        <span><span class="sw" style="background:#2563eb"></span>S 主語</span>
+        <span><span class="sw" style="background:#dc2626"></span>V 動詞</span>
+        <span><span class="sw" style="background:#059669"></span>O 目的語</span>
+        <span><span class="sw" style="background:#ea580c"></span>C 補語</span>
+        <span><span class="sw" style="background:#64748b"></span>M 修飾語</span>
+      </div>
+      <div>
+        <b>色枠</b>：句・節の塊。上のタグはその塊が<u>主節で果たしている役割</u>。
+        <b>実線</b>＝主節の要素／<b>青の破線</b>＝従属節（S'/V'/O'）／<b>ピンクの破線</b>＝二重従属（S"/V"）。
+        <b>英単語の上</b>に日本語ルビ、<b>下</b>に SVOC ラベル。
+      </div>
+    </div>
+  </article>
+
+<script>
+document.querySelectorAll('.btn-mode[data-mode]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const mode = btn.dataset.mode;
+    const plain = document.querySelector('.body-plain');
+    const syntax = document.querySelector('.body-syntax');
+    if (mode === 'plain') {
+      plain.style.display = '';
+      syntax.style.display = 'none';
+      document.body.classList.remove('with-ja');
+    } else if (mode === 'syntax') {
+      plain.style.display = 'none';
+      syntax.style.display = '';
+      document.body.classList.remove('with-ja');
+    } else if (mode === 'syntax-ja') {
+      plain.style.display = 'none';
+      syntax.style.display = '';
+      document.body.classList.add('with-ja');
+    }
+    document.querySelectorAll('.btn-mode[data-mode]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+/* Funnics Island B1-B20 index-like drop-in styles. */
+.b-series-book .book-about {
+  margin: -6px 0 16px;
+  color: var(--fg-soft, #374151);
+}
+.b-series-book .lesson p[data-audio] {
+  position: relative;
+}
+.b-series-book .lesson p[data-audio].is-playing {
+  background: #f0fdf4;
+  outline: 1px solid #86efac;
+  border-radius: 6px;
+  padding: 2px 5px;
+}
+.b-series-book .yt-section {
+  display: block;
+}
+.b-series-joined-link {
+  text-align: center;
+  margin-top: 8px;
+}
+.b-series-book .vocab-current table,
+.b-series-book .vocab-cumulative table {
+  table-layout: fixed;
+}
+.b-series-book .vocab-current td:first-child,
+.b-series-book .vocab-cumulative td:first-child {
+  font-weight: 700;
+}
+.b-series-book .new-word {
+  color: var(--new, #dc2626);
+  font-weight: 700;
+}
+.b-series-book .picturebook-body {
+  display: grid;
+  gap: 14px;
+  margin: 14px 0 18px;
+}
+.b-series-book .picture-card {
+  display: grid;
+  grid-template-columns: minmax(170px, 240px) minmax(0, 1fr);
+  gap: 14px;
+  align-items: stretch;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm, 0 1px 2px rgba(0,0,0,.04));
+  content-visibility: auto;
+  contain-intrinsic-size: 0 160px;
+}
+.b-series-book .picture-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #0f172a;
+  aspect-ratio: 16 / 9;
+}
+.b-series-book .picture-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.b-series-book .picture-line {
+  display: grid;
+  gap: 6px;
+  align-content: center;
+  width: 100%;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: var(--fg, #111827);
+  padding: 12px 14px;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.b-series-book .picture-line:hover {
+  border-color: #60a5fa;
+  background: #eff6ff;
+}
+.b-series-book .picture-line.is-playing {
+  border-color: #22c55e;
+  background: #f0fdf4;
+  box-shadow: 0 0 0 3px rgba(34,197,94,.18);
+}
+.b-series-book .picture-speaker {
+  font-size: .82rem;
+  font-weight: 800;
+  color: #0369a1;
+}
+.b-series-book .picture-english {
+  font-size: 1.02rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+.b-series-book .picture-japanese {
+  color: var(--fg-soft, #374151);
+  line-height: 1.55;
+}
+.b-series-summary .summary-lead {
+  margin: 10px 0 16px;
+  padding: 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+.b-series-summary .summary-lead p {
+  margin: 0 0 10px;
+}
+.b-series-summary .summary-primary-link,
+.b-series-summary .summary-combined-link {
+  text-decoration: none;
+}
+.b-series-summary .summary-primary-link {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #fff;
+  border: 2px solid #ef4444;
+  border-radius: 6px;
+  color: #991b1b;
+  font-weight: 800;
+}
+.b-series-summary .summary-block h3 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+}
+.b-series-summary .summary-combined-list {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.b-series-summary .summary-extra-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.b-series-summary .summary-extra-note {
+  margin: 0 0 10px;
+  color: #4b5563;
+  line-height: 1.65;
+}
+.b-series-summary .summary-extra-link {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid #fed7aa;
+  border-radius: 8px;
+  background: #fff7ed;
+  color: var(--fg, #111827);
+}
+.b-series-summary .summary-extra-label {
+  font-weight: 800;
+  color: #c2410c;
+}
+.b-series-summary .summary-combined-link {
+  display: grid;
+  grid-template-columns: 48px minmax(120px, 1.1fr) minmax(160px, 1.4fr) auto;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--fg, #111827);
+}
+.b-series-summary .summary-code {
+  font-weight: 800;
+  color: #0369a1;
+}
+.b-series-summary .summary-title {
+  color: var(--fg, #111827);
+}
+.b-series-summary .summary-grammar {
+  color: var(--fg-soft, #374151);
+}
+.b-series-summary .summary-open {
+  justify-self: end;
+  padding: 4px 9px;
+  border: 1px solid #bae6fd;
+  border-radius: 999px;
+  color: #0369a1;
+  font-weight: 700;
+  font-size: .82rem;
+  background: #f0f9ff;
+  white-space: nowrap;
+}
+.b-series-summary .summary-combined-link:hover {
+  border-color: #38bdf8;
+}
+@media (max-width: 760px) {
+  .b-series-book .picture-card {
+    grid-template-columns: 1fr;
+  }
+  .b-series-summary .summary-combined-link {
+    grid-template-columns: 42px minmax(0, 1fr);
+  }
+  .b-series-summary .summary-grammar,
+  .b-series-summary .summary-open {
+    grid-column: 2;
+    justify-self: start;
+  }
+}

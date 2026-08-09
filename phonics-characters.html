@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>アルファベットとファニックスアイランドの仲間たち</title>
+  <style>
+:root {
+  color-scheme: light;
+  --header-height: 64px;
+  --ink: #1f2937;
+  --accent: #2563eb;
+  --accent-dark: #1d4ed8;
+  --line: #e5e7eb;
+  font-family: "Hiragino Sans", "Yu Gothic", Meiryo, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #fafafa;
+  color: var(--ink);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  min-height: var(--header-height);
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border-bottom: 1px solid var(--line);
+  padding: 10px max(18px, calc(50vw - 480px));
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 2px 12px rgba(31, 41, 55, 0.08);
+  backdrop-filter: blur(12px);
+}
+.back-button {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 14px;
+  background: #fff;
+  color: var(--ink);
+  font-weight: 850;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.back-button:hover, .back-button:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+}
+.header-title {
+  min-width: 0;
+  text-align: right;
+}
+.header-title strong {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+.header-title span {
+  display: block;
+  margin-top: 2px;
+  color: #6b7280;
+  font-size: 0.78rem;
+  font-weight: 780;
+}
+
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 28px max(18px, calc(50vw - 480px)) 60px;
+}
+
+.intro {
+  margin: 0 0 24px;
+}
+.intro h1 {
+  margin: 0 0 8px;
+  font-size: 1.45rem;
+  font-weight: 850;
+  color: var(--ink);
+}
+.intro p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.abc-section {
+  margin: 0 0 36px;
+  padding: 16px;
+  background: linear-gradient(135deg, #eff6ff 0%, #fef3e6 100%);
+  border: 1px solid #e0e7ff;
+  border-radius: 16px;
+}
+.abc-section h2 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  font-weight: 850;
+  color: var(--accent-dark);
+}
+.abc-wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+}
+.abc-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.section-title {
+  margin: 0 0 14px;
+  font-size: 1.1rem;
+  font-weight: 850;
+  color: var(--ink);
+}
+
+.char-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 14px;
+}
+.char-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 10px 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .15s, border-color .15s, box-shadow .2s;
+}
+a.char-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.12);
+}
+.char-card img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+}
+.char-letter {
+  font-size: 0.85rem;
+  color: var(--accent-dark);
+  font-weight: 850;
+  letter-spacing: 0.05em;
+}
+.char-name-jp {
+  font-size: 0.9rem;
+  font-weight: 750;
+  color: var(--ink);
+  text-align: center;
+  line-height: 1.3;
+}
+.char-name-en {
+  font-size: 0.75rem;
+  color: #6b7280;
+  text-align: center;
+}
+.char-video-btn {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 4px 12px;
+  font-size: 0.74rem;
+  font-weight: 800;
+  background: #dc2626;
+  color: #fff;
+  border-radius: 99px;
+}
+
+@media (max-width: 680px) {
+  :root { --header-height: 78px; }
+  .page-header { align-items: stretch; flex-direction: column; }
+  .back-button { width: 100%; }
+  .header-title { text-align: left; }
+  main { padding: 22px 14px 40px; }
+  .char-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; }
+  .char-card img { width: 88px; height: 88px; }
+}
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <a class="back-button" href="phonics-dictionary.html">← フォニックス辞典へ戻る</a>
+    <div class="header-title">
+      <strong>アルファベットとファニックスアイランドの仲間たち</strong>
+      <span>ABC Song と 26 人のキャラクター</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="intro">
+      <h1>👥 アルファベットとファニックスアイランドの仲間たち</h1>
+      <p>A から Z まで、26 人の仲間が音をひとつずつ担当します。動画がある仲間はカードをタップすると YouTube で見られます。</p>
+    </div>
+
+    <section class="abc-section" aria-labelledby="abcTitle">
+      <h2 id="abcTitle">🎵 みんなで歌う ABC Song</h2>
+      <div class="abc-wrap">
+        <iframe loading="lazy" src="https://www.youtube.com/embed/3B5yLO1HJGs" title="Funnics Island ABC Song" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <h2 class="section-title">A から Z まで、26 人のなかまたち</h2>
+    <div class="char-grid">
+      <a class="char-card" id="char-aunt_ant" href="https://youtu.be/eGTZmwdWmA0" target="_blank" rel="noopener">
+        <img src="phonics-chars/aunt_ant.png" alt="Aunt Ant" loading="lazy">
+        <div class="char-letter">A</div>
+        <div class="char-name-jp">アリおばさん</div>
+        <div class="char-name-en">Aunt Ant</div>
+        <span class="char-video-btn">▶ Short A</span>
+      </a>
+      <a class="char-card" id="char-baker_bear" href="https://youtu.be/qvtc6srq1TI" target="_blank" rel="noopener">
+        <img src="phonics-chars/baker_bear.png" alt="Baker Bear" loading="lazy">
+        <div class="char-letter">B</div>
+        <div class="char-name-jp">ベイカーベア</div>
+        <div class="char-name-en">Baker Bear</div>
+        <span class="char-video-btn">▶ Long A</span>
+      </a>
+      <div class="char-card" id="char-cowboy_cat">
+        <img src="phonics-chars/cowboy_cat.png" alt="Cowboy Cat" loading="lazy">
+        <div class="char-letter">C</div>
+        <div class="char-name-jp">カウボーイキャット</div>
+        <div class="char-name-en">Cowboy Cat</div>
+      </div>
+      <div class="char-card" id="char-doctor_dragon">
+        <img src="phonics-chars/doctor_dragon.png" alt="Doctor Dragon" loading="lazy">
+        <div class="char-letter">D</div>
+        <div class="char-name-jp">ドクタードラゴン</div>
+        <div class="char-name-en">Doctor Dragon</div>
+      </div>
+      <div class="char-card" id="char-engineer_egg">
+        <img src="phonics-chars/engineer_egg.png" alt="Engineer Egg" loading="lazy">
+        <div class="char-letter">E</div>
+        <div class="char-name-jp">エンジニアエッグ</div>
+        <div class="char-name-en">Engineer Egg</div>
+      </div>
+      <div class="char-card" id="char-fisher_frog">
+        <img src="phonics-chars/fisher_frog.png" alt="Fisher Frog" loading="lazy">
+        <div class="char-letter">F</div>
+        <div class="char-name-jp">フィッシャーフロッグ</div>
+        <div class="char-name-en">Fisher Frog</div>
+      </div>
+      <div class="char-card" id="char-guardian_goat">
+        <img src="phonics-chars/guardian_goat.png" alt="Guardian Goat" loading="lazy">
+        <div class="char-letter">G</div>
+        <div class="char-name-jp">ガーディアンゴート</div>
+        <div class="char-name-en">Guardian Goat</div>
+      </div>
+      <div class="char-card" id="char-hiker_hippo">
+        <img src="phonics-chars/hiker_hippo.png" alt="Hiker Hippo" loading="lazy">
+        <div class="char-letter">H</div>
+        <div class="char-name-jp">ハイカーヒッポ</div>
+        <div class="char-name-en">Hiker Hippo</div>
+      </div>
+      <div class="char-card" id="char-inventor_ice">
+        <img src="phonics-chars/inventor_ice.png" alt="Inventor Ice" loading="lazy">
+        <div class="char-letter">I</div>
+        <div class="char-name-jp">発明家アイス</div>
+        <div class="char-name-en">Inventor Ice</div>
+      </div>
+      <div class="char-card" id="char-juggler_jellyfish">
+        <img src="phonics-chars/juggler_jellyfish.png" alt="Juggler Jellyfish" loading="lazy">
+        <div class="char-letter">J</div>
+        <div class="char-name-jp">ジャグラークラゲ</div>
+        <div class="char-name-en">Juggler Jellyfish</div>
+      </div>
+      <div class="char-card" id="char-king_kangaroo">
+        <img src="phonics-chars/king_kangaroo.png" alt="King Kangaroo" loading="lazy">
+        <div class="char-letter">K</div>
+        <div class="char-name-jp">キングカンガルー</div>
+        <div class="char-name-en">King Kangaroo</div>
+      </div>
+      <div class="char-card" id="char-librarian_lion">
+        <img src="phonics-chars/librarian_lion.png" alt="Librarian Lion" loading="lazy">
+        <div class="char-letter">L</div>
+        <div class="char-name-jp">司書ライオン</div>
+        <div class="char-name-en">Librarian Lion</div>
+      </div>
+      <div class="char-card" id="char-magician_mouse">
+        <img src="phonics-chars/magician_mouse.png" alt="Magician Mouse" loading="lazy">
+        <div class="char-letter">M</div>
+        <div class="char-name-jp">マジシャンマウス</div>
+        <div class="char-name-en">Magician Mouse</div>
+      </div>
+      <div class="char-card" id="char-ninja_nut">
+        <img src="phonics-chars/ninja_nut.png" alt="Ninja Nut" loading="lazy">
+        <div class="char-letter">N</div>
+        <div class="char-name-jp">忍者ナット</div>
+        <div class="char-name-en">Ninja Nut</div>
+      </div>
+      <a class="char-card" id="char-outlaw_octopus" href="https://youtu.be/LKb1DWeb-4k" target="_blank" rel="noopener">
+        <img src="phonics-chars/outlaw_octopus.png" alt="Outlaw Octopus" loading="lazy">
+        <div class="char-letter">O</div>
+        <div class="char-name-jp">アウトローオクトパス</div>
+        <div class="char-name-en">Outlaw Octopus</div>
+        <span class="char-video-btn">▶ Short O</span>
+      </a>
+      <div class="char-card" id="char-pilot_panda">
+        <img src="phonics-chars/pilot_panda.png" alt="Pilot Panda" loading="lazy">
+        <div class="char-letter">P</div>
+        <div class="char-name-jp">パイロットパンダ</div>
+        <div class="char-name-en">Pilot Panda</div>
+      </div>
+      <div class="char-card" id="char-queen_quiz">
+        <img src="phonics-chars/queen_quiz.png" alt="Queen Quiz" loading="lazy">
+        <div class="char-letter">Q</div>
+        <div class="char-name-jp">クイーンクイズ</div>
+        <div class="char-name-en">Queen Quiz</div>
+      </div>
+      <div class="char-card" id="char-runner_rabbit">
+        <img src="phonics-chars/runner_rabbit.png" alt="Runner Rabbit" loading="lazy">
+        <div class="char-letter">R</div>
+        <div class="char-name-jp">ランナーラビット</div>
+        <div class="char-name-en">Runner Rabbit</div>
+      </div>
+      <div class="char-card" id="char-singer_snake">
+        <img src="phonics-chars/singer_snake.png" alt="Singer Snake" loading="lazy">
+        <div class="char-letter">S</div>
+        <div class="char-name-jp">シンガースネーク</div>
+        <div class="char-name-en">Singer Snake</div>
+      </div>
+      <div class="char-card" id="char-teacher_tacos">
+        <img src="phonics-chars/teacher_tacos.png" alt="Teacher Tacos" loading="lazy">
+        <div class="char-letter">T</div>
+        <div class="char-name-jp">ティーチャータコス</div>
+        <div class="char-name-en">Teacher Tacos</div>
+      </div>
+      <div class="char-card" id="char-uncle_unicorn">
+        <img src="phonics-chars/uncle_unicorn.png" alt="Uncle Unicorn" loading="lazy">
+        <div class="char-letter">U</div>
+        <div class="char-name-jp">ユニコーンおじさん</div>
+        <div class="char-name-en">Uncle Unicorn</div>
+      </div>
+      <div class="char-card" id="char-viking_virus">
+        <img src="phonics-chars/viking_virus.png" alt="Viking Virus" loading="lazy">
+        <div class="char-letter">V</div>
+        <div class="char-name-jp">バイキングウイルス</div>
+        <div class="char-name-en">Viking Virus</div>
+      </div>
+      <div class="char-card" id="char-waiter_wolf">
+        <img src="phonics-chars/waiter_wolf.png" alt="Waiter Wolf" loading="lazy">
+        <div class="char-letter">W</div>
+        <div class="char-name-jp">ウェイターウルフ</div>
+        <div class="char-name-en">Waiter Wolf</div>
+      </div>
+      <div class="char-card" id="char-boxer_fox">
+        <img src="phonics-chars/boxer_fox.png" alt="Boxer Fox" loading="lazy">
+        <div class="char-letter">X</div>
+        <div class="char-name-jp">ボクサーフォックス</div>
+        <div class="char-name-en">Boxer Fox</div>
+      </div>
+      <div class="char-card" id="char-yoga_yeti">
+        <img src="phonics-chars/yoga_yeti.png" alt="Yoga Yeti" loading="lazy">
+        <div class="char-letter">Y</div>
+        <div class="char-name-jp">ヨガイエティ</div>
+        <div class="char-name-en">Yoga Yeti</div>
+      </div>
+      <div class="char-card" id="char-zigzag_zebra">
+        <img src="phonics-chars/zigzag_zebra.png" alt="Zigzag Zebra" loading="lazy">
+        <div class="char-letter">Z</div>
+        <div class="char-name-jp">ジグザグゼブラ</div>
+        <div class="char-name-en">Zigzag Zebra</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

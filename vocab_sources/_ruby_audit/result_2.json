@@ -1,0 +1,312 @@
+[
+  {
+    "id": "s5_044",
+    "word": "doll",
+    "severity": "bad",
+    "issue_type": "counter",
+    "fragment": "15体《からだ》",
+    "context": "15体《からだ》の<doll>を並《なら》べる",
+    "correct": "15体《たい》",
+    "comment": "助数詞の「体」はたい。人形15体は「じゅうごたい」"
+  },
+  {
+    "id": "s5_1006",
+    "word": "arrival",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "空《そら》港《みなと》",
+    "context": "空《そら》港《みなと》",
+    "correct": "空港《くうこう》",
+    "comment": "空港は熟語で「くうこう」。「そらみなと」は意味不明な分割誤読"
+  },
+  {
+    "id": "s5_1120",
+    "word": "burden",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "分担《ぶんたん》表《あら》",
+    "context": "先生《せんせい》は分担《ぶんたん》表《あら》を｜作り直《つくりなお》して",
+    "correct": "分担表《ぶんたんひょう》",
+    "comment": "「表」(リスト)は「ひょう」。「あら」は動詞「表す」の語幹。kana「ぶんたんあら」が破綻"
+  },
+  {
+    "id": "s5_1248",
+    "word": "conservative",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "70年《ねん》来《こ》",
+    "context": "紺《こん》のスーツと白《しろ》いシャツが、70年《ねん》来《こ》の定番《ていばん》",
+    "correct": "70年来《ねんらい》",
+    "comment": "「年来」は熟語で「ねんらい」。動詞「来る」の連用形「来《こ》」と誤認した分割誤読"
+  },
+  {
+    "id": "s5_1353",
+    "word": "departure",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "空《そら》港《みなと》",
+    "context": "空《そら》港《みなと》",
+    "correct": "空港《くうこう》",
+    "comment": "空港は熟語で「くうこう」。「そらみなと」は意味不明な分割誤読"
+  },
+  {
+    "id": "s5_1467",
+    "word": "emotionally",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "震災《しんさい》後《のち》",
+    "context": "震災《しんさい》後《のち》",
+    "correct": "震災後《しんさいご》",
+    "comment": "時間的順序を表す「~後」は「ご」。「のち」も単語としてはあるが、熟語末尾では「ご」が標準"
+  },
+  {
+    "id": "s5_1872",
+    "word": "liquid",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "朝食《ちょうしょく》後《のち》",
+    "context": "朝食《ちょうしょく》後《のち》",
+    "correct": "朝食後《ちょうしょくご》",
+    "comment": "時間的順序を表す「~後」は「ご」。「のち」も単語としてはあるが、熟語末尾では「ご」が標準"
+  },
+  {
+    "id": "s5_205",
+    "word": "author",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "名前《なまえ》入《はい》り",
+    "context": "私《わたし》の名前《なまえ》入《はい》りでサイン",
+    "correct": "名前入《なまえい》り",
+    "comment": "「~入り」は「いり」。「はいり」(入る)とは活用が異なる。kana「なまえはいり」が不自然"
+  },
+  {
+    "id": "s5_2276",
+    "word": "remembrance",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "戦没《せんぼつ》者《もの》",
+    "context": "戦没《せんぼつ》者《もの》",
+    "correct": "戦没者《せんぼつしゃ》",
+    "comment": "人を表す接尾辞「~者」は「しゃ」。「もの」は単独語(者《もの》=人物)であり熟語では使わない"
+  },
+  {
+    "id": "s5_2369",
+    "word": "sheet",
+    "severity": "warn",
+    "issue_type": "compound_split",
+    "fragment": "日《ひ》差《さ》し",
+    "context": "午後《ごご》の日《ひ》差《さ》しで乾《かわ》かす",
+    "correct": "日差《ひざ》し",
+    "comment": "「日差し」は標準的に「ひざし」(連濁)。kana「ひさし」は別語(庇)に聞こえる"
+  },
+  {
+    "id": "s5_2534",
+    "word": "temporary",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "通勤《つうきん》者《もの》",
+    "context": "通勤《つうきん》者《もの》",
+    "correct": "通勤者《つうきんしゃ》",
+    "comment": "人を表す接尾辞「~者」は「しゃ」。「もの」は単独語(者《もの》=人物)であり熟語では使わない"
+  },
+  {
+    "id": "s5_2542",
+    "word": "terminal",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "空《そら》港《みなと》",
+    "context": "空《そら》港《みなと》",
+    "correct": "空港《くうこう》",
+    "comment": "空港は熟語で「くうこう」。「そらみなと」は意味不明な分割誤読"
+  },
+  {
+    "id": "s5_2586",
+    "word": "trash",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "収集《しゅうしゅう》日《にち》",
+    "context": "週《しゅう》2回《かい》の<trash>収集《しゅうしゅう》日《にち》",
+    "correct": "収集日《しゅうしゅうび》",
+    "comment": "「~日」(特定の日)は「び」(連濁なし「ひ」もある)。「にち」は順序数(2日 ふつか/ににち)用"
+  },
+  {
+    "id": "s5_2630",
+    "word": "unite",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "震災《しんさい》後《のち》",
+    "context": "震災《しんさい》後《のち》",
+    "correct": "震災後《しんさいご》",
+    "comment": "時間的順序を表す「~後」は「ご」。「のち」も単語としてはあるが、熟語末尾では「ご」が標準"
+  },
+  {
+    "id": "s5_574",
+    "word": "Olympic",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "4年《ねん》後《のち》",
+    "context": "4年《ねん》後《のち》",
+    "correct": "4年後《ねんご》",
+    "comment": "時間的順序を表す「~後」は「ご」。「のち」も単語としてはあるが、熟語末尾では「ご」が標準"
+  },
+  {
+    "id": "s5_713",
+    "word": "robbery",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "2日《にち》後《のち》",
+    "context": "2日《にち》後《のち》",
+    "correct": "2日後《にちご》",
+    "comment": "時間的順序を表す「~後」は「ご」。「のち」も単語としてはあるが、熟語末尾では「ご」が標準"
+  },
+  {
+    "id": "s5_761",
+    "word": "sink",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "夕食《ゆうしょく》後《のち》",
+    "context": "夕食《ゆうしょく》後《のち》",
+    "correct": "夕食後《ゆうしょくご》",
+    "comment": "時間的順序を表す「~後」は「ご」。「のち」も単語としてはあるが、熟語末尾では「ご」が標準"
+  },
+  {
+    "id": "s6_0873",
+    "word": "genre",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "来館《らいかん》者《もの》",
+    "context": "来館《らいかん》者《もの》",
+    "correct": "来館者《らいかんしゃ》",
+    "comment": "人を表す接尾辞「~者」は「しゃ」。「もの」は単独語(者《もの》=人物)であり熟語では使わない"
+  },
+  {
+    "id": "s6_1047",
+    "word": "independently",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "伴走《ばんそう》者《もの》",
+    "context": "伴走《ばんそう》者《もの》",
+    "correct": "伴走者《ばんそうしゃ》",
+    "comment": "人を表す接尾辞「~者」は「しゃ」。「もの」は単独語(者《もの》=人物)であり熟語では使わない"
+  },
+  {
+    "id": "s6_1100",
+    "word": "interactive",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "来館《らいかん》者《もの》",
+    "context": "来館《らいかん》者《もの》",
+    "correct": "来館者《らいかんしゃ》",
+    "comment": "人を表す接尾辞「~者」は「しゃ」。「もの」は単独語(者《もの》=人物)であり熟語では使わない"
+  },
+  {
+    "id": "s6_1185",
+    "word": "legendary",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "打撃技《だげきわざ》術《じゅつ》",
+    "context": "<legendary>な打撃技《だげきわざ》術《じゅつ》はリーグを越《こ》えて",
+    "correct": "打撃技術《だげきぎじゅつ》",
+    "comment": "「打撃技術」は熟語で「だげきぎじゅつ」。「だげきわざじゅつ」は分割誤読 (技は「ぎ」)"
+  },
+  {
+    "id": "s6_1331",
+    "word": "moustache",
+    "severity": "warn",
+    "issue_type": "compound_split",
+    "fragment": "社交《しゃこう》場《ば》",
+    "context": "当時《とうじ》の社交《しゃこう》場《ば》における",
+    "correct": "社交場《しゃこうじょう》",
+    "comment": "「社交場」は「しゃこうじょう」が一般的。「しゃこうば」も誤りではないが、教材なら統一"
+  },
+  {
+    "id": "s6_1562",
+    "word": "pirate",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "探検《たんけん》家《いえ》",
+    "context": "少年《しょうねん》たちを熱心《ねっしん》な探検《たんけん》家《いえ》に",
+    "correct": "探検家《たんけんか》",
+    "comment": "「~家」(専門家を表す接尾辞)は「か」。「いえ」(建物)ではない"
+  },
+  {
+    "id": "s6_1562",
+    "word": "pirate",
+    "severity": "warn",
+    "issue_type": "compound_split",
+    "fragment": "古地《こち》図《ず》",
+    "context": "古地《こち》図《ず》の伝説",
+    "correct": "古地図《こちず》",
+    "comment": "「古地図」を分割。「古《ふる》い地図」とも読めるが「こち+ず」と読ませる意図ならOK。kanaは「こちず」で問題なし"
+  },
+  {
+    "id": "s6_1604",
+    "word": "predictive",
+    "severity": "bad",
+    "issue_type": "idiom",
+    "fragment": "品《ひん》切《き》れ",
+    "context": "品《ひん》切《き》れと過剰在庫",
+    "correct": "品切《しなぎ》れ",
+    "comment": "慣用句「品切れ」は「しなぎれ」(連濁)。「ひんきれ」は誤読"
+  },
+  {
+    "id": "s6_1778",
+    "word": "resolution",
+    "severity": "warn",
+    "issue_type": "counter",
+    "fragment": "三十《さんじゅう》分《ふん》",
+    "context": "毎日《まいにち》三十《さんじゅう》分《ふん》の散歩",
+    "correct": "三十分《さんじっぷん》",
+    "comment": "時間量「30分」は「さんじっぷん」または「さんじゅっぷん」(促音便+半濁音)が標準。「さんじゅうふん」は不自然"
+  },
+  {
+    "id": "s6_1778",
+    "word": "resolution",
+    "severity": "warn",
+    "issue_type": "kana_unnatural",
+    "fragment": "半年後《はんとしご》",
+    "context": "半年後《はんとしご》にも欠《か》かさず",
+    "correct": "半年後《はんとしご》or《はんねんご》",
+    "comment": "「半年後」は「はんとしご」「はんねんご」両用。読み自体は許容だがTTS的にはどちらか統一すべき"
+  },
+  {
+    "id": "s6_1824",
+    "word": "rubble",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "災害《さいがい》後《のち》",
+    "context": "災害《さいがい》後《のち》",
+    "correct": "災害後《さいがいご》",
+    "comment": "時間的順序を表す「~後」は「ご」。「のち」も単語としてはあるが、熟語末尾では「ご」が標準"
+  },
+  {
+    "id": "s6_1908",
+    "word": "significantly",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "導入《どうにゅう》後《のち》",
+    "context": "導入《どうにゅう》後《のち》",
+    "correct": "導入後《どうにゅうご》",
+    "comment": "時間的順序を表す「~後」は「ご」。「のち」も単語としてはあるが、熟語末尾では「ご」が標準"
+  },
+  {
+    "id": "s6_2152",
+    "word": "trait",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "忍耐《にんたい》強《つよ》さ",
+    "context": "忍耐《にんたい》強《つよ》さで",
+    "correct": "忍耐強《にんたいづよ》さ",
+    "comment": "「~強さ」は連濁で「づよさ」が標準 (忍耐強い=にんたいづよい)。「つよさ」だと連濁が起こらず不自然"
+  },
+  {
+    "id": "s6_2223",
+    "word": "undersea",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "大《だい》陸《りく》間《かん》",
+    "context": "<undersea>なケーブルが大《だい》陸《りく》間《かん》を結《むす》び",
+    "correct": "大陸《たいりく》間《かん》",
+    "comment": "「大陸」は「たいりく」(連濁無し)。「だい」と「りく」を分けると音調が不自然 (kana「だいりくかん」自体は許容だが「大陸」を「たいりく」と読むのが標準)"
+  }
+]

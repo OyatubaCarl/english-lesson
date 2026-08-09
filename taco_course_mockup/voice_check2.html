@@ -1,0 +1,150 @@
+<!DOCTYPE html><html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>声を1つ決める — Teacher Tacos English</title>
+<style>
+:root{--bg:#fbf6ee;--card:#fff;--fg:#2a2018;--muted:#7c6a56;--faint:#a89b88;--border:#ece0cf;
+  --accent:#e8642a;--accent-soft:#fdeee6;--green:#5aa011;--green-soft:#eaf6d8;--green-ink:#3f6f0d;
+  --shadow-sm:0 2px 6px rgba(90,60,30,.08);--radius:14px;
+  --ui:"Hiragino Sans","Yu Gothic",Meiryo,system-ui,sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:var(--ui);line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:1.35rem;font-weight:900}
+.sub{font-size:.84rem;color:var(--muted);margin-top:4px}
+h2{font-size:1.02rem;font-weight:900;margin:26px 0 10px;display:flex;align-items:center;gap:8px}
+h2::before{content:"";width:5px;height:18px;border-radius:3px;background:var(--accent)}
+.note{background:var(--accent-soft);border:1px solid #f6d3c3;border-radius:12px;padding:12px 14px;font-size:.83rem;color:#7a4a30;margin:14px 0}
+.note b{color:var(--accent)}
+/* 声カード */
+.vcard{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:14px 16px;margin-top:12px}
+.vcard.on{border-color:var(--accent);box-shadow:0 4px 14px rgba(232,100,42,.18)}
+.vh{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.vh .nm{font-size:1.1rem;font-weight:900}
+.vh .meta{font-size:.72rem;color:var(--faint);font-weight:700}
+.vh .score{font-size:.68rem;font-weight:800;background:var(--green-soft);color:var(--green-ink);border-radius:999px;padding:2px 9px}
+.vbtns{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+button{font-family:inherit;cursor:pointer;border-radius:10px;transition:.12s}
+button:active{transform:scale(.96)}
+.big{flex:1;min-width:150px;border:none;background:var(--accent);color:#fff;font-weight:900;font-size:.9rem;padding:12px 14px}
+.big.playing{background:#c04f1c}
+.ghost{border:1.5px solid var(--border);background:#fff;color:var(--fg);font-weight:700;font-size:.8rem;padding:10px 12px}
+.ghost:hover{border-color:var(--accent);background:var(--accent-soft)}
+.now{font-size:.78rem;color:var(--muted);margin-top:8px;min-height:20px}
+.now b{color:var(--accent);font-family:Georgia,serif;font-size:1.02rem}
+.pickbtn{width:100%;margin-top:10px;border:1.5px dashed var(--green);background:#fff;color:var(--green-ink);font-weight:800;font-size:.84rem;padding:10px}
+.pickbtn.picked{background:var(--green);border-style:solid;color:#fff}
+/* 個別比較 */
+.row{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:11px 13px;margin-top:8px}
+.rw{font-family:Georgia,serif;font-weight:800;font-size:1.02rem}
+.rw small{font-family:var(--ui);font-weight:700;font-size:.72rem;color:var(--muted);margin-left:8px}
+.rb{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:7px}
+.rb button{border:1.5px solid var(--border);background:#fff;font-size:.76rem;font-weight:700;padding:8px 4px}
+.rb button.on{border-color:var(--accent);background:var(--accent);color:#fff}
+#pickout{margin-top:16px;background:#fff;border:1px dashed var(--accent);border-radius:12px;padding:13px 15px;font-size:.85rem;display:none}
+#pickout b{color:var(--accent)}
+</style></head>
+<body>
+<div class="wrap">
+  <h1>🎙 声を1つ決める</h1>
+  <div class="sub">語ごとに良い声が違ったので、<b>アプリ全体で使う声を1つ</b>選びたいです。<br>単語だけでなく<b>例文</b>（サルサ・チーズで読み上げる）も含めて聞いてください。</div>
+
+  <div class="note">
+    合成方式は <b>すべてテキスト入力</b>（音素入力は不採用）。<br>
+    <b>live</b> だけは「I live in Tokyo.」を合成して <b>live の区間を強制アライメントで切り出し</b>ています（単語単体だと「ライヴ」になるため）。
+  </div>
+
+  <h2>この声で全部聞く</h2>
+  <div id="voices"></div>
+
+  <div id="pickout"></div>
+
+  <h2>語ごとに聞き比べ</h2>
+  <div id="rows"></div>
+</div>
+<script>
+const VOICES=[
+  {id:'lessac', nm:'lessac', meta:'現行・男性寄り', score:'語頭 s 平均 99（最下位）'},
+  {id:'amy',    nm:'amy',    meta:'女性', score:'語頭 s 平均 309（最良）'},
+  {id:'ryan',   nm:'ryan',   meta:'男性', score:'語頭 s 平均 160'},
+  {id:'jenny',  nm:'jenny',  meta:'女性', score:'語頭 s 平均 264'},
+];
+const WORDS=['student','school','sport','stop','sister','study','speak'];
+const SENTS=[
+  {id:'s1', text:'She is a good student at school.'},
+  {id:'s2', text:'My sister and I speak about sports every day.'},
+  {id:'live', text:'I live in Tokyo.'},
+];
+let cur=null, seq=null;
+function stop(){ if(cur){cur.pause();cur=null;} if(seq){clearTimeout(seq);seq=null;}
+  document.querySelectorAll('.big.playing').forEach(b=>{b.classList.remove('playing');b.textContent=b.dataset.label;});
+  document.querySelectorAll('.rb button.on').forEach(b=>b.classList.remove('on')); }
+function playOne(src,onEnd){ const a=new Audio(src); cur=a; a.onended=()=>{cur=null;onEnd&&onEnd();};
+  a.onerror=()=>{cur=null;onEnd&&onEnd();}; a.play().catch(()=>{cur=null;onEnd&&onEnd();}); }
+
+function playAll(v, btn, nowEl){
+  stop();
+  btn.classList.add('playing'); btn.textContent='■ 停止';
+  // 単語7語 → live(切り出し) → 例文3つ
+  const items=[
+    ...WORDS.map(w=>({label:w, src:`voice_check/${w}__${v}__text.mp3`})),
+    {label:'live（文から切り出し）', src:`voice_check/live__${v}__carrier.mp3`},
+    ...SENTS.map(s=>({label:s.text, src:`voice_check/sent_${s.id}__${v}.mp3`})),
+  ];
+  let i=0;
+  const next=()=>{
+    if(i>=items.length){ btn.classList.remove('playing'); btn.textContent=btn.dataset.label; nowEl.innerHTML=''; return; }
+    const it=items[i++];
+    nowEl.innerHTML='▶ <b>'+it.label+'</b>';
+    playOne(it.src, ()=>{ seq=setTimeout(next, 380); });
+  };
+  next();
+}
+const picks={};
+function render(){
+  const box=document.getElementById('voices');
+  VOICES.forEach(v=>{
+    const c=document.createElement('div'); c.className='vcard';
+    c.innerHTML=`<div class="vh"><span class="nm">${v.nm}</span><span class="meta">${v.meta}</span><span class="score">${v.score}</span></div>`;
+    const bs=document.createElement('div'); bs.className='vbtns';
+    const big=document.createElement('button'); big.className='big'; big.textContent='▶ この声で全部聞く（7語＋live＋例文3）';
+    big.dataset.label=big.textContent;
+    const now=document.createElement('div'); now.className='now';
+    big.onclick=()=>{ if(big.classList.contains('playing')){ stop(); now.innerHTML=''; } else playAll(v.id,big,now); };
+    const sOnly=document.createElement('button'); sOnly.className='ghost'; sOnly.textContent='例文だけ';
+    sOnly.onclick=()=>{ stop(); let i=0; const list=SENTS.map(s=>({label:s.text,src:`voice_check/sent_${s.id}__${v.id}.mp3`}));
+      const nx=()=>{ if(i>=list.length){now.innerHTML='';return;} const it=list[i++]; now.innerHTML='▶ <b>'+it.label+'</b>';
+        playOne(it.src,()=>{seq=setTimeout(nx,380);}); }; nx(); };
+    bs.append(big,sOnly); c.append(bs,now);
+    const pk=document.createElement('button'); pk.className='pickbtn'; pk.textContent='✓ この声にする';
+    pk.onclick=()=>{ document.querySelectorAll('.pickbtn').forEach(b=>{b.classList.remove('picked');b.textContent='✓ この声にする';});
+      document.querySelectorAll('.vcard').forEach(x=>x.classList.remove('on'));
+      pk.classList.add('picked'); pk.textContent='✓ '+v.nm+' に決定'; c.classList.add('on');
+      picks.voice=v.nm; out(); };
+    c.appendChild(pk);
+    box.appendChild(c);
+  });
+  const rows=document.getElementById('rows');
+  WORDS.forEach(w=>{
+    const r=document.createElement('div'); r.className='row';
+    r.innerHTML=`<div class="rw">${w}</div>`;
+    const g=document.createElement('div'); g.className='rb';
+    VOICES.forEach(v=>{ const b=document.createElement('button'); b.textContent=v.nm;
+      b.onclick=()=>{ stop(); b.classList.add('on'); playOne(`voice_check/${w}__${v.id}__text.mp3`, ()=>b.classList.remove('on')); };
+      g.appendChild(b); });
+    r.appendChild(g); rows.appendChild(r);
+  });
+  // live 専用行（切り出し）
+  const r=document.createElement('div'); r.className='row';
+  r.innerHTML=`<div class="rw">live <small>「I live in Tokyo.」から切り出し＝リヴ</small></div>`;
+  const g=document.createElement('div'); g.className='rb';
+  VOICES.forEach(v=>{ const b=document.createElement('button'); b.textContent=v.nm;
+    b.onclick=()=>{ stop(); b.classList.add('on'); playOne(`voice_check/live__${v.id}__carrier.mp3`, ()=>b.classList.remove('on')); };
+    g.appendChild(b); });
+  r.appendChild(g); rows.appendChild(r);
+}
+function out(){ const o=document.getElementById('pickout'); if(!picks.voice){o.style.display='none';return;}
+  o.style.display='block';
+  o.innerHTML=`選んだ声: <b>${picks.voice}</b><br>この声で全語（タコスパーティー2700本・WordTacos 7859本）を作り直します。この名前を伝えてください。`; }
+render();
+</script>
+</body></html>

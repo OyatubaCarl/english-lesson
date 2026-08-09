@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WordTacos 進捗ビューア</title>
+<style>
+:root {
+  --bg: #FFF8EE;
+  --paper: #FFFDF7;
+  --ink: #2A1F14;
+  --sub: #6B5A47;
+  --accent: #C73E1D;
+  --accent-soft: #F4A26A;
+  --green: #4A7C59;
+  --green-soft: #EAF4EC;
+  --yellow: #E8B647;
+  --red: #D2342B;
+  --border: #E6D5BC;
+  --shadow: 0 2px 8px rgba(74, 50, 30, 0.08);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Hiragino Sans", "Hiragino Maru Gothic ProN", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.7;
+  padding: 16px;
+}
+header { max-width: 960px; margin: 0 auto 16px; }
+h1 { font-size: 1.6rem; font-weight: 800; color: var(--accent); }
+.subtitle { color: var(--sub); font-size: 0.85rem; margin-top: 4px; }
+.controls {
+  max-width: 960px; margin: 0 auto 16px;
+  background: var(--paper); border: 1px solid var(--border);
+  border-radius: 12px; padding: 12px; box-shadow: var(--shadow);
+  display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
+}
+.controls > * { font-size: 0.9rem; }
+.controls label { color: var(--sub); }
+.controls select, .controls input {
+  font: inherit; padding: 6px 10px;
+  border: 1px solid var(--border); border-radius: 8px;
+  background: white;
+}
+.stats {
+  margin-left: auto;
+  color: var(--sub); font-size: 0.85rem;
+}
+.stats b { color: var(--ink); font-size: 1rem; }
+
+.quiz-grid {
+  max-width: 960px; margin: 0 auto;
+  display: grid;
+  gap: 12px;
+}
+.quiz {
+  background: var(--paper); border: 1px solid var(--border);
+  border-radius: 12px; padding: 16px; box-shadow: var(--shadow);
+}
+.quiz-head {
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  font-size: 0.78rem; color: var(--sub); margin-bottom: 8px;
+}
+.qid { font-family: monospace; background: var(--bg); padding: 2px 6px; border-radius: 4px; }
+.word { color: var(--accent); font-weight: 700; font-size: 1rem; }
+.pos { background: var(--green-soft); color: var(--green); padding: 2px 6px; border-radius: 4px; font-weight: 700; }
+.meaning { color: var(--sub); font-style: italic; }
+
+.body {
+  font-size: 1.05rem; line-height: 2;
+  margin: 8px 0 10px;
+  padding: 8px 12px;
+  background: white; border-radius: 8px;
+  border-left: 3px solid var(--accent-soft);
+}
+.body .embed {
+  display: inline-block;
+  background: var(--accent); color: white;
+  padding: 1px 8px; border-radius: 6px;
+  font-weight: 700; font-family: monospace;
+  margin: 0 2px;
+}
+ruby rt { font-size: 0.55em; color: var(--sub); }
+/* ルビ非表示モード(デフォルト) */
+body:not(.show-ruby) ruby rt { display: none; }
+body:not(.show-ruby) ruby { ruby-position: under; }
+
+.choices {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0;
+}
+.choice {
+  padding: 8px 12px; border-radius: 8px;
+  border: 1px solid var(--border);
+  background: white;
+  font-size: 0.95rem;
+}
+.choice.correct {
+  background: var(--green-soft); border-color: var(--green); color: var(--green); font-weight: 700;
+}
+.choice.correct::before { content: "✓ "; }
+
+.explanation {
+  font-size: 0.85rem; color: var(--sub);
+  margin-top: 6px; padding-top: 6px;
+  border-top: 1px dashed var(--border);
+}
+
+.audio-row { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+.audio-btn {
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 8px; padding: 4px 10px; font-size: 0.82rem;
+  cursor: pointer; color: var(--ink);
+}
+.audio-btn:hover { background: var(--accent); color: white; }
+.audio-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.audio-btn.primary { background: var(--accent); color: white; font-weight: 700; }
+.audio-btn.primary:hover { background: #a72f17; }
+.audio-btn.debug { font-size: 0.72rem; opacity: 0.7; }
+
+/* 修正ボタン群 */
+.fix-row {
+  margin-top: 8px; padding-top: 8px;
+  border-top: 1px dashed var(--border);
+  display: flex; gap: 6px; flex-wrap: wrap;
+}
+.fix-btn {
+  background: var(--green-soft); border: 1px solid var(--green);
+  border-radius: 8px; padding: 4px 10px; font-size: 0.82rem;
+  cursor: pointer; color: var(--green); font-weight: 600;
+}
+.fix-btn:hover { background: var(--green); color: white; }
+.fix-btn.danger { background: #FCE9E5; border-color: var(--accent); color: var(--accent); }
+.fix-btn.danger:hover { background: var(--accent); color: white; }
+.fix-btn.primary { background: var(--ink); border-color: var(--ink); color: white; }
+.fix-btn.primary:hover { background: #4a3a25; }
+
+/* バックグラウンド処理キュー (上部固定) */
+.queue-bar {
+  position: fixed; top: 0; right: 0; left: 0; z-index: 50;
+  background: rgba(255, 248, 238, 0.95); backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--border);
+  padding: 6px 12px;
+  display: none; gap: 6px; flex-wrap: wrap;
+  max-height: 30vh; overflow-y: auto;
+}
+.queue-bar.active { display: flex; }
+.queue-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 10px; border-radius: 999px;
+  font-size: 0.78rem;
+  background: var(--paper); border: 1px solid var(--border);
+  cursor: default;
+}
+.queue-chip.running { background: #FFF4E1; border-color: var(--yellow); color: #8A6B14; }
+.queue-chip.done { background: var(--green-soft); border-color: var(--green); color: var(--green); cursor: pointer; animation: pulse 1.2s ease-in-out 3; }
+.queue-chip.done:hover { background: var(--green); color: white; }
+.queue-chip.error { background: #fce4e0; border-color: var(--red); color: var(--red); cursor: pointer; }
+.queue-chip .close { cursor: pointer; opacity: 0.6; margin-left: 4px; }
+.queue-chip .close:hover { opacity: 1; }
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.04); box-shadow: 0 0 0 4px rgba(74,124,89,0.15); }
+}
+body.has-queue header { margin-top: 50px; }
+
+/* モーダル */
+.modal-bg {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.4); z-index: 100;
+  justify-content: center; align-items: center; padding: 16px;
+}
+.modal-bg.active { display: flex; }
+.modal {
+  background: var(--paper); border-radius: 14px;
+  padding: 20px; max-width: 720px; width: 100%; max-height: 90vh;
+  overflow-y: auto; box-shadow: 0 12px 48px rgba(0,0,0,0.2);
+}
+.modal h2 { font-size: 1.1rem; margin-bottom: 12px; color: var(--accent); }
+.modal .label { color: var(--sub); font-size: 0.82rem; margin-top: 12px; margin-bottom: 4px; }
+.modal .field {
+  background: white; border: 1px solid var(--border);
+  border-radius: 8px; padding: 10px; font-size: 0.95rem;
+  width: 100%; font-family: inherit; line-height: 1.7;
+  resize: vertical;
+}
+.modal .field.old { background: #fff4f0; }
+.modal .field.new { background: #f0faf0; }
+.modal .reason {
+  background: var(--bg); padding: 8px 12px; border-radius: 8px;
+  font-size: 0.85rem; color: var(--sub); margin-top: 8px;
+}
+.modal .actions {
+  display: flex; gap: 8px; margin-top: 16px; justify-content: flex-end;
+}
+.modal .actions button {
+  font: inherit; padding: 8px 16px;
+  border-radius: 8px; cursor: pointer; border: none;
+}
+.modal .actions button.cancel { background: var(--border); }
+.modal .actions button.save { background: var(--accent); color: white; font-weight: 700; }
+.modal .actions button:disabled { opacity: 0.4; cursor: not-allowed; }
+.modal .loading { padding: 24px; text-align: center; color: var(--sub); }
+.modal .error { padding: 12px; background: #fce4e0; color: var(--red); border-radius: 8px; }
+.modal pre.raw {
+  background: #f5efe3; padding: 8px; border-radius: 6px;
+  font-size: 0.75rem; max-height: 120px; overflow: auto;
+  white-space: pre-wrap; margin-top: 8px;
+}
+
+.loading { text-align: center; padding: 40px; color: var(--sub); }
+.error { color: var(--red); padding: 16px; text-align: center; }
+
+.pagination {
+  max-width: 960px; margin: 16px auto; text-align: center;
+  display: flex; justify-content: center; gap: 8px; align-items: center;
+}
+.pagination button {
+  background: var(--paper); border: 1px solid var(--border);
+  padding: 6px 14px; border-radius: 8px; cursor: pointer; font: inherit;
+}
+.pagination button:disabled { opacity: 0.4; cursor: not-allowed; }
+.pagination .page-info { color: var(--sub); font-size: 0.85rem; padding: 0 8px; }
+
+@media (max-width: 600px) {
+  .choices { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="queue-bar" id="queue-bar"></div>
+
+<header>
+  <h1>WordTacos 進捗ビューア</h1>
+  <div class="subtitle">stage5 / stage6 の現在のクイズと音声をブラウズする</div>
+</header>
+
+<div class="controls">
+  <label>ステージ:
+    <select id="stage-sel">
+      <option value="stage5">stage5 (B1)</option>
+      <option value="stage6">stage6 (B2)</option>
+    </select>
+  </label>
+  <label>検索 (word):
+    <input id="search" type="text" placeholder="例: airplane" style="width: 160px;">
+  </label>
+  <label>ジャンプ (ID):
+    <input id="jump" type="number" min="1" placeholder="例: 100" style="width: 90px;">
+    <button id="jump-btn" style="font: inherit; padding: 6px 10px; border: 1px solid var(--border); border-radius: 8px; background: white; cursor: pointer;">→</button>
+  </label>
+  <label style="display:flex;align-items:center;gap:6px">
+    <input type="checkbox" id="ruby-toggle"> ルビを表示
+  </label>
+  <div class="stats" id="stats"></div>
+</div>
+
+<div class="pagination" id="pagi-top"></div>
+<div id="content" class="quiz-grid">
+  <div class="loading">読み込み中...</div>
+</div>
+<div class="pagination" id="pagi-bottom"></div>
+
+<div class="modal-bg" id="fix-modal-bg">
+  <div class="modal">
+    <h2 id="fix-modal-title">AI修正提案</h2>
+    <div id="fix-modal-body">
+      <div class="loading">読み込み中...</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const PAGE_SIZE = 30;
+let quizzes = [];
+let filtered = [];
+let curPage = 0;
+let curStage = 'stage5';
+let lastEditedQid = null; // 保存後にこのidへスクロール復帰
+
+const stageSel = document.getElementById('stage-sel');
+const searchInp = document.getElementById('search');
+const jumpInp = document.getElementById('jump');
+const jumpBtn = document.getElementById('jump-btn');
+
+async function loadStage(stage) {
+  curStage = stage;
+  document.getElementById('content').innerHTML = '<div class="loading">読み込み中...</div>';
+  try {
+    const r = await fetch(`${stage}_quizzes_clean.json?t=` + Date.now());
+    const d = await r.json();
+    quizzes = d.quizzes;
+    applyFilter();
+  } catch (e) {
+    document.getElementById('content').innerHTML = `<div class="error">読み込み失敗: ${e}</div>`;
+  }
+}
+
+function applyFilter() {
+  const q = searchInp.value.trim().toLowerCase();
+  filtered = q
+    ? quizzes.filter(x => x.word.toLowerCase().includes(q))
+    : quizzes;
+  // 保存復帰: lastEditedQid がフィルタ結果にあれば そのページに合わせる
+  if (lastEditedQid) {
+    const idx = filtered.findIndex(x => x.id === lastEditedQid);
+    if (idx >= 0) {
+      curPage = Math.floor(idx / PAGE_SIZE);
+    } else {
+      curPage = 0;
+    }
+  } else {
+    curPage = 0;
+  }
+  render();
+  if (lastEditedQid) {
+    const target = lastEditedQid;
+    lastEditedQid = null;
+    setTimeout(() => {
+      const el = document.querySelector(`.quiz[data-qid="${target}"]`);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // 一瞬ハイライト
+        el.style.outline = '3px solid var(--green)';
+        setTimeout(() => { el.style.outline = ''; el.style.transition = 'outline 0.5s'; }, 1500);
+      }
+    }, 80);
+  }
+}
+
+function rubyHTML(text) {
+  if (!text) return '';
+  // 青空文庫ルビ → HTML <ruby>
+  // パターン: ｜base《reading》 または 漢字《reading》
+  let s = text;
+  // <word> embed を保護
+  s = s.replace(/<([^>]+)>/g, (m, w) => `<span class="embed">${w}</span>`);
+  // ｜任意《yomi》 → ruby
+  s = s.replace(/｜([^《》｜]+)《([^》]+)》/g, '<ruby>$1<rt>$2</rt></ruby>');
+  // 漢字《yomi》 → ruby
+  s = s.replace(/([一-龥々〆ヶ]+)《([^》]+)》/g, '<ruby>$1<rt>$2</rt></ruby>');
+  return s;
+}
+
+function render() {
+  const total = filtered.length;
+  const start = curPage * PAGE_SIZE;
+  const end = Math.min(start + PAGE_SIZE, total);
+  const pageItems = filtered.slice(start, end);
+  document.getElementById('stats').innerHTML = `合計 <b>${total}</b> 問 / ${start+1}〜${end} 表示中`;
+
+  const grid = document.getElementById('content');
+  if (pageItems.length === 0) {
+    grid.innerHTML = '<div class="error">該当なし</div>';
+  } else {
+    grid.innerHTML = pageItems.map(q => {
+      const ci = q.correct_index;
+      const choicesHTML = q.choices.map((c, i) =>
+        `<div class="choice ${i === ci ? 'correct' : ''}">${rubyHTML(q.choices_ruby ? q.choices_ruby[i] : c)}</div>`
+      ).join('');
+      // body_kana を <word> で split: 日本語segments と 間に挟む英単語
+      const kana = q.body_kana || '';
+      const parts = []; // {type: 'jp', idx} or {type: 'en', word}
+      let jpIdx = 0;
+      let cursor = 0;
+      const re = /<([^>]+)>/g;
+      let mm;
+      while ((mm = re.exec(kana)) !== null) {
+        const before = kana.slice(cursor, mm.index).trim();
+        parts.push({type: 'jp', idx: jpIdx++, hasContent: before.length > 0});
+        parts.push({type: 'en', word: mm[1]});
+        cursor = mm.index + mm[0].length;
+      }
+      const tail = kana.slice(cursor).trim();
+      parts.push({type: 'jp', idx: jpIdx++, hasContent: tail.length > 0});
+
+      const audioButtons = [
+        `<button class="audio-btn primary" onclick="playEnOnly('${curStage}', '${q.word.replace(/'/g, "\\'")}')">🔊 ${q.word} 発音</button>`,
+      ];
+      // 修正提案ボタン群
+      const qidEsc = q.id;
+      const fixButtons = [
+        `<button class="fix-btn primary" onclick="openEdit('${qidEsc}')">✍️ 直接編集</button>`,
+        `<button class="fix-btn" onclick="openFix('${qidEsc}', 'ruby')">📝 ルビ直す</button>`,
+        `<button class="fix-btn danger" onclick="openFix('${qidEsc}', 'body')">✏️ 文章書き直し</button>`,
+        `<button class="fix-btn" onclick="openFix('${qidEsc}', 'choices')">🎲 choices直す</button>`,
+        `<button class="fix-btn" onclick="openFix('${qidEsc}', 'explanation')">💡 解説直す</button>`,
+        `<button class="fix-btn" onclick="openFix('${qidEsc}', 'kana')">🗣️ 読み上げ調整</button>`,
+        `<button class="fix-btn" onclick="openFix('${qidEsc}', 'other')">⋯ その他指示</button>`,
+      ];
+
+      return `<div class="quiz" data-qid="${q.id}">
+        <div class="quiz-head">
+          <span class="qid">${q.id}</span>
+          <span class="word">${q.word}</span>
+          <span class="pos">${q.pos}</span>
+          <span class="meaning">→ ${q.meaning_jp}</span>
+        </div>
+        <div class="body">${rubyHTML(q.body_ruby || q.body)}</div>
+        <div class="choices">${choicesHTML}</div>
+        ${q.explanation ? `<div class="explanation">${rubyHTML(q.explanation_ruby || q.explanation)}</div>` : ''}
+        <div class="audio-row">${audioButtons.join('')}</div>
+        <div class="fix-row">${fixButtons.join('')}</div>
+      </div>`;
+    }).join('');
+  }
+  renderPagination(total);
+}
+
+function renderPagination(total) {
+  const pages = Math.ceil(total / PAGE_SIZE);
+  const html = pages <= 1 ? '' : `
+    <button onclick="setPage(0)" ${curPage === 0 ? 'disabled' : ''}>«</button>
+    <button onclick="setPage(${curPage - 1})" ${curPage === 0 ? 'disabled' : ''}>‹ 前</button>
+    <span class="page-info">${curPage + 1} / ${pages}</span>
+    <button onclick="setPage(${curPage + 1})" ${curPage >= pages - 1 ? 'disabled' : ''}>次 ›</button>
+    <button onclick="setPage(${pages - 1})" ${curPage >= pages - 1 ? 'disabled' : ''}>»</button>
+  `;
+  document.getElementById('pagi-top').innerHTML = html;
+  document.getElementById('pagi-bottom').innerHTML = html;
+}
+
+function setPage(p) {
+  curPage = p;
+  render();
+  window.scrollTo(0, 0);
+}
+
+function playSeg(stage, qid, idx) {
+  const audio = new Audio(`app_audio/${stage}/${qid}_seg${idx}.m4a`);
+  audio.play().catch(e => alert(`再生エラー: ${e.message}`));
+}
+
+function playEnOnly(stage, word) {
+  const url = `app_audio/${stage}_en/${encodeURIComponent(word)}.mp3`;
+  const audio = new Audio(url);
+  audio.play().catch(e => alert(`英語音声なし: ${word}\n${e.message}`));
+}
+
+let curAudio = null;
+function stopAll() { if (curAudio) { try { curAudio.pause(); } catch(e){} curAudio = null; } }
+
+async function playOne(src) {
+  return new Promise((res) => {
+    const a = new Audio(src);
+    curAudio = a;
+    a.onended = () => res(true);
+    a.onerror = () => res(false);
+    a.play().catch(() => res(false));
+  });
+}
+
+async function playMix(stage, qid, parts) {
+  stopAll();
+  for (const p of parts) {
+    if (p.type === 'jp') {
+      if (!p.hasContent) continue; // 空のセグメントはスキップ
+      const ok = await playOne(`app_audio/${stage}/${qid}_seg${p.idx}.m4a`);
+      if (!ok) console.warn('jp seg failed', qid, p.idx);
+    } else if (p.type === 'en') {
+      const ok = await playOne(`app_audio/${stage}_en/${encodeURIComponent(p.word)}.mp3`);
+      if (!ok) console.warn('en failed', p.word);
+    }
+  }
+  curAudio = null;
+}
+
+stageSel.addEventListener('change', e => loadStage(e.target.value));
+searchInp.addEventListener('input', applyFilter);
+
+// ルビ表示トグル (localStorage で保存)
+const rubyToggle = document.getElementById('ruby-toggle');
+const savedRuby = localStorage.getItem('wt_show_ruby') === '1';
+rubyToggle.checked = savedRuby;
+document.body.classList.toggle('show-ruby', savedRuby);
+rubyToggle.addEventListener('change', e => {
+  document.body.classList.toggle('show-ruby', e.target.checked);
+  localStorage.setItem('wt_show_ruby', e.target.checked ? '1' : '0');
+});
+jumpBtn.addEventListener('click', () => {
+  const n = parseInt(jumpInp.value);
+  if (n > 0 && n <= filtered.length) {
+    setPage(Math.floor((n - 1) / PAGE_SIZE));
+  }
+});
+
+// ===== AI修正提案 =====
+const ISSUE_LABEL = {
+  ruby: '📝 ルビを直す',
+  body: '✏️ 文章を書き直す',
+  choices: '🎲 choicesを直す',
+  explanation: '💡 解説を直す',
+  kana: '🗣️ 読み上げkanaを調整',
+  other: '⋯ その他の指示',
+};
+
+let currentFix = null; // { qid, issue_type, suggestion }
+
+// ===== バックグラウンド処理キュー =====
+// pendingFixes: Map(taskId → { qid, issue_type, user_note, status, suggestion?, raw?, error? })
+const pendingFixes = new Map();
+let nextTaskId = 1;
+
+function refreshQueueBar() {
+  const bar = document.getElementById('queue-bar');
+  if (!bar) return;
+  if (pendingFixes.size === 0) {
+    bar.classList.remove('active');
+    document.body.classList.remove('has-queue');
+    return;
+  }
+  bar.classList.add('active');
+  document.body.classList.add('has-queue');
+  bar.innerHTML = '';
+  for (const [tid, t] of pendingFixes) {
+    const chip = document.createElement('div');
+    chip.className = 'queue-chip ' + t.status;
+    const label = (ISSUE_LABEL[t.issue_type] || t.issue_type).replace(/^.+?\s+/, '');
+    if (t.status === 'running') {
+      chip.innerHTML = `⏳ ${t.qid} / ${label}`;
+    } else if (t.status === 'done') {
+      chip.innerHTML = `✓ ${t.qid} / ${label} ▸ 結果を開く<span class="close" onclick="event.stopPropagation();removeTask(${tid})">×</span>`;
+      chip.addEventListener('click', () => openQueueResult(tid));
+    } else if (t.status === 'error') {
+      chip.innerHTML = `✗ ${t.qid} / ${label} ▸ ${(t.error||'失敗').slice(0,40)}<span class="close" onclick="event.stopPropagation();removeTask(${tid})">×</span>`;
+      chip.addEventListener('click', () => openQueueResult(tid));
+    }
+    bar.appendChild(chip);
+  }
+}
+
+function removeTask(tid) {
+  pendingFixes.delete(tid);
+  refreshQueueBar();
+}
+
+async function enqueueFix(qid, issue_type, user_note) {
+  const tid = nextTaskId++;
+  pendingFixes.set(tid, { qid, issue_type, user_note, status: 'running' });
+  refreshQueueBar();
+  try {
+    const r = await fetch('/api/fix', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: qid, issue_type, user_note }),
+    });
+    const data = await r.json();
+    const t = pendingFixes.get(tid);
+    if (!t) return; // ユーザーが除去済み
+    if (!data.ok) {
+      t.status = 'error';
+      t.error = data.error || '不明';
+      t.raw = data.raw;
+    } else {
+      t.status = 'done';
+      t.suggestion = data.suggestion;
+      t.raw = data.raw;
+    }
+    refreshQueueBar();
+  } catch (e) {
+    const t = pendingFixes.get(tid);
+    if (t) { t.status = 'error'; t.error = e.message; refreshQueueBar(); }
+  }
+}
+
+function openQueueResult(tid) {
+  const t = pendingFixes.get(tid);
+  if (!t) return;
+  currentFix = { qid: t.qid, issue_type: t.issue_type, suggestion: t.suggestion || null, taskId: tid };
+  document.getElementById('fix-modal-title').innerText = `${ISSUE_LABEL[t.issue_type]||t.issue_type} ─ ${t.qid}`;
+  document.getElementById('fix-modal-bg').classList.add('active');
+  document.getElementById('fix-modal-body').innerHTML = '<div id="fix-result"></div>';
+  if (t.status === 'error') {
+    document.getElementById('fix-result').innerHTML = `<div class="error">${escapeHtml(t.error)}</div>${t.raw?`<pre class="raw">${escapeHtml(t.raw)}</pre>`:''}`;
+  } else {
+    renderSuggestion(t.suggestion, t.raw);
+  }
+}
+
+function openFix(qid, issue_type) {
+  currentFix = { qid, issue_type, suggestion: null };
+  document.getElementById('fix-modal-title').innerText = `${ISSUE_LABEL[issue_type]||issue_type} ─ ${qid}`;
+  document.getElementById('fix-modal-bg').classList.add('active');
+
+  const userNoteHTML = `
+    <div class="reason">「バックグラウンドで投げる」を押すと処理は裏で進み、上部チップに結果が出ます。モーダルは閉じて他のクイズも操作できます。</div>
+    <div class="label">追加指示(任意)</div>
+    <textarea class="field" id="user-note" rows="2" placeholder="例: 「降《お》り」が雨文脈なので「降《ふ》り」にしてください"></textarea>
+    <div class="actions" style="justify-content:flex-start;flex-wrap:wrap;gap:6px">
+      <button class="save" id="ask-bg-btn">🚀 バックグラウンドで投げる</button>
+      <button class="save" id="ask-sync-btn" style="background:var(--green)">⏳ ここで結果を待つ</button>
+      <button class="cancel" onclick="closeFix()">キャンセル</button>
+    </div>
+    <div id="fix-result"></div>
+  `;
+  document.getElementById('fix-modal-body').innerHTML = userNoteHTML;
+  document.getElementById('ask-bg-btn').addEventListener('click', askCodexBg);
+  document.getElementById('ask-sync-btn').addEventListener('click', askCodex);
+}
+
+function askCodexBg() {
+  if (!currentFix) return;
+  const note = (document.getElementById('user-note')?.value || '').trim();
+  enqueueFix(currentFix.qid, currentFix.issue_type, note);
+  closeFix();
+}
+
+function closeFix() {
+  document.getElementById('fix-modal-bg').classList.remove('active');
+  currentFix = null;
+}
+
+// ===== 直接編集 (AI不使用) =====
+function openEdit(qid) {
+  const q = quizzes.find(x => x.id === qid);
+  if (!q) { alert('quiz not found: ' + qid); return; }
+  document.getElementById('fix-modal-title').innerText = `✍️ 直接編集 ─ ${qid} ${q.word}`;
+  document.getElementById('fix-modal-bg').classList.add('active');
+  const choicesText = JSON.stringify(q.choices, null, 2);
+  document.getElementById('fix-modal-body').innerHTML = `
+    <div class="reason">フィールドを直接編集して保存。bodyを変えるとルビ/kanaは自動再生成されます。</div>
+
+    <div class="label">word (読み取り専用)</div>
+    <input class="field" type="text" value="${escapeHtml(q.word)}" readonly>
+
+    <div class="label">pos (品詞)</div>
+    <input class="field" id="edit-pos" type="text" value="${escapeHtml(q.pos)}">
+
+    <div class="label">meaning_jp</div>
+    <input class="field" id="edit-meaning" type="text" value="${escapeHtml(q.meaning_jp)}">
+
+    <div class="label">body (日本語文 / 変更時はルビ自動再生成)</div>
+    <textarea class="field" id="edit-body" rows="3">${escapeHtml(q.body)}</textarea>
+
+    <div class="label">body_ruby (青空ルビ / body変更しないならここを直接書き換え可能)</div>
+    <textarea class="field" id="edit-body-ruby" rows="3">${escapeHtml(q.body_ruby || '')}</textarea>
+
+    <div class="label">choices (JSON配列、4要素)</div>
+    <textarea class="field" id="edit-choices" rows="4">${escapeHtml(choicesText)}</textarea>
+
+    <div class="label">choices_ruby (青空ルビ付き、JSON配列4要素)</div>
+    <textarea class="field" id="edit-choices-ruby" rows="4">${escapeHtml(JSON.stringify(q.choices_ruby || q.choices, null, 2))}</textarea>
+
+    <div class="label">correct_index (0-3)</div>
+    <input class="field" id="edit-ci" type="number" min="0" max="3" value="${q.correct_index}">
+
+    <div class="label">explanation</div>
+    <textarea class="field" id="edit-explanation" rows="2">${escapeHtml(q.explanation || '')}</textarea>
+
+    <div class="label">explanation_ruby (青空ルビ付き)</div>
+    <textarea class="field" id="edit-explanation-ruby" rows="2">${escapeHtml(q.explanation_ruby || q.explanation || '')}</textarea>
+
+    <div class="actions">
+      <button class="cancel" onclick="closeFix()">キャンセル</button>
+      <button class="save" onclick="saveEdit('${qid}')">💾 保存</button>
+    </div>
+  `;
+}
+
+async function saveEdit(qid) {
+  const q = quizzes.find(x => x.id === qid);
+  if (!q) return;
+  const updates = {};
+  const newPos = document.getElementById('edit-pos').value.trim();
+  const newMeaning = document.getElementById('edit-meaning').value.trim();
+  const newBody = document.getElementById('edit-body').value.trim();
+  const newRuby = document.getElementById('edit-body-ruby').value.trim();
+  const newChoicesRaw = document.getElementById('edit-choices').value;
+  const newChoicesRubyRaw = document.getElementById('edit-choices-ruby').value;
+  const newCi = parseInt(document.getElementById('edit-ci').value);
+  const newExp = document.getElementById('edit-explanation').value.trim();
+  const newExpRuby = document.getElementById('edit-explanation-ruby').value.trim();
+
+  if (newPos !== q.pos) updates.pos = newPos;
+  if (newMeaning !== q.meaning_jp) updates.meaning_jp = newMeaning;
+  if (newBody !== q.body) updates.body = newBody;
+  if (newRuby && newRuby !== (q.body_ruby || '')) updates.body_ruby = newRuby;
+  if (newExp !== (q.explanation || '')) updates.explanation = newExp;
+  if (newExpRuby && newExpRuby !== (q.explanation_ruby || '')) updates.explanation_ruby = newExpRuby;
+
+  let newChoices;
+  try { newChoices = JSON.parse(newChoicesRaw); } catch { alert('choicesはJSON配列(["a","b","c","d"])で入力してください'); return; }
+  if (!Array.isArray(newChoices) || newChoices.length !== 4) { alert('choicesは4要素配列'); return; }
+  if (JSON.stringify(newChoices) !== JSON.stringify(q.choices)) updates.choices = newChoices;
+
+  let newChoicesRuby;
+  try { newChoicesRuby = JSON.parse(newChoicesRubyRaw); } catch { alert('choices_rubyはJSON配列で入力してください'); return; }
+  if (!Array.isArray(newChoicesRuby) || newChoicesRuby.length !== 4) { alert('choices_rubyは4要素配列'); return; }
+  if (JSON.stringify(newChoicesRuby) !== JSON.stringify(q.choices_ruby || q.choices)) updates.choices_ruby = newChoicesRuby;
+
+  if (!Number.isNaN(newCi) && newCi !== q.correct_index) updates.correct_index = newCi;
+
+  if (Object.keys(updates).length === 0) { alert('変更がありません'); return; }
+
+  try {
+    const r = await fetch('/api/save', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: qid, updates }),
+    });
+    const data = await r.json();
+    if (!data.ok) { alert('保存失敗: ' + (data.error || '不明')); return; }
+    closeFix();
+    lastEditedQid = qid;
+    loadStage(curStage);
+  } catch (e) {
+    alert('保存エラー: ' + e.message);
+  }
+}
+
+async function askCodex() {
+  if (!currentFix) return;
+  const note = (document.getElementById('user-note')?.value || '').trim();
+  document.getElementById('ask-btn').disabled = true;
+  document.getElementById('fix-result').innerHTML = '<div class="loading">Codexに問い合わせ中…(最大90秒)</div>';
+  try {
+    const r = await fetch('/api/fix', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        id: currentFix.qid,
+        issue_type: currentFix.issue_type,
+        user_note: note,
+      }),
+    });
+    const data = await r.json();
+    if (!data.ok) {
+      document.getElementById('fix-result').innerHTML = `
+        <div class="error">${escapeHtml(data.error || '失敗')}</div>
+        ${data.raw ? `<pre class="raw">${escapeHtml(data.raw)}</pre>` : ''}
+      `;
+      document.getElementById('ask-btn').disabled = false;
+      return;
+    }
+    currentFix.suggestion = data.suggestion;
+    renderSuggestion(data.suggestion, data.raw);
+  } catch (e) {
+    document.getElementById('fix-result').innerHTML = `<div class="error">${escapeHtml(e.message)}</div>`;
+    document.getElementById('ask-btn').disabled = false;
+  }
+}
+
+function renderSuggestion(s, raw) {
+  const isArr = Array.isArray(s.new_value);
+  const newValStr = isArr ? JSON.stringify(s.new_value, null, 2) : (s.new_value ?? '');
+  const oldValStr = isArr ? JSON.stringify(s.old_value, null, 2) : (s.old_value ?? '');
+  document.getElementById('fix-result').innerHTML = `
+    <div class="reason">理由: ${escapeHtml(s.reason || '')} / 対象フィールド: <b>${escapeHtml(s.field)}</b></div>
+    <div class="label">現在の値</div>
+    <textarea class="field old" rows="3" id="old-val" readonly>${escapeHtml(oldValStr)}</textarea>
+    <div class="label">新しい値 (編集してから保存OK)</div>
+    <textarea class="field new" rows="3" id="new-val">${escapeHtml(newValStr)}</textarea>
+    <div class="actions">
+      <button class="cancel" onclick="closeFix()">キャンセル</button>
+      <button class="save" id="save-btn">💾 保存して反映</button>
+    </div>
+    <details style="margin-top:8px"><summary style="cursor:pointer;color:var(--sub);font-size:0.78rem">Codex生出力</summary><pre class="raw">${escapeHtml(raw || '')}</pre></details>
+  `;
+  document.getElementById('save-btn').addEventListener('click', saveFix);
+}
+
+async function saveFix() {
+  if (!currentFix || !currentFix.suggestion) return;
+  const field = currentFix.suggestion.field;
+  let v = document.getElementById('new-val').value;
+  // choices等は配列にパース
+  if (field === 'choices') {
+    try { v = JSON.parse(v); } catch { alert('choicesはJSON配列で入力してください'); return; }
+    if (!Array.isArray(v) || v.length !== 4) { alert('choicesは4要素配列'); return; }
+  }
+  document.getElementById('save-btn').disabled = true;
+  const qid = currentFix.qid;
+  const taskId = currentFix.taskId;
+  try {
+    const r = await fetch('/api/save', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        id: qid,
+        updates: { [field]: v },
+      }),
+    });
+    const data = await r.json();
+    if (!data.ok) {
+      alert('保存失敗: ' + (data.error || '不明'));
+      document.getElementById('save-btn').disabled = false;
+      return;
+    }
+    if (taskId) { pendingFixes.delete(taskId); refreshQueueBar(); }
+    closeFix();
+    lastEditedQid = qid;
+    loadStage(curStage);
+  } catch (e) {
+    alert('保存エラー: ' + e.message);
+    document.getElementById('save-btn').disabled = false;
+  }
+}
+
+function escapeHtml(s) {
+  return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+// モーダル背景クリックで閉じる
+document.getElementById('fix-modal-bg').addEventListener('click', e => {
+  if (e.target.id === 'fix-modal-bg') closeFix();
+});
+
+loadStage('stage5');
+</script>
+</body>
+</html>

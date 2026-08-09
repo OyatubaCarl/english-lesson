@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>v4-hard50 Shorts 分析 — 1000人 vs 200人を分けるもの</title>
+<style>
+:root{
+  --bg:#0f0e0c; --ink:#f5efe3; --muted:#a59c8a;
+  --line:#2a2620; --hot:#ff7a18; --cool:#3eb0f2; --warn:#e9b34b;
+  --serif:"Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:"Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.7}
+.wrap{max-width:980px;margin:0 auto;padding:64px 28px 96px}
+header{border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:48px}
+header .kicker{font-family:var(--sans);letter-spacing:.22em;font-size:11px;color:var(--hot);text-transform:uppercase;margin-bottom:14px}
+header h1{font-family:var(--serif);font-weight:600;font-size:clamp(28px,4.2vw,46px);letter-spacing:.02em;margin:0 0 12px;line-height:1.25}
+header .lede{color:var(--muted);font-size:15px;max-width:62ch}
+h2{font-family:var(--serif);font-weight:600;font-size:24px;margin:56px 0 16px;border-left:3px solid var(--hot);padding-left:14px}
+h3{font-family:var(--sans);font-size:16px;letter-spacing:.06em;margin:28px 0 10px;color:var(--cool)}
+p{margin:10px 0}
+.meta{color:var(--muted);font-size:13px}
+.metric-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0 0}
+.metric{border:1px solid var(--line);padding:18px;border-radius:10px;background:#16140f}
+.metric .label{color:var(--muted);font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+.metric .value{font-family:var(--serif);font-size:30px;margin-top:6px}
+.metric .delta{color:var(--hot);font-size:12px;margin-top:2px}
+table{width:100%;border-collapse:collapse;margin:14px 0 8px;font-size:13.5px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left}
+th{color:var(--muted);font-weight:500;font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:#181612}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+.hot{color:var(--hot);font-weight:600}
+.cool{color:var(--cool)}
+.warn{color:var(--warn)}
+.bar{display:inline-block;height:9px;background:var(--hot);border-radius:2px;vertical-align:middle;margin-right:6px;opacity:.9}
+.bar.cool{background:var(--cool)}
+.bar.warn{background:var(--warn)}
+.bar.mute{background:#4a4338}
+.note{background:#16140f;border-left:3px solid var(--cool);padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0;font-size:13.5px;color:#d8cfb9}
+.bad{border-left-color:var(--hot);background:#1c1411}
+.good{border-left-color:#4ec873}
+.row-best{background:linear-gradient(90deg,rgba(255,122,24,.10),transparent)}
+.row-bad{background:linear-gradient(90deg,rgba(233,179,75,.08),transparent)}
+ol li, ul li{margin:6px 0}
+.legend{font-size:12px;color:var(--muted);margin-top:4px}
+hr{border:0;border-top:1px solid var(--line);margin:48px 0}
+.tag{display:inline-block;padding:1px 8px;border:1px solid var(--line);border-radius:99px;font-size:11px;color:var(--muted);margin-right:6px}
+.tag.hot{color:var(--hot);border-color:#5a2a13}
+.tag.cool{color:var(--cool);border-color:#1a3a4e}
+.tag.warn{color:var(--warn);border-color:#5a4520}
+.callout{border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin:18px 0;background:#13110d}
+.callout h3{margin-top:0;color:var(--hot)}
+.compact td,.compact th{padding:6px 8px;font-size:13px}
+@media (max-width:640px){
+  .metric-row{grid-template-columns:1fr}
+  .wrap{padding:36px 18px 80px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">Teacher Tacos English / Shorts Analytics</div>
+  <h1>1000人 vs 200人を分けるもの<br>— v4-hard50 単語Shorts 17本の解剖</h1>
+  <p class="lede">2026-06-09 から 06-17 までに公開した v4-hard50 シリーズ 17本。公開 YouTube Data API で取得した <strong>視聴数 / 公開日時 / 動画尺 / タイトル</strong> に、サムネのタグライン ID と単語難易度のメタを結合して分析。<strong>2026-06-21 時点のスナップショット</strong>。</p>
+  <p class="meta">対象=privacy:public 17本 · 中央値視聴=248 · 最大1824 (ubiquitous) · 最小187 (pedantic) · ジニ的格差≈ <strong>10倍</strong></p>
+</header>
+
+<section>
+  <h2>結論 — 3軸で説明できる</h2>
+  <div class="metric-row">
+    <div class="metric">
+      <div class="label">A. 連投バースト</div>
+      <div class="value">×4.3</div>
+      <div class="delta">単発 504 → 7本連投 258 (mean views)</div>
+    </div>
+    <div class="metric">
+      <div class="label">B. 単語の馴染み度</div>
+      <div class="value">×2.9</div>
+      <div class="delta">familiar 746 → unfamiliar 258 (mean views)</div>
+    </div>
+    <div class="metric">
+      <div class="label">C. タグライン入りサムネ</div>
+      <div class="value">×2.7</div>
+      <div class="delta">無し 24.8 → 有り 66.7 (median views/day)</div>
+    </div>
+  </div>
+  <p class="note">1000人超え 3本 <span class="cool">(ubiquitous / inevitable / profound)</span> はいずれも「<strong>familiar語</strong>」。200人台に張り付く 9本 <span class="hot">(pedantic, palpable, ostentatious, opulent, obstinate, prudent, vivid, diligent, ostentatious)</span> の半数以上は「<strong>unfamiliar語 × 7本連投バッチ</strong>」。</p>
+</section>
+
+<section>
+  <h2>全 17 本 — 視聴数順</h2>
+  <table class="compact">
+    <thead>
+      <tr><th>#</th><th>単語</th><th class="num">views</th><th class="num">v/day</th><th>公開(JST)</th><th>burst</th><th>サムネ</th><th>難易度</th></tr>
+    </thead>
+    <tbody>
+      <tr class="row-best"><td>1</td><td><strong>ubiquitous</strong></td><td class="num hot">1,824</td><td class="num">152</td><td>06-09 09:10 Tue</td><td>4本連投</td><td>旧</td><td>(familiar)</td></tr>
+      <tr class="row-best"><td>2</td><td><strong>inevitable</strong></td><td class="num hot">1,275</td><td class="num">255</td><td>06-16 07:30 Tue</td><td>単発</td><td>新 T03/S02</td><td>英検準1</td></tr>
+      <tr class="row-best"><td>3</td><td><strong>profound</strong></td><td class="num hot">1,121</td><td class="num">93</td><td>06-09 09:11 Tue</td><td>4本連投</td><td>旧</td><td>(familiar)</td></tr>
+      <tr><td>4</td><td>resilient</td><td class="num">970</td><td class="num">81</td><td>06-09 09:10 Tue</td><td>4本連投</td><td>旧</td><td>(familiar)</td></tr>
+      <tr><td>5</td><td>tranquil</td><td class="num">534</td><td class="num">134</td><td>06-16 22:00 Tue</td><td>単発</td><td>新 T10/S01</td><td>英検準1</td></tr>
+      <tr><td>6</td><td>scrutinize</td><td class="num">528</td><td class="num">44</td><td>06-09 09:11 Tue</td><td>4本連投</td><td>旧</td><td>(familiar)</td></tr>
+      <tr class="row-bad"><td>7</td><td>perfunctory</td><td class="num">443</td><td class="num">44</td><td>06-10 22:36 Wed</td><td><strong>7本連投</strong></td><td>旧</td><td>unfamiliar</td></tr>
+      <tr><td>8</td><td>mundane</td><td class="num">400</td><td class="num">67</td><td>06-14 22:00 Sun</td><td>単発</td><td>新 T02/S01</td><td>英検準1</td></tr>
+      <tr><td>9</td><td>fragile</td><td class="num">359</td><td class="num">60</td><td>06-15 07:30 Mon</td><td>単発</td><td>新 T02/S02</td><td>TOEIC800</td></tr>
+      <tr><td>10</td><td>diligent</td><td class="num">249</td><td class="num">62</td><td>06-17 07:30 Wed</td><td>単発</td><td>新 T06/S02</td><td>英検準1</td></tr>
+      <tr class="row-bad"><td>11</td><td>obstinate</td><td class="num">248</td><td class="num">25</td><td>06-10 22:35 Wed</td><td><strong>7本連投</strong></td><td>旧</td><td>unfamiliar</td></tr>
+      <tr class="row-bad"><td>12</td><td>ostentatious</td><td class="num">248</td><td class="num">25</td><td>06-10 22:35 Wed</td><td><strong>7本連投</strong></td><td>旧</td><td>unfamiliar</td></tr>
+      <tr class="row-bad"><td>13</td><td>opulent</td><td class="num">239</td><td class="num">24</td><td>06-10 22:35 Wed</td><td><strong>7本連投</strong></td><td>旧</td><td>unfamiliar</td></tr>
+      <tr class="row-bad"><td>14</td><td>palpable</td><td class="num">233</td><td class="num">23</td><td>06-10 22:36 Wed</td><td><strong>7本連投</strong></td><td>旧</td><td>unfamiliar</td></tr>
+      <tr class="row-bad"><td>15</td><td>prudent</td><td class="num">211</td><td class="num">21</td><td>06-10 22:36 Wed</td><td><strong>7本連投</strong></td><td>旧</td><td>unfamiliar</td></tr>
+      <tr><td>16</td><td>vivid</td><td class="num">205</td><td class="num">41</td><td>06-15 22:00 Mon</td><td>単発</td><td>新 T13/S01</td><td>TOEIC800</td></tr>
+      <tr class="row-bad"><td>17</td><td>pedantic</td><td class="num warn">187</td><td class="num">19</td><td>06-10 22:36 Wed</td><td><strong>7本連投</strong></td><td>旧</td><td>unfamiliar</td></tr>
+    </tbody>
+  </table>
+  <p class="legend">burst = 同一動画の公開時刻の±10分以内に他の動画が何本投稿されたか / 旧サムネ = タグライン無し / 新サムネ = T**(上帯)+S**(下帯) 入り</p>
+</section>
+
+<section>
+  <h2>軸1 — 連投バーストが最強の説明変数</h2>
+  <p>10分以内に何本投稿したかでクラスタリングすると、同じシリーズなのに <strong>1日あたり視聴数の中央値で4倍以上</strong> の差がつく。</p>
+  <table>
+    <thead><tr><th>バースト</th><th class="num">本数</th><th class="num">平均views</th><th class="num">中央values</th><th class="num">中央v/day</th><th>該当</th></tr></thead>
+    <tbody>
+      <tr><td>0本 (単発)</td><td class="num">6</td><td class="num">504</td><td class="num">400</td><td class="num cool">66.7</td><td>06-14〜06-17 の毎日 1〜2本配信</td></tr>
+      <tr><td>3本 (4本連投)</td><td class="num">4</td><td class="num hot">1,111</td><td class="num hot">1,121</td><td class="num">93.4</td><td>06-09 朝 9:10 に <strong>familiar 4語</strong> 一気投稿</td></tr>
+      <tr><td>6本 (7本連投)</td><td class="num">7</td><td class="num">258</td><td class="num">239</td><td class="num warn">23.9</td><td>06-10 深夜 22:35 に <strong>unfamiliar 7語</strong> 一気投稿</td></tr>
+    </tbody>
+  </table>
+  <div class="note bad"><strong>1分間に7本</strong>を同一チャンネルから投下した 06-10 22:36 バッチが、視聴数で 7本とも200近辺に固まっている。<strong>連投そのもの</strong>がフィードでの分散ペナルティを呼んだ可能性が高い (Shortsの「同一作者連発の希釈」ロジック)。<br>ただし 06-09 朝の <strong>4本連投</strong> はその影響を受けず最高クラス。「連投本数 × 単語難度」の二重要因と切り分ける必要がある。</div>
+</section>
+
+<section>
+  <h2>軸2 — 単語の社会的馴染み度</h2>
+  <p>単語自体の馴染み度を、「TOEIC〜英検準1級レベルで一般学習者が見覚えあり」かどうかで二値化。</p>
+  <table>
+    <thead><tr><th>クラス</th><th class="num">本数</th><th class="num">平均views</th><th class="num">中央v/day</th><th>該当語</th></tr></thead>
+    <tbody>
+      <tr><td>familiar (TOEIC800 / 英検準1 / 一般語感あり)</td><td class="num">10</td><td class="num cool">746</td><td class="num cool">81</td><td>ubiquitous, inevitable, profound, resilient, tranquil, scrutinize, mundane, fragile, diligent, vivid</td></tr>
+      <tr><td>unfamiliar (英検1級 / GREレベル)</td><td class="num">7</td><td class="num warn">258</td><td class="num warn">24</td><td>perfunctory, obstinate, ostentatious, opulent, palpable, prudent, pedantic</td></tr>
+    </tbody>
+  </table>
+  <p class="note">familiar = 視聴者が「あー、見たことある!」「読めた!」と<strong>自己効力感を得られる</strong>。unfamiliar = 「読めない…見たことない」で離脱しやすい。Shortsはサムネ・冒頭1秒の<strong>"わかりそう感"</strong>がCTRと初動を決める。</p>
+</section>
+
+<section>
+  <h2>軸3 — サムネのタグライン</h2>
+  <p>新サムネ群 (T**「読める?」「これ読めたら○○」+ S**「30秒で記憶」「一発で覚えられる方法」) と、旧サムネ群を比較。</p>
+  <table>
+    <thead><tr><th>サムネ</th><th class="num">本数</th><th class="num">平均views</th><th class="num">中央v/day</th></tr></thead>
+    <tbody>
+      <tr><td>タグライン有 (新)</td><td class="num">6</td><td class="num">504</td><td class="num cool">66.7</td></tr>
+      <tr><td>タグライン無 (旧)</td><td class="num">11</td><td class="num">568</td><td class="num">24.8</td></tr>
+    </tbody>
+  </table>
+  <p class="note">平均は旧の方が高く見えるが、これは 06-09 の familiar 4本連投ブーストが効いているため。<strong>中央値v/day で見ると新サムネが2.7倍</strong>。タグラインは効いているが、連投と単語ペナルティを覆すほどではない。</p>
+
+  <h3>タグライン別 (各1〜2本でサンプル少)</h3>
+  <table class="compact">
+    <thead><tr><th>id</th><th>テキスト</th><th>使用語 / views</th></tr></thead>
+    <tbody>
+      <tr><td>T03/S02</td><td>わかったら{level} × 一発で覚えられる方法</td><td><strong>inevitable 1275</strong> ← 単発最大</td></tr>
+      <tr><td>T10/S01</td><td>{level}の壁、これ × 30秒で記憶</td><td>tranquil 534</td></tr>
+      <tr><td>T02/S01</td><td>これ読めたら{level} × 30秒で記憶</td><td>mundane 400</td></tr>
+      <tr><td>T02/S02</td><td>これ読めたら{level} × 一発で覚えられる方法</td><td>fragile 359</td></tr>
+      <tr><td>T06/S02</td><td>{level}でも詰まる一語 × 一発で覚えられる方法</td><td>diligent 249</td></tr>
+      <tr><td>T13/S01</td><td>見た瞬間に意味言える? × 30秒で記憶</td><td>vivid 205</td></tr>
+    </tbody>
+  </table>
+  <p class="note">サンプル各1本のため断定はできないが、<strong>T03「わかったら○○」が突出</strong>。「読める? / 知ってる? / 解ける?」系の<strong>挑発質問</strong>が、見せつけ型 (「{level}の壁」「上位5%しか読めない」) より刺さっている可能性。</p>
+</section>
+
+<section>
+  <h2>1000本ライン 3本 vs 200本ライン 9本の特徴差</h2>
+  <table>
+    <thead><tr><th></th><th>HIGH (≥1000)</th><th>LOW (&lt;400)</th></tr></thead>
+    <tbody>
+      <tr><th>本数</th><td>3本</td><td>9本</td></tr>
+      <tr><th>共通点</th><td><strong>すべて familiar語</strong></td><td><strong>9本中6本が unfamiliar語</strong></td></tr>
+      <tr><th>公開タイミング</th><td>朝7-9時 (Tue)</td><td>06-10 深夜22:36 7本 / 単発の vivid・diligent</td></tr>
+      <tr><th>サムネ</th><td>旧2本 + 新T03 1本</td><td>旧7本 + 新T13/T02/T06 計2本</td></tr>
+      <tr><th>連投本数</th><td>3本中2本が4本連投・1本が単発</td><td>9本中6本が7本連投</td></tr>
+      <tr><th>単語</th><td>ubiquitous / inevitable / profound</td><td>pedantic, palpable, prudent, obstinate, opulent, ostentatious, vivid, diligent, fragile</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>仮説の整理 — 何が「200」を作るのか</h2>
+  <ol>
+    <li><span class="tag hot">最有力</span> <strong>「unfamiliar語 × 連投」の悪い相互作用</strong>。Shortsアルゴは、同じ作者の連投を最初は均等に流すが、初動のCTR/維持率が低いものから順次配信を絞る。pedantic や palpable のような<strong>サムネで意味も読めない単語</strong>は、連投状態では他のヒット候補(同じ作者の同時投稿)に視聴者を奪われる形で、最初の小さなCTRさえ拾えない。</li>
+    <li><span class="tag warn">中</span> <strong>新サムネのタグライン (上帯T**)</strong> はCTRに寄与しているが、「unfamiliar語の自爆」までは救えない。T03「わかったら○○」のように <strong>"挑発"</strong> が "見せつけ" より強い可能性。</li>
+    <li><span class="tag cool">中</span> <strong>公開時刻 (朝 vs 深夜)</strong> は単独では弱い。06-16 22:00 tranquil は 534 と健闘、一方 06-15 22:00 vivid は 205。時刻の影響は単語×サムネに大きく支配される。</li>
+    <li><span class="tag">補助</span> <strong>サムネのカテゴリ感(難易度ラベル)</strong>。GRE / 英検1級 のような <strong>"自分ごとじゃない"</strong> レベル表示は、サムネに level を埋め込んだ瞬間ターゲット外を遮断してしまっている可能性。</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Studio CSV で検証したいこと</h2>
+  <p>公開APIだけでは「クリックされていないのか / クリックはされたが離脱したのか」が切り分けられません。YouTube Studio → アナリティクス → 詳細モード → 期間=06-09 以降 → 動画 → CSV ダウンロードを渡してもらえば、次の判定ができます。</p>
+  <ul>
+    <li><strong>impressions</strong>: pedantic は配信されているのか、それともそもそも流されていないのか</li>
+    <li><strong>impressions CTR</strong>: 新サムネ T** は本当にクリックされているか / unfamiliar語サムネのCTRは何%か</li>
+    <li><strong>average view duration / average percentage viewed</strong>: pedantic を「クリックしたが3秒で離脱」なのか「最後まで見たがリーチが薄い」なのか</li>
+    <li><strong>swipe away ratio</strong>: 冒頭1秒のサムネオーバーレイ(<code>apply_intro_thumbnail</code>)は効いているか</li>
+    <li><strong>traffic source (Shorts feed vs 検索 vs サジェスト)</strong>: HIGH群はShortsフィード由来か、検索流入か</li>
+  </ul>
+</section>
+
+<section>
+  <h2>次の打ち手 (この分析からの推奨)</h2>
+  <ol>
+    <li class="hot"><strong>1日1本ペース</strong>に戻す。10分以内の連投は最低2本まで。<br>残りB群10本(abstruse 等 unfamiliar 揃い) を <strong>連投で再上げするのは最悪手</strong>。</li>
+    <li><strong>unfamiliar語は単発 × 新サムネ × 挑発系タグライン (T03/T13系)</strong> で出す。サムネに「GRE / 英検1級」のような <strong>難易度ラベルを抑え、"わかった?"</strong> 系の質問体に寄せる。</li>
+    <li><strong>familiar語と unfamiliar語を交互配信</strong>。familiar (ubiquitous, inevitable級) で間口を広げ、unfamiliar で滞在を引っ張る。</li>
+    <li><strong>T03 (「わかったら○○」) で A/B</strong>。サンプル1だが効きそうなので、次の3本で固定して検証。</li>
+    <li><strong>06-10 の 7本</strong>はもう <strong>削除→再上げ</strong> したほうがいい(URLは変わるが、低スコアの固定化リスクを切る)。ただし削除前にStudio CSVで「impressionsは出ているか」を確認 — 0なら救済価値あり、1万出てクリックされていないならサムネ・タイトルだけ変えて差し替えではなく、別動画として作り直す。</li>
+  </ol>
+</section>
+
+<hr>
+
+<section>
+  <h2>付録 — 取得方法</h2>
+  <p class="meta">YouTube Data API v3 / videos.list (part=snippet,contentDetails,statistics,status) を 17本まとめ取得。OAuth scope = <code>youtube</code>。Analytics API は今回の token.json では未スコープ。</p>
+  <p class="meta">スクリプト: <code>shorts/_analytics/v4_hard50_stats.json</code> (生)・<code>v4_hard50_joined.json</code> (manifest 結合) を保存済み。</p>
+</section>
+
+</div>
+</body>
+</html>

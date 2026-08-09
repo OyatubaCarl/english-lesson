@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GASflare 最小実装 — ボタンを押した回数</title>
+<style>
+  :root{
+    --paper:#FBF4E9; --card:#FFFDF8; --ink:#241B12; --ink-2:#5C4A38; --ink-3:#93826D;
+    --rule:#DCCDB4; --signal:#C73E1D; --ok:#2E6F4B; --ok-soft:#E4F1E8; --warn:#B07514;
+    --mono:ui-monospace,"SF Mono",Menlo,monospace;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;min-height:100dvh;display:flex;align-items:center;justify-content:center;
+    background:var(--paper);color:var(--ink);
+    font-family:"Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  }
+  main{width:min(420px,90vw);text-align:center}
+
+  h1{font-size:.78rem;font-family:var(--mono);letter-spacing:.18em;text-transform:uppercase;
+     color:var(--ink-3);font-weight:600;margin:0 0 28px}
+
+  /* 回数のテキストボックス */
+  #count{
+    width:100%;background:var(--card);border:1px solid var(--rule);border-radius:10px;
+    font-family:var(--mono);font-size:3.4rem;font-weight:700;color:var(--ink);
+    text-align:center;padding:22px 10px;margin:0 0 6px;
+    font-variant-numeric:tabular-nums;
+  }
+  .unit{font-size:.78rem;color:var(--ink-3);margin:0 0 26px}
+
+  /* ボタン */
+  #tap{
+    width:100%;border:none;border-radius:999px;
+    background:var(--signal);color:#fff;
+    font:inherit;font-size:1.15rem;font-weight:800;letter-spacing:.04em;
+    padding:20px;cursor:pointer;
+    box-shadow:0 6px 18px rgba(199,62,29,.32);
+    transition:transform .08s ease, box-shadow .12s ease;
+  }
+  #tap:active{transform:translateY(2px) scale(.985);box-shadow:0 3px 10px rgba(199,62,29,.28)}
+  #tap:disabled{opacity:.45;cursor:not-allowed;box-shadow:none;transform:none}
+
+  /* 同期の状態 */
+  #sync{
+    margin-top:24px;min-height:2.2em;
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    font-family:var(--mono);font-size:.76rem;font-weight:600;
+    color:var(--ink-3);
+  }
+  #sync .dot{width:8px;height:8px;border-radius:50%;background:var(--ink-3);flex:none}
+  #sync[data-state="synced"]{color:var(--ok)}
+  #sync[data-state="synced"] .dot{background:var(--ok)}
+  #sync[data-state="pending"]{color:var(--warn)}
+  #sync[data-state="pending"] .dot{background:var(--warn)}
+  #sync[data-state="sending"]{color:var(--signal)}
+  #sync[data-state="sending"] .dot{background:var(--signal);animation:pulse 1s ease-in-out infinite}
+  #sync[data-state="error"]{color:var(--signal)}
+  #sync[data-state="error"] .dot{background:var(--signal)}
+  @keyframes pulse{50%{opacity:.25}}
+  @media (prefers-reduced-motion:reduce){#sync .dot{animation:none}}
+
+  .hint{margin-top:28px;font-size:.72rem;line-height:1.9;color:var(--ink-3)}
+  .hint code{font-family:var(--mono);font-size:.9em}
+</style>
+</head>
+<body>
+<main>
+  <h1>GASflare ／ 最小実装</h1>
+
+  <input id="count" readonly value="0">
+  <p class="unit">回 押しました</p>
+
+  <button id="tap" type="button">押す</button>
+
+  <div id="sync" data-state="off"><span class="dot"></span><span id="sync-text">…</span></div>
+
+  <p class="hint" id="hint"></p>
+</main>
+
+<script>
+/* =========================================================
+ *  GASflare 最小実装 — クライアント側の全部
+ *
+ *  Cloudflare Pages に置くのは、この1ファイルだけ。サーバもDBも無い。
+ *
+ *  【流れ】
+ *    生徒が「先生のGAS URL」を開く
+ *      → GAS が学校アカウントを確認し、署名トークンを付けてこのページへ転送する
+ *      → このページは ?tt=<token> を受け取り、localStorage に保存してURLから消す
+ *      → 以降、押した回数を、トークンに書かれた「その先生のGAS」へ定期的に送る
+ *
+ *  【壊してはいけないこと】
+ *    GAS が落ちていても、ボタンは押せる。回数の正本は localStorage。
+ *    送れなかった分は「未同期」のまま残り、次に送れたときに追いつく。
+ * ========================================================= */
+(function () {
+  'use strict';
+
+  var K_COUNT = 'gfm_count';    // いまの回数（正本）
+  var K_SENT  = 'gfm_sent';     // GASが受け取ったと確認できた回数
+  var K_TOKEN = 'gfm_token';    // 署名トークン
+  var K_OWNER = 'gfm_owner';    // この端末の記録は「誰のもの」か（sid）
+
+  // GASへの自己紹介。GAS側は全アプリ共通コードなので、タイトルや集計列はアプリが名乗る
+  var MANIFEST = {
+    title: 'GASflare 最小実装',
+    // 進捗シートのサマリー列もアプリが決める。このアプリに「達成」や「到達率」は無いので消す
+    headers: { student: 'メール', plays: '押した回数', done: false, rate: false },
+    stats: [],
+  };
+
+  var SYNC_MS = 15000;          // 定期同期の間隔
+  var DEBOUNCE_MS = 1500;       // 押してから送るまでの待ち（連打を1回にまとめる）
+
+  var el = {
+    count: document.getElementById('count'),
+    tap: document.getElementById('tap'),
+    sync: document.getElementById('sync'),
+    syncText: document.getElementById('sync-text'),
+    hint: document.getElementById('hint'),
+  };
+
+  var num = function (k) { var v = parseInt(localStorage.getItem(k), 10); return isFinite(v) ? v : 0; };
+  var count = function () { return num(K_COUNT); };
+  var sent = function () { return num(K_SENT); };
+
+  /* ---------- トークン ---------- */
+
+  var token = '', claims = null;   // claims = { sid, url, exp }
+
+  function decode(t) {
+    try {
+      var p = t.split('.')[0].replace(/-/g, '+').replace(/_/g, '/');
+      var o = JSON.parse(decodeURIComponent(escape(atob(p + '==='.slice((p.length + 3) % 4)))));
+      // 署名は検証しない（鍵が無いのでできない）。検証するのは常にGAS側。
+      // ここで読むのは「どのGASへ送り返すか」という宛先メモとして。
+      return (o.sid && o.url && Number(o.exp) > Date.now()) ? o : null;
+    } catch (e) { return null; }
+  }
+
+  function adopt(t) {
+    var c = decode(t);
+    if (!c) return false;
+    token = t; claims = c;
+    try { localStorage.setItem(K_TOKEN, t); } catch (e) { }
+    return true;
+  }
+
+  // URLに ?tt= が付いていれば取り込み、アドレスバーからは消す（トークンを人目に晒さない）
+  try {
+    var u = new URL(location.href);
+    var tt = u.searchParams.get('tt');
+    if (tt && adopt(tt)) {
+      u.searchParams.delete('tt');
+      history.replaceState(null, '', u.pathname + (u.search || '') + (u.hash || ''));
+    }
+  } catch (e) { }
+  if (!token) { try { adopt(localStorage.getItem(K_TOKEN) || ''); } catch (e) { } }
+
+  var on = function () { return !!(token && claims); };
+
+  /* ---------- 端末の記録は「誰のもの」か ----------
+   *
+   * localStorage は Googleアカウントに紐づかない（Chromeの同期対象外）。
+   * つまり友人の端末でログインすると、友人の回数が自分のアカウントに合算されてしまう。
+   * だから記録に持ち主(sid)を刻み、違っていたら **アカウント側を正** として端末側を捨てる。
+   */
+  function takeover() {
+    var owner = localStorage.getItem(K_OWNER) || '';
+    if (owner === claims.sid) return false;
+    localStorage.setItem(K_COUNT, '0');      // 他人の回数は引き継がない
+    localStorage.setItem(K_SENT, '0');
+    localStorage.setItem(K_OWNER, claims.sid);
+    return true;
+  }
+
+  /* ---------- 通信 ---------- */
+
+  function api(payload, keepalive) {
+    payload.tt = token;
+    return fetch(claims.url, {
+      method: 'POST',
+      // text/plain = 「単純リクエスト」→ CORSのプリフライト(OPTIONS)が飛ばない。
+      // GASはOPTIONSに応答できないので、これが唯一の通し方。
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(payload),
+      redirect: 'follow',
+      keepalive: !!keepalive,
+    }).then(function (r) { return r.json(); })
+      .catch(function () { return null; });    // つながらなくてもボタンは押せる
+  }
+
+  var lastSync = 0;
+  // 学校モードでは、シートの記録を読み込み終えるまでボタンを無効にする。
+  // 読み込む前に押させると、サーバの回数(例:10)より小さいローカル(1)を送ることになり、
+  // 「押したのに増えない」ように見えてしまうため。個人モード(トークン無し)では待つ相手がいない。
+  var loaded = false;
+  var loadFailed = false;
+  var tokenDead = false;   // GASが bad_token を返した＝鍵が作り直された等でトークン失効
+
+  /** GAS から回数を読む（別の端末で押した分も引き継ぐ） */
+  function pull() {
+    if (!on()) return Promise.resolve();
+    return api({ action: 'load', manifest: MANIFEST }).then(function (r) {
+      if (r && !r.ok && r.error === 'bad_token') {
+        // トークン失効（シートのコピーや鍵の作り直し）。リトライしても直らないので、
+        // トークンを捨てて「先生のURLから開き直す」案内に切り替える
+        try { localStorage.removeItem(K_TOKEN); } catch (e) { }
+        token = ''; claims = null; tokenDead = true;
+        render(); return;
+      }
+      if (!r || !r.ok) { loadFailed = true; render(); return; }
+      // 回数は減らない。大きい方を採る。
+      // 汎用スキーマ: 進捗は progress[項目ID] に入って返る。このアプリの項目は 'button' の1つだけ
+      var server = (r.progress && r.progress.button) ? (Number(r.progress.button.plays) || 0) : 0;
+      if (server > count()) localStorage.setItem(K_COUNT, String(server));
+      localStorage.setItem(K_SENT, String(Math.max(sent(), server)));
+      loaded = true;
+      loadFailed = false;
+      lastSync = Date.now();
+      render();
+    });
+  }
+
+  /** いまの回数を GAS へ送る */
+  var sending = false;
+  function push(keepalive) {
+    if (!on() || sending) return Promise.resolve();
+    var n = count();
+    if (n === sent()) return Promise.resolve();      // 変わっていない → 送らない
+    sending = true;
+    render();
+    // 汎用スキーマ: entries=[{item,label,cell,plays,…}] で送る。
+    // GAS側はどのアプリでも同一コード。「何を記録するか」はアプリがこの形で決める
+    return api({
+      action: 'record',
+      entries: [{ item: 'button', label: '押すボタン', cell: n + ' 回', plays: n, stats: { count: n } }],
+    }, keepalive).then(function (r) {
+      sending = false;
+      if (r && r.ok) {
+        // **GASが確認した回数だけ**を「送信済み」として覚える。
+        // 失敗した分は未送信のまま残り、次の同期で必ず追いつく。
+        var ack = (r.progress && r.progress.button) ? (Number(r.progress.button.plays) || 0) : 0;
+        localStorage.setItem(K_SENT, String(Math.max(sent(), ack)));
+        lastSync = Date.now();
+      }
+      render();
+    });
+  }
+
+  var timer = null;
+  function pushLater() {
+    if (!on()) return;
+    clearTimeout(timer);
+    timer = setTimeout(function () { push(); }, DEBOUNCE_MS);
+  }
+
+  /* ---------- 表示 ---------- */
+
+  function hhmm(t) {
+    var d = new Date(t);
+    return ('0' + d.getHours()).slice(-2) + ':' + ('0' + d.getMinutes()).slice(-2);
+  }
+
+  function render() {
+    el.count.value = count();
+    el.tap.disabled = on() && !loaded;   // 学校モードは、シートを読み終えるまで押せない
+
+    if (!on()) {
+      el.sync.dataset.state = tokenDead ? 'error' : 'off';
+      el.syncText.textContent = tokenDead ? '記録を再開するには開き直しが必要です' : '記録していません';
+      el.hint.innerHTML = tokenDead
+        ? '先生のシートが更新されたため、いったん記録を停止しました。<br>**先生が配ったURL**からもう一度開くと再開します。'
+        : '先生が配ったURLから開くと、押した回数が先生のスプレッドシートに記録されます。';
+      return;
+    }
+
+    if (!loaded) {
+      el.sync.dataset.state = loadFailed ? 'error' : 'sending';
+      el.syncText.textContent = loadFailed ? '読み込めません（自動で再試行します）' : '記録を読み込んでいます…';
+      el.hint.innerHTML = 'スプレッドシートの記録を確認しています。';
+      return;
+    }
+
+    var behind = count() - sent();
+    el.hint.innerHTML = 'この端末の記録は <code>' + claims.sid + '</code> のものです。';
+
+    if (sending) {
+      el.sync.dataset.state = 'sending';
+      el.syncText.textContent = '同期中…';
+    } else if (behind > 0) {
+      el.sync.dataset.state = 'pending';
+      el.syncText.textContent = '未同期 +' + behind;
+    } else {
+      el.sync.dataset.state = 'synced';
+      el.syncText.textContent = '同期済み' + (lastSync ? '（' + hhmm(lastSync) + '）' : '');
+    }
+  }
+
+  /* ---------- 操作 ---------- */
+
+  el.tap.onclick = function () {
+    if (on() && !loaded) return;   // disabled の保険（読み込み前は数えない）
+    localStorage.setItem(K_COUNT, String(count() + 1));
+    render();
+    pushLater();
+  };
+
+  // 定期処理。読み込みが済むまでは読み込みを再試行し、済んだら未同期分を送る
+  setInterval(function () {
+    if (on() && !loaded) pull();
+    else push();
+  }, SYNC_MS);
+
+  // 離脱時に取りこぼさない（keepalive を付けないとページが消えた時点で中断される）
+  window.addEventListener('pagehide', function () { push(true); });
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'hidden') push(true);
+  });
+
+  // 起動: 持ち主を確かめてから、クラウドの回数を読み、未同期分を送る
+  render();
+  if (on()) {
+    takeover();
+    render();
+    pull().then(function () { return push(); });
+  }
+})();
+</script>
+</body>
+</html>

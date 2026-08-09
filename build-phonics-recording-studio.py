@@ -1,0 +1,1513 @@
+#!/usr/bin/env python3
+"""Build a local phonics recording studio.
+
+The generated HTML is a recording workbench for original phoneme audio. It can
+play Jolly Phonics files as local reference audio, but recorded output is the
+user's own WAV audio and can be exported separately.
+"""
+from __future__ import annotations
+
+import html
+import json
+from collections import Counter, defaultdict
+from pathlib import Path
+
+
+DATA_PATH = Path("phonics-audio-items.json")
+OUT_PATH = Path("phonics-recording-studio.html")
+
+
+SOUND_TO_ID = {
+    "æ": "ae",
+    "ɛ": "eh",
+    "ɪ": "ih",
+    "ɑ": "ah",
+    "ʌ": "uh",
+    "θ": "th_voiceless",
+    "ð": "th_voiced",
+}
+
+
+JOLLY_PATHS = {
+    "p": "reference-audio/jolly-letter-sounds/northamerican_english/group1/p.mp3",
+    "b": "reference-audio/jolly-letter-sounds/northamerican_english/group3/b.mp3",
+    "t": "reference-audio/jolly-letter-sounds/northamerican_english/group1/t.mp3",
+    "d": "reference-audio/jolly-letter-sounds/northamerican_english/group2/d.mp3",
+    "k": "reference-audio/jolly-letter-sounds/northamerican_english/group2/ck.mp3",
+    "g": "reference-audio/jolly-letter-sounds/northamerican_english/group3/g.mp3",
+    "m": "reference-audio/jolly-letter-sounds/northamerican_english/group2/m.mp3",
+    "n": "reference-audio/jolly-letter-sounds/northamerican_english/group1/n.mp3",
+    "ng": "reference-audio/jolly-letter-sounds/northamerican_english/group5/ng.mp3",
+    "f": "reference-audio/jolly-letter-sounds/northamerican_english/group3/f.mp3",
+    "v": "reference-audio/jolly-letter-sounds/northamerican_english/group5/v.mp3",
+    "s": "reference-audio/jolly-letter-sounds/northamerican_english/group1/s.mp3",
+    "z": "reference-audio/jolly-letter-sounds/northamerican_english/group5/z.mp3",
+    "h": "reference-audio/jolly-letter-sounds/northamerican_english/group2/h.mp3",
+    "l": "reference-audio/jolly-letter-sounds/northamerican_english/group3/l.mp3",
+    "r": "reference-audio/jolly-letter-sounds/northamerican_english/group2/r.mp3",
+    "w": "reference-audio/jolly-letter-sounds/northamerican_english/group5/w.mp3",
+    "y": "reference-audio/jolly-letter-sounds/northamerican_english/group6/y.mp3",
+    "sh": "reference-audio/jolly-letter-sounds/northamerican_english/group6/sh.mp3",
+    "ch": "reference-audio/jolly-letter-sounds/northamerican_english/group6/ch.mp3",
+    "j": "reference-audio/jolly-letter-sounds/northamerican_english/group4/j.mp3",
+    "th_voiceless": "reference-audio/jolly-letter-sounds/northamerican_english/group6/three.mp3",
+    "th_voiced": "reference-audio/jolly-letter-sounds/northamerican_english/group6/this.mp3",
+    "kw": "reference-audio/jolly-letter-sounds/northamerican_english/group7/qu.mp3",
+    "ks": "reference-audio/jolly-letter-sounds/northamerican_english/group6/x.mp3",
+    "ae": "reference-audio/jolly-letter-sounds/northamerican_english/group1/a.mp3",
+    "eh": "reference-audio/jolly-letter-sounds/northamerican_english/group2/e.mp3",
+    "ih": "reference-audio/jolly-letter-sounds/northamerican_english/group1/i.mp3",
+    "ah": "reference-audio/jolly-letter-sounds/northamerican_english/group3/o.mp3",
+    "uh": "reference-audio/jolly-letter-sounds/northamerican_english/group3/u.mp3",
+}
+
+
+GROUP_LABELS = {
+    "vowel": "短母音",
+    "stop": "破裂音",
+    "nasal": "鼻音",
+    "fricative": "摩擦音",
+    "approximant": "接近音",
+    "affricate": "破擦音",
+    "cluster": "ブレンド",
+}
+
+
+TARGET_MS = {
+    "vowel": 420,
+    "stop": 140,
+    "nasal": 330,
+    "fricative": 320,
+    "approximant": 260,
+    "affricate": 300,
+    "cluster": 360,
+}
+
+
+RECORDING_NOTES = {
+    "vowel": "文字名にしない。短母音だけを明るく。",
+    "stop": "母音を足さない。息の破裂だけで止める。",
+    "nasal": "声を入れて短めに止める。",
+    "fricative": "息の摩擦を一定に。最後に母音を置かない。",
+    "approximant": "入りだけを短く。日本語の母音を後ろに置かない。",
+    "affricate": "破裂から摩擦へ一息で短く。",
+    "cluster": "2音をなめらかに。分けすぎない。",
+}
+
+
+def esc(value: object) -> str:
+    return html.escape(str(value), quote=True)
+
+
+def phoneme_id_for_sound(sound: str) -> str:
+    return SOUND_TO_ID.get(sound, sound)
+
+
+def build_phonemes(data: dict) -> list[dict]:
+    examples: dict[str, list[str]] = defaultdict(list)
+    counts: Counter[str] = Counter()
+    for word in data["words"]:
+        seen = set()
+        for segment in word["segments"]:
+            sound_id = phoneme_id_for_sound(segment["sound"])
+            counts[sound_id] += 1
+            if sound_id not in seen:
+                examples[sound_id].append(f'{word["word"]} /{word["ipa"]}/')
+                seen.add(sound_id)
+
+    order = {
+        "vowel": 0,
+        "stop": 1,
+        "nasal": 2,
+        "fricative": 3,
+        "approximant": 4,
+        "affricate": 5,
+        "cluster": 6,
+    }
+    phonemes = []
+    for item in data["phonemes"]:
+        sound_id = item["id"]
+        phonemes.append(
+            {
+                "id": sound_id,
+                "label": item["label"],
+                "ipa": item["ipa"],
+                "type": item["type"],
+                "groupLabel": GROUP_LABELS[item["type"]],
+                "examples": examples[sound_id][:8],
+                "count": counts[sound_id],
+                "targetMs": TARGET_MS[item["type"]],
+                "note": RECORDING_NOTES[item["type"]],
+                "jolly": JOLLY_PATHS.get(sound_id, ""),
+                "current": f"audio/phonics-generated/phonemes/{sound_id}.mp3",
+            }
+        )
+    return sorted(phonemes, key=lambda item: (order[item["type"]], -item["count"], item["id"]))
+
+
+def main() -> int:
+    data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
+    phonemes = build_phonemes(data)
+    payload = json.dumps(phonemes, ensure_ascii=False, separators=(",", ":"))
+    html_text = f"""<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Phonics Recording Studio</title>
+    <style>
+      :root {{
+        --ink: #17202a;
+        --muted: #657483;
+        --line: #d8e0e7;
+        --paper: #f4f7fa;
+        --white: #ffffff;
+        --danger: #bd3b2f;
+        --green: #1f8a70;
+        --orange: #c76a1a;
+        --blue: #2364aa;
+      }}
+
+      * {{ box-sizing: border-box; }}
+
+      body {{
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Segoe UI", sans-serif;
+      }}
+
+      button,
+      input {{
+        font: inherit;
+      }}
+
+      button {{
+        cursor: pointer;
+      }}
+
+      .app {{
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr;
+      }}
+
+      .topbar {{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 16px;
+        align-items: center;
+        border-bottom: 1px solid var(--line);
+        background: var(--white);
+        padding: 14px 18px;
+      }}
+
+      .brand {{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 0;
+      }}
+
+      .brand-mark {{
+        display: grid;
+        width: 42px;
+        height: 42px;
+        place-items: center;
+        border-radius: 8px;
+        background: var(--ink);
+        color: var(--white);
+        font-weight: 900;
+      }}
+
+      .brand h1 {{
+        margin: 0;
+        font-size: 1.25rem;
+        letter-spacing: 0;
+      }}
+
+      .brand p {{
+        margin: 2px 0 0;
+        color: var(--muted);
+        font-size: 0.86rem;
+      }}
+
+      .status {{
+        min-width: 220px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 9px 12px;
+        color: var(--muted);
+        text-align: center;
+        font-weight: 800;
+      }}
+
+      .main {{
+        display: grid;
+        grid-template-columns: 300px minmax(0, 1fr) 300px;
+        gap: 14px;
+        padding: 14px;
+      }}
+
+      .panel {{
+        min-height: 0;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--white);
+      }}
+
+      .sidebar {{
+        display: grid;
+        grid-template-rows: auto 1fr;
+        overflow: hidden;
+      }}
+
+      .panel-head {{
+        border-bottom: 1px solid var(--line);
+        padding: 12px;
+      }}
+
+      .panel-head h2 {{
+        margin: 0;
+        font-size: 1rem;
+        letter-spacing: 0;
+      }}
+
+      .search {{
+        width: 100%;
+        margin-top: 10px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 10px;
+      }}
+
+      .queue {{
+        overflow: auto;
+        padding: 8px;
+      }}
+
+      .queue-item {{
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 9px;
+        align-items: center;
+        width: 100%;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        background: transparent;
+        padding: 9px;
+        color: var(--ink);
+        text-align: left;
+      }}
+
+      .queue-item.is-active {{
+        border-color: var(--ink);
+        background: #eef3f7;
+      }}
+
+      .queue-item.is-done .dot {{
+        background: var(--green);
+      }}
+
+      .queue-item.is-recorded:not(.is-done) .dot {{
+        background: var(--orange);
+      }}
+
+      .dot {{
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        background: #bcc8d2;
+      }}
+
+      .queue-label strong {{
+        display: block;
+        font-size: 1.02rem;
+      }}
+
+      .queue-label span {{
+        display: block;
+        color: var(--muted);
+        font-size: 0.78rem;
+      }}
+
+      .count {{
+        color: var(--muted);
+        font-size: 0.78rem;
+        font-weight: 850;
+      }}
+
+      .stage {{
+        display: grid;
+        grid-template-rows: auto auto auto 1fr;
+        min-height: 640px;
+      }}
+
+      .stage-main {{
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 220px;
+        gap: 16px;
+        padding: 18px;
+      }}
+
+      .phoneme {{
+        display: flex;
+        align-items: end;
+        gap: 14px;
+      }}
+
+      .glyph {{
+        font-size: clamp(4.2rem, 10vw, 8rem);
+        line-height: 0.9;
+        font-weight: 950;
+      }}
+
+      .meta h2 {{
+        margin: 0;
+        font-size: 1.25rem;
+      }}
+
+      .ipa {{
+        font-family: "Charis SIL", "Noto Sans", "Segoe UI", sans-serif;
+        font-size: 2rem;
+        font-weight: 850;
+      }}
+
+      .tag {{
+        display: inline-block;
+        margin-top: 8px;
+        border-radius: 999px;
+        background: #e8f4f1;
+        color: #17624f;
+        padding: 5px 9px;
+        font-size: 0.8rem;
+        font-weight: 850;
+      }}
+
+      .mini-stats {{
+        display: grid;
+        gap: 8px;
+      }}
+
+      .mini-stat {{
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 10px;
+      }}
+
+      .mini-stat strong {{
+        display: block;
+        font-size: 1.35rem;
+      }}
+
+      .mini-stat span {{
+        display: block;
+        color: var(--muted);
+        font-size: 0.78rem;
+        font-weight: 800;
+      }}
+
+      .examples {{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        padding: 12px 18px;
+      }}
+
+      .example {{
+        border-radius: 999px;
+        background: #eef3f7;
+        padding: 6px 9px;
+        color: #34495e;
+        font-size: 0.85rem;
+        font-weight: 800;
+      }}
+
+      .record-workflow {{
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+        gap: 12px;
+        border-bottom: 1px solid var(--line);
+        padding: 12px 18px;
+      }}
+
+      .reference-panel {{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }}
+
+      .player-card {{
+        display: grid;
+        gap: 8px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 10px;
+        background: #fbfdff;
+      }}
+
+      .player-card strong {{
+        color: var(--ink);
+        font-size: 0.92rem;
+      }}
+
+      .player-card span {{
+        color: var(--muted);
+        font-size: 0.8rem;
+        font-weight: 750;
+      }}
+
+      .player-card audio {{
+        width: 100%;
+      }}
+
+      .meter-zone {{
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 10px;
+        padding: 18px;
+      }}
+
+      .meter-head {{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+        color: var(--muted);
+        font-size: 0.86rem;
+        font-weight: 800;
+      }}
+
+      canvas {{
+        width: 100%;
+        min-height: 210px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fbfdff;
+      }}
+
+      .controls {{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+        align-content: start;
+      }}
+
+      .control-button {{
+        min-height: 44px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--white);
+        color: var(--ink);
+        font-weight: 900;
+      }}
+
+      .control-button.primary {{
+        border-color: var(--danger);
+        background: var(--danger);
+        color: var(--white);
+      }}
+
+      .control-button.record {{
+        grid-column: 1 / -1;
+        min-height: 66px;
+        font-size: 1.08rem;
+      }}
+
+      .control-button.record.is-recording {{
+        background: #8f2d24;
+        border-color: #8f2d24;
+      }}
+
+      .control-button.accept {{
+        border-color: var(--green);
+        background: var(--green);
+        color: var(--white);
+      }}
+
+      .control-button.stop {{
+        border-color: #8b98a5;
+        background: #edf1f5;
+      }}
+
+      .control-button:disabled {{
+        cursor: default;
+        opacity: 0.45;
+      }}
+
+      .side-content {{
+        display: grid;
+        gap: 12px;
+        padding: 12px;
+      }}
+
+      .note {{
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 12px;
+        color: var(--muted);
+        line-height: 1.55;
+      }}
+
+      .note strong {{
+        color: var(--ink);
+      }}
+
+      .export-row {{
+        display: grid;
+        gap: 8px;
+      }}
+
+      .export-row button {{
+        min-height: 42px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--white);
+        color: var(--ink);
+        font-weight: 850;
+      }}
+
+      .take-list {{
+        display: grid;
+        gap: 8px;
+      }}
+
+      .take {{
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 10px;
+      }}
+
+      .take strong {{
+        display: block;
+      }}
+
+      .take span {{
+        display: block;
+        margin-top: 2px;
+        color: var(--muted);
+        font-size: 0.8rem;
+      }}
+
+      .hidden-link {{
+        display: none;
+      }}
+
+      @media (max-width: 1120px) {{
+        .main {{
+          grid-template-columns: 260px minmax(0, 1fr);
+        }}
+
+        .right-panel {{
+          grid-column: 1 / -1;
+        }}
+      }}
+
+      @media (max-width: 760px) {{
+        .topbar,
+        .main,
+        .stage-main,
+        .record-workflow,
+        .controls {{
+          grid-template-columns: 1fr;
+        }}
+
+        .control-button.record {{
+          grid-column: 1;
+        }}
+
+        .status {{
+          text-align: left;
+        }}
+
+        .stage {{
+          min-height: 0;
+        }}
+      }}
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark">Rec</div>
+          <div>
+            <h1>Phonics Recording Studio</h1>
+            <p>Jolly参照を聞いて、オリジナル音素WAVを作る作業台</p>
+          </div>
+        </div>
+        <div class="status" id="status">録音開始を押してください</div>
+      </header>
+
+      <main class="main">
+        <aside class="panel sidebar">
+          <div class="panel-head">
+            <h2>録音キュー</h2>
+            <input class="search" id="search" type="search" placeholder="文字・IPA・例単語で検索" />
+          </div>
+          <div class="queue" id="queue"></div>
+        </aside>
+
+        <section class="panel stage">
+          <div class="stage-main">
+            <div>
+              <div class="phoneme">
+                <div class="glyph" id="glyph">p</div>
+                <div class="meta">
+                  <h2 id="phonemeTitle">p</h2>
+                  <div class="ipa" id="ipa">/p/</div>
+                  <span class="tag" id="groupLabel">破裂音</span>
+                </div>
+              </div>
+            </div>
+            <div class="mini-stats">
+              <div class="mini-stat"><strong id="progressText">0/30</strong><span>採用済み</span></div>
+              <div class="mini-stat"><strong id="targetText">140ms</strong><span>目安長さ</span></div>
+            </div>
+          </div>
+
+          <div class="examples" id="examples"></div>
+
+          <div class="record-workflow" aria-label="参照と録音操作">
+            <div class="reference-panel" aria-label="参照音声">
+              <div class="player-card">
+                <strong>Jolly参照音声</strong>
+                <span>先にここで聞いてから録音します</span>
+                <audio id="jollyPlayer" controls preload="metadata"></audio>
+              </div>
+              <div class="player-card">
+                <strong>現在音源</strong>
+                <span>今の実装音源との比較用</span>
+                <audio id="currentPlayer" controls preload="metadata"></audio>
+              </div>
+            </div>
+
+            <div class="controls">
+              <button class="control-button primary record" type="button" id="recordButton">録音開始</button>
+              <button class="control-button" type="button" id="jollyButton">Jolly再生</button>
+              <button class="control-button" type="button" id="currentButton">現在</button>
+              <button class="control-button" type="button" id="playTakeButton">試聴</button>
+              <button class="control-button accept" type="button" id="acceptButton">採用</button>
+              <button class="control-button stop" type="button" id="micOffButton">マイクOFF</button>
+              <button class="control-button" type="button" id="nextButton">次へ</button>
+            </div>
+          </div>
+
+          <div class="meter-zone">
+            <div class="meter-head">
+              <span id="note">母音を足さない。息の破裂だけで止める。</span>
+              <span id="durationText">未録音</span>
+            </div>
+            <canvas id="waveform" width="1200" height="300" aria-label="録音波形"></canvas>
+          </div>
+        </section>
+
+        <aside class="panel right-panel">
+          <div class="panel-head">
+            <h2>テイク</h2>
+          </div>
+          <div class="side-content">
+            <div class="note">
+              <strong>Jolly音源は参照専用。</strong><br />
+              エクスポートされるのは、このページで録音したオリジナルWAVだけです。
+            </div>
+            <div class="export-row">
+              <button type="button" id="exportZipButton">採用WAVをZIP</button>
+              <button type="button" id="exportManifestButton">録音manifest</button>
+              <button type="button" id="clearButton">録音を全削除</button>
+            </div>
+            <div class="take-list" id="takeList"></div>
+          </div>
+        </aside>
+      </main>
+      <a class="hidden-link" id="downloadLink"></a>
+    </div>
+
+    <script>
+      const phonemes = {payload};
+      const state = {{
+        selected: 0,
+        search: "",
+        audioContext: null,
+        stream: null,
+        source: null,
+        processor: null,
+        silentGain: null,
+        analyser: null,
+        recording: false,
+        chunks: [],
+        lastTake: null,
+        takes: {{}},
+        accepted: {{}},
+        activeAudio: null,
+        activeKind: "",
+        raf: null,
+      }};
+
+      const els = {{
+        status: document.querySelector("#status"),
+        queue: document.querySelector("#queue"),
+        search: document.querySelector("#search"),
+        glyph: document.querySelector("#glyph"),
+        phonemeTitle: document.querySelector("#phonemeTitle"),
+        ipa: document.querySelector("#ipa"),
+        groupLabel: document.querySelector("#groupLabel"),
+        progressText: document.querySelector("#progressText"),
+        targetText: document.querySelector("#targetText"),
+        examples: document.querySelector("#examples"),
+        note: document.querySelector("#note"),
+        durationText: document.querySelector("#durationText"),
+        canvas: document.querySelector("#waveform"),
+        jollyPlayer: document.querySelector("#jollyPlayer"),
+        currentPlayer: document.querySelector("#currentPlayer"),
+        jollyButton: document.querySelector("#jollyButton"),
+        currentButton: document.querySelector("#currentButton"),
+        recordButton: document.querySelector("#recordButton"),
+        micOffButton: document.querySelector("#micOffButton"),
+        playTakeButton: document.querySelector("#playTakeButton"),
+        acceptButton: document.querySelector("#acceptButton"),
+        nextButton: document.querySelector("#nextButton"),
+        exportZipButton: document.querySelector("#exportZipButton"),
+        exportManifestButton: document.querySelector("#exportManifestButton"),
+        clearButton: document.querySelector("#clearButton"),
+        takeList: document.querySelector("#takeList"),
+        downloadLink: document.querySelector("#downloadLink"),
+      }};
+
+      function setStatus(text) {{
+        els.status.textContent = text;
+      }}
+
+      function selectedPhoneme() {{
+        return phonemes[state.selected];
+      }}
+
+      function filteredPhonemes() {{
+        const query = state.search.trim().toLowerCase();
+        if (!query) return phonemes;
+        return phonemes.filter((item) => {{
+          return [
+            item.id,
+            item.label,
+            item.ipa,
+            item.groupLabel,
+            item.examples.join(" "),
+          ]
+            .join(" ")
+            .toLowerCase()
+            .includes(query);
+        }});
+      }}
+
+      function setSelectedById(id) {{
+        const index = phonemes.findIndex((item) => item.id === id);
+        if (index >= 0) {{
+          state.selected = index;
+          state.lastTake = state.takes[id] || null;
+          render();
+        }}
+      }}
+
+      function renderQueue() {{
+        const visible = filteredPhonemes();
+        els.queue.innerHTML = visible
+          .map((item) => {{
+            const done = state.accepted[item.id];
+            const recorded = state.takes[item.id];
+            return `
+              <button class="queue-item${{item.id === selectedPhoneme().id ? " is-active" : ""}}${{done ? " is-done" : ""}}${{recorded ? " is-recorded" : ""}}" type="button" data-id="${{item.id}}">
+                <span class="dot"></span>
+                <span class="queue-label"><strong>${{item.label}}</strong><span>/${{item.ipa}} · ${{item.groupLabel}}</span></span>
+                <span class="count">${{item.count}}</span>
+              </button>
+            `;
+          }})
+          .join("");
+      }}
+
+      function renderStage() {{
+        const item = selectedPhoneme();
+        els.glyph.textContent = item.label;
+        els.phonemeTitle.textContent = item.id;
+        els.ipa.textContent = `/${{item.ipa}}/`;
+        els.groupLabel.textContent = item.groupLabel;
+        els.targetText.textContent = `${{item.targetMs}}ms`;
+        els.note.textContent = item.note;
+        els.examples.innerHTML = item.examples.map((example) => `<span class="example">${{example}}</span>`).join("");
+        const acceptedCount = Object.keys(state.accepted).length;
+        els.progressText.textContent = `${{acceptedCount}}/${{phonemes.length}}`;
+        const take = state.takes[item.id];
+        els.durationText.textContent = take ? `${{Math.round(take.duration * 1000)}}ms · ${{state.accepted[item.id] ? "採用済み" : "未採用"}}` : "未録音";
+        els.playTakeButton.disabled = !take;
+        els.acceptButton.disabled = !take;
+        els.acceptButton.textContent = state.accepted[item.id] ? "採用済み" : "採用";
+        els.jollyButton.disabled = !item.jolly;
+        els.currentButton.disabled = !item.current;
+        setPlayerSource(els.jollyPlayer, item.jolly);
+        setPlayerSource(els.currentPlayer, item.current);
+        renderWaveform(take ? take.samples : null);
+      }}
+
+      function setPlayerSource(player, path) {{
+        if (!path) {{
+          player.removeAttribute("src");
+          player.load();
+          return;
+        }}
+        const resolved = new URL(path, window.location.href).href;
+        if (player.src !== resolved) {{
+          player.src = resolved;
+          player.load();
+        }}
+        updatePlaybackButtons();
+      }}
+
+      function renderTakes() {{
+        const item = selectedPhoneme();
+        const take = state.takes[item.id];
+        if (!take) {{
+          els.takeList.innerHTML = '<div class="note">この音素の録音はまだありません。</div>';
+          return;
+        }}
+        els.takeList.innerHTML = `
+          <div class="take">
+            <strong>${{item.label}} /${{item.ipa}}/</strong>
+            <span>${{Math.round(take.duration * 1000)}}ms · ${{new Date(take.createdAt).toLocaleString()}}</span>
+            <span>${{state.accepted[item.id] ? "採用済み" : "未採用"}}</span>
+          </div>
+        `;
+      }}
+
+      function render() {{
+        renderQueue();
+        renderStage();
+        renderTakes();
+      }}
+
+      function drawBaseline(ctx, width, height) {{
+        ctx.clearRect(0, 0, width, height);
+        ctx.strokeStyle = "#d8e0e7";
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(0, height / 2);
+        ctx.lineTo(width, height / 2);
+        ctx.stroke();
+      }}
+
+      function renderWaveform(samples) {{
+        const canvas = els.canvas;
+        const ctx = canvas.getContext("2d");
+        const width = canvas.width;
+        const height = canvas.height;
+        drawBaseline(ctx, width, height);
+        if (!samples || !samples.length) return;
+        ctx.strokeStyle = "#2364aa";
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        const step = Math.max(1, Math.floor(samples.length / width));
+        for (let x = 0; x < width; x += 1) {{
+          let min = 1;
+          let max = -1;
+          const start = x * step;
+          for (let j = 0; j < step && start + j < samples.length; j += 1) {{
+            const value = samples[start + j];
+            if (value < min) min = value;
+            if (value > max) max = value;
+          }}
+          ctx.moveTo(x, (1 - max) * height * 0.5);
+          ctx.lineTo(x, (1 - min) * height * 0.5);
+        }}
+        ctx.stroke();
+      }}
+
+      function animateMeter() {{
+        const canvas = els.canvas;
+        const ctx = canvas.getContext("2d");
+        const width = canvas.width;
+        const height = canvas.height;
+        if (!state.analyser) return;
+        const data = new Uint8Array(state.analyser.fftSize);
+        state.analyser.getByteTimeDomainData(data);
+        drawBaseline(ctx, width, height);
+        ctx.strokeStyle = state.recording ? "#bd3b2f" : "#1f8a70";
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        for (let i = 0; i < data.length; i += 1) {{
+          const x = (i / (data.length - 1)) * width;
+          const y = (data[i] / 255) * height;
+          if (i === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+        }}
+        ctx.stroke();
+        state.raf = requestAnimationFrame(animateMeter);
+      }}
+
+      async function setupMic() {{
+        if (state.stream) return;
+        setStatus("マイク許可を確認中");
+        const stream = await navigator.mediaDevices.getUserMedia({{
+          audio: {{
+            echoCancellation: false,
+            noiseSuppression: false,
+            autoGainControl: false,
+          }},
+        }});
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        const audioContext = new AudioContext();
+        const source = audioContext.createMediaStreamSource(stream);
+        const analyser = audioContext.createAnalyser();
+        analyser.fftSize = 2048;
+        const processor = audioContext.createScriptProcessor(2048, 1, 1);
+        processor.onaudioprocess = (event) => {{
+          if (!state.recording) return;
+          const input = event.inputBuffer.getChannelData(0);
+          state.chunks.push(new Float32Array(input));
+        }};
+        source.connect(analyser);
+        source.connect(processor);
+        const silentGain = audioContext.createGain();
+        silentGain.gain.value = 0;
+        processor.connect(silentGain);
+        silentGain.connect(audioContext.destination);
+        state.stream = stream;
+        state.audioContext = audioContext;
+        state.source = source;
+        state.processor = processor;
+        state.silentGain = silentGain;
+        state.analyser = analyser;
+        setStatus("マイク接続済み");
+        if (state.raf) cancelAnimationFrame(state.raf);
+        animateMeter();
+      }}
+
+      async function releaseMic() {{
+        if (state.raf) {{
+          cancelAnimationFrame(state.raf);
+          state.raf = null;
+        }}
+        try {{
+          if (state.source) state.source.disconnect();
+        }} catch {{
+          /* Already disconnected. */
+        }}
+        try {{
+          if (state.processor) state.processor.disconnect();
+        }} catch {{
+          /* Already disconnected. */
+        }}
+        try {{
+          if (state.silentGain) state.silentGain.disconnect();
+        }} catch {{
+          /* Already disconnected. */
+        }}
+        if (state.stream) {{
+          state.stream.getTracks().forEach((track) => track.stop());
+        }}
+        if (state.audioContext && state.audioContext.state !== "closed") {{
+          try {{
+            await state.audioContext.close();
+          }} catch {{
+            /* Safari can throw if already closing. */
+          }}
+        }}
+        state.stream = null;
+        state.audioContext = null;
+        state.source = null;
+        state.processor = null;
+        state.silentGain = null;
+        state.analyser = null;
+      }}
+
+      async function turnMicOff() {{
+        const wasRecording = state.recording;
+        state.recording = false;
+        els.recordButton.textContent = "録音開始";
+        els.recordButton.classList.remove("is-recording");
+        await releaseMic();
+        setStatus(wasRecording ? "録音を破棄してマイクOFF" : "マイクOFF");
+        renderWaveform(state.takes[selectedPhoneme().id] ? state.takes[selectedPhoneme().id].samples : null);
+      }}
+
+      function concatenate(chunks) {{
+        const length = chunks.reduce((sum, chunk) => sum + chunk.length, 0);
+        const output = new Float32Array(length);
+        let offset = 0;
+        chunks.forEach((chunk) => {{
+          output.set(chunk, offset);
+          offset += chunk.length;
+        }});
+        return output;
+      }}
+
+      function trimSilence(samples, sampleRate) {{
+        if (!samples.length) return samples;
+        let peak = 0;
+        for (const sample of samples) peak = Math.max(peak, Math.abs(sample));
+        const threshold = Math.max(0.012, peak * 0.08);
+        let start = 0;
+        let end = samples.length - 1;
+        while (start < samples.length && Math.abs(samples[start]) < threshold) start += 1;
+        while (end > start && Math.abs(samples[end]) < threshold) end -= 1;
+        const pad = Math.floor(sampleRate * 0.018);
+        start = Math.max(0, start - pad);
+        end = Math.min(samples.length - 1, end + pad * 2);
+        return samples.slice(start, end + 1);
+      }}
+
+      function normalize(samples) {{
+        let peak = 0;
+        for (const sample of samples) peak = Math.max(peak, Math.abs(sample));
+        if (peak < 0.00001) return samples;
+        const gain = Math.min(8, 0.82 / peak);
+        const output = new Float32Array(samples.length);
+        for (let i = 0; i < samples.length; i += 1) output[i] = samples[i] * gain;
+        return output;
+      }}
+
+      function applyFade(samples, sampleRate) {{
+        const output = new Float32Array(samples);
+        const fadeIn = Math.min(output.length, Math.floor(sampleRate * 0.004));
+        const fadeOut = Math.min(output.length, Math.floor(sampleRate * 0.018));
+        for (let i = 0; i < fadeIn; i += 1) output[i] *= i / fadeIn;
+        for (let i = 0; i < fadeOut; i += 1) output[output.length - 1 - i] *= i / fadeOut;
+        return output;
+      }}
+
+      function writeString(view, offset, value) {{
+        for (let i = 0; i < value.length; i += 1) view.setUint8(offset + i, value.charCodeAt(i));
+      }}
+
+      function encodeWav(samples, sampleRate) {{
+        const bytesPerSample = 2;
+        const buffer = new ArrayBuffer(44 + samples.length * bytesPerSample);
+        const view = new DataView(buffer);
+        writeString(view, 0, "RIFF");
+        view.setUint32(4, 36 + samples.length * bytesPerSample, true);
+        writeString(view, 8, "WAVE");
+        writeString(view, 12, "fmt ");
+        view.setUint32(16, 16, true);
+        view.setUint16(20, 1, true);
+        view.setUint16(22, 1, true);
+        view.setUint32(24, sampleRate, true);
+        view.setUint32(28, sampleRate * bytesPerSample, true);
+        view.setUint16(32, bytesPerSample, true);
+        view.setUint16(34, 16, true);
+        writeString(view, 36, "data");
+        view.setUint32(40, samples.length * bytesPerSample, true);
+        let offset = 44;
+        for (let i = 0; i < samples.length; i += 1) {{
+          const sample = Math.max(-1, Math.min(1, samples[i]));
+          view.setInt16(offset, sample < 0 ? sample * 0x8000 : sample * 0x7fff, true);
+          offset += 2;
+        }}
+        return new Blob([view], {{ type: "audio/wav" }});
+      }}
+
+      async function startRecording() {{
+        els.recordButton.disabled = true;
+        els.recordButton.textContent = "準備中";
+        try {{
+          await setupMic();
+          await state.audioContext.resume();
+        }} catch (error) {{
+          els.recordButton.disabled = false;
+          els.recordButton.textContent = "録音開始";
+          throw error;
+        }}
+        state.chunks = [];
+        state.recording = true;
+        els.recordButton.disabled = false;
+        els.recordButton.textContent = "録音停止";
+        els.recordButton.classList.add("is-recording");
+        setStatus(`${{selectedPhoneme().label}} 録音中`);
+      }}
+
+      async function stopRecording() {{
+        state.recording = false;
+        els.recordButton.textContent = "録音開始";
+        els.recordButton.classList.remove("is-recording");
+        const sampleRate = state.audioContext.sampleRate;
+        const raw = concatenate(state.chunks);
+        if (!raw.length) {{
+          setStatus("録音できませんでした");
+          return;
+        }}
+        const trimmed = applyFade(normalize(trimSilence(raw, sampleRate)), sampleRate);
+        if (!trimmed.length) {{
+          setStatus("音が小さすぎます");
+          return;
+        }}
+        const blob = encodeWav(trimmed, sampleRate);
+        const item = selectedPhoneme();
+        const take = {{
+          id: item.id,
+          blob,
+          samples: trimmed,
+          sampleRate,
+          duration: trimmed.length / sampleRate,
+          createdAt: new Date().toISOString(),
+        }};
+        state.takes[item.id] = take;
+        state.lastTake = take;
+        setStatus(`${{item.label}} 録音完了・マイク待機中`);
+        render();
+        saveTake(take, false).catch(() => setStatus(`${{item.label}} 録音完了・一時保存のみ`));
+      }}
+
+      async function playPath(path, label) {{
+        if (!path) {{
+          setStatus(`${{label}} がありません`);
+          return;
+        }}
+        if (state.activeAudio) {{
+          state.activeAudio.pause();
+          state.activeAudio.currentTime = 0;
+        }}
+        const resolved = new URL(path, window.location.href).href;
+        state.activeAudio = new Audio(resolved);
+        state.activeAudio.preload = "auto";
+        setStatus(`${{label}} 再生中`);
+        state.activeAudio.addEventListener("ended", () => setStatus("待機中"), {{ once: true }});
+        state.activeAudio.addEventListener("error", () => setStatus(`${{label}} を再生できません`), {{ once: true }});
+        await state.activeAudio.play();
+      }}
+
+      function updatePlaybackButtons() {{
+        els.jollyButton.textContent = state.activeKind === "jolly" && state.activeAudio && !state.activeAudio.paused ? "Jolly一時停止" : "Jolly再生";
+        els.currentButton.textContent = state.activeKind === "current" && state.activeAudio && !state.activeAudio.paused ? "現在一時停止" : "現在";
+      }}
+
+      async function toggleAudio(kind) {{
+        const item = selectedPhoneme();
+        const path = kind === "jolly" ? item.jolly : item.current;
+        const label = kind === "jolly" ? "Jolly参照" : "現在音源";
+        if (!path) {{
+          setStatus(`${{label}} がありません`);
+          return;
+        }}
+        const resolved = new URL(path, window.location.href).href;
+        if (state.activeAudio && state.activeKind === kind && state.activeAudio.src === resolved) {{
+          if (state.activeAudio.paused) {{
+            setStatus(`${{label}} 再生中`);
+            await state.activeAudio.play();
+          }} else {{
+            state.activeAudio.pause();
+            setStatus(`${{label}} 一時停止`);
+          }}
+          updatePlaybackButtons();
+          return;
+        }}
+        if (state.activeAudio) {{
+          state.activeAudio.pause();
+          state.activeAudio.currentTime = 0;
+        }}
+        state.activeKind = kind;
+        state.activeAudio = new Audio(resolved);
+        state.activeAudio.preload = "auto";
+        state.activeAudio.addEventListener("play", updatePlaybackButtons);
+        state.activeAudio.addEventListener("pause", updatePlaybackButtons);
+        state.activeAudio.addEventListener("ended", () => {{
+          setStatus("待機中");
+          updatePlaybackButtons();
+        }}, {{ once: true }});
+        state.activeAudio.addEventListener("error", () => {{
+          setStatus(`${{label}} を再生できません`);
+          updatePlaybackButtons();
+        }}, {{ once: true }});
+        setStatus(`${{label}} 再生中`);
+        await state.activeAudio.play();
+        updatePlaybackButtons();
+      }}
+
+      async function playTake() {{
+        const take = state.takes[selectedPhoneme().id];
+        if (!take) return;
+        const url = URL.createObjectURL(take.blob);
+        await playPath(url, "録音");
+      }}
+
+      async function acceptTake() {{
+        const item = selectedPhoneme();
+        const take = state.takes[item.id];
+        if (!take) return;
+        state.accepted[item.id] = {{
+          id: item.id,
+          label: item.label,
+          ipa: item.ipa,
+          type: item.type,
+          duration: take.duration,
+          createdAt: take.createdAt,
+          filename: `${{item.id}}.wav`,
+        }};
+        setStatus(`${{item.label}} 採用`);
+        render();
+        saveTake(take, true).catch(() => setStatus(`${{item.label}} 採用・保存はZIPで確保してください`));
+      }}
+
+      function nextItem() {{
+        const start = state.selected + 1;
+        for (let i = start; i < phonemes.length; i += 1) {{
+          if (!state.accepted[phonemes[i].id]) {{
+            state.selected = i;
+            state.lastTake = state.takes[phonemes[i].id] || null;
+            render();
+            return;
+          }}
+        }}
+        state.selected = (state.selected + 1) % phonemes.length;
+        state.lastTake = state.takes[selectedPhoneme().id] || null;
+        render();
+      }}
+
+      function openDb() {{
+        return new Promise((resolve, reject) => {{
+          const request = indexedDB.open("phonics-recording-studio", 1);
+          request.onupgradeneeded = () => {{
+            const db = request.result;
+            if (!db.objectStoreNames.contains("takes")) db.createObjectStore("takes", {{ keyPath: "id" }});
+          }};
+          request.onsuccess = () => resolve(request.result);
+          request.onerror = () => reject(request.error);
+        }});
+      }}
+
+      async function saveTake(take, accepted) {{
+        const db = await openDb();
+        await new Promise((resolve, reject) => {{
+          const tx = db.transaction("takes", "readwrite");
+          const store = tx.objectStore("takes");
+          const existingRequest = store.get(take.id);
+          existingRequest.onsuccess = () => {{
+            const existing = existingRequest.result;
+            store.put({{
+              id: take.id,
+              blob: take.blob,
+              sampleRate: take.sampleRate,
+              duration: take.duration,
+              createdAt: take.createdAt,
+              accepted: accepted || Boolean(state.accepted[take.id]) || Boolean(existing && existing.accepted),
+            }});
+          }};
+          existingRequest.onerror = () => reject(existingRequest.error);
+          tx.oncomplete = resolve;
+          tx.onerror = () => reject(tx.error);
+        }});
+      }}
+
+      async function loadTakes() {{
+        const db = await openDb();
+        const records = await new Promise((resolve, reject) => {{
+          const tx = db.transaction("takes", "readonly");
+          const request = tx.objectStore("takes").getAll();
+          request.onsuccess = () => resolve(request.result || []);
+          request.onerror = () => reject(request.error);
+        }});
+        for (const record of records) {{
+          const buffer = await record.blob.arrayBuffer();
+          const tempContext = new (window.AudioContext || window.webkitAudioContext)();
+          const audioBuffer = await tempContext.decodeAudioData(buffer.slice(0));
+          const samples = new Float32Array(audioBuffer.getChannelData(0));
+          await tempContext.close();
+          state.takes[record.id] = {{
+            id: record.id,
+            blob: record.blob,
+            sampleRate: record.sampleRate || audioBuffer.sampleRate,
+            duration: record.duration,
+            createdAt: record.createdAt,
+            samples,
+          }};
+          if (record.accepted) {{
+            const item = phonemes.find((entry) => entry.id === record.id);
+            if (item) {{
+              state.accepted[record.id] = {{
+                id: item.id,
+                label: item.label,
+                ipa: item.ipa,
+                type: item.type,
+                duration: record.duration,
+                createdAt: record.createdAt,
+                filename: `${{item.id}}.wav`,
+              }};
+            }}
+          }}
+        }}
+      }}
+
+      async function clearAll() {{
+        const db = await openDb();
+        await new Promise((resolve, reject) => {{
+          const tx = db.transaction("takes", "readwrite");
+          tx.objectStore("takes").clear();
+          tx.oncomplete = resolve;
+          tx.onerror = () => reject(tx.error);
+        }});
+        state.takes = {{}};
+        state.accepted = {{}};
+        state.lastTake = null;
+        setStatus("録音を削除しました");
+        render();
+      }}
+
+      function downloadBlob(blob, filename) {{
+        const url = URL.createObjectURL(blob);
+        els.downloadLink.href = url;
+        els.downloadLink.download = filename;
+        els.downloadLink.click();
+        window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+      }}
+
+      const crcTable = (() => {{
+        const table = new Uint32Array(256);
+        for (let n = 0; n < 256; n += 1) {{
+          let c = n;
+          for (let k = 0; k < 8; k += 1) c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1;
+          table[n] = c >>> 0;
+        }}
+        return table;
+      }})();
+
+      function crc32(bytes) {{
+        let c = 0xffffffff;
+        for (let i = 0; i < bytes.length; i += 1) c = crcTable[(c ^ bytes[i]) & 0xff] ^ (c >>> 8);
+        return (c ^ 0xffffffff) >>> 0;
+      }}
+
+      function dosDateTime(date) {{
+        return {{
+          time: (date.getHours() << 11) | (date.getMinutes() << 5) | Math.floor(date.getSeconds() / 2),
+          date: ((date.getFullYear() - 1980) << 9) | ((date.getMonth() + 1) << 5) | date.getDate(),
+        }};
+      }}
+
+      function uint16(value) {{
+        return new Uint8Array([value & 255, (value >>> 8) & 255]);
+      }}
+
+      function uint32(value) {{
+        return new Uint8Array([value & 255, (value >>> 8) & 255, (value >>> 16) & 255, (value >>> 24) & 255]);
+      }}
+
+      async function makeZip(files) {{
+        const encoder = new TextEncoder();
+        const localParts = [];
+        const centralParts = [];
+        let offset = 0;
+        for (const file of files) {{
+          const nameBytes = encoder.encode(file.name);
+          const data = new Uint8Array(await file.blob.arrayBuffer());
+          const crc = crc32(data);
+          const dt = dosDateTime(new Date());
+          const local = [
+            uint32(0x04034b50), uint16(20), uint16(0), uint16(0), uint16(dt.time), uint16(dt.date),
+            uint32(crc), uint32(data.length), uint32(data.length), uint16(nameBytes.length), uint16(0),
+            nameBytes, data,
+          ];
+          localParts.push(...local);
+          const central = [
+            uint32(0x02014b50), uint16(20), uint16(20), uint16(0), uint16(0), uint16(dt.time), uint16(dt.date),
+            uint32(crc), uint32(data.length), uint32(data.length), uint16(nameBytes.length), uint16(0), uint16(0),
+            uint16(0), uint16(0), uint32(0), uint32(offset), nameBytes,
+          ];
+          centralParts.push(...central);
+          offset += local.reduce((sum, part) => sum + part.length, 0);
+        }}
+        const centralSize = centralParts.reduce((sum, part) => sum + part.length, 0);
+        const end = [
+          uint32(0x06054b50), uint16(0), uint16(0), uint16(files.length), uint16(files.length),
+          uint32(centralSize), uint32(offset), uint16(0),
+        ];
+        return new Blob([...localParts, ...centralParts, ...end], {{ type: "application/zip" }});
+      }}
+
+      async function exportZip() {{
+        const files = [];
+        const manifest = {{
+          createdAt: new Date().toISOString(),
+          source: "original recordings from phonics-recording-studio.html",
+          jollyReferenceOnly: true,
+          recordings: [],
+        }};
+        for (const item of phonemes) {{
+          if (!state.accepted[item.id] || !state.takes[item.id]) continue;
+          const take = state.takes[item.id];
+          files.push({{ name: `phonemes/${{item.id}}.wav`, blob: take.blob }});
+          manifest.recordings.push({{
+            id: item.id,
+            label: item.label,
+            ipa: item.ipa,
+            type: item.type,
+            duration: take.duration,
+            filename: `phonemes/${{item.id}}.wav`,
+            createdAt: take.createdAt,
+          }});
+        }}
+        files.push({{ name: "manifest.json", blob: new Blob([JSON.stringify(manifest, null, 2)], {{ type: "application/json" }}) }});
+        const zip = await makeZip(files);
+        downloadBlob(zip, "phonics-recorded-phonemes.zip");
+      }}
+
+      function exportManifest() {{
+        const manifest = {{
+          createdAt: new Date().toISOString(),
+          accepted: Object.values(state.accepted),
+        }};
+        downloadBlob(new Blob([JSON.stringify(manifest, null, 2)], {{ type: "application/json" }}), "phonics-recording-manifest.json");
+      }}
+
+      els.queue.addEventListener("click", (event) => {{
+        const button = event.target.closest("[data-id]");
+        if (button) setSelectedById(button.dataset.id);
+      }});
+
+      els.search.addEventListener("input", (event) => {{
+        state.search = event.target.value;
+        renderQueue();
+      }});
+
+      els.jollyButton.addEventListener("click", () => toggleAudio("jolly").catch(() => setStatus("Jolly参照を再生できません")));
+      els.currentButton.addEventListener("click", () => toggleAudio("current").catch(() => setStatus("現在音源を再生できません")));
+      els.recordButton.addEventListener("click", () => {{
+        if (state.recording) stopRecording();
+        else startRecording().catch(() => setStatus("録音を開始できません"));
+      }});
+      els.micOffButton.addEventListener("click", () => turnMicOff().catch(() => setStatus("マイクOFFにできません")));
+      els.playTakeButton.addEventListener("click", () => playTake().catch(() => setStatus("録音を再生できません")));
+      els.acceptButton.addEventListener("click", () => acceptTake());
+      els.nextButton.addEventListener("click", () => nextItem());
+      els.exportZipButton.addEventListener("click", () => exportZip());
+      els.exportManifestButton.addEventListener("click", () => exportManifest());
+      els.clearButton.addEventListener("click", () => {{
+        if (window.confirm("録音済みテイクをすべて削除しますか？")) clearAll();
+      }});
+
+      document.addEventListener("keydown", (event) => {{
+        if (event.target.matches("input")) return;
+        if (event.code === "Space") {{
+          event.preventDefault();
+          els.recordButton.click();
+        }}
+        if (event.key === "j") els.jollyButton.click();
+        if (event.key === "p") els.playTakeButton.click();
+        if (event.key === "Enter") els.acceptButton.click();
+        if (event.key === "ArrowRight") nextItem();
+        if (event.key === "ArrowLeft") {{
+          state.selected = (state.selected - 1 + phonemes.length) % phonemes.length;
+          state.lastTake = state.takes[selectedPhoneme().id] || null;
+          render();
+        }}
+      }});
+
+      loadTakes().catch(() => setStatus("保存済み録音を読めません")).finally(render);
+    </script>
+  </body>
+</html>
+"""
+    OUT_PATH.write_text(html_text, encoding="utf-8")
+    print(f"wrote {OUT_PATH} ({len(phonemes)} phonemes)")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

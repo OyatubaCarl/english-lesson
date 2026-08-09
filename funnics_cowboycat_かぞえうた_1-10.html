@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cowboy Cat's Counting Song (1–10) — カウボーイキャットのかぞえうた</title>
+<style>
+:root{
+  --ink:#3a2c1f; --muted:#9a8b78; --paper:#fffdf7;
+  --sky:#7cc6d6; --sun:#f6b42c; --coral:#ff7a59; --grass:#5bb87a; --rope:#c98a3b;
+  --line:#ecd9bd;
+  --n1:#ff7a59;--n2:#f6b42c;--n3:#5bb87a;--n4:#7cc6d6;--n5:#a98bd6;
+  --n6:#ff9bb0;--n7:#f6b42c;--n8:#5bb87a;--n9:#7cc6d6;--n10:#ff7a59;
+}
+*{box-sizing:border-box}
+body{
+  font-family:"Hiragino Maru Gothic ProN","Hiragino Kaku Gothic ProN",system-ui,sans-serif;
+  color:var(--ink); line-height:1.7; margin:0 auto; max-width:760px;
+  padding:20px 16px 80px;
+  background:
+    radial-gradient(120% 90% at 50% -10%, #fff6df 0%, transparent 60%),
+    linear-gradient(180deg,#eaf7fb 0%, var(--paper) 360px);
+}
+header{text-align:center;margin-bottom:8px}
+.kicker{display:inline-block;background:var(--rope);color:#fff;border-radius:999px;
+  padding:3px 14px;font-size:.74rem;font-weight:800;letter-spacing:.04em}
+h1{font-size:1.55rem;margin:.35em 0 .1em;color:var(--coral)}
+h1 .ja{display:block;font-size:.92rem;color:var(--ink);font-weight:700;margin-top:2px}
+.lead{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 16px;
+  font-size:.9rem;box-shadow:0 3px 12px rgba(180,140,60,.10)}
+.lead b{color:var(--coral)}
+
+/* 数の帯 1-10 */
+.numstrip{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:18px 0 6px}
+.numstrip .n{display:flex;flex-direction:column;align-items:center;width:60px}
+.numstrip .bubble{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;
+  color:#fff;font-weight:900;font-size:1.3rem;box-shadow:0 3px 0 rgba(0,0,0,.12)}
+.numstrip .en{font-size:.72rem;font-weight:700;margin-top:3px}
+.numstrip .kana{font-size:.62rem;color:var(--muted)}
+.b1{background:var(--n1)}.b2{background:var(--n2)}.b3{background:var(--n3)}.b4{background:var(--n4)}
+.b5{background:var(--n5)}.b6{background:var(--n6)}.b7{background:var(--n7)}.b8{background:var(--n8)}
+.b9{background:var(--n9)}.b10{background:var(--n10)}
+
+section.song{background:#fff;border:1px solid var(--line);border-radius:18px;
+  padding:16px 18px;margin:22px 0;box-shadow:0 4px 16px rgba(180,140,60,.10)}
+.song h2{font-size:1.12rem;margin:.1em 0 .2em;color:var(--rope)}
+.song h2 small{color:var(--muted);font-weight:600;font-size:.78rem}
+.part{margin:12px 0}
+.part .tag{display:inline-block;background:#fff3d6;color:#b07a14;border-radius:7px;
+  padding:1px 10px;font-size:.74rem;font-weight:800;margin-bottom:4px}
+.lyric{margin:0;padding:6px 4px 4px}
+.lyric .l{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin:2px 0}
+.lyric .en{font-size:1.18rem;font-weight:800;letter-spacing:.01em}
+.lyric .en .big{color:var(--coral)}
+.lyric .ja{font-size:.8rem;color:var(--muted)}
+.act{color:var(--grass);font-weight:800;font-size:.82rem}
+.yee{color:var(--coral);font-weight:900}
+
+.easiest .l .en{font-size:1.3rem}
+.callresp{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;align-items:center;font-size:1.05rem}
+.callresp .who{font-size:.72rem;font-weight:800;color:var(--sky);text-align:right;white-space:nowrap}
+.callresp .who.kids{color:var(--coral)}
+
+table.num{border-collapse:collapse;width:100%;font-size:.88rem;margin-top:6px}
+table.num th,table.num td{border:1px solid var(--line);padding:5px 8px;text-align:center}
+table.num th{background:#fff7e6}
+table.num td.w{font-weight:800;color:var(--rope)}
+
+.actions{background:#f1faf3;border:1px solid #cdeccf;border-radius:12px;padding:10px 14px;font-size:.86rem}
+.actions li{margin:.2em 0}
+details.suno{margin-top:14px}
+details.suno summary{cursor:pointer;font-weight:800;color:var(--rope)}
+pre.suno{white-space:pre-wrap;background:#2b2620;color:#ffe7b3;border-radius:10px;
+  padding:12px 14px;font-size:.82rem;line-height:1.5;overflow:auto}
+.howto{font-size:.85rem;background:#eef7fb;border:1px solid #cfe7f0;border-radius:12px;padding:10px 14px}
+.note{font-size:.78rem;color:var(--muted);text-align:center;margin-top:28px}
+</style>
+</head>
+<body>
+
+<header>
+  <span class="kicker">🤠 Funnics Island ・ かぞえうた（いちばんやさしい）</span>
+  <h1>Cowboy Cat's Counting Song
+    <span class="ja">カウボーイキャットの かぞえうた（1〜10）</span>
+  </h1>
+</header>
+
+<div class="lead">
+<p>数える子・<b>Cowboy Cat</b> といっしょに、<b>1 から 10</b> をうたうだけの、いちばんやさしい数歌です。むずかしい言葉は使わず、<b>くりかえし・手びょうし・かけ声（Yee-haw!）</b>で、まねして歌えます。下に <b>数の表</b>・<b>動作ガイド</b>・<b>Suno用の歌詞ブロック</b>もつけました。</p>
+</div>
+
+<!-- 数の帯 -->
+<div class="numstrip" aria-label="1から10">
+  <div class="n"><div class="bubble b1">1</div><span class="en">one</span><span class="kana">ワン</span></div>
+  <div class="n"><div class="bubble b2">2</div><span class="en">two</span><span class="kana">トゥー</span></div>
+  <div class="n"><div class="bubble b3">3</div><span class="en">three</span><span class="kana">スリー</span></div>
+  <div class="n"><div class="bubble b4">4</div><span class="en">four</span><span class="kana">フォー</span></div>
+  <div class="n"><div class="bubble b5">5</div><span class="en">five</span><span class="kana">ファイヴ</span></div>
+  <div class="n"><div class="bubble b6">6</div><span class="en">six</span><span class="kana">スィックス</span></div>
+  <div class="n"><div class="bubble b7">7</div><span class="en">seven</span><span class="kana">セヴン</span></div>
+  <div class="n"><div class="bubble b8">8</div><span class="en">eight</span><span class="kana">エイト</span></div>
+  <div class="n"><div class="bubble b9">9</div><span class="en">nine</span><span class="kana">ナイン</span></div>
+  <div class="n"><div class="bubble b10">10</div><span class="en">ten</span><span class="kana">テン</span></div>
+</div>
+
+<!-- メインソング -->
+<section class="song">
+  <h2>🎵 Count with Cowboy Cat <small>／ カウボーイキャットと かぞえよう</small></h2>
+
+  <div class="part">
+    <span class="tag">Intro</span>
+    <div class="lyric">
+      <div class="l"><span class="en">Howdy! I'm Cowboy Cat.</span><span class="ja">やあ！ぼくはカウボーイキャット。</span></div>
+      <div class="l"><span class="en">I can count — just like that!</span><span class="ja">ぼく、数えられるよ、ほらね！</span></div>
+      <div class="l"><span class="en">Put on your hat and count with me,</span><span class="ja">ぼうしをかぶって、いっしょに数えよう、</span></div>
+      <div class="l"><span class="en">From <span class="big">one to ten</span> — one, two, three!</span><span class="ja">1から10まで、1・2・3！</span></div>
+    </div>
+  </div>
+
+  <div class="part">
+    <span class="tag">Chorus ・ かぞえあがり</span>
+    <div class="lyric">
+      <div class="l"><span class="en">One, two, three,</span> <span class="act">(clap clap)</span><span class="ja">1・2・3（パン パン）</span></div>
+      <div class="l"><span class="en">Four, five, six,</span> <span class="act">(clap clap)</span><span class="ja">4・5・6（パン パン）</span></div>
+      <div class="l"><span class="en">Seven, eight, nine,</span> <span class="act">(clap clap)</span><span class="ja">7・8・9（パン パン）</span></div>
+      <div class="l"><span class="en">and <span class="big">TEN</span>! <span class="yee">Yee-haw!</span></span><span class="ja">そして 10！イヤッホー！</span></div>
+    </div>
+  </div>
+
+  <div class="part">
+    <span class="tag">Verse ・ なにを数える？</span>
+    <div class="lyric">
+      <div class="l"><span class="en">One big sun,</span><span class="ja">ひとつの 大きな たいよう、</span></div>
+      <div class="l"><span class="en">Two brown boots,</span><span class="ja">ふたつの 茶色い ブーツ、</span></div>
+      <div class="l"><span class="en">Three tall hats,</span><span class="ja">みっつの 高い ぼうし、</span></div>
+      <div class="l"><span class="en">Four fat cows,</span><span class="ja">よっつの まるい ウシ、</span></div>
+      <div class="l"><span class="en">Five gold stars,</span><span class="ja">いつつの 金の ほし、</span></div>
+      <div class="l"><span class="en">Six small fish,</span><span class="ja">むっつの 小さな さかな、</span></div>
+      <div class="l"><span class="en">Seven white shells,</span><span class="ja">ななつの 白い 貝がら、</span></div>
+      <div class="l"><span class="en">Eight black birds,</span><span class="ja">やっつの 黒い とり、</span></div>
+      <div class="l"><span class="en">Nine red flags,</span><span class="ja">ここのつの 赤い はた、</span></div>
+      <div class="l"><span class="en">and <span class="big">TEN</span> happy cats — meow! <span class="yee">Yee-haw!</span></span><span class="ja">そして 10ぴきの しあわせな ねこ、ニャー！イヤッホー！</span></div>
+    </div>
+  </div>
+
+  <div class="part">
+    <span class="tag">Chorus ・ かぞえさがり</span>
+    <div class="lyric">
+      <div class="l"><span class="en">Ten, nine, eight,</span> <span class="act">(stomp stomp)</span><span class="ja">10・9・8（ドン ドン）</span></div>
+      <div class="l"><span class="en">Seven, six, five,</span> <span class="act">(stomp stomp)</span><span class="ja">7・6・5（ドン ドン）</span></div>
+      <div class="l"><span class="en">Four, three, two,</span> <span class="act">(stomp stomp)</span><span class="ja">4・3・2（ドン ドン）</span></div>
+      <div class="l"><span class="en">and <span class="big">ONE</span>! <span class="yee">Yee-haw!</span></span><span class="ja">そして 1！イヤッホー！</span></div>
+    </div>
+  </div>
+
+  <div class="part">
+    <span class="tag">Outro</span>
+    <div class="lyric">
+      <div class="l"><span class="en">One to ten, and ten to one,</span><span class="ja">1から10、10から1、</span></div>
+      <div class="l"><span class="en">Counting with Cowboy Cat is fun!</span><span class="ja">カウボーイキャットと 数えるの、たのしいね！</span></div>
+      <div class="l"><span class="en">Now it's your turn — count with me…</span><span class="ja">こんどは きみの番、いっしょに数えよう…</span></div>
+      <div class="l"><span class="en"><span class="big">One, two, three!</span> <span class="yee">Yee-haw, yippee!</span></span><span class="ja">1・2・3！イヤッホー、やったね！</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- いちばん簡単版（エコー） -->
+<section class="song easiest">
+  <h2>🎵 いちばん簡単版：Echo Count <small>／ まねっこ かぞえ</small></h2>
+  <p style="font-size:.85rem;color:var(--muted);margin:.2em 0 8px">Cowboy Cat が言ったら、すぐ <b>まねして</b> くりかえすだけ。歌う前のウォームアップにも。</p>
+  <div class="part">
+    <div class="callresp">
+      <span class="who">Cowboy Cat</span><span class="en">One!</span>
+      <span class="who kids">みんな</span><span class="en">One!</span>
+      <span class="who">Cowboy Cat</span><span class="en">Two!</span>
+      <span class="who kids">みんな</span><span class="en">Two!</span>
+      <span class="who">Cowboy Cat</span><span class="en">Three! … Four! … Five!</span>
+      <span class="who kids">みんな</span><span class="en">Three! … Four! … Five!</span>
+      <span class="who">Cowboy Cat</span><span class="en">Six! … Seven! … Eight!</span>
+      <span class="who kids">みんな</span><span class="en">Six! … Seven! … Eight!</span>
+      <span class="who">Cowboy Cat</span><span class="en">Nine! … <span class="big">TEN</span>!</span>
+      <span class="who kids">みんな</span><span class="en">Nine! … <span class="big">TEN</span>! <span class="yee">Yee-haw!</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- 数の表 -->
+<section class="song">
+  <h2>🔢 数の表 <small>／ Numbers 1–10</small></h2>
+  <table class="num">
+    <thead><tr><th>数</th><th>English</th><th>読み（参考）</th><th>日本語</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td class="w">one</td><td>ワン</td><td>いち</td></tr>
+      <tr><td>2</td><td class="w">two</td><td>トゥー</td><td>に</td></tr>
+      <tr><td>3</td><td class="w">three</td><td>スリー</td><td>さん</td></tr>
+      <tr><td>4</td><td class="w">four</td><td>フォー</td><td>し／よん</td></tr>
+      <tr><td>5</td><td class="w">five</td><td>ファイヴ</td><td>ご</td></tr>
+      <tr><td>6</td><td class="w">six</td><td>スィックス</td><td>ろく</td></tr>
+      <tr><td>7</td><td class="w">seven</td><td>セヴン</td><td>なな／しち</td></tr>
+      <tr><td>8</td><td class="w">eight</td><td>エイト</td><td>はち</td></tr>
+      <tr><td>9</td><td class="w">nine</td><td>ナイン</td><td>きゅう／く</td></tr>
+      <tr><td>10</td><td class="w">ten</td><td>テン</td><td>じゅう</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:.76rem;color:var(--muted);margin:.5em 0 0">※「読み（参考）」はあくまで目安。歌の音源で本物の発音を確認するのが一番です。</p>
+</section>
+
+<!-- 動作ガイド -->
+<section class="song">
+  <h2>🙌 からだ動作ガイド <small>／ Actions</small></h2>
+  <ul class="actions">
+    <li>🤠 <b>かぶる</b>：歌の前に「ぼうしをかぶる」しぐさ（Put on your hat）。</li>
+    <li>👏 <b>かぞえあがり</b>：3つごとに <b>手びょうし</b>（clap clap）。</li>
+    <li>👣 <b>かぞえさがり</b>：3つごとに <b>足ぶみ</b>（stomp stomp）。</li>
+    <li>🌟 <b>TEN / ONE</b>：両手を上げて <b>「Yee-haw!」</b>（イヤッホー！）。</li>
+    <li>🐾 指を <b>1本ずつ立てて</b>数えると、数と指がそろってわかりやすい。</li>
+  </ul>
+</section>
+
+<!-- Suno用 -->
+<section class="song">
+  <h2>🎙️ Suno / Udio 用 歌詞ブロック</h2>
+  <p class="howto">そのままコピーして音楽生成へ。数字は単語表記（one, two…）なので誤読しにくい構成です。スタイル欄は下のコメントを参考に。</p>
+  <details class="suno" open>
+    <summary>歌詞をコピー</summary>
+<pre class="suno">[Style: gentle children's country sing-along, slow tempo, simple acoustic guitar, hand claps, foot stomps, cheerful, easy to follow, call-and-response]
+
+[Intro]
+Howdy! I'm Cowboy Cat.
+I can count, just like that!
+Put on your hat and count with me,
+From one to ten, one, two, three!
+
+[Chorus - counting up]
+One, two, three, (clap clap)
+Four, five, six, (clap clap)
+Seven, eight, nine, (clap clap)
+and ten! Yee-haw!
+
+[Verse]
+One big sun,
+Two brown boots,
+Three tall hats,
+Four fat cows,
+Five gold stars,
+Six small fish,
+Seven white shells,
+Eight black birds,
+Nine red flags,
+and ten happy cats, meow! Yee-haw!
+
+[Chorus - counting down]
+Ten, nine, eight, (stomp stomp)
+Seven, six, five, (stomp stomp)
+Four, three, two, (stomp stomp)
+and one! Yee-haw!
+
+[Outro]
+One to ten, and ten to one,
+Counting with Cowboy Cat is fun!
+Now it's your turn, count with me,
+One, two, three! Yee-haw, yippee!</pre>
+  </details>
+</section>
+
+<section class="song">
+  <h2>📝 つかい方メモ</h2>
+  <div class="howto">
+  <p>① まず <b>Echo Count</b> でまねっこ → ② <b>Chorus（上り・下り）</b> を手足の動作つきで → ③ なれたら <b>Verse</b> で「何を数えるか」を絵カードと合わせて。</p>
+  <p>ねらいは <b>1〜10の数詞</b>＋<b>数えるリズム</b>。ものの名前（sun, cat, fish…）は「おまけ」なので、覚えさせなくてOK。たのしく声に出せれば大成功です。</p>
+  </div>
+</section>
+
+<p class="note">Funnics Island ／ Cowboy Cat counting song（1–10）・レビュー用ドラフト ／ index.html は未編集</p>
+</body>
+</html>

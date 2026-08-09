@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>H1-H10 文法解説レビュー</title>
+  <style>
+    :root {
+      --ink: #1f2937;
+      --muted: #64748b;
+      --line: #d9e2ec;
+      --panel: #ffffff;
+      --page: #f6f8fb;
+      --blue: #1d4ed8;
+      --green: #047857;
+      --orange: #c2410c;
+      --focus: #eff6ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--page);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+      line-height: 1.55;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #0f172a;
+      color: #fff;
+      border-bottom: 4px solid var(--orange);
+    }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(260px, 1fr) auto auto;
+      gap: 16px;
+      align-items: center;
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 16px 24px;
+    }
+
+    .title {
+      min-width: 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      margin-top: 2px;
+      color: #cbd5e1;
+      font-size: 13px;
+    }
+
+    select,
+    button,
+    textarea {
+      font: inherit;
+    }
+
+    select {
+      min-width: 280px;
+      padding: 9px 12px;
+      border: 1px solid #93c5fd;
+      border-radius: 6px;
+      color: var(--ink);
+      background: #fff;
+    }
+
+    button {
+      padding: 10px 18px;
+      border: 0;
+      border-radius: 6px;
+      color: #fff;
+      background: var(--green);
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      cursor: default;
+      opacity: .65;
+    }
+
+    main {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .lesson-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
+      gap: 20px;
+      align-items: stretch;
+      margin-bottom: 22px;
+    }
+
+    .lesson-meta,
+    .overall {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    h2 {
+      margin: 0 0 6px;
+      font-size: 28px;
+      letter-spacing: 0;
+    }
+
+    .focus {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #334155;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 94px;
+      resize: vertical;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 10px 12px;
+      color: var(--ink);
+      background: #fff;
+    }
+
+    textarea:focus,
+    select:focus {
+      outline: 3px solid #bfdbfe;
+      border-color: var(--blue);
+    }
+
+    .slide-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .slide-row {
+      display: grid;
+      grid-template-columns: minmax(360px, 48%) minmax(360px, 1fr);
+      gap: 18px;
+      align-items: start;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .image-wrap {
+      overflow: hidden;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      background: #eef2f7;
+    }
+
+    .image-wrap img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: contain;
+    }
+
+    .slide-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: #e2e8f0;
+      color: #334155;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .chip.jp { background: #dbeafe; color: #1e40af; }
+    .chip.en { background: #dcfce7; color: #166534; }
+    .chip.silent { background: #f1f5f9; color: #475569; }
+    .chip.part { background: #ffedd5; color: #9a3412; }
+
+    .field {
+      margin-top: 14px;
+    }
+
+    .audio textarea {
+      min-height: 124px;
+      background: var(--focus);
+    }
+
+    .comment textarea {
+      min-height: 86px;
+    }
+
+    .status {
+      min-width: 150px;
+      color: #d1fae5;
+      font-size: 13px;
+      text-align: right;
+    }
+
+    @media (max-width: 980px) {
+      .toolbar,
+      .lesson-head,
+      .slide-row {
+        grid-template-columns: 1fr;
+      }
+
+      select {
+        min-width: 100%;
+      }
+
+      .status {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="toolbar">
+      <div class="title">
+        <h1>H1-H10 文法解説レビュー</h1>
+        <div class="subtitle">スライド画像と音声テキストを並べて確認</div>
+      </div>
+      <select id="lessonSelect" aria-label="レッスン選択"></select>
+      <button id="saveButton" type="button">保存</button>
+      <div id="status" class="status"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="lesson-head">
+      <div class="lesson-meta">
+        <h2 id="lessonTitle"></h2>
+        <div id="lessonFocus" class="focus"></div>
+      </div>
+      <div class="overall">
+        <label for="overallComment">全体への修正コメント</label>
+        <textarea id="overallComment" placeholder="このレッスン全体への修正方針"></textarea>
+      </div>
+    </section>
+
+    <section id="slideList" class="slide-list"></section>
+  </main>
+
+  <script>
+    const state = {
+      data: null,
+      edits: { version: 1, lessons: {} },
+      currentLessonId: null,
+      dirty: false
+    };
+
+    const $ = (selector) => document.querySelector(selector);
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    function ensureLessonEdit(lessonId) {
+      if (!state.edits.lessons[lessonId]) {
+        state.edits.lessons[lessonId] = { overallComment: "", slides: {} };
+      }
+      return state.edits.lessons[lessonId];
+    }
+
+    function ensureSlideEdit(lessonId, slideId) {
+      const lessonEdit = ensureLessonEdit(lessonId);
+      if (!lessonEdit.slides[slideId]) {
+        lessonEdit.slides[slideId] = {};
+      }
+      return lessonEdit.slides[slideId];
+    }
+
+    function lessonById(id) {
+      return state.data.lessons.find((lesson) => lesson.id === id);
+    }
+
+    function mergedAudioText(lesson, slide) {
+      const edited = state.edits.lessons[lesson.id]?.slides?.[slide.id]?.audioText;
+      return edited ?? slide.audioText ?? "";
+    }
+
+    function mergedSlideComment(lesson, slide) {
+      return state.edits.lessons[lesson.id]?.slides?.[slide.id]?.slideComment ?? "";
+    }
+
+    function mergedOverallComment(lesson) {
+      return state.edits.lessons[lesson.id]?.overallComment ?? "";
+    }
+
+    function renderLessonOptions() {
+      const select = $("#lessonSelect");
+      select.innerHTML = state.data.lessons.map((lesson) => (
+        `<option value="${lesson.id}">${escapeHtml(lesson.code)} ${escapeHtml(lesson.title)}</option>`
+      )).join("");
+      select.value = state.currentLessonId;
+    }
+
+    function renderLesson() {
+      const lesson = lessonById(state.currentLessonId);
+      $("#lessonTitle").textContent = `${lesson.code} ${lesson.title}`;
+      $("#lessonFocus").textContent = lesson.focus;
+      $("#overallComment").value = mergedOverallComment(lesson);
+
+      $("#slideList").innerHTML = lesson.slides.map((slide) => {
+        const kindLabel = slide.kind === "jp" ? "日本語音声" : slide.kind === "en" ? "英語音声" : "無音";
+        const kindClass = slide.kind === "jp" ? "jp" : slide.kind === "en" ? "en" : "silent";
+        return `
+          <article class="slide-row" data-slide-id="${escapeHtml(slide.id)}">
+            <div class="image-wrap">
+              <img src="${escapeHtml(slide.image)}" alt="${escapeHtml(lesson.code)} ${escapeHtml(slide.id)}">
+            </div>
+            <div class="editor">
+              <div class="slide-meta">
+                <span class="chip">#${slide.index}</span>
+                <span class="chip part">${escapeHtml(slide.part)}</span>
+                <span class="chip ${kindClass}">${kindLabel}</span>
+                <span class="chip">${escapeHtml(slide.id)}</span>
+              </div>
+              <div class="field audio">
+                <label>音声テキストを直接修正</label>
+                <textarea class="audioText">${escapeHtml(mergedAudioText(lesson, slide))}</textarea>
+              </div>
+              <div class="field comment">
+                <label>スライドごとの修正コメント</label>
+                <textarea class="slideComment" placeholder="画像・構成・間の取り方など">${escapeHtml(mergedSlideComment(lesson, slide))}</textarea>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function setDirty(dirty) {
+      state.dirty = dirty;
+      $("#status").textContent = dirty ? "未保存の変更あり" : "";
+    }
+
+    async function loadEdits() {
+      try {
+        const response = await fetch("/api/edits", { cache: "no-store" });
+        if (response.ok) {
+          state.edits = await response.json();
+          return;
+        }
+      } catch (_) {
+        const local = localStorage.getItem("h1_h10_review_edits");
+        if (local) state.edits = JSON.parse(local);
+      }
+    }
+
+    async function saveEdits() {
+      $("#saveButton").disabled = true;
+      $("#status").textContent = "保存中";
+      const payload = {
+        ...state.edits,
+        version: 1,
+        savedAt: new Date().toISOString()
+      };
+
+      try {
+        const response = await fetch("/api/save", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        if (!response.ok) throw new Error("save failed");
+        state.edits = payload;
+        setDirty(false);
+        $("#status").textContent = "保存しました";
+      } catch (_) {
+        localStorage.setItem("h1_h10_review_edits", JSON.stringify(payload));
+        state.edits = payload;
+        setDirty(false);
+        $("#status").textContent = "ブラウザ内に保存しました";
+      } finally {
+        $("#saveButton").disabled = false;
+      }
+    }
+
+    async function init() {
+      const dataResponse = await fetch("review_data.json", { cache: "no-store" });
+      state.data = await dataResponse.json();
+      await loadEdits();
+      state.currentLessonId = state.data.lessons[0].id;
+      renderLessonOptions();
+      renderLesson();
+
+      $("#lessonSelect").addEventListener("change", (event) => {
+        state.currentLessonId = event.target.value;
+        renderLesson();
+      });
+
+      $("#overallComment").addEventListener("input", (event) => {
+        ensureLessonEdit(state.currentLessonId).overallComment = event.target.value;
+        setDirty(true);
+      });
+
+      $("#slideList").addEventListener("input", (event) => {
+        const row = event.target.closest(".slide-row");
+        if (!row) return;
+        const slideEdit = ensureSlideEdit(state.currentLessonId, row.dataset.slideId);
+        if (event.target.classList.contains("audioText")) {
+          slideEdit.audioText = event.target.value;
+        }
+        if (event.target.classList.contains("slideComment")) {
+          slideEdit.slideComment = event.target.value;
+        }
+        setDirty(true);
+      });
+
+      $("#saveButton").addEventListener("click", saveEdits);
+    }
+
+    init().catch((error) => {
+      $("#status").textContent = "読み込みに失敗しました";
+      console.error(error);
+    });
+  </script>
+</body>
+</html>

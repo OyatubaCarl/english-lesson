@@ -1,0 +1,3810 @@
+{
+  "provider": "espeak-ng",
+  "voice": "en-us",
+  "speed": 120,
+  "amplitude": 160,
+  "phonemes": [
+    {
+      "id": "p",
+      "label": "p",
+      "ipa": "p",
+      "type": "stop",
+      "audio": "audio/phonics-card-demo/phonemes/p.mp3"
+    },
+    {
+      "id": "b",
+      "label": "b",
+      "ipa": "b",
+      "type": "stop",
+      "audio": "audio/phonics-card-demo/phonemes/b.mp3"
+    },
+    {
+      "id": "t",
+      "label": "t",
+      "ipa": "t",
+      "type": "stop",
+      "audio": "audio/phonics-card-demo/phonemes/t.mp3"
+    },
+    {
+      "id": "d",
+      "label": "d",
+      "ipa": "d",
+      "type": "stop",
+      "audio": "audio/phonics-card-demo/phonemes/d.mp3"
+    },
+    {
+      "id": "k",
+      "label": "c/k",
+      "ipa": "k",
+      "type": "stop",
+      "audio": "audio/phonics-card-demo/phonemes/k.mp3"
+    },
+    {
+      "id": "g",
+      "label": "g",
+      "ipa": "g",
+      "type": "stop",
+      "audio": "audio/phonics-card-demo/phonemes/g.mp3"
+    },
+    {
+      "id": "m",
+      "label": "m",
+      "ipa": "m",
+      "type": "nasal",
+      "audio": "audio/phonics-card-demo/phonemes/m.mp3"
+    },
+    {
+      "id": "n",
+      "label": "n",
+      "ipa": "n",
+      "type": "nasal",
+      "audio": "audio/phonics-card-demo/phonemes/n.mp3"
+    },
+    {
+      "id": "ng",
+      "label": "ng",
+      "ipa": "ŋ",
+      "type": "nasal",
+      "audio": "audio/phonics-card-demo/phonemes/ng.mp3"
+    },
+    {
+      "id": "f",
+      "label": "f",
+      "ipa": "f",
+      "type": "fricative",
+      "audio": "audio/phonics-card-demo/phonemes/f.mp3"
+    },
+    {
+      "id": "v",
+      "label": "v",
+      "ipa": "v",
+      "type": "fricative",
+      "audio": "audio/phonics-card-demo/phonemes/v.mp3"
+    },
+    {
+      "id": "s",
+      "label": "s",
+      "ipa": "s",
+      "type": "fricative",
+      "audio": "audio/phonics-card-demo/phonemes/s.mp3"
+    },
+    {
+      "id": "z",
+      "label": "z",
+      "ipa": "z",
+      "type": "fricative",
+      "audio": "audio/phonics-card-demo/phonemes/z.mp3"
+    },
+    {
+      "id": "h",
+      "label": "h",
+      "ipa": "h",
+      "type": "fricative",
+      "audio": "audio/phonics-card-demo/phonemes/h.mp3"
+    },
+    {
+      "id": "l",
+      "label": "l",
+      "ipa": "l",
+      "type": "approximant",
+      "audio": "audio/phonics-card-demo/phonemes/l.mp3"
+    },
+    {
+      "id": "r",
+      "label": "r",
+      "ipa": "r",
+      "type": "approximant",
+      "audio": "audio/phonics-card-demo/phonemes/r.mp3"
+    },
+    {
+      "id": "w",
+      "label": "w",
+      "ipa": "w",
+      "type": "approximant",
+      "audio": "audio/phonics-card-demo/phonemes/w.mp3"
+    },
+    {
+      "id": "y",
+      "label": "y",
+      "ipa": "j",
+      "type": "approximant",
+      "audio": "audio/phonics-card-demo/phonemes/y.mp3"
+    },
+    {
+      "id": "sh",
+      "label": "sh",
+      "ipa": "ʃ",
+      "type": "fricative",
+      "audio": "audio/phonics-card-demo/phonemes/sh.mp3"
+    },
+    {
+      "id": "ch",
+      "label": "ch",
+      "ipa": "tʃ",
+      "type": "affricate",
+      "audio": "audio/phonics-card-demo/phonemes/ch.mp3"
+    },
+    {
+      "id": "j",
+      "label": "j",
+      "ipa": "dʒ",
+      "type": "affricate",
+      "audio": "audio/phonics-card-demo/phonemes/j.mp3"
+    },
+    {
+      "id": "th_voiceless",
+      "label": "th",
+      "ipa": "θ",
+      "type": "fricative",
+      "audio": "audio/phonics-card-demo/phonemes/th_voiceless.mp3"
+    },
+    {
+      "id": "th_voiced",
+      "label": "th",
+      "ipa": "ð",
+      "type": "fricative",
+      "audio": "audio/phonics-card-demo/phonemes/th_voiced.mp3"
+    },
+    {
+      "id": "kw",
+      "label": "qu",
+      "ipa": "kw",
+      "type": "cluster",
+      "audio": "audio/phonics-card-demo/phonemes/kw.mp3"
+    },
+    {
+      "id": "ks",
+      "label": "x",
+      "ipa": "ks",
+      "type": "cluster",
+      "audio": "audio/phonics-card-demo/phonemes/ks.mp3"
+    },
+    {
+      "id": "ae",
+      "label": "short a",
+      "ipa": "æ",
+      "type": "vowel",
+      "audio": "audio/phonics-card-demo/phonemes/ae.mp3"
+    },
+    {
+      "id": "eh",
+      "label": "short e",
+      "ipa": "ɛ",
+      "type": "vowel",
+      "audio": "audio/phonics-card-demo/phonemes/eh.mp3"
+    },
+    {
+      "id": "ih",
+      "label": "short i",
+      "ipa": "ɪ",
+      "type": "vowel",
+      "audio": "audio/phonics-card-demo/phonemes/ih.mp3"
+    },
+    {
+      "id": "ah",
+      "label": "short o",
+      "ipa": "ɑ",
+      "type": "vowel",
+      "audio": "audio/phonics-card-demo/phonemes/ah.mp3"
+    },
+    {
+      "id": "uh",
+      "label": "short u",
+      "ipa": "ʌ",
+      "type": "vowel",
+      "audio": "audio/phonics-card-demo/phonemes/uh.mp3"
+    }
+  ],
+  "words": [
+    {
+      "id": "pat",
+      "word": "pat",
+      "ipa": "pæt",
+      "segments": [
+        "p",
+        "æ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/pat.mp3"
+    },
+    {
+      "id": "map",
+      "word": "map",
+      "ipa": "mæp",
+      "segments": [
+        "m",
+        "æ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "m",
+          "ipa": "/m/",
+          "sound": "m"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/map.mp3"
+    },
+    {
+      "id": "sat",
+      "word": "sat",
+      "ipa": "sæt",
+      "segments": [
+        "s",
+        "æ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "s",
+          "ipa": "/s/",
+          "sound": "s"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/sat.mp3"
+    },
+    {
+      "id": "fan",
+      "word": "fan",
+      "ipa": "fæn",
+      "segments": [
+        "f",
+        "æ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "f",
+          "ipa": "/f/",
+          "sound": "f"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/fan.mp3"
+    },
+    {
+      "id": "cat",
+      "word": "cat",
+      "ipa": "kæt",
+      "segments": [
+        "k",
+        "æ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "c",
+          "ipa": "/k/",
+          "sound": "k"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/cat.mp3"
+    },
+    {
+      "id": "bat",
+      "word": "bat",
+      "ipa": "bæt",
+      "segments": [
+        "b",
+        "æ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "b",
+          "ipa": "/b/",
+          "sound": "b"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/bat.mp3"
+    },
+    {
+      "id": "mat",
+      "word": "mat",
+      "ipa": "mæt",
+      "segments": [
+        "m",
+        "æ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "m",
+          "ipa": "/m/",
+          "sound": "m"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/mat.mp3"
+    },
+    {
+      "id": "rat",
+      "word": "rat",
+      "ipa": "ræt",
+      "segments": [
+        "r",
+        "æ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "r",
+          "ipa": "/r/",
+          "sound": "r"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/rat.mp3"
+    },
+    {
+      "id": "hat",
+      "word": "hat",
+      "ipa": "hæt",
+      "segments": [
+        "h",
+        "æ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "h",
+          "ipa": "/h/",
+          "sound": "h"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/hat.mp3"
+    },
+    {
+      "id": "cap",
+      "word": "cap",
+      "ipa": "kæp",
+      "segments": [
+        "k",
+        "æ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "c",
+          "ipa": "/k/",
+          "sound": "k"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/cap.mp3"
+    },
+    {
+      "id": "tap",
+      "word": "tap",
+      "ipa": "tæp",
+      "segments": [
+        "t",
+        "æ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/tap.mp3"
+    },
+    {
+      "id": "lap",
+      "word": "lap",
+      "ipa": "læp",
+      "segments": [
+        "l",
+        "æ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "l",
+          "ipa": "/l/",
+          "sound": "l"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/lap.mp3"
+    },
+    {
+      "id": "nap",
+      "word": "nap",
+      "ipa": "næp",
+      "segments": [
+        "n",
+        "æ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/nap.mp3"
+    },
+    {
+      "id": "bag",
+      "word": "bag",
+      "ipa": "bæg",
+      "segments": [
+        "b",
+        "æ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "b",
+          "ipa": "/b/",
+          "sound": "b"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/bag.mp3"
+    },
+    {
+      "id": "tag",
+      "word": "tag",
+      "ipa": "tæg",
+      "segments": [
+        "t",
+        "æ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/tag.mp3"
+    },
+    {
+      "id": "rag",
+      "word": "rag",
+      "ipa": "ræg",
+      "segments": [
+        "r",
+        "æ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "r",
+          "ipa": "/r/",
+          "sound": "r"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/rag.mp3"
+    },
+    {
+      "id": "wag",
+      "word": "wag",
+      "ipa": "wæg",
+      "segments": [
+        "w",
+        "æ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "w",
+          "ipa": "/w/",
+          "sound": "w"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/wag.mp3"
+    },
+    {
+      "id": "jam",
+      "word": "jam",
+      "ipa": "dʒæm",
+      "segments": [
+        "j",
+        "æ",
+        "m"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "j",
+          "ipa": "/dʒ/",
+          "sound": "j"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "m",
+          "ipa": "/m/",
+          "sound": "m"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/jam.mp3"
+    },
+    {
+      "id": "ram",
+      "word": "ram",
+      "ipa": "ræm",
+      "segments": [
+        "r",
+        "æ",
+        "m"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "r",
+          "ipa": "/r/",
+          "sound": "r"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "m",
+          "ipa": "/m/",
+          "sound": "m"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/ram.mp3"
+    },
+    {
+      "id": "ham",
+      "word": "ham",
+      "ipa": "hæm",
+      "segments": [
+        "h",
+        "æ",
+        "m"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "h",
+          "ipa": "/h/",
+          "sound": "h"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "m",
+          "ipa": "/m/",
+          "sound": "m"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/ham.mp3"
+    },
+    {
+      "id": "can",
+      "word": "can",
+      "ipa": "kæn",
+      "segments": [
+        "k",
+        "æ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "c",
+          "ipa": "/k/",
+          "sound": "k"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/can.mp3"
+    },
+    {
+      "id": "man",
+      "word": "man",
+      "ipa": "mæn",
+      "segments": [
+        "m",
+        "æ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "m",
+          "ipa": "/m/",
+          "sound": "m"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/man.mp3"
+    },
+    {
+      "id": "pan",
+      "word": "pan",
+      "ipa": "pæn",
+      "segments": [
+        "p",
+        "æ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/pan.mp3"
+    },
+    {
+      "id": "van",
+      "word": "van",
+      "ipa": "væn",
+      "segments": [
+        "v",
+        "æ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "v",
+          "ipa": "/v/",
+          "sound": "v"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/van.mp3"
+    },
+    {
+      "id": "wax",
+      "word": "wax",
+      "ipa": "wæks",
+      "segments": [
+        "w",
+        "æ",
+        "ks"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "w",
+          "ipa": "/w/",
+          "sound": "w"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "x",
+          "ipa": "/ks/",
+          "sound": "ks"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/wax.mp3"
+    },
+    {
+      "id": "back",
+      "word": "back",
+      "ipa": "bæk",
+      "segments": [
+        "b",
+        "æ",
+        "k"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "b",
+          "ipa": "/b/",
+          "sound": "b"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "ck",
+          "ipa": "/k/",
+          "sound": "k"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/back.mp3"
+    },
+    {
+      "id": "pack",
+      "word": "pack",
+      "ipa": "pæk",
+      "segments": [
+        "p",
+        "æ",
+        "k"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "ck",
+          "ipa": "/k/",
+          "sound": "k"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/pack.mp3"
+    },
+    {
+      "id": "snap",
+      "word": "snap",
+      "ipa": "snæp",
+      "segments": [
+        "s",
+        "n",
+        "æ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "s",
+          "ipa": "/s/",
+          "sound": "s"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/snap.mp3"
+    },
+    {
+      "id": "flag",
+      "word": "flag",
+      "ipa": "flæg",
+      "segments": [
+        "f",
+        "l",
+        "æ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "f",
+          "ipa": "/f/",
+          "sound": "f"
+        },
+        {
+          "grapheme": "l",
+          "ipa": "/l/",
+          "sound": "l"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/flag.mp3"
+    },
+    {
+      "id": "clap",
+      "word": "clap",
+      "ipa": "klæp",
+      "segments": [
+        "k",
+        "l",
+        "æ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "c",
+          "ipa": "/k/",
+          "sound": "k"
+        },
+        {
+          "grapheme": "l",
+          "ipa": "/l/",
+          "sound": "l"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/clap.mp3"
+    },
+    {
+      "id": "crab",
+      "word": "crab",
+      "ipa": "kræb",
+      "segments": [
+        "k",
+        "r",
+        "æ",
+        "b"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "c",
+          "ipa": "/k/",
+          "sound": "k"
+        },
+        {
+          "grapheme": "r",
+          "ipa": "/r/",
+          "sound": "r"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "b",
+          "ipa": "/b/",
+          "sound": "b"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/crab.mp3"
+    },
+    {
+      "id": "trap",
+      "word": "trap",
+      "ipa": "træp",
+      "segments": [
+        "t",
+        "r",
+        "æ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        },
+        {
+          "grapheme": "r",
+          "ipa": "/r/",
+          "sound": "r"
+        },
+        {
+          "grapheme": "a",
+          "ipa": "/æ/",
+          "sound": "æ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/trap.mp3"
+    },
+    {
+      "id": "pen",
+      "word": "pen",
+      "ipa": "pɛn",
+      "segments": [
+        "p",
+        "ɛ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/pen.mp3"
+    },
+    {
+      "id": "red",
+      "word": "red",
+      "ipa": "rɛd",
+      "segments": [
+        "r",
+        "ɛ",
+        "d"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "r",
+          "ipa": "/r/",
+          "sound": "r"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "d",
+          "ipa": "/d/",
+          "sound": "d"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/red.mp3"
+    },
+    {
+      "id": "bed",
+      "word": "bed",
+      "ipa": "bɛd",
+      "segments": [
+        "b",
+        "ɛ",
+        "d"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "b",
+          "ipa": "/b/",
+          "sound": "b"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "d",
+          "ipa": "/d/",
+          "sound": "d"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/bed.mp3"
+    },
+    {
+      "id": "hen",
+      "word": "hen",
+      "ipa": "hɛn",
+      "segments": [
+        "h",
+        "ɛ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "h",
+          "ipa": "/h/",
+          "sound": "h"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/hen.mp3"
+    },
+    {
+      "id": "ten",
+      "word": "ten",
+      "ipa": "tɛn",
+      "segments": [
+        "t",
+        "ɛ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/ten.mp3"
+    },
+    {
+      "id": "men",
+      "word": "men",
+      "ipa": "mɛn",
+      "segments": [
+        "m",
+        "ɛ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "m",
+          "ipa": "/m/",
+          "sound": "m"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/men.mp3"
+    },
+    {
+      "id": "pet",
+      "word": "pet",
+      "ipa": "pɛt",
+      "segments": [
+        "p",
+        "ɛ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/pet.mp3"
+    },
+    {
+      "id": "wet",
+      "word": "wet",
+      "ipa": "wɛt",
+      "segments": [
+        "w",
+        "ɛ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "w",
+          "ipa": "/w/",
+          "sound": "w"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/wet.mp3"
+    },
+    {
+      "id": "net",
+      "word": "net",
+      "ipa": "nɛt",
+      "segments": [
+        "n",
+        "ɛ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/net.mp3"
+    },
+    {
+      "id": "jet",
+      "word": "jet",
+      "ipa": "dʒɛt",
+      "segments": [
+        "j",
+        "ɛ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "j",
+          "ipa": "/dʒ/",
+          "sound": "j"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/jet.mp3"
+    },
+    {
+      "id": "vet",
+      "word": "vet",
+      "ipa": "vɛt",
+      "segments": [
+        "v",
+        "ɛ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "v",
+          "ipa": "/v/",
+          "sound": "v"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/vet.mp3"
+    },
+    {
+      "id": "leg",
+      "word": "leg",
+      "ipa": "lɛg",
+      "segments": [
+        "l",
+        "ɛ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "l",
+          "ipa": "/l/",
+          "sound": "l"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/leg.mp3"
+    },
+    {
+      "id": "peg",
+      "word": "peg",
+      "ipa": "pɛg",
+      "segments": [
+        "p",
+        "ɛ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/peg.mp3"
+    },
+    {
+      "id": "web",
+      "word": "web",
+      "ipa": "wɛb",
+      "segments": [
+        "w",
+        "ɛ",
+        "b"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "w",
+          "ipa": "/w/",
+          "sound": "w"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "b",
+          "ipa": "/b/",
+          "sound": "b"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/web.mp3"
+    },
+    {
+      "id": "yes",
+      "word": "yes",
+      "ipa": "jɛs",
+      "segments": [
+        "y",
+        "ɛ",
+        "s"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "y",
+          "ipa": "/j/",
+          "sound": "y"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "s",
+          "ipa": "/s/",
+          "sound": "s"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/yes.mp3"
+    },
+    {
+      "id": "shell",
+      "word": "shell",
+      "ipa": "ʃɛl",
+      "segments": [
+        "sh",
+        "ɛ",
+        "l"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "sh",
+          "ipa": "/ʃ/",
+          "sound": "sh"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "ll",
+          "ipa": "/l/",
+          "sound": "l"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/shell.mp3"
+    },
+    {
+      "id": "chess",
+      "word": "chess",
+      "ipa": "tʃɛs",
+      "segments": [
+        "ch",
+        "ɛ",
+        "s"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "ch",
+          "ipa": "/tʃ/",
+          "sound": "ch"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "ss",
+          "ipa": "/s/",
+          "sound": "s"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/chess.mp3"
+    },
+    {
+      "id": "then",
+      "word": "then",
+      "ipa": "ðɛn",
+      "segments": [
+        "th_voiced",
+        "ɛ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "th",
+          "ipa": "/ð/",
+          "sound": "th_voiced"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/then.mp3"
+    },
+    {
+      "id": "best",
+      "word": "best",
+      "ipa": "bɛst",
+      "segments": [
+        "b",
+        "ɛ",
+        "s",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "b",
+          "ipa": "/b/",
+          "sound": "b"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "s",
+          "ipa": "/s/",
+          "sound": "s"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/best.mp3"
+    },
+    {
+      "id": "desk",
+      "word": "desk",
+      "ipa": "dɛsk",
+      "segments": [
+        "d",
+        "ɛ",
+        "s",
+        "k"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "d",
+          "ipa": "/d/",
+          "sound": "d"
+        },
+        {
+          "grapheme": "e",
+          "ipa": "/ɛ/",
+          "sound": "ɛ"
+        },
+        {
+          "grapheme": "s",
+          "ipa": "/s/",
+          "sound": "s"
+        },
+        {
+          "grapheme": "k",
+          "ipa": "/k/",
+          "sound": "k"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/desk.mp3"
+    },
+    {
+      "id": "sit",
+      "word": "sit",
+      "ipa": "sɪt",
+      "segments": [
+        "s",
+        "ɪ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "s",
+          "ipa": "/s/",
+          "sound": "s"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/sit.mp3"
+    },
+    {
+      "id": "pin",
+      "word": "pin",
+      "ipa": "pɪn",
+      "segments": [
+        "p",
+        "ɪ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/pin.mp3"
+    },
+    {
+      "id": "lip",
+      "word": "lip",
+      "ipa": "lɪp",
+      "segments": [
+        "l",
+        "ɪ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "l",
+          "ipa": "/l/",
+          "sound": "l"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/lip.mp3"
+    },
+    {
+      "id": "win",
+      "word": "win",
+      "ipa": "wɪn",
+      "segments": [
+        "w",
+        "ɪ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "w",
+          "ipa": "/w/",
+          "sound": "w"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/win.mp3"
+    },
+    {
+      "id": "pig",
+      "word": "pig",
+      "ipa": "pɪg",
+      "segments": [
+        "p",
+        "ɪ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/pig.mp3"
+    },
+    {
+      "id": "wig",
+      "word": "wig",
+      "ipa": "wɪg",
+      "segments": [
+        "w",
+        "ɪ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "w",
+          "ipa": "/w/",
+          "sound": "w"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/wig.mp3"
+    },
+    {
+      "id": "dig",
+      "word": "dig",
+      "ipa": "dɪg",
+      "segments": [
+        "d",
+        "ɪ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "d",
+          "ipa": "/d/",
+          "sound": "d"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/dig.mp3"
+    },
+    {
+      "id": "big",
+      "word": "big",
+      "ipa": "bɪg",
+      "segments": [
+        "b",
+        "ɪ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "b",
+          "ipa": "/b/",
+          "sound": "b"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/big.mp3"
+    },
+    {
+      "id": "fig",
+      "word": "fig",
+      "ipa": "fɪg",
+      "segments": [
+        "f",
+        "ɪ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "f",
+          "ipa": "/f/",
+          "sound": "f"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/fig.mp3"
+    },
+    {
+      "id": "kid",
+      "word": "kid",
+      "ipa": "kɪd",
+      "segments": [
+        "k",
+        "ɪ",
+        "d"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "k",
+          "ipa": "/k/",
+          "sound": "k"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "d",
+          "ipa": "/d/",
+          "sound": "d"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/kid.mp3"
+    },
+    {
+      "id": "lid",
+      "word": "lid",
+      "ipa": "lɪd",
+      "segments": [
+        "l",
+        "ɪ",
+        "d"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "l",
+          "ipa": "/l/",
+          "sound": "l"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "d",
+          "ipa": "/d/",
+          "sound": "d"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/lid.mp3"
+    },
+    {
+      "id": "rip",
+      "word": "rip",
+      "ipa": "rɪp",
+      "segments": [
+        "r",
+        "ɪ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "r",
+          "ipa": "/r/",
+          "sound": "r"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/rip.mp3"
+    },
+    {
+      "id": "zip",
+      "word": "zip",
+      "ipa": "zɪp",
+      "segments": [
+        "z",
+        "ɪ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "z",
+          "ipa": "/z/",
+          "sound": "z"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/zip.mp3"
+    },
+    {
+      "id": "bin",
+      "word": "bin",
+      "ipa": "bɪn",
+      "segments": [
+        "b",
+        "ɪ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "b",
+          "ipa": "/b/",
+          "sound": "b"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/bin.mp3"
+    },
+    {
+      "id": "fin",
+      "word": "fin",
+      "ipa": "fɪn",
+      "segments": [
+        "f",
+        "ɪ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "f",
+          "ipa": "/f/",
+          "sound": "f"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/fin.mp3"
+    },
+    {
+      "id": "hit",
+      "word": "hit",
+      "ipa": "hɪt",
+      "segments": [
+        "h",
+        "ɪ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "h",
+          "ipa": "/h/",
+          "sound": "h"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/hit.mp3"
+    },
+    {
+      "id": "kit",
+      "word": "kit",
+      "ipa": "kɪt",
+      "segments": [
+        "k",
+        "ɪ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "k",
+          "ipa": "/k/",
+          "sound": "k"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/kit.mp3"
+    },
+    {
+      "id": "fix",
+      "word": "fix",
+      "ipa": "fɪks",
+      "segments": [
+        "f",
+        "ɪ",
+        "ks"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "f",
+          "ipa": "/f/",
+          "sound": "f"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "x",
+          "ipa": "/ks/",
+          "sound": "ks"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/fix.mp3"
+    },
+    {
+      "id": "fish",
+      "word": "fish",
+      "ipa": "fɪʃ",
+      "segments": [
+        "f",
+        "ɪ",
+        "sh"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "f",
+          "ipa": "/f/",
+          "sound": "f"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "sh",
+          "ipa": "/ʃ/",
+          "sound": "sh"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/fish.mp3"
+    },
+    {
+      "id": "ship",
+      "word": "ship",
+      "ipa": "ʃɪp",
+      "segments": [
+        "sh",
+        "ɪ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "sh",
+          "ipa": "/ʃ/",
+          "sound": "sh"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/ship.mp3"
+    },
+    {
+      "id": "chip",
+      "word": "chip",
+      "ipa": "tʃɪp",
+      "segments": [
+        "ch",
+        "ɪ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "ch",
+          "ipa": "/tʃ/",
+          "sound": "ch"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/chip.mp3"
+    },
+    {
+      "id": "thin",
+      "word": "thin",
+      "ipa": "θɪn",
+      "segments": [
+        "th",
+        "ɪ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "th",
+          "ipa": "/θ/",
+          "sound": "th"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/thin.mp3"
+    },
+    {
+      "id": "this",
+      "word": "this",
+      "ipa": "ðɪs",
+      "segments": [
+        "th_voiced",
+        "ɪ",
+        "s"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "th",
+          "ipa": "/ð/",
+          "sound": "th_voiced"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "s",
+          "ipa": "/s/",
+          "sound": "s"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/this.mp3"
+    },
+    {
+      "id": "ring",
+      "word": "ring",
+      "ipa": "rɪŋ",
+      "segments": [
+        "r",
+        "ɪ",
+        "ng"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "r",
+          "ipa": "/r/",
+          "sound": "r"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "ng",
+          "ipa": "/ŋ/",
+          "sound": "ng"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/ring.mp3"
+    },
+    {
+      "id": "sing",
+      "word": "sing",
+      "ipa": "sɪŋ",
+      "segments": [
+        "s",
+        "ɪ",
+        "ng"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "s",
+          "ipa": "/s/",
+          "sound": "s"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "ng",
+          "ipa": "/ŋ/",
+          "sound": "ng"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/sing.mp3"
+    },
+    {
+      "id": "quick",
+      "word": "quick",
+      "ipa": "kwɪk",
+      "segments": [
+        "kw",
+        "ɪ",
+        "k"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "qu",
+          "ipa": "/kw/",
+          "sound": "kw"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "ck",
+          "ipa": "/k/",
+          "sound": "k"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/quick.mp3"
+    },
+    {
+      "id": "swim",
+      "word": "swim",
+      "ipa": "swɪm",
+      "segments": [
+        "s",
+        "w",
+        "ɪ",
+        "m"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "s",
+          "ipa": "/s/",
+          "sound": "s"
+        },
+        {
+          "grapheme": "w",
+          "ipa": "/w/",
+          "sound": "w"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "m",
+          "ipa": "/m/",
+          "sound": "m"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/swim.mp3"
+    },
+    {
+      "id": "spin",
+      "word": "spin",
+      "ipa": "spɪn",
+      "segments": [
+        "s",
+        "p",
+        "ɪ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "s",
+          "ipa": "/s/",
+          "sound": "s"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/spin.mp3"
+    },
+    {
+      "id": "slip",
+      "word": "slip",
+      "ipa": "slɪp",
+      "segments": [
+        "s",
+        "l",
+        "ɪ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "s",
+          "ipa": "/s/",
+          "sound": "s"
+        },
+        {
+          "grapheme": "l",
+          "ipa": "/l/",
+          "sound": "l"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/slip.mp3"
+    },
+    {
+      "id": "grin",
+      "word": "grin",
+      "ipa": "grɪn",
+      "segments": [
+        "g",
+        "r",
+        "ɪ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        },
+        {
+          "grapheme": "r",
+          "ipa": "/r/",
+          "sound": "r"
+        },
+        {
+          "grapheme": "i",
+          "ipa": "/ɪ/",
+          "sound": "ɪ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/grin.mp3"
+    },
+    {
+      "id": "hot",
+      "word": "hot",
+      "ipa": "hɑt",
+      "segments": [
+        "h",
+        "ɑ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "h",
+          "ipa": "/h/",
+          "sound": "h"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/hot.mp3"
+    },
+    {
+      "id": "mop",
+      "word": "mop",
+      "ipa": "mɑp",
+      "segments": [
+        "m",
+        "ɑ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "m",
+          "ipa": "/m/",
+          "sound": "m"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/mop.mp3"
+    },
+    {
+      "id": "pot",
+      "word": "pot",
+      "ipa": "pɑt",
+      "segments": [
+        "p",
+        "ɑ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/pot.mp3"
+    },
+    {
+      "id": "dog",
+      "word": "dog",
+      "ipa": "dɑg",
+      "segments": [
+        "d",
+        "ɑ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "d",
+          "ipa": "/d/",
+          "sound": "d"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/dog.mp3"
+    },
+    {
+      "id": "top",
+      "word": "top",
+      "ipa": "tɑp",
+      "segments": [
+        "t",
+        "ɑ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/top.mp3"
+    },
+    {
+      "id": "hop",
+      "word": "hop",
+      "ipa": "hɑp",
+      "segments": [
+        "h",
+        "ɑ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "h",
+          "ipa": "/h/",
+          "sound": "h"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/hop.mp3"
+    },
+    {
+      "id": "cot",
+      "word": "cot",
+      "ipa": "kɑt",
+      "segments": [
+        "k",
+        "ɑ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "c",
+          "ipa": "/k/",
+          "sound": "k"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/cot.mp3"
+    },
+    {
+      "id": "log",
+      "word": "log",
+      "ipa": "lɑg",
+      "segments": [
+        "l",
+        "ɑ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "l",
+          "ipa": "/l/",
+          "sound": "l"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/log.mp3"
+    },
+    {
+      "id": "fog",
+      "word": "fog",
+      "ipa": "fɑg",
+      "segments": [
+        "f",
+        "ɑ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "f",
+          "ipa": "/f/",
+          "sound": "f"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/fog.mp3"
+    },
+    {
+      "id": "box",
+      "word": "box",
+      "ipa": "bɑks",
+      "segments": [
+        "b",
+        "ɑ",
+        "ks"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "b",
+          "ipa": "/b/",
+          "sound": "b"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "x",
+          "ipa": "/ks/",
+          "sound": "ks"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/box.mp3"
+    },
+    {
+      "id": "fox",
+      "word": "fox",
+      "ipa": "fɑks",
+      "segments": [
+        "f",
+        "ɑ",
+        "ks"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "f",
+          "ipa": "/f/",
+          "sound": "f"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "x",
+          "ipa": "/ks/",
+          "sound": "ks"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/fox.mp3"
+    },
+    {
+      "id": "sock",
+      "word": "sock",
+      "ipa": "sɑk",
+      "segments": [
+        "s",
+        "ɑ",
+        "k"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "s",
+          "ipa": "/s/",
+          "sound": "s"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "ck",
+          "ipa": "/k/",
+          "sound": "k"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/sock.mp3"
+    },
+    {
+      "id": "rock",
+      "word": "rock",
+      "ipa": "rɑk",
+      "segments": [
+        "r",
+        "ɑ",
+        "k"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "r",
+          "ipa": "/r/",
+          "sound": "r"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "ck",
+          "ipa": "/k/",
+          "sound": "k"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/rock.mp3"
+    },
+    {
+      "id": "shop",
+      "word": "shop",
+      "ipa": "ʃɑp",
+      "segments": [
+        "sh",
+        "ɑ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "sh",
+          "ipa": "/ʃ/",
+          "sound": "sh"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/shop.mp3"
+    },
+    {
+      "id": "chop",
+      "word": "chop",
+      "ipa": "tʃɑp",
+      "segments": [
+        "ch",
+        "ɑ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "ch",
+          "ipa": "/tʃ/",
+          "sound": "ch"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/chop.mp3"
+    },
+    {
+      "id": "not",
+      "word": "not",
+      "ipa": "nɑt",
+      "segments": [
+        "n",
+        "ɑ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/not.mp3"
+    },
+    {
+      "id": "got",
+      "word": "got",
+      "ipa": "gɑt",
+      "segments": [
+        "g",
+        "ɑ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/got.mp3"
+    },
+    {
+      "id": "mom",
+      "word": "mom",
+      "ipa": "mɑm",
+      "segments": [
+        "m",
+        "ɑ",
+        "m"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "m",
+          "ipa": "/m/",
+          "sound": "m"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "m",
+          "ipa": "/m/",
+          "sound": "m"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/mom.mp3"
+    },
+    {
+      "id": "pop",
+      "word": "pop",
+      "ipa": "pɑp",
+      "segments": [
+        "p",
+        "ɑ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/pop.mp3"
+    },
+    {
+      "id": "frog",
+      "word": "frog",
+      "ipa": "frɑg",
+      "segments": [
+        "f",
+        "r",
+        "ɑ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "f",
+          "ipa": "/f/",
+          "sound": "f"
+        },
+        {
+          "grapheme": "r",
+          "ipa": "/r/",
+          "sound": "r"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/frog.mp3"
+    },
+    {
+      "id": "stop",
+      "word": "stop",
+      "ipa": "stɑp",
+      "segments": [
+        "s",
+        "t",
+        "ɑ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "s",
+          "ipa": "/s/",
+          "sound": "s"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        },
+        {
+          "grapheme": "o",
+          "ipa": "/ɑ/",
+          "sound": "ɑ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/stop.mp3"
+    },
+    {
+      "id": "cup",
+      "word": "cup",
+      "ipa": "kʌp",
+      "segments": [
+        "k",
+        "ʌ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "c",
+          "ipa": "/k/",
+          "sound": "k"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/cup.mp3"
+    },
+    {
+      "id": "sun",
+      "word": "sun",
+      "ipa": "sʌn",
+      "segments": [
+        "s",
+        "ʌ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "s",
+          "ipa": "/s/",
+          "sound": "s"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/sun.mp3"
+    },
+    {
+      "id": "run",
+      "word": "run",
+      "ipa": "rʌn",
+      "segments": [
+        "r",
+        "ʌ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "r",
+          "ipa": "/r/",
+          "sound": "r"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/run.mp3"
+    },
+    {
+      "id": "bus",
+      "word": "bus",
+      "ipa": "bʌs",
+      "segments": [
+        "b",
+        "ʌ",
+        "s"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "b",
+          "ipa": "/b/",
+          "sound": "b"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "s",
+          "ipa": "/s/",
+          "sound": "s"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/bus.mp3"
+    },
+    {
+      "id": "bug",
+      "word": "bug",
+      "ipa": "bʌg",
+      "segments": [
+        "b",
+        "ʌ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "b",
+          "ipa": "/b/",
+          "sound": "b"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/bug.mp3"
+    },
+    {
+      "id": "rug",
+      "word": "rug",
+      "ipa": "rʌg",
+      "segments": [
+        "r",
+        "ʌ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "r",
+          "ipa": "/r/",
+          "sound": "r"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/rug.mp3"
+    },
+    {
+      "id": "mug",
+      "word": "mug",
+      "ipa": "mʌg",
+      "segments": [
+        "m",
+        "ʌ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "m",
+          "ipa": "/m/",
+          "sound": "m"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/mug.mp3"
+    },
+    {
+      "id": "gum",
+      "word": "gum",
+      "ipa": "gʌm",
+      "segments": [
+        "g",
+        "ʌ",
+        "m"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "m",
+          "ipa": "/m/",
+          "sound": "m"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/gum.mp3"
+    },
+    {
+      "id": "hum",
+      "word": "hum",
+      "ipa": "hʌm",
+      "segments": [
+        "h",
+        "ʌ",
+        "m"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "h",
+          "ipa": "/h/",
+          "sound": "h"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "m",
+          "ipa": "/m/",
+          "sound": "m"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/hum.mp3"
+    },
+    {
+      "id": "cut",
+      "word": "cut",
+      "ipa": "kʌt",
+      "segments": [
+        "k",
+        "ʌ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "c",
+          "ipa": "/k/",
+          "sound": "k"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/cut.mp3"
+    },
+    {
+      "id": "nut",
+      "word": "nut",
+      "ipa": "nʌt",
+      "segments": [
+        "n",
+        "ʌ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/nut.mp3"
+    },
+    {
+      "id": "pup",
+      "word": "pup",
+      "ipa": "pʌp",
+      "segments": [
+        "p",
+        "ʌ",
+        "p"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/pup.mp3"
+    },
+    {
+      "id": "mud",
+      "word": "mud",
+      "ipa": "mʌd",
+      "segments": [
+        "m",
+        "ʌ",
+        "d"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "m",
+          "ipa": "/m/",
+          "sound": "m"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "d",
+          "ipa": "/d/",
+          "sound": "d"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/mud.mp3"
+    },
+    {
+      "id": "fun",
+      "word": "fun",
+      "ipa": "fʌn",
+      "segments": [
+        "f",
+        "ʌ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "f",
+          "ipa": "/f/",
+          "sound": "f"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/fun.mp3"
+    },
+    {
+      "id": "bun",
+      "word": "bun",
+      "ipa": "bʌn",
+      "segments": [
+        "b",
+        "ʌ",
+        "n"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "b",
+          "ipa": "/b/",
+          "sound": "b"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "n",
+          "ipa": "/n/",
+          "sound": "n"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/bun.mp3"
+    },
+    {
+      "id": "sub",
+      "word": "sub",
+      "ipa": "sʌb",
+      "segments": [
+        "s",
+        "ʌ",
+        "b"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "s",
+          "ipa": "/s/",
+          "sound": "s"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "b",
+          "ipa": "/b/",
+          "sound": "b"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/sub.mp3"
+    },
+    {
+      "id": "tub",
+      "word": "tub",
+      "ipa": "tʌb",
+      "segments": [
+        "t",
+        "ʌ",
+        "b"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "b",
+          "ipa": "/b/",
+          "sound": "b"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/tub.mp3"
+    },
+    {
+      "id": "duck",
+      "word": "duck",
+      "ipa": "dʌk",
+      "segments": [
+        "d",
+        "ʌ",
+        "k"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "d",
+          "ipa": "/d/",
+          "sound": "d"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "ck",
+          "ipa": "/k/",
+          "sound": "k"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/duck.mp3"
+    },
+    {
+      "id": "shut",
+      "word": "shut",
+      "ipa": "ʃʌt",
+      "segments": [
+        "sh",
+        "ʌ",
+        "t"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "sh",
+          "ipa": "/ʃ/",
+          "sound": "sh"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "t",
+          "ipa": "/t/",
+          "sound": "t"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/shut.mp3"
+    },
+    {
+      "id": "chug",
+      "word": "chug",
+      "ipa": "tʃʌg",
+      "segments": [
+        "ch",
+        "ʌ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "ch",
+          "ipa": "/tʃ/",
+          "sound": "ch"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/chug.mp3"
+    },
+    {
+      "id": "plug",
+      "word": "plug",
+      "ipa": "plʌg",
+      "segments": [
+        "p",
+        "l",
+        "ʌ",
+        "g"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "p",
+          "ipa": "/p/",
+          "sound": "p"
+        },
+        {
+          "grapheme": "l",
+          "ipa": "/l/",
+          "sound": "l"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "g",
+          "ipa": "/g/",
+          "sound": "g"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/plug.mp3"
+    },
+    {
+      "id": "drum",
+      "word": "drum",
+      "ipa": "drʌm",
+      "segments": [
+        "d",
+        "r",
+        "ʌ",
+        "m"
+      ],
+      "display_segments": [
+        {
+          "grapheme": "d",
+          "ipa": "/d/",
+          "sound": "d"
+        },
+        {
+          "grapheme": "r",
+          "ipa": "/r/",
+          "sound": "r"
+        },
+        {
+          "grapheme": "u",
+          "ipa": "/ʌ/",
+          "sound": "ʌ"
+        },
+        {
+          "grapheme": "m",
+          "ipa": "/m/",
+          "sound": "m"
+        }
+      ],
+      "audio": "audio/phonics-card-demo/words/drum.mp3"
+    }
+  ]
+}

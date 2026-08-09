@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>GASflare — 解説動画スライド</title>
+<style>
+  :root{
+    --paper:#FBF4E9; --paper-2:#FFFDF8;
+    --ink:#241B12; --ink-2:#5C4A38; --ink-3:#93826D;
+    --rule:#DCCDB4; --rule-2:#EDE2CE;
+    --signal:#C73E1D; --signal-soft:#F7E3DA;
+    --alt:#3F6B63; --alt-soft:#DFEAE7;
+    --ok:#2E6F4B; --ng:#B3341B;
+    --mono:ui-monospace,"SF Mono",Menlo,monospace;
+    --sans:"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#111;font-family:var(--sans);color:var(--ink)}
+
+  .slide{
+    position:relative;
+    width:1920px;height:1080px;
+    background:var(--paper);
+    padding:96px 120px;
+    display:flex;flex-direction:column;
+    overflow:hidden;
+  }
+  /* 方眼の地紋 */
+  .slide::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:linear-gradient(var(--rule-2) 1px,transparent 1px),
+                     linear-gradient(90deg,var(--rule-2) 1px,transparent 1px);
+    background-size:48px 48px;opacity:.55;
+    -webkit-mask-image:radial-gradient(120% 90% at 50% 0%,#000 30%,transparent 80%);
+  }
+  .slide > *{position:relative}
+
+  .tag{
+    font-family:var(--mono);font-size:22px;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--signal);display:flex;align-items:center;gap:20px;margin-bottom:36px;
+  }
+  .tag::after{content:"";flex:1;height:1px;background:var(--rule)}
+
+  h1{font-size:132px;line-height:1;letter-spacing:-.035em;font-weight:800}
+  h1 em{font-style:normal;color:var(--signal);display:block}
+  h2{font-size:78px;line-height:1.18;letter-spacing:-.025em;font-weight:800;margin-bottom:40px}
+  h2 .hi{color:var(--signal)}
+  p{font-size:34px;line-height:1.85;color:var(--ink-2);max-width:1380px}
+  p + p{margin-top:22px}
+  p b{color:var(--ink);font-weight:700}
+  .mark{background:linear-gradient(transparent 62%,var(--signal-soft) 62%);color:var(--ink);font-weight:700}
+  .mono{font-family:var(--mono)}
+
+  .fig{flex:1;display:flex;align-items:center;justify-content:center;margin-top:8px}
+  .fig svg{width:100%;height:auto;max-height:100%}
+
+  .foot{
+    position:absolute;left:120px;bottom:52px;right:120px;
+    display:flex;justify-content:space-between;align-items:center;
+    font-family:var(--mono);font-size:20px;color:var(--ink-3);
+    border-top:1px solid var(--rule);padding-top:20px;
+  }
+
+  /* 表紙 */
+  .cover{justify-content:center}
+  .cover .eyebrow{font-family:var(--mono);font-size:26px;letter-spacing:.28em;color:var(--ink-3);margin-bottom:44px}
+  .cover .sub{font-size:38px;line-height:1.8;color:var(--ink-2);margin-top:48px;max-width:1200px}
+  .cover .badge{
+    display:inline-block;margin-top:56px;font-family:var(--mono);font-size:24px;letter-spacing:.14em;
+    border:2px solid var(--signal);color:var(--signal);padding:14px 28px;
+  }
+
+  /* 手順 */
+  ol.steps{list-style:none;counter-reset:s;margin-top:24px}
+  ol.steps li{
+    counter-increment:s;position:relative;padding:34px 0 34px 128px;
+    border-top:1px solid var(--rule);
+  }
+  ol.steps li:last-child{border-bottom:1px solid var(--rule)}
+  ol.steps li::before{
+    content:counter(s,decimal-leading-zero);position:absolute;left:0;top:36px;
+    font-family:var(--mono);font-size:44px;font-weight:700;color:var(--signal);
+  }
+  ol.steps b{display:block;font-size:44px;font-weight:800;margin-bottom:8px}
+  ol.steps span{font-size:30px;color:var(--ink-2)}
+
+  /* 対比（before/after） */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:24px;flex:1;align-content:center}
+  .card{background:var(--paper-2);border:2px solid var(--rule);padding:44px 48px}
+  .card.bad{border-color:var(--rule)}
+  .card.good{border-color:var(--signal)}
+  .card h3{font-family:var(--mono);font-size:24px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-3);font-weight:600;margin-bottom:26px}
+  .card.good h3{color:var(--signal)}
+  .card ul{list-style:none}
+  .card li{font-size:32px;line-height:1.75;padding-left:40px;position:relative;margin-bottom:14px;color:var(--ink-2)}
+  .card li::before{position:absolute;left:0;font-family:var(--mono);font-weight:700}
+  .card.bad li::before{content:"×";color:var(--ng)}
+  .card.good li::before{content:"○";color:var(--ok)}
+
+  /* 表 */
+  table{border-collapse:collapse;width:100%;margin-top:12px}
+  th,td{text-align:left;padding:24px 28px;border-bottom:1px solid var(--rule-2);font-size:30px;vertical-align:middle}
+  thead th{font-family:var(--mono);font-size:22px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-3);font-weight:600;border-bottom:2px solid var(--rule)}
+  td.no{color:var(--ok);font-weight:800;white-space:nowrap;font-size:32px}
+  td.yes{color:var(--ng);font-weight:800;white-space:nowrap;font-size:32px}
+  td.why{color:var(--ink-2);font-size:27px}
+
+  /* 大きな一文 */
+  .punch{flex:1;display:flex;flex-direction:column;justify-content:center}
+  .punch .big{font-size:88px;line-height:1.3;font-weight:800;letter-spacing:-.02em}
+  .punch .big .hi{color:var(--signal)}
+  .punch .note{font-size:32px;line-height:1.8;color:var(--ink-2);margin-top:48px;max-width:1400px}
+
+  /* SVG 共通 */
+  .d-box{fill:var(--paper-2);stroke:var(--ink);stroke-width:2}
+  .d-box-a{fill:var(--paper-2);stroke:var(--signal);stroke-width:2.6}
+  .d-box-b{fill:var(--paper-2);stroke:var(--alt);stroke-width:2.6}
+  .d-fill-a{fill:var(--signal-soft);stroke:var(--signal);stroke-width:2.6}
+  .d-fill-b{fill:var(--alt-soft);stroke:var(--alt);stroke-width:2.6}
+  .d-t{fill:var(--ink);font-family:var(--sans);font-size:15px;font-weight:700}
+  .d-s{fill:var(--ink-2);font-family:var(--sans);font-size:12px}
+  .d-m{fill:var(--ink-3);font-family:var(--mono);font-size:11px;letter-spacing:.05em}
+  .d-a{stroke:var(--signal);stroke-width:2.2;fill:none}
+  .d-b{stroke:var(--alt);stroke-width:2.2;fill:none}
+  .d-n{stroke:var(--ink-3);stroke-width:1.6;fill:none}
+  .d-dash{stroke-dasharray:6 5}
+  .d-la{fill:var(--signal);font-family:var(--mono);font-size:12px;font-weight:600}
+  .d-lb{fill:var(--alt);font-family:var(--mono);font-size:12px;font-weight:600}
+</style>
+</head>
+<body>
+
+<!-- 01 表紙 -->
+<section class="slide cover">
+  <img src="logo/gasflare_logo_c.png" alt="" style="width:150px;height:150px;border-radius:26px;border:2px solid var(--rule);margin-bottom:44px">
+  <p class="eyebrow">TEACHER TACOS ／ 技術ノート</p>
+  <h1>先生ひとりに、<em>データベースひとつ。</em></h1>
+  <p class="sub">スプレッドシートをコピーして、デプロイして、URLを配る。<br>それだけで、担任ごとの学習記録データベースが立ち上がる。</p>
+  <div>
+    <span class="badge">G A S f l a r e</span>
+    <span style="display:inline-block;margin-left:22px;font-family:var(--mono);font-size:26px;color:var(--ink-3);vertical-align:middle">＝ GAS ＋ Cloudflare</span>
+  </div>
+</section>
+
+<!-- 02 問題1 -->
+<section class="slide">
+  <p class="tag">問題 01</p>
+  <h2>学習アプリを配っただけでは、<br><span class="hi">授業になりません。</span></h2>
+  <p>アプリを作って、使ってくださいと言って配る。それで終われるなら苦労はありません。</p>
+  <p>授業で使うとなると、必ずこう聞かれます。<b>「で、誰がどこまでやったんですか」</b></p>
+  <p>やった人とやっていない人が同じ扱いになるなら、生徒は次からやりません。<span class="mark">宿題にも、評価にも、声かけにも使えない。</span></p>
+  <div class="foot"><span>GASflare</span><span>02</span></div>
+</section>
+
+<!-- 03 問題2 -->
+<section class="slide">
+  <p class="tag">問題 02</p>
+  <h2>かといって、<span class="hi">サーバは背負えない。</span></h2>
+  <div class="cols">
+    <div class="card bad">
+      <h3>記録を取ろうとすると</h3>
+      <ul>
+        <li>サーバを立てる</li>
+        <li>データベースを設計する</li>
+        <li>生徒のアカウントを発行する</li>
+        <li>卒業のたびに整理する</li>
+        <li>個人情報の管理責任を負う</li>
+      </ul>
+    </div>
+    <div class="card good">
+      <h3>先生が本当に欲しいもの</h3>
+      <ul>
+        <li>自分の担当している生徒の記録</li>
+        <li>それだけ</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>全校の全生徒がひとつのDBに入っている状態を、誰も望んでいない</span><span>03</span></div>
+</section>
+
+<!-- GASの強み -->
+<section class="slide">
+  <p class="tag">GASは、なぜ惜しいのか</p>
+  <h2>Google Apps Script は、<br>学校にとって<span class="hi">奇跡的に都合がいい。</span></h2>
+  <ol class="steps">
+    <li><b>教員個人の権限のまま、生徒の情報を集められる</b><span>申請も、サーバの調達も、承認待ちもいらない。自分のドライブでボタンを押すだけ。</span></li>
+    <li><b>データが完全に、その先生のものになる</b><span>誰かのサーバに預けるのではない。消すのも、渡すのも、持ち出すのも自由。</span></li>
+    <li><b>学校が発行したアカウントで、ちょうど必要なぶんだけ本人が分かる</b><span>厳密に個人を特定しにいく仕組みではないし、私的な情報が混ざり込むわけでもない。</span></li>
+  </ol>
+  <div class="foot"><span>「やりたい」から「動いている」までの距離が、圧倒的に短い</span><span>04</span></div>
+</section>
+
+<!-- GASの壁 -->
+<section class="slide">
+  <p class="tag">それでも</p>
+  <h2>GASだけで全部を作ると、<span class="hi">二つの壁に当たる。</span></h2>
+  <div class="cols">
+    <div class="card bad">
+      <h3>壁 1 ／ 配ったコードは、もう直せない</h3>
+      <ul>
+        <li>GASで配る＝先生ごとにコードのコピーを配る</li>
+        <li>バグが出ても、こちらから直せない</li>
+        <li>新しいのをまた配って、コピーし直してもらうしかない</li>
+        <li>→ 変わらない、単純なものしか作れない</li>
+      </ul>
+    </div>
+    <div class="card bad">
+      <h3>壁 2 ／ リッチにすると、重くなる</h3>
+      <ul>
+        <li>画像はセルに Base64 で埋め込めば扱える</li>
+        <li>が、数が増えると苦しい。動作も鈍る</li>
+        <li>音声となれば、なおさら</li>
+        <li>→ 画像と音声の置き場所として、向いていない</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>学習アプリは、使われはじめてからが本番 ── 直したい場所は毎週出てくる</span><span>05</span></div>
+</section>
+
+<!-- 切り分け -->
+<section class="slide">
+  <p class="tag">気づいたこと</p>
+  <h2>強みと弱みが、<span class="hi">きれいに分かれている。</span></h2>
+  <div class="fig">
+    <svg viewBox="0 0 920 320">
+      <defs>
+        <marker id="s3a" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto"><path d="M0,1 L8,4.5 L0,8 z" fill="#C73E1D"/></marker>
+        <marker id="s3n" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto"><path d="M0,1 L8,4.5 L0,8 z" fill="#93826D"/></marker>
+      </defs>
+      <text class="d-m" x="20" y="22">GASに全部のせる</text>
+      <rect class="d-box" x="20" y="34" width="380" height="176" rx="3"/>
+      <text class="d-t" x="40" y="64">先生のGAS（コピー品）</text>
+      <rect class="d-box" x="40" y="80" width="160" height="42" rx="2"/>
+      <text class="d-s" x="52" y="106">アプリのUI・出題</text>
+      <rect class="d-box" x="212" y="80" width="168" height="42" rx="2"/>
+      <text class="d-s" x="224" y="106">画像・音声（Base64）</text>
+      <rect class="d-box" x="40" y="134" width="160" height="42" rx="2"/>
+      <text class="d-s" x="52" y="160">本人確認</text>
+      <rect class="d-box" x="212" y="134" width="168" height="42" rx="2"/>
+      <text class="d-s" x="224" y="160">記録・シート書き込み</text>
+      <path class="d-n d-dash" d="M210,210 L210,242" marker-end="url(#s3n)"/>
+      <text class="d-s" x="20" y="266">✗ 直したい → 先生全員にコピーし直してもらう</text>
+      <text class="d-s" x="20" y="290">✗ 画像を増やす → 重くなる</text>
+      <text class="d-m" x="20" y="312">→ 単純なアプリしか作れない</text>
+
+      <text class="d-la" x="520" y="22">アプリとデータベースを引き離す</text>
+      <rect class="d-box" x="520" y="34" width="380" height="80" rx="3" stroke-dasharray="6 4"/>
+      <text class="d-t" x="540" y="62">🌮 アプリ（Cloudflare Pages）</text>
+      <text class="d-s" x="540" y="84">UI・出題・画像・音声。よく変わるもの。</text>
+      <text class="d-s" x="540" y="104">直したいときは、ここを1回直すだけ。全員に届く。</text>
+      <path class="d-a" d="M710,114 L710,146" marker-end="url(#s3a)"/>
+      <text class="d-la" x="722" y="136">記録だけを渡す</text>
+      <rect class="d-fill-a" x="520" y="150" width="380" height="60" rx="3"/>
+      <text class="d-t" x="540" y="177">📊 先生のGAS ＋ スプレッドシート</text>
+      <text class="d-s" x="540" y="199">本人確認と記録。ほとんど変わらないもの。</text>
+      <text class="d-s" x="520" y="242">○ 更新は Cloudflare 側だけ。先生は何もしなくていい</text>
+      <text class="d-s" x="520" y="266">○ 画像も音声も好きなだけ載せられる</text>
+      <text class="d-s" x="520" y="290">○ データは今までどおり、先生のスプレッドシートのもの</text>
+      <text class="d-la" x="520" y="312">→ リッチなアプリでも、成績処理に使える</text>
+    </svg>
+  </div>
+  <div class="foot"><span>この「GAS ＋ Cloudflare」の組み合わせ自体を GASflare と呼んでいる</span><span>06</span></div>
+</section>
+
+<!-- 生徒から見ると -->
+<section class="slide">
+  <div class="punch">
+    <p class="tag">生徒の側から見ると</p>
+    <div class="big">学校のアカウントさえあれば、<br><span class="hi">どの端末からでも続きから。</span></div>
+    <p class="note">教室のChromebookでも、家のタブレットでも、同じ場所から再開します。アカウントが本人を指し、URLが先生を指している。それだけでいい。</p>
+  </div>
+  <div class="foot"><span>GASflare</span><span>07</span></div>
+</section>
+
+<!-- 04 答え -->
+<section class="slide">
+  <p class="tag">答え</p>
+  <h2>データベースは、<br><span class="hi">先生が自分のドライブに持てばいい。</span></h2>
+  <ol class="steps">
+    <li><b>スプレッドシートをコピーする</b><span>ファイル → コピーを作成。これで自分専用のデータベースができる。</span></li>
+    <li><b>デプロイする</b><span>拡張機能 → Apps Script → デプロイ。新しいURLが発行される。</span></li>
+    <li><b>URLを配る</b><span>デプロイで出てきたURLを、そのまま。Classroom でも、QRコードでも、黒板に書いてもいい。</span></li>
+  </ol>
+  <div class="foot"><span>前提は1人1プロファイル（Chromebookは自動的にそうなる）／ サーバ無し・費用ゼロ</span><span>08</span></div>
+</section>
+
+<!-- 05 全体像 -->
+<section class="slide">
+  <p class="tag">全体像</p>
+  <h2>アプリは1つ。データベースは、<span class="hi">先生の数だけ。</span></h2>
+  <div class="fig">
+    <svg viewBox="0 0 920 530">
+      <defs>
+        <marker id="s5a" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto"><path d="M0,1 L8,4.5 L0,8 z" fill="#C73E1D"/></marker>
+        <marker id="s5b" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto"><path d="M0,1 L8,4.5 L0,8 z" fill="#3F6B63"/></marker>
+      </defs>
+      <rect class="d-fill-a" x="45" y="26" width="250" height="62" rx="3"/>
+      <text class="d-t" x="62" y="52">📊 先生A のスプレッドシート</text>
+      <text class="d-s" x="62" y="72">進捗 ／ ログ ／ students</text>
+      <rect class="d-box-a" x="45" y="152" width="250" height="70" rx="3"/>
+      <text class="d-t" x="62" y="180">先生A の GAS</text>
+      <text class="d-m" x="62" y="200">.../macros/s/AAA.../exec</text>
+      <text class="d-m" x="62" y="215">署名鍵 KEY-A</text>
+      <rect class="d-box" x="45" y="436" width="250" height="58" rx="3"/>
+      <text class="d-t" x="62" y="462">👦 1組の生徒</text>
+      <text class="d-s" x="62" y="481">先生A のURLを踏んだ人</text>
+
+      <rect class="d-fill-b" x="625" y="26" width="250" height="62" rx="3"/>
+      <text class="d-t" x="642" y="52">📊 先生B のスプレッドシート</text>
+      <text class="d-s" x="642" y="72">進捗 ／ ログ ／ students</text>
+      <rect class="d-box-b" x="625" y="152" width="250" height="70" rx="3"/>
+      <text class="d-t" x="642" y="180">先生B の GAS</text>
+      <text class="d-m" x="642" y="200">.../macros/s/BBB.../exec</text>
+      <text class="d-m" x="642" y="215">署名鍵 KEY-B</text>
+      <rect class="d-box" x="625" y="436" width="250" height="58" rx="3"/>
+      <text class="d-t" x="642" y="462">👧 別の学校の生徒</text>
+      <text class="d-s" x="642" y="481">先生B のURLを踏んだ人</text>
+
+      <rect class="d-box" x="325" y="262" width="270" height="106" rx="3" stroke-dasharray="6 4"/>
+      <text class="d-t" x="345" y="292">🌮 ゲーム本体（1つだけ）</text>
+      <text class="d-s" x="345" y="313">taco-course.pages.dev</text>
+      <text class="d-s" x="345" y="332">静的ファイルのみ。</text>
+      <text class="d-s" x="345" y="350">サーバもDBも持たない。</text>
+
+      <path class="d-a" d="M170,436 L170,226" marker-end="url(#s5a)"/>
+      <text class="d-la" x="182" y="330">① URLを踏む</text>
+      <path class="d-a" d="M295,196 C360,196 330,258 336,260" marker-end="url(#s5a)"/>
+      <text class="d-la" x="303" y="240">② ?tt=署名トークン</text>
+      <path class="d-a d-dash" d="M325,345 C250,352 235,262 232,226" marker-end="url(#s5a)"/>
+      <text class="d-la" x="150" y="392">③ 記録をPOST</text>
+      <path class="d-a" d="M170,152 L170,94" marker-end="url(#s5a)"/>
+      <text class="d-la" x="182" y="128">④ 書き込む</text>
+
+      <path class="d-b" d="M750,436 L750,226" marker-end="url(#s5b)"/>
+      <text class="d-lb" x="638" y="330" text-anchor="end">① URLを踏む</text>
+      <path class="d-b" d="M625,196 C560,196 590,258 584,260" marker-end="url(#s5b)"/>
+      <text class="d-lb" x="617" y="240" text-anchor="end">② ?tt=署名トークン</text>
+      <path class="d-b d-dash" d="M595,345 C670,352 685,262 688,226" marker-end="url(#s5b)"/>
+      <text class="d-lb" x="770" y="392">③ 記録をPOST</text>
+      <path class="d-b" d="M750,152 L750,94" marker-end="url(#s5b)"/>
+      <text class="d-lb" x="738" y="128" text-anchor="end">④ 書き込む</text>
+
+      <text class="d-m" x="460" y="402" text-anchor="middle">トークンの中に「どのGASへ送り返すか」が書いてある。</text>
+      <text class="d-m" x="460" y="419" text-anchor="middle">だから記録は、必ず自分の先生のシートへ戻る。</text>
+    </svg>
+  </div>
+  <div class="foot"><span>赤＝先生A の系統 ／ 緑＝先生B の系統。ゲームは共有だが、記録は混ざらない</span><span>09</span></div>
+</section>
+
+<!-- 06 ドメイン -->
+<section class="slide">
+  <p class="tag">入場</p>
+  <h2>「学校のアカウントだけ」は、<br><span class="hi">どこにも書いていない。</span></h2>
+  <div class="fig">
+    <svg viewBox="0 0 920 300">
+      <defs>
+        <marker id="s6a" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto"><path d="M0,1 L8,4.5 L0,8 z" fill="#C73E1D"/></marker>
+        <marker id="s6n" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto"><path d="M0,1 L8,4.5 L0,8 z" fill="#93826D"/></marker>
+      </defs>
+      <rect class="d-box" x="20" y="30" width="152" height="86" rx="3"/>
+      <text class="d-t" x="34" y="58">① 入口</text>
+      <text class="d-s" x="34" y="78">先生のGASを</text>
+      <text class="d-s" x="34" y="96">ブラウザで開く</text>
+
+      <rect class="d-fill-a" x="204" y="30" width="176" height="86" rx="3"/>
+      <text class="d-t" x="218" y="58">② 本人確認</text>
+      <text class="d-m" x="218" y="78">getActiveUser()</text>
+      <text class="d-s" x="218" y="98">メールが取れるか？</text>
+
+      <rect class="d-box" x="412" y="30" width="160" height="86" rx="3"/>
+      <text class="d-t" x="426" y="58">③ 匿名化</text>
+      <text class="d-s" x="426" y="78">メール → 不透明ID</text>
+      <text class="d-m" x="426" y="98">stu_9f2c1ab77e40</text>
+
+      <rect class="d-box" x="604" y="30" width="150" height="86" rx="3"/>
+      <text class="d-t" x="618" y="58">④ 署名</text>
+      <text class="d-s" x="618" y="78">HMAC-SHA256</text>
+      <text class="d-m" x="618" y="98">KEY-A で封をする</text>
+
+      <rect class="d-box-a" x="786" y="30" width="114" height="86" rx="3"/>
+      <text class="d-t" x="800" y="58">⑤ 転送</text>
+      <text class="d-m" x="800" y="78">?tt=…</text>
+      <text class="d-s" x="800" y="98">ゲームへ</text>
+
+      <path class="d-a" d="M172,73 L200,73" marker-end="url(#s6a)"/>
+      <path class="d-a" d="M380,73 L408,73" marker-end="url(#s6a)"/>
+      <path class="d-a" d="M572,73 L600,73" marker-end="url(#s6a)"/>
+      <path class="d-a" d="M754,73 L782,73" marker-end="url(#s6a)"/>
+
+      <path class="d-n d-dash" d="M292,116 L292,178" marker-end="url(#s6n)"/>
+      <rect class="d-box" x="176" y="182" width="232" height="72" rx="3"/>
+      <text class="d-t" x="190" y="208">✋ 取れなければ、止まる</text>
+      <text class="d-s" x="190" y="228">「学校のアカウントで</text>
+      <text class="d-s" x="190" y="246">ログインしてください」</text>
+
+      <text class="d-m" x="430" y="204">getActiveUser() は、スクリプト所有者と</text>
+      <text class="d-m" x="430" y="222">同じドメインの利用者にしかメールを返さない。</text>
+      <text class="d-la" x="430" y="250">＝ ドメイン制限は、書かなくても成立する</text>
+    </svg>
+  </div>
+  <div class="foot"><span>他校の先生がコピーすれば、許可ドメインはその学校へ自動で切り替わる</span><span>10</span></div>
+</section>
+
+<!-- 07 トークン -->
+<section class="slide">
+  <p class="tag">トークン</p>
+  <h2>改ざんできない<span class="hi">名札</span>を渡す。</h2>
+  <div class="fig">
+    <svg viewBox="0 0 920 240">
+      <rect class="d-box" x="20" y="20" width="500" height="112" rx="3"/>
+      <text class="d-m" x="34" y="42">PAYLOAD（base64url。誰でも読める）</text>
+      <text class="d-s" x="34" y="66">sid : stu_9f2c1ab77e40</text>
+      <text class="d-s" x="34" y="88">url : .../macros/s/AAA.../exec</text>
+      <text class="d-s" x="34" y="110">exp : 有効期限（120日）</text>
+      <text class="d-t" x="536" y="82">.</text>
+      <rect class="d-fill-a" x="556" y="20" width="344" height="112" rx="3"/>
+      <text class="d-m" x="570" y="42">SIGNATURE</text>
+      <text class="d-s" x="570" y="66">HMAC-SHA256(payload, 署名鍵)</text>
+      <text class="d-s" x="570" y="88">鍵は先生のGASの中だけ。</text>
+      <text class="d-s" x="570" y="110">アプリにも通信路にも出ない。</text>
+      <text class="d-la" x="34" y="172">▸ sid を書き換えると署名が合わなくなる。GAS が捨てる。</text>
+      <text class="d-la" x="34" y="198">▸ 送り先のURLも署名の中にある。他人のGASへ差し替えられない。</text>
+      <text class="d-la" x="34" y="224">▸ 別の先生の鍵で作ったトークンは、こちらのGASでは通らない。</text>
+    </svg>
+  </div>
+  <div class="foot"><span>暗号化ではない。守っているのは「改ざんできないこと」</span><span>11</span></div>
+</section>
+
+<!-- 08 記録 -->
+<section class="slide">
+  <p class="tag">記録</p>
+  <h2>クッキーの効かない場所で、<br><span class="hi">どうやって名乗るか。</span></h2>
+  <div class="fig">
+    <svg viewBox="0 0 920 320">
+      <defs>
+        <marker id="s8a" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto"><path d="M0,1 L8,4.5 L0,8 z" fill="#C73E1D"/></marker>
+        <marker id="s8n" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto"><path d="M0,1 L8,4.5 L0,8 z" fill="#93826D"/></marker>
+      </defs>
+      <rect class="d-box" x="20" y="24" width="228" height="128" rx="3"/>
+      <text class="d-t" x="34" y="52">🌮 ゲーム（pages.dev）</text>
+      <text class="d-s" x="34" y="76">進捗が動いた 2.5秒後</text>
+      <text class="d-s" x="34" y="96">変わった項目だけを</text>
+      <text class="d-s" x="34" y="116">まとめて1回 POST</text>
+      <text class="d-m" x="34" y="140">＋ tt=署名トークン</text>
+
+      <path class="d-a" d="M248,88 L340,88" marker-end="url(#s8a)"/>
+      <text class="d-la" x="252" y="74">POST</text>
+      <text class="d-m" x="252" y="110">text/plain</text>
+      <text class="d-m" x="252" y="126">Cookie 無し</text>
+
+      <rect class="d-fill-a" x="348" y="24" width="230" height="128" rx="3"/>
+      <text class="d-t" x="362" y="52">🔐 署名を検証</text>
+      <text class="d-s" x="362" y="76">payload を鍵で</text>
+      <text class="d-s" x="362" y="96">計算し直して</text>
+      <text class="d-s" x="362" y="116">突き合わせる</text>
+      <text class="d-m" x="362" y="140">＋ 期限も見る</text>
+
+      <path class="d-a" d="M578,64 L676,64" marker-end="url(#s8a)"/>
+      <text class="d-la" x="586" y="50">合う</text>
+      <rect class="d-box-a" x="684" y="24" width="216" height="76" rx="3"/>
+      <text class="d-t" x="698" y="52">📊 シートへ書く</text>
+      <text class="d-s" x="698" y="74">ロックを取って直列化</text>
+
+      <path class="d-n" d="M578,114 L676,114" marker-end="url(#s8n)"/>
+      <text class="d-m" x="586" y="134">合わない</text>
+      <rect class="d-box" x="684" y="116" width="216" height="58" rx="3" stroke-dasharray="5 4"/>
+      <text class="d-t" x="698" y="142">🗑 捨てる</text>
+      <text class="d-m" x="698" y="163">bad_token</text>
+
+      <line x1="20" y1="208" x2="900" y2="208" stroke="#DCCDB4" stroke-width="1"/>
+      <text class="d-la" x="20" y="236">なぜ Content-Type: text/plain なのか</text>
+      <text class="d-s" x="20" y="260">application/json だと CORS のプリフライト（OPTIONS）が飛ぶ。GAS は OPTIONS に答えられない。</text>
+      <text class="d-s" x="20" y="282">text/plain は「単純リクエスト」に分類され、プリフライトが飛ばない。これが唯一の通し方。</text>
+      <text class="d-s" x="20" y="304">クッキーを一切使わないので、CSRF が原理的に成立しない。</text>
+    </svg>
+  </div>
+  <div class="foot"><span>ゲームは pages.dev、GAS は script.google.com ── 別オリジン</span><span>12</span></div>
+</section>
+
+<!-- 09 タイミング -->
+<section class="slide">
+  <p class="tag">時間</p>
+  <h2>いつシートに書かれるか。<br><span class="hi">落ちたら、どうなるか。</span></h2>
+  <div class="fig">
+    <svg viewBox="0 0 920 250">
+      <defs>
+        <marker id="s9a" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto"><path d="M0,1 L8,4.5 L0,8 z" fill="#C73E1D"/></marker>
+      </defs>
+      <line x1="30" y1="122" x2="890" y2="122" stroke="#DCCDB4" stroke-width="2"/>
+      <circle cx="120" cy="122" r="6" fill="#C73E1D"/>
+      <path class="d-a" d="M120,116 L120,70" marker-end="url(#s9a)"/>
+      <text class="d-t" x="120" y="54" text-anchor="middle">具材が1つ埋まる</text>
+      <text class="d-m" x="120" y="148" text-anchor="middle">t = 0</text>
+
+      <circle cx="300" cy="122" r="6" fill="#C73E1D"/>
+      <path class="d-a" d="M300,128 L300,174" marker-end="url(#s9a)"/>
+      <text class="d-t" x="300" y="196" text-anchor="middle">まとめて1回 POST</text>
+      <text class="d-s" x="300" y="216" text-anchor="middle">先生の画面には数秒で出る</text>
+      <text class="d-m" x="300" y="148" text-anchor="middle">＋2.5秒</text>
+
+      <circle cx="560" cy="122" r="6" fill="#C73E1D"/>
+      <path class="d-a" d="M560,116 L560,70" marker-end="url(#s9a)"/>
+      <text class="d-t" x="560" y="54" text-anchor="middle">タブを閉じる</text>
+      <text class="d-s" x="560" y="148" text-anchor="middle">送信待ちがあれば即送信（keepalive）</text>
+
+      <circle cx="810" cy="122" r="6" fill="#C73E1D"/>
+      <path class="d-a" d="M810,128 L810,174" marker-end="url(#s9a)"/>
+      <text class="d-t" x="810" y="196" text-anchor="middle">次に開いたとき</text>
+      <text class="d-s" x="810" y="216" text-anchor="middle">送れなかった分を送り直す</text>
+    </svg>
+  </div>
+  <div class="foot"><span>「送信済み」と覚えるのは、GASが ok を返した分だけ ── だから必ず追いつく</span><span>13</span></div>
+</section>
+
+<!-- 10 止まらない -->
+<section class="slide">
+  <div class="punch">
+    <p class="tag">壊してはいけない一線</p>
+    <div class="big">GASが落ちていても、<br><span class="hi">ゲームは絶対に止まらない。</span></div>
+    <p class="note">進捗の正本は、あくまで端末の localStorage にあります。クラウドはその写しにすぎません。通信は全部 catch して黙って捨てる。生徒から見た違いは、右上に「☁️ 記録中」のバッジが出るかどうかだけです。</p>
+  </div>
+  <div class="foot"><span>GASflare</span><span>14</span></div>
+</section>
+
+<!-- 11 攻撃 -->
+<section class="slide">
+  <p class="tag">攻撃</p>
+  <h2>URLを知られたら、<span class="hi">何ができてしまうのか。</span></h2>
+  <table>
+    <thead><tr><th>やろうとすること</th><th>結果</th><th>なぜ</th></tr></thead>
+    <tbody>
+      <tr><td>他人になりすまして書き込む</td><td class="no">不可</td><td class="why">署名が合わなくなる。鍵は先生のGASの中だけ</td></tr>
+      <tr><td>トークン無しで書き込む</td><td class="no">不可</td><td class="why">bad_token を返し、何も書かずに捨てる</td></tr>
+      <tr><td>他人の進捗を読む</td><td class="no">不可</td><td class="why">読み出しにも署名トークンが要る</td></tr>
+      <tr><td>別の先生のトークンで書き込む</td><td class="no">不可</td><td class="why">鍵が違う。送り先も別を指している</td></tr>
+      <tr><td>他ドメインの人が入場する</td><td class="no">不可</td><td class="why">メールが取れず、トークンが発行されない</td></tr>
+      <tr><td>生徒のトークン<b>そのもの</b>を盗む</td><td class="yes">なりすませる</td><td class="why">セッションクッキーを盗むのと同じ危険度。だからURLバーからは即座に消し、期限を切っている</td></tr>
+    </tbody>
+  </table>
+  <div class="foot"><span>「絶対に安全」ではない ── 最後の1行を隠さないことが大事だと思っています</span><span>15</span></div>
+</section>
+
+<!-- 記録の範囲 -->
+<section class="slide">
+  <p class="tag">記録の範囲</p>
+  <h2>記録に残るのは、<br><span class="hi">先生のURLから入った分だけ。</span></h2>
+  <div class="cols">
+    <div class="card good">
+      <h3>防いだこと</h3>
+      <ul>
+        <li>端末に元からあった進捗は、アカウントに合流しない</li>
+        <li>進捗には「持ち主」を刻んである</li>
+        <li>友人の端末を借りてログインしても、友人の成果は混ざらない</li>
+      </ul>
+    </div>
+    <div class="card bad">
+      <h3>防げないこと</h3>
+      <ul>
+        <li>本人が開発者ツールで端末の記録を書き換える</li>
+        <li>アカウントを貸して、代わりにやってもらう</li>
+      </ul>
+    </div>
+  </div>
+  <p style="margin-top:36px">だから、この記録を<span class="mark">そのまま成績にはしない</span>。取り組みを見るための道具として使う。</p>
+  <div class="foot"><span>GASflare</span><span>16</span></div>
+</section>
+
+<!-- 12 メール -->
+<section class="slide">
+  <div class="punch">
+    <p class="tag">個人情報</p>
+    <div class="big">メールは、<span class="hi">先生のシートの外へ出ない。</span></div>
+    <p class="note">アプリが持っているのは <span class="mono">stu_9f2c1ab77e40</span> という不透明IDだけです。それが誰なのかを知る手立ては、アプリ側には存在しません。メールとIDの対応表は、先生のスプレッドシートの中にしかない。</p>
+    <p class="note"><b>先生には見える。アプリには見えない。</b> それが正しい形だと考えています。</p>
+  </div>
+  <div class="foot"><span>GASflare</span><span>17</span></div>
+</section>
+
+<!-- 13 結び -->
+<section class="slide">
+  <p class="tag">結び</p>
+  <h2>足りなかったのは、<br><span class="hi">一本の線だけだった。</span></h2>
+  <p>スプレッドシートは、先生がすでに持っています。デプロイのボタンも、Google がすでに用意しています。</p>
+  <p>足りなかったのは、<span class="mark">「そのURLを踏んだ人だけを、そのシートに繋ぐ」という一本の線</span>だけでした。</p>
+  <p>先生は、URLを配る。生徒は、それを踏む。それだけで、担任ごとの独立したデータベースが立ち上がります。<br>引き継ぎも、卒業も、異動も、シートをコピーするか捨てるかで済みます。</p>
+  <div style="margin-top:44px;display:flex;gap:20px;flex-wrap:wrap">
+    <span class="badge" style="display:inline-block;font-family:var(--mono);font-size:24px;border:2px solid var(--signal);color:var(--signal);padding:14px 26px">タコスパーティー</span>
+    <span class="badge" style="display:inline-block;font-family:var(--mono);font-size:24px;border:2px solid var(--signal);color:var(--signal);padding:14px 26px">WordTacos</span>
+    <span class="badge" style="display:inline-block;font-family:var(--mono);font-size:24px;border:2px solid var(--signal);color:var(--signal);padding:14px 26px">CalTacos</span>
+  </div>
+  <div class="foot"><span>Google Apps Script ／ スプレッドシート ／ Cloudflare Pages ── すべて無料</span><span>18</span></div>
+</section>
+
+</body>
+</html>

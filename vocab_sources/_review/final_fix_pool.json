@@ -1,0 +1,686 @@
+[
+  {
+    "id": "s6_0721",
+    "word": "exaggerate",
+    "pos": "名",
+    "meaning_jp": "誇張、誇張表現",
+    "body": "宣伝の<exaggerate>に頼らず、開発班はデータを淡々と提示することで利用者の信頼を集めた。",
+    "choices": [
+      "省略",
+      "誇張",
+      "事実",
+      "助言"
+    ],
+    "correct_index": 1,
+    "explanation": "exaggerate + -ion。",
+    "reviewer_issues": [
+      "pos_mismatch",
+      "wrong_word_form"
+    ],
+    "reviewer_comment": "exaggerateは動詞だが、pos=名/meaning_jp=誇張、bodyも名詞用法。名詞ならexaggeration。",
+    "reviewer_suggested": {
+      "word": "exaggeration",
+      "explanation": "exaggerate + -ion。"
+    }
+  },
+  {
+    "id": "s5_2297",
+    "word": "retell",
+    "pos": "動",
+    "meaning_jp": "語り直す",
+    "body": "祖母の昔話を孫に<retell>するたびに、私は記憶の細部を新しい言葉で結び直し、世代を超えた物語の橋を架けている。",
+    "choices": [
+      "黙る",
+      "語り直す",
+      "破棄する",
+      "翻訳する"
+    ],
+    "correct_index": 1,
+    "explanation": "re + tell。",
+    "reviewer_issues": [
+      "動詞原形+「するたびに」は自然だが活用注意"
+    ],
+    "reviewer_comment": "「<retell>するたびに」はサ変動詞化で自然な部類。問題なしに変更。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s6_1941",
+    "word": "snore",
+    "pos": "動",
+    "meaning_jp": "いびきをかく",
+    "body": "長旅で疲れ切った父は夕食後すぐにソファで<snore>し始め、家族は静かに毛布をかけてやった。",
+    "choices": [
+      "歌う",
+      "ささやく",
+      "いびきをかく",
+      "笑う"
+    ],
+    "correct_index": 2,
+    "explanation": "擬声語起源、中英語。",
+    "reviewer_issues": [
+      "動詞原形+「し始め」"
+    ],
+    "reviewer_comment": "「<snore>し始め」は原形+「し始め」で問題なくサ変活用可能。許容範囲だが、英語動詞をそのまま使うと「snoring」が自然。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_2465",
+    "word": "strip",
+    "pos": "動/名",
+    "meaning_jp": "はぎ取る、細長い片",
+    "body": "古い壁紙を一枚ずつ<strip>するのは手間がかかったが、現れた漆喰の下地は思いがけず美しく、改装の方向性を変えるきっかけになった。",
+    "choices": [
+      "はぎ取る",
+      "貼りつける",
+      "保護する",
+      "塗装する"
+    ],
+    "correct_index": 0,
+    "explanation": "comic strip = 漫画の一コマ。",
+    "reviewer_issues": [
+      "動詞原形+「するのは」"
+    ],
+    "reviewer_comment": "「一枚ずつ<strip>するのは」は原形+「するのは」でサ変動詞化、自然な部類。許容に変更。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_546",
+    "word": "mention",
+    "pos": "動",
+    "meaning_jp": "言及する",
+    "body": "プレゼンの中で、先輩が手伝ってくれたことを<mention>するのを忘れず、感謝を込めて名前を出した。",
+    "choices": [
+      "無視する",
+      "言及する",
+      "隠す",
+      "暗号化する"
+    ],
+    "correct_index": 1,
+    "explanation": "Don't mention it. = どういたしまして。",
+    "reviewer_issues": [
+      "動詞原形+「するのを」"
+    ],
+    "reviewer_comment": "「<mention>するのを忘れず」は原形+「するのを」でサ変動詞化、自然。許容。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_1131",
+    "word": "calculate",
+    "pos": "動",
+    "meaning_jp": "計算する",
+    "body": "旅行費用を<calculate>すると、交通費が宿泊費を上回り、夜行バスの利用を検討することにした。",
+    "choices": [
+      "推測する",
+      "省略する",
+      "計算する",
+      "見送る"
+    ],
+    "correct_index": 2,
+    "explanation": "calculation = 計算。calculator = 電卓。",
+    "reviewer_issues": [
+      "動詞原形+「すると」"
+    ],
+    "reviewer_comment": "「<calculate>すると」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_1822",
+    "word": "jog",
+    "pos": "動",
+    "meaning_jp": "ジョギングする",
+    "body": "毎朝7時に近所の公園を<jog>するうちに、私は体重が3キロ減り、頭の切れもよくなった気がする。",
+    "choices": [
+      "歩く",
+      "ジョギングする",
+      "立ち止まる",
+      "走り続ける"
+    ],
+    "correct_index": 1,
+    "explanation": "run より穏やかな走り。",
+    "reviewer_issues": [
+      "動詞原形+「するうちに」"
+    ],
+    "reviewer_comment": "「<jog>するうちに」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s6_1944",
+    "word": "soak",
+    "pos": "動",
+    "meaning_jp": "浸す、ずぶぬれにする",
+    "body": "豆を一晩水に<soak>してから煮ると、芯まで柔らかく仕上がり、料理の味の深みも一段と増す。",
+    "choices": [
+      "乾かす",
+      "浸す",
+      "焼く",
+      "凍らせる"
+    ],
+    "correct_index": 1,
+    "explanation": "古英語socian(浸す)由来。",
+    "reviewer_issues": [
+      "動詞原形+「してから」"
+    ],
+    "reviewer_comment": "「<soak>してから」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s6_1429",
+    "word": "originate",
+    "pos": "動",
+    "meaning_jp": "始まる、由来する",
+    "body": "この祭りは中世の収穫感謝に<originate>するとされ、町の古文書館に断片的な記録が残っている。",
+    "choices": [
+      "由来する",
+      "終わる",
+      "中断する",
+      "撤回する"
+    ],
+    "correct_index": 0,
+    "explanation": "origin + -ate。",
+    "reviewer_issues": [
+      "動詞原形+「する」"
+    ],
+    "reviewer_comment": "「<originate>するとされ」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_1089",
+    "word": "bore",
+    "pos": "動",
+    "meaning_jp": "退屈させる",
+    "body": "長時間の同じ話題は聴衆を<bore>するので、講師は途中で参加型のクイズを挟む工夫を入れた。",
+    "choices": [
+      "感動させる",
+      "退屈させる",
+      "驚かせる",
+      "笑わせる"
+    ],
+    "correct_index": 1,
+    "explanation": "boring(退屈な)、bored(退屈した)。",
+    "reviewer_issues": [
+      "動詞原形+「するので」"
+    ],
+    "reviewer_comment": "「聴衆を<bore>するので」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s6_1118",
+    "word": "investigate",
+    "pos": "動",
+    "meaning_jp": "調査する、捜査する",
+    "body": "原因を<investigate>する委員会が立ち上がり、関係者の聞き取りと現場検証が並行して進められていった。",
+    "choices": [
+      "隠蔽する",
+      "省略する",
+      "調査する",
+      "拒絶する"
+    ],
+    "correct_index": 2,
+    "explanation": "ラテン語investigare(追跡する)由来。",
+    "reviewer_issues": [
+      "動詞原形+「する」"
+    ],
+    "reviewer_comment": "「<investigate>する委員会」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s6_1186",
+    "word": "legislate",
+    "pos": "動",
+    "meaning_jp": "法律を制定する",
+    "body": "気候変動への対応を本気で<legislate>するため、議会は専門家と市民団体の声を粘り強く拾い上げていった。",
+    "choices": [
+      "法律を制定する",
+      "選挙を行う",
+      "予算を縮小する",
+      "議会を解散する"
+    ],
+    "correct_index": 0,
+    "explanation": "ラテン語legislator(法を作る者)由来。",
+    "reviewer_issues": [
+      "動詞原形+「する」"
+    ],
+    "reviewer_comment": "「<legislate>するため」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_2289",
+    "word": "resist",
+    "pos": "動",
+    "meaning_jp": "抵抗する",
+    "body": "甘いものの誘惑を<resist>するため、私はおやつ用の引き出しを別室に移し、無意識の手が伸びる隙を作らなかった。",
+    "choices": [
+      "屈服する",
+      "歓迎する",
+      "受け入れる",
+      "抵抗する"
+    ],
+    "correct_index": 3,
+    "explanation": "resistance = 抵抗。",
+    "reviewer_issues": [
+      "動詞原形+「するため」"
+    ],
+    "reviewer_comment": "「<resist>するため」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_878",
+    "word": "weigh",
+    "pos": "動",
+    "meaning_jp": "重さを量る、重さがある",
+    "body": "ケーキ作りでは、粉の量を正確に<weigh>するのが膨らみを決める一番のポイントだと教わった。",
+    "choices": [
+      "長さを測る",
+      "切る",
+      "重さを量る",
+      "包む"
+    ],
+    "correct_index": 2,
+    "explanation": "weight(重さ)の動詞形。",
+    "reviewer_issues": [
+      "動詞原形+「するのが」"
+    ],
+    "reviewer_comment": "「正確に<weigh>するのが」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_1953",
+    "word": "modify",
+    "pos": "動",
+    "meaning_jp": "修正する",
+    "body": "提出した企画書を上司の助言に従って<modify>したら、内容がぐっと明確になり、会議で高い評価を得た。",
+    "choices": [
+      "破棄する",
+      "印刷だけする",
+      "コピーする",
+      "修正する"
+    ],
+    "correct_index": 3,
+    "explanation": "modification = 修正。",
+    "reviewer_issues": [
+      "動詞原形+「したら」"
+    ],
+    "reviewer_comment": "「<modify>したら」は原形+「したら」で文法不正。サ変動詞「<modify>する」→「したら」も許容範囲だが微妙。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_1684",
+    "word": "hang",
+    "pos": "動",
+    "meaning_jp": "つるす、ぶら下がる",
+    "body": "洗濯物を物干しざおに<hang>して、太陽の光に当てると、衣類は数時間で軽い香りを帯びて乾いていく。",
+    "choices": [
+      "つるす",
+      "畳む",
+      "捨てる",
+      "破る"
+    ],
+    "correct_index": 0,
+    "explanation": "hang-hung-hung。",
+    "reviewer_issues": [
+      "動詞原形+「して」"
+    ],
+    "reviewer_comment": "「<hang>して」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_1082",
+    "word": "boast",
+    "pos": "動",
+    "meaning_jp": "自慢する",
+    "body": "彼は受賞のことを誰にも言わずに過ごし、後輩が新聞で知って「なぜ<boast>しないんですか」と驚いた。",
+    "choices": [
+      "自慢する",
+      "謙遜する",
+      "隠す",
+      "嘘をつく"
+    ],
+    "correct_index": 0,
+    "explanation": "boast about ~ = ~を自慢する。",
+    "reviewer_issues": [
+      "動詞原形+「しない」"
+    ],
+    "reviewer_comment": "「なぜ<boast>しないんですか」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_2300",
+    "word": "reunify",
+    "pos": "動",
+    "meaning_jp": "再統一する",
+    "body": "分断された家族を<reunify>するための支援活動は、国境を越えた協力体制によって着実に成果を上げている。",
+    "choices": [
+      "切り離す",
+      "孤立させる",
+      "再統一する",
+      "排除する"
+    ],
+    "correct_index": 2,
+    "explanation": "re + unify。",
+    "reviewer_issues": [
+      "動詞原形+「するため」"
+    ],
+    "reviewer_comment": "「<reunify>するため」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s6_1239",
+    "word": "manufacture",
+    "pos": "動",
+    "meaning_jp": "製造する、製造",
+    "body": "海外の協力工場と連携して<manufacture>する体制を整えた結果、納期短縮と品質向上を両立できた。",
+    "choices": [
+      "輸入する",
+      "宣伝する",
+      "解体する",
+      "製造する"
+    ],
+    "correct_index": 3,
+    "explanation": "ラテン語manu factura(手作り)由来。",
+    "reviewer_issues": [
+      "動詞原形+「する」"
+    ],
+    "reviewer_comment": "「<manufacture>する体制」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_1479",
+    "word": "endanger",
+    "pos": "動",
+    "meaning_jp": "危険にさらす",
+    "body": "森の伐採は多くの動物を<endanger>するため、保護団体は植林活動を地道に続けている。",
+    "choices": [
+      "保護する",
+      "危険にさらす",
+      "増やす",
+      "発見する"
+    ],
+    "correct_index": 1,
+    "explanation": "en + danger。",
+    "reviewer_issues": [
+      "動詞原形+「する」"
+    ],
+    "reviewer_comment": "「動物を<endanger>するため」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_746",
+    "word": "seek",
+    "pos": "動",
+    "meaning_jp": "探す、求める",
+    "body": "真の友人を<seek>するのに人生は短いと言うが、3年間で本当に大切な人が3人できれば十分だ。",
+    "choices": [
+      "捨てる",
+      "逃げる",
+      "隠す",
+      "探し求める"
+    ],
+    "correct_index": 3,
+    "explanation": "seek-sought-sought。hide-and-seek = かくれんぼ。",
+    "reviewer_issues": [
+      "動詞原形+「するのに」"
+    ],
+    "reviewer_comment": "「<seek>するのに」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_1452",
+    "word": "educate",
+    "pos": "動",
+    "meaning_jp": "教育する",
+    "body": "両親は私を<educate>するため、毎晩短い時間でも、その日の学びを聞いてくれる時間を確保していた。",
+    "choices": [
+      "教育する",
+      "放任する",
+      "禁止する",
+      "甘やかす"
+    ],
+    "correct_index": 0,
+    "explanation": "education = 教育。",
+    "reviewer_issues": [
+      "動詞原形+「するため」"
+    ],
+    "reviewer_comment": "「<educate>するため」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_1462",
+    "word": "embarrass",
+    "pos": "動",
+    "meaning_jp": "恥ずかしい思いをさせる",
+    "body": "全校朝会で名前を読み間違えられた瞬間、私はその場で<embarrass>され、顔から火が出る思いだった。",
+    "choices": [
+      "誇らしくする",
+      "怒らせる",
+      "恥ずかしくさせる",
+      "笑わせる"
+    ],
+    "correct_index": 2,
+    "explanation": "embarrassment = 当惑。",
+    "reviewer_issues": [
+      "動詞原形受身"
+    ],
+    "reviewer_comment": "「私はその場で<embarrass>され」は受身として違和感が小さくサ変動詞的に許容範囲。embarrassedの形容詞用法に近い。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s6_1832",
+    "word": "sail",
+    "pos": "動",
+    "meaning_jp": "航海する、帆走する",
+    "body": "若い船員たちは初めて外洋を<sail>するため、出航前日に装備の点検と航路の確認を何度も繰り返した。",
+    "choices": [
+      "航海する",
+      "停泊する",
+      "撤退する",
+      "破棄する"
+    ],
+    "correct_index": 0,
+    "explanation": "古英語segel(帆)由来。",
+    "reviewer_issues": [
+      "動詞原形+「するため」"
+    ],
+    "reviewer_comment": "「<sail>するため」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s6_0582",
+    "word": "displace",
+    "pos": "動",
+    "meaning_jp": "立ち退かせる、置き換える",
+    "body": "ダム建設は数十世帯を<displace>することになり、補償と移住先の選定が課題となった。",
+    "choices": [
+      "保護する",
+      "増設する",
+      "招待する",
+      "置換する"
+    ],
+    "correct_index": 3,
+    "explanation": "dis + place(場所)。",
+    "reviewer_issues": [
+      "動詞原形+「する」"
+    ],
+    "reviewer_comment": "「<displace>することになり」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_2319",
+    "word": "safeguard",
+    "pos": "動/名",
+    "meaning_jp": "保護する、安全策",
+    "body": "子どもの個人情報を<safeguard>するため、学校は外部委託先との契約に厳格な秘密保持条項を盛り込んでいる。",
+    "choices": [
+      "公開する",
+      "保護する",
+      "売却する",
+      "改ざんする"
+    ],
+    "correct_index": 1,
+    "explanation": "safe + guard。",
+    "reviewer_issues": [
+      "動詞原形+「するため」"
+    ],
+    "reviewer_comment": "「<safeguard>するため」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s6_2125",
+    "word": "threaten",
+    "pos": "動",
+    "meaning_jp": "脅す、脅かす",
+    "body": "気候変動が農作物の安定供給を<threaten>している現状を受け、各地で対策の研究と現場での適応が進められている。",
+    "choices": [
+      "改善する",
+      "支援する",
+      "脅かす",
+      "形式化する"
+    ],
+    "correct_index": 2,
+    "explanation": "古英語threatnian(押す)由来。",
+    "reviewer_issues": [
+      "動詞原形+「している」"
+    ],
+    "reviewer_comment": "「<threaten>している現状」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_2201",
+    "word": "prove",
+    "pos": "動",
+    "meaning_jp": "証明する",
+    "body": "数学の定理を自分なりに<prove>できた瞬間、彼の目は輝き、これまでの努力がすべて報われた表情に変わった。",
+    "choices": [
+      "否定する",
+      "証明する",
+      "推測する",
+      "無視する"
+    ],
+    "correct_index": 1,
+    "explanation": "proof = 証拠。",
+    "reviewer_issues": [
+      "動詞原形+「できた」"
+    ],
+    "reviewer_comment": "「自分なりに<prove>できた瞬間」はサ変動詞「<prove>する」→「できた」で許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_041",
+    "word": "dig",
+    "pos": "動",
+    "meaning_jp": "掘る",
+    "body": "浜辺で砂を1メートルも<dig>すると、穴の底からじわりと海水がしみ出してきた。",
+    "choices": [
+      "埋める",
+      "ならす",
+      "掘る",
+      "積む"
+    ],
+    "correct_index": 2,
+    "explanation": "dig-dug-dug。穴を掘ること。",
+    "reviewer_issues": [
+      "動詞原形+「すると」"
+    ],
+    "reviewer_comment": "「砂を1メートルも<dig>すると」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s6_0570",
+    "word": "discredit",
+    "pos": "動",
+    "meaning_jp": "信用を傷つける",
+    "body": "事実無根の噂で同業者を<discredit>しようとする手口は、長期的には自分の信頼を損ねる。",
+    "choices": [
+      "称賛する",
+      "信用を傷つける",
+      "推薦する",
+      "保護する"
+    ],
+    "correct_index": 1,
+    "explanation": "dis(否) + credit(信用)。",
+    "reviewer_issues": [
+      "動詞原形+「しようとする」"
+    ],
+    "reviewer_comment": "「<discredit>しようとする」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s6_1582",
+    "word": "popularise",
+    "pos": "動",
+    "meaning_jp": "普及させる(英国綴り)",
+    "body": "研究者は専門知識を<popularise>するため、平易な比喩を使い、市民向けの講座を各地で開いていった。",
+    "choices": [
+      "撤回する",
+      "閉じ込める",
+      "普及させる",
+      "形式化する"
+    ],
+    "correct_index": 2,
+    "explanation": "popular + -ise(英国綴り)。",
+    "reviewer_issues": [
+      "動詞原形+「するため」"
+    ],
+    "reviewer_comment": "「<popularise>するため」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_1408",
+    "word": "distinguish",
+    "pos": "動",
+    "meaning_jp": "区別する",
+    "body": "双子の兄弟を初めて見たとき、私には<distinguish>するのが難しく、しばらく名前を取り違えていた。",
+    "choices": [
+      "混同する",
+      "区別する",
+      "覆い隠す",
+      "破棄する"
+    ],
+    "correct_index": 1,
+    "explanation": "distinguish A from B。",
+    "reviewer_issues": [
+      "動詞原形+「するのが」"
+    ],
+    "reviewer_comment": "「<distinguish>するのが」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s5_1350",
+    "word": "deny",
+    "pos": "動",
+    "meaning_jp": "否定する",
+    "body": "彼は事実を<deny>することなく、自分の関わりを率直に認め、関係者へ深く頭を下げた。",
+    "choices": [
+      "認める",
+      "否定する",
+      "歓迎する",
+      "称賛する"
+    ],
+    "correct_index": 1,
+    "explanation": "denial = 否認。",
+    "reviewer_issues": [
+      "動詞原形+「すること」"
+    ],
+    "reviewer_comment": "「<deny>することなく」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  },
+  {
+    "id": "s6_2065",
+    "word": "suppress",
+    "pos": "動",
+    "meaning_jp": "抑える、鎮圧する",
+    "body": "退屈な会議で笑いを<suppress>するのに苦労した彼は、終了後に同僚と耐え切れず吹き出してしまった。",
+    "choices": [
+      "広める",
+      "抑える",
+      "称賛する",
+      "改める"
+    ],
+    "correct_index": 1,
+    "explanation": "ラテン語supprimere(下に押さえる)由来。",
+    "reviewer_issues": [
+      "動詞原形+「するのに」"
+    ],
+    "reviewer_comment": "「<suppress>するのに苦労した」はサ変動詞化、許容範囲。",
+    "reviewer_suggested": null
+  }
+]

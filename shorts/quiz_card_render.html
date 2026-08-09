@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>WordTacos Quiz Card</title>
+<style>
+:root {
+  --bg: #FFF8EE;
+  --paper: #FFFDF7;
+  --ink: #2A1F14;
+  --sub: #6B5A47;
+  --accent: #C73E1D;
+  --green: #4A7C59;
+  --green-soft: #EAF4EC;
+  --border: #E6D5BC;
+  --shadow: 0 4px 16px rgba(74,50,30,0.18);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  width: 1080px; height: 1300px;
+  font-family: "Hiragino Sans", "Hiragino Maru Gothic ProN", sans-serif;
+  background: transparent;
+  color: var(--ink);
+}
+.frame {
+  width: 1080px; height: 1300px;
+  padding: 36px 44px;
+  display: flex; flex-direction: column;
+  background: var(--bg);
+  border-radius: 38px;
+  box-shadow: var(--shadow);
+}
+.topbar {
+  display: flex; align-items: center; gap: 18px;
+  margin-bottom: 24px;
+}
+.phase-tag {
+  background: var(--accent); color: white;
+  padding: 8px 22px; border-radius: 999px;
+  font-size: 28px; font-weight: 800;
+}
+.progress {
+  flex: 1; height: 12px; background: var(--border);
+  border-radius: 999px; overflow: hidden;
+}
+.progress > div {
+  height: 100%; width: 35%;
+  background: linear-gradient(90deg, #F4A26A, var(--accent));
+}
+.qbody {
+  background: var(--paper); border: 3px solid var(--border);
+  border-radius: 24px; padding: 38px 44px;
+  font-size: 56px; line-height: 1.85;
+  letter-spacing: 0.01em;
+  margin-bottom: 28px;
+  text-align: left;
+  font-weight: 600;
+}
+.qbody .embed {
+  display: inline-block;
+  background: var(--accent); color: white;
+  padding: 6px 22px; border-radius: 14px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  margin: 0 6px;
+  vertical-align: middle;
+}
+.choices {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 18px;
+  flex: 1;
+}
+.choice {
+  background: white;
+  border: 4px solid var(--border);
+  border-radius: 22px;
+  padding: 24px 22px;
+  font-size: 50px; font-weight: 800;
+  color: var(--ink);
+  display: flex; align-items: center; justify-content: center;
+  text-align: center;
+  min-height: 168px;
+  box-shadow: 0 4px 10px rgba(74,50,30,0.08);
+  position: relative;
+}
+.choice .letter {
+  position: absolute; left: 26px; top: 22px;
+  background: var(--border); color: var(--sub);
+  width: 56px; height: 56px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 36px; font-weight: 800;
+}
+.choice.correct {
+  background: var(--green-soft);
+  border-color: var(--green);
+  color: var(--green);
+}
+.choice.correct .letter {
+  background: var(--green); color: white;
+}
+.choice.correct::after {
+  content: '○';
+  position: absolute; right: 28px; top: 22px;
+  font-size: 60px; color: var(--green); font-weight: 900;
+}
+</style>
+</head>
+<body>
+<div class="frame" id="frame">
+  <div class="topbar">
+    <span class="phase-tag">本編</span>
+    <div class="progress"><div></div></div>
+  </div>
+  <div class="qbody" id="qbody"></div>
+  <div class="choices" id="choices"></div>
+</div>
+
+<script>
+// クエリパラメータで quiz データ受け取り
+const params = new URLSearchParams(location.search);
+const bodyText = params.get('body') || 'あの町は大きな被害を受けたけれど、人々は驚くほど<resilient>で、たった3年で復興した。';
+const choices = (params.get('choices') || '脆い|怒りっぽい|立ち直る力のある|平凡な').split('|');
+const correctIdx = parseInt(params.get('correct') || '2');
+const reveal = params.get('reveal') === '1';
+
+// body 内の <word> → <span class="embed">word</span>
+const qbody = document.getElementById('qbody');
+qbody.innerHTML = bodyText.replace(/<([^>]+)>/g,
+  (_, w) => `<span class="embed">${w}</span>`);
+
+// choices
+const cc = document.getElementById('choices');
+choices.forEach((c, i) => {
+  const letter = 'ABCD'[i];
+  const div = document.createElement('div');
+  div.className = 'choice' + (reveal && i === correctIdx ? ' correct' : '');
+  div.innerHTML = `<span class="letter">${letter}</span>${c}`;
+  cc.appendChild(div);
+});
+</script>
+</body>
+</html>

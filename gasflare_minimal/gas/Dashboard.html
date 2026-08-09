@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<base target="_top">
+<style>
+  :root{
+    --bg:#FFF8EE; --card:#FFFFFF; --line:#EADFCF;
+    --fg:#2A1F14; --muted:#8B7355; --faint:#B8A78E;
+    --accent:#C73E1D; --accent-soft:#FBE7DF;
+    --ok:#2E7D4F; --ok-soft:#DFF0E4; --warn:#C9821A; --warn-soft:#FBEFD8;
+    --r:10px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+    font-family:"Hiragino Sans","Yu Gothic",system-ui,sans-serif;font-size:13px;line-height:1.6}
+
+  /* ---- ヘッダ ---- */
+  header{position:sticky;top:0;z-index:5;background:var(--bg);
+    padding:14px 18px 10px;border-bottom:1px solid var(--line)}
+  .htop{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  h1{margin:0;font-size:16px;font-weight:800;letter-spacing:.01em}
+  .stamp{font-size:11px;color:var(--faint);margin-left:auto}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:8px;margin-top:11px}
+  .c{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:9px 11px}
+  .c b{display:block;font-size:21px;font-weight:800;line-height:1.25;font-variant-numeric:tabular-nums}
+  .c span{font-size:10.5px;color:var(--muted)}
+
+  nav{display:flex;align-items:center;gap:4px;margin-top:11px}
+  nav button{border:1px solid var(--line);background:var(--card);color:var(--muted);
+    font:inherit;font-size:12px;font-weight:700;padding:5px 13px;border-radius:999px;cursor:pointer}
+  nav button:hover{border-color:var(--accent);color:var(--accent)}
+  nav button[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+  nav label{margin-left:auto;display:flex;align-items:center;gap:5px;
+    font-size:11.5px;font-weight:700;color:var(--muted);cursor:pointer;user-select:none}
+  nav label input{accent-color:var(--accent);cursor:pointer}
+
+  main{padding:14px 18px 26px}
+  .empty{background:var(--card);border:1px dashed var(--line);border-radius:var(--r);
+    padding:34px 20px;text-align:center;color:var(--muted)}
+  .empty b{display:block;color:var(--fg);margin-bottom:6px}
+
+  /* ---- 表 ---- */
+  .scroll{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:var(--r)}
+  table{border-collapse:collapse;width:100%;font-size:12px}
+  th,td{padding:7px 10px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+  thead th{position:sticky;top:0;background:#FDF3E6;font-size:11px;color:var(--muted);
+    font-weight:700;cursor:pointer;user-select:none}
+  thead th:hover{color:var(--accent)}
+  thead th.sorted::after{content:" ▾";color:var(--accent)}
+  thead th.sorted.asc::after{content:" ▴"}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover{background:#FFFBF4}
+  .who{font-weight:700;max-width:230px;overflow:hidden;text-overflow:ellipsis}
+  .num{text-align:right;font-variant-numeric:tabular-nums}
+
+  /* 到達率のバー（数字と形の両方で読めるように） */
+  .bar{display:flex;align-items:center;gap:8px;min-width:132px}
+  .track{flex:1;height:7px;border-radius:99px;background:#F0E6D6;overflow:hidden}
+  .fill{height:100%;border-radius:99px;background:var(--accent)}
+  .fill.hi{background:var(--ok)}
+  .fill.mid{background:var(--warn)}
+  .pct{width:38px;text-align:right;font-weight:800;font-variant-numeric:tabular-nums}
+
+  .pill{display:inline-block;margin-left:6px;padding:1px 7px;border-radius:99px;
+    font-size:10px;font-weight:800;background:var(--accent-soft);color:var(--accent);vertical-align:1px}
+  tr.me td{background:#FFFCF6}
+  tr.me:hover td{background:#FFF7EA}
+
+  /* ---- 一覧（生徒×項目） ---- */
+  .grid td.cell{white-space:pre-line;font-size:11px;min-width:76px;text-align:center;color:var(--muted)}
+  .grid td.cell.done{background:var(--ok-soft);color:var(--ok);font-weight:700}
+  .grid td.cell.part{background:var(--warn-soft);color:#8A5A10}
+  .grid th.item{font-size:10.5px;white-space:normal;min-width:76px;max-width:76px;line-height:1.35}
+  .grid td.who,.grid th.who{position:sticky;left:0;background:var(--card);z-index:1;border-right:1px solid var(--line)}
+  .grid thead th.who{background:#FDF3E6;z-index:2}
+
+  /* ---- 項目別（クラスの弱点） ---- */
+  .hint{font-size:11.5px;color:var(--muted);margin:0 0 9px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="htop">
+    <h1>🌮 <span id="app">…</span> ・ クラスの進捗</h1>
+    <span class="stamp" id="stamp"></span>
+  </div>
+  <div class="cards" id="cards"></div>
+  <nav>
+    <button id="t-stu" aria-selected="true">生徒ごと</button>
+    <button id="t-item" aria-selected="false">項目ごと</button>
+    <button id="t-grid" aria-selected="false">一覧表</button>
+    <label id="wrap-me" hidden><input type="checkbox" id="inc-me">先生も集計に含める</label>
+  </nav>
+</header>
+
+<main id="main"><div class="empty">読み込み中…</div></main>
+
+<script>
+  var D = null, tab = 'stu';
+  var sortKey = 'rate', sortAsc = false;
+  var incMe = false;   // 先生自身をクラスの集計に入れるか（表には常に出す）
+
+  // 集計（上のカード・項目ごとの達成率）に使う母集団。表の行数とは別。
+  function pool() { return incMe ? D.students : D.students.filter(function (s) { return !s.me; }); }
+
+  var esc = function (s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  };
+  var pct = function (n) { return Math.round(n) + '%'; };
+  var barCls = function (r) { return r >= 80 ? 'hi' : (r >= 40 ? 'mid' : ''); };
+  var when = function (t) {
+    if (!t) return '—';
+    var d = new Date(t), n = new Date();
+    var sameDay = d.toDateString() === n.toDateString();
+    var hh = ('0' + d.getHours()).slice(-2) + ':' + ('0' + d.getMinutes()).slice(-2);
+    return sameDay ? ('今日 ' + hh) : ((d.getMonth() + 1) + '/' + d.getDate() + ' ' + hh);
+  };
+  var bar = function (r) {
+    return '<div class="bar"><div class="track"><div class="fill ' + barCls(r) +
+      '" style="width:' + Math.max(2, r) + '%"></div></div><span class="pct">' + pct(r) + '</span></div>';
+  };
+
+  // key が 'st:words' のときは stats の中を見る
+  function val(row, key) {
+    return key.indexOf('st:') === 0 ? (row.stats[key.slice(3)] || 0) : row[key];
+  }
+  function sortRows(rows, key, asc) {
+    return rows.slice().sort(function (a, b) {
+      var x = val(a, key), y = val(b, key);
+      if (typeof x === 'string') { x = x.toLowerCase(); y = String(y).toLowerCase(); }
+      if (x < y) return asc ? -1 : 1;
+      if (x > y) return asc ? 1 : -1;
+      return 0;
+    });
+  }
+
+  /* ---- 生徒ごと ---- */
+  function viewStudents() {
+    var H = D.headers || {};
+    var cols = [{ k: 'email', t: H.student || '生徒' }];
+    if (H.rate !== '') cols.push({ k: 'rate', t: H.rate || '到達率' });
+    if (H.done !== '') cols.push({ k: 'done', t: H.done || '達成' });
+    cols = cols.concat(D.statDefs.map(function (def) { return { k: 'st:' + def.key, t: def.label }; }));
+    if (H.plays !== '') cols.push({ k: 'plays', t: H.plays || 'のべプレイ' });
+    cols.push({ k: 'last', t: '最終学習' });
+
+    var h = cols.map(function (c) {
+      return '<th data-k="' + c.k + '" class="' + (sortKey === c.k ? 'sorted ' + (sortAsc ? 'asc' : '') : '') + '">'
+        + esc(c.t) + '</th>';
+    }).join('');
+
+    // 先生の行も必ず出す（「先生」の印を付けて、集計に入っているかが分かるようにする）
+    var body = sortRows(D.students, sortKey, sortAsc).map(function (s) {
+      var tds = cols.map(function (c) {
+        if (c.k === 'email') return '<td class="who" title="' + esc(s.email) + '">' + esc(s.email)
+          + (s.me ? '<span class="pill">先生</span>' : '') + '</td>';
+        if (c.k === 'rate') return '<td>' + bar(s.rate) + '</td>';
+        if (c.k === 'done') return '<td class="num">' + s.done + ' / ' + D.items.length + '</td>';
+        if (c.k === 'plays') return '<td class="num">' + s.plays + '</td>';
+        if (c.k === 'last') return '<td>' + when(s.last) + '</td>';
+        if (c.k.indexOf('st:') === 0) return '<td class="num">' + (s.stats[c.k.slice(3)] || 0).toLocaleString() + '</td>';
+        return '<td></td>';
+      }).join('');
+      return '<tr class="' + (s.me ? 'me' : '') + '">' + tds + '</tr>';
+    }).join('');
+    return '<div class="scroll"><table><thead><tr>' + h + '</tr></thead><tbody>' + body + '</tbody></table></div>';
+  }
+
+  /* ---- 項目ごと（クラスの弱点が上に来る） ---- */
+  function viewItems() {
+    var P = pool();
+    var n = P.length || 1;
+    var rows = D.items.map(function (it) {
+      var done = 0, part = 0;
+      P.forEach(function (s) {
+        var c = s.cells[it.id];
+        if (!c) return;
+        if (c.clears > 0) done++; else part++;
+      });
+      return { id: it.id, label: it.label, done: done, part: part, rate: done * 100 / n };
+    }).sort(function (a, b) { return (a.rate - b.rate) || (b.part - a.part); });
+
+    var body = rows.map(function (r) {
+      return '<tr><td class="who">' + esc(r.label) + '</td>'
+        + '<td>' + bar(r.rate) + '</td>'
+        + '<td class="num">' + r.done + ' / ' + P.length + '</td>'
+        + '<td class="num">' + (r.part || '—') + '</td></tr>';
+    }).join('');
+    return '<p class="hint">達成した人が少ない項目を上に並べています。ここがクラスのつまずきです。</p>'
+      + '<div class="scroll"><table><thead><tr><th>項目</th><th>達成率</th><th>達成した人</th><th>途中の人</th></tr></thead>'
+      + '<tbody>' + body + '</tbody></table></div>';
+  }
+
+  /* ---- 一覧表（生徒 × 項目） ---- */
+  function viewGrid() {
+    var head = '<th class="who">生徒</th>' + D.items.map(function (it) {
+      return '<th class="item" title="' + esc(it.label) + '">' + esc(it.label) + '</th>';
+    }).join('');
+    var body = sortRows(D.students, 'email', true).map(function (s) {
+      var tds = D.items.map(function (it) {
+        var c = s.cells[it.id];
+        if (!c) return '<td class="cell">·</td>';
+        var cls = c.clears > 0 ? 'done' : 'part';
+        return '<td class="cell ' + cls + '">' + esc(c.cell) + '</td>';
+      }).join('');
+      return '<tr class="' + (s.me ? 'me' : '') + '"><td class="who" title="' + esc(s.email) + '">'
+        + esc(s.email) + (s.me ? '<span class="pill">先生</span>' : '') + '</td>' + tds + '</tr>';
+    }).join('');
+    return '<p class="hint">横にスクロールできます。緑＝達成、黄＝途中、· ＝未着手。</p>'
+      + '<div class="scroll"><table class="grid"><thead><tr>' + head + '</tr></thead><tbody>' + body + '</tbody></table></div>';
+  }
+
+  // 上のカード。母集団は pool()（先生を含めるかはチェックボックス次第）
+  //   固定4枚 ＋ アプリ固有の集計項目（学習済み単語・Tacos・Excellent …）はクラスの合計を出す
+  function renderCards() {
+    var P = pool();
+    var n = P.length;
+    var avg = n ? P.reduce(function (a, s) { return a + s.rate; }, 0) / n : 0;
+    var today = P.filter(function (s) {
+      return s.last && new Date(s.last).toDateString() === new Date().toDateString();
+    }).length;
+    var done = P.reduce(function (a, s) { return a + s.done; }, 0);
+
+    var H = D.headers || {};
+    var cards = [{ v: n, t: '生徒' }];
+    if (H.rate !== '') cards.push({ v: pct(avg), t: '平均 ' + (H.rate || '到達率') });
+    cards.push({ v: today, t: '今日 学習した人' });
+    if (H.done !== '') cards.push({ v: done, t: 'のべ ' + (H.done || '達成数') });
+    D.statDefs.forEach(function (def) {
+      var sum = P.reduce(function (a, s) { return a + (s.stats[def.key] || 0); }, 0);
+      cards.push({ v: sum.toLocaleString(), t: 'クラス計 ' + def.label });
+    });
+    document.getElementById('cards').innerHTML = cards.map(function (c) {
+      return '<div class="c"><b>' + esc(c.v) + '</b><span>' + esc(c.t) + '</span></div>';
+    }).join('');
+  }
+
+  function render() {
+    renderCards();
+    var m = document.getElementById('main');
+    if (!D.students.length) {
+      m.innerHTML = '<div class="empty"><b>まだ記録がありません</b>'
+        + '生徒が先生のURLを開いて学習すると、ここに出ます。<br>'
+        + 'URLはメニュー「🌮 …」→「生徒に配るURLを表示」から確認できます。</div>';
+      return;
+    }
+    m.innerHTML = tab === 'stu' ? viewStudents() : (tab === 'item' ? viewItems() : viewGrid());
+
+    if (tab === 'stu') {
+      Array.prototype.forEach.call(m.querySelectorAll('th[data-k]'), function (th) {
+        th.onclick = function () {
+          var k = th.getAttribute('data-k');
+          if (sortKey === k) sortAsc = !sortAsc;
+          else { sortKey = k; sortAsc = (k === 'email'); }
+          render();
+        };
+      });
+    }
+  }
+
+  function setTab(t) {
+    tab = t;
+    ['stu', 'item', 'grid'].forEach(function (x) {
+      document.getElementById('t-' + x).setAttribute('aria-selected', String(x === t));
+    });
+    render();
+  }
+  ['stu', 'item', 'grid'].forEach(function (x) {
+    document.getElementById('t-' + x).onclick = function () { setTab(x); };
+  });
+
+  document.getElementById('inc-me').onchange = function (e) { incMe = e.target.checked; render(); };
+
+  google.script.run.withSuccessHandler(function (d) {
+    D = d;
+    if (D.headers && D.headers.rate === '') sortKey = 'plays';   // 到達率が無いアプリは回数順で
+    document.getElementById('app').textContent = d.app;
+    document.getElementById('stamp').textContent = '取得 ' + when(d.now);
+    // 先生自身のプレイ記録があるときだけ「先生も集計に含める」を出す
+    if (d.students.some(function (s) { return s.me; })) document.getElementById('wrap-me').hidden = false;
+    render();
+  }).withFailureHandler(function (e) {
+    document.getElementById('main').innerHTML =
+      '<div class="empty"><b>読み込めませんでした</b>' + esc(e && e.message) + '</div>';
+  }).dashData();
+</script>
+</body>
+</html>

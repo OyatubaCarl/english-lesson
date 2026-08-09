@@ -1,0 +1,20 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Lead,   Hiragino Sans W7, 64, &H00FFFFFF, &H00081020, &H80000000, -1, 0,0,0, 100,100, 1, 0, 1, 5, 3, 8, 70, 70, 120, 1
+Style: Sub,    Hiragino Sans W6, 52, &H00C8E4F4,  &H00081020, &H80000000,  0, 0,0,0, 100,100, 1, 0, 1, 4, 3, 2, 70, 70, 210, 1
+Style: Big,    Hiragino Sans W8, 128,&H00FFFFFF, &H00081020, &H80000000, -1, 0,0,0, 100,100, 2, 0, 1, 6, 4, 5, 60, 60, 250, 1
+Style: BigSub, Hiragino Sans W6, 50, &H00C8E4F4,  &H00081020, &H80000000,  0, 0,0,0, 100,100, 1, 0, 1, 4, 3, 8, 60, 60, 1120, 1
+Style: URL,    Hiragino Sans W7, 58, &H00B3E8FF, &H00081020, &H80000000, -1, 0,0,0, 100,100, 1, 0, 1, 4, 3, 2, 60, 60, 360, 1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:00.20,0:00:05.20,Lead,,0,0,0,,{\fad(350,300)}日本語の文に、{\c&H006AA2F4}英単語{\c&H00FFFFFF}をそっと。
+Dialogue: 0,0:00:01.60,0:00:05.20,Sub,,0,0,0,,{\fad(350,300)}文脈ごと、やさしく覚える。

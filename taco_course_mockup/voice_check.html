@@ -1,0 +1,131 @@
+<!DOCTYPE html><html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>音声の聞き比べ — Teacher Tacos English</title>
+<style>
+:root{--bg:#fbf6ee;--card:#fff;--fg:#2a2018;--muted:#7c6a56;--faint:#a89b88;--border:#ece0cf;
+  --accent:#e8642a;--accent-soft:#fdeee6;--teal:#2a9d8f;--green:#5aa011;--green-soft:#eaf6d8;
+  --shadow-sm:0 2px 6px rgba(90,60,30,.08);--radius:14px;
+  --ui:"Hiragino Sans","Yu Gothic",Meiryo,system-ui,sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:var(--ui);line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:1.35rem;font-weight:900}
+.sub{font-size:.84rem;color:var(--muted);margin-top:4px}
+.note{background:var(--accent-soft);border:1px solid #f6d3c3;border-radius:12px;padding:12px 14px;font-size:.84rem;color:#7a4a30;margin:16px 0 22px}
+.note b{color:var(--accent)}
+.word{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:14px 16px;margin-top:14px}
+.wh{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.wh .w{font-size:1.3rem;font-weight:900;font-family:Georgia,serif}
+.wh .ipa{font-size:.8rem;color:var(--muted)}
+.wh .tag{font-size:.68rem;font-weight:800;background:var(--green-soft);color:#3f6f0d;border-radius:999px;padding:2px 9px}
+.grid{display:grid;grid-template-columns:64px repeat(2,1fr);gap:7px;align-items:center}
+.hdr{font-size:.7rem;font-weight:800;color:var(--faint);text-align:center}
+.vname{font-size:.78rem;font-weight:800;color:var(--muted)}
+button.play{width:100%;border:1.5px solid var(--border);background:#fff;border-radius:10px;padding:9px 6px;
+  font-family:inherit;font-size:.8rem;font-weight:700;color:var(--fg);cursor:pointer;transition:.12s}
+button.play:hover{border-color:var(--accent);background:var(--accent-soft)}
+button.play:active{transform:scale(.96)}
+button.play.on{border-color:var(--accent);background:var(--accent);color:#fff}
+button.play.pick{border-color:var(--green);background:var(--green-soft);color:#3f6f0d}
+.pickrow{margin-top:10px;font-size:.76rem;color:var(--muted);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.pickrow b{color:var(--accent)}
+.foot{margin-top:26px;font-size:.78rem;color:var(--muted);background:var(--card);border:1px solid var(--border);
+  border-radius:var(--radius);padding:14px 16px}
+.foot code{background:#f3ece2;border-radius:5px;padding:1px 5px;font-size:.9em}
+#summary{margin-top:14px;background:#fff;border:1px dashed var(--accent);border-radius:12px;padding:12px 14px;font-size:.82rem;white-space:pre-wrap;display:none}
+</style></head>
+<body>
+<div class="wrap">
+  <h1>🔊 音声の聞き比べ</h1>
+  <div class="sub">発音が怪しい語について、<b>4つの声</b>×<b>2つの合成方式</b>を用意しました。</div>
+
+  <div class="note">
+    <b>テキスト入力</b>＝単語をそのまま読ませる（今までの方式）。<b>音素入力</b>＝発音記号を直接指定する方式。<br>
+    どちらも「先頭に無音を入れる／歯擦音を持ち上げる」処理は同じです。<br>
+    <b>live</b> は音素入力のみ「住む＝<b>リヴ</b>」に矯正済み（テキスト入力だと「ライヴ」になります）。<br>
+    気に入ったものを<b>長押し（またはダブルタップ）で「これ」に選択</b>できます。最後に選択一覧が出ます。
+  </div>
+
+  <div id="list"></div>
+
+  <div id="summary"></div>
+
+  <div class="foot">
+    <b>選び方の目安</b><br>
+    ・<code>student</code> は「ステューデント」の <b>st</b> がはっきり聞こえるか<br>
+    ・<code>live</code> は「<b>リヴ</b>」（ライヴではない）か<br>
+    ・<code>school / sport / stop</code> は語頭の <b>s</b> が消えていないか<br>
+    選んだ組み合わせを教えていただければ、その声・方式で全語を作り直します。
+  </div>
+</div>
+<script>
+const WORDS=[
+  {w:'student', ipa:"/ˈstuːdənt/ ステューデント", tag:'st が怪しい'},
+  {w:'live',    ipa:"/lɪv/ リヴ（住む）",        tag:'ライヴになる'},
+  {w:'school',  ipa:"/skuːl/ スクール",          tag:'s が消える'},
+  {w:'sport',   ipa:"/spɔːrt/ スポーツ",         tag:'s が消える'},
+  {w:'stop',    ipa:"/stɒp/ ストップ",           tag:'s が消える'},
+  {w:'sister',  ipa:"/ˈsɪstər/ シスター",        tag:''},
+  {w:'study',   ipa:"/ˈstʌdi/ スタディ",         tag:''},
+  {w:'speak',   ipa:"/spiːk/ スピーク",          tag:''},
+];
+const VOICES=[
+  {id:'lessac', name:'lessac', note:'現行'},
+  {id:'amy',    name:'amy',    note:'女性'},
+  {id:'ryan',   name:'ryan',   note:'男性'},
+  {id:'jenny',  name:'jenny',  note:'女性'},
+];
+const KINDS=[{id:'text',label:'テキスト入力'},{id:'phon',label:'音素入力'}];
+const picks={};
+let cur=null;
+function play(src, btn){
+  if(cur){ cur.pause(); }
+  document.querySelectorAll('button.play.on').forEach(b=>b.classList.remove('on'));
+  const a=new Audio(src); cur=a; btn.classList.add('on');
+  a.onended=()=>btn.classList.remove('on');
+  a.play().catch(()=>btn.classList.remove('on'));
+}
+function render(){
+  const list=document.getElementById('list');
+  WORDS.forEach(({w,ipa,tag})=>{
+    const card=document.createElement('div'); card.className='word';
+    card.innerHTML=`<div class="wh"><span class="w">${w}</span><span class="ipa">${ipa}</span>${tag?`<span class="tag">${tag}</span>`:''}</div>`;
+    const grid=document.createElement('div'); grid.className='grid';
+    grid.innerHTML=`<div></div>${KINDS.map(k=>`<div class="hdr">${k.label}</div>`).join('')}`;
+    VOICES.forEach(v=>{
+      const nm=document.createElement('div'); nm.className='vname'; nm.textContent=v.name;
+      grid.appendChild(nm);
+      KINDS.forEach(k=>{
+        const b=document.createElement('button'); b.className='play';
+        b.textContent='▶ '+v.name;
+        const src=`voice_check/${w}__${v.id}__${k.id}.mp3`;
+        b.onclick=()=>play(src,b);
+        let t=null;
+        const pick=()=>{ picks[w]=`${v.name} / ${k.label}`;
+          card.querySelectorAll('button.play').forEach(x=>x.classList.remove('pick'));
+          b.classList.add('pick'); showSummary(); };
+        b.oncontextmenu=(e)=>{ e.preventDefault(); pick(); };
+        b.ondblclick=pick;
+        b.addEventListener('touchstart',()=>{ t=setTimeout(pick,600); },{passive:true});
+        b.addEventListener('touchend',()=>clearTimeout(t));
+        grid.appendChild(b);
+      });
+    });
+    card.appendChild(grid);
+    const pr=document.createElement('div'); pr.className='pickrow';
+    pr.innerHTML='<span>長押し / ダブルタップで「これ」に選択</span>';
+    card.appendChild(pr);
+    list.appendChild(card);
+  });
+}
+function showSummary(){
+  const s=document.getElementById('summary');
+  const keys=Object.keys(picks);
+  if(!keys.length){ s.style.display='none'; return; }
+  s.style.display='block';
+  s.textContent='【選んだもの】\n'+keys.map(k=>`  ${k} → ${picks[k]}`).join('\n')
+    +'\n\nこの内容をそのまま伝えていただければ、全語をその方式で作り直します。';
+}
+render();
+</script>
+</body></html>

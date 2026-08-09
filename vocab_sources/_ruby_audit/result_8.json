@@ -1,0 +1,542 @@
+[
+  {
+    "id": "s5_040",
+    "word": "describe",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "係《かかり》の人《にん》",
+    "context": "落とし物《おとしもの》の係《かかり》の人《にん》",
+    "correct": "係《かかり》の人《ひと》",
+    "comment": "「係の人」は「かかりのひと」。"
+  },
+  {
+    "id": "s5_1036",
+    "word": "backache",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "1日《にち》中《なか》",
+    "context": "1日《にち》中《なか》机《つくえ》に向《む》かっていたら",
+    "correct": "1日中《いちにちじゅう》",
+    "comment": "「1日中」は「いちにちじゅう」。「いちにちなか」は分割誤読で音声が破綻。"
+  },
+  {
+    "id": "s5_1043",
+    "word": "bakery",
+    "severity": "bad",
+    "issue_type": "counter",
+    "fragment": "売《う》り切《き》れる日《にち》",
+    "context": "午前中《ごぜんちゅう》で売《う》り切《き》れる日《にち》が続《つづ》いている",
+    "correct": "売《う》り切《き》れる日《ひ》",
+    "comment": "「~する日」(日付ではない時間)は「ひ」。「にち」は助数詞用。"
+  },
+  {
+    "id": "s5_1092",
+    "word": "bound",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "4時間《じかん》後《のち》",
+    "context": "新幹線《しんかんせん》に乗《の》り、4時間《じかん》後《のち》には古都",
+    "correct": "4時間後《よじかんご》",
+    "comment": "「N時間後」は「Nじかんご」。「~後」が単独で「のち」と読まれるのは古文調。現代散文では「ご」または「あと」。"
+  },
+  {
+    "id": "s5_1133",
+    "word": "calculator",
+    "severity": "bad",
+    "issue_type": "idiom",
+    "fragment": "整理《せいり》する際《きわ》",
+    "context": "ノートを整理《せいり》する際《きわ》",
+    "correct": "整理《せいり》する際《さい》",
+    "comment": "動詞連体形+「際」は「さい」(=とき)。「きわ」は「窓際」「間際」など名詞限定。"
+  },
+  {
+    "id": "s5_1386",
+    "word": "directly",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "人《にん》を介《かい》さず",
+    "context": "問題《もんだい》があれば、人《にん》を介《かい》さず",
+    "correct": "人《ひと》を介《かい》さず",
+    "comment": "「人を介さず」は「ひとをかいさず」。"
+  },
+  {
+    "id": "s5_1434",
+    "word": "duty-free",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "空《そら》港《みなと》",
+    "context": "空《そら》港《みなと》の<duty-free>",
+    "correct": "空港《くうこう》",
+    "comment": "「空港」は「くうこう」が唯一の読み。「そらみなと」は完全な誤分割で実音声が破綻する。"
+  },
+  {
+    "id": "s5_1596",
+    "word": "freely",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "交《まじ》わ",
+    "context": "意見《いけん》を<freely>交《まじ》わし",
+    "correct": "交《か》わし",
+    "comment": "意見を「交わす」は「かわす」。「まじわす」は誤読。"
+  },
+  {
+    "id": "s5_1708",
+    "word": "hip",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "夕食《ゆうしょく》後《のち》",
+    "context": "夕食《ゆうしょく》後《のち》に念入《ねんい》りなストレッチ",
+    "correct": "夕食後《ゆうしょくご》",
+    "comment": "「夕食後」は「ゆうしょくご」。漢語+後は「ご」。"
+  },
+  {
+    "id": "s5_1859",
+    "word": "liberate",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "働《はたら》き方《ほう》",
+    "context": "自分《じぶん》の働《はたら》き方《ほう》を選《えら》べる",
+    "correct": "働《はたら》き方《かた》",
+    "comment": "「働き方」(=やり方)は「はたらきかた」。「ほう」は方向/方角(東の方など)の意。"
+  },
+  {
+    "id": "s5_1918",
+    "word": "meditate",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "1日《にち》の",
+    "context": "1日《にち》の始《はじ》まりが穏《おだ》やかになり",
+    "correct": "1日《いちにち》の",
+    "comment": "「1日の始まり」は「いちにちのはじまり」。単独の「1日」は「いちにち」と読む。"
+  },
+  {
+    "id": "s5_1949",
+    "word": "misunderstanding",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "放《ほう》っ",
+    "context": "放《ほう》っておくと関係《かんけい》に深《ふか》い溝",
+    "correct": "放《ほう》って (放っておく)",
+    "comment": "「放っておく」は「ほうっておく」で実は「ほう」も使われる慣用。ただし通常「放つ(はなつ)」と区別すべき。文脈は「放置する」意で「ほう」自体は誤りではない。warnでも可。"
+  },
+  {
+    "id": "s5_2173",
+    "word": "prison",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "出所《しゅっしょ》後《のち》",
+    "context": "出所《しゅっしょ》後《のち》の社会復帰《しゃかいふっき》",
+    "correct": "出所後《しゅっしょご》",
+    "comment": "「出所後」は「しゅっしょご」。漢語+後は「ご」が原則。"
+  },
+  {
+    "id": "s5_2317",
+    "word": "runway",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "空《そら》港《みなと》",
+    "context": "空《そら》港《みなと》の<runway>",
+    "correct": "空港《くうこう》",
+    "comment": "「空港」は「くうこう」が唯一の読み。「そらみなと」は完全な誤分割で実音声が破綻する。"
+  },
+  {
+    "id": "s5_2572",
+    "word": "toothpaste",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "絞《しぼ》り方《ほう》",
+    "context": "チューブの絞《しぼ》り方《ほう》ひとつ",
+    "correct": "絞《しぼ》り方《かた》",
+    "comment": "「絞り方」は「しぼりかた」。「ほう」は方向の意。"
+  },
+  {
+    "id": "s5_2595",
+    "word": "tropical",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "降《お》り",
+    "context": "夕立《ゆうだち》が毎日《まいにち》のように降《お》り",
+    "correct": "降《ふ》り",
+    "comment": "雨/夕立が「降る」は「ふる」。「お(降りる)」は階段や乗り物から下りる場合のみ。"
+  },
+  {
+    "id": "s5_2643",
+    "word": "uplifted",
+    "severity": "bad",
+    "issue_type": "idiom",
+    "fragment": "会場《かいじょう》を後《のち》にした",
+    "context": "会場《かいじょう》を後《のち》にした観客《かんきゃく》",
+    "correct": "会場《かいじょう》を後《あと》にした",
+    "comment": "「~を後にする」(離れる意)は「あと」。「のち」は時間的後の意で、「離れる」意では使わない。"
+  },
+  {
+    "id": "s5_2677",
+    "word": "vowel",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "開《ひら》き方《ほう》",
+    "context": "口《くち》の開《ひら》き方《ほう》や舌《した》の位置",
+    "correct": "開《ひら》き方《かた》",
+    "comment": "「開き方」は「ひらきかた」。"
+  },
+  {
+    "id": "s5_281",
+    "word": "claim",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "日《ひ》付《つき》",
+    "context": "ノートの日《ひ》付《つき》がそれを裏付《うらづ》けた",
+    "correct": "日付《ひづけ》",
+    "comment": "「日付」は「ひづけ」。「ひつき」「つき」は誤読(月の日付の意なら「つきにち」だが日付の意では使わない)。"
+  },
+  {
+    "id": "s5_391",
+    "word": "extra",
+    "severity": "bad",
+    "issue_type": "counter",
+    "fragment": "濡《ぬ》れた日《にち》",
+    "context": "雨《あめ》で濡《ぬ》れた日《にち》に",
+    "correct": "濡《ぬ》れた日《ひ》",
+    "comment": "「~した日」は「ひ」。「にち」は助数詞用。"
+  },
+  {
+    "id": "s5_541",
+    "word": "marvelous",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "夜《よる》空《そら》",
+    "context": "山頂《さんちょう》から見《み》た夜《よる》空《そら》",
+    "correct": "夜空《よぞら》",
+    "comment": "「夜空」は連濁して「よぞら」。「よるそら」は誤分割で不自然。"
+  },
+  {
+    "id": "s5_568",
+    "word": "noun",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "人《にん》の名前",
+    "context": "物《もの》や人《にん》の名前《なまえ》を表《あらわ》す",
+    "correct": "人《ひと》の名前",
+    "comment": "「人の名前」は「ひとのなまえ」。"
+  },
+  {
+    "id": "s5_619",
+    "word": "polite",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "人《にん》とすれ違《ちが》う",
+    "context": "海外《かいがい》の学生《がくせい》は、人《にん》とすれ違《ちが》う",
+    "correct": "人《ひと》とすれ違《ちが》う",
+    "comment": "「人とすれ違う」は「ひととすれちがう」。"
+  },
+  {
+    "id": "s5_644",
+    "word": "quality",
+    "severity": "bad",
+    "issue_type": "idiom",
+    "fragment": "お得《え》",
+    "context": "お得《え》だ",
+    "correct": "お得《とく》",
+    "comment": "「お得」は「おとく」。「え」と単独で読むのは「え=絵」の混同。kanaが「おえだ」と完全破綻。"
+  },
+  {
+    "id": "s5_695",
+    "word": "rocket",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "青《あお》空《そら》",
+    "context": "煙《けむり》の柱《はしら》を描《えが》きながら青《あお》空《そら》に｜吸い込《すいこ》まれていく",
+    "correct": "青空《あおぞら》",
+    "comment": "「青空」は連濁して「あおぞら」。「あおそら」は分割誤読。"
+  },
+  {
+    "id": "s5_765",
+    "word": "skiing",
+    "severity": "bad",
+    "issue_type": "counter",
+    "fragment": "日《にち》ごとに",
+    "context": "日《にち》ごとに上達《じょうたつ》し",
+    "correct": "日《ひ》ごとに",
+    "comment": "「日ごとに」は「ひごとに」(=毎日)。「にちごとに」は不自然。"
+  },
+  {
+    "id": "s5_922",
+    "word": "achievement",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "陸《りく》上《うえ》",
+    "context": "陸《りく》上《うえ》選手《せんしゅ》の県大会《けんたいかい》優勝",
+    "correct": "陸上《りくじょう》",
+    "comment": "「陸上(競技/選手)」は「りくじょう」。「りくうえ」は誤分割で意味が崩れる。"
+  },
+  {
+    "id": "s6_0066",
+    "word": "amazingly",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "初対面《しょたいめん》の人《にん》",
+    "context": "初対面《しょたいめん》の人《にん》",
+    "correct": "初対面《しょたいめん》の人《ひと》",
+    "comment": "「初対面の人」は「しょたいめんのひと」。"
+  },
+  {
+    "id": "s6_0336",
+    "word": "collocation",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "初対面《しょたいめん》の人《にん》",
+    "context": "初対面《しょたいめん》の人《にん》",
+    "correct": "初対面《しょたいめん》の人《ひと》",
+    "comment": "「初対面の人」は「しょたいめんのひと」。"
+  },
+  {
+    "id": "s6_0492",
+    "word": "daytime",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "日《ひ》光《ひかり》",
+    "context": "十分《じゅうぶん》な日《ひ》光《ひかり》を浴《あ》びる",
+    "correct": "日光《にっこう》",
+    "comment": "「日光を浴びる」は熟語で「にっこう」。「ひひかり」は分割誤読で意味不明になる。"
+  },
+  {
+    "id": "s6_0493",
+    "word": "de facto",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "看板《かんばん》上《うえ》",
+    "context": "看板《かんばん》上《うえ》の代表《だいひょう》は別《べつ》にいたが",
+    "correct": "看板上《かんばんじょう》",
+    "comment": "「看板上の」=「形式上の」の意で「かんばんじょう」。「かんばんうえ」は意味不明な誤読。"
+  },
+  {
+    "id": "s6_0500",
+    "word": "deceptive",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "表示法《ひょうじほう》上《うえ》",
+    "context": "景品《けいひん》表示法《ひょうじほう》上《うえ》の問題",
+    "correct": "表示法上《ひょうじほうじょう》",
+    "comment": "「~法上(の)」は接尾辞「上(じょう)」で「ほうじょう」。「ほううえ」は誤分割。"
+  },
+  {
+    "id": "s6_0566",
+    "word": "discharge",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "退院《たいいん》後《のち》",
+    "context": "家族《かぞく》は退院《たいいん》後《のち》の生活《せいかつ》",
+    "correct": "退院後《たいいんご》",
+    "comment": "「退院後」は「たいいんご」。漢語+「後」は「ご」と読むのが原則(食後=しょくご、午後=ごご)。"
+  },
+  {
+    "id": "s6_0998",
+    "word": "ideology",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "交《まじ》わ",
+    "context": "議論《ぎろん》を国会《こっかい》の場《ば》で交《まじ》わした",
+    "correct": "交《か》わした",
+    "comment": "議論を「交わす」は「かわす」。"
+  },
+  {
+    "id": "s6_1260",
+    "word": "medication",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "退院《たいいん》後《のち》",
+    "context": "退院《たいいん》後《のち》も<medication>を続けながら",
+    "correct": "退院後《たいいんご》",
+    "comment": "「退院後」は「たいいんご」。漢語+「後」は「ご」と読むのが原則(食後=しょくご、午後=ごご)。"
+  },
+  {
+    "id": "s6_1453",
+    "word": "overbook",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "空《そら》港《みなと》",
+    "context": "空《そら》港《みなと》カウンター",
+    "correct": "空港《くうこう》",
+    "comment": "「空港」は「くうこう」が唯一の読み。「そらみなと」は完全な誤分割で実音声が破綻する。"
+  },
+  {
+    "id": "s6_1453",
+    "word": "overbook",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "航《こう》空《そら》",
+    "context": "航《こう》空《そら》会社《かいしゃ》が便《びん》を<overbook>",
+    "correct": "航空《こうくう》",
+    "comment": "「航空」は「こうくう」。「こうそら」は誤読。"
+  },
+  {
+    "id": "s6_1584",
+    "word": "popularize",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "交《まじ》わ",
+    "context": "生命《せいめい》の話題《わだい》が交《まじ》わされる",
+    "correct": "交《か》わされる",
+    "comment": "話題が「交わされる」は「かわされる」。"
+  },
+  {
+    "id": "s6_1663",
+    "word": "psychology",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "人《にん》の行動",
+    "context": "彼女《かのじょ》は、人《にん》の行動《こうどう》の背後",
+    "correct": "人《ひと》の行動",
+    "comment": "「人の行動」は「ひとのこうどう」。「にん」は助数詞(N人)用。"
+  },
+  {
+    "id": "s6_1681",
+    "word": "quarantine",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "空《そら》港《みなと》",
+    "context": "空《そら》港《みなと》で実施《じっし》された<quarantine>",
+    "correct": "空港《くうこう》",
+    "comment": "「空港」は「くうこう」が唯一の読み。「そらみなと」は完全な誤分割で実音声が破綻する。"
+  },
+  {
+    "id": "s6_1839",
+    "word": "sandstone",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "地元《じもと》産《う》",
+    "context": "橋《はし》の脚《あし》には地元《じもと》産《う》の<sandstone>",
+    "correct": "地元産《じもとさん》",
+    "comment": "「~産」は「さん」(地元産=じもとさん、国産=こくさん)。「う(産む)」は動詞専用で「~産」では用いない。kanaも「じもとうの」と完全に破綻している。"
+  },
+  {
+    "id": "s6_1941",
+    "word": "snore",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "夕食《ゆうしょく》後《のち》",
+    "context": "父《ちち》は夕食《ゆうしょく》後《のち》すぐにソファ",
+    "correct": "夕食後《ゆうしょくご》",
+    "comment": "「夕食後」は「ゆうしょくご」。漢語+後は「ご」。"
+  },
+  {
+    "id": "s6_1970",
+    "word": "sparkling",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "夜《よる》空《そら》",
+    "context": "夜《よる》空《そら》の<sparkling>な星々",
+    "correct": "夜空《よぞら》",
+    "comment": "「夜空」は連濁して「よぞら」。「よるそら」は誤分割で不自然。"
+  },
+  {
+    "id": "s6_2138",
+    "word": "toil",
+    "severity": "bad",
+    "issue_type": "counter",
+    "fragment": "一日《ついたち》一日《ついたち》",
+    "context": "一日《ついたち》一日《ついたち》を積《つ》み重《かさ》ねていった",
+    "correct": "一日《いちにち》一日《いちにち》",
+    "comment": "「一日一日」(時間の積み重ね)は「いちにちいちにち」。「ついたち」は1日(日付)限定。"
+  },
+  {
+    "id": "s6_2147",
+    "word": "torture",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "人《にん》を<torture>",
+    "context": "歴史《れきし》教科書《きょうかしょ》は人《にん》を<torture>",
+    "correct": "人《ひと》を<torture>",
+    "comment": "「人を~する」(目的語)は「ひと」。"
+  },
+  {
+    "id": "s6_2188",
+    "word": "tub",
+    "severity": "bad",
+    "issue_type": "counter",
+    "fragment": "一日《ついたち》",
+    "context": "一日《ついたち》の疲《つか》れがゆっくり",
+    "correct": "一日《いちにち》",
+    "comment": "「一日」は月日付(○月1日)のみ「ついたち」。時間量・日数の意では「いちにち」。文脈は日付ではない。"
+  },
+  {
+    "id": "s6_2222",
+    "word": "undergraduate",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "交《まじ》わし",
+    "context": "熱心《ねっしん》に議論《ぎろん》を交《まじ》わし",
+    "correct": "交《か》わし",
+    "comment": "議論/言葉を「交わす」は「かわす」。「まじわす」は誤読(「交じる(まじる)」と混同)。"
+  },
+  {
+    "id": "s6_2325",
+    "word": "waist",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "歩《ある》く人《にん》",
+    "context": "街《まち》を歩《ある》く人《にん》の視線",
+    "correct": "歩《ある》く人《ひと》",
+    "comment": "「歩く人」は「あるくひと」。"
+  },
+  {
+    "id": "s6_2343",
+    "word": "well-balanced",
+    "severity": "bad",
+    "issue_type": "counter",
+    "fragment": "一日《ついたち》",
+    "context": "栄養素《えいようそ》を一日《ついたち》の食事《しょくじ》",
+    "correct": "一日《いちにち》",
+    "comment": "「一日」は月日付(○月1日)のみ「ついたち」。時間量・日数の意では「いちにち」。文脈は日付ではない。"
+  },
+  {
+    "id": "s6_2388",
+    "word": "yearn",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "夜《よる》空《そら》",
+    "context": "幼い頃に見た夜《よる》空《そら》の星々",
+    "correct": "夜空《よぞら》",
+    "comment": "「夜空」は連濁して「よぞら」。「よるそら」は誤分割で不自然。"
+  },
+  {
+    "id": "s5_2469",
+    "word": "studio",
+    "severity": "warn",
+    "issue_type": "verb_misreading",
+    "fragment": "訪《おとず》れる者《もの》",
+    "context": "訪《おとず》れる者《もの》を彼《かれ》の創作《そうさく》世界",
+    "correct": "訪《おとず》れる者《もの》 (もの でも可)",
+    "comment": "「訪れる者」は「もの」も「ひと」も使われる。文芸調なら「もの」で許容範囲。warnで判定。"
+  },
+  {
+    "id": "s5_647",
+    "word": "range",
+    "severity": "warn",
+    "issue_type": "rendaku",
+    "fragment": "3章《しょう》分《ふん》",
+    "context": "教科書《きょうかしょ》の3章《しょう》分《ふん》が中心",
+    "correct": "3章分《さんしょうぶん》",
+    "comment": "「~分(の)」量を表す場合は連濁して「ぶん」が自然。「ふん(時間)」との混同に注意。"
+  },
+  {
+    "id": "s6_0068",
+    "word": "ambiguity",
+    "severity": "warn",
+    "issue_type": "idiom",
+    "fragment": "後《のち》の",
+    "context": "放置《ほうち》すれば後《のち》の解釈《かいしゃく》",
+    "correct": "後《のち》の or 後《あと》の",
+    "comment": "「後の~」(将来の~)は「のち」も「あと」も使われる。文学調なら「のち」で許容範囲だが、ニュース調なら「あと」が自然。warnで判定。"
+  },
+  {
+    "id": "s6_1975",
+    "word": "specify",
+    "severity": "warn",
+    "issue_type": "idiom",
+    "fragment": "後《のち》の",
+    "context": "曖昧《あいまい》な記述《きじゅつ》は後《のち》の紛争《ふんそう》",
+    "correct": "後《のち》の or 後《あと》の",
+    "comment": "同上。「のち」も「あと」も可。warnで判定。"
+  }
+]

@@ -1,0 +1,216 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H139.md",
+  "audio": "高校生編/suno_ready/generated/audio/H139/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 146.46,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0038,
+  "expected_words": 266,
+  "transcribed_words": 267,
+  "matched_words": 264,
+  "coverage": 0.9925,
+  "precision": 0.9888,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 265,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 63,
+      "length": 1,
+      "words": [
+        "to"
+      ]
+    },
+    {
+      "start": 84,
+      "length": 1,
+      "words": [
+        "crewed"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 63,
+      "actual_start": 63,
+      "expected": [
+        "to"
+      ],
+      "actual": [
+        "ii"
+      ],
+      "actual_confidence": 0.0,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 84,
+      "actual_start": 84,
+      "expected": [
+        "crewed"
+      ],
+      "actual": [
+        "crude"
+      ],
+      "actual_confidence": 0.0,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 109,
+      "actual_start": 109,
+      "expected": [],
+      "actual": [
+        "radiation"
+      ],
+      "actual_confidence": 0.0
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "Space development was once an undertaking carried only by nations. But in the 21st century, private companies have entered one after another, and the commercial space age has arrived. A leading company is Elon Musk's SpaceX. It developed reusable rockets and dramatically reduced launch costs. It achieved in the private sector technology at the same level as national space programs. Mars Colonization II, rather than a work of science fiction, has entered a concrete stage. A giant rocket called Starship aims for a crude Mars flight in the 2030s. But in practice, the challenges pile up. The one-way trip to Mars is six to nine months cosmic radiation. Radiation, osteoporosis, psychological isolation. To solve these problems requires many years of research. Even when one arrives on Mars, the environment is unsuited to life. The atmosphere consists mainly carbon dioxide and temperatures are below zero. Water freezes and plants do not grow. Even so, humanity keeps taking up the challenge. Why? There is no single answer, but the scientist Carl Sagan said, Earth is only a small dot by living on multiple planets. Humanity increases its chances of survival. There are also those opposed to Mars colonization. It would only pollute a new planet without solving Earth's problems. The vast funds should be used to end poverty. There is a legitimate basis for this criticism. Space development expands the possibilities of humanity. But at the same time, we must not forget the responsibility to care for the Earth. When we look up at the sky, we must direct our eyes to both the future and the present.",
+  "segments": [
+    {
+      "start": 5.2,
+      "end": 9.56,
+      "text": "Space development was once an undertaking carried only by nations."
+    },
+    {
+      "start": 10.02,
+      "end": 14.98,
+      "text": "But in the 21st century, private companies have entered one after another,"
+    },
+    {
+      "start": 15.16,
+      "end": 17.7,
+      "text": "and the commercial space age has arrived."
+    },
+    {
+      "start": 18.28,
+      "end": 22.22,
+      "text": "A leading company is Elon Musk's SpaceX."
+    },
+    {
+      "start": 23.66,
+      "end": 28.36,
+      "text": "It developed reusable rockets and dramatically reduced launch costs."
+    },
+    {
+      "start": 28.36,
+      "end": 34.64,
+      "text": "It achieved in the private sector technology at the same level as national space programs."
+    },
+    {
+      "start": 35.14,
+      "end": 41.5,
+      "text": "Mars Colonization II, rather than a work of science fiction, has entered a concrete stage."
+    },
+    {
+      "start": 42.42,
+      "end": 47.56,
+      "text": "A giant rocket called Starship aims for a crude Mars flight in the 2030s."
+    },
+    {
+      "start": 47.68,
+      "end": 50.7,
+      "text": "But in practice, the challenges pile up."
+    },
+    {
+      "start": 52.0,
+      "end": 56.36,
+      "text": "The one-way trip to Mars is six to nine months cosmic radiation."
+    },
+    {
+      "start": 56.5,
+      "end": 61.22,
+      "text": "Radiation, osteoporosis, psychological isolation."
+    },
+    {
+      "start": 61.64,
+      "end": 64.96,
+      "text": "To solve these problems requires many years of research."
+    },
+    {
+      "start": 65.34,
+      "end": 70.18,
+      "text": "Even when one arrives on Mars, the environment is unsuited to life."
+    },
+    {
+      "start": 71.06,
+      "end": 76.88,
+      "text": "The atmosphere consists mainly carbon dioxide and temperatures are below zero."
+    },
+    {
+      "start": 77.4,
+      "end": 80.88,
+      "text": "Water freezes and plants do not grow."
+    },
+    {
+      "start": 82.66,
+      "end": 86.18,
+      "text": "Even so, humanity keeps taking up the challenge."
+    },
+    {
+      "start": 86.46,
+      "end": 86.62,
+      "text": "Why?"
+    },
+    {
+      "start": 87.08,
+      "end": 91.18,
+      "text": "There is no single answer, but the scientist Carl Sagan said,"
+    },
+    {
+      "start": 91.36,
+      "end": 95.46,
+      "text": "Earth is only a small dot by living on multiple planets."
+    },
+    {
+      "start": 95.92,
+      "end": 99.88,
+      "text": "Humanity increases its chances of survival."
+    },
+    {
+      "start": 106.88,
+      "end": 109.74,
+      "text": "There are also those opposed to Mars colonization."
+    },
+    {
+      "start": 110.9,
+      "end": 115.52,
+      "text": "It would only pollute a new planet without solving Earth's problems."
+    },
+    {
+      "start": 116.88,
+      "end": 119.48,
+      "text": "The vast funds should be used to end poverty."
+    },
+    {
+      "start": 120.94,
+      "end": 124.66,
+      "text": "There is a legitimate basis for this criticism."
+    },
+    {
+      "start": 125.76,
+      "end": 129.66,
+      "text": "Space development expands the possibilities of humanity."
+    },
+    {
+      "start": 130.24,
+      "end": 136.12,
+      "text": "But at the same time, we must not forget the responsibility to care for the Earth."
+    },
+    {
+      "start": 137.8,
+      "end": 146.46,
+      "text": "When we look up at the sky, we must direct our eyes to both the future and the present."
+    }
+  ]
+}

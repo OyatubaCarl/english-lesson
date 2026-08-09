@@ -1,0 +1,562 @@
+[
+  {
+    "id": "s6_0002",
+    "word": "abnormally",
+    "action": "keep",
+    "reason": "「異常に長い」は自然な連用修飾(形容詞修飾)。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0005",
+    "word": "abruptly",
+    "action": "keep",
+    "reason": "「突然に席を立つ」は自然な連用修飾。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0011",
+    "word": "accordingly",
+    "action": "fix",
+    "reason": "「それに応じて」で副詞形が完結。「に」は冗長で不自然。",
+    "fixed_body": "新しいデータが届いた研究室は、<accordingly>分析の手順を見直し、より精度の高い結論へと近づいていった。"
+  },
+  {
+    "id": "s6_0017",
+    "word": "actively",
+    "action": "keep",
+    "reason": "「積極的に発言」は自然な連用修飾。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0024",
+    "word": "additionally",
+    "action": "fix",
+    "reason": "「さらに」で完結する文修飾副詞。「に」は冗長。",
+    "fixed_body": "新事業の計画書には予算と人員の項目に加え、<additionally>リスク分析の章まで丁寧に盛り込まれていた。"
+  },
+  {
+    "id": "s6_0030",
+    "word": "admiringly",
+    "action": "keep",
+    "reason": "「感心したように見つめる」の意で「に」は連用として成立。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0031",
+    "word": "admittedly",
+    "action": "fix",
+    "reason": "「確かに/なるほど」は文修飾副詞。文頭で「に」二重は不自然。",
+    "fixed_body": "<admittedly>予算は厳しいが、知恵を出し合えば、最小限の資源で最大の成果を上げる道筋が必ず見えてくる。"
+  },
+  {
+    "id": "s6_0040",
+    "word": "adversely",
+    "action": "keep",
+    "reason": "「不利に影響する」は自然な連用修飾。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0043",
+    "word": "affectionately",
+    "action": "keep",
+    "reason": "「愛情深く/慈愛深くなでる」の意で「に」自然(愛おしげに)。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0046",
+    "word": "aggressively",
+    "action": "keep",
+    "reason": "「積極的に進める」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0062",
+    "word": "alternatively",
+    "action": "fix",
+    "reason": "「あるいは/代わりに」で完結。接続的用法で「に」は不自然。",
+    "fixed_body": "公共交通機関を使うか、<alternatively>自転車で向かうかを天気で判断し、私は朝の身支度を決めている。"
+  },
+  {
+    "id": "s6_0066",
+    "word": "amazingly",
+    "action": "fix",
+    "reason": "「驚くほど短い」は形容詞修飾で「に」不要。",
+    "fixed_body": "<amazingly>短い期間で英語の発音を整えた彼女は、留学先で初対面の人に驚かれることが何度もあった。"
+  },
+  {
+    "id": "s6_0107",
+    "word": "artificially",
+    "action": "keep",
+    "reason": "「人工的に光を制御」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0132",
+    "word": "attentively",
+    "action": "keep",
+    "reason": "「注意深く読み比べる」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0196",
+    "word": "blindly",
+    "action": "keep",
+    "reason": "「盲目的に信じる」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0230",
+    "word": "brilliantly",
+    "action": "keep",
+    "reason": "「見事に逆転の一手を指す」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0233",
+    "word": "broadly",
+    "action": "fix",
+    "reason": "「広く意見を集める」が自然。「広くに」は冗長で不自然。",
+    "fixed_body": "<broadly>意見を集めるためのアンケートが市民に届けられ、結果は来年度の政策に反映される予定だと報じられた。"
+  },
+  {
+    "id": "s6_0340",
+    "word": "comfortably",
+    "action": "keep",
+    "reason": "「快適にあずける」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0381",
+    "word": "confidently",
+    "action": "keep",
+    "reason": "「自信を持って立つ」だが「に」も成立(自信に満ちて立つ感)。元文を尊重。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0390",
+    "word": "considerably",
+    "action": "fix",
+    "reason": "「かなり向上」が自然。「かなりに」は不自然。",
+    "fixed_body": "新しい指導法を導入した結果、生徒の成績は<considerably>向上し、教師たちは半年間の取り組みに手応えを感じた。"
+  },
+  {
+    "id": "s6_0406",
+    "word": "conveniently",
+    "action": "keep",
+    "reason": "「便利に位置する/都合よく位置する」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0410",
+    "word": "conversely",
+    "action": "fix",
+    "reason": "「逆に/反対に」で完結する文修飾副詞。「に」二重は不自然。",
+    "fixed_body": "都市部では人口が増え続けているが、<conversely>地方では若者の流出が止まらず、町の風景も少しずつ変わっていった。"
+  },
+  {
+    "id": "s6_0453",
+    "word": "creatively",
+    "action": "keep",
+    "reason": "「創造的に発想する」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0458",
+    "word": "critically",
+    "action": "keep",
+    "reason": "「批判的に吟味する」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0461",
+    "word": "crossly",
+    "action": "keep",
+    "reason": "「不機嫌に答える」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0463",
+    "word": "cruelly",
+    "action": "keep",
+    "reason": "「残酷に扱う」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0471",
+    "word": "culturally",
+    "action": "keep",
+    "reason": "「文化的に多様な」は形容詞修飾で自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0494",
+    "word": "dearly",
+    "action": "fix",
+    "reason": "「心から/深く懐かしむ」で「に」は不自然。",
+    "fixed_body": "幼い頃の友を<dearly>懐かしんだ彼は、数十年ぶりに連絡を取り、思い出話で一晩を過ごした。"
+  },
+  {
+    "id": "s6_0519",
+    "word": "deliberately",
+    "action": "keep",
+    "reason": "「意図的に試練を経験させる」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0521",
+    "word": "delicately",
+    "action": "keep",
+    "reason": "「繊細に/慎重に広げる」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0526",
+    "word": "densely",
+    "action": "keep",
+    "reason": "「密に植えられた」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0617",
+    "word": "doubly",
+    "action": "keep",
+    "reason": "「二重に難しい」は形容詞修飾で自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0625",
+    "word": "dramatically",
+    "action": "keep",
+    "reason": "「劇的に改善」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0642",
+    "word": "eagerly",
+    "action": "fix",
+    "reason": "「熱心に/切望して待つ」で「に」は冗長。",
+    "fixed_body": "新刊の発売を彼は<eagerly>待ち、当日は朝一番で書店に駆けつけた。"
+  },
+  {
+    "id": "s6_0647",
+    "word": "eastwards",
+    "action": "keep",
+    "reason": "「東方へ飛び去る」は方向の「に」として自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0648",
+    "word": "ecologically",
+    "action": "keep",
+    "reason": "「生態学的に配慮」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0657",
+    "word": "effectively",
+    "action": "keep",
+    "reason": "「効果的に使う」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0662",
+    "word": "electronically",
+    "action": "keep",
+    "reason": "「電子的に管理する」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0666",
+    "word": "elegantly",
+    "action": "keep",
+    "reason": "「優雅に取り込む」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0675",
+    "word": "emphatically",
+    "action": "fix",
+    "reason": "「強く/断固として否定」で「に」は冗長(「強く」「断固」自体が副詞)。",
+    "fixed_body": "監督は記者会見で、八百長の疑惑を<emphatically>否定し、選手の名誉を守る姿勢を示した。"
+  },
+  {
+    "id": "s6_0681",
+    "word": "endlessly",
+    "action": "fix",
+    "reason": "「果てしなく流れる」が自然。「に」は不自然。",
+    "fixed_body": "夜行列車の窓に<endlessly>流れる平原の景色は、旅人の眠気をいつのまにかさらっていった。"
+  },
+  {
+    "id": "s6_0694",
+    "word": "enthusiastically",
+    "action": "keep",
+    "reason": "「熱心に/熱狂的に取り組む」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0697",
+    "word": "environmentally",
+    "action": "keep",
+    "reason": "「環境的に配慮」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0706",
+    "word": "essentially",
+    "action": "keep",
+    "reason": "「本質的に同じ方向」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0709",
+    "word": "eternally",
+    "action": "keep",
+    "reason": "「永遠に変わらぬ」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0716",
+    "word": "evidently",
+    "action": "fix",
+    "reason": "「明らかに緊張」だが文修飾副詞用法でも完結。「明らか」が形容動詞、二重「に」は文の流れを損なう。原文「に」削除で自然。",
+    "fixed_body": "後輩は<evidently>緊張していたが、先輩の合図で深呼吸を一つしてから発表を始めた。"
+  },
+  {
+    "id": "s6_0729",
+    "word": "exceptionally",
+    "action": "fix",
+    "reason": "「並外れて寒い」が自然。形容詞修飾で「に」不要。",
+    "fixed_body": "この冬は<exceptionally>寒く、灯油の在庫を抑えていた店は急な値上がりに対応を迫られた。"
+  },
+  {
+    "id": "s6_0735",
+    "word": "exclusively",
+    "action": "fix",
+    "reason": "「もっぱら公開」が自然。「もっぱらに」は不自然。",
+    "fixed_body": "この公演は会員に<exclusively>公開されており、当日券の販売はあえて行われなかった。"
+  },
+  {
+    "id": "s6_0762",
+    "word": "extraordinarily",
+    "action": "fix",
+    "reason": "「並外れて長く咲く」が自然。連用修飾で「に」不要。",
+    "fixed_body": "今春の桜は<extraordinarily>長く咲き続け、卒業式から入学式まで校庭を淡く染め続けた。"
+  },
+  {
+    "id": "s6_0778",
+    "word": "fantastically",
+    "action": "fix",
+    "reason": "「驚くほど/すばらしく伸びる」が自然。「に」不要。",
+    "fixed_body": "新人の歌声は本番で<fantastically>伸び、会場の隅々まで澄んだ余韻を響かせた。"
+  },
+  {
+    "id": "s6_0797",
+    "word": "financially",
+    "action": "keep",
+    "reason": "「経済的に支える」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0798",
+    "word": "finely",
+    "action": "keep",
+    "reason": "「細かに刻む」は自然(細かにも細かくも両用)。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0805",
+    "word": "firstly",
+    "action": "fix",
+    "reason": "「第一に/まず」で完結。文頭で「に」二重は不自然。",
+    "fixed_body": "<firstly>背景を整理し、次に課題、最後に提案へと、発表は流れに沿ってきれいに展開していった。"
+  },
+  {
+    "id": "s6_0818",
+    "word": "flexibly",
+    "action": "keep",
+    "reason": "「柔軟に応じる」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0825",
+    "word": "fondly",
+    "action": "fix",
+    "reason": "「愛情を込めて/慕って微笑む」で「に」は不自然。",
+    "fixed_body": "祖母は孫の写真を手に取り、<fondly>微笑みながら、誕生のころの思い出を静かに語った。"
+  },
+  {
+    "id": "s6_0828",
+    "word": "forcefully",
+    "action": "fix",
+    "reason": "「力強く説く」が自然。「力強くに」は不自然。",
+    "fixed_body": "監督は試合後の会見で改革の必要性を<forcefully>説き、報道陣を黙らせるほどの説得力があった。"
+  },
+  {
+    "id": "s6_0838",
+    "word": "frankly",
+    "action": "fix",
+    "reason": "「率直に言って」は決まり文句で「に」付加は文型を崩す。",
+    "fixed_body": "<frankly>申し上げますと、現状の計画では予算面の見通しがいささか甘いように思われます。"
+  },
+  {
+    "id": "s6_0839",
+    "word": "frantically",
+    "action": "keep",
+    "reason": "「必死に探す」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0853",
+    "word": "furiously",
+    "action": "fix",
+    "reason": "「猛烈に抗議」の「に」が二重。「猛烈に」は副詞、「furiously+に」は冗長。",
+    "fixed_body": "判定に納得のいかない監督は<furiously>抗議し、観客席のざわめきも一気に大きくなった。"
+  },
+  {
+    "id": "s6_0871",
+    "word": "generously",
+    "action": "fix",
+    "reason": "「気前よく/惜しみなく分ける」が自然。「に」は冗長。",
+    "fixed_body": "経験豊かな先輩たちが時間を<generously>分けてくれたおかげで、若手は短期間で実力を伸ばした。"
+  },
+  {
+    "id": "s6_0874",
+    "word": "gently",
+    "action": "keep",
+    "reason": "「やさしく/穏やかに抱き上げる」で「穏やかに」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0876",
+    "word": "genuinely",
+    "action": "keep",
+    "reason": "「本当に/心から伝える」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0888",
+    "word": "globally",
+    "action": "keep",
+    "reason": "「世界的に注目される」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0903",
+    "word": "graphically",
+    "action": "keep",
+    "reason": "「視覚的に映像で示す」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0933",
+    "word": "hastily",
+    "action": "fix",
+    "reason": "「急いで/慌てて荷物をまとめる」が自然。「に」は冗長。",
+    "fixed_body": "緊急放送を聞いた住民は荷物を<hastily>まとめ、避難所への道筋を家族で確認し合いながら歩き出した。"
+  },
+  {
+    "id": "s6_0975",
+    "word": "hugely",
+    "action": "keep",
+    "reason": "「非常に/大いに改善」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_0994",
+    "word": "ideally",
+    "action": "fix",
+    "reason": "「理想的には」は文修飾副詞。文頭で「に」は不自然。",
+    "fixed_body": "<ideally>言えば全員が会場に集まりたかったが、遠方の参加者にはオンラインの窓口も用意された。"
+  },
+  {
+    "id": "s6_1015",
+    "word": "impatiently",
+    "action": "keep",
+    "reason": "「もどかしげに/いらいらして足を揺らす」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_1022",
+    "word": "impolitely",
+    "action": "keep",
+    "reason": "「失礼に切り上げる」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_1033",
+    "word": "improperly",
+    "action": "keep",
+    "reason": "「不適切に記入されていた」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_1047",
+    "word": "independently",
+    "action": "keep",
+    "reason": "「独立して/自主的に選ぶ」で「に」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_1081",
+    "word": "innocently",
+    "action": "keep",
+    "reason": "「無邪気に手を伸ばす」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_1090",
+    "word": "instantly",
+    "action": "fix",
+    "reason": "「即座に/すぐに出動」で「即座に」が副詞、二重「に」は不自然。",
+    "fixed_body": "通報を受けた消防は<instantly>出動し、住民への声かけと避難誘導を素早く同時に進めていった。"
+  },
+  {
+    "id": "s6_1115",
+    "word": "invariably",
+    "action": "fix",
+    "reason": "「いつも/決まって立ち寄る」で「いつもに」は不自然。",
+    "fixed_body": "彼は出張先でも<invariably>地元の図書館へ立ち寄り、土地ごとの歴史を肌で感じる時間を持っていた。"
+  },
+  {
+    "id": "s6_1123",
+    "word": "invitingly",
+    "action": "keep",
+    "reason": "「誘うように/魅惑的に揺れる」で「に」も自然(魅惑的に)。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_1126",
+    "word": "ironically",
+    "action": "fix",
+    "reason": "「皮肉なことに」は文修飾副詞。文頭で「に」二重は不自然。",
+    "fixed_body": "<ironically>、安全策のつもりで増やした手順が現場の負担を生み、本来の目的を遠ざける結果を招いた。"
+  },
+  {
+    "id": "s6_1139",
+    "word": "jealously",
+    "action": "keep",
+    "reason": "「用心深く/嫉妬深く守る」は自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_1156",
+    "word": "knowingly",
+    "action": "fix",
+    "reason": "「知っていて/わざと破った」が自然。「に」は不自然。",
+    "fixed_body": "彼が古い規則を<knowingly>破ったわけではなく、新しい運用ルールが現場に十分共有されていなかったらしい。"
+  },
+  {
+    "id": "s6_1170",
+    "word": "lastly",
+    "action": "fix",
+    "reason": "「最後に/終わりに」で完結。「に」二重は不自然。",
+    "fixed_body": "<lastly>登壇した研究者は、これまでの議論を整理しながら今後の方向性を簡潔に示した。"
+  },
+  {
+    "id": "s6_1192",
+    "word": "leisurely",
+    "action": "fix",
+    "reason": "「ゆったりと/のんびり歩く」が自然。「のんびりに」は不自然。",
+    "fixed_body": "週末の海辺を彼は<leisurely>歩き、貝殻を拾いながら、しばらく忘れていた静かな時間を取り戻した。"
+  }
+]

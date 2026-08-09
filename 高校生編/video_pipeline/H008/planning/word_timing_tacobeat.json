@@ -1,0 +1,865 @@
+{
+  "lesson": "H008",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h008_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H008/candidate2-full.mp3",
+  "source_audio_sha256": "767db7fdab22c3d1e89b1921085e341e4336b2e1a1fba82bc208b6ce1e11b1ce",
+  "bpm": 99.98,
+  "exact_word_match": true,
+  "word_count": 141,
+  "line_count": 18,
+  "first_word_start": 1.12,
+  "last_word_end": 80.839,
+  "lines": [
+    {
+      "line": 1,
+      "english": "In the evening the family gathered at the dinner table.",
+      "word_timings": [
+        {
+          "word": "In",
+          "start": 1.12,
+          "end": 1.38
+        },
+        {
+          "word": "the",
+          "start": 1.38,
+          "end": 1.6
+        },
+        {
+          "word": "evening",
+          "start": 1.6,
+          "end": 2.175
+        },
+        {
+          "word": "the",
+          "start": 2.175,
+          "end": 2.255
+        },
+        {
+          "word": "family",
+          "start": 2.241,
+          "end": 2.741
+        },
+        {
+          "word": "gathered",
+          "start": 2.741,
+          "end": 3.421
+        },
+        {
+          "word": "at",
+          "start": 3.421,
+          "end": 3.772
+        },
+        {
+          "word": "the",
+          "start": 3.772,
+          "end": 4.061
+        },
+        {
+          "word": "dinner",
+          "start": 4.061,
+          "end": 4.501
+        },
+        {
+          "word": "table.",
+          "start": 4.501,
+          "end": 5.281
+        }
+      ],
+      "start": 1.12,
+      "end": 5.281
+    },
+    {
+      "line": 2,
+      "english": "Mother was finishing the meal preparations.",
+      "word_timings": [
+        {
+          "word": "Mother",
+          "start": 5.581,
+          "end": 6.182
+        },
+        {
+          "word": "was",
+          "start": 6.182,
+          "end": 6.462
+        },
+        {
+          "word": "finishing",
+          "start": 6.462,
+          "end": 7.992
+        },
+        {
+          "word": "the",
+          "start": 7.992,
+          "end": 8.222
+        },
+        {
+          "word": "meal",
+          "start": 8.222,
+          "end": 8.842
+        },
+        {
+          "word": "preparations.",
+          "start": 8.842,
+          "end": 10.063
+        }
+      ],
+      "start": 5.581,
+      "end": 10.063
+    },
+    {
+      "line": 3,
+      "english": "Father said, I am going to have a drink tonight.",
+      "word_timings": [
+        {
+          "word": "Father",
+          "start": 10.363,
+          "end": 10.983
+        },
+        {
+          "word": "said,",
+          "start": 10.983,
+          "end": 11.582
+        },
+        {
+          "word": "I",
+          "start": 11.582,
+          "end": 11.662
+        },
+        {
+          "word": "am",
+          "start": 11.643,
+          "end": 11.863
+        },
+        {
+          "word": "going",
+          "start": 11.863,
+          "end": 12.185
+        },
+        {
+          "word": "to",
+          "start": 12.185,
+          "end": 12.343
+        },
+        {
+          "word": "have",
+          "start": 12.343,
+          "end": 12.78
+        },
+        {
+          "word": "a",
+          "start": 12.78,
+          "end": 12.883
+        },
+        {
+          "word": "drink",
+          "start": 12.883,
+          "end": 13.623
+        },
+        {
+          "word": "tonight.",
+          "start": 13.623,
+          "end": 14.424
+        }
+      ],
+      "start": 10.363,
+      "end": 14.424
+    },
+    {
+      "line": 4,
+      "english": "He had already made up his mind.",
+      "word_timings": [
+        {
+          "word": "He",
+          "start": 14.724,
+          "end": 14.904
+        },
+        {
+          "word": "had",
+          "start": 14.904,
+          "end": 15.144
+        },
+        {
+          "word": "already",
+          "start": 15.144,
+          "end": 16.044
+        },
+        {
+          "word": "made",
+          "start": 16.044,
+          "end": 16.604
+        },
+        {
+          "word": "up",
+          "start": 16.604,
+          "end": 16.964
+        },
+        {
+          "word": "his",
+          "start": 16.964,
+          "end": 17.564
+        },
+        {
+          "word": "mind.",
+          "start": 17.564,
+          "end": 19.064
+        }
+      ],
+      "start": 14.724,
+      "end": 19.064
+    },
+    {
+      "line": 5,
+      "english": "Sister wanted to discuss the trip.",
+      "word_timings": [
+        {
+          "word": "Sister",
+          "start": 19.645,
+          "end": 20.265
+        },
+        {
+          "word": "wanted",
+          "start": 20.265,
+          "end": 20.862
+        },
+        {
+          "word": "to",
+          "start": 20.862,
+          "end": 21.185
+        },
+        {
+          "word": "discuss",
+          "start": 21.185,
+          "end": 21.948
+        },
+        {
+          "word": "the",
+          "start": 21.948,
+          "end": 22.285
+        },
+        {
+          "word": "trip.",
+          "start": 22.285,
+          "end": 23.785
+        }
+      ],
+      "start": 19.645,
+      "end": 23.785
+    },
+    {
+      "line": 6,
+      "english": "She proposed that I go with her.",
+      "word_timings": [
+        {
+          "word": "She",
+          "start": 24.446,
+          "end": 24.746
+        },
+        {
+          "word": "proposed",
+          "start": 24.746,
+          "end": 25.406
+        },
+        {
+          "word": "that",
+          "start": 25.406,
+          "end": 25.906
+        },
+        {
+          "word": "I",
+          "start": 25.906,
+          "end": 26.266
+        },
+        {
+          "word": "go",
+          "start": 26.266,
+          "end": 26.707
+        },
+        {
+          "word": "with",
+          "start": 26.707,
+          "end": 27.127
+        },
+        {
+          "word": "her.",
+          "start": 27.127,
+          "end": 28.627
+        }
+      ],
+      "start": 24.446,
+      "end": 28.627
+    },
+    {
+      "line": 7,
+      "english": "My brother offered, I will drive you both to the airport next weekend.",
+      "word_timings": [
+        {
+          "word": "My",
+          "start": 28.949,
+          "end": 29.267
+        },
+        {
+          "word": "brother",
+          "start": 29.267,
+          "end": 29.807
+        },
+        {
+          "word": "offered,",
+          "start": 29.807,
+          "end": 30.62
+        },
+        {
+          "word": "I",
+          "start": 30.62,
+          "end": 30.788
+        },
+        {
+          "word": "will",
+          "start": 30.788,
+          "end": 31.028
+        },
+        {
+          "word": "drive",
+          "start": 31.028,
+          "end": 31.39
+        },
+        {
+          "word": "you",
+          "start": 31.39,
+          "end": 31.548
+        },
+        {
+          "word": "both",
+          "start": 31.548,
+          "end": 31.848
+        },
+        {
+          "word": "to",
+          "start": 31.848,
+          "end": 32.157
+        },
+        {
+          "word": "the",
+          "start": 32.157,
+          "end": 32.368
+        },
+        {
+          "word": "airport",
+          "start": 32.368,
+          "end": 32.888
+        },
+        {
+          "word": "next",
+          "start": 32.888,
+          "end": 33.188
+        },
+        {
+          "word": "weekend.",
+          "start": 33.188,
+          "end": 34.048
+        }
+      ],
+      "start": 28.949,
+      "end": 34.048
+    },
+    {
+      "line": 8,
+      "english": "Mother mentioned a new recipe.",
+      "word_timings": [
+        {
+          "word": "Mother",
+          "start": 34.348,
+          "end": 34.688
+        },
+        {
+          "word": "mentioned",
+          "start": 34.688,
+          "end": 35.476
+        },
+        {
+          "word": "a",
+          "start": 35.476,
+          "end": 35.849
+        },
+        {
+          "word": "new",
+          "start": 35.849,
+          "end": 36.349
+        },
+        {
+          "word": "recipe.",
+          "start": 36.349,
+          "end": 37.849
+        }
+      ],
+      "start": 34.348,
+      "end": 37.849
+    },
+    {
+      "line": 9,
+      "english": "Father admitted, If you make pasta, I will help.",
+      "word_timings": [
+        {
+          "word": "Father",
+          "start": 38.549,
+          "end": 39.13
+        },
+        {
+          "word": "admitted,",
+          "start": 39.13,
+          "end": 39.85
+        },
+        {
+          "word": "If",
+          "start": 39.85,
+          "end": 40.079
+        },
+        {
+          "word": "you",
+          "start": 40.079,
+          "end": 40.33
+        },
+        {
+          "word": "make",
+          "start": 40.33,
+          "end": 40.63
+        },
+        {
+          "word": "pasta,",
+          "start": 40.63,
+          "end": 41.283
+        },
+        {
+          "word": "I",
+          "start": 41.283,
+          "end": 41.43
+        },
+        {
+          "word": "will",
+          "start": 41.43,
+          "end": 41.71
+        },
+        {
+          "word": "help.",
+          "start": 41.71,
+          "end": 42.13
+        }
+      ],
+      "start": 38.549,
+      "end": 42.13
+    },
+    {
+      "line": 10,
+      "english": "He is good at cooking.",
+      "word_timings": [
+        {
+          "word": "He",
+          "start": 42.13,
+          "end": 42.21
+        },
+        {
+          "word": "is",
+          "start": 42.193,
+          "end": 42.49
+        },
+        {
+          "word": "good",
+          "start": 42.49,
+          "end": 42.71
+        },
+        {
+          "word": "at",
+          "start": 42.71,
+          "end": 42.91
+        },
+        {
+          "word": "cooking.",
+          "start": 42.91,
+          "end": 43.671
+        }
+      ],
+      "start": 42.13,
+      "end": 43.671
+    },
+    {
+      "line": 11,
+      "english": "What shall we do about dinner tomorrow?",
+      "word_timings": [
+        {
+          "word": "What",
+          "start": 43.971,
+          "end": 44.251
+        },
+        {
+          "word": "shall",
+          "start": 44.251,
+          "end": 44.591
+        },
+        {
+          "word": "we",
+          "start": 44.591,
+          "end": 44.771
+        },
+        {
+          "word": "do",
+          "start": 44.771,
+          "end": 45.091
+        },
+        {
+          "word": "about",
+          "start": 45.091,
+          "end": 45.491
+        },
+        {
+          "word": "dinner",
+          "start": 45.491,
+          "end": 45.931
+        },
+        {
+          "word": "tomorrow?",
+          "start": 45.931,
+          "end": 46.932
+        }
+      ],
+      "start": 43.971,
+      "end": 46.932
+    },
+    {
+      "line": 12,
+      "english": "sister asked.",
+      "word_timings": [
+        {
+          "word": "sister",
+          "start": 47.232,
+          "end": 47.812
+        },
+        {
+          "word": "asked.",
+          "start": 47.812,
+          "end": 48.452
+        }
+      ],
+      "start": 47.232,
+      "end": 48.452
+    },
+    {
+      "line": 13,
+      "english": "Mother answered at once, I will make it.",
+      "word_timings": [
+        {
+          "word": "Mother",
+          "start": 48.452,
+          "end": 49.032
+        },
+        {
+          "word": "answered",
+          "start": 49.032,
+          "end": 49.772
+        },
+        {
+          "word": "at",
+          "start": 49.772,
+          "end": 50.092
+        },
+        {
+          "word": "once,",
+          "start": 50.092,
+          "end": 50.883
+        },
+        {
+          "word": "I",
+          "start": 50.883,
+          "end": 51.032
+        },
+        {
+          "word": "will",
+          "start": 51.032,
+          "end": 51.353
+        },
+        {
+          "word": "make",
+          "start": 51.353,
+          "end": 51.853
+        },
+        {
+          "word": "it.",
+          "start": 51.853,
+          "end": 52.986
+        }
+      ],
+      "start": 48.452,
+      "end": 52.986
+    },
+    {
+      "line": 14,
+      "english": "I added my own suggestion: I will make a salad.",
+      "word_timings": [
+        {
+          "word": "I",
+          "start": 53.286,
+          "end": 53.366
+        },
+        {
+          "word": "added",
+          "start": 53.353,
+          "end": 53.764
+        },
+        {
+          "word": "my",
+          "start": 53.764,
+          "end": 54.253
+        },
+        {
+          "word": "own",
+          "start": 54.253,
+          "end": 54.473
+        },
+        {
+          "word": "suggestion:",
+          "start": 54.473,
+          "end": 55.934
+        },
+        {
+          "word": "I",
+          "start": 55.934,
+          "end": 56.014
+        },
+        {
+          "word": "will",
+          "start": 55.994,
+          "end": 56.294
+        },
+        {
+          "word": "make",
+          "start": 56.294,
+          "end": 57.043
+        },
+        {
+          "word": "a",
+          "start": 57.043,
+          "end": 57.434
+        },
+        {
+          "word": "salad.",
+          "start": 57.434,
+          "end": 58.394
+        }
+      ],
+      "start": 53.286,
+      "end": 58.394
+    },
+    {
+      "line": 15,
+      "english": "Several small decisions fell into place around the table.",
+      "word_timings": [
+        {
+          "word": "Several",
+          "start": 58.694,
+          "end": 59.174
+        },
+        {
+          "word": "small",
+          "start": 59.174,
+          "end": 59.555
+        },
+        {
+          "word": "decisions",
+          "start": 59.555,
+          "end": 60.655
+        },
+        {
+          "word": "fell",
+          "start": 60.655,
+          "end": 60.875
+        },
+        {
+          "word": "into",
+          "start": 60.875,
+          "end": 61.055
+        },
+        {
+          "word": "place",
+          "start": 61.055,
+          "end": 61.475
+        },
+        {
+          "word": "around",
+          "start": 61.475,
+          "end": 61.872
+        },
+        {
+          "word": "the",
+          "start": 61.872,
+          "end": 62.055
+        },
+        {
+          "word": "table.",
+          "start": 62.055,
+          "end": 62.855
+        }
+      ],
+      "start": 58.694,
+      "end": 62.855
+    },
+    {
+      "line": 16,
+      "english": "Father, from his usual seat, said he would prefer fish.",
+      "word_timings": [
+        {
+          "word": "Father,",
+          "start": 63.155,
+          "end": 63.756
+        },
+        {
+          "word": "from",
+          "start": 63.756,
+          "end": 63.956
+        },
+        {
+          "word": "his",
+          "start": 63.956,
+          "end": 64.216
+        },
+        {
+          "word": "usual",
+          "start": 64.216,
+          "end": 64.636
+        },
+        {
+          "word": "seat,",
+          "start": 64.636,
+          "end": 65.536
+        },
+        {
+          "word": "said",
+          "start": 65.536,
+          "end": 65.876
+        },
+        {
+          "word": "he",
+          "start": 65.876,
+          "end": 66.196
+        },
+        {
+          "word": "would",
+          "start": 66.196,
+          "end": 66.456
+        },
+        {
+          "word": "prefer",
+          "start": 66.456,
+          "end": 67.036
+        },
+        {
+          "word": "fish.",
+          "start": 67.036,
+          "end": 67.637
+        }
+      ],
+      "start": 63.155,
+      "end": 67.637
+    },
+    {
+      "line": 17,
+      "english": "Sister gave him a small nod and confirmed the plan.",
+      "word_timings": [
+        {
+          "word": "Sister",
+          "start": 67.637,
+          "end": 68.277
+        },
+        {
+          "word": "gave",
+          "start": 68.277,
+          "end": 68.657
+        },
+        {
+          "word": "him",
+          "start": 68.657,
+          "end": 68.943
+        },
+        {
+          "word": "a",
+          "start": 68.943,
+          "end": 69.077
+        },
+        {
+          "word": "small",
+          "start": 69.077,
+          "end": 69.657
+        },
+        {
+          "word": "nod",
+          "start": 69.657,
+          "end": 70.157
+        },
+        {
+          "word": "and",
+          "start": 70.157,
+          "end": 70.357
+        },
+        {
+          "word": "confirmed",
+          "start": 70.357,
+          "end": 71.864
+        },
+        {
+          "word": "the",
+          "start": 71.864,
+          "end": 72.698
+        },
+        {
+          "word": "plan.",
+          "start": 72.698,
+          "end": 73.998
+        }
+      ],
+      "start": 67.637,
+      "end": 73.998
+    },
+    {
+      "line": 18,
+      "english": "Dinner flowed slowly, more slowly than usual.",
+      "word_timings": [
+        {
+          "word": "Dinner",
+          "start": 74.298,
+          "end": 74.718
+        },
+        {
+          "word": "flowed",
+          "start": 74.718,
+          "end": 75.658
+        },
+        {
+          "word": "slowly,",
+          "start": 75.658,
+          "end": 77.659
+        },
+        {
+          "word": "more",
+          "start": 77.659,
+          "end": 78.159
+        },
+        {
+          "word": "slowly",
+          "start": 78.159,
+          "end": 78.859
+        },
+        {
+          "word": "than",
+          "start": 78.859,
+          "end": 79.339
+        },
+        {
+          "word": "usual.",
+          "start": 79.339,
+          "end": 80.839
+        }
+      ],
+      "start": 74.298,
+      "end": 80.839
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

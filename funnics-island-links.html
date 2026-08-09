@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Funnics Island リンク集</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #64748b;
+      --line: #d7dee9;
+      --paper: #fffdf8;
+      --soft: #f5f7fb;
+      --accent: #e95f38;
+      --accent-2: #2b8a8a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.7;
+    }
+    header {
+      padding: 30px 20px 18px;
+      border-bottom: 1px solid var(--line);
+      background: #fff7eb;
+    }
+    main { max-width: 980px; margin: 0 auto; padding: 24px 18px 42px; }
+    h1 { max-width: 980px; margin: 0 auto; font-size: clamp(28px, 5vw, 46px); letter-spacing: 0; }
+    .lead { max-width: 980px; margin: 8px auto 0; color: var(--muted); font-size: 16px; }
+    .home {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 18px;
+      color: var(--accent-2);
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, .06);
+    }
+    .card h2 { margin: 0 0 8px; font-size: 20px; letter-spacing: 0; }
+    .card p { margin: 0 0 12px; color: var(--muted); font-size: 14px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 8px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 800;
+      background: var(--soft);
+    }
+    .btn.primary { color: #fff; border-color: var(--accent); background: var(--accent); }
+    .note {
+      margin-top: 22px;
+      padding: 14px 16px;
+      border-left: 4px solid var(--accent-2);
+      background: #ecfeff;
+      border-radius: 6px;
+      color: #155e63;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Funnics Island リンク集</h1>
+    <p class="lead">歌詞・単語カード・解説ページと、YouTube動画へのリンクをまとめています。</p>
+  </header>
+  <main>
+    <a class="home" href="/?book=phonics">← フォニックス教材トップへ</a>
+
+    <div class="grid">
+      <article class="card">
+        <h2>1. ABC Song</h2>
+        <p>A から Z まで、26人のなかまたち。</p>
+        <div class="actions">
+          <a class="btn primary" href="/?book=phonics&lesson=1">学習ページ</a>
+          <a class="btn" href="https://youtu.be/3B5yLO1HJGs">YouTube</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>2. Aunt Ant Short A</h2>
+        <p>cat / hat / ant / bag のみじかい A。</p>
+        <div class="actions">
+          <a class="btn primary" href="/?book=phonics&lesson=2">学習ページ</a>
+          <a class="btn" href="https://youtu.be/eGTZmwdWmA0">YouTube</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>3. Baker Bear Long A</h2>
+        <p>Magic E で A が「エイ」にかわる。</p>
+        <div class="actions">
+          <a class="btn primary" href="/?book=phonics&lesson=3">学習ページ</a>
+          <a class="btn" href="https://youtu.be/qvtc6srq1TI">YouTube</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>4. Aider Snail AI / AY</h2>
+        <p>AI と AY をひとかたまりで読む「エイ」。</p>
+        <div class="actions">
+          <a class="btn primary" href="/?book=phonics&lesson=4">学習ページ</a>
+          <a class="btn" href="https://youtu.be/q5fMrJvYsXU">YouTube</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="note">
+      YouTube概要欄の先頭リンクから、この学習ページへすぐ戻れるようにしています。
+    </div>
+  </main>
+</body>
+</html>

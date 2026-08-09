@@ -1,0 +1,1446 @@
+{
+  "lesson": "H103",
+  "title_ja": "古本屋の午後",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 18,
+  "canonical_target_lines": 10,
+  "mixed_lines": 8,
+  "japanese_only_lines": 10,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 9.32,
+      "end": 13.287,
+      "english": "On Sunday afternoon, I visited an old bookshop.",
+      "japanese": "日曜日の午後、私は古書店を訪れました。",
+      "mixed": "日曜日の午後、私は古書店を訪れました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "日曜日の午後、私は古書店を訪れました。",
+          "parts": [
+            {
+              "text": "日曜",
+              "ruby": "にちよう"
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "午後",
+              "ruby": "ごご"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "古書",
+              "ruby": "こしょ"
+            },
+            {
+              "text": "店",
+              "ruby": "てん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "訪",
+              "ruby": "おとず"
+            },
+            {
+              "text": "れました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 2,
+      "start": 13.513,
+      "end": 20.863,
+      "english": "In a corner at the back of the store, wooden shelves reached up to the ceiling.",
+      "japanese": "店の奥の一角には天井まで届く木の棚があった。",
+      "mixed": "店の奥の一角には天井まで届く木の棚があった。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "店の奥の一角には天井まで届く木の棚があった。",
+          "parts": [
+            {
+              "text": "店",
+              "ruby": "てん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "奥",
+              "ruby": "おく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "一角",
+              "ruby": "いっかく"
+            },
+            {
+              "text": "には",
+              "ruby": ""
+            },
+            {
+              "text": "天井",
+              "ruby": "てんじょう"
+            },
+            {
+              "text": "まで",
+              "ruby": ""
+            },
+            {
+              "text": "届",
+              "ruby": "とど"
+            },
+            {
+              "text": "く",
+              "ruby": ""
+            },
+            {
+              "text": "木",
+              "ruby": "き"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "棚",
+              "ruby": "たな"
+            },
+            {
+              "text": "があった。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "corner",
+          "canonical_word": "corner",
+          "meaning": "角"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 3,
+      "start": 20.863,
+      "end": 24.97,
+      "english": "The owner was an elderly man with white hair.",
+      "japanese": "店主は白髪の初老の男性だった。",
+      "mixed": "店主は白髪の初老の男性だった。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "店主は白髪の初老の男性だった。",
+          "parts": [
+            {
+              "text": "店主",
+              "ruby": "てんしゅ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "白髪",
+              "ruby": "はくはつ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "初老",
+              "ruby": "しょろう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "男性",
+              "ruby": "だんせい"
+            },
+            {
+              "text": "だった。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "elderly",
+          "canonical_word": "elderly",
+          "meaning": "年配の"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 4,
+      "start": 24.97,
+      "end": 30.04,
+      "english": "He greeted me lightly and returned to his reading.",
+      "japanese": "彼は私に軽く挨拶し、読書に戻りました。",
+      "mixed": "彼は私に軽く greeted、読書に戻りました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼は私に軽く ",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "軽",
+              "ruby": "かる"
+            },
+            {
+              "text": "く",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "greeted",
+          "ruby": "挨拶し"
+        },
+        {
+          "type": "ja",
+          "text": "、読書に戻りました。",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "読書",
+              "ruby": "どくしょ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "戻",
+              "ruby": "もど"
+            },
+            {
+              "text": "りました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "greeted",
+          "canonical_word": "greet",
+          "meaning": "挨拶する"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "greeted",
+          "reading": "挨拶し",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "greet",
+          "canonical_meaning": "挨拶する"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 5,
+      "start": 30.58,
+      "end": 38.72,
+      "english": "Inside the shop, only the sound of turning pages and the ticking of an old clock echoed.",
+      "japanese": "店内には、ページをめくる音と古時計のコチコチという音だけが響く。",
+      "mixed": "店内には、ページをめくる音と古時計のコチコチという音だけが響く。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "店内には、ページをめくる音と古時計のコチコチという音だけが響く。",
+          "parts": [
+            {
+              "text": "店内",
+              "ruby": "てんない"
+            },
+            {
+              "text": "には、ページをめくる",
+              "ruby": ""
+            },
+            {
+              "text": "音",
+              "ruby": "おと"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "古",
+              "ruby": "こ"
+            },
+            {
+              "text": "時計",
+              "ruby": "とけい"
+            },
+            {
+              "text": "のコチコチという",
+              "ruby": ""
+            },
+            {
+              "text": "音",
+              "ruby": "おと"
+            },
+            {
+              "text": "だけが",
+              "ruby": ""
+            },
+            {
+              "text": "響",
+              "ruby": "ひび"
+            },
+            {
+              "text": "く。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 6,
+      "start": 38.72,
+      "end": 44.52,
+      "english": "I stopped before a shelf of poetry and picked up a volume.",
+      "japanese": "私は詩の棚の前で立ち止まり、一冊の本を手に取りました。",
+      "mixed": "私は詩の棚の前で立ち止まり、一冊の本を手に取りました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私は詩の棚の前で立ち止まり、一冊の本を手に取りました。",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "詩",
+              "ruby": "し"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "棚",
+              "ruby": "たな"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "前",
+              "ruby": "まえ"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "立ち止",
+              "ruby": "たちど"
+            },
+            {
+              "text": "まり、",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "いっ"
+            },
+            {
+              "text": "冊",
+              "ruby": "さつ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "手",
+              "ruby": "て"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "取",
+              "ruby": "と"
+            },
+            {
+              "text": "りました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 7,
+      "start": 44.52,
+      "end": 54.84,
+      "english": "The book had not been touched by anyone for a long time, and when I opened it, a peculiar scent rose.",
+      "japanese": "長い間誰にも触れられていなかったその本を開くと、独特の香りが立ち上った。",
+      "mixed": "長い間誰にも touched その本を開くと、 peculiar 香りが立ち上った。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "長い間誰にも ",
+          "parts": [
+            {
+              "text": "長",
+              "ruby": "なが"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "間",
+              "ruby": "あいだ"
+            },
+            {
+              "text": "誰",
+              "ruby": "だれ"
+            },
+            {
+              "text": "にも",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "touched",
+          "ruby": "触れられていなかった"
+        },
+        {
+          "type": "ja",
+          "text": " その本を開くと、 ",
+          "parts": [
+            {
+              "text": "その",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "開",
+              "ruby": "ひら"
+            },
+            {
+              "text": "くと、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "peculiar",
+          "ruby": "独特の"
+        },
+        {
+          "type": "ja",
+          "text": " 香りが立ち上った。",
+          "parts": [
+            {
+              "text": "香",
+              "ruby": "かお"
+            },
+            {
+              "text": "りが",
+              "ruby": ""
+            },
+            {
+              "text": "立ち上",
+              "ruby": "たちのぼ"
+            },
+            {
+              "text": "った。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "touched",
+          "canonical_word": "touch",
+          "meaning": "触れる"
+        },
+        {
+          "english": "peculiar",
+          "canonical_word": "peculiar",
+          "meaning": "独特の"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "touched",
+          "reading": "触れられていなかった",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "touch",
+          "canonical_meaning": "触れる"
+        },
+        {
+          "english": "peculiar",
+          "reading": "独特の",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "peculiar",
+          "canonical_meaning": "独特の"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 8,
+      "start": 57.28,
+      "end": 62.14,
+      "english": "As I turned the pages, I noticed a bookmark tucked inside.",
+      "japanese": "ページをめくると、しおりが挟まれていることに気づきました。",
+      "mixed": "ページをめくると、しおりが挟まれていることに noticed。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ページをめくると、しおりが挟まれていることに ",
+          "parts": [
+            {
+              "text": "ページをめくると、しおりが",
+              "ruby": ""
+            },
+            {
+              "text": "挟",
+              "ruby": "はさ"
+            },
+            {
+              "text": "まれていることに",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "noticed",
+          "ruby": "気づきました"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "noticed",
+          "canonical_word": "notice",
+          "meaning": "気づく"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "noticed",
+          "reading": "気づきました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "notice",
+          "canonical_meaning": "気づく"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 9,
+      "start": 62.14,
+      "end": 64.96,
+      "english": "An old handwritten note was on it.",
+      "japanese": "古い手書きのメモが貼ってありました。",
+      "mixed": "古い手書きの note が貼ってありました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "古い手書きの ",
+          "parts": [
+            {
+              "text": "古",
+              "ruby": "ふる"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "手書",
+              "ruby": "てが"
+            },
+            {
+              "text": "きの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "note",
+          "ruby": "メモ"
+        },
+        {
+          "type": "ja",
+          "text": " が貼ってありました。",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "貼",
+              "ruby": "は"
+            },
+            {
+              "text": "ってありました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "note",
+          "canonical_word": "note",
+          "meaning": "メモ"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "note",
+          "reading": "メモ",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "note",
+          "canonical_meaning": "メモ"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 10,
+      "start": 64.96,
+      "end": 68.365,
+      "english": "I give this book to you.",
+      "japanese": "この本をあなたにあげます。",
+      "mixed": "この本をあなたにあげます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "この本をあなたにあげます。",
+          "parts": [
+            {
+              "text": "この",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "をあなたにあげます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 11,
+      "start": 68.365,
+      "end": 71.543,
+      "english": "June 1968, from Father.",
+      "japanese": "1968年6月、父から。",
+      "mixed": "1968年6月、父から。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "1968年6月、父から。",
+          "parts": [
+            {
+              "text": "1968",
+              "ruby": ""
+            },
+            {
+              "text": "年",
+              "ruby": "ねん"
+            },
+            {
+              "text": "6",
+              "ruby": ""
+            },
+            {
+              "text": "月",
+              "ruby": "がつ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "父",
+              "ruby": "ちち"
+            },
+            {
+              "text": "から。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 12,
+      "start": 71.543,
+      "end": 74.8,
+      "english": "I let out a sigh.",
+      "japanese": "私はため息をつきました。",
+      "mixed": "私は sigh をつきました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私は ",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "sigh",
+          "ruby": "ため息"
+        },
+        {
+          "type": "ja",
+          "text": " をつきました。",
+          "parts": [
+            {
+              "text": "をつきました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "sigh",
+          "canonical_word": "sigh",
+          "meaning": "ため息"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "sigh",
+          "reading": "ため息",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "sigh",
+          "canonical_meaning": "ため息"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 13,
+      "start": 75.68,
+      "end": 89.56,
+      "english": "A book once handed from a father to his son had traveled for more than half a century and was about to pass into my hands, a stranger.",
+      "japanese": "かつて父から息子に手渡された一冊の本が、半世紀以上の時を経て、今まさに見知らぬ私の手に渡ろうとしている。",
+      "mixed": "かつて父から息子に手渡された一冊の本が、半世紀以上の時を経て、今まさに見知らぬ私の手に渡ろうとしている。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "かつて父から息子に手渡された一冊の本が、半世紀以上の時を経て、今まさに見知らぬ私の手に渡ろうとしている。",
+          "parts": [
+            {
+              "text": "かつて",
+              "ruby": ""
+            },
+            {
+              "text": "父",
+              "ruby": "ちち"
+            },
+            {
+              "text": "から",
+              "ruby": ""
+            },
+            {
+              "text": "息子",
+              "ruby": "むすこ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "手渡",
+              "ruby": "てわた"
+            },
+            {
+              "text": "された",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "いっ"
+            },
+            {
+              "text": "冊",
+              "ruby": "さつ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "が、",
+              "ruby": ""
+            },
+            {
+              "text": "半",
+              "ruby": "はん"
+            },
+            {
+              "text": "世紀",
+              "ruby": "せいき"
+            },
+            {
+              "text": "以上",
+              "ruby": "いじょう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "時",
+              "ruby": "とき"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "経",
+              "ruby": "へ"
+            },
+            {
+              "text": "て、",
+              "ruby": ""
+            },
+            {
+              "text": "今",
+              "ruby": "いま"
+            },
+            {
+              "text": "まさに",
+              "ruby": ""
+            },
+            {
+              "text": "見知",
+              "ruby": "みし"
+            },
+            {
+              "text": "らぬ",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "手",
+              "ruby": "て"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "渡",
+              "ruby": "わた"
+            },
+            {
+              "text": "ろうとしている。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 14,
+      "start": 89.56,
+      "end": 96.62,
+      "english": "I told the owner that I wanted to purchase the book.",
+      "japanese": "私はオーナーにその本を購入したいと言いました。",
+      "mixed": "私はオーナーにその本を purchase と言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私はオーナーにその本を ",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "はオーナーにその",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "purchase",
+          "ruby": "購入したい"
+        },
+        {
+          "type": "ja",
+          "text": " と言いました。",
+          "parts": [
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "purchase",
+          "canonical_word": "purchase",
+          "meaning": "購入する"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "purchase",
+          "reading": "購入したい",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "purchase",
+          "canonical_meaning": "購入する"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 15,
+      "start": 98.86,
+      "end": 110.36,
+      "english": "He glanced at the note and, after a moment of silence, quietly remarked, This is something valuable.",
+      "japanese": "彼はメモを一瞥し、少しの沈黙の後、静かにこう言いました。「これは貴重なものです。」",
+      "mixed": "彼は note を一瞥し、少しの silence の後、静かにこう言いました。「これは valuable ものです。」",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼は ",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "note",
+          "ruby": "メモ"
+        },
+        {
+          "type": "ja",
+          "text": " を一瞥し、少しの ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "一瞥",
+              "ruby": "いちべつ"
+            },
+            {
+              "text": "し、",
+              "ruby": ""
+            },
+            {
+              "text": "少",
+              "ruby": "すこ"
+            },
+            {
+              "text": "しの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "silence",
+          "ruby": "沈黙"
+        },
+        {
+          "type": "ja",
+          "text": " の後、静かにこう言いました。「これは ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "後",
+              "ruby": "あと"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かにこう",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。「これは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "valuable",
+          "ruby": "貴重な"
+        },
+        {
+          "type": "ja",
+          "text": " ものです。」",
+          "parts": [
+            {
+              "text": "ものです。」",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "glanced",
+          "canonical_word": "glance",
+          "meaning": "ちらりと見る"
+        },
+        {
+          "english": "note",
+          "canonical_word": "note",
+          "meaning": "メモ"
+        },
+        {
+          "english": "silence",
+          "canonical_word": "silence",
+          "meaning": "沈黙"
+        },
+        {
+          "english": "remarked",
+          "canonical_word": "remark",
+          "meaning": "述べる"
+        },
+        {
+          "english": "valuable",
+          "canonical_word": "valuable",
+          "meaning": "貴重な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "note",
+          "reading": "メモ",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "note",
+          "canonical_meaning": "メモ"
+        },
+        {
+          "english": "silence",
+          "reading": "沈黙",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "silence",
+          "canonical_meaning": "沈黙"
+        },
+        {
+          "english": "valuable",
+          "reading": "貴重な",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "valuable",
+          "canonical_meaning": "貴重な"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 16,
+      "start": 110.36,
+      "end": 114.798,
+      "english": "Back home, I read the poems.",
+      "japanese": "家に帰って詩を読みました。",
+      "mixed": "家に帰って詩を読みました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "家に帰って詩を読みました。",
+          "parts": [
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "帰",
+              "ruby": "かえ"
+            },
+            {
+              "text": "って",
+              "ruby": ""
+            },
+            {
+              "text": "詩",
+              "ruby": "し"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "読",
+              "ruby": "よ"
+            },
+            {
+              "text": "みました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 17,
+      "start": 114.798,
+      "end": 120.08,
+      "english": "Outside, rain was gradually beginning to fall.",
+      "japanese": "外では雨が徐々に降り始めていた。",
+      "mixed": "外では雨が gradually 降り始めていた。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "外では雨が ",
+          "parts": [
+            {
+              "text": "外",
+              "ruby": "そと"
+            },
+            {
+              "text": "では",
+              "ruby": ""
+            },
+            {
+              "text": "雨",
+              "ruby": "あめ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "gradually",
+          "ruby": "徐々に"
+        },
+        {
+          "type": "ja",
+          "text": " 降り始めていた。",
+          "parts": [
+            {
+              "text": "降",
+              "ruby": "ふ"
+            },
+            {
+              "text": "り",
+              "ruby": ""
+            },
+            {
+              "text": "始",
+              "ruby": "はじ"
+            },
+            {
+              "text": "めていた。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "gradually",
+          "canonical_word": "gradually",
+          "meaning": "徐々に"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "gradually",
+          "reading": "徐々に",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "gradually",
+          "canonical_meaning": "徐々に"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 18,
+      "start": 120.08,
+      "end": 130.96,
+      "english": "The words within the book, across sixty years, had reached me now.",
+      "japanese": "この本に書かれた言葉が、60年の時を経て、今、私に届いた。",
+      "mixed": "この本に書かれた言葉が、60年の時を経て、今、私に届いた。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "この本に書かれた言葉が、60年の時を経て、今、私に届いた。",
+          "parts": [
+            {
+              "text": "この",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "書",
+              "ruby": "か"
+            },
+            {
+              "text": "かれた",
+              "ruby": ""
+            },
+            {
+              "text": "言葉",
+              "ruby": "ことば"
+            },
+            {
+              "text": "が、60",
+              "ruby": ""
+            },
+            {
+              "text": "年",
+              "ruby": "ねん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "時",
+              "ruby": "とき"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "経",
+              "ruby": "へ"
+            },
+            {
+              "text": "て、",
+              "ruby": ""
+            },
+            {
+              "text": "今",
+              "ruby": "いま"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "届",
+              "ruby": "とど"
+            },
+            {
+              "text": "いた。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    }
+  ]
+}

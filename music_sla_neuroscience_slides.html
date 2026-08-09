@@ -1,0 +1,1031 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>英語は歌で覚えるとなぜ残る？</title>
+  <style>
+    :root {
+      --ink: #15213a;
+      --muted: #66728a;
+      --paper: #fffdf7;
+      --blue: #2563eb;
+      --teal: #0891b2;
+      --green: #16a34a;
+      --coral: #ef5b45;
+      --yellow: #f5b938;
+      --line: rgba(21, 33, 58, 0.14);
+      --shadow: 0 22px 54px rgba(21, 33, 58, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: #101829;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+      letter-spacing: 0;
+    }
+
+    body {
+      overflow: hidden;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .deck {
+      position: relative;
+      width: 100vw;
+      height: 100dvh;
+      overflow: hidden;
+      background: var(--paper);
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      display: none;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(37, 99, 235, 0.06), transparent 34%),
+        linear-gradient(180deg, #fffdf7, #f8fbff);
+    }
+
+    .slide.active {
+      display: grid;
+      animation: slideIn 260ms ease-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .frame {
+      width: min(1220px, calc(100vw - 72px));
+      height: calc(100dvh - 80px);
+      margin: 40px auto;
+      display: grid;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .two-col {
+      grid-template-columns: 1.02fr 0.98fr;
+    }
+
+    .three-col {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .single {
+      grid-template-columns: 1fr;
+      align-content: center;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      color: var(--blue);
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 34px;
+      height: 4px;
+      border-radius: 999px;
+      background: currentColor;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      max-width: 820px;
+      font-size: clamp(52px, 7.2vw, 86px);
+      line-height: 1.02;
+      font-weight: 900;
+    }
+
+    h2 {
+      max-width: 880px;
+      font-size: clamp(38px, 5vw, 64px);
+      line-height: 1.08;
+      font-weight: 900;
+    }
+
+    h3 {
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 850;
+    }
+
+    .lead {
+      max-width: 780px;
+      margin-top: 22px;
+      color: #34425e;
+      font-size: clamp(19px, 2.2vw, 27px);
+      line-height: 1.65;
+      font-weight: 650;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    .hero-visual,
+    .visual-panel {
+      min-height: 420px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: #e8f3ff;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: min(70dvh, 640px);
+    }
+
+    .hero-visual img,
+    .visual-panel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-badge {
+      position: absolute;
+      left: 22px;
+      bottom: 22px;
+      max-width: 520px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: rgba(255, 253, 247, 0.9);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.55;
+      font-weight: 750;
+      backdrop-filter: blur(12px);
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      color: #fff;
+      background: var(--blue);
+      font-size: 15px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .pill.teal { background: var(--teal); }
+    .pill.green { background: var(--green); }
+    .pill.coral { background: var(--coral); }
+    .pill.yellow {
+      background: var(--yellow);
+      color: #3d2b00;
+    }
+
+    .panel,
+    .mini-card,
+    .source-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.86);
+      box-shadow: 0 14px 32px rgba(21, 33, 58, 0.08);
+    }
+
+    .panel {
+      padding: 30px;
+    }
+
+    .mini-card {
+      min-height: 230px;
+      padding: 24px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+    }
+
+    .mini-card strong {
+      display: block;
+      color: var(--blue);
+      font-size: 44px;
+      line-height: 1;
+      font-weight: 950;
+    }
+
+    .mini-card p,
+    .panel p,
+    .source-card p {
+      color: #3d4961;
+      font-size: 19px;
+      line-height: 1.65;
+      font-weight: 600;
+    }
+
+    .split-list {
+      display: grid;
+      gap: 16px;
+      margin-top: 26px;
+    }
+
+    .line-item {
+      display: grid;
+      grid-template-columns: 132px 1fr;
+      gap: 18px;
+      align-items: start;
+      padding: 18px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .line-item:first-child {
+      border-top: 0;
+    }
+
+    .line-item .label {
+      color: var(--coral);
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .line-item p {
+      color: #34425e;
+      font-size: 20px;
+      line-height: 1.55;
+      font-weight: 650;
+    }
+
+    .matrix {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .matrix .mini-card {
+      min-height: 206px;
+    }
+
+    .route {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .step {
+      position: relative;
+      min-height: 170px;
+      padding: 22px 18px;
+      border-radius: 8px;
+      background: #fff;
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 26px rgba(21, 33, 58, 0.07);
+    }
+
+    .step::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -12px;
+      width: 12px;
+      height: 3px;
+      background: var(--line);
+    }
+
+    .step:last-child::after {
+      display: none;
+    }
+
+    .step b {
+      color: var(--teal);
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .step h3 {
+      margin-top: 14px;
+      font-size: 22px;
+    }
+
+    .step p {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.55;
+      font-weight: 650;
+    }
+
+    .quote-band {
+      position: relative;
+      padding: 42px;
+      border-left: 12px solid var(--yellow);
+      background: #ffffff;
+      box-shadow: var(--shadow);
+      border-radius: 8px;
+    }
+
+    .quote-band p {
+      font-size: clamp(25px, 3vw, 42px);
+      line-height: 1.35;
+      font-weight: 900;
+      color: var(--ink);
+    }
+
+    .quote-band span {
+      display: block;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.6;
+      font-weight: 700;
+    }
+
+    .site-card {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 28px;
+      align-items: stretch;
+      margin-top: 28px;
+    }
+
+    .site-copy {
+      padding: 30px;
+      border-radius: 8px;
+      background: #fff;
+      border: 1px solid var(--line);
+      box-shadow: 0 14px 32px rgba(21, 33, 58, 0.08);
+    }
+
+    .site-copy p {
+      color: #34425e;
+      font-size: 20px;
+      line-height: 1.65;
+      font-weight: 650;
+    }
+
+    .site-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 22px;
+      min-height: 46px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      background: var(--ink);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 850;
+      font-size: 16px;
+    }
+
+    .check-list {
+      display: grid;
+      gap: 14px;
+      margin: 28px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .check-list li {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 14px;
+      align-items: start;
+      color: #34425e;
+      font-size: 20px;
+      line-height: 1.55;
+      font-weight: 680;
+    }
+
+    .check-list li::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      margin-top: 6px;
+      border-radius: 50%;
+      background:
+        linear-gradient(135deg, var(--green) 0 55%, var(--yellow) 55% 100%);
+      box-shadow: inset 0 0 0 3px #fff;
+    }
+
+    .source-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .source-card {
+      min-height: 112px;
+      padding: 18px;
+    }
+
+    .source-card h3 {
+      color: var(--blue);
+      font-size: 17px;
+    }
+
+    .source-card p {
+      margin-top: 8px;
+      color: #49556b;
+      font-size: 14px;
+      line-height: 1.45;
+      font-weight: 650;
+    }
+
+    .nav {
+      position: fixed;
+      right: 24px;
+      bottom: 22px;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      background: rgba(16, 24, 41, 0.78);
+      color: #fff;
+      backdrop-filter: blur(14px);
+    }
+
+    .nav button {
+      width: 42px;
+      height: 42px;
+      border: 0;
+      border-radius: 50%;
+      background: #fff;
+      color: var(--ink);
+      font-size: 24px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .nav button:disabled {
+      opacity: 0.38;
+      cursor: default;
+    }
+
+    .counter {
+      min-width: 68px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 850;
+    }
+
+    .progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 30;
+      width: 100%;
+      height: 6px;
+      background: rgba(21, 33, 58, 0.12);
+    }
+
+    .progress span {
+      display: block;
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, var(--blue), var(--coral), var(--yellow), var(--green));
+      transition: width 240ms ease;
+    }
+
+    .foot {
+      position: absolute;
+      left: 36px;
+      bottom: 22px;
+      z-index: 8;
+      color: rgba(21, 33, 58, 0.52);
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .accent-blue { color: var(--blue); }
+    .accent-coral { color: var(--coral); }
+    .accent-teal { color: var(--teal); }
+    .accent-green { color: var(--green); }
+
+    @media (max-width: 900px) {
+      body {
+        overflow: auto;
+      }
+
+      .deck {
+        min-height: 100dvh;
+        height: auto;
+      }
+
+      .slide {
+        min-height: 100dvh;
+        overflow: auto;
+      }
+
+      .slide.active {
+        display: block;
+      }
+
+      .frame {
+        width: min(100% - 32px, 760px);
+        min-height: calc(100dvh - 92px);
+        height: auto;
+        margin: 38px auto 78px;
+        display: grid;
+        gap: 18px;
+      }
+
+      .two-col,
+      .three-col,
+      .site-card,
+      .matrix,
+      .route,
+      .source-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      h2 {
+        font-size: 34px;
+      }
+
+      .lead,
+      .line-item p,
+      .mini-card p,
+      .panel p,
+      .site-copy p,
+      .check-list li {
+        font-size: 18px;
+      }
+
+      .hero-visual,
+      .visual-panel {
+        min-height: 260px;
+      }
+
+      .mini-card {
+        min-height: 0;
+      }
+
+      .line-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .step {
+        min-height: 0;
+      }
+
+      .step::after {
+        display: none;
+      }
+
+      .foot {
+        display: none;
+      }
+    }
+
+    @media print {
+      body {
+        overflow: visible;
+        background: #fff;
+      }
+
+      .deck {
+        height: auto;
+        overflow: visible;
+      }
+
+      .slide,
+      .slide.active {
+        position: relative;
+        display: block;
+        min-height: 100vh;
+        page-break-after: always;
+      }
+
+      .frame {
+        height: auto;
+        min-height: calc(100vh - 80px);
+      }
+
+      .nav,
+      .progress {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck" aria-label="英語は歌で覚えるとなぜ残る？ HTMLスライド">
+    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+    <section class="slide active" data-title="Title">
+      <div class="frame two-col">
+        <div>
+          <p class="kicker">Teacher Tacos English / Funnics Island</p>
+          <h1>英語は歌で覚えるとなぜ残る？</h1>
+          <p class="lead">音楽は英語学習の邪魔ではなく、音韻・リズム・記憶・発声をつなぐ足場になる。</p>
+          <div class="pill-row" aria-label="キーワード">
+            <span class="pill">歌で覚える</span>
+            <span class="pill coral">音韻処理</span>
+            <span class="pill teal">二重符号化</span>
+            <span class="pill yellow">神経可塑性</span>
+          </div>
+        </div>
+        <figure class="hero-visual" aria-label="Teacher Tacos の教材画像">
+          <img src="tmp_h6_teacher_tacos_dialogue/frames/frame_000_teacher_tacos.png" alt="Teacher Tacos と英語教材のビジュアル">
+          <figcaption class="hero-badge">この記事の内容を、発表・授業・SNS投稿に使いやすいスライド形式に整理しました。</figcaption>
+        </figure>
+      </div>
+      <div class="foot">Use arrow keys or buttons to move</div>
+    </section>
+
+    <section class="slide" data-title="Core">
+      <div class="frame single">
+        <div>
+          <p class="kicker">核心</p>
+          <div class="quote-band">
+            <p>覚えたい英文そのものが歌になっているとき、音楽はノイズではなく「第二の記憶ルート」になる。</p>
+            <span>関係ない歌詞入りBGMとは別物です。歌詞と学習対象が一致するから、メロディー・リズム・意味が同じ方向へ働きます。</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Left Right">
+      <div class="frame two-col">
+        <div>
+          <p class="kicker">右脳神話を整理する</p>
+          <h2>英語の音は、左右の脳が分担して処理する。</h2>
+          <p class="lead">左半球は音素や文法の細かな分析、右半球はプロソディやリズム、ピッチ、声の雰囲気に強く関わります。</p>
+        </div>
+        <div class="matrix" aria-label="左右半球の役割">
+          <article class="mini-card">
+            <strong>左</strong>
+            <h3>分節的な処理</h3>
+            <p>/r/ と /l/、/ae/ と /uh/ の違い、単語の音、文法構造を細かく見分ける。</p>
+          </article>
+          <article class="mini-card">
+            <strong class="accent-coral">右</strong>
+            <h3>超分節的な処理</h3>
+            <p>イントネーション、強弱、リズム、感情、声の個性をまとまりとしてつかむ。</p>
+          </article>
+          <article class="mini-card">
+            <strong class="accent-teal">歌</strong>
+            <h3>両方を同時に使う</h3>
+            <p>歌詞の意味と音、メロディー、拍、発声が一つの学習体験になる。</p>
+          </article>
+          <article class="mini-card">
+            <strong class="accent-green">英語</strong>
+            <h3>リズムが重要</h3>
+            <p>強く読む語と弱く流す語の差を、説明だけでなく身体のタイミングで覚える。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Dual Coding">
+      <div class="frame two-col">
+        <div class="visual-panel">
+          <img src="phonics-songs/baker_bear_long_a/01_baking_cakes.png" alt="Baker Bear のフォニックス歌教材画像">
+        </div>
+        <div>
+          <p class="kicker">記憶のしくみ</p>
+          <h2>歌は英文を二重に符号化する。</h2>
+          <div class="split-list">
+            <div class="line-item">
+              <div class="label">言語ルート</div>
+              <p>歌詞の意味、単語、音韻、文の順番として覚える。</p>
+            </div>
+            <div class="line-item">
+              <div class="label">音楽ルート</div>
+              <p>メロディー、リズム、強弱、感情の流れとして覚える。</p>
+            </div>
+            <div class="line-item">
+              <div class="label">思い出す時</div>
+              <p>意味が出てこなくても、出だしのメロディーや拍が検索の手がかりになる。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="English Rhythm">
+      <div class="frame two-col">
+        <div>
+          <p class="kicker">英語と歌の相性</p>
+          <h2>英語は「強く読む音」が時間を作る言語。</h2>
+          <p class="lead">英語では大事な語が拍に乗り、冠詞・前置詞・代名詞などは短く弱く流れます。歌はこの強弱と圧縮を、拍とメロディーに乗せて見える形にします。</p>
+          <ul class="check-list">
+            <li>ストレスは強拍に乗りやすい。</li>
+            <li>リンキングとリダクションを音の塊として覚えやすい。</li>
+            <li>文字より先に、英語の時間感覚が身体に入る。</li>
+          </ul>
+        </div>
+        <div class="visual-panel">
+          <img src="phonics-songs/baker_bear_long_a/17_finale_dancing.png" alt="Baker Bear と仲間たちが歌って踊る教材画像">
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Din">
+      <div class="frame single">
+        <div>
+          <p class="kicker">頭に残る力</p>
+          <h2>歌は、机を離れたあとも英文を再生させる。</h2>
+          <div class="route" aria-label="歌による反復の流れ">
+            <article class="step">
+              <b>1</b>
+              <h3>聴く</h3>
+              <p>英文を歌として受け取り、音の輪郭をつかむ。</p>
+            </article>
+            <article class="step">
+              <b>2</b>
+              <h3>口ずさむ</h3>
+              <p>意味より先に、リズムと音の順番が残る。</p>
+            </article>
+            <article class="step">
+              <b>3</b>
+              <h3>勝手に流れる</h3>
+              <p>不随意の心的リハーサルが起こりやすくなる。</p>
+            </article>
+            <article class="step">
+              <b>4</b>
+              <h3>自動化する</h3>
+              <p>反復の回数が増え、フレーズが使える回路に近づく。</p>
+            </article>
+          </div>
+          <p class="lead">「頭から離れない」は、語学ではかなり強い味方です。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Interference">
+      <div class="frame two-col">
+        <div>
+          <p class="kicker">注意点</p>
+          <h2>歌がいつでも良いわけではない。</h2>
+          <p class="lead">英語を読んでいる横で、関係ない英語の歌詞入りBGMを流すと、言語情報どうしがワーキングメモリで競合します。</p>
+        </div>
+        <div class="panel">
+          <div class="split-list">
+            <div class="line-item">
+              <div class="label">促進</div>
+              <p>覚えたい英文そのものを歌として聴く。歌詞と学習対象が一致する。</p>
+            </div>
+            <div class="line-item">
+              <div class="label">中立寄り</div>
+              <p>歌詞のないBGMを小さな音で流す。覚醒度や気分には効くことがある。</p>
+            </div>
+            <div class="line-item">
+              <div class="label">干渉</div>
+              <p>別の英文を学習中に、別の歌詞入り音楽を聴く。読む言葉と聴こえる言葉がぶつかる。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Scaffolding">
+      <div class="frame two-col">
+        <div class="visual-panel">
+          <img src="dist-public/phonics-short-a/14_finale_aunt_ant.png" alt="Aunt Ant のフォニックス歌教材画像">
+        </div>
+        <div>
+          <p class="kicker">神経可塑性</p>
+          <h2>音楽は、新しい言語回路の足場になりうる。</h2>
+          <p class="lead">メロディー、拍、発声、身体の動きは、聴覚と運動を同時に動かします。失語症リハビリのメロディック・イントネーション・セラピーも、音楽が発話を支える可能性を示す代表例です。</p>
+          <ul class="check-list">
+            <li>聴いた音を、同じタイミングで声に出す。</li>
+            <li>発音とリスニングを別々にせず、一つのループで練習する。</li>
+            <li>感情と報酬が加わるため、続けやすく記憶にも残りやすい。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Site">
+      <div class="frame single">
+        <div>
+          <p class="kicker">教材サイト紹介</p>
+          <h2>Teacher Tacos English / Funnics Island</h2>
+          <div class="site-card">
+            <div class="visual-panel">
+              <img src="dist-public/phonics-chars/teacher_tacos.png" alt="Teacher Tacos のキャラクター画像">
+            </div>
+            <div class="site-copy">
+              <p>ティーチャータコスと仲間たちが登場する英語学習サイトです。フォニックス、入門英語、中学英語、高校文法、高校読解までを、段階的に学べます。</p>
+              <p style="margin-top: 16px;">特にフォニックスと入門英語では、英語を歌・物語・キャラクター・シャドウイングで覚える導線があり、音から英語に入る設計になっています。</p>
+              <a class="site-link" href="https://english-lesson.gasflare.workers.dev/" target="_blank" rel="noopener">サイトを開く</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Flow">
+      <div class="frame single">
+        <div>
+          <p class="kicker">おすすめの学習順</p>
+          <h2>まず歌で入れて、あとから意味と構造を重ねる。</h2>
+          <div class="route" aria-label="学習順">
+            <article class="step">
+              <b>1</b>
+              <h3>歌として聴く</h3>
+              <p>完璧に理解しようとせず、英語の流れを耳に残す。</p>
+            </article>
+            <article class="step">
+              <b>2</b>
+              <h3>歌詞を見る</h3>
+              <p>音と文字を対応させ、どこが弱くつながるかを確認する。</p>
+            </article>
+            <article class="step">
+              <b>3</b>
+              <h3>意味を確認</h3>
+              <p>日本語訳や日本語混じり文で、場面と意味を結びつける。</p>
+            </article>
+            <article class="step">
+              <b>4</b>
+              <h3>声に出す</h3>
+              <p>歌う、またはシャドウイングして、口の動きまで回路化する。</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Classroom">
+      <div class="frame three-col">
+        <article class="mini-card">
+          <strong>5分</strong>
+          <h3>導入</h3>
+          <p>1曲だけ流し、聞こえた単語を拾う。意味の説明は短く、音の印象を優先する。</p>
+        </article>
+        <article class="mini-card">
+          <strong class="accent-coral">10分</strong>
+          <h3>音と意味</h3>
+          <p>歌詞を見ながら、強く読む語、弱く流れる語、つながる音に線を引く。</p>
+        </article>
+        <article class="mini-card">
+          <strong class="accent-green">15分</strong>
+          <h3>声に出す</h3>
+          <p>歌う、リズム読み、シャドウイングを切り替え、最後に同じ英文を普通の会話速度で読む。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Closing">
+      <div class="frame single">
+        <div>
+          <p class="kicker">まとめ</p>
+          <h2>一曲から、英語の回路は動き始める。</h2>
+          <p class="lead">歌は、左半球の音素・文法処理と、右半球のリズム・プロソディ処理を同じ英文に向けます。そこに記憶の手がかり、発声、感情、反復が重なることで、英語は「覚えた知識」から「口に出せる音の流れ」へ近づきます。</p>
+          <div class="pill-row">
+            <span class="pill">聴く</span>
+            <span class="pill teal">歌う</span>
+            <span class="pill coral">意味を結ぶ</span>
+            <span class="pill green">声に出す</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="References">
+      <div class="frame single">
+        <div>
+          <p class="kicker">参考文献</p>
+          <h2>主な根拠</h2>
+          <div class="source-grid">
+            <article class="source-card">
+              <h3>Patel, 2003</h3>
+              <p>言語・音楽・統語処理の共有資源に関する議論。</p>
+            </article>
+            <article class="source-card">
+              <h3>Ludke et al., 2014</h3>
+              <p>歌って学ぶ条件が外国語フレーズの記憶を助ける実験研究。</p>
+            </article>
+            <article class="source-card">
+              <h3>Salcedo, 2010</h3>
+              <p>歌による想起と不随意の心的リハーサルに関する研究。</p>
+            </article>
+            <article class="source-card">
+              <h3>Merrett et al., 2014</h3>
+              <p>メロディック・イントネーション・セラピーの神経認知メカニズム。</p>
+            </article>
+            <article class="source-card">
+              <h3>Herholz & Zatorre, 2012</h3>
+              <p>音楽訓練を神経可塑性のモデルとして整理。</p>
+            </article>
+            <article class="source-card">
+              <h3>Lehmann & Seufert, 2017</h3>
+              <p>BGM、ワーキングメモリ、学習効果の関係を検討。</p>
+            </article>
+          </div>
+          <p class="note" style="margin-top: 24px;">詳細な本文版は同フォルダの blog_music_sla_neuroscience_2026-05-24.md に整理済みです。</p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="nav" aria-label="スライド操作">
+      <button type="button" id="prevBtn" aria-label="前のスライド">‹</button>
+      <span class="counter" id="counter" aria-live="polite">1 / 13</span>
+      <button type="button" id="nextBtn" aria-label="次のスライド">›</button>
+    </nav>
+  </main>
+
+  <script>
+    const slides = Array.from(document.querySelectorAll(".slide"));
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    const counter = document.getElementById("counter");
+    const progressBar = document.getElementById("progressBar");
+
+    const hashNumber = Number.parseInt(window.location.hash.replace("#", ""), 10);
+    let current = Number.isFinite(hashNumber) ? Math.min(Math.max(hashNumber - 1, 0), slides.length - 1) : 0;
+
+    function showSlide(index) {
+      current = Math.min(Math.max(index, 0), slides.length - 1);
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === current);
+        slide.setAttribute("aria-hidden", i === current ? "false" : "true");
+      });
+      prevBtn.disabled = current === 0;
+      nextBtn.disabled = current === slides.length - 1;
+      counter.textContent = `${current + 1} / ${slides.length}`;
+      progressBar.style.width = `${((current + 1) / slides.length) * 100}%`;
+      const title = slides[current].dataset.title || `Slide ${current + 1}`;
+      document.title = `${current + 1}. ${title} | 英語は歌で覚えるとなぜ残る？`;
+      history.replaceState(null, "", `#${current + 1}`);
+    }
+
+    prevBtn.addEventListener("click", () => showSlide(current - 1));
+    nextBtn.addEventListener("click", () => showSlide(current + 1));
+
+    document.addEventListener("keydown", (event) => {
+      const keys = ["ArrowRight", "ArrowLeft", " ", "Home", "End", "PageDown", "PageUp"];
+      if (!keys.includes(event.key)) return;
+      event.preventDefault();
+      if (event.key === "ArrowRight" || event.key === " " || event.key === "PageDown") showSlide(current + 1);
+      if (event.key === "ArrowLeft" || event.key === "PageUp") showSlide(current - 1);
+      if (event.key === "Home") showSlide(0);
+      if (event.key === "End") showSlide(slides.length - 1);
+    });
+
+    let touchStartX = null;
+    document.addEventListener("touchstart", (event) => {
+      touchStartX = event.changedTouches[0].clientX;
+    }, { passive: true });
+
+    document.addEventListener("touchend", (event) => {
+      if (touchStartX === null) return;
+      const delta = event.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(delta) > 56) showSlide(current + (delta < 0 ? 1 : -1));
+      touchStartX = null;
+    }, { passive: true });
+
+    showSlide(current);
+  </script>
+</body>
+</html>

@@ -1,0 +1,1096 @@
+{
+  "lesson": "H022",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h022_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H022/candidate1-full.mp3",
+  "source_audio_sha256": "1f80d5136d077e05a0edf460ef4dbfcdce2029277580286e0616aec84cf46f74",
+  "bpm": 77.86,
+  "exact_word_match": true,
+  "word_count": 164,
+  "line_count": 12,
+  "first_word_start": 6.073,
+  "last_word_end": 118.119,
+  "lines": [
+    {
+      "line": 1,
+      "english": "I visited the home of the teacher who had guided me during my university years.",
+      "word_timings": [
+        {
+          "word": "I",
+          "display_index": 0,
+          "start": 6.073,
+          "end": 6.221
+        },
+        {
+          "word": "visited",
+          "display_index": 1,
+          "start": 6.221,
+          "end": 7.39
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 7.39,
+          "end": 7.581
+        },
+        {
+          "word": "home",
+          "display_index": 3,
+          "start": 7.581,
+          "end": 8.241
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 8.241,
+          "end": 8.565
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 8.565,
+          "end": 8.841
+        },
+        {
+          "word": "teacher",
+          "display_index": 6,
+          "start": 8.841,
+          "end": 10.422
+        },
+        {
+          "word": "who",
+          "display_index": 7,
+          "start": 10.422,
+          "end": 10.602
+        },
+        {
+          "word": "had",
+          "display_index": 8,
+          "start": 10.602,
+          "end": 10.802
+        },
+        {
+          "word": "guided",
+          "display_index": 9,
+          "start": 10.802,
+          "end": 11.402
+        },
+        {
+          "word": "me",
+          "display_index": 10,
+          "start": 11.402,
+          "end": 11.982
+        },
+        {
+          "word": "during",
+          "display_index": 11,
+          "start": 11.982,
+          "end": 12.596
+        },
+        {
+          "word": "my",
+          "display_index": 12,
+          "start": 12.596,
+          "end": 13.262
+        },
+        {
+          "word": "university",
+          "display_index": 13,
+          "start": 13.262,
+          "end": 14.622
+        },
+        {
+          "word": "years.",
+          "display_index": 14,
+          "start": 14.622,
+          "end": 16.122
+        }
+      ],
+      "start": 6.073,
+      "end": 16.122
+    },
+    {
+      "line": 2,
+      "english": "It had been ten years.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 16.423,
+          "end": 16.543
+        },
+        {
+          "word": "had",
+          "display_index": 1,
+          "start": 16.543,
+          "end": 16.763
+        },
+        {
+          "word": "been",
+          "display_index": 2,
+          "start": 16.763,
+          "end": 17.143
+        },
+        {
+          "word": "ten",
+          "display_index": 3,
+          "start": 17.143,
+          "end": 17.643
+        },
+        {
+          "word": "years.",
+          "display_index": 4,
+          "start": 17.643,
+          "end": 18.683
+        }
+      ],
+      "start": 16.423,
+      "end": 18.683
+    },
+    {
+      "line": 3,
+      "english": "He was the person whom students of my generation had respected most.",
+      "word_timings": [
+        {
+          "word": "He",
+          "display_index": 0,
+          "start": 18.983,
+          "end": 19.183
+        },
+        {
+          "word": "was",
+          "display_index": 1,
+          "start": 19.183,
+          "end": 19.58
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 19.58,
+          "end": 19.723
+        },
+        {
+          "word": "person",
+          "display_index": 3,
+          "start": 19.723,
+          "end": 20.663
+        },
+        {
+          "word": "whom",
+          "display_index": 4,
+          "start": 20.663,
+          "end": 21.143
+        },
+        {
+          "word": "students",
+          "display_index": 5,
+          "start": 21.143,
+          "end": 22.444
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 22.444,
+          "end": 22.62
+        },
+        {
+          "word": "my",
+          "display_index": 7,
+          "start": 22.62,
+          "end": 22.944
+        },
+        {
+          "word": "generation",
+          "display_index": 8,
+          "start": 22.944,
+          "end": 24.504
+        },
+        {
+          "word": "had",
+          "display_index": 9,
+          "start": 24.504,
+          "end": 25.784
+        },
+        {
+          "word": "respected",
+          "display_index": 10,
+          "start": 25.784,
+          "end": 27.124
+        },
+        {
+          "word": "most.",
+          "display_index": 11,
+          "start": 27.124,
+          "end": 28.624
+        }
+      ],
+      "start": 18.983,
+      "end": 28.624
+    },
+    {
+      "line": 4,
+      "english": "He lived in an old house which had a quiet garden.",
+      "word_timings": [
+        {
+          "word": "He",
+          "display_index": 0,
+          "start": 29.645,
+          "end": 29.845
+        },
+        {
+          "word": "lived",
+          "display_index": 1,
+          "start": 29.845,
+          "end": 30.265
+        },
+        {
+          "word": "in",
+          "display_index": 2,
+          "start": 30.265,
+          "end": 30.425
+        },
+        {
+          "word": "an",
+          "display_index": 3,
+          "start": 30.425,
+          "end": 30.685
+        },
+        {
+          "word": "old",
+          "display_index": 4,
+          "start": 30.685,
+          "end": 31.125
+        },
+        {
+          "word": "house",
+          "display_index": 5,
+          "start": 31.125,
+          "end": 31.885
+        },
+        {
+          "word": "which",
+          "display_index": 6,
+          "start": 31.885,
+          "end": 32.165
+        },
+        {
+          "word": "had",
+          "display_index": 7,
+          "start": 32.165,
+          "end": 32.496
+        },
+        {
+          "word": "a",
+          "display_index": 8,
+          "start": 32.496,
+          "end": 32.645
+        },
+        {
+          "word": "quiet",
+          "display_index": 9,
+          "start": 32.645,
+          "end": 33.425
+        },
+        {
+          "word": "garden.",
+          "display_index": 10,
+          "start": 33.425,
+          "end": 34.725
+        }
+      ],
+      "start": 29.645,
+      "end": 34.725
+    },
+    {
+      "line": 5,
+      "english": "The figure who appeared at the door looked much older than before, yet his eyes were the same as long ago.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 35.025,
+          "end": 35.146
+        },
+        {
+          "word": "figure",
+          "display_index": 1,
+          "start": 35.146,
+          "end": 35.906
+        },
+        {
+          "word": "who",
+          "display_index": 2,
+          "start": 35.906,
+          "end": 36.246
+        },
+        {
+          "word": "appeared",
+          "display_index": 3,
+          "start": 36.246,
+          "end": 37.546
+        },
+        {
+          "word": "at",
+          "display_index": 4,
+          "start": 37.546,
+          "end": 37.811
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 37.811,
+          "end": 38.026
+        },
+        {
+          "word": "door",
+          "display_index": 6,
+          "start": 38.026,
+          "end": 38.626
+        },
+        {
+          "word": "looked",
+          "display_index": 7,
+          "start": 38.626,
+          "end": 39.006
+        },
+        {
+          "word": "much",
+          "display_index": 8,
+          "start": 39.006,
+          "end": 39.486
+        },
+        {
+          "word": "older",
+          "display_index": 9,
+          "start": 39.486,
+          "end": 40.347
+        },
+        {
+          "word": "than",
+          "display_index": 10,
+          "start": 40.347,
+          "end": 40.727
+        },
+        {
+          "word": "before,",
+          "display_index": 11,
+          "start": 40.727,
+          "end": 42.427
+        },
+        {
+          "word": "yet",
+          "display_index": 12,
+          "start": 42.427,
+          "end": 42.647
+        },
+        {
+          "word": "his",
+          "display_index": 13,
+          "start": 42.647,
+          "end": 42.947
+        },
+        {
+          "word": "eyes",
+          "display_index": 14,
+          "start": 42.947,
+          "end": 43.787
+        },
+        {
+          "word": "were",
+          "display_index": 15,
+          "start": 43.787,
+          "end": 43.994
+        },
+        {
+          "word": "the",
+          "display_index": 16,
+          "start": 43.994,
+          "end": 44.187
+        },
+        {
+          "word": "same",
+          "display_index": 17,
+          "start": 44.187,
+          "end": 44.827
+        },
+        {
+          "word": "as",
+          "display_index": 18,
+          "start": 44.827,
+          "end": 45.027
+        },
+        {
+          "word": "long",
+          "display_index": 19,
+          "start": 45.027,
+          "end": 45.607
+        },
+        {
+          "word": "ago.",
+          "display_index": 20,
+          "start": 45.607,
+          "end": 47.107
+        }
+      ],
+      "start": 35.025,
+      "end": 47.107
+    },
+    {
+      "line": 6,
+      "english": "In his study, thousands of books stood on the shelves.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 48.668,
+          "end": 48.768
+        },
+        {
+          "word": "his",
+          "display_index": 1,
+          "start": 48.768,
+          "end": 48.968
+        },
+        {
+          "word": "study,",
+          "display_index": 2,
+          "start": 48.968,
+          "end": 49.768
+        },
+        {
+          "word": "thousands",
+          "display_index": 3,
+          "start": 49.768,
+          "end": 50.388
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 50.388,
+          "end": 50.588
+        },
+        {
+          "word": "books",
+          "display_index": 5,
+          "start": 50.588,
+          "end": 50.968
+        },
+        {
+          "word": "stood",
+          "display_index": 6,
+          "start": 50.968,
+          "end": 51.368
+        },
+        {
+          "word": "on",
+          "display_index": 7,
+          "start": 51.368,
+          "end": 51.612
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 51.612,
+          "end": 51.889
+        },
+        {
+          "word": "shelves.",
+          "display_index": 9,
+          "start": 51.889,
+          "end": 53.389
+        }
+      ],
+      "start": 48.668,
+      "end": 53.389
+    },
+    {
+      "line": 7,
+      "english": "Among them were some manuscripts that he himself had written.",
+      "word_timings": [
+        {
+          "word": "Among",
+          "display_index": 0,
+          "start": 54.269,
+          "end": 54.769
+        },
+        {
+          "word": "them",
+          "display_index": 1,
+          "start": 54.769,
+          "end": 55.169
+        },
+        {
+          "word": "were",
+          "display_index": 2,
+          "start": 55.169,
+          "end": 55.529
+        },
+        {
+          "word": "some",
+          "display_index": 3,
+          "start": 55.529,
+          "end": 55.949
+        },
+        {
+          "word": "manuscripts",
+          "display_index": 4,
+          "start": 55.949,
+          "end": 57.089
+        },
+        {
+          "word": "that",
+          "display_index": 5,
+          "start": 57.089,
+          "end": 57.429
+        },
+        {
+          "word": "he",
+          "display_index": 6,
+          "start": 57.429,
+          "end": 57.709
+        },
+        {
+          "word": "himself",
+          "display_index": 7,
+          "start": 57.709,
+          "end": 58.65
+        },
+        {
+          "word": "had",
+          "display_index": 8,
+          "start": 58.65,
+          "end": 58.97
+        },
+        {
+          "word": "written.",
+          "display_index": 9,
+          "start": 58.97,
+          "end": 60.05
+        }
+      ],
+      "start": 54.269,
+      "end": 60.05
+    },
+    {
+      "line": 8,
+      "english": "He recommended one book to me, saying, This is the book which I wanted you to read when you were young.",
+      "word_timings": [
+        {
+          "word": "He",
+          "display_index": 0,
+          "start": 60.35,
+          "end": 60.53
+        },
+        {
+          "word": "recommended",
+          "display_index": 1,
+          "start": 60.53,
+          "end": 61.79
+        },
+        {
+          "word": "one",
+          "display_index": 2,
+          "start": 61.79,
+          "end": 62.09
+        },
+        {
+          "word": "book",
+          "display_index": 3,
+          "start": 62.09,
+          "end": 62.393
+        },
+        {
+          "word": "to",
+          "display_index": 4,
+          "start": 62.393,
+          "end": 62.65
+        },
+        {
+          "word": "me,",
+          "display_index": 5,
+          "start": 62.65,
+          "end": 63.19
+        },
+        {
+          "word": "saying,",
+          "display_index": 6,
+          "start": 63.19,
+          "end": 64.411
+        },
+        {
+          "word": "This",
+          "display_index": 7,
+          "start": 64.411,
+          "end": 65.239
+        },
+        {
+          "word": "is",
+          "display_index": 8,
+          "start": 65.239,
+          "end": 65.618
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 65.618,
+          "end": 65.791
+        },
+        {
+          "word": "book",
+          "display_index": 10,
+          "start": 65.791,
+          "end": 66.751
+        },
+        {
+          "word": "which",
+          "display_index": 11,
+          "start": 66.751,
+          "end": 67.371
+        },
+        {
+          "word": "I",
+          "display_index": 12,
+          "start": 67.371,
+          "end": 67.571
+        },
+        {
+          "word": "wanted",
+          "display_index": 13,
+          "start": 67.571,
+          "end": 68.155
+        },
+        {
+          "word": "you",
+          "display_index": 14,
+          "start": 68.155,
+          "end": 68.522
+        },
+        {
+          "word": "to",
+          "display_index": 15,
+          "start": 68.522,
+          "end": 68.751
+        },
+        {
+          "word": "read",
+          "display_index": 16,
+          "start": 68.751,
+          "end": 69.551
+        },
+        {
+          "word": "when",
+          "display_index": 17,
+          "start": 69.551,
+          "end": 69.905
+        },
+        {
+          "word": "you",
+          "display_index": 18,
+          "start": 69.905,
+          "end": 70.112
+        },
+        {
+          "word": "were",
+          "display_index": 19,
+          "start": 70.112,
+          "end": 70.452
+        },
+        {
+          "word": "young.",
+          "display_index": 20,
+          "start": 70.452,
+          "end": 71.952
+        }
+      ],
+      "start": 60.35,
+      "end": 71.952
+    },
+    {
+      "line": 9,
+      "english": "The book that I had wanted to read turned out to be exactly this one.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 73.559,
+          "end": 73.712
+        },
+        {
+          "word": "book",
+          "display_index": 1,
+          "start": 73.712,
+          "end": 74.092
+        },
+        {
+          "word": "that",
+          "display_index": 2,
+          "start": 74.092,
+          "end": 74.672
+        },
+        {
+          "word": "I",
+          "display_index": 3,
+          "start": 74.672,
+          "end": 74.852
+        },
+        {
+          "word": "had",
+          "display_index": 4,
+          "start": 74.852,
+          "end": 75.312
+        },
+        {
+          "word": "wanted",
+          "display_index": 5,
+          "start": 75.312,
+          "end": 75.802
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 75.802,
+          "end": 76.073
+        },
+        {
+          "word": "read",
+          "display_index": 7,
+          "start": 76.073,
+          "end": 76.433
+        },
+        {
+          "word": "turned",
+          "display_index": 8,
+          "start": 76.433,
+          "end": 76.973
+        },
+        {
+          "word": "out",
+          "display_index": 9,
+          "start": 76.973,
+          "end": 77.382
+        },
+        {
+          "word": "to",
+          "display_index": 10,
+          "start": 77.382,
+          "end": 77.593
+        },
+        {
+          "word": "be",
+          "display_index": 11,
+          "start": 77.593,
+          "end": 77.913
+        },
+        {
+          "word": "exactly",
+          "display_index": 12,
+          "start": 77.913,
+          "end": 79.093
+        },
+        {
+          "word": "this",
+          "display_index": 13,
+          "start": 79.093,
+          "end": 79.613
+        },
+        {
+          "word": "one.",
+          "display_index": 14,
+          "start": 79.613,
+          "end": 81.113
+        }
+      ],
+      "start": 73.559,
+      "end": 81.113
+    },
+    {
+      "line": 10,
+      "english": "He served me tea with the same gentleness that he had shown when I was his student.",
+      "word_timings": [
+        {
+          "word": "He",
+          "display_index": 0,
+          "start": 81.833,
+          "end": 82.153
+        },
+        {
+          "word": "served",
+          "display_index": 1,
+          "start": 82.153,
+          "end": 82.614
+        },
+        {
+          "word": "me",
+          "display_index": 2,
+          "start": 82.614,
+          "end": 82.894
+        },
+        {
+          "word": "tea",
+          "display_index": 3,
+          "start": 82.894,
+          "end": 83.554
+        },
+        {
+          "word": "with",
+          "display_index": 4,
+          "start": 83.554,
+          "end": 83.769
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 83.769,
+          "end": 83.974
+        },
+        {
+          "word": "same",
+          "display_index": 6,
+          "start": 83.974,
+          "end": 84.514
+        },
+        {
+          "word": "gentleness",
+          "display_index": 7,
+          "start": 84.514,
+          "end": 85.654
+        },
+        {
+          "word": "that",
+          "display_index": 8,
+          "start": 85.654,
+          "end": 86.034
+        },
+        {
+          "word": "he",
+          "display_index": 9,
+          "start": 86.034,
+          "end": 86.414
+        },
+        {
+          "word": "had",
+          "display_index": 10,
+          "start": 86.414,
+          "end": 87.114
+        },
+        {
+          "word": "shown",
+          "display_index": 11,
+          "start": 87.114,
+          "end": 90.515
+        },
+        {
+          "word": "when",
+          "display_index": 12,
+          "start": 90.515,
+          "end": 90.915
+        },
+        {
+          "word": "I",
+          "display_index": 13,
+          "start": 90.915,
+          "end": 90.995
+        },
+        {
+          "word": "was",
+          "display_index": 14,
+          "start": 90.995,
+          "end": 91.275
+        },
+        {
+          "word": "his",
+          "display_index": 15,
+          "start": 91.275,
+          "end": 91.755
+        },
+        {
+          "word": "student.",
+          "display_index": 16,
+          "start": 91.755,
+          "end": 93.255
+        }
+      ],
+      "start": 81.833,
+      "end": 93.255
+    },
+    {
+      "line": 11,
+      "english": "What I discovered was a bundle of letters from scholars with whom he had been corresponding for many years.",
+      "word_timings": [
+        {
+          "word": "What",
+          "display_index": 0,
+          "start": 95.936,
+          "end": 96.376
+        },
+        {
+          "word": "I",
+          "display_index": 1,
+          "start": 96.376,
+          "end": 96.476
+        },
+        {
+          "word": "discovered",
+          "display_index": 2,
+          "start": 96.476,
+          "end": 97.656
+        },
+        {
+          "word": "was",
+          "display_index": 3,
+          "start": 97.656,
+          "end": 98.04
+        },
+        {
+          "word": "a",
+          "display_index": 4,
+          "start": 98.04,
+          "end": 98.236
+        },
+        {
+          "word": "bundle",
+          "display_index": 5,
+          "start": 98.236,
+          "end": 99.276
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 99.276,
+          "end": 99.576
+        },
+        {
+          "word": "letters",
+          "display_index": 7,
+          "start": 99.576,
+          "end": 100.296
+        },
+        {
+          "word": "from",
+          "display_index": 8,
+          "start": 100.296,
+          "end": 100.877
+        },
+        {
+          "word": "scholars",
+          "display_index": 9,
+          "start": 100.877,
+          "end": 102.277
+        },
+        {
+          "word": "with",
+          "display_index": 10,
+          "start": 102.277,
+          "end": 102.637
+        },
+        {
+          "word": "whom",
+          "display_index": 11,
+          "start": 102.637,
+          "end": 103.417
+        },
+        {
+          "word": "he",
+          "display_index": 12,
+          "start": 103.417,
+          "end": 103.777
+        },
+        {
+          "word": "had",
+          "display_index": 13,
+          "start": 103.777,
+          "end": 104.177
+        },
+        {
+          "word": "been",
+          "display_index": 14,
+          "start": 104.177,
+          "end": 105.657
+        },
+        {
+          "word": "corresponding",
+          "display_index": 15,
+          "start": 105.657,
+          "end": 108.978
+        },
+        {
+          "word": "for",
+          "display_index": 16,
+          "start": 108.978,
+          "end": 109.238
+        },
+        {
+          "word": "many",
+          "display_index": 17,
+          "start": 109.238,
+          "end": 109.778
+        },
+        {
+          "word": "years.",
+          "display_index": 18,
+          "start": 109.778,
+          "end": 111.278
+        }
+      ],
+      "start": 95.936,
+      "end": 111.278
+    },
+    {
+      "line": 12,
+      "english": "Those letters were the source of his wisdom.",
+      "word_timings": [
+        {
+          "word": "Those",
+          "display_index": 0,
+          "start": 112.719,
+          "end": 113.099
+        },
+        {
+          "word": "letters",
+          "display_index": 1,
+          "start": 113.099,
+          "end": 113.719
+        },
+        {
+          "word": "were",
+          "display_index": 2,
+          "start": 113.719,
+          "end": 115.282
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 115.282,
+          "end": 115.399
+        },
+        {
+          "word": "source",
+          "display_index": 4,
+          "start": 115.399,
+          "end": 116.099
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 116.099,
+          "end": 116.299
+        },
+        {
+          "word": "his",
+          "display_index": 6,
+          "start": 116.299,
+          "end": 116.619
+        },
+        {
+          "word": "wisdom.",
+          "display_index": 7,
+          "start": 116.619,
+          "end": 118.119
+        }
+      ],
+      "start": 112.719,
+      "end": 118.119
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

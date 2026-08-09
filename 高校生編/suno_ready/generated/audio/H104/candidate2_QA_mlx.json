@@ -1,0 +1,230 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H104.md",
+  "audio": "高校生編/suno_ready/generated/audio/H104/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 114.22,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0127,
+  "expected_words": 157,
+  "transcribed_words": 159,
+  "matched_words": 153,
+  "coverage": 0.9745,
+  "precision": 0.9623,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 156,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 39,
+      "length": 1,
+      "words": [
+        "combined"
+      ]
+    },
+    {
+      "start": 51,
+      "length": 1,
+      "words": [
+        "raised"
+      ]
+    },
+    {
+      "start": 56,
+      "length": 1,
+      "words": [
+        "cost"
+      ]
+    },
+    {
+      "start": 66,
+      "length": 1,
+      "words": [
+        "cooled"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 39,
+      "actual_start": 40,
+      "expected": [
+        "combined"
+      ],
+      "actual": [
+        "combine"
+      ],
+      "actual_confidence": 0.6714,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 51,
+      "actual_start": 52,
+      "expected": [
+        "raised"
+      ],
+      "actual": [
+        "raise"
+      ],
+      "actual_confidence": 0.9414,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 56,
+      "actual_start": 57,
+      "expected": [
+        "cost"
+      ],
+      "actual": [
+        "costs"
+      ],
+      "actual_confidence": 0.7949,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 66,
+      "actual_start": 67,
+      "expected": [
+        "cooled"
+      ],
+      "actual": [
+        "cool"
+      ],
+      "actual_confidence": 0.9316,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 1,
+      "actual_start": 1,
+      "expected": [],
+      "actual": [
+        "to"
+      ],
+      "actual_confidence": 0.7007
+    },
+    {
+      "expected_start": 157,
+      "actual_start": 158,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.4924
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 3,
+  "suspicious_substitution_words": 3,
+  "suspicious_content_substitution": true,
+  "transcript": "From 2022 to onward, sharp inflation occurred across the world Energy prices, food, housing, the price of everything rose considerably The causes were multiple, supply chain disruption due to the pandemic Russia's invasion of Ukraine, large fiscal spending by governments These combine to create a tremendous rise in prices In response, central banks raise interest rates The borrowing costs for businesses and households rose And consumption and investment cool Many countries stood at the edge of recession The pain of rising prices is not equal Wealthy households hold assets and are relatively protected But for low-income families, food and utility costs become a burden that presses on daily life The national deficit has also grown Social security expenses swell And tax revenue alone cannot cover them Debt becomes an obligation to future generations The challenge of the economy cannot be solved by one country alone In our globalized age International coordination is the foundation of a sustainable economy you",
+  "segments": [
+    {
+      "start": 8.22,
+      "end": 13.08,
+      "text": "From 2022 to onward, sharp inflation occurred across the world"
+    },
+    {
+      "start": 13.08,
+      "end": 19.18,
+      "text": "Energy prices, food, housing, the price of everything rose considerably"
+    },
+    {
+      "start": 19.18,
+      "end": 24.92,
+      "text": "The causes were multiple, supply chain disruption due to the pandemic"
+    },
+    {
+      "start": 24.92,
+      "end": 29.64,
+      "text": "Russia's invasion of Ukraine, large fiscal spending by governments"
+    },
+    {
+      "start": 32.86,
+      "end": 37.3,
+      "text": "These combine to create a tremendous rise in prices"
+    },
+    {
+      "start": 37.3,
+      "end": 41.82,
+      "text": "In response, central banks raise interest rates"
+    },
+    {
+      "start": 41.82,
+      "end": 45.4,
+      "text": "The borrowing costs for businesses and households rose"
+    },
+    {
+      "start": 45.4,
+      "end": 47.8,
+      "text": "And consumption and investment cool"
+    },
+    {
+      "start": 47.8,
+      "end": 52.26,
+      "text": "Many countries stood at the edge of recession"
+    },
+    {
+      "start": 52.26,
+      "end": 57.3,
+      "text": "The pain of rising prices is not equal"
+    },
+    {
+      "start": 57.3,
+      "end": 62.94,
+      "text": "Wealthy households hold assets and are relatively protected"
+    },
+    {
+      "start": 62.94,
+      "end": 69.56,
+      "text": "But for low-income families, food and utility costs become a burden that presses on daily life"
+    },
+    {
+      "start": 69.56,
+      "end": 73.18,
+      "text": "The national deficit has also grown"
+    },
+    {
+      "start": 75.18,
+      "end": 78.98,
+      "text": "Social security expenses swell"
+    },
+    {
+      "start": 78.98,
+      "end": 83.76,
+      "text": "And tax revenue alone cannot cover them"
+    },
+    {
+      "start": 83.76,
+      "end": 89.52,
+      "text": "Debt becomes an obligation to future generations"
+    },
+    {
+      "start": 89.52,
+      "end": 96.58,
+      "text": "The challenge of the economy cannot be solved by one country alone"
+    },
+    {
+      "start": 98.18,
+      "end": 102.14,
+      "text": "In our globalized age"
+    },
+    {
+      "start": 102.14,
+      "end": 110.72,
+      "text": "International coordination is the foundation of a sustainable economy"
+    },
+    {
+      "start": 113.76,
+      "end": 114.22,
+      "text": "you"
+    }
+  ]
+}

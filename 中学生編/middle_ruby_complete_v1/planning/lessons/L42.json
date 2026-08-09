@@ -1,0 +1,1031 @@
+{
+  "lesson": 42,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L42/planning/lesson.json",
+  "title_en": "Lesson 42  Sports Day",
+  "title_ja": "運動会の一日",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 14,
+  "lines": [
+    {
+      "line": 1,
+      "english": "On the morning of the sports day, the schoolyard was full of children's cheerful voices.",
+      "source_ja": "運動会の朝、校庭は子どもたちの元気な声でいっぱいでした。",
+      "display_ja": "運動会の朝、校庭は子どもたちの元気な声でいっぱいでした。",
+      "corrected_translation": false,
+      "mixed": "運動会の朝、校庭は子どもたちの元気な声でいっぱいでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "運動会の朝、校庭は子どもたちの元気な声でいっぱいでした。",
+          "parts": [
+            {
+              "text": "運動",
+              "ruby": "うんどう"
+            },
+            {
+              "text": "会",
+              "ruby": "かい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "朝",
+              "ruby": "あさ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "校庭",
+              "ruby": "こうてい"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "子",
+              "ruby": "こ"
+            },
+            {
+              "text": "どもたちの",
+              "ruby": ""
+            },
+            {
+              "text": "元気",
+              "ruby": "げんき"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "声",
+              "ruby": "こえ"
+            },
+            {
+              "text": "でいっぱいでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 2,
+      "english": "For each grade, there were many races and matches.",
+      "source_ja": "学年ごとに、いろんな徒競走や試合がありました。",
+      "display_ja": "学年ごとに、いろんな徒競走や試合がありました。",
+      "corrected_translation": false,
+      "mixed": "学年ごとに、いろんな races や matches がありました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "学年ごとに、いろんな ",
+          "parts": [
+            {
+              "text": "学年",
+              "ruby": "がくねん"
+            },
+            {
+              "text": "ごとに、いろんな",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "races",
+          "ruby": "徒競走"
+        },
+        {
+          "type": "ja",
+          "text": " や ",
+          "parts": [
+            {
+              "text": "や",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "matches",
+          "ruby": "試合"
+        },
+        {
+          "type": "ja",
+          "text": " がありました。",
+          "parts": [
+            {
+              "text": "がありました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "races",
+          "canonical_word": "race",
+          "meaning": "徒競走・レース"
+        },
+        {
+          "english": "matches",
+          "canonical_word": "match",
+          "meaning": "試合"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "races",
+          "reading": "徒競走",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "race",
+          "canonical_meaning": "徒競走・レース"
+        },
+        {
+          "english": "matches",
+          "reading": "試合",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "match",
+          "canonical_meaning": "試合"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "In the class race, I ran with all my energy.",
+      "source_ja": "クラス対抗の徒競走で、わたしは精いっぱい走りました。",
+      "display_ja": "クラス対抗の徒競走で、わたしは精いっぱい走りました。",
+      "corrected_translation": false,
+      "mixed": "クラス対抗の race で、わたしは精いっぱい ran しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "クラス対抗の ",
+          "parts": [
+            {
+              "text": "クラス",
+              "ruby": ""
+            },
+            {
+              "text": "対抗",
+              "ruby": "たいこう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "race",
+          "ruby": "徒競走"
+        },
+        {
+          "type": "ja",
+          "text": " で、わたしは精いっぱい ",
+          "parts": [
+            {
+              "text": "で、わたしは",
+              "ruby": ""
+            },
+            {
+              "text": "精",
+              "ruby": "せい"
+            },
+            {
+              "text": "いっぱい",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "ran",
+          "ruby": "走りました"
+        },
+        {
+          "type": "ja",
+          "text": " しました",
+          "parts": [
+            {
+              "text": "しました",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "race",
+          "canonical_word": "race",
+          "meaning": "徒競走・レース"
+        },
+        {
+          "english": "ran",
+          "canonical_word": "run",
+          "meaning": "走る"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "race",
+          "reading": "徒競走",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "race",
+          "canonical_meaning": "徒競走・レース"
+        },
+        {
+          "english": "ran",
+          "reading": "走りました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "run",
+          "canonical_meaning": "走る"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "On the last straight, I could see two runners in front of me.",
+      "source_ja": "最後の直線では、前に2人の姿が見えます。",
+      "display_ja": "最後の直線では、前に2人の姿が見えます。",
+      "corrected_translation": false,
+      "mixed": "最後の直線では、前に2人の姿が見えます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "最後の直線では、前に2人の姿が見えます。",
+          "parts": [
+            {
+              "text": "最後",
+              "ruby": "さいご"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "直線",
+              "ruby": "ちょくせん"
+            },
+            {
+              "text": "では、",
+              "ruby": ""
+            },
+            {
+              "text": "前",
+              "ruby": "まえ"
+            },
+            {
+              "text": "に2",
+              "ruby": ""
+            },
+            {
+              "text": "人",
+              "ruby": "にん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "姿",
+              "ruby": "すがた"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "えます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 5,
+      "english": "“I will not give up,” I said to myself, and ran toward the goal.",
+      "source_ja": "「まだあきらめない」と心の中でつぶやいて、ゴールテープを目指しました。",
+      "display_ja": "「まだあきらめない」と心の中でつぶやいて、ゴールテープを目指しました。",
+      "corrected_translation": false,
+      "mixed": "「まだあきらめない」と心で言い、ゴールへ ran しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「まだあきらめない」と心で言い、ゴールへ ",
+          "parts": [
+            {
+              "text": "「まだあきらめない」と",
+              "ruby": ""
+            },
+            {
+              "text": "心",
+              "ruby": "こころ"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "い、ゴールへ",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "ran",
+          "ruby": "走る"
+        },
+        {
+          "type": "ja",
+          "text": " しました。",
+          "parts": [
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "ran",
+          "canonical_word": "run",
+          "meaning": "走る"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "ran",
+          "reading": "走る",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "run",
+          "canonical_meaning": "走る"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "At the next event, my brother threw a ball high, and his friend caught it firmly.",
+      "source_ja": "兄がボールを投げ、わたしはそれをしっかり受け止めました。",
+      "display_ja": "兄がボールを投げ、わたしはそれをしっかり受け止めました。",
+      "corrected_translation": false,
+      "mixed": "次の競技では、兄がボールを高く threw して、友だちがしっかり受け止めました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "次の競技では、兄がボールを高く ",
+          "parts": [
+            {
+              "text": "次",
+              "ruby": "つぎ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "競技",
+              "ruby": "きょうぎ"
+            },
+            {
+              "text": "では、",
+              "ruby": ""
+            },
+            {
+              "text": "兄",
+              "ruby": "あに"
+            },
+            {
+              "text": "がボールを",
+              "ruby": ""
+            },
+            {
+              "text": "高",
+              "ruby": "たか"
+            },
+            {
+              "text": "く",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "threw",
+          "ruby": "投げる"
+        },
+        {
+          "type": "ja",
+          "text": " して、友だちがしっかり受け止めました。",
+          "parts": [
+            {
+              "text": "して、",
+              "ruby": ""
+            },
+            {
+              "text": "友",
+              "ruby": "とも"
+            },
+            {
+              "text": "だちがしっかり",
+              "ruby": ""
+            },
+            {
+              "text": "受",
+              "ruby": "う"
+            },
+            {
+              "text": "け",
+              "ruby": ""
+            },
+            {
+              "text": "止",
+              "ruby": "と"
+            },
+            {
+              "text": "めました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "threw",
+          "canonical_word": "throw",
+          "meaning": "投げる"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "threw",
+          "reading": "投げる",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "throw",
+          "canonical_meaning": "投げる"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "“Nice catch!”",
+      "source_ja": "「ナイスキャッチ！」と兄が叫びました。",
+      "display_ja": "「ナイスキャッチ！」と兄が叫びました。",
+      "corrected_translation": false,
+      "mixed": "「よい catch！」と兄が叫びました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「よい ",
+          "parts": [
+            {
+              "text": "「よい",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "catch",
+          "ruby": "捕る"
+        },
+        {
+          "type": "ja",
+          "text": "！」と兄が叫びました。",
+          "parts": [
+            {
+              "text": "！」と",
+              "ruby": ""
+            },
+            {
+              "text": "兄",
+              "ruby": "あに"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "叫",
+              "ruby": "さけ"
+            },
+            {
+              "text": "びました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "catch",
+          "canonical_word": "catch",
+          "meaning": "捕る"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "catch",
+          "reading": "捕る",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "catch",
+          "canonical_meaning": "捕る"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "a big cheer rose into the blue sky.",
+      "source_ja": "みんなの歓声が空に広がりました。",
+      "display_ja": "みんなの歓声が空に広がりました。",
+      "corrected_translation": false,
+      "mixed": "みんなの歓声が空に広がりました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "みんなの歓声が空に広がりました。",
+          "parts": [
+            {
+              "text": "みんなの",
+              "ruby": ""
+            },
+            {
+              "text": "歓声",
+              "ruby": "かんせい"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "空",
+              "ruby": "そら"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "広",
+              "ruby": "ひろ"
+            },
+            {
+              "text": "がりました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 9,
+      "english": "From far away, I could hear the sound of a soccer ball being hit strongly.",
+      "source_ja": "遠くからは、サッカーボールを強く蹴る音も聞こえてきました。",
+      "display_ja": "遠くからは、サッカーボールを強く蹴る音も聞こえてきました。",
+      "corrected_translation": false,
+      "mixed": "遠くからは、サッカーボールを強く hit する音も聞こえてきました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "遠くからは、サッカーボールを強く ",
+          "parts": [
+            {
+              "text": "遠",
+              "ruby": "とお"
+            },
+            {
+              "text": "くからは、サッカーボールを",
+              "ruby": ""
+            },
+            {
+              "text": "強",
+              "ruby": "つよ"
+            },
+            {
+              "text": "く",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "hit",
+          "ruby": "蹴る"
+        },
+        {
+          "type": "ja",
+          "text": " する",
+          "parts": [
+            {
+              "text": "する",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "音も聞こえてきました。",
+          "parts": [
+            {
+              "text": "音",
+              "ruby": "おと"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "聞",
+              "ruby": "き"
+            },
+            {
+              "text": "こえてきました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "hit",
+          "canonical_word": "hit",
+          "meaning": "打つ・蹴る"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "hit",
+          "reading": "蹴る",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "hit",
+          "canonical_meaning": "打つ・蹴る"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "The boys were chasing the ball happily, and even when they fell, they stood up right away.",
+      "source_ja": "男の子たちは楽しそうにボールを追いかけて、転んでもすぐに立ち上がっていました。",
+      "display_ja": "男の子たちは楽しそうにボールを追いかけて、転んでもすぐに立ち上がっていました。",
+      "corrected_translation": false,
+      "mixed": "男の子たちは楽しそうにボールを追いかけて、転んでもすぐに立ち上がっていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "男の子たちは楽しそうにボールを追いかけて、転んでもすぐに立ち上がっていました。",
+          "parts": [
+            {
+              "text": "男の子",
+              "ruby": "おとこのこ"
+            },
+            {
+              "text": "たちは",
+              "ruby": ""
+            },
+            {
+              "text": "楽",
+              "ruby": "たの"
+            },
+            {
+              "text": "しそうにボールを",
+              "ruby": ""
+            },
+            {
+              "text": "追",
+              "ruby": "お"
+            },
+            {
+              "text": "いかけて、",
+              "ruby": ""
+            },
+            {
+              "text": "転",
+              "ruby": "ころ"
+            },
+            {
+              "text": "んでもすぐに",
+              "ruby": ""
+            },
+            {
+              "text": "立ち上",
+              "ruby": "たちあ"
+            },
+            {
+              "text": "がっていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 11,
+      "english": "“It is okay to lose.",
+      "source_ja": "「負けてもいいんだよ。",
+      "display_ja": "「負けてもいいんだよ。",
+      "corrected_translation": false,
+      "mixed": "「lose してもいいんだよ。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「",
+          "parts": [
+            {
+              "text": "「",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "lose",
+          "ruby": "負ける"
+        },
+        {
+          "type": "ja",
+          "text": " してもいいんだよ。",
+          "parts": [
+            {
+              "text": "してもいいんだよ。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "lose",
+          "canonical_word": "lose",
+          "meaning": "負ける"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "lose",
+          "reading": "負ける",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "lose",
+          "canonical_meaning": "負ける"
+        }
+      ]
+    },
+    {
+      "line": 12,
+      "english": "Having fun is the most important thing,” our teacher said kindly.",
+      "source_ja": "楽しむことが一番大事だからね」と先生はやさしく言ってくれました。",
+      "display_ja": "楽しむことが一番大事だからね」と先生はやさしく言ってくれました。",
+      "corrected_translation": false,
+      "mixed": "楽しむことが一番大事だからね」と先生はやさしく言ってくれました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "楽しむことが一番大事だからね」と先生はやさしく言ってくれました。",
+          "parts": [
+            {
+              "text": "楽",
+              "ruby": "たの"
+            },
+            {
+              "text": "しむことが",
+              "ruby": ""
+            },
+            {
+              "text": "一番",
+              "ruby": "いちばん"
+            },
+            {
+              "text": "大事",
+              "ruby": "だいじ"
+            },
+            {
+              "text": "だからね」と",
+              "ruby": ""
+            },
+            {
+              "text": "先生",
+              "ruby": "せんせい"
+            },
+            {
+              "text": "はやさしく",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "ってくれました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 13,
+      "english": "My sister became the first in the race and wore a big gold medal on her chest.",
+      "source_ja": "妹は徒競走で一位になって、胸に大きな金メダルをかけてもらいました。",
+      "display_ja": "妹は徒競走で一位になって、胸に大きな金メダルをかけてもらいました。",
+      "corrected_translation": false,
+      "mixed": "妹は race で一位になって、胸に大きな金メダルをかけてもらいました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "妹は ",
+          "parts": [
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "race",
+          "ruby": "徒競走"
+        },
+        {
+          "type": "ja",
+          "text": " で一位になって、胸に大きな金メダルをかけてもらいました。",
+          "parts": [
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "いっ"
+            },
+            {
+              "text": "位",
+              "ruby": "い"
+            },
+            {
+              "text": "になって、",
+              "ruby": ""
+            },
+            {
+              "text": "胸",
+              "ruby": "むね"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "大",
+              "ruby": "おお"
+            },
+            {
+              "text": "きな",
+              "ruby": ""
+            },
+            {
+              "text": "金",
+              "ruby": "きん"
+            },
+            {
+              "text": "メダルをかけてもらいました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "race",
+          "canonical_word": "race",
+          "meaning": "徒競走・レース"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "race",
+          "reading": "徒競走",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "race",
+          "canonical_meaning": "徒競走・レース"
+        }
+      ]
+    },
+    {
+      "line": 14,
+      "english": "As a first time winner, she looked proud all day.",
+      "source_ja": "初めての一位として、一日中ほこらしそうな顔をしていました。",
+      "display_ja": "初めての一位として、一日中ほこらしそうな顔をしていました。",
+      "corrected_translation": false,
+      "mixed": "初めての winner として、一日中ほこらしそうでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "初めての ",
+          "parts": [
+            {
+              "text": "初",
+              "ruby": "はじ"
+            },
+            {
+              "text": "めての",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "winner",
+          "ruby": "勝者"
+        },
+        {
+          "type": "ja",
+          "text": " として、一日中ほこらしそうでした。",
+          "parts": [
+            {
+              "text": "として、",
+              "ruby": ""
+            },
+            {
+              "text": "一日中",
+              "ruby": "いちにちじゅう"
+            },
+            {
+              "text": "ほこらしそうでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "winner",
+          "canonical_word": "winner",
+          "meaning": "勝者"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "winner",
+          "reading": "勝者",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "winner",
+          "canonical_meaning": "勝者"
+        }
+      ]
+    }
+  ]
+}

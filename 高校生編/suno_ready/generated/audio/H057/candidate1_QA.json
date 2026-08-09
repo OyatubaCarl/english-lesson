@@ -1,0 +1,197 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H057.md",
+  "audio": "高校生編/suno_ready/generated/audio/H057/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 151.52,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9952,
+  "expected_words": 208,
+  "transcribed_words": 207,
+  "matched_words": 204,
+  "coverage": 0.9808,
+  "precision": 0.9855,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 207,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 21,
+      "length": 1,
+      "words": [
+        "nineteenth"
+      ]
+    },
+    {
+      "start": 25,
+      "length": 1,
+      "words": [
+        "twentieth"
+      ]
+    },
+    {
+      "start": 29,
+      "length": 1,
+      "words": [
+        "immigrant"
+      ]
+    },
+    {
+      "start": 148,
+      "length": 1,
+      "words": [
+        "wardenclyffe"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 21,
+      "actual_start": 21,
+      "expected": [
+        "nineteenth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.9432,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 25,
+      "actual_start": 25,
+      "expected": [
+        "twentieth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.9931,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 148,
+      "actual_start": 147,
+      "expected": [
+        "wardenclyffe"
+      ],
+      "actual": [
+        "wardenclyde"
+      ],
+      "actual_confidence": 0.582,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 29,
+      "actual_start": 29,
+      "expected": [
+        "immigrant"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "Nikola Tesla was born in 1856 in Smiljan, in what is now Croatia. He later moved to America and, from the late 19th to the early 20th century, became an inventor who transformed the world of electricity. His greatest contribution was to make alternating current electricity practical. At the time Thomas Edison was promoting direct current. Tesla argued for the advantage of alternating current for long-distance transmission and a war of currents arose between them. As a result, the alternating current system became the standard of the world's power grid. Today, almost all of the electricity that reaches our homes owes much to the vision that Tesla pursued. Tesla's imagination did not stop there. He had already envisioned the foundations of wireless communication, wireless power transmission, radio and radar in Edison's age. However, his life was never happy. His business partnership did not go well, and his Wardenclyde Tower project collapsed for lack of funding. Many of his patents did not bring him enough reward. Tesla died in 1943 In a hotel room in New York in poverty The recognition of his genius Spread widely only after his death Today we drive cars that bear his name And live within part Of the future That he had imagined",
+  "segments": [
+    {
+      "start": 10.82,
+      "end": 17.1,
+      "text": "Nikola Tesla was born in 1856 in Smiljan, in what is now Croatia."
+    },
+    {
+      "start": 19.16,
+      "end": 26.84,
+      "text": "He later moved to America and, from the late 19th to the early 20th century, became an"
+    },
+    {
+      "start": 26.99,
+      "end": 34.99,
+      "text": "inventor who transformed the world of electricity. His greatest contribution was"
+    },
+    {
+      "start": 34.99,
+      "end": 41.37,
+      "text": "to make alternating current electricity practical. At the time Thomas Edison was"
+    },
+    {
+      "start": 41.37,
+      "end": 46.21,
+      "text": "promoting direct current. Tesla argued for the advantage of alternating"
+    },
+    {
+      "start": 46.21,
+      "end": 52.25,
+      "text": "current for long-distance transmission and a war of currents arose between"
+    },
+    {
+      "start": 52.25,
+      "end": 62.13,
+      "text": "them. As a result, the alternating current system became the standard of the world's power grid."
+    },
+    {
+      "start": 62.97,
+      "end": 70.67,
+      "text": "Today, almost all of the electricity that reaches our homes owes much to the vision that Tesla"
+    },
+    {
+      "start": 70.67,
+      "end": 80.21,
+      "text": "pursued. Tesla's imagination did not stop there. He had already envisioned the foundations of"
+    },
+    {
+      "start": 80.21,
+      "end": 88.17,
+      "text": "wireless communication, wireless power transmission, radio and radar in Edison's age."
+    },
+    {
+      "start": 88.99,
+      "end": 95.71,
+      "text": "However, his life was never happy. His business partnership did not go well,"
+    },
+    {
+      "start": 96.85,
+      "end": 101.15,
+      "text": "and his Wardenclyde Tower project collapsed for lack of funding."
+    },
+    {
+      "start": 103.23,
+      "end": 107.57,
+      "text": "Many of his patents did not bring him enough reward."
+    },
+    {
+      "start": 107.57,
+      "end": 117.77,
+      "text": "Tesla died in 1943 In a hotel room in New York in poverty"
+    },
+    {
+      "start": 117.77,
+      "end": 126.39,
+      "text": "The recognition of his genius Spread widely only after his death"
+    },
+    {
+      "start": 130.05,
+      "end": 137.35,
+      "text": "Today we drive cars that bear his name And live within part"
+    },
+    {
+      "start": 137.35,
+      "end": 138.67,
+      "text": "Of the future"
+    },
+    {
+      "start": 141.35,
+      "end": 143.61,
+      "text": "That he had imagined"
+    }
+  ]
+}

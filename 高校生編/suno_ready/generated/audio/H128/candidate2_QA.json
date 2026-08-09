@@ -1,0 +1,282 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H128.md",
+  "audio": "高校生編/suno_ready/generated/audio/H128/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 159.4,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0084,
+  "expected_words": 238,
+  "transcribed_words": 240,
+  "matched_words": 233,
+  "coverage": 0.979,
+  "precision": 0.9708,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 237,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 47,
+      "length": 1,
+      "words": [
+        "judgment"
+      ]
+    },
+    {
+      "start": 58,
+      "length": 1,
+      "words": [
+        "result"
+      ]
+    },
+    {
+      "start": 62,
+      "length": 1,
+      "words": [
+        "maneuver"
+      ]
+    },
+    {
+      "start": 138,
+      "length": 1,
+      "words": [
+        "than"
+      ]
+    },
+    {
+      "start": 164,
+      "length": 1,
+      "words": [
+        "carmaker"
+      ]
+    }
+  ],
+  "replacement_count": 5,
+  "replacement_spans": [
+    {
+      "expected_start": 47,
+      "actual_start": 47,
+      "expected": [
+        "judgment"
+      ],
+      "actual": [
+        "judgement"
+      ],
+      "actual_confidence": 0.5759,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 58,
+      "actual_start": 58,
+      "expected": [
+        "result"
+      ],
+      "actual": [
+        "results"
+      ],
+      "actual_confidence": 0.9024,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 62,
+      "actual_start": 62,
+      "expected": [
+        "maneuver"
+      ],
+      "actual": [
+        "manoeuvre"
+      ],
+      "actual_confidence": 0.8957,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 138,
+      "actual_start": 139,
+      "expected": [
+        "than"
+      ],
+      "actual": [
+        "then"
+      ],
+      "actual_confidence": 0.2497,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 164,
+      "actual_start": 165,
+      "expected": [
+        "carmaker"
+      ],
+      "actual": [
+        "car",
+        "maker"
+      ],
+      "actual_confidence": 0.9159,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 108,
+      "actual_start": 108,
+      "expected": [],
+      "actual": [
+        "two"
+      ],
+      "actual_confidence": 0.4741
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 3,
+  "suspicious_substitution_words": 3,
+  "suspicious_content_substitution": true,
+  "transcript": "A driver's license is a symbol of adult status in many countries The freedom to drive one's own car and go anywhere It is an aspiration for many young people But driving comes with great responsibility A car is a convenient tool, but with a single wrong judgement It can become a weapon that takes a life The results of a wrong manoeuvre can be fatal In recent years, self-driving technology has advanced rapidly The age is coming when AI handles many driving tasks And the human operator is placed in a passive position There are five levels of autonomous driving Currently, most cars are around level two They are at the stage of assisting some functions such as lane keeping and automatic braking Fully autonomous driving level 5 is still under development Whether AI can make smarter decisions Then a human in complex traffic and traffic jams Is still open to debate In the case of an accident who is responsible The driver, the car maker or the AI developer Current law has not caught up with this new phase If autonomous driving spreads The number of traffic deaths is expected to decrease Accidents caused by human inattention Fatigue or drunk driving could be reduced Although AI introduces risks of its own But at the same time Many taxi and truck drivers may lose their jobs Technological progress is inevitable But we must keep thinking about how society adapts",
+  "segments": [
+    {
+      "start": 10.5,
+      "end": 18.1,
+      "text": "A driver's license is a symbol of adult status in many countries The freedom to drive one's"
+    },
+    {
+      "start": 18.1,
+      "end": 24.58,
+      "text": "own car and go anywhere It is an aspiration for many young people"
+    },
+    {
+      "start": 24.58,
+      "end": 29.0,
+      "text": "But driving comes with great responsibility"
+    },
+    {
+      "start": 30.54,
+      "end": 34.74,
+      "text": "A car is a convenient tool, but with a single wrong judgement"
+    },
+    {
+      "start": 34.74,
+      "end": 38.68,
+      "text": "It can become a weapon that takes a life"
+    },
+    {
+      "start": 39.88,
+      "end": 43.8,
+      "text": "The results of a wrong manoeuvre can be fatal"
+    },
+    {
+      "start": 43.8,
+      "end": 48.6,
+      "text": "In recent years, self-driving technology has advanced rapidly"
+    },
+    {
+      "start": 49.74,
+      "end": 54.0,
+      "text": "The age is coming when AI handles many driving tasks"
+    },
+    {
+      "start": 54.0,
+      "end": 58.18,
+      "text": "And the human operator is placed in a passive position"
+    },
+    {
+      "start": 59.0,
+      "end": 62.36,
+      "text": "There are five levels of autonomous driving"
+    },
+    {
+      "start": 63.0,
+      "end": 67.56,
+      "text": "Currently, most cars are around level two"
+    },
+    {
+      "start": 72.0,
+      "end": 77.82,
+      "text": "They are at the stage of assisting some functions such as lane keeping and automatic braking"
+    },
+    {
+      "start": 77.82,
+      "end": 83.98,
+      "text": "Fully autonomous driving level 5 is still under development"
+    },
+    {
+      "start": 83.98,
+      "end": 87.04,
+      "text": "Whether AI can make smarter decisions"
+    },
+    {
+      "start": 87.04,
+      "end": 91.28,
+      "text": "Then a human in complex traffic and traffic jams"
+    },
+    {
+      "start": 91.28,
+      "end": 93.84,
+      "text": "Is still open to debate"
+    },
+    {
+      "start": 97.46,
+      "end": 100.7,
+      "text": "In the case of an accident who is responsible"
+    },
+    {
+      "start": 100.7,
+      "end": 104.96,
+      "text": "The driver, the car maker or the AI developer"
+    },
+    {
+      "start": 104.96,
+      "end": 108.6,
+      "text": "Current law has not caught up with this new phase"
+    },
+    {
+      "start": 108.6,
+      "end": 111.52,
+      "text": "If autonomous driving spreads"
+    },
+    {
+      "start": 111.52,
+      "end": 117.82,
+      "text": "The number of traffic deaths is expected to decrease"
+    },
+    {
+      "start": 119.84,
+      "end": 122.94,
+      "text": "Accidents caused by human inattention"
+    },
+    {
+      "start": 122.94,
+      "end": 126.46,
+      "text": "Fatigue or drunk driving could be reduced"
+    },
+    {
+      "start": 126.96,
+      "end": 130.14,
+      "text": "Although AI introduces risks of its own"
+    },
+    {
+      "start": 130.96,
+      "end": 132.8,
+      "text": "But at the same time"
+    },
+    {
+      "start": 132.8,
+      "end": 136.82,
+      "text": "Many taxi and truck drivers may lose their jobs"
+    },
+    {
+      "start": 136.82,
+      "end": 140.36,
+      "text": "Technological progress is inevitable"
+    },
+    {
+      "start": 140.36,
+      "end": 145.9,
+      "text": "But we must keep thinking about how society adapts"
+    }
+  ]
+}

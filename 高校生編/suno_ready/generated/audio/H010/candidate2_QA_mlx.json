@@ -1,0 +1,141 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H010.md",
+  "audio": "高校生編/suno_ready/generated/audio/H010/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 78.1,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 143,
+  "transcribed_words": 143,
+  "matched_words": 142,
+  "coverage": 0.993,
+  "precision": 0.993,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 142,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 67,
+      "length": 1,
+      "words": [
+        "will"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 67,
+      "actual_start": 67,
+      "expected": [
+        "will"
+      ],
+      "actual": [
+        "would"
+      ],
+      "actual_confidence": 0.9678,
+      "substitution_words": 1,
+      "has_content_word": false
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": false,
+  "transcript": "This time tomorrow I will be sitting in a meeting room At ten I will be attending a lecture And in the afternoon I will be finishing the new project file I have waited a long time for this appointment For more than a month I have been making steady progress On the same day my colleague will also be engaged in another task After lunch, I would probably move on to the afternoon meeting By evening, I will nearly complete the report Sometimes I wonder where I will be a year from now Three years, life will continue And I too will be living through many more days Placing myself within a schedule gives the day A gentle momentum This time, tomorrow I will most likely be sitting at my desk But beyond that single moment Another tomorrow Is already waiting quietly",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.88,
+      "text": "This time tomorrow I will be sitting in a meeting room"
+    },
+    {
+      "start": 4.88,
+      "end": 7.86,
+      "text": "At ten I will be attending a lecture"
+    },
+    {
+      "start": 9.08,
+      "end": 13.94,
+      "text": "And in the afternoon I will be finishing the new project file"
+    },
+    {
+      "start": 13.94,
+      "end": 17.64,
+      "text": "I have waited a long time for this appointment"
+    },
+    {
+      "start": 18.82,
+      "end": 23.62,
+      "text": "For more than a month I have been making steady progress"
+    },
+    {
+      "start": 23.62,
+      "end": 28.38,
+      "text": "On the same day my colleague will also be engaged in another task"
+    },
+    {
+      "start": 28.38,
+      "end": 33.3,
+      "text": "After lunch, I would probably move on to the afternoon meeting"
+    },
+    {
+      "start": 33.3,
+      "end": 36.82,
+      "text": "By evening, I will nearly complete the report"
+    },
+    {
+      "start": 36.82,
+      "end": 42.6,
+      "text": "Sometimes I wonder where I will be a year from now"
+    },
+    {
+      "start": 42.6,
+      "end": 47.96,
+      "text": "Three years, life will continue"
+    },
+    {
+      "start": 47.96,
+      "end": 52.42,
+      "text": "And I too will be living through many more days"
+    },
+    {
+      "start": 52.42,
+      "end": 56.62,
+      "text": "Placing myself within a schedule gives the day"
+    },
+    {
+      "start": 56.62,
+      "end": 58.4,
+      "text": "A gentle momentum"
+    },
+    {
+      "start": 62.24,
+      "end": 64.24,
+      "text": "This time, tomorrow"
+    },
+    {
+      "start": 64.24,
+      "end": 68.08,
+      "text": "I will most likely be sitting at my desk"
+    },
+    {
+      "start": 68.08,
+      "end": 72.16,
+      "text": "But beyond that single moment"
+    },
+    {
+      "start": 72.16,
+      "end": 74.84,
+      "text": "Another tomorrow"
+    },
+    {
+      "start": 74.84,
+      "end": 78.1,
+      "text": "Is already waiting quietly"
+    }
+  ]
+}

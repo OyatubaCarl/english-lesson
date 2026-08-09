@@ -1,0 +1,766 @@
+{
+  "lesson": 11,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L11/planning/lesson.json",
+  "title_en": "Lesson 11  At the Library",
+  "title_ja": "図書館で",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 9,
+  "lines": [
+    {
+      "line": 1,
+      "english": "The day after our trip, I went to the town library to borrow a book about mountains.",
+      "source_ja": "遠足の次の日、山についての本を借りるために町の図書館へ行きました。",
+      "display_ja": "遠足の次の日、山についての本を借りるために町の図書館へ行きました。",
+      "corrected_translation": false,
+      "mixed": "遠足の次の日、山についての本を borrow するために町の library へ went しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "遠足の次の日、山についての本を ",
+          "parts": [
+            {
+              "text": "遠足",
+              "ruby": "えんそく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "次",
+              "ruby": "つぎ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "山",
+              "ruby": "やま"
+            },
+            {
+              "text": "についての",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "borrow",
+          "ruby": "借りる"
+        },
+        {
+          "type": "ja",
+          "text": " する",
+          "parts": [
+            {
+              "text": "する",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "ために町の ",
+          "parts": [
+            {
+              "text": "ために",
+              "ruby": ""
+            },
+            {
+              "text": "町",
+              "ruby": "まち"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "library",
+          "ruby": "図書館"
+        },
+        {
+          "type": "ja",
+          "text": " へ ",
+          "parts": [
+            {
+              "text": "へ",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "went",
+          "ruby": "行きました"
+        },
+        {
+          "type": "ja",
+          "text": " しました",
+          "parts": [
+            {
+              "text": "しました",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "went",
+          "canonical_word": "went",
+          "meaning": "行った"
+        },
+        {
+          "english": "library",
+          "canonical_word": "library",
+          "meaning": "図書館"
+        },
+        {
+          "english": "borrow",
+          "canonical_word": "borrow",
+          "meaning": "借りる"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "borrow",
+          "reading": "借りる",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "borrow",
+          "canonical_meaning": "借りる"
+        },
+        {
+          "english": "library",
+          "reading": "図書館",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "library",
+          "canonical_meaning": "図書館"
+        },
+        {
+          "english": "went",
+          "reading": "行きました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "went",
+          "canonical_meaning": "行った"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "english": "It was a very quiet place.",
+      "source_ja": "とても静かな場所でした。",
+      "display_ja": "とても静かな場所でした。",
+      "corrected_translation": false,
+      "mixed": "とても静かな場所でした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "とても静かな場所でした。",
+          "parts": [
+            {
+              "text": "とても",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かな",
+              "ruby": ""
+            },
+            {
+              "text": "場所",
+              "ruby": "ばしょ"
+            },
+            {
+              "text": "でした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 3,
+      "english": "At the desk, there was a kind man.",
+      "source_ja": "カウンターにはやさしそうな男の人がいました。",
+      "display_ja": "カウンターにはやさしそうな男の人がいました。",
+      "corrected_translation": false,
+      "mixed": "カウンターにはやさしそうな man がいました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "カウンターにはやさしそうな ",
+          "parts": [
+            {
+              "text": "カウンターにはやさしそうな",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "man",
+          "ruby": "男の人"
+        },
+        {
+          "type": "ja",
+          "text": " がいました。",
+          "parts": [
+            {
+              "text": "がいました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "man",
+          "canonical_word": "man",
+          "meaning": "男の人"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "man",
+          "reading": "男の人",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "man",
+          "canonical_meaning": "男の人"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "“May I borrow this book?” I asked in a small voice.",
+      "source_ja": "「この本、借りてもいいですか？」と小さな声で聞きました。",
+      "display_ja": "「この本、借りてもいいですか？」と小さな声で聞きました。",
+      "corrected_translation": false,
+      "mixed": "「この本を borrow してもいいですか？」と小さな声で聞きました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「この本を ",
+          "parts": [
+            {
+              "text": "「この",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "borrow",
+          "ruby": "借りる"
+        },
+        {
+          "type": "ja",
+          "text": " してもいいですか？」と小さな声で聞きました。",
+          "parts": [
+            {
+              "text": "してもいいですか？」と",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            },
+            {
+              "text": "声",
+              "ruby": "こえ"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "聞",
+              "ruby": "き"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "borrow",
+          "canonical_word": "borrow",
+          "meaning": "借りる"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "borrow",
+          "reading": "借りる",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "borrow",
+          "canonical_meaning": "借りる"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "“Yes, you may,” he said with a smile.",
+      "source_ja": "「いいですよ」とにっこり笑ってくれました。",
+      "display_ja": "「いいですよ」とにっこり笑ってくれました。",
+      "corrected_translation": false,
+      "mixed": "「いいですよ」とにっこり笑ってくれました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「いいですよ」とにっこり笑ってくれました。",
+          "parts": [
+            {
+              "text": "「いいですよ」とにっこり",
+              "ruby": ""
+            },
+            {
+              "text": "笑",
+              "ruby": "わら"
+            },
+            {
+              "text": "ってくれました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 6,
+      "english": "In the library, you may not speak loud, because everyone is reading quietly.",
+      "source_ja": "図書館では大きな声を出してはいけません。みんな静かに本を読んでいるからです。",
+      "display_ja": "図書館では大きな声を出してはいけません。みんな静かに本を読んでいるからです。",
+      "corrected_translation": false,
+      "mixed": "library では loud に話してはいけません。みんな静かに本を読んでいるからです。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "library",
+          "ruby": "図書館"
+        },
+        {
+          "type": "ja",
+          "text": " では ",
+          "parts": [
+            {
+              "text": "では",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "loud",
+          "ruby": "大きな声で"
+        },
+        {
+          "type": "ja",
+          "text": " に話してはいけません。みんな静かに本を読んでいるからです。",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "話",
+              "ruby": "はな"
+            },
+            {
+              "text": "してはいけません。みんな",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "読",
+              "ruby": "よ"
+            },
+            {
+              "text": "んでいるからです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "library",
+          "canonical_word": "library",
+          "meaning": "図書館"
+        },
+        {
+          "english": "loud",
+          "canonical_word": "loud",
+          "meaning": "大きな声で"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "library",
+          "reading": "図書館",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "library",
+          "canonical_meaning": "図書館"
+        },
+        {
+          "english": "loud",
+          "reading": "大きな声で",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "loud",
+          "canonical_meaning": "大きな声で"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "When I went outside, the sky was a little cloudy.",
+      "source_ja": "外に出ると、空がちょっと曇っていました。",
+      "display_ja": "外に出ると、空がちょっと曇っていました。",
+      "corrected_translation": false,
+      "mixed": "外へ went すると、空は少し cloudy でした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "外へ ",
+          "parts": [
+            {
+              "text": "外",
+              "ruby": "そと"
+            },
+            {
+              "text": "へ",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "went",
+          "ruby": "行った"
+        },
+        {
+          "type": "ja",
+          "text": " すると、空は少し ",
+          "parts": [
+            {
+              "text": "すると、",
+              "ruby": ""
+            },
+            {
+              "text": "空",
+              "ruby": "そら"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "少",
+              "ruby": "すこ"
+            },
+            {
+              "text": "し",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "cloudy",
+          "ruby": "くもった"
+        },
+        {
+          "type": "ja",
+          "text": " でした。",
+          "parts": [
+            {
+              "text": "でした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "went",
+          "canonical_word": "went",
+          "meaning": "行った"
+        },
+        {
+          "english": "cloudy",
+          "canonical_word": "cloudy",
+          "meaning": "くもった"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "went",
+          "reading": "行った",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "went",
+          "canonical_meaning": "行った"
+        },
+        {
+          "english": "cloudy",
+          "reading": "くもった",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "cloudy",
+          "canonical_meaning": "くもった"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "“It may rain this evening,” I thought.",
+      "source_ja": "「夕方には雨が降るかもしれないな」と思いました。",
+      "display_ja": "「夕方には雨が降るかもしれないな」と思いました。",
+      "corrected_translation": false,
+      "mixed": "「夕方には雨が降るかもしれないな」と thought しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「夕方には雨が降るかもしれないな」と ",
+          "parts": [
+            {
+              "text": "「",
+              "ruby": ""
+            },
+            {
+              "text": "夕方",
+              "ruby": "ゆうがた"
+            },
+            {
+              "text": "には",
+              "ruby": ""
+            },
+            {
+              "text": "雨",
+              "ruby": "あめ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "降",
+              "ruby": "ふ"
+            },
+            {
+              "text": "るかもしれないな」と",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "thought",
+          "ruby": "思いました"
+        },
+        {
+          "type": "ja",
+          "text": " しました",
+          "parts": [
+            {
+              "text": "しました",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "thought",
+          "canonical_word": "thought",
+          "meaning": "思った"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "thought",
+          "reading": "思いました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "thought",
+          "canonical_meaning": "思った"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "I will read this book at home, and I will return it soon.",
+      "source_ja": "この本は家で読んで、近いうちに返すつもりです。",
+      "display_ja": "この本は家で読んで、近いうちに返すつもりです。",
+      "corrected_translation": false,
+      "mixed": "この本は家で読んで、近いうちに return するつもりです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "この本は家で読んで、近いうちに ",
+          "parts": [
+            {
+              "text": "この",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "読",
+              "ruby": "よ"
+            },
+            {
+              "text": "んで、",
+              "ruby": ""
+            },
+            {
+              "text": "近",
+              "ruby": "ちか"
+            },
+            {
+              "text": "いうちに",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "return",
+          "ruby": "返す"
+        },
+        {
+          "type": "ja",
+          "text": " する",
+          "parts": [
+            {
+              "text": "する",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "つもりです。",
+          "parts": [
+            {
+              "text": "つもりです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "return",
+          "canonical_word": "return",
+          "meaning": "返す"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "return",
+          "reading": "返す",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "return",
+          "canonical_meaning": "返す"
+        }
+      ]
+    }
+  ]
+}

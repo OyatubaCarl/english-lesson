@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>タコスパーティー 中学生編（モックアップ）</title>
+<style>
+:root{
+  --bg:#fbf6ee;--card:#fff;--fg:#2a2018;--muted:#7c6a56;--faint:#a89b88;--border:#ece0cf;
+  --accent:#e8642a;--accent-soft:#fdeee6;--marigold:#f5a623;--teal:#2a9d8f;--pink:#d94f7e;
+  --green:#5aa011;--green-ink:#3f6f0d;--green-soft:#eaf6d8;
+  --shadow-sm:0 2px 6px rgba(90,60,30,.08);--shadow:0 6px 18px rgba(90,60,30,.14);--radius:16px;
+  --ui:"Hiragino Sans","Yu Gothic",Meiryo,system-ui,sans-serif;--serif:"Hiragino Mincho ProN",serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:var(--ui);line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:460px;margin:0 auto;padding:18px 16px 60px}
+.badge{display:inline-block;background:var(--accent);color:#fff;font-weight:900;font-size:.68rem;letter-spacing:.08em;padding:5px 14px;border-radius:999px}
+.hd{text-align:center;margin:8px 0 4px}
+.hd h1{font-size:1.5rem;font-weight:900;letter-spacing:-.01em}
+.hd h1 em{color:var(--accent);font-style:normal}
+.hd .sub{font-size:.8rem;color:var(--muted);margin-top:4px}
+.note-box{background:var(--accent-soft);border:1px solid #f6d3c3;border-radius:14px;padding:12px 14px;font-size:.82rem;color:#7a4a30;margin:14px 0}
+.note-box b{color:var(--accent)}
+.sec-t{font-weight:900;font-size:1.02rem;margin:26px 0 10px;display:flex;align-items:center;gap:8px}
+.sec-t::before{content:"";width:6px;height:20px;border-radius:3px;background:var(--accent)}
+.chars{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:12px;overflow:hidden}
+.chars img{width:100%;display:block;border-radius:10px}
+.chars .cap{font-size:.72rem;color:var(--muted);text-align:center;margin-top:6px}
+.roster{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.rc{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:9px 11px;font-size:.78rem}
+.rc b{color:var(--accent-)}
+.rc .r{font-size:.66rem;color:var(--faint);font-weight:800}
+/* レッスンカード */
+.lesson{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-top:6px}
+.lesson .top{background:linear-gradient(135deg,var(--marigold),var(--accent) 60%,var(--pink));color:#fff;padding:16px 16px 14px}
+.lesson .top .k{font-size:.7rem;font-weight:800;letter-spacing:.08em;opacity:.92}
+.lesson .top h2{font-size:1.16rem;font-weight:900;margin-top:2px}
+.lesson .top .g{display:inline-block;margin-top:8px;background:rgba(255,255,255,.22);border-radius:999px;padding:3px 12px;font-size:.72rem;font-weight:800}
+.lesson .body{padding:15px 16px}
+.story{font-size:1.0rem;line-height:2.5;font-weight:600}
+.story .dw{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;margin:0 2px}
+.story .dw b{background:var(--accent);color:#fff;font-weight:800;padding:1px 9px;border-radius:8px;font-family:-apple-system,sans-serif;font-size:.9em;line-height:1.5}
+.story .dw small{font-size:.6rem;color:var(--muted);font-weight:700;margin-top:1px}
+.recipe{background:var(--green-soft);border:1px solid #cfe6a8;border-radius:14px;padding:13px 15px;margin-top:16px}
+.recipe .rt{font-weight:900;color:var(--green-ink);font-size:.96rem;margin-bottom:6px}
+.recipe .ex{font-size:.9rem;line-height:1.9}
+.recipe .ex b{color:var(--accent)}
+.recipe .ex .ja{color:var(--muted);font-size:.82rem}
+.ings{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:8px}
+.ing{background:var(--card);border:1px solid var(--border);border-radius:13px;box-shadow:var(--shadow-sm);padding:11px 12px;display:flex;gap:10px;align-items:flex-start}
+.ing .ic{font-size:26px;line-height:1;flex:none}
+.ing .nm{font-weight:900;font-size:.86rem}
+.ing .ds{font-size:.72rem;color:var(--muted);margin-top:1px}
+.ing.wide{grid-column:1/3}
+.callout{background:#fff;border-left:4px solid var(--teal);border-radius:0 12px 12px 0;padding:11px 14px;font-size:.82rem;color:#2a2018;margin-top:16px;box-shadow:var(--shadow-sm)}
+.callout b{color:var(--teal)}
+.foot{text-align:center;font-size:.72rem;color:var(--faint);margin-top:30px;line-height:1.8}
+.pill{display:inline-block;font-size:.7rem;font-weight:800;color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:3px 10px;margin:0 2px}
+</style></head>
+<body>
+<div class="wrap">
+  <div class="hd">
+    <span class="badge">MOCK-UP・たたき台</span>
+    <h1>タコスパーティー <em>中学生編</em></h1>
+    <div class="sub">私（ミオ）の家族と、英語を学ぶ物語</div>
+  </div>
+
+  <div class="note-box">
+    朗報：中学生編の本文は既にサイトに <b>L1〜L45</b> として存在し、しかも <b>日本語混じり（Diglot）形式</b>で
+    各英単語に意味（<code>data-ja</code>）が付いています。→ <b>タコスの5具材にそのまま流用可能</b>（トマトの文脈文も生成不要）。
+    L1 はちょうど「<b>わたしの家族と Pochi</b>」で、上のキャラ（父・母・兄・妹）と一致します。以下は <b>実データ</b>から作った試作です。
+  </div>
+
+  <div class="sec-t">登場人物（Funnics Island の絵柄で）</div>
+  <div class="chars">
+    <img src="app_assets/jhs/family_sheet.png" alt="家族のキャラクターシート" onerror="this.style.display='none';this.nextElementSibling.textContent='（家族キャラ画像は生成中）'">
+    <div class="cap">家族：ミオ（私）・ケンタ（兄）・サキ（妹）・お父さん・お母さん・おばあちゃん</div>
+    <img src="app_assets/jhs/friends_sheet.png" alt="友人のキャラクターシート" style="margin-top:10px" onerror="this.style.display='none';this.nextElementSibling.textContent='（友人キャラ画像は生成中）'">
+    <div class="cap">友人：トム（Funnicsのトム・同一人物）・ユウカ（親友）・ダイキ</div>
+  </div>
+  <div class="roster">
+    <div class="rc"><span class="r">私・主人公</span><br><b>ミオ</b> 中1・語り手</div>
+    <div class="rc"><span class="r">兄</span><br><b>ケンタ</b> 高1・サッカー部</div>
+    <div class="rc"><span class="r">妹</span><br><b>サキ</b> 小2・おてんば</div>
+    <div class="rc"><span class="r">父 / 母</span><br><b>ヒロシ / ユカ</b></div>
+    <div class="rc"><span class="r">祖母</span><br><b>フミ</b> 物知り</div>
+    <div class="rc"><span class="r">友人</span><br><b>トム・ユウカ・ダイキ</b></div>
+  </div>
+
+  <div class="sec-t">サンプル・レッスン</div>
+  <div class="lesson">
+    <div class="top">
+      <div class="k">中1 · LESSON 1 （サイトの実データ）</div>
+      <h2>わたしの家族と Pochi</h2>
+      <div class="g">文法ターゲット：中1文法すべて</div>
+    </div>
+    <div class="body">
+      <div class="story">
+        こんにちは。わたしの <span class="dw"><b>name</b><small>名前</small></span> は <span class="dw"><b>Ken</b><small>ケン</small></span>、<span class="dw"><b>ten</b><small>10</small></span> <span class="dw"><b>years</b><small>歳</small></span> <span class="dw"><b>old</b><small>年の</small></span> の <span class="dw"><b>student</b><small>学生</small></span> です。
+        <span class="dw"><b>family</b><small>家族</small></span> は <span class="dw"><b>father</b><small>父</small></span>・<span class="dw"><b>mother</b><small>母</small></span>・<span class="dw"><b>brother</b><small>兄</small></span>・<span class="dw"><b>sister</b><small>妹</small></span>、そしてわたしの五人。
+        我が家には <span class="dw"><b>dog</b><small>犬</small></span> が一匹、<span class="dw"><b>name</b><small>名前</small></span> は <span class="dw"><b>Pochi</b><small>ポチ</small></span>。本当に <span class="dw"><b>cute</b><small>かわいい</small></span> です。
+      </div>
+      <div style="font-size:.72rem;color:var(--faint);margin-top:8px">↑ サイトの本文（jp-body）を、各英単語＝日本語の意味付きでそのまま利用。5モード（埋め込み／ルビ／発音記号／英文／訳）もサイトに既存。</div>
+
+      <div class="recipe">
+        <div class="rt">🥫 文法ターゲット：中1文法すべて</div>
+        <div class="ex">
+          be動詞・一般動詞の現在/過去、疑問詞、現在進行形、can、命令文、複数形、代名詞…を家族の話で総まとめ。<br>
+          ・I <b>am</b> a student. <span class="ja">私は学生です</span><br>
+          ・She <b>has</b> a dog. <span class="ja">彼女は犬を飼っている</span><br>
+          ・I <b>played</b> in the park yesterday. <span class="ja">昨日公園で遊んだ</span>
+        </div>
+      </div>
+
+      <div class="sec-t" style="font-size:.92rem;margin:18px 0 8px">実データがそのまま5具材に</div>
+      <div class="ings">
+        <div class="ing"><span class="ic">🥩</span><div><div class="nm">タコビート</div><div class="ds">本文の歌でリズム定着</div></div></div>
+        <div class="ing"><span class="ic">🍅</span><div><div class="nm">トマトマト</div><div class="ds">name/family/dog… を文脈付きで（data-ja流用）</div></div></div>
+        <div class="ing"><span class="ic">🧀</span><div><div class="nm">チーズ</div><div class="ds">en-body を音読シャドウイング</div></div></div>
+        <div class="ing"><span class="ic">🥫</span><div><div class="nm">サルサ</div><div class="ds">文法ターゲットで穴埋め＋フリップ</div></div></div>
+        <div class="ing wide"><span class="ic">🥬</span><div><div class="nm">レタス</div><div class="ds">並べ替え：My / name / is / Ken . （本文の英文から）</div></div></div>
+      </div>
+
+      <div class="callout">
+        <b>ポイント：</b> 中学の本文は「日本語混じり＋各語に意味」という、タコスと同じ Diglot 構造でした。
+        だから小学生編の <b>「物語で覚える」体験をそのまま</b>、家族の実話（L1〜L45）で再現できます。
+      </div>
+    </div>
+  </div>
+
+  <div class="callout" style="margin-top:20px;border-left-color:var(--pink)">
+    <b>次の一歩（提案）：</b> サイトの <code>book-middle</code>（L1〜L45）を抽出スクリプトで <code>middle_lessons.json</code> 化 →
+    タコスパーティーに <b>コース切替（📒小学生編／📘中学生編）</b>を追加して読み込む。本文が既に Diglot なので、トマトの文脈文生成は不要でそのまま動きます。<br>
+    revid 動画は後段で差し替え可能。まずこの方針でOKか教えてください。
+  </div>
+
+  <div class="foot">
+    タコスパーティー 中学生編 モックアップ ・ <span class="pill">たたき台</span><br>
+    キャラクター画像は Funnics Island の絵柄で Codex 生成中
+  </div>
+</div>
+</body></html>

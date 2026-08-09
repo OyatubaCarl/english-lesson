@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>WordTacos Brand Flash</title>
+<style>
+:root{--accent:#d6431b;--ink:#20140b}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;font-family:"Hiragino Sans","Hiragino Maru Gothic ProN",sans-serif}
+/* 2.6秒で一瞬に読める最小ブランドカード: ロゴ・タコ・一言・URL のみ。
+   末尾ナレ広告(旧・約10秒)を廃止し、正解の直後で終わってループしやすくするための差し替え。 */
+.flash{width:1080px;height:1920px;
+  background:radial-gradient(circle at 50% 38%,#fff6ee 0%,#ffe7d8 62%,#f7d3bf 100%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 90px}
+.logo{font-size:136px;font-weight:900;color:var(--ink);letter-spacing:-.01em;line-height:1}
+.logo .t{color:var(--accent)}
+.taco{font-size:120px;margin-top:18px}
+.tagline{font-size:60px;font-weight:800;color:var(--ink);margin-top:46px}
+.tagline .hl{color:var(--accent)}
+.url{margin-top:64px;background:var(--accent);color:#fff;font-weight:900;font-size:52px;
+  padding:28px 54px;border-radius:999px;font-family:-apple-system,sans-serif;letter-spacing:.01em}
+.free{margin-top:28px;font-size:40px;font-weight:800;color:#7a4a30}
+</style>
+</head>
+<body>
+  <div class="flash">
+    <div class="logo">Word<span class="t">Tacos</span></div>
+    <div class="taco">🌮</div>
+    <div class="tagline">日本語で、<span class="hl">やさしく英単語</span>。</div>
+    <div class="url">words.teachertacos.com</div>
+    <div class="free">ブラウザだけ・完全無料</div>
+  </div>
+</body>
+</html>

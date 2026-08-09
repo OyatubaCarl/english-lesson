@@ -1,0 +1,198 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H118.md",
+  "audio": "高校生編/suno_ready/generated/audio/H118/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 142.84,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9947,
+  "expected_words": 190,
+  "transcribed_words": 189,
+  "matched_words": 187,
+  "coverage": 0.9842,
+  "precision": 0.9894,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 189,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 187,
+      "length": 2,
+      "words": [
+        "twenty",
+        "first"
+      ]
+    },
+    {
+      "start": 146,
+      "length": 1,
+      "words": [
+        "a"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 146,
+      "actual_start": 146,
+      "expected": [
+        "a"
+      ],
+      "actual": [
+        "the"
+      ],
+      "actual_confidence": 0.7636,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 187,
+      "actual_start": 187,
+      "expected": [
+        "twenty",
+        "first"
+      ],
+      "actual": [
+        "st"
+      ],
+      "actual_confidence": 0.9089,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "In modern society, immigration is a topic that cannot be avoided. The number of people moving across borders has continued to rise significantly. Receiving countries show various reactions. Some welcome immigrants, others reject them. Politicians often turn this issue into a political point of dispute The challenges that immigrants pose are multiple Language, culture, religion and economy Friction between the receiving society and new immigrants may occur But looking back at the history of immigration We see that they have made many contributions To their receiving countries The prosperity of America Was built by immigrants from around the world There is also wide variation among immigrants Some move voluntarily for economic reasons Some flee war or persecution as refugees Some come to reunite with family They cannot be grouped together The welcoming attitude of a society Has a great effect on the integration of immigrants In the society that coldly rejects newcomers Immigrants become isolated and sometimes turn to extremism What solves this most effectively is education and dialogue A society that does not fear difference but learns from it That is the key that opens the 21st century",
+  "segments": [
+    {
+      "start": 4.86,
+      "end": 10.94,
+      "text": "In modern society, immigration is a topic that cannot be avoided."
+    },
+    {
+      "start": 11.2,
+      "end": 16.66,
+      "text": "The number of people moving across borders has continued to rise significantly."
+    },
+    {
+      "start": 17.22,
+      "end": 20.94,
+      "text": "Receiving countries show various reactions."
+    },
+    {
+      "start": 21.66,
+      "end": 24.98,
+      "text": "Some welcome immigrants, others reject them."
+    },
+    {
+      "start": 27.06,
+      "end": 33.52,
+      "text": "Politicians often turn this issue into a political point of dispute"
+    },
+    {
+      "start": 34.82,
+      "end": 39.3,
+      "text": "The challenges that immigrants pose are multiple"
+    },
+    {
+      "start": 39.98,
+      "end": 44.7,
+      "text": "Language, culture, religion and economy"
+    },
+    {
+      "start": 44.7,
+      "end": 51.3,
+      "text": "Friction between the receiving society and new immigrants may occur"
+    },
+    {
+      "start": 51.3,
+      "end": 55.12,
+      "text": "But looking back at the history of immigration"
+    },
+    {
+      "start": 56.3,
+      "end": 59.68,
+      "text": "We see that they have made many contributions"
+    },
+    {
+      "start": 60.3,
+      "end": 63.92,
+      "text": "To their receiving countries"
+    },
+    {
+      "start": 65.3,
+      "end": 67.98,
+      "text": "The prosperity of America"
+    },
+    {
+      "start": 67.98,
+      "end": 71.4,
+      "text": "Was built by immigrants from around the world"
+    },
+    {
+      "start": 71.4,
+      "end": 75.96,
+      "text": "There is also wide variation among immigrants"
+    },
+    {
+      "start": 75.96,
+      "end": 79.96,
+      "text": "Some move voluntarily for economic reasons"
+    },
+    {
+      "start": 79.96,
+      "end": 83.34,
+      "text": "Some flee war or persecution as refugees"
+    },
+    {
+      "start": 83.34,
+      "end": 86.92,
+      "text": "Some come to reunite with family"
+    },
+    {
+      "start": 87.76,
+      "end": 90.88,
+      "text": "They cannot be grouped together"
+    },
+    {
+      "start": 92.44,
+      "end": 96.4,
+      "text": "The welcoming attitude of a society"
+    },
+    {
+      "start": 96.4,
+      "end": 102.02,
+      "text": "Has a great effect on the integration of immigrants"
+    },
+    {
+      "start": 103.76,
+      "end": 107.0,
+      "text": "In the society that coldly rejects newcomers"
+    },
+    {
+      "start": 107.0,
+      "end": 113.9,
+      "text": "Immigrants become isolated and sometimes turn to extremism"
+    },
+    {
+      "start": 113.9,
+      "end": 121.98,
+      "text": "What solves this most effectively is education and dialogue"
+    },
+    {
+      "start": 125.24,
+      "end": 133.96,
+      "text": "A society that does not fear difference but learns from it"
+    },
+    {
+      "start": 133.96,
+      "end": 140.68,
+      "text": "That is the key that opens the 21st century"
+    }
+  ]
+}

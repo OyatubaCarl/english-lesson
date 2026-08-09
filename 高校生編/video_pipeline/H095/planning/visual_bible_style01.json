@@ -1,0 +1,63 @@
+{
+  "lesson": "H095",
+  "title_ja": "仕事とキャリア",
+  "title_en": "Work and Career",
+  "style": "画風01『光彩・劇場アニメ背景』。成人の自然な人体比率、手描き2.5Dの質感、セージ・青緑・コバルト・煉瓦色・金色を基調とする架空都市の仕事と地域生活。",
+  "story_scope": "24歳のMikaが卒業、応募、採用、職場での学習、失敗、雇用終了、再就職支援を経験する。Leilaの協同型事業とTomasの中途学び直しを並行して描き、仕事を生活・報酬・関係・成長・社会への貢献を含む複数の価値として扱う。",
+  "continuity": {
+    "mika": "24歳の成人日本人女性。肩より少し長い黒髪のサイドパート、セージ色のジャケット、クリーム色のトップス、炭色のアンクルパンツ、赤茶色のローファー、タン色のメッセンジャーバッグ、焦げ橙色のノート。",
+    "ravi": "30歳の成人南アジア系男性。短く波打つ黒髪、紺のオーバーシャツ、白いTシャツ、ベージュのチノパン、濃色のスニーカー。",
+    "emi": "43歳の成人日本人女性管理職。短く柔らかく波打つ黒髪、赤紫のブラウス、炭色のジャケット。採用・指導・雇用終了を私的かつ尊重ある手順で行う。",
+    "leila": "35歳の成人黒人女性。銅茶色の編み上げたお団子髪、コバルト色の作業ジャケット、マスタード色のシャツ、濃色のパンツ、安全靴。アクセシブル家具修理の協同事業を仲間と運営する。",
+    "tomas": "45歳の成人ラテン系男性。短いソルトアンドペッパー髪と薄いひげ、煉瓦色のオーバーシャツ、青灰色のTシャツ、紺のパンツ、車椅子。物流の経験を尊重しながら園芸療法・都市緑化へ学び直す。",
+    "interfaces": "応募書類、契約、給与、家計、時刻表、支援資料は無文字の色面・物体・トークンだけで表し、実在企業、ロゴ、数値、読める文字を使わない。"
+  },
+  "guardrails": [
+    "仕事は人格の全体ではなく、仕事上の失敗を道徳的な弱さとして描かない。",
+    "解雇場面は私的で尊重ある手順とし、公開の辱め、警備員による排除、すべての解雇が公正という含意を避ける。",
+    "失業は家計や心の健康に影響し得るリスクとして扱い、診断や必然的な悪化と断定しない。家計、社会的関係、専門的支援を並列して示す。",
+    "起業は才能だけで成功する物語にせず、共同作業、費用、需要の不確実性、リスク、適正な報酬、再投資を描く。",
+    "転職・学び直しは誰にでも同じように容易とはせず、交通、道具、時間、相談、家族やケアとの両立など支援へのアクセスを描く。",
+    "『人生100年時代』を全員が100歳まで働く義務として描かず、成人期に複数の仕事を選び得る比喩として扱う。",
+    "意味や社会貢献を低賃金・無償労働の美化に使わず、公正な報酬と安全な条件を基盤として先に示す。",
+    "オフィス職を上位に置かず、設計、修理、物流、園芸、ケア、調理、建設、交通などを同等の尊厳で描く。",
+    "自傷・自殺、貧困の扇情的展示、実在企業・ブランド・求人サイト、読める契約書や給与額を使わない。"
+  ],
+  "research_basis": [
+    "WHO mental health at work guidance: 雇用の不安定さ、過大な負荷、差別、不十分な支援などの心理社会的リスクと、組織的対策・合理的配慮・復職支援の重要性を確認。",
+    "WHO workers' health fact sheet: 安全で健康的な労働環境と、労働者の健康を支える組織的な予防を確認。"
+  ],
+  "masters": [
+    {"time": 0.0, "file": "city_workday_master.png", "purpose": "多様な職業が動く都市の一日"},
+    {"time": 3.0, "file": "occupation_livelihood_master.png", "purpose": "生計を支える仕事"},
+    {"time": 6.3, "file": "identity_beyond_job_master.png", "purpose": "仕事を含みつつ仕事だけではない自己"},
+    {"time": 14.86, "file": "university_graduation_master.png", "purpose": "大学卒業と次の選択"},
+    {"time": 17.0, "file": "structured_application_interview_master.png", "purpose": "構造化された応募と面接"},
+    {"time": 18.7, "file": "mika_gets_hired_master.png", "purpose": "Mikaの採用"},
+    {"time": 20.88, "file": "new_employer_orientation_master.png", "purpose": "新しい雇用主での導入"},
+    {"time": 23.0, "file": "colleague_association_master.png", "purpose": "同僚や上司との関係形成"},
+    {"time": 26.0, "file": "workplace_skill_learning_master.png", "purpose": "職場での技能学習"},
+    {"time": 29.36, "file": "project_setback_master.png", "purpose": "順調ではないプロジェクトと失敗"},
+    {"time": 34.32, "file": "private_suitability_review_master.png", "purpose": "私的で具体的な適性検討"},
+    {"time": 36.8, "file": "respectful_job_ending_master.png", "purpose": "尊重ある雇用終了"},
+    {"time": 39.0, "file": "workplace_departure_master.png", "purpose": "職場を離れるMika"},
+    {"time": 41.3, "file": "unemployment_financial_planning_master.png", "purpose": "失業後の家計への影響と計画"},
+    {"time": 43.1, "file": "unemployment_social_support_master.png", "purpose": "友人や相談相手による社会的支援"},
+    {"time": 45.0, "file": "employment_support_options_master.png", "purpose": "再就職と制度的支援の選択肢"},
+    {"time": 46.78, "file": "leila_talent_workshop_master.png", "purpose": "Leilaの修理設計の才能"},
+    {"time": 49.2, "file": "enterprise_cooperative_launch_master.png", "purpose": "協同型事業の立ち上げ"},
+    {"time": 51.798, "file": "venture_risk_planning_master.png", "purpose": "ベンチャーのリスク検討"},
+    {"time": 54.5, "file": "potential_reward_shared_master.png", "purpose": "共同で分かち合う潜在的成果"},
+    {"time": 57.259, "file": "midcareer_profession_change_master.png", "purpose": "Tomasの中途職種変更"},
+    {"time": 60.3, "file": "adult_retraining_master.png", "purpose": "成人の学び直しとフィードバック"},
+    {"time": 64.622, "file": "diverse_age_career_paths_master.png", "purpose": "年代と職種の多様な進路"},
+    {"time": 68.0, "file": "not_clinging_single_job_master.png", "purpose": "過去を否定せず一職に固定しない選択"},
+    {"time": 72.0, "file": "transition_support_access_master.png", "purpose": "転職を支える交通・道具・相談"},
+    {"time": 76.692, "file": "life_stage_priorities_master.png", "purpose": "人生段階で変わる優先順位"},
+    {"time": 82.16, "file": "work_meaning_reflection_master.png", "purpose": "仕事の意味を自分で考える"},
+    {"time": 86.3, "file": "fair_compensation_master.png", "purpose": "意味より先にある公正な報酬と条件"},
+    {"time": 89.5, "file": "contribution_to_society_master.png", "purpose": "複数職種による地域への貢献"},
+    {"time": 93.0, "file": "satisfaction_multiple_sources_master.png", "purpose": "有用性・関係・報酬を含む満足"},
+    {"time": 97.3, "file": "open_career_paths_finale_master.png", "purpose": "複数のキャリアが開かれた終幕"}
+  ]
+}

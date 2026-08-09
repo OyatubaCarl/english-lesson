@@ -1,0 +1,274 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H104.md",
+  "audio": "高校生編/suno_ready/generated/audio/H104/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 119.32,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0701,
+  "expected_words": 157,
+  "transcribed_words": 168,
+  "matched_words": 151,
+  "coverage": 0.9618,
+  "precision": 0.8988,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 156,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 39,
+      "length": 1,
+      "words": [
+        "combined"
+      ]
+    },
+    {
+      "start": 51,
+      "length": 1,
+      "words": [
+        "raised"
+      ]
+    },
+    {
+      "start": 56,
+      "length": 1,
+      "words": [
+        "cost"
+      ]
+    },
+    {
+      "start": 66,
+      "length": 1,
+      "words": [
+        "cooled"
+      ]
+    },
+    {
+      "start": 83,
+      "length": 1,
+      "words": [
+        "wealthy"
+      ]
+    },
+    {
+      "start": 125,
+      "length": 1,
+      "words": [
+        "debt"
+      ]
+    }
+  ],
+  "replacement_count": 6,
+  "replacement_spans": [
+    {
+      "expected_start": 39,
+      "actual_start": 41,
+      "expected": [
+        "combined"
+      ],
+      "actual": [
+        "combine"
+      ],
+      "actual_confidence": 0.1629,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 51,
+      "actual_start": 53,
+      "expected": [
+        "raised"
+      ],
+      "actual": [
+        "raise"
+      ],
+      "actual_confidence": 0.9075,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 56,
+      "actual_start": 58,
+      "expected": [
+        "cost"
+      ],
+      "actual": [
+        "costs"
+      ],
+      "actual_confidence": 0.6859,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 66,
+      "actual_start": 68,
+      "expected": [
+        "cooled"
+      ],
+      "actual": [
+        "cool"
+      ],
+      "actual_confidence": 0.6086,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 83,
+      "actual_start": 85,
+      "expected": [
+        "wealthy"
+      ],
+      "actual": [
+        "well",
+        "the"
+      ],
+      "actual_confidence": 0.5349,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 125,
+      "actual_start": 128,
+      "expected": [
+        "debt"
+      ],
+      "actual": [
+        "death"
+      ],
+      "actual_confidence": 0.2027,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 1,
+      "actual_start": 1,
+      "expected": [],
+      "actual": [
+        "to",
+        "do"
+      ],
+      "actual_confidence": 0.7377
+    },
+    {
+      "expected_start": 157,
+      "actual_start": 160,
+      "expected": [],
+      "actual": [
+        "i'll",
+        "see",
+        "you",
+        "guys",
+        "in",
+        "the",
+        "next",
+        "video"
+      ],
+      "actual_confidence": 0.5624
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "From 2020 to do onward, sharp inflation occurred across the world. Energy prices, food, housing, the price of everything rose considerably. The causes were multiple, supply chain disruption due to the pandemic, Russia's invasion of Ukraine, large fiscal spending by governments. These combine to create a tremendous rise in prices In response, central banks raise interest rates The borrowing costs for businesses and households rose And consumption and investment cool Many countries stood at the edge of recession The pain of rising prices is not equal Well, the households hold assets and are relatively protected But for low-income families, food and utility costs become a burden that presses on daily life The national deficit has also grown Social security expenses swell And tax revenue alone cannot cover them Death becomes an obligation to future generations The challenge of the economy cannot be solved by one country alone In our globalized age, international coordination is the foundation of a sustainable economy I'll see you guys in the next video.",
+  "segments": [
+    {
+      "start": 8.16,
+      "end": 13.12,
+      "text": "From 2020 to do onward, sharp inflation occurred across the world."
+    },
+    {
+      "start": 13.92,
+      "end": 18.96,
+      "text": "Energy prices, food, housing, the price of everything rose considerably."
+    },
+    {
+      "start": 19.62,
+      "end": 26.6,
+      "text": "The causes were multiple, supply chain disruption due to the pandemic, Russia's invasion of"
+    },
+    {
+      "start": 26.6,
+      "end": 29.54,
+      "text": "Ukraine, large fiscal spending by governments."
+    },
+    {
+      "start": 32.86,
+      "end": 37.32,
+      "text": "These combine to create a tremendous rise in prices"
+    },
+    {
+      "start": 37.32,
+      "end": 41.8,
+      "text": "In response, central banks raise interest rates"
+    },
+    {
+      "start": 41.8,
+      "end": 45.38,
+      "text": "The borrowing costs for businesses and households rose"
+    },
+    {
+      "start": 45.38,
+      "end": 47.86,
+      "text": "And consumption and investment cool"
+    },
+    {
+      "start": 47.86,
+      "end": 52.3,
+      "text": "Many countries stood at the edge of recession"
+    },
+    {
+      "start": 52.3,
+      "end": 57.34,
+      "text": "The pain of rising prices is not equal"
+    },
+    {
+      "start": 57.34,
+      "end": 62.96,
+      "text": "Well, the households hold assets and are relatively protected"
+    },
+    {
+      "start": 62.96,
+      "end": 69.56,
+      "text": "But for low-income families, food and utility costs become a burden that presses on daily life"
+    },
+    {
+      "start": 69.56,
+      "end": 73.56,
+      "text": "The national deficit has also grown"
+    },
+    {
+      "start": 75.22,
+      "end": 78.96,
+      "text": "Social security expenses swell"
+    },
+    {
+      "start": 78.96,
+      "end": 83.8,
+      "text": "And tax revenue alone cannot cover them"
+    },
+    {
+      "start": 83.8,
+      "end": 89.62,
+      "text": "Death becomes an obligation to future generations"
+    },
+    {
+      "start": 89.62,
+      "end": 96.58,
+      "text": "The challenge of the economy cannot be solved by one country alone"
+    },
+    {
+      "start": 98.26,
+      "end": 110.78,
+      "text": "In our globalized age, international coordination is the foundation of a sustainable economy"
+    },
+    {
+      "start": 116.44,
+      "end": 119.26,
+      "text": "I'll see you guys in the next video."
+    }
+  ]
+}

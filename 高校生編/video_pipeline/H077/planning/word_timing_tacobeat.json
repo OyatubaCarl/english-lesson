@@ -1,0 +1,1238 @@
+{
+  "lesson": "H077",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h077_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H077/candidate2-full.mp3",
+  "source_audio_sha256": "298bfe22a422088b0895e1ddbfc666cf27d8e33ce0faff203c6ebc8537e846f2",
+  "bpm": 88.52,
+  "exact_word_match": true,
+  "word_count": 181,
+  "line_count": 17,
+  "first_word_start": 10.642,
+  "last_word_end": 127.578,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Every day, we are exposed to an enormous amount of information.",
+      "word_timings": [
+        {
+          "word": "Every",
+          "display_index": 0,
+          "start": 10.642,
+          "end": 10.942
+        },
+        {
+          "word": "day,",
+          "display_index": 1,
+          "start": 10.942,
+          "end": 11.782
+        },
+        {
+          "word": "we",
+          "display_index": 2,
+          "start": 11.782,
+          "end": 12.062
+        },
+        {
+          "word": "are",
+          "display_index": 3,
+          "start": 12.062,
+          "end": 12.142
+        },
+        {
+          "word": "exposed",
+          "display_index": 4,
+          "start": 12.122,
+          "end": 13.123
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 13.123,
+          "end": 13.342
+        },
+        {
+          "word": "an",
+          "display_index": 6,
+          "start": 13.342,
+          "end": 13.502
+        },
+        {
+          "word": "enormous",
+          "display_index": 7,
+          "start": 13.502,
+          "end": 14.202
+        },
+        {
+          "word": "amount",
+          "display_index": 8,
+          "start": 14.202,
+          "end": 14.722
+        },
+        {
+          "word": "of",
+          "display_index": 9,
+          "start": 14.722,
+          "end": 14.882
+        },
+        {
+          "word": "information.",
+          "display_index": 10,
+          "start": 14.882,
+          "end": 16.022
+        }
+      ],
+      "start": 10.642,
+      "end": 16.022
+    },
+    {
+      "line": 2,
+      "english": "Newspapers, television, articles on the internet, and posts on social media.",
+      "word_timings": [
+        {
+          "word": "Newspapers,",
+          "display_index": 0,
+          "start": 16.322,
+          "end": 17.343
+        },
+        {
+          "word": "television,",
+          "display_index": 1,
+          "start": 17.343,
+          "end": 18.423
+        },
+        {
+          "word": "articles",
+          "display_index": 2,
+          "start": 18.423,
+          "end": 19.423
+        },
+        {
+          "word": "on",
+          "display_index": 3,
+          "start": 19.423,
+          "end": 19.543
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 19.543,
+          "end": 19.763
+        },
+        {
+          "word": "internet,",
+          "display_index": 5,
+          "start": 19.763,
+          "end": 20.903
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 20.903,
+          "end": 21.063
+        },
+        {
+          "word": "posts",
+          "display_index": 7,
+          "start": 21.063,
+          "end": 21.563
+        },
+        {
+          "word": "on",
+          "display_index": 8,
+          "start": 21.563,
+          "end": 22.363
+        },
+        {
+          "word": "social",
+          "display_index": 9,
+          "start": 22.363,
+          "end": 23.083
+        },
+        {
+          "word": "media.",
+          "display_index": 10,
+          "start": 23.083,
+          "end": 24.583
+        }
+      ],
+      "start": 16.322,
+      "end": 24.583
+    },
+    {
+      "line": 3,
+      "english": "But how much of it is truly accurate?",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 26.284,
+          "end": 26.444
+        },
+        {
+          "word": "how",
+          "display_index": 1,
+          "start": 26.444,
+          "end": 26.604
+        },
+        {
+          "word": "much",
+          "display_index": 2,
+          "start": 26.604,
+          "end": 26.864
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 26.864,
+          "end": 27.024
+        },
+        {
+          "word": "it",
+          "display_index": 4,
+          "start": 27.024,
+          "end": 28.018
+        },
+        {
+          "word": "is",
+          "display_index": 5,
+          "start": 28.018,
+          "end": 28.124
+        },
+        {
+          "word": "truly",
+          "display_index": 6,
+          "start": 28.124,
+          "end": 28.564
+        },
+        {
+          "word": "accurate?",
+          "display_index": 7,
+          "start": 28.564,
+          "end": 29.344
+        }
+      ],
+      "start": 26.284,
+      "end": 29.344
+    },
+    {
+      "line": 4,
+      "english": "An advertisement exists not simply to convey facts, but to encourage purchases.",
+      "word_timings": [
+        {
+          "word": "An",
+          "display_index": 0,
+          "start": 29.344,
+          "end": 29.544
+        },
+        {
+          "word": "advertisement",
+          "display_index": 1,
+          "start": 29.544,
+          "end": 30.564
+        },
+        {
+          "word": "exists",
+          "display_index": 2,
+          "start": 30.564,
+          "end": 31.505
+        },
+        {
+          "word": "not",
+          "display_index": 3,
+          "start": 31.505,
+          "end": 31.825
+        },
+        {
+          "word": "simply",
+          "display_index": 4,
+          "start": 31.825,
+          "end": 32.206
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 32.206,
+          "end": 32.365
+        },
+        {
+          "word": "convey",
+          "display_index": 6,
+          "start": 32.365,
+          "end": 32.885
+        },
+        {
+          "word": "facts,",
+          "display_index": 7,
+          "start": 32.885,
+          "end": 34.045
+        },
+        {
+          "word": "but",
+          "display_index": 8,
+          "start": 34.045,
+          "end": 34.232
+        },
+        {
+          "word": "to",
+          "display_index": 9,
+          "start": 34.232,
+          "end": 34.425
+        },
+        {
+          "word": "encourage",
+          "display_index": 10,
+          "start": 34.425,
+          "end": 35.085
+        },
+        {
+          "word": "purchases.",
+          "display_index": 11,
+          "start": 35.085,
+          "end": 36.585
+        }
+      ],
+      "start": 29.344,
+      "end": 36.585
+    },
+    {
+      "line": 5,
+      "english": "Political propaganda manipulates information in order to spread a particular viewpoint.",
+      "word_timings": [
+        {
+          "word": "Political",
+          "display_index": 0,
+          "start": 37.105,
+          "end": 37.906
+        },
+        {
+          "word": "propaganda",
+          "display_index": 1,
+          "start": 37.906,
+          "end": 39.146
+        },
+        {
+          "word": "manipulates",
+          "display_index": 2,
+          "start": 39.146,
+          "end": 40.026
+        },
+        {
+          "word": "information",
+          "display_index": 3,
+          "start": 40.026,
+          "end": 41.226
+        },
+        {
+          "word": "in",
+          "display_index": 4,
+          "start": 41.226,
+          "end": 41.406
+        },
+        {
+          "word": "order",
+          "display_index": 5,
+          "start": 41.406,
+          "end": 41.681
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 41.681,
+          "end": 41.766
+        },
+        {
+          "word": "spread",
+          "display_index": 7,
+          "start": 41.766,
+          "end": 42.21
+        },
+        {
+          "word": "a",
+          "display_index": 8,
+          "start": 42.21,
+          "end": 42.326
+        },
+        {
+          "word": "particular",
+          "display_index": 9,
+          "start": 42.326,
+          "end": 43.326
+        },
+        {
+          "word": "viewpoint.",
+          "display_index": 10,
+          "start": 43.326,
+          "end": 44.587
+        }
+      ],
+      "start": 37.105,
+      "end": 44.587
+    },
+    {
+      "line": 6,
+      "english": "Now anyone can publish information on social media.",
+      "word_timings": [
+        {
+          "word": "Now",
+          "display_index": 0,
+          "start": 44.887,
+          "end": 45.107
+        },
+        {
+          "word": "anyone",
+          "display_index": 1,
+          "start": 45.107,
+          "end": 45.707
+        },
+        {
+          "word": "can",
+          "display_index": 2,
+          "start": 45.707,
+          "end": 46.027
+        },
+        {
+          "word": "publish",
+          "display_index": 3,
+          "start": 46.027,
+          "end": 46.647
+        },
+        {
+          "word": "information",
+          "display_index": 4,
+          "start": 46.647,
+          "end": 47.807
+        },
+        {
+          "word": "on",
+          "display_index": 5,
+          "start": 47.807,
+          "end": 48.067
+        },
+        {
+          "word": "social",
+          "display_index": 6,
+          "start": 48.067,
+          "end": 48.607
+        },
+        {
+          "word": "media.",
+          "display_index": 7,
+          "start": 48.607,
+          "end": 49.367
+        }
+      ],
+      "start": 44.887,
+      "end": 49.367
+    },
+    {
+      "line": 7,
+      "english": "As a result, unverified rumors and misleading information spread instantly.",
+      "word_timings": [
+        {
+          "word": "As",
+          "display_index": 0,
+          "start": 49.667,
+          "end": 49.791
+        },
+        {
+          "word": "a",
+          "display_index": 1,
+          "start": 49.791,
+          "end": 49.947
+        },
+        {
+          "word": "result,",
+          "display_index": 2,
+          "start": 49.947,
+          "end": 50.667
+        },
+        {
+          "word": "unverified",
+          "display_index": 3,
+          "start": 50.667,
+          "end": 51.508
+        },
+        {
+          "word": "rumors",
+          "display_index": 4,
+          "start": 51.508,
+          "end": 52.348
+        },
+        {
+          "word": "and",
+          "display_index": 5,
+          "start": 52.348,
+          "end": 52.488
+        },
+        {
+          "word": "misleading",
+          "display_index": 6,
+          "start": 52.488,
+          "end": 53.228
+        },
+        {
+          "word": "information",
+          "display_index": 7,
+          "start": 53.228,
+          "end": 53.948
+        },
+        {
+          "word": "spread",
+          "display_index": 8,
+          "start": 53.948,
+          "end": 54.308
+        },
+        {
+          "word": "instantly.",
+          "display_index": 9,
+          "start": 54.308,
+          "end": 55.464
+        }
+      ],
+      "start": 49.667,
+      "end": 55.464
+    },
+    {
+      "line": 8,
+      "english": "The more sensational the headline, the more attention it draws.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 55.764,
+          "end": 55.868
+        },
+        {
+          "word": "more",
+          "display_index": 1,
+          "start": 55.868,
+          "end": 56.188
+        },
+        {
+          "word": "sensational",
+          "display_index": 2,
+          "start": 56.188,
+          "end": 57.275
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 57.275,
+          "end": 57.448
+        },
+        {
+          "word": "headline,",
+          "display_index": 4,
+          "start": 57.448,
+          "end": 59.134
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 59.134,
+          "end": 59.269
+        },
+        {
+          "word": "more",
+          "display_index": 6,
+          "start": 59.269,
+          "end": 59.509
+        },
+        {
+          "word": "attention",
+          "display_index": 7,
+          "start": 59.509,
+          "end": 60.369
+        },
+        {
+          "word": "it",
+          "display_index": 8,
+          "start": 60.369,
+          "end": 60.609
+        },
+        {
+          "word": "draws.",
+          "display_index": 9,
+          "start": 60.609,
+          "end": 61.669
+        }
+      ],
+      "start": 55.764,
+      "end": 61.669
+    },
+    {
+      "line": 9,
+      "english": "What, then, should we believe?",
+      "word_timings": [
+        {
+          "word": "What,",
+          "display_index": 0,
+          "start": 61.969,
+          "end": 62.309
+        },
+        {
+          "word": "then,",
+          "display_index": 1,
+          "start": 62.309,
+          "end": 63.469
+        },
+        {
+          "word": "should",
+          "display_index": 2,
+          "start": 63.469,
+          "end": 63.689
+        },
+        {
+          "word": "we",
+          "display_index": 3,
+          "start": 63.689,
+          "end": 64.709
+        },
+        {
+          "word": "believe?",
+          "display_index": 4,
+          "start": 64.709,
+          "end": 66.209
+        }
+      ],
+      "start": 61.969,
+      "end": 66.209
+    },
+    {
+      "line": 10,
+      "english": "First, verify the source of the information.",
+      "word_timings": [
+        {
+          "word": "First,",
+          "display_index": 0,
+          "start": 67.05,
+          "end": 67.73
+        },
+        {
+          "word": "verify",
+          "display_index": 1,
+          "start": 67.73,
+          "end": 68.796
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 68.796,
+          "end": 68.95
+        },
+        {
+          "word": "source",
+          "display_index": 3,
+          "start": 68.95,
+          "end": 69.35
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 69.35,
+          "end": 69.481
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 69.481,
+          "end": 69.69
+        },
+        {
+          "word": "information.",
+          "display_index": 6,
+          "start": 69.69,
+          "end": 71.15
+        }
+      ],
+      "start": 67.05,
+      "end": 71.15
+    },
+    {
+      "line": 11,
+      "english": "Who published it, and what evidence does it rest upon?",
+      "word_timings": [
+        {
+          "word": "Who",
+          "display_index": 0,
+          "start": 71.45,
+          "end": 71.791
+        },
+        {
+          "word": "published",
+          "display_index": 1,
+          "start": 71.791,
+          "end": 72.311
+        },
+        {
+          "word": "it,",
+          "display_index": 2,
+          "start": 72.311,
+          "end": 72.731
+        },
+        {
+          "word": "and",
+          "display_index": 3,
+          "start": 72.731,
+          "end": 72.891
+        },
+        {
+          "word": "what",
+          "display_index": 4,
+          "start": 72.891,
+          "end": 73.251
+        },
+        {
+          "word": "evidence",
+          "display_index": 5,
+          "start": 73.251,
+          "end": 74.211
+        },
+        {
+          "word": "does",
+          "display_index": 6,
+          "start": 74.211,
+          "end": 74.511
+        },
+        {
+          "word": "it",
+          "display_index": 7,
+          "start": 74.511,
+          "end": 74.911
+        },
+        {
+          "word": "rest",
+          "display_index": 8,
+          "start": 74.911,
+          "end": 75.471
+        },
+        {
+          "word": "upon?",
+          "display_index": 9,
+          "start": 75.471,
+          "end": 76.971
+        }
+      ],
+      "start": 71.45,
+      "end": 76.971
+    },
+    {
+      "line": 12,
+      "english": "If statistics are quoted, examine critically how that data was gathered.",
+      "word_timings": [
+        {
+          "word": "If",
+          "display_index": 0,
+          "start": 77.491,
+          "end": 77.671
+        },
+        {
+          "word": "statistics",
+          "display_index": 1,
+          "start": 77.671,
+          "end": 78.486
+        },
+        {
+          "word": "are",
+          "display_index": 2,
+          "start": 78.486,
+          "end": 78.732
+        },
+        {
+          "word": "quoted,",
+          "display_index": 3,
+          "start": 78.732,
+          "end": 79.492
+        },
+        {
+          "word": "examine",
+          "display_index": 4,
+          "start": 79.492,
+          "end": 80.072
+        },
+        {
+          "word": "critically",
+          "display_index": 5,
+          "start": 80.072,
+          "end": 80.792
+        },
+        {
+          "word": "how",
+          "display_index": 6,
+          "start": 80.792,
+          "end": 81.072
+        },
+        {
+          "word": "that",
+          "display_index": 7,
+          "start": 81.072,
+          "end": 81.332
+        },
+        {
+          "word": "data",
+          "display_index": 8,
+          "start": 81.332,
+          "end": 81.832
+        },
+        {
+          "word": "was",
+          "display_index": 9,
+          "start": 81.832,
+          "end": 82.192
+        },
+        {
+          "word": "gathered.",
+          "display_index": 10,
+          "start": 82.192,
+          "end": 83.472
+        }
+      ],
+      "start": 77.491,
+      "end": 83.472
+    },
+    {
+      "line": 13,
+      "english": "It is also important to compare several sources for any single event.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 83.772,
+          "end": 83.87
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 83.87,
+          "end": 84.152
+        },
+        {
+          "word": "also",
+          "display_index": 2,
+          "start": 84.152,
+          "end": 84.632
+        },
+        {
+          "word": "important",
+          "display_index": 3,
+          "start": 84.632,
+          "end": 85.241
+        },
+        {
+          "word": "to",
+          "display_index": 4,
+          "start": 85.241,
+          "end": 85.573
+        },
+        {
+          "word": "compare",
+          "display_index": 5,
+          "start": 85.573,
+          "end": 86.413
+        },
+        {
+          "word": "several",
+          "display_index": 6,
+          "start": 86.413,
+          "end": 86.933
+        },
+        {
+          "word": "sources",
+          "display_index": 7,
+          "start": 86.933,
+          "end": 87.753
+        },
+        {
+          "word": "for",
+          "display_index": 8,
+          "start": 87.753,
+          "end": 88.193
+        },
+        {
+          "word": "any",
+          "display_index": 9,
+          "start": 88.193,
+          "end": 88.793
+        },
+        {
+          "word": "single",
+          "display_index": 10,
+          "start": 88.793,
+          "end": 89.253
+        },
+        {
+          "word": "event.",
+          "display_index": 11,
+          "start": 89.253,
+          "end": 90.753
+        }
+      ],
+      "start": 83.772,
+      "end": 90.753
+    },
+    {
+      "line": 14,
+      "english": "If we judge from only one perspective, we arrive at a biased conclusion.",
+      "word_timings": [
+        {
+          "word": "If",
+          "display_index": 0,
+          "start": 91.233,
+          "end": 91.373
+        },
+        {
+          "word": "we",
+          "display_index": 1,
+          "start": 91.373,
+          "end": 91.533
+        },
+        {
+          "word": "judge",
+          "display_index": 2,
+          "start": 91.533,
+          "end": 91.873
+        },
+        {
+          "word": "from",
+          "display_index": 3,
+          "start": 91.873,
+          "end": 92.314
+        },
+        {
+          "word": "only",
+          "display_index": 4,
+          "start": 92.314,
+          "end": 92.974
+        },
+        {
+          "word": "one",
+          "display_index": 5,
+          "start": 92.974,
+          "end": 93.214
+        },
+        {
+          "word": "perspective,",
+          "display_index": 6,
+          "start": 93.214,
+          "end": 94.474
+        },
+        {
+          "word": "we",
+          "display_index": 7,
+          "start": 94.474,
+          "end": 94.654
+        },
+        {
+          "word": "arrive",
+          "display_index": 8,
+          "start": 94.654,
+          "end": 95.394
+        },
+        {
+          "word": "at",
+          "display_index": 9,
+          "start": 95.394,
+          "end": 95.474
+        },
+        {
+          "word": "a",
+          "display_index": 10,
+          "start": 95.473,
+          "end": 95.634
+        },
+        {
+          "word": "biased",
+          "display_index": 11,
+          "start": 95.634,
+          "end": 96.134
+        },
+        {
+          "word": "conclusion.",
+          "display_index": 12,
+          "start": 96.134,
+          "end": 96.854
+        }
+      ],
+      "start": 91.233,
+      "end": 96.854
+    },
+    {
+      "line": 15,
+      "english": "Critical thinking is the only power that protects us in this sea of information.",
+      "word_timings": [
+        {
+          "word": "Critical",
+          "display_index": 0,
+          "start": 97.154,
+          "end": 97.694
+        },
+        {
+          "word": "thinking",
+          "display_index": 1,
+          "start": 97.694,
+          "end": 98.567
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 98.567,
+          "end": 98.737
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 98.737,
+          "end": 98.974
+        },
+        {
+          "word": "only",
+          "display_index": 4,
+          "start": 98.974,
+          "end": 99.555
+        },
+        {
+          "word": "power",
+          "display_index": 5,
+          "start": 99.555,
+          "end": 100.095
+        },
+        {
+          "word": "that",
+          "display_index": 6,
+          "start": 100.095,
+          "end": 100.275
+        },
+        {
+          "word": "protects",
+          "display_index": 7,
+          "start": 100.275,
+          "end": 100.915
+        },
+        {
+          "word": "us",
+          "display_index": 8,
+          "start": 100.915,
+          "end": 101.315
+        },
+        {
+          "word": "in",
+          "display_index": 9,
+          "start": 101.315,
+          "end": 101.495
+        },
+        {
+          "word": "this",
+          "display_index": 10,
+          "start": 101.495,
+          "end": 101.795
+        },
+        {
+          "word": "sea",
+          "display_index": 11,
+          "start": 101.795,
+          "end": 102.235
+        },
+        {
+          "word": "of",
+          "display_index": 12,
+          "start": 102.235,
+          "end": 102.475
+        },
+        {
+          "word": "information.",
+          "display_index": 13,
+          "start": 102.475,
+          "end": 103.975
+        }
+      ],
+      "start": 97.154,
+      "end": 103.975
+    },
+    {
+      "line": 16,
+      "english": "Media literacy has become an essential skill for everyone living in our age.",
+      "word_timings": [
+        {
+          "word": "Media",
+          "display_index": 0,
+          "start": 104.875,
+          "end": 105.956
+        },
+        {
+          "word": "literacy",
+          "display_index": 1,
+          "start": 105.956,
+          "end": 107.636
+        },
+        {
+          "word": "has",
+          "display_index": 2,
+          "start": 107.636,
+          "end": 107.816
+        },
+        {
+          "word": "become",
+          "display_index": 3,
+          "start": 107.816,
+          "end": 108.416
+        },
+        {
+          "word": "an",
+          "display_index": 4,
+          "start": 108.416,
+          "end": 108.576
+        },
+        {
+          "word": "essential",
+          "display_index": 5,
+          "start": 108.576,
+          "end": 109.316
+        },
+        {
+          "word": "skill",
+          "display_index": 6,
+          "start": 109.316,
+          "end": 110.636
+        },
+        {
+          "word": "for",
+          "display_index": 7,
+          "start": 110.636,
+          "end": 110.876
+        },
+        {
+          "word": "everyone",
+          "display_index": 8,
+          "start": 110.876,
+          "end": 111.556
+        },
+        {
+          "word": "living",
+          "display_index": 9,
+          "start": 111.556,
+          "end": 113.017
+        },
+        {
+          "word": "in",
+          "display_index": 10,
+          "start": 113.017,
+          "end": 113.757
+        },
+        {
+          "word": "our",
+          "display_index": 11,
+          "start": 113.757,
+          "end": 114.297
+        },
+        {
+          "word": "age.",
+          "display_index": 12,
+          "start": 114.297,
+          "end": 115.797
+        }
+      ],
+      "start": 104.875,
+      "end": 115.797
+    },
+    {
+      "line": 17,
+      "english": "It is not about doubting all information, but about facing information in the right way.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 116.717,
+          "end": 116.812
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 116.812,
+          "end": 117.157
+        },
+        {
+          "word": "not",
+          "display_index": 2,
+          "start": 117.157,
+          "end": 117.457
+        },
+        {
+          "word": "about",
+          "display_index": 3,
+          "start": 117.457,
+          "end": 117.877
+        },
+        {
+          "word": "doubting",
+          "display_index": 4,
+          "start": 117.877,
+          "end": 118.537
+        },
+        {
+          "word": "all",
+          "display_index": 5,
+          "start": 118.537,
+          "end": 118.877
+        },
+        {
+          "word": "information,",
+          "display_index": 6,
+          "start": 118.877,
+          "end": 122.198
+        },
+        {
+          "word": "but",
+          "display_index": 7,
+          "start": 122.198,
+          "end": 122.418
+        },
+        {
+          "word": "about",
+          "display_index": 8,
+          "start": 122.418,
+          "end": 122.838
+        },
+        {
+          "word": "facing",
+          "display_index": 9,
+          "start": 122.838,
+          "end": 123.638
+        },
+        {
+          "word": "information",
+          "display_index": 10,
+          "start": 123.638,
+          "end": 125.058
+        },
+        {
+          "word": "in",
+          "display_index": 11,
+          "start": 125.058,
+          "end": 125.524
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 125.524,
+          "end": 125.698
+        },
+        {
+          "word": "right",
+          "display_index": 13,
+          "start": 125.698,
+          "end": 126.078
+        },
+        {
+          "word": "way.",
+          "display_index": 14,
+          "start": 126.078,
+          "end": 127.578
+        }
+      ],
+      "start": 116.717,
+      "end": 127.578
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

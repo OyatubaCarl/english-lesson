@@ -1,0 +1,235 @@
+{
+  "project_root": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成",
+  "audio": "taco_beat/songs/m14.mp3",
+  "chart": "taco_beat/charts/m14.js",
+  "title_en": "Lesson 14  The Town Park",
+  "title_ja": "町の公園",
+  "title_position": [420, 145],
+  "title_ja_position": [420, 225],
+  "slug": "l14_the_town_park_sentence_v3",
+  "duration": 58.978685,
+  "transition_duration": 0.30,
+  "sentence_image_count": 12,
+  "line_to_scene": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+  "lines": [
+    {
+      "start_index": 2,
+      "end_index": 12,
+      "en_words": ["In", "my", "town,", "there", "is", "a", "beautiful", "park", "that", "everyone", "loves."],
+      "break_after": [7],
+      "ja": "わたしの町には、みんなに愛されている美しい公園があります。"
+    },
+    {
+      "start_index": 14,
+      "end_index": 21,
+      "en_words": ["In", "the", "park,", "there", "are", "many", "tall", "trees."],
+      "ja": "公園には高い木がたくさんあります。"
+    },
+    {
+      "start_index": 22,
+      "end_index": 29,
+      "en_words": ["When", "the", "wind", "blows,", "the", "leaves", "move", "gently."],
+      "ja": "風が吹くと、葉がやさしく揺れます。"
+    },
+    {
+      "start_index": 30,
+      "end_index": 38,
+      "en_words": ["Near", "the", "wide", "grass,", "there", "is", "a", "small", "pond."],
+      "ja": "広い芝生の近くには、小さな池があります。"
+    },
+    {
+      "start_index": 39,
+      "end_index": 45,
+      "en_words": ["There", "are", "birds", "and", "fish", "living", "quietly."],
+      "ja": "鳥や魚が静かに暮らしています。"
+    },
+    {
+      "start_index": 46,
+      "end_index": 54,
+      "en_words": ["Under", "a", "big", "tree,", "there", "is", "an", "old", "rock."],
+      "ja": "大きな木の下には、古い岩があります。"
+    },
+    {
+      "start_index": 55,
+      "end_index": 61,
+      "en_words": ["Children", "often", "sit", "on", "it", "to", "rest."],
+      "ja": "子どもたちはよくその岩に座って休みます。"
+    },
+    {
+      "start_index": 62,
+      "end_index": 74,
+      "en_words": ["On", "a", "sunny", "summer", "day,", "there", "are", "many", "children", "playing", "on", "the", "grass."],
+      "break_after": [4],
+      "ja": "晴れた夏の日には、芝生でたくさんの子どもたちが遊んでいます。"
+    },
+    {
+      "start_index": 76,
+      "end_index": 85,
+      "en_words": ["“Is", "there", "a", "river", "in", "the", "park?”", "Tom", "asked", "me."],
+      "break_after": [6],
+      "ja": "「公園に川はあるの？」とトムがわたしに聞きました。"
+    },
+    {
+      "start_index": 86,
+      "end_index": 93,
+      "en_words": ["“Yes,", "there", "is", "a", "thin", "one,”", "I", "answered."],
+      "ja": "「うん、細い川があるよ」とわたしは答えました。"
+    },
+    {
+      "start_index": 95,
+      "end_index": 103,
+      "en_words": ["Last", "year,", "there", "was", "a", "lot", "of", "snow", "here,"],
+      "ja": "去年はここにたくさん雪がありました。"
+    },
+    {
+      "start_index": 104,
+      "end_index": 111,
+      "en_words": ["but", "now,", "there", "is", "no", "snow", "at", "all."],
+      "ja": "でも今は、雪がまったくありません。"
+    }
+  ],
+  "shots": [
+    {
+      "image": "scenes/01_beautiful_town_park.png",
+      "start": 0.0,
+      "end": 9.163,
+      "start_center": [0.65, 0.54],
+      "end_center": [0.43, 0.48],
+      "start_zoom": 1.10,
+      "end_zoom": 1.04,
+      "intent": "入口のミオから町の人に愛される公園全体へゆっくり引いて見渡す"
+    },
+    {
+      "image": "scenes/02_many_tall_trees.png",
+      "start": 9.163,
+      "end": 11.444,
+      "start_center": [0.50, 0.64],
+      "end_center": [0.50, 0.38],
+      "start_zoom": 1.10,
+      "end_zoom": 1.04,
+      "transition": "smoothup",
+      "transition_duration": 0.22,
+      "intent": "木の根元から高い梢へ視線を上げ高さを強調する"
+    },
+    {
+      "image": "scenes/03_leaves_move_gently.png",
+      "start": 11.444,
+      "end": 16.305,
+      "start_center": [0.38, 0.46],
+      "end_center": [0.62, 0.44],
+      "start_zoom": 1.08,
+      "end_zoom": 1.05,
+      "transition": "dissolve",
+      "transition_duration": 0.24,
+      "intent": "風の流れに沿って揺れる葉を横へ追う"
+    },
+    {
+      "image": "scenes/04_small_pond_near_grass.png",
+      "start": 16.305,
+      "end": 19.786,
+      "start_center": [0.38, 0.51],
+      "end_center": [0.61, 0.50],
+      "start_zoom": 1.08,
+      "end_zoom": 1.05,
+      "transition": "smoothdown",
+      "transition_duration": 0.24,
+      "intent": "広い芝生から隣の小さな池へ視線を移す"
+    },
+    {
+      "image": "scenes/05_birds_and_fish.png",
+      "start": 19.786,
+      "end": 23.567,
+      "start_center": [0.48, 0.36],
+      "end_center": [0.54, 0.62],
+      "start_zoom": 1.07,
+      "end_zoom": 1.08,
+      "transition": "dissolve",
+      "transition_duration": 0.22,
+      "intent": "水辺の鳥から水中の魚へ静かに視線を下ろす"
+    },
+    {
+      "image": "scenes/06_old_rock_under_tree.png",
+      "start": 23.567,
+      "end": 26.248,
+      "start_center": [0.48, 0.34],
+      "end_center": [0.54, 0.64],
+      "start_zoom": 1.07,
+      "end_zoom": 1.11,
+      "transition": "smoothleft",
+      "transition_duration": 0.22,
+      "intent": "大木の枝から根元の古い岩へ視線を下ろす"
+    },
+    {
+      "image": "scenes/07_children_rest_on_rock.png",
+      "start": 26.248,
+      "end": 30.810,
+      "start_center": [0.36, 0.51],
+      "end_center": [0.62, 0.50],
+      "start_zoom": 1.09,
+      "end_zoom": 1.06,
+      "transition": "dissolve",
+      "transition_duration": 0.24,
+      "intent": "岩に腰かけて休む子どもたちを自然に見渡す"
+    },
+    {
+      "image": "scenes/08_children_play_on_grass.png",
+      "start": 30.810,
+      "end": 37.931,
+      "start_center": [0.34, 0.51],
+      "end_center": [0.66, 0.49],
+      "start_zoom": 1.08,
+      "end_zoom": 1.04,
+      "transition": "circleopen",
+      "transition_duration": 0.28,
+      "intent": "岩の木陰から夏の広い芝生と遊ぶ子どもたちへ開く"
+    },
+    {
+      "image": "scenes/09_tom_asks_about_river.png",
+      "start": 37.931,
+      "end": 41.173,
+      "start_center": [0.38, 0.49],
+      "end_center": [0.60, 0.49],
+      "start_zoom": 1.11,
+      "end_zoom": 1.07,
+      "transition": "dissolve",
+      "transition_duration": 0.22,
+      "intent": "質問するトムから聞いているミオへ視線を渡す"
+    },
+    {
+      "image": "scenes/10_mio_answers_thin_river.png",
+      "start": 41.173,
+      "end": 46.255,
+      "start_center": [0.64, 0.49],
+      "end_center": [0.36, 0.50],
+      "start_zoom": 1.10,
+      "end_zoom": 1.05,
+      "transition": "smoothleft",
+      "transition_duration": 0.24,
+      "intent": "答えるミオの指先から公園奥の細い流れへ視線を導く"
+    },
+    {
+      "image": "scenes/11_last_year_snow.png",
+      "start": 46.255,
+      "end": 50.636,
+      "start_center": [0.50, 0.50],
+      "end_center": [0.50, 0.46],
+      "start_zoom": 1.12,
+      "end_zoom": 1.04,
+      "transition": "hblur",
+      "transition_duration": 0.30,
+      "intent": "同じ公園を雪に覆われた去年の記憶としてゆっくり広げる"
+    },
+    {
+      "image": "scenes/12_now_no_snow.png",
+      "start": 50.636,
+      "end": 58.978685,
+      "start_center": [0.50, 0.48],
+      "end_center": [0.52, 0.46],
+      "start_zoom": 1.05,
+      "end_zoom": 1.11,
+      "transition": "dissolve",
+      "transition_duration": 0.36,
+      "intent": "雪景色と同じ構図を現在の緑へ戻し、明るい公園へ寄って締める"
+    }
+  ]
+}

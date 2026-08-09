@@ -1,0 +1,176 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H101.md",
+  "audio": "高校生編/suno_ready/generated/audio/H101/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 154.24,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 168,
+  "transcribed_words": 168,
+  "matched_words": 165,
+  "coverage": 0.9821,
+  "precision": 0.9821,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 166,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 62,
+      "length": 1,
+      "words": [
+        "defendant's"
+      ]
+    },
+    {
+      "start": 120,
+      "length": 1,
+      "words": [
+        "judgement"
+      ]
+    },
+    {
+      "start": 167,
+      "length": 1,
+      "words": [
+        "judgement"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 62,
+      "actual_start": 62,
+      "expected": [
+        "defendant's"
+      ],
+      "actual": [
+        "defendants"
+      ],
+      "actual_confidence": 0.7589,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 120,
+      "actual_start": 120,
+      "expected": [
+        "judgement"
+      ],
+      "actual": [
+        "judgment"
+      ],
+      "actual_confidence": 0.6382,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 167,
+      "actual_start": 167,
+      "expected": [
+        "judgement"
+      ],
+      "actual": [
+        "judgment"
+      ],
+      "actual_confidence": 0.6517,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "The court was silent The prosecutor rose and began to lay out The details of the case methodically The defendant was at the scene On the day of the crime, this is definite from the testimony of several witnesses The defense attorney rose and argued back What seems apparent is not always the truth We have new evidence that will prove the defendants alibi On the witness stand, a young woman was trembling She was the person who had provided several clues to the police Her testimony was crucial That night I saw the defendant run from the scene She answered in a voice close to a whisper It was still too early for the judge to hand down his judgment Weeks later, the jury reached a verdict guilty The defendant was sent to jail But the attorney decided to appeal Law must be strict, but it must not lose room for mercy The pursuit of justice is always also a confrontation with the limits of human judgment",
+  "segments": [
+    {
+      "start": 9.74,
+      "end": 17.84,
+      "text": "The court was silent The prosecutor rose and began to lay out"
+    },
+    {
+      "start": 17.84,
+      "end": 25.58,
+      "text": "The details of the case methodically The defendant was at the scene"
+    },
+    {
+      "start": 25.58,
+      "end": 35.32,
+      "text": "On the day of the crime, this is definite from the testimony of several witnesses"
+    },
+    {
+      "start": 41.58,
+      "end": 45.82,
+      "text": "The defense attorney rose and argued back"
+    },
+    {
+      "start": 47.58,
+      "end": 51.68,
+      "text": "What seems apparent is not always the truth"
+    },
+    {
+      "start": 51.68,
+      "end": 57.18,
+      "text": "We have new evidence that will prove the defendants alibi"
+    },
+    {
+      "start": 57.18,
+      "end": 62.6,
+      "text": "On the witness stand, a young woman was trembling"
+    },
+    {
+      "start": 63.68,
+      "end": 69.58,
+      "text": "She was the person who had provided several clues to the police"
+    },
+    {
+      "start": 70.68,
+      "end": 74.26,
+      "text": "Her testimony was crucial"
+    },
+    {
+      "start": 75.68,
+      "end": 80.36,
+      "text": "That night I saw the defendant run from the scene"
+    },
+    {
+      "start": 80.36,
+      "end": 85.54,
+      "text": "She answered in a voice close to a whisper"
+    },
+    {
+      "start": 86.92,
+      "end": 92.46,
+      "text": "It was still too early for the judge to hand down his judgment"
+    },
+    {
+      "start": 93.9,
+      "end": 98.94,
+      "text": "Weeks later, the jury reached a verdict guilty"
+    },
+    {
+      "start": 100.06,
+      "end": 103.44,
+      "text": "The defendant was sent to jail"
+    },
+    {
+      "start": 104.36,
+      "end": 108.96,
+      "text": "But the attorney decided to appeal"
+    },
+    {
+      "start": 111.4,
+      "end": 121.02,
+      "text": "Law must be strict, but it must not lose room for mercy"
+    },
+    {
+      "start": 122.5,
+      "end": 135.64,
+      "text": "The pursuit of justice is always also a confrontation with the limits of human judgment"
+    }
+  ]
+}

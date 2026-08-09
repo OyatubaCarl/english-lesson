@@ -1,0 +1,603 @@
+{
+  "verified_at": "2026-08-03T14:36:33+09:00",
+  "status": "PASS",
+  "checks": {
+    "projection_changes_limited_to_declared_lessons": true,
+    "declared_audio_key_replacements_applied": true,
+    "tomatomato_sentence_count_unchanged": true,
+    "tomatomato_word_count_unchanged": true,
+    "tomatomato_audio_keys_unchanged": true
+  },
+  "declared_changes": {
+    "lessons": [
+      1,
+      6
+    ],
+    "audio_key_replacements": {
+      "1": {
+        "remove": [
+          "ten"
+        ],
+        "add": [
+          "twelve"
+        ]
+      },
+      "6": {
+        "remove": [
+          "picture",
+          "pretty"
+        ],
+        "add": [
+          "bouquet",
+          "card"
+        ]
+      }
+    }
+  },
+  "changed_lessons": [
+    1,
+    6
+  ],
+  "baseline": {
+    "source": "taco_course_mockup/middle_lessons.json",
+    "lesson_count": 45,
+    "raw_vocab_sha256": "fbcf20d885cdae93dc1579ab394cffc2b23152f6b8bdcbc4b9af897a175e7b46",
+    "tomatomato_projection_sha256": "5c288450a73433043ce81e80989a12f69e2605495aac441c363ba013c6f2ac7b",
+    "tomatomato_sentence_count": 205,
+    "tomatomato_word_count": 411,
+    "tomatomato_audio_key_count": 411,
+    "lessons": [
+      {
+        "lesson": 1,
+        "sentences": 6,
+        "words": 31,
+        "sha256": "dc676613919d0278913a5989acee8d0ed23124b55b5f53247935ddfa5587e56a"
+      },
+      {
+        "lesson": 2,
+        "sentences": 6,
+        "words": 18,
+        "sha256": "27970840302e47fc61ab3fa630040ed06dfd77b8feb8ff90493cab21b80b480a"
+      },
+      {
+        "lesson": 3,
+        "sentences": 5,
+        "words": 16,
+        "sha256": "f2027db648fb51ef9581b87da8824241c6096e4a98e0225de286d1de3a42d359"
+      },
+      {
+        "lesson": 4,
+        "sentences": 6,
+        "words": 20,
+        "sha256": "4756c6f9b9a58535a82bc637989918b42f217bddecf1824f01b544ee2bb98ff9"
+      },
+      {
+        "lesson": 5,
+        "sentences": 4,
+        "words": 7,
+        "sha256": "e7d1a1e35123d08e63f6e6640fe4e4fe91bf000b0b43de43b4a2b3319948732b"
+      },
+      {
+        "lesson": 6,
+        "sentences": 4,
+        "words": 10,
+        "sha256": "444ae08433ba7b3c56a81293ba4039cece55efcd779dc6bbfee7f36928ae593b"
+      },
+      {
+        "lesson": 7,
+        "sentences": 4,
+        "words": 13,
+        "sha256": "9c64604f43f2845465d4cb859cd8eb0c453b5fc309581b022847cf227f927ab6"
+      },
+      {
+        "lesson": 8,
+        "sentences": 4,
+        "words": 7,
+        "sha256": "270d2a8097739cb1df99662fa6e4f0cb4f7c6ed2606f82cb173fb218fec8a336"
+      },
+      {
+        "lesson": 9,
+        "sentences": 4,
+        "words": 8,
+        "sha256": "4c8bfe1ed533175c6fd18085fbaf2f413bed85aa62a7795dfa5d3e28dc6719ca"
+      },
+      {
+        "lesson": 10,
+        "sentences": 4,
+        "words": 11,
+        "sha256": "7ae2e3b5c65cac71c4bdd08a9cc66d07b711264b0242123931bb01c7d0e29f38"
+      },
+      {
+        "lesson": 11,
+        "sentences": 4,
+        "words": 8,
+        "sha256": "c05d1d2f3f7a25da66f65e5fd62f40854b020e582ada927dacb8665539ccda4d"
+      },
+      {
+        "lesson": 12,
+        "sentences": 3,
+        "words": 7,
+        "sha256": "f4c34f4cb1d7f2874d18fded21b5df2afe5987046a063a2afbf1c69b77d5b9ec"
+      },
+      {
+        "lesson": 13,
+        "sentences": 5,
+        "words": 11,
+        "sha256": "3d3d7ab7a595ef8239e464749470a90a94cf20e34941c4066f5c3d0089a7c47f"
+      },
+      {
+        "lesson": 14,
+        "sentences": 6,
+        "words": 10,
+        "sha256": "33b7918ef692e5ee8b78053350679d0bef8ec635901d71d99800ff10863dbb4d"
+      },
+      {
+        "lesson": 15,
+        "sentences": 5,
+        "words": 11,
+        "sha256": "1234a7b7b5bd370e32be1fe7d1dbee2e0165ac974a4e8586a0cc972a353e61e7"
+      },
+      {
+        "lesson": 16,
+        "sentences": 5,
+        "words": 9,
+        "sha256": "d2fbdcdce9db231735d506bad8db709c29e8d5fc769a609cdd3525aee79ca401"
+      },
+      {
+        "lesson": 17,
+        "sentences": 5,
+        "words": 8,
+        "sha256": "a5dcd1822c93676d00838de3e37fb2b7d65d5913ad003d0a07e0a96f99a2312b"
+      },
+      {
+        "lesson": 18,
+        "sentences": 2,
+        "words": 2,
+        "sha256": "584e50aa2ed849f9b4393b825416ab08e66cad6941945d8c81670b6b5332cdd6"
+      },
+      {
+        "lesson": 19,
+        "sentences": 4,
+        "words": 6,
+        "sha256": "afd5b5d60d5b49df41ad4a070314f4e977cf013b6b48bec3d64fa674033adcf7"
+      },
+      {
+        "lesson": 20,
+        "sentences": 5,
+        "words": 6,
+        "sha256": "8058e38d8446ed4c38a5afb76f0b6ba9b82bc0a3af4155d9010e4fea397a5096"
+      },
+      {
+        "lesson": 21,
+        "sentences": 2,
+        "words": 2,
+        "sha256": "1328f3736edd7e843b39a20cb260c6d8e0625aacedef13c1ec88e0637a0fe9e2"
+      },
+      {
+        "lesson": 22,
+        "sentences": 4,
+        "words": 8,
+        "sha256": "3e584823011ee9b2ffcc6d8c3960fa061955ce8772f48636af48654f52ce0813"
+      },
+      {
+        "lesson": 23,
+        "sentences": 3,
+        "words": 4,
+        "sha256": "7e0ee6fa608822a81bb8111bf17b74f772e6aa96408cf01b407748e5818856e6"
+      },
+      {
+        "lesson": 24,
+        "sentences": 4,
+        "words": 4,
+        "sha256": "6f8f100459995a9ef643b502bac4fc95198c16fd206a7342f9fb8e60a8f8d015"
+      },
+      {
+        "lesson": 25,
+        "sentences": 3,
+        "words": 3,
+        "sha256": "6803525af11a5e464681d3195e9d0868b74ebe22e55baa651e64ff36e725ace2"
+      },
+      {
+        "lesson": 26,
+        "sentences": 2,
+        "words": 2,
+        "sha256": "84c28b2d6125d121fa4c4c77a5a18e26c6b11b1503e917d5947a9e28ce3756f0"
+      },
+      {
+        "lesson": 27,
+        "sentences": 3,
+        "words": 5,
+        "sha256": "2c3702cc675339168b260b72bc0b20726e74b4806e7bd77aa3d155fe30cfc9bf"
+      },
+      {
+        "lesson": 28,
+        "sentences": 3,
+        "words": 3,
+        "sha256": "ab85d25da8e2d279735907d862ee91666fa47b8d7ac04625df1c752f7c43e3e6"
+      },
+      {
+        "lesson": 29,
+        "sentences": 3,
+        "words": 3,
+        "sha256": "60134c96bc1d21260cd13345035f9357613f0ec36127382116e80ffa41e1d9d3"
+      },
+      {
+        "lesson": 30,
+        "sentences": 5,
+        "words": 7,
+        "sha256": "9e1f5eddc19f1fbcad19027a37bf71e683c612b597b2b26f66e666f0f49a1fa3"
+      },
+      {
+        "lesson": 31,
+        "sentences": 6,
+        "words": 12,
+        "sha256": "b68af5794a8ce4adf19b8c284b7969e3b3f51acbf9777b836cc81cf1090cab8b"
+      },
+      {
+        "lesson": 32,
+        "sentences": 6,
+        "words": 10,
+        "sha256": "f4a59fecc6620404ed81e783bb4710b5d508899e24dff5fba820385f909ae35c"
+      },
+      {
+        "lesson": 33,
+        "sentences": 6,
+        "words": 11,
+        "sha256": "90fa491252449fca22f8cf9121c982368c888bc0d5c5768536d4d382a23a0ef0"
+      },
+      {
+        "lesson": 34,
+        "sentences": 6,
+        "words": 12,
+        "sha256": "264adf7556a987800b8a18411de23ab51a47936d5807d549c8ab461517a74699"
+      },
+      {
+        "lesson": 35,
+        "sentences": 6,
+        "words": 11,
+        "sha256": "e99ff99a1d149203b5f2af3a09a81af000ab63880fb7b4165b3e829693169eb8"
+      },
+      {
+        "lesson": 36,
+        "sentences": 6,
+        "words": 14,
+        "sha256": "c09f0db637f548412fefe47531ec251c576614433ab5693f63119105f07613b5"
+      },
+      {
+        "lesson": 37,
+        "sentences": 6,
+        "words": 13,
+        "sha256": "e835c8466c44438aaeef2a89351d92533493815cc0240a24e15591cbb4334ad3"
+      },
+      {
+        "lesson": 38,
+        "sentences": 5,
+        "words": 8,
+        "sha256": "8e723922ad3ae561fcdad27d354591c166ef147c2b9623c29427bdfeecb04273"
+      },
+      {
+        "lesson": 39,
+        "sentences": 5,
+        "words": 9,
+        "sha256": "df4ca306d9b89761008490bff3b1c5e746eccfbe53016130e5d033feb648477e"
+      },
+      {
+        "lesson": 40,
+        "sentences": 4,
+        "words": 9,
+        "sha256": "409148bf86c33b39a06718de3981c6b6f8fabe12d53332d3cf0dd259a482cd20"
+      },
+      {
+        "lesson": 41,
+        "sentences": 7,
+        "words": 10,
+        "sha256": "7cab9e47c14f267ffcc0085e7feccc3bca5b15cd8c6bfa00a4a1e5004a1eca0b"
+      },
+      {
+        "lesson": 42,
+        "sentences": 5,
+        "words": 8,
+        "sha256": "4ca02010729220178d37fa0e3adcfd476312d4dac08f7e9b419f63ee643b0e1f"
+      },
+      {
+        "lesson": 43,
+        "sentences": 5,
+        "words": 6,
+        "sha256": "ad52ae563c31ca37e95db9f6db8f47ee05152baac83675d1cc13198d4b2f2bdf"
+      },
+      {
+        "lesson": 44,
+        "sentences": 3,
+        "words": 5,
+        "sha256": "a32ce9aad60a229037dc4402d8798677ddd6e4a84c9cb61823d2fd9b129b6cd6"
+      },
+      {
+        "lesson": 45,
+        "sentences": 6,
+        "words": 13,
+        "sha256": "aa8fe1d1c4612211ef0c14bff4173e9d07c4f5014875e9133dee0be165672be8"
+      }
+    ]
+  },
+  "current": {
+    "source": "taco_course_mockup/middle_lessons.json",
+    "lesson_count": 45,
+    "raw_vocab_sha256": "f0c1e447caf7965bb87bbbb6dc9e67881425ac56e3a613fcdc7c9368db83eff0",
+    "tomatomato_projection_sha256": "b1600439ce75ad8d1570c56694cb506f603fa46c26574f85f0a2f4d2a1706e1d",
+    "tomatomato_sentence_count": 205,
+    "tomatomato_word_count": 411,
+    "tomatomato_audio_key_count": 411,
+    "lessons": [
+      {
+        "lesson": 1,
+        "sentences": 6,
+        "words": 31,
+        "sha256": "4f110a94316ad6791dbc3c4918b5dc1d71ce597e92189fe1c8e7941a839734bb"
+      },
+      {
+        "lesson": 2,
+        "sentences": 6,
+        "words": 18,
+        "sha256": "27970840302e47fc61ab3fa630040ed06dfd77b8feb8ff90493cab21b80b480a"
+      },
+      {
+        "lesson": 3,
+        "sentences": 5,
+        "words": 16,
+        "sha256": "f2027db648fb51ef9581b87da8824241c6096e4a98e0225de286d1de3a42d359"
+      },
+      {
+        "lesson": 4,
+        "sentences": 6,
+        "words": 20,
+        "sha256": "4756c6f9b9a58535a82bc637989918b42f217bddecf1824f01b544ee2bb98ff9"
+      },
+      {
+        "lesson": 5,
+        "sentences": 4,
+        "words": 7,
+        "sha256": "e7d1a1e35123d08e63f6e6640fe4e4fe91bf000b0b43de43b4a2b3319948732b"
+      },
+      {
+        "lesson": 6,
+        "sentences": 4,
+        "words": 10,
+        "sha256": "139a321aad165fd90ee1d76eaada3af31c294f126fe123eda2392171f3cbd074"
+      },
+      {
+        "lesson": 7,
+        "sentences": 4,
+        "words": 13,
+        "sha256": "9c64604f43f2845465d4cb859cd8eb0c453b5fc309581b022847cf227f927ab6"
+      },
+      {
+        "lesson": 8,
+        "sentences": 4,
+        "words": 7,
+        "sha256": "270d2a8097739cb1df99662fa6e4f0cb4f7c6ed2606f82cb173fb218fec8a336"
+      },
+      {
+        "lesson": 9,
+        "sentences": 4,
+        "words": 8,
+        "sha256": "4c8bfe1ed533175c6fd18085fbaf2f413bed85aa62a7795dfa5d3e28dc6719ca"
+      },
+      {
+        "lesson": 10,
+        "sentences": 4,
+        "words": 11,
+        "sha256": "7ae2e3b5c65cac71c4bdd08a9cc66d07b711264b0242123931bb01c7d0e29f38"
+      },
+      {
+        "lesson": 11,
+        "sentences": 4,
+        "words": 8,
+        "sha256": "c05d1d2f3f7a25da66f65e5fd62f40854b020e582ada927dacb8665539ccda4d"
+      },
+      {
+        "lesson": 12,
+        "sentences": 3,
+        "words": 7,
+        "sha256": "f4c34f4cb1d7f2874d18fded21b5df2afe5987046a063a2afbf1c69b77d5b9ec"
+      },
+      {
+        "lesson": 13,
+        "sentences": 5,
+        "words": 11,
+        "sha256": "3d3d7ab7a595ef8239e464749470a90a94cf20e34941c4066f5c3d0089a7c47f"
+      },
+      {
+        "lesson": 14,
+        "sentences": 6,
+        "words": 10,
+        "sha256": "33b7918ef692e5ee8b78053350679d0bef8ec635901d71d99800ff10863dbb4d"
+      },
+      {
+        "lesson": 15,
+        "sentences": 5,
+        "words": 11,
+        "sha256": "1234a7b7b5bd370e32be1fe7d1dbee2e0165ac974a4e8586a0cc972a353e61e7"
+      },
+      {
+        "lesson": 16,
+        "sentences": 5,
+        "words": 9,
+        "sha256": "d2fbdcdce9db231735d506bad8db709c29e8d5fc769a609cdd3525aee79ca401"
+      },
+      {
+        "lesson": 17,
+        "sentences": 5,
+        "words": 8,
+        "sha256": "a5dcd1822c93676d00838de3e37fb2b7d65d5913ad003d0a07e0a96f99a2312b"
+      },
+      {
+        "lesson": 18,
+        "sentences": 2,
+        "words": 2,
+        "sha256": "584e50aa2ed849f9b4393b825416ab08e66cad6941945d8c81670b6b5332cdd6"
+      },
+      {
+        "lesson": 19,
+        "sentences": 4,
+        "words": 6,
+        "sha256": "afd5b5d60d5b49df41ad4a070314f4e977cf013b6b48bec3d64fa674033adcf7"
+      },
+      {
+        "lesson": 20,
+        "sentences": 5,
+        "words": 6,
+        "sha256": "8058e38d8446ed4c38a5afb76f0b6ba9b82bc0a3af4155d9010e4fea397a5096"
+      },
+      {
+        "lesson": 21,
+        "sentences": 2,
+        "words": 2,
+        "sha256": "1328f3736edd7e843b39a20cb260c6d8e0625aacedef13c1ec88e0637a0fe9e2"
+      },
+      {
+        "lesson": 22,
+        "sentences": 4,
+        "words": 8,
+        "sha256": "3e584823011ee9b2ffcc6d8c3960fa061955ce8772f48636af48654f52ce0813"
+      },
+      {
+        "lesson": 23,
+        "sentences": 3,
+        "words": 4,
+        "sha256": "7e0ee6fa608822a81bb8111bf17b74f772e6aa96408cf01b407748e5818856e6"
+      },
+      {
+        "lesson": 24,
+        "sentences": 4,
+        "words": 4,
+        "sha256": "6f8f100459995a9ef643b502bac4fc95198c16fd206a7342f9fb8e60a8f8d015"
+      },
+      {
+        "lesson": 25,
+        "sentences": 3,
+        "words": 3,
+        "sha256": "6803525af11a5e464681d3195e9d0868b74ebe22e55baa651e64ff36e725ace2"
+      },
+      {
+        "lesson": 26,
+        "sentences": 2,
+        "words": 2,
+        "sha256": "84c28b2d6125d121fa4c4c77a5a18e26c6b11b1503e917d5947a9e28ce3756f0"
+      },
+      {
+        "lesson": 27,
+        "sentences": 3,
+        "words": 5,
+        "sha256": "2c3702cc675339168b260b72bc0b20726e74b4806e7bd77aa3d155fe30cfc9bf"
+      },
+      {
+        "lesson": 28,
+        "sentences": 3,
+        "words": 3,
+        "sha256": "ab85d25da8e2d279735907d862ee91666fa47b8d7ac04625df1c752f7c43e3e6"
+      },
+      {
+        "lesson": 29,
+        "sentences": 3,
+        "words": 3,
+        "sha256": "60134c96bc1d21260cd13345035f9357613f0ec36127382116e80ffa41e1d9d3"
+      },
+      {
+        "lesson": 30,
+        "sentences": 5,
+        "words": 7,
+        "sha256": "9e1f5eddc19f1fbcad19027a37bf71e683c612b597b2b26f66e666f0f49a1fa3"
+      },
+      {
+        "lesson": 31,
+        "sentences": 6,
+        "words": 12,
+        "sha256": "b68af5794a8ce4adf19b8c284b7969e3b3f51acbf9777b836cc81cf1090cab8b"
+      },
+      {
+        "lesson": 32,
+        "sentences": 6,
+        "words": 10,
+        "sha256": "f4a59fecc6620404ed81e783bb4710b5d508899e24dff5fba820385f909ae35c"
+      },
+      {
+        "lesson": 33,
+        "sentences": 6,
+        "words": 11,
+        "sha256": "90fa491252449fca22f8cf9121c982368c888bc0d5c5768536d4d382a23a0ef0"
+      },
+      {
+        "lesson": 34,
+        "sentences": 6,
+        "words": 12,
+        "sha256": "264adf7556a987800b8a18411de23ab51a47936d5807d549c8ab461517a74699"
+      },
+      {
+        "lesson": 35,
+        "sentences": 6,
+        "words": 11,
+        "sha256": "e99ff99a1d149203b5f2af3a09a81af000ab63880fb7b4165b3e829693169eb8"
+      },
+      {
+        "lesson": 36,
+        "sentences": 6,
+        "words": 14,
+        "sha256": "c09f0db637f548412fefe47531ec251c576614433ab5693f63119105f07613b5"
+      },
+      {
+        "lesson": 37,
+        "sentences": 6,
+        "words": 13,
+        "sha256": "e835c8466c44438aaeef2a89351d92533493815cc0240a24e15591cbb4334ad3"
+      },
+      {
+        "lesson": 38,
+        "sentences": 5,
+        "words": 8,
+        "sha256": "8e723922ad3ae561fcdad27d354591c166ef147c2b9623c29427bdfeecb04273"
+      },
+      {
+        "lesson": 39,
+        "sentences": 5,
+        "words": 9,
+        "sha256": "df4ca306d9b89761008490bff3b1c5e746eccfbe53016130e5d033feb648477e"
+      },
+      {
+        "lesson": 40,
+        "sentences": 4,
+        "words": 9,
+        "sha256": "409148bf86c33b39a06718de3981c6b6f8fabe12d53332d3cf0dd259a482cd20"
+      },
+      {
+        "lesson": 41,
+        "sentences": 7,
+        "words": 10,
+        "sha256": "7cab9e47c14f267ffcc0085e7feccc3bca5b15cd8c6bfa00a4a1e5004a1eca0b"
+      },
+      {
+        "lesson": 42,
+        "sentences": 5,
+        "words": 8,
+        "sha256": "4ca02010729220178d37fa0e3adcfd476312d4dac08f7e9b419f63ee643b0e1f"
+      },
+      {
+        "lesson": 43,
+        "sentences": 5,
+        "words": 6,
+        "sha256": "ad52ae563c31ca37e95db9f6db8f47ee05152baac83675d1cc13198d4b2f2bdf"
+      },
+      {
+        "lesson": 44,
+        "sentences": 3,
+        "words": 5,
+        "sha256": "a32ce9aad60a229037dc4402d8798677ddd6e4a84c9cb61823d2fd9b129b6cd6"
+      },
+      {
+        "lesson": 45,
+        "sentences": 6,
+        "words": 13,
+        "sha256": "aa8fe1d1c4612211ef0c14bff4173e9d07c4f5014875e9133dee0be165672be8"
+      }
+    ]
+  }
+}

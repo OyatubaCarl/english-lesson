@@ -1,0 +1,838 @@
+{
+  "lesson": "H031",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h031_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H031/candidate3-full.mp3",
+  "source_audio_sha256": "70b9a307b89a766d228f5095861f6a1db847781e5ae00be54b9d93f9c19e2e00",
+  "bpm": 81.9,
+  "exact_word_match": true,
+  "word_count": 125,
+  "line_count": 9,
+  "first_word_start": 2.181,
+  "last_word_end": 62.198,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Marie Curie was born in Poland and later moved to Paris.",
+      "word_timings": [
+        {
+          "word": "Marie",
+          "display_index": 0,
+          "start": 2.181,
+          "end": 2.501
+        },
+        {
+          "word": "Curie",
+          "display_index": 1,
+          "start": 2.501,
+          "end": 3.301
+        },
+        {
+          "word": "was",
+          "display_index": 2,
+          "start": 3.301,
+          "end": 3.481
+        },
+        {
+          "word": "born",
+          "display_index": 3,
+          "start": 3.481,
+          "end": 3.761
+        },
+        {
+          "word": "in",
+          "display_index": 4,
+          "start": 3.761,
+          "end": 3.881
+        },
+        {
+          "word": "Poland",
+          "display_index": 5,
+          "start": 3.881,
+          "end": 4.621
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 4.621,
+          "end": 4.761
+        },
+        {
+          "word": "later",
+          "display_index": 7,
+          "start": 4.761,
+          "end": 5.042
+        },
+        {
+          "word": "moved",
+          "display_index": 8,
+          "start": 5.042,
+          "end": 5.288
+        },
+        {
+          "word": "to",
+          "display_index": 9,
+          "start": 5.288,
+          "end": 5.402
+        },
+        {
+          "word": "Paris.",
+          "display_index": 10,
+          "start": 5.402,
+          "end": 6.602
+        }
+      ],
+      "start": 2.181,
+      "end": 6.602
+    },
+    {
+      "line": 2,
+      "english": "Her name, Marie Curie, is one of the most famous physicists in the history of science.",
+      "word_timings": [
+        {
+          "word": "Her",
+          "display_index": 0,
+          "start": 6.902,
+          "end": 7.062
+        },
+        {
+          "word": "name,",
+          "display_index": 1,
+          "start": 7.062,
+          "end": 7.622
+        },
+        {
+          "word": "Marie",
+          "display_index": 2,
+          "start": 7.622,
+          "end": 7.962
+        },
+        {
+          "word": "Curie,",
+          "display_index": 3,
+          "start": 7.962,
+          "end": 8.979
+        },
+        {
+          "word": "is",
+          "display_index": 4,
+          "start": 8.979,
+          "end": 9.163
+        },
+        {
+          "word": "one",
+          "display_index": 5,
+          "start": 9.163,
+          "end": 9.283
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 9.283,
+          "end": 9.38
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 9.38,
+          "end": 9.483
+        },
+        {
+          "word": "most",
+          "display_index": 8,
+          "start": 9.483,
+          "end": 9.743
+        },
+        {
+          "word": "famous",
+          "display_index": 9,
+          "start": 9.743,
+          "end": 10.183
+        },
+        {
+          "word": "physicists",
+          "display_index": 10,
+          "start": 10.183,
+          "end": 10.863
+        },
+        {
+          "word": "in",
+          "display_index": 11,
+          "start": 10.863,
+          "end": 10.981
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 10.981,
+          "end": 11.083
+        },
+        {
+          "word": "history",
+          "display_index": 13,
+          "start": 11.083,
+          "end": 11.543
+        },
+        {
+          "word": "of",
+          "display_index": 14,
+          "start": 11.543,
+          "end": 11.664
+        },
+        {
+          "word": "science.",
+          "display_index": 15,
+          "start": 11.664,
+          "end": 13.164
+        }
+      ],
+      "start": 6.902,
+      "end": 13.164
+    },
+    {
+      "line": 3,
+      "english": "Her passion, namely her devotion to science, was extraordinary.",
+      "word_timings": [
+        {
+          "word": "Her",
+          "display_index": 0,
+          "start": 13.544,
+          "end": 13.724
+        },
+        {
+          "word": "passion,",
+          "display_index": 1,
+          "start": 13.724,
+          "end": 15.245
+        },
+        {
+          "word": "namely",
+          "display_index": 2,
+          "start": 15.245,
+          "end": 15.605
+        },
+        {
+          "word": "her",
+          "display_index": 3,
+          "start": 15.605,
+          "end": 15.765
+        },
+        {
+          "word": "devotion",
+          "display_index": 4,
+          "start": 15.765,
+          "end": 16.252
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 16.252,
+          "end": 16.405
+        },
+        {
+          "word": "science,",
+          "display_index": 6,
+          "start": 16.405,
+          "end": 18.005
+        },
+        {
+          "word": "was",
+          "display_index": 7,
+          "start": 18.005,
+          "end": 18.165
+        },
+        {
+          "word": "extraordinary.",
+          "display_index": 8,
+          "start": 18.165,
+          "end": 19.665
+        }
+      ],
+      "start": 13.544,
+      "end": 19.665
+    },
+    {
+      "line": 4,
+      "english": "Together with her husband Pierre, she devoted much of her life to research.",
+      "word_timings": [
+        {
+          "word": "Together",
+          "display_index": 0,
+          "start": 21.687,
+          "end": 22.087
+        },
+        {
+          "word": "with",
+          "display_index": 1,
+          "start": 22.087,
+          "end": 22.227
+        },
+        {
+          "word": "her",
+          "display_index": 2,
+          "start": 22.227,
+          "end": 22.387
+        },
+        {
+          "word": "husband",
+          "display_index": 3,
+          "start": 22.387,
+          "end": 22.807
+        },
+        {
+          "word": "Pierre,",
+          "display_index": 4,
+          "start": 22.807,
+          "end": 23.727
+        },
+        {
+          "word": "she",
+          "display_index": 5,
+          "start": 23.727,
+          "end": 23.867
+        },
+        {
+          "word": "devoted",
+          "display_index": 6,
+          "start": 23.867,
+          "end": 24.327
+        },
+        {
+          "word": "much",
+          "display_index": 7,
+          "start": 24.327,
+          "end": 24.607
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 24.607,
+          "end": 24.687
+        },
+        {
+          "word": "her",
+          "display_index": 9,
+          "start": 24.687,
+          "end": 24.867
+        },
+        {
+          "word": "life",
+          "display_index": 10,
+          "start": 24.867,
+          "end": 25.131
+        },
+        {
+          "word": "to",
+          "display_index": 11,
+          "start": 25.131,
+          "end": 25.268
+        },
+        {
+          "word": "research.",
+          "display_index": 12,
+          "start": 25.268,
+          "end": 26.148
+        }
+      ],
+      "start": 21.687,
+      "end": 26.148
+    },
+    {
+      "line": 5,
+      "english": "Their goal, to isolate and study the new element radium, meant years of endless difficulty.",
+      "word_timings": [
+        {
+          "word": "Their",
+          "display_index": 0,
+          "start": 26.448,
+          "end": 26.648
+        },
+        {
+          "word": "goal,",
+          "display_index": 1,
+          "start": 26.648,
+          "end": 27.328
+        },
+        {
+          "word": "to",
+          "display_index": 2,
+          "start": 27.328,
+          "end": 27.588
+        },
+        {
+          "word": "isolate",
+          "display_index": 3,
+          "start": 27.588,
+          "end": 28.208
+        },
+        {
+          "word": "and",
+          "display_index": 4,
+          "start": 28.208,
+          "end": 28.369
+        },
+        {
+          "word": "study",
+          "display_index": 5,
+          "start": 28.369,
+          "end": 28.752
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 28.752,
+          "end": 28.889
+        },
+        {
+          "word": "new",
+          "display_index": 7,
+          "start": 28.889,
+          "end": 29.189
+        },
+        {
+          "word": "element",
+          "display_index": 8,
+          "start": 29.189,
+          "end": 29.609
+        },
+        {
+          "word": "radium,",
+          "display_index": 9,
+          "start": 29.609,
+          "end": 30.329
+        },
+        {
+          "word": "meant",
+          "display_index": 10,
+          "start": 30.329,
+          "end": 30.629
+        },
+        {
+          "word": "years",
+          "display_index": 11,
+          "start": 30.629,
+          "end": 31.009
+        },
+        {
+          "word": "of",
+          "display_index": 12,
+          "start": 31.009,
+          "end": 31.209
+        },
+        {
+          "word": "endless",
+          "display_index": 13,
+          "start": 31.209,
+          "end": 31.61
+        },
+        {
+          "word": "difficulty.",
+          "display_index": 14,
+          "start": 31.61,
+          "end": 33.11
+        }
+      ],
+      "start": 26.448,
+      "end": 33.11
+    },
+    {
+      "line": 6,
+      "english": "The work in the laboratory involved the work of turning many tons of mineral into powder.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 33.722,
+          "end": 33.85
+        },
+        {
+          "word": "work",
+          "display_index": 1,
+          "start": 33.85,
+          "end": 34.31
+        },
+        {
+          "word": "in",
+          "display_index": 2,
+          "start": 34.31,
+          "end": 34.411
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 34.411,
+          "end": 34.53
+        },
+        {
+          "word": "laboratory",
+          "display_index": 4,
+          "start": 34.53,
+          "end": 35.231
+        },
+        {
+          "word": "involved",
+          "display_index": 5,
+          "start": 35.231,
+          "end": 35.739
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 35.739,
+          "end": 35.871
+        },
+        {
+          "word": "work",
+          "display_index": 7,
+          "start": 35.871,
+          "end": 36.151
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 36.151,
+          "end": 36.291
+        },
+        {
+          "word": "turning",
+          "display_index": 9,
+          "start": 36.291,
+          "end": 36.711
+        },
+        {
+          "word": "many",
+          "display_index": 10,
+          "start": 36.711,
+          "end": 37.031
+        },
+        {
+          "word": "tons",
+          "display_index": 11,
+          "start": 37.031,
+          "end": 37.431
+        },
+        {
+          "word": "of",
+          "display_index": 12,
+          "start": 37.431,
+          "end": 37.571
+        },
+        {
+          "word": "mineral",
+          "display_index": 13,
+          "start": 37.571,
+          "end": 37.991
+        },
+        {
+          "word": "into",
+          "display_index": 14,
+          "start": 37.991,
+          "end": 38.232
+        },
+        {
+          "word": "powder.",
+          "display_index": 15,
+          "start": 38.232,
+          "end": 39.092
+        }
+      ],
+      "start": 33.722,
+      "end": 39.092
+    },
+    {
+      "line": 7,
+      "english": "The couple continued despite the risk, exposing themselves to radiation.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 39.392,
+          "end": 39.512
+        },
+        {
+          "word": "couple",
+          "display_index": 1,
+          "start": 39.512,
+          "end": 39.812
+        },
+        {
+          "word": "continued",
+          "display_index": 2,
+          "start": 39.812,
+          "end": 40.472
+        },
+        {
+          "word": "despite",
+          "display_index": 3,
+          "start": 40.472,
+          "end": 40.975
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 40.975,
+          "end": 41.092
+        },
+        {
+          "word": "risk,",
+          "display_index": 5,
+          "start": 41.092,
+          "end": 41.833
+        },
+        {
+          "word": "exposing",
+          "display_index": 6,
+          "start": 41.833,
+          "end": 42.493
+        },
+        {
+          "word": "themselves",
+          "display_index": 7,
+          "start": 42.493,
+          "end": 43.21
+        },
+        {
+          "word": "to",
+          "display_index": 8,
+          "start": 43.21,
+          "end": 43.353
+        },
+        {
+          "word": "radiation.",
+          "display_index": 9,
+          "start": 43.353,
+          "end": 44.853
+        }
+      ],
+      "start": 39.392,
+      "end": 44.853
+    },
+    {
+      "line": 8,
+      "english": "Her achievement of winning two Nobel Prizes could not have come without her pure love of study, namely her passion.",
+      "word_timings": [
+        {
+          "word": "Her",
+          "display_index": 0,
+          "start": 45.294,
+          "end": 45.454
+        },
+        {
+          "word": "achievement",
+          "display_index": 1,
+          "start": 45.454,
+          "end": 46.094
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 46.094,
+          "end": 46.254
+        },
+        {
+          "word": "winning",
+          "display_index": 3,
+          "start": 46.254,
+          "end": 47.074
+        },
+        {
+          "word": "two",
+          "display_index": 4,
+          "start": 47.074,
+          "end": 47.294
+        },
+        {
+          "word": "Nobel",
+          "display_index": 5,
+          "start": 47.294,
+          "end": 47.734
+        },
+        {
+          "word": "Prizes",
+          "display_index": 6,
+          "start": 47.734,
+          "end": 48.595
+        },
+        {
+          "word": "could",
+          "display_index": 7,
+          "start": 48.595,
+          "end": 48.815
+        },
+        {
+          "word": "not",
+          "display_index": 8,
+          "start": 48.815,
+          "end": 49.015
+        },
+        {
+          "word": "have",
+          "display_index": 9,
+          "start": 49.015,
+          "end": 49.235
+        },
+        {
+          "word": "come",
+          "display_index": 10,
+          "start": 49.235,
+          "end": 49.555
+        },
+        {
+          "word": "without",
+          "display_index": 11,
+          "start": 49.555,
+          "end": 49.915
+        },
+        {
+          "word": "her",
+          "display_index": 12,
+          "start": 49.915,
+          "end": 50.095
+        },
+        {
+          "word": "pure",
+          "display_index": 13,
+          "start": 50.095,
+          "end": 50.455
+        },
+        {
+          "word": "love",
+          "display_index": 14,
+          "start": 50.455,
+          "end": 50.675
+        },
+        {
+          "word": "of",
+          "display_index": 15,
+          "start": 50.675,
+          "end": 50.815
+        },
+        {
+          "word": "study,",
+          "display_index": 16,
+          "start": 50.815,
+          "end": 51.496
+        },
+        {
+          "word": "namely",
+          "display_index": 17,
+          "start": 51.496,
+          "end": 51.896
+        },
+        {
+          "word": "her",
+          "display_index": 18,
+          "start": 51.896,
+          "end": 52.076
+        },
+        {
+          "word": "passion.",
+          "display_index": 19,
+          "start": 52.076,
+          "end": 53.576
+        }
+      ],
+      "start": 45.294,
+      "end": 53.576
+    },
+    {
+      "line": 9,
+      "english": "As a woman, a mother, and a scientist, she opened a path for later generations.",
+      "word_timings": [
+        {
+          "word": "As",
+          "display_index": 0,
+          "start": 54.296,
+          "end": 54.414
+        },
+        {
+          "word": "a",
+          "display_index": 1,
+          "start": 54.414,
+          "end": 54.536
+        },
+        {
+          "word": "woman,",
+          "display_index": 2,
+          "start": 54.536,
+          "end": 55.705
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 55.705,
+          "end": 55.837
+        },
+        {
+          "word": "mother,",
+          "display_index": 4,
+          "start": 55.837,
+          "end": 56.957
+        },
+        {
+          "word": "and",
+          "display_index": 5,
+          "start": 56.957,
+          "end": 57.119
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 57.119,
+          "end": 57.199
+        },
+        {
+          "word": "scientist,",
+          "display_index": 7,
+          "start": 57.197,
+          "end": 58.638
+        },
+        {
+          "word": "she",
+          "display_index": 8,
+          "start": 58.638,
+          "end": 58.858
+        },
+        {
+          "word": "opened",
+          "display_index": 9,
+          "start": 58.858,
+          "end": 59.113
+        },
+        {
+          "word": "a",
+          "display_index": 10,
+          "start": 59.113,
+          "end": 59.258
+        },
+        {
+          "word": "path",
+          "display_index": 11,
+          "start": 59.258,
+          "end": 60.198
+        },
+        {
+          "word": "for",
+          "display_index": 12,
+          "start": 60.198,
+          "end": 60.398
+        },
+        {
+          "word": "later",
+          "display_index": 13,
+          "start": 60.398,
+          "end": 60.698
+        },
+        {
+          "word": "generations.",
+          "display_index": 14,
+          "start": 60.698,
+          "end": 62.198
+        }
+      ],
+      "start": 54.296,
+      "end": 62.198
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

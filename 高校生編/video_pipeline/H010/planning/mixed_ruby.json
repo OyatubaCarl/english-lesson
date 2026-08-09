@@ -1,0 +1,909 @@
+{
+  "lesson": "H010",
+  "title_ja": "明日の今ごろ",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 13,
+  "canonical_target_lines": 7,
+  "mixed_lines": 4,
+  "japanese_only_lines": 9,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 0.0,
+      "end": 5.077,
+      "english": "This time tomorrow, I will be sitting in a meeting room.",
+      "japanese": "明日の今頃、私は会議室に座っています。",
+      "mixed": "明日の今頃、私は会議室に座っています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "明日の今頃、私は会議室に座っています。",
+          "parts": [
+            {
+              "text": "明日",
+              "ruby": "あした"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "今",
+              "ruby": "いま"
+            },
+            {
+              "text": "頃",
+              "ruby": "ころ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "会議",
+              "ruby": "かいぎ"
+            },
+            {
+              "text": "室",
+              "ruby": "しつ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "座",
+              "ruby": "すわ"
+            },
+            {
+              "text": "っています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 2,
+      "start": 5.077,
+      "end": 12.98,
+      "english": "At ten I will be attending a lecture, and in the afternoon I will be finishing the new project file.",
+      "japanese": "10時に講義に出席し、午後には新しいプロジェクトファイルを完成させる予定です。",
+      "mixed": "10時に lecture に attending、午後には新しいプロジェクトファイルを完成させる予定です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "10時に ",
+          "parts": [
+            {
+              "text": "10",
+              "ruby": ""
+            },
+            {
+              "text": "時",
+              "ruby": "じ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "lecture",
+          "ruby": "講義"
+        },
+        {
+          "type": "ja",
+          "text": " に ",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "attending",
+          "ruby": "出席し"
+        },
+        {
+          "type": "ja",
+          "text": "、午後には新しいプロジェクトファイルを完成させる予定です。",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "午後",
+              "ruby": "ごご"
+            },
+            {
+              "text": "には",
+              "ruby": ""
+            },
+            {
+              "text": "新",
+              "ruby": "あたら"
+            },
+            {
+              "text": "しいプロジェクトファイルを",
+              "ruby": ""
+            },
+            {
+              "text": "完成",
+              "ruby": "かんせい"
+            },
+            {
+              "text": "させる",
+              "ruby": ""
+            },
+            {
+              "text": "予定",
+              "ruby": "よてい"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "attending",
+          "canonical_word": "attend",
+          "meaning": "出席する"
+        },
+        {
+          "english": "lecture",
+          "canonical_word": "lecture",
+          "meaning": "講義"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "lecture",
+          "reading": "講義",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "lecture",
+          "canonical_meaning": "講義"
+        },
+        {
+          "english": "attending",
+          "reading": "出席し",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "attend",
+          "canonical_meaning": "出席する"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 3,
+      "start": 12.98,
+      "end": 19.24,
+      "english": "I have waited a long time for this appointment.",
+      "japanese": "私はこの約束を長い間待ちました。",
+      "mixed": "私はこの appointment を長い間待ちました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私はこの ",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "はこの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "appointment",
+          "ruby": "約束"
+        },
+        {
+          "type": "ja",
+          "text": " を長い間待ちました。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "長",
+              "ruby": "なが"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "間",
+              "ruby": "あいだ"
+            },
+            {
+              "text": "待",
+              "ruby": "ま"
+            },
+            {
+              "text": "ちました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "appointment",
+          "canonical_word": "appointment",
+          "meaning": "約束"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "appointment",
+          "reading": "約束",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "appointment",
+          "canonical_meaning": "約束"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 4,
+      "start": 19.24,
+      "end": 23.9,
+      "english": "For more than a month, I have been making steady progress.",
+      "japanese": "1か月以上、着実に進歩してきました。",
+      "mixed": "1か月以上、着実に進歩してきました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "1か月以上、着実に進歩してきました。",
+          "parts": [
+            {
+              "text": "1か",
+              "ruby": ""
+            },
+            {
+              "text": "月",
+              "ruby": "かげつ"
+            },
+            {
+              "text": "以上",
+              "ruby": "いじょう"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "着実",
+              "ruby": "ちゃくじつ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "進歩",
+              "ruby": "しんぽ"
+            },
+            {
+              "text": "してきました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "progress",
+          "canonical_word": "progress",
+          "meaning": "進展"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 5,
+      "start": 23.9,
+      "end": 29.08,
+      "english": "On the same day my colleague will also be engaged in another task.",
+      "japanese": "同じ日に私の同僚も別の仕事に従事する予定です。",
+      "mixed": "同じ日に私の同僚も別の仕事に engaged 予定です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "同じ日に私の同僚も別の仕事に ",
+          "parts": [
+            {
+              "text": "同",
+              "ruby": "おな"
+            },
+            {
+              "text": "じ",
+              "ruby": ""
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "同僚",
+              "ruby": "どうりょう"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "別",
+              "ruby": "べつ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "仕事",
+              "ruby": "しごと"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "engaged",
+          "ruby": "従事する"
+        },
+        {
+          "type": "ja",
+          "text": " 予定です。",
+          "parts": [
+            {
+              "text": "予定",
+              "ruby": "よてい"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "engaged",
+          "canonical_word": "engaged",
+          "meaning": "従事した"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "engaged",
+          "reading": "従事する",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "engaged",
+          "canonical_meaning": "従事した"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 6,
+      "start": 29.08,
+      "end": 33.48,
+      "english": "After lunch, I will probably move on to the afternoon meeting.",
+      "japanese": "昼食後は午後の会議に進むことになると思います。",
+      "mixed": "昼食後は午後の会議に進むことになると思います。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "昼食後は午後の会議に進むことになると思います。",
+          "parts": [
+            {
+              "text": "昼食後",
+              "ruby": "ちゅうしょくご"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "午後",
+              "ruby": "ごご"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "会議",
+              "ruby": "かいぎ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "進",
+              "ruby": "すす"
+            },
+            {
+              "text": "むことになると",
+              "ruby": ""
+            },
+            {
+              "text": "思",
+              "ruby": "おも"
+            },
+            {
+              "text": "います。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "probably",
+          "canonical_word": "probably",
+          "meaning": "おそらく"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 7,
+      "start": 33.48,
+      "end": 37.08,
+      "english": "By evening I will nearly complete the report.",
+      "japanese": "夕方までにレポートをほぼ完成させます。",
+      "mixed": "夕方までにレポートをほぼ完成させます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "夕方までにレポートをほぼ完成させます。",
+          "parts": [
+            {
+              "text": "夕方",
+              "ruby": "ゆうがた"
+            },
+            {
+              "text": "までにレポートをほぼ",
+              "ruby": ""
+            },
+            {
+              "text": "完成",
+              "ruby": "かんせい"
+            },
+            {
+              "text": "させます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "complete",
+          "canonical_word": "complete",
+          "meaning": "完了する"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 8,
+      "start": 38.54,
+      "end": 43.8,
+      "english": "Sometimes I wonder where I will be a year from now.",
+      "japanese": "時々、1年後の自分はどうなっているのかと思うことがあります。",
+      "mixed": "時々、1年後の自分はどうなっているのかと思うことがあります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "時々、1年後の自分はどうなっているのかと思うことがあります。",
+          "parts": [
+            {
+              "text": "時々",
+              "ruby": "ときどき"
+            },
+            {
+              "text": "、1",
+              "ruby": ""
+            },
+            {
+              "text": "年",
+              "ruby": "ねん"
+            },
+            {
+              "text": "後",
+              "ruby": "ご"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "自分",
+              "ruby": "じぶん"
+            },
+            {
+              "text": "はどうなっているのかと",
+              "ruby": ""
+            },
+            {
+              "text": "思",
+              "ruby": "おも"
+            },
+            {
+              "text": "うことがあります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 9,
+      "start": 44.84,
+      "end": 46.22,
+      "english": "Three years?",
+      "japanese": "3年？",
+      "mixed": "3年？",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "3年？",
+          "parts": [
+            {
+              "text": "3",
+              "ruby": ""
+            },
+            {
+              "text": "年",
+              "ruby": "ねん"
+            },
+            {
+              "text": "？",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 10,
+      "start": 46.72,
+      "end": 52.72,
+      "english": "Life will continue, and I too will be living through many more days.",
+      "japanese": "人生はこれからも続くし、私もまたたくさんの日々を生きていくことになる。",
+      "mixed": "人生はこれからも continue し、私もまたたくさんの日々を生きていくことになる。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "人生はこれからも ",
+          "parts": [
+            {
+              "text": "人生",
+              "ruby": "じんせい"
+            },
+            {
+              "text": "はこれからも",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "continue",
+          "ruby": "続く"
+        },
+        {
+          "type": "ja",
+          "text": " し、私もまたたくさんの日々を生きていくことになる。",
+          "parts": [
+            {
+              "text": "し、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "もまたたくさんの",
+              "ruby": ""
+            },
+            {
+              "text": "日々",
+              "ruby": "ひび"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "生",
+              "ruby": "い"
+            },
+            {
+              "text": "きていくことになる。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "continue",
+          "canonical_word": "continue",
+          "meaning": "続く"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "continue",
+          "reading": "続く",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "continue",
+          "canonical_meaning": "続く"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 11,
+      "start": 52.72,
+      "end": 60.24,
+      "english": "Placing myself within a schedule gives the day a gentle momentum.",
+      "japanese": "スケジュールに自分を置くと、一日に穏やかな勢いが生まれます。",
+      "mixed": "スケジュールに自分を置くと、一日に穏やかな勢いが生まれます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "スケジュールに自分を置くと、一日に穏やかな勢いが生まれます。",
+          "parts": [
+            {
+              "text": "スケジュールに",
+              "ruby": ""
+            },
+            {
+              "text": "自分",
+              "ruby": "じぶん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "置",
+              "ruby": "お"
+            },
+            {
+              "text": "くと、",
+              "ruby": ""
+            },
+            {
+              "text": "一日",
+              "ruby": "いちにち"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "穏",
+              "ruby": "おだ"
+            },
+            {
+              "text": "やかな",
+              "ruby": ""
+            },
+            {
+              "text": "勢",
+              "ruby": "いきお"
+            },
+            {
+              "text": "いが",
+              "ruby": ""
+            },
+            {
+              "text": "生",
+              "ruby": "う"
+            },
+            {
+              "text": "まれます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 12,
+      "start": 60.24,
+      "end": 67.38,
+      "english": "This time tomorrow, I will most likely be sitting at my desk.",
+      "japanese": "明日の今頃、私はおそらく机に座っているでしょう。",
+      "mixed": "明日の今頃、私はおそらく机に座っているでしょう。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "明日の今頃、私はおそらく机に座っているでしょう。",
+          "parts": [
+            {
+              "text": "明日",
+              "ruby": "あした"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "今",
+              "ruby": "いま"
+            },
+            {
+              "text": "頃",
+              "ruby": "ころ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "はおそらく",
+              "ruby": ""
+            },
+            {
+              "text": "机",
+              "ruby": "つくえ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "座",
+              "ruby": "すわ"
+            },
+            {
+              "text": "っているでしょう。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 13,
+      "start": 67.38,
+      "end": 76.8,
+      "english": "But beyond that single moment, another tomorrow is already waiting quietly.",
+      "japanese": "でも、その一瞬の先には、もう次の明日が静かに待っている。",
+      "mixed": "でも、その一瞬の先には、もう次の明日が静かに待っている。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "でも、その一瞬の先には、もう次の明日が静かに待っている。",
+          "parts": [
+            {
+              "text": "でも、その",
+              "ruby": ""
+            },
+            {
+              "text": "一瞬",
+              "ruby": "いっしゅん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "先",
+              "ruby": "さき"
+            },
+            {
+              "text": "には、もう",
+              "ruby": ""
+            },
+            {
+              "text": "次",
+              "ruby": "つぎ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "明日",
+              "ruby": "あした"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            },
+            {
+              "text": "待",
+              "ruby": "ま"
+            },
+            {
+              "text": "っている。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    }
+  ]
+}

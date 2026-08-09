@@ -1,0 +1,2993 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="WordTacos">
+<meta name="theme-color" content="#C73E1D">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="app_assets/icon-192.png">
+<title>WordTacos ─ 日本語に包んでやさしく学ぶ英単語!</title>
+<style>
+:root {
+  --bg: #FFF8EE;
+  --paper: #FFFDF7;
+  --ink: #2A1F14;
+  --sub: #6B5A47;
+  --accent: #C73E1D;
+  --accent-soft: #F4A26A;
+  --green: #4A7C59;
+  --green-soft: #EAF4EC;
+  --yellow: #E8B647;
+  --red: #D2342B;
+  --red-soft: #FCE4E0;
+  --border: #E6D5BC;
+  --shadow: 0 4px 16px rgba(74,50,30,0.08);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+html, body { height: 100%; }
+body {
+  font-family: "Hiragino Sans", "Hiragino Maru Gothic ProN", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg); color: var(--ink); line-height: 1.7;
+  -webkit-text-size-adjust: 100%;
+}
+.app {
+  max-width: 440px; margin: 0 auto;
+  padding: max(12px, env(safe-area-inset-top)) 14px max(14px, env(safe-area-inset-bottom));
+  min-height: 100vh;
+  font-size: 15px;
+}
+.screen { display: none; animation: fadeIn 0.25s; }
+.screen.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+.btn { display: block; width: 100%; background: var(--accent); color: white; border: none; padding: 16px 24px; border-radius: 12px; font-size: 1rem; font-weight: 700; cursor: pointer; box-shadow: var(--shadow); }
+.btn:active { transform: scale(0.98); }
+.btn.ghost { background: transparent; color: var(--sub); box-shadow: none; padding: 8px; font-size: 0.9rem; }
+.btn.secondary { background: var(--paper); color: var(--accent); border: 2px solid var(--accent); }
+
+/* === ホーム === */
+.hero { text-align: center; padding: 24px 0 12px; }
+.hero h1 { font-size: 2.1rem; font-weight: 800; letter-spacing: -0.02em; }
+.hero h1 .taco { color: var(--accent); }
+.hero .tagline { font-size: 0.78rem; color: var(--sub); margin-top: 4px; }
+.toolbar { display: flex; gap: 8px; justify-content: center; align-items: center; margin: 12px 0; font-size: 0.85rem; flex-wrap: wrap; }
+.toolbar label { color: var(--sub); display: flex; align-items: center; gap: 4px; }
+
+.stages { margin-top: 16px; }
+.stage-card { background: var(--paper); border: 1px solid var(--border); border-radius: 14px; padding: 16px 18px; margin-bottom: 10px; cursor: pointer; box-shadow: var(--shadow); display: flex; align-items: center; gap: 14px; }
+.stage-card .icon { width: 50px; height: 50px; border-radius: 50%; background: var(--bg); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; }
+.stage-card .info { flex: 1; }
+.stage-card .name { font-size: 1.1rem; font-weight: 800; }
+.stage-card .sub { font-size: 0.78rem; color: var(--sub); margin-top: 2px; }
+.stage-card .progress { margin-top: 6px; height: 6px; background: var(--border); border-radius: 999px; overflow: hidden; }
+.stage-card .progress > div { height: 100%; background: var(--accent); transition: width 0.3s; }
+.stage-card .count { font-size: 0.72rem; color: var(--sub); margin-top: 4px; }
+.stage-card .arrow { color: var(--sub); font-size: 1.4rem; }
+
+/* === レッスン選択 === */
+.lesson-list { display: grid; gap: 8px; margin-top: 12px; }
+.lesson-card { background: var(--paper); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; cursor: pointer; display: flex; align-items: center; gap: 10px; }
+.lesson-card .num { width: 36px; height: 36px; border-radius: 50%; background: var(--bg); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0; }
+.lesson-card.locked { opacity: 0.65; cursor: pointer; }
+.lesson-card.locked .num { background: var(--border); }
+.lesson-card.locked .num::after { content: '🔒'; font-size: 0.9rem; position: absolute; transform: translate(14px, -18px); }
+.lesson-card.locked .num { position: relative; }
+.lesson-card.passed { border-color: var(--green); background: var(--green-soft); }
+.lesson-card.passed .num { background: var(--green); color: white; }
+.lesson-card .desc { flex: 1; }
+.lesson-card .desc .label { font-weight: 700; font-size: 0.95rem; }
+.lesson-card .desc .info { font-size: 0.78rem; color: var(--sub); }
+.lesson-card .arrow { color: var(--sub); }
+
+/* === クイズ画面 === */
+.topbar { display: flex; align-items: center; gap: 12px; padding: 8px 4px 16px; font-size: 0.85rem; color: var(--sub); }
+.topbar .back { background: none; border: none; cursor: pointer; font-size: 1rem; padding: 4px 8px; color: var(--sub); }
+.topbar .stage-name { font-weight: 700; color: var(--ink); font-size: 0.85rem; }
+.topbar .phase-tag { background: var(--accent); color: white; padding: 2px 8px; border-radius: 999px; font-size: 0.72rem; font-weight: 700; }
+.topbar .phase-tag.retry { background: var(--yellow); }
+.topbar .phase-tag.promo { background: var(--green); }
+.topbar .progress-mini { flex: 1; height: 6px; background: var(--border); border-radius: 999px; overflow: hidden; }
+.topbar .progress-mini > div { height: 100%; background: var(--accent); transition: width 0.3s; }
+/* クイズ画面: 問題数の表示を一目で読み取れるように qcard 上部に大きく表示する */
+#screen-quiz .q-counter {
+  flex-shrink: 0;
+  display: flex; align-items: baseline; justify-content: center; gap: 12px;
+  padding: 0 0 8px;
+  font-size: 0.85rem; color: var(--sub);
+}
+#screen-quiz .q-counter .pos { font-weight: 800; color: var(--ink); font-size: 1.05rem; }
+#screen-quiz .q-counter .pos .num { color: var(--accent); }
+#screen-quiz .q-counter .remain { font-variant-numeric: tabular-nums; }
+#screen-quiz .q-counter .remain.zero { color: var(--green); font-weight: 700; }
+
+/* === 残り時間バー === */
+.timer-bar-wrap {
+  height: 10px; background: var(--border); border-radius: 999px; overflow: hidden;
+  margin-bottom: 12px;
+}
+.timer-bar {
+  height: 100%; width: 100%;
+  background: linear-gradient(90deg, var(--green) 0%, var(--yellow) 50%, var(--red) 90%);
+  transition: width 0.1s linear;
+}
+.timer-bar.danger { animation: barPulse 0.4s ease-in-out infinite alternate; }
+@keyframes barPulse { from { opacity: 1; } to { opacity: 0.4; } }
+
+.qcard { background: var(--paper); border: 1px solid var(--border); border-radius: 14px; padding: 20px; box-shadow: var(--shadow); }
+.qbody { font-size: 1.1rem; line-height: 2.1; margin-bottom: 16px; }
+.qbody.simple { font-size: 1.5rem; text-align: center; padding: 24px 0; }
+.qbody .embed { display: inline-block; background: var(--accent); color: white; padding: 2px 12px; border-radius: 8px; font-family: -apple-system, sans-serif; font-weight: 700; margin: 0 2px; }
+ruby rt { font-size: 0.55em; color: var(--sub); }
+body:not(.show-ruby) ruby rt { display: none; }
+body:not(.show-ruby) ruby { ruby-position: under; }
+
+.audio-row { margin-bottom: 12px; }
+.audio-btn { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px; font-size: 0.85rem; cursor: pointer; color: var(--ink); }
+.audio-btn:hover { background: var(--accent); color: white; }
+
+.choices { display: grid; gap: 10px; margin-top: 8px; }
+.choice {
+  background: white; border: 2px solid var(--border); border-radius: 12px;
+  padding: 16px 14px; font-size: 1.05rem; cursor: pointer; text-align: left; font: inherit;
+  min-height: 56px;
+  display: flex; align-items: center; gap: 8px;
+}
+.choice:hover:not(:disabled) { border-color: var(--accent); }
+.choice:disabled { cursor: default; }
+.choice.correct { background: var(--green-soft); border-color: var(--green); color: var(--green); font-weight: 700; }
+.choice.wrong { background: var(--red-soft); border-color: var(--red); color: var(--red); }
+.choice .mark { font-weight: 700; flex-shrink: 0; }
+.choice .text { flex: 1 1 0; min-width: 0; }
+.choice .marker {
+  flex-shrink: 0; margin-left: auto;
+  font-size: 1.6rem; transform: scale(0);
+  pointer-events: none;
+}
+.choice.correct .marker { animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+.choice.wrong .marker { animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+@keyframes popIn { from { transform: scale(0); } to { transform: scale(1); } }
+
+.feedback { margin-top: 16px; padding: 12px 16px; border-radius: 10px; }
+.feedback.correct { background: var(--green-soft); color: var(--green); border-left: 4px solid var(--green); }
+.feedback.wrong { background: var(--red-soft); color: var(--red); border-left: 4px solid var(--red); }
+.feedback .label { font-weight: 700; margin-bottom: 4px; }
+.feedback .meaning { color: var(--ink); font-size: 0.95rem; }
+.feedback .explanation { color: var(--sub); font-size: 0.85rem; margin-top: 6px; }
+
+.next-row { display: flex; gap: 8px; margin-top: 16px; }
+
+/* 全画面オーバーレイ(評価メッセージ: Fantastic / Good / ○ / ×) */
+.overlay-mark {
+  position: fixed; inset: 0;
+  display: none; align-items: center; justify-content: center;
+  pointer-events: none; z-index: 100;
+}
+.overlay-mark.show { display: flex; }
+.overlay-mark .symbol {
+  font-weight: 900;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  animation: rainbowText 1.2s linear infinite, wavyText 1.2s ease-in-out infinite;
+  background-clip: text;
+}
+.overlay-mark.symbol-mode .symbol { font-size: 30vw; }
+.overlay-mark.text-mode .symbol { font-size: 14vw; }
+@media (min-width: 600px) {
+  .overlay-mark.symbol-mode .symbol { font-size: 220px; }
+  .overlay-mark.text-mode .symbol { font-size: 96px; }
+}
+@keyframes rainbowText {
+  0%, 100% { color: var(--accent); }
+  14% { color: #FF8C00; }
+  28% { color: var(--yellow); }
+  42% { color: var(--green); }
+  57% { color: #1c92d2; }
+  71% { color: #6a4ec7; }
+  85% { color: #c73e8c; }
+}
+@keyframes wavyText {
+  0%, 100% { transform: translateY(0); }
+  20% { transform: translateY(-12px); }
+  40% { transform: translateY(2px); }
+  60% { transform: translateY(0); }
+  80% { transform: translateY(-6px); }
+}
+
+/* 中間レポート(10問ごと) / 結果カード */
+.modal-bg {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.4); backdrop-filter: blur(4px);
+  z-index: 200; display: none; align-items: safe center; justify-content: center; padding: 16px;
+  /* 結果カード等が縦長でも切れないよう、溢れたらオーバーレイをスクロール可能に */
+  overflow-y: auto; -webkit-overflow-scrolling: touch;
+}
+.modal-bg.active { display: flex; }
+.modal {
+  background: var(--paper); border-radius: 16px; padding: 32px 24px; max-width: 480px; width: 100%;
+  text-align: center; box-shadow: 0 12px 48px rgba(0,0,0,0.2);
+}
+.modal .emoji { font-size: 4rem; }
+.modal h2 { font-size: 1.4rem; margin: 8px 0; }
+.modal .praise { color: var(--accent); font-weight: 700; font-size: 1.05rem; margin: 8px 0; }
+.modal .rate { font-size: 2.5rem; font-weight: 800; margin: 8px 0; }
+.modal .sub { color: var(--sub); font-size: 0.9rem; }
+.modal .actions { margin-top: 20px; display: grid; gap: 8px; }
+
+/* スマホ準拠: choicesは常に1列 */
+
+/* === マスコット (Teacher Tacos) === */
+.mascot {
+  position: relative; width: 220px; height: 280px;
+  margin: 0 auto;
+  pointer-events: none;
+}
+.mascot img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.15s;
+  filter: drop-shadow(0 8px 14px rgba(74,50,30,0.15));
+}
+.mascot img.active { opacity: 1; }
+.mascot.bounce { animation: mascotBounce 1.6s ease-in-out infinite; }
+@keyframes mascotBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.mascot.pop { animation: mascotPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); }
+@keyframes mascotPop {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.mascot.shake { animation: mascotShake 0.4s ease-in-out; }
+@keyframes mascotShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-8px) rotate(-3deg); }
+  75% { transform: translateX(8px) rotate(3deg); }
+}
+
+/* マスコット入り speech bubble */
+.mascot-row {
+  display: flex; gap: 12px; align-items: flex-end;
+  margin: 12px 0;
+}
+.mascot-row .mascot { width: 100px; height: 130px; margin: 0; flex-shrink: 0; }
+.mascot-row .bubble {
+  background: var(--paper); border: 1px solid var(--border);
+  border-radius: 14px; padding: 12px 14px;
+  font-size: 0.9rem; color: var(--ink);
+  box-shadow: var(--shadow);
+  position: relative;
+  flex: 1;
+}
+.mascot-row .bubble::before {
+  content: ''; position: absolute;
+  left: -8px; bottom: 14px;
+  width: 16px; height: 16px;
+  background: var(--paper);
+  border-left: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  transform: rotate(45deg);
+}
+
+/* ローディングオーバーレイ */
+.loading-bg {
+  position: fixed; inset: 0;
+  background: var(--bg);
+  display: none; align-items: center; justify-content: center;
+  flex-direction: column; gap: 12px;
+  z-index: 300;
+}
+.loading-bg.active { display: flex; }
+.loading-bg .label { font-size: 1rem; color: var(--sub); font-weight: 700; }
+.loading-bg .mascot { width: 160px; height: 200px; }
+
+/* === スマホ枠を PC でも維持 (iPhone 17 想定 393×852) === */
+/* どのデバイスでも .app を「最大 440×900 のスマホサイズカード」として中央に出す。
+   PC では周囲がベージュ余白＋カード影、スマホでは画面いっぱい。クイズ画面は
+   このカード内でスクロールせず flex layout で内部分配する。 */
+html, body { overscroll-behavior-y: contain; }
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: #d8cdb6;       /* PC でカード外周に出るベージュ余白 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.app {
+  width: 100%;
+  max-width: 440px;
+  height: 100svh;
+  max-height: 100svh;
+  min-height: 0;             /* 元 .app の min-height:100vh を打ち消す (PC で枠が縦に伸びる原因) */
+  margin: 0;                 /* 元 .app の margin:0 auto は body flex で代替 */
+  padding: max(8px, env(safe-area-inset-top)) 14px max(14px, env(safe-area-inset-bottom));
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;        /* absolute children (overlay, BGM toggle) の参照箱として */
+}
+@media (min-width: 500px) {
+  /* PC では「スマホ筐体」風にカード化して周囲に余白＋影を出す */
+  .app {
+    height: min(900px, calc(100svh - 32px));
+    max-height: 900px;
+    border-radius: 22px;
+    box-shadow: 0 12px 40px rgba(40,25,15,0.18);
+  }
+}
+/* ===== 小さい画面フィット (fit-to-screen) =====
+   画面高が足りない端末(Chromebookの表示スケーリング/ズーム等)では、
+   スクロールに頼らず「アプリ全体を一様に縮小」して全要素を必ず表示する。
+   .app に transform を掛けると position:fixed な子(footer-tabs)も
+   このtransformを基準に配置されるので、UIごと綺麗に縮む。
+   JS(fitApp)が --fit-scale と .fit-scale を付与する。 */
+.app.fit-scale {
+  height: var(--fit-h) !important;     /* 設計基準の高さに固定 */
+  max-height: var(--fit-h) !important;
+  min-height: var(--fit-h) !important;
+  border-radius: 22px;
+  box-shadow: 0 12px 40px rgba(40,25,15,0.18);
+  transform: scale(var(--fit-scale));
+  transform-origin: center center;     /* body の中央寄せと合わせて画面中央に配置 */
+  flex: 0 0 auto;
+}
+body.fit-active { align-items: center !important; justify-content: center !important; }
+.screen { flex: 1; min-height: 0; }
+.screen.active { display: flex; flex-direction: column; overflow: hidden; }
+.screen.scrollable { overflow-y: auto; -webkit-overflow-scrolling: touch; }
+/* safe center = 収まる時は中央寄せ、溢れる時は上詰め(切れずにスクロール可)。
+   overflow-y:auto で短い画面でもスタートボタン/クレジットまで到達できる。 */
+#screen-start { justify-content: safe center; align-items: stretch; gap: 8px; padding-bottom: 12px; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+#screen-stages, #screen-lessons, #screen-stats, #screen-review, #screen-settings {
+  overflow-y: auto; -webkit-overflow-scrolling: touch;
+}
+
+/* クイズ画面: topbar 固定、qcard が残り領域を占めて内部flex分配 */
+#screen-quiz .qcard {
+  flex: 1; min-height: 0;
+  display: flex; flex-direction: column;
+  padding: 12px 16px 16px;
+  /* 収まらない時はカード全体を内部スクロールさせる。
+     こうしないと短いビューポート(Chromebookの表示スケーリング/ズーム等)で
+     本文(qbody)が高さ0まで潰れて日本語文が消える／選択肢が枠外に切れて押せなくなる。 */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+#screen-quiz .timer-bar-wrap { flex-shrink: 0; margin-bottom: 12px; }
+/* qbody は inline 文字組（ruby を含む）が自然に流れるよう block 表示にする。
+   flex-direction: column を当てると <ruby> 要素が flex item として 1 つずつ縦に
+   積み重なってしまい、本文が 1 文字ずつ改行されたように見える。 */
+#screen-quiz .qbody {
+  /* grow:1 = 縦に余裕がある画面では領域を広く取る / shrink:0 = 縮めない(本文が必ず全表示)。
+     収まらない時は親qcardがスクロールする。 */
+  flex: 1 0 auto;
+  min-height: 0;
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+  transition: max-height .25s ease, font-size .25s ease, opacity .25s ease;
+}
+#screen-quiz .qbody > * { text-align: left; }
+#screen-quiz .qbody p { text-align: left; }
+/* 昇級試験(promo)の単語バッジ表示は中央寄せのまま */
+#screen-quiz .qbody.simple { text-align: center; }
+#screen-quiz .audio-row { flex-shrink: 0; margin-bottom: 10px; }
+#screen-quiz .choices { flex-shrink: 0; }
+/* 昇級テスト (promo) 用レイアウト: 単語表示エリアは縮ませず常に画面上部に固定し、
+   長文選択肢が4つ並ぶ choices だけが残り領域を取って内部スクロールする。
+   こうしないと小画面 (例 375×667) かつふりがなON時に choices が膨らんで qbody が
+   48px まで圧縮され、肝心の単語バッジが overflow:auto の中に隠れてしまう。 */
+/* promo の質問ヘッダー: 正誤モーダル (.ao-header) と揃えた横並びコンパクト構成。
+   単語バッジを左、ヒント文を右に置き、qbody 全体を1行分の高さに抑えて
+   選択肢エリアを広く確保する。 */
+#screen-quiz .qcard.promo-mode .qbody.simple {
+  flex: 0 0 auto;
+  display: block;
+  padding: 6px 0 10px;
+  overflow: visible;
+}
+#screen-quiz .qcard.promo-mode .qbody.simple .promo-prompt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#screen-quiz .qcard.promo-mode .qbody.simple .embed {
+  font-size: 1.1rem;
+  padding: 5px 14px;
+  flex-shrink: 0;
+  max-width: 55%;
+  overflow-wrap: anywhere;
+  margin: 0;
+}
+#screen-quiz .qcard.promo-mode .qbody.simple .promo-hint {
+  color: var(--sub);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  flex: 1 1 0;
+  min-width: 0;
+}
+#screen-quiz .qcard.promo-mode .choices {
+  /* 昇級試験も同様に、選択肢は縮めず全表示。収まらない時は親qcardがスクロールする。
+     (以前は flex:1 1 0 + 内部スクロールで、短い画面だと下2つの選択肢が
+      潰れた領域の外に出て押しづらくなっていた) */
+  flex: 1 0 auto;
+  min-height: 0;
+}
+
+/* 回答後フィードバック: スマホ枠 (.app) 内に半透明背景＋中央カード。
+   背後のクイズ画面 (本文+選択肢) が透けて見え、回答した文脈をそのまま思い出せる。 */
+.answer-overlay {
+  position: absolute; inset: 0;   /* .app に対して相対 = スマホ枠内に閉じる */
+  background: rgba(40,25,15,0.55);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  z-index: 80;
+  animation: aoFadeIn .16s ease-out;
+}
+.answer-overlay.show { display: flex; }
+@keyframes aoFadeIn { from { opacity: 0; } to { opacity: 1; } }
+.ao-card {
+  width: 100%;
+  max-height: 100%;
+  background: var(--paper);
+  border-radius: 16px;
+  box-shadow: 0 12px 36px rgba(0,0,0,0.28);
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  animation: aoCardIn .18s cubic-bezier(.22,.61,.36,1);
+}
+@keyframes aoCardIn { from { transform: translateY(8px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+.ao-header { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.ao-word {
+  font-size: 1.15rem; font-weight: 800; color: white;
+  background: var(--accent); padding: 5px 12px; border-radius: 8px;
+  letter-spacing: 0.02em;
+  max-width: 100%;
+  overflow-wrap: anywhere;  /* 超長単語でも枠内で折返してオーバーフローしない */
+}
+.ao-verdict { font-size: 0.95rem; font-weight: 700; flex: 1 1 auto; min-width: 0; white-space: nowrap; }
+.ao-verdict .elapsed { font-weight: 400; opacity: 0.7; font-size: 0.85em; margin-left: 4px; }
+.ao-meaning {
+  font-size: 0.9rem; color: var(--ink);
+  padding: 7px 11px; background: var(--bg); border-radius: 8px;
+}
+.ao-meaning .label { color: var(--sub); font-size: 0.75rem; margin-right: 6px; }
+.ao-choices { display: grid; gap: 6px; }
+.ao-choice {
+  display: flex; align-items: center; gap: 8px;
+  background: white; border: 2px solid var(--border); border-radius: 9px;
+  padding: 8px 12px;
+  font-size: 0.9rem; line-height: 1.4;
+}
+.ao-choice .mark { font-weight: 700; flex-shrink: 0; min-width: 1.2em; }
+.ao-choice .text { flex: 1 1 0; min-width: 0; }
+.ao-choice .marker { font-size: 1.15rem; flex-shrink: 0; }
+.ao-choice.correct { background: var(--green-soft); border-color: var(--green); color: var(--green); font-weight: 700; }
+.ao-choice.wrong { background: var(--red-soft); border-color: var(--red); color: var(--red); }
+.ao-explanation {
+  font-size: 0.82rem; color: var(--sub); line-height: 1.65;
+}
+.ao-card #next-btn { margin-top: 2px; flex-shrink: 0; padding: 12px 18px; }
+
+/* 右上フロートツール: BGM と ふりがな表示トグル。スマホ枠内 (.app相対) で常駐 */
+.float-tools {
+  position: absolute;
+  top: max(10px, env(safe-area-inset-top));
+  right: 12px;
+  display: flex;
+  gap: 6px;
+  z-index: 70;
+}
+.float-btn {
+  background: var(--paper); border: 1px solid var(--border); border-radius: 999px;
+  width: 36px; height: 36px; padding: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem; cursor: pointer;
+  box-shadow: 0 2px 6px rgba(74,50,30,0.12);
+  opacity: 0.85;
+  color: var(--sub);
+}
+.float-btn:active { transform: scale(0.94); }
+.bgm-toggle.muted { opacity: 0.5; }
+.ruby-toggle { font-size: 0.95rem; font-weight: 800; opacity: 0.5; }
+body.show-ruby .ruby-toggle { opacity: 1; color: var(--accent); border-color: var(--accent); }
+
+/* 結果モーダル (チェックポイント / 合格 / 不合格) のマスコットを縮小し、
+   全体が縦に間延びしないようにする。inline style もここで上書き。 */
+.modal { padding: 24px 18px; gap: 8px; }
+.modal .mascot { width: 96px !important; height: 120px !important; margin: 0 auto 4px !important; }
+.modal h2 { font-size: 1.15rem; margin: 4px 0; }
+.modal .praise { font-size: 0.95rem; }
+.modal .sub { font-size: 0.82rem; }
+.modal .actions { gap: 6px; margin-top: 4px; }
+.modal .actions .btn { padding: 12px 18px; font-size: 0.95rem; }
+
+/* ===== Footer Tabs ===== */
+/* タブ表示中は body 上揃え + .app をフッター分縮める (top が切れず bottom がフッター上に着地) */
+body.has-tabs { align-items: flex-start; }
+body.has-tabs .app {
+  height: calc(100svh - 64px - env(safe-area-inset-bottom));
+  max-height: calc(100svh - 64px - env(safe-area-inset-bottom));
+}
+@media (min-width: 500px) {
+  body.has-tabs { align-items: center; }
+  body.has-tabs .app {
+    height: min(900px, calc(100svh - 64px - env(safe-area-inset-bottom) - 32px));
+    max-height: min(900px, calc(100svh - 64px - env(safe-area-inset-bottom) - 32px));
+  }
+}
+.footer-tabs {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 440px;
+  display: none;
+  background: rgba(255, 253, 247, 0.97);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid var(--border);
+  padding: 6px 0 max(6px, env(safe-area-inset-bottom));
+  z-index: 50;
+}
+body.has-tabs .footer-tabs { display: flex; }
+.tab-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: var(--sub);
+  font-size: 0.68rem;
+  font-weight: 700;
+  -webkit-tap-highlight-color: transparent;
+}
+.tab-btn .tab-icon { font-size: 1.3rem; line-height: 1; }
+.tab-btn.active { color: var(--accent); }
+.tab-btn:active { transform: scale(0.94); }
+
+/* ===== Review screen ===== */
+.section-h2 { margin: 12px 0 8px; font-size: 1.05rem; font-weight: 800; }
+.section-lead { font-size: 0.84rem; color: var(--sub); line-height: 1.6; margin: 0 0 14px; }
+.review-empty {
+  text-align: center;
+  padding: 36px 18px;
+  background: var(--paper);
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  color: var(--sub);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.review-stage-card {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: var(--shadow);
+}
+.review-stage-card .icon {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.review-stage-card .info { flex: 1; min-width: 0; }
+.review-stage-card .name { font-size: 0.98rem; font-weight: 700; }
+.review-stage-card .sub { font-size: 0.78rem; color: var(--sub); margin-top: 1px; }
+.review-words-toggle {
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 8px; padding: 6px 10px;
+  font-size: 0.78rem; font-weight: 700; color: var(--sub);
+  cursor: pointer;
+}
+.review-words-toggle.open { background: var(--accent); color: white; border-color: var(--accent); }
+.review-word-list {
+  display: none;
+  margin: 0 0 10px;
+  padding: 10px 12px;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  margin-top: -8px;
+  font-size: 0.86rem;
+  max-height: 280px;
+  overflow-y: auto;
+}
+.review-word-list.open { display: block; }
+.review-word-item {
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--border);
+  display: flex;
+  gap: 10px;
+}
+.review-word-item:last-child { border-bottom: none; }
+.review-word-item .w { font-weight: 700; color: var(--accent); min-width: 90px; }
+.review-word-item .m { color: var(--sub); font-size: 0.82rem; }
+
+/* ===== Stats screen ===== */
+.stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.stat-card {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+.stat-card.big {
+  grid-column: 1 / 3;
+  background: linear-gradient(135deg, #FFE9A8 0%, #F4A26A 100%);
+  border-color: transparent;
+  color: #2A1F14;
+}
+.stat-card .stat-label {
+  font-size: 0.72rem;
+  color: var(--sub);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.stat-card.big .stat-label { color: rgba(42, 31, 20, 0.8); }
+.stat-card .stat-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: 4px;
+  line-height: 1;
+}
+.stat-card.big .stat-value { font-size: 2.6rem; display: flex; align-items: baseline; gap: 4px; }
+.stat-card .stat-unit { font-size: 0.7em; opacity: 0.7; margin-left: 2px; font-weight: 700; }
+.stat-card .stat-flame {
+  position: absolute;
+  right: 12px; top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.4rem;
+  opacity: 0.85;
+}
+.stage-stat-row {
+  display: flex; gap: 12px; align-items: center;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+}
+.stage-stat-row .ss-icon {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem;
+}
+.stage-stat-row .ss-info { flex: 1; min-width: 0; }
+.stage-stat-row .ss-name { font-size: 0.92rem; font-weight: 700; }
+.stage-stat-row .ss-meta { font-size: 0.74rem; color: var(--sub); margin-top: 1px; }
+.stage-stat-row .ss-bar {
+  height: 5px; background: var(--border); border-radius: 999px;
+  overflow: hidden; margin-top: 5px;
+}
+.stage-stat-row .ss-bar > div {
+  height: 100%; background: var(--accent); transition: width 0.3s;
+}
+.stage-stat-row .ss-lessons { font-size: 0.7rem; color: var(--sub); margin-top: 3px; }
+
+/* ===== Settings screen ===== */
+.settings-list { display: flex; flex-direction: column; gap: 0; margin-top: 4px; }
+.settings-row {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 0;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom-width: 0;
+}
+.settings-row:first-of-type { border-radius: 12px 12px 0 0; }
+.settings-row:last-of-type { border-radius: 0 0 12px 12px; border-bottom-width: 1px; }
+.settings-row > div:first-child { flex: 1; min-width: 0; }
+.settings-row .set-label { font-size: 0.95rem; font-weight: 700; }
+.settings-row .set-desc { font-size: 0.75rem; color: var(--sub); margin-top: 2px; }
+.settings-row select {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 10px;
+  background: white;
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+.settings-row select:disabled { color: var(--sub); background: var(--bg); }
+/* iOS-like switch */
+.switch { position: relative; display: inline-block; width: 50px; height: 28px; flex-shrink: 0; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.switch span {
+  position: absolute; inset: 0;
+  background: var(--border); border-radius: 999px;
+  cursor: pointer; transition: background 0.2s;
+}
+.switch span::before {
+  content: ''; position: absolute;
+  left: 2px; top: 2px;
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  transition: left 0.2s;
+}
+.switch input:checked + span { background: var(--accent); }
+.switch input:checked + span::before { left: 24px; }
+.settings-divider { height: 22px; }
+/* Reminder block (set-label 行の下に展開) */
+.reminder-row { align-items: flex-start; }
+.reminder-controls { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+.reminder-time-label {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 0.78rem; color: var(--sub); font-weight: 700;
+}
+.reminder-time-label input[type="time"] {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 10px;
+  background: white;
+  font: inherit;
+  font-size: 0.95rem;
+  color: var(--ink);
+  -webkit-appearance: none;
+}
+.reminder-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+.reminder-btn {
+  flex: 1 1 auto;
+  background: var(--accent); color: white;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.82rem; font-weight: 700;
+  cursor: pointer; white-space: nowrap;
+}
+.reminder-btn:active { transform: scale(0.97); }
+.reminder-btn.ghost { background: white; color: var(--accent); }
+.settings-list .btn { margin-top: 4px; }
+.pwa-install-btn {
+  display: inline-block;
+  background: var(--accent); color: white;
+  border: none; border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 0.82rem; font-weight: 700;
+  cursor: pointer;
+}
+.pwa-install-btn:disabled { background: var(--border); color: var(--sub); cursor: default; }
+  /* GASflare: 先生のURL経由で入ったときだけ出る「記録中」バッジ */
+  .login-bar{display:flex;justify-content:flex-end;padding:10px 12px 0}
+  .login-slot{position:relative;display:flex;align-items:center}
+  .gf-badge{border:1.5px solid rgba(0,0,0,.12);background:#fff;color:#333;border-radius:999px;
+    font-family:inherit;font-size:.74rem;font-weight:800;padding:7px 13px;cursor:pointer;white-space:nowrap;
+    transition:.12s;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+  .gf-badge:active{transform:scale(.95)}
+  .gf-note{position:absolute;top:38px;right:0;background:#fff;border:1px solid rgba(0,0,0,.12);border-radius:8px;
+    padding:6px 9px;font-size:.68rem;font-weight:700;color:#b03a1a;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.12);z-index:20}
+
+  /* ストリーク: 褒めトースト・お祝いモーダル */
+  .stk-toast{position:fixed;left:50%;bottom:88px;transform:translate(-50%,16px);opacity:0;z-index:10000;
+    background:#2a2a30;color:#fff;font-weight:800;font-size:.92rem;padding:12px 22px;border-radius:999px;
+    box-shadow:0 8px 24px rgba(0,0,0,.35);pointer-events:none;transition:.3s ease;white-space:nowrap}
+  .stk-toast.show{transform:translate(-50%,0);opacity:1}
+  .stk-modal{position:fixed;inset:0;background:rgba(20,16,10,.55);display:flex;align-items:center;justify-content:center;z-index:10001}
+  .stk-card{background:#fff;border-radius:22px;padding:30px 26px 22px;width:min(330px,86vw);text-align:center;
+    box-shadow:0 18px 60px rgba(0,0,0,.35);animation:stkpop .35s cubic-bezier(.2,1.4,.4,1)}
+  @keyframes stkpop{0%{transform:scale(.7);opacity:0}100%{transform:scale(1);opacity:1}}
+  .stk-flame{font-size:3.2rem;line-height:1;animation:stkflame 1s ease infinite alternate}
+  @keyframes stkflame{to{transform:scale(1.12) rotate(3deg)}}
+  @media (prefers-reduced-motion:reduce){.stk-flame,.stk-card{animation:none}}
+  .stk-days{font-size:1.7rem;font-weight:900;color:#c73e1d;margin-top:8px}
+  .stk-msg{font-size:.9rem;color:#555;line-height:1.7;margin-top:8px}
+  .stk-earn{margin-top:14px;background:#eaf4fb;border-radius:12px;padding:10px 12px;font-weight:800;font-size:.88rem;color:#1e6091}
+  .stk-earn span{display:block;font-weight:600;font-size:.72rem;color:#4a7ba6;margin-top:4px;line-height:1.6}
+  .stk-ok{margin-top:16px;border:none;border-radius:999px;background:#c73e1d;color:#fff;font-family:inherit;
+    font-size:1rem;font-weight:800;padding:12px 40px;cursor:pointer}
+  .stat-freeze{font-size:.8rem;font-weight:800;color:#1e6091;margin-top:4px}
+</style>
+</head>
+<body>
+
+<div class="app">
+  <!-- スタート画面 -->
+  <div class="screen active" id="screen-start">
+    <div class="login-bar"><span class="login-slot" id="wt-login"></span></div>
+    <div class="hero" style="padding: 56px 0 24px">
+      <h1>Word<span class="taco">Tacos</span></h1>
+      <div class="tagline">日本語に包んでやさしく学ぶ英単語!</div>
+      <div class="mascot bounce" id="start-mascot" style="margin-top: 28px; width: 240px; height: 300px">
+        <img data-emotion="idle" src="app_assets/mascot/idle.png">
+        <img data-emotion="blink" src="app_assets/mascot/blink.png">
+        <img data-emotion="proud" src="app_assets/mascot/proud.png">
+        <img data-emotion="speaking" src="app_assets/mascot/speaking.png">
+      </div>
+    </div>
+    <button class="btn" id="start-btn" style="margin-top: 16px">スタート</button>
+    <div class="credits" style="margin-top: 24px; padding: 0 12px 12px; font-size: 0.68rem; color: var(--sub); text-align: center; line-height: 1.7;">
+      効果音・音楽: <a href="https://otologic.jp" target="_blank" rel="noopener" style="color: var(--sub); text-decoration: underline;">OtoLogic</a> / <a href="https://soundeffect-lab.info" target="_blank" rel="noopener" style="color: var(--sub); text-decoration: underline;">効果音ラボ</a> / <a href="https://www.nakano-sound.com/" target="_blank" rel="noopener" style="color: var(--sub); text-decoration: underline;">red bears</a><br>
+      © TeacherTacos
+    </div>
+  </div>
+
+  <!-- ステージ選択(中学〜高校のレベル一覧) -->
+  <div class="screen" id="screen-stages">
+    <div class="topbar">
+      <button class="back" onclick="backToStart()">←</button>
+      <span class="stage-name">レベルを選ぶ</span>
+      <div style="flex:1"></div>
+    </div>
+    <div class="toolbar" style="justify-content:flex-end">
+      <button class="btn ghost" id="reset-btn">進捗をリセット</button>
+    </div>
+    <div class="stages" id="stages"></div>
+  </div>
+
+  <!-- レッスン選択 -->
+  <div class="screen" id="screen-lessons">
+    <div class="topbar">
+      <button class="back" onclick="goHome()">← 戻る</button>
+      <span class="stage-name" id="lesson-stage-name"></span>
+      <div style="flex:1"></div>
+    </div>
+    <div class="lesson-list" id="lesson-list"></div>
+  </div>
+
+  <!-- クイズ -->
+  <div class="screen" id="screen-quiz">
+    <div class="topbar">
+      <button class="back" onclick="quitToLessons()">← 戻る</button>
+      <span class="stage-name" id="quiz-stage-name"></span>
+      <span class="phase-tag" id="phase-tag">本編</span>
+      <div class="progress-mini"><div id="progress-fill"></div></div>
+      <span id="quiz-progress"></span>
+    </div>
+    <div class="qcard">
+      <div class="q-counter" id="q-counter"></div>
+      <div class="timer-bar-wrap"><div class="timer-bar" id="timer-bar"></div></div>
+      <div class="qbody" id="qbody"></div>
+      <div class="audio-row"><button class="audio-btn" id="play-en-btn">🔊 もう一度聞く</button></div>
+      <div class="choices" id="choices"></div>
+    </div>
+  </div>
+
+  <!-- 復習 -->
+  <div class="screen" id="screen-review">
+    <div class="topbar">
+      <span class="stage-name">🔁 復習</span>
+      <div style="flex:1"></div>
+    </div>
+    <div id="review-body"></div>
+  </div>
+
+  <!-- 統計 -->
+  <div class="screen" id="screen-stats">
+    <div class="topbar">
+      <span class="stage-name">📊 学習統計</span>
+      <div style="flex:1"></div>
+    </div>
+    <div id="stats-body"></div>
+  </div>
+
+  <!-- 設定 -->
+  <div class="screen" id="screen-settings">
+    <div class="topbar">
+      <span class="stage-name">⚙️ 設定</span>
+      <div style="flex:1"></div>
+    </div>
+    <div id="settings-body"></div>
+  </div>
+
+  <!-- フッタータブ (学習中/タイトル中は非表示) -->
+  <nav class="footer-tabs" id="footer-tabs" aria-label="メインタブ">
+    <button class="tab-btn" data-tab="screen-stages" type="button">
+      <span class="tab-icon">📚</span><span>学習</span>
+    </button>
+    <button class="tab-btn" data-tab="screen-review" type="button">
+      <span class="tab-icon">🔁</span><span>復習</span>
+    </button>
+    <button class="tab-btn" data-tab="screen-stats" type="button">
+      <span class="tab-icon">📊</span><span>統計</span>
+    </button>
+    <button class="tab-btn" data-tab="screen-settings" type="button">
+      <span class="tab-icon">⚙️</span><span>設定</span>
+    </button>
+  </nav>
+
+  <!-- 回答後フィードバック (半透明背景 + 中央フロートカード)。
+       .app 内に absolute で出すことで、PC でもスマホ枠の中だけを覆う。
+       背後のクイズ画面 (本文+選択肢) が透けて見えるので、回答した文脈ごと思い出せる。 -->
+  <div class="answer-overlay" id="answer-overlay" aria-hidden="true">
+    <div class="ao-card">
+      <div class="ao-header">
+        <div class="ao-word" id="ao-word"></div>
+        <div class="ao-verdict" id="ao-verdict"></div>
+      </div>
+      <div class="ao-meaning" id="ao-meaning"></div>
+      <div class="ao-choices" id="ao-choices"></div>
+      <div class="ao-explanation" id="ao-explanation"></div>
+      <button class="btn" id="next-btn">次へ →</button>
+    </div>
+  </div>
+
+  <!-- 右上フロートツール (スマホ枠内に常駐): ふりがな表示トグルとBGMトグル。
+       ふりがなはアプリ全体に効くので学習中も操作可能、BGMは学習中は自動停止する。 -->
+  <div class="float-tools">
+    <button class="float-btn ruby-toggle" id="ruby-toggle-btn" type="button" aria-label="ふりがな 切替">あ</button>
+    <button class="float-btn bgm-toggle" id="bgm-toggle" type="button" aria-label="BGM 切替">🎵</button>
+  </div>
+</div>
+
+<!-- メインテーマBGM。<audio> はDOMの位置に依存しないので body 直下のまま。 -->
+<audio id="bgm" loop preload="auto" src="app_assets/theme.mp3"></audio>
+
+<!-- 全画面 丸/バツ オーバーレイ -->
+<div class="overlay-mark" id="overlay-mark"><div class="symbol" id="overlay-symbol">○</div></div>
+
+<!-- 中間/最終モーダル -->
+<div class="modal-bg" id="modal-bg">
+  <div class="modal" id="modal">
+    <div class="mascot pop" id="modal-mascot" style="width:160px;height:200px;margin:0 auto">
+      <img data-emotion="idle" src="app_assets/mascot/idle.png">
+      <img data-emotion="proud" src="app_assets/mascot/proud.png">
+      <img data-emotion="speaking" src="app_assets/mascot/speaking.png">
+      <img data-emotion="thinking" src="app_assets/mascot/thinking.png">
+      <img data-emotion="surprised" src="app_assets/mascot/surprised.png">
+      <img data-emotion="worried" src="app_assets/mascot/worried.png">
+      <img data-emotion="cheering" src="app_assets/mascot/cheering.png">
+      <img data-emotion="grinning" src="app_assets/mascot/grinning.png">
+      <img data-emotion="encouraging" src="app_assets/mascot/encouraging.png">
+      <img data-emotion="cheering_warm" src="app_assets/mascot/cheering_warm.png">
+    </div>
+    <h2 id="modal-title"></h2>
+    <div class="praise" id="modal-praise"></div>
+    <div class="rate" id="modal-rate"></div>
+    <div class="sub" id="modal-sub"></div>
+    <div id="modal-extra"></div>
+    <div class="actions" id="modal-actions"></div>
+  </div>
+</div>
+
+<!-- ローディング -->
+<div class="loading-bg" id="loading-bg">
+  <div class="mascot bounce" id="loading-mascot">
+    <img data-emotion="thinking" src="app_assets/mascot/thinking.png">
+  </div>
+  <div class="label" id="loading-label">読み込み中...</div>
+</div>
+
+<script>
+// ===== 小さい画面フィット (fit-to-screen) =====
+// 画面高が設計基準に満たない端末では、アプリ全体を一様に縮小して全要素を必ず表示する。
+// (スクロールに頼らず「全体が縮む」挙動。Chromebookの表示スケーリング/ズーム対策)
+const FIT_DESIGN_H = 760;   // この高さで全画面が綺麗に収まる設計基準
+const FIT_MIN_H = 720;      // これ以上の画面高なら通常レイアウト(縮小しない)
+function fitApp() {
+  const app = document.querySelector('.app');
+  if (!app) return;
+  const vh = window.innerHeight;
+  if (vh >= FIT_MIN_H) {
+    app.classList.remove('fit-scale');
+    document.body.classList.remove('fit-active');
+    app.style.removeProperty('--fit-scale');
+    app.style.removeProperty('--fit-h');
+  } else {
+    // 縮小率 = 実画面高 / 設計基準高 (縦がちょうど収まる)。幅は一様縮小で自然に収まる。
+    const scale = Math.min(vh / FIT_DESIGN_H, 1);
+    app.style.setProperty('--fit-h', FIT_DESIGN_H + 'px');
+    app.style.setProperty('--fit-scale', scale.toFixed(4));
+    app.classList.add('fit-scale');
+    document.body.classList.add('fit-active');
+  }
+}
+window.addEventListener('resize', fitApp);
+window.addEventListener('orientationchange', fitApp);
+fitApp();
+
+// ===== Mascot helpers =====
+function setMascot(elemId, emotion) {
+  const c = document.getElementById(elemId);
+  if (!c) return;
+  c.querySelectorAll('img').forEach(img => {
+    img.classList.toggle('active', img.dataset.emotion === emotion);
+  });
+}
+function animateMascot(elemId, animClass, dur) {
+  const c = document.getElementById(elemId);
+  if (!c) return;
+  c.classList.add(animClass);
+  setTimeout(() => c.classList.remove(animClass), dur || 500);
+}
+// まばたきループ (idle ↔ blink を ランダム間隔で)
+function startBlinkLoop(elemId, idleEmotion = 'idle', blinkEmotion = 'blink') {
+  function tick() {
+    setMascot(elemId, blinkEmotion);
+    setTimeout(() => {
+      setMascot(elemId, idleEmotion);
+      const next = 2000 + Math.random() * 3000;
+      setTimeout(tick, next);
+    }, 120);
+  }
+  setMascot(elemId, idleEmotion);
+  setTimeout(tick, 2000 + Math.random() * 2000);
+}
+function showLoading(label) {
+  document.getElementById('loading-label').innerText = label || '読み込み中...';
+  document.getElementById('loading-bg').classList.add('active');
+}
+function hideLoading() {
+  document.getElementById('loading-bg').classList.remove('active');
+}
+
+// ===== Stage 定義 =====
+const STAGES = [
+  { id: 'stage1', name: '中1', sub: '中学1年生範囲', icon: '🌱', total: 424, src: 'stage1_quizzes_clean.json' },
+  { id: 'stage2', name: '中2', sub: '中学2年生範囲', icon: '🌿', total: 400, src: 'stage2_quizzes_clean.json' },
+  { id: 'stage3', name: '中3', sub: '中学3年生範囲', icon: '🌳', total: 311, src: 'stage3_quizzes_clean.json' },
+  { id: 'stage4', name: '中学発展', sub: '中学範囲の発展', icon: '🍀', total: 624, src: 'stage4_quizzes_clean.json' },
+  { id: 'stage5a', name: '高校入門', sub: 'CEFR B1 前半 (やさしめ)', icon: '🌱', total: 1360, src: 'stage5_quizzes_clean.json', audioStage: 'stage5', sliceStart: 0, sliceEnd: 1360 },
+  { id: 'stage5b', name: '高校標準', sub: 'CEFR B1 後半 (高1〜高2)', icon: '🌿', total: 1360, src: 'stage5_quizzes_clean.json', audioStage: 'stage5', sliceStart: 1360, sliceEnd: 2720 },
+  { id: 'stage6a', name: '高校上級', sub: 'CEFR B2 前半 (高2〜高3)', icon: '🌶️', total: 1197, src: 'stage6_quizzes_clean.json', audioStage: 'stage6', sliceStart: 0, sliceEnd: 1197 },
+  { id: 'stage6b', name: '高校発展', sub: 'CEFR B2 後半 (受験)', icon: '🔥', total: 1197, src: 'stage6_quizzes_clean.json', audioStage: 'stage6', sliceStart: 1197, sliceEnd: 2394 },
+  // TOEIC ステージ (頻出順を3バンドに分割)
+  { id: 'stage_toeic_basic', name: 'TOEIC 〜600', sub: 'CEFR A1〜A2 (150語)', icon: '💼', total: 150, src: 'stage_toeic_basic_quizzes_clean.json' },
+  { id: 'stage_toeic_mid', name: 'TOEIC 600〜790', sub: 'CEFR B1 (340語)', icon: '📊', total: 340, src: 'stage_toeic_mid_quizzes_clean.json' },
+  { id: 'stage_toeic_high', name: 'TOEIC 790〜860', sub: 'CEFR B2 (296語)', icon: '🏆', total: 296, src: 'stage_toeic_high_quizzes_clean.json' },
+  { id: 'stage_toeic_expert', name: 'TOEIC 860〜', sub: 'CEFR C1 学術・上級ビジネス (300語)', icon: '🎓', total: 300, src: 'stage_toeic_expert_quizzes_clean.json' },
+];
+const LESSON_SIZE = 100;
+const CHECK_INTERVAL = 10;
+const PROMO_PASS_STREAK = 10;   // 昇級テスト: 連続正解で合格(間違えるとストリークがリセットされ継続)
+const TIME_LIMIT = 20;          // 本編・復習: 1問あたり秒
+const TIME_LIMIT_PROMO = 40;    // 昇級テスト: 文章4つを読み比べる必要があるので長めに
+function currentTimeLimit() { return curPhase === 'promo' ? TIME_LIMIT_PROMO : TIME_LIMIT; }
+const TACOS_THRESHOLD = 0.15;     // 3秒以内 → Tacos!
+const EXCELLENT_THRESHOLD = 0.30; // 6秒以内 → Excellent!
+
+// ===== State =====
+let curStage = null;
+let stageData = null;  // { stage, quizzes }
+let curLesson = 0;     // 0-based
+let curPhase = 'main'; // 'main' | 'retry' | 'promo'
+let curQueue = [];     // 現在の問題id順
+let curIndex = 0;
+let mainErrors = [];   // mainで間違えたid
+let retryErrors = [];  // retryで再度間違えたid
+let promoCorrect = 0;
+let promoTotal = 0;
+let promoStreak = 0;
+let answered = false;
+let answeredCount = 0; // mainフェーズ用 (10問ごとカウント)
+let segmentCorrect = 0;
+let timerId = null;
+let startTime = 0;
+
+// ===== Progress (localStorage) =====
+function getProg(stage) {
+  try { return JSON.parse(localStorage.getItem('wt_prog2_' + stage) || '{}'); }
+  catch { return {}; }
+}
+function setProg(stage, p) { localStorage.setItem('wt_prog2_' + stage, JSON.stringify(p));
+  try { if (window.gasflare) window.gasflare.pushLater(); } catch (e) {} }   // 先生のURL経由なら記録も送る
+
+// ===== GASflare（先生のスプレッドシートへ記録） =====
+// 生徒が「先生が配ったURL」を踏むと ?tt=<署名トークン> 付きでここへ来る。
+// 以降、進捗が動くたびに**その先生のGAS**へ送られ、先生のシートにだけ溜まる。
+// 進捗の正本はあくまで localStorage。GASが落ちていてもアプリは止まらない。
+var GF_SIG = 'wt_gf_sig';                                  // 送信済みの内容（変わっていない項目は送らない）
+var VCODE = { tacos: 't', excellent: 'e', good: 'g', wrong: 'w' };
+var VNAME = { t: 'tacos', e: 'excellent', g: 'good', w: 'wrong' };
+
+// レッスン1つぶんの学習内容を数え上げる（単語ごとの判定 verdict が原本）
+function gfLessonStat(lesson) {
+  var v = (lesson && lesson.verdicts) || {};
+  var t = 0, e = 0, g = 0, w = 0, parts = [];
+  Object.keys(v).forEach(function (qid) {
+    var code = VCODE[v[qid]];
+    if (!code) return;
+    parts.push(qid + ':' + code);
+    if (code === 't') t++; else if (code === 'e') e++; else if (code === 'g') g++; else w++;
+  });
+  return { t: t, e: e, g: g, w: w, words: t + e + g,
+           answered: t + e + g + w, detail: parts.join(',') };
+}
+
+function gfEntries(all) {
+  var prev = {}; try { prev = JSON.parse(localStorage.getItem(GF_SIG) || '{}'); } catch (e) { }
+  var out = [];
+  var push = function (entry, sig) {
+    if (!all && prev[entry.item] === sig) return;
+    entry._sig = sig; out.push(entry);
+  };
+
+  STAGES.forEach(function (s) {
+    var p = getProg(s.id), lessons = p.lessons || {};
+    var total = Math.ceil(s.total / LESSON_SIZE);
+    var stWords = 0, stTacos = 0, stExc = 0, passedNums = [], touched = 0;
+
+    Object.keys(lessons).sort(function (a, b) { return a - b; }).forEach(function (k) {
+      var l = lessons[k]; if (!l) return;
+      var st = gfLessonStat(l);
+      // 「解放されただけ・未着手」は数えない（厨房ラッシュが unlocked を先置きするため）
+      if (!l.passed && !st.answered && l.resumeIndex == null && l.resumeQueue == null) return;
+      touched++;
+      var n = Number(k) + 1;
+      if (l.passed) passedNums.push(k);
+      stWords += st.words; stTacos += st.t; stExc += st.e;
+
+      // ---- レッスン1つ = 1項目（単語ごとの判定まで detail に残す） ----
+      var sig = 'L1|' + (l.passed ? 1 : 0) + '|' + st.detail;
+      push({
+        item: s.id + '.L' + (n < 10 ? '0' + n : n),
+        label: s.name + ' L' + n,
+        cell: (l.passed ? '✅ 合格' : '挑戦中') + '\n単語 ' + st.words + (st.w ? '\n誤 ' + st.w : ''),
+        detail: st.detail,                                  // qid:判定 の原本（端末をまたいで完全復元できる）
+        plays: st.answered,
+        clears: l.passed ? 1 : 0,
+        perfect: !!l.passed && st.w === 0 && st.words > 0,  // 1問も落とさず合格
+        stats: { words: st.words, tacos: st.t, excellent: st.e },
+      }, sig);
+    });
+
+    if (!touched) return;
+    // ---- ステージのまとめ = 1項目（一覧性のため。集計値は持たせない＝レッスン側と二重計上しない） ----
+    var sSig = 'S3|' + passedNums.join(',') + '|' + touched + '|' + stWords + '/' + stTacos + '/' + stExc;
+    push({
+      item: s.id,
+      label: s.icon + ' ' + s.name,
+      cell: 'レッスン ' + passedNums.length + '/' + total + ' 合格\n単語 ' + stWords,
+      detail: passedNums.join(','),
+      plays: touched, clears: passedNums.length,
+      perfect: total > 0 && passedNums.length >= total,
+      stats: {},
+    }, sSig);
+  });
+
+  // ---- 連続学習（ストリーク）も1項目として記録する（❄️の保有数・凍結日も含む） ----
+  var dates = [];
+  try { dates = JSON.parse(localStorage.getItem('wt_streak_dates') || '[]'); } catch (e) { }
+  if (dates.length) {
+    var frozen = frozenDates();
+    var fz = freezeCount();
+    var all = dates.concat(frozen);
+    var uniq = {}; all.forEach(function (x) { uniq[x] = 1; });
+    var sorted = Object.keys(uniq).sort();
+    var run = 1;
+    for (var di = sorted.length - 1; di > 0; di--) {
+      var a = new Date(sorted[di]), b = new Date(sorted[di - 1]);
+      if ((a - b) / 86400000 === 1) run++; else break;
+    }
+    var dSig = 'D2|' + sorted.join(',') + '|' + fz;
+    push({
+      item: 'streak0',
+      label: '🔥 連続学習',
+      cell: '連続 ' + run + '日\n累計 ' + dates.length + '日' + (fz ? '\n❄️×' + fz : ''),
+      // 復元用: 学習日;F=凍結日;C=❄️保有数
+      detail: dates.slice().sort().slice(-90).join(',') + ';F=' + frozen.slice(-30).join(',') + ';C=' + fz,
+      plays: dates.length, clears: run,
+      perfect: false, stats: {},
+    }, dSig);
+  }
+  return out;
+}
+function gfCommit(entries) {                               // 送れた分を「送信済み」として覚える
+  var prev = {}; try { prev = JSON.parse(localStorage.getItem(GF_SIG) || '{}'); } catch (e) { }
+  entries.forEach(function (e) { if (e._sig) prev[e.item] = e._sig; });
+  try { localStorage.setItem(GF_SIG, JSON.stringify(prev)); } catch (e) { }
+}
+// クラウドの記録をローカルへ反映（別端末の続きを引き継ぐ。「消さない方向」でのみ結合）
+function gfApply(progress) {
+  if (!progress || typeof progress !== 'object') return;
+  STAGES.forEach(function (s) {
+    var p = null, changed = false;
+    var ensure = function () { if (!p) { p = getProg(s.id); p.lessons = p.lessons || {}; } };
+
+    Object.keys(progress).forEach(function (item) {
+      // レッスン項目: stage1.L03 の形式。単語ごとの判定まで書き戻す（ローカルに無い分だけ）
+      if (item.indexOf(s.id + '.L') !== 0) return;
+      var d = progress[item] || {};
+      var n = parseInt(item.slice((s.id + '.L').length), 10);
+      if (!isFinite(n)) return;
+      ensure();
+      var k = String(n - 1);
+      var cur = p.lessons[k] || { phase: 'main' };
+      var verd = cur.verdicts || {};
+      String(d.detail || '').split(',').forEach(function (pair) {
+        var m = pair.split(':');
+        if (m.length !== 2 || !VNAME[m[1]]) return;
+        if (!verd[m[0]]) { verd[m[0]] = VNAME[m[1]]; changed = true; }
+      });
+      cur.verdicts = verd;
+      if (d.clears > 0 && !cur.passed) { cur.passed = true; changed = true; }
+      p.lessons[k] = cur;
+    });
+
+    // ステージまとめ項目（旧形式との互換もこれで拾う）
+    var sd = progress[s.id];
+    if (sd && sd.detail) {
+      ensure();
+      String(sd.detail).split(',').forEach(function (k) {
+        if (k === '') return;
+        var cur = p.lessons[k] || { phase: 'main' };
+        if (!cur.passed) { p.lessons[k] = Object.assign({}, cur, { passed: true }); changed = true; }
+      });
+    }
+    if (changed) localStorage.setItem('wt_prog2_' + s.id, JSON.stringify(p));
+  });
+
+  // ストリーク: 学習日・凍結日は和集合、❄️保有数は大きい方
+  var st = progress['streak0'];
+  if (st && st.detail) {
+    var parts = String(st.detail).split(';');
+    var rDates = (parts[0] || '').split(',');
+    var rFrozen = [], rCount = 0;
+    parts.slice(1).forEach(function (seg) {
+      if (seg.indexOf('F=') === 0) rFrozen = seg.slice(2).split(',');
+      if (seg.indexOf('C=') === 0) rCount = parseInt(seg.slice(2), 10) || 0;
+    });
+    var dates = [];
+    try { dates = JSON.parse(localStorage.getItem('wt_streak_dates') || '[]'); } catch (e) { }
+    var set = {}; dates.concat(rDates).forEach(function (x) { if (x) set[x] = 1; });
+    localStorage.setItem('wt_streak_dates', JSON.stringify(Object.keys(set).sort()));
+    if (rFrozen.length) {
+      var fset = {}; frozenDates().concat(rFrozen).forEach(function (x) { if (x) fset[x] = 1; });
+      localStorage.setItem('wt_streak_frozen', JSON.stringify(Object.keys(fset).sort().slice(-120)));
+    }
+    if (rCount > freezeCount()) setFreezeCount(rCount);
+  }
+  // ここで「送信済み」にはしない。送信済みはGASがokを返した分だけ（onPushed）。
+}
+window.TT_GASFLARE = {
+  app: 'wt',
+  // GASへの自己紹介。GAS側は全アプリ共通コードなので、タイトルや集計列はアプリが名乗る
+  manifest: { title: 'WordTacos（英単語）',
+    headers: { plays: 'のべレッスン', done: '達成ステージ', rate: '到達率' },
+    stats: [{ key: 'words', label: '学習済み単語' }, { key: 'tacos', label: '🌮 Tacos' }, { key: 'excellent', label: 'Excellent' }] },
+  mount: function () { return document.getElementById('wt-login'); },
+  // この端末の進捗を構成する localStorage の鍵。持ち主が入れ替わったとき、
+  // gasflare.js がこれらを丸ごと退避・書き戻しする（他人の進捗を自分のアカウントに足さないため）
+  keys: function () {
+    return STAGES.map(function (s) { return 'wt_prog2_' + s.id; })
+      .concat(['wt_streak_dates', 'wt_streak_frozen', 'wt_streak_freeze',
+               'wt_streak_freeze_check', 'wt_streak_award', GF_SIG, 'wt_gf_logq']);
+  },
+  // 進捗は getProg() が毎回 localStorage を読むので、メモリ上の再構築は要らない
+  collect: function () { return gfEntries(false); },
+  onPushed: gfCommit,
+  apply: gfApply,
+  onSynced: function () { try { if (typeof renderHome === 'function') renderHome(); } catch (e) { } },
+};
+
+// 旧昇級試験 (curPhase='promo' / 文脈マッチング型) の残骸を保存データから取り除く。
+// この昇級試験は kitchen_rush_prototype.html に置き換えられたので、
+// phase='promo' / promoQueue / 旧 promo な resumeQueue は完全に捨てる。
+function migrateLegacyPromoState() {
+  for (const s of STAGES) {
+    const p = getProg(s.id);
+    if (!p.lessons) continue;
+    let dirty = false;
+    for (const k of Object.keys(p.lessons)) {
+      const st = p.lessons[k];
+      if (st.phase === 'promo' || st.promoQueue || st.resumePromoStreak != null || st.resumePromoCorrect != null || st.resumePromoTotal != null) {
+        delete st.promoQueue;
+        delete st.resumePromoCorrect;
+        delete st.resumePromoTotal;
+        delete st.resumePromoStreak;
+        // phase='promo' で保存されていた場合、resumeQueue は promo シャッフルなので捨てる
+        if (st.phase === 'promo') {
+          st.resumeQueue = null;
+          st.resumeIndex = null;
+          st.resumeMainErrors = null;
+          st.resumeRetryErrors = null;
+          st.phase = 'main';
+        }
+        dirty = true;
+      }
+    }
+    if (dirty) setProg(s.id, p);
+  }
+}
+try { migrateLegacyPromoState(); } catch (e) { console.warn('promo migration failed', e); }
+
+function lessonStatus(stage, lessonIdx) {
+  const p = getProg(stage);
+  return (p.lessons || {})[lessonIdx] || { phase: 'main', passed: false };
+}
+function setLessonStatus(stage, lessonIdx, status) {
+  const p = getProg(stage);
+  p.lessons = p.lessons || {};
+  // verdict履歴は保持
+  const cur = p.lessons[lessonIdx] || {};
+  p.lessons[lessonIdx] = {...cur, ...status};
+  setProg(stage, p);
+}
+function saveResumeState() {
+  if (!curStage || curLesson == null) return;
+  // 旧昇級試験フェーズは保存しない (Kitchen Rush 専用に分離済み)
+  const safePhase = curPhase === 'retry' ? 'retry' : 'main';
+  setLessonStatus(curStage, curLesson, {
+    phase: safePhase,
+    resumeIndex: curIndex,
+    resumeQueue: curQueue,
+    resumeMainErrors: mainErrors,
+    resumeRetryErrors: retryErrors,
+    resumeSegmentCorrect: segmentCorrect,
+  });
+}
+function recordVerdict(stage, lessonIdx, qid, verdict) {
+  const p = getProg(stage);
+  p.lessons = p.lessons || {};
+  const cur = p.lessons[lessonIdx] || { phase: 'main', passed: false };
+  cur.verdicts = cur.verdicts || {};
+  cur.verdicts[qid] = verdict;
+  p.lessons[lessonIdx] = cur;
+  setProg(stage, p);
+}
+function lessonVerdicts(stage, lessonIdx) {
+  return (lessonStatus(stage, lessonIdx).verdicts) || {};
+}
+// 円グラフ (SVG)
+const VERDICT_COLORS = { tacos: '#E8B647', excellent: '#4A7C59', good: '#6FA9E5', wrong: '#D2342B', unanswered: '#D8CDB7' };
+const VERDICT_LABELS = { tacos: 'Tacos!', excellent: 'Excellent', good: 'Good', wrong: '✖️', unanswered: '未回答' };
+function pieChartSVG(data, size) {
+  const total = data.reduce((a, b) => a + b.count, 0);
+  if (total === 0) return '';
+  const cx = size/2, cy = size/2, r = size/2;
+  let cumulative = 0;
+  let slices = '';
+  for (const d of data) {
+    if (d.count === 0) continue;
+    const a0 = (cumulative / total) * Math.PI * 2 - Math.PI/2;
+    cumulative += d.count;
+    const a1 = (cumulative / total) * Math.PI * 2 - Math.PI/2;
+    if (d.count === total) {
+      slices += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${d.color}"/>`;
+      continue;
+    }
+    const x0 = cx + r * Math.cos(a0), y0 = cy + r * Math.sin(a0);
+    const x1 = cx + r * Math.cos(a1), y1 = cy + r * Math.sin(a1);
+    const large = (a1 - a0) > Math.PI ? 1 : 0;
+    slices += `<path d="M ${cx},${cy} L ${x0},${y0} A ${r},${r} 0 ${large},1 ${x1},${y1} Z" fill="${d.color}"/>`;
+  }
+  // 中心穴 (ドーナツ)
+  slices += `<circle cx="${cx}" cy="${cy}" r="${r*0.42}" fill="#FFFDF7"/>`;
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" style="display:block;margin:0 auto">${slices}</svg>`;
+}
+function verdictBreakdown(stage, lessonIdx) {
+  const verdicts = lessonVerdicts(stage, lessonIdx);
+  const startIdx = lessonIdx * LESSON_SIZE;
+  const endIdx = Math.min(startIdx + LESSON_SIZE, stageData.quizzes.length);
+  const total = endIdx - startIdx;
+  const counts = { tacos: 0, excellent: 0, good: 0, wrong: 0, unanswered: 0 };
+  for (let i = startIdx; i < endIdx; i++) {
+    const qid = stageData.quizzes[i].id;
+    const v = verdicts[qid];
+    if (v) counts[v]++; else counts.unanswered++;
+  }
+  return { counts, total };
+}
+
+// ===== Praise =====
+const PRAISE = {
+  100: [
+    '素晴らしい!　最高のタコスです!',
+    '最高のフィエスタになりそうです!',
+    '完璧!　料理人の腕が冴え渡りますね!',
+    'サルサもライムも黄金のバランスです!',
+  ],
+  90:  [
+    'スパイス効いてます!　もう少しで満点フィエスタ!',
+    'あと一味で完璧、味が決まってますね!',
+    'サルサがキレッキレです!',
+    'ホットソースが冴えわたります!',
+  ],
+  80:  [
+    'いい火加減、のってきました🌮',
+    'ライムの酸味、いい感じです!',
+    'ワカモレを補給して次へ!',
+    'いい味出てる、続けよう!',
+  ],
+  70:  [
+    'いい味してる、この調子!',
+    'あと一押しで Excellent!',
+    'ピリッとスパイス足して、続けましょう!',
+    '香りが立ってきた、いい流れです!',
+  ],
+  60:  [
+    'いいね!　フィエスタは続きますよ!',
+    'もう一段、火を強めていこう!',
+    'もっとサルサを！　油断せず!',
+    '粘り強い味!　ノってきましたね！',
+  ],
+  50:  [
+    'タコスは、ここからが本番!',
+    'サルサ・タイムで味を立て直そう!',
+    'リズム取り戻して、いってみよう!',
+    '苦労して作ったタコスほどおいしいんだ!',
+  ],
+  0:   [
+    'ライム絞って、深呼吸して、再挑戦!',
+    '次のタコスはきっと美味しくなる!',
+  ],
+};
+function getPraise(rate) {
+  const buckets = [100, 90, 80, 70, 60, 50, 0];
+  for (const b of buckets) {
+    if (rate >= b) {
+      const list = PRAISE[b];
+      return list[Math.floor(Math.random() * list.length)];
+    }
+  }
+  return '';
+}
+
+// ===== ホーム描画 =====
+function renderHome() {
+  const c = document.getElementById('stages');
+  c.innerHTML = STAGES.map(s => {
+    const p = getProg(s.id);
+    const lessons = p.lessons || {};
+    const passedCount = Object.values(lessons).filter(l => l.passed).length;
+    const totalLessons = Math.ceil(s.total / LESSON_SIZE);
+    const percent = Math.round(passedCount * 100 / totalLessons);
+    return `<div class="stage-card" onclick="enterStage('${s.id}')">
+      <div class="icon">${s.icon}</div>
+      <div class="info">
+        <div class="name">${s.name}</div>
+        <div class="sub">${s.sub} ・ ${s.total}問 (${totalLessons}レッスン)</div>
+        <div class="progress"><div style="width:${percent}%"></div></div>
+        <div class="count">レッスン ${passedCount} / ${totalLessons} 合格</div>
+      </div>
+      <div class="arrow">›</div>
+    </div>`;
+  }).join('');
+}
+
+// ===== ステージ → レッスン選択 =====
+async function enterStage(stageId) {
+  curStage = stageId;
+  const s = STAGES.find(x => x.id === stageId);
+  if (!stageData || stageData.stage !== stageId) {
+    showLoading('クイズを準備中...');
+    const r = await fetch(s.src + '?t=' + Date.now());
+    const raw = await r.json();
+    let quizzes = raw.quizzes;
+    if (typeof s.sliceStart === 'number') {
+      quizzes = quizzes.slice(s.sliceStart, s.sliceEnd);
+    }
+    stageData = { stage: stageId, quizzes };
+    hideLoading();
+  }
+  document.getElementById('lesson-stage-name').innerText = s.name;
+  renderLessons();
+  switchScreen('screen-lessons');
+}
+
+function renderLessons() {
+  const s = STAGES.find(x => x.id === curStage);
+  const totalLessons = Math.ceil(s.total / LESSON_SIZE);
+  const p = getProg(curStage);
+  const lessons = p.lessons || {};
+  const c = document.getElementById('lesson-list');
+  let html = '';
+  for (let i = 0; i < totalLessons; i++) {
+    const status = lessons[i] || { phase: 'main', passed: false };
+    const startIdx = i * LESSON_SIZE;
+    const endIdx = Math.min(startIdx + LESSON_SIZE, s.total);
+    const locked = isLessonLocked(i);
+    const lockedClass = locked ? 'locked' : '';
+    const passedClass = status.passed ? 'passed' : '';
+    const unansweredN = unansweredCount(curStage, i);
+    const phaseStr = status.passed
+        ? (unansweredN > 0 ? `合格 ✓ ・ 未学習 ${unansweredN}語` : '合格 ✓')
+      : locked ? '🔒 タップで昇級試験(開放)'
+      : status.unlocked ? '🔓 スキップ開放済 (未合格)'
+      : status.phase === 'promo' ? '昇級テスト中'
+      : status.phase === 'retry' ? '復習中' : '未着手';
+    html += `<div class="lesson-card ${lockedClass} ${passedClass}" onclick="openLessonMenu(${i})">
+      <div class="num">${i + 1}</div>
+      <div class="desc">
+        <div class="label">レッスン ${i + 1} ・ ${startIdx + 1}〜${endIdx}問</div>
+        <div class="info">${phaseStr}</div>
+      </div>
+      <div class="arrow">›</div>
+    </div>`;
+  }
+  c.innerHTML = html;
+}
+
+// ===== レッスン開始 =====
+function startLesson(lessonIdx) {
+  curLesson = lessonIdx;
+  const status = lessonStatus(curStage, lessonIdx);
+  // 旧昇級試験フェーズ ('promo') はこのアプリ内では使わない (Kitchen Rush 専用)。
+  // 保存済みフェーズは 'main' / 'retry' のみ尊重する。
+  const savedPhase = status.phase === 'retry' ? 'retry' : 'main';
+  // このレッスンの正規ID集合。復元キューはこの範囲内のIDのみで構成されるはず。
+  // 範囲外/無効IDを含む「古い・別レッスン・壊れた」resumeQueue は破棄してフレッシュ開始する(自己修復)。
+  // ← これが無いと、古いlocalStorageのキューをそのまま復元し、別レッスンの問題が出て進めなくなる。
+  const lStart = lessonIdx * LESSON_SIZE;
+  const lEnd = Math.min(lStart + LESSON_SIZE, stageData.quizzes.length);
+  const lessonIds = new Set(stageData.quizzes.slice(lStart, lEnd).map(q => q.id));
+  const validQueue = (arr) => Array.isArray(arr) && arr.length > 0 && arr.every(id => lessonIds.has(id));
+  const rq = status.resumeQueue;
+  // 中断状態があれば復元 (旧 promo シャッフルのキューは migrate 済み)
+  if (savedPhase === 'main' && validQueue(rq) && status.resumeIndex != null && status.resumeIndex < rq.length) {
+    curPhase = 'main';
+    curQueue = rq;
+    curIndex = status.resumeIndex;
+    mainErrors = (status.resumeMainErrors || []).filter(id => lessonIds.has(id));
+    retryErrors = (status.resumeRetryErrors || []).filter(id => lessonIds.has(id));
+    segmentCorrect = 0;
+  } else if (savedPhase === 'retry' && validQueue(status.retryQueue)) {
+    curPhase = 'retry';
+    curQueue = status.retryQueue;
+    curIndex = 0; mainErrors = []; retryErrors = []; segmentCorrect = 0;
+  } else {
+    curPhase = 'main';
+    curQueue = stageData.quizzes.slice(lStart, lEnd).map(q => q.id);
+    mainErrors = []; retryErrors = []; curIndex = 0; segmentCorrect = 0;
+  }
+  // 旧昇級試験の変数は念のため必ずリセット
+  promoCorrect = 0; promoTotal = 0; promoStreak = 0;
+  document.getElementById('quiz-stage-name').innerText = STAGES.find(s => s.id === curStage).name + ' L' + (lessonIdx + 1);
+  switchScreen('screen-quiz');
+  renderQuiz();
+}
+
+// ===== クイズ描画 =====
+function findQuiz(qid) { return stageData.quizzes.find(q => q.id === qid); }
+
+function rubyHTML(text) {
+  if (!text) return '';
+  let s = text;
+  s = s.replace(/<([^>]+)>/g, (m, w) => `<span class="embed">${escapeHtml(w)}</span>`);
+  s = s.replace(/｜([^《》｜]+)《([^》]+)》/g, '<ruby>$1<rt>$2</rt></ruby>');
+  s = s.replace(/([一-龥々〆ヶ]+)《([^》]+)》/g, '<ruby>$1<rt>$2</rt></ruby>');
+  return s;
+}
+// ルビ展開のみを行う（<word> マーカーは触らない）。
+// maskWordTag() で先に <word> を <span> へ置換した文字列を rubyHTML() に通すと、
+// rubyHTML 内の <([^>]+)> 正規表現が span タグ自身を巻き込み、結果として
+// span 全体がテキストとして表示されてしまう（昇級テストの選択肢で発生していた）。
+function rubyOnly(text) {
+  if (!text) return '';
+  let s = text;
+  s = s.replace(/｜([^《》｜]+)《([^》]+)》/g, '<ruby>$1<rt>$2</rt></ruby>');
+  s = s.replace(/([一-龥々〆ヶ]+)《([^》]+)》/g, '<ruby>$1<rt>$2</rt></ruby>');
+  return s;
+}
+function escapeHtml(s) { return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+// 回答後フィードバック: 全画面フロートモーダル制御。
+// 元のクイズ画面を完全に覆い、左上に単語 / 中央に選択肢4つ (○/✗マーク付き) /
+// 意味 / 解説 / 次へ を一画面に集約する。視線移動を最小にする狙い。
+function showFeedback(opts) {
+  const ov = document.getElementById('answer-overlay');
+  document.getElementById('ao-word').textContent = opts.word || '';
+  const v = document.getElementById('ao-verdict');
+  v.innerHTML = (opts.verdictLabel || '')
+    + (opts.elapsed != null ? ` <span class="elapsed">(${opts.elapsed.toFixed(1)}秒)</span>` : '');
+  v.className = 'ao-verdict ' + (opts.verdictKind || '');
+  document.getElementById('ao-meaning').innerHTML =
+    `<span class="label">意味</span><b>${escapeHtml(opts.word || '')}</b> = ${escapeHtml(opts.meaning || '')}`;
+  document.getElementById('ao-choices').innerHTML = (opts.choices || []).map(c =>
+    `<div class="ao-choice ${c.kind || ''}">
+      <span class="mark">${c.mark}</span>
+      <span class="text">${c.text}</span>
+      <span class="marker">${c.kind === 'correct' ? '○' : (c.kind === 'wrong' ? '×' : '')}</span>
+    </div>`
+  ).join('');
+  const e = document.getElementById('ao-explanation');
+  e.innerHTML = opts.explanation || '';
+  e.style.display = opts.explanation ? '' : 'none';
+  ov.classList.add('show');
+  ov.setAttribute('aria-hidden', 'false');
+}
+function hideFeedback() {
+  const ov = document.getElementById('answer-overlay');
+  ov.classList.remove('show');
+  ov.setAttribute('aria-hidden', 'true');
+}
+// モーダルに渡す choices リストを作る (main/retry/promo 共通)。
+function buildOverlayChoices(q, correctIdx, selectedIdx) {
+  let texts;
+  if (curPhase === 'promo') {
+    // promo は事前に rubyOnly(maskWordTag(...)) 済みの HTML が __promoChoices に並んでいる
+    texts = q.__promoChoices || [];
+  } else {
+    const src = q.choices_ruby || q.choices || [];
+    const order = q.__renderOrder || [0, 1, 2, 3];
+    texts = order.map(o => rubyHTML(src[o]));
+  }
+  return texts.map((t, i) => ({
+    mark: 'ABCD'[i],
+    text: t,
+    kind: i === correctIdx ? 'correct' : (i === selectedIdx ? 'wrong' : '')
+  }));
+}
+
+function renderQuiz() {
+  answered = false;
+  // 防御: 無効ID(古い/壊れたキュー)はスキップ。通常は startLesson の検証で発生しないが、
+  // すり抜けても q が undefined で例外→画面ブランク/音声なし/進行不能 になるのを防ぐ。
+  while (curIndex < curQueue.length && !findQuiz(curQueue[curIndex])) curIndex++;
+  if (curIndex >= curQueue.length) {
+    onPhaseComplete();
+    return;
+  }
+  const qid = curQueue[curIndex];
+  const q = findQuiz(qid);
+  if (curPhase === 'promo') {
+    document.getElementById('quiz-progress').innerText = `連続正解 ${promoStreak} / ${PROMO_PASS_STREAK}`;
+    document.getElementById('progress-fill').style.width = Math.round(promoStreak * 100 / PROMO_PASS_STREAK) + '%';
+    document.getElementById('q-counter').innerHTML = '';
+  } else {
+    // 表示は CHECK_INTERVAL ごとの「一区切り」内の進捗。一区切りで休憩できるため、
+    // 1〜10/10 を出した方が「あと何問でひと区切りか」がわかりやすい。
+    const segStart = Math.floor(curIndex / CHECK_INTERVAL) * CHECK_INTERVAL;
+    const segSize = Math.min(CHECK_INTERVAL, curQueue.length - segStart);
+    const posInSeg = (curIndex - segStart) + 1;
+    const remainInSeg = segSize - posInSeg;
+    // topbar progress (全体に対する%表示)
+    document.getElementById('quiz-progress').innerText = `${curIndex + 1} / ${curQueue.length}`;
+    document.getElementById('progress-fill').style.width = Math.round(curIndex * 100 / curQueue.length) + '%';
+    // qcard 上部の大型表示 (一区切りベース)
+    const remainClass = remainInSeg === 0 ? 'remain zero' : 'remain';
+    const remainText = remainInSeg === 0
+      ? '🎉 区切りまであと0問!'
+      : `区切りまであと ${remainInSeg} 問`;
+    document.getElementById('q-counter').innerHTML =
+      `<span class="pos">問 <span class="num">${posInSeg}</span> / ${segSize}</span>` +
+      `<span class="${remainClass}">${remainText}</span>`;
+  }
+  const phaseTag = document.getElementById('phase-tag');
+  if (curPhase === 'main') { phaseTag.className = 'phase-tag'; phaseTag.innerText = '本編'; }
+  else if (curPhase === 'retry') { phaseTag.className = 'phase-tag retry'; phaseTag.innerText = '復習'; }
+  else { phaseTag.className = 'phase-tag promo'; phaseTag.innerText = '昇級'; }
+
+  // promo フェーズ: 文脈マッチング(単語+意味から ふさわしいbody抜粋を選ぶ)
+  const body = document.getElementById('qbody');
+  // qcard 側に promo-mode を付け外しして、単語バッジを固定 + 選択肢を内部スクロールに切り替える
+  body.parentElement.classList.toggle('promo-mode', curPhase === 'promo');
+  if (curPhase === 'promo') {
+    body.classList.add('simple');
+    // 昇級テストは意味なしで単語だけ提示。レイアウトは正誤モーダル (.ao-header) と
+    // 同じ横並びコンパクト構成で、選択肢エリアに高さを譲る。
+    body.innerHTML = `<div class="promo-prompt">
+      <span class="embed">${escapeHtml(q.word)}</span>
+      <div class="promo-hint">この単語が自然に入る文は?</div>
+    </div>`;
+    // 4つのbodyから選ぶ: 正解=自分のbody、不正解3=同ステージから別のクイズ
+    // maskWordTag は <word> マーカーを span に置換するので、その後はルビ展開のみを
+    // 行う rubyOnly を通す（rubyHTML を通すと置換済みの span タグごと再エスケープしてしまう）。
+    const correctBody = rubyOnly(maskWordTag(q.body_ruby || q.body, q.word));
+    const distractors = pickDistractorBodies(q.id, 3).map(d => rubyOnly(maskWordTag(d.body_ruby || d.body, d.word)));
+    const all = [correctBody, ...distractors];
+    const target = Math.floor(Math.random() * 4);
+    // 正解を target位置に
+    [all[0], all[target]] = [all[target], all[0]];
+    q.__promoChoices = all;
+    q.__promoCorrectIdx = target;
+    document.getElementById('choices').innerHTML = all.map((c, i) =>
+      `<button class="choice" data-idx="${i}" onclick="selectChoice(${i})" style="font-size:0.9rem;line-height:1.6">
+        <span class="mark">${'ABCD'[i]}</span><span class="text">${c}</span><span class="marker"></span>
+      </button>`
+    ).join('');
+  } else {
+    body.classList.remove('simple');
+    // 同じ単語に複数の日本語混じり文(alt_bodies)があれば、出題ごとにランダムで1つ選ぶ。
+    // 同じ語を別々の文脈で繰り返し見ることで、偶発的な学習(incidental learning)を促す。
+    // alt_bodies_ruby(ふりがな付き)を優先、無ければ alt_bodies(素)を使う。alt無しの語は従来通り。
+    const bodyVariants = [q.body_ruby || q.body];
+    const altR = q.alt_bodies_ruby || [], altP = q.alt_bodies || [];
+    for (let i = 0; i < Math.max(altR.length, altP.length); i++) {
+      const v = altR[i] || altP[i];
+      if (v) bodyVariants.push(v);
+    }
+    body.innerHTML = rubyHTML(bodyVariants[Math.floor(Math.random() * bodyVariants.length)]);
+    // choices をシャッフル: 表示位置 → 元 index のマップ
+    const srcChoices = q.choices_ruby || q.choices;
+    const order = shuffle([0, 1, 2, 3]);
+    q.__renderOrder = order;
+    q.__displayCorrectIdx = order.indexOf(q.correct_index);
+    document.getElementById('choices').innerHTML = order.map((origIdx, i) =>
+      `<button class="choice" data-idx="${i}" onclick="selectChoice(${i})">
+        <span class="mark">${'ABCD'[i]}</span><span class="text">${rubyHTML(srcChoices[origIdx])}</span><span class="marker"></span>
+      </button>`
+    ).join('');
+  }
+  document.getElementById('play-en-btn').onclick = () => playEnWord(curStage, q.word);
+
+  // 新しい問題に進む際は前回フィードバックモーダルを閉じる。
+  hideFeedback();
+
+  // 自動で英単語発音
+  setTimeout(() => playEnWord(curStage, q.word), 200);
+  // タイマー開始
+  startTimer();
+}
+
+function maskWordTag(text, word) {
+  return (text || '').replace(`<${word}>`, '<span class="embed" style="background:var(--ink);min-width:60px;display:inline-block;text-align:center">____</span>');
+}
+
+function pickDistractorBodies(excludeId, n) {
+  const pool = stageData.quizzes.filter(q => q.id !== excludeId);
+  const out = [];
+  const used = new Set();
+  while (out.length < n && pool.length > 0) {
+    const i = Math.floor(Math.random() * pool.length);
+    if (used.has(i)) continue;
+    used.add(i);
+    out.push(pool[i]);
+    if (used.size >= pool.length) break;
+  }
+  return out;
+}
+
+function startTimer() {
+  stopTimer();
+  startTime = Date.now();
+  const limit = currentTimeLimit();
+  const bar = document.getElementById('timer-bar');
+  bar.style.width = '100%';
+  bar.classList.remove('danger');
+  let elapsed = 0;
+  timerId = setInterval(() => {
+    elapsed += 0.1;
+    const remaining = Math.max(0, limit - elapsed);
+    const frac = remaining / limit;
+    bar.style.width = (frac * 100) + '%';
+    if (frac <= 0.3) bar.classList.add('danger');
+    if (remaining <= 0) {
+      stopTimer();
+      if (!answered) onTimeUp();
+    }
+  }, 100);
+}
+function stopTimer() {
+  if (timerId) { clearInterval(timerId); timerId = null; }
+}
+function onTimeUp() {
+  if (answered) return;
+  answered = true;
+  const q = findQuiz(curQueue[curIndex]);
+  const correctIdx = curPhase === 'promo' ? q.__promoCorrectIdx : (q.__displayCorrectIdx ?? q.correct_index);
+  if (curPhase === 'main') mainErrors.push(q.id);
+  else if (curPhase === 'retry') retryErrors.push(q.id);
+  if (curPhase === 'promo') { promoTotal++; promoStreak = 0; }
+  if (curPhase === 'main' || curPhase === 'retry') {
+    recordVerdict(curStage, curLesson, q.id, 'wrong');
+  }
+  saveResumeState();
+  // 正解を表示
+  const btns = document.querySelectorAll('.choice');
+  btns.forEach((b, i) => {
+    b.disabled = true;
+    const marker = b.querySelector('.marker');
+    if (i === correctIdx) { b.classList.add('correct'); if (marker) marker.innerText = '○'; }
+  });
+  playSE('wrong');
+  showVerdict('timeup');
+  showFeedback({
+    word: q.word,
+    meaning: q.meaning_jp,
+    verdictLabel: '⏰ 時間切れ',
+    verdictKind: 'wrong',
+    choices: buildOverlayChoices(q, correctIdx, -1),
+    explanation: q.explanation && curPhase !== 'promo' ? rubyHTML(q.explanation_ruby || q.explanation) : ''
+  });
+}
+
+function selectChoice(idx) {
+  if (answered) return;
+  answered = true;
+  stopTimer();
+  const elapsed = (Date.now() - startTime) / 1000;
+  const ratio = elapsed / currentTimeLimit();
+  const q = findQuiz(curQueue[curIndex]);
+  const correctIdx = curPhase === 'promo' ? q.__promoCorrectIdx : (q.__displayCorrectIdx ?? q.correct_index);
+  const correct = idx === correctIdx;
+  if (correct) segmentCorrect++;
+  if (curPhase === 'promo') {
+    promoTotal++;
+    if (correct) { promoCorrect++; promoStreak++; } else { promoStreak = 0; }
+  }
+  if (!correct) {
+    if (curPhase === 'main') mainErrors.push(q.id);
+    else if (curPhase === 'retry') retryErrors.push(q.id);
+  }
+  // 評価判定
+  let verdict;
+  if (!correct) verdict = 'wrong';
+  else if (ratio <= TACOS_THRESHOLD) verdict = 'tacos';
+  else if (ratio <= EXCELLENT_THRESHOLD) verdict = 'excellent';
+  else verdict = 'good';
+  // verdict履歴を保存 (本編・復習中のみ。promoは別途)
+  if (curPhase === 'main' || curPhase === 'retry') {
+    recordVerdict(curStage, curLesson, q.id, verdict);
+  }
+  saveResumeState();
+  const btns = document.querySelectorAll('.choice');
+  btns.forEach((b, i) => {
+    b.disabled = true;
+    const marker = b.querySelector('.marker');
+    if (i === correctIdx) { b.classList.add('correct'); if (marker) marker.innerText = '○'; }
+    else if (i === idx) { b.classList.add('wrong'); if (marker) marker.innerText = '×'; }
+  });
+  playSE(correct ? 'correct' : 'wrong');
+  showVerdict(verdict);
+  const labelMap = { tacos: '🌮 Tacos!', excellent: '🌟 Excellent!', good: '👍 Good!', wrong: '✖️ もう一度' };
+  showFeedback({
+    word: q.word,
+    meaning: q.meaning_jp,
+    verdictLabel: labelMap[verdict],
+    verdictKind: correct ? 'correct' : 'wrong',
+    elapsed,
+    choices: buildOverlayChoices(q, correctIdx, idx),
+    explanation: q.explanation && curPhase !== 'promo' ? rubyHTML(q.explanation_ruby || q.explanation) : ''
+  });
+}
+
+document.getElementById('next-btn').onclick = () => {
+  hideFeedback();
+  // 昇級テスト: 10連続正解達成 → 即合格へ
+  if (curPhase === 'promo' && promoStreak >= PROMO_PASS_STREAK) {
+    onPhaseComplete();
+    return;
+  }
+  curIndex++;
+  // 昇級テスト: キューが尽きたらレッスン100語を再シャッフルして継続
+  if (curPhase === 'promo' && curIndex >= curQueue.length) {
+    const startIdx = curLesson * LESSON_SIZE;
+    const endIdx = Math.min(startIdx + LESSON_SIZE, stageData.quizzes.length);
+    const ids = stageData.quizzes.slice(startIdx, endIdx).map(q => q.id);
+    curQueue = shuffle(ids);
+    curIndex = 0;
+  }
+  // curIndex増加後の進行位置を保存(チェックポイント中に終了されても次の問から再開する)
+  saveResumeState();
+  // 10問ごとチェック (main/retryのみ)
+  if (curPhase !== 'promo' && curIndex > 0 && curIndex % CHECK_INTERVAL === 0 && curIndex < curQueue.length) {
+    showCheckpoint();
+    return;
+  }
+  renderQuiz();
+};
+
+function showVerdict(kind) {
+  // kind: 'fantastic' | 'good' | 'ok' | 'wrong' | 'timeup'
+  const ov = document.getElementById('overlay-mark');
+  const sym = document.getElementById('overlay-symbol');
+  const cfg = {
+    tacos: { text: 'Tacos!', mode: 'text-mode' },
+    excellent: { text: 'Excellent!', mode: 'text-mode' },
+    good: { text: 'Good!', mode: 'text-mode' },
+    wrong: { text: '✖️', mode: 'symbol-mode' },
+    timeup: { text: '✖️', mode: 'symbol-mode' },
+  };
+  const c = cfg[kind] || cfg.wrong;
+  sym.innerText = c.text;
+  ov.className = 'overlay-mark show ' + c.mode;
+  setTimeout(() => { ov.className = 'overlay-mark'; }, 700);
+}
+
+function showCheckpoint() {
+  playSE('checkpoint');
+  // 直近 CHECK_INTERVAL 問のverdictから実数集計 (resume後でも正確に)
+  const verdicts = lessonVerdicts(curStage, curLesson);
+  const recentIds = curQueue.slice(Math.max(0, curIndex - CHECK_INTERVAL), curIndex);
+  let recentCorrect = 0;
+  for (const qid of recentIds) {
+    const v = verdicts[qid];
+    if (v && v !== 'wrong') recentCorrect++;
+  }
+  const denom = recentIds.length || CHECK_INTERVAL;
+  const rate = Math.round(recentCorrect * 100 / denom);
+  const praise = getPraise(rate);
+  const emotion =
+    rate >= 100 ? 'cheering' :
+    rate >= 90  ? 'grinning' :
+    rate >= 70  ? 'speaking' :
+    rate >= 50  ? 'encouraging' :
+                  'cheering_warm';
+  // 100問単位の習得度
+  const bd = verdictBreakdown(curStage, curLesson);
+  const data = ['tacos','excellent','good','wrong','unanswered'].map(k => ({
+    label: VERDICT_LABELS[k], count: bd.counts[k], color: VERDICT_COLORS[k]
+  }));
+  const chart = pieChartSVG(data, 160);
+  const legend = data.filter(d => d.count > 0).map(d =>
+    `<span style="display:inline-flex;align-items:center;gap:4px;margin:0 6px;font-size:0.75rem">
+       <span style="width:10px;height:10px;background:${d.color};border-radius:2px;display:inline-block"></span>
+       ${d.label} <b>${d.count}</b>
+     </span>`
+  ).join('');
+  const extra = `
+    <div style="font-size:0.78rem;color:var(--sub);margin:8px 0 4px">レッスン ${curLesson+1} の習得度 (全 ${bd.total} 問)</div>
+    ${chart}
+    <div style="margin:8px 0;line-height:1.8">${legend}</div>
+  `;
+  showModal({
+    emotion,
+    title: `${CHECK_INTERVAL}問完了`,
+    praise,
+    rate: rate + '%',
+    sub: `直近 ${denom} 問中 ${recentCorrect} 問正解`,
+    extra,
+    actions: [
+      { label: '続ける →', onclick: () => { segmentCorrect = 0; closeModal(); renderQuiz(); } },
+      { label: '戻る', secondary: true, onclick: () => { closeModal(); quitToLessons(); } },
+    ],
+  });
+}
+
+function onPhaseComplete() {
+  if (curPhase === 'main') {
+    // 進捗保存
+    if (mainErrors.length > 0) {
+      // retry phaseへ
+      curPhase = 'retry';
+      curQueue = [...mainErrors];
+      mainErrors = [];
+      retryErrors = [];
+      curIndex = 0;
+      segmentCorrect = 0;
+      setLessonStatus(curStage, curLesson, { phase: 'retry', retryQueue: curQueue });
+      showModal({
+        emotion: 'speaking',
+        title: '本編クリア!',
+        praise: '間違えた問題をもう一度。',
+        sub: `${curQueue.length} 問を復習します`,
+        actions: [{ label: '復習スタート', onclick: () => { closeModal(); renderQuiz(); } }],
+      });
+    } else {
+      // 本編完了 (間違いゼロ) → 3択: 昇級試験 / 苦手だけ / 全体練習
+      const weakCount = weakWordIds(curStage, curLesson).length;
+      const actions = [
+        { label: '昇級試験へ', onclick: () => { closeModal(); goPromo(); } },
+      ];
+      if (weakCount > 0) {
+        actions.push({ label: `苦手だけ練習 (${weakCount}語)`, secondary: true, onclick: () => { closeModal(); startWeakPractice(); } });
+      }
+      actions.push({ label: '全体練習(100問)', secondary: true, onclick: () => { closeModal(); startLesson(curLesson); } });
+      showModal({
+        emotion: 'proud',
+        title: '本編 完了!',
+        praise: '全問正解で本編クリア',
+        sub: '次にしたいことを選んでください',
+        actions,
+      });
+    }
+  } else if (curPhase === 'retry') {
+    if (retryErrors.length > 0) {
+      // まだ間違いがあれば 再度retry
+      curQueue = [...retryErrors];
+      retryErrors = [];
+      curIndex = 0;
+      segmentCorrect = 0;
+      setLessonStatus(curStage, curLesson, { phase: 'retry', retryQueue: curQueue });
+      showModal({
+        emotion: 'thinking',
+        title: 'もう一度復習',
+        praise: '繰り返し定着!',
+        sub: `${curQueue.length} 問残っています`,
+        actions: [{ label: '続ける', onclick: () => { closeModal(); renderQuiz(); } }],
+      });
+    } else {
+      // 復習クリア → 3択: 昇級試験 / 苦手だけ / 全体練習
+      const weakCount = weakWordIds(curStage, curLesson).length;
+      const actions = [
+        { label: '昇級試験へ', onclick: () => { closeModal(); goPromo(); } },
+      ];
+      if (weakCount > 0) {
+        actions.push({ label: `苦手だけ練習 (${weakCount}語)`, secondary: true, onclick: () => { closeModal(); startWeakPractice(); } });
+      }
+      actions.push({ label: '全体練習(100問)', secondary: true, onclick: () => { closeModal(); startLesson(curLesson); } });
+      showModal({
+        emotion: 'proud',
+        title: '復習 クリア!',
+        praise: '間違いがなくなりました',
+        sub: '次にしたいことを選んでください',
+        actions,
+      });
+    }
+  } else if (curPhase === 'promo') {
+    // 昇級テスト: 10連続正解達成で合格 (next-btn からのみ到達する)
+    playSE('victory', 0.9);
+    setLessonStatus(curStage, curLesson, { phase: 'main', passed: true, promoRate: 100, resumeQueue: null, resumeIndex: null, resumeMainErrors: null, resumeRetryErrors: null });
+    try { if (window.gasflare) { var _s = STAGES.find(function (x) { return x.id === curStage; });
+      gasflare.log(curStage + '.L' + (curLesson + 1), (_s ? _s.name : curStage) + ' L' + (curLesson + 1), '✅ レッスン合格'); } } catch (e) { }
+    showModal({
+      emotion: 'cheering',
+      title: `レッスン ${curLesson + 1} 合格!`,
+      praise: `${PROMO_PASS_STREAK}連続正解で昇級テスト突破!`,
+      sub: '次のレッスンへ進めます',
+      actions: [
+        { label: '次のレッスンへ', onclick: () => { closeModal(); curLesson++; if (curLesson * LESSON_SIZE < stageData.quizzes.length) startLesson(curLesson); else quitToLessons(); } },
+        { label: 'レッスン一覧へ', secondary: true, onclick: () => { closeModal(); quitToLessons(); } },
+      ],
+    });
+  }
+}
+
+// レッスンが鍵付きかどうか
+// - lesson 0 は常に開放
+// - status.passed (本編合格) または status.unlocked (スキップで解放) なら鍵なし
+// - verdicts に何か記録があれば(=触ったことがある)鍵なし
+// - 前のレッスンが passed なら鍵なし
+function isLessonLocked(lessonIdx) {
+  if (lessonIdx <= 0) return false;
+  const p = getProg(curStage);
+  const lessons = p.lessons || {};
+  const status = lessons[lessonIdx] || {};
+  if (status.passed || status.unlocked) return false;
+  const hasProgress = status.verdicts && Object.keys(status.verdicts).length > 0;
+  if (hasProgress) return false;
+  const prev = lessons[lessonIdx - 1] || {};
+  return !prev.passed;
+}
+
+// レッスンの未学習(verdict 無し)単語数
+function unansweredCount(stage, lessonIdx) {
+  const verdicts = lessonVerdicts(stage, lessonIdx);
+  const startIdx = lessonIdx * LESSON_SIZE;
+  const endIdx = Math.min(startIdx + LESSON_SIZE, stageData.quizzes.length);
+  let n = 0;
+  for (let i = startIdx; i < endIdx; i++) {
+    if (!verdicts[stageData.quizzes[i].id]) n++;
+  }
+  return n;
+}
+
+// good/wrong (excellent/tacos 未満) の単語数 (未学習は除く)
+function goodOrWorseCount(stage, lessonIdx) {
+  const verdicts = lessonVerdicts(stage, lessonIdx);
+  const startIdx = lessonIdx * LESSON_SIZE;
+  const endIdx = Math.min(startIdx + LESSON_SIZE, stageData.quizzes.length);
+  let n = 0;
+  for (let i = startIdx; i < endIdx; i++) {
+    const v = verdicts[stageData.quizzes[i].id];
+    if (v === 'good' || v === 'wrong') n++;
+  }
+  return n;
+}
+
+// レッスン選択時の選択肢モーダル: 鍵付き / 未合格 / 合格 で異なる選択を提示
+function openLessonMenu(lessonIdx) {
+  const status = lessonStatus(curStage, lessonIdx);
+  const locked = isLessonLocked(lessonIdx);
+  const passed = !!status.passed;
+  const stageName = STAGES.find(s => s.id === curStage).name;
+
+  // === 鍵付き ===
+  if (locked) {
+    showModal({
+      emotion: 'speaking',
+      title: '🔒 鍵付きレッスン',
+      praise: `レッスン ${lessonIdx + 1} はまだ開放されていません`,
+      sub: `前のレッスン (L${lessonIdx}) の昇級試験に合格すると開放されます (前レッスンは合格扱いにはなりません)`,
+      actions: [
+        { label: `L${lessonIdx} の昇級試験を受けて開放`, onclick: () => {
+          closeModal();
+          // スキップ開放モード: lesson=N-1 の昇級試験を受けて、target=N を unlocked にする
+          const params = new URLSearchParams({
+            stage: curStage,
+            lesson: lessonIdx - 1,
+            mode: 'skip',
+            target: lessonIdx,
+          });
+          window.location.href = `kitchen_rush_prototype.html?${params}`;
+        }},
+        { label: '戻る', secondary: true, onclick: () => closeModal() },
+      ],
+    });
+    return;
+  }
+
+  const weakIds = weakWordIds(curStage, lessonIdx);
+  const weak = goodOrWorseCount(curStage, lessonIdx);
+  const unanswered = unansweredCount(curStage, lessonIdx);
+
+  // === 合格済み: 続きから学習 (未学習が残っていれば) / 全単語復習 / 苦手のみ復習 / 昇級試験再挑戦 ===
+  if (passed) {
+    const actions = [];
+    // 昇級試験合格後でも未学習があれば未学習だけ学習できるようにする (passed状態は維持)
+    if (unanswered > 0) {
+      actions.push({ label: `続きから学習 (未学習 ${unanswered}語)`, onclick: () => {
+        closeModal();
+        curLesson = lessonIdx;
+        startUnansweredPractice();
+      }});
+    }
+    actions.push({ label: '全単語復習 (100問)', secondary: unanswered > 0, onclick: () => {
+      closeModal();
+      curLesson = lessonIdx;
+      // 進捗をリセットして頭からやり直し
+      setLessonStatus(curStage, lessonIdx, { resumeQueue: null, resumeIndex: null, resumeMainErrors: null, resumeRetryErrors: null, phase: 'main' });
+      startLesson(lessonIdx);
+    }});
+    if (weak > 0) {
+      actions.push({ label: `苦手のみ復習 (${weak}語)`, secondary: true, onclick: () => {
+        closeModal();
+        curLesson = lessonIdx;
+        startWeakPractice();
+      }});
+    } else {
+      actions.push({ label: '苦手のみ復習 (0語)', secondary: true, disabled: true });
+    }
+    actions.push({ label: '昇級試験に再挑戦 (タコス厨房ラッシュ)', secondary: true, onclick: () => {
+      closeModal();
+      curLesson = lessonIdx;
+      goPromo();
+    }});
+    actions.push({ label: '戻る', secondary: true, onclick: () => closeModal() });
+    showModal({
+      emotion: 'proud',
+      title: `レッスン ${lessonIdx + 1} ・ 合格済`,
+      praise: unanswered > 0 ? `未学習が ${unanswered}語 残っています` : '復習で定着を確かなものに',
+      sub: `${stageName} L${lessonIdx + 1}`,
+      actions,
+    });
+    return;
+  }
+
+  // === 未合格: 続きから学習 / 苦手を学習 / 昇級試験 ===
+  // 昇級試験はいつでも挑戦可能 (Kitchen Rush 自体が10問の独立ミニゲームなので前提条件なし)
+  const actions = [
+    { label: `続きから学習 (未学習 ${unanswered}語)`, onclick: () => {
+      closeModal();
+      curLesson = lessonIdx;
+      startLesson(lessonIdx);
+    }},
+  ];
+  if (weak > 0) {
+    actions.push({ label: `苦手を学習 (${weak}語)`, secondary: true, onclick: () => {
+      closeModal();
+      curLesson = lessonIdx;
+      startWeakPractice();
+    }});
+  } else {
+    actions.push({ label: '苦手を学習 (0語)', secondary: true, disabled: true });
+  }
+  actions.push({ label: '昇級試験 (タコス厨房ラッシュ)', secondary: true, onclick: () => {
+    closeModal();
+    curLesson = lessonIdx;
+    goPromo();
+  }});
+  actions.push({ label: '戻る', secondary: true, onclick: () => closeModal() });
+  showModal({
+    emotion: 'speaking',
+    title: `レッスン ${lessonIdx + 1}`,
+    praise: `${stageName} の100語`,
+    sub: '次にしたいことを選んでください',
+    actions,
+  });
+}
+
+// レッスン100語のうち「good 以下」(good/wrong/未回答) の単語IDだけを返す
+function weakWordIds(stage, lessonIdx) {
+  const verdicts = lessonVerdicts(stage, lessonIdx);
+  const startIdx = lessonIdx * LESSON_SIZE;
+  const endIdx = Math.min(startIdx + LESSON_SIZE, stageData.quizzes.length);
+  const ids = [];
+  for (let i = startIdx; i < endIdx; i++) {
+    const qid = stageData.quizzes[i].id;
+    const v = verdicts[qid];
+    if (!v || v === 'good' || v === 'wrong' || v === 'unanswered') ids.push(qid);
+  }
+  return ids;
+}
+
+// 未学習だけ練習: 一度も verdict が付いていない単語だけをキューに差し込む
+function startUnansweredPractice() {
+  const verdicts = lessonVerdicts(curStage, curLesson);
+  const startIdx = curLesson * LESSON_SIZE;
+  const endIdx = Math.min(startIdx + LESSON_SIZE, stageData.quizzes.length);
+  const ids = [];
+  for (let i = startIdx; i < endIdx; i++) {
+    const qid = stageData.quizzes[i].id;
+    if (!verdicts[qid]) ids.push(qid);
+  }
+  if (ids.length === 0) {
+    alert('未学習はありません!');
+    return;
+  }
+  curPhase = 'main';
+  curQueue = shuffle(ids);
+  curIndex = 0; mainErrors = []; retryErrors = []; segmentCorrect = 0;
+  setLessonStatus(curStage, curLesson, { phase: 'main', resumeQueue: curQueue, resumeIndex: 0, resumeMainErrors: [], resumeRetryErrors: [] });
+  document.getElementById('quiz-stage-name').innerText =
+    STAGES.find(s => s.id === curStage).name + ' L' + (curLesson + 1) + ' 未学習';
+  switchScreen('screen-quiz');
+  renderQuiz();
+}
+
+// 苦手だけ練習: weakWordIds を main phase のキューに差し込んで再開
+function startWeakPractice() {
+  const weakIds = weakWordIds(curStage, curLesson);
+  if (weakIds.length === 0) {
+    alert('すべて Excellent 以上で苦手はありません!');
+    return;
+  }
+  curPhase = 'main';
+  curQueue = shuffle(weakIds);
+  curIndex = 0; mainErrors = []; retryErrors = []; segmentCorrect = 0;
+  setLessonStatus(curStage, curLesson, { phase: 'main', resumeQueue: curQueue, resumeIndex: 0, resumeMainErrors: [], resumeRetryErrors: [] });
+  document.getElementById('quiz-stage-name').innerText =
+    STAGES.find(s => s.id === curStage).name + ' L' + (curLesson + 1) + ' 苦手練習';
+  switchScreen('screen-quiz');
+  renderQuiz();
+}
+
+function goPromo() {
+  // 昇級試験 = タコス厨房ラッシュ ミニゲーム
+  // 現在の stage/lesson を引数で渡し、合格時に localStorage 経由で本体側を更新して戻る
+  const params = new URLSearchParams({ stage: curStage, lesson: curLesson });
+  window.location.href = `kitchen_rush_prototype.html?${params}`;
+}
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function showModal({ emotion, title, praise, rate, sub, extra, actions }) {
+  setMascot('modal-mascot', emotion || 'speaking');
+  animateMascot('modal-mascot', 'pop', 500);
+  document.getElementById('modal-title').innerText = title || '';
+  document.getElementById('modal-praise').innerText = praise || '';
+  document.getElementById('modal-rate').innerText = rate || '';
+  document.getElementById('modal-sub').innerText = sub || '';
+  const extraEl = document.getElementById('modal-extra');
+  if (extraEl) extraEl.innerHTML = extra || '';
+  const ac = document.getElementById('modal-actions');
+  ac.innerHTML = '';
+  (actions || []).forEach(a => {
+    const b = document.createElement('button');
+    b.className = 'btn' + (a.secondary ? ' secondary' : '') + (a.disabled ? ' disabled' : '');
+    b.innerText = a.label;
+    if (a.disabled) { b.disabled = true; b.style.opacity = '0.4'; b.style.cursor = 'not-allowed'; }
+    else b.onclick = a.onclick;
+    ac.appendChild(b);
+  });
+  document.getElementById('modal-bg').classList.add('active');
+}
+function closeModal() { document.getElementById('modal-bg').classList.remove('active'); }
+
+function quitToLessons() { renderLessons(); switchScreen('screen-lessons'); }
+function goHome() { renderHome(); switchScreen('screen-stages'); }
+function backToStart() { switchScreen('screen-start'); }
+
+const TAB_SCREENS = ['screen-stages', 'screen-review', 'screen-stats', 'screen-settings'];
+function switchScreen(id) {
+  // クイズ画面に入る瞬間に BGM を止める (学習中は無音)。逆にレベル/レッスン選択画面など
+  // 学習以外に戻ったら、ユーザーが mute していなければ自動で再開する。
+  const bgm = document.getElementById('bgm');
+  if (bgm) {
+    if (id === 'screen-quiz') {
+      bgm.pause();
+    } else if (!bgm.muted) {
+      bgm.play().catch(() => {});
+    }
+  }
+  // クイズ画面から離れる時はタイマーを停止する。
+  // これがないと、戻るボタンで一覧へ戻った後もタイマーが裏で走り続け、
+  // 時間切れに達した瞬間に直前の問題が ✖ 扱いで記録されてしまう。
+  if (id !== 'screen-quiz') stopTimer();
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  // タブ表示状態を同期 (タイトル画面・クイズ画面では非表示)
+  const showTabs = TAB_SCREENS.includes(id) || id === 'screen-lessons';
+  document.body.classList.toggle('has-tabs', showTabs);
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    const t = b.dataset.tab;
+    b.classList.toggle('active', t === id || (id === 'screen-lessons' && t === 'screen-stages'));
+  });
+  window.scrollTo(0, 0);
+}
+
+function playEnWord(stage, word) {
+  const audioStage = (STAGES.find(s => s.id === stage)?.audioStage) || stage;
+  const url = `app_audio/${audioStage}_en/${encodeURIComponent(word)}.mp3`;
+  const a = new Audio(url);
+  a.play().catch(() => {});
+}
+
+// SE
+const SE_CACHE = {};
+function playSE(name, vol = 0.7) {
+  try {
+    let a = SE_CACHE[name];
+    if (!a) {
+      a = new Audio('app_assets/sounds/' + name + '.mp3');
+      a.volume = vol;
+      SE_CACHE[name] = a;
+    }
+    a.currentTime = 0;
+    a.play().catch(() => {});
+  } catch (e) {}
+}
+
+// ふりがな表示トグル (右上フロート)。状態は localStorage に永続化。
+(function setupRubyToggle(){
+  const btn = document.getElementById('ruby-toggle-btn');
+  if (!btn) return;
+  const savedRuby = localStorage.getItem('wt_show_ruby') === '1';
+  document.body.classList.toggle('show-ruby', savedRuby);
+  btn.addEventListener('click', () => {
+    const shown = !document.body.classList.contains('show-ruby');
+    document.body.classList.toggle('show-ruby', shown);
+    localStorage.setItem('wt_show_ruby', shown ? '1' : '0');
+  });
+})();
+
+// リセット
+document.getElementById('reset-btn').onclick = () => {
+  if (confirm('すべてのステージの進捗をリセットしますか?')) {
+    STAGES.forEach(s => localStorage.removeItem('wt_prog2_' + s.id));
+    renderHome();
+  }
+};
+
+// スタート画面のマスコットまばたきループ
+startBlinkLoop('start-mascot', 'idle', 'blink');
+// スタートボタンでステージ選択へ + BGM再生開始 (iOS autoplay policy: 必ず最初のユーザータップ起点で start する)
+document.getElementById('start-btn').onclick = () => {
+  startBGM();
+  renderHome();
+  switchScreen('screen-stages');
+};
+
+// 昇級試験から戻った時の自動遷移: ?stage=X&lesson=N があれば、そのレッスンメニューを直接開く
+(async function handleIncomingParams(){
+  const params = new URLSearchParams(window.location.search);
+  const stage = params.get('stage');
+  const lessonParam = params.get('lesson');
+  if (!stage) return;
+  const stageObj = STAGES.find(s => s.id === stage);
+  if (!stageObj) return;
+  // URL を綺麗に (パラメータを履歴から消す)
+  try { history.replaceState({}, '', window.location.pathname); } catch (_) {}
+  try {
+    await enterStage(stage);
+    if (lessonParam !== null && !isNaN(parseInt(lessonParam))) {
+      const li = parseInt(lessonParam);
+      // 少し待ってから (描画完了後) メニューを開く
+      setTimeout(() => openLessonMenu(li), 50);
+    }
+  } catch (e) { console.warn('incoming params nav failed', e); }
+})();
+
+/* === メインテーマBGM === */
+// Suno で生成した wordtacos のテーマ。ループ再生。ミュート状態は localStorage に保存。
+// iOS / Safari の autoplay policy 上、最初のユーザータップ後にしか .play() できないので
+// start-btn と body 全体 (1回限り) でフェイルセーフに start を仕掛ける。
+(function setupBGM(){
+  const KEY_BGM = 'wt_bgm_muted';
+  const bgm = document.getElementById('bgm');
+  const btn = document.getElementById('bgm-toggle');
+  if (!bgm || !btn) return;
+  bgm.volume = 0.35;
+  const isMuted = () => localStorage.getItem(KEY_BGM) === '1';
+  const render = () => {
+    btn.classList.toggle('muted', isMuted());
+    btn.textContent = isMuted() ? '🔇' : '🎵';
+    btn.setAttribute('aria-label', isMuted() ? 'BGM ミュート中 (タップで再生)' : 'BGM 再生中 (タップでミュート)');
+  };
+  bgm.muted = isMuted();
+  render();
+  window.startBGM = function startBGM(){
+    if (isMuted()) return;
+    if (bgm.paused) { try { bgm.play().catch(()=>{}); } catch(_){} }
+  };
+  btn.onclick = () => {
+    const nowMuted = !isMuted();
+    localStorage.setItem(KEY_BGM, nowMuted ? '1' : '0');
+    bgm.muted = nowMuted;
+    if (!nowMuted) window.startBGM();
+    render();
+  };
+  // 念のため body 全体への最初のタップでも start を試す (start-btn 以外の経路で進んだ場合)
+  document.addEventListener('pointerdown', () => window.startBGM(), { once: true, passive: true });
+})();
+
+// ===== 連続学習日数 (ストリーク) =====
+// クイズに 1 問でも回答した日を YYYY-MM-DD で保存。最大 365 日分。
+function markStudyDate() {
+  const today = new Date().toISOString().slice(0, 10);
+  let dates = [];
+  try { dates = JSON.parse(localStorage.getItem('wt_streak_dates') || '[]'); } catch {}
+  if (!dates.includes(today)) {
+    dates.push(today);
+    if (dates.length > 365) dates = dates.slice(-365);
+    localStorage.setItem('wt_streak_dates', JSON.stringify(dates));
+    onStudiedToday();          // その日最初の1問 → 褒める・❄️の付与判定
+  }
+}
+function calcStreak() {
+  let dates = [];
+  try { dates = JSON.parse(localStorage.getItem('wt_streak_dates') || '[]'); } catch {}
+  const set = new Set(dates.concat(frozenDates()));   // ❄️で守った日も連続に数える
+  let streak = 0;
+  const d = new Date();
+  // 今日学習していなくても、昨日学習していれば「昨日からの連続」を表示する
+  if (!set.has(d.toISOString().slice(0, 10))) {
+    d.setDate(d.getDate() - 1);
+  }
+  while (set.has(d.toISOString().slice(0, 10))) {
+    streak++;
+    d.setDate(d.getDate() - 1);
+  }
+  return streak;
+}
+// recordVerdict にフック (上書きでなくラップ): 答えを記録するたびに今日の日付を残す
+(function hookStreak(){
+  const _orig = window.recordVerdict;
+  window.recordVerdict = function(stage, lessonIdx, qid, verdict) {
+    if (typeof _orig === 'function') _orig(stage, lessonIdx, qid, verdict);
+    markStudyDate();
+  };
+})();
+
+// ===== ストリーク・フリーズ（❄️） =====
+// 7日連続ごとに❄️を1個獲得（最大2個）。学習できなかった日があっても、
+// ❄️が足りれば自動で消費して連続記録を守る。Duolingoのストリークフリーズと同じ考え方。
+function frozenDates() {
+  try { return JSON.parse(localStorage.getItem('wt_streak_frozen') || '[]'); } catch { return []; }
+}
+function freezeCount() {
+  const v = parseInt(localStorage.getItem('wt_streak_freeze'), 10);
+  return isFinite(v) ? Math.max(0, Math.min(2, v)) : 0;
+}
+function setFreezeCount(n) { localStorage.setItem('wt_streak_freeze', String(Math.max(0, Math.min(2, n)))); }
+function _dstr(d) { return d.toISOString().slice(0, 10); }
+
+// 昨日から遡って「欠けた日」を数え、❄️で全部埋められるときだけ消費する（半端に減らさない）。
+// 1日1回だけ判定する。
+function applyFreeze() {
+  const today = _dstr(new Date());
+  if (localStorage.getItem('wt_streak_freeze_check') === today) return;
+  localStorage.setItem('wt_streak_freeze_check', today);
+  let dates = [];
+  try { dates = JSON.parse(localStorage.getItem('wt_streak_dates') || '[]'); } catch {}
+  if (!dates.length) return;
+  const frozen = frozenDates();
+  const set = new Set(dates.concat(frozen));
+  const miss = [];
+  const d = new Date(); d.setDate(d.getDate() - 1);
+  while (!set.has(_dstr(d))) {
+    miss.push(_dstr(d));
+    if (miss.length > 30) return;                    // 1か月空いたら素直に切れる
+    d.setDate(d.getDate() - 1);
+  }
+  if (!miss.length) return;
+  const n = freezeCount();
+  if (miss.length <= n) {
+    setFreezeCount(n - miss.length);
+    localStorage.setItem('wt_streak_frozen', JSON.stringify(frozen.concat(miss).sort().slice(-120)));
+    stkToast('❄️ フリーズが連続記録を守りました（残り' + freezeCount() + '個）');
+  }
+}
+try { applyFreeze(); } catch (e) {}                  // 起動時にも欠け埋めを判定（表示前に整える）
+
+// ===== 褒める機構 =====
+function stkToast(msg) {
+  const t = document.createElement('div');
+  t.className = 'stk-toast';
+  t.textContent = msg;
+  document.body.appendChild(t);
+  requestAnimationFrame(() => t.classList.add('show'));
+  setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 400); }, 2600);
+}
+function stkPraise(streak, earnedFreeze) {
+  const tier =
+    streak >= 100 ? 'もう習慣を超えて、特技です。' :
+    streak >= 50  ? '継続の天才。ここまで来る人はほとんどいません。' :
+    streak >= 30  ? '1か月続いた学習は、一生モノになります。' :
+    streak >= 14  ? '2週間継続。脳が英語を「日常」と認識し始めています。' :
+    streak >= 7   ? '1週間連続！ここからが定着の本番です。' :
+                    '3日続けば、習慣の入り口です。';
+  const ov = document.createElement('div');
+  ov.className = 'stk-modal';
+  ov.innerHTML =
+    '<div class="stk-card">' +
+      '<div class="stk-flame">🔥</div>' +
+      '<div class="stk-days">' + streak + '日連続！</div>' +
+      '<div class="stk-msg">' + tier + '</div>' +
+      (earnedFreeze ? '<div class="stk-earn">❄️ ストリーク・フリーズを1個獲得！<br><span>学習できない日があっても、自動で連続記録を守ります（最大2個）</span></div>' : '') +
+      '<button class="stk-ok" type="button">つづける</button>' +
+    '</div>';
+  document.body.appendChild(ov);
+  ov.querySelector('.stk-ok').onclick = () => ov.remove();
+  ov.onclick = (e) => { if (e.target === ov) ov.remove(); };
+}
+// その日最初の学習を記録した瞬間に呼ばれる
+function onStudiedToday() {
+  try { applyFreeze(); } catch (e) {}
+  const s = calcStreak();
+  // ❄️付与: 7日連続ごとに1個（最大2個）。同じ到達で二重に配らない
+  let earned = false;
+  if (s > 0 && s % 7 === 0) {
+    const last = parseInt(localStorage.getItem('wt_streak_award') || '0', 10);
+    if (last !== s) {
+      localStorage.setItem('wt_streak_award', String(s));
+      if (freezeCount() < 2) { setFreezeCount(freezeCount() + 1); earned = true; }
+    }
+  }
+  const MILESTONES = [3, 7, 14, 21, 30, 50, 75, 100, 150, 200, 365];
+  if (MILESTONES.includes(s) || earned) {
+    stkPraise(s, earned);
+    try { if (window.gasflare) gasflare.log('streak0', '🔥 連続学習', '🔥 ' + s + '日連続を達成' + (earned ? '（❄️獲得）' : '')); } catch (e) {}
+  } else if (s >= 2) {
+    stkToast('🔥 ' + s + '日連続！');
+  }
+  try { if (window.gasflare) gasflare.pushLater(); } catch (e) {}
+}
+
+// ===== 復習画面 =====
+// 全ステージを横断して "wrong" の verdict を集計。ステージ単位でカード表示。
+// 各カードはタップで単語一覧を展開、ボタンで「苦手だけで復習」を開始する。
+async function renderReview() {
+  const body = document.getElementById('review-body');
+  let html = '<p class="section-lead">これまで間違えた単語をステージごとにまとめました。タップで単語一覧を見たり、まとめて復習できます。</p>';
+  const cards = [];
+  STAGES.forEach(s => {
+    const p = getProg(s.id);
+    const lessons = p.lessons || {};
+    const wrongIds = new Set();
+    Object.values(lessons).forEach(l => {
+      if (!l.verdicts) return;
+      for (const [qid, v] of Object.entries(l.verdicts)) {
+        if (v === 'wrong') wrongIds.add(qid);
+      }
+    });
+    if (wrongIds.size > 0) cards.push({ stage: s, count: wrongIds.size, ids: wrongIds });
+  });
+  if (cards.length === 0) {
+    html += `<div class="review-empty">まだ間違えた単語はありません。<br>クイズで間違えると、ここに集まります。</div>`;
+    body.innerHTML = html;
+    return;
+  }
+  cards.forEach(({ stage, count }) => {
+    html += `<div class="review-stage-card">
+      <div class="icon">${stage.icon}</div>
+      <div class="info">
+        <div class="name">${stage.name}</div>
+        <div class="sub">${count} 個の苦手単語</div>
+      </div>
+      <button class="review-words-toggle" data-stage="${stage.id}" data-mode="list">📖 一覧</button>
+      <button class="review-words-toggle" data-stage="${stage.id}" data-mode="quiz" style="background:var(--accent);color:white;border-color:var(--accent)">▶ 復習</button>
+    </div>
+    <div class="review-word-list" id="review-words-${stage.id}"></div>`;
+  });
+  body.innerHTML = html;
+  body.querySelectorAll('.review-words-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const stageId = btn.dataset.stage;
+      const mode = btn.dataset.mode;
+      if (mode === 'quiz') {
+        startReviewFor(stageId);
+      } else {
+        toggleReviewWords(stageId, btn);
+      }
+    });
+  });
+}
+async function loadStageData(stageId) {
+  const s = STAGES.find(x => x.id === stageId);
+  if (stageData && stageData.stage === stageId) return stageData;
+  showLoading('読み込み中...');
+  const r = await fetch(s.src + '?t=' + Date.now());
+  const raw = await r.json();
+  let quizzes = raw.quizzes;
+  if (typeof s.sliceStart === 'number') quizzes = quizzes.slice(s.sliceStart, s.sliceEnd);
+  stageData = { stage: stageId, quizzes };
+  hideLoading();
+  return stageData;
+}
+async function toggleReviewWords(stageId, btn) {
+  const list = document.getElementById('review-words-' + stageId);
+  if (list.classList.contains('open')) {
+    list.classList.remove('open'); btn.classList.remove('open'); return;
+  }
+  // 該当ステージのデータを読み込んで wrong qid のテキストを引く
+  await loadStageData(stageId);
+  const p = getProg(stageId);
+  const lessons = p.lessons || {};
+  const wrongIds = new Set();
+  Object.values(lessons).forEach(l => {
+    if (!l.verdicts) return;
+    for (const [qid, v] of Object.entries(l.verdicts)) {
+      if (v === 'wrong') wrongIds.add(qid);
+    }
+  });
+  const items = stageData.quizzes.filter(q => wrongIds.has(q.id));
+  list.innerHTML = items.map(q => {
+    const word = q.word || q.embed || (q.embeds && q.embeds[0]) || q.target || '';
+    const meaning = q.meaning || q.answer || (q.choices && q.choices[0]) || '';
+    return `<div class="review-word-item"><div class="w">${word}</div><div class="m">${meaning}</div></div>`;
+  }).join('') || '<div class="review-word-item"><div class="m">表示できる単語がありません</div></div>';
+  list.classList.add('open');
+  btn.classList.add('open');
+}
+async function startReviewFor(stageId) {
+  await loadStageData(stageId);
+  const p = getProg(stageId);
+  const lessons = p.lessons || {};
+  const wrongIds = new Set();
+  Object.values(lessons).forEach(l => {
+    if (!l.verdicts) return;
+    for (const [qid, v] of Object.entries(l.verdicts)) {
+      if (v === 'wrong') wrongIds.add(qid);
+    }
+  });
+  const queue = stageData.quizzes.filter(q => wrongIds.has(q.id)).map(q => q.id);
+  if (queue.length === 0) { alert('復習する単語がありません'); return; }
+  // 既存の retry フェーズに乗せる (合格判定無し・正解で wrong から除外)
+  const s = STAGES.find(x => x.id === stageId);
+  curStage = stageId;
+  curLesson = -1; // 復習モード用の特殊値
+  curPhase = 'retry';
+  curQueue = queue.slice();
+  curIndex = 0;
+  mainErrors = [];
+  retryErrors = [];
+  segmentCorrect = 0;
+  document.getElementById('quiz-stage-name').innerText = s.name + ' ・ 苦手復習';
+  switchScreen('screen-quiz');
+  if (typeof showQuestion === 'function') showQuestion();
+}
+
+// ===== 統計画面 =====
+function renderStats() {
+  const body = document.getElementById('stats-body');
+  let totalAnswered = 0, totalCorrect = 0, stagesPassed = 0, totalLessons = 0;
+  const rows = [];
+  STAGES.forEach(s => {
+    const p = getProg(s.id);
+    const lessons = p.lessons || {};
+    let aw = 0, co = 0, ps = 0;
+    const tl = Math.ceil(s.total / LESSON_SIZE);
+    Object.values(lessons).forEach(l => {
+      if (l.passed) ps++;
+      if (l.verdicts) {
+        for (const v of Object.values(l.verdicts)) { aw++; if (v !== 'wrong') co++; }
+      }
+    });
+    totalAnswered += aw; totalCorrect += co;
+    stagesPassed += ps; totalLessons += tl;
+    rows.push({ icon: s.icon, name: s.name, passed: ps, total: tl, answered: aw, correct: co });
+  });
+  const streak = calcStreak();
+  const rate = totalAnswered ? Math.round(totalCorrect * 100 / totalAnswered) : 0;
+  const flame = streak >= 14 ? '🔥' : streak >= 7 ? '✨' : streak >= 3 ? '🌶️' : '🌱';
+  let html = `
+    <p class="section-lead">これまでの学習の積み重ねを見てみましょう。</p>
+    <div class="stat-grid">
+      <div class="stat-card big">
+        <div class="stat-label">連続学習日数</div>
+        <div class="stat-value">${streak}<span class="stat-unit">日</span></div>
+        <div class="stat-flame">${flame}</div>
+        <div class="stat-freeze">❄️ フリーズ ×${freezeCount()}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">累計回答</div>
+        <div class="stat-value">${totalAnswered}<span class="stat-unit">問</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">正答率</div>
+        <div class="stat-value">${rate}<span class="stat-unit">%</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">合格レッスン</div>
+        <div class="stat-value">${stagesPassed}<span class="stat-unit">/ ${totalLessons}</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">残り苦手単語</div>
+        <div class="stat-value">${(function(){
+          let n = 0;
+          STAGES.forEach(s => {
+            const p = getProg(s.id);
+            const set = new Set();
+            Object.values(p.lessons || {}).forEach(l => {
+              for (const [qid, v] of Object.entries(l.verdicts || {})) {
+                if (v === 'wrong') set.add(qid);
+              }
+            });
+            n += set.size;
+          });
+          return n;
+        })()}<span class="stat-unit">語</span></div>
+      </div>
+    </div>
+    <h3 class="section-h2">ステージ別の進捗</h3>
+  `;
+  rows.forEach(r => {
+    const rp = r.answered ? Math.round(r.correct * 100 / r.answered) : 0;
+    const pp = r.total ? Math.round(r.passed * 100 / r.total) : 0;
+    html += `<div class="stage-stat-row">
+      <div class="ss-icon">${r.icon}</div>
+      <div class="ss-info">
+        <div class="ss-name">${r.name}</div>
+        <div class="ss-meta">${r.answered} 問回答 ・ 正答率 ${rp}%</div>
+        <div class="ss-bar"><div style="width:${pp}%"></div></div>
+        <div class="ss-lessons">${r.passed} / ${r.total} レッスン合格</div>
+      </div>
+    </div>`;
+  });
+  body.innerHTML = html;
+}
+
+// ===== 設定画面 =====
+let __deferredInstallPrompt = null;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  __deferredInstallPrompt = e;
+  // 設定画面が開いている時はボタンを enable に切り替える
+  const btn = document.getElementById('pwa-install-btn');
+  if (btn) { btn.disabled = false; btn.textContent = '📲 ホームに追加'; }
+});
+function renderSettings() {
+  const body = document.getElementById('settings-body');
+  const bgmMuted = localStorage.getItem('wt_bgm_muted') === '1';
+  const showRuby = localStorage.getItem('wt_show_ruby') === '1';
+  const noTimer = localStorage.getItem('wt_no_timer') === '1';
+  const easyMode = localStorage.getItem('wt_easy_mode') === '1';
+  const installed = window.matchMedia && window.matchMedia('(display-mode: standalone)').matches;
+  let pwaLabel = '未対応のブラウザです';
+  let pwaDisabled = true;
+  if (installed) { pwaLabel = '✓ インストール済'; pwaDisabled = true; }
+  else if (__deferredInstallPrompt) { pwaLabel = '📲 ホームに追加'; pwaDisabled = false; }
+  else { pwaLabel = 'iOS は共有 → ホーム画面に追加'; pwaDisabled = true; }
+  body.innerHTML = `
+    <p class="section-lead">アプリの動作を調整できます。</p>
+    <div class="settings-list">
+      <div class="settings-row">
+        <div><div class="set-label">🎵 BGM</div><div class="set-desc">テーマ曲を再生 (学習中は自動停止)</div></div>
+        <label class="switch"><input type="checkbox" id="set-bgm" ${!bgmMuted ? 'checked' : ''}><span></span></label>
+      </div>
+      <div class="settings-row">
+        <div><div class="set-label">あ ふりがな</div><div class="set-desc">日本語にルビを表示</div></div>
+        <label class="switch"><input type="checkbox" id="set-ruby" ${showRuby ? 'checked' : ''}><span></span></label>
+      </div>
+      <div class="settings-row">
+        <div><div class="set-label">⏱️ 制限時間</div><div class="set-desc">1問あたりの時間制限 (OFFで無制限)</div></div>
+        <label class="switch"><input type="checkbox" id="set-timer" ${!noTimer ? 'checked' : ''}><span></span></label>
+      </div>
+      <div class="settings-row">
+        <div><div class="set-label">🐢 イージーモード</div><div class="set-desc">制限時間を1.6倍にゆるめる。指の反応速度が間に合わない人向け(理解度ではなく操作スピード補助)</div></div>
+        <label class="switch"><input type="checkbox" id="set-easy" ${easyMode ? 'checked' : ''}><span></span></label>
+      </div>
+<div class="settings-row">
+        <div><div class="set-label">📱 アプリ化</div><div class="set-desc">ホーム画面に追加してフルスクリーンで使う</div></div>
+        <button id="pwa-install-btn" class="pwa-install-btn" ${pwaDisabled ? 'disabled' : ''}>${pwaLabel}</button>
+      </div>
+      <div class="settings-row reminder-row">
+        <div style="flex:1; min-width:0">
+          <div class="set-label">🔔 学習リマインダー</div>
+          <div class="set-desc">毎日決まった時間に通知。カレンダーに登録して OS の標準リマインダーで届きます。</div>
+          <div class="reminder-controls">
+            <label class="reminder-time-label">
+              <span>時刻</span>
+              <input type="time" id="set-reminder-time" value="${(localStorage.getItem('wt_reminder_time') || '20:00')}">
+            </label>
+            <div class="reminder-buttons">
+              <button class="reminder-btn" id="set-reminder-ics" type="button">📥 カレンダーに追加</button>
+              <button class="reminder-btn ghost" id="set-reminder-gcal" type="button">🟢 Google カレンダーで開く</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="settings-divider"></div>
+      <button class="btn secondary" id="set-reset-all">🗑️ 進捗をすべてリセット</button>
+    </div>
+  `;
+  document.getElementById('set-bgm').addEventListener('change', e => {
+    const muted = !e.target.checked;
+    localStorage.setItem('wt_bgm_muted', muted ? '1' : '0');
+    const bgm = document.getElementById('bgm');
+    if (bgm) { bgm.muted = muted; if (!muted && typeof window.startBGM === 'function') window.startBGM(); }
+    // 右上フロートも同期
+    const t = document.getElementById('bgm-toggle');
+    if (t) { t.classList.toggle('muted', muted); t.textContent = muted ? '🔇' : '🎵'; }
+  });
+  document.getElementById('set-ruby').addEventListener('change', e => {
+    document.body.classList.toggle('show-ruby', e.target.checked);
+    localStorage.setItem('wt_show_ruby', e.target.checked ? '1' : '0');
+  });
+  document.getElementById('set-timer').addEventListener('change', e => {
+    localStorage.setItem('wt_no_timer', e.target.checked ? '0' : '1');
+  });
+  document.getElementById('set-easy').addEventListener('change', e => {
+    localStorage.setItem('wt_easy_mode', e.target.checked ? '1' : '0');
+  });
+  document.getElementById('set-reset-all').addEventListener('click', () => {
+    if (confirm('すべての進捗 (合格・苦手単語・連続日数) をリセットしますか?')) {
+      STAGES.forEach(s => localStorage.removeItem('wt_prog2_' + s.id));
+      localStorage.removeItem('wt_streak_dates');
+      alert('リセットしました');
+      renderHome();
+      renderStats();
+      renderSettings();
+    }
+  });
+  const pwaBtn = document.getElementById('pwa-install-btn');
+  if (pwaBtn && !pwaDisabled) {
+    pwaBtn.addEventListener('click', async () => {
+      if (!__deferredInstallPrompt) return;
+      __deferredInstallPrompt.prompt();
+      await __deferredInstallPrompt.userChoice;
+      __deferredInstallPrompt = null;
+      renderSettings();
+    });
+  }
+  // 学習リマインダー
+  const timeInput = document.getElementById('set-reminder-time');
+  timeInput.addEventListener('change', () => {
+    localStorage.setItem('wt_reminder_time', timeInput.value || '20:00');
+  });
+  document.getElementById('set-reminder-ics').addEventListener('click', () => {
+    downloadReminderICS(timeInput.value || '20:00');
+  });
+  document.getElementById('set-reminder-gcal').addEventListener('click', () => {
+    const url = googleCalendarReminderURL(timeInput.value || '20:00');
+    window.open(url, '_blank', 'noopener');
+  });
+}
+
+// ===== 学習リマインダー (OS カレンダーへ登録) =====
+// 「次回該当時刻」を起点に毎日繰り返し。.ics は iOS/Android/macOS の標準カレンダー
+// アプリで開ける。Google アカウントの場合は Quick Add URL の方が摩擦が少ない。
+function _nextOccurrence(hhmm) {
+  const [h, m] = (hhmm || '20:00').split(':').map(n => parseInt(n, 10) || 0);
+  const d = new Date();
+  d.setSeconds(0, 0);
+  d.setHours(h, m);
+  if (d.getTime() < Date.now()) d.setDate(d.getDate() + 1);
+  return d;
+}
+function _formatICSLocal(d) {
+  // ローカル時刻ベースの DTSTART (Z 無し) — TZID は付けないので端末タイムゾーンで解釈される
+  const z = (n) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}${z(d.getMonth() + 1)}${z(d.getDate())}T${z(d.getHours())}${z(d.getMinutes())}00`;
+}
+function _formatICSUTC(d) {
+  const z = (n) => String(n).padStart(2, '0');
+  return `${d.getUTCFullYear()}${z(d.getUTCMonth() + 1)}${z(d.getUTCDate())}T${z(d.getUTCHours())}${z(d.getUTCMinutes())}${z(d.getUTCSeconds())}Z`;
+}
+function buildReminderICS(hhmm) {
+  const start = _nextOccurrence(hhmm);
+  const end = new Date(start.getTime() + 15 * 60 * 1000);
+  const stamp = _formatICSUTC(new Date());
+  const uid = 'wordtacos-' + start.getTime() + '@teachertacos.com';
+  // RFC 5545: CRLF 改行
+  const lines = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//WordTacos//Daily Reminder//JP',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+    'BEGIN:VEVENT',
+    'UID:' + uid,
+    'DTSTAMP:' + stamp,
+    'DTSTART:' + _formatICSLocal(start),
+    'DTEND:' + _formatICSLocal(end),
+    'RRULE:FREQ=DAILY',
+    'SUMMARY:🌮 WordTacos の時間',
+    'DESCRIPTION:今日も英単語\\, いっぱい食べよ。\\nhttps://words.teachertacos.com/',
+    'URL:https://words.teachertacos.com/',
+    'BEGIN:VALARM',
+    'TRIGGER:PT0M',
+    'ACTION:DISPLAY',
+    'DESCRIPTION:WordTacos',
+    'END:VALARM',
+    'END:VEVENT',
+    'END:VCALENDAR',
+    '',
+  ];
+  return lines.join('\r\n');
+}
+function downloadReminderICS(hhmm) {
+  const ics = buildReminderICS(hhmm);
+  const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'wordtacos-reminder.ics';
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(() => { document.body.removeChild(a); URL.revokeObjectURL(url); }, 1000);
+}
+function googleCalendarReminderURL(hhmm) {
+  const start = _nextOccurrence(hhmm);
+  const end = new Date(start.getTime() + 15 * 60 * 1000);
+  // Google Calendar Quick Add は UTC の YYYYMMDDTHHMMSSZ 表記
+  const params = new URLSearchParams({
+    action: 'TEMPLATE',
+    text: '🌮 WordTacos の時間',
+    dates: _formatICSUTC(start) + '/' + _formatICSUTC(end),
+    details: '今日も英単語、いっぱい食べよ。\nhttps://words.teachertacos.com/',
+    location: 'https://words.teachertacos.com/',
+    recur: 'RRULE:FREQ=DAILY',
+  });
+  return 'https://calendar.google.com/calendar/render?' + params.toString();
+}
+
+// ===== タイマー OFF 対応 =====
+// 既存の currentTimeLimit を保ったまま、no_timer 設定があれば 999 秒 (= 実質無制限) に。
+(function hookTimer(){
+  const _orig = window.currentTimeLimit;
+  if (typeof _orig !== 'function') return;
+  window.currentTimeLimit = function() {
+    if (localStorage.getItem('wt_no_timer') === '1') return 999;
+    return _orig();
+  };
+})();
+
+// 🐢 イージーモード: 制限時間を 1.6倍にゆるめる (no_timer 設定の方が優先)。
+(function hookEasyMode(){
+  const _orig = window.currentTimeLimit;
+  if (typeof _orig !== 'function') return;
+  window.currentTimeLimit = function() {
+    const base = _orig();
+    if (base >= 999) return base;  // 無制限設定はそのまま尊重
+    if (localStorage.getItem('wt_easy_mode') === '1') return Math.round(base * 1.6);
+    return base;
+  };
+})();
+
+// ===== タブ切替 =====
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const tab = btn.dataset.tab;
+    if (tab === 'screen-stages') renderHome();
+    else if (tab === 'screen-review') renderReview();
+    else if (tab === 'screen-stats') renderStats();
+    else if (tab === 'screen-settings') renderSettings();
+    switchScreen(tab);
+  });
+});
+
+// ===== Service Worker 登録 =====
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  });
+}
+</script>
+<script src="gasflare.js"></script>
+</body>
+</html>

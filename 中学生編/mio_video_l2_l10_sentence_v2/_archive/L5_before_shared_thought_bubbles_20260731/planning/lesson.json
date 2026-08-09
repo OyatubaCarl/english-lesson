@@ -1,0 +1,298 @@
+{
+  "project_root": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成",
+  "slug": "l5_planning_to_visit_grandmother_sentence_v2",
+  "title_en": "Lesson 5  Planning to Visit Grandmother",
+  "title_ja": "祖母を訪ねる計画",
+  "chart": "taco_beat/charts/m5.js",
+  "audio": "中学生編/audio/L5.mp3",
+  "duration": 52.523537,
+  "lines": [
+    {
+      "start_index": 0,
+      "end_index": 2,
+      "en_words": [
+        "Tomorrow",
+        "is",
+        "Saturday."
+      ],
+      "ja": "明日は土曜日です。"
+    },
+    {
+      "start_index": 3,
+      "end_index": 12,
+      "en_words": [
+        "My",
+        "sister",
+        "and",
+        "I",
+        "are",
+        "going",
+        "to",
+        "visit",
+        "our",
+        "grandmother."
+      ],
+      "break_after": [
+        5
+      ],
+      "ja": "妹とわたしは祖母を訪ねる予定です。"
+    },
+    {
+      "start_index": 13,
+      "end_index": 27,
+      "en_words": [
+        "We",
+        "are",
+        "going",
+        "to",
+        "leave",
+        "home",
+        "early,",
+        "take",
+        "a",
+        "train,",
+        "and",
+        "go",
+        "to",
+        "her",
+        "town."
+      ],
+      "break_after": [
+        6
+      ],
+      "ja": "早く家を出て、列車で祖母の町へ行く予定です。"
+    },
+    {
+      "start_index": 28,
+      "end_index": 37,
+      "en_words": [
+        "For",
+        "lunch,",
+        "we",
+        "are",
+        "going",
+        "to",
+        "eat",
+        "hot",
+        "soup",
+        "together."
+      ],
+      "ja": "昼食には、いっしょに温かいスープを食べる予定です。"
+    },
+    {
+      "indices": [
+        38,
+        39,
+        40,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "en_words": [
+        "In",
+        "the",
+        "afternoon,",
+        "we",
+        "are",
+        "going",
+        "to",
+        "sit",
+        "and",
+        "read",
+        "books",
+        "quietly."
+      ],
+      "break_after": [
+        6
+      ],
+      "ja": "午後は座って、静かに本を読む予定です。"
+    },
+    {
+      "start_index": 53,
+      "end_index": 65,
+      "en_words": [
+        "I",
+        "am",
+        "going",
+        "to",
+        "tell",
+        "her",
+        "many",
+        "things",
+        "about",
+        "my",
+        "new",
+        "friend,",
+        "Tom."
+      ],
+      "break_after": [
+        7
+      ],
+      "ja": "新しい友達トムのことを、祖母にたくさん話すつもりです。"
+    },
+    {
+      "indices": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        75,
+        76
+      ],
+      "en_words": [
+        "I",
+        "am",
+        "sure",
+        "she",
+        "is",
+        "going",
+        "to",
+        "be",
+        "very",
+        "happy."
+      ],
+      "ja": "きっと祖母はとても喜ぶでしょう。"
+    }
+  ],
+  "shots": [
+    {
+      "image": "scenes/01_tomorrow_saturday.png",
+      "start": 0.0,
+      "end": 3.165,
+      "start_center": [
+        0.46,
+        0.48
+      ],
+      "end_center": [
+        0.54,
+        0.48
+      ],
+      "start_zoom": 1.03,
+      "end_zoom": 1.16,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする"
+    },
+    {
+      "image": "scenes/02_visit_grandmother.png",
+      "start": 3.165,
+      "end": 9.094,
+      "start_center": [
+        0.56,
+        0.48
+      ],
+      "end_center": [
+        0.44,
+        0.48
+      ],
+      "start_zoom": 1.13,
+      "end_zoom": 1.04,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "smoothleft"
+    },
+    {
+      "image": "scenes/03_early_train_town.png",
+      "start": 9.094,
+      "end": 17.098,
+      "start_center": [
+        0.5,
+        0.43
+      ],
+      "end_center": [
+        0.5,
+        0.54
+      ],
+      "start_zoom": 1.04,
+      "end_zoom": 1.17,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "circleopen"
+    },
+    {
+      "image": "scenes/04_hot_soup_together.png",
+      "start": 17.098,
+      "end": 22.1,
+      "start_center": [
+        0.5,
+        0.54
+      ],
+      "end_center": [
+        0.5,
+        0.45
+      ],
+      "start_zoom": 1.15,
+      "end_zoom": 1.05,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "hblur"
+    },
+    {
+      "image": "scenes/05_read_books_quietly.png",
+      "start": 22.1,
+      "end": 34.165,
+      "start_center": [
+        0.46,
+        0.48
+      ],
+      "end_center": [
+        0.54,
+        0.48
+      ],
+      "start_zoom": 1.03,
+      "end_zoom": 1.16,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "diagtl"
+    },
+    {
+      "image": "scenes/06_tell_about_tom.png",
+      "start": 34.165,
+      "end": 42.909,
+      "start_center": [
+        0.56,
+        0.48
+      ],
+      "end_center": [
+        0.44,
+        0.48
+      ],
+      "start_zoom": 1.13,
+      "end_zoom": 1.04,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "slideup"
+    },
+    {
+      "image": "scenes/07_grandmother_happy.png",
+      "start": 42.909,
+      "end": 52.523537,
+      "start_center": [
+        0.5,
+        0.43
+      ],
+      "end_center": [
+        0.5,
+        0.54
+      ],
+      "start_zoom": 1.04,
+      "end_zoom": 1.17,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "dissolve"
+    }
+  ],
+  "transition_duration": 0.42,
+  "sentence_image_count": 7,
+  "line_to_scene": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ]
+}

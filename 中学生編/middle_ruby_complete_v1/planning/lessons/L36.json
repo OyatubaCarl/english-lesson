@@ -1,0 +1,1272 @@
+{
+  "lesson": 36,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L36/planning/lesson.json",
+  "title_en": "Lesson 36  At Grandfather's Farm",
+  "title_ja": "祖父の農場で",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 16,
+  "lines": [
+    {
+      "line": 1,
+      "english": "One day during summer vacation, my family visited my grandfather's small farm.",
+      "source_ja": "夏休みのある日、家族でおじいちゃんの小さな農場を訪ねました。",
+      "display_ja": "夏休みのある日、家族でおじいちゃんの小さな農場を訪ねました。",
+      "corrected_translation": false,
+      "mixed": "夏休みのある日、家族でおじいちゃんの小さな農場を訪ねました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "夏休みのある日、家族でおじいちゃんの小さな農場を訪ねました。",
+          "parts": [
+            {
+              "text": "夏休",
+              "ruby": "なつやす"
+            },
+            {
+              "text": "みのある",
+              "ruby": ""
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "でおじいちゃんの",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            },
+            {
+              "text": "農場",
+              "ruby": "のうじょう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "訪",
+              "ruby": "たず"
+            },
+            {
+              "text": "ねました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 2,
+      "english": "The country air was very clear.",
+      "source_ja": "田舎の空気はとても澄んでいました。",
+      "display_ja": "田舎の空気はとても澄んでいました。",
+      "corrected_translation": false,
+      "mixed": "田舎の空気はとても澄んでいました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "田舎の空気はとても澄んでいました。",
+          "parts": [
+            {
+              "text": "田舎",
+              "ruby": "いなか"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "空気",
+              "ruby": "くうき"
+            },
+            {
+              "text": "はとても",
+              "ruby": ""
+            },
+            {
+              "text": "澄",
+              "ruby": "す"
+            },
+            {
+              "text": "んでいました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 3,
+      "english": "A cow was looking at us with big eyes.",
+      "source_ja": "牧場には牛が一頭います。",
+      "display_ja": "大きな目をした一頭の牛が、わたしたちを見ていました。",
+      "corrected_translation": true,
+      "mixed": "大きな目をした一頭の cow が、わたしたちを見ていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "大きな目をした一頭の ",
+          "parts": [
+            {
+              "text": "大",
+              "ruby": "おお"
+            },
+            {
+              "text": "きな",
+              "ruby": ""
+            },
+            {
+              "text": "目",
+              "ruby": "め"
+            },
+            {
+              "text": "をした",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "いっ"
+            },
+            {
+              "text": "頭",
+              "ruby": "とう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "cow",
+          "ruby": "牛"
+        },
+        {
+          "type": "ja",
+          "text": " が、わたしたちを見ていました。",
+          "parts": [
+            {
+              "text": "が、わたしたちを",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "ていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "cow",
+          "canonical_word": "Cow",
+          "meaning": "牛"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "cow",
+          "reading": "牛",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "Cow",
+          "canonical_meaning": "牛"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "A pig was moving its nose behind the fence.",
+      "source_ja": "豚は三頭います。",
+      "display_ja": "一頭の豚が柵の後ろで鼻を動かしていました。",
+      "corrected_translation": true,
+      "mixed": "pig が柵の後ろで鼻を動かしていました。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "pig",
+          "ruby": "ぶた"
+        },
+        {
+          "type": "ja",
+          "text": " が柵の後ろで鼻を動かしていました。",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "柵",
+              "ruby": "さく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "後",
+              "ruby": "うし"
+            },
+            {
+              "text": "ろで",
+              "ruby": ""
+            },
+            {
+              "text": "鼻",
+              "ruby": "はな"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "動",
+              "ruby": "うご"
+            },
+            {
+              "text": "かしていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "pig",
+          "canonical_word": "pig",
+          "meaning": "ぶた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "pig",
+          "reading": "ぶた",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "pig",
+          "canonical_meaning": "ぶた"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "A sheep was eating grass with soft white hair.",
+      "source_ja": "羊も何頭かいます。",
+      "display_ja": "柔らかな白い毛の羊が草を食べていました。",
+      "corrected_translation": true,
+      "mixed": "sheep が柔らかな白い毛で、草を食べていました。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "sheep",
+          "ruby": "ひつじ"
+        },
+        {
+          "type": "ja",
+          "text": " が柔らかな白い毛で、草を食べていました。",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "柔",
+              "ruby": "やわ"
+            },
+            {
+              "text": "らかな",
+              "ruby": ""
+            },
+            {
+              "text": "白",
+              "ruby": "しろ"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "毛",
+              "ruby": "け"
+            },
+            {
+              "text": "で、",
+              "ruby": ""
+            },
+            {
+              "text": "草",
+              "ruby": "くさ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "食",
+              "ruby": "た"
+            },
+            {
+              "text": "べていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "sheep",
+          "canonical_word": "sheep",
+          "meaning": "ひつじ"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "sheep",
+          "reading": "ひつじ",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "sheep",
+          "canonical_meaning": "ひつじ"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "When we walked toward the hill behind the house, a small rabbit appeared from the bushes.",
+      "source_ja": "家の裏の丘のほうへ歩いていくと、茂みから小さなうさぎが飛び出してきました。",
+      "display_ja": "家の裏の丘のほうへ歩いていくと、茂みから小さなうさぎが飛び出してきました。",
+      "corrected_translation": false,
+      "mixed": "家の裏の丘のほうへ歩いていくと、茂みから小さな rabbit が飛び出してきました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "家の裏の丘のほうへ歩いていくと、茂みから小さな ",
+          "parts": [
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "裏",
+              "ruby": "うら"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "丘",
+              "ruby": "おか"
+            },
+            {
+              "text": "のほうへ",
+              "ruby": ""
+            },
+            {
+              "text": "歩",
+              "ruby": "ある"
+            },
+            {
+              "text": "いていくと、",
+              "ruby": ""
+            },
+            {
+              "text": "茂",
+              "ruby": "しげ"
+            },
+            {
+              "text": "みから",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "rabbit",
+          "ruby": "うさぎ"
+        },
+        {
+          "type": "ja",
+          "text": " が飛び出してきました。",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "飛び出",
+              "ruby": "とびだ"
+            },
+            {
+              "text": "してきました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "rabbit",
+          "canonical_word": "rabbit",
+          "meaning": "うさぎ"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "rabbit",
+          "reading": "うさぎ",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "rabbit",
+          "canonical_meaning": "うさぎ"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "For a short moment, our eyes met, and then it quickly turned and ran away.",
+      "source_ja": "一瞬、目が合って、そのあとすぐにくるりと向きを変えて逃げていきました。",
+      "display_ja": "一瞬、目が合って、そのあとすぐにくるりと向きを変えて逃げていきました。",
+      "corrected_translation": false,
+      "mixed": "一瞬、目が合って、そのあとすぐにくるりと向きを変えて逃げていきました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "一瞬、目が合って、そのあとすぐにくるりと向きを変えて逃げていきました。",
+          "parts": [
+            {
+              "text": "一瞬",
+              "ruby": "いっしゅん"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "目",
+              "ruby": "め"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "合",
+              "ruby": "あ"
+            },
+            {
+              "text": "って、そのあとすぐにくるりと",
+              "ruby": ""
+            },
+            {
+              "text": "向",
+              "ruby": "む"
+            },
+            {
+              "text": "きを",
+              "ruby": ""
+            },
+            {
+              "text": "変",
+              "ruby": "か"
+            },
+            {
+              "text": "えて",
+              "ruby": ""
+            },
+            {
+              "text": "逃",
+              "ruby": "に"
+            },
+            {
+              "text": "げていきました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 8,
+      "english": "Above the trees, birds were flying freely, and from time to time, one bird came down low to look at us.",
+      "source_ja": "木々の上を、鳥たちが自由に飛んでいて、ときどき一羽が低く降りてきてこちらを見ていました。",
+      "display_ja": "木々の上を、鳥たちが自由に飛んでいて、ときどき一羽が低く降りてきてこちらを見ていました。",
+      "corrected_translation": false,
+      "mixed": "木々の上を bird たちが自由に flying していました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "木々の上を ",
+          "parts": [
+            {
+              "text": "木々",
+              "ruby": "きぎ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "上",
+              "ruby": "うえ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "bird",
+          "ruby": "鳥"
+        },
+        {
+          "type": "ja",
+          "text": " たちが自由に ",
+          "parts": [
+            {
+              "text": "たちが",
+              "ruby": ""
+            },
+            {
+              "text": "自由",
+              "ruby": "じゆう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "flying",
+          "ruby": "飛ぶ"
+        },
+        {
+          "type": "ja",
+          "text": " していました。",
+          "parts": [
+            {
+              "text": "していました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "flying",
+          "canonical_word": "fly",
+          "meaning": "飛ぶ"
+        },
+        {
+          "english": "bird",
+          "canonical_word": "bird",
+          "meaning": "鳥"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "flying",
+          "reading": "飛ぶ",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "fly",
+          "canonical_meaning": "飛ぶ"
+        },
+        {
+          "english": "bird",
+          "reading": "鳥",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "bird",
+          "canonical_meaning": "鳥"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "Beside a little stream, a small frog jumped.",
+      "source_ja": "小さな川のそばでは、かえるがぴょんと跳ねていました。",
+      "display_ja": "小さな川のそばでは、かえるがぴょんと跳ねていました。",
+      "corrected_translation": false,
+      "mixed": "小川のそばでは、frog がぴょんと jumped しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "小川のそばでは、",
+          "parts": [
+            {
+              "text": "小川",
+              "ruby": "おがわ"
+            },
+            {
+              "text": "のそばでは、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "frog",
+          "ruby": "かえる"
+        },
+        {
+          "type": "ja",
+          "text": " がぴょんと ",
+          "parts": [
+            {
+              "text": "がぴょんと",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "jumped",
+          "ruby": "跳ぶ"
+        },
+        {
+          "type": "ja",
+          "text": " しました。",
+          "parts": [
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "frog",
+          "canonical_word": "frog",
+          "meaning": "かえる"
+        },
+        {
+          "english": "jumped",
+          "canonical_word": "jump",
+          "meaning": "跳ぶ"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "frog",
+          "reading": "かえる",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "frog",
+          "canonical_meaning": "かえる"
+        },
+        {
+          "english": "jumped",
+          "reading": "跳ぶ",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "jump",
+          "canonical_meaning": "跳ぶ"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "In the evening, I thought I saw a big bear in the shadow of the far mountain.",
+      "source_ja": "夕方、遠くの山の影に大きな熊が見えた気がしました。",
+      "display_ja": "夕方、遠くの山の影に大きな熊が見えた気がしました。",
+      "corrected_translation": false,
+      "mixed": "夕方、遠くの山の影に大きな bear が見えた気がしました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "夕方、遠くの山の影に大きな ",
+          "parts": [
+            {
+              "text": "夕方",
+              "ruby": "ゆうがた"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "遠",
+              "ruby": "とお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "山",
+              "ruby": "やま"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "影",
+              "ruby": "かげ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "大",
+              "ruby": "おお"
+            },
+            {
+              "text": "きな",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "bear",
+          "ruby": "くま"
+        },
+        {
+          "type": "ja",
+          "text": " が見えた気がしました。",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "えた",
+              "ruby": ""
+            },
+            {
+              "text": "気",
+              "ruby": "き"
+            },
+            {
+              "text": "がしました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "bear",
+          "canonical_word": "bear",
+          "meaning": "くま"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "bear",
+          "reading": "くま",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "bear",
+          "canonical_meaning": "くま"
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "english": "“There are many wild animals here,” my grandfather said quietly.",
+      "source_ja": "「ここにはたくさんの野生動物がいるんだよ」とおじいちゃんは静かに言いました。",
+      "display_ja": "「ここにはたくさんの野生動物がいるんだよ」とおじいちゃんは静かに言いました。",
+      "corrected_translation": false,
+      "mixed": "「ここにはたくさんの wild な動物がいる」と祖父は言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「ここにはたくさんの ",
+          "parts": [
+            {
+              "text": "「ここにはたくさんの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "wild",
+          "ruby": "野生の"
+        },
+        {
+          "type": "ja",
+          "text": " な動物がいる」と祖父は言いました。",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "動物",
+              "ruby": "どうぶつ"
+            },
+            {
+              "text": "がいる」と",
+              "ruby": ""
+            },
+            {
+              "text": "祖父",
+              "ruby": "そふ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "wild",
+          "canonical_word": "wild",
+          "meaning": "野生の"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "wild",
+          "reading": "野生の",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "wild",
+          "canonical_meaning": "野生の"
+        }
+      ]
+    },
+    {
+      "line": 12,
+      "english": "Behind the barn, a horse was eating grass calmly.",
+      "source_ja": "納屋のうしろでは、馬がのんびりと草を食べています。",
+      "display_ja": "納屋のうしろでは、馬がのんびりと草を食べています。",
+      "corrected_translation": false,
+      "mixed": "納屋の後ろでは、horse がのんびり草を食べていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "納屋の後ろでは、",
+          "parts": [
+            {
+              "text": "納屋",
+              "ruby": "なや"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "後",
+              "ruby": "うし"
+            },
+            {
+              "text": "ろでは、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "horse",
+          "ruby": "うま"
+        },
+        {
+          "type": "ja",
+          "text": " がのんびり草を食べていました。",
+          "parts": [
+            {
+              "text": "がのんびり",
+              "ruby": ""
+            },
+            {
+              "text": "草",
+              "ruby": "くさ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "食",
+              "ruby": "た"
+            },
+            {
+              "text": "べていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "horse",
+          "canonical_word": "horse",
+          "meaning": "うま"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "horse",
+          "reading": "うま",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "horse",
+          "canonical_meaning": "うま"
+        }
+      ]
+    },
+    {
+      "line": 13,
+      "english": "At night, we can hear the small footsteps of a mouse, too.",
+      "source_ja": "夜には、ねずみの小さな足音だって聞こえるんです。",
+      "display_ja": "夜には、ねずみの小さな足音だって聞こえるんです。",
+      "corrected_translation": false,
+      "mixed": "夜には、 mouse の小さな足音だって聞こえるんです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "夜には、 ",
+          "parts": [
+            {
+              "text": "夜",
+              "ruby": "よる"
+            },
+            {
+              "text": "には、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "mouse",
+          "ruby": "ねずみ"
+        },
+        {
+          "type": "ja",
+          "text": " の小さな足音だって聞こえるんです。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            },
+            {
+              "text": "足音",
+              "ruby": "あしおと"
+            },
+            {
+              "text": "だって",
+              "ruby": ""
+            },
+            {
+              "text": "聞",
+              "ruby": "き"
+            },
+            {
+              "text": "こえるんです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "mouse",
+          "canonical_word": "mouse",
+          "meaning": "ねずみ"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "mouse",
+          "reading": "ねずみ",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "mouse",
+          "canonical_meaning": "ねずみ"
+        }
+      ]
+    },
+    {
+      "line": 14,
+      "english": "In the little stream nearby, we saw small fish swimming.",
+      "source_ja": "近くの小川では、小さな魚が泳いでいるのが見えました。",
+      "display_ja": "近くの小川では、小さな魚が泳いでいるのが見えました。",
+      "corrected_translation": false,
+      "mixed": "近くの小川では、小さな魚が swimming しているのが見えました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "近くの小川では、小さな魚が ",
+          "parts": [
+            {
+              "text": "近",
+              "ruby": "ちか"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "小川",
+              "ruby": "おがわ"
+            },
+            {
+              "text": "では、",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            },
+            {
+              "text": "魚",
+              "ruby": "さかな"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "swimming",
+          "ruby": "泳ぐ"
+        },
+        {
+          "type": "ja",
+          "text": " しているのが見えました。",
+          "parts": [
+            {
+              "text": "しているのが",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "えました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "swimming",
+          "canonical_word": "swim",
+          "meaning": "泳ぐ"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "swimming",
+          "reading": "泳ぐ",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "swim",
+          "canonical_meaning": "泳ぐ"
+        }
+      ]
+    },
+    {
+      "line": 15,
+      "english": "“Not only cats and dogs in our town have lives,” my father quietly added.",
+      "source_ja": "「町のねこや犬だけじゃなく、ここにもたくさんの命があるんだよ」と父が静かに付け加えました。",
+      "display_ja": "「町のねこや犬だけじゃなく、ここにもたくさんの命があるんだよ」と父が静かに付け加えました。",
+      "corrected_translation": false,
+      "mixed": "「町の cats や犬だけじゃなく、ここにもたくさんの命があるんだよ」と父が静かに付け加えました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「町の ",
+          "parts": [
+            {
+              "text": "「",
+              "ruby": ""
+            },
+            {
+              "text": "町",
+              "ruby": "まち"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "cats",
+          "ruby": "ねこ"
+        },
+        {
+          "type": "ja",
+          "text": " や犬だけじゃなく、ここにもたくさんの命があるんだよ」と父が静かに付け加えました。",
+          "parts": [
+            {
+              "text": "や",
+              "ruby": ""
+            },
+            {
+              "text": "犬",
+              "ruby": "いぬ"
+            },
+            {
+              "text": "だけじゃなく、ここにもたくさんの",
+              "ruby": ""
+            },
+            {
+              "text": "命",
+              "ruby": "いのち"
+            },
+            {
+              "text": "があるんだよ」と",
+              "ruby": ""
+            },
+            {
+              "text": "父",
+              "ruby": "ちち"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            },
+            {
+              "text": "付け加",
+              "ruby": "つけくわ"
+            },
+            {
+              "text": "えました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "cats",
+          "canonical_word": "cat",
+          "meaning": "ねこ"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "cats",
+          "reading": "ねこ",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "cat",
+          "canonical_meaning": "ねこ"
+        }
+      ]
+    },
+    {
+      "line": 16,
+      "english": "Thank you for watching.",
+      "source_ja": "ご覧いただき、ありがとうございました。",
+      "display_ja": "ご覧いただき、ありがとうございました。",
+      "corrected_translation": false,
+      "mixed": "ご覧いただき、ありがとうございました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ご覧いただき、ありがとうございました。",
+          "parts": [
+            {
+              "text": "ご",
+              "ruby": ""
+            },
+            {
+              "text": "覧",
+              "ruby": "らん"
+            },
+            {
+              "text": "いただき、ありがとうございました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    }
+  ]
+}

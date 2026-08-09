@@ -1,0 +1,128 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H025.md",
+  "audio": "高校生編/suno_ready/generated/audio/H025/candidate1-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 76.72,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9912,
+  "expected_words": 113,
+  "transcribed_words": 112,
+  "matched_words": 111,
+  "coverage": 0.9823,
+  "precision": 0.9911,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 112,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 47,
+      "length": 2,
+      "words": [
+        "listeners",
+        "in"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 47,
+      "actual_start": 47,
+      "expected": [
+        "listeners",
+        "in"
+      ],
+      "actual": [
+        "listener"
+      ],
+      "actual_confidence": 0.9849,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "A small concert was held in the town hall Whoever came could enter with free admission Whoever performed was warmly welcomed by the audience The first to perform was a girl of ten Holding a violin When she finished, however softly she played Every note reached the listener, the room Applause rose several times Whichever movement she played, her tone was pure Whoever listened could not help but admire The purity of her sound That evening, the hall was more peaceful than I had ever seen And people exchanged smile after smile with one another This kind of place, whenever it exists Is a small community tradition that I want to treasure",
+  "segments": [
+    {
+      "start": 2.06,
+      "end": 6.22,
+      "text": "A small concert was held in the town hall"
+    },
+    {
+      "start": 7.22,
+      "end": 11.34,
+      "text": "Whoever came could enter with free admission"
+    },
+    {
+      "start": 12.42,
+      "end": 16.94,
+      "text": "Whoever performed was warmly welcomed by the audience"
+    },
+    {
+      "start": 16.94,
+      "end": 20.46,
+      "text": "The first to perform was a girl of ten"
+    },
+    {
+      "start": 20.46,
+      "end": 22.86,
+      "text": "Holding a violin"
+    },
+    {
+      "start": 22.86,
+      "end": 26.92,
+      "text": "When she finished, however softly she played"
+    },
+    {
+      "start": 26.92,
+      "end": 32.1,
+      "text": "Every note reached the listener, the room"
+    },
+    {
+      "start": 33.2,
+      "end": 37.6,
+      "text": "Applause rose several times"
+    },
+    {
+      "start": 37.6,
+      "end": 42.6,
+      "text": "Whichever movement she played, her tone was pure"
+    },
+    {
+      "start": 42.6,
+      "end": 46.66,
+      "text": "Whoever listened could not help but admire"
+    },
+    {
+      "start": 46.66,
+      "end": 49.16,
+      "text": "The purity of her sound"
+    },
+    {
+      "start": 49.16,
+      "end": 54.44,
+      "text": "That evening, the hall was more peaceful than I had ever seen"
+    },
+    {
+      "start": 54.44,
+      "end": 60.96,
+      "text": "And people exchanged smile after smile with one another"
+    },
+    {
+      "start": 65.44,
+      "end": 70.14,
+      "text": "This kind of place, whenever it exists"
+    },
+    {
+      "start": 70.14,
+      "end": 76.72,
+      "text": "Is a small community tradition that I want to treasure"
+    }
+  ]
+}

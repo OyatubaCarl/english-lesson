@@ -1,0 +1,1323 @@
+{
+  "lesson": "H077",
+  "title_ja": "メディアリテラシー",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 17,
+  "canonical_target_lines": 13,
+  "mixed_lines": 13,
+  "japanese_only_lines": 4,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 9.54,
+      "end": 15.6,
+      "english": "Every day, we are exposed to an enormous amount of information.",
+      "japanese": "私たちは毎日、膨大な量の情報にさらされています。",
+      "mixed": "私たちは毎日、膨大な量の情報にさらされています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私たちは毎日、膨大な量の情報にさらされています。",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "たちは",
+              "ruby": ""
+            },
+            {
+              "text": "毎日",
+              "ruby": "まいにち"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "膨大",
+              "ruby": "ぼうだい"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "量",
+              "ruby": "りょう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "情報",
+              "ruby": "じょうほう"
+            },
+            {
+              "text": "にさらされています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_manual_translation"
+    },
+    {
+      "line": 2,
+      "start": 15.6,
+      "end": 24.18,
+      "english": "Newspapers, television, articles on the internet, and posts on social media.",
+      "japanese": "新聞、テレビ、インターネットの記事、ソーシャルメディアの投稿。",
+      "mixed": "新聞、テレビ、インターネットの articles、ソーシャルメディアの投稿です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "新聞、テレビ、インターネットの ",
+          "parts": [
+            {
+              "text": "新聞",
+              "ruby": "しんぶん"
+            },
+            {
+              "text": "、テレビ、インターネットの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "articles",
+          "ruby": "記事"
+        },
+        {
+          "type": "ja",
+          "text": "、ソーシャルメディアの投稿です。",
+          "parts": [
+            {
+              "text": "、ソーシャルメディアの",
+              "ruby": ""
+            },
+            {
+              "text": "投稿",
+              "ruby": "とうこう"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "articles",
+          "canonical_word": "article",
+          "meaning": "記事"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "articles",
+          "reading": "記事",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "article",
+          "canonical_meaning": "記事"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 3,
+      "start": 25.36,
+      "end": 29.375,
+      "english": "But how much of it is truly accurate?",
+      "japanese": "しかし、その情報のどれくらいが本当に正確なのでしょうか？",
+      "mixed": "しかし、そのうち本当に accurate なものは、どれくらいあるでしょうか。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "しかし、そのうち本当に ",
+          "parts": [
+            {
+              "text": "しかし、そのうち",
+              "ruby": ""
+            },
+            {
+              "text": "本当",
+              "ruby": "ほんと"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "accurate",
+          "ruby": "正確な"
+        },
+        {
+          "type": "ja",
+          "text": " なものは、どれくらいあるでしょうか。",
+          "parts": [
+            {
+              "text": "なものは、どれくらいあるでしょうか。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "accurate",
+          "canonical_word": "accurate",
+          "meaning": "正確な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "accurate",
+          "reading": "正確な",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "accurate",
+          "canonical_meaning": "正確な"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 4,
+      "start": 29.625,
+      "end": 35.68,
+      "english": "An advertisement exists not simply to convey facts, but to encourage purchases.",
+      "japanese": "広告は単に事実を伝えるためではなく、購入を促すために存在します。",
+      "mixed": "ad は、単に事実を伝えるだけでなく、購入を促すためにも作られます。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "ad",
+          "ruby": "広告"
+        },
+        {
+          "type": "ja",
+          "text": " は、単に事実を伝えるだけでなく、購入を促すためにも作られます。",
+          "parts": [
+            {
+              "text": "は、",
+              "ruby": ""
+            },
+            {
+              "text": "単",
+              "ruby": "たん"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "事実",
+              "ruby": "じじつ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "伝",
+              "ruby": "つた"
+            },
+            {
+              "text": "えるだけでなく、",
+              "ruby": ""
+            },
+            {
+              "text": "購入",
+              "ruby": "こうにゅう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "促",
+              "ruby": "うなが"
+            },
+            {
+              "text": "すためにも",
+              "ruby": ""
+            },
+            {
+              "text": "作",
+              "ruby": "つく"
+            },
+            {
+              "text": "られます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [
+        {
+          "english": "ad",
+          "reading": "広告",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "ad",
+          "canonical_meaning": "広告"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 5,
+      "start": 37.18,
+      "end": 43.72,
+      "english": "Political propaganda manipulates information in order to spread a particular viewpoint.",
+      "japanese": "政治プロパガンダは、特定の見解を広めるために情報を操作します。",
+      "mixed": "政治 propaganda は、特定の見解を広めるために情報を操作します。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "政治 ",
+          "parts": [
+            {
+              "text": "政治",
+              "ruby": "せいじ"
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "propaganda",
+          "ruby": "プロパガンダ"
+        },
+        {
+          "type": "ja",
+          "text": " は、特定の見解を広めるために情報を操作します。",
+          "parts": [
+            {
+              "text": "は、",
+              "ruby": ""
+            },
+            {
+              "text": "特定",
+              "ruby": "とくてい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "見解",
+              "ruby": "けんかい"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "広",
+              "ruby": "ひろ"
+            },
+            {
+              "text": "めるために",
+              "ruby": ""
+            },
+            {
+              "text": "情報",
+              "ruby": "じょうほう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "操作",
+              "ruby": "そうさ"
+            },
+            {
+              "text": "します。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "propaganda",
+          "canonical_word": "propaganda",
+          "meaning": "プロパガンダ"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "propaganda",
+          "reading": "プロパガンダ",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "propaganda",
+          "canonical_meaning": "プロパガンダ"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 6,
+      "start": 44.24,
+      "end": 49.18,
+      "english": "Now anyone can publish information on social media.",
+      "japanese": "今では誰でもソーシャルメディアで情報を発信できるようになりました。",
+      "mixed": "今では、誰でもソーシャルメディアで情報を発信できます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "今では、誰でもソーシャルメディアで情報を発信できます。",
+          "parts": [
+            {
+              "text": "今",
+              "ruby": "いま"
+            },
+            {
+              "text": "では、",
+              "ruby": ""
+            },
+            {
+              "text": "誰",
+              "ruby": "だれ"
+            },
+            {
+              "text": "でもソーシャルメディアで",
+              "ruby": ""
+            },
+            {
+              "text": "情報",
+              "ruby": "じょうほう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "発信",
+              "ruby": "はっしん"
+            },
+            {
+              "text": "できます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_manual_translation"
+    },
+    {
+      "line": 7,
+      "start": 49.18,
+      "end": 54.92,
+      "english": "As a result, unverified rumors and misleading information spread instantly.",
+      "japanese": "その結果、未確認の噂や誤解を招く情報が瞬時に広まりました。",
+      "mixed": "その結果、未確認の噂や misleading な情報が、瞬時に広がります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "その結果、未確認の噂や ",
+          "parts": [
+            {
+              "text": "その",
+              "ruby": ""
+            },
+            {
+              "text": "結果",
+              "ruby": "けっか"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "未",
+              "ruby": "み"
+            },
+            {
+              "text": "確認",
+              "ruby": "かくにん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "噂",
+              "ruby": "うわさ"
+            },
+            {
+              "text": "や",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "misleading",
+          "ruby": "誤解を招く"
+        },
+        {
+          "type": "ja",
+          "text": " な情報が、瞬時に広がります。",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "情報",
+              "ruby": "じょうほう"
+            },
+            {
+              "text": "が、",
+              "ruby": ""
+            },
+            {
+              "text": "瞬時",
+              "ruby": "しゅんじ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "広",
+              "ruby": "ひろ"
+            },
+            {
+              "text": "がります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "misleading",
+          "canonical_word": "misleading",
+          "meaning": "誤解を招く"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "misleading",
+          "reading": "誤解を招く",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "misleading",
+          "canonical_meaning": "誤解を招く"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 8,
+      "start": 54.92,
+      "end": 60.98,
+      "english": "The more sensational the headline, the more attention it draws.",
+      "japanese": "見出しがセンセーショナルであればあるほど、注目が集まります。",
+      "mixed": "見出しが sensational であるほど、注目を集めます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "見出しが ",
+          "parts": [
+            {
+              "text": "見出",
+              "ruby": "みだ"
+            },
+            {
+              "text": "しが",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "sensational",
+          "ruby": "扇情的な"
+        },
+        {
+          "type": "ja",
+          "text": " であるほど、注目を集めます。",
+          "parts": [
+            {
+              "text": "であるほど、",
+              "ruby": ""
+            },
+            {
+              "text": "注目",
+              "ruby": "ちゅうもく"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "集",
+              "ruby": "あつ"
+            },
+            {
+              "text": "めます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "sensational",
+          "canonical_word": "sensational",
+          "meaning": "扇情的な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "sensational",
+          "reading": "扇情的な",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "sensational",
+          "canonical_meaning": "扇情的な"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 9,
+      "start": 60.98,
+      "end": 65.04,
+      "english": "What, then, should we believe?",
+      "japanese": "では、何を信じればよいのでしょうか？",
+      "mixed": "では、何を信じればよいのでしょうか。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "では、何を信じればよいのでしょうか。",
+          "parts": [
+            {
+              "text": "では、",
+              "ruby": ""
+            },
+            {
+              "text": "何",
+              "ruby": "なん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "信",
+              "ruby": "しん"
+            },
+            {
+              "text": "じればよいのでしょうか。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_manual_translation"
+    },
+    {
+      "line": 10,
+      "start": 66.7,
+      "end": 70.68,
+      "english": "First, verify the source of the information.",
+      "japanese": "まず、情報源を確認します。",
+      "mixed": "まず、情報の source を確かめます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "まず、情報の ",
+          "parts": [
+            {
+              "text": "まず、",
+              "ruby": ""
+            },
+            {
+              "text": "情報",
+              "ruby": "じょうほう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "source",
+          "ruby": "情報源"
+        },
+        {
+          "type": "ja",
+          "text": " を確かめます。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "確",
+              "ruby": "たし"
+            },
+            {
+              "text": "かめます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "source",
+          "canonical_word": "source",
+          "meaning": "情報源"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "source",
+          "reading": "情報源",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "source",
+          "canonical_meaning": "情報源"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 11,
+      "start": 70.68,
+      "end": 75.86,
+      "english": "Who published it, and what evidence does it rest upon?",
+      "japanese": "誰がそれを発行しましたか?そしてそれはどのような証拠に基づいていますか?",
+      "mixed": "誰が発信し、どの evidence に基づいているのかを見ます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "誰が発信し、どの ",
+          "parts": [
+            {
+              "text": "誰",
+              "ruby": "だれ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "発信",
+              "ruby": "はっしん"
+            },
+            {
+              "text": "し、どの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "evidence",
+          "ruby": "証拠"
+        },
+        {
+          "type": "ja",
+          "text": " に基づいているのかを見ます。",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "基",
+              "ruby": "もと"
+            },
+            {
+              "text": "づいているのかを",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "ます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "evidence",
+          "canonical_word": "evidence",
+          "meaning": "証拠"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "evidence",
+          "reading": "証拠",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "evidence",
+          "canonical_meaning": "証拠"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 12,
+      "start": 75.86,
+      "end": 82.64,
+      "english": "If statistics are quoted, examine critically how that data was gathered.",
+      "japanese": "統計が引用されている場合は、そのデータがどのように収集されたかを批判的に検討してください。",
+      "mixed": "statistics が引用されていたら、データの集め方を批判的に analyze します。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "statistics",
+          "ruby": "統計"
+        },
+        {
+          "type": "ja",
+          "text": " が引用されていたら、データの集め方を批判的に ",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "引用",
+              "ruby": "いんよう"
+            },
+            {
+              "text": "されていたら、データの",
+              "ruby": ""
+            },
+            {
+              "text": "集",
+              "ruby": "あつ"
+            },
+            {
+              "text": "め",
+              "ruby": ""
+            },
+            {
+              "text": "方",
+              "ruby": "かた"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "批判",
+              "ruby": "ひはん"
+            },
+            {
+              "text": "的",
+              "ruby": "てき"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "analyze",
+          "ruby": "分析する"
+        },
+        {
+          "type": "ja",
+          "text": " します。",
+          "parts": [
+            {
+              "text": "します。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "statistics",
+          "canonical_word": "statistics",
+          "meaning": "統計"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "statistics",
+          "reading": "統計",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "statistics",
+          "canonical_meaning": "統計"
+        },
+        {
+          "english": "analyze",
+          "reading": "分析する",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "analyze",
+          "canonical_meaning": "分析する"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 13,
+      "start": 82.64,
+      "end": 89.54,
+      "english": "It is also important to compare several sources for any single event.",
+      "japanese": "単一のイベントについて複数のソースを比較することも重要です。",
+      "mixed": "一つの出来事について、複数の sources を比べることも大切です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "一つの出来事について、複数の ",
+          "parts": [
+            {
+              "text": "一",
+              "ruby": "ひと"
+            },
+            {
+              "text": "つの",
+              "ruby": ""
+            },
+            {
+              "text": "出来事",
+              "ruby": "できごと"
+            },
+            {
+              "text": "について、",
+              "ruby": ""
+            },
+            {
+              "text": "複数",
+              "ruby": "ふくすう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "sources",
+          "ruby": "情報源"
+        },
+        {
+          "type": "ja",
+          "text": " を比べることも大切です。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "比",
+              "ruby": "くら"
+            },
+            {
+              "text": "べることも",
+              "ruby": ""
+            },
+            {
+              "text": "大切",
+              "ruby": "たいせつ"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "sources",
+          "canonical_word": "source",
+          "meaning": "情報源"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "sources",
+          "reading": "情報源",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "source",
+          "canonical_meaning": "情報源"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 14,
+      "start": 89.54,
+      "end": 96.76,
+      "english": "If we judge from only one perspective, we arrive at a biased conclusion.",
+      "japanese": "一つの観点だけから判断すると、偏った結論に達してしまいます。",
+      "mixed": "一つの perspective だけで判断すると、偏った結論に至ります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "一つの ",
+          "parts": [
+            {
+              "text": "一",
+              "ruby": "ひと"
+            },
+            {
+              "text": "つの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "perspective",
+          "ruby": "視点"
+        },
+        {
+          "type": "ja",
+          "text": " だけで判断すると、偏った結論に至ります。",
+          "parts": [
+            {
+              "text": "だけで",
+              "ruby": ""
+            },
+            {
+              "text": "判断",
+              "ruby": "はんだん"
+            },
+            {
+              "text": "すると、",
+              "ruby": ""
+            },
+            {
+              "text": "偏",
+              "ruby": "かたよ"
+            },
+            {
+              "text": "った",
+              "ruby": ""
+            },
+            {
+              "text": "結論",
+              "ruby": "けつろん"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "至",
+              "ruby": "いた"
+            },
+            {
+              "text": "ります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "perspective",
+          "canonical_word": "perspective",
+          "meaning": "視点"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "perspective",
+          "reading": "視点",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "perspective",
+          "canonical_meaning": "視点"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 15,
+      "start": 96.76,
+      "end": 103.38,
+      "english": "Critical thinking is the only power that protects us in this sea of information.",
+      "japanese": "クリティカルシンキングは、この情報の海の中で私たちを守る唯一の力です。",
+      "mixed": "critical な思考は、この情報の海で私たちを守る唯一の力です。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "critical",
+          "ruby": "批判的な"
+        },
+        {
+          "type": "ja",
+          "text": " な思考は、この情報の海で私たちを守る唯一の力です。",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "思考",
+              "ruby": "しこう"
+            },
+            {
+              "text": "は、この",
+              "ruby": ""
+            },
+            {
+              "text": "情報",
+              "ruby": "じょうほう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "海",
+              "ruby": "うみ"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "たちを",
+              "ruby": ""
+            },
+            {
+              "text": "守",
+              "ruby": "まも"
+            },
+            {
+              "text": "る",
+              "ruby": ""
+            },
+            {
+              "text": "唯一",
+              "ruby": "ゆいいつ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "力",
+              "ruby": "ちから"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "Critical",
+          "canonical_word": "critical",
+          "meaning": "批判的な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "critical",
+          "reading": "批判的な",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "critical",
+          "canonical_meaning": "批判的な"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 16,
+      "start": 103.38,
+      "end": 114.72,
+      "english": "Media literacy has become an essential skill for everyone living in our age.",
+      "japanese": "メディアリテラシーは、私たちの時代に生きるすべての人にとって不可欠なスキルとなっています。",
+      "mixed": "メディアリテラシーは、現代を生きる全ての人に欠かせない skill です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "メディアリテラシーは、現代を生きる全ての人に欠かせない ",
+          "parts": [
+            {
+              "text": "メディアリテラシーは、",
+              "ruby": ""
+            },
+            {
+              "text": "現代",
+              "ruby": "げんだい"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "生",
+              "ruby": "い"
+            },
+            {
+              "text": "きる",
+              "ruby": ""
+            },
+            {
+              "text": "全",
+              "ruby": "すべ"
+            },
+            {
+              "text": "ての",
+              "ruby": ""
+            },
+            {
+              "text": "人",
+              "ruby": "ひと"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "欠",
+              "ruby": "か"
+            },
+            {
+              "text": "かせない",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "skill",
+          "ruby": "技能"
+        },
+        {
+          "type": "ja",
+          "text": " です。",
+          "parts": [
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "skill",
+          "canonical_word": "skill",
+          "meaning": "技能"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "skill",
+          "reading": "技能",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "skill",
+          "canonical_meaning": "技能"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 17,
+      "start": 114.72,
+      "end": 126.3,
+      "english": "It is not about doubting all information, but about facing information in the right way.",
+      "japanese": "すべての情報を疑うことではなく、情報に正しく向き合うことです。",
+      "mixed": "それは、全ての情報を疑うことではなく、情報に正しく向き合うことです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "それは、全ての情報を疑うことではなく、情報に正しく向き合うことです。",
+          "parts": [
+            {
+              "text": "それは、",
+              "ruby": ""
+            },
+            {
+              "text": "全",
+              "ruby": "すべ"
+            },
+            {
+              "text": "ての",
+              "ruby": ""
+            },
+            {
+              "text": "情報",
+              "ruby": "じょうほう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "疑",
+              "ruby": "うたが"
+            },
+            {
+              "text": "うことではなく、",
+              "ruby": ""
+            },
+            {
+              "text": "情報",
+              "ruby": "じょうほう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "正",
+              "ruby": "ただ"
+            },
+            {
+              "text": "しく",
+              "ruby": ""
+            },
+            {
+              "text": "向き合",
+              "ruby": "むきあ"
+            },
+            {
+              "text": "うことです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_manual_translation"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H132.md",
+  "audio": "高校生編/suno_ready/generated/audio/H132/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 208.36,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0038,
+  "expected_words": 262,
+  "transcribed_words": 263,
+  "matched_words": 259,
+  "coverage": 0.9885,
+  "precision": 0.9848,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 261,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 174,
+      "length": 2,
+      "words": [
+        "eats",
+        "at"
+      ]
+    },
+    {
+      "start": 165,
+      "length": 1,
+      "words": [
+        "weight"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 165,
+      "actual_start": 165,
+      "expected": [
+        "weight"
+      ],
+      "actual": [
+        "way"
+      ],
+      "actual_confidence": 0.8939,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 174,
+      "actual_start": 174,
+      "expected": [
+        "eats",
+        "at"
+      ],
+      "actual": [
+        "each",
+        "set"
+      ],
+      "actual_confidence": 0.7824,
+      "substitution_words": 2,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 258,
+      "actual_start": 258,
+      "expected": [],
+      "actual": [
+        "when"
+      ],
+      "actual_confidence": 0.4259
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 3,
+  "suspicious_content_substitution": true,
+  "transcript": "When I was in middle school, I was bullied Going to the classroom was a horror When the alarm rang in the morning, tears would pour out The incident that triggered it was so small that no one could guess At the school sports day, my team lost a relay match and finished last From there one teammate began to blame me And gradually the atmosphere of the class changed Garbage was placed inside my desk My gym uniform was dumped into the toilet No one would speak to me When I reported the matter to a teacher I was dismissed with, it's merely teasing I was too embarrassed to confess to my parents A sense of shame made me carry it alone One day I simply could not go to school My mother at first showed anger But seeing my face, she understood everything Working with the school, my homeroom teacher was changed Several classmates came to apologize to me I still remember the way of the words, I am truly sorry Bullying each set the heart of not only the victim But also the one who bullies One of those who had bullied me, contacted me years later I have been regretting it all this time, he said The wound has not completely disappeared But that experience made the person I am today A person who knows weakness can be kinder to another's weakness The experience of suffering can become a strength That may someday relieve someone else Now as a teacher, I keep telling children When you are not alone.",
+  "segments": [
+    {
+      "start": 13.32,
+      "end": 17.54,
+      "text": "When I was in middle school, I was bullied"
+    },
+    {
+      "start": 19.54,
+      "end": 24.36,
+      "text": "Going to the classroom was a horror"
+    },
+    {
+      "start": 25.94,
+      "end": 31.58,
+      "text": "When the alarm rang in the morning, tears would pour out"
+    },
+    {
+      "start": 31.58,
+      "end": 38.22,
+      "text": "The incident that triggered it was so small that no one could guess"
+    },
+    {
+      "start": 40.16,
+      "end": 46.5,
+      "text": "At the school sports day, my team lost a relay match and finished last"
+    },
+    {
+      "start": 46.5,
+      "end": 50.34,
+      "text": "From there one teammate began to blame me"
+    },
+    {
+      "start": 50.34,
+      "end": 55.2,
+      "text": "And gradually the atmosphere of the class changed"
+    },
+    {
+      "start": 55.2,
+      "end": 60.2,
+      "text": "Garbage was placed inside my desk"
+    },
+    {
+      "start": 62.28,
+      "end": 67.12,
+      "text": "My gym uniform was dumped into the toilet"
+    },
+    {
+      "start": 67.12,
+      "end": 70.6,
+      "text": "No one would speak to me"
+    },
+    {
+      "start": 72.22,
+      "end": 75.78,
+      "text": "When I reported the matter to a teacher"
+    },
+    {
+      "start": 75.78,
+      "end": 79.06,
+      "text": "I was dismissed with, it's merely teasing"
+    },
+    {
+      "start": 79.06,
+      "end": 84.44,
+      "text": "I was too embarrassed to confess to my parents"
+    },
+    {
+      "start": 87.06,
+      "end": 90.82,
+      "text": "A sense of shame made me carry it alone"
+    },
+    {
+      "start": 92.96,
+      "end": 97.78,
+      "text": "One day I simply could not go to school"
+    },
+    {
+      "start": 99.14,
+      "end": 102.48,
+      "text": "My mother at first showed anger"
+    },
+    {
+      "start": 103.06,
+      "end": 107.24,
+      "text": "But seeing my face, she understood everything"
+    },
+    {
+      "start": 107.24,
+      "end": 113.56,
+      "text": "Working with the school, my homeroom teacher was changed"
+    },
+    {
+      "start": 115.8,
+      "end": 120.72,
+      "text": "Several classmates came to apologize to me"
+    },
+    {
+      "start": 121.24,
+      "end": 127.04,
+      "text": "I still remember the way of the words, I am truly sorry"
+    },
+    {
+      "start": 128.88,
+      "end": 133.94,
+      "text": "Bullying each set the heart of not only the victim"
+    },
+    {
+      "start": 135.28,
+      "end": 139.54,
+      "text": "But also the one who bullies"
+    },
+    {
+      "start": 141.28,
+      "end": 145.98,
+      "text": "One of those who had bullied me, contacted me years later"
+    },
+    {
+      "start": 147.16,
+      "end": 152.44,
+      "text": "I have been regretting it all this time, he said"
+    },
+    {
+      "start": 153.82,
+      "end": 157.44,
+      "text": "The wound has not completely disappeared"
+    },
+    {
+      "start": 157.44,
+      "end": 162.08,
+      "text": "But that experience made the person I am today"
+    },
+    {
+      "start": 162.08,
+      "end": 169.36,
+      "text": "A person who knows weakness can be kinder to another's weakness"
+    },
+    {
+      "start": 169.36,
+      "end": 174.28,
+      "text": "The experience of suffering can become a strength"
+    },
+    {
+      "start": 175.08,
+      "end": 180.62,
+      "text": "That may someday relieve someone else"
+    },
+    {
+      "start": 182.32,
+      "end": 188.32,
+      "text": "Now as a teacher, I keep telling children"
+    },
+    {
+      "start": 188.32,
+      "end": 193.38,
+      "text": "When you are not alone."
+    }
+  ]
+}

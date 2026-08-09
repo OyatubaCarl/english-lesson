@@ -1,0 +1,1606 @@
+{
+  "lesson": "H060",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h060_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H060/candidate1-full.mp3",
+  "source_audio_sha256": "0691139fce800a3ae8c049fcb9c198d3a89f8926a7a6ac95b51aee09569b9b78",
+  "bpm": 70.88,
+  "exact_word_match": true,
+  "word_count": 241,
+  "line_count": 18,
+  "first_word_start": 6.201,
+  "last_word_end": 163.66,
+  "lines": [
+    {
+      "line": 1,
+      "english": "On August 6, 1945, the world's first atomic bomb was dropped on Hiroshima.",
+      "word_timings": [
+        {
+          "word": "On",
+          "display_index": 0,
+          "start": 6.201,
+          "end": 6.401
+        },
+        {
+          "word": "August",
+          "display_index": 1,
+          "start": 6.401,
+          "end": 6.761
+        },
+        {
+          "word": "6,",
+          "display_index": 2,
+          "start": 6.761,
+          "end": 7.181
+        },
+        {
+          "word": "1945,",
+          "display_index": 3,
+          "start": 7.181,
+          "end": 9.616
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 9.616,
+          "end": 9.721
+        },
+        {
+          "word": "world's",
+          "display_index": 5,
+          "start": 9.721,
+          "end": 10.161
+        },
+        {
+          "word": "first",
+          "display_index": 6,
+          "start": 10.161,
+          "end": 10.501
+        },
+        {
+          "word": "atomic",
+          "display_index": 7,
+          "start": 10.501,
+          "end": 11.001
+        },
+        {
+          "word": "bomb",
+          "display_index": 8,
+          "start": 11.001,
+          "end": 11.341
+        },
+        {
+          "word": "was",
+          "display_index": 9,
+          "start": 11.341,
+          "end": 11.541
+        },
+        {
+          "word": "dropped",
+          "display_index": 10,
+          "start": 11.541,
+          "end": 11.941
+        },
+        {
+          "word": "on",
+          "display_index": 11,
+          "start": 11.941,
+          "end": 12.122
+        },
+        {
+          "word": "Hiroshima.",
+          "display_index": 12,
+          "start": 12.122,
+          "end": 13.622
+        }
+      ],
+      "start": 6.201,
+      "end": 13.622
+    },
+    {
+      "line": 2,
+      "english": "Three days later, a second one was dropped on Nagasaki.",
+      "word_timings": [
+        {
+          "word": "Three",
+          "display_index": 0,
+          "start": 14.682,
+          "end": 14.922
+        },
+        {
+          "word": "days",
+          "display_index": 1,
+          "start": 14.922,
+          "end": 15.222
+        },
+        {
+          "word": "later,",
+          "display_index": 2,
+          "start": 15.222,
+          "end": 16.698
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 16.698,
+          "end": 16.778
+        },
+        {
+          "word": "second",
+          "display_index": 4,
+          "start": 16.762,
+          "end": 17.142
+        },
+        {
+          "word": "one",
+          "display_index": 5,
+          "start": 17.142,
+          "end": 17.302
+        },
+        {
+          "word": "was",
+          "display_index": 6,
+          "start": 17.302,
+          "end": 17.502
+        },
+        {
+          "word": "dropped",
+          "display_index": 7,
+          "start": 17.502,
+          "end": 17.862
+        },
+        {
+          "word": "on",
+          "display_index": 8,
+          "start": 17.862,
+          "end": 18.022
+        },
+        {
+          "word": "Nagasaki.",
+          "display_index": 9,
+          "start": 18.022,
+          "end": 19.502
+        }
+      ],
+      "start": 14.682,
+      "end": 19.502
+    },
+    {
+      "line": 3,
+      "english": "In both cities, over 200,000 people lost their lives, either at once or in the months that followed.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 19.802,
+          "end": 19.902
+        },
+        {
+          "word": "both",
+          "display_index": 1,
+          "start": 19.902,
+          "end": 20.203
+        },
+        {
+          "word": "cities,",
+          "display_index": 2,
+          "start": 20.203,
+          "end": 21.703
+        },
+        {
+          "word": "over",
+          "display_index": 3,
+          "start": 21.703,
+          "end": 21.943
+        },
+        {
+          "word": "200,000",
+          "display_index": 4,
+          "start": 21.943,
+          "end": 22.783
+        },
+        {
+          "word": "200,000",
+          "display_index": 4,
+          "start": 22.783,
+          "end": 23.003
+        },
+        {
+          "word": "people",
+          "display_index": 5,
+          "start": 23.003,
+          "end": 23.383
+        },
+        {
+          "word": "lost",
+          "display_index": 6,
+          "start": 23.383,
+          "end": 23.683
+        },
+        {
+          "word": "their",
+          "display_index": 7,
+          "start": 23.683,
+          "end": 23.883
+        },
+        {
+          "word": "lives,",
+          "display_index": 8,
+          "start": 23.883,
+          "end": 25.743
+        },
+        {
+          "word": "either",
+          "display_index": 9,
+          "start": 25.743,
+          "end": 25.963
+        },
+        {
+          "word": "at",
+          "display_index": 10,
+          "start": 25.963,
+          "end": 26.163
+        },
+        {
+          "word": "once",
+          "display_index": 11,
+          "start": 26.163,
+          "end": 27.563
+        },
+        {
+          "word": "or",
+          "display_index": 12,
+          "start": 27.563,
+          "end": 27.683
+        },
+        {
+          "word": "in",
+          "display_index": 13,
+          "start": 27.683,
+          "end": 27.786
+        },
+        {
+          "word": "the",
+          "display_index": 14,
+          "start": 27.786,
+          "end": 27.903
+        },
+        {
+          "word": "months",
+          "display_index": 15,
+          "start": 27.903,
+          "end": 28.264
+        },
+        {
+          "word": "that",
+          "display_index": 16,
+          "start": 28.264,
+          "end": 28.464
+        },
+        {
+          "word": "followed.",
+          "display_index": 17,
+          "start": 28.464,
+          "end": 29.964
+        }
+      ],
+      "start": 19.802,
+      "end": 29.964
+    },
+    {
+      "line": 4,
+      "english": "After the war, the world entered the age of nuclear weapons.",
+      "word_timings": [
+        {
+          "word": "After",
+          "display_index": 0,
+          "start": 32.264,
+          "end": 32.568
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 32.568,
+          "end": 32.704
+        },
+        {
+          "word": "war,",
+          "display_index": 2,
+          "start": 32.704,
+          "end": 33.934
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 33.934,
+          "end": 34.044
+        },
+        {
+          "word": "world",
+          "display_index": 4,
+          "start": 34.044,
+          "end": 34.444
+        },
+        {
+          "word": "entered",
+          "display_index": 5,
+          "start": 34.444,
+          "end": 34.744
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 34.744,
+          "end": 34.944
+        },
+        {
+          "word": "age",
+          "display_index": 7,
+          "start": 34.944,
+          "end": 35.184
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 35.184,
+          "end": 35.324
+        },
+        {
+          "word": "nuclear",
+          "display_index": 9,
+          "start": 35.324,
+          "end": 35.804
+        },
+        {
+          "word": "weapons.",
+          "display_index": 10,
+          "start": 35.804,
+          "end": 37.026
+        }
+      ],
+      "start": 32.264,
+      "end": 37.026
+    },
+    {
+      "line": 5,
+      "english": "The United States and the Soviet Union raced to develop nuclear arms, and the conflict between the two camps was called the Cold War.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 37.326,
+          "end": 37.445
+        },
+        {
+          "word": "United",
+          "display_index": 1,
+          "start": 37.445,
+          "end": 37.885
+        },
+        {
+          "word": "States",
+          "display_index": 2,
+          "start": 37.885,
+          "end": 38.365
+        },
+        {
+          "word": "and",
+          "display_index": 3,
+          "start": 38.365,
+          "end": 38.549
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 38.549,
+          "end": 38.665
+        },
+        {
+          "word": "Soviet",
+          "display_index": 5,
+          "start": 38.665,
+          "end": 39.225
+        },
+        {
+          "word": "Union",
+          "display_index": 6,
+          "start": 39.225,
+          "end": 39.585
+        },
+        {
+          "word": "raced",
+          "display_index": 7,
+          "start": 39.585,
+          "end": 40.016
+        },
+        {
+          "word": "to",
+          "display_index": 8,
+          "start": 40.016,
+          "end": 40.145
+        },
+        {
+          "word": "develop",
+          "display_index": 9,
+          "start": 40.145,
+          "end": 40.585
+        },
+        {
+          "word": "nuclear",
+          "display_index": 10,
+          "start": 40.585,
+          "end": 41.145
+        },
+        {
+          "word": "arms,",
+          "display_index": 11,
+          "start": 41.145,
+          "end": 42.445
+        },
+        {
+          "word": "and",
+          "display_index": 12,
+          "start": 42.445,
+          "end": 42.564
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 42.564,
+          "end": 42.665
+        },
+        {
+          "word": "conflict",
+          "display_index": 14,
+          "start": 42.665,
+          "end": 43.205
+        },
+        {
+          "word": "between",
+          "display_index": 15,
+          "start": 43.205,
+          "end": 43.584
+        },
+        {
+          "word": "the",
+          "display_index": 16,
+          "start": 43.584,
+          "end": 43.705
+        },
+        {
+          "word": "two",
+          "display_index": 17,
+          "start": 43.705,
+          "end": 43.945
+        },
+        {
+          "word": "camps",
+          "display_index": 18,
+          "start": 43.945,
+          "end": 44.346
+        },
+        {
+          "word": "was",
+          "display_index": 19,
+          "start": 44.346,
+          "end": 44.506
+        },
+        {
+          "word": "called",
+          "display_index": 20,
+          "start": 44.506,
+          "end": 44.811
+        },
+        {
+          "word": "the",
+          "display_index": 21,
+          "start": 44.811,
+          "end": 44.946
+        },
+        {
+          "word": "Cold",
+          "display_index": 22,
+          "start": 44.946,
+          "end": 45.366
+        },
+        {
+          "word": "War.",
+          "display_index": 23,
+          "start": 45.366,
+          "end": 46.866
+        }
+      ],
+      "start": 37.326,
+      "end": 46.866
+    },
+    {
+      "line": 6,
+      "english": "The threat of conflict reached every corner of the world.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 47.444,
+          "end": 47.566
+        },
+        {
+          "word": "threat",
+          "display_index": 1,
+          "start": 47.566,
+          "end": 47.886
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 47.886,
+          "end": 48.026
+        },
+        {
+          "word": "conflict",
+          "display_index": 3,
+          "start": 48.026,
+          "end": 48.606
+        },
+        {
+          "word": "reached",
+          "display_index": 4,
+          "start": 48.606,
+          "end": 49.086
+        },
+        {
+          "word": "every",
+          "display_index": 5,
+          "start": 49.086,
+          "end": 49.486
+        },
+        {
+          "word": "corner",
+          "display_index": 6,
+          "start": 49.486,
+          "end": 49.926
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 49.926,
+          "end": 50.038
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 50.038,
+          "end": 50.166
+        },
+        {
+          "word": "world.",
+          "display_index": 9,
+          "start": 50.166,
+          "end": 51.666
+        }
+      ],
+      "start": 47.444,
+      "end": 51.666
+    },
+    {
+      "line": 7,
+      "english": "A world frightened by the danger of nuclear war signed the Nuclear Non-Proliferation Treaty, the NPT, in 1968.",
+      "word_timings": [
+        {
+          "word": "A",
+          "display_index": 0,
+          "start": 53.342,
+          "end": 53.467
+        },
+        {
+          "word": "world",
+          "display_index": 1,
+          "start": 53.467,
+          "end": 53.827
+        },
+        {
+          "word": "frightened",
+          "display_index": 2,
+          "start": 53.827,
+          "end": 54.267
+        },
+        {
+          "word": "by",
+          "display_index": 3,
+          "start": 54.267,
+          "end": 54.418
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 54.418,
+          "end": 54.527
+        },
+        {
+          "word": "danger",
+          "display_index": 5,
+          "start": 54.527,
+          "end": 54.947
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 54.947,
+          "end": 55.087
+        },
+        {
+          "word": "nuclear",
+          "display_index": 7,
+          "start": 55.087,
+          "end": 55.547
+        },
+        {
+          "word": "war",
+          "display_index": 8,
+          "start": 55.547,
+          "end": 56.027
+        },
+        {
+          "word": "signed",
+          "display_index": 9,
+          "start": 56.027,
+          "end": 56.454
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 56.454,
+          "end": 56.567
+        },
+        {
+          "word": "Nuclear",
+          "display_index": 11,
+          "start": 56.567,
+          "end": 57.127
+        },
+        {
+          "word": "Non-Proliferation",
+          "display_index": 12,
+          "start": 57.127,
+          "end": 57.527
+        },
+        {
+          "word": "Non-Proliferation",
+          "display_index": 12,
+          "start": 57.527,
+          "end": 58.427
+        },
+        {
+          "word": "Treaty,",
+          "display_index": 13,
+          "start": 58.427,
+          "end": 59.806
+        },
+        {
+          "word": "the",
+          "display_index": 14,
+          "start": 59.806,
+          "end": 60.028
+        },
+        {
+          "word": "NPT,",
+          "display_index": 15,
+          "start": 60.028,
+          "end": 61.088
+        },
+        {
+          "word": "in",
+          "display_index": 16,
+          "start": 61.088,
+          "end": 61.208
+        },
+        {
+          "word": "1968.",
+          "display_index": 17,
+          "start": 61.208,
+          "end": 62.708
+        }
+      ],
+      "start": 53.342,
+      "end": 62.708
+    },
+    {
+      "line": 8,
+      "english": "It is an international treaty that tries to prevent more countries from holding nuclear weapons.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 64.368,
+          "end": 64.468
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 64.468,
+          "end": 64.608
+        },
+        {
+          "word": "an",
+          "display_index": 2,
+          "start": 64.608,
+          "end": 64.728
+        },
+        {
+          "word": "international",
+          "display_index": 3,
+          "start": 64.728,
+          "end": 65.488
+        },
+        {
+          "word": "treaty",
+          "display_index": 4,
+          "start": 65.488,
+          "end": 65.868
+        },
+        {
+          "word": "that",
+          "display_index": 5,
+          "start": 65.868,
+          "end": 66.048
+        },
+        {
+          "word": "tries",
+          "display_index": 6,
+          "start": 66.048,
+          "end": 66.468
+        },
+        {
+          "word": "to",
+          "display_index": 7,
+          "start": 66.468,
+          "end": 66.568
+        },
+        {
+          "word": "prevent",
+          "display_index": 8,
+          "start": 66.568,
+          "end": 66.988
+        },
+        {
+          "word": "more",
+          "display_index": 9,
+          "start": 66.988,
+          "end": 67.208
+        },
+        {
+          "word": "countries",
+          "display_index": 10,
+          "start": 67.208,
+          "end": 67.788
+        },
+        {
+          "word": "from",
+          "display_index": 11,
+          "start": 67.788,
+          "end": 68.009
+        },
+        {
+          "word": "holding",
+          "display_index": 12,
+          "start": 68.009,
+          "end": 68.469
+        },
+        {
+          "word": "nuclear",
+          "display_index": 13,
+          "start": 68.469,
+          "end": 68.949
+        },
+        {
+          "word": "weapons.",
+          "display_index": 14,
+          "start": 68.949,
+          "end": 70.289
+        }
+      ],
+      "start": 64.368,
+      "end": 70.289
+    },
+    {
+      "line": 9,
+      "english": "But even after the Cold War ended, conflict in the world has not vanished.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 70.589,
+          "end": 70.769
+        },
+        {
+          "word": "even",
+          "display_index": 1,
+          "start": 70.769,
+          "end": 71.049
+        },
+        {
+          "word": "after",
+          "display_index": 2,
+          "start": 71.049,
+          "end": 71.327
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 71.327,
+          "end": 71.469
+        },
+        {
+          "word": "Cold",
+          "display_index": 4,
+          "start": 71.469,
+          "end": 71.849
+        },
+        {
+          "word": "War",
+          "display_index": 5,
+          "start": 71.849,
+          "end": 72.129
+        },
+        {
+          "word": "ended,",
+          "display_index": 6,
+          "start": 72.129,
+          "end": 73.089
+        },
+        {
+          "word": "conflict",
+          "display_index": 7,
+          "start": 73.089,
+          "end": 73.789
+        },
+        {
+          "word": "in",
+          "display_index": 8,
+          "start": 73.789,
+          "end": 73.869
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 73.869,
+          "end": 74.009
+        },
+        {
+          "word": "world",
+          "display_index": 10,
+          "start": 74.009,
+          "end": 74.409
+        },
+        {
+          "word": "has",
+          "display_index": 11,
+          "start": 74.409,
+          "end": 74.649
+        },
+        {
+          "word": "not",
+          "display_index": 12,
+          "start": 74.649,
+          "end": 75.009
+        },
+        {
+          "word": "vanished.",
+          "display_index": 13,
+          "start": 75.009,
+          "end": 76.509
+        }
+      ],
+      "start": 70.589,
+      "end": 76.509
+    },
+    {
+      "line": 10,
+      "english": "Regional wars continue, and the number of refugees keeps rising.",
+      "word_timings": [
+        {
+          "word": "Regional",
+          "display_index": 0,
+          "start": 78.19,
+          "end": 78.85
+        },
+        {
+          "word": "wars",
+          "display_index": 1,
+          "start": 78.85,
+          "end": 79.45
+        },
+        {
+          "word": "continue,",
+          "display_index": 2,
+          "start": 79.45,
+          "end": 81.17
+        },
+        {
+          "word": "and",
+          "display_index": 3,
+          "start": 81.17,
+          "end": 81.37
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 81.37,
+          "end": 81.53
+        },
+        {
+          "word": "number",
+          "display_index": 5,
+          "start": 81.53,
+          "end": 82.07
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 82.07,
+          "end": 82.45
+        },
+        {
+          "word": "refugees",
+          "display_index": 7,
+          "start": 82.45,
+          "end": 84.031
+        },
+        {
+          "word": "keeps",
+          "display_index": 8,
+          "start": 84.031,
+          "end": 84.711
+        },
+        {
+          "word": "rising.",
+          "display_index": 9,
+          "start": 84.711,
+          "end": 86.211
+        }
+      ],
+      "start": 78.19,
+      "end": 86.211
+    },
+    {
+      "line": 11,
+      "english": "Syria, Ukraine, Sudan, Myanmar.",
+      "word_timings": [
+        {
+          "word": "Syria,",
+          "display_index": 0,
+          "start": 86.671,
+          "end": 87.991
+        },
+        {
+          "word": "Ukraine,",
+          "display_index": 1,
+          "start": 87.991,
+          "end": 88.951
+        },
+        {
+          "word": "Sudan,",
+          "display_index": 2,
+          "start": 88.951,
+          "end": 90.031
+        },
+        {
+          "word": "Myanmar.",
+          "display_index": 3,
+          "start": 90.031,
+          "end": 91.531
+        }
+      ],
+      "start": 86.671,
+      "end": 91.531
+    },
+    {
+      "line": 12,
+      "english": "Many victims have been driven from their homes.",
+      "word_timings": [
+        {
+          "word": "Many",
+          "display_index": 0,
+          "start": 92.952,
+          "end": 93.392
+        },
+        {
+          "word": "victims",
+          "display_index": 1,
+          "start": 93.392,
+          "end": 94.052
+        },
+        {
+          "word": "have",
+          "display_index": 2,
+          "start": 94.052,
+          "end": 94.472
+        },
+        {
+          "word": "been",
+          "display_index": 3,
+          "start": 94.472,
+          "end": 94.852
+        },
+        {
+          "word": "driven",
+          "display_index": 4,
+          "start": 94.852,
+          "end": 95.712
+        },
+        {
+          "word": "from",
+          "display_index": 5,
+          "start": 95.712,
+          "end": 96.172
+        },
+        {
+          "word": "their",
+          "display_index": 6,
+          "start": 96.172,
+          "end": 96.592
+        },
+        {
+          "word": "homes.",
+          "display_index": 7,
+          "start": 96.592,
+          "end": 98.092
+        }
+      ],
+      "start": 92.952,
+      "end": 98.092
+    },
+    {
+      "line": 13,
+      "english": "The United Nations has provided a place for negotiation and mediation to prevent war.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 99.128,
+          "end": 99.372
+        },
+        {
+          "word": "United",
+          "display_index": 1,
+          "start": 99.372,
+          "end": 99.993
+        },
+        {
+          "word": "Nations",
+          "display_index": 2,
+          "start": 99.993,
+          "end": 101.233
+        },
+        {
+          "word": "has",
+          "display_index": 3,
+          "start": 101.233,
+          "end": 101.433
+        },
+        {
+          "word": "provided",
+          "display_index": 4,
+          "start": 101.433,
+          "end": 102.291
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 102.291,
+          "end": 102.453
+        },
+        {
+          "word": "place",
+          "display_index": 6,
+          "start": 102.453,
+          "end": 102.913
+        },
+        {
+          "word": "for",
+          "display_index": 7,
+          "start": 102.913,
+          "end": 103.153
+        },
+        {
+          "word": "negotiation",
+          "display_index": 8,
+          "start": 103.153,
+          "end": 106.333
+        },
+        {
+          "word": "and",
+          "display_index": 9,
+          "start": 106.333,
+          "end": 106.513
+        },
+        {
+          "word": "mediation",
+          "display_index": 10,
+          "start": 106.513,
+          "end": 107.727
+        },
+        {
+          "word": "to",
+          "display_index": 11,
+          "start": 107.727,
+          "end": 108.174
+        },
+        {
+          "word": "prevent",
+          "display_index": 12,
+          "start": 108.174,
+          "end": 109.114
+        },
+        {
+          "word": "war.",
+          "display_index": 13,
+          "start": 109.114,
+          "end": 110.614
+        }
+      ],
+      "start": 99.128,
+      "end": 110.614
+    },
+    {
+      "line": 14,
+      "english": "But when the permanent members of the Security Council disagree, the UN becomes powerless.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 112.654,
+          "end": 112.774
+        },
+        {
+          "word": "when",
+          "display_index": 1,
+          "start": 112.774,
+          "end": 112.922
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 112.922,
+          "end": 113.034
+        },
+        {
+          "word": "permanent",
+          "display_index": 3,
+          "start": 113.034,
+          "end": 113.494
+        },
+        {
+          "word": "members",
+          "display_index": 4,
+          "start": 113.494,
+          "end": 113.894
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 113.894,
+          "end": 114.034
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 114.034,
+          "end": 114.114
+        },
+        {
+          "word": "Security",
+          "display_index": 7,
+          "start": 114.114,
+          "end": 114.714
+        },
+        {
+          "word": "Council",
+          "display_index": 8,
+          "start": 114.714,
+          "end": 115.154
+        },
+        {
+          "word": "disagree,",
+          "display_index": 9,
+          "start": 115.154,
+          "end": 116.611
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 116.611,
+          "end": 116.815
+        },
+        {
+          "word": "UN",
+          "display_index": 11,
+          "start": 116.815,
+          "end": 117.315
+        },
+        {
+          "word": "becomes",
+          "display_index": 12,
+          "start": 117.315,
+          "end": 117.895
+        },
+        {
+          "word": "powerless.",
+          "display_index": 13,
+          "start": 117.895,
+          "end": 119.395
+        }
+      ],
+      "start": 112.654,
+      "end": 119.395
+    },
+    {
+      "line": 15,
+      "english": "The limit of diplomacy remains a great challenge.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 119.746,
+          "end": 119.875
+        },
+        {
+          "word": "limit",
+          "display_index": 1,
+          "start": 119.875,
+          "end": 120.175
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 120.175,
+          "end": 120.295
+        },
+        {
+          "word": "diplomacy",
+          "display_index": 3,
+          "start": 120.295,
+          "end": 121.095
+        },
+        {
+          "word": "remains",
+          "display_index": 4,
+          "start": 121.095,
+          "end": 121.478
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 121.478,
+          "end": 121.695
+        },
+        {
+          "word": "great",
+          "display_index": 6,
+          "start": 121.695,
+          "end": 122.135
+        },
+        {
+          "word": "challenge.",
+          "display_index": 7,
+          "start": 122.135,
+          "end": 123.635
+        }
+      ],
+      "start": 119.746,
+      "end": 123.635
+    },
+    {
+      "line": 16,
+      "english": "Peace is not simply the absence of war.",
+      "word_timings": [
+        {
+          "word": "Peace",
+          "display_index": 0,
+          "start": 124.176,
+          "end": 125.836
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 125.836,
+          "end": 125.956
+        },
+        {
+          "word": "not",
+          "display_index": 2,
+          "start": 125.956,
+          "end": 126.276
+        },
+        {
+          "word": "simply",
+          "display_index": 3,
+          "start": 126.276,
+          "end": 127.71
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 127.71,
+          "end": 127.956
+        },
+        {
+          "word": "absence",
+          "display_index": 5,
+          "start": 127.956,
+          "end": 128.556
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 128.556,
+          "end": 128.736
+        },
+        {
+          "word": "war.",
+          "display_index": 7,
+          "start": 128.736,
+          "end": 130.236
+        }
+      ],
+      "start": 124.176,
+      "end": 130.236
+    },
+    {
+      "line": 17,
+      "english": "True peace is born only when there is the will to respect one another, to speak with one another, and to seek reconciliation.",
+      "word_timings": [
+        {
+          "word": "True",
+          "display_index": 0,
+          "start": 132.277,
+          "end": 133.157
+        },
+        {
+          "word": "peace",
+          "display_index": 1,
+          "start": 133.157,
+          "end": 133.611
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 133.611,
+          "end": 133.817
+        },
+        {
+          "word": "born",
+          "display_index": 3,
+          "start": 133.817,
+          "end": 134.517
+        },
+        {
+          "word": "only",
+          "display_index": 4,
+          "start": 134.517,
+          "end": 134.897
+        },
+        {
+          "word": "when",
+          "display_index": 5,
+          "start": 134.897,
+          "end": 135.297
+        },
+        {
+          "word": "there",
+          "display_index": 6,
+          "start": 135.297,
+          "end": 135.733
+        },
+        {
+          "word": "is",
+          "display_index": 7,
+          "start": 135.733,
+          "end": 136.172
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 136.172,
+          "end": 136.357
+        },
+        {
+          "word": "will",
+          "display_index": 9,
+          "start": 136.357,
+          "end": 137.801
+        },
+        {
+          "word": "to",
+          "display_index": 10,
+          "start": 137.801,
+          "end": 138.037
+        },
+        {
+          "word": "respect",
+          "display_index": 11,
+          "start": 138.037,
+          "end": 138.777
+        },
+        {
+          "word": "one",
+          "display_index": 12,
+          "start": 138.777,
+          "end": 138.977
+        },
+        {
+          "word": "another,",
+          "display_index": 13,
+          "start": 138.977,
+          "end": 140.842
+        },
+        {
+          "word": "to",
+          "display_index": 14,
+          "start": 140.842,
+          "end": 141.118
+        },
+        {
+          "word": "speak",
+          "display_index": 15,
+          "start": 141.118,
+          "end": 141.718
+        },
+        {
+          "word": "with",
+          "display_index": 16,
+          "start": 141.718,
+          "end": 142.198
+        },
+        {
+          "word": "one",
+          "display_index": 17,
+          "start": 142.198,
+          "end": 142.398
+        },
+        {
+          "word": "another,",
+          "display_index": 18,
+          "start": 142.398,
+          "end": 143.858
+        },
+        {
+          "word": "and",
+          "display_index": 19,
+          "start": 143.858,
+          "end": 143.998
+        },
+        {
+          "word": "to",
+          "display_index": 20,
+          "start": 143.998,
+          "end": 144.218
+        },
+        {
+          "word": "seek",
+          "display_index": 21,
+          "start": 144.218,
+          "end": 144.678
+        },
+        {
+          "word": "reconciliation.",
+          "display_index": 22,
+          "start": 144.678,
+          "end": 146.178
+        }
+      ],
+      "start": 132.277,
+      "end": 146.178
+    },
+    {
+      "line": 18,
+      "english": "To pass on the memory of Hiroshima and Nagasaki across generations is our responsibility for the future.",
+      "word_timings": [
+        {
+          "word": "To",
+          "display_index": 0,
+          "start": 148.899,
+          "end": 149.099
+        },
+        {
+          "word": "pass",
+          "display_index": 1,
+          "start": 149.099,
+          "end": 149.839
+        },
+        {
+          "word": "on",
+          "display_index": 2,
+          "start": 149.839,
+          "end": 150.004
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 150.004,
+          "end": 150.199
+        },
+        {
+          "word": "memory",
+          "display_index": 4,
+          "start": 150.199,
+          "end": 150.919
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 150.919,
+          "end": 151.879
+        },
+        {
+          "word": "Hiroshima",
+          "display_index": 6,
+          "start": 151.879,
+          "end": 153.879
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 153.879,
+          "end": 154.039
+        },
+        {
+          "word": "Nagasaki",
+          "display_index": 8,
+          "start": 154.039,
+          "end": 155.199
+        },
+        {
+          "word": "across",
+          "display_index": 9,
+          "start": 155.199,
+          "end": 155.759
+        },
+        {
+          "word": "generations",
+          "display_index": 10,
+          "start": 155.759,
+          "end": 158.22
+        },
+        {
+          "word": "is",
+          "display_index": 11,
+          "start": 158.22,
+          "end": 158.38
+        },
+        {
+          "word": "our",
+          "display_index": 12,
+          "start": 158.38,
+          "end": 158.54
+        },
+        {
+          "word": "responsibility",
+          "display_index": 13,
+          "start": 158.54,
+          "end": 161.72
+        },
+        {
+          "word": "for",
+          "display_index": 14,
+          "start": 161.72,
+          "end": 161.969
+        },
+        {
+          "word": "the",
+          "display_index": 15,
+          "start": 161.969,
+          "end": 162.16
+        },
+        {
+          "word": "future.",
+          "display_index": 16,
+          "start": 162.16,
+          "end": 163.66
+        }
+      ],
+      "start": 148.899,
+      "end": 163.66
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

@@ -1,0 +1,233 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H045.md",
+  "audio": "高校生編/suno_ready/generated/audio/H045/candidate1-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 143.06,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9167,
+  "expected_words": 168,
+  "transcribed_words": 154,
+  "matched_words": 153,
+  "coverage": 0.9107,
+  "precision": 0.9935,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 167,
+  "longest_missing_run": 4,
+  "largest_missing_runs": [
+    {
+      "start": 21,
+      "length": 4,
+      "words": [
+        "four",
+        "thousand",
+        "five",
+        "hundred"
+      ]
+    },
+    {
+      "start": 29,
+      "length": 4,
+      "words": [
+        "one",
+        "hundred",
+        "forty",
+        "six"
+      ]
+    },
+    {
+      "start": 124,
+      "length": 4,
+      "words": [
+        "four",
+        "thousand",
+        "five",
+        "hundred"
+      ]
+    },
+    {
+      "start": 39,
+      "length": 3,
+      "words": [
+        "to",
+        "point",
+        "three"
+      ]
+    }
+  ],
+  "replacement_count": 0,
+  "replacement_spans": [],
+  "insertion_spans": [
+    {
+      "expected_start": 168,
+      "actual_start": 153,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.3628
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 21,
+      "actual_start": 21,
+      "expected": [
+        "four",
+        "thousand",
+        "five",
+        "hundred"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 29,
+      "actual_start": 25,
+      "expected": [
+        "one",
+        "hundred",
+        "forty",
+        "six"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 39,
+      "actual_start": 31,
+      "expected": [
+        "to",
+        "point",
+        "three"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 124,
+      "actual_start": 113,
+      "expected": [
+        "four",
+        "thousand",
+        "five",
+        "hundred"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "In the desert at Giza in Egypt, three pyramids stand. The largest, the Pyramid of Khufu, has been standing there for 4,500 years. Its height is 146 meters It was constructed of about 2.3 million stone blocks At the time no such enormous building existed anywhere in the world How the ancient Egyptians built it is still not fully known Leading explanations involve ramps and organized teams Transporting heavy limestone blocks Though the exact methods remain debated The pyramid was built as the pharaoh's tomb and part of a larger burial complex. The Egyptians believed in life after death and its form and burial complex reflected their beliefs about kingship and the afterlife. The silence of 4,500 years still rests quietly in the wind. The ancient kingdom ended long ago But its silence still seems to speak to us The wish of the people who sought immortality has been carved into stone And it still survives today you",
+  "segments": [
+    {
+      "start": 11.12,
+      "end": 16.42,
+      "text": "In the desert at Giza in Egypt, three pyramids stand."
+    },
+    {
+      "start": 17.98,
+      "end": 21.96,
+      "text": "The largest, the Pyramid of Khufu,"
+    },
+    {
+      "start": 22.96,
+      "end": 28.32,
+      "text": "has been standing there for 4,500 years."
+    },
+    {
+      "start": 28.32,
+      "end": 34.54,
+      "text": "Its height is 146 meters"
+    },
+    {
+      "start": 38.62,
+      "end": 45.04,
+      "text": "It was constructed of about 2.3 million stone blocks"
+    },
+    {
+      "start": 45.04,
+      "end": 52.1,
+      "text": "At the time no such enormous building existed anywhere in the world"
+    },
+    {
+      "start": 52.1,
+      "end": 58.38,
+      "text": "How the ancient Egyptians built it is still not fully known"
+    },
+    {
+      "start": 62.62,
+      "end": 67.58,
+      "text": "Leading explanations involve ramps and organized teams"
+    },
+    {
+      "start": 68.78,
+      "end": 72.16,
+      "text": "Transporting heavy limestone blocks"
+    },
+    {
+      "start": 72.16,
+      "end": 75.96,
+      "text": "Though the exact methods remain debated"
+    },
+    {
+      "start": 75.96,
+      "end": 80.58,
+      "text": "The pyramid was built as the pharaoh's tomb"
+    },
+    {
+      "start": 80.58,
+      "end": 84.16,
+      "text": "and part of a larger burial complex."
+    },
+    {
+      "start": 86.04,
+      "end": 89.48,
+      "text": "The Egyptians believed in life after death"
+    },
+    {
+      "start": 89.48,
+      "end": 93.0,
+      "text": "and its form and burial complex"
+    },
+    {
+      "start": 93.0,
+      "end": 98.22,
+      "text": "reflected their beliefs about kingship and the afterlife."
+    },
+    {
+      "start": 99.02,
+      "end": 104.02,
+      "text": "The silence of 4,500 years"
+    },
+    {
+      "start": 104.02,
+      "end": 109.58,
+      "text": "still rests quietly in the wind."
+    },
+    {
+      "start": 111.12,
+      "end": 115.52,
+      "text": "The ancient kingdom ended long ago"
+    },
+    {
+      "start": 115.52,
+      "end": 121.6,
+      "text": "But its silence still seems to speak to us"
+    },
+    {
+      "start": 122.94,
+      "end": 130.82,
+      "text": "The wish of the people who sought immortality has been carved into stone"
+    },
+    {
+      "start": 132.5,
+      "end": 136.7,
+      "text": "And it still survives today"
+    },
+    {
+      "start": 141.66,
+      "end": 143.06,
+      "text": "you"
+    }
+  ]
+}

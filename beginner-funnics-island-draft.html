@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>入門編リライト案 - Funnics Island</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --soft: #5f6f86;
+      --line: #d9e2ef;
+      --paper: #f7fafc;
+      --accent: #176b87;
+      --warm: #f8b84e;
+      --mint: #62b47f;
+      --pink: #d85c7f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+      line-height: 1.75;
+    }
+    header {
+      padding: 40px 24px 26px;
+      color: #fff;
+      background:
+        linear-gradient(120deg, rgba(23, 107, 135, .96), rgba(60, 132, 121, .94)),
+        radial-gradient(circle at 80% 20%, rgba(248, 184, 78, .45), transparent 28%);
+    }
+    main { max-width: 1120px; margin: 0 auto; padding: 28px 20px 56px; }
+    h1, h2, h3 { line-height: 1.35; margin: 0; }
+    h1 { font-size: clamp(1.8rem, 4vw, 3.1rem); }
+    header p { max-width: 760px; margin: 14px 0 0; font-size: 1rem; opacity: .94; }
+    section { margin-top: 28px; }
+    .panel, .lesson {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 10px 24px rgba(23, 32, 51, .06);
+    }
+    .panel { padding: 22px; }
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+    .summary-card {
+      border-left: 5px solid var(--accent);
+      background: #fbfdff;
+      padding: 14px 16px;
+      border-radius: 6px;
+    }
+    .summary-card:nth-child(2) { border-left-color: var(--warm); }
+    .summary-card:nth-child(3) { border-left-color: var(--mint); }
+    .summary-card:nth-child(4) { border-left-color: var(--pink); }
+    .summary-card h3 { font-size: 1rem; margin-bottom: 6px; }
+    .summary-card p { margin: 0; color: var(--soft); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      background: #fff;
+      font-size: .95rem;
+    }
+    th, td { border: 1px solid var(--line); padding: 9px 10px; vertical-align: top; }
+    th { background: #edf5f8; text-align: left; }
+    .lesson { margin-top: 18px; overflow: hidden; }
+    .lesson-header {
+      display: flex;
+      gap: 12px;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 16px 18px;
+      background: #eef7f7;
+      border-bottom: 1px solid var(--line);
+    }
+    .lesson h3 { font-size: 1.1rem; }
+    .target {
+      display: inline-block;
+      margin-top: 5px;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: .92rem;
+    }
+    .chars {
+      flex: 0 0 auto;
+      max-width: 42%;
+      color: var(--soft);
+      font-size: .9rem;
+      text-align: right;
+    }
+    .lesson-body {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(260px, .75fr);
+      gap: 18px;
+      padding: 18px;
+    }
+    .english p, .japanese p { margin: 0 0 8px; }
+    .english {
+      font-size: 1.02rem;
+      background: #fffdf7;
+      border: 1px solid #f1dfb8;
+      border-radius: 6px;
+      padding: 14px;
+    }
+    .japanese {
+      color: var(--soft);
+      background: #fafcff;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 14px;
+    }
+    .note {
+      margin-top: 10px;
+      color: var(--soft);
+      font-size: .93rem;
+    }
+    .arc ol { margin: 12px 0 0; padding-left: 1.4rem; }
+    .arc li { margin: 5px 0; }
+    @media (max-width: 760px) {
+      .lesson-header { display: block; }
+      .chars { max-width: none; text-align: left; margin-top: 8px; }
+      .lesson-body { grid-template-columns: 1fr; }
+      table { font-size: .86rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>入門編リライト案 - Funnics Island</h1>
+    <p>既存の <strong>index.html</strong> は変更せず、入門編B1〜B20の文法ターゲットと、Funnics Islandの仲間たちを使った連続ストーリー案をここに保管します。</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>文法事項の全体像</h2>
+      <div class="summary-grid">
+        <div class="summary-card">
+          <h3>1. be動詞の基礎</h3>
+          <p>I am / You are、疑問文、否定文、This is / That is、He is / She is / It is。</p>
+        </div>
+        <div class="summary-card">
+          <h3>2. 一般動詞の基礎</h3>
+          <p>like / play / eat / have / go、Do you、don't、三単現の -s、Does / doesn't。</p>
+        </div>
+        <div class="summary-card">
+          <h3>3. 疑問詞と名詞</h3>
+          <p>what / who / when / where / how、複数形、主格・所有格・目的格。</p>
+        </div>
+        <div class="summary-card">
+          <h3>4. 動きの表現</h3>
+          <p>命令文、現在進行形、can / cannot、一般動詞の過去形と Did you。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel arc">
+      <h2>ストーリー設計</h2>
+      <p>舞台はFunnics Island。人間のTomが初めて島を訪れ、最初にTeacher Tacosに会います。Tomにとっては、しゃべるタコスの先生が島を案内し、パン屋のクマがパンを焼き、道や地図や道具まで反応する不思議な場所です。途中でTeacher Tacosがサルサの匂いを追っていなくなり、Aunt Antが代理ガイドになります。20レッスンを一本の長編に固定せず、島のいろいろな場所で起きる短い会話として作ります。</p>
+      <ol>
+        <li>B1〜B3: 島の入り口で、TomがTeacher Tacosに会い、「しゃべるタコスだ！」と驚く。Teacher Tacosがガイドになり、Aunt Antが島の友だちとして加わる。</li>
+        <li>B4〜B6: 島の朝市で、好きなこと・すること・しないことを話す。</li>
+        <li>B7〜B11: 地図、道具、仲間を紹介する。B9でTeacher Tacosがサルサを追って走り去り、Aunt Antが代理ガイドになる。</li>
+        <li>B12〜B15: Aunt AntとTeacher Tacosを探し、B13で再会する。そのあと予定、場所、作り方、数えるものを使って、疑問詞と複数形を学ぶ。</li>
+        <li>B16〜B20: ショー会場で、Juggler JellyfishとTeacher Tacosの出番を見ながら、命令・代名詞・現在進行形・can・過去形を使う。</li>
+      </ol>
+    </section>
+
+    <section class="panel">
+      <h2>B1〜B20 文法ターゲット一覧</h2>
+      <table>
+        <thead>
+          <tr><th>Lesson</th><th>文法ターゲット</th><th>ストーリー内の役割</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>B1</td><td>I am / You are</td><td>名前と案内役を確認する</td></tr>
+          <tr><td>B2</td><td>Are you ...? / Yes, I am. / No, I am not.</td><td>Tomの状態を確認する</td></tr>
+          <tr><td>B3</td><td>I am not / You are not</td><td>不安や誤解をほどく</td></tr>
+          <tr><td>B4</td><td>一般動詞</td><td>好きなこと・することを言う</td></tr>
+          <tr><td>B5</td><td>I am not / You are not</td><td>Teacher Tacosが名前だけでなく本当に先生だと気づく</td></tr>
+          <tr><td>B6</td><td>I don't / You don't</td><td>しないことを言う</td></tr>
+          <tr><td>B7</td><td>This is / That is</td><td>近く・遠くのものを紹介する</td></tr>
+          <tr><td>B8</td><td>What is ...? / What do you ...?</td><td>もの・行動をたずねる</td></tr>
+          <tr><td>B9</td><td>Who is ...? / Who do you ...?</td><td>人物をたずねる</td></tr>
+          <tr><td>B10</td><td>He is / She is / It is</td><td>第三者を紹介する</td></tr>
+          <tr><td>B11</td><td>三単現、Does / doesn't</td><td>仲間の習慣を説明する</td></tr>
+          <tr><td>B12</td><td>When is ...? / When do you ...?</td><td>時間をたずねる</td></tr>
+          <tr><td>B13</td><td>Where is ...? / Where do you ...?</td><td>場所をたずねる</td></tr>
+          <tr><td>B14</td><td>How are you? / How do you ...?</td><td>状態・方法をたずねる</td></tr>
+          <tr><td>B15</td><td>名詞の複数形</td><td>準備物を数える</td></tr>
+          <tr><td>B16</td><td>命令文 / Don't ...</td><td>ショーの指示を出す</td></tr>
+          <tr><td>B17</td><td>主格・所有格・目的格</td><td>だれのものか、だれにするかを言う</td></tr>
+          <tr><td>B18</td><td>be動詞 + 動詞ing</td><td>今していることを実況する</td></tr>
+          <tr><td>B19</td><td>can / cannot / Can you ...?</td><td>できることを言う</td></tr>
+          <tr><td>B20</td><td>過去形 / Did you ...?</td><td>ショーをふり返る</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>差し替え英文案</h2>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B1 - Tom at the Gate</h3><span class="target">I am ... / You are ...</span></div>
+          <div class="chars">Tom, Teacher Tacos</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Teacher Tacos) Hello! Welcome to Funnics Island.</p>
+            <p>(Teacher Tacos) What's your name?</p>
+            <p>(Tom) Hi! My name is Tom.</p>
+            <p>(Teacher Tacos) Nice to meet you, Tom.</p>
+            <p>(Teacher Tacos) I am Teacher Tacos.</p>
+            <p>(Tom) Oh! A talking taco!</p>
+            <p>(Teacher Tacos) Correct!</p>
+            <p>(Teacher Tacos) I am the gate guide today.</p>
+            <p>(Teacher Tacos) You are welcome here.</p>
+            <p>(Tom) Wow! I am excited.</p>
+            <p>(Tom) This place is amazing.</p>
+            <p>(Teacher Tacos) Yes. This island is a little strange, too.</p>
+          </div>
+          <div class="japanese">
+            <p>人間のTomが島の門に来て、最初にTeacher Tacosに会う。Tomが「しゃべるタコスだ！」と驚き、Teacher Tacosがガイド役になる。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B2 - Are You Ready?</h3><span class="target">Are you ...? / Yes, I am. / No, I am not.</span></div>
+          <div class="chars">Tom, Teacher Tacos</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Teacher Tacos) OK, Tom, are you ready?</p>
+            <p>(Tom) Hmm... Yes, I am.</p>
+            <p>(Teacher Tacos) Are you hungry?</p>
+            <p>(Tom) No, I am not.</p>
+            <p>(Tom) I am just curious. Wow.</p>
+            <p>(Teacher Tacos) Are you nervous?</p>
+            <p>(Tom) A little.</p>
+            <p>(Tom) Hmm... Are the island friends friendly?</p>
+            <p>(Teacher Tacos) Yes. Very friendly.</p>
+            <p>(Teacher Tacos) Don't worry.</p>
+            <p>(Tom) OK. Then I am ready.</p>
+          </div>
+          <div class="japanese">
+            <p>島に入る前、Tomが少し緊張する。Teacher Tacosが「島の仲間はやさしい」と安心させる。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B3 - Not Alone</h3><span class="target">I am not ... / You are not ...</span></div>
+          <div class="chars">Tom, Teacher Tacos, Aunt Ant</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Tom) Teacher Tacos, I am not from this island.</p>
+            <p>(Teacher Tacos) I know, Tom. Don't worry.</p>
+            <p>(Teacher Tacos) You are not alone.</p>
+            <p>(Aunt Ant) Hello, Tom. I am Aunt Ant.</p>
+            <p>(Tom) Hi, Aunt Ant. You are not a taco!</p>
+            <p>(Aunt Ant) That's right! I am an ant.</p>
+            <p>(Teacher Tacos) This island is not only for tacos.</p>
+            <p>(Aunt Ant) You are not a taco, but you are welcome here.</p>
+            <p>(Tom) Wow! I am not alone. I have new friends here.</p>
+          </div>
+          <div class="japanese">
+            <p>Tomが自分はこの島の出身ではないと伝える。Teacher TacosとAunt Antが「ひとりではない」「タコスではなくても歓迎される」と安心させる流れにする。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B4 - The Island Market</h3><span class="target">一般動詞</span></div>
+          <div class="chars">Tom, Teacher Tacos, Baker Bear, Cowboy Cat, Bread</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Teacher Tacos) Good morning, Tom. I like the island market.</p>
+            <p>(Tom) Wow, I like the colors.</p>
+            <p>(Baker Bear) Hi, Tom. I bake bread here.</p>
+            <p>(Tom) Yum. I eat bread at home.</p>
+            <p>(Bread) I wave at Tom.</p>
+            <p>(Tom) Wow! The bread waves!</p>
+            <p>(Cowboy Cat) Hi, Tom. I count cups for the juice stand.</p>
+            <p>(Tom) Whoa! The cups jump!</p>
+            <p>(Cowboy Cat) Yes. Cups jump on Funnics Island.</p>
+            <p>(Teacher Tacos) OK. You have a small map.</p>
+            <p>(Tom) OK. I follow the red path.</p>
+          </div>
+          <div class="japanese">
+            <p>Tomが島の市場を見る。パンが手を振り、カップがぴょんと跳ねるなど、普通の市場ではない楽しさをはっきり入れる。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B5 - Not Alone</h3><span class="target">I am not ... / You are not ...</span></div>
+          <div class="chars">Tom, Teacher Tacos</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Tom) Hmm... Teacher Tacos, I am not from this island.</p>
+            <p>(Teacher Tacos) I know.</p>
+            <p>(Teacher Tacos) Don't worry.</p>
+            <p>(Teacher Tacos) You are not alone.</p>
+            <p>(Tom) Oh. I am not an island friend yet.</p>
+            <p>(Teacher Tacos) Not yet.</p>
+            <p>(Teacher Tacos) But don't worry.</p>
+            <p>(Teacher Tacos) You are my student today.</p>
+            <p>(Tom) Oh! Teacher Tacos is not just a name?</p>
+            <p>(Teacher Tacos) Yes, correct! I am not just a taco.</p>
+            <p>(Teacher Tacos) I teach, too.</p>
+            <p>(Tom) Wow! You are not just a talking taco.</p>
+            <p>(Tom) You are a real teacher.</p>
+          </div>
+          <div class="japanese">
+            <p>B1で名前として聞いたTeacher Tacosが、実は本当に先生役でもあったとTomが気づく。しゃべるタコスの驚きは残しつつ、名前だけではない不思議さとガイド・生徒の関係を強める。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B6 - I Don't Know the Road</h3><span class="target">I don't ... / You don't ...</span></div>
+          <div class="chars">Tom, Teacher Tacos, Road, Runner Rabbit</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Tom) Teacher Tacos, I don't know the road.</p>
+            <p>(Teacher Tacos) Don't worry. You don't need a big map. The road talks.</p>
+            <p>(Road) Don't worry, Tom. I know the way.</p>
+            <p>(Tom) OK. I don't run on a new road.</p>
+            <p>(Runner Rabbit) Hi, Tom. I run every day.</p>
+            <p>(Teacher Tacos) Easy, Tom. You don't need speed today.</p>
+            <p>(Tom) Phew. I don't want a race. I want a slow walk.</p>
+            <p>(Runner Rabbit) A slow walk? So strange!</p>
+            <p>(Tom) Oh! The road is talking, so I walk slowly.</p>
+          </div>
+          <div class="japanese">
+            <p>知らない道に戸惑うTomに、道そのものが声をかける。何でも走りたがるRunner Rabbitとの対比で会話に動きを出す。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B7 - This Map, That Gate</h3><span class="target">This is ... / That is ...</span></div>
+          <div class="chars">Tom, Teacher Tacos, Engineer Egg, Map, Pilot Panda</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Engineer Egg) Hi, Tom. Look! This is a map.</p>
+            <p>(Map) Hey! This is me!</p>
+            <p>(Tom) Aha! This is the market.</p>
+            <p>(Teacher Tacos) Yes. Good. That is the blue gate.</p>
+            <p>(Tom) Is that the sound hill?</p>
+            <p>(Engineer Egg) Yes, that is the sound hill.</p>
+            <p>(Pilot Panda) Hi, Tom. That is a boat by the gate.</p>
+            <p>(Tom) Wow. This is a big island.</p>
+            <p>(Teacher Tacos) And that is only the first page. Surprise!</p>
+            <p>(Tom) Wow! The map is talking, too.</p>
+          </div>
+          <div class="japanese">
+            <p>地図を見ても島の全体がまだ見えないうえに、地図自身がしゃべる。島の道具も生きているワクワクを入れる。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B8 - What Is This Machine?</h3><span class="target">What is ...? / What do you ...?</span></div>
+          <div class="chars">Tom, Engineer Egg, Sound Machine, Magician Mouse, Key Box</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Tom) Engineer Egg, what is this?</p>
+            <p>(Engineer Egg) Look. This is a sound machine.</p>
+            <p>(Sound Machine) Ding! I am awake. Hello!</p>
+            <p>(Tom) OK. What do you make with this machine?</p>
+            <p>(Engineer Egg) I make a bell sound. Listen.</p>
+            <p>(Magician Mouse) Hi, Engineer Egg. What do you need?</p>
+            <p>(Engineer Egg) Wait... I need a small key.</p>
+            <p>(Tom) Oh? What is that?</p>
+            <p>(Magician Mouse) Ta-da! That is the key box.</p>
+            <p>(Tom) What is in the box?</p>
+            <p>(Magician Mouse) A small surprise. Hee-hee.</p>
+            <p>(Key Box) Knock, knock!</p>
+            <p>(Tom) Whoa! The key box is talking!</p>
+          </div>
+          <div class="japanese">
+            <p>音の機械が「起きたよ」と鳴り、鍵箱がノックする。箱や機械まで反応する島だとわかる。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B9 - Who Is That Singer?</h3><span class="target">Who is ...? / Who do you ...?</span></div>
+          <div class="chars">Tom, Teacher Tacos, Aunt Ant, Singer Snake, Old Book, Librarian Lion</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Tom) Teacher Tacos, who is that?</p>
+            <p>(Teacher Tacos) Look. That is Singer Snake.</p>
+            <p>(Singer Snake) Hi, Tom. I sing for the island.</p>
+            <p>(Teacher Tacos) Wait. I smell super salsa. Oh wow. I must follow that smell!</p>
+            <p>(Tom) Oh no! Teacher Tacos is running away!</p>
+            <p>(Aunt Ant) Hi, Tom. Don't worry. I can be your guide for now.</p>
+            <p>(Tom) Thank you, Aunt Ant. OK. Who do you help, Singer Snake?</p>
+            <p>(Singer Snake) I help Baker Bear and Tom. La-la!</p>
+            <p>(Old Book) Wait... Who is by me?</p>
+            <p>(Tom) Oh! The old book is talking!</p>
+            <p>(Librarian Lion) Hello? Who is by the old book?</p>
+            <p>(Tom) OK, I am by the old book. Who is on the show stage?</p>
+            <p>(Aunt Ant) Juggler Jellyfish is on the stage. Teacher Tacos is... maybe with the salsa.</p>
+          </div>
+          <div class="japanese">
+            <p>Tomが歌い手を見つけた直後、Teacher Tacosが超サルサの匂いを追って走り去る。Aunt Antが一時的にガイドを引き受け、古い本まで「だれ？」と話す。</p>
+            <p class="note">一時注釈: must は「どうしても〜しなきゃ」という勢いとして扱う。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B10 - He, She, It</h3><span class="target">He is ... / She is ... / It is ...</span></div>
+          <div class="chars">Tom, Aunt Ant, Doctor Dragon, Juggler Jellyfish, King Kangaroo</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Tom) Teacher Tacos is gone.</p>
+            <p>(Aunt Ant) Don't worry. I can show you friends.</p>
+            <p>(Tom) OK. Who is he?</p>
+            <p>(Aunt Ant) He is Doctor Dragon. He is kind. Great!</p>
+            <p>(Tom) And who is she?</p>
+            <p>(Aunt Ant) She is Juggler Jellyfish. She is a juggler. Wow!</p>
+            <p>(Tom) Whoa! What is that in the air?</p>
+            <p>(Juggler Jellyfish) It is a jumping cup. It loves drama.</p>
+            <p>(Tom) Who is he by the stage?</p>
+            <p>(Aunt Ant) He is King Kangaroo. He is the king. Careful!</p>
+            <p>(King Kangaroo) Hello, Tom! Wow! My crown is jumping, too.</p>
+          </div>
+          <div class="japanese">
+            <p>Teacher Tacosがいない間、Aunt Antが案内役を引き受ける。Doctor DragonとKing Kangarooはhe、Juggler Jellyfishはshe、空中で跳ねるショー用カップはitで紹介する。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B11 - Baker Bear Bakes</h3><span class="target">三単現 / Does ...? / doesn't</span></div>
+          <div class="chars">Tom, Aunt Ant, Baker Bear, Cowboy Cat, Bread</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Aunt Ant) Look. Baker Bear bakes bread every morning.</p>
+            <p>(Bread) Good morning! Yay!</p>
+            <p>(Tom) Wow. He works early.</p>
+            <p>(Cowboy Cat) Yes. He likes warm bread.</p>
+            <p>(Tom) Does the bread say good morning every day?</p>
+            <p>(Baker Bear) Yes, it does. Every day.</p>
+            <p>(Tom) OK. Does he bake cakes, too?</p>
+            <p>(Cowboy Cat) Yes, he does. No. He doesn't bake fish cakes.</p>
+            <p>(Tom) Good! I like sweet cakes. Does Teacher Tacos teach every day?</p>
+            <p>(Cowboy Cat) Yes, he does. Wow. He teaches with salsa cards.</p>
+            <p>(Aunt Ant) And today he follows a salsa smell. Too much!</p>
+          </div>
+          <div class="japanese">
+            <p>Aunt Antの案内でBaker Bearの日課を見る。毎朝パンがあいさつすること、Teacher Tacosがサルサカードで教えることも本人不在のまま話題にする。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B12 - When is ...? / When do you ...?</h3><span class="target">When is ...? / When do you ...?</span></div>
+          <div class="chars">Tom, Aunt Ant, Singer Snake, Clock, Juggler Jellyfish</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Tom) When is the show?</p>
+            <p>(Clock) Now? Now? Please? Start the show now!</p>
+            <p>(Tom) Whoa! The clock is too excited!</p>
+            <p>(Aunt Ant) OK, clock. The show is at two. The clock is always early.</p>
+            <p>(Tom) OK. When do you sing, Singer Snake?</p>
+            <p>(Singer Snake) I sing at one thirty. Easy.</p>
+            <p>(Tom) Great. When does Juggler Jellyfish start?</p>
+            <p>(Juggler Jellyfish) I start at two ten. Don't panic. My cups panic enough.</p>
+            <p>(Tom) When does Teacher Tacos teach?</p>
+            <p>(Aunt Ant) He teaches after the juggling. But today... he may be late.</p>
+            <p>(Tom) Oh no! The salsa smell is stronger.</p>
+          </div>
+          <div class="japanese">
+            <p>Aunt Antの案内で、Teacher Tacos不在のままショーの時間を聞く。時計はせっかちすぎて「今すぐ始めて！」と急かし、Teacher Tacosはサルサのせいで遅れそうだとわかる。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B13 - Where is ...? / Where do you ...?</h3><span class="target">Where is ...? / Where do you ...?</span></div>
+          <div class="chars">Tom, Aunt Ant, Stage, Salsa Jar, Teacher Tacos</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Tom) Where is Teacher Tacos?</p>
+            <p>(Aunt Ant) I hear salsa drums by the big tree.</p>
+            <p>(Tom) OK. Where is the show stage?</p>
+            <p>(Stage) Um... I am here by the big tree. Please don't stare.</p>
+            <p>(Tom) Where does the salsa smell go?</p>
+            <p>(Salsa Jar) Over here! Too spicy! Too famous!</p>
+            <p>(Tom) Oh! A shouting salsa jar! Where is Teacher Tacos?</p>
+            <p>(Teacher Tacos) I am under the red table.</p>
+            <p>(Tom) Wow! Teacher Tacos is back!</p>
+            <p>(Teacher Tacos) I am your guide again.</p>
+            <p>(Tom) Great. Where do you stand?</p>
+            <p>(Teacher Tacos) I stand on the red mat.</p>
+          </div>
+          <div class="japanese">
+            <p>TomがTeacher Tacosの居場所を探す。サルサの匂いと叫ぶサルサ瓶をたどり、赤いテーブルの下でTeacher Tacosと再会する。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B14 - How are you? / How do you ...?</h3><span class="target">How are you? / How do you ...?</span></div>
+          <div class="chars">Tom, Teacher Tacos, Engineer Egg, Sound Machine</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Teacher Tacos) Hi, Tom. How are you? OK?</p>
+            <p>(Tom) Wow! I am fine now. I feel safe because you are back.</p>
+            <p>(Teacher Tacos) Good. I am back, and I am your guide.</p>
+            <p>(Tom) How are you, Teacher Tacos?</p>
+            <p>(Teacher Tacos) I am spicy, but safe. The salsa jar is too much.</p>
+            <p>(Tom) The island is amazing. Engineer Egg, how do you make that sound?</p>
+            <p>(Engineer Egg) OK. I turn this key and tap this box.</p>
+            <p>(Sound Machine) Ding, dong! Oops! I am too loud!</p>
+            <p>(Tom) Teacher Tacos, how do you teach?</p>
+            <p>(Teacher Tacos) I point, I tap, and I say, "Ta-da!"</p>
+            <p>(Tom) Whoa! This island is wonderful. Even the machine sings too much.</p>
+          </div>
+          <div class="japanese">
+            <p>Teacher Tacosが戻ってきてTomが安心する。そこから音の機械とTeacher Tacosの教え方を聞き、「どうやって？」が本当に知りたい質問になる。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B15 - 名詞の複数形</h3><span class="target">名詞の複数形</span></div>
+          <div class="chars">Tom, Queen Quiz, Cowboy Cat, Teacher Tacos, Shells, Flags</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Tom) Wow! I see many shells.</p>
+            <p>(Shells) Clap, clap, clap! Too much?</p>
+            <p>(Cowboy Cat) OK. I count shells every day.</p>
+            <p>(Queen Quiz) Hi, Tom. Ta-da! I have three flags.</p>
+            <p>(Tom) OK. I have two boxes.</p>
+            <p>(Teacher Tacos) Great. I have four salsa cards.</p>
+            <p>(Queen Quiz) Yes. The boxes are for the island quiz.</p>
+            <p>(Tom) Wow. The flags are bright.</p>
+            <p>(Flags) We dance too much!</p>
+            <p>(Cowboy Cat) And the cups are for Juggler Jellyfish.</p>
+          </div>
+          <div class="japanese">
+            <p>ショーの道具を数える。貝は拍手しすぎ、旗は踊りすぎ。Teacher Tacosのsalsa cards、Juggler Jellyfishのcupsで出演者につなげる。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B16 - 命令文 / Don't ...</h3><span class="target">命令文 / Don't ...</span></div>
+          <div class="chars">Tom, Guardian Goat, Teacher Tacos, Bridge</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Guardian Goat) Hi, Tom. OK, open the small gate, please.</p>
+            <p>(Teacher Tacos) Easy. Walk slowly.</p>
+            <p>(Guardian Goat) Careful! Don't run on the bridge.</p>
+            <p>(Bridge) Walk, please. Hee-hee! I giggle too much.</p>
+            <p>(Tom) Yikes! The bridge is too ticklish!</p>
+            <p>(Teacher Tacos) OK. Put the boxes on the table. Listen to me.</p>
+            <p>(Teacher Tacos) Touch the salsa cards, but don't eat the teacher.</p>
+            <p>(Tom) Phew. I understand. Don't eat the teacher. OK. I am careful.</p>
+          </div>
+          <div class="japanese">
+            <p>ショー会場に入る前の安全案内。橋はくすぐったがりすぎて、歩かれるだけで笑いすぎる。「先生タコスを食べないで」という島ならではの注意で面白くする。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B17 - 主格・所有格・目的格</h3><span class="target">主格・所有格・目的格</span></div>
+          <div class="chars">Tom, Teacher Tacos, Librarian Lion, Old Book, Salsa Cards</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Tom) OK, this is my map.</p>
+            <p>(Teacher Tacos) Yes, good. And this is your island pass.</p>
+            <p>(Old Book) Hey! Tom, read me now!</p>
+            <p>(Librarian Lion) Here. I have your book, Tom.</p>
+            <p>(Tom) Please give it to me.</p>
+            <p>(Teacher Tacos) Oh! My salsa cards are on the stage.</p>
+            <p>(Salsa Cards) Hey! Give us to Teacher Tacos now!</p>
+            <p>(Tom) OK. I give them to you.</p>
+            <p>(Teacher Tacos) Thank you. Great job. This cake is for you.</p>
+          </div>
+          <div class="japanese">
+            <p>地図・入島パス・本・Teacher Tacosのカードを受け渡す。本とカードは主張が強すぎて急かしてくる。my / your / me / them を使う。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B18 - be動詞 + 動詞ing</h3><span class="target">be動詞 + 動詞ing</span></div>
+          <div class="chars">Tom, Juggler Jellyfish, Teacher Tacos, Cups</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Tom) Wow! The show is starting.</p>
+            <p>(Juggler Jellyfish) OK! I am juggling cups.</p>
+            <p>(Cups) Whoa! We are flying too fast!</p>
+            <p>(Tom) Whoa! The cups are flying too fast!</p>
+            <p>(Teacher Tacos) Now I am teaching the taco dance.</p>
+            <p>(Tom) Aha! Teacher Tacos is teaching a dance.</p>
+            <p>(Teacher Tacos) Yes. Wow. You are watching Funnics Island.</p>
+            <p>(Juggler Jellyfish) Oops! I am juggling and jumping too much.</p>
+            <p>(Teacher Tacos) OK. I am tapping the salsa cards.</p>
+          </div>
+          <div class="japanese">
+            <p>ショーの出演者はJuggler JellyfishとTeacher Tacos。カップは速すぎ、Juggler Jellyfishは動きすぎ、Teacher Tacosがダンスを教える場面にする。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B19 - can / cannot / Can you ...?</h3><span class="target">can / cannot / Can you ...?</span></div>
+          <div class="chars">Tom, Teacher Tacos, Doctor Dragon, Juggler Jellyfish, Box</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Tom) Teacher Tacos, can I help?</p>
+            <p>(Teacher Tacos) Yes, you can. Great!</p>
+            <p>(Doctor Dragon) Hi, Tom. Please, can you carry this box?</p>
+            <p>(Box) Um... I can sing, but I cannot walk. I am too shy.</p>
+            <p>(Tom) Oh! The box can sing, but it hides! OK. Yes, I can.</p>
+            <p>(Teacher Tacos) Great. Can you hold my salsa cards?</p>
+            <p>(Tom) OK. Yes, I can.</p>
+            <p>(Juggler Jellyfish) Oh no! I cannot hold eight cups now.</p>
+            <p>(Tom) I can hold two cups. Easy!</p>
+            <p>(Teacher Tacos) Great! We can finish together.</p>
+          </div>
+          <div class="japanese">
+            <p>ショーの裏側でTomが手伝う。箱は歌えるけれど恥ずかしがり屋すぎて歩けない。Teacher TacosのカードやJuggler Jellyfishのカップでcanを使う。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <div class="lesson-header">
+          <div><h3>Lesson B20 - 過去形 / Did you ...?</h3><span class="target">過去形 / Did you ...?</span></div>
+          <div class="chars">Tom, Teacher Tacos, Juggler Jellyfish, All Friends</div>
+        </div>
+        <div class="lesson-body">
+          <div class="english">
+            <p>(Tom) I visited Funnics Island yesterday.</p>
+            <p>(Teacher Tacos) Yes. You walked around the market.</p>
+            <p>(Juggler Jellyfish) I juggled cups for you. Ta-da!</p>
+            <p>(Teacher Tacos) And I taught the taco dance.</p>
+            <p>(Tom) I saw an excited clock, a shy stage, and Teacher Tacos.</p>
+            <p>(Tom) I watched cups fly too fast on stage.</p>
+            <p>(Teacher Tacos) So, did you enjoy the island?</p>
+            <p>(Tom) Yes, I did. I learned English in a strange, wonderful place.</p>
+            <p>(All Friends) Good-bye, Tom! Come again!</p>
+          </div>
+          <div class="japanese">
+            <p>最後はTomが「せっかちすぎる時計、恥ずかしがり屋すぎる舞台、Teacher Tacos、速すぎるカップ」をふり返る。島の不思議さを最後まで残す。</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h2>次にindex.htmlへ入れるときのメモ</h2>
+      <p class="note">このHTMLは下書き用です。正式反映時は、各Lessonの <strong>en-body / jp-body / jp-full</strong> をこの英文に合わせて作り直し、必要なら音声 <strong>audio/beginner/L*</strong> も再生成します。キャラクター名は既存ロースターの表記に合わせています。</p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "lesson": "H091",
+  "updated_at": "2026-08-08",
+  "generator": "Codex built-in ImageGen",
+  "style": "画風01『光彩・劇場アニメ背景』固定",
+  "planned_master_count": 54,
+  "accepted_master_count": 54,
+  "dimensions": "1672x941",
+  "dimension_check": "54/54 PASS",
+  "unexpected_files": 0,
+  "accepted_through": "open_horizon_finale_master.png",
+  "accepted_files_source": "visual_bible_style01.json > masters[].file",
+  "remaining_files": [],
+  "rejected_attempts": [
+    {
+      "scene": "quiet_inn_night_master",
+      "reason": "初稿に宿主夫婦が映り込み、主人公ひとりの静かな夜という意図に合わなかった",
+      "action": "主人公以外の人物を禁止して再生成し、ひとりの客室場面だけを採用"
+    },
+    {
+      "scene": "last_morning_balcony_master",
+      "reason": "初稿に宿主夫婦が映り込み、歌詞の alone と一致しなかった",
+      "action": "主人公だけ・胸高の安全な手すり・身を乗り出さない条件で再生成"
+    }
+  ],
+  "normalization": {
+    "reason": "ImageGen出力5枚の横幅が1670または1671pxだった",
+    "action": "縦941pxを維持し、本編規格1672x941へ1〜2pxだけ正規化",
+    "affected_count": 5
+  },
+  "qa_notes": [
+    "22歳の成人日本人女性、服装、補修済みバックパック、紺色ノートを全編で固定",
+    "宿主夫婦と小さな宿を固定し、旅行者と地域住民を対等に描写",
+    "港、列車、村道、バルコニーで危険行動なし",
+    "全54基準画を132カットへ展開し、各基準画最低2回使用",
+    "TacoBeat実測15行・178語と54意味時点の照合PASS",
+    "代表20時点と歌詞開始後15時点の完成動画目視PASS"
+  ]
+}

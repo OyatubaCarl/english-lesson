@@ -1,0 +1,289 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H138.md",
+  "audio": "高校生編/suno_ready/generated/audio/H138/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 172.64,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9926,
+  "expected_words": 272,
+  "transcribed_words": 270,
+  "matched_words": 261,
+  "coverage": 0.9596,
+  "precision": 0.9667,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 271,
+  "longest_missing_run": 6,
+  "largest_missing_runs": [
+    {
+      "start": 116,
+      "length": 6,
+      "words": [
+        "work",
+        "at",
+        "twenty",
+        "five",
+        "chaplin",
+        "crossed"
+      ]
+    },
+    {
+      "start": 13,
+      "length": 1,
+      "words": [
+        "nineteenth"
+      ]
+    },
+    {
+      "start": 47,
+      "length": 1,
+      "words": [
+        "actors"
+      ]
+    },
+    {
+      "start": 86,
+      "length": 1,
+      "words": [
+        "chaplin"
+      ]
+    },
+    {
+      "start": 130,
+      "length": 1,
+      "words": [
+        "tramp"
+      ]
+    },
+    {
+      "start": 199,
+      "length": 1,
+      "words": [
+        "us"
+      ]
+    }
+  ],
+  "replacement_count": 6,
+  "replacement_spans": [
+    {
+      "expected_start": 13,
+      "actual_start": 13,
+      "expected": [
+        "nineteenth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.9376,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 47,
+      "actual_start": 47,
+      "expected": [
+        "actors"
+      ],
+      "actual": [
+        "actor's"
+      ],
+      "actual_confidence": 0.7102,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 86,
+      "actual_start": 86,
+      "expected": [
+        "chaplin"
+      ],
+      "actual": [
+        "chaplain"
+      ],
+      "actual_confidence": 0.8137,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 116,
+      "actual_start": 116,
+      "expected": [
+        "work",
+        "at",
+        "twenty",
+        "five",
+        "chaplin",
+        "crossed"
+      ],
+      "actual": [
+        "a",
+        "chapron",
+        "cross"
+      ],
+      "actual_confidence": 0.4878,
+      "substitution_words": 3,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 130,
+      "actual_start": 127,
+      "expected": [
+        "tramp"
+      ],
+      "actual": [
+        "tram"
+      ],
+      "actual_confidence": 0.3435,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 199,
+      "actual_start": 196,
+      "expected": [
+        "us"
+      ],
+      "actual": [
+        "u",
+        "s"
+      ],
+      "actual_confidence": 0.7357,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 3,
+  "suspicious_substitution_words": 3,
+  "suspicious_content_substitution": true,
+  "transcript": "The birth of cinema was a miraculous invention at the end of the 19th century. Since the Lumiere brothers held a public screening in Paris in 1895, film has become one of humanity's major art forms. Early films were silent. The story had to be conveyed through the actor's facial expressions and gestures alone. The greatest star of that era was Charlie Chaplin. Chaplin was born in 1889 to a poor family in London. His father died young from alcoholism And his mother suffered mental illness at seven Chaplain was sent to an orphanage His childhood was a battle against awful poverty He survived on simple soup and stale bread But that experience gave depth to his later A 25-chapron cross to Hollywood and invented the character of the tram-a-bowler hat. A cane, a tiny mustache, shoes too big. This figure was loved around the world. His films were comedies, yet they sharply depicted the contradictions of society. Modern times satirized the alienation of industrial society. The great dictator satirized Nazi Germany In the 1950s, however, when the Red Scare began in the United States Chaplin was suspected of being a communist sympathizer He left the U.S. and went into exile in Switzerland In his later years, Chaplin's reputation was restored At the 1972 Academy Awards, the entire audience stood up and gave him a standing ovation. The prolonged applause became one of the most memorable moments in Oscar history. Chaplin's films do not fade even today. Life is a tragedy when seen up close but a comedy from a distance. His words touch the truth of the human condition",
+  "segments": [
+    {
+      "start": 4.46,
+      "end": 13.14,
+      "text": "The birth of cinema was a miraculous invention at the end of the 19th century."
+    },
+    {
+      "start": 14.88,
+      "end": 22.8,
+      "text": "Since the Lumiere brothers held a public screening in Paris in 1895, film has become one of humanity's"
+    },
+    {
+      "start": 22.8,
+      "end": 24.2,
+      "text": "major art forms."
+    },
+    {
+      "start": 24.2,
+      "end": 26.76,
+      "text": "Early films were silent."
+    },
+    {
+      "start": 31.2,
+      "end": 36.82,
+      "text": "The story had to be conveyed through the actor's facial expressions and gestures alone."
+    },
+    {
+      "start": 38.0,
+      "end": 42.2,
+      "text": "The greatest star of that era was Charlie Chaplin."
+    },
+    {
+      "start": 42.74,
+      "end": 49.42,
+      "text": "Chaplin was born in 1889 to a poor family in London."
+    },
+    {
+      "start": 51.42,
+      "end": 57.96,
+      "text": "His father died young from alcoholism And his mother suffered mental illness at seven"
+    },
+    {
+      "start": 57.96,
+      "end": 65.94,
+      "text": "Chaplain was sent to an orphanage His childhood was a battle against awful poverty"
+    },
+    {
+      "start": 67.1,
+      "end": 74.84,
+      "text": "He survived on simple soup and stale bread But that experience gave depth to his later"
+    },
+    {
+      "start": 75.7,
+      "end": 82.7,
+      "text": "A 25-chapron cross to Hollywood and invented the character of the tram-a-bowler hat."
+    },
+    {
+      "start": 82.78,
+      "end": 86.3,
+      "text": "A cane, a tiny mustache, shoes too big."
+    },
+    {
+      "start": 86.82,
+      "end": 89.72,
+      "text": "This figure was loved around the world."
+    },
+    {
+      "start": 89.88,
+      "end": 96.58,
+      "text": "His films were comedies, yet they sharply depicted the contradictions of society."
+    },
+    {
+      "start": 98.46,
+      "end": 103.82,
+      "text": "Modern times satirized the alienation of industrial society."
+    },
+    {
+      "start": 103.82,
+      "end": 107.6,
+      "text": "The great dictator satirized Nazi Germany"
+    },
+    {
+      "start": 108.82,
+      "end": 113.82,
+      "text": "In the 1950s, however, when the Red Scare began in the United States"
+    },
+    {
+      "start": 114.46,
+      "end": 118.82,
+      "text": "Chaplin was suspected of being a communist sympathizer"
+    },
+    {
+      "start": 119.82,
+      "end": 123.38,
+      "text": "He left the U.S. and went into exile in Switzerland"
+    },
+    {
+      "start": 125.82,
+      "end": 130.32,
+      "text": "In his later years, Chaplin's reputation was restored"
+    },
+    {
+      "start": 130.32,
+      "end": 138.94,
+      "text": "At the 1972 Academy Awards, the entire audience stood up and gave him a standing ovation."
+    },
+    {
+      "start": 139.48,
+      "end": 145.72,
+      "text": "The prolonged applause became one of the most memorable moments in Oscar history."
+    },
+    {
+      "start": 146.82,
+      "end": 150.58,
+      "text": "Chaplin's films do not fade even today."
+    },
+    {
+      "start": 151.8,
+      "end": 157.16,
+      "text": "Life is a tragedy when seen up close but a comedy from a distance."
+    },
+    {
+      "start": 157.16,
+      "end": 164.0,
+      "text": "His words touch the truth of the human condition"
+    }
+  ]
+}

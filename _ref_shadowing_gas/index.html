@@ -1,0 +1,2280 @@
+<!DOCTYPE html>
+<html>a
+<head>
+  <title>Shadowing Practice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg-dark: #0a0a0f;
+      --bg-card: rgba(20, 20, 35, 0.7);
+      --glass: rgba(255, 255, 255, 0.05);
+      --glass-border: rgba(255, 255, 255, 0.1);
+      --accent-cyan: #00f5ff;
+      --accent-magenta: #ff00aa;
+      --accent-green: #00ff88;
+      --accent-orange: #ff6b35;
+      --text-primary: #ffffff;
+      --text-secondary: rgba(255, 255, 255, 0.6);
+      --success: #00ff88;
+      --warning: #ffaa00;
+      --error: #ff4466;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: var(--bg-dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        radial-gradient(ellipse at 20% 20%, rgba(0, 245, 255, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(255, 0, 170, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 50%, rgba(0, 255, 136, 0.05) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+      animation: bgPulse 8s ease-in-out infinite;
+    }
+
+    @keyframes bgPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+
+    body::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 50px 50px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 900px;
+      padding: 20px;
+    }
+
+    #app-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    #spreadsheet-name {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(1.5rem, 5vw, 2.5rem);
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-magenta));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-shadow: 0 0 40px rgba(0, 245, 255, 0.5);
+      animation: titleGlow 3s ease-in-out infinite;
+    }
+
+    @keyframes titleGlow {
+      0%, 100% { filter: brightness(1); }
+      50% { filter: brightness(1.2); }
+    }
+
+    #loading-message {
+      text-align: center;
+      color: var(--accent-cyan);
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.2rem;
+      animation: loadingPulse 1.5s ease-in-out infinite;
+    }
+
+    @keyframes loadingPulse {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+
+    .glass-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+      padding: 40px;
+      margin-bottom: 20px;
+      box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .glass-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+      animation: shimmer 8s ease-in-out infinite;
+    }
+
+    @keyframes shimmer {
+      0% { left: -100%; }
+      50%, 100% { left: 100%; }
+    }
+
+    #sentence {
+      font-size: clamp(1.2rem, 4vw, 1.8rem);
+      font-weight: 500;
+      color: var(--text-primary);
+      text-align: center;
+      margin-bottom: 20px;
+      line-height: 1.8;
+      min-height: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .word {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 6px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: default;
+    }
+
+.hidden-word {
+  background: rgba(0, 245, 255, 0.1);
+  border: 1px dashed var(--accent-cyan);
+  color: transparent;           /* ★文字を見えなくする */
+  cursor: pointer;
+  font-family: inherit;         /* 英文と同じフォントで幅を揃える */
+}
+
+/* 選択しても文字が見えないようにする保険 */
+.hidden-word::selection {
+  background: rgba(0, 245, 255, 0.1);
+  color: transparent;
+}
+
+
+    .hidden-word:hover {
+      background: rgba(0, 245, 255, 0.2);
+      transform: scale(1.05);
+    }
+
+    .matched {
+      color: var(--success) !important;
+      background: rgba(0, 255, 136, 0.15);
+      border: 1px solid var(--success);
+      animation: matchPop 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    @keyframes matchPop {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    #translation {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 300;
+    }
+
+    #recognized-words {
+      font-size: 1rem;
+      color: var(--accent-cyan);
+      text-align: center;
+      min-height: 30px;
+      opacity: 0.8;
+    }
+
+    #progress {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px;
+      padding: 8px 16px;
+      display: flex;
+      gap: 20px;
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    #progress p {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin: 0;
+    }
+
+    #progress span {
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      font-size: 0.85rem;
+    }
+
+   /* ★ ステージ名を英文番号／ステップのすぐ下に固定表示 */
+    #stage-name {
+      position: fixed;
+      top: 50px;          /* #progress のすぐ下あたり */
+      right: 15px;
+      transform: none;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid var(--glass-border);
+      padding: 6px 16px;
+      border-radius: 8px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      letter-spacing: 0.02em;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+      z-index: 10;
+      white-space: nowrap;
+      text-align: right;
+    }
+
+/* 修正箇所: 縦並び(column)を横並び(row)に変更 */
+    #recognition-panel {
+      display: none;
+      flex-direction: row; /* ここを row に変更 */
+      justify-content: center; /* 中央寄せを追加 */
+      align-items: center;
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    /* スマホ画面で幅が狭い場合だけ縦に戻す、もしくはサイズを調整する設定（念のため追加推奨） */
+    @media (max-width: 480px) {
+      #recognition-panel {
+        flex-wrap: wrap; /* 画面が狭すぎたら折り返す */
+      }
+      #recognition-status {
+        padding: 12px 20px; /* スマホではパディングを少し減らす */
+        font-size: 0.9rem;
+      }
+      #english-button {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+      }
+    }
+
+    /* ベース: 停止中（待機中）の見た目 */
+    #recognition-status {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      padding: 12px 40px;
+      border-radius: 50px;
+      border: 1px solid var(--glass-border);
+      background: rgba(0, 0, 0, 0.4);
+      color: var(--text-secondary);
+      box-shadow: none;
+      animation: none;
+    }
+    /* 認識再開モード用の見た目 */
+    #recognition-status.restart-ready {
+      background: linear-gradient(135deg, var(--accent-cyan), #00b8cc);
+      color: var(--bg-dark);
+      box-shadow: 0 4px 20px rgba(0, 245, 255, 0.6);
+      cursor: pointer;
+      animation: none; /* activeのPulseは消す */
+    }
+
+    /* 認識が実行中の時だけ付与するクラス */
+    #recognition-status.active {
+      background: linear-gradient(135deg, var(--error), #cc0033);
+      color: white;
+      box-shadow: 0 4px 20px rgba(255, 68, 102, 0.6);
+      animation: recordingPulse 1s ease-in-out infinite;
+    }
+
+    @keyframes recordingPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+
+    #english-button {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 10px 28px;
+      background: transparent;
+      color: var(--text-secondary);
+      border: 2px solid var(--glass-border);
+      border-radius: 50px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all 0.3s;
+    }
+
+    #english-button:hover:not(:disabled) {
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+      box-shadow: 0 0 20px rgba(0, 245, 255, 0.2);
+    }
+
+    #english-button:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+
+    .feedback-overlay {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+      text-align: center;
+      display: none;
+    }
+
+    #success-mark {
+      font-size: 20vw;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--success), var(--accent-cyan));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      filter: drop-shadow(0 0 40px var(--success));
+    }
+
+    #try-again-mark {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3vw;
+      font-weight: 700;
+      color: var(--warning);
+      text-shadow: 0 0 30px var(--warning);
+    }
+
+    #move-forward-mark {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3vw;
+      font-weight: 700;
+      color: var(--accent-orange);
+      text-shadow: 0 0 30px var(--accent-orange);
+    }
+
+    #stage-clear {
+      position: fixed;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(2rem, 6vw, 4rem);
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-magenta), var(--success));
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-shadow: 0 0 60px rgba(0, 245, 255, 0.5);
+      animation: stageClearGradient 2s ease-in-out infinite;
+      display: none;
+      z-index: 9999;
+      white-space: nowrap;           /* ★これを追加 */
+    }
+
+    @media (max-width: 480px) {
+      #stage-clear {
+        font-size: 5.5vw;            /* さらに小さめにして幅に収める */
+        letter-spacing: 0.05em;      /* 文字間も少し詰める */
+      }
+    }
+
+
+    @keyframes stageClearGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    #next-stage-info {
+      position: fixed;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: var(--bg-card);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--accent-cyan);
+      border-radius: 16px;
+      padding: 20px 40px;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.2rem;
+      color: var(--text-primary);
+      display: none;
+      z-index: 9998;
+      box-shadow: 0 0 40px rgba(0, 245, 255, 0.3);
+    }
+
+    /* ★★★ 追加: 全課題終了画面のスタイル ★★★ */
+    #complete-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(10, 10, 15, 0.95);
+      backdrop-filter: blur(20px);
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    #complete-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(2rem, 8vw, 5rem);
+      font-weight: 900;
+      background: linear-gradient(135deg, #FFD700, #FFA500, #FF6B35, #FF00AA, #00F5FF, #00FF88);
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-align: center;
+      animation: completeGradient 3s ease-in-out infinite, completePulse 1s ease-in-out infinite;
+      text-shadow: 0 0 60px rgba(255, 215, 0, 0.5);
+    }
+
+    @keyframes completeGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes completePulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+
+    #complete-message {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: clamp(1rem, 3vw, 1.5rem);
+      color: var(--text-primary);
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    #complete-stats {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+      color: var(--accent-cyan);
+      text-align: center;
+      background: var(--bg-card);
+      border: 1px solid var(--accent-cyan);
+      border-radius: 16px;
+      padding: 20px 40px;
+      box-shadow: 0 0 30px rgba(0, 245, 255, 0.3);
+    }
+
+    #restart-button {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 16px 40px;
+      background: linear-gradient(135deg, var(--accent-magenta), #cc0088);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: all 0.3s;
+      box-shadow: 0 4px 20px rgba(255, 0, 170, 0.4);
+      margin-top: 20px;
+    }
+
+    #restart-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(255, 0, 170, 0.6);
+    }
+
+    #control-panel {
+      position: fixed;
+      bottom: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--bg-card);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      padding: 20px 24px;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      max-width: 320px;
+      width: 90%;
+    }
+
+    #main-action-container {
+      width: 100%;
+    }
+
+    #main-action-button {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 14px 30px;
+      width: 100%;
+      background: linear-gradient(135deg, var(--accent-cyan), #00b8cc);
+      color: var(--bg-dark);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: all 0.3s;
+      box-shadow: 0 4px 20px rgba(0, 245, 255, 0.4);
+    }
+
+    #main-action-button:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0, 245, 255, 0.6);
+    }
+
+    #main-action-button:disabled {
+      background: rgba(0, 245, 255, 0.2);
+      color: rgba(255, 255, 255, 0.3);
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+
+    .stage-selector-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+    }
+
+    #control-panel label {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+
+    #stage-dropdown {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--glass-border);
+      border-radius: 8px;
+      padding: 8px 12px;
+      color: var(--text-primary);
+      font-size: 0.8rem;
+      flex: 1;
+      min-width: 0;
+      cursor: pointer;
+    }
+
+    #stage-dropdown:focus {
+      outline: none;
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 10px rgba(0, 245, 255, 0.3);
+    }
+
+    #stage-dropdown option {
+      background: var(--bg-dark);
+      color: var(--text-primary);
+    }
+
+    #change-stage-button {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 8px 14px;
+      background: transparent;
+      border: 1px solid var(--glass-border);
+      border-radius: 8px;
+      color: var(--text-secondary);
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all 0.3s;
+      white-space: nowrap;
+    }
+
+    #change-stage-button:hover {
+      border-color: var(--accent-magenta);
+      color: var(--accent-magenta);
+      box-shadow: 0 0 10px rgba(255, 0, 170, 0.3);
+    }
+
+    #copyright {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.7rem;
+      color: var(--text-secondary);
+      opacity: 0.5;
+      text-align: center;
+    }
+
+    /* 辞書ツールチップのスタイル */
+    #dictionary-tooltip {
+      position: fixed;
+      display: none;
+      z-index: 10001;
+      pointer-events: none;
+    }
+
+    #dictionary-content {
+      background: var(--bg-card);
+      backdrop-filter: blur(20px);
+      border: 2px solid var(--accent-cyan);
+      border-radius: 12px;
+      padding: 15px;
+      max-width: 350px;
+      min-width: 250px;
+      box-shadow: 0 8px 32px rgba(0, 245, 255, 0.5),
+                  0 0 0 1px rgba(255, 255, 255, 0.1);
+      position: relative;
+      animation: tooltipFadeIn 0.2s ease-out;
+      pointer-events: auto;
+    }
+
+    @keyframes tooltipFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #dictionary-close {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      font-size: 1.3rem;
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: all 0.2s;
+      line-height: 1;
+    }
+
+    #dictionary-close:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--accent-cyan);
+      transform: rotate(90deg);
+    }
+
+    .dictionary-row {
+      margin-bottom: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    #dictionary-word {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+    }
+
+    #dictionary-pronunciation {
+      font-family: 'Times New Roman', serif;
+      font-size: 0.95rem;
+      color: var(--accent-magenta);
+      font-style: italic;
+    }
+
+    #dictionary-speaker {
+      background: transparent;
+      border: 1px solid var(--accent-cyan);
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-size: 0.9rem;
+      padding: 0;
+      margin: 0 4px;
+    }
+
+    #dictionary-speaker:hover {
+      background: rgba(0, 245, 255, 0.2);
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(0, 245, 255, 0.4);
+    }
+
+    #dictionary-speaker:active {
+      transform: scale(0.95);
+    }
+
+    #dictionary-speaker.playing {
+      animation: speakerPulse 0.6s ease-in-out infinite;
+    }
+
+    @keyframes speakerPulse {
+      0%, 100% {
+        box-shadow: 0 0 10px rgba(0, 245, 255, 0.4);
+      }
+      50% {
+        box-shadow: 0 0 20px rgba(0, 245, 255, 0.8);
+      }
+    }
+
+    #dictionary-pos {
+      display: inline-block;
+      background: rgba(0, 245, 255, 0.2);
+      color: var(--accent-cyan);
+      padding: 2px 8px;
+      border-radius: 8px;
+      font-size: 0.65rem;
+      border: 1px solid var(--accent-cyan);
+    }
+
+    #dictionary-meaning {
+      color: var(--text-primary);
+      font-size: 0.85rem;
+      line-height: 1.4;
+      white-space: pre-line;
+      flex: 1;
+    }
+
+    #dictionary-example {
+      background: rgba(0, 255, 136, 0.1);
+      border-left: 3px solid var(--accent-green);
+      padding: 8px;
+      border-radius: 5px;
+      color: var(--text-secondary);
+      font-size: 0.75rem;
+      line-height: 1.4;
+      font-style: italic;
+      white-space: pre-line;
+    }
+
+    #dictionary-source {
+      text-align: right;
+      font-size: 0.6rem;
+      color: var(--text-secondary);
+      margin-top: 6px;
+      opacity: 0.5;
+    }
+
+    #dictionary-loading {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--accent-cyan);
+      font-family: 'Orbitron', sans-serif;
+      font-size: 0.9rem;
+    }
+
+    .dictionary-loading-spinner {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border: 2px solid rgba(0, 245, 255, 0.3);
+      border-top-color: var(--accent-cyan);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 10px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .word-clickable {
+      cursor: pointer;
+      position: relative;
+      transition: all 0.2s;
+    }
+
+    .word-clickable:hover {
+      color: var(--accent-cyan);
+      transform: translateY(-2px);
+    }
+
+    .word-clickable:hover::after {
+      content: '📖';
+      position: absolute;
+      top: -20px;
+      right: -5px;
+      font-size: 0.8rem;
+    }
+
+    .rainbow-glow {
+      animation: rainbowGlow 1.5s linear infinite;
+    }
+
+    @keyframes rainbowGlow {
+      0% { filter: drop-shadow(0 0 40px #ff0000); }
+      17% { filter: drop-shadow(0 0 40px #ff8800); }
+      33% { filter: drop-shadow(0 0 40px #ffff00); }
+      50% { filter: drop-shadow(0 0 40px #00ff00); }
+      67% { filter: drop-shadow(0 0 40px #0088ff); }
+      83% { filter: drop-shadow(0 0 40px #8800ff); }
+      100% { filter: drop-shadow(0 0 40px #ff0000); }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 15px;
+      }
+
+
+
+      .glass-card {
+        padding: 25px;
+        border-radius: 16px;
+      }
+
+      #progress {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      #control-panel {
+        width: calc(100% - 40px);
+        gap: 12px;
+      }
+
+      #stage-dropdown {
+        width: 100%;
+      }
+      
+      .stage-selector-row {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="app-title"><div id="spreadsheet-name"></div></h1>
+    <div id="loading-message">LOADING...</div>
+
+    <div id="main-ui" style="display:none;">
+      <div id="stage-name"></div>
+
+      <div id="progress">
+        <p>#<span id="sentence-number">1</span></p>
+        <p>Step<span id="step-count">1</span></p>
+        <p>Stage<span id="current-stage">1</span></p>
+        <p>Max<span id="max-stage">1</span></p>
+      </div>
+
+      <div class="glass-card">
+        <div id="sentence"></div>
+        <div id="translation"></div>
+        <div id="recognized-words"></div>
+
+        <div id="recognition-panel">
+          <div id="recognition-status">認識中</div>
+          <button id="english-button" disabled>英文を聞く</button>
+        </div>
+      </div>
+
+      <div id="success-mark" class="feedback-overlay">◯</div>
+      <div id="try-again-mark" class="feedback-overlay">もう一度</div>
+      <div id="move-forward-mark" class="feedback-overlay">先に進みます</div>
+      <div id="stage-clear">ステージクリア!</div>
+      <div id="next-stage-info"></div>
+      
+      <!-- ★★★ 追加: 全課題終了画面 ★★★ -->
+      <div id="complete-screen">
+        <div id="complete-title">🎉 ALL COMPLETE! 🎉</div>
+        <div id="complete-message">おめでとうございます！<br>すべての課題をクリアしました！</div>
+        <div id="complete-stats"></div>
+        <button id="restart-button">最初からやり直す</button>
+      </div>
+
+      <div id="control-panel">
+        <div id="main-action-container">
+          <button id="main-action-button" disabled>スタート</button>
+        </div>
+        <div class="stage-selector-row">
+          <label for="stage-dropdown">ステージ:</label>
+          <select id="stage-dropdown"></select>
+          <button id="change-stage-button">変更</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="copyright">BGM by 効果音ラボ<br>
+  Copyright © Masaki Sarodo(2024) MIT license</div>
+
+  <!-- 辞書ツールチップ -->
+  <div id="dictionary-tooltip">
+    <div id="dictionary-content">
+      <button id="dictionary-close">×</button>
+      <div id="dictionary-loading" style="display: none;">
+        <div class="dictionary-loading-spinner"></div>
+        <div>検索中...</div>
+      </div>
+      <div id="dictionary-data" style="display: none;">
+        <div class="dictionary-row">
+          <div id="dictionary-word"></div>
+          <button id="dictionary-speaker" title="発音を聞く">🔊</button>
+          <div id="dictionary-pronunciation"></div>
+        </div>
+        <div class="dictionary-row">
+          <div id="dictionary-pos"></div>
+          <div id="dictionary-meaning"></div>
+        </div>
+        <div id="dictionary-example"></div>
+        <div id="dictionary-source"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2/dist/confetti.browser.min.js"></script>
+  <script>
+    let sentences = [];
+    let currentSentenceIndex = 1;
+    let recognizedWords = [];
+    let hiddenIndices = [];
+    let failedAttempts = 0;
+    let recognition;
+    let audio;
+    let stepCount = 1;
+    let maxStage = 1;
+    let totalSteps = 0;
+    let successCount = 0;
+    let currentStage = 1;
+    let rowNum;
+    let rowData;
+    let stageStep = 10;
+
+    let sentencesLoaded = false;
+    let accountLoaded = false;
+    let isRecognizing = false;
+    let suppressStartEnable = false;
+    let autoRestartPlanned = false;
+    let skipNextPrompt = false;
+    let isFirstStart = true;
+
+    const DIALOGUE_ENGLISH_BUTTON_MODE = "dialogueThenReply";
+    let recognitionErrorOccurred = false;   // 直近の認識で error が出たか
+    let canRestartFromStatus = false;       // 「認識再開ボタン」モード中かどうか
+
+
+
+    // ★★★ 短縮形・所有格対応のための追加コード ★★★
+    
+    // 短縮形の展開マップ
+    const CONTRACTIONS = {
+      "i'm": ["i", "am"],
+      "im": ["i", "am"],
+      "i've": ["i", "have"],
+      "i'll": ["i", "will"],
+      "i'd": ["i", "would", "had"],
+      "you're": ["you", "are"],
+      "you've": ["you", "have"],
+      "you'll": ["you", "will"],
+      "you'd": ["you", "would", "had"],
+      "he's": ["he", "is", "has"],
+      "she's": ["she", "is", "has"],
+      "it's": ["it", "is", "has"],
+      "we're": ["we", "are"],
+      "we've": ["we", "have"],
+      "we'll": ["we", "will"],
+      "we'd": ["we", "would", "had"],
+      "they're": ["they", "are"],
+      "they've": ["they", "have"],
+      "they'll": ["they", "will"],
+      "they'd": ["they", "would", "had"],
+      "that's": ["that", "is", "has"],
+      "there's": ["there", "is", "has"],
+      "here's": ["here", "is", "has"],
+      "what's": ["what", "is", "has"],
+      "who's": ["who", "is", "has"],
+      "where's": ["where", "is", "has"],
+      "when's": ["when", "is", "has"],
+      "why's": ["why", "is", "has"],
+      "how's": ["how", "is", "has"],
+      "let's": ["let", "us"],
+      "can't": ["can", "not", "cannot"],
+      "won't": ["will", "not"],
+      "don't": ["do", "not"],
+      "doesn't": ["does", "not"],
+      "didn't": ["did", "not"],
+      "isn't": ["is", "not"],
+      "aren't": ["are", "not"],
+      "wasn't": ["was", "not"],
+      "weren't": ["were", "not"],
+      "hasn't": ["has", "not"],
+      "haven't": ["have", "not"],
+      "hadn't": ["had", "not"],
+      "couldn't": ["could", "not"],
+      "wouldn't": ["would", "not"],
+      "shouldn't": ["should", "not"],
+      "mightn't": ["might", "not"],
+      "mustn't": ["must", "not"],
+      "needn't": ["need", "not"],
+      "ain't": ["is", "not", "are", "am"]
+    };
+
+    // 単語を正規化（句読点除去＋小文字化）
+    function normalizeWord(word) {
+      return word.toLowerCase().replace(/[.,!?;:"]/g, '');
+    }
+
+    // マッチング用の正規化された単語セットを生成
+    function createMatchSet(words) {
+      const set = new Set();
+      for (const word of words) {
+        const normalized = normalizeWord(word);
+        set.add(normalized);
+        set.add(normalized.replace(/'/g, '')); // アポストロフィなし
+        set.add(normalized.replace(/'s$/, '')); // 所有格なし
+        set.add(normalized.replace(/s'$/, 's')); // 複数形所有格
+        
+        // 短縮形の展開形も追加
+        if (CONTRACTIONS[normalized]) {
+          CONTRACTIONS[normalized].forEach(w => set.add(w));
+        }
+      }
+      return set;
+    }
+
+    // 英文の単語が認識結果にマッチするかチェック
+    function isWordMatched(targetWord, recognizedWordsSet) {
+      const normalized = normalizeWord(targetWord);
+      
+      // 直接マッチ
+      if (recognizedWordsSet.has(normalized)) return true;
+      if (recognizedWordsSet.has(normalized.replace(/'/g, ''))) return true;
+      
+      // 所有格の場合、ベース単語でマッチ
+      const withoutPossessive = normalized.replace(/'s$/, '').replace(/s'$/, 's');
+      if (recognizedWordsSet.has(withoutPossessive)) return true;
+      
+      // 短縮形の場合、展開形の全単語が含まれているかチェック
+      if (CONTRACTIONS[normalized]) {
+        const expansions = CONTRACTIONS[normalized];
+        // 展開形の最初の2単語がマッチすればOK（例：it's → it, is）
+        const mainExpansion = expansions.slice(0, 2);
+        if (mainExpansion.every(w => recognizedWordsSet.has(w))) return true;
+      }
+      
+      return false;
+    }
+
+    // ★★★ 追加コードここまで ★★★
+
+    // ★★★ 追加: Cookie読み書き機能 ★★★
+    let useLocalStorage = false; // GASが使えない場合のフラグ
+    
+    function setCookie(name, value, days) {
+      const expires = new Date();
+      expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+      document.cookie = `${name}=${encodeURIComponent(JSON.stringify(value))};expires=${expires.toUTCString()};path=/;SameSite=Strict`;
+    }
+    
+    function getCookie(name) {
+      const nameEQ = name + "=";
+      const cookies = document.cookie.split(';');
+      for (let i = 0; i < cookies.length; i++) {
+        let c = cookies[i].trim();
+        if (c.indexOf(nameEQ) === 0) {
+          try {
+            return JSON.parse(decodeURIComponent(c.substring(nameEQ.length)));
+          } catch (e) {
+            return null;
+          }
+        }
+      }
+      return null;
+    }
+    
+    function saveProgressToCookie() {
+      const progressData = {
+        currentSentenceIndex: currentSentenceIndex,
+        stepCount: stepCount,
+        currentStage: currentStage,
+        maxStage: maxStage,
+        totalSteps: totalSteps,
+        successCount: successCount
+      };
+      setCookie('shadowingProgress', progressData, 365); // 1年間保存
+    }
+    
+    function loadProgressFromCookie() {
+      const progressData = getCookie('shadowingProgress');
+      if (progressData) {
+        currentSentenceIndex = progressData.currentSentenceIndex || 1;
+        stepCount = progressData.stepCount || 1;
+        currentStage = progressData.currentStage || 1;
+        maxStage = progressData.maxStage || 1;
+        totalSteps = progressData.totalSteps || 0;
+        successCount = progressData.successCount || 0;
+        return true;
+      }
+      return false;
+    }
+
+    function playSound(targetSound) {
+      if (audio) {
+        audio.pause();
+        audio.currentTime = 0;
+      }
+      audio = new Audio(targetSound);
+      audio.play();
+      setTimeout(() => {
+        audio.pause();
+        audio.currentTime = 0;
+      }, 1000);
+    }
+
+    function fetchSentences() {
+      google.script.run.withSuccessHandler(function(data) {
+        sentences = data;
+        updateStageName();
+        sentencesLoaded = true;
+        maybeInitUI();
+      }).getTexts();
+      google.script.run.withSuccessHandler(setSpreadsheetName).getSpreadsheetName();
+    }
+
+    function setSpreadsheetName(name) {
+      document.getElementById('spreadsheet-name').innerText = name;
+    }
+
+    function speakSentence(sentence, lang, callback) {
+      const synthesis = window.speechSynthesis;
+      const voices = synthesis.getVoices() || [];
+      let selectedVoice = null;
+
+      // ▼ 可能なら、言語に合う voice を探す（見つからなくても OK）
+      if (lang === 'en-US') {
+        selectedVoice =
+          voices.find(v => v.lang === 'en-US' && v.name.toLowerCase().includes('google')) ||
+          voices.find(v => v.lang === 'en-US') ||
+          voices.find(v => v.lang.startsWith('en'));
+      } else if (lang === 'ja-JP') {
+        selectedVoice =
+          voices.find(v => v.lang === 'ja-JP') ||
+          voices.find(v => v.lang.startsWith('ja'));
+      }
+
+      const utterance = new SpeechSynthesisUtterance(sentence);
+      utterance.lang = lang;
+      if (selectedVoice) utterance.voice = selectedVoice;
+      utterance.onend = typeof callback === 'function' ? callback : () => {};
+
+      // ★ここが重要★
+      // - 以前キューに残っている発話を止める
+      // - その直後に必ず speak() する（voices.length が 0 でも）
+      try {
+        synthesis.cancel();
+      } catch (e) {
+        // 一部ブラウザでの例外防止（何もしない）
+      }
+
+      synthesis.speak(utterance);
+    }
+    function setRecognitionUIActive(active) {
+      const statusEl = document.getElementById('recognition-status');
+      if (!statusEl) return;
+
+      if (active) {
+        // 認識中
+        canRestartFromStatus = false;
+        statusEl.onclick = null;
+        statusEl.classList.remove('restart-ready');
+
+        statusEl.classList.add('active');
+        statusEl.textContent = '認識中';
+      } else {
+        // 認識停止中
+        statusEl.classList.remove('active');
+
+        // 「再開ボタンモード」でない時だけ「認識停止中」と表示
+        if (!canRestartFromStatus) {
+          statusEl.textContent = '認識停止中';
+          statusEl.onclick = null;
+          statusEl.classList.remove('restart-ready');
+        }
+      }
+    }
+
+
+
+
+    function isDialogueMode_(s) {
+      if (!s) return false;
+      if (typeof s.isDialogue !== "undefined") return !!s.isDialogue;
+      if (!s.readJapanese && s.readFirst && s.english && s.readFirst !== s.english) {
+        return true;
+      }
+      if (s.dialogueEnglish || s.dialogue || s.promptEnglish || s.prompt) return true;
+      if (s.replyEnglish || s.reply || s.responseEnglish || s.response) return true;
+      return false;
+    }
+
+    function getDialogueTexts_(s) {
+      let dialogueText = s.english || "";
+      let replyText = s.readFirst || "";
+      dialogueText = s.dialogueEnglish || s.dialogue || s.promptEnglish || s.prompt || dialogueText;
+      replyText = s.replyEnglish || s.reply || s.responseEnglish || s.response || replyText;
+      return { dialogueText, replyText };
+    }
+
+    function resumeRecognitionWithoutPrompt_() {
+      skipNextPrompt = true;
+      beginRecognitionOnly();
+    }
+
+    function speakEnglishSentence() {
+      const englishButton = document.getElementById('english-button');
+      if (!isRecognizing) return;
+
+      englishButton.disabled = true;
+
+      if (recognition) {
+        suppressStartEnable = true;
+        recognition.onresult = null;
+        recognition.onspeechend = null;
+        recognition.onend = null;
+        recognition.stop();
+        recognition = null;
+        setRecognitionUIActive(false); // ★追加（既存認識を止めた時）
+      }
+      isRecognizing = false;
+
+      const s = sentences[currentSentenceIndex - 1];
+      const { dialogueText, replyText } = getDialogueTexts_(s);
+
+      if (isDialogueMode_(s)) {
+        // 質問→返答の順で再生
+        speakSentence(replyText, 'en-US', () => {
+          if (dialogueText && dialogueText !== replyText) {
+            speakSentence(dialogueText, 'en-US', resumeRecognitionWithoutPrompt_);
+          } else {
+            resumeRecognitionWithoutPrompt_();
+          }
+        });
+        return;
+      }
+
+      speakSentence(s.english, 'en-US', resumeRecognitionWithoutPrompt_);
+    }
+
+    function displaySentence(sentence, translation, hiddenIndices) {
+      const sentenceElement = document.getElementById('sentence');
+      const translationElement = document.getElementById('translation');
+      sentenceElement.innerHTML = '';
+
+      const words = sentence.split(' ');
+
+      words.forEach((word, index) => {
+        const wordSpan = document.createElement('span');
+
+        if (hiddenIndices.includes(index + 1)) {
+          // 隠し単語の場合
+          wordSpan.textContent = word;
+          wordSpan.className = 'word hidden-word';
+          wordSpan.addEventListener('click', () => revealWordTemporarily(wordSpan));
+        } else {
+          // 通常単語の場合
+          wordSpan.textContent = word;
+          wordSpan.className = 'word word-clickable';
+
+          // 辞書検索機能を追加
+          wordSpan.addEventListener('click', (e) => {
+            e.stopPropagation();
+            lookupWordInDictionary(word, e);
+          });
+        }
+
+        sentenceElement.appendChild(wordSpan);
+      });
+
+      translationElement.textContent = translation;
+
+      // 辞書データを事前読み込み
+      preloadDictionaryData(words);
+    }
+
+
+    function revealWordTemporarily(span) {
+      span.classList.remove('hidden-word');
+      setTimeout(() => {
+        span.classList.add('hidden-word');
+      }, 1000);
+    }
+
+    function showControlPanel() {
+      document.getElementById('control-panel').style.display = 'flex';
+      document.getElementById('recognition-panel').style.display = 'none';
+      document.getElementById('sentence').style.display = 'none';
+      document.getElementById('translation').style.display = 'none';
+      document.getElementById('app-title').style.display = 'block';
+      // ★★★ 追加: glass-cardパネル自体も非表示 ★★★
+      document.querySelector('.glass-card').style.display = 'none';
+    }
+
+    function showRecognitionPanel() {
+      document.getElementById('control-panel').style.display = 'none';
+      document.getElementById('recognition-panel').style.display = 'flex';
+      document.getElementById('sentence').style.display = 'flex';
+      document.getElementById('translation').style.display = 'block';
+      document.getElementById('app-title').style.display = 'none';
+      // ★★★ 追加: glass-cardパネルを表示 ★★★
+      document.querySelector('.glass-card').style.display = 'block';
+    }
+
+    function hideRecognitionPanel() {
+      document.getElementById('recognition-panel').style.display = 'none';
+    }
+
+    function beginRecognitionOnly() {
+      const englishButton = document.getElementById('english-button');
+      
+      autoRestartPlanned = false;
+
+      if (isRecognizing) return;
+
+      if (recognition) {
+        recognition.onresult = null;
+        recognition.onspeechend = null;
+        recognition.onend = null;
+        recognition.stop();
+        recognition = null;
+      }
+
+      recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+      recognition.lang = 'en-US';
+      recognition.maxAlternatives = 10;
+
+      showRecognitionPanel();
+      isRecognizing = true;
+      recognition.start();
+      englishButton.disabled = false;
+      setRecognitionUIActive(true);  
+
+      setupRecognitionHandlers();
+    }
+
+    function startRecognition() {
+      const mainButton = document.getElementById('main-action-button');
+      const englishButton = document.getElementById('english-button');
+
+      autoRestartPlanned = false;
+
+      if (isRecognizing) return;
+
+      if (isFirstStart) {
+        isFirstStart = false;
+        mainButton.textContent = '次へ';
+      }
+
+      mainButton.disabled = true;
+
+      if (recognition) {
+        recognition.onresult = null;
+        recognition.onspeechend = null;
+        recognition.onend = null;
+        recognition.stop();
+        recognition = null;
+      }
+
+      recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+      recognition.lang = 'en-US';
+      recognition.maxAlternatives = 10;
+
+      const currentSentence = sentences[currentSentenceIndex - 1];
+      displaySentence(currentSentence.english, currentSentence.japanese, currentSentence.hiddenIndices);
+
+      const lang = currentSentence.readJapanese ? 'ja-JP' : 'en-US';
+      const sentenceToSpeak = currentSentence.readFirst;
+
+      // ★★★ 修正: 読み上げ開始時からプレイ中UIを表示 ★★★
+      document.querySelector('.glass-card').style.display = 'block';
+      document.getElementById('sentence').style.display = 'flex';
+      document.getElementById('translation').style.display = 'block';
+      document.getElementById('control-panel').style.display = 'none';
+      document.getElementById('app-title').style.display = 'none';
+      document.getElementById('recognition-panel').style.display = 'flex';
+      
+      // 読み上げ中は認識停止状態で表示（ボタンは無効）
+      setRecognitionUIActive(false);
+      englishButton.disabled = true;
+
+      const beginRecognition_ = () => {
+        isRecognizing = true;
+        recognition.start();
+        englishButton.disabled = false;
+        setRecognitionUIActive(true);  
+      };
+
+      if (skipNextPrompt) {
+        skipNextPrompt = false;
+        beginRecognition_();
+      } else {
+        speakSentence(sentenceToSpeak, lang, beginRecognition_);
+      }
+
+      setupRecognitionHandlers();
+    }
+    function showRecognitionRestartButton() {
+      const statusEl = document.getElementById('recognition-status');
+      if (!statusEl) return;
+
+      canRestartFromStatus = true;
+      statusEl.textContent = '認識再開';
+      statusEl.classList.add('restart-ready');
+
+      statusEl.onclick = () => {
+        if (!canRestartFromStatus) return;
+
+        // 再開ボタンを押したので通常モードに戻す
+        canRestartFromStatus = false;
+        statusEl.onclick = null;
+        statusEl.classList.remove('restart-ready');
+
+        // 無限読み上げ防止のため、次はプロンプトを読まずに「認識のみ再開」
+        resumeRecognitionWithoutPrompt_();
+      };
+    }
+
+
+      function setupRecognitionHandlers() {
+      const englishButton = document.getElementById('english-button');
+
+      recognition.onresult = function(event) {
+        // ★★★ 修正: 認識結果の処理を改良 ★★★
+        const spokenWords = event.results[0][0].transcript.toLowerCase().split(' ').map(normalizeWord);
+        recognizedWords = recognizedWords.concat(spokenWords);
+        updateMatchedWords();
+
+        if (allWordsMatched()) {
+          autoRestartPlanned = true;
+          failedAttempts = 0;
+          showSuccessMark();
+          successCount++;
+        } else {
+          failedAttempts++;
+
+          if (failedAttempts < 5) {
+            autoRestartPlanned = true;
+            showTryAgainMark();
+            setTimeout(() => {
+              isRecognizing = true;
+              englishButton.disabled = false;
+              setRecognitionUIActive(true);
+              recognition.start();
+            }, 1000);
+          } else {
+            failedAttempts = 0;
+            showMoveForwardMark();
+
+            // ★★★ 修正: ステージ終了判定を先に行う ★★★
+            setTimeout(() => {
+              if ((currentSentenceIndex) % stageStep === 0) {
+                autoRestartPlanned = false;
+                showStageClear();
+              } else {
+                autoRestartPlanned = true;
+                moveToNextSentence();
+              }
+            }, 1000);
+          }
+        }
+      };
+
+      recognition.onspeechend = function() {};
+
+      // ★追加: error ハンドラ
+      recognition.onerror = function(event) {
+        console.log('Speech recognition error:', event.error);
+        recognitionErrorOccurred = true;
+      };
+
+      recognition.onend = function() {
+        const mainButton = document.getElementById('main-action-button');
+        const englishButton = document.getElementById('english-button');
+
+        isRecognizing = false;
+        englishButton.disabled = true;
+
+        // まず UI 上は「停止」状態に
+        setRecognitionUIActive(false);
+
+        // ★ここがポイント★
+        // error が発生していた場合は「自動復旧せず、再開ボタンを出す」
+        if (recognitionErrorOccurred) {
+          recognitionErrorOccurred = false;
+          autoRestartPlanned = false;
+          suppressStartEnable = false;
+
+          showRecognitionRestartButton();
+          return;
+        }
+
+        // suppressStartEnable / autoRestartPlanned が true のときは、
+        // 別のロジック（もう一度・成功→次へ・ステージクリアなど）が
+        // すでに動いているので、何もしないで戻る。
+        if (suppressStartEnable || autoRestartPlanned) {
+          suppressStartEnable = false;
+          return;
+        }
+
+        // 通常の「一時停止（無音など）」の場合は、今まで通り自動復旧
+        beginRecognitionOnly();
+      };
+    }
+
+
+    function showMoveForwardMark() {
+      const moveForwardMark = document.getElementById('move-forward-mark');
+      moveForwardMark.style.display = 'block';
+      setTimeout(() => moveForwardMark.style.display = 'none', 1000);
+    }
+
+    // ★★★ 修正: updateMatchedWords関数を改良 ★★★
+    function updateMatchedWords() {
+      const targetWords = sentences[currentSentenceIndex - 1].english.split(' ');
+      const recognizedSet = createMatchSet(recognizedWords);
+      const sentenceElement = document.getElementById('sentence');
+      
+      sentenceElement.childNodes.forEach((wordSpan, index) => {
+        if (isWordMatched(targetWords[index], recognizedSet)) {
+          wordSpan.classList.add('matched');
+        }
+      });
+    }
+
+    // ★★★ 修正: allWordsMatched関数を改良 ★★★
+    function allWordsMatched() {
+      const targetWords = sentences[currentSentenceIndex - 1].english.split(' ');
+      const recognizedSet = createMatchSet(recognizedWords);
+      
+      return targetWords.every(word => isWordMatched(word, recognizedSet));
+    }
+
+    // ★★★ removePunctuation は normalizeWord に置き換え（互換性のため残す） ★★★
+    function removePunctuation(word) {
+      return normalizeWord(word);
+    }
+
+function showSuccessMark() {
+      const successMark = document.getElementById('success-mark');
+      successMark.classList.add('rainbow-glow');
+      successMark.style.display = 'block';
+
+      // 変更点1: ここにあった hideRecognitionPanel(); を削除しました。
+      
+      // 変更点2: 代わりにボタンを押せないように無効化します（連打防止・音声重複防止）
+      document.getElementById('english-button').disabled = true;
+
+      setTimeout(() => {
+        successMark.style.display = 'none';
+        successMark.classList.remove('rainbow-glow');
+        playFullSentence();
+      }, 1000);
+    }
+    function playFullSentence() {
+      const currentSentence = sentences[currentSentenceIndex-1];
+      displaySentence(currentSentence.english, currentSentence.japanese, []);
+      speakSentence(currentSentence.english, 'en-US', () => {
+        if ((currentSentenceIndex) % stageStep === 0) {
+          autoRestartPlanned = false;
+          // ★★★ 修正: 最後のステージかどうかチェック ★★★
+          if (currentSentenceIndex >= sentences.length) {
+            // 全課題終了
+            updateScore();
+            updateProgress();
+            sendRowData();
+            showCompleteScreen();
+          } else {
+            showStageClear();
+          }
+        } else {
+          moveToNextSentence();
+        }
+      });
+    }
+
+    function showTryAgainMark() {
+      const tryAgainMark = document.getElementById('try-again-mark');
+      tryAgainMark.style.display = 'block';
+      setTimeout(() => tryAgainMark.style.display = 'none', 1000);
+    }
+
+    function moveToNextSentence() {
+      updateScore();
+      updateProgress();
+      if (currentSentenceIndex <= sentences.length) {
+        recognizedWords = [];
+        
+        const currentSentence = sentences[currentSentenceIndex - 1];
+        displaySentence(currentSentence.english, currentSentence.japanese, currentSentence.hiddenIndices);
+        
+        const lang = currentSentence.readJapanese ? 'ja-JP' : 'en-US';
+        const sentenceToSpeak = currentSentence.readFirst;
+
+        speakSentence(sentenceToSpeak, lang, () => {
+          beginRecognitionOnly();
+        });
+      } else {
+        // ★★★ 全課題終了時の処理 ★★★
+        showCompleteScreen();
+      }
+    }
+
+    // ★★★ 追加: 全課題終了画面を表示する関数 ★★★
+    function showCompleteScreen() {
+      const completeScreen = document.getElementById('complete-screen');
+      const completeStats = document.getElementById('complete-stats');
+      
+      // 統計情報を表示
+      const accuracy = totalSteps > 0 ? Math.round((successCount / totalSteps) * 100) : 0;
+      completeStats.innerHTML = `
+        総ステップ数: ${totalSteps}<br>
+        成功回数: ${successCount}<br>
+        正答率: ${accuracy}%
+      `;
+      
+      // 画面を非表示にしてから終了画面を表示
+      document.getElementById('sentence').style.display = 'none';
+      document.getElementById('translation').style.display = 'none';
+      hideRecognitionPanel();
+      document.getElementById('control-panel').style.display = 'none';
+      
+      completeScreen.style.display = 'flex';
+      
+      // 豪華な紙吹雪エフェクト
+      launchCelebrationConfetti();
+    }
+
+    // ★★★ 追加: 豪華な紙吹雪エフェクト ★★★
+    function launchCelebrationConfetti() {
+      const duration = 5000;
+      const end = Date.now() + duration;
+      
+      const colors = ['#FFD700', '#FFA500', '#FF6B35', '#FF00AA', '#00F5FF', '#00FF88', '#FF4466'];
+      
+      (function frame() {
+        confetti({
+          particleCount: 7,
+          angle: 60,
+          spread: 55,
+          origin: { x: 0 },
+          colors: colors
+        });
+        confetti({
+          particleCount: 7,
+          angle: 120,
+          spread: 55,
+          origin: { x: 1 },
+          colors: colors
+        });
+        
+        if (Date.now() < end) {
+          requestAnimationFrame(frame);
+        }
+      }());
+      
+      // 中央から大きな爆発
+      setTimeout(() => {
+        confetti({
+          particleCount: 200,
+          spread: 100,
+          origin: { y: 0.5, x: 0.5 },
+          colors: colors
+        });
+      }, 500);
+      
+      setTimeout(() => {
+        confetti({
+          particleCount: 150,
+          spread: 120,
+          origin: { y: 0.6, x: 0.3 },
+          colors: colors
+        });
+      }, 1500);
+      
+      setTimeout(() => {
+        confetti({
+          particleCount: 150,
+          spread: 120,
+          origin: { y: 0.6, x: 0.7 },
+          colors: colors
+        });
+      }, 2500);
+    }
+
+    function updateScore(){
+      currentSentenceIndex++;
+      stepCount++;
+      totalSteps++;
+      currentStage = Math.floor((currentSentenceIndex - 1) / stageStep) + 1;
+      if (currentStage > maxStage) maxStage = currentStage;
+    }
+
+    function updateProgress() {
+      document.getElementById('sentence-number').innerText = currentSentenceIndex;
+      document.getElementById('step-count').innerText = stepCount;
+      document.getElementById('current-stage').innerText = currentStage;
+      document.getElementById('max-stage').innerText = maxStage;
+      addDataToRow(currentSentenceIndex, stepCount, currentStage, maxStage, totalSteps, successCount);
+      updateStageName();
+    }
+
+    function updateStageName() {
+      const currentSentence = sentences[(currentStage - 1) * stageStep];
+      const stageName = currentSentence ? `${currentSentence.english} ${currentSentence.stageSuffix}` : `Stage ${currentStage}`;
+      document.getElementById('stage-name').innerText = stageName;
+    }
+
+    function populateStageDropdown() {
+      const dropdown = document.getElementById('stage-dropdown');
+      dropdown.innerHTML = '';
+
+      for (let stage = 1; stage <= maxStage; stage++) {
+        const exampleSentence = sentences[(stage - 1) * stageStep];
+        if (!exampleSentence) continue;
+        const stageType = exampleSentence.readJapanese ? '和' : '英';
+        const option = document.createElement('option');
+        option.value = stage;
+        option.textContent = `Stage ${stage}: ${exampleSentence.english} (${stageType})`;
+        dropdown.appendChild(option);
+      }
+
+      dropdown.value = currentStage;
+    }
+
+    document.getElementById('change-stage-button').addEventListener('click', function() {
+      const selectedStage = document.getElementById('stage-dropdown').value;
+      currentStage = parseInt(selectedStage, 10);
+      currentSentenceIndex = (currentStage - 1) * stageStep + 1;
+      stepCount = 1;
+      updateProgress();
+      addDataToRow(currentSentenceIndex, stepCount, currentStage, maxStage, totalSteps, successCount);
+      sendRowData();
+      recognizedWords = [];
+      
+      showControlPanel();
+      const mainButton = document.getElementById('main-action-button');
+      mainButton.textContent = '次へ';
+      mainButton.disabled = false;
+    });
+
+    function showStageClear() {
+      const stageClear = document.getElementById('stage-clear');
+      const nextStageInfo = document.getElementById('next-stage-info');
+
+      const nextSentence = sentences[currentSentenceIndex];
+      const nextStageName = nextSentence ? nextSentence.english : "Next Stage";
+      const nextStageType = nextSentence ? (nextSentence.readJapanese ? '和' : '英') : '';
+      nextStageInfo.innerHTML = `次: ${nextStageName} (${nextStageType})`;
+
+      stageClear.style.display = 'block';
+      hideRecognitionPanel();
+
+      updateScore();
+      stepCount = 1;
+      updateProgress();
+      sendRowData();
+
+      confetti({ particleCount: 150, spread: 100, origin: { y: 0.6 }, colors: ['#00f5ff', '#ff00aa', '#00ff88'] });
+
+      setTimeout(() => {
+        stageClear.style.display = 'none';
+        nextStageInfo.style.display = 'block';
+        populateStageDropdown();
+        
+        showControlPanel();
+        const mainButton = document.getElementById('main-action-button');
+        mainButton.textContent = '次へ';
+        mainButton.disabled = false;
+        
+        setTimeout(() => {
+          nextStageInfo.style.display = 'none';
+        }, 2000);
+      }, 2000);
+    }
+
+// 修正箇所：ボタンクリック時の処理
+    document.getElementById('main-action-button').addEventListener('click', function() {
+      
+      // ★スマホ対策の追加コードここから★
+      // ボタンを押した瞬間に音声合成機能を「起こす」処理
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel(); // 待機中の音声をクリア
+        window.speechSynthesis.resume(); // Chromeなどで一時停止状態になっているのを解除
+      }
+      // ★スマホ対策の追加コードここまで★
+
+      recognizedWords = [];
+      startRecognition();
+    });
+
+    document.getElementById('english-button').addEventListener('click', function() {
+      speakEnglishSentence();
+    });
+
+    // ★★★ 追加: リスタートボタンのイベントリスナー ★★★
+    document.getElementById('restart-button').addEventListener('click', function() {
+      // 状態をリセット
+      currentSentenceIndex = 1;
+      stepCount = 1;
+      currentStage = 1;
+      totalSteps = 0;
+      successCount = 0;
+      recognizedWords = [];
+      failedAttempts = 0;
+      isFirstStart = true;
+      
+      // 進捗を更新
+      updateProgress();
+      addDataToRow(currentSentenceIndex, stepCount, currentStage, maxStage, totalSteps, successCount);
+      sendRowData();
+      
+      // 終了画面を非表示
+      document.getElementById('complete-screen').style.display = 'none';
+      
+      // コントロールパネルを表示
+      showControlPanel();
+      const mainButton = document.getElementById('main-action-button');
+      mainButton.textContent = 'スタート';
+      mainButton.disabled = false;
+      
+      populateStageDropdown();
+    });
+
+    function handleAccount() {
+      // ★★★ 修正: google.script.runが存在するかチェック ★★★
+      if (typeof google !== 'undefined' && google.script && google.script.run) {
+        google.script.run
+          .withSuccessHandler(findRow)
+          .withFailureHandler(fallbackToCookie)
+          .getAccount();
+      } else {
+        // GAS環境外の場合はCookieを使用
+        fallbackToCookie();
+      }
+    }
+
+    // ★★★ 追加: Cookieフォールバック処理 ★★★
+    function fallbackToCookie() {
+      console.log('Using cookie for progress storage');
+      useLocalStorage = true;
+      loadProgressFromCookie();
+      updateProgress();
+      accountLoaded = true;
+      maybeInitUI();
+    }
+
+    function findRow(account) {
+      // ★★★ 修正: アカウントがnullまたは空の場合はCookieにフォールバック ★★★
+      if (!account) {
+        fallbackToCookie();
+        return;
+      }
+      google.script.run
+        .withSuccessHandler(setRowNum)
+        .withFailureHandler(fallbackToCookie)
+        .findAccountRow(account);
+    }
+
+    function setRowNum(row) {
+      // ★★★ 修正: rowがnullまたは無効な場合はCookieにフォールバック ★★★
+      if (!row) {
+        fallbackToCookie();
+        return;
+      }
+      rowNum = row;
+      google.script.run
+        .withSuccessHandler(setRowData)
+        .withFailureHandler(fallbackToCookie)
+        .getRowData(rowNum);
+    }
+
+    function setRowData(row) {
+      // ★★★ 修正: rowがnullまたは無効な場合はCookieにフォールバック ★★★
+      if (!row) {
+        fallbackToCookie();
+        return;
+      }
+      rowData = row;
+      currentSentenceIndex = rowData[1] || 1;
+      stepCount = rowData[2] || 1;
+      currentStage = rowData[3] || 1;
+      maxStage = rowData[4] || 1;
+      totalSteps = rowData[5] || 0;
+      successCount = rowData[6] || 0;
+
+      updateProgress();
+      accountLoaded = true;
+      maybeInitUI();
+    }
+
+    function addDataToRow(currentSentenceIndex, stepCount, currentStage, maxStage, totalSteps, successCount) {
+      // ★★★ 修正: useLocalStorageの場合はCookieに保存 ★★★
+      if (useLocalStorage) {
+        saveProgressToCookie();
+        return;
+      }
+      
+      if (!rowData) {
+        // rowDataがない場合はCookieにフォールバック
+        saveProgressToCookie();
+        return;
+      }
+      rowData[1] = currentSentenceIndex;
+      rowData[2] = stepCount;
+      rowData[3] = currentStage;
+      rowData[4] = maxStage;
+      rowData[5] = totalSteps;
+      rowData[6] = successCount;
+    }
+
+    function sendRowData() {
+      // ★★★ 修正: useLocalStorageフラグに応じて保存先を切り替え ★★★
+      if (useLocalStorage) {
+        saveProgressToCookie();
+      } else if (rowNum && rowData) {
+        google.script.run.withSuccessHandler().updateRowData(rowNum, rowData);
+      }
+    }
+
+    function maybeInitUI() {
+      if (sentencesLoaded && accountLoaded) {
+        const mainUI = document.getElementById('main-ui');
+        const loadingMessage = document.getElementById('loading-message');
+
+        mainUI.style.display = 'block';
+        if (loadingMessage) loadingMessage.style.display = 'none';
+        document.getElementById('copyright').style.display = 'block';
+
+        showControlPanel();
+        const mainButton = document.getElementById('main-action-button');
+        mainButton.textContent = 'スタート';
+        mainButton.disabled = false;
+
+        populateStageDropdown();
+      }
+    }
+
+    // 辞書機能
+    let currentTooltipWord = null;
+    let currentDictionaryWord = '';
+    let dictionaryCache = {}; // 辞書データのキャッシュ
+
+    function playDictionaryWord() {
+      if (!currentDictionaryWord) return;
+
+      const speakerBtn = document.getElementById('dictionary-speaker');
+      speakerBtn.classList.add('playing');
+
+      speakSentence(currentDictionaryWord, 'en-US', () => {
+        speakerBtn.classList.remove('playing');
+      });
+    }
+
+    // 辞書データを事前読み込みする関数
+    function preloadDictionaryData(words) {
+      // GAS環境でない場合は何もしない
+      if (typeof google === 'undefined' || !google.script || !google.script.run) {
+        console.log('Google script not available for preloading');
+        return;
+      }
+
+      words.forEach(word => {
+        const cleanWord = normalizeWord(word);
+
+        // 既にキャッシュにある場合はスキップ
+        if (dictionaryCache[cleanWord]) {
+          console.log(`Skipping ${cleanWord} - already in cache`);
+          return;
+        }
+
+        console.log(`Preloading dictionary data for: ${cleanWord}`);
+
+        // 辞書データを非同期で読み込み
+        google.script.run
+          .withSuccessHandler(function(result) {
+            // キャッシュに保存
+            dictionaryCache[cleanWord] = result;
+            console.log(`Successfully preloaded ${cleanWord}:`, result);
+          })
+          .withFailureHandler(function(error) {
+            // エラーの場合はキャッシュにエラー情報を保存
+            console.error(`Failed to preload ${cleanWord}:`, error);
+            dictionaryCache[cleanWord] = { error: true, message: error };
+          })
+          .lookupWord(cleanWord);
+      });
+    }
+
+    function lookupWordInDictionary(word, event) {
+      console.log(`Looking up word: "${word}"`);
+
+      const tooltip = document.getElementById('dictionary-tooltip');
+      const loading = document.getElementById('dictionary-loading');
+      const data = document.getElementById('dictionary-data');
+
+      // 同じ単語を再度クリックした場合は閉じる
+      if (currentTooltipWord === word && tooltip.style.display === 'block') {
+        console.log('Same word clicked again, closing dictionary');
+        closeDictionary();
+        return;
+      }
+
+      currentTooltipWord = word;
+
+      // クリックした単語の位置を取得
+      const rect = event.target.getBoundingClientRect();
+
+      // 単語を正規化（句読点を除去）
+      const cleanWord = normalizeWord(word);
+      console.log(`Normalized word: "${cleanWord}"`);
+
+      // キャッシュにデータがある場合は即座に表示
+      if (dictionaryCache[cleanWord]) {
+        console.log('Found in cache:', dictionaryCache[cleanWord]);
+        const cachedData = dictionaryCache[cleanWord];
+
+        if (cachedData.error) {
+          // キャッシュにエラーがある場合
+          console.error('Cached error:', cachedData.message);
+          loading.style.display = 'block';
+          data.style.display = 'none';
+          tooltip.style.display = 'block';
+          positionTooltip(tooltip, rect);
+          handleDictionaryError(cachedData.message);
+        } else {
+          // キャッシュから即座に表示
+          console.log('Displaying from cache');
+          loading.style.display = 'none';
+          data.style.display = 'block';
+          tooltip.style.display = 'block';
+          positionTooltip(tooltip, rect);
+          displayDictionaryResult(cachedData);
+        }
+        return;
+      }
+
+      console.log('Not in cache, fetching from server...');
+
+      // キャッシュにない場合はローディング表示
+      loading.style.display = 'block';
+      data.style.display = 'none';
+      tooltip.style.display = 'block';
+      positionTooltip(tooltip, rect);
+
+      // GASの辞書検索関数を呼び出し
+      if (typeof google !== 'undefined' && google.script && google.script.run) {
+        console.log('Calling google.script.run.lookupWord...');
+        google.script.run
+          .withSuccessHandler(function(result) {
+            console.log('Received result from server:', result);
+            // キャッシュに保存してから表示
+            dictionaryCache[cleanWord] = result;
+            displayDictionaryResult(result);
+          })
+          .withFailureHandler(function(error) {
+            console.error('Server error:', error);
+            // エラーをキャッシュに保存してから表示
+            dictionaryCache[cleanWord] = { error: true, message: error };
+            handleDictionaryError(error);
+          })
+          .lookupWord(cleanWord);
+      } else {
+        console.error('Google script not available');
+        // GAS環境外の場合はエラー表示
+        handleDictionaryError('辞書機能はGAS環境でのみ利用可能です');
+      }
+    }
+
+    function positionTooltip(tooltip, wordRect) {
+      const tooltipContent = tooltip.querySelector('#dictionary-content');
+      const viewportWidth = window.innerWidth;
+      const viewportHeight = window.innerHeight;
+
+      // 一時的に表示して高さを取得
+      tooltip.style.visibility = 'hidden';
+      tooltip.style.display = 'block';
+      const tooltipHeight = tooltipContent.offsetHeight;
+      const tooltipWidth = tooltipContent.offsetWidth;
+      tooltip.style.visibility = 'visible';
+
+      let top, left;
+
+      // 単語の上に表示できるか確認
+      if (wordRect.top - tooltipHeight - 10 > 0) {
+        // 単語の上に表示
+        top = wordRect.top - tooltipHeight - 10;
+      } else {
+        // 単語の下に表示
+        top = wordRect.bottom + 10;
+      }
+
+      // 水平位置を調整（画面からはみ出さないように）
+      left = wordRect.left + (wordRect.width / 2) - (tooltipWidth / 2);
+
+      if (left < 10) {
+        left = 10;
+      } else if (left + tooltipWidth > viewportWidth - 10) {
+        left = viewportWidth - tooltipWidth - 10;
+      }
+
+      // 垂直位置の最終調整
+      if (top + tooltipHeight > viewportHeight - 10) {
+        top = viewportHeight - tooltipHeight - 10;
+      }
+      if (top < 10) {
+        top = 10;
+      }
+
+      tooltip.style.top = top + 'px';
+      tooltip.style.left = left + 'px';
+    }
+
+    function displayDictionaryResult(result) {
+      console.log('Displaying dictionary result:', result);
+
+      const loading = document.getElementById('dictionary-loading');
+      const data = document.getElementById('dictionary-data');
+
+      loading.style.display = 'none';
+      data.style.display = 'block';
+
+      // 現在の単語を保存（音声再生用）
+      currentDictionaryWord = result.word || '';
+
+      document.getElementById('dictionary-word').textContent = result.word || '';
+      document.getElementById('dictionary-pronunciation').textContent = result.pronunciation || '';
+
+      const posEl = document.getElementById('dictionary-pos');
+      if (result.partOfSpeech) {
+        posEl.textContent = result.partOfSpeech;
+        posEl.style.display = 'inline-block';
+      } else {
+        posEl.style.display = 'none';
+      }
+
+      document.getElementById('dictionary-meaning').textContent = result.meaning || '';
+
+      const exampleEl = document.getElementById('dictionary-example');
+      if (result.example && result.example.trim()) {
+        exampleEl.textContent = result.example;
+        exampleEl.style.display = 'block';
+      } else {
+        exampleEl.style.display = 'none';
+      }
+
+      const sourceText = result.source === 'local' ? 'ローカル辞書' :
+                        result.source === 'api' ? 'オンライン辞書' :
+                        result.source === 'none' ? '辞書なし' : '';
+      console.log('Dictionary source:', result.source, '→', sourceText);
+      document.getElementById('dictionary-source').textContent = sourceText;
+    }
+
+    function handleDictionaryError(error) {
+      const loading = document.getElementById('dictionary-loading');
+      const data = document.getElementById('dictionary-data');
+
+      loading.style.display = 'none';
+      data.style.display = 'block';
+
+      document.getElementById('dictionary-word').textContent = 'エラー';
+      document.getElementById('dictionary-pronunciation').textContent = '';
+      document.getElementById('dictionary-pos').style.display = 'none';
+      document.getElementById('dictionary-meaning').textContent = '辞書の取得に失敗しました。\n' + error;
+      document.getElementById('dictionary-example').style.display = 'none';
+      document.getElementById('dictionary-source').textContent = '';
+    }
+
+    function closeDictionary() {
+      document.getElementById('dictionary-tooltip').style.display = 'none';
+      currentTooltipWord = null;
+    }
+
+    // 辞書ツールチップのイベントリスナー
+    document.getElementById('dictionary-close').addEventListener('click', closeDictionary);
+
+    // 辞書ツールチップのスピーカーボタンにイベントリスナーを追加
+    document.getElementById('dictionary-speaker').addEventListener('click', playDictionaryWord);
+
+    // 外側をクリックしたら閉じる
+    document.addEventListener('click', function(e) {
+      const tooltip = document.getElementById('dictionary-tooltip');
+      const tooltipContent = document.getElementById('dictionary-content');
+
+      if (tooltip.style.display === 'block' &&
+          !tooltipContent.contains(e.target) &&
+          !e.target.classList.contains('word-clickable')) {
+        closeDictionary();
+      }
+    });
+
+    window.onload = function() {
+      fetchSentences();
+      handleAccount();
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H083.md",
+  "audio": "高校生編/suno_ready/generated/audio/H083/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 136.18,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.005,
+  "expected_words": 200,
+  "transcribed_words": 201,
+  "matched_words": 199,
+  "coverage": 0.995,
+  "precision": 0.99,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 199,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 85,
+      "length": 1,
+      "words": [
+        "truth"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 85,
+      "actual_start": 85,
+      "expected": [
+        "truth"
+      ],
+      "actual": [
+        "truths"
+      ],
+      "actual_confidence": 0.561,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 200,
+      "actual_start": 200,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.4592
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "Cinema is one of the newest of all the arts Born at the start of the 20th century In just over a hundred years Film has become the center of all entertainment The power of cinema lies in recreating a story before our eyes A dramatic scene shakes the heart of the audience And a comedy creates laughter A great film presents social issues in a way that fascinates and makes the viewer think By retelling historical events from a creative angle It delivers emotional truths that a textbook cannot Film critics evaluate a work from many sides Awards such as the Academy Awards have served To make the quality of films known to the world Watching a film is not mere amusement In a dark theater, we relive the life of another What impresses us is not only the beauty of the images It is because the choices and conflicts of the characters Throw questions at our own way of living In the digital age, the way films are made and watched has changed But the essence to move the human heart through story Has not changed one bit since cinema Was born with such enthusiasm A century ago you",
+  "segments": [
+    {
+      "start": 10.8,
+      "end": 14.68,
+      "text": "Cinema is one of the newest of all the arts"
+    },
+    {
+      "start": 14.68,
+      "end": 17.5,
+      "text": "Born at the start of the 20th century"
+    },
+    {
+      "start": 19.1,
+      "end": 21.86,
+      "text": "In just over a hundred years"
+    },
+    {
+      "start": 21.86,
+      "end": 25.6,
+      "text": "Film has become the center of all entertainment"
+    },
+    {
+      "start": 25.6,
+      "end": 33.82,
+      "text": "The power of cinema lies in recreating a story before our eyes"
+    },
+    {
+      "start": 36.72,
+      "end": 41.1,
+      "text": "A dramatic scene shakes the heart of the audience"
+    },
+    {
+      "start": 41.1,
+      "end": 43.6,
+      "text": "And a comedy creates laughter"
+    },
+    {
+      "start": 45.1,
+      "end": 51.8,
+      "text": "A great film presents social issues in a way that fascinates and makes the viewer think"
+    },
+    {
+      "start": 51.8,
+      "end": 56.62,
+      "text": "By retelling historical events from a creative angle"
+    },
+    {
+      "start": 56.62,
+      "end": 60.64,
+      "text": "It delivers emotional truths that a textbook cannot"
+    },
+    {
+      "start": 63.26,
+      "end": 67.42,
+      "text": "Film critics evaluate a work from many sides"
+    },
+    {
+      "start": 67.42,
+      "end": 70.36,
+      "text": "Awards such as the Academy Awards have served"
+    },
+    {
+      "start": 70.36,
+      "end": 73.86,
+      "text": "To make the quality of films known to the world"
+    },
+    {
+      "start": 73.86,
+      "end": 77.18,
+      "text": "Watching a film is not mere amusement"
+    },
+    {
+      "start": 77.18,
+      "end": 83.78,
+      "text": "In a dark theater, we relive the life of another"
+    },
+    {
+      "start": 83.78,
+      "end": 88.46,
+      "text": "What impresses us is not only the beauty of the images"
+    },
+    {
+      "start": 88.46,
+      "end": 93.06,
+      "text": "It is because the choices and conflicts of the characters"
+    },
+    {
+      "start": 93.06,
+      "end": 98.24,
+      "text": "Throw questions at our own way of living"
+    },
+    {
+      "start": 98.24,
+      "end": 106.16,
+      "text": "In the digital age, the way films are made and watched has changed"
+    },
+    {
+      "start": 108.08,
+      "end": 112.92,
+      "text": "But the essence to move the human heart through story"
+    },
+    {
+      "start": 112.92,
+      "end": 117.02,
+      "text": "Has not changed one bit since cinema"
+    },
+    {
+      "start": 117.02,
+      "end": 121.14,
+      "text": "Was born with such enthusiasm"
+    },
+    {
+      "start": 123.86,
+      "end": 127.02,
+      "text": "A century ago"
+    },
+    {
+      "start": 136.16,
+      "end": 136.18,
+      "text": "you"
+    }
+  ]
+}

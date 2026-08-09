@@ -1,0 +1,238 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H108.md",
+  "audio": "高校生編/suno_ready/generated/audio/H108/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 163.9,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 187,
+  "transcribed_words": 187,
+  "matched_words": 183,
+  "coverage": 0.9786,
+  "precision": 0.9786,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 186,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 151,
+      "length": 2,
+      "words": [
+        "has",
+        "stopped"
+      ]
+    },
+    {
+      "start": 43,
+      "length": 1,
+      "words": [
+        "drop"
+      ]
+    },
+    {
+      "start": 63,
+      "length": 1,
+      "words": [
+        "scene"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 43,
+      "actual_start": 43,
+      "expected": [
+        "drop"
+      ],
+      "actual": [
+        "dropped"
+      ],
+      "actual_confidence": 0.9961,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 63,
+      "actual_start": 63,
+      "expected": [
+        "scene"
+      ],
+      "actual": [
+        "sea"
+      ],
+      "actual_confidence": 0.9731,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 115,
+      "actual_start": 115,
+      "expected": [],
+      "actual": [
+        "lost"
+      ],
+      "actual_confidence": 0.7603
+    },
+    {
+      "expected_start": 176,
+      "actual_start": 175,
+      "expected": [],
+      "actual": [
+        "when"
+      ],
+      "actual_confidence": 0.4456
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 151,
+      "actual_start": 152,
+      "expected": [
+        "has",
+        "stopped"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "On the battlefield, there was a fear that no movie can convey. An armed unit advanced through the forest. Everyone held their breath. Suddenly, from the front, the sound of a blast echoed. The commander gave orders in a low voice. Scatter. Everyone dropped to the ground. Bullets flew between the trees, combat began. Beside a young soldier, a comrade fell A bloody sea spread before them Minutes later, the shooting stopped And the area was wrapped in an uncanny silence The soldiers, trembling, rose to their feet Who had survived, who had been lost The tragedy of war is the accumulation of such moments Even the distinction between friend and enemy Is sometimes lost Lost in confusion Soldiers who return from the battlefield Are haunted by those memories For life Some develop PTSD or depression And some are driven to suicide The wounds of war remain deep long after the shooting There are no winners in war, a veteran once said Both victory and defeat give birth to the same grief in the end When will the day ever come When humanity can truly abolish war?",
+  "segments": [
+    {
+      "start": 15.9,
+      "end": 21.26,
+      "text": "On the battlefield, there was a fear that no movie can convey."
+    },
+    {
+      "start": 23.06,
+      "end": 25.8,
+      "text": "An armed unit advanced through the forest."
+    },
+    {
+      "start": 27.36,
+      "end": 28.74,
+      "text": "Everyone held their breath."
+    },
+    {
+      "start": 30.68,
+      "end": 35.52,
+      "text": "Suddenly, from the front, the sound of a blast echoed."
+    },
+    {
+      "start": 37.34,
+      "end": 39.42,
+      "text": "The commander gave orders in a low voice."
+    },
+    {
+      "start": 40.52,
+      "end": 41.4,
+      "text": "Scatter."
+    },
+    {
+      "start": 43.88,
+      "end": 46.42,
+      "text": "Everyone dropped to the ground."
+    },
+    {
+      "start": 49.0,
+      "end": 52.44,
+      "text": "Bullets flew between the trees, combat began."
+    },
+    {
+      "start": 52.44,
+      "end": 65.5,
+      "text": "Beside a young soldier, a comrade fell A bloody sea spread before them"
+    },
+    {
+      "start": 68.36,
+      "end": 76.42,
+      "text": "Minutes later, the shooting stopped And the area was wrapped in an uncanny silence"
+    },
+    {
+      "start": 76.42,
+      "end": 83.98,
+      "text": "The soldiers, trembling, rose to their feet"
+    },
+    {
+      "start": 83.98,
+      "end": 89.22,
+      "text": "Who had survived, who had been lost"
+    },
+    {
+      "start": 89.22,
+      "end": 97.0,
+      "text": "The tragedy of war is the accumulation of such moments"
+    },
+    {
+      "start": 97.0,
+      "end": 102.1,
+      "text": "Even the distinction between friend and enemy"
+    },
+    {
+      "start": 102.1,
+      "end": 105.42,
+      "text": "Is sometimes lost"
+    },
+    {
+      "start": 105.42,
+      "end": 108.54,
+      "text": "Lost in confusion"
+    },
+    {
+      "start": 111.42,
+      "end": 114.34,
+      "text": "Soldiers who return from the battlefield"
+    },
+    {
+      "start": 114.34,
+      "end": 118.66,
+      "text": "Are haunted by those memories"
+    },
+    {
+      "start": 120.42,
+      "end": 121.0,
+      "text": "For life"
+    },
+    {
+      "start": 124.42,
+      "end": 126.94,
+      "text": "Some develop PTSD or depression"
+    },
+    {
+      "start": 126.94,
+      "end": 129.72,
+      "text": "And some are driven to suicide"
+    },
+    {
+      "start": 130.42,
+      "end": 134.58,
+      "text": "The wounds of war remain deep long after the shooting"
+    },
+    {
+      "start": 136.04,
+      "end": 140.88,
+      "text": "There are no winners in war, a veteran once said"
+    },
+    {
+      "start": 142.04,
+      "end": 151.0,
+      "text": "Both victory and defeat give birth to the same grief in the end"
+    },
+    {
+      "start": 154.46,
+      "end": 157.84,
+      "text": "When will the day ever come"
+    },
+    {
+      "start": 157.84,
+      "end": 163.9,
+      "text": "When humanity can truly abolish war?"
+    }
+  ]
+}

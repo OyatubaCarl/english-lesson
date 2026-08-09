@@ -1,0 +1,247 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H056.md",
+  "audio": "高校生編/suno_ready/generated/audio/H056/candidate3-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 133.38,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.011,
+  "expected_words": 182,
+  "transcribed_words": 184,
+  "matched_words": 179,
+  "coverage": 0.9835,
+  "precision": 0.9728,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 181,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 47,
+      "length": 1,
+      "words": [
+        "investigative"
+      ]
+    },
+    {
+      "start": 71,
+      "length": 1,
+      "words": [
+        "that"
+      ]
+    },
+    {
+      "start": 91,
+      "length": 1,
+      "words": [
+        "authorities"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 47,
+      "actual_start": 47,
+      "expected": [
+        "investigative"
+      ],
+      "actual": [
+        "invest"
+      ],
+      "actual_confidence": 0.9404,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 71,
+      "actual_start": 71,
+      "expected": [
+        "that"
+      ],
+      "actual": [
+        "it"
+      ],
+      "actual_confidence": 0.3767,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 91,
+      "actual_start": 91,
+      "expected": [
+        "authorities"
+      ],
+      "actual": [
+        "authority",
+        "is"
+      ],
+      "actual_confidence": 0.9397,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 182,
+      "actual_start": 183,
+      "expected": [],
+      "actual": [
+        "bye"
+      ],
+      "actual_confidence": 0.1399
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "In a democratic society, the press has been called the fourth estate Alongside the legislative, the executive, and the judicial It is one of the pillars that supports society Journalists carry the role of revealing wrongdoing In government and business And passing that on to the citizens Invest reporting has often been the trigger That has changed society In 1972, during the Watergate scandal Two young reporters helped expose abuses of power It led to the American president's resignation That was an example of how the press can hold Even the highest authority is accountable In our time, however, the reliability of information Has become a great challenge Information sent out without checking the source Deliberate disinformation These can twist the judgment of society Under dictatorships in various countries Censorship is common And it is not rare for journalists to be imprisoned Press freedom is not taken for granted in every country As receivers of information We must develop the ability to judge What is a reliable source To protect the freedom of the press Is in the end To protect our own freedom Bye.",
+  "segments": [
+    {
+      "start": 9.6,
+      "end": 15.3,
+      "text": "In a democratic society, the press has been called the fourth estate"
+    },
+    {
+      "start": 15.3,
+      "end": 20.4,
+      "text": "Alongside the legislative, the executive, and the judicial"
+    },
+    {
+      "start": 20.4,
+      "end": 25.26,
+      "text": "It is one of the pillars that supports society"
+    },
+    {
+      "start": 27.44,
+      "end": 31.72,
+      "text": "Journalists carry the role of revealing wrongdoing"
+    },
+    {
+      "start": 31.72,
+      "end": 33.8,
+      "text": "In government and business"
+    },
+    {
+      "start": 33.8,
+      "end": 37.18,
+      "text": "And passing that on to the citizens"
+    },
+    {
+      "start": 37.18,
+      "end": 42.3,
+      "text": "Invest reporting has often been the trigger"
+    },
+    {
+      "start": 42.3,
+      "end": 46.66,
+      "text": "That has changed society"
+    },
+    {
+      "start": 50.7,
+      "end": 54.88,
+      "text": "In 1972, during the Watergate scandal"
+    },
+    {
+      "start": 54.88,
+      "end": 58.9,
+      "text": "Two young reporters helped expose abuses of power"
+    },
+    {
+      "start": 58.9,
+      "end": 63.54,
+      "text": "It led to the American president's resignation"
+    },
+    {
+      "start": 63.54,
+      "end": 68.56,
+      "text": "That was an example of how the press can hold"
+    },
+    {
+      "start": 68.56,
+      "end": 71.84,
+      "text": "Even the highest authority is accountable"
+    },
+    {
+      "start": 73.18,
+      "end": 78.08,
+      "text": "In our time, however, the reliability of information"
+    },
+    {
+      "start": 78.08,
+      "end": 80.48,
+      "text": "Has become a great challenge"
+    },
+    {
+      "start": 80.48,
+      "end": 85.54,
+      "text": "Information sent out without checking the source"
+    },
+    {
+      "start": 85.54,
+      "end": 88.48,
+      "text": "Deliberate disinformation"
+    },
+    {
+      "start": 90.16,
+      "end": 94.24,
+      "text": "These can twist the judgment of society"
+    },
+    {
+      "start": 96.64,
+      "end": 99.9,
+      "text": "Under dictatorships in various countries"
+    },
+    {
+      "start": 99.9,
+      "end": 101.86,
+      "text": "Censorship is common"
+    },
+    {
+      "start": 101.86,
+      "end": 106.26,
+      "text": "And it is not rare for journalists to be imprisoned"
+    },
+    {
+      "start": 106.26,
+      "end": 111.34,
+      "text": "Press freedom is not taken for granted in every country"
+    },
+    {
+      "start": 111.34,
+      "end": 114.72,
+      "text": "As receivers of information"
+    },
+    {
+      "start": 114.72,
+      "end": 118.34,
+      "text": "We must develop the ability to judge"
+    },
+    {
+      "start": 118.34,
+      "end": 121.36,
+      "text": "What is a reliable source"
+    },
+    {
+      "start": 121.36,
+      "end": 125.92,
+      "text": "To protect the freedom of the press"
+    },
+    {
+      "start": 125.92,
+      "end": 128.26,
+      "text": "Is in the end"
+    },
+    {
+      "start": 128.26,
+      "end": 132.28,
+      "text": "To protect our own freedom"
+    },
+    {
+      "start": 132.28,
+      "end": 133.38,
+      "text": "Bye."
+    }
+  ]
+}

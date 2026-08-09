@@ -1,0 +1,970 @@
+{
+  "lesson": "H082",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h082_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H082/candidate1-full.mp3",
+  "source_audio_sha256": "69c9ce75a133924264d9ae6a29a3477b9e55e8e87de8257293b3970b3b3d9b7b",
+  "bpm": 96.0,
+  "exact_word_match": true,
+  "word_count": 143,
+  "line_count": 12,
+  "first_word_start": 1.492,
+  "last_word_end": 79.119,
+  "lines": [
+    {
+      "line": 1,
+      "english": "A small electronics company was founded thirty years ago in a regional city.",
+      "word_timings": [
+        {
+          "word": "A",
+          "display_index": 0,
+          "start": 1.492,
+          "end": 1.58
+        },
+        {
+          "word": "small",
+          "display_index": 1,
+          "start": 1.58,
+          "end": 1.92
+        },
+        {
+          "word": "electronics",
+          "display_index": 2,
+          "start": 1.92,
+          "end": 2.721
+        },
+        {
+          "word": "company",
+          "display_index": 3,
+          "start": 2.721,
+          "end": 3.341
+        },
+        {
+          "word": "was",
+          "display_index": 4,
+          "start": 3.341,
+          "end": 3.501
+        },
+        {
+          "word": "founded",
+          "display_index": 5,
+          "start": 3.501,
+          "end": 4.121
+        },
+        {
+          "word": "thirty",
+          "display_index": 6,
+          "start": 4.121,
+          "end": 4.421
+        },
+        {
+          "word": "years",
+          "display_index": 7,
+          "start": 4.421,
+          "end": 4.661
+        },
+        {
+          "word": "ago",
+          "display_index": 8,
+          "start": 4.661,
+          "end": 5.121
+        },
+        {
+          "word": "in",
+          "display_index": 9,
+          "start": 5.121,
+          "end": 5.234
+        },
+        {
+          "word": "a",
+          "display_index": 10,
+          "start": 5.234,
+          "end": 5.381
+        },
+        {
+          "word": "regional",
+          "display_index": 11,
+          "start": 5.381,
+          "end": 5.981
+        },
+        {
+          "word": "city.",
+          "display_index": 12,
+          "start": 5.981,
+          "end": 6.482
+        }
+      ],
+      "start": 1.492,
+      "end": 6.482
+    },
+    {
+      "line": 2,
+      "english": "The founder was a capable engineer whose commitment was stronger than anyone's.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 6.482,
+          "end": 6.602
+        },
+        {
+          "word": "founder",
+          "display_index": 1,
+          "start": 6.602,
+          "end": 7.442
+        },
+        {
+          "word": "was",
+          "display_index": 2,
+          "start": 7.442,
+          "end": 7.595
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 7.595,
+          "end": 7.722
+        },
+        {
+          "word": "capable",
+          "display_index": 4,
+          "start": 7.722,
+          "end": 8.582
+        },
+        {
+          "word": "engineer",
+          "display_index": 5,
+          "start": 8.582,
+          "end": 9.402
+        },
+        {
+          "word": "whose",
+          "display_index": 6,
+          "start": 9.402,
+          "end": 9.602
+        },
+        {
+          "word": "commitment",
+          "display_index": 7,
+          "start": 9.602,
+          "end": 10.202
+        },
+        {
+          "word": "was",
+          "display_index": 8,
+          "start": 10.202,
+          "end": 10.342
+        },
+        {
+          "word": "stronger",
+          "display_index": 9,
+          "start": 10.342,
+          "end": 10.823
+        },
+        {
+          "word": "than",
+          "display_index": 10,
+          "start": 10.823,
+          "end": 11.083
+        },
+        {
+          "word": "anyone's.",
+          "display_index": 11,
+          "start": 11.083,
+          "end": 11.883
+        }
+      ],
+      "start": 6.482,
+      "end": 11.883
+    },
+    {
+      "line": 3,
+      "english": "In the first years, the company carried debt.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 11.983,
+          "end": 12.114
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 12.114,
+          "end": 12.243
+        },
+        {
+          "word": "first",
+          "display_index": 2,
+          "start": 12.243,
+          "end": 12.583
+        },
+        {
+          "word": "years,",
+          "display_index": 3,
+          "start": 12.583,
+          "end": 13.374
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 13.374,
+          "end": 13.483
+        },
+        {
+          "word": "company",
+          "display_index": 5,
+          "start": 13.483,
+          "end": 14.103
+        },
+        {
+          "word": "carried",
+          "display_index": 6,
+          "start": 14.103,
+          "end": 14.604
+        },
+        {
+          "word": "debt.",
+          "display_index": 7,
+          "start": 14.604,
+          "end": 15.571
+        }
+      ],
+      "start": 11.983,
+      "end": 15.571
+    },
+    {
+      "line": 4,
+      "english": "The figures in the accounts were discouraging, and revenue was small.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 15.871,
+          "end": 15.984
+        },
+        {
+          "word": "figures",
+          "display_index": 1,
+          "start": 15.984,
+          "end": 16.404
+        },
+        {
+          "word": "in",
+          "display_index": 2,
+          "start": 16.404,
+          "end": 16.652
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 16.652,
+          "end": 16.884
+        },
+        {
+          "word": "accounts",
+          "display_index": 4,
+          "start": 16.884,
+          "end": 17.424
+        },
+        {
+          "word": "were",
+          "display_index": 5,
+          "start": 17.424,
+          "end": 17.584
+        },
+        {
+          "word": "discouraging,",
+          "display_index": 6,
+          "start": 17.584,
+          "end": 19.005
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 19.005,
+          "end": 19.145
+        },
+        {
+          "word": "revenue",
+          "display_index": 8,
+          "start": 19.145,
+          "end": 19.765
+        },
+        {
+          "word": "was",
+          "display_index": 9,
+          "start": 19.765,
+          "end": 20.005
+        },
+        {
+          "word": "small.",
+          "display_index": 10,
+          "start": 20.005,
+          "end": 20.545
+        }
+      ],
+      "start": 15.871,
+      "end": 20.545
+    },
+    {
+      "line": 5,
+      "english": "But he convinced investor after investor and raised funds little by little.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 20.545,
+          "end": 20.745
+        },
+        {
+          "word": "he",
+          "display_index": 1,
+          "start": 20.745,
+          "end": 20.845
+        },
+        {
+          "word": "convinced",
+          "display_index": 2,
+          "start": 20.845,
+          "end": 21.385
+        },
+        {
+          "word": "investor",
+          "display_index": 3,
+          "start": 21.385,
+          "end": 22.305
+        },
+        {
+          "word": "after",
+          "display_index": 4,
+          "start": 22.305,
+          "end": 22.585
+        },
+        {
+          "word": "investor",
+          "display_index": 5,
+          "start": 22.585,
+          "end": 23.366
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 23.366,
+          "end": 23.506
+        },
+        {
+          "word": "raised",
+          "display_index": 7,
+          "start": 23.506,
+          "end": 23.826
+        },
+        {
+          "word": "funds",
+          "display_index": 8,
+          "start": 23.826,
+          "end": 24.486
+        },
+        {
+          "word": "little",
+          "display_index": 9,
+          "start": 24.486,
+          "end": 24.926
+        },
+        {
+          "word": "by",
+          "display_index": 10,
+          "start": 24.926,
+          "end": 25.226
+        },
+        {
+          "word": "little.",
+          "display_index": 11,
+          "start": 25.226,
+          "end": 25.766
+        }
+      ],
+      "start": 20.545,
+      "end": 25.766
+    },
+    {
+      "line": 6,
+      "english": "In time, the company rose in the competitive market.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 25.766,
+          "end": 25.986
+        },
+        {
+          "word": "time,",
+          "display_index": 1,
+          "start": 25.986,
+          "end": 26.507
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 26.507,
+          "end": 26.626
+        },
+        {
+          "word": "company",
+          "display_index": 3,
+          "start": 26.626,
+          "end": 27.267
+        },
+        {
+          "word": "rose",
+          "display_index": 4,
+          "start": 27.267,
+          "end": 27.967
+        },
+        {
+          "word": "in",
+          "display_index": 5,
+          "start": 27.967,
+          "end": 28.216
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 28.216,
+          "end": 28.347
+        },
+        {
+          "word": "competitive",
+          "display_index": 7,
+          "start": 28.347,
+          "end": 29.127
+        },
+        {
+          "word": "market.",
+          "display_index": 8,
+          "start": 29.127,
+          "end": 30.267
+        }
+      ],
+      "start": 25.766,
+      "end": 30.267
+    },
+    {
+      "line": 7,
+      "english": "It won contracts with overseas clients and rode the wave of expansion.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 30.567,
+          "end": 30.667
+        },
+        {
+          "word": "won",
+          "display_index": 1,
+          "start": 30.667,
+          "end": 30.987
+        },
+        {
+          "word": "contracts",
+          "display_index": 2,
+          "start": 30.987,
+          "end": 31.848
+        },
+        {
+          "word": "with",
+          "display_index": 3,
+          "start": 31.848,
+          "end": 32.028
+        },
+        {
+          "word": "overseas",
+          "display_index": 4,
+          "start": 32.028,
+          "end": 32.548
+        },
+        {
+          "word": "clients",
+          "display_index": 5,
+          "start": 32.548,
+          "end": 33.388
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 33.388,
+          "end": 33.528
+        },
+        {
+          "word": "rode",
+          "display_index": 7,
+          "start": 33.528,
+          "end": 33.837
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 33.837,
+          "end": 33.988
+        },
+        {
+          "word": "wave",
+          "display_index": 9,
+          "start": 33.988,
+          "end": 34.528
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 34.528,
+          "end": 34.808
+        },
+        {
+          "word": "expansion.",
+          "display_index": 11,
+          "start": 34.808,
+          "end": 36.169
+        }
+      ],
+      "start": 30.567,
+      "end": 36.169
+    },
+    {
+      "line": 8,
+      "english": "As chairman, the founder spoke to every employee at the annual conference.",
+      "word_timings": [
+        {
+          "word": "As",
+          "display_index": 0,
+          "start": 36.469,
+          "end": 36.629
+        },
+        {
+          "word": "chairman,",
+          "display_index": 1,
+          "start": 36.629,
+          "end": 37.724
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 37.724,
+          "end": 37.849
+        },
+        {
+          "word": "founder",
+          "display_index": 3,
+          "start": 37.849,
+          "end": 38.409
+        },
+        {
+          "word": "spoke",
+          "display_index": 4,
+          "start": 38.409,
+          "end": 38.82
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 38.82,
+          "end": 39.049
+        },
+        {
+          "word": "every",
+          "display_index": 6,
+          "start": 39.049,
+          "end": 39.51
+        },
+        {
+          "word": "employee",
+          "display_index": 7,
+          "start": 39.51,
+          "end": 40.75
+        },
+        {
+          "word": "at",
+          "display_index": 8,
+          "start": 40.75,
+          "end": 40.853
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 40.853,
+          "end": 41.05
+        },
+        {
+          "word": "annual",
+          "display_index": 10,
+          "start": 41.05,
+          "end": 41.59
+        },
+        {
+          "word": "conference.",
+          "display_index": 11,
+          "start": 41.59,
+          "end": 43.09
+        }
+      ],
+      "start": 36.469,
+      "end": 43.09
+    },
+    {
+      "line": 9,
+      "english": "Our strength is not strategy, but the sincerity of each person, he said.",
+      "word_timings": [
+        {
+          "word": "Our",
+          "display_index": 0,
+          "start": 43.871,
+          "end": 44.051
+        },
+        {
+          "word": "strength",
+          "display_index": 1,
+          "start": 44.051,
+          "end": 44.594
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 44.594,
+          "end": 44.751
+        },
+        {
+          "word": "not",
+          "display_index": 3,
+          "start": 44.751,
+          "end": 45.271
+        },
+        {
+          "word": "strategy,",
+          "display_index": 4,
+          "start": 45.271,
+          "end": 46.171
+        },
+        {
+          "word": "but",
+          "display_index": 5,
+          "start": 46.171,
+          "end": 46.341
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 46.341,
+          "end": 46.451
+        },
+        {
+          "word": "sincerity",
+          "display_index": 7,
+          "start": 46.451,
+          "end": 47.331
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 47.331,
+          "end": 47.491
+        },
+        {
+          "word": "each",
+          "display_index": 9,
+          "start": 47.491,
+          "end": 47.732
+        },
+        {
+          "word": "person,",
+          "display_index": 10,
+          "start": 47.732,
+          "end": 48.252
+        },
+        {
+          "word": "he",
+          "display_index": 11,
+          "start": 48.252,
+          "end": 48.492
+        },
+        {
+          "word": "said.",
+          "display_index": 12,
+          "start": 48.492,
+          "end": 48.992
+        }
+      ],
+      "start": 43.871,
+      "end": 48.992
+    },
+    {
+      "line": 10,
+      "english": "Today, the company enjoys commercial success while never forgetting its contribution to the local community.",
+      "word_timings": [
+        {
+          "word": "Today,",
+          "display_index": 0,
+          "start": 48.992,
+          "end": 49.629
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 49.629,
+          "end": 49.732
+        },
+        {
+          "word": "company",
+          "display_index": 2,
+          "start": 49.732,
+          "end": 50.252
+        },
+        {
+          "word": "enjoys",
+          "display_index": 3,
+          "start": 50.252,
+          "end": 50.712
+        },
+        {
+          "word": "commercial",
+          "display_index": 4,
+          "start": 50.712,
+          "end": 51.332
+        },
+        {
+          "word": "success",
+          "display_index": 5,
+          "start": 51.332,
+          "end": 53.193
+        },
+        {
+          "word": "while",
+          "display_index": 6,
+          "start": 53.193,
+          "end": 53.513
+        },
+        {
+          "word": "never",
+          "display_index": 7,
+          "start": 53.513,
+          "end": 53.813
+        },
+        {
+          "word": "forgetting",
+          "display_index": 8,
+          "start": 53.813,
+          "end": 54.553
+        },
+        {
+          "word": "its",
+          "display_index": 9,
+          "start": 54.553,
+          "end": 54.733
+        },
+        {
+          "word": "contribution",
+          "display_index": 10,
+          "start": 54.733,
+          "end": 56.022
+        },
+        {
+          "word": "to",
+          "display_index": 11,
+          "start": 56.022,
+          "end": 56.338
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 56.338,
+          "end": 56.514
+        },
+        {
+          "word": "local",
+          "display_index": 13,
+          "start": 56.514,
+          "end": 57.074
+        },
+        {
+          "word": "community.",
+          "display_index": 14,
+          "start": 57.074,
+          "end": 58.474
+        }
+      ],
+      "start": 48.992,
+      "end": 58.474
+    },
+    {
+      "line": 11,
+      "english": "Transparency in management, fairness in how employees are promoted.",
+      "word_timings": [
+        {
+          "word": "Transparency",
+          "display_index": 0,
+          "start": 58.774,
+          "end": 59.974
+        },
+        {
+          "word": "in",
+          "display_index": 1,
+          "start": 59.974,
+          "end": 60.235
+        },
+        {
+          "word": "management,",
+          "display_index": 2,
+          "start": 60.235,
+          "end": 61.295
+        },
+        {
+          "word": "fairness",
+          "display_index": 3,
+          "start": 61.295,
+          "end": 62.435
+        },
+        {
+          "word": "in",
+          "display_index": 4,
+          "start": 62.435,
+          "end": 62.575
+        },
+        {
+          "word": "how",
+          "display_index": 5,
+          "start": 62.575,
+          "end": 62.755
+        },
+        {
+          "word": "employees",
+          "display_index": 6,
+          "start": 62.755,
+          "end": 63.402
+        },
+        {
+          "word": "are",
+          "display_index": 7,
+          "start": 63.402,
+          "end": 63.955
+        },
+        {
+          "word": "promoted.",
+          "display_index": 8,
+          "start": 63.955,
+          "end": 65.455
+        }
+      ],
+      "start": 58.774,
+      "end": 65.455
+    },
+    {
+      "line": 12,
+      "english": "The story of this small firm teaches us that business success cannot be measured by numbers alone.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 67.13,
+          "end": 67.236
+        },
+        {
+          "word": "story",
+          "display_index": 1,
+          "start": 67.236,
+          "end": 67.656
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 67.656,
+          "end": 67.756
+        },
+        {
+          "word": "this",
+          "display_index": 3,
+          "start": 67.756,
+          "end": 68.096
+        },
+        {
+          "word": "small",
+          "display_index": 4,
+          "start": 68.096,
+          "end": 68.677
+        },
+        {
+          "word": "firm",
+          "display_index": 5,
+          "start": 68.677,
+          "end": 69.437
+        },
+        {
+          "word": "teaches",
+          "display_index": 6,
+          "start": 69.437,
+          "end": 70.057
+        },
+        {
+          "word": "us",
+          "display_index": 7,
+          "start": 70.057,
+          "end": 71.177
+        },
+        {
+          "word": "that",
+          "display_index": 8,
+          "start": 71.177,
+          "end": 71.497
+        },
+        {
+          "word": "business",
+          "display_index": 9,
+          "start": 71.497,
+          "end": 72.437
+        },
+        {
+          "word": "success",
+          "display_index": 10,
+          "start": 72.437,
+          "end": 73.818
+        },
+        {
+          "word": "cannot",
+          "display_index": 11,
+          "start": 73.818,
+          "end": 74.758
+        },
+        {
+          "word": "be",
+          "display_index": 12,
+          "start": 74.758,
+          "end": 75.378
+        },
+        {
+          "word": "measured",
+          "display_index": 13,
+          "start": 75.378,
+          "end": 76.338
+        },
+        {
+          "word": "by",
+          "display_index": 14,
+          "start": 76.338,
+          "end": 76.638
+        },
+        {
+          "word": "numbers",
+          "display_index": 15,
+          "start": 76.638,
+          "end": 77.619
+        },
+        {
+          "word": "alone.",
+          "display_index": 16,
+          "start": 77.619,
+          "end": 79.119
+        }
+      ],
+      "start": 67.13,
+      "end": 79.119
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

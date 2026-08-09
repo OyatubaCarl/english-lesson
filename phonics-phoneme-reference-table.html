@@ -1,0 +1,975 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Phonics 音素一覧表</title>
+    <style>
+      :root {
+        --ink: #17202a;
+        --muted: #5f6f7e;
+        --line: #d8e0e7;
+        --paper: #f6f8fb;
+        --white: #ffffff;
+        --green: #1f8a70;
+        --orange: #c76a1a;
+        --blue: #2364aa;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Segoe UI", sans-serif;
+      }
+
+      main {
+        width: min(1280px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 48px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 16px;
+        align-items: end;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 4vw, 4rem);
+        letter-spacing: 0;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 1.35rem;
+        letter-spacing: 0;
+      }
+
+      p {
+        margin: 8px 0 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .status {
+        min-width: 180px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 10px 12px;
+        background: var(--white);
+        color: var(--muted);
+        font-weight: 800;
+        text-align: center;
+      }
+
+      .notice,
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--white);
+      }
+
+      .notice {
+        padding: 14px 16px;
+        margin-bottom: 16px;
+      }
+
+      .notice strong {
+        color: var(--orange);
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        margin: 16px 0;
+      }
+
+      .stat {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--white);
+        padding: 14px;
+      }
+
+      .stat strong {
+        display: block;
+        font-size: 1.8rem;
+        line-height: 1;
+      }
+
+      .stat span {
+        display: block;
+        margin-top: 4px;
+        color: var(--muted);
+        font-size: 0.86rem;
+        font-weight: 750;
+      }
+
+      .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 18px 0 12px;
+      }
+
+      .filter-button,
+      .sound-button,
+      .jolly-tile {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--white);
+        color: var(--ink);
+        cursor: pointer;
+        font: inherit;
+        font-weight: 800;
+      }
+
+      .filter-button {
+        min-height: 38px;
+        padding: 8px 12px;
+      }
+
+      .filter-button.is-active {
+        border-color: var(--ink);
+        background: var(--ink);
+        color: var(--white);
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--white);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 1120px;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        padding: 12px;
+        vertical-align: middle;
+        text-align: left;
+      }
+
+      th {
+        position: sticky;
+        top: 0;
+        background: #edf3f8;
+        z-index: 1;
+        color: #34495e;
+        font-size: 0.82rem;
+        letter-spacing: 0;
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .pill {
+        display: inline-block;
+        min-width: 70px;
+        border-radius: 999px;
+        padding: 5px 8px;
+        background: #e8f4f1;
+        color: #17624f;
+        font-size: 0.8rem;
+        font-weight: 850;
+        text-align: center;
+      }
+
+      .grapheme {
+        display: block;
+        font-size: 1.35rem;
+      }
+
+      .id {
+        display: block;
+        color: var(--muted);
+        font-size: 0.78rem;
+      }
+
+      .ipa {
+        font-family: "Charis SIL", "Noto Sans", "Segoe UI", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 850;
+      }
+
+      .sound-button {
+        min-width: 104px;
+        min-height: 38px;
+        padding: 8px 10px;
+      }
+
+      .sound-button.jolly {
+        border-color: rgba(199, 106, 26, 0.45);
+        color: var(--orange);
+      }
+
+      .sound-button.current {
+        border-color: rgba(35, 100, 170, 0.45);
+        color: var(--blue);
+      }
+
+      .play-icon {
+        display: inline-block;
+        margin-right: 6px;
+      }
+
+      .missing {
+        color: var(--muted);
+        font-weight: 700;
+      }
+
+      .panel {
+        margin-top: 22px;
+        padding: 16px;
+      }
+
+      .jolly-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+        gap: 8px;
+      }
+
+      .jolly-tile {
+        min-height: 72px;
+        padding: 10px;
+        text-align: left;
+      }
+
+      .jolly-tile span {
+        display: block;
+        font-size: 1.35rem;
+      }
+
+      .jolly-tile small {
+        display: block;
+        margin-top: 4px;
+        color: var(--muted);
+        font-weight: 750;
+      }
+
+      @media (max-width: 760px) {
+        main {
+          width: min(100% - 20px, 1280px);
+          padding-top: 18px;
+        }
+
+        header,
+        .stats {
+          grid-template-columns: 1fr;
+        }
+
+        .status {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h1>Phonics 音素一覧表</h1>
+          <p>このページは、録音・音源選定・カード実装のための作業台です。</p>
+        </div>
+        <div class="status" id="audioStatus">音声待機中</div>
+      </header>
+
+      <section class="notice">
+        <strong>Jolly Phonics音源は参照専用です。</strong>
+        <p>
+          ここでは発音確認と自録りガイドとして再生できます。公開教材や配布物へそのまま組み込む場合は、
+          Jolly Learning から利用許可を取る必要があります。
+        </p>
+      </section>
+
+      <section class="stats" aria-label="音素数">
+        <div class="stat"><strong>30</strong><span>必要音素</span></div>
+        <div class="stat"><strong>125</strong><span>登録単語カード</span></div>
+        <div class="stat"><strong>42</strong><span>Jolly参照音源</span></div>
+      </section>
+
+      <nav class="toolbar" aria-label="音素フィルター">
+        <button class="filter-button is-active" type="button" data-filter="all">すべて</button>
+        <button class="filter-button" type="button" data-filter="vowel">短母音</button>
+        <button class="filter-button" type="button" data-filter="stop">破裂音</button>
+        <button class="filter-button" type="button" data-filter="nasal">鼻音</button>
+        <button class="filter-button" type="button" data-filter="fricative">摩擦音</button>
+        <button class="filter-button" type="button" data-filter="approximant">接近音</button>
+        <button class="filter-button" type="button" data-filter="affricate">破擦音</button>
+        <button class="filter-button" type="button" data-filter="cluster">ブレンド</button>
+      </nav>
+
+      <section class="table-wrap" aria-label="必要音素一覧">
+        <table>
+          <thead>
+            <tr>
+              <th>区分</th>
+              <th>文字</th>
+              <th>IPA</th>
+              <th>録音優先</th>
+              <th>使用数</th>
+              <th>例単語</th>
+              <th>Jolly参照</th>
+              <th>現在音源</th>
+              <th>録音メモ</th>
+            </tr>
+          </thead>
+          <tbody id="phonemeRows">
+            <tr data-group="vowel">
+              <td><span class="pill">短母音</span></td>
+              <td>
+                <strong class="grapheme">short a</strong>
+                <span class="id">ae</span>
+              </td>
+              <td><span class="ipa">/æ/</span></td>
+              <td>高</td>
+              <td>32</td>
+              <td>pat /pæt/、map /mæp/、sat /sæt/、fan /fæn/、cat /kæt/、bat /bæt/、mat /mæt/、rat /ræt/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group1/a.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/ae.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>短く明るく。文字名にしない。</td>
+            </tr>
+<tr data-group="vowel">
+              <td><span class="pill">短母音</span></td>
+              <td>
+                <strong class="grapheme">short i</strong>
+                <span class="id">ih</span>
+              </td>
+              <td><span class="ipa">/ɪ/</span></td>
+              <td>高</td>
+              <td>30</td>
+              <td>sit /sɪt/、pin /pɪn/、lip /lɪp/、win /wɪn/、pig /pɪg/、wig /wɪg/、dig /dɪg/、big /bɪg/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group1/i.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/ih.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>短く明るく。文字名にしない。</td>
+            </tr>
+<tr data-group="vowel">
+              <td><span class="pill">短母音</span></td>
+              <td>
+                <strong class="grapheme">short u</strong>
+                <span class="id">uh</span>
+              </td>
+              <td><span class="ipa">/ʌ/</span></td>
+              <td>高</td>
+              <td>22</td>
+              <td>cup /kʌp/、sun /sʌn/、run /rʌn/、bus /bʌs/、bug /bʌg/、rug /rʌg/、mug /mʌg/、gum /gʌm/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group3/u.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/uh.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>短く明るく。文字名にしない。</td>
+            </tr>
+<tr data-group="vowel">
+              <td><span class="pill">短母音</span></td>
+              <td>
+                <strong class="grapheme">short o</strong>
+                <span class="id">ah</span>
+              </td>
+              <td><span class="ipa">/ɑ/</span></td>
+              <td>高</td>
+              <td>21</td>
+              <td>hot /hɑt/、mop /mɑp/、pot /pɑt/、dog /dɑg/、top /tɑp/、hop /hɑp/、cot /kɑt/、log /lɑg/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group3/o.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/ah.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>短く明るく。文字名にしない。</td>
+            </tr>
+<tr data-group="vowel">
+              <td><span class="pill">短母音</span></td>
+              <td>
+                <strong class="grapheme">short e</strong>
+                <span class="id">eh</span>
+              </td>
+              <td><span class="ipa">/ɛ/</span></td>
+              <td>高</td>
+              <td>20</td>
+              <td>pen /pɛn/、red /rɛd/、bed /bɛd/、hen /hɛn/、ten /tɛn/、men /mɛn/、pet /pɛt/、wet /wɛt/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group2/e.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/eh.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>短く明るく。文字名にしない。</td>
+            </tr>
+<tr data-group="stop">
+              <td><span class="pill">破裂音</span></td>
+              <td>
+                <strong class="grapheme">p</strong>
+                <span class="id">p</span>
+              </td>
+              <td><span class="ipa">/p/</span></td>
+              <td>高</td>
+              <td>36</td>
+              <td>pat /pæt/、map /mæp/、cap /kæp/、tap /tæp/、lap /læp/、nap /næp/、pan /pæn/、pack /pæk/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group1/p.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/p.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>母音を足さず、息の破裂だけを短く。</td>
+            </tr>
+<tr data-group="stop">
+              <td><span class="pill">破裂音</span></td>
+              <td>
+                <strong class="grapheme">t</strong>
+                <span class="id">t</span>
+              </td>
+              <td><span class="ipa">/t/</span></td>
+              <td>高</td>
+              <td>31</td>
+              <td>pat /pæt/、sat /sæt/、cat /kæt/、bat /bæt/、mat /mæt/、rat /ræt/、hat /hæt/、tap /tæp/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group1/t.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/t.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>母音を足さず、息の破裂だけを短く。</td>
+            </tr>
+<tr data-group="stop">
+              <td><span class="pill">破裂音</span></td>
+              <td>
+                <strong class="grapheme">g</strong>
+                <span class="id">g</span>
+              </td>
+              <td><span class="ipa">/g/</span></td>
+              <td>高</td>
+              <td>24</td>
+              <td>bag /bæg/、tag /tæg/、rag /ræg/、wag /wæg/、flag /flæg/、leg /lɛg/、peg /pɛg/、pig /pɪg/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group3/g.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/g.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>母音を足さず、息の破裂だけを短く。</td>
+            </tr>
+<tr data-group="stop">
+              <td><span class="pill">破裂音</span></td>
+              <td>
+                <strong class="grapheme">c/k</strong>
+                <span class="id">k</span>
+              </td>
+              <td><span class="ipa">/k/</span></td>
+              <td>高</td>
+              <td>17</td>
+              <td>cat /kæt/、cap /kæp/、can /kæn/、back /bæk/、pack /pæk/、clap /klæp/、crab /kræb/、desk /dɛsk/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group2/ck.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/k.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>母音を足さず、息の破裂だけを短く。</td>
+            </tr>
+<tr data-group="stop">
+              <td><span class="pill">破裂音</span></td>
+              <td>
+                <strong class="grapheme">b</strong>
+                <span class="id">b</span>
+              </td>
+              <td><span class="ipa">/b/</span></td>
+              <td>高</td>
+              <td>15</td>
+              <td>bat /bæt/、bag /bæg/、back /bæk/、crab /kræb/、bed /bɛd/、web /wɛb/、best /bɛst/、big /bɪg/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group3/b.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/b.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>母音を足さず、息の破裂だけを短く。</td>
+            </tr>
+<tr data-group="stop">
+              <td><span class="pill">破裂音</span></td>
+              <td>
+                <strong class="grapheme">d</strong>
+                <span class="id">d</span>
+              </td>
+              <td><span class="ipa">/d/</span></td>
+              <td>高</td>
+              <td>10</td>
+              <td>red /rɛd/、bed /bɛd/、desk /dɛsk/、dig /dɪg/、kid /kɪd/、lid /lɪd/、dog /dɑg/、mud /mʌd/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group2/d.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/d.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>母音を足さず、息の破裂だけを短く。</td>
+            </tr>
+<tr data-group="nasal">
+              <td><span class="pill">鼻音</span></td>
+              <td>
+                <strong class="grapheme">n</strong>
+                <span class="id">n</span>
+              </td>
+              <td><span class="ipa">/n/</span></td>
+              <td>高</td>
+              <td>26</td>
+              <td>fan /fæn/、nap /næp/、can /kæn/、man /mæn/、pan /pæn/、van /væn/、snap /snæp/、pen /pɛn/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group1/n.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/n.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>声は入れるが伸ばしすぎない。</td>
+            </tr>
+<tr data-group="nasal">
+              <td><span class="pill">鼻音</span></td>
+              <td>
+                <strong class="grapheme">m</strong>
+                <span class="id">m</span>
+              </td>
+              <td><span class="ipa">/m/</span></td>
+              <td>高</td>
+              <td>16</td>
+              <td>map /mæp/、mat /mæt/、jam /dʒæm/、ram /ræm/、ham /hæm/、man /mæn/、men /mɛn/、swim /swɪm/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group2/m.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/m.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>声は入れるが伸ばしすぎない。</td>
+            </tr>
+<tr data-group="nasal">
+              <td><span class="pill">鼻音</span></td>
+              <td>
+                <strong class="grapheme">ng</strong>
+                <span class="id">ng</span>
+              </td>
+              <td><span class="ipa">/ŋ/</span></td>
+              <td>中</td>
+              <td>2</td>
+              <td>ring /rɪŋ/、sing /sɪŋ/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group5/ng.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/ng.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>声は入れるが伸ばしすぎない。</td>
+            </tr>
+<tr data-group="fricative">
+              <td><span class="pill">摩擦音</span></td>
+              <td>
+                <strong class="grapheme">s</strong>
+                <span class="id">s</span>
+              </td>
+              <td><span class="ipa">/s/</span></td>
+              <td>高</td>
+              <td>17</td>
+              <td>sat /sæt/、snap /snæp/、yes /jɛs/、chess /tʃɛs/、best /bɛst/、desk /dɛsk/、sit /sɪt/、this /ðɪs/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group1/s.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/s.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>息の摩擦を一定に。母音を足さない。</td>
+            </tr>
+<tr data-group="fricative">
+              <td><span class="pill">摩擦音</span></td>
+              <td>
+                <strong class="grapheme">f</strong>
+                <span class="id">f</span>
+              </td>
+              <td><span class="ipa">/f/</span></td>
+              <td>高</td>
+              <td>10</td>
+              <td>fan /fæn/、flag /flæg/、fig /fɪg/、fin /fɪn/、fix /fɪks/、fish /fɪʃ/、fog /fɑg/、fox /fɑks/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group3/f.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/f.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>息の摩擦を一定に。母音を足さない。</td>
+            </tr>
+<tr data-group="fricative">
+              <td><span class="pill">摩擦音</span></td>
+              <td>
+                <strong class="grapheme">h</strong>
+                <span class="id">h</span>
+              </td>
+              <td><span class="ipa">/h/</span></td>
+              <td>中</td>
+              <td>7</td>
+              <td>hat /hæt/、ham /hæm/、hen /hɛn/、hit /hɪt/、hot /hɑt/、hop /hɑp/、hum /hʌm/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group2/h.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/h.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>息の摩擦を一定に。母音を足さない。</td>
+            </tr>
+<tr data-group="fricative">
+              <td><span class="pill">摩擦音</span></td>
+              <td>
+                <strong class="grapheme">sh</strong>
+                <span class="id">sh</span>
+              </td>
+              <td><span class="ipa">/ʃ/</span></td>
+              <td>中</td>
+              <td>5</td>
+              <td>shell /ʃɛl/、fish /fɪʃ/、ship /ʃɪp/、shop /ʃɑp/、shut /ʃʌt/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group6/sh.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/sh.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>息の摩擦を一定に。母音を足さない。</td>
+            </tr>
+<tr data-group="fricative">
+              <td><span class="pill">摩擦音</span></td>
+              <td>
+                <strong class="grapheme">th</strong>
+                <span class="id">th_voiced</span>
+              </td>
+              <td><span class="ipa">/ð/</span></td>
+              <td>中</td>
+              <td>2</td>
+              <td>then /ðɛn/、this /ðɪs/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group6/this.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/th_voiced.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>息の摩擦を一定に。母音を足さない。</td>
+            </tr>
+<tr data-group="fricative">
+              <td><span class="pill">摩擦音</span></td>
+              <td>
+                <strong class="grapheme">v</strong>
+                <span class="id">v</span>
+              </td>
+              <td><span class="ipa">/v/</span></td>
+              <td>中</td>
+              <td>2</td>
+              <td>van /væn/、vet /vɛt/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group5/v.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/v.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>息の摩擦を一定に。母音を足さない。</td>
+            </tr>
+<tr data-group="fricative">
+              <td><span class="pill">摩擦音</span></td>
+              <td>
+                <strong class="grapheme">z</strong>
+                <span class="id">z</span>
+              </td>
+              <td><span class="ipa">/z/</span></td>
+              <td>中</td>
+              <td>1</td>
+              <td>zip /zɪp/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group5/z.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/z.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>息の摩擦を一定に。母音を足さない。</td>
+            </tr>
+<tr data-group="fricative">
+              <td><span class="pill">摩擦音</span></td>
+              <td>
+                <strong class="grapheme">th</strong>
+                <span class="id">th_voiceless</span>
+              </td>
+              <td><span class="ipa">/θ/</span></td>
+              <td>中</td>
+              <td>0</td>
+              <td>追加予定</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group6/three.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/th_voiceless.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>息の摩擦を一定に。母音を足さない。</td>
+            </tr>
+<tr data-group="approximant">
+              <td><span class="pill">接近音</span></td>
+              <td>
+                <strong class="grapheme">r</strong>
+                <span class="id">r</span>
+              </td>
+              <td><span class="ipa">/r/</span></td>
+              <td>高</td>
+              <td>14</td>
+              <td>rat /ræt/、rag /ræg/、ram /ræm/、crab /kræb/、trap /træp/、red /rɛd/、rip /rɪp/、ring /rɪŋ/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group2/r.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/r.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>短い導入音。日本語の母音を後ろに置かない。</td>
+            </tr>
+<tr data-group="approximant">
+              <td><span class="pill">接近音</span></td>
+              <td>
+                <strong class="grapheme">l</strong>
+                <span class="id">l</span>
+              </td>
+              <td><span class="ipa">/l/</span></td>
+              <td>高</td>
+              <td>10</td>
+              <td>lap /læp/、flag /flæg/、clap /klæp/、leg /lɛg/、shell /ʃɛl/、lip /lɪp/、lid /lɪd/、slip /slɪp/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group3/l.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/l.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>短い導入音。日本語の母音を後ろに置かない。</td>
+            </tr>
+<tr data-group="approximant">
+              <td><span class="pill">接近音</span></td>
+              <td>
+                <strong class="grapheme">w</strong>
+                <span class="id">w</span>
+              </td>
+              <td><span class="ipa">/w/</span></td>
+              <td>中</td>
+              <td>7</td>
+              <td>wag /wæg/、wax /wæks/、wet /wɛt/、web /wɛb/、win /wɪn/、wig /wɪg/、swim /swɪm/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group5/w.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/w.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>短い導入音。日本語の母音を後ろに置かない。</td>
+            </tr>
+<tr data-group="approximant">
+              <td><span class="pill">接近音</span></td>
+              <td>
+                <strong class="grapheme">y</strong>
+                <span class="id">y</span>
+              </td>
+              <td><span class="ipa">/j/</span></td>
+              <td>中</td>
+              <td>1</td>
+              <td>yes /jɛs/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group6/y.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/y.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>短い導入音。日本語の母音を後ろに置かない。</td>
+            </tr>
+<tr data-group="affricate">
+              <td><span class="pill">破擦音</span></td>
+              <td>
+                <strong class="grapheme">ch</strong>
+                <span class="id">ch</span>
+              </td>
+              <td><span class="ipa">/tʃ/</span></td>
+              <td>中</td>
+              <td>4</td>
+              <td>chess /tʃɛs/、chip /tʃɪp/、chop /tʃɑp/、chug /tʃʌg/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group6/ch.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/ch.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>破裂から摩擦へ一息で短く。</td>
+            </tr>
+<tr data-group="affricate">
+              <td><span class="pill">破擦音</span></td>
+              <td>
+                <strong class="grapheme">j</strong>
+                <span class="id">j</span>
+              </td>
+              <td><span class="ipa">/dʒ/</span></td>
+              <td>中</td>
+              <td>2</td>
+              <td>jam /dʒæm/、jet /dʒɛt/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group4/j.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/j.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>破裂から摩擦へ一息で短く。</td>
+            </tr>
+<tr data-group="cluster">
+              <td><span class="pill">ブレンド</span></td>
+              <td>
+                <strong class="grapheme">x</strong>
+                <span class="id">ks</span>
+              </td>
+              <td><span class="ipa">/ks/</span></td>
+              <td>中</td>
+              <td>4</td>
+              <td>wax /wæks/、fix /fɪks/、box /bɑks/、fox /fɑks/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group6/x.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/ks.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>2音をなめらかに連結。別々に読ませすぎない。</td>
+            </tr>
+<tr data-group="cluster">
+              <td><span class="pill">ブレンド</span></td>
+              <td>
+                <strong class="grapheme">qu</strong>
+                <span class="id">kw</span>
+              </td>
+              <td><span class="ipa">/kw/</span></td>
+              <td>中</td>
+              <td>1</td>
+              <td>quick /kwɪk/</td>
+              <td><button class="sound-button jolly" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group7/qu.mp3" data-label="Jolly参照"><span class="play-icon" aria-hidden="true">▶</span>Jolly参照</button></td>
+              <td><button class="sound-button current" type="button" data-audio="audio/phonics-generated/phonemes/kw.mp3" data-label="現在音源"><span class="play-icon" aria-hidden="true">▶</span>現在音源</button></td>
+              <td>2音をなめらかに連結。別々に読ませすぎない。</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="panel" aria-labelledby="jollyBoardTitle">
+        <h2 id="jollyBoardTitle">Jolly Phonics 42音源 参照ボード</h2>
+        <p>現在ページで扱う音素以外も、後続レッスンの録音参照として聞けます。</p>
+        <div class="jolly-grid">
+          <button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group1/a.mp3" data-label="Jolly a">
+              <span>a</span>
+              <small>short a</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group1/i.mp3" data-label="Jolly i">
+              <span>i</span>
+              <small>short i</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group1/n.mp3" data-label="Jolly n">
+              <span>n</span>
+              <small>n</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group1/p.mp3" data-label="Jolly p">
+              <span>p</span>
+              <small>p</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group1/s.mp3" data-label="Jolly s">
+              <span>s</span>
+              <small>s</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group1/t.mp3" data-label="Jolly t">
+              <span>t</span>
+              <small>t</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group2/ck.mp3" data-label="Jolly ck">
+              <span>ck</span>
+              <small>c/k</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group2/d.mp3" data-label="Jolly d">
+              <span>d</span>
+              <small>d</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group2/e.mp3" data-label="Jolly e">
+              <span>e</span>
+              <small>short e</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group2/h.mp3" data-label="Jolly h">
+              <span>h</span>
+              <small>h</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group2/m.mp3" data-label="Jolly m">
+              <span>m</span>
+              <small>m</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group2/r.mp3" data-label="Jolly r">
+              <span>r</span>
+              <small>r</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group3/b.mp3" data-label="Jolly b">
+              <span>b</span>
+              <small>b</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group3/f.mp3" data-label="Jolly f">
+              <span>f</span>
+              <small>f</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group3/g.mp3" data-label="Jolly g">
+              <span>g</span>
+              <small>g</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group3/l.mp3" data-label="Jolly l">
+              <span>l</span>
+              <small>l</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group3/o.mp3" data-label="Jolly o">
+              <span>o</span>
+              <small>short o</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group3/u.mp3" data-label="Jolly u">
+              <span>u</span>
+              <small>short u</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group4/ai.mp3" data-label="Jolly ai">
+              <span>ai</span>
+              <small>long a</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group4/ee.mp3" data-label="Jolly ee">
+              <span>ee</span>
+              <small>long e</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group4/ie.mp3" data-label="Jolly ie">
+              <span>ie</span>
+              <small>long i</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group4/j.mp3" data-label="Jolly j">
+              <span>j</span>
+              <small>j</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group4/oa.mp3" data-label="Jolly oa">
+              <span>oa</span>
+              <small>long o</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group4/or.mp3" data-label="Jolly or">
+              <span>or</span>
+              <small>or</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group5/book.mp3" data-label="Jolly book">
+              <span>book</span>
+              <small>short oo</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group5/moon.mp3" data-label="Jolly moon">
+              <span>moon</span>
+              <small>long oo</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group5/ng.mp3" data-label="Jolly ng">
+              <span>ng</span>
+              <small>ng</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group5/v.mp3" data-label="Jolly v">
+              <span>v</span>
+              <small>v</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group5/w.mp3" data-label="Jolly w">
+              <span>w</span>
+              <small>w</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group5/z.mp3" data-label="Jolly z">
+              <span>z</span>
+              <small>z</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group6/ch.mp3" data-label="Jolly ch">
+              <span>ch</span>
+              <small>ch</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group6/sh.mp3" data-label="Jolly sh">
+              <span>sh</span>
+              <small>sh</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group6/three.mp3" data-label="Jolly three">
+              <span>three</span>
+              <small>th /θ/</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group6/this.mp3" data-label="Jolly this">
+              <span>this</span>
+              <small>th /ð/</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group6/x.mp3" data-label="Jolly x">
+              <span>x</span>
+              <small>x /ks/</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group6/y.mp3" data-label="Jolly y">
+              <span>y</span>
+              <small>y</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group7/ar.mp3" data-label="Jolly ar">
+              <span>ar</span>
+              <small>ar</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group7/er.mp3" data-label="Jolly er">
+              <span>er</span>
+              <small>er</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group7/oi.mp3" data-label="Jolly oi">
+              <span>oi</span>
+              <small>oi</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group7/ou.mp3" data-label="Jolly ou">
+              <span>ou</span>
+              <small>ou</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group7/qu.mp3" data-label="Jolly qu">
+              <span>qu</span>
+              <small>qu /kw/</small>
+            </button>
+<button class="jolly-tile" type="button" data-audio="reference-audio/jolly-letter-sounds/northamerican_english/group7/ue.mp3" data-label="Jolly ue">
+              <span>ue</span>
+              <small>ue</small>
+            </button>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const status = document.querySelector("#audioStatus");
+      let activeAudio = null;
+
+      function setStatus(text) {
+        status.textContent = text;
+      }
+
+      async function playAudio(path, label) {
+        if (activeAudio) {
+          activeAudio.pause();
+          activeAudio.currentTime = 0;
+        }
+        activeAudio = new Audio(path);
+        setStatus(`${label} 再生中`);
+        try {
+          await activeAudio.play();
+        } catch (error) {
+          setStatus(`${label} を再生できません`);
+          return;
+        }
+        activeAudio.addEventListener("ended", () => setStatus("音声待機中"), { once: true });
+        activeAudio.addEventListener("error", () => setStatus(`${label} を再生できません`), { once: true });
+      }
+
+      document.addEventListener("click", (event) => {
+        const audioButton = event.target.closest("[data-audio]");
+        if (audioButton) {
+          playAudio(audioButton.dataset.audio, audioButton.dataset.label || audioButton.textContent.trim());
+          return;
+        }
+
+        const filterButton = event.target.closest("[data-filter]");
+        if (filterButton) {
+          const value = filterButton.dataset.filter;
+          document.querySelectorAll("[data-filter]").forEach((button) => button.classList.toggle("is-active", button === filterButton));
+          document.querySelectorAll("#phonemeRows tr").forEach((row) => {
+            row.hidden = value !== "all" && row.dataset.group !== value;
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

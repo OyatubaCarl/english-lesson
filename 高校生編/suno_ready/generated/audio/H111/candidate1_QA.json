@@ -1,0 +1,228 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H111.md",
+  "audio": "高校生編/suno_ready/generated/audio/H111/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 188.08,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9957,
+  "expected_words": 233,
+  "transcribed_words": 232,
+  "matched_words": 230,
+  "coverage": 0.9871,
+  "precision": 0.9914,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 232,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 150,
+      "length": 2,
+      "words": [
+        "a",
+        "parent"
+      ]
+    },
+    {
+      "start": 211,
+      "length": 1,
+      "words": [
+        "will"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 150,
+      "actual_start": 150,
+      "expected": [
+        "a",
+        "parent"
+      ],
+      "actual": [
+        "apparent"
+      ],
+      "actual_confidence": 0.2847,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 211,
+      "actual_start": 210,
+      "expected": [
+        "will"
+      ],
+      "actual": [
+        "we'll"
+      ],
+      "actual_confidence": 0.8736,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "It was a spring morning when I learned that my wife was pregnant Along with joy, a great responsibility settled on my shoulders Nine months later, our infant was born Our son, small hands, small feet A peaceful sleeping face Just by being there, the world seemed to change But raising a child was far tougher than I had imagined babies cry regardless of day or night frequently we were kept busy with feeding and changing diapers lack of sleep was severe even when we desperately wanted sleep the sound of his crying woke us immediately My wife and I were both exhausted And yet the moment our son laughed All the fatigue blew away The feel of his small hand Gripping my finger When I feel the heartbeat in his chest As he sleeps I feel deeply happy Raising a child is also a process that makes a parent apparent While we seem to be raising the child We are in truth being raised by the child Patience, endurance, unconditional love My son drew out of me qualities I had never possessed before A few years later, my son began attending nursery school Every morning at parting, he waves his small hand The relationship between my son and me We'll develop over a long journey until he is a teenager, until he is an adult, until one day he leaves home.",
+  "segments": [
+    {
+      "start": 11.06,
+      "end": 16.82,
+      "text": "It was a spring morning when I learned that my wife was pregnant"
+    },
+    {
+      "start": 18.42,
+      "end": 24.86,
+      "text": "Along with joy, a great responsibility settled on my shoulders"
+    },
+    {
+      "start": 26.1,
+      "end": 31.56,
+      "text": "Nine months later, our infant was born"
+    },
+    {
+      "start": 31.56,
+      "end": 36.44,
+      "text": "Our son, small hands, small feet"
+    },
+    {
+      "start": 36.44,
+      "end": 39.88,
+      "text": "A peaceful sleeping face"
+    },
+    {
+      "start": 42.66,
+      "end": 48.32,
+      "text": "Just by being there, the world seemed to change"
+    },
+    {
+      "start": 48.32,
+      "end": 52.36,
+      "text": "But raising a child was far tougher"
+    },
+    {
+      "start": 52.36,
+      "end": 54.94,
+      "text": "than I had imagined"
+    },
+    {
+      "start": 56.36,
+      "end": 60.08,
+      "text": "babies cry regardless of day or night"
+    },
+    {
+      "start": 60.08,
+      "end": 61.52,
+      "text": "frequently"
+    },
+    {
+      "start": 62.36,
+      "end": 66.12,
+      "text": "we were kept busy with feeding and changing diapers"
+    },
+    {
+      "start": 67.36,
+      "end": 69.66,
+      "text": "lack of sleep was severe"
+    },
+    {
+      "start": 72.36,
+      "end": 75.0,
+      "text": "even when we desperately wanted sleep"
+    },
+    {
+      "start": 75.0,
+      "end": 78.8,
+      "text": "the sound of his crying woke us immediately"
+    },
+    {
+      "start": 78.8,
+      "end": 83.46,
+      "text": "My wife and I were both exhausted"
+    },
+    {
+      "start": 84.54,
+      "end": 87.78,
+      "text": "And yet the moment our son laughed"
+    },
+    {
+      "start": 87.78,
+      "end": 90.9,
+      "text": "All the fatigue blew away"
+    },
+    {
+      "start": 91.8,
+      "end": 94.58,
+      "text": "The feel of his small hand"
+    },
+    {
+      "start": 94.58,
+      "end": 97.0,
+      "text": "Gripping my finger"
+    },
+    {
+      "start": 98.6,
+      "end": 101.84,
+      "text": "When I feel the heartbeat in his chest"
+    },
+    {
+      "start": 101.84,
+      "end": 105.52,
+      "text": "As he sleeps I feel deeply happy"
+    },
+    {
+      "start": 105.52,
+      "end": 111.86,
+      "text": "Raising a child is also a process that makes a parent apparent"
+    },
+    {
+      "start": 112.52,
+      "end": 117.22,
+      "text": "While we seem to be raising the child"
+    },
+    {
+      "start": 118.44,
+      "end": 124.16,
+      "text": "We are in truth being raised by the child"
+    },
+    {
+      "start": 127.08,
+      "end": 132.7,
+      "text": "Patience, endurance, unconditional love"
+    },
+    {
+      "start": 132.7,
+      "end": 139.04,
+      "text": "My son drew out of me qualities I had never possessed before"
+    },
+    {
+      "start": 139.7,
+      "end": 146.48,
+      "text": "A few years later, my son began attending nursery school"
+    },
+    {
+      "start": 146.48,
+      "end": 154.46,
+      "text": "Every morning at parting, he waves his small hand"
+    },
+    {
+      "start": 156.24,
+      "end": 159.98,
+      "text": "The relationship between my son and me"
+    },
+    {
+      "start": 159.98,
+      "end": 172.5,
+      "text": "We'll develop over a long journey until he is a teenager, until he is an adult, until"
+    },
+    {
+      "start": 172.5,
+      "end": 176.58,
+      "text": "one day he leaves home."
+    }
+  ]
+}

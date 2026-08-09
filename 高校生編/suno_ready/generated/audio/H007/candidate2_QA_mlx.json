@@ -1,0 +1,132 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H007.md",
+  "audio": "高校生編/suno_ready/generated/audio/H007/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 87.76,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0134,
+  "expected_words": 149,
+  "transcribed_words": 151,
+  "matched_words": 148,
+  "coverage": 0.9933,
+  "precision": 0.9801,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 148,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 61,
+      "length": 1,
+      "words": [
+        "coworkers"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 61,
+      "actual_start": 61,
+      "expected": [
+        "coworkers"
+      ],
+      "actual": [
+        "co",
+        "workers"
+      ],
+      "actual_confidence": 0.0,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 124,
+      "actual_start": 125,
+      "expected": [],
+      "actual": [
+        "so"
+      ],
+      "actual_confidence": 0.0
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "On Monday morning, I get up at half past six. This is my habit. In the kitchen, I make coffee and open the newspaper. That is my daily rhythm. At the station, I take the train and commute to my office. The journey is ordinary. In a crowded car, many passengers stand silently I work for a small local company My co-workers are kind and a colleague often laughs loudly Each person carries out their duties At noon we gather for lunch together In the afternoon I finish one task after another The phone rings and a new request appears Work proceeds in a steady way In the evening the same common faces return to the station And people rush home through the train window So I look beyond the tall buildings at the fading sky Within these quiet days, a small sense of purpose lives And I believe in it",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 19.68,
+      "text": "On Monday morning, I get up at half past six. This is my habit. In the kitchen, I make coffee and open the newspaper. That is my daily rhythm. At the station, I take the train and commute to my office. The journey is ordinary."
+    },
+    {
+      "start": 19.68,
+      "end": 25.54,
+      "text": "In a crowded car, many passengers stand silently"
+    },
+    {
+      "start": 25.54,
+      "end": 30.24,
+      "text": "I work for a small local company"
+    },
+    {
+      "start": 30.24,
+      "end": 35.46,
+      "text": "My co-workers are kind and a colleague often laughs loudly"
+    },
+    {
+      "start": 35.46,
+      "end": 39.52,
+      "text": "Each person carries out their duties"
+    },
+    {
+      "start": 39.52,
+      "end": 44.1,
+      "text": "At noon we gather for lunch together"
+    },
+    {
+      "start": 44.1,
+      "end": 50.12,
+      "text": "In the afternoon I finish one task after another"
+    },
+    {
+      "start": 50.12,
+      "end": 53.78,
+      "text": "The phone rings and a new request appears"
+    },
+    {
+      "start": 55.12,
+      "end": 59.04,
+      "text": "Work proceeds in a steady way"
+    },
+    {
+      "start": 59.04,
+      "end": 64.64,
+      "text": "In the evening the same common faces return to the station"
+    },
+    {
+      "start": 64.64,
+      "end": 71.34,
+      "text": "And people rush home through the train window"
+    },
+    {
+      "start": 71.34,
+      "end": 77.52,
+      "text": "So I look beyond the tall buildings at the fading sky"
+    },
+    {
+      "start": 79.14,
+      "end": 83.88,
+      "text": "Within these quiet days, a small sense of purpose lives"
+    },
+    {
+      "start": 83.88,
+      "end": 87.76,
+      "text": "And I believe in it"
+    }
+  ]
+}

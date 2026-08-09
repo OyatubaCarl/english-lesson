@@ -1,0 +1,1382 @@
+{
+  "lesson": "H084",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h084_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H084/candidate2-full.mp3",
+  "source_audio_sha256": "a5064e53e613a8eab8275df5cdfa78e2e607d91f096a3b096e21612054d93943",
+  "bpm": 84.66,
+  "exact_word_match": true,
+  "word_count": 209,
+  "line_count": 14,
+  "first_word_start": 7.064,
+  "last_word_end": 146.179,
+  "lines": [
+    {
+      "line": 1,
+      "english": "The world population has passed eight billion.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 7.064,
+          "end": 7.161
+        },
+        {
+          "word": "world",
+          "display_index": 1,
+          "start": 7.161,
+          "end": 7.841
+        },
+        {
+          "word": "population",
+          "display_index": 2,
+          "start": 7.841,
+          "end": 9.581
+        },
+        {
+          "word": "has",
+          "display_index": 3,
+          "start": 9.581,
+          "end": 9.881
+        },
+        {
+          "word": "passed",
+          "display_index": 4,
+          "start": 9.881,
+          "end": 10.701
+        },
+        {
+          "word": "eight",
+          "display_index": 5,
+          "start": 10.701,
+          "end": 11.141
+        },
+        {
+          "word": "billion.",
+          "display_index": 6,
+          "start": 11.141,
+          "end": 11.922
+        }
+      ],
+      "start": 7.064,
+      "end": 11.922
+    },
+    {
+      "line": 2,
+      "english": "Yet more than 800 million people still lack enough food and suffer from hunger.",
+      "word_timings": [
+        {
+          "word": "Yet",
+          "display_index": 0,
+          "start": 12.222,
+          "end": 12.402
+        },
+        {
+          "word": "more",
+          "display_index": 1,
+          "start": 12.402,
+          "end": 12.582
+        },
+        {
+          "word": "than",
+          "display_index": 2,
+          "start": 12.582,
+          "end": 12.822
+        },
+        {
+          "word": "800",
+          "display_index": 3,
+          "start": 12.822,
+          "end": 13.462
+        },
+        {
+          "word": "million",
+          "display_index": 4,
+          "start": 13.462,
+          "end": 13.942
+        },
+        {
+          "word": "people",
+          "display_index": 5,
+          "start": 13.942,
+          "end": 14.582
+        },
+        {
+          "word": "still",
+          "display_index": 6,
+          "start": 14.582,
+          "end": 14.862
+        },
+        {
+          "word": "lack",
+          "display_index": 7,
+          "start": 14.862,
+          "end": 15.102
+        },
+        {
+          "word": "enough",
+          "display_index": 8,
+          "start": 15.102,
+          "end": 15.502
+        },
+        {
+          "word": "food",
+          "display_index": 9,
+          "start": 15.502,
+          "end": 15.962
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 15.962,
+          "end": 16.222
+        },
+        {
+          "word": "suffer",
+          "display_index": 11,
+          "start": 16.222,
+          "end": 16.562
+        },
+        {
+          "word": "from",
+          "display_index": 12,
+          "start": 16.562,
+          "end": 16.922
+        },
+        {
+          "word": "hunger.",
+          "display_index": 13,
+          "start": 16.922,
+          "end": 18.422
+        }
+      ],
+      "start": 12.222,
+      "end": 18.422
+    },
+    {
+      "line": 3,
+      "english": "Agriculture is one of the oldest industries of humanity and a foundation of civilization.",
+      "word_timings": [
+        {
+          "word": "Agriculture",
+          "display_index": 0,
+          "start": 18.762,
+          "end": 19.984
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 19.984,
+          "end": 20.183
+        },
+        {
+          "word": "one",
+          "display_index": 2,
+          "start": 20.183,
+          "end": 20.363
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 20.363,
+          "end": 20.52
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 20.52,
+          "end": 20.863
+        },
+        {
+          "word": "oldest",
+          "display_index": 5,
+          "start": 20.863,
+          "end": 21.923
+        },
+        {
+          "word": "industries",
+          "display_index": 6,
+          "start": 21.923,
+          "end": 23.443
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 23.443,
+          "end": 23.623
+        },
+        {
+          "word": "humanity",
+          "display_index": 8,
+          "start": 23.623,
+          "end": 25.023
+        },
+        {
+          "word": "and",
+          "display_index": 9,
+          "start": 25.023,
+          "end": 25.146
+        },
+        {
+          "word": "a",
+          "display_index": 10,
+          "start": 25.146,
+          "end": 25.303
+        },
+        {
+          "word": "foundation",
+          "display_index": 11,
+          "start": 25.303,
+          "end": 26.444
+        },
+        {
+          "word": "of",
+          "display_index": 12,
+          "start": 26.444,
+          "end": 26.724
+        },
+        {
+          "word": "civilization.",
+          "display_index": 13,
+          "start": 26.724,
+          "end": 28.224
+        }
+      ],
+      "start": 18.762,
+      "end": 28.224
+    },
+    {
+      "line": 4,
+      "english": "Since the invention of irrigation farming in ancient Mesopotamia, humanity has multiplied crop yields many times over through improved varieties and new technology.",
+      "word_timings": [
+        {
+          "word": "Since",
+          "display_index": 0,
+          "start": 32.584,
+          "end": 32.861
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 32.861,
+          "end": 33.004
+        },
+        {
+          "word": "invention",
+          "display_index": 2,
+          "start": 33.004,
+          "end": 33.724
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 33.724,
+          "end": 33.925
+        },
+        {
+          "word": "irrigation",
+          "display_index": 4,
+          "start": 33.925,
+          "end": 35.045
+        },
+        {
+          "word": "farming",
+          "display_index": 5,
+          "start": 35.045,
+          "end": 35.825
+        },
+        {
+          "word": "in",
+          "display_index": 6,
+          "start": 35.825,
+          "end": 36.005
+        },
+        {
+          "word": "ancient",
+          "display_index": 7,
+          "start": 36.005,
+          "end": 36.625
+        },
+        {
+          "word": "Mesopotamia,",
+          "display_index": 8,
+          "start": 36.625,
+          "end": 38.545
+        },
+        {
+          "word": "humanity",
+          "display_index": 9,
+          "start": 38.545,
+          "end": 39.245
+        },
+        {
+          "word": "has",
+          "display_index": 10,
+          "start": 39.245,
+          "end": 39.445
+        },
+        {
+          "word": "multiplied",
+          "display_index": 11,
+          "start": 39.445,
+          "end": 40.105
+        },
+        {
+          "word": "crop",
+          "display_index": 12,
+          "start": 40.105,
+          "end": 40.485
+        },
+        {
+          "word": "yields",
+          "display_index": 13,
+          "start": 40.485,
+          "end": 40.845
+        },
+        {
+          "word": "many",
+          "display_index": 14,
+          "start": 40.845,
+          "end": 41.305
+        },
+        {
+          "word": "times",
+          "display_index": 15,
+          "start": 41.305,
+          "end": 41.986
+        },
+        {
+          "word": "over",
+          "display_index": 16,
+          "start": 41.986,
+          "end": 42.546
+        },
+        {
+          "word": "through",
+          "display_index": 17,
+          "start": 42.546,
+          "end": 42.806
+        },
+        {
+          "word": "improved",
+          "display_index": 18,
+          "start": 42.806,
+          "end": 43.306
+        },
+        {
+          "word": "varieties",
+          "display_index": 19,
+          "start": 43.306,
+          "end": 44.586
+        },
+        {
+          "word": "and",
+          "display_index": 20,
+          "start": 44.586,
+          "end": 45.386
+        },
+        {
+          "word": "new",
+          "display_index": 21,
+          "start": 45.386,
+          "end": 46.026
+        },
+        {
+          "word": "technology.",
+          "display_index": 22,
+          "start": 46.026,
+          "end": 47.246
+        }
+      ],
+      "start": 32.584,
+      "end": 47.246
+    },
+    {
+      "line": 5,
+      "english": "In the Green Revolution of the twentieth century, high-yield varieties and chemical fertilizers dramatically increased food production in Asia and Africa.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 47.546,
+          "end": 47.695
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 47.695,
+          "end": 47.826
+        },
+        {
+          "word": "Green",
+          "display_index": 2,
+          "start": 47.826,
+          "end": 48.226
+        },
+        {
+          "word": "Revolution",
+          "display_index": 3,
+          "start": 48.226,
+          "end": 48.967
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 48.967,
+          "end": 49.094
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 49.094,
+          "end": 49.207
+        },
+        {
+          "word": "twentieth",
+          "display_index": 6,
+          "start": 49.207,
+          "end": 49.927
+        },
+        {
+          "word": "century,",
+          "display_index": 7,
+          "start": 49.927,
+          "end": 51.847
+        },
+        {
+          "word": "high-yield",
+          "display_index": 8,
+          "start": 51.847,
+          "end": 52.427
+        },
+        {
+          "word": "high-yield",
+          "display_index": 8,
+          "start": 52.427,
+          "end": 52.747
+        },
+        {
+          "word": "varieties",
+          "display_index": 9,
+          "start": 52.747,
+          "end": 54.687
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 54.687,
+          "end": 54.847
+        },
+        {
+          "word": "chemical",
+          "display_index": 11,
+          "start": 54.847,
+          "end": 55.547
+        },
+        {
+          "word": "fertilizers",
+          "display_index": 12,
+          "start": 55.547,
+          "end": 56.768
+        },
+        {
+          "word": "dramatically",
+          "display_index": 13,
+          "start": 56.768,
+          "end": 57.568
+        },
+        {
+          "word": "increased",
+          "display_index": 14,
+          "start": 57.568,
+          "end": 58.348
+        },
+        {
+          "word": "food",
+          "display_index": 15,
+          "start": 58.348,
+          "end": 58.688
+        },
+        {
+          "word": "production",
+          "display_index": 16,
+          "start": 58.688,
+          "end": 59.588
+        },
+        {
+          "word": "in",
+          "display_index": 17,
+          "start": 59.588,
+          "end": 59.868
+        },
+        {
+          "word": "Asia",
+          "display_index": 18,
+          "start": 59.868,
+          "end": 61.048
+        },
+        {
+          "word": "and",
+          "display_index": 19,
+          "start": 61.048,
+          "end": 61.308
+        },
+        {
+          "word": "Africa.",
+          "display_index": 20,
+          "start": 61.308,
+          "end": 62.808
+        }
+      ],
+      "start": 47.546,
+      "end": 62.808
+    },
+    {
+      "line": 6,
+      "english": "But at the same time, the excessive use of pesticides and fertilizers has contaminated soil and water, causing long-term problems.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 63.868,
+          "end": 64.109
+        },
+        {
+          "word": "at",
+          "display_index": 1,
+          "start": 64.109,
+          "end": 64.215
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 64.215,
+          "end": 64.389
+        },
+        {
+          "word": "same",
+          "display_index": 3,
+          "start": 64.389,
+          "end": 64.729
+        },
+        {
+          "word": "time,",
+          "display_index": 4,
+          "start": 64.729,
+          "end": 65.668
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 65.668,
+          "end": 65.849
+        },
+        {
+          "word": "excessive",
+          "display_index": 6,
+          "start": 65.849,
+          "end": 66.769
+        },
+        {
+          "word": "use",
+          "display_index": 7,
+          "start": 66.769,
+          "end": 67.149
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 67.149,
+          "end": 67.409
+        },
+        {
+          "word": "pesticides",
+          "display_index": 9,
+          "start": 67.409,
+          "end": 68.809
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 68.809,
+          "end": 68.969
+        },
+        {
+          "word": "fertilizers",
+          "display_index": 11,
+          "start": 68.969,
+          "end": 70.049
+        },
+        {
+          "word": "has",
+          "display_index": 12,
+          "start": 70.049,
+          "end": 70.589
+        },
+        {
+          "word": "contaminated",
+          "display_index": 13,
+          "start": 70.589,
+          "end": 72.31
+        },
+        {
+          "word": "soil",
+          "display_index": 14,
+          "start": 72.31,
+          "end": 72.79
+        },
+        {
+          "word": "and",
+          "display_index": 15,
+          "start": 72.79,
+          "end": 73.01
+        },
+        {
+          "word": "water,",
+          "display_index": 16,
+          "start": 73.01,
+          "end": 73.87
+        },
+        {
+          "word": "causing",
+          "display_index": 17,
+          "start": 73.87,
+          "end": 74.61
+        },
+        {
+          "word": "long-term",
+          "display_index": 18,
+          "start": 74.61,
+          "end": 74.93
+        },
+        {
+          "word": "long-term",
+          "display_index": 18,
+          "start": 74.93,
+          "end": 75.27
+        },
+        {
+          "word": "problems.",
+          "display_index": 19,
+          "start": 75.27,
+          "end": 76.27
+        }
+      ],
+      "start": 63.868,
+      "end": 76.27
+    },
+    {
+      "line": 7,
+      "english": "In recent years, both organic farming and genetically modified crops have drawn attention.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 76.57,
+          "end": 76.73
+        },
+        {
+          "word": "recent",
+          "display_index": 1,
+          "start": 76.73,
+          "end": 77.27
+        },
+        {
+          "word": "years,",
+          "display_index": 2,
+          "start": 77.27,
+          "end": 78.33
+        },
+        {
+          "word": "both",
+          "display_index": 3,
+          "start": 78.33,
+          "end": 78.73
+        },
+        {
+          "word": "organic",
+          "display_index": 4,
+          "start": 78.73,
+          "end": 79.391
+        },
+        {
+          "word": "farming",
+          "display_index": 5,
+          "start": 79.391,
+          "end": 81.351
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 81.351,
+          "end": 81.491
+        },
+        {
+          "word": "genetically",
+          "display_index": 7,
+          "start": 81.491,
+          "end": 82.351
+        },
+        {
+          "word": "modified",
+          "display_index": 8,
+          "start": 82.351,
+          "end": 83.151
+        },
+        {
+          "word": "crops",
+          "display_index": 9,
+          "start": 83.151,
+          "end": 83.691
+        },
+        {
+          "word": "have",
+          "display_index": 10,
+          "start": 83.691,
+          "end": 84.031
+        },
+        {
+          "word": "drawn",
+          "display_index": 11,
+          "start": 84.031,
+          "end": 84.451
+        },
+        {
+          "word": "attention.",
+          "display_index": 12,
+          "start": 84.451,
+          "end": 85.951
+        }
+      ],
+      "start": 76.57,
+      "end": 85.951
+    },
+    {
+      "line": 8,
+      "english": "The former is kinder to the environment but difficult for mass production; the latter raises yields but leaves concerns about safety.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 87.422,
+          "end": 87.572
+        },
+        {
+          "word": "former",
+          "display_index": 1,
+          "start": 87.572,
+          "end": 88.159
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 88.159,
+          "end": 88.292
+        },
+        {
+          "word": "kinder",
+          "display_index": 3,
+          "start": 88.292,
+          "end": 88.826
+        },
+        {
+          "word": "to",
+          "display_index": 4,
+          "start": 88.826,
+          "end": 89.03
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 89.03,
+          "end": 89.212
+        },
+        {
+          "word": "environment",
+          "display_index": 6,
+          "start": 89.212,
+          "end": 90.252
+        },
+        {
+          "word": "but",
+          "display_index": 7,
+          "start": 90.252,
+          "end": 90.432
+        },
+        {
+          "word": "difficult",
+          "display_index": 8,
+          "start": 90.432,
+          "end": 91.092
+        },
+        {
+          "word": "for",
+          "display_index": 9,
+          "start": 91.092,
+          "end": 91.652
+        },
+        {
+          "word": "mass",
+          "display_index": 10,
+          "start": 91.652,
+          "end": 92.012
+        },
+        {
+          "word": "production;",
+          "display_index": 11,
+          "start": 92.012,
+          "end": 93.072
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 93.072,
+          "end": 93.252
+        },
+        {
+          "word": "latter",
+          "display_index": 13,
+          "start": 93.252,
+          "end": 93.772
+        },
+        {
+          "word": "raises",
+          "display_index": 14,
+          "start": 93.772,
+          "end": 94.373
+        },
+        {
+          "word": "yields",
+          "display_index": 15,
+          "start": 94.373,
+          "end": 95.053
+        },
+        {
+          "word": "but",
+          "display_index": 16,
+          "start": 95.053,
+          "end": 95.373
+        },
+        {
+          "word": "leaves",
+          "display_index": 17,
+          "start": 95.373,
+          "end": 95.713
+        },
+        {
+          "word": "concerns",
+          "display_index": 18,
+          "start": 95.713,
+          "end": 96.713
+        },
+        {
+          "word": "about",
+          "display_index": 19,
+          "start": 96.713,
+          "end": 97.333
+        },
+        {
+          "word": "safety.",
+          "display_index": 20,
+          "start": 97.333,
+          "end": 98.173
+        }
+      ],
+      "start": 87.422,
+      "end": 98.173
+    },
+    {
+      "line": 9,
+      "english": "Another major problem is food waste.",
+      "word_timings": [
+        {
+          "word": "Another",
+          "display_index": 0,
+          "start": 98.473,
+          "end": 99.153
+        },
+        {
+          "word": "major",
+          "display_index": 1,
+          "start": 99.153,
+          "end": 99.653
+        },
+        {
+          "word": "problem",
+          "display_index": 2,
+          "start": 99.653,
+          "end": 100.253
+        },
+        {
+          "word": "is",
+          "display_index": 3,
+          "start": 100.253,
+          "end": 100.573
+        },
+        {
+          "word": "food",
+          "display_index": 4,
+          "start": 100.573,
+          "end": 101.093
+        },
+        {
+          "word": "waste.",
+          "display_index": 5,
+          "start": 101.093,
+          "end": 101.874
+        }
+      ],
+      "start": 98.473,
+      "end": 101.874
+    },
+    {
+      "line": 10,
+      "english": "In developed countries, about one third of all food produced is thrown away.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 101.874,
+          "end": 102.174
+        },
+        {
+          "word": "developed",
+          "display_index": 1,
+          "start": 102.174,
+          "end": 102.854
+        },
+        {
+          "word": "countries,",
+          "display_index": 2,
+          "start": 102.854,
+          "end": 104.174
+        },
+        {
+          "word": "about",
+          "display_index": 3,
+          "start": 104.174,
+          "end": 104.714
+        },
+        {
+          "word": "one",
+          "display_index": 4,
+          "start": 104.714,
+          "end": 105.174
+        },
+        {
+          "word": "third",
+          "display_index": 5,
+          "start": 105.174,
+          "end": 105.654
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 105.654,
+          "end": 105.854
+        },
+        {
+          "word": "all",
+          "display_index": 7,
+          "start": 105.854,
+          "end": 106.134
+        },
+        {
+          "word": "food",
+          "display_index": 8,
+          "start": 106.134,
+          "end": 106.654
+        },
+        {
+          "word": "produced",
+          "display_index": 9,
+          "start": 106.654,
+          "end": 107.333
+        },
+        {
+          "word": "is",
+          "display_index": 10,
+          "start": 107.333,
+          "end": 108.274
+        },
+        {
+          "word": "thrown",
+          "display_index": 11,
+          "start": 108.274,
+          "end": 108.754
+        },
+        {
+          "word": "away.",
+          "display_index": 12,
+          "start": 108.754,
+          "end": 110.254
+        }
+      ],
+      "start": 101.874,
+      "end": 110.254
+    },
+    {
+      "line": 11,
+      "english": "In a world where people go hungry, this is a serious contradiction.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 111.615,
+          "end": 111.73
+        },
+        {
+          "word": "a",
+          "display_index": 1,
+          "start": 111.73,
+          "end": 111.895
+        },
+        {
+          "word": "world",
+          "display_index": 2,
+          "start": 111.895,
+          "end": 112.295
+        },
+        {
+          "word": "where",
+          "display_index": 3,
+          "start": 112.295,
+          "end": 112.595
+        },
+        {
+          "word": "people",
+          "display_index": 4,
+          "start": 112.595,
+          "end": 112.995
+        },
+        {
+          "word": "go",
+          "display_index": 5,
+          "start": 112.995,
+          "end": 113.315
+        },
+        {
+          "word": "hungry,",
+          "display_index": 6,
+          "start": 113.315,
+          "end": 114.235
+        },
+        {
+          "word": "this",
+          "display_index": 7,
+          "start": 114.235,
+          "end": 114.42
+        },
+        {
+          "word": "is",
+          "display_index": 8,
+          "start": 114.42,
+          "end": 114.635
+        },
+        {
+          "word": "a",
+          "display_index": 9,
+          "start": 114.635,
+          "end": 114.735
+        },
+        {
+          "word": "serious",
+          "display_index": 10,
+          "start": 114.735,
+          "end": 115.435
+        },
+        {
+          "word": "contradiction.",
+          "display_index": 11,
+          "start": 115.435,
+          "end": 116.916
+        }
+      ],
+      "start": 111.615,
+      "end": 116.916
+    },
+    {
+      "line": 12,
+      "english": "Solving the food problem requires more than increasing production.",
+      "word_timings": [
+        {
+          "word": "Solving",
+          "display_index": 0,
+          "start": 117.216,
+          "end": 118.123
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 118.123,
+          "end": 118.256
+        },
+        {
+          "word": "food",
+          "display_index": 2,
+          "start": 118.256,
+          "end": 118.596
+        },
+        {
+          "word": "problem",
+          "display_index": 3,
+          "start": 118.596,
+          "end": 119.516
+        },
+        {
+          "word": "requires",
+          "display_index": 4,
+          "start": 119.516,
+          "end": 120.416
+        },
+        {
+          "word": "more",
+          "display_index": 5,
+          "start": 120.416,
+          "end": 120.756
+        },
+        {
+          "word": "than",
+          "display_index": 6,
+          "start": 120.756,
+          "end": 120.976
+        },
+        {
+          "word": "increasing",
+          "display_index": 7,
+          "start": 120.976,
+          "end": 121.636
+        },
+        {
+          "word": "production.",
+          "display_index": 8,
+          "start": 121.636,
+          "end": 122.476
+        }
+      ],
+      "start": 117.216,
+      "end": 122.476
+    },
+    {
+      "line": 13,
+      "english": "Improvement in distribution, reduction of waste, and a change in the awareness of each consumer are all needed.",
+      "word_timings": [
+        {
+          "word": "Improvement",
+          "display_index": 0,
+          "start": 122.776,
+          "end": 123.676
+        },
+        {
+          "word": "in",
+          "display_index": 1,
+          "start": 123.676,
+          "end": 123.956
+        },
+        {
+          "word": "distribution,",
+          "display_index": 2,
+          "start": 123.956,
+          "end": 125.737
+        },
+        {
+          "word": "reduction",
+          "display_index": 3,
+          "start": 125.737,
+          "end": 127.017
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 127.017,
+          "end": 127.497
+        },
+        {
+          "word": "waste,",
+          "display_index": 5,
+          "start": 127.497,
+          "end": 128.617
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 128.617,
+          "end": 128.73
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 128.73,
+          "end": 128.917
+        },
+        {
+          "word": "change",
+          "display_index": 8,
+          "start": 128.917,
+          "end": 129.797
+        },
+        {
+          "word": "in",
+          "display_index": 9,
+          "start": 129.797,
+          "end": 129.897
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 129.897,
+          "end": 130.117
+        },
+        {
+          "word": "awareness",
+          "display_index": 11,
+          "start": 130.117,
+          "end": 131.037
+        },
+        {
+          "word": "of",
+          "display_index": 12,
+          "start": 131.037,
+          "end": 131.237
+        },
+        {
+          "word": "each",
+          "display_index": 13,
+          "start": 131.237,
+          "end": 131.477
+        },
+        {
+          "word": "consumer",
+          "display_index": 14,
+          "start": 131.477,
+          "end": 133.914
+        },
+        {
+          "word": "are",
+          "display_index": 15,
+          "start": 133.914,
+          "end": 134.158
+        },
+        {
+          "word": "all",
+          "display_index": 16,
+          "start": 134.158,
+          "end": 134.498
+        },
+        {
+          "word": "needed.",
+          "display_index": 17,
+          "start": 134.498,
+          "end": 135.998
+        }
+      ],
+      "start": 122.776,
+      "end": 135.998
+    },
+    {
+      "line": 14,
+      "english": "To feed the world in a sustainable way is the greatest challenge of the coming century.",
+      "word_timings": [
+        {
+          "word": "To",
+          "display_index": 0,
+          "start": 137.124,
+          "end": 137.298
+        },
+        {
+          "word": "feed",
+          "display_index": 1,
+          "start": 137.298,
+          "end": 137.853
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 137.853,
+          "end": 138.058
+        },
+        {
+          "word": "world",
+          "display_index": 3,
+          "start": 138.058,
+          "end": 138.698
+        },
+        {
+          "word": "in",
+          "display_index": 4,
+          "start": 138.698,
+          "end": 138.879
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 138.879,
+          "end": 138.959
+        },
+        {
+          "word": "sustainable",
+          "display_index": 6,
+          "start": 138.958,
+          "end": 139.959
+        },
+        {
+          "word": "way",
+          "display_index": 7,
+          "start": 139.959,
+          "end": 141.472
+        },
+        {
+          "word": "is",
+          "display_index": 8,
+          "start": 141.472,
+          "end": 141.631
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 141.631,
+          "end": 141.799
+        },
+        {
+          "word": "greatest",
+          "display_index": 10,
+          "start": 141.799,
+          "end": 142.379
+        },
+        {
+          "word": "challenge",
+          "display_index": 11,
+          "start": 142.379,
+          "end": 143.159
+        },
+        {
+          "word": "of",
+          "display_index": 12,
+          "start": 143.159,
+          "end": 143.413
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 143.413,
+          "end": 144.059
+        },
+        {
+          "word": "coming",
+          "display_index": 14,
+          "start": 144.059,
+          "end": 144.679
+        },
+        {
+          "word": "century.",
+          "display_index": 15,
+          "start": 144.679,
+          "end": 146.179
+        }
+      ],
+      "start": 137.124,
+      "end": 146.179
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

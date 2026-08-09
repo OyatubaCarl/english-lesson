@@ -1,0 +1,1148 @@
+{
+  "lesson": 32,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L32/planning/lesson.json",
+  "title_en": "Lesson 32  A Day in Town",
+  "title_ja": "町の一日",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 15,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Early in the morning, I was walking through town with my family.",
+      "source_ja": "朝早く、わたしは家族と町を歩いていました。",
+      "display_ja": "朝早く、わたしは家族と町を歩いていました。",
+      "corrected_translation": false,
+      "mixed": "朝早く、わたしは家族と町を歩いていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "朝早く、わたしは家族と町を歩いていました。",
+          "parts": [
+            {
+              "text": "朝",
+              "ruby": "あさ"
+            },
+            {
+              "text": "早",
+              "ruby": "はや"
+            },
+            {
+              "text": "く、わたしは",
+              "ruby": ""
+            },
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "町",
+              "ruby": "まち"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "歩",
+              "ruby": "ある"
+            },
+            {
+              "text": "いていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 2,
+      "english": "First, we stopped at the bookstore near the station, and I chose a book to send to my grandmother.",
+      "source_ja": "まずは駅前の本屋さんに立ち寄って、おばあちゃんに送る本を選びました。",
+      "display_ja": "まずは駅前の本屋さんに立ち寄って、おばあちゃんに送る本を選びました。",
+      "corrected_translation": false,
+      "mixed": "まず station の近くの bookstore に立ち寄り、祖母に送る本を選びました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "まず ",
+          "parts": [
+            {
+              "text": "まず",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "station",
+          "ruby": "駅"
+        },
+        {
+          "type": "ja",
+          "text": " の近くの ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "近",
+              "ruby": "ちか"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "bookstore",
+          "ruby": "本屋"
+        },
+        {
+          "type": "ja",
+          "text": " に立ち寄り、祖母に送る本を選びました。",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "立ち寄",
+              "ruby": "たちよ"
+            },
+            {
+              "text": "り、",
+              "ruby": ""
+            },
+            {
+              "text": "祖母",
+              "ruby": "そぼ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "送",
+              "ruby": "おく"
+            },
+            {
+              "text": "る",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "選",
+              "ruby": "えら"
+            },
+            {
+              "text": "びました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "bookstore",
+          "canonical_word": "bookstore",
+          "meaning": "本屋"
+        },
+        {
+          "english": "station",
+          "canonical_word": "station",
+          "meaning": "駅"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "bookstore",
+          "reading": "本屋",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "bookstore",
+          "canonical_meaning": "本屋"
+        },
+        {
+          "english": "station",
+          "reading": "駅",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "station",
+          "canonical_meaning": "駅"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "“Next, let's visit grandfather at the hospital,” my mother said.",
+      "source_ja": "「次は病院におじいちゃんのお見舞いに行きましょう」と母が言いました。",
+      "display_ja": "「次は病院におじいちゃんのお見舞いに行きましょう」と母が言いました。",
+      "corrected_translation": false,
+      "mixed": "「次は hospital におじいちゃんのお見舞いに行きましょう」と母が言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「次は ",
+          "parts": [
+            {
+              "text": "「",
+              "ruby": ""
+            },
+            {
+              "text": "次",
+              "ruby": "つぎ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "hospital",
+          "ruby": "病院"
+        },
+        {
+          "type": "ja",
+          "text": " におじいちゃんのお見舞いに行きましょう」と母が言いました。",
+          "parts": [
+            {
+              "text": "におじいちゃんのお",
+              "ruby": ""
+            },
+            {
+              "text": "見舞",
+              "ruby": "みま"
+            },
+            {
+              "text": "いに",
+              "ruby": ""
+            },
+            {
+              "text": "行",
+              "ruby": "い"
+            },
+            {
+              "text": "きましょう」と",
+              "ruby": ""
+            },
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "hospital",
+          "canonical_word": "hospital",
+          "meaning": "病院"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "hospital",
+          "reading": "病院",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "hospital",
+          "canonical_meaning": "病院"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "Grandfather has been a little sick since last month.",
+      "source_ja": "おじいちゃんは先月から少し体調を崩しています。",
+      "display_ja": "おじいちゃんは先月から少し体調を崩しています。",
+      "corrected_translation": false,
+      "mixed": "おじいちゃんは先月から少し体調を崩しています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "おじいちゃんは先月から少し体調を崩しています。",
+          "parts": [
+            {
+              "text": "おじいちゃんは",
+              "ruby": ""
+            },
+            {
+              "text": "先月",
+              "ruby": "せんげつ"
+            },
+            {
+              "text": "から",
+              "ruby": ""
+            },
+            {
+              "text": "少",
+              "ruby": "すこ"
+            },
+            {
+              "text": "し",
+              "ruby": ""
+            },
+            {
+              "text": "体調",
+              "ruby": "たいちょう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "崩",
+              "ruby": "くず"
+            },
+            {
+              "text": "しています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 5,
+      "english": "In his bed, he smiled gently and welcomed us.",
+      "source_ja": "ベッドの上で、やさしく微笑んで迎えてくれました。",
+      "display_ja": "ベッドの上で、やさしく微笑んで迎えてくれました。",
+      "corrected_translation": false,
+      "mixed": "ベッドの上で、やさしく微笑んで迎えてくれました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ベッドの上で、やさしく微笑んで迎えてくれました。",
+          "parts": [
+            {
+              "text": "ベッドの",
+              "ruby": ""
+            },
+            {
+              "text": "上",
+              "ruby": "うえ"
+            },
+            {
+              "text": "で、やさしく",
+              "ruby": ""
+            },
+            {
+              "text": "微笑",
+              "ruby": "ほほえ"
+            },
+            {
+              "text": "んで",
+              "ruby": ""
+            },
+            {
+              "text": "迎",
+              "ruby": "むか"
+            },
+            {
+              "text": "えてくれました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 6,
+      "english": "On the way back, we did some shopping at the supermarket.",
+      "source_ja": "帰りに、スーパーで買い物をしました。",
+      "display_ja": "帰りに、スーパーで買い物をしました。",
+      "corrected_translation": false,
+      "mixed": "帰りに、 supermarket で買い物をしました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "帰りに、 ",
+          "parts": [
+            {
+              "text": "帰",
+              "ruby": "かえ"
+            },
+            {
+              "text": "りに、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "supermarket",
+          "ruby": "スーパー"
+        },
+        {
+          "type": "ja",
+          "text": " で買い物をしました。",
+          "parts": [
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "買い物",
+              "ruby": "かいもの"
+            },
+            {
+              "text": "をしました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "supermarket",
+          "canonical_word": "supermarket",
+          "meaning": "スーパー"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "supermarket",
+          "reading": "スーパー",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "supermarket",
+          "canonical_meaning": "スーパー"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "Fresh vegetables and fruit were beautifully arranged.",
+      "source_ja": "新鮮な野菜や果物が、きれいに並んでいます。",
+      "display_ja": "新鮮な野菜や果物が、きれいに並んでいます。",
+      "corrected_translation": false,
+      "mixed": "新鮮な野菜や果物が、きれいに並んでいます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "新鮮な野菜や果物が、きれいに並んでいます。",
+          "parts": [
+            {
+              "text": "新鮮",
+              "ruby": "しんせん"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "野菜",
+              "ruby": "やさい"
+            },
+            {
+              "text": "や",
+              "ruby": ""
+            },
+            {
+              "text": "果物",
+              "ruby": "くだもの"
+            },
+            {
+              "text": "が、きれいに",
+              "ruby": ""
+            },
+            {
+              "text": "並",
+              "ruby": "なら"
+            },
+            {
+              "text": "んでいます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 8,
+      "english": "On our way, we passed an old church standing quietly on a small hill.",
+      "source_ja": "途中、小さな丘の上に静かに建つ古い教会のそばを通りました。",
+      "display_ja": "途中、小さな丘の上に静かに建つ古い教会のそばを通りました。",
+      "corrected_translation": false,
+      "mixed": "途中、小さな丘の上に静かに建つ古い church のそばを通りました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "途中、小さな丘の上に静かに建つ古い ",
+          "parts": [
+            {
+              "text": "途中",
+              "ruby": "とちゅう"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            },
+            {
+              "text": "丘",
+              "ruby": "おか"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "上",
+              "ruby": "うえ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            },
+            {
+              "text": "建",
+              "ruby": "た"
+            },
+            {
+              "text": "つ",
+              "ruby": ""
+            },
+            {
+              "text": "古",
+              "ruby": "ふる"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "church",
+          "ruby": "教会"
+        },
+        {
+          "type": "ja",
+          "text": " のそばを通りました。",
+          "parts": [
+            {
+              "text": "のそばを",
+              "ruby": ""
+            },
+            {
+              "text": "通",
+              "ruby": "とお"
+            },
+            {
+              "text": "りました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "church",
+          "canonical_word": "church",
+          "meaning": "教会"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "church",
+          "reading": "教会",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "church",
+          "canonical_meaning": "教会"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "Next to it, there was an old temple.",
+      "source_ja": "隣には古いお寺も。",
+      "display_ja": "隣には古いお寺も。",
+      "corrected_translation": false,
+      "mixed": "隣には古い temple も。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "隣には古い ",
+          "parts": [
+            {
+              "text": "隣",
+              "ruby": "となり"
+            },
+            {
+              "text": "には",
+              "ruby": ""
+            },
+            {
+              "text": "古",
+              "ruby": "ふる"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "temple",
+          "ruby": "お寺"
+        },
+        {
+          "type": "ja",
+          "text": " も。",
+          "parts": [
+            {
+              "text": "も。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "temple",
+          "canonical_word": "temple",
+          "meaning": "お寺"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "temple",
+          "reading": "お寺",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "temple",
+          "canonical_meaning": "お寺"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "Both are important buildings that protect the quiet of our town.",
+      "source_ja": "どちらも、町の静けさを守ってくれる大切な建物です。",
+      "display_ja": "どちらも、町の静けさを守ってくれる大切な建物です。",
+      "corrected_translation": false,
+      "mixed": "どちらも、町の静けさを守ってくれる大切な buildings です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "どちらも、町の静けさを守ってくれる大切な ",
+          "parts": [
+            {
+              "text": "どちらも、",
+              "ruby": ""
+            },
+            {
+              "text": "町",
+              "ruby": "まち"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "けさを",
+              "ruby": ""
+            },
+            {
+              "text": "守",
+              "ruby": "まも"
+            },
+            {
+              "text": "ってくれる",
+              "ruby": ""
+            },
+            {
+              "text": "大切",
+              "ruby": "たいせつ"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "buildings",
+          "ruby": "建物"
+        },
+        {
+          "type": "ja",
+          "text": " です。",
+          "parts": [
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "buildings",
+          "canonical_word": "building",
+          "meaning": "建物"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "buildings",
+          "reading": "建物",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "building",
+          "canonical_meaning": "建物"
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "english": "My father stopped at his office for some work.",
+      "source_ja": "父は仕事で事務所に立ち寄りました。",
+      "display_ja": "父は仕事で事務所に立ち寄りました。",
+      "corrected_translation": false,
+      "mixed": "父は仕事で office に立ち寄りました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "父は仕事で ",
+          "parts": [
+            {
+              "text": "父",
+              "ruby": "ちち"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "仕事",
+              "ruby": "しごと"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "office",
+          "ruby": "会社"
+        },
+        {
+          "type": "ja",
+          "text": " に立ち寄りました。",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "立ち寄",
+              "ruby": "たちよ"
+            },
+            {
+              "text": "りました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "office",
+          "canonical_word": "office",
+          "meaning": "会社"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "office",
+          "reading": "会社",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "office",
+          "canonical_meaning": "会社"
+        }
+      ]
+    },
+    {
+      "line": 12,
+      "english": "My sister and I read books at the large station waiting room.",
+      "source_ja": "妹とわたしは、広い駅の待合室で本を読んでいました。",
+      "display_ja": "妹とわたしは、広い駅の待合室で本を読んでいました。",
+      "corrected_translation": false,
+      "mixed": "妹とわたしは、広い station の待合室で本を読んでいました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "妹とわたしは、広い ",
+          "parts": [
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "とわたしは、",
+              "ruby": ""
+            },
+            {
+              "text": "広",
+              "ruby": "ひろ"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "station",
+          "ruby": "駅"
+        },
+        {
+          "type": "ja",
+          "text": " の待合室で本を読んでいました。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "待合",
+              "ruby": "まちあい"
+            },
+            {
+              "text": "室",
+              "ruby": "しつ"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "読",
+              "ruby": "よ"
+            },
+            {
+              "text": "んでいました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "station",
+          "canonical_word": "station",
+          "meaning": "駅"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "station",
+          "reading": "駅",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "station",
+          "canonical_meaning": "駅"
+        }
+      ]
+    },
+    {
+      "line": 13,
+      "english": "In the evening, we stopped at a farm shop and bought roasted sweet potatoes.",
+      "source_ja": "夕方、農家のお店に寄って、焼き芋を買いました。",
+      "display_ja": "夕方、農家のお店に寄って、焼き芋を買いました。",
+      "corrected_translation": false,
+      "mixed": "夕方、farm のお店に寄って、焼き芋を買いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "夕方、",
+          "parts": [
+            {
+              "text": "夕方",
+              "ruby": "ゆうがた"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "farm",
+          "ruby": "農園"
+        },
+        {
+          "type": "ja",
+          "text": " のお店に寄って、焼き芋を買いました。",
+          "parts": [
+            {
+              "text": "のお",
+              "ruby": ""
+            },
+            {
+              "text": "店",
+              "ruby": "みせ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "寄",
+              "ruby": "よ"
+            },
+            {
+              "text": "って、",
+              "ruby": ""
+            },
+            {
+              "text": "焼き芋",
+              "ruby": "やきいも"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "買",
+              "ruby": "か"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "farm",
+          "canonical_word": "farm",
+          "meaning": "農園"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "farm",
+          "reading": "農園",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "farm",
+          "canonical_meaning": "農園"
+        }
+      ]
+    },
+    {
+      "line": 14,
+      "english": "On the way home, we could see the small lights of a factory in the distance.",
+      "source_ja": "家へ帰る道で、遠くの工場の小さな明かりが見えました。",
+      "display_ja": "家へ帰る道で、遠くの工場の小さな明かりが見えました。",
+      "corrected_translation": false,
+      "mixed": "家へ帰る道で、遠くの factory の小さな明かりが見えました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "家へ帰る道で、遠くの ",
+          "parts": [
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "へ",
+              "ruby": ""
+            },
+            {
+              "text": "帰",
+              "ruby": "かえ"
+            },
+            {
+              "text": "る",
+              "ruby": ""
+            },
+            {
+              "text": "道",
+              "ruby": "みち"
+            },
+            {
+              "text": "で、",
+              "ruby": ""
+            },
+            {
+              "text": "遠",
+              "ruby": "とお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "factory",
+          "ruby": "工場"
+        },
+        {
+          "type": "ja",
+          "text": " の小さな明かりが見えました。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            },
+            {
+              "text": "明",
+              "ruby": "あ"
+            },
+            {
+              "text": "かりが",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "えました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "factory",
+          "canonical_word": "factory",
+          "meaning": "工場"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "factory",
+          "reading": "工場",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "factory",
+          "canonical_meaning": "工場"
+        }
+      ]
+    },
+    {
+      "line": 15,
+      "english": "Thank you for watching.",
+      "source_ja": "ご覧いただき、ありがとうございました。",
+      "display_ja": "ご覧いただき、ありがとうございました。",
+      "corrected_translation": false,
+      "mixed": "ご覧いただき、ありがとうございました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ご覧いただき、ありがとうございました。",
+          "parts": [
+            {
+              "text": "ご",
+              "ruby": ""
+            },
+            {
+              "text": "覧",
+              "ruby": "らん"
+            },
+            {
+              "text": "いただき、ありがとうございました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    }
+  ]
+}

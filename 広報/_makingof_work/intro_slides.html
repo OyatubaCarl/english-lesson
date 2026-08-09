@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>app intro slides</title>
+<style>
+:root{
+  --orange:#e8642a; --marigold:#f5a623; --teal:#2a9d8f; --cream:#fff6ec;
+  --ink:#2a1f14; --ink-soft:#5c4a38;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{width:1080px;height:1920px;overflow:hidden;}
+body{
+  font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
+  background:var(--cream); color:var(--ink);
+  display:flex; flex-direction:column; align-items:center;
+}
+.slide{width:1080px;height:1920px;display:none;flex-direction:column;align-items:center;padding:90px 60px 130px;position:relative;}
+.slide.on{display:flex;}
+/* 共通パーツ */
+.badge{
+  font-size:40px;font-weight:800;color:#fff;background:var(--teal);
+  padding:14px 44px;border-radius:999px;letter-spacing:.06em;
+  box-shadow:0 6px 0 rgba(42,60,55,.18);
+}
+.badge.orange{background:var(--orange);box-shadow:0 6px 0 rgba(120,40,10,.22);}
+.badge.marigold{background:var(--marigold);box-shadow:0 6px 0 rgba(150,90,10,.25);}
+h1{
+  font-size:86px;font-weight:900;line-height:1.32;text-align:center;
+  margin-top:44px;letter-spacing:.01em;
+}
+h1 .em{color:var(--orange);}
+h1 .em2{color:var(--teal);}
+h1 .em3{color:var(--marigold);}
+.sub{
+  font-size:46px;font-weight:700;color:var(--ink-soft);text-align:center;line-height:1.5;
+  margin-top:auto;
+  background:#fff;border:4px solid rgba(232,100,42,.25);border-radius:24px;
+  padding:26px 48px;box-shadow:0 10px 24px rgba(90,50,20,.10);
+}
+.imgwrap{margin-top:50px;display:flex;justify-content:center;align-items:center;gap:40px;flex:1;min-height:0;}
+.midwrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;min-height:0;}
+.shot{
+  border-radius:44px;border:10px solid #fff;
+  box-shadow:0 26px 60px rgba(80,40,10,.28);
+}
+.tilt-l{transform:rotate(-3deg);}
+.tilt-r{transform:rotate(2.5deg);}
+.footer{
+  position:absolute;bottom:74px;left:0;width:100%;text-align:center;
+  font-size:30px;font-weight:700;color:rgba(92,74,56,.55);letter-spacing:.12em;
+}
+/* ---- cut1: フック ---- */
+#cut1 .top-accent{position:absolute;top:0;left:0;width:100%;height:34px;background:linear-gradient(90deg,var(--orange),var(--marigold),var(--teal));}
+#cut1 h1{font-size:88px;margin-top:36px;}
+#cut1 .hero{width:900px;filter:drop-shadow(0 24px 50px rgba(90,40,10,.30));}
+#cut1 .logo{width:760px;margin-top:-30px;filter:drop-shadow(0 14px 30px rgba(90,40,10,.25));}
+#cut1 .stack{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:0;}
+/* ---- cut2: タコビート ---- */
+#cut2{background:linear-gradient(180deg,#fdeadb 0%,var(--cream) 60%);}
+#cut2 .phone{width:440px;}
+.noteRow{display:flex;gap:26px;margin-top:36px;}
+.note{
+  font-size:40px;font-weight:900;color:#fff;background:var(--orange);
+  padding:14px 30px;border-radius:20px;box-shadow:0 8px 0 rgba(120,40,10,.25);
+}
+.note:nth-child(2){background:var(--marigold);box-shadow:0 8px 0 rgba(150,90,10,.28);}
+.note:nth-child(3){background:var(--teal);box-shadow:0 8px 0 rgba(20,80,70,.28);}
+/* ---- cut3: WordTacos ---- */
+#cut3 .phone{width:600px;}
+/* ---- cut4: ミニゲーム ---- */
+#cut4{background:linear-gradient(180deg,#e7f4f2 0%,var(--cream) 60%);}
+#cut4 h1{font-size:78px;}
+#cut4 .phone{width:430px;}
+.vegrow{display:flex;gap:32px;margin-top:38px;align-items:center;}
+.vegrow .veg{
+  width:158px;height:158px;object-fit:contain;background:#fff;border-radius:26px;
+  padding:16px;box-shadow:0 12px 28px rgba(90,50,20,.18);
+}
+/* ---- cut5: シャドウイング(チーズ) ---- */
+#cut5{background:linear-gradient(180deg,#fff3d6 0%,var(--cream) 65%);}
+#cut5 h1{font-size:82px;}
+.cheeseStage{
+  position:relative;width:640px;height:640px;background:#fff;border-radius:60px;
+  box-shadow:0 26px 60px rgba(150,90,10,.25);
+  display:flex;align-items:center;justify-content:center;
+}
+.cheeseStage .cheese{font-size:340px;line-height:1;filter:drop-shadow(0 18px 30px rgba(150,90,10,.30));}
+.cheeseStage .drip{
+  position:absolute;bottom:-46px;width:56px;background:linear-gradient(180deg,#ffd23e,#f5a623);
+  border-radius:0 0 36px 36px;box-shadow:0 8px 18px rgba(150,90,10,.30);
+}
+.cheeseStage .d1{left:150px;height:120px;}
+.cheeseStage .d2{left:300px;height:170px;bottom:-96px;}
+.cheeseStage .d3{left:452px;height:90px;}
+.speakRow{display:flex;gap:30px;margin-top:110px;align-items:center;}
+.speakRow .mic{font-size:96px;line-height:1;}
+.speakRow .arrow{font-size:70px;font-weight:900;color:var(--ink-soft);}
+.speakRow .lbl{
+  font-size:50px;font-weight:900;color:#fff;background:var(--marigold);
+  padding:18px 44px;border-radius:999px;box-shadow:0 8px 0 rgba(150,90,10,.28);
+}
+/* ---- cut6: タコス完成 ---- */
+#cut6{background:linear-gradient(180deg,#fdeadb 0%,var(--cream) 55%);}
+#cut6 h1{font-size:110px;}
+#cut6 .tom{width:820px;filter:drop-shadow(0 26px 55px rgba(90,40,10,.30));}
+.confetti{position:absolute;font-size:90px;line-height:1;}
+.c1{top:250px;left:90px;transform:rotate(-18deg);}
+.c2{top:210px;right:100px;transform:rotate(14deg);}
+.c3{top:560px;left:60px;transform:rotate(10deg);font-size:74px;}
+.c4{top:600px;right:70px;transform:rotate(-12deg);font-size:74px;}
+/* ---- cut7: まとめ ---- */
+#cut7{background:linear-gradient(170deg,var(--orange) 0%,#f08a3c 55%,var(--marigold) 100%);color:#fff;}
+#cut7 .logo{width:840px;margin-top:30px;filter:drop-shadow(0 20px 40px rgba(90,30,0,.35));}
+#cut7 h1{color:#fff;font-size:88px;text-shadow:0 6px 0 rgba(120,40,0,.25);}
+.freeRow{display:flex;gap:30px;margin-top:56px;}
+.freePill{
+  font-size:48px;font-weight:900;color:var(--orange);background:#fff;
+  padding:20px 46px;border-radius:999px;box-shadow:0 12px 26px rgba(90,30,0,.30);
+}
+.urlbox{margin-top:64px;display:flex;flex-direction:column;gap:28px;align-items:center;}
+.urlpill{
+  background:#fff;color:var(--orange);
+  font-size:58px;font-weight:900;padding:30px 66px;border-radius:999px;
+  box-shadow:0 18px 40px rgba(90,30,0,.35);letter-spacing:.02em;
+}
+.urlpill small{display:block;font-size:34px;font-weight:800;color:var(--ink-soft);letter-spacing:.05em;margin-bottom:4px;}
+#cut7 .sub{background:rgba(255,255,255,.16);border:4px solid rgba(255,255,255,.5);color:#fff;}
+#cut7 .footer{color:rgba(255,255,255,.75);}
+</style>
+</head>
+<body>
+
+<!-- 1: フック -->
+<section class="slide" id="cut1">
+  <div class="top-accent"></div>
+  <div class="badge orange">たのしく英語</div>
+  <h1><span class="em">歌</span>と、<span class="em2">日本語</span>と、<br><span class="em3">ミニゲーム</span>で。</h1>
+  <div class="stack">
+    <img class="hero" src="intro_hero.png" alt="">
+    <img class="logo" src="intro_logo.png" alt="">
+  </div>
+  <div class="sub">楽しく学ぶ 英語学習アプリ</div>
+  <div class="footer">TEACHER TACOS ENGLISH</div>
+</section>
+
+<!-- 2: タコビート -->
+<section class="slide" id="cut2">
+  <div class="badge orange">リズムゲーム ─ タコビート</div>
+  <h1>歌にあわせて<br><span class="em">単語をキャッチ</span></h1>
+  <div class="imgwrap" style="flex-direction:column;gap:0;">
+    <img class="shot phone tilt-l" src="intro_shot_tacobeat.png" alt="">
+    <div class="noteRow"><div class="note">♪ apple</div><div class="note">♪ run</div><div class="note">♪ happy</div></div>
+  </div>
+  <div class="sub">曲にのって 単語が飛んでくる</div>
+  <div class="footer">TEACHER TACOS ENGLISH</div>
+</section>
+
+<!-- 3: WordTacos -->
+<section class="slide" id="cut3">
+  <div class="badge">英単語クイズ ─ ワードタコス</div>
+  <h1><span class="em">日本語まじりの文</span>で<br>意味がわかる</h1>
+  <div class="imgwrap">
+    <img class="shot phone tilt-r" src="intro_frame_wordtacos.png" alt="">
+  </div>
+  <div class="sub">はじめての単語も こわくない</div>
+  <div class="footer">TEACHER TACOS ENGLISH</div>
+</section>
+
+<!-- 4: ミニゲーム -->
+<section class="slide" id="cut4">
+  <div class="badge">文法ミニゲーム</div>
+  <h1>クイズで<span class="em">サルサ</span>、<br>ならべかえで<span class="em2">レタス</span></h1>
+  <div class="imgwrap" style="flex-direction:column;gap:0;">
+    <img class="shot phone" src="intro_shot_lettuce.png" alt="">
+    <div class="vegrow">
+      <img class="veg" src="intro_veg_tomato.png" alt="">
+      <img class="veg" src="intro_veg_jalapeno.png" alt="">
+      <img class="veg" src="intro_veg_onion.png" alt="">
+      <img class="veg" src="intro_veg_pepper.png" alt="">
+    </div>
+  </div>
+  <div class="sub">正解するほど 具材がもりもり</div>
+  <div class="footer">TEACHER TACOS ENGLISH</div>
+</section>
+
+<!-- 5: シャドウイング -->
+<section class="slide" id="cut5">
+  <div class="badge marigold">音読 ─ シャドウイング</div>
+  <h1>声に出すと、<br><span class="em3">チーズがとろける</span></h1>
+  <div class="midwrap">
+    <div class="cheeseStage">
+      <div class="cheese">🧀</div>
+      <div class="drip d1"></div>
+      <div class="drip d2"></div>
+      <div class="drip d3"></div>
+    </div>
+    <div class="speakRow"><div class="mic">🗣️</div><div class="arrow">→</div><div class="lbl">とろ〜り</div></div>
+  </div>
+  <div class="sub">読んだ声が チーズにかわる</div>
+  <div class="footer">TEACHER TACOS ENGLISH</div>
+</section>
+
+<!-- 6: タコス完成 -->
+<section class="slide" id="cut6">
+  <div class="badge orange">ごほうび</div>
+  <h1>タコス、<span class="em">完成！</span></h1>
+  <div class="confetti c1">🎉</div>
+  <div class="confetti c2">🎊</div>
+  <div class="confetti c3">✨</div>
+  <div class="confetti c4">✨</div>
+  <div class="imgwrap">
+    <img class="tom" src="intro_tom.png" alt="">
+  </div>
+  <div class="sub">あつめた具材が ぜんぶのっかる</div>
+  <div class="footer">TEACHER TACOS ENGLISH</div>
+</section>
+
+<!-- 7: まとめ -->
+<section class="slide" id="cut7">
+  <div class="badge" style="background:rgba(255,255,255,.22);box-shadow:none;border:3px solid rgba(255,255,255,.6);">きょうから あそべる</div>
+  <div class="imgwrap" style="flex:none;margin-top:36px;"><img class="logo" src="intro_logo.png" alt=""></div>
+  <div class="freeRow"><div class="freePill">無料</div><div class="freePill">ブラウザだけ</div><div class="freePill">登録不要</div></div>
+  <div class="urlbox">
+    <div class="urlpill"><small>英単語クイズ</small>words.teachertacos.com</div>
+    <div class="urlpill"><small>ミニゲーム</small>taco-course.pages.dev</div>
+  </div>
+  <div class="sub">スマホでもPCでも すぐ遊べる</div>
+  <div class="footer">TEACHER TACOS ENGLISH</div>
+</section>
+
+<script>
+const n = new URLSearchParams(location.search).get('cut') || '1';
+document.getElementById('cut' + n).classList.add('on');
+</script>
+</body>
+</html>

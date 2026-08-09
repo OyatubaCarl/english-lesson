@@ -1,0 +1,61 @@
+{
+  "lesson": "H053",
+  "title": "都市の進化と課題",
+  "style": "画風01・光彩のある劇場アニメ背景を基調にした都市史と持続可能な都市計画のドキュメンタリー",
+  "setting": "20世紀初頭の都市と農村、現代の大都市圏、交通・住宅・医療・教育・公園・郊外・田園地域を往復し、包摂的な都市設計へ着地する",
+  "continuity": {
+    "student": "H15基準の同じ17歳男子高校生。短い黒髪、紺の制服コート、灰色のマフラー、黒いリュック。都市計画を学ぶ観察者",
+    "planner": "38歳前後の女性都市計画家。肩までの黒髪、濃紺ジャケット、生成りのシャツ、丸めた無地の図面。高校生と各地域を歩く",
+    "palette": "20世紀初頭はセピアを抑えた琥珀と群青、現代中心部は青灰と人工光、交通・汚染場面は低彩度、緑地・公共交通・結末は朝の青緑と暖色"
+  },
+  "sequence": [
+    "20世紀初頭、世界populationの大部分がurban area外に暮らしていた時代",
+    "現在、世界populationの半数超がurban areasに暮らす変化",
+    "Urbanizationがjobs、education、medical careへのopportunitiesを集める",
+    "Traffic congestion、housing価格、air pollution",
+    "Tokyo、New York、London、Shanghaiを含む異なる大都市",
+    "population densityとinfrastructureのlimits",
+    "sustainableなurban planning",
+    "pedestrians、cyclists、green parks、public transportationへのinvestment",
+    "city centersからsuburbsへの移動",
+    "remote workで変わるurbanとruralの関係",
+    "形を変え続けるcities",
+    "everyoneが安心して暮らせるspace design"
+  ],
+  "accuracy": [
+    "20世紀初頭の約10人に1人という歌詞は概数として扱い、画像内に統計値を表示しない。都市人口の歴史推計は定義差があるため、農村人口が大多数だった構図で示す",
+    "現在の半数超はurban areasを指す。UN World Urbanization Prospects 2025のcity・town・ruralという新分類ではcity単独は45%であるため、cityだけの厳密な割合として図示しない",
+    "Urbanizationのbenefitは雇用、教育、医療へのaccessが集中する可能性として描き、全住民が平等に利用できるとは断定しない",
+    "Traffic、housing、pollutionを都市そのものの必然的悪とせず、土地利用、供給、交通、所得、規制、成長速度に左右される課題として描く",
+    "Tokyo、New York、London、Shanghaiを同じ街並みにせず、鉄道中心、高層格子、歴史街区、河川沿い高層群など異なる都市形態を示す。読める地名・ロゴは使わない",
+    "population densityは問題そのものではなく、capacity不足のtransportation、water、housing、parks、health servicesなどinfrastructureとの関係で描く",
+    "sustainable planningは自動車道路を一律撤去する図にせず、歩行者空間、自転車道、公共交通、緑地、住宅、accessibilityを組み合わせる",
+    "suburbsへの移動は一方向の世界共通傾向と断定せず、住宅費、家族、通勤、remote workなど複数理由のある一部の移動として描く",
+    "remote workはurbanとruralの差を消す魔法にせず、通信環境、職種、公共サービスへのaccess差が残ることを示す",
+    "結末は美観だけでなく、affordable housing、公共交通、緑地、障害者access、安全、地域参加を含むinclusive designとする"
+  ],
+  "fact_check_sources": [
+    "https://www.un.org/development/desa/pd/content/urbanization-0",
+    "https://www.un.org/development/desa/pd/world-urbanization-prospects-2025",
+    "https://sdgs.un.org/goals/goal11",
+    "https://www.un.org/en/desa/urbanization-expanding-opportunities-deeper-divides",
+    "https://www.oecd.org/content/dam/oecd/en/publications/support-materials/2021/06/implications-of-remote-working-adoption-on-place-based-policies_e4d35f97/ph-remote-working-g7.pdf"
+  ],
+  "composition": {
+    "aspect_ratio": "16:9",
+    "subtitle_safe_area": "主要な顔、手、道路、住宅、駅、病院、学校、公園、交通車両、図面は画面下45%より上に置く",
+    "camera": "一ショットにつき一定方向の寄り、引き、静止のいずれか一つ",
+    "text": "読める地名、駅名、道路標識、広告、運賃、家賃、統計、路線図、企業名、ロゴを生成しない。都市名と数値は動画字幕で示す"
+  },
+  "avoid": [
+    "未来都市、空飛ぶ車、ネオンSF、都市を悪役にする終末描写、渋滞だけの都市、無人の完璧なエコシティ、高層ビルだけをprogressとする表現",
+    "貧困や住宅難を遠景の装飾にすること、ホームレスの見世物化、特定地域を汚染の象徴にすること、全員がremote work可能という表現",
+    "読める文字・数値・ロゴ、写真調、油彩、3Dレンダー、透かし、四分割インフォグラフィック、空中ホログラム、巨大な矢印"
+  ],
+  "imagegen": {
+    "mode": "built-in ImageGen",
+    "planned_master_count": 13,
+    "selected_output_directory": "scenes/character_refs",
+    "video_scene_directory": "scenes/final_style01"
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H104.md",
+  "audio": "高校生編/suno_ready/generated/audio/H104/candidate3-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 99.02,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 157,
+  "transcribed_words": 157,
+  "matched_words": 152,
+  "coverage": 0.9682,
+  "precision": 0.9682,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 156,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 1,
+      "length": 1,
+      "words": [
+        "onward"
+      ]
+    },
+    {
+      "start": 39,
+      "length": 1,
+      "words": [
+        "combined"
+      ]
+    },
+    {
+      "start": 62,
+      "length": 1,
+      "words": [
+        "and"
+      ]
+    },
+    {
+      "start": 64,
+      "length": 1,
+      "words": [
+        "and"
+      ]
+    },
+    {
+      "start": 125,
+      "length": 1,
+      "words": [
+        "debt"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 1,
+      "actual_start": 1,
+      "expected": [
+        "onward"
+      ],
+      "actual": [
+        "to",
+        "onwards"
+      ],
+      "actual_confidence": 0.6243,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 39,
+      "actual_start": 40,
+      "expected": [
+        "combined"
+      ],
+      "actual": [
+        "combine"
+      ],
+      "actual_confidence": 0.7007,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 62,
+      "actual_start": 63,
+      "expected": [
+        "and"
+      ],
+      "actual": [
+        "in"
+      ],
+      "actual_confidence": 0.8486,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 125,
+      "actual_start": 125,
+      "expected": [
+        "debt"
+      ],
+      "actual": [
+        "that"
+      ],
+      "actual_confidence": 0.2969,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 64,
+      "actual_start": 65,
+      "expected": [
+        "and"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": false,
+  "transcript": "From 2020 to onwards, sharp inflation occurred across the world Energy prices, food, housing, the price of everything rose considerably The causes were multiple, supply chain disruption due to the pandemic Russia's invasion of Ukraine, large fiscal spending by governments These combine to create a tremendous rise in prices In response, central banks raised interest rates The borrowing cost for businesses and households rose in consumption Investment cooled, many countries stood at the edge of recession The pain of rising prices is not equal Wealthy households hold assets and are relatively protected But for low-income families, food and utility costs become a burden that presses on daily life The national deficit has also grown Social security expenses swell and tax revenue alone cannot cover them That becomes an obligation to future generations The challenge of the economy cannot be solved by one country alone In our globalized age, international coordination is the foundation of a sustainable economy",
+  "segments": [
+    {
+      "start": 6.7,
+      "end": 11.74,
+      "text": "From 2020 to onwards, sharp inflation occurred across the world"
+    },
+    {
+      "start": 11.74,
+      "end": 17.3,
+      "text": "Energy prices, food, housing, the price of everything rose considerably"
+    },
+    {
+      "start": 17.3,
+      "end": 23.28,
+      "text": "The causes were multiple, supply chain disruption due to the pandemic"
+    },
+    {
+      "start": 23.28,
+      "end": 27.96,
+      "text": "Russia's invasion of Ukraine, large fiscal spending by governments"
+    },
+    {
+      "start": 29.36,
+      "end": 33.5,
+      "text": "These combine to create a tremendous rise in prices"
+    },
+    {
+      "start": 33.5,
+      "end": 38.48,
+      "text": "In response, central banks raised interest rates"
+    },
+    {
+      "start": 38.48,
+      "end": 43.52,
+      "text": "The borrowing cost for businesses and households rose in consumption"
+    },
+    {
+      "start": 43.52,
+      "end": 48.06,
+      "text": "Investment cooled, many countries stood at the edge of recession"
+    },
+    {
+      "start": 49.06,
+      "end": 52.86,
+      "text": "The pain of rising prices is not equal"
+    },
+    {
+      "start": 52.86,
+      "end": 57.98,
+      "text": "Wealthy households hold assets and are relatively protected"
+    },
+    {
+      "start": 57.98,
+      "end": 66.04,
+      "text": "But for low-income families, food and utility costs become a burden that presses on daily life"
+    },
+    {
+      "start": 66.04,
+      "end": 69.74,
+      "text": "The national deficit has also grown"
+    },
+    {
+      "start": 70.66,
+      "end": 76.42,
+      "text": "Social security expenses swell and tax revenue alone cannot cover them"
+    },
+    {
+      "start": 76.42,
+      "end": 80.0,
+      "text": "That becomes an obligation to future generations"
+    },
+    {
+      "start": 80.0,
+      "end": 87.36,
+      "text": "The challenge of the economy cannot be solved by one country alone"
+    },
+    {
+      "start": 87.36,
+      "end": 99.02,
+      "text": "In our globalized age, international coordination is the foundation of a sustainable economy"
+    }
+  ]
+}

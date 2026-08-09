@@ -1,0 +1,1541 @@
+{
+  "lesson": "H116",
+  "title_ja": "祖父の沈黙",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 21,
+  "canonical_target_lines": 12,
+  "mixed_lines": 4,
+  "japanese_only_lines": 17,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 10.94,
+      "end": 16.42,
+      "english": "My grandfather was a man who hardly spoke.",
+      "japanese": "私の祖父はほとんど話さない人でした。",
+      "mixed": "私の祖父はほとんど話さない人でした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私の祖父はほとんど話さない人でした。",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "祖父",
+              "ruby": "そふ"
+            },
+            {
+              "text": "はほとんど",
+              "ruby": ""
+            },
+            {
+              "text": "話",
+              "ruby": "はな"
+            },
+            {
+              "text": "さない",
+              "ruby": ""
+            },
+            {
+              "text": "人",
+              "ruby": "ひと"
+            },
+            {
+              "text": "でした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 2,
+      "start": 18.0,
+      "end": 25.06,
+      "english": "He seldom talked about himself, and rarely showed his emotions openly.",
+      "japanese": "彼は自分自身のことをほとんど語らず、自分の感情を率直に示すこともほとんどありませんでした。",
+      "mixed": "彼は自分自身のことをほとんど語らず、自分の感情を率直に示すこともほとんどありませんでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼は自分自身のことをほとんど語らず、自分の感情を率直に示すこともほとんどありませんでした。",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "自分",
+              "ruby": "じぶん"
+            },
+            {
+              "text": "自身",
+              "ruby": "じしん"
+            },
+            {
+              "text": "のことをほとんど",
+              "ruby": ""
+            },
+            {
+              "text": "語",
+              "ruby": "かた"
+            },
+            {
+              "text": "らず、",
+              "ruby": ""
+            },
+            {
+              "text": "自分",
+              "ruby": "じぶん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "感情",
+              "ruby": "かんじょう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "率直",
+              "ruby": "そっちょく"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "示",
+              "ruby": "しめ"
+            },
+            {
+              "text": "すこともほとんどありませんでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "seldom",
+          "canonical_word": "seldom",
+          "meaning": "めったに"
+        },
+        {
+          "english": "rarely",
+          "canonical_word": "rarely",
+          "meaning": "めったに〜ない"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 3,
+      "start": 26.04,
+      "end": 29.3,
+      "english": "When I was young, that confused me.",
+      "japanese": "若い頃、それは私を混乱させました。",
+      "mixed": "若い頃、それは私を confused。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "若い頃、それは私を ",
+          "parts": [
+            {
+              "text": "若",
+              "ruby": "わか"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "頃",
+              "ruby": "ころ"
+            },
+            {
+              "text": "、それは",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "confused",
+          "ruby": "混乱させました"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "confused",
+          "canonical_word": "confuse",
+          "meaning": "混乱させる"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "confused",
+          "reading": "混乱させました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "confuse",
+          "canonical_meaning": "混乱させる"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 4,
+      "start": 30.84,
+      "end": 32.54,
+      "english": "What was he thinking?",
+      "japanese": "彼は何を考えていたのでしょうか？",
+      "mixed": "彼は何を考えていたのでしょうか？",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼は何を考えていたのでしょうか？",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "何",
+              "ruby": "なん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "考",
+              "ruby": "かんが"
+            },
+            {
+              "text": "えていたのでしょうか？",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 5,
+      "start": 34.56,
+      "end": 36.16,
+      "english": "Did he dislike me?",
+      "japanese": "彼は私のことが嫌いだったのでしょうか？",
+      "mixed": "彼は私のことが嫌いだったのでしょうか？",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼は私のことが嫌いだったのでしょうか？",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "のことが",
+              "ruby": ""
+            },
+            {
+              "text": "嫌",
+              "ruby": "きら"
+            },
+            {
+              "text": "いだったのでしょうか？",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "dislike",
+          "canonical_word": "dislike",
+          "meaning": "嫌う"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 6,
+      "start": 38.06,
+      "end": 43.32,
+      "english": "But as the years passed, I came to understand him.",
+      "japanese": "しかし、年月が経つにつれて、私は彼のことを理解できるようになりました。",
+      "mixed": "しかし、年月が経つにつれて、私は彼のことを理解できるようになりました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "しかし、年月が経つにつれて、私は彼のことを理解できるようになりました。",
+          "parts": [
+            {
+              "text": "しかし、",
+              "ruby": ""
+            },
+            {
+              "text": "年月",
+              "ruby": "ねんげつ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "経",
+              "ruby": "た"
+            },
+            {
+              "text": "つにつれて、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "のことを",
+              "ruby": ""
+            },
+            {
+              "text": "理解",
+              "ruby": "りかい"
+            },
+            {
+              "text": "できるようになりました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 7,
+      "start": 43.32,
+      "end": 49.24,
+      "english": "His silence was not coldness, but a quiet love.",
+      "japanese": "彼の沈黙は冷たさではなく、静かな愛でした。",
+      "mixed": "彼の沈黙は冷たさではなく、静かな愛でした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼の沈黙は冷たさではなく、静かな愛でした。",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "沈黙",
+              "ruby": "ちんもく"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "冷",
+              "ruby": "つめ"
+            },
+            {
+              "text": "たさではなく、",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かな",
+              "ruby": ""
+            },
+            {
+              "text": "愛",
+              "ruby": "あい"
+            },
+            {
+              "text": "でした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "coldness",
+          "canonical_word": "coldness",
+          "meaning": "冷淡さ"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 8,
+      "start": 50.38,
+      "end": 57.5,
+      "english": "The generation that lived through the war tends to avoid talking about it.",
+      "japanese": "戦争を生きた世代は戦争について語ることを避ける傾向にある。",
+      "mixed": "戦争を生きた世代は戦争について語ることを avoid 傾向にある。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "戦争を生きた世代は戦争について語ることを ",
+          "parts": [
+            {
+              "text": "戦争",
+              "ruby": "せんそう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "生",
+              "ruby": "い"
+            },
+            {
+              "text": "きた",
+              "ruby": ""
+            },
+            {
+              "text": "世代",
+              "ruby": "せだい"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "戦争",
+              "ruby": "せんそう"
+            },
+            {
+              "text": "について",
+              "ruby": ""
+            },
+            {
+              "text": "語",
+              "ruby": "かた"
+            },
+            {
+              "text": "ることを",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "avoid",
+          "ruby": "避ける"
+        },
+        {
+          "type": "ja",
+          "text": " 傾向にある。",
+          "parts": [
+            {
+              "text": "傾向",
+              "ruby": "けいこう"
+            },
+            {
+              "text": "にある。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "avoid",
+          "canonical_word": "avoid",
+          "meaning": "避ける"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "avoid",
+          "reading": "避ける",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "avoid",
+          "canonical_meaning": "避ける"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 9,
+      "start": 58.24,
+      "end": 61.14,
+      "english": "Remembering itself causes pain.",
+      "japanese": "思い出すこと自体が痛みを引き起こす。",
+      "mixed": "思い出すこと自体が痛みを引き起こす。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "思い出すこと自体が痛みを引き起こす。",
+          "parts": [
+            {
+              "text": "思い出",
+              "ruby": "おもいだ"
+            },
+            {
+              "text": "すこと",
+              "ruby": ""
+            },
+            {
+              "text": "自体",
+              "ruby": "じたい"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "痛",
+              "ruby": "いた"
+            },
+            {
+              "text": "みを",
+              "ruby": ""
+            },
+            {
+              "text": "引き起",
+              "ruby": "ひきお"
+            },
+            {
+              "text": "こす。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 10,
+      "start": 62.24,
+      "end": 64.94,
+      "english": "They touch the past only briefly.",
+      "japanese": "彼らは過去に触れるだけです。",
+      "mixed": "彼らは過去に触れるだけです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼らは過去に触れるだけです。",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "らは",
+              "ruby": ""
+            },
+            {
+              "text": "過去",
+              "ruby": "かこ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "触",
+              "ruby": "ふ"
+            },
+            {
+              "text": "れるだけです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "briefly",
+          "canonical_word": "briefly",
+          "meaning": "簡潔に"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 11,
+      "start": 66.9,
+      "end": 73.28,
+      "english": "After my grandfather passed away, I found notebooks he had been writing.",
+      "japanese": "祖父が亡くなった後、祖父が書いていたノートを見つけました。",
+      "mixed": "祖父が亡くなった後、祖父が書いていたノートを見つけました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "祖父が亡くなった後、祖父が書いていたノートを見つけました。",
+          "parts": [
+            {
+              "text": "祖父",
+              "ruby": "そふ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "亡",
+              "ruby": "な"
+            },
+            {
+              "text": "くなった",
+              "ruby": ""
+            },
+            {
+              "text": "後",
+              "ruby": "あと"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "祖父",
+              "ruby": "そふ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "書",
+              "ruby": "か"
+            },
+            {
+              "text": "いていたノートを",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "つけました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 12,
+      "start": 74.006,
+      "end": 86.86,
+      "english": "In them, his detailed memories of the battlefield, and his private feelings about his family, were recorded in small handwriting.",
+      "japanese": "そこには、戦場での詳細な記憶や家族に対する個人的な感情が小さな手書きで記録されていた。",
+      "mixed": "そこには、戦場での detailed 記憶や家族に対する個人的な感情が小さな手書きで記録されていた。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "そこには、戦場での ",
+          "parts": [
+            {
+              "text": "そこには、",
+              "ruby": ""
+            },
+            {
+              "text": "戦場",
+              "ruby": "せんじょう"
+            },
+            {
+              "text": "での",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "detailed",
+          "ruby": "詳細な"
+        },
+        {
+          "type": "ja",
+          "text": " 記憶や家族に対する個人的な感情が小さな手書きで記録されていた。",
+          "parts": [
+            {
+              "text": "記憶",
+              "ruby": "きおく"
+            },
+            {
+              "text": "や",
+              "ruby": ""
+            },
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "対",
+              "ruby": "たい"
+            },
+            {
+              "text": "する",
+              "ruby": ""
+            },
+            {
+              "text": "個人",
+              "ruby": "こじん"
+            },
+            {
+              "text": "的",
+              "ruby": "てき"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "感情",
+              "ruby": "かんじょう"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            },
+            {
+              "text": "手書",
+              "ruby": "てが"
+            },
+            {
+              "text": "きで",
+              "ruby": ""
+            },
+            {
+              "text": "記録",
+              "ruby": "きろく"
+            },
+            {
+              "text": "されていた。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "detailed",
+          "canonical_word": "detailed",
+          "meaning": "詳細な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "detailed",
+          "reading": "詳細な",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "detailed",
+          "canonical_meaning": "詳細な"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 13,
+      "start": 86.86,
+      "end": 92.96,
+      "english": "He had truly loved us.",
+      "japanese": "彼は本当に私たちを愛していました。",
+      "mixed": "彼は本当に私たちを愛していました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼は本当に私たちを愛していました。",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "本当",
+              "ruby": "ほんと"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "たちを",
+              "ruby": ""
+            },
+            {
+              "text": "愛",
+              "ruby": "あい"
+            },
+            {
+              "text": "していました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 14,
+      "start": 92.96,
+      "end": 99.94,
+      "english": "It was simply difficult for him to put it into words.",
+      "japanese": "彼にとってそれを言葉で表現するのは単純に難しかった。",
+      "mixed": "彼にとってそれを言葉で表現するのは単純に難しかった。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼にとってそれを言葉で表現するのは単純に難しかった。",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "にとってそれを",
+              "ruby": ""
+            },
+            {
+              "text": "言葉",
+              "ruby": "ことば"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "表現",
+              "ruby": "ひょうげん"
+            },
+            {
+              "text": "するのは",
+              "ruby": ""
+            },
+            {
+              "text": "単純",
+              "ruby": "たんじゅん"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "難",
+              "ruby": "むずか"
+            },
+            {
+              "text": "しかった。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 15,
+      "start": 99.94,
+      "end": 106.3,
+      "english": "For him, love was shown through action.",
+      "japanese": "彼にとって、愛は行動によって示されました。",
+      "mixed": "彼にとって、愛は行動によって示されました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼にとって、愛は行動によって示されました。",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "にとって、",
+              "ruby": ""
+            },
+            {
+              "text": "愛",
+              "ruby": "あい"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "行動",
+              "ruby": "こうどう"
+            },
+            {
+              "text": "によって",
+              "ruby": ""
+            },
+            {
+              "text": "示",
+              "ruby": "しめ"
+            },
+            {
+              "text": "されました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 16,
+      "start": 106.614,
+      "end": 119.42,
+      "english": "Tilling the field with me on his day off, secretly sending a small gift on his grandchild's birthday.",
+      "japanese": "休日には一緒に畑を耕したり、孫の誕生日にはこっそり小さなプレゼントを贈ったり。",
+      "mixed": "休日には一緒に畑を耕したり、孫の誕生日にはこっそり小さなプレゼントを贈ったり。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "休日には一緒に畑を耕したり、孫の誕生日にはこっそり小さなプレゼントを贈ったり。",
+          "parts": [
+            {
+              "text": "休日",
+              "ruby": "きゅうじつ"
+            },
+            {
+              "text": "には",
+              "ruby": ""
+            },
+            {
+              "text": "一緒",
+              "ruby": "いっしょ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "畑",
+              "ruby": "はたけ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "耕",
+              "ruby": "たがや"
+            },
+            {
+              "text": "したり、",
+              "ruby": ""
+            },
+            {
+              "text": "孫",
+              "ruby": "まご"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "誕生",
+              "ruby": "たんじょう"
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "にはこっそり",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さなプレゼントを",
+              "ruby": ""
+            },
+            {
+              "text": "贈",
+              "ruby": "おく"
+            },
+            {
+              "text": "ったり。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "secretly",
+          "canonical_word": "secretly",
+          "meaning": "秘密に"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 17,
+      "start": 120.3,
+      "end": 127.68,
+      "english": "Inside my grandfather's silence, I grasped true kindness.",
+      "japanese": "祖父の沈黙の中で、私は本当の優しさを掴みました。",
+      "mixed": "祖父の沈黙の中で、私は本当の優しさを掴みました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "祖父の沈黙の中で、私は本当の優しさを掴みました。",
+          "parts": [
+            {
+              "text": "祖父",
+              "ruby": "そふ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "沈黙",
+              "ruby": "ちんもく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "中",
+              "ruby": "なか"
+            },
+            {
+              "text": "で、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "本当",
+              "ruby": "ほんと"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "優",
+              "ruby": "やさ"
+            },
+            {
+              "text": "しさを",
+              "ruby": ""
+            },
+            {
+              "text": "掴",
+              "ruby": "つか"
+            },
+            {
+              "text": "みました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "grasped",
+          "canonical_word": "grasp",
+          "meaning": "理解する"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 18,
+      "start": 128.3,
+      "end": 138.32,
+      "english": "His silence did not mean that words were useless — rather, there was a love that went beyond words.",
+      "japanese": "彼の沈黙は言葉が無駄だという意味ではなく、むしろ言葉を超えた愛があったのです。",
+      "mixed": "彼の沈黙は言葉が無駄だという意味ではなく、むしろ言葉を超えた愛があったのです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼の沈黙は言葉が無駄だという意味ではなく、むしろ言葉を超えた愛があったのです。",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "沈黙",
+              "ruby": "ちんもく"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "言葉",
+              "ruby": "ことば"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "無駄",
+              "ruby": "むだ"
+            },
+            {
+              "text": "だという",
+              "ruby": ""
+            },
+            {
+              "text": "意味",
+              "ruby": "いみ"
+            },
+            {
+              "text": "ではなく、むしろ",
+              "ruby": ""
+            },
+            {
+              "text": "言葉",
+              "ruby": "ことば"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "超",
+              "ruby": "こ"
+            },
+            {
+              "text": "えた",
+              "ruby": ""
+            },
+            {
+              "text": "愛",
+              "ruby": "あい"
+            },
+            {
+              "text": "があったのです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "useless",
+          "canonical_word": "useless",
+          "meaning": "無用な"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 19,
+      "start": 138.32,
+      "end": 147.02,
+      "english": "On my late grandfather's birthday, I go to his grave to offer flowers.",
+      "japanese": "亡くなった祖父の誕生日に、私はお墓に花を捧げに行きます。",
+      "mixed": "亡くなった祖父の誕生日に、私はお墓に花を捧げに行きます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "亡くなった祖父の誕生日に、私はお墓に花を捧げに行きます。",
+          "parts": [
+            {
+              "text": "亡",
+              "ruby": "な"
+            },
+            {
+              "text": "くなった",
+              "ruby": ""
+            },
+            {
+              "text": "祖父",
+              "ruby": "そふ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "誕生",
+              "ruby": "たんじょう"
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "に、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "はお",
+              "ruby": ""
+            },
+            {
+              "text": "墓",
+              "ruby": "はか"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "花",
+              "ruby": "はな"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "捧",
+              "ruby": "ささ"
+            },
+            {
+              "text": "げに",
+              "ruby": ""
+            },
+            {
+              "text": "行",
+              "ruby": "い"
+            },
+            {
+              "text": "きます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 20,
+      "start": 148.38,
+      "end": 158.96,
+      "english": "I briefly join my hands in prayer and quietly speak to him for a short time.",
+      "japanese": "私は軽く手を合わせて祈り、少しの間静かに彼に話しかけます。",
+      "mixed": "私は軽く手を合わせて祈り、少しの間静かに彼に話しかけます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私は軽く手を合わせて祈り、少しの間静かに彼に話しかけます。",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "軽",
+              "ruby": "かる"
+            },
+            {
+              "text": "く",
+              "ruby": ""
+            },
+            {
+              "text": "手",
+              "ruby": "て"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "合",
+              "ruby": "あ"
+            },
+            {
+              "text": "わせて",
+              "ruby": ""
+            },
+            {
+              "text": "祈",
+              "ruby": "いの"
+            },
+            {
+              "text": "り、",
+              "ruby": ""
+            },
+            {
+              "text": "少",
+              "ruby": "すこ"
+            },
+            {
+              "text": "しの",
+              "ruby": ""
+            },
+            {
+              "text": "間",
+              "ruby": "あいだ"
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            },
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "話",
+              "ruby": "はな"
+            },
+            {
+              "text": "しかけます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "briefly",
+          "canonical_word": "briefly",
+          "meaning": "簡潔に"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 21,
+      "start": 161.36,
+      "end": 175.58,
+      "english": "My grandfather, even now, in an invisible form, lives within my heart.",
+      "japanese": "祖父は今も目に見えない形で私の心の中に生きています。",
+      "mixed": "祖父は今も invisible 形で私の心の中に生きています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "祖父は今も ",
+          "parts": [
+            {
+              "text": "祖父",
+              "ruby": "そふ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "今",
+              "ruby": "いま"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "invisible",
+          "ruby": "目に見えない"
+        },
+        {
+          "type": "ja",
+          "text": " 形で私の心の中に生きています。",
+          "parts": [
+            {
+              "text": "形",
+              "ruby": "かたち"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "心",
+              "ruby": "こころ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "中",
+              "ruby": "なか"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "生",
+              "ruby": "い"
+            },
+            {
+              "text": "きています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "invisible",
+          "canonical_word": "invisible",
+          "meaning": "目に見えない"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "invisible",
+          "reading": "目に見えない",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "invisible",
+          "canonical_meaning": "目に見えない"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    }
+  ]
+}

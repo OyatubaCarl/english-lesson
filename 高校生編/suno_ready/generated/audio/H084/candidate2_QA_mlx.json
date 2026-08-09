@@ -1,0 +1,182 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H084.md",
+  "audio": "高校生編/suno_ready/generated/audio/H084/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 145.34,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 208,
+  "transcribed_words": 208,
+  "matched_words": 206,
+  "coverage": 0.9904,
+  "precision": 0.9904,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 207,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 5,
+      "length": 1,
+      "words": [
+        "eight"
+      ]
+    },
+    {
+      "start": 30,
+      "length": 1,
+      "words": [
+        "a"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 30,
+      "actual_start": 29,
+      "expected": [
+        "a"
+      ],
+      "actual": [
+        "the"
+      ],
+      "actual_confidence": 0.6006,
+      "substitution_words": 1,
+      "has_content_word": false
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 70,
+      "actual_start": 69,
+      "expected": [],
+      "actual": [
+        "fertilizers"
+      ],
+      "actual_confidence": 0.9893
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 5,
+      "actual_start": 5,
+      "expected": [
+        "eight"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "The world population has passed 8 billion Yet more than 800 million people still lack enough food and suffer from hunger Agriculture is one of the oldest industries of humanity And the foundation of civilization Since the invention of irrigation, farming in ancient Mesopotamia, humanity has multiplied crop yields many times over through improved varieties and new technology. In the green revolution of the 20th century, high yield varieties and chemical fertilizers Fertilizers dramatically increased food production in Asia and Africa But at the same time, the excessive use of pesticides and fertilizers has contaminated soil and water Causing long-term problems in recent years Both organic farming and genetically modified crops have drawn attention The former is kinder to the environment, but difficult for mass production The latter raises yields, but leaves concerns about safety Another major problem is food waste in developed countries About one third of all food produced is thrown away In a world where people go hungry, this is a serious contradiction Solving the food problem requires more than increasing production Improvement in distribution, reduction of waste And a change in the awareness of each consumer are all needed To feed the world in a sustainable way Is the greatest challenge of the coming century",
+  "segments": [
+    {
+      "start": 5.9,
+      "end": 11.56,
+      "text": "The world population has passed 8 billion"
+    },
+    {
+      "start": 11.56,
+      "end": 17.42,
+      "text": "Yet more than 800 million people still lack enough food and suffer from hunger"
+    },
+    {
+      "start": 18.0,
+      "end": 24.32,
+      "text": "Agriculture is one of the oldest industries of humanity"
+    },
+    {
+      "start": 25.0,
+      "end": 27.6,
+      "text": "And the foundation of civilization"
+    },
+    {
+      "start": 31.7,
+      "end": 39.88,
+      "text": "Since the invention of irrigation, farming in ancient Mesopotamia, humanity has multiplied"
+    },
+    {
+      "start": 39.88,
+      "end": 46.82,
+      "text": "crop yields many times over through improved varieties and new technology."
+    },
+    {
+      "start": 47.32,
+      "end": 56.0,
+      "text": "In the green revolution of the 20th century, high yield varieties and chemical fertilizers"
+    },
+    {
+      "start": 56.0,
+      "end": 61.8,
+      "text": "Fertilizers dramatically increased food production in Asia and Africa"
+    },
+    {
+      "start": 61.8,
+      "end": 73.5,
+      "text": "But at the same time, the excessive use of pesticides and fertilizers has contaminated soil and water"
+    },
+    {
+      "start": 73.5,
+      "end": 77.68,
+      "text": "Causing long-term problems in recent years"
+    },
+    {
+      "start": 77.68,
+      "end": 84.98,
+      "text": "Both organic farming and genetically modified crops have drawn attention"
+    },
+    {
+      "start": 86.48,
+      "end": 92.58,
+      "text": "The former is kinder to the environment, but difficult for mass production"
+    },
+    {
+      "start": 92.58,
+      "end": 97.84,
+      "text": "The latter raises yields, but leaves concerns about safety"
+    },
+    {
+      "start": 97.84,
+      "end": 103.62,
+      "text": "Another major problem is food waste in developed countries"
+    },
+    {
+      "start": 103.62,
+      "end": 109.22,
+      "text": "About one third of all food produced is thrown away"
+    },
+    {
+      "start": 110.72,
+      "end": 116.3,
+      "text": "In a world where people go hungry, this is a serious contradiction"
+    },
+    {
+      "start": 116.3,
+      "end": 122.18,
+      "text": "Solving the food problem requires more than increasing production"
+    },
+    {
+      "start": 122.18,
+      "end": 127.92,
+      "text": "Improvement in distribution, reduction of waste"
+    },
+    {
+      "start": 127.92,
+      "end": 134.94,
+      "text": "And a change in the awareness of each consumer are all needed"
+    },
+    {
+      "start": 136.22,
+      "end": 140.32,
+      "text": "To feed the world in a sustainable way"
+    },
+    {
+      "start": 140.32,
+      "end": 145.34,
+      "text": "Is the greatest challenge of the coming century"
+    }
+  ]
+}

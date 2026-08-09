@@ -1,0 +1,834 @@
+{
+  "lesson": "H016",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h016_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H016/candidate2-full.mp3",
+  "source_audio_sha256": "3149de51c859aee0b202bdd23b29358762481a9d40fcf032945aaecdbff4f0cd",
+  "bpm": 72.92,
+  "exact_word_match": true,
+  "word_count": 119,
+  "line_count": 13,
+  "first_word_start": 8.802,
+  "last_word_end": 89.258,
+  "lines": [
+    {
+      "line": 1,
+      "english": "That day I hesitated in front of a small shop.",
+      "word_timings": [
+        {
+          "word": "That",
+          "display_index": 0,
+          "start": 8.802,
+          "end": 9.042
+        },
+        {
+          "word": "day",
+          "display_index": 1,
+          "start": 9.042,
+          "end": 9.602
+        },
+        {
+          "word": "I",
+          "display_index": 2,
+          "start": 9.602,
+          "end": 9.682
+        },
+        {
+          "word": "hesitated",
+          "display_index": 3,
+          "start": 9.662,
+          "end": 10.522
+        },
+        {
+          "word": "in",
+          "display_index": 4,
+          "start": 10.522,
+          "end": 10.682
+        },
+        {
+          "word": "front",
+          "display_index": 5,
+          "start": 10.682,
+          "end": 11.222
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 11.222,
+          "end": 11.402
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 11.402,
+          "end": 11.482
+        },
+        {
+          "word": "small",
+          "display_index": 8,
+          "start": 11.482,
+          "end": 12.082
+        },
+        {
+          "word": "shop.",
+          "display_index": 9,
+          "start": 12.082,
+          "end": 13.463
+        }
+      ],
+      "start": 8.802,
+      "end": 13.463
+    },
+    {
+      "line": 2,
+      "english": "Should I buy the red gloves, or not?",
+      "word_timings": [
+        {
+          "word": "Should",
+          "display_index": 0,
+          "start": 13.763,
+          "end": 13.949
+        },
+        {
+          "word": "I",
+          "display_index": 1,
+          "start": 13.949,
+          "end": 14.183
+        },
+        {
+          "word": "buy",
+          "display_index": 2,
+          "start": 14.183,
+          "end": 14.441
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 14.441,
+          "end": 14.603
+        },
+        {
+          "word": "red",
+          "display_index": 4,
+          "start": 14.603,
+          "end": 14.963
+        },
+        {
+          "word": "gloves,",
+          "display_index": 5,
+          "start": 14.963,
+          "end": 15.483
+        },
+        {
+          "word": "or",
+          "display_index": 6,
+          "start": 15.483,
+          "end": 15.623
+        },
+        {
+          "word": "not?",
+          "display_index": 7,
+          "start": 15.623,
+          "end": 16.603
+        }
+      ],
+      "start": 13.763,
+      "end": 16.603
+    },
+    {
+      "line": 3,
+      "english": "It was a moment of quick decision.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 16.903,
+          "end": 17.044
+        },
+        {
+          "word": "was",
+          "display_index": 1,
+          "start": 17.044,
+          "end": 17.252
+        },
+        {
+          "word": "a",
+          "display_index": 2,
+          "start": 17.252,
+          "end": 17.444
+        },
+        {
+          "word": "moment",
+          "display_index": 3,
+          "start": 17.444,
+          "end": 17.884
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 17.884,
+          "end": 18.044
+        },
+        {
+          "word": "quick",
+          "display_index": 5,
+          "start": 18.044,
+          "end": 18.464
+        },
+        {
+          "word": "decision.",
+          "display_index": 6,
+          "start": 18.464,
+          "end": 19.964
+        }
+      ],
+      "start": 16.903,
+      "end": 19.964
+    },
+    {
+      "line": 4,
+      "english": "Now I think I should have bought them.",
+      "word_timings": [
+        {
+          "word": "Now",
+          "display_index": 0,
+          "start": 20.304,
+          "end": 20.55
+        },
+        {
+          "word": "I",
+          "display_index": 1,
+          "start": 20.55,
+          "end": 20.684
+        },
+        {
+          "word": "think",
+          "display_index": 2,
+          "start": 20.684,
+          "end": 21.184
+        },
+        {
+          "word": "I",
+          "display_index": 3,
+          "start": 21.184,
+          "end": 21.464
+        },
+        {
+          "word": "should",
+          "display_index": 4,
+          "start": 21.464,
+          "end": 21.744
+        },
+        {
+          "word": "have",
+          "display_index": 5,
+          "start": 21.744,
+          "end": 21.945
+        },
+        {
+          "word": "bought",
+          "display_index": 6,
+          "start": 21.945,
+          "end": 22.745
+        },
+        {
+          "word": "them.",
+          "display_index": 7,
+          "start": 22.745,
+          "end": 24.245
+        }
+      ],
+      "start": 20.304,
+      "end": 24.245
+    },
+    {
+      "line": 5,
+      "english": "I ought to have made my decision earlier, in time for my sister's birthday.",
+      "word_timings": [
+        {
+          "word": "I",
+          "display_index": 0,
+          "start": 28.145,
+          "end": 28.225
+        },
+        {
+          "word": "ought",
+          "display_index": 1,
+          "start": 28.206,
+          "end": 28.338
+        },
+        {
+          "word": "to",
+          "display_index": 2,
+          "start": 28.338,
+          "end": 28.526
+        },
+        {
+          "word": "have",
+          "display_index": 3,
+          "start": 28.526,
+          "end": 28.766
+        },
+        {
+          "word": "made",
+          "display_index": 4,
+          "start": 28.766,
+          "end": 29.185
+        },
+        {
+          "word": "my",
+          "display_index": 5,
+          "start": 29.185,
+          "end": 29.546
+        },
+        {
+          "word": "decision",
+          "display_index": 6,
+          "start": 29.546,
+          "end": 30.466
+        },
+        {
+          "word": "earlier,",
+          "display_index": 7,
+          "start": 30.466,
+          "end": 31.687
+        },
+        {
+          "word": "in",
+          "display_index": 8,
+          "start": 31.687,
+          "end": 31.987
+        },
+        {
+          "word": "time",
+          "display_index": 9,
+          "start": 31.987,
+          "end": 32.587
+        },
+        {
+          "word": "for",
+          "display_index": 10,
+          "start": 32.587,
+          "end": 32.824
+        },
+        {
+          "word": "my",
+          "display_index": 11,
+          "start": 32.824,
+          "end": 33.047
+        },
+        {
+          "word": "sister's",
+          "display_index": 12,
+          "start": 33.047,
+          "end": 33.867
+        },
+        {
+          "word": "birthday.",
+          "display_index": 13,
+          "start": 33.867,
+          "end": 35.026
+        }
+      ],
+      "start": 28.145,
+      "end": 35.026
+    },
+    {
+      "line": 6,
+      "english": "The next day I returned, but the gloves were already gone.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 35.326,
+          "end": 35.527
+        },
+        {
+          "word": "next",
+          "display_index": 1,
+          "start": 35.527,
+          "end": 35.927
+        },
+        {
+          "word": "day",
+          "display_index": 2,
+          "start": 35.927,
+          "end": 36.585
+        },
+        {
+          "word": "I",
+          "display_index": 3,
+          "start": 36.585,
+          "end": 36.768
+        },
+        {
+          "word": "returned,",
+          "display_index": 4,
+          "start": 36.768,
+          "end": 38.208
+        },
+        {
+          "word": "but",
+          "display_index": 5,
+          "start": 38.208,
+          "end": 38.392
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 38.392,
+          "end": 38.548
+        },
+        {
+          "word": "gloves",
+          "display_index": 7,
+          "start": 38.548,
+          "end": 39.028
+        },
+        {
+          "word": "were",
+          "display_index": 8,
+          "start": 39.028,
+          "end": 39.328
+        },
+        {
+          "word": "already",
+          "display_index": 9,
+          "start": 39.328,
+          "end": 40.048
+        },
+        {
+          "word": "gone.",
+          "display_index": 10,
+          "start": 40.048,
+          "end": 40.832
+        }
+      ],
+      "start": 35.326,
+      "end": 40.832
+    },
+    {
+      "line": 7,
+      "english": "The shopkeeper said, Yesterday another customer had bought them.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 41.132,
+          "end": 41.228
+        },
+        {
+          "word": "shopkeeper",
+          "display_index": 1,
+          "start": 41.228,
+          "end": 42.529
+        },
+        {
+          "word": "said,",
+          "display_index": 2,
+          "start": 42.529,
+          "end": 43.749
+        },
+        {
+          "word": "Yesterday",
+          "display_index": 3,
+          "start": 43.749,
+          "end": 44.869
+        },
+        {
+          "word": "another",
+          "display_index": 4,
+          "start": 44.869,
+          "end": 45.369
+        },
+        {
+          "word": "customer",
+          "display_index": 5,
+          "start": 45.369,
+          "end": 46.45
+        },
+        {
+          "word": "had",
+          "display_index": 6,
+          "start": 46.45,
+          "end": 46.83
+        },
+        {
+          "word": "bought",
+          "display_index": 7,
+          "start": 46.83,
+          "end": 47.23
+        },
+        {
+          "word": "them.",
+          "display_index": 8,
+          "start": 47.23,
+          "end": 48.67
+        }
+      ],
+      "start": 41.132,
+      "end": 48.67
+    },
+    {
+      "line": 8,
+      "english": "I did not confess my regret to my sister.",
+      "word_timings": [
+        {
+          "word": "I",
+          "display_index": 0,
+          "start": 48.97,
+          "end": 49.11
+        },
+        {
+          "word": "did",
+          "display_index": 1,
+          "start": 49.11,
+          "end": 49.53
+        },
+        {
+          "word": "not",
+          "display_index": 2,
+          "start": 49.53,
+          "end": 49.87
+        },
+        {
+          "word": "confess",
+          "display_index": 3,
+          "start": 49.87,
+          "end": 50.986
+        },
+        {
+          "word": "my",
+          "display_index": 4,
+          "start": 50.986,
+          "end": 51.571
+        },
+        {
+          "word": "regret",
+          "display_index": 5,
+          "start": 51.571,
+          "end": 52.34
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 52.34,
+          "end": 52.82
+        },
+        {
+          "word": "my",
+          "display_index": 7,
+          "start": 52.82,
+          "end": 53.191
+        },
+        {
+          "word": "sister.",
+          "display_index": 8,
+          "start": 53.191,
+          "end": 54.511
+        }
+      ],
+      "start": 48.97,
+      "end": 54.511
+    },
+    {
+      "line": 9,
+      "english": "She seemed not to mind and simply smiled at me kindly.",
+      "word_timings": [
+        {
+          "word": "She",
+          "display_index": 0,
+          "start": 54.811,
+          "end": 55.071
+        },
+        {
+          "word": "seemed",
+          "display_index": 1,
+          "start": 55.071,
+          "end": 55.691
+        },
+        {
+          "word": "not",
+          "display_index": 2,
+          "start": 55.691,
+          "end": 56.113
+        },
+        {
+          "word": "to",
+          "display_index": 3,
+          "start": 56.113,
+          "end": 56.512
+        },
+        {
+          "word": "mind",
+          "display_index": 4,
+          "start": 56.512,
+          "end": 57.212
+        },
+        {
+          "word": "and",
+          "display_index": 5,
+          "start": 57.212,
+          "end": 57.532
+        },
+        {
+          "word": "simply",
+          "display_index": 6,
+          "start": 57.532,
+          "end": 58.232
+        },
+        {
+          "word": "smiled",
+          "display_index": 7,
+          "start": 58.232,
+          "end": 59.092
+        },
+        {
+          "word": "at",
+          "display_index": 8,
+          "start": 59.092,
+          "end": 59.372
+        },
+        {
+          "word": "me",
+          "display_index": 9,
+          "start": 59.372,
+          "end": 59.672
+        },
+        {
+          "word": "kindly.",
+          "display_index": 10,
+          "start": 59.672,
+          "end": 61.172
+        }
+      ],
+      "start": 54.811,
+      "end": 61.172
+    },
+    {
+      "line": 10,
+      "english": "Perhaps I should have been more honest.",
+      "word_timings": [
+        {
+          "word": "Perhaps",
+          "display_index": 0,
+          "start": 61.653,
+          "end": 62.692
+        },
+        {
+          "word": "I",
+          "display_index": 1,
+          "start": 62.692,
+          "end": 63.053
+        },
+        {
+          "word": "should",
+          "display_index": 2,
+          "start": 63.053,
+          "end": 64.013
+        },
+        {
+          "word": "have",
+          "display_index": 3,
+          "start": 64.013,
+          "end": 64.733
+        },
+        {
+          "word": "been",
+          "display_index": 4,
+          "start": 64.733,
+          "end": 65.513
+        },
+        {
+          "word": "more",
+          "display_index": 5,
+          "start": 65.513,
+          "end": 66.434
+        },
+        {
+          "word": "honest.",
+          "display_index": 6,
+          "start": 66.434,
+          "end": 67.514
+        }
+      ],
+      "start": 61.653,
+      "end": 67.514
+    },
+    {
+      "line": 11,
+      "english": "But she had already forgiven me.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 67.814,
+          "end": 67.994
+        },
+        {
+          "word": "she",
+          "display_index": 1,
+          "start": 67.994,
+          "end": 68.254
+        },
+        {
+          "word": "had",
+          "display_index": 2,
+          "start": 68.254,
+          "end": 68.994
+        },
+        {
+          "word": "already",
+          "display_index": 3,
+          "start": 68.994,
+          "end": 70.755
+        },
+        {
+          "word": "forgiven",
+          "display_index": 4,
+          "start": 70.755,
+          "end": 71.415
+        },
+        {
+          "word": "me.",
+          "display_index": 5,
+          "start": 71.415,
+          "end": 72.915
+        }
+      ],
+      "start": 67.814,
+      "end": 72.915
+    },
+    {
+      "line": 12,
+      "english": "In that small moment, her maturity became clear.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 74.055,
+          "end": 74.235
+        },
+        {
+          "word": "that",
+          "display_index": 1,
+          "start": 74.235,
+          "end": 74.555
+        },
+        {
+          "word": "small",
+          "display_index": 2,
+          "start": 74.555,
+          "end": 75.055
+        },
+        {
+          "word": "moment,",
+          "display_index": 3,
+          "start": 75.055,
+          "end": 76.116
+        },
+        {
+          "word": "her",
+          "display_index": 4,
+          "start": 76.116,
+          "end": 76.316
+        },
+        {
+          "word": "maturity",
+          "display_index": 5,
+          "start": 76.316,
+          "end": 77.376
+        },
+        {
+          "word": "became",
+          "display_index": 6,
+          "start": 77.376,
+          "end": 78.796
+        },
+        {
+          "word": "clear.",
+          "display_index": 7,
+          "start": 78.796,
+          "end": 80.296
+        }
+      ],
+      "start": 74.055,
+      "end": 80.296
+    },
+    {
+      "line": 13,
+      "english": "A person may regret, yet be saved by another person's affection.",
+      "word_timings": [
+        {
+          "word": "A",
+          "display_index": 0,
+          "start": 80.825,
+          "end": 80.977
+        },
+        {
+          "word": "person",
+          "display_index": 1,
+          "start": 80.977,
+          "end": 81.877
+        },
+        {
+          "word": "may",
+          "display_index": 2,
+          "start": 81.877,
+          "end": 82.317
+        },
+        {
+          "word": "regret,",
+          "display_index": 3,
+          "start": 82.317,
+          "end": 83.557
+        },
+        {
+          "word": "yet",
+          "display_index": 4,
+          "start": 83.557,
+          "end": 83.937
+        },
+        {
+          "word": "be",
+          "display_index": 5,
+          "start": 83.937,
+          "end": 84.197
+        },
+        {
+          "word": "saved",
+          "display_index": 6,
+          "start": 84.197,
+          "end": 84.857
+        },
+        {
+          "word": "by",
+          "display_index": 7,
+          "start": 84.857,
+          "end": 85.138
+        },
+        {
+          "word": "another",
+          "display_index": 8,
+          "start": 85.138,
+          "end": 86.038
+        },
+        {
+          "word": "person's",
+          "display_index": 9,
+          "start": 86.038,
+          "end": 87.758
+        },
+        {
+          "word": "affection.",
+          "display_index": 10,
+          "start": 87.758,
+          "end": 89.258
+        }
+      ],
+      "start": 80.825,
+      "end": 89.258
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

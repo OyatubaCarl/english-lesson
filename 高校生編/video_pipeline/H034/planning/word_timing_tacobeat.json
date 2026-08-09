@@ -1,0 +1,970 @@
+{
+  "lesson": "H034",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h034_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H034/candidate2-full.mp3",
+  "source_audio_sha256": "7c581d3de1a22d332d9e4462d95c8d5f411a680bfbc2c177d66bb9c8f1132d91",
+  "bpm": 91.92,
+  "exact_word_match": true,
+  "word_count": 143,
+  "line_count": 12,
+  "first_word_start": 10.742,
+  "last_word_end": 93.699,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Antoni Gaudí, from the end of the nineteenth century through the early twentieth, was the architect who created a unique architectural language in Barcelona, Spain.",
+      "word_timings": [
+        {
+          "word": "Antoni",
+          "display_index": 0,
+          "start": 10.742,
+          "end": 11.182
+        },
+        {
+          "word": "Gaudí,",
+          "display_index": 1,
+          "start": 11.182,
+          "end": 12.463
+        },
+        {
+          "word": "from",
+          "display_index": 2,
+          "start": 12.463,
+          "end": 12.695
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 12.695,
+          "end": 12.863
+        },
+        {
+          "word": "end",
+          "display_index": 4,
+          "start": 12.863,
+          "end": 13.063
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 13.063,
+          "end": 13.173
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 13.173,
+          "end": 13.283
+        },
+        {
+          "word": "nineteenth",
+          "display_index": 7,
+          "start": 13.283,
+          "end": 13.883
+        },
+        {
+          "word": "century",
+          "display_index": 8,
+          "start": 13.883,
+          "end": 14.383
+        },
+        {
+          "word": "through",
+          "display_index": 9,
+          "start": 14.383,
+          "end": 14.595
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 14.595,
+          "end": 14.743
+        },
+        {
+          "word": "early",
+          "display_index": 11,
+          "start": 14.743,
+          "end": 15.083
+        },
+        {
+          "word": "twentieth,",
+          "display_index": 12,
+          "start": 15.083,
+          "end": 16.463
+        },
+        {
+          "word": "was",
+          "display_index": 13,
+          "start": 16.463,
+          "end": 16.623
+        },
+        {
+          "word": "the",
+          "display_index": 14,
+          "start": 16.623,
+          "end": 16.803
+        },
+        {
+          "word": "architect",
+          "display_index": 15,
+          "start": 16.803,
+          "end": 17.384
+        },
+        {
+          "word": "who",
+          "display_index": 16,
+          "start": 17.384,
+          "end": 17.544
+        },
+        {
+          "word": "created",
+          "display_index": 17,
+          "start": 17.544,
+          "end": 18.051
+        },
+        {
+          "word": "a",
+          "display_index": 18,
+          "start": 18.051,
+          "end": 18.264
+        },
+        {
+          "word": "unique",
+          "display_index": 19,
+          "start": 18.264,
+          "end": 18.744
+        },
+        {
+          "word": "architectural",
+          "display_index": 20,
+          "start": 18.744,
+          "end": 19.484
+        },
+        {
+          "word": "language",
+          "display_index": 21,
+          "start": 19.484,
+          "end": 19.944
+        },
+        {
+          "word": "in",
+          "display_index": 22,
+          "start": 19.944,
+          "end": 20.084
+        },
+        {
+          "word": "Barcelona,",
+          "display_index": 23,
+          "start": 20.084,
+          "end": 20.844
+        },
+        {
+          "word": "Spain.",
+          "display_index": 24,
+          "start": 20.844,
+          "end": 22.344
+        }
+      ],
+      "start": 10.742,
+      "end": 22.344
+    },
+    {
+      "line": 2,
+      "english": "His most famous work is the basilica known as the Sagrada Família.",
+      "word_timings": [
+        {
+          "word": "His",
+          "display_index": 0,
+          "start": 22.665,
+          "end": 22.845
+        },
+        {
+          "word": "most",
+          "display_index": 1,
+          "start": 22.845,
+          "end": 23.145
+        },
+        {
+          "word": "famous",
+          "display_index": 2,
+          "start": 23.145,
+          "end": 23.605
+        },
+        {
+          "word": "work",
+          "display_index": 3,
+          "start": 23.605,
+          "end": 24.125
+        },
+        {
+          "word": "is",
+          "display_index": 4,
+          "start": 24.125,
+          "end": 24.288
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 24.288,
+          "end": 24.368
+        },
+        {
+          "word": "basilica",
+          "display_index": 6,
+          "start": 24.365,
+          "end": 25.645
+        },
+        {
+          "word": "known",
+          "display_index": 7,
+          "start": 25.645,
+          "end": 26.665
+        },
+        {
+          "word": "as",
+          "display_index": 8,
+          "start": 26.665,
+          "end": 26.842
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 26.842,
+          "end": 26.946
+        },
+        {
+          "word": "Sagrada",
+          "display_index": 10,
+          "start": 26.946,
+          "end": 27.506
+        },
+        {
+          "word": "Família.",
+          "display_index": 11,
+          "start": 27.506,
+          "end": 27.906
+        },
+        {
+          "word": "Família.",
+          "display_index": 11,
+          "start": 27.906,
+          "end": 29.406
+        }
+      ],
+      "start": 22.665,
+      "end": 29.406
+    },
+    {
+      "line": 3,
+      "english": "For more than a hundred years, its construction has continued, with interruptions.",
+      "word_timings": [
+        {
+          "word": "For",
+          "display_index": 0,
+          "start": 30.926,
+          "end": 31.126
+        },
+        {
+          "word": "more",
+          "display_index": 1,
+          "start": 31.126,
+          "end": 31.406
+        },
+        {
+          "word": "than",
+          "display_index": 2,
+          "start": 31.406,
+          "end": 31.593
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 31.593,
+          "end": 31.767
+        },
+        {
+          "word": "hundred",
+          "display_index": 4,
+          "start": 31.767,
+          "end": 32.287
+        },
+        {
+          "word": "years,",
+          "display_index": 5,
+          "start": 32.287,
+          "end": 33.387
+        },
+        {
+          "word": "its",
+          "display_index": 6,
+          "start": 33.387,
+          "end": 33.527
+        },
+        {
+          "word": "construction",
+          "display_index": 7,
+          "start": 33.527,
+          "end": 34.227
+        },
+        {
+          "word": "has",
+          "display_index": 8,
+          "start": 34.227,
+          "end": 34.527
+        },
+        {
+          "word": "continued,",
+          "display_index": 9,
+          "start": 34.527,
+          "end": 35.827
+        },
+        {
+          "word": "with",
+          "display_index": 10,
+          "start": 35.827,
+          "end": 36.047
+        },
+        {
+          "word": "interruptions.",
+          "display_index": 11,
+          "start": 36.047,
+          "end": 37.547
+        }
+      ],
+      "start": 30.926,
+      "end": 37.547
+    },
+    {
+      "line": 4,
+      "english": "It is an unfinished masterpiece.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 37.868,
+          "end": 37.963
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 37.963,
+          "end": 38.148
+        },
+        {
+          "word": "an",
+          "display_index": 2,
+          "start": 38.148,
+          "end": 38.328
+        },
+        {
+          "word": "unfinished",
+          "display_index": 3,
+          "start": 38.328,
+          "end": 39.128
+        },
+        {
+          "word": "masterpiece.",
+          "display_index": 4,
+          "start": 39.128,
+          "end": 40.628
+        }
+      ],
+      "start": 37.868,
+      "end": 40.628
+    },
+    {
+      "line": 5,
+      "english": "Gaudí drew inspiration for his designs in nature.",
+      "word_timings": [
+        {
+          "word": "Gaudí",
+          "display_index": 0,
+          "start": 41.689,
+          "end": 42.369
+        },
+        {
+          "word": "drew",
+          "display_index": 1,
+          "start": 42.369,
+          "end": 42.569
+        },
+        {
+          "word": "inspiration",
+          "display_index": 2,
+          "start": 42.569,
+          "end": 43.189
+        },
+        {
+          "word": "for",
+          "display_index": 3,
+          "start": 43.189,
+          "end": 43.369
+        },
+        {
+          "word": "his",
+          "display_index": 4,
+          "start": 43.369,
+          "end": 43.689
+        },
+        {
+          "word": "designs",
+          "display_index": 5,
+          "start": 43.689,
+          "end": 44.069
+        },
+        {
+          "word": "in",
+          "display_index": 6,
+          "start": 44.069,
+          "end": 44.189
+        },
+        {
+          "word": "nature.",
+          "display_index": 7,
+          "start": 44.189,
+          "end": 44.769
+        }
+      ],
+      "start": 41.689,
+      "end": 44.769
+    },
+    {
+      "line": 6,
+      "english": "Trees, mountains, shells, bones, waves.",
+      "word_timings": [
+        {
+          "word": "Trees,",
+          "display_index": 0,
+          "start": 44.769,
+          "end": 45.289
+        },
+        {
+          "word": "mountains,",
+          "display_index": 1,
+          "start": 45.289,
+          "end": 45.749
+        },
+        {
+          "word": "shells,",
+          "display_index": 2,
+          "start": 45.749,
+          "end": 46.27
+        },
+        {
+          "word": "bones,",
+          "display_index": 3,
+          "start": 46.27,
+          "end": 46.77
+        },
+        {
+          "word": "waves.",
+          "display_index": 4,
+          "start": 46.77,
+          "end": 47.15
+        }
+      ],
+      "start": 44.769,
+      "end": 47.15
+    },
+    {
+      "line": 7,
+      "english": "Every column, every curve, was designed from a form found in nature.",
+      "word_timings": [
+        {
+          "word": "Every",
+          "display_index": 0,
+          "start": 47.15,
+          "end": 47.39
+        },
+        {
+          "word": "column,",
+          "display_index": 1,
+          "start": 47.39,
+          "end": 47.83
+        },
+        {
+          "word": "every",
+          "display_index": 2,
+          "start": 47.83,
+          "end": 48.07
+        },
+        {
+          "word": "curve,",
+          "display_index": 3,
+          "start": 48.07,
+          "end": 48.43
+        },
+        {
+          "word": "was",
+          "display_index": 4,
+          "start": 48.43,
+          "end": 48.57
+        },
+        {
+          "word": "designed",
+          "display_index": 5,
+          "start": 48.57,
+          "end": 49.07
+        },
+        {
+          "word": "from",
+          "display_index": 6,
+          "start": 49.07,
+          "end": 49.224
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 49.224,
+          "end": 49.43
+        },
+        {
+          "word": "form",
+          "display_index": 8,
+          "start": 49.43,
+          "end": 50.23
+        },
+        {
+          "word": "found",
+          "display_index": 9,
+          "start": 50.23,
+          "end": 50.75
+        },
+        {
+          "word": "in",
+          "display_index": 10,
+          "start": 50.75,
+          "end": 51.01
+        },
+        {
+          "word": "nature.",
+          "display_index": 11,
+          "start": 51.01,
+          "end": 52.51
+        }
+      ],
+      "start": 47.15,
+      "end": 52.51
+    },
+    {
+      "line": 8,
+      "english": "He described nature as his great teacher.",
+      "word_timings": [
+        {
+          "word": "He",
+          "display_index": 0,
+          "start": 53.111,
+          "end": 53.291
+        },
+        {
+          "word": "described",
+          "display_index": 1,
+          "start": 53.291,
+          "end": 53.951
+        },
+        {
+          "word": "nature",
+          "display_index": 2,
+          "start": 53.951,
+          "end": 55.491
+        },
+        {
+          "word": "as",
+          "display_index": 3,
+          "start": 55.491,
+          "end": 55.731
+        },
+        {
+          "word": "his",
+          "display_index": 4,
+          "start": 55.731,
+          "end": 56.052
+        },
+        {
+          "word": "great",
+          "display_index": 5,
+          "start": 56.052,
+          "end": 56.532
+        },
+        {
+          "word": "teacher.",
+          "display_index": 6,
+          "start": 56.532,
+          "end": 57.752
+        }
+      ],
+      "start": 53.111,
+      "end": 57.752
+    },
+    {
+      "line": 9,
+      "english": "For him, nature itself was a form of architecture.",
+      "word_timings": [
+        {
+          "word": "For",
+          "display_index": 0,
+          "start": 58.052,
+          "end": 58.232
+        },
+        {
+          "word": "him,",
+          "display_index": 1,
+          "start": 58.232,
+          "end": 58.992
+        },
+        {
+          "word": "nature",
+          "display_index": 2,
+          "start": 58.992,
+          "end": 59.652
+        },
+        {
+          "word": "itself",
+          "display_index": 3,
+          "start": 59.652,
+          "end": 60.512
+        },
+        {
+          "word": "was",
+          "display_index": 4,
+          "start": 60.512,
+          "end": 60.699
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 60.699,
+          "end": 60.933
+        },
+        {
+          "word": "form",
+          "display_index": 6,
+          "start": 60.933,
+          "end": 61.513
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 61.513,
+          "end": 61.873
+        },
+        {
+          "word": "architecture.",
+          "display_index": 8,
+          "start": 61.873,
+          "end": 63.373
+        }
+      ],
+      "start": 58.052,
+      "end": 63.373
+    },
+    {
+      "line": 10,
+      "english": "In 1926, Gaudí was struck by a tram and died from his injuries several days later.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 63.933,
+          "end": 64.073
+        },
+        {
+          "word": "1926,",
+          "display_index": 1,
+          "start": 64.073,
+          "end": 65.393
+        },
+        {
+          "word": "Gaudí",
+          "display_index": 2,
+          "start": 65.393,
+          "end": 66.034
+        },
+        {
+          "word": "was",
+          "display_index": 3,
+          "start": 66.034,
+          "end": 66.254
+        },
+        {
+          "word": "struck",
+          "display_index": 4,
+          "start": 66.254,
+          "end": 66.694
+        },
+        {
+          "word": "by",
+          "display_index": 5,
+          "start": 66.694,
+          "end": 67.021
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 67.021,
+          "end": 67.114
+        },
+        {
+          "word": "tram",
+          "display_index": 7,
+          "start": 67.114,
+          "end": 68.054
+        },
+        {
+          "word": "and",
+          "display_index": 8,
+          "start": 68.054,
+          "end": 68.314
+        },
+        {
+          "word": "died",
+          "display_index": 9,
+          "start": 68.314,
+          "end": 69.274
+        },
+        {
+          "word": "from",
+          "display_index": 10,
+          "start": 69.274,
+          "end": 69.474
+        },
+        {
+          "word": "his",
+          "display_index": 11,
+          "start": 69.474,
+          "end": 69.714
+        },
+        {
+          "word": "injuries",
+          "display_index": 12,
+          "start": 69.714,
+          "end": 71.215
+        },
+        {
+          "word": "several",
+          "display_index": 13,
+          "start": 71.215,
+          "end": 71.735
+        },
+        {
+          "word": "days",
+          "display_index": 14,
+          "start": 71.735,
+          "end": 72.255
+        },
+        {
+          "word": "later.",
+          "display_index": 15,
+          "start": 72.255,
+          "end": 73.755
+        }
+      ],
+      "start": 63.933,
+      "end": 73.755
+    },
+    {
+      "line": 11,
+      "english": "The cathedral, however, is still being built, century after century, through donations and support from visitors around the world.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 74.581,
+          "end": 74.695
+        },
+        {
+          "word": "cathedral,",
+          "display_index": 1,
+          "start": 74.695,
+          "end": 75.836
+        },
+        {
+          "word": "however,",
+          "display_index": 2,
+          "start": 75.836,
+          "end": 77.136
+        },
+        {
+          "word": "is",
+          "display_index": 3,
+          "start": 77.136,
+          "end": 77.256
+        },
+        {
+          "word": "still",
+          "display_index": 4,
+          "start": 77.256,
+          "end": 77.636
+        },
+        {
+          "word": "being",
+          "display_index": 5,
+          "start": 77.636,
+          "end": 77.936
+        },
+        {
+          "word": "built,",
+          "display_index": 6,
+          "start": 77.936,
+          "end": 78.416
+        },
+        {
+          "word": "century",
+          "display_index": 7,
+          "start": 78.416,
+          "end": 79.036
+        },
+        {
+          "word": "after",
+          "display_index": 8,
+          "start": 79.036,
+          "end": 79.436
+        },
+        {
+          "word": "century,",
+          "display_index": 9,
+          "start": 79.436,
+          "end": 80.277
+        },
+        {
+          "word": "through",
+          "display_index": 10,
+          "start": 80.277,
+          "end": 80.517
+        },
+        {
+          "word": "donations",
+          "display_index": 11,
+          "start": 80.517,
+          "end": 81.337
+        },
+        {
+          "word": "and",
+          "display_index": 12,
+          "start": 81.337,
+          "end": 81.537
+        },
+        {
+          "word": "support",
+          "display_index": 13,
+          "start": 81.537,
+          "end": 82.137
+        },
+        {
+          "word": "from",
+          "display_index": 14,
+          "start": 82.137,
+          "end": 82.377
+        },
+        {
+          "word": "visitors",
+          "display_index": 15,
+          "start": 82.377,
+          "end": 82.937
+        },
+        {
+          "word": "around",
+          "display_index": 16,
+          "start": 82.937,
+          "end": 83.36
+        },
+        {
+          "word": "the",
+          "display_index": 17,
+          "start": 83.36,
+          "end": 83.517
+        },
+        {
+          "word": "world.",
+          "display_index": 18,
+          "start": 83.517,
+          "end": 85.017
+        }
+      ],
+      "start": 74.581,
+      "end": 85.017
+    },
+    {
+      "line": 12,
+      "english": "Perhaps its unfinished state has itself become part of the building's history.",
+      "word_timings": [
+        {
+          "word": "Perhaps",
+          "display_index": 0,
+          "start": 85.538,
+          "end": 86.238
+        },
+        {
+          "word": "its",
+          "display_index": 1,
+          "start": 86.238,
+          "end": 86.538
+        },
+        {
+          "word": "unfinished",
+          "display_index": 2,
+          "start": 86.538,
+          "end": 87.318
+        },
+        {
+          "word": "state",
+          "display_index": 3,
+          "start": 87.318,
+          "end": 87.878
+        },
+        {
+          "word": "has",
+          "display_index": 4,
+          "start": 87.878,
+          "end": 88.118
+        },
+        {
+          "word": "itself",
+          "display_index": 5,
+          "start": 88.118,
+          "end": 88.818
+        },
+        {
+          "word": "become",
+          "display_index": 6,
+          "start": 88.818,
+          "end": 89.618
+        },
+        {
+          "word": "part",
+          "display_index": 7,
+          "start": 89.618,
+          "end": 91.319
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 91.319,
+          "end": 91.443
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 91.443,
+          "end": 91.619
+        },
+        {
+          "word": "building's",
+          "display_index": 10,
+          "start": 91.619,
+          "end": 92.199
+        },
+        {
+          "word": "history.",
+          "display_index": 11,
+          "start": 92.199,
+          "end": 93.699
+        }
+      ],
+      "start": 85.538,
+      "end": 93.699
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

@@ -1,0 +1,1407 @@
+{
+  "lesson": 1,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L1/planning/lesson.json",
+  "title_en": "Lesson 1  My Family and Pochi",
+  "title_ja": "わたしの家族とポチ",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 17,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Hello. My name is Mio.",
+      "source_ja": "こんにちは。わたしの名前はミオです。",
+      "display_ja": "こんにちは。わたしの名前はミオです。",
+      "corrected_translation": false,
+      "mixed": "こんにちは。わたしの name はミオです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "こんにちは。わたしの ",
+          "parts": [
+            {
+              "text": "こんにちは。わたしの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "name",
+          "ruby": "名前"
+        },
+        {
+          "type": "ja",
+          "text": " はミオです。",
+          "parts": [
+            {
+              "text": "はミオです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "name",
+          "canonical_word": "name",
+          "meaning": "名前"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "name",
+          "reading": "名前",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "name",
+          "canonical_meaning": "名前"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "english": "I am twelve years old.",
+      "source_ja": "わたしは12歳です。",
+      "display_ja": "わたしは12歳です。",
+      "corrected_translation": false,
+      "mixed": "わたしは twelve years old です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしは ",
+          "parts": [
+            {
+              "text": "わたしは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "twelve",
+          "ruby": "12"
+        },
+        {
+          "type": "ja",
+          "text": " ",
+          "parts": []
+        },
+        {
+          "type": "en",
+          "text": "years",
+          "ruby": "〜歳"
+        },
+        {
+          "type": "ja",
+          "text": " ",
+          "parts": []
+        },
+        {
+          "type": "en",
+          "text": "old",
+          "ruby": "年の"
+        },
+        {
+          "type": "ja",
+          "text": " です。",
+          "parts": [
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "twelve",
+          "canonical_word": "twelve",
+          "meaning": "12"
+        },
+        {
+          "english": "years",
+          "canonical_word": "years",
+          "meaning": "〜歳"
+        },
+        {
+          "english": "old",
+          "canonical_word": "old",
+          "meaning": "年の"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "twelve",
+          "reading": "12",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "twelve",
+          "canonical_meaning": "12"
+        },
+        {
+          "english": "years",
+          "reading": "〜歳",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "years",
+          "canonical_meaning": "〜歳"
+        },
+        {
+          "english": "old",
+          "reading": "年の",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "old",
+          "canonical_meaning": "年の"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "I am a student.",
+      "source_ja": "わたしは学生です。",
+      "display_ja": "わたしは学生です。",
+      "corrected_translation": false,
+      "mixed": "わたしは student です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしは ",
+          "parts": [
+            {
+              "text": "わたしは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "student",
+          "ruby": "学生"
+        },
+        {
+          "type": "ja",
+          "text": " です。",
+          "parts": [
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "student",
+          "canonical_word": "student",
+          "meaning": "学生"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "student",
+          "reading": "学生",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "student",
+          "canonical_meaning": "学生"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "I live in a small village.",
+      "source_ja": "わたしは小さな村に住んでいます。",
+      "display_ja": "わたしは小さな村に住んでいます。",
+      "corrected_translation": false,
+      "mixed": "わたしは small village に live しています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしは ",
+          "parts": [
+            {
+              "text": "わたしは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "small ",
+          "ruby": "小さな"
+        },
+        {
+          "type": "en",
+          "text": "village",
+          "ruby": "村"
+        },
+        {
+          "type": "ja",
+          "text": " に ",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "live",
+          "ruby": "住んでいます"
+        },
+        {
+          "type": "ja",
+          "text": " しています",
+          "parts": [
+            {
+              "text": "しています",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "live",
+          "canonical_word": "live",
+          "meaning": "住む"
+        },
+        {
+          "english": "small",
+          "canonical_word": "small",
+          "meaning": "小さな"
+        },
+        {
+          "english": "village",
+          "canonical_word": "village",
+          "meaning": "村"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "small",
+          "reading": "小さな",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "small",
+          "canonical_meaning": "小さな"
+        },
+        {
+          "english": "village",
+          "reading": "村",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "village",
+          "canonical_meaning": "村"
+        },
+        {
+          "english": "live",
+          "reading": "住んでいます",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "live",
+          "canonical_meaning": "住む"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "My family has a father, a mother, a brother, a sister, and me — five of us.",
+      "source_ja": "家族は父、母、兄、妹、そしてわたしの5人です。",
+      "display_ja": "家族は父、母、兄、妹、そしてわたしの5人です。",
+      "corrected_translation": false,
+      "mixed": "family は father、 mother、 brother、 sister、そしてわたしの5人です。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "family",
+          "ruby": "家族"
+        },
+        {
+          "type": "ja",
+          "text": " は ",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "father",
+          "ruby": "父"
+        },
+        {
+          "type": "ja",
+          "text": "、 ",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "mother",
+          "ruby": "母"
+        },
+        {
+          "type": "ja",
+          "text": "、 ",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "brother",
+          "ruby": "兄"
+        },
+        {
+          "type": "ja",
+          "text": "、 ",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "sister",
+          "ruby": "妹"
+        },
+        {
+          "type": "ja",
+          "text": "、そしてわたしの5人です。",
+          "parts": [
+            {
+              "text": "、そしてわたしの5",
+              "ruby": ""
+            },
+            {
+              "text": "人",
+              "ruby": "にん"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "family",
+          "canonical_word": "family",
+          "meaning": "家族"
+        },
+        {
+          "english": "father",
+          "canonical_word": "father",
+          "meaning": "父"
+        },
+        {
+          "english": "mother",
+          "canonical_word": "mother",
+          "meaning": "母"
+        },
+        {
+          "english": "brother",
+          "canonical_word": "brother",
+          "meaning": "兄"
+        },
+        {
+          "english": "sister",
+          "canonical_word": "sister",
+          "meaning": "妹"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "family",
+          "reading": "家族",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "family",
+          "canonical_meaning": "家族"
+        },
+        {
+          "english": "father",
+          "reading": "父",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "father",
+          "canonical_meaning": "父"
+        },
+        {
+          "english": "mother",
+          "reading": "母",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "mother",
+          "canonical_meaning": "母"
+        },
+        {
+          "english": "brother",
+          "reading": "兄",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "brother",
+          "canonical_meaning": "兄"
+        },
+        {
+          "english": "sister",
+          "reading": "妹",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "sister",
+          "canonical_meaning": "妹"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "We have a dog.",
+      "source_ja": "わたしたちは犬を飼っています。",
+      "display_ja": "わたしたちは犬を飼っています。",
+      "corrected_translation": false,
+      "mixed": "わたしたちは dog を飼っています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしたちは ",
+          "parts": [
+            {
+              "text": "わたしたちは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "dog",
+          "ruby": "犬"
+        },
+        {
+          "type": "ja",
+          "text": " を飼っています。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "飼",
+              "ruby": "か"
+            },
+            {
+              "text": "っています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "dog",
+          "canonical_word": "dog",
+          "meaning": "犬"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "dog",
+          "reading": "犬",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "dog",
+          "canonical_meaning": "犬"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "Its name is Pochi.",
+      "source_ja": "名前はポチです。",
+      "display_ja": "名前はポチです。",
+      "corrected_translation": false,
+      "mixed": "name はポチです。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "name",
+          "ruby": "名前"
+        },
+        {
+          "type": "ja",
+          "text": " はポチです。",
+          "parts": [
+            {
+              "text": "はポチです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "name",
+          "canonical_word": "name",
+          "meaning": "名前"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "name",
+          "reading": "名前",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "name",
+          "canonical_meaning": "名前"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "Pochi is really cute,",
+      "source_ja": "ポチは本当にかわいくて、",
+      "display_ja": "ポチは本当にかわいくて、",
+      "corrected_translation": false,
+      "mixed": "ポチは本当に cute、",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ポチは本当に ",
+          "parts": [
+            {
+              "text": "ポチは",
+              "ruby": ""
+            },
+            {
+              "text": "本当",
+              "ruby": "ほんと"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "cute",
+          "ruby": "かわいくて"
+        },
+        {
+          "type": "ja",
+          "text": "、",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "cute",
+          "canonical_word": "cute",
+          "meaning": "かわいい"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "cute",
+          "reading": "かわいくて",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "cute",
+          "canonical_meaning": "かわいい"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "and his eyes are very black.",
+      "source_ja": "目はとても黒いです。",
+      "display_ja": "目はとても黒いです。",
+      "corrected_translation": false,
+      "mixed": "eyes はとても black です。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "eyes",
+          "ruby": "目"
+        },
+        {
+          "type": "ja",
+          "text": " はとても ",
+          "parts": [
+            {
+              "text": "はとても",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "black",
+          "ruby": "黒い"
+        },
+        {
+          "type": "ja",
+          "text": " です。",
+          "parts": [
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "eyes",
+          "canonical_word": "eyes",
+          "meaning": "目"
+        },
+        {
+          "english": "black",
+          "canonical_word": "black",
+          "meaning": "黒い"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "eyes",
+          "reading": "目",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "eyes",
+          "canonical_meaning": "目"
+        },
+        {
+          "english": "black",
+          "reading": "黒い",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "black",
+          "canonical_meaning": "黒い"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "Everyone likes him.",
+      "source_ja": "みんなポチが大好きです。",
+      "display_ja": "みんなポチが大好きです。",
+      "corrected_translation": false,
+      "mixed": "みんながポチを likes しています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "みんながポチを ",
+          "parts": [
+            {
+              "text": "みんながポチを",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "likes",
+          "ruby": "好き"
+        },
+        {
+          "type": "ja",
+          "text": " しています。",
+          "parts": [
+            {
+              "text": "しています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "likes",
+          "canonical_word": "like",
+          "meaning": "好き"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "likes",
+          "reading": "好き",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "like",
+          "canonical_meaning": "好き"
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "english": "Every morning, I go to school with my friend.",
+      "source_ja": "毎朝、わたしは友だちと学校へ行きます。",
+      "display_ja": "毎朝、わたしは友だちと学校へ行きます。",
+      "corrected_translation": false,
+      "mixed": "Every morning、わたしは友だちと school へ go します。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "Every",
+          "ruby": "毎〜"
+        },
+        {
+          "type": "ja",
+          "text": " ",
+          "parts": []
+        },
+        {
+          "type": "en",
+          "text": "morning",
+          "ruby": "朝"
+        },
+        {
+          "type": "ja",
+          "text": "、わたしは友だちと ",
+          "parts": [
+            {
+              "text": "、わたしは",
+              "ruby": ""
+            },
+            {
+              "text": "友",
+              "ruby": "とも"
+            },
+            {
+              "text": "だちと",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "school",
+          "ruby": "学校"
+        },
+        {
+          "type": "ja",
+          "text": " へ ",
+          "parts": [
+            {
+              "text": "へ",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "go",
+          "ruby": "行く"
+        },
+        {
+          "type": "ja",
+          "text": " します。",
+          "parts": [
+            {
+              "text": "します。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "Every",
+          "canonical_word": "Every",
+          "meaning": "毎〜"
+        },
+        {
+          "english": "morning",
+          "canonical_word": "morning",
+          "meaning": "朝"
+        },
+        {
+          "english": "go",
+          "canonical_word": "go",
+          "meaning": "行く"
+        },
+        {
+          "english": "school",
+          "canonical_word": "school",
+          "meaning": "学校"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Every",
+          "reading": "毎〜",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "Every",
+          "canonical_meaning": "毎〜"
+        },
+        {
+          "english": "morning",
+          "reading": "朝",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "morning",
+          "canonical_meaning": "朝"
+        },
+        {
+          "english": "go",
+          "reading": "行く",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "go",
+          "canonical_meaning": "行く"
+        },
+        {
+          "english": "school",
+          "reading": "学校",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "school",
+          "canonical_meaning": "学校"
+        }
+      ]
+    },
+    {
+      "line": 12,
+      "english": "We are in the same class.",
+      "source_ja": "わたしたちは同じクラスです。",
+      "display_ja": "わたしたちは同じクラスです。",
+      "corrected_translation": false,
+      "mixed": "わたしたちは同じ class です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしたちは同じ ",
+          "parts": [
+            {
+              "text": "わたしたちは",
+              "ruby": ""
+            },
+            {
+              "text": "同",
+              "ruby": "おな"
+            },
+            {
+              "text": "じ",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "class",
+          "ruby": "クラス"
+        },
+        {
+          "type": "ja",
+          "text": " です。",
+          "parts": [
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "class",
+          "canonical_word": "class",
+          "meaning": "クラス"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "class",
+          "reading": "クラス",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "class",
+          "canonical_meaning": "クラス"
+        }
+      ]
+    },
+    {
+      "line": 13,
+      "english": "I like music.",
+      "source_ja": "わたしは音楽が好きです。",
+      "display_ja": "わたしは音楽が好きです。",
+      "corrected_translation": false,
+      "mixed": "わたしは music を like しています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしは ",
+          "parts": [
+            {
+              "text": "わたしは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "music",
+          "ruby": "音楽"
+        },
+        {
+          "type": "ja",
+          "text": " を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "like",
+          "ruby": "好き"
+        },
+        {
+          "type": "ja",
+          "text": " しています。",
+          "parts": [
+            {
+              "text": "しています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "like",
+          "canonical_word": "like",
+          "meaning": "好き"
+        },
+        {
+          "english": "music",
+          "canonical_word": "music",
+          "meaning": "音楽"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "like",
+          "reading": "好き",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "like",
+          "canonical_meaning": "好き"
+        },
+        {
+          "english": "music",
+          "reading": "音楽",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "music",
+          "canonical_meaning": "音楽"
+        }
+      ]
+    },
+    {
+      "line": 14,
+      "english": "My brother likes books.",
+      "source_ja": "兄は本が好きです。",
+      "display_ja": "兄は本が好きです。",
+      "corrected_translation": false,
+      "mixed": "brother は books を likes しています。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "brother",
+          "ruby": "兄"
+        },
+        {
+          "type": "ja",
+          "text": " は ",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "books",
+          "ruby": "本"
+        },
+        {
+          "type": "ja",
+          "text": " を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "likes",
+          "ruby": "好き"
+        },
+        {
+          "type": "ja",
+          "text": " しています。",
+          "parts": [
+            {
+              "text": "しています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "brother",
+          "canonical_word": "brother",
+          "meaning": "兄"
+        },
+        {
+          "english": "likes",
+          "canonical_word": "like",
+          "meaning": "好き"
+        },
+        {
+          "english": "books",
+          "canonical_word": "book",
+          "meaning": "本"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "brother",
+          "reading": "兄",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "brother",
+          "canonical_meaning": "兄"
+        },
+        {
+          "english": "likes",
+          "reading": "好き",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "like",
+          "canonical_meaning": "好き"
+        },
+        {
+          "english": "books",
+          "reading": "本",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "book",
+          "canonical_meaning": "本"
+        }
+      ]
+    },
+    {
+      "line": 15,
+      "english": "My sister likes flowers very much.",
+      "source_ja": "妹は花が大好きです。",
+      "display_ja": "妹は花が大好きです。",
+      "corrected_translation": false,
+      "mixed": "sister は flowers をとても likes しています。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "sister",
+          "ruby": "妹"
+        },
+        {
+          "type": "ja",
+          "text": " は ",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "flowers",
+          "ruby": "花(複)"
+        },
+        {
+          "type": "ja",
+          "text": " をとても ",
+          "parts": [
+            {
+              "text": "をとても",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "likes",
+          "ruby": "好き"
+        },
+        {
+          "type": "ja",
+          "text": " しています。",
+          "parts": [
+            {
+              "text": "しています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "sister",
+          "canonical_word": "sister",
+          "meaning": "妹"
+        },
+        {
+          "english": "likes",
+          "canonical_word": "like",
+          "meaning": "好き"
+        },
+        {
+          "english": "flowers",
+          "canonical_word": "flowers",
+          "meaning": "花(複)"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "sister",
+          "reading": "妹",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "sister",
+          "canonical_meaning": "妹"
+        },
+        {
+          "english": "likes",
+          "reading": "好き",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "like",
+          "canonical_meaning": "好き"
+        },
+        {
+          "english": "flowers",
+          "reading": "花(複)",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "flowers",
+          "canonical_meaning": "花(複)"
+        }
+      ]
+    },
+    {
+      "line": 16,
+      "english": "Yesterday was a really good day.",
+      "source_ja": "昨日は本当にいい日でした。",
+      "display_ja": "昨日は本当にいい日でした。",
+      "corrected_translation": false,
+      "mixed": "Yesterday は本当に good な day でした。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "Yesterday",
+          "ruby": "昨日"
+        },
+        {
+          "type": "ja",
+          "text": " は本当に ",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "本当",
+              "ruby": "ほんと"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "good",
+          "ruby": "良い"
+        },
+        {
+          "type": "ja",
+          "text": " な ",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "day",
+          "ruby": "日"
+        },
+        {
+          "type": "ja",
+          "text": " でした。",
+          "parts": [
+            {
+              "text": "でした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "Yesterday",
+          "canonical_word": "Yesterday",
+          "meaning": "昨日"
+        },
+        {
+          "english": "good",
+          "canonical_word": "good",
+          "meaning": "良い"
+        },
+        {
+          "english": "day",
+          "canonical_word": "day",
+          "meaning": "日"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Yesterday",
+          "reading": "昨日",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "Yesterday",
+          "canonical_meaning": "昨日"
+        },
+        {
+          "english": "good",
+          "reading": "良い",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "good",
+          "canonical_meaning": "良い"
+        },
+        {
+          "english": "day",
+          "reading": "日",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "day",
+          "canonical_meaning": "日"
+        }
+      ]
+    },
+    {
+      "line": 17,
+      "english": "Pochi and I played a lot in the park.",
+      "source_ja": "ポチとわたしは公園でたくさん遊びました。",
+      "display_ja": "ポチとわたしは公園でたくさん遊びました。",
+      "corrected_translation": false,
+      "mixed": "ポチとわたしは park でたくさん played しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ポチとわたしは ",
+          "parts": [
+            {
+              "text": "ポチとわたしは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "park",
+          "ruby": "公園"
+        },
+        {
+          "type": "ja",
+          "text": " でたくさん ",
+          "parts": [
+            {
+              "text": "でたくさん",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "played",
+          "ruby": "遊びました"
+        },
+        {
+          "type": "ja",
+          "text": " しました",
+          "parts": [
+            {
+              "text": "しました",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "played",
+          "canonical_word": "played",
+          "meaning": "遊んだ"
+        },
+        {
+          "english": "park",
+          "canonical_word": "park",
+          "meaning": "公園"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "park",
+          "reading": "公園",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "park",
+          "canonical_meaning": "公園"
+        },
+        {
+          "english": "played",
+          "reading": "遊びました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "played",
+          "canonical_meaning": "遊んだ"
+        }
+      ]
+    }
+  ]
+}

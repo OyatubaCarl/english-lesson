@@ -1,0 +1,1400 @@
+{
+  "lesson": "H058",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h058_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H058/candidate1-full.mp3",
+  "source_audio_sha256": "839f7b8ad50210dacac1bce692b8ff4fb5ab8456b7c43892a3ef32c9057c8475",
+  "bpm": 87.98,
+  "exact_word_match": true,
+  "word_count": 208,
+  "line_count": 17,
+  "first_word_start": 10.886,
+  "last_word_end": 161.039,
+  "lines": [
+    {
+      "line": 1,
+      "english": "The court system of modern society is a way to settle conflict through law, not through violence.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 10.886,
+          "end": 11.001
+        },
+        {
+          "word": "court",
+          "display_index": 1,
+          "start": 11.001,
+          "end": 11.361
+        },
+        {
+          "word": "system",
+          "display_index": 2,
+          "start": 11.361,
+          "end": 12.261
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 12.261,
+          "end": 12.401
+        },
+        {
+          "word": "modern",
+          "display_index": 4,
+          "start": 12.401,
+          "end": 13.382
+        },
+        {
+          "word": "society",
+          "display_index": 5,
+          "start": 13.382,
+          "end": 15.507
+        },
+        {
+          "word": "is",
+          "display_index": 6,
+          "start": 15.507,
+          "end": 15.663
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 15.663,
+          "end": 15.802
+        },
+        {
+          "word": "way",
+          "display_index": 8,
+          "start": 15.802,
+          "end": 16.009
+        },
+        {
+          "word": "to",
+          "display_index": 9,
+          "start": 16.009,
+          "end": 16.142
+        },
+        {
+          "word": "settle",
+          "display_index": 10,
+          "start": 16.142,
+          "end": 16.482
+        },
+        {
+          "word": "conflict",
+          "display_index": 11,
+          "start": 16.482,
+          "end": 17.142
+        },
+        {
+          "word": "through",
+          "display_index": 12,
+          "start": 17.142,
+          "end": 17.502
+        },
+        {
+          "word": "law,",
+          "display_index": 13,
+          "start": 17.502,
+          "end": 19.202
+        },
+        {
+          "word": "not",
+          "display_index": 14,
+          "start": 19.202,
+          "end": 19.822
+        },
+        {
+          "word": "through",
+          "display_index": 15,
+          "start": 19.822,
+          "end": 20.222
+        },
+        {
+          "word": "violence.",
+          "display_index": 16,
+          "start": 20.222,
+          "end": 21.323
+        }
+      ],
+      "start": 10.886,
+      "end": 21.323
+    },
+    {
+      "line": 2,
+      "english": "When an incident occurs, the police first begin an investigation and arrest a suspect.",
+      "word_timings": [
+        {
+          "word": "When",
+          "display_index": 0,
+          "start": 21.623,
+          "end": 21.863
+        },
+        {
+          "word": "an",
+          "display_index": 1,
+          "start": 21.863,
+          "end": 22.003
+        },
+        {
+          "word": "incident",
+          "display_index": 2,
+          "start": 22.003,
+          "end": 22.503
+        },
+        {
+          "word": "occurs,",
+          "display_index": 3,
+          "start": 22.503,
+          "end": 23.184
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 23.184,
+          "end": 23.283
+        },
+        {
+          "word": "police",
+          "display_index": 5,
+          "start": 23.283,
+          "end": 23.823
+        },
+        {
+          "word": "first",
+          "display_index": 6,
+          "start": 23.823,
+          "end": 24.343
+        },
+        {
+          "word": "begin",
+          "display_index": 7,
+          "start": 24.343,
+          "end": 25.083
+        },
+        {
+          "word": "an",
+          "display_index": 8,
+          "start": 25.083,
+          "end": 25.223
+        },
+        {
+          "word": "investigation",
+          "display_index": 9,
+          "start": 25.223,
+          "end": 26.803
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 26.803,
+          "end": 27.123
+        },
+        {
+          "word": "arrest",
+          "display_index": 11,
+          "start": 27.123,
+          "end": 28.104
+        },
+        {
+          "word": "a",
+          "display_index": 12,
+          "start": 28.104,
+          "end": 28.383
+        },
+        {
+          "word": "suspect.",
+          "display_index": 13,
+          "start": 28.383,
+          "end": 29.883
+        }
+      ],
+      "start": 21.623,
+      "end": 29.883
+    },
+    {
+      "line": 3,
+      "english": "Then the prosecution gathers evidence and decides whether to bring charges.",
+      "word_timings": [
+        {
+          "word": "Then",
+          "display_index": 0,
+          "start": 32.164,
+          "end": 32.377
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 32.377,
+          "end": 32.484
+        },
+        {
+          "word": "prosecution",
+          "display_index": 2,
+          "start": 32.484,
+          "end": 33.544
+        },
+        {
+          "word": "gathers",
+          "display_index": 3,
+          "start": 33.544,
+          "end": 34.164
+        },
+        {
+          "word": "evidence",
+          "display_index": 4,
+          "start": 34.164,
+          "end": 35.104
+        },
+        {
+          "word": "and",
+          "display_index": 5,
+          "start": 35.104,
+          "end": 35.244
+        },
+        {
+          "word": "decides",
+          "display_index": 6,
+          "start": 35.244,
+          "end": 36.944
+        },
+        {
+          "word": "whether",
+          "display_index": 7,
+          "start": 36.944,
+          "end": 37.4
+        },
+        {
+          "word": "to",
+          "display_index": 8,
+          "start": 37.4,
+          "end": 37.604
+        },
+        {
+          "word": "bring",
+          "display_index": 9,
+          "start": 37.604,
+          "end": 37.945
+        },
+        {
+          "word": "charges.",
+          "display_index": 10,
+          "start": 37.945,
+          "end": 39.445
+        }
+      ],
+      "start": 32.164,
+      "end": 39.445
+    },
+    {
+      "line": 4,
+      "english": "When the trial begins, the prosecution and the defense each present their arguments.",
+      "word_timings": [
+        {
+          "word": "When",
+          "display_index": 0,
+          "start": 43.405,
+          "end": 43.585
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 43.585,
+          "end": 43.725
+        },
+        {
+          "word": "trial",
+          "display_index": 2,
+          "start": 43.725,
+          "end": 44.125
+        },
+        {
+          "word": "begins,",
+          "display_index": 3,
+          "start": 44.125,
+          "end": 44.824
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 44.824,
+          "end": 44.945
+        },
+        {
+          "word": "prosecution",
+          "display_index": 5,
+          "start": 44.945,
+          "end": 46.746
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 46.746,
+          "end": 46.886
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 46.886,
+          "end": 47.006
+        },
+        {
+          "word": "defense",
+          "display_index": 8,
+          "start": 47.006,
+          "end": 47.586
+        },
+        {
+          "word": "each",
+          "display_index": 9,
+          "start": 47.586,
+          "end": 47.826
+        },
+        {
+          "word": "present",
+          "display_index": 10,
+          "start": 47.826,
+          "end": 48.386
+        },
+        {
+          "word": "their",
+          "display_index": 11,
+          "start": 48.386,
+          "end": 49.006
+        },
+        {
+          "word": "arguments.",
+          "display_index": 12,
+          "start": 49.006,
+          "end": 50.506
+        }
+      ],
+      "start": 43.405,
+      "end": 50.506
+    },
+    {
+      "line": 5,
+      "english": "Witnesses are called to the court and, after taking an oath, give their testimony.",
+      "word_timings": [
+        {
+          "word": "Witnesses",
+          "display_index": 0,
+          "start": 51.926,
+          "end": 52.479
+        },
+        {
+          "word": "are",
+          "display_index": 1,
+          "start": 52.479,
+          "end": 52.646
+        },
+        {
+          "word": "called",
+          "display_index": 2,
+          "start": 52.646,
+          "end": 52.975
+        },
+        {
+          "word": "to",
+          "display_index": 3,
+          "start": 52.975,
+          "end": 53.153
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 53.153,
+          "end": 53.306
+        },
+        {
+          "word": "court",
+          "display_index": 5,
+          "start": 53.306,
+          "end": 53.906
+        },
+        {
+          "word": "and,",
+          "display_index": 6,
+          "start": 53.906,
+          "end": 54.306
+        },
+        {
+          "word": "after",
+          "display_index": 7,
+          "start": 54.306,
+          "end": 54.687
+        },
+        {
+          "word": "taking",
+          "display_index": 8,
+          "start": 54.687,
+          "end": 55.247
+        },
+        {
+          "word": "an",
+          "display_index": 9,
+          "start": 55.247,
+          "end": 55.447
+        },
+        {
+          "word": "oath,",
+          "display_index": 10,
+          "start": 55.447,
+          "end": 55.887
+        },
+        {
+          "word": "give",
+          "display_index": 11,
+          "start": 55.887,
+          "end": 56.227
+        },
+        {
+          "word": "their",
+          "display_index": 12,
+          "start": 56.227,
+          "end": 56.707
+        },
+        {
+          "word": "testimony.",
+          "display_index": 13,
+          "start": 56.707,
+          "end": 58.207
+        }
+      ],
+      "start": 51.926,
+      "end": 58.207
+    },
+    {
+      "line": 6,
+      "english": "The defendant also has the right to defend himself with the help of an attorney.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 59.815,
+          "end": 59.947
+        },
+        {
+          "word": "defendant",
+          "display_index": 1,
+          "start": 59.947,
+          "end": 60.747
+        },
+        {
+          "word": "also",
+          "display_index": 2,
+          "start": 60.747,
+          "end": 61.327
+        },
+        {
+          "word": "has",
+          "display_index": 3,
+          "start": 61.327,
+          "end": 61.865
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 61.865,
+          "end": 62.027
+        },
+        {
+          "word": "right",
+          "display_index": 5,
+          "start": 62.027,
+          "end": 62.524
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 62.524,
+          "end": 62.707
+        },
+        {
+          "word": "defend",
+          "display_index": 7,
+          "start": 62.707,
+          "end": 63.268
+        },
+        {
+          "word": "himself",
+          "display_index": 8,
+          "start": 63.268,
+          "end": 63.908
+        },
+        {
+          "word": "with",
+          "display_index": 9,
+          "start": 63.908,
+          "end": 64.069
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 64.069,
+          "end": 64.208
+        },
+        {
+          "word": "help",
+          "display_index": 11,
+          "start": 64.208,
+          "end": 64.648
+        },
+        {
+          "word": "of",
+          "display_index": 12,
+          "start": 64.648,
+          "end": 64.868
+        },
+        {
+          "word": "an",
+          "display_index": 13,
+          "start": 64.868,
+          "end": 65.148
+        },
+        {
+          "word": "attorney.",
+          "display_index": 14,
+          "start": 65.148,
+          "end": 66.648
+        }
+      ],
+      "start": 59.815,
+      "end": 66.648
+    },
+    {
+      "line": 7,
+      "english": "In many countries, a trial is presided over by a judge.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 68.528,
+          "end": 68.668
+        },
+        {
+          "word": "many",
+          "display_index": 1,
+          "start": 68.668,
+          "end": 68.988
+        },
+        {
+          "word": "countries,",
+          "display_index": 2,
+          "start": 68.988,
+          "end": 70.228
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 70.228,
+          "end": 70.308
+        },
+        {
+          "word": "trial",
+          "display_index": 4,
+          "start": 70.308,
+          "end": 70.728
+        },
+        {
+          "word": "is",
+          "display_index": 5,
+          "start": 70.728,
+          "end": 70.868
+        },
+        {
+          "word": "presided",
+          "display_index": 6,
+          "start": 70.868,
+          "end": 71.689
+        },
+        {
+          "word": "over",
+          "display_index": 7,
+          "start": 71.689,
+          "end": 72.249
+        },
+        {
+          "word": "by",
+          "display_index": 8,
+          "start": 72.249,
+          "end": 73.124
+        },
+        {
+          "word": "a",
+          "display_index": 9,
+          "start": 73.124,
+          "end": 73.409
+        },
+        {
+          "word": "judge.",
+          "display_index": 10,
+          "start": 73.409,
+          "end": 74.349
+        }
+      ],
+      "start": 68.528,
+      "end": 74.349
+    },
+    {
+      "line": 8,
+      "english": "In serious criminal cases, some countries use a jury of citizens to decide the facts.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 74.649,
+          "end": 74.829
+        },
+        {
+          "word": "serious",
+          "display_index": 1,
+          "start": 74.829,
+          "end": 75.429
+        },
+        {
+          "word": "criminal",
+          "display_index": 2,
+          "start": 75.429,
+          "end": 76.169
+        },
+        {
+          "word": "cases,",
+          "display_index": 3,
+          "start": 76.169,
+          "end": 78.869
+        },
+        {
+          "word": "some",
+          "display_index": 4,
+          "start": 78.869,
+          "end": 79.209
+        },
+        {
+          "word": "countries",
+          "display_index": 5,
+          "start": 79.209,
+          "end": 80.01
+        },
+        {
+          "word": "use",
+          "display_index": 6,
+          "start": 80.01,
+          "end": 80.301
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 80.301,
+          "end": 80.43
+        },
+        {
+          "word": "jury",
+          "display_index": 8,
+          "start": 80.43,
+          "end": 81.03
+        },
+        {
+          "word": "of",
+          "display_index": 9,
+          "start": 81.03,
+          "end": 81.27
+        },
+        {
+          "word": "citizens",
+          "display_index": 10,
+          "start": 81.27,
+          "end": 83.01
+        },
+        {
+          "word": "to",
+          "display_index": 11,
+          "start": 83.01,
+          "end": 83.15
+        },
+        {
+          "word": "decide",
+          "display_index": 12,
+          "start": 83.15,
+          "end": 84.03
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 84.03,
+          "end": 84.29
+        },
+        {
+          "word": "facts.",
+          "display_index": 14,
+          "start": 84.29,
+          "end": 85.79
+        }
+      ],
+      "start": 74.649,
+      "end": 85.79
+    },
+    {
+      "line": 9,
+      "english": "Innocent until proven guilty.",
+      "word_timings": [
+        {
+          "word": "Innocent",
+          "display_index": 0,
+          "start": 87.51,
+          "end": 88.351
+        },
+        {
+          "word": "until",
+          "display_index": 1,
+          "start": 88.351,
+          "end": 88.751
+        },
+        {
+          "word": "proven",
+          "display_index": 2,
+          "start": 88.751,
+          "end": 89.491
+        },
+        {
+          "word": "guilty.",
+          "display_index": 3,
+          "start": 89.491,
+          "end": 90.423
+        }
+      ],
+      "start": 87.51,
+      "end": 90.423
+    },
+    {
+      "line": 10,
+      "english": "A person is presumed innocent until guilt is proven.",
+      "word_timings": [
+        {
+          "word": "A",
+          "display_index": 0,
+          "start": 90.723,
+          "end": 90.851
+        },
+        {
+          "word": "person",
+          "display_index": 1,
+          "start": 90.851,
+          "end": 91.398
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 91.398,
+          "end": 91.691
+        },
+        {
+          "word": "presumed",
+          "display_index": 3,
+          "start": 91.691,
+          "end": 92.331
+        },
+        {
+          "word": "innocent",
+          "display_index": 4,
+          "start": 92.331,
+          "end": 93.151
+        },
+        {
+          "word": "until",
+          "display_index": 5,
+          "start": 93.151,
+          "end": 93.611
+        },
+        {
+          "word": "guilt",
+          "display_index": 6,
+          "start": 93.611,
+          "end": 94.084
+        },
+        {
+          "word": "is",
+          "display_index": 7,
+          "start": 94.084,
+          "end": 94.251
+        },
+        {
+          "word": "proven.",
+          "display_index": 8,
+          "start": 94.251,
+          "end": 95.751
+        }
+      ],
+      "start": 90.723,
+      "end": 95.751
+    },
+    {
+      "line": 11,
+      "english": "This is one of the most important principles of modern law.",
+      "word_timings": [
+        {
+          "word": "This",
+          "display_index": 0,
+          "start": 96.672,
+          "end": 96.752
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 96.749,
+          "end": 97.132
+        },
+        {
+          "word": "one",
+          "display_index": 2,
+          "start": 97.132,
+          "end": 97.332
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 97.332,
+          "end": 97.53
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 97.53,
+          "end": 97.712
+        },
+        {
+          "word": "most",
+          "display_index": 5,
+          "start": 97.712,
+          "end": 98.152
+        },
+        {
+          "word": "important",
+          "display_index": 6,
+          "start": 98.152,
+          "end": 99.032
+        },
+        {
+          "word": "principles",
+          "display_index": 7,
+          "start": 99.032,
+          "end": 100.832
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 100.832,
+          "end": 101.132
+        },
+        {
+          "word": "modern",
+          "display_index": 9,
+          "start": 101.132,
+          "end": 102.212
+        },
+        {
+          "word": "law.",
+          "display_index": 10,
+          "start": 102.212,
+          "end": 103.712
+        }
+      ],
+      "start": 96.672,
+      "end": 103.712
+    },
+    {
+      "line": 12,
+      "english": "If the evidence is not sufficient, the defendant is found not guilty.",
+      "word_timings": [
+        {
+          "word": "If",
+          "display_index": 0,
+          "start": 104.952,
+          "end": 105.113
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 105.113,
+          "end": 105.353
+        },
+        {
+          "word": "evidence",
+          "display_index": 2,
+          "start": 105.353,
+          "end": 106.132
+        },
+        {
+          "word": "is",
+          "display_index": 3,
+          "start": 106.132,
+          "end": 106.313
+        },
+        {
+          "word": "not",
+          "display_index": 4,
+          "start": 106.313,
+          "end": 106.953
+        },
+        {
+          "word": "sufficient,",
+          "display_index": 5,
+          "start": 106.953,
+          "end": 107.887
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 107.887,
+          "end": 108.033
+        },
+        {
+          "word": "defendant",
+          "display_index": 7,
+          "start": 108.033,
+          "end": 108.861
+        },
+        {
+          "word": "is",
+          "display_index": 8,
+          "start": 108.861,
+          "end": 109.173
+        },
+        {
+          "word": "found",
+          "display_index": 9,
+          "start": 109.173,
+          "end": 109.753
+        },
+        {
+          "word": "not",
+          "display_index": 10,
+          "start": 109.753,
+          "end": 110.073
+        },
+        {
+          "word": "guilty.",
+          "display_index": 11,
+          "start": 110.073,
+          "end": 110.853
+        }
+      ],
+      "start": 104.952,
+      "end": 110.853
+    },
+    {
+      "line": 13,
+      "english": "If the verdict is guilty, a sentence is given.",
+      "word_timings": [
+        {
+          "word": "If",
+          "display_index": 0,
+          "start": 111.153,
+          "end": 111.312
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 111.312,
+          "end": 111.473
+        },
+        {
+          "word": "verdict",
+          "display_index": 2,
+          "start": 111.473,
+          "end": 112.51
+        },
+        {
+          "word": "is",
+          "display_index": 3,
+          "start": 112.51,
+          "end": 112.833
+        },
+        {
+          "word": "guilty,",
+          "display_index": 4,
+          "start": 112.833,
+          "end": 114.75
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 114.75,
+          "end": 114.894
+        },
+        {
+          "word": "sentence",
+          "display_index": 6,
+          "start": 114.894,
+          "end": 115.61
+        },
+        {
+          "word": "is",
+          "display_index": 7,
+          "start": 115.61,
+          "end": 115.934
+        },
+        {
+          "word": "given.",
+          "display_index": 8,
+          "start": 115.934,
+          "end": 117.434
+        }
+      ],
+      "start": 111.153,
+      "end": 117.434
+    },
+    {
+      "line": 14,
+      "english": "The punishment may be prison time, a fine, or community service.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 118.888,
+          "end": 119.034
+        },
+        {
+          "word": "punishment",
+          "display_index": 1,
+          "start": 119.034,
+          "end": 119.914
+        },
+        {
+          "word": "may",
+          "display_index": 2,
+          "start": 119.914,
+          "end": 120.194
+        },
+        {
+          "word": "be",
+          "display_index": 3,
+          "start": 120.194,
+          "end": 120.394
+        },
+        {
+          "word": "prison",
+          "display_index": 4,
+          "start": 120.394,
+          "end": 120.934
+        },
+        {
+          "word": "time,",
+          "display_index": 5,
+          "start": 120.934,
+          "end": 121.499
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 121.499,
+          "end": 121.794
+        },
+        {
+          "word": "fine,",
+          "display_index": 7,
+          "start": 121.794,
+          "end": 122.735
+        },
+        {
+          "word": "or",
+          "display_index": 8,
+          "start": 122.735,
+          "end": 122.835
+        },
+        {
+          "word": "community",
+          "display_index": 9,
+          "start": 122.835,
+          "end": 123.875
+        },
+        {
+          "word": "service.",
+          "display_index": 10,
+          "start": 123.875,
+          "end": 125.375
+        }
+      ],
+      "start": 118.888,
+      "end": 125.375
+    },
+    {
+      "line": 15,
+      "english": "If the defendant disagrees with the judgment, he can appeal to a higher court.",
+      "word_timings": [
+        {
+          "word": "If",
+          "display_index": 0,
+          "start": 126.895,
+          "end": 127.03
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 127.03,
+          "end": 127.195
+        },
+        {
+          "word": "defendant",
+          "display_index": 2,
+          "start": 127.195,
+          "end": 128.095
+        },
+        {
+          "word": "disagrees",
+          "display_index": 3,
+          "start": 128.095,
+          "end": 129.135
+        },
+        {
+          "word": "with",
+          "display_index": 4,
+          "start": 129.135,
+          "end": 129.452
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 129.452,
+          "end": 129.775
+        },
+        {
+          "word": "judgment,",
+          "display_index": 6,
+          "start": 129.775,
+          "end": 131.876
+        },
+        {
+          "word": "he",
+          "display_index": 7,
+          "start": 131.876,
+          "end": 132.196
+        },
+        {
+          "word": "can",
+          "display_index": 8,
+          "start": 132.196,
+          "end": 132.656
+        },
+        {
+          "word": "appeal",
+          "display_index": 9,
+          "start": 132.656,
+          "end": 133.58
+        },
+        {
+          "word": "to",
+          "display_index": 10,
+          "start": 133.58,
+          "end": 133.867
+        },
+        {
+          "word": "a",
+          "display_index": 11,
+          "start": 133.867,
+          "end": 134.176
+        },
+        {
+          "word": "higher",
+          "display_index": 12,
+          "start": 134.176,
+          "end": 135.036
+        },
+        {
+          "word": "court.",
+          "display_index": 13,
+          "start": 135.036,
+          "end": 136.536
+        }
+      ],
+      "start": 126.895,
+      "end": 136.536
+    },
+    {
+      "line": 16,
+      "english": "The system of justice must be fair to both victims and offenders.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 138.395,
+          "end": 138.556
+        },
+        {
+          "word": "system",
+          "display_index": 1,
+          "start": 138.556,
+          "end": 139.357
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 139.357,
+          "end": 139.597
+        },
+        {
+          "word": "justice",
+          "display_index": 3,
+          "start": 139.597,
+          "end": 140.677
+        },
+        {
+          "word": "must",
+          "display_index": 4,
+          "start": 140.677,
+          "end": 141.017
+        },
+        {
+          "word": "be",
+          "display_index": 5,
+          "start": 141.017,
+          "end": 141.317
+        },
+        {
+          "word": "fair",
+          "display_index": 6,
+          "start": 141.317,
+          "end": 142.251
+        },
+        {
+          "word": "to",
+          "display_index": 7,
+          "start": 142.251,
+          "end": 142.417
+        },
+        {
+          "word": "both",
+          "display_index": 8,
+          "start": 142.417,
+          "end": 142.757
+        },
+        {
+          "word": "victims",
+          "display_index": 9,
+          "start": 142.757,
+          "end": 143.577
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 143.577,
+          "end": 143.877
+        },
+        {
+          "word": "offenders.",
+          "display_index": 11,
+          "start": 143.877,
+          "end": 145.377
+        }
+      ],
+      "start": 138.395,
+      "end": 145.377
+    },
+    {
+      "line": 17,
+      "english": "To realize the ideal of justice, humanity has spent centuries refining the system of the court.",
+      "word_timings": [
+        {
+          "word": "To",
+          "display_index": 0,
+          "start": 146.094,
+          "end": 146.297
+        },
+        {
+          "word": "realize",
+          "display_index": 1,
+          "start": 146.297,
+          "end": 147.364
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 147.364,
+          "end": 147.838
+        },
+        {
+          "word": "ideal",
+          "display_index": 3,
+          "start": 147.838,
+          "end": 149.158
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 149.158,
+          "end": 149.438
+        },
+        {
+          "word": "justice,",
+          "display_index": 5,
+          "start": 149.438,
+          "end": 151.838
+        },
+        {
+          "word": "humanity",
+          "display_index": 6,
+          "start": 151.838,
+          "end": 153.398
+        },
+        {
+          "word": "has",
+          "display_index": 7,
+          "start": 153.398,
+          "end": 153.598
+        },
+        {
+          "word": "spent",
+          "display_index": 8,
+          "start": 153.598,
+          "end": 154.378
+        },
+        {
+          "word": "centuries",
+          "display_index": 9,
+          "start": 154.378,
+          "end": 155.499
+        },
+        {
+          "word": "refining",
+          "display_index": 10,
+          "start": 155.499,
+          "end": 157.959
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 157.959,
+          "end": 158.159
+        },
+        {
+          "word": "system",
+          "display_index": 12,
+          "start": 158.159,
+          "end": 159.079
+        },
+        {
+          "word": "of",
+          "display_index": 13,
+          "start": 159.079,
+          "end": 159.349
+        },
+        {
+          "word": "the",
+          "display_index": 14,
+          "start": 159.349,
+          "end": 159.539
+        },
+        {
+          "word": "court.",
+          "display_index": 15,
+          "start": 159.539,
+          "end": 161.039
+        }
+      ],
+      "start": 146.094,
+      "end": 161.039
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

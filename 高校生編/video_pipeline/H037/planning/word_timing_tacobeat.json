@@ -1,0 +1,1106 @@
+{
+  "lesson": "H037",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h037_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H037/candidate2-full.mp3",
+  "source_audio_sha256": "cc16bf50bfa2916ee61f3452c2982224c0250ecfc98ad9670c32486a0d856753",
+  "bpm": 92.0,
+  "exact_word_match": true,
+  "word_count": 163,
+  "line_count": 14,
+  "first_word_start": 10.902,
+  "last_word_end": 123.559,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Ludwig van Beethoven, starting in his late twenties, slowly began to lose his hearing.",
+      "word_timings": [
+        {
+          "word": "Ludwig",
+          "display_index": 0,
+          "start": 10.902,
+          "end": 11.502
+        },
+        {
+          "word": "van",
+          "display_index": 1,
+          "start": 11.502,
+          "end": 11.842
+        },
+        {
+          "word": "Beethoven,",
+          "display_index": 2,
+          "start": 11.842,
+          "end": 12.962
+        },
+        {
+          "word": "starting",
+          "display_index": 3,
+          "start": 12.962,
+          "end": 13.542
+        },
+        {
+          "word": "in",
+          "display_index": 4,
+          "start": 13.542,
+          "end": 13.762
+        },
+        {
+          "word": "his",
+          "display_index": 5,
+          "start": 13.762,
+          "end": 14.102
+        },
+        {
+          "word": "late",
+          "display_index": 6,
+          "start": 14.102,
+          "end": 14.382
+        },
+        {
+          "word": "twenties,",
+          "display_index": 7,
+          "start": 14.382,
+          "end": 15.902
+        },
+        {
+          "word": "slowly",
+          "display_index": 8,
+          "start": 15.902,
+          "end": 16.883
+        },
+        {
+          "word": "began",
+          "display_index": 9,
+          "start": 16.883,
+          "end": 17.54
+        },
+        {
+          "word": "to",
+          "display_index": 10,
+          "start": 17.54,
+          "end": 17.763
+        },
+        {
+          "word": "lose",
+          "display_index": 11,
+          "start": 17.763,
+          "end": 18.183
+        },
+        {
+          "word": "his",
+          "display_index": 12,
+          "start": 18.183,
+          "end": 18.463
+        },
+        {
+          "word": "hearing.",
+          "display_index": 13,
+          "start": 18.463,
+          "end": 19.963
+        }
+      ],
+      "start": 10.902,
+      "end": 19.963
+    },
+    {
+      "line": 2,
+      "english": "For a musician, no suffering could have been greater.",
+      "word_timings": [
+        {
+          "word": "For",
+          "display_index": 0,
+          "start": 20.583,
+          "end": 20.788
+        },
+        {
+          "word": "a",
+          "display_index": 1,
+          "start": 20.788,
+          "end": 20.923
+        },
+        {
+          "word": "musician,",
+          "display_index": 2,
+          "start": 20.923,
+          "end": 22.103
+        },
+        {
+          "word": "no",
+          "display_index": 3,
+          "start": 22.103,
+          "end": 22.403
+        },
+        {
+          "word": "suffering",
+          "display_index": 4,
+          "start": 22.403,
+          "end": 23.344
+        },
+        {
+          "word": "could",
+          "display_index": 5,
+          "start": 23.344,
+          "end": 24.044
+        },
+        {
+          "word": "have",
+          "display_index": 6,
+          "start": 24.044,
+          "end": 24.384
+        },
+        {
+          "word": "been",
+          "display_index": 7,
+          "start": 24.384,
+          "end": 24.724
+        },
+        {
+          "word": "greater.",
+          "display_index": 8,
+          "start": 24.724,
+          "end": 25.784
+        }
+      ],
+      "start": 20.583,
+      "end": 25.784
+    },
+    {
+      "line": 3,
+      "english": "Yet silence did not stop the music inside him.",
+      "word_timings": [
+        {
+          "word": "Yet",
+          "display_index": 0,
+          "start": 26.084,
+          "end": 26.384
+        },
+        {
+          "word": "silence",
+          "display_index": 1,
+          "start": 26.384,
+          "end": 27.024
+        },
+        {
+          "word": "did",
+          "display_index": 2,
+          "start": 27.024,
+          "end": 27.244
+        },
+        {
+          "word": "not",
+          "display_index": 3,
+          "start": 27.244,
+          "end": 27.544
+        },
+        {
+          "word": "stop",
+          "display_index": 4,
+          "start": 27.544,
+          "end": 28.664
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 28.664,
+          "end": 28.844
+        },
+        {
+          "word": "music",
+          "display_index": 6,
+          "start": 28.844,
+          "end": 29.625
+        },
+        {
+          "word": "inside",
+          "display_index": 7,
+          "start": 29.625,
+          "end": 30.485
+        },
+        {
+          "word": "him.",
+          "display_index": 8,
+          "start": 30.485,
+          "end": 31.845
+        }
+      ],
+      "start": 26.084,
+      "end": 31.845
+    },
+    {
+      "line": 4,
+      "english": "Deafness drove him toward despair, yet he continued to compose music of extraordinary depth.",
+      "word_timings": [
+        {
+          "word": "Deafness",
+          "display_index": 0,
+          "start": 32.145,
+          "end": 32.745
+        },
+        {
+          "word": "drove",
+          "display_index": 1,
+          "start": 32.745,
+          "end": 33.125
+        },
+        {
+          "word": "him",
+          "display_index": 2,
+          "start": 33.125,
+          "end": 33.365
+        },
+        {
+          "word": "toward",
+          "display_index": 3,
+          "start": 33.365,
+          "end": 33.765
+        },
+        {
+          "word": "despair,",
+          "display_index": 4,
+          "start": 33.765,
+          "end": 34.905
+        },
+        {
+          "word": "yet",
+          "display_index": 5,
+          "start": 34.905,
+          "end": 35.085
+        },
+        {
+          "word": "he",
+          "display_index": 6,
+          "start": 35.085,
+          "end": 35.225
+        },
+        {
+          "word": "continued",
+          "display_index": 7,
+          "start": 35.225,
+          "end": 35.879
+        },
+        {
+          "word": "to",
+          "display_index": 8,
+          "start": 35.879,
+          "end": 36.126
+        },
+        {
+          "word": "compose",
+          "display_index": 9,
+          "start": 36.126,
+          "end": 37.066
+        },
+        {
+          "word": "music",
+          "display_index": 10,
+          "start": 37.066,
+          "end": 37.726
+        },
+        {
+          "word": "of",
+          "display_index": 11,
+          "start": 37.726,
+          "end": 37.846
+        },
+        {
+          "word": "extraordinary",
+          "display_index": 12,
+          "start": 37.846,
+          "end": 39.046
+        },
+        {
+          "word": "depth.",
+          "display_index": 13,
+          "start": 39.046,
+          "end": 40.166
+        }
+      ],
+      "start": 32.145,
+      "end": 40.166
+    },
+    {
+      "line": 5,
+      "english": "In 1824, his final completed symphony, the Ninth, received its first performance.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 40.466,
+          "end": 40.686
+        },
+        {
+          "word": "1824,",
+          "display_index": 1,
+          "start": 40.686,
+          "end": 42.247
+        },
+        {
+          "word": "his",
+          "display_index": 2,
+          "start": 42.247,
+          "end": 42.547
+        },
+        {
+          "word": "final",
+          "display_index": 3,
+          "start": 42.547,
+          "end": 43.047
+        },
+        {
+          "word": "completed",
+          "display_index": 4,
+          "start": 43.047,
+          "end": 43.907
+        },
+        {
+          "word": "symphony,",
+          "display_index": 5,
+          "start": 43.907,
+          "end": 45.658
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 45.658,
+          "end": 45.827
+        },
+        {
+          "word": "Ninth,",
+          "display_index": 7,
+          "start": 45.827,
+          "end": 46.947
+        },
+        {
+          "word": "received",
+          "display_index": 8,
+          "start": 46.947,
+          "end": 47.907
+        },
+        {
+          "word": "its",
+          "display_index": 9,
+          "start": 47.907,
+          "end": 48.388
+        },
+        {
+          "word": "first",
+          "display_index": 10,
+          "start": 48.388,
+          "end": 49.068
+        },
+        {
+          "word": "performance.",
+          "display_index": 11,
+          "start": 49.068,
+          "end": 50.568
+        }
+      ],
+      "start": 40.466,
+      "end": 50.568
+    },
+    {
+      "line": 6,
+      "english": "It was a grand composition, using a choir to sing Schiller's poem, Ode to Joy.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 51.428,
+          "end": 51.608
+        },
+        {
+          "word": "was",
+          "display_index": 1,
+          "start": 51.608,
+          "end": 51.888
+        },
+        {
+          "word": "a",
+          "display_index": 2,
+          "start": 51.888,
+          "end": 51.988
+        },
+        {
+          "word": "grand",
+          "display_index": 3,
+          "start": 51.988,
+          "end": 52.648
+        },
+        {
+          "word": "composition,",
+          "display_index": 4,
+          "start": 52.648,
+          "end": 54.188
+        },
+        {
+          "word": "using",
+          "display_index": 5,
+          "start": 54.188,
+          "end": 54.475
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 54.475,
+          "end": 54.609
+        },
+        {
+          "word": "choir",
+          "display_index": 7,
+          "start": 54.609,
+          "end": 55.452
+        },
+        {
+          "word": "to",
+          "display_index": 8,
+          "start": 55.452,
+          "end": 55.669
+        },
+        {
+          "word": "sing",
+          "display_index": 9,
+          "start": 55.669,
+          "end": 56.049
+        },
+        {
+          "word": "Schiller's",
+          "display_index": 10,
+          "start": 56.049,
+          "end": 56.869
+        },
+        {
+          "word": "poem,",
+          "display_index": 11,
+          "start": 56.869,
+          "end": 57.709
+        },
+        {
+          "word": "Ode",
+          "display_index": 12,
+          "start": 57.709,
+          "end": 59.805
+        },
+        {
+          "word": "to",
+          "display_index": 13,
+          "start": 59.805,
+          "end": 60.009
+        },
+        {
+          "word": "Joy.",
+          "display_index": 14,
+          "start": 60.009,
+          "end": 61.509
+        }
+      ],
+      "start": 51.428,
+      "end": 61.509
+    },
+    {
+      "line": 7,
+      "english": "On the night of the first performance, Beethoven stood on the stage.",
+      "word_timings": [
+        {
+          "word": "On",
+          "display_index": 0,
+          "start": 61.85,
+          "end": 61.973
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 61.973,
+          "end": 62.13
+        },
+        {
+          "word": "night",
+          "display_index": 2,
+          "start": 62.13,
+          "end": 62.51
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 62.51,
+          "end": 62.608
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 62.608,
+          "end": 62.77
+        },
+        {
+          "word": "first",
+          "display_index": 5,
+          "start": 62.77,
+          "end": 63.45
+        },
+        {
+          "word": "performance,",
+          "display_index": 6,
+          "start": 63.45,
+          "end": 64.43
+        },
+        {
+          "word": "Beethoven",
+          "display_index": 7,
+          "start": 64.43,
+          "end": 65.29
+        },
+        {
+          "word": "stood",
+          "display_index": 8,
+          "start": 65.29,
+          "end": 65.69
+        },
+        {
+          "word": "on",
+          "display_index": 9,
+          "start": 65.69,
+          "end": 65.854
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 65.854,
+          "end": 66.07
+        },
+        {
+          "word": "stage.",
+          "display_index": 11,
+          "start": 66.07,
+          "end": 66.75
+        }
+      ],
+      "start": 61.85,
+      "end": 66.75
+    },
+    {
+      "line": 8,
+      "english": "He faced the podium, but he could no longer hear any sound.",
+      "word_timings": [
+        {
+          "word": "He",
+          "display_index": 0,
+          "start": 67.05,
+          "end": 67.31
+        },
+        {
+          "word": "faced",
+          "display_index": 1,
+          "start": 67.31,
+          "end": 67.848
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 67.848,
+          "end": 67.991
+        },
+        {
+          "word": "podium,",
+          "display_index": 3,
+          "start": 67.991,
+          "end": 69.851
+        },
+        {
+          "word": "but",
+          "display_index": 4,
+          "start": 69.851,
+          "end": 70.011
+        },
+        {
+          "word": "he",
+          "display_index": 5,
+          "start": 70.011,
+          "end": 70.191
+        },
+        {
+          "word": "could",
+          "display_index": 6,
+          "start": 70.191,
+          "end": 70.451
+        },
+        {
+          "word": "no",
+          "display_index": 7,
+          "start": 70.451,
+          "end": 70.931
+        },
+        {
+          "word": "longer",
+          "display_index": 8,
+          "start": 70.931,
+          "end": 71.551
+        },
+        {
+          "word": "hear",
+          "display_index": 9,
+          "start": 71.551,
+          "end": 72.311
+        },
+        {
+          "word": "any",
+          "display_index": 10,
+          "start": 72.311,
+          "end": 72.831
+        },
+        {
+          "word": "sound.",
+          "display_index": 11,
+          "start": 72.831,
+          "end": 74.331
+        }
+      ],
+      "start": 67.05,
+      "end": 74.331
+    },
+    {
+      "line": 9,
+      "english": "After the final note, applause filled the hall, yet he stood with his back turned, not noticing.",
+      "word_timings": [
+        {
+          "word": "After",
+          "display_index": 0,
+          "start": 77.352,
+          "end": 77.632
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 77.632,
+          "end": 77.792
+        },
+        {
+          "word": "final",
+          "display_index": 2,
+          "start": 77.792,
+          "end": 78.412
+        },
+        {
+          "word": "note,",
+          "display_index": 3,
+          "start": 78.412,
+          "end": 78.972
+        },
+        {
+          "word": "applause",
+          "display_index": 4,
+          "start": 78.972,
+          "end": 79.432
+        },
+        {
+          "word": "filled",
+          "display_index": 5,
+          "start": 79.432,
+          "end": 79.914
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 79.914,
+          "end": 80.072
+        },
+        {
+          "word": "hall,",
+          "display_index": 7,
+          "start": 80.072,
+          "end": 80.613
+        },
+        {
+          "word": "yet",
+          "display_index": 8,
+          "start": 80.613,
+          "end": 80.793
+        },
+        {
+          "word": "he",
+          "display_index": 9,
+          "start": 80.793,
+          "end": 80.973
+        },
+        {
+          "word": "stood",
+          "display_index": 10,
+          "start": 80.973,
+          "end": 81.373
+        },
+        {
+          "word": "with",
+          "display_index": 11,
+          "start": 81.373,
+          "end": 81.553
+        },
+        {
+          "word": "his",
+          "display_index": 12,
+          "start": 81.553,
+          "end": 81.713
+        },
+        {
+          "word": "back",
+          "display_index": 13,
+          "start": 81.713,
+          "end": 82.013
+        },
+        {
+          "word": "turned,",
+          "display_index": 14,
+          "start": 82.013,
+          "end": 82.693
+        },
+        {
+          "word": "not",
+          "display_index": 15,
+          "start": 82.693,
+          "end": 83.013
+        },
+        {
+          "word": "noticing.",
+          "display_index": 16,
+          "start": 83.013,
+          "end": 84.513
+        }
+      ],
+      "start": 77.352,
+      "end": 84.513
+    },
+    {
+      "line": 10,
+      "english": "One of the soloists gently touched his arm and made him turn around.",
+      "word_timings": [
+        {
+          "word": "One",
+          "display_index": 0,
+          "start": 85.853,
+          "end": 86.013
+        },
+        {
+          "word": "of",
+          "display_index": 1,
+          "start": 86.013,
+          "end": 86.105
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 86.105,
+          "end": 86.253
+        },
+        {
+          "word": "soloists",
+          "display_index": 3,
+          "start": 86.253,
+          "end": 86.914
+        },
+        {
+          "word": "gently",
+          "display_index": 4,
+          "start": 86.914,
+          "end": 87.414
+        },
+        {
+          "word": "touched",
+          "display_index": 5,
+          "start": 87.414,
+          "end": 87.754
+        },
+        {
+          "word": "his",
+          "display_index": 6,
+          "start": 87.754,
+          "end": 88.074
+        },
+        {
+          "word": "arm",
+          "display_index": 7,
+          "start": 88.074,
+          "end": 88.614
+        },
+        {
+          "word": "and",
+          "display_index": 8,
+          "start": 88.614,
+          "end": 88.874
+        },
+        {
+          "word": "made",
+          "display_index": 9,
+          "start": 88.874,
+          "end": 89.234
+        },
+        {
+          "word": "him",
+          "display_index": 10,
+          "start": 89.234,
+          "end": 89.474
+        },
+        {
+          "word": "turn",
+          "display_index": 11,
+          "start": 89.474,
+          "end": 89.914
+        },
+        {
+          "word": "around.",
+          "display_index": 12,
+          "start": 89.914,
+          "end": 90.674
+        }
+      ],
+      "start": 85.853,
+      "end": 90.674
+    },
+    {
+      "line": 11,
+      "english": "Before him, the audience was on its feet, applauding.",
+      "word_timings": [
+        {
+          "word": "Before",
+          "display_index": 0,
+          "start": 90.674,
+          "end": 91.174
+        },
+        {
+          "word": "him,",
+          "display_index": 1,
+          "start": 91.174,
+          "end": 92.602
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 92.602,
+          "end": 92.874
+        },
+        {
+          "word": "audience",
+          "display_index": 3,
+          "start": 92.874,
+          "end": 93.835
+        },
+        {
+          "word": "was",
+          "display_index": 4,
+          "start": 93.835,
+          "end": 94.215
+        },
+        {
+          "word": "on",
+          "display_index": 5,
+          "start": 94.215,
+          "end": 94.395
+        },
+        {
+          "word": "its",
+          "display_index": 6,
+          "start": 94.395,
+          "end": 94.735
+        },
+        {
+          "word": "feet,",
+          "display_index": 7,
+          "start": 94.735,
+          "end": 96.555
+        },
+        {
+          "word": "applauding.",
+          "display_index": 8,
+          "start": 96.555,
+          "end": 98.055
+        }
+      ],
+      "start": 90.674,
+      "end": 98.055
+    },
+    {
+      "line": 12,
+      "english": "Silence did not lock him inside.",
+      "word_timings": [
+        {
+          "word": "Silence",
+          "display_index": 0,
+          "start": 99.295,
+          "end": 100.936
+        },
+        {
+          "word": "did",
+          "display_index": 1,
+          "start": 100.936,
+          "end": 101.276
+        },
+        {
+          "word": "not",
+          "display_index": 2,
+          "start": 101.276,
+          "end": 101.916
+        },
+        {
+          "word": "lock",
+          "display_index": 3,
+          "start": 101.916,
+          "end": 102.276
+        },
+        {
+          "word": "him",
+          "display_index": 4,
+          "start": 102.276,
+          "end": 102.536
+        },
+        {
+          "word": "inside.",
+          "display_index": 5,
+          "start": 102.536,
+          "end": 103.856
+        }
+      ],
+      "start": 99.295,
+      "end": 103.856
+    },
+    {
+      "line": 13,
+      "english": "Through silence, he continued to reach toward humanity.",
+      "word_timings": [
+        {
+          "word": "Through",
+          "display_index": 0,
+          "start": 104.156,
+          "end": 104.576
+        },
+        {
+          "word": "silence,",
+          "display_index": 1,
+          "start": 104.576,
+          "end": 105.516
+        },
+        {
+          "word": "he",
+          "display_index": 2,
+          "start": 105.516,
+          "end": 105.656
+        },
+        {
+          "word": "continued",
+          "display_index": 3,
+          "start": 105.656,
+          "end": 106.511
+        },
+        {
+          "word": "to",
+          "display_index": 4,
+          "start": 106.511,
+          "end": 106.697
+        },
+        {
+          "word": "reach",
+          "display_index": 5,
+          "start": 106.697,
+          "end": 107.157
+        },
+        {
+          "word": "toward",
+          "display_index": 6,
+          "start": 107.157,
+          "end": 108.977
+        },
+        {
+          "word": "humanity.",
+          "display_index": 7,
+          "start": 108.977,
+          "end": 110.477
+        }
+      ],
+      "start": 104.156,
+      "end": 110.477
+    },
+    {
+      "line": 14,
+      "english": "The Ninth is a testament to the creativity Beethoven sustained through profound suffering.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 111.633,
+          "end": 111.817
+        },
+        {
+          "word": "Ninth",
+          "display_index": 1,
+          "start": 111.817,
+          "end": 112.325
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 112.325,
+          "end": 112.405
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 112.392,
+          "end": 112.618
+        },
+        {
+          "word": "testament",
+          "display_index": 4,
+          "start": 112.618,
+          "end": 114.073
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 114.073,
+          "end": 114.247
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 114.247,
+          "end": 114.398
+        },
+        {
+          "word": "creativity",
+          "display_index": 7,
+          "start": 114.398,
+          "end": 115.678
+        },
+        {
+          "word": "Beethoven",
+          "display_index": 8,
+          "start": 115.678,
+          "end": 117.858
+        },
+        {
+          "word": "sustained",
+          "display_index": 9,
+          "start": 117.858,
+          "end": 118.939
+        },
+        {
+          "word": "through",
+          "display_index": 10,
+          "start": 118.939,
+          "end": 120.539
+        },
+        {
+          "word": "profound",
+          "display_index": 11,
+          "start": 120.539,
+          "end": 122.059
+        },
+        {
+          "word": "suffering.",
+          "display_index": 12,
+          "start": 122.059,
+          "end": 123.559
+        }
+      ],
+      "start": 111.633,
+      "end": 123.559
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

@@ -1,0 +1,173 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H091.md",
+  "audio": "高校生編/suno_ready/generated/audio/H091/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 138.56,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0056,
+  "expected_words": 178,
+  "transcribed_words": 179,
+  "matched_words": 174,
+  "coverage": 0.9775,
+  "precision": 0.9721,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 177,
+  "longest_missing_run": 3,
+  "largest_missing_runs": [
+    {
+      "start": 14,
+      "length": 3,
+      "words": [
+        "a",
+        "cheap",
+        "airline"
+      ]
+    },
+    {
+      "start": 64,
+      "length": 1,
+      "words": [
+        "harbor"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 14,
+      "actual_start": 14,
+      "expected": [
+        "a",
+        "cheap",
+        "airline"
+      ],
+      "actual": [
+        "but",
+        "she",
+        "bare",
+        "lined"
+      ],
+      "actual_confidence": 0.5848,
+      "substitution_words": 3,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 64,
+      "actual_start": 65,
+      "expected": [
+        "harbor"
+      ],
+      "actual": [
+        "harbour"
+      ],
+      "actual_confidence": 0.8155,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "The week after I graduated from university I set off alone for southern Europe But she bare-lined ticket and a worn-out backpack were all I had The old quarter of Barcelona was a maze of bare stone walls and narrow lanes My footsteps echoed against the walls At every turn a small craft shop Or a folk music bar appeared down at the harbour A dozen fishing boats were lined up In the market, the scent of fresh bread and the aroma of rich spices drifted in the air and stirred my appetite. I took a train south and stayed at an inn in a whitewashed village. The owners were a generous elderly couple who served me dinner The furniture was old, but well-kept On the last morning I leaned on the balcony And looked out at the sea The wind blew gently This time of leisure was exactly what I had been seeking On the journey The trip taught me something The world is far more friendly and far broader than I had ever imagined",
+  "segments": [
+    {
+      "start": 9.3,
+      "end": 19.04,
+      "text": "The week after I graduated from university I set off alone for southern Europe"
+    },
+    {
+      "start": 19.04,
+      "end": 25.3,
+      "text": "But she bare-lined ticket and a worn-out backpack were all I had"
+    },
+    {
+      "start": 27.52,
+      "end": 37.14,
+      "text": "The old quarter of Barcelona was a maze of bare stone walls and narrow lanes"
+    },
+    {
+      "start": 38.22,
+      "end": 44.58,
+      "text": "My footsteps echoed against the walls At every turn a small craft shop"
+    },
+    {
+      "start": 44.58,
+      "end": 49.1,
+      "text": "Or a folk music bar appeared down at the harbour"
+    },
+    {
+      "start": 49.1,
+      "end": 53.66,
+      "text": "A dozen fishing boats were lined up"
+    },
+    {
+      "start": 57.16,
+      "end": 65.28,
+      "text": "In the market, the scent of fresh bread and the aroma of rich spices drifted in the air"
+    },
+    {
+      "start": 65.28,
+      "end": 66.86,
+      "text": "and stirred my appetite."
+    },
+    {
+      "start": 67.1,
+      "end": 73.68,
+      "text": "I took a train south and stayed at an inn in a whitewashed village."
+    },
+    {
+      "start": 75.48,
+      "end": 83.92,
+      "text": "The owners were a generous elderly couple who served me dinner"
+    },
+    {
+      "start": 84.68,
+      "end": 91.16,
+      "text": "The furniture was old, but well-kept"
+    },
+    {
+      "start": 92.7,
+      "end": 98.5,
+      "text": "On the last morning I leaned on the balcony"
+    },
+    {
+      "start": 98.5,
+      "end": 102.86,
+      "text": "And looked out at the sea"
+    },
+    {
+      "start": 103.5,
+      "end": 105.7,
+      "text": "The wind blew gently"
+    },
+    {
+      "start": 108.08,
+      "end": 113.76,
+      "text": "This time of leisure was exactly what I had been seeking"
+    },
+    {
+      "start": 114.5,
+      "end": 116.18,
+      "text": "On the journey"
+    },
+    {
+      "start": 117.5,
+      "end": 119.7,
+      "text": "The trip taught me something"
+    },
+    {
+      "start": 121.5,
+      "end": 124.4,
+      "text": "The world is far more friendly"
+    },
+    {
+      "start": 124.4,
+      "end": 131.62,
+      "text": "and far broader than I had ever imagined"
+    }
+  ]
+}

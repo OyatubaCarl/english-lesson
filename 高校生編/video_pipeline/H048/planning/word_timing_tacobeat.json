@@ -1,0 +1,1146 @@
+{
+  "lesson": "H048",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h048_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H048/candidate1-full.mp3",
+  "source_audio_sha256": "c7411742b1667f9d1870e18eff3e870c1901f86f06c971ed73fcea645120ad44",
+  "bpm": 96.56,
+  "exact_word_match": true,
+  "word_count": 175,
+  "line_count": 10,
+  "first_word_start": 0.709,
+  "last_word_end": 98.944,
+  "lines": [
+    {
+      "line": 1,
+      "english": "A modern corporation spends a great deal on advertising in order to make its brand known to as many people as possible.",
+      "word_timings": [
+        {
+          "word": "A",
+          "display_index": 0,
+          "start": 0.709,
+          "end": 0.8
+        },
+        {
+          "word": "modern",
+          "display_index": 1,
+          "start": 0.8,
+          "end": 1.14
+        },
+        {
+          "word": "corporation",
+          "display_index": 2,
+          "start": 1.14,
+          "end": 1.84
+        },
+        {
+          "word": "spends",
+          "display_index": 3,
+          "start": 1.84,
+          "end": 2.204
+        },
+        {
+          "word": "a",
+          "display_index": 4,
+          "start": 2.204,
+          "end": 2.34
+        },
+        {
+          "word": "great",
+          "display_index": 5,
+          "start": 2.34,
+          "end": 2.681
+        },
+        {
+          "word": "deal",
+          "display_index": 6,
+          "start": 2.681,
+          "end": 3.061
+        },
+        {
+          "word": "on",
+          "display_index": 7,
+          "start": 3.061,
+          "end": 3.361
+        },
+        {
+          "word": "advertising",
+          "display_index": 8,
+          "start": 3.361,
+          "end": 4.321
+        },
+        {
+          "word": "in",
+          "display_index": 9,
+          "start": 4.321,
+          "end": 4.641
+        },
+        {
+          "word": "order",
+          "display_index": 10,
+          "start": 4.641,
+          "end": 5.336
+        },
+        {
+          "word": "to",
+          "display_index": 11,
+          "start": 5.336,
+          "end": 5.481
+        },
+        {
+          "word": "make",
+          "display_index": 12,
+          "start": 5.481,
+          "end": 5.681
+        },
+        {
+          "word": "its",
+          "display_index": 13,
+          "start": 5.681,
+          "end": 5.801
+        },
+        {
+          "word": "brand",
+          "display_index": 14,
+          "start": 5.801,
+          "end": 6.101
+        },
+        {
+          "word": "known",
+          "display_index": 15,
+          "start": 6.101,
+          "end": 6.41
+        },
+        {
+          "word": "to",
+          "display_index": 16,
+          "start": 6.41,
+          "end": 6.901
+        },
+        {
+          "word": "as",
+          "display_index": 17,
+          "start": 6.901,
+          "end": 7.041
+        },
+        {
+          "word": "many",
+          "display_index": 18,
+          "start": 7.041,
+          "end": 7.482
+        },
+        {
+          "word": "people",
+          "display_index": 19,
+          "start": 7.482,
+          "end": 8.022
+        },
+        {
+          "word": "as",
+          "display_index": 20,
+          "start": 8.022,
+          "end": 8.242
+        },
+        {
+          "word": "possible.",
+          "display_index": 21,
+          "start": 8.242,
+          "end": 9.742
+        }
+      ],
+      "start": 0.709,
+      "end": 9.742
+    },
+    {
+      "line": 2,
+      "english": "Through media such as television, newspapers, magazines, and the internet, countless advertisements reach us every day.",
+      "word_timings": [
+        {
+          "word": "Through",
+          "display_index": 0,
+          "start": 10.382,
+          "end": 10.722
+        },
+        {
+          "word": "media",
+          "display_index": 1,
+          "start": 10.722,
+          "end": 11.362
+        },
+        {
+          "word": "such",
+          "display_index": 2,
+          "start": 11.362,
+          "end": 11.622
+        },
+        {
+          "word": "as",
+          "display_index": 3,
+          "start": 11.622,
+          "end": 11.822
+        },
+        {
+          "word": "television,",
+          "display_index": 4,
+          "start": 11.822,
+          "end": 12.923
+        },
+        {
+          "word": "newspapers,",
+          "display_index": 5,
+          "start": 12.923,
+          "end": 13.843
+        },
+        {
+          "word": "magazines,",
+          "display_index": 6,
+          "start": 13.843,
+          "end": 14.863
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 14.863,
+          "end": 14.973
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 14.973,
+          "end": 15.123
+        },
+        {
+          "word": "internet,",
+          "display_index": 9,
+          "start": 15.123,
+          "end": 16.023
+        },
+        {
+          "word": "countless",
+          "display_index": 10,
+          "start": 16.023,
+          "end": 16.743
+        },
+        {
+          "word": "advertisements",
+          "display_index": 11,
+          "start": 16.743,
+          "end": 18.204
+        },
+        {
+          "word": "reach",
+          "display_index": 12,
+          "start": 18.204,
+          "end": 18.584
+        },
+        {
+          "word": "us",
+          "display_index": 13,
+          "start": 18.584,
+          "end": 18.884
+        },
+        {
+          "word": "every",
+          "display_index": 14,
+          "start": 18.884,
+          "end": 19.304
+        },
+        {
+          "word": "day.",
+          "display_index": 15,
+          "start": 19.304,
+          "end": 20.256
+        }
+      ],
+      "start": 10.382,
+      "end": 20.256
+    },
+    {
+      "line": 3,
+      "english": "The purpose of an advertisement is to attract the attention of the consumer and persuade consumers to make a purchase.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 20.556,
+          "end": 20.664
+        },
+        {
+          "word": "purpose",
+          "display_index": 1,
+          "start": 20.664,
+          "end": 21.084
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 21.084,
+          "end": 21.224
+        },
+        {
+          "word": "an",
+          "display_index": 3,
+          "start": 21.224,
+          "end": 21.384
+        },
+        {
+          "word": "advertisement",
+          "display_index": 4,
+          "start": 21.384,
+          "end": 22.434
+        },
+        {
+          "word": "is",
+          "display_index": 5,
+          "start": 22.434,
+          "end": 22.572
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 22.572,
+          "end": 22.825
+        },
+        {
+          "word": "attract",
+          "display_index": 7,
+          "start": 22.825,
+          "end": 23.419
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 23.419,
+          "end": 23.545
+        },
+        {
+          "word": "attention",
+          "display_index": 9,
+          "start": 23.545,
+          "end": 24.185
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 24.185,
+          "end": 24.441
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 24.441,
+          "end": 24.585
+        },
+        {
+          "word": "consumer",
+          "display_index": 12,
+          "start": 24.585,
+          "end": 25.405
+        },
+        {
+          "word": "and",
+          "display_index": 13,
+          "start": 25.405,
+          "end": 25.505
+        },
+        {
+          "word": "persuade",
+          "display_index": 14,
+          "start": 25.505,
+          "end": 25.965
+        },
+        {
+          "word": "consumers",
+          "display_index": 15,
+          "start": 25.965,
+          "end": 27.389
+        },
+        {
+          "word": "to",
+          "display_index": 16,
+          "start": 27.389,
+          "end": 27.526
+        },
+        {
+          "word": "make",
+          "display_index": 17,
+          "start": 27.526,
+          "end": 27.704
+        },
+        {
+          "word": "a",
+          "display_index": 18,
+          "start": 27.704,
+          "end": 27.986
+        },
+        {
+          "word": "purchase.",
+          "display_index": 19,
+          "start": 27.986,
+          "end": 29.486
+        }
+      ],
+      "start": 20.556,
+      "end": 29.486
+    },
+    {
+      "line": 4,
+      "english": "The image of a brand, just as much as the quality of a product, has influence over our choice.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 29.865,
+          "end": 30.066
+        },
+        {
+          "word": "image",
+          "display_index": 1,
+          "start": 30.066,
+          "end": 30.406
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 30.406,
+          "end": 30.505
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 30.505,
+          "end": 30.626
+        },
+        {
+          "word": "brand,",
+          "display_index": 4,
+          "start": 30.626,
+          "end": 31.426
+        },
+        {
+          "word": "just",
+          "display_index": 5,
+          "start": 31.426,
+          "end": 31.746
+        },
+        {
+          "word": "as",
+          "display_index": 6,
+          "start": 31.746,
+          "end": 31.886
+        },
+        {
+          "word": "much",
+          "display_index": 7,
+          "start": 31.886,
+          "end": 32.727
+        },
+        {
+          "word": "as",
+          "display_index": 8,
+          "start": 32.727,
+          "end": 32.973
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 32.973,
+          "end": 33.067
+        },
+        {
+          "word": "quality",
+          "display_index": 10,
+          "start": 33.067,
+          "end": 33.807
+        },
+        {
+          "word": "of",
+          "display_index": 11,
+          "start": 33.807,
+          "end": 33.947
+        },
+        {
+          "word": "a",
+          "display_index": 12,
+          "start": 33.947,
+          "end": 34.147
+        },
+        {
+          "word": "product,",
+          "display_index": 13,
+          "start": 34.147,
+          "end": 34.947
+        },
+        {
+          "word": "has",
+          "display_index": 14,
+          "start": 34.947,
+          "end": 35.647
+        },
+        {
+          "word": "influence",
+          "display_index": 15,
+          "start": 35.647,
+          "end": 36.627
+        },
+        {
+          "word": "over",
+          "display_index": 16,
+          "start": 36.627,
+          "end": 37.508
+        },
+        {
+          "word": "our",
+          "display_index": 17,
+          "start": 37.508,
+          "end": 37.728
+        },
+        {
+          "word": "choice.",
+          "display_index": 18,
+          "start": 37.728,
+          "end": 39.228
+        }
+      ],
+      "start": 29.865,
+      "end": 39.228
+    },
+    {
+      "line": 5,
+      "english": "Since the appearance of social media, consumers themselves have been able to broadcast their opinions to the world.",
+      "word_timings": [
+        {
+          "word": "Since",
+          "display_index": 0,
+          "start": 39.608,
+          "end": 39.965
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 39.965,
+          "end": 40.188
+        },
+        {
+          "word": "appearance",
+          "display_index": 2,
+          "start": 40.188,
+          "end": 40.948
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 40.948,
+          "end": 41.168
+        },
+        {
+          "word": "social",
+          "display_index": 4,
+          "start": 41.168,
+          "end": 41.828
+        },
+        {
+          "word": "media,",
+          "display_index": 5,
+          "start": 41.828,
+          "end": 42.609
+        },
+        {
+          "word": "consumers",
+          "display_index": 6,
+          "start": 42.609,
+          "end": 43.369
+        },
+        {
+          "word": "themselves",
+          "display_index": 7,
+          "start": 43.369,
+          "end": 44.009
+        },
+        {
+          "word": "have",
+          "display_index": 8,
+          "start": 44.009,
+          "end": 44.169
+        },
+        {
+          "word": "been",
+          "display_index": 9,
+          "start": 44.169,
+          "end": 44.369
+        },
+        {
+          "word": "able",
+          "display_index": 10,
+          "start": 44.369,
+          "end": 45.089
+        },
+        {
+          "word": "to",
+          "display_index": 11,
+          "start": 45.089,
+          "end": 45.229
+        },
+        {
+          "word": "broadcast",
+          "display_index": 12,
+          "start": 45.229,
+          "end": 46.189
+        },
+        {
+          "word": "their",
+          "display_index": 13,
+          "start": 46.189,
+          "end": 46.529
+        },
+        {
+          "word": "opinions",
+          "display_index": 14,
+          "start": 46.529,
+          "end": 47.42
+        },
+        {
+          "word": "to",
+          "display_index": 15,
+          "start": 47.42,
+          "end": 47.577
+        },
+        {
+          "word": "the",
+          "display_index": 16,
+          "start": 47.577,
+          "end": 47.85
+        },
+        {
+          "word": "world.",
+          "display_index": 17,
+          "start": 47.85,
+          "end": 49.19
+        }
+      ],
+      "start": 39.608,
+      "end": 49.19
+    },
+    {
+      "line": 6,
+      "english": "An opinion against a certain brand can spread across the internet within hours, and the image of a corporation may shift overnight.",
+      "word_timings": [
+        {
+          "word": "An",
+          "display_index": 0,
+          "start": 49.49,
+          "end": 49.63
+        },
+        {
+          "word": "opinion",
+          "display_index": 1,
+          "start": 49.63,
+          "end": 50.27
+        },
+        {
+          "word": "against",
+          "display_index": 2,
+          "start": 50.27,
+          "end": 50.743
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 50.743,
+          "end": 50.823
+        },
+        {
+          "word": "certain",
+          "display_index": 4,
+          "start": 50.81,
+          "end": 51.11
+        },
+        {
+          "word": "brand",
+          "display_index": 5,
+          "start": 51.11,
+          "end": 51.43
+        },
+        {
+          "word": "can",
+          "display_index": 6,
+          "start": 51.43,
+          "end": 51.65
+        },
+        {
+          "word": "spread",
+          "display_index": 7,
+          "start": 51.65,
+          "end": 52.011
+        },
+        {
+          "word": "across",
+          "display_index": 8,
+          "start": 52.011,
+          "end": 52.574
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 52.574,
+          "end": 52.771
+        },
+        {
+          "word": "internet",
+          "display_index": 10,
+          "start": 52.771,
+          "end": 53.331
+        },
+        {
+          "word": "within",
+          "display_index": 11,
+          "start": 53.331,
+          "end": 53.991
+        },
+        {
+          "word": "hours,",
+          "display_index": 12,
+          "start": 53.991,
+          "end": 54.611
+        },
+        {
+          "word": "and",
+          "display_index": 13,
+          "start": 54.611,
+          "end": 54.74
+        },
+        {
+          "word": "the",
+          "display_index": 14,
+          "start": 54.74,
+          "end": 54.931
+        },
+        {
+          "word": "image",
+          "display_index": 15,
+          "start": 54.931,
+          "end": 55.271
+        },
+        {
+          "word": "of",
+          "display_index": 16,
+          "start": 55.271,
+          "end": 55.385
+        },
+        {
+          "word": "a",
+          "display_index": 17,
+          "start": 55.385,
+          "end": 55.491
+        },
+        {
+          "word": "corporation",
+          "display_index": 18,
+          "start": 55.491,
+          "end": 56.431
+        },
+        {
+          "word": "may",
+          "display_index": 19,
+          "start": 56.431,
+          "end": 56.712
+        },
+        {
+          "word": "shift",
+          "display_index": 20,
+          "start": 56.712,
+          "end": 57.172
+        },
+        {
+          "word": "overnight.",
+          "display_index": 21,
+          "start": 57.172,
+          "end": 58.672
+        }
+      ],
+      "start": 49.49,
+      "end": 58.672
+    },
+    {
+      "line": 7,
+      "english": "Governments, too, have established regulations to protect consumers from misleading advertising.",
+      "word_timings": [
+        {
+          "word": "Governments,",
+          "display_index": 0,
+          "start": 59.852,
+          "end": 60.447
+        },
+        {
+          "word": "too,",
+          "display_index": 1,
+          "start": 60.447,
+          "end": 61.092
+        },
+        {
+          "word": "have",
+          "display_index": 2,
+          "start": 61.092,
+          "end": 61.352
+        },
+        {
+          "word": "established",
+          "display_index": 3,
+          "start": 61.352,
+          "end": 62.333
+        },
+        {
+          "word": "regulations",
+          "display_index": 4,
+          "start": 62.333,
+          "end": 63.853
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 63.853,
+          "end": 64.453
+        },
+        {
+          "word": "protect",
+          "display_index": 6,
+          "start": 64.453,
+          "end": 64.973
+        },
+        {
+          "word": "consumers",
+          "display_index": 7,
+          "start": 64.973,
+          "end": 66.033
+        },
+        {
+          "word": "from",
+          "display_index": 8,
+          "start": 66.033,
+          "end": 66.353
+        },
+        {
+          "word": "misleading",
+          "display_index": 9,
+          "start": 66.353,
+          "end": 67.234
+        },
+        {
+          "word": "advertising.",
+          "display_index": 10,
+          "start": 67.234,
+          "end": 68.734
+        }
+      ],
+      "start": 59.852,
+      "end": 68.734
+    },
+    {
+      "line": 8,
+      "english": "For example, products related to health may not make any claim without solid evidence.",
+      "word_timings": [
+        {
+          "word": "For",
+          "display_index": 0,
+          "start": 69.754,
+          "end": 70.194
+        },
+        {
+          "word": "example,",
+          "display_index": 1,
+          "start": 70.194,
+          "end": 70.994
+        },
+        {
+          "word": "products",
+          "display_index": 2,
+          "start": 70.994,
+          "end": 71.515
+        },
+        {
+          "word": "related",
+          "display_index": 3,
+          "start": 71.515,
+          "end": 72.234
+        },
+        {
+          "word": "to",
+          "display_index": 4,
+          "start": 72.234,
+          "end": 72.535
+        },
+        {
+          "word": "health",
+          "display_index": 5,
+          "start": 72.535,
+          "end": 73.815
+        },
+        {
+          "word": "may",
+          "display_index": 6,
+          "start": 73.815,
+          "end": 74.135
+        },
+        {
+          "word": "not",
+          "display_index": 7,
+          "start": 74.135,
+          "end": 74.435
+        },
+        {
+          "word": "make",
+          "display_index": 8,
+          "start": 74.435,
+          "end": 74.815
+        },
+        {
+          "word": "any",
+          "display_index": 9,
+          "start": 74.815,
+          "end": 75.155
+        },
+        {
+          "word": "claim",
+          "display_index": 10,
+          "start": 75.155,
+          "end": 75.875
+        },
+        {
+          "word": "without",
+          "display_index": 11,
+          "start": 75.875,
+          "end": 76.596
+        },
+        {
+          "word": "solid",
+          "display_index": 12,
+          "start": 76.596,
+          "end": 77.176
+        },
+        {
+          "word": "evidence.",
+          "display_index": 13,
+          "start": 77.176,
+          "end": 78.676
+        }
+      ],
+      "start": 69.754,
+      "end": 78.676
+    },
+    {
+      "line": 9,
+      "english": "Today's consumption society binds corporations, consumers, and the state in a triangular relationship in which each watches the others.",
+      "word_timings": [
+        {
+          "word": "Today's",
+          "display_index": 0,
+          "start": 79.416,
+          "end": 79.896
+        },
+        {
+          "word": "consumption",
+          "display_index": 1,
+          "start": 79.896,
+          "end": 80.796
+        },
+        {
+          "word": "society",
+          "display_index": 2,
+          "start": 80.796,
+          "end": 81.437
+        },
+        {
+          "word": "binds",
+          "display_index": 3,
+          "start": 81.437,
+          "end": 81.877
+        },
+        {
+          "word": "corporations,",
+          "display_index": 4,
+          "start": 81.877,
+          "end": 83.437
+        },
+        {
+          "word": "consumers,",
+          "display_index": 5,
+          "start": 83.437,
+          "end": 84.757
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 84.757,
+          "end": 85.021
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 85.021,
+          "end": 85.117
+        },
+        {
+          "word": "state",
+          "display_index": 8,
+          "start": 85.117,
+          "end": 85.537
+        },
+        {
+          "word": "in",
+          "display_index": 9,
+          "start": 85.537,
+          "end": 85.636
+        },
+        {
+          "word": "a",
+          "display_index": 10,
+          "start": 85.636,
+          "end": 85.777
+        },
+        {
+          "word": "triangular",
+          "display_index": 11,
+          "start": 85.777,
+          "end": 87.038
+        },
+        {
+          "word": "relationship",
+          "display_index": 12,
+          "start": 87.038,
+          "end": 88.318
+        },
+        {
+          "word": "in",
+          "display_index": 13,
+          "start": 88.318,
+          "end": 88.438
+        },
+        {
+          "word": "which",
+          "display_index": 14,
+          "start": 88.438,
+          "end": 88.798
+        },
+        {
+          "word": "each",
+          "display_index": 15,
+          "start": 88.798,
+          "end": 89.058
+        },
+        {
+          "word": "watches",
+          "display_index": 16,
+          "start": 89.058,
+          "end": 89.856
+        },
+        {
+          "word": "the",
+          "display_index": 17,
+          "start": 89.856,
+          "end": 90.078
+        },
+        {
+          "word": "others.",
+          "display_index": 18,
+          "start": 90.078,
+          "end": 90.819
+        }
+      ],
+      "start": 79.416,
+      "end": 90.819
+    },
+    {
+      "line": 10,
+      "english": "We ourselves are required to keep a critical eye on what we are shown.",
+      "word_timings": [
+        {
+          "word": "We",
+          "display_index": 0,
+          "start": 91.119,
+          "end": 91.319
+        },
+        {
+          "word": "ourselves",
+          "display_index": 1,
+          "start": 91.319,
+          "end": 92.162
+        },
+        {
+          "word": "are",
+          "display_index": 2,
+          "start": 92.162,
+          "end": 92.479
+        },
+        {
+          "word": "required",
+          "display_index": 3,
+          "start": 92.479,
+          "end": 93.237
+        },
+        {
+          "word": "to",
+          "display_index": 4,
+          "start": 93.237,
+          "end": 93.399
+        },
+        {
+          "word": "keep",
+          "display_index": 5,
+          "start": 93.399,
+          "end": 93.729
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 93.729,
+          "end": 93.939
+        },
+        {
+          "word": "critical",
+          "display_index": 7,
+          "start": 93.939,
+          "end": 94.719
+        },
+        {
+          "word": "eye",
+          "display_index": 8,
+          "start": 94.719,
+          "end": 95.999
+        },
+        {
+          "word": "on",
+          "display_index": 9,
+          "start": 95.999,
+          "end": 96.5
+        },
+        {
+          "word": "what",
+          "display_index": 10,
+          "start": 96.5,
+          "end": 96.84
+        },
+        {
+          "word": "we",
+          "display_index": 11,
+          "start": 96.84,
+          "end": 97.121
+        },
+        {
+          "word": "are",
+          "display_index": 12,
+          "start": 97.121,
+          "end": 97.7
+        },
+        {
+          "word": "shown.",
+          "display_index": 13,
+          "start": 97.7,
+          "end": 98.944
+        }
+      ],
+      "start": 91.119,
+      "end": 98.944
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

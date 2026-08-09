@@ -1,0 +1,187 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H056.md",
+  "audio": "高校生編/suno_ready/generated/audio/H056/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 131.281,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0055,
+  "expected_words": 182,
+  "transcribed_words": 183,
+  "matched_words": 179,
+  "coverage": 0.9835,
+  "precision": 0.9781,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 181,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 27,
+      "length": 1,
+      "words": [
+        "supports"
+      ]
+    },
+    {
+      "start": 47,
+      "length": 1,
+      "words": [
+        "investigative"
+      ]
+    },
+    {
+      "start": 139,
+      "length": 1,
+      "words": [
+        "imprisoned"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 27,
+      "actual_start": 27,
+      "expected": [
+        "supports"
+      ],
+      "actual": [
+        "support"
+      ],
+      "actual_confidence": 0.6384,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 47,
+      "actual_start": 47,
+      "expected": [
+        "investigative"
+      ],
+      "actual": [
+        "industrial"
+      ],
+      "actual_confidence": 0.3716,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 139,
+      "actual_start": 139,
+      "expected": [
+        "imprisoned"
+      ],
+      "actual": [
+        "in",
+        "prison"
+      ],
+      "actual_confidence": 0.8488,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "In a democratic society, the press has been called the fourth estate. Alongside the legislative, the executive, and the judicial, it is one of the pillars that support society. Journalists carry the role of revealing wrongdoing in government and business, and passing that on to the citizens. Industrial reporting has often been the trigger that has changed society. In 1972, during the Watergate scandal, two young reporters helped expose abuses of power that led to the American president's resignation. That was an example of how the press can hold even the highest authorities accountable. In our time, however, the reliability of information has become a great challenge. Information sent out without checking the source, deliberate disinformation. These can twist the judgment of society. Under dictatorships in various countries, censorship is common And it is not rare for journalists to be in prison Press freedom is not taken for granted in every country As receivers of information We must develop the ability to judge what is a reliable source To protect the freedom of the press is in the end to protect our own freedom.",
+  "segments": [
+    {
+      "start": 8.3,
+      "end": 14.02,
+      "text": "In a democratic society, the press has been called the fourth estate."
+    },
+    {
+      "start": 14.84,
+      "end": 21.72,
+      "text": "Alongside the legislative, the executive, and the judicial, it is one of the pillars"
+    },
+    {
+      "start": 21.72,
+      "end": 24.0,
+      "text": "that support society."
+    },
+    {
+      "start": 27.48,
+      "end": 33.86,
+      "text": "Journalists carry the role of revealing wrongdoing in government and business, and passing that"
+    },
+    {
+      "start": 33.86,
+      "end": 35.82,
+      "text": "on to the citizens."
+    },
+    {
+      "start": 37.62,
+      "end": 44.0,
+      "text": "Industrial reporting has often been the trigger that has changed society."
+    },
+    {
+      "start": 46.44,
+      "end": 55.34,
+      "text": "In 1972, during the Watergate scandal, two young reporters helped expose abuses of power"
+    },
+    {
+      "start": 56.0,
+      "end": 59.44,
+      "text": "that led to the American president's resignation."
+    },
+    {
+      "start": 60.88,
+      "end": 67.06,
+      "text": "That was an example of how the press can hold even the highest authorities accountable."
+    },
+    {
+      "start": 67.06,
+      "end": 76.2,
+      "text": "In our time, however, the reliability of information has become a great challenge."
+    },
+    {
+      "start": 77.24,
+      "end": 83.78,
+      "text": "Information sent out without checking the source, deliberate disinformation."
+    },
+    {
+      "start": 84.84,
+      "end": 90.02,
+      "text": "These can twist the judgment of society."
+    },
+    {
+      "start": 91.74,
+      "end": 96.26,
+      "text": "Under dictatorships in various countries, censorship is common"
+    },
+    {
+      "start": 96.26,
+      "end": 100.64,
+      "text": "And it is not rare for journalists to be in prison"
+    },
+    {
+      "start": 102.04,
+      "end": 107.2,
+      "text": "Press freedom is not taken for granted in every country"
+    },
+    {
+      "start": 107.2,
+      "end": 109.86,
+      "text": "As receivers of information"
+    },
+    {
+      "start": 109.86,
+      "end": 115.1,
+      "text": "We must develop the ability to judge what is a reliable source"
+    },
+    {
+      "start": 116.26,
+      "end": 122.0,
+      "text": "To protect the freedom of the press is in the end"
+    },
+    {
+      "start": 123.4,
+      "end": 125.88,
+      "text": "to protect our own freedom."
+    }
+  ]
+}

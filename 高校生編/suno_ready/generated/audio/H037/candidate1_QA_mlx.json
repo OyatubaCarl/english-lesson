@@ -1,0 +1,193 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H037.md",
+  "audio": "高校生編/suno_ready/generated/audio/H037/candidate1-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 133.18,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0185,
+  "expected_words": 162,
+  "transcribed_words": 165,
+  "matched_words": 161,
+  "coverage": 0.9938,
+  "precision": 0.9758,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 161,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 150,
+      "length": 1,
+      "words": [
+        "ninth"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 150,
+      "actual_start": 153,
+      "expected": [
+        "ninth"
+      ],
+      "actual": [
+        "knife"
+      ],
+      "actual_confidence": 0.9521,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 0,
+      "actual_start": 0,
+      "expected": [],
+      "actual": [
+        "ludwig",
+        "van",
+        "beethoven"
+      ],
+      "actual_confidence": 0.9668
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "Ludwig van Beethoven Ludwig van Beethoven, starting in his late twenties Slowly began to lose his hearing For a musician, no suffering could have been greater Yet silence did not stop the music inside him Deafness drove him toward despair Yet he continued to compose music of extraordinary depth In 1824, his final completed symphony The ninth received its first performance It was a grand composition Using a choir to sing Schiller's poem Ode to Joy On the night of the first performance Beethoven stood on the stage He faced the podium But he could no longer hear any sound After the final note, applause filled the hall Yet he stood with his back turned, not noticing One of the soloists gently touched his arm And made him turn around before him The audience was on its feet, applauding Silence did not lock him inside Through silence he continued to reach toward humanity The knife is a testament to the creativity Beethoven Sustained through profound suffering",
+  "segments": [
+    {
+      "start": 10.98,
+      "end": 13.18,
+      "text": "Ludwig van Beethoven"
+    },
+    {
+      "start": 13.18,
+      "end": 16.08,
+      "text": "Ludwig van Beethoven, starting in his late twenties"
+    },
+    {
+      "start": 17.0,
+      "end": 21.32,
+      "text": "Slowly began to lose his hearing"
+    },
+    {
+      "start": 22.0,
+      "end": 27.62,
+      "text": "For a musician, no suffering could have been greater"
+    },
+    {
+      "start": 27.62,
+      "end": 33.56,
+      "text": "Yet silence did not stop the music inside him"
+    },
+    {
+      "start": 33.56,
+      "end": 36.92,
+      "text": "Deafness drove him toward despair"
+    },
+    {
+      "start": 36.92,
+      "end": 42.7,
+      "text": "Yet he continued to compose music of extraordinary depth"
+    },
+    {
+      "start": 42.7,
+      "end": 47.98,
+      "text": "In 1824, his final completed symphony"
+    },
+    {
+      "start": 47.98,
+      "end": 52.98,
+      "text": "The ninth received its first performance"
+    },
+    {
+      "start": 52.98,
+      "end": 56.84,
+      "text": "It was a grand composition"
+    },
+    {
+      "start": 56.84,
+      "end": 60.88,
+      "text": "Using a choir to sing Schiller's poem"
+    },
+    {
+      "start": 60.88,
+      "end": 63.36,
+      "text": "Ode to Joy"
+    },
+    {
+      "start": 63.36,
+      "end": 67.46,
+      "text": "On the night of the first performance"
+    },
+    {
+      "start": 67.46,
+      "end": 69.92,
+      "text": "Beethoven stood on the stage"
+    },
+    {
+      "start": 69.92,
+      "end": 71.44,
+      "text": "He faced the podium"
+    },
+    {
+      "start": 71.44,
+      "end": 76.28,
+      "text": "But he could no longer hear any sound"
+    },
+    {
+      "start": 80.94,
+      "end": 85.44,
+      "text": "After the final note, applause filled the hall"
+    },
+    {
+      "start": 85.44,
+      "end": 89.76,
+      "text": "Yet he stood with his back turned, not noticing"
+    },
+    {
+      "start": 91.18,
+      "end": 94.9,
+      "text": "One of the soloists gently touched his arm"
+    },
+    {
+      "start": 94.9,
+      "end": 97.82,
+      "text": "And made him turn around before him"
+    },
+    {
+      "start": 98.92,
+      "end": 102.88,
+      "text": "The audience was on its feet, applauding"
+    },
+    {
+      "start": 107.34,
+      "end": 111.82,
+      "text": "Silence did not lock him inside"
+    },
+    {
+      "start": 111.82,
+      "end": 117.66,
+      "text": "Through silence he continued to reach toward humanity"
+    },
+    {
+      "start": 120.22,
+      "end": 125.28,
+      "text": "The knife is a testament to the creativity"
+    },
+    {
+      "start": 125.28,
+      "end": 126.48,
+      "text": "Beethoven"
+    },
+    {
+      "start": 128.42,
+      "end": 133.18,
+      "text": "Sustained through profound suffering"
+    }
+  ]
+}

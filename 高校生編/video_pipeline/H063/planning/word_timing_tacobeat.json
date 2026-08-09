@@ -1,0 +1,1576 @@
+{
+  "lesson": "H063",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h063_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H063/candidate2-full.mp3",
+  "source_audio_sha256": "b6ff95aaf4e9991f56e4b38710d44a916bfcfa22388b6e54ae887d38d75b4572",
+  "bpm": 55.96,
+  "exact_word_match": true,
+  "word_count": 240,
+  "line_count": 15,
+  "first_word_start": 12.181,
+  "last_word_end": 180.299,
+  "lines": [
+    {
+      "line": 1,
+      "english": "In 1960, a twenty-six-year-old English woman named Jane Goodall walked alone into the forest of Tanzania, in East Africa.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 12.181,
+          "end": 12.321
+        },
+        {
+          "word": "1960,",
+          "display_index": 1,
+          "start": 12.321,
+          "end": 14.275
+        },
+        {
+          "word": "a",
+          "display_index": 2,
+          "start": 14.275,
+          "end": 14.362
+        },
+        {
+          "word": "twenty-six-year-old",
+          "display_index": 3,
+          "start": 14.362,
+          "end": 14.782
+        },
+        {
+          "word": "twenty-six-year-old",
+          "display_index": 3,
+          "start": 14.782,
+          "end": 15.142
+        },
+        {
+          "word": "twenty-six-year-old",
+          "display_index": 3,
+          "start": 15.142,
+          "end": 15.422
+        },
+        {
+          "word": "twenty-six-year-old",
+          "display_index": 3,
+          "start": 15.422,
+          "end": 15.762
+        },
+        {
+          "word": "English",
+          "display_index": 4,
+          "start": 15.762,
+          "end": 16.342
+        },
+        {
+          "word": "woman",
+          "display_index": 5,
+          "start": 16.342,
+          "end": 16.862
+        },
+        {
+          "word": "named",
+          "display_index": 6,
+          "start": 16.862,
+          "end": 17.202
+        },
+        {
+          "word": "Jane",
+          "display_index": 7,
+          "start": 17.202,
+          "end": 17.902
+        },
+        {
+          "word": "Goodall",
+          "display_index": 8,
+          "start": 17.902,
+          "end": 19.462
+        },
+        {
+          "word": "walked",
+          "display_index": 9,
+          "start": 19.462,
+          "end": 19.842
+        },
+        {
+          "word": "alone",
+          "display_index": 10,
+          "start": 19.842,
+          "end": 20.342
+        },
+        {
+          "word": "into",
+          "display_index": 11,
+          "start": 20.342,
+          "end": 20.922
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 20.922,
+          "end": 21.162
+        },
+        {
+          "word": "forest",
+          "display_index": 13,
+          "start": 21.162,
+          "end": 21.942
+        },
+        {
+          "word": "of",
+          "display_index": 14,
+          "start": 21.942,
+          "end": 22.082
+        },
+        {
+          "word": "Tanzania,",
+          "display_index": 15,
+          "start": 22.082,
+          "end": 23.743
+        },
+        {
+          "word": "in",
+          "display_index": 16,
+          "start": 23.743,
+          "end": 23.903
+        },
+        {
+          "word": "East",
+          "display_index": 17,
+          "start": 23.903,
+          "end": 24.283
+        },
+        {
+          "word": "Africa.",
+          "display_index": 18,
+          "start": 24.283,
+          "end": 25.763
+        }
+      ],
+      "start": 12.181,
+      "end": 25.763
+    },
+    {
+      "line": 2,
+      "english": "Her aim was to observe wild chimpanzees in their own natural environment.",
+      "word_timings": [
+        {
+          "word": "Her",
+          "display_index": 0,
+          "start": 26.063,
+          "end": 26.343
+        },
+        {
+          "word": "aim",
+          "display_index": 1,
+          "start": 26.343,
+          "end": 26.643
+        },
+        {
+          "word": "was",
+          "display_index": 2,
+          "start": 26.643,
+          "end": 26.951
+        },
+        {
+          "word": "to",
+          "display_index": 3,
+          "start": 26.951,
+          "end": 27.183
+        },
+        {
+          "word": "observe",
+          "display_index": 4,
+          "start": 27.183,
+          "end": 27.983
+        },
+        {
+          "word": "wild",
+          "display_index": 5,
+          "start": 27.983,
+          "end": 28.543
+        },
+        {
+          "word": "chimpanzees",
+          "display_index": 6,
+          "start": 28.543,
+          "end": 30.843
+        },
+        {
+          "word": "in",
+          "display_index": 7,
+          "start": 30.843,
+          "end": 30.963
+        },
+        {
+          "word": "their",
+          "display_index": 8,
+          "start": 30.963,
+          "end": 31.263
+        },
+        {
+          "word": "own",
+          "display_index": 9,
+          "start": 31.263,
+          "end": 31.663
+        },
+        {
+          "word": "natural",
+          "display_index": 10,
+          "start": 31.663,
+          "end": 32.323
+        },
+        {
+          "word": "environment.",
+          "display_index": 11,
+          "start": 32.323,
+          "end": 33.823
+        }
+      ],
+      "start": 26.063,
+      "end": 33.823
+    },
+    {
+      "line": 3,
+      "english": "In those days, it was almost unprecedented for a woman to enter the interior of Africa by herself.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 35.584,
+          "end": 35.724
+        },
+        {
+          "word": "those",
+          "display_index": 1,
+          "start": 35.724,
+          "end": 36.064
+        },
+        {
+          "word": "days,",
+          "display_index": 2,
+          "start": 36.064,
+          "end": 36.484
+        },
+        {
+          "word": "it",
+          "display_index": 3,
+          "start": 36.484,
+          "end": 36.584
+        },
+        {
+          "word": "was",
+          "display_index": 4,
+          "start": 36.584,
+          "end": 36.864
+        },
+        {
+          "word": "almost",
+          "display_index": 5,
+          "start": 36.864,
+          "end": 37.544
+        },
+        {
+          "word": "unprecedented",
+          "display_index": 6,
+          "start": 37.544,
+          "end": 39.884
+        },
+        {
+          "word": "for",
+          "display_index": 7,
+          "start": 39.884,
+          "end": 40.103
+        },
+        {
+          "word": "a",
+          "display_index": 8,
+          "start": 40.103,
+          "end": 40.264
+        },
+        {
+          "word": "woman",
+          "display_index": 9,
+          "start": 40.264,
+          "end": 40.733
+        },
+        {
+          "word": "to",
+          "display_index": 10,
+          "start": 40.733,
+          "end": 41.024
+        },
+        {
+          "word": "enter",
+          "display_index": 11,
+          "start": 41.024,
+          "end": 41.714
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 41.714,
+          "end": 41.924
+        },
+        {
+          "word": "interior",
+          "display_index": 13,
+          "start": 41.924,
+          "end": 43.405
+        },
+        {
+          "word": "of",
+          "display_index": 14,
+          "start": 43.405,
+          "end": 43.665
+        },
+        {
+          "word": "Africa",
+          "display_index": 15,
+          "start": 43.665,
+          "end": 44.445
+        },
+        {
+          "word": "by",
+          "display_index": 16,
+          "start": 44.445,
+          "end": 44.705
+        },
+        {
+          "word": "herself.",
+          "display_index": 17,
+          "start": 44.705,
+          "end": 45.745
+        }
+      ],
+      "start": 35.584,
+      "end": 45.745
+    },
+    {
+      "line": 4,
+      "english": "She did not even have a university degree.",
+      "word_timings": [
+        {
+          "word": "She",
+          "display_index": 0,
+          "start": 46.045,
+          "end": 46.205
+        },
+        {
+          "word": "did",
+          "display_index": 1,
+          "start": 46.205,
+          "end": 46.385
+        },
+        {
+          "word": "not",
+          "display_index": 2,
+          "start": 46.385,
+          "end": 46.645
+        },
+        {
+          "word": "even",
+          "display_index": 3,
+          "start": 46.645,
+          "end": 47.085
+        },
+        {
+          "word": "have",
+          "display_index": 4,
+          "start": 47.085,
+          "end": 47.803
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 47.803,
+          "end": 48.025
+        },
+        {
+          "word": "university",
+          "display_index": 6,
+          "start": 48.025,
+          "end": 49.685
+        },
+        {
+          "word": "degree.",
+          "display_index": 7,
+          "start": 49.685,
+          "end": 50.805
+        }
+      ],
+      "start": 46.045,
+      "end": 50.805
+    },
+    {
+      "line": 5,
+      "english": "But the paleontologist Louis Leakey believed in her passion and patience and supported her.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 51.105,
+          "end": 51.266
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 51.266,
+          "end": 51.405
+        },
+        {
+          "word": "paleontologist",
+          "display_index": 2,
+          "start": 51.405,
+          "end": 52.906
+        },
+        {
+          "word": "Louis",
+          "display_index": 3,
+          "start": 52.906,
+          "end": 53.386
+        },
+        {
+          "word": "Leakey",
+          "display_index": 4,
+          "start": 53.386,
+          "end": 54.106
+        },
+        {
+          "word": "believed",
+          "display_index": 5,
+          "start": 54.106,
+          "end": 54.726
+        },
+        {
+          "word": "in",
+          "display_index": 6,
+          "start": 54.726,
+          "end": 54.866
+        },
+        {
+          "word": "her",
+          "display_index": 7,
+          "start": 54.866,
+          "end": 55.166
+        },
+        {
+          "word": "passion",
+          "display_index": 8,
+          "start": 55.166,
+          "end": 57.486
+        },
+        {
+          "word": "and",
+          "display_index": 9,
+          "start": 57.486,
+          "end": 57.746
+        },
+        {
+          "word": "patience",
+          "display_index": 10,
+          "start": 57.746,
+          "end": 59.726
+        },
+        {
+          "word": "and",
+          "display_index": 11,
+          "start": 59.726,
+          "end": 59.926
+        },
+        {
+          "word": "supported",
+          "display_index": 12,
+          "start": 59.926,
+          "end": 60.686
+        },
+        {
+          "word": "her.",
+          "display_index": 13,
+          "start": 60.686,
+          "end": 62.186
+        }
+      ],
+      "start": 51.105,
+      "end": 62.186
+    },
+    {
+      "line": 6,
+      "english": "In the forest of Gombe, she sat for months without showing herself, deep among the trees.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 63.127,
+          "end": 63.227
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 63.227,
+          "end": 63.407
+        },
+        {
+          "word": "forest",
+          "display_index": 2,
+          "start": 63.407,
+          "end": 64.247
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 64.247,
+          "end": 64.487
+        },
+        {
+          "word": "Gombe,",
+          "display_index": 4,
+          "start": 64.487,
+          "end": 65.667
+        },
+        {
+          "word": "she",
+          "display_index": 5,
+          "start": 65.667,
+          "end": 65.867
+        },
+        {
+          "word": "sat",
+          "display_index": 6,
+          "start": 65.867,
+          "end": 66.187
+        },
+        {
+          "word": "for",
+          "display_index": 7,
+          "start": 66.187,
+          "end": 66.467
+        },
+        {
+          "word": "months",
+          "display_index": 8,
+          "start": 66.467,
+          "end": 66.987
+        },
+        {
+          "word": "without",
+          "display_index": 9,
+          "start": 66.987,
+          "end": 67.627
+        },
+        {
+          "word": "showing",
+          "display_index": 10,
+          "start": 67.627,
+          "end": 68.147
+        },
+        {
+          "word": "herself,",
+          "display_index": 11,
+          "start": 68.147,
+          "end": 70.448
+        },
+        {
+          "word": "deep",
+          "display_index": 12,
+          "start": 70.448,
+          "end": 70.888
+        },
+        {
+          "word": "among",
+          "display_index": 13,
+          "start": 70.888,
+          "end": 71.342
+        },
+        {
+          "word": "the",
+          "display_index": 14,
+          "start": 71.342,
+          "end": 71.488
+        },
+        {
+          "word": "trees.",
+          "display_index": 15,
+          "start": 71.488,
+          "end": 72.988
+        }
+      ],
+      "start": 63.127,
+      "end": 72.988
+    },
+    {
+      "line": 7,
+      "english": "After a while, the chimpanzees stopped fearing her and began to show her glimpses of their daily lives.",
+      "word_timings": [
+        {
+          "word": "After",
+          "display_index": 0,
+          "start": 74.068,
+          "end": 74.54
+        },
+        {
+          "word": "a",
+          "display_index": 1,
+          "start": 74.54,
+          "end": 74.688
+        },
+        {
+          "word": "while,",
+          "display_index": 2,
+          "start": 74.688,
+          "end": 75.251
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 75.251,
+          "end": 75.368
+        },
+        {
+          "word": "chimpanzees",
+          "display_index": 4,
+          "start": 75.368,
+          "end": 76.708
+        },
+        {
+          "word": "stopped",
+          "display_index": 5,
+          "start": 76.708,
+          "end": 77.288
+        },
+        {
+          "word": "fearing",
+          "display_index": 6,
+          "start": 77.288,
+          "end": 78.068
+        },
+        {
+          "word": "her",
+          "display_index": 7,
+          "start": 78.068,
+          "end": 79.829
+        },
+        {
+          "word": "and",
+          "display_index": 8,
+          "start": 79.829,
+          "end": 79.969
+        },
+        {
+          "word": "began",
+          "display_index": 9,
+          "start": 79.969,
+          "end": 80.631
+        },
+        {
+          "word": "to",
+          "display_index": 10,
+          "start": 80.631,
+          "end": 80.849
+        },
+        {
+          "word": "show",
+          "display_index": 11,
+          "start": 80.849,
+          "end": 81.209
+        },
+        {
+          "word": "her",
+          "display_index": 12,
+          "start": 81.209,
+          "end": 81.509
+        },
+        {
+          "word": "glimpses",
+          "display_index": 13,
+          "start": 81.509,
+          "end": 83.229
+        },
+        {
+          "word": "of",
+          "display_index": 14,
+          "start": 83.229,
+          "end": 83.489
+        },
+        {
+          "word": "their",
+          "display_index": 15,
+          "start": 83.489,
+          "end": 83.869
+        },
+        {
+          "word": "daily",
+          "display_index": 16,
+          "start": 83.869,
+          "end": 84.429
+        },
+        {
+          "word": "lives.",
+          "display_index": 17,
+          "start": 84.429,
+          "end": 85.929
+        }
+      ],
+      "start": 74.068,
+      "end": 85.929
+    },
+    {
+      "line": 8,
+      "english": "Her greatest discovery was the observation that chimpanzees made twigs into tools for catching termites.",
+      "word_timings": [
+        {
+          "word": "Her",
+          "display_index": 0,
+          "start": 87.629,
+          "end": 87.809
+        },
+        {
+          "word": "greatest",
+          "display_index": 1,
+          "start": 87.809,
+          "end": 88.269
+        },
+        {
+          "word": "discovery",
+          "display_index": 2,
+          "start": 88.269,
+          "end": 89.35
+        },
+        {
+          "word": "was",
+          "display_index": 3,
+          "start": 89.35,
+          "end": 89.543
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 89.543,
+          "end": 89.75
+        },
+        {
+          "word": "observation",
+          "display_index": 5,
+          "start": 89.75,
+          "end": 90.75
+        },
+        {
+          "word": "that",
+          "display_index": 6,
+          "start": 90.75,
+          "end": 90.93
+        },
+        {
+          "word": "chimpanzees",
+          "display_index": 7,
+          "start": 90.93,
+          "end": 92.13
+        },
+        {
+          "word": "made",
+          "display_index": 8,
+          "start": 92.13,
+          "end": 92.45
+        },
+        {
+          "word": "twigs",
+          "display_index": 9,
+          "start": 92.45,
+          "end": 92.97
+        },
+        {
+          "word": "into",
+          "display_index": 10,
+          "start": 92.97,
+          "end": 93.43
+        },
+        {
+          "word": "tools",
+          "display_index": 11,
+          "start": 93.43,
+          "end": 94.29
+        },
+        {
+          "word": "for",
+          "display_index": 12,
+          "start": 94.29,
+          "end": 94.49
+        },
+        {
+          "word": "catching",
+          "display_index": 13,
+          "start": 94.49,
+          "end": 95.41
+        },
+        {
+          "word": "termites.",
+          "display_index": 14,
+          "start": 95.41,
+          "end": 96.91
+        }
+      ],
+      "start": 87.629,
+      "end": 96.91
+    },
+    {
+      "line": 9,
+      "english": "To the world of science, which had until then believed that only humans used tools, this came as a great shock.",
+      "word_timings": [
+        {
+          "word": "To",
+          "display_index": 0,
+          "start": 97.628,
+          "end": 97.829
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 97.829,
+          "end": 98.01
+        },
+        {
+          "word": "world",
+          "display_index": 2,
+          "start": 98.01,
+          "end": 98.451
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 98.451,
+          "end": 98.691
+        },
+        {
+          "word": "science,",
+          "display_index": 4,
+          "start": 98.691,
+          "end": 99.731
+        },
+        {
+          "word": "which",
+          "display_index": 5,
+          "start": 99.731,
+          "end": 99.971
+        },
+        {
+          "word": "had",
+          "display_index": 6,
+          "start": 99.971,
+          "end": 100.371
+        },
+        {
+          "word": "until",
+          "display_index": 7,
+          "start": 100.371,
+          "end": 100.831
+        },
+        {
+          "word": "then",
+          "display_index": 8,
+          "start": 100.831,
+          "end": 101.191
+        },
+        {
+          "word": "believed",
+          "display_index": 9,
+          "start": 101.191,
+          "end": 102.431
+        },
+        {
+          "word": "that",
+          "display_index": 10,
+          "start": 102.431,
+          "end": 102.651
+        },
+        {
+          "word": "only",
+          "display_index": 11,
+          "start": 102.651,
+          "end": 102.991
+        },
+        {
+          "word": "humans",
+          "display_index": 12,
+          "start": 102.991,
+          "end": 104.011
+        },
+        {
+          "word": "used",
+          "display_index": 13,
+          "start": 104.011,
+          "end": 104.691
+        },
+        {
+          "word": "tools,",
+          "display_index": 14,
+          "start": 104.691,
+          "end": 107.972
+        },
+        {
+          "word": "this",
+          "display_index": 15,
+          "start": 107.972,
+          "end": 108.292
+        },
+        {
+          "word": "came",
+          "display_index": 16,
+          "start": 108.292,
+          "end": 109.072
+        },
+        {
+          "word": "as",
+          "display_index": 17,
+          "start": 109.072,
+          "end": 109.214
+        },
+        {
+          "word": "a",
+          "display_index": 18,
+          "start": 109.214,
+          "end": 109.352
+        },
+        {
+          "word": "great",
+          "display_index": 19,
+          "start": 109.352,
+          "end": 109.912
+        },
+        {
+          "word": "shock.",
+          "display_index": 20,
+          "start": 109.912,
+          "end": 111.412
+        }
+      ],
+      "start": 97.628,
+      "end": 111.412
+    },
+    {
+      "line": 10,
+      "english": "Goodall also showed that chimpanzees had emotions similar to those of humans — family bonds, sadness, and conflict.",
+      "word_timings": [
+        {
+          "word": "Goodall",
+          "display_index": 0,
+          "start": 112.232,
+          "end": 112.832
+        },
+        {
+          "word": "also",
+          "display_index": 1,
+          "start": 112.832,
+          "end": 113.412
+        },
+        {
+          "word": "showed",
+          "display_index": 2,
+          "start": 113.412,
+          "end": 113.812
+        },
+        {
+          "word": "that",
+          "display_index": 3,
+          "start": 113.812,
+          "end": 114.152
+        },
+        {
+          "word": "chimpanzees",
+          "display_index": 4,
+          "start": 114.152,
+          "end": 115.432
+        },
+        {
+          "word": "had",
+          "display_index": 5,
+          "start": 115.432,
+          "end": 115.652
+        },
+        {
+          "word": "emotions",
+          "display_index": 6,
+          "start": 115.652,
+          "end": 116.472
+        },
+        {
+          "word": "similar",
+          "display_index": 7,
+          "start": 116.472,
+          "end": 117.554
+        },
+        {
+          "word": "to",
+          "display_index": 8,
+          "start": 117.554,
+          "end": 117.753
+        },
+        {
+          "word": "those",
+          "display_index": 9,
+          "start": 117.753,
+          "end": 118.313
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 118.313,
+          "end": 118.473
+        },
+        {
+          "word": "humans",
+          "display_index": 11,
+          "start": 118.473,
+          "end": 119.333
+        },
+        {
+          "word": "family",
+          "display_index": 13,
+          "start": 119.333,
+          "end": 119.893
+        },
+        {
+          "word": "bonds,",
+          "display_index": 14,
+          "start": 119.893,
+          "end": 120.713
+        },
+        {
+          "word": "sadness,",
+          "display_index": 15,
+          "start": 120.713,
+          "end": 121.873
+        },
+        {
+          "word": "and",
+          "display_index": 16,
+          "start": 121.873,
+          "end": 122.073
+        },
+        {
+          "word": "conflict.",
+          "display_index": 17,
+          "start": 122.073,
+          "end": 123.533
+        }
+      ],
+      "start": 112.232,
+      "end": 123.533
+    },
+    {
+      "line": 11,
+      "english": "Her observations redrew, from the very ground, the line between humanity and other animals.",
+      "word_timings": [
+        {
+          "word": "Her",
+          "display_index": 0,
+          "start": 123.833,
+          "end": 124.053
+        },
+        {
+          "word": "observations",
+          "display_index": 1,
+          "start": 124.053,
+          "end": 125.113
+        },
+        {
+          "word": "redrew,",
+          "display_index": 2,
+          "start": 125.113,
+          "end": 126.093
+        },
+        {
+          "word": "from",
+          "display_index": 3,
+          "start": 126.093,
+          "end": 126.341
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 126.341,
+          "end": 126.494
+        },
+        {
+          "word": "very",
+          "display_index": 5,
+          "start": 126.494,
+          "end": 126.994
+        },
+        {
+          "word": "ground,",
+          "display_index": 6,
+          "start": 126.994,
+          "end": 128.111
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 128.111,
+          "end": 128.274
+        },
+        {
+          "word": "line",
+          "display_index": 8,
+          "start": 128.274,
+          "end": 128.834
+        },
+        {
+          "word": "between",
+          "display_index": 9,
+          "start": 128.834,
+          "end": 129.374
+        },
+        {
+          "word": "humanity",
+          "display_index": 10,
+          "start": 129.374,
+          "end": 132.094
+        },
+        {
+          "word": "and",
+          "display_index": 11,
+          "start": 132.094,
+          "end": 132.334
+        },
+        {
+          "word": "other",
+          "display_index": 12,
+          "start": 132.334,
+          "end": 133.054
+        },
+        {
+          "word": "animals.",
+          "display_index": 13,
+          "start": 133.054,
+          "end": 134.554
+        }
+      ],
+      "start": 123.833,
+      "end": 134.554
+    },
+    {
+      "line": 12,
+      "english": "In her later years, Goodall devoted herself to the conservation of wildlife.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 135.474,
+          "end": 135.635
+        },
+        {
+          "word": "her",
+          "display_index": 1,
+          "start": 135.635,
+          "end": 135.895
+        },
+        {
+          "word": "later",
+          "display_index": 2,
+          "start": 135.895,
+          "end": 136.395
+        },
+        {
+          "word": "years,",
+          "display_index": 3,
+          "start": 136.395,
+          "end": 137.595
+        },
+        {
+          "word": "Goodall",
+          "display_index": 4,
+          "start": 137.595,
+          "end": 138.475
+        },
+        {
+          "word": "devoted",
+          "display_index": 5,
+          "start": 138.475,
+          "end": 139.255
+        },
+        {
+          "word": "herself",
+          "display_index": 6,
+          "start": 139.255,
+          "end": 140.978
+        },
+        {
+          "word": "to",
+          "display_index": 7,
+          "start": 140.978,
+          "end": 141.184
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 141.184,
+          "end": 141.335
+        },
+        {
+          "word": "conservation",
+          "display_index": 9,
+          "start": 141.335,
+          "end": 143.395
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 143.395,
+          "end": 143.715
+        },
+        {
+          "word": "wildlife.",
+          "display_index": 11,
+          "start": 143.715,
+          "end": 145.215
+        }
+      ],
+      "start": 135.474,
+      "end": 145.215
+    },
+    {
+      "line": 13,
+      "english": "The youth program she founded, called Roots and Shoots, has become a starting point for young people in over sixty countries to take on environmental issues in their own neighborhoods.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 147.513,
+          "end": 147.616
+        },
+        {
+          "word": "youth",
+          "display_index": 1,
+          "start": 147.616,
+          "end": 147.876
+        },
+        {
+          "word": "program",
+          "display_index": 2,
+          "start": 147.876,
+          "end": 148.416
+        },
+        {
+          "word": "she",
+          "display_index": 3,
+          "start": 148.416,
+          "end": 148.576
+        },
+        {
+          "word": "founded,",
+          "display_index": 4,
+          "start": 148.576,
+          "end": 149.636
+        },
+        {
+          "word": "called",
+          "display_index": 5,
+          "start": 149.636,
+          "end": 149.956
+        },
+        {
+          "word": "Roots",
+          "display_index": 6,
+          "start": 149.956,
+          "end": 150.336
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 150.336,
+          "end": 150.576
+        },
+        {
+          "word": "Shoots,",
+          "display_index": 8,
+          "start": 150.576,
+          "end": 151.976
+        },
+        {
+          "word": "has",
+          "display_index": 9,
+          "start": 151.976,
+          "end": 152.156
+        },
+        {
+          "word": "become",
+          "display_index": 10,
+          "start": 152.156,
+          "end": 152.489
+        },
+        {
+          "word": "a",
+          "display_index": 11,
+          "start": 152.489,
+          "end": 152.576
+        },
+        {
+          "word": "starting",
+          "display_index": 12,
+          "start": 152.576,
+          "end": 153.076
+        },
+        {
+          "word": "point",
+          "display_index": 13,
+          "start": 153.076,
+          "end": 153.456
+        },
+        {
+          "word": "for",
+          "display_index": 14,
+          "start": 153.456,
+          "end": 153.656
+        },
+        {
+          "word": "young",
+          "display_index": 15,
+          "start": 153.656,
+          "end": 153.936
+        },
+        {
+          "word": "people",
+          "display_index": 16,
+          "start": 153.936,
+          "end": 154.397
+        },
+        {
+          "word": "in",
+          "display_index": 17,
+          "start": 154.397,
+          "end": 154.557
+        },
+        {
+          "word": "over",
+          "display_index": 18,
+          "start": 154.557,
+          "end": 154.877
+        },
+        {
+          "word": "sixty",
+          "display_index": 19,
+          "start": 154.877,
+          "end": 155.317
+        },
+        {
+          "word": "countries",
+          "display_index": 20,
+          "start": 155.317,
+          "end": 156.881
+        },
+        {
+          "word": "to",
+          "display_index": 21,
+          "start": 156.881,
+          "end": 157.057
+        },
+        {
+          "word": "take",
+          "display_index": 22,
+          "start": 157.057,
+          "end": 157.377
+        },
+        {
+          "word": "on",
+          "display_index": 23,
+          "start": 157.377,
+          "end": 157.597
+        },
+        {
+          "word": "environmental",
+          "display_index": 24,
+          "start": 157.597,
+          "end": 158.577
+        },
+        {
+          "word": "issues",
+          "display_index": 25,
+          "start": 158.577,
+          "end": 159.237
+        },
+        {
+          "word": "in",
+          "display_index": 26,
+          "start": 159.237,
+          "end": 159.357
+        },
+        {
+          "word": "their",
+          "display_index": 27,
+          "start": 159.357,
+          "end": 159.637
+        },
+        {
+          "word": "own",
+          "display_index": 28,
+          "start": 159.637,
+          "end": 159.957
+        },
+        {
+          "word": "neighborhoods.",
+          "display_index": 29,
+          "start": 159.957,
+          "end": 161.457
+        }
+      ],
+      "start": 147.513,
+      "end": 161.457
+    },
+    {
+      "line": 14,
+      "english": "Hope lies in action.",
+      "word_timings": [
+        {
+          "word": "Hope",
+          "display_index": 0,
+          "start": 162.497,
+          "end": 163.678
+        },
+        {
+          "word": "lies",
+          "display_index": 1,
+          "start": 163.678,
+          "end": 164.078
+        },
+        {
+          "word": "in",
+          "display_index": 2,
+          "start": 164.078,
+          "end": 164.238
+        },
+        {
+          "word": "action.",
+          "display_index": 3,
+          "start": 164.238,
+          "end": 165.738
+        }
+      ],
+      "start": 162.497,
+      "end": 165.738
+    },
+    {
+      "line": 15,
+      "english": "Her words remain, even now, a steady encouragement for the many young people who carry concern for the future.",
+      "word_timings": [
+        {
+          "word": "Her",
+          "display_index": 0,
+          "start": 167.038,
+          "end": 167.218
+        },
+        {
+          "word": "words",
+          "display_index": 1,
+          "start": 167.218,
+          "end": 167.618
+        },
+        {
+          "word": "remain,",
+          "display_index": 2,
+          "start": 167.618,
+          "end": 168.698
+        },
+        {
+          "word": "even",
+          "display_index": 3,
+          "start": 168.698,
+          "end": 169.018
+        },
+        {
+          "word": "now,",
+          "display_index": 4,
+          "start": 169.018,
+          "end": 170.976
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 170.976,
+          "end": 171.058
+        },
+        {
+          "word": "steady",
+          "display_index": 6,
+          "start": 171.058,
+          "end": 171.498
+        },
+        {
+          "word": "encouragement",
+          "display_index": 7,
+          "start": 171.498,
+          "end": 173.539
+        },
+        {
+          "word": "for",
+          "display_index": 8,
+          "start": 173.539,
+          "end": 173.689
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 173.689,
+          "end": 173.819
+        },
+        {
+          "word": "many",
+          "display_index": 10,
+          "start": 173.819,
+          "end": 174.179
+        },
+        {
+          "word": "young",
+          "display_index": 11,
+          "start": 174.179,
+          "end": 174.519
+        },
+        {
+          "word": "people",
+          "display_index": 12,
+          "start": 174.519,
+          "end": 175.919
+        },
+        {
+          "word": "who",
+          "display_index": 13,
+          "start": 175.919,
+          "end": 176.119
+        },
+        {
+          "word": "carry",
+          "display_index": 14,
+          "start": 176.119,
+          "end": 176.599
+        },
+        {
+          "word": "concern",
+          "display_index": 15,
+          "start": 176.599,
+          "end": 178.239
+        },
+        {
+          "word": "for",
+          "display_index": 16,
+          "start": 178.239,
+          "end": 178.564
+        },
+        {
+          "word": "the",
+          "display_index": 17,
+          "start": 178.564,
+          "end": 178.799
+        },
+        {
+          "word": "future.",
+          "display_index": 18,
+          "start": 178.799,
+          "end": 180.299
+        }
+      ],
+      "start": 167.038,
+      "end": 180.299
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

@@ -1,0 +1,237 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>中学生編 語彙補強ドラフト</title>
+<style>
+:root{--ink:#222;--muted:#777;--accent:#2563eb;--line:#e5e7eb;--bg:#fafafa;}
+*{box-sizing:border-box}
+body{font-family:"Hiragino Kaku Gothic ProN",system-ui,sans-serif;color:var(--ink);
+ line-height:1.95;max-width:840px;margin:0 auto;padding:24px 18px 80px;background:#fff}
+h1{font-size:1.5rem;border-bottom:3px solid var(--accent);padding-bottom:.4em}
+.lead{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:14px 18px;font-size:.95rem}
+.lead b{color:var(--accent)}
+section.lesson{margin:34px 0;padding:18px;border:1px solid var(--line);border-radius:12px}
+section.lesson h2{font-size:1.15rem;margin:.2em 0 .6em}
+section.lesson h2 small{color:var(--muted);font-weight:400;font-size:.72rem}
+.newwords{font-size:.82rem;color:var(--muted);margin-bottom:10px}
+.chip{display:inline-block;background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe;
+ border-radius:999px;padding:1px 9px;margin:2px;font-size:.82rem}
+.grammar-box{background:#fff7ed;border:1px solid #fed7aa;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:.9rem}
+.g-title{font-weight:700;color:#c2410c}
+.g-desc{margin:.3em 0}
+.g-ex-label{margin:.4em 0 .1em;font-size:.85rem;color:var(--muted)}
+.grammar-box ul{margin:.2em 0;padding-left:1.2em}
+.grammar-box .ja{color:var(--muted);font-size:.85em}
+.passage-title{font-size:.92rem;color:var(--accent);margin:16px 0 4px;border-left:4px solid var(--accent);padding-left:8px}
+.jp-body p{margin:.5em 0}
+/* index未読込でも読めるよう .w に語義を表示（index統合時はindex側CSSが上書き）*/
+.jp-body .w{font-weight:700;color:#0f766e;white-space:nowrap}
+.jp-body .w::after{content:"("attr(data-ja)")";font-size:.7em;color:#94a3b8;font-weight:400;margin-left:1px}
+.en-plain{background:#f8fafc;border:1px dashed #cbd5e1;border-radius:8px;padding:8px 14px;font-size:.9rem}
+table{border-collapse:collapse;width:100%;font-size:.88rem;margin-top:8px}
+th,td{border:1px solid var(--line);padding:5px 9px;text-align:left}
+th{background:var(--bg)}
+td.ipa{color:var(--muted);font-family:ui-monospace,monospace}
+code{background:#f1f5f9;padding:1px 5px;border-radius:4px;font-size:.85em}
+.note{font-size:.82rem;color:var(--muted)}
+</style></head>
+<body>
+<h1>📘 中学生編 ― 語彙補強ドラフト</h1>
+<div class="lead">
+<p>小中学校.xlsx の語のうち、<b>index.html のどこにも出てこなかった 129 語</b>を、既存「エクストラ語彙」レッスン（L31–45）のテーマに沿った<b>追加本文</b>として執筆したものです。本ファイルは<b>レビュー用ドラフト</b>で、<b>index.html は未編集</b>です。</p>
+<p>本文中の英単語は index と同じ <code>&lt;span class="w" data-base data-ipa data-ja data-pos&gt;</code> でマークアップ済み（そのまま該当レッスンの <code>jp-body</code> に貼り付け可能）。語義は確認用に括弧で表示しています（index 統合時は index 側 CSS が上書き）。</p>
+<p>このドラフトで本文化＝ <b>110 語</b> ／ 付録（高校編向き・発展語）＝ <b>19 語</b> ／ 合計 <b>129 語</b>。</p>
+</div>
+
+<section class="lesson" data-augments="L39">
+  <h2>時間と数 ― 追加本文「カレンダーと数の一週間」 <small>（L39 に追記想定 / 新出 24 語）</small></h2>
+  <div class="newwords">新出語: <span class="chip">September</span> <span class="chip">October</span> <span class="chip">November</span> <span class="chip">January</span> <span class="chip">Tuesday</span> <span class="chip">Thursday</span> <span class="chip">date</span> <span class="chip">eighteen</span> <span class="chip">nineteen</span> <span class="chip">February</span> <span class="chip">fourteen</span> <span class="chip">ninety</span> <span class="chip">sixth</span> <span class="chip">eighth</span> <span class="chip">tenth</span> <span class="chip">eleventh</span> <span class="chip">twelfth</span> <span class="chip">fourteenth</span> <span class="chip">eleven</span> <span class="chip">thirteen</span> <span class="chip">sixteen</span> <span class="chip">seventeen</span> <span class="chip">p.m.</span> <span class="chip">holiday</span></div>
+  <div class="grammar-box">
+    <span class="g-title">文法ターゲット：エクストラ語彙：時間と数</span>
+    <p class="g-desc">新出文法なし。月・曜日・数や順番をあらわす語を確認します。</p>
+    <p class="g-ex-label">例文：</p>
+    <ul><li><em>School starts again in September.</em> <span class="ja">― 9月にまた学校が始まる。</span></li><li><em>My grandmother is ninety years old.</em> <span class="ja">― 祖母は90歳だ。</span></li></ul>
+  </div>
+  <h3 class="passage-title">本文「カレンダーと数の一週間」（日本語混じり / index貼り付け用 .w マークアップ）</h3>
+  <div class="jp-body">
+        <p>新しい手帳を開くと、一年の暦が目に入ります。学校がいちばん忙しくなるのは、<span class="w" data-base="september" data-ipa="/sɛpˈtɛmbər/" data-ja="9月" data-pos="noun">September</span> に新学期が始まってから、<span class="w" data-base="october" data-ipa="/ɑːkˈtoʊbər/" data-ja="10月" data-pos="noun">October</span>、<span class="w" data-base="november" data-ipa="/noʊˈvɛmbər/" data-ja="11月" data-pos="noun">November</span> と続く秋です。</p>
+        <p>年が明けた <span class="w" data-base="january" data-ipa="/ˈdʒænjuˌɛri/" data-ja="1月" data-pos="noun">January</span> の最初の登校日は <span class="w" data-base="tuesday" data-ipa="/ˈtuːzdeɪ/" data-ja="火曜日" data-pos="noun">Tuesday</span> でした。冬休み明けのテストは、その週の <span class="w" data-base="thursday" data-ipa="/ˈθɜːrzdeɪ/" data-ja="木曜日" data-pos="noun">Thursday</span> です。わたしは大切な <span class="w" data-base="date" data-ipa="/deɪt/" data-ja="日付" data-pos="noun">date</span> を、赤いペンで大きくかこみました。</p>
+        <p>家族の年齢もちょうど節目です。姉は <span class="w" data-base="eighteen" data-ipa="/ˌeɪˈtiːn/" data-ja="18" data-pos="num">eighteen</span> 歳、兄は <span class="w" data-base="nineteen" data-ipa="/ˌnaɪnˈtiːn/" data-ja="19" data-pos="num">nineteen</span> 歳、わたしはこの <span class="w" data-base="february" data-ipa="/ˈfɛbruˌɛri/" data-ja="2月" data-pos="noun">February</span> で <span class="w" data-base="fourteen" data-ipa="/ˌfɔːrˈtiːn/" data-ja="14" data-pos="num">fourteen</span> 歳になります。祖母は今年、なんと <span class="w" data-base="ninety" data-ipa="/ˈnaɪnti/" data-ja="90" data-pos="num">ninety</span> 歳のお祝いをします。</p>
+        <p>発表の順番は出席番号で決まりました。わたしは前から <span class="w" data-base="sixth" data-ipa="/sɪksθ/" data-ja="6番目の" data-pos="adj">sixth</span> 番目、親友は <span class="w" data-base="eighth" data-ipa="/eɪtθ/" data-ja="8番目の" data-pos="adj">eighth</span> 番目、転校生は <span class="w" data-base="tenth" data-ipa="/tɛnθ/" data-ja="10番目の" data-pos="adj">tenth</span> 番目です。最後の三人は <span class="w" data-base="eleventh" data-ipa="/ɪˈlɛvənθ/" data-ja="11番目の" data-pos="adj">eleventh</span>、<span class="w" data-base="twelfth" data-ipa="/twɛlfθ/" data-ja="12番目の" data-pos="adj">twelfth</span>、そして <span class="w" data-base="fourteenth" data-ipa="/ˌfɔːrˈtiːnθ/" data-ja="14番目の" data-pos="adj">fourteenth</span> 番目に並びました。</p>
+        <p>合唱に参加するのは <span class="w" data-base="eleven" data-ipa="/ɪˈlɛvən/" data-ja="11" data-pos="num">eleven</span> 人。歌う曲は、<span class="w" data-base="thirteen" data-ipa="/ˌθɜːrˈtiːn/" data-ja="13" data-pos="num">thirteen</span>、<span class="w" data-base="sixteen" data-ipa="/ˌsɪksˈtiːn/" data-ja="16" data-pos="num">sixteen</span>、<span class="w" data-base="seventeen" data-ipa="/ˌsɛvənˈtiːn/" data-ja="17" data-pos="num">seventeen</span> と番号のついた三曲です。練習はいつも放課後、<span class="w" data-base="pm" data-ipa="/ˌpiːˈɛm/" data-ja="午後" data-pos="adv">p.m.</span> 三時から。次の <span class="w" data-base="holiday" data-ipa="/ˈhɑːlədeɪ/" data-ja="休日" data-pos="noun">holiday</span> には、三曲を通して歌う予定です。</p>
+  </div>
+  <h3 class="passage-title">英語本文（統合時に <code>en-body</code> として we タグ付け）</h3>
+  <div class="en-plain"><p>When I open my new planner, the whole year&#x27;s calendar comes into view. School gets busiest in autumn, after the new term starts in September and continues through October and November. The first school day in January was a Tuesday, and the test after winter break is on Thursday that week, so I circled the important date in red. My family&#x27;s ages are at turning points too: my older sister is eighteen, my brother is nineteen, and I will turn fourteen this February. My grandmother will even celebrate her ninetieth birthday this year. The order of the presentations was decided by our class numbers. I am sixth from the front, my best friend is eighth, and the new student is tenth; the last three stood in the eleventh, twelfth, and fourteenth places. Eleven of us join the chorus, and we sing three songs numbered thirteen, sixteen, and seventeen. We always practice after school from three p.m., and next holiday we plan to sing all three songs straight through.</p></div>
+</section>
+
+<section class="lesson" data-augments="L34">
+  <h2>体と健康 ― 追加本文「ぐらぐらの歯」 <small>（L34 に追記想定 / 新出 5 語）</small></h2>
+  <div class="newwords">新出語: <span class="chip">tooth</span> <span class="chip">neck</span> <span class="chip">injure</span> <span class="chip">blind</span> <span class="chip">disabled</span></div>
+  <div class="grammar-box">
+    <span class="g-title">文法ターゲット：エクストラ語彙：体と健康</span>
+    <p class="g-desc">新出文法なし。体の部位や、体の状態に関する語を確認します。</p>
+    <p class="g-ex-label">例文：</p>
+    <ul><li><em>One back tooth feels loose.</em> <span class="ja">― 奥歯が一本ぐらつく。</span></li><li><em>Don&#x27;t injure your neck.</em> <span class="ja">― 首を傷めないで。</span></li></ul>
+  </div>
+  <h3 class="passage-title">本文「ぐらぐらの歯」（日本語混じり / index貼り付け用 .w マークアップ）</h3>
+  <div class="jp-body">
+        <p>朝、鏡の前で歯をみがいていると、奥の <span class="w" data-base="tooth" data-ipa="/tuːθ/" data-ja="歯" data-pos="noun">tooth</span> が一本ぐらぐらしているのに気づきました。ゆうべ転んで <span class="w" data-base="neck" data-ipa="/nɛk/" data-ja="首" data-pos="noun">neck</span> も少しひねったようで、振り向くと鈍く痛みます。</p>
+        <p>保健室の先生は『無理に動かすと、かえって筋を <span class="w" data-base="injure" data-ipa="/ˈɪndʒər/" data-ja="傷める" data-pos="verb">injure</span> することがあるよ』と言って、冷たいタオルをそっと当ててくれました。</p>
+        <p>保健の授業では、目の見えない、つまり <span class="w" data-base="blind" data-ipa="/blaɪnd/" data-ja="目の見えない" data-pos="adj">blind</span> の人や、体の不自由な、つまり <span class="w" data-base="disabled" data-ipa="/dɪsˈeɪbəld/" data-ja="体の不自由な" data-pos="adj">disabled</span> の人が、安心して町を歩けるくふうを学びました。点字ブロックや音の出る信号は、その大切なくふうのひとつです。</p>
+  </div>
+  <h3 class="passage-title">英語本文（統合時に <code>en-body</code> として we タグ付け）</h3>
+  <div class="en-plain"><p>This morning, while I was brushing my teeth in front of the mirror, I noticed that one back tooth was loose. I had fallen the night before and seemed to have twisted my neck a little, so it ached dully when I turned around. The school nurse said, &quot;If you move it too hard, you may injure the muscle even more,&quot; and she gently placed a cold towel on it. In our health class, we learned about clever ideas that help blind people and disabled people walk around town safely. Braille blocks and sound-making traffic lights are some of these important ideas.</p></div>
+</section>
+
+<section class="lesson" data-augments="L41">
+  <h2>家の中・身の回り ― 追加本文「日曜日のかたづけ」 <small>（L41 に追記想定 / 新出 13 語）</small></h2>
+  <div class="newwords">新出語: <span class="chip">apron</span> <span class="chip">oil</span> <span class="chip">towel</span> <span class="chip">doll</span> <span class="chip">toy</span> <span class="chip">stationery</span> <span class="chip">list</span> <span class="chip">shirt</span> <span class="chip">iron</span> <span class="chip">pair</span> <span class="chip">cap</span> <span class="chip">candle</span> <span class="chip">trash</span></div>
+  <div class="grammar-box">
+    <span class="g-title">文法ターゲット：エクストラ語彙：家の中・身の回り</span>
+    <p class="g-desc">新出文法なし。家の中の道具や身の回りの物をあらわす語を確認します。</p>
+    <p class="g-ex-label">例文：</p>
+    <ul><li><em>Mother put on her apron.</em> <span class="ja">― 母はエプロンをつけた。</span></li><li><em>I ironed a wrinkled shirt.</em> <span class="ja">― しわのシャツにアイロンをかけた。</span></li></ul>
+  </div>
+  <h3 class="passage-title">本文「日曜日のかたづけ」（日本語混じり / index貼り付け用 .w マークアップ）</h3>
+  <div class="jp-body">
+        <p>日曜日の朝、母は <span class="w" data-base="apron" data-ipa="/ˈeɪprən/" data-ja="エプロン" data-pos="noun">apron</span> をつけて台所に立ち、フライパンに <span class="w" data-base="oil" data-ipa="/ɔɪl/" data-ja="油" data-pos="noun">oil</span> をひいて朝食を作っています。わたしは洗面所から、乾いた <span class="w" data-base="towel" data-ipa="/ˈtaʊəl/" data-ja="タオル" data-pos="noun">towel</span> を運びました。</p>
+        <p>自分の部屋をかたづけます。たなには、小さな <span class="w" data-base="doll" data-ipa="/dɑːl/" data-ja="人形" data-pos="noun">doll</span> と、昔よく遊んだ <span class="w" data-base="toy" data-ipa="/tɔɪ/" data-ja="おもちゃ" data-pos="noun">toy</span> が並んでいます。引き出しには、ペンやノートなどの <span class="w" data-base="stationery" data-ipa="/ˈsteɪʃəˌnɛri/" data-ja="文房具" data-pos="noun">stationery</span> と、やることを書いた <span class="w" data-base="list" data-ipa="/lɪst/" data-ja="リスト" data-pos="noun">list</span> が入っています。</p>
+        <p>クローゼットからは、しわになった <span class="w" data-base="shirt" data-ipa="/ʃɜːrt/" data-ja="シャツ" data-pos="noun">shirt</span> を出して <span class="w" data-base="iron" data-ipa="/ˈaɪərn/" data-ja="アイロン" data-pos="noun">iron</span> をかけ、おそろいの <span class="w" data-base="pair" data-ipa="/pɛər/" data-ja="ひと組" data-pos="noun">pair</span> のくつ下をそろえました。お気に入りの <span class="w" data-base="cap" data-ipa="/kæp/" data-ja="ぼうし" data-pos="noun">cap</span> も、たなにもどします。</p>
+        <p>夜、机の上で小さな <span class="w" data-base="candle" data-ipa="/ˈkændəl/" data-ja="ろうそく" data-pos="noun">candle</span> をともすと、部屋がやわらかい光につつまれました。いらない紙は、まとめて <span class="w" data-base="trash" data-ipa="/træʃ/" data-ja="ごみ" data-pos="noun">trash</span> に捨てて、一日が終わります。</p>
+  </div>
+  <h3 class="passage-title">英語本文（統合時に <code>en-body</code> として we タグ付け）</h3>
+  <div class="en-plain"><p>On Sunday morning, my mother stood in the kitchen with her apron on, putting oil in the pan to make breakfast. I carried a dry towel from the washroom. Then I tidied my own room. On the shelf stood a small doll and a toy I used to play with a lot. In the drawer were stationery such as pens and notebooks, and a list of things to do. From the closet I took out a wrinkled shirt and pressed it with an iron, and I matched a pair of socks. I put my favorite cap back on the shelf too. At night, when I lit a small candle on my desk, the room was wrapped in soft light. I threw all the wastepaper into the trash, and the day came to an end.</p></div>
+</section>
+
+<section class="lesson" data-augments="L32">
+  <h2>町と乗り物 ― 追加本文「遠い町への旅」 <small>（L32 に追記想定 / 新出 8 語）</small></h2>
+  <div class="newwords">新出語: <span class="chip">airplane</span> <span class="chip">subway</span> <span class="chip">railway</span> <span class="chip">sidewalk</span> <span class="chip">hole</span> <span class="chip">palace</span> <span class="chip">dam</span> <span class="chip">extinguisher</span></div>
+  <div class="grammar-box">
+    <span class="g-title">文法ターゲット：エクストラ語彙：町と乗り物</span>
+    <p class="g-desc">新出文法なし。乗り物や町の施設をあらわす語を確認します。</p>
+    <p class="g-ex-label">例文：</p>
+    <ul><li><em>We took the subway downtown.</em> <span class="ja">― 地下鉄で中心街へ行った。</span></li><li><em>Watch the hole in the road.</em> <span class="ja">― 道の穴に気をつけて。</span></li></ul>
+  </div>
+  <h3 class="passage-title">本文「遠い町への旅」（日本語混じり / index貼り付け用 .w マークアップ）</h3>
+  <div class="jp-body">
+        <p>夏休み、家族で遠くの町へ出かけました。空港から大きな <span class="w" data-base="airplane" data-ipa="/ˈɛərˌpleɪn/" data-ja="飛行機" data-pos="noun">airplane</span> に乗り、着いてからは <span class="w" data-base="subway" data-ipa="/ˈsʌbˌweɪ/" data-ja="地下鉄" data-pos="noun">subway</span> や <span class="w" data-base="railway" data-ipa="/ˈreɪlˌweɪ/" data-ja="鉄道" data-pos="noun">railway</span> を乗りついで、目的地へ向かいます。</p>
+        <p>駅を出て <span class="w" data-base="sidewalk" data-ipa="/ˈsaɪdˌwɔːk/" data-ja="歩道" data-pos="noun">sidewalk</span> を歩いていくと、道のとちゅうに工事中の <span class="w" data-base="hole" data-ipa="/hoʊl/" data-ja="穴" data-pos="noun">hole</span> があり、係の人が『足もとに気をつけて』と声をかけてくれました。</p>
+        <p>丘の上には、昔の王さまが住んでいたという立派な <span class="w" data-base="palace" data-ipa="/ˈpæləs/" data-ja="宮殿" data-pos="noun">palace</span> が建っています。遠くの谷には大きな <span class="w" data-base="dam" data-ipa="/dæm/" data-ja="ダム" data-pos="noun">dam</span> が見え、町の電気と水をささえているそうです。</p>
+        <p>建物の入り口には、赤い消火器、つまり <span class="w" data-base="extinguisher" data-ipa="/ɪkˈstɪŋɡwɪʃər/" data-ja="消火器" data-pos="noun">extinguisher</span> が置かれていました。『もしものときの備えだよ』と父が教えてくれました。</p>
+  </div>
+  <h3 class="passage-title">英語本文（統合時に <code>en-body</code> として we タグ付け）</h3>
+  <div class="en-plain"><p>During summer vacation, my family traveled to a faraway town. We boarded a big airplane at the airport, and after we arrived we changed between the subway and the railway to reach our destination. As we walked along the sidewalk from the station, there was a hole in the road under construction, and a worker called out, &quot;Watch your step.&quot; On top of a hill stood a grand palace where an old king was said to have lived. In the distant valley we could see a large dam, which supports the town&#x27;s electricity and water. At the entrance of the building, a red fire extinguisher was placed. &quot;It&#x27;s a preparation for emergencies,&quot; my father told me.</p></div>
+</section>
+
+<section class="lesson" data-augments="L43">
+  <h2>職業と人 ― 追加本文「文化祭の大人たち」 <small>（L43 に追記想定 / 新出 7 語）</small></h2>
+  <div class="newwords">新出語: <span class="chip">actor</span> <span class="chip">professor</span> <span class="chip">policeman</span> <span class="chip">host</span> <span class="chip">barber</span> <span class="chip">pal</span> <span class="chip">prince</span></div>
+  <div class="grammar-box">
+    <span class="g-title">文法ターゲット：エクストラ語彙：職業と人</span>
+    <p class="g-desc">新出文法なし。職業や人の役わりをあらわす語を確認します。</p>
+    <p class="g-ex-label">例文：</p>
+    <ul><li><em>She used to be an actor.</em> <span class="ja">― 彼女は俳優だった。</span></li><li><em>A kind policeman helped us.</em> <span class="ja">― 親切な警察官が助けてくれた。</span></li></ul>
+  </div>
+  <h3 class="passage-title">本文「文化祭の大人たち」（日本語混じり / index貼り付け用 .w マークアップ）</h3>
+  <div class="jp-body">
+        <p>町の文化祭には、いろいろな大人が集まります。劇の指導をするのは、もとは舞台の <span class="w" data-base="actor" data-ipa="/ˈæktər/" data-ja="俳優" data-pos="noun">actor</span> だった人。科学の話をしてくれるのは、大学の <span class="w" data-base="professor" data-ipa="/prəˈfɛsər/" data-ja="教授" data-pos="noun">professor</span> です。</p>
+        <p>会場の入り口では、やさしい <span class="w" data-base="policeman" data-ipa="/pəˈliːsmən/" data-ja="警察官" data-pos="noun">policeman</span> が交通整理をし、司会の <span class="w" data-base="host" data-ipa="/hoʊst/" data-ja="司会・主人役" data-pos="noun">host</span> が元気な声でお客さんをむかえています。</p>
+        <p>髪を切る体験コーナーでは、町の <span class="w" data-base="barber" data-ipa="/ˈbɑːrbər/" data-ja="理髪師" data-pos="noun">barber</span> が、子どもたちに道具の使い方を見せてくれました。</p>
+        <p>わたしの幼なじみ、つまり仲のよい <span class="w" data-base="pal" data-ipa="/pæl/" data-ja="仲間" data-pos="noun">pal</span> は、王子、つまり <span class="w" data-base="prince" data-ipa="/prɪns/" data-ja="王子" data-pos="noun">prince</span> の役で劇に出ます。少し照れながらも、堂々と演じていました。</p>
+  </div>
+  <h3 class="passage-title">英語本文（統合時に <code>en-body</code> として we タグ付け）</h3>
+  <div class="en-plain"><p>Many kinds of grown-ups gather at the town culture festival. The person who directs the play used to be a stage actor, and the one who talks about science is a university professor. At the entrance of the hall, a kind policeman directs the traffic, and the host welcomes the guests in a cheerful voice. At the hands-on haircut corner, the town barber shows the children how to use the tools. My childhood friend, my close pal, appears in the play as a prince. Though a little shy, he performed with great confidence.</p></div>
+</section>
+
+<section class="lesson" data-augments="L36">
+  <h2>動物と自然 ― 追加本文「祖父の裏山で」 <small>（L36 に追記想定 / 新出 10 語）</small></h2>
+  <div class="newwords">新出語: <span class="chip">monkey</span> <span class="chip">nest</span> <span class="chip">feather</span> <span class="chip">sunshine</span> <span class="chip">shade</span> <span class="chip">seasonal</span> <span class="chip">dinosaur</span> <span class="chip">glacier</span> <span class="chip">rainwater</span> <span class="chip">pork</span></div>
+  <div class="grammar-box">
+    <span class="g-title">文法ターゲット：エクストラ語彙：動物と自然</span>
+    <p class="g-desc">新出文法なし。動物や自然をあらわす語を確認します。</p>
+    <p class="g-ex-label">例文：</p>
+    <ul><li><em>A monkey sat in the tree.</em> <span class="ja">― サルが木にすわっていた。</span></li><li><em>We rested in the shade.</em> <span class="ja">― 日かげで休んだ。</span></li></ul>
+  </div>
+  <h3 class="passage-title">本文「祖父の裏山で」（日本語混じり / index貼り付け用 .w マークアップ）</h3>
+  <div class="jp-body">
+        <p>祖父の家の裏山を歩くと、木の上で <span class="w" data-base="monkey" data-ipa="/ˈmʌŋki/" data-ja="サル" data-pos="noun">monkey</span> が遊んでいました。枝のあいだには、鳥が小枝を集めて作った <span class="w" data-base="nest" data-ipa="/nɛst/" data-ja="巣" data-pos="noun">nest</span> があり、一枚の白い <span class="w" data-base="feather" data-ipa="/ˈfɛðər/" data-ja="羽根" data-pos="noun">feather</span> が落ちていました。</p>
+        <p>明るい <span class="w" data-base="sunshine" data-ipa="/ˈsʌnˌʃaɪn/" data-ja="日光" data-pos="noun">sunshine</span> の下は暑いので、わたしたちは大きな木の <span class="w" data-base="shade" data-ipa="/ʃeɪd/" data-ja="日かげ" data-pos="noun">shade</span> で休みました。葉のすきまから、<span class="w" data-base="seasonal" data-ipa="/ˈsiːzənəl/" data-ja="季節の" data-pos="adj">seasonal</span> な草花の色が見えます。</p>
+        <p>博物館では、大昔に生きていた <span class="w" data-base="dinosaur" data-ipa="/ˈdaɪnəˌsɔːr/" data-ja="恐竜" data-pos="noun">dinosaur</span> の骨と、はるか北の <span class="w" data-base="glacier" data-ipa="/ˈɡleɪʃər/" data-ja="氷河" data-pos="noun">glacier</span> の写真が展示されていました。</p>
+        <p>畑のわきには、<span class="w" data-base="rainwater" data-ipa="/ˈreɪnˌwɔːtər/" data-ja="雨水" data-pos="noun">rainwater</span> をためる大きなおけがあります。昼食には、祖母が育てた野菜と <span class="w" data-base="pork" data-ipa="/pɔːrk/" data-ja="ぶた肉" data-pos="noun">pork</span> を使った、温かい料理が並びました。</p>
+  </div>
+  <h3 class="passage-title">英語本文（統合時に <code>en-body</code> として we タグ付け）</h3>
+  <div class="en-plain"><p>As I walked up the hill behind my grandfather&#x27;s house, a monkey was playing in a tree. Among the branches was a nest that a bird had built from small twigs, and a single white feather had fallen below. It was hot under the bright sunshine, so we rested in the shade of a large tree. Through the gaps in the leaves, we could see the colors of the seasonal flowers. At the museum, the bones of a dinosaur that lived long ago and photographs of a far-northern glacier were on display. Beside the field there is a large barrel that collects rainwater. For lunch, warm dishes made with vegetables my grandmother grew and some pork were lined up on the table.</p></div>
+</section>
+
+<section class="lesson" data-augments="L31">
+  <h2>気持ち・様子 ― 追加本文「運のいい一日」 <small>（L31 に追記想定 / 新出 22 語）</small></h2>
+  <div class="newwords">新出語: <span class="chip">lucky</span> <span class="chip">luck</span> <span class="chip">hopeful</span> <span class="chip">helpful</span> <span class="chip">playful</span> <span class="chip">noisy</span> <span class="chip">crazy</span> <span class="chip">awesome</span> <span class="chip">scary</span> <span class="chip">sleepy</span> <span class="chip">dear</span> <span class="chip">fond</span> <span class="chip">unhappy</span> <span class="chip">unfair</span> <span class="chip">foolish</span> <span class="chip">fool</span> <span class="chip">successful</span> <span class="chip">lend</span> <span class="chip">stylish</span> <span class="chip">mini</span> <span class="chip">flat</span> <span class="chip">dry</span></div>
+  <div class="grammar-box">
+    <span class="g-title">文法ターゲット：エクストラ語彙：気持ち・様子</span>
+    <p class="g-desc">新出文法なし。気持ちや様子をあらわす形容詞を中心に確認します。</p>
+    <p class="g-ex-label">例文：</p>
+    <ul><li><em>I felt very lucky today.</em> <span class="ja">― 今日はとても運がよかった。</span></li><li><em>That story was a little scary.</em> <span class="ja">― その話は少しこわかった。</span></li></ul>
+  </div>
+  <h3 class="passage-title">本文「運のいい一日」（日本語混じり / index貼り付け用 .w マークアップ）</h3>
+  <div class="jp-body">
+        <p>今日はとても運がいい、つまり <span class="w" data-base="lucky" data-ipa="/ˈlʌki/" data-ja="幸運な" data-pos="adj">lucky</span> な一日でした。朝いちばんに見つけた四つ葉のクローバーが、きっと <span class="w" data-base="luck" data-ipa="/lʌk/" data-ja="運" data-pos="noun">luck</span> を運んでくれたのだと思います。</p>
+        <p>親友はいつも前向きで <span class="w" data-base="hopeful" data-ipa="/ˈhoʊpfəl/" data-ja="希望に満ちた" data-pos="adj">hopeful</span>、そして困っている人にすぐ手を貸す <span class="w" data-base="helpful" data-ipa="/ˈhɛlpfəl/" data-ja="助けになる" data-pos="adj">helpful</span> な人です。妹は子犬のように <span class="w" data-base="playful" data-ipa="/ˈpleɪfəl/" data-ja="遊び好きな" data-pos="adj">playful</span> で、家の中はいつも少し <span class="w" data-base="noisy" data-ipa="/ˈnɔɪzi/" data-ja="うるさい" data-pos="adj">noisy</span> です。弟は新しいゲームに <span class="w" data-base="crazy" data-ipa="/ˈkreɪzi/" data-ja="夢中の" data-pos="adj">crazy</span> なほど夢中で、うまくいくたびに『<span class="w" data-base="awesome" data-ipa="/ˈɔːsəm/" data-ja="すばらしい" data-pos="adj">awesome</span>！』と大声をあげます。</p>
+        <p>夜、こわい、つまり <span class="w" data-base="scary" data-ipa="/ˈskɛri/" data-ja="こわい" data-pos="adj">scary</span> な話を聞いたあとは、なかなか眠れません。それでも次の朝には、<span class="w" data-base="sleepy" data-ipa="/ˈsliːpi/" data-ja="眠い" data-pos="adj">sleepy</span> な顔のまま食卓に着きます。</p>
+        <p>祖母からの手紙は、いつも『<span class="w" data-base="dear" data-ipa="/dɪər/" data-ja="親愛なる" data-pos="adj">dear</span> なわたしのまごへ』で始まります。祖母は古い物を大切にするのが <span class="w" data-base="fond" data-ipa="/fɑːnd/" data-ja="好んで" data-pos="adj">fond</span> で、その気持ちがとてもうれしいのです。</p>
+        <p>試合に負けて <span class="w" data-base="unhappy" data-ipa="/ʌnˈhæpi/" data-ja="不幸な" data-pos="adj">unhappy</span> になった日もありました。判定が <span class="w" data-base="unfair" data-ipa="/ʌnˈfɛər/" data-ja="不公平な" data-pos="adj">unfair</span> に思えてくやしくて、つい <span class="w" data-base="foolish" data-ipa="/ˈfuːlɪʃ/" data-ja="おろかな" data-pos="adj">foolish</span> なことを言い、<span class="w" data-base="fool" data-ipa="/fuːl/" data-ja="おろか者" data-pos="noun">fool</span> のようにふるまってしまったのです。</p>
+        <p>それでも、最後までやりぬいた発表は <span class="w" data-base="successful" data-ipa="/səkˈsɛsfəl/" data-ja="成功した" data-pos="adj">successful</span> に終わりました。姉が <span class="w" data-base="lend" data-ipa="/lɛnd/" data-ja="貸す" data-pos="verb">lend</span> してくれた <span class="w" data-base="stylish" data-ipa="/ˈstaɪlɪʃ/" data-ja="おしゃれな" data-pos="adj">stylish</span> で <span class="w" data-base="mini" data-ipa="/ˈmɪni/" data-ja="小型の" data-pos="adj">mini</span> なバッグを持ち、底の <span class="w" data-base="flat" data-ipa="/flæt/" data-ja="平らな" data-pos="adj">flat</span> なくつをはいて、<span class="w" data-base="dry" data-ipa="/draɪ/" data-ja="乾いた" data-pos="adj">dry</span> な秋風の中を、胸を張って歩いて帰りました。</p>
+  </div>
+  <h3 class="passage-title">英語本文（統合時に <code>en-body</code> として we タグ付け）</h3>
+  <div class="en-plain"><p>Today was a very lucky day. I think the four-leaf clover I found first thing in the morning surely brought me luck. My best friend is always positive and hopeful, and she is the helpful kind who lends a hand to anyone in trouble. My little sister is playful like a puppy, so our house is always a little noisy. My little brother is crazy about a new game, and every time it goes well he shouts, &quot;Awesome!&quot; After hearing a scary story at night, I can hardly fall asleep, yet the next morning I sit at the table with a sleepy face. My grandmother&#x27;s letters always begin with &quot;To my dear grandchild.&quot; She is fond of taking good care of old things, and that feeling makes me very happy. There were days when I became unhappy after losing a game. The decision seemed unfair, and feeling bitter, I said something foolish and acted like a fool. Even so, the presentation I carried through to the end was successful. Carrying the stylish, mini bag my sister lent me and wearing flat-soled shoes, I walked home with my chest held high through the dry autumn wind.</p></div>
+</section>
+
+<section class="lesson" data-augments="L37">
+  <h2>学校・ことば ― 追加本文「ことばの教室」 <small>（L37 に追記想定 / 新出 9 語）</small></h2>
+  <div class="newwords">新出語: <span class="chip">absent</span> <span class="chip">spell</span> <span class="chip">spelling</span> <span class="chip">syllable</span> <span class="chip">rhyme</span> <span class="chip">fiction</span> <span class="chip">selection</span> <span class="chip">musical</span> <span class="chip">feedback</span></div>
+  <div class="grammar-box">
+    <span class="g-title">文法ターゲット：エクストラ語彙：学校・ことば</span>
+    <p class="g-desc">新出文法なし。学校生活やことばの学習に関する語を確認します。</p>
+    <p class="g-ex-label">例文：</p>
+    <ul><li><em>He was absent for three days.</em> <span class="ja">― 彼は3日間欠席した。</span></li><li><em>How do you spell this word?</em> <span class="ja">― この語はどうつづりますか。</span></li></ul>
+  </div>
+  <h3 class="passage-title">本文「ことばの教室」（日本語混じり / index貼り付け用 .w マークアップ）</h3>
+  <div class="jp-body">
+        <p>かぜで三日 <span class="w" data-base="absent" data-ipa="/ˈæbsənt/" data-ja="欠席の" data-pos="adj">absent</span> だった友だちが、今日ひさしぶりに登校しました。みんな笑顔でむかえます。</p>
+        <p>国語と英語の時間は、ことばの学習です。新しい単語を一文字ずつ <span class="w" data-base="spell" data-ipa="/spɛl/" data-ja="つづる" data-pos="verb">spell</span> して、正しい <span class="w" data-base="spelling" data-ipa="/ˈspɛlɪŋ/" data-ja="つづり" data-pos="noun">spelling</span> を覚えます。先生は『この語は二つの <span class="w" data-base="syllable" data-ipa="/ˈsɪləbəl/" data-ja="音節" data-pos="noun">syllable</span> に分かれるよ』と手をたたいて教えてくれました。</p>
+        <p>詩の授業では、行の終わりの音をそろえる <span class="w" data-base="rhyme" data-ipa="/raɪm/" data-ja="韻（いん）" data-pos="noun">rhyme</span> のおもしろさを学びました。</p>
+        <p>図書の時間、わたしは物語、つまり <span class="w" data-base="fiction" data-ipa="/ˈfɪkʃən/" data-ja="作り話・小説" data-pos="noun">fiction</span> のたなから一冊を選びました。たくさんの本の中からの <span class="w" data-base="selection" data-ipa="/sɪˈlɛkʃən/" data-ja="選ぶこと" data-pos="noun">selection</span> は、いつもわくわくします。</p>
+        <p>放課後の <span class="w" data-base="musical" data-ipa="/ˈmjuːzɪkəl/" data-ja="音楽の" data-pos="adj">musical</span> クラブでは、先生が一人ひとりの歌に、ていねいな <span class="w" data-base="feedback" data-ipa="/ˈfiːdˌbæk/" data-ja="助言・反応" data-pos="noun">feedback</span> をくれます。</p>
+  </div>
+  <h3 class="passage-title">英語本文（統合時に <code>en-body</code> として we タグ付け）</h3>
+  <div class="en-plain"><p>A friend who had been absent for three days with a cold came to school today after a long time, and everyone welcomed her with a smile. In our Japanese and English classes, we study words. We spell new words one letter at a time and learn the correct spelling. The teacher clapped her hands and taught us, &quot;This word breaks into two syllables.&quot; In the poetry lesson, we learned how interesting rhyme is, matching the sounds at the ends of the lines. During library time, I chose a book from the fiction shelf. Making a selection from so many books is always exciting. In the after-school musical club, the teacher gives careful feedback on each person&#x27;s singing.</p></div>
+</section>
+
+<section class="lesson" data-augments="L44">
+  <h2>連絡・行動 ― 追加本文「お祝いの準備」 <small>（L44 に追記想定 / 新出 12 語）</small></h2>
+  <div class="newwords">新出語: <span class="chip">announce</span> <span class="chip">announcement</span> <span class="chip">invite</span> <span class="chip">reservation</span> <span class="chip">advise</span> <span class="chip">pull</span> <span class="chip">row</span> <span class="chip">stick</span> <span class="chip">donate</span> <span class="chip">sold</span> <span class="chip">satisfy</span> <span class="chip">misunderstand</span></div>
+  <div class="grammar-box">
+    <span class="g-title">文法ターゲット：エクストラ語彙：連絡・行動</span>
+    <p class="g-desc">新出文法なし。連絡や行動をあらわす動詞を中心に確認します。</p>
+    <p class="g-ex-label">例文：</p>
+    <ul><li><em>The school announced the trip.</em> <span class="ja">― 学校は遠足を知らせた。</span></li><li><em>I invited my friend.</em> <span class="ja">― 友だちを招待した。</span></li></ul>
+  </div>
+  <h3 class="passage-title">本文「お祝いの準備」（日本語混じり / index貼り付け用 .w マークアップ）</h3>
+  <div class="jp-body">
+        <p>校内放送が、来週の遠足について <span class="w" data-base="announce" data-ipa="/əˈnaʊns/" data-ja="知らせる" data-pos="verb">announce</span> しました。その <span class="w" data-base="announcement" data-ipa="/əˈnaʊnsmənt/" data-ja="お知らせ" data-pos="noun">announcement</span> を聞いて、みんなわくわくしています。</p>
+        <p>わたしは仲のよい友だちを、家のお祝いに <span class="w" data-base="invite" data-ipa="/ɪnˈvaɪt/" data-ja="招待する" data-pos="verb">invite</span> することにしました。先生は『早めに会場の <span class="w" data-base="reservation" data-ipa="/ˌrɛzərˈveɪʃən/" data-ja="予約" data-pos="noun">reservation</span> をしておくといいよ』と <span class="w" data-base="advise" data-ipa="/ədˈvaɪz/" data-ja="助言する" data-pos="verb">advise</span> してくれました。</p>
+        <p>準備の日、重い机を友だちと二人で、片方が <span class="w" data-base="pull" data-ipa="/pʊl/" data-ja="引く" data-pos="verb">pull</span> し、もう片方が押して、ひと <span class="w" data-base="row" data-ipa="/roʊ/" data-ja="列" data-pos="noun">row</span> にきれいに並べます。かべには、飾りをテープで <span class="w" data-base="stick" data-ipa="/stɪk/" data-ja="はりつける" data-pos="verb">stick</span> しました。</p>
+        <p>去年使った品物のうち、まだ使えるものは施設に <span class="w" data-base="donate" data-ipa="/ˈdoʊneɪt/" data-ja="寄付する" data-pos="verb">donate</span> しました。残りはバザーで売られ、午前中にはほとんど <span class="w" data-base="sold" data-ipa="/soʊld/" data-ja="売れた(sellの過去)" data-pos="verb">sold</span> になりました。</p>
+        <p>みんなが笑顔で帰っていく姿を見て、わたしはとても <span class="w" data-base="satisfy" data-ipa="/ˈsætɪsˌfaɪ/" data-ja="満足させる" data-pos="verb">satisfy</span> しました。『きみのおかげだよ』という言葉を、はじめは冗談かと <span class="w" data-base="misunderstand" data-ipa="/ˌmɪsʌndərˈstænd/" data-ja="誤解する" data-pos="verb">misunderstand</span> しましたが、本気だと分かって、胸が温かくなりました。</p>
+  </div>
+  <h3 class="passage-title">英語本文（統合時に <code>en-body</code> として we タグ付け）</h3>
+  <div class="en-plain"><p>The school broadcast announced next week&#x27;s field trip. Hearing that announcement, everyone got excited. I decided to invite my close friends to a celebration at my house. The teacher advised me, &quot;You&#x27;d better make a reservation for the hall early.&quot; On the day of preparation, my friend and I lined up the heavy desks neatly in one row, with one of us pulling and the other pushing. We stuck the decorations on the wall with tape. Among the items we used last year, those still usable we donated to a care home. The rest were sold at the bazaar, and most were sold out by the morning. Seeing everyone go home with a smile, I felt very satisfied. At first I misunderstood the words &quot;It&#x27;s all thanks to you&quot; as a joke, but when I realized they were sincere, my heart grew warm.</p></div>
+</section>
+
+<section class="lesson">
+  <h2>付録：発展語（高校編向き／本文未収録 19 語）</h2>
+  <p class="note">中学レベルの物語には収まりにくい抽象語・低頻度語です。高校編への配置、または別途要否をご判断ください（IPA・語義は用意済み）。</p>
+  <table><thead><tr><th>語</th><th>発音</th><th>語義</th><th>品詞</th></tr></thead>
+  <tbody><tr><td>ahead</td><td class="ipa">/əˈhɛd/</td><td>前方に</td><td>adv</td></tr><tr><td>anyway</td><td class="ipa">/ˈɛniˌweɪ/</td><td>とにかく</td><td>adv</td></tr><tr><td>army</td><td class="ipa">/ˈɑːrmi/</td><td>軍隊</td><td>noun</td></tr><tr><td>arrow</td><td class="ipa">/ˈæroʊ/</td><td>矢</td><td>noun</td></tr><tr><td>custom-made</td><td class="ipa">/ˈkʌstəmˈmeɪd/</td><td>あつらえの</td><td>adj</td></tr><tr><td>everywhere</td><td class="ipa">/ˈɛvriˌwɛər/</td><td>どこでも</td><td>adv</td></tr><tr><td>forth</td><td class="ipa">/fɔːrθ/</td><td>前へ</td><td>adv</td></tr><tr><td>heaven</td><td class="ipa">/ˈhɛvən/</td><td>天国</td><td>noun</td></tr><tr><td>illiterate</td><td class="ipa">/ɪˈlɪtərət/</td><td>読み書きできない</td><td>adj</td></tr><tr><td>interdependent</td><td class="ipa">/ˌɪntərdɪˈpɛndənt/</td><td>相互に依存した</td><td>adj</td></tr><tr><td>jewel</td><td class="ipa">/ˈdʒuːəl/</td><td>宝石</td><td>noun</td></tr><tr><td>kindliness</td><td class="ipa">/ˈkaɪndlinəs/</td><td>親切</td><td>noun</td></tr><tr><td>lullaby</td><td class="ipa">/ˈlʌləˌbaɪ/</td><td>子守歌</td><td>noun</td></tr><tr><td>next-door</td><td class="ipa">/ˈnɛkstˈdɔːr/</td><td>となりの</td><td>adj</td></tr><tr><td>populous</td><td class="ipa">/ˈpɑːpjələs/</td><td>人口の多い</td><td>adj</td></tr><tr><td>sacred</td><td class="ipa">/ˈseɪkrɪd/</td><td>神聖な</td><td>adj</td></tr><tr><td>tightly</td><td class="ipa">/ˈtaɪtli/</td><td>きつく</td><td>adv</td></tr><tr><td>unused</td><td class="ipa">/ʌnˈjuːzd/</td><td>使われていない</td><td>adj</td></tr><tr><td>well-off</td><td class="ipa">/ˈwɛlˈɔːf/</td><td>裕福な</td><td>adj</td></tr></tbody></table>
+</section>
+
+<p class="note">生成: build_vocab_reinforcement_draft.py ／ 対象ギャップ語リスト: vocab_gap_TRUE_missing_everywhere.txt</p>
+</body></html>

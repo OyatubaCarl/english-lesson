@@ -1,0 +1,160 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H016.md",
+  "audio": "高校生編/suno_ready/generated/audio/H016/candidate1-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 104.24,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9832,
+  "expected_words": 119,
+  "transcribed_words": 117,
+  "matched_words": 114,
+  "coverage": 0.958,
+  "precision": 0.9744,
+  "first_matched_expected_index": 1,
+  "last_matched_expected_index": 118,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 29,
+      "length": 2,
+      "words": [
+        "should",
+        "have"
+      ]
+    },
+    {
+      "start": 34,
+      "length": 2,
+      "words": [
+        "ought",
+        "to"
+      ]
+    },
+    {
+      "start": 0,
+      "length": 1,
+      "words": [
+        "that"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 0,
+      "actual_start": 0,
+      "expected": [
+        "that"
+      ],
+      "actual": [
+        "the"
+      ],
+      "actual_confidence": 0.2922,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 29,
+      "actual_start": 29,
+      "expected": [
+        "should",
+        "have"
+      ],
+      "actual": [
+        "should've"
+      ],
+      "actual_confidence": 0.8018,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 34,
+      "actual_start": 33,
+      "expected": [
+        "ought",
+        "to"
+      ],
+      "actual": [
+        "oughta"
+      ],
+      "actual_confidence": 0.8174,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "The day I hesitated in front of a small shop Should I buy the red gloves or not? It was a moment of quick decision Now I think I should've bought them I oughta have made my decision earlier In time for my sister's birthday The next day I returned but the gloves were already gone. The shopkeeper said yesterday another customer had bought them. I did not confess my regret to my sister. She seemed not to mind and simply smiled at me kindly. Perhaps I should have been more honest But she had already forgiven me In that small moment Her maturity became clear A person may regret yet be saved By another person's affection",
+  "segments": [
+    {
+      "start": 12.2,
+      "end": 17.06,
+      "text": "The day I hesitated in front of a small shop"
+    },
+    {
+      "start": 18.54,
+      "end": 23.16,
+      "text": "Should I buy the red gloves or not?"
+    },
+    {
+      "start": 24.58,
+      "end": 29.32,
+      "text": "It was a moment of quick decision"
+    },
+    {
+      "start": 31.04,
+      "end": 42.2,
+      "text": "Now I think I should've bought them I oughta have made my decision earlier"
+    },
+    {
+      "start": 44.48,
+      "end": 52.52,
+      "text": "In time for my sister's birthday The next day I returned but the gloves were"
+    },
+    {
+      "start": 52.52,
+      "end": 63.88,
+      "text": "already gone. The shopkeeper said yesterday another customer had bought them. I did not"
+    },
+    {
+      "start": 63.88,
+      "end": 73.4,
+      "text": "confess my regret to my sister. She seemed not to mind and simply smiled at me kindly."
+    },
+    {
+      "start": 74.82,
+      "end": 80.92,
+      "text": "Perhaps I should have been more honest"
+    },
+    {
+      "start": 80.92,
+      "end": 85.46,
+      "text": "But she had already forgiven me"
+    },
+    {
+      "start": 85.46,
+      "end": 89.58,
+      "text": "In that small moment"
+    },
+    {
+      "start": 89.58,
+      "end": 94.08,
+      "text": "Her maturity became clear"
+    },
+    {
+      "start": 94.08,
+      "end": 98.56,
+      "text": "A person may regret yet be saved"
+    },
+    {
+      "start": 98.56,
+      "end": 104.24,
+      "text": "By another person's affection"
+    }
+  ]
+}

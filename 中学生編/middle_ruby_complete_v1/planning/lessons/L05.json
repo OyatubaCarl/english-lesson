@@ -1,0 +1,542 @@
+{
+  "lesson": 5,
+  "source_config": "中学生編/mio_video_l2_l10_sentence_v2/L5/planning/lesson.json",
+  "title_en": "Lesson 5  Planning to Visit Grandmother",
+  "title_ja": "祖母を訪ねる計画",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 7,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Tomorrow is Saturday.",
+      "source_ja": "明日は土曜日です。",
+      "display_ja": "明日は土曜日です。",
+      "corrected_translation": false,
+      "mixed": "Tomorrow は Saturday です。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "Tomorrow",
+          "ruby": "明日"
+        },
+        {
+          "type": "ja",
+          "text": " は ",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "Saturday",
+          "ruby": "土曜日"
+        },
+        {
+          "type": "ja",
+          "text": " です。",
+          "parts": [
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "Tomorrow",
+          "canonical_word": "Tomorrow",
+          "meaning": "明日"
+        },
+        {
+          "english": "Saturday",
+          "canonical_word": "Saturday",
+          "meaning": "土曜日"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Tomorrow",
+          "reading": "明日",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "Tomorrow",
+          "canonical_meaning": "明日"
+        },
+        {
+          "english": "Saturday",
+          "reading": "土曜日",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "Saturday",
+          "canonical_meaning": "土曜日"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "english": "My sister and I are going to visit our grandmother.",
+      "source_ja": "妹とわたしは祖母を訪ねる予定です。",
+      "display_ja": "妹とわたしは祖母を訪ねる予定です。",
+      "corrected_translation": false,
+      "mixed": "妹とわたしは grandmother を訪ねる予定です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "妹とわたしは ",
+          "parts": [
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "とわたしは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "grandmother",
+          "ruby": "祖母"
+        },
+        {
+          "type": "ja",
+          "text": " を訪ねる予定です。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "訪",
+              "ruby": "たず"
+            },
+            {
+              "text": "ねる",
+              "ruby": ""
+            },
+            {
+              "text": "予定",
+              "ruby": "よてい"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "grandmother",
+          "canonical_word": "grandmother",
+          "meaning": "祖母"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "grandmother",
+          "reading": "祖母",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "grandmother",
+          "canonical_meaning": "祖母"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "We are going to leave home early, take a train, and go to her town.",
+      "source_ja": "早く家を出て、列車で祖母の町へ行く予定です。",
+      "display_ja": "早く家を出て、列車で祖母の町へ行く予定です。",
+      "corrected_translation": false,
+      "mixed": "早く家を出て、train で祖母の town へ行く予定です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "早く家を出て、",
+          "parts": [
+            {
+              "text": "早",
+              "ruby": "はや"
+            },
+            {
+              "text": "く",
+              "ruby": ""
+            },
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "出",
+              "ruby": "で"
+            },
+            {
+              "text": "て、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "train",
+          "ruby": "電車"
+        },
+        {
+          "type": "ja",
+          "text": " で祖母の ",
+          "parts": [
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "祖母",
+              "ruby": "そぼ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "town",
+          "ruby": "町"
+        },
+        {
+          "type": "ja",
+          "text": " へ行く予定です。",
+          "parts": [
+            {
+              "text": "へ",
+              "ruby": ""
+            },
+            {
+              "text": "行",
+              "ruby": "い"
+            },
+            {
+              "text": "く",
+              "ruby": ""
+            },
+            {
+              "text": "予定",
+              "ruby": "よてい"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "train",
+          "canonical_word": "train",
+          "meaning": "電車"
+        },
+        {
+          "english": "town",
+          "canonical_word": "town",
+          "meaning": "町"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "train",
+          "reading": "電車",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "train",
+          "canonical_meaning": "電車"
+        },
+        {
+          "english": "town",
+          "reading": "町",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "town",
+          "canonical_meaning": "町"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "For lunch, we are going to eat hot soup together.",
+      "source_ja": "昼食には、いっしょに温かいスープを食べる予定です。",
+      "display_ja": "昼食には、いっしょに温かいスープを食べる予定です。",
+      "corrected_translation": false,
+      "mixed": "昼食には、いっしょに温かい soup を食べる予定です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "昼食には、いっしょに温かい ",
+          "parts": [
+            {
+              "text": "昼食",
+              "ruby": "ちゅうしょく"
+            },
+            {
+              "text": "には、いっしょに",
+              "ruby": ""
+            },
+            {
+              "text": "温",
+              "ruby": "あたた"
+            },
+            {
+              "text": "かい",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "soup",
+          "ruby": "スープ"
+        },
+        {
+          "type": "ja",
+          "text": " を食べる予定です。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "食",
+              "ruby": "た"
+            },
+            {
+              "text": "べる",
+              "ruby": ""
+            },
+            {
+              "text": "予定",
+              "ruby": "よてい"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "soup",
+          "canonical_word": "soup",
+          "meaning": "スープ"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "soup",
+          "reading": "スープ",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "soup",
+          "canonical_meaning": "スープ"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "In the afternoon, we are going to sit and read books quietly.",
+      "source_ja": "午後は座って、静かに本を読む予定です。",
+      "display_ja": "午後は座って、静かに本を読む予定です。",
+      "corrected_translation": false,
+      "mixed": "午後は座って、静かに本を読む予定です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "午後は座って、静かに本を読む予定です。",
+          "parts": [
+            {
+              "text": "午後",
+              "ruby": "ごご"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "座",
+              "ruby": "すわ"
+            },
+            {
+              "text": "って、",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "読",
+              "ruby": "よ"
+            },
+            {
+              "text": "む",
+              "ruby": ""
+            },
+            {
+              "text": "予定",
+              "ruby": "よてい"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 6,
+      "english": "I am going to tell her many things about my new friend, Tom.",
+      "source_ja": "新しい友達トムのことを、祖母にたくさん話すつもりです。",
+      "display_ja": "新しい友達トムのことを、祖母にたくさん話すつもりです。",
+      "corrected_translation": false,
+      "mixed": "新しい友達トムのことを、祖母にたくさん tell するつもりです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "新しい友達トムのことを、祖母にたくさん ",
+          "parts": [
+            {
+              "text": "新",
+              "ruby": "あたら"
+            },
+            {
+              "text": "しい",
+              "ruby": ""
+            },
+            {
+              "text": "友達",
+              "ruby": "ともだち"
+            },
+            {
+              "text": "トムのことを、",
+              "ruby": ""
+            },
+            {
+              "text": "祖母",
+              "ruby": "そぼ"
+            },
+            {
+              "text": "にたくさん",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "tell",
+          "ruby": "話す"
+        },
+        {
+          "type": "ja",
+          "text": " する",
+          "parts": [
+            {
+              "text": "する",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "つもりです。",
+          "parts": [
+            {
+              "text": "つもりです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "tell",
+          "canonical_word": "tell",
+          "meaning": "話す"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "tell",
+          "reading": "話す",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "tell",
+          "canonical_meaning": "話す"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "I am sure she is going to be very happy.",
+      "source_ja": "きっと祖母はとても喜ぶでしょう。",
+      "display_ja": "きっと祖母はとても喜ぶでしょう。",
+      "corrected_translation": false,
+      "mixed": "きっと祖母はとても喜ぶでしょう。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "きっと祖母はとても喜ぶでしょう。",
+          "parts": [
+            {
+              "text": "きっと",
+              "ruby": ""
+            },
+            {
+              "text": "祖母",
+              "ruby": "そぼ"
+            },
+            {
+              "text": "はとても",
+              "ruby": ""
+            },
+            {
+              "text": "喜",
+              "ruby": "よろこ"
+            },
+            {
+              "text": "ぶでしょう。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    }
+  ]
+}

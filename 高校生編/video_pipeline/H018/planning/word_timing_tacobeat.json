@@ -1,0 +1,938 @@
+{
+  "lesson": "H018",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h018_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H018/candidate2-full.mp3",
+  "source_audio_sha256": "1b5152d42bbb924020af29d2aa42b5d41693ebb8047a560c8b2eea5bd109ee43",
+  "bpm": 108.34,
+  "exact_word_match": true,
+  "word_count": 139,
+  "line_count": 11,
+  "first_word_start": 9.282,
+  "last_word_end": 76.399,
+  "lines": [
+    {
+      "line": 1,
+      "english": "My sister has been training for the marathon every day.",
+      "word_timings": [
+        {
+          "word": "My",
+          "display_index": 0,
+          "start": 9.282,
+          "end": 9.522
+        },
+        {
+          "word": "sister",
+          "display_index": 1,
+          "start": 9.522,
+          "end": 10.103
+        },
+        {
+          "word": "has",
+          "display_index": 2,
+          "start": 10.103,
+          "end": 10.403
+        },
+        {
+          "word": "been",
+          "display_index": 3,
+          "start": 10.403,
+          "end": 10.603
+        },
+        {
+          "word": "training",
+          "display_index": 4,
+          "start": 10.603,
+          "end": 11.183
+        },
+        {
+          "word": "for",
+          "display_index": 5,
+          "start": 11.183,
+          "end": 11.524
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 11.524,
+          "end": 11.643
+        },
+        {
+          "word": "marathon",
+          "display_index": 7,
+          "start": 11.643,
+          "end": 12.443
+        },
+        {
+          "word": "every",
+          "display_index": 8,
+          "start": 12.443,
+          "end": 12.883
+        },
+        {
+          "word": "day.",
+          "display_index": 9,
+          "start": 12.883,
+          "end": 13.683
+        }
+      ],
+      "start": 9.282,
+      "end": 13.683
+    },
+    {
+      "line": 2,
+      "english": "In two more weeks she will run the race.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 13.764,
+          "end": 13.964
+        },
+        {
+          "word": "two",
+          "display_index": 1,
+          "start": 13.964,
+          "end": 14.264
+        },
+        {
+          "word": "more",
+          "display_index": 2,
+          "start": 14.264,
+          "end": 14.564
+        },
+        {
+          "word": "weeks",
+          "display_index": 3,
+          "start": 14.564,
+          "end": 15.064
+        },
+        {
+          "word": "she",
+          "display_index": 4,
+          "start": 15.064,
+          "end": 15.344
+        },
+        {
+          "word": "will",
+          "display_index": 5,
+          "start": 15.344,
+          "end": 15.664
+        },
+        {
+          "word": "run",
+          "display_index": 6,
+          "start": 15.664,
+          "end": 16.098
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 16.098,
+          "end": 16.464
+        },
+        {
+          "word": "race.",
+          "display_index": 8,
+          "start": 16.464,
+          "end": 17.084
+        }
+      ],
+      "start": 13.764,
+      "end": 17.084
+    },
+    {
+      "line": 3,
+      "english": "At first, she was too exhausted to run ten kilometers and would end up walking halfway.",
+      "word_timings": [
+        {
+          "word": "At",
+          "display_index": 0,
+          "start": 17.084,
+          "end": 17.304
+        },
+        {
+          "word": "first,",
+          "display_index": 1,
+          "start": 17.304,
+          "end": 18.105
+        },
+        {
+          "word": "she",
+          "display_index": 2,
+          "start": 18.105,
+          "end": 18.265
+        },
+        {
+          "word": "was",
+          "display_index": 3,
+          "start": 18.265,
+          "end": 18.451
+        },
+        {
+          "word": "too",
+          "display_index": 4,
+          "start": 18.451,
+          "end": 18.685
+        },
+        {
+          "word": "exhausted",
+          "display_index": 5,
+          "start": 18.685,
+          "end": 19.422
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 19.422,
+          "end": 19.545
+        },
+        {
+          "word": "run",
+          "display_index": 7,
+          "start": 19.545,
+          "end": 19.785
+        },
+        {
+          "word": "ten",
+          "display_index": 8,
+          "start": 19.785,
+          "end": 20.045
+        },
+        {
+          "word": "kilometers",
+          "display_index": 9,
+          "start": 20.045,
+          "end": 20.965
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 20.965,
+          "end": 21.065
+        },
+        {
+          "word": "would",
+          "display_index": 11,
+          "start": 21.065,
+          "end": 21.266
+        },
+        {
+          "word": "end",
+          "display_index": 12,
+          "start": 21.266,
+          "end": 21.546
+        },
+        {
+          "word": "up",
+          "display_index": 13,
+          "start": 21.546,
+          "end": 21.766
+        },
+        {
+          "word": "walking",
+          "display_index": 14,
+          "start": 21.766,
+          "end": 22.286
+        },
+        {
+          "word": "halfway.",
+          "display_index": 15,
+          "start": 22.286,
+          "end": 22.966
+        }
+      ],
+      "start": 17.084,
+      "end": 22.966
+    },
+    {
+      "line": 4,
+      "english": "Her body could not yet keep up with her goal.",
+      "word_timings": [
+        {
+          "word": "Her",
+          "display_index": 0,
+          "start": 23.266,
+          "end": 23.406
+        },
+        {
+          "word": "body",
+          "display_index": 1,
+          "start": 23.406,
+          "end": 23.806
+        },
+        {
+          "word": "could",
+          "display_index": 2,
+          "start": 23.806,
+          "end": 24.106
+        },
+        {
+          "word": "not",
+          "display_index": 3,
+          "start": 24.106,
+          "end": 24.366
+        },
+        {
+          "word": "yet",
+          "display_index": 4,
+          "start": 24.366,
+          "end": 24.766
+        },
+        {
+          "word": "keep",
+          "display_index": 5,
+          "start": 24.766,
+          "end": 25.167
+        },
+        {
+          "word": "up",
+          "display_index": 6,
+          "start": 25.167,
+          "end": 25.627
+        },
+        {
+          "word": "with",
+          "display_index": 7,
+          "start": 25.627,
+          "end": 25.887
+        },
+        {
+          "word": "her",
+          "display_index": 8,
+          "start": 25.887,
+          "end": 26.167
+        },
+        {
+          "word": "goal.",
+          "display_index": 9,
+          "start": 26.167,
+          "end": 26.967
+        }
+      ],
+      "start": 23.266,
+      "end": 26.967
+    },
+    {
+      "line": 5,
+      "english": "But she kept making a steady effort and gradually learned how to control her breathing.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 27.007,
+          "end": 27.247
+        },
+        {
+          "word": "she",
+          "display_index": 1,
+          "start": 27.247,
+          "end": 27.507
+        },
+        {
+          "word": "kept",
+          "display_index": 2,
+          "start": 27.507,
+          "end": 27.847
+        },
+        {
+          "word": "making",
+          "display_index": 3,
+          "start": 27.847,
+          "end": 28.272
+        },
+        {
+          "word": "a",
+          "display_index": 4,
+          "start": 28.272,
+          "end": 28.352
+        },
+        {
+          "word": "steady",
+          "display_index": 5,
+          "start": 28.327,
+          "end": 28.908
+        },
+        {
+          "word": "effort",
+          "display_index": 6,
+          "start": 28.908,
+          "end": 29.308
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 29.308,
+          "end": 29.488
+        },
+        {
+          "word": "gradually",
+          "display_index": 8,
+          "start": 29.488,
+          "end": 30.068
+        },
+        {
+          "word": "learned",
+          "display_index": 9,
+          "start": 30.068,
+          "end": 30.328
+        },
+        {
+          "word": "how",
+          "display_index": 10,
+          "start": 30.328,
+          "end": 30.625
+        },
+        {
+          "word": "to",
+          "display_index": 11,
+          "start": 30.625,
+          "end": 30.848
+        },
+        {
+          "word": "control",
+          "display_index": 12,
+          "start": 30.848,
+          "end": 32.008
+        },
+        {
+          "word": "her",
+          "display_index": 13,
+          "start": 32.008,
+          "end": 32.789
+        },
+        {
+          "word": "breathing.",
+          "display_index": 14,
+          "start": 32.789,
+          "end": 34.289
+        }
+      ],
+      "start": 27.007,
+      "end": 34.289
+    },
+    {
+      "line": 6,
+      "english": "Lately she has enough strength to finish the full ten kilometers.",
+      "word_timings": [
+        {
+          "word": "Lately",
+          "display_index": 0,
+          "start": 34.749,
+          "end": 35.269
+        },
+        {
+          "word": "she",
+          "display_index": 1,
+          "start": 35.269,
+          "end": 35.529
+        },
+        {
+          "word": "has",
+          "display_index": 2,
+          "start": 35.529,
+          "end": 35.929
+        },
+        {
+          "word": "enough",
+          "display_index": 3,
+          "start": 35.929,
+          "end": 36.269
+        },
+        {
+          "word": "strength",
+          "display_index": 4,
+          "start": 36.269,
+          "end": 36.849
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 36.849,
+          "end": 37.19
+        },
+        {
+          "word": "finish",
+          "display_index": 6,
+          "start": 37.19,
+          "end": 37.542
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 37.542,
+          "end": 37.75
+        },
+        {
+          "word": "full",
+          "display_index": 8,
+          "start": 37.75,
+          "end": 37.97
+        },
+        {
+          "word": "ten",
+          "display_index": 9,
+          "start": 37.97,
+          "end": 38.31
+        },
+        {
+          "word": "kilometers.",
+          "display_index": 10,
+          "start": 38.31,
+          "end": 39.015
+        }
+      ],
+      "start": 34.749,
+      "end": 39.015
+    },
+    {
+      "line": 7,
+      "english": "I go out to the riverbank to watch her.",
+      "word_timings": [
+        {
+          "word": "I",
+          "display_index": 0,
+          "start": 39.315,
+          "end": 39.45
+        },
+        {
+          "word": "go",
+          "display_index": 1,
+          "start": 39.45,
+          "end": 39.83
+        },
+        {
+          "word": "out",
+          "display_index": 2,
+          "start": 39.83,
+          "end": 40.199
+        },
+        {
+          "word": "to",
+          "display_index": 3,
+          "start": 40.199,
+          "end": 40.403
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 40.403,
+          "end": 40.551
+        },
+        {
+          "word": "riverbank",
+          "display_index": 5,
+          "start": 40.551,
+          "end": 41.375
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 41.375,
+          "end": 41.611
+        },
+        {
+          "word": "watch",
+          "display_index": 7,
+          "start": 41.611,
+          "end": 42.051
+        },
+        {
+          "word": "her.",
+          "display_index": 8,
+          "start": 42.051,
+          "end": 42.771
+        }
+      ],
+      "start": 39.315,
+      "end": 42.771
+    },
+    {
+      "line": 8,
+      "english": "In order to reach her goal, she runs every day.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 43.071,
+          "end": 43.391
+        },
+        {
+          "word": "order",
+          "display_index": 1,
+          "start": 43.391,
+          "end": 43.863
+        },
+        {
+          "word": "to",
+          "display_index": 2,
+          "start": 43.863,
+          "end": 44.131
+        },
+        {
+          "word": "reach",
+          "display_index": 3,
+          "start": 44.131,
+          "end": 44.692
+        },
+        {
+          "word": "her",
+          "display_index": 4,
+          "start": 44.692,
+          "end": 45.212
+        },
+        {
+          "word": "goal,",
+          "display_index": 5,
+          "start": 45.212,
+          "end": 45.992
+        },
+        {
+          "word": "she",
+          "display_index": 6,
+          "start": 45.992,
+          "end": 46.312
+        },
+        {
+          "word": "runs",
+          "display_index": 7,
+          "start": 46.312,
+          "end": 47.552
+        },
+        {
+          "word": "every",
+          "display_index": 8,
+          "start": 47.552,
+          "end": 48.213
+        },
+        {
+          "word": "day.",
+          "display_index": 9,
+          "start": 48.213,
+          "end": 49.013
+        }
+      ],
+      "start": 43.071,
+      "end": 49.013
+    },
+    {
+      "line": 9,
+      "english": "To have such a clear purpose is something bright and admirable.",
+      "word_timings": [
+        {
+          "word": "To",
+          "display_index": 0,
+          "start": 49.053,
+          "end": 49.313
+        },
+        {
+          "word": "have",
+          "display_index": 1,
+          "start": 49.313,
+          "end": 49.853
+        },
+        {
+          "word": "such",
+          "display_index": 2,
+          "start": 49.853,
+          "end": 50.179
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 50.179,
+          "end": 50.313
+        },
+        {
+          "word": "clear",
+          "display_index": 4,
+          "start": 50.313,
+          "end": 50.813
+        },
+        {
+          "word": "purpose",
+          "display_index": 5,
+          "start": 50.813,
+          "end": 51.818
+        },
+        {
+          "word": "is",
+          "display_index": 6,
+          "start": 51.818,
+          "end": 52.054
+        },
+        {
+          "word": "something",
+          "display_index": 7,
+          "start": 52.054,
+          "end": 52.614
+        },
+        {
+          "word": "bright",
+          "display_index": 8,
+          "start": 52.614,
+          "end": 52.974
+        },
+        {
+          "word": "and",
+          "display_index": 9,
+          "start": 52.974,
+          "end": 53.314
+        },
+        {
+          "word": "admirable.",
+          "display_index": 10,
+          "start": 53.314,
+          "end": 54.814
+        }
+      ],
+      "start": 49.053,
+      "end": 54.814
+    },
+    {
+      "line": 10,
+      "english": "I am sure that on the race day, she will cross the finish line with a smile.",
+      "word_timings": [
+        {
+          "word": "I",
+          "display_index": 0,
+          "start": 56.746,
+          "end": 56.826
+        },
+        {
+          "word": "am",
+          "display_index": 1,
+          "start": 56.815,
+          "end": 57.235
+        },
+        {
+          "word": "sure",
+          "display_index": 2,
+          "start": 57.235,
+          "end": 57.835
+        },
+        {
+          "word": "that",
+          "display_index": 3,
+          "start": 57.835,
+          "end": 58.195
+        },
+        {
+          "word": "on",
+          "display_index": 4,
+          "start": 58.195,
+          "end": 58.388
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 58.388,
+          "end": 58.635
+        },
+        {
+          "word": "race",
+          "display_index": 6,
+          "start": 58.635,
+          "end": 59.195
+        },
+        {
+          "word": "day,",
+          "display_index": 7,
+          "start": 59.195,
+          "end": 59.715
+        },
+        {
+          "word": "she",
+          "display_index": 8,
+          "start": 59.715,
+          "end": 59.996
+        },
+        {
+          "word": "will",
+          "display_index": 9,
+          "start": 59.996,
+          "end": 60.236
+        },
+        {
+          "word": "cross",
+          "display_index": 10,
+          "start": 60.236,
+          "end": 60.577
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 60.577,
+          "end": 60.796
+        },
+        {
+          "word": "finish",
+          "display_index": 12,
+          "start": 60.796,
+          "end": 61.256
+        },
+        {
+          "word": "line",
+          "display_index": 13,
+          "start": 61.256,
+          "end": 61.676
+        },
+        {
+          "word": "with",
+          "display_index": 14,
+          "start": 61.676,
+          "end": 63.311
+        },
+        {
+          "word": "a",
+          "display_index": 15,
+          "start": 63.311,
+          "end": 63.637
+        },
+        {
+          "word": "smile.",
+          "display_index": 16,
+          "start": 63.637,
+          "end": 65.137
+        }
+      ],
+      "start": 56.746,
+      "end": 65.137
+    },
+    {
+      "line": 11,
+      "english": "On that day she will be not only a runner but also someone who has turned steady effort into real confidence.",
+      "word_timings": [
+        {
+          "word": "On",
+          "display_index": 0,
+          "start": 65.537,
+          "end": 65.757
+        },
+        {
+          "word": "that",
+          "display_index": 1,
+          "start": 65.757,
+          "end": 66.277
+        },
+        {
+          "word": "day",
+          "display_index": 2,
+          "start": 66.277,
+          "end": 67.077
+        },
+        {
+          "word": "she",
+          "display_index": 3,
+          "start": 67.077,
+          "end": 67.658
+        },
+        {
+          "word": "will",
+          "display_index": 4,
+          "start": 67.658,
+          "end": 67.918
+        },
+        {
+          "word": "be",
+          "display_index": 5,
+          "start": 67.918,
+          "end": 68.198
+        },
+        {
+          "word": "not",
+          "display_index": 6,
+          "start": 68.198,
+          "end": 68.538
+        },
+        {
+          "word": "only",
+          "display_index": 7,
+          "start": 68.538,
+          "end": 69.035
+        },
+        {
+          "word": "a",
+          "display_index": 8,
+          "start": 69.035,
+          "end": 69.278
+        },
+        {
+          "word": "runner",
+          "display_index": 9,
+          "start": 69.278,
+          "end": 69.818
+        },
+        {
+          "word": "but",
+          "display_index": 10,
+          "start": 69.818,
+          "end": 70.178
+        },
+        {
+          "word": "also",
+          "display_index": 11,
+          "start": 70.178,
+          "end": 70.618
+        },
+        {
+          "word": "someone",
+          "display_index": 12,
+          "start": 70.618,
+          "end": 71.459
+        },
+        {
+          "word": "who",
+          "display_index": 13,
+          "start": 71.459,
+          "end": 71.979
+        },
+        {
+          "word": "has",
+          "display_index": 14,
+          "start": 71.979,
+          "end": 72.239
+        },
+        {
+          "word": "turned",
+          "display_index": 15,
+          "start": 72.239,
+          "end": 72.719
+        },
+        {
+          "word": "steady",
+          "display_index": 16,
+          "start": 72.719,
+          "end": 73.279
+        },
+        {
+          "word": "effort",
+          "display_index": 17,
+          "start": 73.279,
+          "end": 73.979
+        },
+        {
+          "word": "into",
+          "display_index": 18,
+          "start": 73.979,
+          "end": 74.439
+        },
+        {
+          "word": "real",
+          "display_index": 19,
+          "start": 74.439,
+          "end": 74.899
+        },
+        {
+          "word": "confidence.",
+          "display_index": 20,
+          "start": 74.899,
+          "end": 76.399
+        }
+      ],
+      "start": 65.537,
+      "end": 76.399
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

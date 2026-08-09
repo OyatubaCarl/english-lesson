@@ -1,0 +1,308 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H142.md",
+  "audio": "高校生編/suno_ready/generated/audio/H142/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 166.22,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0075,
+  "expected_words": 267,
+  "transcribed_words": 269,
+  "matched_words": 264,
+  "coverage": 0.9888,
+  "precision": 0.9814,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 266,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 55,
+      "length": 1,
+      "words": [
+        "mariko"
+      ]
+    },
+    {
+      "start": 114,
+      "length": 1,
+      "words": [
+        "mariko"
+      ]
+    },
+    {
+      "start": 195,
+      "length": 1,
+      "words": [
+        "is"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 55,
+      "actual_start": 55,
+      "expected": [
+        "mariko"
+      ],
+      "actual": [
+        "mary",
+        "cole"
+      ],
+      "actual_confidence": 0.5226,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 114,
+      "actual_start": 115,
+      "expected": [
+        "mariko"
+      ],
+      "actual": [
+        "mary",
+        "co"
+      ],
+      "actual_confidence": 0.4742,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 195,
+      "actual_start": 197,
+      "expected": [
+        "is"
+      ],
+      "actual": [
+        "that"
+      ],
+      "actual_confidence": 0.9189,
+      "substitution_words": 1,
+      "has_content_word": false
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": false,
+  "transcript": "Mariko My university classmate Became the first woman to serve as factory manager At a major manufacturer It was when she was forty She had graduated from the engineering department And at first worked as a technician The workers on the floor were all men And at first she was not accepted As a peer Mary Cole learned everything From the safety procedures On the shop floor To the operating methods Of each machine She wore the same clothing As the workers And walked the factory From morning till night After ten years She climbed the steps of promotion Becoming section chief, department head And then factory manager This was unusual in the industry Despite Mary Co's appointment as factory manager There were voices of both support and objection Can a woman with a home and children to raise Carry such a responsible post? Some asked, but the results were clear Under her management, the factory's productivity rose and accidents decreased From a woman's viewpoint, she also promoted a workplace where people could work more easily The glass ceiling, the invisible wall that blocks women's promotion Still exists today But as pioneers like Mariko increase The wall that's being broken little by little Gender equality is not only a women's issue It is also an economic necessity For maximizing the output of society as a whole A society cannot develop without making use of the talent of half its population Mariko has both the strength not to yield When confronted with obstacles and kindness toward others She has become a role model For the next generation of women leaders",
+  "segments": [
+    {
+      "start": 5.42,
+      "end": 6.38,
+      "text": "Mariko"
+    },
+    {
+      "start": 6.38,
+      "end": 8.88,
+      "text": "My university classmate"
+    },
+    {
+      "start": 8.88,
+      "end": 13.64,
+      "text": "Became the first woman to serve as factory manager"
+    },
+    {
+      "start": 13.64,
+      "end": 16.02,
+      "text": "At a major manufacturer"
+    },
+    {
+      "start": 16.02,
+      "end": 19.06,
+      "text": "It was when she was forty"
+    },
+    {
+      "start": 19.06,
+      "end": 23.0,
+      "text": "She had graduated from the engineering department"
+    },
+    {
+      "start": 23.52,
+      "end": 26.82,
+      "text": "And at first worked as a technician"
+    },
+    {
+      "start": 26.82,
+      "end": 30.0,
+      "text": "The workers on the floor were all men"
+    },
+    {
+      "start": 30.0,
+      "end": 33.06,
+      "text": "And at first she was not accepted"
+    },
+    {
+      "start": 34.26,
+      "end": 35.52,
+      "text": "As a peer"
+    },
+    {
+      "start": 36.68,
+      "end": 38.72,
+      "text": "Mary Cole learned everything"
+    },
+    {
+      "start": 38.72,
+      "end": 40.72,
+      "text": "From the safety procedures"
+    },
+    {
+      "start": 40.72,
+      "end": 42.4,
+      "text": "On the shop floor"
+    },
+    {
+      "start": 42.4,
+      "end": 44.48,
+      "text": "To the operating methods"
+    },
+    {
+      "start": 44.48,
+      "end": 46.3,
+      "text": "Of each machine"
+    },
+    {
+      "start": 47.36,
+      "end": 49.46,
+      "text": "She wore the same clothing"
+    },
+    {
+      "start": 49.46,
+      "end": 50.72,
+      "text": "As the workers"
+    },
+    {
+      "start": 50.72,
+      "end": 52.08,
+      "text": "And walked the factory"
+    },
+    {
+      "start": 52.08,
+      "end": 53.52,
+      "text": "From morning till night"
+    },
+    {
+      "start": 53.52,
+      "end": 55.0,
+      "text": "After ten years"
+    },
+    {
+      "start": 55.0,
+      "end": 57.48,
+      "text": "She climbed the steps of promotion"
+    },
+    {
+      "start": 57.48,
+      "end": 61.36,
+      "text": "Becoming section chief, department head"
+    },
+    {
+      "start": 61.36,
+      "end": 64.32,
+      "text": "And then factory manager"
+    },
+    {
+      "start": 64.32,
+      "end": 68.6,
+      "text": "This was unusual in the industry"
+    },
+    {
+      "start": 68.6,
+      "end": 73.18,
+      "text": "Despite Mary Co's appointment as factory manager"
+    },
+    {
+      "start": 73.18,
+      "end": 76.42,
+      "text": "There were voices of both support and objection"
+    },
+    {
+      "start": 77.82,
+      "end": 81.96,
+      "text": "Can a woman with a home and children to raise"
+    },
+    {
+      "start": 81.96,
+      "end": 84.76,
+      "text": "Carry such a responsible post?"
+    },
+    {
+      "start": 85.0,
+      "end": 88.32,
+      "text": "Some asked, but the results were clear"
+    },
+    {
+      "start": 89.82,
+      "end": 96.4,
+      "text": "Under her management, the factory's productivity rose and accidents decreased"
+    },
+    {
+      "start": 96.4,
+      "end": 105.32,
+      "text": "From a woman's viewpoint, she also promoted a workplace where people could work more easily"
+    },
+    {
+      "start": 105.32,
+      "end": 111.88,
+      "text": "The glass ceiling, the invisible wall that blocks women's promotion"
+    },
+    {
+      "start": 113.3,
+      "end": 115.66,
+      "text": "Still exists today"
+    },
+    {
+      "start": 115.66,
+      "end": 120.46,
+      "text": "But as pioneers like Mariko increase"
+    },
+    {
+      "start": 120.46,
+      "end": 123.5,
+      "text": "The wall that's being broken little by little"
+    },
+    {
+      "start": 123.5,
+      "end": 128.92,
+      "text": "Gender equality is not only a women's issue"
+    },
+    {
+      "start": 128.92,
+      "end": 132.42,
+      "text": "It is also an economic necessity"
+    },
+    {
+      "start": 132.42,
+      "end": 137.62,
+      "text": "For maximizing the output of society as a whole"
+    },
+    {
+      "start": 137.62,
+      "end": 146.1,
+      "text": "A society cannot develop without making use of the talent of half its population"
+    },
+    {
+      "start": 147.76,
+      "end": 151.68,
+      "text": "Mariko has both the strength not to yield"
+    },
+    {
+      "start": 151.68,
+      "end": 156.92,
+      "text": "When confronted with obstacles and kindness toward others"
+    },
+    {
+      "start": 156.92,
+      "end": 161.0,
+      "text": "She has become a role model"
+    },
+    {
+      "start": 161.0,
+      "end": 166.22,
+      "text": "For the next generation of women leaders"
+    }
+  ]
+}

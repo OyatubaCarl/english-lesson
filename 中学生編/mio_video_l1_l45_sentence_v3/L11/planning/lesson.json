@@ -1,0 +1,180 @@
+{
+  "project_root": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成",
+  "audio": "taco_beat/songs/m11.mp3",
+  "chart": "taco_beat/charts/m11.js",
+  "title_en": "Lesson 11  At the Library",
+  "title_ja": "図書館で",
+  "slug": "l11_at_the_library_sentence_v3",
+  "duration": 35.80517,
+  "transition_duration": 0.32,
+  "sentence_image_count": 9,
+  "line_to_scene": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+  "lines": [
+    {
+      "start_index": 1,
+      "end_index": 17,
+      "en_words": ["The", "day", "after", "our", "trip,", "I", "went", "to", "the", "town", "library", "to", "borrow", "a", "book", "about", "mountains."],
+      "break_after": [10],
+      "ja": "遠足の次の日、山についての本を借りるために町の図書館へ行きました。"
+    },
+    {
+      "start_index": 18,
+      "end_index": 23,
+      "en_words": ["It", "was", "a", "very", "quiet", "place."],
+      "ja": "とても静かな場所でした。"
+    },
+    {
+      "start_index": 24,
+      "end_index": 31,
+      "en_words": ["At", "the", "desk,", "there", "was", "a", "kind", "man."],
+      "ja": "カウンターにはやさしそうな男の人がいました。"
+    },
+    {
+      "start_index": 32,
+      "end_index": 42,
+      "en_words": ["“May", "I", "borrow", "this", "book?”", "I", "asked", "in", "a", "small", "voice."],
+      "break_after": [4],
+      "ja": "「この本、借りてもいいですか？」と小さな声で聞きました。"
+    },
+    {
+      "start_index": 43,
+      "end_index": 50,
+      "en_words": ["“Yes,", "you", "may,”", "he", "said", "with", "a", "smile."],
+      "ja": "「いいですよ」とにっこり笑ってくれました。"
+    },
+    {
+      "start_index": 51,
+      "end_index": 63,
+      "en_words": ["In", "the", "library,", "you", "may", "not", "speak", "loud,", "because", "everyone", "is", "reading", "quietly."],
+      "break_after": [7],
+      "ja": "図書館では大きな声を出してはいけません。みんな静かに本を読んでいるからです。"
+    },
+    {
+      "start_index": 64,
+      "end_index": 73,
+      "en_words": ["When", "I", "went", "outside,", "the", "sky", "was", "a", "little", "cloudy."],
+      "ja": "外に出ると、空がちょっと曇っていました。"
+    },
+    {
+      "start_index": 74,
+      "end_index": 80,
+      "en_words": ["“It", "may", "rain", "this", "evening,”", "I", "thought."],
+      "ja": "「夕方には雨が降るかもしれないな」と思いました。"
+    },
+    {
+      "start_index": 81,
+      "end_index": 93,
+      "en_words": ["I", "will", "read", "this", "book", "at", "home,", "and", "I", "will", "return", "it", "soon."],
+      "break_after": [6],
+      "ja": "この本は家で読んで、近いうちに返すつもりです。"
+    }
+  ],
+  "shots": [
+    {
+      "image": "scenes/01_town_library_arrival.png",
+      "start": 0.0,
+      "end": 6.601,
+      "start_center": [0.38, 0.51],
+      "end_center": [0.58, 0.49],
+      "start_zoom": 1.1,
+      "end_zoom": 1.04,
+      "intent": "町の道を歩くミオから図書館の建物へ進行方向に追従する"
+    },
+    {
+      "image": "scenes/02_very_quiet_library.png",
+      "start": 6.601,
+      "end": 9.541,
+      "start_center": [0.5, 0.54],
+      "end_center": [0.5, 0.46],
+      "start_zoom": 1.13,
+      "end_zoom": 1.03,
+      "transition": "smoothleft",
+      "transition_duration": 0.28,
+      "intent": "静かな館内のミオから大窓と本棚へゆっくり引く"
+    },
+    {
+      "image": "scenes/03_kind_librarian.png",
+      "start": 9.541,
+      "end": 11.302,
+      "start_center": [0.56, 0.5],
+      "end_center": [0.52, 0.48],
+      "start_zoom": 1.04,
+      "end_zoom": 1.11,
+      "transition": "dissolve",
+      "transition_duration": 0.2,
+      "intent": "受付の男性の穏やかな表情へ短く寄る"
+    },
+    {
+      "image": "scenes/04_may_i_borrow.png",
+      "start": 11.302,
+      "end": 14.702,
+      "start_center": [0.43, 0.51],
+      "end_center": [0.54, 0.48],
+      "start_zoom": 1.08,
+      "end_zoom": 1.11,
+      "transition": "dissolve",
+      "transition_duration": 0.22,
+      "intent": "本を差し出すミオから聞き取る司書へ視線をつなぐ"
+    },
+    {
+      "image": "scenes/05_yes_you_may.png",
+      "start": 14.702,
+      "end": 16.822,
+      "start_center": [0.54, 0.48],
+      "end_center": [0.47, 0.5],
+      "start_zoom": 1.12,
+      "end_zoom": 1.05,
+      "transition": "dissolve",
+      "transition_duration": 0.22,
+      "intent": "司書の笑顔から本を受け取るミオへ小さく引く"
+    },
+    {
+      "image": "scenes/06_reading_quietly.png",
+      "start": 16.822,
+      "end": 24.063,
+      "start_center": [0.38, 0.49],
+      "end_center": [0.62, 0.49],
+      "start_zoom": 1.08,
+      "end_zoom": 1.07,
+      "transition": "smoothleft",
+      "transition_duration": 0.3,
+      "intent": "静かに読む利用者を左から右へ見渡し図書館の規則を表す"
+    },
+    {
+      "image": "scenes/07_cloudy_outside.png",
+      "start": 24.063,
+      "end": 27.384,
+      "start_center": [0.5, 0.57],
+      "end_center": [0.5, 0.4],
+      "start_zoom": 1.08,
+      "end_zoom": 1.03,
+      "transition": "smoothup",
+      "transition_duration": 0.28,
+      "intent": "図書館を出るミオから曇り空へ視線を上げる"
+    },
+    {
+      "image": "scenes/08_may_rain_thought.png",
+      "start": 27.384,
+      "end": 29.17,
+      "start_center": [0.5, 0.47],
+      "end_center": [0.52, 0.44],
+      "start_zoom": 1.04,
+      "end_zoom": 1.12,
+      "transition": "circleopen",
+      "transition_duration": 0.2,
+      "intent": "雨を予想するミオの表情と暗くなる雲へ寄る"
+    },
+    {
+      "image": "scenes/09_read_and_return.png",
+      "start": 29.17,
+      "end": 35.80517,
+      "start_center": [0.46, 0.5],
+      "end_center": [0.56, 0.48],
+      "start_zoom": 1.12,
+      "end_zoom": 1.03,
+      "transition": "dissolve",
+      "transition_duration": 0.28,
+      "intent": "家で読むミオから返却用の鞄と窓外の図書館方向へ余韻を広げる"
+    }
+  ]
+}

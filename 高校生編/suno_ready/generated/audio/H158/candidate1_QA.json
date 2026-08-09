@@ -1,0 +1,262 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H158.md",
+  "audio": "高校生編/suno_ready/generated/audio/H158/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 166.36,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0084,
+  "expected_words": 239,
+  "transcribed_words": 241,
+  "matched_words": 235,
+  "coverage": 0.9833,
+  "precision": 0.9751,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 238,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 15,
+      "length": 1,
+      "words": [
+        "thirty"
+      ]
+    },
+    {
+      "start": 143,
+      "length": 1,
+      "words": [
+        "anew"
+      ]
+    },
+    {
+      "start": 188,
+      "length": 1,
+      "words": [
+        "and"
+      ]
+    },
+    {
+      "start": 209,
+      "length": 1,
+      "words": [
+        "you"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 143,
+      "actual_start": 143,
+      "expected": [
+        "anew"
+      ],
+      "actual": [
+        "a",
+        "new"
+      ],
+      "actual_confidence": 0.9805,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 188,
+      "actual_start": 189,
+      "expected": [
+        "and"
+      ],
+      "actual": [
+        "in"
+      ],
+      "actual_confidence": 0.8376,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 209,
+      "actual_start": 210,
+      "expected": [
+        "you"
+      ],
+      "actual": [
+        "you've"
+      ],
+      "actual_confidence": 0.7249,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 82,
+      "actual_start": 81,
+      "expected": [],
+      "actual": [
+        "a"
+      ],
+      "actual_confidence": 0.2647
+    },
+    {
+      "expected_start": 239,
+      "actual_start": 240,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.1943
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 15,
+      "actual_start": 15,
+      "expected": [
+        "thirty"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 3,
+  "suspicious_substitution_words": 3,
+  "suspicious_content_substitution": true,
+  "transcript": "living abroad one sees both the good and the bad of one's own country at 30 I was posted to the United States for three years for work the first months brought surprise from cultural differences ordering for yourself at restaurants The gesture of a shrug Different kept appearing Americans are direct They do not try to hide their opinions or emotions If they disagree, they argue clearly, openly On the other hand, there is casualness With someone in the same elevator A small talk that is not rude begins immediately. But I also saw the dark side, gun crime, racial discrimination, the high cost of medical care. Millions of people have no health insurance and if they get sick, they must fall deeply into debt. A homeless person carrying their gear lies at the foot of a skyscraper returning to Japan I realized a new safety cleanliness, the precision of time In Japan you can see a person walking alone at a station late at night You would not see this in America But Japan has its weaknesses too Conformity, pressure, overwork High suicide rates The individual is weak in people Often pay too much attention To the eyes of others The experience of another culture Is a mirror While you've come to know the other country You see your own country more clearly Experience abroad is made up of individual encounters Together they have shaped me as a person you",
+  "segments": [
+    {
+      "start": 8.48,
+      "end": 15.32,
+      "text": "living abroad one sees both the good and the bad of one's own country at 30 I was"
+    },
+    {
+      "start": 15.32,
+      "end": 20.44,
+      "text": "posted to the United States for three years for work the first months brought"
+    },
+    {
+      "start": 20.44,
+      "end": 26.08,
+      "text": "surprise from cultural differences ordering for yourself at restaurants"
+    },
+    {
+      "start": 26.08,
+      "end": 28.94,
+      "text": "The gesture of a shrug"
+    },
+    {
+      "start": 30.8,
+      "end": 32.98,
+      "text": "Different kept appearing"
+    },
+    {
+      "start": 32.98,
+      "end": 35.36,
+      "text": "Americans are direct"
+    },
+    {
+      "start": 35.36,
+      "end": 39.86,
+      "text": "They do not try to hide their opinions or emotions"
+    },
+    {
+      "start": 39.86,
+      "end": 44.1,
+      "text": "If they disagree, they argue clearly, openly"
+    },
+    {
+      "start": 44.1,
+      "end": 48.64,
+      "text": "On the other hand, there is casualness"
+    },
+    {
+      "start": 48.64,
+      "end": 52.54,
+      "text": "With someone in the same elevator"
+    },
+    {
+      "start": 52.54,
+      "end": 57.82,
+      "text": "A small talk that is not rude begins immediately."
+    },
+    {
+      "start": 60.04,
+      "end": 66.54,
+      "text": "But I also saw the dark side, gun crime, racial discrimination,"
+    },
+    {
+      "start": 67.32,
+      "end": 70.22,
+      "text": "the high cost of medical care."
+    },
+    {
+      "start": 71.26,
+      "end": 76.44,
+      "text": "Millions of people have no health insurance and if they get sick,"
+    },
+    {
+      "start": 77.32,
+      "end": 80.9,
+      "text": "they must fall deeply into debt."
+    },
+    {
+      "start": 80.9,
+      "end": 89.3,
+      "text": "A homeless person carrying their gear lies at the foot of a skyscraper returning to Japan"
+    },
+    {
+      "start": 89.9,
+      "end": 95.56,
+      "text": "I realized a new safety cleanliness, the precision of time"
+    },
+    {
+      "start": 95.56,
+      "end": 102.58,
+      "text": "In Japan you can see a person walking alone at a station late at night"
+    },
+    {
+      "start": 102.58,
+      "end": 106.76,
+      "text": "You would not see this in America"
+    },
+    {
+      "start": 107.9,
+      "end": 115.42,
+      "text": "But Japan has its weaknesses too Conformity, pressure, overwork"
+    },
+    {
+      "start": 115.42,
+      "end": 121.04,
+      "text": "High suicide rates The individual is weak in people"
+    },
+    {
+      "start": 121.56,
+      "end": 126.18,
+      "text": "Often pay too much attention To the eyes of others"
+    },
+    {
+      "start": 127.88,
+      "end": 133.24,
+      "text": "The experience of another culture Is a mirror"
+    },
+    {
+      "start": 133.24,
+      "end": 143.2,
+      "text": "While you've come to know the other country You see your own country more clearly"
+    },
+    {
+      "start": 144.36,
+      "end": 150.34,
+      "text": "Experience abroad is made up of individual encounters"
+    },
+    {
+      "start": 151.84,
+      "end": 156.44,
+      "text": "Together they have shaped me as a person"
+    },
+    {
+      "start": 164.94,
+      "end": 165.3,
+      "text": "you"
+    }
+  ]
+}

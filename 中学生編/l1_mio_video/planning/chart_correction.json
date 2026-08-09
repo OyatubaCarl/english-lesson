@@ -1,0 +1,25 @@
+{
+  "source_chart": "../taco_timing/charts/l1_mio.js",
+  "video_chart": "../taco_timing/charts/l1_mio_video_words.js",
+  "source_audio_duration_seconds": 43.880167,
+  "bpm": 88.14,
+  "whisper_tokens": 100,
+  "forced_alignment_words_before_correction": 99,
+  "correction": {
+    "word": "twelve",
+    "reason": "Whisper stored the sung word as the numeric token \"12\". The forced aligner removes numeric-only tokens.",
+    "whisper_start": 3.38,
+    "whisper_end": 3.8,
+    "video_highlight_start": 3.52
+  },
+  "normalizations": [
+    {
+      "recognized": "poochie",
+      "display": "Pochi"
+    }
+  ],
+  "fillers_removed_for_video": 2,
+  "final_video_words": 100,
+  "original_generated_chart_preserved": true
+}
+

@@ -1,0 +1,189 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H097.md",
+  "audio": "高校生編/suno_ready/generated/audio/H097/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 113.84,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9868,
+  "expected_words": 152,
+  "transcribed_words": 150,
+  "matched_words": 148,
+  "coverage": 0.9737,
+  "precision": 0.9867,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 151,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 26,
+      "length": 2,
+      "words": [
+        "six",
+        "percent"
+      ]
+    },
+    {
+      "start": 22,
+      "length": 1,
+      "words": [
+        "rainforests"
+      ]
+    },
+    {
+      "start": 108,
+      "length": 1,
+      "words": [
+        "and"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 22,
+      "actual_start": 22,
+      "expected": [
+        "rainforests"
+      ],
+      "actual": [
+        "rainforest"
+      ],
+      "actual_confidence": 0.8657,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 152,
+      "actual_start": 149,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.3586
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 26,
+      "actual_start": 26,
+      "expected": [
+        "six",
+        "percent"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 108,
+      "actual_start": 106,
+      "expected": [
+        "and"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "On Earth, there are more than 6,000 known species of mammals alone The number of insect species is estimated in the millions Tropical rainforest cover, only about 6% of the Earth's surface Yet more than half of all species dwell there These hotspots of biodiversity are shrinking rapidly The causes are numerous Logging conversion to farmland, urban development Human activity is steadily taking the habitat of animals away The oceans are also vulnerable Plastic pollution harms whales and turtles And the chemicals carried by the tide threaten the food chain But conservation efforts are beginning to yield results One indigenous community has protected the forest of its ancestors Established a pioneering model of community-led conservation An ecosystem is built on a subtle balance. The loss of one's species affects others in a chain. Whether we can find the wisdom to coexist with nature will determine the future of this planet. you",
+  "segments": [
+    {
+      "start": 4.74,
+      "end": 12.96,
+      "text": "On Earth, there are more than 6,000 known species of mammals alone"
+    },
+    {
+      "start": 14.64,
+      "end": 20.44,
+      "text": "The number of insect species is estimated in the millions"
+    },
+    {
+      "start": 20.44,
+      "end": 27.92,
+      "text": "Tropical rainforest cover, only about 6% of the Earth's surface"
+    },
+    {
+      "start": 27.92,
+      "end": 31.62,
+      "text": "Yet more than half of all species dwell there"
+    },
+    {
+      "start": 31.62,
+      "end": 37.96,
+      "text": "These hotspots of biodiversity are shrinking rapidly"
+    },
+    {
+      "start": 42.62,
+      "end": 45.16,
+      "text": "The causes are numerous"
+    },
+    {
+      "start": 45.16,
+      "end": 49.02,
+      "text": "Logging conversion to farmland, urban development"
+    },
+    {
+      "start": 49.02,
+      "end": 54.46,
+      "text": "Human activity is steadily taking the habitat of animals away"
+    },
+    {
+      "start": 54.46,
+      "end": 56.9,
+      "text": "The oceans are also vulnerable"
+    },
+    {
+      "start": 56.9,
+      "end": 60.92,
+      "text": "Plastic pollution harms whales and turtles"
+    },
+    {
+      "start": 60.92,
+      "end": 65.4,
+      "text": "And the chemicals carried by the tide threaten the food chain"
+    },
+    {
+      "start": 65.4,
+      "end": 72.08,
+      "text": "But conservation efforts are beginning to yield results"
+    },
+    {
+      "start": 73.9,
+      "end": 78.38,
+      "text": "One indigenous community has protected the forest of its ancestors"
+    },
+    {
+      "start": 78.38,
+      "end": 82.94,
+      "text": "Established a pioneering model of community-led conservation"
+    },
+    {
+      "start": 82.94,
+      "end": 87.52,
+      "text": "An ecosystem is built on a subtle balance."
+    },
+    {
+      "start": 88.02,
+      "end": 94.84,
+      "text": "The loss of one's species affects others in a chain."
+    },
+    {
+      "start": 97.98,
+      "end": 102.88,
+      "text": "Whether we can find the wisdom to coexist with nature"
+    },
+    {
+      "start": 102.88,
+      "end": 108.14,
+      "text": "will determine the future of this planet."
+    },
+    {
+      "start": 112.94,
+      "end": 113.84,
+      "text": "you"
+    }
+  ]
+}

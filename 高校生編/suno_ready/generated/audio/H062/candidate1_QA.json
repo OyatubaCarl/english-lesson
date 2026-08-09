@@ -1,0 +1,163 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H062.md",
+  "audio": "高校生編/suno_ready/generated/audio/H062/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 146.96,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 182,
+  "transcribed_words": 182,
+  "matched_words": 180,
+  "coverage": 0.989,
+  "precision": 0.989,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 181,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 3,
+      "length": 1,
+      "words": [
+        "eight"
+      ]
+    },
+    {
+      "start": 65,
+      "length": 1,
+      "words": [
+        "microplastic"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 65,
+      "actual_start": 64,
+      "expected": [
+        "microplastic"
+      ],
+      "actual": [
+        "micro",
+        "plastic"
+      ],
+      "actual_confidence": 0.8422,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 3,
+      "actual_start": 3,
+      "expected": [
+        "eight"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "Every year, about 8 million tons of plastic flow into the world's oceans That equals one truckload every minute In the Pacific Ocean, a huge area of garbage twice the size of Texas is floating Called the Great Pacific Garbage Patch Debris carried by the currents has gathered there over many years Larger pieces of plastic Broken down by waves and ultraviolet light Slowly becomes micro-plastic These tiny particles enter the food chain From plankton to fish And eventually onto our dinner tables The impact on marine life is severe Whales and seabirds have mistaken plastic bags for food and have died after swallowing them Coral reefs too face the double threat of chemical pollution and warming waters Governments around the world have introduced various policies such as charging for plastic bags and banning certain plastics companies on the other hand have invested in biodegradable materials and recycling technology. In the end, the problem will be solved by the choices each of us makes. Reduce, reuse, recycle. The accumulation of small choices in daily Life will change the future of the ocean",
+  "segments": [
+    {
+      "start": 9.76,
+      "end": 17.3,
+      "text": "Every year, about 8 million tons of plastic flow into the world's oceans"
+    },
+    {
+      "start": 18.0,
+      "end": 22.06,
+      "text": "That equals one truckload every minute"
+    },
+    {
+      "start": 22.06,
+      "end": 30.84,
+      "text": "In the Pacific Ocean, a huge area of garbage twice the size of Texas is floating"
+    },
+    {
+      "start": 30.84,
+      "end": 35.04,
+      "text": "Called the Great Pacific Garbage Patch"
+    },
+    {
+      "start": 37.38,
+      "end": 43.2,
+      "text": "Debris carried by the currents has gathered there over many years"
+    },
+    {
+      "start": 43.2,
+      "end": 46.3,
+      "text": "Larger pieces of plastic"
+    },
+    {
+      "start": 46.3,
+      "end": 54.14,
+      "text": "Broken down by waves and ultraviolet light Slowly becomes micro-plastic"
+    },
+    {
+      "start": 54.14,
+      "end": 59.52,
+      "text": "These tiny particles enter the food chain From plankton to fish"
+    },
+    {
+      "start": 59.52,
+      "end": 69.28,
+      "text": "And eventually onto our dinner tables The impact on marine life is severe"
+    },
+    {
+      "start": 69.28,
+      "end": 74.26,
+      "text": "Whales and seabirds have mistaken plastic bags for food"
+    },
+    {
+      "start": 74.26,
+      "end": 77.18,
+      "text": "and have died after swallowing them"
+    },
+    {
+      "start": 77.18,
+      "end": 80.72,
+      "text": "Coral reefs too face the double threat"
+    },
+    {
+      "start": 81.62,
+      "end": 86.7,
+      "text": "of chemical pollution and warming waters"
+    },
+    {
+      "start": 88.46,
+      "end": 93.1,
+      "text": "Governments around the world have introduced various policies"
+    },
+    {
+      "start": 93.1,
+      "end": 98.86,
+      "text": "such as charging for plastic bags and banning certain plastics"
+    },
+    {
+      "start": 98.86,
+      "end": 104.0,
+      "text": "companies on the other hand have invested in biodegradable"
+    },
+    {
+      "start": 104.0,
+      "end": 116.4,
+      "text": "materials and recycling technology. In the end, the problem will be solved by the choices"
+    },
+    {
+      "start": 116.4,
+      "end": 132.28,
+      "text": "each of us makes. Reduce, reuse, recycle. The accumulation of small choices in daily"
+    },
+    {
+      "start": 132.28,
+      "end": 137.34,
+      "text": "Life will change the future of the ocean"
+    }
+  ]
+}

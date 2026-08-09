@@ -1,0 +1,995 @@
+{
+  "lesson": "H020",
+  "title_ja": "夕暮れの町を歩く",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 11,
+  "canonical_target_lines": 7,
+  "mixed_lines": 7,
+  "japanese_only_lines": 4,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 0.0,
+      "end": 4.2,
+      "english": "On my way home, I was walking through the town.",
+      "japanese": "家に帰る途中、僕は街を歩いていました。",
+      "mixed": "家に帰る途中、僕は街を歩いていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "家に帰る途中、僕は街を歩いていました。",
+          "parts": [
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "帰",
+              "ruby": "かえ"
+            },
+            {
+              "text": "る",
+              "ruby": ""
+            },
+            {
+              "text": "途中",
+              "ruby": "とちゅう"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "街",
+              "ruby": "まち"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "歩",
+              "ruby": "ある"
+            },
+            {
+              "text": "いていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 2,
+      "start": 4.2,
+      "end": 8.94,
+      "english": "Though I was tired, my steps felt light.",
+      "japanese": "疲れていたのに足取りは軽かった。",
+      "mixed": "疲れていたのに、足取りは軽く feel ました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "疲れていたのに、足取りは軽く ",
+          "parts": [
+            {
+              "text": "疲",
+              "ruby": "つか"
+            },
+            {
+              "text": "れていたのに、",
+              "ruby": ""
+            },
+            {
+              "text": "足取",
+              "ruby": "あしど"
+            },
+            {
+              "text": "りは",
+              "ruby": ""
+            },
+            {
+              "text": "軽",
+              "ruby": "かる"
+            },
+            {
+              "text": "く",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "feel",
+          "ruby": "感じられ"
+        },
+        {
+          "type": "ja",
+          "text": " ました。",
+          "parts": [
+            {
+              "text": "ました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "felt",
+          "canonical_word": "feel",
+          "meaning": "感じる"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "feel",
+          "reading": "感じられ",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "feel",
+          "canonical_meaning": "感じる"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 3,
+      "start": 10.26,
+      "end": 18.56,
+      "english": "Passing through a narrow alley and crossing a small plaza, I felt the atmosphere of the town.",
+      "japanese": "細い路地を抜け、小さな広場を渡ると、街の雰囲気を感じました。",
+      "mixed": "細い alley を抜け、小さな広場を渡ると、街の雰囲気を feel ました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "細い ",
+          "parts": [
+            {
+              "text": "細",
+              "ruby": "ほそ"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "alley",
+          "ruby": "路地"
+        },
+        {
+          "type": "ja",
+          "text": " を抜け、小さな広場を渡ると、街の雰囲気を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "抜",
+              "ruby": "ぬ"
+            },
+            {
+              "text": "け、",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            },
+            {
+              "text": "広場",
+              "ruby": "ひろば"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "渡",
+              "ruby": "わた"
+            },
+            {
+              "text": "ると、",
+              "ruby": ""
+            },
+            {
+              "text": "街",
+              "ruby": "まち"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "雰囲気",
+              "ruby": "ふんいき"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "feel",
+          "ruby": "感じ"
+        },
+        {
+          "type": "ja",
+          "text": " ました。",
+          "parts": [
+            {
+              "text": "ました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "alley",
+          "canonical_word": "alley",
+          "meaning": "路地"
+        },
+        {
+          "english": "felt",
+          "canonical_word": "feel",
+          "meaning": "感じる"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "alley",
+          "reading": "路地",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "alley",
+          "canonical_meaning": "路地"
+        },
+        {
+          "english": "feel",
+          "reading": "感じ",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "feel",
+          "canonical_meaning": "感じる"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 4,
+      "start": 18.56,
+      "end": 24.962,
+      "english": "The street lamps cast gentle shadows, and I walked on.",
+      "japanese": "街灯が優しい影を落としながら、僕は歩き続けました。",
+      "mixed": "街灯が gently 影を落としながら、僕は歩き続けました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "街灯が ",
+          "parts": [
+            {
+              "text": "街灯",
+              "ruby": "がいとう"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "gently",
+          "ruby": "優しい"
+        },
+        {
+          "type": "ja",
+          "text": " 影を落としながら、僕は歩き続けました。",
+          "parts": [
+            {
+              "text": "影",
+              "ruby": "かげ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "落",
+              "ruby": "お"
+            },
+            {
+              "text": "としながら、",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "歩",
+              "ruby": "ある"
+            },
+            {
+              "text": "き",
+              "ruby": ""
+            },
+            {
+              "text": "続",
+              "ruby": "つづ"
+            },
+            {
+              "text": "けました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [
+        {
+          "english": "gently",
+          "reading": "優しい",
+          "source": "canonical_new_word_translation_morph",
+          "canonical_word": "gently",
+          "canonical_meaning": "優しく"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 5,
+      "start": 24.962,
+      "end": 31.455,
+      "english": "Leaving the butcher's shop behind, I saw the bakery sign glowing.",
+      "japanese": "肉屋を後にすると、パン屋さんの看板が光っているのが見えました。",
+      "mixed": "肉屋を後にすると、パン屋さんの看板が光っているのが見えました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "肉屋を後にすると、パン屋さんの看板が光っているのが見えました。",
+          "parts": [
+            {
+              "text": "肉屋",
+              "ruby": "にくや"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "後",
+              "ruby": "あと"
+            },
+            {
+              "text": "にすると、パン",
+              "ruby": ""
+            },
+            {
+              "text": "屋",
+              "ruby": "や"
+            },
+            {
+              "text": "さんの",
+              "ruby": ""
+            },
+            {
+              "text": "看板",
+              "ruby": "かんばん"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "光",
+              "ruby": "ひか"
+            },
+            {
+              "text": "っているのが",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "えました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 6,
+      "start": 31.455,
+      "end": 37.6,
+      "english": "A rich scent drifted out, and my mood began to improve.",
+      "japanese": "芳醇な香りが漂ってきて、気分も良くなってきました。",
+      "mixed": "芳醇な香りが漂ってきて、僕の気分は improve していきました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "芳醇な香りが漂ってきて、僕の気分は ",
+          "parts": [
+            {
+              "text": "芳醇",
+              "ruby": "ほうじゅん"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "香",
+              "ruby": "かお"
+            },
+            {
+              "text": "りが",
+              "ruby": ""
+            },
+            {
+              "text": "漂",
+              "ruby": "ただよ"
+            },
+            {
+              "text": "ってきて、",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "気分",
+              "ruby": "きぶん"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "improve",
+          "ruby": "良くなる"
+        },
+        {
+          "type": "ja",
+          "text": " していきました。",
+          "parts": [
+            {
+              "text": "していきました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "improve",
+          "canonical_word": "improve",
+          "meaning": "改善する"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "improve",
+          "reading": "良くなる",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "improve",
+          "canonical_meaning": "改善する"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 7,
+      "start": 37.6,
+      "end": 42.38,
+      "english": "Near home, I happened upon an old friend.",
+      "japanese": "家の近くで、古い友人に出会った。",
+      "mixed": "家の近くで、古い友人に出会った。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "家の近くで、古い友人に出会った。",
+          "parts": [
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "近",
+              "ruby": "ちか"
+            },
+            {
+              "text": "くで、",
+              "ruby": ""
+            },
+            {
+              "text": "古",
+              "ruby": "ふる"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "友人",
+              "ruby": "ゆうじん"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "出会",
+              "ruby": "であ"
+            },
+            {
+              "text": "った。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 8,
+      "start": 42.38,
+      "end": 47.34,
+      "english": "Seeing me, he waved and laughed.",
+      "japanese": "僕を見て、彼は手を振りながら笑いました。",
+      "mixed": "僕を見て、彼は手を振りながら笑いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "僕を見て、彼は手を振りながら笑いました。",
+          "parts": [
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "て、",
+              "ruby": ""
+            },
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "手",
+              "ruby": "て"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "振",
+              "ruby": "ふ"
+            },
+            {
+              "text": "りながら",
+              "ruby": ""
+            },
+            {
+              "text": "笑",
+              "ruby": "わら"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 9,
+      "start": 47.34,
+      "end": 52.46,
+      "english": "The encounter was an unexpected joy.",
+      "japanese": "その出会いは思いがけない喜びでした。",
+      "mixed": "その encounter は思いがけない喜びでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "その ",
+          "parts": [
+            {
+              "text": "その",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "encounter",
+          "ruby": "出会い"
+        },
+        {
+          "type": "ja",
+          "text": " は思いがけない喜びでした。",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "思",
+              "ruby": "おも"
+            },
+            {
+              "text": "いがけない",
+              "ruby": ""
+            },
+            {
+              "text": "喜",
+              "ruby": "よろこ"
+            },
+            {
+              "text": "びでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "encounter",
+          "canonical_word": "encounter",
+          "meaning": "出会う"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "encounter",
+          "reading": "出会い",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "encounter",
+          "canonical_meaning": "出会う"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 10,
+      "start": 52.46,
+      "end": 61.96,
+      "english": "Exchanging a few words with him, I felt the day's tiredness vanish completely.",
+      "japanese": "彼と二言三言言葉を交わすと、その日の疲れがすっかり吹っ飛んだのを感じた。",
+      "mixed": "彼と二言三言交わすと、その日の疲れが完全に vanish したと feel ました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼と二言三言交わすと、その日の疲れが完全に ",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "二言",
+              "ruby": "にごん"
+            },
+            {
+              "text": "三",
+              "ruby": "さん"
+            },
+            {
+              "text": "言",
+              "ruby": "げん"
+            },
+            {
+              "text": "交",
+              "ruby": "か"
+            },
+            {
+              "text": "わすと、その",
+              "ruby": ""
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "疲",
+              "ruby": "つか"
+            },
+            {
+              "text": "れが",
+              "ruby": ""
+            },
+            {
+              "text": "完全",
+              "ruby": "かんぜん"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "vanish",
+          "ruby": "消えた"
+        },
+        {
+          "type": "ja",
+          "text": " したと ",
+          "parts": [
+            {
+              "text": "したと",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "feel",
+          "ruby": "感じ"
+        },
+        {
+          "type": "ja",
+          "text": " ました。",
+          "parts": [
+            {
+              "text": "ました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "felt",
+          "canonical_word": "feel",
+          "meaning": "感じる"
+        },
+        {
+          "english": "vanish",
+          "canonical_word": "vanish",
+          "meaning": "消える"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "vanish",
+          "reading": "消えた",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "vanish",
+          "canonical_meaning": "消える"
+        },
+        {
+          "english": "feel",
+          "reading": "感じ",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "feel",
+          "canonical_meaning": "感じる"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 11,
+      "start": 63.68,
+      "end": 76.26,
+      "english": "Walking through the town, I felt the small delights of daily life quietly embrace me.",
+      "japanese": "街を歩いていると、日常の小さな喜びが僕をそっと包み込んでくれるような気がしました。",
+      "mixed": "街を歩きながら、日常の小さな delight が僕を静かに embrace するのを feel ました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "街を歩きながら、日常の小さな ",
+          "parts": [
+            {
+              "text": "街",
+              "ruby": "がい"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "歩",
+              "ruby": "ある"
+            },
+            {
+              "text": "きながら、",
+              "ruby": ""
+            },
+            {
+              "text": "日常",
+              "ruby": "にちじょう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "delight",
+          "ruby": "喜び"
+        },
+        {
+          "type": "ja",
+          "text": " が僕を静かに ",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "embrace",
+          "ruby": "包み込む"
+        },
+        {
+          "type": "ja",
+          "text": " するのを ",
+          "parts": [
+            {
+              "text": "するのを",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "feel",
+          "ruby": "感じ"
+        },
+        {
+          "type": "ja",
+          "text": " ました。",
+          "parts": [
+            {
+              "text": "ました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "felt",
+          "canonical_word": "feel",
+          "meaning": "感じる"
+        },
+        {
+          "english": "delights",
+          "canonical_word": "delight",
+          "meaning": "楽しみ"
+        },
+        {
+          "english": "embrace",
+          "canonical_word": "embrace",
+          "meaning": "抱擁する"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "delight",
+          "reading": "喜び",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "delight",
+          "canonical_meaning": "楽しみ"
+        },
+        {
+          "english": "embrace",
+          "reading": "包み込む",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "embrace",
+          "canonical_meaning": "抱擁する"
+        },
+        {
+          "english": "feel",
+          "reading": "感じ",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "feel",
+          "canonical_meaning": "感じる"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    }
+  ]
+}

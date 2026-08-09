@@ -1,0 +1,196 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H088.md",
+  "audio": "高校生編/suno_ready/generated/audio/H088/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 146.281,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9878,
+  "expected_words": 164,
+  "transcribed_words": 162,
+  "matched_words": 159,
+  "coverage": 0.9695,
+  "precision": 0.9815,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 163,
+  "longest_missing_run": 3,
+  "largest_missing_runs": [
+    {
+      "start": 45,
+      "length": 3,
+      "words": [
+        "to",
+        "the",
+        "scene"
+      ]
+    },
+    {
+      "start": 2,
+      "length": 1,
+      "words": [
+        "stormy"
+      ]
+    },
+    {
+      "start": 140,
+      "length": 1,
+      "words": [
+        "a"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 2,
+      "actual_start": 2,
+      "expected": [
+        "stormy"
+      ],
+      "actual": [
+        "story"
+      ],
+      "actual_confidence": 0.7102,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 140,
+      "actual_start": 137,
+      "expected": [
+        "a"
+      ],
+      "actual": [
+        "the"
+      ],
+      "actual_confidence": 0.9721,
+      "substitution_words": 1,
+      "has_content_word": false
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 164,
+      "actual_start": 161,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.0225
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 45,
+      "actual_start": 45,
+      "expected": [
+        "to",
+        "the",
+        "scene"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": false,
+  "transcript": "On a story night, a strange sound came from the ceiling of an old mansion. The master had disappeared from his study The door was locked from the inside And the window was blocked by a brick wall The inspector who received the report rushed He walked through the long corridor and entered the study The room was nearly empty Only a shelf fixed to the wall seemed out of place But he did not dismiss it Behind the shelf there was an entrance to a hidden passage The inspector did not hesitate and went in The dark corridor led underground in the basement The master had been captured The criminal was his former business partner A financial dispute had been the motive The inspector immediately managed to identify the suspect A clear motive, physical evidence And the discarded key mechanism all pointed to him The case was resolved in a single night The truth had been hiding in plain sight You",
+  "segments": [
+    {
+      "start": 12.22,
+      "end": 20.62,
+      "text": "On a story night, a strange sound came from the ceiling of an old mansion."
+    },
+    {
+      "start": 22.9,
+      "end": 31.34,
+      "text": "The master had disappeared from his study The door was locked from the inside"
+    },
+    {
+      "start": 31.34,
+      "end": 45.02,
+      "text": "And the window was blocked by a brick wall The inspector who received the report rushed"
+    },
+    {
+      "start": 45.02,
+      "end": 51.74,
+      "text": "He walked through the long corridor and entered the study"
+    },
+    {
+      "start": 52.88,
+      "end": 55.8,
+      "text": "The room was nearly empty"
+    },
+    {
+      "start": 57.14,
+      "end": 62.8,
+      "text": "Only a shelf fixed to the wall seemed out of place"
+    },
+    {
+      "start": 64.24,
+      "end": 68.16,
+      "text": "But he did not dismiss it"
+    },
+    {
+      "start": 68.16,
+      "end": 75.02,
+      "text": "Behind the shelf there was an entrance to a hidden passage"
+    },
+    {
+      "start": 76.16,
+      "end": 80.96,
+      "text": "The inspector did not hesitate and went in"
+    },
+    {
+      "start": 80.96,
+      "end": 85.32,
+      "text": "The dark corridor led underground in the basement"
+    },
+    {
+      "start": 86.16,
+      "end": 88.98,
+      "text": "The master had been captured"
+    },
+    {
+      "start": 93.58,
+      "end": 98.36,
+      "text": "The criminal was his former business partner"
+    },
+    {
+      "start": 98.98,
+      "end": 103.8,
+      "text": "A financial dispute had been the motive"
+    },
+    {
+      "start": 104.98,
+      "end": 111.82,
+      "text": "The inspector immediately managed to identify the suspect"
+    },
+    {
+      "start": 111.82,
+      "end": 116.2,
+      "text": "A clear motive, physical evidence"
+    },
+    {
+      "start": 116.2,
+      "end": 122.48,
+      "text": "And the discarded key mechanism all pointed to him"
+    },
+    {
+      "start": 123.2,
+      "end": 128.98,
+      "text": "The case was resolved in a single night"
+    },
+    {
+      "start": 128.98,
+      "end": 134.38,
+      "text": "The truth had been hiding in plain sight"
+    },
+    {
+      "start": 146.2,
+      "end": 146.24,
+      "text": "You"
+    }
+  ]
+}

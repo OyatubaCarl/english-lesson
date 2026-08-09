@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>WordTacos Quiz Card v2</title>
+<style>
+:root{
+  --ink:#20140b; --sub:#7a6552; --accent:#d6431b; --accent-soft:#fdeee9;
+  --green:#2f8a52; --green-soft:#e6f6ec; --line:#ece3d5;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;font-family:"Hiragino Sans","Hiragino Maru Gothic ProN",sans-serif;background:#fff;color:var(--ink)}
+.card{width:1080px;height:1920px;background:#fff;position:relative;display:flex;flex-direction:column;padding:150px 72px 150px;}
+.tag{align-self:center;background:var(--accent);color:#fff;font-weight:800;font-size:30px;padding:9px 26px;border-radius:999px;letter-spacing:.04em;margin-bottom:40px}
+.sentence{font-size:60px;line-height:1.78;font-weight:700;text-align:left;letter-spacing:.01em}
+.sentence .en{display:inline-block;background:var(--accent);color:#fff;font-weight:800;padding:2px 20px;border-radius:12px;margin:0 4px;font-family:-apple-system,sans-serif}
+.q{margin:52px 0 34px;text-align:center}
+.q .en{font-size:64px;font-weight:900;color:var(--accent);font-family:-apple-system,sans-serif}
+.q .jp{font-size:50px;font-weight:800}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.choice{background:#fff;border:3px solid var(--line);border-radius:22px;padding:32px 26px;display:flex;align-items:center;gap:20px;min-height:150px;position:relative}
+.choice .k{width:64px;height:64px;border-radius:50%;background:#f4ede1;color:var(--sub);font-weight:900;font-size:38px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.choice .t{font-size:44px;font-weight:800;line-height:1.3}
+.choice.correct{background:var(--green-soft);border-color:var(--green)}
+.choice.correct .k{background:var(--green);color:#fff}
+.choice.correct .t{color:var(--green)}
+.choice.correct::after{content:'✓';position:absolute;right:24px;top:50%;transform:translateY(-50%);color:var(--green);font-size:52px;font-weight:900}
+.spacer{flex:1}
+.mascot{position:absolute;right:34px;bottom:40px;width:330px;height:auto;pointer-events:none;filter:drop-shadow(0 10px 18px rgba(90,60,30,.18))}
+
+/* inset=1: 背景画像の上に重ねる角丸カードモード(bodyは透過) */
+html.inset,html.inset body{background:transparent}
+html.inset .card{width:996px;height:1836px;margin:42px;border-radius:44px;
+  box-shadow:0 26px 64px rgba(60,30,10,.32),0 4px 14px rgba(60,30,10,.18);
+  padding:126px 64px 126px;overflow:hidden}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="tag" id="tag">超・難単語クイズ</div>
+    <div class="sentence" id="sentence"></div>
+    <div class="q"><span class="en" id="word"></span> <span class="jp">の意味は？</span></div>
+    <div class="choices" id="choices"></div>
+    <div class="spacer"></div>
+    <img class="mascot" id="mascot" src="assets/tt_welcoming_v2.png" alt="">
+  </div>
+<script>
+const p = new URLSearchParams(location.search);
+if (p.get('inset')==='1') document.documentElement.classList.add('inset');
+// sentence: 英単語を <word> で囲む。例: 政治家の答弁は問題を<obfuscate>していて…
+const rawSentence = p.get('sentence') || '政治家の答弁は問題を<obfuscate>していて、誰も真相が分からなくなった。';
+const word = p.get('word') || 'obfuscate';
+const choices = (p.get('choices') || '明確に示す|わざと曖昧にする|誇張する|撤回する').split('|');
+const correct = parseInt(p.get('correct') || '1', 10);
+const reveal = p.get('reveal') === '1';
+if (p.get('tag')) document.getElementById('tag').textContent = p.get('tag');
+document.getElementById('word').textContent = word;
+document.getElementById('sentence').innerHTML =
+  rawSentence.replace(/<([^>]+)>/g, '<span class="en">$1</span>');
+const letters = ['A','B','C','D'];
+document.getElementById('choices').innerHTML = choices.map((c,i)=>{
+  const cls = (reveal && i===correct) ? 'choice correct' : 'choice';
+  return `<div class="${cls}"><div class="k">${letters[i]}</div><div class="t">${c}</div></div>`;
+}).join('');
+if (p.get('mascot')) document.getElementById('mascot').src = p.get('mascot');
+</script>
+</body>
+</html>

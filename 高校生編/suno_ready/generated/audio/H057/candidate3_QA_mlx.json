@@ -1,0 +1,176 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H057.md",
+  "audio": "高校生編/suno_ready/generated/audio/H057/candidate3-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 142.84,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 208,
+  "transcribed_words": 208,
+  "matched_words": 206,
+  "coverage": 0.9904,
+  "precision": 0.9904,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 207,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 43,
+      "length": 1,
+      "words": [
+        "alternating"
+      ]
+    },
+    {
+      "start": 62,
+      "length": 1,
+      "words": [
+        "alternating"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 43,
+      "actual_start": 43,
+      "expected": [
+        "alternating"
+      ],
+      "actual": [
+        "automating"
+      ],
+      "actual_confidence": 0.8477,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 62,
+      "actual_start": 62,
+      "expected": [
+        "alternating"
+      ],
+      "actual": [
+        "automating"
+      ],
+      "actual_confidence": 0.9961,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "Nikola Tesla was born in 1856 in Smiljan, in what is now Croatia. He later moved to America, and from the late 19th to the early 20th century, became an immigrant inventor who transformed the world of electricity. His greatest contribution was to make automating current electricity practical. At the time, Thomas Edison was promoting direct current. Tesla argued for the advantage of automating current for long-distance transmission. and a war of currents arose between them. As a result, the alternating current system became the standard of the world's power grid. Today, almost all of the electricity that reaches our homes owes much to the vision that Tesla pursued. Tesla's imagination did not stop there. He had already envisioned the foundations of wireless communication, wireless power, transmission, radio, and radar in Edison's age. However, his life was never happy. His business partnership did not go well. And his Wardenclyffe Tower project collapsed for lack of funding. Many of his patents did not bring him enough reward. Tesla died in 1943, in a hotel room in New York, in poverty. The recognition of his genius spread widely, only after his death. Today, we drive cars that bear his name And live within part of the future That he had imagined",
+  "segments": [
+    {
+      "start": 11.78,
+      "end": 17.28,
+      "text": "Nikola Tesla was born in 1856 in Smiljan, in what is now Croatia."
+    },
+    {
+      "start": 18.38,
+      "end": 24.2,
+      "text": "He later moved to America, and from the late 19th to the early 20th century,"
+    },
+    {
+      "start": 24.2,
+      "end": 30.36,
+      "text": "became an immigrant inventor who transformed the world of electricity."
+    },
+    {
+      "start": 33.7,
+      "end": 38.88,
+      "text": "His greatest contribution was to make automating current electricity practical."
+    },
+    {
+      "start": 40.2,
+      "end": 44.08,
+      "text": "At the time, Thomas Edison was promoting direct current."
+    },
+    {
+      "start": 45.1,
+      "end": 50.84,
+      "text": "Tesla argued for the advantage of automating current for long-distance transmission."
+    },
+    {
+      "start": 50.84,
+      "end": 55.14,
+      "text": "and a war of currents arose between them."
+    },
+    {
+      "start": 57.5,
+      "end": 61.24,
+      "text": "As a result, the alternating current system"
+    },
+    {
+      "start": 61.24,
+      "end": 64.14,
+      "text": "became the standard of the world's power grid."
+    },
+    {
+      "start": 65.26,
+      "end": 68.02,
+      "text": "Today, almost all of the electricity"
+    },
+    {
+      "start": 68.02,
+      "end": 72.22,
+      "text": "that reaches our homes owes much to the vision"
+    },
+    {
+      "start": 72.22,
+      "end": 74.4,
+      "text": "that Tesla pursued."
+    },
+    {
+      "start": 75.74,
+      "end": 80.08,
+      "text": "Tesla's imagination did not stop there."
+    },
+    {
+      "start": 81.88,
+      "end": 94.32,
+      "text": "He had already envisioned the foundations of wireless communication, wireless power, transmission, radio, and radar in Edison's age."
+    },
+    {
+      "start": 94.52,
+      "end": 106.26,
+      "text": "However, his life was never happy. His business partnership did not go well. And his Wardenclyffe Tower project collapsed for lack of funding."
+    },
+    {
+      "start": 108.44,
+      "end": 112.46,
+      "text": "Many of his patents did not bring him enough reward."
+    },
+    {
+      "start": 113.7,
+      "end": 120.16,
+      "text": "Tesla died in 1943, in a hotel room in New York, in poverty."
+    },
+    {
+      "start": 122.26,
+      "end": 128.84,
+      "text": "The recognition of his genius spread widely, only after his death."
+    },
+    {
+      "start": 131.54,
+      "end": 135.48,
+      "text": "Today, we drive cars that bear his name"
+    },
+    {
+      "start": 136.52,
+      "end": 139.42,
+      "text": "And live within part of the future"
+    },
+    {
+      "start": 141.02,
+      "end": 142.84,
+      "text": "That he had imagined"
+    }
+  ]
+}

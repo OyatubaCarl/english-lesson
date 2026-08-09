@@ -1,0 +1,47 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Title,Helvetica Neue,76,&H00FFFFFF,&H000000FF,&HAA000000,&H70000000,-1,0,0,0,100,100,1,0,1,4,2,5,100,100,20,1
+Style: TitleJa,Hiragino Sans,45,&H00FFFFFF,&H000000FF,&HAA000000,&H70000000,-1,0,0,0,100,100,1,0,1,3,1,5,100,100,20,1
+Style: Header,Helvetica Neue,30,&H00FFFFFF,&H000000FF,&HAA000000,&H70000000,-1,0,0,0,100,100,0,0,1,2,1,7,48,48,35,1
+Style: English,Helvetica Neue,51,&H00FFFFFF,&H000000FF,&HCC000000,&H00000000,-1,0,0,0,100,100,0,0,1,3,1,2,80,80,155,1
+Style: Japanese,Hiragino Sans,39,&H00D8F3FF,&H000000FF,&HCC000000,&H00000000,-1,0,0,0,100,100,0,0,1,3,1,2,70,70,50,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 2,0:00:00.50,0:00:08.80,Title,,0,0,0,,{\pos(960,465)}H46  Democracy and the Constitution
+Dialogue: 2,0:00:00.50,0:00:08.80,TitleJa,,0,0,0,,{\pos(960,575)}民主主義と憲法
+Dialogue: 2,0:00:09.00,0:01:58.50,Header,,0,0,0,,H46  •  Democracy and the Constitution
+Dialogue: 2,0:01:59.00,0:02:10.80,Title,,0,0,0,,{\pos(960,465)}H46  Democracy and the Constitution
+Dialogue: 2,0:01:59.00,0:02:10.80,TitleJa,,0,0,0,,{\pos(960,575)}民主主義と憲法
+Dialogue: 2,0:00:09.86,0:00:16.54,English,,0,0,0,,The {\c&H0066D1FF&}principle of democracy{\c&H00FFFFFF&} rests on the idea\Nthat people govern themselves.
+Dialogue: 2,0:00:09.86,0:00:16.54,Japanese,,0,0,0,,民主主義の原則は、人々が自らを治めるという考えに基づいている。
+Dialogue: 2,0:00:16.54,0:00:23.12,English,,0,0,0,,In ancient Athens, citizens gathered in the public square\Nand discussed policy.
+Dialogue: 2,0:00:16.54,0:00:23.12,Japanese,,0,0,0,,古代アテネでは、市民が広場に集まり、政策について議論した。
+Dialogue: 2,0:00:23.12,0:00:30.36,English,,0,0,0,,This was the {\c&H0066D1FF&}starting point of the democracy{\c&H00FFFFFF&}\Nthat would later spread throughout the world.
+Dialogue: 2,0:00:23.12,0:00:30.36,Japanese,,0,0,0,,これが、のちに世界へ広がる民主主義の出発点だった。
+Dialogue: 2,0:00:32.16,0:00:38.22,English,,0,0,0,,Modern democratic states almost always have\Na supreme law called a constitution.
+Dialogue: 2,0:00:32.16,0:00:38.22,Japanese,,0,0,0,,現代の民主国家には、ほぼ必ず憲法と呼ばれる最高法規がある。
+Dialogue: 2,0:00:38.22,0:00:44.90,English,,0,0,0,,The constitution limits the {\c&H0066D1FF&}power of government{\c&H00FFFFFF&}\Nand protects the {\c&H0066D1FF&}rights of the citizens{\c&H00FFFFFF&}.
+Dialogue: 2,0:00:38.22,0:00:44.90,Japanese,,0,0,0,,憲法は政府の権力を制限し、市民の権利を守る。
+Dialogue: 2,0:00:44.90,0:00:53.76,English,,0,0,0,,In many countries, citizens choose their representatives\Nthrough elections held every few years.
+Dialogue: 2,0:00:44.90,0:00:53.76,Japanese,,0,0,0,,多くの国で、市民は数年ごとの選挙を通じて代表者を選ぶ。
+Dialogue: 2,0:00:53.76,0:00:59.90,English,,0,0,0,,Candidates run campaigns\Nand present their policies to the voters.
+Dialogue: 2,0:00:53.76,0:00:59.90,Japanese,,0,0,0,,候補者は選挙運動を行い、有権者に政策を示す。
+Dialogue: 2,0:00:59.90,0:01:08.46,English,,0,0,0,,The elected representatives gather in parliament or in congress,\Nwhere they create new legislation.
+Dialogue: 2,0:00:59.90,0:01:08.46,Japanese,,0,0,0,,選ばれた代表者は議会に集まり、新たな法律を作る。
+Dialogue: 2,0:01:08.46,0:01:15.04,English,,0,0,0,,After discussion in committee,\Na bill becomes law.
+Dialogue: 2,0:01:08.46,0:01:15.04,Japanese,,0,0,0,,委員会での審議を経て、法案は法律になる。
+Dialogue: 2,0:01:15.04,0:01:20.86,English,,0,0,0,,The {\c&H0066D1FF&}duty of a citizen{\c&H00FFFFFF&} is not only to vote.
+Dialogue: 2,0:01:15.04,0:01:20.86,Japanese,,0,0,0,,市民の務めは、投票することだけではない。
+Dialogue: 2,0:01:21.92,0:01:32.04,English,,0,0,0,,It is also to take an interest in social problems\Nand to participate in politics throughout life.
+Dialogue: 2,0:01:21.92,0:01:32.04,Japanese,,0,0,0,,社会問題に関心を持ち、生涯を通じて政治に参加することでもある。
+Dialogue: 2,0:01:32.04,0:01:42.46,English,,0,0,0,,How to balance the {\c&H0066D1FF&}will of the majority{\c&H00FFFFFF&}\Nwith the {\c&H0066D1FF&}freedom of the minority{\c&H00FFFFFF&}\Nis the challenge of every democratic state.
+Dialogue: 2,0:01:32.04,0:01:42.46,Japanese,,0,0,0,,多数派の意思と少数派の自由をどう両立させるかは、\Nすべての民主国家の課題である。
+Dialogue: 2,0:01:42.46,0:01:58.24,English,,0,0,0,,To respect the {\c&H0066D1FF&}will of the majority{\c&H00FFFFFF&}\Nwhile protecting the {\c&H0066D1FF&}freedom of the minority{\c&H00FFFFFF&} —\Nthis is the essential responsibility of a democratic society.
+Dialogue: 2,0:01:42.46,0:01:58.24,Japanese,,0,0,0,,少数派の自由を守りながら多数派の意思を尊重すること――\Nそれが民主社会の本質的な責任である。

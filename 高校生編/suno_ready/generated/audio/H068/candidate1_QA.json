@@ -1,0 +1,273 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H068.md",
+  "audio": "高校生編/suno_ready/generated/audio/H068/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 192.08,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0209,
+  "expected_words": 239,
+  "transcribed_words": 244,
+  "matched_words": 234,
+  "coverage": 0.9791,
+  "precision": 0.959,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 238,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 5,
+      "length": 1,
+      "words": [
+        "eighteenth"
+      ]
+    },
+    {
+      "start": 38,
+      "length": 1,
+      "words": [
+        "xvi"
+      ]
+    },
+    {
+      "start": 128,
+      "length": 1,
+      "words": [
+        "xvi"
+      ]
+    },
+    {
+      "start": 168,
+      "length": 1,
+      "words": [
+        "in"
+      ]
+    },
+    {
+      "start": 217,
+      "length": 1,
+      "words": [
+        "equality"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 5,
+      "actual_start": 5,
+      "expected": [
+        "eighteenth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.9277,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 38,
+      "actual_start": 38,
+      "expected": [
+        "xvi"
+      ],
+      "actual": [
+        "xv"
+      ],
+      "actual_confidence": 0.9237,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 128,
+      "actual_start": 128,
+      "expected": [
+        "xvi"
+      ],
+      "actual": [
+        "xv"
+      ],
+      "actual_confidence": 0.4502,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 217,
+      "actual_start": 221,
+      "expected": [
+        "equality"
+      ],
+      "actual": [
+        "quality"
+      ],
+      "actual_confidence": 0.7515,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 194,
+      "actual_start": 193,
+      "expected": [],
+      "actual": [
+        "one",
+        "turn",
+        "in",
+        "e"
+      ],
+      "actual_confidence": 0.4923
+    },
+    {
+      "expected_start": 205,
+      "actual_start": 208,
+      "expected": [],
+      "actual": [
+        "the"
+      ],
+      "actual_confidence": 0.3019
+    },
+    {
+      "expected_start": 239,
+      "actual_start": 243,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.0687
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 168,
+      "actual_start": 168,
+      "expected": [
+        "in"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 3,
+  "suspicious_substitution_words": 3,
+  "suspicious_content_substitution": true,
+  "transcript": "At the end of the 18th century, France was suffering from a serious financial crisis And famine, heavy taxes weighed on peasants and the urban poor While the gap between ordinary people and the royal court of Louis XV and Marie Antoinette at Versailles Was simply too great The thought of the Enlightenment philosophers Voltaire and Rousseau had already spread among the educated class. Liberty, equality and the dignity of the human person, these ideals would become the trigger of the revolution On July 14, 1789 The citizens of Paris stormed the Bastille prison This became the starting point of the French Revolution In August of the same year, the National Assembly adopted the declaration of the rights of man and declared that all people held equal rights. In 1793, Louis XV was executed by the guillotine. France was transformed from a monarchy into a republic But in the middle of the revolution the Jacobins under Robespierre Carried out the reign of terror and tens of thousands were executed as enemies 1799, the young soldier, Napoleon Bonaparte, took power in a coup and the chaos of the revolution came to an end. He would become emperor in one turn in E04, but the reform that the revolution brought equality before the law, The freedom of religion, the protection of private property Spread throughout Europe, liberty, quality, fraternity The three ideals of the French Revolution Still flow at the foundation of every democratic society In the world today You",
+  "segments": [
+    {
+      "start": 9.3,
+      "end": 20.94,
+      "text": "At the end of the 18th century, France was suffering from a serious financial crisis"
+    },
+    {
+      "start": 20.94,
+      "end": 27.54,
+      "text": "And famine, heavy taxes weighed on peasants and the urban poor"
+    },
+    {
+      "start": 28.94,
+      "end": 36.94,
+      "text": "While the gap between ordinary people and the royal court of Louis XV and Marie Antoinette at Versailles"
+    },
+    {
+      "start": 37.88,
+      "end": 39.94,
+      "text": "Was simply too great"
+    },
+    {
+      "start": 43.5,
+      "end": 52.04,
+      "text": "The thought of the Enlightenment philosophers Voltaire and Rousseau had already spread among"
+    },
+    {
+      "start": 52.04,
+      "end": 63.18,
+      "text": "the educated class. Liberty, equality and the dignity of the human person, these ideals"
+    },
+    {
+      "start": 63.18,
+      "end": 73.14,
+      "text": "would become the trigger of the revolution On July 14, 1789"
+    },
+    {
+      "start": 74.18,
+      "end": 79.38,
+      "text": "The citizens of Paris stormed the Bastille prison"
+    },
+    {
+      "start": 81.04,
+      "end": 86.46,
+      "text": "This became the starting point of the French Revolution"
+    },
+    {
+      "start": 86.46,
+      "end": 94.32,
+      "text": "In August of the same year, the National Assembly adopted the declaration of the rights of man"
+    },
+    {
+      "start": 94.32,
+      "end": 97.96,
+      "text": "and declared that all people held equal rights."
+    },
+    {
+      "start": 98.36,
+      "end": 106.98,
+      "text": "In 1793, Louis XV was executed by the guillotine."
+    },
+    {
+      "start": 110.06,
+      "end": 116.0,
+      "text": "France was transformed from a monarchy into a republic"
+    },
+    {
+      "start": 116.0,
+      "end": 121.82,
+      "text": "But in the middle of the revolution the Jacobins under Robespierre"
+    },
+    {
+      "start": 121.82,
+      "end": 127.98,
+      "text": "Carried out the reign of terror and tens of thousands were executed as enemies"
+    },
+    {
+      "start": 131.34,
+      "end": 142.98,
+      "text": "1799, the young soldier, Napoleon Bonaparte, took power in a coup and the chaos of the revolution came to an end."
+    },
+    {
+      "start": 143.54,
+      "end": 155.38,
+      "text": "He would become emperor in one turn in E04, but the reform that the revolution brought equality before the law,"
+    },
+    {
+      "start": 155.38,
+      "end": 160.1,
+      "text": "The freedom of religion, the protection of private property"
+    },
+    {
+      "start": 160.1,
+      "end": 164.94,
+      "text": "Spread throughout Europe, liberty, quality, fraternity"
+    },
+    {
+      "start": 164.94,
+      "end": 167.64,
+      "text": "The three ideals of the French Revolution"
+    },
+    {
+      "start": 167.64,
+      "end": 174.06,
+      "text": "Still flow at the foundation of every democratic society"
+    },
+    {
+      "start": 174.06,
+      "end": 177.02,
+      "text": "In the world today"
+    },
+    {
+      "start": 186.66,
+      "end": 187.38,
+      "text": "You"
+    }
+  ]
+}

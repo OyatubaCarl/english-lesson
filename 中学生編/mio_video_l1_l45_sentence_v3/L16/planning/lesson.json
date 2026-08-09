@@ -1,0 +1,198 @@
+{
+  "project_root": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成",
+  "audio": "taco_beat/songs/m16.mp3",
+  "chart": "taco_beat/charts/m16.js",
+  "title_en": "Lesson 16  Comparing My Family",
+  "title_ja": "家族を比べてみる",
+  "title_position": [540, 145],
+  "title_ja_position": [540, 225],
+  "slug": "l16_comparing_my_family_sentence_v3",
+  "duration": 33.436735,
+  "transition_duration": 0.26,
+  "sentence_image_count": 10,
+  "line_to_scene": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "lines": [
+    {
+      "start_index": 0,
+      "end_index": 15,
+      "en_words": ["When", "I", "compare", "the", "members", "of", "my", "family,", "each", "one", "is", "interesting", "in", "a", "different", "way."],
+      "break_after": [7],
+      "ja": "家族を比べてみると、一人ひとり違った面白さがあります。"
+    },
+    {
+      "start_index": 16,
+      "end_index": 22,
+      "en_words": ["My", "brother", "is", "much", "taller", "than", "me."],
+      "ja": "兄はわたしよりずっと背が高いです。"
+    },
+    {
+      "start_index": 23,
+      "end_index": 28,
+      "en_words": ["My", "sister", "is", "younger", "than", "me."],
+      "ja": "妹はわたしより年下です。"
+    },
+    {
+      "start_index": 29,
+      "end_index": 37,
+      "en_words": ["In", "my", "family,", "Pochi", "runs", "faster", "than", "anyone", "else."],
+      "ja": "家族の中では、ポチがほかの誰よりも速く走ります。"
+    },
+    {
+      "start_index": 38,
+      "end_index": 43,
+      "en_words": ["Today's", "dinner", "tasted", "better", "than", "yesterday's."],
+      "ja": "今日の夕食は昨日の夕食よりおいしかったです。"
+    },
+    {
+      "start_index": 44,
+      "end_index": 49,
+      "en_words": ["My", "mother", "tried", "a", "new", "recipe."],
+      "ja": "母が新しいレシピを試しました。"
+    },
+    {
+      "start_index": 50,
+      "end_index": 61,
+      "en_words": ["The", "book", "I'm", "reading", "now", "is", "more", "interesting", "than", "the", "old", "one."],
+      "break_after": [7],
+      "ja": "今読んでいる本は、前の本よりもっと面白いです。"
+    },
+    {
+      "start_index": 62,
+      "end_index": 68,
+      "en_words": ["Reading", "is", "more", "important", "than", "watching", "TV."],
+      "ja": "わたしにとって、読書はテレビを見るよりも大切です。"
+    },
+    {
+      "start_index": 69,
+      "end_index": 77,
+      "en_words": ["Spring", "days", "are", "warmer", "and", "longer", "than", "fall", "days."],
+      "ja": "春の日は秋の日より暖かく、日も長いです。"
+    },
+    {
+      "start_index": 78,
+      "end_index": 86,
+      "en_words": ["So", "every", "year,", "I", "wait", "for", "spring", "to", "come."],
+      "ja": "だから毎年、わたしは春が来るのを待ちます。"
+    }
+  ],
+  "shots": [
+    {
+      "image": "scenes/01_every_family_member_unique.png",
+      "start": 0.0,
+      "end": 5.364,
+      "start_center": [0.34, 0.50],
+      "end_center": [0.66, 0.49],
+      "start_zoom": 1.08,
+      "end_zoom": 1.06,
+      "intent": "異なる好きなことをしている家族5人とポチをゆっくり見渡す"
+    },
+    {
+      "image": "scenes/02_kenta_taller_than_mio.png",
+      "start": 5.364,
+      "end": 7.532,
+      "start_center": [0.42, 0.61],
+      "end_center": [0.60, 0.39],
+      "start_zoom": 1.09,
+      "end_zoom": 1.12,
+      "transition": "smoothleft",
+      "transition_duration": 0.18,
+      "intent": "ミオから高い棚に届くケンタへ視線を上げ身長差を示す"
+    },
+    {
+      "image": "scenes/03_saki_younger_than_mio.png",
+      "start": 7.532,
+      "end": 9.605,
+      "start_center": [0.62, 0.50],
+      "end_center": [0.40, 0.54],
+      "start_zoom": 1.08,
+      "end_zoom": 1.12,
+      "transition": "smoothleft",
+      "transition_duration": 0.18,
+      "intent": "姉らしく手伝うミオから幼いサキの表情へ寄る"
+    },
+    {
+      "image": "scenes/04_pochi_runs_fastest.png",
+      "start": 9.605,
+      "end": 13.647,
+      "start_center": [0.30, 0.53],
+      "end_center": [0.68, 0.48],
+      "start_zoom": 1.10,
+      "end_zoom": 1.04,
+      "transition": "circleopen",
+      "transition_duration": 0.22,
+      "intent": "走るきょうだいから先頭のポチへ進行方向に追う"
+    },
+    {
+      "image": "scenes/05_today_dinner_better.png",
+      "start": 13.647,
+      "end": 15.572,
+      "start_center": [0.36, 0.53],
+      "end_center": [0.61, 0.48],
+      "start_zoom": 1.08,
+      "end_zoom": 1.12,
+      "transition": "hblur",
+      "transition_duration": 0.18,
+      "intent": "薄い昨日の記憶から今日の料理とミオの表情へ移す"
+    },
+    {
+      "image": "scenes/06_mother_new_recipe.png",
+      "start": 15.572,
+      "end": 17.554,
+      "start_center": [0.38, 0.56],
+      "end_center": [0.60, 0.45],
+      "start_zoom": 1.08,
+      "end_zoom": 1.12,
+      "transition": "dissolve",
+      "transition_duration": 0.18,
+      "intent": "新しい材料と料理から母の工夫する表情へ寄る"
+    },
+    {
+      "image": "scenes/07_new_book_more_interesting.png",
+      "start": 17.554,
+      "end": 20.690,
+      "start_center": [0.34, 0.55],
+      "end_center": [0.63, 0.48],
+      "start_zoom": 1.08,
+      "end_zoom": 1.11,
+      "transition": "smoothleft",
+      "transition_duration": 0.20,
+      "intent": "閉じた前の本から夢中で読む今の本へ視線を移す"
+    },
+    {
+      "image": "scenes/08_reading_more_important_than_tv.png",
+      "start": 20.690,
+      "end": 25.073,
+      "start_center": [0.34, 0.48],
+      "end_center": [0.66, 0.51],
+      "start_zoom": 1.05,
+      "end_zoom": 1.11,
+      "transition": "dissolve",
+      "transition_duration": 0.22,
+      "intent": "消えたテレビから明るい読書灯の下のミオへ焦点を移す"
+    },
+    {
+      "image": "scenes/09_spring_warmer_longer_than_fall.png",
+      "start": 25.073,
+      "end": 29.075,
+      "start_center": [0.33, 0.48],
+      "end_center": [0.67, 0.49],
+      "start_zoom": 1.06,
+      "end_zoom": 1.06,
+      "transition": "hblur",
+      "transition_duration": 0.24,
+      "intent": "暖かく明るい春から早い夕暮れの秋へ同じ景色を比較する"
+    },
+    {
+      "image": "scenes/10_mio_waits_for_spring.png",
+      "start": 29.075,
+      "end": 33.436735,
+      "start_center": [0.40, 0.58],
+      "end_center": [0.58, 0.42],
+      "start_zoom": 1.10,
+      "end_zoom": 1.04,
+      "transition": "dissolve",
+      "transition_duration": 0.24,
+      "intent": "冬の小さな芽を見るミオから思い描く春の花へ広げる"
+    }
+  ]
+}

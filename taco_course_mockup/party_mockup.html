@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#2563eb">
+<title>🌮 タコス・パーティー — ミニゲーム試食会（モックアップ）</title>
+<style>
+:root{
+  --blue:#2563eb; --blue-dark:#1d4ed8; --blue-deep:#1e3a8a;
+  --bg:#eef4ff; --card:#ffffff; --ink:#1e293b; --ink-soft:#64748b;
+  --amber:#f59e0b; --orange:#f97316; --red:#ef4444; --green:#16a34a; --lime:#84cc16;
+  --pink:#ec4899; --cream:#fff7e6;
+  --radius:18px;
+  --shadow:0 4px 14px rgba(30,58,138,.12);
+  --shadow-lg:0 10px 30px rgba(30,58,138,.18);
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{
+  font-family:"Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  background:var(--bg); color:var(--ink); line-height:1.55;
+  overscroll-behavior-y:contain;
+}
+#app{max-width:480px;margin:0 auto;min-height:100dvh;position:relative}
+button{font-family:inherit;border:none;cursor:pointer;background:none;color:inherit}
+.screen{display:none;padding-bottom:56px;animation:scr-in .28s ease}
+.screen.active{display:block}
+@keyframes scr-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* ===== 共通部品 ===== */
+.ghead{
+  position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;
+  padding:10px 14px;background:linear-gradient(180deg,var(--blue),var(--blue-dark));
+  color:#fff;box-shadow:var(--shadow);
+}
+.ghead h2{font-size:17px;font-weight:800;letter-spacing:.02em;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.back{
+  flex-shrink:0;background:rgba(255,255,255,.18);color:#fff;border-radius:999px;
+  padding:7px 13px;font-size:13px;font-weight:700;transition:transform .12s;
+}
+.back:active{transform:scale(.92)}
+/* 説明モーダル（初回のみ表示・1〜2文で簡潔に） */
+.intro-bg{position:fixed;inset:0;background:rgba(15,23,42,.5);z-index:80;display:flex;align-items:center;justify-content:center;padding:24px}
+.intro-box{background:#fff;border-radius:20px;box-shadow:var(--shadow-lg);padding:22px 20px 20px;max-width:340px;width:100%;text-align:center;animation:scr-in .25s ease}
+.intro-box .ib-emoji{font-size:42px;line-height:1}
+.intro-box .ib-text{font-size:14.5px;font-weight:700;color:var(--ink);margin:12px 0 16px;line-height:1.75}
+.btn{
+  display:inline-block;border-radius:999px;font-weight:800;font-size:15px;
+  padding:12px 24px;transition:transform .12s,box-shadow .12s;text-decoration:none;text-align:center;
+}
+.btn:active{transform:scale(.94)}
+.btn.primary{background:linear-gradient(180deg,var(--orange),#ea580c);color:#fff;box-shadow:0 4px 0 #c2410c}
+.btn.primary:active{box-shadow:0 1px 0 #c2410c}
+.btn.blue{background:linear-gradient(180deg,var(--blue),var(--blue-dark));color:#fff;box-shadow:0 4px 0 var(--blue-deep)}
+.btn.ghost{background:#fff;color:var(--blue-dark);border:2px solid #bfdbfe}
+.mini-msg{min-height:22px;text-align:center;font-size:13.5px;font-weight:700;color:var(--blue-dark);padding:2px 14px}
+.progress-chip{
+  background:#dbeafe;color:var(--blue-deep);border-radius:999px;font-size:12px;
+  font-weight:800;padding:4px 12px;
+}
+#toast{
+  position:fixed;left:50%;bottom:76px;transform:translateX(-50%) translateY(20px);
+  background:rgba(30,41,59,.92);color:#fff;padding:9px 18px;border-radius:999px;
+  font-size:14px;font-weight:700;opacity:0;pointer-events:none;transition:.25s;z-index:99;
+  max-width:88vw;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.confetti{position:fixed;font-size:20px;z-index:98;pointer-events:none;animation:confetti .9s ease-out forwards}
+@keyframes confetti{to{transform:translate(var(--dx),var(--dy)) rotate(var(--rot));opacity:0}}
+.fly{position:fixed;z-index:97;pointer-events:none;font-size:20px;font-weight:800;
+  transition:transform .65s cubic-bezier(.3,.7,.4,1),opacity .65s;}
+
+/* ===== メニュー ===== */
+#scr-menu{padding-bottom:40px}
+.party-hero{
+  background:linear-gradient(175deg,var(--blue) 0%,var(--blue-dark) 78%,var(--blue-deep) 100%);
+  color:#fff;padding:0 0 26px;position:relative;overflow:hidden;
+  border-radius:0 0 30px 30px;box-shadow:var(--shadow-lg);
+}
+.party-hero::before{
+  content:"";position:absolute;inset:0;opacity:.14;
+  background:radial-gradient(circle 3px at 20% 30%,#fff 98%,transparent),
+             radial-gradient(circle 2px at 70% 20%,#ffd76e 98%,transparent),
+             radial-gradient(circle 3px at 85% 55%,#fff 98%,transparent),
+             radial-gradient(circle 2px at 40% 70%,#ffd76e 98%,transparent),
+             radial-gradient(circle 2px at 10% 80%,#fff 98%,transparent);
+  background-size:180px 180px;
+}
+.picado{display:flex;justify-content:space-between;padding:0 6px;position:relative;z-index:2}
+.picado::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:rgba(255,255,255,.65);border-radius:2px}
+.flag{
+  width:34px;height:40px;clip-path:polygon(0 0,100% 0,100% 62%,50% 100%,0 62%);
+  animation:sway 2.6s ease-in-out infinite alternate;transform-origin:top center;
+  background-image:radial-gradient(circle 4px at 50% 34%, rgba(255,255,255,.5) 97%, transparent);
+}
+.flag:nth-child(odd){animation-delay:-1.3s}
+.flag:nth-child(6n+1){background-color:var(--amber)}
+.flag:nth-child(6n+2){background-color:var(--pink)}
+.flag:nth-child(6n+3){background-color:var(--lime)}
+.flag:nth-child(6n+4){background-color:var(--orange)}
+.flag:nth-child(6n+5){background-color:#38bdf8}
+.flag:nth-child(6n){background-color:#fde047}
+@keyframes sway{from{transform:rotate(-4deg)}to{transform:rotate(4deg)}}
+.hero-body{position:relative;z-index:2;text-align:center;padding:16px 20px 0}
+.hero-taco{font-size:56px;display:inline-block;animation:bounce 2.2s ease-in-out infinite}
+@keyframes bounce{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-8px) rotate(4deg)}}
+.hero-body h1{font-size:25px;font-weight:900;letter-spacing:.04em;margin-top:2px;text-shadow:0 2px 0 rgba(0,0,0,.18)}
+.hero-body .lesson-tag{
+  display:inline-block;margin-top:8px;background:rgba(255,255,255,.16);
+  border:1.5px solid rgba(255,255,255,.45);border-radius:999px;padding:4px 14px;
+  font-size:12.5px;font-weight:700;
+}
+.hero-note{margin-top:10px;font-size:12px;opacity:.85}
+.table-strip{
+  margin:-14px 12px 0;position:relative;z-index:3;
+  background:linear-gradient(180deg,#c2712b,#a85d1e);border-radius:16px;
+  padding:8px 14px;color:#fff7e6;font-size:12.5px;font-weight:800;text-align:center;
+  box-shadow:var(--shadow);letter-spacing:.03em;
+}
+#menu-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:16px 12px 8px}
+.mcard{
+  background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:14px 12px 12px;text-align:left;position:relative;overflow:hidden;
+  border:2px solid transparent;transition:transform .12s;display:flex;flex-direction:column;gap:5px;
+}
+.mcard:active{transform:scale(.96)}
+.mcard .m-emoji{font-size:34px;line-height:1}
+.mcard .m-name{font-size:15px;font-weight:900;color:var(--blue-deep)}
+.mcard .m-sub{font-size:11px;color:var(--ink-soft);font-weight:600;min-height:2.6em}
+.mcard .m-state{
+  align-self:flex-start;font-size:10.5px;font-weight:800;border-radius:999px;padding:2.5px 10px;
+  background:#e2e8f0;color:#475569;
+}
+.mcard.is-done{border-color:var(--green)}
+.mcard.is-done .m-state{background:#dcfce7;color:var(--green)}
+.mcard.wide{grid-column:1/-1;flex-direction:row;align-items:center;gap:14px;
+  background:linear-gradient(135deg,#fff8ea,#ffe9c7);border:2px solid var(--amber)}
+.mcard.wide .m-sub{min-height:0}
+.mcard.wide.glow{animation:glow 1.6s ease-in-out infinite alternate}
+@keyframes glow{from{box-shadow:var(--shadow)}to{box-shadow:0 0 22px rgba(245,158,11,.55)}}
+.menu-foot{text-align:center;font-size:11.5px;color:var(--ink-soft);padding:8px 20px 20px}
+
+/* ===== 1. トルティーヤ（ソング/動画） ===== */
+.yt-sticky{position:sticky;top:46px;z-index:15;background:var(--bg);padding:8px 10px 6px;box-shadow:0 8px 12px -10px rgba(30,58,138,.3)}
+.yt-box{position:relative;width:100%;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000;box-shadow:var(--shadow-lg)}
+.yt-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.bake-gauge{display:flex;align-items:center;gap:12px;margin:8px 14px 4px}
+.bg-track{position:relative;flex:1;height:12px;border-radius:99px;background:#dbeafe;overflow:hidden}
+.bg-track i{display:block;height:100%;width:0%;border-radius:99px;background:linear-gradient(90deg,var(--amber),var(--orange));transition:width .4s}
+.bg-label{flex-shrink:0;font-size:12.5px;font-weight:900;color:var(--blue-deep);min-width:92px;text-align:right}
+/* コマル(鉄板)で焼けるトルティーヤ — 初版のぷっくり円形アニメをコンパクトに復活 */
+.comal-mini{display:flex;justify-content:center;padding:4px 0 0}
+.comal-mini .comal{
+  width:112px;height:112px;border-radius:50%;position:relative;
+  background:radial-gradient(circle at 42% 36%,#5b6470,#2f3540 68%,#20242c);
+  box-shadow:inset 0 4px 10px rgba(0,0,0,.5),0 6px 14px rgba(30,58,138,.22);
+  display:flex;align-items:center;justify-content:center;
+}
+.comal-mini .tortilla{width:74px;height:74px;position:relative}
+.comal-mini .tortilla.cooking{animation:puff 1.5s ease-in-out infinite alternate}
+@keyframes puff{from{transform:scale(1)}to{transform:scale(1.06,1.11)}}
+.comal-mini .t-inner{
+  width:100%;height:100%;border-radius:50%;position:relative;overflow:hidden;background:#f8ecce;
+  box-shadow:inset 0 -3px 6px rgba(160,110,40,.25),0 2px 5px rgba(0,0,0,.3);
+  transition:background-color .5s,transform .4s;
+}
+.comal-mini .spot{position:absolute;border-radius:50%;background:radial-gradient(#9a5a20,#b97a3a 70%,transparent);opacity:0;transition:opacity .6s}
+.comal-mini .steam{position:absolute;top:-14px;left:0;right:0;display:flex;justify-content:center;gap:10px;opacity:0;transition:.4s}
+.comal-mini .comal.hot .steam{opacity:1}
+.comal-mini .steam span{font-size:14px;animation:steam 1.8s ease-in infinite}
+.comal-mini .steam span:nth-child(2){animation-delay:.6s}
+.comal-mini .steam span:nth-child(3){animation-delay:1.2s}
+@keyframes steam{0%{transform:translateY(4px);opacity:0}30%{opacity:.9}100%{transform:translateY(-18px);opacity:0}}
+.t-controls{display:flex;justify-content:center;gap:10px;padding:8px 0 0}
+.lyrics-acc{margin:10px 14px 20px;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.lyrics-acc summary{cursor:pointer;padding:11px 16px;font-size:13.5px;font-weight:900;color:var(--blue-deep);list-style:none}
+.lyrics-acc summary::-webkit-details-marker{display:none}
+.lyrics-acc summary::before{content:"▸ "}
+.lyrics-acc[open] summary::before{content:"▾ "}
+.lyrics{list-style:none;padding:0 10px 12px;max-height:240px;overflow-y:auto}
+.lyrics li{padding:5px 14px;border-radius:10px;font-size:13.5px;color:var(--ink-soft);font-weight:600}
+.lyrics li .lj{display:block;font-size:10.5px;opacity:.75}
+
+/* ===== 2. サルサ ===== */
+.salsa-stage{display:flex;flex-direction:column;align-items:center;padding-top:8px}
+.salsa-q{
+  margin:8px 14px;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:16px 18px;text-align:center;width:calc(100% - 28px);
+}
+.salsa-q .s-en{font-size:21px;font-weight:900;letter-spacing:.01em}
+.salsa-q .s-en .blank{
+  display:inline-block;min-width:74px;border-bottom:3px solid var(--red);color:var(--red);
+  font-weight:900;margin:0 4px;transition:.3s;
+}
+.salsa-q .s-en .blank.filled{border-color:var(--green);color:var(--green)}
+.salsa-q .s-ja{font-size:12.5px;color:var(--ink-soft);margin-top:6px;font-weight:600}
+.molca-zone{position:relative;height:150px;width:100%;display:flex;justify-content:center;align-items:flex-end}
+.molca{
+  width:150px;height:86px;border-radius:0 0 78px 78px;position:relative;overflow:hidden;
+  background:radial-gradient(circle at 40% 20%,#6b7280,#3f4652 70%,#2b303a);
+  box-shadow:inset 0 8px 12px rgba(0,0,0,.4),0 6px 14px rgba(30,58,138,.2);
+}
+.salsa-fill{position:absolute;bottom:0;left:8%;width:84%;height:0%;transition:height .6s;
+  background:radial-gradient(circle at 50% 0%,#f87171,#dc2626 60%,#b91c1c);border-radius:0 0 70px 70px}
+.pestle{
+  position:absolute;bottom:56px;left:calc(50% + 28px);width:26px;height:74px;border-radius:14px;
+  background:linear-gradient(90deg,#9ca3af,#6b7280);transform:rotate(-32deg);transform-origin:bottom center;
+  box-shadow:0 3px 6px rgba(0,0,0,.3);
+}
+.pestle.grind{animation:grind .3s ease-in-out 4}
+@keyframes grind{0%,100%{transform:rotate(-32deg)}50%{transform:rotate(-6deg) translateY(6px)}}
+.bottle-row{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:12px 16px;width:100%}
+.bottle{
+  background:var(--card);border:2px solid #bfdbfe;border-radius:16px;box-shadow:var(--shadow);
+  padding:10px 8px 12px;display:flex;flex-direction:column;align-items:center;gap:3px;
+  transition:transform .12s;position:relative;
+}
+.bottle:active{transform:scale(.94)}
+.bottle .b-cap{width:34px;height:9px;border-radius:4px 4px 0 0;background:#94a3b8;margin-bottom:4px}
+.bottle .b-word{font-size:16px;font-weight:900;color:var(--blue-deep)}
+/* ボトルは絵文字ラベルなしの色分けのみ（判断材料は英単語） */
+.bottle.c0{background:linear-gradient(180deg,#fff,#fee2e2);border-color:#fca5a5}
+.bottle.c0 .b-cap{background:#ef4444}
+.bottle.c1{background:linear-gradient(180deg,#fff,#ffedd5);border-color:#fdba74}
+.bottle.c1 .b-cap{background:#f97316}
+.bottle.c2{background:linear-gradient(180deg,#fff,#dcfce7);border-color:#86efac}
+.bottle.c2 .b-cap{background:#16a34a}
+.bottle.c3{background:linear-gradient(180deg,#fff,#ede9fe);border-color:#c4b5fd}
+.bottle.c3 .b-cap{background:#8b5cf6}
+.bottle.refuse{animation:refuse .4s}
+@keyframes refuse{0%,100%{transform:none}20%,60%{transform:translateX(-7px) rotate(-4deg)}40%,80%{transform:translateX(7px) rotate(4deg)}}
+.bottle.poured{opacity:.25;pointer-events:none;filter:grayscale(1)}
+.salsa-dots{display:flex;gap:8px;justify-content:center;padding-top:4px}
+.salsa-dots i{width:14px;height:14px;border-radius:50%;background:#e2e8f0;transition:.3s}
+.salsa-dots i.hit{background:var(--red);transform:scale(1.2)}
+
+/* ===== 元アプリ(app.html)移植 共通UI — 配色も元アプリ準拠 ===== */
+.ap-view{display:flex;flex-direction:column;gap:12px;padding:12px 14px}
+.qmeta{display:flex;justify-content:space-between;font-size:.72rem;font-weight:800;color:#6B5A47;font-variant-numeric:tabular-nums}
+.textcard{background:#FFFDF7;border:1px solid #E6D5BC;border-radius:16px;padding:14px;box-shadow:0 2px 6px rgba(74,50,30,.08)}
+.abtn{
+  display:flex;align-items:center;justify-content:center;gap:8px;background:#C73E1D;color:#fff;border:none;
+  border-radius:13px;padding:13px 16px;font-size:.95rem;font-weight:800;cursor:pointer;font-family:inherit;width:100%;
+  box-shadow:0 3px 0 #A93318;transition:transform .1s;
+}
+.abtn:disabled{opacity:.5;cursor:not-allowed}
+.abtn:active{transform:scale(.975)}
+.abtn.green{background:#4A7C59;box-shadow:0 3px 0 #2F5E3E}
+.abtn.soft{background:#F6EDDD;color:#2A1F14;border:1px solid #E6D5BC;box-shadow:none}
+.ap-banner{border-radius:12px;padding:11px 13px;font-size:.85rem;font-weight:800;display:flex;align-items:center;gap:8px}
+.ap-banner.ok{background:#EAF4EC;color:#2F5E3E}
+.ap-banner.ng{background:#FCE4E0;color:#8E1D16}
+.ap-banner.info{background:#FCEDE4;color:#A93318}
+.ap-banner.listening{animation:barPulse 1s ease-in-out infinite alternate}
+@keyframes barPulse{from{opacity:1}to{opacity:.35}}
+.ap-note{font-size:.75rem;color:#9A8770;text-align:center;line-height:1.5}
+.expl{margin-top:10px;border-radius:12px;padding:11px 13px;font-size:.84rem;line-height:1.7;border:1px solid #E6D5BC}
+.expl.ok{background:#EAF4EC;color:#2F5E3E;border-color:#4A7C59}
+.expl.ng{background:#FFF3D6;color:#7c4a03;border-color:#E8B647}
+.expl b{font-weight:800}
+.choices{display:flex;flex-direction:column;gap:9px}
+.choice{
+  display:flex;align-items:center;gap:10px;background:#FFFDF7;border:1.5px solid #E6D5BC;border-radius:11px;
+  padding:12px 14px;font-size:.92rem;font-weight:700;cursor:pointer;font-family:inherit;text-align:left;color:#2A1F14;transition:.1s;
+}
+.choice .k{width:22px;height:22px;border-radius:6px;background:#F6EDDD;display:grid;place-items:center;font-size:.75rem;font-weight:800;color:#6B5A47;flex:none}
+.choice.tap:hover{border-color:#C73E1D;background:#FCEDE4}
+.choice.correct{background:#EAF4EC;border-color:#4A7C59;color:#2F5E3E}
+.choice.correct .k{background:#4A7C59;color:#fff}
+.choice.wrong{background:#FCE4E0;border-color:#D2342B;color:#8E1D16}
+.choice.wrong .k{background:#D2342B;color:#fff}
+.choice:disabled{cursor:default}
+.choice.shake{animation:shake .3s}
+@keyframes shake{0%,100%{transform:none}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.vmark{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:90;animation:vfade .78s ease forwards}
+.vmark span{font-weight:900;line-height:1;text-shadow:2px 2px 12px rgba(0,0,0,.28);animation:vrainbow 1.1s linear infinite,vwave 1.1s ease-in-out infinite}
+.vmark.sym span{font-size:130px}
+.vmark.txt span{font-size:2.4rem;white-space:nowrap}
+.vmark.ng span{color:#D2342B!important;animation:vwave 1.1s ease-in-out infinite;text-shadow:2px 2px 12px rgba(210,52,43,.3)}
+@keyframes vfade{0%{opacity:0;transform:scale(.7)}15%{opacity:1;transform:scale(1.06)}76%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1)}}
+@keyframes vrainbow{0%,100%{color:#2563eb}14%{color:#f59e0b}28%{color:#eab308}42%{color:#10b981}57%{color:#06b6d4}71%{color:#8b5cf6}85%{color:#ec4899}}
+@keyframes vwave{0%,100%{transform:translateY(0)}20%{transform:translateY(-12px)}40%{transform:translateY(2px)}60%{transform:translateY(0)}80%{transform:translateY(-6px)}}
+.okflash{
+  position:fixed;inset:0;display:flex;align-items:center;justify-content:center;z-index:90;pointer-events:none;
+  font-size:7rem;font-weight:900;color:#4A7C59;animation:okpop .9s ease-out forwards;
+  text-shadow:0 0 32px rgba(16,185,129,.55);
+}
+@keyframes okpop{0%{transform:scale(.4);opacity:0}18%{transform:scale(1.12);opacity:1}72%{transform:scale(1);opacity:1}100%{transform:scale(1);opacity:0}}
+
+/* ===== 3. トマト（新出単語 — 元アプリ stepVocab 移植） ===== */
+.jpmix{font-size:1.1rem;line-height:2.5;font-weight:500;color:#2A1F14}
+.vword{font-family:Georgia,"Times New Roman",serif;color:#C73E1D;font-weight:700;border-bottom:2px dotted #C73E1D;cursor:pointer;padding:0 3px;border-radius:4px;transition:background .1s;white-space:nowrap}
+.vword:hover{background:#FCEDE4}
+.vword.done{color:#2F5E3E;border-bottom:none;cursor:default;background:none}
+.vword.done ruby{color:#2F5E3E}
+.vword ruby rt{font-size:.42em;color:#2F5E3E;font-weight:800;font-family:inherit}
+.vsheet-bg{position:fixed;inset:0;background:rgba(15,23,42,.4);z-index:60;display:flex;align-items:flex-end;justify-content:center}
+.vsheet{background:#FFFDF7;width:100%;max-width:480px;border-radius:18px 18px 0 0;padding:16px 16px 20px;box-shadow:0 -12px 34px rgba(0,0,0,.25);animation:sheetup .24s cubic-bezier(.16,1,.3,1)}
+@keyframes sheetup{from{transform:translateY(100%)}to{transform:none}}
+.vsheet .vh{display:flex;align-items:center;gap:10px}
+.vsheet .vh .w{font-family:Georgia,serif;font-size:1.55rem;font-weight:700;color:#C73E1D}
+.vsheet .vh .spk{margin-left:auto;width:40px;height:40px;border-radius:50%;background:#FCEDE4;color:#C73E1D;border:none;font-size:1.15rem;cursor:pointer}
+.vsheet .vq{font-size:.76rem;color:#6B5A47;font-weight:800;margin:12px 0 9px}
+
+/* ===== 4. レタス ===== */
+.lettuce-top{display:flex;align-items:center;justify-content:space-between;margin:10px 14px 6px;gap:8px}
+.lq{
+  flex:1;background:var(--card);border-radius:14px;box-shadow:var(--shadow);
+  padding:10px 14px;text-align:center;font-size:19px;font-weight:900;color:var(--blue-deep);
+}
+.lq small{display:block;font-size:10.5px;color:var(--ink-soft);font-weight:700}
+.lettuce-field{
+  position:relative;height:46vh;min-height:300px;margin:8px 14px;border-radius:var(--radius);
+  overflow:hidden;background:linear-gradient(180deg,#dbeafe 0%,#eff6ff 60%,#dcfce7 100%);
+  box-shadow:inset 0 0 0 2px #bfdbfe;touch-action:manipulation;
+}
+.lettuce{
+  position:absolute;width:80px;height:80px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(circle at 34% 30%,#bef264,#65a30d 72%,#4d7c0f);
+  box-shadow:inset -4px -6px 10px rgba(0,0,0,.18),0 4px 10px rgba(77,124,15,.35);
+  will-change:transform;
+}
+.lettuce::before{content:"";position:absolute;inset:6px;border-radius:50%;border:3px dashed rgba(255,255,255,.4)}
+.lettuce .lw{background:rgba(255,255,255,.92);border-radius:8px;padding:2px 7px;font-size:13.5px;font-weight:900;color:#3f6212;z-index:1;max-width:74px;text-align:center;word-break:break-all;line-height:1.2}
+.lettuce.nope{filter:hue-rotate(120deg) saturate(.6)}
+.lettuce.chopped{animation:chopfx .5s forwards}
+@keyframes chopfx{30%{transform:var(--tf) scale(1.15)}100%{transform:var(--tf) scale(0);opacity:0}}
+.knife-slash{
+  position:absolute;font-size:38px;z-index:6;pointer-events:none;animation:slash .4s ease-out forwards;
+}
+@keyframes slash{from{transform:translate(-60px,-40px) rotate(-20deg);opacity:1}to{transform:translate(50px,30px) rotate(30deg);opacity:0}}
+.combo-badge{
+  min-width:86px;text-align:center;background:#dcfce7;border-radius:12px;padding:7px 8px;
+  font-size:11px;font-weight:900;color:var(--green);box-shadow:var(--shadow);
+}
+.combo-badge b{display:block;font-size:16px}
+.pop-word{position:absolute;z-index:7;font-size:17px;font-weight:900;color:#166534;pointer-events:none;animation:popword .7s ease-out forwards;text-shadow:0 1px 0 #fff}
+@keyframes popword{from{transform:translateY(0);opacity:1}to{transform:translateY(-42px);opacity:0}}
+
+/* ===== 5. チーズ（シャドウ — 元アプリ stepShadow 移植。チーズは横型進行バーのみ） ===== */
+.cheese-bar-wrap{display:flex;align-items:center;gap:10px;margin:10px 14px 0;font-size:18px}
+.cheese-bar{position:relative;flex:1;height:16px;border-radius:9px;background:#fefce8;box-shadow:inset 0 0 0 2px #fde68a}
+.cheese-bar i{
+  position:absolute;left:0;top:0;height:100%;width:0%;border-radius:9px;
+  background:linear-gradient(180deg,#fde047,#f59e0b);transition:width .6s;
+}
+.cheese-bar i::after{content:"";position:absolute;right:2px;top:100%;width:9px;height:9px;border-radius:0 0 7px 7px;background:#f59e0b}
+.cheese-bar-label{flex-shrink:0;font-size:12px;font-weight:900;color:var(--blue-deep);font-variant-numeric:tabular-nums}
+.shline{font-family:Georgia,serif;font-size:1.12rem;line-height:2.3;color:#2A1F14}
+.sh-word{padding:1px 3px;border-radius:5px;transition:background .18s,color .18s}
+.sh-word.matched,.sh-word.auto-matched{background:#EAF4EC;color:#2F5E3E;font-weight:700}
+.shline.reclive{box-shadow:0 0 0 2px #ef4444 inset;border-radius:10px;transition:box-shadow .2s}
+.sh-jp{font-size:.8rem;color:#6B5A47;margin-top:10px;border-top:1px solid #F0E5D2;padding-top:9px}
+.recbtn{
+  display:flex;align-items:center;justify-content:center;gap:9px;background:#ef4444;color:#fff;border:none;border-radius:12px;
+  padding:12px;font-weight:800;font-size:.92rem;box-shadow:0 6px 18px rgba(239,68,68,.42);width:100%;
+}
+.recbtn .rdot{width:13px;height:13px;border-radius:50%;background:#fff;animation:recpulse 1s ease-out infinite}
+@keyframes recpulse{0%{opacity:1;transform:scale(.8)}70%{opacity:.55;transform:scale(1.15)}100%{opacity:1;transform:scale(.8)}}
+.hf-chip{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#F6EDDD;border:1px solid #E6D5BC;border-radius:12px;padding:9px 12px}
+.hf-chip .lb{font-size:.82rem;font-weight:800;color:#2A1F14}
+.hf-chip .desc{font-size:.68rem;color:#6B5A47}
+.switch{position:relative;display:inline-block;width:46px;height:26px;flex:none}
+.switch input{opacity:0;width:0;height:0}
+.switch span{position:absolute;inset:0;border-radius:999px;background:#d6c7ae;transition:.2s;cursor:pointer}
+.switch span::before{content:"";position:absolute;left:3px;top:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:.2s;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+.switch input:checked+span{background:#4A7C59}
+.switch input:checked+span::before{transform:translateX(20px)}
+
+/* ===== 6. タコミート ===== */
+.meat-card{margin:16px 14px;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px 18px;text-align:center}
+.meat-card .big{font-size:52px}
+.meat-card h3{font-size:18px;font-weight:900;color:var(--blue-deep);margin:6px 0 8px}
+.meat-card p{font-size:13px;color:var(--ink-soft);font-weight:600;margin-bottom:14px}
+.adopted{
+  display:inline-block;background:#dcfce7;color:var(--green);border:2px solid var(--green);
+  border-radius:999px;font-size:12px;font-weight:900;padding:5px 16px;margin-bottom:16px;
+}
+
+/* ===== 7. ドロップ＆ライム（内容理解 並べ替え×ライム絞り） ===== */
+.guac-foot{display:flex;align-items:center;justify-content:center;gap:14px;margin:12px 14px}
+.lime-sq{font-size:40px;display:inline-block}
+.lime-sq.squeeze{animation:squeeze .9s ease-in-out 2}
+.jcup{
+  width:64px;height:78px;border-radius:8px 8px 14px 14px;position:relative;overflow:hidden;
+  background:linear-gradient(180deg,rgba(255,255,255,.6),rgba(219,234,254,.45));
+  box-shadow:inset 0 0 0 2.5px #bfdbfe,0 4px 10px rgba(30,58,138,.15);
+}
+.jfill{position:absolute;bottom:0;left:0;width:100%;height:0%;transition:height .5s;
+  background:linear-gradient(180deg,#d9f99d,#a3e635 70%,#84cc16)}
+.jcup .j-label{position:absolute;top:3px;width:100%;text-align:center;font-size:10px;color:#3f6212;font-weight:800}
+/* 並べ替え（元アプリ reorderProblem 移植: タップ=末尾追加＋英語音声／ドラッグ=好きな位置へ） */
+.ro-prompt{background:#F6EDDD;border:1px solid #E6D5BC;border-radius:12px;padding:11px 13px;margin-top:2px}
+.ro-prompt .lb{font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:#9A8770}
+.ro-prompt .tx{font-size:1.05rem;font-weight:700;margin-top:2px;color:#2A1F14}
+.ro-prompt.en .tx{font-family:Georgia,serif}
+.ro-answer{
+  min-height:52px;border:2px dashed #E6D5BC;border-radius:12px;padding:8px;margin-top:10px;
+  display:flex;flex-wrap:wrap;gap:7px;align-content:flex-start;background:#FFFDF7;
+}
+.ro-answer.correct{border-style:solid;border-color:#4A7C59;background:#EAF4EC}
+.ro-answer.wrong{border-style:solid;border-color:#D2342B;background:#FCE4E0;animation:shake .3s}
+.ro-answer:empty::before{content:'ここに並べよう';color:#9A8770;font-size:.8rem;align-self:center;padding:6px}
+.ro-bank{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;min-height:46px}
+.ro-tile{
+  background:#FFFDF7;border:1.5px solid #E6D5BC;border-bottom-width:3px;border-radius:10px;
+  padding:9px 13px;font-size:.96rem;font-weight:700;color:#2A1F14;cursor:pointer;font-family:inherit;
+  box-shadow:0 2px 6px rgba(74,50,30,.08);transition:transform .1s,opacity .15s,background .12s;
+}
+.ro-tile.en{font-family:Georgia,serif}
+.ro-tile:active{transform:translateY(1px)}
+.ro-answer .ro-tile{border-bottom-width:2px;box-shadow:none}
+.ro-ghost{position:fixed;z-index:120;pointer-events:none;transform:translate(-50%,-50%) scale(1.06);opacity:.96;box-shadow:0 10px 26px rgba(0,0,0,.3);background:#FFFDF7}
+.ro-gap{display:inline-block;width:3px;align-self:stretch;min-height:38px;background:#C73E1D;border-radius:2px;margin:0 2px;animation:gapPulse .6s ease-in-out infinite alternate}
+@keyframes gapPulse{from{opacity:.45}to{opacity:1}}
+.lime-fx{font-size:46px;display:inline-block}
+.lime-fx.squeeze{animation:squeeze .9s ease-in-out 2}
+@keyframes squeeze{0%,100%{transform:scale(1,1)}50%{transform:scale(1.25,.62)}}
+.lime-drop{position:absolute;font-size:16px;animation:limedrop .7s ease-in forwards}
+@keyframes limedrop{from{transform:translateY(0);opacity:1}to{transform:translateY(56px);opacity:0}}
+
+/* ===== 8. 完成演出 ===== */
+#scr-final{background:var(--bg)}
+.final-stage{position:relative;height:360px;margin:12px 14px;overflow:hidden;border-radius:var(--radius);
+  background:linear-gradient(180deg,#dbeafe,#eef4ff 70%,#fde68a55);box-shadow:var(--shadow)}
+.ing-row{position:absolute;top:12px;left:0;width:100%;display:flex;justify-content:center;gap:6px}
+.ing-row span{font-size:26px;opacity:0;transform:scale(.2);transition:transform .35s cubic-bezier(.3,1.6,.5,1),opacity .3s}
+.ing-row span.in{opacity:1;transform:scale(1)}
+.taco-build{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);width:250px;height:220px}
+.tlayer{position:absolute;left:50%;transform:translate(-50%,46px);opacity:0;transition:transform .5s cubic-bezier(.3,1.4,.5,1),opacity .4s}
+.tlayer.in{opacity:1;transform:translate(-50%,0)}
+.shell-back{bottom:0;width:236px;height:124px;border-radius:0 0 120px 120px;background:linear-gradient(180deg,#d9a24a,#c08a35);z-index:1}
+.layer-meat{bottom:78px;width:186px;height:34px;border-radius:16px;z-index:2;
+  background:radial-gradient(circle 6px at 20% 40%,#6b3d21 96%,transparent),radial-gradient(circle 7px at 45% 60%,#7c4526 96%,transparent),radial-gradient(circle 6px at 70% 35%,#6b3d21 96%,transparent),radial-gradient(circle 7px at 88% 55%,#7c4526 96%,transparent),#8a4b2d}
+.layer-lettuce{bottom:100px;width:196px;height:26px;border-radius:14px;z-index:3;
+  background:radial-gradient(circle 9px at 12% 20%,#86efac 96%,transparent),radial-gradient(circle 10px at 38% 10%,#4ade80 96%,transparent),radial-gradient(circle 9px at 64% 22%,#86efac 96%,transparent),radial-gradient(circle 10px at 88% 12%,#4ade80 96%,transparent),#22c55e}
+.layer-tomato{bottom:118px;width:170px;height:20px;border-radius:10px;z-index:4;
+  background:radial-gradient(circle 5px at 22% 50%,#fecaca 96%,transparent),radial-gradient(circle 5px at 55% 45%,#fecaca 96%,transparent),radial-gradient(circle 5px at 82% 55%,#fecaca 96%,transparent),#ef4444}
+.layer-cheese{bottom:134px;width:150px;height:16px;border-radius:8px;z-index:5;
+  background:repeating-linear-gradient(90deg,#fbbf24 0 9px,#fde047 9px 18px)}
+.layer-salsa{bottom:148px;width:120px;height:11px;border-radius:6px;background:#dc2626;z-index:6}
+/* 仕上げ: タコスの上でライムをギュッと絞る */
+.final-lime{
+  position:absolute;top:14%;left:50%;margin-left:-21px;font-size:42px;line-height:1;
+  opacity:0;transition:opacity .3s;z-index:10;
+}
+.final-lime.show{opacity:1}
+.final-lime.squeezing{animation:squeeze .9s ease-in-out 2}
+.shell-front{bottom:0;width:240px;height:112px;border-radius:0 0 118px 118px;z-index:8;
+  background:radial-gradient(circle 5px at 25% 45%,#e7b866 96%,transparent),radial-gradient(circle 5px at 60% 60%,#e7b866 96%,transparent),radial-gradient(circle 5px at 82% 40%,#e7b866 96%,transparent),linear-gradient(180deg,#f6ce7d,#dfa64c)}
+.bite{position:absolute;border-radius:50%;background:var(--bg);z-index:9;opacity:0;transform:scale(.3)}
+.bite.on{opacity:1;transform:scale(1);transition:transform .18s cubic-bezier(.3,1.5,.5,1),opacity .1s}
+.final-word{
+  position:absolute;top:44%;left:0;width:100%;text-align:center;font-size:30px;font-weight:900;
+  color:var(--blue-deep);opacity:0;transform:scale(.4);z-index:12;text-shadow:0 2px 0 #fff;
+}
+.final-word.show{opacity:1;transform:scale(1);transition:transform .35s cubic-bezier(.3,1.6,.5,1),opacity .2s}
+.star-fx{position:absolute;font-size:22px;z-index:11;pointer-events:none;animation:starfly .8s ease-out forwards}
+@keyframes starfly{to{transform:translate(var(--dx),var(--dy)) rotate(200deg);opacity:0}}
+.final-ctrl{display:flex;justify-content:center;gap:10px;padding:4px 0 14px}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01s !important;transition-duration:.01s !important}
+}
+</style>
+</head>
+<body>
+<div id="app">
+
+  <!-- ========== メニュー ========== -->
+  <section id="scr-menu" class="screen active">
+    <div class="party-hero">
+      <div class="picado" id="picado"></div>
+      <div class="hero-body">
+        <span class="hero-taco">🌮</span>
+        <h1>タコス・パーティー</h1>
+        <span class="lesson-tag">Lesson B1 — Tom at the Gate</span>
+        <div class="hero-note">具材あつめミニゲーム 試食会（モックアップ）</div>
+      </div>
+    </div>
+    <div class="table-strip">🎉 7つの具材を集めて タコスを完成させよう 🎉</div>
+    <nav id="menu-cards" aria-label="ミニゲーム一覧"></nav>
+    <div class="menu-foot">各カードをタップして実際に遊べます。<br>クリア状況はこの端末に保存されます。</div>
+  </section>
+
+  <!-- ========== 1. トルティーヤ（ソング/動画） ========== -->
+  <section id="scr-tortilla" class="screen">
+    <div class="ghead"><button class="back">← もどる</button><h2>🫓 ソング・トルティーヤ</h2></div>
+    <div class="yt-sticky">
+      <div class="yt-box">
+        <iframe id="ytFrame"
+          src="https://www.youtube.com/embed/JG6OjXpvUiM?enablejsapi=1&amp;playsinline=1&amp;rel=0"
+          title="Tom at the Gate（歌の動画）"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="bake-gauge">
+      <div class="bg-track"><i id="bakeBar"></i></div>
+      <div class="bg-label" id="bakeLabel">焼き加減 0%</div>
+    </div>
+    <div class="comal-mini">
+      <div class="comal" id="comal">
+        <div class="tortilla" id="tortillaMini"><div class="t-inner" id="tortillaInner"></div></div>
+        <div class="steam"><span>♨️</span><span>🎵</span><span>♨️</span></div>
+      </div>
+    </div>
+    <div class="t-controls">
+      <button id="tortDone" class="btn primary">▶ 見終わった！（焼き上げる）</button>
+    </div>
+    <div class="mini-msg" id="tortMsg"></div>
+    <details class="lyrics-acc">
+      <summary>📝 歌詞を見る</summary>
+      <ol class="lyrics" id="lyrics"></ol>
+    </details>
+  </section>
+
+  <!-- ========== 2. サルサ（文法穴埋め） ========== -->
+  <section id="scr-salsa" class="screen">
+    <div class="ghead"><button class="back">← もどる</button><h2>🥫 サルサグラマー（文法穴埋め）</h2></div>
+    <div class="salsa-stage">
+      <div class="salsa-q">
+        <div class="s-en" id="salsaEn"></div>
+        <div class="s-ja" id="salsaJa"></div>
+      </div>
+      <div class="molca-zone">
+        <div class="molca" id="molca"><div class="salsa-fill" id="salsaFill"></div></div>
+        <div class="pestle" id="pestle"></div>
+      </div>
+      <div class="salsa-dots" id="salsaDots"><i></i><i></i><i></i></div>
+      <div class="bottle-row" id="bottleRow"></div>
+      <div class="mini-msg" id="salsaMsg"></div>
+    </div>
+  </section>
+
+  <!-- ========== 3. トマトマト（新出単語 — 元アプリ stepVocab 移植） ========== -->
+  <section id="scr-tomato" class="screen">
+    <div class="ghead"><button class="back">← もどる</button><h2>🍅 トマトマト（新出単語）</h2></div>
+    <div class="ap-view" id="tomatoView"></div>
+  </section>
+
+  <!-- ========== 4. レタス・スラッシュ（単語テスト） ========== -->
+  <section id="scr-lettuce" class="screen">
+    <div class="ghead"><button class="back">← もどる</button><h2>🥬 レタス・スラッシュ</h2></div>
+    <div class="lettuce-top">
+      <div class="lq"><small id="lqNum"></small><span id="lqJa"></span></div>
+      <div class="combo-badge">コンボ<b id="comboNum">-</b></div>
+    </div>
+    <div class="lettuce-field" id="lettuceField"></div>
+    <div class="mini-msg" id="lettuceMsg"></div>
+  </section>
+
+  <!-- ========== 5. チーズ（シャドウイング — 元アプリ stepShadow 移植） ========== -->
+  <section id="scr-cheese" class="screen">
+    <div class="ghead"><button class="back">← もどる</button><h2>🧀 チーズ・シャドウイング</h2></div>
+    <div class="cheese-bar-wrap">
+      <span>🧀</span>
+      <div class="cheese-bar"><i id="cheeseBarFill"></i></div>
+      <span class="cheese-bar-label" id="cheeseBarLabel">0 / 10</span>
+    </div>
+    <div class="ap-view" id="cheeseView"></div>
+  </section>
+
+  <!-- ========== 6. タコミート ========== -->
+  <section id="scr-meat" class="screen">
+    <div class="ghead"><button class="back">← もどる</button><h2>🥩 タコミート（タコス・ビート）</h2></div>
+    <div class="meat-card">
+      <div class="big">🥩🥁</div>
+      <h3>タコミート = 歌リズムゲーム「タコス・ビート」</h3>
+      <div><span class="adopted">✅ 既存のまま採用（ユーザー確定済み）</span></div>
+      <p>歌のリズムに合わせて単語をタップする音ゲー。この工程はすでに完成している本物のアプリをそのまま使います。ここではモック化せず、実物へのリンクだけ置いています。</p>
+      <a class="btn blue" href="https://taco-beat.pages.dev/?song=b1" target="_blank" rel="noopener">🥁 本物で遊ぶ（B1の歌）→</a>
+    </div>
+  </section>
+
+  <!-- ========== 7. ドロップ＆ライム（内容理解 並べ替え — 元アプリ reorderProblem 移植） ========== -->
+  <section id="scr-guac" class="screen">
+    <div class="ghead"><button class="back">← もどる</button><h2>🍋 ドロップ＆ライム（並べ替え）</h2></div>
+    <div class="ap-view" id="guacView"></div>
+    <div class="guac-foot">
+      <span style="position:relative"><span class="lime-sq" id="limeSq">🍋</span><span id="guacDropZone"></span></span>
+      <div class="jcup"><div class="jfill" id="juiceFill"></div><div class="j-label">果汁</div></div>
+    </div>
+    <div class="mini-msg" id="guacMsg"></div>
+  </section>
+
+  <!-- ========== 8. 完成演出 ========== -->
+  <section id="scr-final" class="screen">
+    <div class="ghead"><button class="back">← もどる</button><h2>🌮 タコス完成！（演出）</h2></div>
+    <div class="final-stage" id="finalStage">
+      <div class="ing-row" id="ingRow"></div>
+      <div class="taco-build" id="tacoBuild">
+        <div class="tlayer shell-back"></div>
+        <div class="tlayer layer-meat"></div>
+        <div class="tlayer layer-lettuce"></div>
+        <div class="tlayer layer-tomato"></div>
+        <div class="tlayer layer-cheese"></div>
+        <div class="tlayer layer-salsa"></div>
+        <div class="tlayer shell-front"></div>
+      </div>
+      <div class="final-lime" id="finalLime">🍋<span id="finalLimeDrops"></span></div>
+      <div class="final-word" id="finalWord"></div>
+    </div>
+    <div class="final-ctrl">
+      <button class="btn primary" id="finalPlay">▶ 完成演出を再生</button>
+    </div>
+    <div class="mini-msg" id="finalMsg"></div>
+  </section>
+
+</div>
+<div id="toast" role="status"></div>
+
+<script>
+"use strict";
+/* =========================================================
+   データ — 元アプリ app.html の手作りレッスン L12（B1 "Tom at the Gate"）
+   から忠実に転記。サルサ/トマト/チーズ/ライムは元アプリと同一の問題セット。
+   ========================================================= */
+const LESSON = {
+  b: 1, title: "Tom at the Gate",
+  /* 歌詞カード用（本サイトの歌詞。動画にも歌詞表示あり） */
+  sentences: [
+    { en: "Hello! Welcome to Funnics Island.",           ja: "こんにちは！ファニックス・アイランドへようこそ。" },
+    { en: "What's your name?",                           ja: "あなたの名前は何ですか？" },
+    { en: "Hi! My name is Tom.",                         ja: "やあ！ぼくの名前はトムです。" },
+    { en: "Nice to meet you, Tom.",                      ja: "はじめまして、トム。" },
+    { en: "I am Teacher Tacos.",                         ja: "私はティーチャータコスです。" },
+    { en: "Oh! A talking taco!",                         ja: "えっ！しゃべるタコスだ！" },
+    { en: "Correct!",                                    ja: "その通り！" },
+    { en: "I am the gate guide today.",                  ja: "今日は私が門の案内役です。" },
+    { en: "You are welcome here.",                       ja: "ここでは、きみは大歓迎だよ。" },
+    { en: "Wow! I am excited.",                          ja: "わあ！わくわくしてきた。" },
+    { en: "This place is amazing.",                      ja: "ここはすごい場所だね。" },
+    { en: "Yes. This island is a little strange, too.",  ja: "うん。この島はちょっと不思議でもあるんだ。" }
+  ]
+};
+/* 選択肢用の広い意味プール（app.html MEANINGS と同一） */
+const MEANINGS = ["歓迎されている", "名前", "案内役", "わくわくしている", "すごい", "不思議な",
+  "犬", "水", "走る", "赤い", "大きい", "学校", "友だち", "食べる", "天気", "橋", "海", "病院", "地図", "季節",
+  "会議", "値段", "危険な", "正確な", "くつろぐ", "夢", "筋肉", "屋根", "速さ", "招く"];
+/* 新出単語（app.html L12.vocab と同一・6語） */
+const VOCAB = [
+  { w: "welcome", m: "歓迎されている",           ruby: "歓迎",     s: "ファニックス島で、きみは<welcome>だよ。" },
+  { w: "name",    m: "名前",                     ruby: "名前",     s: "はじめまして、あなたの<name>を教えて。" },
+  { w: "guide",   m: "案内役、案内する",         ruby: "案内役",   s: "今日は私が門の<guide>をつとめます。" },
+  { w: "excited", m: "わくわくしている",         ruby: "わくわく", s: "初めての島に来て、トムは<excited>している。" },
+  { w: "amazing", m: "すごい、驚くほど素晴らしい", ruby: "すごい",   s: "目の前に広がる景色は本当に<amazing>だ。" },
+  { w: "strange", m: "不思議な、奇妙な",         ruby: "不思議",   s: "この島にはちょっと<strange>なところもある。" }
+];
+/* シャドウイング本文（app.html L12.passage と同一・10文） */
+const PASSAGE = [
+  { en: "Hello! Welcome to Funnics Island.",          jp: "こんにちは！ファニックス・アイランドへようこそ。" },
+  { en: "What's your name?",                          jp: "あなたの名前は何ですか？" },
+  { en: "Hi! My name is Tom.",                        jp: "やあ！ぼくの名前はトムです。" },
+  { en: "Nice to meet you, Tom.",                     jp: "はじめまして、トム。" },
+  { en: "I am Teacher Tacos.",                        jp: "私はティーチャータコスです。" },
+  { en: "I am the gate guide today.",                 jp: "今日は私が門の案内役です。" },
+  { en: "You are welcome here.",                      jp: "ここでは、きみは大歓迎だよ。" },
+  { en: "Wow! I am excited.",                         jp: "わあ！わくわくしてきた。" },
+  { en: "This place is amazing.",                     jp: "ここはすごい場所だね。" },
+  { en: "This island is a little strange, too.",      jp: "この島はちょっと不思議でもあるんだ。" }
+];
+/* 文法穴埋め（app.html L12.grammarfill と同一・3問。ja はサルサ演出用の補助表示） */
+const GRAMMAR_FILL = [
+  { pre: "I",          ans: "am",  post: "Teacher Tacos.", choices: ["am", "are", "is", "be"], ja: "私はティーチャータコスです。" },
+  { pre: "You",        ans: "are", post: "welcome here.",  choices: ["are", "am", "is", "be"], ja: "きみはここで歓迎されています。" },
+  { pre: "This place", ans: "is",  post: "amazing.",       choices: ["is", "am", "are", "be"], ja: "ここはすごい場所だね。" }
+];
+/* 内容理解の並べ替え（app.html L12.reorder と同一・6問。ダミー語入り） */
+const REORDER = [
+  { lang: "ja", prompt: "I am Teacher Tacos.",   answer: ["わたしは", "ティーチャータコス", "です"], dummies: ["きみは", "ではない", "とても", "だった"] },
+  { lang: "ja", prompt: "You are welcome here.", answer: ["きみは", "ここで", "歓迎されている"], alts: [["ここで", "きみは", "歓迎されている"]], dummies: ["わたしは", "とても", "だった", "ではない"] },
+  { lang: "ja", prompt: "This place is amazing.", answer: ["ここは", "すごい", "場所だね"], dummies: ["きみは", "だった", "とても", "ではない"] },
+  { lang: "en", prompt: "あなたの名前は何ですか？",         answer: ["What's", "your", "name?"], dummies: ["is", "my", "are", "this"] },
+  { lang: "en", prompt: "あなたはここで歓迎されているよ。", answer: ["You", "are", "welcome", "here."], dummies: ["is", "am", "this", "my"] },
+  { lang: "en", prompt: "ここはすごい場所だね。",           answer: ["This", "place", "is", "amazing."], dummies: ["are", "very", "was", "the"] }
+];
+/* トルティーヤ: YouTube 動画（B1 Tom at the Gate / ID=JG6OjXpvUiM は #ytFrame の src に直書き） */
+const YT_DONE_RATIO = 0.9;   /* 再生位置がここまで来たら焼き上がり */
+const YT_POLL_MS = 500;
+
+/* =========================================================
+   共通ヘルパー
+   ========================================================= */
+const $ = (s) => document.querySelector(s);
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+let toastTimer = 0;
+function toast(msg, ms) {
+  const t = $("#toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove("show"), ms || 1500);
+}
+/* --- 効果音（WebAudio、外部ファイルなし） --- */
+let actx = null;
+function ac() {
+  if (!actx) {
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (AC) actx = new AC();
+  }
+  if (actx && actx.state === "suspended") actx.resume();
+  return actx;
+}
+function tone(freq, dur, delay, type, gain) {
+  const ctx = ac();
+  if (!ctx) return;
+  const t0 = ctx.currentTime + (delay || 0);
+  const o = ctx.createOscillator();
+  const g = ctx.createGain();
+  o.type = type || "sine";
+  o.frequency.value = freq;
+  g.gain.setValueAtTime(gain || 0.12, t0);
+  g.gain.exponentialRampToValueAtTime(0.001, t0 + dur);
+  o.connect(g).connect(ctx.destination);
+  o.start(t0);
+  o.stop(t0 + dur + 0.02);
+}
+function sfxGood()   { tone(660, 0.1); tone(880, 0.14, 0.09); }
+function sfxBad()    { tone(150, 0.2, 0, "square", 0.05); }
+function sfxChop()   { tone(1200, 0.05, 0, "triangle", 0.15); tone(300, 0.08, 0.02, "square", 0.06); }
+function sfxFanfare(){ tone(523, 0.14); tone(659, 0.14, 0.12); tone(784, 0.16, 0.24); tone(1047, 0.3, 0.36); }
+
+function confettiBurst(n) {
+  const em = ["🎉", "⭐", "✨", "🌮", "🎊"];
+  const cx = window.innerWidth / 2, cy = window.innerHeight / 2.4;
+  for (let i = 0; i < (n || 20); i++) {
+    const s = document.createElement("span");
+    s.className = "confetti";
+    s.textContent = em[i % em.length];
+    s.style.left = cx + "px";
+    s.style.top = cy + "px";
+    s.style.setProperty("--dx", (Math.random() * 320 - 160) + "px");
+    s.style.setProperty("--dy", (Math.random() * 280 - 200) + "px");
+    s.style.setProperty("--rot", (Math.random() * 540 - 270) + "deg");
+    document.body.appendChild(s);
+    setTimeout(() => s.remove(), 950);
+  }
+}
+function celebrate(msg) {
+  sfxFanfare();
+  confettiBurst(24);
+  if (msg) toast(msg, 2200);
+}
+/* 要素Aから要素Bへ飛ぶ演出クローン */
+function flyClone(fromEl, toEl, txt) {
+  const r = fromEl.getBoundingClientRect();
+  const d = toEl.getBoundingClientRect();
+  const c = document.createElement("div");
+  c.className = "fly";
+  c.textContent = txt;
+  c.style.left = (r.left + r.width / 2 - 12) + "px";
+  c.style.top = (r.top + r.height / 2 - 12) + "px";
+  document.body.appendChild(c);
+  const dx = (d.left + d.width / 2) - (r.left + r.width / 2);
+  const dy = (d.top + d.height / 2) - (r.top + r.height / 2);
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      c.style.transform = "translate(" + dx + "px," + dy + "px) scale(.4)";
+      c.style.opacity = "0.15";
+    });
+  });
+  setTimeout(() => c.remove(), 700);
+}
+/* --- HTML文字列→要素（元アプリの $() ビルダー相当） --- */
+function h(html) {
+  const t = document.createElement("template");
+  t.innerHTML = html.trim();
+  return t.content.firstChild;
+}
+/* --- 音声再生（app.html speak() 移植: voice優先choice＋onendコールバック） --- */
+let _voices = [];
+function _loadVoices() { try { _voices = speechSynthesis.getVoices() || []; } catch (e) { _voices = []; } }
+try { if (window.speechSynthesis) { _loadVoices(); speechSynthesis.onvoiceschanged = _loadVoices; } } catch (e) {}
+function _pickVoice(lang) {
+  if (!_voices.length) _loadVoices();
+  if (lang === "ja-JP") return _voices.find((v) => v.lang === "ja-JP") || _voices.find((v) => v.lang && v.lang.indexOf("ja") === 0) || null;
+  return _voices.find((v) => v.lang === "en-US" && /google/i.test(v.name)) || _voices.find((v) => v.lang === "en-US") || _voices.find((v) => v.lang && v.lang.indexOf("en") === 0) || null;
+}
+function speak(text, opts) {
+  opts = opts || {};
+  const done = typeof opts.onend === "function" ? opts.onend : null;
+  try {
+    if (!window.speechSynthesis) { if (done) done(); return; }
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = opts.lang || "en-US";
+    u.rate = opts.rate || 0.9;
+    const v = _pickVoice(u.lang);
+    if (v) u.voice = v;
+    if (done) u.onend = done;
+    speechSynthesis.cancel();
+    speechSynthesis.speak(u);
+  } catch (e) { if (done) done(); }
+}
+/* --- 正解/不正解の全画面マーク（app.html verdictMark/successFlash 移植） --- */
+function verdictMark(kind) {
+  const cfg = { ok: { t: "○", c: "sym" }, tacos: { t: "🌮 Tacos!", c: "txt" }, excellent: { t: "🌟 Excellent!", c: "txt" }, good: { t: "👍 Good!", c: "txt" }, wrong: { t: "✕", c: "sym" } };
+  const v = cfg[kind] || cfg.ok;
+  if (kind === "wrong") sfxBad(); else sfxGood();
+  try {
+    const o = h('<div class="vmark ' + v.c + (kind === "wrong" ? " ng" : "") + '"><span>' + v.t + "</span></div>");
+    document.body.appendChild(o);
+    setTimeout(() => { try { o.remove(); } catch (e) {} }, 760);
+  } catch (e) {}
+}
+function successFlash() {
+  try {
+    const o = h('<div class="okflash">◯</div>');
+    document.body.appendChild(o);
+    setTimeout(() => { try { o.remove(); } catch (e) {} }, 900);
+  } catch (e) {}
+}
+/* --- 説明モーダル（初回のみ。既読は localStorage 管理） --- */
+const INTRO_KEY = "tacoparty_intro_v1";
+let introSeen = {};
+try { introSeen = JSON.parse(localStorage.getItem(INTRO_KEY) || "{}"); } catch (e) { introSeen = {}; }
+const INTRO = {
+  tortilla: { emoji: "🫓", text: "動画で歌を見よう！<br>見終わるとトルティーヤが焼き上がるよ" },
+  salsa:    { emoji: "🥫", text: "穴に入る単語のボトルを<br>タップしてすり鉢へ！" },
+  tomato:   { emoji: "🍅", text: "文中の<b>赤い英単語</b>をタップ →<br>発音を聞いて意味を選ぼう" },
+  lettuce:  { emoji: "🥬", text: "日本語に合う英単語のレタスを<br>タップで捕まえよう！" },
+  cheese:   { emoji: "🎤", text: "お手本のあとに続けて音読！<br>読めた単語が緑になるよ" },
+  guac:     { emoji: "🍋", text: "タイルで文を組み立てよう<br>タップ＝末尾に追加／ドラッグ＝好きな位置へ" }
+};
+function showIntro(key, cb) {
+  const info = INTRO[key];
+  if (!info || introSeen[key]) { cb(); return; }
+  const bg = h('<div class="intro-bg"></div>');
+  const box = h('<div class="intro-box"><div class="ib-emoji">' + info.emoji + '</div><div class="ib-text">' + info.text + '</div><button class="btn primary">はじめる！</button></div>');
+  box.querySelector("button").onclick = () => {
+    introSeen[key] = true;
+    try { localStorage.setItem(INTRO_KEY, JSON.stringify(introSeen)); } catch (e) {}
+    bg.remove();
+    cb();
+  };
+  bg.appendChild(box);
+  document.body.appendChild(bg);
+}
+
+/* =========================================================
+   進行状況・メニュー・画面遷移
+   ========================================================= */
+const DONE_KEY = "tacoparty_mock_done_v1";
+const MENU = [
+  { key: "tortilla", emoji: "🫓", name: "ソング・トルティーヤ", sub: "ソング｜動画を見て焼き上げる" },
+  { key: "salsa",    emoji: "🥫", name: "サルサグラマー",     sub: "文法穴埋め｜正しい材料をすり鉢へ" },
+  { key: "tomato",   emoji: "🍅", name: "トマトマト",         sub: "新出単語｜日本語混じり文で味見" },
+  { key: "lettuce",  emoji: "🥬", name: "レタス・スラッシュ", sub: "単語テスト｜泳ぐレタスを捕まえる" },
+  { key: "cheese",   emoji: "🧀", name: "チーズ・シャドウイング", sub: "シャドウイング｜お手本を追って音読" },
+  { key: "meat",     emoji: "🥩", name: "タコミート",         sub: "タコス・ビート｜既存のまま採用" },
+  { key: "guac",     emoji: "🍋", name: "ドロップ＆ライム",   sub: "内容理解｜並べ替えて絞る" },
+  { key: "final",    emoji: "🌮", name: "タコス完成演出",     sub: "7つの具がそろったら…いただきます！", wide: true }
+];
+const state = { done: {} };
+try { state.done = JSON.parse(localStorage.getItem(DONE_KEY) || "{}"); } catch (e) { state.done = {}; }
+function markDone(key) {
+  state.done[key] = true;
+  try { localStorage.setItem(DONE_KEY, JSON.stringify(state.done)); } catch (e) { /* private mode */ }
+  buildMenu();
+}
+function buildMenu() {
+  const nav = $("#menu-cards");
+  nav.innerHTML = "";
+  const gameKeys = ["tortilla", "salsa", "tomato", "lettuce", "cheese", "meat", "guac"];
+  const allDone = gameKeys.every((k) => state.done[k]);
+  MENU.forEach((m) => {
+    const b = document.createElement("button");
+    b.className = "mcard" + (m.wide ? " wide" : "") + (state.done[m.key] ? " is-done" : "");
+    if (m.wide && allDone) b.classList.add("glow");
+    let stateTxt = state.done[m.key] ? "クリア🎉" : "未プレイ";
+    if (m.key === "final") stateTxt = allDone ? "全具材コンプ！" : "いつでも再生OK";
+    b.innerHTML =
+      '<span class="m-emoji">' + m.emoji + '</span>' +
+      '<span class="m-name">' + m.name + '</span>' +
+      '<span class="m-sub">' + m.sub + '</span>' +
+      '<span class="m-state">' + stateTxt + '</span>';
+    b.addEventListener("click", () => go(m.key));
+    nav.appendChild(b);
+  });
+}
+(function buildPicado() {
+  const p = $("#picado");
+  for (let i = 0; i < 11; i++) {
+    const f = document.createElement("span");
+    f.className = "flag";
+    p.appendChild(f);
+  }
+})();
+
+let current = "menu";
+function go(key) {
+  const g = GAMES[current];
+  if (g && g.leave) g.leave();
+  document.querySelectorAll(".screen").forEach((s) => s.classList.remove("active"));
+  const scr = $("#scr-" + key);
+  (scr || $("#scr-menu")).classList.add("active");
+  window.scrollTo(0, 0);
+  current = scr ? key : "menu";
+  const ng = GAMES[current];
+  if (ng && ng.init) ng.init();
+}
+document.querySelectorAll(".back").forEach((b) => b.addEventListener("click", () => go("menu")));
+
+/* =========================================================
+   1. トルティーヤ（ソング/動画）
+   YouTube 動画が主役。IFrame API が使えれば再生位置で自動判定、
+   使えない環境でも「▶ 見終わった！」ボタンで必ず完了できる。
+   ========================================================= */
+const T = { player: null, apiAsked: false, poll: 0, doneRun: false, lastT: 0, spots: [] };
+/* コマル上の焼き色スポット（初版モックの配置をコンパクト化） */
+const SPOT_DEF = [
+  { x: 20, y: 24, s: 14, at: 0.12 }, { x: 58, y: 15, s: 11, at: 0.2 },
+  { x: 70, y: 46, s: 15, at: 0.3 },  { x: 32, y: 56, s: 12, at: 0.42 },
+  { x: 12, y: 42, s: 10, at: 0.55 }, { x: 50, y: 38, s: 16, at: 0.66 },
+  { x: 62, y: 68, s: 11, at: 0.78 }, { x: 26, y: 74, s: 13, at: 0.88 }
+];
+function tortillaLoadApi() {
+  if (T.apiAsked) {
+    if (window.YT && window.YT.Player) tortillaMakePlayer();
+    return;
+  }
+  T.apiAsked = true;
+  if (window.YT && window.YT.Player) { tortillaMakePlayer(); return; }
+  const tag = document.createElement("script");
+  tag.src = "https://www.youtube.com/iframe_api";
+  tag.async = true;
+  tag.onerror = () => {
+    $("#tortMsg").textContent = "🌐 自動判定が使えない環境みたい。見終わったら下のボタンで焼き上げよう！";
+  };
+  document.head.appendChild(tag);
+}
+window.onYouTubeIframeAPIReady = function () { tortillaMakePlayer(); };
+function tortillaMakePlayer() {
+  if (T.player) return;
+  try {
+    T.player = new YT.Player("ytFrame", {
+      events: {
+        onStateChange: (e) => { if (e.data === YT.PlayerState.ENDED) tortillaFinish(); }
+      }
+    });
+  } catch (e) { T.player = null; }
+}
+function tortillaGauge(pct) {
+  const p = Math.round(pct * 100);
+  $("#bakeBar").style.width = p + "%";
+  $("#bakeLabel").textContent = pct >= 1 ? "焼き上がり 100%" : "焼き加減 " + p + "%";
+  /* コマル上のトルティーヤ: 焼き色＋ふくらみ＋焼きスポット */
+  const inner = $("#tortillaInner");
+  const c = [
+    Math.round(248 + (226 - 248) * pct),
+    Math.round(236 + (178 - 236) * pct),
+    Math.round(206 + (102 - 206) * pct)
+  ];
+  inner.style.backgroundColor = "rgb(" + c.join(",") + ")";
+  inner.style.transform = "scale(" + (0.84 + 0.16 * pct) + ")";
+  T.spots.forEach((s, i) => {
+    s.style.opacity = Math.max(0, Math.min((pct - SPOT_DEF[i].at) / 0.18, 1)) * 0.85;
+  });
+}
+function tortillaCooking(on) {
+  $("#tortillaMini").classList.toggle("cooking", on);
+  $("#comal").classList.toggle("hot", on);
+}
+function tortillaPoll() {
+  if (!T.player || typeof T.player.getCurrentTime !== "function") return;
+  let t = 0, d = 0;
+  try {
+    t = T.player.getCurrentTime() || 0;
+    d = T.player.getDuration() || 0;
+  } catch (e) { return; }
+  if (d <= 0) return;
+  tortillaCooking(!T.doneRun && t > T.lastT + 0.05);  /* 再生が進んでいる間だけ焼き演出 */
+  T.lastT = t;
+  const pct = Math.min(t / d, 1);
+  if (!T.doneRun) tortillaGauge(pct);
+  if (pct >= YT_DONE_RATIO) tortillaFinish();
+}
+function tortillaFinish() {
+  if (T.doneRun) return;
+  T.doneRun = true;
+  tortillaGauge(1);
+  tortillaCooking(false);
+  $("#tortMsg").textContent = "🫓 焼き上がり！ ふっくらトルティーヤ完成！";
+  celebrate("🫓 焼き上がり！トルティーヤGET！");
+  markDone("tortilla");
+}
+function tortillaInit() {
+  T.doneRun = false;
+  T.lastT = 0;
+  $("#tortMsg").textContent = "";
+  const inner = $("#tortillaInner");
+  inner.innerHTML = "";
+  T.spots = SPOT_DEF.map((d) => {
+    const s = document.createElement("i");
+    s.className = "spot";
+    s.style.left = d.x + "%"; s.style.top = d.y + "%";
+    s.style.width = d.s + "px"; s.style.height = d.s + "px";
+    inner.appendChild(s);
+    return s;
+  });
+  tortillaGauge(0);
+  tortillaCooking(false);
+  const ly = $("#lyrics");
+  ly.innerHTML = "";
+  LESSON.sentences.forEach((s) => {
+    const li = document.createElement("li");
+    li.innerHTML = s.en + '<span class="lj">' + s.ja + "</span>";
+    ly.appendChild(li);
+  });
+  tortillaLoadApi();
+  clearInterval(T.poll);
+  T.poll = setInterval(tortillaPoll, YT_POLL_MS);
+  showIntro("tortilla", () => {});
+}
+function tortillaLeave() {
+  clearInterval(T.poll);
+  if (T.player && typeof T.player.pauseVideo === "function") {
+    try { T.player.pauseVideo(); } catch (e) {}
+  }
+}
+$("#tortDone").addEventListener("click", () => {
+  ac();
+  T.doneRun = false; /* 手動ボタンは何度でも焼き上げ演出OK */
+  tortillaFinish();
+});
+
+/* =========================================================
+   2. サルサグラマー（文法穴埋め）
+   問題データ = 元アプリ stepFill（L12.grammarfill）と完全同一（3問・選択肢同一）。
+   すり鉢・ボトルの演出は現状のまま。
+   ========================================================= */
+const SALSA_Q = GRAMMAR_FILL;
+const S = { idx: 0, lock: false };
+function salsaInit() {
+  S.idx = 0; S.lock = false;
+  $("#salsaFill").style.height = "0%";
+  document.querySelectorAll("#salsaDots i").forEach((d) => d.classList.remove("hit"));
+  $("#salsaMsg").textContent = "";
+  salsaShowQ();
+  showIntro("salsa", () => {});
+}
+function salsaShowQ() {
+  const q = SALSA_Q[S.idx];
+  $("#salsaEn").innerHTML = q.pre + ' <span class="blank" id="salsaBlank">？</span> ' + q.post;
+  $("#salsaJa").textContent = q.ja;
+  const row = $("#bottleRow");
+  row.innerHTML = "";
+  shuffle(q.choices).forEach((w, i) => {
+    const b = document.createElement("button");
+    b.className = "bottle c" + i;   /* 絵文字なし・色分けのみ */
+    b.innerHTML = '<span class="b-cap"></span><span class="b-word"></span>';
+    b.querySelector(".b-word").textContent = w;
+    b.addEventListener("click", () => salsaPick(b, w));
+    row.appendChild(b);
+  });
+}
+function salsaPick(btn, w) {
+  if (S.lock) return;
+  const q = SALSA_Q[S.idx];
+  if (w !== q.ans) {
+    sfxBad();
+    btn.classList.remove("refuse");
+    void btn.offsetWidth;
+    btn.classList.add("refuse");
+    toast("その材料はちがうみたい…🙅", 1100);
+    return;
+  }
+  S.lock = true;
+  sfxGood();
+  btn.classList.add("poured");
+  flyClone(btn, $("#molca"), w);   /* 選んだ単語が小さくすり鉢へ */
+  const blank = $("#salsaBlank");
+  blank.textContent = q.ans;
+  blank.classList.add("filled");
+  setTimeout(() => {
+    const p = $("#pestle");
+    p.classList.remove("grind");
+    void p.offsetWidth;
+    p.classList.add("grind");
+    toast("ゴリゴリ…🌀 いい香り！", 1000);
+    $("#salsaFill").style.height = ((S.idx + 1) / 3 * 100) + "%";
+    document.querySelectorAll("#salsaDots i")[S.idx].classList.add("hit");
+  }, 550);
+  setTimeout(() => {
+    S.idx++;
+    S.lock = false;
+    if (S.idx >= SALSA_Q.length) {
+      $("#salsaMsg").textContent = "🥫 サルサグラマー完成！ be動詞マスター！";
+      $("#bottleRow").innerHTML = "";
+      celebrate("🥫 サルサグラマー完成！");
+      markDone("salsa");
+    } else {
+      salsaShowQ();
+    }
+  }, 1600);
+}
+
+/* =========================================================
+   3. トマトマト（新出単語）
+   元アプリ stepVocab をそのまま移植:
+   日本語混じり文 → 文中の英単語タップ → 発音＋意味4択シート →
+   正解で緑＋意味ルビ → 次の文へ。トマト要素は完了演出のみ。
+   ========================================================= */
+const TM = { wi: 0 };
+function tomatoInit() {
+  TM.wi = 0;
+  tomatoDraw();
+  showIntro("tomato", () => {});
+}
+function tomatoSheet(v, onOk) {
+  const others = shuffle(MEANINGS.filter((m) => m !== v.m)).slice(0, 3);
+  const choices = shuffle([v.m].concat(others));
+  const bg = h('<div class="vsheet-bg"></div>');
+  const sh = h('<div class="vsheet"><div class="vh"><span class="w"></span><button class="spk" aria-label="発音">🔊</button></div>' +
+    '<div class="vq">意味をえらぶ</div><div class="choices"></div></div>');
+  sh.querySelector(".w").textContent = v.w;
+  sh.querySelector(".spk").onclick = () => speak(v.w);
+  const box = sh.querySelector(".choices");
+  choices.forEach((c, k) => {
+    const b = h('<button class="choice tap"><span class="k">' + "ABCD"[k] + "</span></button>");
+    b.appendChild(document.createTextNode(c));
+    b.onclick = () => {
+      if (c === v.m) {
+        b.classList.add("correct");
+        Array.prototype.forEach.call(box.children, (x) => { x.disabled = true; });
+        verdictMark("ok");
+        speak(v.w);
+        setTimeout(() => { bg.remove(); onOk(); }, 560);
+      } else {
+        void b.offsetWidth;
+        b.classList.add("wrong", "shake");
+        b.disabled = true;
+      }
+    };
+    box.appendChild(b);
+  });
+  bg.appendChild(sh);
+  bg.onclick = (e) => { if (e.target === bg) bg.remove(); };
+  document.body.appendChild(bg);
+}
+function tomatoDraw() {
+  const view = $("#tomatoView");
+  view.innerHTML = "";
+  const total = VOCAB.length;
+  const v = VOCAB[TM.wi];
+  view.appendChild(h('<div class="qmeta"><span>日本語混じり文で覚える</span><span>🍅 ' + (TM.wi + 1) + " / " + total + " 語</span></div>"));
+  const card = h('<div class="textcard"></div>');
+  const sent = h('<div class="jpmix">' + v.s.replace(/<([^>]+)>/, '<span class="vword">$1</span>') + "</div>");
+  card.appendChild(sent);
+  view.appendChild(card);
+  const next = h('<button class="abtn green" disabled>文中の英単語をタップして意味を答えよう</button>');
+  next.onclick = () => { TM.wi++; if (TM.wi < total) tomatoDraw(); else tomatoComplete(); };
+  view.appendChild(next);
+  const span = sent.querySelector(".vword");
+  span.onclick = () => {
+    speak(v.w);
+    tomatoSheet(v, () => {
+      span.classList.add("done");
+      span.innerHTML = "<ruby>" + v.w + "<rt>" + v.ruby + "</rt></ruby>";
+      span.onclick = null;
+      next.disabled = false;
+      next.textContent = (TM.wi + 1 < total) ? "次の文へ →" : "完食して次へ →";
+    });
+  };
+}
+function tomatoComplete() {
+  const view = $("#tomatoView");
+  view.innerHTML = "";
+  view.appendChild(h('<div class="ap-banner ok">✅ 新出単語 ' + VOCAB.length + " 語 完食！ トマトマトのできあがり！</div>"));
+  const plate = h('<div style="text-align:center;font-size:30px;letter-spacing:3px;padding:10px 0">🍽️</div>');
+  view.appendChild(plate);
+  VOCAB.forEach((_, i) => setTimeout(() => { plate.textContent = "🍅".repeat(i + 1) + " 🍽️"; }, 250 + i * 170));
+  const back = h('<button class="abtn">メニューへ戻る →</button>');
+  back.onclick = () => go("menu");
+  view.appendChild(back);
+  celebrate("🍅 トマトマト完成！");
+  markDone("tomato");
+}
+
+/* =========================================================
+   4. レタス・スラッシュ（単語テスト）
+   ========================================================= */
+const L = { qs: [], idx: 0, combo: 0, raf: 0, items: [], lock: false, lastTs: 0 };
+function lettuceInit() {
+  L.qs = shuffle(VOCAB);
+  L.idx = 0; L.combo = 0; L.lock = false;
+  $("#comboNum").textContent = "-";
+  $("#lettuceMsg").textContent = "";
+  lettuceStartQ();
+  showIntro("lettuce", () => {});
+}
+const LETTUCE_SIZE = 80;
+const LETTUCE_SPEED = 42;   /* px/s。読める程度にゆっくり */
+function lettuceStartQ() {
+  cancelAnimationFrame(L.raf);
+  const field = $("#lettuceField");
+  field.innerHTML = "";
+  L.items = [];
+  L.lock = false;
+  const q = L.qs[L.idx];
+  $("#lqNum").textContent = "だい " + (L.idx + 1) + " もん / " + L.qs.length;
+  $("#lqJa").textContent = q.m;
+  const others = shuffle(VOCAB.filter((v) => v.w !== q.w)).slice(0, 3);
+  const opts = shuffle([q].concat(others));
+  const fw = field.clientWidth, fh = field.clientHeight;
+  opts.forEach((o, i) => {
+    const el = document.createElement("div");
+    el.className = "lettuce";
+    el.innerHTML = '<span class="lw"></span>';
+    el.querySelector(".lw").textContent = o.w;
+    /* 4匹とも最初から表示。四隅エリアに置いて、斜めのランダム方向へ等速で漂う */
+    const col = i % 2, rowi = Math.floor(i / 2);
+    const ang = Math.PI / 4 + (Math.random() - 0.5) * (Math.PI / 4);  /* 22.5°〜67.5° */
+    const item = {
+      el: el, w: o.w,
+      x: (fw - LETTUCE_SIZE) * (0.1 + col * 0.7) + Math.random() * 14,
+      y: (fh - LETTUCE_SIZE) * (0.12 + rowi * 0.6) + Math.random() * 14,
+      vx: Math.cos(ang) * LETTUCE_SPEED * (Math.random() < 0.5 ? -1 : 1),
+      vy: Math.sin(ang) * LETTUCE_SPEED * (Math.random() < 0.5 ? -1 : 1)
+    };
+    el.style.left = "0px"; el.style.top = "0px";
+    el.style.transform = "translate(" + item.x + "px," + item.y + "px)";
+    el.addEventListener("pointerdown", (ev) => { ev.preventDefault(); lettucePick(item); });
+    field.appendChild(el);
+    L.items.push(item);
+  });
+  L.lastTs = 0;
+  L.raf = requestAnimationFrame(lettuceLoop);
+}
+function lettuceLoop(ts) {
+  const dt = L.lastTs ? Math.min((ts - L.lastTs) / 1000, 0.05) : 0;
+  L.lastTs = ts;
+  const field = $("#lettuceField");
+  const fw = field.clientWidth, fh = field.clientHeight;
+  const maxX = fw - LETTUCE_SIZE, maxY = fh - LETTUCE_SIZE;
+  L.items.forEach((it) => {
+    if (it.dead) return;
+    it.x += it.vx * dt;
+    it.y += it.vy * dt;
+    /* 壁で弾性反射（DVDロゴ風）。レタス同士はすり抜けOK */
+    if (it.x <= 0)    { it.x = 0;    it.vx = Math.abs(it.vx); }
+    if (it.x >= maxX) { it.x = maxX; it.vx = -Math.abs(it.vx); }
+    if (it.y <= 0)    { it.y = 0;    it.vy = Math.abs(it.vy); }
+    if (it.y >= maxY) { it.y = maxY; it.vy = -Math.abs(it.vy); }
+    it.el.style.transform = "translate(" + it.x + "px," + it.y + "px)";
+  });
+  L.raf = requestAnimationFrame(lettuceLoop);
+}
+function lettucePick(item) {
+  if (L.lock || item.dead) return;
+  const q = L.qs[L.idx];
+  const field = $("#lettuceField");
+  if (item.w !== q.w) {
+    sfxBad();
+    L.combo = 0;
+    $("#comboNum").textContent = "-";
+    item.el.classList.add("nope");
+    setTimeout(() => item.el.classList.remove("nope"), 400);
+    toast("ブブー！それは「" + (VOCAB.find((v) => v.w === item.w) || {}).m + "」", 1100);
+    return;
+  }
+  L.lock = true;
+  item.dead = true;
+  sfxChop();
+  speak(q.w);
+  const knife = document.createElement("span");
+  knife.className = "knife-slash";
+  knife.textContent = "🔪";
+  knife.style.left = (item.x + 20) + "px";
+  knife.style.top = (item.y + 10) + "px";
+  field.appendChild(knife);
+  setTimeout(() => knife.remove(), 420);
+  item.el.style.setProperty("--tf", "translate(" + item.x + "px," + item.y + "px)");
+  item.el.style.transform = "translate(" + item.x + "px," + item.y + "px)";
+  item.el.classList.add("chopped");
+  const pop = document.createElement("span");
+  pop.className = "pop-word";
+  pop.textContent = "シャキッ！ " + q.w;
+  pop.style.left = Math.min(item.x, field.clientWidth - 130) + "px";
+  pop.style.top = item.y + "px";
+  field.appendChild(pop);
+  setTimeout(() => pop.remove(), 720);
+  L.combo++;
+  $("#comboNum").textContent = "×" + L.combo;
+  if (L.combo >= 2) toast("シャキシャキコンボ ×" + L.combo + "！🥬", 900);
+  L.idx++;
+  setTimeout(() => {
+    if (L.idx >= L.qs.length) {
+      cancelAnimationFrame(L.raf);
+      field.innerHTML = '<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:60px">🥬🥬🥬</div>';
+      $("#lettuceMsg").textContent = "🥬 レタス完成！全" + L.qs.length + "問クリア！";
+      celebrate("🥬 シャキシャキレタス完成！");
+      markDone("lettuce");
+    } else {
+      lettuceStartQ();
+    }
+  }, 600);
+}
+function lettuceLeave() { cancelAnimationFrame(L.raf); }
+
+/* =========================================================
+   5. チーズ・シャドウイング
+   元アプリ stepShadow をそのまま移植:
+   お手本再生 → 自動で聞き取り(SpeechRecognition・単語単位マッチング) →
+   合格ライン低下(0.7→0.2)＋5回で必ず通過。非対応環境は擬似判定。
+   ハンズフリー切替つき。チーズは横型のコンパクト進行バーのみ。
+   ========================================================= */
+const SRClass = window.SpeechRecognition || window.webkitSpeechRecognition || null;
+const SH_TH = [0.7, 0.55, 0.4, 0.3, 0.2];
+const CH = { si: 0, handsFree: false, cleanup: null };
+function cheeseBarUpdate(done) {
+  const total = PASSAGE.length;
+  const n = done ? total : CH.si;
+  $("#cheeseBarFill").style.width = (n / total * 100) + "%";
+  $("#cheeseBarLabel").textContent = n + " / " + total;
+}
+function cheeseInit() {
+  CH.si = 0;
+  cheeseBarUpdate(false);
+  cheeseDraw(false);
+  showIntro("cheese", () => {});
+}
+function cheeseComplete() {
+  CH.cleanup = null;
+  cheeseBarUpdate(true);
+  const view = $("#cheeseView");
+  view.innerHTML = "";
+  view.appendChild(h('<div class="ap-banner ok">🎉 全' + PASSAGE.length + "文 シャドウ完食！ チーズがとろっとろ！</div>"));
+  view.appendChild(h('<div style="text-align:center;font-size:44px;padding:4px 0">🧀</div>'));
+  const back = h('<button class="abtn">メニューへ戻る →</button>');
+  back.onclick = () => go("menu");
+  view.appendChild(back);
+  celebrate("🧀 チーズ・シャドウイング完成！");
+  markDone("cheese");
+}
+function cheeseDraw(autostart) {
+  const norm = (s) => s.toLowerCase().replace(/[^a-z0-9']/g, "");
+  const total = PASSAGE.length;
+  const p = PASSAGE[CH.si];
+  const words = p.en.replace(/["]/g, "").split(/\s+/).filter(Boolean);
+  const targ = words.map(norm);
+  let failed = 0, rec = null, passed = false, left = false;
+  const matched = new Set();
+  CH.cleanup = () => { left = true; try { if (rec) rec.abort(); } catch (e) {} };
+  cheeseBarUpdate(false);
+  const view = $("#cheeseView");
+  view.innerHTML = "";
+  const wrap = h('<div style="display:flex;flex-direction:column;gap:12px"></div>');
+  view.appendChild(wrap);
+  wrap.appendChild(h('<div class="qmeta"><span>お手本を追って音読</span><span>' + (CH.si + 1) + " / " + total + " 文</span></div>"));
+  const card = h('<div class="textcard"></div>');
+  const sent = h('<div class="shline"></div>');
+  words.forEach((w, k) => {
+    const sp = h('<span class="sh-word" data-k="' + k + '"></span>');
+    sp.textContent = w;
+    sent.appendChild(sp);
+    sent.appendChild(document.createTextNode(" "));
+  });
+  card.appendChild(sent);
+  const jp = h('<div class="sh-jp"></div>');
+  jp.textContent = p.jp;
+  card.appendChild(jp);
+  wrap.appendChild(card);
+  const meter = h('<div style="display:none"></div>');
+  wrap.appendChild(meter);
+  const recBar = h('<div class="recbtn" style="display:none"><span class="rdot"></span>● 録音中… いま声に出してOK</div>');
+  wrap.appendChild(recBar);
+  function showRec() { recBar.style.display = "flex"; sent.classList.add("reclive"); }
+  function hideRec() { recBar.style.display = "none"; sent.classList.remove("reclive"); }
+  const startBox = h('<div style="display:flex;flex-direction:column;gap:8px"></div>');
+  if (CH.si === 0 && !autostart) {  /* 開始ボタンは最初の1回だけ(マイク許可のため) */
+    const b1 = h('<button class="abtn">▶ シャドウイング開始（お手本 → 自動で聞き取り）</button>');
+    b1.onclick = () => { startBox.remove(); startCycle(); };
+    startBox.appendChild(b1);
+  }
+  wrap.appendChild(startBox);
+  /* ハンズフリー切替(取組中いつでも変更可) */
+  const hf = h('<div class="hf-chip"><div><div class="lb">🙌 ハンズフリー</div><div class="desc">通過するたび自動で次の文へ</div></div>' +
+    '<label class="switch"><input type="checkbox"' + (CH.handsFree ? " checked" : "") + '><span></span></label></div>');
+  hf.querySelector("input").addEventListener("change", (e) => {
+    CH.handsFree = e.target.checked;
+    if (passed) {
+      if (CH.handsFree) {
+        next.style.display = "none";
+        setTimeout(() => {
+          if (left) return;
+          left = true;
+          const last = CH.si + 1 >= total;
+          if (last) cheeseComplete(); else { CH.si++; cheeseDraw(true); }
+        }, 500);
+      } else {
+        next.style.display = "flex";
+        next.disabled = false;
+      }
+    }
+  });
+  wrap.appendChild(hf);
+  const listen = h('<button class="abtn soft">🔊 お手本をもう一度聞く</button>');
+  listen.onclick = () => speak(p.en);
+  wrap.appendChild(listen);
+  const restartBtn = h('<button class="abtn" style="display:none">🔁 認識を再開</button>');
+  wrap.appendChild(restartBtn);
+  const next = h('<button class="abtn green" disabled>通過してから次へ</button>');
+  next.onclick = () => {
+    left = true;
+    try { if (rec) rec.abort(); } catch (e) {}
+    CH.si++;
+    if (CH.si < total) cheeseDraw(true); else cheeseComplete();
+  };
+  wrap.appendChild(next);
+  if (!SRClass) wrap.appendChild(h('<div class="ap-note">※この環境は音声認識に未対応のため擬似モードで動作します</div>'));
+  function refresh() {
+    sent.querySelectorAll(".sh-word").forEach((sp, k) => { sp.classList.toggle("matched", matched.has(k)); });
+  }
+  function setStatus(kind, html) {
+    meter.style.display = "block";
+    meter.className = "ap-banner " + (kind === "ok" ? "ok" : (kind === "ng" ? "ng" : (kind === "listen" ? "info listening" : "info")));
+    meter.innerHTML = html;
+  }
+  function addRecognized(text) {
+    const set = new Set(text.split(/\s+/).map(norm).filter(Boolean));
+    targ.forEach((t, k) => {
+      if (matched.has(k) || !t) return;
+      if (set.has(t) || [...set].some((r) => r.length > 2 && (r.includes(t) || t.includes(r)))) matched.add(k);
+    });
+    refresh();
+  }
+  function succeed() {  /* 通過は自動。全単語グリーン＋演出 */
+    if (passed || left) return;
+    passed = true;
+    try { if (rec) rec.abort(); } catch (e) {}
+    hideRec();
+    words.forEach((_, k) => matched.add(k));
+    refresh();
+    startBox.remove();
+    listen.style.display = "none";
+    restartBtn.style.display = "none";
+    successFlash();
+    sfxGood();
+    const last = CH.si + 1 >= total;
+    if (CH.handsFree) {
+      setStatus("ok", last ? "🎉 通過！ シャドウ完食！" : "🎉 通過！ つづけて次の文へ…");
+      next.style.display = "none";
+      setTimeout(() => {
+        if (left) return;
+        left = true;
+        if (last) cheeseComplete(); else { CH.si++; cheeseDraw(true); }
+      }, 1200);
+    } else {
+      setStatus("ok", "🎉 通過！ ぜんぶ言えました！ ナイス・シャドウイング！");
+      next.disabled = false;
+      next.textContent = last ? "完食して次へ →" : "次の文へ →";
+    }
+  }
+  function judgeRound() {  /* 声は取れたが full match でない1ラウンド分の自動判定 */
+    if (passed || left) return;
+    const th = SH_TH[Math.min(failed, SH_TH.length - 1)];
+    if (matched.size / words.length >= th) { succeed(); return; }
+    failed++;
+    if (failed >= 5) { succeed(); return; }  /* 5回で必ず通過 */
+    setStatus("ng", "🔁 もう一度、続けて読んでみよう。くり返すほど通過しやすくなります。");
+    setTimeout(() => { if (!passed && !left) startRound(); }, 900);
+  }
+  function startRound() {  /* 認識1ラウンド（自動判定）。お手本は読まない */
+    if (passed || left) return;
+    if (!SRClass) { fallbackSim(); return; }
+    let err = null, gotSpeech = false;
+    try {
+      rec = new SRClass();
+      rec.lang = "en-US";
+      rec.continuous = false;
+      rec.interimResults = true;
+      setStatus("listen", "🎧 聞き取り中…　お手本に続けて、声に出して読もう");
+      rec.onresult = (e) => {
+        let txt = "";
+        for (let j = 0; j < e.results.length; j++) txt += e.results[j][0].transcript + " ";
+        if (txt.trim()) gotSpeech = true;
+        addRecognized(txt);
+        if (matched.size >= words.length) { succeed(); try { rec.stop(); } catch (x) {} }
+      };
+      rec.onerror = (e) => { if (e.error === "no-speech" || e.error === "aborted") return; err = e.error; };
+      rec.onend = () => {
+        hideRec();
+        if (passed || left) return;
+        if (err) {  /* エラーで勝手に終了 → 自動復旧せず「再開」ボタン */
+          setStatus("ng", (err === "not-allowed" || err === "service-not-allowed")
+            ? "マイクが許可されていません。許可してから「🔁 認識を再開」を押してください。"
+            : "認識が中断しました。「🔁 認識を再開」を押してください。");
+          restartBtn.style.display = "flex";
+          return;
+        }
+        if (matched.size >= words.length) { succeed(); return; }
+        if (!gotSpeech) { startRound(); return; }  /* 無音終了 → ペナルティなしで再開 */
+        judgeRound();
+      };
+      rec.start();
+      showRec();
+    } catch (e) { hideRec(); fallbackSim(); }
+  }
+  function startCycle() {  /* ユーザー操作1回: お手本再生 → 自動で聞き取り開始 */
+    startBox.remove();
+    setStatus("info", "🔊 お手本 再生中…");
+    if (!SRClass) { fallbackSim(); return; }
+    let began = false;
+    const begin = () => { if (began || left) return; began = true; startRound(); };
+    speak(p.en, { onend: begin });
+    setTimeout(begin, Math.max(1600, p.en.length * 95));  /* onend不発時の保険 */
+  }
+  function fallbackSim() {  /* SR非対応: 自動で数ラウンド回して必ず通過（擬似） */
+    const step = () => {
+      if (passed || left) return;
+      const cover = Math.min(words.length, Math.max(1, Math.round(words.length * (0.5 + 0.16 * failed))));
+      shuffle(words.map((_, k) => k)).slice(0, cover).forEach((k) => matched.add(k));
+      refresh();
+      const th = SH_TH[Math.min(failed, SH_TH.length - 1)];
+      if (matched.size / words.length >= th || failed >= 4) { succeed(); return; }
+      failed++;
+      setStatus("listen", "🎧 自動判定中…（擬似モード）");
+      setTimeout(step, 700);
+    };
+    setStatus("listen", "🎧 自動判定中…（擬似モード）");
+    setTimeout(step, 600);
+  }
+  restartBtn.onclick = () => { restartBtn.style.display = "none"; startRound(); };
+  if (autostart) startCycle();  /* 2文目以降: 自動開始（マイク許可済み） */
+}
+function cheeseLeave() {
+  if (CH.cleanup) { CH.cleanup(); CH.cleanup = null; }
+  if ("speechSynthesis" in window) speechSynthesis.cancel();
+}
+
+/* =========================================================
+   6. タコミート（説明のみ）
+   ========================================================= */
+function meatInit() { markDone("meat"); }
+
+/* =========================================================
+   7. ドロップ＆ライム（内容理解の並べ替え）
+   元アプリ reorderProblem / reorderOk をそのまま移植:
+   タップ=末尾に追加＋英語タイルは音声再生／ドラッグ=好きな位置へ移動。
+   ダミー語入り・提出はいつでも可・和訳は自由語順を一部許容。
+   クリアするたびライムをギュッと絞って果汁カップに溜める。
+   ========================================================= */
+function eqArr(a, b) { return a.length === b.length && a.every((x, k) => x === b[k]); }
+function jaFlexibleOk(answer, arr) {
+  if (arr.length !== answer.length) return false;
+  if ([...arr].sort().join("") !== [...answer].sort().join("")) return false;  /* 同じタイル集合 */
+  if (arr[arr.length - 1] !== answer[answer.length - 1]) return false;          /* 述語(末尾)は固定 */
+  const topic = answer.findIndex((t) => /[はわ]$/.test(t));                      /* 話題「〜は」 */
+  if (topic === 0 && arr[0] !== answer[0]) return false;                        /* 話題は先頭固定 */
+  return true;
+}
+function reorderOk(item, arr) {
+  if (eqArr(arr, item.answer)) return true;
+  if ((item.alts || []).some((a) => eqArr(arr, a))) return true;
+  if (item.lang === "ja") return jaFlexibleOk(item.answer, arr);
+  return false;
+}
+function reorderProblem(host, item, onDone) {
+  host.innerHTML = "";
+  const isEn = item.lang === "en";
+  host.appendChild(h('<div class="ro-prompt ' + (isEn ? "en" : "") + '"><div class="lb">' + (isEn ? "この日本語を英語に並べ替え" : "この英文を和訳に並べ替え") + '</div><div class="tx">' + item.prompt + "</div></div>"));
+  const ansRow = h('<div class="ro-answer"></div>'); host.appendChild(ansRow);
+  const bank = h('<div class="ro-bank"></div>'); host.appendChild(bank);
+  const check = h('<button class="abtn" style="margin-top:12px" disabled>答え合わせ</button>'); host.appendChild(check);
+  const msg = h('<div style="margin-top:8px"></div>'); host.appendChild(msg);
+  /* モデル: 全タイル(正解＋ダミー)。slots=解答欄の並び(idの配列)、それ以外はバンク。 */
+  let uid = 0, locked = false, draggingId = null, ghost = null;
+  const tiles = shuffle([].concat(
+    item.answer.map((t) => ({ t: t, dummy: false })),
+    (item.dummies || []).map((t) => ({ t: t, dummy: true }))
+  )).map((o) => ({ id: ++uid, t: o.t, dummy: o.dummy }));
+  let slots = [];
+  const tById = (id) => tiles.find((x) => x.id === id);
+  const sayTile = (t) => { if (isEn) speak(t); };  /* 単語音声は英語のみ(日本語は再生しない) */
+  function updateCheck() { check.disabled = locked; }  /* 提出はいつでも可(単語数一致を要求しない) */
+  function mkTile(t, where) {
+    const el = h('<button class="ro-tile ' + (isEn ? "en" : "") + '" data-id="' + t.id + '"></button>');
+    el.textContent = t.t;
+    el.style.touchAction = "none";
+    el.addEventListener("pointerdown", (e) => onDown(e, t, where));
+    return el;
+  }
+  function render() {
+    bank.innerHTML = "";
+    ansRow.innerHTML = "";
+    tiles.forEach((t) => { if (t.id === draggingId || slots.includes(t.id)) return; bank.appendChild(mkTile(t, "bank")); });
+    slots.forEach((id) => { if (id === draggingId) return; ansRow.appendChild(mkTile(tById(id), "ans")); });
+    updateCheck();
+  }
+  function onDown(e, t, where) {
+    if (locked) return;
+    e.preventDefault();
+    const sx = e.clientX, sy = e.clientY;
+    let drag = false;
+    const move = (ev) => {
+      if (!drag) { if (Math.hypot(ev.clientX - sx, ev.clientY - sy) < 8) return; drag = true; pickup(t, where, ev); }
+      if (drag) { posGhost(ev.clientX, ev.clientY); showGap(ev.clientX, ev.clientY); }
+    };
+    const up = (ev) => {
+      document.removeEventListener("pointermove", move);
+      document.removeEventListener("pointerup", up);
+      document.removeEventListener("pointercancel", up);
+      if (drag) drop(ev.clientX, ev.clientY); else tap(t, where);
+    };
+    document.addEventListener("pointermove", move);
+    document.addEventListener("pointerup", up);
+    document.addEventListener("pointercancel", up);
+  }
+  function tap(t, where) {
+    sayTile(t.t);
+    if (where === "bank") slots.push(t.id); else slots = slots.filter((x) => x !== t.id);
+    render();
+  }
+  function pickup(t, where, ev) {
+    sayTile(t.t);
+    draggingId = t.id;
+    slots = slots.filter((x) => x !== t.id);
+    render();
+    ghost = h('<div class="ro-ghost ro-tile ' + (isEn ? "en" : "") + '"></div>');
+    ghost.textContent = t.t;
+    document.body.appendChild(ghost);
+    posGhost(ev.clientX, ev.clientY);
+  }
+  function posGhost(x, y) { if (ghost) { ghost.style.left = x + "px"; ghost.style.top = y + "px"; } }
+  function overBank(x, y) { const r = bank.getBoundingClientRect(); return x >= r.left && x <= r.right && y >= r.top && y <= r.bottom; }
+  function calcIndex(x, y) {
+    const kids = [...ansRow.querySelectorAll(".ro-tile")];
+    for (let i = 0; i < kids.length; i++) {
+      const r = kids[i].getBoundingClientRect();
+      const cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+      if (y < cy - 8 || (Math.abs(y - cy) <= r.height / 2 + 8 && x < cx)) return i;
+    }
+    return kids.length;
+  }
+  function showGap(x, y) {
+    ansRow.querySelectorAll(".ro-gap").forEach((g) => g.remove());
+    if (overBank(x, y)) return;
+    const idx = calcIndex(x, y);
+    const kids = [...ansRow.querySelectorAll(".ro-tile")];
+    const gap = h('<span class="ro-gap"></span>');
+    if (idx >= kids.length) ansRow.appendChild(gap); else ansRow.insertBefore(gap, kids[idx]);
+  }
+  function drop(x, y) {
+    const toBank = overBank(x, y);
+    const idx = calcIndex(x, y);
+    const id = draggingId;
+    draggingId = null;
+    if (ghost) { ghost.remove(); ghost = null; }
+    ansRow.querySelectorAll(".ro-gap").forEach((g) => g.remove());
+    if (!toBank && id != null) slots.splice(Math.min(idx, slots.length), 0, id);  /* バンクへ落としたら未配置のまま */
+    render();
+  }
+  check.onclick = () => {
+    if (locked) return;
+    const arr = slots.map((id) => tById(id).t);
+    if (reorderOk(item, arr)) {
+      locked = true;
+      ansRow.classList.add("correct");
+      verdictMark("ok");
+      check.style.display = "none";
+      const nb = h('<button class="abtn green" style="margin-top:10px">正解！ 次へ →</button>');
+      nb.onclick = onDone;
+      msg.appendChild(nb);
+    } else {
+      ansRow.classList.add("wrong");
+      verdictMark("wrong");
+      setTimeout(() => ansRow.classList.remove("wrong"), 320);
+      msg.innerHTML = '<div class="expl ng"><b>おしい！</b> 例: ' + (isEn ? item.answer.join(" ") : item.answer.join("")) + "</div>";
+      const rb = h('<button class="abtn soft" style="margin-top:8px">やり直す</button>');
+      rb.onclick = () => reorderProblem(host, item, onDone);
+      msg.appendChild(rb);
+    }
+  };
+  render();
+}
+const G = { ri: 0 };
+function guacInit() {
+  G.ri = 0;
+  $("#juiceFill").style.height = "0%";
+  $("#guacMsg").textContent = "";
+  guacDraw();
+  showIntro("guac", () => {});
+}
+function guacSqueeze() {  /* 1問クリアごとにライムをギュッ → 果汁カップに溜まる */
+  const fx = $("#limeSq");
+  fx.classList.remove("squeeze");
+  void fx.offsetWidth;
+  fx.classList.add("squeeze");
+  const dz = $("#guacDropZone");
+  for (let i = 0; i < 3; i++) {
+    const d = document.createElement("span");
+    d.className = "lime-drop";
+    d.textContent = "💧";
+    d.style.animationDelay = (i * 0.18) + "s";
+    dz.appendChild(d);
+    setTimeout(() => d.remove(), 1400);
+  }
+  $("#juiceFill").style.height = (G.ri / REORDER.length * 100) + "%";
+}
+function guacDraw() {
+  const view = $("#guacView");
+  view.innerHTML = "";
+  const item = REORDER[G.ri];
+  view.appendChild(h('<div class="qmeta"><span>並べ替え（' + (item.lang === "en" ? "英単語" : "和訳") + "）</span><span>" + (G.ri + 1) + " / " + REORDER.length + "</span></div>"));
+  const sub = h("<div></div>");
+  view.appendChild(sub);
+  reorderProblem(sub, item, () => {
+    G.ri++;
+    guacSqueeze();
+    if (G.ri < REORDER.length) guacDraw(); else guacComplete();
+  });
+}
+function guacComplete() {
+  const view = $("#guacView");
+  view.innerHTML = "";
+  view.appendChild(h('<div class="ap-banner ok">✅ 全' + REORDER.length + "問クリア！ 仕上げのひと絞り！</div>"));
+  const fx = h('<div style="text-align:center;padding:8px 0;position:relative"><span class="lime-fx squeeze">🍋</span><span id="limeDropZone"></span></div>');
+  view.appendChild(fx);
+  const dz = fx.querySelector("#limeDropZone");
+  for (let i = 0; i < 4; i++) {
+    const d = document.createElement("span");
+    d.className = "lime-drop";
+    d.textContent = "💧";
+    d.style.animationDelay = (i * 0.18) + "s";
+    dz.appendChild(d);
+    setTimeout(() => d.remove(), 1400);
+  }
+  const back = h('<button class="abtn">メニューへ戻る →</button>');
+  back.onclick = () => go("menu");
+  view.appendChild(back);
+  $("#guacMsg").textContent = "🍋 ドロップ＆ライム完成！本文マスター！";
+  celebrate("🍋 ドロップ＆ライム完成！");
+  markDone("guac");
+}
+function guacLeave() {
+  document.querySelectorAll(".ro-ghost").forEach((g) => g.remove());
+  if ("speechSynthesis" in window) speechSynthesis.cancel();
+}
+
+/* =========================================================
+   8. 完成演出
+   ========================================================= */
+const F = { timers: [], playing: false };
+const FINAL_ING = ["🫓", "🥩", "🥬", "🍅", "🧀", "🥫", "🍋"];
+function finalInit() {
+  finalReset();
+  $("#finalMsg").textContent = "";
+}
+function finalReset() {
+  F.timers.forEach(clearTimeout);
+  F.timers = [];
+  F.playing = false;
+  const row = $("#ingRow");
+  row.innerHTML = "";
+  FINAL_ING.forEach((e) => {
+    const s = document.createElement("span");
+    s.textContent = e;
+    row.appendChild(s);
+  });
+  document.querySelectorAll("#tacoBuild .tlayer").forEach((l) => l.classList.remove("in"));
+  document.querySelectorAll("#finalStage .bite").forEach((b) => b.remove());
+  $("#finalLime").classList.remove("show", "squeezing");
+  $("#finalLimeDrops").innerHTML = "";
+  const w = $("#finalWord");
+  w.classList.remove("show");
+  w.textContent = "";
+}
+function fT(fn, ms) { F.timers.push(setTimeout(fn, ms)); }
+function finalWord(txt, size) {
+  const w = $("#finalWord");
+  w.textContent = txt;
+  w.style.fontSize = (size || 30) + "px";
+  w.classList.remove("show");
+  void w.offsetWidth;
+  w.classList.add("show");
+}
+function finalStars(x, y) {
+  const stage = $("#finalStage");
+  for (let i = 0; i < 6; i++) {
+    const s = document.createElement("span");
+    s.className = "star-fx";
+    s.textContent = i % 2 ? "⭐" : "✨";
+    s.style.left = x + "px";
+    s.style.top = y + "px";
+    s.style.setProperty("--dx", (Math.random() * 160 - 80) + "px");
+    s.style.setProperty("--dy", (Math.random() * -120 - 20) + "px");
+    stage.appendChild(s);
+    setTimeout(() => s.remove(), 850);
+  }
+}
+function finalBite(step) {
+  const stage = $("#finalStage");
+  const build = $("#tacoBuild");
+  const bl = build.offsetLeft, bt = build.offsetTop;
+  const defs = [
+    { x: 196, y: 60, s: 74 },
+    { x: 150, y: 40, s: 66 },
+    { x: 96,  y: 58, s: 78 }
+  ];
+  const d = defs[step];
+  [0, 1].forEach((k) => {
+    const b = document.createElement("span");
+    b.className = "bite";
+    b.style.width = (d.s - k * 22) + "px";
+    b.style.height = (d.s - k * 22) + "px";
+    b.style.left = (bl + d.x - k * 30) + "px";
+    b.style.top = (bt + d.y + k * 34) + "px";
+    stage.appendChild(b);
+    requestAnimationFrame(() => b.classList.add("on"));
+  });
+  tone(500 - step * 90, 0.1, 0, "triangle", 0.12);
+  finalWord("ぱくっ！", 26);
+  finalStars(bl + d.x, bt + d.y);
+}
+function finalPlay() {
+  if (F.playing) return;
+  finalReset();
+  F.playing = true;
+  ac();
+  $("#finalMsg").textContent = "";
+  const ings = document.querySelectorAll("#ingRow span");
+  ings.forEach((s, i) => fT(() => { s.classList.add("in"); tone(400 + i * 60, 0.08); }, 200 + i * 180));
+  const layers = document.querySelectorAll("#tacoBuild .tlayer");
+  const order = [0, 1, 2, 3, 4, 5, 6]; /* トルティーヤ(殻)→タコミート→レタス→トマト→チーズ→サルサ→殻(前) */
+  order.forEach((li, i) => fT(() => {
+    layers[li].classList.add("in");
+    tone(320 + i * 45, 0.09, 0, "sine", 0.09);
+  }, 1700 + i * 330));
+  fT(finalLimeSqueeze, 4200);  /* 最後にライムをギュッと絞って完成 */
+  fT(() => { finalWord("いただきます！", 32); sfxFanfare(); }, 5800);
+  fT(() => finalBite(0), 7100);
+  fT(() => finalBite(1), 7900);
+  fT(() => finalBite(2), 8700);
+  fT(() => {
+    finalWord("🌮 タコス1個完成！ 🎉", 27);
+    celebrate("🌮 ごちそうさま！タコス1個完成！");
+    $("#finalMsg").textContent = "おつかれさま！メニューに戻って好きなゲームをもう一度どうぞ。";
+    F.playing = false;
+  }, 9600);
+}
+function finalLimeSqueeze() {
+  const lm = $("#finalLime");
+  lm.classList.add("show", "squeezing");
+  finalWord("ライムをギュッ！", 26);
+  tone(880, 0.12);
+  tone(1174, 0.16, 0.12);
+  const dz = $("#finalLimeDrops");
+  for (let i = 0; i < 4; i++) {
+    const d = document.createElement("span");
+    d.className = "lime-drop";
+    d.textContent = "💧";
+    d.style.animationDelay = (i * 0.18) + "s";
+    dz.appendChild(d);
+    setTimeout(() => d.remove(), 1500);
+  }
+}
+$("#finalPlay").addEventListener("click", finalPlay);
+function finalLeave() { finalReset(); }
+
+/* =========================================================
+   画面レジストリ & 起動
+   ========================================================= */
+const GAMES = {
+  menu:     { init: buildMenu },
+  tortilla: { init: tortillaInit, leave: tortillaLeave },
+  salsa:    { init: salsaInit },
+  tomato:   { init: tomatoInit, leave: () => {
+    document.querySelectorAll(".vsheet-bg").forEach((s) => s.remove());
+    if ("speechSynthesis" in window) speechSynthesis.cancel();
+  } },
+  lettuce:  { init: lettuceInit, leave: lettuceLeave },
+  cheese:   { init: cheeseInit, leave: cheeseLeave },
+  meat:     { init: meatInit },
+  guac:     { init: guacInit, leave: guacLeave },
+  final:    { init: finalInit, leave: finalLeave }
+};
+buildMenu();
+</script>
+</body>
+</html>

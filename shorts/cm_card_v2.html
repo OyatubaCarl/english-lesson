@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>WordTacos CM Card</title>
+<style>
+:root{--accent:#d6431b;--ink:#20140b}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;font-family:"Hiragino Sans","Hiragino Maru Gothic ProN",sans-serif}
+.cm{width:1080px;height:1920px;background:radial-gradient(circle at 50% 34%,#fff6ee 0%,#ffe7d8 60%,#f7d3bf 100%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 90px;position:relative}
+.logo{font-size:118px;font-weight:900;color:var(--ink);letter-spacing:-.01em}
+.logo .t{color:var(--accent)}
+.taco{font-size:96px;margin-top:6px}
+.tagline{font-size:56px;font-weight:800;color:var(--ink);line-height:1.6;margin-top:40px}
+.tagline .hl{color:var(--accent)}
+.sub{font-size:44px;font-weight:800;color:#7a4a30;margin-top:26px}
+.url{margin-top:56px;background:var(--accent);color:#fff;font-weight:900;font-size:46px;
+  padding:24px 46px;border-radius:999px;font-family:-apple-system,sans-serif;letter-spacing:.01em}
+.free{margin-top:24px;font-size:36px;font-weight:800;color:#7a4a30}
+.mascot{position:absolute;bottom:70px;right:56px;width:300px;filter:drop-shadow(0 10px 18px rgba(90,60,30,.2))}
+</style>
+</head>
+<body>
+  <div class="cm">
+    <div class="logo">Word<span class="t">Tacos</span></div>
+    <div class="taco">🌮</div>
+    <div class="tagline">日本語に包んで、<br><span class="hl">やさしく英単語</span>。</div>
+    <div class="sub">中1入門〜TOEIC高得点まで</div>
+    <div class="url">words.teachertacos.com</div>
+    <div class="free">ブラウザだけ・完全無料</div>
+    <img class="mascot" src="assets/tt_welcoming_v2.png" alt="">
+  </div>
+</body>
+</html>

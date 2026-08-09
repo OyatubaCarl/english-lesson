@@ -1,0 +1,119 @@
+{
+  "lesson": "H084",
+  "title_ja": "食と農業の未来",
+  "title_en": "The Future of Food and Agriculture",
+  "grammar_target": "数量表現と比較級",
+  "style": "画風01『光彩・劇場アニメ背景』。H15参照画の精密な2D線画、節度あるセル塗り人物、描き込まれた背景、群青の影と自然な暖色光を固定する。",
+  "continuity": {
+    "present_setting": "現代の日本の架空の地方都市と周辺農地。小規模農家、地域協同組合、農業高校、研究所、物流拠点、家庭を一つの食料システムとしてつなぐ。実在組織名やロゴは出さない。",
+    "agronomist": "36歳の日本人女性農学研究者。顎までの黒髪、生成りの作業シャツ、深緑の作業上着、濃紺の帽子。白衣は研究室内だけで着用し、農家へ一方的に教える救世主にしない。",
+    "farmer": "48歳の日本人男性農家。短い黒髪に少量の白髪、褐色の作業上着、紺の作業帽。土壌、水、収量、販売条件を理解して自ら選択する経営者として描く。",
+    "students": "17歳の日本人農業高校生二人。男子は短い黒髪、紺の実習上着、灰色のノート。女子は肩までの焦げ茶髪、臙脂の実習上着、生成りのタブレットケース。男女を作業ごとに固定せず、測定・運搬・議論を対等に分担する。",
+    "global_scenes": "各地域の成人農家、研究者、物流担当、消費者を現地の意思決定者として描く。国旗、民族衣装、肌の色だけで地域を示さず、農法、作物、気候、設備を具体的にする。",
+    "historical_timeline": "南メソポタミアの灌漑農業は紀元前6千年紀以降の長い発展として扱い、一人の発明や一日で完成した技術にしない。緑の革命は1960年代以降、特にアジアとラテンアメリカで大きく、アフリカでは条件と普及が地域により異なったことを分けて描く。",
+    "palette": "農地は青緑、稲の黄緑、土の褐色、朝夕の琥珀光を反復する。問題場面は濁った灰緑と群青を使うが、人の肌や生活を暗く汚して悲惨さを誇張しない。解決場面は派手な未来色でなく、朝の自然光と現実的な設備で示す。",
+    "subtitle_safe_area": "主要な顔、手、作物、水路、測定器、食品は上55%へ置き、下45%は土、通路、机、床、影など字幕帯に耐える静かな余白にする。画像内に文字や数字を描かない。",
+    "camera": "基準画内は静止から一方向の寄り・引きだけ。揺れ、ランダム移動、正弦波移動、手持ち風演出を使わない。"
+  },
+  "sources": [
+    {
+      "title": "United Nations — World population to reach 8 billion on 15 November 2022",
+      "url": "https://www.un.org/en/desa/world-population-reach-8-billion-15-november-2022",
+      "use": "世界人口80億到達時期の確認"
+    },
+    {
+      "title": "FAO — The State of Food Security and Nutrition in the World 2025",
+      "url": "https://www.fao.org/newsroom/detail/global-hunger-declines--but-rises-in-africa-and-western-asia--un-report/",
+      "use": "2024年の飢餓人口約6.73億人と地域差の確認"
+    },
+    {
+      "title": "Metropolitan Museum of Art — The Ubaid Period",
+      "url": "https://www.metmuseum.org/pt/essays/the-ubaid-period-5500-4000-b-c",
+      "use": "南メソポタミアで灌漑農業を営む村落が発展した時期の確認"
+    },
+    {
+      "title": "FAO — Lessons from the Green Revolution",
+      "url": "https://www.fao.org/4/w2612e/w2612e06a.htm",
+      "use": "高収量品種、灌漑、肥料、農薬、管理技術が一体だったことと地域差の確認"
+    },
+    {
+      "title": "FAO — The challenge of food production",
+      "url": "https://www.fao.org/4/U8480E/U8480E0Q.HTM",
+      "use": "緑の革命が主にアジアとラテンアメリカで広がり、アフリカへの影響が限定的だったことの確認"
+    },
+    {
+      "title": "WHO — Food, genetically modified",
+      "url": "https://www.who.int/news-room/questions-and-answers/item/FAQ-genetically-modified-foods",
+      "use": "遺伝子組換え食品を一括で安全・危険とせず、作物ごとに健康・環境リスクを審査する原則の確認"
+    },
+    {
+      "title": "FAO — World agriculture: towards 2015/2030",
+      "url": "https://www.fao.org/4/Y3557E/y3557e09.htm",
+      "use": "有機農業の環境面の利点と、条件によって収量差が変わることの確認"
+    },
+    {
+      "title": "UNEP — Food Waste Index Report 2024",
+      "url": "https://www.unep.org/resources/publication/food-waste-index-report-2024",
+      "use": "小売・外食・家庭段階の食品廃棄を世界全体の問題として扱う根拠"
+    }
+  ],
+  "story_guardrails": [
+    "歌詞の8億人超という飢餓人口を現在の確定値として画面に出さない。字幕では歌詞内推計と明示し、映像は特定人数を示さず、食料へのアクセス、価格、物流、紛争、気候の複合問題として描く。",
+    "飢餓を痩せた子どもの接写や施しを待つ群衆で表現しない。地域の成人、保健職、協同組合、行政、農家が食料アクセスを改善する場面を中心にする。",
+    "農業を一人の発明家や先進国からの技術移転だけで発展したものにしない。農家の選抜、灌漑の共同管理、地域知、研究、公共投資を含める。",
+    "古代メソポタミアではピラミッド、ラクダ隊、鉄製機械、現代的な水門を置かない。日干し煉瓦、葦、木、土の水路、麦類、手作業を時代に合わせる。",
+    "緑の革命を高収量品種だけの奇跡にしない。灌漑、肥料、農薬、普及制度、信用、農家の管理を一体として描き、利益と環境・格差の問題を両方示す。",
+    "アフリカを一つの農業環境として扱わない。多様な降雨、土壌、作物、市場条件があり、緑の革命型技術の普及が地域により異なったことを示す。",
+    "農薬と化学肥料を存在だけで悪としない。適正量、保護具、土壌診断、病害虫管理と、過剰・誤使用による流出や健康・生態系リスクを分ける。",
+    "有機農業を無条件に低収量、遺伝子組換え作物を無条件に高収量としない。作物、地域、管理、目的による差を、比較試験と農家の選択で示す。",
+    "遺伝子組換えを発光するDNA、巨大な作物、怪物的な食品で表現しない。管理された研究室、温室、圃場試験、個別の安全審査として描く。",
+    "食品廃棄を家庭の怠慢だけに帰さない。収穫・貯蔵・輸送のlossと、小売・外食・家庭のwasteを区別し、規格、需要予測、保存、再配分、堆肥化まで含める。",
+    "『先進国で3分の1』を現在の普遍的な統計として画面に出さない。現代の根拠では食品廃棄が世界中の小売・外食・家庭に存在することを示す。",
+    "持続可能な未来を単一の万能技術で解決しない。生産、土壌、水、生物多様性、流通、価格、廃棄削減、消費、労働条件を組み合わせる。"
+  ],
+  "masters": [
+    {"time": 0.0, "file": "global_food_system_dawn_master.png", "purpose": "世界の食と農業の導入"},
+    {"time": 3.0, "file": "regional_farm_cooperative_morning_master.png", "purpose": "現代の地域農業と共通人物"},
+    {"time": 5.9, "file": "urban_population_food_market_master.png", "purpose": "80億を超えたpopulationと食卓"},
+    {"time": 8.7, "file": "rural_urban_supply_connection_master.png", "purpose": "農地から都市へ続く食料網"},
+    {"time": 11.6, "file": "community_food_access_center_master.png", "purpose": "hungerを食料アクセスの問題として描く"},
+    {"time": 14.7, "file": "disrupted_supply_and_price_master.png", "purpose": "物流・価格・気候による不足"},
+    {"time": 18.0, "file": "southern_mesopotamia_river_plain_master.png", "purpose": "古代Agricultureの環境"},
+    {"time": 22.0, "file": "mesopotamian_canal_planning_master.png", "purpose": "共同で計画する灌漑"},
+    {"time": 26.0, "file": "mesopotamian_earthen_water_gate_master.png", "purpose": "土と木の灌漑設備"},
+    {"time": 31.7, "file": "mesopotamian_irrigated_barley_master.png", "purpose": "灌漑農業と文明の基盤"},
+    {"time": 35.5, "file": "farmer_seed_selection_history_master.png", "purpose": "長期の品種選抜"},
+    {"time": 39.5, "file": "crop_yield_measurement_history_master.png", "purpose": "crop収量の改善"},
+    {"time": 43.5, "file": "modern_plant_breeding_team_master.png", "purpose": "現代の品種改良と新技術"},
+    {"time": 47.3, "file": "green_revolution_rice_research_1960s_master.png", "purpose": "1960年代の稲研究"},
+    {"time": 50.7, "file": "high_yield_rice_field_asia_master.png", "purpose": "アジアの高収量品種"},
+    {"time": 54.0, "file": "south_asia_wheat_harvest_master.png", "purpose": "南アジアの生産増"},
+    {"time": 57.2, "file": "measured_fertilizer_and_irrigation_master.png", "purpose": "fertilizers・水・管理の組合せ"},
+    {"time": 60.0, "file": "african_farming_conditions_varied_master.png", "purpose": "アフリカ内の条件差"},
+    {"time": 63.0, "file": "pesticide_safe_application_master.png", "purpose": "pesticidesの適正使用"},
+    {"time": 66.8, "file": "fertilizer_runoff_after_rain_master.png", "purpose": "過剰fertilizersの流出"},
+    {"time": 70.5, "file": "contaminated_stream_monitoring_master.png", "purpose": "土壌・水の汚染監視"},
+    {"time": 75.9, "file": "organic_crop_rotation_master.png", "purpose": "organic農業と輪作"},
+    {"time": 79.0, "file": "compost_soil_biodiversity_master.png", "purpose": "有機物と土壌生物"},
+    {"time": 82.0, "file": "gene_crop_lab_assessment_master.png", "purpose": "geneを組み換えたcropsの研究"},
+    {"time": 85.0, "file": "gm_crop_field_trial_monitoring_master.png", "purpose": "圃場試験と個別評価"},
+    {"time": 88.0, "file": "organic_gm_evidence_comparison_master.png", "purpose": "二つの方法の条件別比較"},
+    {"time": 92.0, "file": "smallholder_choice_roundtable_master.png", "purpose": "農家自身による選択"},
+    {"time": 95.0, "file": "integrated_diversified_farm_master.png", "purpose": "複数手法を組み合わせる農場"},
+    {"time": 97.9, "file": "food_waste_kitchen_scale_master.png", "purpose": "食品wasteの導入"},
+    {"time": 100.6, "file": "postharvest_storage_loss_master.png", "purpose": "収穫後lossと食品廃棄の区別"},
+    {"time": 103.0, "file": "retail_unsold_food_master.png", "purpose": "小売段階の売れ残り"},
+    {"time": 106.0, "file": "restaurant_kitchen_waste_master.png", "purpose": "外食段階のwaste"},
+    {"time": 108.8, "file": "household_leftovers_planning_master.png", "purpose": "家庭の保存と使い切り"},
+    {"time": 111.0, "file": "food_access_logistics_contradiction_master.png", "purpose": "hungerと廃棄のcontradiction"},
+    {"time": 116.3, "file": "farmer_cooperative_storage_master.png", "purpose": "増産だけでない解決"},
+    {"time": 119.5, "file": "cold_chain_transport_master.png", "purpose": "低温流通の改善"},
+    {"time": 122.2, "file": "local_market_distribution_master.png", "purpose": "distributionの改善"},
+    {"time": 126.0, "file": "safe_surplus_redistribution_master.png", "purpose": "余剰食品の安全な再配分"},
+    {"time": 130.0, "file": "waste_reduction_consumer_choice_master.png", "purpose": "wasteのreductionと消費者"},
+    {"time": 134.0, "file": "food_scraps_compost_cycle_master.png", "purpose": "食料残渣を土へ戻す循環"},
+    {"time": 138.0, "file": "climate_resilient_sustainable_farm_master.png", "purpose": "持続可能で強靱な農場"},
+    {"time": 144.0, "file": "farmers_researchers_consumers_future_master.png", "purpose": "世界を養う共同challenge"},
+    {"time": 149.0, "file": "regional_fields_evening_finale_master.png", "purpose": "地域の畑と食卓へ戻る終幕"}
+  ]
+}

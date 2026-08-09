@@ -1,0 +1,161 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H009.md",
+  "audio": "高校生編/suno_ready/generated/audio/H009/candidate1-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 81.36,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 139,
+  "transcribed_words": 139,
+  "matched_words": 137,
+  "coverage": 0.9856,
+  "precision": 0.9856,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 138,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 49,
+      "length": 1,
+      "words": [
+        "discussed"
+      ]
+    },
+    {
+      "start": 53,
+      "length": 1,
+      "words": [
+        "turned"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 49,
+      "actual_start": 49,
+      "expected": [
+        "discussed"
+      ],
+      "actual": [
+        "discuss"
+      ],
+      "actual_confidence": 0.8398,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 53,
+      "actual_start": 53,
+      "expected": [
+        "turned"
+      ],
+      "actual": [
+        "turn"
+      ],
+      "actual_confidence": 0.9893,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "I was discussing the Sunday picnic with my sister If the weather is good, we will spend the day in a meadow by the river If it rains, we will watch a movie at home Unless it rains, we will leave the house at ten in the morning We discuss several conditions and turn them into a clear plan Tomorrow morning, unless the forecast turns much worse We will go as planned If it does rain, however, we will shift the picnic to the afternoon Whenever the forecast improves, our spirits rise with it Although Mother was tired, she said she would prepare sandwiches The sight of sandwiches Filling an entire basket Is always a pleasant one As Sunday approaches My sister's face remained calm The fact that everything would depend on The weather brought our family Quietly together",
+  "segments": [
+    {
+      "start": 1.18,
+      "end": 5.46,
+      "text": "I was discussing the Sunday picnic with my sister"
+    },
+    {
+      "start": 6.0,
+      "end": 11.38,
+      "text": "If the weather is good, we will spend the day in a meadow by the river"
+    },
+    {
+      "start": 11.38,
+      "end": 16.84,
+      "text": "If it rains, we will watch a movie at home"
+    },
+    {
+      "start": 20.62,
+      "end": 25.68,
+      "text": "Unless it rains, we will leave the house at ten in the morning"
+    },
+    {
+      "start": 25.68,
+      "end": 30.48,
+      "text": "We discuss several conditions and turn them into a clear plan"
+    },
+    {
+      "start": 30.48,
+      "end": 35.28,
+      "text": "Tomorrow morning, unless the forecast turns much worse"
+    },
+    {
+      "start": 35.28,
+      "end": 38.86,
+      "text": "We will go as planned"
+    },
+    {
+      "start": 38.86,
+      "end": 45.1,
+      "text": "If it does rain, however, we will shift the picnic to the afternoon"
+    },
+    {
+      "start": 45.1,
+      "end": 51.08,
+      "text": "Whenever the forecast improves, our spirits rise with it"
+    },
+    {
+      "start": 51.08,
+      "end": 55.34,
+      "text": "Although Mother was tired, she said she would prepare sandwiches"
+    },
+    {
+      "start": 55.34,
+      "end": 57.16,
+      "text": "The sight of sandwiches"
+    },
+    {
+      "start": 57.16,
+      "end": 60.02,
+      "text": "Filling an entire basket"
+    },
+    {
+      "start": 60.02,
+      "end": 62.62,
+      "text": "Is always a pleasant one"
+    },
+    {
+      "start": 62.62,
+      "end": 66.4,
+      "text": "As Sunday approaches"
+    },
+    {
+      "start": 66.4,
+      "end": 69.84,
+      "text": "My sister's face remained calm"
+    },
+    {
+      "start": 69.84,
+      "end": 75.36,
+      "text": "The fact that everything would depend on"
+    },
+    {
+      "start": 75.36,
+      "end": 78.72,
+      "text": "The weather brought our family"
+    },
+    {
+      "start": 78.72,
+      "end": 81.36,
+      "text": "Quietly together"
+    }
+  ]
+}

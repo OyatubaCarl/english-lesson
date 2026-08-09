@@ -1,0 +1,331 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H133.md",
+  "audio": "高校生編/suno_ready/generated/audio/H133/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 169.321,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.017,
+  "expected_words": 235,
+  "transcribed_words": 239,
+  "matched_words": 225,
+  "coverage": 0.9574,
+  "precision": 0.9414,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 234,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 20,
+      "length": 2,
+      "words": [
+        "violate",
+        "it"
+      ]
+    },
+    {
+      "start": 110,
+      "length": 2,
+      "words": [
+        "supporters",
+        "argue"
+      ]
+    },
+    {
+      "start": 68,
+      "length": 1,
+      "words": [
+        "postwar"
+      ]
+    },
+    {
+      "start": 70,
+      "length": 1,
+      "words": [
+        "amendment"
+      ]
+    },
+    {
+      "start": 113,
+      "length": 1,
+      "words": [
+        "amendment"
+      ]
+    },
+    {
+      "start": 130,
+      "length": 1,
+      "words": [
+        "poll"
+      ]
+    },
+    {
+      "start": 181,
+      "length": 1,
+      "words": [
+        "a"
+      ]
+    },
+    {
+      "start": 196,
+      "length": 1,
+      "words": [
+        "it"
+      ]
+    }
+  ],
+  "replacement_count": 8,
+  "replacement_spans": [
+    {
+      "expected_start": 20,
+      "actual_start": 20,
+      "expected": [
+        "violate",
+        "it"
+      ],
+      "actual": [
+        "violated"
+      ],
+      "actual_confidence": 0.9673,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 68,
+      "actual_start": 67,
+      "expected": [
+        "postwar"
+      ],
+      "actual": [
+        "post",
+        "war"
+      ],
+      "actual_confidence": 0.8894,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 70,
+      "actual_start": 70,
+      "expected": [
+        "amendment"
+      ],
+      "actual": [
+        "a",
+        "man",
+        "that"
+      ],
+      "actual_confidence": 0.6878,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 110,
+      "actual_start": 112,
+      "expected": [
+        "supporters",
+        "argue"
+      ],
+      "actual": [
+        "support",
+        "has",
+        "argued"
+      ],
+      "actual_confidence": 0.6087,
+      "substitution_words": 2,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 113,
+      "actual_start": 116,
+      "expected": [
+        "amendment"
+      ],
+      "actual": [
+        "a",
+        "manland"
+      ],
+      "actual_confidence": 0.7364,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 130,
+      "actual_start": 134,
+      "expected": [
+        "poll"
+      ],
+      "actual": [
+        "poor"
+      ],
+      "actual_confidence": 0.9364,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 181,
+      "actual_start": 185,
+      "expected": [
+        "a"
+      ],
+      "actual": [
+        "the"
+      ],
+      "actual_confidence": 0.439,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 196,
+      "actual_start": 200,
+      "expected": [
+        "it"
+      ],
+      "actual": [
+        "that"
+      ],
+      "actual_confidence": 0.474,
+      "substitution_words": 1,
+      "has_content_word": false
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 4,
+  "suspicious_substitution_words": 4,
+  "suspicious_content_substitution": true,
+  "transcript": "in a democratic nation the constitution functions as the supreme law all laws are placed under it and laws that violated are declared unconstitutional and invalid The Japanese Constitution came into force in 1947 Because it was drafted under foreign occupation There is criticism that it is an imposed constitution At the same time, it is also a fact that it has supported the peace And prosperity of post-war Japan A man that requires the support of two-thirds of the diet And a national referendum For this reason it has never once been amended Debate over constitutional revision has continued for many years The focus is Article 9 The clause renouncing war Support has argued that a manland is needed to deal with the changing security environment Opponents insist that pacifism must be retained Poor results have swung with the times there is a survey Suggesting younger generations tend to support revision But among the elderly, more cautious opinions are common The debate over revision requires intellectual honesty Rather than vaguely wanting to change or vaguely wanting to preserve We should discuss specific articles and the specific vision of the nation The Constitution does not belong to any one group that is born and can be changed through the will of the people. Democracy functions only through the participation of each citizen. The debate over the Constitution is the most fundamental dialogue. That decides the future of our nation",
+  "segments": [
+    {
+      "start": 6.68,
+      "end": 17.34,
+      "text": "in a democratic nation the constitution functions as the supreme law all laws are placed under it"
+    },
+    {
+      "start": 18.0,
+      "end": 24.36,
+      "text": "and laws that violated are declared unconstitutional and invalid"
+    },
+    {
+      "start": 24.36,
+      "end": 31.96,
+      "text": "The Japanese Constitution came into force in 1947"
+    },
+    {
+      "start": 33.66,
+      "end": 37.96,
+      "text": "Because it was drafted under foreign occupation"
+    },
+    {
+      "start": 37.96,
+      "end": 44.44,
+      "text": "There is criticism that it is an imposed constitution"
+    },
+    {
+      "start": 44.44,
+      "end": 49.98,
+      "text": "At the same time, it is also a fact that it has supported the peace"
+    },
+    {
+      "start": 49.98,
+      "end": 54.22,
+      "text": "And prosperity of post-war Japan"
+    },
+    {
+      "start": 55.98,
+      "end": 60.04,
+      "text": "A man that requires the support of two-thirds of the diet"
+    },
+    {
+      "start": 60.04,
+      "end": 62.58,
+      "text": "And a national referendum"
+    },
+    {
+      "start": 62.58,
+      "end": 67.02,
+      "text": "For this reason it has never once been amended"
+    },
+    {
+      "start": 67.02,
+      "end": 73.0,
+      "text": "Debate over constitutional revision has continued for many years"
+    },
+    {
+      "start": 73.0,
+      "end": 74.98,
+      "text": "The focus is Article 9"
+    },
+    {
+      "start": 75.98,
+      "end": 78.3,
+      "text": "The clause renouncing war"
+    },
+    {
+      "start": 81.06,
+      "end": 87.64,
+      "text": "Support has argued that a manland is needed to deal with the changing security environment"
+    },
+    {
+      "start": 87.64,
+      "end": 92.82,
+      "text": "Opponents insist that pacifism must be retained"
+    },
+    {
+      "start": 92.82,
+      "end": 98.96,
+      "text": "Poor results have swung with the times there is a survey"
+    },
+    {
+      "start": 98.96,
+      "end": 103.88,
+      "text": "Suggesting younger generations tend to support revision"
+    },
+    {
+      "start": 103.88,
+      "end": 111.08,
+      "text": "But among the elderly, more cautious opinions are common"
+    },
+    {
+      "start": 111.08,
+      "end": 116.58,
+      "text": "The debate over revision requires intellectual honesty"
+    },
+    {
+      "start": 116.58,
+      "end": 121.6,
+      "text": "Rather than vaguely wanting to change or vaguely wanting to preserve"
+    },
+    {
+      "start": 121.6,
+      "end": 130.36,
+      "text": "We should discuss specific articles and the specific vision of the nation"
+    },
+    {
+      "start": 130.36,
+      "end": 139.4,
+      "text": "The Constitution does not belong to any one group that is born and can be changed through"
+    },
+    {
+      "start": 139.4,
+      "end": 141.54,
+      "text": "the will of the people."
+    },
+    {
+      "start": 142.38,
+      "end": 149.6,
+      "text": "Democracy functions only through the participation of each citizen."
+    },
+    {
+      "start": 152.36,
+      "end": 158.9,
+      "text": "The debate over the Constitution is the most fundamental dialogue."
+    },
+    {
+      "start": 160.88,
+      "end": 164.7,
+      "text": "That decides the future of our nation"
+    }
+  ]
+}

@@ -1,4 +1,30 @@
-# 英語学習教材作成プロジェクト ― 引き継ぎノート
+> # 🌮 Teacher Tacos English 共通入口（2026-07-27〜）
+>
+> Claude Code / Codex のどちらから作業する場合も、最初に次を読む。
+>
+> 1. `/Users/masaki/Documents/ClaudeCode/TeacherTacosEnglish-Hub/AI_START_HERE.md`
+> 2. `/Users/masaki/Documents/ClaudeCode/TeacherTacosEnglish-Hub/CURRENT-TASK.md`
+> 3. Obsidianの対象タスク
+>
+> Hubは全体構成と正本への案内、Obsidianは現在の進捗、このファイルは当フォルダ固有のルールを担当する。
+> Hub整備を理由に既存ファイルを移動・改名・削除しない。
+>
+> ---
+>
+> # 🔖 現行の作業拠点（2026-07-05〜） ― まずここを読む
+>
+> このリポジトリの「今の作業」の正本は **Obsidian と自動メモリ**にある。**作業再開時は必ず先に読むこと**（母艦プロトコル「作業開始 Step1」と同旨）。
+>
+> - **Obsidian 現状索引**: `~/workspace-local/Obsidian/MainVault/_AI-Workspace/00_context/active-projects.md`（WordTacos / フルコースアプリ の現状）
+> - **フルコースアプリ 仕様の正本**: `_AI-Workspace/01_tasks/in-progress/TASK-20260705-001.md`（「Teacher Tacos English フルコース」7品ゲート式アプリ・構想）
+> - **自動メモリ**（毎セッション自動ロード）: `[[project-fullcourse-app]]` / `[[project-wordtacos-state]]` / `[[read-obsidian-at-start]]`
+> - **WordTacos**（英単語クイズPWA）本体=`vocab_sources/app.html`、デプロイ=`vocab_sources/deploy_wordtacos.sh`＋`sw.js`のCACHE+1。全ステージ多重例文・Piper音声移行済。
+>
+> 以下は旧・構文解析(H40〜)の引き継ぎメモ（別作業。歴史的記録として温存）。
+
+---
+
+# 英語学習教材作成プロジェクト ― 引き継ぎノート（旧・構文解析H40〜）
 
 ## 中断時点（2026-04-26）
 **次の再開ポイント：H40 から構文解析＋ルビコンテンツを作成**

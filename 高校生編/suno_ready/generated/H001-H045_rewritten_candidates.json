@@ -1,0 +1,35 @@
+{
+  "range": "H001-H045",
+  "generated_at": "2026-08-02T19:43:00+09:00",
+  "generation_model": "Suno v5.5",
+  "policy": "H009 and H035 were rewritten to avoid phrases repeatedly misrecognized across the first three inspected songs. Both candidates from the rewritten version are compared.",
+  "credits": {
+    "before": 570,
+    "after": 550,
+    "spent": 20
+  },
+  "lessons": {
+    "9": {
+      "code": "009",
+      "title": "H009 — 日曜日のピクニック — 表現改訂版",
+      "generation_attempt": 3,
+      "first": "https://suno.com/song/b3f9f2ad-b2ea-41cd-a388-1f38771e3ac8",
+      "backup": "https://suno.com/song/1089c2c3-e660-4344-8240-927a88dd9abf",
+      "rewrites": [
+        "We discussed several conditions and turned them into a clear plan. -> We thought about several conditions and made a clear plan.",
+        "Although Mother was tired, she said she would prepare sandwiches. -> Mother was tired, but she said she would prepare sandwiches."
+      ]
+    },
+    "35": {
+      "code": "035",
+      "title": "H035 — ダーウィンとガラパゴス — 表現改訂版",
+      "generation_attempt": 3,
+      "first": "https://suno.com/song/f884d7bd-cce8-45d5-ad96-6096555d7cf5",
+      "backup": "https://suno.com/song/362df8f4-dcad-4689-9d2c-c9f341de71a2",
+      "rewrites": [
+        "Charles Darwin ... on board H.M.S. Beagle. -> In 1831, Charles Darwin began a voyage around the world aboard a British survey ship.",
+        "In the Galápagos ... -> On the Galapagos Islands, he carefully observed how animals varied from island to island."
+      ]
+    }
+  }
+}

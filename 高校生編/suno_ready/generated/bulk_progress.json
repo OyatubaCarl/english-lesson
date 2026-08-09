@@ -1,0 +1,913 @@
+{
+  "started": "2026-08-02",
+  "model": "v5.5",
+  "policy": "Generate all first, prioritize wrong-word substitutions over omissions, inspect at most three songs per lesson, and record one adopted/provisional song.",
+  "lessons": {
+    "48": {
+      "first": "https://suno.com/song/d1d4d188-992d-48f8-bac4-10eda1dcfc88",
+      "backup": "https://suno.com/song/5443d1c1-9e25-400d-93c4-b6133c3dc4bf",
+      "status": "adopted",
+      "qa": "PASS",
+      "coverage": 0.9943,
+      "adopted": "https://suno.com/song/d1d4d188-992d-48f8-bac4-10eda1dcfc88",
+      "adopted_candidate": 1
+    },
+    "49": {
+      "first": "https://suno.com/song/675c6829-ed6f-4798-b4a0-a97c668b9101",
+      "backup": "https://suno.com/song/e6a8fbfb-ea04-4d50-b66d-0fa53f9a92ea",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/e6a8fbfb-ea04-4d50-b66d-0fa53f9a92ea",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "50": {
+      "first": "https://suno.com/song/cc9540f2-18ab-45bb-8e7b-57c3c78e163a",
+      "backup": "https://suno.com/song/7852f144-4cb8-48cc-8d76-7c0dcee3a138",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/cc9540f2-18ab-45bb-8e7b-57c3c78e163a",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "51": {
+      "first": "https://suno.com/song/365e2e22-9708-426c-a6e1-c5ac14771c0a",
+      "backup": "https://suno.com/song/ac176607-d082-449d-adac-ea7703e3b2f0",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/365e2e22-9708-426c-a6e1-c5ac14771c0a",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "52": {
+      "first": "https://suno.com/song/9321be08-fa57-491b-8720-2aaec5f28aae",
+      "backup": "https://suno.com/song/8d58c027-c868-4e2f-9229-12aefef9b662",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/9321be08-fa57-491b-8720-2aaec5f28aae",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "53": {
+      "first": "https://suno.com/song/93a8f9f6-ca6a-4cc1-928f-33e66347f02e",
+      "backup": "https://suno.com/song/76f142cb-7095-4678-b022-8f4058689326",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/76f142cb-7095-4678-b022-8f4058689326",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "54": {
+      "first": "https://suno.com/song/210c0e44-83bc-41fc-af50-d25ed5ad355d",
+      "backup": "https://suno.com/song/ccae0d2b-8505-4342-87f7-8e0d68a7c213",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/210c0e44-83bc-41fc-af50-d25ed5ad355d",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "55": {
+      "first": "https://suno.com/song/d9ab3253-ca96-462d-b089-135896d318fe",
+      "backup": "https://suno.com/song/2cfd7f9e-4a7a-4eba-89b5-ba02d25e4bd9",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/d9ab3253-ca96-462d-b089-135896d318fe",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "56": {
+      "first": "https://suno.com/song/ad1f4201-46e6-4ffd-bfe6-54fe5186891e",
+      "backup": "https://suno.com/song/673411de-6675-4dc0-b51f-e3ae09935283",
+      "status": "provisional_review",
+      "adopted": "https://suno.com/song/673411de-6675-4dc0-b51f-e3ae09935283",
+      "adopted_candidate": 2,
+      "qa": "REVIEW_STOPPED_AFTER_3"
+    },
+    "57": {
+      "first": "https://suno.com/song/f5d37d04-8a95-44a7-b648-d5fbd69b93f8",
+      "backup": "https://suno.com/song/3c9eeed6-ead2-45eb-84d6-caf0867c1c26",
+      "status": "provisional_review",
+      "adopted": "https://suno.com/song/3c9eeed6-ead2-45eb-84d6-caf0867c1c26",
+      "adopted_candidate": 2,
+      "qa": "REVIEW_STOPPED_AFTER_3"
+    },
+    "58": {
+      "first": "https://suno.com/song/3f55d666-d89d-4b7a-b591-55d8986ec626",
+      "backup": "https://suno.com/song/dc73a117-301d-4134-b9c5-ce54120f655c",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/3f55d666-d89d-4b7a-b591-55d8986ec626",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "59": {
+      "first": "https://suno.com/song/06c72a06-e918-40b6-989c-f63a16330576",
+      "backup": "https://suno.com/song/f3549d40-ec36-4bc4-8652-3960804c9df9",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/f3549d40-ec36-4bc4-8652-3960804c9df9",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "60": {
+      "first": "https://suno.com/song/3a88b99d-5dee-4f29-8ef4-8e6f59b0ca47",
+      "backup": "https://suno.com/song/51d24643-3792-41d4-b26f-ba551c3bba04",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/3a88b99d-5dee-4f29-8ef4-8e6f59b0ca47",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "61": {
+      "first": "https://suno.com/song/1f5a770d-64bd-4360-a8b2-2fa3fccf7405",
+      "backup": "https://suno.com/song/f9fb89d4-3c8c-4c09-a440-862dd08ddfea",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/f9fb89d4-3c8c-4c09-a440-862dd08ddfea",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "62": {
+      "first": "https://suno.com/song/962f6e9b-8a04-478e-9b6a-175a6d1ff5f5",
+      "backup": "https://suno.com/song/028176fa-2138-4abe-b588-6909ddba1144",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/028176fa-2138-4abe-b588-6909ddba1144",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "63": {
+      "first": "https://suno.com/song/807afb8f-a29e-4c66-af90-ed89bc231f98",
+      "backup": "https://suno.com/song/bc383781-8a9f-494c-ae31-b8b18ff290fd",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/bc383781-8a9f-494c-ae31-b8b18ff290fd",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "64": {
+      "first": "https://suno.com/song/d3cbbbc5-0fcc-421a-9753-fea8ecfb1d65",
+      "backup": "https://suno.com/song/0ba664d5-d728-4f76-add9-2d9eab4ac831",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/d3cbbbc5-0fcc-421a-9753-fea8ecfb1d65",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "65": {
+      "first": "https://suno.com/song/5d391410-f178-490a-a778-da379b5f287b",
+      "backup": "https://suno.com/song/75743147-8321-4a17-80dd-9ed68c60f543",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/5d391410-f178-490a-a778-da379b5f287b",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "66": {
+      "first": "https://suno.com/song/4f5c5209-91be-4125-9797-1cfca38d50d1",
+      "backup": "https://suno.com/song/012d911e-9bf6-4dd0-a587-4f7fc1d5836c",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/4f5c5209-91be-4125-9797-1cfca38d50d1",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "67": {
+      "first": "https://suno.com/song/0a715088-ce61-4c9a-bba2-ecca50fc9a63",
+      "backup": "https://suno.com/song/52a609c7-ab2b-4b1a-a894-d10596ce5b05",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/52a609c7-ab2b-4b1a-a894-d10596ce5b05",
+      "adopted_candidate": 2,
+      "qa": "PASS_EQUIVALENT"
+    },
+    "68": {
+      "first": "https://suno.com/song/74786c54-856d-49d7-ad38-f4903cc72c45",
+      "backup": "https://suno.com/song/29fc2ff0-1fcf-45f1-9c86-56e9361a4c34",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/cb2262cd-ef5b-44f2-81a3-6e0d0099d59a",
+      "adopted_candidate": 3,
+      "qa": "PASS"
+    },
+    "69": {
+      "first": "https://suno.com/song/bdfaa9e0-38ac-46b9-bbad-e8e9c1e5f463",
+      "backup": "https://suno.com/song/125c73be-a73b-4a38-b424-ef5a94f46a28",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/bdfaa9e0-38ac-46b9-bbad-e8e9c1e5f463",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "70": {
+      "first": "https://suno.com/song/7b1c1503-d3e5-4088-8d88-762cdd15e187",
+      "backup": "https://suno.com/song/1cb8dd48-f11e-454c-84dd-903b6f312132",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/1cb8dd48-f11e-454c-84dd-903b6f312132",
+      "adopted_candidate": 2,
+      "qa": "PASS_EQUIVALENT"
+    },
+    "71": {
+      "first": "https://suno.com/song/d19fca28-f2c7-4704-9ed4-ad9948ae00a3",
+      "backup": "https://suno.com/song/6f08f2fd-7b3f-4445-b595-35e4815310c1",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/d19fca28-f2c7-4704-9ed4-ad9948ae00a3",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "72": {
+      "first": "https://suno.com/song/85c9d6fb-fa18-4634-ad1e-f2ce2adbef95",
+      "backup": "https://suno.com/song/725879c5-0b73-4e9b-a977-d5c1dfc33702",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/85c9d6fb-fa18-4634-ad1e-f2ce2adbef95",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "73": {
+      "first": "https://suno.com/song/78a4627e-4bb1-470a-9dab-2d402187df18",
+      "backup": "https://suno.com/song/95a0871a-be06-4c1c-a78f-05c6a45cd0e2",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/78a4627e-4bb1-470a-9dab-2d402187df18",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "74": {
+      "first": "https://suno.com/song/c8c04b47-5bb0-4324-a153-4f0b9f12377d",
+      "backup": "https://suno.com/song/4ff0c0f7-8734-4bd2-be60-05edf68ecae1",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/4ff0c0f7-8734-4bd2-be60-05edf68ecae1",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "75": {
+      "first": "https://suno.com/song/b0c65353-988b-4d09-bb5c-442227c974f4",
+      "backup": "https://suno.com/song/9d3814e1-6acc-4afc-835e-fd4c62bbace0",
+      "status": "adopted",
+      "note": "Suno falsely classified 'itadakimasu' as a producer tag; minimally paraphrased and regenerated before lyric QA.",
+      "adopted": "https://suno.com/song/b0c65353-988b-4d09-bb5c-442227c974f4",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "76": {
+      "first": "https://suno.com/song/e8c96a7d-f309-4029-876e-dacb139d573f",
+      "backup": "https://suno.com/song/5f375d72-310d-469d-8619-6fd11146e949",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/5f375d72-310d-469d-8619-6fd11146e949",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "77": {
+      "first": "https://suno.com/song/80630175-c431-4c59-8fce-f1236cfdbef6",
+      "backup": "https://suno.com/song/c5a53f3d-33b6-47ff-8b63-131a9023b2db",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/c5a53f3d-33b6-47ff-8b63-131a9023b2db",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "78": {
+      "first": "https://suno.com/song/cb93d8c2-c049-4205-916d-d0d27a4ba2fa",
+      "backup": "https://suno.com/song/8beb68c8-816d-475d-8b6e-529e3903a122",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/cb93d8c2-c049-4205-916d-d0d27a4ba2fa",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "79": {
+      "first": "https://suno.com/song/ed7501d6-25a1-4acb-b726-e73259a09954",
+      "backup": "https://suno.com/song/2c1505ae-936d-4279-af7e-87bc63d77d90",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/ed7501d6-25a1-4acb-b726-e73259a09954",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "80": {
+      "first": "https://suno.com/song/964e26d7-03df-4ca1-abe2-ab0a2f784b08",
+      "backup": "https://suno.com/song/6afcf5a0-6698-4cc0-afa4-11246658d941",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/6afcf5a0-6698-4cc0-afa4-11246658d941",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "81": {
+      "first": "https://suno.com/song/52a527de-b55f-4353-85a6-acae0f117a3d",
+      "backup": "https://suno.com/song/0520bb36-909d-41f2-9d62-ad5f0db2fd04",
+      "status": "provisional_review",
+      "adopted": "https://suno.com/song/8b82c71f-4295-4950-b52a-b45562829d48",
+      "adopted_candidate": 3,
+      "qa": "REVIEW_STOPPED_AFTER_3"
+    },
+    "82": {
+      "first": "https://suno.com/song/1f1ce2a4-adce-49e7-bf63-c770db909d9a",
+      "backup": "https://suno.com/song/416273ed-7295-41e1-a41f-b7f4edc35ab3",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/1f1ce2a4-adce-49e7-bf63-c770db909d9a",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "83": {
+      "first": "https://suno.com/song/09be0f3c-76e7-4729-bd9c-bc2ed084ed82",
+      "backup": "https://suno.com/song/b4d21f9b-3c10-414f-a6ce-868090f46d40",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/b4d21f9b-3c10-414f-a6ce-868090f46d40",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "84": {
+      "first": "https://suno.com/song/80e9a633-c45f-4f80-9bd4-ab3dc978d888",
+      "backup": "https://suno.com/song/1f467549-d4f2-43c5-862c-9f89a171b87f",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/1f467549-d4f2-43c5-862c-9f89a171b87f",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "85": {
+      "first": "https://suno.com/song/d4117b6a-443d-4d2b-8d1f-6e51fee514da",
+      "backup": "https://suno.com/song/a6382849-1358-4014-b193-8edd1e18713f",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/d4117b6a-443d-4d2b-8d1f-6e51fee514da",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "86": {
+      "first": "https://suno.com/song/3538522b-dd35-451e-abe1-197b200a348a",
+      "backup": "https://suno.com/song/61b7ca8b-2fbe-47f6-9c95-5090be798d51",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/61b7ca8b-2fbe-47f6-9c95-5090be798d51",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "87": {
+      "first": "https://suno.com/song/2dc66b8f-179c-43a4-ac4a-b5ccf06cefbe",
+      "backup": "https://suno.com/song/24c95b5e-201a-41e0-a3a6-6f7c9ff7c073",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/2dc66b8f-179c-43a4-ac4a-b5ccf06cefbe",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "88": {
+      "first": "https://suno.com/song/dee9d263-36c9-4194-9baf-f1c946496926",
+      "backup": "https://suno.com/song/1a9d1a08-7e04-41be-b581-07c96ba097f3",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/dee9d263-36c9-4194-9baf-f1c946496926",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "89": {
+      "first": "https://suno.com/song/cd293124-0566-43df-afec-e07f3a65be66",
+      "backup": "https://suno.com/song/46f7bbd5-6c23-4cf1-aad8-c98fc65bd8f9",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/cd293124-0566-43df-afec-e07f3a65be66",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "90": {
+      "first": "https://suno.com/song/98f41773-a6bd-4746-82d9-1f4e0bf0987c",
+      "backup": "https://suno.com/song/afdccf1c-e5cc-47c7-bfee-6755264b9dcd",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/afdccf1c-e5cc-47c7-bfee-6755264b9dcd",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "91": {
+      "first": "https://suno.com/song/5bff3297-bdcc-40e9-8f2d-a49fd1e13441",
+      "backup": "https://suno.com/song/25193142-8358-4261-b6c6-b4debe555f4f",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/5bff3297-bdcc-40e9-8f2d-a49fd1e13441",
+      "adopted_candidate": 1,
+      "qa": "PASS_EQUIVALENT"
+    },
+    "92": {
+      "first": "https://suno.com/song/0b831f64-09ca-4cfd-a3db-4d0effad27c5",
+      "backup": "https://suno.com/song/f32582d1-660b-461e-883a-c42aa9440022",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/0b831f64-09ca-4cfd-a3db-4d0effad27c5",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "93": {
+      "first": "https://suno.com/song/55e882b1-d5a2-4fe8-9b42-edc0d39e5b02",
+      "backup": "https://suno.com/song/cbfec3fc-0985-4ad0-baee-4cfe9b27869d",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/cbfec3fc-0985-4ad0-baee-4cfe9b27869d",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "94": {
+      "first": "https://suno.com/song/5c405b53-a10f-4599-b1db-222ae0ad4720",
+      "backup": "https://suno.com/song/a9527b5c-720a-4e09-8ea4-c44fa1581754",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/5c405b53-a10f-4599-b1db-222ae0ad4720",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "95": {
+      "first": "https://suno.com/song/72d5b9aa-63b6-4e13-8dea-d78bdfc03b5a",
+      "backup": "https://suno.com/song/46c9065b-8440-4d4d-ab90-ccbb28b251c2",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/72d5b9aa-63b6-4e13-8dea-d78bdfc03b5a",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "96": {
+      "first": "https://suno.com/song/7f212a55-28bc-4b23-a12f-b0df09002295",
+      "backup": "https://suno.com/song/cbb25806-6ad2-41b4-9627-b374a7118838",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/cbb25806-6ad2-41b4-9627-b374a7118838",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "97": {
+      "first": "https://suno.com/song/1112a09d-ccfe-486c-a7c8-452cfc2a9e95",
+      "backup": "https://suno.com/song/2786311c-bd8e-4f57-8296-11f1bafda8ff",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/f9c0eebb-83a2-4ebc-ad0d-cb6853b18556",
+      "adopted_candidate": 3,
+      "qa": "PASS"
+    },
+    "98": {
+      "first": "https://suno.com/song/83e8bfe9-169d-4331-8acc-994670339a3c",
+      "backup": "https://suno.com/song/a6c8271e-6511-4111-939b-17d3963c7cee",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/83e8bfe9-169d-4331-8acc-994670339a3c",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "99": {
+      "first": "https://suno.com/song/73edabe2-cc0b-44a3-b9c5-09dc81f577f4",
+      "backup": "https://suno.com/song/0399d103-30b5-4828-b407-f5afe5c38a15",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/73edabe2-cc0b-44a3-b9c5-09dc81f577f4",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "100": {
+      "first": "https://suno.com/song/0cb3eba2-088c-4a33-8253-535acacae826",
+      "backup": "https://suno.com/song/d977f61d-27c6-4639-b7bc-c0564292b99b",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/d977f61d-27c6-4639-b7bc-c0564292b99b",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "101": {
+      "first": "https://suno.com/song/a0a89c08-32f7-4c12-bf40-92d73945de46",
+      "backup": "https://suno.com/song/a40165c1-2968-405e-ba27-4161410913d2",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/a40165c1-2968-405e-ba27-4161410913d2",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "102": {
+      "first": "https://suno.com/song/704020ee-8d7c-433d-afcd-55209059ada1",
+      "backup": "https://suno.com/song/b8b83a40-7774-4a8d-b178-720c3ffed73b",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/704020ee-8d7c-433d-afcd-55209059ada1",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "103": {
+      "first": "https://suno.com/song/98fe6a7a-2da6-4636-82ce-fe1c030bfb4b",
+      "backup": "https://suno.com/song/bb32bf0d-4443-499b-8c58-653b76a51c94",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/98fe6a7a-2da6-4636-82ce-fe1c030bfb4b",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "104": {
+      "first": "https://suno.com/song/d0ace993-6562-44fd-8670-b124e853f154",
+      "backup": "https://suno.com/song/7bca8a7c-a9ce-46e4-bfc9-b3d11dbab347",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/e8bbb697-0cbe-4bf2-892a-2a072971705a",
+      "adopted_candidate": 3,
+      "qa": "PASS"
+    },
+    "105": {
+      "first": "https://suno.com/song/945c6f45-e7ed-4054-95a8-896066c8b05b",
+      "backup": "https://suno.com/song/0ded9859-06fc-433b-88df-a593ab9202d1",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/945c6f45-e7ed-4054-95a8-896066c8b05b",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "106": {
+      "first": "https://suno.com/song/0c3d76ba-dcbc-4d7f-b643-05db69696b64",
+      "backup": "https://suno.com/song/2e345ab8-4ddd-4e6f-99b5-14fe2790e703",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/0c3d76ba-dcbc-4d7f-b643-05db69696b64",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "107": {
+      "first": "https://suno.com/song/c2b9b071-e3f5-4927-a282-fe9c711154fc",
+      "backup": "https://suno.com/song/9869bcf4-018c-45f7-a013-5156124b81d4",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/c2b9b071-e3f5-4927-a282-fe9c711154fc",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "108": {
+      "first": "https://suno.com/song/4ab34838-0c0e-4740-8d8b-ec2b54f7a8ef",
+      "backup": "https://suno.com/song/39ae7731-9cb5-42d8-a12d-ee10d76bad71",
+      "status": "provisional_review",
+      "adopted": "https://suno.com/song/868f274c-0622-4622-96e8-bcac05f2cdd1",
+      "adopted_candidate": 3,
+      "qa": "REVIEW_STOPPED_AFTER_3"
+    },
+    "109": {
+      "first": "https://suno.com/song/835518f6-474f-4cf4-91b0-0dc7b406c6c5",
+      "backup": "https://suno.com/song/1333676e-cd3e-42ce-9f45-6c61a21f6abc",
+      "status": "provisional_review",
+      "adopted": "https://suno.com/song/e4125d9a-fc38-4469-a872-9e0e6488ea6d",
+      "adopted_candidate": 3,
+      "qa": "REVIEW_STOPPED_AFTER_3"
+    },
+    "110": {
+      "first": "https://suno.com/song/565f80e8-0e35-46b1-ad26-d5dee2a1c048",
+      "backup": "https://suno.com/song/9c0a5721-a630-48a1-8146-812d52e0a043",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/9c0a5721-a630-48a1-8146-812d52e0a043",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "111": {
+      "first": "https://suno.com/song/ee0a0355-5502-4e08-8405-27332394af98",
+      "backup": "https://suno.com/song/17ce50cf-44ff-4c30-84a4-30d5e93d4d71",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/17ce50cf-44ff-4c30-84a4-30d5e93d4d71",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "112": {
+      "first": "https://suno.com/song/e2d3c47a-0b70-4307-8021-e33797154405",
+      "backup": "https://suno.com/song/ad3db505-863d-4b28-9aaf-48b82e4f6366",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/e2d3c47a-0b70-4307-8021-e33797154405",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "113": {
+      "first": "https://suno.com/song/7aa4420b-0308-47d0-98c8-1d696e4664b8",
+      "backup": "https://suno.com/song/5efab21c-424a-483c-babf-8d45337e47c6",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/7aa4420b-0308-47d0-98c8-1d696e4664b8",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "114": {
+      "first": "https://suno.com/song/a0499f61-7b3c-4c6e-840e-9528aab87ce2",
+      "backup": "https://suno.com/song/3d253706-1a29-44e5-9bc5-4c16441d8306",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/3d253706-1a29-44e5-9bc5-4c16441d8306",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "115": {
+      "first": "https://suno.com/song/f71b870f-e0f5-40e7-9f47-32431de96c17",
+      "backup": "https://suno.com/song/bf981da9-bd8b-44c1-a01f-938c2f32924d",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/f71b870f-e0f5-40e7-9f47-32431de96c17",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "116": {
+      "first": "https://suno.com/song/02a56901-4f20-4fe5-bf16-74f4073fcf54",
+      "backup": "https://suno.com/song/f2706e0a-1d60-499e-bd92-35ceff7fcd15",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/02a56901-4f20-4fe5-bf16-74f4073fcf54",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "117": {
+      "first": "https://suno.com/song/3a4e8ec2-faa7-49c6-8261-ac5139c8086e",
+      "backup": "https://suno.com/song/02655058-1668-48e3-a3df-c238921ddd3d",
+      "status": "provisional_review",
+      "adopted": "https://suno.com/song/02655058-1668-48e3-a3df-c238921ddd3d",
+      "adopted_candidate": 2,
+      "qa": "REVIEW_STOPPED_AFTER_3"
+    },
+    "118": {
+      "first": "https://suno.com/song/c8114ca8-c519-42d0-afff-d1d3d5f79f21",
+      "backup": "https://suno.com/song/4a1034f4-6239-40d6-9504-d2ebb2da9b1c",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/4a1034f4-6239-40d6-9504-d2ebb2da9b1c",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "119": {
+      "first": "https://suno.com/song/f30ce8a2-142c-4698-9f96-75edf867588a",
+      "backup": "https://suno.com/song/6b12289c-ac82-4ebb-82e4-73b8a558bee5",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/f30ce8a2-142c-4698-9f96-75edf867588a",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "120": {
+      "first": "https://suno.com/song/771d7ab0-de0f-4d2a-88bc-4ba0d0740fac",
+      "backup": "https://suno.com/song/f808baef-1934-4ae5-a453-f843729cfeee",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/b0fc2f21-f3ac-4280-8bea-12af7fa36417",
+      "adopted_candidate": 3,
+      "qa": "PASS"
+    },
+    "121": {
+      "first": "https://suno.com/song/3f2c6740-704d-46df-85e0-48761c80eae2",
+      "backup": "https://suno.com/song/14352fb4-ddd7-4339-a030-b6d4e5942fd2",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/14352fb4-ddd7-4339-a030-b6d4e5942fd2",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "122": {
+      "first": "https://suno.com/song/7581fe8c-5ca8-43f5-bb20-d5c2370b4be4",
+      "backup": "https://suno.com/song/d27b9dc2-23e9-411b-b01c-089baddc5133",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/7581fe8c-5ca8-43f5-bb20-d5c2370b4be4",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "123": {
+      "first": "https://suno.com/song/4c9e3c7a-50e2-46f1-94f3-40aa96b28fa8",
+      "backup": "https://suno.com/song/ea654a1b-5fbf-4c0d-817a-46756891203f",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/ea654a1b-5fbf-4c0d-817a-46756891203f",
+      "adopted_candidate": 2,
+      "qa": "PASS_EQUIVALENT"
+    },
+    "124": {
+      "first": "https://suno.com/song/ff2db3a0-2812-4be7-84fd-7e0a258a6394",
+      "backup": "https://suno.com/song/414a9139-a917-4297-b702-bf632eb5aec0",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/414a9139-a917-4297-b702-bf632eb5aec0",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "125": {
+      "first": "https://suno.com/song/2633ba0e-f736-4583-a80b-e37ce6b1f0a1",
+      "backup": "https://suno.com/song/b28be047-7dff-49aa-89d5-339e20ce4a40",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/b28be047-7dff-49aa-89d5-339e20ce4a40",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "126": {
+      "first": "https://suno.com/song/2922a579-c7fd-4cf3-8d24-79b62f8b967b",
+      "backup": "https://suno.com/song/4579eea9-3df2-4c71-ac49-e7d301477dcc",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/4579eea9-3df2-4c71-ac49-e7d301477dcc",
+      "adopted_candidate": 2,
+      "qa": "PASS_EQUIVALENT"
+    },
+    "127": {
+      "first": "https://suno.com/song/94de2c8c-bb16-4805-a4f6-883a8f9eecac",
+      "backup": "https://suno.com/song/f0a8a6e6-4e22-4651-8e6b-3e472faaa2af",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/f0a8a6e6-4e22-4651-8e6b-3e472faaa2af",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "128": {
+      "first": "https://suno.com/song/2667a2f0-5477-4ba2-bef6-7b2ba43de970",
+      "backup": "https://suno.com/song/d5e0ac04-4d03-4fb5-a7e8-97c24a738314",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/5f860ccd-8240-42a3-b660-007651537f45",
+      "adopted_candidate": 3,
+      "qa": "PASS"
+    },
+    "129": {
+      "first": "https://suno.com/song/1b31e6b8-b4ee-4afb-9e06-0d51c38d969d",
+      "backup": "https://suno.com/song/c710e80c-015c-46e6-8c48-ca575a0cc183",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/1b31e6b8-b4ee-4afb-9e06-0d51c38d969d",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "130": {
+      "first": "https://suno.com/song/92a9e39a-47ac-440d-a022-b205fdb0fe9d",
+      "backup": "https://suno.com/song/453faf5a-9244-4015-aa51-f91dcf758ea1",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/5289e346-7125-4df5-aa3e-783e5564a3ae",
+      "adopted_candidate": 3,
+      "qa": "PASS"
+    },
+    "131": {
+      "first": "https://suno.com/song/be958582-de5c-4a97-9968-b70021827570",
+      "backup": "https://suno.com/song/1e8ed1b1-37ce-475d-b220-3688b7f4ba99",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/be958582-de5c-4a97-9968-b70021827570",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "132": {
+      "first": "https://suno.com/song/c84e7ec5-176d-4387-a1ec-419b520e7959",
+      "backup": "https://suno.com/song/c469ee1c-46f0-4428-a70a-c0bc9de876ac",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/c469ee1c-46f0-4428-a70a-c0bc9de876ac",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "133": {
+      "first": "https://suno.com/song/b32d9df9-ec2c-40b8-b665-73e89a0127fe",
+      "backup": "https://suno.com/song/94fb885d-f4db-48a8-bc65-b0096ad79b2d",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/94fb885d-f4db-48a8-bc65-b0096ad79b2d",
+      "adopted_candidate": 2,
+      "qa": "PASS_EQUIVALENT"
+    },
+    "134": {
+      "first": "https://suno.com/song/eb21a61f-2586-42bb-ad09-5af36490fa2e",
+      "backup": "https://suno.com/song/6cf41d3c-c51a-44da-b4ee-9d69be528ee3",
+      "status": "provisional_review",
+      "adopted": "https://suno.com/song/f8d8b126-ff0b-4432-a2cb-ebdde7e4c1cb",
+      "adopted_candidate": 3,
+      "qa": "REVIEW_STOPPED_AFTER_3"
+    },
+    "135": {
+      "first": "https://suno.com/song/82243ec7-da73-4f3c-9783-9b85231d70e0",
+      "backup": "https://suno.com/song/13d0c2bb-7a3d-4dc5-93f3-d0bb641c5a9e",
+      "status": "provisional_review",
+      "adopted": "https://suno.com/song/dcedb22d-5a6c-4f37-a3f7-934b80dc6eb5",
+      "adopted_candidate": 3,
+      "qa": "REVIEW_STOPPED_AFTER_3"
+    },
+    "136": {
+      "first": "https://suno.com/song/d6a054f7-a937-4c3f-9538-165e0279d7a2",
+      "backup": "https://suno.com/song/29957fc6-5a8f-4cbc-a08f-9d1cca521c4b",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/d6a054f7-a937-4c3f-9538-165e0279d7a2",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "137": {
+      "first": "https://suno.com/song/11ec7959-cfe3-4594-9797-9d38c13fb205",
+      "backup": "https://suno.com/song/c96cb3f5-fd3b-4eea-ab5f-7f5573c83461",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/c96cb3f5-fd3b-4eea-ab5f-7f5573c83461",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "138": {
+      "first": "https://suno.com/song/31c982ce-3765-458e-8786-1f722344eb66",
+      "backup": "https://suno.com/song/790a04cb-c99c-42a6-982f-08a7943b751d",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/790a04cb-c99c-42a6-982f-08a7943b751d",
+      "adopted_candidate": 2,
+      "qa": "PASS_EQUIVALENT"
+    },
+    "139": {
+      "first": "https://suno.com/song/e07a1eca-aca9-402b-9bb3-47d2b6f9407e",
+      "backup": "https://suno.com/song/74f6af05-0e6b-4773-8c12-71be85786e78",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/74f6af05-0e6b-4773-8c12-71be85786e78",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "140": {
+      "first": "https://suno.com/song/ad7c51cd-3b51-4f1c-90f7-1725869a7dc1",
+      "backup": "https://suno.com/song/692ed345-372c-4d55-92fe-81d7b1cd8679",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/692ed345-372c-4d55-92fe-81d7b1cd8679",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "141": {
+      "first": "https://suno.com/song/1b346b80-47d8-49d2-b93e-5b880e6488c3",
+      "backup": "https://suno.com/song/d728888d-a262-4e36-af72-949a9f5d63d5",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/1b346b80-47d8-49d2-b93e-5b880e6488c3",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "142": {
+      "first": "https://suno.com/song/22d65098-701e-4ffe-ba2d-db50e8cf9257",
+      "backup": "https://suno.com/song/0b614740-df6e-4ec2-86fc-a4dccd573429",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/0b614740-df6e-4ec2-86fc-a4dccd573429",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "143": {
+      "first": "https://suno.com/song/fa9aceb0-26a4-46b8-a6d5-d3df1e04235d",
+      "backup": "https://suno.com/song/a269616b-89f7-4b86-9989-d2b0f5e25dca",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/fa9aceb0-26a4-46b8-a6d5-d3df1e04235d",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "144": {
+      "first": "https://suno.com/song/6634cafc-0060-44e3-a772-9a2a901deea1",
+      "backup": "https://suno.com/song/a9afdb9b-8b9f-4c73-a863-d7714df6ec2c",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/6634cafc-0060-44e3-a772-9a2a901deea1",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "145": {
+      "first": "https://suno.com/song/b74e8aff-e972-45a2-976a-b55e087803d8",
+      "backup": "https://suno.com/song/e789eaa6-4e0e-4d2d-8d57-cf6c413ab698",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/b74e8aff-e972-45a2-976a-b55e087803d8",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "146": {
+      "first": "https://suno.com/song/bf3b0887-0711-46de-ad4c-d313c4c72e1c",
+      "backup": "https://suno.com/song/4c264ff8-3cac-43c4-9458-20de85de5859",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/4c264ff8-3cac-43c4-9458-20de85de5859",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "147": {
+      "first": "https://suno.com/song/f1d8e8e4-09eb-4ea4-b9c3-1d463e4c0e08",
+      "backup": "https://suno.com/song/864854a8-eb2d-4129-88c3-da234c34f099",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/864854a8-eb2d-4129-88c3-da234c34f099",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "148": {
+      "first": "https://suno.com/song/2cf4a527-cbcf-40c4-b342-f5d2ef8ea4cd",
+      "backup": "https://suno.com/song/0d0a912f-2552-4b97-9e91-abd0fb2392f7",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/812d3731-9855-476d-ad70-6f3af2b0ff23",
+      "adopted_candidate": 3,
+      "qa": "PASS"
+    },
+    "149": {
+      "first": "https://suno.com/song/c0dea9c9-3dfd-40df-9638-2cbeda42dd75",
+      "backup": "https://suno.com/song/27599252-3acb-4a4c-b59d-d320b0b4523e",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/27599252-3acb-4a4c-b59d-d320b0b4523e",
+      "adopted_candidate": 2,
+      "qa": "PASS_NO_WRONG_LYRIC_OMISSION"
+    },
+    "150": {
+      "first": "https://suno.com/song/46ceefab-16fc-4933-b3c5-b74e21cd3bc3",
+      "backup": "https://suno.com/song/399644c7-aed0-42fc-b5d7-61f22a2f3f00",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/46ceefab-16fc-4933-b3c5-b74e21cd3bc3",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "151": {
+      "first": "https://suno.com/song/bc7d7b70-febb-42f0-9f8c-d9d753d73686",
+      "backup": "https://suno.com/song/b55fa26a-6d93-427c-b04b-00443a65fa4f",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/bc7d7b70-febb-42f0-9f8c-d9d753d73686",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "152": {
+      "first": "https://suno.com/song/8defcd76-b47e-4db2-894f-990e62057dfa",
+      "backup": "https://suno.com/song/b84a7740-8da3-4c08-8c6e-6119b0c58dc7",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/b84a7740-8da3-4c08-8c6e-6119b0c58dc7",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "153": {
+      "first": "https://suno.com/song/53576ab3-bb0a-4aaa-9a7a-0d092bf88079",
+      "backup": "https://suno.com/song/91aeaf09-fd51-4052-a732-4a5f38401399",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/91aeaf09-fd51-4052-a732-4a5f38401399",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "154": {
+      "first": "https://suno.com/song/4b9684a7-7e51-4330-8dcf-a0df93933112",
+      "backup": "https://suno.com/song/b019910f-1efd-4ddb-ac7a-b607e01b3221",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/4b9684a7-7e51-4330-8dcf-a0df93933112",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "155": {
+      "first": "https://suno.com/song/9eb16309-cefb-40de-b38b-28779c332718",
+      "backup": "https://suno.com/song/42a79c73-1579-4aee-ad60-c8f95020f8e5",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/e86a4bf2-fe8a-430f-a81a-4b8c1f394204",
+      "adopted_candidate": 3,
+      "qa": "PASS_NO_WRONG_LYRIC_OMISSION"
+    },
+    "156": {
+      "first": "https://suno.com/song/8e3d0a1a-e441-4666-8d6c-af7766e03fdd",
+      "backup": "https://suno.com/song/2cdba1ee-a174-4a73-889b-1bd5b57380d7",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/8e3d0a1a-e441-4666-8d6c-af7766e03fdd",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    },
+    "157": {
+      "first": "https://suno.com/song/797a7e33-a446-4905-80ea-f90cd9dfe262",
+      "backup": "https://suno.com/song/94d73dbd-518b-40f7-83fb-dee1078d23f6",
+      "status": "provisional_review",
+      "adopted": "https://suno.com/song/94d73dbd-518b-40f7-83fb-dee1078d23f6",
+      "adopted_candidate": 2,
+      "qa": "REVIEW_STOPPED_AFTER_3"
+    },
+    "158": {
+      "first": "https://suno.com/song/b5fafac7-0b30-4745-aa90-7e9ba2f2c17d",
+      "backup": "https://suno.com/song/9dd3af24-f474-462a-bcd7-4344745c24f3",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/9dd3af24-f474-462a-bcd7-4344745c24f3",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "159": {
+      "first": "https://suno.com/song/1745bb38-b304-4a0a-80a9-96a1aae084c4",
+      "backup": "https://suno.com/song/c6e9a1a9-8946-402e-ba04-ef9d13cd40a8",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/c6e9a1a9-8946-402e-ba04-ef9d13cd40a8",
+      "adopted_candidate": 2,
+      "qa": "PASS"
+    },
+    "160": {
+      "first": "https://suno.com/song/cb4c7557-e4fc-4634-bca6-6fe4f6e8eef7",
+      "backup": "https://suno.com/song/484ea764-8df8-4592-9243-1a8209e33bd5",
+      "status": "adopted",
+      "adopted": "https://suno.com/song/cb4c7557-e4fc-4634-bca6-6fe4f6e8eef7",
+      "adopted_candidate": 1,
+      "qa": "PASS"
+    }
+  }
+}

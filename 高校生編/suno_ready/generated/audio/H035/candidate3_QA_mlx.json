@@ -1,0 +1,143 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H035.md",
+  "audio": "高校生編/suno_ready/generated/audio/H035/candidate3-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 87.86,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.993,
+  "expected_words": 142,
+  "transcribed_words": 141,
+  "matched_words": 139,
+  "coverage": 0.9789,
+  "precision": 0.9858,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 141,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 36,
+      "length": 2,
+      "words": [
+        "gal",
+        "pagos"
+      ]
+    },
+    {
+      "start": 16,
+      "length": 1,
+      "words": [
+        "beagle"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 16,
+      "actual_start": 16,
+      "expected": [
+        "beagle"
+      ],
+      "actual": [
+        "spiegel"
+      ],
+      "actual_confidence": 0.8569,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 36,
+      "actual_start": 36,
+      "expected": [
+        "gal",
+        "pagos"
+      ],
+      "actual": [
+        "galapagos"
+      ],
+      "actual_confidence": 0.9912,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "Charles Darwin in 1831 Set out on a voyage around the world on board H.M.S. Spiegel During the five years of that expedition He visited many islands along the coast of South America In the Galapagos, he carefully observed how animals varied from island to island He collected birds that were later identified in England as related finch species with different beaks Darwin collected many specimens and after his return spent long years in thought Why were there different animals on different islands? Why had they adapted so perfectly to each environment? In 1859, the publication of his book On the Origin of Species shook the world The concept of evolution shook the belief of the age Although there was fierce criticism, Darwin's theory over time came to be accepted Nature quietly yet deeply continues to change from generation to generation",
+  "segments": [
+    {
+      "start": 2.32,
+      "end": 5.74,
+      "text": "Charles Darwin in 1831"
+    },
+    {
+      "start": 5.74,
+      "end": 11.92,
+      "text": "Set out on a voyage around the world on board H.M.S. Spiegel"
+    },
+    {
+      "start": 13.0,
+      "end": 16.92,
+      "text": "During the five years of that expedition"
+    },
+    {
+      "start": 16.92,
+      "end": 23.28,
+      "text": "He visited many islands along the coast of South America"
+    },
+    {
+      "start": 24.4,
+      "end": 31.1,
+      "text": "In the Galapagos, he carefully observed how animals varied from island to island"
+    },
+    {
+      "start": 31.1,
+      "end": 37.62,
+      "text": "He collected birds that were later identified in England as related finch species with different beaks"
+    },
+    {
+      "start": 37.62,
+      "end": 46.66,
+      "text": "Darwin collected many specimens and after his return spent long years in thought"
+    },
+    {
+      "start": 47.96,
+      "end": 53.14,
+      "text": "Why were there different animals on different islands?"
+    },
+    {
+      "start": 53.82,
+      "end": 59.08,
+      "text": "Why had they adapted so perfectly to each environment?"
+    },
+    {
+      "start": 59.54,
+      "end": 64.68,
+      "text": "In 1859, the publication of his book"
+    },
+    {
+      "start": 64.68,
+      "end": 68.4,
+      "text": "On the Origin of Species shook the world"
+    },
+    {
+      "start": 68.4,
+      "end": 73.18,
+      "text": "The concept of evolution shook the belief of the age"
+    },
+    {
+      "start": 73.18,
+      "end": 80.24,
+      "text": "Although there was fierce criticism, Darwin's theory over time came to be accepted"
+    },
+    {
+      "start": 80.24,
+      "end": 87.86,
+      "text": "Nature quietly yet deeply continues to change from generation to generation"
+    }
+  ]
+}

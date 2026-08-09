@@ -1,0 +1,267 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H076.md",
+  "audio": "高校生編/suno_ready/generated/audio/H076/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 143.48,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0537,
+  "expected_words": 205,
+  "transcribed_words": 216,
+  "matched_words": 200,
+  "coverage": 0.9756,
+  "precision": 0.9259,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 203,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 37,
+      "length": 1,
+      "words": [
+        "nineteenth"
+      ]
+    },
+    {
+      "start": 40,
+      "length": 1,
+      "words": [
+        "twentieth"
+      ]
+    },
+    {
+      "start": 51,
+      "length": 1,
+      "words": [
+        "traveled"
+      ]
+    },
+    {
+      "start": 80,
+      "length": 1,
+      "words": [
+        "many"
+      ]
+    },
+    {
+      "start": 204,
+      "length": 1,
+      "words": [
+        "it"
+      ]
+    }
+  ],
+  "replacement_count": 5,
+  "replacement_spans": [
+    {
+      "expected_start": 37,
+      "actual_start": 37,
+      "expected": [
+        "nineteenth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.9223,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 40,
+      "actual_start": 40,
+      "expected": [
+        "twentieth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.9924,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 51,
+      "actual_start": 51,
+      "expected": [
+        "traveled"
+      ],
+      "actual": [
+        "travelled"
+      ],
+      "actual_confidence": 0.4979,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 80,
+      "actual_start": 80,
+      "expected": [
+        "many"
+      ],
+      "actual": [
+        "and",
+        "you"
+      ],
+      "actual_confidence": 0.4493,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 204,
+      "actual_start": 205,
+      "expected": [
+        "it"
+      ],
+      "actual": [
+        "thanks",
+        "for",
+        "watching",
+        "and",
+        "i'll",
+        "see",
+        "you",
+        "in",
+        "the",
+        "next",
+        "one"
+      ],
+      "actual_confidence": 0.6402,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "Why do people leave the land where they were born? War, poverty, persecution, or the wish for a better life? The reasons vary, but the decision to leave one's homeland is difficult in every age. From the 19th to the 20th century, Millions of Europeans crossed the ocean to America Families travelled together on long voyages And a new life would begin Upon arrival, immigrants first suffered From the barrier of language Without a single acquaintance, lonely days went on And you could barely afford the cost of passage The actual life in America was far harder than they had imagined Low wages, poor housing and discrimination Still many immigrants gradually adjusted to the new society Their children learned English at school and blended into the local community Becoming accustomed to their new surroundings They began to build lives of their own At the same time, immigrants also kept the cultures of their ancestors Food, music, festivals Their diversity enriched the society that received them Today, cities around the world have become multicultural societies. For different cultures to coexist, tolerance toward one another, and the effort to overcome prejudice are needed. Whether a society can turn diversity into strength depends on everyone who lives in Thanks for watching, and I'll see you in the next one!",
+  "segments": [
+    {
+      "start": 9.52,
+      "end": 14.22,
+      "text": "Why do people leave the land where they were born?"
+    },
+    {
+      "start": 14.9,
+      "end": 20.84,
+      "text": "War, poverty, persecution, or the wish for a better life?"
+    },
+    {
+      "start": 21.28,
+      "end": 27.76,
+      "text": "The reasons vary, but the decision to leave one's homeland is difficult in every age."
+    },
+    {
+      "start": 27.76,
+      "end": 31.5,
+      "text": "From the 19th to the 20th century,"
+    },
+    {
+      "start": 31.76,
+      "end": 38.1,
+      "text": "Millions of Europeans crossed the ocean to America"
+    },
+    {
+      "start": 41.96,
+      "end": 45.76,
+      "text": "Families travelled together on long voyages"
+    },
+    {
+      "start": 46.34,
+      "end": 49.08,
+      "text": "And a new life would begin"
+    },
+    {
+      "start": 49.08,
+      "end": 52.84,
+      "text": "Upon arrival, immigrants first suffered"
+    },
+    {
+      "start": 52.84,
+      "end": 55.1,
+      "text": "From the barrier of language"
+    },
+    {
+      "start": 55.1,
+      "end": 59.22,
+      "text": "Without a single acquaintance, lonely days went on"
+    },
+    {
+      "start": 59.22,
+      "end": 62.44,
+      "text": "And you could barely afford the cost of passage"
+    },
+    {
+      "start": 62.44,
+      "end": 68.04,
+      "text": "The actual life in America was far harder than they had imagined"
+    },
+    {
+      "start": 72.44,
+      "end": 77.48,
+      "text": "Low wages, poor housing and discrimination"
+    },
+    {
+      "start": 77.48,
+      "end": 82.1,
+      "text": "Still many immigrants gradually adjusted to the new society"
+    },
+    {
+      "start": 82.19,
+      "end": 88.19,
+      "text": "Their children learned English at school and blended into the local community"
+    },
+    {
+      "start": 88.73,
+      "end": 92.67,
+      "text": "Becoming accustomed to their new surroundings"
+    },
+    {
+      "start": 93.19,
+      "end": 98.37,
+      "text": "They began to build lives of their own"
+    },
+    {
+      "start": 98.37,
+      "end": 103.59,
+      "text": "At the same time, immigrants also kept the cultures of their ancestors"
+    },
+    {
+      "start": 103.59,
+      "end": 105.97,
+      "text": "Food, music, festivals"
+    },
+    {
+      "start": 105.97,
+      "end": 110.29,
+      "text": "Their diversity enriched the society that received them"
+    },
+    {
+      "start": 110.29,
+      "end": 116.59,
+      "text": "Today, cities around the world have become multicultural societies."
+    },
+    {
+      "start": 118.61,
+      "end": 127.17,
+      "text": "For different cultures to coexist, tolerance toward one another, and the effort to overcome"
+    },
+    {
+      "start": 127.17,
+      "end": 129.75,
+      "text": "prejudice are needed."
+    },
+    {
+      "start": 132.13,
+      "end": 140.15,
+      "text": "Whether a society can turn diversity into strength depends on everyone who lives in"
+    },
+    {
+      "start": 140.15,
+      "end": 142.55,
+      "text": "Thanks for watching, and I'll see you in the next one!"
+    }
+  ]
+}

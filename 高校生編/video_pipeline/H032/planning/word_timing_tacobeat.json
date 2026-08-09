@@ -1,0 +1,1026 @@
+{
+  "lesson": "H032",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h032_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H032/candidate1-full.mp3",
+  "source_audio_sha256": "90acf9389ef170c63e9e53619d722d6438cbfd4f24679745b566b11c71a00ade",
+  "bpm": 82.02,
+  "exact_word_match": true,
+  "word_count": 151,
+  "line_count": 13,
+  "first_word_start": 3.141,
+  "last_word_end": 88.36,
+  "lines": [
+    {
+      "line": 1,
+      "english": "In December 1955, on a bus in Montgomery, Alabama, a Black woman named Rosa Parks was ordered to give her seat to a white passenger.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 3.141,
+          "end": 3.261
+        },
+        {
+          "word": "December",
+          "display_index": 1,
+          "start": 3.261,
+          "end": 3.801
+        },
+        {
+          "word": "1955,",
+          "display_index": 2,
+          "start": 3.801,
+          "end": 5.361
+        },
+        {
+          "word": "on",
+          "display_index": 3,
+          "start": 5.361,
+          "end": 5.497
+        },
+        {
+          "word": "a",
+          "display_index": 4,
+          "start": 5.497,
+          "end": 5.641
+        },
+        {
+          "word": "bus",
+          "display_index": 5,
+          "start": 5.641,
+          "end": 5.881
+        },
+        {
+          "word": "in",
+          "display_index": 6,
+          "start": 5.881,
+          "end": 6.041
+        },
+        {
+          "word": "Montgomery,",
+          "display_index": 7,
+          "start": 6.041,
+          "end": 7.202
+        },
+        {
+          "word": "Alabama,",
+          "display_index": 8,
+          "start": 7.202,
+          "end": 8.807
+        },
+        {
+          "word": "a",
+          "display_index": 9,
+          "start": 8.807,
+          "end": 8.922
+        },
+        {
+          "word": "Black",
+          "display_index": 10,
+          "start": 8.922,
+          "end": 9.302
+        },
+        {
+          "word": "woman",
+          "display_index": 11,
+          "start": 9.302,
+          "end": 9.682
+        },
+        {
+          "word": "named",
+          "display_index": 12,
+          "start": 9.682,
+          "end": 10.042
+        },
+        {
+          "word": "Rosa",
+          "display_index": 13,
+          "start": 10.042,
+          "end": 10.542
+        },
+        {
+          "word": "Parks",
+          "display_index": 14,
+          "start": 10.542,
+          "end": 11.163
+        },
+        {
+          "word": "was",
+          "display_index": 15,
+          "start": 11.163,
+          "end": 11.443
+        },
+        {
+          "word": "ordered",
+          "display_index": 16,
+          "start": 11.443,
+          "end": 12.056
+        },
+        {
+          "word": "to",
+          "display_index": 17,
+          "start": 12.056,
+          "end": 12.243
+        },
+        {
+          "word": "give",
+          "display_index": 18,
+          "start": 12.243,
+          "end": 12.483
+        },
+        {
+          "word": "her",
+          "display_index": 19,
+          "start": 12.483,
+          "end": 12.783
+        },
+        {
+          "word": "seat",
+          "display_index": 20,
+          "start": 12.783,
+          "end": 13.191
+        },
+        {
+          "word": "to",
+          "display_index": 21,
+          "start": 13.191,
+          "end": 13.374
+        },
+        {
+          "word": "a",
+          "display_index": 22,
+          "start": 13.374,
+          "end": 13.523
+        },
+        {
+          "word": "white",
+          "display_index": 23,
+          "start": 13.523,
+          "end": 13.883
+        },
+        {
+          "word": "passenger.",
+          "display_index": 24,
+          "start": 13.883,
+          "end": 14.683
+        }
+      ],
+      "start": 3.141,
+      "end": 14.683
+    },
+    {
+      "line": 2,
+      "english": "No.",
+      "word_timings": [
+        {
+          "word": "No.",
+          "display_index": 0,
+          "start": 14.823,
+          "end": 15.564
+        }
+      ],
+      "start": 14.823,
+      "end": 15.564
+    },
+    {
+      "line": 3,
+      "english": "How short, how quiet those words were!",
+      "word_timings": [
+        {
+          "word": "How",
+          "display_index": 0,
+          "start": 15.564,
+          "end": 15.864
+        },
+        {
+          "word": "short,",
+          "display_index": 1,
+          "start": 15.864,
+          "end": 16.264
+        },
+        {
+          "word": "how",
+          "display_index": 2,
+          "start": 16.264,
+          "end": 16.504
+        },
+        {
+          "word": "quiet",
+          "display_index": 3,
+          "start": 16.504,
+          "end": 17.044
+        },
+        {
+          "word": "those",
+          "display_index": 4,
+          "start": 17.044,
+          "end": 17.364
+        },
+        {
+          "word": "words",
+          "display_index": 5,
+          "start": 17.364,
+          "end": 17.764
+        },
+        {
+          "word": "were!",
+          "display_index": 6,
+          "start": 17.764,
+          "end": 19.264
+        }
+      ],
+      "start": 15.564,
+      "end": 19.264
+    },
+    {
+      "line": 4,
+      "english": "Yet her single word changed the course of American history.",
+      "word_timings": [
+        {
+          "word": "Yet",
+          "display_index": 0,
+          "start": 19.924,
+          "end": 20.085
+        },
+        {
+          "word": "her",
+          "display_index": 1,
+          "start": 20.085,
+          "end": 20.285
+        },
+        {
+          "word": "single",
+          "display_index": 2,
+          "start": 20.285,
+          "end": 20.665
+        },
+        {
+          "word": "word",
+          "display_index": 3,
+          "start": 20.665,
+          "end": 21.005
+        },
+        {
+          "word": "changed",
+          "display_index": 4,
+          "start": 21.005,
+          "end": 21.448
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 21.448,
+          "end": 21.565
+        },
+        {
+          "word": "course",
+          "display_index": 6,
+          "start": 21.565,
+          "end": 22.205
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 22.205,
+          "end": 22.365
+        },
+        {
+          "word": "American",
+          "display_index": 8,
+          "start": 22.365,
+          "end": 23.245
+        },
+        {
+          "word": "history.",
+          "display_index": 9,
+          "start": 23.245,
+          "end": 24.546
+        }
+      ],
+      "start": 19.924,
+      "end": 24.546
+    },
+    {
+      "line": 5,
+      "english": "She was arrested on the spot.",
+      "word_timings": [
+        {
+          "word": "She",
+          "display_index": 0,
+          "start": 24.846,
+          "end": 25.046
+        },
+        {
+          "word": "was",
+          "display_index": 1,
+          "start": 25.046,
+          "end": 25.266
+        },
+        {
+          "word": "arrested",
+          "display_index": 2,
+          "start": 25.266,
+          "end": 26.066
+        },
+        {
+          "word": "on",
+          "display_index": 3,
+          "start": 26.066,
+          "end": 26.303
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 26.303,
+          "end": 26.566
+        },
+        {
+          "word": "spot.",
+          "display_index": 5,
+          "start": 26.566,
+          "end": 28.066
+        }
+      ],
+      "start": 24.846,
+      "end": 28.066
+    },
+    {
+      "line": 6,
+      "english": "In those days, the law separated the races, and Black people could only sit in certain seats.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 29.307,
+          "end": 29.447
+        },
+        {
+          "word": "those",
+          "display_index": 1,
+          "start": 29.447,
+          "end": 29.787
+        },
+        {
+          "word": "days,",
+          "display_index": 2,
+          "start": 29.787,
+          "end": 30.231
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 30.231,
+          "end": 30.387
+        },
+        {
+          "word": "law",
+          "display_index": 4,
+          "start": 30.387,
+          "end": 30.887
+        },
+        {
+          "word": "separated",
+          "display_index": 5,
+          "start": 30.887,
+          "end": 31.643
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 31.643,
+          "end": 31.827
+        },
+        {
+          "word": "races,",
+          "display_index": 7,
+          "start": 31.827,
+          "end": 32.587
+        },
+        {
+          "word": "and",
+          "display_index": 8,
+          "start": 32.587,
+          "end": 32.707
+        },
+        {
+          "word": "Black",
+          "display_index": 9,
+          "start": 32.707,
+          "end": 33.087
+        },
+        {
+          "word": "people",
+          "display_index": 10,
+          "start": 33.087,
+          "end": 33.448
+        },
+        {
+          "word": "could",
+          "display_index": 11,
+          "start": 33.448,
+          "end": 33.748
+        },
+        {
+          "word": "only",
+          "display_index": 12,
+          "start": 33.748,
+          "end": 34.188
+        },
+        {
+          "word": "sit",
+          "display_index": 13,
+          "start": 34.188,
+          "end": 34.468
+        },
+        {
+          "word": "in",
+          "display_index": 14,
+          "start": 34.468,
+          "end": 34.728
+        },
+        {
+          "word": "certain",
+          "display_index": 15,
+          "start": 34.728,
+          "end": 35.628
+        },
+        {
+          "word": "seats.",
+          "display_index": 16,
+          "start": 35.628,
+          "end": 36.263
+        }
+      ],
+      "start": 29.307,
+      "end": 36.263
+    },
+    {
+      "line": 7,
+      "english": "The law, which had made discrimination a system, had long cast a shadow on society.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 36.263,
+          "end": 36.408
+        },
+        {
+          "word": "law,",
+          "display_index": 1,
+          "start": 36.408,
+          "end": 37.108
+        },
+        {
+          "word": "which",
+          "display_index": 2,
+          "start": 37.108,
+          "end": 37.328
+        },
+        {
+          "word": "had",
+          "display_index": 3,
+          "start": 37.328,
+          "end": 37.488
+        },
+        {
+          "word": "made",
+          "display_index": 4,
+          "start": 37.488,
+          "end": 37.688
+        },
+        {
+          "word": "discrimination",
+          "display_index": 5,
+          "start": 37.688,
+          "end": 39.217
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 39.217,
+          "end": 39.329
+        },
+        {
+          "word": "system,",
+          "display_index": 7,
+          "start": 39.329,
+          "end": 40.429
+        },
+        {
+          "word": "had",
+          "display_index": 8,
+          "start": 40.429,
+          "end": 40.789
+        },
+        {
+          "word": "long",
+          "display_index": 9,
+          "start": 40.789,
+          "end": 41.489
+        },
+        {
+          "word": "cast",
+          "display_index": 10,
+          "start": 41.489,
+          "end": 42.101
+        },
+        {
+          "word": "a",
+          "display_index": 11,
+          "start": 42.101,
+          "end": 42.23
+        },
+        {
+          "word": "shadow",
+          "display_index": 12,
+          "start": 42.23,
+          "end": 42.91
+        },
+        {
+          "word": "on",
+          "display_index": 13,
+          "start": 42.91,
+          "end": 43.19
+        },
+        {
+          "word": "society.",
+          "display_index": 14,
+          "start": 43.19,
+          "end": 44.11
+        }
+      ],
+      "start": 36.263,
+      "end": 44.11
+    },
+    {
+      "line": 8,
+      "english": "Parks' refusal sparked the Montgomery Bus Boycott.",
+      "word_timings": [
+        {
+          "word": "Parks'",
+          "display_index": 0,
+          "start": 44.41,
+          "end": 45.01
+        },
+        {
+          "word": "refusal",
+          "display_index": 1,
+          "start": 45.01,
+          "end": 45.61
+        },
+        {
+          "word": "sparked",
+          "display_index": 2,
+          "start": 45.61,
+          "end": 46.314
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 46.314,
+          "end": 46.47
+        },
+        {
+          "word": "Montgomery",
+          "display_index": 4,
+          "start": 46.47,
+          "end": 47.771
+        },
+        {
+          "word": "Bus",
+          "display_index": 5,
+          "start": 47.771,
+          "end": 48.491
+        },
+        {
+          "word": "Boycott.",
+          "display_index": 6,
+          "start": 48.491,
+          "end": 49.991
+        }
+      ],
+      "start": 44.41,
+      "end": 49.991
+    },
+    {
+      "line": 9,
+      "english": "Reverend Martin Luther King led the way, and the Black citizens of the town stopped riding the buses.",
+      "word_timings": [
+        {
+          "word": "Reverend",
+          "display_index": 0,
+          "start": 52.492,
+          "end": 52.872
+        },
+        {
+          "word": "Martin",
+          "display_index": 1,
+          "start": 52.872,
+          "end": 53.232
+        },
+        {
+          "word": "Luther",
+          "display_index": 2,
+          "start": 53.232,
+          "end": 53.592
+        },
+        {
+          "word": "King",
+          "display_index": 3,
+          "start": 53.592,
+          "end": 53.972
+        },
+        {
+          "word": "led",
+          "display_index": 4,
+          "start": 53.972,
+          "end": 54.35
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 54.35,
+          "end": 54.532
+        },
+        {
+          "word": "way,",
+          "display_index": 6,
+          "start": 54.532,
+          "end": 55.132
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 55.132,
+          "end": 55.254
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 55.254,
+          "end": 55.392
+        },
+        {
+          "word": "Black",
+          "display_index": 9,
+          "start": 55.392,
+          "end": 55.773
+        },
+        {
+          "word": "citizens",
+          "display_index": 10,
+          "start": 55.773,
+          "end": 56.613
+        },
+        {
+          "word": "of",
+          "display_index": 11,
+          "start": 56.613,
+          "end": 56.718
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 56.718,
+          "end": 56.853
+        },
+        {
+          "word": "town",
+          "display_index": 13,
+          "start": 56.853,
+          "end": 57.193
+        },
+        {
+          "word": "stopped",
+          "display_index": 14,
+          "start": 57.193,
+          "end": 57.613
+        },
+        {
+          "word": "riding",
+          "display_index": 15,
+          "start": 57.613,
+          "end": 58.019
+        },
+        {
+          "word": "the",
+          "display_index": 16,
+          "start": 58.019,
+          "end": 58.173
+        },
+        {
+          "word": "buses.",
+          "display_index": 17,
+          "start": 58.173,
+          "end": 59.673
+        }
+      ],
+      "start": 52.492,
+      "end": 59.673
+    },
+    {
+      "line": 10,
+      "english": "What a strong protest it was!",
+      "word_timings": [
+        {
+          "word": "What",
+          "display_index": 0,
+          "start": 60.174,
+          "end": 60.359
+        },
+        {
+          "word": "a",
+          "display_index": 1,
+          "start": 60.359,
+          "end": 60.454
+        },
+        {
+          "word": "strong",
+          "display_index": 2,
+          "start": 60.454,
+          "end": 61.074
+        },
+        {
+          "word": "protest",
+          "display_index": 3,
+          "start": 61.074,
+          "end": 61.874
+        },
+        {
+          "word": "it",
+          "display_index": 4,
+          "start": 61.874,
+          "end": 62.014
+        },
+        {
+          "word": "was!",
+          "display_index": 5,
+          "start": 62.014,
+          "end": 63.514
+        }
+      ],
+      "start": 60.174,
+      "end": 63.514
+    },
+    {
+      "line": 11,
+      "english": "The following year, a federal court ruled bus segregation unconstitutional, and the U.S. Supreme Court upheld that decision.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 64.03,
+          "end": 64.174
+        },
+        {
+          "word": "following",
+          "display_index": 1,
+          "start": 64.174,
+          "end": 64.895
+        },
+        {
+          "word": "year,",
+          "display_index": 2,
+          "start": 64.895,
+          "end": 65.5
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 65.5,
+          "end": 65.635
+        },
+        {
+          "word": "federal",
+          "display_index": 4,
+          "start": 65.635,
+          "end": 66.195
+        },
+        {
+          "word": "court",
+          "display_index": 5,
+          "start": 66.195,
+          "end": 66.755
+        },
+        {
+          "word": "ruled",
+          "display_index": 6,
+          "start": 66.755,
+          "end": 67.115
+        },
+        {
+          "word": "bus",
+          "display_index": 7,
+          "start": 67.115,
+          "end": 67.475
+        },
+        {
+          "word": "segregation",
+          "display_index": 8,
+          "start": 67.475,
+          "end": 68.495
+        },
+        {
+          "word": "unconstitutional,",
+          "display_index": 9,
+          "start": 68.495,
+          "end": 70.376
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 70.376,
+          "end": 70.644
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 70.644,
+          "end": 70.896
+        },
+        {
+          "word": "U.S.",
+          "display_index": 12,
+          "start": 70.896,
+          "end": 71.236
+        },
+        {
+          "word": "U.S.",
+          "display_index": 12,
+          "start": 71.236,
+          "end": 71.336
+        },
+        {
+          "word": "Supreme",
+          "display_index": 13,
+          "start": 71.336,
+          "end": 71.896
+        },
+        {
+          "word": "Court",
+          "display_index": 14,
+          "start": 71.896,
+          "end": 72.556
+        },
+        {
+          "word": "upheld",
+          "display_index": 15,
+          "start": 72.556,
+          "end": 73.216
+        },
+        {
+          "word": "that",
+          "display_index": 16,
+          "start": 73.216,
+          "end": 73.517
+        },
+        {
+          "word": "decision.",
+          "display_index": 17,
+          "start": 73.517,
+          "end": 75.017
+        }
+      ],
+      "start": 64.03,
+      "end": 75.017
+    },
+    {
+      "line": 12,
+      "english": "The No of a single citizen helped change society.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 76.475,
+          "end": 76.617
+        },
+        {
+          "word": "No",
+          "display_index": 1,
+          "start": 76.617,
+          "end": 77.097
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 77.097,
+          "end": 77.256
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 77.256,
+          "end": 77.397
+        },
+        {
+          "word": "single",
+          "display_index": 4,
+          "start": 77.397,
+          "end": 78.098
+        },
+        {
+          "word": "citizen",
+          "display_index": 5,
+          "start": 78.098,
+          "end": 79.178
+        },
+        {
+          "word": "helped",
+          "display_index": 6,
+          "start": 79.178,
+          "end": 79.558
+        },
+        {
+          "word": "change",
+          "display_index": 7,
+          "start": 79.558,
+          "end": 80.118
+        },
+        {
+          "word": "society.",
+          "display_index": 8,
+          "start": 80.118,
+          "end": 81.618
+        }
+      ],
+      "start": 76.475,
+      "end": 81.618
+    },
+    {
+      "line": 13,
+      "english": "Let us never forget such a single word, filled with courage.",
+      "word_timings": [
+        {
+          "word": "Let",
+          "display_index": 0,
+          "start": 82.179,
+          "end": 82.359
+        },
+        {
+          "word": "us",
+          "display_index": 1,
+          "start": 82.359,
+          "end": 82.539
+        },
+        {
+          "word": "never",
+          "display_index": 2,
+          "start": 82.539,
+          "end": 82.859
+        },
+        {
+          "word": "forget",
+          "display_index": 3,
+          "start": 82.859,
+          "end": 83.599
+        },
+        {
+          "word": "such",
+          "display_index": 4,
+          "start": 83.599,
+          "end": 83.741
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 83.741,
+          "end": 83.959
+        },
+        {
+          "word": "single",
+          "display_index": 6,
+          "start": 83.959,
+          "end": 84.519
+        },
+        {
+          "word": "word,",
+          "display_index": 7,
+          "start": 84.519,
+          "end": 85.399
+        },
+        {
+          "word": "filled",
+          "display_index": 8,
+          "start": 85.399,
+          "end": 86.539
+        },
+        {
+          "word": "with",
+          "display_index": 9,
+          "start": 86.539,
+          "end": 86.86
+        },
+        {
+          "word": "courage.",
+          "display_index": 10,
+          "start": 86.86,
+          "end": 88.36
+        }
+      ],
+      "start": 82.179,
+      "end": 88.36
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

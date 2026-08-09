@@ -1,0 +1,129 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H040.md",
+  "audio": "高校生編/suno_ready/generated/audio/H040/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 84.76,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9856,
+  "expected_words": 139,
+  "transcribed_words": 137,
+  "matched_words": 136,
+  "coverage": 0.9784,
+  "precision": 0.9927,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 138,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 100,
+      "length": 2,
+      "words": [
+        "thirty",
+        "seven"
+      ]
+    },
+    {
+      "start": 5,
+      "length": 1,
+      "words": [
+        "crick"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 5,
+      "actual_start": 5,
+      "expected": [
+        "crick"
+      ],
+      "actual": [
+        "cripp"
+      ],
+      "actual_confidence": 0.7817,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 100,
+      "actual_start": 100,
+      "expected": [
+        "thirty",
+        "seven"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "In 1953, James Watson and Francis Cripp published their discovery that DNA has the structure of a double helix. But there was another scientist whose contribution was essential, Rosalind Franklin. In her laboratory at King's College London, she was producing images of DNA using X-ray diffraction. One photograph, known as Photo 51, revealed an X-shaped pattern that provided crucial evidence for a helical structure. But her photograph was shown to Watson without her knowledge. The Nobel Prize was given in 1962 to Watson, Crick and Wilkins. By then, Franklin was no longer in this world. She had died in 1958 at only 37. Under Nobel rules, the prize is not normally awarded posthumously. Rosalind Franklin's dedication was underestimated for a long time. Now, we must remember her quiet contribution. The history of science is not made by loud voices alone.",
+  "segments": [
+    {
+      "start": 6.48,
+      "end": 15.84,
+      "text": "In 1953, James Watson and Francis Cripp published their discovery that DNA has the structure of a double helix."
+    },
+    {
+      "start": 16.24,
+      "end": 21.56,
+      "text": "But there was another scientist whose contribution was essential, Rosalind Franklin."
+    },
+    {
+      "start": 21.56,
+      "end": 29.62,
+      "text": "In her laboratory at King's College London, she was producing images of DNA using X-ray diffraction."
+    },
+    {
+      "start": 31.58,
+      "end": 39.14,
+      "text": "One photograph, known as Photo 51, revealed an X-shaped pattern that provided crucial evidence for a helical structure."
+    },
+    {
+      "start": 39.9,
+      "end": 43.48,
+      "text": "But her photograph was shown to Watson without her knowledge."
+    },
+    {
+      "start": 43.94,
+      "end": 49.72,
+      "text": "The Nobel Prize was given in 1962 to Watson, Crick and Wilkins."
+    },
+    {
+      "start": 51.56,
+      "end": 54.58,
+      "text": "By then, Franklin was no longer in this world."
+    },
+    {
+      "start": 55.04,
+      "end": 58.72,
+      "text": "She had died in 1958 at only 37."
+    },
+    {
+      "start": 59.48,
+      "end": 64.0,
+      "text": "Under Nobel rules, the prize is not normally awarded posthumously."
+    },
+    {
+      "start": 65.3,
+      "end": 69.26,
+      "text": "Rosalind Franklin's dedication was underestimated for a long time."
+    },
+    {
+      "start": 70.16,
+      "end": 75.08,
+      "text": "Now, we must remember her quiet contribution."
+    },
+    {
+      "start": 76.2,
+      "end": 84.76,
+      "text": "The history of science is not made by loud voices alone."
+    }
+  ]
+}

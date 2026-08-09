@@ -8,9 +8,34 @@ token.json
 # OS
 .DS_Store
 Thumbs.db
+__MACOSX/
+._*
 
 # Local media (not needed for web deploy)
 music/
+
+# Large generated media is stored locally or published separately, never in Git.
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.avi
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.ogg
+*.flac
+*.zip
+*.7z
+*.tar
+*.gz
+*.tgz
+*.json3
+
+# Local speech models and dictionaries are reproducible dependencies.
+*.onnx
+*.dic
 
 # Source data & old HTMLs (not needed for deploy)
 *.xlsx
@@ -25,9 +50,53 @@ music/
 __pycache__/
 *.log
 .vscode/
+.claude/
 .venv/
+.venv*/
+venv/
+node_modules/
 descriptions/
+
+# Temporary renders, local archives, and downloaded publication copies.
+tmp*/
+**/tmp*/
+.cache/
+**/.cache/
+backups/
+**/backups/
+_backups/
+**/_backups/
+uploaded-videos/
+*.bak
+*.bak-*
+*.backup
+*.orig
+**/youtube_reference/*.info.json
 
 # Build / deploy artifacts (must NOT be committed)
 dist/
+dist-public/
 .wrangler/
+taco_course_mockup/app_assets/
+taco_beat/.cache/
+
+# Authentication material and local re-authentication backups.
+token*.json*
+credentials*.json*
+client_secret*.json*
+*.pem
+*.key
+
+# Generated lesson-video artwork stays local; source scripts and plans remain trackable.
+中学生編/**/*.png
+中学生編/**/*.jpg
+中学生編/**/*.jpeg
+中学生編/**/*.webp
+高校生編/**/*.png
+高校生編/**/*.jpg
+高校生編/**/*.jpeg
+高校生編/**/*.webp
+
+# 中学生編レッスン動画・音声（YouTubeから取得。容量大のため管理外）
+中学生編/videos/*.mp4
+中学生編/audio/*.mp3

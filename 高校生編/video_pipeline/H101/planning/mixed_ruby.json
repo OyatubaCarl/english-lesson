@@ -1,0 +1,1342 @@
+{
+  "lesson": "H101",
+  "title_ja": "裁判の一場面",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 18,
+  "canonical_target_lines": 13,
+  "mixed_lines": 9,
+  "japanese_only_lines": 9,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 12.82,
+      "end": 15.027,
+      "english": "The court was silent.",
+      "japanese": "法廷は沈黙した。",
+      "mixed": "法廷は沈黙した。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "法廷は沈黙した。",
+          "parts": [
+            {
+              "text": "法廷",
+              "ruby": "ほうてい"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "沈黙",
+              "ruby": "ちんもく"
+            },
+            {
+              "text": "した。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 2,
+      "start": 15.027,
+      "end": 24.96,
+      "english": "The prosecutor rose and began to lay out the details of the case methodically.",
+      "japanese": "検察官は立ち上がって、事件の詳細を系統立てて説明し始めた。",
+      "mixed": "prosecutor は立ち上がって、事件の details を系統立てて説明し始めた。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "prosecutor",
+          "ruby": "検察官"
+        },
+        {
+          "type": "ja",
+          "text": " は立ち上がって、事件の ",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "立ち上",
+              "ruby": "たちあ"
+            },
+            {
+              "text": "がって、",
+              "ruby": ""
+            },
+            {
+              "text": "事件",
+              "ruby": "じけん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "details",
+          "ruby": "詳細"
+        },
+        {
+          "type": "ja",
+          "text": " を系統立てて説明し始めた。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "系統",
+              "ruby": "けいとう"
+            },
+            {
+              "text": "立",
+              "ruby": "た"
+            },
+            {
+              "text": "てて",
+              "ruby": ""
+            },
+            {
+              "text": "説明",
+              "ruby": "せつめい"
+            },
+            {
+              "text": "し",
+              "ruby": ""
+            },
+            {
+              "text": "始",
+              "ruby": "はじ"
+            },
+            {
+              "text": "めた。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "prosecutor",
+          "canonical_word": "prosecutor",
+          "meaning": "検察官"
+        },
+        {
+          "english": "details",
+          "canonical_word": "detail",
+          "meaning": "詳細"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "prosecutor",
+          "reading": "検察官",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "prosecutor",
+          "canonical_meaning": "検察官"
+        },
+        {
+          "english": "details",
+          "reading": "詳細",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "detail",
+          "canonical_meaning": "詳細"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 3,
+      "start": 26.32,
+      "end": 31.08,
+      "english": "The defendant was at the scene on the day of the crime.",
+      "japanese": "被告は犯行当日現場にいた。",
+      "mixed": "被告は犯行当日現場にいた。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "被告は犯行当日現場にいた。",
+          "parts": [
+            {
+              "text": "被告",
+              "ruby": "ひこく"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "犯行",
+              "ruby": "はんこう"
+            },
+            {
+              "text": "当日",
+              "ruby": "とうじつ"
+            },
+            {
+              "text": "現場",
+              "ruby": "げんば"
+            },
+            {
+              "text": "にいた。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 4,
+      "start": 32.28,
+      "end": 38.56,
+      "english": "This is definite from the testimony of several witnesses.",
+      "japanese": "これは複数の証人の証言から明らかです。",
+      "mixed": "これは複数の witnesses の testimony から明らかです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "これは複数の ",
+          "parts": [
+            {
+              "text": "これは",
+              "ruby": ""
+            },
+            {
+              "text": "複数",
+              "ruby": "ふくすう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "witnesses",
+          "ruby": "証人"
+        },
+        {
+          "type": "ja",
+          "text": " の ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "testimony",
+          "ruby": "証言"
+        },
+        {
+          "type": "ja",
+          "text": " から明らかです。",
+          "parts": [
+            {
+              "text": "から",
+              "ruby": ""
+            },
+            {
+              "text": "明",
+              "ruby": "あき"
+            },
+            {
+              "text": "らかです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "definite",
+          "canonical_word": "definite",
+          "meaning": "明確な"
+        },
+        {
+          "english": "testimony",
+          "canonical_word": "testimony",
+          "meaning": "証言"
+        },
+        {
+          "english": "witnesses",
+          "canonical_word": "witness",
+          "meaning": "証人"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "witnesses",
+          "reading": "証人",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "witness",
+          "canonical_meaning": "証人"
+        },
+        {
+          "english": "testimony",
+          "reading": "証言",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "testimony",
+          "canonical_meaning": "証言"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 5,
+      "start": 39.2,
+      "end": 43.46,
+      "english": "The defense attorney rose and argued back.",
+      "japanese": "弁護人は立ち上がって反論した。",
+      "mixed": "弁護人は立ち上がって反論した。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "弁護人は立ち上がって反論した。",
+          "parts": [
+            {
+              "text": "弁護",
+              "ruby": "べんご"
+            },
+            {
+              "text": "人",
+              "ruby": "にん"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "立ち上",
+              "ruby": "たちあ"
+            },
+            {
+              "text": "がって",
+              "ruby": ""
+            },
+            {
+              "text": "反論",
+              "ruby": "はんろん"
+            },
+            {
+              "text": "した。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 6,
+      "start": 44.2,
+      "end": 49.72,
+      "english": "What seems apparent is not always the truth.",
+      "japanese": "明白に見えることが必ずしも真実であるとは限りません。",
+      "mixed": "apparent 見えることが必ずしも真実であるとは限りません。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "apparent",
+          "ruby": "明白に"
+        },
+        {
+          "type": "ja",
+          "text": " 見えることが必ずしも真実であるとは限りません。",
+          "parts": [
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "えることが",
+              "ruby": ""
+            },
+            {
+              "text": "必",
+              "ruby": "かなら"
+            },
+            {
+              "text": "ずしも",
+              "ruby": ""
+            },
+            {
+              "text": "真実",
+              "ruby": "しんじつ"
+            },
+            {
+              "text": "であるとは",
+              "ruby": ""
+            },
+            {
+              "text": "限",
+              "ruby": "かぎ"
+            },
+            {
+              "text": "りません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "apparent",
+          "canonical_word": "apparent",
+          "meaning": "明白な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "apparent",
+          "reading": "明白に",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "apparent",
+          "canonical_meaning": "明白な"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 7,
+      "start": 49.72,
+      "end": 55.84,
+      "english": "We have new evidence that will prove the defendant's alibi.",
+      "japanese": "私たちは被告のアリバイを証明する新しい証拠を持っています。",
+      "mixed": "私たちは被告の alibi を証明する新しい証拠を持っています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私たちは被告の ",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "たちは",
+              "ruby": ""
+            },
+            {
+              "text": "被告",
+              "ruby": "ひこく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "alibi",
+          "ruby": "アリバイ"
+        },
+        {
+          "type": "ja",
+          "text": " を証明する新しい証拠を持っています。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "証明",
+              "ruby": "しょうめい"
+            },
+            {
+              "text": "する",
+              "ruby": ""
+            },
+            {
+              "text": "新",
+              "ruby": "あたら"
+            },
+            {
+              "text": "しい",
+              "ruby": ""
+            },
+            {
+              "text": "証拠",
+              "ruby": "しょうこ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "持",
+              "ruby": "も"
+            },
+            {
+              "text": "っています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "alibi",
+          "canonical_word": "alibi",
+          "meaning": "アリバイ"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "alibi",
+          "reading": "アリバイ",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "alibi",
+          "canonical_meaning": "アリバイ"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 8,
+      "start": 55.84,
+      "end": 62.88,
+      "english": "On the witness stand, a young woman was trembling.",
+      "japanese": "証言台では若い女性が震えていた。",
+      "mixed": "証言台では若い女性が震えていた。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "証言台では若い女性が震えていた。",
+          "parts": [
+            {
+              "text": "証言",
+              "ruby": "しょうげん"
+            },
+            {
+              "text": "台",
+              "ruby": "だい"
+            },
+            {
+              "text": "では",
+              "ruby": ""
+            },
+            {
+              "text": "若",
+              "ruby": "わか"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "女性",
+              "ruby": "じょせい"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "震",
+              "ruby": "ふる"
+            },
+            {
+              "text": "えていた。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "witness",
+          "canonical_word": "witness",
+          "meaning": "証人"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 9,
+      "start": 66.72,
+      "end": 73.3,
+      "english": "She was the person who had provided several clues to the police.",
+      "japanese": "彼女は警察にいくつかの手がかりを提供した人物だった。",
+      "mixed": "彼女は警察にいくつかの clues を提供した人物だった。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼女は警察にいくつかの ",
+          "parts": [
+            {
+              "text": "彼女",
+              "ruby": "かのじょ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "警察",
+              "ruby": "けいさつ"
+            },
+            {
+              "text": "にいくつかの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "clues",
+          "ruby": "手がかり"
+        },
+        {
+          "type": "ja",
+          "text": " を提供した人物だった。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "提供",
+              "ruby": "ていきょう"
+            },
+            {
+              "text": "した",
+              "ruby": ""
+            },
+            {
+              "text": "人物",
+              "ruby": "じんぶつ"
+            },
+            {
+              "text": "だった。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "clues",
+          "canonical_word": "clue",
+          "meaning": "手がかり"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "clues",
+          "reading": "手がかり",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "clue",
+          "canonical_meaning": "手がかり"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 10,
+      "start": 73.3,
+      "end": 77.96,
+      "english": "Her testimony was crucial.",
+      "japanese": "彼女の証言は極めて重要だった。",
+      "mixed": "彼女の testimony は極めて重要だった。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼女の ",
+          "parts": [
+            {
+              "text": "彼女",
+              "ruby": "かのじょ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "testimony",
+          "ruby": "証言"
+        },
+        {
+          "type": "ja",
+          "text": " は極めて重要だった。",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "極",
+              "ruby": "きわ"
+            },
+            {
+              "text": "めて",
+              "ruby": ""
+            },
+            {
+              "text": "重要",
+              "ruby": "じゅうよう"
+            },
+            {
+              "text": "だった。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "testimony",
+          "canonical_word": "testimony",
+          "meaning": "証言"
+        },
+        {
+          "english": "crucial",
+          "canonical_word": "crucial",
+          "meaning": "決定的な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "testimony",
+          "reading": "証言",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "testimony",
+          "canonical_meaning": "証言"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 11,
+      "start": 79.28,
+      "end": 89.62,
+      "english": "That night, I saw the defendant run from the scene, she answered in a voice close to a whisper.",
+      "japanese": "その夜、私は被告が現場から逃げ出すのを目撃したが、彼女はささやき声に近い声で答えた。",
+      "mixed": "その夜、私は被告が現場から逃げ出すのを目撃したが、彼女はささやき声に近い声で答えた。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "その夜、私は被告が現場から逃げ出すのを目撃したが、彼女はささやき声に近い声で答えた。",
+          "parts": [
+            {
+              "text": "その",
+              "ruby": ""
+            },
+            {
+              "text": "夜",
+              "ruby": "よる"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "被告",
+              "ruby": "ひこく"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "現場",
+              "ruby": "げんば"
+            },
+            {
+              "text": "から",
+              "ruby": ""
+            },
+            {
+              "text": "逃げ出",
+              "ruby": "にげだ"
+            },
+            {
+              "text": "すのを",
+              "ruby": ""
+            },
+            {
+              "text": "目撃",
+              "ruby": "もくげき"
+            },
+            {
+              "text": "したが、",
+              "ruby": ""
+            },
+            {
+              "text": "彼女",
+              "ruby": "かのじょ"
+            },
+            {
+              "text": "はささやき",
+              "ruby": ""
+            },
+            {
+              "text": "声",
+              "ruby": "ごえ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "近",
+              "ruby": "ちか"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "声",
+              "ruby": "こえ"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "答",
+              "ruby": "こた"
+            },
+            {
+              "text": "えた。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "whisper",
+          "canonical_word": "whisper",
+          "meaning": "ささやく"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 12,
+      "start": 91.8,
+      "end": 97.175,
+      "english": "It was still too early for the judge to hand down his judgement.",
+      "japanese": "裁判官が判決を下すにはまだ早すぎた。",
+      "mixed": "裁判官が判決を下すにはまだ早すぎた。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "裁判官が判決を下すにはまだ早すぎた。",
+          "parts": [
+            {
+              "text": "裁判",
+              "ruby": "さいばん"
+            },
+            {
+              "text": "官",
+              "ruby": "かん"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "判決",
+              "ruby": "はんけつ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "下",
+              "ruby": "くだ"
+            },
+            {
+              "text": "すにはまだ",
+              "ruby": ""
+            },
+            {
+              "text": "早",
+              "ruby": "はや"
+            },
+            {
+              "text": "すぎた。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "judgement",
+          "canonical_word": "judgement",
+          "meaning": "判断"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 13,
+      "start": 97.14,
+      "end": 102.005,
+      "english": "Weeks later, the jury reached a verdict.",
+      "japanese": "数週間後、陪審は評決に達した。",
+      "mixed": "数週間後、 jury は評決に達した。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "数週間後、 ",
+          "parts": [
+            {
+              "text": "数",
+              "ruby": "すう"
+            },
+            {
+              "text": "週間",
+              "ruby": "しゅうかん"
+            },
+            {
+              "text": "後",
+              "ruby": "ご"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "jury",
+          "ruby": "陪審"
+        },
+        {
+          "type": "ja",
+          "text": " は評決に達した。",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "評決",
+              "ruby": "ひょうけつ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "達",
+              "ruby": "たっ"
+            },
+            {
+              "text": "した。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "jury",
+          "canonical_word": "jury",
+          "meaning": "陪審"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "jury",
+          "reading": "陪審",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "jury",
+          "canonical_meaning": "陪審"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 14,
+      "start": 102.005,
+      "end": 102.7,
+      "english": "Guilty.",
+      "japanese": "有罪。",
+      "mixed": "有罪。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "有罪。",
+          "parts": [
+            {
+              "text": "有罪",
+              "ruby": "ゆうざい"
+            },
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 15,
+      "start": 104.14,
+      "end": 106.98,
+      "english": "The defendant was sent to jail.",
+      "japanese": "被告は刑務所に送られた。",
+      "mixed": "被告は刑務所に送られた。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "被告は刑務所に送られた。",
+          "parts": [
+            {
+              "text": "被告",
+              "ruby": "ひこく"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "刑務",
+              "ruby": "けいむ"
+            },
+            {
+              "text": "所",
+              "ruby": "しょ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "送",
+              "ruby": "おく"
+            },
+            {
+              "text": "られた。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "jail",
+          "canonical_word": "jail",
+          "meaning": "拘置所"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 16,
+      "start": 108.14,
+      "end": 113.12,
+      "english": "But the attorney decided to appeal.",
+      "japanese": "しかし、弁護士は控訴することを決めた。",
+      "mixed": "しかし、弁護士は控訴することを決めた。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "しかし、弁護士は控訴することを決めた。",
+          "parts": [
+            {
+              "text": "しかし、",
+              "ruby": ""
+            },
+            {
+              "text": "弁護士",
+              "ruby": "べんごし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "控訴",
+              "ruby": "こうそ"
+            },
+            {
+              "text": "することを",
+              "ruby": ""
+            },
+            {
+              "text": "決",
+              "ruby": "き"
+            },
+            {
+              "text": "めた。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 17,
+      "start": 116.3,
+      "end": 122.28,
+      "english": "Law must be strict, but it must not lose room for mercy.",
+      "japanese": "法は厳格でなければなりませんが、慈悲の余地を失ってはなりません。",
+      "mixed": "法は strict で、なければなりませんが、 mercy の余地を失ってはなりません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "法は ",
+          "parts": [
+            {
+              "text": "法",
+              "ruby": "ほう"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "strict",
+          "ruby": "厳格で"
+        },
+        {
+          "type": "ja",
+          "text": " で、",
+          "parts": [
+            {
+              "text": "で、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "なければなりませんが、 ",
+          "parts": [
+            {
+              "text": "なければなりませんが、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "mercy",
+          "ruby": "慈悲"
+        },
+        {
+          "type": "ja",
+          "text": " の余地を失ってはなりません。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "余地",
+              "ruby": "よち"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "失",
+              "ruby": "うしな"
+            },
+            {
+              "text": "ってはなりません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "strict",
+          "canonical_word": "strict",
+          "meaning": "厳格な"
+        },
+        {
+          "english": "mercy",
+          "canonical_word": "mercy",
+          "meaning": "慈悲"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "strict",
+          "reading": "厳格で",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "strict",
+          "canonical_meaning": "厳格な"
+        },
+        {
+          "english": "mercy",
+          "reading": "慈悲",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "mercy",
+          "canonical_meaning": "慈悲"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 18,
+      "start": 122.28,
+      "end": 134.92,
+      "english": "The pursuit of justice is always also a confrontation with the limits of human judgement.",
+      "japanese": "正義の追求は常に人間の判断力の限界との対決でもある。",
+      "mixed": "justice の追求は常に人間の judgement 力の限界との対決でもある。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "justice",
+          "ruby": "正義"
+        },
+        {
+          "type": "ja",
+          "text": " の追求は常に人間の ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "追求",
+              "ruby": "ついきゅう"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "常",
+              "ruby": "つね"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "人間",
+              "ruby": "にんげん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "judgement",
+          "ruby": "判断"
+        },
+        {
+          "type": "ja",
+          "text": " 力の限界との対決でもある。",
+          "parts": [
+            {
+              "text": "力",
+              "ruby": "ちから"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "限界",
+              "ruby": "げんかい"
+            },
+            {
+              "text": "との",
+              "ruby": ""
+            },
+            {
+              "text": "対決",
+              "ruby": "たいけつ"
+            },
+            {
+              "text": "でもある。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "justice",
+          "canonical_word": "justice",
+          "meaning": "正義"
+        },
+        {
+          "english": "judgement",
+          "canonical_word": "judgement",
+          "meaning": "判断"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "justice",
+          "reading": "正義",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "justice",
+          "canonical_meaning": "正義"
+        },
+        {
+          "english": "judgement",
+          "reading": "判断",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "judgement",
+          "canonical_meaning": "判断"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    }
+  ]
+}

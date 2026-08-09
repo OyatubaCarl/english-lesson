@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>高校生編・映像スタイル選択</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #08101f;
+      --panel: rgba(17, 27, 48, .86);
+      --panel-2: #121e34;
+      --line: rgba(173, 199, 255, .18);
+      --text: #edf4ff;
+      --muted: #9aabc7;
+      --accent: #78b8ff;
+      --accent-2: #ffd274;
+      --ok: #77e6ae;
+      --shadow: 0 18px 55px rgba(0, 0, 0, .32);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 12% 0%, rgba(52, 102, 181, .27), transparent 34rem),
+        radial-gradient(circle at 90% 8%, rgba(122, 77, 162, .16), transparent 28rem),
+        var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI", sans-serif;
+      line-height: 1.65;
+    }
+    button, select, textarea { font: inherit; }
+    button, select { cursor: pointer; }
+    .wrap { width: min(1540px, calc(100% - 32px)); margin: 0 auto; }
+    header { padding: 58px 0 30px; }
+    .eyebrow { color: var(--accent); font-weight: 800; letter-spacing: .12em; font-size: .82rem; }
+    h1 { margin: 8px 0 12px; font-size: clamp(2rem, 5vw, 4.6rem); line-height: 1.06; letter-spacing: -.045em; }
+    .lead { max-width: 900px; margin: 0; color: #c1cfea; font-size: clamp(1rem, 1.8vw, 1.22rem); }
+    .notice {
+      margin-top: 24px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 16px;
+      background: rgba(11, 20, 37, .72); color: #b9c7df;
+    }
+    .control {
+      position: sticky; top: 12px; z-index: 20; margin: 14px 0 30px; padding: 16px;
+      border: 1px solid var(--line); border-radius: 20px; background: rgba(10, 18, 33, .92);
+      backdrop-filter: blur(18px); box-shadow: var(--shadow);
+    }
+    .control-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .mode { display: flex; gap: 8px; padding: 5px; border-radius: 13px; background: #07101f; }
+    .mode button, .action {
+      border: 1px solid transparent; border-radius: 10px; padding: 9px 13px; color: var(--text); background: transparent;
+    }
+    .mode button.active { background: #1c3d65; border-color: rgba(142, 195, 255, .34); }
+    .action { background: #18304e; border-color: var(--line); }
+    .action.primary { margin-left: auto; color: #07101d; background: var(--accent-2); font-weight: 800; }
+    .saved { color: var(--ok); font-size: .88rem; opacity: 0; transition: opacity .2s; }
+    .saved.show { opacity: 1; }
+    .section-head { display: flex; gap: 16px; align-items: end; justify-content: space-between; margin: 34px 0 16px; }
+    h2 { margin: 0; font-size: clamp(1.35rem, 2.5vw, 2rem); }
+    .section-head p { color: var(--muted); margin: 0; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 390px), 1fr)); gap: 20px; }
+    .card {
+      overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: var(--panel);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, .2); transition: transform .18s, border-color .18s, box-shadow .18s;
+    }
+    .card:hover { transform: translateY(-3px); border-color: rgba(126, 184, 255, .48); }
+    .card.selected { border: 2px solid var(--accent-2); box-shadow: 0 0 0 4px rgba(255, 210, 116, .12), var(--shadow); }
+    .image-wrap { position: relative; aspect-ratio: 16/9; overflow: hidden; background: #020712; }
+    .image-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s; }
+    .card:hover img { transform: scale(1.018); }
+    .number { position: absolute; top: 12px; left: 12px; padding: 5px 9px; border-radius: 999px; background: rgba(4, 9, 18, .78); font-weight: 900; }
+    .zoom { position: absolute; right: 12px; top: 12px; border: 0; border-radius: 999px; padding: 7px 10px; color: white; background: rgba(4, 9, 18, .78); }
+    .card-body { padding: 17px 18px 18px; }
+    .card h3 { margin: 0; font-size: 1.22rem; }
+    .subtitle { color: var(--accent); font-size: .88rem; font-weight: 700; }
+    .desc { min-height: 5.3em; margin: 10px 0; color: #c2cee2; }
+    .tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 12px 0 15px; }
+    .tag { padding: 4px 9px; border: 1px solid var(--line); border-radius: 999px; color: #aebdd5; font-size: .78rem; }
+    .card-actions { display: flex; gap: 10px; align-items: center; }
+    .select-style { flex: 1; border: 1px solid rgba(120, 184, 255, .28); border-radius: 11px; padding: 9px; background: #153254; color: white; font-weight: 800; }
+    .favorite { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: .86rem; }
+    .favorite input { width: 18px; height: 18px; accent-color: var(--accent-2); }
+    .mapping { display: none; margin: 0 0 34px; padding: 20px; border: 1px solid var(--line); border-radius: 20px; background: var(--panel); }
+    .mapping.active { display: block; }
+    .mapping-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+    .map-item { padding: 14px; border: 1px solid var(--line); border-radius: 14px; background: #0c1729; }
+    .map-item label { display: block; margin-bottom: 8px; font-weight: 800; }
+    select, textarea { width: 100%; border: 1px solid var(--line); border-radius: 10px; color: var(--text); background: #07101f; padding: 9px; }
+    textarea { min-height: 94px; resize: vertical; }
+    .summary { margin: 36px 0 70px; padding: 22px; border: 1px solid var(--line); border-radius: 20px; background: linear-gradient(135deg, rgba(31, 57, 91, .86), rgba(17, 27, 48, .9)); }
+    .summary-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, .6fr); gap: 24px; }
+    .summary strong { color: var(--accent-2); }
+    .mini-list { color: #c0cee3; }
+    dialog { width: min(96vw, 1500px); padding: 0; border: 1px solid var(--line); border-radius: 20px; background: #050b16; color: white; box-shadow: var(--shadow); }
+    dialog::backdrop { background: rgba(0, 0, 0, .82); backdrop-filter: blur(6px); }
+    dialog img { width: 100%; max-height: 80vh; object-fit: contain; display: block; background: black; }
+    .dialog-bar { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 12px 16px; }
+    .dialog-bar button { border: 1px solid var(--line); border-radius: 9px; padding: 7px 11px; color: white; background: #15233b; }
+    @media (max-width: 760px) {
+      .wrap { width: min(100% - 20px, 1540px); }
+      header { padding-top: 30px; }
+      .control { position: static; }
+      .action.primary { margin-left: 0; }
+      .summary-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="eyebrow">TEACHER TACOS ENGLISH · HIGH SCHOOL VISUAL SYSTEM</div>
+    <h1>高校生編<br>映像スタイル選択</h1>
+    <p class="lead">同じ「雨上がりの駅」の構図を15種類の2Dアニメ美術で比較します。背景を写真へ寄せず、線・色面・光・塗りの違いで選べるようにしました。</p>
+    <div class="notice">共通仕様は固定します：歌唱語のTacoBeat実測強調／英語混じり日本語と全ルビ／安定カメラ／人物の基本デザイン。ここでは背景美術と塗りの方向だけを決めます。</div>
+  </header>
+
+  <main class="wrap">
+    <div class="control">
+      <div class="control-row">
+        <div class="mode" aria-label="運用方式">
+          <button type="button" data-mode="uniform" class="active">全編を一画風で統一</button>
+          <button type="button" data-mode="thematic">主題別に切り替える</button>
+        </div>
+        <button class="action" id="clearBtn" type="button">選択をクリア</button>
+        <span class="saved" id="saved">ブラウザに保存しました</span>
+        <button class="action primary" id="exportBtn" type="button">選択内容をJSONで保存</button>
+      </div>
+    </div>
+
+    <section class="mapping" id="mapping">
+      <div class="section-head"><div><h2>主題別の割り当て</h2><p>全レッスンで人物線と字幕は共通にし、背景美術だけを主題に合わせます。</p></div></div>
+      <div class="mapping-grid" id="mappingGrid"></div>
+    </section>
+
+    <section>
+      <div class="section-head"><div><h2>スタイル候補 15案</h2><p>画像を押すと拡大。候補ボタンで第一候補、比較に残すで最大3案を記録できます。</p></div></div>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <section class="summary">
+      <div class="summary-grid">
+        <div>
+          <h2>現在の選択</h2>
+          <p id="primarySummary">第一候補は未選択です。</p>
+          <p class="mini-list" id="favoriteSummary">比較候補：なし</p>
+        </div>
+        <div>
+          <label for="notes"><strong>判断メモ</strong></label>
+          <textarea id="notes" placeholder="例：屋外は01、屋内の日常会話は11。歴史テーマだけ13。"></textarea>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="viewer">
+    <img id="viewerImage" alt="スタイル候補の拡大表示">
+    <div class="dialog-bar"><strong id="viewerTitle"></strong><button id="closeViewer" type="button">閉じる</button></div>
+  </dialog>
+
+  <script>
+    const styles = [
+      {id:'01', file:'01_luminous_theatrical_anime.png', name:'光彩・劇場アニメ背景', sub:'統一候補の本命', tags:['青春','自然','ドラマ'], desc:'描線を残した精密背景に、雲間光と濡れた反射を手描きで重ねる。美しさとアニメ感のバランスが最も取りやすい。'},
+      {id:'02', file:'02_crisp_cel_detailed_bg.png', name:'現代セル＋精密背景', sub:'輪郭と可読性を重視', tags:['日常','学校','文法'], desc:'建物・列車・人物の輪郭が明快。字幕を載せても画面が負けにくく、日常会話や文法中心の回に安定して使える。'},
+      {id:'03', file:'03_gouache_anime_bg.png', name:'ガッシュ手描き背景', sub:'塗りの存在感', tags:['文学','回想','自然'], desc:'マットな筆致と色面がはっきり見える、背景美術らしい仕上がり。写真感を確実に避けながら情緒を出しやすい。'},
+      {id:'04', file:'04_watercolor_ink_anime.png', name:'透明水彩＋インク線画', sub:'繊細で静かな印象', tags:['内省','随筆','自然'], desc:'紙ににじむ水彩と細い線を生かす。静かな一人称、記憶、季節の描写に向くが、連続使用するとやや淡く見える。'},
+      {id:'05', file:'05_analog_1990s_anime.png', name:'1990年代アナログ背景', sub:'セル画時代の重み', tags:['郷愁','回想','物語'], desc:'ポスターカラーとエアブラシを思わせる落ち着いた背景。懐かしさと物語性が強く、過去を振り返る歌と相性がよい。'},
+      {id:'06', file:'06_graphic_color_block.png', name:'色面グラフィック・アニメ', sub:'大胆で現代的', tags:['抽象文法','未来','解説'], desc:'情報を整理した大きな色面と幾何学的な影。抽象度の高い文法や未来テーマで、映像全体をモダンに統一できる。'},
+      {id:'07', file:'07_colored_pencil_watercolor.png', name:'色鉛筆＋水彩', sub:'線の温度を見せる', tags:['手紙','家族','内省'], desc:'方向性のある鉛筆線と水彩の重なりが感情を近くする。家族・後悔・小さな決断など個人的な主題に向く。'},
+      {id:'08', file:'08_painterly_literary_anime.png', name:'筆致強め・文学アニメ', sub:'絵画性とドラマ', tags:['文学','葛藤','夕景'], desc:'大きなブラシと暗部を使う成熟した画面。葛藤や余韻のある物語に強い一方、軽い日常回には重くなりやすい。'},
+      {id:'09', file:'09_blue_hour_rain_anime.png', name:'雨夜・ブルーアワー', sub:'都市と孤独の空気', tags:['夜','都市','ミステリー'], desc:'深い藍と暖色灯、手描き反射で夜を構成。都市、孤独、推理、緊張感のある回だけに使う特殊系として有効。'},
+      {id:'10', file:'10_lyrical_pastel_anime.png', name:'叙情パステル光彩', sub:'明るい青春と希望', tags:['青春','希望','春'], desc:'シアン、ラベンダー、クリームの軽い光。希望や出発を明るく見せる。全編採用では甘くなりやすいので主題別向き。'},
+      {id:'11', file:'11_clean_tv_anime.png', name:'クリーンTVアニメ', sub:'教材としての安定性', tags:['日常','会話','屋内'], desc:'情報量と陰影を抑えた読みやすいセル画。屋内を無理に美化せず、会話や学校生活を自然に見せやすい。'},
+      {id:'12', file:'12_architectural_line_anime.png', name:'建築精密線画＋淡彩', sub:'場所そのものを語る', tags:['建築','歴史','社会'], desc:'パースと構造線を主役にする背景美術。洋館、制度、街づくり、文化遺産など場所に意味がある主題に適する。'},
+      {id:'13', file:'13_historical_memory_anime.png', name:'歴史・記憶の古色淡彩', sub:'過去を感じる特殊系', tags:['歴史','回想','文化'], desc:'古色、藍、苔色と水彩染みで記憶の層を示す。歴史や古い建物には強いが、現代の日常回では意図的な回想表現に限定。'},
+      {id:'14', file:'14_documentary_social_anime.png', name:'社会派ドキュメンタリー', sub:'制度・事実を冷静に', tags:['法律','社会','科学'], desc:'彩度とロマンチックな光を抑え、構造を明確に描く。憲法、民主主義、社会問題、科学説明に向く。'},
+      {id:'15', file:'15_contemplative_future_anime.png', name:'未来・内省の紫青光', sub:'抽象テーマの特殊系', tags:['未来','心理','可能性'], desc:'紫・青・金の色設計で、現実を保ったまま内面的な広がりを示す。未来完了や仮定、選択の主題に向く。'}
+    ];
+    const themes = [
+      ['youth','青春・自然・季節'], ['daily','日常・学校・会話'], ['memory','家族・回想・文学'],
+      ['history','歴史・建築・文化'], ['social','社会・法律・科学'], ['future','未来・心理・抽象文法'], ['night','夜・都市・緊張']
+    ];
+    const recommended = {youth:'01', daily:'11', memory:'07', history:'12', social:'14', future:'15', night:'09'};
+    const key = 'tte-high-visual-style-selection-v1';
+    let state = {mode:'uniform', primary:null, favorites:[], mappings:{...recommended}, notes:''};
+    try { state = {...state, ...JSON.parse(localStorage.getItem(key) || '{}')}; } catch (_) {}
+
+    const cards = document.getElementById('cards');
+    const mapping = document.getElementById('mapping');
+    const mappingGrid = document.getElementById('mappingGrid');
+    const viewer = document.getElementById('viewer');
+    const notes = document.getElementById('notes');
+
+    function optionHtml(selected) {
+      return styles.map(s => `<option value="${s.id}" ${s.id === selected ? 'selected' : ''}>${s.id}｜${s.name}</option>`).join('');
+    }
+    function renderMappings() {
+      mappingGrid.innerHTML = themes.map(([id, label]) => `<div class="map-item"><label for="map-${id}">${label}</label><select id="map-${id}" data-theme="${id}">${optionHtml(state.mappings[id] || recommended[id])}</select></div>`).join('');
+      mappingGrid.querySelectorAll('select').forEach(select => select.addEventListener('change', e => { state.mappings[e.target.dataset.theme] = e.target.value; save(); }));
+    }
+    function renderCards() {
+      cards.innerHTML = styles.map(s => `<article class="card ${state.primary === s.id ? 'selected' : ''}" data-id="${s.id}">
+        <div class="image-wrap"><img src="images/${s.file}" alt="${s.name}" loading="lazy"><span class="number">${s.id}</span><button class="zoom" type="button" aria-label="拡大">拡大</button></div>
+        <div class="card-body"><div class="subtitle">${s.sub}</div><h3>${s.name}</h3><p class="desc">${s.desc}</p><div class="tags">${s.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
+        <div class="card-actions"><button class="select-style" type="button">この案を第一候補にする</button><label class="favorite"><input type="checkbox" ${state.favorites.includes(s.id) ? 'checked' : ''}>比較に残す</label></div></div></article>`).join('');
+      cards.querySelectorAll('.card').forEach(card => {
+        const id = card.dataset.id, style = styles.find(s => s.id === id);
+        card.querySelector('.select-style').addEventListener('click', () => { state.primary = id; save(); renderCards(); });
+        card.querySelector('.favorite input').addEventListener('change', e => {
+          if (e.target.checked && !state.favorites.includes(id)) {
+            if (state.favorites.length >= 3) { e.target.checked = false; alert('比較候補は最大3案です。'); return; }
+            state.favorites.push(id);
+          } else state.favorites = state.favorites.filter(x => x !== id);
+          save(); updateSummary();
+        });
+        card.querySelector('.image-wrap').addEventListener('click', e => {
+          if (e.target.closest('.favorite') || e.target.closest('.select-style')) return;
+          document.getElementById('viewerImage').src = `images/${style.file}`;
+          document.getElementById('viewerTitle').textContent = `${style.id}｜${style.name}`;
+          viewer.showModal();
+        });
+      });
+      updateSummary();
+    }
+    function updateMode() {
+      document.querySelectorAll('[data-mode]').forEach(b => b.classList.toggle('active', b.dataset.mode === state.mode));
+      mapping.classList.toggle('active', state.mode === 'thematic');
+    }
+    function updateSummary() {
+      const primary = styles.find(s => s.id === state.primary);
+      document.getElementById('primarySummary').innerHTML = primary ? `第一候補：<strong>${primary.id}｜${primary.name}</strong>` : '第一候補は未選択です。';
+      const favs = state.favorites.map(id => styles.find(s => s.id === id)).filter(Boolean);
+      document.getElementById('favoriteSummary').textContent = `比較候補：${favs.length ? favs.map(s => `${s.id} ${s.name}`).join(' ／ ') : 'なし'}`;
+    }
+    function save() {
+      state.notes = notes.value;
+      localStorage.setItem(key, JSON.stringify(state));
+      document.getElementById('saved').classList.add('show');
+      setTimeout(() => document.getElementById('saved').classList.remove('show'), 1100);
+      updateSummary();
+    }
+    document.querySelectorAll('[data-mode]').forEach(b => b.addEventListener('click', () => { state.mode = b.dataset.mode; save(); updateMode(); }));
+    document.getElementById('clearBtn').addEventListener('click', () => { state.primary = null; state.favorites = []; renderCards(); save(); });
+    notes.value = state.notes || '';
+    notes.addEventListener('input', save);
+    document.getElementById('closeViewer').addEventListener('click', () => viewer.close());
+    viewer.addEventListener('click', e => { if (e.target === viewer) viewer.close(); });
+    document.getElementById('exportBtn').addEventListener('click', () => {
+      save();
+      const enriched = {...state, primary_detail: styles.find(s => s.id === state.primary) || null,
+        favorite_details: state.favorites.map(id => styles.find(s => s.id === id)), exported_at: new Date().toISOString()};
+      const blob = new Blob([JSON.stringify(enriched, null, 2)], {type:'application/json'});
+      const a = Object.assign(document.createElement('a'), {href:URL.createObjectURL(blob), download:'high-school-visual-style-selection.json'});
+      a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    });
+    renderMappings(); renderCards(); updateMode();
+  </script>
+</body>
+</html>

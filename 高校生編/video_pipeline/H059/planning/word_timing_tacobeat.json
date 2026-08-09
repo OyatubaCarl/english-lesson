@@ -1,0 +1,1484 @@
+{
+  "lesson": "H059",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h059_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H059/candidate2-full.mp3",
+  "source_audio_sha256": "4a23b95e3d49c3a464380c369f48fead0bb8588aafdfacd409847e2192a05a4d",
+  "bpm": 76.36,
+  "exact_word_match": true,
+  "word_count": 226,
+  "line_count": 14,
+  "first_word_start": 6.721,
+  "last_word_end": 168.359,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Psychology is the discipline that studies human behavior and the workings of the mind in a scientific way.",
+      "word_timings": [
+        {
+          "word": "Psychology",
+          "display_index": 0,
+          "start": 6.721,
+          "end": 8.193
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 8.193,
+          "end": 8.391
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 8.391,
+          "end": 8.521
+        },
+        {
+          "word": "discipline",
+          "display_index": 3,
+          "start": 8.521,
+          "end": 9.861
+        },
+        {
+          "word": "that",
+          "display_index": 4,
+          "start": 9.861,
+          "end": 10.061
+        },
+        {
+          "word": "studies",
+          "display_index": 5,
+          "start": 10.061,
+          "end": 10.661
+        },
+        {
+          "word": "human",
+          "display_index": 6,
+          "start": 10.661,
+          "end": 11.281
+        },
+        {
+          "word": "behavior",
+          "display_index": 7,
+          "start": 11.281,
+          "end": 12.881
+        },
+        {
+          "word": "and",
+          "display_index": 8,
+          "start": 12.881,
+          "end": 13.055
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 13.055,
+          "end": 13.202
+        },
+        {
+          "word": "workings",
+          "display_index": 10,
+          "start": 13.202,
+          "end": 13.902
+        },
+        {
+          "word": "of",
+          "display_index": 11,
+          "start": 13.902,
+          "end": 14.247
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 14.247,
+          "end": 14.402
+        },
+        {
+          "word": "mind",
+          "display_index": 13,
+          "start": 14.402,
+          "end": 16.022
+        },
+        {
+          "word": "in",
+          "display_index": 14,
+          "start": 16.022,
+          "end": 16.22
+        },
+        {
+          "word": "a",
+          "display_index": 15,
+          "start": 16.22,
+          "end": 16.322
+        },
+        {
+          "word": "scientific",
+          "display_index": 16,
+          "start": 16.322,
+          "end": 17.502
+        },
+        {
+          "word": "way.",
+          "display_index": 17,
+          "start": 17.502,
+          "end": 18.862
+        }
+      ],
+      "start": 6.721,
+      "end": 18.862
+    },
+    {
+      "line": 2,
+      "english": "At the end of the nineteenth century, Wilhelm Wundt founded the world's first psychology laboratory at the University of Leipzig.",
+      "word_timings": [
+        {
+          "word": "At",
+          "display_index": 0,
+          "start": 19.162,
+          "end": 19.307
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 19.307,
+          "end": 19.582
+        },
+        {
+          "word": "end",
+          "display_index": 2,
+          "start": 19.582,
+          "end": 19.982
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 19.982,
+          "end": 20.116
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 20.116,
+          "end": 20.282
+        },
+        {
+          "word": "nineteenth",
+          "display_index": 5,
+          "start": 20.282,
+          "end": 21.062
+        },
+        {
+          "word": "century,",
+          "display_index": 6,
+          "start": 21.062,
+          "end": 22.643
+        },
+        {
+          "word": "Wilhelm",
+          "display_index": 7,
+          "start": 22.643,
+          "end": 23.263
+        },
+        {
+          "word": "Wundt",
+          "display_index": 8,
+          "start": 23.263,
+          "end": 23.803
+        },
+        {
+          "word": "founded",
+          "display_index": 9,
+          "start": 23.803,
+          "end": 24.846
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 24.846,
+          "end": 25.003
+        },
+        {
+          "word": "world's",
+          "display_index": 11,
+          "start": 25.003,
+          "end": 25.423
+        },
+        {
+          "word": "first",
+          "display_index": 12,
+          "start": 25.423,
+          "end": 25.963
+        },
+        {
+          "word": "psychology",
+          "display_index": 13,
+          "start": 25.963,
+          "end": 27.023
+        },
+        {
+          "word": "laboratory",
+          "display_index": 14,
+          "start": 27.023,
+          "end": 28.603
+        },
+        {
+          "word": "at",
+          "display_index": 15,
+          "start": 28.603,
+          "end": 28.763
+        },
+        {
+          "word": "the",
+          "display_index": 16,
+          "start": 28.763,
+          "end": 29.043
+        },
+        {
+          "word": "University",
+          "display_index": 17,
+          "start": 29.043,
+          "end": 31.164
+        },
+        {
+          "word": "of",
+          "display_index": 18,
+          "start": 31.164,
+          "end": 31.344
+        },
+        {
+          "word": "Leipzig.",
+          "display_index": 19,
+          "start": 31.344,
+          "end": 32.844
+        }
+      ],
+      "start": 19.162,
+      "end": 32.844
+    },
+    {
+      "line": 3,
+      "english": "That moment is regarded as the academic beginning of the field.",
+      "word_timings": [
+        {
+          "word": "That",
+          "display_index": 0,
+          "start": 35.444,
+          "end": 35.664
+        },
+        {
+          "word": "moment",
+          "display_index": 1,
+          "start": 35.664,
+          "end": 36.024
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 36.024,
+          "end": 36.424
+        },
+        {
+          "word": "regarded",
+          "display_index": 3,
+          "start": 36.424,
+          "end": 37.284
+        },
+        {
+          "word": "as",
+          "display_index": 4,
+          "start": 37.284,
+          "end": 37.451
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 37.451,
+          "end": 37.664
+        },
+        {
+          "word": "academic",
+          "display_index": 6,
+          "start": 37.664,
+          "end": 38.584
+        },
+        {
+          "word": "beginning",
+          "display_index": 7,
+          "start": 38.584,
+          "end": 39.244
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 39.244,
+          "end": 39.404
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 39.404,
+          "end": 39.545
+        },
+        {
+          "word": "field.",
+          "display_index": 10,
+          "start": 39.545,
+          "end": 40.665
+        }
+      ],
+      "start": 35.444,
+      "end": 40.665
+    },
+    {
+      "line": 4,
+      "english": "In the early twentieth century, the Russian Ivan Pavlov observed that a dog produced saliva when it saw food.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 40.965,
+          "end": 41.167
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 41.167,
+          "end": 41.385
+        },
+        {
+          "word": "early",
+          "display_index": 2,
+          "start": 41.385,
+          "end": 41.905
+        },
+        {
+          "word": "twentieth",
+          "display_index": 3,
+          "start": 41.905,
+          "end": 42.885
+        },
+        {
+          "word": "century,",
+          "display_index": 4,
+          "start": 42.885,
+          "end": 44.128
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 44.128,
+          "end": 44.265
+        },
+        {
+          "word": "Russian",
+          "display_index": 6,
+          "start": 44.265,
+          "end": 44.925
+        },
+        {
+          "word": "Ivan",
+          "display_index": 7,
+          "start": 44.925,
+          "end": 45.425
+        },
+        {
+          "word": "Pavlov",
+          "display_index": 8,
+          "start": 45.425,
+          "end": 46.545
+        },
+        {
+          "word": "observed",
+          "display_index": 9,
+          "start": 46.545,
+          "end": 47.445
+        },
+        {
+          "word": "that",
+          "display_index": 10,
+          "start": 47.445,
+          "end": 47.589
+        },
+        {
+          "word": "a",
+          "display_index": 11,
+          "start": 47.589,
+          "end": 47.805
+        },
+        {
+          "word": "dog",
+          "display_index": 12,
+          "start": 47.805,
+          "end": 48.186
+        },
+        {
+          "word": "produced",
+          "display_index": 13,
+          "start": 48.186,
+          "end": 48.966
+        },
+        {
+          "word": "saliva",
+          "display_index": 14,
+          "start": 48.966,
+          "end": 49.786
+        },
+        {
+          "word": "when",
+          "display_index": 15,
+          "start": 49.786,
+          "end": 50.006
+        },
+        {
+          "word": "it",
+          "display_index": 16,
+          "start": 50.006,
+          "end": 50.186
+        },
+        {
+          "word": "saw",
+          "display_index": 17,
+          "start": 50.186,
+          "end": 50.546
+        },
+        {
+          "word": "food.",
+          "display_index": 18,
+          "start": 50.546,
+          "end": 52.046
+        }
+      ],
+      "start": 40.965,
+      "end": 52.046
+    },
+    {
+      "line": 5,
+      "english": "He further discovered that, when a bell was rung repeatedly before the food, the dog began to produce saliva at the sound of the bell alone.",
+      "word_timings": [
+        {
+          "word": "He",
+          "display_index": 0,
+          "start": 53.106,
+          "end": 53.286
+        },
+        {
+          "word": "further",
+          "display_index": 1,
+          "start": 53.286,
+          "end": 53.726
+        },
+        {
+          "word": "discovered",
+          "display_index": 2,
+          "start": 53.726,
+          "end": 54.526
+        },
+        {
+          "word": "that,",
+          "display_index": 3,
+          "start": 54.526,
+          "end": 55.286
+        },
+        {
+          "word": "when",
+          "display_index": 4,
+          "start": 55.286,
+          "end": 55.503
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 55.503,
+          "end": 55.686
+        },
+        {
+          "word": "bell",
+          "display_index": 6,
+          "start": 55.686,
+          "end": 56.266
+        },
+        {
+          "word": "was",
+          "display_index": 7,
+          "start": 56.266,
+          "end": 56.486
+        },
+        {
+          "word": "rung",
+          "display_index": 8,
+          "start": 56.486,
+          "end": 57.067
+        },
+        {
+          "word": "repeatedly",
+          "display_index": 9,
+          "start": 57.067,
+          "end": 57.827
+        },
+        {
+          "word": "before",
+          "display_index": 10,
+          "start": 57.827,
+          "end": 58.449
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 58.449,
+          "end": 58.607
+        },
+        {
+          "word": "food,",
+          "display_index": 12,
+          "start": 58.607,
+          "end": 59.436
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 59.436,
+          "end": 59.607
+        },
+        {
+          "word": "dog",
+          "display_index": 14,
+          "start": 59.607,
+          "end": 60.007
+        },
+        {
+          "word": "began",
+          "display_index": 15,
+          "start": 60.007,
+          "end": 60.746
+        },
+        {
+          "word": "to",
+          "display_index": 16,
+          "start": 60.746,
+          "end": 60.927
+        },
+        {
+          "word": "produce",
+          "display_index": 17,
+          "start": 60.927,
+          "end": 61.567
+        },
+        {
+          "word": "saliva",
+          "display_index": 18,
+          "start": 61.567,
+          "end": 63.207
+        },
+        {
+          "word": "at",
+          "display_index": 19,
+          "start": 63.207,
+          "end": 63.323
+        },
+        {
+          "word": "the",
+          "display_index": 20,
+          "start": 63.323,
+          "end": 63.527
+        },
+        {
+          "word": "sound",
+          "display_index": 21,
+          "start": 63.527,
+          "end": 64.007
+        },
+        {
+          "word": "of",
+          "display_index": 22,
+          "start": 64.007,
+          "end": 64.165
+        },
+        {
+          "word": "the",
+          "display_index": 23,
+          "start": 64.165,
+          "end": 64.327
+        },
+        {
+          "word": "bell",
+          "display_index": 24,
+          "start": 64.327,
+          "end": 64.607
+        },
+        {
+          "word": "alone.",
+          "display_index": 25,
+          "start": 64.607,
+          "end": 66.107
+        }
+      ],
+      "start": 53.106,
+      "end": 66.107
+    },
+    {
+      "line": 6,
+      "english": "This is the phenomenon known as classical conditioning.",
+      "word_timings": [
+        {
+          "word": "This",
+          "display_index": 0,
+          "start": 67.068,
+          "end": 67.376
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 67.376,
+          "end": 67.503
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 67.503,
+          "end": 67.788
+        },
+        {
+          "word": "phenomenon",
+          "display_index": 3,
+          "start": 67.788,
+          "end": 68.928
+        },
+        {
+          "word": "known",
+          "display_index": 4,
+          "start": 68.928,
+          "end": 69.488
+        },
+        {
+          "word": "as",
+          "display_index": 5,
+          "start": 69.488,
+          "end": 69.688
+        },
+        {
+          "word": "classical",
+          "display_index": 6,
+          "start": 69.688,
+          "end": 70.948
+        },
+        {
+          "word": "conditioning.",
+          "display_index": 7,
+          "start": 70.948,
+          "end": 72.448
+        }
+      ],
+      "start": 67.068,
+      "end": 72.448
+    },
+    {
+      "line": 7,
+      "english": "Sigmund Freud argued that our unconscious desires were what drove much of our behavior.",
+      "word_timings": [
+        {
+          "word": "Sigmund",
+          "display_index": 0,
+          "start": 75.289,
+          "end": 75.869
+        },
+        {
+          "word": "Freud",
+          "display_index": 1,
+          "start": 75.869,
+          "end": 76.629
+        },
+        {
+          "word": "argued",
+          "display_index": 2,
+          "start": 76.629,
+          "end": 77.469
+        },
+        {
+          "word": "that",
+          "display_index": 3,
+          "start": 77.469,
+          "end": 77.789
+        },
+        {
+          "word": "our",
+          "display_index": 4,
+          "start": 77.789,
+          "end": 78.129
+        },
+        {
+          "word": "unconscious",
+          "display_index": 5,
+          "start": 78.129,
+          "end": 79.249
+        },
+        {
+          "word": "desires",
+          "display_index": 6,
+          "start": 79.249,
+          "end": 81.009
+        },
+        {
+          "word": "were",
+          "display_index": 7,
+          "start": 81.009,
+          "end": 81.209
+        },
+        {
+          "word": "what",
+          "display_index": 8,
+          "start": 81.209,
+          "end": 81.549
+        },
+        {
+          "word": "drove",
+          "display_index": 9,
+          "start": 81.549,
+          "end": 82.229
+        },
+        {
+          "word": "much",
+          "display_index": 10,
+          "start": 82.229,
+          "end": 82.869
+        },
+        {
+          "word": "of",
+          "display_index": 11,
+          "start": 82.869,
+          "end": 83.55
+        },
+        {
+          "word": "our",
+          "display_index": 12,
+          "start": 83.55,
+          "end": 84.37
+        },
+        {
+          "word": "behavior.",
+          "display_index": 13,
+          "start": 84.37,
+          "end": 85.87
+        }
+      ],
+      "start": 75.289,
+      "end": 85.87
+    },
+    {
+      "line": 8,
+      "english": "His theory caused much debate, but his great contribution was to spread the concept of the unconscious into the world.",
+      "word_timings": [
+        {
+          "word": "His",
+          "display_index": 0,
+          "start": 86.89,
+          "end": 87.13
+        },
+        {
+          "word": "theory",
+          "display_index": 1,
+          "start": 87.13,
+          "end": 87.87
+        },
+        {
+          "word": "caused",
+          "display_index": 2,
+          "start": 87.87,
+          "end": 88.53
+        },
+        {
+          "word": "much",
+          "display_index": 3,
+          "start": 88.53,
+          "end": 88.91
+        },
+        {
+          "word": "debate,",
+          "display_index": 4,
+          "start": 88.91,
+          "end": 90.47
+        },
+        {
+          "word": "but",
+          "display_index": 5,
+          "start": 90.47,
+          "end": 90.71
+        },
+        {
+          "word": "his",
+          "display_index": 6,
+          "start": 90.71,
+          "end": 90.95
+        },
+        {
+          "word": "great",
+          "display_index": 7,
+          "start": 90.95,
+          "end": 91.63
+        },
+        {
+          "word": "contribution",
+          "display_index": 8,
+          "start": 91.63,
+          "end": 93.651
+        },
+        {
+          "word": "was",
+          "display_index": 9,
+          "start": 93.651,
+          "end": 94.012
+        },
+        {
+          "word": "to",
+          "display_index": 10,
+          "start": 94.012,
+          "end": 94.151
+        },
+        {
+          "word": "spread",
+          "display_index": 11,
+          "start": 94.151,
+          "end": 94.606
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 94.606,
+          "end": 94.771
+        },
+        {
+          "word": "concept",
+          "display_index": 13,
+          "start": 94.771,
+          "end": 97.051
+        },
+        {
+          "word": "of",
+          "display_index": 14,
+          "start": 97.051,
+          "end": 97.215
+        },
+        {
+          "word": "the",
+          "display_index": 15,
+          "start": 97.215,
+          "end": 97.451
+        },
+        {
+          "word": "unconscious",
+          "display_index": 16,
+          "start": 97.451,
+          "end": 98.711
+        },
+        {
+          "word": "into",
+          "display_index": 17,
+          "start": 98.711,
+          "end": 99.815
+        },
+        {
+          "word": "the",
+          "display_index": 18,
+          "start": 99.815,
+          "end": 100.131
+        },
+        {
+          "word": "world.",
+          "display_index": 19,
+          "start": 100.131,
+          "end": 101.631
+        }
+      ],
+      "start": 86.89,
+      "end": 101.631
+    },
+    {
+      "line": 9,
+      "english": "In the 1960s, Stanley Milgram's experiments showed how ordinary people, under the instruction of an authority figure, could perform cruel actions.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 102.552,
+          "end": 102.742
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 102.742,
+          "end": 104.132
+        },
+        {
+          "word": "1960s,",
+          "display_index": 2,
+          "start": 104.132,
+          "end": 104.392
+        },
+        {
+          "word": "Stanley",
+          "display_index": 3,
+          "start": 104.392,
+          "end": 105.072
+        },
+        {
+          "word": "Milgram's",
+          "display_index": 4,
+          "start": 105.072,
+          "end": 105.912
+        },
+        {
+          "word": "experiments",
+          "display_index": 5,
+          "start": 105.912,
+          "end": 106.792
+        },
+        {
+          "word": "showed",
+          "display_index": 6,
+          "start": 106.792,
+          "end": 107.252
+        },
+        {
+          "word": "how",
+          "display_index": 7,
+          "start": 107.252,
+          "end": 107.712
+        },
+        {
+          "word": "ordinary",
+          "display_index": 8,
+          "start": 107.712,
+          "end": 108.412
+        },
+        {
+          "word": "people,",
+          "display_index": 9,
+          "start": 108.412,
+          "end": 109.092
+        },
+        {
+          "word": "under",
+          "display_index": 10,
+          "start": 109.092,
+          "end": 109.65
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 109.65,
+          "end": 109.813
+        },
+        {
+          "word": "instruction",
+          "display_index": 12,
+          "start": 109.813,
+          "end": 110.873
+        },
+        {
+          "word": "of",
+          "display_index": 13,
+          "start": 110.873,
+          "end": 111.073
+        },
+        {
+          "word": "an",
+          "display_index": 14,
+          "start": 111.073,
+          "end": 111.253
+        },
+        {
+          "word": "authority",
+          "display_index": 15,
+          "start": 111.253,
+          "end": 112.353
+        },
+        {
+          "word": "figure,",
+          "display_index": 16,
+          "start": 112.353,
+          "end": 113.533
+        },
+        {
+          "word": "could",
+          "display_index": 17,
+          "start": 113.533,
+          "end": 113.753
+        },
+        {
+          "word": "perform",
+          "display_index": 18,
+          "start": 113.753,
+          "end": 114.293
+        },
+        {
+          "word": "cruel",
+          "display_index": 19,
+          "start": 114.293,
+          "end": 114.833
+        },
+        {
+          "word": "actions.",
+          "display_index": 20,
+          "start": 114.833,
+          "end": 116.013
+        }
+      ],
+      "start": 102.552,
+      "end": 116.013
+    },
+    {
+      "line": 10,
+      "english": "This became one of the most shocking findings of social psychology.",
+      "word_timings": [
+        {
+          "word": "This",
+          "display_index": 0,
+          "start": 116.313,
+          "end": 116.533
+        },
+        {
+          "word": "became",
+          "display_index": 1,
+          "start": 116.533,
+          "end": 117.193
+        },
+        {
+          "word": "one",
+          "display_index": 2,
+          "start": 117.193,
+          "end": 117.373
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 117.373,
+          "end": 117.531
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 117.531,
+          "end": 117.693
+        },
+        {
+          "word": "most",
+          "display_index": 5,
+          "start": 117.693,
+          "end": 118.074
+        },
+        {
+          "word": "shocking",
+          "display_index": 6,
+          "start": 118.074,
+          "end": 118.674
+        },
+        {
+          "word": "findings",
+          "display_index": 7,
+          "start": 118.674,
+          "end": 119.154
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 119.154,
+          "end": 119.454
+        },
+        {
+          "word": "social",
+          "display_index": 9,
+          "start": 119.454,
+          "end": 120.194
+        },
+        {
+          "word": "psychology.",
+          "display_index": 10,
+          "start": 120.194,
+          "end": 121.694
+        }
+      ],
+      "start": 116.313,
+      "end": 121.694
+    },
+    {
+      "line": 11,
+      "english": "Recent research has revealed how often our decisions are distorted by many biases.",
+      "word_timings": [
+        {
+          "word": "Recent",
+          "display_index": 0,
+          "start": 122.074,
+          "end": 122.654
+        },
+        {
+          "word": "research",
+          "display_index": 1,
+          "start": 122.654,
+          "end": 123.434
+        },
+        {
+          "word": "has",
+          "display_index": 2,
+          "start": 123.434,
+          "end": 123.834
+        },
+        {
+          "word": "revealed",
+          "display_index": 3,
+          "start": 123.834,
+          "end": 124.574
+        },
+        {
+          "word": "how",
+          "display_index": 4,
+          "start": 124.574,
+          "end": 125.074
+        },
+        {
+          "word": "often",
+          "display_index": 5,
+          "start": 125.074,
+          "end": 126.274
+        },
+        {
+          "word": "our",
+          "display_index": 6,
+          "start": 126.274,
+          "end": 126.414
+        },
+        {
+          "word": "decisions",
+          "display_index": 7,
+          "start": 126.414,
+          "end": 127.459
+        },
+        {
+          "word": "are",
+          "display_index": 8,
+          "start": 127.459,
+          "end": 127.835
+        },
+        {
+          "word": "distorted",
+          "display_index": 9,
+          "start": 127.835,
+          "end": 128.855
+        },
+        {
+          "word": "by",
+          "display_index": 10,
+          "start": 128.855,
+          "end": 129.455
+        },
+        {
+          "word": "many",
+          "display_index": 11,
+          "start": 129.455,
+          "end": 130.735
+        },
+        {
+          "word": "biases.",
+          "display_index": 12,
+          "start": 130.735,
+          "end": 132.235
+        }
+      ],
+      "start": 122.074,
+      "end": 132.235
+    },
+    {
+      "line": 12,
+      "english": "Though we wish to be rational, we are easily turned aside by emotion and assumption.",
+      "word_timings": [
+        {
+          "word": "Though",
+          "display_index": 0,
+          "start": 134.335,
+          "end": 134.535
+        },
+        {
+          "word": "we",
+          "display_index": 1,
+          "start": 134.535,
+          "end": 134.715
+        },
+        {
+          "word": "wish",
+          "display_index": 2,
+          "start": 134.715,
+          "end": 134.923
+        },
+        {
+          "word": "to",
+          "display_index": 3,
+          "start": 134.923,
+          "end": 135.135
+        },
+        {
+          "word": "be",
+          "display_index": 4,
+          "start": 135.135,
+          "end": 135.516
+        },
+        {
+          "word": "rational,",
+          "display_index": 5,
+          "start": 135.516,
+          "end": 137.516
+        },
+        {
+          "word": "we",
+          "display_index": 6,
+          "start": 137.516,
+          "end": 137.725
+        },
+        {
+          "word": "are",
+          "display_index": 7,
+          "start": 137.725,
+          "end": 137.956
+        },
+        {
+          "word": "easily",
+          "display_index": 8,
+          "start": 137.956,
+          "end": 138.656
+        },
+        {
+          "word": "turned",
+          "display_index": 9,
+          "start": 138.656,
+          "end": 139.156
+        },
+        {
+          "word": "aside",
+          "display_index": 10,
+          "start": 139.156,
+          "end": 139.876
+        },
+        {
+          "word": "by",
+          "display_index": 11,
+          "start": 139.876,
+          "end": 140.136
+        },
+        {
+          "word": "emotion",
+          "display_index": 12,
+          "start": 140.136,
+          "end": 141.156
+        },
+        {
+          "word": "and",
+          "display_index": 13,
+          "start": 141.156,
+          "end": 141.516
+        },
+        {
+          "word": "assumption.",
+          "display_index": 14,
+          "start": 141.516,
+          "end": 143.016
+        }
+      ],
+      "start": 134.335,
+      "end": 143.016
+    },
+    {
+      "line": 13,
+      "english": "Therapy for people experiencing anxiety or depression has also been a great contribution of psychology.",
+      "word_timings": [
+        {
+          "word": "Therapy",
+          "display_index": 0,
+          "start": 144.216,
+          "end": 145.177
+        },
+        {
+          "word": "for",
+          "display_index": 1,
+          "start": 145.177,
+          "end": 145.397
+        },
+        {
+          "word": "people",
+          "display_index": 2,
+          "start": 145.397,
+          "end": 146.417
+        },
+        {
+          "word": "experiencing",
+          "display_index": 3,
+          "start": 146.417,
+          "end": 147.737
+        },
+        {
+          "word": "anxiety",
+          "display_index": 4,
+          "start": 147.737,
+          "end": 149.237
+        },
+        {
+          "word": "or",
+          "display_index": 5,
+          "start": 149.237,
+          "end": 149.377
+        },
+        {
+          "word": "depression",
+          "display_index": 6,
+          "start": 149.377,
+          "end": 150.737
+        },
+        {
+          "word": "has",
+          "display_index": 7,
+          "start": 150.737,
+          "end": 151.037
+        },
+        {
+          "word": "also",
+          "display_index": 8,
+          "start": 151.037,
+          "end": 151.757
+        },
+        {
+          "word": "been",
+          "display_index": 9,
+          "start": 151.757,
+          "end": 152.767
+        },
+        {
+          "word": "a",
+          "display_index": 10,
+          "start": 152.767,
+          "end": 152.937
+        },
+        {
+          "word": "great",
+          "display_index": 11,
+          "start": 152.937,
+          "end": 153.338
+        },
+        {
+          "word": "contribution",
+          "display_index": 12,
+          "start": 153.338,
+          "end": 155.418
+        },
+        {
+          "word": "of",
+          "display_index": 13,
+          "start": 155.418,
+          "end": 155.698
+        },
+        {
+          "word": "psychology.",
+          "display_index": 14,
+          "start": 155.698,
+          "end": 157.198
+        }
+      ],
+      "start": 144.216,
+      "end": 157.198
+    },
+    {
+      "line": 14,
+      "english": "The science of the mind is a tool by which we may better understand ourselves.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 159.207,
+          "end": 159.338
+        },
+        {
+          "word": "science",
+          "display_index": 1,
+          "start": 159.338,
+          "end": 160.078
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 160.078,
+          "end": 160.392
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 160.392,
+          "end": 160.598
+        },
+        {
+          "word": "mind",
+          "display_index": 4,
+          "start": 160.598,
+          "end": 161.579
+        },
+        {
+          "word": "is",
+          "display_index": 5,
+          "start": 161.579,
+          "end": 161.659
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 161.65,
+          "end": 161.839
+        },
+        {
+          "word": "tool",
+          "display_index": 7,
+          "start": 161.839,
+          "end": 162.459
+        },
+        {
+          "word": "by",
+          "display_index": 8,
+          "start": 162.459,
+          "end": 162.679
+        },
+        {
+          "word": "which",
+          "display_index": 9,
+          "start": 162.679,
+          "end": 163.919
+        },
+        {
+          "word": "we",
+          "display_index": 10,
+          "start": 163.919,
+          "end": 164.119
+        },
+        {
+          "word": "may",
+          "display_index": 11,
+          "start": 164.119,
+          "end": 164.559
+        },
+        {
+          "word": "better",
+          "display_index": 12,
+          "start": 164.559,
+          "end": 165.579
+        },
+        {
+          "word": "understand",
+          "display_index": 13,
+          "start": 165.579,
+          "end": 166.859
+        },
+        {
+          "word": "ourselves.",
+          "display_index": 14,
+          "start": 166.859,
+          "end": 168.359
+        }
+      ],
+      "start": 159.207,
+      "end": 168.359
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

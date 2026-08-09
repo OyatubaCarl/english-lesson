@@ -1,0 +1,206 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H155.md",
+  "audio": "高校生編/suno_ready/generated/audio/H155/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 199.36,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0043,
+  "expected_words": 232,
+  "transcribed_words": 233,
+  "matched_words": 230,
+  "coverage": 0.9914,
+  "precision": 0.9871,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 231,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 121,
+      "length": 1,
+      "words": [
+        "veterans"
+      ]
+    },
+    {
+      "start": 192,
+      "length": 1,
+      "words": [
+        "those"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 121,
+      "actual_start": 121,
+      "expected": [
+        "veterans"
+      ],
+      "actual": [
+        "veteran"
+      ],
+      "actual_confidence": 0.9258,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 192,
+      "actual_start": 192,
+      "expected": [
+        "those"
+      ],
+      "actual": [
+        "though"
+      ],
+      "actual_confidence": 0.6738,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 232,
+      "actual_start": 232,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.0649
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "Soldiers who come back from a battle site May find that the battle does not end When they return to society, substance abuse, suicide, family collapse due to PTSD Even if one survives the war, lives can still be lost in the years that follow My friend Michael was a US soldier who fought in Iraq After returning home he would panic or become angry even at small sounds The sound of fireworks, the slam of a car door These reminded him of the explosions of the battlefield Michael also could not sleep and suffered from nightmares His wife tried to support him But life with him as he grew aggressive was hard Michael then came to rely on drugs A veteran support organization reached out to him Counseling group therapy, dialogue with comrades Michael slowly recovered, now he does work to support other veterans War may break you, but it does not have to define you Politicians start wars, but it is the young who fight Care after return is the responsibility of the nation that sent them to war It is not only soldiers who suffer PTSD Victims of abuse, though struck by disaster Because wounds of the heart are invisible They remain long For society to turn its eyes To the wounds of the heart And build a system of support That is the condition of a kind society You",
+  "segments": [
+    {
+      "start": 13.68,
+      "end": 22.02,
+      "text": "Soldiers who come back from a battle site May find that the battle does not end"
+    },
+    {
+      "start": 22.02,
+      "end": 33.14,
+      "text": "When they return to society, substance abuse, suicide, family collapse due to PTSD"
+    },
+    {
+      "start": 35.02,
+      "end": 44.46,
+      "text": "Even if one survives the war, lives can still be lost in the years that follow"
+    },
+    {
+      "start": 46.28,
+      "end": 52.02,
+      "text": "My friend Michael was a US soldier who fought in Iraq"
+    },
+    {
+      "start": 52.02,
+      "end": 59.94,
+      "text": "After returning home he would panic or become angry even at small sounds"
+    },
+    {
+      "start": 59.94,
+      "end": 66.4,
+      "text": "The sound of fireworks, the slam of a car door"
+    },
+    {
+      "start": 66.4,
+      "end": 72.38,
+      "text": "These reminded him of the explosions of the battlefield"
+    },
+    {
+      "start": 74.42,
+      "end": 80.44,
+      "text": "Michael also could not sleep and suffered from nightmares"
+    },
+    {
+      "start": 81.4,
+      "end": 86.06,
+      "text": "His wife tried to support him"
+    },
+    {
+      "start": 87.4,
+      "end": 93.22,
+      "text": "But life with him as he grew aggressive was hard"
+    },
+    {
+      "start": 93.22,
+      "end": 106.28,
+      "text": "Michael then came to rely on drugs A veteran support organization reached out to him"
+    },
+    {
+      "start": 107.6,
+      "end": 114.8,
+      "text": "Counseling group therapy, dialogue with comrades"
+    },
+    {
+      "start": 114.8,
+      "end": 126.2,
+      "text": "Michael slowly recovered, now he does work to support other veterans"
+    },
+    {
+      "start": 127.8,
+      "end": 133.28,
+      "text": "War may break you, but it does not have to define you"
+    },
+    {
+      "start": 133.72,
+      "end": 140.5,
+      "text": "Politicians start wars, but it is the young who fight"
+    },
+    {
+      "start": 141.78,
+      "end": 150.1,
+      "text": "Care after return is the responsibility of the nation that sent them to war"
+    },
+    {
+      "start": 150.1,
+      "end": 155.62,
+      "text": "It is not only soldiers who suffer PTSD"
+    },
+    {
+      "start": 156.94,
+      "end": 162.98,
+      "text": "Victims of abuse, though struck by disaster"
+    },
+    {
+      "start": 162.98,
+      "end": 166.48,
+      "text": "Because wounds of the heart are invisible"
+    },
+    {
+      "start": 167.98,
+      "end": 170.24,
+      "text": "They remain long"
+    },
+    {
+      "start": 171.56,
+      "end": 176.16,
+      "text": "For society to turn its eyes"
+    },
+    {
+      "start": 176.98,
+      "end": 179.22,
+      "text": "To the wounds of the heart"
+    },
+    {
+      "start": 179.98,
+      "end": 183.68,
+      "text": "And build a system of support"
+    },
+    {
+      "start": 184.98,
+      "end": 190.06,
+      "text": "That is the condition of a kind society"
+    },
+    {
+      "start": 194.5,
+      "end": 194.98,
+      "text": "You"
+    }
+  ]
+}

@@ -1,0 +1,1062 @@
+{
+  "lesson": 33,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L33/planning/lesson.json",
+  "title_en": "Lesson 33  A Lively Dinner Table",
+  "title_ja": "食卓のにぎわい",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 14,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Today's dinner was as cheerful as a special day.",
+      "source_ja": "今日の夕ご飯は、特別な日みたいににぎやかでした。",
+      "display_ja": "今日の夕ご飯は、特別な日みたいににぎやかでした。",
+      "corrected_translation": false,
+      "mixed": "今日の夕ご飯は、特別な日みたいににぎやかでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "今日の夕ご飯は、特別な日みたいににぎやかでした。",
+          "parts": [
+            {
+              "text": "今日",
+              "ruby": "きょう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "夕ご飯",
+              "ruby": "ゆうごはん"
+            },
+            {
+              "text": "は、",
+              "ruby": ""
+            },
+            {
+              "text": "特別",
+              "ruby": "とくべつ"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "みたいににぎやかでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 2,
+      "english": "Since the breakfast hours, my mother was busy in the kitchen.",
+      "source_ja": "朝食の時間から、母は台所で忙しそうにしていました。",
+      "display_ja": "朝食の時間から、母は台所で忙しそうにしていました。",
+      "corrected_translation": false,
+      "mixed": "breakfast の時間から、母は台所で忙しそうにしていました。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "breakfast",
+          "ruby": "朝食"
+        },
+        {
+          "type": "ja",
+          "text": " の時間から、母は台所で忙しそうにしていました。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "時間",
+              "ruby": "じかん"
+            },
+            {
+              "text": "から、",
+              "ruby": ""
+            },
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "台所",
+              "ruby": "だいどころ"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "忙",
+              "ruby": "いそが"
+            },
+            {
+              "text": "しそうにしていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "breakfast",
+          "canonical_word": "breakfast",
+          "meaning": "朝食"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "breakfast",
+          "reading": "朝食",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "breakfast",
+          "canonical_meaning": "朝食"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "The scent of many dishes filled the house.",
+      "source_ja": "家じゅうに、いろんな料理のいい香りが広がっています。",
+      "display_ja": "家じゅうに、いろんな料理のいい香りが広がっています。",
+      "corrected_translation": false,
+      "mixed": "家じゅうに、いろんな料理のいい香りが広がっています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "家じゅうに、いろんな料理のいい香りが広がっています。",
+          "parts": [
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "じゅうに、いろんな",
+              "ruby": ""
+            },
+            {
+              "text": "料理",
+              "ruby": "りょうり"
+            },
+            {
+              "text": "のいい",
+              "ruby": ""
+            },
+            {
+              "text": "香",
+              "ruby": "かお"
+            },
+            {
+              "text": "りが",
+              "ruby": ""
+            },
+            {
+              "text": "広",
+              "ruby": "ひろ"
+            },
+            {
+              "text": "がっています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 4,
+      "english": "On the table, there was a big bowl of shining rice.",
+      "source_ja": "テーブルには、つやつやのご飯がたっぷり盛られた大きなお椀。",
+      "display_ja": "テーブルには、つやつやのご飯がたっぷり盛られた大きなお椀。",
+      "corrected_translation": false,
+      "mixed": "テーブルには、つやつやの rice がたっぷり盛られた大きなお椀がありました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "テーブルには、つやつやの ",
+          "parts": [
+            {
+              "text": "テーブルには、つやつやの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "rice",
+          "ruby": "ごはん"
+        },
+        {
+          "type": "ja",
+          "text": " がたっぷり盛られた大きなお椀がありました。",
+          "parts": [
+            {
+              "text": "がたっぷり",
+              "ruby": ""
+            },
+            {
+              "text": "盛",
+              "ruby": "も"
+            },
+            {
+              "text": "られた",
+              "ruby": ""
+            },
+            {
+              "text": "大",
+              "ruby": "おお"
+            },
+            {
+              "text": "きなお",
+              "ruby": ""
+            },
+            {
+              "text": "椀",
+              "ruby": "わん"
+            },
+            {
+              "text": "がありました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "rice",
+          "canonical_word": "rice",
+          "meaning": "ごはん"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "rice",
+          "reading": "ごはん",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "rice",
+          "canonical_meaning": "ごはん"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "Next to it, there was a dish of beef cooked in a sweet sauce, a favorite in our family.",
+      "source_ja": "その隣には、甘いタレで煮込んだ牛肉のお皿——我が家のお気に入りです。",
+      "display_ja": "その隣には、甘いタレで煮込んだ牛肉のお皿——我が家のお気に入りです。",
+      "corrected_translation": false,
+      "mixed": "その隣には、甘いタレで煮込んだ beef のお皿——我が家のお気に入りです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "その隣には、甘いタレで煮込んだ ",
+          "parts": [
+            {
+              "text": "その",
+              "ruby": ""
+            },
+            {
+              "text": "隣",
+              "ruby": "となり"
+            },
+            {
+              "text": "には、",
+              "ruby": ""
+            },
+            {
+              "text": "甘",
+              "ruby": "あま"
+            },
+            {
+              "text": "いタレで",
+              "ruby": ""
+            },
+            {
+              "text": "煮込",
+              "ruby": "にこ"
+            },
+            {
+              "text": "んだ",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "beef",
+          "ruby": "牛肉"
+        },
+        {
+          "type": "ja",
+          "text": " のお皿——我が家のお気に入りです。",
+          "parts": [
+            {
+              "text": "のお",
+              "ruby": ""
+            },
+            {
+              "text": "皿",
+              "ruby": "さら"
+            },
+            {
+              "text": "——",
+              "ruby": ""
+            },
+            {
+              "text": "我が家",
+              "ruby": "わがや"
+            },
+            {
+              "text": "のお",
+              "ruby": ""
+            },
+            {
+              "text": "気",
+              "ruby": "き"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "入",
+              "ruby": "い"
+            },
+            {
+              "text": "りです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "beef",
+          "canonical_word": "beef",
+          "meaning": "牛肉"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "beef",
+          "reading": "牛肉",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "beef",
+          "canonical_meaning": "牛肉"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "On another plate, there was freshly cooked chicken.",
+      "source_ja": "別のお皿には、焼きたてのチキン。",
+      "display_ja": "別のお皿には、焼きたてのチキン。",
+      "corrected_translation": false,
+      "mixed": "別のお皿には、焼きたての chicken がありました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "別のお皿には、焼きたての ",
+          "parts": [
+            {
+              "text": "別",
+              "ruby": "べつ"
+            },
+            {
+              "text": "のお",
+              "ruby": ""
+            },
+            {
+              "text": "皿",
+              "ruby": "さら"
+            },
+            {
+              "text": "には、",
+              "ruby": ""
+            },
+            {
+              "text": "焼",
+              "ruby": "や"
+            },
+            {
+              "text": "きたての",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "chicken",
+          "ruby": "とり肉"
+        },
+        {
+          "type": "ja",
+          "text": " がありました。",
+          "parts": [
+            {
+              "text": "がありました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "chicken",
+          "canonical_word": "chicken",
+          "meaning": "とり肉"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "chicken",
+          "reading": "とり肉",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "chicken",
+          "canonical_meaning": "とり肉"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "It was lightly sprinkled with salt, and the smell was so good.",
+      "source_ja": "軽く塩がふってあって、香りがたまりません。",
+      "display_ja": "軽く塩がふってあって、香りがたまりません。",
+      "corrected_translation": false,
+      "mixed": "軽く salt がふってあって、香りがたまりません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "軽く ",
+          "parts": [
+            {
+              "text": "軽",
+              "ruby": "かる"
+            },
+            {
+              "text": "く",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "salt",
+          "ruby": "塩"
+        },
+        {
+          "type": "ja",
+          "text": " がふってあって、香りがたまりません。",
+          "parts": [
+            {
+              "text": "がふってあって、",
+              "ruby": ""
+            },
+            {
+              "text": "香",
+              "ruby": "かお"
+            },
+            {
+              "text": "りがたまりません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "salt",
+          "canonical_word": "salt",
+          "meaning": "塩"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "salt",
+          "reading": "塩",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "salt",
+          "canonical_meaning": "塩"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "“I picked these from the garden this morning,” my mother said with a smile.",
+      "source_ja": "「今朝、庭で摘んできたのよ」と母が笑って言いました。",
+      "display_ja": "「今朝、庭で摘んできたのよ」と母が笑って言いました。",
+      "corrected_translation": false,
+      "mixed": "「今朝、庭で摘んできたのよ」と母が笑って言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「今朝、庭で摘んできたのよ」と母が笑って言いました。",
+          "parts": [
+            {
+              "text": "「",
+              "ruby": ""
+            },
+            {
+              "text": "今朝",
+              "ruby": "けさ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "庭",
+              "ruby": "にわ"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "摘",
+              "ruby": "つ"
+            },
+            {
+              "text": "んできたのよ」と",
+              "ruby": ""
+            },
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "笑",
+              "ruby": "わら"
+            },
+            {
+              "text": "って",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 9,
+      "english": "Beside the plates, there was a dish of colorful vegetables.",
+      "source_ja": "お皿のそばには、色とりどりの野菜も。",
+      "display_ja": "お皿のそばには、色とりどりの野菜も。",
+      "corrected_translation": false,
+      "mixed": "お皿のそばには、色とりどりの vegetables も。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "お皿のそばには、色とりどりの ",
+          "parts": [
+            {
+              "text": "お",
+              "ruby": ""
+            },
+            {
+              "text": "皿",
+              "ruby": "さら"
+            },
+            {
+              "text": "のそばには、",
+              "ruby": ""
+            },
+            {
+              "text": "色",
+              "ruby": "いろ"
+            },
+            {
+              "text": "とりどりの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "vegetables",
+          "ruby": "野菜"
+        },
+        {
+          "type": "ja",
+          "text": " も。",
+          "parts": [
+            {
+              "text": "も。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "vegetables",
+          "canonical_word": "vegetable",
+          "meaning": "野菜"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "vegetables",
+          "reading": "野菜",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "vegetable",
+          "canonical_meaning": "野菜"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "Both the meat and the vegetables were fresh today — a special feast.",
+      "source_ja": "今日はお肉も野菜も、どちらも新鮮で特別なごちそうでした。",
+      "display_ja": "今日はお肉も野菜も、どちらも新鮮で特別なごちそうでした。",
+      "corrected_translation": false,
+      "mixed": "今日は meat も vegetables も新鮮で、特別なごちそうでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "今日は ",
+          "parts": [
+            {
+              "text": "今日",
+              "ruby": "きょう"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "meat",
+          "ruby": "肉"
+        },
+        {
+          "type": "ja",
+          "text": " も ",
+          "parts": [
+            {
+              "text": "も",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "vegetables",
+          "ruby": "野菜"
+        },
+        {
+          "type": "ja",
+          "text": " も新鮮で、特別なごちそうでした。",
+          "parts": [
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "新鮮",
+              "ruby": "しんせん"
+            },
+            {
+              "text": "で、",
+              "ruby": ""
+            },
+            {
+              "text": "特別",
+              "ruby": "とくべつ"
+            },
+            {
+              "text": "なごちそうでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "meat",
+          "canonical_word": "meat",
+          "meaning": "肉"
+        },
+        {
+          "english": "vegetables",
+          "canonical_word": "vegetable",
+          "meaning": "野菜"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "meat",
+          "reading": "肉",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "meat",
+          "canonical_meaning": "肉"
+        },
+        {
+          "english": "vegetables",
+          "reading": "野菜",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "vegetable",
+          "canonical_meaning": "野菜"
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "english": "For dessert, there were sweet red grapes and apples cut into small pieces.",
+      "source_ja": "デザートには、甘い赤いぶどうと、小さく切ったりんご。",
+      "display_ja": "デザートには、甘い赤いぶどうと、小さく切ったりんご。",
+      "corrected_translation": false,
+      "mixed": "デザートには、甘い赤い grapes と、小さく切った apples。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "デザートには、甘い赤い ",
+          "parts": [
+            {
+              "text": "デザートには、",
+              "ruby": ""
+            },
+            {
+              "text": "甘",
+              "ruby": "あま"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "赤",
+              "ruby": "あか"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "grapes",
+          "ruby": "ぶどう"
+        },
+        {
+          "type": "ja",
+          "text": " と、小さく切った ",
+          "parts": [
+            {
+              "text": "と、",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さく",
+              "ruby": ""
+            },
+            {
+              "text": "切",
+              "ruby": "き"
+            },
+            {
+              "text": "った",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "apples",
+          "ruby": "りんご"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "grapes",
+          "canonical_word": "grape",
+          "meaning": "ぶどう"
+        },
+        {
+          "english": "apples",
+          "canonical_word": "apple",
+          "meaning": "りんご"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "grapes",
+          "reading": "ぶどう",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "grape",
+          "canonical_meaning": "ぶどう"
+        },
+        {
+          "english": "apples",
+          "reading": "りんご",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "apple",
+          "canonical_meaning": "りんご"
+        }
+      ]
+    },
+    {
+      "line": 12,
+      "english": "We enjoyed them slowly with cold tea.",
+      "source_ja": "冷たいお茶と一緒に、ゆっくり味わいました。",
+      "display_ja": "冷たいお茶と一緒に、ゆっくり味わいました。",
+      "corrected_translation": false,
+      "mixed": "冷たい tea と一緒に、ゆっくり味わいました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "冷たい ",
+          "parts": [
+            {
+              "text": "冷",
+              "ruby": "つめ"
+            },
+            {
+              "text": "たい",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "tea",
+          "ruby": "お茶"
+        },
+        {
+          "type": "ja",
+          "text": " と一緒に、ゆっくり味わいました。",
+          "parts": [
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "一緒",
+              "ruby": "いっしょ"
+            },
+            {
+              "text": "に、ゆっくり",
+              "ruby": ""
+            },
+            {
+              "text": "味",
+              "ruby": "あじ"
+            },
+            {
+              "text": "わいました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "tea",
+          "canonical_word": "tea",
+          "meaning": "お茶"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "tea",
+          "reading": "お茶",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "tea",
+          "canonical_meaning": "お茶"
+        }
+      ]
+    },
+    {
+      "line": 13,
+      "english": "Sitting around the dinner table — perhaps this is the happiest moment in every day.",
+      "source_ja": "食卓をみんなで囲む時間——これが、毎日のなかでいちばん幸せな瞬間かもしれません。",
+      "display_ja": "食卓をみんなで囲む時間——これが、毎日のなかでいちばん幸せな瞬間かもしれません。",
+      "corrected_translation": false,
+      "mixed": "食卓をみんなで囲む時間——これが、毎日のなかでいちばん幸せな瞬間かもしれません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "食卓をみんなで囲む時間——これが、毎日のなかでいちばん幸せな瞬間かもしれません。",
+          "parts": [
+            {
+              "text": "食卓",
+              "ruby": "しょくたく"
+            },
+            {
+              "text": "をみんなで",
+              "ruby": ""
+            },
+            {
+              "text": "囲",
+              "ruby": "かこ"
+            },
+            {
+              "text": "む",
+              "ruby": ""
+            },
+            {
+              "text": "時間",
+              "ruby": "じかん"
+            },
+            {
+              "text": "——これが、",
+              "ruby": ""
+            },
+            {
+              "text": "毎日",
+              "ruby": "まいにち"
+            },
+            {
+              "text": "のなかでいちばん",
+              "ruby": ""
+            },
+            {
+              "text": "幸",
+              "ruby": "しあわ"
+            },
+            {
+              "text": "せな",
+              "ruby": ""
+            },
+            {
+              "text": "瞬間",
+              "ruby": "しゅんかん"
+            },
+            {
+              "text": "かもしれません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 14,
+      "english": "My mother's special soup with egg was also delicious tonight.",
+      "source_ja": "今夜は、母特製の卵スープもとてもおいしかったです。",
+      "display_ja": "今夜は、母特製の卵スープもとてもおいしかったです。",
+      "corrected_translation": false,
+      "mixed": "今夜は、母特製の egg スープもとてもおいしかったです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "今夜は、母特製の ",
+          "parts": [
+            {
+              "text": "今夜",
+              "ruby": "こんや"
+            },
+            {
+              "text": "は、",
+              "ruby": ""
+            },
+            {
+              "text": "母",
+              "ruby": "ぼ"
+            },
+            {
+              "text": "特製",
+              "ruby": "とくせい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "egg",
+          "ruby": "卵"
+        },
+        {
+          "type": "ja",
+          "text": " スープもとてもおいしかったです。",
+          "parts": [
+            {
+              "text": "スープもとてもおいしかったです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "egg",
+          "canonical_word": "egg",
+          "meaning": "卵"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "egg",
+          "reading": "卵",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "egg",
+          "canonical_meaning": "卵"
+        }
+      ]
+    }
+  ]
+}

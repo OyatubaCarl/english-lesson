@@ -1,0 +1,143 @@
+{
+  "project_root": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成",
+  "slug": "l2_a_day_at_the_sea",
+  "title_en": "Lesson 2  A Day at the Sea",
+  "title_ja": "海での一日",
+  "chart": "taco_beat/charts/m2.js",
+  "audio": "中学生編/audio/L2.mp3",
+  "duration": 55.797551,
+  "lines": [
+    {
+      "start_index": 1,
+      "end_index": 4,
+      "en_words": ["It", "was", "last", "Sunday."],
+      "ja": "先週の日曜日のことでした。"
+    },
+    {
+      "start_index": 5,
+      "end_index": 12,
+      "en_words": ["My", "family", "and", "I", "went", "to", "the", "sea."],
+      "ja": "家族とわたしは海へ行きました。"
+    },
+    {
+      "start_index": 13,
+      "end_index": 18,
+      "en_words": ["The", "sea", "was", "blue", "and", "beautiful."],
+      "ja": "海は青くてきれいでした。"
+    },
+    {
+      "start_index": 19,
+      "end_index": 30,
+      "en_words": ["The", "sun", "was", "bright,", "and", "there", "were", "no", "clouds", "in", "the", "sky."],
+      "break_after": [3],
+      "ja": "太陽は明るく、空には雲がありませんでした。"
+    },
+    {
+      "start_index": 32,
+      "end_index": 38,
+      "en_words": ["My", "brother", "was", "very", "good", "at", "swimming."],
+      "ja": "兄は泳ぐのがとても上手でした。"
+    },
+    {
+      "start_index": 39,
+      "end_index": 50,
+      "en_words": ["He", "went", "into", "the", "water", "many", "times,", "and", "he", "was", "very", "happy."],
+      "break_after": [6],
+      "ja": "何度も水に入り、とてもうれしそうでした。"
+    },
+    {
+      "start_index": 52,
+      "end_index": 59,
+      "en_words": ["My", "sister", "and", "I", "were", "on", "the", "beach."],
+      "ja": "妹とわたしは浜辺にいました。"
+    },
+    {
+      "start_index": 60,
+      "end_index": 64,
+      "en_words": ["We", "were", "together", "all", "day."],
+      "ja": "わたしたちは一日中いっしょでした。"
+    },
+    {
+      "start_index": 65,
+      "end_index": 75,
+      "en_words": ["For", "lunch,", "we", "had", "bread", "and", "fish", "that", "my", "mother", "made."],
+      "break_after": [6],
+      "ja": "昼食には、母が作ったパンと魚を食べました。"
+    },
+    {
+      "start_index": 76,
+      "end_index": 78,
+      "en_words": ["They", "were", "delicious."],
+      "ja": "とてもおいしかったです。"
+    },
+    {
+      "start_index": 79,
+      "end_index": 92,
+      "en_words": ["In", "the", "evening,", "we", "were", "a", "little", "tired,", "but", "our", "hearts", "were", "very", "full."],
+      "break_after": [7],
+      "ja": "夕方には少し疲れていましたが、心はとても満たされていました。"
+    }
+  ],
+  "shots": [
+    {
+      "image": "scenes/01_arrival.png",
+      "start": 0.0,
+      "end": 7.9,
+      "start_center": [0.23, 0.48],
+      "end_center": [0.49, 0.49],
+      "start_zoom": 1.29,
+      "end_zoom": 1.13,
+      "intent": "家族の表情から、海へ向かう動線を見せる"
+    },
+    {
+      "image": "scenes/01_arrival.png",
+      "start": 7.9,
+      "end": 19.28,
+      "start_center": [0.77, 0.42],
+      "end_center": [0.60, 0.46],
+      "start_zoom": 1.34,
+      "end_zoom": 1.03,
+      "intent": "青い海と空から引き、家族が着いた場所の広さを示す"
+    },
+    {
+      "image": "scenes/02_swimming_kenta_v2.png",
+      "start": 19.28,
+      "end": 27.72,
+      "start_center": [0.76, 0.51],
+      "end_center": [0.71, 0.50],
+      "start_zoom": 1.20,
+      "end_zoom": 1.34,
+      "intent": "兄ケンタの泳ぎと表情へ寄る"
+    },
+    {
+      "image": "scenes/02_swimming_kenta_v2.png",
+      "start": 27.72,
+      "end": 38.71,
+      "start_center": [0.70, 0.50],
+      "end_center": [0.25, 0.48],
+      "start_zoom": 1.25,
+      "end_zoom": 1.18,
+      "intent": "うれしそうな兄から、浜辺のミオとサキへ視線を渡す"
+    },
+    {
+      "image": "scenes/03_picnic_sunset.png",
+      "start": 38.71,
+      "end": 45.31,
+      "start_center": [0.20, 0.61],
+      "end_center": [0.38, 0.53],
+      "start_zoom": 1.35,
+      "end_zoom": 1.20,
+      "intent": "パンと魚から、料理した母と子どもたちへ移る"
+    },
+    {
+      "image": "scenes/03_picnic_sunset.png",
+      "start": 45.31,
+      "end": 55.797551,
+      "start_center": [0.44, 0.50],
+      "end_center": [0.62, 0.45],
+      "start_zoom": 1.17,
+      "end_zoom": 1.01,
+      "intent": "家族の疲れた満足感から夕日までを一枚に収める"
+    }
+  ]
+}

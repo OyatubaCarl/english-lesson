@@ -1,0 +1,272 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H116.md",
+  "audio": "高校生編/suno_ready/generated/audio/H116/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 182.12,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0093,
+  "expected_words": 216,
+  "transcribed_words": 218,
+  "matched_words": 213,
+  "coverage": 0.9861,
+  "precision": 0.9771,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 215,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 88,
+      "length": 1,
+      "words": [
+        "in"
+      ]
+    },
+    {
+      "start": 131,
+      "length": 1,
+      "words": [
+        "tilling"
+      ]
+    },
+    {
+      "start": 139,
+      "length": 1,
+      "words": [
+        "off"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 88,
+      "actual_start": 90,
+      "expected": [
+        "in"
+      ],
+      "actual": [
+        "and"
+      ],
+      "actual_confidence": 0.6069,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 131,
+      "actual_start": 133,
+      "expected": [
+        "tilling"
+      ],
+      "actual": [
+        "telling"
+      ],
+      "actual_confidence": 0.475,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 139,
+      "actual_start": 141,
+      "expected": [
+        "off"
+      ],
+      "actual": [
+        "or"
+      ],
+      "actual_confidence": 0.1014,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 60,
+      "actual_start": 60,
+      "expected": [],
+      "actual": [
+        "he",
+        "who"
+      ],
+      "actual_confidence": 0.0501
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "My grandfather was a man who hardly spoke He seldom talked about himself And rarely showed his emotions openly When I was young, that confused me What was he thinking? Did he dislike me? But as the years passed I came to understand him His silence was not coldness But a quiet love The generation that lived through the war He who tends to avoid talking about it Remembering itself causes pain They touch the past only briefly After my grandfather passed away I found notebooks he had been writing And them his detailed memories of the battlefield And his private feelings about his family Were recorded in small handwriting He had truly loved us It was simply difficult for him to put it into words For him, love was shown through action Telling the field with me on his day Or secretly sending a small gift On his grandchild's birthday Inside my grandfather's silence I grasped true kindness His silence did not mean that words were useless Rather, there was a love that went beyond words On my late grandfather's birthday I go to his grave to offer flowers I briefly join my hands in prayer And quietly speak to him for a short time My grandfather, even now, in an invisible form, lives within my heart.",
+  "segments": [
+    {
+      "start": 10.94,
+      "end": 16.42,
+      "text": "My grandfather was a man who hardly spoke"
+    },
+    {
+      "start": 18.0,
+      "end": 20.98,
+      "text": "He seldom talked about himself"
+    },
+    {
+      "start": 20.98,
+      "end": 25.06,
+      "text": "And rarely showed his emotions openly"
+    },
+    {
+      "start": 26.04,
+      "end": 29.3,
+      "text": "When I was young, that confused me"
+    },
+    {
+      "start": 30.84,
+      "end": 32.54,
+      "text": "What was he thinking?"
+    },
+    {
+      "start": 34.56,
+      "end": 36.16,
+      "text": "Did he dislike me?"
+    },
+    {
+      "start": 38.06,
+      "end": 40.1,
+      "text": "But as the years passed"
+    },
+    {
+      "start": 40.1,
+      "end": 43.32,
+      "text": "I came to understand him"
+    },
+    {
+      "start": 43.32,
+      "end": 47.12,
+      "text": "His silence was not coldness"
+    },
+    {
+      "start": 47.12,
+      "end": 49.24,
+      "text": "But a quiet love"
+    },
+    {
+      "start": 50.38,
+      "end": 54.24,
+      "text": "The generation that lived through the war"
+    },
+    {
+      "start": 54.24,
+      "end": 57.5,
+      "text": "He who tends to avoid talking about it"
+    },
+    {
+      "start": 58.24,
+      "end": 61.14,
+      "text": "Remembering itself causes pain"
+    },
+    {
+      "start": 62.24,
+      "end": 64.94,
+      "text": "They touch the past only briefly"
+    },
+    {
+      "start": 66.9,
+      "end": 70.06,
+      "text": "After my grandfather passed away"
+    },
+    {
+      "start": 70.06,
+      "end": 73.28,
+      "text": "I found notebooks he had been writing"
+    },
+    {
+      "start": 74.24,
+      "end": 78.18,
+      "text": "And them his detailed memories of the battlefield"
+    },
+    {
+      "start": 78.18,
+      "end": 83.46,
+      "text": "And his private feelings about his family"
+    },
+    {
+      "start": 83.46,
+      "end": 86.86,
+      "text": "Were recorded in small handwriting"
+    },
+    {
+      "start": 86.86,
+      "end": 92.96,
+      "text": "He had truly loved us"
+    },
+    {
+      "start": 92.96,
+      "end": 99.94,
+      "text": "It was simply difficult for him to put it into words"
+    },
+    {
+      "start": 99.94,
+      "end": 106.3,
+      "text": "For him, love was shown through action"
+    },
+    {
+      "start": 106.3,
+      "end": 111.32,
+      "text": "Telling the field with me on his day"
+    },
+    {
+      "start": 111.32,
+      "end": 116.12,
+      "text": "Or secretly sending a small gift"
+    },
+    {
+      "start": 116.12,
+      "end": 119.42,
+      "text": "On his grandchild's birthday"
+    },
+    {
+      "start": 120.3,
+      "end": 124.1,
+      "text": "Inside my grandfather's silence"
+    },
+    {
+      "start": 124.1,
+      "end": 127.68,
+      "text": "I grasped true kindness"
+    },
+    {
+      "start": 128.3,
+      "end": 132.56,
+      "text": "His silence did not mean that words were useless"
+    },
+    {
+      "start": 133.92,
+      "end": 138.32,
+      "text": "Rather, there was a love that went beyond words"
+    },
+    {
+      "start": 138.32,
+      "end": 141.08,
+      "text": "On my late grandfather's birthday"
+    },
+    {
+      "start": 141.08,
+      "end": 147.02,
+      "text": "I go to his grave to offer flowers"
+    },
+    {
+      "start": 148.38,
+      "end": 152.34,
+      "text": "I briefly join my hands in prayer"
+    },
+    {
+      "start": 152.34,
+      "end": 158.96,
+      "text": "And quietly speak to him for a short time"
+    },
+    {
+      "start": 161.36,
+      "end": 175.58,
+      "text": "My grandfather, even now, in an invisible form, lives within my heart."
+    }
+  ]
+}

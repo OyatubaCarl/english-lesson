@@ -1,0 +1,115 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H010.md",
+  "audio": "高校生編/suno_ready/generated/audio/H010/candidate1-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 83.52,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.014,
+  "expected_words": 143,
+  "transcribed_words": 145,
+  "matched_words": 143,
+  "coverage": 1.0,
+  "precision": 0.9862,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 142,
+  "longest_missing_run": 0,
+  "largest_missing_runs": [],
+  "replacement_count": 0,
+  "replacement_spans": [],
+  "insertion_spans": [
+    {
+      "expected_start": 143,
+      "actual_start": 143,
+      "expected": [],
+      "actual": [
+        "thank",
+        "you"
+      ],
+      "actual_confidence": 0.6104
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "This time, tomorrow, I will be sitting in a meeting room at ten I will be attending a lecture, and in the afternoon I will be finishing the new project file I have waited a long time for this appointment For more than a month, I have been making steady progress On the same day, my colleague will also be engaged in another task After lunch, I will probably move on to the afternoon meeting By evening, I will nearly complete the report Sometimes I wonder where I will be a year from now Three years? Life will continue, and I too will be living through many more days Placing myself within a schedule gives the day a gentle momentum This time, tomorrow, I will most likely be sitting at my desk But beyond that single moment, another tomorrow is already waiting quietly Thank you.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 6.0,
+      "text": "This time, tomorrow, I will be sitting in a meeting room at ten"
+    },
+    {
+      "start": 6.0,
+      "end": 9.36,
+      "text": "I will be attending a lecture, and in the afternoon"
+    },
+    {
+      "start": 9.36,
+      "end": 12.98,
+      "text": "I will be finishing the new project file"
+    },
+    {
+      "start": 12.98,
+      "end": 19.24,
+      "text": "I have waited a long time for this appointment"
+    },
+    {
+      "start": 19.24,
+      "end": 23.9,
+      "text": "For more than a month, I have been making steady progress"
+    },
+    {
+      "start": 23.9,
+      "end": 29.08,
+      "text": "On the same day, my colleague will also be engaged in another task"
+    },
+    {
+      "start": 29.08,
+      "end": 33.48,
+      "text": "After lunch, I will probably move on to the afternoon meeting"
+    },
+    {
+      "start": 33.48,
+      "end": 37.08,
+      "text": "By evening, I will nearly complete the report"
+    },
+    {
+      "start": 38.54,
+      "end": 43.8,
+      "text": "Sometimes I wonder where I will be a year from now"
+    },
+    {
+      "start": 44.84,
+      "end": 46.22,
+      "text": "Three years?"
+    },
+    {
+      "start": 46.72,
+      "end": 52.72,
+      "text": "Life will continue, and I too will be living through many more days"
+    },
+    {
+      "start": 52.72,
+      "end": 60.24,
+      "text": "Placing myself within a schedule gives the day a gentle momentum"
+    },
+    {
+      "start": 60.24,
+      "end": 67.38,
+      "text": "This time, tomorrow, I will most likely be sitting at my desk"
+    },
+    {
+      "start": 67.38,
+      "end": 76.8,
+      "text": "But beyond that single moment, another tomorrow is already waiting quietly"
+    },
+    {
+      "start": 83.44,
+      "end": 83.52,
+      "text": "Thank you."
+    }
+  ]
+}

@@ -1,0 +1,1701 @@
+{
+  "lesson": "H123",
+  "title_ja": "ゴッホの沈黙",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 22,
+  "canonical_target_lines": 12,
+  "mixed_lines": 9,
+  "japanese_only_lines": 13,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 10.6,
+      "end": 16.82,
+      "english": "The artist Van Gogh could barely sell any of his paintings during his lifetime.",
+      "japanese": "芸術家ファン・ゴッホは、生涯に自分の絵をほとんど売ることができませんでした。",
+      "mixed": "芸術家ファン・ゴッホは、生涯に自分の絵をほとんど売ることができませんでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "芸術家ファン・ゴッホは、生涯に自分の絵をほとんど売ることができませんでした。",
+          "parts": [
+            {
+              "text": "芸術",
+              "ruby": "げいじゅつ"
+            },
+            {
+              "text": "家",
+              "ruby": "か"
+            },
+            {
+              "text": "ファン・ゴッホは、",
+              "ruby": ""
+            },
+            {
+              "text": "生涯",
+              "ruby": "しょうがい"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "自分",
+              "ruby": "じぶん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "絵",
+              "ruby": "え"
+            },
+            {
+              "text": "をほとんど",
+              "ruby": ""
+            },
+            {
+              "text": "売",
+              "ruby": "う"
+            },
+            {
+              "text": "ることができませんでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 2,
+      "start": 16.82,
+      "end": 23.8,
+      "english": "He was rejected and criticized by ordinary people and experienced severe mental distress.",
+      "japanese": "彼は一般の人々から拒絶され、批判され、深刻な精神的苦痛を経験しました。",
+      "mixed": "彼は一般の人々から rejected、 criticized、深刻な精神的苦痛を経験しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼は一般の人々から ",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "一般",
+              "ruby": "いっぱん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "人",
+              "ruby": "ひと"
+            },
+            {
+              "text": "々",
+              "ruby": "々"
+            },
+            {
+              "text": "から",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "rejected",
+          "ruby": "拒絶され"
+        },
+        {
+          "type": "ja",
+          "text": "、 ",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "criticized",
+          "ruby": "批判され"
+        },
+        {
+          "type": "ja",
+          "text": "、深刻な精神的苦痛を経験しました。",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "深刻",
+              "ruby": "しんこく"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "精神",
+              "ruby": "せいしん"
+            },
+            {
+              "text": "的",
+              "ruby": "てき"
+            },
+            {
+              "text": "苦痛",
+              "ruby": "くつう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "経験",
+              "ruby": "けいけん"
+            },
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "rejected",
+          "canonical_word": "reject",
+          "meaning": "拒絶する"
+        },
+        {
+          "english": "criticized",
+          "canonical_word": "criticize",
+          "meaning": "批判する"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "rejected",
+          "reading": "拒絶され",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "reject",
+          "canonical_meaning": "拒絶する"
+        },
+        {
+          "english": "criticized",
+          "reading": "批判され",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "criticize",
+          "canonical_meaning": "批判する"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 3,
+      "start": 25.72,
+      "end": 33.12,
+      "english": "Just before he took his own life at thirty-seven, he had sold only one painting.",
+      "japanese": "37歳で自ら命を絶つ直前、彼はたった1枚の絵しか売れなかった。",
+      "mixed": "37歳で自ら命を絶つ直前、彼はたった1枚の絵しか売れなかった。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "37歳で自ら命を絶つ直前、彼はたった1枚の絵しか売れなかった。",
+          "parts": [
+            {
+              "text": "37",
+              "ruby": ""
+            },
+            {
+              "text": "歳",
+              "ruby": "さい"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "自",
+              "ruby": "みずか"
+            },
+            {
+              "text": "ら",
+              "ruby": ""
+            },
+            {
+              "text": "命",
+              "ruby": "いのち"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "絶",
+              "ruby": "た"
+            },
+            {
+              "text": "つ",
+              "ruby": ""
+            },
+            {
+              "text": "直前",
+              "ruby": "ちょくぜん"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "はたった1",
+              "ruby": ""
+            },
+            {
+              "text": "枚",
+              "ruby": "まい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "絵",
+              "ruby": "え"
+            },
+            {
+              "text": "しか",
+              "ruby": ""
+            },
+            {
+              "text": "売",
+              "ruby": "う"
+            },
+            {
+              "text": "れなかった。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 4,
+      "start": 36.44,
+      "end": 42.02,
+      "english": "Without the support of his brother Theo, he could not even have bought paint.",
+      "japanese": "弟のテオのサポートがなければ、絵の具を買うことさえできなかったでしょう。",
+      "mixed": "弟のテオのサポートがなければ、絵の具を買うことさえできなかったでしょう。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "弟のテオのサポートがなければ、絵の具を買うことさえできなかったでしょう。",
+          "parts": [
+            {
+              "text": "弟",
+              "ruby": "おとうと"
+            },
+            {
+              "text": "のテオのサポートがなければ、",
+              "ruby": ""
+            },
+            {
+              "text": "絵の具",
+              "ruby": "えのぐ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "買",
+              "ruby": "か"
+            },
+            {
+              "text": "うことさえできなかったでしょう。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "support",
+          "canonical_word": "support",
+          "meaning": "支える"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 5,
+      "start": 42.02,
+      "end": 48.7,
+      "english": "Despite all this, Van Gogh created about 2,100 works in ten years.",
+      "japanese": "こうした状況にもかかわらず、ゴッホは10年間で約2,100点の作品を制作しました。",
+      "mixed": "こうした状況にもかかわらず、ゴッホは10年間で約2,100点の作品を制作しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "こうした状況にもかかわらず、ゴッホは10年間で約2,100点の作品を制作しました。",
+          "parts": [
+            {
+              "text": "こうした",
+              "ruby": ""
+            },
+            {
+              "text": "状況",
+              "ruby": "じょうきょう"
+            },
+            {
+              "text": "にもかかわらず、ゴッホは10",
+              "ruby": ""
+            },
+            {
+              "text": "年間",
+              "ruby": "ねんかん"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "約",
+              "ruby": "やく"
+            },
+            {
+              "text": "2,100",
+              "ruby": ""
+            },
+            {
+              "text": "点",
+              "ruby": "てん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "作品",
+              "ruby": "さくひん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "制作",
+              "ruby": "せいさく"
+            },
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "created",
+          "canonical_word": "create",
+          "meaning": "創造する"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 6,
+      "start": 48.7,
+      "end": 52.98,
+      "english": "Paintings and drawings, an enormous number together.",
+      "japanese": "絵画や図面、合わせて膨大な数。",
+      "mixed": "絵画や図面、合わせて膨大な数。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "絵画や図面、合わせて膨大な数。",
+          "parts": [
+            {
+              "text": "絵画",
+              "ruby": "かいが"
+            },
+            {
+              "text": "や",
+              "ruby": ""
+            },
+            {
+              "text": "図面",
+              "ruby": "ずめん"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "合",
+              "ruby": "あ"
+            },
+            {
+              "text": "わせて",
+              "ruby": ""
+            },
+            {
+              "text": "膨大",
+              "ruby": "ぼうだい"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "数",
+              "ruby": "かず"
+            },
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 7,
+      "start": 52.98,
+      "end": 58.22,
+      "english": "His dedication was not in pursuit of success.",
+      "japanese": "彼の献身は成功の追求ではありませんでした。",
+      "mixed": "彼の dedication は成功の追求ではありませんでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼の ",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "dedication",
+          "ruby": "献身"
+        },
+        {
+          "type": "ja",
+          "text": " は成功の追求ではありませんでした。",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "成功",
+              "ruby": "せいこう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "追求",
+              "ruby": "ついきゅう"
+            },
+            {
+              "text": "ではありませんでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "dedication",
+          "canonical_word": "dedication",
+          "meaning": "献身"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "dedication",
+          "reading": "献身",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "dedication",
+          "canonical_meaning": "献身"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 8,
+      "start": 59.28,
+      "end": 65.12,
+      "english": "Decades after his death, his paintings began to be reevaluated.",
+      "japanese": "彼の死後数十年が経ち、彼の絵画は再評価され始めました。",
+      "mixed": "彼の死後数十年が経ち、彼の絵画は再評価され始めました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼の死後数十年が経ち、彼の絵画は再評価され始めました。",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "死後",
+              "ruby": "しご"
+            },
+            {
+              "text": "数十",
+              "ruby": "すうじゅう"
+            },
+            {
+              "text": "年",
+              "ruby": "ねん"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "経",
+              "ruby": "た"
+            },
+            {
+              "text": "ち、",
+              "ruby": ""
+            },
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "絵画",
+              "ruby": "かいが"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "再",
+              "ruby": "さい"
+            },
+            {
+              "text": "評価",
+              "ruby": "ひょうか"
+            },
+            {
+              "text": "され",
+              "ruby": ""
+            },
+            {
+              "text": "始",
+              "ruby": "はじ"
+            },
+            {
+              "text": "めました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 9,
+      "start": 65.44,
+      "end": 73.92,
+      "english": "Today, Sunflowers and The Starry Night are counted among the most popular paintings in the world.",
+      "japanese": "今日、ひまわりと星月夜は世界で最も人気のある絵画の一つに数えられています。",
+      "mixed": "今日、ひまわりと星月夜は世界で最も popular 絵画の一つに数えられています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "今日、ひまわりと星月夜は世界で最も ",
+          "parts": [
+            {
+              "text": "今日",
+              "ruby": "きょう"
+            },
+            {
+              "text": "、ひまわりと",
+              "ruby": ""
+            },
+            {
+              "text": "星",
+              "ruby": "ほし"
+            },
+            {
+              "text": "月夜",
+              "ruby": "つきよ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "世界",
+              "ruby": "せかい"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "最",
+              "ruby": "もっと"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "popular",
+          "ruby": "人気のある"
+        },
+        {
+          "type": "ja",
+          "text": " 絵画の一つに数えられています。",
+          "parts": [
+            {
+              "text": "絵画",
+              "ruby": "かいが"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "ひと"
+            },
+            {
+              "text": "つに",
+              "ruby": ""
+            },
+            {
+              "text": "数",
+              "ruby": "かぞ"
+            },
+            {
+              "text": "えられています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "popular",
+          "canonical_word": "popular",
+          "meaning": "人気のある"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "popular",
+          "reading": "人気のある",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "popular",
+          "canonical_meaning": "人気のある"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 10,
+      "start": 73.92,
+      "end": 78.36,
+      "english": "They are traded for billions of yen each.",
+      "japanese": "それぞれ数十億円で取引されている。",
+      "mixed": "それぞれ数十億円で取引されている。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "それぞれ数十億円で取引されている。",
+          "parts": [
+            {
+              "text": "それぞれ",
+              "ruby": ""
+            },
+            {
+              "text": "数十",
+              "ruby": "すうじゅう"
+            },
+            {
+              "text": "億",
+              "ruby": "おく"
+            },
+            {
+              "text": "円",
+              "ruby": "えん"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "取引",
+              "ruby": "とりひき"
+            },
+            {
+              "text": "されている。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 11,
+      "start": 78.36,
+      "end": 85.88,
+      "english": "While Van Gogh was alive, few people recognized his potential.",
+      "japanese": "ゴッホが生きている間、彼の可能性を認識する人はほとんどいませんでした。",
+      "mixed": "ゴッホが生きている間、彼の可能性を認識する人はほとんどいませんでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ゴッホが生きている間、彼の可能性を認識する人はほとんどいませんでした。",
+          "parts": [
+            {
+              "text": "ゴッホが",
+              "ruby": ""
+            },
+            {
+              "text": "生",
+              "ruby": "い"
+            },
+            {
+              "text": "きている",
+              "ruby": ""
+            },
+            {
+              "text": "間",
+              "ruby": "あいだ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "可能",
+              "ruby": "かのう"
+            },
+            {
+              "text": "性",
+              "ruby": "せい"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "認識",
+              "ruby": "にんしき"
+            },
+            {
+              "text": "する",
+              "ruby": ""
+            },
+            {
+              "text": "人",
+              "ruby": "ひと"
+            },
+            {
+              "text": "はほとんどいませんでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "potential",
+          "canonical_word": "potential",
+          "meaning": "潜在力"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 12,
+      "start": 89.38,
+      "end": 92.46,
+      "english": "His brother Theo was one of the few exceptions.",
+      "japanese": "彼の弟のテオは数少ない例外の一人でした。",
+      "mixed": "彼の弟のテオは数少ない exceptions の一人でした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼の弟のテオは数少ない ",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "弟",
+              "ruby": "おとうと"
+            },
+            {
+              "text": "のテオは",
+              "ruby": ""
+            },
+            {
+              "text": "数",
+              "ruby": "すう"
+            },
+            {
+              "text": "少",
+              "ruby": "すく"
+            },
+            {
+              "text": "ない",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "exceptions",
+          "ruby": "例外"
+        },
+        {
+          "type": "ja",
+          "text": " の一人でした。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "一人",
+              "ruby": "ひとり"
+            },
+            {
+              "text": "でした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "exceptions",
+          "canonical_word": "exception",
+          "meaning": "例外"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "exceptions",
+          "reading": "例外",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "exception",
+          "canonical_meaning": "例外"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 13,
+      "start": 92.46,
+      "end": 99.9,
+      "english": "Theo believed in his brother's talent and, at considerable sacrifice, kept supporting him.",
+      "japanese": "テオは兄の才能を信じ、多大な犠牲を払いながらも兄を支え続けた。",
+      "mixed": "テオは兄の才能を信じ、多大な犠牲を払いながらも兄を supporting 続けた。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "テオは兄の才能を信じ、多大な犠牲を払いながらも兄を ",
+          "parts": [
+            {
+              "text": "テオは",
+              "ruby": ""
+            },
+            {
+              "text": "兄",
+              "ruby": "あに"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "才能",
+              "ruby": "さいのう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "信",
+              "ruby": "しん"
+            },
+            {
+              "text": "じ、",
+              "ruby": ""
+            },
+            {
+              "text": "多大",
+              "ruby": "ただい"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "犠牲",
+              "ruby": "ぎせい"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "払",
+              "ruby": "はら"
+            },
+            {
+              "text": "いながらも",
+              "ruby": ""
+            },
+            {
+              "text": "兄",
+              "ruby": "あに"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "supporting",
+          "ruby": "支え"
+        },
+        {
+          "type": "ja",
+          "text": " 続けた。",
+          "parts": [
+            {
+              "text": "続",
+              "ruby": "つづ"
+            },
+            {
+              "text": "けた。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "considerable",
+          "canonical_word": "considerable",
+          "meaning": "かなりの"
+        },
+        {
+          "english": "supporting",
+          "canonical_word": "support",
+          "meaning": "支える"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "supporting",
+          "reading": "支え",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "support",
+          "canonical_meaning": "支える"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 14,
+      "start": 99.9,
+      "end": 104.54,
+      "english": "Van Gogh's story asks about the definition of success.",
+      "japanese": "ゴッホの物語は成功の定義について問いかけています。",
+      "mixed": "ゴッホの物語は成功の definition について問いかけています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ゴッホの物語は成功の ",
+          "parts": [
+            {
+              "text": "ゴッホの",
+              "ruby": ""
+            },
+            {
+              "text": "物語",
+              "ruby": "ものがたり"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "成功",
+              "ruby": "せいこう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "definition",
+          "ruby": "定義"
+        },
+        {
+          "type": "ja",
+          "text": " について問いかけています。",
+          "parts": [
+            {
+              "text": "について",
+              "ruby": ""
+            },
+            {
+              "text": "問",
+              "ruby": "と"
+            },
+            {
+              "text": "いかけています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "definition",
+          "canonical_word": "definition",
+          "meaning": "定義"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "definition",
+          "reading": "定義",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "definition",
+          "canonical_meaning": "定義"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 15,
+      "start": 105.06,
+      "end": 109.22,
+      "english": "Is success to be recognized in life?",
+      "japanese": "人生における成功は認められるものなのでしょうか？",
+      "mixed": "人生における成功は認められるものなのでしょうか？",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "人生における成功は認められるものなのでしょうか？",
+          "parts": [
+            {
+              "text": "人生",
+              "ruby": "じんせい"
+            },
+            {
+              "text": "における",
+              "ruby": ""
+            },
+            {
+              "text": "成功",
+              "ruby": "せいこう"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "認",
+              "ruby": "みと"
+            },
+            {
+              "text": "められるものなのでしょうか？",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 16,
+      "start": 109.22,
+      "end": 114.68,
+      "english": "Is success to be recognized after death?",
+      "japanese": "成功は死後に認められるのでしょうか？",
+      "mixed": "成功は死後に認められるのでしょうか？",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "成功は死後に認められるのでしょうか？",
+          "parts": [
+            {
+              "text": "成功",
+              "ruby": "せいこう"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "死後",
+              "ruby": "しご"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "認",
+              "ruby": "みと"
+            },
+            {
+              "text": "められるのでしょうか？",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 17,
+      "start": 116.78,
+      "end": 121.72,
+      "english": "Perhaps, for Van Gogh himself, success was to keep painting.",
+      "japanese": "おそらく、ゴッホ自身にとっての成功とは、絵を描き続けることであったのでしょう。",
+      "mixed": "おそらく、ゴッホ自身にとっての成功とは、絵を描き続けることであったのでしょう。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "おそらく、ゴッホ自身にとっての成功とは、絵を描き続けることであったのでしょう。",
+          "parts": [
+            {
+              "text": "おそらく、ゴッホ",
+              "ruby": ""
+            },
+            {
+              "text": "自身",
+              "ruby": "じしん"
+            },
+            {
+              "text": "にとっての",
+              "ruby": ""
+            },
+            {
+              "text": "成功",
+              "ruby": "せいこう"
+            },
+            {
+              "text": "とは、",
+              "ruby": ""
+            },
+            {
+              "text": "絵",
+              "ruby": "え"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "描",
+              "ruby": "えが"
+            },
+            {
+              "text": "き",
+              "ruby": ""
+            },
+            {
+              "text": "続",
+              "ruby": "つづ"
+            },
+            {
+              "text": "けることであったのでしょう。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 18,
+      "start": 121.72,
+      "end": 128.74,
+      "english": "Whatever the reaction of the world, he kept painting according to his inner voice.",
+      "japanese": "世界の反応が何であれ、彼は自分の内なる声に従って絵を描き続けました。",
+      "mixed": "世界の reaction が何であれ、彼は自分の内なる声に従って絵を描き続けました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "世界の ",
+          "parts": [
+            {
+              "text": "世界",
+              "ruby": "せかい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "reaction",
+          "ruby": "反応"
+        },
+        {
+          "type": "ja",
+          "text": " が何であれ、彼は自分の内なる声に従って絵を描き続けました。",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "何",
+              "ruby": "なん"
+            },
+            {
+              "text": "であれ、",
+              "ruby": ""
+            },
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "自分",
+              "ruby": "じぶん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "内",
+              "ruby": "うち"
+            },
+            {
+              "text": "なる",
+              "ruby": ""
+            },
+            {
+              "text": "声",
+              "ruby": "こえ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "従",
+              "ruby": "したが"
+            },
+            {
+              "text": "って",
+              "ruby": ""
+            },
+            {
+              "text": "絵",
+              "ruby": "え"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "描",
+              "ruby": "えが"
+            },
+            {
+              "text": "き",
+              "ruby": ""
+            },
+            {
+              "text": "続",
+              "ruby": "つづ"
+            },
+            {
+              "text": "けました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "reaction",
+          "canonical_word": "reaction",
+          "meaning": "反応"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "reaction",
+          "reading": "反応",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "reaction",
+          "canonical_meaning": "反応"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 19,
+      "start": 128.74,
+      "end": 132.14,
+      "english": "That was the integrity of his life.",
+      "japanese": "それが彼の人生の誠実さだった。",
+      "mixed": "それが彼の人生の integrity さだった。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "それが彼の人生の ",
+          "parts": [
+            {
+              "text": "それが",
+              "ruby": ""
+            },
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "人生",
+              "ruby": "じんせい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "integrity",
+          "ruby": "誠実"
+        },
+        {
+          "type": "ja",
+          "text": " さだった。",
+          "parts": [
+            {
+              "text": "さだった。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "integrity",
+          "canonical_word": "integrity",
+          "meaning": "誠実"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "integrity",
+          "reading": "誠実",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "integrity",
+          "canonical_meaning": "誠実"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 20,
+      "start": 132.14,
+      "end": 139.0,
+      "english": "We can see the truth of a human being in the canvases Van Gogh left behind.",
+      "japanese": "ゴッホが残したキャンバスには、人間の真実が見えてきます。",
+      "mixed": "ゴッホが残したキャンバスには、人間の真実が見えてきます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ゴッホが残したキャンバスには、人間の真実が見えてきます。",
+          "parts": [
+            {
+              "text": "ゴッホが",
+              "ruby": ""
+            },
+            {
+              "text": "残",
+              "ruby": "のこ"
+            },
+            {
+              "text": "したキャンバスには、",
+              "ruby": ""
+            },
+            {
+              "text": "人間",
+              "ruby": "にんげん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "真実",
+              "ruby": "しんじつ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "えてきます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 21,
+      "start": 140.76,
+      "end": 148.32,
+      "english": "Colors that seem to yell, a life force that seems to burst.",
+      "japanese": "叫びそうな色彩、はじけそうな生命力。",
+      "mixed": "yell そうな色彩、はじけそうな生命力。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "yell",
+          "ruby": "叫び"
+        },
+        {
+          "type": "ja",
+          "text": " そうな色彩、はじけそうな生命力。",
+          "parts": [
+            {
+              "text": "そうな",
+              "ruby": ""
+            },
+            {
+              "text": "色彩",
+              "ruby": "しきさい"
+            },
+            {
+              "text": "、はじけそうな",
+              "ruby": ""
+            },
+            {
+              "text": "生命",
+              "ruby": "せいめい"
+            },
+            {
+              "text": "力",
+              "ruby": "りょく"
+            },
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "yell",
+          "canonical_word": "yell",
+          "meaning": "叫ぶ"
+        },
+        {
+          "english": "burst",
+          "canonical_word": "burst",
+          "meaning": "破裂する"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "yell",
+          "reading": "叫び",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "yell",
+          "canonical_meaning": "叫ぶ"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 22,
+      "start": 151.0,
+      "end": 160.94,
+      "english": "Instead of staying silent, he continues to speak to the world through his paintings.",
+      "japanese": "彼は沈黙するのではなく、絵画を通じて世界に語り続けています。",
+      "mixed": "彼は沈黙するのではなく、絵画を通じて世界に語り続けています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼は沈黙するのではなく、絵画を通じて世界に語り続けています。",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "沈黙",
+              "ruby": "ちんもく"
+            },
+            {
+              "text": "するのではなく、",
+              "ruby": ""
+            },
+            {
+              "text": "絵画",
+              "ruby": "かいが"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "通",
+              "ruby": "つう"
+            },
+            {
+              "text": "じて",
+              "ruby": ""
+            },
+            {
+              "text": "世界",
+              "ruby": "せかい"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "語",
+              "ruby": "かた"
+            },
+            {
+              "text": "り",
+              "ruby": ""
+            },
+            {
+              "text": "続",
+              "ruby": "つづ"
+            },
+            {
+              "text": "けています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    }
+  ]
+}

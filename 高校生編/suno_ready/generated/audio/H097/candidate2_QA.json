@@ -1,0 +1,250 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H097.md",
+  "audio": "高校生編/suno_ready/generated/audio/H097/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 115.88,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9934,
+  "expected_words": 152,
+  "transcribed_words": 151,
+  "matched_words": 146,
+  "coverage": 0.9605,
+  "precision": 0.9669,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 151,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 26,
+      "length": 2,
+      "words": [
+        "six",
+        "percent"
+      ]
+    },
+    {
+      "start": 19,
+      "length": 1,
+      "words": [
+        "the"
+      ]
+    },
+    {
+      "start": 22,
+      "length": 1,
+      "words": [
+        "rainforests"
+      ]
+    },
+    {
+      "start": 42,
+      "length": 1,
+      "words": [
+        "hotspots"
+      ]
+    },
+    {
+      "start": 145,
+      "length": 1,
+      "words": [
+        "will"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 22,
+      "actual_start": 21,
+      "expected": [
+        "rainforests"
+      ],
+      "actual": [
+        "rainforest"
+      ],
+      "actual_confidence": 0.5887,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 42,
+      "actual_start": 39,
+      "expected": [
+        "hotspots"
+      ],
+      "actual": [
+        "hot",
+        "spots"
+      ],
+      "actual_confidence": 0.789,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 145,
+      "actual_start": 143,
+      "expected": [
+        "will"
+      ],
+      "actual": [
+        "we'll"
+      ],
+      "actual_confidence": 0.6778,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 152,
+      "actual_start": 150,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.1755
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 19,
+      "actual_start": 19,
+      "expected": [
+        "the"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 26,
+      "actual_start": 25,
+      "expected": [
+        "six",
+        "percent"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "On Earth, there are more than 6,000 known species of mammals alone. The number of insect species is estimated in millions. Tropical rainforest cover only about 6% of the Earth's surface. Yet more than half of all species dwell there These hot spots of biodiversity Are shrinking rapidly The causes are numerous Logging conversion to farmland Urban development, human activity Is steadily taking the habitat of animals away The oceans are also vulnerable Plastic pollution harms whales and turtles And the chemicals carried by the tide Threaten the food chain But conservation efforts are beginning To yield results One indigenous community has protected the forest of its ancestors And established a pioneering model of community-led conservation An ecosystem is built on a subtle balance. The loss of one species affects others in a chain. Whether we can find the wisdom to coexist with nature, we'll determine the future of this planet. you",
+  "segments": [
+    {
+      "start": 4.04,
+      "end": 13.08,
+      "text": "On Earth, there are more than 6,000 known species of mammals alone."
+    },
+    {
+      "start": 14.56,
+      "end": 20.22,
+      "text": "The number of insect species is estimated in millions."
+    },
+    {
+      "start": 21.4,
+      "end": 27.84,
+      "text": "Tropical rainforest cover only about 6% of the Earth's surface."
+    },
+    {
+      "start": 27.84,
+      "end": 31.6,
+      "text": "Yet more than half of all species dwell there"
+    },
+    {
+      "start": 31.6,
+      "end": 34.8,
+      "text": "These hot spots of biodiversity"
+    },
+    {
+      "start": 35.84,
+      "end": 37.96,
+      "text": "Are shrinking rapidly"
+    },
+    {
+      "start": 42.84,
+      "end": 45.04,
+      "text": "The causes are numerous"
+    },
+    {
+      "start": 45.84,
+      "end": 47.82,
+      "text": "Logging conversion to farmland"
+    },
+    {
+      "start": 47.82,
+      "end": 50.46,
+      "text": "Urban development, human activity"
+    },
+    {
+      "start": 50.46,
+      "end": 54.54,
+      "text": "Is steadily taking the habitat of animals away"
+    },
+    {
+      "start": 54.54,
+      "end": 56.94,
+      "text": "The oceans are also vulnerable"
+    },
+    {
+      "start": 57.5,
+      "end": 60.92,
+      "text": "Plastic pollution harms whales and turtles"
+    },
+    {
+      "start": 60.92,
+      "end": 63.72,
+      "text": "And the chemicals carried by the tide"
+    },
+    {
+      "start": 63.72,
+      "end": 65.48,
+      "text": "Threaten the food chain"
+    },
+    {
+      "start": 65.48,
+      "end": 69.28,
+      "text": "But conservation efforts are beginning"
+    },
+    {
+      "start": 69.9,
+      "end": 71.92,
+      "text": "To yield results"
+    },
+    {
+      "start": 74.14,
+      "end": 78.42,
+      "text": "One indigenous community has protected the forest of its ancestors"
+    },
+    {
+      "start": 78.42,
+      "end": 83.14,
+      "text": "And established a pioneering model of community-led conservation"
+    },
+    {
+      "start": 84.54,
+      "end": 87.7,
+      "text": "An ecosystem is built on a subtle balance."
+    },
+    {
+      "start": 88.7,
+      "end": 95.0,
+      "text": "The loss of one species affects others in a chain."
+    },
+    {
+      "start": 98.82,
+      "end": 102.82,
+      "text": "Whether we can find the wisdom to coexist with nature,"
+    },
+    {
+      "start": 104.54,
+      "end": 108.2,
+      "text": "we'll determine the future of this planet."
+    },
+    {
+      "start": 114.54,
+      "end": 115.86,
+      "text": "you"
+    }
+  ]
+}

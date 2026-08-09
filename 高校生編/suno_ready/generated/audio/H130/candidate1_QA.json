@@ -1,0 +1,371 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H130.md",
+  "audio": "高校生編/suno_ready/generated/audio/H130/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 209.521,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.007,
+  "expected_words": 284,
+  "transcribed_words": 286,
+  "matched_words": 278,
+  "coverage": 0.9789,
+  "precision": 0.972,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 283,
+  "longest_missing_run": 3,
+  "largest_missing_runs": [
+    {
+      "start": 214,
+      "length": 3,
+      "words": [
+        "an",
+        "age",
+        "has"
+      ]
+    },
+    {
+      "start": 104,
+      "length": 1,
+      "words": [
+        "continues"
+      ]
+    },
+    {
+      "start": 147,
+      "length": 1,
+      "words": [
+        "patients"
+      ]
+    },
+    {
+      "start": 188,
+      "length": 1,
+      "words": [
+        "and"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 104,
+      "actual_start": 106,
+      "expected": [
+        "continues"
+      ],
+      "actual": [
+        "continuous"
+      ],
+      "actual_confidence": 0.92,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 147,
+      "actual_start": 149,
+      "expected": [
+        "patients"
+      ],
+      "actual": [
+        "patience"
+      ],
+      "actual_confidence": 0.7386,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 188,
+      "actual_start": 190,
+      "expected": [
+        "and"
+      ],
+      "actual": [
+        "an"
+      ],
+      "actual_confidence": 0.6102,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 214,
+      "actual_start": 216,
+      "expected": [
+        "an",
+        "age",
+        "has"
+      ],
+      "actual": [
+        "and",
+        "ages",
+        "just"
+      ],
+      "actual_confidence": 0.604,
+      "substitution_words": 3,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 68,
+      "actual_start": 68,
+      "expected": [],
+      "actual": [
+        "to"
+      ],
+      "actual_confidence": 0.3439
+    },
+    {
+      "expected_start": 103,
+      "actual_start": 104,
+      "expected": [],
+      "actual": [
+        "it's"
+      ],
+      "actual_confidence": 0.4762
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "Across time and space, music has always been with humanity In the age when cave paintings were drawn People were already playing instruments Flutes made of bone Drums with stretched skins Though primitive it was certainly music Music has a mysterious power Even between people Who do not share a language Melody and rhythm reach the heart directly Across dialect and borders Music like a universal language connects to people Ancient Greek philosophers regarded music as a branch of mathematics They thought the proportion and harmony of sound reflected the order of the universe It may sound like a fancy theory but today's science It's too continuous to describe the laws of music On the other hand, modern neuroscience has shown that music stimulates multiple regions of the brain simultaneously Hearing, movement, memory, emotion Few activities activate the brain as comprehensively as music Music therapy is employed, even with patience, with dementia and depression Even those who have lost their words, when they hear a song familiar from their youth Their expressions may return Music education should be highlighted in the growth of children Through learning an instrument, concentration, cooperation, an expression are nurtured But in recent years, school music education has been shrinking Budget restrictions is the main reason With the development of digital technology and ages Just come when anyone can create music And share it with the world This is wonderful But at the same time Music has also come to be treated As mere consumer goods Music exists not for efficiency But for the nourishment of the heart Within our busy days Let us keep time to listen Attentively to music Even one song a day That is what keeps us human",
+  "segments": [
+    {
+      "start": 12.26,
+      "end": 17.88,
+      "text": "Across time and space, music has always been with humanity"
+    },
+    {
+      "start": 17.88,
+      "end": 21.42,
+      "text": "In the age when cave paintings were drawn"
+    },
+    {
+      "start": 22.0,
+      "end": 25.18,
+      "text": "People were already playing instruments"
+    },
+    {
+      "start": 25.18,
+      "end": 27.2,
+      "text": "Flutes made of bone"
+    },
+    {
+      "start": 27.2,
+      "end": 29.38,
+      "text": "Drums with stretched skins"
+    },
+    {
+      "start": 29.38,
+      "end": 32.76,
+      "text": "Though primitive it was certainly music"
+    },
+    {
+      "start": 32.76,
+      "end": 37.5,
+      "text": "Music has a mysterious power"
+    },
+    {
+      "start": 40.2,
+      "end": 42.52,
+      "text": "Even between people"
+    },
+    {
+      "start": 42.52,
+      "end": 44.56,
+      "text": "Who do not share a language"
+    },
+    {
+      "start": 44.56,
+      "end": 48.52,
+      "text": "Melody and rhythm reach the heart directly"
+    },
+    {
+      "start": 48.52,
+      "end": 51.22,
+      "text": "Across dialect and borders"
+    },
+    {
+      "start": 51.22,
+      "end": 54.38,
+      "text": "Music like a universal language"
+    },
+    {
+      "start": 54.38,
+      "end": 55.64,
+      "text": "connects to people"
+    },
+    {
+      "start": 56.38,
+      "end": 58.82,
+      "text": "Ancient Greek philosophers"
+    },
+    {
+      "start": 59.38,
+      "end": 60.46,
+      "text": "regarded music"
+    },
+    {
+      "start": 60.46,
+      "end": 63.08,
+      "text": "as a branch of mathematics"
+    },
+    {
+      "start": 65.38,
+      "end": 68.58,
+      "text": "They thought the proportion and harmony"
+    },
+    {
+      "start": 69.38,
+      "end": 71.1,
+      "text": "of sound reflected"
+    },
+    {
+      "start": 71.1,
+      "end": 73.82,
+      "text": "the order of the universe"
+    },
+    {
+      "start": 75.38,
+      "end": 78.1,
+      "text": "It may sound like a fancy theory"
+    },
+    {
+      "start": 78.1,
+      "end": 80.04,
+      "text": "but today's science"
+    },
+    {
+      "start": 80.04,
+      "end": 84.66,
+      "text": "It's too continuous to describe the laws of music"
+    },
+    {
+      "start": 86.54,
+      "end": 89.82,
+      "text": "On the other hand, modern neuroscience has shown"
+    },
+    {
+      "start": 89.82,
+      "end": 95.72,
+      "text": "that music stimulates multiple regions of the brain simultaneously"
+    },
+    {
+      "start": 96.54,
+      "end": 99.08,
+      "text": "Hearing, movement, memory, emotion"
+    },
+    {
+      "start": 99.08,
+      "end": 104.62,
+      "text": "Few activities activate the brain as comprehensively as music"
+    },
+    {
+      "start": 105.96,
+      "end": 113.0,
+      "text": "Music therapy is employed, even with patience, with dementia and depression"
+    },
+    {
+      "start": 116.66,
+      "end": 123.4,
+      "text": "Even those who have lost their words, when they hear a song familiar from their youth"
+    },
+    {
+      "start": 123.4,
+      "end": 126.2,
+      "text": "Their expressions may return"
+    },
+    {
+      "start": 126.2,
+      "end": 132.6,
+      "text": "Music education should be highlighted in the growth of children"
+    },
+    {
+      "start": 132.6,
+      "end": 142.32,
+      "text": "Through learning an instrument, concentration, cooperation, an expression are nurtured"
+    },
+    {
+      "start": 145.6,
+      "end": 150.58,
+      "text": "But in recent years, school music education has been shrinking"
+    },
+    {
+      "start": 150.58,
+      "end": 155.1,
+      "text": "Budget restrictions is the main reason"
+    },
+    {
+      "start": 155.1,
+      "end": 159.64,
+      "text": "With the development of digital technology and ages"
+    },
+    {
+      "start": 159.64,
+      "end": 162.76,
+      "text": "Just come when anyone can create music"
+    },
+    {
+      "start": 163.6,
+      "end": 165.88,
+      "text": "And share it with the world"
+    },
+    {
+      "start": 167.32,
+      "end": 168.94,
+      "text": "This is wonderful"
+    },
+    {
+      "start": 170.92,
+      "end": 172.58,
+      "text": "But at the same time"
+    },
+    {
+      "start": 173.56,
+      "end": 176.56,
+      "text": "Music has also come to be treated"
+    },
+    {
+      "start": 177.28,
+      "end": 180.42,
+      "text": "As mere consumer goods"
+    },
+    {
+      "start": 181.56,
+      "end": 184.1,
+      "text": "Music exists not for efficiency"
+    },
+    {
+      "start": 184.72,
+      "end": 187.48,
+      "text": "But for the nourishment of the heart"
+    },
+    {
+      "start": 187.48,
+      "end": 189.72,
+      "text": "Within our busy days"
+    },
+    {
+      "start": 189.72,
+      "end": 192.92,
+      "text": "Let us keep time to listen"
+    },
+    {
+      "start": 192.92,
+      "end": 195.56,
+      "text": "Attentively to music"
+    },
+    {
+      "start": 195.56,
+      "end": 199.3,
+      "text": "Even one song a day"
+    },
+    {
+      "start": 199.98,
+      "end": 203.22,
+      "text": "That is what keeps us human"
+    }
+  ]
+}

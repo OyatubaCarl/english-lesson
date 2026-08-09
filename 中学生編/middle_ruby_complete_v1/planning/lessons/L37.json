@@ -1,0 +1,1032 @@
+{
+  "lesson": 37,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L37/planning/lesson.json",
+  "title_en": "Lesson 37  A New School Year",
+  "title_ja": "新しい学年",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 13,
+  "lines": [
+    {
+      "line": 1,
+      "english": "In April, a new school year began.",
+      "source_ja": "4月になって、新しい学年が始まりました。",
+      "display_ja": "4月になって、新しい学年が始まりました。",
+      "corrected_translation": false,
+      "mixed": "4月になって、新しい学年が始まりました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "4月になって、新しい学年が始まりました。",
+          "parts": [
+            {
+              "text": "4",
+              "ruby": ""
+            },
+            {
+              "text": "月",
+              "ruby": "がつ"
+            },
+            {
+              "text": "になって、",
+              "ruby": ""
+            },
+            {
+              "text": "新",
+              "ruby": "あたら"
+            },
+            {
+              "text": "しい",
+              "ruby": ""
+            },
+            {
+              "text": "学年",
+              "ruby": "がくねん"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "始",
+              "ruby": "はじ"
+            },
+            {
+              "text": "まりました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 2,
+      "english": "I moved up to a new junior class, and some of my classmates were new.",
+      "source_ja": "わたしは新しい学年に上がって、クラスメートにも新しい顔ぶれがいました。",
+      "display_ja": "わたしは新しい学年に上がって、クラスメートにも新しい顔ぶれがいました。",
+      "corrected_translation": false,
+      "mixed": "新しい junior の学年に上がり、新しい classmates もいました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "新しい ",
+          "parts": [
+            {
+              "text": "新",
+              "ruby": "あたら"
+            },
+            {
+              "text": "しい",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "junior",
+          "ruby": "中学生の"
+        },
+        {
+          "type": "ja",
+          "text": " の学年に上がり、新しい ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "学年",
+              "ruby": "がくねん"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "上",
+              "ruby": "あ"
+            },
+            {
+              "text": "がり、",
+              "ruby": ""
+            },
+            {
+              "text": "新",
+              "ruby": "あたら"
+            },
+            {
+              "text": "しい",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "classmates",
+          "ruby": "同級生"
+        },
+        {
+          "type": "ja",
+          "text": " もいました。",
+          "parts": [
+            {
+              "text": "もいました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "junior",
+          "canonical_word": "junior",
+          "meaning": "中学生の"
+        },
+        {
+          "english": "classmates",
+          "canonical_word": "classmate",
+          "meaning": "同級生"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "junior",
+          "reading": "中学生の",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "junior",
+          "canonical_meaning": "中学生の"
+        },
+        {
+          "english": "classmates",
+          "reading": "同級生",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "classmate",
+          "canonical_meaning": "同級生"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "The first lesson was English.",
+      "source_ja": "最初の授業は英語。",
+      "display_ja": "最初の授業は英語。",
+      "corrected_translation": false,
+      "mixed": "最初の lesson は英語。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "最初の ",
+          "parts": [
+            {
+              "text": "最初",
+              "ruby": "さいしょ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "lesson",
+          "ruby": "授業"
+        },
+        {
+          "type": "ja",
+          "text": " は英語。",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "英語",
+              "ruby": "えいご"
+            },
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "lesson",
+          "canonical_word": "lesson",
+          "meaning": "授業"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "lesson",
+          "reading": "授業",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "lesson",
+          "canonical_meaning": "授業"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "“Today, let's learn many new words,” our teacher said with a smile.",
+      "source_ja": "「今日は新しい単語をたくさん覚えようね」と先生が笑顔で言いました。",
+      "display_ja": "「今日は新しい単語をたくさん覚えようね」と先生が笑顔で言いました。",
+      "corrected_translation": false,
+      "mixed": "「今日は新しい単語をたくさん覚えようね」と先生が笑顔で言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「今日は新しい単語をたくさん覚えようね」と先生が笑顔で言いました。",
+          "parts": [
+            {
+              "text": "「",
+              "ruby": ""
+            },
+            {
+              "text": "今日",
+              "ruby": "きょう"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "新",
+              "ruby": "あたら"
+            },
+            {
+              "text": "しい",
+              "ruby": ""
+            },
+            {
+              "text": "単語",
+              "ruby": "たんご"
+            },
+            {
+              "text": "をたくさん",
+              "ruby": ""
+            },
+            {
+              "text": "覚",
+              "ruby": "おぼ"
+            },
+            {
+              "text": "えようね」と",
+              "ruby": ""
+            },
+            {
+              "text": "先生",
+              "ruby": "せんせい"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "笑顔",
+              "ruby": "えがお"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 5,
+      "english": "I opened my notebook and put an eraser and a pencil on my desk.",
+      "source_ja": "わたしはノートを開いて、机の上に消しゴムとえんぴつを並べました。",
+      "display_ja": "わたしはノートを開いて、机の上に消しゴムとえんぴつを並べました。",
+      "corrected_translation": false,
+      "mixed": "わたしは notebook を開いて、机の上に eraser とえんぴつを並べました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしは ",
+          "parts": [
+            {
+              "text": "わたしは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "notebook",
+          "ruby": "ノート"
+        },
+        {
+          "type": "ja",
+          "text": " を開いて、机の上に ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "開",
+              "ruby": "ひら"
+            },
+            {
+              "text": "いて、",
+              "ruby": ""
+            },
+            {
+              "text": "机",
+              "ruby": "つくえ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "上",
+              "ruby": "うえ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "eraser",
+          "ruby": "消しゴム"
+        },
+        {
+          "type": "ja",
+          "text": " とえんぴつを並べました。",
+          "parts": [
+            {
+              "text": "とえんぴつを",
+              "ruby": ""
+            },
+            {
+              "text": "並",
+              "ruby": "なら"
+            },
+            {
+              "text": "べました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "notebook",
+          "canonical_word": "notebook",
+          "meaning": "ノート"
+        },
+        {
+          "english": "eraser",
+          "canonical_word": "eraser",
+          "meaning": "消しゴム"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "notebook",
+          "reading": "ノート",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "notebook",
+          "canonical_meaning": "ノート"
+        },
+        {
+          "english": "eraser",
+          "reading": "消しゴム",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "eraser",
+          "canonical_meaning": "消しゴム"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "During the lunch break, I went out to the schoolyard with my friends.",
+      "source_ja": "休み時間には、みんなで校庭へ行きました。",
+      "display_ja": "休み時間には、みんなで校庭へ行きました。",
+      "corrected_translation": false,
+      "mixed": "break には、みんなで校庭へ行きました。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "break",
+          "ruby": "休み時間"
+        },
+        {
+          "type": "ja",
+          "text": " には、みんなで校庭へ行きました。",
+          "parts": [
+            {
+              "text": "には、みんなで",
+              "ruby": ""
+            },
+            {
+              "text": "校庭",
+              "ruby": "こうてい"
+            },
+            {
+              "text": "へ",
+              "ruby": ""
+            },
+            {
+              "text": "行",
+              "ruby": "い"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "break",
+          "canonical_word": "break",
+          "meaning": "休み時間"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "break",
+          "reading": "休み時間",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "break",
+          "canonical_meaning": "休み時間"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "We ran a lot and laughed a lot.",
+      "source_ja": "広い空の下で走ったり笑ったりしました。",
+      "display_ja": "広い空の下で走ったり笑ったりしました。",
+      "corrected_translation": false,
+      "mixed": "広い空の下で走ったり笑ったりしました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "広い空の下で走ったり笑ったりしました。",
+          "parts": [
+            {
+              "text": "広",
+              "ruby": "ひろ"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "空",
+              "ruby": "そら"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "下",
+              "ruby": "もと"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "走",
+              "ruby": "はし"
+            },
+            {
+              "text": "ったり",
+              "ruby": ""
+            },
+            {
+              "text": "笑",
+              "ruby": "わら"
+            },
+            {
+              "text": "ったりしました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 8,
+      "english": "Next month, we will have an exam.",
+      "source_ja": "来月には試験があります。",
+      "display_ja": "来月には試験があります。",
+      "corrected_translation": false,
+      "mixed": "来月には exam があります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "来月には ",
+          "parts": [
+            {
+              "text": "来月",
+              "ruby": "らいげつ"
+            },
+            {
+              "text": "には",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "exam",
+          "ruby": "試験"
+        },
+        {
+          "type": "ja",
+          "text": " があります。",
+          "parts": [
+            {
+              "text": "があります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "exam",
+          "canonical_word": "exam",
+          "meaning": "試験"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "exam",
+          "reading": "試験",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "exam",
+          "canonical_meaning": "試験"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "Everyone wants to pass, so we practice a little at home every day.",
+      "source_ja": "みんな合格したいから、毎日家で少しずつ練習しています。",
+      "display_ja": "みんな合格したいから、毎日家で少しずつ練習しています。",
+      "corrected_translation": false,
+      "mixed": "みんな pass したいので、毎日家で少しずつ practice しています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "みんな ",
+          "parts": [
+            {
+              "text": "みんな",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "pass",
+          "ruby": "合格する"
+        },
+        {
+          "type": "ja",
+          "text": " したいので、毎日家で少しずつ ",
+          "parts": [
+            {
+              "text": "したいので、",
+              "ruby": ""
+            },
+            {
+              "text": "毎日",
+              "ruby": "まいにち"
+            },
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "少",
+              "ruby": "すこ"
+            },
+            {
+              "text": "しずつ",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "practice",
+          "ruby": "練習する"
+        },
+        {
+          "type": "ja",
+          "text": " しています。",
+          "parts": [
+            {
+              "text": "しています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "pass",
+          "canonical_word": "pass",
+          "meaning": "合格する"
+        },
+        {
+          "english": "practice",
+          "canonical_word": "practice",
+          "meaning": "練習する"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "pass",
+          "reading": "合格する",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "pass",
+          "canonical_meaning": "合格する"
+        },
+        {
+          "english": "practice",
+          "reading": "練習する",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "practice",
+          "canonical_meaning": "練習する"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "“I don't want to fail,” my sister said with energy.",
+      "source_ja": "「落ちたくないなあ」と妹が気合を入れて言いました。",
+      "display_ja": "「落ちたくないなあ」と妹が気合を入れて言いました。",
+      "corrected_translation": false,
+      "mixed": "「fail したくない」と妹が気合を入れて言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「",
+          "parts": [
+            {
+              "text": "「",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "fail",
+          "ruby": "失敗する"
+        },
+        {
+          "type": "ja",
+          "text": " したくない」と妹が気合を入れて言いました。",
+          "parts": [
+            {
+              "text": "したくない」と",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "気合",
+              "ruby": "きあい"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "入",
+              "ruby": "い"
+            },
+            {
+              "text": "れて",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "fail",
+          "canonical_word": "fail",
+          "meaning": "失敗する"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "fail",
+          "reading": "失敗する",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "fail",
+          "canonical_meaning": "失敗する"
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "english": "My new textbook still smells of fresh ink.",
+      "source_ja": "新しい教科書からは、まだ印刷したてのインクの香りがしました。",
+      "display_ja": "新しい教科書からは、まだ印刷したてのインクの香りがしました。",
+      "corrected_translation": false,
+      "mixed": "新しい textbook からは、まだ印刷したてのインクの香りがしました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "新しい ",
+          "parts": [
+            {
+              "text": "新",
+              "ruby": "あたら"
+            },
+            {
+              "text": "しい",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "textbook",
+          "ruby": "教科書"
+        },
+        {
+          "type": "ja",
+          "text": " からは、まだ印刷したてのインクの香りがしました。",
+          "parts": [
+            {
+              "text": "からは、まだ",
+              "ruby": ""
+            },
+            {
+              "text": "印刷",
+              "ruby": "いんさつ"
+            },
+            {
+              "text": "したてのインクの",
+              "ruby": ""
+            },
+            {
+              "text": "香",
+              "ruby": "かお"
+            },
+            {
+              "text": "りがしました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "textbook",
+          "canonical_word": "textbook",
+          "meaning": "教科書"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "textbook",
+          "reading": "教科書",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "textbook",
+          "canonical_meaning": "教科書"
+        }
+      ]
+    },
+    {
+      "line": 12,
+      "english": "Each time I turn a page, I feel that new words and stories are waiting for me.",
+      "source_ja": "ページをめくるたびに、新しい単語や物語が待っているような気がしてきます。",
+      "display_ja": "ページをめくるたびに、新しい単語や物語が待っているような気がしてきます。",
+      "corrected_translation": false,
+      "mixed": "ページをめくるたびに、新しい単語や物語が待っているような気がしてきます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ページをめくるたびに、新しい単語や物語が待っているような気がしてきます。",
+          "parts": [
+            {
+              "text": "ページをめくるたびに、",
+              "ruby": ""
+            },
+            {
+              "text": "新",
+              "ruby": "あたら"
+            },
+            {
+              "text": "しい",
+              "ruby": ""
+            },
+            {
+              "text": "単語",
+              "ruby": "たんご"
+            },
+            {
+              "text": "や",
+              "ruby": ""
+            },
+            {
+              "text": "物語",
+              "ruby": "ものがたり"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "待",
+              "ruby": "ま"
+            },
+            {
+              "text": "っているような",
+              "ruby": ""
+            },
+            {
+              "text": "気",
+              "ruby": "き"
+            },
+            {
+              "text": "がしてきます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 13,
+      "english": "Today, a senior student said to me in the hall, “Your next grade will also be fun.”",
+      "source_ja": "今日、廊下で先輩が「次の学年も、きっと楽しいよ」と声をかけてくれました。",
+      "display_ja": "今日、廊下で先輩が「次の学年も、きっと楽しいよ」と声をかけてくれました。",
+      "corrected_translation": false,
+      "mixed": "今日、廊下で senior が「次の grade も楽しいよ」と声をかけてくれました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "今日、廊下で ",
+          "parts": [
+            {
+              "text": "今日",
+              "ruby": "きょう"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "廊下",
+              "ruby": "ろうか"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "senior",
+          "ruby": "年上の"
+        },
+        {
+          "type": "ja",
+          "text": " が「次の ",
+          "parts": [
+            {
+              "text": "が「",
+              "ruby": ""
+            },
+            {
+              "text": "次",
+              "ruby": "つぎ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "grade",
+          "ruby": "学年"
+        },
+        {
+          "type": "ja",
+          "text": " も楽しいよ」と声をかけてくれました。",
+          "parts": [
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "楽",
+              "ruby": "たの"
+            },
+            {
+              "text": "しいよ」と",
+              "ruby": ""
+            },
+            {
+              "text": "声",
+              "ruby": "こえ"
+            },
+            {
+              "text": "をかけてくれました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "senior",
+          "canonical_word": "senior",
+          "meaning": "年上の"
+        },
+        {
+          "english": "grade",
+          "canonical_word": "grade",
+          "meaning": "学年"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "senior",
+          "reading": "年上の",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "senior",
+          "canonical_meaning": "年上の"
+        },
+        {
+          "english": "grade",
+          "reading": "学年",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "grade",
+          "canonical_meaning": "学年"
+        }
+      ]
+    }
+  ]
+}

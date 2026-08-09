@@ -1,0 +1,746 @@
+{
+  "lesson": 16,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L16/planning/lesson.json",
+  "title_en": "Lesson 16  Comparing My Family",
+  "title_ja": "家族を比べてみる",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 10,
+  "lines": [
+    {
+      "line": 1,
+      "english": "When I compare the members of my family, each one is interesting in a different way.",
+      "source_ja": "家族を比べてみると、一人ひとり違った面白さがあります。",
+      "display_ja": "家族を比べてみると、一人ひとり違った面白さがあります。",
+      "corrected_translation": false,
+      "mixed": "家族を比べてみると、一人ひとり違った面白さがあります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "家族を比べてみると、一人ひとり違った面白さがあります。",
+          "parts": [
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "比",
+              "ruby": "くら"
+            },
+            {
+              "text": "べてみると、",
+              "ruby": ""
+            },
+            {
+              "text": "一人",
+              "ruby": "ひとり"
+            },
+            {
+              "text": "ひとり",
+              "ruby": ""
+            },
+            {
+              "text": "違",
+              "ruby": "ちが"
+            },
+            {
+              "text": "った",
+              "ruby": ""
+            },
+            {
+              "text": "面白",
+              "ruby": "おもしろ"
+            },
+            {
+              "text": "さがあります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 2,
+      "english": "My brother is much taller than me.",
+      "source_ja": "兄はわたしよりずっと背が高いです。",
+      "display_ja": "兄はわたしよりずっと背が高いです。",
+      "corrected_translation": false,
+      "mixed": "兄はわたしよりずっと taller です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "兄はわたしよりずっと ",
+          "parts": [
+            {
+              "text": "兄",
+              "ruby": "あに"
+            },
+            {
+              "text": "はわたしよりずっと",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "taller",
+          "ruby": "背が高いです"
+        },
+        {
+          "type": "ja",
+          "text": " です",
+          "parts": [
+            {
+              "text": "です",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "taller",
+          "canonical_word": "taller",
+          "meaning": "より背が高い"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "taller",
+          "reading": "背が高いです",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "taller",
+          "canonical_meaning": "より背が高い"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "My sister is younger than me.",
+      "source_ja": "妹はわたしより年下です。",
+      "display_ja": "妹はわたしより年下です。",
+      "corrected_translation": false,
+      "mixed": "妹はわたしより younger です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "妹はわたしより ",
+          "parts": [
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "はわたしより",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "younger",
+          "ruby": "より若い"
+        },
+        {
+          "type": "ja",
+          "text": " です。",
+          "parts": [
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "younger",
+          "canonical_word": "younger",
+          "meaning": "より若い"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "younger",
+          "reading": "より若い",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "younger",
+          "canonical_meaning": "より若い"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "In my family, Pochi runs faster than anyone else.",
+      "source_ja": "家族の中では、ポチがほかの誰よりも速く走ります。",
+      "display_ja": "家族の中では、ポチがほかの誰よりも速く走ります。",
+      "corrected_translation": false,
+      "mixed": "家族の中では、ポチがだれよりも faster に runs します。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "家族の中では、ポチがだれよりも ",
+          "parts": [
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "中",
+              "ruby": "なか"
+            },
+            {
+              "text": "では、ポチがだれよりも",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "faster",
+          "ruby": "より速く"
+        },
+        {
+          "type": "ja",
+          "text": " に ",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "runs",
+          "ruby": "走る(3単現)"
+        },
+        {
+          "type": "ja",
+          "text": " します。",
+          "parts": [
+            {
+              "text": "します。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "runs",
+          "canonical_word": "runs",
+          "meaning": "走る(3単現)"
+        },
+        {
+          "english": "faster",
+          "canonical_word": "faster",
+          "meaning": "より速く"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "runs",
+          "reading": "走る(3単現)",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "runs",
+          "canonical_meaning": "走る(3単現)"
+        },
+        {
+          "english": "faster",
+          "reading": "より速く",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "faster",
+          "canonical_meaning": "より速く"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "Today's dinner tasted better than yesterday's.",
+      "source_ja": "今日の夕食は昨日の夕食よりおいしかったです。",
+      "display_ja": "今日の夕食は昨日の夕食よりおいしかったです。",
+      "corrected_translation": false,
+      "mixed": "今日の夕食は昨日より better でした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "今日の夕食は昨日より ",
+          "parts": [
+            {
+              "text": "今日",
+              "ruby": "きょう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "夕食",
+              "ruby": "ゆうしょく"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "昨日",
+              "ruby": "きのう"
+            },
+            {
+              "text": "より",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "better",
+          "ruby": "より良い"
+        },
+        {
+          "type": "ja",
+          "text": " でした。",
+          "parts": [
+            {
+              "text": "でした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "better",
+          "canonical_word": "better",
+          "meaning": "より良い"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "better",
+          "reading": "より良い",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "better",
+          "canonical_meaning": "より良い"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "My mother tried a new recipe.",
+      "source_ja": "母が新しいレシピを試しました。",
+      "display_ja": "母が新しいレシピを試しました。",
+      "corrected_translation": false,
+      "mixed": "母が新しいレシピを試しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "母が新しいレシピを試しました。",
+          "parts": [
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "新",
+              "ruby": "あたら"
+            },
+            {
+              "text": "しいレシピを",
+              "ruby": ""
+            },
+            {
+              "text": "試",
+              "ruby": "ため"
+            },
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 7,
+      "english": "The book I'm reading now is more interesting than the old one.",
+      "source_ja": "今読んでいる本は、前の本よりもっと面白いです。",
+      "display_ja": "今読んでいる本は、前の本よりもっと面白いです。",
+      "corrected_translation": false,
+      "mixed": "今読んでいる本は、前の本より more 面白いです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "今読んでいる本は、前の本より ",
+          "parts": [
+            {
+              "text": "今",
+              "ruby": "いま"
+            },
+            {
+              "text": "読",
+              "ruby": "よ"
+            },
+            {
+              "text": "んでいる",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "は、",
+              "ruby": ""
+            },
+            {
+              "text": "前",
+              "ruby": "まえ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "もと"
+            },
+            {
+              "text": "より",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "more",
+          "ruby": "より〜"
+        },
+        {
+          "type": "ja",
+          "text": " 面白いです。",
+          "parts": [
+            {
+              "text": "面白",
+              "ruby": "おもしろ"
+            },
+            {
+              "text": "いです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "more",
+          "canonical_word": "more",
+          "meaning": "より〜"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "more",
+          "reading": "より〜",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "more",
+          "canonical_meaning": "より〜"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "Reading is more important than watching TV.",
+      "source_ja": "わたしにとって、読書はテレビを見るよりも大切です。",
+      "display_ja": "わたしにとって、読書はテレビを見るよりも大切です。",
+      "corrected_translation": false,
+      "mixed": "わたしにとって、読書はテレビを見るより more 大切です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしにとって、読書はテレビを見るより ",
+          "parts": [
+            {
+              "text": "わたしにとって、",
+              "ruby": ""
+            },
+            {
+              "text": "読書",
+              "ruby": "どくしょ"
+            },
+            {
+              "text": "はテレビを",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "るより",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "more",
+          "ruby": "より〜"
+        },
+        {
+          "type": "ja",
+          "text": " 大切です。",
+          "parts": [
+            {
+              "text": "大切",
+              "ruby": "たいせつ"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "more",
+          "canonical_word": "more",
+          "meaning": "より〜"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "more",
+          "reading": "より〜",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "more",
+          "canonical_meaning": "より〜"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "Spring days are warmer and longer than fall days.",
+      "source_ja": "春の日は秋の日より暖かく、日も長いです。",
+      "display_ja": "春の日は秋の日より暖かく、日も長いです。",
+      "corrected_translation": false,
+      "mixed": "春の日は fall の日より warmer で、日も longer です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "春の日は ",
+          "parts": [
+            {
+              "text": "春",
+              "ruby": "はる"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "fall",
+          "ruby": "秋"
+        },
+        {
+          "type": "ja",
+          "text": " の日より ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "より",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "warmer",
+          "ruby": "より暖かい"
+        },
+        {
+          "type": "ja",
+          "text": " で、日も ",
+          "parts": [
+            {
+              "text": "で、",
+              "ruby": ""
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "longer",
+          "ruby": "より長い"
+        },
+        {
+          "type": "ja",
+          "text": " です。",
+          "parts": [
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "warmer",
+          "canonical_word": "warmer",
+          "meaning": "より暖かい"
+        },
+        {
+          "english": "longer",
+          "canonical_word": "longer",
+          "meaning": "より長い"
+        },
+        {
+          "english": "fall",
+          "canonical_word": "fall",
+          "meaning": "秋"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "warmer",
+          "reading": "より暖かい",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "warmer",
+          "canonical_meaning": "より暖かい"
+        },
+        {
+          "english": "longer",
+          "reading": "より長い",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "longer",
+          "canonical_meaning": "より長い"
+        },
+        {
+          "english": "fall",
+          "reading": "秋",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "fall",
+          "canonical_meaning": "秋"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "So every year, I wait for spring to come.",
+      "source_ja": "だから毎年、わたしは春が来るのを待ちます。",
+      "display_ja": "だから毎年、わたしは春が来るのを待ちます。",
+      "corrected_translation": false,
+      "mixed": "だから毎年、わたしは春が来るのを待ちます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "だから毎年、わたしは春が来るのを待ちます。",
+          "parts": [
+            {
+              "text": "だから",
+              "ruby": ""
+            },
+            {
+              "text": "毎年",
+              "ruby": "まいとし"
+            },
+            {
+              "text": "、わたしは",
+              "ruby": ""
+            },
+            {
+              "text": "春",
+              "ruby": "はる"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "来",
+              "ruby": "く"
+            },
+            {
+              "text": "るのを",
+              "ruby": ""
+            },
+            {
+              "text": "待",
+              "ruby": "ま"
+            },
+            {
+              "text": "ちます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    }
+  ]
+}

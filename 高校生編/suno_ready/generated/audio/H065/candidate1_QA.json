@@ -1,0 +1,271 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H065.md",
+  "audio": "高校生編/suno_ready/generated/audio/H065/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 135.76,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0127,
+  "expected_words": 237,
+  "transcribed_words": 240,
+  "matched_words": 234,
+  "coverage": 0.9873,
+  "precision": 0.975,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 236,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 13,
+      "length": 1,
+      "words": [
+        "thirty"
+      ]
+    },
+    {
+      "start": 173,
+      "length": 1,
+      "words": [
+        "smartphone"
+      ]
+    },
+    {
+      "start": 211,
+      "length": 1,
+      "words": [
+        "judgment"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 173,
+      "actual_start": 174,
+      "expected": [
+        "smartphone"
+      ],
+      "actual": [
+        "smart",
+        "phone"
+      ],
+      "actual_confidence": 0.5525,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 211,
+      "actual_start": 213,
+      "expected": [
+        "judgment"
+      ],
+      "actual": [
+        "judgement"
+      ],
+      "actual_confidence": 0.5859,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 45,
+      "actual_start": 44,
+      "expected": [],
+      "actual": [
+        "a"
+      ],
+      "actual_confidence": 0.4883
+    },
+    {
+      "expected_start": 48,
+      "actual_start": 48,
+      "expected": [],
+      "actual": [
+        "a"
+      ],
+      "actual_confidence": 0.4061
+    },
+    {
+      "expected_start": 237,
+      "actual_start": 239,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.2452
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 13,
+      "actual_start": 13,
+      "expected": [
+        "thirty"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "In the mid-1990s, the internet began to enter ordinary homes. In the 30 years since then, our lives, our work and the way we connect with one another have all been transformed from the ground up. The communication that used to be done by a letter or by a telephone is now carried out instantly through messaging, apps and social media. Even with a friend on the other side of the earth, we can now speak face to face in real time. The shape of work has also changed through the pandemic. remote work spread rapidly leaving the company office behind more people now work from home or from a cafe connected to the world but new problems have also been created the question of privacy the threats to security the spread of fake news and misinformation who guarantees the quality of the information We receive and how social media algorithms are designed to attract our attention Many of us have noticed at one moment or another that they have been staring at their smart phone for hours Addiction and digital dependency have become serious problems in modern life The internet itself is only a useful tool What we use it for And how we keep our distance from it Depends on the judgement of each one of us How to live as a human being Inside the digital age That is the challenge of the generations to come you",
+  "segments": [
+    {
+      "start": 5.66,
+      "end": 12.42,
+      "text": "In the mid-1990s, the internet began to enter ordinary homes."
+    },
+    {
+      "start": 12.88,
+      "end": 18.7,
+      "text": "In the 30 years since then, our lives, our work and the way we connect with one another"
+    },
+    {
+      "start": 18.7,
+      "end": 22.1,
+      "text": "have all been transformed from the ground up."
+    },
+    {
+      "start": 25.56,
+      "end": 31.56,
+      "text": "The communication that used to be done by a letter or by a telephone is now carried out"
+    },
+    {
+      "start": 31.56,
+      "end": 35.0,
+      "text": "instantly through messaging, apps and social media."
+    },
+    {
+      "start": 35.24,
+      "end": 41.1,
+      "text": "Even with a friend on the other side of the earth, we can now speak face to face in"
+    },
+    {
+      "start": 41.1,
+      "end": 42.16,
+      "text": "real time."
+    },
+    {
+      "start": 44.74,
+      "end": 48.48,
+      "text": "The shape of work has also changed through the pandemic."
+    },
+    {
+      "start": 48.48,
+      "end": 50.58,
+      "text": "remote work spread rapidly"
+    },
+    {
+      "start": 50.58,
+      "end": 52.9,
+      "text": "leaving the company office behind"
+    },
+    {
+      "start": 52.9,
+      "end": 55.28,
+      "text": "more people now work from home"
+    },
+    {
+      "start": 55.28,
+      "end": 56.56,
+      "text": "or from a cafe"
+    },
+    {
+      "start": 56.56,
+      "end": 59.28,
+      "text": "connected to the world"
+    },
+    {
+      "start": 59.28,
+      "end": 60.78,
+      "text": "but new problems"
+    },
+    {
+      "start": 60.78,
+      "end": 62.42,
+      "text": "have also been created"
+    },
+    {
+      "start": 62.42,
+      "end": 64.52,
+      "text": "the question of privacy"
+    },
+    {
+      "start": 67.1,
+      "end": 69.92,
+      "text": "the threats to security"
+    },
+    {
+      "start": 69.92,
+      "end": 71.48,
+      "text": "the spread of fake news"
+    },
+    {
+      "start": 72.0,
+      "end": 73.3,
+      "text": "and misinformation"
+    },
+    {
+      "start": 73.3,
+      "end": 76.48,
+      "text": "who guarantees the quality of the information"
+    },
+    {
+      "start": 76.88,
+      "end": 83.88,
+      "text": "We receive and how social media algorithms are designed to attract our attention"
+    },
+    {
+      "start": 87.42,
+      "end": 97.02,
+      "text": "Many of us have noticed at one moment or another that they have been staring at their smart phone for hours"
+    },
+    {
+      "start": 97.02,
+      "end": 103.58,
+      "text": "Addiction and digital dependency have become serious problems in modern life"
+    },
+    {
+      "start": 103.58,
+      "end": 107.46,
+      "text": "The internet itself is only a useful tool"
+    },
+    {
+      "start": 108.9,
+      "end": 110.46,
+      "text": "What we use it for"
+    },
+    {
+      "start": 110.46,
+      "end": 113.6,
+      "text": "And how we keep our distance from it"
+    },
+    {
+      "start": 113.6,
+      "end": 117.64,
+      "text": "Depends on the judgement of each one of us"
+    },
+    {
+      "start": 117.64,
+      "end": 119.82,
+      "text": "How to live as a human being"
+    },
+    {
+      "start": 119.82,
+      "end": 122.12,
+      "text": "Inside the digital age"
+    },
+    {
+      "start": 122.9,
+      "end": 127.58,
+      "text": "That is the challenge of the generations to come"
+    },
+    {
+      "start": 134.34,
+      "end": 135.74,
+      "text": "you"
+    }
+  ]
+}

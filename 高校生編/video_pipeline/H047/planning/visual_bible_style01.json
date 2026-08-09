@@ -1,0 +1,52 @@
+{
+  "lesson": "H047",
+  "title": "市場経済の仕組み",
+  "style": "画風01・光彩のある劇場アニメ背景を基調にした現代社会ドキュメンタリー",
+  "setting": "現代の日本を想起させる架空の海辺の都市。市場、工場、家庭、学校、診療所、銀行、港が同じ都市圏に属する",
+  "continuity": {
+    "student": "H15基準の同じ17歳男子高校生。短い黒髪、紺の制服コート、灰色のマフラー、黒いリュック。導入と結末だけに登場",
+    "product": "文字やロゴのない青緑色の再利用ボトル。需要増と需要減の場面で同じ形を保つ",
+    "company": "中規模の生活用品メーカー。青緑色の製品、清潔で現実的な工場、経営者・技術者・作業員の協働",
+    "city_palette": "群青の影、夕方の琥珀色、青緑の製品アクセント。過度な企業広告色は使わない"
+  },
+  "sequence": [
+    "市場でgoodsとservicesが交換される",
+    "特定productへのdemand増加と在庫減少",
+    "demand減少と在庫増加",
+    "capital、factory production、販売、profitの企業循環",
+    "competitionがquality改善を促す",
+    "laborに対してwagesとsalariesが支払われる",
+    "stable employmentとhousehold income",
+    "taxesが教育・福祉などの公共サービスを支える",
+    "bank loansとinvestmentが企業成長を支える",
+    "exportsとimportsが港を通じて行き交う",
+    "国境を越えて相互に影響するeconomies"
+  ],
+  "accuracy": [
+    "価格変化を絶対法則や善悪として描かず、他条件が同じときの基本的な需要供給の説明として扱う",
+    "profitを現金の山にせず、販売収入・費用・再投資の循環として描く",
+    "wagesとsalariesは労働の対価として描き、無償労働や搾取を称賛しない",
+    "税金から学校・診療所への支出を、政府と予算を介さない魔法の送金として描かない",
+    "bank loansは契約と返済を伴う融資として描き、無条件の贈与にしない",
+    "exportsとimportsは双方向の物流として描き、経済成長を港だけの成果に単純化しない",
+    "statesは米国の州ではなく国家として扱い、国境を越える相互依存を描く"
+  ],
+  "composition": {
+    "aspect_ratio": "16:9",
+    "subtitle_safe_area": "主要な顔、手、製品、機械、学校、診療所、船、列車は画面下45%より上に置く",
+    "camera": "一ショットにつき一定方向の寄り、引き、静止のいずれか一つ",
+    "text": "読める価格、帳簿、契約、看板、ブランド、国名、グラフ数値を画像内に生成しない"
+  },
+  "avoid": [
+    "写真調、油彩、企業広告、金融ホログラム、空中UI、金貨の雨、札束の山",
+    "特定企業ロゴ、読める文字、価格、通貨記号、国旗の過剰使用、透かし",
+    "需要供給を一本の矢印だけで済ませる抽象図、労働者を無個性な背景群衆にする表現",
+    "現代の工場・港に不自然な時代遅れ機械、危険な保護具なし作業"
+  ],
+  "imagegen": {
+    "mode": "built-in ImageGen",
+    "planned_master_count": 11,
+    "selected_output_directory": "scenes/character_refs",
+    "video_scene_directory": "scenes/final_style01"
+  }
+}

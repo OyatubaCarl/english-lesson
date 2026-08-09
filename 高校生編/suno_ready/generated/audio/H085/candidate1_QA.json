@@ -1,0 +1,205 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H085.md",
+  "audio": "高校生編/suno_ready/generated/audio/H085/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 131.12,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0051,
+  "expected_words": 195,
+  "transcribed_words": 196,
+  "matched_words": 191,
+  "coverage": 0.9795,
+  "precision": 0.9745,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 194,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 27,
+      "length": 2,
+      "words": [
+        "what",
+        "blocks"
+      ]
+    },
+    {
+      "start": 18,
+      "length": 1,
+      "words": [
+        "and"
+      ]
+    },
+    {
+      "start": 23,
+      "length": 1,
+      "words": [
+        "dropout"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 18,
+      "actual_start": 18,
+      "expected": [
+        "and"
+      ],
+      "actual": [
+        "in"
+      ],
+      "actual_confidence": 0.978,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 23,
+      "actual_start": 23,
+      "expected": [
+        "dropout"
+      ],
+      "actual": [
+        "drop",
+        "out"
+      ],
+      "actual_confidence": 0.6887,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 27,
+      "actual_start": 28,
+      "expected": [
+        "what",
+        "blocks"
+      ],
+      "actual": [
+        "we'll",
+        "block"
+      ],
+      "actual_confidence": 0.56,
+      "substitution_words": 2,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": false,
+  "transcript": "In the world today, there are still children who cannot receive even elementary education. In sub-Saharan Africa, in South Asia absence and drop out are serious problems, We'll block access to education, poverty conflict, geographical isolation, and gender inequality. Families unable to pay school fees, villages where children must walk for hours to reach a school. Customs that deny girls the right to attend. These disadvantages create deep inequality. Yet many studies have shown that education is the most effective tool for breaking the cycle of poverty. An educated woman tends to raise healthier children and to earn a higher income. The United Nations has set the goal. Quality education for all by 2030. Through scholarships, the spread of digital learning And the training of teachers Each country pursues its own path Toward achievement With the spread of tablets and the internet Even remote areas are gaining access To educational content Technology can be a great force In closing the gap in education Education has the power to change Not only the life of a single person But the whole of society That is why investment in education Is the most efficient investment in the future",
+  "segments": [
+    {
+      "start": 4.62,
+      "end": 13.5,
+      "text": "In the world today, there are still children who cannot receive even elementary education."
+    },
+    {
+      "start": 15.64,
+      "end": 22.74,
+      "text": "In sub-Saharan Africa, in South Asia absence and drop out are serious problems,"
+    },
+    {
+      "start": 22.74,
+      "end": 34.52,
+      "text": "We'll block access to education, poverty conflict, geographical isolation, and gender inequality."
+    },
+    {
+      "start": 37.38,
+      "end": 45.42,
+      "text": "Families unable to pay school fees, villages where children must walk for hours to reach a school."
+    },
+    {
+      "start": 45.94,
+      "end": 49.12,
+      "text": "Customs that deny girls the right to attend."
+    },
+    {
+      "start": 49.12,
+      "end": 62.26,
+      "text": "These disadvantages create deep inequality. Yet many studies have shown that education is the most effective tool for breaking the cycle of poverty."
+    },
+    {
+      "start": 63.88,
+      "end": 70.06,
+      "text": "An educated woman tends to raise healthier children and to earn a higher income."
+    },
+    {
+      "start": 70.62,
+      "end": 77.2,
+      "text": "The United Nations has set the goal. Quality education for all by 2030."
+    },
+    {
+      "start": 77.2,
+      "end": 81.42,
+      "text": "Through scholarships, the spread of digital learning"
+    },
+    {
+      "start": 81.42,
+      "end": 83.56,
+      "text": "And the training of teachers"
+    },
+    {
+      "start": 83.56,
+      "end": 86.82,
+      "text": "Each country pursues its own path"
+    },
+    {
+      "start": 86.82,
+      "end": 88.82,
+      "text": "Toward achievement"
+    },
+    {
+      "start": 90.2,
+      "end": 93.54,
+      "text": "With the spread of tablets and the internet"
+    },
+    {
+      "start": 93.54,
+      "end": 96.94,
+      "text": "Even remote areas are gaining access"
+    },
+    {
+      "start": 96.94,
+      "end": 100.06,
+      "text": "To educational content"
+    },
+    {
+      "start": 101.2,
+      "end": 103.2,
+      "text": "Technology can be a great force"
+    },
+    {
+      "start": 103.2,
+      "end": 106.26,
+      "text": "In closing the gap in education"
+    },
+    {
+      "start": 106.26,
+      "end": 109.02,
+      "text": "Education has the power to change"
+    },
+    {
+      "start": 109.02,
+      "end": 112.64,
+      "text": "Not only the life of a single person"
+    },
+    {
+      "start": 114.26,
+      "end": 117.14,
+      "text": "But the whole of society"
+    },
+    {
+      "start": 118.26,
+      "end": 121.84,
+      "text": "That is why investment in education"
+    },
+    {
+      "start": 123.26,
+      "end": 128.88,
+      "text": "Is the most efficient investment in the future"
+    }
+  ]
+}

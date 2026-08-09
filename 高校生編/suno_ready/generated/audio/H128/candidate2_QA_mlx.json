@@ -1,0 +1,210 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H128.md",
+  "audio": "高校生編/suno_ready/generated/audio/H128/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 145.72,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0084,
+  "expected_words": 238,
+  "transcribed_words": 240,
+  "matched_words": 236,
+  "coverage": 0.9916,
+  "precision": 0.9833,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 237,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 58,
+      "length": 1,
+      "words": [
+        "result"
+      ]
+    },
+    {
+      "start": 138,
+      "length": 1,
+      "words": [
+        "than"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 58,
+      "actual_start": 58,
+      "expected": [
+        "result"
+      ],
+      "actual": [
+        "results"
+      ],
+      "actual_confidence": 0.9116,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 138,
+      "actual_start": 140,
+      "expected": [
+        "than"
+      ],
+      "actual": [
+        "then"
+      ],
+      "actual_confidence": 0.5957,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 108,
+      "actual_start": 108,
+      "expected": [],
+      "actual": [
+        "to"
+      ],
+      "actual_confidence": 0.5469
+    },
+    {
+      "expected_start": 128,
+      "actual_start": 129,
+      "expected": [],
+      "actual": [
+        "five"
+      ],
+      "actual_confidence": 0.8691
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "A driver's license is a symbol of adult status in many countries The freedom to drive one's own car and go anywhere It is an aspiration for many young people But driving comes with great responsibility A car is a convenient tool but with a single wrong judgment, it can become a weapon that takes a life. The results of a wrong maneuver can be fatal. In recent years, self-driving technology has advanced rapidly. The age is coming when AI handles many driving tasks, and the human operator is placed in a passive position. There are five levels of autonomous driving Currently, most cars are around level two They are at the stage of assisting some functions Such as lane keeping and automatic braking Fully autonomous driving Level five is still under development Whether AI can make smarter decisions Then a human in complex traffic and traffic jams is still open to debate. In the case of an accident, who is responsible? The driver, the carmaker, or the AI developer? Current law has not caught up with this new phase. If autonomous driving spreads, the number of traffic deaths is expected to decrease. Accidents caused by human inattention, fatigue or drunk driving could be reduced, although AI introduces risks of its own. But at the same time, many taxi and truck drivers may lose their jobs. Technological progress is inevitable But we must keep thinking about how society adapts",
+  "segments": [
+    {
+      "start": 10.78,
+      "end": 16.1,
+      "text": "A driver's license is a symbol of adult status in many countries"
+    },
+    {
+      "start": 16.1,
+      "end": 19.84,
+      "text": "The freedom to drive one's own car and go anywhere"
+    },
+    {
+      "start": 19.84,
+      "end": 24.62,
+      "text": "It is an aspiration for many young people"
+    },
+    {
+      "start": 24.62,
+      "end": 28.94,
+      "text": "But driving comes with great responsibility"
+    },
+    {
+      "start": 30.64,
+      "end": 38.56,
+      "text": "A car is a convenient tool but with a single wrong judgment, it can become a weapon that takes a life."
+    },
+    {
+      "start": 39.98,
+      "end": 48.58,
+      "text": "The results of a wrong maneuver can be fatal. In recent years, self-driving technology has advanced rapidly."
+    },
+    {
+      "start": 50.04,
+      "end": 58.04,
+      "text": "The age is coming when AI handles many driving tasks, and the human operator is placed in a passive position."
+    },
+    {
+      "start": 58.04,
+      "end": 62.4,
+      "text": "There are five levels of autonomous driving"
+    },
+    {
+      "start": 62.4,
+      "end": 67.44,
+      "text": "Currently, most cars are around level two"
+    },
+    {
+      "start": 71.3,
+      "end": 74.98,
+      "text": "They are at the stage of assisting some functions"
+    },
+    {
+      "start": 74.98,
+      "end": 77.84,
+      "text": "Such as lane keeping and automatic braking"
+    },
+    {
+      "start": 77.84,
+      "end": 80.94,
+      "text": "Fully autonomous driving"
+    },
+    {
+      "start": 80.94,
+      "end": 84.0,
+      "text": "Level five is still under development"
+    },
+    {
+      "start": 84.0,
+      "end": 86.9,
+      "text": "Whether AI can make smarter decisions"
+    },
+    {
+      "start": 86.9,
+      "end": 93.82,
+      "text": "Then a human in complex traffic and traffic jams is still open to debate."
+    },
+    {
+      "start": 97.78,
+      "end": 100.88,
+      "text": "In the case of an accident, who is responsible?"
+    },
+    {
+      "start": 101.12,
+      "end": 104.94,
+      "text": "The driver, the carmaker, or the AI developer?"
+    },
+    {
+      "start": 105.28,
+      "end": 108.72,
+      "text": "Current law has not caught up with this new phase."
+    },
+    {
+      "start": 108.72,
+      "end": 117.88,
+      "text": "If autonomous driving spreads, the number of traffic deaths is expected to decrease."
+    },
+    {
+      "start": 119.92,
+      "end": 126.4,
+      "text": "Accidents caused by human inattention, fatigue or drunk driving could be reduced,"
+    },
+    {
+      "start": 126.7,
+      "end": 130.1,
+      "text": "although AI introduces risks of its own."
+    },
+    {
+      "start": 131.14,
+      "end": 136.84,
+      "text": "But at the same time, many taxi and truck drivers may lose their jobs."
+    },
+    {
+      "start": 136.84,
+      "end": 140.4,
+      "text": "Technological progress is inevitable"
+    },
+    {
+      "start": 140.4,
+      "end": 145.72,
+      "text": "But we must keep thinking about how society adapts"
+    }
+  ]
+}

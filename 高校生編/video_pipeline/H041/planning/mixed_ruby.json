@@ -1,0 +1,1116 @@
+{
+  "lesson": "H041",
+  "title_ja": "暗号を解いた男 ― アラン・チューリング",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 12,
+  "canonical_target_lines": 10,
+  "mixed_lines": 10,
+  "japanese_only_lines": 2,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 5.56,
+      "end": 15.724,
+      "english": "During the Second World War, at Bletchley Park in Britain, the young mathematician Alan Turing was trying to crack the German Enigma cipher.",
+      "japanese": "第二次世界大戦中、イギリスのブレッチリー・パークで、若き数学者アラン・チューリングはドイツのエニグマ暗号を解読しようとしていた。",
+      "mixed": "第二次世界大戦中、英国のブレッチリー・パークで、若い数学者アラン・チューリングはドイツのエニグマ暗号を crack しようとしていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "第二次世界大戦中、英国のブレッチリー・パークで、若い数学者アラン・チューリングはドイツのエニグマ暗号を ",
+          "parts": [
+            {
+              "text": "第",
+              "ruby": "だい"
+            },
+            {
+              "text": "二",
+              "ruby": "に"
+            },
+            {
+              "text": "次",
+              "ruby": "じ"
+            },
+            {
+              "text": "世界",
+              "ruby": "せかい"
+            },
+            {
+              "text": "大戦",
+              "ruby": "たいせん"
+            },
+            {
+              "text": "中",
+              "ruby": "ちゅう"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "英国",
+              "ruby": "えいこく"
+            },
+            {
+              "text": "のブレッチリー・パークで、",
+              "ruby": ""
+            },
+            {
+              "text": "若",
+              "ruby": "わか"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "数学",
+              "ruby": "すうがく"
+            },
+            {
+              "text": "者",
+              "ruby": "しゃ"
+            },
+            {
+              "text": "アラン・チューリングはドイツのエニグマ",
+              "ruby": ""
+            },
+            {
+              "text": "暗号",
+              "ruby": "あんごう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "crack",
+          "ruby": "破る"
+        },
+        {
+          "type": "ja",
+          "text": " しようとしていました。",
+          "parts": [
+            {
+              "text": "しようとしていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "crack",
+          "canonical_word": "cracked",
+          "meaning": "破った"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "crack",
+          "reading": "破る",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "cracked",
+          "canonical_meaning": "破った"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 2,
+      "start": 15.724,
+      "end": 19.665,
+      "english": "Every day, the German submarine fleet exchanged encrypted messages.",
+      "japanese": "ドイツの潜水艦隊は毎日、暗号化されたメッセージを交換していました。",
+      "mixed": "ドイツの submarine 艦隊は毎日、encrypted 通信を交わしていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ドイツの ",
+          "parts": [
+            {
+              "text": "ドイツの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "submarine",
+          "ruby": "潜水艦"
+        },
+        {
+          "type": "ja",
+          "text": " 艦隊は毎日、",
+          "parts": [
+            {
+              "text": "艦隊",
+              "ruby": "かんたい"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "毎日",
+              "ruby": "まいにち"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "encrypted",
+          "ruby": "暗号化された"
+        },
+        {
+          "type": "ja",
+          "text": " 通信を交わしていました。",
+          "parts": [
+            {
+              "text": "通信",
+              "ruby": "つうしん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "交",
+              "ruby": "か"
+            },
+            {
+              "text": "わしていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "submarine",
+          "canonical_word": "submarine",
+          "meaning": "潜水艦"
+        },
+        {
+          "english": "encrypted",
+          "canonical_word": "encrypt",
+          "meaning": "暗号化する"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "submarine",
+          "reading": "潜水艦",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "submarine",
+          "canonical_meaning": "潜水艦"
+        },
+        {
+          "english": "encrypted",
+          "reading": "暗号化された",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "encrypt",
+          "canonical_meaning": "暗号化する"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 3,
+      "start": 19.665,
+      "end": 24.32,
+      "english": "If they could not be decoded, Allied ships could be sunk one after another.",
+      "japanese": "解読できなければ連合軍の艦船が次々と沈没する可能性がある。",
+      "mixed": "それらを解読できなければ、連合国 navy の艦船が次々と沈められるおそれがありました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "それらを解読できなければ、連合国 ",
+          "parts": [
+            {
+              "text": "それらを",
+              "ruby": ""
+            },
+            {
+              "text": "解読",
+              "ruby": "かいどく"
+            },
+            {
+              "text": "できなければ、",
+              "ruby": ""
+            },
+            {
+              "text": "連合",
+              "ruby": "れんごう"
+            },
+            {
+              "text": "国",
+              "ruby": "こく"
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "navy",
+          "ruby": "海軍"
+        },
+        {
+          "type": "ja",
+          "text": " の艦船が次々と沈められるおそれがありました。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "艦船",
+              "ruby": "かんせん"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "次々",
+              "ruby": "つぎつぎ"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "沈",
+              "ruby": "しず"
+            },
+            {
+              "text": "められるおそれがありました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [
+        {
+          "english": "navy",
+          "reading": "海軍",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "navy",
+          "canonical_meaning": "海軍"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 4,
+      "start": 25.6,
+      "end": 29.418,
+      "english": "Turing, with his colleagues, built a machine called the Bombe.",
+      "japanese": "チューリングは同僚とともにボンベと呼ばれる機械を作りました。",
+      "mixed": "チューリングは同僚たちとともに、ボンベと呼ばれる machine を作りました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "チューリングは同僚たちとともに、ボンベと呼ばれる ",
+          "parts": [
+            {
+              "text": "チューリングは",
+              "ruby": ""
+            },
+            {
+              "text": "同僚",
+              "ruby": "どうりょう"
+            },
+            {
+              "text": "たちとともに、ボンベと",
+              "ruby": ""
+            },
+            {
+              "text": "呼",
+              "ruby": "よ"
+            },
+            {
+              "text": "ばれる",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "machine",
+          "ruby": "機械"
+        },
+        {
+          "type": "ja",
+          "text": " を作りました。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "作",
+              "ruby": "つく"
+            },
+            {
+              "text": "りました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "machine",
+          "canonical_word": "machine",
+          "meaning": "機械"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "machine",
+          "reading": "機械",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "machine",
+          "canonical_meaning": "機械"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 5,
+      "start": 29.48,
+      "end": 35.4,
+      "english": "The machine rapidly eliminated impossible Enigma settings, helping the team read many messages.",
+      "japanese": "このマシンは不可能なエニグマ設定を迅速に排除し、チームが多くのメッセージを読むのに役立ちました。",
+      "mixed": "その machine は、logic によって不可能なエニグマ設定をすばやく除外し、チームが多くの通信を解読するのを助けました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "その ",
+          "parts": [
+            {
+              "text": "その",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "machine",
+          "ruby": "機械"
+        },
+        {
+          "type": "ja",
+          "text": " は、",
+          "parts": [
+            {
+              "text": "は、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "logic",
+          "ruby": "論理"
+        },
+        {
+          "type": "ja",
+          "text": " によって不可能なエニグマ設定をすばやく除外し、チームが多くの通信を解読するのを助けました。",
+          "parts": [
+            {
+              "text": "によって",
+              "ruby": ""
+            },
+            {
+              "text": "不",
+              "ruby": "ふ"
+            },
+            {
+              "text": "可能",
+              "ruby": "かのう"
+            },
+            {
+              "text": "なエニグマ",
+              "ruby": ""
+            },
+            {
+              "text": "設定",
+              "ruby": "せってい"
+            },
+            {
+              "text": "をすばやく",
+              "ruby": ""
+            },
+            {
+              "text": "除外",
+              "ruby": "じょがい"
+            },
+            {
+              "text": "し、チームが",
+              "ruby": ""
+            },
+            {
+              "text": "多",
+              "ruby": "おお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "通信",
+              "ruby": "つうしん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "解読",
+              "ruby": "かいどく"
+            },
+            {
+              "text": "するのを",
+              "ruby": ""
+            },
+            {
+              "text": "助",
+              "ruby": "たす"
+            },
+            {
+              "text": "けました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "machine",
+          "canonical_word": "machine",
+          "meaning": "機械"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "machine",
+          "reading": "機械",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "machine",
+          "canonical_meaning": "機械"
+        },
+        {
+          "english": "logic",
+          "reading": "論理",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "logic",
+          "canonical_meaning": "論理"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 6,
+      "start": 35.7,
+      "end": 40.4,
+      "english": "After the war, Turing explored the question, Can a machine think?",
+      "japanese": "戦後、チューリングは「機械は考えることができるのか?」という疑問を探求しました。",
+      "mixed": "戦後、チューリングは reason を働かせ、「machine は考えられるか」という問いを探究しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "戦後、チューリングは ",
+          "parts": [
+            {
+              "text": "戦後",
+              "ruby": "せんご"
+            },
+            {
+              "text": "、チューリングは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "reason",
+          "ruby": "理性"
+        },
+        {
+          "type": "ja",
+          "text": " を働かせ、「",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "働",
+              "ruby": "はたら"
+            },
+            {
+              "text": "かせ、「",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "machine",
+          "ruby": "機械"
+        },
+        {
+          "type": "ja",
+          "text": " は考えられるか」という問いを探究しました。",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "考",
+              "ruby": "かんが"
+            },
+            {
+              "text": "えられるか」という",
+              "ruby": ""
+            },
+            {
+              "text": "問",
+              "ruby": "と"
+            },
+            {
+              "text": "いを",
+              "ruby": ""
+            },
+            {
+              "text": "探究",
+              "ruby": "たんきゅう"
+            },
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "machine",
+          "canonical_word": "machine",
+          "meaning": "機械"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "reason",
+          "reading": "理性",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "reason",
+          "canonical_meaning": "理性"
+        },
+        {
+          "english": "machine",
+          "reading": "機械",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "machine",
+          "canonical_meaning": "機械"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 7,
+      "start": 40.7,
+      "end": 46.82,
+      "english": "His work became foundational to computer science and later debates about artificial intelligence.",
+      "japanese": "彼の研究はコンピューター サイエンスの基礎となり、その後人工知能に関する議論が行われました。",
+      "mixed": "彼の theory はコンピューター科学の foundation となり、のちの人工知能をめぐる議論につながりました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼の ",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "theory",
+          "ruby": "理論"
+        },
+        {
+          "type": "ja",
+          "text": " はコンピューター科学の ",
+          "parts": [
+            {
+              "text": "はコンピューター",
+              "ruby": ""
+            },
+            {
+              "text": "科学",
+              "ruby": "かがく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "foundation",
+          "ruby": "基礎"
+        },
+        {
+          "type": "ja",
+          "text": " となり、のちの人工知能をめぐる議論につながりました。",
+          "parts": [
+            {
+              "text": "となり、のちの",
+              "ruby": ""
+            },
+            {
+              "text": "人",
+              "ruby": "ひと"
+            },
+            {
+              "text": "工",
+              "ruby": "こう"
+            },
+            {
+              "text": "知能",
+              "ruby": "ちのう"
+            },
+            {
+              "text": "をめぐる",
+              "ruby": ""
+            },
+            {
+              "text": "議論",
+              "ruby": "ぎろん"
+            },
+            {
+              "text": "につながりました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [
+        {
+          "english": "theory",
+          "reading": "理論",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "theory",
+          "canonical_meaning": "理論"
+        },
+        {
+          "english": "foundation",
+          "reading": "基礎",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "foundation",
+          "canonical_meaning": "基礎"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 8,
+      "start": 47.32,
+      "end": 53.2,
+      "english": "But under the law of his time, homosexuality was criminalized, and he was prosecuted.",
+      "japanese": "しかし、当時の法律では同性愛は犯罪とされ、彼は起訴された。",
+      "mixed": "しかし当時の法律では同性愛が犯罪とされ、彼は prosecuted されました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "しかし当時の法律では同性愛が犯罪とされ、彼は ",
+          "parts": [
+            {
+              "text": "しかし",
+              "ruby": ""
+            },
+            {
+              "text": "当時",
+              "ruby": "とうじ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "法律",
+              "ruby": "ほうりつ"
+            },
+            {
+              "text": "では",
+              "ruby": ""
+            },
+            {
+              "text": "同性",
+              "ruby": "どうせい"
+            },
+            {
+              "text": "愛",
+              "ruby": "あい"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "犯罪",
+              "ruby": "はんざい"
+            },
+            {
+              "text": "とされ、",
+              "ruby": ""
+            },
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "prosecuted",
+          "ruby": "起訴された"
+        },
+        {
+          "type": "ja",
+          "text": " されました。",
+          "parts": [
+            {
+              "text": "されました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "prosecuted",
+          "canonical_word": "prosecuted",
+          "meaning": "起訴された"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "prosecuted",
+          "reading": "起訴された",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "prosecuted",
+          "canonical_meaning": "起訴された"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 9,
+      "start": 53.2,
+      "end": 54.894,
+      "english": "He died at forty-one.",
+      "japanese": "彼は41歳で亡くなりました。",
+      "mixed": "彼は41歳で亡くなりました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼は41歳で亡くなりました。",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "は41",
+              "ruby": ""
+            },
+            {
+              "text": "歳",
+              "ruby": "さい"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "亡",
+              "ruby": "な"
+            },
+            {
+              "text": "くなりました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 10,
+      "start": 54.786,
+      "end": 59.94,
+      "english": "The country he had helped defend later punished him for who he was.",
+      "japanese": "彼が守るために力を尽くした国は、後に、ありのままの彼を罰しました。",
+      "mixed": "彼が守るために力を尽くした国は、後に、ありのままの彼を罰しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼が守るために力を尽くした国は、後に、ありのままの彼を罰しました。",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "守",
+              "ruby": "まも"
+            },
+            {
+              "text": "るために",
+              "ruby": ""
+            },
+            {
+              "text": "力",
+              "ruby": "ちから"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "尽",
+              "ruby": "つ"
+            },
+            {
+              "text": "くした",
+              "ruby": ""
+            },
+            {
+              "text": "国",
+              "ruby": "くに"
+            },
+            {
+              "text": "は、",
+              "ruby": ""
+            },
+            {
+              "text": "後",
+              "ruby": "あと"
+            },
+            {
+              "text": "に、ありのままの",
+              "ruby": ""
+            },
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "罰",
+              "ruby": "ばっ"
+            },
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 11,
+      "start": 61.66,
+      "end": 66.922,
+      "english": "In 2013, Queen Elizabeth II granted him an official pardon.",
+      "japanese": "2013年、女王エリザベス2世は彼に正式な恩赦を与えた。",
+      "mixed": "2013年、エリザベス2世女王は彼に正式な pardon を与えました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "2013年、エリザベス2世女王は彼に正式な ",
+          "parts": [
+            {
+              "text": "2013",
+              "ruby": ""
+            },
+            {
+              "text": "年",
+              "ruby": "ねん"
+            },
+            {
+              "text": "、エリザベス2",
+              "ruby": ""
+            },
+            {
+              "text": "世",
+              "ruby": "せい"
+            },
+            {
+              "text": "女王",
+              "ruby": "じょおう"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "正式",
+              "ruby": "せいしき"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "pardon",
+          "ruby": "恩赦"
+        },
+        {
+          "type": "ja",
+          "text": " を与えました。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "与",
+              "ruby": "あた"
+            },
+            {
+              "text": "えました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "pardon",
+          "canonical_word": "pardon",
+          "meaning": "恩赦"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "pardon",
+          "reading": "恩赦",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "pardon",
+          "canonical_meaning": "恩赦"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 12,
+      "start": 66.922,
+      "end": 70.08,
+      "english": "The pardon came far too late.",
+      "japanese": "恩赦はあまりにも遅すぎた。",
+      "mixed": "その pardon は、あまりにも遅すぎました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "その ",
+          "parts": [
+            {
+              "text": "その",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "pardon",
+          "ruby": "恩赦"
+        },
+        {
+          "type": "ja",
+          "text": " は、あまりにも遅すぎました。",
+          "parts": [
+            {
+              "text": "は、あまりにも",
+              "ruby": ""
+            },
+            {
+              "text": "遅",
+              "ruby": "おそ"
+            },
+            {
+              "text": "すぎました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "pardon",
+          "canonical_word": "pardon",
+          "meaning": "恩赦"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "pardon",
+          "reading": "恩赦",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "pardon",
+          "canonical_meaning": "恩赦"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H134.md",
+  "audio": "高校生編/suno_ready/generated/audio/H134/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 172.4,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0042,
+  "expected_words": 240,
+  "transcribed_words": 241,
+  "matched_words": 236,
+  "coverage": 0.9833,
+  "precision": 0.9793,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 239,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 65,
+      "length": 1,
+      "words": [
+        "stories"
+      ]
+    },
+    {
+      "start": 67,
+      "length": 1,
+      "words": [
+        "has"
+      ]
+    },
+    {
+      "start": 164,
+      "length": 1,
+      "words": [
+        "solve"
+      ]
+    },
+    {
+      "start": 203,
+      "length": 1,
+      "words": [
+        "altogether"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 65,
+      "actual_start": 65,
+      "expected": [
+        "stories"
+      ],
+      "actual": [
+        "story"
+      ],
+      "actual_confidence": 0.6447,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 67,
+      "actual_start": 67,
+      "expected": [
+        "has"
+      ],
+      "actual": [
+        "is"
+      ],
+      "actual_confidence": 0.9905,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 164,
+      "actual_start": 164,
+      "expected": [
+        "solve"
+      ],
+      "actual": [
+        "saw"
+      ],
+      "actual_confidence": 0.5976,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 203,
+      "actual_start": 203,
+      "expected": [
+        "altogether"
+      ],
+      "actual": [
+        "all",
+        "together"
+      ],
+      "actual_confidence": 0.7941,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "My family is raising eight-year-old twin daughters, Emma and Sophia. Their resemblance is striking, but their personalities are characteristically different. Emma is logical and thinks about things In an orderly way, she is good at math and science And she often devises puzzles to entertain the family Sophia, on the other hand, is sensitive and artistic She draws, sings, and reads out the story She is made up to the family Even adults can be astonished at her power of expression Genetically identical twins share nearly the same genes Yet as they grew, each one's personality has become more and more distinct This provides an interesting reference For studies of nature versus nurture, genes alone Do not determine personality Environment, experience and the person's own choices shape each one If even twins differ, of course every human is unique What matters in raising a child is respecting each one's personality Making Emma draw the same picture As Sophia is pointless Making Sophia saw the same puzzle As Emma is painful The parents' role is to cultivate each child's strengths But parents are not the only ones Who raise excellent human beings School teachers, friends, local community And the child's own effort, all together They shape a single person Emma and Sophia are growing up today Quarreling and laughing as they grow up What kind of adults will they become? As a parent, I am eagerly looking forward to it",
+  "segments": [
+    {
+      "start": 10.66,
+      "end": 18.06,
+      "text": "My family is raising eight-year-old twin daughters, Emma and Sophia."
+    },
+    {
+      "start": 19.56,
+      "end": 24.4,
+      "text": "Their resemblance is striking, but their personalities are characteristically different."
+    },
+    {
+      "start": 24.4,
+      "end": 27.74,
+      "text": "Emma is logical and thinks about things"
+    },
+    {
+      "start": 28.4,
+      "end": 31.84,
+      "text": "In an orderly way, she is good at math and science"
+    },
+    {
+      "start": 32.4,
+      "end": 36.78,
+      "text": "And she often devises puzzles to entertain the family"
+    },
+    {
+      "start": 39.0,
+      "end": 44.34,
+      "text": "Sophia, on the other hand, is sensitive and artistic"
+    },
+    {
+      "start": 44.34,
+      "end": 48.18,
+      "text": "She draws, sings, and reads out the story"
+    },
+    {
+      "start": 48.18,
+      "end": 50.52,
+      "text": "She is made up to the family"
+    },
+    {
+      "start": 50.52,
+      "end": 56.46,
+      "text": "Even adults can be astonished at her power of expression"
+    },
+    {
+      "start": 57.46,
+      "end": 62.84,
+      "text": "Genetically identical twins share nearly the same genes"
+    },
+    {
+      "start": 62.84,
+      "end": 68.54,
+      "text": "Yet as they grew, each one's personality has become more and more distinct"
+    },
+    {
+      "start": 68.54,
+      "end": 71.52,
+      "text": "This provides an interesting reference"
+    },
+    {
+      "start": 72.1,
+      "end": 76.42,
+      "text": "For studies of nature versus nurture, genes alone"
+    },
+    {
+      "start": 76.42,
+      "end": 80.3,
+      "text": "Do not determine personality"
+    },
+    {
+      "start": 81.6,
+      "end": 87.54,
+      "text": "Environment, experience and the person's own choices shape each one"
+    },
+    {
+      "start": 87.54,
+      "end": 93.14,
+      "text": "If even twins differ, of course every human is unique"
+    },
+    {
+      "start": 93.14,
+      "end": 99.32,
+      "text": "What matters in raising a child is respecting each one's personality"
+    },
+    {
+      "start": 99.32,
+      "end": 102.34,
+      "text": "Making Emma draw the same picture"
+    },
+    {
+      "start": 102.34,
+      "end": 105.42,
+      "text": "As Sophia is pointless"
+    },
+    {
+      "start": 106.32,
+      "end": 109.84,
+      "text": "Making Sophia saw the same puzzle"
+    },
+    {
+      "start": 109.84,
+      "end": 112.76,
+      "text": "As Emma is painful"
+    },
+    {
+      "start": 113.32,
+      "end": 118.6,
+      "text": "The parents' role is to cultivate each child's strengths"
+    },
+    {
+      "start": 119.32,
+      "end": 122.32,
+      "text": "But parents are not the only ones"
+    },
+    {
+      "start": 122.32,
+      "end": 124.84,
+      "text": "Who raise excellent human beings"
+    },
+    {
+      "start": 124.84,
+      "end": 128.94,
+      "text": "School teachers, friends, local community"
+    },
+    {
+      "start": 130.84,
+      "end": 134.06,
+      "text": "And the child's own effort, all together"
+    },
+    {
+      "start": 134.84,
+      "end": 137.18,
+      "text": "They shape a single person"
+    },
+    {
+      "start": 137.84,
+      "end": 142.78,
+      "text": "Emma and Sophia are growing up today"
+    },
+    {
+      "start": 142.78,
+      "end": 146.52,
+      "text": "Quarreling and laughing as they grow up"
+    },
+    {
+      "start": 146.52,
+      "end": 149.88,
+      "text": "What kind of adults will they become?"
+    },
+    {
+      "start": 149.88,
+      "end": 157.06,
+      "text": "As a parent, I am eagerly looking forward to it"
+    }
+  ]
+}

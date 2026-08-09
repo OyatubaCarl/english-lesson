@@ -1,0 +1,1093 @@
+{
+  "lesson": "H003",
+  "title_ja": "本屋での午後",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 13,
+  "canonical_target_lines": 10,
+  "mixed_lines": 5,
+  "japanese_only_lines": 8,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 0.0,
+      "end": 4.2,
+      "english": "The library had a quiet atmosphere that afternoon.",
+      "japanese": "その日の午後、図書館は静かな雰囲気でした。",
+      "mixed": "その日の午後、図書館は静かな atmosphere でした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "その日の午後、図書館は静かな ",
+          "parts": [
+            {
+              "text": "その",
+              "ruby": ""
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "午後",
+              "ruby": "ごご"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "図書",
+              "ruby": "としょ"
+            },
+            {
+              "text": "館",
+              "ruby": "かん"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かな",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "atmosphere",
+          "ruby": "雰囲気"
+        },
+        {
+          "type": "ja",
+          "text": " でした。",
+          "parts": [
+            {
+              "text": "でした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "atmosphere",
+          "canonical_word": "atmosphere",
+          "meaning": "雰囲気"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "atmosphere",
+          "reading": "雰囲気",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "atmosphere",
+          "canonical_meaning": "雰囲気"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 2,
+      "start": 4.2,
+      "end": 9.48,
+      "english": "I picked up a small essay collection and opened the first chapter.",
+      "japanese": "私は小さなエッセイ集を手に取り、第一章を開いた。",
+      "mixed": "私は小さなエッセイ集を手に取り、第一 chapter を開いた。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私は小さなエッセイ集を手に取り、第一 ",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さなエッセイ",
+              "ruby": ""
+            },
+            {
+              "text": "集",
+              "ruby": "しゅう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "手",
+              "ruby": "て"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "取",
+              "ruby": "と"
+            },
+            {
+              "text": "り、",
+              "ruby": ""
+            },
+            {
+              "text": "第一",
+              "ruby": "だいいち"
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "chapter",
+          "ruby": "章"
+        },
+        {
+          "type": "ja",
+          "text": " を開いた。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "開",
+              "ruby": "ひら"
+            },
+            {
+              "text": "いた。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "essay",
+          "canonical_word": "essay",
+          "meaning": "随筆"
+        },
+        {
+          "english": "chapter",
+          "canonical_word": "chapter",
+          "meaning": "章"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "chapter",
+          "reading": "章",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "chapter",
+          "canonical_meaning": "章"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 3,
+      "start": 9.48,
+      "end": 15.06,
+      "english": "The author gently described small discoveries in daily life.",
+      "japanese": "著者は日常の小さな発見を優しく綴った。",
+      "mixed": "author は日常の小さな発見を優しく綴った。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "author",
+          "ruby": "著者"
+        },
+        {
+          "type": "ja",
+          "text": " は日常の小さな発見を優しく綴った。",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "日常",
+              "ruby": "にちじょう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            },
+            {
+              "text": "発見",
+              "ruby": "はっけん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "優",
+              "ruby": "やさ"
+            },
+            {
+              "text": "しく",
+              "ruby": ""
+            },
+            {
+              "text": "綴",
+              "ruby": "つづ"
+            },
+            {
+              "text": "った。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "author",
+          "canonical_word": "author",
+          "meaning": "著者"
+        },
+        {
+          "english": "described",
+          "canonical_word": "described",
+          "meaning": "描写した"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "author",
+          "reading": "著者",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "author",
+          "canonical_meaning": "著者"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 4,
+      "start": 19.3,
+      "end": 28.54,
+      "english": "In one paragraph he expressed a memory; in another he openly described the desires of his youth.",
+      "japanese": "ある段落で彼は思い出を述べた。別の記事では、彼は若い頃の欲望を公然と語った。",
+      "mixed": "ある段落で彼は思い出を述べた。別の記事では、彼は若い頃の欲望を公然と語った。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ある段落で彼は思い出を述べた。別の記事では、彼は若い頃の欲望を公然と語った。",
+          "parts": [
+            {
+              "text": "ある",
+              "ruby": ""
+            },
+            {
+              "text": "段落",
+              "ruby": "だんらく"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "思い出",
+              "ruby": "おもいで"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "述",
+              "ruby": "の"
+            },
+            {
+              "text": "べた。",
+              "ruby": ""
+            },
+            {
+              "text": "別",
+              "ruby": "べつ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "記事",
+              "ruby": "きじ"
+            },
+            {
+              "text": "では、",
+              "ruby": ""
+            },
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "若",
+              "ruby": "わか"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "頃",
+              "ruby": "ころ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "欲望",
+              "ruby": "よくぼう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "公然",
+              "ruby": "こうぜん"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "語",
+              "ruby": "かた"
+            },
+            {
+              "text": "った。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "expressed",
+          "canonical_word": "expressed",
+          "meaning": "表現した"
+        },
+        {
+          "english": "described",
+          "canonical_word": "described",
+          "meaning": "描写した"
+        },
+        {
+          "english": "desires",
+          "canonical_word": "desire",
+          "meaning": "望み"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 5,
+      "start": 28.54,
+      "end": 33.46,
+      "english": "The writing strongly appealed to me and held my attention.",
+      "japanese": "その文章は私に強く訴えかけ、私の注意を引きつけました。",
+      "mixed": "その文章は私に強く訴えかけ、私の注意を引きつけました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "その文章は私に強く訴えかけ、私の注意を引きつけました。",
+          "parts": [
+            {
+              "text": "その",
+              "ruby": ""
+            },
+            {
+              "text": "文章",
+              "ruby": "ぶんしょう"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "強",
+              "ruby": "つよ"
+            },
+            {
+              "text": "く",
+              "ruby": ""
+            },
+            {
+              "text": "訴",
+              "ruby": "うった"
+            },
+            {
+              "text": "えかけ、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "注意",
+              "ruby": "ちゅうい"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "引",
+              "ruby": "ひ"
+            },
+            {
+              "text": "きつけました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "appealed",
+          "canonical_word": "appealed",
+          "meaning": "訴えた"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 6,
+      "start": 33.46,
+      "end": 41.74,
+      "english": "The style was as calm as a philosophy book, yet something in it inspired me.",
+      "japanese": "哲学書のような穏やかな文体でありながら、何かインスピレーションを受けるものがありました。",
+      "mixed": "philosophy 書のような穏やかな文体でありながら、何かインスピレーションを受けるものがありました。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "philosophy",
+          "ruby": "哲学"
+        },
+        {
+          "type": "ja",
+          "text": " 書のような穏やかな文体でありながら、何かインスピレーションを受けるものがありました。",
+          "parts": [
+            {
+              "text": "書",
+              "ruby": "しょ"
+            },
+            {
+              "text": "のような",
+              "ruby": ""
+            },
+            {
+              "text": "穏",
+              "ruby": "おだ"
+            },
+            {
+              "text": "やかな",
+              "ruby": ""
+            },
+            {
+              "text": "文体",
+              "ruby": "ぶんたい"
+            },
+            {
+              "text": "でありながら、",
+              "ruby": ""
+            },
+            {
+              "text": "何",
+              "ruby": "なん"
+            },
+            {
+              "text": "かインスピレーションを",
+              "ruby": ""
+            },
+            {
+              "text": "受",
+              "ruby": "う"
+            },
+            {
+              "text": "けるものがありました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "philosophy",
+          "canonical_word": "philosophy",
+          "meaning": "哲学"
+        },
+        {
+          "english": "inspired",
+          "canonical_word": "inspired",
+          "meaning": "鼓舞した"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "philosophy",
+          "reading": "哲学",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "philosophy",
+          "canonical_meaning": "哲学"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 7,
+      "start": 42.7,
+      "end": 48.06,
+      "english": "I glanced out of the window, then returned to the page.",
+      "japanese": "私は窓の外をちらっと見てから、ページに戻りました。",
+      "mixed": "私は窓の外をちらっと見てから、ページに戻りました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私は窓の外をちらっと見てから、ページに戻りました。",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "窓",
+              "ruby": "まど"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "外",
+              "ruby": "そと"
+            },
+            {
+              "text": "をちらっと",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "てから、ページに",
+              "ruby": ""
+            },
+            {
+              "text": "戻",
+              "ruby": "もど"
+            },
+            {
+              "text": "りました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "glanced",
+          "canonical_word": "glanced",
+          "meaning": "ちらりと見た"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 8,
+      "start": 48.06,
+      "end": 54.697,
+      "english": "The mind that had composed these sentences was quiet, but it was full of passion.",
+      "japanese": "これらの文章を書いた心は静かでしたが、情熱に満ちていました。",
+      "mixed": "これらの文章を書いた心は静かでしたが、 passion に満ちていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "これらの文章を書いた心は静かでしたが、 ",
+          "parts": [
+            {
+              "text": "これらの",
+              "ruby": ""
+            },
+            {
+              "text": "文章",
+              "ruby": "ぶんしょう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "書",
+              "ruby": "か"
+            },
+            {
+              "text": "いた",
+              "ruby": ""
+            },
+            {
+              "text": "心",
+              "ruby": "こころ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かでしたが、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "passion",
+          "ruby": "情熱"
+        },
+        {
+          "type": "ja",
+          "text": " に満ちていました。",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "満",
+              "ruby": "み"
+            },
+            {
+              "text": "ちていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "composed",
+          "canonical_word": "composed",
+          "meaning": "構成した"
+        },
+        {
+          "english": "passion",
+          "canonical_word": "passion",
+          "meaning": "情熱"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "passion",
+          "reading": "情熱",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "passion",
+          "canonical_meaning": "情熱"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 9,
+      "start": 54.697,
+      "end": 57.78,
+      "english": "Outside, a small child ran past.",
+      "japanese": "外に出ると、小さな子供が走って通り過ぎていきました。",
+      "mixed": "外に出ると、小さな子供が走って通り過ぎていきました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "外に出ると、小さな子供が走って通り過ぎていきました。",
+          "parts": [
+            {
+              "text": "外",
+              "ruby": "そと"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "出",
+              "ruby": "で"
+            },
+            {
+              "text": "ると、",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            },
+            {
+              "text": "子供",
+              "ruby": "こども"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "走",
+              "ruby": "はし"
+            },
+            {
+              "text": "って",
+              "ruby": ""
+            },
+            {
+              "text": "通",
+              "ruby": "とお"
+            },
+            {
+              "text": "り",
+              "ruby": ""
+            },
+            {
+              "text": "過",
+              "ruby": "す"
+            },
+            {
+              "text": "ぎていきました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 10,
+      "start": 57.78,
+      "end": 60.08,
+      "english": "I watched him with curiosity.",
+      "japanese": "私は好奇心をもって彼を観察しました。",
+      "mixed": "私は好奇心をもって彼を観察しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私は好奇心をもって彼を観察しました。",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "好奇",
+              "ruby": "こうき"
+            },
+            {
+              "text": "心",
+              "ruby": "しん"
+            },
+            {
+              "text": "をもって",
+              "ruby": ""
+            },
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "観察",
+              "ruby": "かんさつ"
+            },
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 11,
+      "start": 60.08,
+      "end": 63.62,
+      "english": "Then I continued reading.",
+      "japanese": "それから私は読み続けました。",
+      "mixed": "それから私は読み続けました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "それから私は読み続けました。",
+          "parts": [
+            {
+              "text": "それから",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "読",
+              "ruby": "よ"
+            },
+            {
+              "text": "み",
+              "ruby": ""
+            },
+            {
+              "text": "続",
+              "ruby": "つづ"
+            },
+            {
+              "text": "けました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 12,
+      "start": 65.8,
+      "end": 70.04,
+      "english": "Words carry us beyond time.",
+      "japanese": "言葉は時を超えて私たちを連れて行ってくれます。",
+      "mixed": "言葉は時を超えて私たちを連れて行ってくれます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "言葉は時を超えて私たちを連れて行ってくれます。",
+          "parts": [
+            {
+              "text": "言葉",
+              "ruby": "ことば"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "時",
+              "ruby": "とき"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "超",
+              "ruby": "こ"
+            },
+            {
+              "text": "えて",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "たちを",
+              "ruby": ""
+            },
+            {
+              "text": "連",
+              "ruby": "つ"
+            },
+            {
+              "text": "れて",
+              "ruby": ""
+            },
+            {
+              "text": "行",
+              "ruby": "い"
+            },
+            {
+              "text": "ってくれます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "beyond",
+          "canonical_word": "beyond",
+          "meaning": "〜を越えて"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 13,
+      "start": 70.04,
+      "end": 76.08,
+      "english": "Today, I preferred this one book to everything else.",
+      "japanese": "今日、私は他のすべての本よりもこの一冊の方が好きでした。",
+      "mixed": "今日、私は他のすべての本よりもこの一冊の方が好きでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "今日、私は他のすべての本よりもこの一冊の方が好きでした。",
+          "parts": [
+            {
+              "text": "今日",
+              "ruby": "きょう"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "他",
+              "ruby": "た"
+            },
+            {
+              "text": "のすべての",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "もと"
+            },
+            {
+              "text": "よりもこの",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "いっ"
+            },
+            {
+              "text": "冊",
+              "ruby": "さつ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "方",
+              "ruby": "ほう"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "好",
+              "ruby": "す"
+            },
+            {
+              "text": "きでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "preferred",
+          "canonical_word": "preferred",
+          "meaning": "選んだ"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    }
+  ]
+}

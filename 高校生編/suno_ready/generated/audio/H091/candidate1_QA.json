@@ -1,0 +1,157 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H091.md",
+  "audio": "高校生編/suno_ready/generated/audio/H091/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 156.92,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9944,
+  "expected_words": 178,
+  "transcribed_words": 177,
+  "matched_words": 176,
+  "coverage": 0.9888,
+  "precision": 0.9944,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 177,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 19,
+      "length": 1,
+      "words": [
+        "a"
+      ]
+    },
+    {
+      "start": 64,
+      "length": 1,
+      "words": [
+        "harbor"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 64,
+      "actual_start": 63,
+      "expected": [
+        "harbor"
+      ],
+      "actual": [
+        "harbour"
+      ],
+      "actual_confidence": 0.7937,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 19,
+      "actual_start": 19,
+      "expected": [
+        "a"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "The week after I graduated from university I set off alone for southern Europe A cheap airline ticket and worn-out backpack were all I had The old quarter of Barcelona was a maze of bare stone walls and narrow lanes My footsteps echoed against the walls At every turn, a small craft shop or a folk music bar appeared Down at the harbour, a dozen fishing boats were lined up In the market, the scent of fresh bread and the aroma of rich spices drifted in the air And stirred my appetite, I took a train south And stayed at an inn in a whitewashed village The owners were a generous elderly couple who served me dinner The furniture was old but well kept On the last morning, I leaned on the balcony and looked out at the sea The wind blew gently, this time of leisure was exactly what I had been seeking on the journey The trip taught me something The world is far more friendly And far broader Than I had ever imagined",
+  "segments": [
+    {
+      "start": 8.96,
+      "end": 16.24,
+      "text": "The week after I graduated from university"
+    },
+    {
+      "start": 17.68,
+      "end": 24.16,
+      "text": "I set off alone for southern Europe"
+    },
+    {
+      "start": 24.16,
+      "end": 31.52,
+      "text": "A cheap airline ticket and worn-out backpack were all I had"
+    },
+    {
+      "start": 31.52,
+      "end": 43.56,
+      "text": "The old quarter of Barcelona was a maze of bare stone walls and narrow lanes"
+    },
+    {
+      "start": 44.86,
+      "end": 49.18,
+      "text": "My footsteps echoed against the walls"
+    },
+    {
+      "start": 49.18,
+      "end": 56.04,
+      "text": "At every turn, a small craft shop or a folk music bar appeared"
+    },
+    {
+      "start": 56.04,
+      "end": 62.36,
+      "text": "Down at the harbour, a dozen fishing boats were lined up"
+    },
+    {
+      "start": 66.18,
+      "end": 73.5,
+      "text": "In the market, the scent of fresh bread and the aroma of rich spices drifted in the air"
+    },
+    {
+      "start": 73.5,
+      "end": 77.92,
+      "text": "And stirred my appetite, I took a train south"
+    },
+    {
+      "start": 78.5,
+      "end": 83.92,
+      "text": "And stayed at an inn in a whitewashed village"
+    },
+    {
+      "start": 85.18,
+      "end": 93.66,
+      "text": "The owners were a generous elderly couple who served me dinner"
+    },
+    {
+      "start": 95.5,
+      "end": 100.66,
+      "text": "The furniture was old but well kept"
+    },
+    {
+      "start": 102.48,
+      "end": 112.92,
+      "text": "On the last morning, I leaned on the balcony and looked out at the sea"
+    },
+    {
+      "start": 115.08,
+      "end": 128.3,
+      "text": "The wind blew gently, this time of leisure was exactly what I had been seeking on the journey"
+    },
+    {
+      "start": 128.3,
+      "end": 132.22,
+      "text": "The trip taught me something"
+    },
+    {
+      "start": 133.3,
+      "end": 137.24,
+      "text": "The world is far more friendly"
+    },
+    {
+      "start": 137.24,
+      "end": 139.82,
+      "text": "And far broader"
+    },
+    {
+      "start": 141.3,
+      "end": 144.68,
+      "text": "Than I had ever imagined"
+    }
+  ]
+}

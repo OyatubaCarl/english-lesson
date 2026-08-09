@@ -1,0 +1,212 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H057.md",
+  "audio": "高校生編/suno_ready/generated/audio/H057/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 160.72,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0096,
+  "expected_words": 208,
+  "transcribed_words": 210,
+  "matched_words": 206,
+  "coverage": 0.9904,
+  "precision": 0.981,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 207,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 80,
+      "length": 1,
+      "words": [
+        "alternating"
+      ]
+    },
+    {
+      "start": 148,
+      "length": 1,
+      "words": [
+        "wardenclyffe"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 80,
+      "actual_start": 80,
+      "expected": [
+        "alternating"
+      ],
+      "actual": [
+        "ultimating"
+      ],
+      "actual_confidence": 0.9126,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 148,
+      "actual_start": 148,
+      "expected": [
+        "wardenclyffe"
+      ],
+      "actual": [
+        "warden",
+        "klyffe"
+      ],
+      "actual_confidence": 0.6115,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 208,
+      "actual_start": 209,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.4734
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "Nikola Tesla was born in 1856 in Smiljan, in what is now Croatia. He later moved to America and, from the late 19th to the early 20th century, became an immigrant inventor who transformed the world of electricity. His greatest contribution was to make alternating current electricity practical. At the time Thomas Edison was promoting direct current, Tesla argued for the advantage of alternating current for long-distance transmission, And a war of currents arose between them As a result, the ultimating current system Became the standard of the world's power grid Today, almost all of the electricity That reaches our homes owes much to the vision That Tesla pursued Tesla's imagination did not stop there He had already envisioned the foundations of wireless communication Wireless power transmission, radio and radar in Edison's age However, his life was never happy His business partnership did not go well And his Warden Klyffe Tower project collapsed for lack of funding Many of his patents did not bring him enough reward Tesla died in 1943 in a hotel room in New York in poverty The recognition of his genius Spread widely only after his death Today, we drive cars that bear his name And live within part of the future That he had imagined you",
+  "segments": [
+    {
+      "start": 12.18,
+      "end": 17.94,
+      "text": "Nikola Tesla was born in 1856 in Smiljan, in what is now Croatia."
+    },
+    {
+      "start": 19.16,
+      "end": 25.6,
+      "text": "He later moved to America and, from the late 19th to the early 20th century,"
+    },
+    {
+      "start": 25.6,
+      "end": 30.94,
+      "text": "became an immigrant inventor who transformed the world of electricity."
+    },
+    {
+      "start": 33.2,
+      "end": 38.66,
+      "text": "His greatest contribution was to make alternating current electricity practical."
+    },
+    {
+      "start": 39.68,
+      "end": 43.88,
+      "text": "At the time Thomas Edison was promoting direct current,"
+    },
+    {
+      "start": 44.64,
+      "end": 50.4,
+      "text": "Tesla argued for the advantage of alternating current for long-distance transmission,"
+    },
+    {
+      "start": 50.4,
+      "end": 55.12,
+      "text": "And a war of currents arose between them"
+    },
+    {
+      "start": 58.78,
+      "end": 63.22,
+      "text": "As a result, the ultimating current system"
+    },
+    {
+      "start": 63.22,
+      "end": 66.54,
+      "text": "Became the standard of the world's power grid"
+    },
+    {
+      "start": 67.46,
+      "end": 71.58,
+      "text": "Today, almost all of the electricity"
+    },
+    {
+      "start": 71.58,
+      "end": 75.24,
+      "text": "That reaches our homes owes much to the vision"
+    },
+    {
+      "start": 75.24,
+      "end": 77.16,
+      "text": "That Tesla pursued"
+    },
+    {
+      "start": 78.38,
+      "end": 82.66,
+      "text": "Tesla's imagination did not stop there"
+    },
+    {
+      "start": 85.64,
+      "end": 90.28,
+      "text": "He had already envisioned the foundations of wireless communication"
+    },
+    {
+      "start": 90.28,
+      "end": 95.22,
+      "text": "Wireless power transmission, radio and radar in Edison's age"
+    },
+    {
+      "start": 95.22,
+      "end": 99.3,
+      "text": "However, his life was never happy"
+    },
+    {
+      "start": 99.3,
+      "end": 103.78,
+      "text": "His business partnership did not go well"
+    },
+    {
+      "start": 103.78,
+      "end": 111.44,
+      "text": "And his Warden Klyffe Tower project collapsed for lack of funding"
+    },
+    {
+      "start": 116.04,
+      "end": 121.44,
+      "text": "Many of his patents did not bring him enough reward"
+    },
+    {
+      "start": 121.44,
+      "end": 129.02,
+      "text": "Tesla died in 1943 in a hotel room in New York in poverty"
+    },
+    {
+      "start": 129.02,
+      "end": 133.02,
+      "text": "The recognition of his genius"
+    },
+    {
+      "start": 133.02,
+      "end": 137.66,
+      "text": "Spread widely only after his death"
+    },
+    {
+      "start": 140.96,
+      "end": 145.64,
+      "text": "Today, we drive cars that bear his name"
+    },
+    {
+      "start": 145.64,
+      "end": 150.08,
+      "text": "And live within part of the future"
+    },
+    {
+      "start": 150.08,
+      "end": 153.9,
+      "text": "That he had imagined"
+    },
+    {
+      "start": 159.32,
+      "end": 160.72,
+      "text": "you"
+    }
+  ]
+}

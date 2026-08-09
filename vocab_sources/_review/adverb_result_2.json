@@ -1,0 +1,569 @@
+[
+  {
+    "id": "s6_1203",
+    "word": "likewise",
+    "action": "fix",
+    "reason": "「同様に」は副詞単独で動詞修飾でき、「に」が重複して冗長。",
+    "fixed_body": "上司が率先して残業を減らすと、若手も<likewise>勤務時間を見直し、休息の質を高める動きが広がった。"
+  },
+  {
+    "id": "s6_1218",
+    "word": "loosely",
+    "action": "fix",
+    "reason": "「おおざっぱに語る」は副詞修飾で完結し、追加の「に」は冗長。",
+    "fixed_body": "事件の経緯を<loosely>語った証言は信ぴょう性に欠け、裁判官は補強する証拠を求める必要があった。"
+  },
+  {
+    "id": "s6_1312",
+    "word": "momentarily",
+    "action": "fix",
+    "reason": "「一瞬消えた」で自然。「一瞬に」は不自然な助詞重複。",
+    "fixed_body": "雷鳴で照明が<momentarily>消えた瞬間、客席にざわめきが走り、舞台の役者は呼吸を整えて再開を待った。"
+  },
+  {
+    "id": "s6_1319",
+    "word": "morally",
+    "action": "keep",
+    "reason": "「道徳的に正しい」は「道徳的に」の「に」が訳の一部として自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_1349",
+    "word": "narrowly",
+    "action": "fix",
+    "reason": "「辛うじて勝負がついた」が自然。「辛うじてに」は不自然。",
+    "fixed_body": "決勝のレースは数センチの差で<narrowly>勝負がつき、両選手の健闘が観客の長い拍手で称えられた。"
+  },
+  {
+    "id": "s6_1357",
+    "word": "necessarily",
+    "action": "fix",
+    "reason": "「必ずしも保証する」が自然。「必ずしもに」は誤用。",
+    "fixed_body": "高価な機器が<necessarily>高い性能を保証するわけではなく、用途と相性を見極める姿勢が大切だと講師は語った。"
+  },
+  {
+    "id": "s6_1361",
+    "word": "negatively",
+    "action": "keep",
+    "reason": "「否定的に受け止める」は「に」が訳の一部として自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_1367",
+    "word": "nervously",
+    "action": "fix",
+    "reason": "「神経質に見つめる」は「に」を残す案もあるが、ここは「神経質に時計を見つめ」のほうがbody内では「神経質に」が自然。元はOK。再検討すべき。「時計を神経質に見つめ」も自然なので「に」付加は冗長。",
+    "fixed_body": "面接の順番を待つ間、彼は時計を<nervously>見つめ、隣の応募者と短い会話を交わしては気を紛らせていた。"
+  },
+  {
+    "id": "s6_1373",
+    "word": "nicely",
+    "action": "fix",
+    "reason": "「うまくまとまっていて」が自然。「うまくに」は誤用。",
+    "fixed_body": "新人の提案書は要点が<nicely>まとまっていて、上司は感心しつつ、さらに数字面の根拠を補足するよう助言した。"
+  },
+  {
+    "id": "s6_1384",
+    "word": "northward",
+    "action": "fix",
+    "reason": "「北へ向かう」が自然。方向副詞「北へ」に「に」は重複。",
+    "fixed_body": "冬の到来とともに渡り鳥の群れは<northward>向かう移動を一時停止し、温かな湿地で羽を休めていた。"
+  },
+  {
+    "id": "s6_1385",
+    "word": "northwards",
+    "action": "fix",
+    "reason": "「北の方へ進む」が自然。方向副詞に「に」は不要。",
+    "fixed_body": "豪雪地帯から<northwards>さらに進むと、湖は厚い氷に閉ざされ、釣り愛好家が穴あけ釣りを楽しむ姿が見られる。"
+  },
+  {
+    "id": "s6_1416",
+    "word": "openly",
+    "action": "fix",
+    "reason": "「率直に語る」が自然。「率直にに」は冗長。",
+    "fixed_body": "彼女は自分の弱さを<openly>語り、聴衆は飾らない言葉に心を動かされて静かにうなずいていた。"
+  },
+  {
+    "id": "s6_1452",
+    "word": "overboard",
+    "action": "fix",
+    "reason": "「船外へ投げ出す」が自然。方向副詞に「に」は不要。",
+    "fixed_body": "嵐の中で甲板の荷を<overboard>投げ出す判断が、船と乗組員の命を救う結果につながった。"
+  },
+  {
+    "id": "s6_1461",
+    "word": "overly",
+    "action": "fix",
+    "reason": "「過度に細かい」が自然。「過度にに」は不自然。",
+    "fixed_body": "<overly>細かい指示は若手の自主性を奪う、と部長は会議で自らの過去の失敗を率直に語った。"
+  },
+  {
+    "id": "s6_1496",
+    "word": "passionately",
+    "action": "fix",
+    "reason": "「情熱的に演じ切り」が自然。「情熱的にに」は冗長。",
+    "fixed_body": "舞台の上で彼は古典の名場面を<passionately>演じ切り、観客は静かに席を立てなかった。"
+  },
+  {
+    "id": "s6_1500",
+    "word": "patiently",
+    "action": "fix",
+    "reason": "「辛抱強く聞く」が自然。「辛抱強くに」は誤用。",
+    "fixed_body": "祖父は孫の片言の英語を<patiently>聞き、繰り返し言い直しを促しながら自然な発音へ導いた。"
+  },
+  {
+    "id": "s6_1511",
+    "word": "peacefully",
+    "action": "fix",
+    "reason": "「穏やかに最期を迎え」が自然。「に」重複。",
+    "fixed_body": "祖父は家族に囲まれて<peacefully>最期を迎え、孫たちは祖父の手を握りながら静かに見送った。"
+  },
+  {
+    "id": "s6_1579",
+    "word": "politically",
+    "action": "keep",
+    "reason": "「政治的に微妙な話題」は形容動詞的に「政治的に」が連用修飾として自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_1593",
+    "word": "potentially",
+    "action": "fix",
+    "reason": "「潜在的に生産できる」は「に」が重複。「潜在的に」単独で連用修飾。",
+    "fixed_body": "この素材は<potentially>従来品の半分のコストで生産できる、と研究員は試算結果を会議で示した。"
+  },
+  {
+    "id": "s6_1594",
+    "word": "powerfully",
+    "action": "fix",
+    "reason": "「力強く届き」が自然。「力強くに」は誤用。",
+    "fixed_body": "彼の演説は静かながらも<powerfully>聴衆の胸に届き、長い拍手はなかなか鳴り止まなかった。"
+  },
+  {
+    "id": "s6_1596",
+    "word": "practically",
+    "action": "fix",
+    "reason": "「事実上明日が最終日」と続けるのが自然。「に」重複。",
+    "fixed_body": "会期延長は決まっておらず、参加者は<practically>明日が最終日として準備を整えていた。"
+  },
+  {
+    "id": "s6_1608",
+    "word": "preferably",
+    "action": "fix",
+    "reason": "「できれば平日の午後で」が自然。「に」重複。",
+    "fixed_body": "面談の希望時間は<preferably>平日の午後で、と先方は柔軟に応じる姿勢でメールに書き添えてきた。"
+  },
+  {
+    "id": "s6_1621",
+    "word": "presumably",
+    "action": "fix",
+    "reason": "「おそらく出張中だから」が自然。「に」重複。",
+    "fixed_body": "メールの返信が来ないのは<presumably>出張中だからだろう、と同僚は別の連絡手段を試した。"
+  },
+  {
+    "id": "s6_1625",
+    "word": "previously",
+    "action": "fix",
+    "reason": "「以前に提出した」だが文頭で「以前提出した」が自然。「に」を取る。",
+    "fixed_body": "<previously>提出した報告書を踏まえた追加調査が必要だと、研究室の主任は会議で全員に伝えた。"
+  },
+  {
+    "id": "s6_1633",
+    "word": "privately",
+    "action": "fix",
+    "reason": "「内密に相談された」が自然。「に」重複。",
+    "fixed_body": "<privately>相談された彼は、内容を口外せず、本人と一緒に解決の道筋を冷静に整理してあげた。"
+  },
+  {
+    "id": "s6_1650",
+    "word": "promptly",
+    "action": "fix",
+    "reason": "「速やかに現場へ向かい」が自然。「に」重複。",
+    "fixed_body": "緊急連絡を受けた担当者は<promptly>現場へ向かい、状況確認と関係者への一報を遅滞なく整えていった。"
+  },
+  {
+    "id": "s6_1657",
+    "word": "proudly",
+    "action": "fix",
+    "reason": "「誇らしげに高く掲げ」が自然。「に」重複。",
+    "fixed_body": "金メダルを胸にかけた選手は、国旗を<proudly>高く掲げ、観客席からの大きな拍手に静かに応えた。"
+  },
+  {
+    "id": "s6_1662",
+    "word": "psychologically",
+    "action": "keep",
+    "reason": "「心理的に追い込まれた」は「心理的に」の「に」が訳の一部として自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_1695",
+    "word": "radically",
+    "action": "fix",
+    "reason": "「根本的に転換した」が自然。「に」重複。",
+    "fixed_body": "経営方針を<radically>転換した会社は、しばらく混乱を経た後に新しい収益の柱を見出していった。"
+  },
+  {
+    "id": "s6_1708",
+    "word": "readily",
+    "action": "fix",
+    "reason": "「快く応じる」が自然。「快くに」は誤用。",
+    "fixed_body": "頼みごとがあるたびに<readily>応じてくれる彼の人柄は、職場の若手にとって心強い支えとなっていた。"
+  },
+  {
+    "id": "s6_1713",
+    "word": "reasonably",
+    "action": "fix",
+    "reason": "「合理的に意見を整理して話す」が自然。「に」重複。",
+    "fixed_body": "新人とは思えないほど<reasonably>意見を整理して話す彼は、会議の場でも自然と一目置かれていた。"
+  },
+  {
+    "id": "s6_1739",
+    "word": "regardless",
+    "action": "fix",
+    "reason": "「構わず進めた」が自然。「制約にも構わず」と続ける。",
+    "fixed_body": "厳しい予算上の制約にも<regardless>、研究室は実験計画を着実に進め、半年で意義ある成果を上げた。"
+  },
+  {
+    "id": "s6_1742",
+    "word": "regrettably",
+    "action": "fix",
+    "reason": "「残念ながら」は副詞単独で文修飾可。「に」不要。",
+    "fixed_body": "<regrettably>長年続いた地域の伝統行事は、後継者の不足を理由に今年で一旦休止する運びとなった。"
+  },
+  {
+    "id": "s6_1760",
+    "word": "remarkably",
+    "action": "fix",
+    "reason": "「著しく伸びる」が自然。「著しくに」は誤用。",
+    "fixed_body": "新しい指導法を取り入れたクラスでは、生徒たちの集中時間が<remarkably>伸びる結果が確かに見られた。"
+  },
+  {
+    "id": "s6_1780",
+    "word": "respectably",
+    "action": "fix",
+    "reason": "「立派に演奏をやり遂げ」が自然。「に」重複。",
+    "fixed_body": "若い演奏家は緊張の中でも<respectably>演奏をやり遂げ、最後の和音までしっかりと音を響かせた。"
+  },
+  {
+    "id": "s6_1810",
+    "word": "rightly",
+    "action": "fix",
+    "reason": "「正しく評価し」が自然。「正しくに」は誤用。",
+    "fixed_body": "現場の判断を彼は<rightly>評価し、責任者の決断を後押しすることで部下たちに安心感をもたらした。"
+  },
+  {
+    "id": "s6_1847",
+    "word": "scarcely",
+    "action": "fix",
+    "reason": "「ほとんど挨拶もできず」が自然。「に」重複。",
+    "fixed_body": "新人の彼は緊張のあまり<scarcely>挨拶もできずに席に着いたが、午後には少しずつ笑顔を見せ始めた。"
+  },
+  {
+    "id": "s6_1854",
+    "word": "scientifically",
+    "action": "keep",
+    "reason": "「科学的に検証した」は「科学的に」の「に」が訳の一部として自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_1864",
+    "word": "secondly",
+    "action": "fix",
+    "reason": "「第二に」は文頭副詞として完結。「次に提示し」と続けるが、ここは元訳「第二に」が「に」付き訳。「第二にデータを提示し」が自然で、後ろの「に」は重複。",
+    "fixed_body": "発表者は最初に背景を述べてから、<secondly>具体的なデータを提示し、聴衆の理解を段階的に深めていった。"
+  },
+  {
+    "id": "s6_1868",
+    "word": "seldom",
+    "action": "fix",
+    "reason": "「めったに出かけない」が自然。「に」重複。",
+    "fixed_body": "祖父は<seldom>町まで出かけることはなく、家の畑と読書に時間を費やす静かな日々を送っていた。"
+  },
+  {
+    "id": "s6_1879",
+    "word": "separately",
+    "action": "fix",
+    "reason": "「別々に綴じられ」が自然。「に」重複。",
+    "fixed_body": "会議の資料は議題ごとに<separately>綴じられ、参加者は必要な箇所だけを素早く開けるよう工夫されていた。"
+  },
+  {
+    "id": "s6_1891",
+    "word": "sharply",
+    "action": "fix",
+    "reason": "「鋭く論点を整理」が自然。「鋭くに」は誤用。",
+    "fixed_body": "予想外の質問に対しても、彼は<sharply>論点を整理して答え、聴衆を納得させる強い説得力を見せた。"
+  },
+  {
+    "id": "s6_1908",
+    "word": "significantly",
+    "action": "fix",
+    "reason": "「著しく改善し」が自然。「著しくに」は誤用。",
+    "fixed_body": "新政策の導入後、若年層の雇用率は<significantly>改善し、関係者の予想を上回る成果となった。"
+  },
+  {
+    "id": "s6_1920",
+    "word": "skilfully",
+    "action": "fix",
+    "reason": "「巧みに捌き」が自然。「巧みにに」は誤用。",
+    "fixed_body": "シェフは魚をひと息に<skilfully>捌き、骨を傷つけずに皮目の美しさを最大限に引き出した。"
+  },
+  {
+    "id": "s6_1922",
+    "word": "skillfully",
+    "action": "fix",
+    "reason": "「巧みに弾きこなし」が自然。「巧みにに」は誤用。",
+    "fixed_body": "ピアニストは難しい連打部分を<skillfully>弾きこなし、聴衆は息を呑んでその指先を見守った。"
+  },
+  {
+    "id": "s6_1926",
+    "word": "skyward",
+    "action": "fix",
+    "reason": "「空の方へ駆け上がり」が自然。方向副詞に「に」は不要。",
+    "fixed_body": "打ち上げ花火が<skyward>駆け上がり、夜空に大輪の花を咲かせると、観衆から歓声が上がった。"
+  },
+  {
+    "id": "s6_1957",
+    "word": "somewhat",
+    "action": "fix",
+    "reason": "「いくぶん長くなった」が自然。「に」重複。",
+    "fixed_body": "彼の説明は<somewhat>長くなったが、聞き手は最後まで集中を切らさず、核心の論点をしっかり受け止めた。"
+  },
+  {
+    "id": "s6_1963",
+    "word": "southwards",
+    "action": "fix",
+    "reason": "「南の方へ進み」が自然。方向副詞に「に」は不要。",
+    "fixed_body": "貿易風に乗った帆船は<southwards>進み、暖かい海域へと航海の舵を静かに切り替えていった。"
+  },
+  {
+    "id": "s6_1974",
+    "word": "specifically",
+    "action": "fix",
+    "reason": "「具体的には」は文修飾副詞で「に」不要。「業務手順が明記」へつなぐ。",
+    "fixed_body": "報告書では問題点の概要に加え、<specifically>改善が必要な業務手順が箇条書きで明記されていた。"
+  },
+  {
+    "id": "s6_2004",
+    "word": "statewide",
+    "action": "fix",
+    "reason": "「州全体に展開」だが副詞単独「全州的に」で「展開され」が自然。元の「に」は文意上重複ではないが、posが副詞で動詞修飾なので「に」削除して「展開され」だけで成立。",
+    "fixed_body": "教育改革の試みは<statewide>展開され、教員の研修制度から地域連携まで一斉に見直しが進んだ。"
+  },
+  {
+    "id": "s6_2031",
+    "word": "strictly",
+    "action": "fix",
+    "reason": "「厳格に管理する」が自然。「に」重複。",
+    "fixed_body": "個人情報は<strictly>管理する社内規定が定められ、定期的な研修で全員の意識が更新されている。"
+  },
+  {
+    "id": "s6_2035",
+    "word": "stubbornly",
+    "action": "fix",
+    "reason": "「頑固に守り続ける」が自然。「に」重複。",
+    "fixed_body": "古い因習を<stubbornly>守り続ける村人もいたが、若い世代との対話の中で少しずつ柔軟さが生まれていった。"
+  },
+  {
+    "id": "s6_2052",
+    "word": "sufficiently",
+    "action": "fix",
+    "reason": "「十分に時間を確保」が自然。「に」重複。",
+    "fixed_body": "新人研修は<sufficiently>時間を確保し、基礎から応用までを段階的に学べる構成に組み直された。"
+  },
+  {
+    "id": "s6_2072",
+    "word": "suspiciously",
+    "action": "fix",
+    "reason": "「疑わしげに見つめた」が自然。「に」重複。",
+    "fixed_body": "見覚えのない訪問者を<suspiciously>見つめた飼い犬は、主人が出てくるまで吠える姿勢を崩さなかった。"
+  },
+  {
+    "id": "s6_2100",
+    "word": "temporarily",
+    "action": "fix",
+    "reason": "「一時的に移し」が自然。「に」重複。",
+    "fixed_body": "改装中の店舗は<temporarily>隣のビルに営業所を移し、常連客への影響を最小限にとどめた。"
+  },
+  {
+    "id": "s6_2102",
+    "word": "tenderly",
+    "action": "fix",
+    "reason": "「優しく拭った」が自然。「優しくに」は誤用。",
+    "fixed_body": "目を覚ました赤ん坊の頬を<tenderly>拭った父は、その小さな寝息に思わず微笑みを浮かべた。"
+  },
+  {
+    "id": "s6_2112",
+    "word": "thereafter",
+    "action": "fix",
+    "reason": "「その後研究室の助手として迎えられ」が自然。「に」重複。",
+    "fixed_body": "彼は試験に合格し、<thereafter>研究室の助手として迎えられ、学位取得への道を着実に歩み始めた。"
+  },
+  {
+    "id": "s6_2115",
+    "word": "thickly",
+    "action": "fix",
+    "reason": "「厚く塗った」が自然。「厚くに」は誤用。",
+    "fixed_body": "焼きたてのパンにバターを<thickly>塗った彼は、湯気の立つコーヒーと一緒に休日の朝を満喫した。"
+  },
+  {
+    "id": "s6_2120",
+    "word": "thirdly",
+    "action": "fix",
+    "reason": "「第三に」は文頭副詞として「に」が含まれる訳。後続の「に」は重複。",
+    "fixed_body": "報告の構成は明快で、課題の現状、原因の分析、そして<thirdly>具体的な改善策が順を追って示されていた。"
+  },
+  {
+    "id": "s6_2121",
+    "word": "thoroughly",
+    "action": "fix",
+    "reason": "「徹底的に教わった」が自然。「に」重複。",
+    "fixed_body": "新人時代に先輩から手順を<thoroughly>教わった彼は、現場でその基礎を生かして信頼を勝ち取っていった。"
+  },
+  {
+    "id": "s6_2172",
+    "word": "tremendously",
+    "action": "fix",
+    "reason": "「非常に良好で」が自然。「非常にに」は誤用。",
+    "fixed_body": "新製品の反応は<tremendously>良好で、開発に携わった全員が深夜まで増産の段取りに追われていた。"
+  },
+  {
+    "id": "s6_2204",
+    "word": "ultimately",
+    "action": "fix",
+    "reason": "「最終的に独自の調合に行き着き」が自然。「に」重複。",
+    "fixed_body": "数々の試行錯誤を経て、彼は<ultimately>独自の調合に行き着き、地域でも知られる名菓を世に送り出した。"
+  },
+  {
+    "id": "s6_2206",
+    "word": "unashamedly",
+    "action": "fix",
+    "reason": "「恥じることなく話し続け」が自然。「に」重複。",
+    "fixed_body": "彼は地元の方言を<unashamedly>話し続け、その姿は伝統を尊ぶ若い世代の意識を静かに変えていった。"
+  },
+  {
+    "id": "s6_2216",
+    "word": "unclearly",
+    "action": "fix",
+    "reason": "「不明瞭に話し続け」が自然。「に」重複。",
+    "fixed_body": "電話越しの相手は<unclearly>話し続け、こちらの確認の問いかけにも具体的な答えを返してくれなかった。"
+  },
+  {
+    "id": "s6_2217",
+    "word": "uncomfortably",
+    "action": "fix",
+    "reason": "「不快に長く続き」が自然。「に」重複。",
+    "fixed_body": "面接の沈黙が<uncomfortably>長く続き、応募者は手元の資料を意味なくめくり続けるしかなかった。"
+  },
+  {
+    "id": "s6_2232",
+    "word": "uneasily",
+    "action": "fix",
+    "reason": "「落ち着かなげに視線をさまよわせる」が自然。「に」重複。",
+    "fixed_body": "面接室の前で<uneasily>視線をさまよわせる学生に、人事担当はそっと声をかけて緊張をほぐした。"
+  },
+  {
+    "id": "s6_2242",
+    "word": "unimaginably",
+    "action": "fix",
+    "reason": "「想像を絶するほど長く」が自然。「ほどに」は誤用。",
+    "fixed_body": "宇宙の年齢は人間の感覚からは<unimaginably>長く、教科書の数字を実感するのは容易ではない。"
+  },
+  {
+    "id": "s6_2245",
+    "word": "unjustly",
+    "action": "fix",
+    "reason": "「不当に押し付けられた」が自然。「に」重複。",
+    "fixed_body": "彼は同僚の責任を<unjustly>押し付けられたが、後の調査で真相が明らかになり名誉が回復された。"
+  },
+  {
+    "id": "s6_2251",
+    "word": "unmistakably",
+    "action": "fix",
+    "reason": "「紛れもなく彼女のスタイル」が自然。「なくに」は誤用。",
+    "fixed_body": "あの曲調は<unmistakably>彼女のスタイルで、ファンならイントロの数小節だけで作者を言い当てる。"
+  },
+  {
+    "id": "s6_2267",
+    "word": "unthinkably",
+    "action": "fix",
+    "reason": "「考えられないほど大きく」が自然。「ほどに」は誤用。",
+    "fixed_body": "宇宙の規模は<unthinkably>大きく、人類の感覚で実感するのはほとんど不可能だと天文学者は語っていた。"
+  },
+  {
+    "id": "s6_2279",
+    "word": "upside down",
+    "action": "keep",
+    "reason": "「逆さまに飾る」は「逆さまに」の「に」が訳の一部として自然。",
+    "fixed_body": null
+  },
+  {
+    "id": "s6_2281",
+    "word": "urgently",
+    "action": "fix",
+    "reason": "「緊急に求められ」が自然。「に」重複。",
+    "fixed_body": "被災地では物資の補充が<urgently>求められ、各地の協力団体が支援の輪を急ぎ広げていった。"
+  },
+  {
+    "id": "s6_2288",
+    "word": "utterly",
+    "action": "fix",
+    "reason": "「完全に動転した」が自然。「に」重複。",
+    "fixed_body": "想定外の出来事に<utterly>動転した彼は、いつもの冷静な判断力を取り戻すまでに少し時間を要した。"
+  },
+  {
+    "id": "s6_2299",
+    "word": "verbally",
+    "action": "fix",
+    "reason": "meaning_jp「口頭で」の通り「で」副詞句。「口頭でに」は誤用なので削除。",
+    "fixed_body": "緊急の指示を<verbally>伝えた現場監督は、夕方には改めて書面で内容をまとめ、関係者に送付した。"
+  },
+  {
+    "id": "s6_2309",
+    "word": "vigorously",
+    "action": "fix",
+    "reason": "「精力的に意見を述べ」が自然。「に」重複。",
+    "fixed_body": "問題の本質を突こうと、彼は委員会の場で<vigorously>意見を述べ、慎重派の議員にも考えを促した。"
+  },
+  {
+    "id": "s6_2315",
+    "word": "virtually",
+    "action": "fix",
+    "reason": "「事実上すべての店舗で完了」が自然。「に」重複。",
+    "fixed_body": "新製品の品揃えは<virtually>すべての店舗で完了しており、週末の販売初日に向けた準備は万全だった。"
+  },
+  {
+    "id": "s6_2317",
+    "word": "visibly",
+    "action": "fix",
+    "reason": "「目に見えて緊張しており」が自然。「えてに」は誤用。",
+    "fixed_body": "発表会の直前、控え室の若いピアニストは<visibly>緊張しており、講師は静かに肩に手を置いて声をかけた。"
+  },
+  {
+    "id": "s6_2335",
+    "word": "weakly",
+    "action": "fix",
+    "reason": "「弱々しく手を伸ばし」が自然。「弱々しくに」は誤用。",
+    "fixed_body": "発熱で寝込んだ子は<weakly>手を伸ばし、母親が用意したスプーンの粥をゆっくり口に運んでいた。"
+  },
+  {
+    "id": "s6_2357",
+    "word": "willingly",
+    "action": "fix",
+    "reason": "「進んで応じた」が自然。「進んでに」は誤用。",
+    "fixed_body": "災害ボランティアの呼びかけに<willingly>応じた地域住民は、被災地での片付け作業に汗を流した。"
+  },
+  {
+    "id": "s6_2369",
+    "word": "wordlessly",
+    "action": "fix",
+    "reason": "「言葉なしに席を立ち」だが「言葉なく席を立ち」のほうが自然。「に」削除。",
+    "fixed_body": "彼は<wordlessly>席を立ち、雨に濡れた友人にそっと自分の傘を差し出してから会議室に戻っていった。"
+  },
+  {
+    "id": "s6_2385",
+    "word": "wrongly",
+    "action": "fix",
+    "reason": "「誤って告発された」が自然。「誤ってに」は誤用。",
+    "fixed_body": "彼は<wrongly>告発された無実を晴らすため、長い裁判を粘り強く戦い続け、ついに名誉を回復した。"
+  }
+]

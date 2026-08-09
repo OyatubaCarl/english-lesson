@@ -1,0 +1,317 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Series,Hiragino Sans W7,36,&H00FFFFFF,&H00FFFFFF,&H90000000,&H00000000,-1,0,0,0,100,100,2,0,1,2,0,4,0,0,0,1
+Style: Hook,Hiragino Sans W7,80,&H00FFFFFF,&H00FFFFFF,&H90000000,&H50000000,-1,0,0,0,100,100,2,0,1,5,2,5,50,50,0,1
+Style: HookAccent,Hiragino Sans W7,92,&H0038E6FF,&H0038E6FF,&H90000000,&H50000000,-1,0,0,0,100,100,2,0,1,5,2,5,50,50,0,1
+Style: Guide,Hiragino Sans W7,46,&H0038E6FF,&H0038E6FF,&H90000000,&H30000000,-1,0,0,0,100,100,2,0,1,3,1,5,40,40,0,1
+Style: Counter,Helvetica,34,&H00FFFFFF,&H00FFFFFF,&H90000000,&H00000000,-1,0,0,0,100,100,2,0,1,2,0,6,0,0,0,1
+Style: Meaning,Hiragino Sans W7,58,&H00FFFFFF,&H00FFFFFF,&H90000000,&H00000000,-1,0,0,0,100,100,1,0,1,3,0,4,0,0,0,1
+Style: Label,Helvetica,30,&H009FAFC5,&H009FAFC5,&H90000000,&H00000000,-1,0,0,0,100,100,2,0,1,1,0,4,0,0,0,1
+Style: Form,Hiragino Sans W7,104,&H00FFFFFF,&H00FFFFFF,&H90000000,&H00000000,-1,0,0,0,100,100,1,0,1,4,1,4,0,0,0,1
+Style: CTA,Hiragino Sans W7,56,&H0038E6FF,&H0038E6FF,&H90000000,&H40000000,-1,0,0,0,100,100,2,0,1,4,1,5,40,40,0,1
+Style: Handle,Helvetica,30,&HB8FFFFFF,&HB8FFFFFF,&H90000000,&H00000000,0,0,0,0,100,100,1,0,1,2,0,5,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 5,0:00:00.00,0:00:30.04,Series,,0,0,0,,{\pos(54,72)\fad(80,80)}♪  30秒で17語  /  ABC型中心
+Dialogue: 7,0:00:00.00,0:00:02.65,Hook,,0,0,0,,{\pos(540,330)\fad(80,140)}不規則動詞変化
+Dialogue: 7,0:00:00.18,0:00:02.65,HookAccent,,0,0,0,,{\pos(540,475)\fad(100,140)}歌なら簡単に覚えられる！
+Dialogue: 6,0:00:02.65,0:00:28.14,Guide,,0,0,0,,{\pos(540,155)\fad(100,100)}歌に合わせて 3回ずつ♪
+Dialogue: 7,0:00:28.14,0:00:30.04,CTA,,0,0,0,,{\pos(540,180)\fad(100,100)}保存して、もう1回歌おう！
+Dialogue: 4,0:00:00.00,0:00:30.04,Handle,,0,0,0,,{\pos(540,1860)}@TeacherTacosEnglish
+Dialogue: 5,0:00:00.00,0:00:01.24,Counter,,0,0,0,,{\pos(1020,72)}01 / 17
+Dialogue: 5,0:00:00.00,0:00:01.24,Meaning,,0,0,0,,{\pos(76,1138)\fad(50,35)}始める
+Dialogue: 4,0:00:00.00,0:00:01.24,Label,,0,0,0,,{\pos(80,1320)}BASE  原形
+Dialogue: 4,0:00:00.00,0:00:01.24,Label,,0,0,0,,{\pos(80,1510)}PAST  過去形
+Dialogue: 4,0:00:00.00,0:00:01.24,Label,,0,0,0,,{\pos(80,1700)}P.P.  過去分詞
+Dialogue: 6,0:00:00.00,0:00:00.35,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}begin
+Dialogue: 6,0:00:00.00,0:00:00.35,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}began
+Dialogue: 6,0:00:00.00,0:00:00.35,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}begun
+Dialogue: 6,0:00:00.35,0:00:00.71,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H0038E6FF&\fscx112\fscy112}begin
+Dialogue: 6,0:00:00.35,0:00:00.71,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}began
+Dialogue: 6,0:00:00.35,0:00:00.71,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}begun
+Dialogue: 6,0:00:00.71,0:00:01.07,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}begin
+Dialogue: 6,0:00:00.71,0:00:01.07,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H0038E6FF&\fscx112\fscy112}began
+Dialogue: 6,0:00:00.71,0:00:01.07,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}begun
+Dialogue: 6,0:00:01.07,0:00:01.24,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}begin
+Dialogue: 6,0:00:01.07,0:00:01.24,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}began
+Dialogue: 6,0:00:01.07,0:00:01.24,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H0038E6FF&\fscx112\fscy112}begun
+Dialogue: 5,0:00:01.24,0:00:02.44,Counter,,0,0,0,,{\pos(1020,72)}02 / 17
+Dialogue: 5,0:00:01.24,0:00:02.44,Meaning,,0,0,0,,{\pos(76,1138)\fad(50,35)}こわす・壊れる
+Dialogue: 4,0:00:01.24,0:00:02.44,Label,,0,0,0,,{\pos(80,1320)}BASE  原形
+Dialogue: 4,0:00:01.24,0:00:02.44,Label,,0,0,0,,{\pos(80,1510)}PAST  過去形
+Dialogue: 4,0:00:01.24,0:00:02.44,Label,,0,0,0,,{\pos(80,1700)}P.P.  過去分詞
+Dialogue: 6,0:00:01.24,0:00:01.59,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}break
+Dialogue: 6,0:00:01.24,0:00:01.59,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}broke
+Dialogue: 6,0:00:01.24,0:00:01.59,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}broken
+Dialogue: 6,0:00:01.59,0:00:02.03,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H0038E6FF&\fscx112\fscy112}break
+Dialogue: 6,0:00:01.59,0:00:02.03,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}broke
+Dialogue: 6,0:00:01.59,0:00:02.03,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}broken
+Dialogue: 6,0:00:02.03,0:00:02.27,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}break
+Dialogue: 6,0:00:02.03,0:00:02.27,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H0038E6FF&\fscx112\fscy112}broke
+Dialogue: 6,0:00:02.03,0:00:02.27,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}broken
+Dialogue: 6,0:00:02.27,0:00:02.44,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}break
+Dialogue: 6,0:00:02.27,0:00:02.44,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}broke
+Dialogue: 6,0:00:02.27,0:00:02.44,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H0038E6FF&\fscx112\fscy112}broken
+Dialogue: 5,0:00:02.44,0:00:03.56,Counter,,0,0,0,,{\pos(1020,72)}03 / 17
+Dialogue: 5,0:00:02.44,0:00:03.56,Meaning,,0,0,0,,{\pos(76,1138)\fad(50,35)}する
+Dialogue: 4,0:00:02.44,0:00:03.56,Label,,0,0,0,,{\pos(80,1320)}BASE  原形
+Dialogue: 4,0:00:02.44,0:00:03.56,Label,,0,0,0,,{\pos(80,1510)}PAST  過去形
+Dialogue: 4,0:00:02.44,0:00:03.56,Label,,0,0,0,,{\pos(80,1700)}P.P.  過去分詞
+Dialogue: 6,0:00:02.44,0:00:02.79,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}do
+Dialogue: 6,0:00:02.44,0:00:02.79,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}did
+Dialogue: 6,0:00:02.44,0:00:02.79,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}done
+Dialogue: 6,0:00:02.79,0:00:03.35,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H0038E6FF&\fscx112\fscy112}do
+Dialogue: 6,0:00:02.79,0:00:03.35,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}did
+Dialogue: 6,0:00:02.79,0:00:03.35,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}done
+Dialogue: 6,0:00:03.35,0:00:03.51,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}do
+Dialogue: 6,0:00:03.35,0:00:03.51,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H0038E6FF&\fscx112\fscy112}did
+Dialogue: 6,0:00:03.35,0:00:03.51,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}done
+Dialogue: 6,0:00:03.51,0:00:03.56,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}do
+Dialogue: 6,0:00:03.51,0:00:03.56,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}did
+Dialogue: 6,0:00:03.51,0:00:03.56,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H0038E6FF&\fscx112\fscy112}done
+Dialogue: 5,0:00:03.56,0:00:05.76,Counter,,0,0,0,,{\pos(1020,72)}04 / 17
+Dialogue: 5,0:00:03.56,0:00:05.76,Meaning,,0,0,0,,{\pos(76,1138)\fad(50,35)}飲む
+Dialogue: 4,0:00:03.56,0:00:05.76,Label,,0,0,0,,{\pos(80,1320)}BASE  原形
+Dialogue: 4,0:00:03.56,0:00:05.76,Label,,0,0,0,,{\pos(80,1510)}PAST  過去形
+Dialogue: 4,0:00:03.56,0:00:05.76,Label,,0,0,0,,{\pos(80,1700)}P.P.  過去分詞
+Dialogue: 6,0:00:03.56,0:00:03.87,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}drink
+Dialogue: 6,0:00:03.56,0:00:03.87,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}drank
+Dialogue: 6,0:00:03.56,0:00:03.87,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}drunk
+Dialogue: 6,0:00:03.87,0:00:04.55,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H0038E6FF&\fscx112\fscy112}drink
+Dialogue: 6,0:00:03.87,0:00:04.55,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}drank
+Dialogue: 6,0:00:03.87,0:00:04.55,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}drunk
+Dialogue: 6,0:00:04.55,0:00:04.99,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}drink
+Dialogue: 6,0:00:04.55,0:00:04.99,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H0038E6FF&\fscx112\fscy112}drank
+Dialogue: 6,0:00:04.55,0:00:04.99,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}drunk
+Dialogue: 6,0:00:04.99,0:00:05.76,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}drink
+Dialogue: 6,0:00:04.99,0:00:05.76,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}drank
+Dialogue: 6,0:00:04.99,0:00:05.76,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H0038E6FF&\fscx112\fscy112}drunk
+Dialogue: 5,0:00:05.76,0:00:07.50,Counter,,0,0,0,,{\pos(1020,72)}05 / 17
+Dialogue: 5,0:00:05.76,0:00:07.50,Meaning,,0,0,0,,{\pos(76,1138)\fad(50,35)}運転する
+Dialogue: 4,0:00:05.76,0:00:07.50,Label,,0,0,0,,{\pos(80,1320)}BASE  原形
+Dialogue: 4,0:00:05.76,0:00:07.50,Label,,0,0,0,,{\pos(80,1510)}PAST  過去形
+Dialogue: 4,0:00:05.76,0:00:07.50,Label,,0,0,0,,{\pos(80,1700)}P.P.  過去分詞
+Dialogue: 6,0:00:05.76,0:00:06.11,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}drive
+Dialogue: 6,0:00:05.76,0:00:06.11,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}drove
+Dialogue: 6,0:00:05.76,0:00:06.11,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}driven
+Dialogue: 6,0:00:06.11,0:00:06.39,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H0038E6FF&\fscx112\fscy112}drive
+Dialogue: 6,0:00:06.11,0:00:06.39,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}drove
+Dialogue: 6,0:00:06.11,0:00:06.39,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}driven
+Dialogue: 6,0:00:06.39,0:00:06.71,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}drive
+Dialogue: 6,0:00:06.39,0:00:06.71,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H0038E6FF&\fscx112\fscy112}drove
+Dialogue: 6,0:00:06.39,0:00:06.71,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}driven
+Dialogue: 6,0:00:06.71,0:00:07.50,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}drive
+Dialogue: 6,0:00:06.71,0:00:07.50,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}drove
+Dialogue: 6,0:00:06.71,0:00:07.50,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H0038E6FF&\fscx112\fscy112}driven
+Dialogue: 5,0:00:07.50,0:00:08.96,Counter,,0,0,0,,{\pos(1020,72)}06 / 17
+Dialogue: 5,0:00:07.50,0:00:08.96,Meaning,,0,0,0,,{\pos(76,1138)\fad(50,35)}食べる
+Dialogue: 4,0:00:07.50,0:00:08.96,Label,,0,0,0,,{\pos(80,1320)}BASE  原形
+Dialogue: 4,0:00:07.50,0:00:08.96,Label,,0,0,0,,{\pos(80,1510)}PAST  過去形
+Dialogue: 4,0:00:07.50,0:00:08.96,Label,,0,0,0,,{\pos(80,1700)}P.P.  過去分詞
+Dialogue: 6,0:00:07.50,0:00:07.85,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}eat
+Dialogue: 6,0:00:07.50,0:00:07.85,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}ate
+Dialogue: 6,0:00:07.50,0:00:07.85,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}eaten
+Dialogue: 6,0:00:07.85,0:00:08.31,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H0038E6FF&\fscx112\fscy112}eat
+Dialogue: 6,0:00:07.85,0:00:08.31,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}ate
+Dialogue: 6,0:00:07.85,0:00:08.31,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}eaten
+Dialogue: 6,0:00:08.31,0:00:08.67,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}eat
+Dialogue: 6,0:00:08.31,0:00:08.67,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H0038E6FF&\fscx112\fscy112}ate
+Dialogue: 6,0:00:08.31,0:00:08.67,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}eaten
+Dialogue: 6,0:00:08.67,0:00:08.96,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}eat
+Dialogue: 6,0:00:08.67,0:00:08.96,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}ate
+Dialogue: 6,0:00:08.67,0:00:08.96,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H0038E6FF&\fscx112\fscy112}eaten
+Dialogue: 5,0:00:08.96,0:00:11.24,Counter,,0,0,0,,{\pos(1020,72)}07 / 17
+Dialogue: 5,0:00:08.96,0:00:11.24,Meaning,,0,0,0,,{\pos(76,1138)\fad(50,35)}得る・手に入れる
+Dialogue: 4,0:00:08.96,0:00:11.24,Label,,0,0,0,,{\pos(80,1320)}BASE  原形
+Dialogue: 4,0:00:08.96,0:00:11.24,Label,,0,0,0,,{\pos(80,1510)}PAST  過去形
+Dialogue: 4,0:00:08.96,0:00:11.24,Label,,0,0,0,,{\pos(80,1700)}P.P.  過去分詞
+Dialogue: 6,0:00:08.96,0:00:09.31,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}get
+Dialogue: 6,0:00:08.96,0:00:09.31,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}got
+Dialogue: 6,0:00:08.96,0:00:09.31,Form,,0,0,0,,{\pos(400,1700)\fs66\c&H00FFFFFF&\fscx100\fscy100}got / gotten
+Dialogue: 6,0:00:09.31,0:00:09.91,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H0038E6FF&\fscx112\fscy112}get
+Dialogue: 6,0:00:09.31,0:00:09.91,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}got
+Dialogue: 6,0:00:09.31,0:00:09.91,Form,,0,0,0,,{\pos(400,1700)\fs66\c&H00FFFFFF&\fscx100\fscy100}got / gotten
+Dialogue: 6,0:00:09.91,0:00:10.23,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}get
+Dialogue: 6,0:00:09.91,0:00:10.23,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H0038E6FF&\fscx112\fscy112}got
+Dialogue: 6,0:00:09.91,0:00:10.23,Form,,0,0,0,,{\pos(400,1700)\fs66\c&H00FFFFFF&\fscx100\fscy100}got / gotten
+Dialogue: 6,0:00:10.23,0:00:11.24,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}get
+Dialogue: 6,0:00:10.23,0:00:11.24,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}got
+Dialogue: 6,0:00:10.23,0:00:11.24,Form,,0,0,0,,{\pos(400,1700)\fs66\c&H0038E6FF&\fscx112\fscy112}got / gotten
+Dialogue: 5,0:00:11.24,0:00:12.68,Counter,,0,0,0,,{\pos(1020,72)}08 / 17
+Dialogue: 5,0:00:11.24,0:00:12.68,Meaning,,0,0,0,,{\pos(76,1138)\fad(50,35)}与える
+Dialogue: 4,0:00:11.24,0:00:12.68,Label,,0,0,0,,{\pos(80,1320)}BASE  原形
+Dialogue: 4,0:00:11.24,0:00:12.68,Label,,0,0,0,,{\pos(80,1510)}PAST  過去形
+Dialogue: 4,0:00:11.24,0:00:12.68,Label,,0,0,0,,{\pos(80,1700)}P.P.  過去分詞
+Dialogue: 6,0:00:11.24,0:00:11.59,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}give
+Dialogue: 6,0:00:11.24,0:00:11.59,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}gave
+Dialogue: 6,0:00:11.24,0:00:11.59,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}given
+Dialogue: 6,0:00:11.59,0:00:12.19,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H0038E6FF&\fscx112\fscy112}give
+Dialogue: 6,0:00:11.59,0:00:12.19,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}gave
+Dialogue: 6,0:00:11.59,0:00:12.19,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}given
+Dialogue: 6,0:00:12.19,0:00:12.49,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}give
+Dialogue: 6,0:00:12.19,0:00:12.49,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H0038E6FF&\fscx112\fscy112}gave
+Dialogue: 6,0:00:12.19,0:00:12.49,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}given
+Dialogue: 6,0:00:12.49,0:00:12.68,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}give
+Dialogue: 6,0:00:12.49,0:00:12.68,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}gave
+Dialogue: 6,0:00:12.49,0:00:12.68,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H0038E6FF&\fscx112\fscy112}given
+Dialogue: 5,0:00:12.68,0:00:14.80,Counter,,0,0,0,,{\pos(1020,72)}09 / 17
+Dialogue: 5,0:00:12.68,0:00:14.80,Meaning,,0,0,0,,{\pos(76,1138)\fad(50,35)}行く
+Dialogue: 4,0:00:12.68,0:00:14.80,Label,,0,0,0,,{\pos(80,1320)}BASE  原形
+Dialogue: 4,0:00:12.68,0:00:14.80,Label,,0,0,0,,{\pos(80,1510)}PAST  過去形
+Dialogue: 4,0:00:12.68,0:00:14.80,Label,,0,0,0,,{\pos(80,1700)}P.P.  過去分詞
+Dialogue: 6,0:00:12.68,0:00:13.03,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}go
+Dialogue: 6,0:00:12.68,0:00:13.03,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}went
+Dialogue: 6,0:00:12.68,0:00:13.03,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}gone
+Dialogue: 6,0:00:13.03,0:00:13.91,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H0038E6FF&\fscx112\fscy112}go
+Dialogue: 6,0:00:13.03,0:00:13.91,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}went
+Dialogue: 6,0:00:13.03,0:00:13.91,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}gone
+Dialogue: 6,0:00:13.91,0:00:14.31,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}go
+Dialogue: 6,0:00:13.91,0:00:14.31,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H0038E6FF&\fscx112\fscy112}went
+Dialogue: 6,0:00:13.91,0:00:14.31,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}gone
+Dialogue: 6,0:00:14.31,0:00:14.80,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}go
+Dialogue: 6,0:00:14.31,0:00:14.80,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}went
+Dialogue: 6,0:00:14.31,0:00:14.80,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H0038E6FF&\fscx112\fscy112}gone
+Dialogue: 5,0:00:14.80,0:00:17.24,Counter,,0,0,0,,{\pos(1020,72)}10 / 17
+Dialogue: 5,0:00:14.80,0:00:17.24,Meaning,,0,0,0,,{\pos(76,1138)\fad(50,35)}知っている
+Dialogue: 4,0:00:14.80,0:00:17.24,Label,,0,0,0,,{\pos(80,1320)}BASE  原形
+Dialogue: 4,0:00:14.80,0:00:17.24,Label,,0,0,0,,{\pos(80,1510)}PAST  過去形
+Dialogue: 4,0:00:14.80,0:00:17.24,Label,,0,0,0,,{\pos(80,1700)}P.P.  過去分詞
+Dialogue: 6,0:00:14.80,0:00:15.15,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}know
+Dialogue: 6,0:00:14.80,0:00:15.15,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}knew
+Dialogue: 6,0:00:14.80,0:00:15.15,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}known
+Dialogue: 6,0:00:15.15,0:00:15.67,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H0038E6FF&\fscx112\fscy112}know
+Dialogue: 6,0:00:15.15,0:00:15.67,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}knew
+Dialogue: 6,0:00:15.15,0:00:15.67,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}known
+Dialogue: 6,0:00:15.67,0:00:16.15,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}know
+Dialogue: 6,0:00:15.67,0:00:16.15,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H0038E6FF&\fscx112\fscy112}knew
+Dialogue: 6,0:00:15.67,0:00:16.15,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}known
+Dialogue: 6,0:00:16.15,0:00:17.24,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}know
+Dialogue: 6,0:00:16.15,0:00:17.24,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}knew
+Dialogue: 6,0:00:16.15,0:00:17.24,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H0038E6FF&\fscx112\fscy112}known
+Dialogue: 5,0:00:17.24,0:00:18.24,Counter,,0,0,0,,{\pos(1020,72)}11 / 17
+Dialogue: 5,0:00:17.24,0:00:18.24,Meaning,,0,0,0,,{\pos(76,1138)\fad(50,35)}昇る・上がる
+Dialogue: 4,0:00:17.24,0:00:18.24,Label,,0,0,0,,{\pos(80,1320)}BASE  原形
+Dialogue: 4,0:00:17.24,0:00:18.24,Label,,0,0,0,,{\pos(80,1510)}PAST  過去形
+Dialogue: 4,0:00:17.24,0:00:18.24,Label,,0,0,0,,{\pos(80,1700)}P.P.  過去分詞
+Dialogue: 6,0:00:17.24,0:00:17.59,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}rise
+Dialogue: 6,0:00:17.24,0:00:17.59,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}rose
+Dialogue: 6,0:00:17.24,0:00:17.59,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}risen
+Dialogue: 6,0:00:17.59,0:00:17.83,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H0038E6FF&\fscx112\fscy112}rise
+Dialogue: 6,0:00:17.59,0:00:17.83,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}rose
+Dialogue: 6,0:00:17.59,0:00:17.83,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}risen
+Dialogue: 6,0:00:17.83,0:00:18.03,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}rise
+Dialogue: 6,0:00:17.83,0:00:18.03,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H0038E6FF&\fscx112\fscy112}rose
+Dialogue: 6,0:00:17.83,0:00:18.03,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}risen
+Dialogue: 6,0:00:18.03,0:00:18.24,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}rise
+Dialogue: 6,0:00:18.03,0:00:18.24,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}rose
+Dialogue: 6,0:00:18.03,0:00:18.24,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H0038E6FF&\fscx112\fscy112}risen
+Dialogue: 5,0:00:18.24,0:00:20.04,Counter,,0,0,0,,{\pos(1020,72)}12 / 17
+Dialogue: 5,0:00:18.24,0:00:20.04,Meaning,,0,0,0,,{\pos(76,1138)\fad(50,35)}見る・見える
+Dialogue: 4,0:00:18.24,0:00:20.04,Label,,0,0,0,,{\pos(80,1320)}BASE  原形
+Dialogue: 4,0:00:18.24,0:00:20.04,Label,,0,0,0,,{\pos(80,1510)}PAST  過去形
+Dialogue: 4,0:00:18.24,0:00:20.04,Label,,0,0,0,,{\pos(80,1700)}P.P.  過去分詞
+Dialogue: 6,0:00:18.24,0:00:18.59,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}see
+Dialogue: 6,0:00:18.24,0:00:18.59,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}saw
+Dialogue: 6,0:00:18.24,0:00:18.59,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}seen
+Dialogue: 6,0:00:18.59,0:00:19.31,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H0038E6FF&\fscx112\fscy112}see
+Dialogue: 6,0:00:18.59,0:00:19.31,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}saw
+Dialogue: 6,0:00:18.59,0:00:19.31,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}seen
+Dialogue: 6,0:00:19.31,0:00:19.79,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}see
+Dialogue: 6,0:00:19.31,0:00:19.79,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H0038E6FF&\fscx112\fscy112}saw
+Dialogue: 6,0:00:19.31,0:00:19.79,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}seen
+Dialogue: 6,0:00:19.79,0:00:20.04,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}see
+Dialogue: 6,0:00:19.79,0:00:20.04,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}saw
+Dialogue: 6,0:00:19.79,0:00:20.04,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H0038E6FF&\fscx112\fscy112}seen
+Dialogue: 5,0:00:20.04,0:00:22.28,Counter,,0,0,0,,{\pos(1020,72)}13 / 17
+Dialogue: 5,0:00:20.04,0:00:22.28,Meaning,,0,0,0,,{\pos(76,1138)\fad(50,35)}見せる
+Dialogue: 4,0:00:20.04,0:00:22.28,Label,,0,0,0,,{\pos(80,1320)}BASE  原形
+Dialogue: 4,0:00:20.04,0:00:22.28,Label,,0,0,0,,{\pos(80,1510)}PAST  過去形
+Dialogue: 4,0:00:20.04,0:00:22.28,Label,,0,0,0,,{\pos(80,1700)}P.P.  過去分詞
+Dialogue: 6,0:00:20.04,0:00:20.39,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}show
+Dialogue: 6,0:00:20.04,0:00:20.39,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}showed
+Dialogue: 6,0:00:20.04,0:00:20.39,Form,,0,0,0,,{\pos(400,1700)\fs66\c&H00FFFFFF&\fscx100\fscy100}shown / showed
+Dialogue: 6,0:00:20.39,0:00:21.15,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H0038E6FF&\fscx112\fscy112}show
+Dialogue: 6,0:00:20.39,0:00:21.15,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}showed
+Dialogue: 6,0:00:20.39,0:00:21.15,Form,,0,0,0,,{\pos(400,1700)\fs66\c&H00FFFFFF&\fscx100\fscy100}shown / showed
+Dialogue: 6,0:00:21.15,0:00:21.63,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}show
+Dialogue: 6,0:00:21.15,0:00:21.63,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H0038E6FF&\fscx112\fscy112}showed
+Dialogue: 6,0:00:21.15,0:00:21.63,Form,,0,0,0,,{\pos(400,1700)\fs66\c&H00FFFFFF&\fscx100\fscy100}shown / showed
+Dialogue: 6,0:00:21.63,0:00:22.28,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}show
+Dialogue: 6,0:00:21.63,0:00:22.28,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}showed
+Dialogue: 6,0:00:21.63,0:00:22.28,Form,,0,0,0,,{\pos(400,1700)\fs66\c&H0038E6FF&\fscx112\fscy112}shown / showed
+Dialogue: 5,0:00:22.28,0:00:24.08,Counter,,0,0,0,,{\pos(1020,72)}14 / 17
+Dialogue: 5,0:00:22.28,0:00:24.08,Meaning,,0,0,0,,{\pos(76,1138)\fad(50,35)}歌う
+Dialogue: 4,0:00:22.28,0:00:24.08,Label,,0,0,0,,{\pos(80,1320)}BASE  原形
+Dialogue: 4,0:00:22.28,0:00:24.08,Label,,0,0,0,,{\pos(80,1510)}PAST  過去形
+Dialogue: 4,0:00:22.28,0:00:24.08,Label,,0,0,0,,{\pos(80,1700)}P.P.  過去分詞
+Dialogue: 6,0:00:22.28,0:00:22.63,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}sing
+Dialogue: 6,0:00:22.28,0:00:22.63,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}sang
+Dialogue: 6,0:00:22.28,0:00:22.63,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}sung
+Dialogue: 6,0:00:22.63,0:00:23.07,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H0038E6FF&\fscx112\fscy112}sing
+Dialogue: 6,0:00:22.63,0:00:23.07,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}sang
+Dialogue: 6,0:00:22.63,0:00:23.07,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}sung
+Dialogue: 6,0:00:23.07,0:00:23.51,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}sing
+Dialogue: 6,0:00:23.07,0:00:23.51,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H0038E6FF&\fscx112\fscy112}sang
+Dialogue: 6,0:00:23.07,0:00:23.51,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}sung
+Dialogue: 6,0:00:23.51,0:00:24.08,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}sing
+Dialogue: 6,0:00:23.51,0:00:24.08,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}sang
+Dialogue: 6,0:00:23.51,0:00:24.08,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H0038E6FF&\fscx112\fscy112}sung
+Dialogue: 5,0:00:24.08,0:00:25.56,Counter,,0,0,0,,{\pos(1020,72)}15 / 17
+Dialogue: 5,0:00:24.08,0:00:25.56,Meaning,,0,0,0,,{\pos(76,1138)\fad(50,35)}話す
+Dialogue: 4,0:00:24.08,0:00:25.56,Label,,0,0,0,,{\pos(80,1320)}BASE  原形
+Dialogue: 4,0:00:24.08,0:00:25.56,Label,,0,0,0,,{\pos(80,1510)}PAST  過去形
+Dialogue: 4,0:00:24.08,0:00:25.56,Label,,0,0,0,,{\pos(80,1700)}P.P.  過去分詞
+Dialogue: 6,0:00:24.08,0:00:24.43,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}speak
+Dialogue: 6,0:00:24.08,0:00:24.43,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}spoke
+Dialogue: 6,0:00:24.08,0:00:24.43,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}spoken
+Dialogue: 6,0:00:24.43,0:00:24.91,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H0038E6FF&\fscx112\fscy112}speak
+Dialogue: 6,0:00:24.43,0:00:24.91,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}spoke
+Dialogue: 6,0:00:24.43,0:00:24.91,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}spoken
+Dialogue: 6,0:00:24.91,0:00:25.39,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}speak
+Dialogue: 6,0:00:24.91,0:00:25.39,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H0038E6FF&\fscx112\fscy112}spoke
+Dialogue: 6,0:00:24.91,0:00:25.39,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}spoken
+Dialogue: 6,0:00:25.39,0:00:25.56,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}speak
+Dialogue: 6,0:00:25.39,0:00:25.56,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}spoke
+Dialogue: 6,0:00:25.39,0:00:25.56,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H0038E6FF&\fscx112\fscy112}spoken
+Dialogue: 5,0:00:25.56,0:00:27.79,Counter,,0,0,0,,{\pos(1020,72)}16 / 17
+Dialogue: 5,0:00:25.56,0:00:27.79,Meaning,,0,0,0,,{\pos(76,1138)\fad(50,35)}泳ぐ
+Dialogue: 4,0:00:25.56,0:00:27.79,Label,,0,0,0,,{\pos(80,1320)}BASE  原形
+Dialogue: 4,0:00:25.56,0:00:27.79,Label,,0,0,0,,{\pos(80,1510)}PAST  過去形
+Dialogue: 4,0:00:25.56,0:00:27.79,Label,,0,0,0,,{\pos(80,1700)}P.P.  過去分詞
+Dialogue: 6,0:00:25.56,0:00:25.91,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}swim
+Dialogue: 6,0:00:25.56,0:00:25.91,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}swam
+Dialogue: 6,0:00:25.56,0:00:25.91,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}swum
+Dialogue: 6,0:00:25.91,0:00:26.63,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H0038E6FF&\fscx112\fscy112}swim
+Dialogue: 6,0:00:25.91,0:00:26.63,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}swam
+Dialogue: 6,0:00:25.91,0:00:26.63,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}swum
+Dialogue: 6,0:00:26.63,0:00:27.11,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}swim
+Dialogue: 6,0:00:26.63,0:00:27.11,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H0038E6FF&\fscx112\fscy112}swam
+Dialogue: 6,0:00:26.63,0:00:27.11,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}swum
+Dialogue: 6,0:00:27.11,0:00:27.79,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}swim
+Dialogue: 6,0:00:27.11,0:00:27.79,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}swam
+Dialogue: 6,0:00:27.11,0:00:27.79,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H0038E6FF&\fscx112\fscy112}swum
+Dialogue: 5,0:00:27.79,0:00:30.04,Counter,,0,0,0,,{\pos(1020,72)}17 / 17
+Dialogue: 5,0:00:27.79,0:00:30.04,Meaning,,0,0,0,,{\pos(76,1138)\fad(50,35)}取る・持っていく
+Dialogue: 4,0:00:27.79,0:00:30.04,Label,,0,0,0,,{\pos(80,1320)}BASE  原形
+Dialogue: 4,0:00:27.79,0:00:30.04,Label,,0,0,0,,{\pos(80,1510)}PAST  過去形
+Dialogue: 4,0:00:27.79,0:00:30.04,Label,,0,0,0,,{\pos(80,1700)}P.P.  過去分詞
+Dialogue: 6,0:00:27.79,0:00:28.14,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}take
+Dialogue: 6,0:00:27.79,0:00:28.14,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}took
+Dialogue: 6,0:00:27.79,0:00:28.14,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}taken
+Dialogue: 6,0:00:28.14,0:00:28.89,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H0038E6FF&\fscx112\fscy112}take
+Dialogue: 6,0:00:28.14,0:00:28.89,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}took
+Dialogue: 6,0:00:28.14,0:00:28.89,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}taken
+Dialogue: 6,0:00:28.89,0:00:29.14,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}take
+Dialogue: 6,0:00:28.89,0:00:29.14,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H0038E6FF&\fscx112\fscy112}took
+Dialogue: 6,0:00:28.89,0:00:29.14,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H00FFFFFF&\fscx100\fscy100}taken
+Dialogue: 6,0:00:29.14,0:00:30.04,Form,,0,0,0,,{\pos(400,1320)\fs104\c&H00FFFFFF&\fscx100\fscy100}take
+Dialogue: 6,0:00:29.14,0:00:30.04,Form,,0,0,0,,{\pos(400,1510)\fs104\c&H00FFFFFF&\fscx100\fscy100}took
+Dialogue: 6,0:00:29.14,0:00:30.04,Form,,0,0,0,,{\pos(400,1700)\fs104\c&H0038E6FF&\fscx112\fscy112}taken

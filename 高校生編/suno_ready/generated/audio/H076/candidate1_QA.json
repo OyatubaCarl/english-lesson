@@ -1,0 +1,222 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H076.md",
+  "audio": "高校生編/suno_ready/generated/audio/H076/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 165.76,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0098,
+  "expected_words": 205,
+  "transcribed_words": 207,
+  "matched_words": 202,
+  "coverage": 0.9854,
+  "precision": 0.9758,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 204,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 37,
+      "length": 1,
+      "words": [
+        "nineteenth"
+      ]
+    },
+    {
+      "start": 40,
+      "length": 1,
+      "words": [
+        "twentieth"
+      ]
+    },
+    {
+      "start": 177,
+      "length": 1,
+      "words": [
+        "coexist"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 37,
+      "actual_start": 37,
+      "expected": [
+        "nineteenth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.8744,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 40,
+      "actual_start": 40,
+      "expected": [
+        "twentieth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.9833,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 177,
+      "actual_start": 177,
+      "expected": [
+        "coexist"
+      ],
+      "actual": [
+        "co",
+        "exist"
+      ],
+      "actual_confidence": 0.8016,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 205,
+      "actual_start": 206,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.2424
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 3,
+  "suspicious_substitution_words": 3,
+  "suspicious_content_substitution": true,
+  "transcript": "Why do people leave the land where they were born? War, poverty, persecution, or the wish for a better life? The reasons vary, but the decision to leave one's homeland is difficult in every age. From the 19th to the 20th century, millions of Europeans crossed the ocean to America Families traveled together on long voyages, and a new life would begin Upon arrival, immigrants first suffered from the barrier of language Without a single acquaintance Lonely days went on Many could barely afford the cost of passage The actual life in America Was far harder than they had imagined Low wages, poor housing And discrimination still Many immigrants gradually adjusted to the new society Their children learned English at school And blended into the local community Becoming accustomed to their new surroundings They began to build lives of their own At the same time, immigrants also kept the cultures of their ancestors, food, music, festivals Their diversity enriched the society that received them Today cities around the world have become multicultural societies For different cultures to co-exist, tolerance toward one another And the effort to overcome prejudice are needed Whether a society can turn diversity into strength depends on everyone who lives in it you",
+  "segments": [
+    {
+      "start": 9.5,
+      "end": 14.3,
+      "text": "Why do people leave the land where they were born?"
+    },
+    {
+      "start": 15.52,
+      "end": 20.88,
+      "text": "War, poverty, persecution, or the wish for a better life?"
+    },
+    {
+      "start": 21.34,
+      "end": 27.92,
+      "text": "The reasons vary, but the decision to leave one's homeland is difficult in every age."
+    },
+    {
+      "start": 27.92,
+      "end": 38.82,
+      "text": "From the 19th to the 20th century, millions of Europeans crossed the ocean to America"
+    },
+    {
+      "start": 40.44,
+      "end": 46.8,
+      "text": "Families traveled together on long voyages, and a new life would begin"
+    },
+    {
+      "start": 46.8,
+      "end": 53.62,
+      "text": "Upon arrival, immigrants first suffered from the barrier of language"
+    },
+    {
+      "start": 53.62,
+      "end": 59.04,
+      "text": "Without a single acquaintance Lonely days went on"
+    },
+    {
+      "start": 59.62,
+      "end": 63.18,
+      "text": "Many could barely afford the cost of passage"
+    },
+    {
+      "start": 63.18,
+      "end": 67.44,
+      "text": "The actual life in America"
+    },
+    {
+      "start": 67.44,
+      "end": 72.86,
+      "text": "Was far harder than they had imagined"
+    },
+    {
+      "start": 73.62,
+      "end": 80.06,
+      "text": "Low wages, poor housing And discrimination still"
+    },
+    {
+      "start": 80.06,
+      "end": 84.9,
+      "text": "Many immigrants gradually adjusted to the new society"
+    },
+    {
+      "start": 84.9,
+      "end": 88.68,
+      "text": "Their children learned English at school"
+    },
+    {
+      "start": 88.68,
+      "end": 92.14,
+      "text": "And blended into the local community"
+    },
+    {
+      "start": 93.06,
+      "end": 97.34,
+      "text": "Becoming accustomed to their new surroundings"
+    },
+    {
+      "start": 99.06,
+      "end": 103.08,
+      "text": "They began to build lives of their own"
+    },
+    {
+      "start": 104.06,
+      "end": 108.2,
+      "text": "At the same time, immigrants also kept the cultures"
+    },
+    {
+      "start": 108.2,
+      "end": 112.58,
+      "text": "of their ancestors, food, music, festivals"
+    },
+    {
+      "start": 113.2,
+      "end": 118.16,
+      "text": "Their diversity enriched the society that received them"
+    },
+    {
+      "start": 118.16,
+      "end": 124.82,
+      "text": "Today cities around the world have become multicultural societies"
+    },
+    {
+      "start": 126.2,
+      "end": 133.02,
+      "text": "For different cultures to co-exist, tolerance toward one another"
+    },
+    {
+      "start": 133.02,
+      "end": 141.4,
+      "text": "And the effort to overcome prejudice are needed"
+    },
+    {
+      "start": 141.4,
+      "end": 155.72,
+      "text": "Whether a society can turn diversity into strength depends on everyone who lives in it"
+    },
+    {
+      "start": 164.34,
+      "end": 165.08,
+      "text": "you"
+    }
+  ]
+}

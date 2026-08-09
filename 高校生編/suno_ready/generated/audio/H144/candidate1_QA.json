@@ -1,0 +1,254 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H144.md",
+  "audio": "高校生編/suno_ready/generated/audio/H144/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 208.6,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9932,
+  "expected_words": 294,
+  "transcribed_words": 292,
+  "matched_words": 290,
+  "coverage": 0.9864,
+  "precision": 0.9932,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 293,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 13,
+      "length": 2,
+      "words": [
+        "twenty",
+        "five"
+      ]
+    },
+    {
+      "start": 119,
+      "length": 1,
+      "words": [
+        "accountant"
+      ]
+    },
+    {
+      "start": 210,
+      "length": 1,
+      "words": [
+        "sixty"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 119,
+      "actual_start": 117,
+      "expected": [
+        "accountant"
+      ],
+      "actual": [
+        "accounting"
+      ],
+      "actual_confidence": 0.3766,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 202,
+      "actual_start": 200,
+      "expected": [],
+      "actual": [
+        "lost"
+      ],
+      "actual_confidence": 0.3147
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 13,
+      "actual_start": 13,
+      "expected": [
+        "twenty",
+        "five"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 210,
+      "actual_start": 209,
+      "expected": [
+        "sixty"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "My father lost his right leg in a traffic accident When he was 25, from that time on his life with a disability began The first few years were filled with despair Adapting to a prosthetic leg was a bitter process And learning to walk again took months My father, having received such a blow Often grieved alone at night But my father was a strong person He did not yield to depression He accepted his disability and made up his mind to build a new life He began his studies at an accounting institute In order to qualify for a profession he could do while seated Three years later he earned the qualification of a certified public accounting After that he became an independent financial consultant For small and medium-sized businesses With precise calculations and sincere work he won the trust of many clients He married my mother and my sister and I were born Even with a prosthetic leg My father played with us in the park He could not ride a bicycle But he could swim with us in the pool My father often said The most important thing in life Is not what you have lost lost, but what you make from what remains, at 60, my father retired. Today, he works as a volunteer at a local organization supporting people with disabilities. He gives advice from his own experience to young people who have gone through the same, To lose a part of one's body is a terrible experience But what my father taught me Is that loss does not have to be the end of a meaningful life Hardship can deepen a person's understanding My father's quiet strength was born from the experience of losing a leg",
+  "segments": [
+    {
+      "start": 11.02,
+      "end": 17.16,
+      "text": "My father lost his right leg in a traffic accident"
+    },
+    {
+      "start": 18.0,
+      "end": 25.32,
+      "text": "When he was 25, from that time on his life with a disability began"
+    },
+    {
+      "start": 25.32,
+      "end": 29.84,
+      "text": "The first few years were filled with despair"
+    },
+    {
+      "start": 29.84,
+      "end": 35.12,
+      "text": "Adapting to a prosthetic leg was a bitter process"
+    },
+    {
+      "start": 35.12,
+      "end": 39.34,
+      "text": "And learning to walk again took months"
+    },
+    {
+      "start": 41.22,
+      "end": 45.48,
+      "text": "My father, having received such a blow"
+    },
+    {
+      "start": 45.48,
+      "end": 48.52,
+      "text": "Often grieved alone at night"
+    },
+    {
+      "start": 48.52,
+      "end": 51.62,
+      "text": "But my father was a strong person"
+    },
+    {
+      "start": 51.62,
+      "end": 54.62,
+      "text": "He did not yield to depression"
+    },
+    {
+      "start": 54.62,
+      "end": 61.98,
+      "text": "He accepted his disability and made up his mind to build a new life"
+    },
+    {
+      "start": 61.98,
+      "end": 68.2,
+      "text": "He began his studies at an accounting institute"
+    },
+    {
+      "start": 70.7,
+      "end": 76.94,
+      "text": "In order to qualify for a profession he could do while seated"
+    },
+    {
+      "start": 76.94,
+      "end": 84.1,
+      "text": "Three years later he earned the qualification of a certified public accounting"
+    },
+    {
+      "start": 84.1,
+      "end": 90.54,
+      "text": "After that he became an independent financial consultant"
+    },
+    {
+      "start": 91.1,
+      "end": 96.42,
+      "text": "For small and medium-sized businesses"
+    },
+    {
+      "start": 97.92,
+      "end": 104.1,
+      "text": "With precise calculations and sincere work he won the trust of many clients"
+    },
+    {
+      "start": 104.82,
+      "end": 111.02,
+      "text": "He married my mother and my sister and I were born"
+    },
+    {
+      "start": 111.02,
+      "end": 114.86,
+      "text": "Even with a prosthetic leg"
+    },
+    {
+      "start": 116.24,
+      "end": 120.06,
+      "text": "My father played with us in the park"
+    },
+    {
+      "start": 121.86,
+      "end": 125.42,
+      "text": "He could not ride a bicycle"
+    },
+    {
+      "start": 125.42,
+      "end": 128.6,
+      "text": "But he could swim with us in the pool"
+    },
+    {
+      "start": 128.6,
+      "end": 131.06,
+      "text": "My father often said"
+    },
+    {
+      "start": 132.02,
+      "end": 135.34,
+      "text": "The most important thing in life"
+    },
+    {
+      "start": 135.34,
+      "end": 138.02,
+      "text": "Is not what you have lost"
+    },
+    {
+      "start": 138.05,
+      "end": 147.63,
+      "text": "lost, but what you make from what remains, at 60, my father retired."
+    },
+    {
+      "start": 152.05,
+      "end": 158.05,
+      "text": "Today, he works as a volunteer at a local organization supporting people with disabilities."
+    },
+    {
+      "start": 158.93,
+      "end": 164.23,
+      "text": "He gives advice from his own experience to young people who have gone through the same,"
+    },
+    {
+      "start": 164.23,
+      "end": 170.15,
+      "text": "To lose a part of one's body is a terrible experience"
+    },
+    {
+      "start": 171.23,
+      "end": 174.91,
+      "text": "But what my father taught me"
+    },
+    {
+      "start": 174.91,
+      "end": 181.77,
+      "text": "Is that loss does not have to be the end of a meaningful life"
+    },
+    {
+      "start": 182.83,
+      "end": 187.25,
+      "text": "Hardship can deepen a person's understanding"
+    },
+    {
+      "start": 187.25,
+      "end": 199.13,
+      "text": "My father's quiet strength was born from the experience of losing a leg"
+    }
+  ]
+}

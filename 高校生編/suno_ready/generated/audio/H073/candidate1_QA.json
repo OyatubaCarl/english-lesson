@@ -1,0 +1,223 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H073.md",
+  "audio": "高校生編/suno_ready/generated/audio/H073/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 153.4,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9956,
+  "expected_words": 225,
+  "transcribed_words": 224,
+  "matched_words": 219,
+  "coverage": 0.9733,
+  "precision": 0.9777,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 224,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 12,
+      "length": 2,
+      "words": [
+        "thirty",
+        "seven"
+      ]
+    },
+    {
+      "start": 119,
+      "length": 2,
+      "words": [
+        "lack",
+        "of"
+      ]
+    },
+    {
+      "start": 126,
+      "length": 1,
+      "words": [
+        "and"
+      ]
+    },
+    {
+      "start": 152,
+      "length": 1,
+      "words": [
+        "digestive"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 119,
+      "actual_start": 117,
+      "expected": [
+        "lack",
+        "of"
+      ],
+      "actual": [
+        "like",
+        "a"
+      ],
+      "actual_confidence": 0.5355,
+      "substitution_words": 2,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 126,
+      "actual_start": 124,
+      "expected": [
+        "and"
+      ],
+      "actual": [
+        "it"
+      ],
+      "actual_confidence": 0.2768,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 152,
+      "actual_start": 150,
+      "expected": [
+        "digestive"
+      ],
+      "actual": [
+        "digest",
+        "of"
+      ],
+      "actual_confidence": 0.5829,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 12,
+      "actual_start": 12,
+      "expected": [
+        "thirty",
+        "seven"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "The human body is an astonishingly complex system made up of about 37 trillion cells. The heart beats about 100,000 times a day, and the lungs breathe in and out about 20,000 times a day. The food we eat is digested in the stomach and intestines And is delivered as energy to tissues throughout the body Nutrients such as protein, vitamins and minerals Are essential for the body's repair and growth The three pillars of staying healthy are said to be moderate exercise A balanced diet and sufficient sleep When these are broken, the risk of various diseases rises Lack of exercise can cause heart disease and diabetes Too much salt or sugar leads to high blood pressure and obesity Like a sleep weakens the immune system It makes a person more likely to fall ill Stress affects not only mental health But also physical health in serious ways Chronic stress can cause digest of trouble headaches, sleeplessness and depression Regular medical checks help to detect disease early Physicians listen to a patient's lifestyle and when needed suggest a treatment The body is the most precious tool that has been given to each of us The small choices of each day support a long life Health is not something we attend to only on special occasions But something that lives in the daily fabric of our lives",
+  "segments": [
+    {
+      "start": 2.92,
+      "end": 12.44,
+      "text": "The human body is an astonishingly complex system made up of about 37 trillion cells."
+    },
+    {
+      "start": 14.0,
+      "end": 25.14,
+      "text": "The heart beats about 100,000 times a day, and the lungs breathe in and out about 20,000 times a day."
+    },
+    {
+      "start": 29.1,
+      "end": 33.76,
+      "text": "The food we eat is digested in the stomach and intestines"
+    },
+    {
+      "start": 33.76,
+      "end": 39.9,
+      "text": "And is delivered as energy to tissues throughout the body"
+    },
+    {
+      "start": 39.9,
+      "end": 44.86,
+      "text": "Nutrients such as protein, vitamins and minerals"
+    },
+    {
+      "start": 44.86,
+      "end": 51.1,
+      "text": "Are essential for the body's repair and growth"
+    },
+    {
+      "start": 51.1,
+      "end": 56.48,
+      "text": "The three pillars of staying healthy are said to be moderate exercise"
+    },
+    {
+      "start": 56.48,
+      "end": 60.78,
+      "text": "A balanced diet and sufficient sleep"
+    },
+    {
+      "start": 62.1,
+      "end": 67.38,
+      "text": "When these are broken, the risk of various diseases rises"
+    },
+    {
+      "start": 67.38,
+      "end": 73.88,
+      "text": "Lack of exercise can cause heart disease and diabetes"
+    },
+    {
+      "start": 77.78,
+      "end": 84.12,
+      "text": "Too much salt or sugar leads to high blood pressure and obesity"
+    },
+    {
+      "start": 84.88,
+      "end": 87.74,
+      "text": "Like a sleep weakens the immune system"
+    },
+    {
+      "start": 87.74,
+      "end": 90.92,
+      "text": "It makes a person more likely to fall ill"
+    },
+    {
+      "start": 90.92,
+      "end": 95.06,
+      "text": "Stress affects not only mental health"
+    },
+    {
+      "start": 95.06,
+      "end": 100.78,
+      "text": "But also physical health in serious ways"
+    },
+    {
+      "start": 100.78,
+      "end": 106.66,
+      "text": "Chronic stress can cause digest of trouble headaches, sleeplessness and depression"
+    },
+    {
+      "start": 106.66,
+      "end": 112.2,
+      "text": "Regular medical checks help to detect disease early"
+    },
+    {
+      "start": 112.2,
+      "end": 117.42,
+      "text": "Physicians listen to a patient's lifestyle and when needed suggest a treatment"
+    },
+    {
+      "start": 117.42,
+      "end": 123.4,
+      "text": "The body is the most precious tool that has been given to each of us"
+    },
+    {
+      "start": 127.16,
+      "end": 133.06,
+      "text": "The small choices of each day support a long life"
+    },
+    {
+      "start": 133.06,
+      "end": 140.74,
+      "text": "Health is not something we attend to only on special occasions"
+    },
+    {
+      "start": 142.4,
+      "end": 149.32,
+      "text": "But something that lives in the daily fabric of our lives"
+    }
+  ]
+}

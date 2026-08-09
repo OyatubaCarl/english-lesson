@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+<title>タコス厨房ラッシュ — Prototype</title>
+<style>
+:root {
+  --bg: #FFF8EE;
+  --paper: #FFFDF7;
+  --ink: #2A1F14;
+  --sub: #6B5A47;
+  --accent: #C73E1D;
+  --accent-soft: #F4A26A;
+  --green: #4A7C59;
+  --green-soft: #EAF4EC;
+  --yellow: #E8B647;
+  --red: #D2342B;
+  --red-soft: #FCE4E0;
+  --border: #E6D5BC;
+  --wood: #B8845A;
+  --wood-dark: #8B5E3C;
+  --shadow: 0 4px 16px rgba(74,50,30,0.08);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+html, body { height: 100%; overflow: hidden; }
+body {
+  font-family: "Hiragino Sans", "Hiragino Maru Gothic ProN", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg); color: var(--ink); line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+.app {
+  max-width: 440px; margin: 0 auto;
+  /* 動的ビューポート高さ + safe-area-inset で iOS Safari の URL バー /
+     ノッチ / ホームインジケーターを避けて、最下部のマスコットが切れないようにする */
+  height: 100svh;            /* 旧ブラウザ向けフォールバック */
+  height: 100dvh;            /* 新ブラウザ: アドレスバー出現/隠れで再計算 */
+  padding: 12px 14px calc(12px + env(safe-area-inset-bottom, 0px));
+  display: flex; flex-direction: column;
+  position: relative;
+}
+
+/* 端末高さが狭い (横向き / iPhone SE 系) 場合は中段要素を圧縮して
+   マスコット行が必ず収まるようにする */
+@media (max-height: 640px) {
+  .order { padding: 10px 12px; margin-bottom: 8px; }
+  .order .prompt { font-size: 1.1rem; }
+  .customer-row { height: 52px; margin-bottom: 2px; }
+  .customer { width: 52px; height: 52px; }
+  .conveyor-wrap { height: 72px; margin-bottom: 8px; }
+  .conveyor { height: 30px; top: 22px; }
+  .tortilla { width: 62px; height: 62px; top: 6px; font-size: 3.4rem; }
+  .choice { padding: 10px 10px; font-size: 0.92rem; min-height: 46px; }
+  .choices.five .choice { padding: 8px 12px; min-height: 40px; }
+  .mascot-row { padding: 2px; gap: 8px; }
+  .mascot { width: 52px; height: 64px; }
+}
+
+/* ==== ヘッダー: ストリーク + 経過秒 ==== */
+.hud {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 0.85rem; color: var(--sub);
+  padding: 4px 0 10px;
+}
+.hud .streak { font-weight: 800; color: var(--accent); font-size: 1rem; white-space: nowrap; }
+.hud .fails {
+  display: inline-flex; align-items: center; gap: 1px;
+  flex-shrink: 0; line-height: 1;
+}
+.hud .fails .heart {
+  display: inline-block;
+  font-size: 0.85rem; line-height: 1;
+  transition: filter 0.25s ease, opacity 0.25s ease;
+  transform-origin: center;
+}
+.hud .fails .heart.off {
+  filter: grayscale(1) brightness(0.7);
+  opacity: 0.4;
+}
+.hud .fails .heart.pop {
+  animation: heartPop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@keyframes heartPop {
+  0%   { transform: scale(1); }
+  35%  { transform: scale(1.7) rotate(-12deg); }
+  70%  { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+.hud .fails.danger { animation: failPulse 0.6s ease-in-out infinite alternate; }
+@keyframes failPulse { from { opacity: 1; } to { opacity: 0.55; } }
+.hud .sep { font-size: 0.7rem; opacity: 0.5; margin-left: 1px; }
+.hud .streak-bar {
+  flex: 1; height: 8px; background: var(--border); border-radius: 999px; overflow: hidden;
+  min-width: 30px;
+}
+.hud .streak-bar > div {
+  height: 100%; background: linear-gradient(90deg, var(--accent-soft), var(--accent));
+  transition: width 0.3s;
+}
+.hud .timer { font-weight: 700; color: var(--sub); min-width: 44px; text-align: right; font-size: 0.85rem; }
+
+/* ==== オーダー板 (吹き出し) ==== */
+.order {
+  background: var(--paper); border: 2px solid var(--border); border-radius: 14px;
+  padding: 16px 18px; box-shadow: var(--shadow); position: relative;
+  margin-bottom: 14px;
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+.order .direction {
+  font-size: 0.7rem; color: var(--sub);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin-bottom: 4px;
+}
+/* ラスト1問 (Q10) のフィナーレ演出: 赤縁発光 + パルスアニメ */
+.order.final-order {
+  background: linear-gradient(135deg, #FFF1E5 0%, #FFE2D0 100%);
+  border-color: #D2342B;
+  box-shadow: 0 0 0 4px rgba(210,52,43,0.18), 0 6px 18px rgba(210,52,43,0.28);
+  animation: finalPulse 0.9s ease-in-out infinite alternate;
+}
+.order.final-order .direction {
+  color: #D2342B; font-weight: 800;
+  letter-spacing: 0.12em;
+  animation: none;
+}
+.order.final-order .prompt { color: #B72216; }
+@keyframes finalPulse {
+  from { box-shadow: 0 0 0 4px rgba(210,52,43,0.18), 0 6px 18px rgba(210,52,43,0.28); }
+  to   { box-shadow: 0 0 0 7px rgba(210,52,43,0.30), 0 6px 22px rgba(210,52,43,0.42); }
+}
+.order .prompt {
+  font-size: 1.3rem; font-weight: 800; line-height: 1.3;
+  color: var(--ink);
+}
+.order::after {
+  content: ""; position: absolute;
+  left: 32px; bottom: -10px;
+  width: 0; height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--border);
+}
+
+/* ==== 客 ==== */
+.customer-row {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  height: 64px; margin-bottom: 4px; padding: 0 8px;
+}
+.customer {
+  width: 64px; height: 64px;
+  display: flex; align-items: flex-end; justify-content: center;
+  transition: transform 0.4s;
+}
+.customer img {
+  width: 100%; height: 100%; object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(74,50,30,0.18));
+  user-select: none; -webkit-user-drag: none;
+}
+.customer.happy { animation: happyBounce 0.8s ease; }
+@keyframes happyBounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  30%      { transform: translateY(-14px) scale(1.1); }
+  60%      { transform: translateY(0) scale(1.05); }
+}
+.customer.angry { animation: angryShake 0.5s ease; }
+@keyframes angryShake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); filter: hue-rotate(-20deg); }
+  40%, 80% { transform: translateX(6px); filter: hue-rotate(-20deg); }
+}
+
+/* ==== コンベア ==== */
+.conveyor-wrap {
+  position: relative;
+  margin-bottom: 14px;
+  height: 90px;
+}
+.conveyor {
+  position: absolute; left: 0; right: 0; top: 28px;
+  height: 36px;
+  background:
+    repeating-linear-gradient(90deg,
+      var(--wood) 0 16px,
+      var(--wood-dark) 16px 18px);
+  border-radius: 6px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2), 0 2px 4px rgba(0,0,0,0.15);
+  animation: conveyorRoll 1.2s linear infinite;
+}
+@keyframes conveyorRoll {
+  from { background-position: 0 0; }
+  to   { background-position: 18px 0; }
+}
+.tortilla {
+  position: absolute; top: 4px; left: 0;
+  width: 78px; height: 78px;
+  font-size: 4.2rem;
+  display: flex; align-items: center; justify-content: center;
+  pointer-events: none;
+  transition: none;
+  filter: drop-shadow(0 2px 4px rgba(74,50,30,0.3));
+}
+
+/* ==== 選択肢 (具材タグ) ==== */
+.choices {
+  display: grid; gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  flex: 1; min-height: 0;
+  margin-bottom: 12px;
+}
+.choices.five { grid-template-columns: 1fr; }
+.choices.five .choice { padding: 10px 14px; min-height: 48px; }
+.choice {
+  background: white; border: 2px solid var(--border); border-radius: 12px;
+  padding: 14px 12px; font-size: 1rem; font-weight: 700; cursor: pointer; text-align: center;
+  color: var(--ink); font-family: inherit;
+  min-height: 58px;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 6px rgba(74,50,30,0.08);
+  transition: transform 0.1s, border-color 0.15s;
+}
+.choice:active { transform: scale(0.97); }
+.choice:disabled { cursor: default; opacity: 0.55; }
+.choice.correct {
+  background: var(--green-soft); border-color: var(--green); color: var(--green);
+  animation: correctPulse 0.3s ease;
+}
+.choice.wrong {
+  background: var(--red-soft); border-color: var(--red); color: var(--red);
+  animation: wrongShake 0.25s ease;
+}
+@keyframes correctPulse { from { transform: scale(0.95); } to { transform: scale(1); } }
+@keyframes wrongShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
+
+/* ==== マスコット ==== */
+.mascot-row {
+  display: flex; align-items: center; gap: 10px;
+  padding: 4px;
+}
+.mascot {
+  width: 64px; height: 80px; flex-shrink: 0;
+  position: relative;
+}
+.mascot img {
+  position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+  object-fit: contain; opacity: 0; transition: opacity 0.2s;
+}
+.mascot img.active { opacity: 1; }
+.mascot.bounce img.active { animation: mascotBounce 1.4s ease-in-out infinite; }
+@keyframes mascotBounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+.bubble {
+  background: var(--paper); border: 2px solid var(--border); border-radius: 12px;
+  padding: 6px 12px; font-size: 0.78rem; color: var(--sub);
+  position: relative;
+}
+.bubble::before {
+  content: ""; position: absolute; left: -8px; top: 50%; transform: translateY(-50%);
+  width: 0; height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 8px solid var(--border);
+}
+
+/* ==== オーバーレイ画面 (スタート/結果) ==== */
+.overlay {
+  position: fixed; inset: 0; background: rgba(255,248,238,0.95);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 24px;
+  z-index: 100;
+}
+.overlay h1 {
+  font-size: 2rem; font-weight: 800; color: var(--accent); margin-bottom: 8px;
+}
+.overlay h1 .taco { color: var(--accent); }
+.overlay p { color: var(--sub); margin-bottom: 16px; text-align: center; }
+.overlay .stats {
+  background: var(--paper); border: 1px solid var(--border); border-radius: 12px;
+  padding: 16px 20px; margin-bottom: 18px;
+  text-align: center; min-width: 240px;
+}
+.overlay .stats .big { font-size: 2rem; font-weight: 800; color: var(--accent); }
+.overlay .stats .label { font-size: 0.8rem; color: var(--sub); }
+.btn {
+  display: block; width: 240px; background: var(--accent); color: white; border: none;
+  padding: 14px 24px; border-radius: 12px; font-size: 1rem; font-weight: 700;
+  cursor: pointer; box-shadow: var(--shadow); margin: 6px;
+  font-family: inherit;
+}
+.btn:active { transform: scale(0.97); }
+.btn.secondary { background: var(--paper); color: var(--accent); border: 2px solid var(--accent); }
+
+/* ==== フィエスタモード ==== */
+.fiesta-flash {
+  position: absolute; inset: 0; background: var(--accent);
+  opacity: 0; pointer-events: none;
+  animation: fiestaFlash 0.5s ease;
+}
+@keyframes fiestaFlash {
+  0%   { opacity: 0; }
+  20%  { opacity: 0.25; }
+  100% { opacity: 0; }
+}
+
+/* ==== 結果画面: マスコット + 散乱具材 ==== */
+.end-scene {
+  position: relative; width: 220px; height: 220px;
+  margin-bottom: 6px;
+}
+#end-mascot-img {
+  width: 100%; height: 100%; object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(74,50,30,0.18));
+}
+.overlay.failed #end-mascot-img {
+  animation: failBob 2.4s ease-in-out infinite;
+}
+@keyframes failBob {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50%      { transform: translateY(-4px) rotate(2deg); }
+}
+.end-spill { position: absolute; inset: 0; pointer-events: none; }
+.end-spill .spill {
+  position: absolute; font-size: 1.6rem; opacity: 0;
+  display: inline-block;
+}
+.overlay.failed .end-spill .spill {
+  animation: tumbleOut 1.4s ease-out forwards;
+}
+.spill-1 { left:  18%; bottom:  6%; animation-delay: 0.05s; }
+.spill-2 { left:  35%; bottom: 14%; animation-delay: 0.15s; }
+.spill-3 { left:  55%; bottom:  4%; animation-delay: 0.25s; }
+.spill-4 { left:  72%; bottom: 10%; animation-delay: 0.10s; }
+.spill-5 { left:  46%; bottom: 22%; animation-delay: 0.30s; }
+.spill-6 { left:  88%; bottom: 28%; animation-delay: 0.18s; font-size: 1.1rem; }
+@keyframes tumbleOut {
+  0%   { transform: translateY(-30px) rotate(0deg); opacity: 0; }
+  40%  { opacity: 1; }
+  100% { transform: translateY(0) rotate(360deg); opacity: 1; }
+}
+.fail-msg {
+  font-size: 0.95rem; color: var(--sub); text-align: center;
+  margin-bottom: 14px; max-width: 280px; line-height: 1.6;
+}
+.stats-row {
+  display: flex; gap: 10px; margin-bottom: 18px;
+}
+.stats-row .stats { margin-bottom: 0; min-width: 130px; padding: 14px 18px; }
+
+/* ==== ストリーク達成バッジ ==== */
+.streak-badge {
+  position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%) scale(0);
+  background: var(--green); color: white; padding: 14px 24px; border-radius: 16px;
+  font-size: 1.4rem; font-weight: 800;
+  box-shadow: 0 8px 32px rgba(74,124,89,0.5);
+  pointer-events: none; z-index: 50;
+}
+.streak-badge.show { animation: badgePop 1.4s ease forwards; }
+@keyframes badgePop {
+  0%   { transform: translate(-50%, -50%) scale(0); }
+  30%  { transform: translate(-50%, -50%) scale(1.15); }
+  60%  { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(0.9); opacity: 0; }
+}
+</style>
+</head>
+<body>
+
+<div class="app" id="app">
+  <!-- HUD -->
+  <div class="hud">
+    <span class="streak">🌮 <span id="streak-num">0</span><span class="sep">/10</span></span>
+    <div class="streak-bar"><div id="streak-fill" style="width:0%"></div></div>
+    <span class="fails" id="fails" aria-label="残りライフ"></span>
+    <span class="timer" id="timer">5.0s</span>
+  </div>
+
+  <!-- 客の列 -->
+  <div class="customer-row">
+    <div></div>
+    <div class="customer" id="customer">
+      <img src="app_assets/customers/tom.png" alt="Tom" draggable="false">
+    </div>
+  </div>
+
+  <!-- オーダー板 -->
+  <div class="order">
+    <div class="direction" id="order-direction">— ORDER —</div>
+    <div class="prompt" id="order-prompt">…</div>
+  </div>
+
+  <!-- コンベア + トルティーヤ -->
+  <div class="conveyor-wrap">
+    <div class="conveyor"></div>
+    <div class="tortilla" id="tortilla">🫓</div>
+  </div>
+
+  <!-- 選択肢 -->
+  <div class="choices" id="choices"></div>
+
+  <!-- マスコット行 -->
+  <div class="mascot-row">
+    <div class="mascot bounce" id="mascot">
+      <img data-emotion="idle" src="app_assets/mascot/idle.png">
+      <img data-emotion="proud" src="app_assets/mascot/proud.png">
+      <img data-emotion="cheering" src="app_assets/mascot/cheering.png">
+      <img data-emotion="encouraging" src="app_assets/mascot/encouraging.png">
+      <img data-emotion="cheering_warm" src="app_assets/mascot/cheering_warm.png">
+      <img data-emotion="surprised" src="app_assets/mascot/surprised.png">
+    </div>
+    <div class="bubble" id="mascot-bubble">注文を待ってる…</div>
+  </div>
+</div>
+
+<!-- スタート画面 -->
+<div class="overlay" id="overlay-start">
+  <h1>タコス厨房<span class="taco">ラッシュ</span></h1>
+  <p>
+    流れてくるトルティーヤに<br>
+    正しい具材(英単語)を載せて、<br>
+    お客にタコスを届けよう<br><br>
+    <b>10連続正解で合格!</b><br>
+    間違えるとストリークがリセットされ、<br>
+    だんだん難しくなります
+  </p>
+  <button class="btn" id="btn-start">スタート</button>
+</div>
+
+<!-- 結果画面 -->
+<div class="overlay" id="overlay-end" style="display:none">
+  <div class="end-scene">
+    <img id="end-mascot-img" src="app_assets/mascot/cheering.png" alt="">
+    <div class="end-spill" id="end-spill" aria-hidden="true">
+      <span class="spill spill-1">🥬</span>
+      <span class="spill spill-2">🍅</span>
+      <span class="spill spill-3">🧀</span>
+      <span class="spill spill-4">🥩</span>
+      <span class="spill spill-5">🥬</span>
+      <span class="spill spill-6">💧</span>
+    </div>
+  </div>
+  <h1 id="end-title">合格!</h1>
+  <p class="fail-msg" id="end-fail-msg" style="display:none"></p>
+  <div class="stats-row">
+    <div class="stats">
+      <div class="big" id="end-streak">10</div>
+      <div class="label">最高連続正解</div>
+    </div>
+    <div class="stats">
+      <div class="big" id="end-served">12</div>
+      <div class="label">出したタコス</div>
+    </div>
+  </div>
+  <button class="btn" id="btn-retry">もう一度</button>
+</div>
+
+<!-- ストリーク達成バッジ -->
+<div class="streak-badge" id="streak-badge">🌮 連続 5!</div>
+
+<script>
+// ====== 設定 ======
+const STREAK_GOAL = 10;
+const FAIL_LIMIT = 10;   // この回数失敗で店じまい(強制終了)
+const POOL_SIZE = 60;  // ランダム抽出する元プール (パラメータなし時のフォールバック)
+const LESSON_SIZE = 100;
+
+// URL パラメータで stage/lesson 指定: ?stage=stage1&lesson=0 など
+// mode=skip + target=N があれば「次のレッスンN を解放するための前提テスト」(現レッスンは合格扱いしない)
+// なければ通常モード(現レッスン合格 + 次のレッスン解放)
+const URL_PARAMS = new URLSearchParams(window.location.search);
+const PARAM_STAGE = URL_PARAMS.get('stage');     // 例: 'stage1', 'stage5a', ...
+const PARAM_LESSON = URL_PARAMS.get('lesson');   // 例: '0', '5', ...
+const PARAM_MODE = URL_PARAMS.get('mode');       // 'skip' | null
+const PARAM_TARGET = URL_PARAMS.get('target');   // 解放対象のlesson番号 (skip mode 時のみ)
+const STAGE_AUDIO_MAP = {
+  stage1: 'stage1', stage2: 'stage2', stage3: 'stage3', stage4: 'stage4',
+  stage5a: 'stage5', stage5b: 'stage5', stage6a: 'stage6', stage6b: 'stage6',
+  // TOEIC は専用 _en ディレクトリを生成済み
+  stage_toeic_basic:  'stage_toeic_basic',
+  stage_toeic_mid:    'stage_toeic_mid',
+  stage_toeic_high:   'stage_toeic_high',
+  stage_toeic_expert: 'stage_toeic_expert',
+};
+const STAGE_SLICE_MAP = {
+  stage5a: [0, 1360],    stage5b: [1360, 2720],
+  stage6a: [0, 1197],    stage6b: [1197, 2394],
+};
+const STAGE_SRC_MAP = {
+  stage1: 'stage1_quizzes_clean.json', stage2: 'stage2_quizzes_clean.json',
+  stage3: 'stage3_quizzes_clean.json', stage4: 'stage4_quizzes_clean.json',
+  stage5a: 'stage5_quizzes_clean.json', stage5b: 'stage5_quizzes_clean.json',
+  stage6a: 'stage6_quizzes_clean.json', stage6b: 'stage6_quizzes_clean.json',
+  stage_toeic_basic:  'stage_toeic_basic_quizzes_clean.json',
+  stage_toeic_mid:    'stage_toeic_mid_quizzes_clean.json',
+  stage_toeic_high:   'stage_toeic_high_quizzes_clean.json',
+  stage_toeic_expert: 'stage_toeic_expert_quizzes_clean.json',
+};
+const RESOLVED_STAGE = PARAM_STAGE && STAGE_SRC_MAP[PARAM_STAGE] ? PARAM_STAGE : 'stage1';
+const STAGE_SRC = STAGE_SRC_MAP[RESOLVED_STAGE];
+const AUDIO_DIR = `app_audio/${STAGE_AUDIO_MAP[RESOLVED_STAGE]}_en`;
+
+// 段階的難化: streak値 (= これから出る問題の直前のstreak) に応じてスピードが変化
+// Q1=streak0 ... Q10=streak9。毎問 0.5s ずつ単調に短くしてプラトーをなくす。
+// 選択肢数は常に4個に固定 (端末高さに関わらずレイアウトが安定する)。
+const TIME_LIMITS = [7.0, 6.5, 6.0, 5.5, 5.0, 4.5, 4.0, 3.5, 3.0, 2.5];  // Q1〜Q10
+function difficultyFor(streak) {
+  const idx = Math.max(0, Math.min(streak, TIME_LIMITS.length - 1));
+  return { timeLimit: TIME_LIMITS[idx], choices: 4, isFinal: streak === STREAK_GOAL - 1 };
+}
+
+// ====== 状態 ======
+let pool = [];           // 抽出した語プール
+let streak = 0;
+let maxStreak = 0;
+let served = 0;
+let failCount = 0;       // 失敗回数 (FAIL_LIMIT で店じまい)
+let curQ = null;         // {q, direction:'jp_to_en'|'en_to_jp', choices:[...], correctIdx}
+let tortillaFlyAnim = null;       // WAAPI 完成/焦げ落ちアニメ参照
+let tortillaConveyorAnim = null;  // WAAPI コンベア移動アニメ参照
+let answered = false;
+let timerHandle = null;
+let timeLeft = 0;
+let timeLimit = 7.0;
+let tortillaStart = 0;   // 開始時刻 (ms)
+let rafHandle = null;
+
+// ====== DOM helpers ======
+const $ = (id) => document.getElementById(id);
+
+// ====== 音声 ======
+const audioCache = {};
+function playWordAudio(word) {
+  if (!word) return;
+  const safe = word.replace(/[\/\s.]/g, '_');
+  const src = `${AUDIO_DIR}/${safe}.mp3`;
+  let a = audioCache[src];
+  if (!a) {
+    a = new Audio(src);
+    audioCache[src] = a;
+  }
+  try { a.pause(); a.currentTime = 0; } catch (_) {}
+  a.play().catch(() => {});
+}
+
+// ====== BGM (英語発音を邪魔しないよう控えめ音量) ======
+const bgm = new Audio('app_assets/sounds/kitchen_bgm.mp3');
+bgm.loop = true;
+bgm.volume = 0.32;
+function startBgm() {
+  try { bgm.currentTime = 0; } catch (_) {}
+  bgm.play().catch(() => {});
+}
+function stopBgm() { try { bgm.pause(); } catch (_) {} }
+
+// ====== 失敗SFX (Dizzy + Negative を同時再生) ======
+const failDizzy = new Audio('app_assets/sounds/fail_dizzy.mp3');
+const failNegative = new Audio('app_assets/sounds/fail_negative.mp3');
+failDizzy.volume = 0.85;
+failNegative.volume = 0.85;
+function playFailSfx() {
+  try { failDizzy.currentTime = 0; failDizzy.play().catch(() => {}); } catch (_) {}
+  try { failNegative.currentTime = 0; failNegative.play().catch(() => {}); } catch (_) {}
+}
+
+// ====== 成功ファンファーレ ======
+const successFanfare = new Audio('app_assets/sounds/success_fanfare.mp3');
+successFanfare.volume = 0.9;
+function playSuccessFanfare() {
+  try { successFanfare.currentTime = 0; successFanfare.play().catch(() => {}); } catch (_) {}
+}
+
+// ====== マスコット ======
+function setMascot(emotion) {
+  const wrap = $('mascot');
+  wrap.querySelectorAll('img').forEach(img => {
+    img.classList.toggle('active', img.dataset.emotion === emotion);
+  });
+}
+function setBubble(text) { $('mascot-bubble').innerText = text; }
+
+// ====== データ取得 ======
+async function loadPool() {
+  const r = await fetch(STAGE_SRC + '?t=' + Date.now());
+  const j = await r.json();
+  let all = j.quizzes;
+  // stage5a/stage5b/stage6a/stage6b は slice 範囲を限定
+  if (STAGE_SLICE_MAP[RESOLVED_STAGE]) {
+    const [s, e] = STAGE_SLICE_MAP[RESOLVED_STAGE];
+    all = all.slice(s, e);
+  }
+  // lesson 指定があればその100語に絞る、なければランダム60語
+  if (PARAM_LESSON !== null && !isNaN(parseInt(PARAM_LESSON))) {
+    const li = parseInt(PARAM_LESSON);
+    const startIdx = li * LESSON_SIZE;
+    const endIdx = Math.min(startIdx + LESSON_SIZE, all.length);
+    pool = all.slice(startIdx, endIdx);
+  } else {
+    const shuffled = all.slice().sort(() => Math.random() - 0.5);
+    pool = shuffled.slice(0, POOL_SIZE);
+  }
+}
+
+// ====== 問題生成 ======
+function makeQuestion() {
+  // 出題語をランダム選択
+  const q = pool[Math.floor(Math.random() * pool.length)];
+  // 方向ランダム (c. 両方混在)
+  const direction = Math.random() < 0.5 ? 'jp_to_en' : 'en_to_jp';
+  // 選択肢
+  const diff = difficultyFor(streak);
+  const distractors = pool
+    .filter(x => x.id !== q.id)
+    .sort(() => Math.random() - 0.5)
+    .slice(0, diff.choices - 1);
+  const allOptions = [q, ...distractors].sort(() => Math.random() - 0.5);
+  const correctIdx = allOptions.findIndex(x => x.id === q.id);
+  return { q, direction, options: allOptions, correctIdx, diff };
+}
+
+function renderQuestion() {
+  curQ = makeQuestion();
+  answered = false;
+  timeLimit = curQ.diff.timeLimit;
+
+  // オーダー板 (ラストはフィナーレ演出)
+  const orderEl = document.querySelector('.order');
+  orderEl.classList.toggle('final-order', !!curQ.diff.isFinal);
+  if (curQ.diff.isFinal) {
+    $('order-direction').innerText = '🔥 ラストオーダー! 🔥';
+    $('order-prompt').innerText = curQ.direction === 'jp_to_en'
+      ? `「${curQ.q.meaning_jp}」決めろ!`
+      : `「${curQ.q.word}」決めろ!`;
+  } else if (curQ.direction === 'jp_to_en') {
+    $('order-direction').innerText = '— ORDER (英語で何?) —';
+    $('order-prompt').innerText = `「${curQ.q.meaning_jp}」お願い!`;
+  } else {
+    $('order-direction').innerText = '— ORDER (意味は?) —';
+    $('order-prompt').innerText = `「${curQ.q.word}」お願い!`;
+  }
+
+  // 選択肢
+  const choicesEl = $('choices');
+  choicesEl.className = 'choices' + (curQ.options.length === 5 ? ' five' : '');
+  choicesEl.innerHTML = '';
+  curQ.options.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'choice';
+    btn.innerText = curQ.direction === 'jp_to_en' ? opt.word : opt.meaning_jp;
+    btn.onclick = () => onChoose(i);
+    choicesEl.appendChild(btn);
+  });
+
+  // トルティーヤを左端から出発させる(前ラウンドのアニメ残骸を完全リセット)
+  const tortilla = $('tortilla');
+  // 前ラウンドの WAAPI アニメ(完成/焦げ落ち/コンベア移動)をキャンセル
+  if (tortillaFlyAnim)      { tortillaFlyAnim.cancel();      tortillaFlyAnim = null; }
+  if (tortillaConveyorAnim) { tortillaConveyorAnim.cancel(); tortillaConveyorAnim = null; }
+  tortilla.style.removeProperty('transform');
+  tortilla.style.removeProperty('opacity');
+  tortilla.style.removeProperty('filter');
+  tortilla.style.removeProperty('transition');
+  tortilla.style.left = '0px';
+  tortilla.innerText = '🫓';
+
+  const conveyorWidth = document.querySelector('.conveyor').clientWidth;
+  const distance = conveyorWidth - 78;
+  // コンベア移動も WAAPI で統一(CSS transition は preview 環境で取りこぼし発生)
+  tortillaConveyorAnim = tortilla.animate(
+    [{ left: '0px' }, { left: distance + 'px' }],
+    { duration: timeLimit * 1000, easing: 'linear', fill: 'forwards' }
+  );
+
+  // 英語が出題されたら(en_to_jp)、英単語を即読み上げる
+  if (curQ.direction === 'en_to_jp') {
+    setTimeout(() => playWordAudio(curQ.q.word), 150);
+  }
+
+  // タイマー開始
+  tortillaStart = performance.now();
+  startTimer();
+
+  // マスコット
+  setMascot('idle');
+  if (curQ.diff.isFinal) { setMascot('cheering'); setBubble('🔥 ラスト! 決めろ!'); }
+  else if (streak === 0) setBubble('落ち着いていこう');
+  else if (streak < 5)   setBubble('いいぞ、続けよう!');
+  else if (streak < 8)   setBubble('あと少し、集中!');
+  else                   setBubble('もうすぐ10連続だ!');
+}
+
+function startTimer() {
+  cancelAnimationFrame(rafHandle);
+  const tick = () => {
+    if (answered) return;
+    const elapsed = (performance.now() - tortillaStart) / 1000;
+    timeLeft = timeLimit - elapsed;
+    $('timer').innerText = Math.max(0, timeLeft).toFixed(1) + 's';
+    if (timeLeft <= 0) {
+      onTimeUp();
+      return;
+    }
+    rafHandle = requestAnimationFrame(tick);
+  };
+  rafHandle = requestAnimationFrame(tick);
+}
+
+// ====== 回答処理 ======
+function onChoose(idx) {
+  if (answered) return;
+  answered = true;
+  cancelAnimationFrame(rafHandle);
+
+  // 日本語が出題されていた(jp_to_en)なら、ボタン押下と同時に正解英単語を読み上げる
+  if (curQ.direction === 'jp_to_en') {
+    playWordAudio(curQ.q.word);
+  }
+
+  const btns = document.querySelectorAll('.choice');
+  btns.forEach(b => b.disabled = true);
+  btns[curQ.correctIdx].classList.add('correct');
+  if (idx !== curQ.correctIdx) btns[idx].classList.add('wrong');
+
+  // トルティーヤの動きを停止して結果アニメへ
+  const tortilla = $('tortilla');
+  const computedLeft = window.getComputedStyle(tortilla).left;
+  if (tortillaConveyorAnim) { tortillaConveyorAnim.cancel(); tortillaConveyorAnim = null; }
+  tortilla.style.left = computedLeft;
+
+  if (idx === curQ.correctIdx) {
+    onCorrect();
+  } else {
+    onWrong();
+  }
+}
+
+function onCorrect() {
+  served++;
+  streak++;
+  if (streak > maxStreak) maxStreak = streak;
+
+  // タコス完成アニメ (Web Animations API で直接指定 - CSS衝突回避)
+  const tortilla = $('tortilla');
+  tortilla.innerText = '🌮';
+  tortillaFlyAnim = tortilla.animate([
+    { transform: 'translate(0,0) rotate(0deg) scale(1)', opacity: 1 },
+    { transform: 'translate(40px, -30px) rotate(20deg) scale(1.05)', opacity: 1, offset: 0.3 },
+    { transform: 'translate(150px, -100px) rotate(60deg) scale(0.5)', opacity: 0 }
+  ], { duration: 700, easing: 'cubic-bezier(0.4, 0, 0.6, 1)', fill: 'forwards' });
+
+  // 客が喜ぶ
+  $('customer').classList.add('happy');
+
+  // マスコット
+  setMascot(streak >= 8 ? 'cheering' : streak >= 5 ? 'proud' : 'cheering_warm');
+  setBubble(['いいね!', 'ナイスタコス!', 'のってる!', '味が決まってる!'][Math.floor(Math.random()*4)]);
+
+  // ストリークUI更新
+  updateStreakUI();
+
+  // ストリーク節目バッジ
+  if (streak === 5) showBadge('🌮 連続 5!');
+  if (streak === 8) showBadge('🔥 あと2!');
+
+  // 合格判定
+  if (streak >= STREAK_GOAL) {
+    setTimeout(() => endGame(true), 900);
+    return;
+  }
+
+  // 次の問題
+  setTimeout(() => {
+    $('customer').classList.remove('happy');
+    renderQuestion();
+  }, 700);
+}
+
+function onWrong() {
+  // ストリークリセット & 失敗カウント加算
+  streak = 0;
+  failCount++;
+  updateStreakUI();
+
+  // トルティーヤ焦げ落ち (Web Animations API で直接指定)
+  const tortilla = $('tortilla');
+  tortillaFlyAnim = tortilla.animate([
+    { transform: 'translate(0,0) rotate(0deg)', filter: 'hue-rotate(0deg) brightness(1) drop-shadow(0 2px 4px rgba(74,50,30,0.3))', opacity: 1 },
+    { transform: 'translate(0,0) rotate(20deg)', filter: 'hue-rotate(-40deg) brightness(0.7) drop-shadow(0 2px 4px rgba(74,50,30,0.3))', opacity: 1, offset: 0.3 },
+    { transform: 'translate(0,90px) rotate(60deg)', filter: 'hue-rotate(-90deg) brightness(0.4) drop-shadow(0 2px 4px rgba(74,50,30,0.3))', opacity: 0 }
+  ], { duration: 600, easing: 'ease-in', fill: 'forwards' });
+
+  // 客が怒る
+  $('customer').classList.add('angry');
+
+  // マスコット
+  setMascot('cheering_warm');
+  setBubble(['もう一度!', 'ライム絞って深呼吸', '次のタコスは美味しくなる', '焦らずいこう'][Math.floor(Math.random()*4)]);
+
+  // FAIL_LIMIT 回失敗で店じまい
+  if (failCount >= FAIL_LIMIT) {
+    setTimeout(() => endGame(false), 900);
+    return;
+  }
+
+  // 次の問題
+  setTimeout(() => {
+    $('customer').classList.remove('angry');
+    renderQuestion();
+  }, 900);
+}
+
+function onTimeUp() {
+  if (answered) return;
+  answered = true;
+  // 時間切れも正解の英単語を聞かせる(jp_to_enのボタン押下と同じ扱い)
+  if (curQ.direction === 'jp_to_en') {
+    playWordAudio(curQ.q.word);
+  }
+  // 強制的に間違い扱い
+  const btns = document.querySelectorAll('.choice');
+  btns.forEach(b => b.disabled = true);
+  btns[curQ.correctIdx].classList.add('correct');
+  setBubble('時間切れ!');
+  onWrong();
+}
+
+function updateStreakUI() {
+  $('streak-num').innerText = streak;
+  $('streak-fill').style.width = Math.round(streak * 100 / STREAK_GOAL) + '%';
+  // ライフ表示: 10個のハートを右側から消費
+  const failsEl = $('fails');
+  if (!failsEl.firstElementChild) {
+    failsEl.innerHTML = Array.from({length: FAIL_LIMIT}, () =>
+      '<span class="heart">❤️</span>').join('');
+  }
+  const hearts = failsEl.children;
+  const liveCount = FAIL_LIMIT - failCount;  // 残りのハート数
+  for (let i = 0; i < hearts.length; i++) {
+    const shouldBeOff = i >= liveCount;
+    const isOff = hearts[i].classList.contains('off');
+    if (shouldBeOff && !isOff) {
+      hearts[i].classList.add('off', 'pop');
+      hearts[i].innerText = '🤍';
+      const h = hearts[i];
+      setTimeout(() => h.classList.remove('pop'), 450);
+    } else if (!shouldBeOff && isOff) {
+      hearts[i].classList.remove('off');
+      hearts[i].innerText = '❤️';
+    }
+  }
+  const remaining = liveCount;
+  failsEl.classList.toggle('danger', remaining <= 2);
+}
+
+function showBadge(text) {
+  const b = $('streak-badge');
+  b.innerText = text;
+  b.classList.remove('show');
+  void b.offsetWidth;
+  b.classList.add('show');
+}
+
+// ====== ゲーム終了 ======
+const FAIL_TITLES = [
+  '🌮 今日は店じまい!',
+  '🌶️ ペースを取り戻そう',
+  '🥬 仕込み直し!',
+];
+const FAIL_MESSAGES = [
+  'タコス10個こぼした…明日また来てね!',
+  'サルサ切れだ!　補充して再挑戦!',
+  '今日は厨房がガチャガチャ。深呼吸!',
+  '熱したフライパンを冷まそう、そして再挑戦!',
+];
+
+// パラメータ経由 (本体アプリの昇級試験として呼ばれた) かどうか
+const IS_PROMO_MODE = !!(PARAM_STAGE && PARAM_LESSON !== null);
+const IS_SKIP_MODE = IS_PROMO_MODE && PARAM_MODE === 'skip' && PARAM_TARGET !== null;
+
+// 昇級試験 合格時の localStorage 更新
+// 通常モード: 現レッスンを passed + 次のレッスンを unlocked
+// スキップモード: 現レッスンは触らず target だけ unlocked
+function markPromoPassed() {
+  if (!IS_PROMO_MODE) return;
+  const key = 'wt_prog2_' + PARAM_STAGE;
+  let prog;
+  try { prog = JSON.parse(localStorage.getItem(key) || '{}'); } catch { prog = {}; }
+  prog.lessons = prog.lessons || {};
+  const li = parseInt(PARAM_LESSON);
+  if (IS_SKIP_MODE) {
+    const target = parseInt(PARAM_TARGET);
+    const tcur = prog.lessons[target] || {};
+    prog.lessons[target] = { ...tcur, unlocked: true };
+  } else {
+    const cur = prog.lessons[li] || { phase: 'main', passed: false };
+    prog.lessons[li] = {
+      ...cur,
+      phase: 'main', passed: true, promoRate: 100,
+      resumeQueue: null, resumeIndex: null, resumeMainErrors: null, resumeRetryErrors: null,
+    };
+    const next = li + 1;
+    const ncur = prog.lessons[next] || {};
+    prog.lessons[next] = { ...ncur, unlocked: true };
+  }
+  localStorage.setItem(key, JSON.stringify(prog));
+}
+
+// 合格後に「解放されたレッスン」へ直接遷移 (タイトルに戻らない)
+function backToApp() {
+  if (!IS_PROMO_MODE) {
+    window.location.href = 'index.html';
+    return;
+  }
+  const li = parseInt(PARAM_LESSON);
+  const targetLesson = IS_SKIP_MODE ? parseInt(PARAM_TARGET) : li + 1;
+  const p = new URLSearchParams({ stage: PARAM_STAGE, lesson: targetLesson });
+  window.location.href = `index.html?${p}`;
+}
+function backToAppLessons() {
+  // 失敗時は通常のレッスン一覧 (stage は維持)
+  if (!IS_PROMO_MODE) { window.location.href = 'index.html'; return; }
+  const p = new URLSearchParams({ stage: PARAM_STAGE });
+  window.location.href = `index.html?${p}`;
+}
+
+function endGame(passed) {
+  cancelAnimationFrame(rafHandle);
+  stopBgm();
+  if (passed) {
+    playSuccessFanfare();
+    markPromoPassed();
+  } else {
+    playFailSfx();
+  }
+  const overlay = $('overlay-end');
+  overlay.classList.toggle('failed', !passed);
+  $('end-title').innerText = passed
+    ? '🎉 合格!'
+    : FAIL_TITLES[Math.floor(Math.random()*FAIL_TITLES.length)];
+  $('end-streak').innerText = maxStreak;
+  $('end-served').innerText = served;
+  // 失敗時の演出
+  const mascotImg = $('end-mascot-img');
+  const failMsg = $('end-fail-msg');
+  const spillArea = $('end-spill');
+  if (passed) {
+    mascotImg.src = 'app_assets/mascot/cheering.png';
+    failMsg.style.display = 'none';
+    spillArea.style.display = 'none';
+  } else {
+    const tumbledImg = new Image();
+    tumbledImg.onload = () => { mascotImg.src = 'app_assets/mascot/tumbled.png'; };
+    tumbledImg.onerror = () => { mascotImg.src = 'app_assets/mascot/worried.png'; };
+    tumbledImg.src = 'app_assets/mascot/tumbled.png';
+    failMsg.innerText = FAIL_MESSAGES[Math.floor(Math.random()*FAIL_MESSAGES.length)];
+    failMsg.style.display = 'block';
+    spillArea.style.display = 'block';
+  }
+  // promo モードならボタン文言を変える
+  const retryBtn = $('btn-retry');
+  if (IS_PROMO_MODE) {
+    if (passed) {
+      retryBtn.innerText = '✨ 解放されたレッスンへ';
+      retryBtn.onclick = backToApp;
+    } else {
+      retryBtn.innerText = 'もう一度 / 戻る';
+      retryBtn.onclick = () => {
+        if (confirm('もう一度挑戦しますか? (キャンセル=レッスン一覧へ戻る)')) startGame();
+        else backToAppLessons();
+      };
+    }
+  } else {
+    retryBtn.innerText = 'もう一度';
+    retryBtn.onclick = startGame;
+  }
+  overlay.style.display = 'flex';
+}
+
+// ====== スタート ======
+async function startGame() {
+  await loadPool();
+  streak = 0; maxStreak = 0; served = 0; failCount = 0;
+  updateStreakUI();
+  $('overlay-start').style.display = 'none';
+  $('overlay-end').style.display = 'none';
+  startBgm();
+  renderQuestion();
+}
+
+$('btn-start').onclick = startGame;
+$('btn-retry').onclick = startGame;
+
+// 開幕でpoolを先読み
+loadPool().catch(e => console.warn('pool load failed', e));
+</script>
+
+</body>
+</html>

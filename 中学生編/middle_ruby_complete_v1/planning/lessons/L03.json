@@ -1,0 +1,969 @@
+{
+  "lesson": 3,
+  "source_config": "中学生編/mio_video_l2_l10_sentence_v2/L3/planning/lesson.json",
+  "title_en": "Lesson 3  A Rainy Afternoon",
+  "title_ja": "雨の午後",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 11,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Yesterday afternoon, the rain was falling outside.",
+      "source_ja": "昨日の午後、外では雨が降っていました。",
+      "display_ja": "昨日の午後、外では雨が降っていました。",
+      "corrected_translation": false,
+      "mixed": "昨日の afternoon、 outside では rain が falling していました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "昨日の ",
+          "parts": [
+            {
+              "text": "昨日",
+              "ruby": "きのう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "afternoon",
+          "ruby": "午後"
+        },
+        {
+          "type": "ja",
+          "text": "、 ",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "outside",
+          "ruby": "外"
+        },
+        {
+          "type": "ja",
+          "text": " では ",
+          "parts": [
+            {
+              "text": "では",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "rain",
+          "ruby": "雨"
+        },
+        {
+          "type": "ja",
+          "text": " が ",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "falling",
+          "ruby": "降っていました"
+        },
+        {
+          "type": "ja",
+          "text": " していました",
+          "parts": [
+            {
+              "text": "していました",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "afternoon",
+          "canonical_word": "afternoon",
+          "meaning": "午後"
+        },
+        {
+          "english": "rain",
+          "canonical_word": "rain",
+          "meaning": "雨"
+        },
+        {
+          "english": "falling",
+          "canonical_word": "falling",
+          "meaning": "降っている"
+        },
+        {
+          "english": "outside",
+          "canonical_word": "outside",
+          "meaning": "外"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "afternoon",
+          "reading": "午後",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "afternoon",
+          "canonical_meaning": "午後"
+        },
+        {
+          "english": "outside",
+          "reading": "外",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "outside",
+          "canonical_meaning": "外"
+        },
+        {
+          "english": "rain",
+          "reading": "雨",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "rain",
+          "canonical_meaning": "雨"
+        },
+        {
+          "english": "falling",
+          "reading": "降っていました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "falling",
+          "canonical_meaning": "降っている"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "english": "My family were all in the house.",
+      "source_ja": "家族はみんな家の中にいました。",
+      "display_ja": "家族はみんな家の中にいました。",
+      "corrected_translation": false,
+      "mixed": "家族はみんな家の中にいました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "家族はみんな家の中にいました。",
+          "parts": [
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "はみんな",
+              "ruby": ""
+            },
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "中",
+              "ruby": "なか"
+            },
+            {
+              "text": "にいました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 3,
+      "english": "I was reading a book in my room.",
+      "source_ja": "わたしは自分の部屋で本を読んでいました。",
+      "display_ja": "わたしは自分の部屋で本を読んでいました。",
+      "corrected_translation": false,
+      "mixed": "わたしは自分の room で本を reading していました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしは自分の ",
+          "parts": [
+            {
+              "text": "わたしは",
+              "ruby": ""
+            },
+            {
+              "text": "自分",
+              "ruby": "じぶん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "room",
+          "ruby": "部屋"
+        },
+        {
+          "type": "ja",
+          "text": " で本を ",
+          "parts": [
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "reading",
+          "ruby": "読んでいました"
+        },
+        {
+          "type": "ja",
+          "text": " していました",
+          "parts": [
+            {
+              "text": "していました",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "reading",
+          "canonical_word": "reading",
+          "meaning": "読んでいる"
+        },
+        {
+          "english": "room",
+          "canonical_word": "room",
+          "meaning": "部屋"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "room",
+          "reading": "部屋",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "room",
+          "canonical_meaning": "部屋"
+        },
+        {
+          "english": "reading",
+          "reading": "読んでいました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "reading",
+          "canonical_meaning": "読んでいる"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "The story was interesting, and I forgot the time.",
+      "source_ja": "物語がおもしろくて、時間を忘れてしまいました。",
+      "display_ja": "物語がおもしろくて、時間を忘れてしまいました。",
+      "corrected_translation": false,
+      "mixed": "物語は interesting で、時間を忘れてしまいました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "物語は ",
+          "parts": [
+            {
+              "text": "物語",
+              "ruby": "ものがたり"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "interesting",
+          "ruby": "面白い"
+        },
+        {
+          "type": "ja",
+          "text": " で、時間を忘れてしまいました。",
+          "parts": [
+            {
+              "text": "で、",
+              "ruby": ""
+            },
+            {
+              "text": "時間",
+              "ruby": "じかん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "忘",
+              "ruby": "わす"
+            },
+            {
+              "text": "れてしまいました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "interesting",
+          "canonical_word": "interesting",
+          "meaning": "面白い"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "interesting",
+          "reading": "面白い",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "interesting",
+          "canonical_meaning": "面白い"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "In the next room, my sister was playing music.",
+      "source_ja": "隣の部屋では、妹が音楽を演奏していました。",
+      "display_ja": "隣の部屋では、妹が音楽を演奏していました。",
+      "corrected_translation": false,
+      "mixed": "隣の room では、妹が音楽を playing していました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "隣の ",
+          "parts": [
+            {
+              "text": "隣",
+              "ruby": "となり"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "room",
+          "ruby": "部屋"
+        },
+        {
+          "type": "ja",
+          "text": " では、妹が音楽を ",
+          "parts": [
+            {
+              "text": "では、",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "音楽",
+              "ruby": "おんがく"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "playing",
+          "ruby": "演奏していました"
+        },
+        {
+          "type": "ja",
+          "text": " していました",
+          "parts": [
+            {
+              "text": "していました",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "room",
+          "canonical_word": "room",
+          "meaning": "部屋"
+        },
+        {
+          "english": "playing",
+          "canonical_word": "playing",
+          "meaning": "演奏している"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "room",
+          "reading": "部屋",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "room",
+          "canonical_meaning": "部屋"
+        },
+        {
+          "english": "playing",
+          "reading": "演奏していました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "playing",
+          "canonical_meaning": "演奏している"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "My brother was watching TV.",
+      "source_ja": "兄はテレビを見ていました。",
+      "display_ja": "兄はテレビを見ていました。",
+      "corrected_translation": false,
+      "mixed": "兄は TV を watching していました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "兄は ",
+          "parts": [
+            {
+              "text": "兄",
+              "ruby": "あに"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "TV",
+          "ruby": "テレビ"
+        },
+        {
+          "type": "ja",
+          "text": " を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "watching",
+          "ruby": "見ていました"
+        },
+        {
+          "type": "ja",
+          "text": " していました",
+          "parts": [
+            {
+              "text": "していました",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "watching",
+          "canonical_word": "watching",
+          "meaning": "見ている"
+        },
+        {
+          "english": "TV",
+          "canonical_word": "TV",
+          "meaning": "テレビ"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "TV",
+          "reading": "テレビ",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "TV",
+          "canonical_meaning": "テレビ"
+        },
+        {
+          "english": "watching",
+          "reading": "見ていました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "watching",
+          "canonical_meaning": "見ている"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "Pochi was sleeping happily on a chair.",
+      "source_ja": "ポチは椅子の上で気持ちよさそうに眠っていました。",
+      "display_ja": "ポチは椅子の上で気持ちよさそうに眠っていました。",
+      "corrected_translation": false,
+      "mixed": "ポチは chair の上で気持ちよさそうに sleeping していました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ポチは ",
+          "parts": [
+            {
+              "text": "ポチは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "chair",
+          "ruby": "いす"
+        },
+        {
+          "type": "ja",
+          "text": " の上で気持ちよさそうに ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "上",
+              "ruby": "うえ"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "気持",
+              "ruby": "きも"
+            },
+            {
+              "text": "ちよさそうに",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "sleeping",
+          "ruby": "眠っている"
+        },
+        {
+          "type": "ja",
+          "text": " していました。",
+          "parts": [
+            {
+              "text": "していました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "sleeping",
+          "canonical_word": "sleeping",
+          "meaning": "眠っている"
+        },
+        {
+          "english": "chair",
+          "canonical_word": "chair",
+          "meaning": "いす"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "sleeping",
+          "reading": "眠っている",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "sleeping",
+          "canonical_meaning": "眠っている"
+        },
+        {
+          "english": "chair",
+          "reading": "いす",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "chair",
+          "canonical_meaning": "いす"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "In the kitchen, my mother was cooking dinner.",
+      "source_ja": "台所では、母が夕食を作っていました。",
+      "display_ja": "台所では、母が夕食を作っていました。",
+      "corrected_translation": false,
+      "mixed": "台所では、母が dinner を cooking していました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "台所では、母が ",
+          "parts": [
+            {
+              "text": "台所",
+              "ruby": "だいどころ"
+            },
+            {
+              "text": "では、",
+              "ruby": ""
+            },
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "dinner",
+          "ruby": "夕食"
+        },
+        {
+          "type": "ja",
+          "text": " を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "cooking",
+          "ruby": "料理している"
+        },
+        {
+          "type": "ja",
+          "text": " していました。",
+          "parts": [
+            {
+              "text": "していました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "cooking",
+          "canonical_word": "cooking",
+          "meaning": "料理している"
+        },
+        {
+          "english": "dinner",
+          "canonical_word": "dinner",
+          "meaning": "夕食"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "cooking",
+          "reading": "料理している",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "cooking",
+          "canonical_meaning": "料理している"
+        },
+        {
+          "english": "dinner",
+          "reading": "夕食",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "dinner",
+          "canonical_meaning": "夕食"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "My father was working in his study.",
+      "source_ja": "父は書斎で仕事をしていました。",
+      "display_ja": "父は書斎で仕事をしていました。",
+      "corrected_translation": false,
+      "mixed": "父は書斎で working していました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "父は書斎で ",
+          "parts": [
+            {
+              "text": "父",
+              "ruby": "ちち"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "書斎",
+              "ruby": "しょさい"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "working",
+          "ruby": "働いている"
+        },
+        {
+          "type": "ja",
+          "text": " していました。",
+          "parts": [
+            {
+              "text": "していました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "working",
+          "canonical_word": "working",
+          "meaning": "働いている"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "working",
+          "reading": "働いている",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "working",
+          "canonical_meaning": "働いている"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "We were all doing different things,",
+      "source_ja": "みんな別々のことをしていましたが、",
+      "display_ja": "みんな別々のことをしていましたが、",
+      "corrected_translation": false,
+      "mixed": "みんな別々の things をしていましたが、",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "みんな別々の ",
+          "parts": [
+            {
+              "text": "みんな",
+              "ruby": ""
+            },
+            {
+              "text": "別々",
+              "ruby": "べつべつ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "things",
+          "ruby": "こと"
+        },
+        {
+          "type": "ja",
+          "text": " をしていましたが、",
+          "parts": [
+            {
+              "text": "をしていましたが、",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "things",
+          "canonical_word": "things",
+          "meaning": "こと"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "things",
+          "reading": "こと",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "things",
+          "canonical_meaning": "こと"
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "english": "but we were having a quiet afternoon in the same house.",
+      "source_ja": "同じ家で静かな午後を過ごしていました。",
+      "display_ja": "同じ家で静かな午後を過ごしていました。",
+      "corrected_translation": false,
+      "mixed": "同じ家で静かな afternoon を過ごしていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "同じ家で静かな ",
+          "parts": [
+            {
+              "text": "同",
+              "ruby": "おな"
+            },
+            {
+              "text": "じ",
+              "ruby": ""
+            },
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かな",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "afternoon",
+          "ruby": "午後"
+        },
+        {
+          "type": "ja",
+          "text": " を過ごしていました。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "過",
+              "ruby": "す"
+            },
+            {
+              "text": "ごしていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "afternoon",
+          "canonical_word": "afternoon",
+          "meaning": "午後"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "afternoon",
+          "reading": "午後",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "afternoon",
+          "canonical_meaning": "午後"
+        }
+      ]
+    }
+  ]
+}

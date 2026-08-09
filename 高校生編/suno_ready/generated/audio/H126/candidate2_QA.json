@@ -1,0 +1,255 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H126.md",
+  "audio": "高校生編/suno_ready/generated/audio/H126/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 192.64,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9962,
+  "expected_words": 262,
+  "transcribed_words": 261,
+  "matched_words": 256,
+  "coverage": 0.9771,
+  "precision": 0.9808,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 261,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 126,
+      "length": 2,
+      "words": [
+        "scene",
+        "too"
+      ]
+    },
+    {
+      "start": 139,
+      "length": 1,
+      "words": [
+        "no"
+      ]
+    },
+    {
+      "start": 146,
+      "length": 1,
+      "words": [
+        "toward"
+      ]
+    },
+    {
+      "start": 155,
+      "length": 1,
+      "words": [
+        "bloom"
+      ]
+    },
+    {
+      "start": 229,
+      "length": 1,
+      "words": [
+        "itself"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 126,
+      "actual_start": 126,
+      "expected": [
+        "scene",
+        "too"
+      ],
+      "actual": [
+        "seemed",
+        "to"
+      ],
+      "actual_confidence": 0.7501,
+      "substitution_words": 2,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 139,
+      "actual_start": 139,
+      "expected": [
+        "no"
+      ],
+      "actual": [
+        "now"
+      ],
+      "actual_confidence": 0.5546,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 146,
+      "actual_start": 146,
+      "expected": [
+        "toward"
+      ],
+      "actual": [
+        "tore"
+      ],
+      "actual_confidence": 0.2628,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 155,
+      "actual_start": 155,
+      "expected": [
+        "bloom"
+      ],
+      "actual": [
+        "blue"
+      ],
+      "actual_confidence": 0.9161,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 229,
+      "actual_start": 229,
+      "expected": [
+        "itself"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 3,
+  "suspicious_content_substitution": true,
+  "transcript": "In spring, the cherry blossoms begin to open. Last winter was especially harsh, and many people were anxious waiting for the blossoms. Cherry blossoms are a special flower for the Japanese Since ancient times, they have been written into poems Drawn in paintings and have become a feature of the culture The custom of holding a flower, viewing party under the cherry trees Has a history of more than a thousand years When we see the cherry trees in full bloom Everyone holds their breath The sight of petals dancing in the wind Is astonishing in its beauty But the beauty of the cherry blossom Lies in its brevity In about a week, the flowers fall, the petals pile on the ground like a carpet that seemed to has a unique beauty In Japanese culture, cherry blossoms represent mono-now-aware, a quiet sadness and love tore that which inevitably fades Because the time of blue is short, it feels all the more beautiful Life too is as fleeting as cherry blossoms A decade looking back passes in an instant Youth, health, time with loved ones None of it will last forever That is why we should cherish this moment right now Under the cherry trees To speak with friends, laugh with family And quietly look up at the sky alone The sum of such small moments is life The cherry trees bloomed again this year, next year, and the year after I want to see as many cherry blossoms as I can That simple wish is what keeps us alive",
+  "segments": [
+    {
+      "start": 9.62,
+      "end": 25.86,
+      "text": "In spring, the cherry blossoms begin to open. Last winter was especially harsh, and many people were anxious waiting for the blossoms."
+    },
+    {
+      "start": 25.86,
+      "end": 31.76,
+      "text": "Cherry blossoms are a special flower for the Japanese"
+    },
+    {
+      "start": 35.86,
+      "end": 40.3,
+      "text": "Since ancient times, they have been written into poems"
+    },
+    {
+      "start": 40.3,
+      "end": 45.4,
+      "text": "Drawn in paintings and have become a feature of the culture"
+    },
+    {
+      "start": 45.4,
+      "end": 51.82,
+      "text": "The custom of holding a flower, viewing party under the cherry trees"
+    },
+    {
+      "start": 51.82,
+      "end": 57.04,
+      "text": "Has a history of more than a thousand years"
+    },
+    {
+      "start": 57.82,
+      "end": 61.2,
+      "text": "When we see the cherry trees in full bloom"
+    },
+    {
+      "start": 61.2,
+      "end": 63.24,
+      "text": "Everyone holds their breath"
+    },
+    {
+      "start": 63.24,
+      "end": 66.48,
+      "text": "The sight of petals dancing in the wind"
+    },
+    {
+      "start": 66.48,
+      "end": 71.64,
+      "text": "Is astonishing in its beauty"
+    },
+    {
+      "start": 72.82,
+      "end": 75.98,
+      "text": "But the beauty of the cherry blossom"
+    },
+    {
+      "start": 75.98,
+      "end": 78.76,
+      "text": "Lies in its brevity"
+    },
+    {
+      "start": 82.78,
+      "end": 92.6,
+      "text": "In about a week, the flowers fall, the petals pile on the ground like a carpet that seemed to has a unique beauty"
+    },
+    {
+      "start": 93.82,
+      "end": 105.86,
+      "text": "In Japanese culture, cherry blossoms represent mono-now-aware, a quiet sadness and love tore that which inevitably fades"
+    },
+    {
+      "start": 107.34,
+      "end": 112.34,
+      "text": "Because the time of blue is short, it feels all the more beautiful"
+    },
+    {
+      "start": 112.86,
+      "end": 117.44,
+      "text": "Life too is as fleeting as cherry blossoms"
+    },
+    {
+      "start": 117.44,
+      "end": 121.82,
+      "text": "A decade looking back passes in an instant"
+    },
+    {
+      "start": 121.82,
+      "end": 124.84,
+      "text": "Youth, health, time with loved ones"
+    },
+    {
+      "start": 124.84,
+      "end": 127.78,
+      "text": "None of it will last forever"
+    },
+    {
+      "start": 133.86,
+      "end": 139.6,
+      "text": "That is why we should cherish this moment right now"
+    },
+    {
+      "start": 140.86,
+      "end": 147.44,
+      "text": "Under the cherry trees To speak with friends, laugh with family"
+    },
+    {
+      "start": 148.82,
+      "end": 157.34,
+      "text": "And quietly look up at the sky alone The sum of such small moments is life"
+    },
+    {
+      "start": 158.52,
+      "end": 167.62,
+      "text": "The cherry trees bloomed again this year, next year, and the year after"
+    },
+    {
+      "start": 168.34,
+      "end": 174.54,
+      "text": "I want to see as many cherry blossoms as I can"
+    },
+    {
+      "start": 176.22,
+      "end": 182.9,
+      "text": "That simple wish is what keeps us alive"
+    }
+  ]
+}

@@ -1,0 +1,903 @@
+<title>GASflare — 先生ひとりに、データベースひとつ</title>
+
+<style>
+  :root{
+    /* 紙とインク（Teacher Tacos の地色を土台にした図面プレート） */
+    --paper:#FBF4E9;
+    --paper-2:#FFFDF8;
+    --ink:#241B12;
+    --ink-2:#5C4A38;
+    --ink-3:#93826D;
+    --rule:#DCCDB4;
+    --rule-2:#EDE2CE;
+
+    --signal:#C73E1D;          /* 先生A・トークン・強調 */
+    --signal-soft:#F7E3DA;
+    --alt:#3F6B63;             /* 先生B（別系統であることを示す） */
+    --alt-soft:#DFEAE7;
+    --ok:#2E6F4B;
+    --ng:#B3341B;
+
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
+    --sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+
+    --step:clamp(.78rem,.74rem + .1vw,.84rem);
+    --body:clamp(.98rem,.94rem + .18vw,1.06rem);
+    --h2:clamp(1.5rem,1.1rem + 1.6vw,2.3rem);
+    --h1:clamp(2.3rem,1.2rem + 4.6vw,4.6rem);
+
+    --gutter:clamp(1.1rem,.6rem + 2.4vw,3rem);
+    --plate-gap:clamp(3.2rem,2rem + 4vw,6rem);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --paper:#15120E; --paper-2:#1D1913; --ink:#F2E7D6; --ink-2:#BCAA92; --ink-3:#86765F;
+      --rule:#3A3025; --rule-2:#2A2319;
+      --signal:#F0703F; --signal-soft:#3A2117;
+      --alt:#7FB3A6; --alt-soft:#1E2C29;
+      --ok:#79C79A; --ng:#F08163;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#15120E; --paper-2:#1D1913; --ink:#F2E7D6; --ink-2:#BCAA92; --ink-3:#86765F;
+    --rule:#3A3025; --rule-2:#2A2319;
+    --signal:#F0703F; --signal-soft:#3A2117;
+    --alt:#7FB3A6; --alt-soft:#1E2C29;
+    --ok:#79C79A; --ng:#F08163;
+  }
+  :root[data-theme="light"]{
+    --paper:#FBF4E9; --paper-2:#FFFDF8; --ink:#241B12; --ink-2:#5C4A38; --ink-3:#93826D;
+    --rule:#DCCDB4; --rule-2:#EDE2CE;
+    --signal:#C73E1D; --signal-soft:#F7E3DA;
+    --alt:#3F6B63; --alt-soft:#DFEAE7;
+    --ok:#2E6F4B; --ng:#B3341B;
+  }
+
+  *{box-sizing:border-box}
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:var(--body);
+    line-height:1.95;
+    -webkit-font-smoothing:antialiased;
+  }
+  /* 方眼のうっすらした地紋（図面らしさ。うるさくならない濃度に留める） */
+  body::before{
+    content:"";
+    position:fixed; inset:0; z-index:-1; pointer-events:none;
+    background-image:linear-gradient(var(--rule-2) 1px,transparent 1px),
+                     linear-gradient(90deg,var(--rule-2) 1px,transparent 1px);
+    background-size:34px 34px;
+    opacity:.5;
+    mask-image:radial-gradient(120% 90% at 50% 0%,#000 30%,transparent 78%);
+  }
+
+  .wrap{max-width:1080px;margin:0 auto;padding:0 var(--gutter) 8rem}
+
+  /* ---------- ラベル（モノスペースの註記が全体の通奏低音） ---------- */
+  .tag{
+    font-family:var(--mono);
+    font-size:var(--step);
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--signal);
+    display:flex; align-items:center; gap:.7em;
+  }
+  .tag::after{content:"";flex:1;height:1px;background:var(--rule)}
+
+  /* ---------- 表紙 ---------- */
+  header{padding:clamp(3.5rem,2rem + 8vw,8rem) 0 0}
+  .logo{width:96px;height:96px;display:block;margin:0 0 1.6rem;
+    border-radius:20px;border:1px solid var(--rule);
+    box-shadow:0 4px 14px rgba(120,60,20,.10)}
+  .eyebrow{
+    font-family:var(--mono);font-size:var(--step);letter-spacing:.24em;text-transform:uppercase;
+    color:var(--ink-3);margin:0 0 1.6rem;
+  }
+  h1{
+    font-size:var(--h1);line-height:.95;letter-spacing:-.03em;font-weight:800;
+    margin:0 0 1.4rem;text-wrap:balance;
+  }
+  h1 em{font-style:normal;color:var(--signal);display:block}
+  .lede{
+    font-size:clamp(1.05rem,.98rem + .5vw,1.35rem);line-height:1.85;color:var(--ink-2);
+    max-width:34em;margin:0 0 2.6rem;
+  }
+  .lede b{color:var(--ink);font-weight:700}
+
+  .facts{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:1px;background:var(--rule);border:1px solid var(--rule);margin:0 0 1rem;
+  }
+  .facts div{background:var(--paper-2);padding:1.1rem 1.2rem}
+  .facts dt{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin:0 0 .4rem}
+  .facts dd{margin:0;font-weight:700;font-size:1.02rem;line-height:1.5}
+
+  /* ---------- プレート（節） ---------- */
+  section{margin-top:var(--plate-gap)}
+  h2{
+    font-size:var(--h2);line-height:1.2;letter-spacing:-.02em;font-weight:800;
+    margin:1.1rem 0 1.2rem;text-wrap:balance;
+  }
+  h3{
+    font-size:1.06rem;font-weight:800;letter-spacing:-.005em;
+    margin:2.6rem 0 .6rem;
+  }
+  p{margin:0 0 1.15rem;max-width:38em}
+  p.wide{max-width:none}
+  strong{font-weight:700;background:linear-gradient(transparent 62%,var(--signal-soft) 62%)}
+  code{
+    font-family:var(--mono);font-size:.86em;
+    background:var(--paper-2);border:1px solid var(--rule-2);border-radius:3px;
+    padding:.1em .38em;color:var(--ink);
+  }
+
+  /* ---------- 図版 ---------- */
+  figure{margin:2.4rem 0 2.6rem}
+  .plate{
+    background:var(--paper-2);
+    border:1px solid var(--rule);
+    padding:clamp(.9rem,.4rem + 1.6vw,1.8rem);
+    overflow-x:auto;
+  }
+  .plate svg{display:block;width:100%;height:auto;min-width:640px}
+  figcaption{
+    font-family:var(--mono);font-size:var(--step);line-height:1.7;color:var(--ink-3);
+    margin-top:.9rem;padding-left:1.1em;border-left:2px solid var(--signal);
+  }
+
+  /* SVG のテーマ追随 */
+  .d-box{fill:var(--paper-2);stroke:var(--ink);stroke-width:1.4}
+  .d-box-a{fill:var(--paper-2);stroke:var(--signal);stroke-width:1.8}
+  .d-box-b{fill:var(--paper-2);stroke:var(--alt);stroke-width:1.8}
+  .d-fill-a{fill:var(--signal-soft);stroke:var(--signal);stroke-width:1.8}
+  .d-fill-b{fill:var(--alt-soft);stroke:var(--alt);stroke-width:1.8}
+  .d-t{fill:var(--ink);font-family:var(--sans);font-size:14px;font-weight:700}
+  .d-s{fill:var(--ink-2);font-family:var(--sans);font-size:11.5px;font-weight:400}
+  .d-m{fill:var(--ink-3);font-family:var(--mono);font-size:10.5px;letter-spacing:.06em}
+  .d-a{stroke:var(--signal);stroke-width:1.8;fill:none}
+  .d-b{stroke:var(--alt);stroke-width:1.8;fill:none}
+  .d-n{stroke:var(--ink-3);stroke-width:1.3;fill:none}
+  .d-dash{stroke-dasharray:5 4}
+  .d-la{fill:var(--signal);font-family:var(--mono);font-size:11px;font-weight:600}
+  .d-lb{fill:var(--alt);font-family:var(--mono);font-size:11px;font-weight:600}
+
+  /* 信号が流れる演出（動きは1本の経路だけ。減光設定では止める） */
+  .pulse{stroke-dasharray:7 11;animation:flow 2.6s linear infinite}
+  @keyframes flow{to{stroke-dashoffset:-36}}
+  @media (prefers-reduced-motion:reduce){.pulse{animation:none}}
+
+  /* ---------- 表 ---------- */
+  .tablewrap{overflow-x:auto;border:1px solid var(--rule);background:var(--paper-2);margin:1.8rem 0}
+  table{border-collapse:collapse;width:100%;min-width:520px;font-size:.94rem}
+  th,td{text-align:left;padding:.85rem 1.1rem;border-bottom:1px solid var(--rule-2);vertical-align:top}
+  thead th{
+    font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-3);font-weight:600;border-bottom:1px solid var(--rule);white-space:nowrap;
+  }
+  tbody tr:last-child td{border-bottom:none}
+  td.no{color:var(--ok);font-weight:700;white-space:nowrap}
+  td.yes{color:var(--ng);font-weight:700;white-space:nowrap}
+
+  /* ---------- コード ---------- */
+  pre{
+    font-family:var(--mono);font-size:.82rem;line-height:1.85;
+    background:var(--paper-2);border:1px solid var(--rule);
+    padding:1.1rem 1.2rem;overflow-x:auto;margin:1.4rem 0;
+    color:var(--ink-2);
+  }
+  pre b{color:var(--signal);font-weight:600}
+  pre i{color:var(--ink-3);font-style:normal}
+
+  /* ---------- 註記ボックス ---------- */
+  .note{
+    border-left:3px solid var(--signal);
+    background:var(--paper-2);
+    padding:1.2rem 1.3rem;margin:1.8rem 0;
+  }
+  .note h4{
+    margin:0 0 .5rem;font-family:var(--mono);font-size:var(--step);
+    letter-spacing:.12em;text-transform:uppercase;color:var(--signal);font-weight:600;
+  }
+  .note p{margin:0;max-width:none;font-size:.96rem}
+  .note p + p{margin-top:.7rem}
+
+  /* ---------- 手順 ---------- */
+  ol.steps{list-style:none;counter-reset:s;padding:0;margin:1.8rem 0}
+  ol.steps li{
+    counter-increment:s;position:relative;padding:1.1rem 0 1.1rem 3.4rem;
+    border-top:1px solid var(--rule-2);
+  }
+  ol.steps li:last-child{border-bottom:1px solid var(--rule-2)}
+  ol.steps li::before{
+    content:counter(s,decimal-leading-zero);
+    position:absolute;left:0;top:1.15rem;
+    font-family:var(--mono);font-size:.8rem;font-weight:700;color:var(--signal);
+    letter-spacing:.08em;
+  }
+  ol.steps b{display:block;font-size:1.02rem;margin-bottom:.15rem}
+  ol.steps span{color:var(--ink-2);font-size:.94rem}
+
+  footer{
+    margin-top:var(--plate-gap);padding-top:2rem;border-top:1px solid var(--rule);
+    font-family:var(--mono);font-size:var(--step);color:var(--ink-3);line-height:2;
+  }
+</style>
+
+<div class="wrap">
+
+<header>
+  <img class="logo" src="data:image/png;base64,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" alt="GASflare ロゴ（炎の中にスプレッドシートのセル格子）" width="96" height="96">
+  <p class="eyebrow">Teacher Tacos ／ 技術ノート</p>
+  <h1>先生ひとりに、<em>データベースひとつ。</em></h1>
+  <p class="lede">
+    管理用のスプレッドシートを<b>コピーして、デプロイして、出てきたURLを配る。</b>
+    それだけで、そのURLを踏んだ生徒の学習記録が、その先生のシートにだけ溜まっていく。
+    サーバも、データベースも、Google Cloud Console も要らない。
+  </p>
+  <dl class="facts">
+    <div><dt>方式</dt><dd>GASflare<br><span style="font-weight:400;font-size:.82rem;color:var(--ink-3)">GAS ＋ Cloudflare</span></dd></div>
+    <div><dt>サーバ</dt><dd>無し</dd></div>
+    <div><dt>本人確認</dt><dd>HMAC 署名トークン</dd></div>
+    <div><dt>メールの所在</dt><dd>先生のシートの中だけ</dd></div>
+  </dl>
+</header>
+
+<!-- ============================================================ -->
+<section>
+  <p class="tag">Plate 01 ／ 設計の起点</p>
+  <h2>GASは、なぜ惜しいのか。</h2>
+
+  <p class="wide">
+    Google Apps Script には、学校で使う道具として<strong>他に代えがたい強みが3つ</strong>ある。
+  </p>
+  <p class="wide">
+    ひとつ、<strong>教員個人の権限のまま、生徒の情報を集められる。</strong>
+    情報システム部門に申請して、サーバを借りて、承認を待つ——そういう手続きが一切いらない。先生が自分のドライブでボタンを押すだけで成立する。
+  </p>
+  <p class="wide">
+    ふたつ、<strong>データが完全にその先生のものになる。</strong>
+    スプレッドシートは先生のドライブの中にある。誰かのサーバに預けるのではない。消すのも、渡すのも、持ち出すのも自由だ。
+  </p>
+  <p class="wide">
+    みっつ、<strong>Googleアカウントと成績が紐づくが、それは学校が発行したアカウントだ。</strong>
+    厳密に個人を特定しにいく仕組みではないし、私的な情報が混ざり込むわけでもない。
+    学校という文脈のなかで、ちょうど必要なぶんだけ本人が分かる。この距離感がいい。
+  </p>
+
+  <p class="wide">
+    ——それでも、GASだけで全部を作ろうとすると、必ず壁に当たる。
+  </p>
+
+  <h3>壁1：配ったコードは、もう直せない</h3>
+  <p class="wide">
+    GASでアプリを作って配るということは、<strong>先生ごとにコードのコピーを配る</strong>ということだ。
+    バグが見つかっても、仕様を変えたくなっても、こちらから直す手立てがない。
+    <b>新しいものをまた配って、コピーし直してもらうのを待つしかない。</b>
+  </p>
+  <p class="wide">
+    これは決定的だ。学習アプリは、使われはじめてからが本番で、直したい場所は毎週出てくる。
+    「直せない」を前提にすると、<strong>作れるのは、ほぼ完成していて、もう変わらない、単純なものだけ</strong>になる。
+  </p>
+
+  <h3>壁2：リッチにすると、重くなる</h3>
+  <p class="wide">
+    GASでも画像は扱える。セルに Base64 で埋め込んでしまえばいい。
+    だが数が増えると途端に苦しくなるし、動作も鈍る。音声となればなおさらだ。
+  </p>
+  <p class="wide">
+    こちらが作りたいのは、イラストが出て、音声が鳴って、リズムに合わせて単語が飛んでくるアプリだ。
+    <strong>画像と音声の置き場所として、スプレッドシートは向いていない。</strong>
+  </p>
+
+  <h3>結論：変わるものと、変わらないものを引き離す</h3>
+  <p class="wide">
+    強みは <b>「先生の権限で、先生のものとして、記録が集まる」</b>という一点にある。
+    弱みは <b>「更新できない」「重い」</b>という二点にある。
+  </p>
+  <p class="wide">
+    ならば、<strong>強みの部分だけをGASに残し、残りを全部そこから追い出せばいい。</strong>
+  </p>
+  <p class="wide">
+    追い出した先が Cloudflare だ。この<b>組み合わせそのもの</b>を <strong>GASflare</strong> と呼んでいる——
+    <b>GAS ＋ Cloudflare</b>。片方の話ではない。<b>2つを組み合わせること自体</b>に名前を付けた。
+    片方だけでは、どうしても足りないからだ。
+  </p>
+
+  <figure>
+    <div class="plate">
+      <svg viewBox="0 0 920 330" role="img" aria-labelledby="d0t">
+        <title id="d0t">GASに全部載せる形と、アプリをCloudflareへ切り分ける形の比較。切り分けると、更新はCloudflare側だけで済む</title>
+        <defs>
+          <marker id="ah0" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+            <path d="M0,1 L8,4.5 L0,8 z" fill="var(--signal)"/>
+          </marker>
+          <marker id="nh0" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+            <path d="M0,1 L8,4.5 L0,8 z" fill="var(--ink-3)"/>
+          </marker>
+        </defs>
+
+        <!-- 左: GASに全部 -->
+        <text class="d-m" x="20" y="24">GASに全部のせる</text>
+        <rect class="d-box" x="20" y="38" width="380" height="180" rx="3"/>
+        <text class="d-t" x="40" y="70">先生のGAS（コピー品）</text>
+        <rect class="d-box" x="40" y="86" width="160" height="42" rx="2"/>
+        <text class="d-s" x="52" y="112">アプリのUI・出題</text>
+        <rect class="d-box" x="212" y="86" width="168" height="42" rx="2"/>
+        <text class="d-s" x="224" y="112">画像・音声（Base64）</text>
+        <rect class="d-box" x="40" y="140" width="160" height="42" rx="2"/>
+        <text class="d-s" x="52" y="166">本人確認</text>
+        <rect class="d-box" x="212" y="140" width="168" height="42" rx="2"/>
+        <text class="d-s" x="224" y="166">記録・シート書き込み</text>
+
+        <path class="d-n d-dash" d="M210,218 L210,252" marker-end="url(#nh0)"/>
+        <text class="d-s" x="20" y="276">✗ 直したい → 先生全員にコピーし直してもらう</text>
+        <text class="d-s" x="20" y="300">✗ 画像を増やす → 重くなる</text>
+        <text class="d-m" x="20" y="322">→ 単純なアプリしか作れない</text>
+
+        <!-- 右: 切り分け -->
+        <text class="d-la" x="520" y="24">アプリとデータベースを引き離す</text>
+        <rect class="d-box" x="520" y="38" width="380" height="82" rx="3" stroke-dasharray="6 4"/>
+        <text class="d-t" x="540" y="66">🌮 アプリ（Cloudflare Pages）</text>
+        <text class="d-s" x="540" y="88">UI・出題・画像・音声。よく変わるもの。</text>
+        <text class="d-s" x="540" y="108">直したいときは、ここを1回直すだけ。全員に届く。</text>
+
+        <path class="d-a" d="M710,120 L710,152" marker-end="url(#ah0)"/>
+        <text class="d-la" x="722" y="142">記録だけを渡す</text>
+
+        <rect class="d-fill-a" x="520" y="156" width="380" height="62" rx="3"/>
+        <text class="d-t" x="540" y="184">📊 先生のGAS ＋ スプレッドシート</text>
+        <text class="d-s" x="540" y="206">本人確認と記録。ほとんど変わらないもの。</text>
+
+        <text class="d-s" x="520" y="252">○ 更新は Cloudflare 側だけ。先生は何もしなくていい</text>
+        <text class="d-s" x="520" y="276">○ 画像も音声も好きなだけ載せられる</text>
+        <text class="d-s" x="520" y="300">○ データは今までどおり、先生のスプレッドシートのもの</text>
+        <text class="d-la" x="520" y="322">→ リッチなアプリでも、成績処理に使える</text>
+      </svg>
+    </div>
+    <figcaption>
+      GASに残すのは「本人確認」と「記録」だけ。この2つは、ほとんど変わらない。<br>
+      だから<b>コピーされて直せなくなっても、困らない</b>。
+    </figcaption>
+  </figure>
+
+  <div class="note">
+    <h4>この切り分けが、そのまま設計の制約になっている</h4>
+    <p>
+      GAS側のコードは、先生にコピーされた瞬間に凍る。だから<strong>GAS側は、可能なかぎり薄く、汎用的に作ってある。</strong>
+      受け取るのは「項目ID・見出し・セルに出す文字列・数値」という、アプリの中身を知らない形だけだ。
+    </p>
+    <p>
+      新しいゲームを足しても、問題形式を変えても、集計項目を増やしても、<b>GAS側は書き換えなくていい</b>。
+      変わり続けるものは、全部Cloudflare側に置いてある。
+    </p>
+  </div>
+
+  <p class="wide">
+    生徒の側から見れば、話はもっと単純だ。
+    <strong>学校のアカウントさえあれば、どの端末からでも、続きから学習できる。</strong>
+    教室のChromebookでも、家のタブレットでも、同じ場所から再開する。アカウントが本人を、URLが先生を指している。それだけでいい。
+  </p>
+</section>
+
+<!-- ============================================================ -->
+<section>
+  <p class="tag">Plate 02 ／ 全体像</p>
+  <h2>アプリは1つ。<br>データベースは、先生の数だけ。</h2>
+
+  <p class="wide">
+    ふつうに作ると、こうなる。アプリがひとつのサーバに繋がり、全員の記録がひとつのデータベースへ流れ込む。
+    誰が誰の担当かはアプリが知らないので、あとから「3組だけ」を切り出す仕組みを別に作ることになる。
+  </p>
+  <p class="wide">
+    GASflare は逆を行く。<strong>アプリは記録先を知らない。</strong>
+    記録先は、生徒が<strong>どのURLから入ってきたか</strong>で決まる。
+    先生が自分のシートから発行したURL、その一枚の紙が、そのままデータベースの入口になる。
+  </p>
+
+  <figure>
+    <div class="plate">
+      <svg viewBox="0 0 920 530" role="img" aria-labelledby="d1t">
+        <title id="d1t">2人の先生がそれぞれ自分のスプレッドシートとGASを持ち、生徒はどちらかのURLから同じゲームへ入る。記録はトークンに書かれた先生のGASへ戻り、その先生のシートにだけ書き込まれる。</title>
+        <defs>
+          <marker id="ah" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+            <path d="M0,1 L8,4.5 L0,8 z" fill="var(--signal)"/>
+          </marker>
+          <marker id="bh" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+            <path d="M0,1 L8,4.5 L0,8 z" fill="var(--alt)"/>
+          </marker>
+        </defs>
+
+        <!-- 先生A -->
+        <rect class="d-fill-a" x="45" y="26" width="250" height="62" rx="3"/>
+        <text class="d-t" x="62" y="52">📊 先生A のスプレッドシート</text>
+        <text class="d-s" x="62" y="72">進捗 ／ ログ ／ students</text>
+
+        <rect class="d-box-a" x="45" y="152" width="250" height="70" rx="3"/>
+        <text class="d-t" x="62" y="180">先生A の GAS</text>
+        <text class="d-m" x="62" y="200">.../macros/s/AAA.../exec</text>
+        <text class="d-m" x="62" y="215">署名鍵 KEY-A</text>
+
+        <rect class="d-box" x="45" y="436" width="250" height="58" rx="3"/>
+        <text class="d-t" x="62" y="462">👦 1組の生徒</text>
+        <text class="d-s" x="62" y="481">先生A のURLを踏んだ人</text>
+
+        <!-- 先生B -->
+        <rect class="d-fill-b" x="625" y="26" width="250" height="62" rx="3"/>
+        <text class="d-t" x="642" y="52">📊 先生B のスプレッドシート</text>
+        <text class="d-s" x="642" y="72">進捗 ／ ログ ／ students</text>
+
+        <rect class="d-box-b" x="625" y="152" width="250" height="70" rx="3"/>
+        <text class="d-t" x="642" y="180">先生B の GAS</text>
+        <text class="d-m" x="642" y="200">.../macros/s/BBB.../exec</text>
+        <text class="d-m" x="642" y="215">署名鍵 KEY-B</text>
+
+        <rect class="d-box" x="625" y="436" width="250" height="58" rx="3"/>
+        <text class="d-t" x="642" y="462">👧 別の学校の生徒</text>
+        <text class="d-s" x="642" y="481">先生B のURLを踏んだ人</text>
+
+        <!-- ゲーム本体（共有・静的） -->
+        <rect class="d-box" x="325" y="262" width="270" height="106" rx="3" stroke-dasharray="6 4"/>
+        <text class="d-t" x="345" y="292">🌮 ゲーム本体（1つだけ）</text>
+        <text class="d-s" x="345" y="313">taco-course.pages.dev</text>
+        <text class="d-s" x="345" y="332">静的ファイルのみ。</text>
+        <text class="d-s" x="345" y="350">サーバもDBも持たない。</text>
+
+        <!-- A: 生徒 → GAS -->
+        <path class="d-a pulse" d="M170,436 L170,226" marker-end="url(#ah)"/>
+        <text class="d-la" x="182" y="330">① URLを踏む</text>
+
+        <!-- A: GAS → ゲーム（トークン付きで転送） -->
+        <path class="d-a" d="M295,196 C360,196 330,258 336,260" marker-end="url(#ah)"/>
+        <text class="d-la" x="303" y="240">② ?tt=署名トークン</text>
+
+        <!-- A: ゲーム → GAS（記録） -->
+        <path class="d-a d-dash" d="M325,345 C250,352 235,262 232,226" marker-end="url(#ah)"/>
+        <text class="d-la" x="150" y="392">③ 記録をPOST</text>
+
+        <!-- A: GAS → シート -->
+        <path class="d-a" d="M170,152 L170,94" marker-end="url(#ah)"/>
+        <text class="d-la" x="182" y="128">④ 書き込む</text>
+
+        <!-- B: 生徒 → GAS -->
+        <path class="d-b" d="M750,436 L750,226" marker-end="url(#bh)"/>
+        <text class="d-lb" x="638" y="330" text-anchor="end">① URLを踏む</text>
+        <!-- B: GAS → ゲーム -->
+        <path class="d-b" d="M625,196 C560,196 590,258 584,260" marker-end="url(#bh)"/>
+        <text class="d-lb" x="617" y="240" text-anchor="end">② ?tt=署名トークン</text>
+        <!-- B: ゲーム → GAS -->
+        <path class="d-b d-dash" d="M595,345 C670,352 685,262 688,226" marker-end="url(#bh)"/>
+        <text class="d-lb" x="770" y="392">③ 記録をPOST</text>
+        <!-- B: GAS → シート -->
+        <path class="d-b" d="M750,152 L750,94" marker-end="url(#bh)"/>
+        <text class="d-lb" x="738" y="128" text-anchor="end">④ 書き込む</text>
+
+        <!-- 中央の註記 -->
+        <text class="d-m" x="460" y="402" text-anchor="middle">トークンの中に「どのGASへ送り返すか」が書いてある。</text>
+        <text class="d-m" x="460" y="419" text-anchor="middle">だから記録は、必ず自分の先生のシートへ戻る。</text>
+      </svg>
+    </div>
+    <figcaption>
+      赤＝先生A の系統／緑＝先生B の系統。ゲーム本体は共有だが、記録が混ざることはない。<br>
+      先生Bのシートを覗くと、そこには先生BのURLを踏んだ生徒しかいない。
+    </figcaption>
+  </figure>
+
+  <h3>先生がやることは、これだけ</h3>
+  <ol class="steps">
+    <li><b>スプレッドシートをコピーする</b><span>ファイル → コピーを作成。これで自分専用のデータベースができる。</span></li>
+    <li><b>デプロイする</b><span>拡張機能 → Apps Script → デプロイ。実行＝自分／アクセス＝全員。新しいURLが発行される。</span></li>
+    <li><b>URLを配る</b><span>デプロイで出てきたURLを、そのまま。Classroom でも QR でも黒板でもいい。踏んだ生徒の記録がこのシートに溜まりはじめる。</span></li>
+  </ol>
+  <p class="wide">
+    複数のGoogleアカウントでログインしていて、別のアカウントで開いてしまったら、
+    <strong>「アカウントを選んで開き直す」ボタン</strong>が出る。そこから学校のアカウントを選び直せばいい。
+  </p>
+  <p class="wide">
+    前提にしているのは<strong>1人1プロファイルの環境</strong>だ。Chromebook は構造的にそうなるし、
+    PCでもプロファイルを分ければ同じになる。学校の正式な運用では、アカウントの取り違えは起きない。
+  </p>
+  <p class="wide">
+    Google Cloud Console のプロジェクトも、OAuth クライアントIDも、サーバの登録も出てこない。
+    <strong>技術の知識がない先生でも、5分で自分のデータベースを持てる</strong>——それがこの設計の目的だ。
+  </p>
+</section>
+
+<!-- ============================================================ -->
+<section>
+  <p class="tag">Plate 03 ／ 入場</p>
+  <h2>「学校のアカウントだけ」は、<br>どこにも書いていない。</h2>
+
+  <p class="wide">
+    生徒が先生のURLを開く。ブラウザは <code>script.google.com</code> へ GET を投げ、Googleのセッションクッキーが自動で付く。
+    ——ここが、この仕組み全体で<strong>唯一クッキーが効く場面</strong>だ。
+  </p>
+
+  <figure>
+    <div class="plate">
+      <svg viewBox="0 0 920 320" role="img" aria-labelledby="d2t">
+        <title id="d2t">生徒が先生のGASを開いてから、署名トークンを持ってゲームへ転送されるまでの5段階</title>
+        <defs>
+          <marker id="ah2" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+            <path d="M0,1 L8,4.5 L0,8 z" fill="var(--signal)"/>
+          </marker>
+          <marker id="nh2" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+            <path d="M0,1 L8,4.5 L0,8 z" fill="var(--ink-3)"/>
+          </marker>
+        </defs>
+
+        <text class="d-m" x="20" y="26">GET /exec ＋ Cookie（first-party）</text>
+
+        <!-- 5ステップ -->
+        <rect class="d-box" x="20" y="44" width="152" height="86" rx="3"/>
+        <text class="d-t" x="34" y="72">① 入口</text>
+        <text class="d-s" x="34" y="92">先生のGASを</text>
+        <text class="d-s" x="34" y="110">ブラウザで開く</text>
+
+        <rect class="d-fill-a" x="204" y="44" width="176" height="86" rx="3"/>
+        <text class="d-t" x="218" y="72">② 本人確認</text>
+        <text class="d-m" x="218" y="92">getActiveUser()</text>
+        <text class="d-s" x="218" y="112">メールが取れるか？</text>
+
+        <rect class="d-box" x="412" y="44" width="160" height="86" rx="3"/>
+        <text class="d-t" x="426" y="72">③ 匿名化</text>
+        <text class="d-s" x="426" y="92">メール → 不透明ID</text>
+        <text class="d-m" x="426" y="112">stu_9f2c1ab77e40</text>
+
+        <rect class="d-box" x="604" y="44" width="150" height="86" rx="3"/>
+        <text class="d-t" x="618" y="72">④ 署名</text>
+        <text class="d-s" x="618" y="92">HMAC-SHA256</text>
+        <text class="d-m" x="618" y="112">KEY-A で封をする</text>
+
+        <rect class="d-box-a" x="786" y="44" width="114" height="86" rx="3"/>
+        <text class="d-t" x="800" y="72">⑤ 転送</text>
+        <text class="d-m" x="800" y="92">?tt=…</text>
+        <text class="d-s" x="800" y="112">ゲームへ</text>
+
+        <path class="d-a" d="M172,87 L200,87" marker-end="url(#ah2)"/>
+        <path class="d-a" d="M380,87 L408,87" marker-end="url(#ah2)"/>
+        <path class="d-a" d="M572,87 L600,87" marker-end="url(#ah2)"/>
+        <path class="d-a" d="M754,87 L782,87" marker-end="url(#ah2)"/>
+
+        <!-- 分岐: メールが取れない -->
+        <path class="d-n d-dash" d="M292,130 L292,196" marker-end="url(#nh2)"/>
+        <rect class="d-box" x="176" y="200" width="232" height="76" rx="3"/>
+        <text class="d-t" x="190" y="228">✋ 取れなければ、ここで止まる</text>
+        <text class="d-s" x="190" y="248">「学校のアカウントで</text>
+        <text class="d-s" x="190" y="266">ログインしてください」</text>
+
+        <text class="d-m" x="424" y="222">getActiveUser() は、スクリプト所有者と</text>
+        <text class="d-m" x="424" y="240">同じドメインの利用者にしか</text>
+        <text class="d-m" x="424" y="258">メールを返さない。</text>
+        <text class="d-la" x="424" y="284">＝ ドメイン制限は、書かなくても成立する</text>
+      </svg>
+    </div>
+    <figcaption>
+      許可ドメインを設定ファイルに書く箇所は、どこにも無い。<br>
+      シートをコピーした先生のドメインへ、自動的に追随する。
+    </figcaption>
+  </figure>
+
+  <div class="note">
+    <h4>ここが設計の背骨</h4>
+    <p>
+      Apps Script の <code>Session.getActiveUser().getEmail()</code> は、<strong>スクリプトの所有者と同じドメインの利用者にしか、メールを返さない。</strong>
+      他ドメインの人が開けば、空文字が返るだけだ。
+    </p>
+    <p>
+      つまり「学校のアカウントのみ」という制限は、<b>設定ではなく Google の仕様そのもの</b>で成立している。
+      他校の先生がこのシートをコピーすれば、その瞬間から許可ドメインはその学校に切り替わる。誰も何も設定しない。
+    </p>
+  </div>
+
+  <h3>トークンの中身</h3>
+  <p class="wide">
+    メールは、ここから先へは一歩も出ない。外へ出るのは <code>stu_9f2c1ab77e40</code> のような不透明IDだけだ。
+    メールとIDの対応表は、先生のシートの <code>students</code> にしか存在しない。
+  </p>
+
+  <figure>
+    <div class="plate">
+      <svg viewBox="0 0 920 250" role="img" aria-labelledby="d3t">
+        <title id="d3t">署名トークンの構造。ペイロード（生徒ID・送り返す先のURL・有効期限）と、それをHMAC-SHA256で署名した部分からなる</title>
+        <rect class="d-box" x="20" y="30" width="500" height="112" rx="3"/>
+        <text class="d-m" x="34" y="52">PAYLOAD（base64url。誰でも読める）</text>
+        <text class="d-s" x="34" y="76">sid : stu_9f2c1ab77e40</text>
+        <text class="d-s" x="34" y="98">url : .../macros/s/AAA.../exec</text>
+        <text class="d-s" x="34" y="120">exp : 2026-11-11（120日）</text>
+
+        <text class="d-t" x="536" y="92">.</text>
+
+        <rect class="d-fill-a" x="556" y="30" width="344" height="112" rx="3"/>
+        <text class="d-m" x="570" y="52">SIGNATURE</text>
+        <text class="d-s" x="570" y="76">HMAC-SHA256(payload, 署名鍵)</text>
+        <text class="d-s" x="570" y="98">鍵は先生のGASの中だけ。</text>
+        <text class="d-s" x="570" y="120">アプリにも、通信路にも出ない。</text>
+
+        <text class="d-la" x="34" y="182">▸ sid を書き換えると、署名が合わなくなる。GAS が捨てる。</text>
+        <text class="d-la" x="34" y="206">▸ url も署名の中にある。だから「送り先だけ他人のGASに差し替える」ことができない。</text>
+        <text class="d-la" x="34" y="230">▸ 別の先生の鍵で作ったトークンは、こちらのGASでは通らない。</text>
+      </svg>
+    </div>
+    <figcaption>
+      ペイロードは誰でも読める（暗号化ではない）。守っているのは<b>改ざんできないこと</b>であって、隠すことではない。
+    </figcaption>
+  </figure>
+</section>
+
+<!-- ============================================================ -->
+<section>
+  <p class="tag">Plate 04 ／ 記録</p>
+  <h2>クッキーの効かない場所で、<br>どうやって名乗るか。</h2>
+
+  <p class="wide">
+    ここからが本題だ。ゲームは <code>pages.dev</code>、GAS は <code>script.google.com</code>。<strong>別のオリジンである。</strong>
+    ブラウザはクロスオリジンの <code>fetch</code> にクッキーを付けない。付けようとしても、GAS は
+    <code>Access-Control-Allow-Credentials</code> を返せないので、ブラウザが拒否する。
+  </p>
+  <p class="wide">
+    つまり<strong>POSTの瞬間、GASは「誰が来たのか」をGoogleのセッションからは知りようがない。</strong>
+    だから身元は、さっき渡した署名トークンで名乗る。これがこの設計の核心だ。
+  </p>
+
+  <figure>
+    <div class="plate">
+      <svg viewBox="0 0 920 380" role="img" aria-labelledby="d4t">
+        <title id="d4t">ゲームから先生のGASへのPOST。Content-Type: text/plain でプリフライトを避け、署名トークンで本人確認し、署名が合わなければ捨てる</title>
+        <defs>
+          <marker id="ah3" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+            <path d="M0,1 L8,4.5 L0,8 z" fill="var(--signal)"/>
+          </marker>
+          <marker id="nh3" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+            <path d="M0,1 L8,4.5 L0,8 z" fill="var(--ink-3)"/>
+          </marker>
+        </defs>
+
+        <rect class="d-box" x="20" y="40" width="228" height="128" rx="3"/>
+        <text class="d-t" x="34" y="68">🌮 ゲーム（pages.dev）</text>
+        <text class="d-s" x="34" y="92">進捗が動いた 2.5秒後</text>
+        <text class="d-s" x="34" y="112">変わった項目だけを</text>
+        <text class="d-s" x="34" y="132">まとめて1回 POST</text>
+        <text class="d-m" x="34" y="156">＋ tt=署名トークン</text>
+
+        <path class="d-a pulse" d="M248,104 L340,104" marker-end="url(#ah3)"/>
+        <text class="d-la" x="252" y="90">POST</text>
+        <text class="d-m" x="252" y="126">text/plain</text>
+        <text class="d-m" x="252" y="142">Cookie 無し</text>
+
+        <rect class="d-fill-a" x="348" y="40" width="230" height="128" rx="3"/>
+        <text class="d-t" x="362" y="68">🔐 署名を検証</text>
+        <text class="d-s" x="362" y="92">payload を鍵で</text>
+        <text class="d-s" x="362" y="112">計算し直して</text>
+        <text class="d-s" x="362" y="132">突き合わせる</text>
+        <text class="d-m" x="362" y="156">＋ 期限も見る</text>
+
+        <!-- 合格 -->
+        <path class="d-a" d="M578,80 L676,80" marker-end="url(#ah3)"/>
+        <text class="d-la" x="586" y="66">合う</text>
+        <rect class="d-box-a" x="684" y="40" width="216" height="76" rx="3"/>
+        <text class="d-t" x="698" y="68">📊 シートへ書く</text>
+        <text class="d-s" x="698" y="90">ロックを取って直列化</text>
+
+        <!-- 不合格 -->
+        <path class="d-n" d="M578,130 L676,130" marker-end="url(#nh3)"/>
+        <text class="d-m" x="586" y="150">合わない</text>
+        <rect class="d-box" x="684" y="132" width="216" height="60" rx="3" stroke-dasharray="5 4"/>
+        <text class="d-t" x="698" y="158">🗑 捨てる</text>
+        <text class="d-m" x="698" y="180">bad_token</text>
+
+        <!-- 註記 -->
+        <line x1="20" y1="228" x2="900" y2="228" stroke="var(--rule)" stroke-width="1"/>
+
+        <text class="d-la" x="20" y="258">なぜ Content-Type: text/plain なのか</text>
+        <text class="d-s" x="20" y="280">application/json にすると CORS のプリフライト（OPTIONS）が飛ぶ。</text>
+        <text class="d-s" x="20" y="300">GAS は doGet と doPost しか持たず、OPTIONS に答えられない ── 必ず失敗する。</text>
+        <text class="d-s" x="20" y="320">text/plain は「単純リクエスト」に分類され、プリフライトが飛ばない。これが唯一の通し方。</text>
+        <text class="d-s" x="20" y="340">中身は JSON 文字列なので、GAS 側は JSON.parse で普通に読める。</text>
+        <text class="d-m" x="20" y="366">＊ /exec は結果を直接返さず googleusercontent へ302する。doPost はその前に実行済みなので、記録は完了している。</text>
+      </svg>
+    </div>
+    <figcaption>
+      クッキーを一切使わない。副作用として、<b>CSRF が原理的に成立しない</b>。
+    </figcaption>
+  </figure>
+
+  <h3>実際に飛んでいるもの</h3>
+<pre><b>POST</b> https://script.google.com/macros/s/AAA.../exec
+<i>Content-Type: text/plain;charset=utf-8</i>   <b>← プリフライトを避けるため</b>
+<i>（Cookie は付かない）</i>
+
+{
+  "action": "record",
+  "tt": "<b>&lt;payload&gt;.&lt;signature&gt;</b>",
+  "entries": [
+    { "item":"b3", "label":"B3 Tom's Day",
+      "cell":"具材 3/5",      <i>// 先生のシートのセルに出る文字列</i>
+      "detail":"11010",       <i>// 端末をまたいで復元するための原本</i>
+      "plays":3, "clears":0, "perfect":false,
+      "stats":{ "words":8, "tacos":0, "exams":0 } }
+  ]
+}</pre>
+
+  <p class="wide">
+    送るのは<strong>前回から変わった項目だけ</strong>だ。端末は「GASが ok を返した項目」を覚えていて、
+    それと同じものは送らない。45課やっていても、動いた1課しか飛ばない。
+  </p>
+</section>
+
+<!-- ============================================================ -->
+<section>
+  <p class="tag">Plate 05 ／ 時間</p>
+  <h2>いつシートに書かれるか。<br>そして、落ちたらどうなるか。</h2>
+
+  <figure>
+    <div class="plate">
+      <svg viewBox="0 0 920 260" role="img" aria-labelledby="d5t">
+        <title id="d5t">記録が送られる3つの契機。進捗が動いた2.5秒後、離脱時、そして次に開いたときの再送</title>
+        <defs>
+          <marker id="ah4" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+            <path d="M0,1 L8,4.5 L0,8 z" fill="var(--signal)"/>
+          </marker>
+        </defs>
+        <line x1="30" y1="128" x2="890" y2="128" stroke="var(--rule)" stroke-width="2"/>
+
+        <circle cx="120" cy="128" r="6" fill="var(--signal)"/>
+        <path class="d-a" d="M120,122 L120,74" marker-end="url(#ah4)"/>
+        <text class="d-t" x="120" y="58" text-anchor="middle">具材が1つ埋まる</text>
+        <text class="d-m" x="120" y="156" text-anchor="middle">t = 0</text>
+
+        <circle cx="300" cy="128" r="6" fill="var(--signal)"/>
+        <path class="d-a" d="M300,134 L300,182" marker-end="url(#ah4)"/>
+        <text class="d-t" x="300" y="204" text-anchor="middle">まとめて1回 POST</text>
+        <text class="d-s" x="300" y="224" text-anchor="middle">先生の画面には数秒で出る</text>
+        <text class="d-m" x="300" y="156" text-anchor="middle">＋2.5秒</text>
+
+        <circle cx="560" cy="128" r="6" fill="var(--signal)"/>
+        <path class="d-a" d="M560,122 L560,74" marker-end="url(#ah4)"/>
+        <text class="d-t" x="560" y="58" text-anchor="middle">タブを閉じる</text>
+        <text class="d-s" x="560" y="156" text-anchor="middle">送信待ちがあれば keepalive で即送信</text>
+
+        <circle cx="810" cy="128" r="6" fill="var(--signal)"/>
+        <path class="d-a" d="M810,134 L810,182" marker-end="url(#ah4)"/>
+        <text class="d-t" x="810" y="204" text-anchor="middle">次に開いたとき</text>
+        <text class="d-s" x="810" y="224" text-anchor="middle">送れなかった分を送り直す</text>
+      </svg>
+    </div>
+    <figcaption>
+      「送信済み」と覚えるのは、<b>GASが ok を返した分だけ</b>。<br>
+      通信断・ロック待ち・一時エラーで落ちた分は未送信のまま残り、次に開けば必ず追いつく。
+    </figcaption>
+  </figure>
+
+  <div class="note">
+    <h4>壊してはいけない一線</h4>
+    <p>
+      <strong>GASが落ちていても、ゲームは絶対に止まらない。</strong>
+      進捗の正本は、あくまで端末の localStorage にある。クラウドはその写しにすぎない。
+      通信は全部 catch して黙って捨てる。生徒から見た違いは、右上に「☁️ 記録中」のバッジが出るかどうかだけだ。
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<section>
+  <p class="tag">Plate 06 ／ 攻撃</p>
+  <h2>URLを知られたら、<br>何ができてしまうのか。</h2>
+
+  <p class="wide">
+    このURLは生徒全員に配る。掲示板に貼られることも、外部に漏れることもある。
+    だから「URLを知っている人に何ができるか」を、正面から並べておく。
+  </p>
+
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr><th>やろうとすること</th><th>結果</th><th>なぜ</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>他人になりすまして書き込む<br><span style="color:var(--ink-3);font-size:.86em">（トークンの sid を書き換える）</span></td>
+          <td class="no">不可</td>
+          <td>署名が合わなくなる。鍵は先生のGASの中にしかない。</td>
+        </tr>
+        <tr>
+          <td>トークン無しで書き込む</td>
+          <td class="no">不可</td>
+          <td><code>bad_token</code> を返して、何も書かずに捨てる。</td>
+        </tr>
+        <tr>
+          <td>他人の進捗を読む</td>
+          <td class="no">不可</td>
+          <td>読み出しにも署名トークンが要る。</td>
+        </tr>
+        <tr>
+          <td>別の先生のトークンで書き込む</td>
+          <td class="no">不可</td>
+          <td>鍵が違うので署名が通らない。そもそも送り先が別を指している。</td>
+        </tr>
+        <tr>
+          <td>他ドメインの人が入場する</td>
+          <td class="no">不可</td>
+          <td>メールが取れず、トークンが発行されない。</td>
+        </tr>
+        <tr>
+          <td>友人の端末を借りてログインし、<br><span style="color:var(--ink-3);font-size:.86em">友人の進捗を自分のものにする</span></td>
+          <td class="no">不可</td>
+          <td>端末の進捗には<b>持ち主</b>を刻んである。持ち主が違えばアカウント側を正とし、端末の分は送らない。<b>記録に残るのは、先生のURLから入って学習した分だけ</b>。</td>
+        </tr>
+        <tr>
+          <td>生徒のトークン<b>そのもの</b>を盗む</td>
+          <td class="yes">なりすませる</td>
+          <td>セッションクッキーを盗むのと同じ危険度。だからURLバーからは即座に消し、期限を120日に切っている。</td>
+        </tr>
+        <tr>
+          <td>devtools で localStorage を書き換える<br><span style="color:var(--ink-3);font-size:.86em">（本人が、自分の記録に嘘の数字を書く）</span></td>
+          <td class="yes">防げない</td>
+          <td>進捗の正本が端末にある以上、構造的に不可能。どんなクライアント主導の設計でも同じ。</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="wide">
+    下の2行を隠さないことが大事だと思っている。<strong>「絶対に安全」ではない。</strong>
+    署名が守るのは「他人になりすませないこと」と「他人の記録が勝手に混ざらないこと」まで。
+    <b>本人が、自分のアカウントで、嘘の数字を送る</b>ことは防げない。
+  </p>
+  <p class="wide">
+    だから、この記録を<strong>そのまま成績にはしない</strong>。
+    誰が取り組んでいて、クラスのどこがつまずいているかを見るための道具として使う。
+    そこを偽装する動機は薄いし、声かけの精度はそれだけで十分に変わる。
+  </p>
+
+  <h3>メールはどこにあるか</h3>
+  <p class="wide">
+    生徒のメールアドレスは、<strong>先生のスプレッドシートの外へ一歩も出ない。</strong>
+    アプリ（Cloudflare側）が持つのは <code>stu_9f2c1ab77e40</code> という不透明IDだけで、
+    それが誰なのかを知る手立てはアプリ側には存在しない。対応表は先生のシートの <code>students</code> にしかない。
+  </p>
+  <p class="wide">
+    先生が見る「進捗」シートには、照合済みのメールが並ぶ。
+    <b>先生には見える。アプリには見えない。</b>——それが正しい形だと考えている。
+  </p>
+</section>
+
+<!-- ============================================================ -->
+<section>
+  <p class="tag">Plate 07 ／ 結び</p>
+  <h2>成績処理の道具として。</h2>
+
+  <p class="wide">
+    学習アプリを配ったところで、誰がどこまでやったか分からなければ、授業では使えない。
+    かといって、学校の名前でサーバを立て、データベースを管理し、卒業のたびにアカウントを整理する——
+    そんなものを一教員が背負えるわけがない。
+  </p>
+  <p class="wide">
+    GASflare の答えは単純だ。<strong>データベースは、先生が自分のドライブに持てばいい。</strong>
+    スプレッドシートは先生がすでに持っている。デプロイのボタンも、Googleがすでに用意している。
+    足りなかったのは、<b>「そのURLを踏んだ人だけを、そのシートに繋ぐ」という一本の線</b>だけだった。
+  </p>
+  <p class="wide">
+    先生は、URLを配る。生徒は、それを踏む。それだけで、担任ごとの独立したデータベースが立ち上がる。
+    引き継ぎも、卒業も、異動も、シートをコピーするか捨てるかで済む。
+  </p>
+
+  <div class="note">
+    <h4>使っているもの</h4>
+    <p>
+      Google Apps Script（無料）／ Google スプレッドシート（無料）／ Cloudflare Pages（無料枠）。
+      サーバ費用はゼロ。Google Cloud Console のプロジェクトも不要。
+    </p>
+  </div>
+</section>
+
+<footer>
+  Teacher Tacos ／ GASflare<br>
+  タコスパーティー・WordTacos・CalTacos で稼働中<br>
+  この記事の図は、実装（Code.js / gasflare.js）と1対1で対応しています。
+</footer>
+
+</div>

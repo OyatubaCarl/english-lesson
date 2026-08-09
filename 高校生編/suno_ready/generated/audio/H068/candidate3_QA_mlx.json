@@ -1,0 +1,201 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H068.md",
+  "audio": "高校生編/suno_ready/generated/audio/H068/candidate3-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 180.9,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 239,
+  "transcribed_words": 239,
+  "matched_words": 238,
+  "coverage": 0.9958,
+  "precision": 0.9958,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 238,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 153,
+      "length": 1,
+      "words": [
+        "robespierre"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 153,
+      "actual_start": 153,
+      "expected": [
+        "robespierre"
+      ],
+      "actual": [
+        "rotspier"
+      ],
+      "actual_confidence": 0.2969,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "At the end of the 18th century, France was suffering from a serious financial crisis and famine. Heavy taxes weighed on peasants and the urban poor While the gap between ordinary people and the royal court of Louis XVI's And Marie Antoinette at Versailles was simply too great The thought of the Enlightenment philosophers Voltaire and Rousseau Had already spread among the educated class Liberty, equality, and the dignity of the human person These ideals would become the trigger of the revolution On July 14, 1789 The citizens of Paris stormed the Bastille prison This became the starting point of the French Revolution In August of the same year, the National Assembly adopted the Declaration of the Rights of Man And declared that all people held equal rights In 1793, Louis XVI was executed by the guillotine France was transformed from a monarchy into a republic But in the middle of the revolution, the Jacobins under Rotspier Carried out the reign of terror And tens of thousands were executed as enemies In 1799, the young soldier Napoleon Bonaparte took power in a coup And the chaos of the revolution came to an end He would become emperor in 1804 But the reform that the revolution brought Equality before the law Freedom of religion The protection of private property Spread throughout Europe Liberty, equality, fraternity The three ideals of the French Revolution still flow At the foundation of every democratic society In the world today",
+  "segments": [
+    {
+      "start": 10.48,
+      "end": 20.98,
+      "text": "At the end of the 18th century, France was suffering from a serious financial crisis and famine."
+    },
+    {
+      "start": 20.98,
+      "end": 27.92,
+      "text": "Heavy taxes weighed on peasants and the urban poor"
+    },
+    {
+      "start": 27.92,
+      "end": 34.6,
+      "text": "While the gap between ordinary people and the royal court of Louis XVI's"
+    },
+    {
+      "start": 34.6,
+      "end": 40.14,
+      "text": "And Marie Antoinette at Versailles was simply too great"
+    },
+    {
+      "start": 43.52,
+      "end": 48.98,
+      "text": "The thought of the Enlightenment philosophers Voltaire and Rousseau"
+    },
+    {
+      "start": 48.98,
+      "end": 54.52,
+      "text": "Had already spread among the educated class"
+    },
+    {
+      "start": 54.52,
+      "end": 61.7,
+      "text": "Liberty, equality, and the dignity of the human person"
+    },
+    {
+      "start": 61.7,
+      "end": 67.16,
+      "text": "These ideals would become the trigger of the revolution"
+    },
+    {
+      "start": 67.16,
+      "end": 70.68,
+      "text": "On July 14, 1789"
+    },
+    {
+      "start": 70.68,
+      "end": 75.3,
+      "text": "The citizens of Paris stormed the Bastille prison"
+    },
+    {
+      "start": 78.58,
+      "end": 84.42,
+      "text": "This became the starting point of the French Revolution"
+    },
+    {
+      "start": 84.42,
+      "end": 93.12,
+      "text": "In August of the same year, the National Assembly adopted the Declaration of the Rights of Man"
+    },
+    {
+      "start": 93.12,
+      "end": 96.4,
+      "text": "And declared that all people held equal rights"
+    },
+    {
+      "start": 96.4,
+      "end": 102.9,
+      "text": "In 1793, Louis XVI was executed by the guillotine"
+    },
+    {
+      "start": 107.28,
+      "end": 112.58,
+      "text": "France was transformed from a monarchy into a republic"
+    },
+    {
+      "start": 112.58,
+      "end": 118.64,
+      "text": "But in the middle of the revolution, the Jacobins under Rotspier"
+    },
+    {
+      "start": 118.64,
+      "end": 121.74,
+      "text": "Carried out the reign of terror"
+    },
+    {
+      "start": 121.74,
+      "end": 125.86,
+      "text": "And tens of thousands were executed as enemies"
+    },
+    {
+      "start": 130.62,
+      "end": 138.7,
+      "text": "In 1799, the young soldier Napoleon Bonaparte took power in a coup"
+    },
+    {
+      "start": 138.7,
+      "end": 143.32,
+      "text": "And the chaos of the revolution came to an end"
+    },
+    {
+      "start": 143.32,
+      "end": 149.16,
+      "text": "He would become emperor in 1804"
+    },
+    {
+      "start": 149.16,
+      "end": 153.04,
+      "text": "But the reform that the revolution brought"
+    },
+    {
+      "start": 153.04,
+      "end": 155.92,
+      "text": "Equality before the law"
+    },
+    {
+      "start": 155.92,
+      "end": 157.74,
+      "text": "Freedom of religion"
+    },
+    {
+      "start": 157.74,
+      "end": 161.02,
+      "text": "The protection of private property"
+    },
+    {
+      "start": 161.02,
+      "end": 163.48,
+      "text": "Spread throughout Europe"
+    },
+    {
+      "start": 163.48,
+      "end": 167.16,
+      "text": "Liberty, equality, fraternity"
+    },
+    {
+      "start": 167.16,
+      "end": 171.82,
+      "text": "The three ideals of the French Revolution still flow"
+    },
+    {
+      "start": 171.82,
+      "end": 177.98,
+      "text": "At the foundation of every democratic society"
+    },
+    {
+      "start": 179.16,
+      "end": 180.9,
+      "text": "In the world today"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H034.md",
+  "audio": "高校生編/suno_ready/generated/audio/H034/candidate1-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 105.5,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0141,
+  "expected_words": 142,
+  "transcribed_words": 144,
+  "matched_words": 136,
+  "coverage": 0.9577,
+  "precision": 0.9444,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 141,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 36,
+      "length": 2,
+      "words": [
+        "fam",
+        "lia"
+      ]
+    },
+    {
+      "start": 55,
+      "length": 1,
+      "words": [
+        "gaud"
+      ]
+    },
+    {
+      "start": 64,
+      "length": 1,
+      "words": [
+        "mountains"
+      ]
+    },
+    {
+      "start": 97,
+      "length": 1,
+      "words": [
+        "gaud"
+      ]
+    },
+    {
+      "start": 107,
+      "length": 1,
+      "words": [
+        "injuries"
+      ]
+    }
+  ],
+  "replacement_count": 5,
+  "replacement_spans": [
+    {
+      "expected_start": 36,
+      "actual_start": 38,
+      "expected": [
+        "fam",
+        "lia"
+      ],
+      "actual": [
+        "familia"
+      ],
+      "actual_confidence": 0.9756,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 55,
+      "actual_start": 56,
+      "expected": [
+        "gaud"
+      ],
+      "actual": [
+        "gaudi"
+      ],
+      "actual_confidence": 0.9727,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 64,
+      "actual_start": 65,
+      "expected": [
+        "mountains"
+      ],
+      "actual": [
+        "mountain"
+      ],
+      "actual_confidence": 0.4231,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 97,
+      "actual_start": 98,
+      "expected": [
+        "gaud"
+      ],
+      "actual": [
+        "gaudi"
+      ],
+      "actual_confidence": 0.8604,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 107,
+      "actual_start": 108,
+      "expected": [
+        "injuries"
+      ],
+      "actual": [
+        "injury"
+      ],
+      "actual_confidence": 0.8921,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 0,
+      "actual_start": 0,
+      "expected": [],
+      "actual": [
+        "antoni",
+        "gaud"
+      ],
+      "actual_confidence": 0.7327
+    },
+    {
+      "expected_start": 142,
+      "actual_start": 143,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.467
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 4,
+  "suspicious_substitution_words": 4,
+  "suspicious_content_substitution": true,
+  "transcript": "Antoni Gaudí Antoni Gaudí, from the end of the 19th century through the early 20th, was the architect who created a unique architectural language in Barcelona, Spain. His most famous work is the Basilica, known as the Sagrada Familia. For more than a hundred years, its construction has continued with interruptions. It is an unfinished masterpiece. Gaudi drew inspiration for his designs in nature. Trees, mountain shells, bones, waves Every column, every curve Was designed from a form found in nature He described nature as his great teacher For him, nature itself was a form of architecture In 1926, Gaudi was struck by a tram and died from his injury several days later. The cathedral, however, is still being built century after century through donations and support from visitors around the world. Perhaps its unfinished state has itself become part of the building's history. you",
+  "segments": [
+    {
+      "start": 10.52,
+      "end": 11.64,
+      "text": "Antoni Gaudí"
+    },
+    {
+      "start": 11.64,
+      "end": 16.72,
+      "text": "Antoni Gaudí, from the end of the 19th century through the early 20th,"
+    },
+    {
+      "start": 16.98,
+      "end": 24.08,
+      "text": "was the architect who created a unique architectural language in Barcelona, Spain."
+    },
+    {
+      "start": 24.08,
+      "end": 31.26,
+      "text": "His most famous work is the Basilica, known as the Sagrada Familia."
+    },
+    {
+      "start": 32.12,
+      "end": 39.28,
+      "text": "For more than a hundred years, its construction has continued with interruptions."
+    },
+    {
+      "start": 39.58,
+      "end": 47.7,
+      "text": "It is an unfinished masterpiece. Gaudi drew inspiration for his designs in nature."
+    },
+    {
+      "start": 48.88,
+      "end": 52.56,
+      "text": "Trees, mountain shells, bones, waves"
+    },
+    {
+      "start": 52.56,
+      "end": 54.94,
+      "text": "Every column, every curve"
+    },
+    {
+      "start": 54.94,
+      "end": 58.86,
+      "text": "Was designed from a form found in nature"
+    },
+    {
+      "start": 60.16,
+      "end": 64.56,
+      "text": "He described nature as his great teacher"
+    },
+    {
+      "start": 64.56,
+      "end": 69.98,
+      "text": "For him, nature itself was a form of architecture"
+    },
+    {
+      "start": 69.98,
+      "end": 75.26,
+      "text": "In 1926, Gaudi was struck by a tram"
+    },
+    {
+      "start": 75.26,
+      "end": 80.38,
+      "text": "and died from his injury several days later."
+    },
+    {
+      "start": 80.88,
+      "end": 85.32,
+      "text": "The cathedral, however, is still being built"
+    },
+    {
+      "start": 85.32,
+      "end": 89.24,
+      "text": "century after century through donations"
+    },
+    {
+      "start": 89.24,
+      "end": 92.7,
+      "text": "and support from visitors around the world."
+    },
+    {
+      "start": 94.02,
+      "end": 97.12,
+      "text": "Perhaps its unfinished state"
+    },
+    {
+      "start": 97.12,
+      "end": 102.32,
+      "text": "has itself become part of the building's history."
+    },
+    {
+      "start": 105.26,
+      "end": 105.5,
+      "text": "you"
+    }
+  ]
+}

@@ -1,0 +1,1038 @@
+{
+  "lesson": "H047",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h047_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/source_audio/H047/h047_market_economy_adopted.mp3",
+  "source_audio_sha256": "a7ac338108df5905e2c10ff9ace50067141027d9bdb615fab8fcba8fb5cfce49",
+  "bpm": 97.0,
+  "exact_word_match": true,
+  "word_count": 153,
+  "line_count": 13,
+  "first_word_start": 0.56,
+  "last_word_end": 78.899,
+  "lines": [
+    {
+      "line": 1,
+      "english": "In a market economy, the price of most goods and services is determined by demand and supply.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 0.56,
+          "end": 0.663
+        },
+        {
+          "word": "a",
+          "display_index": 1,
+          "start": 0.663,
+          "end": 0.8
+        },
+        {
+          "word": "market",
+          "display_index": 2,
+          "start": 0.8,
+          "end": 1.32
+        },
+        {
+          "word": "economy,",
+          "display_index": 3,
+          "start": 1.32,
+          "end": 2.527
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 2.527,
+          "end": 2.621
+        },
+        {
+          "word": "price",
+          "display_index": 5,
+          "start": 2.621,
+          "end": 2.881
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 2.881,
+          "end": 2.981
+        },
+        {
+          "word": "most",
+          "display_index": 7,
+          "start": 2.981,
+          "end": 3.281
+        },
+        {
+          "word": "goods",
+          "display_index": 8,
+          "start": 3.281,
+          "end": 3.601
+        },
+        {
+          "word": "and",
+          "display_index": 9,
+          "start": 3.601,
+          "end": 3.761
+        },
+        {
+          "word": "services",
+          "display_index": 10,
+          "start": 3.761,
+          "end": 4.546
+        },
+        {
+          "word": "is",
+          "display_index": 11,
+          "start": 4.546,
+          "end": 4.821
+        },
+        {
+          "word": "determined",
+          "display_index": 12,
+          "start": 4.821,
+          "end": 5.621
+        },
+        {
+          "word": "by",
+          "display_index": 13,
+          "start": 5.621,
+          "end": 6.062
+        },
+        {
+          "word": "demand",
+          "display_index": 14,
+          "start": 6.062,
+          "end": 7.642
+        },
+        {
+          "word": "and",
+          "display_index": 15,
+          "start": 7.642,
+          "end": 7.882
+        },
+        {
+          "word": "supply.",
+          "display_index": 16,
+          "start": 7.882,
+          "end": 9.382
+        }
+      ],
+      "start": 0.56,
+      "end": 9.382
+    },
+    {
+      "line": 2,
+      "english": "When consumers strongly demand a certain product, prices rise.",
+      "word_timings": [
+        {
+          "word": "When",
+          "display_index": 0,
+          "start": 10.063,
+          "end": 10.263
+        },
+        {
+          "word": "consumers",
+          "display_index": 1,
+          "start": 10.263,
+          "end": 11.103
+        },
+        {
+          "word": "strongly",
+          "display_index": 2,
+          "start": 11.103,
+          "end": 11.783
+        },
+        {
+          "word": "demand",
+          "display_index": 3,
+          "start": 11.783,
+          "end": 12.332
+        },
+        {
+          "word": "a",
+          "display_index": 4,
+          "start": 12.332,
+          "end": 12.412
+        },
+        {
+          "word": "certain",
+          "display_index": 5,
+          "start": 12.403,
+          "end": 12.983
+        },
+        {
+          "word": "product,",
+          "display_index": 6,
+          "start": 12.983,
+          "end": 13.763
+        },
+        {
+          "word": "prices",
+          "display_index": 7,
+          "start": 13.763,
+          "end": 14.304
+        },
+        {
+          "word": "rise.",
+          "display_index": 8,
+          "start": 14.304,
+          "end": 14.724
+        }
+      ],
+      "start": 10.063,
+      "end": 14.724
+    },
+    {
+      "line": 3,
+      "english": "When demand falls, prices fall as well.",
+      "word_timings": [
+        {
+          "word": "When",
+          "display_index": 0,
+          "start": 14.724,
+          "end": 14.884
+        },
+        {
+          "word": "demand",
+          "display_index": 1,
+          "start": 14.884,
+          "end": 15.504
+        },
+        {
+          "word": "falls,",
+          "display_index": 2,
+          "start": 15.504,
+          "end": 15.944
+        },
+        {
+          "word": "prices",
+          "display_index": 3,
+          "start": 15.944,
+          "end": 16.564
+        },
+        {
+          "word": "fall",
+          "display_index": 4,
+          "start": 16.564,
+          "end": 17.564
+        },
+        {
+          "word": "as",
+          "display_index": 5,
+          "start": 17.564,
+          "end": 17.804
+        },
+        {
+          "word": "well.",
+          "display_index": 6,
+          "start": 17.804,
+          "end": 19.304
+        }
+      ],
+      "start": 14.724,
+      "end": 19.304
+    },
+    {
+      "line": 4,
+      "english": "This is the most basic mechanism of the market.",
+      "word_timings": [
+        {
+          "word": "This",
+          "display_index": 0,
+          "start": 19.665,
+          "end": 19.879
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 19.879,
+          "end": 20.165
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 20.165,
+          "end": 20.285
+        },
+        {
+          "word": "most",
+          "display_index": 3,
+          "start": 20.285,
+          "end": 20.585
+        },
+        {
+          "word": "basic",
+          "display_index": 4,
+          "start": 20.585,
+          "end": 21.205
+        },
+        {
+          "word": "mechanism",
+          "display_index": 5,
+          "start": 21.205,
+          "end": 22.386
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 22.386,
+          "end": 22.613
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 22.613,
+          "end": 22.786
+        },
+        {
+          "word": "market.",
+          "display_index": 8,
+          "start": 22.786,
+          "end": 24.286
+        }
+      ],
+      "start": 19.665,
+      "end": 24.286
+    },
+    {
+      "line": 5,
+      "english": "A company gathers capital, conducts production in a factory, and sells its products to earn a profit.",
+      "word_timings": [
+        {
+          "word": "A",
+          "display_index": 0,
+          "start": 25.121,
+          "end": 25.226
+        },
+        {
+          "word": "company",
+          "display_index": 1,
+          "start": 25.226,
+          "end": 25.866
+        },
+        {
+          "word": "gathers",
+          "display_index": 2,
+          "start": 25.866,
+          "end": 26.187
+        },
+        {
+          "word": "capital,",
+          "display_index": 3,
+          "start": 26.187,
+          "end": 26.647
+        },
+        {
+          "word": "conducts",
+          "display_index": 4,
+          "start": 26.647,
+          "end": 27.087
+        },
+        {
+          "word": "production",
+          "display_index": 5,
+          "start": 27.087,
+          "end": 27.787
+        },
+        {
+          "word": "in",
+          "display_index": 6,
+          "start": 27.787,
+          "end": 27.876
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 27.876,
+          "end": 28.007
+        },
+        {
+          "word": "factory,",
+          "display_index": 8,
+          "start": 28.007,
+          "end": 28.807
+        },
+        {
+          "word": "and",
+          "display_index": 9,
+          "start": 28.807,
+          "end": 28.927
+        },
+        {
+          "word": "sells",
+          "display_index": 10,
+          "start": 28.927,
+          "end": 29.147
+        },
+        {
+          "word": "its",
+          "display_index": 11,
+          "start": 29.147,
+          "end": 29.267
+        },
+        {
+          "word": "products",
+          "display_index": 12,
+          "start": 29.267,
+          "end": 29.73
+        },
+        {
+          "word": "to",
+          "display_index": 13,
+          "start": 29.73,
+          "end": 29.948
+        },
+        {
+          "word": "earn",
+          "display_index": 14,
+          "start": 29.948,
+          "end": 30.215
+        },
+        {
+          "word": "a",
+          "display_index": 15,
+          "start": 30.215,
+          "end": 30.308
+        },
+        {
+          "word": "profit.",
+          "display_index": 16,
+          "start": 30.308,
+          "end": 31.808
+        }
+      ],
+      "start": 25.121,
+      "end": 31.808
+    },
+    {
+      "line": 6,
+      "english": "In an industry where competition is strong, companies are pushed to improve their quality.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 32.728,
+          "end": 32.888
+        },
+        {
+          "word": "an",
+          "display_index": 1,
+          "start": 32.888,
+          "end": 33.048
+        },
+        {
+          "word": "industry",
+          "display_index": 2,
+          "start": 33.048,
+          "end": 33.448
+        },
+        {
+          "word": "where",
+          "display_index": 3,
+          "start": 33.448,
+          "end": 33.608
+        },
+        {
+          "word": "competition",
+          "display_index": 4,
+          "start": 33.608,
+          "end": 34.239
+        },
+        {
+          "word": "is",
+          "display_index": 5,
+          "start": 34.239,
+          "end": 34.429
+        },
+        {
+          "word": "strong,",
+          "display_index": 6,
+          "start": 34.429,
+          "end": 34.989
+        },
+        {
+          "word": "companies",
+          "display_index": 7,
+          "start": 34.989,
+          "end": 35.606
+        },
+        {
+          "word": "are",
+          "display_index": 8,
+          "start": 35.606,
+          "end": 35.749
+        },
+        {
+          "word": "pushed",
+          "display_index": 9,
+          "start": 35.749,
+          "end": 36.089
+        },
+        {
+          "word": "to",
+          "display_index": 10,
+          "start": 36.089,
+          "end": 36.329
+        },
+        {
+          "word": "improve",
+          "display_index": 11,
+          "start": 36.329,
+          "end": 36.869
+        },
+        {
+          "word": "their",
+          "display_index": 12,
+          "start": 36.869,
+          "end": 37.149
+        },
+        {
+          "word": "quality.",
+          "display_index": 13,
+          "start": 37.149,
+          "end": 37.91
+        }
+      ],
+      "start": 32.728,
+      "end": 37.91
+    },
+    {
+      "line": 7,
+      "english": "Workers provide labor and, in return, receive wages or salaries.",
+      "word_timings": [
+        {
+          "word": "Workers",
+          "display_index": 0,
+          "start": 37.91,
+          "end": 38.37
+        },
+        {
+          "word": "provide",
+          "display_index": 1,
+          "start": 38.37,
+          "end": 38.85
+        },
+        {
+          "word": "labor",
+          "display_index": 2,
+          "start": 38.85,
+          "end": 39.41
+        },
+        {
+          "word": "and,",
+          "display_index": 3,
+          "start": 39.41,
+          "end": 39.69
+        },
+        {
+          "word": "in",
+          "display_index": 4,
+          "start": 39.69,
+          "end": 39.95
+        },
+        {
+          "word": "return,",
+          "display_index": 5,
+          "start": 39.95,
+          "end": 40.57
+        },
+        {
+          "word": "receive",
+          "display_index": 6,
+          "start": 40.57,
+          "end": 41.01
+        },
+        {
+          "word": "wages",
+          "display_index": 7,
+          "start": 41.01,
+          "end": 42.011
+        },
+        {
+          "word": "or",
+          "display_index": 8,
+          "start": 42.011,
+          "end": 42.231
+        },
+        {
+          "word": "salaries.",
+          "display_index": 9,
+          "start": 42.231,
+          "end": 43.731
+        }
+      ],
+      "start": 37.91,
+      "end": 43.731
+    },
+    {
+      "line": 8,
+      "english": "When employment is stable, the income of households is also stable.",
+      "word_timings": [
+        {
+          "word": "When",
+          "display_index": 0,
+          "start": 44.911,
+          "end": 45.131
+        },
+        {
+          "word": "employment",
+          "display_index": 1,
+          "start": 45.131,
+          "end": 45.991
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 45.991,
+          "end": 46.212
+        },
+        {
+          "word": "stable,",
+          "display_index": 3,
+          "start": 46.212,
+          "end": 47.091
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 47.091,
+          "end": 47.252
+        },
+        {
+          "word": "income",
+          "display_index": 5,
+          "start": 47.252,
+          "end": 47.572
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 47.572,
+          "end": 47.712
+        },
+        {
+          "word": "households",
+          "display_index": 7,
+          "start": 47.712,
+          "end": 48.319
+        },
+        {
+          "word": "is",
+          "display_index": 8,
+          "start": 48.319,
+          "end": 48.532
+        },
+        {
+          "word": "also",
+          "display_index": 9,
+          "start": 48.532,
+          "end": 48.992
+        },
+        {
+          "word": "stable.",
+          "display_index": 10,
+          "start": 48.992,
+          "end": 49.792
+        }
+      ],
+      "start": 44.911,
+      "end": 49.792
+    },
+    {
+      "line": 9,
+      "english": "A nation raises funds through taxes and uses them to fund education and welfare.",
+      "word_timings": [
+        {
+          "word": "A",
+          "display_index": 0,
+          "start": 49.863,
+          "end": 49.973
+        },
+        {
+          "word": "nation",
+          "display_index": 1,
+          "start": 49.973,
+          "end": 50.333
+        },
+        {
+          "word": "raises",
+          "display_index": 2,
+          "start": 50.333,
+          "end": 50.773
+        },
+        {
+          "word": "funds",
+          "display_index": 3,
+          "start": 50.773,
+          "end": 51.093
+        },
+        {
+          "word": "through",
+          "display_index": 4,
+          "start": 51.093,
+          "end": 51.353
+        },
+        {
+          "word": "taxes",
+          "display_index": 5,
+          "start": 51.353,
+          "end": 52.033
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 52.033,
+          "end": 52.213
+        },
+        {
+          "word": "uses",
+          "display_index": 7,
+          "start": 52.213,
+          "end": 52.473
+        },
+        {
+          "word": "them",
+          "display_index": 8,
+          "start": 52.473,
+          "end": 52.628
+        },
+        {
+          "word": "to",
+          "display_index": 9,
+          "start": 52.628,
+          "end": 52.753
+        },
+        {
+          "word": "fund",
+          "display_index": 10,
+          "start": 52.753,
+          "end": 53.153
+        },
+        {
+          "word": "education",
+          "display_index": 11,
+          "start": 53.153,
+          "end": 53.773
+        },
+        {
+          "word": "and",
+          "display_index": 12,
+          "start": 53.773,
+          "end": 53.994
+        },
+        {
+          "word": "welfare.",
+          "display_index": 13,
+          "start": 53.994,
+          "end": 54.794
+        }
+      ],
+      "start": 49.863,
+      "end": 54.794
+    },
+    {
+      "line": 10,
+      "english": "A bank provides loans, and companies grow through investment.",
+      "word_timings": [
+        {
+          "word": "A",
+          "display_index": 0,
+          "start": 54.805,
+          "end": 54.954
+        },
+        {
+          "word": "bank",
+          "display_index": 1,
+          "start": 54.954,
+          "end": 55.394
+        },
+        {
+          "word": "provides",
+          "display_index": 2,
+          "start": 55.394,
+          "end": 55.874
+        },
+        {
+          "word": "loans,",
+          "display_index": 3,
+          "start": 55.874,
+          "end": 57.254
+        },
+        {
+          "word": "and",
+          "display_index": 4,
+          "start": 57.254,
+          "end": 57.394
+        },
+        {
+          "word": "companies",
+          "display_index": 5,
+          "start": 57.394,
+          "end": 57.995
+        },
+        {
+          "word": "grow",
+          "display_index": 6,
+          "start": 57.995,
+          "end": 58.495
+        },
+        {
+          "word": "through",
+          "display_index": 7,
+          "start": 58.495,
+          "end": 58.815
+        },
+        {
+          "word": "investment.",
+          "display_index": 8,
+          "start": 58.815,
+          "end": 59.635
+        }
+      ],
+      "start": 54.805,
+      "end": 59.635
+    },
+    {
+      "line": 11,
+      "english": "In the modern era, where globalization has advanced, the economy of one country is closely tied to the markets of others.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 59.935,
+          "end": 60.053
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 60.053,
+          "end": 60.195
+        },
+        {
+          "word": "modern",
+          "display_index": 2,
+          "start": 60.195,
+          "end": 60.755
+        },
+        {
+          "word": "era,",
+          "display_index": 3,
+          "start": 60.755,
+          "end": 61.255
+        },
+        {
+          "word": "where",
+          "display_index": 4,
+          "start": 61.255,
+          "end": 61.415
+        },
+        {
+          "word": "globalization",
+          "display_index": 5,
+          "start": 61.415,
+          "end": 62.376
+        },
+        {
+          "word": "has",
+          "display_index": 6,
+          "start": 62.376,
+          "end": 62.556
+        },
+        {
+          "word": "advanced,",
+          "display_index": 7,
+          "start": 62.556,
+          "end": 63.475
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 63.475,
+          "end": 63.636
+        },
+        {
+          "word": "economy",
+          "display_index": 9,
+          "start": 63.636,
+          "end": 64.396
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 64.396,
+          "end": 64.596
+        },
+        {
+          "word": "one",
+          "display_index": 11,
+          "start": 64.596,
+          "end": 64.796
+        },
+        {
+          "word": "country",
+          "display_index": 12,
+          "start": 64.796,
+          "end": 65.494
+        },
+        {
+          "word": "is",
+          "display_index": 13,
+          "start": 65.494,
+          "end": 65.716
+        },
+        {
+          "word": "closely",
+          "display_index": 14,
+          "start": 65.716,
+          "end": 66.217
+        },
+        {
+          "word": "tied",
+          "display_index": 15,
+          "start": 66.217,
+          "end": 66.663
+        },
+        {
+          "word": "to",
+          "display_index": 16,
+          "start": 66.663,
+          "end": 66.835
+        },
+        {
+          "word": "the",
+          "display_index": 17,
+          "start": 66.835,
+          "end": 66.997
+        },
+        {
+          "word": "markets",
+          "display_index": 18,
+          "start": 66.997,
+          "end": 67.497
+        },
+        {
+          "word": "of",
+          "display_index": 19,
+          "start": 67.497,
+          "end": 67.697
+        },
+        {
+          "word": "others.",
+          "display_index": 20,
+          "start": 67.697,
+          "end": 68.597
+        }
+      ],
+      "start": 59.935,
+      "end": 68.597
+    },
+    {
+      "line": 12,
+      "english": "Exports and imports support growth.",
+      "word_timings": [
+        {
+          "word": "Exports",
+          "display_index": 0,
+          "start": 68.897,
+          "end": 69.677
+        },
+        {
+          "word": "and",
+          "display_index": 1,
+          "start": 69.677,
+          "end": 69.858
+        },
+        {
+          "word": "imports",
+          "display_index": 2,
+          "start": 69.858,
+          "end": 70.558
+        },
+        {
+          "word": "support",
+          "display_index": 3,
+          "start": 70.558,
+          "end": 70.998
+        },
+        {
+          "word": "growth.",
+          "display_index": 4,
+          "start": 70.998,
+          "end": 71.798
+        }
+      ],
+      "start": 68.897,
+      "end": 71.798
+    },
+    {
+      "line": 13,
+      "english": "Economies, beyond the borders of states, continually influence one another.",
+      "word_timings": [
+        {
+          "word": "Economies,",
+          "display_index": 0,
+          "start": 71.818,
+          "end": 73.058
+        },
+        {
+          "word": "beyond",
+          "display_index": 1,
+          "start": 73.058,
+          "end": 73.656
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 73.656,
+          "end": 73.799
+        },
+        {
+          "word": "borders",
+          "display_index": 3,
+          "start": 73.799,
+          "end": 74.319
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 74.319,
+          "end": 74.619
+        },
+        {
+          "word": "states,",
+          "display_index": 5,
+          "start": 74.619,
+          "end": 75.499
+        },
+        {
+          "word": "continually",
+          "display_index": 6,
+          "start": 75.499,
+          "end": 76.319
+        },
+        {
+          "word": "influence",
+          "display_index": 7,
+          "start": 76.319,
+          "end": 77.179
+        },
+        {
+          "word": "one",
+          "display_index": 8,
+          "start": 77.179,
+          "end": 77.399
+        },
+        {
+          "word": "another.",
+          "display_index": 9,
+          "start": 77.399,
+          "end": 78.899
+        }
+      ],
+      "start": 71.818,
+      "end": 78.899
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

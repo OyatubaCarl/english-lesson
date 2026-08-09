@@ -1,0 +1,80 @@
+{
+  "lesson": "H040",
+  "title": "DNAの二重らせん ― ロザリンド・フランクリンの静かな貢献",
+  "style": "画風01・光彩のある劇場アニメ背景を基調にした写実的な科学史ドキュメンタリー",
+  "research_basis": [
+    "King's College London: Rosalind Franklin / Photograph 51",
+    "Nature: Watson and Crick, 25 April 1953",
+    "NobelPrize.org: 1962 medicine prize and Foundation statutes"
+  ],
+  "timeline": [
+    "1951-1953 King's College London: Franklin and Gosling's DNA X-ray diffraction work",
+    "May 1952: Photograph 51",
+    "January 1953: Wilkins showed the image to Watson without Franklin's knowledge",
+    "25 April 1953: three related Nature papers published together",
+    "1953 onward: Franklin at Birkbeck working on virus structures",
+    "1958: Franklin died aged 37",
+    "1962: Crick, Watson and Wilkins received the Nobel Prize"
+  ],
+  "characters": {
+    "rosalind_franklin": {
+      "age_kings": "31-33",
+      "identity": "pale oval face, dark expressive eyebrows, dark wavy hair swept back with a side part, direct thoughtful eyes",
+      "wardrobe": "white 1950s lab coat over a restrained charcoal or muted teal blouse; dark skirt; no modern PPE",
+      "manner": "precise, self-possessed, concentrated; never reduced to a passive victim"
+    },
+    "raymond_gosling": {
+      "age": "mid twenties",
+      "identity": "young British research student, short tidy brown hair, slim build",
+      "wardrobe": "white lab coat, shirt and dark tie"
+    },
+    "james_watson": {
+      "age_1953": "24-25",
+      "identity": "young, tall and lean, short side-parted dark hair, clean-shaven",
+      "wardrobe": "brown tweed jacket, white shirt, narrow tie"
+    },
+    "francis_crick": {
+      "age_1953": "36",
+      "identity": "taller and broader, receding wavy dark hair, strong eyebrows, clean-shaven",
+      "wardrobe": "dark gray suit, white shirt, tie"
+    },
+    "maurice_wilkins": {
+      "age_1953": "46",
+      "identity": "tall, slim, thinning dark hair, reserved expression",
+      "wardrobe": "dark brown or charcoal suit, white shirt, tie"
+    }
+  },
+  "science_accuracy": [
+    "Photograph 51 is an X-ray diffraction pattern, not a medical X-ray image or a direct photograph of a helix",
+    "show thin hydrated DNA fibres, an X-ray camera and photographic film; no modern sequencers or computer displays",
+    "the X-shaped pattern supports helical geometry but does not alone visually contain a literal double helix",
+    "the 1953 Nature issue contained related papers by Watson-Crick, Wilkins-Stokes-Wilson, and Franklin-Gosling",
+    "Franklin's contribution includes rigorous measurements and analysis, not Photograph 51 alone"
+  ],
+  "history_accuracy": [
+    "Wilkins showing Photograph 51 to Watson is depicted as an understated act in an already strained collaboration, not a theatrical theft scene",
+    "Franklin must not be shown alive at the 1962 Nobel ceremony",
+    "the Nobel scene includes exactly Crick, Watson and Wilkins as the medicine laureates",
+    "the no-posthumous-award point is shown through absence and archival procedure, not a fictional rejected nomination"
+  ],
+  "composition": {
+    "aspect_ratio": "16:9",
+    "subtitle_safe_area": "keep important faces, hands, film and instruments above the lower 45 percent",
+    "camera": "one stable push, pull or hold per shot",
+    "text": "no readable generated labels, signatures, journal titles or equations"
+  },
+  "imagegen": {
+    "mode": "built-in ImageGen",
+    "selected_master_count": 11,
+    "selected_output_directory": "scenes/character_refs",
+    "video_scene_directory": "scenes/final_style01"
+  },
+  "avoid": [
+    "glowing fantasy DNA filling the laboratory",
+    "modern computers, LED displays, pipettes or sequencers",
+    "lab goggles and disposable nitrile gloves unless historically justified",
+    "villainous sneaking, document theft, courtroom imagery or a Nobel jury",
+    "Franklin as a ghost at the 1962 ceremony",
+    "readable generated text, logos, watermarks or captions inside source images"
+  ]
+}

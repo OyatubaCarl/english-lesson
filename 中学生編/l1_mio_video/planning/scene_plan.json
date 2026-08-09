@@ -1,0 +1,119 @@
+{
+  "project": "Teacher Tacos English 中学生編 L1 Mio版",
+  "title_en": "My Family and Pochi",
+  "title_ja": "わたしの家族とポチ",
+  "canvas": "1920x1080",
+  "fps": 30,
+  "generation_mode": "built-in image_gen",
+  "locked_rules": [
+    "Create one finished 16:9 story still, not a character sheet, collage, comic panel, UI, or storyboard.",
+    "Use dense children's storybook watercolor with fine hand-drawn ink lines, warm paper grain, soft daylight, and reassuring expressions.",
+    "Treat every provided person or dog reference as a locked identity. Preserve face, hair, body proportions, core clothing colors, and silhouette.",
+    "Use only the named characters for that scene. Do not duplicate characters or add unnamed people.",
+    "No subtitles, lyrics, captions, labels, speech bubbles, readable signs, logos, borders, or watermarks inside the image.",
+    "Fill the frame naturally; subtitles will be added later in video editing."
+  ],
+  "scenes": [
+    {
+      "id": "01_mio_intro",
+      "start": 0.0,
+      "end": 7.553,
+      "references": ["references/mio_ref.png"],
+      "primary_request": "Mio stands on a sunny lane in a small Japanese village, smiling and giving a modest friendly wave as she introduces herself.",
+      "scene_backdrop": "A peaceful rural village in spring, tiled roofs, low green hills, a few flowering trees and a clear blue sky.",
+      "composition": "16:9 medium-wide establishing shot; Mio is large and readable near the foreground, backpack visible, with enough village depth to establish where she lives.",
+      "mood": "Bright morning, welcoming, curious, calm."
+    },
+    {
+      "id": "02_family_home",
+      "start": 7.553,
+      "end": 14.026,
+      "references": [
+        "references/mio_ref.png",
+        "references/hiroshi_ref_final.png",
+        "references/yuka_mother_ref_final.png",
+        "references/kenta_ref_final.png",
+        "references/saki_ref_final.png"
+      ],
+      "primary_request": "Exactly five family members—Mio, father Hiroshi, mother Yuka, older brother Kenta, and little sister Saki—share a warm candid moment outside their modest village home.",
+      "scene_backdrop": "A welcoming wooden family house with a small garden, spring flowers, and village hills beyond.",
+      "composition": "16:9 wide family scene, all five full or three-quarter figures clearly visible, Mio naturally included rather than posed as a formal lineup.",
+      "mood": "Lively home, affectionate, safe, cheerful."
+    },
+    {
+      "id": "03_pochi_intro",
+      "start": 14.026,
+      "end": 18.949,
+      "references": ["references/pochi_ref.png"],
+      "primary_request": "Pochi stands in the family garden, looking up with enormous glossy black eyes and a playful, lovable expression.",
+      "scene_backdrop": "Soft-focus home garden with clover, small flowers, warm wooden porch, and gentle afternoon light.",
+      "composition": "16:9 low-angle close-to-medium portrait; Pochi is the clear single subject, full body and curled tail visible.",
+      "mood": "Adorable, intimate, playful."
+    },
+    {
+      "id": "04_family_loves_pochi",
+      "start": 18.949,
+      "end": 25.112,
+      "references": [
+        "references/mio_ref.png",
+        "references/saki_ref_final.png",
+        "references/yuka_mother_ref_final.png",
+        "references/pochi_ref.png"
+      ],
+      "primary_request": "Mio, Saki, and their mother Yuka crouch and laugh together while affectionately petting Pochi in the garden.",
+      "scene_backdrop": "The same warm family garden and porch, with sunlit leaves and a few flowers.",
+      "composition": "16:9 medium group shot focused on faces, hands, and Pochi; exactly three humans and one dog.",
+      "mood": "Shared affection, laughter, warmth."
+    },
+    {
+      "id": "05_walk_to_school",
+      "start": 25.112,
+      "end": 30.376,
+      "references": [
+        "references/mio_ref.png",
+        "references/yuuka_friend_ref.png"
+      ],
+      "primary_request": "Mio and her classmate Yuuka walk side by side toward school, talking happily with their school bags as morning sunlight filters through the trees.",
+      "scene_backdrop": "Tree-lined village road leading toward a small school gate in the distance, spring greenery and soft petals.",
+      "composition": "16:9 medium-wide walking scene, both girls large and easy to recognize, natural forward motion.",
+      "mood": "Fresh morning, friendship, everyday adventure."
+    },
+    {
+      "id": "06_music_and_books",
+      "start": 30.376,
+      "end": 33.233,
+      "references": [
+        "references/mio_ref.png",
+        "references/kenta_ref_final.png"
+      ],
+      "primary_request": "In a cozy living room, Mio enjoys music through simple over-ear headphones while her older brother Kenta relaxes nearby reading a book.",
+      "scene_backdrop": "Warm family living room with wooden shelves, a small music player, books, houseplants, and afternoon window light.",
+      "composition": "16:9 medium two-character scene; Mio and Kenta have separate clear activities but remain part of one natural room.",
+      "mood": "Relaxed hobbies, quiet happiness."
+    },
+    {
+      "id": "07_sister_flowers",
+      "start": 33.233,
+      "end": 36.617,
+      "references": ["references/saki_ref_final.png"],
+      "primary_request": "Mio's little sister Saki kneels beside a flower bed, gently admiring colorful blossoms with an absorbed happy expression.",
+      "scene_backdrop": "Family garden at golden late-afternoon light, varied flowers, leaves, and a glimpse of the wooden house.",
+      "composition": "16:9 medium story still; Saki and the flowers are both large and readable.",
+      "mood": "Gentle wonder, peaceful, warm."
+    },
+    {
+      "id": "08_park_play",
+      "start": 36.617,
+      "end": 43.880167,
+      "references": [
+        "references/mio_ref.png",
+        "references/pochi_ref.png"
+      ],
+      "primary_request": "Mio runs across a sunny neighborhood park while Pochi happily chases a blue flying disc beside her.",
+      "scene_backdrop": "Open green park with trees, a small slide and swings far in the background, village hills under a bright sky.",
+      "composition": "16:9 dynamic wide shot, Mio and Pochi moving together across the frame, joyful readable faces, flying disc clearly visible.",
+      "mood": "Energetic finale, freedom, friendship, a very good day."
+    }
+  ]
+}
+

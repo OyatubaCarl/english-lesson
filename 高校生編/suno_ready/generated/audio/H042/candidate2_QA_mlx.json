@@ -1,0 +1,159 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H042.md",
+  "audio": "高校生編/suno_ready/generated/audio/H042/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 98.34,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9848,
+  "expected_words": 132,
+  "transcribed_words": 130,
+  "matched_words": 129,
+  "coverage": 0.9773,
+  "precision": 0.9923,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 131,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 127,
+      "length": 2,
+      "words": [
+        "the",
+        "roots"
+      ]
+    },
+    {
+      "start": 11,
+      "length": 1,
+      "words": [
+        "and"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 11,
+      "actual_start": 11,
+      "expected": [
+        "and"
+      ],
+      "actual": [
+        "in"
+      ],
+      "actual_confidence": 0.0967,
+      "substitution_words": 1,
+      "has_content_word": false
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 127,
+      "actual_start": 127,
+      "expected": [
+        "the",
+        "roots"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "The Silk Road from ancient times Connected Asia in the East In Europe in the West It was not a single road But a network of many routes Chinese silk, Persian glass, Indian spices and Roman gold traveled this road by caravan Merchants loaded their camels and crossed deserts and mountains But it was not only goods that traveled this road Religion also spread along this path Buddhism spread from India to China Islam spread from Arabia into Central Asia Language and art were also exchanged The Chinese way of making paper traveled westward And later contributed to learning and culture in Europe The Silk Road was one of history's great networks of exchange The words carried by the desert wind across many centuries Still quietly support of many civilizations",
+  "segments": [
+    {
+      "start": 10.02,
+      "end": 13.38,
+      "text": "The Silk Road from ancient times"
+    },
+    {
+      "start": 13.38,
+      "end": 15.94,
+      "text": "Connected Asia in the East"
+    },
+    {
+      "start": 15.94,
+      "end": 17.86,
+      "text": "In Europe in the West"
+    },
+    {
+      "start": 20.16,
+      "end": 23.2,
+      "text": "It was not a single road"
+    },
+    {
+      "start": 23.2,
+      "end": 26.28,
+      "text": "But a network of many routes"
+    },
+    {
+      "start": 26.28,
+      "end": 28.9,
+      "text": "Chinese silk, Persian glass,"
+    },
+    {
+      "start": 28.9,
+      "end": 35.32,
+      "text": "Indian spices and Roman gold traveled this road by caravan"
+    },
+    {
+      "start": 37.32,
+      "end": 42.2,
+      "text": "Merchants loaded their camels and crossed deserts and mountains"
+    },
+    {
+      "start": 42.2,
+      "end": 47.12,
+      "text": "But it was not only goods that traveled this road"
+    },
+    {
+      "start": 47.9,
+      "end": 51.26,
+      "text": "Religion also spread along this path"
+    },
+    {
+      "start": 51.9,
+      "end": 55.92,
+      "text": "Buddhism spread from India to China"
+    },
+    {
+      "start": 55.92,
+      "end": 61.26,
+      "text": "Islam spread from Arabia into Central Asia"
+    },
+    {
+      "start": 61.26,
+      "end": 66.9,
+      "text": "Language and art were also exchanged"
+    },
+    {
+      "start": 66.9,
+      "end": 71.92,
+      "text": "The Chinese way of making paper traveled westward"
+    },
+    {
+      "start": 72.7,
+      "end": 78.7,
+      "text": "And later contributed to learning and culture in Europe"
+    },
+    {
+      "start": 78.7,
+      "end": 85.14,
+      "text": "The Silk Road was one of history's great networks of exchange"
+    },
+    {
+      "start": 85.14,
+      "end": 92.26,
+      "text": "The words carried by the desert wind across many centuries"
+    },
+    {
+      "start": 92.26,
+      "end": 98.34,
+      "text": "Still quietly support of many civilizations"
+    }
+  ]
+}

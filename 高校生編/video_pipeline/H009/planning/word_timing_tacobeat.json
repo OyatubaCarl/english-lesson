@@ -1,0 +1,802 @@
+{
+  "lesson": "H009",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h009_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/rewrite_audio/H009/candidate1-full.mp3",
+  "source_audio_sha256": "67fc970fc6a9fe8b00a96cc08b67ef6d743df4fb9b9677add3c0c67cc5744def",
+  "bpm": 95.0,
+  "exact_word_match": true,
+  "word_count": 138,
+  "line_count": 12,
+  "first_word_start": 0.551,
+  "last_word_end": 63.299,
+  "lines": [
+    {
+      "line": 1,
+      "english": "I was discussing the Sunday picnic with my sister.",
+      "word_timings": [
+        {
+          "word": "I",
+          "start": 0.551,
+          "end": 0.7
+        },
+        {
+          "word": "was",
+          "start": 0.7,
+          "end": 1.0
+        },
+        {
+          "word": "discussing",
+          "start": 1.0,
+          "end": 1.665
+        },
+        {
+          "word": "the",
+          "start": 1.665,
+          "end": 1.781
+        },
+        {
+          "word": "Sunday",
+          "start": 1.781,
+          "end": 2.261
+        },
+        {
+          "word": "picnic",
+          "start": 2.261,
+          "end": 2.921
+        },
+        {
+          "word": "with",
+          "start": 2.921,
+          "end": 3.222
+        },
+        {
+          "word": "my",
+          "start": 3.222,
+          "end": 3.641
+        },
+        {
+          "word": "sister.",
+          "start": 3.641,
+          "end": 5.002
+        }
+      ],
+      "start": 0.551,
+      "end": 5.002
+    },
+    {
+      "line": 2,
+      "english": "If the weather is good, we will spend the day in a meadow by the river.",
+      "word_timings": [
+        {
+          "word": "If",
+          "start": 5.302,
+          "end": 5.466
+        },
+        {
+          "word": "the",
+          "start": 5.466,
+          "end": 5.582
+        },
+        {
+          "word": "weather",
+          "start": 5.582,
+          "end": 5.97
+        },
+        {
+          "word": "is",
+          "start": 5.97,
+          "end": 6.082
+        },
+        {
+          "word": "good,",
+          "start": 6.082,
+          "end": 6.522
+        },
+        {
+          "word": "we",
+          "start": 6.522,
+          "end": 6.642
+        },
+        {
+          "word": "will",
+          "start": 6.642,
+          "end": 6.782
+        },
+        {
+          "word": "spend",
+          "start": 6.782,
+          "end": 7.161
+        },
+        {
+          "word": "the",
+          "start": 7.161,
+          "end": 7.322
+        },
+        {
+          "word": "day",
+          "start": 7.322,
+          "end": 7.722
+        },
+        {
+          "word": "in",
+          "start": 7.722,
+          "end": 7.975
+        },
+        {
+          "word": "a",
+          "start": 7.975,
+          "end": 8.102
+        },
+        {
+          "word": "meadow",
+          "start": 8.102,
+          "end": 8.723
+        },
+        {
+          "word": "by",
+          "start": 8.723,
+          "end": 9.396
+        },
+        {
+          "word": "the",
+          "start": 9.396,
+          "end": 9.823
+        },
+        {
+          "word": "river.",
+          "start": 9.823,
+          "end": 10.623
+        }
+      ],
+      "start": 5.302,
+      "end": 10.623
+    },
+    {
+      "line": 3,
+      "english": "If it rains, we will watch a movie at home.",
+      "word_timings": [
+        {
+          "word": "If",
+          "start": 10.683,
+          "end": 10.883
+        },
+        {
+          "word": "it",
+          "start": 10.883,
+          "end": 11.103
+        },
+        {
+          "word": "rains,",
+          "start": 11.103,
+          "end": 12.524
+        },
+        {
+          "word": "we",
+          "start": 12.524,
+          "end": 12.704
+        },
+        {
+          "word": "will",
+          "start": 12.704,
+          "end": 13.004
+        },
+        {
+          "word": "watch",
+          "start": 13.004,
+          "end": 13.395
+        },
+        {
+          "word": "a",
+          "start": 13.395,
+          "end": 13.764
+        },
+        {
+          "word": "movie",
+          "start": 13.764,
+          "end": 14.484
+        },
+        {
+          "word": "at",
+          "start": 14.484,
+          "end": 14.725
+        },
+        {
+          "word": "home.",
+          "start": 14.725,
+          "end": 15.245
+        }
+      ],
+      "start": 10.683,
+      "end": 15.245
+    },
+    {
+      "line": 4,
+      "english": "Unless it rains, we will leave the house at ten in the morning.",
+      "word_timings": [
+        {
+          "word": "Unless",
+          "start": 15.245,
+          "end": 15.585
+        },
+        {
+          "word": "it",
+          "start": 15.585,
+          "end": 15.705
+        },
+        {
+          "word": "rains,",
+          "start": 15.705,
+          "end": 16.305
+        },
+        {
+          "word": "we",
+          "start": 16.305,
+          "end": 16.465
+        },
+        {
+          "word": "will",
+          "start": 16.465,
+          "end": 16.625
+        },
+        {
+          "word": "leave",
+          "start": 16.625,
+          "end": 16.814
+        },
+        {
+          "word": "the",
+          "start": 16.814,
+          "end": 16.945
+        },
+        {
+          "word": "house",
+          "start": 16.945,
+          "end": 17.305
+        },
+        {
+          "word": "at",
+          "start": 17.305,
+          "end": 17.425
+        },
+        {
+          "word": "ten",
+          "start": 17.425,
+          "end": 17.805
+        },
+        {
+          "word": "in",
+          "start": 17.805,
+          "end": 18.077
+        },
+        {
+          "word": "the",
+          "start": 18.077,
+          "end": 18.206
+        },
+        {
+          "word": "morning.",
+          "start": 18.206,
+          "end": 19.006
+        }
+      ],
+      "start": 15.245,
+      "end": 19.006
+    },
+    {
+      "line": 5,
+      "english": "We thought about several conditions and made a clear plan.",
+      "word_timings": [
+        {
+          "word": "We",
+          "start": 19.026,
+          "end": 19.166
+        },
+        {
+          "word": "thought",
+          "start": 19.166,
+          "end": 19.426
+        },
+        {
+          "word": "about",
+          "start": 19.426,
+          "end": 19.946
+        },
+        {
+          "word": "several",
+          "start": 19.946,
+          "end": 20.406
+        },
+        {
+          "word": "conditions",
+          "start": 20.406,
+          "end": 21.247
+        },
+        {
+          "word": "and",
+          "start": 21.247,
+          "end": 21.387
+        },
+        {
+          "word": "made",
+          "start": 21.387,
+          "end": 21.705
+        },
+        {
+          "word": "a",
+          "start": 21.705,
+          "end": 21.827
+        },
+        {
+          "word": "clear",
+          "start": 21.827,
+          "end": 22.267
+        },
+        {
+          "word": "plan.",
+          "start": 22.267,
+          "end": 23.067
+        }
+      ],
+      "start": 19.026,
+      "end": 23.067
+    },
+    {
+      "line": 6,
+      "english": "Tomorrow morning, unless the forecast turns much worse, we will go as planned.",
+      "word_timings": [
+        {
+          "word": "Tomorrow",
+          "start": 23.107,
+          "end": 23.747
+        },
+        {
+          "word": "morning,",
+          "start": 23.747,
+          "end": 25.368
+        },
+        {
+          "word": "unless",
+          "start": 25.368,
+          "end": 25.667
+        },
+        {
+          "word": "the",
+          "start": 25.667,
+          "end": 25.788
+        },
+        {
+          "word": "forecast",
+          "start": 25.788,
+          "end": 26.408
+        },
+        {
+          "word": "turns",
+          "start": 26.408,
+          "end": 26.768
+        },
+        {
+          "word": "much",
+          "start": 26.768,
+          "end": 27.048
+        },
+        {
+          "word": "worse,",
+          "start": 27.048,
+          "end": 27.388
+        },
+        {
+          "word": "we",
+          "start": 27.388,
+          "end": 27.508
+        },
+        {
+          "word": "will",
+          "start": 27.508,
+          "end": 27.708
+        },
+        {
+          "word": "go",
+          "start": 27.708,
+          "end": 28.249
+        },
+        {
+          "word": "as",
+          "start": 28.249,
+          "end": 28.569
+        },
+        {
+          "word": "planned.",
+          "start": 28.569,
+          "end": 29.349
+        }
+      ],
+      "start": 23.107,
+      "end": 29.349
+    },
+    {
+      "line": 7,
+      "english": "If it does rain, however, we will shift the picnic to the afternoon.",
+      "word_timings": [
+        {
+          "word": "If",
+          "start": 29.649,
+          "end": 29.809
+        },
+        {
+          "word": "it",
+          "start": 29.809,
+          "end": 29.929
+        },
+        {
+          "word": "does",
+          "start": 29.929,
+          "end": 30.229
+        },
+        {
+          "word": "rain,",
+          "start": 30.229,
+          "end": 30.669
+        },
+        {
+          "word": "however,",
+          "start": 30.669,
+          "end": 31.19
+        },
+        {
+          "word": "we",
+          "start": 31.19,
+          "end": 31.31
+        },
+        {
+          "word": "will",
+          "start": 31.31,
+          "end": 31.49
+        },
+        {
+          "word": "shift",
+          "start": 31.49,
+          "end": 31.818
+        },
+        {
+          "word": "the",
+          "start": 31.818,
+          "end": 31.95
+        },
+        {
+          "word": "picnic",
+          "start": 31.95,
+          "end": 32.431
+        },
+        {
+          "word": "to",
+          "start": 32.431,
+          "end": 32.608
+        },
+        {
+          "word": "the",
+          "start": 32.608,
+          "end": 32.83
+        },
+        {
+          "word": "afternoon.",
+          "start": 32.83,
+          "end": 33.55
+        }
+      ],
+      "start": 29.649,
+      "end": 33.55
+    },
+    {
+      "line": 8,
+      "english": "Whenever the forecast improves, our spirits rise with it.",
+      "word_timings": [
+        {
+          "word": "Whenever",
+          "start": 33.85,
+          "end": 34.341
+        },
+        {
+          "word": "the",
+          "start": 34.341,
+          "end": 34.471
+        },
+        {
+          "word": "forecast",
+          "start": 34.471,
+          "end": 35.151
+        },
+        {
+          "word": "improves,",
+          "start": 35.151,
+          "end": 35.831
+        },
+        {
+          "word": "our",
+          "start": 35.831,
+          "end": 36.091
+        },
+        {
+          "word": "spirits",
+          "start": 36.091,
+          "end": 37.171
+        },
+        {
+          "word": "rise",
+          "start": 37.171,
+          "end": 37.672
+        },
+        {
+          "word": "with",
+          "start": 37.672,
+          "end": 38.032
+        },
+        {
+          "word": "it.",
+          "start": 38.032,
+          "end": 38.772
+        }
+      ],
+      "start": 33.85,
+      "end": 38.772
+    },
+    {
+      "line": 9,
+      "english": "Mother was tired, but she said she would prepare sandwiches.",
+      "word_timings": [
+        {
+          "word": "Mother",
+          "start": 39.072,
+          "end": 39.392
+        },
+        {
+          "word": "was",
+          "start": 39.392,
+          "end": 39.672
+        },
+        {
+          "word": "tired,",
+          "start": 39.672,
+          "end": 40.652
+        },
+        {
+          "word": "but",
+          "start": 40.652,
+          "end": 40.793
+        },
+        {
+          "word": "she",
+          "start": 40.793,
+          "end": 40.933
+        },
+        {
+          "word": "said",
+          "start": 40.933,
+          "end": 41.113
+        },
+        {
+          "word": "she",
+          "start": 41.113,
+          "end": 41.273
+        },
+        {
+          "word": "would",
+          "start": 41.273,
+          "end": 41.433
+        },
+        {
+          "word": "prepare",
+          "start": 41.433,
+          "end": 42.053
+        },
+        {
+          "word": "sandwiches.",
+          "start": 42.053,
+          "end": 43.051
+        }
+      ],
+      "start": 39.072,
+      "end": 43.051
+    },
+    {
+      "line": 10,
+      "english": "The sight of sandwiches filling an entire basket is always a pleasant one.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 43.351,
+          "end": 43.473
+        },
+        {
+          "word": "sight",
+          "start": 43.473,
+          "end": 43.773
+        },
+        {
+          "word": "of",
+          "start": 43.773,
+          "end": 43.933
+        },
+        {
+          "word": "sandwiches",
+          "start": 43.933,
+          "end": 44.754
+        },
+        {
+          "word": "filling",
+          "start": 44.754,
+          "end": 45.154
+        },
+        {
+          "word": "an",
+          "start": 45.154,
+          "end": 45.274
+        },
+        {
+          "word": "entire",
+          "start": 45.274,
+          "end": 45.854
+        },
+        {
+          "word": "basket",
+          "start": 45.854,
+          "end": 46.365
+        },
+        {
+          "word": "is",
+          "start": 46.365,
+          "end": 46.734
+        },
+        {
+          "word": "always",
+          "start": 46.734,
+          "end": 47.126
+        },
+        {
+          "word": "a",
+          "start": 47.126,
+          "end": 47.254
+        },
+        {
+          "word": "pleasant",
+          "start": 47.254,
+          "end": 47.835
+        },
+        {
+          "word": "one.",
+          "start": 47.835,
+          "end": 49.235
+        }
+      ],
+      "start": 43.351,
+      "end": 49.235
+    },
+    {
+      "line": 11,
+      "english": "As Sunday approaches, my sister's face remains calm.",
+      "word_timings": [
+        {
+          "word": "As",
+          "start": 49.535,
+          "end": 49.775
+        },
+        {
+          "word": "Sunday",
+          "start": 49.775,
+          "end": 50.295
+        },
+        {
+          "word": "approaches,",
+          "start": 50.295,
+          "end": 51.889
+        },
+        {
+          "word": "my",
+          "start": 51.889,
+          "end": 52.096
+        },
+        {
+          "word": "sister's",
+          "start": 52.096,
+          "end": 52.636
+        },
+        {
+          "word": "face",
+          "start": 52.636,
+          "end": 53.176
+        },
+        {
+          "word": "remains",
+          "start": 53.176,
+          "end": 53.997
+        },
+        {
+          "word": "calm.",
+          "start": 53.997,
+          "end": 55.301
+        }
+      ],
+      "start": 49.535,
+      "end": 55.301
+    },
+    {
+      "line": 12,
+      "english": "The fact that everything would depend on the weather brought our family quietly together.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 55.601,
+          "end": 55.797
+        },
+        {
+          "word": "fact",
+          "start": 55.797,
+          "end": 56.217
+        },
+        {
+          "word": "that",
+          "start": 56.217,
+          "end": 56.597
+        },
+        {
+          "word": "everything",
+          "start": 56.597,
+          "end": 57.178
+        },
+        {
+          "word": "would",
+          "start": 57.178,
+          "end": 57.498
+        },
+        {
+          "word": "depend",
+          "start": 57.498,
+          "end": 58.098
+        },
+        {
+          "word": "on",
+          "start": 58.098,
+          "end": 58.303
+        },
+        {
+          "word": "the",
+          "start": 58.303,
+          "end": 58.438
+        },
+        {
+          "word": "weather",
+          "start": 58.438,
+          "end": 59.078
+        },
+        {
+          "word": "brought",
+          "start": 59.078,
+          "end": 59.478
+        },
+        {
+          "word": "our",
+          "start": 59.478,
+          "end": 59.718
+        },
+        {
+          "word": "family",
+          "start": 59.718,
+          "end": 60.359
+        },
+        {
+          "word": "quietly",
+          "start": 60.359,
+          "end": 61.799
+        },
+        {
+          "word": "together.",
+          "start": 61.799,
+          "end": 63.299
+        }
+      ],
+      "start": 55.601,
+      "end": 63.299
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

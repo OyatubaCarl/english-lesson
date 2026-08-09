@@ -1,0 +1,832 @@
+[
+  {
+    "id": "s5_758",
+    "word": "silver",
+    "severity": "bad",
+    "issue_type": "A.動詞訓読み誤読",
+    "fragment": "放《ほうっ》ち",
+    "context": "独特の白い輝きを放ち、見ていてうっとりする",
+    "correct": "放《はな》ち",
+    "comment": "「光を放つ」の連用形は「はなち」。「ほうっち」は明らかな誤読(送り仮名「ち」に促音「っ」が付くのは不自然)"
+  },
+  {
+    "id": "s5_1416",
+    "word": "divine",
+    "severity": "bad",
+    "issue_type": "A.動詞訓読み誤読",
+    "fragment": "放《ほうっ》ち",
+    "context": "朝日は<divine>な輝きを放ち、登山客はみな",
+    "correct": "放《はな》ち",
+    "comment": "同上"
+  },
+  {
+    "id": "s5_493",
+    "word": "invent",
+    "severity": "bad",
+    "issue_type": "A.動詞訓読み誤読",
+    "fragment": "解き放《ほうっ》たれた",
+    "context": "人類の生活時間は太陽から解き放たれた",
+    "correct": "解き放《はな》たれた",
+    "comment": "「解き放たれる」は「ときはなたれる」。「ほうっ」は誤読"
+  },
+  {
+    "id": "s5_1464",
+    "word": "emerge",
+    "severity": "bad",
+    "issue_type": "A.動詞訓読み誤読",
+    "fragment": "なで下《くだ》ろした",
+    "context": "見守っていた家族はようやく胸をなで下ろした",
+    "correct": "なで下《お》ろした",
+    "comment": "「胸をなで下ろす」は「おろす」。慣用句"
+  },
+  {
+    "id": "s6_0475",
+    "word": "cybercafe",
+    "severity": "bad",
+    "issue_type": "A.動詞訓読み誤読",
+    "fragment": "なで下《くだ》ろした",
+    "context": "無事を伝えてようやく胸をなで下ろした",
+    "correct": "なで下《お》ろした",
+    "comment": "同上"
+  },
+  {
+    "id": "s6_1195",
+    "word": "lest",
+    "severity": "bad",
+    "issue_type": "A.動詞訓読み誤読",
+    "fragment": "｜下《くだ》りていった",
+    "context": "階段をゆっくり下りていった",
+    "correct": "下《お》りていった",
+    "comment": "階段は「おりる」。「くだる」は山道など"
+  },
+  {
+    "id": "s6_2154",
+    "word": "tramp",
+    "severity": "bad",
+    "issue_type": "A.動詞訓読み誤読",
+    "fragment": "腰を下《くだ》ろした",
+    "context": "ベンチに腰を下ろした<tramp>に",
+    "correct": "腰を下《お》ろした",
+    "comment": "「腰を下ろす」は「おろす」。「くだろす」は誤読"
+  },
+  {
+    "id": "s5_989",
+    "word": "filter",
+    "severity": "bad",
+    "issue_type": "B.熟語分割誤読(なか→じゅう)",
+    "fragment": "台所《だいどころ》中《なか》",
+    "context": "立ち上る湯気の香りが、台所中に焙煎された豆の香り",
+    "correct": "台所中《だいどころじゅう》",
+    "comment": "「中」は範囲の意で「じゅう」(=全体)。「なか」だと「内部」となり文脈不適"
+  },
+  {
+    "id": "s6_0945",
+    "word": "helicopter",
+    "severity": "bad",
+    "issue_type": "B.熟語分割誤読(うえそら→じょうくう)",
+    "fragment": "山頂《さんちょう》上《うえ》空《そら》",
+    "context": "救助のhelicopterが山頂上空で旋回し",
+    "correct": "山頂上空《さんちょうじょうくう》",
+    "comment": "「上空」は「じょうくう」。「うえそら」は誤読"
+  },
+  {
+    "id": "s5_913",
+    "word": "accompany",
+    "severity": "bad",
+    "issue_type": "B.熟語分割誤読(こうそら→こうくう)",
+    "fragment": "航《こう》空《そら》会社",
+    "context": "保護者がaccompanyする必要があると航空会社の規則",
+    "correct": "航空会社《こうくうがいしゃ》",
+    "comment": "「航空」は「こうくう」。「こうそら」は誤読"
+  },
+  {
+    "id": "s6_1909",
+    "word": "signify",
+    "severity": "bad",
+    "issue_type": "I.連濁不在(よるそら→よぞら)",
+    "fragment": "夜《よる》空《そら》",
+    "context": "夜空に浮かぶ満月は古来",
+    "correct": "夜空《よぞら》",
+    "comment": "「夜空」は連濁で「よぞら」"
+  },
+  {
+    "id": "s6_1843",
+    "word": "skyward",
+    "severity": "bad",
+    "issue_type": "I.連濁不在(よるそら→よぞら)",
+    "fragment": "夜《よる》空《そら》",
+    "context": "打ち上げ花火がskyward駆け上がり、夜空に大輪",
+    "correct": "夜空《よぞら》",
+    "comment": "同上"
+  },
+  {
+    "id": "s6_2384",
+    "word": "wreck",
+    "severity": "bad",
+    "issue_type": "I.連濁不在(かくれいえ→かくれが)",
+    "fragment": "隠《かく》れ家《いえ》",
+    "context": "多くの海洋生物の隠れ家として独自の生態系",
+    "correct": "隠れ家《かくれが》",
+    "comment": "「隠れ家」は「かくれが」と読む慣用語"
+  },
+  {
+    "id": "s6_1696",
+    "word": "radium",
+    "severity": "bad",
+    "issue_type": "I.連濁不在(ずよ→づよ)",
+    "fragment": "粘り強《ねばりずよ》さ",
+    "context": "科学者の粘り強さを伝える教材として",
+    "correct": "粘り強《ねばりづよ》さ",
+    "comment": "「粘り強い」は「ねばりづよい」"
+  },
+  {
+    "id": "s6_2226",
+    "word": "undertake",
+    "severity": "bad",
+    "issue_type": "I.連濁不在(ずよ→づよ)",
+    "fragment": "｜粘り強《ねばりずよ》く",
+    "context": "複数の現地機関と粘り強く交渉を重ねていった",
+    "correct": "粘り強《ねばりづよ》く",
+    "comment": "同上"
+  },
+  {
+    "id": "s6_1296",
+    "word": "missile",
+    "severity": "bad",
+    "issue_type": "I.連濁不在(ずよ→づよ)",
+    "fragment": "｜粘り強《ねばりずよ》く",
+    "context": "歯止めをかける枠組み作りを粘り強く進めている",
+    "correct": "粘り強《ねばりづよ》く",
+    "comment": "同上"
+  },
+  {
+    "id": "s6_1600",
+    "word": "predicament",
+    "severity": "bad",
+    "issue_type": "I.連濁不在(ずよ→づよ)",
+    "fragment": "｜粘り強《ねばりずよ》く",
+    "context": "取引銀行と地元自治体の両方に粘り強く相談",
+    "correct": "粘り強《ねばりづよ》く",
+    "comment": "同上"
+  },
+  {
+    "id": "s6_1427",
+    "word": "organizer",
+    "severity": "bad",
+    "issue_type": "I.連濁不在(ずよ→づよ)",
+    "fragment": "｜粘り強《ねばりずよ》く",
+    "context": "会議のorganizerはホテルとの交渉を粘り強く",
+    "correct": "粘り強《ねばりづよ》く",
+    "comment": "同上"
+  },
+  {
+    "id": "s6_0925",
+    "word": "handicap",
+    "severity": "bad",
+    "issue_type": "I.連濁不在(ずよ→づよ)",
+    "fragment": "｜粘り強《ねばりずよ》さ",
+    "context": "綿密な準備と粘り強さで遅れを少しずつ取り戻し",
+    "correct": "粘り強《ねばりづよ》さ",
+    "comment": "同上"
+  },
+  {
+    "id": "s5_525",
+    "word": "local",
+    "severity": "bad",
+    "issue_type": "F.「人」誤読(にん→ひと)",
+    "fragment": "人《にん》",
+    "context": "<local>の人だけが知る隠れた名店",
+    "correct": "人《ひと》",
+    "comment": "文中の単独「人」は「ひと」。「にん」は助数詞用法のみ"
+  },
+  {
+    "id": "s5_2361",
+    "word": "sex",
+    "severity": "bad",
+    "issue_type": "F.「人」誤読(にん→ひと)",
+    "fragment": "人《にん》",
+    "context": "自分らしさを尊重したい人にも安心して書類を提出",
+    "correct": "人《ひと》",
+    "comment": "同上"
+  },
+  {
+    "id": "s5_1160",
+    "word": "caution",
+    "severity": "bad",
+    "issue_type": "F.「人」誤読(にん→ひと)",
+    "fragment": "人《にん》",
+    "context": "ヘルメット未着用の人は中に入れない決まりだ",
+    "correct": "人《ひと》",
+    "comment": "同上"
+  },
+  {
+    "id": "s5_168",
+    "word": "aisle",
+    "severity": "bad",
+    "issue_type": "F.「人」誤読(にん→ひと)",
+    "fragment": "人《にん》",
+    "context": "トイレに立つとき、隣の人に気を使わなくて済む",
+    "correct": "人《ひと》",
+    "comment": "同上"
+  },
+  {
+    "id": "s5_1030",
+    "word": "aware",
+    "severity": "bad",
+    "issue_type": "F.「人」誤読(にん→ひと)",
+    "fragment": "人《にん》",
+    "context": "周囲の音にもawareでいる人は、危険を察する",
+    "correct": "人《ひと》",
+    "comment": "同上"
+  },
+  {
+    "id": "s5_746",
+    "word": "seek",
+    "severity": "bad",
+    "issue_type": "F.「人」誤読(にん→ひと)",
+    "fragment": "大切な人《にん》",
+    "context": "3年間で本当に大切な人が3人できれば十分",
+    "correct": "大切な人《ひと》",
+    "comment": "「大切な人」の「人」は「ひと」"
+  },
+  {
+    "id": "s5_1670",
+    "word": "annoy",
+    "severity": "bad",
+    "issue_type": "F.「人」誤読(にん→ひと)",
+    "fragment": "人《にん》",
+    "context": "小さいのに人を最大限にannoyする",
+    "correct": "人《ひと》",
+    "comment": "文中の「人」は「ひと」"
+  },
+  {
+    "id": "s5_1894",
+    "word": "magnificent",
+    "severity": "bad",
+    "issue_type": "F.「人」誤読(にん→ひと)",
+    "fragment": "訪れた人《にん》",
+    "context": "訪れた人は誰もがしばし言葉を失い",
+    "correct": "訪れた人《ひと》",
+    "comment": "「訪れた人」の「人」は「ひと」"
+  },
+  {
+    "id": "s5_1973",
+    "word": "mourn",
+    "severity": "bad",
+    "issue_type": "F.「人」誤読(にん→ひと)",
+    "fragment": "親しい人《にん》",
+    "context": "親しい人の旅立ちをmournするため",
+    "correct": "親しい人《ひと》",
+    "comment": "「親しい人」の「人」は「ひと」"
+  },
+  {
+    "id": "s5_570",
+    "word": "nowadays",
+    "severity": "bad",
+    "issue_type": "F.「人」誤読(にん→ひと)",
+    "fragment": "道を調べる人《にん》",
+    "context": "スマホの地図アプリを開いて道を調べる人がほとんど",
+    "correct": "道を調べる人《ひと》",
+    "comment": "文中の「人」は「ひと」"
+  },
+  {
+    "id": "s5_1606",
+    "word": "frozen",
+    "severity": "bad",
+    "issue_type": "F.「人」誤読(にん→ひと)",
+    "fragment": "地元の人《にん》",
+    "context": "地元の人は氷の厚さを慎重に確かめてから",
+    "correct": "地元の人《ひと》",
+    "comment": "「地元の人」の「人」は「ひと」"
+  },
+  {
+    "id": "s5_826",
+    "word": "teenage",
+    "severity": "bad",
+    "issue_type": "F.「人」誤読(にん→ひと)",
+    "fragment": "変わる人《にん》",
+    "context": "半年でひと回り変わる人も珍しくない",
+    "correct": "変わる人《ひと》",
+    "comment": "文中の「人」は「ひと」"
+  },
+  {
+    "id": "s6_0104",
+    "word": "arrogant",
+    "severity": "bad",
+    "issue_type": "F.「人」誤読(にん→ひと)",
+    "fragment": "人《にん》の話",
+    "context": "まず人の話に耳を傾ける姿勢",
+    "correct": "人《ひと》の話",
+    "comment": "「人の話」の「人」は「ひと」"
+  },
+  {
+    "id": "s6_1014",
+    "word": "impartial",
+    "severity": "bad",
+    "issue_type": "E.「者」誤読(もの→しゃ)",
+    "fragment": "出品《しゅっぴん》者《もの》",
+    "context": "出品者の名前を伏せた状態で議論を進めた",
+    "correct": "出品者《しゅっぴんしゃ》",
+    "comment": "「出品者」は「しゅっぴんしゃ」"
+  },
+  {
+    "id": "s6_1644",
+    "word": "prohibit",
+    "severity": "bad",
+    "issue_type": "E.「者」誤読(もの→しゃ)",
+    "fragment": "来館《らいかん》者《もの》",
+    "context": "来館者は静かに展示と向き合う時間を保たれた",
+    "correct": "来館者《らいかんしゃ》",
+    "comment": "「来館者」は「らいかんしゃ」"
+  },
+  {
+    "id": "s6_0207",
+    "word": "bomber",
+    "severity": "bad",
+    "issue_type": "E.「者」誤読(もの→しゃ)",
+    "fragment": "来館《らいかん》者《もの》",
+    "context": "来館者は過去の戦争の傷跡を改めて静かに見つめ",
+    "correct": "来館者《らいかんしゃ》",
+    "comment": "同上"
+  },
+  {
+    "id": "s5_133",
+    "word": "glorious",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(めい→な)",
+    "fragment": "彼の名《めい》を呼んだ",
+    "context": "家族は涙ながらに彼の名を呼んだ",
+    "correct": "彼の名《な》",
+    "comment": "「名を呼ぶ」の「名」は「な」"
+  },
+  {
+    "id": "s6_2202",
+    "word": "tyrant",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(めい→な)",
+    "fragment": "名《めい》を残す",
+    "context": "歴史の教科書に名を残すtyrantたちは",
+    "correct": "名《な》を残す",
+    "comment": "「名を残す」の「名」は「な」"
+  },
+  {
+    "id": "s6_0754",
+    "word": "explosive",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(めい→な)",
+    "fragment": "全国に名《めい》を知られる",
+    "context": "無名の歌い手が一夜で全国に名を知られる",
+    "correct": "名《な》を知られる",
+    "comment": "「名を知られる」は「なをしられる」"
+  },
+  {
+    "id": "s6_0165",
+    "word": "battlefield",
+    "severity": "bad",
+    "issue_type": "J.特殊語誤読(とーと→とうと)",
+    "fragment": "尊《とーと》さ",
+    "context": "平和の尊さに改めて思いを馳せた",
+    "correct": "尊《とうと》さ or 尊《たっと》さ",
+    "comment": "「尊さ」は「とうとさ」or「たっとさ」。「とーと」は長音記号で表記不適切"
+  },
+  {
+    "id": "s5_2219",
+    "word": "qualify",
+    "severity": "bad",
+    "issue_type": "J.熟語誤読(さむらい→し)",
+    "fragment": "福祉《ふくし》士《さむらい》",
+    "context": "念願の介護福祉士として地元の施設で働き始めた",
+    "correct": "福祉士《ふくしし》",
+    "comment": "「介護福祉士」は「ふくしし」。「さむらい」は完全な誤読"
+  },
+  {
+    "id": "s5_2080",
+    "word": "painful",
+    "severity": "bad",
+    "issue_type": "D.「後」誤読(のち→ご)",
+    "fragment": "1週間《しゅうかん》後《のち》",
+    "context": "1週間後には軽い練習に戻れた",
+    "correct": "1週間後《いっしゅうかんご》",
+    "comment": "「1週間後」は「いっしゅうかんご」"
+  },
+  {
+    "id": "s5_050",
+    "word": "exercise",
+    "severity": "bad",
+    "issue_type": "D.「後」誤読(のち→ご)",
+    "fragment": "夕食《ゆうしょく》後《のち》",
+    "context": "父は、夕食後に近所を早歩きで2周している",
+    "correct": "夕食後《ゆうしょくご》",
+    "comment": "「夕食後」は「ゆうしょくご」"
+  },
+  {
+    "id": "s5_050",
+    "word": "exercise",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(そう→はや)",
+    "fragment": "早《そう》歩《ある》き",
+    "context": "夕食後に近所を早歩きで2周",
+    "correct": "早歩《はやある》き",
+    "comment": "「早歩き」は「はやあるき」"
+  },
+  {
+    "id": "s5_050",
+    "word": "exercise",
+    "severity": "bad",
+    "issue_type": "C.助数詞誤読(まわ→しゅう)",
+    "fragment": "2周《まわ》",
+    "context": "早歩きで2周している",
+    "correct": "2周《しゅう》",
+    "comment": "「2周(まわる)」は通常「にしゅう」。「まわ」は単独「周る」用"
+  },
+  {
+    "id": "s6_2238",
+    "word": "unauthorised",
+    "severity": "bad",
+    "issue_type": "J.複合動詞誤読(たちはいり→たちいり)",
+    "fragment": "立《た》ち入《はい》り禁止",
+    "context": "立ち入り禁止区域への<unauthorised>な侵入",
+    "correct": "立《た》ち入《い》り",
+    "comment": "「立ち入り禁止」は「たちいり」。「たちはいり」は誤読"
+  },
+  {
+    "id": "s5_2076",
+    "word": "owing",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(きん→かね)",
+    "fragment": "祖父に金《きん》",
+    "context": "祖父に金をowing状態のまま",
+    "correct": "祖父に金《かね》",
+    "comment": "借りた「お金」は「かね」。「きん」は金属/金額の意"
+  },
+  {
+    "id": "s5_2076",
+    "word": "owing",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(ねん→とし)",
+    "fragment": "年《ねん》を越《こ》せず",
+    "context": "安心して年を越せず、彼は秋の賞与で",
+    "correct": "年《とし》を越せず",
+    "comment": "「年を越す」の「年」は「とし」"
+  },
+  {
+    "id": "s6_2375",
+    "word": "worldview",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(あとねん→こうねん)",
+    "fragment": "後《あと》年《ねん》",
+    "context": "彼の後年の研究の方向性に大きな影響",
+    "correct": "後年《こうねん》",
+    "comment": "「後年」は「こうねん」(=後の年代)。「あとねん」は誤読"
+  },
+  {
+    "id": "s5_897",
+    "word": "absence",
+    "severity": "bad",
+    "issue_type": "G.「日」誤読(にち→ひ・みっか)",
+    "fragment": "3日《にち》続いた日《にち》",
+    "context": "母のabsenceが3日続いた日、私は朝食と弁当",
+    "correct": "3日《みっか》、その日《ひ》",
+    "comment": "「3日続いた」は「みっか」、続く「日」は「ひ」"
+  },
+  {
+    "id": "s5_1843",
+    "word": "lately",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(がつ→つき)",
+    "fragment": "月《がつ》に3冊",
+    "context": "私は読書の時間を意識して確保し、月に3冊を目標",
+    "correct": "月《つき》に3冊",
+    "comment": "「月に3冊」は「つきに」。「がつ」は「○月(month名)」用"
+  },
+  {
+    "id": "s5_1289",
+    "word": "crow",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(まちなみみ)",
+    "fragment": "街並《まちなみ》み",
+    "context": "低い鳴き声で街並みに1日の終わりを告げていた",
+    "correct": "街並み《まちなみ》",
+    "comment": "「街並み」は「まちなみ」。送り仮名「み」と《まちなみ》が二重に「みみ」になる"
+  },
+  {
+    "id": "s5_1685",
+    "word": "harbor",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(まちなみみ)",
+    "fragment": "街並《まちなみ》み",
+    "context": "対岸の街並みと合わせて、写真におさめたくなる",
+    "correct": "街並み《まちなみ》",
+    "comment": "同上"
+  },
+  {
+    "id": "s6_0863",
+    "word": "gaudy",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(まちなみみ)",
+    "fragment": "街並《まちなみ》み",
+    "context": "街並みの落ち着いた色調とは噛み合わなかった",
+    "correct": "街並み《まちなみ》",
+    "comment": "同上"
+  },
+  {
+    "id": "s5_2431",
+    "word": "timetable",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(ずく→すく)",
+    "fragment": "少《ずく》なさ",
+    "context": "空き時間の少なさに気づく",
+    "correct": "少《すく》なさ",
+    "comment": "「少なさ」は「すくなさ」"
+  },
+  {
+    "id": "s5_251",
+    "word": "breeze",
+    "severity": "bad",
+    "issue_type": "J.動詞活用誤読(ほでり→ほて)",
+    "fragment": "火照《ほでり》った",
+    "context": "火照った肌をやさしく冷ましてくれた",
+    "correct": "火照《ほて》った",
+    "comment": "「火照った」は「ほてった」。「ほでりった」は明らかな誤読"
+  },
+  {
+    "id": "s6_2169",
+    "word": "tread",
+    "severity": "bad",
+    "issue_type": "J.特殊語誤読(し→ほこら)",
+    "fragment": "祠《し》",
+    "context": "木立の奥に小さな祠が静かに姿を現してきた",
+    "correct": "祠《ほこら》",
+    "comment": "「祠」は「ほこら」と読む"
+  },
+  {
+    "id": "s6_1384",
+    "word": "northward",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(ぬる→あたた)",
+    "fragment": "温《ぬる》かな",
+    "context": "温かな湿地で羽を休めていた",
+    "correct": "温《あたた》かな",
+    "comment": "「温かな」は「あたたかな」。「ぬるい」は別の意"
+  },
+  {
+    "id": "s5_1830",
+    "word": "kettle",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(ぬる→あたた)",
+    "fragment": "温《ぬる》かみ",
+    "context": "取っ手が温かみを帯び、お茶を入れるたびに",
+    "correct": "温《あたた》かみ",
+    "comment": "「温かみ」は「あたたかみ」"
+  },
+  {
+    "id": "s6_0448",
+    "word": "craftsman",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(ぬる→あたた)",
+    "fragment": "温《ぬる》かみ",
+    "context": "機械にはまねできない温かみを持ち",
+    "correct": "温《あたた》かみ",
+    "comment": "同上"
+  },
+  {
+    "id": "s6_0095",
+    "word": "appreciative",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(ぬる→あたた)",
+    "fragment": "温《ぬる》かな手紙",
+    "context": "舞台後に温かな手紙を添えて応援を贈った",
+    "correct": "温《あたた》かな手紙",
+    "comment": "「温かな手紙」は「あたたかな」"
+  },
+  {
+    "id": "s6_1352",
+    "word": "naval",
+    "severity": "bad",
+    "issue_type": "A.動詞活用誤読(ものがたり→ものがた)",
+    "fragment": "物語《ものがたり》る博物館",
+    "context": "navalな歴史を物語る博物館があり",
+    "correct": "物語《ものがた》る",
+    "comment": "動詞「ものがたる」は連体形「ものがた・る」。「ものがたり」は名詞形"
+  },
+  {
+    "id": "s6_0517",
+    "word": "delegate",
+    "severity": "bad",
+    "issue_type": "A.動詞活用誤読(おも→かさ)",
+    "fragment": "議論を重《おも》ね",
+    "context": "立場の違いを越えて議論を重ね、共通の方針案",
+    "correct": "議論を重《かさ》ね",
+    "comment": "「議論を重ねる」は「かさねる」"
+  },
+  {
+    "id": "s5_1590",
+    "word": "forth",
+    "severity": "bad",
+    "issue_type": "A.動詞活用誤読(おも→かさ)",
+    "fragment": "話し合いを重《おも》ね",
+    "context": "back and forthに話し合いを重ね",
+    "correct": "話し合いを重《かさ》ね",
+    "comment": "同上"
+  },
+  {
+    "id": "s6_2002",
+    "word": "starving",
+    "severity": "bad",
+    "issue_type": "J.助数詞誤読(ふたりまえ→ににんまえ)",
+    "fragment": "二人《ふたり》前《まえ》",
+    "context": "二人前の定食をぺろりと平らげた",
+    "correct": "二人前《ににんまえ》",
+    "comment": "「二人前」(料理の量)は「ににんまえ」"
+  },
+  {
+    "id": "s5_229",
+    "word": "beginning",
+    "severity": "bad",
+    "issue_type": "C.助数詞誤読(い→ぎょう)",
+    "fragment": "1行《い》",
+    "context": "<beginning>の1行から事件が起きていて",
+    "correct": "1行《ぎょう》",
+    "comment": "「1行」(=テキストの1行)は「いちぎょう」"
+  },
+  {
+    "id": "s5_1287",
+    "word": "crossing",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(ま→じ)",
+    "fragment": "登校時《とうこうじ》間《ま》",
+    "context": "学校前のcrossingは登校時間に交通量が増えるため",
+    "correct": "登校時間《とうこうじかん》",
+    "comment": "「登校時間」は「とうこうじかん」"
+  },
+  {
+    "id": "s6_1095",
+    "word": "instruct",
+    "severity": "bad",
+    "issue_type": "J.助数詞誤読(いって→いち)",
+    "fragment": "一手《いって》順",
+    "context": "先輩は一手順ずつ実演し、要点を声に出して",
+    "correct": "一手順《いちてじゅん》",
+    "comment": "「一手順」は「いちてじゅん」"
+  },
+  {
+    "id": "s6_2127",
+    "word": "thrilled",
+    "severity": "bad",
+    "issue_type": "A.動詞活用誤読(だんん→はず)",
+    "fragment": "弾《だん》んでいた",
+    "context": "声まで明らかに弾んでいた",
+    "correct": "弾《はず》んでいた",
+    "comment": "「弾む」は「はずむ」。「だんん」は明らかに誤入力"
+  },
+  {
+    "id": "s5_1409",
+    "word": "distribute",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(つが→ばん)",
+    "fragment": "私の番《つが》",
+    "context": "係は週ごとに替わり、私の番はクラス全員に手早く配る",
+    "correct": "私の番《ばん》",
+    "comment": "「私の番」は「わたしのばん」"
+  },
+  {
+    "id": "s5_1069",
+    "word": "bet",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(つい→たい)",
+    "fragment": "0対《つい》0",
+    "context": "結果は予想通り0対0だった",
+    "correct": "0対《たい》0",
+    "comment": "「0対0」は「ゼロたいゼロ」(対戦の対)"
+  },
+  {
+    "id": "s5_2109",
+    "word": "persuade",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(おもて→ひょう)",
+    "fragment": "比較を表《おもて》",
+    "context": "電気代の比較を表にまとめ、丁寧に説明した",
+    "correct": "比較を表《ひょう》",
+    "comment": "「比較を表(=table)にまとめる」の「表」は「ひょう」"
+  },
+  {
+    "id": "s6_1626",
+    "word": "priceless",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(ひたい→がく)",
+    "fragment": "額《ひたい》に入れて",
+    "context": "額に入れて居間に飾られていた",
+    "correct": "額《がく》に入れて",
+    "comment": "「額に入れる」の「額」は「がく」(額縁)。「ひたい」は身体部位"
+  },
+  {
+    "id": "s6_0651",
+    "word": "economist",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(けん→み)",
+    "fragment": "見《けん》通《とお》し",
+    "context": "ある著名なeconomistが物価の見通しを語る",
+    "correct": "見通《みとお》し",
+    "comment": "「見通し」は「みとおし」。「けんとおし」は誤読"
+  },
+  {
+    "id": "s6_1773",
+    "word": "reprove",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(やから→はい)",
+    "fragment": "後《あと》輩《やから》",
+    "context": "失礼な発言をした後輩を厳しくreproveした先輩",
+    "correct": "後輩《こうはい》",
+    "comment": "「後輩」は「こうはい」。「あとやから」「やから」は完全な誤読"
+  },
+  {
+    "id": "s6_0610",
+    "word": "donkey",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(か→に)",
+    "fragment": "山道の荷《か》",
+    "context": "山道の荷をdonkeyに運ばせる風景",
+    "correct": "山道の荷《に》",
+    "comment": "「荷」は「に」(=荷物)"
+  },
+  {
+    "id": "s6_1155",
+    "word": "knot",
+    "severity": "bad",
+    "issue_type": "J.漢字読み誤読(か→に)",
+    "fragment": "荷《か》が外れない",
+    "context": "嵐の波しぶきの中でも荷が外れないように固定",
+    "correct": "荷《に》が外れない",
+    "comment": "同上"
+  },
+  {
+    "id": "s5_995",
+    "word": "appoint",
+    "severity": "warn",
+    "issue_type": "G.「日」誤読(にち→ひ)",
+    "fragment": "された日《にち》",
+    "context": "彼女が<appoint>された日、部室の壁には祝福",
+    "correct": "された日《ひ》",
+    "comment": "「された日」は文脈上「その日(ひ)」"
+  },
+  {
+    "id": "s6_1585",
+    "word": "porch",
+    "severity": "bad",
+    "issue_type": "G.「日」誤読(ついたち→いちにち)",
+    "fragment": "一日《ついたち》",
+    "context": "家族はそれぞれの一日を静かに語り合う時間",
+    "correct": "一日《いちにち》",
+    "comment": "「それぞれの一日」は「いちにち」。「ついたち」は月の1日"
+  },
+  {
+    "id": "s5_595",
+    "word": "pear",
+    "severity": "warn",
+    "issue_type": "J.特殊語(にじっせいき)",
+    "fragment": "二十世紀《にじゅっせいき》",
+    "context": "親戚から二十世紀<pear>がひと箱届く",
+    "correct": "二十世紀《にじっせいき》",
+    "comment": "梨の品種「二十世紀」は伝統的に「にじっせいき」読み。許容範囲だが品種名としては要検討"
+  },
+  {
+    "id": "s6_0102",
+    "word": "armful",
+    "severity": "bad",
+    "issue_type": "B.熟語分割誤読(はなびん→かびん)",
+    "fragment": "花《はな》瓶《びん》",
+    "context": "テーブルに大きな花瓶を3つ並べ",
+    "correct": "花瓶《かびん》",
+    "comment": "「花瓶」は「かびん」"
+  },
+  {
+    "id": "s6_0476",
+    "word": "cybercafé",
+    "severity": "bad",
+    "issue_type": "A.動詞訓読み誤読(あか→とも)",
+    "fragment": "明かりが灯《あか》り",
+    "context": "学生街のcybercaféは深夜まで明かりが灯り",
+    "correct": "明かりが灯《とも》り",
+    "comment": "「灯る」は「ともる」。「あかる」は辞書になく誤読"
+  },
+  {
+    "id": "s5_1030",
+    "word": "aware",
+    "severity": "warn",
+    "issue_type": "J.漢字読み誤読(りき→ちから)",
+    "fragment": "力《りき》",
+    "context": "危険を察する力も鋭く、登山では先頭",
+    "correct": "力《ちから》",
+    "comment": "単独の「力」は「ちから」"
+  },
+  {
+    "id": "s6_0945",
+    "word": "helicopter",
+    "severity": "warn",
+    "issue_type": "分割語",
+    "fragment": "要《よう》救助者《きゅうじょしゃ》",
+    "context": "要救助者を慎重に吊り上げて麓の病院へと",
+    "correct": "要救助者《ようきゅうじょしゃ》",
+    "comment": "分割でも読みOK、まとめ表記が望ましい"
+  }
+]

@@ -1,0 +1,156 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H053.md",
+  "audio": "高校生編/suno_ready/generated/audio/H053/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 94.46,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9941,
+  "expected_words": 169,
+  "transcribed_words": 168,
+  "matched_words": 167,
+  "coverage": 0.9882,
+  "precision": 0.994,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 168,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 9,
+      "length": 1,
+      "words": [
+        "one"
+      ]
+    },
+    {
+      "start": 11,
+      "length": 1,
+      "words": [
+        "ten"
+      ]
+    }
+  ],
+  "replacement_count": 0,
+  "replacement_spans": [],
+  "insertion_spans": [
+    {
+      "expected_start": 141,
+      "actual_start": 139,
+      "expected": [],
+      "actual": [
+        "life"
+      ],
+      "actual_confidence": 0.8091
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 9,
+      "actual_start": 9,
+      "expected": [
+        "one"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 11,
+      "actual_start": 10,
+      "expected": [
+        "ten"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "At the start of the 20th century, only about 1 in 10 of the world's population lived in an urban area. Today, more than half live in cities. Urbanization has concentrated opportunities for jobs, education, and medical care. But it has also brought serious problems Traffic congestion, the high price of housing And air pollution are among them Tokyo, New York, London, Shanghai Each of these major cities of the world faces The limits of population density and infrastructure In recent years, each city has begun to attempt a more sustainable form of urban planning. They are creating more roads for pedestrians and cyclists, restoring green parks and increasing investment in public transportation. At the same time, people have started to move from city centers to the suburbs. With the spread of remote work, the distinction between urban and rural life Life has become less rigid, cities will continue to change their shape What matters is how we design a space in which everyone can live with peace of mind",
+  "segments": [
+    {
+      "start": 4.06,
+      "end": 10.92,
+      "text": "At the start of the 20th century, only about 1 in 10 of the world's population"
+    },
+    {
+      "start": 10.92,
+      "end": 16.34,
+      "text": "lived in an urban area. Today, more than half live in cities."
+    },
+    {
+      "start": 21.08,
+      "end": 26.22,
+      "text": "Urbanization has concentrated opportunities for jobs, education, and medical care."
+    },
+    {
+      "start": 26.22,
+      "end": 29.96,
+      "text": "But it has also brought serious problems"
+    },
+    {
+      "start": 30.88,
+      "end": 34.42,
+      "text": "Traffic congestion, the high price of housing"
+    },
+    {
+      "start": 34.42,
+      "end": 37.06,
+      "text": "And air pollution are among them"
+    },
+    {
+      "start": 37.06,
+      "end": 40.12,
+      "text": "Tokyo, New York, London, Shanghai"
+    },
+    {
+      "start": 41.84,
+      "end": 45.06,
+      "text": "Each of these major cities of the world faces"
+    },
+    {
+      "start": 45.06,
+      "end": 48.66,
+      "text": "The limits of population density and infrastructure"
+    },
+    {
+      "start": 48.66,
+      "end": 53.1,
+      "text": "In recent years, each city has begun to attempt"
+    },
+    {
+      "start": 53.1,
+      "end": 56.3,
+      "text": "a more sustainable form of urban planning."
+    },
+    {
+      "start": 57.66,
+      "end": 61.4,
+      "text": "They are creating more roads for pedestrians and cyclists,"
+    },
+    {
+      "start": 61.48,
+      "end": 67.08,
+      "text": "restoring green parks and increasing investment in public transportation."
+    },
+    {
+      "start": 68.62,
+      "end": 75.16,
+      "text": "At the same time, people have started to move from city centers to the suburbs."
+    },
+    {
+      "start": 76.86,
+      "end": 81.62,
+      "text": "With the spread of remote work, the distinction between urban and rural life"
+    },
+    {
+      "start": 81.62,
+      "end": 86.52,
+      "text": "Life has become less rigid, cities will continue to change their shape"
+    },
+    {
+      "start": 88.18,
+      "end": 94.46,
+      "text": "What matters is how we design a space in which everyone can live with peace of mind"
+    }
+  ]
+}

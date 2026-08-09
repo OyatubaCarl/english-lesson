@@ -1,0 +1,19 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Hook,Hiragino Sans,76,&H00FFFFFF,&H00FFFFFF,&H001B14D6,&H64000000,-1,0,0,0,100,100,1,0,1,7,3,8,60,60,60,1
+Style: CTA,Hiragino Sans,58,&H0020140B,&H0020140B,&H00FFFFFF,&H64000000,-1,0,0,0,100,100,1,0,1,5,2,2,60,60,90,1
+Style: Count,Hiragino Sans,300,&H001B14D6,&H001B14D6,&H00FFFFFF,&H64000000,-1,0,0,0,100,100,1,0,1,10,6,5,0,0,0,1
+Style: Correct,Hiragino Sans,120,&H00528A2F,&H00528A2F,&H00FFFFFF,&H64000000,-1,0,0,0,100,100,1,0,1,9,5,8,0,0,120,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:00.10,0:00:08.79,Hook,,0,0,0,,超・難単語を覚える裏技
+Dialogue: 0,0:00:02.20,0:00:11.02,CTA,,0,0,0,,答えがわかったら コメントで！
+Dialogue: 0,0:00:11.02,0:00:12.02,Count,,0,0,0,,{\pos(540,900)\fad(120,150)\t(\fscx115\fscy115)}3
+Dialogue: 0,0:00:12.02,0:00:13.02,Count,,0,0,0,,{\pos(540,900)\fad(120,150)\t(\fscx115\fscy115)}2
+Dialogue: 0,0:00:13.02,0:00:14.02,Count,,0,0,0,,{\pos(540,900)\fad(120,150)\t(\fscx115\fscy115)}1
+Dialogue: 0,0:00:14.27,0:00:18.17,Correct,,0,0,0,,{\pos(540,150)\fad(150,150)}正解！

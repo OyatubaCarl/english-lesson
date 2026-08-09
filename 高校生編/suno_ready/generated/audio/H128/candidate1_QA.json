@@ -1,0 +1,315 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H128.md",
+  "audio": "高校生編/suno_ready/generated/audio/H128/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 147.4,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 238,
+  "transcribed_words": 238,
+  "matched_words": 228,
+  "coverage": 0.958,
+  "precision": 0.958,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 237,
+  "longest_missing_run": 4,
+  "largest_missing_runs": [
+    {
+      "start": 225,
+      "length": 4,
+      "words": [
+        "technological",
+        "progress",
+        "is",
+        "inevitable"
+      ]
+    },
+    {
+      "start": 138,
+      "length": 2,
+      "words": [
+        "than",
+        "a"
+      ]
+    },
+    {
+      "start": 30,
+      "length": 1,
+      "words": [
+        "but"
+      ]
+    },
+    {
+      "start": 47,
+      "length": 1,
+      "words": [
+        "judgment"
+      ]
+    },
+    {
+      "start": 62,
+      "length": 1,
+      "words": [
+        "maneuver"
+      ]
+    },
+    {
+      "start": 164,
+      "length": 1,
+      "words": [
+        "carmaker"
+      ]
+    }
+  ],
+  "replacement_count": 5,
+  "replacement_spans": [
+    {
+      "expected_start": 30,
+      "actual_start": 31,
+      "expected": [
+        "but"
+      ],
+      "actual": [
+        "the"
+      ],
+      "actual_confidence": 0.2263,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 47,
+      "actual_start": 48,
+      "expected": [
+        "judgment"
+      ],
+      "actual": [
+        "judgement"
+      ],
+      "actual_confidence": 0.5543,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 62,
+      "actual_start": 63,
+      "expected": [
+        "maneuver"
+      ],
+      "actual": [
+        "manoeuvre"
+      ],
+      "actual_confidence": 0.9023,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 138,
+      "actual_start": 141,
+      "expected": [
+        "than",
+        "a"
+      ],
+      "actual": [
+        "then",
+        "the"
+      ],
+      "actual_confidence": 0.5018,
+      "substitution_words": 2,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 164,
+      "actual_start": 167,
+      "expected": [
+        "carmaker"
+      ],
+      "actual": [
+        "car",
+        "maker"
+      ],
+      "actual_confidence": 0.9107,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 7,
+      "actual_start": 7,
+      "expected": [],
+      "actual": [
+        "an"
+      ],
+      "actual_confidence": 0.5289
+    },
+    {
+      "expected_start": 108,
+      "actual_start": 109,
+      "expected": [],
+      "actual": [
+        "two"
+      ],
+      "actual_confidence": 0.4652
+    },
+    {
+      "expected_start": 128,
+      "actual_start": 130,
+      "expected": [],
+      "actual": [
+        "five"
+      ],
+      "actual_confidence": 0.8288
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 225,
+      "actual_start": 229,
+      "expected": [
+        "technological",
+        "progress",
+        "is",
+        "inevitable"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "A driver's license is a symbol of an adult status in many countries. The freedom to drive one's own car and go anywhere. It is an aspiration for many young people. The driving comes with great responsibility A car is a convenient tool But with a single wrong judgement It can become a weapon that takes a life The result of a wrong manoeuvre can be fatal In recent years self-driving technology has advanced rapidly The age is coming when AI handles many driving tasks And the human operator is placed in a passive position There are five levels of autonomous driving Currently, most cars are around level two They are at the stage of assisting some functions Such as lane keeping and automatic braking Fully autonomous driving level five is still under development Whether AI can make smarter decisions Then the human in complex traffic and traffic jams is still open to debate In the case of an accident, who is responsible? The driver, the car maker or the AI developer? Current law has not caught up with this new phase If autonomous driving spreads, the number of traffic deaths is expected to decrease Accidents caused by human inattention, fatigue or drunk driving could be reduced Although AI introduces risks of its own But at the same time, many taxi and truck drivers may lose their jobs But we must keep thinking about how society adapts",
+  "segments": [
+    {
+      "start": 10.96,
+      "end": 16.8,
+      "text": "A driver's license is a symbol of an adult status in many countries."
+    },
+    {
+      "start": 18.0,
+      "end": 21.16,
+      "text": "The freedom to drive one's own car and go anywhere."
+    },
+    {
+      "start": 21.72,
+      "end": 25.42,
+      "text": "It is an aspiration for many young people."
+    },
+    {
+      "start": 25.42,
+      "end": 28.6,
+      "text": "The driving comes with great responsibility"
+    },
+    {
+      "start": 29.42,
+      "end": 32.32,
+      "text": "A car is a convenient tool"
+    },
+    {
+      "start": 32.32,
+      "end": 34.14,
+      "text": "But with a single wrong judgement"
+    },
+    {
+      "start": 34.14,
+      "end": 36.9,
+      "text": "It can become a weapon that takes a life"
+    },
+    {
+      "start": 37.42,
+      "end": 41.34,
+      "text": "The result of a wrong manoeuvre can be fatal"
+    },
+    {
+      "start": 41.34,
+      "end": 48.08,
+      "text": "In recent years self-driving technology has advanced rapidly"
+    },
+    {
+      "start": 49.44,
+      "end": 53.26,
+      "text": "The age is coming when AI handles many driving tasks"
+    },
+    {
+      "start": 53.26,
+      "end": 57.86,
+      "text": "And the human operator is placed in a passive position"
+    },
+    {
+      "start": 57.86,
+      "end": 62.32,
+      "text": "There are five levels of autonomous driving"
+    },
+    {
+      "start": 62.32,
+      "end": 67.3,
+      "text": "Currently, most cars are around level two"
+    },
+    {
+      "start": 68.44,
+      "end": 71.4,
+      "text": "They are at the stage of assisting some functions"
+    },
+    {
+      "start": 71.4,
+      "end": 73.66,
+      "text": "Such as lane keeping and automatic braking"
+    },
+    {
+      "start": 73.66,
+      "end": 78.52,
+      "text": "Fully autonomous driving level five is still under development"
+    },
+    {
+      "start": 78.52,
+      "end": 81.5,
+      "text": "Whether AI can make smarter decisions"
+    },
+    {
+      "start": 81.5,
+      "end": 88.9,
+      "text": "Then the human in complex traffic and traffic jams is still open to debate"
+    },
+    {
+      "start": 96.56,
+      "end": 101.32,
+      "text": "In the case of an accident, who is responsible?"
+    },
+    {
+      "start": 102.02,
+      "end": 105.54,
+      "text": "The driver, the car maker or the AI developer?"
+    },
+    {
+      "start": 106.1,
+      "end": 110.1,
+      "text": "Current law has not caught up with this new phase"
+    },
+    {
+      "start": 110.1,
+      "end": 116.86,
+      "text": "If autonomous driving spreads, the number of traffic deaths is expected to decrease"
+    },
+    {
+      "start": 116.86,
+      "end": 125.12,
+      "text": "Accidents caused by human inattention, fatigue or drunk driving could be reduced"
+    },
+    {
+      "start": 126.1,
+      "end": 130.44,
+      "text": "Although AI introduces risks of its own"
+    },
+    {
+      "start": 131.1,
+      "end": 137.12,
+      "text": "But at the same time, many taxi and truck drivers may lose their jobs"
+    },
+    {
+      "start": 137.12,
+      "end": 143.3,
+      "text": "But we must keep thinking about how society adapts"
+    }
+  ]
+}

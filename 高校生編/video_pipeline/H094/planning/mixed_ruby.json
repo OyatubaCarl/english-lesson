@@ -1,0 +1,1172 @@
+{
+  "lesson": "H094",
+  "title_ja": "住宅と暮らし",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 11,
+  "canonical_target_lines": 11,
+  "mixed_lines": 9,
+  "japanese_only_lines": 2,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 0.0,
+      "end": 4.7,
+      "english": "The expense of urban housing rises year after year.",
+      "japanese": "都市部の住宅費は年々上昇しています。",
+      "mixed": "都市部の住宅費は年々上昇しています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "都市部の住宅費は年々上昇しています。",
+          "parts": [
+            {
+              "text": "都市",
+              "ruby": "とし"
+            },
+            {
+              "text": "部",
+              "ruby": "ぶ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "住宅",
+              "ruby": "じゅうたく"
+            },
+            {
+              "text": "費",
+              "ruby": "ひ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "年々",
+              "ruby": "ねんねん"
+            },
+            {
+              "text": "上昇",
+              "ruby": "じょうしょう"
+            },
+            {
+              "text": "しています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "expense",
+          "canonical_word": "expense",
+          "meaning": "費用"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 2,
+      "start": 4.7,
+      "end": 10.96,
+      "english": "Many young people cannot even afford the rent and continue living with their parents.",
+      "japanese": "多くの若者は家賃さえ払えず、両親と暮らし続けます。",
+      "mixed": "多くの若者は rent さえ払えず、両親と暮らし続けます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "多くの若者は ",
+          "parts": [
+            {
+              "text": "多",
+              "ruby": "おお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "若者",
+              "ruby": "わかもの"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "rent",
+          "ruby": "家賃"
+        },
+        {
+          "type": "ja",
+          "text": " さえ払えず、両親と暮らし続けます。",
+          "parts": [
+            {
+              "text": "さえ",
+              "ruby": ""
+            },
+            {
+              "text": "払",
+              "ruby": "はら"
+            },
+            {
+              "text": "えず、",
+              "ruby": ""
+            },
+            {
+              "text": "両親",
+              "ruby": "りょうしん"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "暮",
+              "ruby": "く"
+            },
+            {
+              "text": "らし",
+              "ruby": ""
+            },
+            {
+              "text": "続",
+              "ruby": "つづ"
+            },
+            {
+              "text": "けます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "afford",
+          "canonical_word": "afford",
+          "meaning": "余裕がある"
+        },
+        {
+          "english": "rent",
+          "canonical_word": "rent",
+          "meaning": "家賃"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "rent",
+          "reading": "家賃",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "rent",
+          "canonical_meaning": "家賃"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 3,
+      "start": 10.96,
+      "end": 20.3,
+      "english": "Taking out a mortgage to buy a home is no longer the obvious choice it once was.",
+      "japanese": "住宅を購入するために住宅ローンを組むことは、かつてのように当然の選択ではなくなりました。",
+      "mixed": "住宅を購入するために mortgage を組むことは、かつてのように当然の選択ではなくなりました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "住宅を購入するために ",
+          "parts": [
+            {
+              "text": "住宅",
+              "ruby": "じゅうたく"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "購入",
+              "ruby": "こうにゅう"
+            },
+            {
+              "text": "するために",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "mortgage",
+          "ruby": "住宅ローン"
+        },
+        {
+          "type": "ja",
+          "text": " を組むことは、かつてのように当然の選択ではなくなりました。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "組",
+              "ruby": "く"
+            },
+            {
+              "text": "むことは、かつてのように",
+              "ruby": ""
+            },
+            {
+              "text": "当然",
+              "ruby": "とうぜん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "選択",
+              "ruby": "せんたく"
+            },
+            {
+              "text": "ではなくなりました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "mortgage",
+          "canonical_word": "Mortgage",
+          "meaning": "住宅ローン"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "mortgage",
+          "reading": "住宅ローン",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "Mortgage",
+          "canonical_meaning": "住宅ローン"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 4,
+      "start": 21.8,
+      "end": 27.62,
+      "english": "Real estate prices have been increasing at a pace that far exceeds the growth of earnings.",
+      "japanese": "不動産価格は収益の伸びをはるかに上回るペースで上昇している。",
+      "mixed": "不動産価格は earnings の伸びをはるかに上回るペースで increase しています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "不動産価格は ",
+          "parts": [
+            {
+              "text": "不",
+              "ruby": "ふ"
+            },
+            {
+              "text": "動産",
+              "ruby": "どうさん"
+            },
+            {
+              "text": "価格",
+              "ruby": "かかく"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "earnings",
+          "ruby": "収入"
+        },
+        {
+          "type": "ja",
+          "text": " の伸びをはるかに上回るペースで ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "伸",
+              "ruby": "の"
+            },
+            {
+              "text": "びをはるかに",
+              "ruby": ""
+            },
+            {
+              "text": "上回",
+              "ruby": "うわまわ"
+            },
+            {
+              "text": "るペースで",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "increase",
+          "ruby": "上昇"
+        },
+        {
+          "type": "ja",
+          "text": " しています。",
+          "parts": [
+            {
+              "text": "しています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "estate",
+          "canonical_word": "estate",
+          "meaning": "不動産"
+        },
+        {
+          "english": "increasing",
+          "canonical_word": "increase",
+          "meaning": "増加する"
+        },
+        {
+          "english": "earnings",
+          "canonical_word": "earnings",
+          "meaning": "収入"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "earnings",
+          "reading": "収入",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "earnings",
+          "canonical_meaning": "収入"
+        },
+        {
+          "english": "increase",
+          "reading": "上昇",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "increase",
+          "canonical_meaning": "増加する"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 5,
+      "start": 27.62,
+      "end": 34.12,
+      "english": "This issue has triggered intense debate as a domestic policy matter in many countries.",
+      "japanese": "この問題は、多くの国で国内政策問題として激しい議論を引き起こしました。",
+      "mixed": "この問題は、多くの国で domestic な政策課題として intense な議論を引き起こしました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "この問題は、多くの国で ",
+          "parts": [
+            {
+              "text": "この",
+              "ruby": ""
+            },
+            {
+              "text": "問題",
+              "ruby": "もんだい"
+            },
+            {
+              "text": "は、",
+              "ruby": ""
+            },
+            {
+              "text": "多",
+              "ruby": "おお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "国",
+              "ruby": "くに"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "domestic",
+          "ruby": "国内の"
+        },
+        {
+          "type": "ja",
+          "text": " な政策課題として ",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "政策",
+              "ruby": "せいさく"
+            },
+            {
+              "text": "課題",
+              "ruby": "かだい"
+            },
+            {
+              "text": "として",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "intense",
+          "ruby": "激しい"
+        },
+        {
+          "type": "ja",
+          "text": " な議論を引き起こしました。",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "議論",
+              "ruby": "ぎろん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "引き起",
+              "ruby": "ひきお"
+            },
+            {
+              "text": "こしました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "intense",
+          "canonical_word": "intense",
+          "meaning": "激しい"
+        },
+        {
+          "english": "domestic",
+          "canonical_word": "domestic",
+          "meaning": "国内の"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "domestic",
+          "reading": "国内の",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "domestic",
+          "canonical_meaning": "国内の"
+        },
+        {
+          "english": "intense",
+          "reading": "激しい",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "intense",
+          "canonical_meaning": "激しい"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 6,
+      "start": 34.12,
+      "end": 39.68,
+      "english": "The mayor and governor propose measures, but their effect remains limited.",
+      "japanese": "市長や知事は対策を提案するが、効果は限定的だ。",
+      "mixed": "mayor や governor は対策を propose しますが、その effect は限定的です。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "mayor",
+          "ruby": "市長"
+        },
+        {
+          "type": "ja",
+          "text": " や ",
+          "parts": [
+            {
+              "text": "や",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "governor",
+          "ruby": "知事"
+        },
+        {
+          "type": "ja",
+          "text": " は対策を ",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "対策",
+              "ruby": "たいさく"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "propose",
+          "ruby": "提案"
+        },
+        {
+          "type": "ja",
+          "text": " しますが、その ",
+          "parts": [
+            {
+              "text": "しますが、その",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "effect",
+          "ruby": "効果"
+        },
+        {
+          "type": "ja",
+          "text": " は限定的です。",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "限定",
+              "ruby": "げんてい"
+            },
+            {
+              "text": "的",
+              "ruby": "てき"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "mayor",
+          "canonical_word": "mayor",
+          "meaning": "市長"
+        },
+        {
+          "english": "governor",
+          "canonical_word": "governor",
+          "meaning": "知事"
+        },
+        {
+          "english": "propose",
+          "canonical_word": "propose",
+          "meaning": "提案する"
+        },
+        {
+          "english": "effect",
+          "canonical_word": "effect",
+          "meaning": "効果"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "mayor",
+          "reading": "市長",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "mayor",
+          "canonical_meaning": "市長"
+        },
+        {
+          "english": "governor",
+          "reading": "知事",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "governor",
+          "canonical_meaning": "知事"
+        },
+        {
+          "english": "propose",
+          "reading": "提案",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "propose",
+          "canonical_meaning": "提案する"
+        },
+        {
+          "english": "effect",
+          "reading": "効果",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "effect",
+          "canonical_meaning": "効果"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 7,
+      "start": 39.68,
+      "end": 45.6,
+      "english": "Numerous residents have been moving to cheaper suburbs.",
+      "japanese": "多くの住民が物価の安い郊外に引っ越している。",
+      "mixed": "多くの residents が、より安い suburbs へ移っています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "多くの ",
+          "parts": [
+            {
+              "text": "多",
+              "ruby": "おお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "residents",
+          "ruby": "住民"
+        },
+        {
+          "type": "ja",
+          "text": " が、より安い ",
+          "parts": [
+            {
+              "text": "が、より",
+              "ruby": ""
+            },
+            {
+              "text": "安",
+              "ruby": "やす"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "suburbs",
+          "ruby": "郊外"
+        },
+        {
+          "type": "ja",
+          "text": " へ移っています。",
+          "parts": [
+            {
+              "text": "へ",
+              "ruby": ""
+            },
+            {
+              "text": "移",
+              "ruby": "うつ"
+            },
+            {
+              "text": "っています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "Numerous",
+          "canonical_word": "Numerous",
+          "meaning": "多数の"
+        },
+        {
+          "english": "residents",
+          "canonical_word": "resident",
+          "meaning": "住民"
+        },
+        {
+          "english": "suburbs",
+          "canonical_word": "suburb",
+          "meaning": "郊外"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "residents",
+          "reading": "住民",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "resident",
+          "canonical_meaning": "住民"
+        },
+        {
+          "english": "suburbs",
+          "reading": "郊外",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "suburb",
+          "canonical_meaning": "郊外"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 8,
+      "start": 45.6,
+      "end": 54.76,
+      "english": "But commuting times grow considerably longer, and a decline in the quality of life is an outcome that cannot be ignored.",
+      "japanese": "しかし、通勤時間は大幅に長くなり、生活の質の低下は無視できない結果となります。",
+      "mixed": "しかし通勤時間は considerably 長くなり、生活の quality が低下するという outcome は無視できません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "しかし通勤時間は ",
+          "parts": [
+            {
+              "text": "しかし",
+              "ruby": ""
+            },
+            {
+              "text": "通勤",
+              "ruby": "つうきん"
+            },
+            {
+              "text": "時間",
+              "ruby": "じかん"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "considerably",
+          "ruby": "かなり"
+        },
+        {
+          "type": "ja",
+          "text": " 長くなり、生活の ",
+          "parts": [
+            {
+              "text": "長",
+              "ruby": "なが"
+            },
+            {
+              "text": "くなり、",
+              "ruby": ""
+            },
+            {
+              "text": "生活",
+              "ruby": "せいかつ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "quality",
+          "ruby": "質"
+        },
+        {
+          "type": "ja",
+          "text": " が低下するという ",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "低下",
+              "ruby": "ていか"
+            },
+            {
+              "text": "するという",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "outcome",
+          "ruby": "結果"
+        },
+        {
+          "type": "ja",
+          "text": " は無視できません。",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "無視",
+              "ruby": "むし"
+            },
+            {
+              "text": "できません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "considerably",
+          "canonical_word": "considerably",
+          "meaning": "かなり"
+        },
+        {
+          "english": "quality",
+          "canonical_word": "quality",
+          "meaning": "質"
+        },
+        {
+          "english": "outcome",
+          "canonical_word": "outcome",
+          "meaning": "結果"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "considerably",
+          "reading": "かなり",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "considerably",
+          "canonical_meaning": "かなり"
+        },
+        {
+          "english": "quality",
+          "reading": "質",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "quality",
+          "canonical_meaning": "質"
+        },
+        {
+          "english": "outcome",
+          "reading": "結果",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "outcome",
+          "canonical_meaning": "結果"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 9,
+      "start": 54.76,
+      "end": 59.76,
+      "english": "The housing problem is not merely an economic question.",
+      "japanese": "住宅問題は単なる経済問題ではありません。",
+      "mixed": "住宅問題は単なる経済問題ではありません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "住宅問題は単なる経済問題ではありません。",
+          "parts": [
+            {
+              "text": "住宅",
+              "ruby": "じゅうたく"
+            },
+            {
+              "text": "問題",
+              "ruby": "もんだい"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "単",
+              "ruby": "たん"
+            },
+            {
+              "text": "なる",
+              "ruby": ""
+            },
+            {
+              "text": "経済",
+              "ruby": "けいざい"
+            },
+            {
+              "text": "問題",
+              "ruby": "もんだい"
+            },
+            {
+              "text": "ではありません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "merely",
+          "canonical_word": "merely",
+          "meaning": "単に"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 10,
+      "start": 59.76,
+      "end": 70.32,
+      "english": "A stable home is directly connected to children's education, the health of residents, and the stability of a community.",
+      "japanese": "家庭の安定は子どもの教育、住民の健康、地域の安定に直結します。",
+      "mixed": "安定した住まいは、子どもの教育、residents の健康、地域の stability に直結します。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "安定した住まいは、子どもの教育、",
+          "parts": [
+            {
+              "text": "安定",
+              "ruby": "あんてい"
+            },
+            {
+              "text": "した",
+              "ruby": ""
+            },
+            {
+              "text": "住",
+              "ruby": "す"
+            },
+            {
+              "text": "まいは、",
+              "ruby": ""
+            },
+            {
+              "text": "子",
+              "ruby": "こ"
+            },
+            {
+              "text": "どもの",
+              "ruby": ""
+            },
+            {
+              "text": "教育",
+              "ruby": "きょういく"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "residents",
+          "ruby": "住民"
+        },
+        {
+          "type": "ja",
+          "text": " の健康、地域の ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "健康",
+              "ruby": "けんこう"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "地域",
+              "ruby": "ちいき"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "stability",
+          "ruby": "安定"
+        },
+        {
+          "type": "ja",
+          "text": " に直結します。",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "直結",
+              "ruby": "ちょっけつ"
+            },
+            {
+              "text": "します。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "residents",
+          "canonical_word": "resident",
+          "meaning": "住民"
+        },
+        {
+          "english": "stability",
+          "canonical_word": "stability",
+          "meaning": "安定"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "residents",
+          "reading": "住民",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "resident",
+          "canonical_meaning": "住民"
+        },
+        {
+          "english": "stability",
+          "reading": "安定",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "stability",
+          "canonical_meaning": "安定"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 11,
+      "start": 72.74,
+      "end": 78.0,
+      "english": "Adequate housing should be the right of every person.",
+      "japanese": "適切な住居はすべての人の権利であるべきです。",
+      "mixed": "adequate な住居は、すべての人の right であるべきです。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "adequate",
+          "ruby": "十分で適切な"
+        },
+        {
+          "type": "ja",
+          "text": " な住居は、すべての人の ",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "住居",
+              "ruby": "じゅうきょ"
+            },
+            {
+              "text": "は、すべての",
+              "ruby": ""
+            },
+            {
+              "text": "人",
+              "ruby": "ひと"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "right",
+          "ruby": "権利"
+        },
+        {
+          "type": "ja",
+          "text": " であるべきです。",
+          "parts": [
+            {
+              "text": "であるべきです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "Adequate",
+          "canonical_word": "adequate",
+          "meaning": "十分な"
+        },
+        {
+          "english": "right",
+          "canonical_word": "right",
+          "meaning": "権利"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "adequate",
+          "reading": "十分で適切な",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "adequate",
+          "canonical_meaning": "十分な"
+        },
+        {
+          "english": "right",
+          "reading": "権利",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "right",
+          "canonical_meaning": "権利"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    }
+  ]
+}

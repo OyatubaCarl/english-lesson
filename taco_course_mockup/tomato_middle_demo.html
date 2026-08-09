@@ -1,0 +1,137 @@
+<!DOCTYPE html><html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>トマトマト 中学生編（複数トマト）デモ</title>
+<style>
+:root{--bg:#fbf6ee;--card:#fff;--fg:#2a2018;--muted:#7c6a56;--faint:#a89b88;--border:#ece0cf;
+  --red:#d93a2b;--red-soft:#fdecea;--green:#5aa011;--green-ink:#3f6f0d;--green-soft:#eaf6d8;--accent:#e8642a;
+  --shadow-sm:0 2px 6px rgba(90,60,30,.08);--shadow:0 8px 22px rgba(90,60,30,.16);--radius:16px;
+  --ui:"Hiragino Sans","Yu Gothic",Meiryo,system-ui,sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:var(--ui);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100dvh}
+.wrap{max-width:460px;margin:0 auto;padding:16px 15px 40px}
+.hd{text-align:center;margin:4px 0 10px}
+.hd .b{display:inline-block;background:var(--red);color:#fff;font-weight:900;font-size:.66rem;letter-spacing:.06em;padding:4px 12px;border-radius:999px}
+.hd h1{font-size:1.2rem;font-weight:900;margin-top:6px}
+.hd .s{font-size:.76rem;color:var(--muted);margin-top:2px}
+.lsel-row{display:flex;align-items:center;gap:8px;font-size:.78rem;font-weight:800;color:var(--muted);margin:4px 2px 0}
+.lsel-row select{flex:1;font-family:inherit;font-size:.82rem;font-weight:700;padding:9px 12px;border-radius:12px;border:1.5px solid var(--border);background:var(--card);color:var(--fg)}
+.meta{display:flex;justify-content:space-between;font-size:.76rem;font-weight:800;color:var(--muted);margin:14px 2px 6px}
+.meta .n{color:var(--red)}
+/* かご: 今の文のトマト収穫状況 */
+.crate{background:linear-gradient(180deg,#f4d9b5,#e7bd8a);border:2px solid #c99a63;border-radius:12px;padding:8px 12px;box-shadow:inset 0 2px 6px rgba(120,72,20,.18);margin-bottom:10px}
+.crate .cl{font-size:.72rem;font-weight:800;color:#7c4a17;margin-bottom:5px}
+.crate .cl b{color:var(--red);font-size:.9rem}
+.slots{display:flex;flex-wrap:wrap;gap:6px}
+.slot{width:24px;height:24px;border-radius:50%;background:rgba(255,255,255,.4);box-shadow:inset 0 0 0 2px rgba(170,115,58,.4);display:grid;place-items:center;font-size:14px}
+.slot.done{animation:pop .35s}
+@keyframes pop{0%{transform:scale(.3)}60%{transform:scale(1.25)}100%{transform:scale(1)}}
+/* 文カード */
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 18px;font-size:1.16rem;line-height:2.4;font-weight:600}
+.tom{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;margin:0 2px;cursor:pointer}
+.tom .chip{background:var(--red);color:#fff;font-weight:800;padding:2px 12px 2px 26px;border-radius:999px;font-family:-apple-system,sans-serif;font-size:.86em;position:relative;box-shadow:0 2px 4px rgba(180,40,30,.25);transition:transform .12s}
+.tom .chip::before{content:"🍅";position:absolute;left:5px;top:50%;transform:translateY(-50%);font-size:.9em}
+.tom:active .chip{transform:scale(.93)}
+.tom.done{cursor:default}
+.tom.done .chip{background:var(--green-soft);color:var(--green-ink);padding:2px 12px;box-shadow:none}
+.tom.done .chip::before{content:"✓";left:auto;position:static;transform:none;margin-right:3px}
+.tom .rt{font-size:.6rem;color:var(--muted);font-weight:700;margin-top:1px;opacity:0;height:0;transition:.2s}
+.tom.done .rt{opacity:1;height:auto}
+.tom.miss .chip{animation:shake .35s}
+@keyframes shake{0%,100%{transform:none}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+.hint{text-align:center;font-size:.76rem;color:var(--faint);margin-top:12px}
+.done-msg{text-align:center;background:var(--green-soft);border:1px solid #cfe6a8;border-radius:12px;color:var(--green-ink);font-weight:900;padding:12px;margin-top:14px;font-size:.95rem;animation:pop .4s}
+/* 意味選択シート */
+.bg{position:fixed;inset:0;background:rgba(35,20,8,.42);display:none;align-items:flex-end;justify-content:center;z-index:20}
+.bg.show{display:flex}
+.sheet{background:var(--card);border-radius:20px 20px 0 0;width:100%;max-width:460px;padding:18px 16px calc(20px + env(safe-area-inset-bottom,0px));box-shadow:0 -8px 24px rgba(0,0,0,.2);animation:up .25s}
+@keyframes up{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.sheet .w{text-align:center;font-weight:900;font-size:1.4rem;color:var(--red)}
+.sheet .q{text-align:center;font-size:.8rem;color:var(--muted);margin:2px 0 12px}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ch{background:#fff;border:2px solid var(--border);border-radius:14px;padding:14px 10px;font-weight:800;font-size:.92rem;cursor:pointer;font-family:inherit;text-align:center}
+.ch:active{transform:scale(.96)}
+.ch.correct{background:var(--green-soft);border-color:var(--green);color:var(--green-ink)}
+.ch.wrong{background:var(--red-soft);border-color:var(--red);color:var(--red);animation:shake .35s}
+.done-all{text-align:center;padding:30px 0}
+.done-all .big{font-size:54px}
+.done-all h2{font-size:1.2rem;font-weight:900;margin-top:8px;color:var(--green-ink)}
+.done-all p{font-size:.82rem;color:var(--muted);margin-top:6px}
+.rst{margin-top:16px;background:var(--accent);color:#fff;border:none;border-radius:999px;padding:12px 30px;font-weight:900;font-family:inherit;cursor:pointer}
+</style></head>
+<body>
+<div class="wrap">
+  <div class="hd">
+    <span class="b">中学生編 · L1 実データ</span>
+    <h1>🍅 トマトマト（複数トマト）</h1>
+    <div class="s">「わたしの家族と Pochi」— 1文の英単語を全部収穫したら次の文へ</div>
+  </div>
+  <div class="lsel-row"><label>レッスン：</label><select id="lsel"></select></div>
+  <div id="game"></div>
+</div>
+<div class="bg" id="bg"><div class="sheet" id="sheet"></div></div>
+<script>
+// middle_lessons.json（サイト L1〜L45 の実データ）から読み込む
+let SENTS=[], POOL=[], LESSONS=[];
+const $=(h)=>{const d=document.createElement("div");d.innerHTML=h.trim();return d.firstChild;};
+const rnd=(a)=>a[Math.floor(Math.random()*a.length)];
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+const game=document.getElementById("game"), bg=document.getElementById("bg"), sheet=document.getElementById("sheet");
+let si=0;
+function draw(){
+  const s=SENTS[si]; const total=s.words.length; let harvested=0;
+  game.innerHTML="";
+  game.appendChild($(`<div class="meta"><span>文 <span class="n">${si+1}</span> / ${SENTS.length}</span><span>🍅 熟したトマトをタップ</span></div>`));
+  const crate=$(`<div class="crate"><div class="cl">🧺 この文のトマト <b>0</b> / ${total}</div><div class="slots"></div></div>`);
+  const slots=crate.querySelector(".slots");
+  s.words.forEach(()=>slots.appendChild($('<span class="slot"></span>')));
+  game.appendChild(crate);
+  // 文カード生成: <w> をトマトchipに
+  let idx=0; const html=s.text.replace(/<([^>]+)>/g,(m,w)=>{const i=idx++;return `<span class="tom" data-i="${i}"><span class="chip">${w}</span><span class="rt"></span></span>`;});
+  const card=$(`<div class="card">${html}</div>`); game.appendChild(card);
+  game.appendChild($('<div class="hint">赤いトマト（英単語）をタップ → 意味を選んで収穫</div>'));
+  const toms=[...card.querySelectorAll(".tom")];
+  toms.forEach((t)=>{ const i=+t.dataset.i; const [w,ja]=s.words[i];
+    t.onclick=()=>{ if(t.classList.contains("done"))return; openSheet(w,ja,(ok)=>{
+      if(!ok){ t.classList.remove("miss");void t.offsetWidth;t.classList.add("miss"); return; }
+      t.classList.add("done"); t.querySelector(".chip").textContent=w; t.querySelector(".rt").textContent=ja;
+      const sl=slots.children[harvested]; if(sl){sl.classList.add("done");sl.textContent="🍅";}
+      harvested++; crate.querySelector(".cl b").textContent=harvested;
+      if(harvested>=total){ // 全部収穫 → 次の文へ
+        game.appendChild($('<div class="done-msg">✅ この文、全部収穫！ 次の文へ</div>'));
+        setTimeout(()=>{ si++; if(si<SENTS.length)draw(); else finish(); },1100);
+      }
+    }); };
+  });
+}
+function openSheet(w,ja,cb){
+  const wrong=shuffle(POOL.filter(x=>x!==ja)).slice(0,3);
+  const choices=shuffle([ja,...wrong]);
+  sheet.innerHTML=`<div class="w">🍅 ${w}</div><div class="q">意味をえらんで収穫しよう</div><div class="choices"></div>`;
+  const box=sheet.querySelector(".choices");
+  choices.forEach(c=>{ const b=$(`<button class="ch">${c}</button>`);
+    b.onclick=()=>{ if(c===ja){ b.classList.add("correct"); [...box.children].forEach(x=>x.disabled=true);
+        setTimeout(()=>{bg.classList.remove("show");cb(true);},420); }
+      else{ b.classList.add("wrong"); b.disabled=true; cb(false); } };
+    box.appendChild(b); });
+  bg.classList.add("show");
+}
+bg.onclick=(e)=>{ if(e.target===bg)bg.classList.remove("show"); };
+function finish(){
+  game.innerHTML=`<div class="done-all"><div class="big">🍅🍽️</div><h2>トマトマト コンプリート！</h2>
+    <p>全 ${SENTS.length} 文・${SENTS.reduce((a,s)=>a+s.words.length,0)} 個のトマトを収穫しました。<br>（実際は続けて 🧀チーズ／🥬レタス… へ）</p>
+    <button class="rst" onclick="si=0;draw()">もう一度</button></div>`;
+}
+function loadLesson(l){
+  SENTS=(l.vocabSentences||[]).map(s=>({text:s.text,words:(s.words||[]).map(w=>[w.w,w.ja])})).filter(s=>s.words.length);
+  si=0; draw();
+}
+fetch('middle_lessons.json',{cache:'no-cache'}).then(r=>r.json()).then(data=>{
+  LESSONS=data.filter(x=>x&&x.vocabSentences&&x.vocabSentences.length).sort((a,b)=>a.b-b.b);
+  POOL=[...new Set(LESSONS.flatMap(l=>l.vocabSentences.flatMap(s=>(s.words||[]).map(w=>w.ja))))]; // 全語の意味＝ダミー候補
+  const sel=document.getElementById('lsel');
+  LESSONS.forEach((l,i)=>{const o=document.createElement('option');o.value=i;o.textContent='L'+l.b+'  '+(l.title||'').slice(0,20);sel.appendChild(o);});
+  sel.onchange=()=>loadLesson(LESSONS[+sel.value]);
+  loadLesson(LESSONS[0]);
+}).catch(()=>{ game.innerHTML='<p style="text-align:center;color:#c33;padding:20px">middle_lessons.json を読み込めませんでした</p>'; });
+</script>
+</body></html>

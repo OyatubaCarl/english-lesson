@@ -1,0 +1,187 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H009.md",
+  "audio": "高校生編/suno_ready/generated/audio/H009/candidate3-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 69.12,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0072,
+  "expected_words": 139,
+  "transcribed_words": 140,
+  "matched_words": 136,
+  "coverage": 0.9784,
+  "precision": 0.9714,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 138,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 49,
+      "length": 1,
+      "words": [
+        "discussed"
+      ]
+    },
+    {
+      "start": 53,
+      "length": 1,
+      "words": [
+        "turned"
+      ]
+    },
+    {
+      "start": 94,
+      "length": 1,
+      "words": [
+        "although"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 49,
+      "actual_start": 49,
+      "expected": [
+        "discussed"
+      ],
+      "actual": [
+        "discuss"
+      ],
+      "actual_confidence": 0.9907,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 53,
+      "actual_start": 53,
+      "expected": [
+        "turned"
+      ],
+      "actual": [
+        "turn"
+      ],
+      "actual_confidence": 0.999,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 94,
+      "actual_start": 94,
+      "expected": [
+        "although"
+      ],
+      "actual": [
+        "all",
+        "the"
+      ],
+      "actual_confidence": 0.9834,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 3,
+  "suspicious_substitution_words": 3,
+  "suspicious_content_substitution": true,
+  "transcript": "I was discussing the Sunday picnic with my sister If the weather is good, we will spend the day in a meadow by the river If it rains, we will watch a movie at home Unless it rains, we will leave the house at ten in the morning We discuss several conditions and turn them into a clear plan Tomorrow morning, unless the forecast turns much worse We will go as planned If it does rain, however We will shift the picnic to the afternoon Whenever the forecast improves Our spirits rise with it All the mother was tired She said she would prepare sandwiches The sight of sandwiches Filling an entire basket Is always a pleasant one As Sunday approaches, my sister's face remains calm The fact that everything would depend on the weather Brought our family quietly together",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.0,
+      "text": "I was discussing the Sunday picnic with my sister"
+    },
+    {
+      "start": 4.76,
+      "end": 10.36,
+      "text": "If the weather is good, we will spend the day in a meadow by the river"
+    },
+    {
+      "start": 10.36,
+      "end": 15.12,
+      "text": "If it rains, we will watch a movie at home"
+    },
+    {
+      "start": 15.12,
+      "end": 19.22,
+      "text": "Unless it rains, we will leave the house at ten in the morning"
+    },
+    {
+      "start": 19.94,
+      "end": 24.96,
+      "text": "We discuss several conditions and turn them into a clear plan"
+    },
+    {
+      "start": 24.96,
+      "end": 29.32,
+      "text": "Tomorrow morning, unless the forecast turns much worse"
+    },
+    {
+      "start": 29.32,
+      "end": 31.62,
+      "text": "We will go as planned"
+    },
+    {
+      "start": 31.62,
+      "end": 33.7,
+      "text": "If it does rain, however"
+    },
+    {
+      "start": 33.7,
+      "end": 37.16,
+      "text": "We will shift the picnic to the afternoon"
+    },
+    {
+      "start": 37.16,
+      "end": 39.56,
+      "text": "Whenever the forecast improves"
+    },
+    {
+      "start": 39.56,
+      "end": 41.86,
+      "text": "Our spirits rise with it"
+    },
+    {
+      "start": 41.86,
+      "end": 43.44,
+      "text": "All the mother was tired"
+    },
+    {
+      "start": 43.44,
+      "end": 46.72,
+      "text": "She said she would prepare sandwiches"
+    },
+    {
+      "start": 46.72,
+      "end": 48.72,
+      "text": "The sight of sandwiches"
+    },
+    {
+      "start": 48.72,
+      "end": 51.56,
+      "text": "Filling an entire basket"
+    },
+    {
+      "start": 51.56,
+      "end": 55.74,
+      "text": "Is always a pleasant one"
+    },
+    {
+      "start": 55.74,
+      "end": 62.34,
+      "text": "As Sunday approaches, my sister's face remains calm"
+    },
+    {
+      "start": 62.34,
+      "end": 66.14,
+      "text": "The fact that everything would depend on the weather"
+    },
+    {
+      "start": 66.14,
+      "end": 69.12,
+      "text": "Brought our family quietly together"
+    }
+  ]
+}

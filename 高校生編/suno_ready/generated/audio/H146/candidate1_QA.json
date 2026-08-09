@@ -1,0 +1,235 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H146.md",
+  "audio": "高校生編/suno_ready/generated/audio/H146/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 212.24,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0035,
+  "expected_words": 287,
+  "transcribed_words": 288,
+  "matched_words": 283,
+  "coverage": 0.9861,
+  "precision": 0.9826,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 286,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 246,
+      "length": 2,
+      "words": [
+        "chase",
+        "insects"
+      ]
+    },
+    {
+      "start": 104,
+      "length": 1,
+      "words": [
+        "barefoot"
+      ]
+    },
+    {
+      "start": 233,
+      "length": 1,
+      "words": [
+        "a"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 104,
+      "actual_start": 104,
+      "expected": [
+        "barefoot"
+      ],
+      "actual": [
+        "bare",
+        "foot"
+      ],
+      "actual_confidence": 0.5455,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 233,
+      "actual_start": 234,
+      "expected": [
+        "a"
+      ],
+      "actual": [
+        "of"
+      ],
+      "actual_confidence": 0.4569,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 246,
+      "actual_start": 247,
+      "expected": [
+        "chase",
+        "insects"
+      ],
+      "actual": [
+        "chasing",
+        "sex"
+      ],
+      "actual_confidence": 0.9273,
+      "substitution_words": 2,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "When I was a child, summer vacations were special Each year I would spend a month at my grandparents' house in the countryside My grandfather was a former farmer with a large garden and fields In the morning I would go out to the field with him to harvest the vegetables, tomatoes, cucumbers, corn The vegetables that had absorbed the sunlight tasted different From what you buy in the city Every dinner my grandmother cooked was special In the afternoon we would go swimming in the nearby creek The water was cold and the stones on the bottom were rough When I leapt in bare foot, it was so cold I felt breathless in the evening I would walk the dog with my grandfather The Labrador Shiro was a wise dog who listened well to my grandfather at night On the veranda I would gaze at the starry sky with my grandmother Countless stars that could not be seen In the city would blink at me My grandmother would quietly tell me The stories of the constellations After I moved to the city for university My chances to visit the countryside grew fewer after my grandparents passed away The house passed into other hands But when summer comes I still remember those countryside summers Now as an adult I take my own children to the countryside Where my wife's parents live There are fields of creek and at night a sky full of stars Seeing my children chasing sex with sparkling eyes And try to catch fish in the river I feel my younger self is being restored A country summer passed down across generations There is something in it that the convenience of the city cannot replace",
+  "segments": [
+    {
+      "start": 11.58,
+      "end": 17.34,
+      "text": "When I was a child, summer vacations were special"
+    },
+    {
+      "start": 18.0,
+      "end": 23.16,
+      "text": "Each year I would spend a month at my grandparents' house in the countryside"
+    },
+    {
+      "start": 23.16,
+      "end": 34.3,
+      "text": "My grandfather was a former farmer with a large garden and fields"
+    },
+    {
+      "start": 35.9,
+      "end": 46.4,
+      "text": "In the morning I would go out to the field with him to harvest the vegetables, tomatoes, cucumbers, corn"
+    },
+    {
+      "start": 47.84,
+      "end": 52.74,
+      "text": "The vegetables that had absorbed the sunlight tasted different"
+    },
+    {
+      "start": 53.4,
+      "end": 55.24,
+      "text": "From what you buy in the city"
+    },
+    {
+      "start": 55.24,
+      "end": 59.54,
+      "text": "Every dinner my grandmother cooked was special"
+    },
+    {
+      "start": 60.82,
+      "end": 66.38,
+      "text": "In the afternoon we would go swimming in the nearby creek"
+    },
+    {
+      "start": 66.38,
+      "end": 72.78,
+      "text": "The water was cold and the stones on the bottom were rough"
+    },
+    {
+      "start": 72.78,
+      "end": 80.34,
+      "text": "When I leapt in bare foot, it was so cold I felt breathless in the evening"
+    },
+    {
+      "start": 80.34,
+      "end": 84.96,
+      "text": "I would walk the dog with my grandfather"
+    },
+    {
+      "start": 87.5,
+      "end": 94.9,
+      "text": "The Labrador Shiro was a wise dog who listened well to my grandfather at night"
+    },
+    {
+      "start": 94.9,
+      "end": 101.34,
+      "text": "On the veranda I would gaze at the starry sky with my grandmother"
+    },
+    {
+      "start": 103.72,
+      "end": 113.54,
+      "text": "Countless stars that could not be seen In the city would blink at me"
+    },
+    {
+      "start": 115.66,
+      "end": 122.74,
+      "text": "My grandmother would quietly tell me The stories of the constellations"
+    },
+    {
+      "start": 122.74,
+      "end": 131.9,
+      "text": "After I moved to the city for university My chances to visit the countryside"
+    },
+    {
+      "start": 131.9,
+      "end": 137.56,
+      "text": "grew fewer after my grandparents passed away"
+    },
+    {
+      "start": 137.56,
+      "end": 142.34,
+      "text": "The house passed into other hands"
+    },
+    {
+      "start": 142.9,
+      "end": 145.8,
+      "text": "But when summer comes"
+    },
+    {
+      "start": 146.9,
+      "end": 151.9,
+      "text": "I still remember those countryside summers"
+    },
+    {
+      "start": 152.9,
+      "end": 158.72,
+      "text": "Now as an adult I take my own children to the countryside"
+    },
+    {
+      "start": 160.52,
+      "end": 163.48,
+      "text": "Where my wife's parents live"
+    },
+    {
+      "start": 165.34,
+      "end": 170.0,
+      "text": "There are fields of creek and at night a sky full of stars"
+    },
+    {
+      "start": 170.0,
+      "end": 174.78,
+      "text": "Seeing my children chasing sex with sparkling eyes"
+    },
+    {
+      "start": 174.78,
+      "end": 177.76,
+      "text": "And try to catch fish in the river"
+    },
+    {
+      "start": 177.76,
+      "end": 182.84,
+      "text": "I feel my younger self is being restored"
+    },
+    {
+      "start": 182.84,
+      "end": 189.24,
+      "text": "A country summer passed down across generations"
+    },
+    {
+      "start": 191.04,
+      "end": 200.04,
+      "text": "There is something in it that the convenience of the city cannot replace"
+    }
+  ]
+}

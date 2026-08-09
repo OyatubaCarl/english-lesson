@@ -1,0 +1,239 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H045.md",
+  "audio": "高校生編/suno_ready/generated/audio/H045/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 146.54,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9107,
+  "expected_words": 168,
+  "transcribed_words": 153,
+  "matched_words": 152,
+  "coverage": 0.9048,
+  "precision": 0.9935,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 167,
+  "longest_missing_run": 4,
+  "largest_missing_runs": [
+    {
+      "start": 21,
+      "length": 4,
+      "words": [
+        "four",
+        "thousand",
+        "five",
+        "hundred"
+      ]
+    },
+    {
+      "start": 29,
+      "length": 4,
+      "words": [
+        "one",
+        "hundred",
+        "forty",
+        "six"
+      ]
+    },
+    {
+      "start": 124,
+      "length": 4,
+      "words": [
+        "four",
+        "thousand",
+        "five",
+        "hundred"
+      ]
+    },
+    {
+      "start": 39,
+      "length": 3,
+      "words": [
+        "to",
+        "point",
+        "three"
+      ]
+    },
+    {
+      "start": 68,
+      "length": 1,
+      "words": [
+        "leading"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 68,
+      "actual_start": 57,
+      "expected": [
+        "leading"
+      ],
+      "actual": [
+        "the"
+      ],
+      "actual_confidence": 0.6587,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 21,
+      "actual_start": 21,
+      "expected": [
+        "four",
+        "thousand",
+        "five",
+        "hundred"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 29,
+      "actual_start": 25,
+      "expected": [
+        "one",
+        "hundred",
+        "forty",
+        "six"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 39,
+      "actual_start": 31,
+      "expected": [
+        "to",
+        "point",
+        "three"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 124,
+      "actual_start": 113,
+      "expected": [
+        "four",
+        "thousand",
+        "five",
+        "hundred"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "In the desert at Giza, in Egypt, three pyramids stand. The largest, the pyramid of Khufu, has been standing there for 4,500 years. Its height is 146 meters. It was constructed of about 2.3 million stone blocks. At the time, no such enormous building existed anywhere in the world. How the ancient Egyptians built it is still not fully known. The explanations involve ramps and organized teams transporting heavy limestone blocks. Though the exact methods remain debated The pyramid was built as the pharaoh's tomb And part of a larger burial complex The Egyptians believed in life after death And its form and burial complex Reflected their beliefs about kingship and the afterlife The silence of 4,500 years Still rests quietly in the wind The ancient kingdom ended long ago But its silence still seems to speak to us The wish of the people who sought immortality Has been carved into stone And it still survives today",
+  "segments": [
+    {
+      "start": 11.1,
+      "end": 15.56,
+      "text": "In the desert at Giza, in Egypt, three pyramids stand."
+    },
+    {
+      "start": 16.56,
+      "end": 23.32,
+      "text": "The largest, the pyramid of Khufu, has been standing there for 4,500 years."
+    },
+    {
+      "start": 23.32,
+      "end": 27.16,
+      "text": "Its height is 146 meters."
+    },
+    {
+      "start": 32.3,
+      "end": 36.46,
+      "text": "It was constructed of about 2.3 million stone blocks."
+    },
+    {
+      "start": 36.94,
+      "end": 41.8,
+      "text": "At the time, no such enormous building existed anywhere in the world."
+    },
+    {
+      "start": 41.8,
+      "end": 48.42,
+      "text": "How the ancient Egyptians built it is still not fully known."
+    },
+    {
+      "start": 56.28,
+      "end": 64.08,
+      "text": "The explanations involve ramps and organized teams transporting heavy limestone blocks."
+    },
+    {
+      "start": 66.28,
+      "end": 71.22,
+      "text": "Though the exact methods remain debated"
+    },
+    {
+      "start": 71.22,
+      "end": 75.18,
+      "text": "The pyramid was built as the pharaoh's tomb"
+    },
+    {
+      "start": 75.18,
+      "end": 79.76,
+      "text": "And part of a larger burial complex"
+    },
+    {
+      "start": 81.36,
+      "end": 85.9,
+      "text": "The Egyptians believed in life after death"
+    },
+    {
+      "start": 85.9,
+      "end": 89.7,
+      "text": "And its form and burial complex"
+    },
+    {
+      "start": 89.7,
+      "end": 95.2,
+      "text": "Reflected their beliefs about kingship and the afterlife"
+    },
+    {
+      "start": 95.2,
+      "end": 101.58,
+      "text": "The silence of 4,500 years"
+    },
+    {
+      "start": 103.0,
+      "end": 106.78,
+      "text": "Still rests quietly in the wind"
+    },
+    {
+      "start": 113.54,
+      "end": 116.54,
+      "text": "The ancient kingdom ended long ago"
+    },
+    {
+      "start": 117.74,
+      "end": 121.2,
+      "text": "But its silence still seems to speak to us"
+    },
+    {
+      "start": 123.04,
+      "end": 127.38,
+      "text": "The wish of the people who sought immortality"
+    },
+    {
+      "start": 127.38,
+      "end": 130.78,
+      "text": "Has been carved into stone"
+    },
+    {
+      "start": 133.44,
+      "end": 136.54,
+      "text": "And it still survives today"
+    },
+    {
+      "start": 146.54,
+      "end": 146.54,
+      "text": ""
+    }
+  ]
+}

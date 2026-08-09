@@ -1,0 +1,151 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H109.md",
+  "audio": "高校生編/suno_ready/generated/audio/H109/candidate3-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 111.7,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 174,
+  "transcribed_words": 174,
+  "matched_words": 173,
+  "coverage": 0.9943,
+  "precision": 0.9943,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 173,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 29,
+      "length": 1,
+      "words": [
+        "costs"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 29,
+      "actual_start": 29,
+      "expected": [
+        "costs"
+      ],
+      "actual": [
+        "cost"
+      ],
+      "actual_confidence": 0.8853,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "Japan's insurance system is one of the best in the world. Every citizen is enrolled in public medical insurance and can receive treatment at a fixed share of the cost. What supports this system is monthly premiums and taxes The premium is automatically deducted from employees' salaries The self-employed belong to the National Health Insurance The system is complicated And what is apparently simple actually consists of many provisions A particular provision defines the scope of benefits that a subscriber can obtain. As the nation ages, medical and pension spending is rapidly increasing. The premiums paid by the working generation alone cannot cover it. And the deficit has been growing. Private insurance companies also offer a wide range of products. Cancer insurance, life insurance, personal pensions A buyer can choose according to his or her needs Insurance is preparation for an unpredictable future Anyone may someday face illness or an accident So that a household is not ruined at that moment Society as a whole pools funds This is the essence of insurance",
+  "segments": [
+    {
+      "start": 9.78,
+      "end": 13.84,
+      "text": "Japan's insurance system is one of the best in the world."
+    },
+    {
+      "start": 14.74,
+      "end": 19.28,
+      "text": "Every citizen is enrolled in public medical insurance"
+    },
+    {
+      "start": 19.28,
+      "end": 24.72,
+      "text": "and can receive treatment at a fixed share of the cost."
+    },
+    {
+      "start": 24.72,
+      "end": 30.14,
+      "text": "What supports this system is monthly premiums and taxes"
+    },
+    {
+      "start": 30.14,
+      "end": 36.2,
+      "text": "The premium is automatically deducted from employees' salaries"
+    },
+    {
+      "start": 36.2,
+      "end": 40.9,
+      "text": "The self-employed belong to the National Health Insurance"
+    },
+    {
+      "start": 40.9,
+      "end": 44.3,
+      "text": "The system is complicated"
+    },
+    {
+      "start": 44.3,
+      "end": 49.02,
+      "text": "And what is apparently simple actually consists of many provisions"
+    },
+    {
+      "start": 49.02,
+      "end": 55.76,
+      "text": "A particular provision defines the scope of benefits that a subscriber can obtain."
+    },
+    {
+      "start": 56.06,
+      "end": 62.04,
+      "text": "As the nation ages, medical and pension spending is rapidly increasing."
+    },
+    {
+      "start": 62.04,
+      "end": 67.08,
+      "text": "The premiums paid by the working generation alone cannot cover it."
+    },
+    {
+      "start": 67.24,
+      "end": 70.72,
+      "text": "And the deficit has been growing."
+    },
+    {
+      "start": 71.82,
+      "end": 77.02,
+      "text": "Private insurance companies also offer a wide range of products."
+    },
+    {
+      "start": 77.34,
+      "end": 82.22,
+      "text": "Cancer insurance, life insurance, personal pensions"
+    },
+    {
+      "start": 82.22,
+      "end": 87.48,
+      "text": "A buyer can choose according to his or her needs"
+    },
+    {
+      "start": 87.48,
+      "end": 93.98,
+      "text": "Insurance is preparation for an unpredictable future"
+    },
+    {
+      "start": 93.98,
+      "end": 99.76,
+      "text": "Anyone may someday face illness or an accident"
+    },
+    {
+      "start": 99.76,
+      "end": 104.92,
+      "text": "So that a household is not ruined at that moment"
+    },
+    {
+      "start": 104.92,
+      "end": 108.52,
+      "text": "Society as a whole pools funds"
+    },
+    {
+      "start": 108.52,
+      "end": 111.7,
+      "text": "This is the essence of insurance"
+    }
+  ]
+}

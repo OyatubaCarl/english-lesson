@@ -1,0 +1,268 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H149.md",
+  "audio": "高校生編/suno_ready/generated/audio/H149/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 132.8,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9923,
+  "expected_words": 259,
+  "transcribed_words": 257,
+  "matched_words": 253,
+  "coverage": 0.9768,
+  "precision": 0.9844,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 258,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 37,
+      "length": 2,
+      "words": [
+        "twenty",
+        "two"
+      ]
+    },
+    {
+      "start": 230,
+      "length": 2,
+      "words": [
+        "whoever",
+        "works"
+      ]
+    },
+    {
+      "start": 57,
+      "length": 1,
+      "words": [
+        "too"
+      ]
+    },
+    {
+      "start": 228,
+      "length": 1,
+      "words": [
+        "in"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 57,
+      "actual_start": 55,
+      "expected": [
+        "too"
+      ],
+      "actual": [
+        "to"
+      ],
+      "actual_confidence": 0.7344,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 230,
+      "actual_start": 227,
+      "expected": [
+        "whoever",
+        "works"
+      ],
+      "actual": [
+        "you",
+        "ever",
+        "work"
+      ],
+      "actual_confidence": 0.8382,
+      "substitution_words": 2,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 37,
+      "actual_start": 37,
+      "expected": [
+        "twenty",
+        "two"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 228,
+      "actual_start": 226,
+      "expected": [
+        "in"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 3,
+  "suspicious_content_substitution": true,
+  "transcript": "Warehouse work is unglamorous but essential to society The storage of goods, sorting and delivery Without these, modern distribution does not work Having dropped out of high school I began working at a large Amazon warehouse at 22 At first it was simple manual labor But gradually, I learned the work Warehouse work has technical aspects to working Alongside robots, barcode scanners, picking systems Conveyors, I learned these material handling technologies From seven in the morning until six in the evening I walked around until my feet seemed to sink Sometimes my knees hurt At lunchtime I would eat my bento box On my lap and read messages from my partner But I was proud of this work Whatever goods we delivered, someone was waiting Someone's birthday gift, someone's urgent tool for work After five years of work, I got a promotion to Team Leader I was responsible for analyzing my team's work logs And proposed improvements for efficiency But the warehouse industry is now in the middle of great change Automation, AI, robots, simple labor is disappearing My intention is to continue studying at night school To keep up with this change I am not a university graduate But the experience I have gained on the floor is valuable I want to build a society where people are not judged By academic background, alone, a society Which you ever work sincerely is properly rewarded on my resume. My warehouse experience is written with pride. It was my starting point and the work that has supported my life.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.26,
+      "text": "Warehouse work is unglamorous but essential to society"
+    },
+    {
+      "start": 5.26,
+      "end": 8.94,
+      "text": "The storage of goods, sorting and delivery"
+    },
+    {
+      "start": 9.88,
+      "end": 13.1,
+      "text": "Without these, modern distribution does not work"
+    },
+    {
+      "start": 13.1,
+      "end": 14.8,
+      "text": "Having dropped out of high school"
+    },
+    {
+      "start": 14.8,
+      "end": 19.24,
+      "text": "I began working at a large Amazon warehouse at 22"
+    },
+    {
+      "start": 20.0,
+      "end": 22.68,
+      "text": "At first it was simple manual labor"
+    },
+    {
+      "start": 22.68,
+      "end": 25.12,
+      "text": "But gradually, I learned the work"
+    },
+    {
+      "start": 26.0,
+      "end": 29.36,
+      "text": "Warehouse work has technical aspects to working"
+    },
+    {
+      "start": 29.36,
+      "end": 33.38,
+      "text": "Alongside robots, barcode scanners, picking systems"
+    },
+    {
+      "start": 34.84,
+      "end": 38.16,
+      "text": "Conveyors, I learned these material handling technologies"
+    },
+    {
+      "start": 38.16,
+      "end": 40.96,
+      "text": "From seven in the morning until six in the evening"
+    },
+    {
+      "start": 40.96,
+      "end": 43.86,
+      "text": "I walked around until my feet seemed to sink"
+    },
+    {
+      "start": 43.86,
+      "end": 46.22,
+      "text": "Sometimes my knees hurt"
+    },
+    {
+      "start": 47.78,
+      "end": 50.72,
+      "text": "At lunchtime I would eat my bento box"
+    },
+    {
+      "start": 50.72,
+      "end": 53.34,
+      "text": "On my lap and read messages from my partner"
+    },
+    {
+      "start": 54.02,
+      "end": 56.26,
+      "text": "But I was proud of this work"
+    },
+    {
+      "start": 57.24,
+      "end": 60.14,
+      "text": "Whatever goods we delivered, someone was waiting"
+    },
+    {
+      "start": 60.14,
+      "end": 63.92,
+      "text": "Someone's birthday gift, someone's urgent tool for work"
+    },
+    {
+      "start": 63.92,
+      "end": 68.54,
+      "text": "After five years of work, I got a promotion to Team Leader"
+    },
+    {
+      "start": 70.16,
+      "end": 73.78,
+      "text": "I was responsible for analyzing my team's work logs"
+    },
+    {
+      "start": 73.78,
+      "end": 76.12,
+      "text": "And proposed improvements for efficiency"
+    },
+    {
+      "start": 77.84,
+      "end": 82.66,
+      "text": "But the warehouse industry is now in the middle of great change"
+    },
+    {
+      "start": 82.66,
+      "end": 87.48,
+      "text": "Automation, AI, robots, simple labor is disappearing"
+    },
+    {
+      "start": 87.48,
+      "end": 91.74,
+      "text": "My intention is to continue studying at night school"
+    },
+    {
+      "start": 91.74,
+      "end": 94.02,
+      "text": "To keep up with this change"
+    },
+    {
+      "start": 95.32,
+      "end": 97.82,
+      "text": "I am not a university graduate"
+    },
+    {
+      "start": 97.82,
+      "end": 101.82,
+      "text": "But the experience I have gained on the floor is valuable"
+    },
+    {
+      "start": 102.66,
+      "end": 106.02,
+      "text": "I want to build a society where people are not judged"
+    },
+    {
+      "start": 106.02,
+      "end": 109.44,
+      "text": "By academic background, alone, a society"
+    },
+    {
+      "start": 109.44,
+      "end": 116.62,
+      "text": "Which you ever work sincerely is properly rewarded on my resume."
+    },
+    {
+      "start": 117.18,
+      "end": 121.72,
+      "text": "My warehouse experience is written with pride."
+    },
+    {
+      "start": 123.14,
+      "end": 128.58,
+      "text": "It was my starting point and the work that has supported my life."
+    }
+  ]
+}

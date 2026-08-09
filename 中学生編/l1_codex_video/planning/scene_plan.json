@@ -1,0 +1,118 @@
+{
+  "project": "Teacher Tacos English 中学生編 L1",
+  "title_en": "My Family and Pochi",
+  "title_ja": "わたしの家族と Pochi",
+  "canvas": "1920x1080",
+  "fps": 30,
+  "generation_mode": "built-in image_gen",
+  "locked_rules": [
+    "Create one finished 16:9 story still, not a character sheet, collage, comic panel, UI, or storyboard.",
+    "Use dense children's storybook watercolor with fine hand-drawn ink lines, warm paper grain, soft daylight, and reassuring expressions.",
+    "Treat every provided person or dog reference as a locked identity. Preserve face, hair, body proportions, core clothing colors, and silhouette.",
+    "Use only the named characters for that scene. Do not duplicate characters or add unnamed people.",
+    "No subtitles, lyrics, captions, labels, speech bubbles, readable signs, logos, borders, or watermarks inside the image.",
+    "Fill the frame naturally; subtitles will be added later in video editing."
+  ],
+  "scenes": [
+    {
+      "id": "01_ken_intro",
+      "start": 0.0,
+      "end": 6.655,
+      "references": ["references/ken_ref.png"],
+      "primary_request": "Ken stands on a sunny lane in a small Japanese village, smiling and giving a modest friendly wave as he introduces himself.",
+      "scene_backdrop": "A peaceful rural village in spring, tiled roofs, low green hills, a few flowering trees and a clear blue sky.",
+      "composition": "16:9 medium-wide establishing shot; Ken is large and readable near the foreground, backpack visible, with enough village depth to establish where he lives.",
+      "mood": "Bright morning, welcoming, curious, calm."
+    },
+    {
+      "id": "02_family_home",
+      "start": 6.655,
+      "end": 14.583,
+      "references": [
+        "references/ken_ref.png",
+        "references/father_ref.png",
+        "references/mother_ref.png",
+        "references/brother_ref.png",
+        "references/sister_ref.png"
+      ],
+      "primary_request": "Exactly five family members—Ken, father, mother, older brother, and sister—share a warm candid moment outside their modest village home.",
+      "scene_backdrop": "A welcoming wooden family house with a small garden, spring flowers, and village hills beyond.",
+      "composition": "16:9 wide family scene, all five full or three-quarter figures clearly visible, Ken naturally included rather than posed as a formal lineup.",
+      "mood": "Lively home, affectionate, safe, cheerful."
+    },
+    {
+      "id": "03_pochi_intro",
+      "start": 14.583,
+      "end": 19.584,
+      "references": ["references/pochi_ref.png"],
+      "primary_request": "Pochi stands in the family garden, looking up with enormous glossy black eyes and a playful, lovable expression.",
+      "scene_backdrop": "Soft-focus home garden with clover, small flowers, warm wooden porch, and gentle afternoon light.",
+      "composition": "16:9 low-angle close-to-medium portrait; Pochi is the clear single subject, full body and curled tail visible.",
+      "mood": "Adorable, intimate, playful."
+    },
+    {
+      "id": "04_family_loves_pochi",
+      "start": 19.584,
+      "end": 25.765,
+      "references": [
+        "references/ken_ref.png",
+        "references/sister_ref.png",
+        "references/mother_ref.png",
+        "references/pochi_ref.png"
+      ],
+      "primary_request": "Ken, his sister, and their mother crouch and laugh together while affectionately petting Pochi in the garden.",
+      "scene_backdrop": "The same warm family garden and porch, with sunlit leaves and a few flowers.",
+      "composition": "16:9 medium group shot focused on faces, hands, and Pochi; exactly three humans and one dog.",
+      "mood": "Shared affection, laughter, warmth."
+    },
+    {
+      "id": "05_walk_to_school",
+      "start": 25.765,
+      "end": 31.22,
+      "references": [
+        "references/ken_ref.png",
+        "references/sister_ref.png"
+      ],
+      "primary_request": "Ken and his sister walk side by side toward school, talking happily with their backpacks as morning sunlight filters through the trees.",
+      "scene_backdrop": "Tree-lined village road leading toward a small school gate in the distance, spring greenery and soft petals.",
+      "composition": "16:9 medium-wide walking scene, both characters large and easy to recognize, natural forward motion.",
+      "mood": "Fresh morning, companionship, everyday adventure."
+    },
+    {
+      "id": "06_music_and_books",
+      "start": 31.22,
+      "end": 33.952,
+      "references": [
+        "references/ken_ref.png",
+        "references/brother_ref.png"
+      ],
+      "primary_request": "In a cozy living room, Ken enjoys music through simple over-ear headphones while his older brother relaxes nearby reading a book.",
+      "scene_backdrop": "Warm family living room with wooden shelves, a small music player, books, houseplants, and afternoon window light.",
+      "composition": "16:9 medium two-character scene; Ken and the brother have separate clear activities but remain part of one natural room.",
+      "mood": "Relaxed hobbies, quiet happiness."
+    },
+    {
+      "id": "07_sister_flowers",
+      "start": 33.952,
+      "end": 37.387,
+      "references": ["references/sister_ref.png"],
+      "primary_request": "Ken's sister kneels beside a flower bed, gently admiring colorful blossoms with an absorbed happy expression.",
+      "scene_backdrop": "Family garden at golden late-afternoon light, varied flowers, leaves, and a glimpse of the wooden house.",
+      "composition": "16:9 medium story still; the sister and flowers are both large and readable.",
+      "mood": "Gentle wonder, peaceful, warm."
+    },
+    {
+      "id": "08_park_play",
+      "start": 37.387,
+      "end": 43.328435,
+      "references": [
+        "references/ken_ref.png",
+        "references/pochi_ref.png"
+      ],
+      "primary_request": "Ken runs across a sunny neighborhood park while Pochi happily chases a blue flying disc beside him.",
+      "scene_backdrop": "Open green park with trees, a small slide and swings far in the background, village hills under a bright sky.",
+      "composition": "16:9 dynamic wide shot, Ken and Pochi moving together across the frame, joyful readable faces, flying disc clearly visible.",
+      "mood": "Energetic finale, freedom, friendship, a very good day."
+    }
+  ]
+}

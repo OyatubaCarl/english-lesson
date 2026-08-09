@@ -1,0 +1,1052 @@
+{
+  "lesson": "H097",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h097_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H097/candidate3-full.mp3",
+  "source_audio_sha256": "4f922e6a198bbe1a347bc49170158d3fcea7e7d1dbd55a0ca5e5a3705cf97528",
+  "bpm": 85.94,
+  "exact_word_match": true,
+  "word_count": 154,
+  "line_count": 14,
+  "first_word_start": 5.201,
+  "last_word_end": 108.879,
+  "lines": [
+    {
+      "line": 1,
+      "english": "On Earth, there are more than 6,000 known species of mammals alone.",
+      "word_timings": [
+        {
+          "word": "On",
+          "display_index": 0,
+          "start": 5.201,
+          "end": 5.501
+        },
+        {
+          "word": "Earth,",
+          "display_index": 1,
+          "start": 5.501,
+          "end": 6.501
+        },
+        {
+          "word": "there",
+          "display_index": 2,
+          "start": 6.501,
+          "end": 6.725
+        },
+        {
+          "word": "are",
+          "display_index": 3,
+          "start": 6.725,
+          "end": 6.841
+        },
+        {
+          "word": "more",
+          "display_index": 4,
+          "start": 6.841,
+          "end": 7.061
+        },
+        {
+          "word": "than",
+          "display_index": 5,
+          "start": 7.061,
+          "end": 7.301
+        },
+        {
+          "word": "6,000",
+          "display_index": 6,
+          "start": 7.301,
+          "end": 7.901
+        },
+        {
+          "word": "6,000",
+          "display_index": 6,
+          "start": 7.901,
+          "end": 8.422
+        },
+        {
+          "word": "known",
+          "display_index": 7,
+          "start": 8.422,
+          "end": 8.822
+        },
+        {
+          "word": "species",
+          "display_index": 8,
+          "start": 8.822,
+          "end": 10.182
+        },
+        {
+          "word": "of",
+          "display_index": 9,
+          "start": 10.182,
+          "end": 10.342
+        },
+        {
+          "word": "mammals",
+          "display_index": 10,
+          "start": 10.342,
+          "end": 10.942
+        },
+        {
+          "word": "alone.",
+          "display_index": 11,
+          "start": 10.942,
+          "end": 12.014
+        }
+      ],
+      "start": 5.201,
+      "end": 12.014
+    },
+    {
+      "line": 2,
+      "english": "The number of insect species is estimated in the millions.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 12.314,
+          "end": 12.422
+        },
+        {
+          "word": "number",
+          "display_index": 1,
+          "start": 12.422,
+          "end": 12.862
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 12.862,
+          "end": 13.022
+        },
+        {
+          "word": "insect",
+          "display_index": 3,
+          "start": 13.022,
+          "end": 13.642
+        },
+        {
+          "word": "species",
+          "display_index": 4,
+          "start": 13.642,
+          "end": 14.764
+        },
+        {
+          "word": "is",
+          "display_index": 5,
+          "start": 14.764,
+          "end": 14.923
+        },
+        {
+          "word": "estimated",
+          "display_index": 6,
+          "start": 14.923,
+          "end": 15.643
+        },
+        {
+          "word": "in",
+          "display_index": 7,
+          "start": 15.643,
+          "end": 15.779
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 15.779,
+          "end": 15.903
+        },
+        {
+          "word": "millions.",
+          "display_index": 9,
+          "start": 15.903,
+          "end": 17.183
+        }
+      ],
+      "start": 12.314,
+      "end": 17.183
+    },
+    {
+      "line": 3,
+      "english": "Tropical rainforests cover only about six percent of the Earth's surface, yet more than half of all species dwell there.",
+      "word_timings": [
+        {
+          "word": "Tropical",
+          "display_index": 0,
+          "start": 17.483,
+          "end": 18.043
+        },
+        {
+          "word": "rainforests",
+          "display_index": 1,
+          "start": 18.043,
+          "end": 18.983
+        },
+        {
+          "word": "cover",
+          "display_index": 2,
+          "start": 18.983,
+          "end": 19.724
+        },
+        {
+          "word": "only",
+          "display_index": 3,
+          "start": 19.724,
+          "end": 20.004
+        },
+        {
+          "word": "about",
+          "display_index": 4,
+          "start": 20.004,
+          "end": 20.464
+        },
+        {
+          "word": "six",
+          "display_index": 5,
+          "start": 20.464,
+          "end": 20.804
+        },
+        {
+          "word": "percent",
+          "display_index": 6,
+          "start": 20.804,
+          "end": 21.384
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 21.384,
+          "end": 21.542
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 21.542,
+          "end": 21.764
+        },
+        {
+          "word": "Earth's",
+          "display_index": 9,
+          "start": 21.764,
+          "end": 22.184
+        },
+        {
+          "word": "surface,",
+          "display_index": 10,
+          "start": 22.184,
+          "end": 23.284
+        },
+        {
+          "word": "yet",
+          "display_index": 11,
+          "start": 23.284,
+          "end": 23.524
+        },
+        {
+          "word": "more",
+          "display_index": 12,
+          "start": 23.524,
+          "end": 23.804
+        },
+        {
+          "word": "than",
+          "display_index": 13,
+          "start": 23.804,
+          "end": 24.024
+        },
+        {
+          "word": "half",
+          "display_index": 14,
+          "start": 24.024,
+          "end": 24.424
+        },
+        {
+          "word": "of",
+          "display_index": 15,
+          "start": 24.424,
+          "end": 24.624
+        },
+        {
+          "word": "all",
+          "display_index": 16,
+          "start": 24.624,
+          "end": 24.904
+        },
+        {
+          "word": "species",
+          "display_index": 17,
+          "start": 24.904,
+          "end": 25.585
+        },
+        {
+          "word": "dwell",
+          "display_index": 18,
+          "start": 25.585,
+          "end": 25.945
+        },
+        {
+          "word": "there.",
+          "display_index": 19,
+          "start": 25.945,
+          "end": 27.445
+        }
+      ],
+      "start": 17.483,
+      "end": 27.445
+    },
+    {
+      "line": 4,
+      "english": "These hotspots of biodiversity are shrinking rapidly.",
+      "word_timings": [
+        {
+          "word": "These",
+          "display_index": 0,
+          "start": 28.185,
+          "end": 28.485
+        },
+        {
+          "word": "hotspots",
+          "display_index": 1,
+          "start": 28.485,
+          "end": 29.745
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 29.745,
+          "end": 29.905
+        },
+        {
+          "word": "biodiversity",
+          "display_index": 3,
+          "start": 29.905,
+          "end": 32.166
+        },
+        {
+          "word": "are",
+          "display_index": 4,
+          "start": 32.166,
+          "end": 32.306
+        },
+        {
+          "word": "shrinking",
+          "display_index": 5,
+          "start": 32.306,
+          "end": 33.086
+        },
+        {
+          "word": "rapidly.",
+          "display_index": 6,
+          "start": 33.086,
+          "end": 34.586
+        }
+      ],
+      "start": 28.185,
+      "end": 34.586
+    },
+    {
+      "line": 5,
+      "english": "The causes are numerous.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 38.084,
+          "end": 38.207
+        },
+        {
+          "word": "causes",
+          "display_index": 1,
+          "start": 38.207,
+          "end": 38.788
+        },
+        {
+          "word": "are",
+          "display_index": 2,
+          "start": 38.788,
+          "end": 38.967
+        },
+        {
+          "word": "numerous.",
+          "display_index": 3,
+          "start": 38.967,
+          "end": 39.867
+        }
+      ],
+      "start": 38.084,
+      "end": 39.867
+    },
+    {
+      "line": 6,
+      "english": "Logging, conversion to farmland, urban development.",
+      "word_timings": [
+        {
+          "word": "Logging,",
+          "display_index": 0,
+          "start": 40.167,
+          "end": 40.847
+        },
+        {
+          "word": "conversion",
+          "display_index": 1,
+          "start": 40.847,
+          "end": 41.556
+        },
+        {
+          "word": "to",
+          "display_index": 2,
+          "start": 41.556,
+          "end": 41.727
+        },
+        {
+          "word": "farmland,",
+          "display_index": 3,
+          "start": 41.727,
+          "end": 42.508
+        },
+        {
+          "word": "urban",
+          "display_index": 4,
+          "start": 42.508,
+          "end": 42.988
+        },
+        {
+          "word": "development.",
+          "display_index": 5,
+          "start": 42.988,
+          "end": 44.408
+        }
+      ],
+      "start": 40.167,
+      "end": 44.408
+    },
+    {
+      "line": 7,
+      "english": "Human activity is steadily taking the habitat of animals away.",
+      "word_timings": [
+        {
+          "word": "Human",
+          "display_index": 0,
+          "start": 44.708,
+          "end": 45.128
+        },
+        {
+          "word": "activity",
+          "display_index": 1,
+          "start": 45.128,
+          "end": 45.799
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 45.799,
+          "end": 45.879
+        },
+        {
+          "word": "steadily",
+          "display_index": 3,
+          "start": 45.868,
+          "end": 46.448
+        },
+        {
+          "word": "taking",
+          "display_index": 4,
+          "start": 46.448,
+          "end": 47.186
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 47.186,
+          "end": 47.328
+        },
+        {
+          "word": "habitat",
+          "display_index": 6,
+          "start": 47.328,
+          "end": 48.289
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 48.289,
+          "end": 48.489
+        },
+        {
+          "word": "animals",
+          "display_index": 8,
+          "start": 48.489,
+          "end": 49.169
+        },
+        {
+          "word": "away.",
+          "display_index": 9,
+          "start": 49.169,
+          "end": 50.051
+        }
+      ],
+      "start": 44.708,
+      "end": 50.051
+    },
+    {
+      "line": 8,
+      "english": "The oceans are also vulnerable.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 50.351,
+          "end": 50.549
+        },
+        {
+          "word": "oceans",
+          "display_index": 1,
+          "start": 50.549,
+          "end": 51.355
+        },
+        {
+          "word": "are",
+          "display_index": 2,
+          "start": 51.355,
+          "end": 51.629
+        },
+        {
+          "word": "also",
+          "display_index": 3,
+          "start": 51.629,
+          "end": 52.069
+        },
+        {
+          "word": "vulnerable.",
+          "display_index": 4,
+          "start": 52.069,
+          "end": 52.769
+        }
+      ],
+      "start": 50.351,
+      "end": 52.769
+    },
+    {
+      "line": 9,
+      "english": "Plastic pollution harms whales and turtles, and the chemicals carried by the tide threaten the food chain.",
+      "word_timings": [
+        {
+          "word": "Plastic",
+          "display_index": 0,
+          "start": 53.069,
+          "end": 53.79
+        },
+        {
+          "word": "pollution",
+          "display_index": 1,
+          "start": 53.79,
+          "end": 54.33
+        },
+        {
+          "word": "harms",
+          "display_index": 2,
+          "start": 54.33,
+          "end": 54.85
+        },
+        {
+          "word": "whales",
+          "display_index": 3,
+          "start": 54.85,
+          "end": 55.41
+        },
+        {
+          "word": "and",
+          "display_index": 4,
+          "start": 55.41,
+          "end": 55.67
+        },
+        {
+          "word": "turtles,",
+          "display_index": 5,
+          "start": 55.67,
+          "end": 56.13
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 56.13,
+          "end": 56.259
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 56.259,
+          "end": 56.39
+        },
+        {
+          "word": "chemicals",
+          "display_index": 8,
+          "start": 56.39,
+          "end": 57.07
+        },
+        {
+          "word": "carried",
+          "display_index": 9,
+          "start": 57.07,
+          "end": 57.47
+        },
+        {
+          "word": "by",
+          "display_index": 10,
+          "start": 57.47,
+          "end": 57.656
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 57.656,
+          "end": 57.79
+        },
+        {
+          "word": "tide",
+          "display_index": 12,
+          "start": 57.79,
+          "end": 58.31
+        },
+        {
+          "word": "threaten",
+          "display_index": 13,
+          "start": 58.31,
+          "end": 58.865
+        },
+        {
+          "word": "the",
+          "display_index": 14,
+          "start": 58.865,
+          "end": 59.011
+        },
+        {
+          "word": "food",
+          "display_index": 15,
+          "start": 59.011,
+          "end": 59.371
+        },
+        {
+          "word": "chain.",
+          "display_index": 16,
+          "start": 59.371,
+          "end": 60.791
+        }
+      ],
+      "start": 53.069,
+      "end": 60.791
+    },
+    {
+      "line": 10,
+      "english": "But conservation efforts are beginning to yield results.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 61.091,
+          "end": 61.271
+        },
+        {
+          "word": "conservation",
+          "display_index": 1,
+          "start": 61.271,
+          "end": 62.591
+        },
+        {
+          "word": "efforts",
+          "display_index": 2,
+          "start": 62.591,
+          "end": 63.709
+        },
+        {
+          "word": "are",
+          "display_index": 3,
+          "start": 63.709,
+          "end": 63.891
+        },
+        {
+          "word": "beginning",
+          "display_index": 4,
+          "start": 63.891,
+          "end": 64.529
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 64.529,
+          "end": 64.772
+        },
+        {
+          "word": "yield",
+          "display_index": 6,
+          "start": 64.772,
+          "end": 65.792
+        },
+        {
+          "word": "results.",
+          "display_index": 7,
+          "start": 65.792,
+          "end": 67.292
+        }
+      ],
+      "start": 61.091,
+      "end": 67.292
+    },
+    {
+      "line": 11,
+      "english": "One Indigenous community has protected the forest of its ancestors and established a pioneering model of community-led conservation.",
+      "word_timings": [
+        {
+          "word": "One",
+          "display_index": 0,
+          "start": 69.372,
+          "end": 69.552
+        },
+        {
+          "word": "Indigenous",
+          "display_index": 1,
+          "start": 69.552,
+          "end": 70.213
+        },
+        {
+          "word": "community",
+          "display_index": 2,
+          "start": 70.213,
+          "end": 71.253
+        },
+        {
+          "word": "has",
+          "display_index": 3,
+          "start": 71.253,
+          "end": 71.573
+        },
+        {
+          "word": "protected",
+          "display_index": 4,
+          "start": 71.573,
+          "end": 72.306
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 72.306,
+          "end": 72.473
+        },
+        {
+          "word": "forest",
+          "display_index": 6,
+          "start": 72.473,
+          "end": 73.133
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 73.133,
+          "end": 73.393
+        },
+        {
+          "word": "its",
+          "display_index": 8,
+          "start": 73.393,
+          "end": 73.613
+        },
+        {
+          "word": "ancestors",
+          "display_index": 9,
+          "start": 73.613,
+          "end": 74.973
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 74.973,
+          "end": 75.113
+        },
+        {
+          "word": "established",
+          "display_index": 11,
+          "start": 75.113,
+          "end": 75.8
+        },
+        {
+          "word": "a",
+          "display_index": 12,
+          "start": 75.8,
+          "end": 75.954
+        },
+        {
+          "word": "pioneering",
+          "display_index": 13,
+          "start": 75.954,
+          "end": 77.194
+        },
+        {
+          "word": "model",
+          "display_index": 14,
+          "start": 77.194,
+          "end": 77.834
+        },
+        {
+          "word": "of",
+          "display_index": 15,
+          "start": 77.834,
+          "end": 78.034
+        },
+        {
+          "word": "community-led",
+          "display_index": 16,
+          "start": 78.034,
+          "end": 79.094
+        },
+        {
+          "word": "community-led",
+          "display_index": 16,
+          "start": 79.094,
+          "end": 79.394
+        },
+        {
+          "word": "conservation.",
+          "display_index": 17,
+          "start": 79.394,
+          "end": 80.894
+        }
+      ],
+      "start": 69.372,
+      "end": 80.894
+    },
+    {
+      "line": 12,
+      "english": "An ecosystem is built on a subtle balance.",
+      "word_timings": [
+        {
+          "word": "An",
+          "display_index": 0,
+          "start": 82.135,
+          "end": 82.335
+        },
+        {
+          "word": "ecosystem",
+          "display_index": 1,
+          "start": 82.335,
+          "end": 84.09
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 84.09,
+          "end": 84.375
+        },
+        {
+          "word": "built",
+          "display_index": 3,
+          "start": 84.375,
+          "end": 84.835
+        },
+        {
+          "word": "on",
+          "display_index": 4,
+          "start": 84.835,
+          "end": 85.005
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 85.005,
+          "end": 85.135
+        },
+        {
+          "word": "subtle",
+          "display_index": 6,
+          "start": 85.135,
+          "end": 85.575
+        },
+        {
+          "word": "balance.",
+          "display_index": 7,
+          "start": 85.575,
+          "end": 87.075
+        }
+      ],
+      "start": 82.135,
+      "end": 87.075
+    },
+    {
+      "line": 13,
+      "english": "The loss of one species affects others in a chain.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 87.766,
+          "end": 87.956
+        },
+        {
+          "word": "loss",
+          "display_index": 1,
+          "start": 87.956,
+          "end": 88.336
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 88.336,
+          "end": 88.596
+        },
+        {
+          "word": "one",
+          "display_index": 3,
+          "start": 88.596,
+          "end": 88.896
+        },
+        {
+          "word": "species",
+          "display_index": 4,
+          "start": 88.896,
+          "end": 92.116
+        },
+        {
+          "word": "affects",
+          "display_index": 5,
+          "start": 92.116,
+          "end": 92.817
+        },
+        {
+          "word": "others",
+          "display_index": 6,
+          "start": 92.817,
+          "end": 93.537
+        },
+        {
+          "word": "in",
+          "display_index": 7,
+          "start": 93.537,
+          "end": 93.67
+        },
+        {
+          "word": "a",
+          "display_index": 8,
+          "start": 93.67,
+          "end": 93.877
+        },
+        {
+          "word": "chain.",
+          "display_index": 9,
+          "start": 93.877,
+          "end": 95.377
+        }
+      ],
+      "start": 87.766,
+      "end": 95.377
+    },
+    {
+      "line": 14,
+      "english": "Whether we can find the wisdom to coexist with nature will determine the future of this planet.",
+      "word_timings": [
+        {
+          "word": "Whether",
+          "display_index": 0,
+          "start": 97.357,
+          "end": 97.717
+        },
+        {
+          "word": "we",
+          "display_index": 1,
+          "start": 97.717,
+          "end": 97.897
+        },
+        {
+          "word": "can",
+          "display_index": 2,
+          "start": 97.897,
+          "end": 98.197
+        },
+        {
+          "word": "find",
+          "display_index": 3,
+          "start": 98.197,
+          "end": 98.782
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 98.782,
+          "end": 98.938
+        },
+        {
+          "word": "wisdom",
+          "display_index": 5,
+          "start": 98.938,
+          "end": 100.35
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 100.35,
+          "end": 100.498
+        },
+        {
+          "word": "coexist",
+          "display_index": 7,
+          "start": 100.498,
+          "end": 101.658
+        },
+        {
+          "word": "with",
+          "display_index": 8,
+          "start": 101.658,
+          "end": 101.878
+        },
+        {
+          "word": "nature",
+          "display_index": 9,
+          "start": 101.878,
+          "end": 103.778
+        },
+        {
+          "word": "will",
+          "display_index": 10,
+          "start": 103.778,
+          "end": 103.999
+        },
+        {
+          "word": "determine",
+          "display_index": 11,
+          "start": 103.999,
+          "end": 104.769
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 104.769,
+          "end": 104.959
+        },
+        {
+          "word": "future",
+          "display_index": 13,
+          "start": 104.959,
+          "end": 106.939
+        },
+        {
+          "word": "of",
+          "display_index": 14,
+          "start": 106.939,
+          "end": 107.119
+        },
+        {
+          "word": "this",
+          "display_index": 15,
+          "start": 107.119,
+          "end": 107.379
+        },
+        {
+          "word": "planet.",
+          "display_index": 16,
+          "start": 107.379,
+          "end": 108.879
+        }
+      ],
+      "start": 97.357,
+      "end": 108.879
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

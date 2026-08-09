@@ -1,0 +1,252 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H125.md",
+  "audio": "高校生編/suno_ready/generated/audio/H125/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 132.481,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0044,
+  "expected_words": 228,
+  "transcribed_words": 229,
+  "matched_words": 224,
+  "coverage": 0.9825,
+  "precision": 0.9782,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 227,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 22,
+      "length": 1,
+      "words": [
+        "the"
+      ]
+    },
+    {
+      "start": 64,
+      "length": 1,
+      "words": [
+        "shaken"
+      ]
+    },
+    {
+      "start": 67,
+      "length": 1,
+      "words": [
+        "judgment"
+      ]
+    },
+    {
+      "start": 69,
+      "length": 1,
+      "words": [
+        "please"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 22,
+      "actual_start": 22,
+      "expected": [
+        "the"
+      ],
+      "actual": [
+        "that"
+      ],
+      "actual_confidence": 0.4517,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 64,
+      "actual_start": 64,
+      "expected": [
+        "shaken"
+      ],
+      "actual": [
+        "shake",
+        "and"
+      ],
+      "actual_confidence": 0.775,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 67,
+      "actual_start": 68,
+      "expected": [
+        "judgment"
+      ],
+      "actual": [
+        "judgement"
+      ],
+      "actual_confidence": 0.4606,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 69,
+      "actual_start": 70,
+      "expected": [
+        "please"
+      ],
+      "actual": [
+        "police"
+      ],
+      "actual_confidence": 0.9787,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "The methods of fraud are becoming more sophisticated year by year. Phone calls, emails, social media. Criminals cleverly target human vulnerabilities, especially that it's me. It's me fraud, which targets the elderly. Has been a social issue for years The caller pretends to be a relative and claims things like I caused a traffic accident Or I took money from the company The victim shake and loses normal judgement Told police send the money immediately They do as instructed Sometimes the caller pretends to be a police officer or a bank agent They warn your account has been used fraudulently And try to obtain your password or verification code Even if told your family is in trouble First calm down Immediately call the family member directly to confirm If the phone number is not identical, be suspicious Banks and government offices never ask For personally sensitive information by phone If you are asked, it is almost certainly fraud If you are a victim, some people feel shame and cannot talk to anyone But it is important not to carry it alone Police hotlines and consumer centers can provide help Fraudsters exploit human kindness and goodwill The feeling for my family is precious But do not let that feeling prevent you from pausing to verify the facts With sensible judgment and action You can protect both yourself and your family",
+  "segments": [
+    {
+      "start": 9.74,
+      "end": 15.04,
+      "text": "The methods of fraud are becoming more sophisticated year by year."
+    },
+    {
+      "start": 16.0,
+      "end": 18.7,
+      "text": "Phone calls, emails, social media."
+    },
+    {
+      "start": 19.6,
+      "end": 24.84,
+      "text": "Criminals cleverly target human vulnerabilities, especially that it's me."
+    },
+    {
+      "start": 25.16,
+      "end": 27.7,
+      "text": "It's me fraud, which targets the elderly."
+    },
+    {
+      "start": 27.7,
+      "end": 31.44,
+      "text": "Has been a social issue for years"
+    },
+    {
+      "start": 33.0,
+      "end": 38.56,
+      "text": "The caller pretends to be a relative and claims things like I caused a traffic accident"
+    },
+    {
+      "start": 38.56,
+      "end": 41.76,
+      "text": "Or I took money from the company"
+    },
+    {
+      "start": 41.76,
+      "end": 45.26,
+      "text": "The victim shake and loses normal judgement"
+    },
+    {
+      "start": 45.26,
+      "end": 48.02,
+      "text": "Told police send the money immediately"
+    },
+    {
+      "start": 48.02,
+      "end": 50.36,
+      "text": "They do as instructed"
+    },
+    {
+      "start": 51.72,
+      "end": 57.08,
+      "text": "Sometimes the caller pretends to be a police officer or a bank agent"
+    },
+    {
+      "start": 57.08,
+      "end": 60.88,
+      "text": "They warn your account has been used fraudulently"
+    },
+    {
+      "start": 60.88,
+      "end": 64.96,
+      "text": "And try to obtain your password or verification code"
+    },
+    {
+      "start": 64.96,
+      "end": 67.98,
+      "text": "Even if told your family is in trouble"
+    },
+    {
+      "start": 69.08,
+      "end": 70.6,
+      "text": "First calm down"
+    },
+    {
+      "start": 72.06,
+      "end": 75.84,
+      "text": "Immediately call the family member directly to confirm"
+    },
+    {
+      "start": 75.84,
+      "end": 79.5,
+      "text": "If the phone number is not identical, be suspicious"
+    },
+    {
+      "start": 80.08,
+      "end": 83.74,
+      "text": "Banks and government offices never ask"
+    },
+    {
+      "start": 83.74,
+      "end": 87.28,
+      "text": "For personally sensitive information by phone"
+    },
+    {
+      "start": 87.28,
+      "end": 91.9,
+      "text": "If you are asked, it is almost certainly fraud"
+    },
+    {
+      "start": 93.66,
+      "end": 98.46,
+      "text": "If you are a victim, some people feel shame and cannot talk to anyone"
+    },
+    {
+      "start": 98.46,
+      "end": 102.6,
+      "text": "But it is important not to carry it alone"
+    },
+    {
+      "start": 102.6,
+      "end": 106.14,
+      "text": "Police hotlines and consumer centers can provide help"
+    },
+    {
+      "start": 106.14,
+      "end": 109.58,
+      "text": "Fraudsters exploit human kindness and goodwill"
+    },
+    {
+      "start": 109.58,
+      "end": 113.14,
+      "text": "The feeling for my family is precious"
+    },
+    {
+      "start": 113.14,
+      "end": 118.68,
+      "text": "But do not let that feeling prevent you from pausing to verify the facts"
+    },
+    {
+      "start": 118.68,
+      "end": 121.42,
+      "text": "With sensible judgment and action"
+    },
+    {
+      "start": 121.42,
+      "end": 125.06,
+      "text": "You can protect both yourself and your family"
+    }
+  ]
+}

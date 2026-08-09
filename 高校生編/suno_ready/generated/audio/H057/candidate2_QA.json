@@ -1,0 +1,253 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H057.md",
+  "audio": "高校生編/suno_ready/generated/audio/H057/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 164.68,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0144,
+  "expected_words": 208,
+  "transcribed_words": 211,
+  "matched_words": 202,
+  "coverage": 0.9712,
+  "precision": 0.9573,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 207,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 164,
+      "length": 2,
+      "words": [
+        "enough",
+        "reward"
+      ]
+    },
+    {
+      "start": 21,
+      "length": 1,
+      "words": [
+        "nineteenth"
+      ]
+    },
+    {
+      "start": 25,
+      "length": 1,
+      "words": [
+        "twentieth"
+      ]
+    },
+    {
+      "start": 29,
+      "length": 1,
+      "words": [
+        "immigrant"
+      ]
+    },
+    {
+      "start": 148,
+      "length": 1,
+      "words": [
+        "wardenclyffe"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 21,
+      "actual_start": 21,
+      "expected": [
+        "nineteenth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.9497,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 25,
+      "actual_start": 25,
+      "expected": [
+        "twentieth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.9939,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 148,
+      "actual_start": 147,
+      "expected": [
+        "wardenclyffe"
+      ],
+      "actual": [
+        "wharton",
+        "clife"
+      ],
+      "actual_confidence": 0.6957,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 164,
+      "actual_start": 164,
+      "expected": [
+        "enough",
+        "reward"
+      ],
+      "actual": [
+        "in",
+        "a",
+        "free",
+        "ward"
+      ],
+      "actual_confidence": 0.8578,
+      "substitution_words": 2,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 208,
+      "actual_start": 210,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.0231
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 29,
+      "actual_start": 29,
+      "expected": [
+        "immigrant"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 3,
+  "suspicious_substitution_words": 4,
+  "suspicious_content_substitution": true,
+  "transcript": "Nikola Tesla was born in 1856 in Smiljan, in what is now Croatia. He later moved to America and, from the late 19th to the early 20th century, became an inventor who transformed the world of electricity. His greatest contribution was to make alternating current electricity practical. At the time, Thomas Edison was promoting direct current. Tesla argued for the advantage of alternating current for long-distance transmission, and a war of currents arose between them. As a result, the alternating current system became the standard of the world's power grid. Today, almost all of the electricity that reaches our homes owes much to the vision that Tesla pursued. Tesla's imagination did not stop there He had already envisioned the foundations of wireless communication Wireless power transmission, radio and radar in Edison's age However, his life was never happy His business partnership did not go well And his Wharton Clife Tower project collapsed for lack of funding Many of his patents did not bring him in a free ward Tesla died in 1943 in a hotel room in New York in poverty The recognition of his genius spread widely only after his death Today we drive cars that bear his name and live within part of the future that he had imagined You",
+  "segments": [
+    {
+      "start": 12.04,
+      "end": 17.88,
+      "text": "Nikola Tesla was born in 1856 in Smiljan, in what is now Croatia."
+    },
+    {
+      "start": 19.8,
+      "end": 27.12,
+      "text": "He later moved to America and, from the late 19th to the early 20th century, became an"
+    },
+    {
+      "start": 27.35,
+      "end": 30.93,
+      "text": "inventor who transformed the world of electricity."
+    },
+    {
+      "start": 33.25,
+      "end": 36.07,
+      "text": "His greatest contribution was to make"
+    },
+    {
+      "start": 36.07,
+      "end": 38.65,
+      "text": "alternating current electricity practical."
+    },
+    {
+      "start": 39.73,
+      "end": 43.97,
+      "text": "At the time, Thomas Edison was promoting direct current."
+    },
+    {
+      "start": 44.81,
+      "end": 48.29,
+      "text": "Tesla argued for the advantage of alternating current"
+    },
+    {
+      "start": 48.29,
+      "end": 50.37,
+      "text": "for long-distance transmission,"
+    },
+    {
+      "start": 50.37,
+      "end": 55.15,
+      "text": "and a war of currents arose between them."
+    },
+    {
+      "start": 59.37,
+      "end": 66.57,
+      "text": "As a result, the alternating current system became the standard of the world's power grid."
+    },
+    {
+      "start": 67.45,
+      "end": 77.13,
+      "text": "Today, almost all of the electricity that reaches our homes owes much to the vision that Tesla pursued."
+    },
+    {
+      "start": 78.41,
+      "end": 82.71,
+      "text": "Tesla's imagination did not stop there"
+    },
+    {
+      "start": 85.67,
+      "end": 90.31,
+      "text": "He had already envisioned the foundations of wireless communication"
+    },
+    {
+      "start": 90.31,
+      "end": 95.07,
+      "text": "Wireless power transmission, radio and radar in Edison's age"
+    },
+    {
+      "start": 95.07,
+      "end": 99.27,
+      "text": "However, his life was never happy"
+    },
+    {
+      "start": 99.27,
+      "end": 103.93,
+      "text": "His business partnership did not go well"
+    },
+    {
+      "start": 103.93,
+      "end": 111.39,
+      "text": "And his Wharton Clife Tower project collapsed for lack of funding"
+    },
+    {
+      "start": 116.93,
+      "end": 121.57,
+      "text": "Many of his patents did not bring him in a free ward"
+    },
+    {
+      "start": 121.57,
+      "end": 128.87,
+      "text": "Tesla died in 1943 in a hotel room in New York in poverty"
+    },
+    {
+      "start": 128.87,
+      "end": 137.71,
+      "text": "The recognition of his genius spread widely only after his death"
+    },
+    {
+      "start": 141.35,
+      "end": 153.73,
+      "text": "Today we drive cars that bear his name and live within part of the future that he had imagined"
+    },
+    {
+      "start": 158.87,
+      "end": 159.95,
+      "text": "You"
+    }
+  ]
+}

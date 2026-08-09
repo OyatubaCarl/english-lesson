@@ -1,0 +1,1346 @@
+{
+  "lesson": "H089",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h089_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H089/candidate1-full.mp3",
+  "source_audio_sha256": "42604ac311e5610c64df6fc8393851f33a0c053e5e80a39768cba6d784ab86fe",
+  "bpm": 87.9,
+  "exact_word_match": true,
+  "word_count": 199,
+  "line_count": 17,
+  "first_word_start": 10.422,
+  "last_word_end": 127.438,
+  "lines": [
+    {
+      "line": 1,
+      "english": "In a democratic nation, voting is one of the most fundamental civic acts.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 10.422,
+          "end": 10.534
+        },
+        {
+          "word": "a",
+          "display_index": 1,
+          "start": 10.534,
+          "end": 10.682
+        },
+        {
+          "word": "democratic",
+          "display_index": 2,
+          "start": 10.682,
+          "end": 11.382
+        },
+        {
+          "word": "nation,",
+          "display_index": 3,
+          "start": 11.382,
+          "end": 12.242
+        },
+        {
+          "word": "voting",
+          "display_index": 4,
+          "start": 12.242,
+          "end": 12.601
+        },
+        {
+          "word": "is",
+          "display_index": 5,
+          "start": 12.601,
+          "end": 12.842
+        },
+        {
+          "word": "one",
+          "display_index": 6,
+          "start": 12.842,
+          "end": 12.982
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 12.982,
+          "end": 13.091
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 13.091,
+          "end": 13.242
+        },
+        {
+          "word": "most",
+          "display_index": 9,
+          "start": 13.242,
+          "end": 13.762
+        },
+        {
+          "word": "fundamental",
+          "display_index": 10,
+          "start": 13.762,
+          "end": 14.782
+        },
+        {
+          "word": "civic",
+          "display_index": 11,
+          "start": 14.782,
+          "end": 15.242
+        },
+        {
+          "word": "acts.",
+          "display_index": 12,
+          "start": 15.242,
+          "end": 16.042
+        }
+      ],
+      "start": 10.422,
+      "end": 16.042
+    },
+    {
+      "line": 2,
+      "english": "Citizens regularly go to the polls and choose their representatives.",
+      "word_timings": [
+        {
+          "word": "Citizens",
+          "display_index": 0,
+          "start": 16.102,
+          "end": 16.842
+        },
+        {
+          "word": "regularly",
+          "display_index": 1,
+          "start": 16.842,
+          "end": 17.483
+        },
+        {
+          "word": "go",
+          "display_index": 2,
+          "start": 17.483,
+          "end": 17.723
+        },
+        {
+          "word": "to",
+          "display_index": 3,
+          "start": 17.723,
+          "end": 17.86
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 17.86,
+          "end": 18.003
+        },
+        {
+          "word": "polls",
+          "display_index": 5,
+          "start": 18.003,
+          "end": 18.563
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 18.563,
+          "end": 18.803
+        },
+        {
+          "word": "choose",
+          "display_index": 7,
+          "start": 18.803,
+          "end": 19.223
+        },
+        {
+          "word": "their",
+          "display_index": 8,
+          "start": 19.223,
+          "end": 19.543
+        },
+        {
+          "word": "representatives.",
+          "display_index": 9,
+          "start": 19.543,
+          "end": 20.923
+        }
+      ],
+      "start": 16.102,
+      "end": 20.923
+    },
+    {
+      "line": 3,
+      "english": "When the campaign begins, each candidate puts forward an agenda and appeals to the voters.",
+      "word_timings": [
+        {
+          "word": "When",
+          "display_index": 0,
+          "start": 21.223,
+          "end": 21.429
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 21.429,
+          "end": 21.543
+        },
+        {
+          "word": "campaign",
+          "display_index": 2,
+          "start": 21.543,
+          "end": 22.443
+        },
+        {
+          "word": "begins,",
+          "display_index": 3,
+          "start": 22.443,
+          "end": 23.203
+        },
+        {
+          "word": "each",
+          "display_index": 4,
+          "start": 23.203,
+          "end": 23.463
+        },
+        {
+          "word": "candidate",
+          "display_index": 5,
+          "start": 23.463,
+          "end": 24.284
+        },
+        {
+          "word": "puts",
+          "display_index": 6,
+          "start": 24.284,
+          "end": 24.664
+        },
+        {
+          "word": "forward",
+          "display_index": 7,
+          "start": 24.664,
+          "end": 25.424
+        },
+        {
+          "word": "an",
+          "display_index": 8,
+          "start": 25.424,
+          "end": 25.584
+        },
+        {
+          "word": "agenda",
+          "display_index": 9,
+          "start": 25.584,
+          "end": 26.104
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 26.104,
+          "end": 26.264
+        },
+        {
+          "word": "appeals",
+          "display_index": 11,
+          "start": 26.264,
+          "end": 26.762
+        },
+        {
+          "word": "to",
+          "display_index": 12,
+          "start": 26.762,
+          "end": 26.931
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 26.931,
+          "end": 27.064
+        },
+        {
+          "word": "voters.",
+          "display_index": 14,
+          "start": 27.064,
+          "end": 27.704
+        }
+      ],
+      "start": 21.223,
+      "end": 27.704
+    },
+    {
+      "line": 4,
+      "english": "Healthcare, education, the economy, the environment.",
+      "word_timings": [
+        {
+          "word": "Healthcare,",
+          "display_index": 0,
+          "start": 27.704,
+          "end": 28.664
+        },
+        {
+          "word": "education,",
+          "display_index": 1,
+          "start": 28.664,
+          "end": 29.992
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 29.992,
+          "end": 30.144
+        },
+        {
+          "word": "economy,",
+          "display_index": 3,
+          "start": 30.144,
+          "end": 31.336
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 31.336,
+          "end": 31.485
+        },
+        {
+          "word": "environment.",
+          "display_index": 5,
+          "start": 31.485,
+          "end": 32.985
+        }
+      ],
+      "start": 27.704,
+      "end": 32.985
+    },
+    {
+      "line": 5,
+      "english": "Which issue to emphasize becomes the mark of each candidate.",
+      "word_timings": [
+        {
+          "word": "Which",
+          "display_index": 0,
+          "start": 33.345,
+          "end": 33.605
+        },
+        {
+          "word": "issue",
+          "display_index": 1,
+          "start": 33.605,
+          "end": 34.054
+        },
+        {
+          "word": "to",
+          "display_index": 2,
+          "start": 34.054,
+          "end": 34.265
+        },
+        {
+          "word": "emphasize",
+          "display_index": 3,
+          "start": 34.265,
+          "end": 35.105
+        },
+        {
+          "word": "becomes",
+          "display_index": 4,
+          "start": 35.105,
+          "end": 35.61
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 35.61,
+          "end": 35.765
+        },
+        {
+          "word": "mark",
+          "display_index": 6,
+          "start": 35.765,
+          "end": 36.185
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 36.185,
+          "end": 36.345
+        },
+        {
+          "word": "each",
+          "display_index": 8,
+          "start": 36.345,
+          "end": 36.585
+        },
+        {
+          "word": "candidate.",
+          "display_index": 9,
+          "start": 36.585,
+          "end": 37.485
+        }
+      ],
+      "start": 33.345,
+      "end": 37.485
+    },
+    {
+      "line": 6,
+      "english": "Sometimes the election does not give a single party the majority.",
+      "word_timings": [
+        {
+          "word": "Sometimes",
+          "display_index": 0,
+          "start": 37.785,
+          "end": 38.36
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 38.36,
+          "end": 38.526
+        },
+        {
+          "word": "election",
+          "display_index": 2,
+          "start": 38.526,
+          "end": 39.146
+        },
+        {
+          "word": "does",
+          "display_index": 3,
+          "start": 39.146,
+          "end": 39.366
+        },
+        {
+          "word": "not",
+          "display_index": 4,
+          "start": 39.366,
+          "end": 39.666
+        },
+        {
+          "word": "give",
+          "display_index": 5,
+          "start": 39.666,
+          "end": 39.876
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 39.876,
+          "end": 40.046
+        },
+        {
+          "word": "single",
+          "display_index": 7,
+          "start": 40.046,
+          "end": 40.546
+        },
+        {
+          "word": "party",
+          "display_index": 8,
+          "start": 40.546,
+          "end": 41.249
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 41.249,
+          "end": 41.686
+        },
+        {
+          "word": "majority.",
+          "display_index": 10,
+          "start": 41.686,
+          "end": 43.026
+        }
+      ],
+      "start": 37.785,
+      "end": 43.026
+    },
+    {
+      "line": 7,
+      "english": "In that case, several parties form a coalition and share power.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 43.326,
+          "end": 43.446
+        },
+        {
+          "word": "that",
+          "display_index": 1,
+          "start": 43.446,
+          "end": 43.766
+        },
+        {
+          "word": "case,",
+          "display_index": 2,
+          "start": 43.766,
+          "end": 44.446
+        },
+        {
+          "word": "several",
+          "display_index": 3,
+          "start": 44.446,
+          "end": 44.827
+        },
+        {
+          "word": "parties",
+          "display_index": 4,
+          "start": 44.827,
+          "end": 45.507
+        },
+        {
+          "word": "form",
+          "display_index": 5,
+          "start": 45.507,
+          "end": 45.871
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 45.871,
+          "end": 46.027
+        },
+        {
+          "word": "coalition",
+          "display_index": 7,
+          "start": 46.027,
+          "end": 47.287
+        },
+        {
+          "word": "and",
+          "display_index": 8,
+          "start": 47.287,
+          "end": 47.527
+        },
+        {
+          "word": "share",
+          "display_index": 9,
+          "start": 47.527,
+          "end": 47.887
+        },
+        {
+          "word": "power.",
+          "display_index": 10,
+          "start": 47.887,
+          "end": 48.707
+        }
+      ],
+      "start": 43.326,
+      "end": 48.707
+    },
+    {
+      "line": 8,
+      "english": "In a coalition government, compromise is essential.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 49.007,
+          "end": 49.147
+        },
+        {
+          "word": "a",
+          "display_index": 1,
+          "start": 49.147,
+          "end": 49.247
+        },
+        {
+          "word": "coalition",
+          "display_index": 2,
+          "start": 49.247,
+          "end": 50.147
+        },
+        {
+          "word": "government,",
+          "display_index": 3,
+          "start": 50.147,
+          "end": 51.287
+        },
+        {
+          "word": "compromise",
+          "display_index": 4,
+          "start": 51.287,
+          "end": 53.259
+        },
+        {
+          "word": "is",
+          "display_index": 5,
+          "start": 53.259,
+          "end": 53.448
+        },
+        {
+          "word": "essential.",
+          "display_index": 6,
+          "start": 53.448,
+          "end": 54.948
+        }
+      ],
+      "start": 49.007,
+      "end": 54.948
+    },
+    {
+      "line": 9,
+      "english": "The elected leader appoints cabinet members and leads each department of the federal government.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 55.354,
+          "end": 55.528
+        },
+        {
+          "word": "elected",
+          "display_index": 1,
+          "start": 55.528,
+          "end": 56.348
+        },
+        {
+          "word": "leader",
+          "display_index": 2,
+          "start": 56.348,
+          "end": 57.048
+        },
+        {
+          "word": "appoints",
+          "display_index": 3,
+          "start": 57.048,
+          "end": 57.508
+        },
+        {
+          "word": "cabinet",
+          "display_index": 4,
+          "start": 57.508,
+          "end": 58.428
+        },
+        {
+          "word": "members",
+          "display_index": 5,
+          "start": 58.428,
+          "end": 59.129
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 59.129,
+          "end": 59.269
+        },
+        {
+          "word": "leads",
+          "display_index": 7,
+          "start": 59.269,
+          "end": 59.669
+        },
+        {
+          "word": "each",
+          "display_index": 8,
+          "start": 59.669,
+          "end": 59.929
+        },
+        {
+          "word": "department",
+          "display_index": 9,
+          "start": 59.929,
+          "end": 61.529
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 61.529,
+          "end": 61.677
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 61.677,
+          "end": 61.909
+        },
+        {
+          "word": "federal",
+          "display_index": 12,
+          "start": 61.909,
+          "end": 62.669
+        },
+        {
+          "word": "government.",
+          "display_index": 13,
+          "start": 62.669,
+          "end": 64.169
+        }
+      ],
+      "start": 55.354,
+      "end": 64.169
+    },
+    {
+      "line": 10,
+      "english": "A new bill becomes law only after receiving approval from the legislature.",
+      "word_timings": [
+        {
+          "word": "A",
+          "display_index": 0,
+          "start": 64.945,
+          "end": 65.089
+        },
+        {
+          "word": "new",
+          "display_index": 1,
+          "start": 65.089,
+          "end": 65.43
+        },
+        {
+          "word": "bill",
+          "display_index": 2,
+          "start": 65.43,
+          "end": 65.65
+        },
+        {
+          "word": "becomes",
+          "display_index": 3,
+          "start": 65.65,
+          "end": 66.15
+        },
+        {
+          "word": "law",
+          "display_index": 4,
+          "start": 66.15,
+          "end": 66.55
+        },
+        {
+          "word": "only",
+          "display_index": 5,
+          "start": 66.55,
+          "end": 66.95
+        },
+        {
+          "word": "after",
+          "display_index": 6,
+          "start": 66.95,
+          "end": 67.37
+        },
+        {
+          "word": "receiving",
+          "display_index": 7,
+          "start": 67.37,
+          "end": 67.95
+        },
+        {
+          "word": "approval",
+          "display_index": 8,
+          "start": 67.95,
+          "end": 68.55
+        },
+        {
+          "word": "from",
+          "display_index": 9,
+          "start": 68.55,
+          "end": 68.774
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 68.774,
+          "end": 68.93
+        },
+        {
+          "word": "legislature.",
+          "display_index": 11,
+          "start": 68.93,
+          "end": 70.43
+        }
+      ],
+      "start": 64.945,
+      "end": 70.43
+    },
+    {
+      "line": 11,
+      "english": "In recent years, interest in elections has declined in some countries.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 70.85,
+          "end": 71.01
+        },
+        {
+          "word": "recent",
+          "display_index": 1,
+          "start": 71.01,
+          "end": 71.55
+        },
+        {
+          "word": "years,",
+          "display_index": 2,
+          "start": 71.55,
+          "end": 72.451
+        },
+        {
+          "word": "interest",
+          "display_index": 3,
+          "start": 72.451,
+          "end": 73.291
+        },
+        {
+          "word": "in",
+          "display_index": 4,
+          "start": 73.291,
+          "end": 73.471
+        },
+        {
+          "word": "elections",
+          "display_index": 5,
+          "start": 73.471,
+          "end": 74.471
+        },
+        {
+          "word": "has",
+          "display_index": 6,
+          "start": 74.471,
+          "end": 74.811
+        },
+        {
+          "word": "declined",
+          "display_index": 7,
+          "start": 74.811,
+          "end": 75.591
+        },
+        {
+          "word": "in",
+          "display_index": 8,
+          "start": 75.591,
+          "end": 76.171
+        },
+        {
+          "word": "some",
+          "display_index": 9,
+          "start": 76.171,
+          "end": 76.511
+        },
+        {
+          "word": "countries.",
+          "display_index": 10,
+          "start": 76.511,
+          "end": 78.011
+        }
+      ],
+      "start": 70.85,
+      "end": 78.011
+    },
+    {
+      "line": 12,
+      "english": "Turnout falls, and some young people ignore politics, saying, It has nothing to do with me.",
+      "word_timings": [
+        {
+          "word": "Turnout",
+          "display_index": 0,
+          "start": 78.971,
+          "end": 79.672
+        },
+        {
+          "word": "falls,",
+          "display_index": 1,
+          "start": 79.672,
+          "end": 80.452
+        },
+        {
+          "word": "and",
+          "display_index": 2,
+          "start": 80.452,
+          "end": 80.912
+        },
+        {
+          "word": "some",
+          "display_index": 3,
+          "start": 80.912,
+          "end": 81.112
+        },
+        {
+          "word": "young",
+          "display_index": 4,
+          "start": 81.112,
+          "end": 81.392
+        },
+        {
+          "word": "people",
+          "display_index": 5,
+          "start": 81.392,
+          "end": 81.872
+        },
+        {
+          "word": "ignore",
+          "display_index": 6,
+          "start": 81.872,
+          "end": 82.432
+        },
+        {
+          "word": "politics,",
+          "display_index": 7,
+          "start": 82.432,
+          "end": 83.832
+        },
+        {
+          "word": "saying,",
+          "display_index": 8,
+          "start": 83.832,
+          "end": 84.592
+        },
+        {
+          "word": "It",
+          "display_index": 9,
+          "start": 84.592,
+          "end": 84.752
+        },
+        {
+          "word": "has",
+          "display_index": 10,
+          "start": 84.752,
+          "end": 85.252
+        },
+        {
+          "word": "nothing",
+          "display_index": 11,
+          "start": 85.252,
+          "end": 86.289
+        },
+        {
+          "word": "to",
+          "display_index": 12,
+          "start": 86.289,
+          "end": 86.653
+        },
+        {
+          "word": "do",
+          "display_index": 13,
+          "start": 86.653,
+          "end": 87.393
+        },
+        {
+          "word": "with",
+          "display_index": 14,
+          "start": 87.393,
+          "end": 88.053
+        },
+        {
+          "word": "me.",
+          "display_index": 15,
+          "start": 88.053,
+          "end": 88.993
+        }
+      ],
+      "start": 78.971,
+      "end": 88.993
+    },
+    {
+      "line": 13,
+      "english": "But those who do not vote lose an important opportunity to shape the result.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 89.293,
+          "end": 89.493
+        },
+        {
+          "word": "those",
+          "display_index": 1,
+          "start": 89.493,
+          "end": 89.993
+        },
+        {
+          "word": "who",
+          "display_index": 2,
+          "start": 89.993,
+          "end": 90.173
+        },
+        {
+          "word": "do",
+          "display_index": 3,
+          "start": 90.173,
+          "end": 90.513
+        },
+        {
+          "word": "not",
+          "display_index": 4,
+          "start": 90.513,
+          "end": 90.873
+        },
+        {
+          "word": "vote",
+          "display_index": 5,
+          "start": 90.873,
+          "end": 91.453
+        },
+        {
+          "word": "lose",
+          "display_index": 6,
+          "start": 91.453,
+          "end": 91.853
+        },
+        {
+          "word": "an",
+          "display_index": 7,
+          "start": 91.853,
+          "end": 92.033
+        },
+        {
+          "word": "important",
+          "display_index": 8,
+          "start": 92.033,
+          "end": 93.254
+        },
+        {
+          "word": "opportunity",
+          "display_index": 9,
+          "start": 93.254,
+          "end": 94.508
+        },
+        {
+          "word": "to",
+          "display_index": 10,
+          "start": 94.508,
+          "end": 94.734
+        },
+        {
+          "word": "shape",
+          "display_index": 11,
+          "start": 94.734,
+          "end": 95.131
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 95.131,
+          "end": 95.294
+        },
+        {
+          "word": "result.",
+          "display_index": 13,
+          "start": 95.294,
+          "end": 96.394
+        }
+      ],
+      "start": 89.293,
+      "end": 96.394
+    },
+    {
+      "line": 14,
+      "english": "Democracy functions only through the participation of its citizens.",
+      "word_timings": [
+        {
+          "word": "Democracy",
+          "display_index": 0,
+          "start": 96.694,
+          "end": 97.634
+        },
+        {
+          "word": "functions",
+          "display_index": 1,
+          "start": 97.634,
+          "end": 98.634
+        },
+        {
+          "word": "only",
+          "display_index": 2,
+          "start": 98.634,
+          "end": 99.074
+        },
+        {
+          "word": "through",
+          "display_index": 3,
+          "start": 99.074,
+          "end": 100.947
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 100.947,
+          "end": 101.095
+        },
+        {
+          "word": "participation",
+          "display_index": 5,
+          "start": 101.095,
+          "end": 102.455
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 102.455,
+          "end": 102.635
+        },
+        {
+          "word": "its",
+          "display_index": 7,
+          "start": 102.635,
+          "end": 103.075
+        },
+        {
+          "word": "citizens.",
+          "display_index": 8,
+          "start": 103.075,
+          "end": 104.575
+        }
+      ],
+      "start": 96.694,
+      "end": 104.575
+    },
+    {
+      "line": 15,
+      "english": "Meanwhile, there are countries in the world where elections are not even held.",
+      "word_timings": [
+        {
+          "word": "Meanwhile,",
+          "display_index": 0,
+          "start": 105.935,
+          "end": 106.635
+        },
+        {
+          "word": "there",
+          "display_index": 1,
+          "start": 106.635,
+          "end": 106.82
+        },
+        {
+          "word": "are",
+          "display_index": 2,
+          "start": 106.82,
+          "end": 106.956
+        },
+        {
+          "word": "countries",
+          "display_index": 3,
+          "start": 106.956,
+          "end": 107.616
+        },
+        {
+          "word": "in",
+          "display_index": 4,
+          "start": 107.616,
+          "end": 107.855
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 107.855,
+          "end": 108.036
+        },
+        {
+          "word": "world",
+          "display_index": 6,
+          "start": 108.036,
+          "end": 108.736
+        },
+        {
+          "word": "where",
+          "display_index": 7,
+          "start": 108.736,
+          "end": 109.016
+        },
+        {
+          "word": "elections",
+          "display_index": 8,
+          "start": 109.016,
+          "end": 109.634
+        },
+        {
+          "word": "are",
+          "display_index": 9,
+          "start": 109.634,
+          "end": 109.836
+        },
+        {
+          "word": "not",
+          "display_index": 10,
+          "start": 109.836,
+          "end": 110.236
+        },
+        {
+          "word": "even",
+          "display_index": 11,
+          "start": 110.236,
+          "end": 110.836
+        },
+        {
+          "word": "held.",
+          "display_index": 12,
+          "start": 110.836,
+          "end": 111.616
+        }
+      ],
+      "start": 105.935,
+      "end": 111.616
+    },
+    {
+      "line": 16,
+      "english": "Advocates continue to call for the right of every person to vote.",
+      "word_timings": [
+        {
+          "word": "Advocates",
+          "display_index": 0,
+          "start": 111.616,
+          "end": 112.256
+        },
+        {
+          "word": "continue",
+          "display_index": 1,
+          "start": 112.256,
+          "end": 112.987
+        },
+        {
+          "word": "to",
+          "display_index": 2,
+          "start": 112.987,
+          "end": 113.136
+        },
+        {
+          "word": "call",
+          "display_index": 3,
+          "start": 113.136,
+          "end": 113.657
+        },
+        {
+          "word": "for",
+          "display_index": 4,
+          "start": 113.657,
+          "end": 113.872
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 113.872,
+          "end": 114.037
+        },
+        {
+          "word": "right",
+          "display_index": 6,
+          "start": 114.037,
+          "end": 114.497
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 114.497,
+          "end": 114.697
+        },
+        {
+          "word": "every",
+          "display_index": 8,
+          "start": 114.697,
+          "end": 115.237
+        },
+        {
+          "word": "person",
+          "display_index": 9,
+          "start": 115.237,
+          "end": 115.947
+        },
+        {
+          "word": "to",
+          "display_index": 10,
+          "start": 115.947,
+          "end": 116.177
+        },
+        {
+          "word": "vote.",
+          "display_index": 11,
+          "start": 116.177,
+          "end": 117.177
+        }
+      ],
+      "start": 111.616,
+      "end": 117.177
+    },
+    {
+      "line": 17,
+      "english": "Elections are not perfect, but they remain one of the most crucial tools we have.",
+      "word_timings": [
+        {
+          "word": "Elections",
+          "display_index": 0,
+          "start": 117.477,
+          "end": 118.333
+        },
+        {
+          "word": "are",
+          "display_index": 1,
+          "start": 118.333,
+          "end": 118.697
+        },
+        {
+          "word": "not",
+          "display_index": 2,
+          "start": 118.697,
+          "end": 119.397
+        },
+        {
+          "word": "perfect,",
+          "display_index": 3,
+          "start": 119.397,
+          "end": 121.818
+        },
+        {
+          "word": "but",
+          "display_index": 4,
+          "start": 121.818,
+          "end": 122.018
+        },
+        {
+          "word": "they",
+          "display_index": 5,
+          "start": 122.018,
+          "end": 122.358
+        },
+        {
+          "word": "remain",
+          "display_index": 6,
+          "start": 122.358,
+          "end": 123.238
+        },
+        {
+          "word": "one",
+          "display_index": 7,
+          "start": 123.238,
+          "end": 123.398
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 123.398,
+          "end": 123.603
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 123.603,
+          "end": 123.758
+        },
+        {
+          "word": "most",
+          "display_index": 10,
+          "start": 123.758,
+          "end": 124.198
+        },
+        {
+          "word": "crucial",
+          "display_index": 11,
+          "start": 124.198,
+          "end": 124.878
+        },
+        {
+          "word": "tools",
+          "display_index": 12,
+          "start": 124.878,
+          "end": 125.638
+        },
+        {
+          "word": "we",
+          "display_index": 13,
+          "start": 125.638,
+          "end": 125.938
+        },
+        {
+          "word": "have.",
+          "display_index": 14,
+          "start": 125.938,
+          "end": 127.438
+        }
+      ],
+      "start": 117.477,
+      "end": 127.438
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

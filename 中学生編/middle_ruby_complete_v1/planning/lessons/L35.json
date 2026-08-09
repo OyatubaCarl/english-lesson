@@ -1,0 +1,960 @@
+{
+  "lesson": 35,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L35/planning/lesson.json",
+  "title_en": "Lesson 35  The Lake at Sunset",
+  "title_ja": "夕暮れの湖",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 10,
+  "lines": [
+    {
+      "line": 1,
+      "english": "At sunset, I walked alone to a small lake near my house.",
+      "source_ja": "夕焼けの時間、わたしは家の近くの小さな湖まで、ひとりで歩きました。",
+      "display_ja": "夕焼けの時間、わたしは家の近くの小さな湖まで、ひとりで歩きました。",
+      "corrected_translation": false,
+      "mixed": "夕焼けの時間、わたしは家の近くの小さな lake まで、ひとりで歩きました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "夕焼けの時間、わたしは家の近くの小さな ",
+          "parts": [
+            {
+              "text": "夕焼",
+              "ruby": "ゆうや"
+            },
+            {
+              "text": "けの",
+              "ruby": ""
+            },
+            {
+              "text": "時間",
+              "ruby": "じかん"
+            },
+            {
+              "text": "、わたしは",
+              "ruby": ""
+            },
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "近",
+              "ruby": "ちか"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "lake",
+          "ruby": "湖"
+        },
+        {
+          "type": "ja",
+          "text": " まで、ひとりで歩きました。",
+          "parts": [
+            {
+              "text": "まで、ひとりで",
+              "ruby": ""
+            },
+            {
+              "text": "歩",
+              "ruby": "ある"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "lake",
+          "canonical_word": "lake",
+          "meaning": "湖"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "lake",
+          "reading": "湖",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "lake",
+          "canonical_meaning": "湖"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "english": "The sky was orange and purple, and in the distance, a thin moon gently appeared.",
+      "source_ja": "空はオレンジと紫に染まって、遠くには細い月がそっと現れていました。",
+      "display_ja": "空はオレンジと紫に染まって、遠くには細い月がそっと現れていました。",
+      "corrected_translation": false,
+      "mixed": "空はオレンジと紫に染まって、遠くには細い moon がそっと現れていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "空はオレンジと紫に染まって、遠くには細い ",
+          "parts": [
+            {
+              "text": "空",
+              "ruby": "そら"
+            },
+            {
+              "text": "はオレンジと",
+              "ruby": ""
+            },
+            {
+              "text": "紫",
+              "ruby": "むらさき"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "染",
+              "ruby": "そ"
+            },
+            {
+              "text": "まって、",
+              "ruby": ""
+            },
+            {
+              "text": "遠",
+              "ruby": "とお"
+            },
+            {
+              "text": "くには",
+              "ruby": ""
+            },
+            {
+              "text": "細",
+              "ruby": "ほそ"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "moon",
+          "ruby": "月"
+        },
+        {
+          "type": "ja",
+          "text": " がそっと現れていました。",
+          "parts": [
+            {
+              "text": "がそっと",
+              "ruby": ""
+            },
+            {
+              "text": "現",
+              "ruby": "あらわ"
+            },
+            {
+              "text": "れていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "moon",
+          "canonical_word": "moon",
+          "meaning": "月"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "moon",
+          "reading": "月",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "moon",
+          "canonical_meaning": "月"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "Beside the lake, a big branch of a tree was quietly pointing toward the water.",
+      "source_ja": "湖のほとりには、大きな木の枝が静かに水のほうへ伸びていました。",
+      "display_ja": "湖のほとりには、大きな木の枝が静かに水のほうへ伸びていました。",
+      "corrected_translation": false,
+      "mixed": "lake のほとりでは、大きな木の branch が静かに水へ伸びていました。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "lake",
+          "ruby": "湖"
+        },
+        {
+          "type": "ja",
+          "text": " のほとりでは、大きな木の ",
+          "parts": [
+            {
+              "text": "のほとりでは、",
+              "ruby": ""
+            },
+            {
+              "text": "大",
+              "ruby": "おお"
+            },
+            {
+              "text": "きな",
+              "ruby": ""
+            },
+            {
+              "text": "木",
+              "ruby": "き"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "branch",
+          "ruby": "枝"
+        },
+        {
+          "type": "ja",
+          "text": " が静かに水へ伸びていました。",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            },
+            {
+              "text": "水",
+              "ruby": "みず"
+            },
+            {
+              "text": "へ",
+              "ruby": ""
+            },
+            {
+              "text": "伸",
+              "ruby": "の"
+            },
+            {
+              "text": "びていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "lake",
+          "canonical_word": "lake",
+          "meaning": "湖"
+        },
+        {
+          "english": "branch",
+          "canonical_word": "branch",
+          "meaning": "枝"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "lake",
+          "reading": "湖",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "lake",
+          "canonical_meaning": "湖"
+        },
+        {
+          "english": "branch",
+          "reading": "枝",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "branch",
+          "canonical_meaning": "枝"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "A single leaf, fallen from the tree, floated slowly on the water.",
+      "source_ja": "木から落ちた一枚の葉が、ゆっくり水面を漂っています。",
+      "display_ja": "木から落ちた一枚の葉が、ゆっくり水面を漂っています。",
+      "corrected_translation": false,
+      "mixed": "木から落ちた一枚の leaf が、ゆっくり水面を漂っています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "木から落ちた一枚の ",
+          "parts": [
+            {
+              "text": "木",
+              "ruby": "き"
+            },
+            {
+              "text": "から",
+              "ruby": ""
+            },
+            {
+              "text": "落",
+              "ruby": "お"
+            },
+            {
+              "text": "ちた",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "いっ"
+            },
+            {
+              "text": "枚",
+              "ruby": "まい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "leaf",
+          "ruby": "葉"
+        },
+        {
+          "type": "ja",
+          "text": " が、ゆっくり水面を漂っています。",
+          "parts": [
+            {
+              "text": "が、ゆっくり",
+              "ruby": ""
+            },
+            {
+              "text": "水面",
+              "ruby": "すいめん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "漂",
+              "ruby": "ただよ"
+            },
+            {
+              "text": "っています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "leaf",
+          "canonical_word": "leaf",
+          "meaning": "葉"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "leaf",
+          "reading": "葉",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "leaf",
+          "canonical_meaning": "葉"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "On the quiet surface without a wave, my shadow was reflected.",
+      "source_ja": "波ひとつない静かな水面に、わたしの影がうつっていました。",
+      "display_ja": "波ひとつない静かな水面に、わたしの影がうつっていました。",
+      "corrected_translation": false,
+      "mixed": "wave ひとつない静かな水面に、わたしの shadow がうつっていました。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "wave",
+          "ruby": "波"
+        },
+        {
+          "type": "ja",
+          "text": " ひとつない静かな水面に、わたしの ",
+          "parts": [
+            {
+              "text": "ひとつない",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かな",
+              "ruby": ""
+            },
+            {
+              "text": "水面",
+              "ruby": "すいめん"
+            },
+            {
+              "text": "に、わたしの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "shadow",
+          "ruby": "影"
+        },
+        {
+          "type": "ja",
+          "text": " がうつっていました。",
+          "parts": [
+            {
+              "text": "がうつっていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "wave",
+          "canonical_word": "Wave",
+          "meaning": "波"
+        },
+        {
+          "english": "shadow",
+          "canonical_word": "shadow",
+          "meaning": "影"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "wave",
+          "reading": "波",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "Wave",
+          "canonical_meaning": "波"
+        },
+        {
+          "english": "shadow",
+          "reading": "影",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "shadow",
+          "canonical_meaning": "影"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "When a little wind blew, the water reflected the light.",
+      "source_ja": "ちょっと風が吹くと、水は光をやさしく反射します。",
+      "display_ja": "ちょっと風が吹くと、水は光をやさしく反射します。",
+      "corrected_translation": false,
+      "mixed": "ちょっと風が吹くと、水は light をやさしく反射します。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ちょっと風が吹くと、水は ",
+          "parts": [
+            {
+              "text": "ちょっと",
+              "ruby": ""
+            },
+            {
+              "text": "風",
+              "ruby": "かぜ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "吹",
+              "ruby": "ふ"
+            },
+            {
+              "text": "くと、",
+              "ruby": ""
+            },
+            {
+              "text": "水",
+              "ruby": "みず"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "light",
+          "ruby": "光"
+        },
+        {
+          "type": "ja",
+          "text": " をやさしく反射します。",
+          "parts": [
+            {
+              "text": "をやさしく",
+              "ruby": ""
+            },
+            {
+              "text": "反射",
+              "ruby": "はんしゃ"
+            },
+            {
+              "text": "します。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "light",
+          "canonical_word": "light",
+          "meaning": "光"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "light",
+          "reading": "光",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "light",
+          "canonical_meaning": "光"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "The first star began to show faintly, and in the eastern sky, one by one, more stars appeared.",
+      "source_ja": "一番星がかすかに輝きはじめて、東の空には、ひとつまたひとつと星が増えていきました。",
+      "display_ja": "一番星がかすかに輝きはじめて、東の空には、ひとつまたひとつと星が増えていきました。",
+      "corrected_translation": false,
+      "mixed": "一番星がかすかに輝きはじめて、東の空には、ひとつまたひとつと star が増えていきました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "一番星がかすかに輝きはじめて、東の空には、ひとつまたひとつと ",
+          "parts": [
+            {
+              "text": "一番",
+              "ruby": "いちばん"
+            },
+            {
+              "text": "星",
+              "ruby": "ほし"
+            },
+            {
+              "text": "がかすかに",
+              "ruby": ""
+            },
+            {
+              "text": "輝",
+              "ruby": "かがや"
+            },
+            {
+              "text": "きはじめて、",
+              "ruby": ""
+            },
+            {
+              "text": "東",
+              "ruby": "ひがし"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "空",
+              "ruby": "そら"
+            },
+            {
+              "text": "には、ひとつまたひとつと",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "star",
+          "ruby": "星"
+        },
+        {
+          "type": "ja",
+          "text": " が増えていきました。",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "増",
+              "ruby": "ふ"
+            },
+            {
+              "text": "えていきました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "star",
+          "canonical_word": "star",
+          "meaning": "星"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "star",
+          "reading": "星",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "star",
+          "canonical_meaning": "星"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "When I looked up, a white cloud was flowing like cotton.",
+      "source_ja": "見上げると、白い雲が綿のように流れていました。",
+      "display_ja": "見上げると、白い雲が綿のように流れていました。",
+      "corrected_translation": false,
+      "mixed": "見上げると、白い cloud が綿のように流れていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "見上げると、白い ",
+          "parts": [
+            {
+              "text": "見上",
+              "ruby": "みあ"
+            },
+            {
+              "text": "げると、",
+              "ruby": ""
+            },
+            {
+              "text": "白",
+              "ruby": "しろ"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "cloud",
+          "ruby": "雲"
+        },
+        {
+          "type": "ja",
+          "text": " が綿のように流れていました。",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "綿",
+              "ruby": "わた"
+            },
+            {
+              "text": "のように",
+              "ruby": ""
+            },
+            {
+              "text": "流",
+              "ruby": "なが"
+            },
+            {
+              "text": "れていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "cloud",
+          "canonical_word": "cloud",
+          "meaning": "雲"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "cloud",
+          "reading": "雲",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "cloud",
+          "canonical_meaning": "雲"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "In winter mornings, the surface of this lake is covered with thin ice.",
+      "source_ja": "冬の朝には、この湖の表面は薄い氷で覆われます。",
+      "display_ja": "冬の朝には、この湖の表面は薄い氷で覆われます。",
+      "corrected_translation": false,
+      "mixed": "冬の朝には、この lake の表面は薄い ice で覆われます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "冬の朝には、この ",
+          "parts": [
+            {
+              "text": "冬",
+              "ruby": "ふゆ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "朝",
+              "ruby": "あさ"
+            },
+            {
+              "text": "には、この",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "lake",
+          "ruby": "湖"
+        },
+        {
+          "type": "ja",
+          "text": " の表面は薄い ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "表面",
+              "ruby": "ひょうめん"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "薄",
+              "ruby": "うす"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "ice",
+          "ruby": "氷"
+        },
+        {
+          "type": "ja",
+          "text": " で覆われます。",
+          "parts": [
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "覆",
+              "ruby": "おお"
+            },
+            {
+              "text": "われます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "lake",
+          "canonical_word": "lake",
+          "meaning": "湖"
+        },
+        {
+          "english": "ice",
+          "canonical_word": "ice",
+          "meaning": "氷"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "lake",
+          "reading": "湖",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "lake",
+          "canonical_meaning": "湖"
+        },
+        {
+          "english": "ice",
+          "reading": "氷",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "ice",
+          "canonical_meaning": "氷"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "It is not as wide as the ocean, but this little lake is a treasure for our town.",
+      "source_ja": "海ほど広くはないけれど、この小さな湖は町の宝物なのです。",
+      "display_ja": "海ほど広くはないけれど、この小さな湖は町の宝物なのです。",
+      "corrected_translation": false,
+      "mixed": "ocean ほど広くはないけれど、この小さな lake は町の宝物なのです。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "ocean",
+          "ruby": "海"
+        },
+        {
+          "type": "ja",
+          "text": " ほど広くはないけれど、この小さな ",
+          "parts": [
+            {
+              "text": "ほど",
+              "ruby": ""
+            },
+            {
+              "text": "広",
+              "ruby": "ひろ"
+            },
+            {
+              "text": "くはないけれど、この",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "lake",
+          "ruby": "湖"
+        },
+        {
+          "type": "ja",
+          "text": " は町の宝物なのです。",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "町",
+              "ruby": "まち"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "宝物",
+              "ruby": "たからもの"
+            },
+            {
+              "text": "なのです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "ocean",
+          "canonical_word": "Ocean",
+          "meaning": "大洋・海"
+        },
+        {
+          "english": "lake",
+          "canonical_word": "lake",
+          "meaning": "湖"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "ocean",
+          "reading": "海",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "Ocean",
+          "canonical_meaning": "大洋・海"
+        },
+        {
+          "english": "lake",
+          "reading": "湖",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "lake",
+          "canonical_meaning": "湖"
+        }
+      ]
+    }
+  ]
+}

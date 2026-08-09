@@ -1,0 +1,452 @@
+[
+  {
+    "id": "s5_056",
+    "word": "fishing",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "並《な》べて",
+    "context": "長《なが》い竿《さお》を並《な》べて、浮《う》きをじっと見《み》つめ",
+    "correct": "並《なら》べて",
+    "comment": "「並べる」は訓読み「ならべる」。「な」は「並み(なみ)」のような名詞語幹だけで、活用形「ならべる」では正しくない。"
+  },
+  {
+    "id": "s5_056",
+    "word": "fishing",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "人《にん》",
+    "context": "<fishing>を楽《たの》しむ人《にん》たち",
+    "correct": "人《ひと》",
+    "comment": "「楽しむ人たち」は「たのしむひとたち」。"
+  },
+  {
+    "id": "s5_1058",
+    "word": "beast",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "人《にん》",
+    "context": "森《もり》の奥《おく》には人《にん》を寄《よ》せ付《つ》けない",
+    "correct": "人《ひと》",
+    "comment": "「人を寄せ付けない」は「ひとをよせつけない」。"
+  },
+  {
+    "id": "s5_1203",
+    "word": "collapse",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "1日《にち》中《なか》",
+    "context": "現場《げんば》は1日《にち》中《なか》安全点検",
+    "correct": "1日中《いちにちじゅう》",
+    "comment": "「1日中」は「いちにちじゅう」。「いちにちなか」は分割誤読。"
+  },
+  {
+    "id": "s5_1306",
+    "word": "customs",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "空《そら》港《みなと》",
+    "context": "空《そら》港《みなと》",
+    "correct": "空港《くうこう》",
+    "comment": "「空港」は「くうこう」が唯一の読み。「そらみなと」は分割誤読で実音声が破綻。"
+  },
+  {
+    "id": "s5_1413",
+    "word": "dive",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "軽《けい》やか",
+    "context": "飛《と》び込《こ》み台《だい》から軽《けい》やかに<dive>",
+    "correct": "軽《かろ》やか",
+    "comment": "「軽やか」は訓読み「かろやか」。「けい」は音読みで「軽快」「軽食」などの熟語専用。"
+  },
+  {
+    "id": "s5_1413",
+    "word": "dive",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "1回《かい》転《こか》",
+    "context": "空《そら》中《なか》で1回《かい》転《こか》して見事《みごと》",
+    "correct": "1回転《いっかいてん》",
+    "comment": "「1回転」を「1回」+「転(こか)」に誤分割、しかも「転(こか)」は意味不明な読み。正は「いっかいてん」。"
+  },
+  {
+    "id": "s5_1413",
+    "word": "dive",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "空《そら》中《なか》",
+    "context": "<dive>し、空《そら》中《なか》で1回《かい》転",
+    "correct": "空中《くうちゅう》",
+    "comment": "「空中」は「くうちゅう」のみ。「そらなか」は分割誤読。"
+  },
+  {
+    "id": "s5_1586",
+    "word": "formal",
+    "severity": "bad",
+    "issue_type": "idiom",
+    "fragment": "際《きわ》",
+    "context": "結婚式《けっこんしき》に出席《しゅっせき》する際《きわ》",
+    "correct": "際《さい》",
+    "comment": "同上。「しゅっせきするさい」が正。"
+  },
+  {
+    "id": "s5_1693",
+    "word": "hazard",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "並《な》べていた",
+    "context": "出入口《でいりぐち》にカラーコーンを丁寧《ていねい》に並《な》べていた",
+    "correct": "並《なら》べていた",
+    "comment": "同上、「ならべていた」が正。"
+  },
+  {
+    "id": "s5_1745",
+    "word": "immigration",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "空《そら》港《みなと》",
+    "context": "空《そら》港《みなと》",
+    "correct": "空港《くうこう》",
+    "comment": "「空港」は「くうこう」が唯一の読み。「そらみなと」は分割誤読で実音声が破綻。"
+  },
+  {
+    "id": "s5_1850",
+    "word": "lean",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "人《にん》",
+    "context": "隣《となり》の人《にん》に頭《あたま》が触《ふ》れ",
+    "correct": "人《ひと》",
+    "comment": "「隣の人」は「となりのひと」。"
+  },
+  {
+    "id": "s5_1866",
+    "word": "lightning",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "震《しん》わせる",
+    "context": "雷鳴《らいめい》が遅《おく》れて窓《まど》ガラスを震《しん》わせる",
+    "correct": "震《ふる》わせる",
+    "comment": "訓読み「ふるわせる」。音読み「しん(震動・地震)」は熟語専用。"
+  },
+  {
+    "id": "s5_1866",
+    "word": "lightning",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "夜《よる》空《そら》",
+    "context": "夜《よる》空《そら》",
+    "correct": "夜空《よぞら》",
+    "comment": "「夜空」は連濁して「よぞら」。「よるそら」は分割誤読。"
+  },
+  {
+    "id": "s5_1889",
+    "word": "luggage",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "空《そら》港《みなと》",
+    "context": "空《そら》港《みなと》",
+    "correct": "空港《くうこう》",
+    "comment": "「空港」は「くうこう」が唯一の読み。「そらみなと」は分割誤読で実音声が破綻。"
+  },
+  {
+    "id": "s5_1948",
+    "word": "misty",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "人《にん》",
+    "context": "前《まえ》の人《にん》の背",
+    "correct": "人《ひと》",
+    "comment": "「前の人」は「まえのひと」。"
+  },
+  {
+    "id": "s5_2421",
+    "word": "spectacular",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "夜《よる》空《そら》",
+    "context": "夜《よる》空《そら》",
+    "correct": "夜空《よぞら》",
+    "comment": "「夜空」は連濁して「よぞら」。「よるそら」は分割誤読。"
+  },
+  {
+    "id": "s5_2477",
+    "word": "submarine",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "空《そら》間《かん》",
+    "context": "狭《せま》い空《そら》間《かん》で働《はたら》く",
+    "correct": "空間《くうかん》",
+    "comment": "「空間」は「くうかん」。「そらかん」は分割誤読。"
+  },
+  {
+    "id": "s5_463",
+    "word": "heavily",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "降《お》り",
+    "context": "雨《あめ》が<heavily>降《お》り、朝《あさ》の通学路《つうがくろ》",
+    "correct": "降《ふ》り",
+    "comment": "雨が降る文脈なので「ふ」と読む。「お(降りる)」は階段や乗り物から下りる場合のみ。"
+  },
+  {
+    "id": "s5_482",
+    "word": "independence",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "夜《よる》空《そら》",
+    "context": "夜《よる》空《そら》",
+    "correct": "夜空《よぞら》",
+    "comment": "「夜空」は連濁して「よぞら」。「よるそら」は分割誤読。"
+  },
+  {
+    "id": "s5_560",
+    "word": "mushroom",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "人《にん》",
+    "context": "地元《じもと》の人《にん》は食《た》べられる",
+    "correct": "人《ひと》",
+    "comment": "名詞句「地元の人」は「じもとのひと」が正。「にん」は助数詞(○人)用。"
+  },
+  {
+    "id": "s5_597",
+    "word": "penfriend",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "絵《え》入《はい》り",
+    "context": "クリスマスカードが手《て》描《えが》きの絵《え》入《はい》り",
+    "correct": "絵入り《えいり》",
+    "comment": "「絵入り」は「えいり」と読む。「えはいり」は誤読(入を「はいり」と分割した結果)。"
+  },
+  {
+    "id": "s6_0269",
+    "word": "carefree",
+    "severity": "bad",
+    "issue_type": "counter",
+    "fragment": "一日《ついたち》",
+    "context": "一日《ついたち》",
+    "correct": "一日《いちにち》",
+    "comment": "「一日」は月日付(○月1日)のみ「ついたち」。時間量・日数の意では「いちにち」。文脈は日付ではないので「いちにち」が正。"
+  },
+  {
+    "id": "s6_0746",
+    "word": "exotic",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "人《にん》",
+    "context": "訪《おとず》れた人《にん》は遠《とお》い国",
+    "correct": "人《ひと》",
+    "comment": "「訪れた人」は「おとずれたひと」。"
+  },
+  {
+    "id": "s6_0964",
+    "word": "hook",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "解き放つ → kanaが「ときほうっつ」",
+    "context": "ながい一日《ついたち》の疲《つか》れをようやく解《と》き放《はな》つ",
+    "correct": "解き放つ《ときはなつ》",
+    "comment": "body_kanaが「ときほうっつ」と促音重複の誤生成。実音声で不自然。正は「ときはなつ」。"
+  },
+  {
+    "id": "s6_0964",
+    "word": "hook",
+    "severity": "bad",
+    "issue_type": "counter",
+    "fragment": "一日《ついたち》",
+    "context": "一日《ついたち》",
+    "correct": "一日《いちにち》",
+    "comment": "「一日」は月日付(○月1日)のみ「ついたち」。時間量・日数の意では「いちにち」。文脈は日付ではないので「いちにち」が正。"
+  },
+  {
+    "id": "s6_0993",
+    "word": "icy",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "通勤《つうきん》者《もの》",
+    "context": "通勤《つうきん》者《もの》は歩幅《ほはば》を狭《せば》め",
+    "correct": "通勤者《つうきんしゃ》",
+    "comment": "「○○者」は「しゃ」と読むのが原則。「つうきんもの」は誤読(者を訓読みに分割)。"
+  },
+  {
+    "id": "s6_1117",
+    "word": "inverted commas",
+    "severity": "bad",
+    "issue_type": "idiom",
+    "fragment": "際《きわ》",
+    "context": "原文《げんぶん》を引《ひ》く際《きわ》",
+    "correct": "際《さい》",
+    "comment": "同上。「ひくさい」が正。"
+  },
+  {
+    "id": "s6_1153",
+    "word": "keystroke",
+    "severity": "bad",
+    "issue_type": "counter",
+    "fragment": "一日《ついたち》",
+    "context": "一日《ついたち》",
+    "correct": "一日《いちにち》",
+    "comment": "「一日」は月日付(○月1日)のみ「ついたち」。時間量・日数の意では「いちにち」。文脈は日付ではないので「いちにち」が正。"
+  },
+  {
+    "id": "s6_1180",
+    "word": "lease",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "交《まじ》わした",
+    "context": "覚書《おぼえがき》を交《まじ》わした",
+    "correct": "交《か》わした",
+    "comment": "同上、「かわした」が正。"
+  },
+  {
+    "id": "s6_1180",
+    "word": "lease",
+    "severity": "bad",
+    "issue_type": "idiom",
+    "fragment": "際《きわ》",
+    "context": "<lease>を二年《にねん》更新《こうしん》する際《きわ》",
+    "correct": "際《さい》",
+    "comment": "同上。「こうしんするさい」が正。"
+  },
+  {
+    "id": "s6_1304",
+    "word": "modernisation",
+    "severity": "bad",
+    "issue_type": "idiom",
+    "fragment": "際《きわ》",
+    "context": "<modernisation>を進《すす》める際《きわ》",
+    "correct": "際《さい》",
+    "comment": "動詞連体形+「際」は「さい」(=とき)。「きわ」は「窓際(まどぎわ)」「間際(まぎわ)」など名詞限定の読み。"
+  },
+  {
+    "id": "s6_1719",
+    "word": "recollect",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "日の出《ひので》来《らい》事《こと》",
+    "context": "若《わか》き｜日の出《ひので》来《らい》事《こと》を一枚",
+    "correct": "日の出来事《ひのできごと》",
+    "comment": "「日の出来事(ひのできごと)」を「日の出+来事」に誤分割し、「来(らい)」「事(こと)」をバラバラに発音。実音声で「ひのでらいこと」となり完全に破綻。"
+  },
+  {
+    "id": "s6_1815",
+    "word": "ritual",
+    "severity": "bad",
+    "issue_type": "counter",
+    "fragment": "一日《ついたち》",
+    "context": "一日《ついたち》",
+    "correct": "一日《いちにち》",
+    "comment": "「一日」は月日付(○月1日)のみ「ついたち」。時間量・日数の意では「いちにち」。文脈は日付ではないので「いちにち」が正。"
+  },
+  {
+    "id": "s6_1915",
+    "word": "sister-in-law",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "交《まじ》わした",
+    "context": "初《はじ》めて挨拶《あいさつ》を交《まじ》わした",
+    "correct": "交《か》わした",
+    "comment": "挨拶を交わすは「かわす」。「まじわす」は誤読。"
+  },
+  {
+    "id": "s6_1999",
+    "word": "stanza",
+    "severity": "bad",
+    "issue_type": "idiom",
+    "fragment": "四行《よんぎょう》",
+    "context": "<stanza>は四行《よんぎょう》で構成《こうせい》",
+    "correct": "四行《しぎょう》",
+    "comment": "詩の連(stanza)を表す「四行」は「しぎょう」(または「よんこう」)。「よんぎょう」は不自然。"
+  },
+  {
+    "id": "s6_2081",
+    "word": "sympathise",
+    "severity": "bad",
+    "issue_type": "counter",
+    "fragment": "一日《ついたち》",
+    "context": "一日《ついたち》",
+    "correct": "一日《いちにち》",
+    "comment": "「一日」は月日付(○月1日)のみ「ついたち」。時間量・日数の意では「いちにち」。文脈は日付ではないので「いちにち」が正。"
+  },
+  {
+    "id": "s6_2158",
+    "word": "transient",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "夜《よる》空《そら》",
+    "context": "夜《よる》空《そら》",
+    "correct": "夜空《よぞら》",
+    "comment": "「夜空」は連濁して「よぞら」。「よるそら」は分割誤読。"
+  },
+  {
+    "id": "s6_2158",
+    "word": "transient",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "人《にん》",
+    "context": "見上《みあ》げる人《にん》の心",
+    "correct": "人《ひと》",
+    "comment": "「見上げる人」は「みあげるひと」。"
+  },
+  {
+    "id": "s6_2180",
+    "word": "trolley",
+    "severity": "bad",
+    "issue_type": "compound_split",
+    "fragment": "空《そら》港《みなと》",
+    "context": "空《そら》港《みなと》",
+    "correct": "空港《くうこう》",
+    "comment": "「空港」は「くうこう」が唯一の読み。「そらみなと」は分割誤読で実音声が破綻。"
+  },
+  {
+    "id": "s6_2235",
+    "word": "unfamiliar",
+    "severity": "bad",
+    "issue_type": "verb_misreading",
+    "fragment": "交《まじ》わす",
+    "context": "同僚《どうりょう》と冗談《じょうだん》を交《まじ》わすほど",
+    "correct": "交《か》わす",
+    "comment": "挨拶や言葉を「交わす」は「かわす」。「まじわす」は誤読(混じる/混ぜるとの混同)。"
+  },
+  {
+    "id": "s5_1308",
+    "word": "cycle",
+    "severity": "warn",
+    "issue_type": "kana_unnatural",
+    "fragment": "○時間 (kanaに漢字が残存)",
+    "context": "すいみんの<cycle>をととのえるため、わたしはねる2時間前からスマホをおき、あたたかいのみものできもちをおちつける。",
+    "correct": "body_kanaに漢字「時間」が残っている",
+    "comment": "kanaがひらがな化されておらず「N時間」のまま。VOICEPEAKは数字+漢字読みの自動展開はするが、ルビ展開と一致するかは要確認。"
+  },
+  {
+    "id": "s5_1426",
+    "word": "dramatic",
+    "severity": "warn",
+    "issue_type": "kana_unnatural",
+    "fragment": "1点《てん》差《さ》 / 9回《かい》裏《うら》",
+    "context": "1点《てん》差《さ》で迎《むか》えた9回《かい》裏《うら》",
+    "correct": "1点差《いってんさ》/9回裏《きゅうかいうら》",
+    "comment": "熟語が単漢字分割表示されてもkanaは正音と一致するため実害小、ただし「1点さ」「9回うら」のように数字+ひらがなが残るのは音声合成上の副作用に注意。"
+  },
+  {
+    "id": "s5_1454",
+    "word": "efficiency",
+    "severity": "warn",
+    "issue_type": "kana_unnatural",
+    "fragment": "○時間 (kanaに漢字が残存)",
+    "context": "さぎょうの<efficiency>をあげるため、かれは1時間ごとに5分のきゅうけいをはさむタイマーほうしきをとりいれた。",
+    "correct": "body_kanaに漢字「時間」が残っている",
+    "comment": "kanaがひらがな化されておらず「N時間」のまま。VOICEPEAKは数字+漢字読みの自動展開はするが、ルビ展開と一致するかは要確認。"
+  },
+  {
+    "id": "s5_1755",
+    "word": "incredible",
+    "severity": "warn",
+    "issue_type": "kana_unnatural",
+    "fragment": "○時間 (kanaに漢字が残存)",
+    "context": "かれのしゅうちゅうりょくは<incredible>で、5時間れんぞくでもんだいしゅうをといてもつかれをみせないすがたに、わたしはすなおにかんしんした。",
+    "correct": "body_kanaに漢字「時間」が残っている",
+    "comment": "kanaがひらがな化されておらず「N時間」のまま。VOICEPEAKは数字+漢字読みの自動展開はするが、ルビ展開と一致するかは要確認。"
+  }
+]

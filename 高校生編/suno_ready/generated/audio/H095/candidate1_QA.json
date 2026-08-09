@@ -1,0 +1,208 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H095.md",
+  "audio": "高校生編/suno_ready/generated/audio/H095/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 99.68,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 188,
+  "transcribed_words": 188,
+  "matched_words": 185,
+  "coverage": 0.984,
+  "precision": 0.984,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 187,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 110,
+      "length": 2,
+      "words": [
+        "a",
+        "venture"
+      ]
+    },
+    {
+      "start": 72,
+      "length": 1,
+      "words": [
+        "judged"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 72,
+      "actual_start": 72,
+      "expected": [
+        "judged"
+      ],
+      "actual": [
+        "judge"
+      ],
+      "actual_confidence": 0.3649,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 110,
+      "actual_start": 110,
+      "expected": [
+        "a",
+        "venture"
+      ],
+      "actual": [
+        "adventure"
+      ],
+      "actual_confidence": 0.5183,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 156,
+      "actual_start": 155,
+      "expected": [],
+      "actual": [
+        "at"
+      ],
+      "actual_confidence": 0.2323
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "People spend much of their life at work An occupation is not merely a way to earn a living It is also a major factor that shapes who a person is A student graduates from university, applies for a position and gets hired Under a new employer, the person begins working Associating with colleagues and superiors While learning the skills of the job But not everything goes smoothly One may fail If Judge not suitable for the work One may be fired Unemployment has a major impact Not only on finances But also on mental health On the other hand Some people use their talent To start their own enterprise Adventure involves risk But it also holds potentially great rewards. More people are changing professions in the middle of their career. In an age where people live to be a hundred, there is no need to cling to a single job. One's priority changes at at each stage of life. What matters is to find meaning in one's work. Satisfaction lies not in the size of a paycheck, but in the feeling that one is contributing to society.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.5,
+      "text": "People spend much of their life at work"
+    },
+    {
+      "start": 4.5,
+      "end": 9.68,
+      "text": "An occupation is not merely a way to earn a living"
+    },
+    {
+      "start": 9.68,
+      "end": 14.86,
+      "text": "It is also a major factor that shapes who a person is"
+    },
+    {
+      "start": 14.86,
+      "end": 20.88,
+      "text": "A student graduates from university, applies for a position and gets hired"
+    },
+    {
+      "start": 20.88,
+      "end": 23.92,
+      "text": "Under a new employer, the person begins working"
+    },
+    {
+      "start": 23.92,
+      "end": 26.82,
+      "text": "Associating with colleagues and superiors"
+    },
+    {
+      "start": 26.82,
+      "end": 29.36,
+      "text": "While learning the skills of the job"
+    },
+    {
+      "start": 29.36,
+      "end": 32.22,
+      "text": "But not everything goes smoothly"
+    },
+    {
+      "start": 32.82,
+      "end": 34.32,
+      "text": "One may fail"
+    },
+    {
+      "start": 34.32,
+      "end": 37.02,
+      "text": "If Judge not suitable for the work"
+    },
+    {
+      "start": 37.82,
+      "end": 39.52,
+      "text": "One may be fired"
+    },
+    {
+      "start": 41.3,
+      "end": 43.26,
+      "text": "Unemployment has a major impact"
+    },
+    {
+      "start": 43.26,
+      "end": 44.68,
+      "text": "Not only on finances"
+    },
+    {
+      "start": 44.68,
+      "end": 46.78,
+      "text": "But also on mental health"
+    },
+    {
+      "start": 46.78,
+      "end": 48.18,
+      "text": "On the other hand"
+    },
+    {
+      "start": 48.18,
+      "end": 49.74,
+      "text": "Some people use their talent"
+    },
+    {
+      "start": 49.74,
+      "end": 51.54,
+      "text": "To start their own enterprise"
+    },
+    {
+      "start": 51.54,
+      "end": 53.86,
+      "text": "Adventure involves risk"
+    },
+    {
+      "start": 53.86,
+      "end": 55.92,
+      "text": "But it also holds potentially"
+    },
+    {
+      "start": 55.92,
+      "end": 67.3,
+      "text": "great rewards. More people are changing professions in the middle of their career. In an age where"
+    },
+    {
+      "start": 67.3,
+      "end": 79.04,
+      "text": "people live to be a hundred, there is no need to cling to a single job. One's priority changes at"
+    },
+    {
+      "start": 79.04,
+      "end": 80.86,
+      "text": "at each stage of life."
+    },
+    {
+      "start": 82.16,
+      "end": 85.74,
+      "text": "What matters is to find meaning in one's work."
+    },
+    {
+      "start": 86.3,
+      "end": 90.52,
+      "text": "Satisfaction lies not in the size of a paycheck,"
+    },
+    {
+      "start": 90.84,
+      "end": 96.7,
+      "text": "but in the feeling that one is contributing to society."
+    }
+  ]
+}

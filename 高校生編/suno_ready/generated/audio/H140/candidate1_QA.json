@@ -1,0 +1,354 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H140.md",
+  "audio": "高校生編/suno_ready/generated/audio/H140/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 215.84,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0036,
+  "expected_words": 274,
+  "transcribed_words": 275,
+  "matched_words": 266,
+  "coverage": 0.9708,
+  "precision": 0.9673,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 273,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 54,
+      "length": 2,
+      "words": [
+        "tap",
+        "as"
+      ]
+    },
+    {
+      "start": 242,
+      "length": 2,
+      "words": [
+        "sixty",
+        "five"
+      ]
+    },
+    {
+      "start": 6,
+      "length": 1,
+      "words": [
+        "sixty"
+      ]
+    },
+    {
+      "start": 89,
+      "length": 1,
+      "words": [
+        "the"
+      ]
+    },
+    {
+      "start": 150,
+      "length": 1,
+      "words": [
+        "becomes"
+      ]
+    },
+    {
+      "start": 173,
+      "length": 1,
+      "words": [
+        "his"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 54,
+      "actual_start": 53,
+      "expected": [
+        "tap",
+        "as"
+      ],
+      "actual": [
+        "tapis"
+      ],
+      "actual_confidence": 0.4621,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 150,
+      "actual_start": 151,
+      "expected": [
+        "becomes"
+      ],
+      "actual": [
+        "it",
+        "comes"
+      ],
+      "actual_confidence": 0.7306,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 173,
+      "actual_start": 175,
+      "expected": [
+        "his"
+      ],
+      "actual": [
+        "is"
+      ],
+      "actual_confidence": 0.0674,
+      "substitution_words": 1,
+      "has_content_word": false
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 149,
+      "actual_start": 146,
+      "expected": [],
+      "actual": [
+        "three",
+        "his",
+        "sixty",
+        "five"
+      ],
+      "actual_confidence": 0.5402
+    },
+    {
+      "expected_start": 274,
+      "actual_start": 274,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.1742
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 6,
+      "actual_start": 6,
+      "expected": [
+        "sixty"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 89,
+      "actual_start": 87,
+      "expected": [
+        "the"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 242,
+      "actual_start": 244,
+      "expected": [
+        "sixty",
+        "five"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "My mother began studying English at 60 Having been a homemaker for many years She made the decision when her grandchild was born At first she struggled even with pronunciation Trying to make sounds her mouth was not used to She would stretch her lips again and again She patiently corrected herself from reading Tapis Tapu But my mother was determined She would get up at six every morning And listen to English lessons on the radio After breakfast, she would read the textbook for an hour Committing words to memory After half a year, she could handle simple daily conversation After a year, she gave directions to a tourist After three years, she wrote an English essay at a university extension course My mother's progress was somewhat slow but steady The secret was keep doing it every day Even a short amount of time continued for three his sixty-five days It comes a vast sum of hours When her grandchild turned five She began speaking English with him The grandchild was amused to see Is grandmother speak English? Then he too began learning English My mother's story teaches me something important Too late is only an excuse If the desire to learn is real One can begin at any age Modern society imposes the pressure on young people That you must work hard while young But in an age where people live to a hundred Learning is a lifelong pursuit My mother is 65 this year She is now planning her first solo trip abroad The destination is London To make her own way through the world in English That is her new dream you",
+  "segments": [
+    {
+      "start": 10.76,
+      "end": 16.36,
+      "text": "My mother began studying English at 60"
+    },
+    {
+      "start": 17.0,
+      "end": 22.32,
+      "text": "Having been a homemaker for many years"
+    },
+    {
+      "start": 23.54,
+      "end": 28.98,
+      "text": "She made the decision when her grandchild was born"
+    },
+    {
+      "start": 30.34,
+      "end": 34.94,
+      "text": "At first she struggled even with pronunciation"
+    },
+    {
+      "start": 37.02,
+      "end": 41.72,
+      "text": "Trying to make sounds her mouth was not used to"
+    },
+    {
+      "start": 42.96,
+      "end": 48.36,
+      "text": "She would stretch her lips again and again"
+    },
+    {
+      "start": 48.36,
+      "end": 54.62,
+      "text": "She patiently corrected herself from reading Tapis Tapu"
+    },
+    {
+      "start": 55.36,
+      "end": 58.0,
+      "text": "But my mother was determined"
+    },
+    {
+      "start": 59.36,
+      "end": 62.84,
+      "text": "She would get up at six every morning"
+    },
+    {
+      "start": 63.36,
+      "end": 67.34,
+      "text": "And listen to English lessons on the radio"
+    },
+    {
+      "start": 69.36,
+      "end": 73.48,
+      "text": "After breakfast, she would read the textbook for an hour"
+    },
+    {
+      "start": 74.36,
+      "end": 76.86,
+      "text": "Committing words to memory"
+    },
+    {
+      "start": 76.86,
+      "end": 83.74,
+      "text": "After half a year, she could handle simple daily conversation"
+    },
+    {
+      "start": 85.6,
+      "end": 90.4,
+      "text": "After a year, she gave directions to a tourist"
+    },
+    {
+      "start": 91.8,
+      "end": 98.92,
+      "text": "After three years, she wrote an English essay at a university extension course"
+    },
+    {
+      "start": 99.86,
+      "end": 103.38,
+      "text": "My mother's progress was somewhat slow but steady"
+    },
+    {
+      "start": 105.06,
+      "end": 109.34,
+      "text": "The secret was keep doing it every day"
+    },
+    {
+      "start": 110.48,
+      "end": 116.34,
+      "text": "Even a short amount of time continued for three his sixty-five days"
+    },
+    {
+      "start": 116.34,
+      "end": 119.42,
+      "text": "It comes a vast sum of hours"
+    },
+    {
+      "start": 120.78,
+      "end": 123.7,
+      "text": "When her grandchild turned five"
+    },
+    {
+      "start": 123.7,
+      "end": 126.9,
+      "text": "She began speaking English with him"
+    },
+    {
+      "start": 126.9,
+      "end": 130.8,
+      "text": "The grandchild was amused to see"
+    },
+    {
+      "start": 130.8,
+      "end": 133.68,
+      "text": "Is grandmother speak English?"
+    },
+    {
+      "start": 135.8,
+      "end": 139.34,
+      "text": "Then he too began learning English"
+    },
+    {
+      "start": 141.8,
+      "end": 146.42,
+      "text": "My mother's story teaches me something important"
+    },
+    {
+      "start": 147.8,
+      "end": 152.16,
+      "text": "Too late is only an excuse"
+    },
+    {
+      "start": 153.8,
+      "end": 156.84,
+      "text": "If the desire to learn is real"
+    },
+    {
+      "start": 156.84,
+      "end": 159.96,
+      "text": "One can begin at any age"
+    },
+    {
+      "start": 159.96,
+      "end": 165.26,
+      "text": "Modern society imposes the pressure on young people"
+    },
+    {
+      "start": 165.26,
+      "end": 168.52,
+      "text": "That you must work hard while young"
+    },
+    {
+      "start": 170.28,
+      "end": 174.66,
+      "text": "But in an age where people live to a hundred"
+    },
+    {
+      "start": 174.66,
+      "end": 178.32,
+      "text": "Learning is a lifelong pursuit"
+    },
+    {
+      "start": 179.52,
+      "end": 184.3,
+      "text": "My mother is 65 this year"
+    },
+    {
+      "start": 184.3,
+      "end": 190.64,
+      "text": "She is now planning her first solo trip abroad"
+    },
+    {
+      "start": 191.3,
+      "end": 195.42,
+      "text": "The destination is London"
+    },
+    {
+      "start": 197.14,
+      "end": 203.2,
+      "text": "To make her own way through the world in English"
+    },
+    {
+      "start": 205.9,
+      "end": 209.02,
+      "text": "That is her new dream"
+    },
+    {
+      "start": 214.42,
+      "end": 215.82,
+      "text": "you"
+    }
+  ]
+}

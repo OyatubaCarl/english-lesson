@@ -1,0 +1,58 @@
+{
+  "lesson": "H050",
+  "title": "教育と機会",
+  "style": "画風01・光彩のある劇場アニメ背景を基調にした教育と人権のドキュメンタリー",
+  "setting": "1948年の国連総会から、現代の都市・地方・避難先・学校・家庭・大学・地域活動へ進む",
+  "continuity": {
+    "student": "H15基準の同じ17歳男子高校生。短い黒髪、紺の制服コート、灰色のマフラー、黒いリュック。現代の観察・学習・結末に登場",
+    "peer": "同年代の女子高校生。黒褐色の髪を低く結び、えんじ色のカーディガンと紺のスカート。学校・奨学金・地域活動で連続させる",
+    "teacher": "40歳前後の女性教員。濃紺ジャケット、低い位置で束ねた黒髪。教室・相談・改革の現場をつなぐ",
+    "palette": "制度上の壁と格差は群青・灰青、学びの場は自然な木色と琥珀色、改革と結末は青緑と朝夕の暖色"
+  },
+  "sequence": [
+    "educationはすべての人のbasic right",
+    "1948年のUniversal Declaration of Human Rights Article 26",
+    "生まれた国とfamily incomeによって異なるopportunity",
+    "学校へ通えない多数のchildren",
+    "developed countries内にも残るqualityとaccessのgap",
+    "家庭のeconomic conditionがfuture careerへ及ぼす影響",
+    "educationはknowledgeの伝達だけではない",
+    "individualがidentityを形成しresponsible memberへ育つprocess",
+    "scholarshipsとreduced tuitionでhigher educationを開く試み",
+    "slow but continuing reform",
+    "every childへのsame opportunity",
+    "equal educationによってsocietyのgapが縮まり始める"
+  ],
+  "accuracy": [
+    "教育を受ける権利は世界人権宣言第26条に明記され、初等・基礎教育の無償と義務、高等教育への平等なアクセスが含まれる。画像内の文書本文は読ませず字幕で正確に示す",
+    "学校へ通えない理由を所得だけに限定せず、距離、紛争・避難、障害、ジェンダー、家族事情、学費・教材・交通など複数の壁として描く",
+    "低所得地域を荒廃や受動的な被害者像だけで描かず、家族・教師・地域が学びを支える主体性を残す",
+    "先進国でも地域、所得、障害、通信環境、学校設備などによる質とアクセスの差があることを、同一国内の対照で示す",
+    "家庭所得が将来を機械的に決定する表現を避け、選択肢へ強い影響を与えるが支援で変えられる構成にする",
+    "教育は試験点数や教科書だけでなく、対話、協働、芸術、科学、社会参加、自己理解を通じた人格形成として描く",
+    "奨学金・授業料減免は万能な贈り物ではなく、相談、申請、審査、生活支援、通学・住居等も含む制度として描く",
+    "改革は一度の会議や善意で即時完成せず、予算、教員配置、交通、設備、支援制度が少しずつ改善する時間軸で示す"
+  ],
+  "fact_check_sources": [
+    "https://www.un.org/en/about-us/universal-declaration-of-human-rights",
+    "https://www.un.org/en/observances/education-day",
+    "https://www.unesco.org/reports/gem-report/en/2026-access-equity"
+  ],
+  "composition": {
+    "aspect_ratio": "16:9",
+    "subtitle_safe_area": "主要な顔、手、教科書、机、通学路、相談資料、学習活動は画面下45%より上に置く",
+    "camera": "一ショットにつき一定方向の寄り、引き、静止のいずれか一つ",
+    "text": "読める宣言本文、学校名、国名、金額、成績、奨学金名、大学名、ロゴを画像内に生成しない。固有情報は正確な動画字幕だけで示す"
+  },
+  "avoid": [
+    "貧しい子と豊かな子を善悪で対立させる構図、特定地域のステレオタイプ、泣く子どもだけの扇情的な表現",
+    "学校へ通えない子を怠けているように描くこと、障害を悲劇だけにすること、教師や親を一律の加害者にすること",
+    "札束、巨大な天秤、魔法の光で格差が消える抽象図、空中UI、ホログラム、読める文字、写真調、油彩、透かし"
+  ],
+  "imagegen": {
+    "mode": "built-in ImageGen",
+    "planned_master_count": 13,
+    "selected_output_directory": "scenes/character_refs",
+    "video_scene_directory": "scenes/final_style01"
+  }
+}

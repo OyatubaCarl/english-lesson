@@ -1,0 +1,1113 @@
+{
+  "lesson": "H002",
+  "title_ja": "春、すべてがあたらしい",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 20,
+  "canonical_target_lines": 11,
+  "mixed_lines": 7,
+  "japanese_only_lines": 13,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 1.72,
+      "end": 4.711,
+      "english": "The long winter ended.",
+      "japanese": "長い冬が終わりました。",
+      "mixed": "長い冬が終わりました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "長い冬が終わりました。",
+          "parts": [
+            {
+              "text": "長",
+              "ruby": "なが"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "冬",
+              "ruby": "ふゆ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "終",
+              "ruby": "お"
+            },
+            {
+              "text": "わりました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 2,
+      "start": 4.711,
+      "end": 6.954,
+      "english": "The snow melted.",
+      "japanese": "雪が溶けました。",
+      "mixed": "雪が melted。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "雪が ",
+          "parts": [
+            {
+              "text": "雪",
+              "ruby": "ゆき"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "melted",
+          "ruby": "溶けました"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "melted",
+          "canonical_word": "melted",
+          "meaning": "溶けた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "melted",
+          "reading": "溶けました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "melted",
+          "canonical_meaning": "溶けた"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 3,
+      "start": 6.954,
+      "end": 11.44,
+      "english": "The fields and hills gradually recovered.",
+      "japanese": "田畑や丘は徐々に回復していきました。",
+      "mixed": "田畑や丘は徐々に recovered。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "田畑や丘は徐々に ",
+          "parts": [
+            {
+              "text": "田畑",
+              "ruby": "たはた"
+            },
+            {
+              "text": "や",
+              "ruby": ""
+            },
+            {
+              "text": "丘",
+              "ruby": "おか"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "徐々",
+              "ruby": "じょじょ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "recovered",
+          "ruby": "回復していきました"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "recovered",
+          "canonical_word": "recovered",
+          "meaning": "回復した"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "recovered",
+          "reading": "回復していきました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "recovered",
+          "canonical_meaning": "回復した"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 4,
+      "start": 12.88,
+      "end": 15.269,
+      "english": "The earth was awake.",
+      "japanese": "地球は目覚めていました。",
+      "mixed": "地球は awake。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "地球は ",
+          "parts": [
+            {
+              "text": "地球",
+              "ruby": "ちきゅう"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "awake",
+          "ruby": "目覚めていました"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "awake",
+          "canonical_word": "awake",
+          "meaning": "目覚めた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "awake",
+          "reading": "目覚めていました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "awake",
+          "canonical_meaning": "目覚めた"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 5,
+      "start": 15.269,
+      "end": 17.657,
+      "english": "The air felt pleasant.",
+      "japanese": "空気が心地よかったです。",
+      "mixed": "空気が pleasant でした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "空気が ",
+          "parts": [
+            {
+              "text": "空気",
+              "ruby": "くうき"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "pleasant",
+          "ruby": "心地よかったです"
+        },
+        {
+          "type": "ja",
+          "text": " でした",
+          "parts": [
+            {
+              "text": "でした",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "pleasant",
+          "canonical_word": "pleasant",
+          "meaning": "心地よい"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "pleasant",
+          "reading": "心地よかったです",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "pleasant",
+          "canonical_meaning": "心地よい"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 6,
+      "start": 17.657,
+      "end": 21.24,
+      "english": "Cherry trees were full of flowers.",
+      "japanese": "桜の花がいっぱいでした。",
+      "mixed": "桜の花がいっぱいでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "桜の花がいっぱいでした。",
+          "parts": [
+            {
+              "text": "桜",
+              "ruby": "さくら"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "花",
+              "ruby": "はな"
+            },
+            {
+              "text": "がいっぱいでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 7,
+      "start": 21.6,
+      "end": 27.94,
+      "english": "As I walked along the river, my heart became calm.",
+      "japanese": "川沿いを歩いていると心が穏やかになりました。",
+      "mixed": "川沿いを歩いていると心が calm になりました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "川沿いを歩いていると心が ",
+          "parts": [
+            {
+              "text": "川沿",
+              "ruby": "かわぞ"
+            },
+            {
+              "text": "いを",
+              "ruby": ""
+            },
+            {
+              "text": "歩",
+              "ruby": "ある"
+            },
+            {
+              "text": "いていると",
+              "ruby": ""
+            },
+            {
+              "text": "心",
+              "ruby": "こころ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "calm",
+          "ruby": "穏やか"
+        },
+        {
+          "type": "ja",
+          "text": " になりました。",
+          "parts": [
+            {
+              "text": "になりました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "calm",
+          "canonical_word": "calm",
+          "meaning": "穏やかな"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "calm",
+          "reading": "穏やか",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "calm",
+          "canonical_meaning": "穏やかな"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 8,
+      "start": 31.66,
+      "end": 33.82,
+      "english": "My face grew gentle.",
+      "japanese": "顔が優しくなりました。",
+      "mixed": "顔が gentle になりました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "顔が ",
+          "parts": [
+            {
+              "text": "顔",
+              "ruby": "かお"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "gentle",
+          "ruby": "優しく"
+        },
+        {
+          "type": "ja",
+          "text": " に",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "なりました。",
+          "parts": [
+            {
+              "text": "なりました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "gentle",
+          "canonical_word": "gentle",
+          "meaning": "優しい"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "gentle",
+          "reading": "優しく",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "gentle",
+          "canonical_meaning": "優しい"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 9,
+      "start": 33.82,
+      "end": 36.52,
+      "english": "The world itself seemed new.",
+      "japanese": "世界そのものが新しく見えました。",
+      "mixed": "世界そのものが新しく見えました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "世界そのものが新しく見えました。",
+          "parts": [
+            {
+              "text": "世界",
+              "ruby": "せかい"
+            },
+            {
+              "text": "そのものが",
+              "ruby": ""
+            },
+            {
+              "text": "新",
+              "ruby": "あたら"
+            },
+            {
+              "text": "しく",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "えました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 10,
+      "start": 36.52,
+      "end": 39.2,
+      "english": "On the path I met a friend.",
+      "japanese": "途中で友達に会いました。",
+      "mixed": "途中で友達に会いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "途中で友達に会いました。",
+          "parts": [
+            {
+              "text": "途中",
+              "ruby": "とちゅう"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "友達",
+              "ruby": "ともだち"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "会",
+              "ruby": "あ"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 11,
+      "start": 40.68,
+      "end": 46.74,
+      "english": "She looked more mature than last year, yet her smile remained the same.",
+      "japanese": "昨年よりも大人っぽく見えたが、笑顔は変わらなかった。",
+      "mixed": "昨年よりも大人っぽく見えたが、笑顔は変わらなかった。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "昨年よりも大人っぽく見えたが、笑顔は変わらなかった。",
+          "parts": [
+            {
+              "text": "昨年",
+              "ruby": "さくねん"
+            },
+            {
+              "text": "よりも",
+              "ruby": ""
+            },
+            {
+              "text": "大人",
+              "ruby": "おとな"
+            },
+            {
+              "text": "っぽく",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "えたが、",
+              "ruby": ""
+            },
+            {
+              "text": "笑顔",
+              "ruby": "えがお"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "変",
+              "ruby": "か"
+            },
+            {
+              "text": "わらなかった。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "mature",
+          "canonical_word": "mature",
+          "meaning": "成熟した"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 12,
+      "start": 46.74,
+      "end": 49.85,
+      "english": "Her eyes shone brightly.",
+      "japanese": "彼女の目は明るく輝いていました。",
+      "mixed": "彼女の目は明るく輝いていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼女の目は明るく輝いていました。",
+          "parts": [
+            {
+              "text": "彼女",
+              "ruby": "かのじょ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "目",
+              "ruby": "め"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "明",
+              "ruby": "あか"
+            },
+            {
+              "text": "るく",
+              "ruby": ""
+            },
+            {
+              "text": "輝",
+              "ruby": "かがや"
+            },
+            {
+              "text": "いていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 13,
+      "start": 49.85,
+      "end": 52.96,
+      "english": "Her voice sounded warm.",
+      "japanese": "彼女の声は温かく聞こえました。",
+      "mixed": "彼女の声は温かく聞こえました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼女の声は温かく聞こえました。",
+          "parts": [
+            {
+              "text": "彼女",
+              "ruby": "かのじょ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "声",
+              "ruby": "こえ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "温",
+              "ruby": "あたた"
+            },
+            {
+              "text": "かく",
+              "ruby": ""
+            },
+            {
+              "text": "聞",
+              "ruby": "き"
+            },
+            {
+              "text": "こえました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 14,
+      "start": 54.88,
+      "end": 60.72,
+      "english": "Children's voices reached me, and I felt full of pleasure and delight.",
+      "japanese": "子どもたちの声が届き、喜びと喜びでいっぱいでした。",
+      "mixed": "子どもたちの声が届き、 pleasure と喜びでいっぱいでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "子どもたちの声が届き、 ",
+          "parts": [
+            {
+              "text": "子",
+              "ruby": "こ"
+            },
+            {
+              "text": "どもたちの",
+              "ruby": ""
+            },
+            {
+              "text": "声",
+              "ruby": "こえ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "届",
+              "ruby": "とど"
+            },
+            {
+              "text": "き、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "pleasure",
+          "ruby": "喜び"
+        },
+        {
+          "type": "ja",
+          "text": " と喜びでいっぱいでした。",
+          "parts": [
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "喜",
+              "ruby": "よろこ"
+            },
+            {
+              "text": "びでいっぱいでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "pleasure",
+          "canonical_word": "pleasure",
+          "meaning": "喜び"
+        },
+        {
+          "english": "delight",
+          "canonical_word": "delight",
+          "meaning": "楽しみ"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "pleasure",
+          "reading": "喜び",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "pleasure",
+          "canonical_meaning": "喜び"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 15,
+      "start": 60.72,
+      "end": 64.62,
+      "english": "A fresh hope arose in my heart.",
+      "japanese": "私の心に新たな希望が芽生えました。",
+      "mixed": "私の心に新たな希望が芽生えました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私の心に新たな希望が芽生えました。",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "心",
+              "ruby": "こころ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "新",
+              "ruby": "あら"
+            },
+            {
+              "text": "たな",
+              "ruby": ""
+            },
+            {
+              "text": "希望",
+              "ruby": "きぼう"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "芽生",
+              "ruby": "めば"
+            },
+            {
+              "text": "えました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "arose",
+          "canonical_word": "arose",
+          "meaning": "生じた"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 16,
+      "start": 64.62,
+      "end": 69.98,
+      "english": "A small joy emerged in my chest.",
+      "japanese": "小さな喜びが胸に湧き上がりました。",
+      "mixed": "小さな喜びが胸に湧き上がりました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "小さな喜びが胸に湧き上がりました。",
+          "parts": [
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            },
+            {
+              "text": "喜",
+              "ruby": "よろこ"
+            },
+            {
+              "text": "びが",
+              "ruby": ""
+            },
+            {
+              "text": "胸",
+              "ruby": "むね"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "湧き上",
+              "ruby": "わきあ"
+            },
+            {
+              "text": "がりました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "emerged",
+          "canonical_word": "emerged",
+          "meaning": "立ち現れた"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 17,
+      "start": 69.98,
+      "end": 72.1,
+      "english": "At night I remained awake.",
+      "japanese": "夜になっても私は起きていました。",
+      "mixed": "夜になっても私は起きていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "夜になっても私は起きていました。",
+          "parts": [
+            {
+              "text": "夜",
+              "ruby": "よる"
+            },
+            {
+              "text": "になっても",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "起",
+              "ruby": "お"
+            },
+            {
+              "text": "きていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "awake",
+          "canonical_word": "awake",
+          "meaning": "目覚めた"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 18,
+      "start": 72.1,
+      "end": 78.6,
+      "english": "Everything was quietly but surely becoming new.",
+      "japanese": "すべてが静かに、しかし確実に新しくなっていきました。",
+      "mixed": "すべてが静かに、しかし確実に新しくなっていきました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "すべてが静かに、しかし確実に新しくなっていきました。",
+          "parts": [
+            {
+              "text": "すべてが",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに、しかし",
+              "ruby": ""
+            },
+            {
+              "text": "確実",
+              "ruby": "かくじつ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "新",
+              "ruby": "あたら"
+            },
+            {
+              "text": "しくなっていきました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 19,
+      "start": 81.32,
+      "end": 84.48,
+      "english": "The spring was young.",
+      "japanese": "春は若かった。",
+      "mixed": "春は若かった。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "春は若かった。",
+          "parts": [
+            {
+              "text": "春",
+              "ruby": "はる"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "若",
+              "ruby": "わか"
+            },
+            {
+              "text": "かった。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 20,
+      "start": 84.48,
+      "end": 87.3,
+      "english": "The world seemed alive.",
+      "japanese": "世界が生きているように見えました。",
+      "mixed": "世界が生きているように見えました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "世界が生きているように見えました。",
+          "parts": [
+            {
+              "text": "世界",
+              "ruby": "せかい"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "生",
+              "ruby": "い"
+            },
+            {
+              "text": "きているように",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "えました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    }
+  ]
+}

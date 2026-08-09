@@ -1,0 +1,230 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H138.md",
+  "audio": "高校生編/suno_ready/generated/audio/H138/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 163.98,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9963,
+  "expected_words": 272,
+  "transcribed_words": 271,
+  "matched_words": 268,
+  "coverage": 0.9853,
+  "precision": 0.9889,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 271,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 118,
+      "length": 2,
+      "words": [
+        "twenty",
+        "five"
+      ]
+    },
+    {
+      "start": 47,
+      "length": 1,
+      "words": [
+        "actors"
+      ]
+    },
+    {
+      "start": 199,
+      "length": 1,
+      "words": [
+        "us"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 47,
+      "actual_start": 47,
+      "expected": [
+        "actors"
+      ],
+      "actual": [
+        "actor"
+      ],
+      "actual_confidence": 0.75,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 199,
+      "actual_start": 197,
+      "expected": [
+        "us"
+      ],
+      "actual": [
+        "u",
+        "s"
+      ],
+      "actual_confidence": 0.7671,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 118,
+      "actual_start": 118,
+      "expected": [
+        "twenty",
+        "five"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "The birth of cinema was a miraculous invention at the end of the 19th century. Since the Lumiere brothers held a public screening in Paris in 1895, film has become one of humanity's major art forms. Early films were silent. The story had to be conveyed through the actor's facial expressions and gestures alone The greatest star of that era was Charlie Chaplin Chaplin was born in 1889 to a poor family in London His father died young from alcoholism and his mother suffered mental illness at seven Chaplin was sent to an orphanage. His childhood was a battle against awful poverty. He survived on simple soup and stale bread. But that experience gave depth to his later work. At 25, Chaplin crossed to Hollywood and invented the character of the tramp, a bowler hat, a cane, a tiny mustache, shoes too big. This figure was loved around the world, his films were comedies, yet they sharply depicted the contradictions of society. Modern times satirized the alienation of industrial society, the great dictator satirized Nazi Germany. In the 1950s, however, when the Red Scare began in the United States Chaplin was suspected of being a communist sympathizer He left the U.S. and went into exile in Switzerland In his later years, Chaplin's reputation was restored At the 1972 Academy Awards The entire audience stood up and gave him a standing ovation The prolonged applause became one of the most memorable moments in Oscar history Chaplin's films do not fade even today Life is a tragedy when seen up close, but a comedy from a distance His words touch the truth of the human condition",
+  "segments": [
+    {
+      "start": 4.4,
+      "end": 13.06,
+      "text": "The birth of cinema was a miraculous invention at the end of the 19th century."
+    },
+    {
+      "start": 14.06,
+      "end": 19.86,
+      "text": "Since the Lumiere brothers held a public screening in Paris in 1895,"
+    },
+    {
+      "start": 20.34,
+      "end": 24.22,
+      "text": "film has become one of humanity's major art forms."
+    },
+    {
+      "start": 25.28,
+      "end": 26.82,
+      "text": "Early films were silent."
+    },
+    {
+      "start": 30.48,
+      "end": 36.9,
+      "text": "The story had to be conveyed through the actor's facial expressions and gestures alone"
+    },
+    {
+      "start": 38.02,
+      "end": 42.24,
+      "text": "The greatest star of that era was Charlie Chaplin"
+    },
+    {
+      "start": 42.24,
+      "end": 49.46,
+      "text": "Chaplin was born in 1889 to a poor family in London"
+    },
+    {
+      "start": 51.42,
+      "end": 58.0,
+      "text": "His father died young from alcoholism and his mother suffered mental illness at seven"
+    },
+    {
+      "start": 58.0,
+      "end": 61.08,
+      "text": "Chaplin was sent to an orphanage."
+    },
+    {
+      "start": 61.9,
+      "end": 65.92,
+      "text": "His childhood was a battle against awful poverty."
+    },
+    {
+      "start": 67.06,
+      "end": 70.22,
+      "text": "He survived on simple soup and stale bread."
+    },
+    {
+      "start": 71.38,
+      "end": 75.38,
+      "text": "But that experience gave depth to his later work."
+    },
+    {
+      "start": 76.38,
+      "end": 79.22,
+      "text": "At 25, Chaplin crossed to Hollywood"
+    },
+    {
+      "start": 79.22,
+      "end": 81.78,
+      "text": "and invented the character of the tramp,"
+    },
+    {
+      "start": 82.08,
+      "end": 84.62,
+      "text": "a bowler hat, a cane, a tiny mustache,"
+    },
+    {
+      "start": 84.62,
+      "end": 86.48,
+      "text": "shoes too big."
+    },
+    {
+      "start": 86.48,
+      "end": 96.68,
+      "text": "This figure was loved around the world, his films were comedies, yet they sharply depicted the contradictions of society."
+    },
+    {
+      "start": 98.22,
+      "end": 107.6,
+      "text": "Modern times satirized the alienation of industrial society, the great dictator satirized Nazi Germany."
+    },
+    {
+      "start": 107.6,
+      "end": 114.44,
+      "text": "In the 1950s, however, when the Red Scare began in the United States"
+    },
+    {
+      "start": 114.44,
+      "end": 118.78,
+      "text": "Chaplin was suspected of being a communist sympathizer"
+    },
+    {
+      "start": 118.78,
+      "end": 123.34,
+      "text": "He left the U.S. and went into exile in Switzerland"
+    },
+    {
+      "start": 125.24,
+      "end": 130.2,
+      "text": "In his later years, Chaplin's reputation was restored"
+    },
+    {
+      "start": 130.2,
+      "end": 133.68,
+      "text": "At the 1972 Academy Awards"
+    },
+    {
+      "start": 133.68,
+      "end": 138.92,
+      "text": "The entire audience stood up and gave him a standing ovation"
+    },
+    {
+      "start": 138.92,
+      "end": 145.78,
+      "text": "The prolonged applause became one of the most memorable moments in Oscar history"
+    },
+    {
+      "start": 145.78,
+      "end": 150.52,
+      "text": "Chaplin's films do not fade even today"
+    },
+    {
+      "start": 150.52,
+      "end": 157.08,
+      "text": "Life is a tragedy when seen up close, but a comedy from a distance"
+    },
+    {
+      "start": 157.08,
+      "end": 163.98,
+      "text": "His words touch the truth of the human condition"
+    }
+  ]
+}

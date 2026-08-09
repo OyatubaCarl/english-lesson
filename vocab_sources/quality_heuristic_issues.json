@@ -1,0 +1,709 @@
+[
+  {
+    "id": "s5_014",
+    "stage": "stage5",
+    "word": "boyfriend",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [1, 5, 2, 2]"
+  },
+  {
+    "id": "s5_020",
+    "stage": "stage5",
+    "word": "butterfly",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [1, 2, 3, 6]"
+  },
+  {
+    "id": "s5_065",
+    "stage": "stage5",
+    "word": "girlfriend",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [1, 6, 1, 8]"
+  },
+  {
+    "id": "s5_190",
+    "stage": "stage5",
+    "word": "appropriate",
+    "type": "choice_contains_correct",
+    "detail": "choices[0]='不適切な' contains correct '適切な'"
+  },
+  {
+    "id": "s5_217",
+    "stage": "stage5",
+    "word": "barbecue",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [3, 2, 6, 9]"
+  },
+  {
+    "id": "s5_291",
+    "stage": "stage5",
+    "word": "comb",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [5, 2, 1, 4]"
+  },
+  {
+    "id": "s5_350",
+    "stage": "stage5",
+    "word": "dishonest",
+    "type": "correct_contains_choice",
+    "detail": "correct='不正直な' contains choices[0]='正直な'"
+  },
+  {
+    "id": "s5_362",
+    "stage": "stage5",
+    "word": "drug",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [4, 5, 1, 3]"
+  },
+  {
+    "id": "s5_442",
+    "stage": "stage5",
+    "word": "gram",
+    "type": "choice_contains_correct",
+    "detail": "choices[0]='キログラム' contains correct 'グラム'"
+  },
+  {
+    "id": "s5_453",
+    "stage": "stage5",
+    "word": "granny",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [6, 6, 4, 1]"
+  },
+  {
+    "id": "s5_522",
+    "stage": "stage5",
+    "word": "liter",
+    "type": "choice_contains_correct",
+    "detail": "choices[3]='ミリリットル' contains correct 'リットル'"
+  },
+  {
+    "id": "s5_537",
+    "stage": "stage5",
+    "word": "mall",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [2, 7, 9, 4]"
+  },
+  {
+    "id": "s5_538",
+    "stage": "stage5",
+    "word": "manager",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [5, 8, 1, 2]"
+  },
+  {
+    "id": "s5_539",
+    "stage": "stage5",
+    "word": "mark",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [2, 5, 1, 2]"
+  },
+  {
+    "id": "s5_545",
+    "stage": "stage5",
+    "word": "melon",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [3, 6, 3, 1]"
+  },
+  {
+    "id": "s5_561",
+    "stage": "stage5",
+    "word": "musical",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [3, 10, 2, 6]"
+  },
+  {
+    "id": "s5_587",
+    "stage": "stage5",
+    "word": "pan",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [1, 3, 3, 5]"
+  },
+  {
+    "id": "s5_638",
+    "stage": "stage5",
+    "word": "proper",
+    "type": "choice_contains_correct",
+    "detail": "choices[1]='不適切な' contains correct '適切な'"
+  },
+  {
+    "id": "s5_659",
+    "stage": "stage5",
+    "word": "recipe",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [3, 1, 5, 4]"
+  },
+  {
+    "id": "s5_693",
+    "stage": "stage5",
+    "word": "rifle",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [1, 5, 1, 1]"
+  },
+  {
+    "id": "s5_731",
+    "stage": "stage5",
+    "word": "sausage",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [4, 3, 1, 5]"
+  },
+  {
+    "id": "s5_736",
+    "stage": "stage5",
+    "word": "scientific",
+    "type": "choice_contains_correct",
+    "detail": "choices[1]='非科学的な' contains correct '科学的な'"
+  },
+  {
+    "id": "s5_744",
+    "stage": "stage5",
+    "word": "secret",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [7, 2, 1, 2]"
+  },
+  {
+    "id": "s5_858",
+    "stage": "stage5",
+    "word": "unnecessary",
+    "type": "correct_contains_choice",
+    "detail": "correct='不必要な' contains choices[0]='必要な'"
+  },
+  {
+    "id": "s5_910",
+    "stage": "stage5",
+    "word": "accessory",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [3, 6, 3, 1]"
+  },
+  {
+    "id": "s5_956",
+    "stage": "stage5",
+    "word": "alcohol",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [5, 1, 2, 3]"
+  },
+  {
+    "id": "s5_957",
+    "stage": "stage5",
+    "word": "alcoholic",
+    "type": "choice_contains_correct",
+    "detail": "choices[0]='ノンアルコールの' contains correct 'アルコールの'"
+  },
+  {
+    "id": "s5_978",
+    "stage": "stage5",
+    "word": "annual",
+    "type": "choice_contains_correct",
+    "detail": "choices[2]='10年に一度の' contains correct '年に一度の'"
+  },
+  {
+    "id": "s5_997",
+    "stage": "stage5",
+    "word": "approach",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [2, 5, 1, 2]"
+  },
+  {
+    "id": "s5_1040",
+    "stage": "stage5",
+    "word": "bacon",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [5, 4, 2, 1]"
+  },
+  {
+    "id": "s5_1152",
+    "stage": "stage5",
+    "word": "carpet",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [5, 2, 1, 3]"
+  },
+  {
+    "id": "s5_1159",
+    "stage": "stage5",
+    "word": "cattle",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [5, 1, 1, 1]"
+  },
+  {
+    "id": "s5_1174",
+    "stage": "stage5",
+    "word": "chariot",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [5, 1, 1, 5]"
+  },
+  {
+    "id": "s5_1233",
+    "stage": "stage5",
+    "word": "concept",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [2, 1, 5, 2]"
+  },
+  {
+    "id": "s5_1251",
+    "stage": "stage5",
+    "word": "consonant",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [2, 1, 5, 2]"
+  },
+  {
+    "id": "s5_1385",
+    "stage": "stage5",
+    "word": "dioxide",
+    "type": "correct_contains_choice",
+    "detail": "correct='二酸化物' contains choices[0]='酸化物'"
+  },
+  {
+    "id": "s5_1435",
+    "stage": "stage5",
+    "word": "duvet",
+    "type": "correct_contains_choice",
+    "detail": "correct='羽毛布団' contains choices[0]='毛布'"
+  },
+  {
+    "id": "s5_1440",
+    "stage": "stage5",
+    "word": "earnest",
+    "type": "choice_contains_correct",
+    "detail": "choices[2]='不真面目な' contains correct '真面目な'"
+  },
+  {
+    "id": "s5_1451",
+    "stage": "stage5",
+    "word": "edition",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [2, 1, 5, 3]"
+  },
+  {
+    "id": "s5_1510",
+    "stage": "stage5",
+    "word": "evenly",
+    "type": "choice_contains_correct",
+    "detail": "choices[0]='不均等に' contains correct '均等に'"
+  },
+  {
+    "id": "s5_1561",
+    "stage": "stage5",
+    "word": "filter",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [5, 1, 1, 2]"
+  },
+  {
+    "id": "s5_1622",
+    "stage": "stage5",
+    "word": "garment",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [1, 2, 6, 2]"
+  },
+  {
+    "id": "s5_1676",
+    "stage": "stage5",
+    "word": "hairdryer",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [4, 2, 5, 1]"
+  },
+  {
+    "id": "s5_1725",
+    "stage": "stage5",
+    "word": "hostel",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [5, 2, 1, 4]"
+  },
+  {
+    "id": "s5_1748",
+    "stage": "stage5",
+    "word": "improper",
+    "type": "correct_contains_choice",
+    "detail": "correct='不適切な' contains choices[1]='適切な'"
+  },
+  {
+    "id": "s5_1830",
+    "stage": "stage5",
+    "word": "kettle",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [1, 3, 5, 3]"
+  },
+  {
+    "id": "s5_1871",
+    "stage": "stage5",
+    "word": "link",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [4, 2, 2, 9]"
+  },
+  {
+    "id": "s5_1956",
+    "stage": "stage5",
+    "word": "monitor",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [2, 5, 1, 4]"
+  },
+  {
+    "id": "s5_1972",
+    "stage": "stage5",
+    "word": "mountaintop",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [2, 1, 2, 5]"
+  },
+  {
+    "id": "s5_1974",
+    "stage": "stage5",
+    "word": "mud",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [1, 1, 1, 5]"
+  },
+  {
+    "id": "s5_2020",
+    "stage": "stage5",
+    "word": "notorious",
+    "type": "correct_contains_choice",
+    "detail": "correct='悪名高い' contains choices[0]='名高い'"
+  },
+  {
+    "id": "s5_2043",
+    "stage": "stage5",
+    "word": "officially",
+    "type": "choice_contains_correct",
+    "detail": "choices[1]='非公式に' contains correct '公式に'"
+  },
+  {
+    "id": "s5_2081",
+    "stage": "stage5",
+    "word": "parachute",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [2, 6, 1, 1]"
+  },
+  {
+    "id": "s5_2100",
+    "stage": "stage5",
+    "word": "peanut",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [5, 5, 3, 1]"
+  },
+  {
+    "id": "s5_2132",
+    "stage": "stage5",
+    "word": "pole",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [3, 5, 2, 1]"
+  },
+  {
+    "id": "s5_2139",
+    "stage": "stage5",
+    "word": "port",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [1, 2, 3, 7]"
+  },
+  {
+    "id": "s5_2166",
+    "stage": "stage5",
+    "word": "president",
+    "type": "choice_contains_correct",
+    "detail": "choices[0]='副大統領' contains correct '大統領'"
+  },
+  {
+    "id": "s5_2189",
+    "stage": "stage5",
+    "word": "pronoun",
+    "type": "correct_contains_choice",
+    "detail": "correct='代名詞' contains choices[1]='名詞'"
+  },
+  {
+    "id": "s5_2191",
+    "stage": "stage5",
+    "word": "properly",
+    "type": "choice_contains_correct",
+    "detail": "choices[0]='不適切に' contains correct '適切に'"
+  },
+  {
+    "id": "s5_2241",
+    "stage": "stage5",
+    "word": "realistic",
+    "type": "choice_contains_correct",
+    "detail": "choices[2]='非現実的な' contains correct '現実的な'"
+  },
+  {
+    "id": "s5_2371",
+    "stage": "stage5",
+    "word": "sheriff",
+    "type": "choice_contains_correct",
+    "detail": "choices[2]='保安官代理事務員' contains correct '保安官'"
+  },
+  {
+    "id": "s5_2607",
+    "stage": "stage5",
+    "word": "uncertainty",
+    "type": "correct_contains_choice",
+    "detail": "correct='不確実性' contains choices[1]='確実性'"
+  },
+  {
+    "id": "s5_2608",
+    "stage": "stage5",
+    "word": "unclear",
+    "type": "correct_contains_choice",
+    "detail": "correct='不明瞭な' contains choices[1]='明瞭な'"
+  },
+  {
+    "id": "s5_2620",
+    "stage": "stage5",
+    "word": "unfairly",
+    "type": "correct_contains_choice",
+    "detail": "correct='不公平に' contains choices[1]='公平に'"
+  },
+  {
+    "id": "s5_2704",
+    "stage": "stage5",
+    "word": "windsurfing",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [3, 3, 2, 9]"
+  },
+  {
+    "id": "s6_0045",
+    "stage": "stage6",
+    "word": "ageless",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [3, 6, 9, 2]"
+  },
+  {
+    "id": "s6_0064",
+    "stage": "stage6",
+    "word": "aluminum",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [1, 1, 1, 6]"
+  },
+  {
+    "id": "s6_0096",
+    "stage": "stage6",
+    "word": "appropriately",
+    "type": "choice_contains_correct",
+    "detail": "choices[0]='不適切に' contains correct '適切に'"
+  },
+  {
+    "id": "s6_0135",
+    "stage": "stage6",
+    "word": "atypical",
+    "type": "correct_contains_choice",
+    "detail": "correct='非典型的な' contains choices[1]='典型的な'"
+  },
+  {
+    "id": "s6_0159",
+    "stage": "stage6",
+    "word": "barley",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [2, 2, 1, 6]"
+  },
+  {
+    "id": "s6_0322",
+    "stage": "stage6",
+    "word": "clumsy",
+    "type": "correct_contains_choice",
+    "detail": "correct='不器用な' contains choices[0]='器用な'"
+  },
+  {
+    "id": "s6_0337",
+    "stage": "stage6",
+    "word": "colon",
+    "type": "choice_contains_correct",
+    "detail": "choices[3]='セミコロン' contains correct 'コロン'"
+  },
+  {
+    "id": "s6_0377",
+    "stage": "stage6",
+    "word": "cone",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [2, 3, 1, 5]"
+  },
+  {
+    "id": "s6_0416",
+    "stage": "stage6",
+    "word": "cooperative",
+    "type": "choice_contains_correct",
+    "detail": "choices[1]='非協力的な' contains correct '協力的な'"
+  },
+  {
+    "id": "s6_0476",
+    "stage": "stage6",
+    "word": "cybercafé",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [3, 2, 10, 3]"
+  },
+  {
+    "id": "s6_0885",
+    "stage": "stage6",
+    "word": "glare",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [6, 5, 5, 1]"
+  },
+  {
+    "id": "s6_1026",
+    "stage": "stage6",
+    "word": "impractical",
+    "type": "correct_contains_choice",
+    "detail": "correct='非実用的な' contains choices[0]='実用的な'"
+  },
+  {
+    "id": "s6_1033",
+    "stage": "stage6",
+    "word": "improperly",
+    "type": "correct_contains_choice",
+    "detail": "correct='不適切に' contains choices[0]='適切に'"
+  },
+  {
+    "id": "s6_1037",
+    "stage": "stage6",
+    "word": "inaccurate",
+    "type": "correct_contains_choice",
+    "detail": "correct='不正確な' contains choices[1]='正確な'"
+  },
+  {
+    "id": "s6_1038",
+    "stage": "stage6",
+    "word": "inadequate",
+    "type": "correct_contains_choice",
+    "detail": "correct='不十分な' contains choices[0]='十分な'"
+  },
+  {
+    "id": "s6_1055",
+    "stage": "stage6",
+    "word": "industrialise",
+    "type": "choice_contains_correct",
+    "detail": "choices[0]='脱工業化する' contains correct '工業化する'"
+  },
+  {
+    "id": "s6_1096",
+    "stage": "stage6",
+    "word": "insufficient",
+    "type": "correct_contains_choice",
+    "detail": "correct='不十分な' contains choices[0]='十分な'"
+  },
+  {
+    "id": "s6_1146",
+    "stage": "stage6",
+    "word": "junk food",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [7, 1, 2, 3]"
+  },
+  {
+    "id": "s6_1260",
+    "stage": "stage6",
+    "word": "medication",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [6, 4, 4, 1]"
+  },
+  {
+    "id": "s6_1274",
+    "stage": "stage6",
+    "word": "microcomputer",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [10, 2, 3, 7]"
+  },
+  {
+    "id": "s6_1359",
+    "stage": "stage6",
+    "word": "needless",
+    "type": "correct_contains_choice",
+    "detail": "correct='不必要な' contains choices[3]='必要な'"
+  },
+  {
+    "id": "s6_1371",
+    "stage": "stage6",
+    "word": "newscaster",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [5, 3, 2, 9]"
+  },
+  {
+    "id": "s6_1499",
+    "stage": "stage6",
+    "word": "patch",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [2, 1, 2, 8]"
+  },
+  {
+    "id": "s6_1507",
+    "stage": "stage6",
+    "word": "paw",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [2, 1, 2, 6]"
+  },
+  {
+    "id": "s6_1873",
+    "stage": "stage6",
+    "word": "semi-final",
+    "type": "correct_contains_choice",
+    "detail": "correct='準決勝' contains choices[0]='決勝'"
+  },
+  {
+    "id": "s6_2052",
+    "stage": "stage6",
+    "word": "sufficiently",
+    "type": "choice_contains_correct",
+    "detail": "choices[1]='不十分に' contains correct '十分に'"
+  },
+  {
+    "id": "s6_2053",
+    "stage": "stage6",
+    "word": "suitably",
+    "type": "choice_contains_correct",
+    "detail": "choices[1]='不適切に' contains correct '適切に'"
+  },
+  {
+    "id": "s6_2096",
+    "stage": "stage6",
+    "word": "teaspoon",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [1, 3, 1, 5]"
+  },
+  {
+    "id": "s6_2166",
+    "stage": "stage6",
+    "word": "transparent",
+    "type": "choice_contains_correct",
+    "detail": "choices[0]='不透明な' contains correct '透明な'"
+  },
+  {
+    "id": "s6_2216",
+    "stage": "stage6",
+    "word": "unclearly",
+    "type": "correct_contains_choice",
+    "detail": "correct='不明瞭に' contains choices[0]='明瞭に'"
+  },
+  {
+    "id": "s6_2252",
+    "stage": "stage6",
+    "word": "unnatural",
+    "type": "correct_contains_choice",
+    "detail": "correct='不自然な' contains choices[0]='自然な'"
+  },
+  {
+    "id": "s6_2253",
+    "stage": "stage6",
+    "word": "unofficial",
+    "type": "correct_contains_choice",
+    "detail": "correct='非公式の' contains choices[0]='公式の'"
+  },
+  {
+    "id": "s6_2302",
+    "stage": "stage6",
+    "word": "versus",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [2, 1, 5, 5]"
+  },
+  {
+    "id": "s6_2329",
+    "stage": "stage6",
+    "word": "walnut",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [1, 5, 3, 3]"
+  },
+  {
+    "id": "s6_2332",
+    "stage": "stage6",
+    "word": "wasp",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [5, 1, 1, 2]"
+  },
+  {
+    "id": "s6_2348",
+    "stage": "stage6",
+    "word": "wheat",
+    "type": "choices_len_unbalanced",
+    "detail": "長さ [1, 2, 1, 6]"
+  }
+]

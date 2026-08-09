@@ -1,0 +1,889 @@
+{
+  "lesson": 13,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L13/planning/lesson.json",
+  "title_en": "Lesson 13  Family Hobbies",
+  "title_ja": "家族の趣味",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 10,
+  "lines": [
+    {
+      "line": 1,
+      "english": "On Sunday evening, my family sat at the kitchen table and began to talk about our hobbies.",
+      "source_ja": "日曜日の夜、家族みんなで食卓を囲んで趣味の話をしました。",
+      "display_ja": "日曜日の夜、家族みんなで食卓を囲んで趣味の話をしました。",
+      "corrected_translation": false,
+      "mixed": "日曜日の夜、家族みんなで食卓を囲んで hobbies の話をしました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "日曜日の夜、家族みんなで食卓を囲んで ",
+          "parts": [
+            {
+              "text": "日曜",
+              "ruby": "にちよう"
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "夜",
+              "ruby": "よる"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "みんなで",
+              "ruby": ""
+            },
+            {
+              "text": "食卓",
+              "ruby": "しょくたく"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "囲",
+              "ruby": "かこ"
+            },
+            {
+              "text": "んで",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "hobbies",
+          "ruby": "趣味"
+        },
+        {
+          "type": "ja",
+          "text": " の話をしました。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "話",
+              "ruby": "はなし"
+            },
+            {
+              "text": "をしました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "hobbies",
+          "canonical_word": "hobby",
+          "meaning": "趣味"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "hobbies",
+          "reading": "趣味",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "hobby",
+          "canonical_meaning": "趣味"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "english": "Everyone has something in their free time.",
+      "source_ja": "それぞれ、自由な時間に楽しんでいることがあります。",
+      "display_ja": "それぞれ、自由な時間に楽しんでいることがあります。",
+      "corrected_translation": false,
+      "mixed": "それぞれ、free time に楽しんでいることがあります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "それぞれ、",
+          "parts": [
+            {
+              "text": "それぞれ、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "free",
+          "ruby": "自由な"
+        },
+        {
+          "type": "ja",
+          "text": " ",
+          "parts": []
+        },
+        {
+          "type": "en",
+          "text": "time",
+          "ruby": "時間"
+        },
+        {
+          "type": "ja",
+          "text": " に楽しんでいることがあります。",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "楽",
+              "ruby": "たの"
+            },
+            {
+              "text": "しんでいることがあります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "free",
+          "canonical_word": "free",
+          "meaning": "自由な"
+        },
+        {
+          "english": "time",
+          "canonical_word": "time",
+          "meaning": "時間"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "free",
+          "reading": "自由な",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "free",
+          "canonical_meaning": "自由な"
+        },
+        {
+          "english": "time",
+          "reading": "時間",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "time",
+          "canonical_meaning": "時間"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "My favorite hobby is reading books.",
+      "source_ja": "わたしの好きな趣味は読書です。",
+      "display_ja": "わたしの好きな趣味は読書です。",
+      "corrected_translation": false,
+      "mixed": "わたしの favorite hobby は読書です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしの ",
+          "parts": [
+            {
+              "text": "わたしの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "favorite",
+          "ruby": "お気に入りの"
+        },
+        {
+          "type": "ja",
+          "text": " ",
+          "parts": []
+        },
+        {
+          "type": "en",
+          "text": "hobby",
+          "ruby": "趣味"
+        },
+        {
+          "type": "ja",
+          "text": " は読書です。",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "読書",
+              "ruby": "どくしょ"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "favorite",
+          "canonical_word": "favorite",
+          "meaning": "お気に入りの"
+        },
+        {
+          "english": "hobby",
+          "canonical_word": "hobby",
+          "meaning": "趣味"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "favorite",
+          "reading": "お気に入りの",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "favorite",
+          "canonical_meaning": "お気に入りの"
+        },
+        {
+          "english": "hobby",
+          "reading": "趣味",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "hobby",
+          "canonical_meaning": "趣味"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "When I enter a story, I forget the time.",
+      "source_ja": "物語の世界に入ると、時間がたつのを忘れてしまいます。",
+      "display_ja": "物語の世界に入ると、時間がたつのを忘れてしまいます。",
+      "corrected_translation": false,
+      "mixed": "物語の世界に入ると、 time がたつのを忘れてしまいます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "物語の世界に入ると、 ",
+          "parts": [
+            {
+              "text": "物語",
+              "ruby": "ものがたり"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "世界",
+              "ruby": "せかい"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "入",
+              "ruby": "はい"
+            },
+            {
+              "text": "ると、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "time",
+          "ruby": "時間"
+        },
+        {
+          "type": "ja",
+          "text": " がたつのを忘れてしまいます。",
+          "parts": [
+            {
+              "text": "がたつのを",
+              "ruby": ""
+            },
+            {
+              "text": "忘",
+              "ruby": "わす"
+            },
+            {
+              "text": "れてしまいます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "time",
+          "canonical_word": "time",
+          "meaning": "時間"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "time",
+          "reading": "時間",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "time",
+          "canonical_meaning": "時間"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "My sister loves painting and singing.",
+      "source_ja": "妹は絵を描いたり歌ったりするのが大好きです。",
+      "display_ja": "妹は絵を描いたり歌ったりするのが大好きです。",
+      "corrected_translation": false,
+      "mixed": "妹は painting と singing が大好きです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "妹は ",
+          "parts": [
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "painting",
+          "ruby": "絵を描くこと"
+        },
+        {
+          "type": "ja",
+          "text": " と ",
+          "parts": [
+            {
+              "text": "と",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "singing",
+          "ruby": "歌うこと"
+        },
+        {
+          "type": "ja",
+          "text": " が大好きです。",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "大好",
+              "ruby": "だいす"
+            },
+            {
+              "text": "きです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "painting",
+          "canonical_word": "painting",
+          "meaning": "絵を描くこと"
+        },
+        {
+          "english": "singing",
+          "canonical_word": "singing",
+          "meaning": "歌うこと"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "painting",
+          "reading": "絵を描くこと",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "painting",
+          "canonical_meaning": "絵を描くこと"
+        },
+        {
+          "english": "singing",
+          "reading": "歌うこと",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "singing",
+          "canonical_meaning": "歌うこと"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "My brother enjoys collecting old stamps.",
+      "source_ja": "兄は古い切手を集めるのが趣味です。",
+      "display_ja": "兄は古い切手を集めるのが趣味です。",
+      "corrected_translation": false,
+      "mixed": "兄は古い stamps を collecting することを enjoys しています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "兄は古い ",
+          "parts": [
+            {
+              "text": "兄",
+              "ruby": "あに"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "古",
+              "ruby": "ふる"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "stamps",
+          "ruby": "切手"
+        },
+        {
+          "type": "ja",
+          "text": " を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "collecting",
+          "ruby": "集めること"
+        },
+        {
+          "type": "ja",
+          "text": " することを ",
+          "parts": [
+            {
+              "text": "することを",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "enjoys",
+          "ruby": "楽しむこと"
+        },
+        {
+          "type": "ja",
+          "text": " しています。",
+          "parts": [
+            {
+              "text": "しています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "enjoys",
+          "canonical_word": "enjoying",
+          "meaning": "楽しむこと"
+        },
+        {
+          "english": "collecting",
+          "canonical_word": "collecting",
+          "meaning": "集めること"
+        },
+        {
+          "english": "stamps",
+          "canonical_word": "stamp",
+          "meaning": "切手"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "enjoys",
+          "reading": "楽しむこと",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "enjoying",
+          "canonical_meaning": "楽しむこと"
+        },
+        {
+          "english": "collecting",
+          "reading": "集めること",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "collecting",
+          "canonical_meaning": "集めること"
+        },
+        {
+          "english": "stamps",
+          "reading": "切手",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "stamp",
+          "canonical_meaning": "切手"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "“This one was from Grandfather,” he said, showing each one with care.",
+      "source_ja": "「これはおじいちゃんがくれたんだ」と、一枚一枚大事そうに見せてくれました。",
+      "display_ja": "「これはおじいちゃんがくれたんだ」と、一枚一枚大事そうに見せてくれました。",
+      "corrected_translation": false,
+      "mixed": "「これはおじいちゃんがくれたんだ」と、一枚一枚大事そうに見せてくれました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「これはおじいちゃんがくれたんだ」と、一枚一枚大事そうに見せてくれました。",
+          "parts": [
+            {
+              "text": "「これはおじいちゃんがくれたんだ」と、",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "いっ"
+            },
+            {
+              "text": "枚",
+              "ruby": "まい"
+            },
+            {
+              "text": "一",
+              "ruby": "いっ"
+            },
+            {
+              "text": "枚",
+              "ruby": "まい"
+            },
+            {
+              "text": "大事",
+              "ruby": "だいじ"
+            },
+            {
+              "text": "そうに",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "せてくれました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 8,
+      "english": "After finishing dinner, I often begin reading my favorite book.",
+      "source_ja": "夕ご飯を食べ終わると、わたしはよくお気に入りの本を読み始めます。",
+      "display_ja": "夕ご飯を食べ終わると、わたしはよくお気に入りの本を読み始めます。",
+      "corrected_translation": false,
+      "mixed": "夕食を finishing すると、わたしは favorite の本を読み begin します。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "夕食を ",
+          "parts": [
+            {
+              "text": "夕食",
+              "ruby": "ゆうしょく"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "finishing",
+          "ruby": "終えること"
+        },
+        {
+          "type": "ja",
+          "text": " すると、わたしは ",
+          "parts": [
+            {
+              "text": "すると、わたしは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "favorite",
+          "ruby": "お気に入りの"
+        },
+        {
+          "type": "ja",
+          "text": " の本を読み ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "読",
+              "ruby": "よ"
+            },
+            {
+              "text": "み",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "begin",
+          "ruby": "始める"
+        },
+        {
+          "type": "ja",
+          "text": " します。",
+          "parts": [
+            {
+              "text": "します。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "finishing",
+          "canonical_word": "finishing",
+          "meaning": "終えること"
+        },
+        {
+          "english": "begin",
+          "canonical_word": "begin",
+          "meaning": "始める"
+        },
+        {
+          "english": "favorite",
+          "canonical_word": "favorite",
+          "meaning": "お気に入りの"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "finishing",
+          "reading": "終えること",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "finishing",
+          "canonical_meaning": "終えること"
+        },
+        {
+          "english": "begin",
+          "reading": "始める",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "begin",
+          "canonical_meaning": "始める"
+        },
+        {
+          "english": "favorite",
+          "reading": "お気に入りの",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "favorite",
+          "canonical_meaning": "お気に入りの"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "Enjoying a hobby with my family is a very important time for me.",
+      "source_ja": "家族と趣味を楽しむ時間は、わたしにとってとても大切です。",
+      "display_ja": "家族と趣味を楽しむ時間は、わたしにとってとても大切です。",
+      "corrected_translation": false,
+      "mixed": "家族と hobby を Enjoying する time は、わたしにとってとても大切です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "家族と ",
+          "parts": [
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "hobby",
+          "ruby": "趣味"
+        },
+        {
+          "type": "ja",
+          "text": " を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "Enjoying",
+          "ruby": "楽しむこと"
+        },
+        {
+          "type": "ja",
+          "text": " する ",
+          "parts": [
+            {
+              "text": "する",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "time",
+          "ruby": "時間"
+        },
+        {
+          "type": "ja",
+          "text": " は、わたしにとってとても大切です。",
+          "parts": [
+            {
+              "text": "は、わたしにとってとても",
+              "ruby": ""
+            },
+            {
+              "text": "大切",
+              "ruby": "たいせつ"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "Enjoying",
+          "canonical_word": "enjoying",
+          "meaning": "楽しむこと"
+        },
+        {
+          "english": "hobby",
+          "canonical_word": "hobby",
+          "meaning": "趣味"
+        },
+        {
+          "english": "time",
+          "canonical_word": "time",
+          "meaning": "時間"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Enjoying",
+          "reading": "楽しむこと",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "enjoying",
+          "canonical_meaning": "楽しむこと"
+        },
+        {
+          "english": "hobby",
+          "reading": "趣味",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "hobby",
+          "canonical_meaning": "趣味"
+        },
+        {
+          "english": "time",
+          "reading": "時間",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "time",
+          "canonical_meaning": "時間"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "Thank you for watching.",
+      "source_ja": "見てくれてありがとう。",
+      "display_ja": "見てくれてありがとう。",
+      "corrected_translation": false,
+      "mixed": "見てくれてありがとう。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "見てくれてありがとう。",
+          "parts": [
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "てくれてありがとう。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H053.md",
+  "audio": "高校生編/suno_ready/generated/audio/H053/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 122.48,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0059,
+  "expected_words": 169,
+  "transcribed_words": 170,
+  "matched_words": 165,
+  "coverage": 0.9763,
+  "precision": 0.9706,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 168,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 5,
+      "length": 1,
+      "words": [
+        "twentieth"
+      ]
+    },
+    {
+      "start": 21,
+      "length": 1,
+      "words": [
+        "today"
+      ]
+    },
+    {
+      "start": 25,
+      "length": 1,
+      "words": [
+        "live"
+      ]
+    },
+    {
+      "start": 109,
+      "length": 1,
+      "words": [
+        "investment"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 5,
+      "actual_start": 5,
+      "expected": [
+        "twentieth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.9445,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 21,
+      "actual_start": 21,
+      "expected": [
+        "today"
+      ],
+      "actual": [
+        "to",
+        "date"
+      ],
+      "actual_confidence": 0.5741,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 25,
+      "actual_start": 26,
+      "expected": [
+        "live"
+      ],
+      "actual": [
+        "life"
+      ],
+      "actual_confidence": 0.7497,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 38,
+      "actual_start": 39,
+      "expected": [],
+      "actual": [
+        "but"
+      ],
+      "actual_confidence": 0.989
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 109,
+      "actual_start": 111,
+      "expected": [
+        "investment"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "At the start of the 20th century, only about one in ten of the world's population lived in an urban area to date, more than half-life in cities. Urbanization has concentrated opportunities for jobs, education and medical care, but But it has also brought serious problems Traffic congestion, the high price of housing And air pollution are among them Tokyo, New York, London, Shanghai Each of these major cities of the world faces The limits of population density and infrastructure In recent years, each city has begun to attempt a more sustainable form of urban planning. They are creating more roads for pedestrians and cyclists, restoring green parks and increasing in public transportation. At the same time, people have started to move from city centers to the suburbs With the spread of remote work, the distinction between urban and rural life has become less rigid Cities will continue to change their shape What matters is how we design a space In which everyone can live with peace of mind",
+  "segments": [
+    {
+      "start": 3.04,
+      "end": 10.82,
+      "text": "At the start of the 20th century, only about one in ten of the world's population lived"
+    },
+    {
+      "start": 10.82,
+      "end": 16.44,
+      "text": "in an urban area to date, more than half-life in cities."
+    },
+    {
+      "start": 21.04,
+      "end": 28.82,
+      "text": "Urbanization has concentrated opportunities for jobs, education and medical care, but"
+    },
+    {
+      "start": 28.82,
+      "end": 31.66,
+      "text": "But it has also brought serious problems"
+    },
+    {
+      "start": 32.62,
+      "end": 35.54,
+      "text": "Traffic congestion, the high price of housing"
+    },
+    {
+      "start": 36.18,
+      "end": 38.34,
+      "text": "And air pollution are among them"
+    },
+    {
+      "start": 38.34,
+      "end": 42.12,
+      "text": "Tokyo, New York, London, Shanghai"
+    },
+    {
+      "start": 44.3,
+      "end": 47.34,
+      "text": "Each of these major cities of the world faces"
+    },
+    {
+      "start": 47.98,
+      "end": 52.76,
+      "text": "The limits of population density and infrastructure"
+    },
+    {
+      "start": 52.76,
+      "end": 64.26,
+      "text": "In recent years, each city has begun to attempt a more sustainable form of urban planning."
+    },
+    {
+      "start": 65.28,
+      "end": 70.88,
+      "text": "They are creating more roads for pedestrians and cyclists,"
+    },
+    {
+      "start": 71.16,
+      "end": 77.26,
+      "text": "restoring green parks and increasing in public transportation."
+    },
+    {
+      "start": 77.26,
+      "end": 85.64,
+      "text": "At the same time, people have started to move from city centers to the suburbs"
+    },
+    {
+      "start": 87.26,
+      "end": 96.28,
+      "text": "With the spread of remote work, the distinction between urban and rural life has become less rigid"
+    },
+    {
+      "start": 97.26,
+      "end": 102.78,
+      "text": "Cities will continue to change their shape"
+    },
+    {
+      "start": 102.78,
+      "end": 107.2,
+      "text": "What matters is how we design a space"
+    },
+    {
+      "start": 108.26,
+      "end": 113.16,
+      "text": "In which everyone can live with peace of mind"
+    }
+  ]
+}

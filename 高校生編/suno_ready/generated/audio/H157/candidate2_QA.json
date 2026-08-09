@@ -1,0 +1,440 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H157.md",
+  "audio": "高校生編/suno_ready/generated/audio/H157/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 157.921,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0282,
+  "expected_words": 213,
+  "transcribed_words": 219,
+  "matched_words": 198,
+  "coverage": 0.9296,
+  "precision": 0.9041,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 212,
+  "longest_missing_run": 3,
+  "largest_missing_runs": [
+    {
+      "start": 138,
+      "length": 3,
+      "words": [
+        "spirited",
+        "away",
+        "bear"
+      ]
+    },
+    {
+      "start": 23,
+      "length": 1,
+      "words": [
+        "youkai"
+      ]
+    },
+    {
+      "start": 53,
+      "length": 1,
+      "words": [
+        "inari"
+      ]
+    },
+    {
+      "start": 68,
+      "length": 1,
+      "words": [
+        "said"
+      ]
+    },
+    {
+      "start": 110,
+      "length": 1,
+      "words": [
+        "ascetics"
+      ]
+    },
+    {
+      "start": 115,
+      "length": 1,
+      "words": [
+        "awe"
+      ]
+    },
+    {
+      "start": 121,
+      "length": 1,
+      "words": [
+        "emphasized"
+      ]
+    },
+    {
+      "start": 128,
+      "length": 1,
+      "words": [
+        "youkai"
+      ]
+    }
+  ],
+  "replacement_count": 13,
+  "replacement_spans": [
+    {
+      "expected_start": 23,
+      "actual_start": 23,
+      "expected": [
+        "youkai"
+      ],
+      "actual": [
+        "yukai"
+      ],
+      "actual_confidence": 0.6004,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 53,
+      "actual_start": 53,
+      "expected": [
+        "inari"
+      ],
+      "actual": [
+        "in",
+        "our",
+        "re"
+      ],
+      "actual_confidence": 0.6449,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 68,
+      "actual_start": 71,
+      "expected": [
+        "said"
+      ],
+      "actual": [
+        "set"
+      ],
+      "actual_confidence": 0.4773,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 110,
+      "actual_start": 113,
+      "expected": [
+        "ascetics"
+      ],
+      "actual": [
+        "aesthetics"
+      ],
+      "actual_confidence": 0.3665,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 115,
+      "actual_start": 118,
+      "expected": [
+        "awe"
+      ],
+      "actual": [
+        "all"
+      ],
+      "actual_confidence": 0.0299,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 121,
+      "actual_start": 124,
+      "expected": [
+        "emphasized"
+      ],
+      "actual": [
+        "emphasize"
+      ],
+      "actual_confidence": 0.8877,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 128,
+      "actual_start": 131,
+      "expected": [
+        "youkai"
+      ],
+      "actual": [
+        "yukai"
+      ],
+      "actual_confidence": 0.6974,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 138,
+      "actual_start": 141,
+      "expected": [
+        "spirited",
+        "away",
+        "bear"
+      ],
+      "actual": [
+        "spirit",
+        "in",
+        "a",
+        "way",
+        "their"
+      ],
+      "actual_confidence": 0.6571,
+      "substitution_words": 3,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 145,
+      "actual_start": 150,
+      "expected": [
+        "youkai"
+      ],
+      "actual": [
+        "yukai"
+      ],
+      "actual_confidence": 0.9451,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 155,
+      "actual_start": 160,
+      "expected": [
+        "youkai"
+      ],
+      "actual": [
+        "yukai"
+      ],
+      "actual_confidence": 0.5568,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 196,
+      "actual_start": 201,
+      "expected": [
+        "one"
+      ],
+      "actual": [
+        "when"
+      ],
+      "actual_confidence": 0.7124,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 200,
+      "actual_start": 205,
+      "expected": [
+        "feels"
+      ],
+      "actual": [
+        "feel"
+      ],
+      "actual_confidence": 0.6873,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 211,
+      "actual_start": 216,
+      "expected": [
+        "youkai"
+      ],
+      "actual": [
+        "yukai"
+      ],
+      "actual_confidence": 0.7712,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 60,
+      "actual_start": 62,
+      "expected": [],
+      "actual": [
+        "a"
+      ],
+      "actual_confidence": 0.6415
+    },
+    {
+      "expected_start": 213,
+      "actual_start": 218,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.1688
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 3,
+  "suspicious_substitution_words": 3,
+  "suspicious_content_substitution": true,
+  "transcript": "In Japanese communities, old legends remain Fox tanuki kappa tengu, demons of hell Stories about them have been passed down since childhood These Yukai are not mere products of imagination They embodied the wisdom of our ancestors Used to explain natural phenomena The fox is said to be the messenger of the deity in our re Like a servant of the shrine, a fox statues guard the entrance The Kappa is set to live near rivers It has a dish on its head filled with water Adults would urge children Be careful at rivers The Tengu lives in mountainous regions And has a red face and a long nose It would test mountain aesthetics These stories taught children All and fear of nature They emphasize that humans cannot rule nature Today, Yukai have become characters in manga and anime Pokemon and spirit in a way Their strong influence from Japanese Yukai culture As traditional customs are being lost through urbanization Yukai continue to live in new forms They are a source for the imagination of creators Even in the age of rationalism When everything seems explainable we have not lost our sense of the invisible at night walking a mountain path when suddenly turns and feel something is there that sense is the core of Japanese Yukai culture you",
+  "segments": [
+    {
+      "start": 9.82,
+      "end": 15.0,
+      "text": "In Japanese communities, old legends remain"
+    },
+    {
+      "start": 15.0,
+      "end": 20.46,
+      "text": "Fox tanuki kappa tengu, demons of hell"
+    },
+    {
+      "start": 21.0,
+      "end": 25.34,
+      "text": "Stories about them have been passed down since childhood"
+    },
+    {
+      "start": 25.34,
+      "end": 29.84,
+      "text": "These Yukai are not mere products of imagination"
+    },
+    {
+      "start": 29.84,
+      "end": 34.06,
+      "text": "They embodied the wisdom of our ancestors"
+    },
+    {
+      "start": 34.06,
+      "end": 37.14,
+      "text": "Used to explain natural phenomena"
+    },
+    {
+      "start": 40.96,
+      "end": 46.36,
+      "text": "The fox is said to be the messenger of the deity in our re"
+    },
+    {
+      "start": 46.36,
+      "end": 52.2,
+      "text": "Like a servant of the shrine, a fox statues guard the entrance"
+    },
+    {
+      "start": 52.2,
+      "end": 55.3,
+      "text": "The Kappa is set to live near rivers"
+    },
+    {
+      "start": 56.54,
+      "end": 61.28,
+      "text": "It has a dish on its head filled with water"
+    },
+    {
+      "start": 62.82,
+      "end": 65.0,
+      "text": "Adults would urge children"
+    },
+    {
+      "start": 65.0,
+      "end": 67.68,
+      "text": "Be careful at rivers"
+    },
+    {
+      "start": 67.68,
+      "end": 70.52,
+      "text": "The Tengu lives in mountainous regions"
+    },
+    {
+      "start": 70.52,
+      "end": 73.32,
+      "text": "And has a red face and a long nose"
+    },
+    {
+      "start": 73.32,
+      "end": 75.66,
+      "text": "It would test mountain aesthetics"
+    },
+    {
+      "start": 75.66,
+      "end": 78.44,
+      "text": "These stories taught children"
+    },
+    {
+      "start": 78.44,
+      "end": 82.16,
+      "text": "All and fear of nature"
+    },
+    {
+      "start": 83.44,
+      "end": 87.6,
+      "text": "They emphasize that humans cannot rule nature"
+    },
+    {
+      "start": 88.44,
+      "end": 93.52,
+      "text": "Today, Yukai have become characters in manga and anime"
+    },
+    {
+      "start": 94.44,
+      "end": 96.98,
+      "text": "Pokemon and spirit in a way"
+    },
+    {
+      "start": 96.98,
+      "end": 100.86,
+      "text": "Their strong influence from Japanese Yukai culture"
+    },
+    {
+      "start": 100.86,
+      "end": 108.6,
+      "text": "As traditional customs are being lost through urbanization"
+    },
+    {
+      "start": 109.96,
+      "end": 113.9,
+      "text": "Yukai continue to live in new forms"
+    },
+    {
+      "start": 114.86,
+      "end": 119.56,
+      "text": "They are a source for the imagination of creators"
+    },
+    {
+      "start": 119.56,
+      "end": 123.12,
+      "text": "Even in the age of rationalism"
+    },
+    {
+      "start": 123.12,
+      "end": 126.2,
+      "text": "When everything seems explainable"
+    },
+    {
+      "start": 126.2,
+      "end": 131.74,
+      "text": "we have not lost our sense of the invisible at night"
+    },
+    {
+      "start": 131.74,
+      "end": 135.96,
+      "text": "walking a mountain path when suddenly turns"
+    },
+    {
+      "start": 135.96,
+      "end": 139.74,
+      "text": "and feel something is there"
+    },
+    {
+      "start": 139.74,
+      "end": 147.44,
+      "text": "that sense is the core of Japanese Yukai culture"
+    },
+    {
+      "start": 156.5,
+      "end": 157.9,
+      "text": "you"
+    }
+  ]
+}

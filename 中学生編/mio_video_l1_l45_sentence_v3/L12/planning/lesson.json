@@ -1,0 +1,162 @@
+{
+  "project_root": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成",
+  "audio": "taco_beat/songs/m12.mp3",
+  "chart": "taco_beat/charts/m12.js",
+  "title_en": "Lesson 12  Making a Cake",
+  "title_ja": "ケーキ作り",
+  "title_position": [420, 150],
+  "title_ja_position": [420, 230],
+  "slug": "l12_making_a_cake_sentence_v3",
+  "duration": 25.56517,
+  "transition_duration": 0.3,
+  "sentence_image_count": 8,
+  "line_to_scene": [0, 1, 2, 3, 4, 5, 6, 7],
+  "lines": [
+    {
+      "start_index": 1,
+      "end_index": 11,
+      "en_words": ["On", "Sunday", "afternoon,", "my", "mother", "was", "very", "busy", "in", "the", "kitchen."],
+      "ja": "日曜日の午後、母は台所でとても忙しそうでした。"
+    },
+    {
+      "start_index": 12,
+      "end_index": 21,
+      "en_words": ["In", "a", "small", "voice,", "I", "asked,", "“Shall", "I", "help", "you?”"],
+      "ja": "「お手伝いしようか？」と小さな声で聞きました。"
+    },
+    {
+      "start_index": 22,
+      "end_index": 33,
+      "en_words": ["She", "smiled", "and", "said,", "“Thank", "you.", "Shall", "we", "make", "a", "cake", "together?”"],
+      "break_after": [5],
+      "ja": "母はにっこり笑って「ありがとう。一緒にケーキを作ろうか？」と言ってくれました。"
+    },
+    {
+      "start_index": 34,
+      "end_index": 45,
+      "en_words": ["We", "carefully", "put", "fresh", "eggs,", "sugar,", "and", "flour", "into", "a", "big", "bowl."],
+      "break_after": [7],
+      "ja": "新鮮な卵と砂糖、小麦粉を大きなボウルにそっと入れました。"
+    },
+    {
+      "start_index": 46,
+      "end_index": 55,
+      "en_words": ["As", "we", "mixed", "slowly,", "a", "sweet", "smell", "filled", "the", "room."],
+      "ja": "ゆっくり混ぜていると、部屋中に甘い香りが広がっていきました。"
+    },
+    {
+      "start_index": 56,
+      "end_index": 60,
+      "en_words": ["Soon,", "my", "father", "came", "home."],
+      "ja": "そのうち父が帰ってきました。"
+    },
+    {
+      "start_index": 61,
+      "end_index": 66,
+      "en_words": ["“Shall", "we", "eat", "now?”", "he", "said."],
+      "ja": "「さあ食べようか」と父が言いました。"
+    },
+    {
+      "start_index": 67,
+      "end_index": 73,
+      "en_words": ["We", "all", "shared", "the", "warm", "cake", "together."],
+      "ja": "温かいケーキを家族みんなで分け合いました。"
+    }
+  ],
+  "shots": [
+    {
+      "image": "scenes/01_mother_busy_kitchen.png",
+      "start": 0.0,
+      "end": 4.401,
+      "start_center": [0.38, 0.5],
+      "end_center": [0.6, 0.49],
+      "start_zoom": 1.09,
+      "end_zoom": 1.07,
+      "intent": "鍋とまな板から忙しく動く母へ台所を横に見渡す"
+    },
+    {
+      "image": "scenes/02_shall_i_help.png",
+      "start": 4.401,
+      "end": 7.121,
+      "start_center": [0.43, 0.5],
+      "end_center": [0.56, 0.48],
+      "start_zoom": 1.05,
+      "end_zoom": 1.11,
+      "transition": "dissolve",
+      "transition_duration": 0.22,
+      "intent": "小声で申し出るミオから気づく母へ視線をつなぐ"
+    },
+    {
+      "image": "scenes/03_make_cake_proposal.png",
+      "start": 7.121,
+      "end": 10.722,
+      "start_center": [0.5, 0.5],
+      "end_center": [0.55, 0.43],
+      "start_zoom": 1.09,
+      "end_zoom": 1.04,
+      "transition": "circleopen",
+      "transition_duration": 0.24,
+      "intent": "母の笑顔から小さなケーキの計画イメージへ広げる"
+    },
+    {
+      "image": "scenes/04_ingredients_into_bowl.png",
+      "start": 10.722,
+      "end": 14.983,
+      "start_center": [0.38, 0.48],
+      "end_center": [0.6, 0.5],
+      "start_zoom": 1.12,
+      "end_zoom": 1.07,
+      "transition": "smoothleft",
+      "transition_duration": 0.26,
+      "intent": "卵・砂糖・小麦粉から大きなボウルへ手元を追う"
+    },
+    {
+      "image": "scenes/05_mix_sweet_smell.png",
+      "start": 14.983,
+      "end": 19.624,
+      "start_center": [0.48, 0.54],
+      "end_center": [0.53, 0.44],
+      "start_zoom": 1.1,
+      "end_zoom": 1.04,
+      "transition": "dissolve",
+      "transition_duration": 0.24,
+      "intent": "混ぜるボウルから甘い香りが広がる台所へ引く"
+    },
+    {
+      "image": "scenes/06_father_came_home.png",
+      "start": 19.624,
+      "end": 21.244,
+      "start_center": [0.58, 0.5],
+      "end_center": [0.47, 0.49],
+      "start_zoom": 1.11,
+      "end_zoom": 1.04,
+      "transition": "smoothright",
+      "transition_duration": 0.2,
+      "intent": "玄関を開ける父から家と台所の気配へ短く引く"
+    },
+    {
+      "image": "scenes/07_shall_we_eat.png",
+      "start": 21.244,
+      "end": 22.745,
+      "start_center": [0.55, 0.49],
+      "end_center": [0.49, 0.48],
+      "start_zoom": 1.05,
+      "end_zoom": 1.11,
+      "transition": "dissolve",
+      "transition_duration": 0.16,
+      "intent": "ケーキを見た父の提案する表情へ短く寄る"
+    },
+    {
+      "image": "scenes/08_family_shares_cake.png",
+      "start": 22.745,
+      "end": 25.56517,
+      "start_center": [0.5, 0.49],
+      "end_center": [0.5, 0.47],
+      "start_zoom": 1.13,
+      "end_zoom": 1.03,
+      "transition": "circleopen",
+      "transition_duration": 0.26,
+      "intent": "温かいケーキから家族5人全員の食卓へ引いて締める"
+    }
+  ]
+}

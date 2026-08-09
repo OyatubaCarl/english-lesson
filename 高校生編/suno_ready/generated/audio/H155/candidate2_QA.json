@@ -1,0 +1,276 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H155.md",
+  "audio": "高校生編/suno_ready/generated/audio/H155/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 184.28,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0129,
+  "expected_words": 232,
+  "transcribed_words": 235,
+  "matched_words": 228,
+  "coverage": 0.9828,
+  "precision": 0.9702,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 231,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 65,
+      "length": 1,
+      "words": [
+        "even"
+      ]
+    },
+    {
+      "start": 121,
+      "length": 1,
+      "words": [
+        "veterans"
+      ]
+    },
+    {
+      "start": 134,
+      "length": 1,
+      "words": [
+        "michael"
+      ]
+    },
+    {
+      "start": 192,
+      "length": 1,
+      "words": [
+        "those"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 65,
+      "actual_start": 65,
+      "expected": [
+        "even"
+      ],
+      "actual": [
+        "than"
+      ],
+      "actual_confidence": 0.5174,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 121,
+      "actual_start": 121,
+      "expected": [
+        "veterans"
+      ],
+      "actual": [
+        "veteran"
+      ],
+      "actual_confidence": 0.9302,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 134,
+      "actual_start": 134,
+      "expected": [
+        "michael"
+      ],
+      "actual": [
+        "my",
+        "god"
+      ],
+      "actual_confidence": 0.273,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 192,
+      "actual_start": 193,
+      "expected": [
+        "those"
+      ],
+      "actual": [
+        "though"
+      ],
+      "actual_confidence": 0.192,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 203,
+      "actual_start": 204,
+      "expected": [],
+      "actual": [
+        "so"
+      ],
+      "actual_confidence": 0.2132
+    },
+    {
+      "expected_start": 232,
+      "actual_start": 234,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.1463
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "Soldiers who come back from a battle site may find that the battle does not end when they return to society Substance abuse, suicide, family collapse due to PTSD Even if one survives the war, lives can still be lost in the years that follow My friend Michael was a US soldier who fought in Iraq After returning home he would panic or become angry than at small sounds The sound of fireworks, the slam of a car door These reminded him of the explosions of the battlefield Michael also could not sleep and suffered from nightmares His wife tried to support him But life with him, as he grew aggressive, was hard Michael then came to rely on drugs A veteran support organization Reached out to him Counseling group therapy Dialogue with comrades My God, slowly recovered, now he does work to support other veterans War may break you, but it does not have to define you Politicians start wars, but it is the young who fight Care after return is the responsibility of the nation that sent them to war It is not only soldiers who suffer PTSD, victims of abuse Though struck by disaster, because wounds of the heart are invisible So they remain long For society to turn its eyes To the wounds of the heart And build a system of support That is the condition Of a kind society you",
+  "segments": [
+    {
+      "start": 14.26,
+      "end": 19.2,
+      "text": "Soldiers who come back from a battle site may find"
+    },
+    {
+      "start": 20.0,
+      "end": 24.94,
+      "text": "that the battle does not end when they return to society"
+    },
+    {
+      "start": 26.88,
+      "end": 33.1,
+      "text": "Substance abuse, suicide, family collapse due to PTSD"
+    },
+    {
+      "start": 34.44,
+      "end": 42.64,
+      "text": "Even if one survives the war, lives can still be lost in the years that follow"
+    },
+    {
+      "start": 46.6,
+      "end": 51.4,
+      "text": "My friend Michael was a US soldier who fought in Iraq"
+    },
+    {
+      "start": 51.4,
+      "end": 58.74,
+      "text": "After returning home he would panic or become angry than at small sounds"
+    },
+    {
+      "start": 58.74,
+      "end": 64.82,
+      "text": "The sound of fireworks, the slam of a car door"
+    },
+    {
+      "start": 64.82,
+      "end": 70.44,
+      "text": "These reminded him of the explosions of the battlefield"
+    },
+    {
+      "start": 72.46,
+      "end": 77.98,
+      "text": "Michael also could not sleep and suffered from nightmares"
+    },
+    {
+      "start": 77.98,
+      "end": 81.86,
+      "text": "His wife tried to support him"
+    },
+    {
+      "start": 81.86,
+      "end": 87.78,
+      "text": "But life with him, as he grew aggressive, was hard"
+    },
+    {
+      "start": 88.98,
+      "end": 92.28,
+      "text": "Michael then came to rely on drugs"
+    },
+    {
+      "start": 92.28,
+      "end": 95.0,
+      "text": "A veteran support organization"
+    },
+    {
+      "start": 95.0,
+      "end": 97.26,
+      "text": "Reached out to him"
+    },
+    {
+      "start": 97.26,
+      "end": 100.38,
+      "text": "Counseling group therapy"
+    },
+    {
+      "start": 100.98,
+      "end": 103.62,
+      "text": "Dialogue with comrades"
+    },
+    {
+      "start": 106.26,
+      "end": 113.14,
+      "text": "My God, slowly recovered, now he does work to support other veterans"
+    },
+    {
+      "start": 114.12,
+      "end": 119.8,
+      "text": "War may break you, but it does not have to define you"
+    },
+    {
+      "start": 119.8,
+      "end": 126.18,
+      "text": "Politicians start wars, but it is the young who fight"
+    },
+    {
+      "start": 127.84,
+      "end": 136.56,
+      "text": "Care after return is the responsibility of the nation that sent them to war"
+    },
+    {
+      "start": 136.56,
+      "end": 144.9,
+      "text": "It is not only soldiers who suffer PTSD, victims of abuse"
+    },
+    {
+      "start": 144.9,
+      "end": 152.1,
+      "text": "Though struck by disaster, because wounds of the heart are invisible"
+    },
+    {
+      "start": 152.1,
+      "end": 155.4,
+      "text": "So they remain long"
+    },
+    {
+      "start": 156.66,
+      "end": 160.68,
+      "text": "For society to turn its eyes"
+    },
+    {
+      "start": 160.68,
+      "end": 163.7,
+      "text": "To the wounds of the heart"
+    },
+    {
+      "start": 163.7,
+      "end": 167.82,
+      "text": "And build a system of support"
+    },
+    {
+      "start": 167.82,
+      "end": 170.2,
+      "text": "That is the condition"
+    },
+    {
+      "start": 171.1,
+      "end": 173.96,
+      "text": "Of a kind society"
+    },
+    {
+      "start": 182.86,
+      "end": 184.26,
+      "text": "you"
+    }
+  ]
+}

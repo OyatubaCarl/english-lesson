@@ -1,0 +1,188 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H049.md",
+  "audio": "高校生編/suno_ready/generated/audio/H049/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 144.64,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0168,
+  "expected_words": 179,
+  "transcribed_words": 182,
+  "matched_words": 177,
+  "coverage": 0.9888,
+  "precision": 0.9725,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 178,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 46,
+      "length": 1,
+      "words": [
+        "also"
+      ]
+    },
+    {
+      "start": 70,
+      "length": 1,
+      "words": [
+        "ecosystems"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 46,
+      "actual_start": 46,
+      "expected": [
+        "also"
+      ],
+      "actual": [
+        "all",
+        "so"
+      ],
+      "actual_confidence": 0.7086,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 70,
+      "actual_start": 72,
+      "expected": [
+        "ecosystems"
+      ],
+      "actual": [
+        "bacal",
+        "systems"
+      ],
+      "actual_confidence": 0.7335,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 52,
+      "actual_start": 53,
+      "expected": [],
+      "actual": [
+        "of"
+      ],
+      "actual_confidence": 0.4099
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "The climate of our planet has been changing rapidly since the industrial revolution. The global average temperature has already risen by about 1.1 degrees. One of the main causes is the emission of carbon dioxide produced by the burning of fossil fuels. Deforestation and agricultural practices are all so deeply involved as a result of sea levels rise. Floods and droughts have become more frequent And typhoons have grown stronger than ever before Bacal systems are being destroyed And many species are facing The threat of extinction In 1997, the Kyoto Protocol was adopted And each country was given a target for the reduction of greenhouse gases In 2015, the Paris Agreement was reached And the world set its goal of keeping the rise in temperature within 1.5 degrees Each country has begun to increase investment in renewable energy and to regulate emissions from cars and factories But climate change is no longer a problem That one country can solve by itself Without international cooperation We cannot protect the future of the Earth The achievement of a sustainable society Is now a shared goal across generations",
+  "segments": [
+    {
+      "start": 8.18,
+      "end": 16.76,
+      "text": "The climate of our planet has been changing rapidly since the industrial revolution."
+    },
+    {
+      "start": 19.28,
+      "end": 26.18,
+      "text": "The global average temperature has already risen by about 1.1 degrees."
+    },
+    {
+      "start": 26.18,
+      "end": 39.02,
+      "text": "One of the main causes is the emission of carbon dioxide produced by the burning of fossil fuels."
+    },
+    {
+      "start": 42.58,
+      "end": 52.26,
+      "text": "Deforestation and agricultural practices are all so deeply involved as a result of sea levels rise."
+    },
+    {
+      "start": 52.26,
+      "end": 55.74,
+      "text": "Floods and droughts have become more frequent"
+    },
+    {
+      "start": 55.74,
+      "end": 59.56,
+      "text": "And typhoons have grown stronger than ever before"
+    },
+    {
+      "start": 59.56,
+      "end": 62.5,
+      "text": "Bacal systems are being destroyed"
+    },
+    {
+      "start": 62.5,
+      "end": 65.4,
+      "text": "And many species are facing"
+    },
+    {
+      "start": 66.76,
+      "end": 68.82,
+      "text": "The threat of extinction"
+    },
+    {
+      "start": 71.76,
+      "end": 76.3,
+      "text": "In 1997, the Kyoto Protocol was adopted"
+    },
+    {
+      "start": 76.3,
+      "end": 79.08,
+      "text": "And each country was given a target"
+    },
+    {
+      "start": 79.08,
+      "end": 86.3,
+      "text": "for the reduction of greenhouse gases In 2015, the Paris Agreement was reached"
+    },
+    {
+      "start": 86.3,
+      "end": 94.22,
+      "text": "And the world set its goal of keeping the rise in temperature within 1.5 degrees"
+    },
+    {
+      "start": 95.74,
+      "end": 102.18,
+      "text": "Each country has begun to increase investment in renewable energy"
+    },
+    {
+      "start": 102.18,
+      "end": 106.92,
+      "text": "and to regulate emissions from cars and factories"
+    },
+    {
+      "start": 106.92,
+      "end": 111.32,
+      "text": "But climate change is no longer a problem"
+    },
+    {
+      "start": 111.32,
+      "end": 115.18,
+      "text": "That one country can solve by itself"
+    },
+    {
+      "start": 115.92,
+      "end": 119.44,
+      "text": "Without international cooperation"
+    },
+    {
+      "start": 120.66,
+      "end": 125.72,
+      "text": "We cannot protect the future of the Earth"
+    },
+    {
+      "start": 126.92,
+      "end": 131.76,
+      "text": "The achievement of a sustainable society"
+    },
+    {
+      "start": 131.76,
+      "end": 139.28,
+      "text": "Is now a shared goal across generations"
+    }
+  ]
+}

@@ -1,0 +1,958 @@
+{
+  "lesson": "H041",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h041_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H041/candidate1-full.mp3",
+  "source_audio_sha256": "ee6b0e13eb1f618ab9a6d3dd6db6b08d0a159c97a7fc5e41dc33194e40e53419",
+  "bpm": 99.98,
+  "exact_word_match": true,
+  "word_count": 141,
+  "line_count": 12,
+  "first_word_start": 5.862,
+  "last_word_end": 70.864,
+  "lines": [
+    {
+      "line": 1,
+      "english": "During the Second World War, at Bletchley Park in Britain, the young mathematician Alan Turing was trying to crack the German Enigma cipher.",
+      "word_timings": [
+        {
+          "word": "During",
+          "display_index": 0,
+          "start": 5.862,
+          "end": 6.193
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 6.193,
+          "end": 6.322
+        },
+        {
+          "word": "Second",
+          "display_index": 2,
+          "start": 6.322,
+          "end": 6.782
+        },
+        {
+          "word": "World",
+          "display_index": 3,
+          "start": 6.782,
+          "end": 7.122
+        },
+        {
+          "word": "War,",
+          "display_index": 4,
+          "start": 7.122,
+          "end": 8.142
+        },
+        {
+          "word": "at",
+          "display_index": 5,
+          "start": 8.142,
+          "end": 8.242
+        },
+        {
+          "word": "Bletchley",
+          "display_index": 6,
+          "start": 8.242,
+          "end": 8.722
+        },
+        {
+          "word": "Park",
+          "display_index": 7,
+          "start": 8.722,
+          "end": 9.063
+        },
+        {
+          "word": "in",
+          "display_index": 8,
+          "start": 9.063,
+          "end": 9.163
+        },
+        {
+          "word": "Britain,",
+          "display_index": 9,
+          "start": 9.163,
+          "end": 9.634
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 9.634,
+          "end": 9.763
+        },
+        {
+          "word": "young",
+          "display_index": 11,
+          "start": 9.763,
+          "end": 10.063
+        },
+        {
+          "word": "mathematician",
+          "display_index": 12,
+          "start": 10.063,
+          "end": 11.163
+        },
+        {
+          "word": "Alan",
+          "display_index": 13,
+          "start": 11.163,
+          "end": 11.543
+        },
+        {
+          "word": "Turing",
+          "display_index": 14,
+          "start": 11.543,
+          "end": 12.323
+        },
+        {
+          "word": "was",
+          "display_index": 15,
+          "start": 12.323,
+          "end": 12.464
+        },
+        {
+          "word": "trying",
+          "display_index": 16,
+          "start": 12.464,
+          "end": 12.642
+        },
+        {
+          "word": "to",
+          "display_index": 17,
+          "start": 12.642,
+          "end": 12.744
+        },
+        {
+          "word": "crack",
+          "display_index": 18,
+          "start": 12.744,
+          "end": 13.085
+        },
+        {
+          "word": "the",
+          "display_index": 19,
+          "start": 13.085,
+          "end": 13.204
+        },
+        {
+          "word": "German",
+          "display_index": 20,
+          "start": 13.204,
+          "end": 13.864
+        },
+        {
+          "word": "Enigma",
+          "display_index": 21,
+          "start": 13.864,
+          "end": 14.404
+        },
+        {
+          "word": "cipher.",
+          "display_index": 22,
+          "start": 14.404,
+          "end": 15.904
+        }
+      ],
+      "start": 5.862,
+      "end": 15.904
+    },
+    {
+      "line": 2,
+      "english": "Every day, the German submarine fleet exchanged encrypted messages.",
+      "word_timings": [
+        {
+          "word": "Every",
+          "display_index": 0,
+          "start": 16.425,
+          "end": 16.685
+        },
+        {
+          "word": "day,",
+          "display_index": 1,
+          "start": 16.685,
+          "end": 17.139
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 17.139,
+          "end": 17.245
+        },
+        {
+          "word": "German",
+          "display_index": 3,
+          "start": 17.245,
+          "end": 17.565
+        },
+        {
+          "word": "submarine",
+          "display_index": 4,
+          "start": 17.565,
+          "end": 18.145
+        },
+        {
+          "word": "fleet",
+          "display_index": 5,
+          "start": 18.145,
+          "end": 18.525
+        },
+        {
+          "word": "exchanged",
+          "display_index": 6,
+          "start": 18.525,
+          "end": 19.145
+        },
+        {
+          "word": "encrypted",
+          "display_index": 7,
+          "start": 19.145,
+          "end": 19.826
+        },
+        {
+          "word": "messages.",
+          "display_index": 8,
+          "start": 19.826,
+          "end": 20.626
+        }
+      ],
+      "start": 16.425,
+      "end": 20.626
+    },
+    {
+      "line": 3,
+      "english": "If they could not be decoded, Allied ships could be sunk one after another.",
+      "word_timings": [
+        {
+          "word": "If",
+          "display_index": 0,
+          "start": 20.766,
+          "end": 20.866
+        },
+        {
+          "word": "they",
+          "display_index": 1,
+          "start": 20.866,
+          "end": 21.006
+        },
+        {
+          "word": "could",
+          "display_index": 2,
+          "start": 21.006,
+          "end": 21.186
+        },
+        {
+          "word": "not",
+          "display_index": 3,
+          "start": 21.186,
+          "end": 21.346
+        },
+        {
+          "word": "be",
+          "display_index": 4,
+          "start": 21.346,
+          "end": 21.486
+        },
+        {
+          "word": "decoded,",
+          "display_index": 5,
+          "start": 21.486,
+          "end": 22.146
+        },
+        {
+          "word": "Allied",
+          "display_index": 6,
+          "start": 22.146,
+          "end": 22.386
+        },
+        {
+          "word": "ships",
+          "display_index": 7,
+          "start": 22.386,
+          "end": 22.646
+        },
+        {
+          "word": "could",
+          "display_index": 8,
+          "start": 22.646,
+          "end": 22.806
+        },
+        {
+          "word": "be",
+          "display_index": 9,
+          "start": 22.806,
+          "end": 22.946
+        },
+        {
+          "word": "sunk",
+          "display_index": 10,
+          "start": 22.946,
+          "end": 23.327
+        },
+        {
+          "word": "one",
+          "display_index": 11,
+          "start": 23.327,
+          "end": 23.607
+        },
+        {
+          "word": "after",
+          "display_index": 12,
+          "start": 23.607,
+          "end": 23.927
+        },
+        {
+          "word": "another.",
+          "display_index": 13,
+          "start": 23.927,
+          "end": 25.427
+        }
+      ],
+      "start": 20.766,
+      "end": 25.427
+    },
+    {
+      "line": 4,
+      "english": "Turing, with his colleagues, built a machine called the Bombe.",
+      "word_timings": [
+        {
+          "word": "Turing,",
+          "display_index": 0,
+          "start": 25.927,
+          "end": 26.888
+        },
+        {
+          "word": "with",
+          "display_index": 1,
+          "start": 26.888,
+          "end": 27.028
+        },
+        {
+          "word": "his",
+          "display_index": 2,
+          "start": 27.028,
+          "end": 27.168
+        },
+        {
+          "word": "colleagues,",
+          "display_index": 3,
+          "start": 27.168,
+          "end": 27.768
+        },
+        {
+          "word": "built",
+          "display_index": 4,
+          "start": 27.768,
+          "end": 27.933
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 27.933,
+          "end": 28.068
+        },
+        {
+          "word": "machine",
+          "display_index": 6,
+          "start": 28.068,
+          "end": 28.528
+        },
+        {
+          "word": "called",
+          "display_index": 7,
+          "start": 28.528,
+          "end": 28.834
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 28.834,
+          "end": 28.968
+        },
+        {
+          "word": "Bombe.",
+          "display_index": 9,
+          "start": 28.968,
+          "end": 29.437
+        }
+      ],
+      "start": 25.927,
+      "end": 29.437
+    },
+    {
+      "line": 5,
+      "english": "The machine rapidly eliminated impossible Enigma settings, helping the team read many messages.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 29.437,
+          "end": 29.568
+        },
+        {
+          "word": "machine",
+          "display_index": 1,
+          "start": 29.568,
+          "end": 30.169
+        },
+        {
+          "word": "rapidly",
+          "display_index": 2,
+          "start": 30.169,
+          "end": 30.669
+        },
+        {
+          "word": "eliminated",
+          "display_index": 3,
+          "start": 30.669,
+          "end": 31.429
+        },
+        {
+          "word": "impossible",
+          "display_index": 4,
+          "start": 31.429,
+          "end": 32.189
+        },
+        {
+          "word": "Enigma",
+          "display_index": 5,
+          "start": 32.189,
+          "end": 32.569
+        },
+        {
+          "word": "settings,",
+          "display_index": 6,
+          "start": 32.569,
+          "end": 33.169
+        },
+        {
+          "word": "helping",
+          "display_index": 7,
+          "start": 33.169,
+          "end": 33.49
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 33.49,
+          "end": 33.63
+        },
+        {
+          "word": "team",
+          "display_index": 9,
+          "start": 33.63,
+          "end": 34.11
+        },
+        {
+          "word": "read",
+          "display_index": 10,
+          "start": 34.11,
+          "end": 34.37
+        },
+        {
+          "word": "many",
+          "display_index": 11,
+          "start": 34.37,
+          "end": 34.79
+        },
+        {
+          "word": "messages.",
+          "display_index": 12,
+          "start": 34.79,
+          "end": 35.59
+        }
+      ],
+      "start": 29.437,
+      "end": 35.59
+    },
+    {
+      "line": 6,
+      "english": "After the war, Turing explored the question, Can a machine think?",
+      "word_timings": [
+        {
+          "word": "After",
+          "display_index": 0,
+          "start": 35.63,
+          "end": 35.887
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 35.887,
+          "end": 36.03
+        },
+        {
+          "word": "war,",
+          "display_index": 2,
+          "start": 36.03,
+          "end": 37.05
+        },
+        {
+          "word": "Turing",
+          "display_index": 3,
+          "start": 37.05,
+          "end": 37.451
+        },
+        {
+          "word": "explored",
+          "display_index": 4,
+          "start": 37.451,
+          "end": 38.141
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 38.141,
+          "end": 38.251
+        },
+        {
+          "word": "question,",
+          "display_index": 6,
+          "start": 38.251,
+          "end": 39.471
+        },
+        {
+          "word": "Can",
+          "display_index": 7,
+          "start": 39.471,
+          "end": 39.614
+        },
+        {
+          "word": "a",
+          "display_index": 8,
+          "start": 39.614,
+          "end": 39.711
+        },
+        {
+          "word": "machine",
+          "display_index": 9,
+          "start": 39.711,
+          "end": 40.191
+        },
+        {
+          "word": "think?",
+          "display_index": 10,
+          "start": 40.191,
+          "end": 40.991
+        }
+      ],
+      "start": 35.63,
+      "end": 40.991
+    },
+    {
+      "line": 7,
+      "english": "His work became foundational to computer science and later debates about artificial intelligence.",
+      "word_timings": [
+        {
+          "word": "His",
+          "display_index": 0,
+          "start": 41.132,
+          "end": 41.312
+        },
+        {
+          "word": "work",
+          "display_index": 1,
+          "start": 41.312,
+          "end": 41.592
+        },
+        {
+          "word": "became",
+          "display_index": 2,
+          "start": 41.592,
+          "end": 42.012
+        },
+        {
+          "word": "foundational",
+          "display_index": 3,
+          "start": 42.012,
+          "end": 42.937
+        },
+        {
+          "word": "to",
+          "display_index": 4,
+          "start": 42.937,
+          "end": 43.072
+        },
+        {
+          "word": "computer",
+          "display_index": 5,
+          "start": 43.072,
+          "end": 43.672
+        },
+        {
+          "word": "science",
+          "display_index": 6,
+          "start": 43.672,
+          "end": 44.173
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 44.173,
+          "end": 44.313
+        },
+        {
+          "word": "later",
+          "display_index": 8,
+          "start": 44.313,
+          "end": 44.593
+        },
+        {
+          "word": "debates",
+          "display_index": 9,
+          "start": 44.593,
+          "end": 45.113
+        },
+        {
+          "word": "about",
+          "display_index": 10,
+          "start": 45.113,
+          "end": 45.553
+        },
+        {
+          "word": "artificial",
+          "display_index": 11,
+          "start": 45.553,
+          "end": 46.173
+        },
+        {
+          "word": "intelligence.",
+          "display_index": 12,
+          "start": 46.173,
+          "end": 47.153
+        }
+      ],
+      "start": 41.132,
+      "end": 47.153
+    },
+    {
+      "line": 8,
+      "english": "But under the law of his time, homosexuality was criminalized, and he was prosecuted.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 47.453,
+          "end": 47.633
+        },
+        {
+          "word": "under",
+          "display_index": 1,
+          "start": 47.633,
+          "end": 47.891
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 47.891,
+          "end": 48.054
+        },
+        {
+          "word": "law",
+          "display_index": 3,
+          "start": 48.054,
+          "end": 48.394
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 48.394,
+          "end": 48.534
+        },
+        {
+          "word": "his",
+          "display_index": 5,
+          "start": 48.534,
+          "end": 48.774
+        },
+        {
+          "word": "time,",
+          "display_index": 6,
+          "start": 48.774,
+          "end": 49.374
+        },
+        {
+          "word": "homosexuality",
+          "display_index": 7,
+          "start": 49.374,
+          "end": 50.434
+        },
+        {
+          "word": "was",
+          "display_index": 8,
+          "start": 50.434,
+          "end": 50.574
+        },
+        {
+          "word": "criminalized,",
+          "display_index": 9,
+          "start": 50.574,
+          "end": 51.555
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 51.555,
+          "end": 51.775
+        },
+        {
+          "word": "he",
+          "display_index": 11,
+          "start": 51.775,
+          "end": 52.095
+        },
+        {
+          "word": "was",
+          "display_index": 12,
+          "start": 52.095,
+          "end": 52.375
+        },
+        {
+          "word": "prosecuted.",
+          "display_index": 13,
+          "start": 52.375,
+          "end": 53.435
+        }
+      ],
+      "start": 47.453,
+      "end": 53.435
+    },
+    {
+      "line": 9,
+      "english": "He died at forty-one.",
+      "word_timings": [
+        {
+          "word": "He",
+          "display_index": 0,
+          "start": 53.735,
+          "end": 53.895
+        },
+        {
+          "word": "died",
+          "display_index": 1,
+          "start": 53.895,
+          "end": 54.235
+        },
+        {
+          "word": "at",
+          "display_index": 2,
+          "start": 54.235,
+          "end": 54.375
+        },
+        {
+          "word": "forty-one.",
+          "display_index": 3,
+          "start": 54.375,
+          "end": 54.876
+        },
+        {
+          "word": "forty-one.",
+          "display_index": 3,
+          "start": 54.876,
+          "end": 55.246
+        }
+      ],
+      "start": 53.735,
+      "end": 55.246
+    },
+    {
+      "line": 10,
+      "english": "The country he had helped defend later punished him for who he was.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 55.246,
+          "end": 55.376
+        },
+        {
+          "word": "country",
+          "display_index": 1,
+          "start": 55.376,
+          "end": 55.856
+        },
+        {
+          "word": "he",
+          "display_index": 2,
+          "start": 55.856,
+          "end": 56.116
+        },
+        {
+          "word": "had",
+          "display_index": 3,
+          "start": 56.116,
+          "end": 56.296
+        },
+        {
+          "word": "helped",
+          "display_index": 4,
+          "start": 56.296,
+          "end": 56.736
+        },
+        {
+          "word": "defend",
+          "display_index": 5,
+          "start": 56.736,
+          "end": 57.216
+        },
+        {
+          "word": "later",
+          "display_index": 6,
+          "start": 57.216,
+          "end": 57.636
+        },
+        {
+          "word": "punished",
+          "display_index": 7,
+          "start": 57.636,
+          "end": 58.136
+        },
+        {
+          "word": "him",
+          "display_index": 8,
+          "start": 58.136,
+          "end": 58.657
+        },
+        {
+          "word": "for",
+          "display_index": 9,
+          "start": 58.657,
+          "end": 58.957
+        },
+        {
+          "word": "who",
+          "display_index": 10,
+          "start": 58.957,
+          "end": 59.277
+        },
+        {
+          "word": "he",
+          "display_index": 11,
+          "start": 59.277,
+          "end": 59.597
+        },
+        {
+          "word": "was.",
+          "display_index": 12,
+          "start": 59.597,
+          "end": 61.097
+        }
+      ],
+      "start": 55.246,
+      "end": 61.097
+    },
+    {
+      "line": 11,
+      "english": "In 2013, Queen Elizabeth II granted him an official pardon.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 62.338,
+          "end": 62.418
+        },
+        {
+          "word": "2013,",
+          "display_index": 1,
+          "start": 62.418,
+          "end": 64.078
+        },
+        {
+          "word": "Queen",
+          "display_index": 2,
+          "start": 64.078,
+          "end": 64.318
+        },
+        {
+          "word": "Elizabeth",
+          "display_index": 3,
+          "start": 64.318,
+          "end": 64.978
+        },
+        {
+          "word": "II",
+          "display_index": 4,
+          "start": 64.978,
+          "end": 65.419
+        },
+        {
+          "word": "granted",
+          "display_index": 5,
+          "start": 65.419,
+          "end": 65.919
+        },
+        {
+          "word": "him",
+          "display_index": 6,
+          "start": 65.919,
+          "end": 66.539
+        },
+        {
+          "word": "an",
+          "display_index": 7,
+          "start": 66.539,
+          "end": 66.679
+        },
+        {
+          "word": "official",
+          "display_index": 8,
+          "start": 66.679,
+          "end": 67.219
+        },
+        {
+          "word": "pardon.",
+          "display_index": 9,
+          "start": 67.219,
+          "end": 67.869
+        }
+      ],
+      "start": 62.338,
+      "end": 67.869
+    },
+    {
+      "line": 12,
+      "english": "The pardon came far too late.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 68.169,
+          "end": 68.299
+        },
+        {
+          "word": "pardon",
+          "display_index": 1,
+          "start": 68.299,
+          "end": 68.9
+        },
+        {
+          "word": "came",
+          "display_index": 2,
+          "start": 68.9,
+          "end": 69.2
+        },
+        {
+          "word": "far",
+          "display_index": 3,
+          "start": 69.2,
+          "end": 69.496
+        },
+        {
+          "word": "too",
+          "display_index": 4,
+          "start": 69.496,
+          "end": 69.82
+        },
+        {
+          "word": "late.",
+          "display_index": 5,
+          "start": 69.82,
+          "end": 70.864
+        }
+      ],
+      "start": 68.169,
+      "end": 70.864
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

@@ -1,0 +1,135 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H036.md",
+  "audio": "高校生編/suno_ready/generated/audio/H036/candidate1-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 102.32,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9787,
+  "expected_words": 141,
+  "transcribed_words": 138,
+  "matched_words": 138,
+  "coverage": 0.9787,
+  "precision": 1.0,
+  "first_matched_expected_index": 3,
+  "last_matched_expected_index": 140,
+  "longest_missing_run": 3,
+  "largest_missing_runs": [
+    {
+      "start": 0,
+      "length": 3,
+      "words": [
+        "twenty",
+        "four",
+        "hundred"
+      ]
+    }
+  ],
+  "replacement_count": 0,
+  "replacement_spans": [],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 0,
+      "actual_start": 0,
+      "expected": [
+        "twenty",
+        "four",
+        "hundred"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "2400 years ago, in ancient Athens, there lived a philosopher named Socrates. He never wrote a book, his philosophy existed only in the dialogues he held with other people. In Plato's account, Socrates said that An unexamined life was not worth living Socrates kept asking people what virtue was He asked what justice was He would claim that he himself did not know And then question those who claimed to know His questions slowly shook the authority of those people In 3099 BC, Socrates was accused of corrupting the young And was condemned at his trial Friends urged him to flee, but he replied That escaping would betray the laws under which he had lived He drank the hemlock and died quietly But after more than two thousand years His question still challenges us Do we examine our own lives?",
+  "segments": [
+    {
+      "start": 7.82,
+      "end": 18.26,
+      "text": "2400 years ago, in ancient Athens, there lived a philosopher named Socrates."
+    },
+    {
+      "start": 19.24,
+      "end": 27.94,
+      "text": "He never wrote a book, his philosophy existed only in the dialogues he held with other people."
+    },
+    {
+      "start": 27.94,
+      "end": 33.12,
+      "text": "In Plato's account, Socrates said that"
+    },
+    {
+      "start": 33.12,
+      "end": 37.46,
+      "text": "An unexamined life was not worth living"
+    },
+    {
+      "start": 40.74,
+      "end": 45.0,
+      "text": "Socrates kept asking people what virtue was"
+    },
+    {
+      "start": 45.0,
+      "end": 48.74,
+      "text": "He asked what justice was"
+    },
+    {
+      "start": 48.74,
+      "end": 53.04,
+      "text": "He would claim that he himself did not know"
+    },
+    {
+      "start": 53.04,
+      "end": 56.5,
+      "text": "And then question those who claimed to know"
+    },
+    {
+      "start": 56.5,
+      "end": 62.62,
+      "text": "His questions slowly shook the authority of those people"
+    },
+    {
+      "start": 62.62,
+      "end": 70.34,
+      "text": "In 3099 BC, Socrates was accused of corrupting the young"
+    },
+    {
+      "start": 70.34,
+      "end": 73.0,
+      "text": "And was condemned at his trial"
+    },
+    {
+      "start": 73.0,
+      "end": 77.54,
+      "text": "Friends urged him to flee, but he replied"
+    },
+    {
+      "start": 77.54,
+      "end": 82.92,
+      "text": "That escaping would betray the laws under which he had lived"
+    },
+    {
+      "start": 82.92,
+      "end": 87.52,
+      "text": "He drank the hemlock and died quietly"
+    },
+    {
+      "start": 90.46,
+      "end": 94.74,
+      "text": "But after more than two thousand years"
+    },
+    {
+      "start": 94.74,
+      "end": 98.28,
+      "text": "His question still challenges us"
+    },
+    {
+      "start": 98.28,
+      "end": 102.32,
+      "text": "Do we examine our own lives?"
+    }
+  ]
+}

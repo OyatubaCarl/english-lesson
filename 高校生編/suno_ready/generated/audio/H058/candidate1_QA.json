@@ -1,0 +1,196 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H058.md",
+  "audio": "高校生編/suno_ready/generated/audio/H058/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 169.64,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9856,
+  "expected_words": 208,
+  "transcribed_words": 205,
+  "matched_words": 203,
+  "coverage": 0.976,
+  "precision": 0.9902,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 207,
+  "longest_missing_run": 3,
+  "largest_missing_runs": [
+    {
+      "start": 131,
+      "length": 3,
+      "words": [
+        "of",
+        "modern",
+        "law"
+      ]
+    },
+    {
+      "start": 29,
+      "length": 1,
+      "words": [
+        "a"
+      ]
+    },
+    {
+      "start": 172,
+      "length": 1,
+      "words": [
+        "judgment"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 29,
+      "actual_start": 29,
+      "expected": [
+        "a"
+      ],
+      "actual": [
+        "the"
+      ],
+      "actual_confidence": 0.9587,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 172,
+      "actual_start": 169,
+      "expected": [
+        "judgment"
+      ],
+      "actual": [
+        "judgement"
+      ],
+      "actual_confidence": 0.4845,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 131,
+      "actual_start": 131,
+      "expected": [
+        "of",
+        "modern",
+        "law"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": false,
+  "transcript": "The court system of modern society is a way to settle conflict through law, not through violence. When an incident occurs, the police first begin an investigation and arrest the suspect. Then the prosecution gathers evidence and decides whether to bring charges. When the trial begins the prosecution and the defense each present their arguments. Witnesses are called to the court and after taking an oath, give their testimony The defendant also has the right to defend himself with the help of an attorney In many countries, a trial is presided over by a judge In serious criminal cases Some countries use a jury of citizens To decide the facts Innocent until proven guilty A person is presumed innocent until guilt is proven This is one of the most important principles If the evidence is not sufficient, the defendant is found not guilty. If the verdict is guilty, a sentence is given. The punishment may be prison time, a fine, or community service. If the defendant disagrees with the judgement, he can appeal to a higher court The system of justice must be fair to both victims and offenders To realize the ideal of justice Humanity has spent centuries refining The system of the court",
+  "segments": [
+    {
+      "start": 9.1,
+      "end": 20.88,
+      "text": "The court system of modern society is a way to settle conflict through law, not through violence."
+    },
+    {
+      "start": 20.88,
+      "end": 29.02,
+      "text": "When an incident occurs, the police first begin an investigation and arrest the suspect."
+    },
+    {
+      "start": 31.88,
+      "end": 38.58,
+      "text": "Then the prosecution gathers evidence and decides whether to bring charges."
+    },
+    {
+      "start": 42.88,
+      "end": 49.78,
+      "text": "When the trial begins the prosecution and the defense each present their arguments."
+    },
+    {
+      "start": 51.62,
+      "end": 57.58,
+      "text": "Witnesses are called to the court and after taking an oath, give their testimony"
+    },
+    {
+      "start": 59.06,
+      "end": 65.62,
+      "text": "The defendant also has the right to defend himself with the help of an attorney"
+    },
+    {
+      "start": 67.78,
+      "end": 73.94,
+      "text": "In many countries, a trial is presided over by a judge"
+    },
+    {
+      "start": 73.94,
+      "end": 76.92,
+      "text": "In serious criminal cases"
+    },
+    {
+      "start": 77.94,
+      "end": 81.86,
+      "text": "Some countries use a jury of citizens"
+    },
+    {
+      "start": 81.86,
+      "end": 84.74,
+      "text": "To decide the facts"
+    },
+    {
+      "start": 86.96,
+      "end": 89.8,
+      "text": "Innocent until proven guilty"
+    },
+    {
+      "start": 89.8,
+      "end": 94.68,
+      "text": "A person is presumed innocent until guilt is proven"
+    },
+    {
+      "start": 95.94,
+      "end": 99.68,
+      "text": "This is one of the most important principles"
+    },
+    {
+      "start": 104.06,
+      "end": 110.4,
+      "text": "If the evidence is not sufficient, the defendant is found not guilty."
+    },
+    {
+      "start": 110.92,
+      "end": 116.34,
+      "text": "If the verdict is guilty, a sentence is given."
+    },
+    {
+      "start": 118.68,
+      "end": 124.32,
+      "text": "The punishment may be prison time, a fine, or community service."
+    },
+    {
+      "start": 125.76,
+      "end": 135.48,
+      "text": "If the defendant disagrees with the judgement, he can appeal to a higher court"
+    },
+    {
+      "start": 137.3,
+      "end": 144.6,
+      "text": "The system of justice must be fair to both victims and offenders"
+    },
+    {
+      "start": 144.6,
+      "end": 149.94,
+      "text": "To realize the ideal of justice"
+    },
+    {
+      "start": 150.6,
+      "end": 156.26,
+      "text": "Humanity has spent centuries refining"
+    },
+    {
+      "start": 156.26,
+      "end": 159.84,
+      "text": "The system of the court"
+    }
+  ]
+}

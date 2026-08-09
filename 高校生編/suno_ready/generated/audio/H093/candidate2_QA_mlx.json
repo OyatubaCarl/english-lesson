@@ -1,0 +1,166 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H093.md",
+  "audio": "高校生編/suno_ready/generated/audio/H093/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 111.58,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.988,
+  "expected_words": 167,
+  "transcribed_words": 165,
+  "matched_words": 165,
+  "coverage": 0.988,
+  "precision": 1.0,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 166,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 113,
+      "length": 1,
+      "words": [
+        "thirty"
+      ]
+    },
+    {
+      "start": 121,
+      "length": 1,
+      "words": [
+        "seven"
+      ]
+    }
+  ],
+  "replacement_count": 0,
+  "replacement_spans": [],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 113,
+      "actual_start": 113,
+      "expected": [
+        "thirty"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 121,
+      "actual_start": 120,
+      "expected": [
+        "seven"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "Modern people live more conveniently than ever before, but at a cost The health of body and mind tends to be neglected Lung function weakens without exercise And muscle mass diminishes if not used A sedentary lifestyle becomes a factor In diabetes and heart disease The quality of sleep is also crucial Staring at a smartphone screen late at night Exposes the brain to intense light And sleep becomes shallow Consequently, the next day's concentration drops considerably On the mental side, the number of people carrying anxiety and depression is growing The more intense the competition in society becomes The heavier the burden What is necessary to maintain health is nothing special A 30-minute walk each day, a balanced diet, 7 hours of sleep And not hesitating to ask for help when in trouble Body and mind are inseparable If you move your body, your mind grows lighter If your mind is stable, your body will also recover Health is the accumulation of small daily habits",
+  "segments": [
+    {
+      "start": 4.78,
+      "end": 10.94,
+      "text": "Modern people live more conveniently than ever before, but at a cost"
+    },
+    {
+      "start": 10.94,
+      "end": 15.12,
+      "text": "The health of body and mind tends to be neglected"
+    },
+    {
+      "start": 15.12,
+      "end": 19.54,
+      "text": "Lung function weakens without exercise"
+    },
+    {
+      "start": 19.54,
+      "end": 24.46,
+      "text": "And muscle mass diminishes if not used"
+    },
+    {
+      "start": 25.96,
+      "end": 29.56,
+      "text": "A sedentary lifestyle becomes a factor"
+    },
+    {
+      "start": 29.56,
+      "end": 31.9,
+      "text": "In diabetes and heart disease"
+    },
+    {
+      "start": 31.9,
+      "end": 35.76,
+      "text": "The quality of sleep is also crucial"
+    },
+    {
+      "start": 35.76,
+      "end": 40.14,
+      "text": "Staring at a smartphone screen late at night"
+    },
+    {
+      "start": 40.14,
+      "end": 43.58,
+      "text": "Exposes the brain to intense light"
+    },
+    {
+      "start": 43.58,
+      "end": 46.06,
+      "text": "And sleep becomes shallow"
+    },
+    {
+      "start": 48.06,
+      "end": 53.24,
+      "text": "Consequently, the next day's concentration drops considerably"
+    },
+    {
+      "start": 53.24,
+      "end": 59.92,
+      "text": "On the mental side, the number of people carrying anxiety and depression is growing"
+    },
+    {
+      "start": 59.92,
+      "end": 66.42,
+      "text": "The more intense the competition in society becomes"
+    },
+    {
+      "start": 66.42,
+      "end": 69.52,
+      "text": "The heavier the burden"
+    },
+    {
+      "start": 69.52,
+      "end": 75.46,
+      "text": "What is necessary to maintain health is nothing special"
+    },
+    {
+      "start": 75.46,
+      "end": 80.94,
+      "text": "A 30-minute walk each day, a balanced diet, 7 hours of sleep"
+    },
+    {
+      "start": 80.94,
+      "end": 85.68,
+      "text": "And not hesitating to ask for help when in trouble"
+    },
+    {
+      "start": 85.68,
+      "end": 90.6,
+      "text": "Body and mind are inseparable"
+    },
+    {
+      "start": 90.6,
+      "end": 96.42,
+      "text": "If you move your body, your mind grows lighter"
+    },
+    {
+      "start": 96.42,
+      "end": 103.1,
+      "text": "If your mind is stable, your body will also recover"
+    },
+    {
+      "start": 103.1,
+      "end": 111.58,
+      "text": "Health is the accumulation of small daily habits"
+    }
+  ]
+}

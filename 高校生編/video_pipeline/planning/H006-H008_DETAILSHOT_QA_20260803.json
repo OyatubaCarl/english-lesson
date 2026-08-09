@@ -1,0 +1,51 @@
+{
+  "scope": "H006-H008",
+  "date": "2026-08-03",
+  "status": "PASS",
+  "reason": "歌詞内の自然物・生活動作・人物の表情・時間進行を5カットでは十分に示せなかったため、描写単位の寄り画を追加",
+  "scene_counts": {
+    "H006_before": 5,
+    "H006_after": 13,
+    "H007_before": 5,
+    "H007_after": 13,
+    "H008_before": 5,
+    "H008_after": 13,
+    "new_images": 24
+  },
+  "focus_policy": "歌詞が新しい物・動き・人物・表情・時間経過へ注意を移すたび、広景から対象の寄り画または中景へ切り替える",
+  "prompt_record": "高校生編/video_pipeline/planning/H006-H008_DETAIL_SHOTS_PROMPTS_STYLE01.md",
+  "continuity": {
+    "H006_autumn_and_same_grandmother_boy_porch": true,
+    "H006_plum_has_no_blossoms": true,
+    "H006_grandfather_not_depicted_as_ghost_or_figure": true,
+    "H007_same_23yo_protagonist_across_one_day": true,
+    "H007_phone_and_new_request_continuity_preserved": true,
+    "H008_same_five_family_members": true,
+    "H008_father_teen_protagonist_and_older_brother_distinct": true,
+    "important_subjects_visible_above_caption_band": true
+  },
+  "previous_versions": [
+    "高校生編/video_pipeline/H006/output/archive_before_detailshots_20260803/",
+    "高校生編/video_pipeline/H007/output/archive_before_detailshots_20260803/",
+    "高校生編/video_pipeline/H008/output/archive_before_detailshots_20260803/"
+  ],
+  "checks": {
+    "H006_structural_verification": "PASS",
+    "H007_structural_verification": "PASS",
+    "H008_structural_verification": "PASS",
+    "H006_full_video_audio_decode": "PASS",
+    "H007_full_video_audio_decode": "PASS",
+    "H008_full_video_audio_decode": "PASS",
+    "combined_H001_H010_full_video_audio_decode": "PASS",
+    "ruby_and_highlight_policy_unchanged": true,
+    "stable_camera_policy_unchanged": true
+  },
+  "visual_qa": [
+    "高校生編/video_pipeline/qa_contact_sheets/H006_detailshot_13scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H007_detailshot_13scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H008_detailshot_13scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H006_detailshot_final_video_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H007_detailshot_final_video_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H008_detailshot_final_video_contact.jpg"
+  ]
+}

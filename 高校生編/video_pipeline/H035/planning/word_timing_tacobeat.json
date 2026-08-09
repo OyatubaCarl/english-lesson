@@ -1,0 +1,950 @@
+{
+  "lesson": "H035",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h035_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/rewrite_audio/H035/candidate1-full.mp3",
+  "source_audio_sha256": "b950e9c3b146a23e632b330027b7e56b2aa1ba9e3d1a1b58058f74d8f64cfe6c",
+  "bpm": 82.0,
+  "exact_word_match": true,
+  "word_count": 141,
+  "line_count": 11,
+  "first_word_start": 1.0,
+  "last_word_end": 70.064,
+  "lines": [
+    {
+      "line": 1,
+      "english": "In 1831, Charles Darwin began a voyage around the world aboard a British survey ship.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 1.0,
+          "end": 1.22
+        },
+        {
+          "word": "1831,",
+          "display_index": 1,
+          "start": 1.22,
+          "end": 2.901
+        },
+        {
+          "word": "Charles",
+          "display_index": 2,
+          "start": 2.901,
+          "end": 3.341
+        },
+        {
+          "word": "Darwin",
+          "display_index": 3,
+          "start": 3.341,
+          "end": 3.941
+        },
+        {
+          "word": "began",
+          "display_index": 4,
+          "start": 3.941,
+          "end": 4.311
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 4.311,
+          "end": 4.441
+        },
+        {
+          "word": "voyage",
+          "display_index": 6,
+          "start": 4.441,
+          "end": 5.061
+        },
+        {
+          "word": "around",
+          "display_index": 7,
+          "start": 5.061,
+          "end": 5.424
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 5.424,
+          "end": 5.542
+        },
+        {
+          "word": "world",
+          "display_index": 9,
+          "start": 5.542,
+          "end": 5.842
+        },
+        {
+          "word": "aboard",
+          "display_index": 10,
+          "start": 5.842,
+          "end": 6.152
+        },
+        {
+          "word": "a",
+          "display_index": 11,
+          "start": 6.152,
+          "end": 6.282
+        },
+        {
+          "word": "British",
+          "display_index": 12,
+          "start": 6.282,
+          "end": 6.822
+        },
+        {
+          "word": "survey",
+          "display_index": 13,
+          "start": 6.822,
+          "end": 7.522
+        },
+        {
+          "word": "ship.",
+          "display_index": 14,
+          "start": 7.522,
+          "end": 9.022
+        }
+      ],
+      "start": 1.0,
+      "end": 9.022
+    },
+    {
+      "line": 2,
+      "english": "During the five years of that expedition, he visited many islands along the coast of South America.",
+      "word_timings": [
+        {
+          "word": "During",
+          "display_index": 0,
+          "start": 9.363,
+          "end": 9.714
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 9.714,
+          "end": 9.803
+        },
+        {
+          "word": "five",
+          "display_index": 2,
+          "start": 9.803,
+          "end": 10.123
+        },
+        {
+          "word": "years",
+          "display_index": 3,
+          "start": 10.123,
+          "end": 10.383
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 10.383,
+          "end": 10.463
+        },
+        {
+          "word": "that",
+          "display_index": 5,
+          "start": 10.463,
+          "end": 10.663
+        },
+        {
+          "word": "expedition,",
+          "display_index": 6,
+          "start": 10.663,
+          "end": 11.663
+        },
+        {
+          "word": "he",
+          "display_index": 7,
+          "start": 11.663,
+          "end": 11.783
+        },
+        {
+          "word": "visited",
+          "display_index": 8,
+          "start": 11.783,
+          "end": 12.264
+        },
+        {
+          "word": "many",
+          "display_index": 9,
+          "start": 12.264,
+          "end": 12.664
+        },
+        {
+          "word": "islands",
+          "display_index": 10,
+          "start": 12.664,
+          "end": 13.104
+        },
+        {
+          "word": "along",
+          "display_index": 11,
+          "start": 13.104,
+          "end": 13.396
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 13.396,
+          "end": 13.504
+        },
+        {
+          "word": "coast",
+          "display_index": 13,
+          "start": 13.504,
+          "end": 13.904
+        },
+        {
+          "word": "of",
+          "display_index": 14,
+          "start": 13.904,
+          "end": 14.044
+        },
+        {
+          "word": "South",
+          "display_index": 15,
+          "start": 14.044,
+          "end": 14.344
+        },
+        {
+          "word": "America.",
+          "display_index": 16,
+          "start": 14.344,
+          "end": 15.745
+        }
+      ],
+      "start": 9.363,
+      "end": 15.745
+    },
+    {
+      "line": 3,
+      "english": "On the Galapagos Islands, he carefully observed how animals varied from island to island.",
+      "word_timings": [
+        {
+          "word": "On",
+          "display_index": 0,
+          "start": 16.045,
+          "end": 16.192
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 16.192,
+          "end": 16.345
+        },
+        {
+          "word": "Galapagos",
+          "display_index": 2,
+          "start": 16.345,
+          "end": 17.365
+        },
+        {
+          "word": "Islands,",
+          "display_index": 3,
+          "start": 17.365,
+          "end": 17.845
+        },
+        {
+          "word": "he",
+          "display_index": 4,
+          "start": 17.845,
+          "end": 17.965
+        },
+        {
+          "word": "carefully",
+          "display_index": 5,
+          "start": 17.965,
+          "end": 18.545
+        },
+        {
+          "word": "observed",
+          "display_index": 6,
+          "start": 18.545,
+          "end": 19.105
+        },
+        {
+          "word": "how",
+          "display_index": 7,
+          "start": 19.105,
+          "end": 19.506
+        },
+        {
+          "word": "animals",
+          "display_index": 8,
+          "start": 19.506,
+          "end": 20.026
+        },
+        {
+          "word": "varied",
+          "display_index": 9,
+          "start": 20.026,
+          "end": 20.546
+        },
+        {
+          "word": "from",
+          "display_index": 10,
+          "start": 20.546,
+          "end": 20.986
+        },
+        {
+          "word": "island",
+          "display_index": 11,
+          "start": 20.986,
+          "end": 21.273
+        },
+        {
+          "word": "to",
+          "display_index": 12,
+          "start": 21.273,
+          "end": 21.686
+        },
+        {
+          "word": "island.",
+          "display_index": 13,
+          "start": 21.686,
+          "end": 22.386
+        }
+      ],
+      "start": 16.045,
+      "end": 22.386
+    },
+    {
+      "line": 4,
+      "english": "He collected birds that were later identified in England as related finch species with different beaks.",
+      "word_timings": [
+        {
+          "word": "He",
+          "display_index": 0,
+          "start": 22.386,
+          "end": 22.586
+        },
+        {
+          "word": "collected",
+          "display_index": 1,
+          "start": 22.586,
+          "end": 23.107
+        },
+        {
+          "word": "birds",
+          "display_index": 2,
+          "start": 23.107,
+          "end": 23.487
+        },
+        {
+          "word": "that",
+          "display_index": 3,
+          "start": 23.487,
+          "end": 23.667
+        },
+        {
+          "word": "were",
+          "display_index": 4,
+          "start": 23.667,
+          "end": 23.847
+        },
+        {
+          "word": "later",
+          "display_index": 5,
+          "start": 23.847,
+          "end": 24.307
+        },
+        {
+          "word": "identified",
+          "display_index": 6,
+          "start": 24.307,
+          "end": 25.227
+        },
+        {
+          "word": "in",
+          "display_index": 7,
+          "start": 25.227,
+          "end": 25.367
+        },
+        {
+          "word": "England",
+          "display_index": 8,
+          "start": 25.367,
+          "end": 25.767
+        },
+        {
+          "word": "as",
+          "display_index": 9,
+          "start": 25.767,
+          "end": 25.947
+        },
+        {
+          "word": "related",
+          "display_index": 10,
+          "start": 25.947,
+          "end": 26.608
+        },
+        {
+          "word": "finch",
+          "display_index": 11,
+          "start": 26.608,
+          "end": 26.948
+        },
+        {
+          "word": "species",
+          "display_index": 12,
+          "start": 26.948,
+          "end": 27.748
+        },
+        {
+          "word": "with",
+          "display_index": 13,
+          "start": 27.748,
+          "end": 27.888
+        },
+        {
+          "word": "different",
+          "display_index": 14,
+          "start": 27.888,
+          "end": 28.248
+        },
+        {
+          "word": "beaks.",
+          "display_index": 15,
+          "start": 28.248,
+          "end": 28.908
+        }
+      ],
+      "start": 22.386,
+      "end": 28.908
+    },
+    {
+      "line": 5,
+      "english": "Darwin collected many specimens and, after his return, spent long years in thought.",
+      "word_timings": [
+        {
+          "word": "Darwin",
+          "display_index": 0,
+          "start": 29.208,
+          "end": 29.709
+        },
+        {
+          "word": "collected",
+          "display_index": 1,
+          "start": 29.709,
+          "end": 30.249
+        },
+        {
+          "word": "many",
+          "display_index": 2,
+          "start": 30.249,
+          "end": 30.589
+        },
+        {
+          "word": "specimens",
+          "display_index": 3,
+          "start": 30.589,
+          "end": 31.449
+        },
+        {
+          "word": "and,",
+          "display_index": 4,
+          "start": 31.449,
+          "end": 31.969
+        },
+        {
+          "word": "after",
+          "display_index": 5,
+          "start": 31.969,
+          "end": 32.289
+        },
+        {
+          "word": "his",
+          "display_index": 6,
+          "start": 32.289,
+          "end": 32.489
+        },
+        {
+          "word": "return,",
+          "display_index": 7,
+          "start": 32.489,
+          "end": 33.63
+        },
+        {
+          "word": "spent",
+          "display_index": 8,
+          "start": 33.63,
+          "end": 34.09
+        },
+        {
+          "word": "long",
+          "display_index": 9,
+          "start": 34.09,
+          "end": 34.47
+        },
+        {
+          "word": "years",
+          "display_index": 10,
+          "start": 34.47,
+          "end": 35.27
+        },
+        {
+          "word": "in",
+          "display_index": 11,
+          "start": 35.27,
+          "end": 35.57
+        },
+        {
+          "word": "thought.",
+          "display_index": 12,
+          "start": 35.57,
+          "end": 36.29
+        }
+      ],
+      "start": 29.208,
+      "end": 36.29
+    },
+    {
+      "line": 6,
+      "english": "Why were there different animals on different islands?",
+      "word_timings": [
+        {
+          "word": "Why",
+          "display_index": 0,
+          "start": 36.29,
+          "end": 36.67
+        },
+        {
+          "word": "were",
+          "display_index": 1,
+          "start": 36.67,
+          "end": 36.851
+        },
+        {
+          "word": "there",
+          "display_index": 2,
+          "start": 36.851,
+          "end": 37.031
+        },
+        {
+          "word": "different",
+          "display_index": 3,
+          "start": 37.031,
+          "end": 37.671
+        },
+        {
+          "word": "animals",
+          "display_index": 4,
+          "start": 37.671,
+          "end": 38.351
+        },
+        {
+          "word": "on",
+          "display_index": 5,
+          "start": 38.351,
+          "end": 38.471
+        },
+        {
+          "word": "different",
+          "display_index": 6,
+          "start": 38.471,
+          "end": 39.231
+        },
+        {
+          "word": "islands?",
+          "display_index": 7,
+          "start": 39.231,
+          "end": 40.012
+        }
+      ],
+      "start": 36.29,
+      "end": 40.012
+    },
+    {
+      "line": 7,
+      "english": "Why had they adapted so perfectly to each environment?",
+      "word_timings": [
+        {
+          "word": "Why",
+          "display_index": 0,
+          "start": 40.312,
+          "end": 40.532
+        },
+        {
+          "word": "had",
+          "display_index": 1,
+          "start": 40.532,
+          "end": 40.692
+        },
+        {
+          "word": "they",
+          "display_index": 2,
+          "start": 40.692,
+          "end": 40.872
+        },
+        {
+          "word": "adapted",
+          "display_index": 3,
+          "start": 40.872,
+          "end": 41.572
+        },
+        {
+          "word": "so",
+          "display_index": 4,
+          "start": 41.572,
+          "end": 41.972
+        },
+        {
+          "word": "perfectly",
+          "display_index": 5,
+          "start": 41.972,
+          "end": 42.658
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 42.658,
+          "end": 42.872
+        },
+        {
+          "word": "each",
+          "display_index": 7,
+          "start": 42.872,
+          "end": 43.112
+        },
+        {
+          "word": "environment?",
+          "display_index": 8,
+          "start": 43.112,
+          "end": 43.913
+        }
+      ],
+      "start": 40.312,
+      "end": 43.913
+    },
+    {
+      "line": 8,
+      "english": "In 1859, the publication of his book, On the Origin of Species, shook the world.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 44.213,
+          "end": 44.393
+        },
+        {
+          "word": "1859,",
+          "display_index": 1,
+          "start": 44.393,
+          "end": 46.009
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 46.009,
+          "end": 46.153
+        },
+        {
+          "word": "publication",
+          "display_index": 3,
+          "start": 46.153,
+          "end": 46.973
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 46.973,
+          "end": 47.113
+        },
+        {
+          "word": "his",
+          "display_index": 5,
+          "start": 47.113,
+          "end": 47.274
+        },
+        {
+          "word": "book,",
+          "display_index": 6,
+          "start": 47.274,
+          "end": 47.674
+        },
+        {
+          "word": "On",
+          "display_index": 7,
+          "start": 47.674,
+          "end": 47.819
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 47.819,
+          "end": 48.054
+        },
+        {
+          "word": "Origin",
+          "display_index": 9,
+          "start": 48.054,
+          "end": 48.574
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 48.574,
+          "end": 48.674
+        },
+        {
+          "word": "Species,",
+          "display_index": 11,
+          "start": 48.674,
+          "end": 49.414
+        },
+        {
+          "word": "shook",
+          "display_index": 12,
+          "start": 49.414,
+          "end": 49.824
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 49.824,
+          "end": 50.014
+        },
+        {
+          "word": "world.",
+          "display_index": 14,
+          "start": 50.014,
+          "end": 50.767
+        }
+      ],
+      "start": 44.213,
+      "end": 50.767
+    },
+    {
+      "line": 9,
+      "english": "The concept of evolution shook the belief of the age.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 50.767,
+          "end": 50.895
+        },
+        {
+          "word": "concept",
+          "display_index": 1,
+          "start": 50.895,
+          "end": 51.855
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 51.855,
+          "end": 52.075
+        },
+        {
+          "word": "evolution",
+          "display_index": 3,
+          "start": 52.075,
+          "end": 53.075
+        },
+        {
+          "word": "shook",
+          "display_index": 4,
+          "start": 53.075,
+          "end": 53.487
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 53.487,
+          "end": 53.655
+        },
+        {
+          "word": "belief",
+          "display_index": 6,
+          "start": 53.655,
+          "end": 54.656
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 54.656,
+          "end": 54.98
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 54.98,
+          "end": 55.236
+        },
+        {
+          "word": "age.",
+          "display_index": 9,
+          "start": 55.236,
+          "end": 56.036
+        }
+      ],
+      "start": 50.767,
+      "end": 56.036
+    },
+    {
+      "line": 10,
+      "english": "Although there was fierce criticism, Darwin's theory, over time, came to be accepted.",
+      "word_timings": [
+        {
+          "word": "Although",
+          "display_index": 0,
+          "start": 56.096,
+          "end": 56.456
+        },
+        {
+          "word": "there",
+          "display_index": 1,
+          "start": 56.456,
+          "end": 56.636
+        },
+        {
+          "word": "was",
+          "display_index": 2,
+          "start": 56.636,
+          "end": 57.136
+        },
+        {
+          "word": "fierce",
+          "display_index": 3,
+          "start": 57.136,
+          "end": 57.536
+        },
+        {
+          "word": "criticism,",
+          "display_index": 4,
+          "start": 57.536,
+          "end": 58.597
+        },
+        {
+          "word": "Darwin's",
+          "display_index": 5,
+          "start": 58.597,
+          "end": 59.217
+        },
+        {
+          "word": "theory,",
+          "display_index": 6,
+          "start": 59.217,
+          "end": 60.117
+        },
+        {
+          "word": "over",
+          "display_index": 7,
+          "start": 60.117,
+          "end": 60.457
+        },
+        {
+          "word": "time,",
+          "display_index": 8,
+          "start": 60.457,
+          "end": 61.117
+        },
+        {
+          "word": "came",
+          "display_index": 9,
+          "start": 61.117,
+          "end": 61.676
+        },
+        {
+          "word": "to",
+          "display_index": 10,
+          "start": 61.676,
+          "end": 61.878
+        },
+        {
+          "word": "be",
+          "display_index": 11,
+          "start": 61.878,
+          "end": 62.138
+        },
+        {
+          "word": "accepted.",
+          "display_index": 12,
+          "start": 62.138,
+          "end": 63.018
+        }
+      ],
+      "start": 56.096,
+      "end": 63.018
+    },
+    {
+      "line": 11,
+      "english": "Nature, quietly yet deeply, continues to change from generation to generation.",
+      "word_timings": [
+        {
+          "word": "Nature,",
+          "display_index": 0,
+          "start": 63.318,
+          "end": 64.018
+        },
+        {
+          "word": "quietly",
+          "display_index": 1,
+          "start": 64.018,
+          "end": 64.699
+        },
+        {
+          "word": "yet",
+          "display_index": 2,
+          "start": 64.699,
+          "end": 65.039
+        },
+        {
+          "word": "deeply,",
+          "display_index": 3,
+          "start": 65.039,
+          "end": 65.799
+        },
+        {
+          "word": "continues",
+          "display_index": 4,
+          "start": 65.799,
+          "end": 66.514
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 66.514,
+          "end": 66.699
+        },
+        {
+          "word": "change",
+          "display_index": 6,
+          "start": 66.699,
+          "end": 67.359
+        },
+        {
+          "word": "from",
+          "display_index": 7,
+          "start": 67.359,
+          "end": 67.599
+        },
+        {
+          "word": "generation",
+          "display_index": 8,
+          "start": 67.599,
+          "end": 68.933
+        },
+        {
+          "word": "to",
+          "display_index": 9,
+          "start": 68.933,
+          "end": 69.16
+        },
+        {
+          "word": "generation.",
+          "display_index": 10,
+          "start": 69.16,
+          "end": 70.064
+        }
+      ],
+      "start": 63.318,
+      "end": 70.064
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

@@ -1,0 +1,191 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H104.md",
+  "audio": "高校生編/suno_ready/generated/audio/H104/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 108.88,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0064,
+  "expected_words": 157,
+  "transcribed_words": 158,
+  "matched_words": 154,
+  "coverage": 0.9809,
+  "precision": 0.9747,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 156,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 29,
+      "length": 1,
+      "words": [
+        "russia's"
+      ]
+    },
+    {
+      "start": 39,
+      "length": 1,
+      "words": [
+        "combined"
+      ]
+    },
+    {
+      "start": 125,
+      "length": 1,
+      "words": [
+        "debt"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 29,
+      "actual_start": 30,
+      "expected": [
+        "russia's"
+      ],
+      "actual": [
+        "rush's"
+      ],
+      "actual_confidence": 0.4045,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 39,
+      "actual_start": 40,
+      "expected": [
+        "combined"
+      ],
+      "actual": [
+        "combine"
+      ],
+      "actual_confidence": 0.7657,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 125,
+      "actual_start": 126,
+      "expected": [
+        "debt"
+      ],
+      "actual": [
+        "that"
+      ],
+      "actual_confidence": 0.177,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 1,
+      "actual_start": 1,
+      "expected": [],
+      "actual": [
+        "to"
+      ],
+      "actual_confidence": 0.9541
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "from 2022 to onward sharp inflation occurred across the world energy prices food housing the price of everything rose considerably the causes were multiple supply chain disruption Due to the pandemic rush's invasion of Ukraine Large fiscal spending by governments These combine to create a tremendous rise in prices In response, central banks raised interest rates The borrowing cost for businesses and households rose And consumption and investment cooled Many countries stood at the edge of recession The pain of rising prices is not equal Wealthy households hold assets and are relatively protected But for low-income families, food and utility costs become a burden that presses on daily life The national deficit has also grown Social security expenses swell And tax revenue alone cannot cover them That becomes an obligation to future generations The challenge of the economy cannot be solved by one country alone In our globalized age, international coordination is the foundation of a sustainable economy",
+  "segments": [
+    {
+      "start": 9.8,
+      "end": 19.06,
+      "text": "from 2022 to onward sharp inflation occurred across the world energy prices food housing"
+    },
+    {
+      "start": 19.06,
+      "end": 25.6,
+      "text": "the price of everything rose considerably the causes were multiple supply chain disruption"
+    },
+    {
+      "start": 25.6,
+      "end": 28.76,
+      "text": "Due to the pandemic rush's invasion of Ukraine"
+    },
+    {
+      "start": 28.76,
+      "end": 31.48,
+      "text": "Large fiscal spending by governments"
+    },
+    {
+      "start": 31.48,
+      "end": 35.76,
+      "text": "These combine to create a tremendous rise in prices"
+    },
+    {
+      "start": 35.76,
+      "end": 39.18,
+      "text": "In response, central banks raised interest rates"
+    },
+    {
+      "start": 39.18,
+      "end": 42.52,
+      "text": "The borrowing cost for businesses and households rose"
+    },
+    {
+      "start": 42.52,
+      "end": 46.1,
+      "text": "And consumption and investment cooled"
+    },
+    {
+      "start": 46.1,
+      "end": 49.38,
+      "text": "Many countries stood at the edge of recession"
+    },
+    {
+      "start": 51.6,
+      "end": 54.86,
+      "text": "The pain of rising prices is not equal"
+    },
+    {
+      "start": 55.6,
+      "end": 60.46,
+      "text": "Wealthy households hold assets and are relatively protected"
+    },
+    {
+      "start": 60.46,
+      "end": 68.62,
+      "text": "But for low-income families, food and utility costs become a burden that presses on daily life"
+    },
+    {
+      "start": 68.62,
+      "end": 71.6,
+      "text": "The national deficit has also grown"
+    },
+    {
+      "start": 71.6,
+      "end": 74.58,
+      "text": "Social security expenses swell"
+    },
+    {
+      "start": 74.58,
+      "end": 79.5,
+      "text": "And tax revenue alone cannot cover them"
+    },
+    {
+      "start": 79.5,
+      "end": 85.28,
+      "text": "That becomes an obligation to future generations"
+    },
+    {
+      "start": 85.28,
+      "end": 91.58,
+      "text": "The challenge of the economy cannot be solved by one country alone"
+    },
+    {
+      "start": 93.5,
+      "end": 101.96,
+      "text": "In our globalized age, international coordination is the foundation of a sustainable economy"
+    }
+  ]
+}

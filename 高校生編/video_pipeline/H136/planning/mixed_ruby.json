@@ -1,0 +1,1516 @@
+{
+  "lesson": "H136",
+  "title_ja": "政治と金",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 18,
+  "canonical_target_lines": 11,
+  "mixed_lines": 6,
+  "japanese_only_lines": 12,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 0.0,
+      "end": 14.8,
+      "english": "The relationship between politics and money has been, across time and place, an enduring issue of democracy.",
+      "japanese": "政治とお金の関係は、時代や場所を超えて、民主主義の永遠の課題となっています。",
+      "mixed": "政治とお金の関係は、時代や場所を超えて、民主主義の永遠の課題となっています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "政治とお金の関係は、時代や場所を超えて、民主主義の永遠の課題となっています。",
+          "parts": [
+            {
+              "text": "政治",
+              "ruby": "せいじ"
+            },
+            {
+              "text": "とお",
+              "ruby": ""
+            },
+            {
+              "text": "金",
+              "ruby": "かね"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "関係",
+              "ruby": "かんけい"
+            },
+            {
+              "text": "は、",
+              "ruby": ""
+            },
+            {
+              "text": "時代",
+              "ruby": "じだい"
+            },
+            {
+              "text": "や",
+              "ruby": ""
+            },
+            {
+              "text": "場所",
+              "ruby": "ばしょ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "超",
+              "ruby": "こ"
+            },
+            {
+              "text": "えて、",
+              "ruby": ""
+            },
+            {
+              "text": "民主",
+              "ruby": "みんしゅ"
+            },
+            {
+              "text": "主義",
+              "ruby": "しゅぎ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "永遠",
+              "ruby": "えいえん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "課題",
+              "ruby": "かだい"
+            },
+            {
+              "text": "となっています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 2,
+      "start": 15.6,
+      "end": 20.2,
+      "english": "A politician swears to represent the will of the voters.",
+      "japanese": "政治家は有権者の意思を代表することを誓います。",
+      "mixed": "politician は voters の意思を代表することを swears。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "politician",
+          "ruby": "政治家"
+        },
+        {
+          "type": "ja",
+          "text": " は ",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "voters",
+          "ruby": "有権者"
+        },
+        {
+          "type": "ja",
+          "text": " の意思を代表することを ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "意思",
+              "ruby": "いし"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "代表",
+              "ruby": "だいひょう"
+            },
+            {
+              "text": "することを",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "swears",
+          "ruby": "誓います"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "politician",
+          "canonical_word": "politician",
+          "meaning": "政治家"
+        },
+        {
+          "english": "swears",
+          "canonical_word": "swear",
+          "meaning": "誓う"
+        },
+        {
+          "english": "voters",
+          "canonical_word": "voter",
+          "meaning": "有権者"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "politician",
+          "reading": "政治家",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "politician",
+          "canonical_meaning": "政治家"
+        },
+        {
+          "english": "voters",
+          "reading": "有権者",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "voter",
+          "canonical_meaning": "有権者"
+        },
+        {
+          "english": "swears",
+          "reading": "誓います",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "swear",
+          "canonical_meaning": "誓う"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 3,
+      "start": 20.2,
+      "end": 25.26,
+      "english": "But in reality, they are bound by the source of campaign funds.",
+      "japanese": "しかし実際には、選挙資金の財源に縛られている。",
+      "mixed": "しかし実際には、選挙資金の財源に縛られている。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "しかし実際には、選挙資金の財源に縛られている。",
+          "parts": [
+            {
+              "text": "しかし",
+              "ruby": ""
+            },
+            {
+              "text": "実際",
+              "ruby": "じっさい"
+            },
+            {
+              "text": "には、",
+              "ruby": ""
+            },
+            {
+              "text": "選挙",
+              "ruby": "せんきょ"
+            },
+            {
+              "text": "資金",
+              "ruby": "しきん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "財源",
+              "ruby": "ざいげん"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "縛",
+              "ruby": "しば"
+            },
+            {
+              "text": "られている。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "source",
+          "canonical_word": "source",
+          "meaning": "源"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 4,
+      "start": 25.26,
+      "end": 33.24,
+      "english": "Whether Democrat or Republican, political activity costs large sums of money.",
+      "japanese": "民主党であろうと共和党であろうと、政治活動には多額の費用がかかります。",
+      "mixed": "民主党であろうと共和党であろうと、政治活動には多額の費用がかかります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "民主党であろうと共和党であろうと、政治活動には多額の費用がかかります。",
+          "parts": [
+            {
+              "text": "民主",
+              "ruby": "みんしゅ"
+            },
+            {
+              "text": "党",
+              "ruby": "とう"
+            },
+            {
+              "text": "であろうと",
+              "ruby": ""
+            },
+            {
+              "text": "共和",
+              "ruby": "きょうわ"
+            },
+            {
+              "text": "党",
+              "ruby": "とう"
+            },
+            {
+              "text": "であろうと、",
+              "ruby": ""
+            },
+            {
+              "text": "政治",
+              "ruby": "せいじ"
+            },
+            {
+              "text": "活動",
+              "ruby": "かつどう"
+            },
+            {
+              "text": "には",
+              "ruby": ""
+            },
+            {
+              "text": "多額",
+              "ruby": "たがく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "費用",
+              "ruby": "ひよう"
+            },
+            {
+              "text": "がかかります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "Democrat",
+          "canonical_word": "Democrat",
+          "meaning": "民主主義者"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 5,
+      "start": 33.86,
+      "end": 36.293,
+      "english": "Campaigns, advertising, staff salaries.",
+      "japanese": "キャンペーン、広告、スタッフの給与。",
+      "mixed": "キャンペーン、広告、スタッフの給与。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "キャンペーン、広告、スタッフの給与。",
+          "parts": [
+            {
+              "text": "キャンペーン、",
+              "ruby": ""
+            },
+            {
+              "text": "広告",
+              "ruby": "こうこく"
+            },
+            {
+              "text": "、スタッフの",
+              "ruby": ""
+            },
+            {
+              "text": "給与",
+              "ruby": "きゅうよ"
+            },
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 6,
+      "start": 36.293,
+      "end": 41.16,
+      "english": "Where to obtain these funds becomes the issue.",
+      "japanese": "これらの資金をどこから調達するかが問題となる。",
+      "mixed": "これらの資金をどこから調達するかが問題となる。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "これらの資金をどこから調達するかが問題となる。",
+          "parts": [
+            {
+              "text": "これらの",
+              "ruby": ""
+            },
+            {
+              "text": "資金",
+              "ruby": "しきん"
+            },
+            {
+              "text": "をどこから",
+              "ruby": ""
+            },
+            {
+              "text": "調達",
+              "ruby": "ちょうたつ"
+            },
+            {
+              "text": "するかが",
+              "ruby": ""
+            },
+            {
+              "text": "問題",
+              "ruby": "もんだい"
+            },
+            {
+              "text": "となる。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "obtain",
+          "canonical_word": "obtain",
+          "meaning": "得る"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 7,
+      "start": 41.86,
+      "end": 46.32,
+      "english": "Corporate donations have long been a subject of dispute.",
+      "japanese": "企業献金は長い間議論の対象となってきた。",
+      "mixed": "企業献金は長い間議論の対象となってきた。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "企業献金は長い間議論の対象となってきた。",
+          "parts": [
+            {
+              "text": "企業",
+              "ruby": "きぎょう"
+            },
+            {
+              "text": "献金",
+              "ruby": "けんきん"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "長",
+              "ruby": "なが"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "間",
+              "ruby": "あいだ"
+            },
+            {
+              "text": "議論",
+              "ruby": "ぎろん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "対象",
+              "ruby": "たいしょう"
+            },
+            {
+              "text": "となってきた。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 8,
+      "start": 46.32,
+      "end": 55.26,
+      "english": "If a company donates money, it expects policies favorable to that company.",
+      "japanese": "企業がお金を寄付すると、その企業に有利な政策が期待されます。",
+      "mixed": "企業がお金を寄付すると、その企業に有利な政策が期待されます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "企業がお金を寄付すると、その企業に有利な政策が期待されます。",
+          "parts": [
+            {
+              "text": "企業",
+              "ruby": "きぎょう"
+            },
+            {
+              "text": "がお",
+              "ruby": ""
+            },
+            {
+              "text": "金",
+              "ruby": "かね"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "寄付",
+              "ruby": "きふ"
+            },
+            {
+              "text": "すると、その",
+              "ruby": ""
+            },
+            {
+              "text": "企業",
+              "ruby": "きぎょう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "有利",
+              "ruby": "ゆうり"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "政策",
+              "ruby": "せいさく"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "期待",
+              "ruby": "きたい"
+            },
+            {
+              "text": "されます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 9,
+      "start": 56.84,
+      "end": 62.66,
+      "english": "Corporate support may therefore carry an implied expectation.",
+      "japanese": "したがって、企業のサポートには暗黙の期待が含まれている可能性があります。",
+      "mixed": "したがって、企業のサポートには暗黙の期待が含まれている可能性があります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "したがって、企業のサポートには暗黙の期待が含まれている可能性があります。",
+          "parts": [
+            {
+              "text": "したがって、",
+              "ruby": ""
+            },
+            {
+              "text": "企業",
+              "ruby": "きぎょう"
+            },
+            {
+              "text": "のサポートには",
+              "ruby": ""
+            },
+            {
+              "text": "暗黙",
+              "ruby": "あんもく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "期待",
+              "ruby": "きたい"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "含",
+              "ruby": "ふく"
+            },
+            {
+              "text": "まれている",
+              "ruby": ""
+            },
+            {
+              "text": "可能",
+              "ruby": "かのう"
+            },
+            {
+              "text": "性",
+              "ruby": "せい"
+            },
+            {
+              "text": "があります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 10,
+      "start": 62.66,
+      "end": 68.4,
+      "english": "Cases of corruption and bribery have brought down many ministers and lawmakers.",
+      "japanese": "汚職と贈収賄事件により、多くの閣僚や議員が失脚した。",
+      "mixed": "汚職と贈収賄事件により、多くの閣僚や議員が失脚した。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "汚職と贈収賄事件により、多くの閣僚や議員が失脚した。",
+          "parts": [
+            {
+              "text": "汚職",
+              "ruby": "おしょく"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "贈収賄",
+              "ruby": "ぞうしゅうわい"
+            },
+            {
+              "text": "事件",
+              "ruby": "じけん"
+            },
+            {
+              "text": "により、",
+              "ruby": ""
+            },
+            {
+              "text": "多",
+              "ruby": "おお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "閣僚",
+              "ruby": "かくりょう"
+            },
+            {
+              "text": "や",
+              "ruby": ""
+            },
+            {
+              "text": "議員",
+              "ruby": "ぎいん"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "失脚",
+              "ruby": "しっきゃく"
+            },
+            {
+              "text": "した。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "ministers",
+          "canonical_word": "minister",
+          "meaning": "大臣"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 11,
+      "start": 68.4,
+      "end": 74.16,
+      "english": "The anger of the public demands strict punishment for corrupt politicians.",
+      "japanese": "国民の怒りは腐敗した政治家に対する厳罰を求めている。",
+      "mixed": "国民の anger は腐敗した politicians に対する厳罰を求めている。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "国民の ",
+          "parts": [
+            {
+              "text": "国民",
+              "ruby": "こくみん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "anger",
+          "ruby": "怒り"
+        },
+        {
+          "type": "ja",
+          "text": " は腐敗した ",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "腐敗",
+              "ruby": "ふはい"
+            },
+            {
+              "text": "した",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "politicians",
+          "ruby": "政治家"
+        },
+        {
+          "type": "ja",
+          "text": " に対する厳罰を求めている。",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "対",
+              "ruby": "たい"
+            },
+            {
+              "text": "する",
+              "ruby": ""
+            },
+            {
+              "text": "厳罰",
+              "ruby": "げんばつ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "求",
+              "ruby": "もと"
+            },
+            {
+              "text": "めている。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "anger",
+          "canonical_word": "anger",
+          "meaning": "怒り"
+        },
+        {
+          "english": "punishment",
+          "canonical_word": "punishment",
+          "meaning": "刑罰"
+        },
+        {
+          "english": "politicians",
+          "canonical_word": "politician",
+          "meaning": "政治家"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "anger",
+          "reading": "怒り",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "anger",
+          "canonical_meaning": "怒り"
+        },
+        {
+          "english": "politicians",
+          "reading": "政治家",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "politician",
+          "canonical_meaning": "政治家"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 12,
+      "start": 74.16,
+      "end": 78.72,
+      "english": "Countries implement political fund laws.",
+      "japanese": "各国は政治資金法を施行します。",
+      "mixed": "各国は政治資金法を施行します。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "各国は政治資金法を施行します。",
+          "parts": [
+            {
+              "text": "各国",
+              "ruby": "かっこく"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "政治",
+              "ruby": "せいじ"
+            },
+            {
+              "text": "資金",
+              "ruby": "しきん"
+            },
+            {
+              "text": "法",
+              "ruby": "ほう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "施行",
+              "ruby": "しこう"
+            },
+            {
+              "text": "します。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "implement",
+          "canonical_word": "implement",
+          "meaning": "実行する"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 13,
+      "start": 78.72,
+      "end": 86.62,
+      "english": "A maximum ceiling on donations, the duty of disclosure, examination of how money is spent.",
+      "japanese": "寄付金の上限、開示義務、資金使途の調査。",
+      "mixed": "寄付金の上限、開示義務、資金使途の investigator。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "寄付金の上限、開示義務、資金使途の ",
+          "parts": [
+            {
+              "text": "寄付",
+              "ruby": "きふ"
+            },
+            {
+              "text": "金",
+              "ruby": "きん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "上限",
+              "ruby": "じょうげん"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "開示",
+              "ruby": "かいじ"
+            },
+            {
+              "text": "義務",
+              "ruby": "ぎむ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "資金",
+              "ruby": "しきん"
+            },
+            {
+              "text": "使途",
+              "ruby": "しと"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "investigator",
+          "ruby": "調査"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "maximum",
+          "canonical_word": "maximum",
+          "meaning": "最大限"
+        },
+        {
+          "english": "examination",
+          "canonical_word": "examination",
+          "meaning": "検査"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "investigator",
+          "reading": "調査",
+          "source": "canonical_new_word_translation_morph",
+          "canonical_word": "investigator",
+          "canonical_meaning": "調査員"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 14,
+      "start": 87.16,
+      "end": 92.96,
+      "english": "But methods that circumvent the regulatory net keep being developed.",
+      "japanese": "しかし、規制の網を回避する方法は開発され続けています。",
+      "mixed": "しかし、規制の網を回避する方法は開発され続けています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "しかし、規制の網を回避する方法は開発され続けています。",
+          "parts": [
+            {
+              "text": "しかし、",
+              "ruby": ""
+            },
+            {
+              "text": "規制",
+              "ruby": "きせい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "網",
+              "ruby": "あみ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "回避",
+              "ruby": "かいひ"
+            },
+            {
+              "text": "する",
+              "ruby": ""
+            },
+            {
+              "text": "方法",
+              "ruby": "ほうほう"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "開発",
+              "ruby": "かいはつ"
+            },
+            {
+              "text": "され",
+              "ruby": ""
+            },
+            {
+              "text": "続",
+              "ruby": "つづ"
+            },
+            {
+              "text": "けています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 15,
+      "start": 92.96,
+      "end": 100.04,
+      "english": "Political funding organizations and fundraising events can create many loopholes.",
+      "japanese": "政治資金団体や募金イベントは多くの抜け穴を生み出す可能性があります。",
+      "mixed": "政治資金団体や募金イベントは多くの抜け穴を生み出す可能性があります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "政治資金団体や募金イベントは多くの抜け穴を生み出す可能性があります。",
+          "parts": [
+            {
+              "text": "政治",
+              "ruby": "せいじ"
+            },
+            {
+              "text": "資金",
+              "ruby": "しきん"
+            },
+            {
+              "text": "団体",
+              "ruby": "だんたい"
+            },
+            {
+              "text": "や",
+              "ruby": ""
+            },
+            {
+              "text": "募金",
+              "ruby": "ぼきん"
+            },
+            {
+              "text": "イベントは",
+              "ruby": ""
+            },
+            {
+              "text": "多",
+              "ruby": "おお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "抜け穴",
+              "ruby": "ぬけあな"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "生み出",
+              "ruby": "うみだ"
+            },
+            {
+              "text": "す",
+              "ruby": ""
+            },
+            {
+              "text": "可能",
+              "ruby": "かのう"
+            },
+            {
+              "text": "性",
+              "ruby": "せい"
+            },
+            {
+              "text": "があります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 16,
+      "start": 100.04,
+      "end": 109.04,
+      "english": "To ensure true democracy, the setting up of institutions alone is inadequate.",
+      "japanese": "真の民主主義を確保するには、制度の設立だけでは不十分です。",
+      "mixed": "真の民主主義を ensure には、制度の設立だけでは不 inadequate です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "真の民主主義を ",
+          "parts": [
+            {
+              "text": "真",
+              "ruby": "しん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "民主",
+              "ruby": "みんしゅ"
+            },
+            {
+              "text": "主義",
+              "ruby": "しゅぎ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "ensure",
+          "ruby": "確保する"
+        },
+        {
+          "type": "ja",
+          "text": " には、制度の設立だけでは不 ",
+          "parts": [
+            {
+              "text": "には、",
+              "ruby": ""
+            },
+            {
+              "text": "制度",
+              "ruby": "せいど"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "設立",
+              "ruby": "せつりつ"
+            },
+            {
+              "text": "だけでは",
+              "ruby": ""
+            },
+            {
+              "text": "不",
+              "ruby": "ふ"
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "inadequate",
+          "ruby": "十分です"
+        },
+        {
+          "type": "ja",
+          "text": " です",
+          "parts": [
+            {
+              "text": "です",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "ensure",
+          "canonical_word": "ensure",
+          "meaning": "確保する"
+        },
+        {
+          "english": "inadequate",
+          "canonical_word": "inadequate",
+          "meaning": "不十分な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "ensure",
+          "reading": "確保する",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "ensure",
+          "canonical_meaning": "確保する"
+        },
+        {
+          "english": "inadequate",
+          "reading": "十分です",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "inadequate",
+          "canonical_meaning": "不十分な"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 17,
+      "start": 111.02,
+      "end": 121.16,
+      "english": "Public scrutiny, investigative reporting of the media, and the involvement of voters are indispensable.",
+      "japanese": "国民の監視、メディアの調査報道、有権者の関与が不可欠である。",
+      "mixed": "国民の監視、メディアの investigator 報道、 voters の involvement が不可欠である。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "国民の監視、メディアの ",
+          "parts": [
+            {
+              "text": "国民",
+              "ruby": "こくみん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "監視",
+              "ruby": "かんし"
+            },
+            {
+              "text": "、メディアの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "investigator",
+          "ruby": "調査"
+        },
+        {
+          "type": "ja",
+          "text": " 報道、 ",
+          "parts": [
+            {
+              "text": "報道",
+              "ruby": "ほうどう"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "voters",
+          "ruby": "有権者"
+        },
+        {
+          "type": "ja",
+          "text": " の ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "involvement",
+          "ruby": "関与"
+        },
+        {
+          "type": "ja",
+          "text": " が不可欠である。",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "不可欠",
+              "ruby": "ふかけつ"
+            },
+            {
+              "text": "である。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "involvement",
+          "canonical_word": "involvement",
+          "meaning": "関与"
+        },
+        {
+          "english": "voters",
+          "canonical_word": "voter",
+          "meaning": "有権者"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "investigator",
+          "reading": "調査",
+          "source": "canonical_new_word_translation_morph",
+          "canonical_word": "investigator",
+          "canonical_meaning": "調査員"
+        },
+        {
+          "english": "voters",
+          "reading": "有権者",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "voter",
+          "canonical_meaning": "有権者"
+        },
+        {
+          "english": "involvement",
+          "reading": "関与",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "involvement",
+          "canonical_meaning": "関与"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 18,
+      "start": 121.16,
+      "end": 135.82,
+      "english": "For a vote to carry meaning, citizens must also accept the responsibility of watching politics closely.",
+      "japanese": "投票に意味を持たせるためには、国民が政治を注意深く監視する責任も負わなければなりません。",
+      "mixed": "vote に意味を持たせるためには、国民が政治を注意深く監視する責任も負わなければなりません。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "vote",
+          "ruby": "投票"
+        },
+        {
+          "type": "ja",
+          "text": " に意味を持たせるためには、国民が政治を注意深く監視する責任も負わなければなりません。",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "意味",
+              "ruby": "いみ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "持",
+              "ruby": "も"
+            },
+            {
+              "text": "たせるためには、",
+              "ruby": ""
+            },
+            {
+              "text": "国民",
+              "ruby": "こくみん"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "政治",
+              "ruby": "せいじ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "注意",
+              "ruby": "ちゅうい"
+            },
+            {
+              "text": "深",
+              "ruby": "ふか"
+            },
+            {
+              "text": "く",
+              "ruby": ""
+            },
+            {
+              "text": "監視",
+              "ruby": "かんし"
+            },
+            {
+              "text": "する",
+              "ruby": ""
+            },
+            {
+              "text": "責任",
+              "ruby": "せきにん"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "負",
+              "ruby": "お"
+            },
+            {
+              "text": "わなければなりません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "vote",
+          "canonical_word": "vote",
+          "meaning": "投票"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "vote",
+          "reading": "投票",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "vote",
+          "canonical_meaning": "投票"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    }
+  ]
+}

@@ -1,0 +1,896 @@
+{
+  "lesson": "H042",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h042_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H042/candidate2-full.mp3",
+  "source_audio_sha256": "eb864a92a503f8b81c0834e310bfcfdc5830a26cf6adb50054a0f3b27478792d",
+  "bpm": 91.36,
+  "exact_word_match": true,
+  "word_count": 132,
+  "line_count": 11,
+  "first_word_start": 10.989,
+  "last_word_end": 99.04,
+  "lines": [
+    {
+      "line": 1,
+      "english": "The Silk Road, from ancient times, connected Asia in the east and Europe in the west.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 10.989,
+          "end": 11.082
+        },
+        {
+          "word": "Silk",
+          "display_index": 1,
+          "start": 11.082,
+          "end": 11.582
+        },
+        {
+          "word": "Road,",
+          "display_index": 2,
+          "start": 11.582,
+          "end": 12.182
+        },
+        {
+          "word": "from",
+          "display_index": 3,
+          "start": 12.182,
+          "end": 12.463
+        },
+        {
+          "word": "ancient",
+          "display_index": 4,
+          "start": 12.463,
+          "end": 13.003
+        },
+        {
+          "word": "times,",
+          "display_index": 5,
+          "start": 13.003,
+          "end": 13.543
+        },
+        {
+          "word": "connected",
+          "display_index": 6,
+          "start": 13.543,
+          "end": 14.323
+        },
+        {
+          "word": "Asia",
+          "display_index": 7,
+          "start": 14.323,
+          "end": 15.043
+        },
+        {
+          "word": "in",
+          "display_index": 8,
+          "start": 15.043,
+          "end": 15.312
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 15.312,
+          "end": 15.583
+        },
+        {
+          "word": "east",
+          "display_index": 10,
+          "start": 15.583,
+          "end": 16.043
+        },
+        {
+          "word": "and",
+          "display_index": 11,
+          "start": 16.043,
+          "end": 16.303
+        },
+        {
+          "word": "Europe",
+          "display_index": 12,
+          "start": 16.303,
+          "end": 17.043
+        },
+        {
+          "word": "in",
+          "display_index": 13,
+          "start": 17.043,
+          "end": 17.296
+        },
+        {
+          "word": "the",
+          "display_index": 14,
+          "start": 17.296,
+          "end": 17.444
+        },
+        {
+          "word": "west.",
+          "display_index": 15,
+          "start": 17.444,
+          "end": 18.944
+        }
+      ],
+      "start": 10.989,
+      "end": 18.944
+    },
+    {
+      "line": 2,
+      "english": "It was not a single road, but a network of many routes.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 21.084,
+          "end": 21.204
+        },
+        {
+          "word": "was",
+          "display_index": 1,
+          "start": 21.204,
+          "end": 21.504
+        },
+        {
+          "word": "not",
+          "display_index": 2,
+          "start": 21.504,
+          "end": 21.982
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 21.982,
+          "end": 22.145
+        },
+        {
+          "word": "single",
+          "display_index": 4,
+          "start": 22.145,
+          "end": 22.825
+        },
+        {
+          "word": "road,",
+          "display_index": 5,
+          "start": 22.825,
+          "end": 23.805
+        },
+        {
+          "word": "but",
+          "display_index": 6,
+          "start": 23.805,
+          "end": 23.981
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 23.981,
+          "end": 24.145
+        },
+        {
+          "word": "network",
+          "display_index": 8,
+          "start": 24.145,
+          "end": 25.165
+        },
+        {
+          "word": "of",
+          "display_index": 9,
+          "start": 25.165,
+          "end": 25.445
+        },
+        {
+          "word": "many",
+          "display_index": 10,
+          "start": 25.445,
+          "end": 25.925
+        },
+        {
+          "word": "routes.",
+          "display_index": 11,
+          "start": 25.925,
+          "end": 26.705
+        }
+      ],
+      "start": 21.084,
+      "end": 26.705
+    },
+    {
+      "line": 3,
+      "english": "Chinese silk, Persian glass, Indian spices, and Roman gold traveled this road by caravan.",
+      "word_timings": [
+        {
+          "word": "Chinese",
+          "display_index": 0,
+          "start": 26.705,
+          "end": 27.366
+        },
+        {
+          "word": "silk,",
+          "display_index": 1,
+          "start": 27.366,
+          "end": 28.026
+        },
+        {
+          "word": "Persian",
+          "display_index": 2,
+          "start": 28.026,
+          "end": 28.646
+        },
+        {
+          "word": "glass,",
+          "display_index": 3,
+          "start": 28.646,
+          "end": 29.246
+        },
+        {
+          "word": "Indian",
+          "display_index": 4,
+          "start": 29.246,
+          "end": 29.886
+        },
+        {
+          "word": "spices,",
+          "display_index": 5,
+          "start": 29.886,
+          "end": 31.687
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 31.687,
+          "end": 31.947
+        },
+        {
+          "word": "Roman",
+          "display_index": 7,
+          "start": 31.947,
+          "end": 32.467
+        },
+        {
+          "word": "gold",
+          "display_index": 8,
+          "start": 32.467,
+          "end": 33.087
+        },
+        {
+          "word": "traveled",
+          "display_index": 9,
+          "start": 33.087,
+          "end": 33.627
+        },
+        {
+          "word": "this",
+          "display_index": 10,
+          "start": 33.627,
+          "end": 33.927
+        },
+        {
+          "word": "road",
+          "display_index": 11,
+          "start": 33.927,
+          "end": 34.287
+        },
+        {
+          "word": "by",
+          "display_index": 12,
+          "start": 34.287,
+          "end": 34.567
+        },
+        {
+          "word": "caravan.",
+          "display_index": 13,
+          "start": 34.567,
+          "end": 36.067
+        }
+      ],
+      "start": 26.705,
+      "end": 36.067
+    },
+    {
+      "line": 4,
+      "english": "Merchants loaded their camels and crossed deserts and mountains.",
+      "word_timings": [
+        {
+          "word": "Merchants",
+          "display_index": 0,
+          "start": 37.548,
+          "end": 38.548
+        },
+        {
+          "word": "loaded",
+          "display_index": 1,
+          "start": 38.548,
+          "end": 38.868
+        },
+        {
+          "word": "their",
+          "display_index": 2,
+          "start": 38.868,
+          "end": 39.148
+        },
+        {
+          "word": "camels",
+          "display_index": 3,
+          "start": 39.148,
+          "end": 39.888
+        },
+        {
+          "word": "and",
+          "display_index": 4,
+          "start": 39.888,
+          "end": 40.108
+        },
+        {
+          "word": "crossed",
+          "display_index": 5,
+          "start": 40.108,
+          "end": 40.848
+        },
+        {
+          "word": "deserts",
+          "display_index": 6,
+          "start": 40.848,
+          "end": 41.569
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 41.569,
+          "end": 41.789
+        },
+        {
+          "word": "mountains.",
+          "display_index": 8,
+          "start": 41.789,
+          "end": 42.489
+        }
+      ],
+      "start": 37.548,
+      "end": 42.489
+    },
+    {
+      "line": 5,
+      "english": "But it was not only goods that traveled this road.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 42.489,
+          "end": 42.729
+        },
+        {
+          "word": "it",
+          "display_index": 1,
+          "start": 42.729,
+          "end": 43.449
+        },
+        {
+          "word": "was",
+          "display_index": 2,
+          "start": 43.449,
+          "end": 43.769
+        },
+        {
+          "word": "not",
+          "display_index": 3,
+          "start": 43.769,
+          "end": 44.069
+        },
+        {
+          "word": "only",
+          "display_index": 4,
+          "start": 44.069,
+          "end": 44.469
+        },
+        {
+          "word": "goods",
+          "display_index": 5,
+          "start": 44.469,
+          "end": 45.049
+        },
+        {
+          "word": "that",
+          "display_index": 6,
+          "start": 45.049,
+          "end": 45.509
+        },
+        {
+          "word": "traveled",
+          "display_index": 7,
+          "start": 45.509,
+          "end": 46.41
+        },
+        {
+          "word": "this",
+          "display_index": 8,
+          "start": 46.41,
+          "end": 46.75
+        },
+        {
+          "word": "road.",
+          "display_index": 9,
+          "start": 46.75,
+          "end": 47.91
+        }
+      ],
+      "start": 42.489,
+      "end": 47.91
+    },
+    {
+      "line": 6,
+      "english": "Religion also spread along this path.",
+      "word_timings": [
+        {
+          "word": "Religion",
+          "display_index": 0,
+          "start": 48.21,
+          "end": 48.93
+        },
+        {
+          "word": "also",
+          "display_index": 1,
+          "start": 48.93,
+          "end": 49.41
+        },
+        {
+          "word": "spread",
+          "display_index": 2,
+          "start": 49.41,
+          "end": 50.05
+        },
+        {
+          "word": "along",
+          "display_index": 3,
+          "start": 50.05,
+          "end": 50.51
+        },
+        {
+          "word": "this",
+          "display_index": 4,
+          "start": 50.51,
+          "end": 50.81
+        },
+        {
+          "word": "path.",
+          "display_index": 5,
+          "start": 50.81,
+          "end": 52.31
+        }
+      ],
+      "start": 48.21,
+      "end": 52.31
+    },
+    {
+      "line": 7,
+      "english": "Buddhism spread from India to China; Islam spread from Arabia into Central Asia.",
+      "word_timings": [
+        {
+          "word": "Buddhism",
+          "display_index": 0,
+          "start": 52.611,
+          "end": 53.451
+        },
+        {
+          "word": "spread",
+          "display_index": 1,
+          "start": 53.451,
+          "end": 53.891
+        },
+        {
+          "word": "from",
+          "display_index": 2,
+          "start": 53.891,
+          "end": 54.331
+        },
+        {
+          "word": "India",
+          "display_index": 3,
+          "start": 54.331,
+          "end": 55.214
+        },
+        {
+          "word": "to",
+          "display_index": 4,
+          "start": 55.214,
+          "end": 55.391
+        },
+        {
+          "word": "China;",
+          "display_index": 5,
+          "start": 55.391,
+          "end": 56.592
+        },
+        {
+          "word": "Islam",
+          "display_index": 6,
+          "start": 56.592,
+          "end": 57.392
+        },
+        {
+          "word": "spread",
+          "display_index": 7,
+          "start": 57.392,
+          "end": 58.152
+        },
+        {
+          "word": "from",
+          "display_index": 8,
+          "start": 58.152,
+          "end": 58.592
+        },
+        {
+          "word": "Arabia",
+          "display_index": 9,
+          "start": 58.592,
+          "end": 59.572
+        },
+        {
+          "word": "into",
+          "display_index": 10,
+          "start": 59.572,
+          "end": 60.132
+        },
+        {
+          "word": "Central",
+          "display_index": 11,
+          "start": 60.132,
+          "end": 60.772
+        },
+        {
+          "word": "Asia.",
+          "display_index": 12,
+          "start": 60.772,
+          "end": 62.272
+        }
+      ],
+      "start": 52.611,
+      "end": 62.272
+    },
+    {
+      "line": 8,
+      "english": "Language and art were also exchanged.",
+      "word_timings": [
+        {
+          "word": "Language",
+          "display_index": 0,
+          "start": 62.793,
+          "end": 63.833
+        },
+        {
+          "word": "and",
+          "display_index": 1,
+          "start": 63.833,
+          "end": 64.193
+        },
+        {
+          "word": "art",
+          "display_index": 2,
+          "start": 64.193,
+          "end": 65.113
+        },
+        {
+          "word": "were",
+          "display_index": 3,
+          "start": 65.113,
+          "end": 65.513
+        },
+        {
+          "word": "also",
+          "display_index": 4,
+          "start": 65.513,
+          "end": 66.174
+        },
+        {
+          "word": "exchanged.",
+          "display_index": 5,
+          "start": 66.174,
+          "end": 67.674
+        }
+      ],
+      "start": 62.793,
+      "end": 67.674
+    },
+    {
+      "line": 9,
+      "english": "The Chinese way of making paper traveled westward and later contributed to learning and culture in Europe.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 68.596,
+          "end": 68.714
+        },
+        {
+          "word": "Chinese",
+          "display_index": 1,
+          "start": 68.714,
+          "end": 69.414
+        },
+        {
+          "word": "way",
+          "display_index": 2,
+          "start": 69.414,
+          "end": 69.934
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 69.934,
+          "end": 70.094
+        },
+        {
+          "word": "making",
+          "display_index": 4,
+          "start": 70.094,
+          "end": 70.695
+        },
+        {
+          "word": "paper",
+          "display_index": 5,
+          "start": 70.695,
+          "end": 71.175
+        },
+        {
+          "word": "traveled",
+          "display_index": 6,
+          "start": 71.175,
+          "end": 71.855
+        },
+        {
+          "word": "westward",
+          "display_index": 7,
+          "start": 71.855,
+          "end": 73.075
+        },
+        {
+          "word": "and",
+          "display_index": 8,
+          "start": 73.075,
+          "end": 73.315
+        },
+        {
+          "word": "later",
+          "display_index": 9,
+          "start": 73.315,
+          "end": 74.295
+        },
+        {
+          "word": "contributed",
+          "display_index": 10,
+          "start": 74.295,
+          "end": 75.452
+        },
+        {
+          "word": "to",
+          "display_index": 11,
+          "start": 75.452,
+          "end": 75.796
+        },
+        {
+          "word": "learning",
+          "display_index": 12,
+          "start": 75.796,
+          "end": 76.996
+        },
+        {
+          "word": "and",
+          "display_index": 13,
+          "start": 76.996,
+          "end": 77.256
+        },
+        {
+          "word": "culture",
+          "display_index": 14,
+          "start": 77.256,
+          "end": 78.016
+        },
+        {
+          "word": "in",
+          "display_index": 15,
+          "start": 78.016,
+          "end": 78.256
+        },
+        {
+          "word": "Europe.",
+          "display_index": 16,
+          "start": 78.256,
+          "end": 79.472
+        }
+      ],
+      "start": 68.596,
+      "end": 79.472
+    },
+    {
+      "line": 10,
+      "english": "The Silk Road was one of history's great networks of exchange.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 79.772,
+          "end": 79.936
+        },
+        {
+          "word": "Silk",
+          "display_index": 1,
+          "start": 79.936,
+          "end": 80.396
+        },
+        {
+          "word": "Road",
+          "display_index": 2,
+          "start": 80.396,
+          "end": 80.877
+        },
+        {
+          "word": "was",
+          "display_index": 3,
+          "start": 80.877,
+          "end": 81.277
+        },
+        {
+          "word": "one",
+          "display_index": 4,
+          "start": 81.277,
+          "end": 81.477
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 81.477,
+          "end": 81.737
+        },
+        {
+          "word": "history's",
+          "display_index": 6,
+          "start": 81.737,
+          "end": 82.857
+        },
+        {
+          "word": "great",
+          "display_index": 7,
+          "start": 82.857,
+          "end": 83.217
+        },
+        {
+          "word": "networks",
+          "display_index": 8,
+          "start": 83.217,
+          "end": 84.277
+        },
+        {
+          "word": "of",
+          "display_index": 9,
+          "start": 84.277,
+          "end": 84.597
+        },
+        {
+          "word": "exchange.",
+          "display_index": 10,
+          "start": 84.597,
+          "end": 86.097
+        }
+      ],
+      "start": 79.772,
+      "end": 86.097
+    },
+    {
+      "line": 11,
+      "english": "The words carried by the desert wind, across many centuries, still quietly support the roots of many civilizations.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 87.346,
+          "end": 87.458
+        },
+        {
+          "word": "words",
+          "display_index": 1,
+          "start": 87.458,
+          "end": 87.798
+        },
+        {
+          "word": "carried",
+          "display_index": 2,
+          "start": 87.798,
+          "end": 88.338
+        },
+        {
+          "word": "by",
+          "display_index": 3,
+          "start": 88.338,
+          "end": 88.998
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 88.998,
+          "end": 89.118
+        },
+        {
+          "word": "desert",
+          "display_index": 5,
+          "start": 89.118,
+          "end": 89.598
+        },
+        {
+          "word": "wind,",
+          "display_index": 6,
+          "start": 89.598,
+          "end": 90.339
+        },
+        {
+          "word": "across",
+          "display_index": 7,
+          "start": 90.339,
+          "end": 91.119
+        },
+        {
+          "word": "many",
+          "display_index": 8,
+          "start": 91.119,
+          "end": 91.599
+        },
+        {
+          "word": "centuries,",
+          "display_index": 9,
+          "start": 91.599,
+          "end": 93.359
+        },
+        {
+          "word": "still",
+          "display_index": 10,
+          "start": 93.359,
+          "end": 93.719
+        },
+        {
+          "word": "quietly",
+          "display_index": 11,
+          "start": 93.719,
+          "end": 94.959
+        },
+        {
+          "word": "support",
+          "display_index": 12,
+          "start": 94.959,
+          "end": 95.666
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 95.666,
+          "end": 95.746
+        },
+        {
+          "word": "roots",
+          "display_index": 14,
+          "start": 95.72,
+          "end": 96.54
+        },
+        {
+          "word": "of",
+          "display_index": 15,
+          "start": 96.54,
+          "end": 96.8
+        },
+        {
+          "word": "many",
+          "display_index": 16,
+          "start": 96.8,
+          "end": 97.54
+        },
+        {
+          "word": "civilizations.",
+          "display_index": 17,
+          "start": 97.54,
+          "end": 99.04
+        }
+      ],
+      "start": 87.346,
+      "end": 99.04
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

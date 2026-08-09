@@ -1,0 +1,869 @@
+{
+  "lesson": "H006",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h006_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H006/candidate1-full.mp3",
+  "source_audio_sha256": "130c06dd7d40f0d3eca946cac2af1e6d2e210c700ede01bd6296870277c81f48",
+  "bpm": 84.9,
+  "exact_word_match": true,
+  "word_count": 145,
+  "line_count": 16,
+  "first_word_start": 12.422,
+  "last_word_end": 118.959,
+  "lines": [
+    {
+      "line": 1,
+      "english": "It was an autumn afternoon.",
+      "word_timings": [
+        {
+          "word": "It",
+          "start": 12.422,
+          "end": 12.582
+        },
+        {
+          "word": "was",
+          "start": 12.582,
+          "end": 12.962
+        },
+        {
+          "word": "an",
+          "start": 12.962,
+          "end": 13.242
+        },
+        {
+          "word": "autumn",
+          "start": 13.242,
+          "end": 13.862
+        },
+        {
+          "word": "afternoon.",
+          "start": 13.862,
+          "end": 15.362
+        }
+      ],
+      "start": 12.422,
+      "end": 15.362
+    },
+    {
+      "line": 2,
+      "english": "I sat on the porch.",
+      "word_timings": [
+        {
+          "word": "I",
+          "start": 15.991,
+          "end": 16.071
+        },
+        {
+          "word": "sat",
+          "start": 16.063,
+          "end": 16.703
+        },
+        {
+          "word": "on",
+          "start": 16.703,
+          "end": 16.939
+        },
+        {
+          "word": "the",
+          "start": 16.939,
+          "end": 17.103
+        },
+        {
+          "word": "porch.",
+          "start": 17.103,
+          "end": 17.903
+        }
+      ],
+      "start": 15.991,
+      "end": 17.903
+    },
+    {
+      "line": 3,
+      "english": "The breeze felt pleasant, and I observed the trees in the garden swaying slowly.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 18.0,
+          "end": 18.143
+        },
+        {
+          "word": "breeze",
+          "start": 18.143,
+          "end": 18.503
+        },
+        {
+          "word": "felt",
+          "start": 18.503,
+          "end": 18.803
+        },
+        {
+          "word": "pleasant,",
+          "start": 18.803,
+          "end": 19.783
+        },
+        {
+          "word": "and",
+          "start": 19.783,
+          "end": 20.063
+        },
+        {
+          "word": "I",
+          "start": 20.063,
+          "end": 20.143
+        },
+        {
+          "word": "observed",
+          "start": 20.123,
+          "end": 20.649
+        },
+        {
+          "word": "the",
+          "start": 20.649,
+          "end": 20.783
+        },
+        {
+          "word": "trees",
+          "start": 20.783,
+          "end": 21.384
+        },
+        {
+          "word": "in",
+          "start": 21.384,
+          "end": 21.525
+        },
+        {
+          "word": "the",
+          "start": 21.525,
+          "end": 21.664
+        },
+        {
+          "word": "garden",
+          "start": 21.664,
+          "end": 22.304
+        },
+        {
+          "word": "swaying",
+          "start": 22.304,
+          "end": 22.844
+        },
+        {
+          "word": "slowly.",
+          "start": 22.844,
+          "end": 23.844
+        }
+      ],
+      "start": 18.0,
+      "end": 23.844
+    },
+    {
+      "line": 4,
+      "english": "Grandmother made tea and had me hold the cup.",
+      "word_timings": [
+        {
+          "word": "Grandmother",
+          "start": 24.144,
+          "end": 25.004
+        },
+        {
+          "word": "made",
+          "start": 25.004,
+          "end": 25.544
+        },
+        {
+          "word": "tea",
+          "start": 25.544,
+          "end": 26.324
+        },
+        {
+          "word": "and",
+          "start": 26.324,
+          "end": 26.624
+        },
+        {
+          "word": "had",
+          "start": 26.624,
+          "end": 26.964
+        },
+        {
+          "word": "me",
+          "start": 26.964,
+          "end": 27.665
+        },
+        {
+          "word": "hold",
+          "start": 27.665,
+          "end": 28.035
+        },
+        {
+          "word": "the",
+          "start": 28.035,
+          "end": 28.325
+        },
+        {
+          "word": "cup.",
+          "start": 28.325,
+          "end": 29.345
+        }
+      ],
+      "start": 24.144,
+      "end": 29.345
+    },
+    {
+      "line": 5,
+      "english": "She always lets me read any book I like.",
+      "word_timings": [
+        {
+          "word": "She",
+          "start": 29.645,
+          "end": 29.885
+        },
+        {
+          "word": "always",
+          "start": 29.885,
+          "end": 30.245
+        },
+        {
+          "word": "lets",
+          "start": 30.245,
+          "end": 30.525
+        },
+        {
+          "word": "me",
+          "start": 30.525,
+          "end": 30.785
+        },
+        {
+          "word": "read",
+          "start": 30.785,
+          "end": 31.645
+        },
+        {
+          "word": "any",
+          "start": 31.645,
+          "end": 32.085
+        },
+        {
+          "word": "book",
+          "start": 32.085,
+          "end": 32.505
+        },
+        {
+          "word": "I",
+          "start": 32.505,
+          "end": 32.705
+        },
+        {
+          "word": "like.",
+          "start": 32.705,
+          "end": 34.205
+        }
+      ],
+      "start": 29.645,
+      "end": 34.205
+    },
+    {
+      "line": 6,
+      "english": "Today she let me rest as long as I wanted.",
+      "word_timings": [
+        {
+          "word": "Today",
+          "start": 35.646,
+          "end": 36.146
+        },
+        {
+          "word": "she",
+          "start": 36.146,
+          "end": 36.546
+        },
+        {
+          "word": "let",
+          "start": 36.546,
+          "end": 36.786
+        },
+        {
+          "word": "me",
+          "start": 36.786,
+          "end": 37.066
+        },
+        {
+          "word": "rest",
+          "start": 37.066,
+          "end": 37.706
+        },
+        {
+          "word": "as",
+          "start": 37.706,
+          "end": 37.946
+        },
+        {
+          "word": "long",
+          "start": 37.946,
+          "end": 38.446
+        },
+        {
+          "word": "as",
+          "start": 38.446,
+          "end": 39.401
+        },
+        {
+          "word": "I",
+          "start": 39.401,
+          "end": 39.727
+        },
+        {
+          "word": "wanted.",
+          "start": 39.727,
+          "end": 40.887
+        }
+      ],
+      "start": 35.646,
+      "end": 40.887
+    },
+    {
+      "line": 7,
+      "english": "I could see petals drift on the wind.",
+      "word_timings": [
+        {
+          "word": "I",
+          "start": 41.187,
+          "end": 41.287
+        },
+        {
+          "word": "could",
+          "start": 41.287,
+          "end": 41.547
+        },
+        {
+          "word": "see",
+          "start": 41.547,
+          "end": 42.167
+        },
+        {
+          "word": "petals",
+          "start": 42.167,
+          "end": 42.727
+        },
+        {
+          "word": "drift",
+          "start": 42.727,
+          "end": 43.407
+        },
+        {
+          "word": "on",
+          "start": 43.407,
+          "end": 43.639
+        },
+        {
+          "word": "the",
+          "start": 43.639,
+          "end": 43.947
+        },
+        {
+          "word": "wind.",
+          "start": 43.947,
+          "end": 45.447
+        }
+      ],
+      "start": 41.187,
+      "end": 45.447
+    },
+    {
+      "line": 8,
+      "english": "I could hear a distant bird sing beyond the hedge.",
+      "word_timings": [
+        {
+          "word": "I",
+          "start": 46.474,
+          "end": 46.648
+        },
+        {
+          "word": "could",
+          "start": 46.648,
+          "end": 46.968
+        },
+        {
+          "word": "hear",
+          "start": 46.968,
+          "end": 47.515
+        },
+        {
+          "word": "a",
+          "start": 47.515,
+          "end": 47.688
+        },
+        {
+          "word": "distant",
+          "start": 47.688,
+          "end": 48.388
+        },
+        {
+          "word": "bird",
+          "start": 48.388,
+          "end": 49.228
+        },
+        {
+          "word": "sing",
+          "start": 49.228,
+          "end": 49.628
+        },
+        {
+          "word": "beyond",
+          "start": 49.628,
+          "end": 50.712
+        },
+        {
+          "word": "the",
+          "start": 50.712,
+          "end": 50.988
+        },
+        {
+          "word": "hedge.",
+          "start": 50.988,
+          "end": 51.729
+        }
+      ],
+      "start": 46.474,
+      "end": 51.729
+    },
+    {
+      "line": 9,
+      "english": "Close your eyes and allow the wind to carry you, grandmother said gently.",
+      "word_timings": [
+        {
+          "word": "Close",
+          "start": 52.029,
+          "end": 52.482
+        },
+        {
+          "word": "your",
+          "start": 52.482,
+          "end": 52.749
+        },
+        {
+          "word": "eyes",
+          "start": 52.749,
+          "end": 53.209
+        },
+        {
+          "word": "and",
+          "start": 53.209,
+          "end": 53.389
+        },
+        {
+          "word": "allow",
+          "start": 53.389,
+          "end": 53.878
+        },
+        {
+          "word": "the",
+          "start": 53.878,
+          "end": 54.029
+        },
+        {
+          "word": "wind",
+          "start": 54.029,
+          "end": 54.546
+        },
+        {
+          "word": "to",
+          "start": 54.546,
+          "end": 54.729
+        },
+        {
+          "word": "carry",
+          "start": 54.729,
+          "end": 55.316
+        },
+        {
+          "word": "you,",
+          "start": 55.316,
+          "end": 56.629
+        },
+        {
+          "word": "grandmother",
+          "start": 56.629,
+          "end": 57.529
+        },
+        {
+          "word": "said",
+          "start": 57.529,
+          "end": 58.03
+        },
+        {
+          "word": "gently.",
+          "start": 58.03,
+          "end": 59.53
+        }
+      ],
+      "start": 52.029,
+      "end": 59.53
+    },
+    {
+      "line": 10,
+      "english": "Grandfather used to admire the plum tree in our garden.",
+      "word_timings": [
+        {
+          "word": "Grandfather",
+          "start": 61.23,
+          "end": 62.77
+        },
+        {
+          "word": "used",
+          "start": 62.77,
+          "end": 63.062
+        },
+        {
+          "word": "to",
+          "start": 63.062,
+          "end": 63.51
+        },
+        {
+          "word": "admire",
+          "start": 63.51,
+          "end": 65.021
+        },
+        {
+          "word": "the",
+          "start": 65.021,
+          "end": 65.151
+        },
+        {
+          "word": "plum",
+          "start": 65.151,
+          "end": 65.811
+        },
+        {
+          "word": "tree",
+          "start": 65.811,
+          "end": 66.331
+        },
+        {
+          "word": "in",
+          "start": 66.331,
+          "end": 66.731
+        },
+        {
+          "word": "our",
+          "start": 66.731,
+          "end": 67.271
+        },
+        {
+          "word": "garden.",
+          "start": 67.271,
+          "end": 68.771
+        }
+      ],
+      "start": 61.23,
+      "end": 68.771
+    },
+    {
+      "line": 11,
+      "english": "Grandmother often recalled that memory and smiles quietly.",
+      "word_timings": [
+        {
+          "word": "Grandmother",
+          "start": 72.552,
+          "end": 74.112
+        },
+        {
+          "word": "often",
+          "start": 74.112,
+          "end": 74.732
+        },
+        {
+          "word": "recalled",
+          "start": 74.732,
+          "end": 75.732
+        },
+        {
+          "word": "that",
+          "start": 75.732,
+          "end": 76.112
+        },
+        {
+          "word": "memory",
+          "start": 76.112,
+          "end": 77.973
+        },
+        {
+          "word": "and",
+          "start": 77.973,
+          "end": 78.413
+        },
+        {
+          "word": "smiles",
+          "start": 78.413,
+          "end": 79.873
+        },
+        {
+          "word": "quietly.",
+          "start": 79.873,
+          "end": 81.373
+        }
+      ],
+      "start": 72.552,
+      "end": 81.373
+    },
+    {
+      "line": 12,
+      "english": "I sensed that she wanted to encourage me to remember him.",
+      "word_timings": [
+        {
+          "word": "I",
+          "start": 83.037,
+          "end": 83.174
+        },
+        {
+          "word": "sensed",
+          "start": 83.174,
+          "end": 83.854
+        },
+        {
+          "word": "that",
+          "start": 83.854,
+          "end": 84.574
+        },
+        {
+          "word": "she",
+          "start": 84.574,
+          "end": 85.314
+        },
+        {
+          "word": "wanted",
+          "start": 85.314,
+          "end": 85.854
+        },
+        {
+          "word": "to",
+          "start": 85.854,
+          "end": 86.454
+        },
+        {
+          "word": "encourage",
+          "start": 86.454,
+          "end": 87.274
+        },
+        {
+          "word": "me",
+          "start": 87.274,
+          "end": 87.749
+        },
+        {
+          "word": "to",
+          "start": 87.749,
+          "end": 87.974
+        },
+        {
+          "word": "remember",
+          "start": 87.974,
+          "end": 88.815
+        },
+        {
+          "word": "him.",
+          "start": 88.815,
+          "end": 89.515
+        }
+      ],
+      "start": 83.037,
+      "end": 89.515
+    },
+    {
+      "line": 13,
+      "english": "Soon the evening sun painted the roof in gentle tones.",
+      "word_timings": [
+        {
+          "word": "Soon",
+          "start": 89.515,
+          "end": 90.29
+        },
+        {
+          "word": "the",
+          "start": 90.29,
+          "end": 90.715
+        },
+        {
+          "word": "evening",
+          "start": 90.715,
+          "end": 91.975
+        },
+        {
+          "word": "sun",
+          "start": 91.975,
+          "end": 94.115
+        },
+        {
+          "word": "painted",
+          "start": 94.115,
+          "end": 94.833
+        },
+        {
+          "word": "the",
+          "start": 94.833,
+          "end": 95.196
+        },
+        {
+          "word": "roof",
+          "start": 95.196,
+          "end": 95.976
+        },
+        {
+          "word": "in",
+          "start": 95.976,
+          "end": 96.576
+        },
+        {
+          "word": "gentle",
+          "start": 96.576,
+          "end": 97.616
+        },
+        {
+          "word": "tones.",
+          "start": 97.616,
+          "end": 98.983
+        }
+      ],
+      "start": 89.515,
+      "end": 98.983
+    },
+    {
+      "line": 14,
+      "english": "The garden became calm and golden.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 99.283,
+          "end": 99.436
+        },
+        {
+          "word": "garden",
+          "start": 99.436,
+          "end": 100.156
+        },
+        {
+          "word": "became",
+          "start": 100.156,
+          "end": 101.137
+        },
+        {
+          "word": "calm",
+          "start": 101.137,
+          "end": 102.997
+        },
+        {
+          "word": "and",
+          "start": 102.997,
+          "end": 103.357
+        },
+        {
+          "word": "golden.",
+          "start": 103.357,
+          "end": 104.857
+        }
+      ],
+      "start": 99.283,
+      "end": 104.857
+    },
+    {
+      "line": 15,
+      "english": "Grandmother handed me a fresh cup.",
+      "word_timings": [
+        {
+          "word": "Grandmother",
+          "start": 106.818,
+          "end": 107.738
+        },
+        {
+          "word": "handed",
+          "start": 107.738,
+          "end": 108.458
+        },
+        {
+          "word": "me",
+          "start": 108.458,
+          "end": 108.969
+        },
+        {
+          "word": "a",
+          "start": 108.969,
+          "end": 109.238
+        },
+        {
+          "word": "fresh",
+          "start": 109.238,
+          "end": 110.298
+        },
+        {
+          "word": "cup.",
+          "start": 110.298,
+          "end": 111.718
+        }
+      ],
+      "start": 106.818,
+      "end": 111.718
+    },
+    {
+      "line": 16,
+      "english": "I wished she would let me stay on the porch forever.",
+      "word_timings": [
+        {
+          "word": "I",
+          "start": 112.018,
+          "end": 112.158
+        },
+        {
+          "word": "wished",
+          "start": 112.158,
+          "end": 112.778
+        },
+        {
+          "word": "she",
+          "start": 112.778,
+          "end": 113.399
+        },
+        {
+          "word": "would",
+          "start": 113.399,
+          "end": 113.619
+        },
+        {
+          "word": "let",
+          "start": 113.619,
+          "end": 113.899
+        },
+        {
+          "word": "me",
+          "start": 113.899,
+          "end": 114.819
+        },
+        {
+          "word": "stay",
+          "start": 114.819,
+          "end": 116.099
+        },
+        {
+          "word": "on",
+          "start": 116.099,
+          "end": 116.245
+        },
+        {
+          "word": "the",
+          "start": 116.245,
+          "end": 116.399
+        },
+        {
+          "word": "porch",
+          "start": 116.399,
+          "end": 117.459
+        },
+        {
+          "word": "forever.",
+          "start": 117.459,
+          "end": 118.959
+        }
+      ],
+      "start": 112.018,
+      "end": 118.959
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

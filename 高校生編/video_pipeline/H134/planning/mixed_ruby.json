@@ -1,0 +1,1559 @@
+{
+  "lesson": "H134",
+  "title_ja": "双子の娘たち",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 23,
+  "canonical_target_lines": 10,
+  "mixed_lines": 7,
+  "japanese_only_lines": 16,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 12.36,
+      "end": 19.84,
+      "english": "My family is raising eight-year-old twin daughters, Emma and Sophia.",
+      "japanese": "私の家族は8歳の双子の娘、エマとソフィアを育てています。",
+      "mixed": "私の家族は8歳の twin の娘、エマとソフィアを育てています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私の家族は8歳の ",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "は8",
+              "ruby": ""
+            },
+            {
+              "text": "歳",
+              "ruby": "さい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "twin",
+          "ruby": "双子"
+        },
+        {
+          "type": "ja",
+          "text": " の娘、エマとソフィアを育てています。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "娘",
+              "ruby": "むすめ"
+            },
+            {
+              "text": "、エマとソフィアを",
+              "ruby": ""
+            },
+            {
+              "text": "育",
+              "ruby": "そだ"
+            },
+            {
+              "text": "てています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "twin",
+          "canonical_word": "twin",
+          "meaning": "双子"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "twin",
+          "reading": "双子",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "twin",
+          "canonical_meaning": "双子"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 2,
+      "start": 21.68,
+      "end": 28.84,
+      "english": "Their resemblance is striking, but their personalities are characteristically different.",
+      "japanese": "彼らの類似点は顕著ですが、性格は特徴的に異なります。",
+      "mixed": "彼らの similarity 点は顕著ですが、性格は特徴的に異なります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼らの ",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "らの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "similarity",
+          "ruby": "類似"
+        },
+        {
+          "type": "ja",
+          "text": " 点は顕著ですが、性格は特徴的に異なります。",
+          "parts": [
+            {
+              "text": "点",
+              "ruby": "てん"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "顕著",
+              "ruby": "けんちょ"
+            },
+            {
+              "text": "ですが、",
+              "ruby": ""
+            },
+            {
+              "text": "性格",
+              "ruby": "せいかく"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "特徴",
+              "ruby": "とくちょう"
+            },
+            {
+              "text": "的",
+              "ruby": "てき"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "異",
+              "ruby": "こと"
+            },
+            {
+              "text": "なります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [
+        {
+          "english": "similarity",
+          "reading": "類似",
+          "source": "canonical_new_word_translation_morph",
+          "canonical_word": "similarity",
+          "canonical_meaning": "類似性"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 3,
+      "start": 30.78,
+      "end": 37.04,
+      "english": "Emma is logical and thinks about things in an orderly way.",
+      "japanese": "エマは論理的で、物事を順序立てて考えます。",
+      "mixed": "エマは logical 的で、物事を順序立てて考えます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "エマは ",
+          "parts": [
+            {
+              "text": "エマは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "logical",
+          "ruby": "論理"
+        },
+        {
+          "type": "ja",
+          "text": " 的で、物事を順序立てて考えます。",
+          "parts": [
+            {
+              "text": "的",
+              "ruby": "てき"
+            },
+            {
+              "text": "で、",
+              "ruby": ""
+            },
+            {
+              "text": "物事",
+              "ruby": "ものごと"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "順序",
+              "ruby": "じゅんじょ"
+            },
+            {
+              "text": "立",
+              "ruby": "た"
+            },
+            {
+              "text": "てて",
+              "ruby": ""
+            },
+            {
+              "text": "考",
+              "ruby": "かんが"
+            },
+            {
+              "text": "えます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "logical",
+          "canonical_word": "logical",
+          "meaning": "論理的な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "logical",
+          "reading": "論理",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "logical",
+          "canonical_meaning": "論理的な"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 4,
+      "start": 37.04,
+      "end": 47.08,
+      "english": "She is good at math and science, and she often devises puzzles to entertain the family.",
+      "japanese": "彼女は数学と科学が得意で、家族を楽しませるためによくパズルを考案します。",
+      "mixed": "彼女は数学と科学が得意で、家族を楽しませるためによくパズルを devises。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼女は数学と科学が得意で、家族を楽しませるためによくパズルを ",
+          "parts": [
+            {
+              "text": "彼女",
+              "ruby": "かのじょ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "数学",
+              "ruby": "すうがく"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "科学",
+              "ruby": "かがく"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "得意",
+              "ruby": "とくい"
+            },
+            {
+              "text": "で、",
+              "ruby": ""
+            },
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "楽",
+              "ruby": "たの"
+            },
+            {
+              "text": "しませるためによくパズルを",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "devises",
+          "ruby": "考案します"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "devises",
+          "canonical_word": "devise",
+          "meaning": "考案する"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "devises",
+          "reading": "考案します",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "devise",
+          "canonical_meaning": "考案する"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 5,
+      "start": 48.8,
+      "end": 54.0,
+      "english": "Sophia, on the other hand, is sensitive and artistic.",
+      "japanese": "一方、ソフィアは繊細で芸術的です。",
+      "mixed": "一方、ソフィアは繊細で芸術的です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "一方、ソフィアは繊細で芸術的です。",
+          "parts": [
+            {
+              "text": "一方",
+              "ruby": "いっぽう"
+            },
+            {
+              "text": "、ソフィアは",
+              "ruby": ""
+            },
+            {
+              "text": "繊細",
+              "ruby": "せんさい"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "芸術",
+              "ruby": "げいじゅつ"
+            },
+            {
+              "text": "的",
+              "ruby": "てき"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 6,
+      "start": 54.39,
+      "end": 61.99,
+      "english": "She draws, sings, and reads out the stories she has made up to the family.",
+      "japanese": "彼女は絵を描き、歌い、家族に作った物語を読み上げます。",
+      "mixed": "彼女は絵を描き、歌い、家族に作った物語を読み上げます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼女は絵を描き、歌い、家族に作った物語を読み上げます。",
+          "parts": [
+            {
+              "text": "彼女",
+              "ruby": "かのじょ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "絵",
+              "ruby": "え"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "描",
+              "ruby": "えが"
+            },
+            {
+              "text": "き、",
+              "ruby": ""
+            },
+            {
+              "text": "歌",
+              "ruby": "うた"
+            },
+            {
+              "text": "い、",
+              "ruby": ""
+            },
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "作",
+              "ruby": "つく"
+            },
+            {
+              "text": "った",
+              "ruby": ""
+            },
+            {
+              "text": "物語",
+              "ruby": "ものがたり"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "読み上",
+              "ruby": "よみあ"
+            },
+            {
+              "text": "げます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 7,
+      "start": 61.99,
+      "end": 68.77,
+      "english": "Even adults can be astonished at her power of expression.",
+      "japanese": "大人でもその表現力には驚かされます。",
+      "mixed": "大人でもその representation 力には驚かされます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "大人でもその ",
+          "parts": [
+            {
+              "text": "大人",
+              "ruby": "おとな"
+            },
+            {
+              "text": "でもその",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "representation",
+          "ruby": "表現"
+        },
+        {
+          "type": "ja",
+          "text": " 力には驚かされます。",
+          "parts": [
+            {
+              "text": "力",
+              "ruby": "ちから"
+            },
+            {
+              "text": "には",
+              "ruby": ""
+            },
+            {
+              "text": "驚",
+              "ruby": "おどろ"
+            },
+            {
+              "text": "かされます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "astonished",
+          "canonical_word": "astonish",
+          "meaning": "驚かせる"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "representation",
+          "reading": "表現",
+          "source": "canonical_new_word_translation_exact",
+          "canonical_word": "representation",
+          "canonical_meaning": "表現"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 8,
+      "start": 71.29,
+      "end": 82.85,
+      "english": "Genetically, identical twins share nearly the same genes, yet as they grew, each one's personality has become more and more distinct.",
+      "japanese": "遺伝的には、一卵性双生児はほぼ同じ遺伝子を共有していますが、成長するにつれて、それぞれの性格はますます明確になってきます。",
+      "mixed": "遺伝的には、一卵性双生児はほぼ同じ遺伝子を共有していますが、成長するにつれて、それぞれの性格はますます明確になってきます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "遺伝的には、一卵性双生児はほぼ同じ遺伝子を共有していますが、成長するにつれて、それぞれの性格はますます明確になってきます。",
+          "parts": [
+            {
+              "text": "遺伝",
+              "ruby": "いでん"
+            },
+            {
+              "text": "的",
+              "ruby": "てき"
+            },
+            {
+              "text": "には、",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "いっ"
+            },
+            {
+              "text": "卵",
+              "ruby": "らん"
+            },
+            {
+              "text": "性",
+              "ruby": "せい"
+            },
+            {
+              "text": "双生",
+              "ruby": "そうせい"
+            },
+            {
+              "text": "児",
+              "ruby": "じ"
+            },
+            {
+              "text": "はほぼ",
+              "ruby": ""
+            },
+            {
+              "text": "同",
+              "ruby": "おな"
+            },
+            {
+              "text": "じ",
+              "ruby": ""
+            },
+            {
+              "text": "遺伝",
+              "ruby": "いでん"
+            },
+            {
+              "text": "子",
+              "ruby": "し"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "共有",
+              "ruby": "きょうゆう"
+            },
+            {
+              "text": "していますが、",
+              "ruby": ""
+            },
+            {
+              "text": "成長",
+              "ruby": "せいちょう"
+            },
+            {
+              "text": "するにつれて、それぞれの",
+              "ruby": ""
+            },
+            {
+              "text": "性格",
+              "ruby": "せいかく"
+            },
+            {
+              "text": "はますます",
+              "ruby": ""
+            },
+            {
+              "text": "明確",
+              "ruby": "めいかく"
+            },
+            {
+              "text": "になってきます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "identical",
+          "canonical_word": "identical",
+          "meaning": "同一の"
+        },
+        {
+          "english": "twins",
+          "canonical_word": "twin",
+          "meaning": "双子"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 9,
+      "start": 82.85,
+      "end": 90.13,
+      "english": "This provides an interesting reference for studies of nature versus nurture.",
+      "japanese": "これは、自然と養育の研究に興味深い参考資料を提供します。",
+      "mixed": "これは、自然と養育の研究に興味深い参考資料を提供します。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "これは、自然と養育の研究に興味深い参考資料を提供します。",
+          "parts": [
+            {
+              "text": "これは、",
+              "ruby": ""
+            },
+            {
+              "text": "自然",
+              "ruby": "しぜん"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "養育",
+              "ruby": "よういく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "研究",
+              "ruby": "けんきゅう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "興味",
+              "ruby": "きょうみ"
+            },
+            {
+              "text": "深",
+              "ruby": "ふか"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "参考",
+              "ruby": "さんこう"
+            },
+            {
+              "text": "資料",
+              "ruby": "しりょう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "提供",
+              "ruby": "ていきょう"
+            },
+            {
+              "text": "します。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "reference",
+          "canonical_word": "reference",
+          "meaning": "参照"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 10,
+      "start": 90.13,
+      "end": 95.01,
+      "english": "Genes alone do not determine personality.",
+      "japanese": "遺伝子だけで性格が決まるわけではありません。",
+      "mixed": "遺伝子だけで性格が決まるわけではありません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "遺伝子だけで性格が決まるわけではありません。",
+          "parts": [
+            {
+              "text": "遺伝",
+              "ruby": "いでん"
+            },
+            {
+              "text": "子",
+              "ruby": "し"
+            },
+            {
+              "text": "だけで",
+              "ruby": ""
+            },
+            {
+              "text": "性格",
+              "ruby": "せいかく"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "決",
+              "ruby": "き"
+            },
+            {
+              "text": "まるわけではありません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 11,
+      "start": 98.03,
+      "end": 103.67,
+      "english": "Environment, experience, and the person's own choices shape each one.",
+      "japanese": "環境、経験、そしてその人自身の選択がそれぞれを形作ります。",
+      "mixed": "環境、経験、そしてその人自身の選択がそれぞれを形作ります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "環境、経験、そしてその人自身の選択がそれぞれを形作ります。",
+          "parts": [
+            {
+              "text": "環境",
+              "ruby": "かんきょう"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "経験",
+              "ruby": "けいけん"
+            },
+            {
+              "text": "、そしてその",
+              "ruby": ""
+            },
+            {
+              "text": "人",
+              "ruby": "ひと"
+            },
+            {
+              "text": "自身",
+              "ruby": "じしん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "選択",
+              "ruby": "せんたく"
+            },
+            {
+              "text": "がそれぞれを",
+              "ruby": ""
+            },
+            {
+              "text": "形作",
+              "ruby": "かたちづく"
+            },
+            {
+              "text": "ります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 12,
+      "start": 103.67,
+      "end": 109.77,
+      "english": "If even twins differ, of course every human is unique.",
+      "japanese": "たとえ双子でも違ったとしても、当然のことながら、すべての人間はユニークです。",
+      "mixed": "たとえ twins でも違ったとしても、当然のことながら、すべての人間はユニークです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "たとえ ",
+          "parts": [
+            {
+              "text": "たとえ",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "twins",
+          "ruby": "双子"
+        },
+        {
+          "type": "ja",
+          "text": " でも違ったとしても、当然のことながら、すべての人間はユニークです。",
+          "parts": [
+            {
+              "text": "でも",
+              "ruby": ""
+            },
+            {
+              "text": "違",
+              "ruby": "ちが"
+            },
+            {
+              "text": "ったとしても、",
+              "ruby": ""
+            },
+            {
+              "text": "当然",
+              "ruby": "とうぜん"
+            },
+            {
+              "text": "のことながら、すべての",
+              "ruby": ""
+            },
+            {
+              "text": "人間",
+              "ruby": "にんげん"
+            },
+            {
+              "text": "はユニークです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "twins",
+          "canonical_word": "twin",
+          "meaning": "双子"
+        },
+        {
+          "english": "unique",
+          "canonical_word": "unique",
+          "meaning": "独特な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "twins",
+          "reading": "双子",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "twin",
+          "canonical_meaning": "双子"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 13,
+      "start": 109.77,
+      "end": 116.17,
+      "english": "What matters in raising a child is respecting each one's personality.",
+      "japanese": "子育てで大切なのは、一人ひとりの個性を尊重することです。",
+      "mixed": "子育てで大切なのは、一人ひとりの個性を尊重することです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "子育てで大切なのは、一人ひとりの個性を尊重することです。",
+          "parts": [
+            {
+              "text": "子育",
+              "ruby": "こそだ"
+            },
+            {
+              "text": "てで",
+              "ruby": ""
+            },
+            {
+              "text": "大切",
+              "ruby": "たいせつ"
+            },
+            {
+              "text": "なのは、",
+              "ruby": ""
+            },
+            {
+              "text": "一人",
+              "ruby": "ひとり"
+            },
+            {
+              "text": "ひとりの",
+              "ruby": ""
+            },
+            {
+              "text": "個性",
+              "ruby": "こせい"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "尊重",
+              "ruby": "そんちょう"
+            },
+            {
+              "text": "することです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 14,
+      "start": 116.17,
+      "end": 123.01,
+      "english": "Making Emma draw the same picture as Sophia is pointless.",
+      "japanese": "エマにソフィアと同じ絵を描かせても意味がありません。",
+      "mixed": "エマにソフィアと同じ絵を描かせても意味がありません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "エマにソフィアと同じ絵を描かせても意味がありません。",
+          "parts": [
+            {
+              "text": "エマにソフィアと",
+              "ruby": ""
+            },
+            {
+              "text": "同",
+              "ruby": "おな"
+            },
+            {
+              "text": "じ",
+              "ruby": ""
+            },
+            {
+              "text": "絵",
+              "ruby": "え"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "描",
+              "ruby": "えが"
+            },
+            {
+              "text": "かせても",
+              "ruby": ""
+            },
+            {
+              "text": "意味",
+              "ruby": "いみ"
+            },
+            {
+              "text": "がありません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 15,
+      "start": 123.01,
+      "end": 130.93,
+      "english": "Making Sophia solve the same puzzle as Emma is painful.",
+      "japanese": "ソフィアにエマと同じパズルを解かせるのは苦痛だ。",
+      "mixed": "ソフィアにエマと同じパズルを解かせるのは苦痛だ。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ソフィアにエマと同じパズルを解かせるのは苦痛だ。",
+          "parts": [
+            {
+              "text": "ソフィアにエマと",
+              "ruby": ""
+            },
+            {
+              "text": "同",
+              "ruby": "おな"
+            },
+            {
+              "text": "じパズルを",
+              "ruby": ""
+            },
+            {
+              "text": "解",
+              "ruby": "と"
+            },
+            {
+              "text": "かせるのは",
+              "ruby": ""
+            },
+            {
+              "text": "苦痛",
+              "ruby": "くつう"
+            },
+            {
+              "text": "だ。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 16,
+      "start": 130.93,
+      "end": 136.87,
+      "english": "The parents' role is to cultivate each child's strengths.",
+      "japanese": "親の役割は、子ども一人ひとりの長所を伸ばすことです。",
+      "mixed": "親の役割は、子ども一人ひとりの長所を伸ばすことです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "親の役割は、子ども一人ひとりの長所を伸ばすことです。",
+          "parts": [
+            {
+              "text": "親",
+              "ruby": "おや"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "役割",
+              "ruby": "やくわり"
+            },
+            {
+              "text": "は、",
+              "ruby": ""
+            },
+            {
+              "text": "子",
+              "ruby": "こ"
+            },
+            {
+              "text": "ども",
+              "ruby": ""
+            },
+            {
+              "text": "一人",
+              "ruby": "ひとり"
+            },
+            {
+              "text": "ひとりの",
+              "ruby": ""
+            },
+            {
+              "text": "長所",
+              "ruby": "ちょうしょ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "伸",
+              "ruby": "の"
+            },
+            {
+              "text": "ばすことです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "cultivate",
+          "canonical_word": "cultivate",
+          "meaning": "栽培する"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 17,
+      "start": 136.87,
+      "end": 143.85,
+      "english": "But parents are not the only ones who raise excellent human beings.",
+      "japanese": "しかし、優れた人間を育てるのは親だけではありません。",
+      "mixed": "しかし、優れた人間を育てるのは親だけではありません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "しかし、優れた人間を育てるのは親だけではありません。",
+          "parts": [
+            {
+              "text": "しかし、",
+              "ruby": ""
+            },
+            {
+              "text": "優",
+              "ruby": "すぐ"
+            },
+            {
+              "text": "れた",
+              "ruby": ""
+            },
+            {
+              "text": "人間",
+              "ruby": "にんげん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "育",
+              "ruby": "そだ"
+            },
+            {
+              "text": "てるのは",
+              "ruby": ""
+            },
+            {
+              "text": "親",
+              "ruby": "おや"
+            },
+            {
+              "text": "だけではありません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 18,
+      "start": 143.85,
+      "end": 147.89,
+      "english": "School teachers, friends, local community.",
+      "japanese": "学校の先生、友達、地域社会。",
+      "mixed": "学校の先生、友達、地域社会。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "学校の先生、友達、地域社会。",
+          "parts": [
+            {
+              "text": "学校",
+              "ruby": "がっこう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "先生",
+              "ruby": "せんせい"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "友達",
+              "ruby": "ともだち"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "地域",
+              "ruby": "ちいき"
+            },
+            {
+              "text": "社会",
+              "ruby": "しゃかい"
+            },
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 19,
+      "start": 147.89,
+      "end": 151.633,
+      "english": "And the child's own effort.",
+      "japanese": "そして子供自身の努力。",
+      "mixed": "そして子供自身の努力。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "そして子供自身の努力。",
+          "parts": [
+            {
+              "text": "そして",
+              "ruby": ""
+            },
+            {
+              "text": "子供",
+              "ruby": "こども"
+            },
+            {
+              "text": "自身",
+              "ruby": "じしん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "努力",
+              "ruby": "どりょく"
+            },
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 20,
+      "start": 152.381,
+      "end": 156.69,
+      "english": "Altogether, they shape a single person.",
+      "japanese": "それらは全体として、一人の人間を形作ります。",
+      "mixed": "それらは Altogether、一人の人間を形作ります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "それらは ",
+          "parts": [
+            {
+              "text": "それらは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "Altogether",
+          "ruby": "全体として"
+        },
+        {
+          "type": "ja",
+          "text": "、一人の人間を形作ります。",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "一人",
+              "ruby": "ひとり"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "人間",
+              "ruby": "にんげん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "形作",
+              "ruby": "かたちづく"
+            },
+            {
+              "text": "ります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "Altogether",
+          "canonical_word": "altogether",
+          "meaning": "全体として"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Altogether",
+          "reading": "全体として",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "altogether",
+          "canonical_meaning": "全体として"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 21,
+      "start": 158.71,
+      "end": 164.09,
+      "english": "Emma and Sophia are growing up today, quarreling and laughing.",
+      "japanese": "エマとソフィアは今日も喧嘩したり笑ったりしながら成長しています。",
+      "mixed": "エマとソフィアは今日も喧嘩したり笑ったりしながら成長しています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "エマとソフィアは今日も喧嘩したり笑ったりしながら成長しています。",
+          "parts": [
+            {
+              "text": "エマとソフィアは",
+              "ruby": ""
+            },
+            {
+              "text": "今日",
+              "ruby": "きょう"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "喧嘩",
+              "ruby": "けんか"
+            },
+            {
+              "text": "したり",
+              "ruby": ""
+            },
+            {
+              "text": "笑",
+              "ruby": "わら"
+            },
+            {
+              "text": "ったりしながら",
+              "ruby": ""
+            },
+            {
+              "text": "成長",
+              "ruby": "せいちょう"
+            },
+            {
+              "text": "しています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 22,
+      "start": 164.09,
+      "end": 169.05,
+      "english": "As they grow up, what kind of adults will they become?",
+      "japanese": "彼らは成長して、どんな大人になるのでしょうか？",
+      "mixed": "彼らは成長して、どんな大人になるのでしょうか？",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼らは成長して、どんな大人になるのでしょうか？",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "らは",
+              "ruby": ""
+            },
+            {
+              "text": "成長",
+              "ruby": "せいちょう"
+            },
+            {
+              "text": "して、どんな",
+              "ruby": ""
+            },
+            {
+              "text": "大人",
+              "ruby": "おとな"
+            },
+            {
+              "text": "になるのでしょうか？",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 23,
+      "start": 171.31,
+      "end": 178.35,
+      "english": "As a parent, I am eagerly looking forward to it.",
+      "japanese": "親としてはとても楽しみにしています。",
+      "mixed": "親としてはとても楽しみにしています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "親としてはとても楽しみにしています。",
+          "parts": [
+            {
+              "text": "親",
+              "ruby": "おや"
+            },
+            {
+              "text": "としてはとても",
+              "ruby": ""
+            },
+            {
+              "text": "楽",
+              "ruby": "たの"
+            },
+            {
+              "text": "しみにしています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    }
+  ]
+}

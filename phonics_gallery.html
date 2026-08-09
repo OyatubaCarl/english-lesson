@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8">
+<title>Phonics Songs Gallery</title>
+<style>
+:root {
+  --bg: oklch(98% 0.005 95);
+  --panel: oklch(100% 0 0);
+  --ink: oklch(20% 0.01 250);
+  --muted: oklch(45% 0.01 250);
+  --accent: oklch(62% 0.18 30);
+  --border: oklch(90% 0.005 250);
+  --shadow: 0 1px 3px oklch(0% 0 0 / 0.06), 0 4px 12px oklch(0% 0 0 / 0.04);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.5;
+}
+header {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 24px;
+  display: flex; align-items: center; gap: 16px;
+  box-shadow: var(--shadow);
+}
+h1 { margin: 0; font-size: 1.25rem; letter-spacing: 0.01em; }
+.count { color: var(--muted); font-size: 0.9rem; }
+.controls { margin-left: auto; display: flex; gap: 8px; align-items: center; }
+.controls input[type="search"] {
+  padding: 6px 10px; border: 1px solid var(--border);
+  border-radius: 6px; background: var(--bg);
+  font-size: 0.9rem; width: 200px;
+}
+.controls select {
+  padding: 6px 10px; border: 1px solid var(--border);
+  border-radius: 6px; background: var(--bg); font-size: 0.9rem;
+}
+main { padding: 24px; }
+section.group { margin-bottom: 40px; }
+section.group h2 {
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex; flex-direction: column;
+  cursor: zoom-in;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+.card img {
+  width: 100%; aspect-ratio: 1 / 1; object-fit: cover;
+  display: block; background: oklch(95% 0.005 95);
+}
+.card .meta {
+  padding: 8px 10px;
+  font-size: 0.78rem;
+  display: flex; justify-content: space-between; gap: 8px;
+}
+.card .name {
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  flex: 1; min-width: 0;
+}
+.card .size { color: var(--muted); flex-shrink: 0; }
+/* Lightbox */
+.lightbox {
+  position: fixed; inset: 0;
+  background: oklch(0% 0 0 / 0.85);
+  display: none; align-items: center; justify-content: center;
+  z-index: 100; padding: 24px; cursor: zoom-out;
+}
+.lightbox.open { display: flex; }
+.lightbox img { max-width: 100%; max-height: 100%; box-shadow: 0 8px 40px oklch(0% 0 0 / 0.5); }
+.lightbox .caption {
+  position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%);
+  color: white; background: oklch(20% 0.01 250 / 0.85);
+  padding: 8px 16px; border-radius: 6px; font-size: 0.9rem;
+}
+.empty {
+  text-align: center; padding: 80px 24px; color: var(--muted);
+}
+</style>
+</head><body>
+<header>
+<h1>🎵 Phonics Songs Gallery</h1>
+<span class="count">20 images / 2 groups</span>
+<div class="controls">
+<input type="search" id="q" placeholder="ファイル名で検索…">
+<select id="sort"><option value="name">名前順</option><option value="newest">新しい順</option><option value="size">サイズ順</option></select>
+</div></header>
+<main>
+<section class="group" data-group="(root)">
+<h2>📁 (root) <span style="color:var(--muted);font-size:0.8rem;">(1)</span></h2>
+<div class="grid">
+<div class="card" data-full="phonics-songs/magic_e_item.png" data-label="magic_e_item" data-mtime="1777608482" data-bytes="1099988"><img src="phonics-songs/magic_e_item.png" alt="magic_e_item" loading="lazy"><div class="meta"><span class="name">magic_e_item</span><span class="size">1MB</span></div></div>
+</div></section>
+<section class="group" data-group="baker_bear_long_a">
+<h2>📁 baker_bear_long_a <span style="color:var(--muted);font-size:0.8rem;">(19)</span></h2>
+<div class="grid">
+<div class="card" data-full="phonics-songs/baker_bear_long_a/01_baking_cakes.png" data-label="01_baking_cakes" data-mtime="1777618668" data-bytes="1754654"><img src="phonics-songs/baker_bear_long_a/01_baking_cakes.png" alt="01_baking_cakes" loading="lazy"><div class="meta"><span class="name">01_baking_cakes</span><span class="size">2MB</span></div></div>
+<div class="card" data-full="phonics-songs/baker_bear_long_a/02_pondering_question.png" data-label="02_pondering_question" data-mtime="1777618668" data-bytes="1489291"><img src="phonics-songs/baker_bear_long_a/02_pondering_question.png" alt="02_pondering_question" loading="lazy"><div class="meta"><span class="name">02_pondering_question</span><span class="size">1MB</span></div></div>
+<div class="card" data-full="phonics-songs/baker_bear_long_a/03_finding_magic_e.png" data-label="03_finding_magic_e" data-mtime="1777618668" data-bytes="1640796"><img src="phonics-songs/baker_bear_long_a/03_finding_magic_e.png" alt="03_finding_magic_e" loading="lazy"><div class="meta"><span class="name">03_finding_magic_e</span><span class="size">2MB</span></div></div>
+<div class="card" data-full="phonics-songs/baker_bear_long_a/04_first_transform_surprised.png" data-label="04_first_transform_surprised" data-mtime="1777618668" data-bytes="1602183"><img src="phonics-songs/baker_bear_long_a/04_first_transform_surprised.png" alt="04_first_transform_surprised" loading="lazy"><div class="meta"><span class="name">04_first_transform_surprised</span><span class="size">2MB</span></div></div>
+<div class="card" data-full="phonics-songs/baker_bear_long_a/04b_can_to_cane.png" data-label="04b_can_to_cane" data-mtime="1777618668" data-bytes="1789266"><img src="phonics-songs/baker_bear_long_a/04b_can_to_cane.png" alt="04b_can_to_cane" loading="lazy"><div class="meta"><span class="name">04b_can_to_cane</span><span class="size">2MB</span></div></div>
+<div class="card" data-full="phonics-songs/baker_bear_long_a/05_enjoying_mat_to_mate.png" data-label="05_enjoying_mat_to_mate" data-mtime="1777618668" data-bytes="1640596"><img src="phonics-songs/baker_bear_long_a/05_enjoying_mat_to_mate.png" alt="05_enjoying_mat_to_mate" loading="lazy"><div class="meta"><span class="name">05_enjoying_mat_to_mate</span><span class="size">2MB</span></div></div>
+<div class="card" data-full="phonics-songs/baker_bear_long_a/06_wizard_pose.png" data-label="06_wizard_pose" data-mtime="1777618668" data-bytes="1721306"><img src="phonics-songs/baker_bear_long_a/06_wizard_pose.png" alt="06_wizard_pose" loading="lazy"><div class="meta"><span class="name">06_wizard_pose</span><span class="size">2MB</span></div></div>
+<div class="card" data-full="phonics-songs/baker_bear_long_a/06b_plan_to_plane.png" data-label="06b_plan_to_plane" data-mtime="1777618668" data-bytes="1617550"><img src="phonics-songs/baker_bear_long_a/06b_plan_to_plane.png" alt="06b_plan_to_plane" loading="lazy"><div class="meta"><span class="name">06b_plan_to_plane</span><span class="size">2MB</span></div></div>
+<div class="card" data-full="phonics-songs/baker_bear_long_a/07b_slat_to_slate.png" data-label="07b_slat_to_slate" data-mtime="1777643827" data-bytes="1676025"><img src="phonics-songs/baker_bear_long_a/07b_slat_to_slate.png" alt="07b_slat_to_slate" loading="lazy"><div class="meta"><span class="name">07b_slat_to_slate</span><span class="size">2MB</span></div></div>
+<div class="card" data-full="phonics-songs/baker_bear_long_a/08_engineer_egg_arrives.png" data-label="08_engineer_egg_arrives" data-mtime="1777618668" data-bytes="1705706"><img src="phonics-songs/baker_bear_long_a/08_engineer_egg_arrives.png" alt="08_engineer_egg_arrives" loading="lazy"><div class="meta"><span class="name">08_engineer_egg_arrives</span><span class="size">2MB</span></div></div>
+<div class="card" data-full="phonics-songs/baker_bear_long_a/09_engineer_egg_picks_up_e.png" data-label="09_engineer_egg_picks_up_e" data-mtime="1777618668" data-bytes="1556270"><img src="phonics-songs/baker_bear_long_a/09_engineer_egg_picks_up_e.png" alt="09_engineer_egg_picks_up_e" loading="lazy"><div class="meta"><span class="name">09_engineer_egg_picks_up_e</span><span class="size">1MB</span></div></div>
+<div class="card" data-full="phonics-songs/baker_bear_long_a/10_dancing_together_01.png" data-label="10_dancing_together_01" data-mtime="1777618668" data-bytes="1688773"><img src="phonics-songs/baker_bear_long_a/10_dancing_together_01.png" alt="10_dancing_together_01" loading="lazy"><div class="meta"><span class="name">10_dancing_together_01</span><span class="size">2MB</span></div></div>
+<div class="card" data-full="phonics-songs/baker_bear_long_a/11_dancing_together_02.png" data-label="11_dancing_together_02" data-mtime="1777618668" data-bytes="1723690"><img src="phonics-songs/baker_bear_long_a/11_dancing_together_02.png" alt="11_dancing_together_02" loading="lazy"><div class="meta"><span class="name">11_dancing_together_02</span><span class="size">2MB</span></div></div>
+<div class="card" data-full="phonics-songs/baker_bear_long_a/12_brave_mate_at_the_gate.png" data-label="12_brave_mate_at_the_gate" data-mtime="1777618668" data-bytes="2032527"><img src="phonics-songs/baker_bear_long_a/12_brave_mate_at_the_gate.png" alt="12_brave_mate_at_the_gate" loading="lazy"><div class="meta"><span class="name">12_brave_mate_at_the_gate</span><span class="size">2MB</span></div></div>
+<div class="card" data-full="phonics-songs/baker_bear_long_a/13_pale_cane_on_a_plate.png" data-label="13_pale_cane_on_a_plate" data-mtime="1777618668" data-bytes="1748873"><img src="phonics-songs/baker_bear_long_a/13_pale_cane_on_a_plate.png" alt="13_pale_cane_on_a_plate" loading="lazy"><div class="meta"><span class="name">13_pale_cane_on_a_plate</span><span class="size">2MB</span></div></div>
+<div class="card" data-full="phonics-songs/baker_bear_long_a/14_late_plane_in_the_lane.png" data-label="14_late_plane_in_the_lane" data-mtime="1777643827" data-bytes="1512592"><img src="phonics-songs/baker_bear_long_a/14_late_plane_in_the_lane.png" alt="14_late_plane_in_the_lane" loading="lazy"><div class="meta"><span class="name">14_late_plane_in_the_lane</span><span class="size">1MB</span></div></div>
+<div class="card" data-full="phonics-songs/baker_bear_long_a/15_safe_cape_on_a_slate.png" data-label="15_safe_cape_on_a_slate" data-mtime="1777618668" data-bytes="1685446"><img src="phonics-songs/baker_bear_long_a/15_safe_cape_on_a_slate.png" alt="15_safe_cape_on_a_slate" loading="lazy"><div class="meta"><span class="name">15_safe_cape_on_a_slate</span><span class="size">2MB</span></div></div>
+<div class="card" data-full="phonics-songs/baker_bear_long_a/16_word_parade.png" data-label="16_word_parade" data-mtime="1777643827" data-bytes="1247851"><img src="phonics-songs/baker_bear_long_a/16_word_parade.png" alt="16_word_parade" loading="lazy"><div class="meta"><span class="name">16_word_parade</span><span class="size">1MB</span></div></div>
+<div class="card" data-full="phonics-songs/baker_bear_long_a/17_finale_dancing.png" data-label="17_finale_dancing" data-mtime="1777618668" data-bytes="1661828"><img src="phonics-songs/baker_bear_long_a/17_finale_dancing.png" alt="17_finale_dancing" loading="lazy"><div class="meta"><span class="name">17_finale_dancing</span><span class="size">2MB</span></div></div>
+</div></section>
+</main>
+<div id="lightbox" class="lightbox"><img alt=""><div class="caption"></div></div>
+<script>
+const lb = document.getElementById('lightbox');
+const lbImg = lb.querySelector('img');
+const lbCap = lb.querySelector('.caption');
+document.querySelectorAll('.card').forEach(c => {
+  c.addEventListener('click', () => {
+    lbImg.src = c.dataset.full;
+    lbCap.textContent = c.dataset.label;
+    lb.classList.add('open');
+  });
+});
+lb.addEventListener('click', () => lb.classList.remove('open'));
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') lb.classList.remove('open');
+});
+
+const search = document.getElementById('q');
+search.addEventListener('input', e => {
+  const q = e.target.value.toLowerCase();
+  document.querySelectorAll('.card').forEach(c => {
+    const hit = !q || c.dataset.label.toLowerCase().includes(q);
+    c.style.display = hit ? '' : 'none';
+  });
+  document.querySelectorAll('section.group').forEach(s => {
+    const visible = s.querySelectorAll('.card:not([style*="display: none"])').length;
+    s.style.display = visible === 0 ? 'none' : '';
+  });
+});
+
+const sortSel = document.getElementById('sort');
+sortSel.addEventListener('change', e => {
+  const mode = e.target.value;
+  document.querySelectorAll('section.group .grid').forEach(grid => {
+    const cards = Array.from(grid.querySelectorAll('.card'));
+    cards.sort((a, b) => {
+      if (mode === 'name') return a.dataset.label.localeCompare(b.dataset.label);
+      if (mode === 'newest') return Number(b.dataset.mtime) - Number(a.dataset.mtime);
+      if (mode === 'size') return Number(b.dataset.bytes) - Number(a.dataset.bytes);
+      return 0;
+    });
+    cards.forEach(c => grid.appendChild(c));
+  });
+});
+</script>
+</body></html>

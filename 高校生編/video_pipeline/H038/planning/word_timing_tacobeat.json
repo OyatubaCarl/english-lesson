@@ -1,0 +1,1080 @@
+{
+  "lesson": "H038",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h038_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H038/candidate2-full.mp3",
+  "source_audio_sha256": "7acb36e384a6e840a5d1d553d9bc5e0c630f6a75fa3fcb413b47d5a5bd538a28",
+  "bpm": 103.94,
+  "exact_word_match": true,
+  "word_count": 160,
+  "line_count": 13,
+  "first_word_start": 9.122,
+  "last_word_end": 104.938,
+  "lines": [
+    {
+      "line": 1,
+      "english": "On December 17, 1903, on a sand dune at Kitty Hawk, North Carolina, the Wright brothers succeeded in a twelve-second flight.",
+      "word_timings": [
+        {
+          "word": "On",
+          "display_index": 0,
+          "start": 9.122,
+          "end": 9.342
+        },
+        {
+          "word": "December",
+          "display_index": 1,
+          "start": 9.342,
+          "end": 9.942
+        },
+        {
+          "word": "17,",
+          "display_index": 2,
+          "start": 9.942,
+          "end": 10.662
+        },
+        {
+          "word": "1903,",
+          "display_index": 3,
+          "start": 10.662,
+          "end": 12.282
+        },
+        {
+          "word": "on",
+          "display_index": 4,
+          "start": 12.282,
+          "end": 12.434
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 12.434,
+          "end": 12.514
+        },
+        {
+          "word": "sand",
+          "display_index": 6,
+          "start": 12.502,
+          "end": 12.962
+        },
+        {
+          "word": "dune",
+          "display_index": 7,
+          "start": 12.962,
+          "end": 13.462
+        },
+        {
+          "word": "at",
+          "display_index": 8,
+          "start": 13.462,
+          "end": 13.642
+        },
+        {
+          "word": "Kitty",
+          "display_index": 9,
+          "start": 13.642,
+          "end": 14.002
+        },
+        {
+          "word": "Hawk,",
+          "display_index": 10,
+          "start": 14.002,
+          "end": 15.663
+        },
+        {
+          "word": "North",
+          "display_index": 11,
+          "start": 15.663,
+          "end": 15.963
+        },
+        {
+          "word": "Carolina,",
+          "display_index": 12,
+          "start": 15.963,
+          "end": 17.892
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 17.892,
+          "end": 17.983
+        },
+        {
+          "word": "Wright",
+          "display_index": 14,
+          "start": 17.983,
+          "end": 18.283
+        },
+        {
+          "word": "brothers",
+          "display_index": 15,
+          "start": 18.283,
+          "end": 18.603
+        },
+        {
+          "word": "succeeded",
+          "display_index": 16,
+          "start": 18.603,
+          "end": 19.503
+        },
+        {
+          "word": "in",
+          "display_index": 17,
+          "start": 19.503,
+          "end": 19.585
+        },
+        {
+          "word": "a",
+          "display_index": 18,
+          "start": 19.585,
+          "end": 19.723
+        },
+        {
+          "word": "twelve-second",
+          "display_index": 19,
+          "start": 19.723,
+          "end": 20.283
+        },
+        {
+          "word": "twelve-second",
+          "display_index": 19,
+          "start": 20.283,
+          "end": 20.804
+        },
+        {
+          "word": "flight.",
+          "display_index": 20,
+          "start": 20.804,
+          "end": 22.304
+        }
+      ],
+      "start": 9.122,
+      "end": 22.304
+    },
+    {
+      "line": 2,
+      "english": "They were brothers who, while running a bicycle shop, had kept pursuing a dream of flying.",
+      "word_timings": [
+        {
+          "word": "They",
+          "display_index": 0,
+          "start": 22.604,
+          "end": 22.744
+        },
+        {
+          "word": "were",
+          "display_index": 1,
+          "start": 22.744,
+          "end": 22.904
+        },
+        {
+          "word": "brothers",
+          "display_index": 2,
+          "start": 22.904,
+          "end": 23.344
+        },
+        {
+          "word": "who,",
+          "display_index": 3,
+          "start": 23.344,
+          "end": 23.764
+        },
+        {
+          "word": "while",
+          "display_index": 4,
+          "start": 23.764,
+          "end": 24.064
+        },
+        {
+          "word": "running",
+          "display_index": 5,
+          "start": 24.064,
+          "end": 24.371
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 24.371,
+          "end": 24.504
+        },
+        {
+          "word": "bicycle",
+          "display_index": 7,
+          "start": 24.504,
+          "end": 25.184
+        },
+        {
+          "word": "shop,",
+          "display_index": 8,
+          "start": 25.184,
+          "end": 27.205
+        },
+        {
+          "word": "had",
+          "display_index": 9,
+          "start": 27.205,
+          "end": 27.465
+        },
+        {
+          "word": "kept",
+          "display_index": 10,
+          "start": 27.465,
+          "end": 27.785
+        },
+        {
+          "word": "pursuing",
+          "display_index": 11,
+          "start": 27.785,
+          "end": 28.68
+        },
+        {
+          "word": "a",
+          "display_index": 12,
+          "start": 28.68,
+          "end": 28.885
+        },
+        {
+          "word": "dream",
+          "display_index": 13,
+          "start": 28.885,
+          "end": 29.605
+        },
+        {
+          "word": "of",
+          "display_index": 14,
+          "start": 29.605,
+          "end": 29.785
+        },
+        {
+          "word": "flying.",
+          "display_index": 15,
+          "start": 29.785,
+          "end": 31.285
+        }
+      ],
+      "start": 22.604,
+      "end": 31.285
+    },
+    {
+      "line": 3,
+      "english": "Wilbur and Orville, with their own hands, built a wind tunnel and examined the shape of wings over and over again.",
+      "word_timings": [
+        {
+          "word": "Wilbur",
+          "display_index": 0,
+          "start": 32.586,
+          "end": 33.226
+        },
+        {
+          "word": "and",
+          "display_index": 1,
+          "start": 33.226,
+          "end": 33.406
+        },
+        {
+          "word": "Orville,",
+          "display_index": 2,
+          "start": 33.406,
+          "end": 33.866
+        },
+        {
+          "word": "with",
+          "display_index": 3,
+          "start": 33.866,
+          "end": 34.006
+        },
+        {
+          "word": "their",
+          "display_index": 4,
+          "start": 34.006,
+          "end": 34.226
+        },
+        {
+          "word": "own",
+          "display_index": 5,
+          "start": 34.226,
+          "end": 34.446
+        },
+        {
+          "word": "hands,",
+          "display_index": 6,
+          "start": 34.446,
+          "end": 35.006
+        },
+        {
+          "word": "built",
+          "display_index": 7,
+          "start": 35.006,
+          "end": 35.168
+        },
+        {
+          "word": "a",
+          "display_index": 8,
+          "start": 35.168,
+          "end": 35.306
+        },
+        {
+          "word": "wind",
+          "display_index": 9,
+          "start": 35.306,
+          "end": 35.566
+        },
+        {
+          "word": "tunnel",
+          "display_index": 10,
+          "start": 35.566,
+          "end": 36.506
+        },
+        {
+          "word": "and",
+          "display_index": 11,
+          "start": 36.506,
+          "end": 36.646
+        },
+        {
+          "word": "examined",
+          "display_index": 12,
+          "start": 36.646,
+          "end": 37.152
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 37.152,
+          "end": 37.286
+        },
+        {
+          "word": "shape",
+          "display_index": 14,
+          "start": 37.286,
+          "end": 37.746
+        },
+        {
+          "word": "of",
+          "display_index": 15,
+          "start": 37.746,
+          "end": 38.006
+        },
+        {
+          "word": "wings",
+          "display_index": 16,
+          "start": 38.006,
+          "end": 38.607
+        },
+        {
+          "word": "over",
+          "display_index": 17,
+          "start": 38.607,
+          "end": 39.147
+        },
+        {
+          "word": "and",
+          "display_index": 18,
+          "start": 39.147,
+          "end": 39.807
+        },
+        {
+          "word": "over",
+          "display_index": 19,
+          "start": 39.807,
+          "end": 40.427
+        },
+        {
+          "word": "again.",
+          "display_index": 20,
+          "start": 40.427,
+          "end": 41.927
+        }
+      ],
+      "start": 32.586,
+      "end": 41.927
+    },
+    {
+      "line": 4,
+      "english": "Many people said it was impossible.",
+      "word_timings": [
+        {
+          "word": "Many",
+          "display_index": 0,
+          "start": 42.227,
+          "end": 42.527
+        },
+        {
+          "word": "people",
+          "display_index": 1,
+          "start": 42.527,
+          "end": 42.947
+        },
+        {
+          "word": "said",
+          "display_index": 2,
+          "start": 42.947,
+          "end": 43.487
+        },
+        {
+          "word": "it",
+          "display_index": 3,
+          "start": 43.487,
+          "end": 43.687
+        },
+        {
+          "word": "was",
+          "display_index": 4,
+          "start": 43.687,
+          "end": 44.027
+        },
+        {
+          "word": "impossible.",
+          "display_index": 5,
+          "start": 44.027,
+          "end": 45.408
+        }
+      ],
+      "start": 42.227,
+      "end": 45.408
+    },
+    {
+      "line": 5,
+      "english": "But the brothers never abandoned their dream.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 45.708,
+          "end": 45.857
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 45.857,
+          "end": 45.988
+        },
+        {
+          "word": "brothers",
+          "display_index": 2,
+          "start": 45.988,
+          "end": 46.568
+        },
+        {
+          "word": "never",
+          "display_index": 3,
+          "start": 46.568,
+          "end": 47.228
+        },
+        {
+          "word": "abandoned",
+          "display_index": 4,
+          "start": 47.228,
+          "end": 48.328
+        },
+        {
+          "word": "their",
+          "display_index": 5,
+          "start": 48.328,
+          "end": 48.628
+        },
+        {
+          "word": "dream.",
+          "display_index": 6,
+          "start": 48.628,
+          "end": 50.069
+        }
+      ],
+      "start": 45.708,
+      "end": 50.069
+    },
+    {
+      "line": 6,
+      "english": "If birds can fly, we surely can too, they believed.",
+      "word_timings": [
+        {
+          "word": "If",
+          "display_index": 0,
+          "start": 50.369,
+          "end": 50.609
+        },
+        {
+          "word": "birds",
+          "display_index": 1,
+          "start": 50.609,
+          "end": 51.069
+        },
+        {
+          "word": "can",
+          "display_index": 2,
+          "start": 51.069,
+          "end": 51.449
+        },
+        {
+          "word": "fly,",
+          "display_index": 3,
+          "start": 51.449,
+          "end": 52.069
+        },
+        {
+          "word": "we",
+          "display_index": 4,
+          "start": 52.069,
+          "end": 52.309
+        },
+        {
+          "word": "surely",
+          "display_index": 5,
+          "start": 52.309,
+          "end": 52.789
+        },
+        {
+          "word": "can",
+          "display_index": 6,
+          "start": 52.789,
+          "end": 53.185
+        },
+        {
+          "word": "too,",
+          "display_index": 7,
+          "start": 53.185,
+          "end": 53.809
+        },
+        {
+          "word": "they",
+          "display_index": 8,
+          "start": 53.809,
+          "end": 54.129
+        },
+        {
+          "word": "believed.",
+          "display_index": 9,
+          "start": 54.129,
+          "end": 55.261
+        }
+      ],
+      "start": 50.369,
+      "end": 55.261
+    },
+    {
+      "line": 7,
+      "english": "The wind was strong that morning.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 55.561,
+          "end": 55.829
+        },
+        {
+          "word": "wind",
+          "display_index": 1,
+          "start": 55.829,
+          "end": 56.39
+        },
+        {
+          "word": "was",
+          "display_index": 2,
+          "start": 56.39,
+          "end": 56.61
+        },
+        {
+          "word": "strong",
+          "display_index": 3,
+          "start": 56.61,
+          "end": 57.57
+        },
+        {
+          "word": "that",
+          "display_index": 4,
+          "start": 57.57,
+          "end": 57.87
+        },
+        {
+          "word": "morning.",
+          "display_index": 5,
+          "start": 57.87,
+          "end": 59.37
+        }
+      ],
+      "start": 55.561,
+      "end": 59.37
+    },
+    {
+      "line": 8,
+      "english": "The aircraft, carrying Orville, made its brief flight of twelve seconds.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 59.764,
+          "end": 59.93
+        },
+        {
+          "word": "aircraft,",
+          "display_index": 1,
+          "start": 59.93,
+          "end": 60.71
+        },
+        {
+          "word": "carrying",
+          "display_index": 2,
+          "start": 60.71,
+          "end": 61.43
+        },
+        {
+          "word": "Orville,",
+          "display_index": 3,
+          "start": 61.43,
+          "end": 62.191
+        },
+        {
+          "word": "made",
+          "display_index": 4,
+          "start": 62.191,
+          "end": 62.431
+        },
+        {
+          "word": "its",
+          "display_index": 5,
+          "start": 62.431,
+          "end": 62.591
+        },
+        {
+          "word": "brief",
+          "display_index": 6,
+          "start": 62.591,
+          "end": 62.971
+        },
+        {
+          "word": "flight",
+          "display_index": 7,
+          "start": 62.971,
+          "end": 63.491
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 63.491,
+          "end": 63.611
+        },
+        {
+          "word": "twelve",
+          "display_index": 9,
+          "start": 63.611,
+          "end": 64.151
+        },
+        {
+          "word": "seconds.",
+          "display_index": 10,
+          "start": 64.151,
+          "end": 65.651
+        }
+      ],
+      "start": 59.764,
+      "end": 65.651
+    },
+    {
+      "line": 9,
+      "english": "The distance was about thirty-seven meters.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 66.098,
+          "end": 66.211
+        },
+        {
+          "word": "distance",
+          "display_index": 1,
+          "start": 66.211,
+          "end": 66.791
+        },
+        {
+          "word": "was",
+          "display_index": 2,
+          "start": 66.791,
+          "end": 66.991
+        },
+        {
+          "word": "about",
+          "display_index": 3,
+          "start": 66.991,
+          "end": 67.391
+        },
+        {
+          "word": "thirty-seven",
+          "display_index": 4,
+          "start": 67.391,
+          "end": 68.032
+        },
+        {
+          "word": "thirty-seven",
+          "display_index": 4,
+          "start": 68.032,
+          "end": 68.512
+        },
+        {
+          "word": "meters.",
+          "display_index": 5,
+          "start": 68.512,
+          "end": 70.012
+        }
+      ],
+      "start": 66.098,
+      "end": 70.012
+    },
+    {
+      "line": 10,
+      "english": "Yet that moment was the result of a long effort to achieve controlled, powered flight.",
+      "word_timings": [
+        {
+          "word": "Yet",
+          "display_index": 0,
+          "start": 71.132,
+          "end": 71.412
+        },
+        {
+          "word": "that",
+          "display_index": 1,
+          "start": 71.412,
+          "end": 71.712
+        },
+        {
+          "word": "moment",
+          "display_index": 2,
+          "start": 71.712,
+          "end": 72.572
+        },
+        {
+          "word": "was",
+          "display_index": 3,
+          "start": 72.572,
+          "end": 73.443
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 73.443,
+          "end": 73.572
+        },
+        {
+          "word": "result",
+          "display_index": 5,
+          "start": 73.572,
+          "end": 74.073
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 74.073,
+          "end": 74.155
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 74.155,
+          "end": 74.313
+        },
+        {
+          "word": "long",
+          "display_index": 8,
+          "start": 74.313,
+          "end": 74.833
+        },
+        {
+          "word": "effort",
+          "display_index": 9,
+          "start": 74.833,
+          "end": 75.44
+        },
+        {
+          "word": "to",
+          "display_index": 10,
+          "start": 75.44,
+          "end": 75.693
+        },
+        {
+          "word": "achieve",
+          "display_index": 11,
+          "start": 75.693,
+          "end": 76.293
+        },
+        {
+          "word": "controlled,",
+          "display_index": 12,
+          "start": 76.293,
+          "end": 77.133
+        },
+        {
+          "word": "powered",
+          "display_index": 13,
+          "start": 77.133,
+          "end": 77.713
+        },
+        {
+          "word": "flight.",
+          "display_index": 14,
+          "start": 77.713,
+          "end": 79.213
+        }
+      ],
+      "start": 71.132,
+      "end": 79.213
+    },
+    {
+      "line": 11,
+      "english": "When Orville landed, the brothers knew that years of work had finally taken flight.",
+      "word_timings": [
+        {
+          "word": "When",
+          "display_index": 0,
+          "start": 79.894,
+          "end": 80.174
+        },
+        {
+          "word": "Orville",
+          "display_index": 1,
+          "start": 80.174,
+          "end": 80.614
+        },
+        {
+          "word": "landed,",
+          "display_index": 2,
+          "start": 80.614,
+          "end": 81.501
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 81.501,
+          "end": 81.734
+        },
+        {
+          "word": "brothers",
+          "display_index": 4,
+          "start": 81.734,
+          "end": 82.254
+        },
+        {
+          "word": "knew",
+          "display_index": 5,
+          "start": 82.254,
+          "end": 82.654
+        },
+        {
+          "word": "that",
+          "display_index": 6,
+          "start": 82.654,
+          "end": 82.934
+        },
+        {
+          "word": "years",
+          "display_index": 7,
+          "start": 82.934,
+          "end": 83.294
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 83.294,
+          "end": 83.474
+        },
+        {
+          "word": "work",
+          "display_index": 9,
+          "start": 83.474,
+          "end": 84.354
+        },
+        {
+          "word": "had",
+          "display_index": 10,
+          "start": 84.354,
+          "end": 84.614
+        },
+        {
+          "word": "finally",
+          "display_index": 11,
+          "start": 84.614,
+          "end": 85.515
+        },
+        {
+          "word": "taken",
+          "display_index": 12,
+          "start": 85.515,
+          "end": 86.635
+        },
+        {
+          "word": "flight.",
+          "display_index": 13,
+          "start": 86.635,
+          "end": 88.135
+        }
+      ],
+      "start": 79.894,
+      "end": 88.135
+    },
+    {
+      "line": 12,
+      "english": "To be called an inventor meant nothing to them at that instant.",
+      "word_timings": [
+        {
+          "word": "To",
+          "display_index": 0,
+          "start": 89.531,
+          "end": 89.675
+        },
+        {
+          "word": "be",
+          "display_index": 1,
+          "start": 89.675,
+          "end": 89.815
+        },
+        {
+          "word": "called",
+          "display_index": 2,
+          "start": 89.815,
+          "end": 90.195
+        },
+        {
+          "word": "an",
+          "display_index": 3,
+          "start": 90.195,
+          "end": 90.335
+        },
+        {
+          "word": "inventor",
+          "display_index": 4,
+          "start": 90.335,
+          "end": 91.255
+        },
+        {
+          "word": "meant",
+          "display_index": 5,
+          "start": 91.255,
+          "end": 91.556
+        },
+        {
+          "word": "nothing",
+          "display_index": 6,
+          "start": 91.556,
+          "end": 91.962
+        },
+        {
+          "word": "to",
+          "display_index": 7,
+          "start": 91.962,
+          "end": 92.136
+        },
+        {
+          "word": "them",
+          "display_index": 8,
+          "start": 92.136,
+          "end": 92.536
+        },
+        {
+          "word": "at",
+          "display_index": 9,
+          "start": 92.536,
+          "end": 92.856
+        },
+        {
+          "word": "that",
+          "display_index": 10,
+          "start": 92.856,
+          "end": 93.376
+        },
+        {
+          "word": "instant.",
+          "display_index": 11,
+          "start": 93.376,
+          "end": 94.876
+        }
+      ],
+      "start": 89.531,
+      "end": 94.876
+    },
+    {
+      "line": 13,
+      "english": "It was the very first step that humanity had taken toward the sky.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 96.376,
+          "end": 96.476
+        },
+        {
+          "word": "was",
+          "display_index": 1,
+          "start": 96.476,
+          "end": 96.636
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 96.636,
+          "end": 96.756
+        },
+        {
+          "word": "very",
+          "display_index": 3,
+          "start": 96.756,
+          "end": 97.176
+        },
+        {
+          "word": "first",
+          "display_index": 4,
+          "start": 97.176,
+          "end": 97.577
+        },
+        {
+          "word": "step",
+          "display_index": 5,
+          "start": 97.577,
+          "end": 98.237
+        },
+        {
+          "word": "that",
+          "display_index": 6,
+          "start": 98.237,
+          "end": 98.517
+        },
+        {
+          "word": "humanity",
+          "display_index": 7,
+          "start": 98.517,
+          "end": 101.137
+        },
+        {
+          "word": "had",
+          "display_index": 8,
+          "start": 101.137,
+          "end": 101.417
+        },
+        {
+          "word": "taken",
+          "display_index": 9,
+          "start": 101.417,
+          "end": 102.337
+        },
+        {
+          "word": "toward",
+          "display_index": 10,
+          "start": 102.337,
+          "end": 103.211
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 103.211,
+          "end": 103.438
+        },
+        {
+          "word": "sky.",
+          "display_index": 12,
+          "start": 103.438,
+          "end": 104.938
+        }
+      ],
+      "start": 96.376,
+      "end": 104.938
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

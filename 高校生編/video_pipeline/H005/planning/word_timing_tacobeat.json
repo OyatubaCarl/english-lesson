@@ -1,0 +1,692 @@
+{
+  "lesson": "H005",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h005_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H005/candidate2-full.mp3",
+  "source_audio_sha256": "00583ec2c3aa5a516c7d2bb5cfe0dfb490e52c44f839f3be24b4b9e299eb9a7f",
+  "bpm": 73.76,
+  "exact_word_match": true,
+  "word_count": 116,
+  "line_count": 12,
+  "first_word_start": 6.345,
+  "last_word_end": 102.26,
+  "lines": [
+    {
+      "line": 1,
+      "english": "My father brought home a small puppy.",
+      "word_timings": [
+        {
+          "word": "My",
+          "start": 6.345,
+          "end": 6.661
+        },
+        {
+          "word": "father",
+          "start": 6.661,
+          "end": 7.141
+        },
+        {
+          "word": "brought",
+          "start": 7.141,
+          "end": 7.501
+        },
+        {
+          "word": "home",
+          "start": 7.501,
+          "end": 8.637
+        },
+        {
+          "word": "a",
+          "start": 8.637,
+          "end": 8.842
+        },
+        {
+          "word": "small",
+          "start": 8.842,
+          "end": 9.682
+        },
+        {
+          "word": "puppy.",
+          "start": 9.682,
+          "end": 11.182
+        }
+      ],
+      "start": 6.345,
+      "end": 11.182
+    },
+    {
+      "line": 2,
+      "english": "Mother decided to adopt her, and we named her Sora.",
+      "word_timings": [
+        {
+          "word": "Mother",
+          "start": 12.282,
+          "end": 12.682
+        },
+        {
+          "word": "decided",
+          "start": 12.682,
+          "end": 13.604
+        },
+        {
+          "word": "to",
+          "start": 13.604,
+          "end": 13.983
+        },
+        {
+          "word": "adopt",
+          "start": 13.983,
+          "end": 14.543
+        },
+        {
+          "word": "her,",
+          "start": 14.543,
+          "end": 15.923
+        },
+        {
+          "word": "and",
+          "start": 15.923,
+          "end": 16.083
+        },
+        {
+          "word": "we",
+          "start": 16.083,
+          "end": 16.283
+        },
+        {
+          "word": "named",
+          "start": 16.283,
+          "end": 17.123
+        },
+        {
+          "word": "her",
+          "start": 17.123,
+          "end": 17.823
+        },
+        {
+          "word": "Sora.",
+          "start": 17.823,
+          "end": 19.164
+        }
+      ],
+      "start": 12.282,
+      "end": 19.164
+    },
+    {
+      "line": 3,
+      "english": "Sora looked anxious at first.",
+      "word_timings": [
+        {
+          "word": "Sora",
+          "start": 19.464,
+          "end": 20.724
+        },
+        {
+          "word": "looked",
+          "start": 20.724,
+          "end": 21.044
+        },
+        {
+          "word": "anxious",
+          "start": 21.044,
+          "end": 21.984
+        },
+        {
+          "word": "at",
+          "start": 21.984,
+          "end": 22.284
+        },
+        {
+          "word": "first.",
+          "start": 22.284,
+          "end": 23.784
+        }
+      ],
+      "start": 19.464,
+      "end": 23.784
+    },
+    {
+      "line": 4,
+      "english": "Father declared her a member of our family, and we all welcomed her.",
+      "word_timings": [
+        {
+          "word": "Father",
+          "start": 24.305,
+          "end": 25.145
+        },
+        {
+          "word": "declared",
+          "start": 25.145,
+          "end": 26.205
+        },
+        {
+          "word": "her",
+          "start": 26.205,
+          "end": 26.433
+        },
+        {
+          "word": "a",
+          "start": 26.433,
+          "end": 26.705
+        },
+        {
+          "word": "member",
+          "start": 26.705,
+          "end": 27.825
+        },
+        {
+          "word": "of",
+          "start": 27.825,
+          "end": 28.045
+        },
+        {
+          "word": "our",
+          "start": 28.045,
+          "end": 28.306
+        },
+        {
+          "word": "family,",
+          "start": 28.306,
+          "end": 29.806
+        },
+        {
+          "word": "and",
+          "start": 29.806,
+          "end": 29.986
+        },
+        {
+          "word": "we",
+          "start": 29.986,
+          "end": 30.306
+        },
+        {
+          "word": "all",
+          "start": 30.306,
+          "end": 30.706
+        },
+        {
+          "word": "welcomed",
+          "start": 30.706,
+          "end": 31.606
+        },
+        {
+          "word": "her.",
+          "start": 31.606,
+          "end": 33.106
+        }
+      ],
+      "start": 24.305,
+      "end": 33.106
+    },
+    {
+      "line": 5,
+      "english": "Mother found her gentle.",
+      "word_timings": [
+        {
+          "word": "Mother",
+          "start": 33.607,
+          "end": 33.987
+        },
+        {
+          "word": "found",
+          "start": 33.987,
+          "end": 34.827
+        },
+        {
+          "word": "her",
+          "start": 34.827,
+          "end": 35.207
+        },
+        {
+          "word": "gentle.",
+          "start": 35.207,
+          "end": 36.554
+        }
+      ],
+      "start": 33.607,
+      "end": 36.554
+    },
+    {
+      "line": 6,
+      "english": "I considered her a good companion.",
+      "word_timings": [
+        {
+          "word": "I",
+          "start": 36.854,
+          "end": 37.007
+        },
+        {
+          "word": "considered",
+          "start": 37.007,
+          "end": 37.807
+        },
+        {
+          "word": "her",
+          "start": 37.807,
+          "end": 38.452
+        },
+        {
+          "word": "a",
+          "start": 38.452,
+          "end": 38.668
+        },
+        {
+          "word": "good",
+          "start": 38.668,
+          "end": 41.228
+        },
+        {
+          "word": "companion.",
+          "start": 41.228,
+          "end": 42.728
+        }
+      ],
+      "start": 36.854,
+      "end": 42.728
+    },
+    {
+      "line": 7,
+      "english": "Within a few days, she began to feel that our house belonged to her too.",
+      "word_timings": [
+        {
+          "word": "Within",
+          "start": 44.329,
+          "end": 44.835
+        },
+        {
+          "word": "a",
+          "start": 44.835,
+          "end": 44.915
+        },
+        {
+          "word": "few",
+          "start": 44.909,
+          "end": 45.329
+        },
+        {
+          "word": "days,",
+          "start": 45.329,
+          "end": 46.489
+        },
+        {
+          "word": "she",
+          "start": 46.489,
+          "end": 46.729
+        },
+        {
+          "word": "began",
+          "start": 46.729,
+          "end": 47.289
+        },
+        {
+          "word": "to",
+          "start": 47.289,
+          "end": 47.509
+        },
+        {
+          "word": "feel",
+          "start": 47.509,
+          "end": 47.969
+        },
+        {
+          "word": "that",
+          "start": 47.969,
+          "end": 48.269
+        },
+        {
+          "word": "our",
+          "start": 48.269,
+          "end": 48.55
+        },
+        {
+          "word": "house",
+          "start": 48.55,
+          "end": 49.17
+        },
+        {
+          "word": "belonged",
+          "start": 49.17,
+          "end": 50.105
+        },
+        {
+          "word": "to",
+          "start": 50.105,
+          "end": 50.45
+        },
+        {
+          "word": "her",
+          "start": 50.45,
+          "end": 50.924
+        },
+        {
+          "word": "too.",
+          "start": 50.924,
+          "end": 52.172
+        }
+      ],
+      "start": 44.329,
+      "end": 52.172
+    },
+    {
+      "line": 8,
+      "english": "I promised to protect Sora.",
+      "word_timings": [
+        {
+          "word": "I",
+          "start": 52.472,
+          "end": 52.63
+        },
+        {
+          "word": "promised",
+          "start": 52.63,
+          "end": 53.211
+        },
+        {
+          "word": "to",
+          "start": 53.211,
+          "end": 53.691
+        },
+        {
+          "word": "protect",
+          "start": 53.691,
+          "end": 54.271
+        },
+        {
+          "word": "Sora.",
+          "start": 54.271,
+          "end": 55.371
+        }
+      ],
+      "start": 52.472,
+      "end": 55.371
+    },
+    {
+      "line": 9,
+      "english": "She trusted us in return.",
+      "word_timings": [
+        {
+          "word": "She",
+          "start": 55.671,
+          "end": 55.871
+        },
+        {
+          "word": "trusted",
+          "start": 55.871,
+          "end": 56.631
+        },
+        {
+          "word": "us",
+          "start": 56.631,
+          "end": 57.831
+        },
+        {
+          "word": "in",
+          "start": 57.831,
+          "end": 58.011
+        },
+        {
+          "word": "return.",
+          "start": 58.011,
+          "end": 59.511
+        }
+      ],
+      "start": 55.671,
+      "end": 59.511
+    },
+    {
+      "line": 10,
+      "english": "Father said, Let us accept this dog as family, and we embraced her together.",
+      "word_timings": [
+        {
+          "word": "Father",
+          "start": 60.812,
+          "end": 61.312
+        },
+        {
+          "word": "said,",
+          "start": 61.312,
+          "end": 62.092
+        },
+        {
+          "word": "Let",
+          "start": 62.092,
+          "end": 62.372
+        },
+        {
+          "word": "us",
+          "start": 62.372,
+          "end": 62.732
+        },
+        {
+          "word": "accept",
+          "start": 62.732,
+          "end": 63.452
+        },
+        {
+          "word": "this",
+          "start": 63.452,
+          "end": 63.873
+        },
+        {
+          "word": "dog",
+          "start": 63.873,
+          "end": 64.393
+        },
+        {
+          "word": "as",
+          "start": 64.393,
+          "end": 64.673
+        },
+        {
+          "word": "family,",
+          "start": 64.673,
+          "end": 66.753
+        },
+        {
+          "word": "and",
+          "start": 66.753,
+          "end": 66.933
+        },
+        {
+          "word": "we",
+          "start": 66.933,
+          "end": 67.173
+        },
+        {
+          "word": "embraced",
+          "start": 67.173,
+          "end": 67.793
+        },
+        {
+          "word": "her",
+          "start": 67.793,
+          "end": 68.413
+        },
+        {
+          "word": "together.",
+          "start": 68.413,
+          "end": 69.913
+        }
+      ],
+      "start": 60.812,
+      "end": 69.913
+    },
+    {
+      "line": 11,
+      "english": "After a few weeks, our care had made her a calm and contented dog.",
+      "word_timings": [
+        {
+          "word": "After",
+          "start": 73.514,
+          "end": 74.134
+        },
+        {
+          "word": "a",
+          "start": 74.134,
+          "end": 74.215
+        },
+        {
+          "word": "few",
+          "start": 74.215,
+          "end": 74.635
+        },
+        {
+          "word": "weeks,",
+          "start": 74.635,
+          "end": 75.135
+        },
+        {
+          "word": "our",
+          "start": 75.135,
+          "end": 75.375
+        },
+        {
+          "word": "care",
+          "start": 75.375,
+          "end": 75.875
+        },
+        {
+          "word": "had",
+          "start": 75.875,
+          "end": 76.075
+        },
+        {
+          "word": "made",
+          "start": 76.075,
+          "end": 76.495
+        },
+        {
+          "word": "her",
+          "start": 76.495,
+          "end": 77.682
+        },
+        {
+          "word": "a",
+          "start": 77.682,
+          "end": 77.835
+        },
+        {
+          "word": "calm",
+          "start": 77.835,
+          "end": 79.015
+        },
+        {
+          "word": "and",
+          "start": 79.015,
+          "end": 79.276
+        },
+        {
+          "word": "contented",
+          "start": 79.276,
+          "end": 80.396
+        },
+        {
+          "word": "dog.",
+          "start": 80.396,
+          "end": 81.896
+        }
+      ],
+      "start": 73.514,
+      "end": 81.896
+    },
+    {
+      "line": 12,
+      "english": "Sora became the curious, affectionate heart of our home, and she carried a warm bond into every heart.",
+      "word_timings": [
+        {
+          "word": "Sora",
+          "start": 85.137,
+          "end": 85.717
+        },
+        {
+          "word": "became",
+          "start": 85.717,
+          "end": 87.244
+        },
+        {
+          "word": "the",
+          "start": 87.244,
+          "end": 87.437
+        },
+        {
+          "word": "curious,",
+          "start": 87.437,
+          "end": 90.718
+        },
+        {
+          "word": "affectionate",
+          "start": 90.718,
+          "end": 91.898
+        },
+        {
+          "word": "heart",
+          "start": 91.898,
+          "end": 93.038
+        },
+        {
+          "word": "of",
+          "start": 93.038,
+          "end": 93.278
+        },
+        {
+          "word": "our",
+          "start": 93.278,
+          "end": 93.718
+        },
+        {
+          "word": "home,",
+          "start": 93.718,
+          "end": 96.839
+        },
+        {
+          "word": "and",
+          "start": 96.839,
+          "end": 97.039
+        },
+        {
+          "word": "she",
+          "start": 97.039,
+          "end": 97.319
+        },
+        {
+          "word": "carried",
+          "start": 97.319,
+          "end": 97.932
+        },
+        {
+          "word": "a",
+          "start": 97.932,
+          "end": 98.219
+        },
+        {
+          "word": "warm",
+          "start": 98.219,
+          "end": 98.839
+        },
+        {
+          "word": "bond",
+          "start": 98.839,
+          "end": 99.539
+        },
+        {
+          "word": "into",
+          "start": 99.539,
+          "end": 100.26
+        },
+        {
+          "word": "every",
+          "start": 100.26,
+          "end": 100.76
+        },
+        {
+          "word": "heart.",
+          "start": 100.76,
+          "end": 102.26
+        }
+      ],
+      "start": 85.137,
+      "end": 102.26
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

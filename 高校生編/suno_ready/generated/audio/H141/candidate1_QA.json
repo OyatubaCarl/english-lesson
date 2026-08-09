@@ -1,0 +1,261 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H141.md",
+  "audio": "高校生編/suno_ready/generated/audio/H141/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 169.12,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9895,
+  "expected_words": 287,
+  "transcribed_words": 284,
+  "matched_words": 282,
+  "coverage": 0.9826,
+  "precision": 0.993,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 286,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 14,
+      "length": 2,
+      "words": [
+        "eighty",
+        "seven"
+      ]
+    },
+    {
+      "start": 19,
+      "length": 2,
+      "words": [
+        "eighty",
+        "one"
+      ]
+    },
+    {
+      "start": 107,
+      "length": 1,
+      "words": [
+        "yuimaaru"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 107,
+      "actual_start": 103,
+      "expected": [
+        "yuimaaru"
+      ],
+      "actual": [
+        "yuimaru"
+      ],
+      "actual_confidence": 0.6398,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 177,
+      "actual_start": 173,
+      "expected": [],
+      "actual": [
+        "the"
+      ],
+      "actual_confidence": 0.5037
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 14,
+      "actual_start": 14,
+      "expected": [
+        "eighty",
+        "seven"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 19,
+      "actual_start": 17,
+      "expected": [
+        "eighty",
+        "one"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "Japanese people are among the longest lived in the world The average lifespan is 87 for women and 81 for men At the world's top level, what is the secret? Many researchers have tried to uncover this mystery The first factor is diet. Traditional Japanese food includes vegetables, fish, fermented foods, rice and miso. These are balanced in nutrition and do not contain excessive fat. The second factor is lifestyle habits. Japanese walk every day. Even in cities they commute by public transportation and walk to the station. The elderly also keep walking as a habit The third factor is social connection As in Okinawa's Yuimaru, local communities are strong And people are not isolated Okinawa especially is a well-known land of longevity With many people over a hundred The fourth factor is ikigai A reason for living Japanese people have the concept of ikigai To hold small goals and daily enjoyments After retirement, they occupy themselves With a vegetable garden or devote themselves to calligraphy But long life has its shadows too Dementia, the nursing care and the burden on social security The challenge is not only to live long but to simultaneously extend healthy life expectancy Young people today live differently from their parents' generation Fast food, greater reliance on cars and increasingly international diets Will the next generation be able to maintain the same longevity? Traditional food, the habit of walking, connection with community These are not old things but a resource for the future To incorporate old wisdom into convenient modern life Is the key to maintaining a long and healthy life across generations The secret of longevity is not a special medicine It is the accumulation of small daily choices",
+  "segments": [
+    {
+      "start": 10.04,
+      "end": 15.14,
+      "text": "Japanese people are among the longest lived in the world"
+    },
+    {
+      "start": 15.84,
+      "end": 20.72,
+      "text": "The average lifespan is 87 for women and 81 for men"
+    },
+    {
+      "start": 20.72,
+      "end": 24.42,
+      "text": "At the world's top level, what is the secret?"
+    },
+    {
+      "start": 25.18,
+      "end": 28.26,
+      "text": "Many researchers have tried to uncover this mystery"
+    },
+    {
+      "start": 28.26,
+      "end": 30.82,
+      "text": "The first factor is diet."
+    },
+    {
+      "start": 31.96,
+      "end": 38.36,
+      "text": "Traditional Japanese food includes vegetables, fish, fermented foods, rice and miso."
+    },
+    {
+      "start": 38.8,
+      "end": 43.46,
+      "text": "These are balanced in nutrition and do not contain excessive fat."
+    },
+    {
+      "start": 44.14,
+      "end": 48.44,
+      "text": "The second factor is lifestyle habits. Japanese walk every day."
+    },
+    {
+      "start": 48.82,
+      "end": 54.64,
+      "text": "Even in cities they commute by public transportation and walk to the station."
+    },
+    {
+      "start": 54.64,
+      "end": 58.82,
+      "text": "The elderly also keep walking as a habit"
+    },
+    {
+      "start": 58.82,
+      "end": 63.38,
+      "text": "The third factor is social connection"
+    },
+    {
+      "start": 63.38,
+      "end": 69.08,
+      "text": "As in Okinawa's Yuimaru, local communities are strong"
+    },
+    {
+      "start": 69.08,
+      "end": 70.8,
+      "text": "And people are not isolated"
+    },
+    {
+      "start": 70.8,
+      "end": 74.74,
+      "text": "Okinawa especially is a well-known land of longevity"
+    },
+    {
+      "start": 74.74,
+      "end": 77.04,
+      "text": "With many people over a hundred"
+    },
+    {
+      "start": 78.22,
+      "end": 80.9,
+      "text": "The fourth factor is ikigai"
+    },
+    {
+      "start": 80.9,
+      "end": 82.58,
+      "text": "A reason for living"
+    },
+    {
+      "start": 83.72,
+      "end": 87.68,
+      "text": "Japanese people have the concept of ikigai"
+    },
+    {
+      "start": 87.68,
+      "end": 91.72,
+      "text": "To hold small goals and daily enjoyments"
+    },
+    {
+      "start": 91.72,
+      "end": 94.58,
+      "text": "After retirement, they occupy themselves"
+    },
+    {
+      "start": 94.58,
+      "end": 98.88,
+      "text": "With a vegetable garden or devote themselves to calligraphy"
+    },
+    {
+      "start": 98.88,
+      "end": 101.82,
+      "text": "But long life has its shadows too"
+    },
+    {
+      "start": 105.78,
+      "end": 110.02,
+      "text": "Dementia, the nursing care and the burden on social security"
+    },
+    {
+      "start": 110.02,
+      "end": 116.58,
+      "text": "The challenge is not only to live long but to simultaneously extend healthy life expectancy"
+    },
+    {
+      "start": 116.58,
+      "end": 122.0,
+      "text": "Young people today live differently from their parents' generation"
+    },
+    {
+      "start": 122.0,
+      "end": 128.26,
+      "text": "Fast food, greater reliance on cars and increasingly international diets"
+    },
+    {
+      "start": 128.26,
+      "end": 132.88,
+      "text": "Will the next generation be able to maintain the same longevity?"
+    },
+    {
+      "start": 133.68,
+      "end": 138.02,
+      "text": "Traditional food, the habit of walking, connection with community"
+    },
+    {
+      "start": 138.1,
+      "end": 142.52,
+      "text": "These are not old things but a resource for the future"
+    },
+    {
+      "start": 142.52,
+      "end": 147.04,
+      "text": "To incorporate old wisdom into convenient modern life"
+    },
+    {
+      "start": 147.04,
+      "end": 151.56,
+      "text": "Is the key to maintaining a long and healthy life across generations"
+    },
+    {
+      "start": 152.1,
+      "end": 157.26,
+      "text": "The secret of longevity is not a special medicine"
+    },
+    {
+      "start": 157.26,
+      "end": 161.54,
+      "text": "It is the accumulation of small daily choices"
+    }
+  ]
+}

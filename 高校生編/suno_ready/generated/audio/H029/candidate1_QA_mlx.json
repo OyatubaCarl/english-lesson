@@ -1,0 +1,180 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H029.md",
+  "audio": "高校生編/suno_ready/generated/audio/H029/candidate1-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 147.96,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9623,
+  "expected_words": 159,
+  "transcribed_words": 153,
+  "matched_words": 152,
+  "coverage": 0.956,
+  "precision": 0.9935,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 158,
+  "longest_missing_run": 4,
+  "largest_missing_runs": [
+    {
+      "start": 128,
+      "length": 4,
+      "words": [
+        "four",
+        "thousand",
+        "eight",
+        "hundred"
+      ]
+    },
+    {
+      "start": 39,
+      "length": 2,
+      "words": [
+        "four",
+        "thousand"
+      ]
+    },
+    {
+      "start": 138,
+      "length": 1,
+      "words": [
+        "a"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 138,
+      "actual_start": 132,
+      "expected": [
+        "a"
+      ],
+      "actual": [
+        "the"
+      ],
+      "actual_confidence": 0.7837,
+      "substitution_words": 1,
+      "has_content_word": false
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 39,
+      "actual_start": 39,
+      "expected": [
+        "four",
+        "thousand"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 128,
+      "actual_start": 126,
+      "expected": [
+        "four",
+        "thousand",
+        "eight",
+        "hundred"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": false,
+  "transcript": "What is the oldest tree in the world? Many people think of a great oak But there is an ancient tree far older than any oak High in the mountains of California A bristlecone pine has survived for over 4,000 years It is one of the oldest living trees on earth The bristlecone pine grows slowly Compared with other pines, it may add only a few millimeters each year But it is far stronger in the high mountains The air is thin, the wind is cold, and the soil is poor Yet such a harsh environment is What has enabled the long life of this tree Scientists measure the age of these trees From growth rings within the wood One has been found to be more than 4,800 years old We cannot help admiring the tree That is older than many civilizations It is among the most remarkable living beings carrying silence and strength together",
+  "segments": [
+    {
+      "start": 11.32,
+      "end": 16.06,
+      "text": "What is the oldest tree in the world?"
+    },
+    {
+      "start": 16.94,
+      "end": 20.24,
+      "text": "Many people think of a great oak"
+    },
+    {
+      "start": 21.78,
+      "end": 29.02,
+      "text": "But there is an ancient tree far older than any oak"
+    },
+    {
+      "start": 32.92,
+      "end": 37.26,
+      "text": "High in the mountains of California"
+    },
+    {
+      "start": 37.26,
+      "end": 44.38,
+      "text": "A bristlecone pine has survived for over 4,000 years"
+    },
+    {
+      "start": 44.38,
+      "end": 48.98,
+      "text": "It is one of the oldest living trees on earth"
+    },
+    {
+      "start": 48.98,
+      "end": 54.74,
+      "text": "The bristlecone pine grows slowly"
+    },
+    {
+      "start": 56.24,
+      "end": 63.66,
+      "text": "Compared with other pines, it may add only a few millimeters each year"
+    },
+    {
+      "start": 63.66,
+      "end": 70.26,
+      "text": "But it is far stronger in the high mountains"
+    },
+    {
+      "start": 70.26,
+      "end": 79.8,
+      "text": "The air is thin, the wind is cold, and the soil is poor"
+    },
+    {
+      "start": 89.7,
+      "end": 95.0,
+      "text": "Yet such a harsh environment is"
+    },
+    {
+      "start": 95.0,
+      "end": 99.8,
+      "text": "What has enabled the long life of this tree"
+    },
+    {
+      "start": 99.8,
+      "end": 106.32,
+      "text": "Scientists measure the age of these trees"
+    },
+    {
+      "start": 106.32,
+      "end": 111.6,
+      "text": "From growth rings within the wood"
+    },
+    {
+      "start": 113.34,
+      "end": 122.98,
+      "text": "One has been found to be more than 4,800 years old"
+    },
+    {
+      "start": 122.98,
+      "end": 128.66,
+      "text": "We cannot help admiring the tree"
+    },
+    {
+      "start": 128.66,
+      "end": 134.16,
+      "text": "That is older than many civilizations"
+    },
+    {
+      "start": 134.16,
+      "end": 147.96,
+      "text": "It is among the most remarkable living beings carrying silence and strength together"
+    }
+  ]
+}

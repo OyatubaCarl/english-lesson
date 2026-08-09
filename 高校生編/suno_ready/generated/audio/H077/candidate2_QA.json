@@ -1,0 +1,240 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H077.md",
+  "audio": "高校生編/suno_ready/generated/audio/H077/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 137.8,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.011,
+  "expected_words": 181,
+  "transcribed_words": 183,
+  "matched_words": 177,
+  "coverage": 0.9779,
+  "precision": 0.9672,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 180,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 30,
+      "length": 1,
+      "words": [
+        "an"
+      ]
+    },
+    {
+      "start": 32,
+      "length": 1,
+      "words": [
+        "exists"
+      ]
+    },
+    {
+      "start": 107,
+      "length": 1,
+      "words": [
+        "examine"
+      ]
+    },
+    {
+      "start": 149,
+      "length": 1,
+      "words": [
+        "this"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 30,
+      "actual_start": 31,
+      "expected": [
+        "an"
+      ],
+      "actual": [
+        "and"
+      ],
+      "actual_confidence": 0.4617,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 32,
+      "actual_start": 33,
+      "expected": [
+        "exists"
+      ],
+      "actual": [
+        "exist"
+      ],
+      "actual_confidence": 0.4895,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 107,
+      "actual_start": 108,
+      "expected": [
+        "examine"
+      ],
+      "actual": [
+        "examining"
+      ],
+      "actual_confidence": 0.2595,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 149,
+      "actual_start": 150,
+      "expected": [
+        "this"
+      ],
+      "actual": [
+        "the"
+      ],
+      "actual_confidence": 0.893,
+      "substitution_words": 1,
+      "has_content_word": false
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 0,
+      "actual_start": 0,
+      "expected": [],
+      "actual": [
+        "music"
+      ],
+      "actual_confidence": 0.0149
+    },
+    {
+      "expected_start": 181,
+      "actual_start": 182,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.1266
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": false,
+  "transcript": "Music Every day we are exposed to an enormous amount of information Newspapers, television, articles on the internet And posts on social media But how much of it is truly accurate and advertisement exist? Not simply to convey facts, but to encourage purchases. Political propaganda manipulates information in order to spread a particular viewpoint. Now anyone can publish information on social media. As a result, unverified rumors and misleading information spread instantly The more sensational the headline, the more attention it draws What then, should we believe? First, verify the source of the information Who published it and what evidence does it rest upon? If statistics are quoted examining critically how that data was gathered It is also important to compare several sources for any single event If we judge from only one perspective, we arrive at a biased conclusion Critical thinking is the only power that protects us in the sea of information Media literacy has become an essential skill For everyone living in our age It is not about doubting all information But about facing information in the right way you",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.72,
+      "text": "Music"
+    },
+    {
+      "start": 9.54,
+      "end": 15.6,
+      "text": "Every day we are exposed to an enormous amount of information"
+    },
+    {
+      "start": 15.6,
+      "end": 20.2,
+      "text": "Newspapers, television, articles on the internet"
+    },
+    {
+      "start": 20.2,
+      "end": 24.18,
+      "text": "And posts on social media"
+    },
+    {
+      "start": 25.36,
+      "end": 30.88,
+      "text": "But how much of it is truly accurate and advertisement exist?"
+    },
+    {
+      "start": 31.5,
+      "end": 35.68,
+      "text": "Not simply to convey facts, but to encourage purchases."
+    },
+    {
+      "start": 37.18,
+      "end": 43.72,
+      "text": "Political propaganda manipulates information in order to spread a particular viewpoint."
+    },
+    {
+      "start": 44.24,
+      "end": 49.18,
+      "text": "Now anyone can publish information on social media."
+    },
+    {
+      "start": 49.18,
+      "end": 54.92,
+      "text": "As a result, unverified rumors and misleading information spread instantly"
+    },
+    {
+      "start": 54.92,
+      "end": 60.98,
+      "text": "The more sensational the headline, the more attention it draws"
+    },
+    {
+      "start": 60.98,
+      "end": 65.04,
+      "text": "What then, should we believe?"
+    },
+    {
+      "start": 66.7,
+      "end": 70.68,
+      "text": "First, verify the source of the information"
+    },
+    {
+      "start": 70.68,
+      "end": 75.86,
+      "text": "Who published it and what evidence does it rest upon?"
+    },
+    {
+      "start": 75.86,
+      "end": 82.64,
+      "text": "If statistics are quoted examining critically how that data was gathered"
+    },
+    {
+      "start": 82.64,
+      "end": 89.54,
+      "text": "It is also important to compare several sources for any single event"
+    },
+    {
+      "start": 89.54,
+      "end": 96.76,
+      "text": "If we judge from only one perspective, we arrive at a biased conclusion"
+    },
+    {
+      "start": 96.76,
+      "end": 103.38,
+      "text": "Critical thinking is the only power that protects us in the sea of information"
+    },
+    {
+      "start": 103.38,
+      "end": 109.7,
+      "text": "Media literacy has become an essential skill"
+    },
+    {
+      "start": 109.7,
+      "end": 114.72,
+      "text": "For everyone living in our age"
+    },
+    {
+      "start": 114.72,
+      "end": 119.68,
+      "text": "It is not about doubting all information"
+    },
+    {
+      "start": 121.14,
+      "end": 126.3,
+      "text": "But about facing information in the right way"
+    },
+    {
+      "start": 136.38,
+      "end": 137.78,
+      "text": "you"
+    }
+  ]
+}

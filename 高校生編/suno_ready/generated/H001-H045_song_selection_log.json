@@ -1,0 +1,2006 @@
+{
+  "range": "H001-H045",
+  "finalized_at": "2026-08-02T19:25:00+09:00",
+  "policy": "Compare both initial candidates, prioritize wrong-word substitutions over omissions, and normally inspect at most three songs per unchanged lyric version. When the user explicitly requests a wording rewrite after three failures, compare the rewritten pair and record exactly one adopted song.",
+  "summary": {
+    "total": 45,
+    "counts": {
+      "PASS": 39,
+      "PASS_AFTER_REWRITE": 2,
+      "PASS_AFTER_REGENERATION": 2,
+      "PASS_EQUIVALENT": 2
+    },
+    "stopped_after_three": [],
+    "corrected_before_regeneration": {
+      "H009": [
+        "We thought about several conditions and made a clear plan.",
+        "Mother was tired, but she said she would prepare sandwiches.",
+        "As Sunday approaches, my sister's face remains calm."
+      ],
+      "H035": [
+        "In 1831, Charles Darwin began a voyage around the world aboard a British survey ship.",
+        "On the Galapagos Islands, he carefully observed how animals varied from island to island."
+      ]
+    }
+  },
+  "required_fields": [
+    "lesson",
+    "share_url",
+    "song_id",
+    "duration_seconds",
+    "generation_attempt",
+    "lyrics_match",
+    "omissions",
+    "pronunciation_notes",
+    "timing_notes",
+    "selection_reason"
+  ],
+  "songs": [
+    {
+      "lesson": "H001",
+      "title": "H001 — 夜明けの湖",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/e2ae2927-c694-4bdb-a948-43d576bd556e",
+      "song_id": "e2ae2927-c694-4bdb-a948-43d576bd556e",
+      "duration_seconds": 124.48,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 124.48,
+        "expected_words": 121,
+        "approx_words_per_minute": 58.3,
+        "all_lyrics_characters": 724
+      },
+      "selection_reason": "両候補とも全文一致。候補1の約124.5秒のゆとりある発音を採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 124.48
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 113.74
+        }
+      }
+    },
+    {
+      "lesson": "H002",
+      "title": "H002 — 春、すべてがあたらしい",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/69fa1c09-5866-4b87-bbe3-533d1a174186",
+      "song_id": "69fa1c09-5866-4b87-bbe3-533d1a174186",
+      "duration_seconds": 87.3,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 87.3,
+        "expected_words": 120,
+        "approx_words_per_minute": 82.5,
+        "all_lyrics_characters": 707
+      },
+      "selection_reason": "候補1のみ誤語置換疑いなし。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 87.3
+        },
+        "candidate2": {
+          "verdict": "REVIEW_WRONG_LYRIC",
+          "coverage": 0.9917,
+          "duration_seconds": 88.98
+        }
+      }
+    },
+    {
+      "lesson": "H003",
+      "title": "H003 — 本屋での午後",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/d80ae6be-7882-4d67-821f-6caae909ace0",
+      "song_id": "d80ae6be-7882-4d67-821f-6caae909ace0",
+      "duration_seconds": 76.08,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 76.08,
+        "expected_words": 126,
+        "approx_words_per_minute": 99.4,
+        "all_lyrics_characters": 759
+      },
+      "selection_reason": "両候補とも全文一致。候補1の約76.1秒のゆとりある発音を採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 76.08
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 70.8
+        }
+      }
+    },
+    {
+      "lesson": "H004",
+      "title": "H004 — 父からの小さな贈り物",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/f872351f-d668-4bb8-958c-69d2dcb0aeac",
+      "song_id": "f872351f-d668-4bb8-958c-69d2dcb0aeac",
+      "duration_seconds": 99.82,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 99.82,
+        "expected_words": 121,
+        "approx_words_per_minute": 72.7,
+        "all_lyrics_characters": 686
+      },
+      "selection_reason": "候補1のみ誤語置換疑いなし。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 99.82
+        },
+        "candidate2": {
+          "verdict": "REVIEW_WRONG_LYRIC",
+          "coverage": 0.9752,
+          "duration_seconds": 101.78
+        }
+      }
+    },
+    {
+      "lesson": "H005",
+      "title": "H005 — 新しい家族 Sora",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/b3fc6393-ff68-44bd-b48a-6de8109e542d",
+      "song_id": "b3fc6393-ff68-44bd-b48a-6de8109e542d",
+      "duration_seconds": 101.2,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 101.2,
+        "expected_words": 116,
+        "approx_words_per_minute": 68.8,
+        "all_lyrics_characters": 662
+      },
+      "selection_reason": "両候補とも全文一致。候補2の約101.2秒のゆとりある発音を採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 85.16
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 101.2
+        }
+      }
+    },
+    {
+      "lesson": "H006",
+      "title": "H006 — 秋の午後の縁側",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/06833cf8-7175-4fa1-a015-e512dee755f9",
+      "song_id": "06833cf8-7175-4fa1-a015-e512dee755f9",
+      "duration_seconds": 117.8,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 117.8,
+        "expected_words": 145,
+        "approx_words_per_minute": 73.9,
+        "all_lyrics_characters": 812
+      },
+      "selection_reason": "両候補とも全文一致。候補1の約117.8秒のゆとりある発音を採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 117.8
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 91.2
+        }
+      }
+    },
+    {
+      "lesson": "H007",
+      "title": "H007 — 日々のリズム",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/d3317733-8586-47bb-afab-81346c1c7ba5",
+      "song_id": "d3317733-8586-47bb-afab-81346c1c7ba5",
+      "duration_seconds": 87.76,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 0.9933,
+        "precision": 0.9801,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [
+        {
+          "start": 61,
+          "length": 1,
+          "words": [
+            "coworkers"
+          ]
+        }
+      ],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 87.76,
+        "expected_words": 149,
+        "approx_words_per_minute": 101.9,
+        "all_lyrics_characters": 847
+      },
+      "selection_reason": "両候補合格。候補2の歌詞一致率99.33%が高いため採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 0.9866,
+          "duration_seconds": 114.64
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 0.9933,
+          "duration_seconds": 87.76
+        }
+      }
+    },
+    {
+      "lesson": "H008",
+      "title": "H008 — 夕食のテーブル",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/4af6a8ef-0244-465f-80cc-75b7d4a3d712",
+      "song_id": "4af6a8ef-0244-465f-80cc-75b7d4a3d712",
+      "duration_seconds": 82.4,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 0.9859,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 82.4,
+        "expected_words": 140,
+        "approx_words_per_minute": 101.9,
+        "all_lyrics_characters": 818
+      },
+      "selection_reason": "両候補合格。候補2の歌詞一致率100.00%が高いため採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 0.9714,
+          "duration_seconds": 72.16
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 82.4
+        }
+      }
+    },
+    {
+      "lesson": "H009",
+      "title": "H009 — 日曜日のピクニック",
+      "adopted_candidate": "rewrite_candidate1",
+      "share_url": "https://suno.com/song/b3f9f2ad-b2ea-41cd-a388-1f38771e3ac8",
+      "song_id": "b3f9f2ad-b2ea-41cd-a388-1f38771e3ac8",
+      "duration_seconds": 62.02,
+      "generation_attempt": 3,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS_AFTER_REWRITE",
+        "raw_asr_verdict": "PASS",
+        "coverage": 0.9928,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [
+        {
+          "start": 44,
+          "length": 1,
+          "words": [
+            "ten"
+          ]
+        }
+      ],
+      "pronunciation_notes": "誤認識しやすかった discussed / turned / although を thought / made / but に改稿。表現改訂版の候補1は内容語置換0件。ten→10 はASR表示上の数字化のみ。",
+      "timing_notes": {
+        "duration_seconds": 62.02,
+        "expected_words": 138,
+        "approx_words_per_minute": 133.5,
+        "all_lyrics_characters": 814
+      },
+      "selection_reason": "誤認識しやすい表現を改稿。改訂版候補1は内容語置換0件で、候補2の sight→side を回避。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 0.9928,
+          "duration_seconds": 62.02
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 0.9928,
+          "duration_seconds": 65.04
+        }
+      }
+    },
+    {
+      "lesson": "H010",
+      "title": "H010 — 明日の今ごろ",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/794bf349-fa41-487d-98e9-e9a488d0e6ec",
+      "song_id": "794bf349-fa41-487d-98e9-e9a488d0e6ec",
+      "duration_seconds": 83.52,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 0.9862,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 83.52,
+        "expected_words": 143,
+        "approx_words_per_minute": 102.7,
+        "all_lyrics_characters": 818
+      },
+      "selection_reason": "両候補合格。候補1の歌詞一致率100.00%が高いため採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 83.52
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 0.993,
+          "duration_seconds": 78.1
+        }
+      }
+    },
+    {
+      "lesson": "H011",
+      "title": "H011 — 姉の静かなアドバイス",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/d134669e-767f-4ee3-b24c-054a9438b5f5",
+      "song_id": "d134669e-767f-4ee3-b24c-054a9438b5f5",
+      "duration_seconds": 112.78,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 112.78,
+        "expected_words": 128,
+        "approx_words_per_minute": 68.1,
+        "all_lyrics_characters": 770
+      },
+      "selection_reason": "両候補とも全文一致。候補1の約112.8秒のゆとりある発音を採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 112.78
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 104.54
+        }
+      }
+    },
+    {
+      "lesson": "H012",
+      "title": "H012 — 続いてきた時間",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/9966b412-2aad-4ff0-ab21-b00c2425256e",
+      "song_id": "9966b412-2aad-4ff0-ab21-b00c2425256e",
+      "duration_seconds": 87.84,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 87.84,
+        "expected_words": 148,
+        "approx_words_per_minute": 101.1,
+        "all_lyrics_characters": 864
+      },
+      "selection_reason": "両候補とも全文一致。候補2の約87.8秒のゆとりある発音を採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 85.06
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 87.84
+        }
+      }
+    },
+    {
+      "lesson": "H013",
+      "title": "H013 — 着いたときには",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/bbf9a19b-cfbd-49c2-9a87-94988ee5eff5",
+      "song_id": "bbf9a19b-cfbd-49c2-9a87-94988ee5eff5",
+      "duration_seconds": 96.4,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 96.4,
+        "expected_words": 155,
+        "approx_words_per_minute": 96.5,
+        "all_lyrics_characters": 837
+      },
+      "selection_reason": "両候補合格。候補2の歌詞一致率100.00%が高いため採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 0.9935,
+          "duration_seconds": 91.9
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 96.4
+        }
+      }
+    },
+    {
+      "lesson": "H014",
+      "title": "H014 — あと5年後の自分",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/f07402be-ee5c-49c5-ba5a-25bb910a8571",
+      "song_id": "f07402be-ee5c-49c5-ba5a-25bb910a8571",
+      "duration_seconds": 96.9,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 96.9,
+        "expected_words": 118,
+        "approx_words_per_minute": 73.1,
+        "all_lyrics_characters": 684
+      },
+      "selection_reason": "両候補合格。候補2の歌詞一致率100.00%が高いため採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 0.9831,
+          "duration_seconds": 71.64
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 96.9
+        }
+      }
+    },
+    {
+      "lesson": "H015",
+      "title": "H015 — 年の瀬の静けさ",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/6216dd29-d3b6-42c3-938b-78815a6da0af",
+      "song_id": "6216dd29-d3b6-42c3-938b-78815a6da0af",
+      "duration_seconds": 114.02,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 114.02,
+        "expected_words": 160,
+        "approx_words_per_minute": 84.2,
+        "all_lyrics_characters": 857
+      },
+      "selection_reason": "候補1のみ誤語置換疑いなし。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 114.02
+        },
+        "candidate2": {
+          "verdict": "REVIEW_WRONG_LYRIC",
+          "coverage": 0.975,
+          "duration_seconds": 123.0
+        }
+      }
+    },
+    {
+      "lesson": "H016",
+      "title": "H016 — あの日の小さな迷い",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/80537d54-5fb7-4c0d-875e-edea1991938f",
+      "song_id": "80537d54-5fb7-4c0d-875e-edea1991938f",
+      "duration_seconds": 88.24,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 88.24,
+        "expected_words": 119,
+        "approx_words_per_minute": 80.9,
+        "all_lyrics_characters": 681
+      },
+      "selection_reason": "候補2のみ誤語置換疑いなし。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "REVIEW_WRONG_LYRIC",
+          "coverage": 0.958,
+          "duration_seconds": 104.24
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 88.24
+        }
+      }
+    },
+    {
+      "lesson": "H017",
+      "title": "H017 — 古い洋館の復活",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/94aa3f9d-6df2-4736-ac05-e31b2df3690d",
+      "song_id": "94aa3f9d-6df2-4736-ac05-e31b2df3690d",
+      "duration_seconds": 111.36,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 0.9927,
+        "precision": 0.9927,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [
+        {
+          "start": 32,
+          "length": 1,
+          "words": [
+            "eighty"
+          ]
+        }
+      ],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 111.36,
+        "expected_words": 137,
+        "approx_words_per_minute": 73.8,
+        "all_lyrics_characters": 837
+      },
+      "selection_reason": "両候補合格。候補1の歌詞一致率99.27%が高いため採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 0.9927,
+          "duration_seconds": 111.36
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 0.9854,
+          "duration_seconds": 113.56
+        }
+      }
+    },
+    {
+      "lesson": "H018",
+      "title": "H018 — 妹の練習",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/040d77b5-9c2b-4c30-a3b8-6d09aff64251",
+      "song_id": "040d77b5-9c2b-4c30-a3b8-6d09aff64251",
+      "duration_seconds": 75.44,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 0.9784,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [
+        {
+          "start": 27,
+          "length": 1,
+          "words": [
+            "ten"
+          ]
+        },
+        {
+          "start": 49,
+          "length": 1,
+          "words": [
+            "a"
+          ]
+        },
+        {
+          "start": 69,
+          "length": 1,
+          "words": [
+            "ten"
+          ]
+        }
+      ],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 75.44,
+        "expected_words": 139,
+        "approx_words_per_minute": 110.6,
+        "all_lyrics_characters": 763
+      },
+      "selection_reason": "両候補合格。候補2の歌詞一致率97.84%が高いため採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 0.964,
+          "duration_seconds": 90.2
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 0.9784,
+          "duration_seconds": 75.44
+        }
+      }
+    },
+    {
+      "lesson": "H019",
+      "title": "H019 — 父の日記帳",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/c205b65a-1615-4479-970e-9f222cca012f",
+      "song_id": "c205b65a-1615-4479-970e-9f222cca012f",
+      "duration_seconds": 95.68,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 95.68,
+        "expected_words": 127,
+        "approx_words_per_minute": 79.6,
+        "all_lyrics_characters": 711
+      },
+      "selection_reason": "両候補とも全文一致。候補2の約95.7秒のゆとりある発音を採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 91.54
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 95.68
+        }
+      }
+    },
+    {
+      "lesson": "H020",
+      "title": "H020 — 夕暮れの町を歩く",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/6dd1023a-887d-40ad-a857-aafb1f801170",
+      "song_id": "6dd1023a-887d-40ad-a857-aafb1f801170",
+      "duration_seconds": 76.26,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 76.26,
+        "expected_words": 115,
+        "approx_words_per_minute": 90.5,
+        "all_lyrics_characters": 676
+      },
+      "selection_reason": "両候補とも全文一致。候補1の約76.3秒のゆとりある発音を採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 76.26
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 72.94
+        }
+      }
+    },
+    {
+      "lesson": "H021",
+      "title": "H021 — 友を見送る朝",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/8c2d8921-9ae6-429f-a774-ff8e76d393f3",
+      "song_id": "8c2d8921-9ae6-429f-a774-ff8e76d393f3",
+      "duration_seconds": 104.4,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 104.4,
+        "expected_words": 137,
+        "approx_words_per_minute": 78.7,
+        "all_lyrics_characters": 782
+      },
+      "selection_reason": "両候補とも全文一致。候補2の約104.4秒のゆとりある発音を採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 100.24
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 104.4
+        }
+      }
+    },
+    {
+      "lesson": "H022",
+      "title": "H022 — 先生のお家",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/452e7430-0057-4cba-b14b-3e236c512998",
+      "song_id": "452e7430-0057-4cba-b14b-3e236c512998",
+      "duration_seconds": 117.08,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 117.08,
+        "expected_words": 164,
+        "approx_words_per_minute": 84.0,
+        "all_lyrics_characters": 908
+      },
+      "selection_reason": "両候補とも全文一致。候補1の約117.1秒のゆとりある発音を採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 117.08
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 111.7
+        }
+      }
+    },
+    {
+      "lesson": "H023",
+      "title": "H023 — 何が大切か",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/73a2363a-e1ac-449e-af07-2dd24717bed8",
+      "song_id": "73a2363a-e1ac-449e-af07-2dd24717bed8",
+      "duration_seconds": 94.94,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 94.94,
+        "expected_words": 110,
+        "approx_words_per_minute": 69.5,
+        "all_lyrics_characters": 646
+      },
+      "selection_reason": "両候補とも全文一致。候補2の約94.9秒のゆとりある発音を採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 88.62
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 94.94
+        }
+      }
+    },
+    {
+      "lesson": "H024",
+      "title": "H024 — 祖父と灯台",
+      "adopted_candidate": 3,
+      "share_url": "https://suno.com/song/b9e308df-6aae-40ea-936e-69a6cc44ca67",
+      "song_id": "b9e308df-6aae-40ea-936e-69a6cc44ca67",
+      "duration_seconds": 80.7,
+      "generation_attempt": 2,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS_AFTER_REGENERATION",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 0.9935,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "3曲目で checked / wiped / worked の過去形語尾を含め全文一致。",
+      "timing_notes": {
+        "duration_seconds": 80.7,
+        "expected_words": 154,
+        "approx_words_per_minute": 114.5,
+        "all_lyrics_characters": 856
+      },
+      "selection_reason": "初回2候補の誤語・構造不良を3曲目で解消したため採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "REVIEW_WRONG_LYRIC",
+          "coverage": 0.9675,
+          "duration_seconds": 121.28
+        },
+        "candidate2": {
+          "verdict": "REVIEW_WRONG_LYRIC",
+          "coverage": 0.9481,
+          "duration_seconds": 119.28
+        }
+      }
+    },
+    {
+      "lesson": "H025",
+      "title": "H025 — 町の小さな音楽会",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/ac41fe14-8042-4b91-9400-b2c47d99ff23",
+      "song_id": "ac41fe14-8042-4b91-9400-b2c47d99ff23",
+      "duration_seconds": 78.26,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 78.26,
+        "expected_words": 113,
+        "approx_words_per_minute": 86.6,
+        "all_lyrics_characters": 696
+      },
+      "selection_reason": "候補2のみ誤語置換疑いなし。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "REVIEW_WRONG_LYRIC",
+          "coverage": 0.9823,
+          "duration_seconds": 76.72
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 78.26
+        }
+      }
+    },
+    {
+      "lesson": "H026",
+      "title": "H026 — もしも鳥だったら",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/553fe599-1190-4704-b710-056ac52bd5db",
+      "song_id": "553fe599-1190-4704-b710-056ac52bd5db",
+      "duration_seconds": 107.52,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 107.52,
+        "expected_words": 136,
+        "approx_words_per_minute": 75.9,
+        "all_lyrics_characters": 718
+      },
+      "selection_reason": "両候補とも全文一致。候補1の約107.5秒のゆとりある発音を採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 107.52
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 97.88
+        }
+      }
+    },
+    {
+      "lesson": "H027",
+      "title": "H027 — あの日の手紙",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/19e54831-791a-4ca6-8c79-a9fbeb295e14",
+      "song_id": "19e54831-791a-4ca6-8c79-a9fbeb295e14",
+      "duration_seconds": 105.14,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 105.14,
+        "expected_words": 147,
+        "approx_words_per_minute": 83.9,
+        "all_lyrics_characters": 784
+      },
+      "selection_reason": "両候補合格。候補1の歌詞一致率100.00%が高いため採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 105.14
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 0.9932,
+          "duration_seconds": 105.86
+        }
+      }
+    },
+    {
+      "lesson": "H028",
+      "title": "H028 — ペニシリンの発見",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/f942bf3f-e2da-4827-b743-3a74aac7d4d8",
+      "song_id": "f942bf3f-e2da-4827-b743-3a74aac7d4d8",
+      "duration_seconds": 83.02,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 83.02,
+        "expected_words": 129,
+        "approx_words_per_minute": 93.2,
+        "all_lyrics_characters": 821
+      },
+      "selection_reason": "両候補合格。候補2の歌詞一致率100.00%が高いため採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 0.9767,
+          "duration_seconds": 102.88
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 83.02
+        }
+      }
+    },
+    {
+      "lesson": "H029",
+      "title": "H029 — 世界で最も古い樹木",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/fc02df76-bbf8-46d4-a04c-cd36e9c36ad9",
+      "song_id": "fc02df76-bbf8-46d4-a04c-cd36e9c36ad9",
+      "duration_seconds": 139.28,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 0.9623,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [
+        {
+          "start": 128,
+          "length": 4,
+          "words": [
+            "four",
+            "thousand",
+            "eight",
+            "hundred"
+          ]
+        },
+        {
+          "start": 39,
+          "length": 2,
+          "words": [
+            "four",
+            "thousand"
+          ]
+        }
+      ],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 139.28,
+        "expected_words": 159,
+        "approx_words_per_minute": 68.5,
+        "all_lyrics_characters": 917
+      },
+      "selection_reason": "両候補合格。候補2の歌詞一致率96.23%が高いため採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 0.956,
+          "duration_seconds": 147.96
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 0.9623,
+          "duration_seconds": 139.28
+        }
+      }
+    },
+    {
+      "lesson": "H030",
+      "title": "H030 — 人類、月に立つ",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/6f06adc5-e65f-4507-991a-f8824cda1bfa",
+      "song_id": "6f06adc5-e65f-4507-991a-f8824cda1bfa",
+      "duration_seconds": 62.48,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 62.48,
+        "expected_words": 110,
+        "approx_words_per_minute": 105.6,
+        "all_lyrics_characters": 713
+      },
+      "selection_reason": "両候補とも全文一致。候補2の約62.5秒のゆとりある発音を採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 61.14
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 62.48
+        }
+      }
+    },
+    {
+      "lesson": "H031",
+      "title": "H031 — キュリー夫人の情熱",
+      "adopted_candidate": 3,
+      "share_url": "https://suno.com/song/71e8bdf2-5735-496b-a147-cb1e40f3f4f1",
+      "song_id": "71e8bdf2-5735-496b-a147-cb1e40f3f4f1",
+      "duration_seconds": 61.26,
+      "generation_attempt": 2,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS_AFTER_REGENERATION",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "3曲目で Marie Curie の異常反復が解消し、全文一致。",
+      "timing_notes": {
+        "duration_seconds": 61.26,
+        "expected_words": 125,
+        "approx_words_per_minute": 122.4,
+        "all_lyrics_characters": 774
+      },
+      "selection_reason": "初回2候補の誤語・構造不良を3曲目で解消したため採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "REVIEW_WRONG_LYRIC",
+          "coverage": 0.792,
+          "duration_seconds": 108.26
+        },
+        "candidate2": {
+          "verdict": "REVIEW_WRONG_LYRIC",
+          "coverage": 0.792,
+          "duration_seconds": 103.76
+        }
+      }
+    },
+    {
+      "lesson": "H032",
+      "title": "H032 — ローザ・パークスの『いいえ』",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/3a9deb88-f6d9-491e-8d65-305b387bdb7e",
+      "song_id": "3a9deb88-f6d9-491e-8d65-305b387bdb7e",
+      "duration_seconds": 87.18,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 0.9733,
+        "precision": 0.9799,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [
+        {
+          "start": 123,
+          "length": 2,
+          "words": [
+            "u",
+            "s"
+          ]
+        },
+        {
+          "start": 24,
+          "length": 1,
+          "words": [
+            "no"
+          ]
+        },
+        {
+          "start": 131,
+          "length": 1,
+          "words": [
+            "no"
+          ]
+        }
+      ],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 87.18,
+        "expected_words": 150,
+        "approx_words_per_minute": 103.2,
+        "all_lyrics_characters": 902
+      },
+      "selection_reason": "候補1のみ誤語置換疑いなし。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 0.9733,
+          "duration_seconds": 87.18
+        },
+        "candidate2": {
+          "verdict": "REVIEW_WRONG_LYRIC",
+          "coverage": 0.9867,
+          "duration_seconds": 91.16
+        }
+      }
+    },
+    {
+      "lesson": "H033",
+      "title": "H033 — ニュートンと知の海",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/c8089030-10c8-42c3-9257-af1b0a708477",
+      "song_id": "c8089030-10c8-42c3-9257-af1b0a708477",
+      "duration_seconds": 101.54,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 101.54,
+        "expected_words": 123,
+        "approx_words_per_minute": 72.7,
+        "all_lyrics_characters": 792
+      },
+      "selection_reason": "両候補合格。候補1の歌詞一致率100.00%が高いため採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 101.54
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 0.9919,
+          "duration_seconds": 92.76
+        }
+      }
+    },
+    {
+      "lesson": "H034",
+      "title": "H034 — ガウディと未完の大聖堂",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/9693c3cc-1056-4351-8afd-1c9515bb2120",
+      "song_id": "9693c3cc-1056-4351-8afd-1c9515bb2120",
+      "duration_seconds": 92.62,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS_EQUIVALENT",
+        "raw_asr_verdict": "REVIEW_WRONG_LYRIC",
+        "coverage": 0.9648,
+        "precision": 0.958,
+        "high_confidence_replacement_count": 4,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "Gaudí と Sagrada Família のアクセント記号・分かち書きによる機械判定上の差。候補2は本文語句を保っており、実質的な置換なし。",
+      "timing_notes": {
+        "duration_seconds": 92.62,
+        "expected_words": 142,
+        "approx_words_per_minute": 92.0,
+        "all_lyrics_characters": 932
+      },
+      "selection_reason": "候補2は固有名詞の正規化差だけで、候補1にあった単複・語尾差がない。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "REVIEW_WRONG_LYRIC",
+          "coverage": 0.9577,
+          "duration_seconds": 105.5
+        },
+        "candidate2": {
+          "verdict": "REVIEW_WRONG_LYRIC",
+          "coverage": 0.9648,
+          "duration_seconds": 92.62
+        }
+      }
+    },
+    {
+      "lesson": "H035",
+      "title": "H035 — ダーウィンとガラパゴス",
+      "adopted_candidate": "rewrite_candidate1",
+      "share_url": "https://suno.com/song/f884d7bd-cce8-45d5-ad96-6096555d7cf5",
+      "song_id": "f884d7bd-cce8-45d5-ad96-6096555d7cf5",
+      "duration_seconds": 69.66,
+      "generation_attempt": 3,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS_AFTER_REWRITE",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "H.M.S. Beagle を a British survey ship に、Galápagos を the Galapagos Islands に改稿。表現改訂版の候補1は全文一致。",
+      "timing_notes": {
+        "duration_seconds": 69.66,
+        "expected_words": 139,
+        "approx_words_per_minute": 119.7,
+        "all_lyrics_characters": 913
+      },
+      "selection_reason": "誤認識しやすい固有名詞を説明表現へ改稿。改訂版候補1が全文一致100%。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 69.66
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 0.9928,
+          "duration_seconds": 81.24
+        }
+      }
+    },
+    {
+      "lesson": "H036",
+      "title": "H036 — ソクラテスの問い",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/339bb82f-fe52-4220-8562-912887b10d5a",
+      "song_id": "339bb82f-fe52-4220-8562-912887b10d5a",
+      "duration_seconds": 102.32,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 0.9787,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [
+        {
+          "start": 0,
+          "length": 3,
+          "words": [
+            "twenty",
+            "four",
+            "hundred"
+          ]
+        }
+      ],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 102.32,
+        "expected_words": 141,
+        "approx_words_per_minute": 82.7,
+        "all_lyrics_characters": 860
+      },
+      "selection_reason": "両候補とも全文一致。候補1の約102.3秒のゆとりある発音を採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 0.9787,
+          "duration_seconds": 102.32
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 0.9787,
+          "duration_seconds": 96.68
+        }
+      }
+    },
+    {
+      "lesson": "H037",
+      "title": "H037 — ベートーヴェンの沈黙と第九",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/93f04802-6333-4d1d-9ed4-1a5f3a2d4c98",
+      "song_id": "93f04802-6333-4d1d-9ed4-1a5f3a2d4c98",
+      "duration_seconds": 122.58,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 0.9818,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 122.58,
+        "expected_words": 162,
+        "approx_words_per_minute": 79.3,
+        "all_lyrics_characters": 1021
+      },
+      "selection_reason": "候補2のみ誤語置換疑いなし。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "REVIEW_WRONG_LYRIC",
+          "coverage": 0.9938,
+          "duration_seconds": 133.18
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 122.58
+        }
+      }
+    },
+    {
+      "lesson": "H038",
+      "title": "H038 — ライト兄弟の12秒",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/df1d3c91-bda8-4d62-acf5-842514cd1cff",
+      "song_id": "df1d3c91-bda8-4d62-acf5-842514cd1cff",
+      "duration_seconds": 108.08,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 0.9747,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [
+        {
+          "start": 101,
+          "length": 2,
+          "words": [
+            "thirty",
+            "seven"
+          ]
+        },
+        {
+          "start": 17,
+          "length": 1,
+          "words": [
+            "twelve"
+          ]
+        },
+        {
+          "start": 95,
+          "length": 1,
+          "words": [
+            "twelve"
+          ]
+        }
+      ],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 108.08,
+        "expected_words": 158,
+        "approx_words_per_minute": 87.7,
+        "all_lyrics_characters": 968
+      },
+      "selection_reason": "両候補とも全文一致。候補2の約108.1秒のゆとりある発音を採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 0.9747,
+          "duration_seconds": 107.62
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 0.9747,
+          "duration_seconds": 108.08
+        }
+      }
+    },
+    {
+      "lesson": "H039",
+      "title": "H039 — 星を見上げる夜 — ガリレオからボイジャーまで",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/bcb3e28e-aad2-4079-b63a-eb87128e5b11",
+      "song_id": "bcb3e28e-aad2-4079-b63a-eb87128e5b11",
+      "duration_seconds": 124.94,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 0.9876,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [
+        {
+          "start": 76,
+          "length": 2,
+          "words": [
+            "four",
+            "hundred"
+          ]
+        }
+      ],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 124.94,
+        "expected_words": 161,
+        "approx_words_per_minute": 77.3,
+        "all_lyrics_characters": 1012
+      },
+      "selection_reason": "両候補合格・一致率同等。候補1の認識精度100.00%が高いため採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 0.9876,
+          "duration_seconds": 124.94
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 0.9876,
+          "duration_seconds": 146.54
+        }
+      }
+    },
+    {
+      "lesson": "H040",
+      "title": "H040 — DNAの二重らせん ― ロザリンド・フランクリンの静かな貢献",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/10d503a3-4d92-4e36-b14a-cbe489561527",
+      "song_id": "10d503a3-4d92-4e36-b14a-cbe489561527",
+      "duration_seconds": 91.66,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 0.9856,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [
+        {
+          "start": 100,
+          "length": 2,
+          "words": [
+            "thirty",
+            "seven"
+          ]
+        }
+      ],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 91.66,
+        "expected_words": 139,
+        "approx_words_per_minute": 91.0,
+        "all_lyrics_characters": 912
+      },
+      "selection_reason": "候補1のみ誤語置換疑いなし。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 0.9856,
+          "duration_seconds": 91.66
+        },
+        "candidate2": {
+          "verdict": "REVIEW_WRONG_LYRIC",
+          "coverage": 0.9784,
+          "duration_seconds": 84.76
+        }
+      }
+    },
+    {
+      "lesson": "H041",
+      "title": "H041 — 暗号を解いた男 ― アラン・チューリング",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/ec999621-1870-41d0-b384-7c1a245388b9",
+      "song_id": "ec999621-1870-41d0-b384-7c1a245388b9",
+      "duration_seconds": 70.08,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 0.9786,
+        "precision": 0.9928,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [
+        {
+          "start": 110,
+          "length": 2,
+          "words": [
+            "forty",
+            "one"
+          ]
+        },
+        {
+          "start": 55,
+          "length": 1,
+          "words": [
+            "bombe"
+          ]
+        }
+      ],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 70.08,
+        "expected_words": 140,
+        "approx_words_per_minute": 119.9,
+        "all_lyrics_characters": 913
+      },
+      "selection_reason": "候補1のみ誤語置換疑いなし。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 0.9786,
+          "duration_seconds": 70.08
+        },
+        "candidate2": {
+          "verdict": "REVIEW_WRONG_LYRIC",
+          "coverage": 0.9714,
+          "duration_seconds": 69.82
+        }
+      }
+    },
+    {
+      "lesson": "H042",
+      "title": "H042 — シルクロード ― 言葉と物が旅した道",
+      "adopted_candidate": 2,
+      "share_url": "https://suno.com/song/9dc36972-6745-4cd1-9a45-a230ce0c3a47",
+      "song_id": "9dc36972-6745-4cd1-9a45-a230ce0c3a47",
+      "duration_seconds": 98.34,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 0.9773,
+        "precision": 0.9923,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [
+        {
+          "start": 127,
+          "length": 2,
+          "words": [
+            "the",
+            "roots"
+          ]
+        },
+        {
+          "start": 11,
+          "length": 1,
+          "words": [
+            "and"
+          ]
+        }
+      ],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 98.34,
+        "expected_words": 132,
+        "approx_words_per_minute": 80.5,
+        "all_lyrics_characters": 830
+      },
+      "selection_reason": "候補2のみ誤語置換疑いなし。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "REVIEW_WRONG_LYRIC",
+          "coverage": 0.7576,
+          "duration_seconds": 104.44
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 0.9773,
+          "duration_seconds": 98.34
+        }
+      }
+    },
+    {
+      "lesson": "H043",
+      "title": "H043 — 沈黙の春 ― レイチェル・カーソンと自然の声",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/6d1cd276-af6a-4c54-a863-e4faef3fbfb7",
+      "song_id": "6d1cd276-af6a-4c54-a863-e4faef3fbfb7",
+      "duration_seconds": 104.5,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 1.0,
+        "precision": 1.0,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 104.5,
+        "expected_words": 132,
+        "approx_words_per_minute": 75.8,
+        "all_lyrics_characters": 862
+      },
+      "selection_reason": "両候補とも全文一致。候補1の約104.5秒のゆとりある発音を採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 104.5
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 1.0,
+          "duration_seconds": 97.02
+        }
+      }
+    },
+    {
+      "lesson": "H044",
+      "title": "H044 — 塩の道を歩いた人 ― ガンジーと非暴力",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/dec7d376-0014-469a-bb25-89c144e71d5f",
+      "song_id": "dec7d376-0014-469a-bb25-89c144e71d5f",
+      "duration_seconds": 128.04,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS_EQUIVALENT",
+        "raw_asr_verdict": "REVIEW_WRONG_LYRIC",
+        "coverage": 0.9281,
+        "precision": 0.9509,
+        "high_confidence_replacement_count": 4,
+        "reached_expected_ending": true
+      },
+      "omissions": [],
+      "pronunciation_notes": "seventy-eight / three hundred eighty-five / twenty-four はASR表示が数字になったため照合器が脱落扱い。nonviolent→non-violent と Dandi→Dandy も表記差で、内容語の変更なし。",
+      "timing_notes": {
+        "duration_seconds": 128.04,
+        "expected_words": 167,
+        "approx_words_per_minute": 78.3,
+        "all_lyrics_characters": 1123
+      },
+      "selection_reason": "数字・ハイフン・地名の表記差を除けば候補1が本文通り。候補2の disciplined 脱落を回避。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "REVIEW_WRONG_LYRIC",
+          "coverage": 0.9281,
+          "duration_seconds": 128.04
+        },
+        "candidate2": {
+          "verdict": "REVIEW_WRONG_LYRIC",
+          "coverage": 0.9222,
+          "duration_seconds": 124.86
+        }
+      }
+    },
+    {
+      "lesson": "H045",
+      "title": "H045 — ピラミッドの静けさ ― 4500年の沈黙",
+      "adopted_candidate": 1,
+      "share_url": "https://suno.com/song/15799b04-216f-4bf0-a5a3-2d9846396f16",
+      "song_id": "15799b04-216f-4bf0-a5a3-2d9846396f16",
+      "duration_seconds": 143.06,
+      "generation_attempt": 1,
+      "adoption_status": "adopted",
+      "lyrics_match": {
+        "status": "PASS",
+        "raw_asr_verdict": "PASS",
+        "coverage": 0.9107,
+        "precision": 0.9935,
+        "high_confidence_replacement_count": 0,
+        "reached_expected_ending": true
+      },
+      "omissions": [
+        {
+          "start": 21,
+          "length": 4,
+          "words": [
+            "four",
+            "thousand",
+            "five",
+            "hundred"
+          ]
+        },
+        {
+          "start": 29,
+          "length": 4,
+          "words": [
+            "one",
+            "hundred",
+            "forty",
+            "six"
+          ]
+        },
+        {
+          "start": 124,
+          "length": 4,
+          "words": [
+            "four",
+            "thousand",
+            "five",
+            "hundred"
+          ]
+        },
+        {
+          "start": 39,
+          "length": 3,
+          "words": [
+            "to",
+            "point",
+            "three"
+          ]
+        }
+      ],
+      "pronunciation_notes": "高信頼の内容語置換は検出されず、レッスン本文の終端まで到達。",
+      "timing_notes": {
+        "duration_seconds": 143.06,
+        "expected_words": 168,
+        "approx_words_per_minute": 70.5,
+        "all_lyrics_characters": 1055
+      },
+      "selection_reason": "両候補合格。候補1の歌詞一致率91.07%が高いため採用。",
+      "comparison": {
+        "candidate1": {
+          "verdict": "PASS",
+          "coverage": 0.9107,
+          "duration_seconds": 143.06
+        },
+        "candidate2": {
+          "verdict": "PASS",
+          "coverage": 0.9048,
+          "duration_seconds": 146.54
+        }
+      }
+    }
+  ]
+}

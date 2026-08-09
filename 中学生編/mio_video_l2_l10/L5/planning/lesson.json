@@ -1,0 +1,117 @@
+{
+  "project_root": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成",
+  "slug": "l5_planning_to_visit_grandmother",
+  "title_en": "Lesson 5  Planning to Visit Grandmother",
+  "title_ja": "祖母を訪ねる計画",
+  "chart": "taco_beat/charts/m5.js",
+  "audio": "中学生編/audio/L5.mp3",
+  "duration": 52.523537,
+  "lines": [
+    {
+      "start_index": 0,
+      "end_index": 2,
+      "en_words": ["Tomorrow", "is", "Saturday."],
+      "ja": "明日は土曜日です。"
+    },
+    {
+      "start_index": 3,
+      "end_index": 12,
+      "en_words": ["My", "sister", "and", "I", "are", "going", "to", "visit", "our", "grandmother."],
+      "break_after": [5],
+      "ja": "妹とわたしは祖母を訪ねる予定です。"
+    },
+    {
+      "start_index": 13,
+      "end_index": 27,
+      "en_words": ["We", "are", "going", "to", "leave", "home", "early,", "take", "a", "train,", "and", "go", "to", "her", "town."],
+      "break_after": [6],
+      "ja": "早く家を出て、列車で祖母の町へ行く予定です。"
+    },
+    {
+      "start_index": 28,
+      "end_index": 37,
+      "en_words": ["For", "lunch,", "we", "are", "going", "to", "eat", "hot", "soup", "together."],
+      "ja": "昼食には、いっしょに温かいスープを食べる予定です。"
+    },
+    {
+      "indices": [38, 39, 40, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+      "en_words": ["In", "the", "afternoon,", "we", "are", "going", "to", "sit", "and", "read", "books", "quietly."],
+      "break_after": [6],
+      "ja": "午後は座って、静かに本を読む予定です。"
+    },
+    {
+      "start_index": 53,
+      "end_index": 65,
+      "en_words": ["I", "am", "going", "to", "tell", "her", "many", "things", "about", "my", "new", "friend,", "Tom."],
+      "break_after": [7],
+      "ja": "新しい友達トムのことを、祖母にたくさん話すつもりです。"
+    },
+    {
+      "indices": [66, 67, 68, 69, 70, 71, 72, 73, 75, 76],
+      "en_words": ["I", "am", "sure", "she", "is", "going", "to", "be", "very", "happy."],
+      "ja": "きっと祖母はとても喜ぶでしょう。"
+    }
+  ],
+  "shots": [
+    {
+      "image": "scenes/01_plan_at_home.png",
+      "start": 0.0,
+      "end": 9.14,
+      "start_center": [0.32, 0.53],
+      "end_center": [0.72, 0.46],
+      "start_zoom": 1.28,
+      "end_zoom": 1.16,
+      "intent": "ミオの旅行かばんから、土曜日を指すサキへ予定をつなぐ"
+    },
+    {
+      "image": "scenes/02_train_to_town.png",
+      "start": 9.14,
+      "end": 17.15,
+      "start_center": [0.28, 0.50],
+      "end_center": [0.74, 0.45],
+      "start_zoom": 1.26,
+      "end_zoom": 1.12,
+      "intent": "列車内の姉妹から、窓の先にある祖母の町へパンする"
+    },
+    {
+      "image": "scenes/03_soup_books_grandmother.png",
+      "start": 17.15,
+      "end": 25.71,
+      "start_center": [0.27, 0.61],
+      "end_center": [0.50, 0.57],
+      "start_zoom": 1.32,
+      "end_zoom": 1.17,
+      "intent": "湯気の立つスープから三人の昼食へ広げる"
+    },
+    {
+      "image": "scenes/03_soup_books_grandmother.png",
+      "start": 25.71,
+      "end": 34.21,
+      "start_center": [0.52, 0.75],
+      "end_center": [0.48, 0.50],
+      "start_zoom": 1.34,
+      "end_zoom": 1.08,
+      "intent": "積まれた本に寄ってから、静かな読書の場全体へ引く"
+    },
+    {
+      "image": "scenes/03_soup_books_grandmother.png",
+      "start": 34.21,
+      "end": 42.96,
+      "start_center": [0.50, 0.44],
+      "end_center": [0.72, 0.45],
+      "start_zoom": 1.28,
+      "end_zoom": 1.22,
+      "intent": "トムのことを話すミオから、聞いている祖母へ移る"
+    },
+    {
+      "image": "scenes/03_soup_books_grandmother.png",
+      "start": 42.96,
+      "end": 52.523537,
+      "start_center": [0.76, 0.45],
+      "end_center": [0.52, 0.50],
+      "start_zoom": 1.34,
+      "end_zoom": 1.02,
+      "intent": "祖母の喜ぶ表情へ寄り、最後は三人の温かな食卓へ引く"
+    }
+  ]
+}

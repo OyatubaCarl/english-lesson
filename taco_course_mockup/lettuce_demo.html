@@ -1,0 +1,107 @@
+<!DOCTYPE html><html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>レタス演出デモ</title>
+<style>
+:root{--green:#5aa011;--green-ink:#3f6f0d}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 50% 20%,#fffdf6,#fdf1df 70%,#f6e3c8);
+  font-family:"Hiragino Sans",sans-serif;color:#3a2a16;min-height:100dvh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:20px;overflow:hidden}
+h1{font-size:1.05rem;margin:0;font-weight:900}
+.sub{font-size:.78rem;color:#8a6a3a;margin:-6px 0 2px}
+.count{font-size:.8rem;font-weight:800;color:var(--green-ink)}
+.lettuce-stage{position:relative;width:260px;height:320px}
+.lettuce-head{position:absolute;top:0;left:50%;transform:translateX(-50%);width:118px;height:118px;z-index:6;transform-origin:50% 60%}
+.lettuce-head img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 3px 7px rgba(70,110,20,.3));display:block}
+.lettuce-head.tear{animation:tear .5s ease-in-out}
+@keyframes tear{0%,100%{transform:translateX(-50%) scale(1,1)}40%{transform:translateX(-50%) scale(1.1,.86) rotate(-4deg)}}
+.taco{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:256px;height:210px;--split:50%}
+/* シェルを2層に分割: 背面(上)=葉の後ろ / 前面(下=前の壁)=葉の手前。--split で境目を調整 */
+.taco-layer{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none;user-select:none}
+.taco-back{z-index:1;filter:drop-shadow(0 6px 9px rgba(150,110,10,.24));
+  -webkit-mask-image:linear-gradient(to bottom,#000 calc(var(--split) - 8%),transparent calc(var(--split) + 6%));
+          mask-image:linear-gradient(to bottom,#000 calc(var(--split) - 8%),transparent calc(var(--split) + 6%))}
+.taco-front{z-index:5;
+  -webkit-mask-image:linear-gradient(to bottom,transparent calc(var(--split) - 6%),#000 calc(var(--split) + 6%));
+          mask-image:linear-gradient(to bottom,transparent calc(var(--split) - 6%),#000 calc(var(--split) + 6%))}
+.leaf-pile{position:absolute;inset:0;z-index:2}
+.leaf{position:absolute;width:80px;height:80px;will-change:transform,opacity}
+.leaf img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 2px 3px rgba(50,90,10,.32));display:block}
+.leaf.settle{animation:settle .34s ease-out}
+@keyframes settle{0%{}40%{}100%{}}
+.done{font-size:1.15rem;font-weight:900;color:var(--green-ink);opacity:0;transform:scale(.6);transition:.4s cubic-bezier(.3,1.6,.5,1);height:1.4em}
+.done.show{opacity:1;transform:scale(1)}
+.btns{display:flex;gap:10px;margin-top:2px}
+button{font-family:inherit;font-weight:900;font-size:1rem;border:none;border-radius:999px;padding:13px 24px;cursor:pointer}
+.ok{background:var(--green);color:#fff;box-shadow:0 4px 12px rgba(90,160,17,.35)}
+.ok:active{transform:scale(.95)}
+.rs{background:#fff;color:#8a6a3a;box-shadow:inset 0 0 0 2px #e7d3b3}
+.sel{font-size:.72rem;color:#8a6a3a;font-weight:800;display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:center}
+.sel button{padding:6px 12px;font-size:.72rem;border-radius:999px;background:#fff;color:#8a6a3a;box-shadow:inset 0 0 0 1.5px #e7d3b3}
+.sel button.on{background:#8a6a3a;color:#fff;box-shadow:none}
+.hint{font-size:.72rem;color:#9a7a4a;max-width:280px;text-align:center;line-height:1.6}
+</style></head>
+<body>
+  <h1>🥬 シャキシャキ・レタス <span class="sub">（演出デモ）</span></h1>
+  <div class="count" id="count">0 / 10 問</div>
+  <div class="lettuce-stage">
+    <div class="lettuce-head" id="head"><img src="app_assets/lettuce/lettuce_head.png" alt="レタス"></div>
+    <div class="taco" id="taco">
+      <img class="taco-layer taco-back" src="app_assets/lettuce/taco_shell.png" alt="タコス">
+      <div class="leaf-pile" id="pile"></div>
+      <img class="taco-layer taco-front" src="app_assets/lettuce/taco_shell.png" alt="">
+    </div>
+  </div>
+  <div class="done" id="done">レタスたっぷり！ 🎉</div>
+  <div class="btns">
+    <button class="ok" id="ok">正解！</button>
+    <button class="rs" id="rs">リセット</button>
+  </div>
+  <div class="sel">問題数を試す：
+    <button data-t="3">3問</button><button data-t="5">5問</button><button data-t="10" class="on">10問</button><button data-t="16">16問</button>
+  </div>
+  <div class="hint">実際のゲームでは、並べ替えに<b>正解した瞬間</b>にレタスがちぎれて舞い落ちます。<br>問題数が少ない時は1問で複数枚、多い時は重ね置きで、<b>全体に行き渡る</b>ように調整。</div>
+<script>
+// 全体に散らす基本レイアウト（端も含む・最初から広く散る順）[x%,y%,rot,flipX,変種]
+const LAYOUT=[
+ [50,45,  0, 1,'a'],[28,41,-22, 1,'b'],[72,41, 22,-1,'a'],[40,44,-10, 1,'a'],[60,44, 10,-1,'b'],
+ [18,34,-38, 1,'a'],[82,34, 38,-1,'b'],[34,37,-18, 1,'b'],[66,37, 18,-1,'a'],[50,39, -3, 1,'b'],
+ [44,33,-14,-1,'a'],[56,33, 16, 1,'b'],[24,38,-30, 1,'a'],[76,38, 30,-1,'b']];
+const N=LAYOUT.length;
+const rnd=(j)=>{const x=Math.sin(j*97.13+1.7)*43758.5453;return x-Math.floor(x);}; // 決定的擬似乱数
+const pile=document.getElementById('pile'), head=document.getElementById('head'),
+      countEl=document.getElementById('count'), doneEl=document.getElementById('done');
+let total=10, i=0, placed=0, T=Math.max(N,total);
+function reset(){ i=0; placed=0; T=Math.max(N,total); pile.innerHTML=''; countEl.textContent='0 / '+total+' 問'; doneEl.classList.remove('show'); }
+function placeLeaf(j){
+  let [x,y,r,f,v]=LAYOUT[j%N];
+  if(j>=N){ x+=rnd(j)*10-5; y+=rnd(j+7)*7-3.5; r+=rnd(j+13)*24-12; f=rnd(j+3)<.5?1:-1; } // 2周目以降=既存位置に少しずらして重ねる
+  const leaf=document.createElement('div'); leaf.className='leaf';
+  leaf.style.left=x+'%'; leaf.style.top=y+'%'; leaf.style.zIndex=2+j;
+  leaf.innerHTML=`<img src="app_assets/lettuce/lettuce_leaf_${v}.png" alt="">`;
+  const rest=`translate(-50%,-50%) rotate(${r}deg) scaleX(${f})`;
+  leaf.style.transform=`translate(-50%,-50%) translateY(-165px) rotate(${r-45}deg) scaleX(${f})`;
+  leaf.style.opacity='0'; pile.appendChild(leaf);
+  requestAnimationFrame(()=>{ requestAnimationFrame(()=>{
+    leaf.style.transition='transform .68s cubic-bezier(.34,1.25,.5,1), opacity .3s ease';
+    leaf.style.transform=rest; leaf.style.opacity='1';
+  });});
+}
+function onCorrect(){
+  if(i>=total)return;
+  head.classList.remove('tear'); void head.offsetWidth; head.classList.add('tear');
+  const upto=Math.floor((i+1)*T/total);        // この正解までに置く累計枚数（T枚を問題数で均等配分）
+  let d=0;
+  for(let j=placed;j<upto;j++){ const jj=j; setTimeout(()=>placeLeaf(jj), d*140); d++; } // 複数枚は時間差でパラパラ
+  placed=upto; i++;
+  countEl.textContent=i+' / '+total+' 問';
+  if(i>=total) doneEl.classList.add('show');
+}
+document.getElementById('ok').onclick=onCorrect;
+document.getElementById('rs').onclick=reset;
+document.querySelectorAll('.sel button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.sel button').forEach(x=>x.classList.remove('on')); b.classList.add('on');
+  total=+b.dataset.t; reset();
+});
+</script>
+</body></html>

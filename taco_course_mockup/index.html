@@ -1,0 +1,410 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Teacher Tacos English フルコース — モックアップ</title></head><body>
+<style>
+  :root{
+    --bg:#fafafa; --card:#ffffff; --panel:#f6f8fb;
+    --fg:#1f2937; --fg-soft:#374151; --muted:#6b7280; --faint:#9ca3af;
+    --accent:#2563eb; --accent-dark:#1d4ed8; --accent-soft:#eff6ff;
+    --border:#e5e7eb; --border-soft:#f3f4f6;
+    --green:#10b981; --green-soft:#d1fae5; --green-ink:#065f46;
+    --amber:#f59e0b; --amber-soft:#fef3c7; --amber-ink:#92400e;
+    --red:#ef4444; --new:#dc2626;
+    --shadow-sm:0 1px 2px rgba(0,0,0,.04),0 1px 3px rgba(0,0,0,.06);
+    --shadow-md:0 4px 10px rgba(0,0,0,.04),0 2px 6px rgba(0,0,0,.05);
+    --shadow-lg:0 18px 44px rgba(15,23,42,.14);
+    --radius:14px;
+    --ui:"Hiragino Sans","Yu Gothic",Meiryo,system-ui,-apple-system,"Segoe UI",sans-serif;
+    --serif:Georgia,"Times New Roman","Hiragino Mincho ProN",serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0f172a; --card:#1e293b; --panel:#172033;
+      --fg:#e5e9f0; --fg-soft:#cbd5e1; --muted:#94a3b8; --faint:#64748b;
+      --accent:#3b82f6; --accent-dark:#60a5fa; --accent-soft:#1b2b47;
+      --border:#334155; --border-soft:#263145;
+      --green:#34d399; --green-soft:#0f3d31; --green-ink:#6ee7b7;
+      --amber:#fbbf24; --amber-soft:#3b2f12; --amber-ink:#fcd34d;
+      --shadow-sm:0 1px 2px rgba(0,0,0,.3); --shadow-md:0 4px 12px rgba(0,0,0,.4);
+      --shadow-lg:0 22px 50px rgba(0,0,0,.55);
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#fafafa;--card:#fff;--panel:#f6f8fb;--fg:#1f2937;--fg-soft:#374151;--muted:#6b7280;--faint:#9ca3af;
+    --accent:#2563eb;--accent-dark:#1d4ed8;--accent-soft:#eff6ff;--border:#e5e7eb;--border-soft:#f3f4f6;
+    --green:#10b981;--green-soft:#d1fae5;--green-ink:#065f46;--amber:#f59e0b;--amber-soft:#fef3c7;--amber-ink:#92400e;
+    --shadow-sm:0 1px 2px rgba(0,0,0,.04),0 1px 3px rgba(0,0,0,.06);--shadow-md:0 4px 10px rgba(0,0,0,.04),0 2px 6px rgba(0,0,0,.05);--shadow-lg:0 18px 44px rgba(15,23,42,.14);
+  }
+  :root[data-theme="dark"]{
+    --bg:#0f172a;--card:#1e293b;--panel:#172033;--fg:#e5e9f0;--fg-soft:#cbd5e1;--muted:#94a3b8;--faint:#64748b;
+    --accent:#3b82f6;--accent-dark:#60a5fa;--accent-soft:#1b2b47;--border:#334155;--border-soft:#263145;
+    --green:#34d399;--green-soft:#0f3d31;--green-ink:#6ee7b7;--amber:#fbbf24;--amber-soft:#3b2f12;--amber-ink:#fcd34d;
+    --shadow-sm:0 1px 2px rgba(0,0,0,.3);--shadow-md:0 4px 12px rgba(0,0,0,.4);--shadow-lg:0 22px 50px rgba(0,0,0,.55);
+  }
+
+  *{box-sizing:border-box}
+  .wrap{font-family:var(--ui);color:var(--fg);background:var(--bg);min-height:100vh;
+    padding:clamp(20px,4vw,56px) clamp(16px,4vw,40px) 72px;line-height:1.7;-webkit-font-smoothing:antialiased}
+  .container{max-width:1120px;margin:0 auto}
+
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;font-weight:800;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--accent);background:var(--accent-soft);
+    padding:6px 12px;border-radius:999px;border:1px solid color-mix(in srgb,var(--accent) 22%,transparent)}
+
+  .wordmark{margin:18px 0 2px}
+  .mark-main{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .mark-main h1{margin:0;font-size:clamp(1.9rem,5vw,3.3rem);font-weight:800;letter-spacing:-.02em;line-height:1;text-wrap:balance}
+  .mark-main h1 em{color:var(--accent);font-style:normal}
+  .course-badge{display:inline-flex;align-items:center;gap:7px;font-family:var(--ui);font-weight:900;
+    font-size:clamp(1.2rem,3.2vw,2rem);letter-spacing:.05em;color:var(--accent);line-height:1;
+    padding:6px 16px;border:2px solid var(--accent);border-radius:999px;background:var(--accent-soft)}
+  .course-badge small{font-size:.5em;font-weight:800;color:var(--muted);letter-spacing:.08em}
+  .sub{display:block;margin-top:13px;font-size:clamp(.9rem,1.5vw,1.06rem);font-weight:800;color:var(--fg-soft)}
+  .lede{max-width:66ch;color:var(--fg-soft);font-size:clamp(1rem,1.35vw,1.1rem);margin:9px 0 0}
+  .lede b{color:var(--fg);font-weight:800}
+
+  .fillings{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+  .fill{display:flex;align-items:center;gap:9px;background:var(--card);border:1px solid var(--border);
+    border-radius:12px;padding:8px 12px 8px 8px;box-shadow:var(--shadow-sm)}
+  .fill .dot{width:27px;height:27px;border-radius:8px;display:grid;place-items:center;font-size:.92rem;
+    background:var(--panel);border:1px solid var(--border)}
+  .fill .k{font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);font-weight:800;line-height:1}
+  .fill .v{font-weight:800;font-size:.86rem;line-height:1.25;margin-top:2px}
+  .fill small{color:var(--muted);font-weight:600}
+
+  .section-label{display:flex;align-items:center;gap:12px;margin:50px 0 20px;color:var(--muted);
+    font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800}
+  .section-label::after{content:"";height:1px;flex:1;background:var(--border)}
+
+  .gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,3vw,34px);align-items:start}
+  @media(max-width:900px){.gallery{grid-template-columns:1fr;max-width:390px;margin:0 auto;gap:40px}}
+  .phone-wrap{display:flex;flex-direction:column;gap:14px}
+  .phone{background:#0b1220;border-radius:40px;padding:11px;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;
+    border:1px solid rgba(15,23,42,.5)}
+  .phone::before{content:"";position:absolute;top:11px;left:50%;transform:translateX(-50%);
+    width:32%;height:19px;background:#0b1220;border-radius:0 0 13px 13px;z-index:5}
+  .screen{background:var(--bg);border-radius:30px;overflow:hidden;height:672px;display:flex;flex-direction:column;position:relative}
+  .caption{font-size:.82rem;color:var(--muted);text-align:center}
+  .caption b{color:var(--fg)}
+
+  .statusbar{height:26px;flex:none;display:flex;align-items:center;justify-content:space-between;
+    padding:2px 22px 0;font-size:.66rem;font-weight:700;color:var(--muted)}
+  .appbar{flex:none;display:flex;align-items:center;gap:9px;padding:8px 15px 9px;border-bottom:1px solid var(--border-soft)}
+  .appbar .logo{font-weight:800;font-size:.92rem;letter-spacing:-.01em}
+  .appbar .logo em{color:var(--accent);font-style:normal}
+  .appbar .logo small{display:block;font-size:.54rem;letter-spacing:.06em;color:var(--faint);font-weight:700}
+  .appbar .spacer{flex:1}
+  .chip-round{width:30px;height:30px;border-radius:50%;background:var(--card);border:1px solid var(--border);
+    display:grid;place-items:center;font-size:.82rem}
+  .body{flex:1;overflow:hidden;padding:11px 15px 14px;display:flex;flex-direction:column;gap:9px}
+
+  .kicker{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;font-weight:800;color:var(--faint)}
+
+  .levels{display:flex;gap:0;flex:none;background:var(--panel);border:1px solid var(--border);border-radius:11px;padding:3px}
+  .levels .lv{flex:1;text-align:center;font-size:.72rem;font-weight:800;padding:7px 4px;border-radius:8px;color:var(--muted);white-space:nowrap}
+  .levels .lv.on{background:var(--accent);color:#fff;box-shadow:var(--shadow-sm)}
+
+  .lcard{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;
+    box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:9px}
+  .lcard.current{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+  .lcard.locked{opacity:.6}
+  .lrow{display:flex;align-items:center;gap:11px}
+  .lnum{width:38px;height:38px;border-radius:11px;flex:none;display:grid;place-items:center;font-weight:800;
+    font-size:.88rem;background:var(--panel);color:var(--muted);border:1px solid var(--border)}
+  .lcard.current .lnum{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .lcard.done .lnum{background:var(--green);color:#fff;border-color:var(--green)}
+  .ltitle{font-weight:800;font-size:.9rem;line-height:1.3}
+  .lmeta{font-size:.71rem;color:var(--muted);margin-top:2px}
+  .grab{margin-left:auto;font-size:1.05rem;color:var(--faint)}
+  .pips{display:flex;gap:4px;align-items:center}
+  .pip{width:15px;height:15px;border-radius:5px;background:var(--panel);border:1.5px solid var(--border);
+    display:grid;place-items:center;font-size:.46rem;color:#fff}
+  .pip.done{background:var(--green);border-color:var(--green)}
+  .pip.cur{border-color:var(--accent);background:var(--accent-soft)}
+  .pips .lbl{font-size:.66rem;color:var(--faint);font-weight:800;margin-left:3px;font-variant-numeric:tabular-nums}
+  .go{margin-top:1px;background:var(--accent);color:#fff;border:none;border-radius:10px;padding:10px;
+    font-weight:800;font-size:.84rem;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:7px;
+    box-shadow:var(--shadow-sm);cursor:pointer}
+  .go.ghost{background:var(--card);color:var(--accent);border:1.5px solid var(--accent);box-shadow:none}
+  .locknote{display:flex;align-items:center;gap:7px;font-size:.71rem;color:var(--faint);font-weight:700}
+
+  .textcard{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:11px 13px;box-shadow:var(--shadow-sm)}
+  .textcard .kicker{margin-bottom:4px}
+  .textcard .en{font-family:var(--serif);font-size:.98rem;font-weight:600;line-height:1.45;color:var(--fg)}
+  .textcard .jp{font-size:.75rem;color:var(--muted);margin-top:4px}
+
+  .course-progress{display:flex;align-items:center;gap:9px;padding:0 2px}
+  .course-progress .ic{font-size:1.1rem}
+  .course-progress .bar{flex:1;height:8px;border-radius:999px;background:var(--panel);overflow:hidden;border:1px solid var(--border)}
+  .course-progress .bar>i{display:block;height:100%;border-radius:999px;background:var(--accent)}
+  .course-progress .n{font-size:.71rem;font-weight:800;color:var(--muted);font-variant-numeric:tabular-nums}
+
+  /* journey — compact so 7 fit */
+  .steps{display:flex;flex-direction:column;margin-top:1px}
+  .step{display:flex;gap:11px;padding:4px 0;position:relative}
+  .rail{width:34px;flex:none;display:flex;justify-content:center;position:relative}
+  .node{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-size:.94rem;z-index:2;
+    border:1.5px solid var(--border);background:var(--card);color:var(--muted)}
+  .line{position:absolute;top:34px;bottom:-5px;width:2px;background:var(--border);left:50%;transform:translateX(-50%);z-index:1}
+  .step:last-child .line{display:none}
+  .step.done .node{background:var(--green);border-color:var(--green);color:#fff}
+  .step.done .line{background:var(--green)}
+  .step.current .node{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 0 0 4px var(--accent-soft)}
+  .step.locked .node{background:var(--panel);color:var(--faint)}
+  .scontent{flex:1;padding-top:5px;min-width:0}
+  .sname{font-weight:800;font-size:.85rem;display:flex;align-items:center;gap:7px}
+  .tag{font-size:.58rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:2px 6px;border-radius:999px;flex:none}
+  .tag.g{background:var(--green-soft);color:var(--green-ink)}
+  .tag.c{background:var(--accent-soft);color:var(--accent-dark)}
+  .sdesc{font-size:.71rem;color:var(--muted);margin-top:1px;line-height:1.4}
+  .sdesc b{color:var(--fg-soft)}
+  .step.locked .sdesc{color:var(--faint)}
+  .step.current .scontent{padding-bottom:2px}
+  .sgate{margin-top:6px;display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;
+    border:none;font-family:inherit;font-weight:800;font-size:.75rem;padding:7px 12px;border-radius:9px;cursor:pointer;box-shadow:var(--shadow-sm)}
+
+  .stepbar{flex:none;display:flex;align-items:center;gap:10px;padding:8px 15px;border-bottom:1px solid var(--border-soft)}
+  .stepbar .back{font-size:1.1rem;color:var(--muted)}
+  .stepbar .st{font-weight:800;font-size:.88rem}
+  .stepbar .prog{margin-left:auto;font-size:.7rem;font-weight:800;color:var(--accent-dark);
+    background:var(--accent-soft);padding:3px 9px;border-radius:999px;font-variant-numeric:tabular-nums}
+  .sentence{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:15px 15px;box-shadow:var(--shadow-sm)}
+  .sentence .en{font-family:var(--serif);font-size:1.06rem;font-weight:600;line-height:1.5;color:var(--fg)}
+  .sentence .en u{text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:3px}
+  .sentence .jp{font-size:.79rem;color:var(--muted);margin-top:8px}
+  .listen{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--panel);
+    border:1px solid var(--border);color:var(--fg);font-family:inherit;font-weight:800;font-size:.82rem;
+    padding:10px;border-radius:11px;cursor:pointer}
+  .mic{display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:2px}
+  .mic .btn{width:70px;height:70px;border-radius:50%;background:var(--accent);color:#fff;border:none;
+    display:grid;place-items:center;font-size:1.7rem;box-shadow:0 8px 22px color-mix(in srgb,var(--accent) 45%,transparent);
+    cursor:pointer;position:relative}
+  .mic .btn::after{content:"";position:absolute;inset:-8px;border-radius:50%;
+    border:2px solid color-mix(in srgb,var(--accent) 40%,transparent);animation:pulse 2s ease-out infinite}
+  .mic .hint{font-size:.76rem;color:var(--muted);font-weight:700}
+  .match{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 13px;box-shadow:var(--shadow-sm)}
+  .match .mrow{display:flex;justify-content:space-between;align-items:baseline;font-size:.73rem;font-weight:800;color:var(--muted)}
+  .match .mrow b{font-size:1.15rem;color:var(--amber-ink);font-variant-numeric:tabular-nums;line-height:1}
+  .match .mrow b i{font-size:.76rem;font-style:normal;margin-left:1px}
+  .mbar{position:relative;height:9px;border-radius:999px;background:var(--panel);border:1px solid var(--border);margin:12px 0 7px}
+  .mbar>i{display:block;height:100%;border-radius:999px;background:var(--amber)}
+  .mbar>s{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--green);border-radius:2px}
+  .mbar>s::after{content:"合格ライン";position:absolute;top:-13px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:.52rem;font-weight:800;color:var(--green)}
+  .match .mnote{font-size:.67rem;color:var(--muted);font-weight:700}
+  .match .mnote b{color:var(--fg-soft)}
+  .attempts{display:flex;align-items:center;gap:8px;justify-content:center;margin-top:1px}
+  .attempts .a{width:14px;height:14px;border-radius:50%;background:var(--panel);border:1.5px solid var(--border)}
+  .attempts .a.on{background:var(--accent);border-color:var(--accent)}
+  .attempts .albl{font-size:.67rem;font-weight:800;color:var(--muted);margin-left:3px;font-variant-numeric:tabular-nums}
+  .gate-note{margin-top:auto;font-size:.71rem;color:var(--faint);text-align:center;line-height:1.5}
+  .gate-note b{color:var(--muted)}
+
+  @keyframes pulse{from{transform:scale(1);opacity:.7}to{transform:scale(1.35);opacity:0}}
+  @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+  .phone-wrap{animation:rise .65s cubic-bezier(.16,1,.3,1) both}
+  .phone-wrap:nth-child(2){animation-delay:.08s}.phone-wrap:nth-child(3){animation-delay:.16s}
+
+  .why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:20px}
+  .why .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow-sm)}
+  .why .card .ic{font-size:1.25rem}
+  .why .card h4{margin:6px 0 6px;font-size:.96rem}
+  .why .card p{margin:0;font-size:.86rem;color:var(--muted);line-height:1.6}
+  .why .card p b{color:var(--fg-soft)}
+
+  .spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:20px}
+  .spec .scard{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:15px 17px;box-shadow:var(--shadow-sm)}
+  .spec .scard h4{margin:0 0 7px;font-size:.95rem;display:flex;align-items:center;gap:8px}
+  .spec .scard p{margin:0;font-size:.85rem;color:var(--muted);line-height:1.65}
+  .spec .scard p b{color:var(--fg-soft)}
+  .weight{display:flex;align-items:flex-end;gap:3px;height:40px;margin-top:12px}
+  .weight i{flex:1;background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 22%,transparent);border-bottom:none;border-radius:3px 3px 0 0}
+  .weight i.hi{background:var(--accent);border-color:var(--accent)}
+  .wcap{display:flex;justify-content:space-between;font-size:.64rem;font-weight:800;color:var(--faint);margin-top:5px}
+  .foot{margin-top:38px;font-size:.8rem;color:var(--faint);border-top:1px solid var(--border);padding-top:16px;line-height:1.7}
+
+  @media(prefers-reduced-motion:reduce){*{animation:none!important}.mic .btn::after{display:none}}
+</style>
+
+<div class="wrap">
+  <div class="container">
+
+    <span class="eyebrow">Teacher Tacos English — 学習アプリ構想</span>
+
+    <div class="wordmark">
+      <div class="mark-main">
+        <h1>Teacher Tacos <em>English</em></h1>
+        <span class="course-badge">フルコース <small>全7品</small></span>
+      </div>
+      <span class="sub">1レッスン＝1原文を、7品のコースで順番に完食する学習アプリ。</span>
+    </div>
+    <p class="lede">
+      歌・文法・新出単語・単語テスト・文法穴埋め・内容理解・シャドウイングの<b>7品</b>を、同じ原文で<b>順番に</b>。
+      各品は<b>能動的に完食しないと次の一皿が出てこない</b>——読み流せる「サイト」ではなく、やり切る「アプリ」に。難易度は自分で選べます。
+    </p>
+
+    <div class="fillings">
+      <div class="fill"><span class="dot">🎵</span><div><div class="k">1品目</div><div class="v">ソング <small>／ まず歌で原文に触れる</small></div></div></div>
+      <div class="fill"><span class="dot">📖</span><div><div class="k">2品目</div><div class="v">文法解説 <small>／ レシピ</small></div></div></div>
+      <div class="fill"><span class="dot">📝</span><div><div class="k">3品目</div><div class="v">新出単語 <small>／ 日本語混じり文</small></div></div></div>
+      <div class="fill"><span class="dot">✍️</span><div><div class="k">4品目</div><div class="v">単語テスト <small>／ 語彙の定着</small></div></div></div>
+      <div class="fill"><span class="dot">🧩</span><div><div class="k">5品目</div><div class="v">文法穴埋め <small>／ 文法の運用</small></div></div></div>
+      <div class="fill"><span class="dot">📚</span><div><div class="k">6品目</div><div class="v">内容理解 <small>／ 本文4択</small></div></div></div>
+      <div class="fill"><span class="dot">🎤</span><div><div class="k">7品目</div><div class="v">シャドウイング <small>／ 音読で締め</small></div></div></div>
+    </div>
+
+    <div class="section-label">画面モックアップ（スマホ）</div>
+
+    <div class="gallery">
+
+      <!-- PHONE A : HOME -->
+      <div class="phone-wrap">
+        <div class="phone"><div class="screen">
+          <div class="statusbar"><span>9:41</span><span>● ●● ▲</span></div>
+          <div class="appbar">
+            <div class="logo">Teacher Tacos English <em>フルコース</em><small>FULL COURSE ENGLISH</small></div>
+            <div class="spacer"></div>
+            <div class="chip-round">🔥</div>
+            <div class="chip-round">👤</div>
+          </div>
+          <div class="body">
+            <div class="kicker">難易度を選ぶ</div>
+            <div class="levels">
+              <div class="lv">中学</div><div class="lv on">高校入門</div><div class="lv">標準</div><div class="lv">上級</div>
+            </div>
+            <div class="kicker" style="margin-top:2px">レッスン（コース）</div>
+
+            <div class="lcard done">
+              <div class="lrow"><div class="lnum">11</div>
+                <div><div class="ltitle">道案内をする</div><div class="lmeta">There is / are 構文</div></div>
+                <div class="grab">✓</div></div>
+              <div class="pips">
+                <span class="pip done">✓</span><span class="pip done">✓</span><span class="pip done">✓</span><span class="pip done">✓</span>
+                <span class="pip done">✓</span><span class="pip done">✓</span><span class="pip done">✓</span><span class="lbl">完食 7/7</span></div>
+            </div>
+
+            <div class="lcard current">
+              <div class="lrow"><div class="lnum">12</div>
+                <div><div class="ltitle">夢を語る</div><div class="lmeta">未来を表す will</div></div>
+                <div class="grab">›</div></div>
+              <div class="pips">
+                <span class="pip done">✓</span><span class="pip done">✓</span><span class="pip done">✓</span><span class="pip cur"></span>
+                <span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="lbl">3/7 品</span></div>
+              <button class="go">食べかけを再開 ›</button>
+            </div>
+
+            <div class="lcard locked">
+              <div class="lrow"><div class="lnum">13</div>
+                <div><div class="ltitle">意見を述べる</div><div class="lmeta">I think that …</div></div>
+                <div class="grab">🔒</div></div>
+              <div class="locknote">🔒 完食して進む ／ または 🌮 ラッシュ合格で飛び級</div>
+              <button class="go ghost">🌮 タコス厨房ラッシュで飛び級（10問連続）</button>
+            </div>
+          </div>
+        </div></div>
+        <p class="caption"><b>ホーム</b>：難易度を自分で選択。各レッスンは「7品」を順番に完食して修了。</p>
+      </div>
+
+      <!-- PHONE B : JOURNEY (7 courses) -->
+      <div class="phone-wrap">
+        <div class="phone"><div class="screen">
+          <div class="statusbar"><span>9:42</span><span>● ●● ▲</span></div>
+          <div class="stepbar"><span class="back">‹</span><span class="st">Lesson 12 — 夢を語る</span></div>
+          <div class="body">
+            <div class="textcard">
+              <div class="kicker">今日のコース（原文）</div>
+              <div class="en">Someday I will open my own café.</div>
+              <div class="jp">いつか自分のカフェを開くつもりだ。</div>
+            </div>
+            <div class="course-progress">
+              <span class="ic">🍽️</span><div class="bar"><i style="width:43%"></i></div><span class="n">3 / 7 品</span>
+            </div>
+
+            <div class="steps">
+              <div class="step done"><div class="rail"><div class="node">🎵</div><div class="line"></div></div>
+                <div class="scontent"><div class="sname">ソング <span class="tag g">完食</span></div>
+                  <div class="sdesc">まず歌で原文をまるごと。全体像を先につかむ。</div></div></div>
+              <div class="step done"><div class="rail"><div class="node">📖</div><div class="line"></div></div>
+                <div class="scontent"><div class="sname">文法解説 <span class="tag g">完食</span></div>
+                  <div class="sdesc">will の作り方。要点タップで理解チェック。</div></div></div>
+              <div class="step done"><div class="rail"><div class="node">📝</div><div class="line"></div></div>
+                <div class="scontent"><div class="sname">新出単語 <span class="tag g">完食</span></div>
+                  <div class="sdesc">日本語混じり文で café / someday を把握。</div></div></div>
+              <div class="step current"><div class="rail"><div class="node">✍️</div><div class="line"></div></div>
+                <div class="scontent"><div class="sname">単語テスト <span class="tag c">いま食べ中</span></div>
+                  <div class="sdesc"><b>8問6問で合格</b>。合格まで次は出ません。</div>
+                  <button class="sgate">▶ テストを始める</button></div></div>
+              <div class="step locked"><div class="rail"><div class="node">🧩</div><div class="line"></div></div>
+                <div class="scontent"><div class="sname">文法穴埋め</div>
+                  <div class="sdesc">will を使って空所を埋める運用練習。🔒</div></div></div>
+              <div class="step locked"><div class="rail"><div class="node">📚</div><div class="line"></div></div>
+                <div class="scontent"><div class="sname">内容理解（本文4択）</div>
+                  <div class="sdesc">本文を読み、内容の4択に答える。🔒</div></div></div>
+              <div class="step locked"><div class="rail"><div class="node">🎤</div></div>
+                <div class="scontent"><div class="sname">シャドウイング</div>
+                  <div class="sdesc">お手本を追って音読。読み切って完食。🔒</div></div></div>
+            </div>
+          </div>
+        </div></div>
+        <p class="caption"><b>7品コースの道のり</b>：<b>能動的に完食しないと次の品が出てこない</b>ゲート式。これがサイトとの決定的な違い。</p>
+      </div>
+
+      <!-- PHONE C : SHADOW -->
+      <div class="phone-wrap">
+        <div class="phone"><div class="screen">
+          <div class="statusbar"><span>9:52</span><span>● ●● ▲</span></div>
+          <div class="stepbar"><span class="back">‹</span><span class="st">🎤 シャドウイング（7品目）</span><span class="prog">3 文目 / 3</span></div>
+          <div class="body">
+            <div class="sentence">
+              <div class="en">Someday I will open my own <u>café</u>.</div>
+              <div class="jp">いつか自分のカフェを開くつもりだ。</div>
+            </div>
+            <button class="listen">🔊 お手本を聞く（ネイティブ）</button>
+            <div class="mic">
+              <button class="btn" aria-label="録音して音読">🎙️</button>
+              <div class="hint">押しながら、お手本を追って音読</div>
+            </div>
+            <div class="match">
+              <div class="mrow"><span>今回の一致度</span><b>68<i>%</i></b></div>
+              <div class="mbar"><i style="width:68%"></i><s style="left:60%"></s></div>
+              <div class="mnote">合格ライン <b>60%</b>（3回目・判定ゆるめ中）</div>
+            </div>
+            <div class="attempts">
+              <span class="a on"></span><span class="a on"></span><span class="a on"></span><span class="a"></span><span class="a"></span>
+              <span class="albl">3 / 5 回</span>
+            </div>
+            <p class="gate-note">うまく言えなくてOK。<b>くり返すほど合格ラインが下がり、5回で必ず通過</b>します。</p>
+          </div>
+        </div></div>
+        <p class="caption"><b>能動ステップ例（音読）</b>：一致が不完全でも、くり返すほど判定がやさしくなり <b>5回で必ず通過</b>。詰まらせない設計。</p>
+      </div>
+
+    </div>
+
+    <div class="section-label">なぜ「サイト」ではなく「アプリ」なのか</div>
+    <div class="why">
+      <div class="card"><div class="ic">🍽️</div><h4>7品を順番に完食</h4><p>歌で入り、文法・語彙・4種の演習を経て音読で締める。各品を<b>能動的にやり切って</b>初めて次へ。読み流しを構造的に防ぎます。</p></div>
+      <div class="card"><div class="ic">🎚️</div><h4>難易度は自分で選ぶ</h4><p>中学〜上級から、自分に合う帯を自由に選択。無理なく、でも物足りなくなく進められます。</p></div>
+      <div class="card"><div class="ic">🔁</div><h4>1原文を7面から</h4><p>同じ原文を歌→文法→単語→単語テスト→文法穴埋め→内容理解→音読と反復。<b>意味・語彙・文法・音</b>が一続きで定着します。</p></div>
+    </div>
+
+    <div class="section-label">進行ルール（仕様メモ）</div>
+    <div class="spec">
+      <div class="scard"><h4>🌮 飛び級は「タコス厨房ラッシュ」</h4>
+        <p>次章へ飛び級するには、<b>これまで登場した全単語</b>から出す<b>タコス厨房ラッシュ</b>で<b>10問連続正解</b>。ただし<b>直近レッスンの単語ほど出やすく傾斜</b>させ、初期の易しい語だけで運よく通過するのを防ぎます。（通常は7品を完食して進行）</p>
+        <div class="weight">
+          <i style="height:26%"></i><i style="height:30%"></i><i style="height:36%"></i><i style="height:42%"></i>
+          <i style="height:50%"></i><i style="height:60%"></i><i style="height:72%"></i>
+          <i class="hi" style="height:84%"></i><i class="hi" style="height:94%"></i><i class="hi" style="height:100%"></i>
+        </div>
+        <div class="wcap"><span>L1（低確率）</span><span>直近レッスン（高確率）→</span></div>
+      </div>
+      <div class="scard"><h4>🎤 シャドウイングは必ず通過できる</h4>
+        <p>音声の一致は完璧でなくてOK。<b>くり返すほど合格ラインが段階的に下がり</b>、<b>5回やり切れば必ず通過</b>。「発音が合わず先へ進めない」ストレスを設計で無くします。（発音の目安は毎回フィードバック）</p></div>
+    </div>
+
+    <p class="foot">
+      ※ 構成確認用モックアップです（実データ・音声・録音判定は未実装）。配色・書体は本サイト <b>index.html</b>（青アクセント／白カード／英文は Georgia セリフ）を踏襲。<br>
+      タイトル「Teacher Tacos English フルコース」・7品の名称や順序は仮。ご希望に合わせて調整できます。
+    </p>
+
+  </div>
+</div>
+</body></html>

@@ -219,6 +219,19 @@ def copy_file(source: Path, target: Path) -> None:
     shutil.copy2(source, target)
 
 
+def copy_optional_tree(source: Path, target: Path, **kwargs: object) -> bool:
+    """Copy a locally generated asset tree when it is available.
+
+    Large lesson artwork is intentionally kept outside Git. Cloudflare builds run
+    from a source-only checkout, so those optional trees may not exist there.
+    """
+    if not source.is_dir():
+        print(f"Skipping optional local assets: {source.relative_to(ROOT)}")
+        return False
+    shutil.copytree(source, target, **kwargs)
+    return True
+
+
 def main() -> int:
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -259,7 +272,7 @@ def main() -> int:
         "phonics-short-o",
         "cowboy-counting",
     ):
-        shutil.copytree(
+        copy_optional_tree(
             DIST / phonics_dir,
             OUT / phonics_dir,
             ignore=shutil.ignore_patterns(".DS_Store", "__pycache__", "sheets"),

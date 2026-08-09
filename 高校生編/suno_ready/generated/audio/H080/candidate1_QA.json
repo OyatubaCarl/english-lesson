@@ -1,0 +1,280 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H080.md",
+  "audio": "高校生編/suno_ready/generated/audio/H080/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 212.92,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 221,
+  "transcribed_words": 221,
+  "matched_words": 212,
+  "coverage": 0.9593,
+  "precision": 0.9593,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 220,
+  "longest_missing_run": 5,
+  "largest_missing_runs": [
+    {
+      "start": 181,
+      "length": 5,
+      "words": [
+        "whose",
+        "traditional",
+        "values",
+        "had",
+        "collapsed"
+      ]
+    },
+    {
+      "start": 158,
+      "length": 2,
+      "words": [
+        "nietzsche",
+        "doubted"
+      ]
+    },
+    {
+      "start": 75,
+      "length": 1,
+      "words": [
+        "seventeenth"
+      ]
+    },
+    {
+      "start": 110,
+      "length": 1,
+      "words": [
+        "and"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 75,
+      "actual_start": 78,
+      "expected": [
+        "seventeenth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.8552,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 110,
+      "actual_start": 113,
+      "expected": [
+        "and"
+      ],
+      "actual": [
+        "in"
+      ],
+      "actual_confidence": 0.0912,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 158,
+      "actual_start": 161,
+      "expected": [
+        "nietzsche",
+        "doubted"
+      ],
+      "actual": [
+        "needs",
+        "to",
+        "doubt"
+      ],
+      "actual_confidence": 0.735,
+      "substitution_words": 2,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 29,
+      "actual_start": 29,
+      "expected": [],
+      "actual": [
+        "two",
+        "five",
+        "hundred"
+      ],
+      "actual_confidence": 0.6214
+    },
+    {
+      "expected_start": 221,
+      "actual_start": 220,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.1113
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 181,
+      "actual_start": 185,
+      "expected": [
+        "whose",
+        "traditional",
+        "values",
+        "had",
+        "collapsed"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 3,
+  "suspicious_content_substitution": true,
+  "transcript": "Philosophy begins with doubting what we take for granted What is justice? What is a good life? What can we know? These questions have been asked since ancient Greece Two, five hundred years ago To the present day Plato argued that beyond the visible world There lay a perfect world of ideas Aristotle thought that we could approach truth only through concrete experience The contrast between the two became the archetype of the history of philosophy In the 17th century, Descartes wrote his famous words, I think Therefore I am, even if one doubts everything The existence of the self that doubts cannot be doubted This became the starting point of modern philosophy in the problem of consciousness was placed at the center Kant asked what a moral act truly was He said ask yourself whether the principle of your action could become a principle for all He tried to set the standard of good and evil In an absolute way Needs to doubt the very system of existing moral values His declaration, God is dead, was a radical question thrown at a modern society In philosophy, the act of continuing to ask has more meaning than finding an answer To face an abstract question Is the most fundamental act by which We come to deeply understand Who we are you",
+  "segments": [
+    {
+      "start": 9.32,
+      "end": 15.02,
+      "text": "Philosophy begins with doubting what we take for granted"
+    },
+    {
+      "start": 17.9,
+      "end": 19.82,
+      "text": "What is justice?"
+    },
+    {
+      "start": 20.86,
+      "end": 22.28,
+      "text": "What is a good life?"
+    },
+    {
+      "start": 23.08,
+      "end": 24.54,
+      "text": "What can we know?"
+    },
+    {
+      "start": 26.7,
+      "end": 31.34,
+      "text": "These questions have been asked since ancient Greece"
+    },
+    {
+      "start": 31.34,
+      "end": 34.56,
+      "text": "Two, five hundred years ago"
+    },
+    {
+      "start": 36.0,
+      "end": 38.88,
+      "text": "To the present day"
+    },
+    {
+      "start": 42.74,
+      "end": 46.58,
+      "text": "Plato argued that beyond the visible world"
+    },
+    {
+      "start": 46.58,
+      "end": 50.5,
+      "text": "There lay a perfect world of ideas"
+    },
+    {
+      "start": 50.5,
+      "end": 59.52,
+      "text": "Aristotle thought that we could approach truth only through concrete experience"
+    },
+    {
+      "start": 59.52,
+      "end": 71.1,
+      "text": "The contrast between the two became the archetype of the history of philosophy"
+    },
+    {
+      "start": 80.5,
+      "end": 86.0,
+      "text": "In the 17th century, Descartes wrote his famous words, I think"
+    },
+    {
+      "start": 86.0,
+      "end": 91.68,
+      "text": "Therefore I am, even if one doubts everything"
+    },
+    {
+      "start": 92.5,
+      "end": 99.06,
+      "text": "The existence of the self that doubts cannot be doubted"
+    },
+    {
+      "start": 100.22,
+      "end": 104.22,
+      "text": "This became the starting point of modern philosophy"
+    },
+    {
+      "start": 104.22,
+      "end": 109.28,
+      "text": "in the problem of consciousness was placed at the center"
+    },
+    {
+      "start": 109.28,
+      "end": 113.72,
+      "text": "Kant asked what a moral act truly was"
+    },
+    {
+      "start": 113.72,
+      "end": 118.94,
+      "text": "He said ask yourself whether the principle of your action"
+    },
+    {
+      "start": 118.94,
+      "end": 125.38,
+      "text": "could become a principle for all"
+    },
+    {
+      "start": 127.18,
+      "end": 131.74,
+      "text": "He tried to set the standard of good and evil"
+    },
+    {
+      "start": 131.74,
+      "end": 144.78,
+      "text": "In an absolute way Needs to doubt the very system of existing moral values"
+    },
+    {
+      "start": 146.26,
+      "end": 153.92,
+      "text": "His declaration, God is dead, was a radical question thrown at a modern society"
+    },
+    {
+      "start": 166.22,
+      "end": 179.76,
+      "text": "In philosophy, the act of continuing to ask has more meaning than finding an answer"
+    },
+    {
+      "start": 179.76,
+      "end": 183.76,
+      "text": "To face an abstract question"
+    },
+    {
+      "start": 184.76,
+      "end": 189.08,
+      "text": "Is the most fundamental act by which"
+    },
+    {
+      "start": 189.76,
+      "end": 193.62,
+      "text": "We come to deeply understand"
+    },
+    {
+      "start": 194.76,
+      "end": 197.04,
+      "text": "Who we are"
+    },
+    {
+      "start": 211.5,
+      "end": 211.82,
+      "text": "you"
+    }
+  ]
+}

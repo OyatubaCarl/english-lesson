@@ -1,0 +1,263 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H091.md",
+  "audio": "高校生編/suno_ready/generated/audio/H091/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 131.62,
+  "verdict": "REVIEW_OMISSION_OR_STRUCTURE",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.7809,
+  "expected_words": 178,
+  "transcribed_words": 139,
+  "matched_words": 133,
+  "coverage": 0.7472,
+  "precision": 0.9568,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 177,
+  "longest_missing_run": 41,
+  "largest_missing_runs": [
+    {
+      "start": 78,
+      "length": 41,
+      "words": [
+        "fresh",
+        "bread",
+        "and",
+        "the",
+        "aroma",
+        "of",
+        "rich",
+        "spices",
+        "drifted",
+        "in",
+        "the",
+        "air",
+        "and",
+        "stirred",
+        "my",
+        "appetite",
+        "i",
+        "took",
+        "a",
+        "train",
+        "south",
+        "and",
+        "stayed",
+        "at",
+        "an",
+        "inn",
+        "in",
+        "a",
+        "whitewashed",
+        "village",
+        "the",
+        "owners",
+        "were",
+        "a",
+        "generous",
+        "elderly",
+        "couple",
+        "who",
+        "served",
+        "me",
+        "dinner"
+      ]
+    },
+    {
+      "start": 74,
+      "length": 3,
+      "words": [
+        "market",
+        "the",
+        "scent"
+      ]
+    },
+    {
+      "start": 72,
+      "length": 1,
+      "words": [
+        "in"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 72,
+      "actual_start": 72,
+      "expected": [
+        "in"
+      ],
+      "actual": [
+        "we",
+        "are",
+        "now",
+        "at"
+      ],
+      "actual_confidence": 0.6448,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 74,
+      "actual_start": 77,
+      "expected": [
+        "market",
+        "the",
+        "scent"
+      ],
+      "actual": [
+        "university"
+      ],
+      "actual_confidence": 0.0472,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 78,
+      "actual_start": 79,
+      "expected": [
+        "fresh",
+        "bread",
+        "and",
+        "the",
+        "aroma",
+        "of",
+        "rich",
+        "spices",
+        "drifted",
+        "in",
+        "the",
+        "air",
+        "and",
+        "stirred",
+        "my",
+        "appetite",
+        "i",
+        "took",
+        "a",
+        "train",
+        "south",
+        "and",
+        "stayed",
+        "at",
+        "an",
+        "inn",
+        "in",
+        "a",
+        "whitewashed",
+        "village",
+        "the",
+        "owners",
+        "were",
+        "a",
+        "generous",
+        "elderly",
+        "couple",
+        "who",
+        "served",
+        "me",
+        "dinner"
+      ],
+      "actual": [
+        "minnesota"
+      ],
+      "actual_confidence": 0.0312,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "The week after I graduated from university I set off alone for southern Europe A cheap airline ticket and a worn-out backpack were all I had The old quarter of Barcelona Was a maze of bare stone walls and narrow lanes My footsteps echoed against the walls At every turn a small craft shop Or a folk music bar appeared down at the harbor A dozen fishing boats were lined up We are now at the University of Minnesota The furniture was old, but well kept On the last morning, I leaned on the balcony And looked out at the sea The wind blew gently This time of leisure was exactly what I had been seeking on the journey The trip taught me something The world is far more friendly and far broader than I had ever imagined",
+  "segments": [
+    {
+      "start": 9.2,
+      "end": 13.7,
+      "text": "The week after I graduated from university"
+    },
+    {
+      "start": 13.7,
+      "end": 18.9,
+      "text": "I set off alone for southern Europe"
+    },
+    {
+      "start": 18.9,
+      "end": 25.28,
+      "text": "A cheap airline ticket and a worn-out backpack were all I had"
+    },
+    {
+      "start": 27.5,
+      "end": 31.02,
+      "text": "The old quarter of Barcelona"
+    },
+    {
+      "start": 31.02,
+      "end": 37.02,
+      "text": "Was a maze of bare stone walls and narrow lanes"
+    },
+    {
+      "start": 38.22,
+      "end": 41.3,
+      "text": "My footsteps echoed against the walls"
+    },
+    {
+      "start": 41.3,
+      "end": 44.6,
+      "text": "At every turn a small craft shop"
+    },
+    {
+      "start": 44.6,
+      "end": 49.0,
+      "text": "Or a folk music bar appeared down at the harbor"
+    },
+    {
+      "start": 49.98,
+      "end": 53.66,
+      "text": "A dozen fishing boats were lined up"
+    },
+    {
+      "start": 61.04,
+      "end": 82.92,
+      "text": "We are now at the University of Minnesota"
+    },
+    {
+      "start": 84.94,
+      "end": 90.98,
+      "text": "The furniture was old, but well kept"
+    },
+    {
+      "start": 92.78,
+      "end": 98.74,
+      "text": "On the last morning, I leaned on the balcony"
+    },
+    {
+      "start": 98.74,
+      "end": 102.88,
+      "text": "And looked out at the sea"
+    },
+    {
+      "start": 102.88,
+      "end": 105.72,
+      "text": "The wind blew gently"
+    },
+    {
+      "start": 108.16,
+      "end": 116.14,
+      "text": "This time of leisure was exactly what I had been seeking on the journey"
+    },
+    {
+      "start": 117.84,
+      "end": 124.4,
+      "text": "The trip taught me something The world is far more friendly"
+    },
+    {
+      "start": 124.4,
+      "end": 131.62,
+      "text": "and far broader than I had ever imagined"
+    }
+  ]
+}

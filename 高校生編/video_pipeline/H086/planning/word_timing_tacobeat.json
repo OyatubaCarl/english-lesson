@@ -1,0 +1,1410 @@
+{
+  "lesson": "H086",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h086_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H086/candidate2-full.mp3",
+  "source_audio_sha256": "48f4399d9688f4ae6e7d560542dea9359e50ea0da70beb040ca3468aeea18d8c",
+  "bpm": 88.36,
+  "exact_word_match": true,
+  "word_count": 215,
+  "line_count": 13,
+  "first_word_start": 12.022,
+  "last_word_end": 157.818,
+  "lines": [
+    {
+      "line": 1,
+      "english": "The rule of law is the principle that all people are equal before the law and that no power holder may stand above the law.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 12.022,
+          "end": 12.161
+        },
+        {
+          "word": "rule",
+          "display_index": 1,
+          "start": 12.161,
+          "end": 12.541
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 12.541,
+          "end": 12.701
+        },
+        {
+          "word": "law",
+          "display_index": 3,
+          "start": 12.701,
+          "end": 13.213
+        },
+        {
+          "word": "is",
+          "display_index": 4,
+          "start": 13.213,
+          "end": 13.377
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 13.377,
+          "end": 13.482
+        },
+        {
+          "word": "principle",
+          "display_index": 6,
+          "start": 13.482,
+          "end": 14.382
+        },
+        {
+          "word": "that",
+          "display_index": 7,
+          "start": 14.382,
+          "end": 14.602
+        },
+        {
+          "word": "all",
+          "display_index": 8,
+          "start": 14.602,
+          "end": 14.842
+        },
+        {
+          "word": "people",
+          "display_index": 9,
+          "start": 14.842,
+          "end": 15.235
+        },
+        {
+          "word": "are",
+          "display_index": 10,
+          "start": 15.235,
+          "end": 15.522
+        },
+        {
+          "word": "equal",
+          "display_index": 11,
+          "start": 15.522,
+          "end": 16.042
+        },
+        {
+          "word": "before",
+          "display_index": 12,
+          "start": 16.042,
+          "end": 16.596
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 16.596,
+          "end": 16.742
+        },
+        {
+          "word": "law",
+          "display_index": 14,
+          "start": 16.742,
+          "end": 17.442
+        },
+        {
+          "word": "and",
+          "display_index": 15,
+          "start": 17.442,
+          "end": 17.582
+        },
+        {
+          "word": "that",
+          "display_index": 16,
+          "start": 17.582,
+          "end": 17.782
+        },
+        {
+          "word": "no",
+          "display_index": 17,
+          "start": 17.782,
+          "end": 18.222
+        },
+        {
+          "word": "power",
+          "display_index": 18,
+          "start": 18.222,
+          "end": 18.762
+        },
+        {
+          "word": "holder",
+          "display_index": 19,
+          "start": 18.762,
+          "end": 20.602
+        },
+        {
+          "word": "may",
+          "display_index": 20,
+          "start": 20.602,
+          "end": 20.882
+        },
+        {
+          "word": "stand",
+          "display_index": 21,
+          "start": 20.882,
+          "end": 21.402
+        },
+        {
+          "word": "above",
+          "display_index": 22,
+          "start": 21.402,
+          "end": 21.871
+        },
+        {
+          "word": "the",
+          "display_index": 23,
+          "start": 21.871,
+          "end": 22.003
+        },
+        {
+          "word": "law.",
+          "display_index": 24,
+          "start": 22.003,
+          "end": 23.023
+        }
+      ],
+      "start": 12.022,
+      "end": 23.023
+    },
+    {
+      "line": 2,
+      "english": "This principle, which began in ancient Rome, forms the foundation of modern democratic society.",
+      "word_timings": [
+        {
+          "word": "This",
+          "display_index": 0,
+          "start": 23.323,
+          "end": 23.643
+        },
+        {
+          "word": "principle,",
+          "display_index": 1,
+          "start": 23.643,
+          "end": 24.663
+        },
+        {
+          "word": "which",
+          "display_index": 2,
+          "start": 24.663,
+          "end": 24.883
+        },
+        {
+          "word": "began",
+          "display_index": 3,
+          "start": 24.883,
+          "end": 25.443
+        },
+        {
+          "word": "in",
+          "display_index": 4,
+          "start": 25.443,
+          "end": 25.643
+        },
+        {
+          "word": "ancient",
+          "display_index": 5,
+          "start": 25.643,
+          "end": 26.243
+        },
+        {
+          "word": "Rome,",
+          "display_index": 6,
+          "start": 26.243,
+          "end": 27.723
+        },
+        {
+          "word": "forms",
+          "display_index": 7,
+          "start": 27.723,
+          "end": 28.368
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 28.368,
+          "end": 28.583
+        },
+        {
+          "word": "foundation",
+          "display_index": 9,
+          "start": 28.583,
+          "end": 30.324
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 30.324,
+          "end": 30.504
+        },
+        {
+          "word": "modern",
+          "display_index": 11,
+          "start": 30.504,
+          "end": 31.144
+        },
+        {
+          "word": "democratic",
+          "display_index": 12,
+          "start": 31.144,
+          "end": 32.304
+        },
+        {
+          "word": "society.",
+          "display_index": 13,
+          "start": 32.304,
+          "end": 33.793
+        }
+      ],
+      "start": 23.323,
+      "end": 33.793
+    },
+    {
+      "line": 3,
+      "english": "A constitution stands as the supreme law, and every other law is placed beneath it.",
+      "word_timings": [
+        {
+          "word": "A",
+          "display_index": 0,
+          "start": 34.093,
+          "end": 34.184
+        },
+        {
+          "word": "constitution",
+          "display_index": 1,
+          "start": 34.184,
+          "end": 35.144
+        },
+        {
+          "word": "stands",
+          "display_index": 2,
+          "start": 35.144,
+          "end": 35.824
+        },
+        {
+          "word": "as",
+          "display_index": 3,
+          "start": 35.824,
+          "end": 35.96
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 35.96,
+          "end": 36.084
+        },
+        {
+          "word": "supreme",
+          "display_index": 5,
+          "start": 36.084,
+          "end": 36.644
+        },
+        {
+          "word": "law,",
+          "display_index": 6,
+          "start": 36.644,
+          "end": 37.184
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 37.184,
+          "end": 37.344
+        },
+        {
+          "word": "every",
+          "display_index": 8,
+          "start": 37.344,
+          "end": 37.684
+        },
+        {
+          "word": "other",
+          "display_index": 9,
+          "start": 37.684,
+          "end": 37.984
+        },
+        {
+          "word": "law",
+          "display_index": 10,
+          "start": 37.984,
+          "end": 38.484
+        },
+        {
+          "word": "is",
+          "display_index": 11,
+          "start": 38.484,
+          "end": 38.584
+        },
+        {
+          "word": "placed",
+          "display_index": 12,
+          "start": 38.584,
+          "end": 38.965
+        },
+        {
+          "word": "beneath",
+          "display_index": 13,
+          "start": 38.965,
+          "end": 39.565
+        },
+        {
+          "word": "it.",
+          "display_index": 14,
+          "start": 39.565,
+          "end": 39.725
+        }
+      ],
+      "start": 34.093,
+      "end": 39.725
+    },
+    {
+      "line": 4,
+      "english": "In the real world, however, there are many countries where the rule of law does not work well enough.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 39.725,
+          "end": 39.85
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 39.85,
+          "end": 40.005
+        },
+        {
+          "word": "real",
+          "display_index": 2,
+          "start": 40.005,
+          "end": 40.345
+        },
+        {
+          "word": "world,",
+          "display_index": 3,
+          "start": 40.345,
+          "end": 40.985
+        },
+        {
+          "word": "however,",
+          "display_index": 4,
+          "start": 40.985,
+          "end": 42.025
+        },
+        {
+          "word": "there",
+          "display_index": 5,
+          "start": 42.025,
+          "end": 42.23
+        },
+        {
+          "word": "are",
+          "display_index": 6,
+          "start": 42.23,
+          "end": 42.365
+        },
+        {
+          "word": "many",
+          "display_index": 7,
+          "start": 42.365,
+          "end": 42.685
+        },
+        {
+          "word": "countries",
+          "display_index": 8,
+          "start": 42.685,
+          "end": 44.945
+        },
+        {
+          "word": "where",
+          "display_index": 9,
+          "start": 44.945,
+          "end": 45.276
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 45.276,
+          "end": 45.445
+        },
+        {
+          "word": "rule",
+          "display_index": 11,
+          "start": 45.445,
+          "end": 45.825
+        },
+        {
+          "word": "of",
+          "display_index": 12,
+          "start": 45.825,
+          "end": 46.025
+        },
+        {
+          "word": "law",
+          "display_index": 13,
+          "start": 46.025,
+          "end": 47.125
+        },
+        {
+          "word": "does",
+          "display_index": 14,
+          "start": 47.125,
+          "end": 47.466
+        },
+        {
+          "word": "not",
+          "display_index": 15,
+          "start": 47.466,
+          "end": 47.806
+        },
+        {
+          "word": "work",
+          "display_index": 16,
+          "start": 47.806,
+          "end": 49.486
+        },
+        {
+          "word": "well",
+          "display_index": 17,
+          "start": 49.486,
+          "end": 50.406
+        },
+        {
+          "word": "enough.",
+          "display_index": 18,
+          "start": 50.406,
+          "end": 51.906
+        }
+      ],
+      "start": 39.725,
+      "end": 51.906
+    },
+    {
+      "line": 5,
+      "english": "Corruption spreads, and those in power sometimes twist the law to their own advantage.",
+      "word_timings": [
+        {
+          "word": "Corruption",
+          "display_index": 0,
+          "start": 55.426,
+          "end": 56.167
+        },
+        {
+          "word": "spreads,",
+          "display_index": 1,
+          "start": 56.167,
+          "end": 57.167
+        },
+        {
+          "word": "and",
+          "display_index": 2,
+          "start": 57.167,
+          "end": 57.307
+        },
+        {
+          "word": "those",
+          "display_index": 3,
+          "start": 57.307,
+          "end": 57.547
+        },
+        {
+          "word": "in",
+          "display_index": 4,
+          "start": 57.547,
+          "end": 57.647
+        },
+        {
+          "word": "power",
+          "display_index": 5,
+          "start": 57.647,
+          "end": 58.327
+        },
+        {
+          "word": "sometimes",
+          "display_index": 6,
+          "start": 58.327,
+          "end": 58.987
+        },
+        {
+          "word": "twist",
+          "display_index": 7,
+          "start": 58.987,
+          "end": 59.392
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 59.392,
+          "end": 59.547
+        },
+        {
+          "word": "law",
+          "display_index": 9,
+          "start": 59.547,
+          "end": 60.023
+        },
+        {
+          "word": "to",
+          "display_index": 10,
+          "start": 60.023,
+          "end": 60.207
+        },
+        {
+          "word": "their",
+          "display_index": 11,
+          "start": 60.207,
+          "end": 60.527
+        },
+        {
+          "word": "own",
+          "display_index": 12,
+          "start": 60.527,
+          "end": 60.807
+        },
+        {
+          "word": "advantage.",
+          "display_index": 13,
+          "start": 60.807,
+          "end": 61.747
+        }
+      ],
+      "start": 55.426,
+      "end": 61.747
+    },
+    {
+      "line": 6,
+      "english": "Judges may come under political pressure and lose the ability to make independent decisions.",
+      "word_timings": [
+        {
+          "word": "Judges",
+          "display_index": 0,
+          "start": 62.047,
+          "end": 62.447
+        },
+        {
+          "word": "may",
+          "display_index": 1,
+          "start": 62.447,
+          "end": 62.707
+        },
+        {
+          "word": "come",
+          "display_index": 2,
+          "start": 62.707,
+          "end": 63.187
+        },
+        {
+          "word": "under",
+          "display_index": 3,
+          "start": 63.187,
+          "end": 63.587
+        },
+        {
+          "word": "political",
+          "display_index": 4,
+          "start": 63.587,
+          "end": 64.247
+        },
+        {
+          "word": "pressure",
+          "display_index": 5,
+          "start": 64.247,
+          "end": 66.148
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 66.148,
+          "end": 66.328
+        },
+        {
+          "word": "lose",
+          "display_index": 7,
+          "start": 66.328,
+          "end": 66.686
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 66.686,
+          "end": 67.068
+        },
+        {
+          "word": "ability",
+          "display_index": 9,
+          "start": 67.068,
+          "end": 68.161
+        },
+        {
+          "word": "to",
+          "display_index": 10,
+          "start": 68.161,
+          "end": 68.508
+        },
+        {
+          "word": "make",
+          "display_index": 11,
+          "start": 68.508,
+          "end": 69.268
+        },
+        {
+          "word": "independent",
+          "display_index": 12,
+          "start": 69.268,
+          "end": 70.888
+        },
+        {
+          "word": "decisions.",
+          "display_index": 13,
+          "start": 70.888,
+          "end": 72.14
+        }
+      ],
+      "start": 62.047,
+      "end": 72.14
+    },
+    {
+      "line": 7,
+      "english": "A person who commits a crime is brought to trial, and if found guilty, is confined.",
+      "word_timings": [
+        {
+          "word": "A",
+          "display_index": 0,
+          "start": 72.44,
+          "end": 72.588
+        },
+        {
+          "word": "person",
+          "display_index": 1,
+          "start": 72.588,
+          "end": 73.268
+        },
+        {
+          "word": "who",
+          "display_index": 2,
+          "start": 73.268,
+          "end": 73.589
+        },
+        {
+          "word": "commits",
+          "display_index": 3,
+          "start": 73.589,
+          "end": 74.171
+        },
+        {
+          "word": "a",
+          "display_index": 4,
+          "start": 74.171,
+          "end": 74.349
+        },
+        {
+          "word": "crime",
+          "display_index": 5,
+          "start": 74.349,
+          "end": 75.003
+        },
+        {
+          "word": "is",
+          "display_index": 6,
+          "start": 75.003,
+          "end": 75.289
+        },
+        {
+          "word": "brought",
+          "display_index": 7,
+          "start": 75.289,
+          "end": 76.008
+        },
+        {
+          "word": "to",
+          "display_index": 8,
+          "start": 76.008,
+          "end": 76.429
+        },
+        {
+          "word": "trial,",
+          "display_index": 9,
+          "start": 76.429,
+          "end": 77.589
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 77.589,
+          "end": 77.769
+        },
+        {
+          "word": "if",
+          "display_index": 11,
+          "start": 77.769,
+          "end": 78.009
+        },
+        {
+          "word": "found",
+          "display_index": 12,
+          "start": 78.009,
+          "end": 78.709
+        },
+        {
+          "word": "guilty,",
+          "display_index": 13,
+          "start": 78.709,
+          "end": 80.105
+        },
+        {
+          "word": "is",
+          "display_index": 14,
+          "start": 80.105,
+          "end": 80.229
+        },
+        {
+          "word": "confined.",
+          "display_index": 15,
+          "start": 80.229,
+          "end": 81.729
+        }
+      ],
+      "start": 72.44,
+      "end": 81.729
+    },
+    {
+      "line": 8,
+      "english": "But in recent years, the purpose of punishment has been shifting from mere penalty toward rehabilitation.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 82.99,
+          "end": 83.23
+        },
+        {
+          "word": "in",
+          "display_index": 1,
+          "start": 83.23,
+          "end": 83.47
+        },
+        {
+          "word": "recent",
+          "display_index": 2,
+          "start": 83.47,
+          "end": 84.17
+        },
+        {
+          "word": "years,",
+          "display_index": 3,
+          "start": 84.17,
+          "end": 84.701
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 84.701,
+          "end": 84.81
+        },
+        {
+          "word": "purpose",
+          "display_index": 5,
+          "start": 84.81,
+          "end": 85.47
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 85.47,
+          "end": 85.85
+        },
+        {
+          "word": "punishment",
+          "display_index": 7,
+          "start": 85.85,
+          "end": 88.25
+        },
+        {
+          "word": "has",
+          "display_index": 8,
+          "start": 88.25,
+          "end": 88.59
+        },
+        {
+          "word": "been",
+          "display_index": 9,
+          "start": 88.59,
+          "end": 88.89
+        },
+        {
+          "word": "shifting",
+          "display_index": 10,
+          "start": 88.89,
+          "end": 90.751
+        },
+        {
+          "word": "from",
+          "display_index": 11,
+          "start": 90.751,
+          "end": 91.011
+        },
+        {
+          "word": "mere",
+          "display_index": 12,
+          "start": 91.011,
+          "end": 91.631
+        },
+        {
+          "word": "penalty",
+          "display_index": 13,
+          "start": 91.631,
+          "end": 92.711
+        },
+        {
+          "word": "toward",
+          "display_index": 14,
+          "start": 92.711,
+          "end": 93.091
+        },
+        {
+          "word": "rehabilitation.",
+          "display_index": 15,
+          "start": 93.091,
+          "end": 94.591
+        }
+      ],
+      "start": 82.99,
+      "end": 94.591
+    },
+    {
+      "line": 9,
+      "english": "The aim is to help former prisoners return to society and to prevent them from falling back into criminal conduct.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 99.416,
+          "end": 99.652
+        },
+        {
+          "word": "aim",
+          "display_index": 1,
+          "start": 99.652,
+          "end": 100.133
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 100.133,
+          "end": 100.262
+        },
+        {
+          "word": "to",
+          "display_index": 3,
+          "start": 100.262,
+          "end": 100.412
+        },
+        {
+          "word": "help",
+          "display_index": 4,
+          "start": 100.412,
+          "end": 100.752
+        },
+        {
+          "word": "former",
+          "display_index": 5,
+          "start": 100.752,
+          "end": 101.252
+        },
+        {
+          "word": "prisoners",
+          "display_index": 6,
+          "start": 101.252,
+          "end": 101.992
+        },
+        {
+          "word": "return",
+          "display_index": 7,
+          "start": 101.992,
+          "end": 102.617
+        },
+        {
+          "word": "to",
+          "display_index": 8,
+          "start": 102.617,
+          "end": 102.952
+        },
+        {
+          "word": "society",
+          "display_index": 9,
+          "start": 102.952,
+          "end": 104.852
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 104.852,
+          "end": 104.978
+        },
+        {
+          "word": "to",
+          "display_index": 11,
+          "start": 104.978,
+          "end": 105.152
+        },
+        {
+          "word": "prevent",
+          "display_index": 12,
+          "start": 105.152,
+          "end": 105.712
+        },
+        {
+          "word": "them",
+          "display_index": 13,
+          "start": 105.712,
+          "end": 106.192
+        },
+        {
+          "word": "from",
+          "display_index": 14,
+          "start": 106.192,
+          "end": 106.392
+        },
+        {
+          "word": "falling",
+          "display_index": 15,
+          "start": 106.392,
+          "end": 106.752
+        },
+        {
+          "word": "back",
+          "display_index": 16,
+          "start": 106.752,
+          "end": 107.152
+        },
+        {
+          "word": "into",
+          "display_index": 17,
+          "start": 107.152,
+          "end": 108.033
+        },
+        {
+          "word": "criminal",
+          "display_index": 18,
+          "start": 108.033,
+          "end": 108.753
+        },
+        {
+          "word": "conduct.",
+          "display_index": 19,
+          "start": 108.753,
+          "end": 110.253
+        }
+      ],
+      "start": 99.416,
+      "end": 110.253
+    },
+    {
+      "line": 10,
+      "english": "Citizens, too, carry the responsibility of taking part in upholding the law.",
+      "word_timings": [
+        {
+          "word": "Citizens,",
+          "display_index": 0,
+          "start": 110.813,
+          "end": 111.859
+        },
+        {
+          "word": "too,",
+          "display_index": 1,
+          "start": 111.859,
+          "end": 112.873
+        },
+        {
+          "word": "carry",
+          "display_index": 2,
+          "start": 112.873,
+          "end": 113.64
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 113.64,
+          "end": 113.953
+        },
+        {
+          "word": "responsibility",
+          "display_index": 4,
+          "start": 113.953,
+          "end": 116.053
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 116.053,
+          "end": 116.293
+        },
+        {
+          "word": "taking",
+          "display_index": 6,
+          "start": 116.293,
+          "end": 116.874
+        },
+        {
+          "word": "part",
+          "display_index": 7,
+          "start": 116.874,
+          "end": 118.654
+        },
+        {
+          "word": "in",
+          "display_index": 8,
+          "start": 118.654,
+          "end": 118.854
+        },
+        {
+          "word": "upholding",
+          "display_index": 9,
+          "start": 118.854,
+          "end": 121.49
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 121.49,
+          "end": 121.694
+        },
+        {
+          "word": "law.",
+          "display_index": 11,
+          "start": 121.694,
+          "end": 123.194
+        }
+      ],
+      "start": 110.813,
+      "end": 123.194
+    },
+    {
+      "line": 11,
+      "english": "When citizens raise their voices against wrongdoing and demand transparency of the system, they support the health of democratic society.",
+      "word_timings": [
+        {
+          "word": "When",
+          "display_index": 0,
+          "start": 124.274,
+          "end": 124.594
+        },
+        {
+          "word": "citizens",
+          "display_index": 1,
+          "start": 124.594,
+          "end": 125.315
+        },
+        {
+          "word": "raise",
+          "display_index": 2,
+          "start": 125.315,
+          "end": 125.655
+        },
+        {
+          "word": "their",
+          "display_index": 3,
+          "start": 125.655,
+          "end": 125.815
+        },
+        {
+          "word": "voices",
+          "display_index": 4,
+          "start": 125.815,
+          "end": 126.595
+        },
+        {
+          "word": "against",
+          "display_index": 5,
+          "start": 126.595,
+          "end": 126.995
+        },
+        {
+          "word": "wrongdoing",
+          "display_index": 6,
+          "start": 126.995,
+          "end": 128.115
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 128.115,
+          "end": 128.395
+        },
+        {
+          "word": "demand",
+          "display_index": 8,
+          "start": 128.395,
+          "end": 129.035
+        },
+        {
+          "word": "transparency",
+          "display_index": 9,
+          "start": 129.035,
+          "end": 130.555
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 130.555,
+          "end": 130.676
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 130.676,
+          "end": 130.815
+        },
+        {
+          "word": "system,",
+          "display_index": 12,
+          "start": 130.815,
+          "end": 131.855
+        },
+        {
+          "word": "they",
+          "display_index": 13,
+          "start": 131.855,
+          "end": 132.035
+        },
+        {
+          "word": "support",
+          "display_index": 14,
+          "start": 132.035,
+          "end": 132.742
+        },
+        {
+          "word": "the",
+          "display_index": 15,
+          "start": 132.742,
+          "end": 132.935
+        },
+        {
+          "word": "health",
+          "display_index": 16,
+          "start": 132.935,
+          "end": 134.156
+        },
+        {
+          "word": "of",
+          "display_index": 17,
+          "start": 134.156,
+          "end": 134.316
+        },
+        {
+          "word": "democratic",
+          "display_index": 18,
+          "start": 134.316,
+          "end": 135.436
+        },
+        {
+          "word": "society.",
+          "display_index": 19,
+          "start": 135.436,
+          "end": 136.936
+        }
+      ],
+      "start": 124.274,
+      "end": 136.936
+    },
+    {
+      "line": 12,
+      "english": "Law is the promise of a society.",
+      "word_timings": [
+        {
+          "word": "Law",
+          "display_index": 0,
+          "start": 138.996,
+          "end": 139.782
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 139.782,
+          "end": 139.893
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 139.893,
+          "end": 140.016
+        },
+        {
+          "word": "promise",
+          "display_index": 3,
+          "start": 140.016,
+          "end": 140.676
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 140.676,
+          "end": 140.807
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 140.807,
+          "end": 141.116
+        },
+        {
+          "word": "society.",
+          "display_index": 6,
+          "start": 141.116,
+          "end": 142.616
+        }
+      ],
+      "start": 138.996,
+      "end": 142.616
+    },
+    {
+      "line": 13,
+      "english": "The will to keep that promise, and to reform it as needed, is what builds the foundation of a free and just society.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 144.175,
+          "end": 144.337
+        },
+        {
+          "word": "will",
+          "display_index": 1,
+          "start": 144.337,
+          "end": 144.689
+        },
+        {
+          "word": "to",
+          "display_index": 2,
+          "start": 144.689,
+          "end": 144.877
+        },
+        {
+          "word": "keep",
+          "display_index": 3,
+          "start": 144.877,
+          "end": 145.257
+        },
+        {
+          "word": "that",
+          "display_index": 4,
+          "start": 145.257,
+          "end": 145.697
+        },
+        {
+          "word": "promise,",
+          "display_index": 5,
+          "start": 145.697,
+          "end": 146.797
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 146.797,
+          "end": 147.03
+        },
+        {
+          "word": "to",
+          "display_index": 7,
+          "start": 147.03,
+          "end": 147.177
+        },
+        {
+          "word": "reform",
+          "display_index": 8,
+          "start": 147.177,
+          "end": 148.197
+        },
+        {
+          "word": "it",
+          "display_index": 9,
+          "start": 148.197,
+          "end": 148.437
+        },
+        {
+          "word": "as",
+          "display_index": 10,
+          "start": 148.437,
+          "end": 148.757
+        },
+        {
+          "word": "needed,",
+          "display_index": 11,
+          "start": 148.757,
+          "end": 150.891
+        },
+        {
+          "word": "is",
+          "display_index": 12,
+          "start": 150.891,
+          "end": 150.998
+        },
+        {
+          "word": "what",
+          "display_index": 13,
+          "start": 150.998,
+          "end": 151.318
+        },
+        {
+          "word": "builds",
+          "display_index": 14,
+          "start": 151.318,
+          "end": 151.852
+        },
+        {
+          "word": "the",
+          "display_index": 15,
+          "start": 151.852,
+          "end": 152.038
+        },
+        {
+          "word": "foundation",
+          "display_index": 16,
+          "start": 152.038,
+          "end": 153.558
+        },
+        {
+          "word": "of",
+          "display_index": 17,
+          "start": 153.558,
+          "end": 153.689
+        },
+        {
+          "word": "a",
+          "display_index": 18,
+          "start": 153.689,
+          "end": 153.958
+        },
+        {
+          "word": "free",
+          "display_index": 19,
+          "start": 153.958,
+          "end": 155.438
+        },
+        {
+          "word": "and",
+          "display_index": 20,
+          "start": 155.438,
+          "end": 155.778
+        },
+        {
+          "word": "just",
+          "display_index": 21,
+          "start": 155.778,
+          "end": 156.318
+        },
+        {
+          "word": "society.",
+          "display_index": 22,
+          "start": 156.318,
+          "end": 157.818
+        }
+      ],
+      "start": 144.175,
+      "end": 157.818
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

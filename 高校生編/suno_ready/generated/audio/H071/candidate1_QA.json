@@ -1,0 +1,257 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H071.md",
+  "audio": "高校生編/suno_ready/generated/audio/H071/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 154.64,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0262,
+  "expected_words": 229,
+  "transcribed_words": 235,
+  "matched_words": 225,
+  "coverage": 0.9825,
+  "precision": 0.9574,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 228,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 28,
+      "length": 1,
+      "words": [
+        "passed"
+      ]
+    },
+    {
+      "start": 108,
+      "length": 1,
+      "words": [
+        "widen"
+      ]
+    },
+    {
+      "start": 112,
+      "length": 1,
+      "words": [
+        "soseki's"
+      ]
+    },
+    {
+      "start": 183,
+      "length": 1,
+      "words": [
+        "and"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 28,
+      "actual_start": 28,
+      "expected": [
+        "passed"
+      ],
+      "actual": [
+        "past"
+      ],
+      "actual_confidence": 0.1908,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 108,
+      "actual_start": 108,
+      "expected": [
+        "widen"
+      ],
+      "actual": [
+        "ride",
+        "in"
+      ],
+      "actual_confidence": 0.5536,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 112,
+      "actual_start": 113,
+      "expected": [
+        "soseki's"
+      ],
+      "actual": [
+        "soziky's"
+      ],
+      "actual_confidence": 0.4154,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 183,
+      "actual_start": 185,
+      "expected": [
+        "and"
+      ],
+      "actual": [
+        "in",
+        "the",
+        "enter"
+      ],
+      "actual_confidence": 0.6972,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 165,
+      "actual_start": 166,
+      "expected": [],
+      "actual": [
+        "moment"
+      ],
+      "actual_confidence": 0.0615
+    },
+    {
+      "expected_start": 214,
+      "actual_start": 218,
+      "expected": [],
+      "actual": [
+        "so's"
+      ],
+      "actual_confidence": 0.6038
+    },
+    {
+      "expected_start": 220,
+      "actual_start": 225,
+      "expected": [],
+      "actual": [
+        "a"
+      ],
+      "actual_confidence": 0.5076
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "Throughout history, across every land, humanity has continued to tell stories. Literature is one of the oldest forms of expression in which human beings have written down and past on their understanding of themselves. The epic of Homer, the plays of Shakespeare, the long novel of Tolstoy, the tale of Genji, of Murasaki, Shikibu. Each literary work passes on to us how the people of its age looked at the world. Why is literature important? Because literature lets us live the lives of people other than ourselves Almost as if it were our own By living through the joy, the sadness and the conflicts of the characters We ride in our own world Soziky's Kokoro, Dostoyevsky's crime and punishment These novels shine light even on the dark parts of the human heart Literature often holds out face to face The questions we wish to turn away from Poetry too is an important part of literature With few words it catches the essence of a single moment Moment through metaphor and symbol a poem reaches directly into the depths of our hearts even now When films in the enter the internet fill our days why does literature not vanish? Perhaps because the experience of reading a book quietly alone is itself an Irreplaceable time when we converse with ourselves So's the quiet dialogue that arises between a reader and writer Is the true power of literature",
+  "segments": [
+    {
+      "start": 9.2,
+      "end": 19.18,
+      "text": "Throughout history, across every land, humanity has continued to tell stories."
+    },
+    {
+      "start": 20.22,
+      "end": 27.22,
+      "text": "Literature is one of the oldest forms of expression in which human beings have written down and"
+    },
+    {
+      "start": 27.22,
+      "end": 30.32,
+      "text": "past on their understanding of themselves."
+    },
+    {
+      "start": 31.98,
+      "end": 37.86,
+      "text": "The epic of Homer, the plays of Shakespeare, the long novel of Tolstoy, the tale of Genji,"
+    },
+    {
+      "start": 38.22,
+      "end": 40.24,
+      "text": "of Murasaki, Shikibu."
+    },
+    {
+      "start": 41.82,
+      "end": 47.02,
+      "text": "Each literary work passes on to us how the people of its age looked at the world."
+    },
+    {
+      "start": 47.9,
+      "end": 50.64,
+      "text": "Why is literature important?"
+    },
+    {
+      "start": 51.62,
+      "end": 57.84,
+      "text": "Because literature lets us live the lives of people other than ourselves"
+    },
+    {
+      "start": 57.84,
+      "end": 62.0,
+      "text": "Almost as if it were our own"
+    },
+    {
+      "start": 62.0,
+      "end": 66.64,
+      "text": "By living through the joy, the sadness and the conflicts of the characters"
+    },
+    {
+      "start": 67.28,
+      "end": 69.62,
+      "text": "We ride in our own world"
+    },
+    {
+      "start": 69.62,
+      "end": 74.14,
+      "text": "Soziky's Kokoro, Dostoyevsky's crime and punishment"
+    },
+    {
+      "start": 76.44,
+      "end": 81.14,
+      "text": "These novels shine light even on the dark parts of the human heart"
+    },
+    {
+      "start": 81.72,
+      "end": 85.14,
+      "text": "Literature often holds out face to face"
+    },
+    {
+      "start": 85.8,
+      "end": 89.3,
+      "text": "The questions we wish to turn away from"
+    },
+    {
+      "start": 89.3,
+      "end": 95.44,
+      "text": "Poetry too is an important part of literature"
+    },
+    {
+      "start": 97.52,
+      "end": 102.14,
+      "text": "With few words it catches the essence of a single moment"
+    },
+    {
+      "start": 102.14,
+      "end": 109.64,
+      "text": "Moment through metaphor and symbol a poem reaches directly into the depths of our hearts even now"
+    },
+    {
+      "start": 110.46,
+      "end": 117.96,
+      "text": "When films in the enter the internet fill our days why does literature not vanish?"
+    },
+    {
+      "start": 119.28,
+      "end": 126.14,
+      "text": "Perhaps because the experience of reading a book quietly alone is itself an"
+    },
+    {
+      "start": 126.86,
+      "end": 130.5,
+      "text": "Irreplaceable time when we converse with ourselves"
+    },
+    {
+      "start": 130.5,
+      "end": 136.84,
+      "text": "So's the quiet dialogue that arises between a reader and writer"
+    },
+    {
+      "start": 138.5,
+      "end": 142.04,
+      "text": "Is the true power of literature"
+    }
+  ]
+}

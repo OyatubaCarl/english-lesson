@@ -1,0 +1,63 @@
+{
+  "lesson": "H051",
+  "title": "人工知能と倫理",
+  "style": "画風01・光彩のある劇場アニメ背景を基調にしたAI技術と倫理のドキュメンタリー",
+  "setting": "現代の学校・研究所・病院・金融監視室・交通試験場・工場・裁判所・行政会議を往復し、人間の判断へ戻る",
+  "continuity": {
+    "student": "H15基準の同じ17歳男子高校生。短い黒髪、紺の制服コート、灰色のマフラー、黒いリュック。AIを学び問いを立てる中心人物",
+    "researcher": "40歳前後の女性AI研究者。低く束ねた黒髪、濃紺ジャケット、白いシャツ。病院・交通・監査・規制・教室をつなぐ",
+    "technology": "黒または濃灰色の現実的なワークステーション、センサー、サーバー、車載機器、産業ロボット。人型ロボットや青いホログラムは使わない",
+    "palette": "通常は群青と抑えた青緑、医療・教室は自然な琥珀色、risk場面は彩度を落とした紫灰、結末は夜明けの暖色"
+  },
+  "sequence": [
+    "過去10年間のartificial intelligenceのremarkable progress",
+    "vast dataから学ぶalgorithmsとmedicine・finance・transportation支援",
+    "diagnostic assistance",
+    "self-driving cars",
+    "natural language processing",
+    "applicationsが変える生活とindustryのautomation",
+    "rapid progressに伴うprivacy・jobs・misinformationのrisks",
+    "societyがconsequencesへ向き合う",
+    "algorithmのresponsibility",
+    "self-driving事故のaccountabilityとcourt",
+    "complete answersのない問い",
+    "governmentsによるAI regulations",
+    "EUのcomprehensive risk-based AI law",
+    "technologyとhuman judgment",
+    "AIが人間の代わりに考えるのではなく、よりよく考えるための道具になる結末"
+  ],
+  "accuracy": [
+    "AIを一つの自律人格や万能知能として描かず、用途別のalgorithm、data、hardware、人間の運用から成る社会技術システムとして描く",
+    "医療AIは診断を単独決定せず、医師の判断を補助し、複数検査・患者情報・不確実性確認と組み合わせる",
+    "自動運転は公道で無条件に完全自律とせず、試験車、センサー、遠隔監視、安全運転者、限定条件を示す",
+    "自然言語処理は会話・翻訳・要約等を支援するが、意味理解や正確性を保証する魔法として描かない",
+    "automationは仕事が一様に消える図にせず、作業の変化、再訓練、新しい監督・保守業務と雇用不安を同時に描く",
+    "privacy riskは顔の盗撮やハッカー演出だけでなく、同意、データ収集、アクセス権、匿名化、保管を具体化する",
+    "misinformationは生成・推薦・拡散・検証の連鎖として描き、AIだけを唯一の原因にしない",
+    "algorithmの責任は開発者、提供者、導入組織、運用者、利用者、規制当局が関わる。機械一台へ責任を帰さない",
+    "EU AI Actは2024年に発効したリスクベースの包括的法枠組み。2026年時点も適用時期・義務が段階的であり、すべて完了済みと描かない",
+    "technology in itself is neutralという歌詞は、実際の設計・学習data・目的・運用に人間の価値判断が入ることを後続画面で補い、完全な価値中立を断定しない"
+  ],
+  "fact_check_sources": [
+    "https://digital-strategy.ec.europa.eu/en/factpages/ai-act",
+    "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32024R1689",
+    "https://www.nist.gov/itl/ai-risk-management-framework-faqs"
+  ],
+  "composition": {
+    "aspect_ratio": "16:9",
+    "subtitle_safe_area": "主要な顔、手、医療画像、センサー、data媒体、車、監査資料、法廷、規制文書は画面下45%より上に置く",
+    "camera": "一ショットにつき一定方向の寄り、引き、静止のいずれか一つ",
+    "text": "読める患者情報、株価、車両番号、ニュース本文、SNS投稿、訴訟名、法令本文、企業名、ロゴを生成しない。AI Act等の正確な名称は動画字幕で示す"
+  },
+  "avoid": [
+    "人型ロボットの支配、赤い目、空飛ぶコード、脳型ホログラム、万能AI、終末都市、善悪二分、AIを擬人化した裁判",
+    "医師不在の自動診断、完全無人公道車の断定、工場労働者を無能に描くこと、誤情報を実在人物・政党へ結びつけること",
+    "読める文字・数値・ロゴ、写真調、油彩、3Dレンダー、透かし、過剰なネオン、未来都市、巨大な天秤だけの抽象図"
+  ],
+  "imagegen": {
+    "mode": "built-in ImageGen",
+    "planned_master_count": 14,
+    "selected_output_directory": "scenes/character_refs",
+    "video_scene_directory": "scenes/final_style01"
+  }
+}

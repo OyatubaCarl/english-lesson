@@ -1,0 +1,224 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H072.md",
+  "audio": "高校生編/suno_ready/generated/audio/H072/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 171.04,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9957,
+  "expected_words": 233,
+  "transcribed_words": 232,
+  "matched_words": 229,
+  "coverage": 0.9828,
+  "precision": 0.9871,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 232,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 68,
+      "length": 2,
+      "words": [
+        "twenty",
+        "thousand"
+      ]
+    },
+    {
+      "start": 59,
+      "length": 1,
+      "words": [
+        "iwate"
+      ]
+    },
+    {
+      "start": 126,
+      "length": 1,
+      "words": [
+        "continued"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 59,
+      "actual_start": 59,
+      "expected": [
+        "iwate"
+      ],
+      "actual": [
+        "aiwe"
+      ],
+      "actual_confidence": 0.3005,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 126,
+      "actual_start": 124,
+      "expected": [
+        "continued"
+      ],
+      "actual": [
+        "continue"
+      ],
+      "actual_confidence": 0.2208,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 233,
+      "actual_start": 231,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.1983
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 68,
+      "actual_start": 68,
+      "expected": [
+        "twenty",
+        "thousand"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "Japan is one of the most earthquake-prone nations in the world It lies in a region where plates overlap in a complex way And hundreds of tremors are observed every year On March 11, 2011, a massive earthquake struck the Tohoku region. At magnitude 9.0, it was one of the largest ever recorded. The tsunami that followed swept the coasts of Aiwe. Miyagi and Fukushima taking the lives of about 20,000 people. At the Fukushima Daiichi nuclear plant, the earthquake and tsunami caused the loss of cooling function and a serious accident A meltdown occurred Hundreds of thousands of people were forced to evacuate the land They had long called home Right after the disaster, first responders such as firefighters, police officers and self-defense force members continue to rescue people from the rubble. Much aid was also sent from around the world. Preparedness for disaster has now become common sense in Japanese society. Each household stocks emergency food and water And schools and workplaces hold evacuation drills regularly The early warning system of the meteorological agency Is one of the most precise in the world Over ten years have passed since the Great East Japan earthquake And the affected area has been walking the road of reconstruction step by step But not every wound has healed We carry the responsibility of passing on the lessons learned From the disaster to the next generation you",
+  "segments": [
+    {
+      "start": 12.0,
+      "end": 17.12,
+      "text": "Japan is one of the most earthquake-prone nations in the world"
+    },
+    {
+      "start": 18.0,
+      "end": 22.6,
+      "text": "It lies in a region where plates overlap in a complex way"
+    },
+    {
+      "start": 22.6,
+      "end": 28.1,
+      "text": "And hundreds of tremors are observed every year"
+    },
+    {
+      "start": 28.1,
+      "end": 35.02,
+      "text": "On March 11, 2011, a massive earthquake struck the Tohoku region."
+    },
+    {
+      "start": 36.96,
+      "end": 43.14,
+      "text": "At magnitude 9.0, it was one of the largest ever recorded."
+    },
+    {
+      "start": 43.74,
+      "end": 47.36,
+      "text": "The tsunami that followed swept the coasts of Aiwe."
+    },
+    {
+      "start": 48.4,
+      "end": 54.78,
+      "text": "Miyagi and Fukushima taking the lives of about 20,000 people."
+    },
+    {
+      "start": 54.78,
+      "end": 61.96,
+      "text": "At the Fukushima Daiichi nuclear plant, the earthquake and tsunami"
+    },
+    {
+      "start": 61.96,
+      "end": 67.16,
+      "text": "caused the loss of cooling function and a serious accident"
+    },
+    {
+      "start": 67.16,
+      "end": 70.02,
+      "text": "A meltdown occurred"
+    },
+    {
+      "start": 70.02,
+      "end": 76.54,
+      "text": "Hundreds of thousands of people were forced to evacuate the land"
+    },
+    {
+      "start": 76.54,
+      "end": 79.92,
+      "text": "They had long called home"
+    },
+    {
+      "start": 79.92,
+      "end": 90.48,
+      "text": "Right after the disaster, first responders such as firefighters, police officers and self-defense"
+    },
+    {
+      "start": 90.48,
+      "end": 99.82,
+      "text": "force members continue to rescue people from the rubble. Much aid was also sent from around"
+    },
+    {
+      "start": 99.82,
+      "end": 109.6,
+      "text": "the world. Preparedness for disaster has now become common sense in Japanese society."
+    },
+    {
+      "start": 110.7,
+      "end": 114.86,
+      "text": "Each household stocks emergency food and water"
+    },
+    {
+      "start": 114.86,
+      "end": 121.4,
+      "text": "And schools and workplaces hold evacuation drills regularly"
+    },
+    {
+      "start": 121.4,
+      "end": 127.38,
+      "text": "The early warning system of the meteorological agency"
+    },
+    {
+      "start": 127.38,
+      "end": 131.84,
+      "text": "Is one of the most precise in the world"
+    },
+    {
+      "start": 133.08,
+      "end": 137.78,
+      "text": "Over ten years have passed since the Great East Japan earthquake"
+    },
+    {
+      "start": 137.78,
+      "end": 146.0,
+      "text": "And the affected area has been walking the road of reconstruction step by step"
+    },
+    {
+      "start": 146.0,
+      "end": 149.12,
+      "text": "But not every wound has healed"
+    },
+    {
+      "start": 150.2,
+      "end": 157.14,
+      "text": "We carry the responsibility of passing on the lessons learned"
+    },
+    {
+      "start": 157.14,
+      "end": 161.42,
+      "text": "From the disaster to the next generation"
+    },
+    {
+      "start": 169.62,
+      "end": 169.84,
+      "text": "you"
+    }
+  ]
+}

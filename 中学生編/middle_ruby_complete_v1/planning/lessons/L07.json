@@ -1,0 +1,877 @@
+{
+  "lesson": 7,
+  "source_config": "中学生編/mio_video_l2_l10_sentence_v2/L7/planning/lesson.json",
+  "title_en": "Lesson 7  My Future Dream",
+  "title_ja": "将来の夢",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 9,
+  "lines": [
+    {
+      "line": 1,
+      "english": "At grandmother's house, we began to talk about our future dreams.",
+      "source_ja": "祖母の家で、将来の夢について話し始めました。",
+      "display_ja": "祖母の家で、将来の夢について話し始めました。",
+      "corrected_translation": false,
+      "mixed": "祖母の家で、future の夢について話し始めました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "祖母の家で、",
+          "parts": [
+            {
+              "text": "祖母",
+              "ruby": "そぼ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "で、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "future",
+          "ruby": "未来"
+        },
+        {
+          "type": "ja",
+          "text": " の夢について話し始めました。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "夢",
+              "ruby": "ゆめ"
+            },
+            {
+              "text": "について",
+              "ruby": ""
+            },
+            {
+              "text": "話",
+              "ruby": "はな"
+            },
+            {
+              "text": "し",
+              "ruby": ""
+            },
+            {
+              "text": "始",
+              "ruby": "はじ"
+            },
+            {
+              "text": "めました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "future",
+          "canonical_word": "Future",
+          "meaning": "未来"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "future",
+          "reading": "未来",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "Future",
+          "canonical_meaning": "未来"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "english": "My dream is to be an English teacher.",
+      "source_ja": "わたしの夢は英語の先生になることです。",
+      "display_ja": "わたしの夢は英語の先生になることです。",
+      "corrected_translation": false,
+      "mixed": "わたしの夢は English teacher に be することです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしの夢は ",
+          "parts": [
+            {
+              "text": "わたしの",
+              "ruby": ""
+            },
+            {
+              "text": "夢",
+              "ruby": "ゆめ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "English",
+          "ruby": "英語"
+        },
+        {
+          "type": "ja",
+          "text": " ",
+          "parts": []
+        },
+        {
+          "type": "en",
+          "text": "teacher",
+          "ruby": "先生"
+        },
+        {
+          "type": "ja",
+          "text": " に ",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "be",
+          "ruby": "〜である(原形)"
+        },
+        {
+          "type": "ja",
+          "text": " することです。",
+          "parts": [
+            {
+              "text": "することです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "be",
+          "canonical_word": "be",
+          "meaning": "〜である(原形)"
+        },
+        {
+          "english": "English",
+          "canonical_word": "English",
+          "meaning": "英語"
+        },
+        {
+          "english": "teacher",
+          "canonical_word": "teacher",
+          "meaning": "先生"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "be",
+          "reading": "〜である(原形)",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "be",
+          "canonical_meaning": "〜である(原形)"
+        },
+        {
+          "english": "English",
+          "reading": "英語",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "English",
+          "canonical_meaning": "英語"
+        },
+        {
+          "english": "teacher",
+          "reading": "先生",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "teacher",
+          "canonical_meaning": "先生"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "To be a good teacher, I study English hard every day.",
+      "source_ja": "良い先生になるため、毎日一生懸命英語を勉強します。",
+      "display_ja": "良い先生になるため、毎日一生懸命英語を勉強します。",
+      "corrected_translation": false,
+      "mixed": "良い teacher に be するため、毎日 English を hard に study します。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "良い ",
+          "parts": [
+            {
+              "text": "良",
+              "ruby": "よ"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "teacher",
+          "ruby": "先生"
+        },
+        {
+          "type": "ja",
+          "text": " に ",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "be",
+          "ruby": "〜である(原形)"
+        },
+        {
+          "type": "ja",
+          "text": " するため、毎日 ",
+          "parts": [
+            {
+              "text": "するため、",
+              "ruby": ""
+            },
+            {
+              "text": "毎日",
+              "ruby": "まいにち"
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "English",
+          "ruby": "英語"
+        },
+        {
+          "type": "ja",
+          "text": " を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "hard",
+          "ruby": "一生懸命に"
+        },
+        {
+          "type": "ja",
+          "text": " に ",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "study",
+          "ruby": "勉強する"
+        },
+        {
+          "type": "ja",
+          "text": " します。",
+          "parts": [
+            {
+              "text": "します。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "be",
+          "canonical_word": "be",
+          "meaning": "〜である(原形)"
+        },
+        {
+          "english": "teacher",
+          "canonical_word": "teacher",
+          "meaning": "先生"
+        },
+        {
+          "english": "study",
+          "canonical_word": "study",
+          "meaning": "勉強する"
+        },
+        {
+          "english": "English",
+          "canonical_word": "English",
+          "meaning": "英語"
+        },
+        {
+          "english": "hard",
+          "canonical_word": "hard",
+          "meaning": "一生懸命に"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "be",
+          "reading": "〜である(原形)",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "be",
+          "canonical_meaning": "〜である(原形)"
+        },
+        {
+          "english": "teacher",
+          "reading": "先生",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "teacher",
+          "canonical_meaning": "先生"
+        },
+        {
+          "english": "study",
+          "reading": "勉強する",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "study",
+          "canonical_meaning": "勉強する"
+        },
+        {
+          "english": "English",
+          "reading": "英語",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "English",
+          "canonical_meaning": "英語"
+        },
+        {
+          "english": "hard",
+          "reading": "一生懸命に",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "hard",
+          "canonical_meaning": "一生懸命に"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "English is an important language to learn.",
+      "source_ja": "英語は学ぶ価値のある大切な言葉です。",
+      "display_ja": "英語は学ぶ価値のある大切な言葉です。",
+      "corrected_translation": false,
+      "mixed": "English は learn する価値のある important な言葉です。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "English",
+          "ruby": "英語"
+        },
+        {
+          "type": "ja",
+          "text": " は ",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "learn",
+          "ruby": "学ぶ"
+        },
+        {
+          "type": "ja",
+          "text": " する価値のある ",
+          "parts": [
+            {
+              "text": "する",
+              "ruby": ""
+            },
+            {
+              "text": "価値",
+              "ruby": "かち"
+            },
+            {
+              "text": "のある",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "important",
+          "ruby": "大切な"
+        },
+        {
+          "type": "ja",
+          "text": " な言葉です。",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "言葉",
+              "ruby": "ことば"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "English",
+          "canonical_word": "English",
+          "meaning": "英語"
+        },
+        {
+          "english": "important",
+          "canonical_word": "important",
+          "meaning": "大切な"
+        },
+        {
+          "english": "learn",
+          "canonical_word": "learn",
+          "meaning": "学ぶ"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "English",
+          "reading": "英語",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "English",
+          "canonical_meaning": "英語"
+        },
+        {
+          "english": "important",
+          "reading": "大切な",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "important",
+          "canonical_meaning": "大切な"
+        },
+        {
+          "english": "learn",
+          "reading": "学ぶ",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "learn",
+          "canonical_meaning": "学ぶ"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "I want to talk with people from many countries.",
+      "source_ja": "たくさんの国の人と話したいです。",
+      "display_ja": "たくさんの国の人と話したいです。",
+      "corrected_translation": false,
+      "mixed": "たくさんの国の people と話したいです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "たくさんの国の ",
+          "parts": [
+            {
+              "text": "たくさんの",
+              "ruby": ""
+            },
+            {
+              "text": "国",
+              "ruby": "くに"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "people",
+          "ruby": "人々"
+        },
+        {
+          "type": "ja",
+          "text": " と話したいです。",
+          "parts": [
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "話",
+              "ruby": "はな"
+            },
+            {
+              "text": "したいです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "people",
+          "canonical_word": "people",
+          "meaning": "人々"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "people",
+          "reading": "人々",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "people",
+          "canonical_meaning": "人々"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "On my shelf, I have many books to read.",
+      "source_ja": "本棚には、読む本がたくさんあります。",
+      "display_ja": "本棚には、読む本がたくさんあります。",
+      "corrected_translation": false,
+      "mixed": "本棚には、 read する本がたくさんあります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "本棚には、 ",
+          "parts": [
+            {
+              "text": "本棚",
+              "ruby": "ほんだな"
+            },
+            {
+              "text": "には、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "read",
+          "ruby": "読む"
+        },
+        {
+          "type": "ja",
+          "text": " する",
+          "parts": [
+            {
+              "text": "する",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "本がたくさんあります。",
+          "parts": [
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "がたくさんあります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "read",
+          "canonical_word": "read",
+          "meaning": "読む"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "read",
+          "reading": "読む",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "read",
+          "canonical_meaning": "読む"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "One day, I hope to teach children.",
+      "source_ja": "いつか子どもたちに教えたいです。",
+      "display_ja": "いつか子どもたちに教えたいです。",
+      "corrected_translation": false,
+      "mixed": "いつか children に teach する。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "いつか ",
+          "parts": [
+            {
+              "text": "いつか",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "children",
+          "ruby": "子どもたち"
+        },
+        {
+          "type": "ja",
+          "text": " に ",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "teach",
+          "ruby": "教えたいです"
+        },
+        {
+          "type": "ja",
+          "text": " する",
+          "parts": [
+            {
+              "text": "する",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "teach",
+          "canonical_word": "teach",
+          "meaning": "教える"
+        },
+        {
+          "english": "children",
+          "canonical_word": "children",
+          "meaning": "子どもたち"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "children",
+          "reading": "子どもたち",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "children",
+          "canonical_meaning": "子どもたち"
+        },
+        {
+          "english": "teach",
+          "reading": "教えたいです",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "teach",
+          "canonical_meaning": "教える"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "In the future, I want to help many people.",
+      "source_ja": "将来、たくさんの人を助けたいです。",
+      "display_ja": "将来、たくさんの人を助けたいです。",
+      "corrected_translation": false,
+      "mixed": "future、たくさんの people を help したいです。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "future",
+          "ruby": "未来"
+        },
+        {
+          "type": "ja",
+          "text": "、たくさんの ",
+          "parts": [
+            {
+              "text": "、たくさんの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "people",
+          "ruby": "人々"
+        },
+        {
+          "type": "ja",
+          "text": " を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "help",
+          "ruby": "助ける"
+        },
+        {
+          "type": "ja",
+          "text": " したいです。",
+          "parts": [
+            {
+              "text": "したいです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "future",
+          "canonical_word": "Future",
+          "meaning": "未来"
+        },
+        {
+          "english": "help",
+          "canonical_word": "help",
+          "meaning": "助ける"
+        },
+        {
+          "english": "people",
+          "canonical_word": "people",
+          "meaning": "人々"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "future",
+          "reading": "未来",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "Future",
+          "canonical_meaning": "未来"
+        },
+        {
+          "english": "help",
+          "reading": "助ける",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "help",
+          "canonical_meaning": "助ける"
+        },
+        {
+          "english": "people",
+          "reading": "人々",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "people",
+          "canonical_meaning": "人々"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "Grandmother listened quietly and said with a smile, \"Keep that dream.\"",
+      "source_ja": "祖母は静かに聞き、「その夢を持ち続けてね」とほほえみました。",
+      "display_ja": "祖母は静かに聞き、「その夢を持ち続けてね」とほほえみました。",
+      "corrected_translation": false,
+      "mixed": "祖母は静かに聞き、「その夢を持ち続けてね」とほほえみました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "祖母は静かに聞き、「その夢を持ち続けてね」とほほえみました。",
+          "parts": [
+            {
+              "text": "祖母",
+              "ruby": "そぼ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            },
+            {
+              "text": "聞",
+              "ruby": "き"
+            },
+            {
+              "text": "き、「その",
+              "ruby": ""
+            },
+            {
+              "text": "夢",
+              "ruby": "ゆめ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "持",
+              "ruby": "も"
+            },
+            {
+              "text": "ち",
+              "ruby": ""
+            },
+            {
+              "text": "続",
+              "ruby": "つづ"
+            },
+            {
+              "text": "けてね」とほほえみました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    }
+  ]
+}

@@ -1,0 +1,871 @@
+{
+  "lesson": 14,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L14/planning/lesson.json",
+  "title_en": "Lesson 14  The Town Park",
+  "title_ja": "町の公園",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 12,
+  "lines": [
+    {
+      "line": 1,
+      "english": "In my town, there is a beautiful park that everyone loves.",
+      "source_ja": "わたしの町には、みんなに愛されている美しい公園があります。",
+      "display_ja": "わたしの町には、みんなに愛されている美しい公園があります。",
+      "corrected_translation": false,
+      "mixed": "わたしの町には、みんなに愛されている美しい公園があります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしの町には、みんなに愛されている美しい公園があります。",
+          "parts": [
+            {
+              "text": "わたしの",
+              "ruby": ""
+            },
+            {
+              "text": "町",
+              "ruby": "まち"
+            },
+            {
+              "text": "には、みんなに",
+              "ruby": ""
+            },
+            {
+              "text": "愛",
+              "ruby": "あい"
+            },
+            {
+              "text": "されている",
+              "ruby": ""
+            },
+            {
+              "text": "美",
+              "ruby": "うつく"
+            },
+            {
+              "text": "しい",
+              "ruby": ""
+            },
+            {
+              "text": "公園",
+              "ruby": "こうえん"
+            },
+            {
+              "text": "があります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 2,
+      "english": "In the park, there are many tall trees.",
+      "source_ja": "公園には高い木がたくさんあります。",
+      "display_ja": "公園には高い木がたくさんあります。",
+      "corrected_translation": false,
+      "mixed": "公園には高い trees がたくさんあります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "公園には高い ",
+          "parts": [
+            {
+              "text": "公園",
+              "ruby": "こうえん"
+            },
+            {
+              "text": "には",
+              "ruby": ""
+            },
+            {
+              "text": "高",
+              "ruby": "たか"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "trees",
+          "ruby": "木々"
+        },
+        {
+          "type": "ja",
+          "text": " がたくさんあります。",
+          "parts": [
+            {
+              "text": "がたくさんあります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "trees",
+          "canonical_word": "trees",
+          "meaning": "木々"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "trees",
+          "reading": "木々",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "trees",
+          "canonical_meaning": "木々"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "When the wind blows, the leaves move gently.",
+      "source_ja": "風が吹くと、葉がやさしく揺れます。",
+      "display_ja": "風が吹くと、葉がやさしく揺れます。",
+      "corrected_translation": false,
+      "mixed": "風が吹くと、葉がやさしく揺れます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "風が吹くと、葉がやさしく揺れます。",
+          "parts": [
+            {
+              "text": "風",
+              "ruby": "かぜ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "吹",
+              "ruby": "ふ"
+            },
+            {
+              "text": "くと、",
+              "ruby": ""
+            },
+            {
+              "text": "葉",
+              "ruby": "は"
+            },
+            {
+              "text": "がやさしく",
+              "ruby": ""
+            },
+            {
+              "text": "揺",
+              "ruby": "ゆ"
+            },
+            {
+              "text": "れます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 4,
+      "english": "Near the wide grass, there is a small pond.",
+      "source_ja": "広い芝生の近くには、小さな池があります。",
+      "display_ja": "広い芝生の近くには、小さな池があります。",
+      "corrected_translation": false,
+      "mixed": "広い grass の Near には、小さな pond があります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "広い ",
+          "parts": [
+            {
+              "text": "広",
+              "ruby": "ひろ"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "grass",
+          "ruby": "芝生・草"
+        },
+        {
+          "type": "ja",
+          "text": " の ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "Near",
+          "ruby": "〜の近くに"
+        },
+        {
+          "type": "ja",
+          "text": " には、小さな ",
+          "parts": [
+            {
+              "text": "には、",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "pond",
+          "ruby": "池"
+        },
+        {
+          "type": "ja",
+          "text": " があります。",
+          "parts": [
+            {
+              "text": "があります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "Near",
+          "canonical_word": "near",
+          "meaning": "〜の近くに"
+        },
+        {
+          "english": "grass",
+          "canonical_word": "grass",
+          "meaning": "芝生・草"
+        },
+        {
+          "english": "pond",
+          "canonical_word": "pond",
+          "meaning": "池"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Near",
+          "reading": "〜の近くに",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "near",
+          "canonical_meaning": "〜の近くに"
+        },
+        {
+          "english": "grass",
+          "reading": "芝生・草",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "grass",
+          "canonical_meaning": "芝生・草"
+        },
+        {
+          "english": "pond",
+          "reading": "池",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "pond",
+          "canonical_meaning": "池"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "There are birds and fish living quietly.",
+      "source_ja": "鳥や魚が静かに暮らしています。",
+      "display_ja": "鳥や魚が静かに暮らしています。",
+      "corrected_translation": false,
+      "mixed": "birds や魚が静かに暮らしています。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "birds",
+          "ruby": "鳥"
+        },
+        {
+          "type": "ja",
+          "text": " や魚が静かに暮らしています。",
+          "parts": [
+            {
+              "text": "や",
+              "ruby": ""
+            },
+            {
+              "text": "魚",
+              "ruby": "さかな"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            },
+            {
+              "text": "暮",
+              "ruby": "く"
+            },
+            {
+              "text": "らしています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "birds",
+          "canonical_word": "birds",
+          "meaning": "鳥たち"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "birds",
+          "reading": "鳥",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "birds",
+          "canonical_meaning": "鳥たち"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "Under a big tree, there is an old rock.",
+      "source_ja": "大きな木の下には、古い岩があります。",
+      "display_ja": "大きな木の下には、古い岩があります。",
+      "corrected_translation": false,
+      "mixed": "大きな tree、その Under には古い rock があります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "大きな ",
+          "parts": [
+            {
+              "text": "大",
+              "ruby": "おお"
+            },
+            {
+              "text": "きな",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "tree",
+          "ruby": "木々"
+        },
+        {
+          "type": "ja",
+          "text": "、その ",
+          "parts": [
+            {
+              "text": "、その",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "Under",
+          "ruby": "〜の下に"
+        },
+        {
+          "type": "ja",
+          "text": " には古い ",
+          "parts": [
+            {
+              "text": "には",
+              "ruby": ""
+            },
+            {
+              "text": "古",
+              "ruby": "ふる"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "rock",
+          "ruby": "岩"
+        },
+        {
+          "type": "ja",
+          "text": " があります。",
+          "parts": [
+            {
+              "text": "があります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "Under",
+          "canonical_word": "under",
+          "meaning": "〜の下に"
+        },
+        {
+          "english": "tree",
+          "canonical_word": "trees",
+          "meaning": "木々"
+        },
+        {
+          "english": "rock",
+          "canonical_word": "rock",
+          "meaning": "岩"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Under",
+          "reading": "〜の下に",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "under",
+          "canonical_meaning": "〜の下に"
+        },
+        {
+          "english": "tree",
+          "reading": "木々",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "trees",
+          "canonical_meaning": "木々"
+        },
+        {
+          "english": "rock",
+          "reading": "岩",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "rock",
+          "canonical_meaning": "岩"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "Children often sit on it to rest.",
+      "source_ja": "子どもたちはよくその岩に座って休みます。",
+      "display_ja": "子どもたちはよくその岩に座って休みます。",
+      "corrected_translation": false,
+      "mixed": "子どもたちはよくその岩に座って休みます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "子どもたちはよくその岩に座って休みます。",
+          "parts": [
+            {
+              "text": "子",
+              "ruby": "こ"
+            },
+            {
+              "text": "どもたちはよくその",
+              "ruby": ""
+            },
+            {
+              "text": "岩",
+              "ruby": "いわ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "座",
+              "ruby": "すわ"
+            },
+            {
+              "text": "って",
+              "ruby": ""
+            },
+            {
+              "text": "休",
+              "ruby": "やす"
+            },
+            {
+              "text": "みます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 8,
+      "english": "On a sunny summer day, there are many children playing on the grass.",
+      "source_ja": "晴れた夏の日には、芝生でたくさんの子どもたちが遊んでいます。",
+      "display_ja": "晴れた夏の日には、芝生でたくさんの子どもたちが遊んでいます。",
+      "corrected_translation": false,
+      "mixed": "晴れた summer の日には、 grass でたくさんの子どもたちが遊んでいます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "晴れた ",
+          "parts": [
+            {
+              "text": "晴",
+              "ruby": "は"
+            },
+            {
+              "text": "れた",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "summer",
+          "ruby": "夏"
+        },
+        {
+          "type": "ja",
+          "text": " の日には、 ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "には、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "grass",
+          "ruby": "芝生"
+        },
+        {
+          "type": "ja",
+          "text": " でたくさんの子どもたちが遊んでいます。",
+          "parts": [
+            {
+              "text": "でたくさんの",
+              "ruby": ""
+            },
+            {
+              "text": "子",
+              "ruby": "こ"
+            },
+            {
+              "text": "どもたちが",
+              "ruby": ""
+            },
+            {
+              "text": "遊",
+              "ruby": "あそ"
+            },
+            {
+              "text": "んでいます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "summer",
+          "canonical_word": "Summer",
+          "meaning": "夏"
+        },
+        {
+          "english": "grass",
+          "canonical_word": "grass",
+          "meaning": "芝生・草"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "summer",
+          "reading": "夏",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "Summer",
+          "canonical_meaning": "夏"
+        },
+        {
+          "english": "grass",
+          "reading": "芝生",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "grass",
+          "canonical_meaning": "芝生・草"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "“Is there a river in the park?” Tom asked me.",
+      "source_ja": "「公園に川はあるの？」とトムがわたしに聞きました。",
+      "display_ja": "「公園に川はあるの？」とトムがわたしに聞きました。",
+      "corrected_translation": false,
+      "mixed": "「公園に river はあるの？」とトムがわたしに聞きました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「公園に ",
+          "parts": [
+            {
+              "text": "「",
+              "ruby": ""
+            },
+            {
+              "text": "公園",
+              "ruby": "こうえん"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "river",
+          "ruby": "川"
+        },
+        {
+          "type": "ja",
+          "text": " はあるの？」とトムがわたしに聞きました。",
+          "parts": [
+            {
+              "text": "はあるの？」とトムがわたしに",
+              "ruby": ""
+            },
+            {
+              "text": "聞",
+              "ruby": "き"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "river",
+          "canonical_word": "river",
+          "meaning": "川"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "river",
+          "reading": "川",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "river",
+          "canonical_meaning": "川"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "“Yes, there is a thin one,” I answered.",
+      "source_ja": "「うん、細い川があるよ」とわたしは答えました。",
+      "display_ja": "「うん、細い川があるよ」とわたしは答えました。",
+      "corrected_translation": false,
+      "mixed": "「うん、細い川があるよ」とわたしは答えました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「うん、細い川があるよ」とわたしは答えました。",
+          "parts": [
+            {
+              "text": "「うん、",
+              "ruby": ""
+            },
+            {
+              "text": "細",
+              "ruby": "ほそ"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "川",
+              "ruby": "がわ"
+            },
+            {
+              "text": "があるよ」とわたしは",
+              "ruby": ""
+            },
+            {
+              "text": "答",
+              "ruby": "こた"
+            },
+            {
+              "text": "えました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 11,
+      "english": "Last year, there was a lot of snow here,",
+      "source_ja": "去年はここにたくさん雪がありました。",
+      "display_ja": "去年はここにたくさん雪がありました。",
+      "corrected_translation": false,
+      "mixed": "去年はここにたくさん snow がありました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "去年はここにたくさん ",
+          "parts": [
+            {
+              "text": "去年",
+              "ruby": "きょねん"
+            },
+            {
+              "text": "はここにたくさん",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "snow",
+          "ruby": "雪"
+        },
+        {
+          "type": "ja",
+          "text": " がありました。",
+          "parts": [
+            {
+              "text": "がありました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "snow",
+          "canonical_word": "snow",
+          "meaning": "雪"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "snow",
+          "reading": "雪",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "snow",
+          "canonical_meaning": "雪"
+        }
+      ]
+    },
+    {
+      "line": 12,
+      "english": "but now, there is no snow at all.",
+      "source_ja": "でも今は、雪がまったくありません。",
+      "display_ja": "でも今は、雪がまったくありません。",
+      "corrected_translation": false,
+      "mixed": "でも今は、 snow がまったくありません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "でも今は、 ",
+          "parts": [
+            {
+              "text": "でも",
+              "ruby": ""
+            },
+            {
+              "text": "今",
+              "ruby": "いま"
+            },
+            {
+              "text": "は、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "snow",
+          "ruby": "雪"
+        },
+        {
+          "type": "ja",
+          "text": " がまったくありません。",
+          "parts": [
+            {
+              "text": "がまったくありません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "snow",
+          "canonical_word": "snow",
+          "meaning": "雪"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "snow",
+          "reading": "雪",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "snow",
+          "canonical_meaning": "雪"
+        }
+      ]
+    }
+  ]
+}

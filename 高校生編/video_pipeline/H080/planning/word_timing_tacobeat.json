@@ -1,0 +1,1498 @@
+{
+  "lesson": "H080",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h080_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H080/candidate2-full.mp3",
+  "source_audio_sha256": "efaa69e5f00ed838b7199a208cc77d707389c1c32e3a885323a75dddf3735b19",
+  "bpm": 75.22,
+  "exact_word_match": true,
+  "word_count": 223,
+  "line_count": 18,
+  "first_word_start": 10.561,
+  "last_word_end": 162.994,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Philosophy begins with doubting what we take for granted.",
+      "word_timings": [
+        {
+          "word": "Philosophy",
+          "display_index": 0,
+          "start": 10.561,
+          "end": 11.901
+        },
+        {
+          "word": "begins",
+          "display_index": 1,
+          "start": 11.901,
+          "end": 13.622
+        },
+        {
+          "word": "with",
+          "display_index": 2,
+          "start": 13.622,
+          "end": 13.822
+        },
+        {
+          "word": "doubting",
+          "display_index": 3,
+          "start": 13.822,
+          "end": 14.242
+        },
+        {
+          "word": "what",
+          "display_index": 4,
+          "start": 14.242,
+          "end": 14.422
+        },
+        {
+          "word": "we",
+          "display_index": 5,
+          "start": 14.422,
+          "end": 14.582
+        },
+        {
+          "word": "take",
+          "display_index": 6,
+          "start": 14.582,
+          "end": 14.942
+        },
+        {
+          "word": "for",
+          "display_index": 7,
+          "start": 14.942,
+          "end": 15.142
+        },
+        {
+          "word": "granted.",
+          "display_index": 8,
+          "start": 15.142,
+          "end": 16.262
+        }
+      ],
+      "start": 10.561,
+      "end": 16.262
+    },
+    {
+      "line": 2,
+      "english": "What is justice?",
+      "word_timings": [
+        {
+          "word": "What",
+          "display_index": 0,
+          "start": 16.562,
+          "end": 16.71
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 16.71,
+          "end": 16.942
+        },
+        {
+          "word": "justice?",
+          "display_index": 2,
+          "start": 16.942,
+          "end": 18.442
+        }
+      ],
+      "start": 16.562,
+      "end": 18.442
+    },
+    {
+      "line": 3,
+      "english": "What is a good life?",
+      "word_timings": [
+        {
+          "word": "What",
+          "display_index": 0,
+          "start": 18.742,
+          "end": 18.922
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 18.922,
+          "end": 19.112
+        },
+        {
+          "word": "a",
+          "display_index": 2,
+          "start": 19.112,
+          "end": 19.282
+        },
+        {
+          "word": "good",
+          "display_index": 3,
+          "start": 19.282,
+          "end": 19.642
+        },
+        {
+          "word": "life?",
+          "display_index": 4,
+          "start": 19.642,
+          "end": 20.742
+        }
+      ],
+      "start": 18.742,
+      "end": 20.742
+    },
+    {
+      "line": 4,
+      "english": "What can we know?",
+      "word_timings": [
+        {
+          "word": "What",
+          "display_index": 0,
+          "start": 21.042,
+          "end": 21.222
+        },
+        {
+          "word": "can",
+          "display_index": 1,
+          "start": 21.222,
+          "end": 21.463
+        },
+        {
+          "word": "we",
+          "display_index": 2,
+          "start": 21.463,
+          "end": 21.603
+        },
+        {
+          "word": "know?",
+          "display_index": 3,
+          "start": 21.603,
+          "end": 22.663
+        }
+      ],
+      "start": 21.042,
+      "end": 22.663
+    },
+    {
+      "line": 5,
+      "english": "These questions have been asked since ancient Greece, 2,500 years ago, to the present day.",
+      "word_timings": [
+        {
+          "word": "These",
+          "display_index": 0,
+          "start": 22.963,
+          "end": 23.183
+        },
+        {
+          "word": "questions",
+          "display_index": 1,
+          "start": 23.183,
+          "end": 24.003
+        },
+        {
+          "word": "have",
+          "display_index": 2,
+          "start": 24.003,
+          "end": 24.363
+        },
+        {
+          "word": "been",
+          "display_index": 3,
+          "start": 24.363,
+          "end": 24.663
+        },
+        {
+          "word": "asked",
+          "display_index": 4,
+          "start": 24.663,
+          "end": 25.163
+        },
+        {
+          "word": "since",
+          "display_index": 5,
+          "start": 25.163,
+          "end": 25.623
+        },
+        {
+          "word": "ancient",
+          "display_index": 6,
+          "start": 25.623,
+          "end": 26.243
+        },
+        {
+          "word": "Greece,",
+          "display_index": 7,
+          "start": 26.243,
+          "end": 27.863
+        },
+        {
+          "word": "2,500",
+          "display_index": 8,
+          "start": 27.863,
+          "end": 28.463
+        },
+        {
+          "word": "2,500",
+          "display_index": 8,
+          "start": 28.463,
+          "end": 29.503
+        },
+        {
+          "word": "years",
+          "display_index": 9,
+          "start": 29.503,
+          "end": 29.924
+        },
+        {
+          "word": "ago,",
+          "display_index": 10,
+          "start": 29.924,
+          "end": 31.413
+        },
+        {
+          "word": "to",
+          "display_index": 11,
+          "start": 31.413,
+          "end": 31.624
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 31.624,
+          "end": 31.784
+        },
+        {
+          "word": "present",
+          "display_index": 13,
+          "start": 31.784,
+          "end": 32.404
+        },
+        {
+          "word": "day.",
+          "display_index": 14,
+          "start": 32.404,
+          "end": 33.904
+        }
+      ],
+      "start": 22.963,
+      "end": 33.904
+    },
+    {
+      "line": 6,
+      "english": "Plato argued that beyond the visible world there lay a perfect world of Ideas.",
+      "word_timings": [
+        {
+          "word": "Plato",
+          "display_index": 0,
+          "start": 36.084,
+          "end": 36.584
+        },
+        {
+          "word": "argued",
+          "display_index": 1,
+          "start": 36.584,
+          "end": 36.884
+        },
+        {
+          "word": "that",
+          "display_index": 2,
+          "start": 36.884,
+          "end": 37.104
+        },
+        {
+          "word": "beyond",
+          "display_index": 3,
+          "start": 37.104,
+          "end": 37.712
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 37.712,
+          "end": 37.844
+        },
+        {
+          "word": "visible",
+          "display_index": 5,
+          "start": 37.844,
+          "end": 38.445
+        },
+        {
+          "word": "world",
+          "display_index": 6,
+          "start": 38.445,
+          "end": 39.025
+        },
+        {
+          "word": "there",
+          "display_index": 7,
+          "start": 39.025,
+          "end": 39.265
+        },
+        {
+          "word": "lay",
+          "display_index": 8,
+          "start": 39.265,
+          "end": 39.442
+        },
+        {
+          "word": "a",
+          "display_index": 9,
+          "start": 39.442,
+          "end": 39.585
+        },
+        {
+          "word": "perfect",
+          "display_index": 10,
+          "start": 39.585,
+          "end": 40.205
+        },
+        {
+          "word": "world",
+          "display_index": 11,
+          "start": 40.205,
+          "end": 40.685
+        },
+        {
+          "word": "of",
+          "display_index": 12,
+          "start": 40.685,
+          "end": 41.045
+        },
+        {
+          "word": "Ideas.",
+          "display_index": 13,
+          "start": 41.045,
+          "end": 42.105
+        }
+      ],
+      "start": 36.084,
+      "end": 42.105
+    },
+    {
+      "line": 7,
+      "english": "Aristotle thought that we could approach truth only through concrete experience.",
+      "word_timings": [
+        {
+          "word": "Aristotle",
+          "display_index": 0,
+          "start": 42.405,
+          "end": 43.105
+        },
+        {
+          "word": "thought",
+          "display_index": 1,
+          "start": 43.105,
+          "end": 43.725
+        },
+        {
+          "word": "that",
+          "display_index": 2,
+          "start": 43.725,
+          "end": 43.925
+        },
+        {
+          "word": "we",
+          "display_index": 3,
+          "start": 43.925,
+          "end": 44.085
+        },
+        {
+          "word": "could",
+          "display_index": 4,
+          "start": 44.085,
+          "end": 44.545
+        },
+        {
+          "word": "approach",
+          "display_index": 5,
+          "start": 44.545,
+          "end": 45.325
+        },
+        {
+          "word": "truth",
+          "display_index": 6,
+          "start": 45.325,
+          "end": 46.145
+        },
+        {
+          "word": "only",
+          "display_index": 7,
+          "start": 46.145,
+          "end": 46.605
+        },
+        {
+          "word": "through",
+          "display_index": 8,
+          "start": 46.605,
+          "end": 46.945
+        },
+        {
+          "word": "concrete",
+          "display_index": 9,
+          "start": 46.945,
+          "end": 47.906
+        },
+        {
+          "word": "experience.",
+          "display_index": 10,
+          "start": 47.906,
+          "end": 49.406
+        }
+      ],
+      "start": 42.405,
+      "end": 49.406
+    },
+    {
+      "line": 8,
+      "english": "The contrast between the two became the archetype of the history of philosophy.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 50.818,
+          "end": 50.966
+        },
+        {
+          "word": "contrast",
+          "display_index": 1,
+          "start": 50.966,
+          "end": 51.826
+        },
+        {
+          "word": "between",
+          "display_index": 2,
+          "start": 51.826,
+          "end": 52.593
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 52.593,
+          "end": 52.766
+        },
+        {
+          "word": "two",
+          "display_index": 4,
+          "start": 52.766,
+          "end": 53.586
+        },
+        {
+          "word": "became",
+          "display_index": 5,
+          "start": 53.586,
+          "end": 54.191
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 54.191,
+          "end": 54.666
+        },
+        {
+          "word": "archetype",
+          "display_index": 7,
+          "start": 54.666,
+          "end": 55.847
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 55.847,
+          "end": 55.994
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 55.994,
+          "end": 56.147
+        },
+        {
+          "word": "history",
+          "display_index": 10,
+          "start": 56.147,
+          "end": 58.207
+        },
+        {
+          "word": "of",
+          "display_index": 11,
+          "start": 58.207,
+          "end": 58.347
+        },
+        {
+          "word": "philosophy.",
+          "display_index": 12,
+          "start": 58.347,
+          "end": 59.847
+        }
+      ],
+      "start": 50.818,
+      "end": 59.847
+    },
+    {
+      "line": 9,
+      "english": "In the seventeenth century, Descartes wrote his famous words, I think, therefore I am.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 60.567,
+          "end": 60.806
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 60.806,
+          "end": 60.907
+        },
+        {
+          "word": "seventeenth",
+          "display_index": 2,
+          "start": 60.907,
+          "end": 61.707
+        },
+        {
+          "word": "century,",
+          "display_index": 3,
+          "start": 61.707,
+          "end": 63.487
+        },
+        {
+          "word": "Descartes",
+          "display_index": 4,
+          "start": 63.487,
+          "end": 64.268
+        },
+        {
+          "word": "wrote",
+          "display_index": 5,
+          "start": 64.268,
+          "end": 64.688
+        },
+        {
+          "word": "his",
+          "display_index": 6,
+          "start": 64.688,
+          "end": 64.888
+        },
+        {
+          "word": "famous",
+          "display_index": 7,
+          "start": 64.888,
+          "end": 65.468
+        },
+        {
+          "word": "words,",
+          "display_index": 8,
+          "start": 65.468,
+          "end": 66.308
+        },
+        {
+          "word": "I",
+          "display_index": 9,
+          "start": 66.308,
+          "end": 66.448
+        },
+        {
+          "word": "think,",
+          "display_index": 10,
+          "start": 66.448,
+          "end": 68.468
+        },
+        {
+          "word": "therefore",
+          "display_index": 11,
+          "start": 68.468,
+          "end": 69.928
+        },
+        {
+          "word": "I",
+          "display_index": 12,
+          "start": 69.928,
+          "end": 70.102
+        },
+        {
+          "word": "am.",
+          "display_index": 13,
+          "start": 70.102,
+          "end": 71.602
+        }
+      ],
+      "start": 60.567,
+      "end": 71.602
+    },
+    {
+      "line": 10,
+      "english": "Even if one doubts everything, the existence of the self that doubts cannot be doubted.",
+      "word_timings": [
+        {
+          "word": "Even",
+          "display_index": 0,
+          "start": 72.568,
+          "end": 72.969
+        },
+        {
+          "word": "if",
+          "display_index": 1,
+          "start": 72.969,
+          "end": 73.349
+        },
+        {
+          "word": "one",
+          "display_index": 2,
+          "start": 73.349,
+          "end": 73.669
+        },
+        {
+          "word": "doubts",
+          "display_index": 3,
+          "start": 73.669,
+          "end": 74.349
+        },
+        {
+          "word": "everything,",
+          "display_index": 4,
+          "start": 74.349,
+          "end": 76.234
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 76.234,
+          "end": 76.489
+        },
+        {
+          "word": "existence",
+          "display_index": 6,
+          "start": 76.489,
+          "end": 77.749
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 77.749,
+          "end": 78.059
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 78.059,
+          "end": 78.249
+        },
+        {
+          "word": "self",
+          "display_index": 9,
+          "start": 78.249,
+          "end": 78.849
+        },
+        {
+          "word": "that",
+          "display_index": 10,
+          "start": 78.849,
+          "end": 79.229
+        },
+        {
+          "word": "doubts",
+          "display_index": 11,
+          "start": 79.229,
+          "end": 80.449
+        },
+        {
+          "word": "cannot",
+          "display_index": 12,
+          "start": 80.449,
+          "end": 82.03
+        },
+        {
+          "word": "be",
+          "display_index": 13,
+          "start": 82.03,
+          "end": 82.81
+        },
+        {
+          "word": "doubted.",
+          "display_index": 14,
+          "start": 82.81,
+          "end": 84.31
+        }
+      ],
+      "start": 72.568,
+      "end": 84.31
+    },
+    {
+      "line": 11,
+      "english": "This became the starting point of modern philosophy, and the problem of consciousness was placed at the center.",
+      "word_timings": [
+        {
+          "word": "This",
+          "display_index": 0,
+          "start": 86.81,
+          "end": 87.03
+        },
+        {
+          "word": "became",
+          "display_index": 1,
+          "start": 87.03,
+          "end": 87.706
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 87.706,
+          "end": 87.79
+        },
+        {
+          "word": "starting",
+          "display_index": 3,
+          "start": 87.79,
+          "end": 88.59
+        },
+        {
+          "word": "point",
+          "display_index": 4,
+          "start": 88.59,
+          "end": 89.11
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 89.11,
+          "end": 89.41
+        },
+        {
+          "word": "modern",
+          "display_index": 6,
+          "start": 89.41,
+          "end": 90.171
+        },
+        {
+          "word": "philosophy,",
+          "display_index": 7,
+          "start": 90.171,
+          "end": 92.231
+        },
+        {
+          "word": "and",
+          "display_index": 8,
+          "start": 92.231,
+          "end": 92.421
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 92.421,
+          "end": 92.571
+        },
+        {
+          "word": "problem",
+          "display_index": 10,
+          "start": 92.571,
+          "end": 93.311
+        },
+        {
+          "word": "of",
+          "display_index": 11,
+          "start": 93.311,
+          "end": 93.551
+        },
+        {
+          "word": "consciousness",
+          "display_index": 12,
+          "start": 93.551,
+          "end": 94.631
+        },
+        {
+          "word": "was",
+          "display_index": 13,
+          "start": 94.631,
+          "end": 94.891
+        },
+        {
+          "word": "placed",
+          "display_index": 14,
+          "start": 94.891,
+          "end": 95.651
+        },
+        {
+          "word": "at",
+          "display_index": 15,
+          "start": 95.651,
+          "end": 95.779
+        },
+        {
+          "word": "the",
+          "display_index": 16,
+          "start": 95.779,
+          "end": 96.091
+        },
+        {
+          "word": "center.",
+          "display_index": 17,
+          "start": 96.091,
+          "end": 97.591
+        }
+      ],
+      "start": 86.81,
+      "end": 97.591
+    },
+    {
+      "line": 12,
+      "english": "Kant asked what a moral act truly was.",
+      "word_timings": [
+        {
+          "word": "Kant",
+          "display_index": 0,
+          "start": 97.991,
+          "end": 98.532
+        },
+        {
+          "word": "asked",
+          "display_index": 1,
+          "start": 98.532,
+          "end": 99.592
+        },
+        {
+          "word": "what",
+          "display_index": 2,
+          "start": 99.592,
+          "end": 99.777
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 99.777,
+          "end": 99.952
+        },
+        {
+          "word": "moral",
+          "display_index": 4,
+          "start": 99.952,
+          "end": 100.452
+        },
+        {
+          "word": "act",
+          "display_index": 5,
+          "start": 100.452,
+          "end": 100.712
+        },
+        {
+          "word": "truly",
+          "display_index": 6,
+          "start": 100.712,
+          "end": 101.352
+        },
+        {
+          "word": "was.",
+          "display_index": 7,
+          "start": 101.352,
+          "end": 101.792
+        }
+      ],
+      "start": 97.991,
+      "end": 101.792
+    },
+    {
+      "line": 13,
+      "english": "He said, Ask yourself whether the principle of your action could become a principle for all.",
+      "word_timings": [
+        {
+          "word": "He",
+          "display_index": 0,
+          "start": 101.792,
+          "end": 101.952
+        },
+        {
+          "word": "said,",
+          "display_index": 1,
+          "start": 101.952,
+          "end": 102.852
+        },
+        {
+          "word": "Ask",
+          "display_index": 2,
+          "start": 102.852,
+          "end": 103.172
+        },
+        {
+          "word": "yourself",
+          "display_index": 3,
+          "start": 103.172,
+          "end": 104.192
+        },
+        {
+          "word": "whether",
+          "display_index": 4,
+          "start": 104.192,
+          "end": 104.578
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 104.578,
+          "end": 104.712
+        },
+        {
+          "word": "principle",
+          "display_index": 6,
+          "start": 104.712,
+          "end": 105.672
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 105.672,
+          "end": 105.912
+        },
+        {
+          "word": "your",
+          "display_index": 8,
+          "start": 105.912,
+          "end": 106.252
+        },
+        {
+          "word": "action",
+          "display_index": 9,
+          "start": 106.252,
+          "end": 107.113
+        },
+        {
+          "word": "could",
+          "display_index": 10,
+          "start": 107.113,
+          "end": 107.533
+        },
+        {
+          "word": "become",
+          "display_index": 11,
+          "start": 107.533,
+          "end": 108.391
+        },
+        {
+          "word": "a",
+          "display_index": 12,
+          "start": 108.391,
+          "end": 108.693
+        },
+        {
+          "word": "principle",
+          "display_index": 13,
+          "start": 108.693,
+          "end": 109.913
+        },
+        {
+          "word": "for",
+          "display_index": 14,
+          "start": 109.913,
+          "end": 110.293
+        },
+        {
+          "word": "all.",
+          "display_index": 15,
+          "start": 110.293,
+          "end": 111.453
+        }
+      ],
+      "start": 101.792,
+      "end": 111.453
+    },
+    {
+      "line": 14,
+      "english": "He tried to set the standard of good and evil in an absolute way.",
+      "word_timings": [
+        {
+          "word": "He",
+          "display_index": 0,
+          "start": 111.753,
+          "end": 111.913
+        },
+        {
+          "word": "tried",
+          "display_index": 1,
+          "start": 111.913,
+          "end": 112.362
+        },
+        {
+          "word": "to",
+          "display_index": 2,
+          "start": 112.362,
+          "end": 112.533
+        },
+        {
+          "word": "set",
+          "display_index": 3,
+          "start": 112.533,
+          "end": 112.968
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 112.968,
+          "end": 113.213
+        },
+        {
+          "word": "standard",
+          "display_index": 5,
+          "start": 113.213,
+          "end": 114.033
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 114.033,
+          "end": 114.333
+        },
+        {
+          "word": "good",
+          "display_index": 7,
+          "start": 114.333,
+          "end": 114.613
+        },
+        {
+          "word": "and",
+          "display_index": 8,
+          "start": 114.613,
+          "end": 115.013
+        },
+        {
+          "word": "evil",
+          "display_index": 9,
+          "start": 115.013,
+          "end": 116.194
+        },
+        {
+          "word": "in",
+          "display_index": 10,
+          "start": 116.194,
+          "end": 116.414
+        },
+        {
+          "word": "an",
+          "display_index": 11,
+          "start": 116.414,
+          "end": 116.654
+        },
+        {
+          "word": "absolute",
+          "display_index": 12,
+          "start": 116.654,
+          "end": 117.534
+        },
+        {
+          "word": "way.",
+          "display_index": 13,
+          "start": 117.534,
+          "end": 118.314
+        }
+      ],
+      "start": 111.753,
+      "end": 118.314
+    },
+    {
+      "line": 15,
+      "english": "Nietzsche doubted the very system of existing moral values.",
+      "word_timings": [
+        {
+          "word": "Nietzsche",
+          "display_index": 0,
+          "start": 118.314,
+          "end": 118.934
+        },
+        {
+          "word": "doubted",
+          "display_index": 1,
+          "start": 118.934,
+          "end": 119.534
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 119.534,
+          "end": 119.894
+        },
+        {
+          "word": "very",
+          "display_index": 3,
+          "start": 119.894,
+          "end": 120.494
+        },
+        {
+          "word": "system",
+          "display_index": 4,
+          "start": 120.494,
+          "end": 121.194
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 121.194,
+          "end": 121.354
+        },
+        {
+          "word": "existing",
+          "display_index": 6,
+          "start": 121.354,
+          "end": 122.294
+        },
+        {
+          "word": "moral",
+          "display_index": 7,
+          "start": 122.294,
+          "end": 122.874
+        },
+        {
+          "word": "values.",
+          "display_index": 8,
+          "start": 122.874,
+          "end": 123.795
+        }
+      ],
+      "start": 118.314,
+      "end": 123.795
+    },
+    {
+      "line": 16,
+      "english": "His declaration God is dead was a radical question thrown at a modern society whose traditional values had collapsed.",
+      "word_timings": [
+        {
+          "word": "His",
+          "display_index": 0,
+          "start": 124.095,
+          "end": 124.315
+        },
+        {
+          "word": "declaration",
+          "display_index": 1,
+          "start": 124.315,
+          "end": 125.315
+        },
+        {
+          "word": "God",
+          "display_index": 2,
+          "start": 125.315,
+          "end": 125.734
+        },
+        {
+          "word": "is",
+          "display_index": 3,
+          "start": 125.734,
+          "end": 126.095
+        },
+        {
+          "word": "dead",
+          "display_index": 4,
+          "start": 126.095,
+          "end": 126.735
+        },
+        {
+          "word": "was",
+          "display_index": 5,
+          "start": 126.735,
+          "end": 126.924
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 126.924,
+          "end": 127.115
+        },
+        {
+          "word": "radical",
+          "display_index": 7,
+          "start": 127.115,
+          "end": 127.815
+        },
+        {
+          "word": "question",
+          "display_index": 8,
+          "start": 127.815,
+          "end": 128.675
+        },
+        {
+          "word": "thrown",
+          "display_index": 9,
+          "start": 128.675,
+          "end": 129.215
+        },
+        {
+          "word": "at",
+          "display_index": 10,
+          "start": 129.215,
+          "end": 129.341
+        },
+        {
+          "word": "a",
+          "display_index": 11,
+          "start": 129.341,
+          "end": 129.515
+        },
+        {
+          "word": "modern",
+          "display_index": 12,
+          "start": 129.515,
+          "end": 130.075
+        },
+        {
+          "word": "society",
+          "display_index": 13,
+          "start": 130.075,
+          "end": 132.115
+        },
+        {
+          "word": "whose",
+          "display_index": 14,
+          "start": 132.115,
+          "end": 132.496
+        },
+        {
+          "word": "traditional",
+          "display_index": 15,
+          "start": 132.496,
+          "end": 133.356
+        },
+        {
+          "word": "values",
+          "display_index": 16,
+          "start": 133.356,
+          "end": 134.336
+        },
+        {
+          "word": "had",
+          "display_index": 17,
+          "start": 134.336,
+          "end": 135.096
+        },
+        {
+          "word": "collapsed.",
+          "display_index": 18,
+          "start": 135.096,
+          "end": 136.596
+        }
+      ],
+      "start": 124.095,
+      "end": 136.596
+    },
+    {
+      "line": 17,
+      "english": "In philosophy, the act of continuing to ask has more meaning than finding an answer.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 137.976,
+          "end": 138.116
+        },
+        {
+          "word": "philosophy,",
+          "display_index": 1,
+          "start": 138.116,
+          "end": 139.768
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 139.768,
+          "end": 140.036
+        },
+        {
+          "word": "act",
+          "display_index": 3,
+          "start": 140.036,
+          "end": 140.396
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 140.396,
+          "end": 140.536
+        },
+        {
+          "word": "continuing",
+          "display_index": 5,
+          "start": 140.536,
+          "end": 141.331
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 141.331,
+          "end": 141.657
+        },
+        {
+          "word": "ask",
+          "display_index": 7,
+          "start": 141.657,
+          "end": 142.197
+        },
+        {
+          "word": "has",
+          "display_index": 8,
+          "start": 142.197,
+          "end": 142.577
+        },
+        {
+          "word": "more",
+          "display_index": 9,
+          "start": 142.577,
+          "end": 142.937
+        },
+        {
+          "word": "meaning",
+          "display_index": 10,
+          "start": 142.937,
+          "end": 143.557
+        },
+        {
+          "word": "than",
+          "display_index": 11,
+          "start": 143.557,
+          "end": 143.897
+        },
+        {
+          "word": "finding",
+          "display_index": 12,
+          "start": 143.897,
+          "end": 144.617
+        },
+        {
+          "word": "an",
+          "display_index": 13,
+          "start": 144.617,
+          "end": 144.837
+        },
+        {
+          "word": "answer.",
+          "display_index": 14,
+          "start": 144.837,
+          "end": 145.839
+        }
+      ],
+      "start": 137.976,
+      "end": 145.839
+    },
+    {
+      "line": 18,
+      "english": "To face an abstract question is the most fundamental act by which we come to deeply understand who we are.",
+      "word_timings": [
+        {
+          "word": "To",
+          "display_index": 0,
+          "start": 146.139,
+          "end": 146.317
+        },
+        {
+          "word": "face",
+          "display_index": 1,
+          "start": 146.317,
+          "end": 146.817
+        },
+        {
+          "word": "an",
+          "display_index": 2,
+          "start": 146.817,
+          "end": 147.077
+        },
+        {
+          "word": "abstract",
+          "display_index": 3,
+          "start": 147.077,
+          "end": 147.897
+        },
+        {
+          "word": "question",
+          "display_index": 4,
+          "start": 147.897,
+          "end": 149.267
+        },
+        {
+          "word": "is",
+          "display_index": 5,
+          "start": 149.267,
+          "end": 149.376
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 149.376,
+          "end": 149.578
+        },
+        {
+          "word": "most",
+          "display_index": 7,
+          "start": 149.578,
+          "end": 150.158
+        },
+        {
+          "word": "fundamental",
+          "display_index": 8,
+          "start": 150.158,
+          "end": 151.678
+        },
+        {
+          "word": "act",
+          "display_index": 9,
+          "start": 151.678,
+          "end": 153.358
+        },
+        {
+          "word": "by",
+          "display_index": 10,
+          "start": 153.358,
+          "end": 153.598
+        },
+        {
+          "word": "which",
+          "display_index": 11,
+          "start": 153.598,
+          "end": 153.978
+        },
+        {
+          "word": "we",
+          "display_index": 12,
+          "start": 153.978,
+          "end": 154.478
+        },
+        {
+          "word": "come",
+          "display_index": 13,
+          "start": 154.478,
+          "end": 155.128
+        },
+        {
+          "word": "to",
+          "display_index": 14,
+          "start": 155.128,
+          "end": 155.378
+        },
+        {
+          "word": "deeply",
+          "display_index": 15,
+          "start": 155.378,
+          "end": 157.098
+        },
+        {
+          "word": "understand",
+          "display_index": 16,
+          "start": 157.098,
+          "end": 160.679
+        },
+        {
+          "word": "who",
+          "display_index": 17,
+          "start": 160.679,
+          "end": 161.119
+        },
+        {
+          "word": "we",
+          "display_index": 18,
+          "start": 161.119,
+          "end": 161.494
+        },
+        {
+          "word": "are.",
+          "display_index": 19,
+          "start": 161.494,
+          "end": 162.994
+        }
+      ],
+      "start": 146.139,
+      "end": 162.994
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

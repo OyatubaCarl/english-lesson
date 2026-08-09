@@ -1,0 +1,153 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H097.md",
+  "audio": "高校生編/suno_ready/generated/audio/H097/candidate3-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 108.16,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9934,
+  "expected_words": 152,
+  "transcribed_words": 151,
+  "matched_words": 150,
+  "coverage": 0.9868,
+  "precision": 0.9934,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 151,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 26,
+      "length": 2,
+      "words": [
+        "six",
+        "percent"
+      ]
+    }
+  ],
+  "replacement_count": 0,
+  "replacement_spans": [],
+  "insertion_spans": [
+    {
+      "expected_start": 152,
+      "actual_start": 150,
+      "expected": [],
+      "actual": [
+        "it"
+      ],
+      "actual_confidence": 0.0122
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 26,
+      "actual_start": 26,
+      "expected": [
+        "six",
+        "percent"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "On Earth, there are more than 6,000 known species of mammals alone. The number of insect species is estimated in the millions. Tropical rainforests cover only about 6% of the Earth's surface, yet more than half of all species dwell there. These hotspots of biodiversity are shrinking rapidly The causes are numerous Logging, conversion to farmland, urban development Human activity is steadily taking the habitat of animals away The oceans are also vulnerable Plastic pollution harms whales and turtles and the chemicals carried by the tide threaten the food chain. But conservation efforts are beginning to yield results. One indigenous community has protected the forest of its ancestors and established a pioneering model of community-led conservation. An ecosystem is built on a subtle balance The loss of one species affects others in a chain Whether we can find the wisdom to coexist with nature Will determine the future of this planet it.",
+  "segments": [
+    {
+      "start": 4.48,
+      "end": 11.26,
+      "text": "On Earth, there are more than 6,000 known species of mammals alone."
+    },
+    {
+      "start": 11.72,
+      "end": 16.44,
+      "text": "The number of insect species is estimated in the millions."
+    },
+    {
+      "start": 17.1,
+      "end": 22.7,
+      "text": "Tropical rainforests cover only about 6% of the Earth's surface,"
+    },
+    {
+      "start": 23.06,
+      "end": 26.2,
+      "text": "yet more than half of all species dwell there."
+    },
+    {
+      "start": 26.2,
+      "end": 33.6,
+      "text": "These hotspots of biodiversity are shrinking rapidly"
+    },
+    {
+      "start": 37.0,
+      "end": 39.54,
+      "text": "The causes are numerous"
+    },
+    {
+      "start": 39.54,
+      "end": 43.62,
+      "text": "Logging, conversion to farmland, urban development"
+    },
+    {
+      "start": 43.62,
+      "end": 49.54,
+      "text": "Human activity is steadily taking the habitat of animals away"
+    },
+    {
+      "start": 49.54,
+      "end": 52.6,
+      "text": "The oceans are also vulnerable"
+    },
+    {
+      "start": 52.6,
+      "end": 55.98,
+      "text": "Plastic pollution harms whales and turtles"
+    },
+    {
+      "start": 55.98,
+      "end": 59.72,
+      "text": "and the chemicals carried by the tide threaten the food chain."
+    },
+    {
+      "start": 60.94,
+      "end": 66.4,
+      "text": "But conservation efforts are beginning to yield results."
+    },
+    {
+      "start": 68.44,
+      "end": 74.32,
+      "text": "One indigenous community has protected the forest of its ancestors"
+    },
+    {
+      "start": 74.32,
+      "end": 80.28,
+      "text": "and established a pioneering model of community-led conservation."
+    },
+    {
+      "start": 80.28,
+      "end": 86.02,
+      "text": "An ecosystem is built on a subtle balance"
+    },
+    {
+      "start": 86.02,
+      "end": 94.48,
+      "text": "The loss of one species affects others in a chain"
+    },
+    {
+      "start": 96.46,
+      "end": 102.3,
+      "text": "Whether we can find the wisdom to coexist with nature"
+    },
+    {
+      "start": 102.3,
+      "end": 107.78,
+      "text": "Will determine the future of this planet"
+    },
+    {
+      "start": 107.78,
+      "end": 108.16,
+      "text": "it."
+    }
+  ]
+}

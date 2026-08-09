@@ -1,0 +1,1248 @@
+{
+  "lesson": "H051",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h051_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H051/candidate1-full.mp3",
+  "source_audio_sha256": "4b330dc9e3be052297d8b98cbe19eca24dabf4369f0556317905284a217a17e0",
+  "bpm": 100.0,
+  "exact_word_match": true,
+  "word_count": 184,
+  "line_count": 16,
+  "first_word_start": 2.981,
+  "last_word_end": 118.664,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Artificial intelligence, that is, AI, has made remarkable progress over the past ten years.",
+      "word_timings": [
+        {
+          "word": "Artificial",
+          "display_index": 0,
+          "start": 2.981,
+          "end": 3.621
+        },
+        {
+          "word": "intelligence,",
+          "display_index": 1,
+          "start": 3.621,
+          "end": 4.881
+        },
+        {
+          "word": "that",
+          "display_index": 2,
+          "start": 4.881,
+          "end": 5.056
+        },
+        {
+          "word": "is,",
+          "display_index": 3,
+          "start": 5.056,
+          "end": 5.401
+        },
+        {
+          "word": "AI,",
+          "display_index": 4,
+          "start": 5.401,
+          "end": 6.081
+        },
+        {
+          "word": "has",
+          "display_index": 5,
+          "start": 6.081,
+          "end": 6.241
+        },
+        {
+          "word": "made",
+          "display_index": 6,
+          "start": 6.241,
+          "end": 6.421
+        },
+        {
+          "word": "remarkable",
+          "display_index": 7,
+          "start": 6.421,
+          "end": 7.121
+        },
+        {
+          "word": "progress",
+          "display_index": 8,
+          "start": 7.121,
+          "end": 7.801
+        },
+        {
+          "word": "over",
+          "display_index": 9,
+          "start": 7.801,
+          "end": 8.052
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 8.052,
+          "end": 8.161
+        },
+        {
+          "word": "past",
+          "display_index": 11,
+          "start": 8.161,
+          "end": 8.601
+        },
+        {
+          "word": "ten",
+          "display_index": 12,
+          "start": 8.601,
+          "end": 8.942
+        },
+        {
+          "word": "years.",
+          "display_index": 13,
+          "start": 8.942,
+          "end": 10.442
+        }
+      ],
+      "start": 2.981,
+      "end": 10.442
+    },
+    {
+      "line": 2,
+      "english": "Algorithms that learn from vast amounts of data now support humans in many fields, including medicine, finance, and transportation.",
+      "word_timings": [
+        {
+          "word": "Algorithms",
+          "display_index": 0,
+          "start": 11.682,
+          "end": 12.262
+        },
+        {
+          "word": "that",
+          "display_index": 1,
+          "start": 12.262,
+          "end": 12.522
+        },
+        {
+          "word": "learn",
+          "display_index": 2,
+          "start": 12.522,
+          "end": 12.822
+        },
+        {
+          "word": "from",
+          "display_index": 3,
+          "start": 12.822,
+          "end": 13.122
+        },
+        {
+          "word": "vast",
+          "display_index": 4,
+          "start": 13.122,
+          "end": 13.502
+        },
+        {
+          "word": "amounts",
+          "display_index": 5,
+          "start": 13.502,
+          "end": 13.922
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 13.922,
+          "end": 14.042
+        },
+        {
+          "word": "data",
+          "display_index": 7,
+          "start": 14.042,
+          "end": 14.642
+        },
+        {
+          "word": "now",
+          "display_index": 8,
+          "start": 14.642,
+          "end": 14.923
+        },
+        {
+          "word": "support",
+          "display_index": 9,
+          "start": 14.923,
+          "end": 15.383
+        },
+        {
+          "word": "humans",
+          "display_index": 10,
+          "start": 15.383,
+          "end": 16.023
+        },
+        {
+          "word": "in",
+          "display_index": 11,
+          "start": 16.023,
+          "end": 16.143
+        },
+        {
+          "word": "many",
+          "display_index": 12,
+          "start": 16.143,
+          "end": 16.423
+        },
+        {
+          "word": "fields,",
+          "display_index": 13,
+          "start": 16.423,
+          "end": 16.923
+        },
+        {
+          "word": "including",
+          "display_index": 14,
+          "start": 16.923,
+          "end": 17.343
+        },
+        {
+          "word": "medicine,",
+          "display_index": 15,
+          "start": 17.343,
+          "end": 18.223
+        },
+        {
+          "word": "finance,",
+          "display_index": 16,
+          "start": 18.223,
+          "end": 19.903
+        },
+        {
+          "word": "and",
+          "display_index": 17,
+          "start": 19.903,
+          "end": 20.023
+        },
+        {
+          "word": "transportation.",
+          "display_index": 18,
+          "start": 20.023,
+          "end": 21.523
+        }
+      ],
+      "start": 11.682,
+      "end": 21.523
+    },
+    {
+      "line": 3,
+      "english": "Diagnostic assistance, self-driving cars, and natural language processing.",
+      "word_timings": [
+        {
+          "word": "Diagnostic",
+          "display_index": 0,
+          "start": 22.444,
+          "end": 23.224
+        },
+        {
+          "word": "assistance,",
+          "display_index": 1,
+          "start": 23.224,
+          "end": 24.204
+        },
+        {
+          "word": "self-driving",
+          "display_index": 2,
+          "start": 24.204,
+          "end": 24.504
+        },
+        {
+          "word": "self-driving",
+          "display_index": 2,
+          "start": 24.504,
+          "end": 25.104
+        },
+        {
+          "word": "cars,",
+          "display_index": 3,
+          "start": 25.104,
+          "end": 27.285
+        },
+        {
+          "word": "and",
+          "display_index": 4,
+          "start": 27.285,
+          "end": 27.545
+        },
+        {
+          "word": "natural",
+          "display_index": 5,
+          "start": 27.545,
+          "end": 28.125
+        },
+        {
+          "word": "language",
+          "display_index": 6,
+          "start": 28.125,
+          "end": 28.705
+        },
+        {
+          "word": "processing.",
+          "display_index": 7,
+          "start": 28.705,
+          "end": 30.205
+        }
+      ],
+      "start": 22.444,
+      "end": 30.205
+    },
+    {
+      "line": 4,
+      "english": "Each application is changing our lives.",
+      "word_timings": [
+        {
+          "word": "Each",
+          "display_index": 0,
+          "start": 32.085,
+          "end": 32.425
+        },
+        {
+          "word": "application",
+          "display_index": 1,
+          "start": 32.425,
+          "end": 33.403
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 33.403,
+          "end": 33.786
+        },
+        {
+          "word": "changing",
+          "display_index": 3,
+          "start": 33.786,
+          "end": 34.546
+        },
+        {
+          "word": "our",
+          "display_index": 4,
+          "start": 34.546,
+          "end": 34.746
+        },
+        {
+          "word": "lives.",
+          "display_index": 5,
+          "start": 34.746,
+          "end": 35.506
+        }
+      ],
+      "start": 32.085,
+      "end": 35.506
+    },
+    {
+      "line": 5,
+      "english": "In some industries, automation has already transformed the landscape of labor.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 35.506,
+          "end": 35.646
+        },
+        {
+          "word": "some",
+          "display_index": 1,
+          "start": 35.646,
+          "end": 35.986
+        },
+        {
+          "word": "industries,",
+          "display_index": 2,
+          "start": 35.986,
+          "end": 36.906
+        },
+        {
+          "word": "automation",
+          "display_index": 3,
+          "start": 36.906,
+          "end": 37.726
+        },
+        {
+          "word": "has",
+          "display_index": 4,
+          "start": 37.726,
+          "end": 38.006
+        },
+        {
+          "word": "already",
+          "display_index": 5,
+          "start": 38.006,
+          "end": 38.607
+        },
+        {
+          "word": "transformed",
+          "display_index": 6,
+          "start": 38.607,
+          "end": 39.255
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 39.255,
+          "end": 39.387
+        },
+        {
+          "word": "landscape",
+          "display_index": 8,
+          "start": 39.387,
+          "end": 40.027
+        },
+        {
+          "word": "of",
+          "display_index": 9,
+          "start": 40.027,
+          "end": 40.187
+        },
+        {
+          "word": "labor.",
+          "display_index": 10,
+          "start": 40.187,
+          "end": 40.907
+        }
+      ],
+      "start": 35.506,
+      "end": 40.907
+    },
+    {
+      "line": 6,
+      "english": "But rapid technological progress comes with serious risks as well.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 41.207,
+          "end": 41.367
+        },
+        {
+          "word": "rapid",
+          "display_index": 1,
+          "start": 41.367,
+          "end": 41.647
+        },
+        {
+          "word": "technological",
+          "display_index": 2,
+          "start": 41.647,
+          "end": 42.387
+        },
+        {
+          "word": "progress",
+          "display_index": 3,
+          "start": 42.387,
+          "end": 42.987
+        },
+        {
+          "word": "comes",
+          "display_index": 4,
+          "start": 42.987,
+          "end": 43.427
+        },
+        {
+          "word": "with",
+          "display_index": 5,
+          "start": 43.427,
+          "end": 43.727
+        },
+        {
+          "word": "serious",
+          "display_index": 6,
+          "start": 43.727,
+          "end": 44.328
+        },
+        {
+          "word": "risks",
+          "display_index": 7,
+          "start": 44.328,
+          "end": 44.688
+        },
+        {
+          "word": "as",
+          "display_index": 8,
+          "start": 44.688,
+          "end": 44.828
+        },
+        {
+          "word": "well.",
+          "display_index": 9,
+          "start": 44.828,
+          "end": 45.588
+        }
+      ],
+      "start": 41.207,
+      "end": 45.588
+    },
+    {
+      "line": 7,
+      "english": "Invasion of privacy, the loss of jobs, the spread of misinformation.",
+      "word_timings": [
+        {
+          "word": "Invasion",
+          "display_index": 0,
+          "start": 45.888,
+          "end": 46.508
+        },
+        {
+          "word": "of",
+          "display_index": 1,
+          "start": 46.508,
+          "end": 46.688
+        },
+        {
+          "word": "privacy,",
+          "display_index": 2,
+          "start": 46.688,
+          "end": 47.796
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 47.796,
+          "end": 47.948
+        },
+        {
+          "word": "loss",
+          "display_index": 4,
+          "start": 47.948,
+          "end": 48.248
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 48.248,
+          "end": 48.388
+        },
+        {
+          "word": "jobs,",
+          "display_index": 6,
+          "start": 48.388,
+          "end": 48.849
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 48.849,
+          "end": 49.008
+        },
+        {
+          "word": "spread",
+          "display_index": 8,
+          "start": 49.008,
+          "end": 49.508
+        },
+        {
+          "word": "of",
+          "display_index": 9,
+          "start": 49.508,
+          "end": 49.748
+        },
+        {
+          "word": "misinformation.",
+          "display_index": 10,
+          "start": 49.748,
+          "end": 51.248
+        }
+      ],
+      "start": 45.888,
+      "end": 51.248
+    },
+    {
+      "line": 8,
+      "english": "Our society must face these consequences head on.",
+      "word_timings": [
+        {
+          "word": "Our",
+          "display_index": 0,
+          "start": 60.87,
+          "end": 60.99
+        },
+        {
+          "word": "society",
+          "display_index": 1,
+          "start": 60.99,
+          "end": 61.71
+        },
+        {
+          "word": "must",
+          "display_index": 2,
+          "start": 61.71,
+          "end": 62.031
+        },
+        {
+          "word": "face",
+          "display_index": 3,
+          "start": 62.031,
+          "end": 62.651
+        },
+        {
+          "word": "these",
+          "display_index": 4,
+          "start": 62.651,
+          "end": 62.931
+        },
+        {
+          "word": "consequences",
+          "display_index": 5,
+          "start": 62.931,
+          "end": 63.871
+        },
+        {
+          "word": "head",
+          "display_index": 6,
+          "start": 63.871,
+          "end": 64.251
+        },
+        {
+          "word": "on.",
+          "display_index": 7,
+          "start": 64.251,
+          "end": 64.851
+        }
+      ],
+      "start": 60.87,
+      "end": 64.851
+    },
+    {
+      "line": 9,
+      "english": "Who bears the responsibility for an algorithm?",
+      "word_timings": [
+        {
+          "word": "Who",
+          "display_index": 0,
+          "start": 64.851,
+          "end": 65.031
+        },
+        {
+          "word": "bears",
+          "display_index": 1,
+          "start": 65.031,
+          "end": 65.351
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 65.351,
+          "end": 65.491
+        },
+        {
+          "word": "responsibility",
+          "display_index": 3,
+          "start": 65.491,
+          "end": 67.131
+        },
+        {
+          "word": "for",
+          "display_index": 4,
+          "start": 67.131,
+          "end": 67.511
+        },
+        {
+          "word": "an",
+          "display_index": 5,
+          "start": 67.511,
+          "end": 67.831
+        },
+        {
+          "word": "algorithm?",
+          "display_index": 6,
+          "start": 67.831,
+          "end": 69.331
+        }
+      ],
+      "start": 64.851,
+      "end": 69.331
+    },
+    {
+      "line": 10,
+      "english": "When a self-driving car causes an accident, who is held accountable in court?",
+      "word_timings": [
+        {
+          "word": "When",
+          "display_index": 0,
+          "start": 69.852,
+          "end": 70.001
+        },
+        {
+          "word": "a",
+          "display_index": 1,
+          "start": 70.001,
+          "end": 70.132
+        },
+        {
+          "word": "self-driving",
+          "display_index": 2,
+          "start": 70.132,
+          "end": 70.432
+        },
+        {
+          "word": "self-driving",
+          "display_index": 2,
+          "start": 70.432,
+          "end": 70.772
+        },
+        {
+          "word": "car",
+          "display_index": 3,
+          "start": 70.772,
+          "end": 71.052
+        },
+        {
+          "word": "causes",
+          "display_index": 4,
+          "start": 71.052,
+          "end": 71.692
+        },
+        {
+          "word": "an",
+          "display_index": 5,
+          "start": 71.692,
+          "end": 71.872
+        },
+        {
+          "word": "accident,",
+          "display_index": 6,
+          "start": 71.872,
+          "end": 72.832
+        },
+        {
+          "word": "who",
+          "display_index": 7,
+          "start": 72.832,
+          "end": 73.012
+        },
+        {
+          "word": "is",
+          "display_index": 8,
+          "start": 73.012,
+          "end": 73.152
+        },
+        {
+          "word": "held",
+          "display_index": 9,
+          "start": 73.152,
+          "end": 73.512
+        },
+        {
+          "word": "accountable",
+          "display_index": 10,
+          "start": 73.512,
+          "end": 74.413
+        },
+        {
+          "word": "in",
+          "display_index": 11,
+          "start": 74.413,
+          "end": 74.633
+        },
+        {
+          "word": "court?",
+          "display_index": 12,
+          "start": 74.633,
+          "end": 75.233
+        }
+      ],
+      "start": 69.852,
+      "end": 75.233
+    },
+    {
+      "line": 11,
+      "english": "These questions still do not have complete answers.",
+      "word_timings": [
+        {
+          "word": "These",
+          "display_index": 0,
+          "start": 75.233,
+          "end": 75.513
+        },
+        {
+          "word": "questions",
+          "display_index": 1,
+          "start": 75.513,
+          "end": 76.113
+        },
+        {
+          "word": "still",
+          "display_index": 2,
+          "start": 76.113,
+          "end": 76.453
+        },
+        {
+          "word": "do",
+          "display_index": 3,
+          "start": 76.453,
+          "end": 76.753
+        },
+        {
+          "word": "not",
+          "display_index": 4,
+          "start": 76.753,
+          "end": 77.053
+        },
+        {
+          "word": "have",
+          "display_index": 5,
+          "start": 77.053,
+          "end": 77.353
+        },
+        {
+          "word": "complete",
+          "display_index": 6,
+          "start": 77.353,
+          "end": 78.333
+        },
+        {
+          "word": "answers.",
+          "display_index": 7,
+          "start": 78.333,
+          "end": 79.434
+        }
+      ],
+      "start": 75.233,
+      "end": 79.434
+    },
+    {
+      "line": 12,
+      "english": "Governments around the world have begun to develop regulations for AI.",
+      "word_timings": [
+        {
+          "word": "Governments",
+          "display_index": 0,
+          "start": 79.734,
+          "end": 80.294
+        },
+        {
+          "word": "around",
+          "display_index": 1,
+          "start": 80.294,
+          "end": 80.653
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 80.653,
+          "end": 80.794
+        },
+        {
+          "word": "world",
+          "display_index": 3,
+          "start": 80.794,
+          "end": 81.154
+        },
+        {
+          "word": "have",
+          "display_index": 4,
+          "start": 81.154,
+          "end": 81.414
+        },
+        {
+          "word": "begun",
+          "display_index": 5,
+          "start": 81.414,
+          "end": 81.846
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 81.846,
+          "end": 82.014
+        },
+        {
+          "word": "develop",
+          "display_index": 7,
+          "start": 82.014,
+          "end": 82.494
+        },
+        {
+          "word": "regulations",
+          "display_index": 8,
+          "start": 82.494,
+          "end": 83.634
+        },
+        {
+          "word": "for",
+          "display_index": 9,
+          "start": 83.634,
+          "end": 84.034
+        },
+        {
+          "word": "AI.",
+          "display_index": 10,
+          "start": 84.034,
+          "end": 85.534
+        }
+      ],
+      "start": 79.734,
+      "end": 85.534
+    },
+    {
+      "line": 13,
+      "english": "The European Union has already established a comprehensive law concerning the ethical use of AI.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 86.803,
+          "end": 86.955
+        },
+        {
+          "word": "European",
+          "display_index": 1,
+          "start": 86.955,
+          "end": 87.635
+        },
+        {
+          "word": "Union",
+          "display_index": 2,
+          "start": 87.635,
+          "end": 88.015
+        },
+        {
+          "word": "has",
+          "display_index": 3,
+          "start": 88.015,
+          "end": 88.255
+        },
+        {
+          "word": "already",
+          "display_index": 4,
+          "start": 88.255,
+          "end": 88.815
+        },
+        {
+          "word": "established",
+          "display_index": 5,
+          "start": 88.815,
+          "end": 89.784
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 89.784,
+          "end": 89.935
+        },
+        {
+          "word": "comprehensive",
+          "display_index": 7,
+          "start": 89.935,
+          "end": 91.015
+        },
+        {
+          "word": "law",
+          "display_index": 8,
+          "start": 91.015,
+          "end": 91.435
+        },
+        {
+          "word": "concerning",
+          "display_index": 9,
+          "start": 91.435,
+          "end": 92.801
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 92.801,
+          "end": 92.996
+        },
+        {
+          "word": "ethical",
+          "display_index": 11,
+          "start": 92.996,
+          "end": 93.636
+        },
+        {
+          "word": "use",
+          "display_index": 12,
+          "start": 93.636,
+          "end": 93.896
+        },
+        {
+          "word": "of",
+          "display_index": 13,
+          "start": 93.896,
+          "end": 94.076
+        },
+        {
+          "word": "AI.",
+          "display_index": 14,
+          "start": 94.076,
+          "end": 94.736
+        }
+      ],
+      "start": 86.803,
+      "end": 94.736
+    },
+    {
+      "line": 14,
+      "english": "Technology in itself is neutral.",
+      "word_timings": [
+        {
+          "word": "Technology",
+          "display_index": 0,
+          "start": 95.036,
+          "end": 96.616
+        },
+        {
+          "word": "in",
+          "display_index": 1,
+          "start": 96.616,
+          "end": 96.796
+        },
+        {
+          "word": "itself",
+          "display_index": 2,
+          "start": 96.796,
+          "end": 97.342
+        },
+        {
+          "word": "is",
+          "display_index": 3,
+          "start": 97.342,
+          "end": 97.617
+        },
+        {
+          "word": "neutral.",
+          "display_index": 4,
+          "start": 97.617,
+          "end": 99.117
+        }
+      ],
+      "start": 95.036,
+      "end": 99.117
+    },
+    {
+      "line": 15,
+      "english": "Whether it is used for an ethical purpose or not depends on our human judgment.",
+      "word_timings": [
+        {
+          "word": "Whether",
+          "display_index": 0,
+          "start": 103.157,
+          "end": 103.518
+        },
+        {
+          "word": "it",
+          "display_index": 1,
+          "start": 103.518,
+          "end": 103.598
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 103.593,
+          "end": 103.858
+        },
+        {
+          "word": "used",
+          "display_index": 3,
+          "start": 103.858,
+          "end": 104.058
+        },
+        {
+          "word": "for",
+          "display_index": 4,
+          "start": 104.058,
+          "end": 104.258
+        },
+        {
+          "word": "an",
+          "display_index": 5,
+          "start": 104.258,
+          "end": 104.418
+        },
+        {
+          "word": "ethical",
+          "display_index": 6,
+          "start": 104.418,
+          "end": 104.798
+        },
+        {
+          "word": "purpose",
+          "display_index": 7,
+          "start": 104.798,
+          "end": 105.438
+        },
+        {
+          "word": "or",
+          "display_index": 8,
+          "start": 105.438,
+          "end": 105.578
+        },
+        {
+          "word": "not",
+          "display_index": 9,
+          "start": 105.578,
+          "end": 105.838
+        },
+        {
+          "word": "depends",
+          "display_index": 10,
+          "start": 105.838,
+          "end": 106.418
+        },
+        {
+          "word": "on",
+          "display_index": 11,
+          "start": 106.418,
+          "end": 106.638
+        },
+        {
+          "word": "our",
+          "display_index": 12,
+          "start": 106.638,
+          "end": 106.758
+        },
+        {
+          "word": "human",
+          "display_index": 13,
+          "start": 106.758,
+          "end": 107.338
+        },
+        {
+          "word": "judgment.",
+          "display_index": 14,
+          "start": 107.338,
+          "end": 108.618
+        }
+      ],
+      "start": 103.157,
+      "end": 108.618
+    },
+    {
+      "line": 16,
+      "english": "AI must exist not so that it can think in our place, but so that we can think better than before.",
+      "word_timings": [
+        {
+          "word": "AI",
+          "display_index": 0,
+          "start": 108.918,
+          "end": 109.739
+        },
+        {
+          "word": "must",
+          "display_index": 1,
+          "start": 109.739,
+          "end": 110.099
+        },
+        {
+          "word": "exist",
+          "display_index": 2,
+          "start": 110.099,
+          "end": 111.259
+        },
+        {
+          "word": "not",
+          "display_index": 3,
+          "start": 111.259,
+          "end": 111.539
+        },
+        {
+          "word": "so",
+          "display_index": 4,
+          "start": 111.539,
+          "end": 111.999
+        },
+        {
+          "word": "that",
+          "display_index": 5,
+          "start": 111.999,
+          "end": 112.199
+        },
+        {
+          "word": "it",
+          "display_index": 6,
+          "start": 112.199,
+          "end": 112.319
+        },
+        {
+          "word": "can",
+          "display_index": 7,
+          "start": 112.319,
+          "end": 112.599
+        },
+        {
+          "word": "think",
+          "display_index": 8,
+          "start": 112.599,
+          "end": 112.979
+        },
+        {
+          "word": "in",
+          "display_index": 9,
+          "start": 112.979,
+          "end": 113.159
+        },
+        {
+          "word": "our",
+          "display_index": 10,
+          "start": 113.159,
+          "end": 113.339
+        },
+        {
+          "word": "place,",
+          "display_index": 11,
+          "start": 113.339,
+          "end": 114.839
+        },
+        {
+          "word": "but",
+          "display_index": 12,
+          "start": 114.839,
+          "end": 115.12
+        },
+        {
+          "word": "so",
+          "display_index": 13,
+          "start": 115.12,
+          "end": 115.46
+        },
+        {
+          "word": "that",
+          "display_index": 14,
+          "start": 115.46,
+          "end": 115.78
+        },
+        {
+          "word": "we",
+          "display_index": 15,
+          "start": 115.78,
+          "end": 116.04
+        },
+        {
+          "word": "can",
+          "display_index": 16,
+          "start": 116.04,
+          "end": 116.34
+        },
+        {
+          "word": "think",
+          "display_index": 17,
+          "start": 116.34,
+          "end": 116.96
+        },
+        {
+          "word": "better",
+          "display_index": 18,
+          "start": 116.96,
+          "end": 117.4
+        },
+        {
+          "word": "than",
+          "display_index": 19,
+          "start": 117.4,
+          "end": 117.68
+        },
+        {
+          "word": "before.",
+          "display_index": 20,
+          "start": 117.68,
+          "end": 118.664
+        }
+      ],
+      "start": 108.918,
+      "end": 118.664
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

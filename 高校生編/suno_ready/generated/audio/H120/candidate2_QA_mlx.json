@@ -1,0 +1,171 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H120.md",
+  "audio": "高校生編/suno_ready/generated/audio/H120/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 141.16,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 181,
+  "transcribed_words": 181,
+  "matched_words": 180,
+  "coverage": 0.9945,
+  "precision": 0.9945,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 180,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 42,
+      "length": 1,
+      "words": [
+        "carries"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 42,
+      "actual_start": 42,
+      "expected": [
+        "carries"
+      ],
+      "actual": [
+        "carry"
+      ],
+      "actual_confidence": 0.7803,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "Words have potential A single word can destroy a person Or save one The problem of bullying has long been a concern of society In schools, at workplaces, and on the internet Not only visible violence, but also the violence of words carry serious implications Children are particularly vulnerable, ugly, stupid, you should die Words thrown casually can cut deeply into a child's heart Slander on social media intensifies through anonymity Under malice sent daily by invisible senders Many young people are pushed to the edge of their mental limits Some die by suicide Words have consequences We are recently rediscovering this truth What was meant as a light joke may hurt The other like a blade But words also carry the power to heal Thank you, it's okay You are not alone Such words can lift someone who is about to collapse Indeed words are both a weapon and a medicine Which one they become depends on the choice of each one of us Today, pay attention to the words you speak What can you offer to lighten someone's heart?",
+  "segments": [
+    {
+      "start": 8.56,
+      "end": 10.26,
+      "text": "Words have potential"
+    },
+    {
+      "start": 11.4,
+      "end": 15.08,
+      "text": "A single word can destroy a person"
+    },
+    {
+      "start": 16.34,
+      "end": 18.12,
+      "text": "Or save one"
+    },
+    {
+      "start": 20.1,
+      "end": 25.48,
+      "text": "The problem of bullying has long been a concern of society"
+    },
+    {
+      "start": 25.48,
+      "end": 30.42,
+      "text": "In schools, at workplaces, and on the internet"
+    },
+    {
+      "start": 32.48,
+      "end": 39.78,
+      "text": "Not only visible violence, but also the violence of words carry serious implications"
+    },
+    {
+      "start": 43.36,
+      "end": 49.52,
+      "text": "Children are particularly vulnerable, ugly, stupid, you should die"
+    },
+    {
+      "start": 49.52,
+      "end": 55.6,
+      "text": "Words thrown casually can cut deeply into a child's heart"
+    },
+    {
+      "start": 55.6,
+      "end": 61.76,
+      "text": "Slander on social media intensifies through anonymity"
+    },
+    {
+      "start": 61.76,
+      "end": 65.58,
+      "text": "Under malice sent daily by invisible senders"
+    },
+    {
+      "start": 65.58,
+      "end": 72.12,
+      "text": "Many young people are pushed to the edge of their mental limits"
+    },
+    {
+      "start": 73.66,
+      "end": 76.48,
+      "text": "Some die by suicide"
+    },
+    {
+      "start": 76.48,
+      "end": 79.88,
+      "text": "Words have consequences"
+    },
+    {
+      "start": 80.48,
+      "end": 85.34,
+      "text": "We are recently rediscovering this truth"
+    },
+    {
+      "start": 85.34,
+      "end": 90.02,
+      "text": "What was meant as a light joke may hurt"
+    },
+    {
+      "start": 90.02,
+      "end": 93.3,
+      "text": "The other like a blade"
+    },
+    {
+      "start": 93.3,
+      "end": 97.74,
+      "text": "But words also carry the power to heal"
+    },
+    {
+      "start": 98.48,
+      "end": 101.52,
+      "text": "Thank you, it's okay"
+    },
+    {
+      "start": 101.52,
+      "end": 104.66,
+      "text": "You are not alone"
+    },
+    {
+      "start": 106.82,
+      "end": 112.66,
+      "text": "Such words can lift someone who is about to collapse"
+    },
+    {
+      "start": 113.24,
+      "end": 117.48,
+      "text": "Indeed words are both a weapon and a medicine"
+    },
+    {
+      "start": 117.48,
+      "end": 125.98,
+      "text": "Which one they become depends on the choice of each one of us"
+    },
+    {
+      "start": 125.98,
+      "end": 132.4,
+      "text": "Today, pay attention to the words you speak"
+    },
+    {
+      "start": 135.02,
+      "end": 141.16,
+      "text": "What can you offer to lighten someone's heart?"
+    }
+  ]
+}

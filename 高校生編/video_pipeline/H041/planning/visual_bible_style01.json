@@ -1,0 +1,75 @@
+{
+  "lesson": "H041",
+  "title": "暗号を解いた男 ― アラン・チューリング",
+  "style": "画風01・光彩のある劇場アニメ背景を基調にした写実的な科学史ドキュメンタリー",
+  "research_basis": [
+    "GCHQ: Alan Turing and Bletchley Park history",
+    "Bletchley Park: Bombe teaching notes",
+    "Oxford Academic: Turing, Computing Machinery and Intelligence (1950)",
+    "UK Ministry of Justice: 2013 royal pardon"
+  ],
+  "timeline": [
+    "1939-1945: Turing and colleagues worked at Bletchley Park on German Enigma systems",
+    "1940 onward: the British Bombe built on crucial Polish foundations and was improved through team work",
+    "postwar: Turing worked on stored-program computing at NPL and Manchester",
+    "1950: Computing Machinery and Intelligence published in Mind",
+    "1952: prosecuted and convicted for homosexual activity then criminalized",
+    "1954: died aged 41",
+    "24 December 2013: received a posthumous royal pardon"
+  ],
+  "characters": {
+    "alan_turing": {
+      "age_wartime": "27-33",
+      "identity": "broad oval face, strong dark eyebrows, short dark hair with a precise left side part, close-cut sides, direct deep-set eyes, broad jaw and slightly prominent ears; based on the official GCHQ portrait",
+      "wardrobe_wartime": "rumpled brown or charcoal tweed jacket, pale striped shirt, narrow dark tie, dark trousers; practical rather than glamorous",
+      "wardrobe_postwar": "mid-grey tweed suit and striped shirt, slightly older face",
+      "manner": "intensely focused, quick-moving, collaborative but independent; never a lone superhero or a modern hacker"
+    },
+    "gordon_welchman": {
+      "age": "mid thirties",
+      "identity": "slim British mathematician, high forehead, neatly combed brown hair, round spectacles",
+      "wardrobe": "dark three-piece suit or tweed jacket"
+    },
+    "bombe_operators": {
+      "identity": "young Women's Royal Naval Service operators and mixed civilian cryptanalytic staff",
+      "wardrobe": "period-correct navy Wren uniform or restrained 1940s civilian clothing"
+    }
+  },
+  "technology_accuracy": [
+    "Enigma is a portable electro-mechanical cipher machine with keyboard, lampboard, plugboard and rotors; no glowing digital display",
+    "the Bombe is a large wall-like electro-mechanical machine with repeated banks of rotating drums; it is not a general-purpose computer",
+    "the Bombe helps eliminate impossible rotor settings and does not automatically print fully translated messages",
+    "show human crib selection, menus, checking, Typex-like follow-up and naval intelligence interpretation as a team process",
+    "the British Bombe built on crucial Polish cryptanalytic foundations and was designed and improved by Turing, Gordon Welchman and others",
+    "postwar machine-intelligence scenes use teleprinters, paper tape and early stored-program computers, not humanoid robots or modern chat interfaces"
+  ],
+  "history_accuracy": [
+    "do not depict Turing as single-handedly breaking every Enigma message",
+    "do not collapse Bombe engineering, operation and intelligence analysis into one instant",
+    "do not show decoded messages exposing readable military secrets",
+    "depict 1952 prosecution through courthouse and official procedure without a sensational trial scene",
+    "do not show an apple, cyanide, suicide method, hospital death or definitive cause-of-death claim",
+    "the 2013 pardon is posthumous and must not be shown as a ceremony attended by Turing",
+    "the pardon is presented as recognition that came far too late, not as erasing the harm or conviction from history"
+  ],
+  "composition": {
+    "aspect_ratio": "16:9",
+    "subtitle_safe_area": "keep important faces, hands, machines and documents above the lower 45 percent",
+    "camera": "one stable push, pull or hold per shot",
+    "text": "no readable generated labels, secret messages, equations, newspaper headlines or signatures"
+  },
+  "avoid": [
+    "The Imitation Game movie actor likenesses or copying movie compositions",
+    "modern keyboards, flat screens, LEDs, server rooms or holographic code in historical scenes",
+    "Turing working completely alone while colleagues stand idle",
+    "Bombe as a humanoid AI or an automatic plaintext printer",
+    "villainous courtroom caricatures, prison bars, conversion-therapy spectacle or graphic medical imagery",
+    "apple symbolism, cyanide imagery, ghosts, halos, fantasy electricity, readable text, logos or watermarks"
+  ],
+  "imagegen": {
+    "mode": "built-in ImageGen",
+    "planned_master_count": 11,
+    "selected_output_directory": "scenes/character_refs",
+    "video_scene_directory": "scenes/final_style01"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H047.md",
+  "audio": "高校生編/video_pipeline/source_audio/H047/h047_market_economy_adopted.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 79.5,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0065,
+  "expected_words": 153,
+  "transcribed_words": 154,
+  "matched_words": 153,
+  "coverage": 1.0,
+  "precision": 0.9935,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 152,
+  "longest_missing_run": 0,
+  "largest_missing_runs": [],
+  "replacement_count": 0,
+  "replacement_spans": [],
+  "insertion_spans": [
+    {
+      "expected_start": 153,
+      "actual_start": 153,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.3762
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "In a market economy, the price of most goods and services is determined by demand and supply. When consumers strongly demand a certain product, prices rise. When demand falls, prices fall as well. This is the most basic mechanism of the market. A company gathers capital, conducts production in a factory, and sells its products to earn a profit. In an industry where competition is strong, companies are pushed to improve their quality. Workers provide labor and in return receive wages or salaries. When employment is stable, the income of households is also stable. A nation raises funds through taxes and uses them to fund education and welfare A bank provides loans and companies grow through investment In the modern era where globalization has advanced The economy of one country is closely tied to the markets of others Exports and imports support growth Economies beyond the borders of states continually influence one another you",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 8.3,
+      "text": "In a market economy, the price of most goods and services is determined by demand and supply."
+    },
+    {
+      "start": 9.32,
+      "end": 14.48,
+      "text": "When consumers strongly demand a certain product, prices rise."
+    },
+    {
+      "start": 14.76,
+      "end": 18.08,
+      "text": "When demand falls, prices fall as well."
+    },
+    {
+      "start": 18.96,
+      "end": 23.14,
+      "text": "This is the most basic mechanism of the market."
+    },
+    {
+      "start": 24.48,
+      "end": 30.08,
+      "text": "A company gathers capital, conducts production in a factory, and sells its products to earn"
+    },
+    {
+      "start": 30.08,
+      "end": 30.76,
+      "text": "a profit."
+    },
+    {
+      "start": 32.14,
+      "end": 37.68,
+      "text": "In an industry where competition is strong, companies are pushed to improve their quality."
+    },
+    {
+      "start": 37.88,
+      "end": 42.74,
+      "text": "Workers provide labor and in return receive wages or salaries."
+    },
+    {
+      "start": 44.34,
+      "end": 49.32,
+      "text": "When employment is stable, the income of households is also stable."
+    },
+    {
+      "start": 49.32,
+      "end": 54.4,
+      "text": "A nation raises funds through taxes and uses them to fund education and welfare"
+    },
+    {
+      "start": 54.4,
+      "end": 59.3,
+      "text": "A bank provides loans and companies grow through investment"
+    },
+    {
+      "start": 59.84,
+      "end": 63.02,
+      "text": "In the modern era where globalization has advanced"
+    },
+    {
+      "start": 63.02,
+      "end": 67.94,
+      "text": "The economy of one country is closely tied to the markets of others"
+    },
+    {
+      "start": 68.8,
+      "end": 71.3,
+      "text": "Exports and imports support growth"
+    },
+    {
+      "start": 71.3,
+      "end": 77.74,
+      "text": "Economies beyond the borders of states continually influence one another"
+    },
+    {
+      "start": 79.32,
+      "end": 79.5,
+      "text": "you"
+    }
+  ]
+}

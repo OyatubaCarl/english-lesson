@@ -1,0 +1,645 @@
+{
+  "lesson": 21,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L21/planning/lesson.json",
+  "title_en": "Lesson 21  On Grandmother's Veranda",
+  "title_ja": "祖母の縁側で",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 9,
+  "lines": [
+    {
+      "line": 1,
+      "english": "On a summer afternoon, we sat on the porch of grandmother's house and talked about the long flow of time.",
+      "source_ja": "夏の午後、おばあちゃんの家の縁側に座って、長い時間の流れについて話をしました。",
+      "display_ja": "夏の午後、おばあちゃんの家の縁側に座って、長い時間の流れについて話をしました。",
+      "corrected_translation": false,
+      "mixed": "夏の午後、おばあちゃんの家の縁側に座って、長い時間の流れについて話をしました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "夏の午後、おばあちゃんの家の縁側に座って、長い時間の流れについて話をしました。",
+          "parts": [
+            {
+              "text": "夏",
+              "ruby": "なつ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "午後",
+              "ruby": "ごご"
+            },
+            {
+              "text": "、おばあちゃんの",
+              "ruby": ""
+            },
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "縁側",
+              "ruby": "えんがわ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "座",
+              "ruby": "すわ"
+            },
+            {
+              "text": "って、",
+              "ruby": ""
+            },
+            {
+              "text": "長",
+              "ruby": "なが"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "時間",
+              "ruby": "じかん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "流",
+              "ruby": "なが"
+            },
+            {
+              "text": "れについて",
+              "ruby": ""
+            },
+            {
+              "text": "話",
+              "ruby": "はなし"
+            },
+            {
+              "text": "をしました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 2,
+      "english": "“I have lived in this house for sixty years,” grandmother said quietly.",
+      "source_ja": "「わたしは60年、この家に住んでいるんだよ」とおばあちゃんが静かに言いました。",
+      "display_ja": "「わたしは60年、この家に住んでいるんだよ」とおばあちゃんが静かに言いました。",
+      "corrected_translation": false,
+      "mixed": "「わたしは60年間、この家に lived しています」と祖母は静かに言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「わたしは60年間、この家に ",
+          "parts": [
+            {
+              "text": "「わたしは60",
+              "ruby": ""
+            },
+            {
+              "text": "年間",
+              "ruby": "ねんかん"
+            },
+            {
+              "text": "、この",
+              "ruby": ""
+            },
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "lived",
+          "ruby": "住んでいる"
+        },
+        {
+          "type": "ja",
+          "text": " しています」と祖母は静かに言いました。",
+          "parts": [
+            {
+              "text": "しています」と",
+              "ruby": ""
+            },
+            {
+              "text": "祖母",
+              "ruby": "そぼ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "lived",
+          "canonical_word": "lived",
+          "meaning": "住んでいる"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "lived",
+          "reading": "住んでいる",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "lived",
+          "canonical_meaning": "住んでいる"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "She pointed at the big cherry tree in the garden.",
+      "source_ja": "おばあちゃんは庭の大きな桜の木を指さしました。",
+      "display_ja": "おばあちゃんは庭の大きな桜の木を指さしました。",
+      "corrected_translation": false,
+      "mixed": "おばあちゃんは庭の大きな桜の木を指さしました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "おばあちゃんは庭の大きな桜の木を指さしました。",
+          "parts": [
+            {
+              "text": "おばあちゃんは",
+              "ruby": ""
+            },
+            {
+              "text": "庭",
+              "ruby": "にわ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "大",
+              "ruby": "おお"
+            },
+            {
+              "text": "きな",
+              "ruby": ""
+            },
+            {
+              "text": "桜",
+              "ruby": "さくら"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "木",
+              "ruby": "き"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "指",
+              "ruby": "ゆび"
+            },
+            {
+              "text": "さしました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 4,
+      "english": "“This tree has been there for thirty years,” she told us.",
+      "source_ja": "「この木は、もう30年ここにあるの」と教えてくれました。",
+      "display_ja": "「この木は、もう30年ここにあるの」と教えてくれました。",
+      "corrected_translation": false,
+      "mixed": "「この木は、もう30年ここに been しています」と教えてくれました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「この木は、もう30年ここに ",
+          "parts": [
+            {
+              "text": "「この",
+              "ruby": ""
+            },
+            {
+              "text": "木",
+              "ruby": "き"
+            },
+            {
+              "text": "は、もう30",
+              "ruby": ""
+            },
+            {
+              "text": "年",
+              "ruby": "ねん"
+            },
+            {
+              "text": "ここに",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "been",
+          "ruby": "ずっと〜である"
+        },
+        {
+          "type": "ja",
+          "text": " しています」と教えてくれました。",
+          "parts": [
+            {
+              "text": "しています」と",
+              "ruby": ""
+            },
+            {
+              "text": "教",
+              "ruby": "おし"
+            },
+            {
+              "text": "えてくれました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "been",
+          "canonical_word": "been",
+          "meaning": "ずっと〜である"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "been",
+          "reading": "ずっと〜である",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "been",
+          "canonical_meaning": "ずっと〜である"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "I talked about myself a little.",
+      "source_ja": "わたしも自分のことを少し話しました。",
+      "display_ja": "わたしも自分のことを少し話しました。",
+      "corrected_translation": false,
+      "mixed": "わたしも自分のことを少し話しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしも自分のことを少し話しました。",
+          "parts": [
+            {
+              "text": "わたしも",
+              "ruby": ""
+            },
+            {
+              "text": "自分",
+              "ruby": "じぶん"
+            },
+            {
+              "text": "のことを",
+              "ruby": ""
+            },
+            {
+              "text": "少",
+              "ruby": "すこ"
+            },
+            {
+              "text": "し",
+              "ruby": ""
+            },
+            {
+              "text": "話",
+              "ruby": "はな"
+            },
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 6,
+      "english": "“I have lived in this town since I was born.",
+      "source_ja": "「わたしはこの町で生まれてからずっと住んでるんだ。",
+      "display_ja": "「わたしはこの町で生まれてからずっと住んでるんだ。",
+      "corrected_translation": false,
+      "mixed": "「生まれてからずっと、この町に lived しています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「生まれてからずっと、この町に ",
+          "parts": [
+            {
+              "text": "「",
+              "ruby": ""
+            },
+            {
+              "text": "生",
+              "ruby": "う"
+            },
+            {
+              "text": "まれてからずっと、この",
+              "ruby": ""
+            },
+            {
+              "text": "町",
+              "ruby": "まち"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "lived",
+          "ruby": "住んでいる"
+        },
+        {
+          "type": "ja",
+          "text": " しています。",
+          "parts": [
+            {
+              "text": "しています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "lived",
+          "canonical_word": "lived",
+          "meaning": "住んでいる"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "lived",
+          "reading": "住んでいる",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "lived",
+          "canonical_meaning": "住んでいる"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "Tom has been my best friend since this spring.”",
+      "source_ja": "トムは今年の春から、わたしの親友なんだよ」",
+      "display_ja": "トムは今年の春から、わたしの親友なんだよ」",
+      "corrected_translation": false,
+      "mixed": "トムは今年の春から、親友としてずっと been しています。」",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "トムは今年の春から、親友としてずっと ",
+          "parts": [
+            {
+              "text": "トムは",
+              "ruby": ""
+            },
+            {
+              "text": "今年",
+              "ruby": "ことし"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "春",
+              "ruby": "はる"
+            },
+            {
+              "text": "から、",
+              "ruby": ""
+            },
+            {
+              "text": "親友",
+              "ruby": "しんゆう"
+            },
+            {
+              "text": "としてずっと",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "been",
+          "ruby": "ずっと〜である"
+        },
+        {
+          "type": "ja",
+          "text": " しています。」",
+          "parts": [
+            {
+              "text": "しています。」",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "been",
+          "canonical_word": "been",
+          "meaning": "ずっと〜である"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "been",
+          "reading": "ずっと〜である",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "been",
+          "canonical_meaning": "ずっと〜である"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "My sister has played the piano since she was small.",
+      "source_ja": "妹は小さい頃からずっとピアノを弾いています。",
+      "display_ja": "妹は小さい頃からずっとピアノを弾いています。",
+      "corrected_translation": false,
+      "mixed": "妹は小さい頃からずっとピアノを弾いています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "妹は小さい頃からずっとピアノを弾いています。",
+          "parts": [
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さい",
+              "ruby": ""
+            },
+            {
+              "text": "頃",
+              "ruby": "ころ"
+            },
+            {
+              "text": "からずっとピアノを",
+              "ruby": ""
+            },
+            {
+              "text": "弾",
+              "ruby": "ひ"
+            },
+            {
+              "text": "いています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 9,
+      "english": "My brother has played baseball for three years, and now he is an important member of his team.",
+      "source_ja": "兄は3年間野球を続けていて、今ではチームの大事な一員になっています。",
+      "display_ja": "兄は3年間野球を続けていて、今ではチームの大事な一員になっています。",
+      "corrected_translation": false,
+      "mixed": "兄は3年間野球を続けていて、今ではチームの大事な一員になっています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "兄は3年間野球を続けていて、今ではチームの大事な一員になっています。",
+          "parts": [
+            {
+              "text": "兄",
+              "ruby": "あに"
+            },
+            {
+              "text": "は3",
+              "ruby": ""
+            },
+            {
+              "text": "年間",
+              "ruby": "ねんかん"
+            },
+            {
+              "text": "野球",
+              "ruby": "やきゅう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "続",
+              "ruby": "つづ"
+            },
+            {
+              "text": "けていて、",
+              "ruby": ""
+            },
+            {
+              "text": "今",
+              "ruby": "いま"
+            },
+            {
+              "text": "ではチームの",
+              "ruby": ""
+            },
+            {
+              "text": "大事",
+              "ruby": "だいじ"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "一員",
+              "ruby": "いちいん"
+            },
+            {
+              "text": "になっています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    }
+  ]
+}

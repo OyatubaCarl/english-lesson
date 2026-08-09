@@ -1,0 +1,361 @@
+{
+  "project_root": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成",
+  "slug": "l3_a_rainy_afternoon_sentence_v2",
+  "title_en": "Lesson 3  A Rainy Afternoon",
+  "title_ja": "雨の午後",
+  "chart": "taco_beat/charts/m3.js",
+  "audio": "中学生編/audio/L3.mp3",
+  "duration": 59.489524,
+  "lines": [
+    {
+      "start_index": 1,
+      "end_index": 7,
+      "en_words": [
+        "Yesterday",
+        "afternoon,",
+        "the",
+        "rain",
+        "was",
+        "falling",
+        "outside."
+      ],
+      "ja": "昨日の午後、外では雨が降っていました。"
+    },
+    {
+      "start_index": 8,
+      "end_index": 14,
+      "en_words": [
+        "My",
+        "family",
+        "were",
+        "all",
+        "in",
+        "the",
+        "house."
+      ],
+      "ja": "家族はみんな家の中にいました。"
+    },
+    {
+      "start_index": 16,
+      "end_index": 23,
+      "en_words": [
+        "I",
+        "was",
+        "reading",
+        "a",
+        "book",
+        "in",
+        "my",
+        "room."
+      ],
+      "ja": "わたしは自分の部屋で本を読んでいました。"
+    },
+    {
+      "start_index": 24,
+      "end_index": 32,
+      "en_words": [
+        "The",
+        "story",
+        "was",
+        "interesting,",
+        "and",
+        "I",
+        "forgot",
+        "the",
+        "time."
+      ],
+      "ja": "物語がおもしろくて、時間を忘れてしまいました。"
+    },
+    {
+      "start_index": 33,
+      "end_index": 41,
+      "en_words": [
+        "In",
+        "the",
+        "next",
+        "room,",
+        "my",
+        "sister",
+        "was",
+        "playing",
+        "music."
+      ],
+      "ja": "隣の部屋では、妹が音楽を演奏していました。"
+    },
+    {
+      "start_index": 42,
+      "end_index": 46,
+      "en_words": [
+        "My",
+        "brother",
+        "was",
+        "watching",
+        "TV."
+      ],
+      "ja": "兄はテレビを見ていました。"
+    },
+    {
+      "start_index": 47,
+      "end_index": 53,
+      "en_words": [
+        "Pochi",
+        "was",
+        "sleeping",
+        "happily",
+        "on",
+        "a",
+        "chair."
+      ],
+      "ja": "ポチは椅子の上で気持ちよさそうに眠っていました。"
+    },
+    {
+      "start_index": 54,
+      "end_index": 61,
+      "en_words": [
+        "In",
+        "the",
+        "kitchen,",
+        "my",
+        "mother",
+        "was",
+        "cooking",
+        "dinner."
+      ],
+      "ja": "台所では、母が夕食を作っていました。"
+    },
+    {
+      "start_index": 62,
+      "end_index": 68,
+      "en_words": [
+        "My",
+        "father",
+        "was",
+        "working",
+        "in",
+        "his",
+        "study."
+      ],
+      "ja": "父は書斎で仕事をしていました。"
+    },
+    {
+      "start_index": 70,
+      "end_index": 75,
+      "en_words": [
+        "We",
+        "were",
+        "all",
+        "doing",
+        "different",
+        "things,"
+      ],
+      "ja": "みんな別々のことをしていましたが、"
+    },
+    {
+      "start_index": 76,
+      "end_index": 86,
+      "en_words": [
+        "but",
+        "we",
+        "were",
+        "having",
+        "a",
+        "quiet",
+        "afternoon",
+        "in",
+        "the",
+        "same",
+        "house."
+      ],
+      "break_after": [
+        6
+      ],
+      "ja": "同じ家で静かな午後を過ごしていました。"
+    }
+  ],
+  "shots": [
+    {
+      "image": "scenes/01_rain_falling_outside.png",
+      "start": 0.0,
+      "end": 6.335,
+      "start_center": [
+        0.46,
+        0.48
+      ],
+      "end_center": [
+        0.54,
+        0.48
+      ],
+      "start_zoom": 1.03,
+      "end_zoom": 1.16,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする"
+    },
+    {
+      "image": "scenes/02_family_all_in_house.png",
+      "start": 6.335,
+      "end": 12.352,
+      "start_center": [
+        0.56,
+        0.48
+      ],
+      "end_center": [
+        0.44,
+        0.48
+      ],
+      "start_zoom": 1.13,
+      "end_zoom": 1.04,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "smoothleft"
+    },
+    {
+      "image": "scenes/03_mio_reading_room.png",
+      "start": 12.352,
+      "end": 15.523,
+      "start_center": [
+        0.5,
+        0.43
+      ],
+      "end_center": [
+        0.5,
+        0.54
+      ],
+      "start_zoom": 1.04,
+      "end_zoom": 1.17,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "circleopen"
+    },
+    {
+      "image": "scenes/04_interesting_forgot_time.png",
+      "start": 15.523,
+      "end": 23.974,
+      "start_center": [
+        0.5,
+        0.54
+      ],
+      "end_center": [
+        0.5,
+        0.45
+      ],
+      "start_zoom": 1.15,
+      "end_zoom": 1.05,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "hblur"
+    },
+    {
+      "image": "scenes/05_saki_playing_music.png",
+      "start": 23.974,
+      "end": 28.359,
+      "start_center": [
+        0.46,
+        0.48
+      ],
+      "end_center": [
+        0.54,
+        0.48
+      ],
+      "start_zoom": 1.03,
+      "end_zoom": 1.16,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "diagtl"
+    },
+    {
+      "image": "scenes/06_brother_watching_tv.png",
+      "start": 28.359,
+      "end": 31.075,
+      "start_center": [
+        0.56,
+        0.48
+      ],
+      "end_center": [
+        0.44,
+        0.48
+      ],
+      "start_zoom": 1.13,
+      "end_zoom": 1.04,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "slideup"
+    },
+    {
+      "image": "scenes/07_pochi_sleeping_chair.png",
+      "start": 31.075,
+      "end": 36.256,
+      "start_center": [
+        0.5,
+        0.43
+      ],
+      "end_center": [
+        0.5,
+        0.54
+      ],
+      "start_zoom": 1.04,
+      "end_zoom": 1.17,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "dissolve"
+    },
+    {
+      "image": "scenes/08_mother_cooking_dinner.png",
+      "start": 36.256,
+      "end": 41.137,
+      "start_center": [
+        0.5,
+        0.54
+      ],
+      "end_center": [
+        0.5,
+        0.45
+      ],
+      "start_zoom": 1.15,
+      "end_zoom": 1.05,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "radial"
+    },
+    {
+      "image": "scenes/09_father_working_study.png",
+      "start": 41.137,
+      "end": 46.457,
+      "start_center": [
+        0.46,
+        0.48
+      ],
+      "end_center": [
+        0.54,
+        0.48
+      ],
+      "start_zoom": 1.03,
+      "end_zoom": 1.16,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "pixelize"
+    },
+    {
+      "image": "scenes/10_quiet_afternoon_same_house.png",
+      "start": 46.457,
+      "end": 59.489524,
+      "start_center": [
+        0.56,
+        0.48
+      ],
+      "end_center": [
+        0.44,
+        0.48
+      ],
+      "start_zoom": 1.13,
+      "end_zoom": 1.04,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "smoothright"
+    }
+  ],
+  "transition_duration": 0.42,
+  "sentence_image_count": 10,
+  "line_to_scene": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    9
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H134.md",
+  "audio": "高校生編/suno_ready/generated/audio/H134/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 182.881,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0083,
+  "expected_words": 240,
+  "transcribed_words": 242,
+  "matched_words": 234,
+  "coverage": 0.975,
+  "precision": 0.9669,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 239,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 16,
+      "length": 1,
+      "words": [
+        "but"
+      ]
+    },
+    {
+      "start": 65,
+      "length": 1,
+      "words": [
+        "stories"
+      ]
+    },
+    {
+      "start": 115,
+      "length": 1,
+      "words": [
+        "genes"
+      ]
+    },
+    {
+      "start": 173,
+      "length": 1,
+      "words": [
+        "parents"
+      ]
+    },
+    {
+      "start": 203,
+      "length": 1,
+      "words": [
+        "altogether"
+      ]
+    },
+    {
+      "start": 209,
+      "length": 1,
+      "words": [
+        "emma"
+      ]
+    }
+  ],
+  "replacement_count": 6,
+  "replacement_spans": [
+    {
+      "expected_start": 16,
+      "actual_start": 16,
+      "expected": [
+        "but"
+      ],
+      "actual": [
+        "with"
+      ],
+      "actual_confidence": 0.3213,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 65,
+      "actual_start": 66,
+      "expected": [
+        "stories"
+      ],
+      "actual": [
+        "story"
+      ],
+      "actual_confidence": 0.6171,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 115,
+      "actual_start": 116,
+      "expected": [
+        "genes"
+      ],
+      "actual": [
+        "jeans"
+      ],
+      "actual_confidence": 0.5068,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 173,
+      "actual_start": 174,
+      "expected": [
+        "parents"
+      ],
+      "actual": [
+        "parent's"
+      ],
+      "actual_confidence": 0.7465,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 203,
+      "actual_start": 204,
+      "expected": [
+        "altogether"
+      ],
+      "actual": [
+        "all",
+        "together"
+      ],
+      "actual_confidence": 0.6694,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 209,
+      "actual_start": 211,
+      "expected": [
+        "emma"
+      ],
+      "actual": [
+        "ella"
+      ],
+      "actual_confidence": 0.0636,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 19,
+      "actual_start": 19,
+      "expected": [],
+      "actual": [
+        "these"
+      ],
+      "actual_confidence": 0.611
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "My family is raising eight-year-old twin daughters Emma and Sophia Their resemblance is striking with their personalities These are characteristically different Emma is logical and thinks about things in an orderly way She is good at math and science, and she often devises puzzles to entertain the family Sophia, on the other hand, is sensitive and artistic She draws, sings, and reads out the story she has made up to the family Even adults can be astonished at her power of expression Genetically, identical twins share nearly the same genes Yet as they grew, each one's personality has become more and more distinct This provides an interesting reference for studies of nature versus nurture Jeans alone do not determine personality Environment, experience, and the person's own choices shape each one If even twins differ, of course every human is unique What matters in raising a child is respecting each one's personality Making Emma draw the same picture as Sophia is pointless Making Sophia solve the same puzzle as Emma is painful The parent's role is to cultivate each child's strengths But parents are not the only ones who raise excellent human beings School teachers, friends, local community And the child's own effort All together, they shape a single person Ella and Sophia are growing up today Quarreling and laughing as they grow up What kind of adults will they become As a parent, I am eagerly looking forward to it",
+  "segments": [
+    {
+      "start": 11.26,
+      "end": 17.86,
+      "text": "My family is raising eight-year-old twin daughters Emma and Sophia"
+    },
+    {
+      "start": 17.86,
+      "end": 21.74,
+      "text": "Their resemblance is striking with their personalities"
+    },
+    {
+      "start": 21.74,
+      "end": 24.22,
+      "text": "These are characteristically different"
+    },
+    {
+      "start": 24.22,
+      "end": 30.28,
+      "text": "Emma is logical and thinks about things in an orderly way"
+    },
+    {
+      "start": 30.28,
+      "end": 37.96,
+      "text": "She is good at math and science, and she often devises puzzles to entertain the family"
+    },
+    {
+      "start": 41.22,
+      "end": 46.38,
+      "text": "Sophia, on the other hand, is sensitive and artistic"
+    },
+    {
+      "start": 46.38,
+      "end": 53.0,
+      "text": "She draws, sings, and reads out the story she has made up to the family"
+    },
+    {
+      "start": 53.0,
+      "end": 59.08,
+      "text": "Even adults can be astonished at her power of expression"
+    },
+    {
+      "start": 60.8,
+      "end": 67.02,
+      "text": "Genetically, identical twins share nearly the same genes"
+    },
+    {
+      "start": 67.02,
+      "end": 73.64,
+      "text": "Yet as they grew, each one's personality has become more and more distinct"
+    },
+    {
+      "start": 73.64,
+      "end": 79.92,
+      "text": "This provides an interesting reference for studies of nature versus nurture"
+    },
+    {
+      "start": 79.92,
+      "end": 85.76,
+      "text": "Jeans alone do not determine personality"
+    },
+    {
+      "start": 87.56,
+      "end": 94.24,
+      "text": "Environment, experience, and the person's own choices shape each one"
+    },
+    {
+      "start": 94.24,
+      "end": 100.4,
+      "text": "If even twins differ, of course every human is unique"
+    },
+    {
+      "start": 100.4,
+      "end": 106.92,
+      "text": "What matters in raising a child is respecting each one's personality"
+    },
+    {
+      "start": 106.92,
+      "end": 113.62,
+      "text": "Making Emma draw the same picture as Sophia is pointless"
+    },
+    {
+      "start": 113.62,
+      "end": 120.92,
+      "text": "Making Sophia solve the same puzzle as Emma is painful"
+    },
+    {
+      "start": 121.56,
+      "end": 127.4,
+      "text": "The parent's role is to cultivate each child's strengths"
+    },
+    {
+      "start": 127.4,
+      "end": 133.92,
+      "text": "But parents are not the only ones who raise excellent human beings"
+    },
+    {
+      "start": 134.26,
+      "end": 138.66,
+      "text": "School teachers, friends, local community"
+    },
+    {
+      "start": 139.26,
+      "end": 142.2,
+      "text": "And the child's own effort"
+    },
+    {
+      "start": 142.2,
+      "end": 147.44,
+      "text": "All together, they shape a single person"
+    },
+    {
+      "start": 148.82,
+      "end": 152.76,
+      "text": "Ella and Sophia are growing up today"
+    },
+    {
+      "start": 152.76,
+      "end": 157.18,
+      "text": "Quarreling and laughing as they grow up"
+    },
+    {
+      "start": 157.18,
+      "end": 161.5,
+      "text": "What kind of adults will they become"
+    },
+    {
+      "start": 161.5,
+      "end": 169.02,
+      "text": "As a parent, I am eagerly looking forward to it"
+    }
+  ]
+}

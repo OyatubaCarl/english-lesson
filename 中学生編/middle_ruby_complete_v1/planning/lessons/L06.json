@@ -1,0 +1,844 @@
+{
+  "lesson": 6,
+  "source_config": "中学生編/mio_video_l2_l10_sentence_v2/L6_revision_v3/planning/lesson.json",
+  "title_en": "Lesson 6  Grandmother's Birthday",
+  "title_ja": "祖母の誕生日（改訂版）",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 8,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Grandmother's birthday was on Saturday, so my sister and I planned a surprise.",
+      "source_ja": "祖母の誕生日は土曜日だったので、妹とわたしはサプライズを計画しました。",
+      "display_ja": "祖母の誕生日は土曜日だったので、妹とわたしはサプライズを計画しました。",
+      "corrected_translation": false,
+      "mixed": "祖母の birthday は土曜日だったので、妹とわたしはサプライズを計画しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "祖母の ",
+          "parts": [
+            {
+              "text": "祖母",
+              "ruby": "そぼ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "birthday",
+          "ruby": "誕生日"
+        },
+        {
+          "type": "ja",
+          "text": " は土曜日だったので、妹とわたしはサプライズを計画しました。",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "土曜",
+              "ruby": "どよう"
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "だったので、",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "とわたしはサプライズを",
+              "ruby": ""
+            },
+            {
+              "text": "計画",
+              "ruby": "けいかく"
+            },
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "birthday",
+          "canonical_word": "birthday",
+          "meaning": "誕生日"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "birthday",
+          "reading": "誕生日",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "birthday",
+          "canonical_meaning": "誕生日"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "english": "Before we left home, we prepared a few special gifts for her.",
+      "source_ja": "家を出る前に、わたしたちは祖母のためにいくつか特別な贈り物を用意しました。",
+      "display_ja": "家を出る前に、わたしたちは祖母のためにいくつか特別な贈り物を用意しました。",
+      "corrected_translation": false,
+      "mixed": "家を出る前に、わたしたちは祖母のためにいくつか特別な贈り物を用意しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "家を出る前に、わたしたちは祖母のためにいくつか特別な贈り物を用意しました。",
+          "parts": [
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "出",
+              "ruby": "で"
+            },
+            {
+              "text": "る",
+              "ruby": ""
+            },
+            {
+              "text": "前",
+              "ruby": "まえ"
+            },
+            {
+              "text": "に、わたしたちは",
+              "ruby": ""
+            },
+            {
+              "text": "祖母",
+              "ruby": "そぼ"
+            },
+            {
+              "text": "のためにいくつか",
+              "ruby": ""
+            },
+            {
+              "text": "特別",
+              "ruby": "とくべつ"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "贈り物",
+              "ruby": "おくりもの"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "用意",
+              "ruby": "ようい"
+            },
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 3,
+      "english": "At her house, we gave her a bouquet from our garden.",
+      "source_ja": "祖母の家で、わたしたちは庭の花で作った花束を贈りました。",
+      "display_ja": "祖母の家で、わたしたちは庭の花で作った花束を贈りました。",
+      "corrected_translation": false,
+      "mixed": "祖母の家で、庭の花から作った bouquet を gave しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "祖母の家で、庭の花から作った ",
+          "parts": [
+            {
+              "text": "祖母",
+              "ruby": "そぼ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "で、",
+              "ruby": ""
+            },
+            {
+              "text": "庭",
+              "ruby": "にわ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "花",
+              "ruby": "はな"
+            },
+            {
+              "text": "から",
+              "ruby": ""
+            },
+            {
+              "text": "作",
+              "ruby": "つく"
+            },
+            {
+              "text": "った",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "bouquet",
+          "ruby": "花束"
+        },
+        {
+          "type": "ja",
+          "text": " を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "gave",
+          "ruby": "あげた"
+        },
+        {
+          "type": "ja",
+          "text": " しました。",
+          "parts": [
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "gave",
+          "canonical_word": "gave",
+          "meaning": "あげた"
+        },
+        {
+          "english": "bouquet",
+          "canonical_word": "bouquet",
+          "meaning": "花束"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "gave",
+          "reading": "あげた",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "gave",
+          "canonical_meaning": "あげた"
+        },
+        {
+          "english": "bouquet",
+          "reading": "花束",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "bouquet",
+          "canonical_meaning": "花束"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "My sister showed her a handmade birthday card.",
+      "source_ja": "妹は祖母に手作りの誕生日カードを見せました。",
+      "display_ja": "妹は祖母に手作りの誕生日カードを見せました。",
+      "corrected_translation": false,
+      "mixed": "妹は祖母に手作りの birthday card を showed しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "妹は祖母に手作りの ",
+          "parts": [
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "祖母",
+              "ruby": "そぼ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "手作",
+              "ruby": "てづく"
+            },
+            {
+              "text": "りの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "birthday ",
+          "ruby": "誕生日"
+        },
+        {
+          "type": "en",
+          "text": "card",
+          "ruby": "カード"
+        },
+        {
+          "type": "ja",
+          "text": " を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "showed",
+          "ruby": "見せました"
+        },
+        {
+          "type": "ja",
+          "text": " しました",
+          "parts": [
+            {
+              "text": "しました",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "showed",
+          "canonical_word": "showed",
+          "meaning": "見せた"
+        },
+        {
+          "english": "birthday",
+          "canonical_word": "birthday",
+          "meaning": "誕生日"
+        },
+        {
+          "english": "card",
+          "canonical_word": "card",
+          "meaning": "カード"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "birthday",
+          "reading": "誕生日",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "birthday",
+          "canonical_meaning": "誕生日"
+        },
+        {
+          "english": "card",
+          "reading": "カード",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "card",
+          "canonical_meaning": "カード"
+        },
+        {
+          "english": "showed",
+          "reading": "見せました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "showed",
+          "canonical_meaning": "見せた"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "Then she told her a funny story from school, and we all laughed together.",
+      "source_ja": "それから妹が学校での面白い話をすると、みんなで笑いました。",
+      "display_ja": "それから妹が学校での面白い話をすると、みんなで笑いました。",
+      "corrected_translation": false,
+      "mixed": "それから妹が学校での story を told して、みんなで笑いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "それから妹が学校での ",
+          "parts": [
+            {
+              "text": "それから",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "学校",
+              "ruby": "がっこう"
+            },
+            {
+              "text": "での",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "story",
+          "ruby": "話"
+        },
+        {
+          "type": "ja",
+          "text": " を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "told",
+          "ruby": "話した"
+        },
+        {
+          "type": "ja",
+          "text": " して、みんなで笑いました。",
+          "parts": [
+            {
+              "text": "して、みんなで",
+              "ruby": ""
+            },
+            {
+              "text": "笑",
+              "ruby": "わら"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "told",
+          "canonical_word": "told",
+          "meaning": "話した"
+        },
+        {
+          "english": "story",
+          "canonical_word": "story",
+          "meaning": "話"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "told",
+          "reading": "話した",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "told",
+          "canonical_meaning": "話した"
+        },
+        {
+          "english": "story",
+          "reading": "話",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "story",
+          "canonical_meaning": "話"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "I bought her a new gardening book.",
+      "source_ja": "わたしは祖母に新しい園芸の本を買いました。",
+      "display_ja": "わたしは祖母に新しい園芸の本を買いました。",
+      "corrected_translation": false,
+      "mixed": "わたしは祖母に新しい園芸の本を bought しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしは祖母に新しい園芸の本を ",
+          "parts": [
+            {
+              "text": "わたしは",
+              "ruby": ""
+            },
+            {
+              "text": "祖母",
+              "ruby": "そぼ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "新",
+              "ruby": "あたら"
+            },
+            {
+              "text": "しい",
+              "ruby": ""
+            },
+            {
+              "text": "園芸",
+              "ruby": "えんげい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "bought",
+          "ruby": "買いました"
+        },
+        {
+          "type": "ja",
+          "text": " しました",
+          "parts": [
+            {
+              "text": "しました",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "bought",
+          "canonical_word": "bought",
+          "meaning": "買った"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "bought",
+          "reading": "買いました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "bought",
+          "canonical_meaning": "買った"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "Grandmother gave us a warm smile and said, “Thank you both.”",
+      "source_ja": "祖母はわたしたちに温かな笑顔を見せ、「二人とも、ありがとう」と言いました。",
+      "display_ja": "祖母はわたしたちに温かな笑顔を見せ、「二人とも、ありがとう」と言いました。",
+      "corrected_translation": false,
+      "mixed": "祖母はわたしたちに温かな笑顔を gave し、「二人とも、Thank」と said しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "祖母はわたしたちに温かな笑顔を ",
+          "parts": [
+            {
+              "text": "祖母",
+              "ruby": "そぼ"
+            },
+            {
+              "text": "はわたしたちに",
+              "ruby": ""
+            },
+            {
+              "text": "温",
+              "ruby": "あたた"
+            },
+            {
+              "text": "かな",
+              "ruby": ""
+            },
+            {
+              "text": "笑顔",
+              "ruby": "えがお"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "gave",
+          "ruby": "あげた"
+        },
+        {
+          "type": "ja",
+          "text": " し、「二人とも、",
+          "parts": [
+            {
+              "text": "し、「",
+              "ruby": ""
+            },
+            {
+              "text": "二人",
+              "ruby": "ふたり"
+            },
+            {
+              "text": "とも、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "Thank",
+          "ruby": "感謝する"
+        },
+        {
+          "type": "ja",
+          "text": "」と ",
+          "parts": [
+            {
+              "text": "」と",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "said",
+          "ruby": "言った"
+        },
+        {
+          "type": "ja",
+          "text": " しました。",
+          "parts": [
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "gave",
+          "canonical_word": "gave",
+          "meaning": "あげた"
+        },
+        {
+          "english": "said",
+          "canonical_word": "said",
+          "meaning": "言った"
+        },
+        {
+          "english": "Thank",
+          "canonical_word": "thank",
+          "meaning": "感謝する"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "gave",
+          "reading": "あげた",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "gave",
+          "canonical_meaning": "あげた"
+        },
+        {
+          "english": "said",
+          "reading": "言った",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "said",
+          "canonical_meaning": "言った"
+        },
+        {
+          "english": "Thank",
+          "reading": "感謝する",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "thank",
+          "canonical_meaning": "感謝する"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "We gave her a birthday to remember.",
+      "source_ja": "わたしたちは祖母に、思い出に残る誕生日を贈りました。",
+      "display_ja": "わたしたちは祖母に、思い出に残る誕生日を贈りました。",
+      "corrected_translation": false,
+      "mixed": "わたしたちは祖母に、思い出に残る birthday を gave しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしたちは祖母に、思い出に残る ",
+          "parts": [
+            {
+              "text": "わたしたちは",
+              "ruby": ""
+            },
+            {
+              "text": "祖母",
+              "ruby": "そぼ"
+            },
+            {
+              "text": "に、",
+              "ruby": ""
+            },
+            {
+              "text": "思い出",
+              "ruby": "おもいで"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "残",
+              "ruby": "のこ"
+            },
+            {
+              "text": "る",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "birthday",
+          "ruby": "誕生日"
+        },
+        {
+          "type": "ja",
+          "text": " を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "gave",
+          "ruby": "あげた"
+        },
+        {
+          "type": "ja",
+          "text": " しました。",
+          "parts": [
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "gave",
+          "canonical_word": "gave",
+          "meaning": "あげた"
+        },
+        {
+          "english": "birthday",
+          "canonical_word": "birthday",
+          "meaning": "誕生日"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "gave",
+          "reading": "あげた",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "gave",
+          "canonical_meaning": "あげた"
+        },
+        {
+          "english": "birthday",
+          "reading": "誕生日",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "birthday",
+          "canonical_meaning": "誕生日"
+        }
+      ]
+    }
+  ]
+}

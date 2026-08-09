@@ -1,0 +1,902 @@
+{
+  "lesson": "H007",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h007_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H007/candidate2-full.mp3",
+  "source_audio_sha256": "15cb22b4cbf3e06f5be8547e267620cb18672ee7d04129219bbb1c38f82a64a3",
+  "bpm": 100.28,
+  "exact_word_match": true,
+  "word_count": 150,
+  "line_count": 17,
+  "first_word_start": 0.78,
+  "last_word_end": 89.019,
+  "lines": [
+    {
+      "line": 1,
+      "english": "On Monday morning, I get up at half past six.",
+      "word_timings": [
+        {
+          "word": "On",
+          "start": 0.78,
+          "end": 1.0
+        },
+        {
+          "word": "Monday",
+          "start": 1.0,
+          "end": 1.6
+        },
+        {
+          "word": "morning,",
+          "start": 1.6,
+          "end": 2.369
+        },
+        {
+          "word": "I",
+          "start": 2.369,
+          "end": 2.521
+        },
+        {
+          "word": "get",
+          "start": 2.521,
+          "end": 2.761
+        },
+        {
+          "word": "up",
+          "start": 2.761,
+          "end": 3.081
+        },
+        {
+          "word": "at",
+          "start": 3.081,
+          "end": 3.381
+        },
+        {
+          "word": "half",
+          "start": 3.381,
+          "end": 3.681
+        },
+        {
+          "word": "past",
+          "start": 3.681,
+          "end": 3.981
+        },
+        {
+          "word": "six.",
+          "start": 3.981,
+          "end": 4.441
+        }
+      ],
+      "start": 0.78,
+      "end": 4.441
+    },
+    {
+      "line": 2,
+      "english": "This is my habit.",
+      "word_timings": [
+        {
+          "word": "This",
+          "start": 4.441,
+          "end": 4.761
+        },
+        {
+          "word": "is",
+          "start": 4.761,
+          "end": 4.918
+        },
+        {
+          "word": "my",
+          "start": 4.918,
+          "end": 5.161
+        },
+        {
+          "word": "habit.",
+          "start": 5.161,
+          "end": 5.821
+        }
+      ],
+      "start": 4.441,
+      "end": 5.821
+    },
+    {
+      "line": 3,
+      "english": "In the kitchen I make coffee and open the newspaper.",
+      "word_timings": [
+        {
+          "word": "In",
+          "start": 6.121,
+          "end": 6.246
+        },
+        {
+          "word": "the",
+          "start": 6.246,
+          "end": 6.361
+        },
+        {
+          "word": "kitchen",
+          "start": 6.361,
+          "end": 6.998
+        },
+        {
+          "word": "I",
+          "start": 6.998,
+          "end": 7.262
+        },
+        {
+          "word": "make",
+          "start": 7.262,
+          "end": 7.542
+        },
+        {
+          "word": "coffee",
+          "start": 7.542,
+          "end": 8.502
+        },
+        {
+          "word": "and",
+          "start": 8.502,
+          "end": 8.802
+        },
+        {
+          "word": "open",
+          "start": 8.802,
+          "end": 9.187
+        },
+        {
+          "word": "the",
+          "start": 9.187,
+          "end": 9.362
+        },
+        {
+          "word": "newspaper.",
+          "start": 9.362,
+          "end": 10.242
+        }
+      ],
+      "start": 6.121,
+      "end": 10.242
+    },
+    {
+      "line": 4,
+      "english": "That is my daily rhythm.",
+      "word_timings": [
+        {
+          "word": "That",
+          "start": 10.542,
+          "end": 11.168
+        },
+        {
+          "word": "is",
+          "start": 11.168,
+          "end": 11.41
+        },
+        {
+          "word": "my",
+          "start": 11.41,
+          "end": 11.743
+        },
+        {
+          "word": "daily",
+          "start": 11.743,
+          "end": 12.643
+        },
+        {
+          "word": "rhythm.",
+          "start": 12.643,
+          "end": 14.143
+        }
+      ],
+      "start": 10.542,
+      "end": 14.143
+    },
+    {
+      "line": 5,
+      "english": "At the station I take the train and commute to my office.",
+      "word_timings": [
+        {
+          "word": "At",
+          "start": 14.463,
+          "end": 14.597
+        },
+        {
+          "word": "the",
+          "start": 14.597,
+          "end": 14.683
+        },
+        {
+          "word": "station",
+          "start": 14.683,
+          "end": 15.203
+        },
+        {
+          "word": "I",
+          "start": 15.203,
+          "end": 15.303
+        },
+        {
+          "word": "take",
+          "start": 15.303,
+          "end": 15.628
+        },
+        {
+          "word": "the",
+          "start": 15.628,
+          "end": 15.743
+        },
+        {
+          "word": "train",
+          "start": 15.743,
+          "end": 16.124
+        },
+        {
+          "word": "and",
+          "start": 16.124,
+          "end": 16.224
+        },
+        {
+          "word": "commute",
+          "start": 16.224,
+          "end": 16.693
+        },
+        {
+          "word": "to",
+          "start": 16.693,
+          "end": 16.86
+        },
+        {
+          "word": "my",
+          "start": 16.86,
+          "end": 17.224
+        },
+        {
+          "word": "office.",
+          "start": 17.224,
+          "end": 17.914
+        }
+      ],
+      "start": 14.463,
+      "end": 17.914
+    },
+    {
+      "line": 6,
+      "english": "The journey is ordinary.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 18.214,
+          "end": 18.324
+        },
+        {
+          "word": "journey",
+          "start": 18.324,
+          "end": 18.736
+        },
+        {
+          "word": "is",
+          "start": 18.736,
+          "end": 19.024
+        },
+        {
+          "word": "ordinary.",
+          "start": 19.024,
+          "end": 20.524
+        }
+      ],
+      "start": 18.214,
+      "end": 20.524
+    },
+    {
+      "line": 7,
+      "english": "In a crowded car, many passengers stand silently.",
+      "word_timings": [
+        {
+          "word": "In",
+          "start": 21.665,
+          "end": 21.772
+        },
+        {
+          "word": "a",
+          "start": 21.772,
+          "end": 21.885
+        },
+        {
+          "word": "crowded",
+          "start": 21.885,
+          "end": 22.485
+        },
+        {
+          "word": "car,",
+          "start": 22.485,
+          "end": 23.105
+        },
+        {
+          "word": "many",
+          "start": 23.105,
+          "end": 23.545
+        },
+        {
+          "word": "passengers",
+          "start": 23.545,
+          "end": 24.405
+        },
+        {
+          "word": "stand",
+          "start": 24.405,
+          "end": 24.865
+        },
+        {
+          "word": "silently.",
+          "start": 24.865,
+          "end": 26.365
+        }
+      ],
+      "start": 21.665,
+      "end": 26.365
+    },
+    {
+      "line": 8,
+      "english": "I work for a small local company.",
+      "word_timings": [
+        {
+          "word": "I",
+          "start": 27.166,
+          "end": 27.306
+        },
+        {
+          "word": "work",
+          "start": 27.306,
+          "end": 27.726
+        },
+        {
+          "word": "for",
+          "start": 27.726,
+          "end": 28.121
+        },
+        {
+          "word": "a",
+          "start": 28.121,
+          "end": 28.346
+        },
+        {
+          "word": "small",
+          "start": 28.346,
+          "end": 28.926
+        },
+        {
+          "word": "local",
+          "start": 28.926,
+          "end": 29.627
+        },
+        {
+          "word": "company.",
+          "start": 29.627,
+          "end": 30.735
+        }
+      ],
+      "start": 27.166,
+      "end": 30.735
+    },
+    {
+      "line": 9,
+      "english": "My coworkers are kind, and a colleague often laughs loudly.",
+      "word_timings": [
+        {
+          "word": "My",
+          "start": 31.035,
+          "end": 31.167
+        },
+        {
+          "word": "coworkers",
+          "start": 31.167,
+          "end": 31.806
+        },
+        {
+          "word": "are",
+          "start": 31.806,
+          "end": 32.047
+        },
+        {
+          "word": "kind,",
+          "start": 32.047,
+          "end": 32.727
+        },
+        {
+          "word": "and",
+          "start": 32.727,
+          "end": 32.857
+        },
+        {
+          "word": "a",
+          "start": 32.857,
+          "end": 33.087
+        },
+        {
+          "word": "colleague",
+          "start": 33.087,
+          "end": 33.867
+        },
+        {
+          "word": "often",
+          "start": 33.867,
+          "end": 34.328
+        },
+        {
+          "word": "laughs",
+          "start": 34.328,
+          "end": 35.048
+        },
+        {
+          "word": "loudly.",
+          "start": 35.048,
+          "end": 36.248
+        }
+      ],
+      "start": 31.035,
+      "end": 36.248
+    },
+    {
+      "line": 10,
+      "english": "Each person carries out their duties.",
+      "word_timings": [
+        {
+          "word": "Each",
+          "start": 36.548,
+          "end": 36.848
+        },
+        {
+          "word": "person",
+          "start": 36.848,
+          "end": 37.428
+        },
+        {
+          "word": "carries",
+          "start": 37.428,
+          "end": 38.168
+        },
+        {
+          "word": "out",
+          "start": 38.168,
+          "end": 38.649
+        },
+        {
+          "word": "their",
+          "start": 38.649,
+          "end": 38.969
+        },
+        {
+          "word": "duties.",
+          "start": 38.969,
+          "end": 40.469
+        }
+      ],
+      "start": 36.548,
+      "end": 40.469
+    },
+    {
+      "line": 11,
+      "english": "At noon we gather for lunch together.",
+      "word_timings": [
+        {
+          "word": "At",
+          "start": 40.849,
+          "end": 41.069
+        },
+        {
+          "word": "noon",
+          "start": 41.069,
+          "end": 41.369
+        },
+        {
+          "word": "we",
+          "start": 41.369,
+          "end": 41.649
+        },
+        {
+          "word": "gather",
+          "start": 41.649,
+          "end": 42.529
+        },
+        {
+          "word": "for",
+          "start": 42.529,
+          "end": 42.869
+        },
+        {
+          "word": "lunch",
+          "start": 42.869,
+          "end": 43.43
+        },
+        {
+          "word": "together.",
+          "start": 43.43,
+          "end": 44.93
+        }
+      ],
+      "start": 40.849,
+      "end": 44.93
+    },
+    {
+      "line": 12,
+      "english": "In the afternoon, I finish one task after another.",
+      "word_timings": [
+        {
+          "word": "In",
+          "start": 45.61,
+          "end": 45.732
+        },
+        {
+          "word": "the",
+          "start": 45.732,
+          "end": 45.93
+        },
+        {
+          "word": "afternoon,",
+          "start": 45.93,
+          "end": 46.78
+        },
+        {
+          "word": "I",
+          "start": 46.78,
+          "end": 47.01
+        },
+        {
+          "word": "finish",
+          "start": 47.01,
+          "end": 47.591
+        },
+        {
+          "word": "one",
+          "start": 47.591,
+          "end": 47.911
+        },
+        {
+          "word": "task",
+          "start": 47.911,
+          "end": 48.671
+        },
+        {
+          "word": "after",
+          "start": 48.671,
+          "end": 49.491
+        },
+        {
+          "word": "another.",
+          "start": 49.491,
+          "end": 50.643
+        }
+      ],
+      "start": 45.61,
+      "end": 50.643
+    },
+    {
+      "line": 13,
+      "english": "The phone rings, and a new request appears.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 50.943,
+          "end": 51.191
+        },
+        {
+          "word": "phone",
+          "start": 51.191,
+          "end": 51.791
+        },
+        {
+          "word": "rings,",
+          "start": 51.791,
+          "end": 52.192
+        },
+        {
+          "word": "and",
+          "start": 52.192,
+          "end": 52.294
+        },
+        {
+          "word": "a",
+          "start": 52.294,
+          "end": 52.432
+        },
+        {
+          "word": "new",
+          "start": 52.432,
+          "end": 52.712
+        },
+        {
+          "word": "request",
+          "start": 52.712,
+          "end": 53.212
+        },
+        {
+          "word": "appears.",
+          "start": 53.212,
+          "end": 54.712
+        }
+      ],
+      "start": 50.943,
+      "end": 54.712
+    },
+    {
+      "line": 14,
+      "english": "Work proceeds in a steady way.",
+      "word_timings": [
+        {
+          "word": "Work",
+          "start": 55.952,
+          "end": 56.432
+        },
+        {
+          "word": "proceeds",
+          "start": 56.432,
+          "end": 57.593
+        },
+        {
+          "word": "in",
+          "start": 57.593,
+          "end": 57.821
+        },
+        {
+          "word": "a",
+          "start": 57.821,
+          "end": 57.993
+        },
+        {
+          "word": "steady",
+          "start": 57.993,
+          "end": 58.693
+        },
+        {
+          "word": "way.",
+          "start": 58.693,
+          "end": 59.633
+        }
+      ],
+      "start": 55.952,
+      "end": 59.633
+    },
+    {
+      "line": 15,
+      "english": "In the evening the same common faces return to the station, and people rush home.",
+      "word_timings": [
+        {
+          "word": "In",
+          "start": 59.933,
+          "end": 60.065
+        },
+        {
+          "word": "the",
+          "start": 60.065,
+          "end": 60.293
+        },
+        {
+          "word": "evening",
+          "start": 60.293,
+          "end": 60.819
+        },
+        {
+          "word": "the",
+          "start": 60.819,
+          "end": 61.073
+        },
+        {
+          "word": "same",
+          "start": 61.073,
+          "end": 61.394
+        },
+        {
+          "word": "common",
+          "start": 61.394,
+          "end": 61.974
+        },
+        {
+          "word": "faces",
+          "start": 61.974,
+          "end": 62.794
+        },
+        {
+          "word": "return",
+          "start": 62.794,
+          "end": 63.816
+        },
+        {
+          "word": "to",
+          "start": 63.816,
+          "end": 63.978
+        },
+        {
+          "word": "the",
+          "start": 63.978,
+          "end": 64.154
+        },
+        {
+          "word": "station,",
+          "start": 64.154,
+          "end": 65.334
+        },
+        {
+          "word": "and",
+          "start": 65.334,
+          "end": 65.554
+        },
+        {
+          "word": "people",
+          "start": 65.554,
+          "end": 67.075
+        },
+        {
+          "word": "rush",
+          "start": 67.075,
+          "end": 67.655
+        },
+        {
+          "word": "home.",
+          "start": 67.655,
+          "end": 69.155
+        }
+      ],
+      "start": 59.933,
+      "end": 69.155
+    },
+    {
+      "line": 16,
+      "english": "Through the train window I look beyond the tall buildings at the fading sky.",
+      "word_timings": [
+        {
+          "word": "Through",
+          "start": 69.455,
+          "end": 69.82
+        },
+        {
+          "word": "the",
+          "start": 69.82,
+          "end": 70.015
+        },
+        {
+          "word": "train",
+          "start": 70.015,
+          "end": 70.956
+        },
+        {
+          "word": "window",
+          "start": 70.956,
+          "end": 72.076
+        },
+        {
+          "word": "I",
+          "start": 72.076,
+          "end": 72.196
+        },
+        {
+          "word": "look",
+          "start": 72.196,
+          "end": 72.476
+        },
+        {
+          "word": "beyond",
+          "start": 72.476,
+          "end": 73.066
+        },
+        {
+          "word": "the",
+          "start": 73.066,
+          "end": 73.296
+        },
+        {
+          "word": "tall",
+          "start": 73.296,
+          "end": 73.796
+        },
+        {
+          "word": "buildings",
+          "start": 73.796,
+          "end": 74.656
+        },
+        {
+          "word": "at",
+          "start": 74.656,
+          "end": 74.889
+        },
+        {
+          "word": "the",
+          "start": 74.889,
+          "end": 75.137
+        },
+        {
+          "word": "fading",
+          "start": 75.137,
+          "end": 77.157
+        },
+        {
+          "word": "sky.",
+          "start": 77.157,
+          "end": 78.657
+        }
+      ],
+      "start": 69.455,
+      "end": 78.657
+    },
+    {
+      "line": 17,
+      "english": "Within these quiet days, a small sense of purpose lives, and I believe in it.",
+      "word_timings": [
+        {
+          "word": "Within",
+          "start": 79.838,
+          "end": 80.278
+        },
+        {
+          "word": "these",
+          "start": 80.278,
+          "end": 80.558
+        },
+        {
+          "word": "quiet",
+          "start": 80.558,
+          "end": 81.058
+        },
+        {
+          "word": "days,",
+          "start": 81.058,
+          "end": 81.964
+        },
+        {
+          "word": "a",
+          "start": 81.964,
+          "end": 82.044
+        },
+        {
+          "word": "small",
+          "start": 82.038,
+          "end": 82.378
+        },
+        {
+          "word": "sense",
+          "start": 82.378,
+          "end": 82.758
+        },
+        {
+          "word": "of",
+          "start": 82.758,
+          "end": 82.978
+        },
+        {
+          "word": "purpose",
+          "start": 82.978,
+          "end": 83.598
+        },
+        {
+          "word": "lives,",
+          "start": 83.598,
+          "end": 84.979
+        },
+        {
+          "word": "and",
+          "start": 84.979,
+          "end": 85.679
+        },
+        {
+          "word": "I",
+          "start": 85.679,
+          "end": 86.279
+        },
+        {
+          "word": "believe",
+          "start": 86.279,
+          "end": 87.319
+        },
+        {
+          "word": "in",
+          "start": 87.319,
+          "end": 87.519
+        },
+        {
+          "word": "it.",
+          "start": 87.519,
+          "end": 89.019
+        }
+      ],
+      "start": 79.838,
+      "end": 89.019
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

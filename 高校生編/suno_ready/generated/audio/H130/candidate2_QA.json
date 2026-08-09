@@ -1,0 +1,419 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H130.md",
+  "audio": "高校生編/suno_ready/generated/audio/H130/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 223.52,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 284,
+  "transcribed_words": 284,
+  "matched_words": 274,
+  "coverage": 0.9648,
+  "precision": 0.9648,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 283,
+  "longest_missing_run": 3,
+  "largest_missing_runs": [
+    {
+      "start": 214,
+      "length": 3,
+      "words": [
+        "an",
+        "age",
+        "has"
+      ]
+    },
+    {
+      "start": 166,
+      "length": 2,
+      "words": [
+        "their",
+        "youth"
+      ]
+    },
+    {
+      "start": 58,
+      "length": 1,
+      "words": [
+        "across"
+      ]
+    },
+    {
+      "start": 61,
+      "length": 1,
+      "words": [
+        "borders"
+      ]
+    },
+    {
+      "start": 147,
+      "length": 1,
+      "words": [
+        "patients"
+      ]
+    },
+    {
+      "start": 184,
+      "length": 1,
+      "words": [
+        "an"
+      ]
+    },
+    {
+      "start": 188,
+      "length": 1,
+      "words": [
+        "and"
+      ]
+    }
+  ],
+  "replacement_count": 7,
+  "replacement_spans": [
+    {
+      "expected_start": 58,
+      "actual_start": 58,
+      "expected": [
+        "across"
+      ],
+      "actual": [
+        "a",
+        "cross"
+      ],
+      "actual_confidence": 0.5091,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 61,
+      "actual_start": 62,
+      "expected": [
+        "borders"
+      ],
+      "actual": [
+        "border's"
+      ],
+      "actual_confidence": 0.4921,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 147,
+      "actual_start": 148,
+      "expected": [
+        "patients"
+      ],
+      "actual": [
+        "patience"
+      ],
+      "actual_confidence": 0.84,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 166,
+      "actual_start": 167,
+      "expected": [
+        "their",
+        "youth"
+      ],
+      "actual": [
+        "there"
+      ],
+      "actual_confidence": 0.249,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 184,
+      "actual_start": 184,
+      "expected": [
+        "an"
+      ],
+      "actual": [
+        "and"
+      ],
+      "actual_confidence": 0.8716,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 188,
+      "actual_start": 188,
+      "expected": [
+        "and"
+      ],
+      "actual": [
+        "an"
+      ],
+      "actual_confidence": 0.6047,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 214,
+      "actual_start": 214,
+      "expected": [
+        "an",
+        "age",
+        "has"
+      ],
+      "actual": [
+        "and",
+        "ages"
+      ],
+      "actual_confidence": 0.6077,
+      "substitution_words": 2,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 284,
+      "actual_start": 283,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.2319
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "Across time and space, music has always been with humanity In the age when cave paintings were drawn, people were already playing instruments Flutes made of bone, drums with stretched skins Though primitive, it was certainly music Music has a mysterious power Even between people who do not share a language Melody and rhythm reach the heart directly A cross-dialect and border's music, like a universal language, connects people. Ancient Greek philosophers regarded music as a branch of mathematics. They thought the proportion and harmony of sound reflected the order of the universe. It may sound like a fancy theory, but today's science, too, continues to describe the laws of music. On the other hand, modern neuroscience has shown that music stimulates multiple regions of the brain simultaneously. Hearing, movement, memory, emotion Few activities activate the brain As comprehensively as music Music therapy is employed Even with patience With dementia And depression Even those who have lost their words When they hear a song familiar from there Their expressions may return Music education should be highlighted In the growth of children Through learning and instrument Concentration Cooperation An expression are nurtured But in recent years School music education has been shrinking Budget restrictions is the main reason With the development of digital technology And ages come when anyone can create music And share it with the world This is wonderful But at the same time Music has also come to be treated As mere consumer goods Music exists not for efficiency But for the nourishment of the heart Within our busy days Let us keep time to listen Attentively to music Even one song a day That is what keeps us human you",
+  "segments": [
+    {
+      "start": 11.84,
+      "end": 18.54,
+      "text": "Across time and space, music has always been with humanity"
+    },
+    {
+      "start": 19.94,
+      "end": 27.18,
+      "text": "In the age when cave paintings were drawn, people were already playing instruments"
+    },
+    {
+      "start": 28.42,
+      "end": 32.48,
+      "text": "Flutes made of bone, drums with stretched skins"
+    },
+    {
+      "start": 32.48,
+      "end": 37.28,
+      "text": "Though primitive, it was certainly music"
+    },
+    {
+      "start": 38.34,
+      "end": 44.34,
+      "text": "Music has a mysterious power"
+    },
+    {
+      "start": 48.42,
+      "end": 53.04,
+      "text": "Even between people who do not share a language"
+    },
+    {
+      "start": 53.04,
+      "end": 56.32,
+      "text": "Melody and rhythm reach the heart directly"
+    },
+    {
+      "start": 56.32,
+      "end": 64.84,
+      "text": "A cross-dialect and border's music, like a universal language, connects people."
+    },
+    {
+      "start": 66.16,
+      "end": 73.72,
+      "text": "Ancient Greek philosophers regarded music as a branch of mathematics."
+    },
+    {
+      "start": 75.34,
+      "end": 82.18,
+      "text": "They thought the proportion and harmony of sound reflected the order of the universe."
+    },
+    {
+      "start": 82.18,
+      "end": 94.78,
+      "text": "It may sound like a fancy theory, but today's science, too, continues to describe the laws of music."
+    },
+    {
+      "start": 96.94,
+      "end": 106.5,
+      "text": "On the other hand, modern neuroscience has shown that music stimulates multiple regions of the brain simultaneously."
+    },
+    {
+      "start": 106.5,
+      "end": 110.22,
+      "text": "Hearing, movement, memory, emotion"
+    },
+    {
+      "start": 110.22,
+      "end": 112.78,
+      "text": "Few activities activate the brain"
+    },
+    {
+      "start": 112.78,
+      "end": 116.2,
+      "text": "As comprehensively as music"
+    },
+    {
+      "start": 116.2,
+      "end": 119.52,
+      "text": "Music therapy is employed"
+    },
+    {
+      "start": 120.5,
+      "end": 121.96,
+      "text": "Even with patience"
+    },
+    {
+      "start": 122.5,
+      "end": 124.06,
+      "text": "With dementia"
+    },
+    {
+      "start": 124.06,
+      "end": 126.38,
+      "text": "And depression"
+    },
+    {
+      "start": 128.54,
+      "end": 132.32,
+      "text": "Even those who have lost their words"
+    },
+    {
+      "start": 132.32,
+      "end": 136.14,
+      "text": "When they hear a song familiar from there"
+    },
+    {
+      "start": 136.14,
+      "end": 139.74,
+      "text": "Their expressions may return"
+    },
+    {
+      "start": 139.74,
+      "end": 144.08,
+      "text": "Music education should be highlighted"
+    },
+    {
+      "start": 144.08,
+      "end": 146.04,
+      "text": "In the growth of children"
+    },
+    {
+      "start": 147.14,
+      "end": 148.7,
+      "text": "Through learning and instrument"
+    },
+    {
+      "start": 148.7,
+      "end": 150.58,
+      "text": "Concentration"
+    },
+    {
+      "start": 151.14,
+      "end": 152.64,
+      "text": "Cooperation"
+    },
+    {
+      "start": 153.14,
+      "end": 156.52,
+      "text": "An expression are nurtured"
+    },
+    {
+      "start": 158.14,
+      "end": 159.88,
+      "text": "But in recent years"
+    },
+    {
+      "start": 159.88,
+      "end": 163.28,
+      "text": "School music education has been shrinking"
+    },
+    {
+      "start": 163.28,
+      "end": 168.98,
+      "text": "Budget restrictions is the main reason"
+    },
+    {
+      "start": 168.98,
+      "end": 172.0,
+      "text": "With the development of digital technology"
+    },
+    {
+      "start": 172.0,
+      "end": 176.44,
+      "text": "And ages come when anyone can create music"
+    },
+    {
+      "start": 177.28,
+      "end": 179.86,
+      "text": "And share it with the world"
+    },
+    {
+      "start": 181.28,
+      "end": 182.36,
+      "text": "This is wonderful"
+    },
+    {
+      "start": 184.28,
+      "end": 185.8,
+      "text": "But at the same time"
+    },
+    {
+      "start": 185.8,
+      "end": 189.38,
+      "text": "Music has also come to be treated"
+    },
+    {
+      "start": 189.38,
+      "end": 193.24,
+      "text": "As mere consumer goods"
+    },
+    {
+      "start": 193.24,
+      "end": 196.46,
+      "text": "Music exists not for efficiency"
+    },
+    {
+      "start": 196.46,
+      "end": 200.1,
+      "text": "But for the nourishment of the heart"
+    },
+    {
+      "start": 200.1,
+      "end": 202.56,
+      "text": "Within our busy days"
+    },
+    {
+      "start": 202.56,
+      "end": 205.86,
+      "text": "Let us keep time to listen"
+    },
+    {
+      "start": 205.86,
+      "end": 208.6,
+      "text": "Attentively to music"
+    },
+    {
+      "start": 208.6,
+      "end": 212.22,
+      "text": "Even one song a day"
+    },
+    {
+      "start": 212.22,
+      "end": 215.58,
+      "text": "That is what keeps us human"
+    },
+    {
+      "start": 222.1,
+      "end": 223.5,
+      "text": "you"
+    }
+  ]
+}

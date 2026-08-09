@@ -1,0 +1,296 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H066.md",
+  "audio": "高校生編/suno_ready/generated/audio/H066/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 181.84,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0125,
+  "expected_words": 240,
+  "transcribed_words": 243,
+  "matched_words": 234,
+  "coverage": 0.975,
+  "precision": 0.963,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 239,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 133,
+      "length": 2,
+      "words": [
+        "are",
+        "called"
+      ]
+    },
+    {
+      "start": 49,
+      "length": 1,
+      "words": [
+        "taken"
+      ]
+    },
+    {
+      "start": 58,
+      "length": 1,
+      "words": [
+        "consuls"
+      ]
+    },
+    {
+      "start": 149,
+      "length": 1,
+      "words": [
+        "under"
+      ]
+    },
+    {
+      "start": 161,
+      "length": 1,
+      "words": [
+        "baths"
+      ]
+    }
+  ],
+  "replacement_count": 5,
+  "replacement_spans": [
+    {
+      "expected_start": 49,
+      "actual_start": 49,
+      "expected": [
+        "taken"
+      ],
+      "actual": [
+        "taking"
+      ],
+      "actual_confidence": 0.7167,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 58,
+      "actual_start": 58,
+      "expected": [
+        "consuls"
+      ],
+      "actual": [
+        "consoles"
+      ],
+      "actual_confidence": 0.2468,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 133,
+      "actual_start": 135,
+      "expected": [
+        "are",
+        "called"
+      ],
+      "actual": [
+        "our",
+        "call"
+      ],
+      "actual_confidence": 0.6447,
+      "substitution_words": 2,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 149,
+      "actual_start": 151,
+      "expected": [
+        "under"
+      ],
+      "actual": [
+        "and",
+        "a"
+      ],
+      "actual_confidence": 0.2458,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 161,
+      "actual_start": 164,
+      "expected": [
+        "baths"
+      ],
+      "actual": [
+        "bias"
+      ],
+      "actual_confidence": 0.2224,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 74,
+      "actual_start": 74,
+      "expected": [],
+      "actual": [
+        "he",
+        "conquered"
+      ],
+      "actual_confidence": 0.793
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "Ancient Rome is said to have been founded in 73 BC. For its first few centuries it was a kingdom, and then a republic centered on a small city on the Mediterranean by the second century BC Rome had united the Italian peninsula and after a long war with Carthage taking control of the Mediterranean the Senate and the consoles of the Republic governed this vast territory in the first century BC Julius Caesar appeared he conquered He conquered Gaul and brought to Rome vast wealth and territory Eventually he became dictator for life But in 44 BC he was assassinated by senators His successor Octavian in 27 BC Was given the title Augustus by the Senate and became the first emperor through this Rome was transformed from a republic into an empire the two centuries that followed our call the Pax Romana a period of prosperity the whole shore of the Mediterranean fell and a Roman rule and roads were built with aqueducts, the Colosseum and bias constructed across the lands But from the third century onward the Roman Empire would suffer from internal disorder and invasions by outside forces In 3095 The Empire split into East and West and in 476 The Western Empire was brought down by Germanic peoples The Western Roman Empire, after centuries of expansion and decline Thus came to an end The Western Empire fell, but Rome's legacy still lives strongly in the law. Language, architecture, and political system of Europe today.",
+  "segments": [
+    {
+      "start": 13.58,
+      "end": 17.5,
+      "text": "Ancient Rome is said to have been founded in 73 BC."
+    },
+    {
+      "start": 19.04,
+      "end": 25.06,
+      "text": "For its first few centuries it was a kingdom, and then a republic centered on a small city"
+    },
+    {
+      "start": 25.06,
+      "end": 34.28,
+      "text": "on the Mediterranean by the second century BC Rome had united the Italian"
+    },
+    {
+      "start": 34.28,
+      "end": 39.5,
+      "text": "peninsula and after a long war with Carthage taking control of the"
+    },
+    {
+      "start": 39.5,
+      "end": 45.12,
+      "text": "Mediterranean the Senate and the consoles of the Republic governed this"
+    },
+    {
+      "start": 45.12,
+      "end": 54.44,
+      "text": "vast territory in the first century BC Julius Caesar appeared he conquered"
+    },
+    {
+      "start": 54.44,
+      "end": 58.36,
+      "text": "He conquered Gaul and brought to Rome vast wealth and territory"
+    },
+    {
+      "start": 59.44,
+      "end": 63.04,
+      "text": "Eventually he became dictator for life"
+    },
+    {
+      "start": 64.44,
+      "end": 69.4,
+      "text": "But in 44 BC he was assassinated by senators"
+    },
+    {
+      "start": 70.44,
+      "end": 74.82,
+      "text": "His successor Octavian in 27 BC"
+    },
+    {
+      "start": 76.44,
+      "end": 79.46,
+      "text": "Was given the title Augustus by the Senate"
+    },
+    {
+      "start": 79.46,
+      "end": 88.72,
+      "text": "and became the first emperor through this Rome was transformed from a"
+    },
+    {
+      "start": 88.72,
+      "end": 94.8,
+      "text": "republic into an empire the two centuries that followed our call the"
+    },
+    {
+      "start": 94.8,
+      "end": 104.04,
+      "text": "Pax Romana a period of prosperity the whole shore of the Mediterranean fell"
+    },
+    {
+      "start": 104.04,
+      "end": 105.5,
+      "text": "and a Roman rule"
+    },
+    {
+      "start": 106.04,
+      "end": 107.72,
+      "text": "and roads were built"
+    },
+    {
+      "start": 107.72,
+      "end": 111.18,
+      "text": "with aqueducts, the Colosseum"
+    },
+    {
+      "start": 112.04,
+      "end": 114.2,
+      "text": "and bias constructed"
+    },
+    {
+      "start": 115.04,
+      "end": 116.92,
+      "text": "across the lands"
+    },
+    {
+      "start": 118.04,
+      "end": 120.48,
+      "text": "But from the third century onward"
+    },
+    {
+      "start": 121.04,
+      "end": 122.5,
+      "text": "the Roman Empire"
+    },
+    {
+      "start": 123.04,
+      "end": 125.3,
+      "text": "would suffer from internal disorder"
+    },
+    {
+      "start": 126.04,
+      "end": 128.7,
+      "text": "and invasions by outside forces"
+    },
+    {
+      "start": 130.04,
+      "end": 131.76,
+      "text": "In 3095"
+    },
+    {
+      "start": 131.76,
+      "end": 137.36,
+      "text": "The Empire split into East and West and in 476"
+    },
+    {
+      "start": 137.36,
+      "end": 143.38,
+      "text": "The Western Empire was brought down by Germanic peoples"
+    },
+    {
+      "start": 145.76,
+      "end": 151.9,
+      "text": "The Western Roman Empire, after centuries of expansion and decline"
+    },
+    {
+      "start": 152.76,
+      "end": 155.98,
+      "text": "Thus came to an end"
+    },
+    {
+      "start": 155.98,
+      "end": 164.0,
+      "text": "The Western Empire fell, but Rome's legacy still lives strongly in the law."
+    },
+    {
+      "start": 164.44,
+      "end": 170.9,
+      "text": "Language, architecture, and political system of Europe today."
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H082.md",
+  "audio": "高校生編/suno_ready/generated/audio/H082/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 83.72,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.993,
+  "expected_words": 143,
+  "transcribed_words": 142,
+  "matched_words": 139,
+  "coverage": 0.972,
+  "precision": 0.9789,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 142,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 10,
+      "length": 2,
+      "words": [
+        "a",
+        "regional"
+      ]
+    },
+    {
+      "start": 6,
+      "length": 1,
+      "words": [
+        "thirty"
+      ]
+    },
+    {
+      "start": 121,
+      "length": 1,
+      "words": [
+        "in"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 10,
+      "actual_start": 9,
+      "expected": [
+        "a",
+        "regional"
+      ],
+      "actual": [
+        "original"
+      ],
+      "actual_confidence": 0.5869,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 121,
+      "actual_start": 119,
+      "expected": [
+        "in"
+      ],
+      "actual": [
+        "and"
+      ],
+      "actual_confidence": 0.9247,
+      "substitution_words": 1,
+      "has_content_word": false
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 143,
+      "actual_start": 141,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.1432
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 6,
+      "actual_start": 6,
+      "expected": [
+        "thirty"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": false,
+  "transcript": "A small electronics company was founded 30 years ago in original city The founder was a capable engineer, whose commitment was stronger than anyone's In the first years, the company carried debt The figures in the accounts were discouraging, and revenue was small But he convinced investor after investor and raised funds little by little in time The company rose in the competitive market It won contracts with overseas clients And rode the wave of expansion As chairman, the founder spoke to every employee At the annual conference Our strength is not strategy But the sincerity of each person He said today, the company enjoys commercial success While never forgetting its contribution to the local community Transparency in management, fairness, and how employees are promoted The story of this small firm teaches us That business success cannot be measured by numbers alone you",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 6.24,
+      "text": "A small electronics company was founded 30 years ago in original city"
+    },
+    {
+      "start": 6.24,
+      "end": 11.76,
+      "text": "The founder was a capable engineer, whose commitment was stronger than anyone's"
+    },
+    {
+      "start": 11.76,
+      "end": 14.86,
+      "text": "In the first years, the company carried debt"
+    },
+    {
+      "start": 15.8,
+      "end": 20.36,
+      "text": "The figures in the accounts were discouraging, and revenue was small"
+    },
+    {
+      "start": 20.36,
+      "end": 26.24,
+      "text": "But he convinced investor after investor and raised funds little by little in time"
+    },
+    {
+      "start": 26.24,
+      "end": 29.5,
+      "text": "The company rose in the competitive market"
+    },
+    {
+      "start": 30.24,
+      "end": 33.08,
+      "text": "It won contracts with overseas clients"
+    },
+    {
+      "start": 33.08,
+      "end": 35.52,
+      "text": "And rode the wave of expansion"
+    },
+    {
+      "start": 36.24,
+      "end": 40.08,
+      "text": "As chairman, the founder spoke to every employee"
+    },
+    {
+      "start": 40.08,
+      "end": 42.46,
+      "text": "At the annual conference"
+    },
+    {
+      "start": 43.24,
+      "end": 45.92,
+      "text": "Our strength is not strategy"
+    },
+    {
+      "start": 45.92,
+      "end": 48.08,
+      "text": "But the sincerity of each person"
+    },
+    {
+      "start": 48.08,
+      "end": 51.94,
+      "text": "He said today, the company enjoys commercial success"
+    },
+    {
+      "start": 51.94,
+      "end": 57.86,
+      "text": "While never forgetting its contribution to the local community"
+    },
+    {
+      "start": 57.86,
+      "end": 64.4,
+      "text": "Transparency in management, fairness, and how employees are promoted"
+    },
+    {
+      "start": 65.98,
+      "end": 70.3,
+      "text": "The story of this small firm teaches us"
+    },
+    {
+      "start": 70.3,
+      "end": 77.86,
+      "text": "That business success cannot be measured by numbers alone"
+    },
+    {
+      "start": 82.3,
+      "end": 83.7,
+      "text": "you"
+    }
+  ]
+}

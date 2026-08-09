@@ -1,0 +1,192 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H077.md",
+  "audio": "高校生編/suno_ready/generated/audio/H077/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 134.2,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.011,
+  "expected_words": 181,
+  "transcribed_words": 183,
+  "matched_words": 179,
+  "coverage": 0.989,
+  "precision": 0.9781,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 180,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 73,
+      "length": 1,
+      "words": [
+        "sensational"
+      ]
+    },
+    {
+      "start": 149,
+      "length": 1,
+      "words": [
+        "this"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 73,
+      "actual_start": 73,
+      "expected": [
+        "sensational"
+      ],
+      "actual": [
+        "sensation",
+        "of"
+      ],
+      "actual_confidence": 0.7251,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 149,
+      "actual_start": 150,
+      "expected": [
+        "this"
+      ],
+      "actual": [
+        "the"
+      ],
+      "actual_confidence": 0.6488,
+      "substitution_words": 1,
+      "has_content_word": false
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 181,
+      "actual_start": 182,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.1193
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "Every day we are exposed to an enormous amount of information. Newspapers, television, articles on the internet, and posts on social media. But how much of it is truly accurate? An advertisement exists not simply to convey facts But to encourage purchases Political propaganda manipulates information In order to spread a particular viewpoint Now anyone can publish information on social media As a result, unverified rumors and misleading information spread instantly The more sensation of the headline, the more attention it draws What then, should we believe? First, verify the source of the information who published it And what evidence does it rest upon? If statistics are quoted, examine critically how that data was gathered. It is also important to compare several sources for any single event. If we judge from only one perspective, we arrive at a biased conclusion. Critical thinking is the only power that protects us in the sea of information. Media literacy has become an essential skill For everyone living in our age It is not about doubting all information But about facing information in the right way you",
+  "segments": [
+    {
+      "start": 8.92,
+      "end": 15.76,
+      "text": "Every day we are exposed to an enormous amount of information."
+    },
+    {
+      "start": 16.26,
+      "end": 24.32,
+      "text": "Newspapers, television, articles on the internet, and posts on social media."
+    },
+    {
+      "start": 24.32,
+      "end": 28.16,
+      "text": "But how much of it is truly accurate?"
+    },
+    {
+      "start": 28.7,
+      "end": 33.24,
+      "text": "An advertisement exists not simply to convey facts"
+    },
+    {
+      "start": 33.24,
+      "end": 35.56,
+      "text": "But to encourage purchases"
+    },
+    {
+      "start": 37.04,
+      "end": 41.28,
+      "text": "Political propaganda manipulates information"
+    },
+    {
+      "start": 41.28,
+      "end": 44.68,
+      "text": "In order to spread a particular viewpoint"
+    },
+    {
+      "start": 45.32,
+      "end": 50.32,
+      "text": "Now anyone can publish information on social media"
+    },
+    {
+      "start": 50.32,
+      "end": 57.54,
+      "text": "As a result, unverified rumors and misleading information spread instantly"
+    },
+    {
+      "start": 57.54,
+      "end": 63.52,
+      "text": "The more sensation of the headline, the more attention it draws"
+    },
+    {
+      "start": 63.52,
+      "end": 66.04,
+      "text": "What then, should we believe?"
+    },
+    {
+      "start": 67.82,
+      "end": 72.32,
+      "text": "First, verify the source of the information who published it"
+    },
+    {
+      "start": 72.32,
+      "end": 74.9,
+      "text": "And what evidence does it rest upon?"
+    },
+    {
+      "start": 75.84,
+      "end": 81.52,
+      "text": "If statistics are quoted, examine critically how that data was gathered."
+    },
+    {
+      "start": 82.04,
+      "end": 88.12,
+      "text": "It is also important to compare several sources for any single event."
+    },
+    {
+      "start": 89.02,
+      "end": 95.14,
+      "text": "If we judge from only one perspective, we arrive at a biased conclusion."
+    },
+    {
+      "start": 95.46,
+      "end": 101.2,
+      "text": "Critical thinking is the only power that protects us in the sea of information."
+    },
+    {
+      "start": 101.2,
+      "end": 105.9,
+      "text": "Media literacy has become an essential skill"
+    },
+    {
+      "start": 105.9,
+      "end": 110.3,
+      "text": "For everyone living in our age"
+    },
+    {
+      "start": 111.2,
+      "end": 114.88,
+      "text": "It is not about doubting all information"
+    },
+    {
+      "start": 114.88,
+      "end": 121.24,
+      "text": "But about facing information in the right way"
+    },
+    {
+      "start": 132.78,
+      "end": 133.26,
+      "text": "you"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H041.md",
+  "audio": "高校生編/suno_ready/generated/audio/H041/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 69.82,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9857,
+  "expected_words": 140,
+  "transcribed_words": 138,
+  "matched_words": 136,
+  "coverage": 0.9714,
+  "precision": 0.9855,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 139,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 110,
+      "length": 2,
+      "words": [
+        "forty",
+        "one"
+      ]
+    },
+    {
+      "start": 55,
+      "length": 1,
+      "words": [
+        "bombe"
+      ]
+    },
+    {
+      "start": 135,
+      "length": 1,
+      "words": [
+        "pardon"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 55,
+      "actual_start": 55,
+      "expected": [
+        "bombe"
+      ],
+      "actual": [
+        "bomb"
+      ],
+      "actual_confidence": 0.4338,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 135,
+      "actual_start": 133,
+      "expected": [
+        "pardon"
+      ],
+      "actual": [
+        "parting"
+      ],
+      "actual_confidence": 0.8789,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 110,
+      "actual_start": 110,
+      "expected": [
+        "forty",
+        "one"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "During the Second World War, at Bletchley Park in Britain, the young mathematician Alan Turing was trying to crack the German Enigma cipher. Every day, the German submarine fleet exchanged encrypted messages. If they could not be decoded, Allied ships could be sunk one after another. Turing, with his colleagues, built a machine called the Bomb the Machine, rapidly eliminated impossible enigma settings, helping the team read many messages after the war. Turing explored the question, can a machine think? His work became foundational to computer science and later debates about artificial intelligence. But under the law of his time, homosexuality was criminalized and he was prosecuted. He died at 41, The country he had helped defend later punished him for who he was In 2013, Queen Elizabeth II granted him an official pardon The parting came far too late",
+  "segments": [
+    {
+      "start": 4.08,
+      "end": 7.36,
+      "text": "During the Second World War, at Bletchley Park in Britain,"
+    },
+    {
+      "start": 7.68,
+      "end": 12.82,
+      "text": "the young mathematician Alan Turing was trying to crack the German Enigma cipher."
+    },
+    {
+      "start": 13.84,
+      "end": 19.1,
+      "text": "Every day, the German submarine fleet exchanged encrypted messages."
+    },
+    {
+      "start": 19.36,
+      "end": 23.74,
+      "text": "If they could not be decoded, Allied ships could be sunk one after another."
+    },
+    {
+      "start": 23.98,
+      "end": 28.0,
+      "text": "Turing, with his colleagues, built a machine called the Bomb the Machine,"
+    },
+    {
+      "start": 28.0,
+      "end": 31.48,
+      "text": "rapidly eliminated impossible enigma settings,"
+    },
+    {
+      "start": 32.6,
+      "end": 36.24,
+      "text": "helping the team read many messages after the war."
+    },
+    {
+      "start": 36.54,
+      "end": 38.18,
+      "text": "Turing explored the question,"
+    },
+    {
+      "start": 39.12,
+      "end": 40.08,
+      "text": "can a machine think?"
+    },
+    {
+      "start": 40.34,
+      "end": 44.12,
+      "text": "His work became foundational to computer science"
+    },
+    {
+      "start": 44.12,
+      "end": 47.3,
+      "text": "and later debates about artificial intelligence."
+    },
+    {
+      "start": 48.16,
+      "end": 50.2,
+      "text": "But under the law of his time,"
+    },
+    {
+      "start": 50.44,
+      "end": 54.3,
+      "text": "homosexuality was criminalized and he was prosecuted."
+    },
+    {
+      "start": 54.3,
+      "end": 55.8,
+      "text": "He died at 41,"
+    },
+    {
+      "start": 55.8,
+      "end": 60.92,
+      "text": "The country he had helped defend later punished him for who he was"
+    },
+    {
+      "start": 60.92,
+      "end": 67.08,
+      "text": "In 2013, Queen Elizabeth II granted him an official pardon"
+    },
+    {
+      "start": 67.08,
+      "end": 69.82,
+      "text": "The parting came far too late"
+    }
+  ]
+}

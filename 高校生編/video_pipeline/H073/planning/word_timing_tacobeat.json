@@ -1,0 +1,1518 @@
+{
+  "lesson": "H073",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h073_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H073/candidate1-full.mp3",
+  "source_audio_sha256": "161fe0a9908b9762af7e08cf3cd7d2d7b17e2aaa0593a664f3dd87e9b7df9817",
+  "bpm": 88.0,
+  "exact_word_match": true,
+  "word_count": 229,
+  "line_count": 16,
+  "first_word_start": 3.898,
+  "last_word_end": 150.08,
+  "lines": [
+    {
+      "line": 1,
+      "english": "The human body is an astonishingly complex system made up of about thirty-seven trillion cells.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 3.898,
+          "end": 4.021
+        },
+        {
+          "word": "human",
+          "display_index": 1,
+          "start": 4.021,
+          "end": 4.561
+        },
+        {
+          "word": "body",
+          "display_index": 2,
+          "start": 4.561,
+          "end": 5.355
+        },
+        {
+          "word": "is",
+          "display_index": 3,
+          "start": 5.355,
+          "end": 5.481
+        },
+        {
+          "word": "an",
+          "display_index": 4,
+          "start": 5.481,
+          "end": 5.661
+        },
+        {
+          "word": "astonishingly",
+          "display_index": 5,
+          "start": 5.661,
+          "end": 7.241
+        },
+        {
+          "word": "complex",
+          "display_index": 6,
+          "start": 7.241,
+          "end": 7.941
+        },
+        {
+          "word": "system",
+          "display_index": 7,
+          "start": 7.941,
+          "end": 8.781
+        },
+        {
+          "word": "made",
+          "display_index": 8,
+          "start": 8.781,
+          "end": 9.081
+        },
+        {
+          "word": "up",
+          "display_index": 9,
+          "start": 9.081,
+          "end": 9.381
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 9.381,
+          "end": 9.721
+        },
+        {
+          "word": "about",
+          "display_index": 11,
+          "start": 9.721,
+          "end": 10.141
+        },
+        {
+          "word": "thirty-seven",
+          "display_index": 12,
+          "start": 10.141,
+          "end": 10.641
+        },
+        {
+          "word": "thirty-seven",
+          "display_index": 12,
+          "start": 10.641,
+          "end": 11.402
+        },
+        {
+          "word": "trillion",
+          "display_index": 13,
+          "start": 11.402,
+          "end": 12.002
+        },
+        {
+          "word": "cells.",
+          "display_index": 14,
+          "start": 12.002,
+          "end": 13.502
+        }
+      ],
+      "start": 3.898,
+      "end": 13.502
+    },
+    {
+      "line": 2,
+      "english": "The heart beats about 100,000 times a day, and the lungs breathe in and out about 20,000 times a day.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 14.115,
+          "end": 14.222
+        },
+        {
+          "word": "heart",
+          "display_index": 1,
+          "start": 14.222,
+          "end": 14.602
+        },
+        {
+          "word": "beats",
+          "display_index": 2,
+          "start": 14.602,
+          "end": 15.022
+        },
+        {
+          "word": "about",
+          "display_index": 3,
+          "start": 15.022,
+          "end": 15.442
+        },
+        {
+          "word": "100,000",
+          "display_index": 4,
+          "start": 15.442,
+          "end": 16.442
+        },
+        {
+          "word": "100,000",
+          "display_index": 4,
+          "start": 16.442,
+          "end": 16.882
+        },
+        {
+          "word": "times",
+          "display_index": 5,
+          "start": 16.882,
+          "end": 17.861
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 17.861,
+          "end": 18.002
+        },
+        {
+          "word": "day,",
+          "display_index": 7,
+          "start": 18.002,
+          "end": 19.383
+        },
+        {
+          "word": "and",
+          "display_index": 8,
+          "start": 19.383,
+          "end": 19.535
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 19.535,
+          "end": 19.683
+        },
+        {
+          "word": "lungs",
+          "display_index": 10,
+          "start": 19.683,
+          "end": 20.063
+        },
+        {
+          "word": "breathe",
+          "display_index": 11,
+          "start": 20.063,
+          "end": 20.563
+        },
+        {
+          "word": "in",
+          "display_index": 12,
+          "start": 20.563,
+          "end": 20.663
+        },
+        {
+          "word": "and",
+          "display_index": 13,
+          "start": 20.663,
+          "end": 20.983
+        },
+        {
+          "word": "out",
+          "display_index": 14,
+          "start": 20.983,
+          "end": 21.643
+        },
+        {
+          "word": "about",
+          "display_index": 15,
+          "start": 21.643,
+          "end": 22.343
+        },
+        {
+          "word": "20,000",
+          "display_index": 16,
+          "start": 22.343,
+          "end": 23.263
+        },
+        {
+          "word": "20,000",
+          "display_index": 16,
+          "start": 23.263,
+          "end": 23.703
+        },
+        {
+          "word": "times",
+          "display_index": 17,
+          "start": 23.703,
+          "end": 24.525
+        },
+        {
+          "word": "a",
+          "display_index": 18,
+          "start": 24.525,
+          "end": 24.803
+        },
+        {
+          "word": "day.",
+          "display_index": 19,
+          "start": 24.803,
+          "end": 26.303
+        }
+      ],
+      "start": 14.115,
+      "end": 26.303
+    },
+    {
+      "line": 3,
+      "english": "The food we eat is digested in the stomach and intestines, and is delivered as energy to tissues throughout the body.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 30.126,
+          "end": 30.244
+        },
+        {
+          "word": "food",
+          "display_index": 1,
+          "start": 30.244,
+          "end": 30.504
+        },
+        {
+          "word": "we",
+          "display_index": 2,
+          "start": 30.504,
+          "end": 30.584
+        },
+        {
+          "word": "eat",
+          "display_index": 3,
+          "start": 30.584,
+          "end": 30.971
+        },
+        {
+          "word": "is",
+          "display_index": 4,
+          "start": 30.971,
+          "end": 31.124
+        },
+        {
+          "word": "digested",
+          "display_index": 5,
+          "start": 31.124,
+          "end": 31.884
+        },
+        {
+          "word": "in",
+          "display_index": 6,
+          "start": 31.884,
+          "end": 32.118
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 32.118,
+          "end": 32.364
+        },
+        {
+          "word": "stomach",
+          "display_index": 8,
+          "start": 32.364,
+          "end": 33.064
+        },
+        {
+          "word": "and",
+          "display_index": 9,
+          "start": 33.064,
+          "end": 33.204
+        },
+        {
+          "word": "intestines,",
+          "display_index": 10,
+          "start": 33.204,
+          "end": 35.225
+        },
+        {
+          "word": "and",
+          "display_index": 11,
+          "start": 35.225,
+          "end": 35.369
+        },
+        {
+          "word": "is",
+          "display_index": 12,
+          "start": 35.369,
+          "end": 35.705
+        },
+        {
+          "word": "delivered",
+          "display_index": 13,
+          "start": 35.705,
+          "end": 36.645
+        },
+        {
+          "word": "as",
+          "display_index": 14,
+          "start": 36.645,
+          "end": 36.845
+        },
+        {
+          "word": "energy",
+          "display_index": 15,
+          "start": 36.845,
+          "end": 37.901
+        },
+        {
+          "word": "to",
+          "display_index": 16,
+          "start": 37.901,
+          "end": 38.085
+        },
+        {
+          "word": "tissues",
+          "display_index": 17,
+          "start": 38.085,
+          "end": 38.745
+        },
+        {
+          "word": "throughout",
+          "display_index": 18,
+          "start": 38.745,
+          "end": 39.307
+        },
+        {
+          "word": "the",
+          "display_index": 19,
+          "start": 39.307,
+          "end": 39.485
+        },
+        {
+          "word": "body.",
+          "display_index": 20,
+          "start": 39.485,
+          "end": 40.845
+        }
+      ],
+      "start": 30.126,
+      "end": 40.845
+    },
+    {
+      "line": 4,
+      "english": "Nutrients such as protein, vitamins, and minerals are essential for the body's repair and growth.",
+      "word_timings": [
+        {
+          "word": "Nutrients",
+          "display_index": 0,
+          "start": 41.145,
+          "end": 41.846
+        },
+        {
+          "word": "such",
+          "display_index": 1,
+          "start": 41.846,
+          "end": 42.066
+        },
+        {
+          "word": "as",
+          "display_index": 2,
+          "start": 42.066,
+          "end": 42.206
+        },
+        {
+          "word": "protein,",
+          "display_index": 3,
+          "start": 42.206,
+          "end": 42.866
+        },
+        {
+          "word": "vitamins,",
+          "display_index": 4,
+          "start": 42.866,
+          "end": 43.966
+        },
+        {
+          "word": "and",
+          "display_index": 5,
+          "start": 43.966,
+          "end": 44.226
+        },
+        {
+          "word": "minerals",
+          "display_index": 6,
+          "start": 44.226,
+          "end": 46.296
+        },
+        {
+          "word": "are",
+          "display_index": 7,
+          "start": 46.296,
+          "end": 46.646
+        },
+        {
+          "word": "essential",
+          "display_index": 8,
+          "start": 46.646,
+          "end": 47.626
+        },
+        {
+          "word": "for",
+          "display_index": 9,
+          "start": 47.626,
+          "end": 48.013
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 48.013,
+          "end": 48.166
+        },
+        {
+          "word": "body's",
+          "display_index": 11,
+          "start": 48.166,
+          "end": 49.346
+        },
+        {
+          "word": "repair",
+          "display_index": 12,
+          "start": 49.346,
+          "end": 50.427
+        },
+        {
+          "word": "and",
+          "display_index": 13,
+          "start": 50.427,
+          "end": 50.707
+        },
+        {
+          "word": "growth.",
+          "display_index": 14,
+          "start": 50.707,
+          "end": 51.635
+        }
+      ],
+      "start": 41.145,
+      "end": 51.635
+    },
+    {
+      "line": 5,
+      "english": "The three pillars of staying healthy are said to be moderate exercise, a balanced diet, and sufficient sleep.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 51.935,
+          "end": 52.067
+        },
+        {
+          "word": "three",
+          "display_index": 1,
+          "start": 52.067,
+          "end": 52.387
+        },
+        {
+          "word": "pillars",
+          "display_index": 2,
+          "start": 52.387,
+          "end": 52.847
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 52.847,
+          "end": 53.027
+        },
+        {
+          "word": "staying",
+          "display_index": 4,
+          "start": 53.027,
+          "end": 53.607
+        },
+        {
+          "word": "healthy",
+          "display_index": 5,
+          "start": 53.607,
+          "end": 54.322
+        },
+        {
+          "word": "are",
+          "display_index": 6,
+          "start": 54.322,
+          "end": 54.447
+        },
+        {
+          "word": "said",
+          "display_index": 7,
+          "start": 54.447,
+          "end": 54.663
+        },
+        {
+          "word": "to",
+          "display_index": 8,
+          "start": 54.663,
+          "end": 54.827
+        },
+        {
+          "word": "be",
+          "display_index": 9,
+          "start": 54.827,
+          "end": 55.127
+        },
+        {
+          "word": "moderate",
+          "display_index": 10,
+          "start": 55.127,
+          "end": 55.787
+        },
+        {
+          "word": "exercise,",
+          "display_index": 11,
+          "start": 55.787,
+          "end": 57.056
+        },
+        {
+          "word": "a",
+          "display_index": 12,
+          "start": 57.056,
+          "end": 57.208
+        },
+        {
+          "word": "balanced",
+          "display_index": 13,
+          "start": 57.208,
+          "end": 57.728
+        },
+        {
+          "word": "diet,",
+          "display_index": 14,
+          "start": 57.728,
+          "end": 58.948
+        },
+        {
+          "word": "and",
+          "display_index": 15,
+          "start": 58.948,
+          "end": 59.208
+        },
+        {
+          "word": "sufficient",
+          "display_index": 16,
+          "start": 59.208,
+          "end": 60.208
+        },
+        {
+          "word": "sleep.",
+          "display_index": 17,
+          "start": 60.208,
+          "end": 61.708
+        }
+      ],
+      "start": 51.935,
+      "end": 61.708
+    },
+    {
+      "line": 6,
+      "english": "When these are broken, the risk of various diseases rises.",
+      "word_timings": [
+        {
+          "word": "When",
+          "display_index": 0,
+          "start": 62.448,
+          "end": 62.668
+        },
+        {
+          "word": "these",
+          "display_index": 1,
+          "start": 62.668,
+          "end": 63.007
+        },
+        {
+          "word": "are",
+          "display_index": 2,
+          "start": 63.007,
+          "end": 63.308
+        },
+        {
+          "word": "broken,",
+          "display_index": 3,
+          "start": 63.308,
+          "end": 64.244
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 64.244,
+          "end": 64.368
+        },
+        {
+          "word": "risk",
+          "display_index": 5,
+          "start": 64.368,
+          "end": 64.769
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 64.769,
+          "end": 65.029
+        },
+        {
+          "word": "various",
+          "display_index": 7,
+          "start": 65.029,
+          "end": 65.889
+        },
+        {
+          "word": "diseases",
+          "display_index": 8,
+          "start": 65.889,
+          "end": 67.089
+        },
+        {
+          "word": "rises.",
+          "display_index": 9,
+          "start": 67.089,
+          "end": 67.829
+        }
+      ],
+      "start": 62.448,
+      "end": 67.829
+    },
+    {
+      "line": 7,
+      "english": "Lack of exercise can cause heart disease and diabetes.",
+      "word_timings": [
+        {
+          "word": "Lack",
+          "display_index": 0,
+          "start": 68.129,
+          "end": 68.509
+        },
+        {
+          "word": "of",
+          "display_index": 1,
+          "start": 68.509,
+          "end": 68.729
+        },
+        {
+          "word": "exercise",
+          "display_index": 2,
+          "start": 68.729,
+          "end": 70.329
+        },
+        {
+          "word": "can",
+          "display_index": 3,
+          "start": 70.329,
+          "end": 70.489
+        },
+        {
+          "word": "cause",
+          "display_index": 4,
+          "start": 70.489,
+          "end": 70.889
+        },
+        {
+          "word": "heart",
+          "display_index": 5,
+          "start": 70.889,
+          "end": 71.209
+        },
+        {
+          "word": "disease",
+          "display_index": 6,
+          "start": 71.209,
+          "end": 72.31
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 72.31,
+          "end": 72.91
+        },
+        {
+          "word": "diabetes.",
+          "display_index": 8,
+          "start": 72.91,
+          "end": 74.41
+        }
+      ],
+      "start": 68.129,
+      "end": 74.41
+    },
+    {
+      "line": 8,
+      "english": "Too much salt or sugar leads to high blood pressure and obesity.",
+      "word_timings": [
+        {
+          "word": "Too",
+          "display_index": 0,
+          "start": 78.743,
+          "end": 79.01
+        },
+        {
+          "word": "much",
+          "display_index": 1,
+          "start": 79.01,
+          "end": 79.33
+        },
+        {
+          "word": "salt",
+          "display_index": 2,
+          "start": 79.33,
+          "end": 80.091
+        },
+        {
+          "word": "or",
+          "display_index": 3,
+          "start": 80.091,
+          "end": 80.331
+        },
+        {
+          "word": "sugar",
+          "display_index": 4,
+          "start": 80.331,
+          "end": 80.891
+        },
+        {
+          "word": "leads",
+          "display_index": 5,
+          "start": 80.891,
+          "end": 81.427
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 81.427,
+          "end": 81.731
+        },
+        {
+          "word": "high",
+          "display_index": 7,
+          "start": 81.731,
+          "end": 82.071
+        },
+        {
+          "word": "blood",
+          "display_index": 8,
+          "start": 82.071,
+          "end": 82.391
+        },
+        {
+          "word": "pressure",
+          "display_index": 9,
+          "start": 82.391,
+          "end": 83.071
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 83.071,
+          "end": 83.431
+        },
+        {
+          "word": "obesity.",
+          "display_index": 11,
+          "start": 83.431,
+          "end": 84.531
+        }
+      ],
+      "start": 78.743,
+      "end": 84.531
+    },
+    {
+      "line": 9,
+      "english": "Lack of sleep weakens the immune system and makes a person more likely to fall ill.",
+      "word_timings": [
+        {
+          "word": "Lack",
+          "display_index": 0,
+          "start": 84.831,
+          "end": 85.051
+        },
+        {
+          "word": "of",
+          "display_index": 1,
+          "start": 85.051,
+          "end": 85.131
+        },
+        {
+          "word": "sleep",
+          "display_index": 2,
+          "start": 85.131,
+          "end": 85.691
+        },
+        {
+          "word": "weakens",
+          "display_index": 3,
+          "start": 85.691,
+          "end": 86.37
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 86.37,
+          "end": 86.711
+        },
+        {
+          "word": "immune",
+          "display_index": 5,
+          "start": 86.711,
+          "end": 87.191
+        },
+        {
+          "word": "system",
+          "display_index": 6,
+          "start": 87.191,
+          "end": 88.112
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 88.112,
+          "end": 88.232
+        },
+        {
+          "word": "makes",
+          "display_index": 8,
+          "start": 88.232,
+          "end": 88.431
+        },
+        {
+          "word": "a",
+          "display_index": 9,
+          "start": 88.431,
+          "end": 88.552
+        },
+        {
+          "word": "person",
+          "display_index": 10,
+          "start": 88.552,
+          "end": 88.932
+        },
+        {
+          "word": "more",
+          "display_index": 11,
+          "start": 88.932,
+          "end": 89.272
+        },
+        {
+          "word": "likely",
+          "display_index": 12,
+          "start": 89.272,
+          "end": 89.793
+        },
+        {
+          "word": "to",
+          "display_index": 13,
+          "start": 89.793,
+          "end": 90.072
+        },
+        {
+          "word": "fall",
+          "display_index": 14,
+          "start": 90.072,
+          "end": 90.692
+        },
+        {
+          "word": "ill.",
+          "display_index": 15,
+          "start": 90.692,
+          "end": 91.492
+        }
+      ],
+      "start": 84.831,
+      "end": 91.492
+    },
+    {
+      "line": 10,
+      "english": "Stress affects not only mental health, but also physical health, in serious ways.",
+      "word_timings": [
+        {
+          "word": "Stress",
+          "display_index": 0,
+          "start": 91.552,
+          "end": 92.192
+        },
+        {
+          "word": "affects",
+          "display_index": 1,
+          "start": 92.192,
+          "end": 92.692
+        },
+        {
+          "word": "not",
+          "display_index": 2,
+          "start": 92.692,
+          "end": 93.112
+        },
+        {
+          "word": "only",
+          "display_index": 3,
+          "start": 93.112,
+          "end": 94.012
+        },
+        {
+          "word": "mental",
+          "display_index": 4,
+          "start": 94.012,
+          "end": 94.672
+        },
+        {
+          "word": "health,",
+          "display_index": 5,
+          "start": 94.672,
+          "end": 95.233
+        },
+        {
+          "word": "but",
+          "display_index": 6,
+          "start": 95.233,
+          "end": 95.513
+        },
+        {
+          "word": "also",
+          "display_index": 7,
+          "start": 95.513,
+          "end": 96.053
+        },
+        {
+          "word": "physical",
+          "display_index": 8,
+          "start": 96.053,
+          "end": 97.033
+        },
+        {
+          "word": "health,",
+          "display_index": 9,
+          "start": 97.033,
+          "end": 99.193
+        },
+        {
+          "word": "in",
+          "display_index": 10,
+          "start": 99.193,
+          "end": 99.493
+        },
+        {
+          "word": "serious",
+          "display_index": 11,
+          "start": 99.493,
+          "end": 100.213
+        },
+        {
+          "word": "ways.",
+          "display_index": 12,
+          "start": 100.213,
+          "end": 101.533
+        }
+      ],
+      "start": 91.552,
+      "end": 101.533
+    },
+    {
+      "line": 11,
+      "english": "Chronic stress can cause digestive trouble, headaches, sleeplessness, and depression.",
+      "word_timings": [
+        {
+          "word": "Chronic",
+          "display_index": 0,
+          "start": 101.833,
+          "end": 102.173
+        },
+        {
+          "word": "stress",
+          "display_index": 1,
+          "start": 102.173,
+          "end": 102.553
+        },
+        {
+          "word": "can",
+          "display_index": 2,
+          "start": 102.553,
+          "end": 102.714
+        },
+        {
+          "word": "cause",
+          "display_index": 3,
+          "start": 102.714,
+          "end": 103.094
+        },
+        {
+          "word": "digestive",
+          "display_index": 4,
+          "start": 103.094,
+          "end": 103.914
+        },
+        {
+          "word": "trouble,",
+          "display_index": 5,
+          "start": 103.914,
+          "end": 104.274
+        },
+        {
+          "word": "headaches,",
+          "display_index": 6,
+          "start": 104.274,
+          "end": 104.854
+        },
+        {
+          "word": "sleeplessness,",
+          "display_index": 7,
+          "start": 104.854,
+          "end": 105.874
+        },
+        {
+          "word": "and",
+          "display_index": 8,
+          "start": 105.874,
+          "end": 106.154
+        },
+        {
+          "word": "depression.",
+          "display_index": 9,
+          "start": 106.154,
+          "end": 107.054
+        }
+      ],
+      "start": 101.833,
+      "end": 107.054
+    },
+    {
+      "line": 12,
+      "english": "Regular medical checks help to detect disease early.",
+      "word_timings": [
+        {
+          "word": "Regular",
+          "display_index": 0,
+          "start": 107.354,
+          "end": 108.354
+        },
+        {
+          "word": "medical",
+          "display_index": 1,
+          "start": 108.354,
+          "end": 108.854
+        },
+        {
+          "word": "checks",
+          "display_index": 2,
+          "start": 108.854,
+          "end": 109.374
+        },
+        {
+          "word": "help",
+          "display_index": 3,
+          "start": 109.374,
+          "end": 109.893
+        },
+        {
+          "word": "to",
+          "display_index": 4,
+          "start": 109.893,
+          "end": 110.054
+        },
+        {
+          "word": "detect",
+          "display_index": 5,
+          "start": 110.054,
+          "end": 110.755
+        },
+        {
+          "word": "disease",
+          "display_index": 6,
+          "start": 110.755,
+          "end": 111.875
+        },
+        {
+          "word": "early.",
+          "display_index": 7,
+          "start": 111.875,
+          "end": 112.635
+        }
+      ],
+      "start": 107.354,
+      "end": 112.635
+    },
+    {
+      "line": 13,
+      "english": "Physicians listen to a patient's lifestyle and, when needed, suggest a treatment.",
+      "word_timings": [
+        {
+          "word": "Physicians",
+          "display_index": 0,
+          "start": 112.635,
+          "end": 113.135
+        },
+        {
+          "word": "listen",
+          "display_index": 1,
+          "start": 113.135,
+          "end": 113.446
+        },
+        {
+          "word": "to",
+          "display_index": 2,
+          "start": 113.446,
+          "end": 113.635
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 113.635,
+          "end": 113.795
+        },
+        {
+          "word": "patient's",
+          "display_index": 4,
+          "start": 113.795,
+          "end": 114.335
+        },
+        {
+          "word": "lifestyle",
+          "display_index": 5,
+          "start": 114.335,
+          "end": 115.375
+        },
+        {
+          "word": "and,",
+          "display_index": 6,
+          "start": 115.375,
+          "end": 115.515
+        },
+        {
+          "word": "when",
+          "display_index": 7,
+          "start": 115.515,
+          "end": 115.855
+        },
+        {
+          "word": "needed,",
+          "display_index": 8,
+          "start": 115.855,
+          "end": 116.315
+        },
+        {
+          "word": "suggest",
+          "display_index": 9,
+          "start": 116.315,
+          "end": 116.863
+        },
+        {
+          "word": "a",
+          "display_index": 10,
+          "start": 116.863,
+          "end": 117.015
+        },
+        {
+          "word": "treatment.",
+          "display_index": 11,
+          "start": 117.015,
+          "end": 117.768
+        }
+      ],
+      "start": 112.635,
+      "end": 117.768
+    },
+    {
+      "line": 14,
+      "english": "The body is the most precious tool that has been given to each of us.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 117.768,
+          "end": 117.896
+        },
+        {
+          "word": "body",
+          "display_index": 1,
+          "start": 117.896,
+          "end": 118.424
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 118.424,
+          "end": 118.588
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 118.588,
+          "end": 118.896
+        },
+        {
+          "word": "most",
+          "display_index": 4,
+          "start": 118.896,
+          "end": 119.236
+        },
+        {
+          "word": "precious",
+          "display_index": 5,
+          "start": 119.236,
+          "end": 119.796
+        },
+        {
+          "word": "tool",
+          "display_index": 6,
+          "start": 119.796,
+          "end": 120.316
+        },
+        {
+          "word": "that",
+          "display_index": 7,
+          "start": 120.316,
+          "end": 120.596
+        },
+        {
+          "word": "has",
+          "display_index": 8,
+          "start": 120.596,
+          "end": 120.956
+        },
+        {
+          "word": "been",
+          "display_index": 9,
+          "start": 120.956,
+          "end": 121.316
+        },
+        {
+          "word": "given",
+          "display_index": 10,
+          "start": 121.316,
+          "end": 121.794
+        },
+        {
+          "word": "to",
+          "display_index": 11,
+          "start": 121.794,
+          "end": 122.116
+        },
+        {
+          "word": "each",
+          "display_index": 12,
+          "start": 122.116,
+          "end": 122.756
+        },
+        {
+          "word": "of",
+          "display_index": 13,
+          "start": 122.756,
+          "end": 123.116
+        },
+        {
+          "word": "us.",
+          "display_index": 14,
+          "start": 123.116,
+          "end": 124.616
+        }
+      ],
+      "start": 117.768,
+      "end": 124.616
+    },
+    {
+      "line": 15,
+      "english": "The small choices of each day support a long life.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 128.291,
+          "end": 128.437
+        },
+        {
+          "word": "small",
+          "display_index": 1,
+          "start": 128.437,
+          "end": 128.937
+        },
+        {
+          "word": "choices",
+          "display_index": 2,
+          "start": 128.937,
+          "end": 129.757
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 129.757,
+          "end": 129.937
+        },
+        {
+          "word": "each",
+          "display_index": 4,
+          "start": 129.937,
+          "end": 130.217
+        },
+        {
+          "word": "day",
+          "display_index": 5,
+          "start": 130.217,
+          "end": 131.177
+        },
+        {
+          "word": "support",
+          "display_index": 6,
+          "start": 131.177,
+          "end": 131.876
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 131.876,
+          "end": 132.077
+        },
+        {
+          "word": "long",
+          "display_index": 8,
+          "start": 132.077,
+          "end": 132.557
+        },
+        {
+          "word": "life.",
+          "display_index": 9,
+          "start": 132.557,
+          "end": 133.298
+        }
+      ],
+      "start": 128.291,
+      "end": 133.298
+    },
+    {
+      "line": 16,
+      "english": "Health is not something we attend to only on special occasions, but something that lives in the daily fabric of our lives.",
+      "word_timings": [
+        {
+          "word": "Health",
+          "display_index": 0,
+          "start": 133.598,
+          "end": 134.156
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 134.156,
+          "end": 134.298
+        },
+        {
+          "word": "not",
+          "display_index": 2,
+          "start": 134.298,
+          "end": 134.778
+        },
+        {
+          "word": "something",
+          "display_index": 3,
+          "start": 134.778,
+          "end": 135.678
+        },
+        {
+          "word": "we",
+          "display_index": 4,
+          "start": 135.678,
+          "end": 135.958
+        },
+        {
+          "word": "attend",
+          "display_index": 5,
+          "start": 135.958,
+          "end": 136.755
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 136.755,
+          "end": 137.238
+        },
+        {
+          "word": "only",
+          "display_index": 7,
+          "start": 137.238,
+          "end": 138.978
+        },
+        {
+          "word": "on",
+          "display_index": 8,
+          "start": 138.978,
+          "end": 139.178
+        },
+        {
+          "word": "special",
+          "display_index": 9,
+          "start": 139.178,
+          "end": 139.898
+        },
+        {
+          "word": "occasions,",
+          "display_index": 10,
+          "start": 139.898,
+          "end": 142.399
+        },
+        {
+          "word": "but",
+          "display_index": 11,
+          "start": 142.399,
+          "end": 142.599
+        },
+        {
+          "word": "something",
+          "display_index": 12,
+          "start": 142.599,
+          "end": 144.239
+        },
+        {
+          "word": "that",
+          "display_index": 13,
+          "start": 144.239,
+          "end": 144.479
+        },
+        {
+          "word": "lives",
+          "display_index": 14,
+          "start": 144.479,
+          "end": 145.019
+        },
+        {
+          "word": "in",
+          "display_index": 15,
+          "start": 145.019,
+          "end": 145.405
+        },
+        {
+          "word": "the",
+          "display_index": 16,
+          "start": 145.405,
+          "end": 145.659
+        },
+        {
+          "word": "daily",
+          "display_index": 17,
+          "start": 145.659,
+          "end": 146.419
+        },
+        {
+          "word": "fabric",
+          "display_index": 18,
+          "start": 146.419,
+          "end": 148.019
+        },
+        {
+          "word": "of",
+          "display_index": 19,
+          "start": 148.019,
+          "end": 148.26
+        },
+        {
+          "word": "our",
+          "display_index": 20,
+          "start": 148.26,
+          "end": 148.58
+        },
+        {
+          "word": "lives.",
+          "display_index": 21,
+          "start": 148.58,
+          "end": 150.08
+        }
+      ],
+      "start": 133.598,
+      "end": 150.08
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

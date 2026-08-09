@@ -1,0 +1,1122 @@
+{
+  "lesson": "H096",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h096_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H096/candidate2-full.mp3",
+  "source_audio_sha256": "d9b253ab3d9d2f82c95822ec57260d7bcc12cfd4b112dfd01669f8aef8926278",
+  "bpm": 88.94,
+  "exact_word_match": true,
+  "word_count": 167,
+  "line_count": 13,
+  "first_word_start": 4.861,
+  "last_word_end": 110.679,
+  "lines": [
+    {
+      "line": 1,
+      "english": "International relations are a complex web between nations.",
+      "word_timings": [
+        {
+          "word": "International",
+          "display_index": 0,
+          "start": 4.861,
+          "end": 5.861
+        },
+        {
+          "word": "relations",
+          "display_index": 1,
+          "start": 5.861,
+          "end": 7.236
+        },
+        {
+          "word": "are",
+          "display_index": 2,
+          "start": 7.236,
+          "end": 7.401
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 7.401,
+          "end": 7.501
+        },
+        {
+          "word": "complex",
+          "display_index": 4,
+          "start": 7.501,
+          "end": 8.201
+        },
+        {
+          "word": "web",
+          "display_index": 5,
+          "start": 8.201,
+          "end": 8.541
+        },
+        {
+          "word": "between",
+          "display_index": 6,
+          "start": 8.541,
+          "end": 9.202
+        },
+        {
+          "word": "nations.",
+          "display_index": 7,
+          "start": 9.202,
+          "end": 9.862
+        }
+      ],
+      "start": 4.861,
+      "end": 9.862
+    },
+    {
+      "line": 2,
+      "english": "Alliances, treaties, and trade agreements form the framework that supports the order of the world.",
+      "word_timings": [
+        {
+          "word": "Alliances,",
+          "display_index": 0,
+          "start": 10.162,
+          "end": 10.922
+        },
+        {
+          "word": "treaties,",
+          "display_index": 1,
+          "start": 10.922,
+          "end": 12.122
+        },
+        {
+          "word": "and",
+          "display_index": 2,
+          "start": 12.122,
+          "end": 12.262
+        },
+        {
+          "word": "trade",
+          "display_index": 3,
+          "start": 12.262,
+          "end": 12.662
+        },
+        {
+          "word": "agreements",
+          "display_index": 4,
+          "start": 12.662,
+          "end": 13.942
+        },
+        {
+          "word": "form",
+          "display_index": 5,
+          "start": 13.942,
+          "end": 14.468
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 14.468,
+          "end": 14.603
+        },
+        {
+          "word": "framework",
+          "display_index": 7,
+          "start": 14.603,
+          "end": 15.323
+        },
+        {
+          "word": "that",
+          "display_index": 8,
+          "start": 15.323,
+          "end": 15.623
+        },
+        {
+          "word": "supports",
+          "display_index": 9,
+          "start": 15.623,
+          "end": 16.504
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 16.504,
+          "end": 16.763
+        },
+        {
+          "word": "order",
+          "display_index": 11,
+          "start": 16.763,
+          "end": 17.243
+        },
+        {
+          "word": "of",
+          "display_index": 12,
+          "start": 17.243,
+          "end": 17.487
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 17.487,
+          "end": 17.643
+        },
+        {
+          "word": "world.",
+          "display_index": 14,
+          "start": 17.643,
+          "end": 18.443
+        }
+      ],
+      "start": 10.162,
+      "end": 18.443
+    },
+    {
+      "line": 3,
+      "english": "But when the interests of nations conflict, tension rises.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 18.543,
+          "end": 18.683
+        },
+        {
+          "word": "when",
+          "display_index": 1,
+          "start": 18.683,
+          "end": 18.873
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 18.873,
+          "end": 19.063
+        },
+        {
+          "word": "interests",
+          "display_index": 3,
+          "start": 19.063,
+          "end": 19.883
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 19.883,
+          "end": 20.063
+        },
+        {
+          "word": "nations",
+          "display_index": 5,
+          "start": 20.063,
+          "end": 20.864
+        },
+        {
+          "word": "conflict,",
+          "display_index": 6,
+          "start": 20.864,
+          "end": 22.384
+        },
+        {
+          "word": "tension",
+          "display_index": 7,
+          "start": 22.384,
+          "end": 22.964
+        },
+        {
+          "word": "rises.",
+          "display_index": 8,
+          "start": 22.964,
+          "end": 24.464
+        }
+      ],
+      "start": 18.543,
+      "end": 24.464
+    },
+    {
+      "line": 4,
+      "english": "Some nations turn to aggression, while others choose to negotiate.",
+      "word_timings": [
+        {
+          "word": "Some",
+          "display_index": 0,
+          "start": 27.445,
+          "end": 27.785
+        },
+        {
+          "word": "nations",
+          "display_index": 1,
+          "start": 27.785,
+          "end": 28.445
+        },
+        {
+          "word": "turn",
+          "display_index": 2,
+          "start": 28.445,
+          "end": 28.797
+        },
+        {
+          "word": "to",
+          "display_index": 3,
+          "start": 28.797,
+          "end": 29.025
+        },
+        {
+          "word": "aggression,",
+          "display_index": 4,
+          "start": 29.025,
+          "end": 30.305
+        },
+        {
+          "word": "while",
+          "display_index": 5,
+          "start": 30.305,
+          "end": 30.585
+        },
+        {
+          "word": "others",
+          "display_index": 6,
+          "start": 30.585,
+          "end": 30.985
+        },
+        {
+          "word": "choose",
+          "display_index": 7,
+          "start": 30.985,
+          "end": 31.504
+        },
+        {
+          "word": "to",
+          "display_index": 8,
+          "start": 31.504,
+          "end": 31.665
+        },
+        {
+          "word": "negotiate.",
+          "display_index": 9,
+          "start": 31.665,
+          "end": 32.606
+        }
+      ],
+      "start": 27.445,
+      "end": 32.606
+    },
+    {
+      "line": 5,
+      "english": "After the two world wars of the twentieth century, the United Nations was established.",
+      "word_timings": [
+        {
+          "word": "After",
+          "display_index": 0,
+          "start": 32.906,
+          "end": 33.352
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 33.352,
+          "end": 33.506
+        },
+        {
+          "word": "two",
+          "display_index": 2,
+          "start": 33.506,
+          "end": 33.846
+        },
+        {
+          "word": "world",
+          "display_index": 3,
+          "start": 33.846,
+          "end": 34.406
+        },
+        {
+          "word": "wars",
+          "display_index": 4,
+          "start": 34.406,
+          "end": 34.946
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 34.946,
+          "end": 35.059
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 35.059,
+          "end": 35.186
+        },
+        {
+          "word": "twentieth",
+          "display_index": 7,
+          "start": 35.186,
+          "end": 35.946
+        },
+        {
+          "word": "century,",
+          "display_index": 8,
+          "start": 35.946,
+          "end": 37.77
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 37.77,
+          "end": 37.947
+        },
+        {
+          "word": "United",
+          "display_index": 10,
+          "start": 37.947,
+          "end": 38.567
+        },
+        {
+          "word": "Nations",
+          "display_index": 11,
+          "start": 38.567,
+          "end": 39.447
+        },
+        {
+          "word": "was",
+          "display_index": 12,
+          "start": 39.447,
+          "end": 39.687
+        },
+        {
+          "word": "established.",
+          "display_index": 13,
+          "start": 39.687,
+          "end": 41.167
+        }
+      ],
+      "start": 32.906,
+      "end": 41.167
+    },
+    {
+      "line": 6,
+      "english": "Its purpose was to resolve disputes peacefully through negotiation.",
+      "word_timings": [
+        {
+          "word": "Its",
+          "display_index": 0,
+          "start": 41.467,
+          "end": 41.647
+        },
+        {
+          "word": "purpose",
+          "display_index": 1,
+          "start": 41.647,
+          "end": 42.207
+        },
+        {
+          "word": "was",
+          "display_index": 2,
+          "start": 42.207,
+          "end": 42.439
+        },
+        {
+          "word": "to",
+          "display_index": 3,
+          "start": 42.439,
+          "end": 42.627
+        },
+        {
+          "word": "resolve",
+          "display_index": 4,
+          "start": 42.627,
+          "end": 43.428
+        },
+        {
+          "word": "disputes",
+          "display_index": 5,
+          "start": 43.428,
+          "end": 44.088
+        },
+        {
+          "word": "peacefully",
+          "display_index": 6,
+          "start": 44.088,
+          "end": 46.248
+        },
+        {
+          "word": "through",
+          "display_index": 7,
+          "start": 46.248,
+          "end": 46.508
+        },
+        {
+          "word": "negotiation.",
+          "display_index": 8,
+          "start": 46.508,
+          "end": 48.008
+        }
+      ],
+      "start": 41.467,
+      "end": 48.008
+    },
+    {
+      "line": 7,
+      "english": "But the veto power of the Security Council has often become an obstacle.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 49.048,
+          "end": 49.214
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 49.214,
+          "end": 49.369
+        },
+        {
+          "word": "veto",
+          "display_index": 2,
+          "start": 49.369,
+          "end": 49.869
+        },
+        {
+          "word": "power",
+          "display_index": 3,
+          "start": 49.869,
+          "end": 50.449
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 50.449,
+          "end": 50.582
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 50.582,
+          "end": 50.709
+        },
+        {
+          "word": "Security",
+          "display_index": 6,
+          "start": 50.709,
+          "end": 51.609
+        },
+        {
+          "word": "Council",
+          "display_index": 7,
+          "start": 51.609,
+          "end": 52.449
+        },
+        {
+          "word": "has",
+          "display_index": 8,
+          "start": 52.449,
+          "end": 52.709
+        },
+        {
+          "word": "often",
+          "display_index": 9,
+          "start": 52.709,
+          "end": 53.249
+        },
+        {
+          "word": "become",
+          "display_index": 10,
+          "start": 53.249,
+          "end": 53.849
+        },
+        {
+          "word": "an",
+          "display_index": 11,
+          "start": 53.849,
+          "end": 54.029
+        },
+        {
+          "word": "obstacle.",
+          "display_index": 12,
+          "start": 54.029,
+          "end": 54.789
+        }
+      ],
+      "start": 49.048,
+      "end": 54.789
+    },
+    {
+      "line": 8,
+      "english": "During the Cold War, the world was divided into two opposite camps.",
+      "word_timings": [
+        {
+          "word": "During",
+          "display_index": 0,
+          "start": 54.789,
+          "end": 55.279
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 55.279,
+          "end": 55.43
+        },
+        {
+          "word": "Cold",
+          "display_index": 2,
+          "start": 55.43,
+          "end": 56.01
+        },
+        {
+          "word": "War,",
+          "display_index": 3,
+          "start": 56.01,
+          "end": 56.673
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 56.673,
+          "end": 56.85
+        },
+        {
+          "word": "world",
+          "display_index": 5,
+          "start": 56.85,
+          "end": 57.33
+        },
+        {
+          "word": "was",
+          "display_index": 6,
+          "start": 57.33,
+          "end": 57.65
+        },
+        {
+          "word": "divided",
+          "display_index": 7,
+          "start": 57.65,
+          "end": 59.05
+        },
+        {
+          "word": "into",
+          "display_index": 8,
+          "start": 59.05,
+          "end": 59.35
+        },
+        {
+          "word": "two",
+          "display_index": 9,
+          "start": 59.35,
+          "end": 59.77
+        },
+        {
+          "word": "opposite",
+          "display_index": 10,
+          "start": 59.77,
+          "end": 60.47
+        },
+        {
+          "word": "camps.",
+          "display_index": 11,
+          "start": 60.47,
+          "end": 61.97
+        }
+      ],
+      "start": 54.789,
+      "end": 61.97
+    },
+    {
+      "line": 9,
+      "english": "The threat of nuclear weapons served as an overwhelming deterrent, but the world was constantly on the edge of crisis.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 64.451,
+          "end": 64.611
+        },
+        {
+          "word": "threat",
+          "display_index": 1,
+          "start": 64.611,
+          "end": 64.911
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 64.911,
+          "end": 65.051
+        },
+        {
+          "word": "nuclear",
+          "display_index": 3,
+          "start": 65.051,
+          "end": 65.651
+        },
+        {
+          "word": "weapons",
+          "display_index": 4,
+          "start": 65.651,
+          "end": 66.311
+        },
+        {
+          "word": "served",
+          "display_index": 5,
+          "start": 66.311,
+          "end": 67.232
+        },
+        {
+          "word": "as",
+          "display_index": 6,
+          "start": 67.232,
+          "end": 67.392
+        },
+        {
+          "word": "an",
+          "display_index": 7,
+          "start": 67.392,
+          "end": 67.632
+        },
+        {
+          "word": "overwhelming",
+          "display_index": 8,
+          "start": 67.632,
+          "end": 68.712
+        },
+        {
+          "word": "deterrent,",
+          "display_index": 9,
+          "start": 68.712,
+          "end": 70.072
+        },
+        {
+          "word": "but",
+          "display_index": 10,
+          "start": 70.072,
+          "end": 70.235
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 70.235,
+          "end": 70.412
+        },
+        {
+          "word": "world",
+          "display_index": 12,
+          "start": 70.412,
+          "end": 70.832
+        },
+        {
+          "word": "was",
+          "display_index": 13,
+          "start": 70.832,
+          "end": 71.072
+        },
+        {
+          "word": "constantly",
+          "display_index": 14,
+          "start": 71.072,
+          "end": 72.553
+        },
+        {
+          "word": "on",
+          "display_index": 15,
+          "start": 72.553,
+          "end": 72.831
+        },
+        {
+          "word": "the",
+          "display_index": 16,
+          "start": 72.831,
+          "end": 73.093
+        },
+        {
+          "word": "edge",
+          "display_index": 17,
+          "start": 73.093,
+          "end": 73.593
+        },
+        {
+          "word": "of",
+          "display_index": 18,
+          "start": 73.593,
+          "end": 74.113
+        },
+        {
+          "word": "crisis.",
+          "display_index": 19,
+          "start": 74.113,
+          "end": 75.333
+        }
+      ],
+      "start": 64.451,
+      "end": 75.333
+    },
+    {
+      "line": 10,
+      "english": "Even after the Cold War ended, new threats such as regional conflicts, terrorism, and cyberattacks have continued to emerge.",
+      "word_timings": [
+        {
+          "word": "Even",
+          "display_index": 0,
+          "start": 75.633,
+          "end": 76.013
+        },
+        {
+          "word": "after",
+          "display_index": 1,
+          "start": 76.013,
+          "end": 76.422
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 76.422,
+          "end": 76.553
+        },
+        {
+          "word": "Cold",
+          "display_index": 3,
+          "start": 76.553,
+          "end": 76.953
+        },
+        {
+          "word": "War",
+          "display_index": 4,
+          "start": 76.953,
+          "end": 77.333
+        },
+        {
+          "word": "ended,",
+          "display_index": 5,
+          "start": 77.333,
+          "end": 78.154
+        },
+        {
+          "word": "new",
+          "display_index": 6,
+          "start": 78.154,
+          "end": 78.434
+        },
+        {
+          "word": "threats",
+          "display_index": 7,
+          "start": 78.434,
+          "end": 78.974
+        },
+        {
+          "word": "such",
+          "display_index": 8,
+          "start": 78.974,
+          "end": 79.194
+        },
+        {
+          "word": "as",
+          "display_index": 9,
+          "start": 79.194,
+          "end": 79.374
+        },
+        {
+          "word": "regional",
+          "display_index": 10,
+          "start": 79.374,
+          "end": 79.914
+        },
+        {
+          "word": "conflicts,",
+          "display_index": 11,
+          "start": 79.914,
+          "end": 80.734
+        },
+        {
+          "word": "terrorism,",
+          "display_index": 12,
+          "start": 80.734,
+          "end": 81.894
+        },
+        {
+          "word": "and",
+          "display_index": 13,
+          "start": 81.894,
+          "end": 82.394
+        },
+        {
+          "word": "cyberattacks",
+          "display_index": 14,
+          "start": 82.394,
+          "end": 84.335
+        },
+        {
+          "word": "have",
+          "display_index": 15,
+          "start": 84.335,
+          "end": 84.575
+        },
+        {
+          "word": "continued",
+          "display_index": 16,
+          "start": 84.575,
+          "end": 85.413
+        },
+        {
+          "word": "to",
+          "display_index": 17,
+          "start": 85.413,
+          "end": 85.695
+        },
+        {
+          "word": "emerge.",
+          "display_index": 18,
+          "start": 85.695,
+          "end": 87.195
+        }
+      ],
+      "start": 75.633,
+      "end": 87.195
+    },
+    {
+      "line": 11,
+      "english": "No problem can be resolved by one nation alone.",
+      "word_timings": [
+        {
+          "word": "No",
+          "display_index": 0,
+          "start": 87.935,
+          "end": 88.175
+        },
+        {
+          "word": "problem",
+          "display_index": 1,
+          "start": 88.175,
+          "end": 89.115
+        },
+        {
+          "word": "can",
+          "display_index": 2,
+          "start": 89.115,
+          "end": 89.295
+        },
+        {
+          "word": "be",
+          "display_index": 3,
+          "start": 89.295,
+          "end": 89.455
+        },
+        {
+          "word": "resolved",
+          "display_index": 4,
+          "start": 89.455,
+          "end": 90.016
+        },
+        {
+          "word": "by",
+          "display_index": 5,
+          "start": 90.016,
+          "end": 90.436
+        },
+        {
+          "word": "one",
+          "display_index": 6,
+          "start": 90.436,
+          "end": 90.996
+        },
+        {
+          "word": "nation",
+          "display_index": 7,
+          "start": 90.996,
+          "end": 91.756
+        },
+        {
+          "word": "alone.",
+          "display_index": 8,
+          "start": 91.756,
+          "end": 92.601
+        }
+      ],
+      "start": 87.935,
+      "end": 92.601
+    },
+    {
+      "line": 12,
+      "english": "The work of a diplomat is to build bridges between opposing interests.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 92.901,
+          "end": 93.076
+        },
+        {
+          "word": "work",
+          "display_index": 1,
+          "start": 93.076,
+          "end": 93.476
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 93.476,
+          "end": 93.571
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 93.571,
+          "end": 93.736
+        },
+        {
+          "word": "diplomat",
+          "display_index": 4,
+          "start": 93.736,
+          "end": 94.581
+        },
+        {
+          "word": "is",
+          "display_index": 5,
+          "start": 94.581,
+          "end": 94.916
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 94.916,
+          "end": 95.076
+        },
+        {
+          "word": "build",
+          "display_index": 7,
+          "start": 95.076,
+          "end": 95.417
+        },
+        {
+          "word": "bridges",
+          "display_index": 8,
+          "start": 95.417,
+          "end": 95.977
+        },
+        {
+          "word": "between",
+          "display_index": 9,
+          "start": 95.977,
+          "end": 96.497
+        },
+        {
+          "word": "opposing",
+          "display_index": 10,
+          "start": 96.497,
+          "end": 97.597
+        },
+        {
+          "word": "interests.",
+          "display_index": 11,
+          "start": 97.597,
+          "end": 98.697
+        }
+      ],
+      "start": 92.901,
+      "end": 98.697
+    },
+    {
+      "line": 13,
+      "english": "For nations that oppose one another to find mutual benefit — that is the ultimate objective of diplomacy.",
+      "word_timings": [
+        {
+          "word": "For",
+          "display_index": 0,
+          "start": 98.997,
+          "end": 99.217
+        },
+        {
+          "word": "nations",
+          "display_index": 1,
+          "start": 99.217,
+          "end": 100.217
+        },
+        {
+          "word": "that",
+          "display_index": 2,
+          "start": 100.217,
+          "end": 100.417
+        },
+        {
+          "word": "oppose",
+          "display_index": 3,
+          "start": 100.417,
+          "end": 101.077
+        },
+        {
+          "word": "one",
+          "display_index": 4,
+          "start": 101.077,
+          "end": 101.238
+        },
+        {
+          "word": "another",
+          "display_index": 5,
+          "start": 101.238,
+          "end": 102.483
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 102.483,
+          "end": 102.678
+        },
+        {
+          "word": "find",
+          "display_index": 7,
+          "start": 102.678,
+          "end": 103.198
+        },
+        {
+          "word": "mutual",
+          "display_index": 8,
+          "start": 103.198,
+          "end": 103.938
+        },
+        {
+          "word": "benefit",
+          "display_index": 9,
+          "start": 103.938,
+          "end": 106.758
+        },
+        {
+          "word": "that",
+          "display_index": 11,
+          "start": 106.758,
+          "end": 106.894
+        },
+        {
+          "word": "is",
+          "display_index": 12,
+          "start": 106.894,
+          "end": 107.153
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 107.153,
+          "end": 107.399
+        },
+        {
+          "word": "ultimate",
+          "display_index": 14,
+          "start": 107.399,
+          "end": 108.079
+        },
+        {
+          "word": "objective",
+          "display_index": 15,
+          "start": 108.079,
+          "end": 108.979
+        },
+        {
+          "word": "of",
+          "display_index": 16,
+          "start": 108.979,
+          "end": 109.179
+        },
+        {
+          "word": "diplomacy.",
+          "display_index": 17,
+          "start": 109.179,
+          "end": 110.679
+        }
+      ],
+      "start": 98.997,
+      "end": 110.679
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

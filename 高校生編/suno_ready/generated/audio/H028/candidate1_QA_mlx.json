@@ -1,0 +1,158 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H028.md",
+  "audio": "高校生編/suno_ready/generated/audio/H028/candidate1-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 102.88,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9922,
+  "expected_words": 129,
+  "transcribed_words": 128,
+  "matched_words": 126,
+  "coverage": 0.9767,
+  "precision": 0.9844,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 128,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 113,
+      "length": 2,
+      "words": [
+        "that",
+        "chance"
+      ]
+    },
+    {
+      "start": 95,
+      "length": 1,
+      "words": [
+        "fleming"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 95,
+      "actual_start": 95,
+      "expected": [
+        "fleming"
+      ],
+      "actual": [
+        "flinning"
+      ],
+      "actual_confidence": 0.605,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 113,
+      "actual_start": 113,
+      "expected": [
+        "that",
+        "chance"
+      ],
+      "actual": [
+        "vengeance"
+      ],
+      "actual_confidence": 0.626,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "The discovery of penicillin began with an accident In 1928, in a laboratory in London A scientist returned from his vacation Alexander Fleming noticed that a strange mold had grown On one of the dishes left on his bench Around the mold, the bacteria had vanished How much the world would have lost if Fleming had missed that small observation If he had not noticed that mold Many infections might not have been treated And countless lives might have been lost Because of wounds on the battlefield That one dish helped open The age of antibiotics Flinning's careful observation, followed by the work of many other scientists, eventually helped save millions of lives. If vengeance observation had never been made The history of science would have been utterly different",
+  "segments": [
+    {
+      "start": 9.8,
+      "end": 14.6,
+      "text": "The discovery of penicillin began with an accident"
+    },
+    {
+      "start": 14.6,
+      "end": 20.8,
+      "text": "In 1928, in a laboratory in London"
+    },
+    {
+      "start": 20.8,
+      "end": 25.36,
+      "text": "A scientist returned from his vacation"
+    },
+    {
+      "start": 26.72,
+      "end": 32.42,
+      "text": "Alexander Fleming noticed that a strange mold had grown"
+    },
+    {
+      "start": 32.42,
+      "end": 36.42,
+      "text": "On one of the dishes left on his bench"
+    },
+    {
+      "start": 37.64,
+      "end": 42.26,
+      "text": "Around the mold, the bacteria had vanished"
+    },
+    {
+      "start": 42.26,
+      "end": 49.46,
+      "text": "How much the world would have lost if Fleming had missed that small observation"
+    },
+    {
+      "start": 50.52,
+      "end": 53.38,
+      "text": "If he had not noticed that mold"
+    },
+    {
+      "start": 53.38,
+      "end": 56.8,
+      "text": "Many infections might not have been treated"
+    },
+    {
+      "start": 56.8,
+      "end": 59.5,
+      "text": "And countless lives might have been lost"
+    },
+    {
+      "start": 59.5,
+      "end": 62.18,
+      "text": "Because of wounds on the battlefield"
+    },
+    {
+      "start": 62.18,
+      "end": 66.3,
+      "text": "That one dish helped open"
+    },
+    {
+      "start": 66.3,
+      "end": 69.04,
+      "text": "The age of antibiotics"
+    },
+    {
+      "start": 75.74,
+      "end": 86.82,
+      "text": "Flinning's careful observation, followed by the work of many other scientists, eventually"
+    },
+    {
+      "start": 86.82,
+      "end": 91.04,
+      "text": "helped save millions of lives."
+    },
+    {
+      "start": 91.04,
+      "end": 96.18,
+      "text": "If vengeance observation had never been made"
+    },
+    {
+      "start": 96.18,
+      "end": 102.88,
+      "text": "The history of science would have been utterly different"
+    }
+  ]
+}

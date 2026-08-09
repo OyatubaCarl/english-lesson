@@ -1,0 +1,1406 @@
+{
+  "lesson": "H076",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h076_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H076/candidate2-full.mp3",
+  "source_audio_sha256": "0556bab44547ac792bbb9f3a27cfcb7e1c4e03743dcac22bbf32fa7d23581f9d",
+  "bpm": 88.98,
+  "exact_word_match": true,
+  "word_count": 205,
+  "line_count": 20,
+  "first_word_start": 10.742,
+  "last_word_end": 141.7,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Why do people leave the land where they were born?",
+      "word_timings": [
+        {
+          "word": "Why",
+          "display_index": 0,
+          "start": 10.742,
+          "end": 11.102
+        },
+        {
+          "word": "do",
+          "display_index": 1,
+          "start": 11.102,
+          "end": 11.402
+        },
+        {
+          "word": "people",
+          "display_index": 2,
+          "start": 11.402,
+          "end": 12.102
+        },
+        {
+          "word": "leave",
+          "display_index": 3,
+          "start": 12.102,
+          "end": 12.47
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 12.47,
+          "end": 12.622
+        },
+        {
+          "word": "land",
+          "display_index": 5,
+          "start": 12.622,
+          "end": 13.122
+        },
+        {
+          "word": "where",
+          "display_index": 6,
+          "start": 13.122,
+          "end": 13.462
+        },
+        {
+          "word": "they",
+          "display_index": 7,
+          "start": 13.462,
+          "end": 13.642
+        },
+        {
+          "word": "were",
+          "display_index": 8,
+          "start": 13.642,
+          "end": 13.862
+        },
+        {
+          "word": "born?",
+          "display_index": 9,
+          "start": 13.862,
+          "end": 14.862
+        }
+      ],
+      "start": 10.742,
+      "end": 14.862
+    },
+    {
+      "line": 2,
+      "english": "War, poverty, persecution.",
+      "word_timings": [
+        {
+          "word": "War,",
+          "display_index": 0,
+          "start": 15.162,
+          "end": 15.802
+        },
+        {
+          "word": "poverty,",
+          "display_index": 1,
+          "start": 15.802,
+          "end": 16.802
+        },
+        {
+          "word": "persecution.",
+          "display_index": 2,
+          "start": 16.802,
+          "end": 18.302
+        }
+      ],
+      "start": 15.162,
+      "end": 18.302
+    },
+    {
+      "line": 3,
+      "english": "Or the wish for a better life.",
+      "word_timings": [
+        {
+          "word": "Or",
+          "display_index": 0,
+          "start": 19.243,
+          "end": 19.383
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 19.383,
+          "end": 19.503
+        },
+        {
+          "word": "wish",
+          "display_index": 2,
+          "start": 19.503,
+          "end": 19.843
+        },
+        {
+          "word": "for",
+          "display_index": 3,
+          "start": 19.843,
+          "end": 20.102
+        },
+        {
+          "word": "a",
+          "display_index": 4,
+          "start": 20.102,
+          "end": 20.203
+        },
+        {
+          "word": "better",
+          "display_index": 5,
+          "start": 20.203,
+          "end": 20.563
+        },
+        {
+          "word": "life.",
+          "display_index": 6,
+          "start": 20.563,
+          "end": 21.363
+        }
+      ],
+      "start": 19.243,
+      "end": 21.363
+    },
+    {
+      "line": 4,
+      "english": "The reasons vary, but the decision to leave one's homeland is difficult in every age.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 21.443,
+          "end": 21.563
+        },
+        {
+          "word": "reasons",
+          "display_index": 1,
+          "start": 21.563,
+          "end": 22.063
+        },
+        {
+          "word": "vary,",
+          "display_index": 2,
+          "start": 22.063,
+          "end": 23.083
+        },
+        {
+          "word": "but",
+          "display_index": 3,
+          "start": 23.083,
+          "end": 23.244
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 23.244,
+          "end": 23.383
+        },
+        {
+          "word": "decision",
+          "display_index": 5,
+          "start": 23.383,
+          "end": 24.06
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 24.06,
+          "end": 24.263
+        },
+        {
+          "word": "leave",
+          "display_index": 7,
+          "start": 24.263,
+          "end": 24.623
+        },
+        {
+          "word": "one's",
+          "display_index": 8,
+          "start": 24.623,
+          "end": 24.944
+        },
+        {
+          "word": "homeland",
+          "display_index": 9,
+          "start": 24.944,
+          "end": 25.824
+        },
+        {
+          "word": "is",
+          "display_index": 10,
+          "start": 25.824,
+          "end": 25.944
+        },
+        {
+          "word": "difficult",
+          "display_index": 11,
+          "start": 25.944,
+          "end": 26.684
+        },
+        {
+          "word": "in",
+          "display_index": 12,
+          "start": 26.684,
+          "end": 26.884
+        },
+        {
+          "word": "every",
+          "display_index": 13,
+          "start": 26.884,
+          "end": 27.384
+        },
+        {
+          "word": "age.",
+          "display_index": 14,
+          "start": 27.384,
+          "end": 28.284
+        }
+      ],
+      "start": 21.443,
+      "end": 28.284
+    },
+    {
+      "line": 5,
+      "english": "From the nineteenth to the twentieth century, millions of Europeans crossed the ocean to America.",
+      "word_timings": [
+        {
+          "word": "From",
+          "display_index": 0,
+          "start": 28.584,
+          "end": 28.797
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 28.797,
+          "end": 28.964
+        },
+        {
+          "word": "nineteenth",
+          "display_index": 2,
+          "start": 28.964,
+          "end": 29.974
+        },
+        {
+          "word": "to",
+          "display_index": 3,
+          "start": 29.974,
+          "end": 30.16
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 30.16,
+          "end": 30.264
+        },
+        {
+          "word": "twentieth",
+          "display_index": 5,
+          "start": 30.264,
+          "end": 30.944
+        },
+        {
+          "word": "century,",
+          "display_index": 6,
+          "start": 30.944,
+          "end": 32.665
+        },
+        {
+          "word": "millions",
+          "display_index": 7,
+          "start": 32.665,
+          "end": 33.425
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 33.425,
+          "end": 33.685
+        },
+        {
+          "word": "Europeans",
+          "display_index": 9,
+          "start": 33.685,
+          "end": 34.965
+        },
+        {
+          "word": "crossed",
+          "display_index": 10,
+          "start": 34.965,
+          "end": 35.413
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 35.413,
+          "end": 35.605
+        },
+        {
+          "word": "ocean",
+          "display_index": 12,
+          "start": 35.605,
+          "end": 36.721
+        },
+        {
+          "word": "to",
+          "display_index": 13,
+          "start": 36.721,
+          "end": 36.985
+        },
+        {
+          "word": "America.",
+          "display_index": 14,
+          "start": 36.985,
+          "end": 38.485
+        }
+      ],
+      "start": 28.584,
+      "end": 38.485
+    },
+    {
+      "line": 6,
+      "english": "Families traveled together on long voyages, and a new life would begin.",
+      "word_timings": [
+        {
+          "word": "Families",
+          "display_index": 0,
+          "start": 42.746,
+          "end": 43.766
+        },
+        {
+          "word": "traveled",
+          "display_index": 1,
+          "start": 43.766,
+          "end": 44.306
+        },
+        {
+          "word": "together",
+          "display_index": 2,
+          "start": 44.306,
+          "end": 44.926
+        },
+        {
+          "word": "on",
+          "display_index": 3,
+          "start": 44.926,
+          "end": 45.146
+        },
+        {
+          "word": "long",
+          "display_index": 4,
+          "start": 45.146,
+          "end": 45.666
+        },
+        {
+          "word": "voyages,",
+          "display_index": 5,
+          "start": 45.666,
+          "end": 46.887
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 46.887,
+          "end": 47.021
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 47.021,
+          "end": 47.187
+        },
+        {
+          "word": "new",
+          "display_index": 8,
+          "start": 47.187,
+          "end": 47.507
+        },
+        {
+          "word": "life",
+          "display_index": 9,
+          "start": 47.507,
+          "end": 48.167
+        },
+        {
+          "word": "would",
+          "display_index": 10,
+          "start": 48.167,
+          "end": 48.527
+        },
+        {
+          "word": "begin.",
+          "display_index": 11,
+          "start": 48.527,
+          "end": 49.287
+        }
+      ],
+      "start": 42.746,
+      "end": 49.287
+    },
+    {
+      "line": 7,
+      "english": "Upon arrival, immigrants first suffered from the barrier of language.",
+      "word_timings": [
+        {
+          "word": "Upon",
+          "display_index": 0,
+          "start": 49.587,
+          "end": 50.087
+        },
+        {
+          "word": "arrival,",
+          "display_index": 1,
+          "start": 50.087,
+          "end": 51.287
+        },
+        {
+          "word": "immigrants",
+          "display_index": 2,
+          "start": 51.287,
+          "end": 51.867
+        },
+        {
+          "word": "first",
+          "display_index": 3,
+          "start": 51.867,
+          "end": 52.527
+        },
+        {
+          "word": "suffered",
+          "display_index": 4,
+          "start": 52.527,
+          "end": 53.548
+        },
+        {
+          "word": "from",
+          "display_index": 5,
+          "start": 53.548,
+          "end": 53.756
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 53.756,
+          "end": 53.908
+        },
+        {
+          "word": "barrier",
+          "display_index": 7,
+          "start": 53.908,
+          "end": 54.528
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 54.528,
+          "end": 54.668
+        },
+        {
+          "word": "language.",
+          "display_index": 9,
+          "start": 54.668,
+          "end": 55.828
+        }
+      ],
+      "start": 49.587,
+      "end": 55.828
+    },
+    {
+      "line": 8,
+      "english": "Without a single acquaintance, lonely days went on.",
+      "word_timings": [
+        {
+          "word": "Without",
+          "display_index": 0,
+          "start": 56.128,
+          "end": 56.514
+        },
+        {
+          "word": "a",
+          "display_index": 1,
+          "start": 56.514,
+          "end": 56.608
+        },
+        {
+          "word": "single",
+          "display_index": 2,
+          "start": 56.608,
+          "end": 57.008
+        },
+        {
+          "word": "acquaintance,",
+          "display_index": 3,
+          "start": 57.008,
+          "end": 57.988
+        },
+        {
+          "word": "lonely",
+          "display_index": 4,
+          "start": 57.988,
+          "end": 58.488
+        },
+        {
+          "word": "days",
+          "display_index": 5,
+          "start": 58.488,
+          "end": 58.848
+        },
+        {
+          "word": "went",
+          "display_index": 6,
+          "start": 58.848,
+          "end": 59.108
+        },
+        {
+          "word": "on.",
+          "display_index": 7,
+          "start": 59.108,
+          "end": 59.328
+        }
+      ],
+      "start": 56.128,
+      "end": 59.328
+    },
+    {
+      "line": 9,
+      "english": "Many could barely afford the cost of passage.",
+      "word_timings": [
+        {
+          "word": "Many",
+          "display_index": 0,
+          "start": 59.328,
+          "end": 59.648
+        },
+        {
+          "word": "could",
+          "display_index": 1,
+          "start": 59.648,
+          "end": 59.828
+        },
+        {
+          "word": "barely",
+          "display_index": 2,
+          "start": 59.828,
+          "end": 60.368
+        },
+        {
+          "word": "afford",
+          "display_index": 3,
+          "start": 60.368,
+          "end": 61.031
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 61.031,
+          "end": 61.169
+        },
+        {
+          "word": "cost",
+          "display_index": 5,
+          "start": 61.169,
+          "end": 61.609
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 61.609,
+          "end": 61.829
+        },
+        {
+          "word": "passage.",
+          "display_index": 7,
+          "start": 61.829,
+          "end": 62.605
+        }
+      ],
+      "start": 59.328,
+      "end": 62.605
+    },
+    {
+      "line": 10,
+      "english": "The actual life in America was far harder than they had imagined.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 62.905,
+          "end": 63.089
+        },
+        {
+          "word": "actual",
+          "display_index": 1,
+          "start": 63.089,
+          "end": 63.849
+        },
+        {
+          "word": "life",
+          "display_index": 2,
+          "start": 63.849,
+          "end": 64.289
+        },
+        {
+          "word": "in",
+          "display_index": 3,
+          "start": 64.289,
+          "end": 64.449
+        },
+        {
+          "word": "America",
+          "display_index": 4,
+          "start": 64.449,
+          "end": 65.569
+        },
+        {
+          "word": "was",
+          "display_index": 5,
+          "start": 65.569,
+          "end": 65.729
+        },
+        {
+          "word": "far",
+          "display_index": 6,
+          "start": 65.729,
+          "end": 66.069
+        },
+        {
+          "word": "harder",
+          "display_index": 7,
+          "start": 66.069,
+          "end": 66.549
+        },
+        {
+          "word": "than",
+          "display_index": 8,
+          "start": 66.549,
+          "end": 66.749
+        },
+        {
+          "word": "they",
+          "display_index": 9,
+          "start": 66.749,
+          "end": 67.049
+        },
+        {
+          "word": "had",
+          "display_index": 10,
+          "start": 67.049,
+          "end": 67.309
+        },
+        {
+          "word": "imagined.",
+          "display_index": 11,
+          "start": 67.309,
+          "end": 68.809
+        }
+      ],
+      "start": 62.905,
+      "end": 68.809
+    },
+    {
+      "line": 11,
+      "english": "Low wages, poor housing, and discrimination.",
+      "word_timings": [
+        {
+          "word": "Low",
+          "display_index": 0,
+          "start": 73.13,
+          "end": 73.35
+        },
+        {
+          "word": "wages,",
+          "display_index": 1,
+          "start": 73.35,
+          "end": 74.47
+        },
+        {
+          "word": "poor",
+          "display_index": 2,
+          "start": 74.47,
+          "end": 74.811
+        },
+        {
+          "word": "housing,",
+          "display_index": 3,
+          "start": 74.811,
+          "end": 75.911
+        },
+        {
+          "word": "and",
+          "display_index": 4,
+          "start": 75.911,
+          "end": 76.531
+        },
+        {
+          "word": "discrimination.",
+          "display_index": 5,
+          "start": 76.531,
+          "end": 77.791
+        }
+      ],
+      "start": 73.13,
+      "end": 77.791
+    },
+    {
+      "line": 12,
+      "english": "Still, many immigrants gradually adjusted to the new society.",
+      "word_timings": [
+        {
+          "word": "Still,",
+          "display_index": 0,
+          "start": 78.091,
+          "end": 78.531
+        },
+        {
+          "word": "many",
+          "display_index": 1,
+          "start": 78.531,
+          "end": 78.951
+        },
+        {
+          "word": "immigrants",
+          "display_index": 2,
+          "start": 78.951,
+          "end": 79.531
+        },
+        {
+          "word": "gradually",
+          "display_index": 3,
+          "start": 79.531,
+          "end": 80.591
+        },
+        {
+          "word": "adjusted",
+          "display_index": 4,
+          "start": 80.591,
+          "end": 81.219
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 81.219,
+          "end": 81.404
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 81.404,
+          "end": 81.551
+        },
+        {
+          "word": "new",
+          "display_index": 7,
+          "start": 81.551,
+          "end": 81.872
+        },
+        {
+          "word": "society.",
+          "display_index": 8,
+          "start": 81.872,
+          "end": 82.972
+        }
+      ],
+      "start": 78.091,
+      "end": 82.972
+    },
+    {
+      "line": 13,
+      "english": "Their children learned English at school and blended into the local community.",
+      "word_timings": [
+        {
+          "word": "Their",
+          "display_index": 0,
+          "start": 83.272,
+          "end": 83.552
+        },
+        {
+          "word": "children",
+          "display_index": 1,
+          "start": 83.552,
+          "end": 84.252
+        },
+        {
+          "word": "learned",
+          "display_index": 2,
+          "start": 84.252,
+          "end": 84.692
+        },
+        {
+          "word": "English",
+          "display_index": 3,
+          "start": 84.692,
+          "end": 85.192
+        },
+        {
+          "word": "at",
+          "display_index": 4,
+          "start": 85.192,
+          "end": 85.372
+        },
+        {
+          "word": "school",
+          "display_index": 5,
+          "start": 85.372,
+          "end": 85.892
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 85.892,
+          "end": 86.092
+        },
+        {
+          "word": "blended",
+          "display_index": 7,
+          "start": 86.092,
+          "end": 86.712
+        },
+        {
+          "word": "into",
+          "display_index": 8,
+          "start": 86.712,
+          "end": 87.143
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 87.143,
+          "end": 87.312
+        },
+        {
+          "word": "local",
+          "display_index": 10,
+          "start": 87.312,
+          "end": 87.952
+        },
+        {
+          "word": "community.",
+          "display_index": 11,
+          "start": 87.952,
+          "end": 88.853
+        }
+      ],
+      "start": 83.272,
+      "end": 88.853
+    },
+    {
+      "line": 14,
+      "english": "Becoming accustomed to their new surroundings, they began to build lives of their own.",
+      "word_timings": [
+        {
+          "word": "Becoming",
+          "display_index": 0,
+          "start": 89.153,
+          "end": 90.013
+        },
+        {
+          "word": "accustomed",
+          "display_index": 1,
+          "start": 90.013,
+          "end": 90.806
+        },
+        {
+          "word": "to",
+          "display_index": 2,
+          "start": 90.806,
+          "end": 90.993
+        },
+        {
+          "word": "their",
+          "display_index": 3,
+          "start": 90.993,
+          "end": 91.393
+        },
+        {
+          "word": "new",
+          "display_index": 4,
+          "start": 91.393,
+          "end": 91.993
+        },
+        {
+          "word": "surroundings,",
+          "display_index": 5,
+          "start": 91.993,
+          "end": 94.033
+        },
+        {
+          "word": "they",
+          "display_index": 6,
+          "start": 94.033,
+          "end": 94.193
+        },
+        {
+          "word": "began",
+          "display_index": 7,
+          "start": 94.193,
+          "end": 94.685
+        },
+        {
+          "word": "to",
+          "display_index": 8,
+          "start": 94.685,
+          "end": 94.873
+        },
+        {
+          "word": "build",
+          "display_index": 9,
+          "start": 94.873,
+          "end": 95.393
+        },
+        {
+          "word": "lives",
+          "display_index": 10,
+          "start": 95.393,
+          "end": 96.814
+        },
+        {
+          "word": "of",
+          "display_index": 11,
+          "start": 96.814,
+          "end": 97.074
+        },
+        {
+          "word": "their",
+          "display_index": 12,
+          "start": 97.074,
+          "end": 97.494
+        },
+        {
+          "word": "own.",
+          "display_index": 13,
+          "start": 97.494,
+          "end": 98.994
+        }
+      ],
+      "start": 89.153,
+      "end": 98.994
+    },
+    {
+      "line": 15,
+      "english": "At the same time, immigrants also kept the cultures of their ancestors.",
+      "word_timings": [
+        {
+          "word": "At",
+          "display_index": 0,
+          "start": 99.654,
+          "end": 99.805
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 99.805,
+          "end": 99.894
+        },
+        {
+          "word": "same",
+          "display_index": 2,
+          "start": 99.894,
+          "end": 100.234
+        },
+        {
+          "word": "time,",
+          "display_index": 3,
+          "start": 100.234,
+          "end": 100.774
+        },
+        {
+          "word": "immigrants",
+          "display_index": 4,
+          "start": 100.774,
+          "end": 101.354
+        },
+        {
+          "word": "also",
+          "display_index": 5,
+          "start": 101.354,
+          "end": 101.774
+        },
+        {
+          "word": "kept",
+          "display_index": 6,
+          "start": 101.774,
+          "end": 101.99
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 101.99,
+          "end": 102.134
+        },
+        {
+          "word": "cultures",
+          "display_index": 8,
+          "start": 102.134,
+          "end": 102.694
+        },
+        {
+          "word": "of",
+          "display_index": 9,
+          "start": 102.694,
+          "end": 102.814
+        },
+        {
+          "word": "their",
+          "display_index": 10,
+          "start": 102.814,
+          "end": 103.075
+        },
+        {
+          "word": "ancestors.",
+          "display_index": 11,
+          "start": 103.075,
+          "end": 104.115
+        }
+      ],
+      "start": 99.654,
+      "end": 104.115
+    },
+    {
+      "line": 16,
+      "english": "Food, music, festivals.",
+      "word_timings": [
+        {
+          "word": "Food,",
+          "display_index": 0,
+          "start": 104.415,
+          "end": 104.875
+        },
+        {
+          "word": "music,",
+          "display_index": 1,
+          "start": 104.875,
+          "end": 105.475
+        },
+        {
+          "word": "festivals.",
+          "display_index": 2,
+          "start": 105.475,
+          "end": 106.735
+        }
+      ],
+      "start": 104.415,
+      "end": 106.735
+    },
+    {
+      "line": 17,
+      "english": "Their diversity enriched the society that received them.",
+      "word_timings": [
+        {
+          "word": "Their",
+          "display_index": 0,
+          "start": 107.035,
+          "end": 107.195
+        },
+        {
+          "word": "diversity",
+          "display_index": 1,
+          "start": 107.195,
+          "end": 108.115
+        },
+        {
+          "word": "enriched",
+          "display_index": 2,
+          "start": 108.115,
+          "end": 108.594
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 108.594,
+          "end": 108.715
+        },
+        {
+          "word": "society",
+          "display_index": 4,
+          "start": 108.715,
+          "end": 109.355
+        },
+        {
+          "word": "that",
+          "display_index": 5,
+          "start": 109.355,
+          "end": 109.575
+        },
+        {
+          "word": "received",
+          "display_index": 6,
+          "start": 109.575,
+          "end": 110.055
+        },
+        {
+          "word": "them.",
+          "display_index": 7,
+          "start": 110.055,
+          "end": 111.176
+        }
+      ],
+      "start": 107.035,
+      "end": 111.176
+    },
+    {
+      "line": 18,
+      "english": "Today, cities around the world have become multicultural societies.",
+      "word_timings": [
+        {
+          "word": "Today,",
+          "display_index": 0,
+          "start": 111.476,
+          "end": 112.756
+        },
+        {
+          "word": "cities",
+          "display_index": 1,
+          "start": 112.756,
+          "end": 113.116
+        },
+        {
+          "word": "around",
+          "display_index": 2,
+          "start": 113.116,
+          "end": 113.325
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 113.325,
+          "end": 113.556
+        },
+        {
+          "word": "world",
+          "display_index": 4,
+          "start": 113.556,
+          "end": 114.016
+        },
+        {
+          "word": "have",
+          "display_index": 5,
+          "start": 114.016,
+          "end": 114.216
+        },
+        {
+          "word": "become",
+          "display_index": 6,
+          "start": 114.216,
+          "end": 114.876
+        },
+        {
+          "word": "multicultural",
+          "display_index": 7,
+          "start": 114.876,
+          "end": 115.896
+        },
+        {
+          "word": "societies.",
+          "display_index": 8,
+          "start": 115.896,
+          "end": 117.396
+        }
+      ],
+      "start": 111.476,
+      "end": 117.396
+    },
+    {
+      "line": 19,
+      "english": "For different cultures to coexist, tolerance toward one another and the effort to overcome prejudice are needed.",
+      "word_timings": [
+        {
+          "word": "For",
+          "display_index": 0,
+          "start": 118.577,
+          "end": 118.737
+        },
+        {
+          "word": "different",
+          "display_index": 1,
+          "start": 118.737,
+          "end": 119.237
+        },
+        {
+          "word": "cultures",
+          "display_index": 2,
+          "start": 119.237,
+          "end": 119.926
+        },
+        {
+          "word": "to",
+          "display_index": 3,
+          "start": 119.926,
+          "end": 120.057
+        },
+        {
+          "word": "coexist,",
+          "display_index": 4,
+          "start": 120.057,
+          "end": 121.437
+        },
+        {
+          "word": "tolerance",
+          "display_index": 5,
+          "start": 121.437,
+          "end": 122.177
+        },
+        {
+          "word": "toward",
+          "display_index": 6,
+          "start": 122.177,
+          "end": 122.977
+        },
+        {
+          "word": "one",
+          "display_index": 7,
+          "start": 122.977,
+          "end": 123.177
+        },
+        {
+          "word": "another",
+          "display_index": 8,
+          "start": 123.177,
+          "end": 124.718
+        },
+        {
+          "word": "and",
+          "display_index": 9,
+          "start": 124.718,
+          "end": 124.865
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 124.865,
+          "end": 125.098
+        },
+        {
+          "word": "effort",
+          "display_index": 11,
+          "start": 125.098,
+          "end": 126.297
+        },
+        {
+          "word": "to",
+          "display_index": 12,
+          "start": 126.297,
+          "end": 126.558
+        },
+        {
+          "word": "overcome",
+          "display_index": 13,
+          "start": 126.558,
+          "end": 127.678
+        },
+        {
+          "word": "prejudice",
+          "display_index": 14,
+          "start": 127.678,
+          "end": 128.638
+        },
+        {
+          "word": "are",
+          "display_index": 15,
+          "start": 128.638,
+          "end": 129.278
+        },
+        {
+          "word": "needed.",
+          "display_index": 16,
+          "start": 129.278,
+          "end": 130.778
+        }
+      ],
+      "start": 118.577,
+      "end": 130.778
+    },
+    {
+      "line": 20,
+      "english": "Whether a society can turn diversity into strength depends on everyone who lives in it.",
+      "word_timings": [
+        {
+          "word": "Whether",
+          "display_index": 0,
+          "start": 132.019,
+          "end": 132.33
+        },
+        {
+          "word": "a",
+          "display_index": 1,
+          "start": 132.33,
+          "end": 132.41
+        },
+        {
+          "word": "society",
+          "display_index": 2,
+          "start": 132.399,
+          "end": 133.039
+        },
+        {
+          "word": "can",
+          "display_index": 3,
+          "start": 133.039,
+          "end": 133.379
+        },
+        {
+          "word": "turn",
+          "display_index": 4,
+          "start": 133.379,
+          "end": 133.739
+        },
+        {
+          "word": "diversity",
+          "display_index": 5,
+          "start": 133.739,
+          "end": 134.699
+        },
+        {
+          "word": "into",
+          "display_index": 6,
+          "start": 134.699,
+          "end": 135.059
+        },
+        {
+          "word": "strength",
+          "display_index": 7,
+          "start": 135.059,
+          "end": 136.639
+        },
+        {
+          "word": "depends",
+          "display_index": 8,
+          "start": 136.639,
+          "end": 137.259
+        },
+        {
+          "word": "on",
+          "display_index": 9,
+          "start": 137.259,
+          "end": 137.579
+        },
+        {
+          "word": "everyone",
+          "display_index": 10,
+          "start": 137.579,
+          "end": 139.36
+        },
+        {
+          "word": "who",
+          "display_index": 11,
+          "start": 139.36,
+          "end": 139.6
+        },
+        {
+          "word": "lives",
+          "display_index": 12,
+          "start": 139.6,
+          "end": 140.04
+        },
+        {
+          "word": "in",
+          "display_index": 13,
+          "start": 140.04,
+          "end": 140.2
+        },
+        {
+          "word": "it.",
+          "display_index": 14,
+          "start": 140.2,
+          "end": 141.7
+        }
+      ],
+      "start": 132.019,
+      "end": 141.7
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

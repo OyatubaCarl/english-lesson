@@ -1,0 +1,179 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H148.md",
+  "audio": "高校生編/suno_ready/generated/audio/H148/candidate3-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 152.8,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 233,
+  "transcribed_words": 233,
+  "matched_words": 231,
+  "coverage": 0.9914,
+  "precision": 0.9914,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 232,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 182,
+      "length": 2,
+      "words": [
+        "omawari",
+        "san"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 182,
+      "actual_start": 182,
+      "expected": [
+        "omawari",
+        "san"
+      ],
+      "actual": [
+        "oma",
+        "warisan"
+      ],
+      "actual_confidence": 0.4907,
+      "substitution_words": 2,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "A police officer, that is, a cop, is an important profession that protects the order of society. They patrol the streets around the clock and react to incidents and accidents. Their work involves many areas. Investigating a crime, enforcing traffic laws, consulting with residents Responding to reports of suspicious activity while respecting civil rights There are dramatic scenes of tracking down a killer, but much of daily duty is steady, quiet work Writing documents, investigating the scene, communication with a supervisor The role of correctional facilities that manage prisoners is also important The aim is not only to punish criminals, but also to rehabilitate them But the work of police has dangerous moments Armed criminals, gunshots, explosions They often face risks to their own lives Police function only with the trust of citizens If there is violence or corruption Their reputation is lost in an instant In America, excessive violence Against black people has continued And the Black Lives Matter movement has spread This is not a rebellion against the entire police, but a voice demanding reform. Japanese police are called affectionately, Oma-warisan, the Koban. Police box system is unique in the world, providing local community-based security. Police officers too are human. They make mistakes and they have emotions. While we expect much of them, we must not demand perfection Mutual understanding and cooperation are the foundation of a safe society",
+  "segments": [
+    {
+      "start": 10.46,
+      "end": 16.9,
+      "text": "A police officer, that is, a cop, is an important profession that protects the order of society."
+    },
+    {
+      "start": 17.48,
+      "end": 21.9,
+      "text": "They patrol the streets around the clock and react to incidents and accidents."
+    },
+    {
+      "start": 22.82,
+      "end": 25.2,
+      "text": "Their work involves many areas."
+    },
+    {
+      "start": 27.44,
+      "end": 31.86,
+      "text": "Investigating a crime, enforcing traffic laws, consulting with residents"
+    },
+    {
+      "start": 32.7,
+      "end": 38.16,
+      "text": "Responding to reports of suspicious activity while respecting civil rights"
+    },
+    {
+      "start": 38.16,
+      "end": 44.34,
+      "text": "There are dramatic scenes of tracking down a killer, but much of daily duty is steady, quiet work"
+    },
+    {
+      "start": 44.34,
+      "end": 50.18,
+      "text": "Writing documents, investigating the scene, communication with a supervisor"
+    },
+    {
+      "start": 50.18,
+      "end": 57.78,
+      "text": "The role of correctional facilities that manage prisoners is also important"
+    },
+    {
+      "start": 57.78,
+      "end": 64.44,
+      "text": "The aim is not only to punish criminals, but also to rehabilitate them"
+    },
+    {
+      "start": 64.44,
+      "end": 68.86,
+      "text": "But the work of police has dangerous moments"
+    },
+    {
+      "start": 68.86,
+      "end": 72.14,
+      "text": "Armed criminals, gunshots, explosions"
+    },
+    {
+      "start": 72.14,
+      "end": 76.3,
+      "text": "They often face risks to their own lives"
+    },
+    {
+      "start": 78.52,
+      "end": 82.58,
+      "text": "Police function only with the trust of citizens"
+    },
+    {
+      "start": 83.3,
+      "end": 85.76,
+      "text": "If there is violence or corruption"
+    },
+    {
+      "start": 85.76,
+      "end": 89.08,
+      "text": "Their reputation is lost in an instant"
+    },
+    {
+      "start": 89.08,
+      "end": 92.84,
+      "text": "In America, excessive violence"
+    },
+    {
+      "start": 92.84,
+      "end": 96.82,
+      "text": "Against black people has continued"
+    },
+    {
+      "start": 96.82,
+      "end": 101.8,
+      "text": "And the Black Lives Matter movement has spread"
+    },
+    {
+      "start": 106.3,
+      "end": 112.7,
+      "text": "This is not a rebellion against the entire police, but a voice demanding reform."
+    },
+    {
+      "start": 112.98,
+      "end": 119.24,
+      "text": "Japanese police are called affectionately, Oma-warisan, the Koban."
+    },
+    {
+      "start": 119.42,
+      "end": 126.02,
+      "text": "Police box system is unique in the world, providing local community-based security."
+    },
+    {
+      "start": 126.56,
+      "end": 129.64,
+      "text": "Police officers too are human."
+    },
+    {
+      "start": 131.2,
+      "end": 135.3,
+      "text": "They make mistakes and they have emotions."
+    },
+    {
+      "start": 136.3,
+      "end": 142.06,
+      "text": "While we expect much of them, we must not demand perfection"
+    },
+    {
+      "start": 142.06,
+      "end": 152.8,
+      "text": "Mutual understanding and cooperation are the foundation of a safe society"
+    }
+  ]
+}

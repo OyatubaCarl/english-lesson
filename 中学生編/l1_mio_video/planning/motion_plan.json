@@ -1,0 +1,60 @@
+{
+  "version": "pan_zoom_v2",
+  "policy": {
+    "maximum_zoom": 1.16,
+    "minimum_zoom": 1.0,
+    "transition_seconds": 0.35,
+    "notes": "Movements stay gentle enough for bilingual subtitle reading. The original Mio video is preserved."
+  },
+  "scenes": [
+    {
+      "id": "01_mio_intro",
+      "motion": "centered_zoom_in",
+      "start_zoom": 1.0,
+      "end_zoom": 1.12
+    },
+    {
+      "id": "02_family_home",
+      "motion": "centered_zoom_out",
+      "start_zoom": 1.14,
+      "end_zoom": 1.04
+    },
+    {
+      "id": "03_pochi_intro",
+      "motion": "centered_zoom_in",
+      "start_zoom": 1.03,
+      "end_zoom": 1.16
+    },
+    {
+      "id": "04_family_loves_pochi",
+      "motion": "centered_zoom_out",
+      "start_zoom": 1.15,
+      "end_zoom": 1.05
+    },
+    {
+      "id": "05_walk_to_school",
+      "motion": "pan_left_to_right_with_zoom_in",
+      "start_zoom": 1.09,
+      "end_zoom": 1.14
+    },
+    {
+      "id": "06_music_and_books",
+      "motion": "pan_right_to_left_with_zoom_out",
+      "start_zoom": 1.14,
+      "end_zoom": 1.09
+    },
+    {
+      "id": "07_sister_flowers",
+      "motion": "centered_zoom_in",
+      "start_zoom": 1.02,
+      "end_zoom": 1.16
+    },
+    {
+      "id": "08_park_play",
+      "motion": "pan_left_to_right_with_zoom_out",
+      "start_zoom": 1.15,
+      "end_zoom": 1.08
+    }
+  ]
+}
+

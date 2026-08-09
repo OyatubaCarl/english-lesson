@@ -1,0 +1,877 @@
+{
+  "lesson": "H009",
+  "title_ja": "日曜日のピクニック",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 12,
+  "canonical_target_lines": 9,
+  "mixed_lines": 2,
+  "japanese_only_lines": 10,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 0.0,
+      "end": 4.1,
+      "english": "I was discussing the Sunday picnic with my sister.",
+      "japanese": "私は妹と日曜日のピクニックについて話し合っていた。",
+      "mixed": "私は妹と日曜日のピクニックについて話し合っていた。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私は妹と日曜日のピクニックについて話し合っていた。",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "日曜",
+              "ruby": "にちよう"
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "のピクニックについて",
+              "ruby": ""
+            },
+            {
+              "text": "話し合",
+              "ruby": "はなしあ"
+            },
+            {
+              "text": "っていた。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "discussing",
+          "canonical_word": "discuss",
+          "meaning": "議論する"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 2,
+      "start": 4.1,
+      "end": 10.24,
+      "english": "If the weather is good, we will spend the day in a meadow by the river.",
+      "japanese": "天気がよければ、川沿いの牧草地で一日を過ごします。",
+      "mixed": "weather がよければ、川沿いの牧草地で一日を過ごします。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "weather",
+          "ruby": "天気"
+        },
+        {
+          "type": "ja",
+          "text": " がよければ、川沿いの牧草地で一日を過ごします。",
+          "parts": [
+            {
+              "text": "がよければ、",
+              "ruby": ""
+            },
+            {
+              "text": "川沿",
+              "ruby": "かわぞ"
+            },
+            {
+              "text": "いの",
+              "ruby": ""
+            },
+            {
+              "text": "牧草",
+              "ruby": "ぼくそう"
+            },
+            {
+              "text": "地",
+              "ruby": "ち"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "一日",
+              "ruby": "いちにち"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "過",
+              "ruby": "す"
+            },
+            {
+              "text": "ごします。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "weather",
+          "canonical_word": "weather",
+          "meaning": "天気"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "weather",
+          "reading": "天気",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "weather",
+          "canonical_meaning": "天気"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 3,
+      "start": 10.24,
+      "end": 15.02,
+      "english": "If it rains, we will watch a movie at home.",
+      "japanese": "雨が降ったら、私たちは家で映画を見ます。",
+      "mixed": "雨が降ったら、私たちは家で映画を見ます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "雨が降ったら、私たちは家で映画を見ます。",
+          "parts": [
+            {
+              "text": "雨",
+              "ruby": "あめ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "降",
+              "ruby": "ふ"
+            },
+            {
+              "text": "ったら、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "たちは",
+              "ruby": ""
+            },
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "映画",
+              "ruby": "えいが"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "ます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 4,
+      "start": 15.02,
+      "end": 18.58,
+      "english": "Unless it rains, we will leave the house at ten in the morning.",
+      "japanese": "雨が降らなければ、私たちは朝10時に家を出発します。",
+      "mixed": "雨が降らなければ、私たちは朝10時に家を出発します。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "雨が降らなければ、私たちは朝10時に家を出発します。",
+          "parts": [
+            {
+              "text": "雨",
+              "ruby": "あめ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "降",
+              "ruby": "ふ"
+            },
+            {
+              "text": "らなければ、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "たちは",
+              "ruby": ""
+            },
+            {
+              "text": "朝",
+              "ruby": "あさ"
+            },
+            {
+              "text": "10",
+              "ruby": ""
+            },
+            {
+              "text": "時",
+              "ruby": "じ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "出発",
+              "ruby": "しゅっぱつ"
+            },
+            {
+              "text": "します。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "Unless",
+          "canonical_word": "unless",
+          "meaning": "〜しない限り"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 5,
+      "start": 18.58,
+      "end": 22.7,
+      "english": "We thought about several conditions and made a clear plan.",
+      "japanese": "私たちはいくつかの条件を考慮し、明確な計画を立てました。",
+      "mixed": "私たちはいくつかの条件を考慮し、明確な計画を立てました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私たちはいくつかの条件を考慮し、明確な計画を立てました。",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "たちはいくつかの",
+              "ruby": ""
+            },
+            {
+              "text": "条件",
+              "ruby": "じょうけん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "考慮",
+              "ruby": "こうりょ"
+            },
+            {
+              "text": "し、",
+              "ruby": ""
+            },
+            {
+              "text": "明確",
+              "ruby": "めいかく"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "計画",
+              "ruby": "けいかく"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "立",
+              "ruby": "た"
+            },
+            {
+              "text": "てました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 6,
+      "start": 22.7,
+      "end": 28.92,
+      "english": "Tomorrow morning, unless the forecast turns much worse, we will go as planned.",
+      "japanese": "明日の朝、天気がよほど悪くならない限り、予定通り行くつもりです。",
+      "mixed": "明日の朝、天気がよほど悪くならない限り、予定通り行くつもりです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "明日の朝、天気がよほど悪くならない限り、予定通り行くつもりです。",
+          "parts": [
+            {
+              "text": "明日",
+              "ruby": "あした"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "朝",
+              "ruby": "あさ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "天気",
+              "ruby": "てんき"
+            },
+            {
+              "text": "がよほど",
+              "ruby": ""
+            },
+            {
+              "text": "悪",
+              "ruby": "わる"
+            },
+            {
+              "text": "くならない",
+              "ruby": ""
+            },
+            {
+              "text": "限",
+              "ruby": "かぎ"
+            },
+            {
+              "text": "り、",
+              "ruby": ""
+            },
+            {
+              "text": "予定",
+              "ruby": "よてい"
+            },
+            {
+              "text": "通",
+              "ruby": "とお"
+            },
+            {
+              "text": "り",
+              "ruby": ""
+            },
+            {
+              "text": "行",
+              "ruby": "い"
+            },
+            {
+              "text": "くつもりです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "unless",
+          "canonical_word": "unless",
+          "meaning": "〜しない限り"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 7,
+      "start": 28.92,
+      "end": 33.4,
+      "english": "If it does rain, however, we will shift the picnic to the afternoon.",
+      "japanese": "ただし、雨が降った場合は、ピクニックを午後に変更します。",
+      "mixed": "ただし、雨が降った場合は、ピクニックを午後に変更します。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ただし、雨が降った場合は、ピクニックを午後に変更します。",
+          "parts": [
+            {
+              "text": "ただし、",
+              "ruby": ""
+            },
+            {
+              "text": "雨",
+              "ruby": "あめ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "降",
+              "ruby": "ふ"
+            },
+            {
+              "text": "った",
+              "ruby": ""
+            },
+            {
+              "text": "場合",
+              "ruby": "ばあい"
+            },
+            {
+              "text": "は、ピクニックを",
+              "ruby": ""
+            },
+            {
+              "text": "午後",
+              "ruby": "ごご"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "変更",
+              "ruby": "へんこう"
+            },
+            {
+              "text": "します。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "however",
+          "canonical_word": "however",
+          "meaning": "しかしながら"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 8,
+      "start": 33.4,
+      "end": 38.24,
+      "english": "Whenever the forecast improves, our spirits rise with it.",
+      "japanese": "天気予報が良くなると、私たちの気分も高まります。",
+      "mixed": "天気予報が良くなると、私たちの気分も高まります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "天気予報が良くなると、私たちの気分も高まります。",
+          "parts": [
+            {
+              "text": "天気",
+              "ruby": "てんき"
+            },
+            {
+              "text": "予報",
+              "ruby": "よほう"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "良",
+              "ruby": "よ"
+            },
+            {
+              "text": "くなると、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "たちの",
+              "ruby": ""
+            },
+            {
+              "text": "気分",
+              "ruby": "きぶん"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "高",
+              "ruby": "たか"
+            },
+            {
+              "text": "まります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "Whenever",
+          "canonical_word": "whenever",
+          "meaning": "〜するたび"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 9,
+      "start": 38.24,
+      "end": 42.6,
+      "english": "Mother was tired, but she said she would prepare sandwiches.",
+      "japanese": "母は疲れていたが、サンドイッチを作ると言いました。",
+      "mixed": "母は疲れていたが、サンドイッチを作ると言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "母は疲れていたが、サンドイッチを作ると言いました。",
+          "parts": [
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "疲",
+              "ruby": "つか"
+            },
+            {
+              "text": "れていたが、サンドイッチを",
+              "ruby": ""
+            },
+            {
+              "text": "作",
+              "ruby": "つく"
+            },
+            {
+              "text": "ると",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 10,
+      "start": 42.6,
+      "end": 48.06,
+      "english": "The sight of sandwiches filling an entire basket is always a pleasant one.",
+      "japanese": "かごいっぱいにサンドイッチが並ぶ光景は、いつ見ても楽しいものです。",
+      "mixed": "かごいっぱいにサンドイッチが並ぶ光景は、いつ見ても楽しいものです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "かごいっぱいにサンドイッチが並ぶ光景は、いつ見ても楽しいものです。",
+          "parts": [
+            {
+              "text": "かごいっぱいにサンドイッチが",
+              "ruby": ""
+            },
+            {
+              "text": "並",
+              "ruby": "なら"
+            },
+            {
+              "text": "ぶ",
+              "ruby": ""
+            },
+            {
+              "text": "光景",
+              "ruby": "こうけい"
+            },
+            {
+              "text": "は、いつ",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "ても",
+              "ruby": ""
+            },
+            {
+              "text": "楽",
+              "ruby": "たの"
+            },
+            {
+              "text": "しいものです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "entire",
+          "canonical_word": "entire",
+          "meaning": "全体の"
+        },
+        {
+          "english": "pleasant",
+          "canonical_word": "pleasant",
+          "meaning": "心地よい"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 11,
+      "start": 48.9,
+      "end": 54.36,
+      "english": "As Sunday approaches, my sister's face remains calm.",
+      "japanese": "日曜日が近づくにつれ、妹の顔は穏やかなままだ。",
+      "mixed": "日曜日が近づくにつれ、妹の顔は穏やかなままだ。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "日曜日が近づくにつれ、妹の顔は穏やかなままだ。",
+          "parts": [
+            {
+              "text": "日曜",
+              "ruby": "にちよう"
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "近",
+              "ruby": "ちか"
+            },
+            {
+              "text": "づくにつれ、",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "顔",
+              "ruby": "かお"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "穏",
+              "ruby": "おだ"
+            },
+            {
+              "text": "やかなままだ。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "remains",
+          "canonical_word": "remain",
+          "meaning": "残る"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 12,
+      "start": 54.36,
+      "end": 62.02,
+      "english": "The fact that everything would depend on the weather brought our family quietly together.",
+      "japanese": "すべては天気次第だという事実が、私たち家族を静かに団結させました。",
+      "mixed": "すべては weather 次第だという事実が、私たち家族を静かに団結させました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "すべては ",
+          "parts": [
+            {
+              "text": "すべては",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "weather",
+          "ruby": "天気"
+        },
+        {
+          "type": "ja",
+          "text": " 次第だという事実が、私たち家族を静かに団結させました。",
+          "parts": [
+            {
+              "text": "次第",
+              "ruby": "しだい"
+            },
+            {
+              "text": "だという",
+              "ruby": ""
+            },
+            {
+              "text": "事実",
+              "ruby": "じじつ"
+            },
+            {
+              "text": "が、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "たち",
+              "ruby": ""
+            },
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            },
+            {
+              "text": "団結",
+              "ruby": "だんけつ"
+            },
+            {
+              "text": "させました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "depend",
+          "canonical_word": "depend",
+          "meaning": "頼る"
+        },
+        {
+          "english": "weather",
+          "canonical_word": "weather",
+          "meaning": "天気"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "weather",
+          "reading": "天気",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "weather",
+          "canonical_meaning": "天気"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    }
+  ]
+}

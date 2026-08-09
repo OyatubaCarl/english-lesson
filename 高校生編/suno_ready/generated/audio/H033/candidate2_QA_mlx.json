@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H033.md",
+  "audio": "高校生編/suno_ready/generated/audio/H033/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 92.76,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 123,
+  "transcribed_words": 123,
+  "matched_words": 122,
+  "coverage": 0.9919,
+  "precision": 0.9919,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 122,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 51,
+      "length": 1,
+      "words": [
+        "and"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 51,
+      "actual_start": 51,
+      "expected": [
+        "and"
+      ],
+      "actual": [
+        "in"
+      ],
+      "actual_confidence": 0.5371,
+      "substitution_words": 1,
+      "has_content_word": false
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "Isaac Newton, in his later years, described himself as someone who still knew very little compared with the vast unknown. Few people have ever given humanity such great knowledge. The law of gravity, the three laws of motion, the development of calculus before Newton, no single theory explained both falling objects in planetary orbits. His mathematics itself rebuilt the very language of science. Yet he never allowed himself to become proud He compared himself to a child on the seashore Finding only a few interesting stones before him He said the vast ocean of truth Remained largely unexplored Newton's humility teaches us that however much one knows it is never enough Theory may extend far, but the ocean of knowledge is deeper still",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 12.7,
+      "text": "Isaac Newton, in his later years, described himself as someone who still knew very little compared with the vast unknown."
+    },
+    {
+      "start": 13.32,
+      "end": 20.82,
+      "text": "Few people have ever given humanity such great knowledge."
+    },
+    {
+      "start": 22.82,
+      "end": 30.8,
+      "text": "The law of gravity, the three laws of motion, the development of calculus before Newton,"
+    },
+    {
+      "start": 31.18,
+      "end": 36.78,
+      "text": "no single theory explained both falling objects in planetary orbits."
+    },
+    {
+      "start": 38.74,
+      "end": 43.7,
+      "text": "His mathematics itself rebuilt the very language of science."
+    },
+    {
+      "start": 45.08,
+      "end": 55.18,
+      "text": "Yet he never allowed himself to become proud He compared himself to a child on the seashore"
+    },
+    {
+      "start": 55.18,
+      "end": 59.82,
+      "text": "Finding only a few interesting stones before him"
+    },
+    {
+      "start": 59.82,
+      "end": 69.88,
+      "text": "He said the vast ocean of truth Remained largely unexplored"
+    },
+    {
+      "start": 72.74,
+      "end": 81.84,
+      "text": "Newton's humility teaches us that however much one knows it is never enough"
+    },
+    {
+      "start": 82.48,
+      "end": 92.76,
+      "text": "Theory may extend far, but the ocean of knowledge is deeper still"
+    }
+  ]
+}

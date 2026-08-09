@@ -1,0 +1,199 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H106.md",
+  "audio": "高校生編/suno_ready/generated/audio/H106/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 163.12,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0053,
+  "expected_words": 190,
+  "transcribed_words": 191,
+  "matched_words": 187,
+  "coverage": 0.9842,
+  "precision": 0.9791,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 189,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 181,
+      "length": 2,
+      "words": [
+        "its",
+        "form"
+      ]
+    },
+    {
+      "start": 108,
+      "length": 1,
+      "words": [
+        "in"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 108,
+      "actual_start": 108,
+      "expected": [
+        "in"
+      ],
+      "actual": [
+        "and"
+      ],
+      "actual_confidence": 0.3173,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 181,
+      "actual_start": 181,
+      "expected": [
+        "its",
+        "form"
+      ],
+      "actual": [
+        "it's",
+        "formed"
+      ],
+      "actual_confidence": 0.6311,
+      "substitution_words": 2,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 190,
+      "actual_start": 190,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.0603
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "The institution of marriage has evolved with time Once it was mainly a bond between families An alliance between houses Today, the love and choices of two individuals are the primary reason With each anniversary, a couple comes to know each other more deeply But not everything always goes well Conflict can accumulate And an intimate relationship can grow cold The rate of divorce has been rising around the world It is not appropriate to see This only as a negative phenomenon It is also one aspect of a society That gives priority to the happiness of the individual. The background of divorce is complicated, financial strain differences and values. The burden of raising children, it cannot be attributed to a single cause. When there are children, divorce becomes a particularly delicate issue A parent's choice has a substantial impact on a child's life Both parents carry the responsibility to consider the welfare of the child Even after they part, neither marriage nor divorce has a single correct answer What matters is an attitude of mutual respect and honest engagement Whatever it's formed, a family remains an association of love You",
+  "segments": [
+    {
+      "start": 11.54,
+      "end": 16.78,
+      "text": "The institution of marriage has evolved with time"
+    },
+    {
+      "start": 18.1,
+      "end": 22.06,
+      "text": "Once it was mainly a bond between families"
+    },
+    {
+      "start": 22.06,
+      "end": 24.64,
+      "text": "An alliance between houses"
+    },
+    {
+      "start": 24.64,
+      "end": 32.34,
+      "text": "Today, the love and choices of two individuals are the primary reason"
+    },
+    {
+      "start": 32.34,
+      "end": 39.98,
+      "text": "With each anniversary, a couple comes to know each other more deeply"
+    },
+    {
+      "start": 41.76,
+      "end": 45.72,
+      "text": "But not everything always goes well"
+    },
+    {
+      "start": 45.72,
+      "end": 49.34,
+      "text": "Conflict can accumulate"
+    },
+    {
+      "start": 49.34,
+      "end": 54.34,
+      "text": "And an intimate relationship can grow cold"
+    },
+    {
+      "start": 54.34,
+      "end": 59.06,
+      "text": "The rate of divorce has been rising around the world"
+    },
+    {
+      "start": 59.06,
+      "end": 62.1,
+      "text": "It is not appropriate to see"
+    },
+    {
+      "start": 62.1,
+      "end": 67.32,
+      "text": "This only as a negative phenomenon"
+    },
+    {
+      "start": 70.34,
+      "end": 73.78,
+      "text": "It is also one aspect of a society"
+    },
+    {
+      "start": 73.78,
+      "end": 78.3,
+      "text": "That gives priority to the happiness"
+    },
+    {
+      "start": 78.3,
+      "end": 80.94,
+      "text": "of the individual."
+    },
+    {
+      "start": 83.22,
+      "end": 91.16,
+      "text": "The background of divorce is complicated, financial strain differences and values."
+    },
+    {
+      "start": 92.26,
+      "end": 100.24,
+      "text": "The burden of raising children, it cannot be attributed to a single cause."
+    },
+    {
+      "start": 101.46,
+      "end": 108.5,
+      "text": "When there are children, divorce becomes a particularly delicate issue"
+    },
+    {
+      "start": 108.5,
+      "end": 114.68,
+      "text": "A parent's choice has a substantial impact on a child's life"
+    },
+    {
+      "start": 114.68,
+      "end": 123.14,
+      "text": "Both parents carry the responsibility to consider the welfare of the child"
+    },
+    {
+      "start": 123.14,
+      "end": 132.64,
+      "text": "Even after they part, neither marriage nor divorce has a single correct answer"
+    },
+    {
+      "start": 134.14,
+      "end": 140.24,
+      "text": "What matters is an attitude of mutual respect and honest engagement"
+    },
+    {
+      "start": 142.14,
+      "end": 152.1,
+      "text": "Whatever it's formed, a family remains an association of love"
+    },
+    {
+      "start": 156.14,
+      "end": 157.54,
+      "text": "You"
+    }
+  ]
+}

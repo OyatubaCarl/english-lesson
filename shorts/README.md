@@ -2,9 +2,11 @@
 
 本編の歌動画を、縦9:16ショートに再構成して @TeacherTacosEnglish に公開する仕組み。
 
-## 公開中のショート（2026-06-02 時点）
+## 公開中のショート（2026-08-02 時点）
 | 種別 | 動画ID | 構成 |
 |---|---|---|
+| 不規則動詞 ABC型中心・新版 | KEpKCaYbpyA | 17語30秒＋常時3形表示＋歌唱同期ハイライト |
+| 不規則動詞 AAA型 | huqt2lb8nSY | 動作画全画面＋冒頭クイズ＋歌唱同期ハイライト |
 | 不規則動詞 ABC型 | LaHcDKNKevM | 元動画を中央＋上下CM帯 |
 | 不規則動詞 ABB型 | oNyxVRL6tQU | 同上・問いかけ＋豆知識トーン |
 | 中学 L2 海での一日（訳つき）| FyO0qL4QyOI | 全画面＋冒頭フック＋日本語訳 |
@@ -34,6 +36,8 @@ python3 make_grad.py        # → /tmp/grad_overlay.png
 
 ### 3. ショート生成
 - `build_l2_short_v3.py` … 全画面＋フック＋日本語訳（L2／**雛形**）
+- `build_irregular_short_aaa.py` … 不規則動詞 AAA型（全画面＋冒頭クイズ＋歌唱同期）
+- `build_irregular_short_abc_v2.py` … 不規則動詞 ABC型中心17語（30秒＋常時3形表示＋歌唱同期）
 - `build_irregular_short_v3.py` … 不規則動詞 ABC型（元動画中央＋上下帯）
 - `build_irregular_short_v4.py` … 不規則動詞 ABB型（問いかけ＋豆知識）
 
@@ -46,6 +50,8 @@ python3 ../yt_upload_l2_short.py a unlisted
 python3 ../yt_upload_l2_short.py a public
 
 # 不規則動詞
+python3 ../yt_upload_irregular_short_abc_v2.py public # ABC型中心・新版
+python3 ../yt_upload_irregular_short_aaa.py public # AAA型（公開範囲を引数指定）
 python3 ../yt_upload_irregular_short.py       # ABC型(v3) → 後でStudioでpublic
 python3 ../yt_upload_irregular_short_v4.py     # ABB型(v4)
 ```

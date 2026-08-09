@@ -1,0 +1,180 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H015.md",
+  "audio": "高校生編/suno_ready/generated/audio/H015/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 123.0,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9875,
+  "expected_words": 160,
+  "transcribed_words": 158,
+  "matched_words": 156,
+  "coverage": 0.975,
+  "precision": 0.9873,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 159,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 95,
+      "length": 2,
+      "words": [
+        "want",
+        "to"
+      ]
+    },
+    {
+      "start": 153,
+      "length": 2,
+      "words": [
+        "want",
+        "to"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 95,
+      "actual_start": 95,
+      "expected": [
+        "want",
+        "to"
+      ],
+      "actual": [
+        "wanna"
+      ],
+      "actual_confidence": 0.5186,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 153,
+      "actual_start": 152,
+      "expected": [
+        "want",
+        "to"
+      ],
+      "actual": [
+        "wanna"
+      ],
+      "actual_confidence": 0.7612,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "On the last evening of the year, I stopped by a small temple I had visited it at the same time last year This is my moment of reflection Looking back on the year I think I ought to have been kinder to others I ought not to have said some of the words I said The younger me used to be short-tempered I used to snap at my sister almost every day Whenever I recall that, I feel ashamed But my sister would always respond with quiet patience In the new year, I wanna be more modest I want to express more gratitude to my family I want to adopt a small habit To rise a little earlier and breathe deeply The temple bell rang I pressed my hands together And quietly recalled My late grandfather He used to say A person does not need to speak many words I wanna inherit that quiet advice now",
+  "segments": [
+    {
+      "start": 12.2,
+      "end": 18.6,
+      "text": "On the last evening of the year, I stopped by a small temple"
+    },
+    {
+      "start": 18.6,
+      "end": 23.62,
+      "text": "I had visited it at the same time last year"
+    },
+    {
+      "start": 26.5,
+      "end": 29.9,
+      "text": "This is my moment of reflection"
+    },
+    {
+      "start": 31.94,
+      "end": 34.42,
+      "text": "Looking back on the year"
+    },
+    {
+      "start": 34.42,
+      "end": 37.66,
+      "text": "I think I ought to have been kinder to others"
+    },
+    {
+      "start": 37.66,
+      "end": 43.16,
+      "text": "I ought not to have said some of the words I said"
+    },
+    {
+      "start": 44.46,
+      "end": 49.28,
+      "text": "The younger me used to be short-tempered"
+    },
+    {
+      "start": 50.56,
+      "end": 55.3,
+      "text": "I used to snap at my sister almost every day"
+    },
+    {
+      "start": 57.2,
+      "end": 61.96,
+      "text": "Whenever I recall that, I feel ashamed"
+    },
+    {
+      "start": 63.36,
+      "end": 68.96,
+      "text": "But my sister would always respond with quiet patience"
+    },
+    {
+      "start": 68.96,
+      "end": 75.0,
+      "text": "In the new year, I wanna be more modest"
+    },
+    {
+      "start": 77.16,
+      "end": 82.94,
+      "text": "I want to express more gratitude to my family"
+    },
+    {
+      "start": 82.94,
+      "end": 87.72,
+      "text": "I want to adopt a small habit"
+    },
+    {
+      "start": 87.72,
+      "end": 94.26,
+      "text": "To rise a little earlier and breathe deeply"
+    },
+    {
+      "start": 94.26,
+      "end": 97.3,
+      "text": "The temple bell rang"
+    },
+    {
+      "start": 97.3,
+      "end": 101.56,
+      "text": "I pressed my hands together"
+    },
+    {
+      "start": 101.56,
+      "end": 104.76,
+      "text": "And quietly recalled"
+    },
+    {
+      "start": 104.76,
+      "end": 108.2,
+      "text": "My late grandfather"
+    },
+    {
+      "start": 108.92,
+      "end": 111.44,
+      "text": "He used to say"
+    },
+    {
+      "start": 111.44,
+      "end": 116.34,
+      "text": "A person does not need to speak many words"
+    },
+    {
+      "start": 118.04,
+      "end": 123.0,
+      "text": "I wanna inherit that quiet advice now"
+    }
+  ]
+}

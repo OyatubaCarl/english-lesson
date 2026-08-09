@@ -1,0 +1,38 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+ScaledBorderAndShadow: yes
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Title,Helvetica Neue,76,&H00FFFFFF,&H000000FF,&HAA000000,&H70000000,-1,0,0,0,100,100,1,0,1,4,2,5,100,100,20,1
+Style: TitleJa,Hiragino Sans,45,&H00FFFFFF,&H000000FF,&HAA000000,&H70000000,-1,0,0,0,100,100,1,0,1,3,1,5,100,100,20,1
+Style: Header,Helvetica Neue,30,&H00FFFFFF,&H000000FF,&HAA000000,&H70000000,-1,0,0,0,100,100,0,0,1,2,1,7,48,48,35,1
+Style: English,Helvetica Neue,51,&H00FFFFFF,&H000000FF,&HCC000000,&H00000000,-1,0,0,0,100,100,0,0,1,3,1,2,80,80,155,1
+Style: Japanese,Hiragino Sans,39,&H00D8F3FF,&H000000FF,&HCC000000,&H00000000,-1,0,0,0,100,100,0,0,1,3,1,2,70,70,50,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 2,0:00:00.50,-1:59:59.60,Title,,0,0,0,,{\pos(960,465)}H008  
+Dialogue: 2,0:00:00.50,-1:59:59.60,TitleJa,,0,0,0,,{\pos(960,575)}夕食のテーブル
+Dialogue: 2,0:00:00.00,0:01:19.92,Header,,0,0,0,,H008  •  will と be going to の使い分け
+Dialogue: 2,0:00:00.00,0:00:04.98,English,,0,0,0,,In the evening the family gathered at the dinner table.
+Dialogue: 2,0:00:04.98,0:00:09.64,English,,0,0,0,,Mother was finishing the meal preparations.
+Dialogue: 2,0:00:09.64,0:00:14.04,English,,0,0,0,,Father said, I am going to have a drink tonight.
+Dialogue: 2,0:00:14.04,0:00:17.98,English,,0,0,0,,He had already made up his mind.
+Dialogue: 2,0:00:17.98,0:00:22.60,English,,0,0,0,,Sister wanted to discuss the trip.
+Dialogue: 2,0:00:22.60,0:00:27.40,English,,0,0,0,,She proposed that I go with her.
+Dialogue: 2,0:00:28.36,0:00:33.86,English,,0,0,0,,My brother offered, I will drive you both to the airport next weekend.
+Dialogue: 2,0:00:33.86,0:00:37.06,English,,0,0,0,,Mother mentioned a new recipe.
+Dialogue: 2,0:00:38.14,0:00:42.00,English,,0,0,0,,Father admitted, If you make pasta, I will help.
+Dialogue: 2,0:00:42.00,0:00:43.88,English,,0,0,0,,He is good at cooking.
+Dialogue: 2,0:00:43.88,0:00:46.50,English,,0,0,0,,What shall we do about dinner tomorrow?
+Dialogue: 2,0:00:46.96,0:00:47.98,English,,0,0,0,,sister asked.
+Dialogue: 2,0:00:47.98,0:00:52.04,English,,0,0,0,,Mother answered at once, I will make it.
+Dialogue: 2,0:00:52.04,0:00:58.16,English,,0,0,0,,I added my own suggestion: I will make a salad.
+Dialogue: 2,0:00:58.16,0:01:02.54,English,,0,0,0,,Several small decisions fell into place around the table.
+Dialogue: 2,0:01:02.54,0:01:07.38,English,,0,0,0,,Father, from his usual seat, said he would prefer fish.
+Dialogue: 2,0:01:07.38,0:01:13.06,English,,0,0,0,,Sister gave him a small nod and confirmed the plan.
+Dialogue: 2,0:01:13.06,0:01:19.72,English,,0,0,0,,Dinner flowed slowly, more slowly than usual.

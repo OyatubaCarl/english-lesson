@@ -1,0 +1,234 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H100.md",
+  "audio": "高校生編/suno_ready/generated/audio/H100/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 124.561,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0058,
+  "expected_words": 172,
+  "transcribed_words": 173,
+  "matched_words": 167,
+  "coverage": 0.9709,
+  "precision": 0.9653,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 171,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 89,
+      "length": 2,
+      "words": [
+        "and",
+        "gazed"
+      ]
+    },
+    {
+      "start": 44,
+      "length": 1,
+      "words": [
+        "fifteenth"
+      ]
+    },
+    {
+      "start": 61,
+      "length": 1,
+      "words": [
+        "brushstroke"
+      ]
+    },
+    {
+      "start": 142,
+      "length": 1,
+      "words": [
+        "art"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 44,
+      "actual_start": 44,
+      "expected": [
+        "fifteenth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.9178,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 61,
+      "actual_start": 61,
+      "expected": [
+        "brushstroke"
+      ],
+      "actual": [
+        "brush",
+        "stroke"
+      ],
+      "actual_confidence": 0.8156,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 89,
+      "actual_start": 90,
+      "expected": [
+        "and",
+        "gazed"
+      ],
+      "actual": [
+        "engaged"
+      ],
+      "actual_confidence": 0.4392,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 142,
+      "actual_start": 142,
+      "expected": [
+        "art"
+      ],
+      "actual": [
+        "heart"
+      ],
+      "actual_confidence": 0.7137,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 147,
+      "actual_start": 147,
+      "expected": [],
+      "actual": [
+        "this"
+      ],
+      "actual_confidence": 0.3498
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "That day, a special exhibition was being held at the museum Valuable paintings brought from Europe were being exhibited in Japan for the first time At the entrance I bought a ticket and walked along the route In the first room, portraits from the 15th century were on display The faces of kings and nobles painted with a primitive yet powerful brush stroke The next room held impressionist paintings Monet, Renoir, Degas Attempts to capture the light appeared Each with the personality of its artist I stopped before one painting Engaged at it for a long time Other visitors passed by Whispering something The painting awakened, remained with me A female guide was explaining the historical background of the paintings to newly arrived students They were eagerly taking notes When I left the museum I carried a profound satisfaction in my heart Heart, across time and place This quietly brings relief to the heart of the viewer It is not a luxury, but one of the forms of nourishment That human beings need",
+  "segments": [
+    {
+      "start": 9.92,
+      "end": 16.8,
+      "text": "That day, a special exhibition was being held at the museum"
+    },
+    {
+      "start": 18.58,
+      "end": 26.36,
+      "text": "Valuable paintings brought from Europe were being exhibited in Japan for the first time"
+    },
+    {
+      "start": 26.36,
+      "end": 31.04,
+      "text": "At the entrance I bought a ticket and walked along the route"
+    },
+    {
+      "start": 31.04,
+      "end": 37.44,
+      "text": "In the first room, portraits from the 15th century were on display"
+    },
+    {
+      "start": 39.36,
+      "end": 46.0,
+      "text": "The faces of kings and nobles painted with a primitive yet powerful brush stroke"
+    },
+    {
+      "start": 46.0,
+      "end": 49.86,
+      "text": "The next room held impressionist paintings"
+    },
+    {
+      "start": 49.86,
+      "end": 53.58,
+      "text": "Monet, Renoir, Degas"
+    },
+    {
+      "start": 57.66,
+      "end": 60.64,
+      "text": "Attempts to capture the light appeared"
+    },
+    {
+      "start": 60.64,
+      "end": 63.9,
+      "text": "Each with the personality of its artist"
+    },
+    {
+      "start": 63.9,
+      "end": 66.38,
+      "text": "I stopped before one painting"
+    },
+    {
+      "start": 66.38,
+      "end": 69.66,
+      "text": "Engaged at it for a long time"
+    },
+    {
+      "start": 69.66,
+      "end": 72.28,
+      "text": "Other visitors passed by"
+    },
+    {
+      "start": 72.86,
+      "end": 74.4,
+      "text": "Whispering something"
+    },
+    {
+      "start": 74.4,
+      "end": 77.88,
+      "text": "The painting awakened, remained with me"
+    },
+    {
+      "start": 77.88,
+      "end": 85.0,
+      "text": "A female guide was explaining the historical background of the paintings to newly arrived students"
+    },
+    {
+      "start": 85.0,
+      "end": 88.36,
+      "text": "They were eagerly taking notes"
+    },
+    {
+      "start": 88.88,
+      "end": 91.4,
+      "text": "When I left the museum"
+    },
+    {
+      "start": 91.4,
+      "end": 97.88,
+      "text": "I carried a profound satisfaction in my heart"
+    },
+    {
+      "start": 97.88,
+      "end": 102.28,
+      "text": "Heart, across time and place"
+    },
+    {
+      "start": 102.28,
+      "end": 106.92,
+      "text": "This quietly brings relief to the heart of the viewer"
+    },
+    {
+      "start": 106.92,
+      "end": 113.22,
+      "text": "It is not a luxury, but one of the forms of nourishment"
+    },
+    {
+      "start": 114.28,
+      "end": 116.64,
+      "text": "That human beings need"
+    }
+  ]
+}

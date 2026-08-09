@@ -1,0 +1,884 @@
+{
+  "lesson": 23,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L23/planning/lesson.json",
+  "title_en": "Lesson 23  Friday Night",
+  "title_ja": "金曜日の夜",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 11,
+  "lines": [
+    {
+      "line": 1,
+      "english": "On Friday evening, I have just finished my long homework.",
+      "source_ja": "金曜日の夜、長かった宿題をちょうど終えたところ。",
+      "display_ja": "金曜日の夜、長かった宿題をちょうど終えたところ。",
+      "corrected_translation": false,
+      "mixed": "金曜日の夜、長かった宿題を just finished したところです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "金曜日の夜、長かった宿題を ",
+          "parts": [
+            {
+              "text": "金曜",
+              "ruby": "きんよう"
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "夜",
+              "ruby": "よる"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "長",
+              "ruby": "なが"
+            },
+            {
+              "text": "かった",
+              "ruby": ""
+            },
+            {
+              "text": "宿題",
+              "ruby": "しゅくだい"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "just",
+          "ruby": "ちょうど"
+        },
+        {
+          "type": "ja",
+          "text": " ",
+          "parts": []
+        },
+        {
+          "type": "en",
+          "text": "finished",
+          "ruby": "終えた"
+        },
+        {
+          "type": "ja",
+          "text": " したところです。",
+          "parts": [
+            {
+              "text": "したところです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "just",
+          "canonical_word": "just",
+          "meaning": "ちょうど"
+        },
+        {
+          "english": "finished",
+          "canonical_word": "finished",
+          "meaning": "終えた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "just",
+          "reading": "ちょうど",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "just",
+          "canonical_meaning": "ちょうど"
+        },
+        {
+          "english": "finished",
+          "reading": "終えた",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "finished",
+          "canonical_meaning": "終えた"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "english": "I put down my pencil and took a deep breath.",
+      "source_ja": "わたしはえんぴつを置いて、深く息を吐きました。",
+      "display_ja": "わたしはえんぴつを置いて、深く息を吐きました。",
+      "corrected_translation": false,
+      "mixed": "わたしはえんぴつを置いて、深く息を吐きました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしはえんぴつを置いて、深く息を吐きました。",
+          "parts": [
+            {
+              "text": "わたしはえんぴつを",
+              "ruby": ""
+            },
+            {
+              "text": "置",
+              "ruby": "お"
+            },
+            {
+              "text": "いて、",
+              "ruby": ""
+            },
+            {
+              "text": "深",
+              "ruby": "ふか"
+            },
+            {
+              "text": "く",
+              "ruby": ""
+            },
+            {
+              "text": "息",
+              "ruby": "いき"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "吐",
+              "ruby": "は"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 3,
+      "english": "“Have you already finished all your homework?” I asked my sister.",
+      "source_ja": "わたしは妹にも、もう宿題を終えたのかと聞きました。",
+      "display_ja": "わたしは妹にも、もう宿題を終えたのかと聞きました。",
+      "corrected_translation": false,
+      "mixed": "妹に「宿題は already finished したの？」と聞きました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "妹に「宿題は ",
+          "parts": [
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "に「",
+              "ruby": ""
+            },
+            {
+              "text": "宿題",
+              "ruby": "しゅくだい"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "already",
+          "ruby": "もう"
+        },
+        {
+          "type": "ja",
+          "text": " ",
+          "parts": []
+        },
+        {
+          "type": "en",
+          "text": "finished",
+          "ruby": "終えた"
+        },
+        {
+          "type": "ja",
+          "text": " したの？」と聞きました。",
+          "parts": [
+            {
+              "text": "したの？」と",
+              "ruby": ""
+            },
+            {
+              "text": "聞",
+              "ruby": "き"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "already",
+          "canonical_word": "already",
+          "meaning": "もう"
+        },
+        {
+          "english": "finished",
+          "canonical_word": "finished",
+          "meaning": "終えた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "already",
+          "reading": "もう",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "already",
+          "canonical_meaning": "もう"
+        },
+        {
+          "english": "finished",
+          "reading": "終えた",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "finished",
+          "canonical_meaning": "終えた"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "“Yes, I have already finished it before dinner,” she answered with a smile.",
+      "source_ja": "妹は「うん、夕食の前にもう終わらせたよ」と笑顔で答えました。",
+      "display_ja": "妹は「うん、夕食の前にもう終わらせたよ」と笑顔で答えました。",
+      "corrected_translation": false,
+      "mixed": "妹は「うん、夕食前に already finished したよ」と笑顔で答えました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "妹は「うん、夕食前に ",
+          "parts": [
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "は「うん、",
+              "ruby": ""
+            },
+            {
+              "text": "夕食",
+              "ruby": "ゆうしょく"
+            },
+            {
+              "text": "前",
+              "ruby": "まえ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "already",
+          "ruby": "もう"
+        },
+        {
+          "type": "ja",
+          "text": " ",
+          "parts": []
+        },
+        {
+          "type": "en",
+          "text": "finished",
+          "ruby": "終えた"
+        },
+        {
+          "type": "ja",
+          "text": " したよ」と笑顔で答えました。",
+          "parts": [
+            {
+              "text": "したよ」と",
+              "ruby": ""
+            },
+            {
+              "text": "笑顔",
+              "ruby": "えがお"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "答",
+              "ruby": "こた"
+            },
+            {
+              "text": "えました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "already",
+          "canonical_word": "already",
+          "meaning": "もう"
+        },
+        {
+          "english": "finished",
+          "canonical_word": "finished",
+          "meaning": "終えた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "already",
+          "reading": "もう",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "already",
+          "canonical_meaning": "もう"
+        },
+        {
+          "english": "finished",
+          "reading": "終えた",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "finished",
+          "canonical_meaning": "終えた"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "But my brother was still reading a book.",
+      "source_ja": "でも、兄はまだ本を読んでいました。",
+      "display_ja": "でも、兄はまだ本を読んでいました。",
+      "corrected_translation": false,
+      "mixed": "でも、兄はまだ本を読んでいました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "でも、兄はまだ本を読んでいました。",
+          "parts": [
+            {
+              "text": "でも、",
+              "ruby": ""
+            },
+            {
+              "text": "兄",
+              "ruby": "あに"
+            },
+            {
+              "text": "はまだ",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "読",
+              "ruby": "よ"
+            },
+            {
+              "text": "んでいました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 6,
+      "english": "“Have you read that English book yet?” I asked.",
+      "source_ja": "「その英語の本はもう読んだ？」とわたしは聞きました。",
+      "display_ja": "「その英語の本はもう読んだ？」とわたしは聞きました。",
+      "corrected_translation": false,
+      "mixed": "「その英語の本は yet 読んだ？」とわたしは聞きました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「その英語の本は ",
+          "parts": [
+            {
+              "text": "「その",
+              "ruby": ""
+            },
+            {
+              "text": "英語",
+              "ruby": "えいご"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "yet",
+          "ruby": "もう"
+        },
+        {
+          "type": "ja",
+          "text": " 読んだ？」とわたしは聞きました。",
+          "parts": [
+            {
+              "text": "読",
+              "ruby": "よ"
+            },
+            {
+              "text": "んだ？」とわたしは",
+              "ruby": ""
+            },
+            {
+              "text": "聞",
+              "ruby": "き"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "yet",
+          "canonical_word": "yet",
+          "meaning": "もう(疑)・まだ(否)"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "yet",
+          "reading": "もう",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "yet",
+          "canonical_meaning": "もう(疑)・まだ(否)"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "“No, I have not read it yet,” he answered.",
+      "source_ja": "「いや、まだ読んでいないよ」と兄は答えました。",
+      "display_ja": "「いや、まだ読んでいないよ」と兄は答えました。",
+      "corrected_translation": false,
+      "mixed": "「いや、 yet 読んでいないよ」と兄は答えました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「いや、 ",
+          "parts": [
+            {
+              "text": "「いや、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "yet",
+          "ruby": "まだ"
+        },
+        {
+          "type": "ja",
+          "text": " 読んでいないよ」と兄は答えました。",
+          "parts": [
+            {
+              "text": "読",
+              "ruby": "よ"
+            },
+            {
+              "text": "んでいないよ」と",
+              "ruby": ""
+            },
+            {
+              "text": "兄",
+              "ruby": "あに"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "答",
+              "ruby": "こた"
+            },
+            {
+              "text": "えました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "yet",
+          "canonical_word": "yet",
+          "meaning": "もう(疑)・まだ(否)"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "yet",
+          "reading": "まだ",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "yet",
+          "canonical_meaning": "もう(疑)・まだ(否)"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "From the kitchen, my mother called, “Is dinner ready?”",
+      "source_ja": "台所から母が「夕ご飯できた?」と声をかけてきました。",
+      "display_ja": "台所から母が「夕ご飯できた?」と声をかけてきました。",
+      "corrected_translation": false,
+      "mixed": "台所から母が「夕ご飯できた?」と声をかけてきました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "台所から母が「夕ご飯できた?」と声をかけてきました。",
+          "parts": [
+            {
+              "text": "台所",
+              "ruby": "だいどころ"
+            },
+            {
+              "text": "から",
+              "ruby": ""
+            },
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "が「",
+              "ruby": ""
+            },
+            {
+              "text": "夕ご飯",
+              "ruby": "ゆうごはん"
+            },
+            {
+              "text": "できた?」と",
+              "ruby": ""
+            },
+            {
+              "text": "声",
+              "ruby": "こえ"
+            },
+            {
+              "text": "をかけてきました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 9,
+      "english": "“Yes, I have just finished making it,” she answered.",
+      "source_ja": "「うん、ちょうど今作り終わったよ」と母自身が答えました。",
+      "display_ja": "「うん、ちょうど今作り終わったよ」と母自身が答えました。",
+      "corrected_translation": false,
+      "mixed": "「うん、just finished したところ」と母が答えました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「うん、",
+          "parts": [
+            {
+              "text": "「うん、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "just",
+          "ruby": "ちょうど"
+        },
+        {
+          "type": "ja",
+          "text": " ",
+          "parts": []
+        },
+        {
+          "type": "en",
+          "text": "finished",
+          "ruby": "終えた"
+        },
+        {
+          "type": "ja",
+          "text": " したところ」と母が答えました。",
+          "parts": [
+            {
+              "text": "したところ」と",
+              "ruby": ""
+            },
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "答",
+              "ruby": "こた"
+            },
+            {
+              "text": "えました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "just",
+          "canonical_word": "just",
+          "meaning": "ちょうど"
+        },
+        {
+          "english": "finished",
+          "canonical_word": "finished",
+          "meaning": "終えた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "just",
+          "reading": "ちょうど",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "just",
+          "canonical_meaning": "ちょうど"
+        },
+        {
+          "english": "finished",
+          "reading": "終えた",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "finished",
+          "canonical_meaning": "終えた"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "My father came home early and was watering plants in the garden.",
+      "source_ja": "父は早く帰ってきて、庭で植物に水をあげていました。",
+      "display_ja": "父は早く帰ってきて、庭で植物に水をあげていました。",
+      "corrected_translation": false,
+      "mixed": "父は早く帰ってきて、庭で植物に水をあげていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "父は早く帰ってきて、庭で植物に水をあげていました。",
+          "parts": [
+            {
+              "text": "父",
+              "ruby": "ちち"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "早",
+              "ruby": "はや"
+            },
+            {
+              "text": "く",
+              "ruby": ""
+            },
+            {
+              "text": "帰",
+              "ruby": "かえ"
+            },
+            {
+              "text": "ってきて、",
+              "ruby": ""
+            },
+            {
+              "text": "庭",
+              "ruby": "にわ"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "植物",
+              "ruby": "しょくぶつ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "水",
+              "ruby": "みず"
+            },
+            {
+              "text": "をあげていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 11,
+      "english": "“I have already finished all my work for today,” he said.",
+      "source_ja": "「今日の仕事はもう全部終わったよ」と言いました。",
+      "display_ja": "「今日の仕事はもう全部終わったよ」と言いました。",
+      "corrected_translation": false,
+      "mixed": "「今日の仕事は already finished したよ」と父が言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「今日の仕事は ",
+          "parts": [
+            {
+              "text": "「",
+              "ruby": ""
+            },
+            {
+              "text": "今日",
+              "ruby": "きょう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "仕事",
+              "ruby": "しごと"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "already",
+          "ruby": "もう"
+        },
+        {
+          "type": "ja",
+          "text": " ",
+          "parts": []
+        },
+        {
+          "type": "en",
+          "text": "finished",
+          "ruby": "終えた"
+        },
+        {
+          "type": "ja",
+          "text": " したよ」と父が言いました。",
+          "parts": [
+            {
+              "text": "したよ」と",
+              "ruby": ""
+            },
+            {
+              "text": "父",
+              "ruby": "ちち"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "already",
+          "canonical_word": "already",
+          "meaning": "もう"
+        },
+        {
+          "english": "finished",
+          "canonical_word": "finished",
+          "meaning": "終えた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "already",
+          "reading": "もう",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "already",
+          "canonical_meaning": "もう"
+        },
+        {
+          "english": "finished",
+          "reading": "終えた",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "finished",
+          "canonical_meaning": "終えた"
+        }
+      ]
+    }
+  ]
+}

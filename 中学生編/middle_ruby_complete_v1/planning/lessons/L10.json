@@ -1,0 +1,783 @@
+{
+  "lesson": 10,
+  "source_config": "中学生編/mio_video_l2_l10_sentence_v2/L10/planning/lesson.json",
+  "title_en": "Lesson 10  The Mountain Promise",
+  "title_ja": "山での約束",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 11,
+  "lines": [
+    {
+      "line": 1,
+      "english": "On the morning of the trip, our teacher made an important promise with us.",
+      "source_ja": "遠足の朝、先生はわたしたちと大切な約束をしました。",
+      "display_ja": "遠足の朝、先生はわたしたちと大切な約束をしました。",
+      "corrected_translation": false,
+      "mixed": "遠足の朝、先生はわたしたちと大切な約束をしました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "遠足の朝、先生はわたしたちと大切な約束をしました。",
+          "parts": [
+            {
+              "text": "遠足",
+              "ruby": "えんそく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "朝",
+              "ruby": "あさ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "先生",
+              "ruby": "せんせい"
+            },
+            {
+              "text": "はわたしたちと",
+              "ruby": ""
+            },
+            {
+              "text": "大切",
+              "ruby": "たいせつ"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "約束",
+              "ruby": "やくそく"
+            },
+            {
+              "text": "をしました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 2,
+      "english": "“We must protect the nature of the mountain together,” he said.",
+      "source_ja": "「山の自然を、みんなで守らなければなりません」と先生は言いました。",
+      "display_ja": "「山の自然を、みんなで守らなければなりません」と先生は言いました。",
+      "corrected_translation": false,
+      "mixed": "「山の nature を、みんなで protect しなければなりません」と先生は言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「山の ",
+          "parts": [
+            {
+              "text": "「",
+              "ruby": ""
+            },
+            {
+              "text": "山",
+              "ruby": "やま"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "nature",
+          "ruby": "自然"
+        },
+        {
+          "type": "ja",
+          "text": " を、みんなで ",
+          "parts": [
+            {
+              "text": "を、みんなで",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "protect",
+          "ruby": "守らなけれ"
+        },
+        {
+          "type": "ja",
+          "text": " しなけれ",
+          "parts": [
+            {
+              "text": "しなけれ",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "ばなりません」と先生は言いました。",
+          "parts": [
+            {
+              "text": "ばなりません」と",
+              "ruby": ""
+            },
+            {
+              "text": "先生",
+              "ruby": "せんせい"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "protect",
+          "canonical_word": "protect",
+          "meaning": "守る"
+        },
+        {
+          "english": "nature",
+          "canonical_word": "nature",
+          "meaning": "自然"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "nature",
+          "reading": "自然",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "nature",
+          "canonical_meaning": "自然"
+        },
+        {
+          "english": "protect",
+          "reading": "守らなけれ",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "protect",
+          "canonical_meaning": "守る"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "In the mountain, we must not hurt the animals.",
+      "source_ja": "山では、動物を傷つけてはいけません。",
+      "display_ja": "山では、動物を傷つけてはいけません。",
+      "corrected_translation": false,
+      "mixed": "山では、動物を hurt してはいけません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "山では、動物を ",
+          "parts": [
+            {
+              "text": "山",
+              "ruby": "やま"
+            },
+            {
+              "text": "では、",
+              "ruby": ""
+            },
+            {
+              "text": "動物",
+              "ruby": "どうぶつ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "hurt",
+          "ruby": "傷つける"
+        },
+        {
+          "type": "ja",
+          "text": " してはいけません。",
+          "parts": [
+            {
+              "text": "してはいけません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "hurt",
+          "canonical_word": "hurt",
+          "meaning": "傷つける"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "hurt",
+          "reading": "傷つける",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "hurt",
+          "canonical_meaning": "傷つける"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "We must read each sign in the forest and keep the rules.",
+      "source_ja": "森の標識を一つずつ読み、決まりを守らなければなりません。",
+      "display_ja": "森の標識を一つずつ読み、決まりを守らなければなりません。",
+      "corrected_translation": false,
+      "mixed": "森の sign を一つずつ読み、rules を keep しなければなりません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "森の ",
+          "parts": [
+            {
+              "text": "森",
+              "ruby": "もり"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "sign",
+          "ruby": "標識"
+        },
+        {
+          "type": "ja",
+          "text": " を一つずつ読み、",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "ひと"
+            },
+            {
+              "text": "つずつ",
+              "ruby": ""
+            },
+            {
+              "text": "読",
+              "ruby": "よ"
+            },
+            {
+              "text": "み、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "rules",
+          "ruby": "ルール"
+        },
+        {
+          "type": "ja",
+          "text": " を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "keep",
+          "ruby": "守る"
+        },
+        {
+          "type": "ja",
+          "text": " しなければなりません。",
+          "parts": [
+            {
+              "text": "しなければなりません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "sign",
+          "canonical_word": "sign",
+          "meaning": "標識"
+        },
+        {
+          "english": "keep",
+          "canonical_word": "keep",
+          "meaning": "守る"
+        },
+        {
+          "english": "rules",
+          "canonical_word": "rule",
+          "meaning": "ルール"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "sign",
+          "reading": "標識",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "sign",
+          "canonical_meaning": "標識"
+        },
+        {
+          "english": "keep",
+          "reading": "守る",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "keep",
+          "canonical_meaning": "守る"
+        },
+        {
+          "english": "rules",
+          "reading": "ルール",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "rule",
+          "canonical_meaning": "ルール"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "“Must we read every sign?”",
+      "source_ja": "「すべての標識を読まなければなりませんか？」",
+      "display_ja": "「すべての標識を読まなければなりませんか？」",
+      "corrected_translation": false,
+      "mixed": "「すべての sign を読まなければなりませんか？」",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「すべての ",
+          "parts": [
+            {
+              "text": "「すべての",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "sign",
+          "ruby": "標識"
+        },
+        {
+          "type": "ja",
+          "text": " を読まなければなりませんか？」",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "読",
+              "ruby": "よ"
+            },
+            {
+              "text": "まなければなりませんか？」",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "sign",
+          "canonical_word": "sign",
+          "meaning": "標識"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "sign",
+          "reading": "標識",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "sign",
+          "canonical_meaning": "標識"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "asked my friend.",
+      "source_ja": "と友達がたずねました。",
+      "display_ja": "と友達がたずねました。",
+      "corrected_translation": false,
+      "mixed": "と友達がたずねました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "と友達がたずねました。",
+          "parts": [
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "友達",
+              "ruby": "ともだち"
+            },
+            {
+              "text": "がたずねました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 7,
+      "english": "“Yes, we must,” answered the teacher.",
+      "source_ja": "「はい、そうです」と先生は答えました。",
+      "display_ja": "「はい、そうです」と先生は答えました。",
+      "corrected_translation": false,
+      "mixed": "「はい、そうです」と先生は答えました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「はい、そうです」と先生は答えました。",
+          "parts": [
+            {
+              "text": "「はい、そうです」と",
+              "ruby": ""
+            },
+            {
+              "text": "先生",
+              "ruby": "せんせい"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "答",
+              "ruby": "こた"
+            },
+            {
+              "text": "えました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 8,
+      "english": "Near a fire, we must not touch the flames.",
+      "source_ja": "火の近くでは、炎に触れてはいけません。",
+      "display_ja": "火の近くでは、炎に触れてはいけません。",
+      "corrected_translation": false,
+      "mixed": "fire の近くでは、炎に触れてはいけません。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "fire",
+          "ruby": "火"
+        },
+        {
+          "type": "ja",
+          "text": " の近くでは、炎に触れてはいけません。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "近",
+              "ruby": "ちか"
+            },
+            {
+              "text": "くでは、",
+              "ruby": ""
+            },
+            {
+              "text": "炎",
+              "ruby": "ほのお"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "触",
+              "ruby": "ふ"
+            },
+            {
+              "text": "れてはいけません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "fire",
+          "canonical_word": "fire",
+          "meaning": "火"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "fire",
+          "reading": "火",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "fire",
+          "canonical_meaning": "火"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "It is very dangerous.",
+      "source_ja": "とても危険だからです。",
+      "display_ja": "とても危険だからです。",
+      "corrected_translation": false,
+      "mixed": "とても dangerous だからです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "とても ",
+          "parts": [
+            {
+              "text": "とても",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "dangerous",
+          "ruby": "危険な"
+        },
+        {
+          "type": "ja",
+          "text": " だからです。",
+          "parts": [
+            {
+              "text": "だからです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "dangerous",
+          "canonical_word": "dangerous",
+          "meaning": "危険な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "dangerous",
+          "reading": "危険な",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "dangerous",
+          "canonical_meaning": "危険な"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "When we walk down or cross the road, we must always be careful.",
+      "source_ja": "下り道を歩くときや道路を渡るときは、いつも注意しなければなりません。",
+      "display_ja": "下り道を歩くときや道路を渡るときは、いつも注意しなければなりません。",
+      "corrected_translation": false,
+      "mixed": "下り道を歩くときや road を cross するときは、いつも注意しなければなりません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "下り道を歩くときや ",
+          "parts": [
+            {
+              "text": "下り道",
+              "ruby": "くだりみち"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "歩",
+              "ruby": "ある"
+            },
+            {
+              "text": "くときや",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "road",
+          "ruby": "道"
+        },
+        {
+          "type": "ja",
+          "text": " を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "cross",
+          "ruby": "渡る"
+        },
+        {
+          "type": "ja",
+          "text": " するときは、いつも注意しなければなりません。",
+          "parts": [
+            {
+              "text": "するときは、いつも",
+              "ruby": ""
+            },
+            {
+              "text": "注意",
+              "ruby": "ちゅうい"
+            },
+            {
+              "text": "しなければなりません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "cross",
+          "canonical_word": "cross",
+          "meaning": "渡る"
+        },
+        {
+          "english": "road",
+          "canonical_word": "road",
+          "meaning": "道"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "cross",
+          "reading": "渡る",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "cross",
+          "canonical_meaning": "渡る"
+        },
+        {
+          "english": "road",
+          "reading": "道",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "road",
+          "canonical_meaning": "道"
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "english": "I will never forget these words.",
+      "source_ja": "わたしはこの言葉を決して忘れないでしょう。",
+      "display_ja": "わたしはこの言葉を決して忘れないでしょう。",
+      "corrected_translation": false,
+      "mixed": "わたしはこの言葉を never 忘れないでしょう。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしはこの言葉を ",
+          "parts": [
+            {
+              "text": "わたしはこの",
+              "ruby": ""
+            },
+            {
+              "text": "言葉",
+              "ruby": "ことば"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "never",
+          "ruby": "決して〜ない"
+        },
+        {
+          "type": "ja",
+          "text": " 忘れないでしょう。",
+          "parts": [
+            {
+              "text": "忘",
+              "ruby": "わす"
+            },
+            {
+              "text": "れないでしょう。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "never",
+          "canonical_word": "never",
+          "meaning": "決して〜ない"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "never",
+          "reading": "決して〜ない",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "never",
+          "canonical_meaning": "決して〜ない"
+        }
+      ]
+    }
+  ]
+}

@@ -159,12 +159,43 @@
     if (!on()) return Promise.resolve();
     // manifest = アプリの自己紹介（タイトル・集計項目）。GASはこれを覚えて表示に使う。
     // アプリを更新すれば全先生のGASに自動で行き渡る（GAS側のコードは全アプリ共通のまま）
-    return api({ action: 'load', manifest: CFG.manifest || null }).then(function (r) {
-      if (!r) return;                            // 通信失敗 → 何もしない（ローカルのまま遊ぶ）
+    var payload = { action: 'load', manifest: CFG.manifest || null };
+    if (CFG.wallet && CFG.wallet.login) {
+      payload.wallet = { op: 'login' };
+      try { if (CFG.wallet.seed) payload.wallet.seed = CFG.wallet.seed(); } catch (e) { }
+    }
+    return api(payload).then(function (r) {
+      if (!r) {                                  // 通信失敗 → 学習は続行。ウォレットの配布・消費は同期まで保留
+        if (CFG.wallet && CFG.wallet.unavailable) { try { CFG.wallet.unavailable('offline'); } catch (e) { } }
+        return;
+      }
       if (!r.ok) { if (r.error === 'bad_token') signOut(); return; }
+      if (r.wallet && CFG.wallet && CFG.wallet.apply) {
+        try { CFG.wallet.apply(r.wallet, r.walletResult || null, r.serverDate || ''); } catch (e) { }
+      } else if (CFG.wallet && CFG.wallet.login && CFG.wallet.unavailable) {
+        // 古いGAS（wallet API未搭載）は従来どおり端末保存で動かす
+        try { CFG.wallet.unavailable('unsupported'); } catch (e) { }
+      }
       if (CFG.apply && r.progress) CFG.apply(r.progress);
       if (CFG.onSynced) CFG.onSynced();
       note('');
+    });
+  }
+
+  /** 生徒ウォレットの原子的操作。GAS未使用時は null（アプリ側の端末保存へフォールバック）。 */
+  function wallet(op) {
+    if (!on()) return Promise.resolve(null);
+    var w = {}, k;
+    op = op && typeof op === 'object' ? op : {};
+    for (k in op) w[k] = op[k];
+    try { if (CFG.wallet && CFG.wallet.seed) w.seed = CFG.wallet.seed(); } catch (e) { }
+    return api({ action: 'wallet', wallet: w }).then(function (r) {
+      if (!r || !r.ok || !r.wallet) { note('アイテム同期を待っています'); return null; }
+      if (CFG.wallet && CFG.wallet.apply) {
+        try { CFG.wallet.apply(r.wallet, r.result || null, r.serverDate || ''); } catch (e) { }
+      }
+      note('');
+      return r;
     });
   }
 
@@ -223,18 +254,20 @@
       wipe();
       restoreFrom('anon');
       try { localStorage.removeItem(K_OWNER); } catch (e) { }
-      if (CFG.reload) { try { CFG.reload(); } catch (e) { } }
     }
     token = ''; claims = null;
     try { localStorage.removeItem(K_TOKEN); } catch (e) { }
+    if (CFG.reload) { try { CFG.reload(); } catch (e) { } } // token解除後に個人モードとして読み直す
     render();
     if (CFG.onSynced) { try { CFG.onSynced(); } catch (e) { } }
   }
 
   // 離脱時に取りこぼさない（keepalive付き。付けないとページが消えた時点で送信が中断される）
   window.addEventListener('pagehide', function () { if (timer) push(true); });
+  window.addEventListener('online', function () { if (on() && CFG.wallet) pull(); });
   document.addEventListener('visibilitychange', function () {
     if (document.visibilityState === 'hidden' && timer) push(true);
+    else if (document.visibilityState === 'visible' && on() && CFG.wallet) pull();
   });
 
   /* ---------- 表示 ---------- */
@@ -289,7 +322,7 @@
   window.gasflare = {
     get on() { return on(); },
     get sid() { return claims && claims.sid; },
-    push: push, pushLater: pushLater, pull: pull, render: render, signOut: signOut,
+    push: push, pushLater: pushLater, pull: pull, wallet: wallet, render: render, signOut: signOut,
     log: logEvent,
   };
 })();

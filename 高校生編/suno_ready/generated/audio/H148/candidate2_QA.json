@@ -1,0 +1,297 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H148.md",
+  "audio": "高校生編/suno_ready/generated/audio/H148/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 139.72,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0043,
+  "expected_words": 233,
+  "transcribed_words": 234,
+  "matched_words": 226,
+  "coverage": 0.97,
+  "precision": 0.9658,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 232,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 194,
+      "length": 2,
+      "words": [
+        "providing",
+        "local"
+      ]
+    },
+    {
+      "start": 139,
+      "length": 1,
+      "words": [
+        "their"
+      ]
+    },
+    {
+      "start": 144,
+      "length": 1,
+      "words": [
+        "an"
+      ]
+    },
+    {
+      "start": 182,
+      "length": 1,
+      "words": [
+        "omawari"
+      ]
+    },
+    {
+      "start": 185,
+      "length": 1,
+      "words": [
+        "koban"
+      ]
+    },
+    {
+      "start": 199,
+      "length": 1,
+      "words": [
+        "police"
+      ]
+    }
+  ],
+  "replacement_count": 5,
+  "replacement_spans": [
+    {
+      "expected_start": 139,
+      "actual_start": 139,
+      "expected": [
+        "their"
+      ],
+      "actual": [
+        "the"
+      ],
+      "actual_confidence": 0.9475,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 182,
+      "actual_start": 181,
+      "expected": [
+        "omawari"
+      ],
+      "actual": [
+        "omowari"
+      ],
+      "actual_confidence": 0.5623,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 185,
+      "actual_start": 184,
+      "expected": [
+        "koban"
+      ],
+      "actual": [
+        "coven"
+      ],
+      "actual_confidence": 0.5101,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 194,
+      "actual_start": 193,
+      "expected": [
+        "providing",
+        "local"
+      ],
+      "actual": [
+        "by",
+        "fobbing",
+        "the",
+        "glegal"
+      ],
+      "actual_confidence": 0.5095,
+      "substitution_words": 2,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 199,
+      "actual_start": 200,
+      "expected": [
+        "police"
+      ],
+      "actual": [
+        "so"
+      ],
+      "actual_confidence": 0.781,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 144,
+      "actual_start": 144,
+      "expected": [
+        "an"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "A police officer, that is, a cop is an important profession that protects the order of society. They patrol the streets around the clock and react to incidents and accidents. Their work involves many areas. Investigating a crime, enforcing traffic laws, consulting with residents, responding to reports of suspicious activity while respecting civil rights. There are dramatic scenes of tracking down a killer, but much of daily duty is steady, quiet work, writing documents, investigating the scene, communication with a supervisor. The role of correctional facilities that manage prisoners is also important. The aim is not only to punish criminals, but also to rehabilitate them. But the work of police has dangerous moments, armed criminals, gunshots, explosions. They often face risks to their own lives. Police function only with the trust of citizens. If there is violence or corruption, the reputation is lost in instant. In America, excessive violence against black people has continued. And the black lives matter movement has spread This is not a rebellion against the entire police But a voice demanding reform Japanese police are called affectionately Omowari-san, the coven Police box system is unique in the world By fobbing the Glegal community-based security So officers too are human They make mistakes, and they have emotions While we expect much of them, we must not demand perfection Mutual understanding and cooperation Are the foundation of a safe society",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 11.56,
+      "text": "A police officer, that is, a cop is an important profession that protects the order of society."
+    },
+    {
+      "start": 13.44,
+      "end": 18.7,
+      "text": "They patrol the streets around the clock and react to incidents and accidents."
+    },
+    {
+      "start": 19.44,
+      "end": 22.3,
+      "text": "Their work involves many areas."
+    },
+    {
+      "start": 23.4,
+      "end": 29.62,
+      "text": "Investigating a crime, enforcing traffic laws, consulting with residents, responding"
+    },
+    {
+      "start": 29.62,
+      "end": 34.34,
+      "text": "to reports of suspicious activity while respecting civil rights."
+    },
+    {
+      "start": 34.46,
+      "end": 37.24,
+      "text": "There are dramatic scenes of tracking down a killer,"
+    },
+    {
+      "start": 37.44,
+      "end": 40.16,
+      "text": "but much of daily duty is steady, quiet work,"
+    },
+    {
+      "start": 40.58,
+      "end": 43.1,
+      "text": "writing documents, investigating the scene,"
+    },
+    {
+      "start": 43.28,
+      "end": 45.86,
+      "text": "communication with a supervisor."
+    },
+    {
+      "start": 48.4,
+      "end": 53.76,
+      "text": "The role of correctional facilities that manage prisoners is also important."
+    },
+    {
+      "start": 54.4,
+      "end": 56.92,
+      "text": "The aim is not only to punish criminals,"
+    },
+    {
+      "start": 56.92,
+      "end": 59.32,
+      "text": "but also to rehabilitate them."
+    },
+    {
+      "start": 59.46,
+      "end": 65.5,
+      "text": "But the work of police has dangerous moments, armed criminals, gunshots, explosions."
+    },
+    {
+      "start": 65.8,
+      "end": 68.94,
+      "text": "They often face risks to their own lives."
+    },
+    {
+      "start": 70.38,
+      "end": 75.02,
+      "text": "Police function only with the trust of citizens."
+    },
+    {
+      "start": 75.02,
+      "end": 80.9,
+      "text": "If there is violence or corruption, the reputation is lost in instant."
+    },
+    {
+      "start": 81.62,
+      "end": 86.24,
+      "text": "In America, excessive violence against black people has continued."
+    },
+    {
+      "start": 86.24,
+      "end": 90.7,
+      "text": "And the black lives matter movement has spread"
+    },
+    {
+      "start": 91.72,
+      "end": 95.64,
+      "text": "This is not a rebellion against the entire police"
+    },
+    {
+      "start": 95.64,
+      "end": 97.66,
+      "text": "But a voice demanding reform"
+    },
+    {
+      "start": 97.66,
+      "end": 100.58,
+      "text": "Japanese police are called affectionately"
+    },
+    {
+      "start": 100.58,
+      "end": 103.46,
+      "text": "Omowari-san, the coven"
+    },
+    {
+      "start": 103.46,
+      "end": 106.74,
+      "text": "Police box system is unique in the world"
+    },
+    {
+      "start": 106.74,
+      "end": 110.2,
+      "text": "By fobbing the Glegal community-based security"
+    },
+    {
+      "start": 110.2,
+      "end": 112.34,
+      "text": "So officers too are human"
+    },
+    {
+      "start": 112.34,
+      "end": 117.78,
+      "text": "They make mistakes, and they have emotions"
+    },
+    {
+      "start": 118.34,
+      "end": 124.34,
+      "text": "While we expect much of them, we must not demand perfection"
+    },
+    {
+      "start": 124.34,
+      "end": 127.82,
+      "text": "Mutual understanding and cooperation"
+    },
+    {
+      "start": 128.34,
+      "end": 132.7,
+      "text": "Are the foundation of a safe society"
+    }
+  ]
+}

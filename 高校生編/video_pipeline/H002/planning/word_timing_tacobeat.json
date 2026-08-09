@@ -1,0 +1,776 @@
+{
+  "lesson": "H002",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h002_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H002/candidate1-full.mp3",
+  "source_audio_sha256": "0ec97187dc9596fbc6bf0eea363bbce61005891b151f19c2134eeccdda9b488c",
+  "bpm": 57.54,
+  "exact_word_match": true,
+  "word_count": 120,
+  "line_count": 20,
+  "first_word_start": 2.622,
+  "last_word_end": 88.32,
+  "lines": [
+    {
+      "line": 1,
+      "english": "The long winter ended.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 2.622,
+          "end": 2.921
+        },
+        {
+          "word": "long",
+          "start": 2.921,
+          "end": 3.621
+        },
+        {
+          "word": "winter",
+          "start": 3.621,
+          "end": 4.241
+        },
+        {
+          "word": "ended.",
+          "start": 4.241,
+          "end": 5.701
+        }
+      ],
+      "start": 2.622,
+      "end": 5.701
+    },
+    {
+      "line": 2,
+      "english": "The snow melted.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 6.001,
+          "end": 6.261
+        },
+        {
+          "word": "snow",
+          "start": 6.261,
+          "end": 6.902
+        },
+        {
+          "word": "melted.",
+          "start": 6.902,
+          "end": 7.969
+        }
+      ],
+      "start": 6.001,
+      "end": 7.969
+    },
+    {
+      "line": 3,
+      "english": "The fields and hills gradually recovered.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 8.269,
+          "end": 8.442
+        },
+        {
+          "word": "fields",
+          "start": 8.442,
+          "end": 8.882
+        },
+        {
+          "word": "and",
+          "start": 8.882,
+          "end": 9.102
+        },
+        {
+          "word": "hills",
+          "start": 9.102,
+          "end": 9.682
+        },
+        {
+          "word": "gradually",
+          "start": 9.682,
+          "end": 10.862
+        },
+        {
+          "word": "recovered.",
+          "start": 10.862,
+          "end": 12.362
+        }
+      ],
+      "start": 8.269,
+      "end": 12.362
+    },
+    {
+      "line": 4,
+      "english": "The earth was awake.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 13.832,
+          "end": 14.103
+        },
+        {
+          "word": "earth",
+          "start": 14.103,
+          "end": 14.723
+        },
+        {
+          "word": "was",
+          "start": 14.723,
+          "end": 15.023
+        },
+        {
+          "word": "awake.",
+          "start": 15.023,
+          "end": 16.36
+        }
+      ],
+      "start": 13.832,
+      "end": 16.36
+    },
+    {
+      "line": 5,
+      "english": "The air felt pleasant.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 16.66,
+          "end": 16.864
+        },
+        {
+          "word": "air",
+          "start": 16.864,
+          "end": 17.444
+        },
+        {
+          "word": "felt",
+          "start": 17.444,
+          "end": 17.944
+        },
+        {
+          "word": "pleasant.",
+          "start": 17.944,
+          "end": 18.744
+        }
+      ],
+      "start": 16.66,
+      "end": 18.744
+    },
+    {
+      "line": 6,
+      "english": "Cherry trees were full of flowers.",
+      "word_timings": [
+        {
+          "word": "Cherry",
+          "start": 18.844,
+          "end": 19.344
+        },
+        {
+          "word": "trees",
+          "start": 19.344,
+          "end": 19.905
+        },
+        {
+          "word": "were",
+          "start": 19.905,
+          "end": 20.205
+        },
+        {
+          "word": "full",
+          "start": 20.205,
+          "end": 20.525
+        },
+        {
+          "word": "of",
+          "start": 20.525,
+          "end": 20.705
+        },
+        {
+          "word": "flowers.",
+          "start": 20.705,
+          "end": 21.565
+        }
+      ],
+      "start": 18.844,
+      "end": 21.565
+    },
+    {
+      "line": 7,
+      "english": "As I walked along the river, my heart became calm.",
+      "word_timings": [
+        {
+          "word": "As",
+          "start": 21.865,
+          "end": 22.144
+        },
+        {
+          "word": "I",
+          "start": 22.144,
+          "end": 22.325
+        },
+        {
+          "word": "walked",
+          "start": 22.325,
+          "end": 22.765
+        },
+        {
+          "word": "along",
+          "start": 22.765,
+          "end": 23.409
+        },
+        {
+          "word": "the",
+          "start": 23.409,
+          "end": 23.625
+        },
+        {
+          "word": "river,",
+          "start": 23.625,
+          "end": 24.841
+        },
+        {
+          "word": "my",
+          "start": 24.841,
+          "end": 25.126
+        },
+        {
+          "word": "heart",
+          "start": 25.126,
+          "end": 25.866
+        },
+        {
+          "word": "became",
+          "start": 25.866,
+          "end": 27.526
+        },
+        {
+          "word": "calm.",
+          "start": 27.526,
+          "end": 29.026
+        }
+      ],
+      "start": 21.865,
+      "end": 29.026
+    },
+    {
+      "line": 8,
+      "english": "My face grew gentle.",
+      "word_timings": [
+        {
+          "word": "My",
+          "start": 32.467,
+          "end": 32.747
+        },
+        {
+          "word": "face",
+          "start": 32.747,
+          "end": 33.128
+        },
+        {
+          "word": "grew",
+          "start": 33.128,
+          "end": 33.428
+        },
+        {
+          "word": "gentle.",
+          "start": 33.428,
+          "end": 34.403
+        }
+      ],
+      "start": 32.467,
+      "end": 34.403
+    },
+    {
+      "line": 9,
+      "english": "The world itself seemed new.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 34.703,
+          "end": 34.848
+        },
+        {
+          "word": "world",
+          "start": 34.848,
+          "end": 35.288
+        },
+        {
+          "word": "itself",
+          "start": 35.288,
+          "end": 35.788
+        },
+        {
+          "word": "seemed",
+          "start": 35.788,
+          "end": 36.288
+        },
+        {
+          "word": "new.",
+          "start": 36.288,
+          "end": 37.029
+        }
+      ],
+      "start": 34.703,
+      "end": 37.029
+    },
+    {
+      "line": 10,
+      "english": "On the path I met a friend.",
+      "word_timings": [
+        {
+          "word": "On",
+          "start": 37.329,
+          "end": 37.469
+        },
+        {
+          "word": "the",
+          "start": 37.469,
+          "end": 37.609
+        },
+        {
+          "word": "path",
+          "start": 37.609,
+          "end": 38.209
+        },
+        {
+          "word": "I",
+          "start": 38.209,
+          "end": 38.329
+        },
+        {
+          "word": "met",
+          "start": 38.329,
+          "end": 38.573
+        },
+        {
+          "word": "a",
+          "start": 38.573,
+          "end": 38.829
+        },
+        {
+          "word": "friend.",
+          "start": 38.829,
+          "end": 40.329
+        }
+      ],
+      "start": 37.329,
+      "end": 40.329
+    },
+    {
+      "line": 11,
+      "english": "She looked more mature than last year, yet her smile remained the same.",
+      "word_timings": [
+        {
+          "word": "She",
+          "start": 41.449,
+          "end": 41.81
+        },
+        {
+          "word": "looked",
+          "start": 41.81,
+          "end": 42.49
+        },
+        {
+          "word": "more",
+          "start": 42.49,
+          "end": 42.85
+        },
+        {
+          "word": "mature",
+          "start": 42.85,
+          "end": 43.55
+        },
+        {
+          "word": "than",
+          "start": 43.55,
+          "end": 43.79
+        },
+        {
+          "word": "last",
+          "start": 43.79,
+          "end": 44.21
+        },
+        {
+          "word": "year,",
+          "start": 44.21,
+          "end": 44.61
+        },
+        {
+          "word": "yet",
+          "start": 44.61,
+          "end": 44.91
+        },
+        {
+          "word": "her",
+          "start": 44.91,
+          "end": 45.21
+        },
+        {
+          "word": "smile",
+          "start": 45.21,
+          "end": 45.69
+        },
+        {
+          "word": "remained",
+          "start": 45.69,
+          "end": 46.19
+        },
+        {
+          "word": "the",
+          "start": 46.19,
+          "end": 46.511
+        },
+        {
+          "word": "same.",
+          "start": 46.511,
+          "end": 47.031
+        }
+      ],
+      "start": 41.449,
+      "end": 47.031
+    },
+    {
+      "line": 12,
+      "english": "Her eyes shone brightly.",
+      "word_timings": [
+        {
+          "word": "Her",
+          "start": 47.031,
+          "end": 47.491
+        },
+        {
+          "word": "eyes",
+          "start": 47.491,
+          "end": 48.011
+        },
+        {
+          "word": "shone",
+          "start": 48.011,
+          "end": 48.591
+        },
+        {
+          "word": "brightly.",
+          "start": 48.591,
+          "end": 49.531
+        }
+      ],
+      "start": 47.031,
+      "end": 49.531
+    },
+    {
+      "line": 13,
+      "english": "Her voice sounded warm.",
+      "word_timings": [
+        {
+          "word": "Her",
+          "start": 49.831,
+          "end": 50.171
+        },
+        {
+          "word": "voice",
+          "start": 50.171,
+          "end": 50.852
+        },
+        {
+          "word": "sounded",
+          "start": 50.852,
+          "end": 52.612
+        },
+        {
+          "word": "warm.",
+          "start": 52.612,
+          "end": 54.112
+        }
+      ],
+      "start": 49.831,
+      "end": 54.112
+    },
+    {
+      "line": 14,
+      "english": "Children's voices reached me, and I felt full of pleasure and delight.",
+      "word_timings": [
+        {
+          "word": "Children's",
+          "start": 55.373,
+          "end": 55.853
+        },
+        {
+          "word": "voices",
+          "start": 55.853,
+          "end": 56.493
+        },
+        {
+          "word": "reached",
+          "start": 56.493,
+          "end": 57.033
+        },
+        {
+          "word": "me,",
+          "start": 57.033,
+          "end": 57.753
+        },
+        {
+          "word": "and",
+          "start": 57.753,
+          "end": 58.073
+        },
+        {
+          "word": "I",
+          "start": 58.073,
+          "end": 58.193
+        },
+        {
+          "word": "felt",
+          "start": 58.193,
+          "end": 58.553
+        },
+        {
+          "word": "full",
+          "start": 58.553,
+          "end": 58.873
+        },
+        {
+          "word": "of",
+          "start": 58.873,
+          "end": 59.074
+        },
+        {
+          "word": "pleasure",
+          "start": 59.074,
+          "end": 59.894
+        },
+        {
+          "word": "and",
+          "start": 59.894,
+          "end": 60.174
+        },
+        {
+          "word": "delight.",
+          "start": 60.174,
+          "end": 60.911
+        }
+      ],
+      "start": 55.373,
+      "end": 60.911
+    },
+    {
+      "line": 15,
+      "english": "A fresh hope arose in my heart.",
+      "word_timings": [
+        {
+          "word": "A",
+          "start": 61.211,
+          "end": 61.354
+        },
+        {
+          "word": "fresh",
+          "start": 61.354,
+          "end": 61.934
+        },
+        {
+          "word": "hope",
+          "start": 61.934,
+          "end": 62.514
+        },
+        {
+          "word": "arose",
+          "start": 62.514,
+          "end": 63.435
+        },
+        {
+          "word": "in",
+          "start": 63.435,
+          "end": 63.683
+        },
+        {
+          "word": "my",
+          "start": 63.683,
+          "end": 64.155
+        },
+        {
+          "word": "heart.",
+          "start": 64.155,
+          "end": 65.655
+        }
+      ],
+      "start": 61.211,
+      "end": 65.655
+    },
+    {
+      "line": 16,
+      "english": "A small joy emerged in my chest.",
+      "word_timings": [
+        {
+          "word": "A",
+          "start": 66.505,
+          "end": 66.595
+        },
+        {
+          "word": "small",
+          "start": 66.595,
+          "end": 66.995
+        },
+        {
+          "word": "joy",
+          "start": 66.995,
+          "end": 68.096
+        },
+        {
+          "word": "emerged",
+          "start": 68.096,
+          "end": 68.856
+        },
+        {
+          "word": "in",
+          "start": 68.856,
+          "end": 69.124
+        },
+        {
+          "word": "my",
+          "start": 69.124,
+          "end": 69.556
+        },
+        {
+          "word": "chest.",
+          "start": 69.556,
+          "end": 70.276
+        }
+      ],
+      "start": 66.505,
+      "end": 70.276
+    },
+    {
+      "line": 17,
+      "english": "At night I remained awake.",
+      "word_timings": [
+        {
+          "word": "At",
+          "start": 70.276,
+          "end": 70.536
+        },
+        {
+          "word": "night",
+          "start": 70.536,
+          "end": 70.895
+        },
+        {
+          "word": "I",
+          "start": 70.895,
+          "end": 71.076
+        },
+        {
+          "word": "remained",
+          "start": 71.076,
+          "end": 71.636
+        },
+        {
+          "word": "awake.",
+          "start": 71.636,
+          "end": 72.397
+        }
+      ],
+      "start": 70.276,
+      "end": 72.397
+    },
+    {
+      "line": 18,
+      "english": "Everything was quietly but surely becoming new.",
+      "word_timings": [
+        {
+          "word": "Everything",
+          "start": 72.697,
+          "end": 73.677
+        },
+        {
+          "word": "was",
+          "start": 73.677,
+          "end": 73.977
+        },
+        {
+          "word": "quietly",
+          "start": 73.977,
+          "end": 75.077
+        },
+        {
+          "word": "but",
+          "start": 75.077,
+          "end": 75.377
+        },
+        {
+          "word": "surely",
+          "start": 75.377,
+          "end": 76.177
+        },
+        {
+          "word": "becoming",
+          "start": 76.177,
+          "end": 78.258
+        },
+        {
+          "word": "new.",
+          "start": 78.258,
+          "end": 79.758
+        }
+      ],
+      "start": 72.697,
+      "end": 79.758
+    },
+    {
+      "line": 19,
+      "english": "The spring was young.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 82.387,
+          "end": 82.467
+        },
+        {
+          "word": "spring",
+          "start": 82.459,
+          "end": 83.619
+        },
+        {
+          "word": "was",
+          "start": 83.619,
+          "end": 84.079
+        },
+        {
+          "word": "young.",
+          "start": 84.079,
+          "end": 84.971
+        }
+      ],
+      "start": 82.387,
+      "end": 84.971
+    },
+    {
+      "line": 20,
+      "english": "The world seemed alive.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 85.271,
+          "end": 85.5
+        },
+        {
+          "word": "world",
+          "start": 85.5,
+          "end": 86.2
+        },
+        {
+          "word": "seemed",
+          "start": 86.2,
+          "end": 86.82
+        },
+        {
+          "word": "alive.",
+          "start": 86.82,
+          "end": 88.32
+        }
+      ],
+      "start": 85.271,
+      "end": 88.32
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

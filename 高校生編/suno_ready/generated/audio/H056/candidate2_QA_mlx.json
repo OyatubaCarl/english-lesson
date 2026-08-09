@@ -1,0 +1,181 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H056.md",
+  "audio": "高校生編/suno_ready/generated/audio/H056/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 142.6,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 182,
+  "transcribed_words": 182,
+  "matched_words": 181,
+  "coverage": 0.9945,
+  "precision": 0.9945,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 181,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 47,
+      "length": 1,
+      "words": [
+        "investigative"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 47,
+      "actual_start": 47,
+      "expected": [
+        "investigative"
+      ],
+      "actual": [
+        "invest"
+      ],
+      "actual_confidence": 0.7349,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "In a democratic society, the press has been called the fourth estate Alongside the legislative, the executive, and the judicial It is one of the pillars that supports society Journalists carry the role of revealing wrongdoing in government and business And passing that on to the citizens Invest reporting has often been the trigger That has changed society In 1972, during the Watergate scandal Two young reporters helped expose abuses of power That led to the American president's resignation That was an example of how the press can hold Even the highest authorities accountable In our time, however, the reliability of information Has become a great challenge Information sent out without checking the source Deliberate disinformation These can twist the judgment of society Under dictatorships in various countries Censorship is common And it is not rare for journalists to be imprisoned Press freedom is not taken for granted in every country As receivers of information We must develop the ability to judge What is a reliable source To protect the freedom of the press is In the end, to protect our own freedom",
+  "segments": [
+    {
+      "start": 12.8,
+      "end": 18.34,
+      "text": "In a democratic society, the press has been called the fourth estate"
+    },
+    {
+      "start": 18.34,
+      "end": 23.42,
+      "text": "Alongside the legislative, the executive, and the judicial"
+    },
+    {
+      "start": 23.42,
+      "end": 27.64,
+      "text": "It is one of the pillars that supports society"
+    },
+    {
+      "start": 31.28,
+      "end": 36.5,
+      "text": "Journalists carry the role of revealing wrongdoing in government and business"
+    },
+    {
+      "start": 36.5,
+      "end": 39.96,
+      "text": "And passing that on to the citizens"
+    },
+    {
+      "start": 41.26,
+      "end": 44.96,
+      "text": "Invest reporting has often been the trigger"
+    },
+    {
+      "start": 46.02,
+      "end": 48.8,
+      "text": "That has changed society"
+    },
+    {
+      "start": 52.76,
+      "end": 56.78,
+      "text": "In 1972, during the Watergate scandal"
+    },
+    {
+      "start": 56.78,
+      "end": 60.9,
+      "text": "Two young reporters helped expose abuses of power"
+    },
+    {
+      "start": 60.9,
+      "end": 65.18,
+      "text": "That led to the American president's resignation"
+    },
+    {
+      "start": 66.4,
+      "end": 70.2,
+      "text": "That was an example of how the press can hold"
+    },
+    {
+      "start": 70.2,
+      "end": 73.64,
+      "text": "Even the highest authorities accountable"
+    },
+    {
+      "start": 74.82,
+      "end": 79.88,
+      "text": "In our time, however, the reliability of information"
+    },
+    {
+      "start": 79.88,
+      "end": 82.62,
+      "text": "Has become a great challenge"
+    },
+    {
+      "start": 82.62,
+      "end": 87.36,
+      "text": "Information sent out without checking the source"
+    },
+    {
+      "start": 87.36,
+      "end": 90.62,
+      "text": "Deliberate disinformation"
+    },
+    {
+      "start": 92.0,
+      "end": 97.82,
+      "text": "These can twist the judgment of society"
+    },
+    {
+      "start": 101.56,
+      "end": 105.32,
+      "text": "Under dictatorships in various countries"
+    },
+    {
+      "start": 105.32,
+      "end": 107.54,
+      "text": "Censorship is common"
+    },
+    {
+      "start": 107.54,
+      "end": 111.92,
+      "text": "And it is not rare for journalists to be imprisoned"
+    },
+    {
+      "start": 111.92,
+      "end": 117.74,
+      "text": "Press freedom is not taken for granted in every country"
+    },
+    {
+      "start": 117.74,
+      "end": 121.3,
+      "text": "As receivers of information"
+    },
+    {
+      "start": 121.3,
+      "end": 126.06,
+      "text": "We must develop the ability to judge"
+    },
+    {
+      "start": 126.06,
+      "end": 131.56,
+      "text": "What is a reliable source"
+    },
+    {
+      "start": 131.56,
+      "end": 137.64,
+      "text": "To protect the freedom of the press is"
+    },
+    {
+      "start": 137.64,
+      "end": 142.6,
+      "text": "In the end, to protect our own freedom"
+    }
+  ]
+}

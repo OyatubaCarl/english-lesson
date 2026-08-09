@@ -1,0 +1,275 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H153.md",
+  "audio": "高校生編/suno_ready/generated/audio/H153/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 163.0,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9961,
+  "expected_words": 258,
+  "transcribed_words": 257,
+  "matched_words": 251,
+  "coverage": 0.9729,
+  "precision": 0.9767,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 257,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 17,
+      "length": 2,
+      "words": [
+        "kyoto",
+        "lacquerware"
+      ]
+    },
+    {
+      "start": 21,
+      "length": 1,
+      "words": [
+        "lacquer"
+      ]
+    },
+    {
+      "start": 45,
+      "length": 1,
+      "words": [
+        "forty"
+      ]
+    },
+    {
+      "start": 54,
+      "length": 1,
+      "words": [
+        "millimeters"
+      ]
+    },
+    {
+      "start": 80,
+      "length": 1,
+      "words": [
+        "forty"
+      ]
+    },
+    {
+      "start": 131,
+      "length": 1,
+      "words": [
+        "mr"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 17,
+      "actual_start": 17,
+      "expected": [
+        "kyoto",
+        "lacquerware"
+      ],
+      "actual": [
+        "kiyotolakkar",
+        "where"
+      ],
+      "actual_confidence": 0.698,
+      "substitution_words": 2,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 21,
+      "actual_start": 21,
+      "expected": [
+        "lacquer"
+      ],
+      "actual": [
+        "lakkar"
+      ],
+      "actual_confidence": 0.6968,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 54,
+      "actual_start": 53,
+      "expected": [
+        "millimeters"
+      ],
+      "actual": [
+        "mm"
+      ],
+      "actual_confidence": 0.6563,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 131,
+      "actual_start": 130,
+      "expected": [
+        "mr"
+      ],
+      "actual": [
+        "mister"
+      ],
+      "actual_confidence": 0.4054,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 105,
+      "actual_start": 103,
+      "expected": [],
+      "actual": [
+        "a"
+      ],
+      "actual_confidence": 0.5612
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 45,
+      "actual_start": 45,
+      "expected": [
+        "forty"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 80,
+      "actual_start": 79,
+      "expected": [
+        "forty"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "In the world of Japanese traditional crafts, there are techniques that have continued for hundreds of years Kiyotolakkar, where Ishikawa's wajima lakkar Okinawa's Ryukyu glass Artisans often begin with a long apprenticeship Mr. Tanaka, a gold leaf artisan In Kanazawa has walked this path for 40 years The work of making gold leaf of 0,001mm thick is largely done by hand He beats gold and extends it thin Without skilled technique, the gold tears Mr Tanaka's hands are proof of 40 years of doing this work Gold leaf is used on Buddhist statues, temples and crafts It is an essential material for the expression of a Japanese art But the successor problem is serious Young people go to cities and choose industrialized mass production work Few young people learn the handmade craft, mister Tanaka too keeps searching for apprentices But the belief that it does not make money keeps the young at a distance The government also increases investment to protect traditional crafts A system for passing down skills grants for young artisans Expanding sales abroad, the power of social media is also great Mr. Tanaka posts the process of making gold leaf on Instagram Interest from people overseas has begun to influence young Japanese too Tradition is not something to be preserved but something to be kept alive Adapting to the modern era in new forms while not losing the core technique That is true succession Mr. Tanaka says whether this skill will remain a hundred years from now depends on the choice of each one of us",
+  "segments": [
+    {
+      "start": 9.92,
+      "end": 19.26,
+      "text": "In the world of Japanese traditional crafts, there are techniques that have continued for hundreds of years"
+    },
+    {
+      "start": 20.42,
+      "end": 26.94,
+      "text": "Kiyotolakkar, where Ishikawa's wajima lakkar Okinawa's Ryukyu glass"
+    },
+    {
+      "start": 30.82,
+      "end": 38.72,
+      "text": "Artisans often begin with a long apprenticeship Mr. Tanaka, a gold leaf artisan"
+    },
+    {
+      "start": 38.72,
+      "end": 43.02,
+      "text": "In Kanazawa has walked this path for 40 years"
+    },
+    {
+      "start": 44.08,
+      "end": 50.74,
+      "text": "The work of making gold leaf of 0,001mm thick is largely done by hand"
+    },
+    {
+      "start": 50.74,
+      "end": 53.32,
+      "text": "He beats gold and extends it thin"
+    },
+    {
+      "start": 54.06,
+      "end": 57.18,
+      "text": "Without skilled technique, the gold tears"
+    },
+    {
+      "start": 57.18,
+      "end": 62.58,
+      "text": "Mr Tanaka's hands are proof of 40 years of doing this work"
+    },
+    {
+      "start": 62.58,
+      "end": 67.88,
+      "text": "Gold leaf is used on Buddhist statues, temples and crafts"
+    },
+    {
+      "start": 68.96,
+      "end": 74.52,
+      "text": "It is an essential material for the expression of a Japanese art"
+    },
+    {
+      "start": 74.52,
+      "end": 78.1,
+      "text": "But the successor problem is serious"
+    },
+    {
+      "start": 78.88,
+      "end": 84.54,
+      "text": "Young people go to cities and choose industrialized mass production work"
+    },
+    {
+      "start": 84.54,
+      "end": 92.78,
+      "text": "Few young people learn the handmade craft, mister Tanaka too keeps searching for apprentices"
+    },
+    {
+      "start": 93.72,
+      "end": 98.86,
+      "text": "But the belief that it does not make money keeps the young at a distance"
+    },
+    {
+      "start": 99.78,
+      "end": 105.14,
+      "text": "The government also increases investment to protect traditional crafts"
+    },
+    {
+      "start": 105.14,
+      "end": 110.2,
+      "text": "A system for passing down skills grants for young artisans"
+    },
+    {
+      "start": 110.2,
+      "end": 116.6,
+      "text": "Expanding sales abroad, the power of social media is also great"
+    },
+    {
+      "start": 117.72,
+      "end": 122.76,
+      "text": "Mr. Tanaka posts the process of making gold leaf on Instagram"
+    },
+    {
+      "start": 122.76,
+      "end": 129.14,
+      "text": "Interest from people overseas has begun to influence young Japanese too"
+    },
+    {
+      "start": 129.14,
+      "end": 134.32,
+      "text": "Tradition is not something to be preserved but something to be kept alive"
+    },
+    {
+      "start": 134.32,
+      "end": 140.46,
+      "text": "Adapting to the modern era in new forms while not losing the core technique"
+    },
+    {
+      "start": 142.88,
+      "end": 145.34,
+      "text": "That is true succession"
+    },
+    {
+      "start": 146.44,
+      "end": 153.66,
+      "text": "Mr. Tanaka says whether this skill will remain a hundred years from now"
+    },
+    {
+      "start": 153.66,
+      "end": 158.16,
+      "text": "depends on the choice of each one of us"
+    }
+  ]
+}

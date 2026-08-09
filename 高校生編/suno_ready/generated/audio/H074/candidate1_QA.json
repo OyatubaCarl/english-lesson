@@ -1,0 +1,291 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H074.md",
+  "audio": "高校生編/suno_ready/generated/audio/H074/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 149.44,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 252,
+  "transcribed_words": 252,
+  "matched_words": 246,
+  "coverage": 0.9762,
+  "precision": 0.9762,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 251,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 38,
+      "length": 1,
+      "words": [
+        "shrine"
+      ]
+    },
+    {
+      "start": 43,
+      "length": 1,
+      "words": [
+        "setsubun"
+      ]
+    },
+    {
+      "start": 56,
+      "length": 1,
+      "words": [
+        "gion"
+      ]
+    },
+    {
+      "start": 85,
+      "length": 1,
+      "words": [
+        "merely"
+      ]
+    },
+    {
+      "start": 201,
+      "length": 1,
+      "words": [
+        "the"
+      ]
+    },
+    {
+      "start": 215,
+      "length": 1,
+      "words": [
+        "noh"
+      ]
+    }
+  ],
+  "replacement_count": 6,
+  "replacement_spans": [
+    {
+      "expected_start": 38,
+      "actual_start": 38,
+      "expected": [
+        "shrine"
+      ],
+      "actual": [
+        "trine"
+      ],
+      "actual_confidence": 0.528,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 43,
+      "actual_start": 43,
+      "expected": [
+        "setsubun"
+      ],
+      "actual": [
+        "setsuban"
+      ],
+      "actual_confidence": 0.761,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 56,
+      "actual_start": 56,
+      "expected": [
+        "gion"
+      ],
+      "actual": [
+        "jien"
+      ],
+      "actual_confidence": 0.4095,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 85,
+      "actual_start": 85,
+      "expected": [
+        "merely"
+      ],
+      "actual": [
+        "nearly"
+      ],
+      "actual_confidence": 0.9724,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 201,
+      "actual_start": 201,
+      "expected": [
+        "the"
+      ],
+      "actual": [
+        "but"
+      ],
+      "actual_confidence": 0.9524,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 215,
+      "actual_start": 215,
+      "expected": [
+        "noh"
+      ],
+      "actual": [
+        "no"
+      ],
+      "actual_confidence": 0.9075,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 4,
+  "suspicious_substitution_words": 4,
+  "suspicious_content_substitution": true,
+  "transcript": "In every region of the world there is a ritual or a festival unique to that land They reflect the people's view of the world, their sense of religion and their relationship with nature In Japan, the first trine visit of the year Setsuban Obon and the festivals of each region Are still carefully kept The Jien Festival of Kyoto has a history of more than a thousand years And the Nebuta Festival of Aomori fills the night streets with passion Such traditions are not nearly a habit of the past It is also a place where the people of a community Confirm their own identity, who they are in the world There are rites of passage that celebrate birth, adulthood, marriage and death These are events in which the whole community stands beside a person At a turning point of life and sends them on toward a new stage But the wave of globalization is making the unique cultures of each place uniform Young people move to the cities and the bearers of local festivals continue to decline Many traditional crafts have already disappeared On the other hand, there is also a movement To preserve such fading cultures Unesco registers, but traditional cultures Of various regions of the world As intangible heritage Japanese food, no theater And the making of Japanese paper Are among these tradition Is not a relic of the past It is a living gift that we The people who live now Hand down to the next generation",
+  "segments": [
+    {
+      "start": 4.7,
+      "end": 14.0,
+      "text": "In every region of the world there is a ritual or a festival unique to that land"
+    },
+    {
+      "start": 15.26,
+      "end": 24.28,
+      "text": "They reflect the people's view of the world, their sense of religion and their relationship with nature"
+    },
+    {
+      "start": 25.56,
+      "end": 29.62,
+      "text": "In Japan, the first trine visit of the year"
+    },
+    {
+      "start": 29.62,
+      "end": 33.68,
+      "text": "Setsuban Obon and the festivals of each region"
+    },
+    {
+      "start": 33.68,
+      "end": 36.16,
+      "text": "Are still carefully kept"
+    },
+    {
+      "start": 36.78,
+      "end": 42.0,
+      "text": "The Jien Festival of Kyoto has a history of more than a thousand years"
+    },
+    {
+      "start": 42.0,
+      "end": 46.84,
+      "text": "And the Nebuta Festival of Aomori fills the night streets with passion"
+    },
+    {
+      "start": 47.68,
+      "end": 52.58,
+      "text": "Such traditions are not nearly a habit of the past"
+    },
+    {
+      "start": 52.58,
+      "end": 57.9,
+      "text": "It is also a place where the people of a community"
+    },
+    {
+      "start": 57.9,
+      "end": 62.52,
+      "text": "Confirm their own identity, who they are in the world"
+    },
+    {
+      "start": 62.52,
+      "end": 68.2,
+      "text": "There are rites of passage that celebrate birth, adulthood, marriage and death"
+    },
+    {
+      "start": 70.14,
+      "end": 75.76,
+      "text": "These are events in which the whole community stands beside a person"
+    },
+    {
+      "start": 75.76,
+      "end": 80.82,
+      "text": "At a turning point of life and sends them on toward a new stage"
+    },
+    {
+      "start": 80.82,
+      "end": 89.82,
+      "text": "But the wave of globalization is making the unique cultures of each place uniform"
+    },
+    {
+      "start": 91.82,
+      "end": 100.3,
+      "text": "Young people move to the cities and the bearers of local festivals continue to decline"
+    },
+    {
+      "start": 101.82,
+      "end": 105.7,
+      "text": "Many traditional crafts have already disappeared"
+    },
+    {
+      "start": 105.7,
+      "end": 109.84,
+      "text": "On the other hand, there is also a movement"
+    },
+    {
+      "start": 109.84,
+      "end": 112.72,
+      "text": "To preserve such fading cultures"
+    },
+    {
+      "start": 112.72,
+      "end": 116.78,
+      "text": "Unesco registers, but traditional cultures"
+    },
+    {
+      "start": 117.7,
+      "end": 120.62,
+      "text": "Of various regions of the world"
+    },
+    {
+      "start": 120.62,
+      "end": 123.14,
+      "text": "As intangible heritage"
+    },
+    {
+      "start": 123.7,
+      "end": 126.24,
+      "text": "Japanese food, no theater"
+    },
+    {
+      "start": 126.24,
+      "end": 128.56,
+      "text": "And the making of Japanese paper"
+    },
+    {
+      "start": 128.56,
+      "end": 131.06,
+      "text": "Are among these tradition"
+    },
+    {
+      "start": 131.06,
+      "end": 133.76,
+      "text": "Is not a relic of the past"
+    },
+    {
+      "start": 133.76,
+      "end": 137.48,
+      "text": "It is a living gift that we"
+    },
+    {
+      "start": 138.68,
+      "end": 140.98,
+      "text": "The people who live now"
+    },
+    {
+      "start": 140.98,
+      "end": 144.56,
+      "text": "Hand down to the next generation"
+    }
+  ]
+}

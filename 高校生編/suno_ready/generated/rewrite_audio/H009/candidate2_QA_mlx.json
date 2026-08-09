@@ -1,0 +1,121 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H009.md",
+  "audio": "高校生編/suno_ready/generated/rewrite_audio/H009/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 65.04,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 138,
+  "transcribed_words": 138,
+  "matched_words": 137,
+  "coverage": 0.9928,
+  "precision": 0.9928,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 137,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 104,
+      "length": 1,
+      "words": [
+        "sight"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 104,
+      "actual_start": 104,
+      "expected": [
+        "sight"
+      ],
+      "actual": [
+        "side"
+      ],
+      "actual_confidence": 0.626,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "I was discussing the Sunday picnic with my sister If the weather is good, we will spend the day in a meadow by the river If it rains, we will watch a movie at home Unless it rains, we will leave the house at ten in the morning We thought about several conditions and made a clear plan Tomorrow morning, unless the forecast turns much worse We will go as planned If it does rain, however, we will shift the picnic to the afternoon Whenever the forecast improves, our spirits rise with it Mother was tired, but she said she would prepare sandwiches The side of sandwiches filling an entire basket is always a pleasant one As Sunday approaches, my sister's face remains calm The fact that everything would depend on the weather Brought our family quietly together",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.04,
+      "text": "I was discussing the Sunday picnic with my sister"
+    },
+    {
+      "start": 4.86,
+      "end": 10.38,
+      "text": "If the weather is good, we will spend the day in a meadow by the river"
+    },
+    {
+      "start": 10.38,
+      "end": 14.26,
+      "text": "If it rains, we will watch a movie at home"
+    },
+    {
+      "start": 14.98,
+      "end": 18.8,
+      "text": "Unless it rains, we will leave the house at ten in the morning"
+    },
+    {
+      "start": 19.92,
+      "end": 24.08,
+      "text": "We thought about several conditions and made a clear plan"
+    },
+    {
+      "start": 25.2,
+      "end": 28.78,
+      "text": "Tomorrow morning, unless the forecast turns much worse"
+    },
+    {
+      "start": 28.78,
+      "end": 31.7,
+      "text": "We will go as planned"
+    },
+    {
+      "start": 32.52,
+      "end": 37.42,
+      "text": "If it does rain, however, we will shift the picnic to the afternoon"
+    },
+    {
+      "start": 37.42,
+      "end": 43.22,
+      "text": "Whenever the forecast improves, our spirits rise with it"
+    },
+    {
+      "start": 43.22,
+      "end": 46.88,
+      "text": "Mother was tired, but she said she would prepare sandwiches"
+    },
+    {
+      "start": 46.88,
+      "end": 52.34,
+      "text": "The side of sandwiches filling an entire basket is always a pleasant one"
+    },
+    {
+      "start": 53.16,
+      "end": 57.64,
+      "text": "As Sunday approaches, my sister's face remains calm"
+    },
+    {
+      "start": 58.78,
+      "end": 62.54,
+      "text": "The fact that everything would depend on the weather"
+    },
+    {
+      "start": 62.54,
+      "end": 65.04,
+      "text": "Brought our family quietly together"
+    }
+  ]
+}

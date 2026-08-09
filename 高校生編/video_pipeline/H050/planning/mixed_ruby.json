@@ -1,0 +1,1361 @@
+{
+  "lesson": "H050",
+  "title_ja": "教育と機会",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 12,
+  "canonical_target_lines": 11,
+  "mixed_lines": 11,
+  "japanese_only_lines": 1,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 7.32,
+      "end": 11.8,
+      "english": "Education is a basic right of every person.",
+      "japanese": "教育はすべての人の基本的な権利です。",
+      "mixed": "Education はすべての人の基本的な権利です。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "Education",
+          "ruby": "教育"
+        },
+        {
+          "type": "ja",
+          "text": " はすべての人の基本的な権利です。",
+          "parts": [
+            {
+              "text": "はすべての",
+              "ruby": ""
+            },
+            {
+              "text": "人",
+              "ruby": "ひと"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "基本",
+              "ruby": "きほん"
+            },
+            {
+              "text": "的",
+              "ruby": "てき"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "権利",
+              "ruby": "けんり"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "Education",
+          "canonical_word": "education",
+          "meaning": "教育"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Education",
+          "reading": "教育",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "education",
+          "canonical_meaning": "教育"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 2,
+      "start": 11.8,
+      "end": 22.78,
+      "english": "The United Nations has declared the right to education as one of the universal human rights.",
+      "japanese": "国連は教育を受ける権利を普遍的人権の一つとして宣言しました。",
+      "mixed": "国連は education を受ける権利を universal な人権の一つとして declared しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "国連は ",
+          "parts": [
+            {
+              "text": "国連",
+              "ruby": "こくれん"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "education",
+          "ruby": "教育"
+        },
+        {
+          "type": "ja",
+          "text": " を受ける権利を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "受",
+              "ruby": "う"
+            },
+            {
+              "text": "ける",
+              "ruby": ""
+            },
+            {
+              "text": "権利",
+              "ruby": "けんり"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "universal",
+          "ruby": "普遍的な"
+        },
+        {
+          "type": "ja",
+          "text": " な人権の一つとして ",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "人権",
+              "ruby": "じんけん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "ひと"
+            },
+            {
+              "text": "つとして",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "declared",
+          "ruby": "宣言した"
+        },
+        {
+          "type": "ja",
+          "text": " しました。",
+          "parts": [
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "declared",
+          "canonical_word": "declared",
+          "meaning": "宣言した"
+        },
+        {
+          "english": "education",
+          "canonical_word": "education",
+          "meaning": "教育"
+        },
+        {
+          "english": "universal",
+          "canonical_word": "universal",
+          "meaning": "普遍的な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "education",
+          "reading": "教育",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "education",
+          "canonical_meaning": "教育"
+        },
+        {
+          "english": "universal",
+          "reading": "普遍的な",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "universal",
+          "canonical_meaning": "普遍的な"
+        },
+        {
+          "english": "declared",
+          "reading": "宣言した",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "declared",
+          "canonical_meaning": "宣言した"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 3,
+      "start": 25.24,
+      "end": 39.492,
+      "english": "In reality, however, the opportunity for education differs greatly depending on the country where one is born and one's family income.",
+      "japanese": "しかし実際には、生まれた国や世帯収入によって教育の機会は大きく異なります。",
+      "mixed": "しかし実際には、生まれた国や家庭の income によって education の opportunity は大きく異なります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "しかし実際には、生まれた国や家庭の ",
+          "parts": [
+            {
+              "text": "しかし",
+              "ruby": ""
+            },
+            {
+              "text": "実際",
+              "ruby": "じっさい"
+            },
+            {
+              "text": "には、",
+              "ruby": ""
+            },
+            {
+              "text": "生",
+              "ruby": "う"
+            },
+            {
+              "text": "まれた",
+              "ruby": ""
+            },
+            {
+              "text": "国",
+              "ruby": "くに"
+            },
+            {
+              "text": "や",
+              "ruby": ""
+            },
+            {
+              "text": "家庭",
+              "ruby": "かてい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "income",
+          "ruby": "所得"
+        },
+        {
+          "type": "ja",
+          "text": " によって ",
+          "parts": [
+            {
+              "text": "によって",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "education",
+          "ruby": "教育"
+        },
+        {
+          "type": "ja",
+          "text": " の ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "opportunity",
+          "ruby": "機会"
+        },
+        {
+          "type": "ja",
+          "text": " は大きく異なります。",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "大",
+              "ruby": "おお"
+            },
+            {
+              "text": "きく",
+              "ruby": ""
+            },
+            {
+              "text": "異",
+              "ruby": "こと"
+            },
+            {
+              "text": "なります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "opportunity",
+          "canonical_word": "opportunity",
+          "meaning": "機会"
+        },
+        {
+          "english": "education",
+          "canonical_word": "education",
+          "meaning": "教育"
+        },
+        {
+          "english": "income",
+          "canonical_word": "income",
+          "meaning": "所得"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "income",
+          "reading": "所得",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "income",
+          "canonical_meaning": "所得"
+        },
+        {
+          "english": "education",
+          "reading": "教育",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "education",
+          "canonical_meaning": "教育"
+        },
+        {
+          "english": "opportunity",
+          "reading": "機会",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "opportunity",
+          "canonical_meaning": "機会"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 4,
+      "start": 39.492,
+      "end": 47.14,
+      "english": "There are still tens of millions of children worldwide who cannot attend school.",
+      "japanese": "世界中にはまだ学校に通えない子どもたちが何千万人もいます。",
+      "mixed": "世界中にはまだ学校に通えない子どもたちが何千万人もいます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "世界中にはまだ学校に通えない子どもたちが何千万人もいます。",
+          "parts": [
+            {
+              "text": "世界",
+              "ruby": "せかい"
+            },
+            {
+              "text": "中",
+              "ruby": "ちゅう"
+            },
+            {
+              "text": "にはまだ",
+              "ruby": ""
+            },
+            {
+              "text": "学校",
+              "ruby": "がっこう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "通",
+              "ruby": "かよ"
+            },
+            {
+              "text": "えない",
+              "ruby": ""
+            },
+            {
+              "text": "子",
+              "ruby": "こ"
+            },
+            {
+              "text": "どもたちが",
+              "ruby": ""
+            },
+            {
+              "text": "何千",
+              "ruby": "なんぜん"
+            },
+            {
+              "text": "万人",
+              "ruby": "まんにん"
+            },
+            {
+              "text": "もいます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 5,
+      "start": 49.0,
+      "end": 58.78,
+      "english": "Even among developed countries, there are large gaps in access to and the quality of education.",
+      "japanese": "先進国の中でも、教育へのアクセスや教育の質には大きな格差があります。",
+      "mixed": "先進国の中でも、education の quality や access には大きな格差があります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "先進国の中でも、",
+          "parts": [
+            {
+              "text": "先進",
+              "ruby": "せんしん"
+            },
+            {
+              "text": "国",
+              "ruby": "こく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "中",
+              "ruby": "なか"
+            },
+            {
+              "text": "でも、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "education",
+          "ruby": "教育"
+        },
+        {
+          "type": "ja",
+          "text": " の ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "quality",
+          "ruby": "質"
+        },
+        {
+          "type": "ja",
+          "text": " や ",
+          "parts": [
+            {
+              "text": "や",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "access",
+          "ruby": "アクセス"
+        },
+        {
+          "type": "ja",
+          "text": " には大きな格差があります。",
+          "parts": [
+            {
+              "text": "には",
+              "ruby": ""
+            },
+            {
+              "text": "大",
+              "ruby": "おお"
+            },
+            {
+              "text": "きな",
+              "ruby": ""
+            },
+            {
+              "text": "格差",
+              "ruby": "かくさ"
+            },
+            {
+              "text": "があります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "access",
+          "canonical_word": "access",
+          "meaning": "アクセス"
+        },
+        {
+          "english": "quality",
+          "canonical_word": "quality",
+          "meaning": "質"
+        },
+        {
+          "english": "education",
+          "canonical_word": "education",
+          "meaning": "教育"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "education",
+          "reading": "教育",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "education",
+          "canonical_meaning": "教育"
+        },
+        {
+          "english": "quality",
+          "reading": "質",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "quality",
+          "canonical_meaning": "質"
+        },
+        {
+          "english": "access",
+          "reading": "アクセス",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "access",
+          "canonical_meaning": "アクセス"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 6,
+      "start": 60.0,
+      "end": 67.58,
+      "english": "The economic condition of a family greatly shapes a child's future career.",
+      "japanese": "家族の経済状況は、子供の将来のキャリアを大きく左右します。",
+      "mixed": "家庭の経済状況は、子供の将来の career を大きく左右します。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "家庭の経済状況は、子供の将来の ",
+          "parts": [
+            {
+              "text": "家庭",
+              "ruby": "かてい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "経済",
+              "ruby": "けいざい"
+            },
+            {
+              "text": "状況",
+              "ruby": "じょうきょう"
+            },
+            {
+              "text": "は、",
+              "ruby": ""
+            },
+            {
+              "text": "子供",
+              "ruby": "こども"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "将来",
+              "ruby": "しょうらい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "career",
+          "ruby": "職業"
+        },
+        {
+          "type": "ja",
+          "text": " を大きく左右します。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "大",
+              "ruby": "おお"
+            },
+            {
+              "text": "きく",
+              "ruby": ""
+            },
+            {
+              "text": "左右",
+              "ruby": "さゆう"
+            },
+            {
+              "text": "します。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "career",
+          "canonical_word": "career",
+          "meaning": "職業"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "career",
+          "reading": "職業",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "career",
+          "canonical_meaning": "職業"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 7,
+      "start": 68.86,
+      "end": 73.42,
+      "english": "Education is not only the passing on of knowledge.",
+      "japanese": "教育は単に知識を伝えるだけではありません。",
+      "mixed": "Education は単に知識を伝えるだけではありません。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "Education",
+          "ruby": "教育"
+        },
+        {
+          "type": "ja",
+          "text": " は単に知識を伝えるだけではありません。",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "単",
+              "ruby": "たん"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "知識",
+              "ruby": "ちしき"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "伝",
+              "ruby": "つた"
+            },
+            {
+              "text": "えるだけではありません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "Education",
+          "canonical_word": "education",
+          "meaning": "教育"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Education",
+          "reading": "教育",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "education",
+          "canonical_meaning": "教育"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 8,
+      "start": 74.42,
+      "end": 85.66,
+      "english": "It is a process by which an individual forms their identity and grows into a responsible member of society.",
+      "japanese": "これは、個人がアイデンティティを形成し、社会の責任ある一員に成長するプロセスです。",
+      "mixed": "これは、individual が identity を形成し、社会で responsibility のある一員に成長する過程です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "これは、",
+          "parts": [
+            {
+              "text": "これは、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "individual",
+          "ruby": "個人"
+        },
+        {
+          "type": "ja",
+          "text": " が ",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "identity",
+          "ruby": "アイデンティティ"
+        },
+        {
+          "type": "ja",
+          "text": " を形成し、社会で ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "形成",
+              "ruby": "けいせい"
+            },
+            {
+              "text": "し、",
+              "ruby": ""
+            },
+            {
+              "text": "社会",
+              "ruby": "しゃかい"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "responsibility",
+          "ruby": "責任"
+        },
+        {
+          "type": "ja",
+          "text": " のある一員に成長する過程です。",
+          "parts": [
+            {
+              "text": "のある",
+              "ruby": ""
+            },
+            {
+              "text": "一員",
+              "ruby": "いちいん"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "成長",
+              "ruby": "せいちょう"
+            },
+            {
+              "text": "する",
+              "ruby": ""
+            },
+            {
+              "text": "過程",
+              "ruby": "かてい"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "individual",
+          "canonical_word": "individual",
+          "meaning": "個人"
+        },
+        {
+          "english": "identity",
+          "canonical_word": "identity",
+          "meaning": "アイデンティティ"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "individual",
+          "reading": "個人",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "individual",
+          "canonical_meaning": "個人"
+        },
+        {
+          "english": "identity",
+          "reading": "アイデンティティ",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "identity",
+          "canonical_meaning": "アイデンティティ"
+        },
+        {
+          "english": "responsibility",
+          "reading": "責任",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "responsibility",
+          "canonical_meaning": "責任"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 9,
+      "start": 86.82,
+      "end": 99.96,
+      "english": "Many countries, through scholarships and reduced tuition, are trying to open the opportunity for higher education to more young people.",
+      "japanese": "多くの国が、奨学金や授業料減免を通じて、より多くの若者に高等教育の機会を与えようとしています。",
+      "mixed": "多くの国が、奨学金や授業料減免を通じて、より多くの若者に高等 education の opportunity を開こうとしています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "多くの国が、奨学金や授業料減免を通じて、より多くの若者に高等 ",
+          "parts": [
+            {
+              "text": "多",
+              "ruby": "おお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "国",
+              "ruby": "くに"
+            },
+            {
+              "text": "が、",
+              "ruby": ""
+            },
+            {
+              "text": "奨学",
+              "ruby": "しょうがく"
+            },
+            {
+              "text": "金",
+              "ruby": "きん"
+            },
+            {
+              "text": "や",
+              "ruby": ""
+            },
+            {
+              "text": "授業",
+              "ruby": "じゅぎょう"
+            },
+            {
+              "text": "料",
+              "ruby": "りょう"
+            },
+            {
+              "text": "減免",
+              "ruby": "げんめん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "通",
+              "ruby": "つう"
+            },
+            {
+              "text": "じて、より",
+              "ruby": ""
+            },
+            {
+              "text": "多",
+              "ruby": "おお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "若者",
+              "ruby": "わかもの"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "高等",
+              "ruby": "こうとう"
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "education",
+          "ruby": "教育"
+        },
+        {
+          "type": "ja",
+          "text": " の ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "opportunity",
+          "ruby": "機会"
+        },
+        {
+          "type": "ja",
+          "text": " を開こうとしています。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "開",
+              "ruby": "ひら"
+            },
+            {
+              "text": "こうとしています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "opportunity",
+          "canonical_word": "opportunity",
+          "meaning": "機会"
+        },
+        {
+          "english": "education",
+          "canonical_word": "education",
+          "meaning": "教育"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "education",
+          "reading": "教育",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "education",
+          "canonical_meaning": "教育"
+        },
+        {
+          "english": "opportunity",
+          "reading": "機会",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "opportunity",
+          "canonical_meaning": "機会"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 10,
+      "start": 101.4,
+      "end": 105.8,
+      "english": "The reform proceeds slowly, but it does proceed.",
+      "japanese": "改革はゆっくりではあるが確実に進んでいる。",
+      "mixed": "reform はゆっくりではあるが確実に進んでいる。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "reform",
+          "ruby": "改革"
+        },
+        {
+          "type": "ja",
+          "text": " はゆっくりではあるが確実に進んでいる。",
+          "parts": [
+            {
+              "text": "はゆっくりではあるが",
+              "ruby": ""
+            },
+            {
+              "text": "確実",
+              "ruby": "かくじつ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "進",
+              "ruby": "すす"
+            },
+            {
+              "text": "んでいる。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "reform",
+          "canonical_word": "reform",
+          "meaning": "改革"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "reform",
+          "reading": "改革",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "reform",
+          "canonical_meaning": "改革"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 11,
+      "start": 106.4,
+      "end": 120.4,
+      "english": "To create a truly equal society, every child must be given the same opportunity for education.",
+      "japanese": "真に平等な社会を築くには、すべての子どもに平等な教育の機会が与えられなければなりません。",
+      "mixed": "真の equality がある社会を築くには、すべての子どもに同じ education の opportunity が与えられなければなりません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "真の ",
+          "parts": [
+            {
+              "text": "真",
+              "ruby": "しん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "equality",
+          "ruby": "平等"
+        },
+        {
+          "type": "ja",
+          "text": " がある社会を築くには、すべての子どもに同じ ",
+          "parts": [
+            {
+              "text": "がある",
+              "ruby": ""
+            },
+            {
+              "text": "社会",
+              "ruby": "しゃかい"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "築",
+              "ruby": "きず"
+            },
+            {
+              "text": "くには、すべての",
+              "ruby": ""
+            },
+            {
+              "text": "子",
+              "ruby": "こ"
+            },
+            {
+              "text": "どもに",
+              "ruby": ""
+            },
+            {
+              "text": "同",
+              "ruby": "おな"
+            },
+            {
+              "text": "じ",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "education",
+          "ruby": "教育"
+        },
+        {
+          "type": "ja",
+          "text": " の ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "opportunity",
+          "ruby": "機会"
+        },
+        {
+          "type": "ja",
+          "text": " が与えられなければなりません。",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "与",
+              "ruby": "あた"
+            },
+            {
+              "text": "えられなければなりません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "opportunity",
+          "canonical_word": "opportunity",
+          "meaning": "機会"
+        },
+        {
+          "english": "education",
+          "canonical_word": "education",
+          "meaning": "教育"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "equality",
+          "reading": "平等",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "equality",
+          "canonical_meaning": "平等"
+        },
+        {
+          "english": "education",
+          "reading": "教育",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "education",
+          "canonical_meaning": "教育"
+        },
+        {
+          "english": "opportunity",
+          "reading": "機会",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "opportunity",
+          "canonical_meaning": "機会"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 12,
+      "start": 120.4,
+      "end": 133.1,
+      "english": "Only when education is equal does the gap in society begin to close.",
+      "japanese": "教育が平等になって初めて、社会の格差は縮まり始めるのです。",
+      "mixed": "education に equality が実現して初めて、社会の格差は縮まり始めるのです。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "education",
+          "ruby": "教育"
+        },
+        {
+          "type": "ja",
+          "text": " に ",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "equality",
+          "ruby": "平等"
+        },
+        {
+          "type": "ja",
+          "text": " が実現して初めて、社会の格差は縮まり始めるのです。",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "実現",
+              "ruby": "じつげん"
+            },
+            {
+              "text": "して",
+              "ruby": ""
+            },
+            {
+              "text": "初",
+              "ruby": "はじ"
+            },
+            {
+              "text": "めて、",
+              "ruby": ""
+            },
+            {
+              "text": "社会",
+              "ruby": "しゃかい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "格差",
+              "ruby": "かくさ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "縮",
+              "ruby": "ちぢ"
+            },
+            {
+              "text": "まり",
+              "ruby": ""
+            },
+            {
+              "text": "始",
+              "ruby": "はじ"
+            },
+            {
+              "text": "めるのです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "education",
+          "canonical_word": "education",
+          "meaning": "教育"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "education",
+          "reading": "教育",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "education",
+          "canonical_meaning": "教育"
+        },
+        {
+          "english": "equality",
+          "reading": "平等",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "equality",
+          "canonical_meaning": "平等"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    }
+  ]
+}

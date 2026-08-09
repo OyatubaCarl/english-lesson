@@ -1,0 +1,277 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H142.md",
+  "audio": "高校生編/suno_ready/generated/audio/H142/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 147.4,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9963,
+  "expected_words": 267,
+  "transcribed_words": 266,
+  "matched_words": 262,
+  "coverage": 0.9813,
+  "precision": 0.985,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 266,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 13,
+      "length": 1,
+      "words": [
+        "at"
+      ]
+    },
+    {
+      "start": 22,
+      "length": 1,
+      "words": [
+        "forty"
+      ]
+    },
+    {
+      "start": 55,
+      "length": 1,
+      "words": [
+        "mariko"
+      ]
+    },
+    {
+      "start": 183,
+      "length": 1,
+      "words": [
+        "promotion"
+      ]
+    },
+    {
+      "start": 185,
+      "length": 1,
+      "words": [
+        "exists"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 13,
+      "actual_start": 13,
+      "expected": [
+        "at"
+      ],
+      "actual": [
+        "had"
+      ],
+      "actual_confidence": 0.8634,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 55,
+      "actual_start": 54,
+      "expected": [
+        "mariko"
+      ],
+      "actual": [
+        "marika"
+      ],
+      "actual_confidence": 0.5008,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 183,
+      "actual_start": 182,
+      "expected": [
+        "promotion"
+      ],
+      "actual": [
+        "promotions"
+      ],
+      "actual_confidence": 0.8834,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 185,
+      "actual_start": 184,
+      "expected": [
+        "exists"
+      ],
+      "actual": [
+        "exist"
+      ],
+      "actual_confidence": 0.6497,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 22,
+      "actual_start": 22,
+      "expected": [
+        "forty"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "Mariko, my university classmate, became the first woman to serve as factory manager, had a major manufacturer. It was when she was 40, she had graduated from the engineering department, and at first worked as a technician. The workers on the floor were all men and at first she was not accepted as a peer. Marika learned everything from the safety procedures on the shop floor to the operating methods of each machine. She wore the same clothing as the workers and walked the factory from morning till night. After ten years, she climbed the steps of promotion Becoming section chief department head And then factory manager This was unusual in the industry Despite Mariko's appointment as factory manager There were voices of both support and objection Can a woman with a home and children to raise Carry such a responsible post? Some asked But the results were clear Under her management, the factory's productivity rose and accidents decreased From a woman's viewpoint, she also promoted a workplace where people could work more easily The glass ceiling, the invisible wall that blocks women's promotions still exist today But as pioneers, like Mariko increase, the wall is being broken little by little Gender equality is not only a women's issue It is also an economic necessity for maximizing the output of society as a whole A society cannot develop without making use of the talent of half its population Mariko has both the strength not to yield when confronted with obstacles and kindness toward others She has become a role model for the next generation of women leaders.",
+  "segments": [
+    {
+      "start": 9.68,
+      "end": 17.28,
+      "text": "Mariko, my university classmate, became the first woman to serve as factory manager, had"
+    },
+    {
+      "start": 17.28,
+      "end": 19.04,
+      "text": "a major manufacturer."
+    },
+    {
+      "start": 20.76,
+      "end": 27.44,
+      "text": "It was when she was 40, she had graduated from the engineering department, and at first"
+    },
+    {
+      "start": 27.44,
+      "end": 35.2,
+      "text": "worked as a technician. The workers on the floor were all men and at first she"
+    },
+    {
+      "start": 35.2,
+      "end": 42.52,
+      "text": "was not accepted as a peer. Marika learned everything from the safety procedures"
+    },
+    {
+      "start": 42.52,
+      "end": 48.5,
+      "text": "on the shop floor to the operating methods of each machine. She wore the"
+    },
+    {
+      "start": 48.5,
+      "end": 53.24,
+      "text": "same clothing as the workers and walked the factory from morning till night."
+    },
+    {
+      "start": 53.24,
+      "end": 56.48,
+      "text": "After ten years, she climbed the steps of promotion"
+    },
+    {
+      "start": 56.48,
+      "end": 59.26,
+      "text": "Becoming section chief department head"
+    },
+    {
+      "start": 59.26,
+      "end": 61.28,
+      "text": "And then factory manager"
+    },
+    {
+      "start": 62.5,
+      "end": 65.54,
+      "text": "This was unusual in the industry"
+    },
+    {
+      "start": 66.8,
+      "end": 70.26,
+      "text": "Despite Mariko's appointment as factory manager"
+    },
+    {
+      "start": 70.26,
+      "end": 73.28,
+      "text": "There were voices of both support and objection"
+    },
+    {
+      "start": 73.28,
+      "end": 76.28,
+      "text": "Can a woman with a home and children to raise"
+    },
+    {
+      "start": 76.28,
+      "end": 79.12,
+      "text": "Carry such a responsible post?"
+    },
+    {
+      "start": 79.74,
+      "end": 80.5,
+      "text": "Some asked"
+    },
+    {
+      "start": 81.64,
+      "end": 82.86,
+      "text": "But the results were clear"
+    },
+    {
+      "start": 83.86,
+      "end": 89.48,
+      "text": "Under her management, the factory's productivity rose and accidents decreased"
+    },
+    {
+      "start": 89.48,
+      "end": 95.62,
+      "text": "From a woman's viewpoint, she also promoted a workplace where people could work more easily"
+    },
+    {
+      "start": 95.62,
+      "end": 102.18,
+      "text": "The glass ceiling, the invisible wall that blocks women's promotions still exist today"
+    },
+    {
+      "start": 103.04,
+      "end": 109.24,
+      "text": "But as pioneers, like Mariko increase, the wall is being broken little by little"
+    },
+    {
+      "start": 109.24,
+      "end": 113.52,
+      "text": "Gender equality is not only a women's issue"
+    },
+    {
+      "start": 114.24,
+      "end": 117.42,
+      "text": "It is also an economic necessity"
+    },
+    {
+      "start": 117.42,
+      "end": 121.9,
+      "text": "for maximizing the output of society as a whole"
+    },
+    {
+      "start": 121.9,
+      "end": 124.48,
+      "text": "A society cannot develop"
+    },
+    {
+      "start": 124.48,
+      "end": 129.54,
+      "text": "without making use of the talent of half its population"
+    },
+    {
+      "start": 129.54,
+      "end": 132.96,
+      "text": "Mariko has both the strength not to yield"
+    },
+    {
+      "start": 132.96,
+      "end": 135.34,
+      "text": "when confronted with obstacles"
+    },
+    {
+      "start": 135.34,
+      "end": 137.66,
+      "text": "and kindness toward others"
+    },
+    {
+      "start": 138.56,
+      "end": 144.64,
+      "text": "She has become a role model for the next generation of women leaders."
+    }
+  ]
+}

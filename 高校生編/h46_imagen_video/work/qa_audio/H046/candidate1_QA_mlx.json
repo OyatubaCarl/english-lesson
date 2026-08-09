@@ -1,0 +1,151 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H046.md",
+  "audio": "高校生編/h46_imagen_video/work/qa_audio/H046/candidate1-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 118.22,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 181,
+  "transcribed_words": 181,
+  "matched_words": 180,
+  "coverage": 0.9945,
+  "precision": 0.9945,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 180,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 10,
+      "length": 1,
+      "words": [
+        "govern"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 10,
+      "actual_start": 10,
+      "expected": [
+        "govern"
+      ],
+      "actual": [
+        "governed"
+      ],
+      "actual_confidence": 0.6064,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "The principle of democracy rests on the idea that people governed themselves In ancient Athens, citizens gathered in the public square and discussed policy This was the starting point of the democracy that would later spread throughout the world Modern democratic states almost always have a supreme law called a constitution The constitution limits the power of government and protects the rights of the citizens In many countries, citizens choose their representatives through elections held every few years. Candidates run campaigns and present their policies to the voters. The elected representatives gather in parliament or in Congress where they create new legislation. After discussion in committee, a bill becomes law. The duty of a citizen is not only to vote, it is also to take an interest in social problems and to participate in politics throughout life. How to balance the will of the majority with the freedom of the minority is the challenge of every democratic state. To respect the will of the majority while protecting the freedom of the minority this is the essential responsibility of a democratic society",
+  "segments": [
+    {
+      "start": 9.86,
+      "end": 16.6,
+      "text": "The principle of democracy rests on the idea that people governed themselves"
+    },
+    {
+      "start": 16.6,
+      "end": 23.12,
+      "text": "In ancient Athens, citizens gathered in the public square and discussed policy"
+    },
+    {
+      "start": 23.12,
+      "end": 30.36,
+      "text": "This was the starting point of the democracy that would later spread throughout the world"
+    },
+    {
+      "start": 32.14,
+      "end": 38.22,
+      "text": "Modern democratic states almost always have a supreme law called a constitution"
+    },
+    {
+      "start": 38.22,
+      "end": 44.92,
+      "text": "The constitution limits the power of government and protects the rights of the citizens"
+    },
+    {
+      "start": 44.92,
+      "end": 50.78,
+      "text": "In many countries, citizens choose their representatives through elections"
+    },
+    {
+      "start": 50.78,
+      "end": 53.76,
+      "text": "held every few years."
+    },
+    {
+      "start": 54.8,
+      "end": 56.96,
+      "text": "Candidates run campaigns"
+    },
+    {
+      "start": 56.96,
+      "end": 59.92,
+      "text": "and present their policies to the voters."
+    },
+    {
+      "start": 60.22,
+      "end": 61.78,
+      "text": "The elected representatives"
+    },
+    {
+      "start": 62.44,
+      "end": 65.3,
+      "text": "gather in parliament or in Congress"
+    },
+    {
+      "start": 65.3,
+      "end": 68.46,
+      "text": "where they create new legislation."
+    },
+    {
+      "start": 69.9,
+      "end": 72.28,
+      "text": "After discussion in committee,"
+    },
+    {
+      "start": 72.94,
+      "end": 75.06,
+      "text": "a bill becomes law."
+    },
+    {
+      "start": 75.78,
+      "end": 78.32,
+      "text": "The duty of a citizen"
+    },
+    {
+      "start": 78.32,
+      "end": 89.12,
+      "text": "is not only to vote, it is also to take an interest in social problems and to participate"
+    },
+    {
+      "start": 89.12,
+      "end": 97.0,
+      "text": "in politics throughout life. How to balance the will of the majority with the freedom"
+    },
+    {
+      "start": 97.0,
+      "end": 105.84,
+      "text": "of the minority is the challenge of every democratic state. To respect the will of the"
+    },
+    {
+      "start": 105.84,
+      "end": 110.06,
+      "text": "majority while protecting the freedom of the minority"
+    },
+    {
+      "start": 111.2,
+      "end": 118.22,
+      "text": "this is the essential responsibility of a democratic society"
+    }
+  ]
+}

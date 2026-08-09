@@ -1,0 +1,146 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H032.md",
+  "audio": "高校生編/suno_ready/generated/audio/H032/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 91.16,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 150,
+  "transcribed_words": 150,
+  "matched_words": 148,
+  "coverage": 0.9867,
+  "precision": 0.9867,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 149,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 80,
+      "length": 1,
+      "words": [
+        "parks"
+      ]
+    },
+    {
+      "start": 131,
+      "length": 1,
+      "words": [
+        "no"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 80,
+      "actual_start": 80,
+      "expected": [
+        "parks"
+      ],
+      "actual": [
+        "park"
+      ],
+      "actual_confidence": 0.8159,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 131,
+      "actual_start": 131,
+      "expected": [
+        "no"
+      ],
+      "actual": [
+        "know"
+      ],
+      "actual_confidence": 0.6621,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "In December 1955, on a bus in Montgomery, Alabama, a black woman named Rosa Parks was ordered to give her seat to a white passenger. No, how short, how quiet those words were. Yet her single word changed the course of American history. She was arrested on the spot. In those days, the law separated the races And black people could only sit in certain seats The law, which had made discrimination a system Had long cast a shadow on society Park's refusal sparked the Montgomery bus boycott Reverend Martin Luther King led the way and the black citizens of the town stopped riding the buses. What a strong protest it was! The following year, a federal court ruled bus segregation unconstitutional. And the U.S. Supreme Court upheld that decision. The know of a single citizen helped change society. Let us never forget such a single word Filled with courage",
+  "segments": [
+    {
+      "start": 4.94,
+      "end": 13.0,
+      "text": "In December 1955, on a bus in Montgomery, Alabama, a black woman named Rosa Parks was"
+    },
+    {
+      "start": 13.0,
+      "end": 20.94,
+      "text": "ordered to give her seat to a white passenger. No, how short, how quiet those words were. Yet"
+    },
+    {
+      "start": 20.94,
+      "end": 26.9,
+      "text": "her single word changed the course of American history. She was arrested on the spot."
+    },
+    {
+      "start": 28.8,
+      "end": 33.76,
+      "text": "In those days, the law separated the races"
+    },
+    {
+      "start": 33.76,
+      "end": 39.52,
+      "text": "And black people could only sit in certain seats"
+    },
+    {
+      "start": 41.02,
+      "end": 45.52,
+      "text": "The law, which had made discrimination a system"
+    },
+    {
+      "start": 45.52,
+      "end": 50.48,
+      "text": "Had long cast a shadow on society"
+    },
+    {
+      "start": 50.48,
+      "end": 55.5,
+      "text": "Park's refusal sparked the Montgomery bus boycott"
+    },
+    {
+      "start": 56.96,
+      "end": 63.3,
+      "text": "Reverend Martin Luther King led the way and the black citizens of the town stopped riding the buses."
+    },
+    {
+      "start": 63.72,
+      "end": 66.3,
+      "text": "What a strong protest it was!"
+    },
+    {
+      "start": 67.44,
+      "end": 73.84,
+      "text": "The following year, a federal court ruled bus segregation unconstitutional."
+    },
+    {
+      "start": 73.98,
+      "end": 78.38,
+      "text": "And the U.S. Supreme Court upheld that decision."
+    },
+    {
+      "start": 80.56,
+      "end": 85.0,
+      "text": "The know of a single citizen helped change society."
+    },
+    {
+      "start": 86.2,
+      "end": 88.84,
+      "text": "Let us never forget such a single word"
+    },
+    {
+      "start": 89.78,
+      "end": 91.16,
+      "text": "Filled with courage"
+    }
+  ]
+}

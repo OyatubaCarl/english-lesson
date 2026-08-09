@@ -1,0 +1,178 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H032.md",
+  "audio": "高校生編/suno_ready/generated/audio/H032/candidate1-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 87.18,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9933,
+  "expected_words": 150,
+  "transcribed_words": 149,
+  "matched_words": 146,
+  "coverage": 0.9733,
+  "precision": 0.9799,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 149,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 123,
+      "length": 2,
+      "words": [
+        "u",
+        "s"
+      ]
+    },
+    {
+      "start": 24,
+      "length": 1,
+      "words": [
+        "no"
+      ]
+    },
+    {
+      "start": 131,
+      "length": 1,
+      "words": [
+        "no"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 24,
+      "actual_start": 24,
+      "expected": [
+        "no"
+      ],
+      "actual": [
+        "know"
+      ],
+      "actual_confidence": 0.5996,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 123,
+      "actual_start": 123,
+      "expected": [
+        "u",
+        "s"
+      ],
+      "actual": [
+        "us"
+      ],
+      "actual_confidence": 0.6123,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 131,
+      "actual_start": 130,
+      "expected": [
+        "no"
+      ],
+      "actual": [
+        "know"
+      ],
+      "actual_confidence": 0.6851,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "In December 1955, on a bus in Montgomery, Alabama, a black woman named Rosa Parks was ordered to give her seat to a white passenger. Know how short, how quiet those words were. Yet her single word changed the course of American history. She was arrested on the spot. In those days the law separated the races And black people could only sit in certain seats The law, which had made discrimination a system Had long cast a shadow on society Parks' refusal sparked the Montgomery bus boycott Reverend Martin Luther King led the way And the black citizens of the town stopped riding the buses What a strong protest it was The following year, a federal court ruled bus segregation unconstitutional And the US Supreme Court upheld that decision The know of a single citizen helped change society Let us never forget such a single word filled with courage",
+  "segments": [
+    {
+      "start": 2.4,
+      "end": 7.72,
+      "text": "In December 1955, on a bus in Montgomery, Alabama,"
+    },
+    {
+      "start": 8.5,
+      "end": 14.48,
+      "text": "a black woman named Rosa Parks was ordered to give her seat to a white passenger."
+    },
+    {
+      "start": 14.48,
+      "end": 18.1,
+      "text": "Know how short, how quiet those words were."
+    },
+    {
+      "start": 19.22,
+      "end": 23.8,
+      "text": "Yet her single word changed the course of American history."
+    },
+    {
+      "start": 24.74,
+      "end": 26.94,
+      "text": "She was arrested on the spot."
+    },
+    {
+      "start": 28.58,
+      "end": 32.26,
+      "text": "In those days the law separated the races"
+    },
+    {
+      "start": 32.26,
+      "end": 35.92,
+      "text": "And black people could only sit in certain seats"
+    },
+    {
+      "start": 35.92,
+      "end": 39.82,
+      "text": "The law, which had made discrimination a system"
+    },
+    {
+      "start": 39.82,
+      "end": 44.04,
+      "text": "Had long cast a shadow on society"
+    },
+    {
+      "start": 44.04,
+      "end": 49.56,
+      "text": "Parks' refusal sparked the Montgomery bus boycott"
+    },
+    {
+      "start": 51.92,
+      "end": 54.82,
+      "text": "Reverend Martin Luther King led the way"
+    },
+    {
+      "start": 54.82,
+      "end": 58.66,
+      "text": "And the black citizens of the town stopped riding the buses"
+    },
+    {
+      "start": 60.02,
+      "end": 62.4,
+      "text": "What a strong protest it was"
+    },
+    {
+      "start": 63.82,
+      "end": 69.76,
+      "text": "The following year, a federal court ruled bus segregation unconstitutional"
+    },
+    {
+      "start": 69.76,
+      "end": 74.18,
+      "text": "And the US Supreme Court upheld that decision"
+    },
+    {
+      "start": 76.32,
+      "end": 80.92,
+      "text": "The know of a single citizen helped change society"
+    },
+    {
+      "start": 80.92,
+      "end": 87.18,
+      "text": "Let us never forget such a single word filled with courage"
+    }
+  ]
+}

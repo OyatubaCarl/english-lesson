@@ -1,0 +1,203 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H117.md",
+  "audio": "高校生編/suno_ready/generated/audio/H117/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 139.52,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 207,
+  "transcribed_words": 207,
+  "matched_words": 204,
+  "coverage": 0.9855,
+  "precision": 0.9855,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 206,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 4,
+      "length": 2,
+      "words": [
+        "twenty",
+        "first"
+      ]
+    },
+    {
+      "start": 14,
+      "length": 1,
+      "words": [
+        "crises"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 4,
+      "actual_start": 4,
+      "expected": [
+        "twenty",
+        "first"
+      ],
+      "actual": [
+        "st"
+      ],
+      "actual_confidence": 0.9773,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 14,
+      "actual_start": 13,
+      "expected": [
+        "crises"
+      ],
+      "actual": [
+        "crisis"
+      ],
+      "actual_confidence": 0.9127,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 207,
+      "actual_start": 206,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.0512
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "The society of the 21st century faces unprecedented complexity. Climate change, pandemics, economic crisis, political division. There is no longer any problem that a single country can cope with on its own. To face these extraordinary challenges, international cooperation is indispensable. But in reality, each nation often gives priority to its own interests. Global interdependence has deepened than ever. A financial crisis in one country spreads across the world in an instant. An infectious disease in one region crosses continents in weeks In such an interconnected world it makes no sense to distinguish between us and them The suffering of someone will, in time, become the suffering of someone else For the sake of future generations, we need a firm commitment Effective action against climate change initiatives to end poverty Efforts toward peace What one individual can do looks small at first glance But when the choices of billions of individuals gather, the world surely changes Daily consumption, voting posts on social media These are all votes that shape the future Hope is not optimism Hope is a commitment to action No matter how harsh the circumstances To keep moving for a better future That is the small and great responsibility Of each one of us You",
+  "segments": [
+    {
+      "start": 7.18,
+      "end": 13.14,
+      "text": "The society of the 21st century faces unprecedented complexity."
+    },
+    {
+      "start": 13.5,
+      "end": 18.6,
+      "text": "Climate change, pandemics, economic crisis, political division."
+    },
+    {
+      "start": 19.04,
+      "end": 24.44,
+      "text": "There is no longer any problem that a single country can cope with on its own."
+    },
+    {
+      "start": 24.44,
+      "end": 32.24,
+      "text": "To face these extraordinary challenges, international cooperation is indispensable."
+    },
+    {
+      "start": 33.94,
+      "end": 39.82,
+      "text": "But in reality, each nation often gives priority to its own interests."
+    },
+    {
+      "start": 40.04,
+      "end": 44.14,
+      "text": "Global interdependence has deepened than ever."
+    },
+    {
+      "start": 45.14,
+      "end": 50.42,
+      "text": "A financial crisis in one country spreads across the world in an instant."
+    },
+    {
+      "start": 50.42,
+      "end": 56.8,
+      "text": "An infectious disease in one region crosses continents in weeks"
+    },
+    {
+      "start": 57.66,
+      "end": 64.0,
+      "text": "In such an interconnected world it makes no sense to distinguish between us and them"
+    },
+    {
+      "start": 64.0,
+      "end": 70.74,
+      "text": "The suffering of someone will, in time, become the suffering of someone else"
+    },
+    {
+      "start": 71.42,
+      "end": 77.44,
+      "text": "For the sake of future generations, we need a firm commitment"
+    },
+    {
+      "start": 77.44,
+      "end": 83.24,
+      "text": "Effective action against climate change initiatives to end poverty"
+    },
+    {
+      "start": 83.24,
+      "end": 86.64,
+      "text": "Efforts toward peace"
+    },
+    {
+      "start": 88.4,
+      "end": 93.04,
+      "text": "What one individual can do looks small at first glance"
+    },
+    {
+      "start": 93.04,
+      "end": 99.28,
+      "text": "But when the choices of billions of individuals gather, the world surely changes"
+    },
+    {
+      "start": 99.28,
+      "end": 104.1,
+      "text": "Daily consumption, voting posts on social media"
+    },
+    {
+      "start": 104.1,
+      "end": 107.9,
+      "text": "These are all votes that shape the future"
+    },
+    {
+      "start": 107.9,
+      "end": 110.64,
+      "text": "Hope is not optimism"
+    },
+    {
+      "start": 110.64,
+      "end": 114.46,
+      "text": "Hope is a commitment to action"
+    },
+    {
+      "start": 115.1,
+      "end": 118.52,
+      "text": "No matter how harsh the circumstances"
+    },
+    {
+      "start": 119.1,
+      "end": 122.48,
+      "text": "To keep moving for a better future"
+    },
+    {
+      "start": 123.5,
+      "end": 127.54,
+      "text": "That is the small and great responsibility"
+    },
+    {
+      "start": 128.1,
+      "end": 130.24,
+      "text": "Of each one of us"
+    },
+    {
+      "start": 135.22,
+      "end": 136.1,
+      "text": "You"
+    }
+  ]
+}

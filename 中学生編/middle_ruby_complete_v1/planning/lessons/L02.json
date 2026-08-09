@@ -1,0 +1,914 @@
+{
+  "lesson": 2,
+  "source_config": "中学生編/mio_video_l2_l10_sentence_v2/L2/planning/lesson.json",
+  "title_en": "Lesson 2  A Day at the Sea",
+  "title_ja": "海での一日",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 11,
+  "lines": [
+    {
+      "line": 1,
+      "english": "It was last Sunday.",
+      "source_ja": "先週の日曜日のことでした。",
+      "display_ja": "先週の日曜日のことでした。",
+      "corrected_translation": false,
+      "mixed": "先週の Sunday のことでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "先週の ",
+          "parts": [
+            {
+              "text": "先週",
+              "ruby": "せんしゅう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "Sunday",
+          "ruby": "日曜日"
+        },
+        {
+          "type": "ja",
+          "text": " のことでした。",
+          "parts": [
+            {
+              "text": "のことでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "Sunday",
+          "canonical_word": "Sunday",
+          "meaning": "日曜日"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Sunday",
+          "reading": "日曜日",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "Sunday",
+          "canonical_meaning": "日曜日"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "english": "My family and I went to the sea.",
+      "source_ja": "家族とわたしは海へ行きました。",
+      "display_ja": "家族とわたしは海へ行きました。",
+      "corrected_translation": false,
+      "mixed": "家族とわたしは sea へ行きました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "家族とわたしは ",
+          "parts": [
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "とわたしは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "sea",
+          "ruby": "海"
+        },
+        {
+          "type": "ja",
+          "text": " へ行きました。",
+          "parts": [
+            {
+              "text": "へ",
+              "ruby": ""
+            },
+            {
+              "text": "行",
+              "ruby": "い"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "sea",
+          "canonical_word": "sea",
+          "meaning": "海"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "sea",
+          "reading": "海",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "sea",
+          "canonical_meaning": "海"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "The sea was blue and beautiful.",
+      "source_ja": "海は青くてきれいでした。",
+      "display_ja": "海は青くてきれいでした。",
+      "corrected_translation": false,
+      "mixed": "sea は blue で beautiful でした。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "sea",
+          "ruby": "海"
+        },
+        {
+          "type": "ja",
+          "text": " は ",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "blue",
+          "ruby": "青い"
+        },
+        {
+          "type": "ja",
+          "text": " で ",
+          "parts": [
+            {
+              "text": "で",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "beautiful",
+          "ruby": "美しい"
+        },
+        {
+          "type": "ja",
+          "text": " でした。",
+          "parts": [
+            {
+              "text": "でした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "sea",
+          "canonical_word": "sea",
+          "meaning": "海"
+        },
+        {
+          "english": "blue",
+          "canonical_word": "blue",
+          "meaning": "青い"
+        },
+        {
+          "english": "beautiful",
+          "canonical_word": "beautiful",
+          "meaning": "美しい"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "sea",
+          "reading": "海",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "sea",
+          "canonical_meaning": "海"
+        },
+        {
+          "english": "blue",
+          "reading": "青い",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "blue",
+          "canonical_meaning": "青い"
+        },
+        {
+          "english": "beautiful",
+          "reading": "美しい",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "beautiful",
+          "canonical_meaning": "美しい"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "The sun was bright, and there were no clouds in the sky.",
+      "source_ja": "太陽は明るく、空には雲がありませんでした。",
+      "display_ja": "太陽は明るく、空には雲がありませんでした。",
+      "corrected_translation": false,
+      "mixed": "sun は bright で、空には雲がありませんでした。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "sun",
+          "ruby": "太陽"
+        },
+        {
+          "type": "ja",
+          "text": " は ",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "bright",
+          "ruby": "明るく"
+        },
+        {
+          "type": "ja",
+          "text": " で",
+          "parts": [
+            {
+              "text": "で",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "、空には雲がありませんでした。",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "空",
+              "ruby": "そら"
+            },
+            {
+              "text": "には",
+              "ruby": ""
+            },
+            {
+              "text": "雲",
+              "ruby": "くも"
+            },
+            {
+              "text": "がありませんでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "sun",
+          "canonical_word": "sun",
+          "meaning": "太陽"
+        },
+        {
+          "english": "bright",
+          "canonical_word": "bright",
+          "meaning": "明るい"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "sun",
+          "reading": "太陽",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "sun",
+          "canonical_meaning": "太陽"
+        },
+        {
+          "english": "bright",
+          "reading": "明るく",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "bright",
+          "canonical_meaning": "明るい"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "My brother was very good at swimming.",
+      "source_ja": "兄は泳ぐのがとても上手でした。",
+      "display_ja": "兄は泳ぐのがとても上手でした。",
+      "corrected_translation": false,
+      "mixed": "兄は swimming がとても上手でした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "兄は ",
+          "parts": [
+            {
+              "text": "兄",
+              "ruby": "あに"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "swimming",
+          "ruby": "泳ぐこと"
+        },
+        {
+          "type": "ja",
+          "text": " がとても上手でした。",
+          "parts": [
+            {
+              "text": "がとても",
+              "ruby": ""
+            },
+            {
+              "text": "上手",
+              "ruby": "じょうず"
+            },
+            {
+              "text": "でした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "swimming",
+          "canonical_word": "swimming",
+          "meaning": "泳ぐこと"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "swimming",
+          "reading": "泳ぐこと",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "swimming",
+          "canonical_meaning": "泳ぐこと"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "He went into the water many times, and he was very happy.",
+      "source_ja": "何度も水に入り、とてもうれしそうでした。",
+      "display_ja": "何度も水に入り、とてもうれしそうでした。",
+      "corrected_translation": false,
+      "mixed": "何度も水に入り、とても happy そうでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "何度も水に入り、とても ",
+          "parts": [
+            {
+              "text": "何",
+              "ruby": "なん"
+            },
+            {
+              "text": "度",
+              "ruby": "ど"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "水",
+              "ruby": "みず"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "入",
+              "ruby": "はい"
+            },
+            {
+              "text": "り、とても",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "happy",
+          "ruby": "うれし"
+        },
+        {
+          "type": "ja",
+          "text": " そうでした。",
+          "parts": [
+            {
+              "text": "そうでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "happy",
+          "canonical_word": "happy",
+          "meaning": "うれしい"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "happy",
+          "reading": "うれし",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "happy",
+          "canonical_meaning": "うれしい"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "My sister and I were on the beach.",
+      "source_ja": "妹とわたしは浜辺にいました。",
+      "display_ja": "妹とわたしは浜辺にいました。",
+      "corrected_translation": false,
+      "mixed": "妹とわたしは beach にいました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "妹とわたしは ",
+          "parts": [
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "とわたしは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "beach",
+          "ruby": "浜辺"
+        },
+        {
+          "type": "ja",
+          "text": " にいました。",
+          "parts": [
+            {
+              "text": "にいました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "beach",
+          "canonical_word": "beach",
+          "meaning": "浜辺"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "beach",
+          "reading": "浜辺",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "beach",
+          "canonical_meaning": "浜辺"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "We were together all day.",
+      "source_ja": "わたしたちは一日中いっしょでした。",
+      "display_ja": "わたしたちは一日中いっしょでした。",
+      "corrected_translation": false,
+      "mixed": "わたしたちは一日の all を together に過ごしました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしたちは一日の ",
+          "parts": [
+            {
+              "text": "わたしたちは",
+              "ruby": ""
+            },
+            {
+              "text": "一日",
+              "ruby": "いちにち"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "all",
+          "ruby": "すべての"
+        },
+        {
+          "type": "ja",
+          "text": " を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "together",
+          "ruby": "一緒に"
+        },
+        {
+          "type": "ja",
+          "text": " に過ごしました。",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "過",
+              "ruby": "す"
+            },
+            {
+              "text": "ごしました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "together",
+          "canonical_word": "together",
+          "meaning": "一緒に"
+        },
+        {
+          "english": "all",
+          "canonical_word": "all",
+          "meaning": "すべての"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "together",
+          "reading": "一緒に",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "together",
+          "canonical_meaning": "一緒に"
+        },
+        {
+          "english": "all",
+          "reading": "すべての",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "all",
+          "canonical_meaning": "すべての"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "For lunch, we had bread and fish that my mother made.",
+      "source_ja": "昼食には、母が作ったパンと魚を食べました。",
+      "display_ja": "昼食には、母が作ったパンと魚を食べました。",
+      "corrected_translation": false,
+      "mixed": "lunch には、母が作った bread と fish を食べました。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "lunch",
+          "ruby": "昼食"
+        },
+        {
+          "type": "ja",
+          "text": " には、母が作った ",
+          "parts": [
+            {
+              "text": "には、",
+              "ruby": ""
+            },
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "作",
+              "ruby": "つく"
+            },
+            {
+              "text": "った",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "bread",
+          "ruby": "パン"
+        },
+        {
+          "type": "ja",
+          "text": " と ",
+          "parts": [
+            {
+              "text": "と",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "fish",
+          "ruby": "魚"
+        },
+        {
+          "type": "ja",
+          "text": " を食べました。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "食",
+              "ruby": "た"
+            },
+            {
+              "text": "べました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "lunch",
+          "canonical_word": "Lunch",
+          "meaning": "昼食"
+        },
+        {
+          "english": "bread",
+          "canonical_word": "bread",
+          "meaning": "パン"
+        },
+        {
+          "english": "fish",
+          "canonical_word": "fish",
+          "meaning": "魚"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "lunch",
+          "reading": "昼食",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "Lunch",
+          "canonical_meaning": "昼食"
+        },
+        {
+          "english": "bread",
+          "reading": "パン",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "bread",
+          "canonical_meaning": "パン"
+        },
+        {
+          "english": "fish",
+          "reading": "魚",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "fish",
+          "canonical_meaning": "魚"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "They were delicious.",
+      "source_ja": "とてもおいしかったです。",
+      "display_ja": "とてもおいしかったです。",
+      "corrected_translation": false,
+      "mixed": "とても delicious でした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "とても ",
+          "parts": [
+            {
+              "text": "とても",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "delicious",
+          "ruby": "おいしかったです"
+        },
+        {
+          "type": "ja",
+          "text": " でした",
+          "parts": [
+            {
+              "text": "でした",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "delicious",
+          "canonical_word": "delicious",
+          "meaning": "とてもおいしい"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "delicious",
+          "reading": "おいしかったです",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "delicious",
+          "canonical_meaning": "とてもおいしい"
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "english": "In the evening, we were a little tired, but our hearts were very full.",
+      "source_ja": "夕方には少し疲れていましたが、心はとても満たされていました。",
+      "display_ja": "夕方には少し疲れていましたが、心はとても満たされていました。",
+      "corrected_translation": false,
+      "mixed": "evening には少し tired でした。but、心はとても満たされていました。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "evening",
+          "ruby": "夕方"
+        },
+        {
+          "type": "ja",
+          "text": " には少し ",
+          "parts": [
+            {
+              "text": "には",
+              "ruby": ""
+            },
+            {
+              "text": "少",
+              "ruby": "すこ"
+            },
+            {
+              "text": "し",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "tired",
+          "ruby": "疲れた"
+        },
+        {
+          "type": "ja",
+          "text": " でした。",
+          "parts": [
+            {
+              "text": "でした。",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "but",
+          "ruby": "しかし"
+        },
+        {
+          "type": "ja",
+          "text": "、心はとても満たされていました。",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "心",
+              "ruby": "こころ"
+            },
+            {
+              "text": "はとても",
+              "ruby": ""
+            },
+            {
+              "text": "満",
+              "ruby": "み"
+            },
+            {
+              "text": "たされていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "evening",
+          "canonical_word": "Evening",
+          "meaning": "夕方"
+        },
+        {
+          "english": "tired",
+          "canonical_word": "tired",
+          "meaning": "疲れた"
+        },
+        {
+          "english": "but",
+          "canonical_word": "but",
+          "meaning": "しかし"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "evening",
+          "reading": "夕方",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "Evening",
+          "canonical_meaning": "夕方"
+        },
+        {
+          "english": "tired",
+          "reading": "疲れた",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "tired",
+          "canonical_meaning": "疲れた"
+        },
+        {
+          "english": "but",
+          "reading": "しかし",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "but",
+          "canonical_meaning": "しかし"
+        }
+      ]
+    }
+  ]
+}

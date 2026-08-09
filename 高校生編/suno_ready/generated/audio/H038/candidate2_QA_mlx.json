@@ -1,0 +1,163 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H038.md",
+  "audio": "高校生編/suno_ready/generated/audio/H038/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 108.08,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9747,
+  "expected_words": 158,
+  "transcribed_words": 154,
+  "matched_words": 154,
+  "coverage": 0.9747,
+  "precision": 1.0,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 157,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 101,
+      "length": 2,
+      "words": [
+        "thirty",
+        "seven"
+      ]
+    },
+    {
+      "start": 17,
+      "length": 1,
+      "words": [
+        "twelve"
+      ]
+    },
+    {
+      "start": 95,
+      "length": 1,
+      "words": [
+        "twelve"
+      ]
+    }
+  ],
+  "replacement_count": 0,
+  "replacement_spans": [],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 17,
+      "actual_start": 17,
+      "expected": [
+        "twelve"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 95,
+      "actual_start": 94,
+      "expected": [
+        "twelve"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 101,
+      "actual_start": 99,
+      "expected": [
+        "thirty",
+        "seven"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "On December 17, 1903, on a sand dune at Kitty Hawk, North Carolina, the Wright brothers succeeded in a 12-second flight. They were brothers who, while running a bicycle shop Had kept pursuing a dream of flying Wilbur and Orville, with their own hands, built a wind tunnel And examined the shape of wings over and over again Many people said it was impossible But the brothers never abandoned their dream If birds can fly, we surely can too They believed the wind was strong that morning The aircraft carrying Orville made its brief flight of 12 seconds The distance was about 37 meters Yet that moment was the result of a long effort To achieve controlled, powered flight When Orville landed, the brothers knew that years of work had finally taken flight To be called an inventor meant nothing to them at that instant It was the very first step that humanity had taken toward the sky",
+  "segments": [
+    {
+      "start": 8.36,
+      "end": 21.08,
+      "text": "On December 17, 1903, on a sand dune at Kitty Hawk, North Carolina, the Wright brothers succeeded in a 12-second flight."
+    },
+    {
+      "start": 21.08,
+      "end": 25.5,
+      "text": "They were brothers who, while running a bicycle shop"
+    },
+    {
+      "start": 26.54,
+      "end": 30.3,
+      "text": "Had kept pursuing a dream of flying"
+    },
+    {
+      "start": 32.22,
+      "end": 35.86,
+      "text": "Wilbur and Orville, with their own hands, built a wind tunnel"
+    },
+    {
+      "start": 35.86,
+      "end": 40.8,
+      "text": "And examined the shape of wings over and over again"
+    },
+    {
+      "start": 41.62,
+      "end": 44.68,
+      "text": "Many people said it was impossible"
+    },
+    {
+      "start": 44.68,
+      "end": 49.02,
+      "text": "But the brothers never abandoned their dream"
+    },
+    {
+      "start": 49.02,
+      "end": 53.46,
+      "text": "If birds can fly, we surely can too"
+    },
+    {
+      "start": 53.46,
+      "end": 58.5,
+      "text": "They believed the wind was strong that morning"
+    },
+    {
+      "start": 58.5,
+      "end": 64.54,
+      "text": "The aircraft carrying Orville made its brief flight of 12 seconds"
+    },
+    {
+      "start": 64.54,
+      "end": 68.9,
+      "text": "The distance was about 37 meters"
+    },
+    {
+      "start": 70.24,
+      "end": 75.1,
+      "text": "Yet that moment was the result of a long effort"
+    },
+    {
+      "start": 75.1,
+      "end": 78.08,
+      "text": "To achieve controlled, powered flight"
+    },
+    {
+      "start": 79.12,
+      "end": 87.2,
+      "text": "When Orville landed, the brothers knew that years of work had finally taken flight"
+    },
+    {
+      "start": 88.72,
+      "end": 93.7,
+      "text": "To be called an inventor meant nothing to them at that instant"
+    },
+    {
+      "start": 95.54,
+      "end": 103.8,
+      "text": "It was the very first step that humanity had taken toward the sky"
+    },
+    {
+      "start": 108.08,
+      "end": 108.08,
+      "text": ""
+    }
+  ]
+}

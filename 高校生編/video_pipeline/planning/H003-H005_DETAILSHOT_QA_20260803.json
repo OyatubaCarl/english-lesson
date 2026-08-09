@@ -1,0 +1,48 @@
+{
+  "scope": "H003-H005",
+  "date": "2026-08-03",
+  "status": "PASS",
+  "reason": "歌詞が注目する本・物・表情・動作・時間経過を5カットでは十分に見せられなかったため、描写単位の寄り画を追加",
+  "scene_counts": {
+    "H003_before": 5,
+    "H003_after": 13,
+    "H004_before": 5,
+    "H004_after": 13,
+    "H005_before": 5,
+    "H005_after": 13,
+    "new_images": 24
+  },
+  "focus_policy": "歌詞が新しい物・動き・表情・時間経過へ注意を移すたび、広景から対象の寄り画または中景へ切り替える",
+  "prompt_record": "高校生編/video_pipeline/planning/H003-H005_DETAIL_SHOTS_PROMPTS_STYLE01.md",
+  "continuity": {
+    "H003_same_boy_bookstore_book_and_afternoon_progression": true,
+    "H004_same_father_son_box_photos_letter_and_living_room": true,
+    "H005_same_family_and_sora_across_arrival_to_weeks_later": true,
+    "H005_dog_welcomed_as_family_not_human_adoption": true,
+    "important_subjects_visible_above_caption_band": true
+  },
+  "previous_versions": [
+    "高校生編/video_pipeline/H003/output/archive_before_detailshots_20260803/",
+    "高校生編/video_pipeline/H004/output/archive_before_detailshots_20260803/",
+    "高校生編/video_pipeline/H005/output/archive_before_detailshots_20260803/"
+  ],
+  "checks": {
+    "H003_structural_verification": "PASS",
+    "H004_structural_verification": "PASS",
+    "H005_structural_verification": "PASS",
+    "H003_full_video_audio_decode": "PASS",
+    "H004_full_video_audio_decode": "PASS",
+    "H005_full_video_audio_decode": "PASS",
+    "combined_H001_H010_full_video_audio_decode": "PASS",
+    "ruby_and_highlight_policy_unchanged": true,
+    "stable_camera_policy_unchanged": true
+  },
+  "visual_qa": [
+    "高校生編/video_pipeline/qa_contact_sheets/H003_detailshot_13scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H004_detailshot_13scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H005_detailshot_13scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H003_detailshot_final_video_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H004_detailshot_final_video_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H005_detailshot_final_video_contact.jpg"
+  ]
+}

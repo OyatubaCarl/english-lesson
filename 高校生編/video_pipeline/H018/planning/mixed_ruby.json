@@ -1,0 +1,818 @@
+{
+  "lesson": "H018",
+  "title_ja": "妹の練習",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 11,
+  "canonical_target_lines": 5,
+  "mixed_lines": 5,
+  "japanese_only_lines": 6,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 8.64,
+      "end": 13.18,
+      "english": "My sister has been training for the marathon every day.",
+      "japanese": "僕の妹は毎日マラソンの練習をしています。",
+      "mixed": "僕の妹は毎日マラソンの練習をしています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "僕の妹は毎日マラソンの練習をしています。",
+          "parts": [
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "毎日",
+              "ruby": "まいにち"
+            },
+            {
+              "text": "マラソンの",
+              "ruby": ""
+            },
+            {
+              "text": "練習",
+              "ruby": "れんしゅう"
+            },
+            {
+              "text": "をしています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 2,
+      "start": 13.18,
+      "end": 16.878,
+      "english": "In two more weeks she will run the race.",
+      "japanese": "あと2週間で、妹はレースを走ります。",
+      "mixed": "あと2週間で、妹はレースを走ります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "あと2週間で、妹はレースを走ります。",
+          "parts": [
+            {
+              "text": "あと2",
+              "ruby": ""
+            },
+            {
+              "text": "週間",
+              "ruby": "しゅうかん"
+            },
+            {
+              "text": "で、",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "はレースを",
+              "ruby": ""
+            },
+            {
+              "text": "走",
+              "ruby": "はし"
+            },
+            {
+              "text": "ります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 3,
+      "start": 16.878,
+      "end": 22.78,
+      "english": "At first, she was too exhausted to run ten kilometers and would end up walking halfway.",
+      "japanese": "最初は疲れ果てて10キロも走れず、途中で歩いてしまうこともあった。",
+      "mixed": "最初は exhausted で10キロも走れず、途中で歩いてしまうこともありました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "最初は ",
+          "parts": [
+            {
+              "text": "最初",
+              "ruby": "さいしょ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "exhausted",
+          "ruby": "疲れ切って"
+        },
+        {
+          "type": "ja",
+          "text": " で10キロも走れず、途中で歩いてしまうこともありました。",
+          "parts": [
+            {
+              "text": "で10キロも",
+              "ruby": ""
+            },
+            {
+              "text": "走",
+              "ruby": "はし"
+            },
+            {
+              "text": "れず、",
+              "ruby": ""
+            },
+            {
+              "text": "途中",
+              "ruby": "とちゅう"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "歩",
+              "ruby": "ある"
+            },
+            {
+              "text": "いてしまうこともありました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "exhausted",
+          "canonical_word": "exhausted",
+          "meaning": "疲れ切った"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "exhausted",
+          "reading": "疲れ切って",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "exhausted",
+          "canonical_meaning": "疲れ切った"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 4,
+      "start": 22.78,
+      "end": 26.44,
+      "english": "Her body could not yet keep up with her goal.",
+      "japanese": "妹の体は、まだ目標に追いついていませんでした。",
+      "mixed": "妹の体は、まだ目標に追いついていませんでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "妹の体は、まだ目標に追いついていませんでした。",
+          "parts": [
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "体",
+              "ruby": "からだ"
+            },
+            {
+              "text": "は、まだ",
+              "ruby": ""
+            },
+            {
+              "text": "目標",
+              "ruby": "もくひょう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "追",
+              "ruby": "お"
+            },
+            {
+              "text": "いついていませんでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 5,
+      "start": 26.44,
+      "end": 33.46,
+      "english": "But she kept making a steady effort and gradually learned how to control her breathing.",
+      "japanese": "それでも妹は地道な努力を続け、少しずつ呼吸を整える方法を身につけました。",
+      "mixed": "それでも妹は地道な effort を続け、少しずつ呼吸を整える方法を learn しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "それでも妹は地道な ",
+          "parts": [
+            {
+              "text": "それでも",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "地道",
+              "ruby": "じみち"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "effort",
+          "ruby": "努力"
+        },
+        {
+          "type": "ja",
+          "text": " を続け、少しずつ呼吸を整える方法を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "続",
+              "ruby": "つづ"
+            },
+            {
+              "text": "け、",
+              "ruby": ""
+            },
+            {
+              "text": "少",
+              "ruby": "すこ"
+            },
+            {
+              "text": "しずつ",
+              "ruby": ""
+            },
+            {
+              "text": "呼吸",
+              "ruby": "こきゅう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "整",
+              "ruby": "ととの"
+            },
+            {
+              "text": "える",
+              "ruby": ""
+            },
+            {
+              "text": "方法",
+              "ruby": "ほうほう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "learn",
+          "ruby": "身につける"
+        },
+        {
+          "type": "ja",
+          "text": " しました。",
+          "parts": [
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "effort",
+          "canonical_word": "effort",
+          "meaning": "努力"
+        },
+        {
+          "english": "learned",
+          "canonical_word": "learn",
+          "meaning": "学ぶ"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "effort",
+          "reading": "努力",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "effort",
+          "canonical_meaning": "努力"
+        },
+        {
+          "english": "learn",
+          "reading": "身につける",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "learn",
+          "canonical_meaning": "学ぶ"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 6,
+      "start": 34.22,
+      "end": 38.88,
+      "english": "Lately she has enough strength to finish the full ten kilometers.",
+      "japanese": "最近では、10キロを走り切れるだけの体力がつきました。",
+      "mixed": "最近では、10キロを走り切れるだけの体力がつきました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "最近では、10キロを走り切れるだけの体力がつきました。",
+          "parts": [
+            {
+              "text": "最近",
+              "ruby": "さいきん"
+            },
+            {
+              "text": "では、10キロを",
+              "ruby": ""
+            },
+            {
+              "text": "走",
+              "ruby": "はし"
+            },
+            {
+              "text": "り",
+              "ruby": ""
+            },
+            {
+              "text": "切",
+              "ruby": "き"
+            },
+            {
+              "text": "れるだけの",
+              "ruby": ""
+            },
+            {
+              "text": "体力",
+              "ruby": "たいりょく"
+            },
+            {
+              "text": "がつきました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 7,
+      "start": 38.88,
+      "end": 42.42,
+      "english": "I go out to the riverbank to watch her.",
+      "japanese": "僕は妹を見守るために川辺へ行きます。",
+      "mixed": "僕は妹を見守るために川辺へ行きます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "僕は妹を見守るために川辺へ行きます。",
+          "parts": [
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "見守",
+              "ruby": "みまも"
+            },
+            {
+              "text": "るために",
+              "ruby": ""
+            },
+            {
+              "text": "川辺",
+              "ruby": "かわべ"
+            },
+            {
+              "text": "へ",
+              "ruby": ""
+            },
+            {
+              "text": "行",
+              "ruby": "い"
+            },
+            {
+              "text": "きます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 8,
+      "start": 42.72,
+      "end": 48.6,
+      "english": "In order to reach her goal, she runs every day.",
+      "japanese": "目標にたどり着くために、妹は毎日走っています。",
+      "mixed": "目標に reach するために、妹は毎日走っています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "目標に ",
+          "parts": [
+            {
+              "text": "目標",
+              "ruby": "もくひょう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "reach",
+          "ruby": "到達する"
+        },
+        {
+          "type": "ja",
+          "text": " するために、妹は毎日走っています。",
+          "parts": [
+            {
+              "text": "するために、",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "毎日",
+              "ruby": "まいにち"
+            },
+            {
+              "text": "走",
+              "ruby": "はし"
+            },
+            {
+              "text": "っています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "reach",
+          "canonical_word": "reach",
+          "meaning": "届く"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "reach",
+          "reading": "到達する",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "reach",
+          "canonical_meaning": "届く"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 9,
+      "start": 48.84,
+      "end": 55.12,
+      "english": "To have such a clear purpose is something bright and admirable.",
+      "japanese": "このように明確な目的を持つ姿は、まぶしく、尊敬できます。",
+      "mixed": "このように明確な purpose を持つ姿は、まぶしく、尊敬できます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "このように明確な ",
+          "parts": [
+            {
+              "text": "このように",
+              "ruby": ""
+            },
+            {
+              "text": "明確",
+              "ruby": "めいかく"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "purpose",
+          "ruby": "目的"
+        },
+        {
+          "type": "ja",
+          "text": " を持つ姿は、まぶしく、尊敬できます。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "持",
+              "ruby": "も"
+            },
+            {
+              "text": "つ",
+              "ruby": ""
+            },
+            {
+              "text": "姿",
+              "ruby": "すがた"
+            },
+            {
+              "text": "は、まぶしく、",
+              "ruby": ""
+            },
+            {
+              "text": "尊敬",
+              "ruby": "そんけい"
+            },
+            {
+              "text": "できます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "purpose",
+          "canonical_word": "purpose",
+          "meaning": "目的"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "purpose",
+          "reading": "目的",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "purpose",
+          "canonical_meaning": "目的"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 10,
+      "start": 56.44,
+      "end": 64.22,
+      "english": "I am sure that on the race day, she will cross the finish line with a smile.",
+      "japanese": "レース当日、妹はきっと笑顔でゴールラインを越えるでしょう。",
+      "mixed": "レース当日、妹はきっと笑顔でゴールラインを越えるでしょう。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "レース当日、妹はきっと笑顔でゴールラインを越えるでしょう。",
+          "parts": [
+            {
+              "text": "レース",
+              "ruby": ""
+            },
+            {
+              "text": "当日",
+              "ruby": "とうじつ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "はきっと",
+              "ruby": ""
+            },
+            {
+              "text": "笑顔",
+              "ruby": "えがお"
+            },
+            {
+              "text": "でゴールラインを",
+              "ruby": ""
+            },
+            {
+              "text": "越",
+              "ruby": "こ"
+            },
+            {
+              "text": "えるでしょう。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 11,
+      "start": 65.44,
+      "end": 75.44,
+      "english": "On that day she will be not only a runner but also someone who has turned steady effort into real confidence.",
+      "japanese": "その日、妹は単なるランナーではなく、地道な努力を本当の自信に変えた人になるでしょう。",
+      "mixed": "その日、妹は単なるランナーではなく、地道な effort を本当の自信に変えた人になるでしょう。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "その日、妹は単なるランナーではなく、地道な ",
+          "parts": [
+            {
+              "text": "その",
+              "ruby": ""
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "単",
+              "ruby": "たん"
+            },
+            {
+              "text": "なるランナーではなく、",
+              "ruby": ""
+            },
+            {
+              "text": "地道",
+              "ruby": "じみち"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "effort",
+          "ruby": "努力"
+        },
+        {
+          "type": "ja",
+          "text": " を本当の自信に変えた人になるでしょう。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "本当",
+              "ruby": "ほんと"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "自信",
+              "ruby": "じしん"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "変",
+              "ruby": "か"
+            },
+            {
+              "text": "えた",
+              "ruby": ""
+            },
+            {
+              "text": "人",
+              "ruby": "ひと"
+            },
+            {
+              "text": "になるでしょう。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "effort",
+          "canonical_word": "effort",
+          "meaning": "努力"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "effort",
+          "reading": "努力",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "effort",
+          "canonical_meaning": "努力"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    }
+  ]
+}

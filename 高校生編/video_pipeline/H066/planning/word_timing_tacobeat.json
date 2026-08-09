@@ -1,0 +1,1606 @@
+{
+  "lesson": "H066",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h066_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H066/candidate1-full.mp3",
+  "source_audio_sha256": "36e26b22a61fc97e6fecf51571ab32dcd76237395f0e8f454e9ebe6cf211d4d4",
+  "bpm": 79.8,
+  "exact_word_match": true,
+  "word_count": 245,
+  "line_count": 15,
+  "first_word_start": 13.922,
+  "last_word_end": 172.079,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Ancient Rome is said to have been founded in 753 BC.",
+      "word_timings": [
+        {
+          "word": "Ancient",
+          "display_index": 0,
+          "start": 13.922,
+          "end": 14.342
+        },
+        {
+          "word": "Rome",
+          "display_index": 1,
+          "start": 14.342,
+          "end": 14.725
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 14.725,
+          "end": 14.842
+        },
+        {
+          "word": "said",
+          "display_index": 3,
+          "start": 14.842,
+          "end": 15.048
+        },
+        {
+          "word": "to",
+          "display_index": 4,
+          "start": 15.048,
+          "end": 15.162
+        },
+        {
+          "word": "have",
+          "display_index": 5,
+          "start": 15.162,
+          "end": 15.302
+        },
+        {
+          "word": "been",
+          "display_index": 6,
+          "start": 15.302,
+          "end": 15.522
+        },
+        {
+          "word": "founded",
+          "display_index": 7,
+          "start": 15.522,
+          "end": 16.022
+        },
+        {
+          "word": "in",
+          "display_index": 8,
+          "start": 16.022,
+          "end": 16.282
+        },
+        {
+          "word": "753",
+          "display_index": 9,
+          "start": 16.282,
+          "end": 17.202
+        },
+        {
+          "word": "BC.",
+          "display_index": 10,
+          "start": 17.202,
+          "end": 18.702
+        }
+      ],
+      "start": 13.922,
+      "end": 18.702
+    },
+    {
+      "line": 2,
+      "english": "For its first few centuries, it was a kingdom and then a republic centered on a small city on the Mediterranean.",
+      "word_timings": [
+        {
+          "word": "For",
+          "display_index": 0,
+          "start": 19.322,
+          "end": 19.482
+        },
+        {
+          "word": "its",
+          "display_index": 1,
+          "start": 19.482,
+          "end": 19.642
+        },
+        {
+          "word": "first",
+          "display_index": 2,
+          "start": 19.642,
+          "end": 19.982
+        },
+        {
+          "word": "few",
+          "display_index": 3,
+          "start": 19.982,
+          "end": 20.242
+        },
+        {
+          "word": "centuries,",
+          "display_index": 4,
+          "start": 20.242,
+          "end": 20.922
+        },
+        {
+          "word": "it",
+          "display_index": 5,
+          "start": 20.922,
+          "end": 21.002
+        },
+        {
+          "word": "was",
+          "display_index": 6,
+          "start": 21.002,
+          "end": 21.087
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 21.087,
+          "end": 21.262
+        },
+        {
+          "word": "kingdom",
+          "display_index": 8,
+          "start": 21.262,
+          "end": 22.603
+        },
+        {
+          "word": "and",
+          "display_index": 9,
+          "start": 22.603,
+          "end": 22.723
+        },
+        {
+          "word": "then",
+          "display_index": 10,
+          "start": 22.723,
+          "end": 22.872
+        },
+        {
+          "word": "a",
+          "display_index": 11,
+          "start": 22.872,
+          "end": 22.963
+        },
+        {
+          "word": "republic",
+          "display_index": 12,
+          "start": 22.963,
+          "end": 23.543
+        },
+        {
+          "word": "centered",
+          "display_index": 13,
+          "start": 23.543,
+          "end": 23.983
+        },
+        {
+          "word": "on",
+          "display_index": 14,
+          "start": 23.983,
+          "end": 24.136
+        },
+        {
+          "word": "a",
+          "display_index": 15,
+          "start": 24.136,
+          "end": 24.223
+        },
+        {
+          "word": "small",
+          "display_index": 16,
+          "start": 24.223,
+          "end": 24.783
+        },
+        {
+          "word": "city",
+          "display_index": 17,
+          "start": 24.783,
+          "end": 26.163
+        },
+        {
+          "word": "on",
+          "display_index": 18,
+          "start": 26.163,
+          "end": 26.298
+        },
+        {
+          "word": "the",
+          "display_index": 19,
+          "start": 26.298,
+          "end": 26.443
+        },
+        {
+          "word": "Mediterranean.",
+          "display_index": 20,
+          "start": 26.443,
+          "end": 27.943
+        }
+      ],
+      "start": 19.322,
+      "end": 27.943
+    },
+    {
+      "line": 3,
+      "english": "By the second century BC, Rome had united the Italian peninsula and, after a long war with Carthage, taken control of the Mediterranean.",
+      "word_timings": [
+        {
+          "word": "By",
+          "display_index": 0,
+          "start": 30.503,
+          "end": 30.692
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 30.692,
+          "end": 30.772
+        },
+        {
+          "word": "second",
+          "display_index": 2,
+          "start": 30.763,
+          "end": 31.143
+        },
+        {
+          "word": "century",
+          "display_index": 3,
+          "start": 31.143,
+          "end": 31.624
+        },
+        {
+          "word": "BC,",
+          "display_index": 4,
+          "start": 31.624,
+          "end": 32.604
+        },
+        {
+          "word": "Rome",
+          "display_index": 5,
+          "start": 32.604,
+          "end": 32.964
+        },
+        {
+          "word": "had",
+          "display_index": 6,
+          "start": 32.964,
+          "end": 33.224
+        },
+        {
+          "word": "united",
+          "display_index": 7,
+          "start": 33.224,
+          "end": 33.811
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 33.811,
+          "end": 33.924
+        },
+        {
+          "word": "Italian",
+          "display_index": 9,
+          "start": 33.924,
+          "end": 34.444
+        },
+        {
+          "word": "peninsula",
+          "display_index": 10,
+          "start": 34.444,
+          "end": 35.724
+        },
+        {
+          "word": "and,",
+          "display_index": 11,
+          "start": 35.724,
+          "end": 35.884
+        },
+        {
+          "word": "after",
+          "display_index": 12,
+          "start": 35.884,
+          "end": 36.204
+        },
+        {
+          "word": "a",
+          "display_index": 13,
+          "start": 36.204,
+          "end": 36.324
+        },
+        {
+          "word": "long",
+          "display_index": 14,
+          "start": 36.324,
+          "end": 36.724
+        },
+        {
+          "word": "war",
+          "display_index": 15,
+          "start": 36.724,
+          "end": 37.084
+        },
+        {
+          "word": "with",
+          "display_index": 16,
+          "start": 37.084,
+          "end": 37.304
+        },
+        {
+          "word": "Carthage,",
+          "display_index": 17,
+          "start": 37.304,
+          "end": 38.104
+        },
+        {
+          "word": "taken",
+          "display_index": 18,
+          "start": 38.104,
+          "end": 38.524
+        },
+        {
+          "word": "control",
+          "display_index": 19,
+          "start": 38.524,
+          "end": 39.264
+        },
+        {
+          "word": "of",
+          "display_index": 20,
+          "start": 39.264,
+          "end": 39.4
+        },
+        {
+          "word": "the",
+          "display_index": 21,
+          "start": 39.4,
+          "end": 39.524
+        },
+        {
+          "word": "Mediterranean.",
+          "display_index": 22,
+          "start": 39.524,
+          "end": 41.024
+        }
+      ],
+      "start": 30.503,
+      "end": 41.024
+    },
+    {
+      "line": 4,
+      "english": "The senate and the consuls of the republic governed this vast territory.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 42.263,
+          "end": 42.365
+        },
+        {
+          "word": "senate",
+          "display_index": 1,
+          "start": 42.365,
+          "end": 42.785
+        },
+        {
+          "word": "and",
+          "display_index": 2,
+          "start": 42.785,
+          "end": 42.918
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 42.918,
+          "end": 43.025
+        },
+        {
+          "word": "consuls",
+          "display_index": 4,
+          "start": 43.025,
+          "end": 43.705
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 43.705,
+          "end": 43.834
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 43.834,
+          "end": 43.925
+        },
+        {
+          "word": "republic",
+          "display_index": 7,
+          "start": 43.925,
+          "end": 44.525
+        },
+        {
+          "word": "governed",
+          "display_index": 8,
+          "start": 44.525,
+          "end": 44.945
+        },
+        {
+          "word": "this",
+          "display_index": 9,
+          "start": 44.945,
+          "end": 45.205
+        },
+        {
+          "word": "vast",
+          "display_index": 10,
+          "start": 45.205,
+          "end": 45.705
+        },
+        {
+          "word": "territory.",
+          "display_index": 11,
+          "start": 45.705,
+          "end": 47.205
+        }
+      ],
+      "start": 42.263,
+      "end": 47.205
+    },
+    {
+      "line": 5,
+      "english": "In the first century BC, Julius Caesar appeared.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 47.525,
+          "end": 47.622
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 47.622,
+          "end": 47.745
+        },
+        {
+          "word": "first",
+          "display_index": 2,
+          "start": 47.745,
+          "end": 48.165
+        },
+        {
+          "word": "century",
+          "display_index": 3,
+          "start": 48.165,
+          "end": 48.645
+        },
+        {
+          "word": "BC,",
+          "display_index": 4,
+          "start": 48.645,
+          "end": 49.906
+        },
+        {
+          "word": "Julius",
+          "display_index": 5,
+          "start": 49.906,
+          "end": 50.526
+        },
+        {
+          "word": "Caesar",
+          "display_index": 6,
+          "start": 50.526,
+          "end": 51.586
+        },
+        {
+          "word": "appeared.",
+          "display_index": 7,
+          "start": 51.586,
+          "end": 53.086
+        }
+      ],
+      "start": 47.525,
+      "end": 53.086
+    },
+    {
+      "line": 6,
+      "english": "He conquered Gaul and brought to Rome vast wealth and territory.",
+      "word_timings": [
+        {
+          "word": "He",
+          "display_index": 0,
+          "start": 54.066,
+          "end": 54.206
+        },
+        {
+          "word": "conquered",
+          "display_index": 1,
+          "start": 54.206,
+          "end": 54.626
+        },
+        {
+          "word": "Gaul",
+          "display_index": 2,
+          "start": 54.626,
+          "end": 55.046
+        },
+        {
+          "word": "and",
+          "display_index": 3,
+          "start": 55.046,
+          "end": 55.186
+        },
+        {
+          "word": "brought",
+          "display_index": 4,
+          "start": 55.186,
+          "end": 55.521
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 55.521,
+          "end": 55.906
+        },
+        {
+          "word": "Rome",
+          "display_index": 6,
+          "start": 55.906,
+          "end": 56.446
+        },
+        {
+          "word": "vast",
+          "display_index": 7,
+          "start": 56.446,
+          "end": 56.846
+        },
+        {
+          "word": "wealth",
+          "display_index": 8,
+          "start": 56.846,
+          "end": 57.266
+        },
+        {
+          "word": "and",
+          "display_index": 9,
+          "start": 57.266,
+          "end": 57.546
+        },
+        {
+          "word": "territory.",
+          "display_index": 10,
+          "start": 57.546,
+          "end": 59.046
+        }
+      ],
+      "start": 54.066,
+      "end": 59.046
+    },
+    {
+      "line": 7,
+      "english": "Eventually he became dictator for life, but in 44 BC he was assassinated by senators.",
+      "word_timings": [
+        {
+          "word": "Eventually",
+          "display_index": 0,
+          "start": 59.667,
+          "end": 60.407
+        },
+        {
+          "word": "he",
+          "display_index": 1,
+          "start": 60.407,
+          "end": 60.747
+        },
+        {
+          "word": "became",
+          "display_index": 2,
+          "start": 60.747,
+          "end": 61.307
+        },
+        {
+          "word": "dictator",
+          "display_index": 3,
+          "start": 61.307,
+          "end": 62.347
+        },
+        {
+          "word": "for",
+          "display_index": 4,
+          "start": 62.347,
+          "end": 62.607
+        },
+        {
+          "word": "life,",
+          "display_index": 5,
+          "start": 62.607,
+          "end": 64.487
+        },
+        {
+          "word": "but",
+          "display_index": 6,
+          "start": 64.487,
+          "end": 64.707
+        },
+        {
+          "word": "in",
+          "display_index": 7,
+          "start": 64.707,
+          "end": 64.987
+        },
+        {
+          "word": "44",
+          "display_index": 8,
+          "start": 64.987,
+          "end": 65.767
+        },
+        {
+          "word": "BC",
+          "display_index": 9,
+          "start": 65.767,
+          "end": 66.727
+        },
+        {
+          "word": "he",
+          "display_index": 10,
+          "start": 66.727,
+          "end": 66.887
+        },
+        {
+          "word": "was",
+          "display_index": 11,
+          "start": 66.887,
+          "end": 67.107
+        },
+        {
+          "word": "assassinated",
+          "display_index": 12,
+          "start": 67.107,
+          "end": 68.388
+        },
+        {
+          "word": "by",
+          "display_index": 13,
+          "start": 68.388,
+          "end": 68.728
+        },
+        {
+          "word": "senators.",
+          "display_index": 14,
+          "start": 68.728,
+          "end": 70.228
+        }
+      ],
+      "start": 59.667,
+      "end": 70.228
+    },
+    {
+      "line": 8,
+      "english": "His successor Octavian, in 27 BC, was given the title Augustus by the senate and became the first emperor.",
+      "word_timings": [
+        {
+          "word": "His",
+          "display_index": 0,
+          "start": 70.608,
+          "end": 70.788
+        },
+        {
+          "word": "successor",
+          "display_index": 1,
+          "start": 70.788,
+          "end": 71.468
+        },
+        {
+          "word": "Octavian,",
+          "display_index": 2,
+          "start": 71.468,
+          "end": 73.448
+        },
+        {
+          "word": "in",
+          "display_index": 3,
+          "start": 73.448,
+          "end": 73.548
+        },
+        {
+          "word": "27",
+          "display_index": 4,
+          "start": 73.548,
+          "end": 74.348
+        },
+        {
+          "word": "BC,",
+          "display_index": 5,
+          "start": 74.348,
+          "end": 76.388
+        },
+        {
+          "word": "was",
+          "display_index": 6,
+          "start": 76.388,
+          "end": 76.569
+        },
+        {
+          "word": "given",
+          "display_index": 7,
+          "start": 76.569,
+          "end": 77.153
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 77.153,
+          "end": 77.309
+        },
+        {
+          "word": "title",
+          "display_index": 9,
+          "start": 77.309,
+          "end": 78.149
+        },
+        {
+          "word": "Augustus",
+          "display_index": 10,
+          "start": 78.149,
+          "end": 78.849
+        },
+        {
+          "word": "by",
+          "display_index": 11,
+          "start": 78.849,
+          "end": 79.094
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 79.094,
+          "end": 79.209
+        },
+        {
+          "word": "senate",
+          "display_index": 13,
+          "start": 79.209,
+          "end": 80.349
+        },
+        {
+          "word": "and",
+          "display_index": 14,
+          "start": 80.349,
+          "end": 80.509
+        },
+        {
+          "word": "became",
+          "display_index": 15,
+          "start": 80.509,
+          "end": 81.251
+        },
+        {
+          "word": "the",
+          "display_index": 16,
+          "start": 81.251,
+          "end": 81.449
+        },
+        {
+          "word": "first",
+          "display_index": 17,
+          "start": 81.449,
+          "end": 82.129
+        },
+        {
+          "word": "emperor.",
+          "display_index": 18,
+          "start": 82.129,
+          "end": 83.629
+        }
+      ],
+      "start": 70.608,
+      "end": 83.629
+    },
+    {
+      "line": 9,
+      "english": "Through this, Rome was transformed from a republic into an empire.",
+      "word_timings": [
+        {
+          "word": "Through",
+          "display_index": 0,
+          "start": 85.73,
+          "end": 85.97
+        },
+        {
+          "word": "this,",
+          "display_index": 1,
+          "start": 85.97,
+          "end": 86.69
+        },
+        {
+          "word": "Rome",
+          "display_index": 2,
+          "start": 86.69,
+          "end": 87.03
+        },
+        {
+          "word": "was",
+          "display_index": 3,
+          "start": 87.03,
+          "end": 87.23
+        },
+        {
+          "word": "transformed",
+          "display_index": 4,
+          "start": 87.23,
+          "end": 88.35
+        },
+        {
+          "word": "from",
+          "display_index": 5,
+          "start": 88.35,
+          "end": 88.567
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 88.567,
+          "end": 88.73
+        },
+        {
+          "word": "republic",
+          "display_index": 7,
+          "start": 88.73,
+          "end": 89.57
+        },
+        {
+          "word": "into",
+          "display_index": 8,
+          "start": 89.57,
+          "end": 90.13
+        },
+        {
+          "word": "an",
+          "display_index": 9,
+          "start": 90.13,
+          "end": 90.33
+        },
+        {
+          "word": "empire.",
+          "display_index": 10,
+          "start": 90.33,
+          "end": 91.064
+        }
+      ],
+      "start": 85.73,
+      "end": 91.064
+    },
+    {
+      "line": 10,
+      "english": "The two centuries that followed are called the Pax Romana, a period of prosperity.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 91.364,
+          "end": 91.49
+        },
+        {
+          "word": "two",
+          "display_index": 1,
+          "start": 91.49,
+          "end": 91.85
+        },
+        {
+          "word": "centuries",
+          "display_index": 2,
+          "start": 91.85,
+          "end": 93.01
+        },
+        {
+          "word": "that",
+          "display_index": 3,
+          "start": 93.01,
+          "end": 93.21
+        },
+        {
+          "word": "followed",
+          "display_index": 4,
+          "start": 93.21,
+          "end": 93.784
+        },
+        {
+          "word": "are",
+          "display_index": 5,
+          "start": 93.784,
+          "end": 94.11
+        },
+        {
+          "word": "called",
+          "display_index": 6,
+          "start": 94.11,
+          "end": 94.723
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 94.723,
+          "end": 94.871
+        },
+        {
+          "word": "Pax",
+          "display_index": 8,
+          "start": 94.871,
+          "end": 95.291
+        },
+        {
+          "word": "Romana,",
+          "display_index": 9,
+          "start": 95.291,
+          "end": 96.952
+        },
+        {
+          "word": "a",
+          "display_index": 10,
+          "start": 96.952,
+          "end": 97.091
+        },
+        {
+          "word": "period",
+          "display_index": 11,
+          "start": 97.091,
+          "end": 97.811
+        },
+        {
+          "word": "of",
+          "display_index": 12,
+          "start": 97.811,
+          "end": 98.231
+        },
+        {
+          "word": "prosperity.",
+          "display_index": 13,
+          "start": 98.231,
+          "end": 99.731
+        }
+      ],
+      "start": 91.364,
+      "end": 99.731
+    },
+    {
+      "line": 11,
+      "english": "The whole shore of the Mediterranean fell under Roman rule, and roads were built, with aqueducts, the Colosseum, and baths constructed across the lands.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 101.061,
+          "end": 101.211
+        },
+        {
+          "word": "whole",
+          "display_index": 1,
+          "start": 101.211,
+          "end": 101.571
+        },
+        {
+          "word": "shore",
+          "display_index": 2,
+          "start": 101.571,
+          "end": 102.071
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 102.071,
+          "end": 102.196
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 102.196,
+          "end": 102.351
+        },
+        {
+          "word": "Mediterranean",
+          "display_index": 5,
+          "start": 102.351,
+          "end": 103.832
+        },
+        {
+          "word": "fell",
+          "display_index": 6,
+          "start": 103.832,
+          "end": 104.292
+        },
+        {
+          "word": "under",
+          "display_index": 7,
+          "start": 104.292,
+          "end": 104.592
+        },
+        {
+          "word": "Roman",
+          "display_index": 8,
+          "start": 104.592,
+          "end": 105.152
+        },
+        {
+          "word": "rule,",
+          "display_index": 9,
+          "start": 105.152,
+          "end": 106.672
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 106.672,
+          "end": 106.852
+        },
+        {
+          "word": "roads",
+          "display_index": 11,
+          "start": 106.852,
+          "end": 107.232
+        },
+        {
+          "word": "were",
+          "display_index": 12,
+          "start": 107.232,
+          "end": 107.412
+        },
+        {
+          "word": "built,",
+          "display_index": 13,
+          "start": 107.412,
+          "end": 108.172
+        },
+        {
+          "word": "with",
+          "display_index": 14,
+          "start": 108.172,
+          "end": 108.452
+        },
+        {
+          "word": "aqueducts,",
+          "display_index": 15,
+          "start": 108.452,
+          "end": 109.67
+        },
+        {
+          "word": "the",
+          "display_index": 16,
+          "start": 109.67,
+          "end": 109.812
+        },
+        {
+          "word": "Colosseum,",
+          "display_index": 17,
+          "start": 109.812,
+          "end": 112.532
+        },
+        {
+          "word": "and",
+          "display_index": 18,
+          "start": 112.532,
+          "end": 112.853
+        },
+        {
+          "word": "baths",
+          "display_index": 19,
+          "start": 112.853,
+          "end": 113.413
+        },
+        {
+          "word": "constructed",
+          "display_index": 20,
+          "start": 113.413,
+          "end": 115.673
+        },
+        {
+          "word": "across",
+          "display_index": 21,
+          "start": 115.673,
+          "end": 116.243
+        },
+        {
+          "word": "the",
+          "display_index": 22,
+          "start": 116.243,
+          "end": 116.393
+        },
+        {
+          "word": "lands.",
+          "display_index": 23,
+          "start": 116.393,
+          "end": 117.893
+        }
+      ],
+      "start": 101.061,
+      "end": 117.893
+    },
+    {
+      "line": 12,
+      "english": "But from the third century onward, the Roman Empire would suffer from internal disorder and invasions by outside forces.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 118.313,
+          "end": 118.453
+        },
+        {
+          "word": "from",
+          "display_index": 1,
+          "start": 118.453,
+          "end": 118.675
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 118.675,
+          "end": 118.833
+        },
+        {
+          "word": "third",
+          "display_index": 3,
+          "start": 118.833,
+          "end": 119.233
+        },
+        {
+          "word": "century",
+          "display_index": 4,
+          "start": 119.233,
+          "end": 119.933
+        },
+        {
+          "word": "onward,",
+          "display_index": 5,
+          "start": 119.933,
+          "end": 121.344
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 121.344,
+          "end": 121.473
+        },
+        {
+          "word": "Roman",
+          "display_index": 7,
+          "start": 121.473,
+          "end": 121.954
+        },
+        {
+          "word": "Empire",
+          "display_index": 8,
+          "start": 121.954,
+          "end": 123.154
+        },
+        {
+          "word": "would",
+          "display_index": 9,
+          "start": 123.154,
+          "end": 123.394
+        },
+        {
+          "word": "suffer",
+          "display_index": 10,
+          "start": 123.394,
+          "end": 123.914
+        },
+        {
+          "word": "from",
+          "display_index": 11,
+          "start": 123.914,
+          "end": 124.134
+        },
+        {
+          "word": "internal",
+          "display_index": 12,
+          "start": 124.134,
+          "end": 124.774
+        },
+        {
+          "word": "disorder",
+          "display_index": 13,
+          "start": 124.774,
+          "end": 126.034
+        },
+        {
+          "word": "and",
+          "display_index": 14,
+          "start": 126.034,
+          "end": 126.194
+        },
+        {
+          "word": "invasions",
+          "display_index": 15,
+          "start": 126.194,
+          "end": 126.974
+        },
+        {
+          "word": "by",
+          "display_index": 16,
+          "start": 126.974,
+          "end": 127.234
+        },
+        {
+          "word": "outside",
+          "display_index": 17,
+          "start": 127.234,
+          "end": 128.194
+        },
+        {
+          "word": "forces.",
+          "display_index": 18,
+          "start": 128.194,
+          "end": 129.694
+        }
+      ],
+      "start": 118.313,
+      "end": 129.694
+    },
+    {
+      "line": 13,
+      "english": "In 395, the empire split into east and west, and in 476, the western empire was brought down by Germanic peoples.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 130.354,
+          "end": 130.514
+        },
+        {
+          "word": "395,",
+          "display_index": 1,
+          "start": 130.514,
+          "end": 132.238
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 132.238,
+          "end": 132.475
+        },
+        {
+          "word": "empire",
+          "display_index": 3,
+          "start": 132.475,
+          "end": 133.075
+        },
+        {
+          "word": "split",
+          "display_index": 4,
+          "start": 133.075,
+          "end": 133.455
+        },
+        {
+          "word": "into",
+          "display_index": 5,
+          "start": 133.455,
+          "end": 133.975
+        },
+        {
+          "word": "east",
+          "display_index": 6,
+          "start": 133.975,
+          "end": 134.335
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 134.335,
+          "end": 134.495
+        },
+        {
+          "word": "west,",
+          "display_index": 8,
+          "start": 134.495,
+          "end": 135.655
+        },
+        {
+          "word": "and",
+          "display_index": 9,
+          "start": 135.655,
+          "end": 135.835
+        },
+        {
+          "word": "in",
+          "display_index": 10,
+          "start": 135.835,
+          "end": 136.155
+        },
+        {
+          "word": "476,",
+          "display_index": 11,
+          "start": 136.155,
+          "end": 137.888
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 137.888,
+          "end": 138.015
+        },
+        {
+          "word": "western",
+          "display_index": 13,
+          "start": 138.015,
+          "end": 138.515
+        },
+        {
+          "word": "empire",
+          "display_index": 14,
+          "start": 138.515,
+          "end": 139.736
+        },
+        {
+          "word": "was",
+          "display_index": 15,
+          "start": 139.736,
+          "end": 139.916
+        },
+        {
+          "word": "brought",
+          "display_index": 16,
+          "start": 139.916,
+          "end": 140.296
+        },
+        {
+          "word": "down",
+          "display_index": 17,
+          "start": 140.296,
+          "end": 141.436
+        },
+        {
+          "word": "by",
+          "display_index": 18,
+          "start": 141.436,
+          "end": 141.796
+        },
+        {
+          "word": "Germanic",
+          "display_index": 19,
+          "start": 141.796,
+          "end": 142.756
+        },
+        {
+          "word": "peoples.",
+          "display_index": 20,
+          "start": 142.756,
+          "end": 144.256
+        }
+      ],
+      "start": 130.354,
+      "end": 144.256
+    },
+    {
+      "line": 14,
+      "english": "The Western Roman Empire, after centuries of expansion and decline, thus came to an end.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 145.782,
+          "end": 145.956
+        },
+        {
+          "word": "Western",
+          "display_index": 1,
+          "start": 145.956,
+          "end": 146.716
+        },
+        {
+          "word": "Roman",
+          "display_index": 2,
+          "start": 146.716,
+          "end": 147.356
+        },
+        {
+          "word": "Empire,",
+          "display_index": 3,
+          "start": 147.356,
+          "end": 148.596
+        },
+        {
+          "word": "after",
+          "display_index": 4,
+          "start": 148.596,
+          "end": 148.917
+        },
+        {
+          "word": "centuries",
+          "display_index": 5,
+          "start": 148.917,
+          "end": 149.957
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 149.957,
+          "end": 150.137
+        },
+        {
+          "word": "expansion",
+          "display_index": 7,
+          "start": 150.137,
+          "end": 151.097
+        },
+        {
+          "word": "and",
+          "display_index": 8,
+          "start": 151.097,
+          "end": 151.397
+        },
+        {
+          "word": "decline,",
+          "display_index": 9,
+          "start": 151.397,
+          "end": 152.677
+        },
+        {
+          "word": "thus",
+          "display_index": 10,
+          "start": 152.677,
+          "end": 153.797
+        },
+        {
+          "word": "came",
+          "display_index": 11,
+          "start": 153.797,
+          "end": 154.516
+        },
+        {
+          "word": "to",
+          "display_index": 12,
+          "start": 154.516,
+          "end": 155.017
+        },
+        {
+          "word": "an",
+          "display_index": 13,
+          "start": 155.017,
+          "end": 155.397
+        },
+        {
+          "word": "end.",
+          "display_index": 14,
+          "start": 155.397,
+          "end": 156.897
+        }
+      ],
+      "start": 145.782,
+      "end": 156.897
+    },
+    {
+      "line": 15,
+      "english": "The Western Empire fell, but Rome's legacy still lives strongly in the law, language, architecture, and political system of Europe today.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 157.782,
+          "end": 157.958
+        },
+        {
+          "word": "Western",
+          "display_index": 1,
+          "start": 157.958,
+          "end": 158.618
+        },
+        {
+          "word": "Empire",
+          "display_index": 2,
+          "start": 158.618,
+          "end": 159.418
+        },
+        {
+          "word": "fell,",
+          "display_index": 3,
+          "start": 159.418,
+          "end": 159.758
+        },
+        {
+          "word": "but",
+          "display_index": 4,
+          "start": 159.758,
+          "end": 160.058
+        },
+        {
+          "word": "Rome's",
+          "display_index": 5,
+          "start": 160.058,
+          "end": 160.598
+        },
+        {
+          "word": "legacy",
+          "display_index": 6,
+          "start": 160.598,
+          "end": 161.618
+        },
+        {
+          "word": "still",
+          "display_index": 7,
+          "start": 161.618,
+          "end": 162.038
+        },
+        {
+          "word": "lives",
+          "display_index": 8,
+          "start": 162.038,
+          "end": 162.378
+        },
+        {
+          "word": "strongly",
+          "display_index": 9,
+          "start": 162.378,
+          "end": 163.138
+        },
+        {
+          "word": "in",
+          "display_index": 10,
+          "start": 163.138,
+          "end": 163.449
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 163.449,
+          "end": 163.618
+        },
+        {
+          "word": "law,",
+          "display_index": 12,
+          "start": 163.618,
+          "end": 164.738
+        },
+        {
+          "word": "language,",
+          "display_index": 13,
+          "start": 164.738,
+          "end": 166.338
+        },
+        {
+          "word": "architecture,",
+          "display_index": 14,
+          "start": 166.338,
+          "end": 167.439
+        },
+        {
+          "word": "and",
+          "display_index": 15,
+          "start": 167.439,
+          "end": 167.579
+        },
+        {
+          "word": "political",
+          "display_index": 16,
+          "start": 167.579,
+          "end": 168.499
+        },
+        {
+          "word": "system",
+          "display_index": 17,
+          "start": 168.499,
+          "end": 169.859
+        },
+        {
+          "word": "of",
+          "display_index": 18,
+          "start": 169.859,
+          "end": 170.099
+        },
+        {
+          "word": "Europe",
+          "display_index": 19,
+          "start": 170.099,
+          "end": 170.579
+        },
+        {
+          "word": "today.",
+          "display_index": 20,
+          "start": 170.579,
+          "end": 172.079
+        }
+      ],
+      "start": 157.782,
+      "end": 172.079
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

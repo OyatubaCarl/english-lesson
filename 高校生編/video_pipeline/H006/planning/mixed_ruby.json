@@ -1,0 +1,1099 @@
+{
+  "lesson": "H006",
+  "title_ja": "秋の午後の縁側",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 16,
+  "canonical_target_lines": 12,
+  "mixed_lines": 6,
+  "japanese_only_lines": 10,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 11.52,
+      "end": 14.52,
+      "english": "It was an autumn afternoon.",
+      "japanese": "それは秋の午後でした。",
+      "mixed": "それは秋の afternoon でした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "それは秋の ",
+          "parts": [
+            {
+              "text": "それは",
+              "ruby": ""
+            },
+            {
+              "text": "秋",
+              "ruby": "あき"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "afternoon",
+          "ruby": "午後"
+        },
+        {
+          "type": "ja",
+          "text": " でした。",
+          "parts": [
+            {
+              "text": "でした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "afternoon",
+          "canonical_word": "afternoon",
+          "meaning": "午後"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "afternoon",
+          "reading": "午後",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "afternoon",
+          "canonical_meaning": "午後"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 2,
+      "start": 14.52,
+      "end": 17.62,
+      "english": "I sat on the porch.",
+      "japanese": "私はベランダに座っていました。",
+      "mixed": "私はベランダに座っていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私はベランダに座っていました。",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "はベランダに",
+              "ruby": ""
+            },
+            {
+              "text": "座",
+              "ruby": "すわ"
+            },
+            {
+              "text": "っていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "porch",
+          "canonical_word": "porch",
+          "meaning": "縁側"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 3,
+      "start": 17.62,
+      "end": 23.36,
+      "english": "The breeze felt pleasant, and I observed the trees in the garden swaying slowly.",
+      "japanese": "風が心地よく、庭の木々がゆっくりと揺れるのを眺めていました。",
+      "mixed": "風が pleasant で、庭の木々がゆっくりと揺れるのを眺めていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "風が ",
+          "parts": [
+            {
+              "text": "風",
+              "ruby": "かぜ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "pleasant",
+          "ruby": "心地よく"
+        },
+        {
+          "type": "ja",
+          "text": " で",
+          "parts": [
+            {
+              "text": "で",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "、庭の木々がゆっくりと揺れるのを眺めていました。",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "庭",
+              "ruby": "にわ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "木々",
+              "ruby": "きぎ"
+            },
+            {
+              "text": "がゆっくりと",
+              "ruby": ""
+            },
+            {
+              "text": "揺",
+              "ruby": "ゆ"
+            },
+            {
+              "text": "れるのを",
+              "ruby": ""
+            },
+            {
+              "text": "眺",
+              "ruby": "なが"
+            },
+            {
+              "text": "めていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "pleasant",
+          "canonical_word": "pleasant",
+          "meaning": "心地よい"
+        },
+        {
+          "english": "observed",
+          "canonical_word": "observed",
+          "meaning": "観察した"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "pleasant",
+          "reading": "心地よく",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "pleasant",
+          "canonical_meaning": "心地よい"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 4,
+      "start": 23.36,
+      "end": 28.66,
+      "english": "Grandmother made tea and had me hold the cup.",
+      "japanese": "おばあちゃんがお茶を淹れて、私にそのカップを持たせました。",
+      "mixed": "おばあちゃんがお茶を淹れて、私にそのカップを持たせました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "おばあちゃんがお茶を淹れて、私にそのカップを持たせました。",
+          "parts": [
+            {
+              "text": "おばあちゃんがお",
+              "ruby": ""
+            },
+            {
+              "text": "茶",
+              "ruby": "ちゃ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "淹",
+              "ruby": "い"
+            },
+            {
+              "text": "れて、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "にそのカップを",
+              "ruby": ""
+            },
+            {
+              "text": "持",
+              "ruby": "も"
+            },
+            {
+              "text": "たせました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 5,
+      "start": 28.66,
+      "end": 33.08,
+      "english": "She always lets me read any book I like.",
+      "japanese": "彼女はいつも私に好きな本を読ませてくれます。",
+      "mixed": "彼女はいつも私に好きな本を読ませてくれます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼女はいつも私に好きな本を読ませてくれます。",
+          "parts": [
+            {
+              "text": "彼女",
+              "ruby": "かのじょ"
+            },
+            {
+              "text": "はいつも",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "好",
+              "ruby": "す"
+            },
+            {
+              "text": "きな",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "読",
+              "ruby": "よ"
+            },
+            {
+              "text": "ませてくれます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 6,
+      "start": 35.0,
+      "end": 40.5,
+      "english": "Today she let me rest as long as I wanted.",
+      "japanese": "今日、彼女は私が望むだけ休ませてくれました。",
+      "mixed": "今日、彼女は私が望むだけ休ませてくれました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "今日、彼女は私が望むだけ休ませてくれました。",
+          "parts": [
+            {
+              "text": "今日",
+              "ruby": "きょう"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "彼女",
+              "ruby": "かのじょ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "望",
+              "ruby": "のぞ"
+            },
+            {
+              "text": "むだけ",
+              "ruby": ""
+            },
+            {
+              "text": "休",
+              "ruby": "やす"
+            },
+            {
+              "text": "ませてくれました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "rest",
+          "canonical_word": "rest",
+          "meaning": "休息"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 7,
+      "start": 40.5,
+      "end": 44.26,
+      "english": "I could see petals drift on the wind.",
+      "japanese": "花びらが風に乗って飛んでいくのが見えました。",
+      "mixed": "花びらが風に乗って飛んでいくのが見えました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "花びらが風に乗って飛んでいくのが見えました。",
+          "parts": [
+            {
+              "text": "花",
+              "ruby": "はな"
+            },
+            {
+              "text": "びらが",
+              "ruby": ""
+            },
+            {
+              "text": "風",
+              "ruby": "ふう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "乗",
+              "ruby": "の"
+            },
+            {
+              "text": "って",
+              "ruby": ""
+            },
+            {
+              "text": "飛",
+              "ruby": "と"
+            },
+            {
+              "text": "んでいくのが",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "えました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 8,
+      "start": 45.7,
+      "end": 51.46,
+      "english": "I could hear a distant bird sing beyond the hedge.",
+      "japanese": "生け垣の向こうから、遠くの鳥の鳴き声が聞こえました。",
+      "mixed": "生け垣の向こうから、遠くの鳥の鳴き声が聞こえました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "生け垣の向こうから、遠くの鳥の鳴き声が聞こえました。",
+          "parts": [
+            {
+              "text": "生け垣",
+              "ruby": "いけがき"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "向",
+              "ruby": "む"
+            },
+            {
+              "text": "こうから、",
+              "ruby": ""
+            },
+            {
+              "text": "遠",
+              "ruby": "とお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "鳥",
+              "ruby": "とり"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "鳴き声",
+              "ruby": "なきごえ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "聞",
+              "ruby": "き"
+            },
+            {
+              "text": "こえました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "hear",
+          "canonical_word": "hear",
+          "meaning": "聞く"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 9,
+      "start": 51.46,
+      "end": 58.58,
+      "english": "Close your eyes and allow the wind to carry you, grandmother said gently.",
+      "japanese": "目を閉じて風に吹かれてください、と祖母は優しく言いました。",
+      "mixed": "目を閉じて風に吹かれてください、と祖母は優しく言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "目を閉じて風に吹かれてください、と祖母は優しく言いました。",
+          "parts": [
+            {
+              "text": "目",
+              "ruby": "め"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "閉",
+              "ruby": "と"
+            },
+            {
+              "text": "じて",
+              "ruby": ""
+            },
+            {
+              "text": "風",
+              "ruby": "かぜ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "吹",
+              "ruby": "ふ"
+            },
+            {
+              "text": "かれてください、と",
+              "ruby": ""
+            },
+            {
+              "text": "祖母",
+              "ruby": "そぼ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "優",
+              "ruby": "やさ"
+            },
+            {
+              "text": "しく",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "allow",
+          "canonical_word": "allow",
+          "meaning": "許す"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 10,
+      "start": 60.98,
+      "end": 67.74,
+      "english": "Grandfather used to admire the plum tree in our garden.",
+      "japanese": "祖父は私たちの庭にある梅の木を愛でていました。",
+      "mixed": "祖父は私たちの庭にある梅の木を愛でていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "祖父は私たちの庭にある梅の木を愛でていました。",
+          "parts": [
+            {
+              "text": "祖父",
+              "ruby": "そふ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "たちの",
+              "ruby": ""
+            },
+            {
+              "text": "庭",
+              "ruby": "にわ"
+            },
+            {
+              "text": "にある",
+              "ruby": ""
+            },
+            {
+              "text": "梅",
+              "ruby": "うめ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "木",
+              "ruby": "き"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "愛",
+              "ruby": "め"
+            },
+            {
+              "text": "でていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "admire",
+          "canonical_word": "admire",
+          "meaning": "賞賛する"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 11,
+      "start": 72.3,
+      "end": 80.74,
+      "english": "Grandmother often recalled that memory and smiles quietly.",
+      "japanese": "祖母はよくその記憶を思い出し、静かに微笑んだ。",
+      "mixed": "祖母はよくその記憶を recalled、静かに微笑んだ。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "祖母はよくその記憶を ",
+          "parts": [
+            {
+              "text": "祖母",
+              "ruby": "そぼ"
+            },
+            {
+              "text": "はよくその",
+              "ruby": ""
+            },
+            {
+              "text": "記憶",
+              "ruby": "きおく"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "recalled",
+          "ruby": "思い出し"
+        },
+        {
+          "type": "ja",
+          "text": "、静かに微笑んだ。",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            },
+            {
+              "text": "微笑",
+              "ruby": "ほほえ"
+            },
+            {
+              "text": "んだ。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "recalled",
+          "canonical_word": "recall",
+          "meaning": "思い出す"
+        },
+        {
+          "english": "memory",
+          "canonical_word": "memory",
+          "meaning": "思い出"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "recalled",
+          "reading": "思い出し",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "recall",
+          "canonical_meaning": "思い出す"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 12,
+      "start": 80.74,
+      "end": 89.16,
+      "english": "I sensed that she wanted to encourage me to remember him.",
+      "japanese": "彼女は私に彼のことを思い出すよう励まそうとしているのだと感じました。",
+      "mixed": "彼女は、私に彼を思い出すよう encourage しようとしているのだと感じました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼女は、私に彼を思い出すよう ",
+          "parts": [
+            {
+              "text": "彼女",
+              "ruby": "かのじょ"
+            },
+            {
+              "text": "は、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "思い出",
+              "ruby": "おもいだ"
+            },
+            {
+              "text": "すよう",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "encourage",
+          "ruby": "励ます"
+        },
+        {
+          "type": "ja",
+          "text": " しようとしているのだと感じました。",
+          "parts": [
+            {
+              "text": "しようとしているのだと",
+              "ruby": ""
+            },
+            {
+              "text": "感",
+              "ruby": "かん"
+            },
+            {
+              "text": "じました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "encourage",
+          "canonical_word": "encourage",
+          "meaning": "励ます"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "encourage",
+          "reading": "励ます",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "encourage",
+          "canonical_meaning": "励ます"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 13,
+      "start": 89.16,
+      "end": 98.16,
+      "english": "Soon the evening sun painted the roof in gentle tones.",
+      "japanese": "やがて夕日が屋根を優しい色調に染め上げた。",
+      "mixed": "やがて夕日が、屋根を gentle な色調に染めました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "やがて夕日が、屋根を ",
+          "parts": [
+            {
+              "text": "やがて",
+              "ruby": ""
+            },
+            {
+              "text": "夕日",
+              "ruby": "ゆうひ"
+            },
+            {
+              "text": "が、",
+              "ruby": ""
+            },
+            {
+              "text": "屋根",
+              "ruby": "やね"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "gentle",
+          "ruby": "やわらかな"
+        },
+        {
+          "type": "ja",
+          "text": " な色調に染めました。",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "色調",
+              "ruby": "しきちょう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "染",
+              "ruby": "そ"
+            },
+            {
+              "text": "めました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "gentle",
+          "canonical_word": "gentle",
+          "meaning": "優しい"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "gentle",
+          "reading": "やわらかな",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "gentle",
+          "canonical_meaning": "優しい"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 14,
+      "start": 98.16,
+      "end": 104.08,
+      "english": "The garden became calm and golden.",
+      "japanese": "庭は穏やかで黄金色になりました。",
+      "mixed": "庭は calm で、黄金色になりました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "庭は ",
+          "parts": [
+            {
+              "text": "庭",
+              "ruby": "にわ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "calm",
+          "ruby": "穏やか"
+        },
+        {
+          "type": "ja",
+          "text": " で、黄金色になりました。",
+          "parts": [
+            {
+              "text": "で、",
+              "ruby": ""
+            },
+            {
+              "text": "黄金色",
+              "ruby": "こがねいろ"
+            },
+            {
+              "text": "になりました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "calm",
+          "canonical_word": "calm",
+          "meaning": "穏やかな"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "calm",
+          "reading": "穏やか",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "calm",
+          "canonical_meaning": "穏やかな"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 15,
+      "start": 106.36,
+      "end": 110.398,
+      "english": "Grandmother handed me a fresh cup.",
+      "japanese": "おばあちゃんは私に新しいカップをくれました。",
+      "mixed": "おばあちゃんは私に新しいカップをくれました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "おばあちゃんは私に新しいカップをくれました。",
+          "parts": [
+            {
+              "text": "おばあちゃんは",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "新",
+              "ruby": "あたら"
+            },
+            {
+              "text": "しいカップをくれました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 16,
+      "start": 110.398,
+      "end": 117.8,
+      "english": "I wished she would let me stay on the porch forever.",
+      "japanese": "私は彼女が私をずっとポーチにいさせてくれたらよかったのにと思いました。",
+      "mixed": "私は彼女が私をずっとポーチにいさせてくれたらよかったのにと思いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私は彼女が私をずっとポーチにいさせてくれたらよかったのにと思いました。",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "彼女",
+              "ruby": "かのじょ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "をずっとポーチにいさせてくれたらよかったのにと",
+              "ruby": ""
+            },
+            {
+              "text": "思",
+              "ruby": "おも"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "porch",
+          "canonical_word": "porch",
+          "meaning": "縁側"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    }
+  ]
+}

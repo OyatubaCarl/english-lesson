@@ -1,0 +1,1582 @@
+{
+  "lesson": "H065",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h065_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H065/candidate1-full.mp3",
+  "source_audio_sha256": "a8d35193b65135394daf19d3b39d4f89424e455908bc168a20b60ca983170da8",
+  "bpm": 89.0,
+  "exact_word_match": true,
+  "word_count": 237,
+  "line_count": 18,
+  "first_word_start": 6.261,
+  "last_word_end": 128.739,
+  "lines": [
+    {
+      "line": 1,
+      "english": "In the mid-1990s, the internet began to enter ordinary homes.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 6.261,
+          "end": 6.38
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 6.38,
+          "end": 6.501
+        },
+        {
+          "word": "mid-1990s,",
+          "display_index": 2,
+          "start": 6.501,
+          "end": 8.261
+        },
+        {
+          "word": "mid-1990s,",
+          "display_index": 2,
+          "start": 8.261,
+          "end": 8.774
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 8.774,
+          "end": 8.941
+        },
+        {
+          "word": "internet",
+          "display_index": 4,
+          "start": 8.941,
+          "end": 9.661
+        },
+        {
+          "word": "began",
+          "display_index": 5,
+          "start": 9.661,
+          "end": 10.258
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 10.258,
+          "end": 10.462
+        },
+        {
+          "word": "enter",
+          "display_index": 7,
+          "start": 10.462,
+          "end": 11.102
+        },
+        {
+          "word": "ordinary",
+          "display_index": 8,
+          "start": 11.102,
+          "end": 11.922
+        },
+        {
+          "word": "homes.",
+          "display_index": 9,
+          "start": 11.922,
+          "end": 13.142
+        }
+      ],
+      "start": 6.261,
+      "end": 13.142
+    },
+    {
+      "line": 2,
+      "english": "In the thirty years since then, our lives, our work, and the way we connect with one another have all been transformed from the ground up.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 13.442,
+          "end": 13.564
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 13.564,
+          "end": 13.662
+        },
+        {
+          "word": "thirty",
+          "display_index": 2,
+          "start": 13.662,
+          "end": 14.002
+        },
+        {
+          "word": "years",
+          "display_index": 3,
+          "start": 14.002,
+          "end": 14.442
+        },
+        {
+          "word": "since",
+          "display_index": 4,
+          "start": 14.442,
+          "end": 14.742
+        },
+        {
+          "word": "then,",
+          "display_index": 5,
+          "start": 14.742,
+          "end": 15.262
+        },
+        {
+          "word": "our",
+          "display_index": 6,
+          "start": 15.262,
+          "end": 15.502
+        },
+        {
+          "word": "lives,",
+          "display_index": 7,
+          "start": 15.502,
+          "end": 15.862
+        },
+        {
+          "word": "our",
+          "display_index": 8,
+          "start": 15.862,
+          "end": 16.082
+        },
+        {
+          "word": "work,",
+          "display_index": 9,
+          "start": 16.082,
+          "end": 16.442
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 16.442,
+          "end": 16.554
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 16.554,
+          "end": 16.682
+        },
+        {
+          "word": "way",
+          "display_index": 12,
+          "start": 16.682,
+          "end": 16.983
+        },
+        {
+          "word": "we",
+          "display_index": 13,
+          "start": 16.983,
+          "end": 17.123
+        },
+        {
+          "word": "connect",
+          "display_index": 14,
+          "start": 17.123,
+          "end": 17.603
+        },
+        {
+          "word": "with",
+          "display_index": 15,
+          "start": 17.603,
+          "end": 17.963
+        },
+        {
+          "word": "one",
+          "display_index": 16,
+          "start": 17.963,
+          "end": 18.243
+        },
+        {
+          "word": "another",
+          "display_index": 17,
+          "start": 18.243,
+          "end": 19.223
+        },
+        {
+          "word": "have",
+          "display_index": 18,
+          "start": 19.223,
+          "end": 19.463
+        },
+        {
+          "word": "all",
+          "display_index": 19,
+          "start": 19.463,
+          "end": 19.683
+        },
+        {
+          "word": "been",
+          "display_index": 20,
+          "start": 19.683,
+          "end": 19.923
+        },
+        {
+          "word": "transformed",
+          "display_index": 21,
+          "start": 19.923,
+          "end": 20.843
+        },
+        {
+          "word": "from",
+          "display_index": 22,
+          "start": 20.843,
+          "end": 21.182
+        },
+        {
+          "word": "the",
+          "display_index": 23,
+          "start": 21.182,
+          "end": 21.303
+        },
+        {
+          "word": "ground",
+          "display_index": 24,
+          "start": 21.303,
+          "end": 21.863
+        },
+        {
+          "word": "up.",
+          "display_index": 25,
+          "start": 21.863,
+          "end": 23.363
+        }
+      ],
+      "start": 13.442,
+      "end": 23.363
+    },
+    {
+      "line": 3,
+      "english": "The communication that used to be done by letter or by telephone is now carried out instantly through messaging apps and social media.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 26.132,
+          "end": 26.244
+        },
+        {
+          "word": "communication",
+          "display_index": 1,
+          "start": 26.244,
+          "end": 27.324
+        },
+        {
+          "word": "that",
+          "display_index": 2,
+          "start": 27.324,
+          "end": 27.504
+        },
+        {
+          "word": "used",
+          "display_index": 3,
+          "start": 27.504,
+          "end": 27.641
+        },
+        {
+          "word": "to",
+          "display_index": 4,
+          "start": 27.641,
+          "end": 27.764
+        },
+        {
+          "word": "be",
+          "display_index": 5,
+          "start": 27.764,
+          "end": 28.044
+        },
+        {
+          "word": "done",
+          "display_index": 6,
+          "start": 28.044,
+          "end": 28.364
+        },
+        {
+          "word": "by",
+          "display_index": 7,
+          "start": 28.364,
+          "end": 28.664
+        },
+        {
+          "word": "letter",
+          "display_index": 8,
+          "start": 28.664,
+          "end": 29.184
+        },
+        {
+          "word": "or",
+          "display_index": 9,
+          "start": 29.184,
+          "end": 29.404
+        },
+        {
+          "word": "by",
+          "display_index": 10,
+          "start": 29.404,
+          "end": 29.684
+        },
+        {
+          "word": "telephone",
+          "display_index": 11,
+          "start": 29.684,
+          "end": 30.621
+        },
+        {
+          "word": "is",
+          "display_index": 12,
+          "start": 30.621,
+          "end": 30.765
+        },
+        {
+          "word": "now",
+          "display_index": 13,
+          "start": 30.765,
+          "end": 31.045
+        },
+        {
+          "word": "carried",
+          "display_index": 14,
+          "start": 31.045,
+          "end": 31.445
+        },
+        {
+          "word": "out",
+          "display_index": 15,
+          "start": 31.445,
+          "end": 31.725
+        },
+        {
+          "word": "instantly",
+          "display_index": 16,
+          "start": 31.725,
+          "end": 32.385
+        },
+        {
+          "word": "through",
+          "display_index": 17,
+          "start": 32.385,
+          "end": 32.705
+        },
+        {
+          "word": "messaging",
+          "display_index": 18,
+          "start": 32.705,
+          "end": 33.545
+        },
+        {
+          "word": "apps",
+          "display_index": 19,
+          "start": 33.545,
+          "end": 33.825
+        },
+        {
+          "word": "and",
+          "display_index": 20,
+          "start": 33.825,
+          "end": 34.045
+        },
+        {
+          "word": "social",
+          "display_index": 21,
+          "start": 34.045,
+          "end": 34.525
+        },
+        {
+          "word": "media.",
+          "display_index": 22,
+          "start": 34.525,
+          "end": 35.305
+        }
+      ],
+      "start": 26.132,
+      "end": 35.305
+    },
+    {
+      "line": 4,
+      "english": "Even with a friend on the other side of the earth, we can now speak face to face in real time.",
+      "word_timings": [
+        {
+          "word": "Even",
+          "display_index": 0,
+          "start": 35.605,
+          "end": 35.865
+        },
+        {
+          "word": "with",
+          "display_index": 1,
+          "start": 35.865,
+          "end": 36.017
+        },
+        {
+          "word": "a",
+          "display_index": 2,
+          "start": 36.017,
+          "end": 36.125
+        },
+        {
+          "word": "friend",
+          "display_index": 3,
+          "start": 36.125,
+          "end": 36.805
+        },
+        {
+          "word": "on",
+          "display_index": 4,
+          "start": 36.805,
+          "end": 36.93
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 36.93,
+          "end": 37.106
+        },
+        {
+          "word": "other",
+          "display_index": 6,
+          "start": 37.106,
+          "end": 37.466
+        },
+        {
+          "word": "side",
+          "display_index": 7,
+          "start": 37.466,
+          "end": 38.006
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 38.006,
+          "end": 38.12
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 38.12,
+          "end": 38.286
+        },
+        {
+          "word": "earth,",
+          "display_index": 10,
+          "start": 38.286,
+          "end": 39.146
+        },
+        {
+          "word": "we",
+          "display_index": 11,
+          "start": 39.146,
+          "end": 39.286
+        },
+        {
+          "word": "can",
+          "display_index": 12,
+          "start": 39.286,
+          "end": 39.446
+        },
+        {
+          "word": "now",
+          "display_index": 13,
+          "start": 39.446,
+          "end": 39.666
+        },
+        {
+          "word": "speak",
+          "display_index": 14,
+          "start": 39.666,
+          "end": 40.006
+        },
+        {
+          "word": "face",
+          "display_index": 15,
+          "start": 40.006,
+          "end": 40.338
+        },
+        {
+          "word": "to",
+          "display_index": 16,
+          "start": 40.338,
+          "end": 40.486
+        },
+        {
+          "word": "face",
+          "display_index": 17,
+          "start": 40.486,
+          "end": 40.926
+        },
+        {
+          "word": "in",
+          "display_index": 18,
+          "start": 40.926,
+          "end": 41.226
+        },
+        {
+          "word": "real",
+          "display_index": 19,
+          "start": 41.226,
+          "end": 41.666
+        },
+        {
+          "word": "time.",
+          "display_index": 20,
+          "start": 41.666,
+          "end": 43.166
+        }
+      ],
+      "start": 35.605,
+      "end": 43.166
+    },
+    {
+      "line": 5,
+      "english": "The shape of work has also changed.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 45.306,
+          "end": 45.427
+        },
+        {
+          "word": "shape",
+          "display_index": 1,
+          "start": 45.427,
+          "end": 45.827
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 45.827,
+          "end": 46.047
+        },
+        {
+          "word": "work",
+          "display_index": 3,
+          "start": 46.047,
+          "end": 46.367
+        },
+        {
+          "word": "has",
+          "display_index": 4,
+          "start": 46.367,
+          "end": 46.567
+        },
+        {
+          "word": "also",
+          "display_index": 5,
+          "start": 46.567,
+          "end": 47.047
+        },
+        {
+          "word": "changed.",
+          "display_index": 6,
+          "start": 47.047,
+          "end": 47.667
+        }
+      ],
+      "start": 45.306,
+      "end": 47.667
+    },
+    {
+      "line": 6,
+      "english": "Through the pandemic, remote work spread rapidly.",
+      "word_timings": [
+        {
+          "word": "Through",
+          "display_index": 0,
+          "start": 47.667,
+          "end": 48.009
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 48.009,
+          "end": 48.127
+        },
+        {
+          "word": "pandemic,",
+          "display_index": 2,
+          "start": 48.127,
+          "end": 48.887
+        },
+        {
+          "word": "remote",
+          "display_index": 3,
+          "start": 48.887,
+          "end": 49.327
+        },
+        {
+          "word": "work",
+          "display_index": 4,
+          "start": 49.327,
+          "end": 49.567
+        },
+        {
+          "word": "spread",
+          "display_index": 5,
+          "start": 49.567,
+          "end": 49.947
+        },
+        {
+          "word": "rapidly.",
+          "display_index": 6,
+          "start": 49.947,
+          "end": 50.708
+        }
+      ],
+      "start": 47.667,
+      "end": 50.708
+    },
+    {
+      "line": 7,
+      "english": "Leaving the company office behind, more people now work from home or from a cafe, connected to the world.",
+      "word_timings": [
+        {
+          "word": "Leaving",
+          "display_index": 0,
+          "start": 51.008,
+          "end": 51.302
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 51.302,
+          "end": 51.428
+        },
+        {
+          "word": "company",
+          "display_index": 2,
+          "start": 51.428,
+          "end": 51.988
+        },
+        {
+          "word": "office",
+          "display_index": 3,
+          "start": 51.988,
+          "end": 52.468
+        },
+        {
+          "word": "behind,",
+          "display_index": 4,
+          "start": 52.468,
+          "end": 53.548
+        },
+        {
+          "word": "more",
+          "display_index": 5,
+          "start": 53.548,
+          "end": 53.828
+        },
+        {
+          "word": "people",
+          "display_index": 6,
+          "start": 53.828,
+          "end": 54.168
+        },
+        {
+          "word": "now",
+          "display_index": 7,
+          "start": 54.168,
+          "end": 54.428
+        },
+        {
+          "word": "work",
+          "display_index": 8,
+          "start": 54.428,
+          "end": 54.728
+        },
+        {
+          "word": "from",
+          "display_index": 9,
+          "start": 54.728,
+          "end": 55.028
+        },
+        {
+          "word": "home",
+          "display_index": 10,
+          "start": 55.028,
+          "end": 55.408
+        },
+        {
+          "word": "or",
+          "display_index": 11,
+          "start": 55.408,
+          "end": 55.608
+        },
+        {
+          "word": "from",
+          "display_index": 12,
+          "start": 55.608,
+          "end": 55.804
+        },
+        {
+          "word": "a",
+          "display_index": 13,
+          "start": 55.804,
+          "end": 56.068
+        },
+        {
+          "word": "cafe,",
+          "display_index": 14,
+          "start": 56.068,
+          "end": 57.289
+        },
+        {
+          "word": "connected",
+          "display_index": 15,
+          "start": 57.289,
+          "end": 58.05
+        },
+        {
+          "word": "to",
+          "display_index": 16,
+          "start": 58.05,
+          "end": 58.495
+        },
+        {
+          "word": "the",
+          "display_index": 17,
+          "start": 58.495,
+          "end": 58.909
+        },
+        {
+          "word": "world.",
+          "display_index": 18,
+          "start": 58.909,
+          "end": 59.549
+        }
+      ],
+      "start": 51.008,
+      "end": 59.549
+    },
+    {
+      "line": 8,
+      "english": "But new problems have also been created.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 59.549,
+          "end": 59.829
+        },
+        {
+          "word": "new",
+          "display_index": 1,
+          "start": 59.829,
+          "end": 60.229
+        },
+        {
+          "word": "problems",
+          "display_index": 2,
+          "start": 60.229,
+          "end": 60.929
+        },
+        {
+          "word": "have",
+          "display_index": 3,
+          "start": 60.929,
+          "end": 61.129
+        },
+        {
+          "word": "also",
+          "display_index": 4,
+          "start": 61.129,
+          "end": 61.629
+        },
+        {
+          "word": "been",
+          "display_index": 5,
+          "start": 61.629,
+          "end": 61.889
+        },
+        {
+          "word": "created.",
+          "display_index": 6,
+          "start": 61.889,
+          "end": 62.997
+        }
+      ],
+      "start": 59.549,
+      "end": 62.997
+    },
+    {
+      "line": 9,
+      "english": "The question of privacy.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 63.297,
+          "end": 63.389
+        },
+        {
+          "word": "question",
+          "display_index": 1,
+          "start": 63.389,
+          "end": 63.809
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 63.809,
+          "end": 63.99
+        },
+        {
+          "word": "privacy.",
+          "display_index": 3,
+          "start": 63.99,
+          "end": 65.49
+        }
+      ],
+      "start": 63.297,
+      "end": 65.49
+    },
+    {
+      "line": 10,
+      "english": "The threats to security.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 67.941,
+          "end": 68.15
+        },
+        {
+          "word": "threats",
+          "display_index": 1,
+          "start": 68.15,
+          "end": 68.793
+        },
+        {
+          "word": "to",
+          "display_index": 2,
+          "start": 68.793,
+          "end": 69.21
+        },
+        {
+          "word": "security.",
+          "display_index": 3,
+          "start": 69.21,
+          "end": 70.042
+        }
+      ],
+      "start": 67.941,
+      "end": 70.042
+    },
+    {
+      "line": 11,
+      "english": "The spread of fake news and misinformation.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 70.342,
+          "end": 70.47
+        },
+        {
+          "word": "spread",
+          "display_index": 1,
+          "start": 70.47,
+          "end": 71.011
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 71.011,
+          "end": 71.211
+        },
+        {
+          "word": "fake",
+          "display_index": 3,
+          "start": 71.211,
+          "end": 71.651
+        },
+        {
+          "word": "news",
+          "display_index": 4,
+          "start": 71.651,
+          "end": 72.231
+        },
+        {
+          "word": "and",
+          "display_index": 5,
+          "start": 72.231,
+          "end": 72.711
+        },
+        {
+          "word": "misinformation.",
+          "display_index": 6,
+          "start": 72.711,
+          "end": 73.791
+        }
+      ],
+      "start": 70.342,
+      "end": 73.791
+    },
+    {
+      "line": 12,
+      "english": "Who guarantees the quality of the information we receive, and how?",
+      "word_timings": [
+        {
+          "word": "Who",
+          "display_index": 0,
+          "start": 74.091,
+          "end": 74.231
+        },
+        {
+          "word": "guarantees",
+          "display_index": 1,
+          "start": 74.231,
+          "end": 75.16
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 75.16,
+          "end": 75.251
+        },
+        {
+          "word": "quality",
+          "display_index": 3,
+          "start": 75.251,
+          "end": 75.971
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 75.971,
+          "end": 76.208
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 76.208,
+          "end": 76.531
+        },
+        {
+          "word": "information",
+          "display_index": 6,
+          "start": 76.531,
+          "end": 77.672
+        },
+        {
+          "word": "we",
+          "display_index": 7,
+          "start": 77.672,
+          "end": 77.952
+        },
+        {
+          "word": "receive,",
+          "display_index": 8,
+          "start": 77.952,
+          "end": 78.772
+        },
+        {
+          "word": "and",
+          "display_index": 9,
+          "start": 78.772,
+          "end": 79.032
+        },
+        {
+          "word": "how?",
+          "display_index": 10,
+          "start": 79.032,
+          "end": 79.832
+        }
+      ],
+      "start": 74.091,
+      "end": 79.832
+    },
+    {
+      "line": 13,
+      "english": "Social media algorithms are designed to attract our attention.",
+      "word_timings": [
+        {
+          "word": "Social",
+          "display_index": 0,
+          "start": 79.872,
+          "end": 80.232
+        },
+        {
+          "word": "media",
+          "display_index": 1,
+          "start": 80.232,
+          "end": 80.752
+        },
+        {
+          "word": "algorithms",
+          "display_index": 2,
+          "start": 80.752,
+          "end": 81.587
+        },
+        {
+          "word": "are",
+          "display_index": 3,
+          "start": 81.587,
+          "end": 81.852
+        },
+        {
+          "word": "designed",
+          "display_index": 4,
+          "start": 81.852,
+          "end": 82.881
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 82.881,
+          "end": 83.072
+        },
+        {
+          "word": "attract",
+          "display_index": 6,
+          "start": 83.072,
+          "end": 83.632
+        },
+        {
+          "word": "our",
+          "display_index": 7,
+          "start": 83.632,
+          "end": 83.892
+        },
+        {
+          "word": "attention.",
+          "display_index": 8,
+          "start": 83.892,
+          "end": 85.392
+        }
+      ],
+      "start": 79.872,
+      "end": 85.392
+    },
+    {
+      "line": 14,
+      "english": "Many of us have noticed, at one moment or another, that they have been staring at their smartphone for hours.",
+      "word_timings": [
+        {
+          "word": "Many",
+          "display_index": 0,
+          "start": 88.153,
+          "end": 88.533
+        },
+        {
+          "word": "of",
+          "display_index": 1,
+          "start": 88.533,
+          "end": 88.673
+        },
+        {
+          "word": "us",
+          "display_index": 2,
+          "start": 88.673,
+          "end": 88.913
+        },
+        {
+          "word": "have",
+          "display_index": 3,
+          "start": 88.913,
+          "end": 89.193
+        },
+        {
+          "word": "noticed,",
+          "display_index": 4,
+          "start": 89.193,
+          "end": 89.993
+        },
+        {
+          "word": "at",
+          "display_index": 5,
+          "start": 89.993,
+          "end": 90.153
+        },
+        {
+          "word": "one",
+          "display_index": 6,
+          "start": 90.153,
+          "end": 90.393
+        },
+        {
+          "word": "moment",
+          "display_index": 7,
+          "start": 90.393,
+          "end": 90.914
+        },
+        {
+          "word": "or",
+          "display_index": 8,
+          "start": 90.914,
+          "end": 91.194
+        },
+        {
+          "word": "another,",
+          "display_index": 9,
+          "start": 91.194,
+          "end": 91.734
+        },
+        {
+          "word": "that",
+          "display_index": 10,
+          "start": 91.734,
+          "end": 91.914
+        },
+        {
+          "word": "they",
+          "display_index": 11,
+          "start": 91.914,
+          "end": 92.154
+        },
+        {
+          "word": "have",
+          "display_index": 12,
+          "start": 92.154,
+          "end": 92.474
+        },
+        {
+          "word": "been",
+          "display_index": 13,
+          "start": 92.474,
+          "end": 92.714
+        },
+        {
+          "word": "staring",
+          "display_index": 14,
+          "start": 92.714,
+          "end": 93.474
+        },
+        {
+          "word": "at",
+          "display_index": 15,
+          "start": 93.474,
+          "end": 93.674
+        },
+        {
+          "word": "their",
+          "display_index": 16,
+          "start": 93.674,
+          "end": 93.914
+        },
+        {
+          "word": "smartphone",
+          "display_index": 17,
+          "start": 93.914,
+          "end": 95.774
+        },
+        {
+          "word": "for",
+          "display_index": 18,
+          "start": 95.774,
+          "end": 96.154
+        },
+        {
+          "word": "hours.",
+          "display_index": 19,
+          "start": 96.154,
+          "end": 97.174
+        }
+      ],
+      "start": 88.153,
+      "end": 97.174
+    },
+    {
+      "line": 15,
+      "english": "Addiction and digital dependency have become serious problems in modern life.",
+      "word_timings": [
+        {
+          "word": "Addiction",
+          "display_index": 0,
+          "start": 97.474,
+          "end": 98.275
+        },
+        {
+          "word": "and",
+          "display_index": 1,
+          "start": 98.275,
+          "end": 98.495
+        },
+        {
+          "word": "digital",
+          "display_index": 2,
+          "start": 98.495,
+          "end": 99.255
+        },
+        {
+          "word": "dependency",
+          "display_index": 3,
+          "start": 99.255,
+          "end": 100.115
+        },
+        {
+          "word": "have",
+          "display_index": 4,
+          "start": 100.115,
+          "end": 100.315
+        },
+        {
+          "word": "become",
+          "display_index": 5,
+          "start": 100.315,
+          "end": 100.875
+        },
+        {
+          "word": "serious",
+          "display_index": 6,
+          "start": 100.875,
+          "end": 101.735
+        },
+        {
+          "word": "problems",
+          "display_index": 7,
+          "start": 101.735,
+          "end": 102.455
+        },
+        {
+          "word": "in",
+          "display_index": 8,
+          "start": 102.455,
+          "end": 102.695
+        },
+        {
+          "word": "modern",
+          "display_index": 9,
+          "start": 102.695,
+          "end": 103.315
+        },
+        {
+          "word": "life.",
+          "display_index": 10,
+          "start": 103.315,
+          "end": 104.051
+        }
+      ],
+      "start": 97.474,
+      "end": 104.051
+    },
+    {
+      "line": 16,
+      "english": "The internet itself is only a useful tool.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 104.051,
+          "end": 104.215
+        },
+        {
+          "word": "internet",
+          "display_index": 1,
+          "start": 104.215,
+          "end": 104.736
+        },
+        {
+          "word": "itself",
+          "display_index": 2,
+          "start": 104.736,
+          "end": 105.246
+        },
+        {
+          "word": "is",
+          "display_index": 3,
+          "start": 105.246,
+          "end": 105.496
+        },
+        {
+          "word": "only",
+          "display_index": 4,
+          "start": 105.496,
+          "end": 105.847
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 105.847,
+          "end": 106.656
+        },
+        {
+          "word": "useful",
+          "display_index": 6,
+          "start": 106.656,
+          "end": 107.176
+        },
+        {
+          "word": "tool.",
+          "display_index": 7,
+          "start": 107.176,
+          "end": 108.676
+        }
+      ],
+      "start": 104.051,
+      "end": 108.676
+    },
+    {
+      "line": 17,
+      "english": "What we use it for, and how we keep our distance from it, depends on the judgment of each one of us.",
+      "word_timings": [
+        {
+          "word": "What",
+          "display_index": 0,
+          "start": 109.556,
+          "end": 109.736
+        },
+        {
+          "word": "we",
+          "display_index": 1,
+          "start": 109.736,
+          "end": 109.916
+        },
+        {
+          "word": "use",
+          "display_index": 2,
+          "start": 109.916,
+          "end": 110.076
+        },
+        {
+          "word": "it",
+          "display_index": 3,
+          "start": 110.076,
+          "end": 110.196
+        },
+        {
+          "word": "for,",
+          "display_index": 4,
+          "start": 110.196,
+          "end": 111.557
+        },
+        {
+          "word": "and",
+          "display_index": 5,
+          "start": 111.557,
+          "end": 111.697
+        },
+        {
+          "word": "how",
+          "display_index": 6,
+          "start": 111.697,
+          "end": 111.857
+        },
+        {
+          "word": "we",
+          "display_index": 7,
+          "start": 111.857,
+          "end": 111.977
+        },
+        {
+          "word": "keep",
+          "display_index": 8,
+          "start": 111.977,
+          "end": 112.377
+        },
+        {
+          "word": "our",
+          "display_index": 9,
+          "start": 112.377,
+          "end": 112.597
+        },
+        {
+          "word": "distance",
+          "display_index": 10,
+          "start": 112.597,
+          "end": 113.157
+        },
+        {
+          "word": "from",
+          "display_index": 11,
+          "start": 113.157,
+          "end": 113.397
+        },
+        {
+          "word": "it,",
+          "display_index": 12,
+          "start": 113.397,
+          "end": 114.237
+        },
+        {
+          "word": "depends",
+          "display_index": 13,
+          "start": 114.237,
+          "end": 114.797
+        },
+        {
+          "word": "on",
+          "display_index": 14,
+          "start": 114.797,
+          "end": 114.988
+        },
+        {
+          "word": "the",
+          "display_index": 15,
+          "start": 114.988,
+          "end": 115.237
+        },
+        {
+          "word": "judgment",
+          "display_index": 16,
+          "start": 115.237,
+          "end": 116.097
+        },
+        {
+          "word": "of",
+          "display_index": 17,
+          "start": 116.097,
+          "end": 116.377
+        },
+        {
+          "word": "each",
+          "display_index": 18,
+          "start": 116.377,
+          "end": 116.897
+        },
+        {
+          "word": "one",
+          "display_index": 19,
+          "start": 116.897,
+          "end": 117.137
+        },
+        {
+          "word": "of",
+          "display_index": 20,
+          "start": 117.137,
+          "end": 117.297
+        },
+        {
+          "word": "us.",
+          "display_index": 21,
+          "start": 117.297,
+          "end": 117.958
+        }
+      ],
+      "start": 109.556,
+      "end": 117.958
+    },
+    {
+      "line": 18,
+      "english": "How to live as a human being inside the digital age — that is the challenge of the generations to come.",
+      "word_timings": [
+        {
+          "word": "How",
+          "display_index": 0,
+          "start": 118.258,
+          "end": 118.436
+        },
+        {
+          "word": "to",
+          "display_index": 1,
+          "start": 118.436,
+          "end": 118.578
+        },
+        {
+          "word": "live",
+          "display_index": 2,
+          "start": 118.578,
+          "end": 118.958
+        },
+        {
+          "word": "as",
+          "display_index": 3,
+          "start": 118.958,
+          "end": 119.038
+        },
+        {
+          "word": "a",
+          "display_index": 4,
+          "start": 119.036,
+          "end": 119.178
+        },
+        {
+          "word": "human",
+          "display_index": 5,
+          "start": 119.178,
+          "end": 119.638
+        },
+        {
+          "word": "being",
+          "display_index": 6,
+          "start": 119.638,
+          "end": 120.258
+        },
+        {
+          "word": "inside",
+          "display_index": 7,
+          "start": 120.258,
+          "end": 120.848
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 120.848,
+          "end": 120.978
+        },
+        {
+          "word": "digital",
+          "display_index": 9,
+          "start": 120.978,
+          "end": 121.678
+        },
+        {
+          "word": "age",
+          "display_index": 10,
+          "start": 121.678,
+          "end": 123.558
+        },
+        {
+          "word": "that",
+          "display_index": 12,
+          "start": 123.558,
+          "end": 123.754
+        },
+        {
+          "word": "is",
+          "display_index": 13,
+          "start": 123.754,
+          "end": 123.858
+        },
+        {
+          "word": "the",
+          "display_index": 14,
+          "start": 123.858,
+          "end": 123.998
+        },
+        {
+          "word": "challenge",
+          "display_index": 15,
+          "start": 123.998,
+          "end": 124.659
+        },
+        {
+          "word": "of",
+          "display_index": 16,
+          "start": 124.659,
+          "end": 124.904
+        },
+        {
+          "word": "the",
+          "display_index": 17,
+          "start": 124.904,
+          "end": 125.159
+        },
+        {
+          "word": "generations",
+          "display_index": 18,
+          "start": 125.159,
+          "end": 126.939
+        },
+        {
+          "word": "to",
+          "display_index": 19,
+          "start": 126.939,
+          "end": 127.239
+        },
+        {
+          "word": "come.",
+          "display_index": 20,
+          "start": 127.239,
+          "end": 128.739
+        }
+      ],
+      "start": 118.258,
+      "end": 128.739
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

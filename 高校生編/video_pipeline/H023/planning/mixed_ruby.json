@@ -1,0 +1,929 @@
+{
+  "lesson": "H023",
+  "title_ja": "何が大切か",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 10,
+  "canonical_target_lines": 7,
+  "mixed_lines": 7,
+  "japanese_only_lines": 3,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 8.72,
+      "end": 17.1,
+      "english": "Lately, I have been thinking about what is important to me.",
+      "japanese": "最近、僕は自分にとって何が大切かを考え続けています。",
+      "mixed": "最近、僕は自分にとって何が大切かを考え続けています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "最近、僕は自分にとって何が大切かを考え続けています。",
+          "parts": [
+            {
+              "text": "最近",
+              "ruby": "さいきん"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "自分",
+              "ruby": "じぶん"
+            },
+            {
+              "text": "にとって",
+              "ruby": ""
+            },
+            {
+              "text": "何",
+              "ruby": "なん"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "大切",
+              "ruby": "たいせつ"
+            },
+            {
+              "text": "かを",
+              "ruby": ""
+            },
+            {
+              "text": "考",
+              "ruby": "かんが"
+            },
+            {
+              "text": "え",
+              "ruby": ""
+            },
+            {
+              "text": "続",
+              "ruby": "つづ"
+            },
+            {
+              "text": "けています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 2,
+      "start": 18.3,
+      "end": 25.1,
+      "english": "What matters most seems to be the essentials.",
+      "japanese": "最も大切なのは、本当に欠かせないものだけのようです。",
+      "mixed": "最も matter するのは、essential なものだけのようです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "最も ",
+          "parts": [
+            {
+              "text": "最",
+              "ruby": "もっと"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "matter",
+          "ruby": "大切である"
+        },
+        {
+          "type": "ja",
+          "text": " するのは、",
+          "parts": [
+            {
+              "text": "するのは、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "essential",
+          "ruby": "本質的な"
+        },
+        {
+          "type": "ja",
+          "text": " なものだけのようです。",
+          "parts": [
+            {
+              "text": "なものだけのようです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "matters",
+          "canonical_word": "matter",
+          "meaning": "大切である"
+        },
+        {
+          "english": "essentials",
+          "canonical_word": "essential",
+          "meaning": "本質的な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "matter",
+          "reading": "大切である",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "matter",
+          "canonical_meaning": "大切である"
+        },
+        {
+          "english": "essential",
+          "reading": "本質的な",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "essential",
+          "canonical_meaning": "本質的な"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 3,
+      "start": 26.38,
+      "end": 33.22,
+      "english": "What I had pursued for a long time was not always significant.",
+      "japanese": "僕が長い間追い求めてきたものが、いつも重要だったわけではありません。",
+      "mixed": "僕が長い間 pursue してきたものが、いつも significant だったわけではありません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "僕が長い間 ",
+          "parts": [
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "長",
+              "ruby": "なが"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "間",
+              "ruby": "あいだ"
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "pursue",
+          "ruby": "追い求める"
+        },
+        {
+          "type": "ja",
+          "text": " してきたものが、いつも ",
+          "parts": [
+            {
+              "text": "してきたものが、いつも",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "significant",
+          "ruby": "重要な"
+        },
+        {
+          "type": "ja",
+          "text": " だったわけではありません。",
+          "parts": [
+            {
+              "text": "だったわけではありません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "pursued",
+          "canonical_word": "pursue",
+          "meaning": "追求する"
+        },
+        {
+          "english": "significant",
+          "canonical_word": "significant",
+          "meaning": "重要な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "pursue",
+          "reading": "追い求める",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "pursue",
+          "canonical_meaning": "追求する"
+        },
+        {
+          "english": "significant",
+          "reading": "重要な",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "significant",
+          "canonical_meaning": "重要な"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 4,
+      "start": 35.74,
+      "end": 45.34,
+      "english": "What truly matters is the small meal with family, the call from a friend, the single book before sleep.",
+      "japanese": "本当に大切なのは、家族とのちょっとした食事、友人からの電話、寝る前の一冊の本。",
+      "mixed": "本当に matter するのは、家族との小さな食事、友人からの電話、寝る前の一冊の本。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "本当に ",
+          "parts": [
+            {
+              "text": "本当",
+              "ruby": "ほんと"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "matter",
+          "ruby": "大切である"
+        },
+        {
+          "type": "ja",
+          "text": " するのは、家族との小さな食事、友人からの電話、寝る前の一冊の本。",
+          "parts": [
+            {
+              "text": "するのは、",
+              "ruby": ""
+            },
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "との",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            },
+            {
+              "text": "食事",
+              "ruby": "しょくじ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "友人",
+              "ruby": "ゆうじん"
+            },
+            {
+              "text": "からの",
+              "ruby": ""
+            },
+            {
+              "text": "電話",
+              "ruby": "でんわ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "寝",
+              "ruby": "ね"
+            },
+            {
+              "text": "る",
+              "ruby": ""
+            },
+            {
+              "text": "前",
+              "ruby": "まえ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "いっ"
+            },
+            {
+              "text": "冊",
+              "ruby": "さつ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "matters",
+          "canonical_word": "matter",
+          "meaning": "大切である"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "matter",
+          "reading": "大切である",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "matter",
+          "canonical_meaning": "大切である"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 5,
+      "start": 45.34,
+      "end": 53.14,
+      "english": "What I must not lose are these small things.",
+      "japanese": "失ってはいけないのは、そんな小さなこと。",
+      "mixed": "失ってはいけないのは、そんな小さなこと。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "失ってはいけないのは、そんな小さなこと。",
+          "parts": [
+            {
+              "text": "失",
+              "ruby": "うしな"
+            },
+            {
+              "text": "ってはいけないのは、そんな",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さなこと。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 6,
+      "start": 54.4,
+      "end": 66.26,
+      "english": "A friend once said, What you have learned through experience becomes the center of your own values.",
+      "japanese": "友人が以前こう言いました。「経験を通して学んだことが、自分の価値観の中心になる」。",
+      "mixed": "友人が以前こう言いました。『experience を通して learn したことが、自分の value の中心になる』。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "友人が以前こう言いました。『",
+          "parts": [
+            {
+              "text": "友人",
+              "ruby": "ゆうじん"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "以前",
+              "ruby": "いぜん"
+            },
+            {
+              "text": "こう",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。『",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "experience",
+          "ruby": "経験"
+        },
+        {
+          "type": "ja",
+          "text": " を通して ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "通",
+              "ruby": "とお"
+            },
+            {
+              "text": "して",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "learn",
+          "ruby": "学んだ"
+        },
+        {
+          "type": "ja",
+          "text": " したことが、自分の ",
+          "parts": [
+            {
+              "text": "したことが、",
+              "ruby": ""
+            },
+            {
+              "text": "自分",
+              "ruby": "じぶん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "value",
+          "ruby": "価値観"
+        },
+        {
+          "type": "ja",
+          "text": " の中心になる』。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "中心",
+              "ruby": "ちゅうしん"
+            },
+            {
+              "text": "になる』。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "learned",
+          "canonical_word": "learn",
+          "meaning": "学ぶ"
+        },
+        {
+          "english": "experience",
+          "canonical_word": "experience",
+          "meaning": "経験"
+        },
+        {
+          "english": "values",
+          "canonical_word": "value",
+          "meaning": "価値"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "experience",
+          "reading": "経験",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "experience",
+          "canonical_meaning": "経験"
+        },
+        {
+          "english": "learn",
+          "reading": "学んだ",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "learn",
+          "canonical_meaning": "学ぶ"
+        },
+        {
+          "english": "value",
+          "reading": "価値観",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "value",
+          "canonical_meaning": "価値"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 7,
+      "start": 66.26,
+      "end": 70.98,
+      "english": "Yes, what I have learned is what matters.",
+      "japanese": "そう、僕が学んだことこそが大切なのです。",
+      "mixed": "そう、僕が learn したことこそが matter するのです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "そう、僕が ",
+          "parts": [
+            {
+              "text": "そう、",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "learn",
+          "ruby": "学んだ"
+        },
+        {
+          "type": "ja",
+          "text": " したことこそが ",
+          "parts": [
+            {
+              "text": "したことこそが",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "matter",
+          "ruby": "大切である"
+        },
+        {
+          "type": "ja",
+          "text": " するのです。",
+          "parts": [
+            {
+              "text": "するのです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "learned",
+          "canonical_word": "learn",
+          "meaning": "学ぶ"
+        },
+        {
+          "english": "matters",
+          "canonical_word": "matter",
+          "meaning": "大切である"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "learn",
+          "reading": "学んだ",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "learn",
+          "canonical_meaning": "学ぶ"
+        },
+        {
+          "english": "matter",
+          "reading": "大切である",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "matter",
+          "canonical_meaning": "大切である"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 8,
+      "start": 70.98,
+      "end": 79.0,
+      "english": "I wanted to rediscover what would fulfill me.",
+      "japanese": "何が僕を満たしてくれるのか、もう一度見つけたかったのです。",
+      "mixed": "何が僕を fulfill してくれるのか、もう一度、自分の中で reveal したかったのです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "何が僕を ",
+          "parts": [
+            {
+              "text": "何",
+              "ruby": "なん"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "fulfill",
+          "ruby": "満たす"
+        },
+        {
+          "type": "ja",
+          "text": " してくれるのか、もう一度、自分の中で ",
+          "parts": [
+            {
+              "text": "してくれるのか、もう",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "いち"
+            },
+            {
+              "text": "度",
+              "ruby": "ど"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "自分",
+              "ruby": "じぶん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "中",
+              "ruby": "なか"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "reveal",
+          "ruby": "明らかにする"
+        },
+        {
+          "type": "ja",
+          "text": " したかったのです。",
+          "parts": [
+            {
+              "text": "したかったのです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "fulfill",
+          "canonical_word": "fulfill",
+          "meaning": "果たす"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "fulfill",
+          "reading": "満たす",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "fulfill",
+          "canonical_meaning": "果たす"
+        },
+        {
+          "english": "reveal",
+          "reading": "明らかにする",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "reveal",
+          "canonical_meaning": "明らかにする"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 9,
+      "start": 80.8,
+      "end": 88.18,
+      "english": "Friendship, quiet time, and what I myself have long treasured.",
+      "japanese": "友情、静かな時間、そして僕自身が長く大切にしてきたもの。",
+      "mixed": "Friendship、静かな時間、そして僕自身が長く大切にしてきたもの。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "Friendship",
+          "ruby": "友情"
+        },
+        {
+          "type": "ja",
+          "text": "、静かな時間、そして僕自身が長く大切にしてきたもの。",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かな",
+              "ruby": ""
+            },
+            {
+              "text": "時間",
+              "ruby": "じかん"
+            },
+            {
+              "text": "、そして",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "自身",
+              "ruby": "じしん"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "長",
+              "ruby": "なが"
+            },
+            {
+              "text": "く",
+              "ruby": ""
+            },
+            {
+              "text": "大切",
+              "ruby": "たいせつ"
+            },
+            {
+              "text": "にしてきたもの。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "Friendship",
+          "canonical_word": "friendship",
+          "meaning": "友情"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Friendship",
+          "reading": "友情",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "friendship",
+          "canonical_meaning": "友情"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 10,
+      "start": 88.98,
+      "end": 94.94,
+      "english": "These are what I hope to recover now.",
+      "japanese": "それらを、僕は今取り戻したいと願っています。",
+      "mixed": "それらを、僕は今取り戻したいと願っています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "それらを、僕は今取り戻したいと願っています。",
+          "parts": [
+            {
+              "text": "それらを、",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "今",
+              "ruby": "いま"
+            },
+            {
+              "text": "取",
+              "ruby": "と"
+            },
+            {
+              "text": "り",
+              "ruby": ""
+            },
+            {
+              "text": "戻",
+              "ruby": "もど"
+            },
+            {
+              "text": "したいと",
+              "ruby": ""
+            },
+            {
+              "text": "願",
+              "ruby": "ねが"
+            },
+            {
+              "text": "っています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    }
+  ]
+}

@@ -1,0 +1,1680 @@
+{
+  "lesson": "H069",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h069_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H069/candidate1-full.mp3",
+  "source_audio_sha256": "caf6b24945053f35cc325b5b072c62cd3d3b449e0882617587b2f0bbd266aa48",
+  "bpm": 84.54,
+  "exact_word_match": true,
+  "word_count": 256,
+  "line_count": 16,
+  "first_word_start": 8.581,
+  "last_word_end": 188.359,
+  "lines": [
+    {
+      "line": 1,
+      "english": "In 1929, the American astronomer Edwin Hubble discovered that the more distant a galaxy was, the faster it was moving away from us.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 8.581,
+          "end": 8.681
+        },
+        {
+          "word": "1929,",
+          "display_index": 1,
+          "start": 8.681,
+          "end": 11.003
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 11.003,
+          "end": 11.121
+        },
+        {
+          "word": "American",
+          "display_index": 3,
+          "start": 11.121,
+          "end": 11.701
+        },
+        {
+          "word": "astronomer",
+          "display_index": 4,
+          "start": 11.701,
+          "end": 12.501
+        },
+        {
+          "word": "Edwin",
+          "display_index": 5,
+          "start": 12.501,
+          "end": 12.861
+        },
+        {
+          "word": "Hubble",
+          "display_index": 6,
+          "start": 12.861,
+          "end": 13.161
+        },
+        {
+          "word": "discovered",
+          "display_index": 7,
+          "start": 13.161,
+          "end": 15.242
+        },
+        {
+          "word": "that",
+          "display_index": 8,
+          "start": 15.242,
+          "end": 15.389
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 15.389,
+          "end": 15.522
+        },
+        {
+          "word": "more",
+          "display_index": 10,
+          "start": 15.522,
+          "end": 15.762
+        },
+        {
+          "word": "distant",
+          "display_index": 11,
+          "start": 15.762,
+          "end": 16.142
+        },
+        {
+          "word": "a",
+          "display_index": 12,
+          "start": 16.142,
+          "end": 16.282
+        },
+        {
+          "word": "galaxy",
+          "display_index": 13,
+          "start": 16.282,
+          "end": 16.902
+        },
+        {
+          "word": "was,",
+          "display_index": 14,
+          "start": 16.902,
+          "end": 18.477
+        },
+        {
+          "word": "the",
+          "display_index": 15,
+          "start": 18.477,
+          "end": 18.602
+        },
+        {
+          "word": "faster",
+          "display_index": 16,
+          "start": 18.602,
+          "end": 19.062
+        },
+        {
+          "word": "it",
+          "display_index": 17,
+          "start": 19.062,
+          "end": 19.162
+        },
+        {
+          "word": "was",
+          "display_index": 18,
+          "start": 19.162,
+          "end": 19.342
+        },
+        {
+          "word": "moving",
+          "display_index": 19,
+          "start": 19.342,
+          "end": 19.702
+        },
+        {
+          "word": "away",
+          "display_index": 20,
+          "start": 19.702,
+          "end": 19.982
+        },
+        {
+          "word": "from",
+          "display_index": 21,
+          "start": 19.982,
+          "end": 20.242
+        },
+        {
+          "word": "us.",
+          "display_index": 22,
+          "start": 20.242,
+          "end": 21.742
+        }
+      ],
+      "start": 8.581,
+      "end": 21.742
+    },
+    {
+      "line": 2,
+      "english": "This showed that the entire universe was expanding.",
+      "word_timings": [
+        {
+          "word": "This",
+          "display_index": 0,
+          "start": 22.162,
+          "end": 22.382
+        },
+        {
+          "word": "showed",
+          "display_index": 1,
+          "start": 22.382,
+          "end": 22.722
+        },
+        {
+          "word": "that",
+          "display_index": 2,
+          "start": 22.722,
+          "end": 22.902
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 22.902,
+          "end": 23.042
+        },
+        {
+          "word": "entire",
+          "display_index": 4,
+          "start": 23.042,
+          "end": 23.702
+        },
+        {
+          "word": "universe",
+          "display_index": 5,
+          "start": 23.702,
+          "end": 24.322
+        },
+        {
+          "word": "was",
+          "display_index": 6,
+          "start": 24.322,
+          "end": 24.522
+        },
+        {
+          "word": "expanding.",
+          "display_index": 7,
+          "start": 24.522,
+          "end": 26.022
+        }
+      ],
+      "start": 22.162,
+      "end": 26.022
+    },
+    {
+      "line": 3,
+      "english": "If the universe is expanding now, then in the past everything must have been small, hot, and gathered into a single point.",
+      "word_timings": [
+        {
+          "word": "If",
+          "display_index": 0,
+          "start": 28.263,
+          "end": 28.434
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 28.434,
+          "end": 28.643
+        },
+        {
+          "word": "universe",
+          "display_index": 2,
+          "start": 28.643,
+          "end": 29.314
+        },
+        {
+          "word": "is",
+          "display_index": 3,
+          "start": 29.314,
+          "end": 29.543
+        },
+        {
+          "word": "expanding",
+          "display_index": 4,
+          "start": 29.543,
+          "end": 30.503
+        },
+        {
+          "word": "now,",
+          "display_index": 5,
+          "start": 30.503,
+          "end": 31.583
+        },
+        {
+          "word": "then",
+          "display_index": 6,
+          "start": 31.583,
+          "end": 31.823
+        },
+        {
+          "word": "in",
+          "display_index": 7,
+          "start": 31.823,
+          "end": 31.966
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 31.966,
+          "end": 32.083
+        },
+        {
+          "word": "past",
+          "display_index": 9,
+          "start": 32.083,
+          "end": 32.723
+        },
+        {
+          "word": "everything",
+          "display_index": 10,
+          "start": 32.723,
+          "end": 33.523
+        },
+        {
+          "word": "must",
+          "display_index": 11,
+          "start": 33.523,
+          "end": 33.763
+        },
+        {
+          "word": "have",
+          "display_index": 12,
+          "start": 33.763,
+          "end": 33.903
+        },
+        {
+          "word": "been",
+          "display_index": 13,
+          "start": 33.903,
+          "end": 34.143
+        },
+        {
+          "word": "small,",
+          "display_index": 14,
+          "start": 34.143,
+          "end": 34.723
+        },
+        {
+          "word": "hot,",
+          "display_index": 15,
+          "start": 34.723,
+          "end": 35.504
+        },
+        {
+          "word": "and",
+          "display_index": 16,
+          "start": 35.504,
+          "end": 35.664
+        },
+        {
+          "word": "gathered",
+          "display_index": 17,
+          "start": 35.664,
+          "end": 36.264
+        },
+        {
+          "word": "into",
+          "display_index": 18,
+          "start": 36.264,
+          "end": 36.898
+        },
+        {
+          "word": "a",
+          "display_index": 19,
+          "start": 36.898,
+          "end": 37.064
+        },
+        {
+          "word": "single",
+          "display_index": 20,
+          "start": 37.064,
+          "end": 37.724
+        },
+        {
+          "word": "point.",
+          "display_index": 21,
+          "start": 37.724,
+          "end": 38.724
+        }
+      ],
+      "start": 28.263,
+      "end": 38.724
+    },
+    {
+      "line": 4,
+      "english": "From this idea, the theory of the Big Bang was born.",
+      "word_timings": [
+        {
+          "word": "From",
+          "display_index": 0,
+          "start": 39.024,
+          "end": 39.224
+        },
+        {
+          "word": "this",
+          "display_index": 1,
+          "start": 39.224,
+          "end": 39.644
+        },
+        {
+          "word": "idea,",
+          "display_index": 2,
+          "start": 39.644,
+          "end": 41.189
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 41.189,
+          "end": 41.324
+        },
+        {
+          "word": "theory",
+          "display_index": 4,
+          "start": 41.324,
+          "end": 41.964
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 41.964,
+          "end": 42.284
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 42.284,
+          "end": 42.584
+        },
+        {
+          "word": "Big",
+          "display_index": 7,
+          "start": 42.584,
+          "end": 43.104
+        },
+        {
+          "word": "Bang",
+          "display_index": 8,
+          "start": 43.104,
+          "end": 43.824
+        },
+        {
+          "word": "was",
+          "display_index": 9,
+          "start": 43.824,
+          "end": 44.164
+        },
+        {
+          "word": "born.",
+          "display_index": 10,
+          "start": 44.164,
+          "end": 45.125
+        }
+      ],
+      "start": 39.024,
+      "end": 45.125
+    },
+    {
+      "line": 5,
+      "english": "Today, the universe is believed to have begun about 13.8 billion years ago, in the Big Bang.",
+      "word_timings": [
+        {
+          "word": "Today,",
+          "display_index": 0,
+          "start": 45.425,
+          "end": 46.89
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 46.89,
+          "end": 47.105
+        },
+        {
+          "word": "universe",
+          "display_index": 2,
+          "start": 47.105,
+          "end": 47.781
+        },
+        {
+          "word": "is",
+          "display_index": 3,
+          "start": 47.781,
+          "end": 48.085
+        },
+        {
+          "word": "believed",
+          "display_index": 4,
+          "start": 48.085,
+          "end": 48.785
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 48.785,
+          "end": 48.965
+        },
+        {
+          "word": "have",
+          "display_index": 6,
+          "start": 48.965,
+          "end": 49.345
+        },
+        {
+          "word": "begun",
+          "display_index": 7,
+          "start": 49.345,
+          "end": 50.125
+        },
+        {
+          "word": "about",
+          "display_index": 8,
+          "start": 50.125,
+          "end": 50.545
+        },
+        {
+          "word": "13.8",
+          "display_index": 9,
+          "start": 50.545,
+          "end": 51.365
+        },
+        {
+          "word": "13.8",
+          "display_index": 9,
+          "start": 51.365,
+          "end": 51.805
+        },
+        {
+          "word": "billion",
+          "display_index": 10,
+          "start": 51.805,
+          "end": 52.565
+        },
+        {
+          "word": "years",
+          "display_index": 11,
+          "start": 52.565,
+          "end": 53.125
+        },
+        {
+          "word": "ago,",
+          "display_index": 12,
+          "start": 53.125,
+          "end": 55.946
+        },
+        {
+          "word": "in",
+          "display_index": 13,
+          "start": 55.946,
+          "end": 56.1
+        },
+        {
+          "word": "the",
+          "display_index": 14,
+          "start": 56.1,
+          "end": 56.246
+        },
+        {
+          "word": "Big",
+          "display_index": 15,
+          "start": 56.246,
+          "end": 56.626
+        },
+        {
+          "word": "Bang.",
+          "display_index": 16,
+          "start": 56.626,
+          "end": 58.126
+        }
+      ],
+      "start": 45.425,
+      "end": 58.126
+    },
+    {
+      "line": 6,
+      "english": "In its first few minutes, hydrogen and helium were created, and over hundreds of millions of years, the first stars ignited.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 62.326,
+          "end": 62.446
+        },
+        {
+          "word": "its",
+          "display_index": 1,
+          "start": 62.446,
+          "end": 62.626
+        },
+        {
+          "word": "first",
+          "display_index": 2,
+          "start": 62.626,
+          "end": 62.986
+        },
+        {
+          "word": "few",
+          "display_index": 3,
+          "start": 62.986,
+          "end": 63.346
+        },
+        {
+          "word": "minutes,",
+          "display_index": 4,
+          "start": 63.346,
+          "end": 63.866
+        },
+        {
+          "word": "hydrogen",
+          "display_index": 5,
+          "start": 63.866,
+          "end": 65.166
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 65.166,
+          "end": 65.426
+        },
+        {
+          "word": "helium",
+          "display_index": 7,
+          "start": 65.426,
+          "end": 66.367
+        },
+        {
+          "word": "were",
+          "display_index": 8,
+          "start": 66.367,
+          "end": 66.627
+        },
+        {
+          "word": "created,",
+          "display_index": 9,
+          "start": 66.627,
+          "end": 67.847
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 67.847,
+          "end": 68.047
+        },
+        {
+          "word": "over",
+          "display_index": 11,
+          "start": 68.047,
+          "end": 68.307
+        },
+        {
+          "word": "hundreds",
+          "display_index": 12,
+          "start": 68.307,
+          "end": 68.727
+        },
+        {
+          "word": "of",
+          "display_index": 13,
+          "start": 68.727,
+          "end": 68.867
+        },
+        {
+          "word": "millions",
+          "display_index": 14,
+          "start": 68.867,
+          "end": 69.507
+        },
+        {
+          "word": "of",
+          "display_index": 15,
+          "start": 69.507,
+          "end": 69.767
+        },
+        {
+          "word": "years,",
+          "display_index": 16,
+          "start": 69.767,
+          "end": 71.004
+        },
+        {
+          "word": "the",
+          "display_index": 17,
+          "start": 71.004,
+          "end": 71.147
+        },
+        {
+          "word": "first",
+          "display_index": 18,
+          "start": 71.147,
+          "end": 71.607
+        },
+        {
+          "word": "stars",
+          "display_index": 19,
+          "start": 71.607,
+          "end": 72.247
+        },
+        {
+          "word": "ignited.",
+          "display_index": 20,
+          "start": 72.247,
+          "end": 73.207
+        }
+      ],
+      "start": 62.326,
+      "end": 73.207
+    },
+    {
+      "line": 7,
+      "english": "In 1965, the American researchers Penzias and Wilson detected weak microwave radiation coming evenly from every direction of the sky.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 73.507,
+          "end": 73.647
+        },
+        {
+          "word": "1965,",
+          "display_index": 1,
+          "start": 73.647,
+          "end": 75.797
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 75.797,
+          "end": 75.988
+        },
+        {
+          "word": "American",
+          "display_index": 3,
+          "start": 75.988,
+          "end": 76.828
+        },
+        {
+          "word": "researchers",
+          "display_index": 4,
+          "start": 76.828,
+          "end": 77.868
+        },
+        {
+          "word": "Penzias",
+          "display_index": 5,
+          "start": 77.868,
+          "end": 79.388
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 79.388,
+          "end": 79.648
+        },
+        {
+          "word": "Wilson",
+          "display_index": 7,
+          "start": 79.648,
+          "end": 80.568
+        },
+        {
+          "word": "detected",
+          "display_index": 8,
+          "start": 80.568,
+          "end": 81.128
+        },
+        {
+          "word": "weak",
+          "display_index": 9,
+          "start": 81.128,
+          "end": 81.448
+        },
+        {
+          "word": "microwave",
+          "display_index": 10,
+          "start": 81.448,
+          "end": 82.528
+        },
+        {
+          "word": "radiation",
+          "display_index": 11,
+          "start": 82.528,
+          "end": 84.628
+        },
+        {
+          "word": "coming",
+          "display_index": 12,
+          "start": 84.628,
+          "end": 85.288
+        },
+        {
+          "word": "evenly",
+          "display_index": 13,
+          "start": 85.288,
+          "end": 88.329
+        },
+        {
+          "word": "from",
+          "display_index": 14,
+          "start": 88.329,
+          "end": 88.629
+        },
+        {
+          "word": "every",
+          "display_index": 15,
+          "start": 88.629,
+          "end": 89.069
+        },
+        {
+          "word": "direction",
+          "display_index": 16,
+          "start": 89.069,
+          "end": 90.369
+        },
+        {
+          "word": "of",
+          "display_index": 17,
+          "start": 90.369,
+          "end": 90.583
+        },
+        {
+          "word": "the",
+          "display_index": 18,
+          "start": 90.583,
+          "end": 90.749
+        },
+        {
+          "word": "sky.",
+          "display_index": 19,
+          "start": 90.749,
+          "end": 92.249
+        }
+      ],
+      "start": 73.507,
+      "end": 92.249
+    },
+    {
+      "line": 8,
+      "english": "This is called the cosmic microwave background, and it is regarded as the afterglow of the Big Bang.",
+      "word_timings": [
+        {
+          "word": "This",
+          "display_index": 0,
+          "start": 96.01,
+          "end": 96.246
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 96.246,
+          "end": 96.37
+        },
+        {
+          "word": "called",
+          "display_index": 2,
+          "start": 96.37,
+          "end": 96.913
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 96.913,
+          "end": 97.03
+        },
+        {
+          "word": "cosmic",
+          "display_index": 4,
+          "start": 97.03,
+          "end": 97.75
+        },
+        {
+          "word": "microwave",
+          "display_index": 5,
+          "start": 97.75,
+          "end": 98.67
+        },
+        {
+          "word": "background,",
+          "display_index": 6,
+          "start": 98.67,
+          "end": 99.43
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 99.43,
+          "end": 99.63
+        },
+        {
+          "word": "it",
+          "display_index": 8,
+          "start": 99.63,
+          "end": 99.731
+        },
+        {
+          "word": "is",
+          "display_index": 9,
+          "start": 99.731,
+          "end": 100.09
+        },
+        {
+          "word": "regarded",
+          "display_index": 10,
+          "start": 100.09,
+          "end": 101.05
+        },
+        {
+          "word": "as",
+          "display_index": 11,
+          "start": 101.05,
+          "end": 101.328
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 101.328,
+          "end": 101.59
+        },
+        {
+          "word": "afterglow",
+          "display_index": 13,
+          "start": 101.59,
+          "end": 104.17
+        },
+        {
+          "word": "of",
+          "display_index": 14,
+          "start": 104.17,
+          "end": 104.349
+        },
+        {
+          "word": "the",
+          "display_index": 15,
+          "start": 104.349,
+          "end": 104.49
+        },
+        {
+          "word": "Big",
+          "display_index": 16,
+          "start": 104.49,
+          "end": 104.85
+        },
+        {
+          "word": "Bang.",
+          "display_index": 17,
+          "start": 104.85,
+          "end": 106.35
+        }
+      ],
+      "start": 96.01,
+      "end": 106.35
+    },
+    {
+      "line": 9,
+      "english": "It became decisive evidence for the Big Bang theory.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 106.871,
+          "end": 106.991
+        },
+        {
+          "word": "became",
+          "display_index": 1,
+          "start": 106.991,
+          "end": 107.551
+        },
+        {
+          "word": "decisive",
+          "display_index": 2,
+          "start": 107.551,
+          "end": 108.771
+        },
+        {
+          "word": "evidence",
+          "display_index": 3,
+          "start": 108.771,
+          "end": 109.631
+        },
+        {
+          "word": "for",
+          "display_index": 4,
+          "start": 109.631,
+          "end": 110.022
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 110.022,
+          "end": 110.171
+        },
+        {
+          "word": "Big",
+          "display_index": 6,
+          "start": 110.171,
+          "end": 110.531
+        },
+        {
+          "word": "Bang",
+          "display_index": 7,
+          "start": 110.531,
+          "end": 111.211
+        },
+        {
+          "word": "theory.",
+          "display_index": 8,
+          "start": 111.211,
+          "end": 112.431
+        }
+      ],
+      "start": 106.871,
+      "end": 112.431
+    },
+    {
+      "line": 10,
+      "english": "Our Milky Way galaxy is said to hold between 200 and 400 billion stars.",
+      "word_timings": [
+        {
+          "word": "Our",
+          "display_index": 0,
+          "start": 112.731,
+          "end": 113.011
+        },
+        {
+          "word": "Milky",
+          "display_index": 1,
+          "start": 113.011,
+          "end": 113.411
+        },
+        {
+          "word": "Way",
+          "display_index": 2,
+          "start": 113.411,
+          "end": 113.751
+        },
+        {
+          "word": "galaxy",
+          "display_index": 3,
+          "start": 113.751,
+          "end": 114.805
+        },
+        {
+          "word": "is",
+          "display_index": 4,
+          "start": 114.805,
+          "end": 115.131
+        },
+        {
+          "word": "said",
+          "display_index": 5,
+          "start": 115.131,
+          "end": 116.058
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 116.058,
+          "end": 116.252
+        },
+        {
+          "word": "hold",
+          "display_index": 7,
+          "start": 116.252,
+          "end": 116.932
+        },
+        {
+          "word": "between",
+          "display_index": 8,
+          "start": 116.932,
+          "end": 117.632
+        },
+        {
+          "word": "200",
+          "display_index": 9,
+          "start": 117.632,
+          "end": 118.612
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 118.612,
+          "end": 119.052
+        },
+        {
+          "word": "400",
+          "display_index": 11,
+          "start": 119.052,
+          "end": 120.152
+        },
+        {
+          "word": "billion",
+          "display_index": 12,
+          "start": 120.152,
+          "end": 120.772
+        },
+        {
+          "word": "stars.",
+          "display_index": 13,
+          "start": 120.772,
+          "end": 122.272
+        }
+      ],
+      "start": 112.731,
+      "end": 122.272
+    },
+    {
+      "line": 11,
+      "english": "In the universe, there are said to be roughly roughly the same number of galaxies.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 126.213,
+          "end": 126.371
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 126.371,
+          "end": 126.653
+        },
+        {
+          "word": "universe,",
+          "display_index": 2,
+          "start": 126.653,
+          "end": 128.293
+        },
+        {
+          "word": "there",
+          "display_index": 3,
+          "start": 128.293,
+          "end": 128.499
+        },
+        {
+          "word": "are",
+          "display_index": 4,
+          "start": 128.499,
+          "end": 128.633
+        },
+        {
+          "word": "said",
+          "display_index": 5,
+          "start": 128.633,
+          "end": 128.871
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 128.871,
+          "end": 129.013
+        },
+        {
+          "word": "be",
+          "display_index": 7,
+          "start": 129.013,
+          "end": 129.333
+        },
+        {
+          "word": "roughly",
+          "display_index": 8,
+          "start": 129.333,
+          "end": 129.913
+        },
+        {
+          "word": "roughly",
+          "display_index": 9,
+          "start": 129.913,
+          "end": 130.981
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 130.981,
+          "end": 131.113
+        },
+        {
+          "word": "same",
+          "display_index": 11,
+          "start": 131.113,
+          "end": 131.493
+        },
+        {
+          "word": "number",
+          "display_index": 12,
+          "start": 131.493,
+          "end": 131.933
+        },
+        {
+          "word": "of",
+          "display_index": 13,
+          "start": 131.933,
+          "end": 132.193
+        },
+        {
+          "word": "galaxies.",
+          "display_index": 14,
+          "start": 132.193,
+          "end": 133.693
+        }
+      ],
+      "start": 126.213,
+      "end": 133.693
+    },
+    {
+      "line": 12,
+      "english": "But 95 percent of the universe still remains a mystery to us.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 134.173,
+          "end": 134.353
+        },
+        {
+          "word": "95",
+          "display_index": 1,
+          "start": 134.353,
+          "end": 134.913
+        },
+        {
+          "word": "percent",
+          "display_index": 2,
+          "start": 134.913,
+          "end": 135.513
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 135.513,
+          "end": 135.617
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 135.617,
+          "end": 135.853
+        },
+        {
+          "word": "universe",
+          "display_index": 5,
+          "start": 135.853,
+          "end": 136.614
+        },
+        {
+          "word": "still",
+          "display_index": 6,
+          "start": 136.614,
+          "end": 137.054
+        },
+        {
+          "word": "remains",
+          "display_index": 7,
+          "start": 137.054,
+          "end": 137.592
+        },
+        {
+          "word": "a",
+          "display_index": 8,
+          "start": 137.592,
+          "end": 137.794
+        },
+        {
+          "word": "mystery",
+          "display_index": 9,
+          "start": 137.794,
+          "end": 138.953
+        },
+        {
+          "word": "to",
+          "display_index": 10,
+          "start": 138.953,
+          "end": 139.254
+        },
+        {
+          "word": "us.",
+          "display_index": 11,
+          "start": 139.254,
+          "end": 139.674
+        }
+      ],
+      "start": 134.173,
+      "end": 139.674
+    },
+    {
+      "line": 13,
+      "english": "Dark matter, which we cannot directly observe, and dark energy, which is accelerating the expansion of the universe.",
+      "word_timings": [
+        {
+          "word": "Dark",
+          "display_index": 0,
+          "start": 139.674,
+          "end": 140.054
+        },
+        {
+          "word": "matter,",
+          "display_index": 1,
+          "start": 140.054,
+          "end": 141.094
+        },
+        {
+          "word": "which",
+          "display_index": 2,
+          "start": 141.094,
+          "end": 141.314
+        },
+        {
+          "word": "we",
+          "display_index": 3,
+          "start": 141.314,
+          "end": 141.474
+        },
+        {
+          "word": "cannot",
+          "display_index": 4,
+          "start": 141.474,
+          "end": 141.994
+        },
+        {
+          "word": "directly",
+          "display_index": 5,
+          "start": 141.994,
+          "end": 142.774
+        },
+        {
+          "word": "observe,",
+          "display_index": 6,
+          "start": 142.774,
+          "end": 143.974
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 143.974,
+          "end": 144.314
+        },
+        {
+          "word": "dark",
+          "display_index": 8,
+          "start": 144.314,
+          "end": 144.934
+        },
+        {
+          "word": "energy,",
+          "display_index": 9,
+          "start": 144.934,
+          "end": 145.914
+        },
+        {
+          "word": "which",
+          "display_index": 10,
+          "start": 145.914,
+          "end": 146.044
+        },
+        {
+          "word": "is",
+          "display_index": 11,
+          "start": 146.044,
+          "end": 146.294
+        },
+        {
+          "word": "accelerating",
+          "display_index": 12,
+          "start": 146.294,
+          "end": 148.246
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 148.246,
+          "end": 148.395
+        },
+        {
+          "word": "expansion",
+          "display_index": 14,
+          "start": 148.395,
+          "end": 150.815
+        },
+        {
+          "word": "of",
+          "display_index": 15,
+          "start": 150.815,
+          "end": 151.113
+        },
+        {
+          "word": "the",
+          "display_index": 16,
+          "start": 151.113,
+          "end": 151.395
+        },
+        {
+          "word": "universe.",
+          "display_index": 17,
+          "start": 151.395,
+          "end": 152.895
+        }
+      ],
+      "start": 139.674,
+      "end": 152.895
+    },
+    {
+      "line": 14,
+      "english": "To uncover the nature of these is the greatest challenge of modern physics.",
+      "word_timings": [
+        {
+          "word": "To",
+          "display_index": 0,
+          "start": 156.615,
+          "end": 156.836
+        },
+        {
+          "word": "uncover",
+          "display_index": 1,
+          "start": 156.836,
+          "end": 157.672
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 157.672,
+          "end": 157.796
+        },
+        {
+          "word": "nature",
+          "display_index": 3,
+          "start": 157.796,
+          "end": 158.256
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 158.256,
+          "end": 158.416
+        },
+        {
+          "word": "these",
+          "display_index": 5,
+          "start": 158.416,
+          "end": 159.475
+        },
+        {
+          "word": "is",
+          "display_index": 6,
+          "start": 159.475,
+          "end": 159.66
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 159.66,
+          "end": 159.796
+        },
+        {
+          "word": "greatest",
+          "display_index": 8,
+          "start": 159.796,
+          "end": 160.296
+        },
+        {
+          "word": "challenge",
+          "display_index": 9,
+          "start": 160.296,
+          "end": 160.956
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 160.956,
+          "end": 161.136
+        },
+        {
+          "word": "modern",
+          "display_index": 11,
+          "start": 161.136,
+          "end": 161.596
+        },
+        {
+          "word": "physics.",
+          "display_index": 12,
+          "start": 161.596,
+          "end": 162.394
+        }
+      ],
+      "start": 156.615,
+      "end": 162.394
+    },
+    {
+      "line": 15,
+      "english": "The James Webb Space Telescope, launched in 2021, is now bringing to us the light of the earliest galaxies of the universe.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 162.694,
+          "end": 162.856
+        },
+        {
+          "word": "James",
+          "display_index": 1,
+          "start": 162.856,
+          "end": 163.476
+        },
+        {
+          "word": "Webb",
+          "display_index": 2,
+          "start": 163.476,
+          "end": 163.856
+        },
+        {
+          "word": "Space",
+          "display_index": 3,
+          "start": 163.856,
+          "end": 164.356
+        },
+        {
+          "word": "Telescope,",
+          "display_index": 4,
+          "start": 164.356,
+          "end": 165.576
+        },
+        {
+          "word": "launched",
+          "display_index": 5,
+          "start": 165.576,
+          "end": 166.056
+        },
+        {
+          "word": "in",
+          "display_index": 6,
+          "start": 166.056,
+          "end": 166.136
+        },
+        {
+          "word": "2021,",
+          "display_index": 7,
+          "start": 166.116,
+          "end": 168.065
+        },
+        {
+          "word": "is",
+          "display_index": 8,
+          "start": 168.065,
+          "end": 168.217
+        },
+        {
+          "word": "now",
+          "display_index": 9,
+          "start": 168.217,
+          "end": 168.557
+        },
+        {
+          "word": "bringing",
+          "display_index": 10,
+          "start": 168.557,
+          "end": 169.072
+        },
+        {
+          "word": "to",
+          "display_index": 11,
+          "start": 169.072,
+          "end": 169.317
+        },
+        {
+          "word": "us",
+          "display_index": 12,
+          "start": 169.317,
+          "end": 170.525
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 170.525,
+          "end": 170.717
+        },
+        {
+          "word": "light",
+          "display_index": 14,
+          "start": 170.717,
+          "end": 171.777
+        },
+        {
+          "word": "of",
+          "display_index": 15,
+          "start": 171.777,
+          "end": 171.935
+        },
+        {
+          "word": "the",
+          "display_index": 16,
+          "start": 171.935,
+          "end": 172.197
+        },
+        {
+          "word": "earliest",
+          "display_index": 17,
+          "start": 172.197,
+          "end": 172.897
+        },
+        {
+          "word": "galaxies",
+          "display_index": 18,
+          "start": 172.897,
+          "end": 174.717
+        },
+        {
+          "word": "of",
+          "display_index": 19,
+          "start": 174.717,
+          "end": 174.89
+        },
+        {
+          "word": "the",
+          "display_index": 20,
+          "start": 174.89,
+          "end": 175.157
+        },
+        {
+          "word": "universe.",
+          "display_index": 21,
+          "start": 175.157,
+          "end": 176.657
+        }
+      ],
+      "start": 162.694,
+      "end": 176.657
+    },
+    {
+      "line": 16,
+      "english": "Light born 13.8 billion years ago is finally reaching the Earth.",
+      "word_timings": [
+        {
+          "word": "Light",
+          "display_index": 0,
+          "start": 177.878,
+          "end": 178.618
+        },
+        {
+          "word": "born",
+          "display_index": 1,
+          "start": 178.618,
+          "end": 179.298
+        },
+        {
+          "word": "13.8",
+          "display_index": 2,
+          "start": 179.298,
+          "end": 180.838
+        },
+        {
+          "word": "13.8",
+          "display_index": 2,
+          "start": 180.838,
+          "end": 181.458
+        },
+        {
+          "word": "billion",
+          "display_index": 3,
+          "start": 181.458,
+          "end": 182.218
+        },
+        {
+          "word": "years",
+          "display_index": 4,
+          "start": 182.218,
+          "end": 182.798
+        },
+        {
+          "word": "ago",
+          "display_index": 5,
+          "start": 182.798,
+          "end": 184.191
+        },
+        {
+          "word": "is",
+          "display_index": 6,
+          "start": 184.191,
+          "end": 184.398
+        },
+        {
+          "word": "finally",
+          "display_index": 7,
+          "start": 184.398,
+          "end": 185.978
+        },
+        {
+          "word": "reaching",
+          "display_index": 8,
+          "start": 185.978,
+          "end": 186.686
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 186.686,
+          "end": 186.859
+        },
+        {
+          "word": "Earth.",
+          "display_index": 10,
+          "start": 186.859,
+          "end": 188.359
+        }
+      ],
+      "start": 177.878,
+      "end": 188.359
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

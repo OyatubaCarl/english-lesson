@@ -1,0 +1,902 @@
+{
+  "lesson": "H043",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h043_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H043/candidate1-full.mp3",
+  "source_audio_sha256": "92ed93d0ab1976a604c49d8622347b7a0229f308fbf6180249313cb7f514e179",
+  "bpm": 86.98,
+  "exact_word_match": true,
+  "word_count": 133,
+  "line_count": 11,
+  "first_word_start": 5.221,
+  "last_word_end": 105.46,
+  "lines": [
+    {
+      "line": 1,
+      "english": "In 1962, the American marine biologist Rachel Carson published a book called Silent Spring.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 5.221,
+          "end": 10.862
+        },
+        {
+          "word": "1962,",
+          "display_index": 1,
+          "start": 10.862,
+          "end": 13.127
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 13.127,
+          "end": 13.303
+        },
+        {
+          "word": "American",
+          "display_index": 3,
+          "start": 13.303,
+          "end": 13.983
+        },
+        {
+          "word": "marine",
+          "display_index": 4,
+          "start": 13.983,
+          "end": 14.663
+        },
+        {
+          "word": "biologist",
+          "display_index": 5,
+          "start": 14.663,
+          "end": 15.563
+        },
+        {
+          "word": "Rachel",
+          "display_index": 6,
+          "start": 15.563,
+          "end": 16.063
+        },
+        {
+          "word": "Carson",
+          "display_index": 7,
+          "start": 16.063,
+          "end": 16.863
+        },
+        {
+          "word": "published",
+          "display_index": 8,
+          "start": 16.863,
+          "end": 18.144
+        },
+        {
+          "word": "a",
+          "display_index": 9,
+          "start": 18.144,
+          "end": 18.263
+        },
+        {
+          "word": "book",
+          "display_index": 10,
+          "start": 18.263,
+          "end": 18.604
+        },
+        {
+          "word": "called",
+          "display_index": 11,
+          "start": 18.604,
+          "end": 18.944
+        },
+        {
+          "word": "Silent",
+          "display_index": 12,
+          "start": 18.944,
+          "end": 19.464
+        },
+        {
+          "word": "Spring.",
+          "display_index": 13,
+          "start": 19.464,
+          "end": 20.964
+        }
+      ],
+      "start": 5.221,
+      "end": 20.964
+    },
+    {
+      "line": 2,
+      "english": "It was a book that warned how much the use of chemical pesticides were destroying nature.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 21.944,
+          "end": 22.084
+        },
+        {
+          "word": "was",
+          "display_index": 1,
+          "start": 22.084,
+          "end": 22.267
+        },
+        {
+          "word": "a",
+          "display_index": 2,
+          "start": 22.267,
+          "end": 22.424
+        },
+        {
+          "word": "book",
+          "display_index": 3,
+          "start": 22.424,
+          "end": 22.744
+        },
+        {
+          "word": "that",
+          "display_index": 4,
+          "start": 22.744,
+          "end": 22.964
+        },
+        {
+          "word": "warned",
+          "display_index": 5,
+          "start": 22.964,
+          "end": 23.344
+        },
+        {
+          "word": "how",
+          "display_index": 6,
+          "start": 23.344,
+          "end": 23.624
+        },
+        {
+          "word": "much",
+          "display_index": 7,
+          "start": 23.624,
+          "end": 24.048
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 24.048,
+          "end": 24.265
+        },
+        {
+          "word": "use",
+          "display_index": 9,
+          "start": 24.265,
+          "end": 24.705
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 24.705,
+          "end": 24.845
+        },
+        {
+          "word": "chemical",
+          "display_index": 11,
+          "start": 24.845,
+          "end": 25.525
+        },
+        {
+          "word": "pesticides",
+          "display_index": 12,
+          "start": 25.525,
+          "end": 26.585
+        },
+        {
+          "word": "were",
+          "display_index": 13,
+          "start": 26.585,
+          "end": 26.925
+        },
+        {
+          "word": "destroying",
+          "display_index": 14,
+          "start": 26.925,
+          "end": 27.805
+        },
+        {
+          "word": "nature.",
+          "display_index": 15,
+          "start": 27.805,
+          "end": 29.305
+        }
+      ],
+      "start": 21.944,
+      "end": 29.305
+    },
+    {
+      "line": 3,
+      "english": "At the time, DDT was being used in great amounts to kill insects.",
+      "word_timings": [
+        {
+          "word": "At",
+          "display_index": 0,
+          "start": 30.246,
+          "end": 30.383
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 30.383,
+          "end": 30.526
+        },
+        {
+          "word": "time,",
+          "display_index": 2,
+          "start": 30.526,
+          "end": 31.406
+        },
+        {
+          "word": "DDT",
+          "display_index": 3,
+          "start": 31.406,
+          "end": 32.426
+        },
+        {
+          "word": "was",
+          "display_index": 4,
+          "start": 32.426,
+          "end": 32.666
+        },
+        {
+          "word": "being",
+          "display_index": 5,
+          "start": 32.666,
+          "end": 33.446
+        },
+        {
+          "word": "used",
+          "display_index": 6,
+          "start": 33.446,
+          "end": 33.906
+        },
+        {
+          "word": "in",
+          "display_index": 7,
+          "start": 33.906,
+          "end": 34.166
+        },
+        {
+          "word": "great",
+          "display_index": 8,
+          "start": 34.166,
+          "end": 34.507
+        },
+        {
+          "word": "amounts",
+          "display_index": 9,
+          "start": 34.507,
+          "end": 35.174
+        },
+        {
+          "word": "to",
+          "display_index": 10,
+          "start": 35.174,
+          "end": 35.347
+        },
+        {
+          "word": "kill",
+          "display_index": 11,
+          "start": 35.347,
+          "end": 35.787
+        },
+        {
+          "word": "insects.",
+          "display_index": 12,
+          "start": 35.787,
+          "end": 37.287
+        }
+      ],
+      "start": 30.246,
+      "end": 37.287
+    },
+    {
+      "line": 4,
+      "english": "But pesticides did not kill only insects.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 38.807,
+          "end": 38.967
+        },
+        {
+          "word": "pesticides",
+          "display_index": 1,
+          "start": 38.967,
+          "end": 39.988
+        },
+        {
+          "word": "did",
+          "display_index": 2,
+          "start": 39.988,
+          "end": 40.208
+        },
+        {
+          "word": "not",
+          "display_index": 3,
+          "start": 40.208,
+          "end": 40.508
+        },
+        {
+          "word": "kill",
+          "display_index": 4,
+          "start": 40.508,
+          "end": 41.128
+        },
+        {
+          "word": "only",
+          "display_index": 5,
+          "start": 41.128,
+          "end": 41.648
+        },
+        {
+          "word": "insects.",
+          "display_index": 6,
+          "start": 41.648,
+          "end": 43.148
+        }
+      ],
+      "start": 38.807,
+      "end": 43.148
+    },
+    {
+      "line": 5,
+      "english": "Birds, fish, and human beings as well were being harmed by the poison that accumulated in their bodies over time.",
+      "word_timings": [
+        {
+          "word": "Birds,",
+          "display_index": 0,
+          "start": 43.468,
+          "end": 43.988
+        },
+        {
+          "word": "fish,",
+          "display_index": 1,
+          "start": 43.988,
+          "end": 44.368
+        },
+        {
+          "word": "and",
+          "display_index": 2,
+          "start": 44.368,
+          "end": 44.548
+        },
+        {
+          "word": "human",
+          "display_index": 3,
+          "start": 44.548,
+          "end": 45.049
+        },
+        {
+          "word": "beings",
+          "display_index": 4,
+          "start": 45.049,
+          "end": 45.609
+        },
+        {
+          "word": "as",
+          "display_index": 5,
+          "start": 45.609,
+          "end": 45.789
+        },
+        {
+          "word": "well",
+          "display_index": 6,
+          "start": 45.789,
+          "end": 46.249
+        },
+        {
+          "word": "were",
+          "display_index": 7,
+          "start": 46.249,
+          "end": 46.569
+        },
+        {
+          "word": "being",
+          "display_index": 8,
+          "start": 46.569,
+          "end": 47.089
+        },
+        {
+          "word": "harmed",
+          "display_index": 9,
+          "start": 47.089,
+          "end": 48.269
+        },
+        {
+          "word": "by",
+          "display_index": 10,
+          "start": 48.269,
+          "end": 48.481
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 48.481,
+          "end": 48.629
+        },
+        {
+          "word": "poison",
+          "display_index": 12,
+          "start": 48.629,
+          "end": 49.669
+        },
+        {
+          "word": "that",
+          "display_index": 13,
+          "start": 49.669,
+          "end": 49.889
+        },
+        {
+          "word": "accumulated",
+          "display_index": 14,
+          "start": 49.889,
+          "end": 51.31
+        },
+        {
+          "word": "in",
+          "display_index": 15,
+          "start": 51.31,
+          "end": 51.57
+        },
+        {
+          "word": "their",
+          "display_index": 16,
+          "start": 51.57,
+          "end": 51.91
+        },
+        {
+          "word": "bodies",
+          "display_index": 17,
+          "start": 51.91,
+          "end": 52.87
+        },
+        {
+          "word": "over",
+          "display_index": 18,
+          "start": 52.87,
+          "end": 53.29
+        },
+        {
+          "word": "time.",
+          "display_index": 19,
+          "start": 53.29,
+          "end": 54.79
+        }
+      ],
+      "start": 43.468,
+      "end": 54.79
+    },
+    {
+      "line": 6,
+      "english": "Carson warned that spring might come with no birds singing.",
+      "word_timings": [
+        {
+          "word": "Carson",
+          "display_index": 0,
+          "start": 55.491,
+          "end": 56.251
+        },
+        {
+          "word": "warned",
+          "display_index": 1,
+          "start": 56.251,
+          "end": 56.551
+        },
+        {
+          "word": "that",
+          "display_index": 2,
+          "start": 56.551,
+          "end": 56.811
+        },
+        {
+          "word": "spring",
+          "display_index": 3,
+          "start": 56.811,
+          "end": 57.251
+        },
+        {
+          "word": "might",
+          "display_index": 4,
+          "start": 57.251,
+          "end": 57.591
+        },
+        {
+          "word": "come",
+          "display_index": 5,
+          "start": 57.591,
+          "end": 57.971
+        },
+        {
+          "word": "with",
+          "display_index": 6,
+          "start": 57.971,
+          "end": 58.311
+        },
+        {
+          "word": "no",
+          "display_index": 7,
+          "start": 58.311,
+          "end": 58.991
+        },
+        {
+          "word": "birds",
+          "display_index": 8,
+          "start": 58.991,
+          "end": 59.511
+        },
+        {
+          "word": "singing.",
+          "display_index": 9,
+          "start": 59.511,
+          "end": 60.311
+        }
+      ],
+      "start": 55.491,
+      "end": 60.311
+    },
+    {
+      "line": 7,
+      "english": "Carson's words awakened widespread public concern.",
+      "word_timings": [
+        {
+          "word": "Carson's",
+          "display_index": 0,
+          "start": 60.351,
+          "end": 61.132
+        },
+        {
+          "word": "words",
+          "display_index": 1,
+          "start": 61.132,
+          "end": 61.672
+        },
+        {
+          "word": "awakened",
+          "display_index": 2,
+          "start": 61.672,
+          "end": 62.452
+        },
+        {
+          "word": "widespread",
+          "display_index": 3,
+          "start": 62.452,
+          "end": 63.772
+        },
+        {
+          "word": "public",
+          "display_index": 4,
+          "start": 63.772,
+          "end": 64.512
+        },
+        {
+          "word": "concern.",
+          "display_index": 5,
+          "start": 64.512,
+          "end": 65.469
+        }
+      ],
+      "start": 60.351,
+      "end": 65.469
+    },
+    {
+      "line": 8,
+      "english": "The chemical industry attacked her violently and criticized her work.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 65.769,
+          "end": 65.873
+        },
+        {
+          "word": "chemical",
+          "display_index": 1,
+          "start": 65.873,
+          "end": 66.673
+        },
+        {
+          "word": "industry",
+          "display_index": 2,
+          "start": 66.673,
+          "end": 68.173
+        },
+        {
+          "word": "attacked",
+          "display_index": 3,
+          "start": 68.173,
+          "end": 68.713
+        },
+        {
+          "word": "her",
+          "display_index": 4,
+          "start": 68.713,
+          "end": 68.993
+        },
+        {
+          "word": "violently",
+          "display_index": 5,
+          "start": 68.993,
+          "end": 70.553
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 70.553,
+          "end": 70.693
+        },
+        {
+          "word": "criticized",
+          "display_index": 7,
+          "start": 70.693,
+          "end": 71.814
+        },
+        {
+          "word": "her",
+          "display_index": 8,
+          "start": 71.814,
+          "end": 72.454
+        },
+        {
+          "word": "work.",
+          "display_index": 9,
+          "start": 72.454,
+          "end": 73.954
+        }
+      ],
+      "start": 65.769,
+      "end": 73.954
+    },
+    {
+      "line": 9,
+      "english": "But her warning was eventually accepted, and the United States banned most uses of DDT.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 76.415,
+          "end": 76.635
+        },
+        {
+          "word": "her",
+          "display_index": 1,
+          "start": 76.635,
+          "end": 76.935
+        },
+        {
+          "word": "warning",
+          "display_index": 2,
+          "start": 76.935,
+          "end": 77.635
+        },
+        {
+          "word": "was",
+          "display_index": 3,
+          "start": 77.635,
+          "end": 77.875
+        },
+        {
+          "word": "eventually",
+          "display_index": 4,
+          "start": 77.875,
+          "end": 78.835
+        },
+        {
+          "word": "accepted,",
+          "display_index": 5,
+          "start": 78.835,
+          "end": 79.895
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 79.895,
+          "end": 80.052
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 80.052,
+          "end": 80.255
+        },
+        {
+          "word": "United",
+          "display_index": 8,
+          "start": 80.255,
+          "end": 80.835
+        },
+        {
+          "word": "States",
+          "display_index": 9,
+          "start": 80.835,
+          "end": 81.375
+        },
+        {
+          "word": "banned",
+          "display_index": 10,
+          "start": 81.375,
+          "end": 82.076
+        },
+        {
+          "word": "most",
+          "display_index": 11,
+          "start": 82.076,
+          "end": 82.576
+        },
+        {
+          "word": "uses",
+          "display_index": 12,
+          "start": 82.576,
+          "end": 83.096
+        },
+        {
+          "word": "of",
+          "display_index": 13,
+          "start": 83.096,
+          "end": 83.496
+        },
+        {
+          "word": "DDT.",
+          "display_index": 14,
+          "start": 83.496,
+          "end": 84.996
+        }
+      ],
+      "start": 76.415,
+      "end": 84.996
+    },
+    {
+      "line": 10,
+      "english": "Carson's book helped inspire the growth of the modern environmental movement.",
+      "word_timings": [
+        {
+          "word": "Carson's",
+          "display_index": 0,
+          "start": 85.876,
+          "end": 86.576
+        },
+        {
+          "word": "book",
+          "display_index": 1,
+          "start": 86.576,
+          "end": 87.257
+        },
+        {
+          "word": "helped",
+          "display_index": 2,
+          "start": 87.257,
+          "end": 87.657
+        },
+        {
+          "word": "inspire",
+          "display_index": 3,
+          "start": 87.657,
+          "end": 88.503
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 88.503,
+          "end": 88.637
+        },
+        {
+          "word": "growth",
+          "display_index": 5,
+          "start": 88.637,
+          "end": 89.277
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 89.277,
+          "end": 89.586
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 89.586,
+          "end": 89.757
+        },
+        {
+          "word": "modern",
+          "display_index": 8,
+          "start": 89.757,
+          "end": 90.737
+        },
+        {
+          "word": "environmental",
+          "display_index": 9,
+          "start": 90.737,
+          "end": 92.618
+        },
+        {
+          "word": "movement.",
+          "display_index": 10,
+          "start": 92.618,
+          "end": 94.118
+        }
+      ],
+      "start": 85.876,
+      "end": 94.118
+    },
+    {
+      "line": 11,
+      "english": "To preserve the ecological balance is also to preserve humanity itself.",
+      "word_timings": [
+        {
+          "word": "To",
+          "display_index": 0,
+          "start": 96.617,
+          "end": 96.738
+        },
+        {
+          "word": "preserve",
+          "display_index": 1,
+          "start": 96.738,
+          "end": 97.988
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 97.988,
+          "end": 98.199
+        },
+        {
+          "word": "ecological",
+          "display_index": 3,
+          "start": 98.199,
+          "end": 99.179
+        },
+        {
+          "word": "balance",
+          "display_index": 4,
+          "start": 99.179,
+          "end": 100.709
+        },
+        {
+          "word": "is",
+          "display_index": 5,
+          "start": 100.709,
+          "end": 100.919
+        },
+        {
+          "word": "also",
+          "display_index": 6,
+          "start": 100.919,
+          "end": 102.166
+        },
+        {
+          "word": "to",
+          "display_index": 7,
+          "start": 102.166,
+          "end": 102.319
+        },
+        {
+          "word": "preserve",
+          "display_index": 8,
+          "start": 102.319,
+          "end": 102.94
+        },
+        {
+          "word": "humanity",
+          "display_index": 9,
+          "start": 102.94,
+          "end": 103.96
+        },
+        {
+          "word": "itself.",
+          "display_index": 10,
+          "start": 103.96,
+          "end": 105.46
+        }
+      ],
+      "start": 96.617,
+      "end": 105.46
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

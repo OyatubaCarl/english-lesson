@@ -1,0 +1,159 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H002.md",
+  "audio": "高校生編/suno_ready/generated/audio/H002/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 88.98,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0333,
+  "expected_words": 120,
+  "transcribed_words": 124,
+  "matched_words": 119,
+  "coverage": 0.9917,
+  "precision": 0.9597,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 119,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 89,
+      "length": 1,
+      "words": [
+        "arose"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 89,
+      "actual_start": 93,
+      "expected": [
+        "arose"
+      ],
+      "actual": [
+        "rose"
+      ],
+      "actual_confidence": 0.9175,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 0,
+      "actual_start": 0,
+      "expected": [],
+      "actual": [
+        "the",
+        "long",
+        "winter",
+        "ended"
+      ],
+      "actual_confidence": 0.7965
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "The Long Winter Ended The long winter ended, the snow melted The fields and hills gradually recovered The earth was awake, the air felt pleasant Cherry trees were full of flowers As I walked along the river, my heart became calm My face grew gentle, the world itself seemed new On the path I met a friend She looked more mature than last year Yet her smile remained the same Her eyes shone brightly, her voice sounded warm Children's voices reached me And I felt full of pleasure and delight A fresh hope rose in my heart A small joy emerged in my chest at night I remained awake Everything was quietly but surely becoming new The spring was young the world seemed alive",
+  "segments": [
+    {
+      "start": 10.24,
+      "end": 11.56,
+      "text": "The Long Winter Ended"
+    },
+    {
+      "start": 11.56,
+      "end": 13.62,
+      "text": "The long winter ended, the snow melted"
+    },
+    {
+      "start": 13.62,
+      "end": 17.6,
+      "text": "The fields and hills gradually recovered"
+    },
+    {
+      "start": 19.34,
+      "end": 23.34,
+      "text": "The earth was awake, the air felt pleasant"
+    },
+    {
+      "start": 23.34,
+      "end": 26.14,
+      "text": "Cherry trees were full of flowers"
+    },
+    {
+      "start": 26.14,
+      "end": 31.36,
+      "text": "As I walked along the river, my heart became calm"
+    },
+    {
+      "start": 31.36,
+      "end": 37.28,
+      "text": "My face grew gentle, the world itself seemed new"
+    },
+    {
+      "start": 37.28,
+      "end": 42.52,
+      "text": "On the path I met a friend"
+    },
+    {
+      "start": 42.52,
+      "end": 46.98,
+      "text": "She looked more mature than last year"
+    },
+    {
+      "start": 46.98,
+      "end": 49.78,
+      "text": "Yet her smile remained the same"
+    },
+    {
+      "start": 49.78,
+      "end": 55.52,
+      "text": "Her eyes shone brightly, her voice sounded warm"
+    },
+    {
+      "start": 56.74,
+      "end": 59.4,
+      "text": "Children's voices reached me"
+    },
+    {
+      "start": 59.4,
+      "end": 62.9,
+      "text": "And I felt full of pleasure and delight"
+    },
+    {
+      "start": 62.9,
+      "end": 66.92,
+      "text": "A fresh hope rose in my heart"
+    },
+    {
+      "start": 66.92,
+      "end": 72.16,
+      "text": "A small joy emerged in my chest at night"
+    },
+    {
+      "start": 72.16,
+      "end": 74.16,
+      "text": "I remained awake"
+    },
+    {
+      "start": 74.16,
+      "end": 80.18,
+      "text": "Everything was quietly but surely becoming new"
+    },
+    {
+      "start": 82.56,
+      "end": 84.84,
+      "text": "The spring was young"
+    },
+    {
+      "start": 84.84,
+      "end": 88.98,
+      "text": "the world seemed alive"
+    }
+  ]
+}

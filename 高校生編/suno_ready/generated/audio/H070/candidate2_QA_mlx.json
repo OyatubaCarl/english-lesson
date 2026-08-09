@@ -1,0 +1,260 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H070.md",
+  "audio": "高校生編/suno_ready/generated/audio/H070/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 167.76,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 226,
+  "transcribed_words": 226,
+  "matched_words": 223,
+  "coverage": 0.9867,
+  "precision": 0.9867,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 225,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 58,
+      "length": 2,
+      "words": [
+        "twenty",
+        "four"
+      ]
+    },
+    {
+      "start": 159,
+      "length": 1,
+      "words": [
+        "organize"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 159,
+      "actual_start": 157,
+      "expected": [
+        "organize"
+      ],
+      "actual": [
+        "organise"
+      ],
+      "actual_confidence": 0.7202,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 226,
+      "actual_start": 224,
+      "expected": [],
+      "actual": [
+        "thank",
+        "you"
+      ],
+      "actual_confidence": 0.5919
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 58,
+      "actual_start": 58,
+      "expected": [
+        "twenty",
+        "four"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "In the latter half of the 18th century An event began in Britain That would transform society And the economy from its foundation It was the dawn of the Industrial Revolution The steam engine improved by James Watt Transformed the very concept of power Manufacturing, which had until then Depended on rivers or on horses Could now run 24 hours a day On the power of coal and machines In Manchester and Liverpool Huge cotton textile factories were built one after another. People who had until then worked the land in the countryside moved into the urban centers in search of work. Urbanization advanced rapidly during this time. But the labor conditions in the factories was terrible. Workdays of more than twelve hours low Wages and children forced to work in the mines and the factories Child labour was the dark side of the society of that age After the middle of the 19th century Workers began to organise unions and to strike for better treatment Through the efforts of social reformers Laws limiting child labour were passed one after another The industrial revolution greatly raised living standards And the average lifespan of humanity At the same time it brought deep gaps between rich and poor And serious environmental pollution Our society today still lies on the path of the transformation That the revolution began Thank you.",
+  "segments": [
+    {
+      "start": 10.58,
+      "end": 14.5,
+      "text": "In the latter half of the 18th century"
+    },
+    {
+      "start": 14.5,
+      "end": 17.92,
+      "text": "An event began in Britain"
+    },
+    {
+      "start": 17.92,
+      "end": 20.26,
+      "text": "That would transform society"
+    },
+    {
+      "start": 20.26,
+      "end": 22.88,
+      "text": "And the economy from its foundation"
+    },
+    {
+      "start": 22.88,
+      "end": 26.72,
+      "text": "It was the dawn of the Industrial Revolution"
+    },
+    {
+      "start": 26.72,
+      "end": 31.34,
+      "text": "The steam engine improved by James Watt"
+    },
+    {
+      "start": 31.34,
+      "end": 35.06,
+      "text": "Transformed the very concept of power"
+    },
+    {
+      "start": 37.82,
+      "end": 40.44,
+      "text": "Manufacturing, which had until then"
+    },
+    {
+      "start": 40.44,
+      "end": 43.34,
+      "text": "Depended on rivers or on horses"
+    },
+    {
+      "start": 43.34,
+      "end": 46.64,
+      "text": "Could now run 24 hours a day"
+    },
+    {
+      "start": 46.64,
+      "end": 49.06,
+      "text": "On the power of coal and machines"
+    },
+    {
+      "start": 49.06,
+      "end": 51.44,
+      "text": "In Manchester and Liverpool"
+    },
+    {
+      "start": 51.44,
+      "end": 54.48,
+      "text": "Huge cotton textile factories"
+    },
+    {
+      "start": 54.48,
+      "end": 58.44,
+      "text": "were built one after another."
+    },
+    {
+      "start": 60.52,
+      "end": 63.06,
+      "text": "People who had until then"
+    },
+    {
+      "start": 63.06,
+      "end": 65.6,
+      "text": "worked the land in the countryside"
+    },
+    {
+      "start": 65.6,
+      "end": 68.82,
+      "text": "moved into the urban centers"
+    },
+    {
+      "start": 68.82,
+      "end": 70.38,
+      "text": "in search of work."
+    },
+    {
+      "start": 72.12,
+      "end": 74.72,
+      "text": "Urbanization advanced rapidly"
+    },
+    {
+      "start": 74.72,
+      "end": 76.24,
+      "text": "during this time."
+    },
+    {
+      "start": 76.86,
+      "end": 78.98,
+      "text": "But the labor conditions"
+    },
+    {
+      "start": 78.98,
+      "end": 81.92,
+      "text": "in the factories was terrible."
+    },
+    {
+      "start": 84.48,
+      "end": 87.76,
+      "text": "Workdays of more than twelve hours low"
+    },
+    {
+      "start": 87.76,
+      "end": 92.56,
+      "text": "Wages and children forced to work in the mines and the factories"
+    },
+    {
+      "start": 92.56,
+      "end": 99.92,
+      "text": "Child labour was the dark side of the society of that age"
+    },
+    {
+      "start": 104.82,
+      "end": 107.88,
+      "text": "After the middle of the 19th century"
+    },
+    {
+      "start": 108.48,
+      "end": 113.84,
+      "text": "Workers began to organise unions and to strike for better treatment"
+    },
+    {
+      "start": 113.84,
+      "end": 119.66,
+      "text": "Through the efforts of social reformers"
+    },
+    {
+      "start": 119.66,
+      "end": 125.58,
+      "text": "Laws limiting child labour were passed one after another"
+    },
+    {
+      "start": 125.58,
+      "end": 133.3,
+      "text": "The industrial revolution greatly raised living standards"
+    },
+    {
+      "start": 133.3,
+      "end": 136.84,
+      "text": "And the average lifespan of humanity"
+    },
+    {
+      "start": 136.84,
+      "end": 144.6,
+      "text": "At the same time it brought deep gaps between rich and poor"
+    },
+    {
+      "start": 144.6,
+      "end": 149.08,
+      "text": "And serious environmental pollution"
+    },
+    {
+      "start": 150.46,
+      "end": 157.58,
+      "text": "Our society today still lies on the path of the transformation"
+    },
+    {
+      "start": 157.58,
+      "end": 162.24,
+      "text": "That the revolution began"
+    },
+    {
+      "start": 167.7,
+      "end": 167.76,
+      "text": "Thank you."
+    }
+  ]
+}

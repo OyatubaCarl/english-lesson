@@ -1,0 +1,215 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H097.md",
+  "audio": "高校生編/suno_ready/generated/audio/H097/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 124.52,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9934,
+  "expected_words": 152,
+  "transcribed_words": 151,
+  "matched_words": 147,
+  "coverage": 0.9671,
+  "precision": 0.9735,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 151,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 26,
+      "length": 2,
+      "words": [
+        "six",
+        "percent"
+      ]
+    },
+    {
+      "start": 22,
+      "length": 1,
+      "words": [
+        "rainforests"
+      ]
+    },
+    {
+      "start": 42,
+      "length": 1,
+      "words": [
+        "hotspots"
+      ]
+    },
+    {
+      "start": 145,
+      "length": 1,
+      "words": [
+        "will"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 22,
+      "actual_start": 22,
+      "expected": [
+        "rainforests"
+      ],
+      "actual": [
+        "rainforest"
+      ],
+      "actual_confidence": 0.9012,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 42,
+      "actual_start": 40,
+      "expected": [
+        "hotspots"
+      ],
+      "actual": [
+        "hot",
+        "spots"
+      ],
+      "actual_confidence": 0.8117,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 145,
+      "actual_start": 144,
+      "expected": [
+        "will"
+      ],
+      "actual": [
+        "we'll"
+      ],
+      "actual_confidence": 0.5581,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 26,
+      "actual_start": 26,
+      "expected": [
+        "six",
+        "percent"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "On Earth there are more than 6,000 known species of mammals alone. The number of insect species is estimated in the millions. Tropical rainforest cover only about 6% of the Earth's surface yet more than half of all species dwell there These hot spots of biodiversity are shrinking rapidly The causes are numerous Logging conversion to farmland Urban development Human activity is steadily taking the habitat of animals away The oceans are also vulnerable. Plastic pollution harms whales and turtles. And the chemicals carried by the tide threaten the food chain. But conservation efforts are beginning to yield results. One indigenous community has protected the forest of its ancestors and established a pioneering model of community-led conservation An ecosystem is built on a subtle balance The loss of one species affects others in a chain Whether we can find the wisdom to coexist with nature We'll determine the future of this planet",
+  "segments": [
+    {
+      "start": 6.08,
+      "end": 12.6,
+      "text": "On Earth there are more than 6,000 known species of mammals alone."
+    },
+    {
+      "start": 14.64,
+      "end": 19.96,
+      "text": "The number of insect species is estimated in the millions."
+    },
+    {
+      "start": 20.9,
+      "end": 29.72,
+      "text": "Tropical rainforest cover only about 6% of the Earth's surface yet more than half"
+    },
+    {
+      "start": 29.72,
+      "end": 31.78,
+      "text": "of all species dwell there"
+    },
+    {
+      "start": 33.22,
+      "end": 35.8,
+      "text": "These hot spots of biodiversity"
+    },
+    {
+      "start": 37.52,
+      "end": 38.98,
+      "text": "are shrinking rapidly"
+    },
+    {
+      "start": 43.22,
+      "end": 44.72,
+      "text": "The causes are numerous"
+    },
+    {
+      "start": 45.42,
+      "end": 47.6,
+      "text": "Logging conversion to farmland"
+    },
+    {
+      "start": 47.6,
+      "end": 49.42,
+      "text": "Urban development"
+    },
+    {
+      "start": 50.52,
+      "end": 51.54,
+      "text": "Human activity"
+    },
+    {
+      "start": 52.12,
+      "end": 54.42,
+      "text": "is steadily taking the habitat"
+    },
+    {
+      "start": 55.72,
+      "end": 57.32,
+      "text": "of animals away"
+    },
+    {
+      "start": 57.32,
+      "end": 64.7,
+      "text": "The oceans are also vulnerable. Plastic pollution harms whales and turtles."
+    },
+    {
+      "start": 65.22,
+      "end": 70.02,
+      "text": "And the chemicals carried by the tide threaten the food chain."
+    },
+    {
+      "start": 70.76,
+      "end": 75.9,
+      "text": "But conservation efforts are beginning to yield results."
+    },
+    {
+      "start": 78.32,
+      "end": 83.98,
+      "text": "One indigenous community has protected the forest of its ancestors"
+    },
+    {
+      "start": 83.98,
+      "end": 89.58,
+      "text": "and established a pioneering model of community-led conservation"
+    },
+    {
+      "start": 90.98,
+      "end": 95.42,
+      "text": "An ecosystem is built on a subtle balance"
+    },
+    {
+      "start": 96.98,
+      "end": 103.36,
+      "text": "The loss of one species affects others in a chain"
+    },
+    {
+      "start": 104.98,
+      "end": 110.52,
+      "text": "Whether we can find the wisdom to coexist with nature"
+    },
+    {
+      "start": 110.52,
+      "end": 116.54,
+      "text": "We'll determine the future of this planet"
+    }
+  ]
+}

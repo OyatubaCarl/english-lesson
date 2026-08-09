@@ -1,0 +1,1206 @@
+{
+  "lesson": "H046",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h046_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/h46_imagen_video/source_audio/h46_democracy_constitution.mp3",
+  "source_audio_sha256": "6926165fff626ff1b555fd5bce4fdf6e9a6e26905356a135f3dc21f182227340",
+  "bpm": 88.06,
+  "exact_word_match": true,
+  "word_count": 181,
+  "line_count": 13,
+  "first_word_start": 10.88,
+  "last_word_end": 119.178,
+  "lines": [
+    {
+      "line": 1,
+      "english": "The principle of democracy rests on the idea that people govern themselves.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 10.88,
+          "end": 10.982
+        },
+        {
+          "word": "principle",
+          "display_index": 1,
+          "start": 10.982,
+          "end": 11.922
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 11.922,
+          "end": 12.062
+        },
+        {
+          "word": "democracy",
+          "display_index": 3,
+          "start": 12.062,
+          "end": 13.282
+        },
+        {
+          "word": "rests",
+          "display_index": 4,
+          "start": 13.282,
+          "end": 13.722
+        },
+        {
+          "word": "on",
+          "display_index": 5,
+          "start": 13.722,
+          "end": 13.944
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 13.944,
+          "end": 14.322
+        },
+        {
+          "word": "idea",
+          "display_index": 7,
+          "start": 14.322,
+          "end": 14.782
+        },
+        {
+          "word": "that",
+          "display_index": 8,
+          "start": 14.782,
+          "end": 14.962
+        },
+        {
+          "word": "people",
+          "display_index": 9,
+          "start": 14.962,
+          "end": 15.622
+        },
+        {
+          "word": "govern",
+          "display_index": 10,
+          "start": 15.622,
+          "end": 16.022
+        },
+        {
+          "word": "themselves.",
+          "display_index": 11,
+          "start": 16.022,
+          "end": 17.083
+        }
+      ],
+      "start": 10.88,
+      "end": 17.083
+    },
+    {
+      "line": 2,
+      "english": "In ancient Athens, citizens gathered in the public square and discussed policy.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 17.383,
+          "end": 17.523
+        },
+        {
+          "word": "ancient",
+          "display_index": 1,
+          "start": 17.523,
+          "end": 17.943
+        },
+        {
+          "word": "Athens,",
+          "display_index": 2,
+          "start": 17.943,
+          "end": 18.683
+        },
+        {
+          "word": "citizens",
+          "display_index": 3,
+          "start": 18.683,
+          "end": 19.223
+        },
+        {
+          "word": "gathered",
+          "display_index": 4,
+          "start": 19.223,
+          "end": 20.123
+        },
+        {
+          "word": "in",
+          "display_index": 5,
+          "start": 20.123,
+          "end": 20.254
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 20.254,
+          "end": 20.383
+        },
+        {
+          "word": "public",
+          "display_index": 7,
+          "start": 20.383,
+          "end": 20.983
+        },
+        {
+          "word": "square",
+          "display_index": 8,
+          "start": 20.983,
+          "end": 21.463
+        },
+        {
+          "word": "and",
+          "display_index": 9,
+          "start": 21.463,
+          "end": 21.603
+        },
+        {
+          "word": "discussed",
+          "display_index": 10,
+          "start": 21.603,
+          "end": 22.563
+        },
+        {
+          "word": "policy.",
+          "display_index": 11,
+          "start": 22.563,
+          "end": 23.864
+        }
+      ],
+      "start": 17.383,
+      "end": 23.864
+    },
+    {
+      "line": 3,
+      "english": "This was the starting point of the democracy that would later spread throughout the world.",
+      "word_timings": [
+        {
+          "word": "This",
+          "display_index": 0,
+          "start": 24.164,
+          "end": 24.324
+        },
+        {
+          "word": "was",
+          "display_index": 1,
+          "start": 24.324,
+          "end": 24.504
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 24.504,
+          "end": 24.604
+        },
+        {
+          "word": "starting",
+          "display_index": 3,
+          "start": 24.604,
+          "end": 25.164
+        },
+        {
+          "word": "point",
+          "display_index": 4,
+          "start": 25.164,
+          "end": 25.584
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 25.584,
+          "end": 25.7
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 25.7,
+          "end": 25.824
+        },
+        {
+          "word": "democracy",
+          "display_index": 7,
+          "start": 25.824,
+          "end": 26.864
+        },
+        {
+          "word": "that",
+          "display_index": 8,
+          "start": 26.864,
+          "end": 27.084
+        },
+        {
+          "word": "would",
+          "display_index": 9,
+          "start": 27.084,
+          "end": 27.384
+        },
+        {
+          "word": "later",
+          "display_index": 10,
+          "start": 27.384,
+          "end": 27.804
+        },
+        {
+          "word": "spread",
+          "display_index": 11,
+          "start": 27.804,
+          "end": 29.044
+        },
+        {
+          "word": "throughout",
+          "display_index": 12,
+          "start": 29.044,
+          "end": 29.815
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 29.815,
+          "end": 29.945
+        },
+        {
+          "word": "world.",
+          "display_index": 14,
+          "start": 29.945,
+          "end": 31.445
+        }
+      ],
+      "start": 24.164,
+      "end": 31.445
+    },
+    {
+      "line": 4,
+      "english": "Modern democratic states almost always have a supreme law called a constitution.",
+      "word_timings": [
+        {
+          "word": "Modern",
+          "display_index": 0,
+          "start": 32.845,
+          "end": 33.205
+        },
+        {
+          "word": "democratic",
+          "display_index": 1,
+          "start": 33.205,
+          "end": 33.945
+        },
+        {
+          "word": "states",
+          "display_index": 2,
+          "start": 33.945,
+          "end": 34.485
+        },
+        {
+          "word": "almost",
+          "display_index": 3,
+          "start": 34.485,
+          "end": 35.005
+        },
+        {
+          "word": "always",
+          "display_index": 4,
+          "start": 35.005,
+          "end": 35.565
+        },
+        {
+          "word": "have",
+          "display_index": 5,
+          "start": 35.565,
+          "end": 35.96
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 35.96,
+          "end": 36.066
+        },
+        {
+          "word": "supreme",
+          "display_index": 7,
+          "start": 36.066,
+          "end": 36.766
+        },
+        {
+          "word": "law",
+          "display_index": 8,
+          "start": 36.766,
+          "end": 37.086
+        },
+        {
+          "word": "called",
+          "display_index": 9,
+          "start": 37.086,
+          "end": 37.478
+        },
+        {
+          "word": "a",
+          "display_index": 10,
+          "start": 37.478,
+          "end": 37.586
+        },
+        {
+          "word": "constitution.",
+          "display_index": 11,
+          "start": 37.586,
+          "end": 38.879
+        }
+      ],
+      "start": 32.845,
+      "end": 38.879
+    },
+    {
+      "line": 5,
+      "english": "The constitution limits the power of government and protects the rights of the citizens.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 39.179,
+          "end": 39.286
+        },
+        {
+          "word": "constitution",
+          "display_index": 1,
+          "start": 39.286,
+          "end": 40.346
+        },
+        {
+          "word": "limits",
+          "display_index": 2,
+          "start": 40.346,
+          "end": 40.872
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 40.872,
+          "end": 40.986
+        },
+        {
+          "word": "power",
+          "display_index": 4,
+          "start": 40.986,
+          "end": 41.546
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 41.546,
+          "end": 41.706
+        },
+        {
+          "word": "government",
+          "display_index": 6,
+          "start": 41.706,
+          "end": 42.627
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 42.627,
+          "end": 42.847
+        },
+        {
+          "word": "protects",
+          "display_index": 8,
+          "start": 42.847,
+          "end": 43.432
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 43.432,
+          "end": 43.587
+        },
+        {
+          "word": "rights",
+          "display_index": 10,
+          "start": 43.587,
+          "end": 44.007
+        },
+        {
+          "word": "of",
+          "display_index": 11,
+          "start": 44.007,
+          "end": 44.314
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 44.314,
+          "end": 44.407
+        },
+        {
+          "word": "citizens.",
+          "display_index": 13,
+          "start": 44.407,
+          "end": 45.327
+        }
+      ],
+      "start": 39.179,
+      "end": 45.327
+    },
+    {
+      "line": 6,
+      "english": "In many countries, citizens choose their representatives through elections held every few years.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 45.627,
+          "end": 45.787
+        },
+        {
+          "word": "many",
+          "display_index": 1,
+          "start": 45.787,
+          "end": 46.247
+        },
+        {
+          "word": "countries,",
+          "display_index": 2,
+          "start": 46.247,
+          "end": 47.127
+        },
+        {
+          "word": "citizens",
+          "display_index": 3,
+          "start": 47.127,
+          "end": 47.787
+        },
+        {
+          "word": "choose",
+          "display_index": 4,
+          "start": 47.787,
+          "end": 48.187
+        },
+        {
+          "word": "their",
+          "display_index": 5,
+          "start": 48.187,
+          "end": 48.507
+        },
+        {
+          "word": "representatives",
+          "display_index": 6,
+          "start": 48.507,
+          "end": 49.848
+        },
+        {
+          "word": "through",
+          "display_index": 7,
+          "start": 49.848,
+          "end": 50.288
+        },
+        {
+          "word": "elections",
+          "display_index": 8,
+          "start": 50.288,
+          "end": 51.228
+        },
+        {
+          "word": "held",
+          "display_index": 9,
+          "start": 51.228,
+          "end": 51.888
+        },
+        {
+          "word": "every",
+          "display_index": 10,
+          "start": 51.888,
+          "end": 52.548
+        },
+        {
+          "word": "few",
+          "display_index": 11,
+          "start": 52.548,
+          "end": 53.008
+        },
+        {
+          "word": "years.",
+          "display_index": 12,
+          "start": 53.008,
+          "end": 54.508
+        }
+      ],
+      "start": 45.627,
+      "end": 54.508
+    },
+    {
+      "line": 7,
+      "english": "Candidates run campaigns and present their policies to the voters.",
+      "word_timings": [
+        {
+          "word": "Candidates",
+          "display_index": 0,
+          "start": 55.308,
+          "end": 56.009
+        },
+        {
+          "word": "run",
+          "display_index": 1,
+          "start": 56.009,
+          "end": 56.309
+        },
+        {
+          "word": "campaigns",
+          "display_index": 2,
+          "start": 56.309,
+          "end": 57.249
+        },
+        {
+          "word": "and",
+          "display_index": 3,
+          "start": 57.249,
+          "end": 57.349
+        },
+        {
+          "word": "present",
+          "display_index": 4,
+          "start": 57.349,
+          "end": 57.869
+        },
+        {
+          "word": "their",
+          "display_index": 5,
+          "start": 57.869,
+          "end": 58.049
+        },
+        {
+          "word": "policies",
+          "display_index": 6,
+          "start": 58.049,
+          "end": 58.969
+        },
+        {
+          "word": "to",
+          "display_index": 7,
+          "start": 58.969,
+          "end": 59.267
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 59.267,
+          "end": 59.409
+        },
+        {
+          "word": "voters.",
+          "display_index": 9,
+          "start": 59.409,
+          "end": 60.169
+        }
+      ],
+      "start": 55.308,
+      "end": 60.169
+    },
+    {
+      "line": 8,
+      "english": "The elected representatives gather in parliament or in congress, where they create new legislation.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 60.469,
+          "end": 60.649
+        },
+        {
+          "word": "elected",
+          "display_index": 1,
+          "start": 60.649,
+          "end": 61.469
+        },
+        {
+          "word": "representatives",
+          "display_index": 2,
+          "start": 61.469,
+          "end": 62.81
+        },
+        {
+          "word": "gather",
+          "display_index": 3,
+          "start": 62.81,
+          "end": 63.27
+        },
+        {
+          "word": "in",
+          "display_index": 4,
+          "start": 63.27,
+          "end": 63.49
+        },
+        {
+          "word": "parliament",
+          "display_index": 5,
+          "start": 63.49,
+          "end": 64.43
+        },
+        {
+          "word": "or",
+          "display_index": 6,
+          "start": 64.43,
+          "end": 64.61
+        },
+        {
+          "word": "in",
+          "display_index": 7,
+          "start": 64.61,
+          "end": 64.81
+        },
+        {
+          "word": "congress,",
+          "display_index": 8,
+          "start": 64.81,
+          "end": 65.91
+        },
+        {
+          "word": "where",
+          "display_index": 9,
+          "start": 65.91,
+          "end": 66.23
+        },
+        {
+          "word": "they",
+          "display_index": 10,
+          "start": 66.23,
+          "end": 66.49
+        },
+        {
+          "word": "create",
+          "display_index": 11,
+          "start": 66.49,
+          "end": 67.11
+        },
+        {
+          "word": "new",
+          "display_index": 12,
+          "start": 67.11,
+          "end": 67.59
+        },
+        {
+          "word": "legislation.",
+          "display_index": 13,
+          "start": 67.59,
+          "end": 69.09
+        }
+      ],
+      "start": 60.469,
+      "end": 69.09
+    },
+    {
+      "line": 9,
+      "english": "After discussion in committee, a bill becomes law.",
+      "word_timings": [
+        {
+          "word": "After",
+          "display_index": 0,
+          "start": 70.031,
+          "end": 70.651
+        },
+        {
+          "word": "discussion",
+          "display_index": 1,
+          "start": 70.651,
+          "end": 71.591
+        },
+        {
+          "word": "in",
+          "display_index": 2,
+          "start": 71.591,
+          "end": 71.811
+        },
+        {
+          "word": "committee,",
+          "display_index": 3,
+          "start": 71.811,
+          "end": 73.562
+        },
+        {
+          "word": "a",
+          "display_index": 4,
+          "start": 73.562,
+          "end": 73.711
+        },
+        {
+          "word": "bill",
+          "display_index": 5,
+          "start": 73.711,
+          "end": 74.051
+        },
+        {
+          "word": "becomes",
+          "display_index": 6,
+          "start": 74.051,
+          "end": 74.751
+        },
+        {
+          "word": "law.",
+          "display_index": 7,
+          "start": 74.751,
+          "end": 75.977
+        }
+      ],
+      "start": 70.031,
+      "end": 75.977
+    },
+    {
+      "line": 10,
+      "english": "The duty of a citizen is not only to vote.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 76.277,
+          "end": 76.432
+        },
+        {
+          "word": "duty",
+          "display_index": 1,
+          "start": 76.432,
+          "end": 77.232
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 77.232,
+          "end": 77.485
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 77.485,
+          "end": 77.772
+        },
+        {
+          "word": "citizen",
+          "display_index": 4,
+          "start": 77.772,
+          "end": 78.822
+        },
+        {
+          "word": "is",
+          "display_index": 5,
+          "start": 78.822,
+          "end": 79.152
+        },
+        {
+          "word": "not",
+          "display_index": 6,
+          "start": 79.152,
+          "end": 79.612
+        },
+        {
+          "word": "only",
+          "display_index": 7,
+          "start": 79.612,
+          "end": 80.195
+        },
+        {
+          "word": "to",
+          "display_index": 8,
+          "start": 80.195,
+          "end": 80.332
+        },
+        {
+          "word": "vote.",
+          "display_index": 9,
+          "start": 80.332,
+          "end": 81.832
+        }
+      ],
+      "start": 76.277,
+      "end": 81.832
+    },
+    {
+      "line": 11,
+      "english": "It is also to take an interest in social problems and to participate in politics throughout life.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 82.793,
+          "end": 82.914
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 82.914,
+          "end": 83.173
+        },
+        {
+          "word": "also",
+          "display_index": 2,
+          "start": 83.173,
+          "end": 83.762
+        },
+        {
+          "word": "to",
+          "display_index": 3,
+          "start": 83.762,
+          "end": 83.893
+        },
+        {
+          "word": "take",
+          "display_index": 4,
+          "start": 83.893,
+          "end": 84.333
+        },
+        {
+          "word": "an",
+          "display_index": 5,
+          "start": 84.333,
+          "end": 84.533
+        },
+        {
+          "word": "interest",
+          "display_index": 6,
+          "start": 84.533,
+          "end": 85.133
+        },
+        {
+          "word": "in",
+          "display_index": 7,
+          "start": 85.133,
+          "end": 85.293
+        },
+        {
+          "word": "social",
+          "display_index": 8,
+          "start": 85.293,
+          "end": 85.773
+        },
+        {
+          "word": "problems",
+          "display_index": 9,
+          "start": 85.773,
+          "end": 87.713
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 87.713,
+          "end": 88.002
+        },
+        {
+          "word": "to",
+          "display_index": 11,
+          "start": 88.002,
+          "end": 88.294
+        },
+        {
+          "word": "participate",
+          "display_index": 12,
+          "start": 88.294,
+          "end": 89.614
+        },
+        {
+          "word": "in",
+          "display_index": 13,
+          "start": 89.614,
+          "end": 89.974
+        },
+        {
+          "word": "politics",
+          "display_index": 14,
+          "start": 89.974,
+          "end": 90.854
+        },
+        {
+          "word": "throughout",
+          "display_index": 15,
+          "start": 90.854,
+          "end": 91.694
+        },
+        {
+          "word": "life.",
+          "display_index": 16,
+          "start": 91.694,
+          "end": 92.754
+        }
+      ],
+      "start": 82.793,
+      "end": 92.754
+    },
+    {
+      "line": 12,
+      "english": "How to balance the will of the majority with the freedom of the minority is the challenge of every democratic state.",
+      "word_timings": [
+        {
+          "word": "How",
+          "display_index": 0,
+          "start": 93.054,
+          "end": 93.251
+        },
+        {
+          "word": "to",
+          "display_index": 1,
+          "start": 93.251,
+          "end": 93.394
+        },
+        {
+          "word": "balance",
+          "display_index": 2,
+          "start": 93.394,
+          "end": 93.933
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 93.933,
+          "end": 94.094
+        },
+        {
+          "word": "will",
+          "display_index": 4,
+          "start": 94.094,
+          "end": 94.554
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 94.554,
+          "end": 94.78
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 94.78,
+          "end": 95.075
+        },
+        {
+          "word": "majority",
+          "display_index": 7,
+          "start": 95.075,
+          "end": 96.115
+        },
+        {
+          "word": "with",
+          "display_index": 8,
+          "start": 96.115,
+          "end": 96.456
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 96.456,
+          "end": 96.575
+        },
+        {
+          "word": "freedom",
+          "display_index": 10,
+          "start": 96.575,
+          "end": 97.175
+        },
+        {
+          "word": "of",
+          "display_index": 11,
+          "start": 97.175,
+          "end": 97.346
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 97.346,
+          "end": 97.635
+        },
+        {
+          "word": "minority",
+          "display_index": 13,
+          "start": 97.635,
+          "end": 98.84
+        },
+        {
+          "word": "is",
+          "display_index": 14,
+          "start": 98.84,
+          "end": 99.17
+        },
+        {
+          "word": "the",
+          "display_index": 15,
+          "start": 99.17,
+          "end": 99.315
+        },
+        {
+          "word": "challenge",
+          "display_index": 16,
+          "start": 99.315,
+          "end": 100.715
+        },
+        {
+          "word": "of",
+          "display_index": 17,
+          "start": 100.715,
+          "end": 100.935
+        },
+        {
+          "word": "every",
+          "display_index": 18,
+          "start": 100.935,
+          "end": 101.195
+        },
+        {
+          "word": "democratic",
+          "display_index": 19,
+          "start": 101.195,
+          "end": 102.136
+        },
+        {
+          "word": "state.",
+          "display_index": 20,
+          "start": 102.136,
+          "end": 103.576
+        }
+      ],
+      "start": 93.054,
+      "end": 103.576
+    },
+    {
+      "line": 13,
+      "english": "To respect the will of the majority while protecting the freedom of the minority — this is the essential responsibility of a democratic society.",
+      "word_timings": [
+        {
+          "word": "To",
+          "display_index": 0,
+          "start": 103.876,
+          "end": 104.136
+        },
+        {
+          "word": "respect",
+          "display_index": 1,
+          "start": 104.136,
+          "end": 104.788
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 104.788,
+          "end": 104.936
+        },
+        {
+          "word": "will",
+          "display_index": 3,
+          "start": 104.936,
+          "end": 105.416
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 105.416,
+          "end": 105.648
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 105.648,
+          "end": 105.956
+        },
+        {
+          "word": "majority",
+          "display_index": 6,
+          "start": 105.956,
+          "end": 106.976
+        },
+        {
+          "word": "while",
+          "display_index": 7,
+          "start": 106.976,
+          "end": 107.296
+        },
+        {
+          "word": "protecting",
+          "display_index": 8,
+          "start": 107.296,
+          "end": 108.157
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 108.157,
+          "end": 108.297
+        },
+        {
+          "word": "freedom",
+          "display_index": 10,
+          "start": 108.297,
+          "end": 108.957
+        },
+        {
+          "word": "of",
+          "display_index": 11,
+          "start": 108.957,
+          "end": 109.207
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 109.207,
+          "end": 109.357
+        },
+        {
+          "word": "minority",
+          "display_index": 13,
+          "start": 109.357,
+          "end": 112.077
+        },
+        {
+          "word": "this",
+          "display_index": 15,
+          "start": 112.077,
+          "end": 112.431
+        },
+        {
+          "word": "is",
+          "display_index": 16,
+          "start": 112.431,
+          "end": 112.756
+        },
+        {
+          "word": "the",
+          "display_index": 17,
+          "start": 112.756,
+          "end": 112.937
+        },
+        {
+          "word": "essential",
+          "display_index": 18,
+          "start": 112.937,
+          "end": 113.797
+        },
+        {
+          "word": "responsibility",
+          "display_index": 19,
+          "start": 113.797,
+          "end": 115.518
+        },
+        {
+          "word": "of",
+          "display_index": 20,
+          "start": 115.518,
+          "end": 115.656
+        },
+        {
+          "word": "a",
+          "display_index": 21,
+          "start": 115.656,
+          "end": 115.818
+        },
+        {
+          "word": "democratic",
+          "display_index": 22,
+          "start": 115.818,
+          "end": 117.678
+        },
+        {
+          "word": "society.",
+          "display_index": 23,
+          "start": 117.678,
+          "end": 119.178
+        }
+      ],
+      "start": 103.876,
+      "end": 119.178
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

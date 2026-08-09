@@ -1,0 +1,1656 @@
+{
+  "lesson": "H074",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h074_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H074/candidate2-full.mp3",
+  "source_audio_sha256": "984381d8b654e3af1926757aee787d23949df6e8aaca2fe4fdbcfb387bba5120",
+  "bpm": 92.98,
+  "exact_word_match": true,
+  "word_count": 252,
+  "line_count": 16,
+  "first_word_start": 4.541,
+  "last_word_end": 152.059,
+  "lines": [
+    {
+      "line": 1,
+      "english": "In every region of the world, there is a ritual or a festival unique to that land.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 4.541,
+          "end": 4.881
+        },
+        {
+          "word": "every",
+          "display_index": 1,
+          "start": 4.881,
+          "end": 5.441
+        },
+        {
+          "word": "region",
+          "display_index": 2,
+          "start": 5.441,
+          "end": 6.161
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 6.161,
+          "end": 6.415
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 6.415,
+          "end": 6.561
+        },
+        {
+          "word": "world,",
+          "display_index": 5,
+          "start": 6.561,
+          "end": 7.061
+        },
+        {
+          "word": "there",
+          "display_index": 6,
+          "start": 7.061,
+          "end": 7.412
+        },
+        {
+          "word": "is",
+          "display_index": 7,
+          "start": 7.412,
+          "end": 7.735
+        },
+        {
+          "word": "a",
+          "display_index": 8,
+          "start": 7.735,
+          "end": 8.001
+        },
+        {
+          "word": "ritual",
+          "display_index": 9,
+          "start": 8.001,
+          "end": 9.681
+        },
+        {
+          "word": "or",
+          "display_index": 10,
+          "start": 9.681,
+          "end": 9.859
+        },
+        {
+          "word": "a",
+          "display_index": 11,
+          "start": 9.859,
+          "end": 9.941
+        },
+        {
+          "word": "festival",
+          "display_index": 12,
+          "start": 9.941,
+          "end": 11.661
+        },
+        {
+          "word": "unique",
+          "display_index": 13,
+          "start": 11.661,
+          "end": 12.535
+        },
+        {
+          "word": "to",
+          "display_index": 14,
+          "start": 12.535,
+          "end": 12.702
+        },
+        {
+          "word": "that",
+          "display_index": 15,
+          "start": 12.702,
+          "end": 13.022
+        },
+        {
+          "word": "land.",
+          "display_index": 16,
+          "start": 13.022,
+          "end": 14.502
+        }
+      ],
+      "start": 4.541,
+      "end": 14.502
+    },
+    {
+      "line": 2,
+      "english": "They reflect the people's view of the world, their sense of religion, and their relationship with nature.",
+      "word_timings": [
+        {
+          "word": "They",
+          "display_index": 0,
+          "start": 14.802,
+          "end": 14.962
+        },
+        {
+          "word": "reflect",
+          "display_index": 1,
+          "start": 14.962,
+          "end": 15.482
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 15.482,
+          "end": 15.742
+        },
+        {
+          "word": "people's",
+          "display_index": 3,
+          "start": 15.742,
+          "end": 16.422
+        },
+        {
+          "word": "view",
+          "display_index": 4,
+          "start": 16.422,
+          "end": 17.122
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 17.122,
+          "end": 17.407
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 17.407,
+          "end": 17.542
+        },
+        {
+          "word": "world,",
+          "display_index": 7,
+          "start": 17.542,
+          "end": 18.042
+        },
+        {
+          "word": "their",
+          "display_index": 8,
+          "start": 18.042,
+          "end": 18.322
+        },
+        {
+          "word": "sense",
+          "display_index": 9,
+          "start": 18.322,
+          "end": 19.062
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 19.062,
+          "end": 19.322
+        },
+        {
+          "word": "religion,",
+          "display_index": 11,
+          "start": 19.322,
+          "end": 20.503
+        },
+        {
+          "word": "and",
+          "display_index": 12,
+          "start": 20.503,
+          "end": 20.643
+        },
+        {
+          "word": "their",
+          "display_index": 13,
+          "start": 20.643,
+          "end": 20.843
+        },
+        {
+          "word": "relationship",
+          "display_index": 14,
+          "start": 20.843,
+          "end": 23.203
+        },
+        {
+          "word": "with",
+          "display_index": 15,
+          "start": 23.203,
+          "end": 23.523
+        },
+        {
+          "word": "nature.",
+          "display_index": 16,
+          "start": 23.523,
+          "end": 25.023
+        }
+      ],
+      "start": 14.802,
+      "end": 25.023
+    },
+    {
+      "line": 3,
+      "english": "In Japan, the first shrine visit of the year, Setsubun, Obon, and the festivals of each region are still carefully kept.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 25.503,
+          "end": 25.763
+        },
+        {
+          "word": "Japan,",
+          "display_index": 1,
+          "start": 25.763,
+          "end": 26.596
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 26.596,
+          "end": 26.703
+        },
+        {
+          "word": "first",
+          "display_index": 3,
+          "start": 26.703,
+          "end": 27.023
+        },
+        {
+          "word": "shrine",
+          "display_index": 4,
+          "start": 27.023,
+          "end": 27.403
+        },
+        {
+          "word": "visit",
+          "display_index": 5,
+          "start": 27.403,
+          "end": 27.964
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 27.964,
+          "end": 28.219
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 28.219,
+          "end": 28.384
+        },
+        {
+          "word": "year,",
+          "display_index": 8,
+          "start": 28.384,
+          "end": 29.944
+        },
+        {
+          "word": "Setsubun,",
+          "display_index": 9,
+          "start": 29.944,
+          "end": 30.684
+        },
+        {
+          "word": "Obon,",
+          "display_index": 10,
+          "start": 30.684,
+          "end": 31.304
+        },
+        {
+          "word": "and",
+          "display_index": 11,
+          "start": 31.304,
+          "end": 31.451
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 31.451,
+          "end": 31.584
+        },
+        {
+          "word": "festivals",
+          "display_index": 13,
+          "start": 31.584,
+          "end": 32.444
+        },
+        {
+          "word": "of",
+          "display_index": 14,
+          "start": 32.444,
+          "end": 32.644
+        },
+        {
+          "word": "each",
+          "display_index": 15,
+          "start": 32.644,
+          "end": 33.064
+        },
+        {
+          "word": "region",
+          "display_index": 16,
+          "start": 33.064,
+          "end": 33.87
+        },
+        {
+          "word": "are",
+          "display_index": 17,
+          "start": 33.87,
+          "end": 34.084
+        },
+        {
+          "word": "still",
+          "display_index": 18,
+          "start": 34.084,
+          "end": 34.464
+        },
+        {
+          "word": "carefully",
+          "display_index": 19,
+          "start": 34.464,
+          "end": 35.144
+        },
+        {
+          "word": "kept.",
+          "display_index": 20,
+          "start": 35.144,
+          "end": 35.944
+        }
+      ],
+      "start": 25.503,
+      "end": 35.944
+    },
+    {
+      "line": 4,
+      "english": "The Gion Festival of Kyoto has a history of more than a thousand years, and the Nebuta Festival of Aomori fills the night streets with passion.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 35.975,
+          "end": 36.105
+        },
+        {
+          "word": "Gion",
+          "display_index": 1,
+          "start": 36.105,
+          "end": 36.445
+        },
+        {
+          "word": "Festival",
+          "display_index": 2,
+          "start": 36.445,
+          "end": 37.265
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 37.265,
+          "end": 37.405
+        },
+        {
+          "word": "Kyoto",
+          "display_index": 4,
+          "start": 37.405,
+          "end": 38.685
+        },
+        {
+          "word": "has",
+          "display_index": 5,
+          "start": 38.685,
+          "end": 38.875
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 38.875,
+          "end": 38.985
+        },
+        {
+          "word": "history",
+          "display_index": 7,
+          "start": 38.985,
+          "end": 39.885
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 39.885,
+          "end": 40.145
+        },
+        {
+          "word": "more",
+          "display_index": 9,
+          "start": 40.145,
+          "end": 40.625
+        },
+        {
+          "word": "than",
+          "display_index": 10,
+          "start": 40.625,
+          "end": 40.78
+        },
+        {
+          "word": "a",
+          "display_index": 11,
+          "start": 40.78,
+          "end": 40.925
+        },
+        {
+          "word": "thousand",
+          "display_index": 12,
+          "start": 40.925,
+          "end": 41.605
+        },
+        {
+          "word": "years,",
+          "display_index": 13,
+          "start": 41.605,
+          "end": 43.386
+        },
+        {
+          "word": "and",
+          "display_index": 14,
+          "start": 43.386,
+          "end": 43.55
+        },
+        {
+          "word": "the",
+          "display_index": 15,
+          "start": 43.55,
+          "end": 43.666
+        },
+        {
+          "word": "Nebuta",
+          "display_index": 16,
+          "start": 43.666,
+          "end": 44.146
+        },
+        {
+          "word": "Festival",
+          "display_index": 17,
+          "start": 44.146,
+          "end": 45.186
+        },
+        {
+          "word": "of",
+          "display_index": 18,
+          "start": 45.186,
+          "end": 45.526
+        },
+        {
+          "word": "Aomori",
+          "display_index": 19,
+          "start": 45.526,
+          "end": 46.746
+        },
+        {
+          "word": "fills",
+          "display_index": 20,
+          "start": 46.746,
+          "end": 47.264
+        },
+        {
+          "word": "the",
+          "display_index": 21,
+          "start": 47.264,
+          "end": 47.406
+        },
+        {
+          "word": "night",
+          "display_index": 22,
+          "start": 47.406,
+          "end": 47.846
+        },
+        {
+          "word": "streets",
+          "display_index": 23,
+          "start": 47.846,
+          "end": 48.986
+        },
+        {
+          "word": "with",
+          "display_index": 24,
+          "start": 48.986,
+          "end": 49.286
+        },
+        {
+          "word": "passion.",
+          "display_index": 25,
+          "start": 49.286,
+          "end": 50.786
+        }
+      ],
+      "start": 35.975,
+      "end": 50.786
+    },
+    {
+      "line": 5,
+      "english": "Such traditions are not merely a habit of the past.",
+      "word_timings": [
+        {
+          "word": "Such",
+          "display_index": 0,
+          "start": 51.567,
+          "end": 51.767
+        },
+        {
+          "word": "traditions",
+          "display_index": 1,
+          "start": 51.767,
+          "end": 52.585
+        },
+        {
+          "word": "are",
+          "display_index": 2,
+          "start": 52.585,
+          "end": 52.767
+        },
+        {
+          "word": "not",
+          "display_index": 3,
+          "start": 52.767,
+          "end": 53.187
+        },
+        {
+          "word": "merely",
+          "display_index": 4,
+          "start": 53.187,
+          "end": 53.711
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 53.711,
+          "end": 53.867
+        },
+        {
+          "word": "habit",
+          "display_index": 6,
+          "start": 53.867,
+          "end": 54.567
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 54.567,
+          "end": 54.828
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 54.828,
+          "end": 54.967
+        },
+        {
+          "word": "past.",
+          "display_index": 9,
+          "start": 54.967,
+          "end": 55.887
+        }
+      ],
+      "start": 51.567,
+      "end": 55.887
+    },
+    {
+      "line": 6,
+      "english": "It is also a place where the people of a community confirm their own identity — who they are.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 56.187,
+          "end": 56.29
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 56.29,
+          "end": 56.527
+        },
+        {
+          "word": "also",
+          "display_index": 2,
+          "start": 56.527,
+          "end": 56.967
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 56.967,
+          "end": 57.047
+        },
+        {
+          "word": "place",
+          "display_index": 4,
+          "start": 57.047,
+          "end": 57.727
+        },
+        {
+          "word": "where",
+          "display_index": 5,
+          "start": 57.727,
+          "end": 58.065
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 58.065,
+          "end": 58.207
+        },
+        {
+          "word": "people",
+          "display_index": 7,
+          "start": 58.207,
+          "end": 58.907
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 58.907,
+          "end": 59.038
+        },
+        {
+          "word": "a",
+          "display_index": 9,
+          "start": 59.038,
+          "end": 59.288
+        },
+        {
+          "word": "community",
+          "display_index": 10,
+          "start": 59.288,
+          "end": 60.588
+        },
+        {
+          "word": "confirm",
+          "display_index": 11,
+          "start": 60.588,
+          "end": 61.428
+        },
+        {
+          "word": "their",
+          "display_index": 12,
+          "start": 61.428,
+          "end": 61.708
+        },
+        {
+          "word": "own",
+          "display_index": 13,
+          "start": 61.708,
+          "end": 62.128
+        },
+        {
+          "word": "identity",
+          "display_index": 14,
+          "start": 62.128,
+          "end": 64.128
+        },
+        {
+          "word": "who",
+          "display_index": 16,
+          "start": 64.128,
+          "end": 64.328
+        },
+        {
+          "word": "they",
+          "display_index": 17,
+          "start": 64.328,
+          "end": 64.628
+        },
+        {
+          "word": "are.",
+          "display_index": 18,
+          "start": 64.628,
+          "end": 66.128
+        }
+      ],
+      "start": 56.187,
+      "end": 66.128
+    },
+    {
+      "line": 7,
+      "english": "In the world, there are rites of passage that celebrate birth, adulthood, marriage, and death.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 66.468,
+          "end": 66.589
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 66.589,
+          "end": 66.748
+        },
+        {
+          "word": "world,",
+          "display_index": 2,
+          "start": 66.748,
+          "end": 67.129
+        },
+        {
+          "word": "there",
+          "display_index": 3,
+          "start": 67.129,
+          "end": 67.264
+        },
+        {
+          "word": "are",
+          "display_index": 4,
+          "start": 67.264,
+          "end": 67.449
+        },
+        {
+          "word": "rites",
+          "display_index": 5,
+          "start": 67.449,
+          "end": 67.829
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 67.829,
+          "end": 68.049
+        },
+        {
+          "word": "passage",
+          "display_index": 7,
+          "start": 68.049,
+          "end": 69.649
+        },
+        {
+          "word": "that",
+          "display_index": 8,
+          "start": 69.649,
+          "end": 69.949
+        },
+        {
+          "word": "celebrate",
+          "display_index": 9,
+          "start": 69.949,
+          "end": 70.629
+        },
+        {
+          "word": "birth,",
+          "display_index": 10,
+          "start": 70.629,
+          "end": 71.809
+        },
+        {
+          "word": "adulthood,",
+          "display_index": 11,
+          "start": 71.809,
+          "end": 72.889
+        },
+        {
+          "word": "marriage,",
+          "display_index": 12,
+          "start": 72.889,
+          "end": 74.87
+        },
+        {
+          "word": "and",
+          "display_index": 13,
+          "start": 74.87,
+          "end": 75.15
+        },
+        {
+          "word": "death.",
+          "display_index": 14,
+          "start": 75.15,
+          "end": 76.65
+        }
+      ],
+      "start": 66.468,
+      "end": 76.65
+    },
+    {
+      "line": 8,
+      "english": "These are events in which the whole community stands beside a person at a turning point of life and sends them on toward a new stage.",
+      "word_timings": [
+        {
+          "word": "These",
+          "display_index": 0,
+          "start": 77.25,
+          "end": 77.438
+        },
+        {
+          "word": "are",
+          "display_index": 1,
+          "start": 77.438,
+          "end": 77.65
+        },
+        {
+          "word": "events",
+          "display_index": 2,
+          "start": 77.65,
+          "end": 78.13
+        },
+        {
+          "word": "in",
+          "display_index": 3,
+          "start": 78.13,
+          "end": 78.37
+        },
+        {
+          "word": "which",
+          "display_index": 4,
+          "start": 78.37,
+          "end": 78.726
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 78.726,
+          "end": 78.87
+        },
+        {
+          "word": "whole",
+          "display_index": 6,
+          "start": 78.87,
+          "end": 79.19
+        },
+        {
+          "word": "community",
+          "display_index": 7,
+          "start": 79.19,
+          "end": 79.91
+        },
+        {
+          "word": "stands",
+          "display_index": 8,
+          "start": 79.91,
+          "end": 80.51
+        },
+        {
+          "word": "beside",
+          "display_index": 9,
+          "start": 80.51,
+          "end": 80.834
+        },
+        {
+          "word": "a",
+          "display_index": 10,
+          "start": 80.834,
+          "end": 80.99
+        },
+        {
+          "word": "person",
+          "display_index": 11,
+          "start": 80.99,
+          "end": 81.99
+        },
+        {
+          "word": "at",
+          "display_index": 12,
+          "start": 81.99,
+          "end": 82.096
+        },
+        {
+          "word": "a",
+          "display_index": 13,
+          "start": 82.096,
+          "end": 82.27
+        },
+        {
+          "word": "turning",
+          "display_index": 14,
+          "start": 82.27,
+          "end": 82.891
+        },
+        {
+          "word": "point",
+          "display_index": 15,
+          "start": 82.891,
+          "end": 83.311
+        },
+        {
+          "word": "of",
+          "display_index": 16,
+          "start": 83.311,
+          "end": 83.471
+        },
+        {
+          "word": "life",
+          "display_index": 17,
+          "start": 83.471,
+          "end": 83.931
+        },
+        {
+          "word": "and",
+          "display_index": 18,
+          "start": 83.931,
+          "end": 84.171
+        },
+        {
+          "word": "sends",
+          "display_index": 19,
+          "start": 84.171,
+          "end": 84.531
+        },
+        {
+          "word": "them",
+          "display_index": 20,
+          "start": 84.531,
+          "end": 84.791
+        },
+        {
+          "word": "on",
+          "display_index": 21,
+          "start": 84.791,
+          "end": 85.151
+        },
+        {
+          "word": "toward",
+          "display_index": 22,
+          "start": 85.151,
+          "end": 85.67
+        },
+        {
+          "word": "a",
+          "display_index": 23,
+          "start": 85.67,
+          "end": 85.811
+        },
+        {
+          "word": "new",
+          "display_index": 24,
+          "start": 85.811,
+          "end": 86.111
+        },
+        {
+          "word": "stage.",
+          "display_index": 25,
+          "start": 86.111,
+          "end": 87.451
+        }
+      ],
+      "start": 77.25,
+      "end": 87.451
+    },
+    {
+      "line": 9,
+      "english": "But the wave of globalization is making the unique cultures of each place uniform.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 87.751,
+          "end": 87.921
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 87.921,
+          "end": 88.071
+        },
+        {
+          "word": "wave",
+          "display_index": 2,
+          "start": 88.071,
+          "end": 88.471
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 88.471,
+          "end": 88.671
+        },
+        {
+          "word": "globalization",
+          "display_index": 4,
+          "start": 88.671,
+          "end": 89.853
+        },
+        {
+          "word": "is",
+          "display_index": 5,
+          "start": 89.853,
+          "end": 90.051
+        },
+        {
+          "word": "making",
+          "display_index": 6,
+          "start": 90.051,
+          "end": 90.682
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 90.682,
+          "end": 91.112
+        },
+        {
+          "word": "unique",
+          "display_index": 8,
+          "start": 91.112,
+          "end": 91.792
+        },
+        {
+          "word": "cultures",
+          "display_index": 9,
+          "start": 91.792,
+          "end": 93.012
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 93.012,
+          "end": 93.372
+        },
+        {
+          "word": "each",
+          "display_index": 11,
+          "start": 93.372,
+          "end": 93.872
+        },
+        {
+          "word": "place",
+          "display_index": 12,
+          "start": 93.872,
+          "end": 94.732
+        },
+        {
+          "word": "uniform.",
+          "display_index": 13,
+          "start": 94.732,
+          "end": 96.232
+        }
+      ],
+      "start": 87.751,
+      "end": 96.232
+    },
+    {
+      "line": 10,
+      "english": "Young people move to the cities, and the bearers of local festivals continue to decline.",
+      "word_timings": [
+        {
+          "word": "Young",
+          "display_index": 0,
+          "start": 97.552,
+          "end": 97.872
+        },
+        {
+          "word": "people",
+          "display_index": 1,
+          "start": 97.872,
+          "end": 98.513
+        },
+        {
+          "word": "move",
+          "display_index": 2,
+          "start": 98.513,
+          "end": 98.85
+        },
+        {
+          "word": "to",
+          "display_index": 3,
+          "start": 98.85,
+          "end": 99.03
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 99.03,
+          "end": 99.173
+        },
+        {
+          "word": "cities,",
+          "display_index": 5,
+          "start": 99.173,
+          "end": 100.173
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 100.173,
+          "end": 100.33
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 100.33,
+          "end": 100.473
+        },
+        {
+          "word": "bearers",
+          "display_index": 8,
+          "start": 100.473,
+          "end": 101.013
+        },
+        {
+          "word": "of",
+          "display_index": 9,
+          "start": 101.013,
+          "end": 101.153
+        },
+        {
+          "word": "local",
+          "display_index": 10,
+          "start": 101.153,
+          "end": 101.733
+        },
+        {
+          "word": "festivals",
+          "display_index": 11,
+          "start": 101.733,
+          "end": 102.593
+        },
+        {
+          "word": "continue",
+          "display_index": 12,
+          "start": 102.593,
+          "end": 103.41
+        },
+        {
+          "word": "to",
+          "display_index": 13,
+          "start": 103.41,
+          "end": 103.573
+        },
+        {
+          "word": "decline.",
+          "display_index": 14,
+          "start": 103.573,
+          "end": 104.393
+        }
+      ],
+      "start": 97.552,
+      "end": 104.393
+    },
+    {
+      "line": 11,
+      "english": "Many traditional crafts have already disappeared.",
+      "word_timings": [
+        {
+          "word": "Many",
+          "display_index": 0,
+          "start": 104.693,
+          "end": 105.173
+        },
+        {
+          "word": "traditional",
+          "display_index": 1,
+          "start": 105.173,
+          "end": 105.953
+        },
+        {
+          "word": "crafts",
+          "display_index": 2,
+          "start": 105.953,
+          "end": 106.674
+        },
+        {
+          "word": "have",
+          "display_index": 3,
+          "start": 106.674,
+          "end": 106.874
+        },
+        {
+          "word": "already",
+          "display_index": 4,
+          "start": 106.874,
+          "end": 107.614
+        },
+        {
+          "word": "disappeared.",
+          "display_index": 5,
+          "start": 107.614,
+          "end": 108.374
+        }
+      ],
+      "start": 104.693,
+      "end": 108.374
+    },
+    {
+      "line": 12,
+      "english": "On the other hand, there is also a movement to preserve such fading cultures.",
+      "word_timings": [
+        {
+          "word": "On",
+          "display_index": 0,
+          "start": 108.674,
+          "end": 108.785
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 108.785,
+          "end": 109.014
+        },
+        {
+          "word": "other",
+          "display_index": 2,
+          "start": 109.014,
+          "end": 109.294
+        },
+        {
+          "word": "hand,",
+          "display_index": 3,
+          "start": 109.294,
+          "end": 109.894
+        },
+        {
+          "word": "there",
+          "display_index": 4,
+          "start": 109.894,
+          "end": 110.082
+        },
+        {
+          "word": "is",
+          "display_index": 5,
+          "start": 110.082,
+          "end": 110.314
+        },
+        {
+          "word": "also",
+          "display_index": 6,
+          "start": 110.314,
+          "end": 110.724
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 110.724,
+          "end": 110.894
+        },
+        {
+          "word": "movement",
+          "display_index": 8,
+          "start": 110.894,
+          "end": 111.833
+        },
+        {
+          "word": "to",
+          "display_index": 9,
+          "start": 111.833,
+          "end": 111.994
+        },
+        {
+          "word": "preserve",
+          "display_index": 10,
+          "start": 111.994,
+          "end": 112.514
+        },
+        {
+          "word": "such",
+          "display_index": 11,
+          "start": 112.514,
+          "end": 112.814
+        },
+        {
+          "word": "fading",
+          "display_index": 12,
+          "start": 112.814,
+          "end": 113.294
+        },
+        {
+          "word": "cultures.",
+          "display_index": 13,
+          "start": 113.294,
+          "end": 114.055
+        }
+      ],
+      "start": 108.674,
+      "end": 114.055
+    },
+    {
+      "line": 13,
+      "english": "UNESCO registers the traditional cultures of various regions of the world as intangible heritage.",
+      "word_timings": [
+        {
+          "word": "UNESCO",
+          "display_index": 0,
+          "start": 114.055,
+          "end": 114.775
+        },
+        {
+          "word": "registers",
+          "display_index": 1,
+          "start": 114.775,
+          "end": 115.757
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 115.757,
+          "end": 115.875
+        },
+        {
+          "word": "traditional",
+          "display_index": 3,
+          "start": 115.875,
+          "end": 116.695
+        },
+        {
+          "word": "cultures",
+          "display_index": 4,
+          "start": 116.695,
+          "end": 118.415
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 118.415,
+          "end": 118.675
+        },
+        {
+          "word": "various",
+          "display_index": 6,
+          "start": 118.675,
+          "end": 119.335
+        },
+        {
+          "word": "regions",
+          "display_index": 7,
+          "start": 119.335,
+          "end": 120.055
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 120.055,
+          "end": 120.324
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 120.324,
+          "end": 120.475
+        },
+        {
+          "word": "world",
+          "display_index": 10,
+          "start": 120.475,
+          "end": 121.395
+        },
+        {
+          "word": "as",
+          "display_index": 11,
+          "start": 121.395,
+          "end": 121.695
+        },
+        {
+          "word": "intangible",
+          "display_index": 12,
+          "start": 121.695,
+          "end": 123.076
+        },
+        {
+          "word": "heritage.",
+          "display_index": 13,
+          "start": 123.076,
+          "end": 124.576
+        }
+      ],
+      "start": 114.055,
+      "end": 124.576
+    },
+    {
+      "line": 14,
+      "english": "Japanese food, Noh theater, and the making of Japanese paper are among these.",
+      "word_timings": [
+        {
+          "word": "Japanese",
+          "display_index": 0,
+          "start": 126.216,
+          "end": 127.216
+        },
+        {
+          "word": "food,",
+          "display_index": 1,
+          "start": 127.216,
+          "end": 127.876
+        },
+        {
+          "word": "Noh",
+          "display_index": 2,
+          "start": 127.876,
+          "end": 128.336
+        },
+        {
+          "word": "theater,",
+          "display_index": 3,
+          "start": 128.336,
+          "end": 129.416
+        },
+        {
+          "word": "and",
+          "display_index": 4,
+          "start": 129.416,
+          "end": 129.675
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 129.675,
+          "end": 129.817
+        },
+        {
+          "word": "making",
+          "display_index": 6,
+          "start": 129.817,
+          "end": 130.237
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 130.237,
+          "end": 130.477
+        },
+        {
+          "word": "Japanese",
+          "display_index": 8,
+          "start": 130.477,
+          "end": 131.457
+        },
+        {
+          "word": "paper",
+          "display_index": 9,
+          "start": 131.457,
+          "end": 132.449
+        },
+        {
+          "word": "are",
+          "display_index": 10,
+          "start": 132.449,
+          "end": 133.497
+        },
+        {
+          "word": "among",
+          "display_index": 11,
+          "start": 133.497,
+          "end": 134.717
+        },
+        {
+          "word": "these.",
+          "display_index": 12,
+          "start": 134.717,
+          "end": 136.217
+        }
+      ],
+      "start": 126.216,
+      "end": 136.217
+    },
+    {
+      "line": 15,
+      "english": "Tradition is not a relic of the past.",
+      "word_timings": [
+        {
+          "word": "Tradition",
+          "display_index": 0,
+          "start": 136.797,
+          "end": 137.351
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 137.351,
+          "end": 137.678
+        },
+        {
+          "word": "not",
+          "display_index": 2,
+          "start": 137.678,
+          "end": 138.656
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 138.656,
+          "end": 138.978
+        },
+        {
+          "word": "relic",
+          "display_index": 4,
+          "start": 138.978,
+          "end": 139.558
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 139.558,
+          "end": 139.806
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 139.806,
+          "end": 139.958
+        },
+        {
+          "word": "past.",
+          "display_index": 7,
+          "start": 139.958,
+          "end": 141.458
+        }
+      ],
+      "start": 136.797,
+      "end": 141.458
+    },
+    {
+      "line": 16,
+      "english": "It is a living gift that we, the people who live now, hand down to the next generation.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 141.818,
+          "end": 141.92
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 141.92,
+          "end": 142.082
+        },
+        {
+          "word": "a",
+          "display_index": 2,
+          "start": 142.082,
+          "end": 142.258
+        },
+        {
+          "word": "living",
+          "display_index": 3,
+          "start": 142.258,
+          "end": 142.898
+        },
+        {
+          "word": "gift",
+          "display_index": 4,
+          "start": 142.898,
+          "end": 143.418
+        },
+        {
+          "word": "that",
+          "display_index": 5,
+          "start": 143.418,
+          "end": 143.838
+        },
+        {
+          "word": "we,",
+          "display_index": 6,
+          "start": 143.838,
+          "end": 145.856
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 145.856,
+          "end": 146.039
+        },
+        {
+          "word": "people",
+          "display_index": 8,
+          "start": 146.039,
+          "end": 146.599
+        },
+        {
+          "word": "who",
+          "display_index": 9,
+          "start": 146.599,
+          "end": 146.959
+        },
+        {
+          "word": "live",
+          "display_index": 10,
+          "start": 146.959,
+          "end": 147.579
+        },
+        {
+          "word": "now,",
+          "display_index": 11,
+          "start": 147.579,
+          "end": 148.559
+        },
+        {
+          "word": "hand",
+          "display_index": 12,
+          "start": 148.559,
+          "end": 148.939
+        },
+        {
+          "word": "down",
+          "display_index": 13,
+          "start": 148.939,
+          "end": 149.864
+        },
+        {
+          "word": "to",
+          "display_index": 14,
+          "start": 149.864,
+          "end": 150.062
+        },
+        {
+          "word": "the",
+          "display_index": 15,
+          "start": 150.062,
+          "end": 150.219
+        },
+        {
+          "word": "next",
+          "display_index": 16,
+          "start": 150.219,
+          "end": 150.559
+        },
+        {
+          "word": "generation.",
+          "display_index": 17,
+          "start": 150.559,
+          "end": 152.059
+        }
+      ],
+      "start": 141.818,
+      "end": 152.059
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

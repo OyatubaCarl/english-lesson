@@ -1,0 +1,321 @@
+{
+  "project_root": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成",
+  "slug": "l4_my_new_friend_tom_sentence_v2",
+  "title_en": "Lesson 4  My New Friend Tom",
+  "title_ja": "新しい友達トム",
+  "chart": "taco_beat/charts/m4.js",
+  "audio": "中学生編/audio/L4-1.mp3",
+  "duration": 45.046712,
+  "lines": [
+    {
+      "start_index": 1,
+      "end_index": 8,
+      "en_words": [
+        "Today,",
+        "a",
+        "new",
+        "boy",
+        "came",
+        "to",
+        "our",
+        "class."
+      ],
+      "ja": "今日、わたしたちのクラスに新しい男の子が来ました。"
+    },
+    {
+      "start_index": 9,
+      "end_index": 12,
+      "en_words": [
+        "His",
+        "name",
+        "is",
+        "Tom."
+      ],
+      "ja": "名前はトムです。"
+    },
+    {
+      "start_index": 13,
+      "end_index": 21,
+      "en_words": [
+        "Tom",
+        "looks",
+        "very",
+        "kind,",
+        "and",
+        "his",
+        "voice",
+        "sounds",
+        "friendly."
+      ],
+      "ja": "トムはとても親切そうで、声も優しく聞こえます。"
+    },
+    {
+      "start_index": 23,
+      "end_index": 33,
+      "en_words": [
+        "At",
+        "first,",
+        "he",
+        "felt",
+        "shy,",
+        "and",
+        "he",
+        "did",
+        "not",
+        "say",
+        "much."
+      ],
+      "break_after": [
+        4
+      ],
+      "ja": "初めは恥ずかしそうで、あまり話しませんでした。"
+    },
+    {
+      "start_index": 34,
+      "end_index": 41,
+      "en_words": [
+        "But",
+        "by",
+        "lunch",
+        "time,",
+        "he",
+        "soon",
+        "got",
+        "happy."
+      ],
+      "ja": "でも昼休みには、すぐに明るくなりました。"
+    },
+    {
+      "start_index": 42,
+      "end_index": 50,
+      "en_words": [
+        "His",
+        "stories",
+        "were",
+        "funny,",
+        "and",
+        "we",
+        "all",
+        "laughed",
+        "together."
+      ],
+      "ja": "話がおもしろくて、みんなで笑いました。"
+    },
+    {
+      "start_index": 52,
+      "end_index": 63,
+      "en_words": [
+        "By",
+        "the",
+        "end",
+        "of",
+        "the",
+        "day,",
+        "Tom",
+        "and",
+        "I",
+        "became",
+        "good",
+        "friends."
+      ],
+      "break_after": [
+        5
+      ],
+      "ja": "一日の終わりには、トムとわたしは仲の良い友達になりました。"
+    },
+    {
+      "start_index": 65,
+      "end_index": 72,
+      "en_words": [
+        "On",
+        "the",
+        "way",
+        "home,",
+        "the",
+        "sky",
+        "became",
+        "dark."
+      ],
+      "ja": "帰り道、空は暗くなりました。"
+    },
+    {
+      "start_index": 73,
+      "end_index": 77,
+      "en_words": [
+        "But",
+        "I",
+        "was",
+        "very",
+        "happy."
+      ],
+      "ja": "でも、わたしはとてもうれしかったです。"
+    }
+  ],
+  "shots": [
+    {
+      "image": "scenes/01_new_boy_came.png",
+      "start": 0.0,
+      "end": 4.191,
+      "start_center": [
+        0.46,
+        0.48
+      ],
+      "end_center": [
+        0.54,
+        0.48
+      ],
+      "start_zoom": 1.03,
+      "end_zoom": 1.16,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする"
+    },
+    {
+      "image": "scenes/02_name_is_tom.png",
+      "start": 4.191,
+      "end": 7.851,
+      "start_center": [
+        0.56,
+        0.48
+      ],
+      "end_center": [
+        0.44,
+        0.48
+      ],
+      "start_zoom": 1.13,
+      "end_zoom": 1.04,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "smoothleft"
+    },
+    {
+      "image": "scenes/03_kind_friendly_voice.png",
+      "start": 7.851,
+      "end": 15.172,
+      "start_center": [
+        0.5,
+        0.43
+      ],
+      "end_center": [
+        0.5,
+        0.54
+      ],
+      "start_zoom": 1.04,
+      "end_zoom": 1.17,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "circleopen"
+    },
+    {
+      "image": "scenes/04_tom_felt_shy.png",
+      "start": 15.172,
+      "end": 18.793,
+      "start_center": [
+        0.5,
+        0.54
+      ],
+      "end_center": [
+        0.5,
+        0.45
+      ],
+      "start_zoom": 1.15,
+      "end_zoom": 1.05,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "hblur"
+    },
+    {
+      "image": "scenes/05_lunch_tom_happy.png",
+      "start": 18.793,
+      "end": 22.653,
+      "start_center": [
+        0.46,
+        0.48
+      ],
+      "end_center": [
+        0.54,
+        0.48
+      ],
+      "start_zoom": 1.03,
+      "end_zoom": 1.16,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "diagtl"
+    },
+    {
+      "image": "scenes/06_funny_stories_laughed.png",
+      "start": 22.653,
+      "end": 29.894,
+      "start_center": [
+        0.56,
+        0.48
+      ],
+      "end_center": [
+        0.44,
+        0.48
+      ],
+      "start_zoom": 1.13,
+      "end_zoom": 1.04,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "slideup"
+    },
+    {
+      "image": "scenes/07_became_good_friends.png",
+      "start": 29.894,
+      "end": 36.455,
+      "start_center": [
+        0.5,
+        0.43
+      ],
+      "end_center": [
+        0.5,
+        0.54
+      ],
+      "start_zoom": 1.04,
+      "end_zoom": 1.17,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "dissolve"
+    },
+    {
+      "image": "scenes/08_way_home_dark_sky.png",
+      "start": 36.455,
+      "end": 40.516,
+      "start_center": [
+        0.5,
+        0.54
+      ],
+      "end_center": [
+        0.5,
+        0.45
+      ],
+      "start_zoom": 1.15,
+      "end_zoom": 1.05,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "radial"
+    },
+    {
+      "image": "scenes/09_mio_very_happy.png",
+      "start": 40.516,
+      "end": 45.046712,
+      "start_center": [
+        0.46,
+        0.48
+      ],
+      "end_center": [
+        0.54,
+        0.48
+      ],
+      "start_zoom": 1.03,
+      "end_zoom": 1.16,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "pixelize"
+    }
+  ],
+  "transition_duration": 0.42,
+  "sentence_image_count": 9,
+  "line_to_scene": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ]
+}

@@ -1,0 +1,964 @@
+{
+  "lesson": "H036",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h036_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H036/candidate1-full.mp3",
+  "source_audio_sha256": "91c5e3a32b18f13050dd5b02f02c78c01360573262c0f05ea7e4d82067fd79d5",
+  "bpm": 58.46,
+  "exact_word_match": true,
+  "word_count": 142,
+  "line_count": 12,
+  "first_word_start": 7.641,
+  "last_word_end": 103.179,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Twenty-four hundred years ago, in ancient Athens, there lived a philosopher named Socrates.",
+      "word_timings": [
+        {
+          "word": "Twenty-four",
+          "display_index": 0,
+          "start": 7.641,
+          "end": 8.041
+        },
+        {
+          "word": "Twenty-four",
+          "display_index": 0,
+          "start": 8.041,
+          "end": 8.442
+        },
+        {
+          "word": "hundred",
+          "display_index": 1,
+          "start": 8.442,
+          "end": 9.102
+        },
+        {
+          "word": "years",
+          "display_index": 2,
+          "start": 9.102,
+          "end": 9.742
+        },
+        {
+          "word": "ago,",
+          "display_index": 3,
+          "start": 9.742,
+          "end": 12.202
+        },
+        {
+          "word": "in",
+          "display_index": 4,
+          "start": 12.202,
+          "end": 12.442
+        },
+        {
+          "word": "ancient",
+          "display_index": 5,
+          "start": 12.442,
+          "end": 13.082
+        },
+        {
+          "word": "Athens,",
+          "display_index": 6,
+          "start": 13.082,
+          "end": 14.603
+        },
+        {
+          "word": "there",
+          "display_index": 7,
+          "start": 14.603,
+          "end": 14.803
+        },
+        {
+          "word": "lived",
+          "display_index": 8,
+          "start": 14.803,
+          "end": 15.032
+        },
+        {
+          "word": "a",
+          "display_index": 9,
+          "start": 15.032,
+          "end": 15.183
+        },
+        {
+          "word": "philosopher",
+          "display_index": 10,
+          "start": 15.183,
+          "end": 16.803
+        },
+        {
+          "word": "named",
+          "display_index": 11,
+          "start": 16.803,
+          "end": 17.563
+        },
+        {
+          "word": "Socrates.",
+          "display_index": 12,
+          "start": 17.563,
+          "end": 19.063
+        }
+      ],
+      "start": 7.641,
+      "end": 19.063
+    },
+    {
+      "line": 2,
+      "english": "He never wrote a book.",
+      "word_timings": [
+        {
+          "word": "He",
+          "display_index": 0,
+          "start": 20.144,
+          "end": 20.324
+        },
+        {
+          "word": "never",
+          "display_index": 1,
+          "start": 20.324,
+          "end": 20.684
+        },
+        {
+          "word": "wrote",
+          "display_index": 2,
+          "start": 20.684,
+          "end": 20.953
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 20.953,
+          "end": 21.124
+        },
+        {
+          "word": "book.",
+          "display_index": 4,
+          "start": 21.124,
+          "end": 22.044
+        }
+      ],
+      "start": 20.144,
+      "end": 22.044
+    },
+    {
+      "line": 3,
+      "english": "His philosophy existed only in the dialogues he held with other people.",
+      "word_timings": [
+        {
+          "word": "His",
+          "display_index": 0,
+          "start": 22.344,
+          "end": 22.544
+        },
+        {
+          "word": "philosophy",
+          "display_index": 1,
+          "start": 22.544,
+          "end": 23.384
+        },
+        {
+          "word": "existed",
+          "display_index": 2,
+          "start": 23.384,
+          "end": 24.225
+        },
+        {
+          "word": "only",
+          "display_index": 3,
+          "start": 24.225,
+          "end": 24.805
+        },
+        {
+          "word": "in",
+          "display_index": 4,
+          "start": 24.805,
+          "end": 24.962
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 24.962,
+          "end": 25.145
+        },
+        {
+          "word": "dialogues",
+          "display_index": 6,
+          "start": 25.145,
+          "end": 25.825
+        },
+        {
+          "word": "he",
+          "display_index": 7,
+          "start": 25.825,
+          "end": 25.985
+        },
+        {
+          "word": "held",
+          "display_index": 8,
+          "start": 25.985,
+          "end": 26.405
+        },
+        {
+          "word": "with",
+          "display_index": 9,
+          "start": 26.405,
+          "end": 26.745
+        },
+        {
+          "word": "other",
+          "display_index": 10,
+          "start": 26.745,
+          "end": 27.185
+        },
+        {
+          "word": "people.",
+          "display_index": 11,
+          "start": 27.185,
+          "end": 28.685
+        }
+      ],
+      "start": 22.344,
+      "end": 28.685
+    },
+    {
+      "line": 4,
+      "english": "In Plato's account, Socrates said that an unexamined life was not worth living.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 29.025,
+          "end": 29.185
+        },
+        {
+          "word": "Plato's",
+          "display_index": 1,
+          "start": 29.185,
+          "end": 29.686
+        },
+        {
+          "word": "account,",
+          "display_index": 2,
+          "start": 29.686,
+          "end": 31.206
+        },
+        {
+          "word": "Socrates",
+          "display_index": 3,
+          "start": 31.206,
+          "end": 32.026
+        },
+        {
+          "word": "said",
+          "display_index": 4,
+          "start": 32.026,
+          "end": 32.826
+        },
+        {
+          "word": "that",
+          "display_index": 5,
+          "start": 32.826,
+          "end": 34.006
+        },
+        {
+          "word": "an",
+          "display_index": 6,
+          "start": 34.006,
+          "end": 34.246
+        },
+        {
+          "word": "unexamined",
+          "display_index": 7,
+          "start": 34.246,
+          "end": 35.127
+        },
+        {
+          "word": "life",
+          "display_index": 8,
+          "start": 35.127,
+          "end": 35.687
+        },
+        {
+          "word": "was",
+          "display_index": 9,
+          "start": 35.687,
+          "end": 35.927
+        },
+        {
+          "word": "not",
+          "display_index": 10,
+          "start": 35.927,
+          "end": 36.267
+        },
+        {
+          "word": "worth",
+          "display_index": 11,
+          "start": 36.267,
+          "end": 37.107
+        },
+        {
+          "word": "living.",
+          "display_index": 12,
+          "start": 37.107,
+          "end": 38.607
+        }
+      ],
+      "start": 29.025,
+      "end": 38.607
+    },
+    {
+      "line": 5,
+      "english": "Socrates kept asking people what virtue was.",
+      "word_timings": [
+        {
+          "word": "Socrates",
+          "display_index": 0,
+          "start": 41.148,
+          "end": 41.948
+        },
+        {
+          "word": "kept",
+          "display_index": 1,
+          "start": 41.948,
+          "end": 42.308
+        },
+        {
+          "word": "asking",
+          "display_index": 2,
+          "start": 42.308,
+          "end": 42.948
+        },
+        {
+          "word": "people",
+          "display_index": 3,
+          "start": 42.948,
+          "end": 43.568
+        },
+        {
+          "word": "what",
+          "display_index": 4,
+          "start": 43.568,
+          "end": 43.928
+        },
+        {
+          "word": "virtue",
+          "display_index": 5,
+          "start": 43.928,
+          "end": 44.588
+        },
+        {
+          "word": "was.",
+          "display_index": 6,
+          "start": 44.588,
+          "end": 45.849
+        }
+      ],
+      "start": 41.148,
+      "end": 45.849
+    },
+    {
+      "line": 6,
+      "english": "He asked what justice was.",
+      "word_timings": [
+        {
+          "word": "He",
+          "display_index": 0,
+          "start": 46.149,
+          "end": 46.429
+        },
+        {
+          "word": "asked",
+          "display_index": 1,
+          "start": 46.429,
+          "end": 46.769
+        },
+        {
+          "word": "what",
+          "display_index": 2,
+          "start": 46.769,
+          "end": 47.089
+        },
+        {
+          "word": "justice",
+          "display_index": 3,
+          "start": 47.089,
+          "end": 48.349
+        },
+        {
+          "word": "was.",
+          "display_index": 4,
+          "start": 48.349,
+          "end": 49.609
+        }
+      ],
+      "start": 46.149,
+      "end": 49.609
+    },
+    {
+      "line": 7,
+      "english": "He would claim that he himself did not know, and then question those who claimed to know.",
+      "word_timings": [
+        {
+          "word": "He",
+          "display_index": 0,
+          "start": 49.909,
+          "end": 50.089
+        },
+        {
+          "word": "would",
+          "display_index": 1,
+          "start": 50.089,
+          "end": 50.289
+        },
+        {
+          "word": "claim",
+          "display_index": 2,
+          "start": 50.289,
+          "end": 50.749
+        },
+        {
+          "word": "that",
+          "display_index": 3,
+          "start": 50.749,
+          "end": 51.09
+        },
+        {
+          "word": "he",
+          "display_index": 4,
+          "start": 51.09,
+          "end": 51.37
+        },
+        {
+          "word": "himself",
+          "display_index": 5,
+          "start": 51.37,
+          "end": 52.15
+        },
+        {
+          "word": "did",
+          "display_index": 6,
+          "start": 52.15,
+          "end": 52.39
+        },
+        {
+          "word": "not",
+          "display_index": 7,
+          "start": 52.39,
+          "end": 52.71
+        },
+        {
+          "word": "know,",
+          "display_index": 8,
+          "start": 52.71,
+          "end": 53.41
+        },
+        {
+          "word": "and",
+          "display_index": 9,
+          "start": 53.41,
+          "end": 53.57
+        },
+        {
+          "word": "then",
+          "display_index": 10,
+          "start": 53.57,
+          "end": 53.91
+        },
+        {
+          "word": "question",
+          "display_index": 11,
+          "start": 53.91,
+          "end": 54.79
+        },
+        {
+          "word": "those",
+          "display_index": 12,
+          "start": 54.79,
+          "end": 55.39
+        },
+        {
+          "word": "who",
+          "display_index": 13,
+          "start": 55.39,
+          "end": 55.53
+        },
+        {
+          "word": "claimed",
+          "display_index": 14,
+          "start": 55.53,
+          "end": 55.963
+        },
+        {
+          "word": "to",
+          "display_index": 15,
+          "start": 55.963,
+          "end": 56.15
+        },
+        {
+          "word": "know.",
+          "display_index": 16,
+          "start": 56.15,
+          "end": 57.411
+        }
+      ],
+      "start": 49.909,
+      "end": 57.411
+    },
+    {
+      "line": 8,
+      "english": "His questions slowly shook the authority of those people.",
+      "word_timings": [
+        {
+          "word": "His",
+          "display_index": 0,
+          "start": 57.711,
+          "end": 57.911
+        },
+        {
+          "word": "questions",
+          "display_index": 1,
+          "start": 57.911,
+          "end": 58.671
+        },
+        {
+          "word": "slowly",
+          "display_index": 2,
+          "start": 58.671,
+          "end": 59.351
+        },
+        {
+          "word": "shook",
+          "display_index": 3,
+          "start": 59.351,
+          "end": 59.85
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 59.85,
+          "end": 60.031
+        },
+        {
+          "word": "authority",
+          "display_index": 5,
+          "start": 60.031,
+          "end": 61.111
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 61.111,
+          "end": 61.291
+        },
+        {
+          "word": "those",
+          "display_index": 7,
+          "start": 61.291,
+          "end": 62.112
+        },
+        {
+          "word": "people.",
+          "display_index": 8,
+          "start": 62.112,
+          "end": 63.612
+        }
+      ],
+      "start": 57.711,
+      "end": 63.612
+    },
+    {
+      "line": 9,
+      "english": "In 399 BC, Socrates was accused of corrupting the young and was condemned at his trial.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 64.392,
+          "end": 64.552
+        },
+        {
+          "word": "399",
+          "display_index": 1,
+          "start": 64.552,
+          "end": 65.812
+        },
+        {
+          "word": "BC,",
+          "display_index": 2,
+          "start": 65.812,
+          "end": 67.012
+        },
+        {
+          "word": "Socrates",
+          "display_index": 3,
+          "start": 67.012,
+          "end": 68.273
+        },
+        {
+          "word": "was",
+          "display_index": 4,
+          "start": 68.273,
+          "end": 68.513
+        },
+        {
+          "word": "accused",
+          "display_index": 5,
+          "start": 68.513,
+          "end": 69.153
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 69.153,
+          "end": 69.273
+        },
+        {
+          "word": "corrupting",
+          "display_index": 7,
+          "start": 69.273,
+          "end": 69.923
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 69.923,
+          "end": 70.093
+        },
+        {
+          "word": "young",
+          "display_index": 9,
+          "start": 70.093,
+          "end": 70.553
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 70.553,
+          "end": 70.713
+        },
+        {
+          "word": "was",
+          "display_index": 11,
+          "start": 70.713,
+          "end": 70.913
+        },
+        {
+          "word": "condemned",
+          "display_index": 12,
+          "start": 70.913,
+          "end": 71.853
+        },
+        {
+          "word": "at",
+          "display_index": 13,
+          "start": 71.853,
+          "end": 72.173
+        },
+        {
+          "word": "his",
+          "display_index": 14,
+          "start": 72.173,
+          "end": 72.493
+        },
+        {
+          "word": "trial.",
+          "display_index": 15,
+          "start": 72.493,
+          "end": 73.993
+        }
+      ],
+      "start": 64.392,
+      "end": 73.993
+    },
+    {
+      "line": 10,
+      "english": "Friends urged him to flee, but he replied that escaping would betray the laws under which he had lived.",
+      "word_timings": [
+        {
+          "word": "Friends",
+          "display_index": 0,
+          "start": 74.374,
+          "end": 75.074
+        },
+        {
+          "word": "urged",
+          "display_index": 1,
+          "start": 75.074,
+          "end": 75.474
+        },
+        {
+          "word": "him",
+          "display_index": 2,
+          "start": 75.474,
+          "end": 75.62
+        },
+        {
+          "word": "to",
+          "display_index": 3,
+          "start": 75.62,
+          "end": 75.954
+        },
+        {
+          "word": "flee,",
+          "display_index": 4,
+          "start": 75.954,
+          "end": 76.674
+        },
+        {
+          "word": "but",
+          "display_index": 5,
+          "start": 76.674,
+          "end": 76.894
+        },
+        {
+          "word": "he",
+          "display_index": 6,
+          "start": 76.894,
+          "end": 77.094
+        },
+        {
+          "word": "replied",
+          "display_index": 7,
+          "start": 77.094,
+          "end": 78.075
+        },
+        {
+          "word": "that",
+          "display_index": 8,
+          "start": 78.075,
+          "end": 78.355
+        },
+        {
+          "word": "escaping",
+          "display_index": 9,
+          "start": 78.355,
+          "end": 79.135
+        },
+        {
+          "word": "would",
+          "display_index": 10,
+          "start": 79.135,
+          "end": 79.535
+        },
+        {
+          "word": "betray",
+          "display_index": 11,
+          "start": 79.535,
+          "end": 80.389
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 80.389,
+          "end": 80.575
+        },
+        {
+          "word": "laws",
+          "display_index": 13,
+          "start": 80.575,
+          "end": 81.315
+        },
+        {
+          "word": "under",
+          "display_index": 14,
+          "start": 81.315,
+          "end": 81.795
+        },
+        {
+          "word": "which",
+          "display_index": 15,
+          "start": 81.795,
+          "end": 82.055
+        },
+        {
+          "word": "he",
+          "display_index": 16,
+          "start": 82.055,
+          "end": 82.235
+        },
+        {
+          "word": "had",
+          "display_index": 17,
+          "start": 82.235,
+          "end": 82.615
+        },
+        {
+          "word": "lived.",
+          "display_index": 18,
+          "start": 82.615,
+          "end": 83.356
+        }
+      ],
+      "start": 74.374,
+      "end": 83.356
+    },
+    {
+      "line": 11,
+      "english": "He drank the hemlock and died quietly.",
+      "word_timings": [
+        {
+          "word": "He",
+          "display_index": 0,
+          "start": 83.656,
+          "end": 83.836
+        },
+        {
+          "word": "drank",
+          "display_index": 1,
+          "start": 83.836,
+          "end": 84.145
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 84.145,
+          "end": 84.316
+        },
+        {
+          "word": "hemlock",
+          "display_index": 3,
+          "start": 84.316,
+          "end": 85.776
+        },
+        {
+          "word": "and",
+          "display_index": 4,
+          "start": 85.776,
+          "end": 85.996
+        },
+        {
+          "word": "died",
+          "display_index": 5,
+          "start": 85.996,
+          "end": 86.736
+        },
+        {
+          "word": "quietly.",
+          "display_index": 6,
+          "start": 86.736,
+          "end": 88.236
+        }
+      ],
+      "start": 83.656,
+      "end": 88.236
+    },
+    {
+      "line": 12,
+      "english": "But after more than two thousand years, his question still challenges us: do we examine our own lives?",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 91.597,
+          "end": 91.877
+        },
+        {
+          "word": "after",
+          "display_index": 1,
+          "start": 91.877,
+          "end": 92.397
+        },
+        {
+          "word": "more",
+          "display_index": 2,
+          "start": 92.397,
+          "end": 92.837
+        },
+        {
+          "word": "than",
+          "display_index": 3,
+          "start": 92.837,
+          "end": 93.057
+        },
+        {
+          "word": "two",
+          "display_index": 4,
+          "start": 93.057,
+          "end": 93.437
+        },
+        {
+          "word": "thousand",
+          "display_index": 5,
+          "start": 93.437,
+          "end": 94.338
+        },
+        {
+          "word": "years,",
+          "display_index": 6,
+          "start": 94.338,
+          "end": 95.058
+        },
+        {
+          "word": "his",
+          "display_index": 7,
+          "start": 95.058,
+          "end": 95.298
+        },
+        {
+          "word": "question",
+          "display_index": 8,
+          "start": 95.298,
+          "end": 96.418
+        },
+        {
+          "word": "still",
+          "display_index": 9,
+          "start": 96.418,
+          "end": 96.958
+        },
+        {
+          "word": "challenges",
+          "display_index": 10,
+          "start": 96.958,
+          "end": 97.918
+        },
+        {
+          "word": "us:",
+          "display_index": 11,
+          "start": 97.918,
+          "end": 99.659
+        },
+        {
+          "word": "do",
+          "display_index": 12,
+          "start": 99.659,
+          "end": 99.839
+        },
+        {
+          "word": "we",
+          "display_index": 13,
+          "start": 99.839,
+          "end": 100.059
+        },
+        {
+          "word": "examine",
+          "display_index": 14,
+          "start": 100.059,
+          "end": 100.839
+        },
+        {
+          "word": "our",
+          "display_index": 15,
+          "start": 100.839,
+          "end": 101.259
+        },
+        {
+          "word": "own",
+          "display_index": 16,
+          "start": 101.259,
+          "end": 101.679
+        },
+        {
+          "word": "lives?",
+          "display_index": 17,
+          "start": 101.679,
+          "end": 103.179
+        }
+      ],
+      "start": 91.597,
+      "end": 103.179
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

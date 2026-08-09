@@ -1,0 +1,189 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H105.md",
+  "audio": "高校生編/suno_ready/generated/audio/H105/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 193.081,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9907,
+  "expected_words": 216,
+  "transcribed_words": 214,
+  "matched_words": 213,
+  "coverage": 0.9861,
+  "precision": 0.9953,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 215,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 3,
+      "length": 2,
+      "words": [
+        "seventy",
+        "two"
+      ]
+    },
+    {
+      "start": 136,
+      "length": 1,
+      "words": [
+        "still"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 136,
+      "actual_start": 134,
+      "expected": [
+        "still"
+      ],
+      "actual": [
+        "to"
+      ],
+      "actual_confidence": 0.3723,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 3,
+      "actual_start": 3,
+      "expected": [
+        "seventy",
+        "two"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "Mr. Tanaka is 72 He retired five years ago from the company where he had worked for long years After his retirement, his days have passed slowly Early each morning, he goes out to the garden And waters the flowers his late wife had grown His wife passed away three years ago from a sudden illness He still remembers the day of the funeral vividly Every Sunday he visits his wife's grave Before the stone he joins his hands and quietly prays His silent prayer is carried away by the wind Mr. Tanaka carries many regrets In his younger years he had been consumed by work And had spent little time with his family His wife never complained, but in her late years she had whispered I wish we had traveled more together Those words to linger in his heart Now Mr. Tanaka travels alone One by one he visits the places his wife had wanted to see Somehow he feels as if he is walking together with her The passage of life always comes quietly From youth to middle age, from middle age to old age, and then to farewell Mr. Tanaka, within the gently flowing time, spends his remaining days I want to finish the last chapter of my life Quietly, he says",
+  "segments": [
+    {
+      "start": 11.52,
+      "end": 15.54,
+      "text": "Mr. Tanaka is 72"
+    },
+    {
+      "start": 17.88,
+      "end": 23.78,
+      "text": "He retired five years ago from the company where he had worked for long years"
+    },
+    {
+      "start": 23.78,
+      "end": 30.32,
+      "text": "After his retirement, his days have passed slowly"
+    },
+    {
+      "start": 34.0,
+      "end": 39.64,
+      "text": "Early each morning, he goes out to the garden"
+    },
+    {
+      "start": 39.64,
+      "end": 45.1,
+      "text": "And waters the flowers his late wife had grown"
+    },
+    {
+      "start": 45.78,
+      "end": 51.76,
+      "text": "His wife passed away three years ago from a sudden illness"
+    },
+    {
+      "start": 51.76,
+      "end": 58.1,
+      "text": "He still remembers the day of the funeral vividly"
+    },
+    {
+      "start": 60.62,
+      "end": 65.48,
+      "text": "Every Sunday he visits his wife's grave"
+    },
+    {
+      "start": 65.48,
+      "end": 70.76,
+      "text": "Before the stone he joins his hands and quietly prays"
+    },
+    {
+      "start": 71.86,
+      "end": 77.8,
+      "text": "His silent prayer is carried away by the wind"
+    },
+    {
+      "start": 77.8,
+      "end": 82.4,
+      "text": "Mr. Tanaka carries many regrets"
+    },
+    {
+      "start": 83.68,
+      "end": 89.8,
+      "text": "In his younger years he had been consumed by work"
+    },
+    {
+      "start": 89.8,
+      "end": 95.16,
+      "text": "And had spent little time with his family"
+    },
+    {
+      "start": 95.8,
+      "end": 103.02,
+      "text": "His wife never complained, but in her late years she had whispered"
+    },
+    {
+      "start": 103.02,
+      "end": 107.36,
+      "text": "I wish we had traveled more together"
+    },
+    {
+      "start": 120.54,
+      "end": 125.98,
+      "text": "Those words to linger in his heart"
+    },
+    {
+      "start": 125.98,
+      "end": 132.12,
+      "text": "Now Mr. Tanaka travels alone"
+    },
+    {
+      "start": 133.24,
+      "end": 140.12,
+      "text": "One by one he visits the places his wife had wanted to see"
+    },
+    {
+      "start": 140.12,
+      "end": 145.32,
+      "text": "Somehow he feels as if he is walking together with her"
+    },
+    {
+      "start": 145.98,
+      "end": 151.04,
+      "text": "The passage of life always comes quietly"
+    },
+    {
+      "start": 153.04,
+      "end": 163.62,
+      "text": "From youth to middle age, from middle age to old age, and then to farewell"
+    },
+    {
+      "start": 165.56,
+      "end": 172.96,
+      "text": "Mr. Tanaka, within the gently flowing time, spends his remaining days"
+    },
+    {
+      "start": 172.96,
+      "end": 178.46,
+      "text": "I want to finish the last chapter of my life"
+    },
+    {
+      "start": 180.24,
+      "end": 182.26,
+      "text": "Quietly, he says"
+    }
+  ]
+}

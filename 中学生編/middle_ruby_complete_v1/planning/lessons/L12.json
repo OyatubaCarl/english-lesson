@@ -1,0 +1,646 @@
+{
+  "lesson": 12,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L12/planning/lesson.json",
+  "title_en": "Lesson 12  Making a Cake",
+  "title_ja": "ケーキ作り",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 8,
+  "lines": [
+    {
+      "line": 1,
+      "english": "On Sunday afternoon, my mother was very busy in the kitchen.",
+      "source_ja": "日曜日の午後、母は台所でとても忙しそうでした。",
+      "display_ja": "日曜日の午後、母は台所でとても忙しそうでした。",
+      "corrected_translation": false,
+      "mixed": "日曜日の午後、母は台所でとても busy そうでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "日曜日の午後、母は台所でとても ",
+          "parts": [
+            {
+              "text": "日曜",
+              "ruby": "にちよう"
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "午後",
+              "ruby": "ごご"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "台所",
+              "ruby": "だいどころ"
+            },
+            {
+              "text": "でとても",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "busy",
+          "ruby": "忙し"
+        },
+        {
+          "type": "ja",
+          "text": " そうでした。",
+          "parts": [
+            {
+              "text": "そうでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "busy",
+          "canonical_word": "busy",
+          "meaning": "忙しい"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "busy",
+          "reading": "忙し",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "busy",
+          "canonical_meaning": "忙しい"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "english": "In a small voice, I asked, “Shall I help you?”",
+      "source_ja": "「お手伝いしようか？」と小さな声で聞きました。",
+      "display_ja": "「お手伝いしようか？」と小さな声で聞きました。",
+      "corrected_translation": false,
+      "mixed": "「お手伝いしようか？」と小さな声で聞きました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「お手伝いしようか？」と小さな声で聞きました。",
+          "parts": [
+            {
+              "text": "「お",
+              "ruby": ""
+            },
+            {
+              "text": "手伝",
+              "ruby": "てつだ"
+            },
+            {
+              "text": "いしようか？」と",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            },
+            {
+              "text": "声",
+              "ruby": "こえ"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "聞",
+              "ruby": "き"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 3,
+      "english": "She smiled and said, “Thank you. Shall we make a cake together?”",
+      "source_ja": "母はにっこり笑って「ありがとう。一緒にケーキを作ろうか？」と言ってくれました。",
+      "display_ja": "母はにっこり笑って「ありがとう。一緒にケーキを作ろうか？」と言ってくれました。",
+      "corrected_translation": false,
+      "mixed": "母はにっこり笑って「ありがとう。一緒に cake を作ろうか？」と言ってくれました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "母はにっこり笑って「ありがとう。一緒に ",
+          "parts": [
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "はにっこり",
+              "ruby": ""
+            },
+            {
+              "text": "笑",
+              "ruby": "わら"
+            },
+            {
+              "text": "って「ありがとう。",
+              "ruby": ""
+            },
+            {
+              "text": "一緒",
+              "ruby": "いっしょ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "cake",
+          "ruby": "ケーキ"
+        },
+        {
+          "type": "ja",
+          "text": " を作ろうか？」と言ってくれました。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "作",
+              "ruby": "つく"
+            },
+            {
+              "text": "ろうか？」と",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "ってくれました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "cake",
+          "canonical_word": "cake",
+          "meaning": "ケーキ"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "cake",
+          "reading": "ケーキ",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "cake",
+          "canonical_meaning": "ケーキ"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "We carefully put fresh eggs, sugar, and flour into a big bowl.",
+      "source_ja": "新鮮な卵と砂糖、小麦粉を大きなボウルにそっと入れました。",
+      "display_ja": "新鮮な卵と砂糖、小麦粉を大きなボウルにそっと入れました。",
+      "corrected_translation": false,
+      "mixed": "新鮮な卵と sugar、 flour を大きな bowl にそっと put しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "新鮮な卵と ",
+          "parts": [
+            {
+              "text": "新鮮",
+              "ruby": "しんせん"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "卵",
+              "ruby": "たまご"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "sugar",
+          "ruby": "砂糖"
+        },
+        {
+          "type": "ja",
+          "text": "、 ",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "flour",
+          "ruby": "小麦粉"
+        },
+        {
+          "type": "ja",
+          "text": " を大きな ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "大",
+              "ruby": "おお"
+            },
+            {
+              "text": "きな",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "bowl",
+          "ruby": "ボウル"
+        },
+        {
+          "type": "ja",
+          "text": " にそっと ",
+          "parts": [
+            {
+              "text": "にそっと",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "put",
+          "ruby": "入れました"
+        },
+        {
+          "type": "ja",
+          "text": " しました",
+          "parts": [
+            {
+              "text": "しました",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "put",
+          "canonical_word": "put",
+          "meaning": "入れる"
+        },
+        {
+          "english": "sugar",
+          "canonical_word": "sugar",
+          "meaning": "砂糖"
+        },
+        {
+          "english": "flour",
+          "canonical_word": "flour",
+          "meaning": "小麦粉"
+        },
+        {
+          "english": "bowl",
+          "canonical_word": "bowl",
+          "meaning": "ボウル"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "sugar",
+          "reading": "砂糖",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "sugar",
+          "canonical_meaning": "砂糖"
+        },
+        {
+          "english": "flour",
+          "reading": "小麦粉",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "flour",
+          "canonical_meaning": "小麦粉"
+        },
+        {
+          "english": "bowl",
+          "reading": "ボウル",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "bowl",
+          "canonical_meaning": "ボウル"
+        },
+        {
+          "english": "put",
+          "reading": "入れました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "put",
+          "canonical_meaning": "入れる"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "As we mixed slowly, a sweet smell filled the room.",
+      "source_ja": "ゆっくり混ぜていると、部屋中に甘い香りが広がっていきました。",
+      "display_ja": "ゆっくり混ぜていると、部屋中に甘い香りが広がっていきました。",
+      "corrected_translation": false,
+      "mixed": "ゆっくり mixed していると、部屋中に甘い香りが広がりました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ゆっくり ",
+          "parts": [
+            {
+              "text": "ゆっくり",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "mixed",
+          "ruby": "混ぜる"
+        },
+        {
+          "type": "ja",
+          "text": " していると、部屋中に甘い香りが広がりました。",
+          "parts": [
+            {
+              "text": "していると、",
+              "ruby": ""
+            },
+            {
+              "text": "部屋",
+              "ruby": "へや"
+            },
+            {
+              "text": "中",
+              "ruby": "ちゅう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "甘",
+              "ruby": "あま"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "香",
+              "ruby": "かお"
+            },
+            {
+              "text": "りが",
+              "ruby": ""
+            },
+            {
+              "text": "広",
+              "ruby": "ひろ"
+            },
+            {
+              "text": "がりました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "mixed",
+          "canonical_word": "mix",
+          "meaning": "混ぜる"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "mixed",
+          "reading": "混ぜる",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "mix",
+          "canonical_meaning": "混ぜる"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "Soon, my father came home.",
+      "source_ja": "そのうち父が帰ってきました。",
+      "display_ja": "そのうち父が帰ってきました。",
+      "corrected_translation": false,
+      "mixed": "そのうち父が帰ってきました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "そのうち父が帰ってきました。",
+          "parts": [
+            {
+              "text": "そのうち",
+              "ruby": ""
+            },
+            {
+              "text": "父",
+              "ruby": "ちち"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "帰",
+              "ruby": "かえ"
+            },
+            {
+              "text": "ってきました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 7,
+      "english": "“Shall we eat now?” he said.",
+      "source_ja": "「さあ食べようか」と父が言いました。",
+      "display_ja": "「さあ食べようか」と父が言いました。",
+      "corrected_translation": false,
+      "mixed": "「さあ食べようか」と父が言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「さあ食べようか」と父が言いました。",
+          "parts": [
+            {
+              "text": "「さあ",
+              "ruby": ""
+            },
+            {
+              "text": "食",
+              "ruby": "た"
+            },
+            {
+              "text": "べようか」と",
+              "ruby": ""
+            },
+            {
+              "text": "父",
+              "ruby": "ちち"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 8,
+      "english": "We all shared the warm cake together.",
+      "source_ja": "温かいケーキを家族みんなで分け合いました。",
+      "display_ja": "温かいケーキを家族みんなで分け合いました。",
+      "corrected_translation": false,
+      "mixed": "温かい cake を家族みんなで分け合いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "温かい ",
+          "parts": [
+            {
+              "text": "温",
+              "ruby": "あたた"
+            },
+            {
+              "text": "かい",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "cake",
+          "ruby": "ケーキ"
+        },
+        {
+          "type": "ja",
+          "text": " を家族みんなで分け合いました。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "みんなで",
+              "ruby": ""
+            },
+            {
+              "text": "分け合",
+              "ruby": "わけあ"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "cake",
+          "canonical_word": "cake",
+          "meaning": "ケーキ"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "cake",
+          "reading": "ケーキ",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "cake",
+          "canonical_meaning": "ケーキ"
+        }
+      ]
+    }
+  ]
+}

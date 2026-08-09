@@ -1,0 +1,245 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H063.md",
+  "audio": "高校生編/suno_ready/generated/audio/H063/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 174.361,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9958,
+  "expected_words": 239,
+  "transcribed_words": 238,
+  "matched_words": 234,
+  "coverage": 0.9791,
+  "precision": 0.9832,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 238,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 2,
+      "length": 2,
+      "words": [
+        "twenty",
+        "six"
+      ]
+    },
+    {
+      "start": 156,
+      "length": 1,
+      "words": [
+        "bonds"
+      ]
+    },
+    {
+      "start": 205,
+      "length": 1,
+      "words": [
+        "sixty"
+      ]
+    },
+    {
+      "start": 235,
+      "length": 1,
+      "words": [
+        "concern"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 156,
+      "actual_start": 156,
+      "expected": [
+        "bonds"
+      ],
+      "actual": [
+        "bond"
+      ],
+      "actual_confidence": 0.6349,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 235,
+      "actual_start": 234,
+      "expected": [
+        "concern"
+      ],
+      "actual": [
+        "concerned"
+      ],
+      "actual_confidence": 0.9092,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 64,
+      "actual_start": 62,
+      "expected": [],
+      "actual": [
+        "believed",
+        "she"
+      ],
+      "actual_confidence": 0.5439
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 2,
+      "actual_start": 2,
+      "expected": [
+        "twenty",
+        "six"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 205,
+      "actual_start": 205,
+      "expected": [
+        "sixty"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "In 1960, a 26-year-old English woman named Jane Goodall walked alone into the forest of Tanzania in East Africa Her aim was to observe wild chimpanzees in their own natural environment In those days it was almost unprecedented for a woman to enter the interior of Africa by herself. She did not even have a university degree, but the paleontologist Louis Leakey believed She believed in her passion and patience and supported her In the forest of Gombe, she sat for months without showing herself deep among the trees After a while, the chimpanzees stopped fearing her and began to show her glimpses of their daily lives Her greatest discovery was the observation that chimpanzees made twigs into tools For catching termites to the world of science Which had until then believed that only humans used tools This came as a great shock Goodall also showed that chimpanzees had emotions similar To those of humans, family bond, sadness and conflict Her observations redrew from the very ground The line between humanity and other animals In her later years, Goodall devoted herself To the conservation of wildlife The youth program she founded Called Roots and Shoots has become a starting point for young people In over 60 countries to take on environmental issues in their own neighborhoods Hope lies in action, her words remain Even now, a steady encouragement For the many young people who carry Concerned for the future",
+  "segments": [
+    {
+      "start": 5.24,
+      "end": 11.28,
+      "text": "In 1960, a 26-year-old English woman named Jane"
+    },
+    {
+      "start": 12.0,
+      "end": 18.94,
+      "text": "Goodall walked alone into the forest of Tanzania in East Africa"
+    },
+    {
+      "start": 20.0,
+      "end": 27.98,
+      "text": "Her aim was to observe wild chimpanzees in their own natural environment"
+    },
+    {
+      "start": 30.68,
+      "end": 39.86,
+      "text": "In those days it was almost unprecedented for a woman to enter the interior of Africa"
+    },
+    {
+      "start": 40.58,
+      "end": 42.04,
+      "text": "by herself."
+    },
+    {
+      "start": 43.98,
+      "end": 52.58,
+      "text": "She did not even have a university degree, but the paleontologist Louis Leakey believed"
+    },
+    {
+      "start": 52.58,
+      "end": 57.02,
+      "text": "She believed in her passion and patience and supported her"
+    },
+    {
+      "start": 58.28,
+      "end": 67.34,
+      "text": "In the forest of Gombe, she sat for months without showing herself deep among the trees"
+    },
+    {
+      "start": 68.58,
+      "end": 78.7,
+      "text": "After a while, the chimpanzees stopped fearing her and began to show her glimpses of their daily lives"
+    },
+    {
+      "start": 78.7,
+      "end": 86.9,
+      "text": "Her greatest discovery was the observation that chimpanzees made twigs into tools"
+    },
+    {
+      "start": 86.9,
+      "end": 92.52,
+      "text": "For catching termites to the world of science"
+    },
+    {
+      "start": 92.52,
+      "end": 98.22,
+      "text": "Which had until then believed that only humans used tools"
+    },
+    {
+      "start": 98.22,
+      "end": 100.78,
+      "text": "This came as a great shock"
+    },
+    {
+      "start": 102.02,
+      "end": 107.3,
+      "text": "Goodall also showed that chimpanzees had emotions similar"
+    },
+    {
+      "start": 107.3,
+      "end": 112.86,
+      "text": "To those of humans, family bond, sadness and conflict"
+    },
+    {
+      "start": 112.86,
+      "end": 116.3,
+      "text": "Her observations redrew from the very ground"
+    },
+    {
+      "start": 116.86,
+      "end": 120.02,
+      "text": "The line between humanity and other animals"
+    },
+    {
+      "start": 120.02,
+      "end": 123.88,
+      "text": "In her later years, Goodall devoted herself"
+    },
+    {
+      "start": 123.88,
+      "end": 128.64,
+      "text": "To the conservation of wildlife"
+    },
+    {
+      "start": 131.18,
+      "end": 133.86,
+      "text": "The youth program she founded"
+    },
+    {
+      "start": 133.86,
+      "end": 140.08,
+      "text": "Called Roots and Shoots has become a starting point for young people"
+    },
+    {
+      "start": 140.86,
+      "end": 149.94,
+      "text": "In over 60 countries to take on environmental issues in their own neighborhoods"
+    },
+    {
+      "start": 151.0,
+      "end": 155.9,
+      "text": "Hope lies in action, her words remain"
+    },
+    {
+      "start": 155.9,
+      "end": 160.26,
+      "text": "Even now, a steady encouragement"
+    },
+    {
+      "start": 160.9,
+      "end": 164.8,
+      "text": "For the many young people who carry"
+    },
+    {
+      "start": 166.12,
+      "end": 168.7,
+      "text": "Concerned for the future"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H133.md",
+  "audio": "高校生編/suno_ready/generated/audio/H133/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 164.68,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0043,
+  "expected_words": 235,
+  "transcribed_words": 236,
+  "matched_words": 234,
+  "coverage": 0.9957,
+  "precision": 0.9915,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 234,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 68,
+      "length": 1,
+      "words": [
+        "postwar"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 68,
+      "actual_start": 68,
+      "expected": [
+        "postwar"
+      ],
+      "actual": [
+        "post",
+        "war"
+      ],
+      "actual_confidence": 0.9226,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "In a democratic nation, the Constitution functions as the supreme law. All laws are placed under it, and laws that violate it are declared unconstitutional and invalid. The Japanese Constitution came into force. In 1947, because it was drafted under foreign occupation, there is criticism that it is an imposed constitution. At the same time, it is also a fact that it has supported the peace and prosperity of post-war Japan. Amendment requires the support of two-thirds of the Diet and a national referendum For this reason, it has never once been amended Debate over constitutional revision has continued for many years The focus is Article 9, the clause renouncing war Supporters argue that amendment is needed to deal with the changing security environment Opponents insist that pacifism must be retained Poll results have swung with the times There is a survey suggesting younger generations tend to support revision But among the elderly, more cautious opinions are common The debate over revision requires intellectual honesty Rather than vaguely wanting to change or vaguely wanting to preserve We should discuss specific articles And a specific vision of the nation The Constitution does not belong to any one group It is born and can be changed through the will of the people Democracy functions only through the participation of each citizen The debate over the Constitution is the most fundamental dialogue That decides the future of our nation",
+  "segments": [
+    {
+      "start": 6.9,
+      "end": 13.88,
+      "text": "In a democratic nation, the Constitution functions as the supreme law."
+    },
+    {
+      "start": 14.5,
+      "end": 24.78,
+      "text": "All laws are placed under it, and laws that violate it are declared unconstitutional and invalid."
+    },
+    {
+      "start": 25.36,
+      "end": 29.66,
+      "text": "The Japanese Constitution came into force."
+    },
+    {
+      "start": 30.0,
+      "end": 44.52,
+      "text": "In 1947, because it was drafted under foreign occupation, there is criticism that it is an imposed constitution."
+    },
+    {
+      "start": 44.76,
+      "end": 54.14,
+      "text": "At the same time, it is also a fact that it has supported the peace and prosperity of post-war Japan."
+    },
+    {
+      "start": 55.38,
+      "end": 62.62,
+      "text": "Amendment requires the support of two-thirds of the Diet and a national referendum"
+    },
+    {
+      "start": 62.62,
+      "end": 66.9,
+      "text": "For this reason, it has never once been amended"
+    },
+    {
+      "start": 66.9,
+      "end": 72.96,
+      "text": "Debate over constitutional revision has continued for many years"
+    },
+    {
+      "start": 72.96,
+      "end": 78.44,
+      "text": "The focus is Article 9, the clause renouncing war"
+    },
+    {
+      "start": 81.26,
+      "end": 87.6,
+      "text": "Supporters argue that amendment is needed to deal with the changing security environment"
+    },
+    {
+      "start": 87.6,
+      "end": 92.6,
+      "text": "Opponents insist that pacifism must be retained"
+    },
+    {
+      "start": 92.6,
+      "end": 96.8,
+      "text": "Poll results have swung with the times"
+    },
+    {
+      "start": 96.8,
+      "end": 103.84,
+      "text": "There is a survey suggesting younger generations tend to support revision"
+    },
+    {
+      "start": 103.84,
+      "end": 111.12,
+      "text": "But among the elderly, more cautious opinions are common"
+    },
+    {
+      "start": 111.12,
+      "end": 116.58,
+      "text": "The debate over revision requires intellectual honesty"
+    },
+    {
+      "start": 116.58,
+      "end": 121.5,
+      "text": "Rather than vaguely wanting to change or vaguely wanting to preserve"
+    },
+    {
+      "start": 121.5,
+      "end": 125.68,
+      "text": "We should discuss specific articles"
+    },
+    {
+      "start": 125.68,
+      "end": 130.36,
+      "text": "And a specific vision of the nation"
+    },
+    {
+      "start": 130.36,
+      "end": 135.66,
+      "text": "The Constitution does not belong to any one group"
+    },
+    {
+      "start": 135.66,
+      "end": 141.6,
+      "text": "It is born and can be changed through the will of the people"
+    },
+    {
+      "start": 141.6,
+      "end": 149.64,
+      "text": "Democracy functions only through the participation of each citizen"
+    },
+    {
+      "start": 151.32,
+      "end": 158.92,
+      "text": "The debate over the Constitution is the most fundamental dialogue"
+    },
+    {
+      "start": 160.98,
+      "end": 164.68,
+      "text": "That decides the future of our nation"
+    }
+  ]
+}

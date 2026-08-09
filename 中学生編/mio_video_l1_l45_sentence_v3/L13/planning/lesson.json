@@ -1,0 +1,200 @@
+{
+  "project_root": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成",
+  "audio": "taco_beat/songs/m13.mp3",
+  "chart": "taco_beat/charts/m13.js",
+  "title_en": "Lesson 13  Family Hobbies",
+  "title_ja": "家族の趣味",
+  "title_position": [470, 145],
+  "title_ja_position": [470, 225],
+  "slug": "l13_family_hobbies_sentence_v3",
+  "duration": 57.190748,
+  "transition_duration": 0.32,
+  "sentence_image_count": 10,
+  "line_to_scene": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "lines": [
+    {
+      "start_index": 1,
+      "end_index": 17,
+      "en_words": ["On", "Sunday", "evening,", "my", "family", "sat", "at", "the", "kitchen", "table", "and", "began", "to", "talk", "about", "our", "hobbies."],
+      "break_after": [9],
+      "ja": "日曜日の夜、家族みんなで食卓を囲んで趣味の話をしました。"
+    },
+    {
+      "start_index": 18,
+      "end_index": 24,
+      "en_words": ["Everyone", "has", "something", "in", "their", "free", "time."],
+      "ja": "それぞれ、自由な時間に楽しんでいることがあります。"
+    },
+    {
+      "start_index": 26,
+      "end_index": 31,
+      "en_words": ["My", "favorite", "hobby", "is", "reading", "books."],
+      "ja": "わたしの好きな趣味は読書です。"
+    },
+    {
+      "start_index": 32,
+      "end_index": 40,
+      "en_words": ["When", "I", "enter", "a", "story,", "I", "forget", "the", "time."],
+      "ja": "物語の世界に入ると、時間がたつのを忘れてしまいます。"
+    },
+    {
+      "start_index": 41,
+      "end_index": 46,
+      "en_words": ["My", "sister", "loves", "painting", "and", "singing."],
+      "ja": "妹は絵を描いたり歌ったりするのが大好きです。"
+    },
+    {
+      "start_index": 47,
+      "end_index": 52,
+      "en_words": ["My", "brother", "enjoys", "collecting", "old", "stamps."],
+      "ja": "兄は古い切手を集めるのが趣味です。"
+    },
+    {
+      "start_index": 53,
+      "end_index": 64,
+      "en_words": ["“This", "one", "was", "from", "Grandfather,”", "he", "said,", "showing", "each", "one", "with", "care."],
+      "break_after": [6],
+      "ja": "「これはおじいちゃんがくれたんだ」と、一枚一枚大事そうに見せてくれました。"
+    },
+    {
+      "start_index": 65,
+      "end_index": 74,
+      "en_words": ["After", "finishing", "dinner,", "I", "often", "begin", "reading", "my", "favorite", "book."],
+      "break_after": [3],
+      "ja": "夕ご飯を食べ終わると、わたしはよくお気に入りの本を読み始めます。"
+    },
+    {
+      "start_index": 75,
+      "end_index": 87,
+      "en_words": ["Enjoying", "a", "hobby", "with", "my", "family", "is", "a", "very", "important", "time", "for", "me."],
+      "break_after": [5],
+      "ja": "家族と趣味を楽しむ時間は、わたしにとってとても大切です。"
+    },
+    {
+      "start_index": 88,
+      "end_index": 91,
+      "en_words": ["Thank", "you", "for", "watching."],
+      "ja": "見てくれてありがとう。"
+    }
+  ],
+  "shots": [
+    {
+      "image": "scenes/01_family_talks_hobbies.png",
+      "start": 0.0,
+      "end": 9.962,
+      "start_center": [0.36, 0.5],
+      "end_center": [0.64, 0.49],
+      "start_zoom": 1.08,
+      "end_zoom": 1.07,
+      "intent": "5人の食卓を左から右へゆっくり見渡し会話の輪を示す"
+    },
+    {
+      "image": "scenes/02_everyone_free_time.png",
+      "start": 9.962,
+      "end": 16.045,
+      "start_center": [0.5, 0.52],
+      "end_center": [0.5, 0.43],
+      "start_zoom": 1.12,
+      "end_zoom": 1.03,
+      "transition": "circleopen",
+      "transition_duration": 0.28,
+      "intent": "家族から各自の小さな趣味イメージへゆっくり広げる"
+    },
+    {
+      "image": "scenes/03_mio_reading_hobby.png",
+      "start": 16.045,
+      "end": 19.344,
+      "start_center": [0.5, 0.51],
+      "end_center": [0.5, 0.47],
+      "start_zoom": 1.04,
+      "end_zoom": 1.11,
+      "transition": "smoothleft",
+      "transition_duration": 0.26,
+      "intent": "本を読むミオの表情と手元へ寄る"
+    },
+    {
+      "image": "scenes/04_enter_story_forget_time.png",
+      "start": 19.344,
+      "end": 23.201,
+      "start_center": [0.48, 0.5],
+      "end_center": [0.58, 0.44],
+      "start_zoom": 1.07,
+      "end_zoom": 1.12,
+      "transition": "hblur",
+      "transition_duration": 0.26,
+      "intent": "現実の本から広がる物語世界へ視線を入れていく"
+    },
+    {
+      "image": "scenes/05_saki_painting_singing.png",
+      "start": 23.201,
+      "end": 25.883,
+      "start_center": [0.4, 0.5],
+      "end_center": [0.6, 0.48],
+      "start_zoom": 1.09,
+      "end_zoom": 1.08,
+      "transition": "smoothleft",
+      "transition_duration": 0.22,
+      "intent": "サキの絵筆から歌う表情へ横に追う"
+    },
+    {
+      "image": "scenes/06_kenta_collects_stamps.png",
+      "start": 25.883,
+      "end": 30.806,
+      "start_center": [0.5, 0.54],
+      "end_center": [0.5, 0.46],
+      "start_zoom": 1.05,
+      "end_zoom": 1.13,
+      "transition": "dissolve",
+      "transition_duration": 0.24,
+      "intent": "切手アルバムからケンタの集中した表情へ寄る"
+    },
+    {
+      "image": "scenes/07_stamp_from_grandfather.png",
+      "start": 30.806,
+      "end": 38.927,
+      "start_center": [0.6, 0.49],
+      "end_center": [0.4, 0.49],
+      "start_zoom": 1.1,
+      "end_zoom": 1.07,
+      "transition": "dissolve",
+      "transition_duration": 0.28,
+      "intent": "ケンタが示す一枚の切手から聞くミオへゆっくり視線を移す"
+    },
+    {
+      "image": "scenes/08_after_dinner_reading.png",
+      "start": 38.927,
+      "end": 46.129,
+      "start_center": [0.38, 0.54],
+      "end_center": [0.57, 0.47],
+      "start_zoom": 1.1,
+      "end_zoom": 1.04,
+      "transition": "smoothleft",
+      "transition_duration": 0.28,
+      "intent": "片づけた食卓から読み始めるミオへ視線を導く"
+    },
+    {
+      "image": "scenes/09_family_hobby_time.png",
+      "start": 46.129,
+      "end": 55.19,
+      "start_center": [0.34, 0.49],
+      "end_center": [0.66, 0.49],
+      "start_zoom": 1.08,
+      "end_zoom": 1.06,
+      "transition": "circleopen",
+      "transition_duration": 0.3,
+      "intent": "同じ部屋で趣味を楽しむ5人をゆっくり見渡す"
+    },
+    {
+      "image": "scenes/10_thank_you.png",
+      "start": 55.19,
+      "end": 57.190748,
+      "start_center": [0.5, 0.48],
+      "end_center": [0.5, 0.47],
+      "start_zoom": 1.12,
+      "end_zoom": 1.04,
+      "transition": "hblur",
+      "transition_duration": 0.22,
+      "intent": "手を振るミオとポチから山村の夕景へ短く引いて締める"
+    }
+  ]
+}

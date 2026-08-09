@@ -1,0 +1,1082 @@
+{
+  "lesson": "H029",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h029_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H029/candidate2-full.mp3",
+  "source_audio_sha256": "374d7def5d8f8b98d467f87203cae9871376d06247d8af837f6af21a8e698b40",
+  "bpm": 85.0,
+  "exact_word_match": true,
+  "word_count": 159,
+  "line_count": 14,
+  "first_word_start": 13.302,
+  "last_word_end": 140.32,
+  "lines": [
+    {
+      "line": 1,
+      "english": "What is the oldest tree in the world?",
+      "word_timings": [
+        {
+          "word": "What",
+          "display_index": 0,
+          "start": 13.302,
+          "end": 14.072
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 14.072,
+          "end": 14.399
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 14.399,
+          "end": 14.642
+        },
+        {
+          "word": "oldest",
+          "display_index": 3,
+          "start": 14.642,
+          "end": 15.342
+        },
+        {
+          "word": "tree",
+          "display_index": 4,
+          "start": 15.342,
+          "end": 16.202
+        },
+        {
+          "word": "in",
+          "display_index": 5,
+          "start": 16.202,
+          "end": 17.144
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 17.144,
+          "end": 17.342
+        },
+        {
+          "word": "world?",
+          "display_index": 7,
+          "start": 17.342,
+          "end": 18.663
+        }
+      ],
+      "start": 13.302,
+      "end": 18.663
+    },
+    {
+      "line": 2,
+      "english": "Many people think of a great oak.",
+      "word_timings": [
+        {
+          "word": "Many",
+          "display_index": 0,
+          "start": 18.963,
+          "end": 19.423
+        },
+        {
+          "word": "people",
+          "display_index": 1,
+          "start": 19.423,
+          "end": 20.123
+        },
+        {
+          "word": "think",
+          "display_index": 2,
+          "start": 20.123,
+          "end": 20.763
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 20.763,
+          "end": 20.93
+        },
+        {
+          "word": "a",
+          "display_index": 4,
+          "start": 20.93,
+          "end": 21.063
+        },
+        {
+          "word": "great",
+          "display_index": 5,
+          "start": 21.063,
+          "end": 21.683
+        },
+        {
+          "word": "oak.",
+          "display_index": 6,
+          "start": 21.683,
+          "end": 23.183
+        }
+      ],
+      "start": 18.963,
+      "end": 23.183
+    },
+    {
+      "line": 3,
+      "english": "But there is an ancient tree far older than any oak.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 23.903,
+          "end": 24.143
+        },
+        {
+          "word": "there",
+          "display_index": 1,
+          "start": 24.143,
+          "end": 24.652
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 24.652,
+          "end": 25.744
+        },
+        {
+          "word": "an",
+          "display_index": 3,
+          "start": 25.744,
+          "end": 25.964
+        },
+        {
+          "word": "ancient",
+          "display_index": 4,
+          "start": 25.964,
+          "end": 26.924
+        },
+        {
+          "word": "tree",
+          "display_index": 5,
+          "start": 26.924,
+          "end": 29.484
+        },
+        {
+          "word": "far",
+          "display_index": 6,
+          "start": 29.484,
+          "end": 30.324
+        },
+        {
+          "word": "older",
+          "display_index": 7,
+          "start": 30.324,
+          "end": 31.244
+        },
+        {
+          "word": "than",
+          "display_index": 8,
+          "start": 31.244,
+          "end": 31.745
+        },
+        {
+          "word": "any",
+          "display_index": 9,
+          "start": 31.745,
+          "end": 32.945
+        },
+        {
+          "word": "oak.",
+          "display_index": 10,
+          "start": 32.945,
+          "end": 34.445
+        }
+      ],
+      "start": 23.903,
+      "end": 34.445
+    },
+    {
+      "line": 4,
+      "english": "High in the mountains of California, a bristlecone pine has survived for over four thousand years.",
+      "word_timings": [
+        {
+          "word": "High",
+          "display_index": 0,
+          "start": 35.845,
+          "end": 36.285
+        },
+        {
+          "word": "in",
+          "display_index": 1,
+          "start": 36.285,
+          "end": 36.423
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 36.423,
+          "end": 36.565
+        },
+        {
+          "word": "mountains",
+          "display_index": 3,
+          "start": 36.565,
+          "end": 37.685
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 37.685,
+          "end": 37.945
+        },
+        {
+          "word": "California,",
+          "display_index": 5,
+          "start": 37.945,
+          "end": 39.973
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 39.973,
+          "end": 40.086
+        },
+        {
+          "word": "bristlecone",
+          "display_index": 7,
+          "start": 40.086,
+          "end": 41.166
+        },
+        {
+          "word": "pine",
+          "display_index": 8,
+          "start": 41.166,
+          "end": 41.866
+        },
+        {
+          "word": "has",
+          "display_index": 9,
+          "start": 41.866,
+          "end": 42.206
+        },
+        {
+          "word": "survived",
+          "display_index": 10,
+          "start": 42.206,
+          "end": 43.426
+        },
+        {
+          "word": "for",
+          "display_index": 11,
+          "start": 43.426,
+          "end": 43.726
+        },
+        {
+          "word": "over",
+          "display_index": 12,
+          "start": 43.726,
+          "end": 44.306
+        },
+        {
+          "word": "four",
+          "display_index": 13,
+          "start": 44.306,
+          "end": 44.986
+        },
+        {
+          "word": "thousand",
+          "display_index": 14,
+          "start": 44.986,
+          "end": 45.627
+        },
+        {
+          "word": "years.",
+          "display_index": 15,
+          "start": 45.627,
+          "end": 46.567
+        }
+      ],
+      "start": 35.845,
+      "end": 46.567
+    },
+    {
+      "line": 5,
+      "english": "It is one of the oldest living trees on Earth.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 46.867,
+          "end": 47.093
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 47.093,
+          "end": 47.267
+        },
+        {
+          "word": "one",
+          "display_index": 2,
+          "start": 47.267,
+          "end": 47.487
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 47.487,
+          "end": 47.714
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 47.714,
+          "end": 47.947
+        },
+        {
+          "word": "oldest",
+          "display_index": 5,
+          "start": 47.947,
+          "end": 48.587
+        },
+        {
+          "word": "living",
+          "display_index": 6,
+          "start": 48.587,
+          "end": 49.047
+        },
+        {
+          "word": "trees",
+          "display_index": 7,
+          "start": 49.047,
+          "end": 49.747
+        },
+        {
+          "word": "on",
+          "display_index": 8,
+          "start": 49.747,
+          "end": 50.087
+        },
+        {
+          "word": "Earth.",
+          "display_index": 9,
+          "start": 50.087,
+          "end": 51.587
+        }
+      ],
+      "start": 46.867,
+      "end": 51.587
+    },
+    {
+      "line": 6,
+      "english": "The bristlecone pine grows slowly.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 52.609,
+          "end": 52.768
+        },
+        {
+          "word": "bristlecone",
+          "display_index": 1,
+          "start": 52.768,
+          "end": 53.828
+        },
+        {
+          "word": "pine",
+          "display_index": 2,
+          "start": 53.828,
+          "end": 54.848
+        },
+        {
+          "word": "grows",
+          "display_index": 3,
+          "start": 54.848,
+          "end": 55.548
+        },
+        {
+          "word": "slowly.",
+          "display_index": 4,
+          "start": 55.548,
+          "end": 57.048
+        }
+      ],
+      "start": 52.609,
+      "end": 57.048
+    },
+    {
+      "line": 7,
+      "english": "Compared with other pines, it may add only a few millimeters each year.",
+      "word_timings": [
+        {
+          "word": "Compared",
+          "display_index": 0,
+          "start": 59.308,
+          "end": 59.749
+        },
+        {
+          "word": "with",
+          "display_index": 1,
+          "start": 59.749,
+          "end": 59.969
+        },
+        {
+          "word": "other",
+          "display_index": 2,
+          "start": 59.969,
+          "end": 60.349
+        },
+        {
+          "word": "pines,",
+          "display_index": 3,
+          "start": 60.349,
+          "end": 61.149
+        },
+        {
+          "word": "it",
+          "display_index": 4,
+          "start": 61.149,
+          "end": 61.289
+        },
+        {
+          "word": "may",
+          "display_index": 5,
+          "start": 61.289,
+          "end": 61.649
+        },
+        {
+          "word": "add",
+          "display_index": 6,
+          "start": 61.649,
+          "end": 61.969
+        },
+        {
+          "word": "only",
+          "display_index": 7,
+          "start": 61.969,
+          "end": 62.373
+        },
+        {
+          "word": "a",
+          "display_index": 8,
+          "start": 62.373,
+          "end": 62.629
+        },
+        {
+          "word": "few",
+          "display_index": 9,
+          "start": 62.629,
+          "end": 63.029
+        },
+        {
+          "word": "millimeters",
+          "display_index": 10,
+          "start": 63.029,
+          "end": 63.849
+        },
+        {
+          "word": "each",
+          "display_index": 11,
+          "start": 63.849,
+          "end": 64.129
+        },
+        {
+          "word": "year.",
+          "display_index": 12,
+          "start": 64.129,
+          "end": 65.629
+        }
+      ],
+      "start": 59.308,
+      "end": 65.629
+    },
+    {
+      "line": 8,
+      "english": "But it is far stronger.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 66.73,
+          "end": 67.01
+        },
+        {
+          "word": "it",
+          "display_index": 1,
+          "start": 67.01,
+          "end": 67.132
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 67.132,
+          "end": 67.47
+        },
+        {
+          "word": "far",
+          "display_index": 3,
+          "start": 67.47,
+          "end": 68.17
+        },
+        {
+          "word": "stronger.",
+          "display_index": 4,
+          "start": 68.17,
+          "end": 69.67
+        }
+      ],
+      "start": 66.73,
+      "end": 69.67
+    },
+    {
+      "line": 9,
+      "english": "In the high mountains, the air is thin, the wind is cold, and the soil is poor.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 70.85,
+          "end": 70.97
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 70.97,
+          "end": 71.17
+        },
+        {
+          "word": "high",
+          "display_index": 2,
+          "start": 71.17,
+          "end": 71.67
+        },
+        {
+          "word": "mountains,",
+          "display_index": 3,
+          "start": 71.67,
+          "end": 72.44
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 72.44,
+          "end": 72.67
+        },
+        {
+          "word": "air",
+          "display_index": 5,
+          "start": 72.67,
+          "end": 72.972
+        },
+        {
+          "word": "is",
+          "display_index": 6,
+          "start": 72.972,
+          "end": 73.27
+        },
+        {
+          "word": "thin,",
+          "display_index": 7,
+          "start": 73.27,
+          "end": 73.795
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 73.795,
+          "end": 73.971
+        },
+        {
+          "word": "wind",
+          "display_index": 9,
+          "start": 73.971,
+          "end": 74.321
+        },
+        {
+          "word": "is",
+          "display_index": 10,
+          "start": 74.321,
+          "end": 74.631
+        },
+        {
+          "word": "cold,",
+          "display_index": 11,
+          "start": 74.631,
+          "end": 77.871
+        },
+        {
+          "word": "and",
+          "display_index": 12,
+          "start": 77.871,
+          "end": 78.12
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 78.12,
+          "end": 78.291
+        },
+        {
+          "word": "soil",
+          "display_index": 14,
+          "start": 78.291,
+          "end": 78.986
+        },
+        {
+          "word": "is",
+          "display_index": 15,
+          "start": 78.986,
+          "end": 79.271
+        },
+        {
+          "word": "poor.",
+          "display_index": 16,
+          "start": 79.271,
+          "end": 80.771
+        }
+      ],
+      "start": 70.85,
+      "end": 80.771
+    },
+    {
+      "line": 10,
+      "english": "Yet such a harsh environment is what has enabled the long life of this tree.",
+      "word_timings": [
+        {
+          "word": "Yet",
+          "display_index": 0,
+          "start": 81.372,
+          "end": 81.732
+        },
+        {
+          "word": "such",
+          "display_index": 1,
+          "start": 81.732,
+          "end": 82.136
+        },
+        {
+          "word": "a",
+          "display_index": 2,
+          "start": 82.136,
+          "end": 82.412
+        },
+        {
+          "word": "harsh",
+          "display_index": 3,
+          "start": 82.412,
+          "end": 83.252
+        },
+        {
+          "word": "environment",
+          "display_index": 4,
+          "start": 83.252,
+          "end": 84.781
+        },
+        {
+          "word": "is",
+          "display_index": 5,
+          "start": 84.781,
+          "end": 85.252
+        },
+        {
+          "word": "what",
+          "display_index": 6,
+          "start": 85.252,
+          "end": 85.632
+        },
+        {
+          "word": "has",
+          "display_index": 7,
+          "start": 85.632,
+          "end": 86.392
+        },
+        {
+          "word": "enabled",
+          "display_index": 8,
+          "start": 86.392,
+          "end": 87.738
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 87.738,
+          "end": 87.913
+        },
+        {
+          "word": "long",
+          "display_index": 10,
+          "start": 87.913,
+          "end": 88.793
+        },
+        {
+          "word": "life",
+          "display_index": 11,
+          "start": 88.793,
+          "end": 89.613
+        },
+        {
+          "word": "of",
+          "display_index": 12,
+          "start": 89.613,
+          "end": 89.893
+        },
+        {
+          "word": "this",
+          "display_index": 13,
+          "start": 89.893,
+          "end": 90.533
+        },
+        {
+          "word": "tree.",
+          "display_index": 14,
+          "start": 90.533,
+          "end": 92.033
+        }
+      ],
+      "start": 81.372,
+      "end": 92.033
+    },
+    {
+      "line": 11,
+      "english": "Scientists measure the age of these trees from growth rings within the wood.",
+      "word_timings": [
+        {
+          "word": "Scientists",
+          "display_index": 0,
+          "start": 92.993,
+          "end": 94.434
+        },
+        {
+          "word": "measure",
+          "display_index": 1,
+          "start": 94.434,
+          "end": 95.889
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 95.889,
+          "end": 96.354
+        },
+        {
+          "word": "age",
+          "display_index": 3,
+          "start": 96.354,
+          "end": 97.054
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 97.054,
+          "end": 97.294
+        },
+        {
+          "word": "these",
+          "display_index": 5,
+          "start": 97.294,
+          "end": 97.794
+        },
+        {
+          "word": "trees",
+          "display_index": 6,
+          "start": 97.794,
+          "end": 98.994
+        },
+        {
+          "word": "from",
+          "display_index": 7,
+          "start": 98.994,
+          "end": 99.354
+        },
+        {
+          "word": "growth",
+          "display_index": 8,
+          "start": 99.354,
+          "end": 99.934
+        },
+        {
+          "word": "rings",
+          "display_index": 9,
+          "start": 99.934,
+          "end": 100.494
+        },
+        {
+          "word": "within",
+          "display_index": 10,
+          "start": 100.494,
+          "end": 101.51
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 101.51,
+          "end": 101.835
+        },
+        {
+          "word": "wood.",
+          "display_index": 12,
+          "start": 101.835,
+          "end": 103.335
+        }
+      ],
+      "start": 92.993,
+      "end": 103.335
+    },
+    {
+      "line": 12,
+      "english": "One has been found to be more than four thousand eight hundred years old.",
+      "word_timings": [
+        {
+          "word": "One",
+          "display_index": 0,
+          "start": 107.935,
+          "end": 108.596
+        },
+        {
+          "word": "has",
+          "display_index": 1,
+          "start": 108.596,
+          "end": 108.916
+        },
+        {
+          "word": "been",
+          "display_index": 2,
+          "start": 108.916,
+          "end": 109.236
+        },
+        {
+          "word": "found",
+          "display_index": 3,
+          "start": 109.236,
+          "end": 109.77
+        },
+        {
+          "word": "to",
+          "display_index": 4,
+          "start": 109.77,
+          "end": 109.996
+        },
+        {
+          "word": "be",
+          "display_index": 5,
+          "start": 109.996,
+          "end": 110.336
+        },
+        {
+          "word": "more",
+          "display_index": 6,
+          "start": 110.336,
+          "end": 111.736
+        },
+        {
+          "word": "than",
+          "display_index": 7,
+          "start": 111.736,
+          "end": 112.096
+        },
+        {
+          "word": "four",
+          "display_index": 8,
+          "start": 112.096,
+          "end": 112.616
+        },
+        {
+          "word": "thousand",
+          "display_index": 9,
+          "start": 112.616,
+          "end": 113.636
+        },
+        {
+          "word": "eight",
+          "display_index": 10,
+          "start": 113.636,
+          "end": 114.076
+        },
+        {
+          "word": "hundred",
+          "display_index": 11,
+          "start": 114.076,
+          "end": 115.317
+        },
+        {
+          "word": "years",
+          "display_index": 12,
+          "start": 115.317,
+          "end": 116.137
+        },
+        {
+          "word": "old.",
+          "display_index": 13,
+          "start": 116.137,
+          "end": 117.637
+        }
+      ],
+      "start": 107.935,
+      "end": 117.637
+    },
+    {
+      "line": 13,
+      "english": "We cannot help admiring a tree that is older than many civilizations.",
+      "word_timings": [
+        {
+          "word": "We",
+          "display_index": 0,
+          "start": 118.997,
+          "end": 119.157
+        },
+        {
+          "word": "cannot",
+          "display_index": 1,
+          "start": 119.157,
+          "end": 119.697
+        },
+        {
+          "word": "help",
+          "display_index": 2,
+          "start": 119.697,
+          "end": 120.157
+        },
+        {
+          "word": "admiring",
+          "display_index": 3,
+          "start": 120.157,
+          "end": 121.306
+        },
+        {
+          "word": "a",
+          "display_index": 4,
+          "start": 121.306,
+          "end": 121.537
+        },
+        {
+          "word": "tree",
+          "display_index": 5,
+          "start": 121.537,
+          "end": 122.718
+        },
+        {
+          "word": "that",
+          "display_index": 6,
+          "start": 122.718,
+          "end": 122.936
+        },
+        {
+          "word": "is",
+          "display_index": 7,
+          "start": 122.936,
+          "end": 123.378
+        },
+        {
+          "word": "older",
+          "display_index": 8,
+          "start": 123.378,
+          "end": 124.138
+        },
+        {
+          "word": "than",
+          "display_index": 9,
+          "start": 124.138,
+          "end": 124.818
+        },
+        {
+          "word": "many",
+          "display_index": 10,
+          "start": 124.818,
+          "end": 126.238
+        },
+        {
+          "word": "civilizations.",
+          "display_index": 11,
+          "start": 126.238,
+          "end": 127.738
+        }
+      ],
+      "start": 118.997,
+      "end": 127.738
+    },
+    {
+      "line": 14,
+      "english": "It is among the most remarkable living beings, carrying silence and strength together.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 129.759,
+          "end": 129.84
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 129.84,
+          "end": 130.139
+        },
+        {
+          "word": "among",
+          "display_index": 2,
+          "start": 130.139,
+          "end": 130.97
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 130.97,
+          "end": 131.119
+        },
+        {
+          "word": "most",
+          "display_index": 4,
+          "start": 131.119,
+          "end": 131.679
+        },
+        {
+          "word": "remarkable",
+          "display_index": 5,
+          "start": 131.679,
+          "end": 132.779
+        },
+        {
+          "word": "living",
+          "display_index": 6,
+          "start": 132.779,
+          "end": 133.519
+        },
+        {
+          "word": "beings,",
+          "display_index": 7,
+          "start": 133.519,
+          "end": 135.719
+        },
+        {
+          "word": "carrying",
+          "display_index": 8,
+          "start": 135.719,
+          "end": 136.56
+        },
+        {
+          "word": "silence",
+          "display_index": 9,
+          "start": 136.56,
+          "end": 137.74
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 137.74,
+          "end": 138.02
+        },
+        {
+          "word": "strength",
+          "display_index": 11,
+          "start": 138.02,
+          "end": 138.82
+        },
+        {
+          "word": "together.",
+          "display_index": 12,
+          "start": 138.82,
+          "end": 140.32
+        }
+      ],
+      "start": 129.759,
+      "end": 140.32
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

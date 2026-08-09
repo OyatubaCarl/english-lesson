@@ -1,0 +1,256 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H142.md",
+  "audio": "高校生編/suno_ready/generated/audio/H142/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 174.241,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 267,
+  "transcribed_words": 267,
+  "matched_words": 261,
+  "coverage": 0.9775,
+  "precision": 0.9775,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 266,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 55,
+      "length": 2,
+      "words": [
+        "mariko",
+        "learned"
+      ]
+    },
+    {
+      "start": 22,
+      "length": 1,
+      "words": [
+        "forty"
+      ]
+    },
+    {
+      "start": 131,
+      "length": 1,
+      "words": [
+        "a"
+      ]
+    },
+    {
+      "start": 153,
+      "length": 1,
+      "words": [
+        "factory's"
+      ]
+    },
+    {
+      "start": 195,
+      "length": 1,
+      "words": [
+        "is"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 55,
+      "actual_start": 54,
+      "expected": [
+        "mariko",
+        "learned"
+      ],
+      "actual": [
+        "mary",
+        "cole",
+        "earned"
+      ],
+      "actual_confidence": 0.5019,
+      "substitution_words": 2,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 131,
+      "actual_start": 131,
+      "expected": [
+        "a"
+      ],
+      "actual": [
+        "the"
+      ],
+      "actual_confidence": 0.4072,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 153,
+      "actual_start": 153,
+      "expected": [
+        "factory's"
+      ],
+      "actual": [
+        "factories"
+      ],
+      "actual_confidence": 0.5701,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 195,
+      "actual_start": 195,
+      "expected": [
+        "is"
+      ],
+      "actual": [
+        "that's"
+      ],
+      "actual_confidence": 0.8687,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 22,
+      "actual_start": 22,
+      "expected": [
+        "forty"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "Mariko, my university classmate, became the first woman to serve as factory manager at a major manufacturer. It was when she was 40, she had graduated from the engineering department and at first worked as a technician. The workers on the floor were all men and at first she was not accepted as a peer. Mary Cole earned everything from the safety procedures on the shop floor to the operating methods of each machine. She wore the same clothing as the workers and walked the factory from morning till night. After ten years she climbed the steps of promotion, becoming section chief department head and then factory manager. This was unusual in the industry. Despite Mariko's appointment as factory manager, there were voices of both support and objection. Can a woman with the home and Children to raise carry such a responsible post some asked, but the results were clear Under her management the factories productivity rose and accidents decreased From a woman's viewpoint she also promoted a workplace where people could work more easily The glass ceiling, the invisible wall that blocks women's promotion, still exists today. But as pioneers like Mariko increase, the wall that's being broken, little by little, gender equality is not only a women's issue. It is also an economic necessity For maximizing the output of society As a whole, a society cannot develop Without making use of the talent Of half its population Mariko has both the strength not to yield When confronted with obstacles And kindness toward others She has become a role model for the next generation of women leaders",
+  "segments": [
+    {
+      "start": 5.42,
+      "end": 14.46,
+      "text": "Mariko, my university classmate, became the first woman to serve as factory manager at"
+    },
+    {
+      "start": 14.46,
+      "end": 16.22,
+      "text": "a major manufacturer."
+    },
+    {
+      "start": 17.56,
+      "end": 24.92,
+      "text": "It was when she was 40, she had graduated from the engineering department and at first"
+    },
+    {
+      "start": 24.92,
+      "end": 33.04,
+      "text": "worked as a technician. The workers on the floor were all men and at first she was not accepted"
+    },
+    {
+      "start": 34.24,
+      "end": 43.5,
+      "text": "as a peer. Mary Cole earned everything from the safety procedures on the shop floor to the operating"
+    },
+    {
+      "start": 43.5,
+      "end": 52.02,
+      "text": "methods of each machine. She wore the same clothing as the workers and walked the factory"
+    },
+    {
+      "start": 52.02,
+      "end": 57.44,
+      "text": "from morning till night. After ten years she climbed the steps of promotion,"
+    },
+    {
+      "start": 57.82,
+      "end": 66.14,
+      "text": "becoming section chief department head and then factory manager. This was"
+    },
+    {
+      "start": 66.14,
+      "end": 73.92,
+      "text": "unusual in the industry. Despite Mariko's appointment as factory manager, there"
+    },
+    {
+      "start": 73.92,
+      "end": 80.76,
+      "text": "were voices of both support and objection. Can a woman with the home and"
+    },
+    {
+      "start": 80.76,
+      "end": 88.26,
+      "text": "Children to raise carry such a responsible post some asked, but the results were clear"
+    },
+    {
+      "start": 90.42,
+      "end": 96.4,
+      "text": "Under her management the factories productivity rose and accidents decreased"
+    },
+    {
+      "start": 97.44,
+      "end": 105.24,
+      "text": "From a woman's viewpoint she also promoted a workplace where people could work more easily"
+    },
+    {
+      "start": 105.24,
+      "end": 115.7,
+      "text": "The glass ceiling, the invisible wall that blocks women's promotion, still exists today."
+    },
+    {
+      "start": 116.76,
+      "end": 123.5,
+      "text": "But as pioneers like Mariko increase, the wall that's being broken, little by little,"
+    },
+    {
+      "start": 123.8,
+      "end": 129.0,
+      "text": "gender equality is not only a women's issue."
+    },
+    {
+      "start": 129.0,
+      "end": 132.44,
+      "text": "It is also an economic necessity"
+    },
+    {
+      "start": 132.44,
+      "end": 135.92,
+      "text": "For maximizing the output of society"
+    },
+    {
+      "start": 136.5,
+      "end": 140.78,
+      "text": "As a whole, a society cannot develop"
+    },
+    {
+      "start": 140.78,
+      "end": 143.56,
+      "text": "Without making use of the talent"
+    },
+    {
+      "start": 143.56,
+      "end": 146.08,
+      "text": "Of half its population"
+    },
+    {
+      "start": 147.82,
+      "end": 151.74,
+      "text": "Mariko has both the strength not to yield"
+    },
+    {
+      "start": 151.74,
+      "end": 154.64,
+      "text": "When confronted with obstacles"
+    },
+    {
+      "start": 154.64,
+      "end": 156.94,
+      "text": "And kindness toward others"
+    },
+    {
+      "start": 156.94,
+      "end": 166.28,
+      "text": "She has become a role model for the next generation of women leaders"
+    }
+  ]
+}

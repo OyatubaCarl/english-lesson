@@ -1,0 +1,1196 @@
+{
+  "lesson": 45,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L45/planning/lesson.json",
+  "title_en": "Lesson 45  At the Shopping Street",
+  "title_ja": "商店街にて",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 14,
+  "lines": [
+    {
+      "line": 1,
+      "english": "On Sunday afternoon, my mother asked me to do some shopping, so I went to the shopping street with my sister.",
+      "source_ja": "日曜日の午後、母にお買い物を頼まれて、妹と一緒に商店街へ行きました。",
+      "display_ja": "日曜日の午後、母にお買い物を頼まれて、妹と一緒に商店街へ行きました。",
+      "corrected_translation": false,
+      "mixed": "日曜日の午後、母にお買い物を頼まれて、妹と一緒に商店街へ行きました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "日曜日の午後、母にお買い物を頼まれて、妹と一緒に商店街へ行きました。",
+          "parts": [
+            {
+              "text": "日曜",
+              "ruby": "にちよう"
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "午後",
+              "ruby": "ごご"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "にお",
+              "ruby": ""
+            },
+            {
+              "text": "買い物",
+              "ruby": "かいもの"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "頼",
+              "ruby": "たの"
+            },
+            {
+              "text": "まれて、",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "一緒",
+              "ruby": "いっしょ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "商店",
+              "ruby": "しょうてん"
+            },
+            {
+              "text": "街",
+              "ruby": "がい"
+            },
+            {
+              "text": "へ",
+              "ruby": ""
+            },
+            {
+              "text": "行",
+              "ruby": "い"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 2,
+      "english": "In my wallet, I had some money.",
+      "source_ja": "財布には、ちゃんとお金が入っています。",
+      "display_ja": "財布には、ちゃんとお金が入っています。",
+      "corrected_translation": false,
+      "mixed": "財布には、ちゃんと money が入っています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "財布には、ちゃんと ",
+          "parts": [
+            {
+              "text": "財布",
+              "ruby": "さいふ"
+            },
+            {
+              "text": "には、ちゃんと",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "money",
+          "ruby": "お金"
+        },
+        {
+          "type": "ja",
+          "text": " が入っています。",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "入",
+              "ruby": "はい"
+            },
+            {
+              "text": "っています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "money",
+          "canonical_word": "money",
+          "meaning": "お金"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "money",
+          "reading": "お金",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "money",
+          "canonical_meaning": "お金"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "First, we entered a bakery.",
+      "source_ja": "まずはパン屋さんに入りました。",
+      "display_ja": "まずはパン屋さんに入りました。",
+      "corrected_translation": false,
+      "mixed": "まずはパン屋さんに入りました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "まずはパン屋さんに入りました。",
+          "parts": [
+            {
+              "text": "まずはパン",
+              "ruby": ""
+            },
+            {
+              "text": "屋",
+              "ruby": "や"
+            },
+            {
+              "text": "さんに",
+              "ruby": ""
+            },
+            {
+              "text": "入",
+              "ruby": "はい"
+            },
+            {
+              "text": "りました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 4,
+      "english": "The biggest bread was a little expensive, so I chose a cheaper, smaller one.",
+      "source_ja": "いちばん大きなパンはちょっと高かったので、もう少し安くて小さめのパンを選びました。",
+      "display_ja": "いちばん大きなパンはちょっと高かったので、もう少し安くて小さめのパンを選びました。",
+      "corrected_translation": false,
+      "mixed": "いちばん大きなパンは expensive だったので、cheaper で小さなほうを選びました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "いちばん大きなパンは ",
+          "parts": [
+            {
+              "text": "いちばん",
+              "ruby": ""
+            },
+            {
+              "text": "大",
+              "ruby": "おお"
+            },
+            {
+              "text": "きなパンは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "expensive",
+          "ruby": "高価な"
+        },
+        {
+          "type": "ja",
+          "text": " だったので、",
+          "parts": [
+            {
+              "text": "だったので、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "cheaper",
+          "ruby": "安い"
+        },
+        {
+          "type": "ja",
+          "text": " で小さなほうを選びました。",
+          "parts": [
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さなほうを",
+              "ruby": ""
+            },
+            {
+              "text": "選",
+              "ruby": "えら"
+            },
+            {
+              "text": "びました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "expensive",
+          "canonical_word": "expensive",
+          "meaning": "高価な"
+        },
+        {
+          "english": "cheaper",
+          "canonical_word": "cheap",
+          "meaning": "安い"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "expensive",
+          "reading": "高価な",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "expensive",
+          "canonical_meaning": "高価な"
+        },
+        {
+          "english": "cheaper",
+          "reading": "安い",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "cheap",
+          "canonical_meaning": "安い"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "The shop owner was a kind old lady.",
+      "source_ja": "お店の人はやさしそうなおばあさんでした。",
+      "display_ja": "お店の人はやさしそうなおばあさんでした。",
+      "corrected_translation": false,
+      "mixed": "お店の人はやさしそうなおばあさんでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "お店の人はやさしそうなおばあさんでした。",
+          "parts": [
+            {
+              "text": "お",
+              "ruby": ""
+            },
+            {
+              "text": "店",
+              "ruby": "みせ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "人",
+              "ruby": "ひと"
+            },
+            {
+              "text": "はやさしそうなおばあさんでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 6,
+      "english": "When I paid, I took out a silver coin and a bill from my wallet.",
+      "source_ja": "お会計のときに、わたしは財布から銀色の硬貨とお札を取り出しました。",
+      "display_ja": "お会計のときに、わたしは財布から銀色の硬貨とお札を取り出しました。",
+      "corrected_translation": false,
+      "mixed": "paid のとき、財布から銀色の coin と bill を取り出しました。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "paid",
+          "ruby": "支払う"
+        },
+        {
+          "type": "ja",
+          "text": " のとき、財布から銀色の ",
+          "parts": [
+            {
+              "text": "のとき、",
+              "ruby": ""
+            },
+            {
+              "text": "財布",
+              "ruby": "さいふ"
+            },
+            {
+              "text": "から",
+              "ruby": ""
+            },
+            {
+              "text": "銀色",
+              "ruby": "ぎんいろ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "coin",
+          "ruby": "硬貨"
+        },
+        {
+          "type": "ja",
+          "text": " と ",
+          "parts": [
+            {
+              "text": "と",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "bill",
+          "ruby": "紙幣"
+        },
+        {
+          "type": "ja",
+          "text": " を取り出しました。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "取",
+              "ruby": "と"
+            },
+            {
+              "text": "り",
+              "ruby": ""
+            },
+            {
+              "text": "出",
+              "ruby": "だ"
+            },
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "paid",
+          "canonical_word": "pay",
+          "meaning": "支払う"
+        },
+        {
+          "english": "coin",
+          "canonical_word": "coin",
+          "meaning": "硬貨"
+        },
+        {
+          "english": "bill",
+          "canonical_word": "bill",
+          "meaning": "紙幣"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "paid",
+          "reading": "支払う",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "pay",
+          "canonical_meaning": "支払う"
+        },
+        {
+          "english": "coin",
+          "reading": "硬貨",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "coin",
+          "canonical_meaning": "硬貨"
+        },
+        {
+          "english": "bill",
+          "reading": "紙幣",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "bill",
+          "canonical_meaning": "紙幣"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "Next, my sister went to the flower shop she loves.",
+      "source_ja": "次に、妹が大好きな花屋さんに立ち寄りました。",
+      "display_ja": "次に、妹が大好きな花屋さんに立ち寄りました。",
+      "corrected_translation": false,
+      "mixed": "次に、妹が大好きな花屋さんに立ち寄りました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "次に、妹が大好きな花屋さんに立ち寄りました。",
+          "parts": [
+            {
+              "text": "次",
+              "ruby": "つぎ"
+            },
+            {
+              "text": "に、",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "大好",
+              "ruby": "だいす"
+            },
+            {
+              "text": "きな",
+              "ruby": ""
+            },
+            {
+              "text": "花屋",
+              "ruby": "はなや"
+            },
+            {
+              "text": "さんに",
+              "ruby": ""
+            },
+            {
+              "text": "立ち寄",
+              "ruby": "たちよ"
+            },
+            {
+              "text": "りました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 8,
+      "english": "Each flower had its own price tag.",
+      "source_ja": "どの花にも、値札がついています。",
+      "display_ja": "どの花にも、値札がついています。",
+      "corrected_translation": false,
+      "mixed": "どの花にも、それぞれの price の札がついていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "どの花にも、それぞれの ",
+          "parts": [
+            {
+              "text": "どの",
+              "ruby": ""
+            },
+            {
+              "text": "花",
+              "ruby": "はな"
+            },
+            {
+              "text": "にも、それぞれの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "price",
+          "ruby": "値段"
+        },
+        {
+          "type": "ja",
+          "text": " の札がついていました。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "札",
+              "ruby": "ふだ"
+            },
+            {
+              "text": "がついていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "price",
+          "canonical_word": "price",
+          "meaning": "値段"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "price",
+          "reading": "値段",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "price",
+          "canonical_meaning": "値段"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "“Can I spend a little of my allowance?” she asked.",
+      "source_ja": "「おこづかい、少し使ってもいい?」と妹が聞きました。",
+      "display_ja": "「おこづかい、少し使ってもいい?」と妹が聞きました。",
+      "corrected_translation": false,
+      "mixed": "「おこづかいを少し spend してもいい？」と妹が聞きました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「おこづかいを少し ",
+          "parts": [
+            {
+              "text": "「おこづかいを",
+              "ruby": ""
+            },
+            {
+              "text": "少",
+              "ruby": "すこ"
+            },
+            {
+              "text": "し",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "spend",
+          "ruby": "使う"
+        },
+        {
+          "type": "ja",
+          "text": " してもいい？」と妹が聞きました。",
+          "parts": [
+            {
+              "text": "してもいい？」と",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "聞",
+              "ruby": "き"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "spend",
+          "canonical_word": "spend",
+          "meaning": "使う"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "spend",
+          "reading": "使う",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "spend",
+          "canonical_meaning": "使う"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "I nodded, and she bought the flower she liked the most.",
+      "source_ja": "わたしがうなずくと、彼女は一番気に入った花を買いました。",
+      "display_ja": "わたしがうなずくと、彼女は一番気に入った花を買いました。",
+      "corrected_translation": false,
+      "mixed": "わたしがうなずくと、彼女は一番気に入った花を bought しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしがうなずくと、彼女は一番気に入った花を ",
+          "parts": [
+            {
+              "text": "わたしがうなずくと、",
+              "ruby": ""
+            },
+            {
+              "text": "彼女",
+              "ruby": "かのじょ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "一番",
+              "ruby": "いちばん"
+            },
+            {
+              "text": "気",
+              "ruby": "き"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "入",
+              "ruby": "はい"
+            },
+            {
+              "text": "った",
+              "ruby": ""
+            },
+            {
+              "text": "花",
+              "ruby": "はな"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "bought",
+          "ruby": "買いました"
+        },
+        {
+          "type": "ja",
+          "text": " しました",
+          "parts": [
+            {
+              "text": "しました",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "bought",
+          "canonical_word": "buy",
+          "meaning": "買う"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "bought",
+          "reading": "買いました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "buy",
+          "canonical_meaning": "買う"
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "english": "At the end of the street, there is a used bookshop.",
+      "source_ja": "通りの一番奥には、古本屋さんがあります。",
+      "display_ja": "通りの一番奥には、古本屋さんがあります。",
+      "corrected_translation": false,
+      "mixed": "通りの一番奥には、古本屋さんがあります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "通りの一番奥には、古本屋さんがあります。",
+          "parts": [
+            {
+              "text": "通",
+              "ruby": "とお"
+            },
+            {
+              "text": "りの",
+              "ruby": ""
+            },
+            {
+              "text": "一番",
+              "ruby": "いちばん"
+            },
+            {
+              "text": "奥",
+              "ruby": "おく"
+            },
+            {
+              "text": "には、",
+              "ruby": ""
+            },
+            {
+              "text": "古本",
+              "ruby": "ふるほん"
+            },
+            {
+              "text": "屋",
+              "ruby": "や"
+            },
+            {
+              "text": "さんがあります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 12,
+      "english": "The owner laughed and said, “This shop sells books to many people.”",
+      "source_ja": "店主さんは笑って「ここでは、たくさんのお客さんに本を売っているんだよ」と言いました。",
+      "display_ja": "店主さんは笑って「ここでは、たくさんのお客さんに本を売っているんだよ」と言いました。",
+      "corrected_translation": false,
+      "mixed": "店主は笑って「この店は多くの人に本を sells しています」と言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "店主は笑って「この店は多くの人に本を ",
+          "parts": [
+            {
+              "text": "店主",
+              "ruby": "てんしゅ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "笑",
+              "ruby": "わら"
+            },
+            {
+              "text": "って「この",
+              "ruby": ""
+            },
+            {
+              "text": "店",
+              "ruby": "みせ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "多",
+              "ruby": "おお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "人",
+              "ruby": "ひと"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "sells",
+          "ruby": "売る"
+        },
+        {
+          "type": "ja",
+          "text": " しています」と言いました。",
+          "parts": [
+            {
+              "text": "しています」と",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "sells",
+          "canonical_word": "sell",
+          "meaning": "売る"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "sells",
+          "reading": "売る",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "sell",
+          "canonical_meaning": "売る"
+        }
+      ]
+    },
+    {
+      "line": 13,
+      "english": "On the way home, my sister said, “I want to save a little of my money, not spend all of it.”",
+      "source_ja": "帰り道、妹が「全部使っちゃうんじゃなくて、ちょっとはお金を貯めておきたいな」と言いました。",
+      "display_ja": "帰り道、妹が「全部使っちゃうんじゃなくて、ちょっとはお金を貯めておきたいな」と言いました。",
+      "corrected_translation": false,
+      "mixed": "帰り道、妹は「money の一部を save して、全部 spend したくない」と言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "帰り道、妹は「",
+          "parts": [
+            {
+              "text": "帰り道",
+              "ruby": "かえりみち"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "は「",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "money",
+          "ruby": "お金"
+        },
+        {
+          "type": "ja",
+          "text": " の一部を ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "一部",
+              "ruby": "いちぶ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "save",
+          "ruby": "貯める"
+        },
+        {
+          "type": "ja",
+          "text": " して、全部 ",
+          "parts": [
+            {
+              "text": "して、",
+              "ruby": ""
+            },
+            {
+              "text": "全部",
+              "ruby": "ぜんぶ"
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "spend",
+          "ruby": "使う"
+        },
+        {
+          "type": "ja",
+          "text": " したくない」と言いました。",
+          "parts": [
+            {
+              "text": "したくない」と",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "save",
+          "canonical_word": "save",
+          "meaning": "貯める"
+        },
+        {
+          "english": "money",
+          "canonical_word": "money",
+          "meaning": "お金"
+        },
+        {
+          "english": "spend",
+          "canonical_word": "spend",
+          "meaning": "使う"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "save",
+          "reading": "貯める",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "save",
+          "canonical_meaning": "貯める"
+        },
+        {
+          "english": "money",
+          "reading": "お金",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "money",
+          "canonical_meaning": "お金"
+        },
+        {
+          "english": "spend",
+          "reading": "使う",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "spend",
+          "canonical_meaning": "使う"
+        }
+      ]
+    },
+    {
+      "line": 14,
+      "english": "Using money carefully is not about being rich or poor.",
+      "source_ja": "お金を大切に使うことは、お金持ちか貧乏かの問題じゃないんですよね。",
+      "display_ja": "お金を大切に使うことは、お金持ちか貧乏かの問題じゃないんですよね。",
+      "corrected_translation": false,
+      "mixed": "money を大切に使うことは、rich か poor かの問題ではありません。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "money",
+          "ruby": "お金"
+        },
+        {
+          "type": "ja",
+          "text": " を大切に使うことは、",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "大切",
+              "ruby": "たいせつ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "使",
+              "ruby": "つか"
+            },
+            {
+              "text": "うことは、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "rich",
+          "ruby": "豊かな"
+        },
+        {
+          "type": "ja",
+          "text": " か ",
+          "parts": [
+            {
+              "text": "か",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "poor",
+          "ruby": "貧しい"
+        },
+        {
+          "type": "ja",
+          "text": " かの問題ではありません。",
+          "parts": [
+            {
+              "text": "かの",
+              "ruby": ""
+            },
+            {
+              "text": "問題",
+              "ruby": "もんだい"
+            },
+            {
+              "text": "ではありません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "money",
+          "canonical_word": "money",
+          "meaning": "お金"
+        },
+        {
+          "english": "rich",
+          "canonical_word": "rich",
+          "meaning": "豊かな"
+        },
+        {
+          "english": "poor",
+          "canonical_word": "poor",
+          "meaning": "貧しい"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "money",
+          "reading": "お金",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "money",
+          "canonical_meaning": "お金"
+        },
+        {
+          "english": "rich",
+          "reading": "豊かな",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "rich",
+          "canonical_meaning": "豊かな"
+        },
+        {
+          "english": "poor",
+          "reading": "貧しい",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "poor",
+          "canonical_meaning": "貧しい"
+        }
+      ]
+    }
+  ]
+}

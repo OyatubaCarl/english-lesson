@@ -1,0 +1,49 @@
+{
+  "source_video_assets": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/中学生編/mio_video_l1_l45_sentence_v3/L1",
+  "mixed_translation": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/中学生編/l1_mixed_translation_comparison/planning/mixed_translation.json",
+  "no_ruby": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1"
+      },
+      {
+        "codec_name": "aac",
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "43.900000",
+      "size": "57378071"
+    }
+  },
+  "with_ruby": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1"
+      },
+      {
+        "codec_name": "aac",
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "43.900000",
+      "size": "57728789"
+    }
+  },
+  "line_count": 17,
+  "english_ruby_line_count": 17,
+  "kanji_ruby_line_count": 10,
+  "ruby_policy": "Kanji ruby is retained in both variants; the with-ruby variant additionally places Japanese readings/meanings above English segments.",
+  "two_line_ruby_spacing_pixels": 110
+}

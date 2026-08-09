@@ -1,0 +1,233 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H152.md",
+  "audio": "高校生編/suno_ready/generated/audio/H152/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 154.36,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0144,
+  "expected_words": 209,
+  "transcribed_words": 212,
+  "matched_words": 206,
+  "coverage": 0.9856,
+  "precision": 0.9717,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 208,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 63,
+      "length": 1,
+      "words": [
+        "exile"
+      ]
+    },
+    {
+      "start": 68,
+      "length": 1,
+      "words": [
+        "in"
+      ]
+    },
+    {
+      "start": 72,
+      "length": 1,
+      "words": [
+        "twentieth"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 63,
+      "actual_start": 66,
+      "expected": [
+        "exile"
+      ],
+      "actual": [
+        "exiled"
+      ],
+      "actual_confidence": 0.6442,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 68,
+      "actual_start": 71,
+      "expected": [
+        "in"
+      ],
+      "actual": [
+        "and"
+      ],
+      "actual_confidence": 0.6415,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 72,
+      "actual_start": 75,
+      "expected": [
+        "twentieth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.8805,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 7,
+      "actual_start": 7,
+      "expected": [],
+      "actual": [
+        "three",
+        "five",
+        "hundred"
+      ],
+      "actual_confidence": 0.7797
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "The Jewish religion has a history of three five hundred years. It is also a root of Christianity and Islam. The stories of the Old Testament are among the most widely read of humanity's myths. Noah's Ark, Moses leading the Exodus, David and Goliath. These stories form the principal foundation of Western culture. The history of the Jewish people has also been a history of persecution Exiled by ancient Rome, discrimination and medieval Europe The 20th Century Holocaust Extensive discrimination continued, yet Jewish communities continued to preserve their own culture and faith Worship at the synagogue, the Sabbath, the Passover Tradition was passed down across generations Jewish culture, which values knowledge Produced many outstanding figures Einstein, Freud, Kafka, Spielberg Scholarship, art, business, science In every field Jewish contributions should be credited But today's Israeli-Palestinian conflict is a serious problem Since the founding of Israel in 1948 The conflict between the two has continued Both sides have justified claims and both have victims Religion and ethnicity hold the power to generate both love and hatred Rather than exclude others to choose coexistence That is the goal of a civilized society Religion can be a tool that divides people Or a tool that unites them That choice lies in the hands of each believer",
+  "segments": [
+    {
+      "start": 9.96,
+      "end": 15.94,
+      "text": "The Jewish religion has a history of three five hundred years."
+    },
+    {
+      "start": 16.38,
+      "end": 20.24,
+      "text": "It is also a root of Christianity and Islam."
+    },
+    {
+      "start": 20.24,
+      "end": 29.92,
+      "text": "The stories of the Old Testament are among the most widely read of humanity's myths."
+    },
+    {
+      "start": 31.26,
+      "end": 37.28,
+      "text": "Noah's Ark, Moses leading the Exodus, David and Goliath."
+    },
+    {
+      "start": 37.54,
+      "end": 42.32,
+      "text": "These stories form the principal foundation of Western culture."
+    },
+    {
+      "start": 42.32,
+      "end": 48.64,
+      "text": "The history of the Jewish people has also been a history of persecution"
+    },
+    {
+      "start": 49.32,
+      "end": 54.4,
+      "text": "Exiled by ancient Rome, discrimination and medieval Europe"
+    },
+    {
+      "start": 54.4,
+      "end": 58.34,
+      "text": "The 20th Century Holocaust"
+    },
+    {
+      "start": 60.36,
+      "end": 70.32,
+      "text": "Extensive discrimination continued, yet Jewish communities continued to preserve their own culture and faith"
+    },
+    {
+      "start": 70.61,
+      "end": 75.43,
+      "text": "Worship at the synagogue, the Sabbath, the Passover"
+    },
+    {
+      "start": 75.43,
+      "end": 80.09,
+      "text": "Tradition was passed down across generations"
+    },
+    {
+      "start": 80.61,
+      "end": 85.19,
+      "text": "Jewish culture, which values knowledge"
+    },
+    {
+      "start": 85.19,
+      "end": 88.27,
+      "text": "Produced many outstanding figures"
+    },
+    {
+      "start": 88.27,
+      "end": 92.47,
+      "text": "Einstein, Freud, Kafka, Spielberg"
+    },
+    {
+      "start": 92.47,
+      "end": 95.49,
+      "text": "Scholarship, art, business, science"
+    },
+    {
+      "start": 95.49,
+      "end": 98.27,
+      "text": "In every field Jewish contributions should be credited"
+    },
+    {
+      "start": 98.27,
+      "end": 103.71,
+      "text": "But today's Israeli-Palestinian conflict is a serious problem"
+    },
+    {
+      "start": 103.71,
+      "end": 107.67,
+      "text": "Since the founding of Israel in 1948"
+    },
+    {
+      "start": 108.27,
+      "end": 112.47,
+      "text": "The conflict between the two has continued"
+    },
+    {
+      "start": 113.81,
+      "end": 119.17,
+      "text": "Both sides have justified claims and both have victims"
+    },
+    {
+      "start": 119.17,
+      "end": 125.13,
+      "text": "Religion and ethnicity hold the power to generate both love and hatred"
+    },
+    {
+      "start": 125.13,
+      "end": 129.93,
+      "text": "Rather than exclude others to choose coexistence"
+    },
+    {
+      "start": 129.93,
+      "end": 135.27,
+      "text": "That is the goal of a civilized society"
+    },
+    {
+      "start": 136.71,
+      "end": 140.73,
+      "text": "Religion can be a tool that divides people"
+    },
+    {
+      "start": 140.73,
+      "end": 143.61,
+      "text": "Or a tool that unites them"
+    },
+    {
+      "start": 144.13,
+      "end": 147.99,
+      "text": "That choice lies in the hands of each believer"
+    }
+  ]
+}

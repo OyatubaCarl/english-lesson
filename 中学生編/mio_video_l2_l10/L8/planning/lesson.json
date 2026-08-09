@@ -1,0 +1,122 @@
+{
+  "project_root": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成",
+  "slug": "l8_tomorrows_class_trip",
+  "title_en": "Lesson 8  Tomorrow's Class Trip",
+  "title_ja": "明日は遠足",
+  "chart": "taco_beat/charts/m8.js",
+  "audio": "中学生編/audio/L8.mp3",
+  "duration": 28.676644,
+  "lines": [
+    {
+      "start_index": 0,
+      "end_index": 10,
+      "en_words": ["Tomorrow,", "our", "class", "will", "go", "on", "a", "trip", "to", "a", "mountain."],
+      "ja": "明日、クラスのみんなで山へ遠足に行きます。"
+    },
+    {
+      "start_index": 11,
+      "end_index": 21,
+      "en_words": ["We", "will", "climb", "to", "the", "top", "and", "walk", "in", "the", "forest."],
+      "ja": "頂上まで登り、森の中を歩く予定です。"
+    },
+    {
+      "start_index": 22,
+      "end_index": 29,
+      "en_words": ["I", "will", "take", "my", "lunch", "and", "a", "hat."],
+      "ja": "わたしは、お弁当と帽子を持っていくつもりです。"
+    },
+    {
+      "start_index": 30,
+      "end_index": 33,
+      "en_words": ["“Will", "it", "rain", "tomorrow?”"],
+      "ja": "「明日は雨が降るかな？」"
+    },
+    {
+      "start_index": 34,
+      "end_index": 38,
+      "en_words": ["asked", "my", "sister", "with", "worry."],
+      "ja": "と妹が心配そうに聞きました。"
+    },
+    {
+      "start_index": 39,
+      "end_index": 52,
+      "en_words": ["My", "mother", "looked", "up", "at", "the", "sky", "and", "said,", "“The", "weather", "will", "be", "fine.”"],
+      "break_after": [8],
+      "ja": "母は空を見上げて、「きっと晴れるよ」と答えました。"
+    },
+    {
+      "start_index": 53,
+      "end_index": 62,
+      "en_words": ["But", "just", "in", "case,", "I", "will", "not", "forget", "my", "umbrella."],
+      "ja": "でも、念のため傘も忘れないようにします。"
+    },
+    {
+      "start_index": 63,
+      "end_index": 68,
+      "en_words": ["Tomorrow", "will", "be", "a", "fun", "day."],
+      "ja": "明日はきっと楽しい一日になるでしょう。"
+    }
+  ],
+  "shots": [
+    {
+      "image": "scenes/02_mountain_hike.png",
+      "start": 0.0,
+      "end": 4.05,
+      "start_center": [0.42, 0.48],
+      "end_center": [0.80, 0.40],
+      "start_zoom": 1.27,
+      "end_zoom": 1.10,
+      "intent": "クラスの仲間から登山道と頂上へ視線を送り、遠足の目的地を見せる"
+    },
+    {
+      "image": "scenes/02_mountain_hike.png",
+      "start": 4.05,
+      "end": 8.42,
+      "start_center": [0.79, 0.39],
+      "end_center": [0.38, 0.47],
+      "start_zoom": 1.30,
+      "end_zoom": 1.15,
+      "intent": "頂上から森の中を歩くMio・Tom・Yuukaへ戻る"
+    },
+    {
+      "image": "scenes/01_trip_preparation.png",
+      "start": 8.42,
+      "end": 10.30,
+      "start_center": [0.26, 0.76],
+      "end_center": [0.29, 0.42],
+      "start_zoom": 1.38,
+      "end_zoom": 1.24,
+      "intent": "弁当・帽子・傘から準備をするMioへ短くチルトする"
+    },
+    {
+      "image": "scenes/01_trip_preparation.png",
+      "start": 10.30,
+      "end": 19.20,
+      "start_center": [0.50, 0.47],
+      "end_center": [0.81, 0.35],
+      "start_zoom": 1.38,
+      "end_zoom": 1.18,
+      "intent": "心配する妹Sakiから、空を確かめて答える母Yukaへ会話の焦点を移す"
+    },
+    {
+      "image": "scenes/01_trip_preparation.png",
+      "start": 19.20,
+      "end": 23.50,
+      "start_center": [0.54, 0.82],
+      "end_center": [0.22, 0.69],
+      "start_zoom": 1.45,
+      "end_zoom": 1.22,
+      "intent": "折り畳み傘を確認し、リュックへ収める流れを横移動で示す"
+    },
+    {
+      "image": "scenes/02_mountain_hike.png",
+      "start": 23.50,
+      "end": 28.676644,
+      "start_center": [0.38, 0.47],
+      "end_center": [0.60, 0.47],
+      "start_zoom": 1.25,
+      "end_zoom": 1.01,
+      "intent": "楽しそうな三人から晴れた山全体へ引き、期待感で締める"
+    }
+  ]
+}

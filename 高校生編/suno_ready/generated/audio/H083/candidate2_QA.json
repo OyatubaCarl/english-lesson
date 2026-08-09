@@ -1,0 +1,224 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H083.md",
+  "audio": "高校生編/suno_ready/generated/audio/H083/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 138.481,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.005,
+  "expected_words": 200,
+  "transcribed_words": 201,
+  "matched_words": 196,
+  "coverage": 0.98,
+  "precision": 0.9751,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 199,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 189,
+      "length": 2,
+      "words": [
+        "bit",
+        "since"
+      ]
+    },
+    {
+      "start": 16,
+      "length": 1,
+      "words": [
+        "twentieth"
+      ]
+    },
+    {
+      "start": 85,
+      "length": 1,
+      "words": [
+        "truth"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 16,
+      "actual_start": 16,
+      "expected": [
+        "twentieth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.9625,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 85,
+      "actual_start": 85,
+      "expected": [
+        "truth"
+      ],
+      "actual": [
+        "truths"
+      ],
+      "actual_confidence": 0.7552,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 189,
+      "actual_start": 189,
+      "expected": [
+        "bit",
+        "since"
+      ],
+      "actual": [
+        "bits",
+        "in"
+      ],
+      "actual_confidence": 0.7661,
+      "substitution_words": 2,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 200,
+      "actual_start": 200,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.0785
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 3,
+  "suspicious_substitution_words": 4,
+  "suspicious_content_substitution": true,
+  "transcript": "Cinema is one of the newest of all the arts born at the start of the 20th century In just over a hundred years film has become the center of all entertainment The power of cinema lies in recreating a story before our eyes A dramatic scene shakes the heart of the audience And a comedy creates laughter A great film presents social issues in a way That fascinates and makes the viewer think By retelling historical events from a creative angle It delivers emotional truths that a textbook cannot Film critics evaluate a work from many sides Awards such as the Academy Awards have served To make the quality of films known to the world Watching a film is not mere amusement In a dark theater, we relive the life of another What impresses us is not only the beauty of the images It is because the choices and conflicts of the characters Throw questions at our own way of living In the digital age, the way films are made And watched has changed But the essence to move the human heart through story Has not changed, one bits in cinema Was born with such enthusiasm A century ago You",
+  "segments": [
+    {
+      "start": 10.68,
+      "end": 17.52,
+      "text": "Cinema is one of the newest of all the arts born at the start of the 20th century"
+    },
+    {
+      "start": 19.04,
+      "end": 25.58,
+      "text": "In just over a hundred years film has become the center of all entertainment"
+    },
+    {
+      "start": 25.58,
+      "end": 33.82,
+      "text": "The power of cinema lies in recreating a story before our eyes"
+    },
+    {
+      "start": 36.8,
+      "end": 41.24,
+      "text": "A dramatic scene shakes the heart of the audience"
+    },
+    {
+      "start": 41.24,
+      "end": 44.34,
+      "text": "And a comedy creates laughter"
+    },
+    {
+      "start": 44.34,
+      "end": 49.12,
+      "text": "A great film presents social issues in a way"
+    },
+    {
+      "start": 49.12,
+      "end": 51.92,
+      "text": "That fascinates and makes the viewer think"
+    },
+    {
+      "start": 51.92,
+      "end": 56.62,
+      "text": "By retelling historical events from a creative angle"
+    },
+    {
+      "start": 56.62,
+      "end": 60.74,
+      "text": "It delivers emotional truths that a textbook cannot"
+    },
+    {
+      "start": 63.34,
+      "end": 67.42,
+      "text": "Film critics evaluate a work from many sides"
+    },
+    {
+      "start": 67.42,
+      "end": 70.36,
+      "text": "Awards such as the Academy Awards have served"
+    },
+    {
+      "start": 70.36,
+      "end": 73.92,
+      "text": "To make the quality of films known to the world"
+    },
+    {
+      "start": 73.92,
+      "end": 77.2,
+      "text": "Watching a film is not mere amusement"
+    },
+    {
+      "start": 77.2,
+      "end": 84.16,
+      "text": "In a dark theater, we relive the life of another"
+    },
+    {
+      "start": 84.16,
+      "end": 88.46,
+      "text": "What impresses us is not only the beauty of the images"
+    },
+    {
+      "start": 88.46,
+      "end": 93.0,
+      "text": "It is because the choices and conflicts of the characters"
+    },
+    {
+      "start": 93.0,
+      "end": 98.2,
+      "text": "Throw questions at our own way of living"
+    },
+    {
+      "start": 98.2,
+      "end": 103.56,
+      "text": "In the digital age, the way films are made"
+    },
+    {
+      "start": 103.56,
+      "end": 106.18,
+      "text": "And watched has changed"
+    },
+    {
+      "start": 108.14,
+      "end": 112.94,
+      "text": "But the essence to move the human heart through story"
+    },
+    {
+      "start": 113.56,
+      "end": 117.06,
+      "text": "Has not changed, one bits in cinema"
+    },
+    {
+      "start": 117.06,
+      "end": 121.8,
+      "text": "Was born with such enthusiasm"
+    },
+    {
+      "start": 124.56,
+      "end": 127.0,
+      "text": "A century ago"
+    },
+    {
+      "start": 137.06,
+      "end": 138.46,
+      "text": "You"
+    }
+  ]
+}

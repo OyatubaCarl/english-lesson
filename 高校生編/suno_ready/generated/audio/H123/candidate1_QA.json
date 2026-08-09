@@ -1,0 +1,264 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H123.md",
+  "audio": "高校生編/suno_ready/generated/audio/H123/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 179.6,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 245,
+  "transcribed_words": 245,
+  "matched_words": 239,
+  "coverage": 0.9755,
+  "precision": 0.9755,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 244,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 35,
+      "length": 2,
+      "words": [
+        "thirty",
+        "seven"
+      ]
+    },
+    {
+      "start": 66,
+      "length": 1,
+      "words": [
+        "ten"
+      ]
+    },
+    {
+      "start": 94,
+      "length": 1,
+      "words": [
+        "sunflowers"
+      ]
+    },
+    {
+      "start": 143,
+      "length": 1,
+      "words": [
+        "at"
+      ]
+    },
+    {
+      "start": 147,
+      "length": 1,
+      "words": [
+        "supporting"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 94,
+      "actual_start": 93,
+      "expected": [
+        "sunflowers"
+      ],
+      "actual": [
+        "some",
+        "flowers"
+      ],
+      "actual_confidence": 0.8979,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 143,
+      "actual_start": 143,
+      "expected": [
+        "at"
+      ],
+      "actual": [
+        "that"
+      ],
+      "actual_confidence": 0.4734,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 147,
+      "actual_start": 147,
+      "expected": [
+        "supporting"
+      ],
+      "actual": [
+        "deporting"
+      ],
+      "actual_confidence": 0.8524,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 64,
+      "actual_start": 62,
+      "expected": [],
+      "actual": [
+        "two"
+      ],
+      "actual_confidence": 0.5483
+    },
+    {
+      "expected_start": 71,
+      "actual_start": 69,
+      "expected": [],
+      "actual": [
+        "and"
+      ],
+      "actual_confidence": 0.5143
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 35,
+      "actual_start": 35,
+      "expected": [
+        "thirty",
+        "seven"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 66,
+      "actual_start": 65,
+      "expected": [
+        "ten"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "The artist Van Gogh could barely sell any of his paintings during his lifetime. He was rejected and criticized by ordinary people and experienced severe mental distress. Just before he took his own life at 37, he had sold only one painting Without the support of his brother Theo, he could not even have bought paint Despite all this, Van Gogh created about two 100 works in 10 years Paintings and drawings and an enormous number together His dedication was not in pursuit of success Decades after his death, his paintings began to be reevaluated Today, some flowers and the starry night are counted among the most popular paintings in the world They are traded for billions of yen each While Van Gogh was alive Few people recognized his potential His brother Theo was one of the few exceptions Theo believed in his brother's talent And that considerable sacrifice kept deporting him Van Gogh's story asks about the definition of success Is success to be recognized in life? Is success to be recognized after death? Perhaps for Van Gogh himself, success was to keep painting Whatever the reaction of the world he kept painting according to his inner voice That was the integrity of his life We can see the truth of a human being in the canvases van Gogh left behind Colors that seem to yell, a life force that seems to burst Instead of staying silent, he continues to speak to the world through his paintings.",
+  "segments": [
+    {
+      "start": 11.52,
+      "end": 18.86,
+      "text": "The artist Van Gogh could barely sell any of his paintings during his lifetime."
+    },
+    {
+      "start": 20.92,
+      "end": 28.08,
+      "text": "He was rejected and criticized by ordinary people and experienced severe mental distress."
+    },
+    {
+      "start": 29.16,
+      "end": 35.86,
+      "text": "Just before he took his own life at 37, he had sold only one painting"
+    },
+    {
+      "start": 38.92,
+      "end": 45.16,
+      "text": "Without the support of his brother Theo, he could not even have bought paint"
+    },
+    {
+      "start": 45.16,
+      "end": 52.94,
+      "text": "Despite all this, Van Gogh created about two 100 works in 10 years"
+    },
+    {
+      "start": 52.94,
+      "end": 58.6,
+      "text": "Paintings and drawings and an enormous number together"
+    },
+    {
+      "start": 58.6,
+      "end": 64.3,
+      "text": "His dedication was not in pursuit of success"
+    },
+    {
+      "start": 66.82,
+      "end": 72.56,
+      "text": "Decades after his death, his paintings began to be reevaluated"
+    },
+    {
+      "start": 72.56,
+      "end": 80.52,
+      "text": "Today, some flowers and the starry night are counted among the most popular paintings in the world"
+    },
+    {
+      "start": 80.52,
+      "end": 84.48,
+      "text": "They are traded for billions of yen each"
+    },
+    {
+      "start": 84.48,
+      "end": 87.64,
+      "text": "While Van Gogh was alive"
+    },
+    {
+      "start": 87.64,
+      "end": 91.66,
+      "text": "Few people recognized his potential"
+    },
+    {
+      "start": 92.8,
+      "end": 97.56,
+      "text": "His brother Theo was one of the few exceptions"
+    },
+    {
+      "start": 97.56,
+      "end": 101.34,
+      "text": "Theo believed in his brother's talent"
+    },
+    {
+      "start": 101.34,
+      "end": 106.46,
+      "text": "And that considerable sacrifice kept deporting him"
+    },
+    {
+      "start": 106.46,
+      "end": 112.88,
+      "text": "Van Gogh's story asks about the definition of success"
+    },
+    {
+      "start": 113.46,
+      "end": 117.64,
+      "text": "Is success to be recognized in life?"
+    },
+    {
+      "start": 118.62,
+      "end": 123.62,
+      "text": "Is success to be recognized after death?"
+    },
+    {
+      "start": 126.62,
+      "end": 132.02,
+      "text": "Perhaps for Van Gogh himself, success was to keep painting"
+    },
+    {
+      "start": 132.02,
+      "end": 138.56,
+      "text": "Whatever the reaction of the world he kept painting according to his inner voice"
+    },
+    {
+      "start": 138.56,
+      "end": 142.02,
+      "text": "That was the integrity of his life"
+    },
+    {
+      "start": 143.02,
+      "end": 149.74,
+      "text": "We can see the truth of a human being in the canvases van Gogh left behind"
+    },
+    {
+      "start": 152.02,
+      "end": 157.26,
+      "text": "Colors that seem to yell, a life force that seems to burst"
+    },
+    {
+      "start": 157.26,
+      "end": 167.72,
+      "text": "Instead of staying silent, he continues to speak to the world through his paintings."
+    }
+  ]
+}

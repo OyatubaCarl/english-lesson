@@ -1,0 +1,1264 @@
+{
+  "lesson": 34,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L34/planning/lesson.json",
+  "title_en": "Lesson 34  The Day I Caught a Cold",
+  "title_ja": "かぜをひいた日",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 18,
+  "lines": [
+    {
+      "line": 1,
+      "english": "One morning, I woke up with a slight ache in my head.",
+      "source_ja": "ある朝、頭がちょっと痛くて目が覚めました。",
+      "display_ja": "ある朝、頭がちょっと痛くて目が覚めました。",
+      "corrected_translation": false,
+      "mixed": "ある朝、 head がちょっと痛くて目が覚めました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ある朝、 ",
+          "parts": [
+            {
+              "text": "ある",
+              "ruby": ""
+            },
+            {
+              "text": "朝",
+              "ruby": "あさ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "head",
+          "ruby": "頭"
+        },
+        {
+          "type": "ja",
+          "text": " がちょっと痛くて目が覚めました。",
+          "parts": [
+            {
+              "text": "がちょっと",
+              "ruby": ""
+            },
+            {
+              "text": "痛",
+              "ruby": "いた"
+            },
+            {
+              "text": "くて",
+              "ruby": ""
+            },
+            {
+              "text": "目",
+              "ruby": "め"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "覚",
+              "ruby": "さ"
+            },
+            {
+              "text": "めました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "head",
+          "canonical_word": "head",
+          "meaning": "頭"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "head",
+          "reading": "頭",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "head",
+          "canonical_meaning": "頭"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "english": "My throat felt strange too.",
+      "source_ja": "のども何だか変な感じ。",
+      "display_ja": "のども何だか変な感じ。",
+      "corrected_translation": false,
+      "mixed": "のども何だか変な感じ。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "のども何だか変な感じ。",
+          "parts": [
+            {
+              "text": "のども",
+              "ruby": ""
+            },
+            {
+              "text": "何",
+              "ruby": "なん"
+            },
+            {
+              "text": "だか",
+              "ruby": ""
+            },
+            {
+              "text": "変",
+              "ruby": "へん"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "感",
+              "ruby": "かん"
+            },
+            {
+              "text": "じ。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 3,
+      "english": "My mother touched my face and said, “You have a fever.”",
+      "source_ja": "母がおでこに手を当てて、「熱があるよ」と言いました。",
+      "display_ja": "母がおでこに手を当てて、「熱があるよ」と言いました。",
+      "corrected_translation": false,
+      "mixed": "母がわたしの face に触れて、「fever があるよ」と言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "母がわたしの ",
+          "parts": [
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "がわたしの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "face",
+          "ruby": "顔"
+        },
+        {
+          "type": "ja",
+          "text": " に触れて、「",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "触",
+              "ruby": "ふ"
+            },
+            {
+              "text": "れて、「",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "fever",
+          "ruby": "熱"
+        },
+        {
+          "type": "ja",
+          "text": " があるよ」と言いました。",
+          "parts": [
+            {
+              "text": "があるよ」と",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "face",
+          "canonical_word": "face",
+          "meaning": "顔"
+        },
+        {
+          "english": "fever",
+          "canonical_word": "fever",
+          "meaning": "熱"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "face",
+          "reading": "顔",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "face",
+          "canonical_meaning": "顔"
+        },
+        {
+          "english": "fever",
+          "reading": "熱",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "fever",
+          "canonical_meaning": "熱"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "My eyes and nose felt a bit sharp.",
+      "source_ja": "目も鼻もチクチクする。",
+      "display_ja": "目も鼻もチクチクする。",
+      "corrected_translation": false,
+      "mixed": "目も nose もチクチクする。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "目も ",
+          "parts": [
+            {
+              "text": "目",
+              "ruby": "め"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "nose",
+          "ruby": "鼻"
+        },
+        {
+          "type": "ja",
+          "text": " もチクチクする。",
+          "parts": [
+            {
+              "text": "もチクチクする。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "nose",
+          "canonical_word": "nose",
+          "meaning": "鼻"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "nose",
+          "reading": "鼻",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "nose",
+          "canonical_meaning": "鼻"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "My whole body felt heavy.",
+      "source_ja": "体全体が重だるい。",
+      "display_ja": "体全体が重だるい。",
+      "corrected_translation": false,
+      "mixed": "body 全体が重だるい。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "body",
+          "ruby": "体"
+        },
+        {
+          "type": "ja",
+          "text": " 全体が重だるい。",
+          "parts": [
+            {
+              "text": "全体",
+              "ruby": "ぜんたい"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "重",
+              "ruby": "おも"
+            },
+            {
+              "text": "だるい。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "body",
+          "canonical_word": "body",
+          "meaning": "体"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "body",
+          "reading": "体",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "body",
+          "canonical_meaning": "体"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "“Take your medicine and rest quietly,” my mother said gently.",
+      "source_ja": "「お薬を飲んで、ゆっくり休みなさい」と母はやさしく言ってくれました。",
+      "display_ja": "「お薬を飲んで、ゆっくり休みなさい」と母はやさしく言ってくれました。",
+      "corrected_translation": false,
+      "mixed": "「medicine を飲んで、ゆっくり休みなさい」と母は言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「",
+          "parts": [
+            {
+              "text": "「",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "medicine",
+          "ruby": "薬"
+        },
+        {
+          "type": "ja",
+          "text": " を飲んで、ゆっくり休みなさい」と母は言いました。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "飲",
+              "ruby": "の"
+            },
+            {
+              "text": "んで、ゆっくり",
+              "ruby": ""
+            },
+            {
+              "text": "休",
+              "ruby": "やす"
+            },
+            {
+              "text": "みなさい」と",
+              "ruby": ""
+            },
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "medicine",
+          "canonical_word": "medicine",
+          "meaning": "薬"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "medicine",
+          "reading": "薬",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "medicine",
+          "canonical_meaning": "薬"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "In the afternoon, we went to a hospital nearby.",
+      "source_ja": "母はわたしを近くの病院へ連れていきました。",
+      "display_ja": "母はわたしを近くの病院へ連れていきました。",
+      "corrected_translation": false,
+      "mixed": "母はわたしを近くの病院へ連れていきました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "母はわたしを近くの病院へ連れていきました。",
+          "parts": [
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "はわたしを",
+              "ruby": ""
+            },
+            {
+              "text": "近",
+              "ruby": "ちか"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "病院",
+              "ruby": "びょういん"
+            },
+            {
+              "text": "へ",
+              "ruby": ""
+            },
+            {
+              "text": "連",
+              "ruby": "つ"
+            },
+            {
+              "text": "れていきました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 8,
+      "english": "At the desk, a kind nurse welcomed us with a smile.",
+      "source_ja": "看護師さんはとても親切でした。",
+      "display_ja": "看護師さんはとても親切でした。",
+      "corrected_translation": false,
+      "mixed": "受付では、親切な nurse が笑顔で迎えてくれました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "受付では、親切な ",
+          "parts": [
+            {
+              "text": "受付",
+              "ruby": "うけつけ"
+            },
+            {
+              "text": "では、",
+              "ruby": ""
+            },
+            {
+              "text": "親切",
+              "ruby": "しんせつ"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "nurse",
+          "ruby": "看護師"
+        },
+        {
+          "type": "ja",
+          "text": " が笑顔で迎えてくれました。",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "笑顔",
+              "ruby": "えがお"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "迎",
+              "ruby": "むか"
+            },
+            {
+              "text": "えてくれました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "nurse",
+          "canonical_word": "nurse",
+          "meaning": "看護師"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "nurse",
+          "reading": "看護師",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "nurse",
+          "canonical_meaning": "看護師"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "In the doctor's room, the doctor placed his tool on my chest.",
+      "source_ja": "お医者さんは道具を使ってわたしの胸の音を聞きました。",
+      "display_ja": "お医者さんは道具を使ってわたしの胸の音を聞きました。",
+      "corrected_translation": false,
+      "mixed": "doctor は道具を使って、わたしの胸の音を聞きました。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "doctor",
+          "ruby": "医者"
+        },
+        {
+          "type": "ja",
+          "text": " は道具を使って、わたしの胸の音を聞きました。",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "道具",
+              "ruby": "どうぐ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "使",
+              "ruby": "つか"
+            },
+            {
+              "text": "って、わたしの",
+              "ruby": ""
+            },
+            {
+              "text": "胸",
+              "ruby": "むね"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "音",
+              "ruby": "おと"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "聞",
+              "ruby": "き"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "doctor",
+          "canonical_word": "doctor",
+          "meaning": "医者"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "doctor",
+          "reading": "医者",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "doctor",
+          "canonical_meaning": "医者"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "“Please don't push yourself for a while,” he said.",
+      "source_ja": "「心配しなくて大丈夫ですよ」とお医者さんは言いました。",
+      "display_ja": "「しばらく無理をしないでください」と、お医者さんは言いました。",
+      "corrected_translation": true,
+      "mixed": "「しばらく無理をしないでください」と、お医者さんは言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「しばらく無理をしないでください」と、お医者さんは言いました。",
+          "parts": [
+            {
+              "text": "「しばらく",
+              "ruby": ""
+            },
+            {
+              "text": "無理",
+              "ruby": "むり"
+            },
+            {
+              "text": "をしないでください」と、お",
+              "ruby": ""
+            },
+            {
+              "text": "医者",
+              "ruby": "いしゃ"
+            },
+            {
+              "text": "さんは",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 11,
+      "english": "When I got home, I took my medicine and slept.",
+      "source_ja": "家に帰って、お薬を飲んで眠りました。",
+      "display_ja": "家に帰って、お薬を飲んで眠りました。",
+      "corrected_translation": false,
+      "mixed": "家に帰り、medicine を飲んで眠りました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "家に帰り、",
+          "parts": [
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "帰",
+              "ruby": "かえ"
+            },
+            {
+              "text": "り、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "medicine",
+          "ruby": "薬"
+        },
+        {
+          "type": "ja",
+          "text": " を飲んで眠りました。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "飲",
+              "ruby": "の"
+            },
+            {
+              "text": "んで",
+              "ruby": ""
+            },
+            {
+              "text": "眠",
+              "ruby": "ねむ"
+            },
+            {
+              "text": "りました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "medicine",
+          "canonical_word": "medicine",
+          "meaning": "薬"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "medicine",
+          "reading": "薬",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "medicine",
+          "canonical_meaning": "薬"
+        }
+      ]
+    },
+    {
+      "line": 12,
+      "english": "By evening, all the pain was gone.",
+      "source_ja": "夕方には、痛みはすっかりなくなっていました。",
+      "display_ja": "夕方には、痛みはすっかりなくなっていました。",
+      "corrected_translation": false,
+      "mixed": "夕方には、 pain はすっかりなくなっていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "夕方には、 ",
+          "parts": [
+            {
+              "text": "夕方",
+              "ruby": "ゆうがた"
+            },
+            {
+              "text": "には、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "pain",
+          "ruby": "痛み"
+        },
+        {
+          "type": "ja",
+          "text": " はすっかりなくなっていました。",
+          "parts": [
+            {
+              "text": "はすっかりなくなっていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "pain",
+          "canonical_word": "pain",
+          "meaning": "痛み"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "pain",
+          "reading": "痛み",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "pain",
+          "canonical_meaning": "痛み"
+        }
+      ]
+    },
+    {
+      "line": 13,
+      "english": "My mother's warm soup sank gently into my cold body.",
+      "source_ja": "母の温かいスープが、冷えた体にそっと染みこんできました。",
+      "display_ja": "母の温かいスープが、冷えた体にそっと染みこんできました。",
+      "corrected_translation": false,
+      "mixed": "母の温かいスープが、冷えた body にそっと染みこんできました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "母の温かいスープが、冷えた ",
+          "parts": [
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "温",
+              "ruby": "あたた"
+            },
+            {
+              "text": "かいスープが、",
+              "ruby": ""
+            },
+            {
+              "text": "冷",
+              "ruby": "ひ"
+            },
+            {
+              "text": "えた",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "body",
+          "ruby": "体"
+        },
+        {
+          "type": "ja",
+          "text": " にそっと染みこんできました。",
+          "parts": [
+            {
+              "text": "にそっと",
+              "ruby": ""
+            },
+            {
+              "text": "染",
+              "ruby": "し"
+            },
+            {
+              "text": "みこんできました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "body",
+          "canonical_word": "body",
+          "meaning": "体"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "body",
+          "reading": "体",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "body",
+          "canonical_meaning": "体"
+        }
+      ]
+    },
+    {
+      "line": 14,
+      "english": "At night, I was back to my healthy self.",
+      "source_ja": "夜にはすっかり元気に。",
+      "display_ja": "夜にはすっかり元気に。",
+      "corrected_translation": false,
+      "mixed": "夜には、すっかり healthy な自分に戻りました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "夜には、すっかり ",
+          "parts": [
+            {
+              "text": "夜",
+              "ruby": "よる"
+            },
+            {
+              "text": "には、すっかり",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "healthy",
+          "ruby": "元気な"
+        },
+        {
+          "type": "ja",
+          "text": " な自分に戻りました。",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "自分",
+              "ruby": "じぶん"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "戻",
+              "ruby": "もど"
+            },
+            {
+              "text": "りました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "healthy",
+          "canonical_word": "healthy",
+          "meaning": "元気な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "healthy",
+          "reading": "元気な",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "healthy",
+          "canonical_meaning": "元気な"
+        }
+      ]
+    },
+    {
+      "line": 15,
+      "english": "Looking at the stars outside my window, I brushed my teeth and went to bed earlier than usual.",
+      "source_ja": "窓の外の星を見ながら、歯をみがいて、いつもより早く布団に入りました。",
+      "display_ja": "窓の外の星を見ながら、歯をみがいて、いつもより早く布団に入りました。",
+      "corrected_translation": false,
+      "mixed": "窓の外の星を見ながら歯を brushed して、早めに布団へ入りました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "窓の外の星を見ながら歯を ",
+          "parts": [
+            {
+              "text": "窓",
+              "ruby": "まど"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "外",
+              "ruby": "そと"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "星",
+              "ruby": "ほし"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "ながら",
+              "ruby": ""
+            },
+            {
+              "text": "歯",
+              "ruby": "は"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "brushed",
+          "ruby": "みがく"
+        },
+        {
+          "type": "ja",
+          "text": " して、早めに布団へ入りました。",
+          "parts": [
+            {
+              "text": "して、",
+              "ruby": ""
+            },
+            {
+              "text": "早",
+              "ruby": "はや"
+            },
+            {
+              "text": "めに",
+              "ruby": ""
+            },
+            {
+              "text": "布団",
+              "ruby": "ふとん"
+            },
+            {
+              "text": "へ",
+              "ruby": ""
+            },
+            {
+              "text": "入",
+              "ruby": "はい"
+            },
+            {
+              "text": "りました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "brushed",
+          "canonical_word": "brush",
+          "meaning": "みがく"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "brushed",
+          "reading": "みがく",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "brush",
+          "canonical_meaning": "みがく"
+        }
+      ]
+    },
+    {
+      "line": 16,
+      "english": "“Nothing is more important than health,” my father said quietly.",
+      "source_ja": "「健康ほど大事なものはないよ」と父が静かに言いました。",
+      "display_ja": "「健康ほど大事なものはないよ」と父が静かに言いました。",
+      "corrected_translation": false,
+      "mixed": "「health ほど大切なものはない」と父が静かに言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「",
+          "parts": [
+            {
+              "text": "「",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "health",
+          "ruby": "健康"
+        },
+        {
+          "type": "ja",
+          "text": " ほど大切なものはない」と父が静かに言いました。",
+          "parts": [
+            {
+              "text": "ほど",
+              "ruby": ""
+            },
+            {
+              "text": "大切",
+              "ruby": "たいせつ"
+            },
+            {
+              "text": "なものはない」と",
+              "ruby": ""
+            },
+            {
+              "text": "父",
+              "ruby": "ちち"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "health",
+          "canonical_word": "health",
+          "meaning": "健康"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "health",
+          "reading": "健康",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "health",
+          "canonical_meaning": "健康"
+        }
+      ]
+    },
+    {
+      "line": 17,
+      "english": "His words stayed in my heart today.",
+      "source_ja": "その言葉が、今日のわたしの心にしっかり残りました。",
+      "display_ja": "その言葉が、今日のわたしの心にしっかり残りました。",
+      "corrected_translation": false,
+      "mixed": "その言葉が、今日のわたしの心にしっかり残りました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "その言葉が、今日のわたしの心にしっかり残りました。",
+          "parts": [
+            {
+              "text": "その",
+              "ruby": ""
+            },
+            {
+              "text": "言葉",
+              "ruby": "ことば"
+            },
+            {
+              "text": "が、",
+              "ruby": ""
+            },
+            {
+              "text": "今日",
+              "ruby": "きょう"
+            },
+            {
+              "text": "のわたしの",
+              "ruby": ""
+            },
+            {
+              "text": "心",
+              "ruby": "こころ"
+            },
+            {
+              "text": "にしっかり",
+              "ruby": ""
+            },
+            {
+              "text": "残",
+              "ruby": "のこ"
+            },
+            {
+              "text": "りました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 18,
+      "english": "Thank you for watching.",
+      "source_ja": "ご覧いただき、ありがとうございました。",
+      "display_ja": "ご覧いただき、ありがとうございました。",
+      "corrected_translation": false,
+      "mixed": "ご覧いただき、ありがとうございました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ご覧いただき、ありがとうございました。",
+          "parts": [
+            {
+              "text": "ご",
+              "ruby": ""
+            },
+            {
+              "text": "覧",
+              "ruby": "らん"
+            },
+            {
+              "text": "いただき、ありがとうございました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    }
+  ]
+}

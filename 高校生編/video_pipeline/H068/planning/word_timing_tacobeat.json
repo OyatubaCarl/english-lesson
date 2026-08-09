@@ -1,0 +1,1600 @@
+{
+  "lesson": "H068",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h068_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H068/candidate3-full.mp3",
+  "source_audio_sha256": "6f7ffbade2c17a114ca74d39d937804297cd3a302586ba4afb6be7efa78c85a3",
+  "bpm": 84.1,
+  "exact_word_match": true,
+  "word_count": 244,
+  "line_count": 15,
+  "first_word_start": 11.481,
+  "last_word_end": 181.938,
+  "lines": [
+    {
+      "line": 1,
+      "english": "At the end of the eighteenth century, France was suffering from a serious financial crisis and famine.",
+      "word_timings": [
+        {
+          "word": "At",
+          "display_index": 0,
+          "start": 11.481,
+          "end": 11.645
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 11.645,
+          "end": 11.901
+        },
+        {
+          "word": "end",
+          "display_index": 2,
+          "start": 11.901,
+          "end": 12.261
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 12.261,
+          "end": 12.38
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 12.38,
+          "end": 12.601
+        },
+        {
+          "word": "eighteenth",
+          "display_index": 5,
+          "start": 12.601,
+          "end": 13.241
+        },
+        {
+          "word": "century,",
+          "display_index": 6,
+          "start": 13.241,
+          "end": 14.141
+        },
+        {
+          "word": "France",
+          "display_index": 7,
+          "start": 14.141,
+          "end": 14.541
+        },
+        {
+          "word": "was",
+          "display_index": 8,
+          "start": 14.541,
+          "end": 14.742
+        },
+        {
+          "word": "suffering",
+          "display_index": 9,
+          "start": 14.742,
+          "end": 15.602
+        },
+        {
+          "word": "from",
+          "display_index": 10,
+          "start": 15.602,
+          "end": 16.053
+        },
+        {
+          "word": "a",
+          "display_index": 11,
+          "start": 16.053,
+          "end": 16.182
+        },
+        {
+          "word": "serious",
+          "display_index": 12,
+          "start": 16.182,
+          "end": 17.102
+        },
+        {
+          "word": "financial",
+          "display_index": 13,
+          "start": 17.102,
+          "end": 17.822
+        },
+        {
+          "word": "crisis",
+          "display_index": 14,
+          "start": 17.822,
+          "end": 20.262
+        },
+        {
+          "word": "and",
+          "display_index": 15,
+          "start": 20.262,
+          "end": 20.542
+        },
+        {
+          "word": "famine.",
+          "display_index": 16,
+          "start": 20.542,
+          "end": 22.042
+        }
+      ],
+      "start": 11.481,
+      "end": 22.042
+    },
+    {
+      "line": 2,
+      "english": "Heavy taxes weighed on peasants and the urban poor, while the gap between ordinary people and the royal court of Louis XVI and Marie Antoinette at Versailles was simply too great.",
+      "word_timings": [
+        {
+          "word": "Heavy",
+          "display_index": 0,
+          "start": 22.762,
+          "end": 23.122
+        },
+        {
+          "word": "taxes",
+          "display_index": 1,
+          "start": 23.122,
+          "end": 24.082
+        },
+        {
+          "word": "weighed",
+          "display_index": 2,
+          "start": 24.082,
+          "end": 24.523
+        },
+        {
+          "word": "on",
+          "display_index": 3,
+          "start": 24.523,
+          "end": 24.923
+        },
+        {
+          "word": "peasants",
+          "display_index": 4,
+          "start": 24.923,
+          "end": 26.103
+        },
+        {
+          "word": "and",
+          "display_index": 5,
+          "start": 26.103,
+          "end": 26.267
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 26.267,
+          "end": 26.543
+        },
+        {
+          "word": "urban",
+          "display_index": 7,
+          "start": 26.543,
+          "end": 27.503
+        },
+        {
+          "word": "poor,",
+          "display_index": 8,
+          "start": 27.503,
+          "end": 29.003
+        },
+        {
+          "word": "while",
+          "display_index": 9,
+          "start": 29.003,
+          "end": 29.214
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 29.214,
+          "end": 29.363
+        },
+        {
+          "word": "gap",
+          "display_index": 11,
+          "start": 29.363,
+          "end": 29.723
+        },
+        {
+          "word": "between",
+          "display_index": 12,
+          "start": 29.723,
+          "end": 30.243
+        },
+        {
+          "word": "ordinary",
+          "display_index": 13,
+          "start": 30.243,
+          "end": 31.203
+        },
+        {
+          "word": "people",
+          "display_index": 14,
+          "start": 31.203,
+          "end": 31.943
+        },
+        {
+          "word": "and",
+          "display_index": 15,
+          "start": 31.943,
+          "end": 32.139
+        },
+        {
+          "word": "the",
+          "display_index": 16,
+          "start": 32.139,
+          "end": 32.283
+        },
+        {
+          "word": "royal",
+          "display_index": 17,
+          "start": 32.283,
+          "end": 32.683
+        },
+        {
+          "word": "court",
+          "display_index": 18,
+          "start": 32.683,
+          "end": 33.263
+        },
+        {
+          "word": "of",
+          "display_index": 19,
+          "start": 33.263,
+          "end": 33.423
+        },
+        {
+          "word": "Louis",
+          "display_index": 20,
+          "start": 33.423,
+          "end": 33.943
+        },
+        {
+          "word": "XVI",
+          "display_index": 21,
+          "start": 33.943,
+          "end": 34.884
+        },
+        {
+          "word": "and",
+          "display_index": 22,
+          "start": 34.884,
+          "end": 35.044
+        },
+        {
+          "word": "Marie",
+          "display_index": 23,
+          "start": 35.044,
+          "end": 35.464
+        },
+        {
+          "word": "Antoinette",
+          "display_index": 24,
+          "start": 35.464,
+          "end": 36.264
+        },
+        {
+          "word": "at",
+          "display_index": 25,
+          "start": 36.264,
+          "end": 36.424
+        },
+        {
+          "word": "Versailles",
+          "display_index": 26,
+          "start": 36.424,
+          "end": 38.684
+        },
+        {
+          "word": "was",
+          "display_index": 27,
+          "start": 38.684,
+          "end": 38.904
+        },
+        {
+          "word": "simply",
+          "display_index": 28,
+          "start": 38.904,
+          "end": 39.424
+        },
+        {
+          "word": "too",
+          "display_index": 29,
+          "start": 39.424,
+          "end": 39.704
+        },
+        {
+          "word": "great.",
+          "display_index": 30,
+          "start": 39.704,
+          "end": 41.204
+        }
+      ],
+      "start": 22.762,
+      "end": 41.204
+    },
+    {
+      "line": 3,
+      "english": "The thought of the Enlightenment philosophers Voltaire and Rousseau had already spread among the educated class.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 44.513,
+          "end": 44.645
+        },
+        {
+          "word": "thought",
+          "display_index": 1,
+          "start": 44.645,
+          "end": 44.965
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 44.965,
+          "end": 45.093
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 45.093,
+          "end": 45.265
+        },
+        {
+          "word": "Enlightenment",
+          "display_index": 4,
+          "start": 45.265,
+          "end": 46.305
+        },
+        {
+          "word": "philosophers",
+          "display_index": 5,
+          "start": 46.305,
+          "end": 47.265
+        },
+        {
+          "word": "Voltaire",
+          "display_index": 6,
+          "start": 47.265,
+          "end": 48.165
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 48.165,
+          "end": 48.325
+        },
+        {
+          "word": "Rousseau",
+          "display_index": 8,
+          "start": 48.325,
+          "end": 50.365
+        },
+        {
+          "word": "had",
+          "display_index": 9,
+          "start": 50.365,
+          "end": 50.605
+        },
+        {
+          "word": "already",
+          "display_index": 10,
+          "start": 50.605,
+          "end": 51.085
+        },
+        {
+          "word": "spread",
+          "display_index": 11,
+          "start": 51.085,
+          "end": 51.865
+        },
+        {
+          "word": "among",
+          "display_index": 12,
+          "start": 51.865,
+          "end": 52.536
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 52.536,
+          "end": 52.805
+        },
+        {
+          "word": "educated",
+          "display_index": 14,
+          "start": 52.805,
+          "end": 53.926
+        },
+        {
+          "word": "class.",
+          "display_index": 15,
+          "start": 53.926,
+          "end": 55.426
+        }
+      ],
+      "start": 44.513,
+      "end": 55.426
+    },
+    {
+      "line": 4,
+      "english": "Liberty, equality, and the dignity of the human person.",
+      "word_timings": [
+        {
+          "word": "Liberty,",
+          "display_index": 0,
+          "start": 56.306,
+          "end": 57.626
+        },
+        {
+          "word": "equality,",
+          "display_index": 1,
+          "start": 57.626,
+          "end": 58.886
+        },
+        {
+          "word": "and",
+          "display_index": 2,
+          "start": 58.886,
+          "end": 59.049
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 59.049,
+          "end": 59.206
+        },
+        {
+          "word": "dignity",
+          "display_index": 4,
+          "start": 59.206,
+          "end": 60.046
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 60.046,
+          "end": 60.324
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 60.324,
+          "end": 60.466
+        },
+        {
+          "word": "human",
+          "display_index": 7,
+          "start": 60.466,
+          "end": 61.186
+        },
+        {
+          "word": "person.",
+          "display_index": 8,
+          "start": 61.186,
+          "end": 61.986
+        }
+      ],
+      "start": 56.306,
+      "end": 61.986
+    },
+    {
+      "line": 5,
+      "english": "These ideals would become the trigger of the revolution.",
+      "word_timings": [
+        {
+          "word": "These",
+          "display_index": 0,
+          "start": 62.286,
+          "end": 62.666
+        },
+        {
+          "word": "ideals",
+          "display_index": 1,
+          "start": 62.666,
+          "end": 63.406
+        },
+        {
+          "word": "would",
+          "display_index": 2,
+          "start": 63.406,
+          "end": 63.687
+        },
+        {
+          "word": "become",
+          "display_index": 3,
+          "start": 63.687,
+          "end": 64.324
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 64.324,
+          "end": 64.487
+        },
+        {
+          "word": "trigger",
+          "display_index": 5,
+          "start": 64.487,
+          "end": 65.807
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 65.807,
+          "end": 66.116
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 66.116,
+          "end": 66.287
+        },
+        {
+          "word": "revolution.",
+          "display_index": 8,
+          "start": 66.287,
+          "end": 67.287
+        }
+      ],
+      "start": 62.286,
+      "end": 67.287
+    },
+    {
+      "line": 6,
+      "english": "On July 14, 1789, the citizens of Paris stormed the Bastille prison.",
+      "word_timings": [
+        {
+          "word": "On",
+          "display_index": 0,
+          "start": 67.587,
+          "end": 67.847
+        },
+        {
+          "word": "July",
+          "display_index": 1,
+          "start": 67.847,
+          "end": 68.447
+        },
+        {
+          "word": "14,",
+          "display_index": 2,
+          "start": 68.447,
+          "end": 69.327
+        },
+        {
+          "word": "1789,",
+          "display_index": 3,
+          "start": 69.327,
+          "end": 71.342
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 71.342,
+          "end": 71.487
+        },
+        {
+          "word": "citizens",
+          "display_index": 5,
+          "start": 71.487,
+          "end": 72.287
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 72.287,
+          "end": 72.547
+        },
+        {
+          "word": "Paris",
+          "display_index": 7,
+          "start": 72.547,
+          "end": 73.027
+        },
+        {
+          "word": "stormed",
+          "display_index": 8,
+          "start": 73.027,
+          "end": 73.863
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 73.863,
+          "end": 74.008
+        },
+        {
+          "word": "Bastille",
+          "display_index": 10,
+          "start": 74.008,
+          "end": 74.888
+        },
+        {
+          "word": "prison.",
+          "display_index": 11,
+          "start": 74.888,
+          "end": 76.388
+        }
+      ],
+      "start": 67.587,
+      "end": 76.388
+    },
+    {
+      "line": 7,
+      "english": "This became the starting point of the French Revolution.",
+      "word_timings": [
+        {
+          "word": "This",
+          "display_index": 0,
+          "start": 79.408,
+          "end": 79.628
+        },
+        {
+          "word": "became",
+          "display_index": 1,
+          "start": 79.628,
+          "end": 79.97
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 79.97,
+          "end": 80.108
+        },
+        {
+          "word": "starting",
+          "display_index": 3,
+          "start": 80.108,
+          "end": 81.208
+        },
+        {
+          "word": "point",
+          "display_index": 4,
+          "start": 81.208,
+          "end": 82.568
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 82.568,
+          "end": 82.839
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 82.839,
+          "end": 82.968
+        },
+        {
+          "word": "French",
+          "display_index": 7,
+          "start": 82.968,
+          "end": 83.569
+        },
+        {
+          "word": "Revolution.",
+          "display_index": 8,
+          "start": 83.569,
+          "end": 84.769
+        }
+      ],
+      "start": 79.408,
+      "end": 84.769
+    },
+    {
+      "line": 8,
+      "english": "In August of the same year, the National Assembly adopted the Declaration of the Rights of Man and declared that all people held equal rights.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 85.069,
+          "end": 85.249
+        },
+        {
+          "word": "August",
+          "display_index": 1,
+          "start": 85.249,
+          "end": 85.609
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 85.609,
+          "end": 85.717
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 85.717,
+          "end": 85.889
+        },
+        {
+          "word": "same",
+          "display_index": 4,
+          "start": 85.889,
+          "end": 86.949
+        },
+        {
+          "word": "year,",
+          "display_index": 5,
+          "start": 86.949,
+          "end": 87.881
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 87.881,
+          "end": 88.049
+        },
+        {
+          "word": "National",
+          "display_index": 7,
+          "start": 88.049,
+          "end": 88.629
+        },
+        {
+          "word": "Assembly",
+          "display_index": 8,
+          "start": 88.629,
+          "end": 89.389
+        },
+        {
+          "word": "adopted",
+          "display_index": 9,
+          "start": 89.389,
+          "end": 90.045
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 90.045,
+          "end": 90.189
+        },
+        {
+          "word": "Declaration",
+          "display_index": 11,
+          "start": 90.189,
+          "end": 91.349
+        },
+        {
+          "word": "of",
+          "display_index": 12,
+          "start": 91.349,
+          "end": 91.49
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 91.49,
+          "end": 91.669
+        },
+        {
+          "word": "Rights",
+          "display_index": 14,
+          "start": 91.669,
+          "end": 92.269
+        },
+        {
+          "word": "of",
+          "display_index": 15,
+          "start": 92.269,
+          "end": 92.709
+        },
+        {
+          "word": "Man",
+          "display_index": 16,
+          "start": 92.709,
+          "end": 93.49
+        },
+        {
+          "word": "and",
+          "display_index": 17,
+          "start": 93.49,
+          "end": 93.61
+        },
+        {
+          "word": "declared",
+          "display_index": 18,
+          "start": 93.61,
+          "end": 94.19
+        },
+        {
+          "word": "that",
+          "display_index": 19,
+          "start": 94.19,
+          "end": 94.45
+        },
+        {
+          "word": "all",
+          "display_index": 20,
+          "start": 94.45,
+          "end": 94.71
+        },
+        {
+          "word": "people",
+          "display_index": 21,
+          "start": 94.71,
+          "end": 95.23
+        },
+        {
+          "word": "held",
+          "display_index": 22,
+          "start": 95.23,
+          "end": 95.63
+        },
+        {
+          "word": "equal",
+          "display_index": 23,
+          "start": 95.63,
+          "end": 96.03
+        },
+        {
+          "word": "rights.",
+          "display_index": 24,
+          "start": 96.03,
+          "end": 96.91
+        }
+      ],
+      "start": 85.069,
+      "end": 96.91
+    },
+    {
+      "line": 9,
+      "english": "In 1793, Louis XVI was executed by the guillotine.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 97.21,
+          "end": 97.39
+        },
+        {
+          "word": "1793,",
+          "display_index": 1,
+          "start": 97.39,
+          "end": 99.55
+        },
+        {
+          "word": "Louis",
+          "display_index": 2,
+          "start": 99.55,
+          "end": 100.07
+        },
+        {
+          "word": "XVI",
+          "display_index": 3,
+          "start": 100.07,
+          "end": 101.17
+        },
+        {
+          "word": "was",
+          "display_index": 4,
+          "start": 101.17,
+          "end": 101.39
+        },
+        {
+          "word": "executed",
+          "display_index": 5,
+          "start": 101.39,
+          "end": 102.07
+        },
+        {
+          "word": "by",
+          "display_index": 6,
+          "start": 102.07,
+          "end": 102.266
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 102.266,
+          "end": 102.41
+        },
+        {
+          "word": "guillotine.",
+          "display_index": 8,
+          "start": 102.41,
+          "end": 103.91
+        }
+      ],
+      "start": 97.21,
+      "end": 103.91
+    },
+    {
+      "line": 10,
+      "english": "France was transformed from a monarchy into a republic.",
+      "word_timings": [
+        {
+          "word": "France",
+          "display_index": 0,
+          "start": 108.111,
+          "end": 108.511
+        },
+        {
+          "word": "was",
+          "display_index": 1,
+          "start": 108.511,
+          "end": 108.671
+        },
+        {
+          "word": "transformed",
+          "display_index": 2,
+          "start": 108.671,
+          "end": 109.911
+        },
+        {
+          "word": "from",
+          "display_index": 3,
+          "start": 109.911,
+          "end": 110.133
+        },
+        {
+          "word": "a",
+          "display_index": 4,
+          "start": 110.133,
+          "end": 110.291
+        },
+        {
+          "word": "monarchy",
+          "display_index": 5,
+          "start": 110.291,
+          "end": 111.251
+        },
+        {
+          "word": "into",
+          "display_index": 6,
+          "start": 111.251,
+          "end": 111.763
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 111.763,
+          "end": 112.091
+        },
+        {
+          "word": "republic.",
+          "display_index": 8,
+          "start": 112.091,
+          "end": 113.591
+        }
+      ],
+      "start": 108.111,
+      "end": 113.591
+    },
+    {
+      "line": 11,
+      "english": "But in the middle of the revolution, the Jacobins under Robespierre carried out the Reign of Terror, and tens of thousands were executed as enemies.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 114.052,
+          "end": 114.312
+        },
+        {
+          "word": "in",
+          "display_index": 1,
+          "start": 114.312,
+          "end": 114.436
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 114.436,
+          "end": 114.612
+        },
+        {
+          "word": "middle",
+          "display_index": 3,
+          "start": 114.612,
+          "end": 115.052
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 115.052,
+          "end": 115.166
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 115.166,
+          "end": 115.332
+        },
+        {
+          "word": "revolution,",
+          "display_index": 6,
+          "start": 115.332,
+          "end": 116.417
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 116.417,
+          "end": 116.552
+        },
+        {
+          "word": "Jacobins",
+          "display_index": 8,
+          "start": 116.552,
+          "end": 117.572
+        },
+        {
+          "word": "under",
+          "display_index": 9,
+          "start": 117.572,
+          "end": 118.012
+        },
+        {
+          "word": "Robespierre",
+          "display_index": 10,
+          "start": 118.012,
+          "end": 119.232
+        },
+        {
+          "word": "carried",
+          "display_index": 11,
+          "start": 119.232,
+          "end": 119.732
+        },
+        {
+          "word": "out",
+          "display_index": 12,
+          "start": 119.732,
+          "end": 119.995
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 119.995,
+          "end": 120.352
+        },
+        {
+          "word": "Reign",
+          "display_index": 14,
+          "start": 120.352,
+          "end": 120.972
+        },
+        {
+          "word": "of",
+          "display_index": 15,
+          "start": 120.972,
+          "end": 121.352
+        },
+        {
+          "word": "Terror,",
+          "display_index": 16,
+          "start": 121.352,
+          "end": 122.273
+        },
+        {
+          "word": "and",
+          "display_index": 17,
+          "start": 122.273,
+          "end": 122.433
+        },
+        {
+          "word": "tens",
+          "display_index": 18,
+          "start": 122.433,
+          "end": 122.893
+        },
+        {
+          "word": "of",
+          "display_index": 19,
+          "start": 122.893,
+          "end": 123.153
+        },
+        {
+          "word": "thousands",
+          "display_index": 20,
+          "start": 123.153,
+          "end": 124.113
+        },
+        {
+          "word": "were",
+          "display_index": 21,
+          "start": 124.113,
+          "end": 124.333
+        },
+        {
+          "word": "executed",
+          "display_index": 22,
+          "start": 124.333,
+          "end": 125.233
+        },
+        {
+          "word": "as",
+          "display_index": 23,
+          "start": 125.233,
+          "end": 125.433
+        },
+        {
+          "word": "enemies.",
+          "display_index": 24,
+          "start": 125.433,
+          "end": 126.933
+        }
+      ],
+      "start": 114.052,
+      "end": 126.933
+    },
+    {
+      "line": 12,
+      "english": "In 1799, the young soldier Napoleon Bonaparte took power in a coup, and the chaos of the revolution came to an end.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 131.433,
+          "end": 131.713
+        },
+        {
+          "word": "1799,",
+          "display_index": 1,
+          "start": 131.713,
+          "end": 133.71
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 133.71,
+          "end": 133.854
+        },
+        {
+          "word": "young",
+          "display_index": 3,
+          "start": 133.854,
+          "end": 134.194
+        },
+        {
+          "word": "soldier",
+          "display_index": 4,
+          "start": 134.194,
+          "end": 134.954
+        },
+        {
+          "word": "Napoleon",
+          "display_index": 5,
+          "start": 134.954,
+          "end": 135.994
+        },
+        {
+          "word": "Bonaparte",
+          "display_index": 6,
+          "start": 135.994,
+          "end": 136.874
+        },
+        {
+          "word": "took",
+          "display_index": 7,
+          "start": 136.874,
+          "end": 137.214
+        },
+        {
+          "word": "power",
+          "display_index": 8,
+          "start": 137.214,
+          "end": 138.214
+        },
+        {
+          "word": "in",
+          "display_index": 9,
+          "start": 138.214,
+          "end": 138.316
+        },
+        {
+          "word": "a",
+          "display_index": 10,
+          "start": 138.316,
+          "end": 138.454
+        },
+        {
+          "word": "coup,",
+          "display_index": 11,
+          "start": 138.454,
+          "end": 139.234
+        },
+        {
+          "word": "and",
+          "display_index": 12,
+          "start": 139.234,
+          "end": 139.382
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 139.382,
+          "end": 139.534
+        },
+        {
+          "word": "chaos",
+          "display_index": 14,
+          "start": 139.534,
+          "end": 139.994
+        },
+        {
+          "word": "of",
+          "display_index": 15,
+          "start": 139.994,
+          "end": 140.114
+        },
+        {
+          "word": "the",
+          "display_index": 16,
+          "start": 140.114,
+          "end": 140.294
+        },
+        {
+          "word": "revolution",
+          "display_index": 17,
+          "start": 140.294,
+          "end": 141.314
+        },
+        {
+          "word": "came",
+          "display_index": 18,
+          "start": 141.314,
+          "end": 142.021
+        },
+        {
+          "word": "to",
+          "display_index": 19,
+          "start": 142.021,
+          "end": 142.515
+        },
+        {
+          "word": "an",
+          "display_index": 20,
+          "start": 142.515,
+          "end": 142.855
+        },
+        {
+          "word": "end.",
+          "display_index": 21,
+          "start": 142.855,
+          "end": 144.355
+        }
+      ],
+      "start": 131.433,
+      "end": 144.355
+    },
+    {
+      "line": 13,
+      "english": "He would become emperor in 1804, but the reform that the revolution brought — equality before the law, freedom of religion, the protection of private property — spread throughout Europe.",
+      "word_timings": [
+        {
+          "word": "He",
+          "display_index": 0,
+          "start": 145.095,
+          "end": 145.235
+        },
+        {
+          "word": "would",
+          "display_index": 1,
+          "start": 145.235,
+          "end": 145.435
+        },
+        {
+          "word": "become",
+          "display_index": 2,
+          "start": 145.435,
+          "end": 146.075
+        },
+        {
+          "word": "emperor",
+          "display_index": 3,
+          "start": 146.075,
+          "end": 147.695
+        },
+        {
+          "word": "in",
+          "display_index": 4,
+          "start": 147.695,
+          "end": 147.875
+        },
+        {
+          "word": "1804,",
+          "display_index": 5,
+          "start": 147.875,
+          "end": 150.455
+        },
+        {
+          "word": "but",
+          "display_index": 6,
+          "start": 150.455,
+          "end": 150.631
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 150.631,
+          "end": 150.795
+        },
+        {
+          "word": "reform",
+          "display_index": 8,
+          "start": 150.795,
+          "end": 151.335
+        },
+        {
+          "word": "that",
+          "display_index": 9,
+          "start": 151.335,
+          "end": 151.521
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 151.521,
+          "end": 151.716
+        },
+        {
+          "word": "revolution",
+          "display_index": 11,
+          "start": 151.716,
+          "end": 152.756
+        },
+        {
+          "word": "brought",
+          "display_index": 12,
+          "start": 152.756,
+          "end": 153.696
+        },
+        {
+          "word": "equality",
+          "display_index": 14,
+          "start": 153.696,
+          "end": 154.396
+        },
+        {
+          "word": "before",
+          "display_index": 15,
+          "start": 154.396,
+          "end": 155.105
+        },
+        {
+          "word": "the",
+          "display_index": 16,
+          "start": 155.105,
+          "end": 155.616
+        },
+        {
+          "word": "law,",
+          "display_index": 17,
+          "start": 155.616,
+          "end": 156.636
+        },
+        {
+          "word": "freedom",
+          "display_index": 18,
+          "start": 156.636,
+          "end": 157.116
+        },
+        {
+          "word": "of",
+          "display_index": 19,
+          "start": 157.116,
+          "end": 157.276
+        },
+        {
+          "word": "religion,",
+          "display_index": 20,
+          "start": 157.276,
+          "end": 158.498
+        },
+        {
+          "word": "the",
+          "display_index": 21,
+          "start": 158.498,
+          "end": 158.616
+        },
+        {
+          "word": "protection",
+          "display_index": 22,
+          "start": 158.616,
+          "end": 159.476
+        },
+        {
+          "word": "of",
+          "display_index": 23,
+          "start": 159.476,
+          "end": 159.696
+        },
+        {
+          "word": "private",
+          "display_index": 24,
+          "start": 159.696,
+          "end": 160.376
+        },
+        {
+          "word": "property",
+          "display_index": 25,
+          "start": 160.376,
+          "end": 161.877
+        },
+        {
+          "word": "spread",
+          "display_index": 27,
+          "start": 161.877,
+          "end": 162.337
+        },
+        {
+          "word": "throughout",
+          "display_index": 28,
+          "start": 162.337,
+          "end": 163.017
+        },
+        {
+          "word": "Europe.",
+          "display_index": 29,
+          "start": 163.017,
+          "end": 163.817
+        }
+      ],
+      "start": 145.095,
+      "end": 163.817
+    },
+    {
+      "line": 14,
+      "english": "Liberty, Equality, Fraternity.",
+      "word_timings": [
+        {
+          "word": "Liberty,",
+          "display_index": 0,
+          "start": 163.837,
+          "end": 165.117
+        },
+        {
+          "word": "Equality,",
+          "display_index": 1,
+          "start": 165.117,
+          "end": 166.457
+        },
+        {
+          "word": "Fraternity.",
+          "display_index": 2,
+          "start": 166.457,
+          "end": 167.65
+        }
+      ],
+      "start": 163.837,
+      "end": 167.65
+    },
+    {
+      "line": 15,
+      "english": "The three ideals of the French Revolution still flow at the foundation of every democratic society in the world today.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 167.95,
+          "end": 168.077
+        },
+        {
+          "word": "three",
+          "display_index": 1,
+          "start": 168.077,
+          "end": 168.557
+        },
+        {
+          "word": "ideals",
+          "display_index": 2,
+          "start": 168.557,
+          "end": 169.257
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 169.257,
+          "end": 169.384
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 169.384,
+          "end": 169.517
+        },
+        {
+          "word": "French",
+          "display_index": 5,
+          "start": 169.517,
+          "end": 169.957
+        },
+        {
+          "word": "Revolution",
+          "display_index": 6,
+          "start": 169.957,
+          "end": 170.937
+        },
+        {
+          "word": "still",
+          "display_index": 7,
+          "start": 170.937,
+          "end": 171.478
+        },
+        {
+          "word": "flow",
+          "display_index": 8,
+          "start": 171.478,
+          "end": 174.138
+        },
+        {
+          "word": "at",
+          "display_index": 9,
+          "start": 174.138,
+          "end": 174.257
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 174.257,
+          "end": 174.438
+        },
+        {
+          "word": "foundation",
+          "display_index": 11,
+          "start": 174.438,
+          "end": 175.638
+        },
+        {
+          "word": "of",
+          "display_index": 12,
+          "start": 175.638,
+          "end": 175.818
+        },
+        {
+          "word": "every",
+          "display_index": 13,
+          "start": 175.818,
+          "end": 176.118
+        },
+        {
+          "word": "democratic",
+          "display_index": 14,
+          "start": 176.118,
+          "end": 177.058
+        },
+        {
+          "word": "society",
+          "display_index": 15,
+          "start": 177.058,
+          "end": 179.498
+        },
+        {
+          "word": "in",
+          "display_index": 16,
+          "start": 179.498,
+          "end": 179.641
+        },
+        {
+          "word": "the",
+          "display_index": 17,
+          "start": 179.641,
+          "end": 179.838
+        },
+        {
+          "word": "world",
+          "display_index": 18,
+          "start": 179.838,
+          "end": 180.438
+        },
+        {
+          "word": "today.",
+          "display_index": 19,
+          "start": 180.438,
+          "end": 181.938
+        }
+      ],
+      "start": 167.95,
+      "end": 181.938
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

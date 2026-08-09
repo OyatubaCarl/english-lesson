@@ -1,0 +1,1426 @@
+{
+  "lesson": "H061",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h061_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H061/candidate2-full.mp3",
+  "source_audio_sha256": "613e4b1803b8b50986047de82a4b02722f855f7717a3a2dcf0b6e85b26fde2b2",
+  "bpm": 83.98,
+  "exact_word_match": true,
+  "word_count": 215,
+  "line_count": 15,
+  "first_word_start": 13.902,
+  "last_word_end": 175.739,
+  "lines": [
+    {
+      "line": 1,
+      "english": "In 1856, in a small monastery of the Austrian Empire, a monk began to plant pea seeds.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 13.902,
+          "end": 14.102
+        },
+        {
+          "word": "1856,",
+          "display_index": 1,
+          "start": 14.102,
+          "end": 17.142
+        },
+        {
+          "word": "in",
+          "display_index": 2,
+          "start": 17.142,
+          "end": 17.3
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 17.3,
+          "end": 17.382
+        },
+        {
+          "word": "small",
+          "display_index": 4,
+          "start": 17.382,
+          "end": 17.962
+        },
+        {
+          "word": "monastery",
+          "display_index": 5,
+          "start": 17.962,
+          "end": 19.462
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 19.462,
+          "end": 19.626
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 19.626,
+          "end": 19.822
+        },
+        {
+          "word": "Austrian",
+          "display_index": 8,
+          "start": 19.822,
+          "end": 20.562
+        },
+        {
+          "word": "Empire,",
+          "display_index": 9,
+          "start": 20.562,
+          "end": 22.478
+        },
+        {
+          "word": "a",
+          "display_index": 10,
+          "start": 22.478,
+          "end": 22.603
+        },
+        {
+          "word": "monk",
+          "display_index": 11,
+          "start": 22.603,
+          "end": 22.983
+        },
+        {
+          "word": "began",
+          "display_index": 12,
+          "start": 22.983,
+          "end": 23.69
+        },
+        {
+          "word": "to",
+          "display_index": 13,
+          "start": 23.69,
+          "end": 23.823
+        },
+        {
+          "word": "plant",
+          "display_index": 14,
+          "start": 23.823,
+          "end": 24.223
+        },
+        {
+          "word": "pea",
+          "display_index": 15,
+          "start": 24.223,
+          "end": 24.703
+        },
+        {
+          "word": "seeds.",
+          "display_index": 16,
+          "start": 24.703,
+          "end": 25.503
+        }
+      ],
+      "start": 13.902,
+      "end": 25.503
+    },
+    {
+      "line": 2,
+      "english": "His name was Gregor Mendel.",
+      "word_timings": [
+        {
+          "word": "His",
+          "display_index": 0,
+          "start": 25.643,
+          "end": 25.823
+        },
+        {
+          "word": "name",
+          "display_index": 1,
+          "start": 25.823,
+          "end": 26.083
+        },
+        {
+          "word": "was",
+          "display_index": 2,
+          "start": 26.083,
+          "end": 26.503
+        },
+        {
+          "word": "Gregor",
+          "display_index": 3,
+          "start": 26.503,
+          "end": 26.903
+        },
+        {
+          "word": "Mendel.",
+          "display_index": 4,
+          "start": 26.903,
+          "end": 28.023
+        }
+      ],
+      "start": 25.643,
+      "end": 28.023
+    },
+    {
+      "line": 3,
+      "english": "Mendel paid attention to the traits of pea plants — their height, seed color, and seed shape.",
+      "word_timings": [
+        {
+          "word": "Mendel",
+          "display_index": 0,
+          "start": 28.323,
+          "end": 28.843
+        },
+        {
+          "word": "paid",
+          "display_index": 1,
+          "start": 28.843,
+          "end": 29.463
+        },
+        {
+          "word": "attention",
+          "display_index": 2,
+          "start": 29.463,
+          "end": 30.824
+        },
+        {
+          "word": "to",
+          "display_index": 3,
+          "start": 30.824,
+          "end": 31.022
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 31.022,
+          "end": 31.143
+        },
+        {
+          "word": "traits",
+          "display_index": 5,
+          "start": 31.143,
+          "end": 31.604
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 31.604,
+          "end": 31.824
+        },
+        {
+          "word": "pea",
+          "display_index": 7,
+          "start": 31.824,
+          "end": 32.204
+        },
+        {
+          "word": "plants",
+          "display_index": 8,
+          "start": 32.204,
+          "end": 33.104
+        },
+        {
+          "word": "their",
+          "display_index": 10,
+          "start": 33.104,
+          "end": 33.324
+        },
+        {
+          "word": "height,",
+          "display_index": 11,
+          "start": 33.324,
+          "end": 34.024
+        },
+        {
+          "word": "seed",
+          "display_index": 12,
+          "start": 34.024,
+          "end": 34.504
+        },
+        {
+          "word": "color,",
+          "display_index": 13,
+          "start": 34.504,
+          "end": 36.584
+        },
+        {
+          "word": "and",
+          "display_index": 14,
+          "start": 36.584,
+          "end": 36.884
+        },
+        {
+          "word": "seed",
+          "display_index": 15,
+          "start": 36.884,
+          "end": 37.424
+        },
+        {
+          "word": "shape.",
+          "display_index": 16,
+          "start": 37.424,
+          "end": 38.924
+        }
+      ],
+      "start": 28.323,
+      "end": 38.924
+    },
+    {
+      "line": 4,
+      "english": "For many years, he crossbred tens of thousands of plants and recorded each result with care.",
+      "word_timings": [
+        {
+          "word": "For",
+          "display_index": 0,
+          "start": 42.425,
+          "end": 42.645
+        },
+        {
+          "word": "many",
+          "display_index": 1,
+          "start": 42.645,
+          "end": 43.045
+        },
+        {
+          "word": "years,",
+          "display_index": 2,
+          "start": 43.045,
+          "end": 43.845
+        },
+        {
+          "word": "he",
+          "display_index": 3,
+          "start": 43.845,
+          "end": 44.005
+        },
+        {
+          "word": "crossbred",
+          "display_index": 4,
+          "start": 44.005,
+          "end": 44.725
+        },
+        {
+          "word": "tens",
+          "display_index": 5,
+          "start": 44.725,
+          "end": 45.165
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 45.165,
+          "end": 45.305
+        },
+        {
+          "word": "thousands",
+          "display_index": 7,
+          "start": 45.305,
+          "end": 45.905
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 45.905,
+          "end": 46.105
+        },
+        {
+          "word": "plants",
+          "display_index": 9,
+          "start": 46.105,
+          "end": 47.305
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 47.305,
+          "end": 47.465
+        },
+        {
+          "word": "recorded",
+          "display_index": 11,
+          "start": 47.465,
+          "end": 48.245
+        },
+        {
+          "word": "each",
+          "display_index": 12,
+          "start": 48.245,
+          "end": 48.525
+        },
+        {
+          "word": "result",
+          "display_index": 13,
+          "start": 48.525,
+          "end": 49.946
+        },
+        {
+          "word": "with",
+          "display_index": 14,
+          "start": 49.946,
+          "end": 50.226
+        },
+        {
+          "word": "care.",
+          "display_index": 15,
+          "start": 50.226,
+          "end": 51.726
+        }
+      ],
+      "start": 42.425,
+      "end": 51.726
+    },
+    {
+      "line": 5,
+      "english": "When he crossed a tall parent with a short parent, the offspring were all tall.",
+      "word_timings": [
+        {
+          "word": "When",
+          "display_index": 0,
+          "start": 53.686,
+          "end": 53.886
+        },
+        {
+          "word": "he",
+          "display_index": 1,
+          "start": 53.886,
+          "end": 54.006
+        },
+        {
+          "word": "crossed",
+          "display_index": 2,
+          "start": 54.006,
+          "end": 54.408
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 54.408,
+          "end": 54.586
+        },
+        {
+          "word": "tall",
+          "display_index": 4,
+          "start": 54.586,
+          "end": 55.106
+        },
+        {
+          "word": "parent",
+          "display_index": 5,
+          "start": 55.106,
+          "end": 56.006
+        },
+        {
+          "word": "with",
+          "display_index": 6,
+          "start": 56.006,
+          "end": 56.199
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 56.199,
+          "end": 56.366
+        },
+        {
+          "word": "short",
+          "display_index": 8,
+          "start": 56.366,
+          "end": 56.866
+        },
+        {
+          "word": "parent,",
+          "display_index": 9,
+          "start": 56.866,
+          "end": 58.899
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 58.899,
+          "end": 59.087
+        },
+        {
+          "word": "offspring",
+          "display_index": 11,
+          "start": 59.087,
+          "end": 59.747
+        },
+        {
+          "word": "were",
+          "display_index": 12,
+          "start": 59.747,
+          "end": 60.047
+        },
+        {
+          "word": "all",
+          "display_index": 13,
+          "start": 60.047,
+          "end": 60.407
+        },
+        {
+          "word": "tall.",
+          "display_index": 14,
+          "start": 60.407,
+          "end": 61.907
+        }
+      ],
+      "start": 53.686,
+      "end": 61.907
+    },
+    {
+      "line": 6,
+      "english": "But when he crossed those tall offspring among themselves, short plants appeared again in the next generation.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 65.307,
+          "end": 65.487
+        },
+        {
+          "word": "when",
+          "display_index": 1,
+          "start": 65.487,
+          "end": 65.707
+        },
+        {
+          "word": "he",
+          "display_index": 2,
+          "start": 65.707,
+          "end": 65.947
+        },
+        {
+          "word": "crossed",
+          "display_index": 3,
+          "start": 65.947,
+          "end": 66.407
+        },
+        {
+          "word": "those",
+          "display_index": 4,
+          "start": 66.407,
+          "end": 66.887
+        },
+        {
+          "word": "tall",
+          "display_index": 5,
+          "start": 66.887,
+          "end": 67.507
+        },
+        {
+          "word": "offspring",
+          "display_index": 6,
+          "start": 67.507,
+          "end": 68.228
+        },
+        {
+          "word": "among",
+          "display_index": 7,
+          "start": 68.228,
+          "end": 68.548
+        },
+        {
+          "word": "themselves,",
+          "display_index": 8,
+          "start": 68.548,
+          "end": 70.068
+        },
+        {
+          "word": "short",
+          "display_index": 9,
+          "start": 70.068,
+          "end": 70.428
+        },
+        {
+          "word": "plants",
+          "display_index": 10,
+          "start": 70.428,
+          "end": 70.908
+        },
+        {
+          "word": "appeared",
+          "display_index": 11,
+          "start": 70.908,
+          "end": 71.648
+        },
+        {
+          "word": "again",
+          "display_index": 12,
+          "start": 71.648,
+          "end": 73.028
+        },
+        {
+          "word": "in",
+          "display_index": 13,
+          "start": 73.028,
+          "end": 73.179
+        },
+        {
+          "word": "the",
+          "display_index": 14,
+          "start": 73.179,
+          "end": 73.328
+        },
+        {
+          "word": "next",
+          "display_index": 15,
+          "start": 73.328,
+          "end": 73.848
+        },
+        {
+          "word": "generation.",
+          "display_index": 16,
+          "start": 73.848,
+          "end": 75.348
+        }
+      ],
+      "start": 65.307,
+      "end": 75.348
+    },
+    {
+      "line": 7,
+      "english": "The ratio was about three to one.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 76.725,
+          "end": 76.909
+        },
+        {
+          "word": "ratio",
+          "display_index": 1,
+          "start": 76.909,
+          "end": 78.529
+        },
+        {
+          "word": "was",
+          "display_index": 2,
+          "start": 78.529,
+          "end": 78.769
+        },
+        {
+          "word": "about",
+          "display_index": 3,
+          "start": 78.769,
+          "end": 79.689
+        },
+        {
+          "word": "three",
+          "display_index": 4,
+          "start": 79.689,
+          "end": 80.122
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 80.122,
+          "end": 80.409
+        },
+        {
+          "word": "one.",
+          "display_index": 6,
+          "start": 80.409,
+          "end": 81.909
+        }
+      ],
+      "start": 76.725,
+      "end": 81.909
+    },
+    {
+      "line": 8,
+      "english": "From this observation, Mendel reasoned that a trait was inherited from parent to offspring through two elements.",
+      "word_timings": [
+        {
+          "word": "From",
+          "display_index": 0,
+          "start": 83.989,
+          "end": 84.229
+        },
+        {
+          "word": "this",
+          "display_index": 1,
+          "start": 84.229,
+          "end": 84.489
+        },
+        {
+          "word": "observation,",
+          "display_index": 2,
+          "start": 84.489,
+          "end": 86.17
+        },
+        {
+          "word": "Mendel",
+          "display_index": 3,
+          "start": 86.17,
+          "end": 86.75
+        },
+        {
+          "word": "reasoned",
+          "display_index": 4,
+          "start": 86.75,
+          "end": 88.69
+        },
+        {
+          "word": "that",
+          "display_index": 5,
+          "start": 88.69,
+          "end": 88.848
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 88.848,
+          "end": 89.01
+        },
+        {
+          "word": "trait",
+          "display_index": 7,
+          "start": 89.01,
+          "end": 89.43
+        },
+        {
+          "word": "was",
+          "display_index": 8,
+          "start": 89.43,
+          "end": 89.63
+        },
+        {
+          "word": "inherited",
+          "display_index": 9,
+          "start": 89.63,
+          "end": 90.97
+        },
+        {
+          "word": "from",
+          "display_index": 10,
+          "start": 90.97,
+          "end": 91.21
+        },
+        {
+          "word": "parent",
+          "display_index": 11,
+          "start": 91.21,
+          "end": 92.441
+        },
+        {
+          "word": "to",
+          "display_index": 12,
+          "start": 92.441,
+          "end": 92.69
+        },
+        {
+          "word": "offspring",
+          "display_index": 13,
+          "start": 92.69,
+          "end": 93.63
+        },
+        {
+          "word": "through",
+          "display_index": 14,
+          "start": 93.63,
+          "end": 94.01
+        },
+        {
+          "word": "two",
+          "display_index": 15,
+          "start": 94.01,
+          "end": 94.831
+        },
+        {
+          "word": "elements.",
+          "display_index": 16,
+          "start": 94.831,
+          "end": 96.331
+        }
+      ],
+      "start": 83.989,
+      "end": 96.331
+    },
+    {
+      "line": 9,
+      "english": "One was a dominant element that appeared on the surface; the other was a recessive element that was hidden.",
+      "word_timings": [
+        {
+          "word": "One",
+          "display_index": 0,
+          "start": 99.151,
+          "end": 99.371
+        },
+        {
+          "word": "was",
+          "display_index": 1,
+          "start": 99.371,
+          "end": 99.451
+        },
+        {
+          "word": "a",
+          "display_index": 2,
+          "start": 99.426,
+          "end": 99.611
+        },
+        {
+          "word": "dominant",
+          "display_index": 3,
+          "start": 99.611,
+          "end": 100.171
+        },
+        {
+          "word": "element",
+          "display_index": 4,
+          "start": 100.171,
+          "end": 101.391
+        },
+        {
+          "word": "that",
+          "display_index": 5,
+          "start": 101.391,
+          "end": 101.551
+        },
+        {
+          "word": "appeared",
+          "display_index": 6,
+          "start": 101.551,
+          "end": 102.071
+        },
+        {
+          "word": "on",
+          "display_index": 7,
+          "start": 102.071,
+          "end": 102.234
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 102.234,
+          "end": 102.331
+        },
+        {
+          "word": "surface;",
+          "display_index": 9,
+          "start": 102.331,
+          "end": 103.897
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 103.897,
+          "end": 104.112
+        },
+        {
+          "word": "other",
+          "display_index": 11,
+          "start": 104.112,
+          "end": 104.432
+        },
+        {
+          "word": "was",
+          "display_index": 12,
+          "start": 104.432,
+          "end": 104.592
+        },
+        {
+          "word": "a",
+          "display_index": 13,
+          "start": 104.592,
+          "end": 104.672
+        },
+        {
+          "word": "recessive",
+          "display_index": 14,
+          "start": 104.672,
+          "end": 105.372
+        },
+        {
+          "word": "element",
+          "display_index": 15,
+          "start": 105.372,
+          "end": 105.872
+        },
+        {
+          "word": "that",
+          "display_index": 16,
+          "start": 105.872,
+          "end": 106.072
+        },
+        {
+          "word": "was",
+          "display_index": 17,
+          "start": 106.072,
+          "end": 106.292
+        },
+        {
+          "word": "hidden.",
+          "display_index": 18,
+          "start": 106.292,
+          "end": 107.792
+        }
+      ],
+      "start": 99.151,
+      "end": 107.792
+    },
+    {
+      "line": 10,
+      "english": "In 1865, he presented his discovery to a local scientific society.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 108.192,
+          "end": 108.432
+        },
+        {
+          "word": "1865,",
+          "display_index": 1,
+          "start": 108.432,
+          "end": 110.832
+        },
+        {
+          "word": "he",
+          "display_index": 2,
+          "start": 110.832,
+          "end": 110.972
+        },
+        {
+          "word": "presented",
+          "display_index": 3,
+          "start": 110.972,
+          "end": 111.572
+        },
+        {
+          "word": "his",
+          "display_index": 4,
+          "start": 111.572,
+          "end": 111.772
+        },
+        {
+          "word": "discovery",
+          "display_index": 5,
+          "start": 111.772,
+          "end": 112.945
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 112.945,
+          "end": 113.025
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 113.003,
+          "end": 113.253
+        },
+        {
+          "word": "local",
+          "display_index": 8,
+          "start": 113.253,
+          "end": 113.713
+        },
+        {
+          "word": "scientific",
+          "display_index": 9,
+          "start": 113.713,
+          "end": 114.593
+        },
+        {
+          "word": "society.",
+          "display_index": 10,
+          "start": 114.593,
+          "end": 116.073
+        }
+      ],
+      "start": 108.192,
+      "end": 116.073
+    },
+    {
+      "line": 11,
+      "english": "But its importance was hardly understood by the scientists of the time.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 116.373,
+          "end": 116.533
+        },
+        {
+          "word": "its",
+          "display_index": 1,
+          "start": 116.533,
+          "end": 116.713
+        },
+        {
+          "word": "importance",
+          "display_index": 2,
+          "start": 116.713,
+          "end": 118.013
+        },
+        {
+          "word": "was",
+          "display_index": 3,
+          "start": 118.013,
+          "end": 118.233
+        },
+        {
+          "word": "hardly",
+          "display_index": 4,
+          "start": 118.233,
+          "end": 118.733
+        },
+        {
+          "word": "understood",
+          "display_index": 5,
+          "start": 118.733,
+          "end": 121.593
+        },
+        {
+          "word": "by",
+          "display_index": 6,
+          "start": 121.593,
+          "end": 121.769
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 121.769,
+          "end": 121.914
+        },
+        {
+          "word": "scientists",
+          "display_index": 8,
+          "start": 121.914,
+          "end": 123.014
+        },
+        {
+          "word": "of",
+          "display_index": 9,
+          "start": 123.014,
+          "end": 123.161
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 123.161,
+          "end": 123.294
+        },
+        {
+          "word": "time.",
+          "display_index": 11,
+          "start": 123.294,
+          "end": 124.794
+        }
+      ],
+      "start": 116.373,
+      "end": 124.794
+    },
+    {
+      "line": 12,
+      "english": "His paper lay buried in dust for decades.",
+      "word_timings": [
+        {
+          "word": "His",
+          "display_index": 0,
+          "start": 125.854,
+          "end": 126.154
+        },
+        {
+          "word": "paper",
+          "display_index": 1,
+          "start": 126.154,
+          "end": 127.274
+        },
+        {
+          "word": "lay",
+          "display_index": 2,
+          "start": 127.274,
+          "end": 127.614
+        },
+        {
+          "word": "buried",
+          "display_index": 3,
+          "start": 127.614,
+          "end": 128.774
+        },
+        {
+          "word": "in",
+          "display_index": 4,
+          "start": 128.774,
+          "end": 129.054
+        },
+        {
+          "word": "dust",
+          "display_index": 5,
+          "start": 129.054,
+          "end": 129.414
+        },
+        {
+          "word": "for",
+          "display_index": 6,
+          "start": 129.414,
+          "end": 129.614
+        },
+        {
+          "word": "decades.",
+          "display_index": 7,
+          "start": 129.614,
+          "end": 130.955
+        }
+      ],
+      "start": 125.854,
+      "end": 130.955
+    },
+    {
+      "line": 13,
+      "english": "At the start of the twentieth century, three independent researchers rediscovered Mendel's laws.",
+      "word_timings": [
+        {
+          "word": "At",
+          "display_index": 0,
+          "start": 131.255,
+          "end": 131.41
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 131.41,
+          "end": 131.535
+        },
+        {
+          "word": "start",
+          "display_index": 2,
+          "start": 131.535,
+          "end": 132.335
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 132.335,
+          "end": 132.474
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 132.474,
+          "end": 132.595
+        },
+        {
+          "word": "twentieth",
+          "display_index": 5,
+          "start": 132.595,
+          "end": 133.315
+        },
+        {
+          "word": "century,",
+          "display_index": 6,
+          "start": 133.315,
+          "end": 135.095
+        },
+        {
+          "word": "three",
+          "display_index": 7,
+          "start": 135.095,
+          "end": 135.575
+        },
+        {
+          "word": "independent",
+          "display_index": 8,
+          "start": 135.575,
+          "end": 136.775
+        },
+        {
+          "word": "researchers",
+          "display_index": 9,
+          "start": 136.775,
+          "end": 138.355
+        },
+        {
+          "word": "rediscovered",
+          "display_index": 10,
+          "start": 138.355,
+          "end": 139.615
+        },
+        {
+          "word": "Mendel's",
+          "display_index": 11,
+          "start": 139.615,
+          "end": 140.376
+        },
+        {
+          "word": "laws.",
+          "display_index": 12,
+          "start": 140.376,
+          "end": 141.876
+        }
+      ],
+      "start": 131.255,
+      "end": 141.876
+    },
+    {
+      "line": 14,
+      "english": "His experiments finally came to be recognized as the starting point of modern genetics.",
+      "word_timings": [
+        {
+          "word": "His",
+          "display_index": 0,
+          "start": 142.996,
+          "end": 143.196
+        },
+        {
+          "word": "experiments",
+          "display_index": 1,
+          "start": 143.196,
+          "end": 144.076
+        },
+        {
+          "word": "finally",
+          "display_index": 2,
+          "start": 144.076,
+          "end": 144.596
+        },
+        {
+          "word": "came",
+          "display_index": 3,
+          "start": 144.596,
+          "end": 145.128
+        },
+        {
+          "word": "to",
+          "display_index": 4,
+          "start": 145.128,
+          "end": 145.316
+        },
+        {
+          "word": "be",
+          "display_index": 5,
+          "start": 145.316,
+          "end": 145.516
+        },
+        {
+          "word": "recognized",
+          "display_index": 6,
+          "start": 145.516,
+          "end": 147.336
+        },
+        {
+          "word": "as",
+          "display_index": 7,
+          "start": 147.336,
+          "end": 147.485
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 147.485,
+          "end": 147.596
+        },
+        {
+          "word": "starting",
+          "display_index": 9,
+          "start": 147.596,
+          "end": 148.176
+        },
+        {
+          "word": "point",
+          "display_index": 10,
+          "start": 148.176,
+          "end": 150.197
+        },
+        {
+          "word": "of",
+          "display_index": 11,
+          "start": 150.197,
+          "end": 150.497
+        },
+        {
+          "word": "modern",
+          "display_index": 12,
+          "start": 150.497,
+          "end": 151.557
+        },
+        {
+          "word": "genetics.",
+          "display_index": 13,
+          "start": 151.557,
+          "end": 153.057
+        }
+      ],
+      "start": 142.996,
+      "end": 153.057
+    },
+    {
+      "line": 15,
+      "english": "In a quiet monastery, a single monk who kept facing his pea plants was the first to bring the light of science to the way life is inherited.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 156.637,
+          "end": 156.781
+        },
+        {
+          "word": "a",
+          "display_index": 1,
+          "start": 156.781,
+          "end": 156.897
+        },
+        {
+          "word": "quiet",
+          "display_index": 2,
+          "start": 156.897,
+          "end": 157.657
+        },
+        {
+          "word": "monastery,",
+          "display_index": 3,
+          "start": 157.657,
+          "end": 160.748
+        },
+        {
+          "word": "a",
+          "display_index": 4,
+          "start": 160.748,
+          "end": 160.838
+        },
+        {
+          "word": "single",
+          "display_index": 5,
+          "start": 160.838,
+          "end": 161.358
+        },
+        {
+          "word": "monk",
+          "display_index": 6,
+          "start": 161.358,
+          "end": 162.118
+        },
+        {
+          "word": "who",
+          "display_index": 7,
+          "start": 162.118,
+          "end": 162.298
+        },
+        {
+          "word": "kept",
+          "display_index": 8,
+          "start": 162.298,
+          "end": 162.618
+        },
+        {
+          "word": "facing",
+          "display_index": 9,
+          "start": 162.618,
+          "end": 163.178
+        },
+        {
+          "word": "his",
+          "display_index": 10,
+          "start": 163.178,
+          "end": 163.538
+        },
+        {
+          "word": "pea",
+          "display_index": 11,
+          "start": 163.538,
+          "end": 164.038
+        },
+        {
+          "word": "plants",
+          "display_index": 12,
+          "start": 164.038,
+          "end": 165.858
+        },
+        {
+          "word": "was",
+          "display_index": 13,
+          "start": 165.858,
+          "end": 166.079
+        },
+        {
+          "word": "the",
+          "display_index": 14,
+          "start": 166.079,
+          "end": 166.218
+        },
+        {
+          "word": "first",
+          "display_index": 15,
+          "start": 166.218,
+          "end": 167.872
+        },
+        {
+          "word": "to",
+          "display_index": 16,
+          "start": 167.872,
+          "end": 168.039
+        },
+        {
+          "word": "bring",
+          "display_index": 17,
+          "start": 168.039,
+          "end": 168.269
+        },
+        {
+          "word": "the",
+          "display_index": 18,
+          "start": 168.269,
+          "end": 168.439
+        },
+        {
+          "word": "light",
+          "display_index": 19,
+          "start": 168.439,
+          "end": 168.739
+        },
+        {
+          "word": "of",
+          "display_index": 20,
+          "start": 168.739,
+          "end": 168.919
+        },
+        {
+          "word": "science",
+          "display_index": 21,
+          "start": 168.919,
+          "end": 170.568
+        },
+        {
+          "word": "to",
+          "display_index": 22,
+          "start": 170.568,
+          "end": 170.761
+        },
+        {
+          "word": "the",
+          "display_index": 23,
+          "start": 170.761,
+          "end": 170.959
+        },
+        {
+          "word": "way",
+          "display_index": 24,
+          "start": 170.959,
+          "end": 171.959
+        },
+        {
+          "word": "life",
+          "display_index": 25,
+          "start": 171.959,
+          "end": 174.011
+        },
+        {
+          "word": "is",
+          "display_index": 26,
+          "start": 174.011,
+          "end": 174.239
+        },
+        {
+          "word": "inherited.",
+          "display_index": 27,
+          "start": 174.239,
+          "end": 175.739
+        }
+      ],
+      "start": 156.637,
+      "end": 175.739
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

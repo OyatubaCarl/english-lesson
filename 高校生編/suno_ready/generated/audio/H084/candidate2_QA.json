@@ -1,0 +1,239 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H084.md",
+  "audio": "高校生編/suno_ready/generated/audio/H084/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 151.88,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9904,
+  "expected_words": 208,
+  "transcribed_words": 206,
+  "matched_words": 203,
+  "coverage": 0.976,
+  "precision": 0.9854,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 207,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 192,
+      "length": 2,
+      "words": [
+        "to",
+        "feed"
+      ]
+    },
+    {
+      "start": 5,
+      "length": 1,
+      "words": [
+        "eight"
+      ]
+    },
+    {
+      "start": 30,
+      "length": 1,
+      "words": [
+        "a"
+      ]
+    },
+    {
+      "start": 63,
+      "length": 1,
+      "words": [
+        "twentieth"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 30,
+      "actual_start": 29,
+      "expected": [
+        "a"
+      ],
+      "actual": [
+        "the"
+      ],
+      "actual_confidence": 0.6911,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 63,
+      "actual_start": 62,
+      "expected": [
+        "twentieth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.9032,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 192,
+      "actual_start": 191,
+      "expected": [
+        "to",
+        "feed"
+      ],
+      "actual": [
+        "defeat"
+      ],
+      "actual_confidence": 0.7038,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 5,
+      "actual_start": 5,
+      "expected": [
+        "eight"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "The world population has passed 8 billion Yet more than 800 million people still lack enough food and suffer from hunger Agriculture is one of the oldest industries of humanity and the foundation of civilization. Since the invention of irrigation, farming in ancient Mesopotamia, humanity has multiplied crop yields many times over through improved varieties and new technology. In the Green Revolution of the 20th Century, High yield varieties and chemical fertilizers Dramatically increased food production in Asia and Africa But at the same time, the excessive use of pesticides And fertilizers has contaminated soil and water Causing long-term problems in recent years Both organic farming and genetically modified crops have drawn attention The former is kinder to the environment but difficult for mass production The latter raises yields but leaves concerns about safety Another major problem is food waste in developed countries About one third of all food produced is thrown away In a world where people go hungry This is a serious contradiction Solving the food problem requires more than increasing production Improvement in distribution Reduction of waste And a change in the awareness of each consumer Are all needed Defeat the world in a sustainable way Is the greatest challenge of the coming century",
+  "segments": [
+    {
+      "start": 5.94,
+      "end": 15.06,
+      "text": "The world population has passed 8 billion Yet more than 800 million people still lack"
+    },
+    {
+      "start": 15.06,
+      "end": 24.28,
+      "text": "enough food and suffer from hunger Agriculture is one of the oldest industries of humanity"
+    },
+    {
+      "start": 24.28,
+      "end": 27.72,
+      "text": "and the foundation of civilization."
+    },
+    {
+      "start": 32.28,
+      "end": 38.22,
+      "text": "Since the invention of irrigation, farming in ancient Mesopotamia,"
+    },
+    {
+      "start": 38.22,
+      "end": 42.4,
+      "text": "humanity has multiplied crop yields many times over"
+    },
+    {
+      "start": 42.4,
+      "end": 46.84,
+      "text": "through improved varieties and new technology."
+    },
+    {
+      "start": 47.42,
+      "end": 50.5,
+      "text": "In the Green Revolution of the 20th Century,"
+    },
+    {
+      "start": 50.5,
+      "end": 56.52,
+      "text": "High yield varieties and chemical fertilizers"
+    },
+    {
+      "start": 56.52,
+      "end": 61.8,
+      "text": "Dramatically increased food production in Asia and Africa"
+    },
+    {
+      "start": 62.5,
+      "end": 68.12,
+      "text": "But at the same time, the excessive use of pesticides"
+    },
+    {
+      "start": 68.12,
+      "end": 73.44,
+      "text": "And fertilizers has contaminated soil and water"
+    },
+    {
+      "start": 73.44,
+      "end": 77.8,
+      "text": "Causing long-term problems in recent years"
+    },
+    {
+      "start": 77.8,
+      "end": 85.0,
+      "text": "Both organic farming and genetically modified crops have drawn attention"
+    },
+    {
+      "start": 86.3,
+      "end": 92.56,
+      "text": "The former is kinder to the environment but difficult for mass production"
+    },
+    {
+      "start": 92.56,
+      "end": 97.78,
+      "text": "The latter raises yields but leaves concerns about safety"
+    },
+    {
+      "start": 97.78,
+      "end": 103.64,
+      "text": "Another major problem is food waste in developed countries"
+    },
+    {
+      "start": 103.64,
+      "end": 109.2,
+      "text": "About one third of all food produced is thrown away"
+    },
+    {
+      "start": 110.72,
+      "end": 113.92,
+      "text": "In a world where people go hungry"
+    },
+    {
+      "start": 113.92,
+      "end": 116.42,
+      "text": "This is a serious contradiction"
+    },
+    {
+      "start": 116.42,
+      "end": 121.64,
+      "text": "Solving the food problem requires more than increasing production"
+    },
+    {
+      "start": 122.2,
+      "end": 124.66,
+      "text": "Improvement in distribution"
+    },
+    {
+      "start": 124.66,
+      "end": 127.9,
+      "text": "Reduction of waste"
+    },
+    {
+      "start": 127.9,
+      "end": 132.28,
+      "text": "And a change in the awareness of each consumer"
+    },
+    {
+      "start": 133.64,
+      "end": 134.96,
+      "text": "Are all needed"
+    },
+    {
+      "start": 136.9,
+      "end": 140.46,
+      "text": "Defeat the world in a sustainable way"
+    },
+    {
+      "start": 141.36,
+      "end": 145.32,
+      "text": "Is the greatest challenge of the coming century"
+    }
+  ]
+}

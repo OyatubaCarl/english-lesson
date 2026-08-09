@@ -1,0 +1,954 @@
+{
+  "lesson": "H021",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h021_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H021/candidate2-full.mp3",
+  "source_audio_sha256": "0ec76654f1444e0de0bfa668d8cc23a3afd594421a571c0116aa8c7f3be01ee3",
+  "bpm": 71.12,
+  "exact_word_match": true,
+  "word_count": 139,
+  "line_count": 13,
+  "first_word_start": 6.901,
+  "last_word_end": 105.379,
+  "lines": [
+    {
+      "line": 1,
+      "english": "On the morning when we reached the airport, my friend was waiting to leave for a new job abroad.",
+      "word_timings": [
+        {
+          "word": "On",
+          "display_index": 0,
+          "start": 6.901,
+          "end": 7.089
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 7.089,
+          "end": 7.261
+        },
+        {
+          "word": "morning",
+          "display_index": 2,
+          "start": 7.261,
+          "end": 7.701
+        },
+        {
+          "word": "when",
+          "display_index": 3,
+          "start": 7.701,
+          "end": 7.901
+        },
+        {
+          "word": "we",
+          "display_index": 4,
+          "start": 7.901,
+          "end": 8.101
+        },
+        {
+          "word": "reached",
+          "display_index": 5,
+          "start": 8.101,
+          "end": 8.568
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 8.568,
+          "end": 8.762
+        },
+        {
+          "word": "airport,",
+          "display_index": 7,
+          "start": 8.762,
+          "end": 9.588
+        },
+        {
+          "word": "my",
+          "display_index": 8,
+          "start": 9.588,
+          "end": 9.782
+        },
+        {
+          "word": "friend",
+          "display_index": 9,
+          "start": 9.782,
+          "end": 10.202
+        },
+        {
+          "word": "was",
+          "display_index": 10,
+          "start": 10.202,
+          "end": 10.442
+        },
+        {
+          "word": "waiting",
+          "display_index": 11,
+          "start": 10.442,
+          "end": 11.223
+        },
+        {
+          "word": "to",
+          "display_index": 12,
+          "start": 11.223,
+          "end": 11.462
+        },
+        {
+          "word": "leave",
+          "display_index": 13,
+          "start": 11.462,
+          "end": 11.822
+        },
+        {
+          "word": "for",
+          "display_index": 14,
+          "start": 11.822,
+          "end": 12.101
+        },
+        {
+          "word": "a",
+          "display_index": 15,
+          "start": 12.101,
+          "end": 12.282
+        },
+        {
+          "word": "new",
+          "display_index": 16,
+          "start": 12.282,
+          "end": 12.842
+        },
+        {
+          "word": "job",
+          "display_index": 17,
+          "start": 12.842,
+          "end": 13.402
+        },
+        {
+          "word": "abroad.",
+          "display_index": 18,
+          "start": 13.402,
+          "end": 14.902
+        }
+      ],
+      "start": 6.901,
+      "end": 14.902
+    },
+    {
+      "line": 2,
+      "english": "I watched him quietly.",
+      "word_timings": [
+        {
+          "word": "I",
+          "display_index": 0,
+          "start": 16.35,
+          "end": 16.463
+        },
+        {
+          "word": "watched",
+          "display_index": 1,
+          "start": 16.463,
+          "end": 16.903
+        },
+        {
+          "word": "him",
+          "display_index": 2,
+          "start": 16.903,
+          "end": 17.223
+        },
+        {
+          "word": "quietly.",
+          "display_index": 3,
+          "start": 17.223,
+          "end": 18.723
+        }
+      ],
+      "start": 16.35,
+      "end": 18.723
+    },
+    {
+      "line": 3,
+      "english": "Loading his luggage on the cart, he turned toward me.",
+      "word_timings": [
+        {
+          "word": "Loading",
+          "display_index": 0,
+          "start": 20.044,
+          "end": 20.464
+        },
+        {
+          "word": "his",
+          "display_index": 1,
+          "start": 20.464,
+          "end": 20.664
+        },
+        {
+          "word": "luggage",
+          "display_index": 2,
+          "start": 20.664,
+          "end": 21.144
+        },
+        {
+          "word": "on",
+          "display_index": 3,
+          "start": 21.144,
+          "end": 21.273
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 21.273,
+          "end": 21.424
+        },
+        {
+          "word": "cart,",
+          "display_index": 5,
+          "start": 21.424,
+          "end": 22.064
+        },
+        {
+          "word": "he",
+          "display_index": 6,
+          "start": 22.064,
+          "end": 22.284
+        },
+        {
+          "word": "turned",
+          "display_index": 7,
+          "start": 22.284,
+          "end": 22.724
+        },
+        {
+          "word": "toward",
+          "display_index": 8,
+          "start": 22.724,
+          "end": 23.584
+        },
+        {
+          "word": "me.",
+          "display_index": 9,
+          "start": 23.584,
+          "end": 24.985
+        }
+      ],
+      "start": 20.044,
+      "end": 24.985
+    },
+    {
+      "line": 4,
+      "english": "Though smiling, his eyes seemed a little wet.",
+      "word_timings": [
+        {
+          "word": "Though",
+          "display_index": 0,
+          "start": 25.285,
+          "end": 25.565
+        },
+        {
+          "word": "smiling,",
+          "display_index": 1,
+          "start": 25.565,
+          "end": 27.225
+        },
+        {
+          "word": "his",
+          "display_index": 2,
+          "start": 27.225,
+          "end": 27.545
+        },
+        {
+          "word": "eyes",
+          "display_index": 3,
+          "start": 27.545,
+          "end": 27.885
+        },
+        {
+          "word": "seemed",
+          "display_index": 4,
+          "start": 27.885,
+          "end": 28.18
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 28.18,
+          "end": 28.385
+        },
+        {
+          "word": "little",
+          "display_index": 6,
+          "start": 28.385,
+          "end": 28.785
+        },
+        {
+          "word": "wet.",
+          "display_index": 7,
+          "start": 28.785,
+          "end": 30.285
+        }
+      ],
+      "start": 25.285,
+      "end": 30.285
+    },
+    {
+      "line": 5,
+      "english": "We gave each other a brief hug and exchanged a small promise.",
+      "word_timings": [
+        {
+          "word": "We",
+          "display_index": 0,
+          "start": 31.946,
+          "end": 32.146
+        },
+        {
+          "word": "gave",
+          "display_index": 1,
+          "start": 32.146,
+          "end": 32.426
+        },
+        {
+          "word": "each",
+          "display_index": 2,
+          "start": 32.426,
+          "end": 32.666
+        },
+        {
+          "word": "other",
+          "display_index": 3,
+          "start": 32.666,
+          "end": 33.01
+        },
+        {
+          "word": "a",
+          "display_index": 4,
+          "start": 33.01,
+          "end": 33.186
+        },
+        {
+          "word": "brief",
+          "display_index": 5,
+          "start": 33.186,
+          "end": 33.626
+        },
+        {
+          "word": "hug",
+          "display_index": 6,
+          "start": 33.626,
+          "end": 34.346
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 34.346,
+          "end": 34.486
+        },
+        {
+          "word": "exchanged",
+          "display_index": 8,
+          "start": 34.486,
+          "end": 35.382
+        },
+        {
+          "word": "a",
+          "display_index": 9,
+          "start": 35.382,
+          "end": 35.462
+        },
+        {
+          "word": "small",
+          "display_index": 10,
+          "start": 35.446,
+          "end": 35.846
+        },
+        {
+          "word": "promise.",
+          "display_index": 11,
+          "start": 35.846,
+          "end": 37.307
+        }
+      ],
+      "start": 31.946,
+      "end": 37.307
+    },
+    {
+      "line": 6,
+      "english": "Walking toward the gate, he did not turn back.",
+      "word_timings": [
+        {
+          "word": "Walking",
+          "display_index": 0,
+          "start": 37.607,
+          "end": 38.267
+        },
+        {
+          "word": "toward",
+          "display_index": 1,
+          "start": 38.267,
+          "end": 38.703
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 38.703,
+          "end": 38.907
+        },
+        {
+          "word": "gate,",
+          "display_index": 3,
+          "start": 38.907,
+          "end": 40.547
+        },
+        {
+          "word": "he",
+          "display_index": 4,
+          "start": 40.547,
+          "end": 40.987
+        },
+        {
+          "word": "did",
+          "display_index": 5,
+          "start": 40.987,
+          "end": 41.407
+        },
+        {
+          "word": "not",
+          "display_index": 6,
+          "start": 41.407,
+          "end": 41.768
+        },
+        {
+          "word": "turn",
+          "display_index": 7,
+          "start": 41.768,
+          "end": 42.648
+        },
+        {
+          "word": "back.",
+          "display_index": 8,
+          "start": 42.648,
+          "end": 44.148
+        }
+      ],
+      "start": 37.607,
+      "end": 44.148
+    },
+    {
+      "line": 7,
+      "english": "Wishing him well in my heart, I saw him off.",
+      "word_timings": [
+        {
+          "word": "Wishing",
+          "display_index": 0,
+          "start": 45.408,
+          "end": 45.848
+        },
+        {
+          "word": "him",
+          "display_index": 1,
+          "start": 45.848,
+          "end": 46.048
+        },
+        {
+          "word": "well",
+          "display_index": 2,
+          "start": 46.048,
+          "end": 46.328
+        },
+        {
+          "word": "in",
+          "display_index": 3,
+          "start": 46.328,
+          "end": 46.486
+        },
+        {
+          "word": "my",
+          "display_index": 4,
+          "start": 46.486,
+          "end": 46.848
+        },
+        {
+          "word": "heart,",
+          "display_index": 5,
+          "start": 46.848,
+          "end": 47.534
+        },
+        {
+          "word": "I",
+          "display_index": 6,
+          "start": 47.534,
+          "end": 47.649
+        },
+        {
+          "word": "saw",
+          "display_index": 7,
+          "start": 47.649,
+          "end": 48.129
+        },
+        {
+          "word": "him",
+          "display_index": 8,
+          "start": 48.129,
+          "end": 48.469
+        },
+        {
+          "word": "off.",
+          "display_index": 9,
+          "start": 48.469,
+          "end": 49.329
+        }
+      ],
+      "start": 45.408,
+      "end": 49.329
+    },
+    {
+      "line": 8,
+      "english": "Not turning back was probably the better way, I thought.",
+      "word_timings": [
+        {
+          "word": "Not",
+          "display_index": 0,
+          "start": 49.629,
+          "end": 49.829
+        },
+        {
+          "word": "turning",
+          "display_index": 1,
+          "start": 49.829,
+          "end": 50.249
+        },
+        {
+          "word": "back",
+          "display_index": 2,
+          "start": 50.249,
+          "end": 50.649
+        },
+        {
+          "word": "was",
+          "display_index": 3,
+          "start": 50.649,
+          "end": 50.849
+        },
+        {
+          "word": "probably",
+          "display_index": 4,
+          "start": 50.849,
+          "end": 52.361
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 52.361,
+          "end": 52.749
+        },
+        {
+          "word": "better",
+          "display_index": 6,
+          "start": 52.749,
+          "end": 53.19
+        },
+        {
+          "word": "way,",
+          "display_index": 7,
+          "start": 53.19,
+          "end": 55.76
+        },
+        {
+          "word": "I",
+          "display_index": 8,
+          "start": 55.76,
+          "end": 55.91
+        },
+        {
+          "word": "thought.",
+          "display_index": 9,
+          "start": 55.91,
+          "end": 57.41
+        }
+      ],
+      "start": 49.629,
+      "end": 57.41
+    },
+    {
+      "line": 9,
+      "english": "My friend, having shared many years with me, was leaving to follow a new path.",
+      "word_timings": [
+        {
+          "word": "My",
+          "display_index": 0,
+          "start": 59.109,
+          "end": 59.451
+        },
+        {
+          "word": "friend,",
+          "display_index": 1,
+          "start": 59.451,
+          "end": 60.391
+        },
+        {
+          "word": "having",
+          "display_index": 2,
+          "start": 60.391,
+          "end": 60.991
+        },
+        {
+          "word": "shared",
+          "display_index": 3,
+          "start": 60.991,
+          "end": 61.631
+        },
+        {
+          "word": "many",
+          "display_index": 4,
+          "start": 61.631,
+          "end": 62.051
+        },
+        {
+          "word": "years",
+          "display_index": 5,
+          "start": 62.051,
+          "end": 62.511
+        },
+        {
+          "word": "with",
+          "display_index": 6,
+          "start": 62.511,
+          "end": 62.731
+        },
+        {
+          "word": "me,",
+          "display_index": 7,
+          "start": 62.731,
+          "end": 64.372
+        },
+        {
+          "word": "was",
+          "display_index": 8,
+          "start": 64.372,
+          "end": 64.612
+        },
+        {
+          "word": "leaving",
+          "display_index": 9,
+          "start": 64.612,
+          "end": 65.645
+        },
+        {
+          "word": "to",
+          "display_index": 10,
+          "start": 65.645,
+          "end": 66.212
+        },
+        {
+          "word": "follow",
+          "display_index": 11,
+          "start": 66.212,
+          "end": 68.617
+        },
+        {
+          "word": "a",
+          "display_index": 12,
+          "start": 68.617,
+          "end": 68.812
+        },
+        {
+          "word": "new",
+          "display_index": 13,
+          "start": 68.812,
+          "end": 69.152
+        },
+        {
+          "word": "path.",
+          "display_index": 14,
+          "start": 69.152,
+          "end": 70.652
+        }
+      ],
+      "start": 59.109,
+      "end": 70.652
+    },
+    {
+      "line": 10,
+      "english": "We had promised to keep in touch.",
+      "word_timings": [
+        {
+          "word": "We",
+          "display_index": 0,
+          "start": 72.413,
+          "end": 72.613
+        },
+        {
+          "word": "had",
+          "display_index": 1,
+          "start": 72.613,
+          "end": 72.973
+        },
+        {
+          "word": "promised",
+          "display_index": 2,
+          "start": 72.973,
+          "end": 74.298
+        },
+        {
+          "word": "to",
+          "display_index": 3,
+          "start": 74.298,
+          "end": 74.493
+        },
+        {
+          "word": "keep",
+          "display_index": 4,
+          "start": 74.493,
+          "end": 75.654
+        },
+        {
+          "word": "in",
+          "display_index": 5,
+          "start": 75.654,
+          "end": 75.954
+        },
+        {
+          "word": "touch.",
+          "display_index": 6,
+          "start": 75.954,
+          "end": 77.454
+        }
+      ],
+      "start": 72.413,
+      "end": 77.454
+    },
+    {
+      "line": 11,
+      "english": "Through the large glass window of the airport, I watched his plane depart.",
+      "word_timings": [
+        {
+          "word": "Through",
+          "display_index": 0,
+          "start": 79.314,
+          "end": 79.584
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 79.584,
+          "end": 79.774
+        },
+        {
+          "word": "large",
+          "display_index": 2,
+          "start": 79.774,
+          "end": 80.214
+        },
+        {
+          "word": "glass",
+          "display_index": 3,
+          "start": 80.214,
+          "end": 80.635
+        },
+        {
+          "word": "window",
+          "display_index": 4,
+          "start": 80.635,
+          "end": 81.375
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 81.375,
+          "end": 81.711
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 81.711,
+          "end": 82.015
+        },
+        {
+          "word": "airport,",
+          "display_index": 7,
+          "start": 82.015,
+          "end": 83.115
+        },
+        {
+          "word": "I",
+          "display_index": 8,
+          "start": 83.115,
+          "end": 83.195
+        },
+        {
+          "word": "watched",
+          "display_index": 9,
+          "start": 83.195,
+          "end": 83.635
+        },
+        {
+          "word": "his",
+          "display_index": 10,
+          "start": 83.635,
+          "end": 83.935
+        },
+        {
+          "word": "plane",
+          "display_index": 11,
+          "start": 83.935,
+          "end": 84.455
+        },
+        {
+          "word": "depart.",
+          "display_index": 12,
+          "start": 84.455,
+          "end": 85.255
+        }
+      ],
+      "start": 79.314,
+      "end": 85.255
+    },
+    {
+      "line": 12,
+      "english": "In the morning light, the plane slowly rose into the sky.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 85.375,
+          "end": 85.515
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 85.515,
+          "end": 85.715
+        },
+        {
+          "word": "morning",
+          "display_index": 2,
+          "start": 85.715,
+          "end": 86.556
+        },
+        {
+          "word": "light,",
+          "display_index": 3,
+          "start": 86.556,
+          "end": 89.522
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 89.522,
+          "end": 89.636
+        },
+        {
+          "word": "plane",
+          "display_index": 5,
+          "start": 89.636,
+          "end": 90.636
+        },
+        {
+          "word": "slowly",
+          "display_index": 6,
+          "start": 90.636,
+          "end": 91.396
+        },
+        {
+          "word": "rose",
+          "display_index": 7,
+          "start": 91.396,
+          "end": 92.157
+        },
+        {
+          "word": "into",
+          "display_index": 8,
+          "start": 92.157,
+          "end": 92.973
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 92.973,
+          "end": 93.197
+        },
+        {
+          "word": "sky.",
+          "display_index": 10,
+          "start": 93.197,
+          "end": 94.697
+        }
+      ],
+      "start": 85.375,
+      "end": 94.697
+    },
+    {
+      "line": 13,
+      "english": "The future awaiting my friend seemed to spread beyond the clouds.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 96.643,
+          "end": 96.757
+        },
+        {
+          "word": "future",
+          "display_index": 1,
+          "start": 96.757,
+          "end": 97.578
+        },
+        {
+          "word": "awaiting",
+          "display_index": 2,
+          "start": 97.578,
+          "end": 98.262
+        },
+        {
+          "word": "my",
+          "display_index": 3,
+          "start": 98.262,
+          "end": 98.838
+        },
+        {
+          "word": "friend",
+          "display_index": 4,
+          "start": 98.838,
+          "end": 101.478
+        },
+        {
+          "word": "seemed",
+          "display_index": 5,
+          "start": 101.478,
+          "end": 101.829
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 101.829,
+          "end": 102.058
+        },
+        {
+          "word": "spread",
+          "display_index": 7,
+          "start": 102.058,
+          "end": 102.819
+        },
+        {
+          "word": "beyond",
+          "display_index": 8,
+          "start": 102.819,
+          "end": 103.688
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 103.688,
+          "end": 103.879
+        },
+        {
+          "word": "clouds.",
+          "display_index": 10,
+          "start": 103.879,
+          "end": 105.379
+        }
+      ],
+      "start": 96.643,
+      "end": 105.379
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

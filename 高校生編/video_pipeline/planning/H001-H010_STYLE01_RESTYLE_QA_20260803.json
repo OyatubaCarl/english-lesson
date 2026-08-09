@@ -1,0 +1,97 @@
+{
+  "scope": "H001-H010",
+  "date": "2026-08-03",
+  "status": "PASS",
+  "visual_policy": "画風01『光彩・劇場アニメ背景』。歌詞・舞台・人物・時系列の整合性を美しさより優先。",
+  "image_generation": {
+    "mode": "built-in image generation",
+    "final_scene_images": 129,
+    "images_per_lesson": {
+      "H001": 12,
+      "H002": 13,
+      "H003-H005": 13,
+      "H006-H008": 13,
+      "H009-H010": 13
+    },
+    "resolution": "1672x941",
+    "prompt_records": [
+      "高校生編/video_pipeline/planning/H001-H010_RESTYLE_PROMPTS_STYLE01.md",
+      "高校生編/video_pipeline/planning/H001-H002_DETAIL_SHOTS_PROMPTS_STYLE01.md",
+      "高校生編/video_pipeline/planning/H003-H005_DETAIL_SHOTS_PROMPTS_STYLE01.md",
+      "高校生編/video_pipeline/planning/H006-H008_DETAIL_SHOTS_PROMPTS_STYLE01.md",
+      "高校生編/video_pipeline/planning/H009-H010_DETAIL_SHOTS_PROMPTS_STYLE01.md"
+    ],
+    "visual_bible": "高校生編/video_pipeline/planning/H001-H010_RESTYLE_VISUAL_BIBLE_STYLE01.json",
+    "primary_reference": "高校生編/video_pipeline/H015/scenes/final_style01/04_regret_at_steps.png"
+  },
+  "continuity_checks": {
+    "same_teen_protagonist_H001_H006_H008_H009": true,
+    "same_future_adult_H007_H010": true,
+    "same_family_H004_H005_H008_H009": true,
+    "H008_distinct_older_brother_present": true,
+    "H005_dog_welcomed_as_family_not_human_adoption": true,
+    "season_time_location_order_consistent": true,
+    "no_readable_generated_text": true
+  },
+  "visual_corrections_after_review": [
+    "H001: 5カットから12カットへ増加し、水面・霧・光線・視線・小川・鳥・魚・森・鹿へ描写ごとに寄る構成へ変更",
+    "H002: 5カットから13カットへ増加し、雪解け・野原・新芽・桜・主人公と友人の表情・希望へ描写ごとに寄る構成へ変更",
+    "H003: 5カットから13カットへ増加し、本・章・ページ・少年の目・窓外の子ども・選んだ一冊へ描写ごとに寄る構成へ変更",
+    "H004: 5カットから13カットへ増加し、箱を渡す手・古写真・手紙・父の表情・受け継ぐ手元・少年の決意へ描写ごとに寄る構成へ変更",
+    "H005: 5カットから13カットへ増加し、Soraの不安・家族の歓迎・母の手・少年との信頼・数週間後の落ち着きへ描写ごとに寄る構成へ変更",
+    "H006: 5カットから13カットへ増加し、秋風・本・茶・小鳥・祖母と少年の表情へ描写ごとに寄る。梅は花なし、祖父は非出現を維持",
+    "H007: 5カットから13カットへ増加し、コーヒー・混雑車内・同僚・職務・昼食・夕方の駅・車窓の表情へ描写ごとに寄る構成へ変更",
+    "H008: 5カットから13カットへ増加し、母の準備・父の一杯・妹の旅行提案・別人物の兄の運転提案・献立の判断へ描写ごとに寄る構成へ変更",
+    "H009: 5カットから13カットへ増加し、十時の出発準備・条件の整理・雨による午後への変更・予報回復・母のサンドイッチ・家族の協力へ描写ごとに寄る構成へ変更",
+    "H010: 5カットから13カットへ増加し、講義と資料・待っていた約束・午後の会議・夕方の報告書・三年後への思い・明日の机へ描写ごとに寄る構成へ変更",
+    "H010: 約束を確認する手帳から生成された小さな日付数字を除去し、文字なしの抽象予定枠へ差し替え",
+    "H001: 魚・波紋・鳥を明示し、完成動画の字幕帯より上へ再配置",
+    "H006: 秋の現在場面に梅の花を描かず、祖父の記憶を祖母の表情と光だけで表現",
+    "H007: 午後業務に鳴る固定電話と新しい依頼書を明示"
+  ],
+  "caption_checks": {
+    "canonical_lesson_vocabulary_only": true,
+    "every_english_segment_has_meaning_ruby": true,
+    "every_japanese_kanji_segment_has_reading_ruby": true,
+    "highlight_color_only": true,
+    "normal_and_active_font_size_px": 66,
+    "position_weight_linebreak_fixed": true
+  },
+  "camera_check": "one smooth push/hold/pull per shot; smoothstep interpolation; no jitter/no random/no sinusoidal shake",
+  "individual_videos": {
+    "count": 10,
+    "structural_verification": "10/10 PASS",
+    "full_video_audio_decode": "10/10 PASS"
+  },
+  "combined_video": {
+    "output": "高校生編/video_pipeline/combined/high_H001-H010_mixed_japanese_full_ruby_v5_tacobeat_canonical_vocab_color_only.mp4",
+    "chapters": 10,
+    "duration_seconds": 980.767,
+    "full_video_audio_decode": "PASS"
+  },
+  "visual_qa": [
+    "高校生編/video_pipeline/qa_contact_sheets/H001-H010_style01_restyle_129scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H001-H010_style01_final_video_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H001_detailshot_12scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H002_detailshot_13scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H001_detailshot_final_video_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H002_detailshot_final_video_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H003_detailshot_13scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H004_detailshot_13scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H005_detailshot_13scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H003_detailshot_final_video_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H004_detailshot_final_video_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H005_detailshot_final_video_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H006_detailshot_13scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H007_detailshot_13scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H008_detailshot_13scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H006_detailshot_final_video_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H007_detailshot_final_video_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H008_detailshot_final_video_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H009_detailshot_13scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H010_detailshot_13scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H009_detailshot_final_video_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H010_detailshot_final_video_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H001_fish_visible_final.jpg"
+  ]
+}

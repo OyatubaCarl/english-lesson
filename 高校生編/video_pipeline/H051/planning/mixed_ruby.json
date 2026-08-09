@@ -1,0 +1,1376 @@
+{
+  "lesson": "H051",
+  "title_ja": "人工知能と倫理",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 16,
+  "canonical_target_lines": 11,
+  "mixed_lines": 11,
+  "japanese_only_lines": 5,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 2.62,
+      "end": 9.34,
+      "english": "Artificial intelligence, that is, AI, has made remarkable progress over the past ten years.",
+      "japanese": "人工知能、つまりAIはこの10年で目覚ましい進歩を遂げました。",
+      "mixed": "artificial な知能、つまりAIはこの10年間で目覚ましい progress を遂げました。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "artificial",
+          "ruby": "人工の"
+        },
+        {
+          "type": "ja",
+          "text": " な知能、つまりAIはこの10年間で目覚ましい ",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "知能",
+              "ruby": "ちのう"
+            },
+            {
+              "text": "、つまりAIはこの10",
+              "ruby": ""
+            },
+            {
+              "text": "年間",
+              "ruby": "ねんかん"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "目覚",
+              "ruby": "めざ"
+            },
+            {
+              "text": "ましい",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "progress",
+          "ruby": "進展"
+        },
+        {
+          "type": "ja",
+          "text": " を遂げました。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "遂",
+              "ruby": "と"
+            },
+            {
+              "text": "げました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "Artificial",
+          "canonical_word": "artificial",
+          "meaning": "人工の"
+        },
+        {
+          "english": "progress",
+          "canonical_word": "progress",
+          "meaning": "進展"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "artificial",
+          "reading": "人工の",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "artificial",
+          "canonical_meaning": "人工の"
+        },
+        {
+          "english": "progress",
+          "reading": "進展",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "progress",
+          "canonical_meaning": "進展"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 2,
+      "start": 11.36,
+      "end": 21.073,
+      "english": "Algorithms that learn from vast amounts of data now support humans in many fields, including medicine, finance, and transportation.",
+      "japanese": "膨大なデータから学習するアルゴリズムは現在、医療、金融、交通などのさまざまな分野で人間をサポートしています。",
+      "mixed": "膨大な data から学習するアルゴリズムは現在、医療、金融、交通などのさまざまな分野で人間をサポートしています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "膨大な ",
+          "parts": [
+            {
+              "text": "膨大",
+              "ruby": "ぼうだい"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "data",
+          "ruby": "データ"
+        },
+        {
+          "type": "ja",
+          "text": " から学習するアルゴリズムは現在、医療、金融、交通などのさまざまな分野で人間をサポートしています。",
+          "parts": [
+            {
+              "text": "から",
+              "ruby": ""
+            },
+            {
+              "text": "学習",
+              "ruby": "がくしゅう"
+            },
+            {
+              "text": "するアルゴリズムは",
+              "ruby": ""
+            },
+            {
+              "text": "現在",
+              "ruby": "げんざい"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "医療",
+              "ruby": "いりょう"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "金融",
+              "ruby": "きんゆう"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "交通",
+              "ruby": "こうつう"
+            },
+            {
+              "text": "などのさまざまな",
+              "ruby": ""
+            },
+            {
+              "text": "分野",
+              "ruby": "ぶんや"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "人間",
+              "ruby": "にんげん"
+            },
+            {
+              "text": "をサポートしています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "data",
+          "canonical_word": "data",
+          "meaning": "データ"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "data",
+          "reading": "データ",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "data",
+          "canonical_meaning": "データ"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 3,
+      "start": 21.073,
+      "end": 29.491,
+      "english": "Diagnostic assistance, self-driving cars, and natural language processing.",
+      "japanese": "診断支援、自動運転車、自然言語処理。",
+      "mixed": "診断支援、自動運転車、自然言語処理。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "診断支援、自動運転車、自然言語処理。",
+          "parts": [
+            {
+              "text": "診断",
+              "ruby": "しんだん"
+            },
+            {
+              "text": "支援",
+              "ruby": "しえん"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "自動",
+              "ruby": "じどう"
+            },
+            {
+              "text": "運転",
+              "ruby": "うんてん"
+            },
+            {
+              "text": "車",
+              "ruby": "しゃ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "自然",
+              "ruby": "しぜん"
+            },
+            {
+              "text": "言語",
+              "ruby": "げんご"
+            },
+            {
+              "text": "処理",
+              "ruby": "しょり"
+            },
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 4,
+      "start": 29.491,
+      "end": 34.204,
+      "english": "Each application is changing our lives.",
+      "japanese": "それぞれのアプリケーションが私たちの生活を変えています。",
+      "mixed": "それぞれの application が僕たちの生活を変えています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "それぞれの ",
+          "parts": [
+            {
+              "text": "それぞれの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "application",
+          "ruby": "応用"
+        },
+        {
+          "type": "ja",
+          "text": " が僕たちの生活を変えています。",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "たちの",
+              "ruby": ""
+            },
+            {
+              "text": "生活",
+              "ruby": "せいかつ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "変",
+              "ruby": "か"
+            },
+            {
+              "text": "えています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "application",
+          "canonical_word": "application",
+          "meaning": "応用"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "application",
+          "reading": "応用",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "application",
+          "canonical_meaning": "応用"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 5,
+      "start": 34.204,
+      "end": 40.512,
+      "english": "In some industries, automation has already transformed the landscape of labor.",
+      "japanese": "一部の業界では、自動化により労働環境がすでに変化しています。",
+      "mixed": "一部の industry では、automation によって労働の風景がすでに変化しています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "一部の ",
+          "parts": [
+            {
+              "text": "一部",
+              "ruby": "いちぶ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "industry",
+          "ruby": "産業"
+        },
+        {
+          "type": "ja",
+          "text": " では、",
+          "parts": [
+            {
+              "text": "では、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "automation",
+          "ruby": "自動化"
+        },
+        {
+          "type": "ja",
+          "text": " によって労働の風景がすでに変化しています。",
+          "parts": [
+            {
+              "text": "によって",
+              "ruby": ""
+            },
+            {
+              "text": "労働",
+              "ruby": "ろうどう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "風景",
+              "ruby": "ふうけい"
+            },
+            {
+              "text": "がすでに",
+              "ruby": ""
+            },
+            {
+              "text": "変化",
+              "ruby": "へんか"
+            },
+            {
+              "text": "しています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "industries",
+          "canonical_word": "industry",
+          "meaning": "産業"
+        },
+        {
+          "english": "automation",
+          "canonical_word": "automation",
+          "meaning": "自動化"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "industry",
+          "reading": "産業",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "industry",
+          "canonical_meaning": "産業"
+        },
+        {
+          "english": "automation",
+          "reading": "自動化",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "automation",
+          "canonical_meaning": "自動化"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 6,
+      "start": 40.512,
+      "end": 45.753,
+      "english": "But rapid technological progress comes with serious risks as well.",
+      "japanese": "しかし、急速な技術進歩には深刻なリスクも伴います。",
+      "mixed": "しかし、急速な技術の progress には深刻な risks も伴います。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "しかし、急速な技術の ",
+          "parts": [
+            {
+              "text": "しかし、",
+              "ruby": ""
+            },
+            {
+              "text": "急速",
+              "ruby": "きゅうそく"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "技術",
+              "ruby": "ぎじゅつ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "progress",
+          "ruby": "進展"
+        },
+        {
+          "type": "ja",
+          "text": " には深刻な ",
+          "parts": [
+            {
+              "text": "には",
+              "ruby": ""
+            },
+            {
+              "text": "深刻",
+              "ruby": "しんこく"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "risks",
+          "ruby": "危険"
+        },
+        {
+          "type": "ja",
+          "text": " も伴います。",
+          "parts": [
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "伴",
+              "ruby": "ともな"
+            },
+            {
+              "text": "います。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "progress",
+          "canonical_word": "progress",
+          "meaning": "進展"
+        },
+        {
+          "english": "risks",
+          "canonical_word": "risk",
+          "meaning": "危険"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "progress",
+          "reading": "進展",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "progress",
+          "canonical_meaning": "進展"
+        },
+        {
+          "english": "risks",
+          "reading": "危険",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "risk",
+          "canonical_meaning": "危険"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 7,
+      "start": 45.753,
+      "end": 50.6,
+      "english": "Invasion of privacy, the loss of jobs, the spread of misinformation.",
+      "japanese": "プライバシーの侵害、職の喪失、誤った情報の拡散。",
+      "mixed": "プライバシーの侵害、職の喪失、誤った情報の拡散。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "プライバシーの侵害、職の喪失、誤った情報の拡散。",
+          "parts": [
+            {
+              "text": "プライバシーの",
+              "ruby": ""
+            },
+            {
+              "text": "侵害",
+              "ruby": "しんがい"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "職",
+              "ruby": "しょく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "喪失",
+              "ruby": "そうしつ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "誤",
+              "ruby": "あやま"
+            },
+            {
+              "text": "った",
+              "ruby": ""
+            },
+            {
+              "text": "情報",
+              "ruby": "じょうほう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "拡散",
+              "ruby": "かくさん"
+            },
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 8,
+      "start": 60.88,
+      "end": 64.46,
+      "english": "Our society must face these consequences head on.",
+      "japanese": "私たちの社会は、こうした結果に正面から向き合わなければなりません。",
+      "mixed": "僕たちの社会は、こうした consequences に正面から向き合わなければなりません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "僕たちの社会は、こうした ",
+          "parts": [
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "たちの",
+              "ruby": ""
+            },
+            {
+              "text": "社会",
+              "ruby": "しゃかい"
+            },
+            {
+              "text": "は、こうした",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "consequences",
+          "ruby": "結果"
+        },
+        {
+          "type": "ja",
+          "text": " に正面から向き合わなければなりません。",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "正面",
+              "ruby": "しょうめん"
+            },
+            {
+              "text": "から",
+              "ruby": ""
+            },
+            {
+              "text": "向き合",
+              "ruby": "むきあ"
+            },
+            {
+              "text": "わなければなりません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "consequences",
+          "canonical_word": "consequence",
+          "meaning": "結果"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "consequences",
+          "reading": "結果",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "consequence",
+          "canonical_meaning": "結果"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 9,
+      "start": 64.46,
+      "end": 68.52,
+      "english": "Who bears the responsibility for an algorithm?",
+      "japanese": "アルゴリズムに対する責任は誰が負うのでしょうか?",
+      "mixed": "アルゴリズムに対する responsibility は誰が負うのでしょうか?",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "アルゴリズムに対する ",
+          "parts": [
+            {
+              "text": "アルゴリズムに",
+              "ruby": ""
+            },
+            {
+              "text": "対",
+              "ruby": "たい"
+            },
+            {
+              "text": "する",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "responsibility",
+          "ruby": "責任"
+        },
+        {
+          "type": "ja",
+          "text": " は誰が負うのでしょうか?",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "誰",
+              "ruby": "だれ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "負",
+              "ruby": "お"
+            },
+            {
+              "text": "うのでしょうか?",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "responsibility",
+          "canonical_word": "responsibility",
+          "meaning": "責任"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "responsibility",
+          "reading": "責任",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "responsibility",
+          "canonical_meaning": "責任"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 10,
+      "start": 69.64,
+      "end": 74.84,
+      "english": "When a self-driving car causes an accident, who is held accountable in court?",
+      "japanese": "自動運転車が事故を起こした場合、法廷では誰が責任を負うのでしょうか?",
+      "mixed": "自動運転車が事故を起こした場合、法廷では誰が accountable となるのでしょうか？",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "自動運転車が事故を起こした場合、法廷では誰が ",
+          "parts": [
+            {
+              "text": "自動",
+              "ruby": "じどう"
+            },
+            {
+              "text": "運転",
+              "ruby": "うんてん"
+            },
+            {
+              "text": "車",
+              "ruby": "しゃ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "事故",
+              "ruby": "じこ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "起",
+              "ruby": "お"
+            },
+            {
+              "text": "こした",
+              "ruby": ""
+            },
+            {
+              "text": "場合",
+              "ruby": "ばあい"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "法廷",
+              "ruby": "ほうてい"
+            },
+            {
+              "text": "では",
+              "ruby": ""
+            },
+            {
+              "text": "誰",
+              "ruby": "だれ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "accountable",
+          "ruby": "責任を負うべき"
+        },
+        {
+          "type": "ja",
+          "text": " となるのでしょうか？",
+          "parts": [
+            {
+              "text": "となるのでしょうか？",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "accountable",
+          "canonical_word": "accountable",
+          "meaning": "責任を負うべき"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "accountable",
+          "reading": "責任を負うべき",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "accountable",
+          "canonical_meaning": "責任を負うべき"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 11,
+      "start": 74.84,
+      "end": 79.02,
+      "english": "These questions still do not have complete answers.",
+      "japanese": "これらの質問にはまだ完全な答えがありません。",
+      "mixed": "これらの質問にはまだ完全な答えがありません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "これらの質問にはまだ完全な答えがありません。",
+          "parts": [
+            {
+              "text": "これらの",
+              "ruby": ""
+            },
+            {
+              "text": "質問",
+              "ruby": "しつもん"
+            },
+            {
+              "text": "にはまだ",
+              "ruby": ""
+            },
+            {
+              "text": "完全",
+              "ruby": "かんぜん"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "答",
+              "ruby": "こた"
+            },
+            {
+              "text": "えがありません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 12,
+      "start": 79.6,
+      "end": 84.32,
+      "english": "Governments around the world have begun to develop regulations for AI.",
+      "japanese": "世界中の政府が AI に関する規制の策定を始めています。",
+      "mixed": "世界中の政府が、AIに関する regulations の整備を始めています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "世界中の政府が、AIに関する ",
+          "parts": [
+            {
+              "text": "世界",
+              "ruby": "せかい"
+            },
+            {
+              "text": "中",
+              "ruby": "ちゅう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "政府",
+              "ruby": "せいふ"
+            },
+            {
+              "text": "が、AIに",
+              "ruby": ""
+            },
+            {
+              "text": "関",
+              "ruby": "かん"
+            },
+            {
+              "text": "する",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "regulations",
+          "ruby": "規制"
+        },
+        {
+          "type": "ja",
+          "text": " の整備を始めています。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "整備",
+              "ruby": "せいび"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "始",
+              "ruby": "はじ"
+            },
+            {
+              "text": "めています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "regulations",
+          "canonical_word": "regulation",
+          "meaning": "規制"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "regulations",
+          "reading": "規制",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "regulation",
+          "canonical_meaning": "規制"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 13,
+      "start": 85.96,
+      "end": 95.06,
+      "english": "The European Union has already established a comprehensive law concerning the ethical use of AI.",
+      "japanese": "欧州連合はすでに AI の倫理的使用に関する包括的な法律を制定しています。",
+      "mixed": "欧州連合はすでに、AIの ethical な使用に関する包括的な法律を制定しています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "欧州連合はすでに、AIの ",
+          "parts": [
+            {
+              "text": "欧州",
+              "ruby": "おうしゅう"
+            },
+            {
+              "text": "連合",
+              "ruby": "れんごう"
+            },
+            {
+              "text": "はすでに、AIの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "ethical",
+          "ruby": "倫理的な"
+        },
+        {
+          "type": "ja",
+          "text": " な使用に関する包括的な法律を制定しています。",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "使用",
+              "ruby": "しよう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "関",
+              "ruby": "かん"
+            },
+            {
+              "text": "する",
+              "ruby": ""
+            },
+            {
+              "text": "包括",
+              "ruby": "ほうかつ"
+            },
+            {
+              "text": "的",
+              "ruby": "てき"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "法律",
+              "ruby": "ほうりつ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "制定",
+              "ruby": "せいてい"
+            },
+            {
+              "text": "しています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "ethical",
+          "canonical_word": "ethical",
+          "meaning": "倫理的な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "ethical",
+          "reading": "倫理的な",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "ethical",
+          "canonical_meaning": "倫理的な"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 14,
+      "start": 95.06,
+      "end": 98.1,
+      "english": "Technology in itself is neutral.",
+      "japanese": "テクノロジー自体は中立です。",
+      "mixed": "テクノロジー自体は中立です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "テクノロジー自体は中立です。",
+          "parts": [
+            {
+              "text": "テクノロジー",
+              "ruby": ""
+            },
+            {
+              "text": "自体",
+              "ruby": "じたい"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "中立",
+              "ruby": "ちゅうりつ"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 15,
+      "start": 102.56,
+      "end": 107.8,
+      "english": "Whether it is used for an ethical purpose or not depends on our human judgment.",
+      "japanese": "倫理的な目的で使用されるかどうかは、私たちの人間の判断に依存します。",
+      "mixed": "ethical な目的に使うかどうかは、僕たち人間の judgment にかかっています。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "ethical",
+          "ruby": "倫理的な"
+        },
+        {
+          "type": "ja",
+          "text": " な目的に使うかどうかは、僕たち人間の ",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "目的",
+              "ruby": "もくてき"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "使",
+              "ruby": "つか"
+            },
+            {
+              "text": "うかどうかは、",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "たち",
+              "ruby": ""
+            },
+            {
+              "text": "人間",
+              "ruby": "にんげん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "judgment",
+          "ruby": "判断"
+        },
+        {
+          "type": "ja",
+          "text": " にかかっています。",
+          "parts": [
+            {
+              "text": "にかかっています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "ethical",
+          "canonical_word": "ethical",
+          "meaning": "倫理的な"
+        },
+        {
+          "english": "judgment",
+          "canonical_word": "judgment",
+          "meaning": "判断"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "ethical",
+          "reading": "倫理的な",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "ethical",
+          "canonical_meaning": "倫理的な"
+        },
+        {
+          "english": "judgment",
+          "reading": "判断",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "judgment",
+          "canonical_meaning": "判断"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 16,
+      "start": 108.44,
+      "end": 118.1,
+      "english": "AI must exist not so that it can think in our place, but so that we can think better than before.",
+      "japanese": "AI は、私たちの代わりに考えるためではなく、私たちが以前よりもよく考えることができるように存在する必要があります。",
+      "mixed": "AIは、僕たちの代わりに考えるためではなく、僕たちが以前よりよく考えられるように存在しなければなりません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "AIは、僕たちの代わりに考えるためではなく、僕たちが以前よりよく考えられるように存在しなければなりません。",
+          "parts": [
+            {
+              "text": "AIは、",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "たちの",
+              "ruby": ""
+            },
+            {
+              "text": "代",
+              "ruby": "か"
+            },
+            {
+              "text": "わりに",
+              "ruby": ""
+            },
+            {
+              "text": "考",
+              "ruby": "かんが"
+            },
+            {
+              "text": "えるためではなく、",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "たちが",
+              "ruby": ""
+            },
+            {
+              "text": "以前",
+              "ruby": "いぜん"
+            },
+            {
+              "text": "よりよく",
+              "ruby": ""
+            },
+            {
+              "text": "考",
+              "ruby": "かんが"
+            },
+            {
+              "text": "えられるように",
+              "ruby": ""
+            },
+            {
+              "text": "存在",
+              "ruby": "そんざい"
+            },
+            {
+              "text": "しなければなりません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_manual_translation"
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H135.md",
+  "audio": "高校生編/suno_ready/generated/audio/H135/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 197.281,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0067,
+  "expected_words": 297,
+  "transcribed_words": 299,
+  "matched_words": 295,
+  "coverage": 0.9933,
+  "precision": 0.9866,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 296,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 12,
+      "length": 1,
+      "words": [
+        "mountainside"
+      ]
+    },
+    {
+      "start": 23,
+      "length": 1,
+      "words": [
+        "inn"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 12,
+      "actual_start": 12,
+      "expected": [
+        "mountainside"
+      ],
+      "actual": [
+        "mountain",
+        "side"
+      ],
+      "actual_confidence": 0.799,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 23,
+      "actual_start": 24,
+      "expected": [
+        "inn"
+      ],
+      "actual": [
+        "and"
+      ],
+      "actual_confidence": 0.414,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 297,
+      "actual_start": 298,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.2277
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "In the early hours of a winter morning steam appears on the mountain side The steam rising from the roof of a hot spring and melts into the cold air This hot spring town has a history of more than a thousand years The water of the hot spring, referred to in old documents, still flows unchanged from the ground. The innkeeper is the fifth generation of his family. Rising early, he adjusts the temperature of the hot spring and prepares to welcome guests. His measured manner of speech carries the sense of history that has accumulated in this land Guests come from across the country and from overseas Their dialects vary, but the moment they step into the bath Everyone lets out a deep breath in the same way The relaxation of a hot spring is beyond words. Soaking in the bath, I look out at the snowy scene through the window. On distant mountains, snow has piled up. And the branches of trees are dyed white. Here, far from the noise of the city, the flow of time slips into a gentle pace. Dinner features dishes made with the ingredients of this land Wild mountain vegetables, river trout, soup made with local miso It is a taste one cannot find in the city After dinner, the innkeeper recites old stories Tales of the village's spirits Of gods of ancestors They are not written in history books But have been passed down orally As the memory of this land As the night deepens Only the sound of the water is heard The hot spring welling endlessly From its source Flows on beyond the human scale of time A thousand years ago now, a thousand years from now The waters of this land will keep healing people unchanged you",
+  "segments": [
+    {
+      "start": 9.9,
+      "end": 15.92,
+      "text": "In the early hours of a winter morning steam appears on the mountain side"
+    },
+    {
+      "start": 15.92,
+      "end": 21.74,
+      "text": "The steam rising from the roof of a hot spring and melts into the cold air"
+    },
+    {
+      "start": 23.28,
+      "end": 29.38,
+      "text": "This hot spring town has a history of more than a thousand years"
+    },
+    {
+      "start": 30.98,
+      "end": 40.16,
+      "text": "The water of the hot spring, referred to in old documents, still flows unchanged from the ground."
+    },
+    {
+      "start": 40.9,
+      "end": 53.18,
+      "text": "The innkeeper is the fifth generation of his family. Rising early, he adjusts the temperature of the hot spring and prepares to welcome guests."
+    },
+    {
+      "start": 56.28,
+      "end": 66.28,
+      "text": "His measured manner of speech carries the sense of history that has accumulated in this land"
+    },
+    {
+      "start": 66.28,
+      "end": 71.24,
+      "text": "Guests come from across the country and from overseas"
+    },
+    {
+      "start": 71.24,
+      "end": 76.48,
+      "text": "Their dialects vary, but the moment they step into the bath"
+    },
+    {
+      "start": 76.48,
+      "end": 82.1,
+      "text": "Everyone lets out a deep breath in the same way"
+    },
+    {
+      "start": 83.44,
+      "end": 87.3,
+      "text": "The relaxation of a hot spring is beyond words."
+    },
+    {
+      "start": 87.66,
+      "end": 92.38,
+      "text": "Soaking in the bath, I look out at the snowy scene through the window."
+    },
+    {
+      "start": 93.48,
+      "end": 97.28,
+      "text": "On distant mountains, snow has piled up."
+    },
+    {
+      "start": 97.9,
+      "end": 102.5,
+      "text": "And the branches of trees are dyed white."
+    },
+    {
+      "start": 106.58,
+      "end": 112.5,
+      "text": "Here, far from the noise of the city, the flow of time slips into a gentle pace."
+    },
+    {
+      "start": 112.5,
+      "end": 117.78,
+      "text": "Dinner features dishes made with the ingredients of this land"
+    },
+    {
+      "start": 117.78,
+      "end": 123.3,
+      "text": "Wild mountain vegetables, river trout, soup made with local miso"
+    },
+    {
+      "start": 123.3,
+      "end": 128.26,
+      "text": "It is a taste one cannot find in the city"
+    },
+    {
+      "start": 130.3,
+      "end": 135.36,
+      "text": "After dinner, the innkeeper recites old stories"
+    },
+    {
+      "start": 136.1,
+      "end": 139.02,
+      "text": "Tales of the village's spirits"
+    },
+    {
+      "start": 139.02,
+      "end": 141.86,
+      "text": "Of gods of ancestors"
+    },
+    {
+      "start": 141.86,
+      "end": 145.4,
+      "text": "They are not written in history books"
+    },
+    {
+      "start": 145.4,
+      "end": 148.02,
+      "text": "But have been passed down orally"
+    },
+    {
+      "start": 148.62,
+      "end": 152.18,
+      "text": "As the memory of this land"
+    },
+    {
+      "start": 154.02,
+      "end": 155.84,
+      "text": "As the night deepens"
+    },
+    {
+      "start": 155.84,
+      "end": 159.5,
+      "text": "Only the sound of the water is heard"
+    },
+    {
+      "start": 159.5,
+      "end": 161.74,
+      "text": "The hot spring welling endlessly"
+    },
+    {
+      "start": 161.74,
+      "end": 163.86,
+      "text": "From its source"
+    },
+    {
+      "start": 163.86,
+      "end": 175.86,
+      "text": "Flows on beyond the human scale of time A thousand years ago now, a thousand years from now"
+    },
+    {
+      "start": 176.58,
+      "end": 184.16,
+      "text": "The waters of this land will keep healing people unchanged"
+    },
+    {
+      "start": 194.76,
+      "end": 196.16,
+      "text": "you"
+    }
+  ]
+}

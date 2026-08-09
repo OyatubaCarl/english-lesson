@@ -1,0 +1,920 @@
+{
+  "lesson": 30,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L30/planning/lesson.json",
+  "title_en": "Lesson 30  A Sunday Walk",
+  "title_ja": "日曜日の散歩",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 12,
+  "lines": [
+    {
+      "line": 1,
+      "english": "On Sunday morning, my family was looking forward to a walk through the town.",
+      "source_ja": "日曜日の朝、家族みんなで町を歩くのを楽しみにしていました。",
+      "display_ja": "日曜日の朝、家族みんなで町を歩くのを楽しみにしていました。",
+      "corrected_translation": false,
+      "mixed": "日曜日の朝、家族みんなで町を through 歩くのを楽しみにしていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "日曜日の朝、家族みんなで町を ",
+          "parts": [
+            {
+              "text": "日曜",
+              "ruby": "にちよう"
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "朝",
+              "ruby": "あさ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "みんなで",
+              "ruby": ""
+            },
+            {
+              "text": "町",
+              "ruby": "まち"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "through",
+          "ruby": "〜を通り抜けて"
+        },
+        {
+          "type": "ja",
+          "text": " 歩くのを楽しみにしていました。",
+          "parts": [
+            {
+              "text": "歩",
+              "ruby": "ある"
+            },
+            {
+              "text": "くのを",
+              "ruby": ""
+            },
+            {
+              "text": "楽",
+              "ruby": "たの"
+            },
+            {
+              "text": "しみにしていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "through",
+          "canonical_word": "through",
+          "meaning": "〜を通り抜けて"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "through",
+          "reading": "〜を通り抜けて",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "through",
+          "canonical_meaning": "〜を通り抜けて"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "english": "We left home at seven o'clock.",
+      "source_ja": "7時に家を出発しました。",
+      "display_ja": "7時に家を出発しました。",
+      "corrected_translation": false,
+      "mixed": "seven 時に家を出発しました。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "seven",
+          "ruby": "7"
+        },
+        {
+          "type": "ja",
+          "text": " 時に家を出発しました。",
+          "parts": [
+            {
+              "text": "時",
+              "ruby": "とき"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "出発",
+              "ruby": "しゅっぱつ"
+            },
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "seven",
+          "canonical_word": "seven",
+          "meaning": "7"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "seven",
+          "reading": "7",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "seven",
+          "canonical_meaning": "7"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "The square in the center of town lies quietly between two big streets.",
+      "source_ja": "町の中心にある広場は、大きな通りにはさまれて、静かに広がっています。",
+      "display_ja": "町の中心にある広場は、大きな通りにはさまれて、静かに広がっています。",
+      "corrected_translation": false,
+      "mixed": "町の広場は、大きな通りの between に静かに広がっています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "町の広場は、大きな通りの ",
+          "parts": [
+            {
+              "text": "町",
+              "ruby": "まち"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "広場",
+              "ruby": "ひろば"
+            },
+            {
+              "text": "は、",
+              "ruby": ""
+            },
+            {
+              "text": "大",
+              "ruby": "おお"
+            },
+            {
+              "text": "きな",
+              "ruby": ""
+            },
+            {
+              "text": "通",
+              "ruby": "とお"
+            },
+            {
+              "text": "りの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "between",
+          "ruby": "〜の間に"
+        },
+        {
+          "type": "ja",
+          "text": " に静かに広がっています。",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            },
+            {
+              "text": "広",
+              "ruby": "ひろ"
+            },
+            {
+              "text": "がっています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "between",
+          "canonical_word": "between",
+          "meaning": "〜の間に"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "between",
+          "reading": "〜の間に",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "between",
+          "canonical_meaning": "〜の間に"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "Around the square, many colorful flowers were in bloom.",
+      "source_ja": "広場のまわりには、色とりどりの花が咲いていました。",
+      "display_ja": "広場のまわりには、色とりどりの花が咲いていました。",
+      "corrected_translation": false,
+      "mixed": "広場のまわりには、色とりどりの花が咲いていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "広場のまわりには、色とりどりの花が咲いていました。",
+          "parts": [
+            {
+              "text": "広場",
+              "ruby": "ひろば"
+            },
+            {
+              "text": "のまわりには、",
+              "ruby": ""
+            },
+            {
+              "text": "色",
+              "ruby": "いろ"
+            },
+            {
+              "text": "とりどりの",
+              "ruby": ""
+            },
+            {
+              "text": "花",
+              "ruby": "はな"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "咲",
+              "ruby": "さ"
+            },
+            {
+              "text": "いていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 5,
+      "english": "We walked across a small stone bridge to our favorite bakery.",
+      "source_ja": "小さな石の橋を渡って、お気に入りのパン屋さんへ向かいました。",
+      "display_ja": "小さな石の橋を渡って、お気に入りのパン屋さんへ向かいました。",
+      "corrected_translation": false,
+      "mixed": "小さな石橋を across して、お気に入りのパン屋へ向かいました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "小さな石橋を ",
+          "parts": [
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            },
+            {
+              "text": "石橋",
+              "ruby": "いしばし"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "across",
+          "ruby": "〜を渡って"
+        },
+        {
+          "type": "ja",
+          "text": " して、お気に入りのパン屋へ向かいました。",
+          "parts": [
+            {
+              "text": "して、お",
+              "ruby": ""
+            },
+            {
+              "text": "気",
+              "ruby": "き"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "入",
+              "ruby": "い"
+            },
+            {
+              "text": "りのパン",
+              "ruby": ""
+            },
+            {
+              "text": "屋",
+              "ruby": "や"
+            },
+            {
+              "text": "へ",
+              "ruby": ""
+            },
+            {
+              "text": "向",
+              "ruby": "む"
+            },
+            {
+              "text": "かいました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "across",
+          "canonical_word": "across",
+          "meaning": "〜を渡って"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "across",
+          "reading": "〜を渡って",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "across",
+          "canonical_meaning": "〜を渡って"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "The shop stood on the top of a hill.",
+      "source_ja": "お店は小さな丘のてっぺんに立っています。",
+      "display_ja": "お店は小さな丘のてっぺんに立っています。",
+      "corrected_translation": false,
+      "mixed": "お店は小さな丘のてっぺんに立っています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "お店は小さな丘のてっぺんに立っています。",
+          "parts": [
+            {
+              "text": "お",
+              "ruby": ""
+            },
+            {
+              "text": "店",
+              "ruby": "みせ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            },
+            {
+              "text": "丘",
+              "ruby": "おか"
+            },
+            {
+              "text": "のてっぺんに",
+              "ruby": ""
+            },
+            {
+              "text": "立",
+              "ruby": "た"
+            },
+            {
+              "text": "っています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 7,
+      "english": "Without the map, we would have been lost.",
+      "source_ja": "地図がなかったら、きっと道に迷っていたはず。",
+      "display_ja": "地図がなかったら、きっと道に迷っていたはず。",
+      "corrected_translation": false,
+      "mixed": "Without 地図なら、きっと道に迷っていたでしょう。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "Without",
+          "ruby": "〜なしで"
+        },
+        {
+          "type": "ja",
+          "text": " 地図なら、きっと道に迷っていたでしょう。",
+          "parts": [
+            {
+              "text": "地図",
+              "ruby": "ちず"
+            },
+            {
+              "text": "なら、きっと",
+              "ruby": ""
+            },
+            {
+              "text": "道",
+              "ruby": "みち"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "迷",
+              "ruby": "まよ"
+            },
+            {
+              "text": "っていたでしょう。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "Without",
+          "canonical_word": "without",
+          "meaning": "〜なしで"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Without",
+          "reading": "〜なしで",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "without",
+          "canonical_meaning": "〜なしで"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "My mother opened a big paper map and guided us.",
+      "source_ja": "母が大きな紙の地図を広げて、みんなを案内してくれました。",
+      "display_ja": "母が大きな紙の地図を広げて、みんなを案内してくれました。",
+      "corrected_translation": false,
+      "mixed": "母が大きな紙の地図を広げて、みんなを案内してくれました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "母が大きな紙の地図を広げて、みんなを案内してくれました。",
+          "parts": [
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "大",
+              "ruby": "おお"
+            },
+            {
+              "text": "きな",
+              "ruby": ""
+            },
+            {
+              "text": "紙",
+              "ruby": "かみ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "地図",
+              "ruby": "ちず"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "広",
+              "ruby": "ひろ"
+            },
+            {
+              "text": "げて、みんなを",
+              "ruby": ""
+            },
+            {
+              "text": "案内",
+              "ruby": "あんない"
+            },
+            {
+              "text": "してくれました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 9,
+      "english": "On our way home, we walked through the park and slowly around the pond.",
+      "source_ja": "帰り道には、公園を通って、池のまわりをゆっくり歩きました。",
+      "display_ja": "帰り道には、公園を通って、池のまわりをゆっくり歩きました。",
+      "corrected_translation": false,
+      "mixed": "帰り道には、公園を through 歩き、池の周りをゆっくり進みました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "帰り道には、公園を ",
+          "parts": [
+            {
+              "text": "帰り道",
+              "ruby": "かえりみち"
+            },
+            {
+              "text": "には、",
+              "ruby": ""
+            },
+            {
+              "text": "公園",
+              "ruby": "こうえん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "through",
+          "ruby": "〜を通り抜けて"
+        },
+        {
+          "type": "ja",
+          "text": " 歩き、池の周りをゆっくり進みました。",
+          "parts": [
+            {
+              "text": "歩",
+              "ruby": "ある"
+            },
+            {
+              "text": "き、",
+              "ruby": ""
+            },
+            {
+              "text": "池",
+              "ruby": "いけ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "周",
+              "ruby": "まわ"
+            },
+            {
+              "text": "りをゆっくり",
+              "ruby": ""
+            },
+            {
+              "text": "進",
+              "ruby": "すす"
+            },
+            {
+              "text": "みました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "through",
+          "canonical_word": "through",
+          "meaning": "〜を通り抜けて"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "through",
+          "reading": "〜を通り抜けて",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "through",
+          "canonical_meaning": "〜を通り抜けて"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "In the pond, the fish swam gently.",
+      "source_ja": "池の中では、魚たちがゆったり泳いでいます。",
+      "display_ja": "池の中では、魚たちがゆったり泳いでいます。",
+      "corrected_translation": false,
+      "mixed": "池の中では、魚たちがゆったり泳いでいます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "池の中では、魚たちがゆったり泳いでいます。",
+          "parts": [
+            {
+              "text": "池",
+              "ruby": "いけ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "中",
+              "ruby": "なか"
+            },
+            {
+              "text": "では、",
+              "ruby": ""
+            },
+            {
+              "text": "魚",
+              "ruby": "さかな"
+            },
+            {
+              "text": "たちがゆったり",
+              "ruby": ""
+            },
+            {
+              "text": "泳",
+              "ruby": "およ"
+            },
+            {
+              "text": "いでいます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 11,
+      "english": "Beside the pond, an old bench stood under a tall tree.",
+      "source_ja": "池のそばには、大きな木の下に古いベンチが立っていました。",
+      "display_ja": "池のそばには、大きな木の下に古いベンチが立っていました。",
+      "corrected_translation": false,
+      "mixed": "池の Beside には、大きな木の下に古いベンチがありました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "池の ",
+          "parts": [
+            {
+              "text": "池",
+              "ruby": "いけ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "Beside",
+          "ruby": "〜のそばに"
+        },
+        {
+          "type": "ja",
+          "text": " には、大きな木の下に古いベンチがありました。",
+          "parts": [
+            {
+              "text": "には、",
+              "ruby": ""
+            },
+            {
+              "text": "大",
+              "ruby": "おお"
+            },
+            {
+              "text": "きな",
+              "ruby": ""
+            },
+            {
+              "text": "木",
+              "ruby": "き"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "下",
+              "ruby": "した"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "古",
+              "ruby": "ふる"
+            },
+            {
+              "text": "いベンチがありました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "Beside",
+          "canonical_word": "beside",
+          "meaning": "〜のそばに"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Beside",
+          "reading": "〜のそばに",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "beside",
+          "canonical_meaning": "〜のそばに"
+        }
+      ]
+    },
+    {
+      "line": 12,
+      "english": "During our walk, we talked about many things — about today, about tomorrow, and about our dreams for the future.",
+      "source_ja": "散歩のあいだ、家族みんなでいろんなことを話しました——今日のこと、明日のこと、そして将来の夢のこと。",
+      "display_ja": "散歩のあいだ、家族みんなでいろんなことを話しました——今日のこと、明日のこと、そして将来の夢のこと。",
+      "corrected_translation": false,
+      "mixed": "During 散歩、家族みんなで今日や明日、将来の夢について話しました。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "During",
+          "ruby": "〜の間ずっと"
+        },
+        {
+          "type": "ja",
+          "text": " 散歩、家族みんなで今日や明日、将来の夢について話しました。",
+          "parts": [
+            {
+              "text": "散歩",
+              "ruby": "さんぽ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "みんなで",
+              "ruby": ""
+            },
+            {
+              "text": "今日",
+              "ruby": "きょう"
+            },
+            {
+              "text": "や",
+              "ruby": ""
+            },
+            {
+              "text": "明日",
+              "ruby": "あした"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "将来",
+              "ruby": "しょうらい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "夢",
+              "ruby": "ゆめ"
+            },
+            {
+              "text": "について",
+              "ruby": ""
+            },
+            {
+              "text": "話",
+              "ruby": "はな"
+            },
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "During",
+          "canonical_word": "During",
+          "meaning": "〜の間ずっと"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "During",
+          "reading": "〜の間ずっと",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "During",
+          "canonical_meaning": "〜の間ずっと"
+        }
+      ]
+    }
+  ]
+}

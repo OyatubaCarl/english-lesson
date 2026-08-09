@@ -1,0 +1,323 @@
+{
+  "project_root": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成",
+  "slug": "l9_a_school_day_sentence_v2",
+  "title_en": "Lesson 9  A School Day",
+  "title_ja": "学校のある一日",
+  "chart": "taco_beat/charts/m9.js",
+  "audio": "中学生編/audio/L9.mp3",
+  "duration": 39.868662,
+  "lines": [
+    {
+      "start_index": 1,
+      "end_index": 9,
+      "en_words": [
+        "At",
+        "my",
+        "school,",
+        "students",
+        "have",
+        "to",
+        "wear",
+        "a",
+        "uniform."
+      ],
+      "ja": "わたしの学校では、生徒は制服を着なければなりません。"
+    },
+    {
+      "start_index": 10,
+      "end_index": 20,
+      "en_words": [
+        "Every",
+        "morning,",
+        "we",
+        "have",
+        "to",
+        "be",
+        "in",
+        "the",
+        "classroom",
+        "on",
+        "time."
+      ],
+      "ja": "毎朝、時間どおりに教室にいなければなりません。"
+    },
+    {
+      "start_index": 21,
+      "end_index": 32,
+      "en_words": [
+        "In",
+        "class,",
+        "they",
+        "have",
+        "to",
+        "study",
+        "many",
+        "subjects:",
+        "math,",
+        "science,",
+        "and",
+        "English."
+      ],
+      "break_after": [
+        7
+      ],
+      "ja": "授業では、数学、理科、英語など多くの教科を学びます。"
+    },
+    {
+      "start_index": 33,
+      "end_index": 44,
+      "en_words": [
+        "When",
+        "I",
+        "get",
+        "home,",
+        "I",
+        "have",
+        "to",
+        "finish",
+        "my",
+        "homework",
+        "before",
+        "dinner."
+      ],
+      "break_after": [
+        7
+      ],
+      "ja": "家に帰ると、夕食前に宿題を終えなければなりません。"
+    },
+    {
+      "start_index": 45,
+      "end_index": 57,
+      "en_words": [
+        "My",
+        "sister",
+        "sometimes",
+        "asks,",
+        "“Do",
+        "you",
+        "have",
+        "to",
+        "finish",
+        "all",
+        "of",
+        "it",
+        "tonight?”"
+      ],
+      "break_after": [
+        3
+      ],
+      "ja": "妹は時々、「全部今夜中に終えなければならないの？」と聞きます。"
+    },
+    {
+      "start_index": 58,
+      "end_index": 62,
+      "en_words": [
+        "“Yes,",
+        "I",
+        "do,”",
+        "I",
+        "answer."
+      ],
+      "ja": "「うん、そうだよ」と、わたしは答えます。"
+    },
+    {
+      "start_index": 63,
+      "end_index": 81,
+      "en_words": [
+        "On",
+        "Sunday,",
+        "I",
+        "do",
+        "not",
+        "have",
+        "to",
+        "go",
+        "to",
+        "school,",
+        "but",
+        "I",
+        "have",
+        "to",
+        "wash",
+        "the",
+        "dishes",
+        "at",
+        "home."
+      ],
+      "break_after": [
+        9
+      ],
+      "ja": "日曜日は学校へ行かなくてよいですが、家で皿を洗わなければなりません。"
+    },
+    {
+      "start_index": 82,
+      "end_index": 92,
+      "en_words": [
+        "It",
+        "is",
+        "sometimes",
+        "hard,",
+        "but",
+        "helping",
+        "my",
+        "family",
+        "is",
+        "very",
+        "important."
+      ],
+      "break_after": [
+        3
+      ],
+      "ja": "時には大変ですが、家族を助けることはとても大切です。"
+    }
+  ],
+  "shots": [
+    {
+      "image": "scenes/01_students_uniform.png",
+      "start": 0.0,
+      "end": 3.091,
+      "start_center": [
+        0.46,
+        0.48
+      ],
+      "end_center": [
+        0.54,
+        0.48
+      ],
+      "start_zoom": 1.03,
+      "end_zoom": 1.16,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする"
+    },
+    {
+      "image": "scenes/02_classroom_on_time.png",
+      "start": 3.091,
+      "end": 9.032,
+      "start_center": [
+        0.56,
+        0.48
+      ],
+      "end_center": [
+        0.44,
+        0.48
+      ],
+      "start_zoom": 1.13,
+      "end_zoom": 1.04,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "smoothleft"
+    },
+    {
+      "image": "scenes/03_many_subjects.png",
+      "start": 9.032,
+      "end": 14.753,
+      "start_center": [
+        0.5,
+        0.43
+      ],
+      "end_center": [
+        0.5,
+        0.54
+      ],
+      "start_zoom": 1.04,
+      "end_zoom": 1.17,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "circleopen"
+    },
+    {
+      "image": "scenes/04_homework_before_dinner.png",
+      "start": 14.753,
+      "end": 18.261,
+      "start_center": [
+        0.5,
+        0.54
+      ],
+      "end_center": [
+        0.5,
+        0.45
+      ],
+      "start_zoom": 1.15,
+      "end_zoom": 1.05,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "hblur"
+    },
+    {
+      "image": "scenes/05_saki_asks_finish_tonight.png",
+      "start": 18.261,
+      "end": 23.375,
+      "start_center": [
+        0.46,
+        0.48
+      ],
+      "end_center": [
+        0.54,
+        0.48
+      ],
+      "start_zoom": 1.03,
+      "end_zoom": 1.16,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "diagtl"
+    },
+    {
+      "image": "scenes/06_yes_i_do.png",
+      "start": 23.375,
+      "end": 27.436,
+      "start_center": [
+        0.56,
+        0.48
+      ],
+      "end_center": [
+        0.44,
+        0.48
+      ],
+      "start_zoom": 1.13,
+      "end_zoom": 1.04,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "slideup"
+    },
+    {
+      "image": "scenes/07_sunday_wash_dishes.png",
+      "start": 27.436,
+      "end": 32.797,
+      "start_center": [
+        0.5,
+        0.43
+      ],
+      "end_center": [
+        0.5,
+        0.54
+      ],
+      "start_zoom": 1.04,
+      "end_zoom": 1.17,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "dissolve"
+    },
+    {
+      "image": "scenes/08_helping_family_important.png",
+      "start": 32.797,
+      "end": 39.868662,
+      "start_center": [
+        0.5,
+        0.54
+      ],
+      "end_center": [
+        0.5,
+        0.45
+      ],
+      "start_zoom": 1.15,
+      "end_zoom": 1.05,
+      "intent": "英文ごとに独立生成した画像を、主題を保つ範囲で緩やかにパン・ズームする",
+      "transition": "radial"
+    }
+  ],
+  "transition_duration": 0.42,
+  "sentence_image_count": 8,
+  "line_to_scene": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ]
+}

@@ -1,0 +1,1518 @@
+{
+  "lesson": "H071",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h071_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H071/candidate1-full.mp3",
+  "source_audio_sha256": "e4e91dcd4cc16951c7251d6e3e6e300e5deb732a4a7c5416e1e1dbd8ead75c75",
+  "bpm": 59.84,
+  "exact_word_match": true,
+  "word_count": 229,
+  "line_count": 16,
+  "first_word_start": 10.141,
+  "last_word_end": 143.018,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Throughout history, across every land, humanity has continued to tell stories.",
+      "word_timings": [
+        {
+          "word": "Throughout",
+          "display_index": 0,
+          "start": 10.141,
+          "end": 10.701
+        },
+        {
+          "word": "history,",
+          "display_index": 1,
+          "start": 10.701,
+          "end": 12.422
+        },
+        {
+          "word": "across",
+          "display_index": 2,
+          "start": 12.422,
+          "end": 12.962
+        },
+        {
+          "word": "every",
+          "display_index": 3,
+          "start": 12.962,
+          "end": 13.282
+        },
+        {
+          "word": "land,",
+          "display_index": 4,
+          "start": 13.282,
+          "end": 14.502
+        },
+        {
+          "word": "humanity",
+          "display_index": 5,
+          "start": 14.502,
+          "end": 15.362
+        },
+        {
+          "word": "has",
+          "display_index": 6,
+          "start": 15.362,
+          "end": 15.682
+        },
+        {
+          "word": "continued",
+          "display_index": 7,
+          "start": 15.682,
+          "end": 16.997
+        },
+        {
+          "word": "to",
+          "display_index": 8,
+          "start": 16.997,
+          "end": 17.662
+        },
+        {
+          "word": "tell",
+          "display_index": 9,
+          "start": 17.662,
+          "end": 18.242
+        },
+        {
+          "word": "stories.",
+          "display_index": 10,
+          "start": 18.242,
+          "end": 19.742
+        }
+      ],
+      "start": 10.141,
+      "end": 19.742
+    },
+    {
+      "line": 2,
+      "english": "Literature is one of the oldest forms of expression in which human beings have written down and passed on their understanding of themselves.",
+      "word_timings": [
+        {
+          "word": "Literature",
+          "display_index": 0,
+          "start": 20.663,
+          "end": 21.71
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 21.71,
+          "end": 22.083
+        },
+        {
+          "word": "one",
+          "display_index": 2,
+          "start": 22.083,
+          "end": 22.243
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 22.243,
+          "end": 22.374
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 22.374,
+          "end": 22.623
+        },
+        {
+          "word": "oldest",
+          "display_index": 5,
+          "start": 22.623,
+          "end": 23.163
+        },
+        {
+          "word": "forms",
+          "display_index": 6,
+          "start": 23.163,
+          "end": 23.603
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 23.603,
+          "end": 23.743
+        },
+        {
+          "word": "expression",
+          "display_index": 8,
+          "start": 23.743,
+          "end": 24.543
+        },
+        {
+          "word": "in",
+          "display_index": 9,
+          "start": 24.543,
+          "end": 24.683
+        },
+        {
+          "word": "which",
+          "display_index": 10,
+          "start": 24.683,
+          "end": 25.003
+        },
+        {
+          "word": "human",
+          "display_index": 11,
+          "start": 25.003,
+          "end": 25.383
+        },
+        {
+          "word": "beings",
+          "display_index": 12,
+          "start": 25.383,
+          "end": 25.923
+        },
+        {
+          "word": "have",
+          "display_index": 13,
+          "start": 25.923,
+          "end": 26.083
+        },
+        {
+          "word": "written",
+          "display_index": 14,
+          "start": 26.083,
+          "end": 26.543
+        },
+        {
+          "word": "down",
+          "display_index": 15,
+          "start": 26.543,
+          "end": 27.124
+        },
+        {
+          "word": "and",
+          "display_index": 16,
+          "start": 27.124,
+          "end": 27.304
+        },
+        {
+          "word": "passed",
+          "display_index": 17,
+          "start": 27.304,
+          "end": 27.844
+        },
+        {
+          "word": "on",
+          "display_index": 18,
+          "start": 27.844,
+          "end": 27.964
+        },
+        {
+          "word": "their",
+          "display_index": 19,
+          "start": 27.964,
+          "end": 28.244
+        },
+        {
+          "word": "understanding",
+          "display_index": 20,
+          "start": 28.244,
+          "end": 29.464
+        },
+        {
+          "word": "of",
+          "display_index": 21,
+          "start": 29.464,
+          "end": 29.644
+        },
+        {
+          "word": "themselves.",
+          "display_index": 22,
+          "start": 29.644,
+          "end": 31.144
+        }
+      ],
+      "start": 20.663,
+      "end": 31.144
+    },
+    {
+      "line": 3,
+      "english": "The epic of Homer, the plays of Shakespeare, the long novel of Tolstoy, the Tale of Genji of Murasaki Shikibu.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 31.935,
+          "end": 32.144
+        },
+        {
+          "word": "epic",
+          "display_index": 1,
+          "start": 32.144,
+          "end": 32.464
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 32.464,
+          "end": 32.604
+        },
+        {
+          "word": "Homer,",
+          "display_index": 3,
+          "start": 32.604,
+          "end": 33.23
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 33.23,
+          "end": 33.344
+        },
+        {
+          "word": "plays",
+          "display_index": 5,
+          "start": 33.344,
+          "end": 33.764
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 33.764,
+          "end": 33.884
+        },
+        {
+          "word": "Shakespeare,",
+          "display_index": 7,
+          "start": 33.884,
+          "end": 34.596
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 34.596,
+          "end": 34.725
+        },
+        {
+          "word": "long",
+          "display_index": 9,
+          "start": 34.725,
+          "end": 35.085
+        },
+        {
+          "word": "novel",
+          "display_index": 10,
+          "start": 35.085,
+          "end": 35.645
+        },
+        {
+          "word": "of",
+          "display_index": 11,
+          "start": 35.645,
+          "end": 35.825
+        },
+        {
+          "word": "Tolstoy,",
+          "display_index": 12,
+          "start": 35.825,
+          "end": 36.596
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 36.596,
+          "end": 36.725
+        },
+        {
+          "word": "Tale",
+          "display_index": 14,
+          "start": 36.725,
+          "end": 37.125
+        },
+        {
+          "word": "of",
+          "display_index": 15,
+          "start": 37.125,
+          "end": 37.245
+        },
+        {
+          "word": "Genji",
+          "display_index": 16,
+          "start": 37.245,
+          "end": 38.265
+        },
+        {
+          "word": "of",
+          "display_index": 17,
+          "start": 38.265,
+          "end": 38.385
+        },
+        {
+          "word": "Murasaki",
+          "display_index": 18,
+          "start": 38.385,
+          "end": 39.545
+        },
+        {
+          "word": "Shikibu.",
+          "display_index": 19,
+          "start": 39.545,
+          "end": 41.045
+        }
+      ],
+      "start": 31.935,
+      "end": 41.045
+    },
+    {
+      "line": 4,
+      "english": "Each literary work passes on to us how the people of its age looked at the world.",
+      "word_timings": [
+        {
+          "word": "Each",
+          "display_index": 0,
+          "start": 41.745,
+          "end": 42.045
+        },
+        {
+          "word": "literary",
+          "display_index": 1,
+          "start": 42.045,
+          "end": 42.706
+        },
+        {
+          "word": "work",
+          "display_index": 2,
+          "start": 42.706,
+          "end": 43.026
+        },
+        {
+          "word": "passes",
+          "display_index": 3,
+          "start": 43.026,
+          "end": 43.646
+        },
+        {
+          "word": "on",
+          "display_index": 4,
+          "start": 43.646,
+          "end": 43.843
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 43.843,
+          "end": 44.106
+        },
+        {
+          "word": "us",
+          "display_index": 6,
+          "start": 44.106,
+          "end": 44.346
+        },
+        {
+          "word": "how",
+          "display_index": 7,
+          "start": 44.346,
+          "end": 44.544
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 44.544,
+          "end": 44.666
+        },
+        {
+          "word": "people",
+          "display_index": 9,
+          "start": 44.666,
+          "end": 45.106
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 45.106,
+          "end": 45.226
+        },
+        {
+          "word": "its",
+          "display_index": 11,
+          "start": 45.226,
+          "end": 45.486
+        },
+        {
+          "word": "age",
+          "display_index": 12,
+          "start": 45.486,
+          "end": 45.906
+        },
+        {
+          "word": "looked",
+          "display_index": 13,
+          "start": 45.906,
+          "end": 46.226
+        },
+        {
+          "word": "at",
+          "display_index": 14,
+          "start": 46.226,
+          "end": 46.407
+        },
+        {
+          "word": "the",
+          "display_index": 15,
+          "start": 46.407,
+          "end": 46.566
+        },
+        {
+          "word": "world.",
+          "display_index": 16,
+          "start": 46.566,
+          "end": 47.746
+        }
+      ],
+      "start": 41.745,
+      "end": 47.746
+    },
+    {
+      "line": 5,
+      "english": "Why is literature important?",
+      "word_timings": [
+        {
+          "word": "Why",
+          "display_index": 0,
+          "start": 48.046,
+          "end": 49.182
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 49.182,
+          "end": 49.386
+        },
+        {
+          "word": "literature",
+          "display_index": 2,
+          "start": 49.386,
+          "end": 50.027
+        },
+        {
+          "word": "important?",
+          "display_index": 3,
+          "start": 50.027,
+          "end": 51.527
+        }
+      ],
+      "start": 48.046,
+      "end": 51.527
+    },
+    {
+      "line": 6,
+      "english": "Because literature lets us live the lives of people other than ourselves, almost as if it were our own.",
+      "word_timings": [
+        {
+          "word": "Because",
+          "display_index": 0,
+          "start": 52.227,
+          "end": 52.747
+        },
+        {
+          "word": "literature",
+          "display_index": 1,
+          "start": 52.747,
+          "end": 53.747
+        },
+        {
+          "word": "lets",
+          "display_index": 2,
+          "start": 53.747,
+          "end": 54.127
+        },
+        {
+          "word": "us",
+          "display_index": 3,
+          "start": 54.127,
+          "end": 54.427
+        },
+        {
+          "word": "live",
+          "display_index": 4,
+          "start": 54.427,
+          "end": 55.103
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 55.103,
+          "end": 55.267
+        },
+        {
+          "word": "lives",
+          "display_index": 6,
+          "start": 55.267,
+          "end": 55.687
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 55.687,
+          "end": 55.827
+        },
+        {
+          "word": "people",
+          "display_index": 8,
+          "start": 55.827,
+          "end": 56.507
+        },
+        {
+          "word": "other",
+          "display_index": 9,
+          "start": 56.507,
+          "end": 56.767
+        },
+        {
+          "word": "than",
+          "display_index": 10,
+          "start": 56.767,
+          "end": 57.027
+        },
+        {
+          "word": "ourselves,",
+          "display_index": 11,
+          "start": 57.027,
+          "end": 58.368
+        },
+        {
+          "word": "almost",
+          "display_index": 12,
+          "start": 58.368,
+          "end": 59.848
+        },
+        {
+          "word": "as",
+          "display_index": 13,
+          "start": 59.848,
+          "end": 60.168
+        },
+        {
+          "word": "if",
+          "display_index": 14,
+          "start": 60.168,
+          "end": 60.388
+        },
+        {
+          "word": "it",
+          "display_index": 15,
+          "start": 60.388,
+          "end": 60.568
+        },
+        {
+          "word": "were",
+          "display_index": 16,
+          "start": 60.568,
+          "end": 61.008
+        },
+        {
+          "word": "our",
+          "display_index": 17,
+          "start": 61.008,
+          "end": 61.388
+        },
+        {
+          "word": "own.",
+          "display_index": 18,
+          "start": 61.388,
+          "end": 62.108
+        }
+      ],
+      "start": 52.227,
+      "end": 62.108
+    },
+    {
+      "line": 7,
+      "english": "By living through the joy, the sadness, and the conflicts of the characters, we widen our own world.",
+      "word_timings": [
+        {
+          "word": "By",
+          "display_index": 0,
+          "start": 62.408,
+          "end": 62.748
+        },
+        {
+          "word": "living",
+          "display_index": 1,
+          "start": 62.748,
+          "end": 63.228
+        },
+        {
+          "word": "through",
+          "display_index": 2,
+          "start": 63.228,
+          "end": 63.626
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 63.626,
+          "end": 63.768
+        },
+        {
+          "word": "joy,",
+          "display_index": 4,
+          "start": 63.768,
+          "end": 64.43
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 64.43,
+          "end": 64.608
+        },
+        {
+          "word": "sadness,",
+          "display_index": 6,
+          "start": 64.608,
+          "end": 65.329
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 65.329,
+          "end": 65.443
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 65.443,
+          "end": 65.569
+        },
+        {
+          "word": "conflicts",
+          "display_index": 9,
+          "start": 65.569,
+          "end": 66.329
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 66.329,
+          "end": 66.439
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 66.439,
+          "end": 66.569
+        },
+        {
+          "word": "characters,",
+          "display_index": 12,
+          "start": 66.569,
+          "end": 67.649
+        },
+        {
+          "word": "we",
+          "display_index": 13,
+          "start": 67.649,
+          "end": 67.929
+        },
+        {
+          "word": "widen",
+          "display_index": 14,
+          "start": 67.929,
+          "end": 68.549
+        },
+        {
+          "word": "our",
+          "display_index": 15,
+          "start": 68.549,
+          "end": 68.849
+        },
+        {
+          "word": "own",
+          "display_index": 16,
+          "start": 68.849,
+          "end": 69.189
+        },
+        {
+          "word": "world.",
+          "display_index": 17,
+          "start": 69.189,
+          "end": 69.989
+        }
+      ],
+      "start": 62.408,
+      "end": 69.989
+    },
+    {
+      "line": 8,
+      "english": "Soseki's Kokoro, Dostoyevsky's Crime and Punishment.",
+      "word_timings": [
+        {
+          "word": "Soseki's",
+          "display_index": 0,
+          "start": 70.069,
+          "end": 70.749
+        },
+        {
+          "word": "Kokoro,",
+          "display_index": 1,
+          "start": 70.749,
+          "end": 71.769
+        },
+        {
+          "word": "Dostoyevsky's",
+          "display_index": 2,
+          "start": 71.769,
+          "end": 72.749
+        },
+        {
+          "word": "Crime",
+          "display_index": 3,
+          "start": 72.749,
+          "end": 73.23
+        },
+        {
+          "word": "and",
+          "display_index": 4,
+          "start": 73.23,
+          "end": 73.43
+        },
+        {
+          "word": "Punishment.",
+          "display_index": 5,
+          "start": 73.43,
+          "end": 74.93
+        }
+      ],
+      "start": 70.069,
+      "end": 74.93
+    },
+    {
+      "line": 9,
+      "english": "These novels shine light even on the dark parts of the human heart.",
+      "word_timings": [
+        {
+          "word": "These",
+          "display_index": 0,
+          "start": 77.21,
+          "end": 77.55
+        },
+        {
+          "word": "novels",
+          "display_index": 1,
+          "start": 77.55,
+          "end": 78.17
+        },
+        {
+          "word": "shine",
+          "display_index": 2,
+          "start": 78.17,
+          "end": 78.73
+        },
+        {
+          "word": "light",
+          "display_index": 3,
+          "start": 78.73,
+          "end": 79.29
+        },
+        {
+          "word": "even",
+          "display_index": 4,
+          "start": 79.29,
+          "end": 79.63
+        },
+        {
+          "word": "on",
+          "display_index": 5,
+          "start": 79.63,
+          "end": 79.75
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 79.75,
+          "end": 79.87
+        },
+        {
+          "word": "dark",
+          "display_index": 7,
+          "start": 79.87,
+          "end": 80.21
+        },
+        {
+          "word": "parts",
+          "display_index": 8,
+          "start": 80.21,
+          "end": 80.631
+        },
+        {
+          "word": "of",
+          "display_index": 9,
+          "start": 80.631,
+          "end": 80.743
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 80.743,
+          "end": 80.871
+        },
+        {
+          "word": "human",
+          "display_index": 11,
+          "start": 80.871,
+          "end": 81.371
+        },
+        {
+          "word": "heart.",
+          "display_index": 12,
+          "start": 81.371,
+          "end": 82.171
+        }
+      ],
+      "start": 77.21,
+      "end": 82.171
+    },
+    {
+      "line": 10,
+      "english": "Literature often holds out, face to face, the questions we wish to turn away from.",
+      "word_timings": [
+        {
+          "word": "Literature",
+          "display_index": 0,
+          "start": 82.251,
+          "end": 82.991
+        },
+        {
+          "word": "often",
+          "display_index": 1,
+          "start": 82.991,
+          "end": 83.551
+        },
+        {
+          "word": "holds",
+          "display_index": 2,
+          "start": 83.551,
+          "end": 84.071
+        },
+        {
+          "word": "out,",
+          "display_index": 3,
+          "start": 84.071,
+          "end": 84.551
+        },
+        {
+          "word": "face",
+          "display_index": 4,
+          "start": 84.551,
+          "end": 84.9
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 84.9,
+          "end": 85.211
+        },
+        {
+          "word": "face,",
+          "display_index": 6,
+          "start": 85.211,
+          "end": 86.093
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 86.093,
+          "end": 86.191
+        },
+        {
+          "word": "questions",
+          "display_index": 8,
+          "start": 86.191,
+          "end": 86.791
+        },
+        {
+          "word": "we",
+          "display_index": 9,
+          "start": 86.791,
+          "end": 86.971
+        },
+        {
+          "word": "wish",
+          "display_index": 10,
+          "start": 86.971,
+          "end": 87.253
+        },
+        {
+          "word": "to",
+          "display_index": 11,
+          "start": 87.253,
+          "end": 87.411
+        },
+        {
+          "word": "turn",
+          "display_index": 12,
+          "start": 87.411,
+          "end": 87.771
+        },
+        {
+          "word": "away",
+          "display_index": 13,
+          "start": 87.771,
+          "end": 88.872
+        },
+        {
+          "word": "from.",
+          "display_index": 14,
+          "start": 88.872,
+          "end": 89.892
+        }
+      ],
+      "start": 82.251,
+      "end": 89.892
+    },
+    {
+      "line": 11,
+      "english": "Poetry, too, is an important part of literature.",
+      "word_timings": [
+        {
+          "word": "Poetry,",
+          "display_index": 0,
+          "start": 90.192,
+          "end": 90.899
+        },
+        {
+          "word": "too,",
+          "display_index": 1,
+          "start": 90.899,
+          "end": 92.973
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 92.973,
+          "end": 93.152
+        },
+        {
+          "word": "an",
+          "display_index": 3,
+          "start": 93.152,
+          "end": 93.312
+        },
+        {
+          "word": "important",
+          "display_index": 4,
+          "start": 93.312,
+          "end": 94.052
+        },
+        {
+          "word": "part",
+          "display_index": 5,
+          "start": 94.052,
+          "end": 94.632
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 94.632,
+          "end": 94.892
+        },
+        {
+          "word": "literature.",
+          "display_index": 7,
+          "start": 94.892,
+          "end": 96.392
+        }
+      ],
+      "start": 90.192,
+      "end": 96.392
+    },
+    {
+      "line": 12,
+      "english": "With few words, it catches the essence of a single moment.",
+      "word_timings": [
+        {
+          "word": "With",
+          "display_index": 0,
+          "start": 98.333,
+          "end": 98.533
+        },
+        {
+          "word": "few",
+          "display_index": 1,
+          "start": 98.533,
+          "end": 98.893
+        },
+        {
+          "word": "words,",
+          "display_index": 2,
+          "start": 98.893,
+          "end": 99.473
+        },
+        {
+          "word": "it",
+          "display_index": 3,
+          "start": 99.473,
+          "end": 99.673
+        },
+        {
+          "word": "catches",
+          "display_index": 4,
+          "start": 99.673,
+          "end": 100.39
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 100.39,
+          "end": 100.593
+        },
+        {
+          "word": "essence",
+          "display_index": 6,
+          "start": 100.593,
+          "end": 100.953
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 100.953,
+          "end": 101.091
+        },
+        {
+          "word": "a",
+          "display_index": 8,
+          "start": 101.091,
+          "end": 101.213
+        },
+        {
+          "word": "single",
+          "display_index": 9,
+          "start": 101.213,
+          "end": 102.213
+        },
+        {
+          "word": "moment.",
+          "display_index": 10,
+          "start": 102.213,
+          "end": 103.013
+        }
+      ],
+      "start": 98.333,
+      "end": 103.013
+    },
+    {
+      "line": 13,
+      "english": "Through metaphor and symbol, a poem reaches directly into the depths of our hearts.",
+      "word_timings": [
+        {
+          "word": "Through",
+          "display_index": 0,
+          "start": 103.013,
+          "end": 103.233
+        },
+        {
+          "word": "metaphor",
+          "display_index": 1,
+          "start": 103.233,
+          "end": 103.754
+        },
+        {
+          "word": "and",
+          "display_index": 2,
+          "start": 103.754,
+          "end": 103.894
+        },
+        {
+          "word": "symbol,",
+          "display_index": 3,
+          "start": 103.894,
+          "end": 104.409
+        },
+        {
+          "word": "a",
+          "display_index": 4,
+          "start": 104.409,
+          "end": 104.534
+        },
+        {
+          "word": "poem",
+          "display_index": 5,
+          "start": 104.534,
+          "end": 105.074
+        },
+        {
+          "word": "reaches",
+          "display_index": 6,
+          "start": 105.074,
+          "end": 105.714
+        },
+        {
+          "word": "directly",
+          "display_index": 7,
+          "start": 105.714,
+          "end": 106.494
+        },
+        {
+          "word": "into",
+          "display_index": 8,
+          "start": 106.494,
+          "end": 107.061
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 107.061,
+          "end": 107.234
+        },
+        {
+          "word": "depths",
+          "display_index": 10,
+          "start": 107.234,
+          "end": 107.634
+        },
+        {
+          "word": "of",
+          "display_index": 11,
+          "start": 107.634,
+          "end": 107.834
+        },
+        {
+          "word": "our",
+          "display_index": 12,
+          "start": 107.834,
+          "end": 108.074
+        },
+        {
+          "word": "hearts.",
+          "display_index": 13,
+          "start": 108.074,
+          "end": 108.754
+        }
+      ],
+      "start": 103.013,
+      "end": 108.754
+    },
+    {
+      "line": 14,
+      "english": "Even now, when films and the internet fill our days, why does literature not vanish?",
+      "word_timings": [
+        {
+          "word": "Even",
+          "display_index": 0,
+          "start": 108.754,
+          "end": 109.234
+        },
+        {
+          "word": "now,",
+          "display_index": 1,
+          "start": 109.234,
+          "end": 110.894
+        },
+        {
+          "word": "when",
+          "display_index": 2,
+          "start": 110.894,
+          "end": 111.175
+        },
+        {
+          "word": "films",
+          "display_index": 3,
+          "start": 111.175,
+          "end": 112.015
+        },
+        {
+          "word": "and",
+          "display_index": 4,
+          "start": 112.015,
+          "end": 112.415
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 112.415,
+          "end": 112.635
+        },
+        {
+          "word": "internet",
+          "display_index": 6,
+          "start": 112.635,
+          "end": 113.175
+        },
+        {
+          "word": "fill",
+          "display_index": 7,
+          "start": 113.175,
+          "end": 113.535
+        },
+        {
+          "word": "our",
+          "display_index": 8,
+          "start": 113.535,
+          "end": 113.755
+        },
+        {
+          "word": "days,",
+          "display_index": 9,
+          "start": 113.755,
+          "end": 114.595
+        },
+        {
+          "word": "why",
+          "display_index": 10,
+          "start": 114.595,
+          "end": 115.095
+        },
+        {
+          "word": "does",
+          "display_index": 11,
+          "start": 115.095,
+          "end": 115.615
+        },
+        {
+          "word": "literature",
+          "display_index": 12,
+          "start": 115.615,
+          "end": 116.635
+        },
+        {
+          "word": "not",
+          "display_index": 13,
+          "start": 116.635,
+          "end": 117.275
+        },
+        {
+          "word": "vanish?",
+          "display_index": 14,
+          "start": 117.275,
+          "end": 118.775
+        }
+      ],
+      "start": 108.754,
+      "end": 118.775
+    },
+    {
+      "line": 15,
+      "english": "Perhaps because the experience of reading a book quietly, alone, is itself an irreplaceable time when we converse with ourselves.",
+      "word_timings": [
+        {
+          "word": "Perhaps",
+          "display_index": 0,
+          "start": 119.636,
+          "end": 120.496
+        },
+        {
+          "word": "because",
+          "display_index": 1,
+          "start": 120.496,
+          "end": 121.002
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 121.002,
+          "end": 121.136
+        },
+        {
+          "word": "experience",
+          "display_index": 3,
+          "start": 121.136,
+          "end": 122.376
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 122.376,
+          "end": 122.556
+        },
+        {
+          "word": "reading",
+          "display_index": 5,
+          "start": 122.556,
+          "end": 123.021
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 123.021,
+          "end": 123.196
+        },
+        {
+          "word": "book",
+          "display_index": 7,
+          "start": 123.196,
+          "end": 123.456
+        },
+        {
+          "word": "quietly,",
+          "display_index": 8,
+          "start": 123.456,
+          "end": 124.596
+        },
+        {
+          "word": "alone,",
+          "display_index": 9,
+          "start": 124.596,
+          "end": 125.141
+        },
+        {
+          "word": "is",
+          "display_index": 10,
+          "start": 125.141,
+          "end": 125.236
+        },
+        {
+          "word": "itself",
+          "display_index": 11,
+          "start": 125.236,
+          "end": 125.816
+        },
+        {
+          "word": "an",
+          "display_index": 12,
+          "start": 125.816,
+          "end": 126.477
+        },
+        {
+          "word": "irreplaceable",
+          "display_index": 13,
+          "start": 126.477,
+          "end": 127.677
+        },
+        {
+          "word": "time",
+          "display_index": 14,
+          "start": 127.677,
+          "end": 128.437
+        },
+        {
+          "word": "when",
+          "display_index": 15,
+          "start": 128.437,
+          "end": 128.777
+        },
+        {
+          "word": "we",
+          "display_index": 16,
+          "start": 128.777,
+          "end": 129.037
+        },
+        {
+          "word": "converse",
+          "display_index": 17,
+          "start": 129.037,
+          "end": 129.797
+        },
+        {
+          "word": "with",
+          "display_index": 18,
+          "start": 129.797,
+          "end": 130.037
+        },
+        {
+          "word": "ourselves.",
+          "display_index": 19,
+          "start": 130.037,
+          "end": 131.537
+        }
+      ],
+      "start": 119.636,
+      "end": 131.537
+    },
+    {
+      "line": 16,
+      "english": "The quiet dialogue that arises between reader and writer is the true power of literature.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 132.025,
+          "end": 132.137
+        },
+        {
+          "word": "quiet",
+          "display_index": 1,
+          "start": 132.137,
+          "end": 132.777
+        },
+        {
+          "word": "dialogue",
+          "display_index": 2,
+          "start": 132.777,
+          "end": 133.737
+        },
+        {
+          "word": "that",
+          "display_index": 3,
+          "start": 133.737,
+          "end": 134.098
+        },
+        {
+          "word": "arises",
+          "display_index": 4,
+          "start": 134.098,
+          "end": 134.918
+        },
+        {
+          "word": "between",
+          "display_index": 5,
+          "start": 134.918,
+          "end": 135.578
+        },
+        {
+          "word": "reader",
+          "display_index": 6,
+          "start": 135.578,
+          "end": 136.118
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 136.118,
+          "end": 136.278
+        },
+        {
+          "word": "writer",
+          "display_index": 8,
+          "start": 136.278,
+          "end": 138.569
+        },
+        {
+          "word": "is",
+          "display_index": 9,
+          "start": 138.569,
+          "end": 138.776
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 138.776,
+          "end": 138.898
+        },
+        {
+          "word": "true",
+          "display_index": 11,
+          "start": 138.898,
+          "end": 139.418
+        },
+        {
+          "word": "power",
+          "display_index": 12,
+          "start": 139.418,
+          "end": 141.278
+        },
+        {
+          "word": "of",
+          "display_index": 13,
+          "start": 141.278,
+          "end": 141.518
+        },
+        {
+          "word": "literature.",
+          "display_index": 14,
+          "start": 141.518,
+          "end": 143.018
+        }
+      ],
+      "start": 132.025,
+      "end": 143.018
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

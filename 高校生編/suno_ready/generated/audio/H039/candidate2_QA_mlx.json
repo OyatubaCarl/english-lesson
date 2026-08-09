@@ -1,0 +1,193 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H039.md",
+  "audio": "高校生編/suno_ready/generated/audio/H039/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 146.54,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0373,
+  "expected_words": 161,
+  "transcribed_words": 167,
+  "matched_words": 159,
+  "coverage": 0.9876,
+  "precision": 0.9521,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 160,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 76,
+      "length": 2,
+      "words": [
+        "four",
+        "hundred"
+      ]
+    }
+  ],
+  "replacement_count": 0,
+  "replacement_spans": [],
+  "insertion_spans": [
+    {
+      "expected_start": 23,
+      "actual_start": 23,
+      "expected": [],
+      "actual": [
+        "six",
+        "seed",
+        "or",
+        "nine"
+      ],
+      "actual_confidence": 0.5961
+    },
+    {
+      "expected_start": 161,
+      "actual_start": 163,
+      "expected": [],
+      "actual": [
+        "i'm",
+        "not",
+        "a",
+        "person"
+      ],
+      "actual_confidence": 0.1136
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 76,
+      "actual_start": 80,
+      "expected": [
+        "four",
+        "hundred"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "We look up at the night sky At that moment, what we see is light That has traveled for thousands of years In six seed or nine Galileo, Galilei Looked at the sky Through a telescope he had built himself There were mountains on the face of the moon Around Jupiter there were four moons These observations shook the ancient belief That the earth stood at the center of the universe The church condemned him But truth was not erased 400 years later, in 1977, NASA launched two probes, Voyager 1 and 2. They explored Jupiter, Saturn, Uranus, and Neptune in turn. Even now they continue their quiet journey beyond the solar system. Each Voyager probe carries a golden record The sounds of Earth, human words, human music It is a small message from humanity to any being who might someday Find it somewhere in the vast universe From Galileo's telescope to Voyager's journey Our curiosity continues across the centuries Toward the far end of the universe I'm not a person.",
+  "segments": [
+    {
+      "start": 8.32,
+      "end": 10.5,
+      "text": "We look up at the night sky"
+    },
+    {
+      "start": 10.5,
+      "end": 14.26,
+      "text": "At that moment, what we see is light"
+    },
+    {
+      "start": 14.26,
+      "end": 17.82,
+      "text": "That has traveled for thousands of years"
+    },
+    {
+      "start": 19.62,
+      "end": 22.04,
+      "text": "In six seed or nine"
+    },
+    {
+      "start": 23.62,
+      "end": 25.14,
+      "text": "Galileo, Galilei"
+    },
+    {
+      "start": 25.14,
+      "end": 26.52,
+      "text": "Looked at the sky"
+    },
+    {
+      "start": 26.52,
+      "end": 30.32,
+      "text": "Through a telescope he had built himself"
+    },
+    {
+      "start": 33.0,
+      "end": 36.26,
+      "text": "There were mountains on the face of the moon"
+    },
+    {
+      "start": 37.96,
+      "end": 42.26,
+      "text": "Around Jupiter there were four moons"
+    },
+    {
+      "start": 43.48,
+      "end": 46.98,
+      "text": "These observations shook the ancient belief"
+    },
+    {
+      "start": 46.98,
+      "end": 50.34,
+      "text": "That the earth stood at the center of the universe"
+    },
+    {
+      "start": 50.34,
+      "end": 52.96,
+      "text": "The church condemned him"
+    },
+    {
+      "start": 52.96,
+      "end": 56.06,
+      "text": "But truth was not erased"
+    },
+    {
+      "start": 62.14,
+      "end": 70.16,
+      "text": "400 years later, in 1977, NASA launched two probes, Voyager 1 and 2."
+    },
+    {
+      "start": 71.72,
+      "end": 76.32,
+      "text": "They explored Jupiter, Saturn, Uranus, and Neptune in turn."
+    },
+    {
+      "start": 77.18,
+      "end": 82.9,
+      "text": "Even now they continue their quiet journey beyond the solar system."
+    },
+    {
+      "start": 82.9,
+      "end": 89.62,
+      "text": "Each Voyager probe carries a golden record"
+    },
+    {
+      "start": 93.22,
+      "end": 98.34,
+      "text": "The sounds of Earth, human words, human music"
+    },
+    {
+      "start": 98.34,
+      "end": 106.78,
+      "text": "It is a small message from humanity to any being who might someday"
+    },
+    {
+      "start": 106.78,
+      "end": 113.9,
+      "text": "Find it somewhere in the vast universe"
+    },
+    {
+      "start": 113.9,
+      "end": 121.12,
+      "text": "From Galileo's telescope to Voyager's journey"
+    },
+    {
+      "start": 121.12,
+      "end": 129.06,
+      "text": "Our curiosity continues across the centuries"
+    },
+    {
+      "start": 129.58,
+      "end": 135.06,
+      "text": "Toward the far end of the universe"
+    },
+    {
+      "start": 146.42,
+      "end": 146.54,
+      "text": "I'm not a person."
+    }
+  ]
+}

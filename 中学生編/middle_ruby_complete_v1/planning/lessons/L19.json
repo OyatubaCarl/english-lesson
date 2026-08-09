@@ -1,0 +1,745 @@
+{
+  "lesson": 19,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L19/planning/lesson.json",
+  "title_en": "Lesson 19  At the Museum",
+  "title_ja": "博物館で",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 9,
+  "lines": [
+    {
+      "line": 1,
+      "english": "On a school trip, we visited the town museum.",
+      "source_ja": "学校の遠足で、町の博物館に行きました。",
+      "display_ja": "学校の遠足で、町の博物館に行きました。",
+      "corrected_translation": false,
+      "mixed": "学校の遠足で、町の博物館に行きました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "学校の遠足で、町の博物館に行きました。",
+          "parts": [
+            {
+              "text": "学校",
+              "ruby": "がっこう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "遠足",
+              "ruby": "えんそく"
+            },
+            {
+              "text": "で、",
+              "ruby": ""
+            },
+            {
+              "text": "町",
+              "ruby": "まち"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "博物",
+              "ruby": "はくぶつ"
+            },
+            {
+              "text": "館",
+              "ruby": "かん"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "行",
+              "ruby": "い"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 2,
+      "english": "At the entrance, a large picture was painted by a local artist.",
+      "source_ja": "入り口には、地元の画家が描いた大きな絵がありました。",
+      "display_ja": "入り口には、地元の画家が描いた大きな絵がありました。",
+      "corrected_translation": false,
+      "mixed": "入り口には、地元の画家によって painted された大きな絵がありました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "入り口には、地元の画家によって ",
+          "parts": [
+            {
+              "text": "入",
+              "ruby": "はい"
+            },
+            {
+              "text": "り",
+              "ruby": ""
+            },
+            {
+              "text": "口",
+              "ruby": "くち"
+            },
+            {
+              "text": "には、",
+              "ruby": ""
+            },
+            {
+              "text": "地元",
+              "ruby": "じもと"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "画家",
+              "ruby": "がか"
+            },
+            {
+              "text": "によって",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "painted",
+          "ruby": "描かれた"
+        },
+        {
+          "type": "ja",
+          "text": " された大きな絵がありました。",
+          "parts": [
+            {
+              "text": "された",
+              "ruby": ""
+            },
+            {
+              "text": "大",
+              "ruby": "おお"
+            },
+            {
+              "text": "きな",
+              "ruby": ""
+            },
+            {
+              "text": "絵",
+              "ruby": "え"
+            },
+            {
+              "text": "がありました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "painted",
+          "canonical_word": "painted",
+          "meaning": "描かれた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "painted",
+          "reading": "描かれた",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "painted",
+          "canonical_meaning": "描かれた"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "Inside, we learned that English is spoken in many countries around the world.",
+      "source_ja": "中に入ると、英語は世界中のたくさんの国で話されていることを学びました。",
+      "display_ja": "中に入ると、英語は世界中のたくさんの国で話されていることを学びました。",
+      "corrected_translation": false,
+      "mixed": "中に入ると、英語は世界中の多くの国で spoken されていると学びました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "中に入ると、英語は世界中の多くの国で ",
+          "parts": [
+            {
+              "text": "中",
+              "ruby": "ちゅう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "入",
+              "ruby": "はい"
+            },
+            {
+              "text": "ると、",
+              "ruby": ""
+            },
+            {
+              "text": "英語",
+              "ruby": "えいご"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "世界",
+              "ruby": "せかい"
+            },
+            {
+              "text": "中",
+              "ruby": "ちゅう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "多",
+              "ruby": "おお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "国",
+              "ruby": "くに"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "spoken",
+          "ruby": "話される"
+        },
+        {
+          "type": "ja",
+          "text": " されていると学びました。",
+          "parts": [
+            {
+              "text": "されていると",
+              "ruby": ""
+            },
+            {
+              "text": "学",
+              "ruby": "まな"
+            },
+            {
+              "text": "びました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "spoken",
+          "canonical_word": "spoken",
+          "meaning": "話される"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "spoken",
+          "reading": "話される",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "spoken",
+          "canonical_meaning": "話される"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "In the next room, there was an old book.",
+      "source_ja": "次の部屋には古い本がありました。",
+      "display_ja": "次の部屋には古い本がありました。",
+      "corrected_translation": false,
+      "mixed": "次の部屋には古い本がありました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "次の部屋には古い本がありました。",
+          "parts": [
+            {
+              "text": "次",
+              "ruby": "つぎ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "部屋",
+              "ruby": "へや"
+            },
+            {
+              "text": "には",
+              "ruby": ""
+            },
+            {
+              "text": "古",
+              "ruby": "ふる"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "がありました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 5,
+      "english": "It is loved by many people.",
+      "source_ja": "その本は多くの人に愛されています。",
+      "display_ja": "その本は多くの人に愛されています。",
+      "corrected_translation": false,
+      "mixed": "その本は多くの人に loved されています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "その本は多くの人に ",
+          "parts": [
+            {
+              "text": "その",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "多",
+              "ruby": "おお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "人",
+              "ruby": "ひと"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "loved",
+          "ruby": "愛されている"
+        },
+        {
+          "type": "ja",
+          "text": " されています。",
+          "parts": [
+            {
+              "text": "されています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "loved",
+          "canonical_word": "loved",
+          "meaning": "愛されている"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "loved",
+          "reading": "愛されている",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "loved",
+          "canonical_meaning": "愛されている"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "Every year, it is read by many students.",
+      "source_ja": "毎年、たくさんの生徒に読まれています。",
+      "display_ja": "毎年、たくさんの生徒に読まれています。",
+      "corrected_translation": false,
+      "mixed": "毎年、たくさんの生徒に読まれています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "毎年、たくさんの生徒に読まれています。",
+          "parts": [
+            {
+              "text": "毎年",
+              "ruby": "まいとし"
+            },
+            {
+              "text": "、たくさんの",
+              "ruby": ""
+            },
+            {
+              "text": "生徒",
+              "ruby": "せいと"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "読",
+              "ruby": "よ"
+            },
+            {
+              "text": "まれています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 7,
+      "english": "In the far room, there was a model of an old castle.",
+      "source_ja": "奥の部屋には、古いお城の模型がありました。",
+      "display_ja": "奥の部屋には、古いお城の模型がありました。",
+      "corrected_translation": false,
+      "mixed": "奥の部屋には、古い castle の模型がありました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "奥の部屋には、古い ",
+          "parts": [
+            {
+              "text": "奥",
+              "ruby": "おく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "部屋",
+              "ruby": "へや"
+            },
+            {
+              "text": "には、",
+              "ruby": ""
+            },
+            {
+              "text": "古",
+              "ruby": "ふる"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "castle",
+          "ruby": "城"
+        },
+        {
+          "type": "ja",
+          "text": " の模型がありました。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "模型",
+              "ruby": "もけい"
+            },
+            {
+              "text": "がありました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "castle",
+          "canonical_word": "castle",
+          "meaning": "城"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "castle",
+          "reading": "城",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "castle",
+          "canonical_meaning": "城"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "“This castle was built hundred years ago,” the guide told us.",
+      "source_ja": "「このお城は百年前に建てられたんです」とガイドさんが教えてくれました。",
+      "display_ja": "「このお城は百年前に建てられたんです」とガイドさんが教えてくれました。",
+      "corrected_translation": false,
+      "mixed": "「この castle は hundred 年前に built された」とガイドさんが教えてくれました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「この ",
+          "parts": [
+            {
+              "text": "「この",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "castle",
+          "ruby": "城"
+        },
+        {
+          "type": "ja",
+          "text": " は ",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "hundred",
+          "ruby": "百"
+        },
+        {
+          "type": "ja",
+          "text": " 年前に ",
+          "parts": [
+            {
+              "text": "年",
+              "ruby": "ねん"
+            },
+            {
+              "text": "前",
+              "ruby": "まえ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "built",
+          "ruby": "建てられた"
+        },
+        {
+          "type": "ja",
+          "text": " された」とガイドさんが教えてくれました。",
+          "parts": [
+            {
+              "text": "された」とガイドさんが",
+              "ruby": ""
+            },
+            {
+              "text": "教",
+              "ruby": "おし"
+            },
+            {
+              "text": "えてくれました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "castle",
+          "canonical_word": "castle",
+          "meaning": "城"
+        },
+        {
+          "english": "built",
+          "canonical_word": "built",
+          "meaning": "建てられた"
+        },
+        {
+          "english": "hundred",
+          "canonical_word": "hundred",
+          "meaning": "百"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "castle",
+          "reading": "城",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "castle",
+          "canonical_meaning": "城"
+        },
+        {
+          "english": "built",
+          "reading": "建てられた",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "built",
+          "canonical_meaning": "建てられた"
+        },
+        {
+          "english": "hundred",
+          "reading": "百",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "hundred",
+          "canonical_meaning": "百"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "When we went outside, the mountain behind us was loved by everyone in the town.",
+      "source_ja": "外に出ると、うしろにそびえる山は町のみんなに愛されているということでした。",
+      "display_ja": "外に出ると、うしろにそびえる山は町のみんなに愛されているということでした。",
+      "corrected_translation": false,
+      "mixed": "外に出ると、後ろの山は町のみんなに loved されていると知りました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "外に出ると、後ろの山は町のみんなに ",
+          "parts": [
+            {
+              "text": "外",
+              "ruby": "そと"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "出",
+              "ruby": "で"
+            },
+            {
+              "text": "ると、",
+              "ruby": ""
+            },
+            {
+              "text": "後",
+              "ruby": "うし"
+            },
+            {
+              "text": "ろの",
+              "ruby": ""
+            },
+            {
+              "text": "山",
+              "ruby": "やま"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "町",
+              "ruby": "まち"
+            },
+            {
+              "text": "のみんなに",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "loved",
+          "ruby": "愛されている"
+        },
+        {
+          "type": "ja",
+          "text": " されていると知りました。",
+          "parts": [
+            {
+              "text": "されていると",
+              "ruby": ""
+            },
+            {
+              "text": "知",
+              "ruby": "し"
+            },
+            {
+              "text": "りました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "loved",
+          "canonical_word": "loved",
+          "meaning": "愛されている"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "loved",
+          "reading": "愛されている",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "loved",
+          "canonical_meaning": "愛されている"
+        }
+      ]
+    }
+  ]
+}

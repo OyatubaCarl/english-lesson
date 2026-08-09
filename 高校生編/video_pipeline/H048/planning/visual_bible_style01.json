@@ -1,0 +1,51 @@
+{
+  "lesson": "H048",
+  "title": "企業・広告・消費者",
+  "style": "画風01・光彩のある劇場アニメ背景を基調にした現代社会ドキュメンタリー",
+  "setting": "現代の日本を想起させる架空の海辺の都市。広告会社、商店、家庭、SNS利用者、企業、消費者行政、研究施設が同じ都市圏に属する",
+  "continuity": {
+    "student": "H15基準の同じ17歳男子高校生。短い黒髪、紺の制服コート、灰色のマフラー、黒いリュック。広告を受け取る消費者として複数場面に登場",
+    "product": "文字やロゴのない青緑色の再利用ボトル。広告、品質比較、SNS投稿、規制審査で同じ形を保つ",
+    "corporation": "中規模の生活用品メーカーと広告担当者。誇張された悪役ではなく、消費者への説明責任を負う現実的な組織",
+    "city_palette": "群青の影、夕方の琥珀色、青緑の製品アクセント。広告面は明るいが企業宣伝映像にはしない"
+  },
+  "sequence": [
+    "corporationがbrandを知らせるためadvertisingを計画する",
+    "television・newspapers・magazines・internetのmediaからadvertisementsが届く",
+    "advertisementがconsumerのattentionを引き購入へpersuadeする",
+    "brand imageとproduct qualityがchoiceにinfluenceを与える",
+    "social mediaでconsumersがopinionsをbroadcastする",
+    "negative opinionが数時間で広がりcorporation imageが変化する",
+    "governmentsがmisleading advertisingをregulateする",
+    "health productのclaimにsolid evidenceを求める",
+    "corporations・consumers・stateが互いを監視する関係",
+    "同じ男子高校生が示された情報へcritical eyeを保つ"
+  ],
+  "accuracy": [
+    "広告は人の注意や選択へ影響し得るものとして描き、必ず購入させる洗脳表現にしない",
+    "brand imageとproduct qualityを別々に比較できるようにし、見た目の良い広告を品質の証明にしない",
+    "SNSの否定的意見は一人の投稿から共有が広がる過程として描き、群衆攻撃、晒し、個人情報暴露を描かない",
+    "消費者保護は行政職員が広告資料と根拠を審査する制度として描き、特定国の法律名や機関名を断定しない",
+    "health claimは研究者が測定・比較・資料確認を行う場面とし、特定製品の治療効果や万能性を示さない",
+    "corporation・consumer・stateの関係は現実の会議と相互確認で示し、発光する三角形だけの抽象図にしない",
+    "critical eyeは何も信じない態度ではなく、主張・情報源・根拠を落ち着いて比較する態度として描く"
+  ],
+  "composition": {
+    "aspect_ratio": "16:9",
+    "subtitle_safe_area": "主要な顔、手、商品、広告面、端末、審査資料、研究器具は画面下45%より上に置く",
+    "camera": "一ショットにつき一定方向の寄り、引き、静止のいずれか一つ",
+    "text": "広告、新聞、雑誌、画面、投稿、規則、研究資料に読める文字・価格・ロゴ・数値を生成しない"
+  },
+  "avoid": [
+    "写真調、油彩、企業PV、サイバーパンク広告、空中UI、ホログラム、洗脳光線、悪役企業",
+    "特定企業ロゴ、読める広告文、価格、SNS本文、行政機関名、健康効能、薬品名、透かし",
+    "SNS炎上を暴徒や嫌がらせとして描くこと、健康商品を薬や治療として勧めること",
+    "人物や商品の不連続、広告場面ごとに服装や季節が変わること"
+  ],
+  "imagegen": {
+    "mode": "built-in ImageGen",
+    "planned_master_count": 11,
+    "selected_output_directory": "scenes/character_refs",
+    "video_scene_directory": "scenes/final_style01"
+  }
+}

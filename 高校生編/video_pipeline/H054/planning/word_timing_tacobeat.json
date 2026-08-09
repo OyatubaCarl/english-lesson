@@ -1,0 +1,1068 @@
+{
+  "lesson": "H054",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h054_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H054/candidate1-full.mp3",
+  "source_audio_sha256": "1229373ceb1fad69946407c65582355a092795120057adcc7055791533c1d2d4",
+  "bpm": 109.0,
+  "exact_word_match": true,
+  "word_count": 158,
+  "line_count": 13,
+  "first_word_start": 1.844,
+  "last_word_end": 85.424,
+  "lines": [
+    {
+      "line": 1,
+      "english": "The ancient Olympics in Greece were a festival of peace, even halting wars during the games.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 1.844,
+          "end": 2.06
+        },
+        {
+          "word": "ancient",
+          "display_index": 1,
+          "start": 2.06,
+          "end": 2.461
+        },
+        {
+          "word": "Olympics",
+          "display_index": 2,
+          "start": 2.461,
+          "end": 3.141
+        },
+        {
+          "word": "in",
+          "display_index": 3,
+          "start": 3.141,
+          "end": 3.341
+        },
+        {
+          "word": "Greece",
+          "display_index": 4,
+          "start": 3.341,
+          "end": 4.141
+        },
+        {
+          "word": "were",
+          "display_index": 5,
+          "start": 4.141,
+          "end": 4.321
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 4.321,
+          "end": 4.421
+        },
+        {
+          "word": "festival",
+          "display_index": 7,
+          "start": 4.421,
+          "end": 5.121
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 5.121,
+          "end": 5.301
+        },
+        {
+          "word": "peace,",
+          "display_index": 9,
+          "start": 5.301,
+          "end": 6.422
+        },
+        {
+          "word": "even",
+          "display_index": 10,
+          "start": 6.422,
+          "end": 6.662
+        },
+        {
+          "word": "halting",
+          "display_index": 11,
+          "start": 6.662,
+          "end": 7.202
+        },
+        {
+          "word": "wars",
+          "display_index": 12,
+          "start": 7.202,
+          "end": 7.762
+        },
+        {
+          "word": "during",
+          "display_index": 13,
+          "start": 7.762,
+          "end": 8.622
+        },
+        {
+          "word": "the",
+          "display_index": 14,
+          "start": 8.622,
+          "end": 8.882
+        },
+        {
+          "word": "games.",
+          "display_index": 15,
+          "start": 8.882,
+          "end": 9.843
+        }
+      ],
+      "start": 1.844,
+      "end": 9.843
+    },
+    {
+      "line": 2,
+      "english": "The modern Olympics inherit that spirit.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 10.143,
+          "end": 10.262
+        },
+        {
+          "word": "modern",
+          "display_index": 1,
+          "start": 10.262,
+          "end": 10.883
+        },
+        {
+          "word": "Olympics",
+          "display_index": 2,
+          "start": 10.883,
+          "end": 11.543
+        },
+        {
+          "word": "inherit",
+          "display_index": 3,
+          "start": 11.543,
+          "end": 12.163
+        },
+        {
+          "word": "that",
+          "display_index": 4,
+          "start": 12.163,
+          "end": 12.383
+        },
+        {
+          "word": "spirit.",
+          "display_index": 5,
+          "start": 12.383,
+          "end": 13.063
+        }
+      ],
+      "start": 10.143,
+      "end": 13.063
+    },
+    {
+      "line": 3,
+      "english": "Athletes from across the world, after long years of training, step into competition.",
+      "word_timings": [
+        {
+          "word": "Athletes",
+          "display_index": 0,
+          "start": 13.363,
+          "end": 14.103
+        },
+        {
+          "word": "from",
+          "display_index": 1,
+          "start": 14.103,
+          "end": 14.283
+        },
+        {
+          "word": "across",
+          "display_index": 2,
+          "start": 14.283,
+          "end": 14.694
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 14.694,
+          "end": 14.823
+        },
+        {
+          "word": "world,",
+          "display_index": 4,
+          "start": 14.823,
+          "end": 15.264
+        },
+        {
+          "word": "after",
+          "display_index": 5,
+          "start": 15.264,
+          "end": 15.524
+        },
+        {
+          "word": "long",
+          "display_index": 6,
+          "start": 15.524,
+          "end": 15.864
+        },
+        {
+          "word": "years",
+          "display_index": 7,
+          "start": 15.864,
+          "end": 16.144
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 16.144,
+          "end": 16.284
+        },
+        {
+          "word": "training,",
+          "display_index": 9,
+          "start": 16.284,
+          "end": 17.924
+        },
+        {
+          "word": "step",
+          "display_index": 10,
+          "start": 17.924,
+          "end": 18.364
+        },
+        {
+          "word": "into",
+          "display_index": 11,
+          "start": 18.364,
+          "end": 18.664
+        },
+        {
+          "word": "competition.",
+          "display_index": 12,
+          "start": 18.664,
+          "end": 19.925
+        }
+      ],
+      "start": 13.363,
+      "end": 19.925
+    },
+    {
+      "line": 4,
+      "english": "Their discipline and dedication are more precious than anything else.",
+      "word_timings": [
+        {
+          "word": "Their",
+          "display_index": 0,
+          "start": 20.225,
+          "end": 20.465
+        },
+        {
+          "word": "discipline",
+          "display_index": 1,
+          "start": 20.465,
+          "end": 21.205
+        },
+        {
+          "word": "and",
+          "display_index": 2,
+          "start": 21.205,
+          "end": 21.325
+        },
+        {
+          "word": "dedication",
+          "display_index": 3,
+          "start": 21.325,
+          "end": 22.834
+        },
+        {
+          "word": "are",
+          "display_index": 4,
+          "start": 22.834,
+          "end": 22.965
+        },
+        {
+          "word": "more",
+          "display_index": 5,
+          "start": 22.965,
+          "end": 23.185
+        },
+        {
+          "word": "precious",
+          "display_index": 6,
+          "start": 23.185,
+          "end": 23.666
+        },
+        {
+          "word": "than",
+          "display_index": 7,
+          "start": 23.666,
+          "end": 23.866
+        },
+        {
+          "word": "anything",
+          "display_index": 8,
+          "start": 23.866,
+          "end": 24.486
+        },
+        {
+          "word": "else.",
+          "display_index": 9,
+          "start": 24.486,
+          "end": 25.166
+        }
+      ],
+      "start": 20.225,
+      "end": 25.166
+    },
+    {
+      "line": 5,
+      "english": "Victory is not everything.",
+      "word_timings": [
+        {
+          "word": "Victory",
+          "display_index": 0,
+          "start": 25.166,
+          "end": 26.291
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 26.291,
+          "end": 26.546
+        },
+        {
+          "word": "not",
+          "display_index": 2,
+          "start": 26.546,
+          "end": 27.166
+        },
+        {
+          "word": "everything.",
+          "display_index": 3,
+          "start": 27.166,
+          "end": 28.327
+        }
+      ],
+      "start": 25.166,
+      "end": 28.327
+    },
+    {
+      "line": 6,
+      "english": "Sportsmanship, the spirit of respecting an opponent and following the rules, is the true meaning of sport.",
+      "word_timings": [
+        {
+          "word": "Sportsmanship,",
+          "display_index": 0,
+          "start": 28.627,
+          "end": 29.981
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 29.981,
+          "end": 30.067
+        },
+        {
+          "word": "spirit",
+          "display_index": 2,
+          "start": 30.067,
+          "end": 30.627
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 30.627,
+          "end": 30.787
+        },
+        {
+          "word": "respecting",
+          "display_index": 4,
+          "start": 30.787,
+          "end": 31.807
+        },
+        {
+          "word": "an",
+          "display_index": 5,
+          "start": 31.807,
+          "end": 31.948
+        },
+        {
+          "word": "opponent",
+          "display_index": 6,
+          "start": 31.948,
+          "end": 32.908
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 32.908,
+          "end": 33.128
+        },
+        {
+          "word": "following",
+          "display_index": 8,
+          "start": 33.128,
+          "end": 33.854
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 33.854,
+          "end": 34.008
+        },
+        {
+          "word": "rules,",
+          "display_index": 10,
+          "start": 34.008,
+          "end": 35.229
+        },
+        {
+          "word": "is",
+          "display_index": 11,
+          "start": 35.229,
+          "end": 35.362
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 35.362,
+          "end": 35.528
+        },
+        {
+          "word": "true",
+          "display_index": 13,
+          "start": 35.528,
+          "end": 35.908
+        },
+        {
+          "word": "meaning",
+          "display_index": 14,
+          "start": 35.908,
+          "end": 36.489
+        },
+        {
+          "word": "of",
+          "display_index": 15,
+          "start": 36.489,
+          "end": 36.629
+        },
+        {
+          "word": "sport.",
+          "display_index": 16,
+          "start": 36.629,
+          "end": 37.349
+        }
+      ],
+      "start": 28.627,
+      "end": 37.349
+    },
+    {
+      "line": 7,
+      "english": "In recent years, the doping problem has shaken competition around the world.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 37.349,
+          "end": 37.549
+        },
+        {
+          "word": "recent",
+          "display_index": 1,
+          "start": 37.549,
+          "end": 38.089
+        },
+        {
+          "word": "years,",
+          "display_index": 2,
+          "start": 38.089,
+          "end": 38.814
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 38.814,
+          "end": 38.909
+        },
+        {
+          "word": "doping",
+          "display_index": 4,
+          "start": 38.909,
+          "end": 39.449
+        },
+        {
+          "word": "problem",
+          "display_index": 5,
+          "start": 39.449,
+          "end": 40.029
+        },
+        {
+          "word": "has",
+          "display_index": 6,
+          "start": 40.029,
+          "end": 40.289
+        },
+        {
+          "word": "shaken",
+          "display_index": 7,
+          "start": 40.289,
+          "end": 40.83
+        },
+        {
+          "word": "competition",
+          "display_index": 8,
+          "start": 40.83,
+          "end": 41.89
+        },
+        {
+          "word": "around",
+          "display_index": 9,
+          "start": 41.89,
+          "end": 42.24
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 42.24,
+          "end": 42.37
+        },
+        {
+          "word": "world.",
+          "display_index": 11,
+          "start": 42.37,
+          "end": 42.89
+        }
+      ],
+      "start": 37.349,
+      "end": 42.89
+    },
+    {
+      "line": 8,
+      "english": "Athletes who use banned drugs lose their medals and are removed from their sport.",
+      "word_timings": [
+        {
+          "word": "Athletes",
+          "display_index": 0,
+          "start": 42.89,
+          "end": 43.37
+        },
+        {
+          "word": "who",
+          "display_index": 1,
+          "start": 43.37,
+          "end": 43.69
+        },
+        {
+          "word": "use",
+          "display_index": 2,
+          "start": 43.69,
+          "end": 43.89
+        },
+        {
+          "word": "banned",
+          "display_index": 3,
+          "start": 43.89,
+          "end": 44.15
+        },
+        {
+          "word": "drugs",
+          "display_index": 4,
+          "start": 44.15,
+          "end": 44.731
+        },
+        {
+          "word": "lose",
+          "display_index": 5,
+          "start": 44.731,
+          "end": 45.011
+        },
+        {
+          "word": "their",
+          "display_index": 6,
+          "start": 45.011,
+          "end": 45.271
+        },
+        {
+          "word": "medals",
+          "display_index": 7,
+          "start": 45.271,
+          "end": 46.171
+        },
+        {
+          "word": "and",
+          "display_index": 8,
+          "start": 46.171,
+          "end": 46.374
+        },
+        {
+          "word": "are",
+          "display_index": 9,
+          "start": 46.374,
+          "end": 46.651
+        },
+        {
+          "word": "removed",
+          "display_index": 10,
+          "start": 46.651,
+          "end": 49.092
+        },
+        {
+          "word": "from",
+          "display_index": 11,
+          "start": 49.092,
+          "end": 49.392
+        },
+        {
+          "word": "their",
+          "display_index": 12,
+          "start": 49.392,
+          "end": 49.772
+        },
+        {
+          "word": "sport.",
+          "display_index": 13,
+          "start": 49.772,
+          "end": 50.505
+        }
+      ],
+      "start": 42.89,
+      "end": 50.505
+    },
+    {
+      "line": 9,
+      "english": "To preserve the principle of fair play, strict testing is essential.",
+      "word_timings": [
+        {
+          "word": "To",
+          "display_index": 0,
+          "start": 50.505,
+          "end": 50.592
+        },
+        {
+          "word": "preserve",
+          "display_index": 1,
+          "start": 50.592,
+          "end": 51.059
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 51.059,
+          "end": 51.172
+        },
+        {
+          "word": "principle",
+          "display_index": 3,
+          "start": 51.172,
+          "end": 51.772
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 51.772,
+          "end": 51.892
+        },
+        {
+          "word": "fair",
+          "display_index": 5,
+          "start": 51.892,
+          "end": 52.232
+        },
+        {
+          "word": "play,",
+          "display_index": 6,
+          "start": 52.232,
+          "end": 53.152
+        },
+        {
+          "word": "strict",
+          "display_index": 7,
+          "start": 53.152,
+          "end": 53.493
+        },
+        {
+          "word": "testing",
+          "display_index": 8,
+          "start": 53.493,
+          "end": 54.077
+        },
+        {
+          "word": "is",
+          "display_index": 9,
+          "start": 54.077,
+          "end": 54.433
+        },
+        {
+          "word": "essential.",
+          "display_index": 10,
+          "start": 54.433,
+          "end": 55.413
+        }
+      ],
+      "start": 50.505,
+      "end": 55.413
+    },
+    {
+      "line": 10,
+      "english": "Winning teams gather enthusiastic fans, and losing teams receive quiet applause.",
+      "word_timings": [
+        {
+          "word": "Winning",
+          "display_index": 0,
+          "start": 55.713,
+          "end": 56.113
+        },
+        {
+          "word": "teams",
+          "display_index": 1,
+          "start": 56.113,
+          "end": 56.533
+        },
+        {
+          "word": "gather",
+          "display_index": 2,
+          "start": 56.533,
+          "end": 57.193
+        },
+        {
+          "word": "enthusiastic",
+          "display_index": 3,
+          "start": 57.193,
+          "end": 58.434
+        },
+        {
+          "word": "fans,",
+          "display_index": 4,
+          "start": 58.434,
+          "end": 59.334
+        },
+        {
+          "word": "and",
+          "display_index": 5,
+          "start": 59.334,
+          "end": 59.554
+        },
+        {
+          "word": "losing",
+          "display_index": 6,
+          "start": 59.554,
+          "end": 60.094
+        },
+        {
+          "word": "teams",
+          "display_index": 7,
+          "start": 60.094,
+          "end": 60.934
+        },
+        {
+          "word": "receive",
+          "display_index": 8,
+          "start": 60.934,
+          "end": 61.995
+        },
+        {
+          "word": "quiet",
+          "display_index": 9,
+          "start": 61.995,
+          "end": 62.955
+        },
+        {
+          "word": "applause.",
+          "display_index": 10,
+          "start": 62.955,
+          "end": 63.678
+        }
+      ],
+      "start": 55.713,
+      "end": 63.678
+    },
+    {
+      "line": 11,
+      "english": "To accept defeat and turn toward the next challenge — this is the true beauty of sport.",
+      "word_timings": [
+        {
+          "word": "To",
+          "display_index": 0,
+          "start": 63.678,
+          "end": 63.815
+        },
+        {
+          "word": "accept",
+          "display_index": 1,
+          "start": 63.815,
+          "end": 64.355
+        },
+        {
+          "word": "defeat",
+          "display_index": 2,
+          "start": 64.355,
+          "end": 65.175
+        },
+        {
+          "word": "and",
+          "display_index": 3,
+          "start": 65.175,
+          "end": 65.295
+        },
+        {
+          "word": "turn",
+          "display_index": 4,
+          "start": 65.295,
+          "end": 66.096
+        },
+        {
+          "word": "toward",
+          "display_index": 5,
+          "start": 66.096,
+          "end": 66.821
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 66.821,
+          "end": 66.956
+        },
+        {
+          "word": "next",
+          "display_index": 7,
+          "start": 66.956,
+          "end": 67.356
+        },
+        {
+          "word": "challenge",
+          "display_index": 8,
+          "start": 67.356,
+          "end": 68.316
+        },
+        {
+          "word": "this",
+          "display_index": 10,
+          "start": 68.316,
+          "end": 68.61
+        },
+        {
+          "word": "is",
+          "display_index": 11,
+          "start": 68.61,
+          "end": 68.739
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 68.739,
+          "end": 68.856
+        },
+        {
+          "word": "true",
+          "display_index": 13,
+          "start": 68.856,
+          "end": 69.416
+        },
+        {
+          "word": "beauty",
+          "display_index": 14,
+          "start": 69.416,
+          "end": 70.317
+        },
+        {
+          "word": "of",
+          "display_index": 15,
+          "start": 70.317,
+          "end": 70.657
+        },
+        {
+          "word": "sport.",
+          "display_index": 16,
+          "start": 70.657,
+          "end": 72.077
+        }
+      ],
+      "start": 63.678,
+      "end": 72.077
+    },
+    {
+      "line": 12,
+      "english": "Children in front of the television look up to these athletes.",
+      "word_timings": [
+        {
+          "word": "Children",
+          "display_index": 0,
+          "start": 72.377,
+          "end": 73.037
+        },
+        {
+          "word": "in",
+          "display_index": 1,
+          "start": 73.037,
+          "end": 73.197
+        },
+        {
+          "word": "front",
+          "display_index": 2,
+          "start": 73.197,
+          "end": 73.477
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 73.477,
+          "end": 73.631
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 73.631,
+          "end": 73.777
+        },
+        {
+          "word": "television",
+          "display_index": 5,
+          "start": 73.777,
+          "end": 74.898
+        },
+        {
+          "word": "look",
+          "display_index": 6,
+          "start": 74.898,
+          "end": 75.238
+        },
+        {
+          "word": "up",
+          "display_index": 7,
+          "start": 75.238,
+          "end": 75.674
+        },
+        {
+          "word": "to",
+          "display_index": 8,
+          "start": 75.674,
+          "end": 75.838
+        },
+        {
+          "word": "these",
+          "display_index": 9,
+          "start": 75.838,
+          "end": 76.358
+        },
+        {
+          "word": "athletes.",
+          "display_index": 10,
+          "start": 76.358,
+          "end": 77.858
+        }
+      ],
+      "start": 72.377,
+      "end": 77.858
+    },
+    {
+      "line": 13,
+      "english": "As role models, they pass on to a younger generation the message that effort can bear fruit.",
+      "word_timings": [
+        {
+          "word": "As",
+          "display_index": 0,
+          "start": 78.298,
+          "end": 78.458
+        },
+        {
+          "word": "role",
+          "display_index": 1,
+          "start": 78.458,
+          "end": 78.698
+        },
+        {
+          "word": "models,",
+          "display_index": 2,
+          "start": 78.698,
+          "end": 79.359
+        },
+        {
+          "word": "they",
+          "display_index": 3,
+          "start": 79.359,
+          "end": 79.519
+        },
+        {
+          "word": "pass",
+          "display_index": 4,
+          "start": 79.519,
+          "end": 79.919
+        },
+        {
+          "word": "on",
+          "display_index": 5,
+          "start": 79.919,
+          "end": 80.192
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 80.192,
+          "end": 80.322
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 80.322,
+          "end": 80.479
+        },
+        {
+          "word": "younger",
+          "display_index": 8,
+          "start": 80.479,
+          "end": 80.839
+        },
+        {
+          "word": "generation",
+          "display_index": 9,
+          "start": 80.839,
+          "end": 81.816
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 81.816,
+          "end": 81.959
+        },
+        {
+          "word": "message",
+          "display_index": 11,
+          "start": 81.959,
+          "end": 82.659
+        },
+        {
+          "word": "that",
+          "display_index": 12,
+          "start": 82.659,
+          "end": 82.859
+        },
+        {
+          "word": "effort",
+          "display_index": 13,
+          "start": 82.859,
+          "end": 83.46
+        },
+        {
+          "word": "can",
+          "display_index": 14,
+          "start": 83.46,
+          "end": 83.62
+        },
+        {
+          "word": "bear",
+          "display_index": 15,
+          "start": 83.62,
+          "end": 84.12
+        },
+        {
+          "word": "fruit.",
+          "display_index": 16,
+          "start": 84.12,
+          "end": 85.424
+        }
+      ],
+      "start": 78.298,
+      "end": 85.424
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

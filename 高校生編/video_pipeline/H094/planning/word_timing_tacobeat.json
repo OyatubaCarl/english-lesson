@@ -1,0 +1,986 @@
+{
+  "lesson": "H094",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h094_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H094/candidate1-full.mp3",
+  "source_audio_sha256": "fcb70b8765ca7cc6fba3b7127cf094801edcc52ddd7242741ca13b291fc6f34c",
+  "bpm": 99.94,
+  "exact_word_match": true,
+  "word_count": 147,
+  "line_count": 11,
+  "first_word_start": 0.755,
+  "last_word_end": 79.024,
+  "lines": [
+    {
+      "line": 1,
+      "english": "The expense of urban housing rises year after year.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 0.755,
+          "end": 0.92
+        },
+        {
+          "word": "expense",
+          "display_index": 1,
+          "start": 0.92,
+          "end": 1.66
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 1.66,
+          "end": 1.96
+        },
+        {
+          "word": "urban",
+          "display_index": 3,
+          "start": 1.96,
+          "end": 2.481
+        },
+        {
+          "word": "housing",
+          "display_index": 4,
+          "start": 2.481,
+          "end": 3.101
+        },
+        {
+          "word": "rises",
+          "display_index": 5,
+          "start": 3.101,
+          "end": 3.741
+        },
+        {
+          "word": "year",
+          "display_index": 6,
+          "start": 3.741,
+          "end": 4.081
+        },
+        {
+          "word": "after",
+          "display_index": 7,
+          "start": 4.081,
+          "end": 4.461
+        },
+        {
+          "word": "year.",
+          "display_index": 8,
+          "start": 4.461,
+          "end": 5.201
+        }
+      ],
+      "start": 0.755,
+      "end": 5.201
+    },
+    {
+      "line": 2,
+      "english": "Many young people cannot even afford the rent and continue living with their parents.",
+      "word_timings": [
+        {
+          "word": "Many",
+          "display_index": 0,
+          "start": 5.201,
+          "end": 5.521
+        },
+        {
+          "word": "young",
+          "display_index": 1,
+          "start": 5.521,
+          "end": 5.922
+        },
+        {
+          "word": "people",
+          "display_index": 2,
+          "start": 5.922,
+          "end": 6.222
+        },
+        {
+          "word": "cannot",
+          "display_index": 3,
+          "start": 6.222,
+          "end": 6.782
+        },
+        {
+          "word": "even",
+          "display_index": 4,
+          "start": 6.782,
+          "end": 7.342
+        },
+        {
+          "word": "afford",
+          "display_index": 5,
+          "start": 7.342,
+          "end": 7.741
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 7.741,
+          "end": 7.882
+        },
+        {
+          "word": "rent",
+          "display_index": 7,
+          "start": 7.882,
+          "end": 8.802
+        },
+        {
+          "word": "and",
+          "display_index": 8,
+          "start": 8.802,
+          "end": 8.922
+        },
+        {
+          "word": "continue",
+          "display_index": 9,
+          "start": 8.922,
+          "end": 9.542
+        },
+        {
+          "word": "living",
+          "display_index": 10,
+          "start": 9.542,
+          "end": 9.863
+        },
+        {
+          "word": "with",
+          "display_index": 11,
+          "start": 9.863,
+          "end": 10.023
+        },
+        {
+          "word": "their",
+          "display_index": 12,
+          "start": 10.023,
+          "end": 10.283
+        },
+        {
+          "word": "parents.",
+          "display_index": 13,
+          "start": 10.283,
+          "end": 11.303
+        }
+      ],
+      "start": 5.201,
+      "end": 11.303
+    },
+    {
+      "line": 3,
+      "english": "Taking out a mortgage to buy a home is no longer the obvious choice it once was.",
+      "word_timings": [
+        {
+          "word": "Taking",
+          "display_index": 0,
+          "start": 11.603,
+          "end": 12.183
+        },
+        {
+          "word": "out",
+          "display_index": 1,
+          "start": 12.183,
+          "end": 12.372
+        },
+        {
+          "word": "a",
+          "display_index": 2,
+          "start": 12.372,
+          "end": 12.663
+        },
+        {
+          "word": "mortgage",
+          "display_index": 3,
+          "start": 12.663,
+          "end": 14.291
+        },
+        {
+          "word": "to",
+          "display_index": 4,
+          "start": 14.291,
+          "end": 14.484
+        },
+        {
+          "word": "buy",
+          "display_index": 5,
+          "start": 14.484,
+          "end": 14.829
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 14.829,
+          "end": 15.084
+        },
+        {
+          "word": "home",
+          "display_index": 7,
+          "start": 15.084,
+          "end": 15.46
+        },
+        {
+          "word": "is",
+          "display_index": 8,
+          "start": 15.46,
+          "end": 15.564
+        },
+        {
+          "word": "no",
+          "display_index": 9,
+          "start": 15.564,
+          "end": 15.824
+        },
+        {
+          "word": "longer",
+          "display_index": 10,
+          "start": 15.824,
+          "end": 16.29
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 16.29,
+          "end": 16.524
+        },
+        {
+          "word": "obvious",
+          "display_index": 12,
+          "start": 16.524,
+          "end": 17.284
+        },
+        {
+          "word": "choice",
+          "display_index": 13,
+          "start": 17.284,
+          "end": 19.185
+        },
+        {
+          "word": "it",
+          "display_index": 14,
+          "start": 19.185,
+          "end": 19.485
+        },
+        {
+          "word": "once",
+          "display_index": 15,
+          "start": 19.485,
+          "end": 19.745
+        },
+        {
+          "word": "was.",
+          "display_index": 16,
+          "start": 19.745,
+          "end": 21.245
+        }
+      ],
+      "start": 11.603,
+      "end": 21.245
+    },
+    {
+      "line": 4,
+      "english": "Real estate prices have been increasing at a pace that far exceeds the growth of earnings.",
+      "word_timings": [
+        {
+          "word": "Real",
+          "display_index": 0,
+          "start": 22.406,
+          "end": 22.626
+        },
+        {
+          "word": "estate",
+          "display_index": 1,
+          "start": 22.626,
+          "end": 23.006
+        },
+        {
+          "word": "prices",
+          "display_index": 2,
+          "start": 23.006,
+          "end": 23.486
+        },
+        {
+          "word": "have",
+          "display_index": 3,
+          "start": 23.486,
+          "end": 23.646
+        },
+        {
+          "word": "been",
+          "display_index": 4,
+          "start": 23.646,
+          "end": 23.866
+        },
+        {
+          "word": "increasing",
+          "display_index": 5,
+          "start": 23.866,
+          "end": 24.606
+        },
+        {
+          "word": "at",
+          "display_index": 6,
+          "start": 24.606,
+          "end": 24.704
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 24.704,
+          "end": 24.826
+        },
+        {
+          "word": "pace",
+          "display_index": 8,
+          "start": 24.826,
+          "end": 25.146
+        },
+        {
+          "word": "that",
+          "display_index": 9,
+          "start": 25.146,
+          "end": 25.406
+        },
+        {
+          "word": "far",
+          "display_index": 10,
+          "start": 25.406,
+          "end": 25.707
+        },
+        {
+          "word": "exceeds",
+          "display_index": 11,
+          "start": 25.707,
+          "end": 26.213
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 26.213,
+          "end": 26.447
+        },
+        {
+          "word": "growth",
+          "display_index": 13,
+          "start": 26.447,
+          "end": 26.867
+        },
+        {
+          "word": "of",
+          "display_index": 14,
+          "start": 26.867,
+          "end": 27.147
+        },
+        {
+          "word": "earnings.",
+          "display_index": 15,
+          "start": 27.147,
+          "end": 28.587
+        }
+      ],
+      "start": 22.406,
+      "end": 28.587
+    },
+    {
+      "line": 5,
+      "english": "This issue has triggered intense debate as a domestic policy matter in many countries.",
+      "word_timings": [
+        {
+          "word": "This",
+          "display_index": 0,
+          "start": 28.887,
+          "end": 29.067
+        },
+        {
+          "word": "issue",
+          "display_index": 1,
+          "start": 29.067,
+          "end": 29.347
+        },
+        {
+          "word": "has",
+          "display_index": 2,
+          "start": 29.347,
+          "end": 29.588
+        },
+        {
+          "word": "triggered",
+          "display_index": 3,
+          "start": 29.588,
+          "end": 30.028
+        },
+        {
+          "word": "intense",
+          "display_index": 4,
+          "start": 30.028,
+          "end": 30.548
+        },
+        {
+          "word": "debate",
+          "display_index": 5,
+          "start": 30.548,
+          "end": 31.048
+        },
+        {
+          "word": "as",
+          "display_index": 6,
+          "start": 31.048,
+          "end": 31.145
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 31.145,
+          "end": 31.268
+        },
+        {
+          "word": "domestic",
+          "display_index": 8,
+          "start": 31.268,
+          "end": 31.868
+        },
+        {
+          "word": "policy",
+          "display_index": 9,
+          "start": 31.868,
+          "end": 32.608
+        },
+        {
+          "word": "matter",
+          "display_index": 10,
+          "start": 32.608,
+          "end": 33.028
+        },
+        {
+          "word": "in",
+          "display_index": 11,
+          "start": 33.028,
+          "end": 33.208
+        },
+        {
+          "word": "many",
+          "display_index": 12,
+          "start": 33.208,
+          "end": 33.669
+        },
+        {
+          "word": "countries.",
+          "display_index": 13,
+          "start": 33.669,
+          "end": 34.591
+        }
+      ],
+      "start": 28.887,
+      "end": 34.591
+    },
+    {
+      "line": 6,
+      "english": "The mayor and governor propose measures, but their effect remains limited.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 34.891,
+          "end": 35.029
+        },
+        {
+          "word": "mayor",
+          "display_index": 1,
+          "start": 35.029,
+          "end": 35.409
+        },
+        {
+          "word": "and",
+          "display_index": 2,
+          "start": 35.409,
+          "end": 35.629
+        },
+        {
+          "word": "governor",
+          "display_index": 3,
+          "start": 35.629,
+          "end": 36.089
+        },
+        {
+          "word": "propose",
+          "display_index": 4,
+          "start": 36.089,
+          "end": 36.569
+        },
+        {
+          "word": "measures,",
+          "display_index": 5,
+          "start": 36.569,
+          "end": 37.59
+        },
+        {
+          "word": "but",
+          "display_index": 6,
+          "start": 37.59,
+          "end": 37.73
+        },
+        {
+          "word": "their",
+          "display_index": 7,
+          "start": 37.73,
+          "end": 37.93
+        },
+        {
+          "word": "effect",
+          "display_index": 8,
+          "start": 37.93,
+          "end": 38.35
+        },
+        {
+          "word": "remains",
+          "display_index": 9,
+          "start": 38.35,
+          "end": 38.95
+        },
+        {
+          "word": "limited.",
+          "display_index": 10,
+          "start": 38.95,
+          "end": 40.43
+        }
+      ],
+      "start": 34.891,
+      "end": 40.43
+    },
+    {
+      "line": 7,
+      "english": "Numerous residents have been moving to cheaper suburbs.",
+      "word_timings": [
+        {
+          "word": "Numerous",
+          "display_index": 0,
+          "start": 40.73,
+          "end": 41.531
+        },
+        {
+          "word": "residents",
+          "display_index": 1,
+          "start": 41.531,
+          "end": 42.371
+        },
+        {
+          "word": "have",
+          "display_index": 2,
+          "start": 42.371,
+          "end": 42.551
+        },
+        {
+          "word": "been",
+          "display_index": 3,
+          "start": 42.551,
+          "end": 42.831
+        },
+        {
+          "word": "moving",
+          "display_index": 4,
+          "start": 42.831,
+          "end": 43.566
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 43.566,
+          "end": 43.971
+        },
+        {
+          "word": "cheaper",
+          "display_index": 6,
+          "start": 43.971,
+          "end": 44.911
+        },
+        {
+          "word": "suburbs.",
+          "display_index": 7,
+          "start": 44.911,
+          "end": 45.832
+        }
+      ],
+      "start": 40.73,
+      "end": 45.832
+    },
+    {
+      "line": 8,
+      "english": "But commuting times grow considerably longer, and a decline in the quality of life is an outcome that cannot be ignored.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 46.132,
+          "end": 46.272
+        },
+        {
+          "word": "commuting",
+          "display_index": 1,
+          "start": 46.272,
+          "end": 46.852
+        },
+        {
+          "word": "times",
+          "display_index": 2,
+          "start": 46.852,
+          "end": 47.332
+        },
+        {
+          "word": "grow",
+          "display_index": 3,
+          "start": 47.332,
+          "end": 47.912
+        },
+        {
+          "word": "considerably",
+          "display_index": 4,
+          "start": 47.912,
+          "end": 48.852
+        },
+        {
+          "word": "longer,",
+          "display_index": 5,
+          "start": 48.852,
+          "end": 50.253
+        },
+        {
+          "word": "and",
+          "display_index": 6,
+          "start": 50.253,
+          "end": 50.358
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 50.358,
+          "end": 50.493
+        },
+        {
+          "word": "decline",
+          "display_index": 8,
+          "start": 50.493,
+          "end": 51.013
+        },
+        {
+          "word": "in",
+          "display_index": 9,
+          "start": 51.013,
+          "end": 51.103
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 51.103,
+          "end": 51.213
+        },
+        {
+          "word": "quality",
+          "display_index": 11,
+          "start": 51.213,
+          "end": 51.753
+        },
+        {
+          "word": "of",
+          "display_index": 12,
+          "start": 51.753,
+          "end": 51.893
+        },
+        {
+          "word": "life",
+          "display_index": 13,
+          "start": 51.893,
+          "end": 52.161
+        },
+        {
+          "word": "is",
+          "display_index": 14,
+          "start": 52.161,
+          "end": 52.373
+        },
+        {
+          "word": "an",
+          "display_index": 15,
+          "start": 52.373,
+          "end": 52.533
+        },
+        {
+          "word": "outcome",
+          "display_index": 16,
+          "start": 52.533,
+          "end": 53.214
+        },
+        {
+          "word": "that",
+          "display_index": 17,
+          "start": 53.214,
+          "end": 53.494
+        },
+        {
+          "word": "cannot",
+          "display_index": 18,
+          "start": 53.494,
+          "end": 54.114
+        },
+        {
+          "word": "be",
+          "display_index": 19,
+          "start": 54.114,
+          "end": 54.474
+        },
+        {
+          "word": "ignored.",
+          "display_index": 20,
+          "start": 54.474,
+          "end": 55.274
+        }
+      ],
+      "start": 46.132,
+      "end": 55.274
+    },
+    {
+      "line": 9,
+      "english": "The housing problem is not merely an economic question.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 55.318,
+          "end": 55.474
+        },
+        {
+          "word": "housing",
+          "display_index": 1,
+          "start": 55.474,
+          "end": 56.034
+        },
+        {
+          "word": "problem",
+          "display_index": 2,
+          "start": 56.034,
+          "end": 56.819
+        },
+        {
+          "word": "is",
+          "display_index": 3,
+          "start": 56.819,
+          "end": 56.974
+        },
+        {
+          "word": "not",
+          "display_index": 4,
+          "start": 56.974,
+          "end": 57.255
+        },
+        {
+          "word": "merely",
+          "display_index": 5,
+          "start": 57.255,
+          "end": 58.075
+        },
+        {
+          "word": "an",
+          "display_index": 6,
+          "start": 58.075,
+          "end": 58.235
+        },
+        {
+          "word": "economic",
+          "display_index": 7,
+          "start": 58.235,
+          "end": 59.315
+        },
+        {
+          "word": "question.",
+          "display_index": 8,
+          "start": 59.315,
+          "end": 60.097
+        }
+      ],
+      "start": 55.318,
+      "end": 60.097
+    },
+    {
+      "line": 10,
+      "english": "A stable home is directly connected to children's education, the health of residents, and the stability of a community.",
+      "word_timings": [
+        {
+          "word": "A",
+          "display_index": 0,
+          "start": 60.097,
+          "end": 60.195
+        },
+        {
+          "word": "stable",
+          "display_index": 1,
+          "start": 60.195,
+          "end": 60.695
+        },
+        {
+          "word": "home",
+          "display_index": 2,
+          "start": 60.695,
+          "end": 61.167
+        },
+        {
+          "word": "is",
+          "display_index": 3,
+          "start": 61.167,
+          "end": 61.316
+        },
+        {
+          "word": "directly",
+          "display_index": 4,
+          "start": 61.316,
+          "end": 61.876
+        },
+        {
+          "word": "connected",
+          "display_index": 5,
+          "start": 61.876,
+          "end": 62.929
+        },
+        {
+          "word": "to",
+          "display_index": 6,
+          "start": 62.929,
+          "end": 63.096
+        },
+        {
+          "word": "children's",
+          "display_index": 7,
+          "start": 63.096,
+          "end": 63.976
+        },
+        {
+          "word": "education,",
+          "display_index": 8,
+          "start": 63.976,
+          "end": 65.258
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 65.258,
+          "end": 65.377
+        },
+        {
+          "word": "health",
+          "display_index": 10,
+          "start": 65.377,
+          "end": 65.777
+        },
+        {
+          "word": "of",
+          "display_index": 11,
+          "start": 65.777,
+          "end": 65.977
+        },
+        {
+          "word": "residents,",
+          "display_index": 12,
+          "start": 65.977,
+          "end": 67.657
+        },
+        {
+          "word": "and",
+          "display_index": 13,
+          "start": 67.657,
+          "end": 67.825
+        },
+        {
+          "word": "the",
+          "display_index": 14,
+          "start": 67.825,
+          "end": 67.905
+        },
+        {
+          "word": "stability",
+          "display_index": 15,
+          "start": 67.877,
+          "end": 69.058
+        },
+        {
+          "word": "of",
+          "display_index": 16,
+          "start": 69.058,
+          "end": 69.184
+        },
+        {
+          "word": "a",
+          "display_index": 17,
+          "start": 69.184,
+          "end": 69.678
+        },
+        {
+          "word": "community.",
+          "display_index": 18,
+          "start": 69.678,
+          "end": 71.178
+        }
+      ],
+      "start": 60.097,
+      "end": 71.178
+    },
+    {
+      "line": 11,
+      "english": "Adequate housing should be the right of every person.",
+      "word_timings": [
+        {
+          "word": "Adequate",
+          "display_index": 0,
+          "start": 73.279,
+          "end": 73.799
+        },
+        {
+          "word": "housing",
+          "display_index": 1,
+          "start": 73.799,
+          "end": 75.579
+        },
+        {
+          "word": "should",
+          "display_index": 2,
+          "start": 75.579,
+          "end": 75.919
+        },
+        {
+          "word": "be",
+          "display_index": 3,
+          "start": 75.919,
+          "end": 76.225
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 76.225,
+          "end": 76.379
+        },
+        {
+          "word": "right",
+          "display_index": 5,
+          "start": 76.379,
+          "end": 76.759
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 76.759,
+          "end": 77.06
+        },
+        {
+          "word": "every",
+          "display_index": 7,
+          "start": 77.06,
+          "end": 77.54
+        },
+        {
+          "word": "person.",
+          "display_index": 8,
+          "start": 77.54,
+          "end": 79.024
+        }
+      ],
+      "start": 73.279,
+      "end": 79.024
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

@@ -1,0 +1,141 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H027.md",
+  "audio": "高校生編/suno_ready/generated/audio/H027/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 105.86,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0068,
+  "expected_words": 147,
+  "transcribed_words": 148,
+  "matched_words": 146,
+  "coverage": 0.9932,
+  "precision": 0.9865,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 146,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 52,
+      "length": 1,
+      "words": [
+        "the"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 52,
+      "actual_start": 52,
+      "expected": [
+        "the"
+      ],
+      "actual": [
+        "a"
+      ],
+      "actual_confidence": 0.4863,
+      "substitution_words": 1,
+      "has_content_word": false
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 147,
+      "actual_start": 147,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.3245
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "If I had sent the letter that day, everything might have been different My childhood friend had moved to a distant town All I had to do was write a single word of thanks A single letter would have been enough If I had had a little more courage at the time A letter would have reached her And she might have remembered me for longer But I did not put it into words, I hid my words away, treasuring them too carefully When I realized it, I no longer knew the address of her town If I had written that one letter, I might have been corresponding with her To this day long after When I heard the news of her marriage I tasted that small regret once more I learned that a life can turn on the courage it takes To send a single letter you",
+  "segments": [
+    {
+      "start": 10.9,
+      "end": 17.74,
+      "text": "If I had sent the letter that day, everything might have been different"
+    },
+    {
+      "start": 17.74,
+      "end": 22.6,
+      "text": "My childhood friend had moved to a distant town"
+    },
+    {
+      "start": 23.92,
+      "end": 30.24,
+      "text": "All I had to do was write a single word of thanks"
+    },
+    {
+      "start": 30.24,
+      "end": 35.0,
+      "text": "A single letter would have been enough"
+    },
+    {
+      "start": 36.5,
+      "end": 41.5,
+      "text": "If I had had a little more courage at the time"
+    },
+    {
+      "start": 41.5,
+      "end": 43.84,
+      "text": "A letter would have reached her"
+    },
+    {
+      "start": 43.84,
+      "end": 48.3,
+      "text": "And she might have remembered me for longer"
+    },
+    {
+      "start": 49.78,
+      "end": 60.48,
+      "text": "But I did not put it into words, I hid my words away, treasuring them too carefully"
+    },
+    {
+      "start": 62.0,
+      "end": 68.88,
+      "text": "When I realized it, I no longer knew the address of her town"
+    },
+    {
+      "start": 68.88,
+      "end": 75.26,
+      "text": "If I had written that one letter, I might have been corresponding with her"
+    },
+    {
+      "start": 75.26,
+      "end": 78.8,
+      "text": "To this day long after"
+    },
+    {
+      "start": 78.8,
+      "end": 82.42,
+      "text": "When I heard the news of her marriage"
+    },
+    {
+      "start": 82.42,
+      "end": 86.86,
+      "text": "I tasted that small regret once more"
+    },
+    {
+      "start": 88.1,
+      "end": 96.08,
+      "text": "I learned that a life can turn on the courage it takes"
+    },
+    {
+      "start": 96.08,
+      "end": 99.54,
+      "text": "To send a single letter"
+    },
+    {
+      "start": 105.26,
+      "end": 105.86,
+      "text": "you"
+    }
+  ]
+}

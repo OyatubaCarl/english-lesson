@@ -1,0 +1,1441 @@
+{
+  "lesson": "H159",
+  "title_ja": "医学研究所の発表",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 23,
+  "canonical_target_lines": 16,
+  "mixed_lines": 8,
+  "japanese_only_lines": 15,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 7.6,
+      "end": 14.0,
+      "english": "The National Institute of Medicine in Tokyo is a cutting-edge lab.",
+      "japanese": "東京の国立医学研究所は最先端の研究室です。",
+      "mixed": "東京の国立医学研究所は最先端の lab です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "東京の国立医学研究所は最先端の ",
+          "parts": [
+            {
+              "text": "東京",
+              "ruby": "とうきょう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "国立",
+              "ruby": "こくりつ"
+            },
+            {
+              "text": "医学",
+              "ruby": "いがく"
+            },
+            {
+              "text": "研究",
+              "ruby": "けんきゅう"
+            },
+            {
+              "text": "所",
+              "ruby": "しょ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "最",
+              "ruby": "さい"
+            },
+            {
+              "text": "先端",
+              "ruby": "せんたん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "lab",
+          "ruby": "研究室"
+        },
+        {
+          "type": "ja",
+          "text": " です。",
+          "parts": [
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "lab",
+          "canonical_word": "lab",
+          "meaning": "研究室"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "lab",
+          "reading": "研究室",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "lab",
+          "canonical_meaning": "研究室"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 2,
+      "start": 14.78,
+      "end": 17.644,
+      "english": "The director is Dr.",
+      "japanese": "監督はDr.",
+      "mixed": "監督はDr.",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "監督はDr.",
+          "parts": [
+            {
+              "text": "監督",
+              "ruby": "かんとく"
+            },
+            {
+              "text": "はDr.",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 3,
+      "start": 17.644,
+      "end": 21.88,
+      "english": "Tanaka, the deputy is Dr.",
+      "japanese": "田中先生の代理です。",
+      "mixed": "田中先生の代理です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "田中先生の代理です。",
+          "parts": [
+            {
+              "text": "田中",
+              "ruby": "たなか"
+            },
+            {
+              "text": "先生",
+              "ruby": "せんせい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "代理",
+              "ruby": "だいり"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "deputy",
+          "canonical_word": "deputy",
+          "meaning": "副"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 4,
+      "start": 21.88,
+      "end": 22.62,
+      "english": "Sato.",
+      "japanese": "佐藤さん。",
+      "mixed": "佐藤さん。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "佐藤さん。",
+          "parts": [
+            {
+              "text": "佐藤",
+              "ruby": "さとう"
+            },
+            {
+              "text": "さん。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 5,
+      "start": 22.62,
+      "end": 30.76,
+      "english": "Today's event is the final presentation of a joint research project.",
+      "japanese": "今日は共同研究プロジェクトの最終発表会です。",
+      "mixed": "今日は joint 研究プロジェクトの最終発表会です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "今日は ",
+          "parts": [
+            {
+              "text": "今日",
+              "ruby": "きょう"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "joint",
+          "ruby": "共同"
+        },
+        {
+          "type": "ja",
+          "text": " 研究プロジェクトの最終発表会です。",
+          "parts": [
+            {
+              "text": "研究",
+              "ruby": "けんきゅう"
+            },
+            {
+              "text": "プロジェクトの",
+              "ruby": ""
+            },
+            {
+              "text": "最終",
+              "ruby": "さいしゅう"
+            },
+            {
+              "text": "発表",
+              "ruby": "はっぴょう"
+            },
+            {
+              "text": "会",
+              "ruby": "かい"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "joint",
+          "canonical_word": "joint",
+          "meaning": "共同の"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "joint",
+          "reading": "共同",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "joint",
+          "canonical_meaning": "共同の"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 6,
+      "start": 31.54,
+      "end": 40.4,
+      "english": "Through collaboration with an American university, a new drug has been developed.",
+      "japanese": "アメリカの大学との共同研究により、新薬が開発されました。",
+      "mixed": "アメリカの大学との共同研究により、新薬が開発されました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "アメリカの大学との共同研究により、新薬が開発されました。",
+          "parts": [
+            {
+              "text": "アメリカの",
+              "ruby": ""
+            },
+            {
+              "text": "大学",
+              "ruby": "だいがく"
+            },
+            {
+              "text": "との",
+              "ruby": ""
+            },
+            {
+              "text": "共同",
+              "ruby": "きょうどう"
+            },
+            {
+              "text": "研究",
+              "ruby": "けんきゅう"
+            },
+            {
+              "text": "により、",
+              "ruby": ""
+            },
+            {
+              "text": "新薬",
+              "ruby": "しんやく"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "開発",
+              "ruby": "かいはつ"
+            },
+            {
+              "text": "されました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 7,
+      "start": 42.06,
+      "end": 46.18,
+      "english": "The secretary, Yamada-san, prepared the presentation.",
+      "japanese": "秘書の山田さんがプレゼンテーションの準備をしてくれました。",
+      "mixed": "secretary の山田さんがプレゼンテーションの準備をしてくれました。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "secretary",
+          "ruby": "秘書"
+        },
+        {
+          "type": "ja",
+          "text": " の山田さんがプレゼンテーションの準備をしてくれました。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "山田",
+              "ruby": "やまだ"
+            },
+            {
+              "text": "さんがプレゼンテーションの",
+              "ruby": ""
+            },
+            {
+              "text": "準備",
+              "ruby": "じゅんび"
+            },
+            {
+              "text": "をしてくれました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "secretary",
+          "canonical_word": "Secretary",
+          "meaning": "秘書"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "secretary",
+          "reading": "秘書",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "Secretary",
+          "canonical_meaning": "秘書"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 8,
+      "start": 46.18,
+      "end": 53.4,
+      "english": "The participants are male and female, in roughly equal numbers.",
+      "japanese": "参加者は男女ほぼ同数です。",
+      "mixed": "参加者は男女ほぼ同数です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "参加者は男女ほぼ同数です。",
+          "parts": [
+            {
+              "text": "参加",
+              "ruby": "さんか"
+            },
+            {
+              "text": "者",
+              "ruby": "しゃ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "男女",
+              "ruby": "だんじょ"
+            },
+            {
+              "text": "ほぼ",
+              "ruby": ""
+            },
+            {
+              "text": "同数",
+              "ruby": "どうすう"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "male",
+          "canonical_word": "male",
+          "meaning": "男性の"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 9,
+      "start": 53.4,
+      "end": 56.131,
+      "english": "In the presentation, Dr.",
+      "japanese": "プレゼンテーションでは、Dr.",
+      "mixed": "プレゼンテーションでは、Dr.",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "プレゼンテーションでは、Dr.",
+          "parts": [
+            {
+              "text": "プレゼンテーションでは、Dr.",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 10,
+      "start": 56.131,
+      "end": 62.96,
+      "english": "Tanaka explained the properties of the new drug's liquid compound.",
+      "japanese": "田中氏は新薬の液体化合物の性質を説明した。",
+      "mixed": "田中氏は新薬の liquid 化合物の性質を説明した。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "田中氏は新薬の ",
+          "parts": [
+            {
+              "text": "田中",
+              "ruby": "たなか"
+            },
+            {
+              "text": "氏",
+              "ruby": "し"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "新薬",
+              "ruby": "しんやく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "liquid",
+          "ruby": "液体"
+        },
+        {
+          "type": "ja",
+          "text": " 化合物の性質を説明した。",
+          "parts": [
+            {
+              "text": "化合",
+              "ruby": "かごう"
+            },
+            {
+              "text": "物",
+              "ruby": "ぶつ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "性質",
+              "ruby": "せいしつ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "説明",
+              "ruby": "せつめい"
+            },
+            {
+              "text": "した。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "liquid",
+          "canonical_word": "liquid",
+          "meaning": "液体"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "liquid",
+          "reading": "液体",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "liquid",
+          "canonical_meaning": "液体"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 11,
+      "start": 64.52,
+      "end": 70.8,
+      "english": "Even a tiny unit for experiments has an effect, with few side effects.",
+      "japanese": "実験用の小さなユニットでも効果があり、副作用もほとんどありません。",
+      "mixed": "実験用の小さなユニットでも効果があり、副作用もほとんどありません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "実験用の小さなユニットでも効果があり、副作用もほとんどありません。",
+          "parts": [
+            {
+              "text": "実験",
+              "ruby": "じっけん"
+            },
+            {
+              "text": "用",
+              "ruby": "よう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さなユニットでも",
+              "ruby": ""
+            },
+            {
+              "text": "効果",
+              "ruby": "こうか"
+            },
+            {
+              "text": "があり、",
+              "ruby": ""
+            },
+            {
+              "text": "副",
+              "ruby": "ふく"
+            },
+            {
+              "text": "作用",
+              "ruby": "さよう"
+            },
+            {
+              "text": "もほとんどありません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "unit",
+          "canonical_word": "unit",
+          "meaning": "単位"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 12,
+      "start": 70.8,
+      "end": 77.02,
+      "english": "The new drug was developed for cancer patients facing an urgent need for new treatment.",
+      "japanese": "この新薬は、新たな治療が緊急に必要とされているがん患者のために開発されました。",
+      "mixed": "この新薬は、新たな治療が緊急に必要とされているがん患者のために開発されました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "この新薬は、新たな治療が緊急に必要とされているがん患者のために開発されました。",
+          "parts": [
+            {
+              "text": "この",
+              "ruby": ""
+            },
+            {
+              "text": "新薬",
+              "ruby": "しんやく"
+            },
+            {
+              "text": "は、",
+              "ruby": ""
+            },
+            {
+              "text": "新",
+              "ruby": "あら"
+            },
+            {
+              "text": "たな",
+              "ruby": ""
+            },
+            {
+              "text": "治療",
+              "ruby": "ちりょう"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "緊急",
+              "ruby": "きんきゅう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "必要",
+              "ruby": "ひつよう"
+            },
+            {
+              "text": "とされているがん",
+              "ruby": ""
+            },
+            {
+              "text": "患者",
+              "ruby": "かんじゃ"
+            },
+            {
+              "text": "のために",
+              "ruby": ""
+            },
+            {
+              "text": "開発",
+              "ruby": "かいはつ"
+            },
+            {
+              "text": "されました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 13,
+      "start": 77.44,
+      "end": 83.14,
+      "english": "The conditions of the clinical trial were strict, conducted over two years.",
+      "japanese": "臨床試験の条件は厳しく、2年間にわたって実施された。",
+      "mixed": "臨床試験の terms は厳しく、2年間にわたって実施された。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "臨床試験の ",
+          "parts": [
+            {
+              "text": "臨床",
+              "ruby": "りんしょう"
+            },
+            {
+              "text": "試験",
+              "ruby": "しけん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "terms",
+          "ruby": "条件"
+        },
+        {
+          "type": "ja",
+          "text": " は厳しく、2年間にわたって実施された。",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "厳",
+              "ruby": "きび"
+            },
+            {
+              "text": "しく、2",
+              "ruby": ""
+            },
+            {
+              "text": "年間",
+              "ruby": "ねんかん"
+            },
+            {
+              "text": "にわたって",
+              "ruby": ""
+            },
+            {
+              "text": "実施",
+              "ruby": "じっし"
+            },
+            {
+              "text": "された。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [
+        {
+          "english": "terms",
+          "reading": "条件",
+          "source": "canonical_new_word_translation_exact",
+          "canonical_word": "terms",
+          "canonical_meaning": "条件"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 14,
+      "start": 85.54,
+      "end": 92.1,
+      "english": "The participants' data were arranged in string-like graphs and projected on slides.",
+      "japanese": "参加者のデータは紐状のグラフに整理され、スライド上に投影されました。",
+      "mixed": "参加者のデータは紐状のグラフに整理され、スライド上に投影されました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "参加者のデータは紐状のグラフに整理され、スライド上に投影されました。",
+          "parts": [
+            {
+              "text": "参加",
+              "ruby": "さんか"
+            },
+            {
+              "text": "者",
+              "ruby": "しゃ"
+            },
+            {
+              "text": "のデータは",
+              "ruby": ""
+            },
+            {
+              "text": "紐",
+              "ruby": "ひも"
+            },
+            {
+              "text": "状",
+              "ruby": "じょう"
+            },
+            {
+              "text": "のグラフに",
+              "ruby": ""
+            },
+            {
+              "text": "整理",
+              "ruby": "せいり"
+            },
+            {
+              "text": "され、スライド",
+              "ruby": ""
+            },
+            {
+              "text": "上",
+              "ruby": "じょう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "投影",
+              "ruby": "とうえい"
+            },
+            {
+              "text": "されました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "slides",
+          "canonical_word": "slide",
+          "meaning": "滑る"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 15,
+      "start": 92.1,
+      "end": 95.475,
+      "english": "The researchers stare at the screen.",
+      "japanese": "研究者たちは画面を見つめます。",
+      "mixed": "研究者たちは画面を見つめます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "研究者たちは画面を見つめます。",
+          "parts": [
+            {
+              "text": "研究",
+              "ruby": "けんきゅう"
+            },
+            {
+              "text": "者",
+              "ruby": "しゃ"
+            },
+            {
+              "text": "たちは",
+              "ruby": ""
+            },
+            {
+              "text": "画面",
+              "ruby": "がめん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "つめます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "stare",
+          "canonical_word": "stare",
+          "meaning": "じっと見る"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 16,
+      "start": 95.475,
+      "end": 101.1,
+      "english": "For transport of the drug load, steel containers are used.",
+      "japanese": "薬剤の輸送にはスチール製のコンテナが使用されます。",
+      "mixed": "薬剤の輸送にはスチール製のコンテナが使用されます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "薬剤の輸送にはスチール製のコンテナが使用されます。",
+          "parts": [
+            {
+              "text": "薬剤",
+              "ruby": "やくざい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "輸送",
+              "ruby": "ゆそう"
+            },
+            {
+              "text": "にはスチール",
+              "ruby": ""
+            },
+            {
+              "text": "製",
+              "ruby": "せい"
+            },
+            {
+              "text": "のコンテナが",
+              "ruby": ""
+            },
+            {
+              "text": "使用",
+              "ruby": "しよう"
+            },
+            {
+              "text": "されます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "load",
+          "canonical_word": "load",
+          "meaning": "荷"
+        },
+        {
+          "english": "steel",
+          "canonical_word": "steel",
+          "meaning": "鋼鉄"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 17,
+      "start": 101.24,
+      "end": 105.54,
+      "english": "Temperature control is important.",
+      "japanese": "温度管理は重要です。",
+      "mixed": "温度管理は重要です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "温度管理は重要です。",
+          "parts": [
+            {
+              "text": "温度",
+              "ruby": "おんど"
+            },
+            {
+              "text": "管理",
+              "ruby": "かんり"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "重要",
+              "ruby": "じゅうよう"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 18,
+      "start": 107.66,
+      "end": 113.84,
+      "english": "The graduate students of the lab also contributed to this achievement.",
+      "japanese": "この成果には研究室の大学院生も貢献しました。",
+      "mixed": "この成果には lab の大学院生も貢献しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "この成果には ",
+          "parts": [
+            {
+              "text": "この",
+              "ruby": ""
+            },
+            {
+              "text": "成果",
+              "ruby": "せいか"
+            },
+            {
+              "text": "には",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "lab",
+          "ruby": "研究室"
+        },
+        {
+          "type": "ja",
+          "text": " の大学院生も貢献しました。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "大学",
+              "ruby": "だいがく"
+            },
+            {
+              "text": "院",
+              "ruby": "いん"
+            },
+            {
+              "text": "生",
+              "ruby": "せい"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "貢献",
+              "ruby": "こうけん"
+            },
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "lab",
+          "canonical_word": "lab",
+          "meaning": "研究室"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "lab",
+          "reading": "研究室",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "lab",
+          "canonical_meaning": "研究室"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 19,
+      "start": 114.34,
+      "end": 119.06,
+      "english": "Maybe in a few years, they will be the next leaders.",
+      "japanese": "おそらく数年後には彼らが次のリーダーになるでしょう。",
+      "mixed": "Maybe 数年後には彼らが次のリーダーになるでしょう。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "Maybe",
+          "ruby": "おそらく"
+        },
+        {
+          "type": "ja",
+          "text": " 数年後には彼らが次のリーダーになるでしょう。",
+          "parts": [
+            {
+              "text": "数",
+              "ruby": "すう"
+            },
+            {
+              "text": "年",
+              "ruby": "ねん"
+            },
+            {
+              "text": "後",
+              "ruby": "ご"
+            },
+            {
+              "text": "には",
+              "ruby": ""
+            },
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "らが",
+              "ruby": ""
+            },
+            {
+              "text": "次",
+              "ruby": "つぎ"
+            },
+            {
+              "text": "のリーダーになるでしょう。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "Maybe",
+          "canonical_word": "maybe",
+          "meaning": "おそらく"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Maybe",
+          "reading": "おそらく",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "maybe",
+          "canonical_meaning": "おそらく"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 20,
+      "start": 119.06,
+      "end": 128.92,
+      "english": "Dr. Tanaka, with a wan smile, said, This drug will save many lives.",
+      "japanese": "田中医師は、薄笑いを浮かべながら、「この薬は多くの命を救うでしょう」と言いました。",
+      "mixed": "田中医師は、薄笑いを浮かべながら、「この薬は多くの命を救うでしょう」と言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "田中医師は、薄笑いを浮かべながら、「この薬は多くの命を救うでしょう」と言いました。",
+          "parts": [
+            {
+              "text": "田中",
+              "ruby": "たなか"
+            },
+            {
+              "text": "医師",
+              "ruby": "いし"
+            },
+            {
+              "text": "は、",
+              "ruby": ""
+            },
+            {
+              "text": "薄笑",
+              "ruby": "うすわら"
+            },
+            {
+              "text": "いを",
+              "ruby": ""
+            },
+            {
+              "text": "浮",
+              "ruby": "う"
+            },
+            {
+              "text": "かべながら、「この",
+              "ruby": ""
+            },
+            {
+              "text": "薬",
+              "ruby": "くすり"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "多",
+              "ruby": "おお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "命",
+              "ruby": "いのち"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "救",
+              "ruby": "すく"
+            },
+            {
+              "text": "うでしょう」と",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "wan",
+          "canonical_word": "wan",
+          "meaning": "青ざめた"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 21,
+      "start": 128.92,
+      "end": 135.9,
+      "english": "I want to thank the research team who deserve the credit.",
+      "japanese": "称賛に値する研究チームに感謝したいと思います。",
+      "mixed": "称賛 deserve 研究チームに感謝したいと思います。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "称賛 ",
+          "parts": [
+            {
+              "text": "称賛",
+              "ruby": "しょうさん"
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "deserve",
+          "ruby": "に値する"
+        },
+        {
+          "type": "ja",
+          "text": " 研究チームに感謝したいと思います。",
+          "parts": [
+            {
+              "text": "研究",
+              "ruby": "けんきゅう"
+            },
+            {
+              "text": "チームに",
+              "ruby": ""
+            },
+            {
+              "text": "感謝",
+              "ruby": "かんしゃ"
+            },
+            {
+              "text": "したいと",
+              "ruby": ""
+            },
+            {
+              "text": "思",
+              "ruby": "おも"
+            },
+            {
+              "text": "います。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "deserve",
+          "canonical_word": "deserve",
+          "meaning": "〜に値する"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "deserve",
+          "reading": "に値する",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "deserve",
+          "canonical_meaning": "〜に値する"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 22,
+      "start": 135.9,
+      "end": 143.68,
+      "english": "After the meeting, the participants headed towards the hotel for the dinner gathering.",
+      "japanese": "会議終了後、参加者は夕食会のためホテルへ向かいました。",
+      "mixed": "会議終了後、参加者は夕食会のためホテルへ向かいました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "会議終了後、参加者は夕食会のためホテルへ向かいました。",
+          "parts": [
+            {
+              "text": "会議",
+              "ruby": "かいぎ"
+            },
+            {
+              "text": "終了後",
+              "ruby": "しゅうりょうご"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "参加",
+              "ruby": "さんか"
+            },
+            {
+              "text": "者",
+              "ruby": "しゃ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "夕食",
+              "ruby": "ゆうしょく"
+            },
+            {
+              "text": "会",
+              "ruby": "かい"
+            },
+            {
+              "text": "のためホテルへ",
+              "ruby": ""
+            },
+            {
+              "text": "向",
+              "ruby": "む"
+            },
+            {
+              "text": "かいました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "towards",
+          "canonical_word": "towards",
+          "meaning": "〜の方へ"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 23,
+      "start": 144.98,
+      "end": 150.92,
+      "english": "Science advances through the power of teamwork.",
+      "japanese": "科学はチームワークの力によって進歩します。",
+      "mixed": "科学はチームワークの力によって進歩します。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "科学はチームワークの力によって進歩します。",
+          "parts": [
+            {
+              "text": "科学",
+              "ruby": "かがく"
+            },
+            {
+              "text": "はチームワークの",
+              "ruby": ""
+            },
+            {
+              "text": "力",
+              "ruby": "ちから"
+            },
+            {
+              "text": "によって",
+              "ruby": ""
+            },
+            {
+              "text": "進歩",
+              "ruby": "しんぽ"
+            },
+            {
+              "text": "します。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    }
+  ]
+}

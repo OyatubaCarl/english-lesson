@@ -1,0 +1,58 @@
+{
+  "lesson": "H094",
+  "title_ja": "住宅と暮らし",
+  "title_en": "Housing and Everyday Life",
+  "style": "画風01『光彩・劇場アニメ背景』。精密な2D線画、現実的な成人の人体比率、朝の淡い青から夕方の暖色へ移る架空の海沿い都市。",
+  "story_scope": "23歳のRinaと27歳のKenjiが、親との同居、賃貸、住宅ローン、郊外移住と通勤のトレードオフを検討する。住民と行政が複数の対策を試し、十分な住居を所有だけでなく、安定性・負担可能性・健全性・アクセシビリティ・サービス・立地の基盤として描く。",
+  "continuity": {
+    "rina": "23歳の成人日本人女性。低い焦茶色のポニーテール、テラコッタ色のジャケット、クリーム色のブラウス、紺のワイドパンツ、ベージュのスニーカー、青緑のフォルダーと帆布トート。",
+    "kenji": "25歳の成人日本人男性。短くやわらかく波打つ黒髪、デニムのオーバーシャツ、灰色のTシャツ、オリーブ色のパンツ、灰色のスニーカー。",
+    "family": "Rinaの50代前半の両親。成人の娘を子ども扱いせず、同居を恥や失敗にしない。",
+    "officials": "架空都市のElena市長は46歳の女性、短いソルトアンドペッパー髪と濃い青緑のスーツ。Darius知事は52歳の中褐色の肌の男性、短い黒髪と濃紺のスーツ。Mei住宅アドバイザーは38歳の東アジア系女性、肩までの黒髪、マスタード色のカーディガン。実在の政府・政党・紋章は使わない。",
+    "places": "同じ架空の海沿い都市、都心の中層住宅、親世代の集合住宅、外縁部の郊外、公共交通、地域住宅相談室、住民討議室を固定。",
+    "interfaces": "契約書、価格、時計、行政資料、スマートフォン、看板は無文字の色面と抽象形だけ。"
+  },
+  "guardrails": [
+    "住宅所有、賃貸、親との同居、共同住宅をそれぞれ正当な選択とし、若者や親を責めない。",
+    "住宅費と収入の差は架空都市の集計的傾向として示し、すべての国・都市・年で同じと断定しない。",
+    "郊外を劣った場所や理想郷にせず、通勤時間と住宅費のトレードオフ、交通・近隣サービス・ローカル就業の選択肢を描く。",
+    "市長と知事は単独の英雄や悪役にせず、住民から限界と反応を受け、複数の対策を調整する。",
+    "十分な住居の権利を『無料の戸建て』と置き換えず、安定性・サービス・負担可能性・健全性・アクセシビリティ・立地・文化的適切性の基盤として扱う。",
+    "教育、健康、地域の安定と住まいの関係は支えと関連として描き、成績・治癒・安全を保証する因果表現にしない。",
+    "ホームレス状態、強制退去、貧困の扇情的な展示、実在の政党・自治体・ブランドを使わない。"
+  ],
+  "research_basis": [
+    "OECD 2026: 幅広いOECD諸国で実質住宅価格と収入の不釣り合い、若年層の親との同居、負担可能な住宅供給の複合性を確認。",
+    "WHO Housing and Health Guidelines: 混雑、温度、傷害リスク、アクセシビリティなど住環境と健康の関連を確認。",
+    "OHCHR Fact Sheet No.21/Rev.1: 十分な住居は四枚の壁に限らず、占有の安定、サービス、負担可能性、居住性、アクセシビリティ、立地、文化的適切性を含む。"
+  ],
+  "masters": [
+    {"time": 0.0, "file": "fictional_city_morning_master.png", "purpose": "架空都市の多様な住まい"},
+    {"time": 2.5, "file": "urban_housing_expense_master.png", "purpose": "住宅費上昇の圧力"},
+    {"time": 4.7, "file": "rina_budget_choices_master.png", "purpose": "Rinaの負担可能性の検討"},
+    {"time": 7.5, "file": "family_shared_home_master.png", "purpose": "親との尊重ある同居"},
+    {"time": 10.96, "file": "mortgage_options_meeting_master.png", "purpose": "住宅ローンを含む選択肢"},
+    {"time": 16.0, "file": "multiple_housing_paths_master.png", "purpose": "所有以外も含む住まい方"},
+    {"time": 21.8, "file": "prices_outpace_earnings_master.png", "purpose": "住宅価格と収入の不釣り合い"},
+    {"time": 27.62, "file": "intense_public_debate_master.png", "purpose": "住民の激しく尊重ある議論"},
+    {"time": 30.8, "file": "policy_resident_roundtable_master.png", "purpose": "国内政策の住民円卓会議"},
+    {"time": 34.12, "file": "policy_measures_model_master.png", "purpose": "市長と知事の複数対策"},
+    {"time": 37.0, "file": "limited_effect_feedback_master.png", "purpose": "限定的な効果と現場反応"},
+    {"time": 39.68, "file": "residents_move_suburbs_master.png", "purpose": "住民の郊外移住"},
+    {"time": 42.4, "file": "suburban_daily_life_master.png", "purpose": "郊外の多様な日常"},
+    {"time": 45.6, "file": "long_commute_departure_master.png", "purpose": "早朝の長い通勤の始まり"},
+    {"time": 48.6, "file": "transit_transfer_master.png", "purpose": "複数交通の乗り継ぎ"},
+    {"time": 51.5, "file": "quality_of_life_tradeoff_master.png", "purpose": "生活の質のトレードオフ"},
+    {"time": 53.3, "file": "commute_relief_options_master.png", "purpose": "通勤負担を減らす複数の工夫"},
+    {"time": 54.76, "file": "housing_more_than_economics_master.png", "purpose": "経済以上の生活基盤"},
+    {"time": 59.76, "file": "stable_home_education_master.png", "purpose": "安定した学習環境"},
+    {"time": 62.3, "file": "healthy_habitable_home_master.png", "purpose": "健全で居住可能な住まい"},
+    {"time": 64.8, "file": "accessible_home_design_master.png", "purpose": "アクセシブルな住宅設計"},
+    {"time": 67.2, "file": "community_stability_master.png", "purpose": "地域の継続的な関係"},
+    {"time": 69.2, "file": "secure_rental_tenure_master.png", "purpose": "所有を前提としない安定した賃貸"},
+    {"time": 70.32, "file": "adequate_housing_dimensions_master.png", "purpose": "十分な住居の複数要素"},
+    {"time": 72.74, "file": "housing_rights_consultation_master.png", "purpose": "住宅の権利と実務相談"},
+    {"time": 75.3, "file": "affordable_housing_options_master.png", "purpose": "地域に統合された負担可能な住宅"},
+    {"time": 78.0, "file": "mixed_neighborhood_finale_master.png", "purpose": "多様な暮らしが続く終幕"}
+  ]
+}

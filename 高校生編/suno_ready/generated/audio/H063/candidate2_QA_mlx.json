@@ -1,0 +1,223 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H063.md",
+  "audio": "高校生編/suno_ready/generated/audio/H063/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 185.9,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9916,
+  "expected_words": 239,
+  "transcribed_words": 237,
+  "matched_words": 236,
+  "coverage": 0.9874,
+  "precision": 0.9958,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 238,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 2,
+      "length": 2,
+      "words": [
+        "twenty",
+        "six"
+      ]
+    },
+    {
+      "start": 205,
+      "length": 1,
+      "words": [
+        "sixty"
+      ]
+    }
+  ],
+  "replacement_count": 0,
+  "replacement_spans": [],
+  "insertion_spans": [
+    {
+      "expected_start": 239,
+      "actual_start": 236,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.3948
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 2,
+      "actual_start": 2,
+      "expected": [
+        "twenty",
+        "six"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 205,
+      "actual_start": 203,
+      "expected": [
+        "sixty"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "In 1960, a 26-year-old English woman named Jane Goodall Walked alone into the forest of Tanzania in East Africa Her aim was to observe wild chimpanzees In their own natural environment In those days it was almost unprecedented For a woman to enter the interior of Africa by herself She did not even have a university degree But the paleontologist Louis Leakey believed in her passion and patience and supported her. In the forest of Gombe, she sat for months without showing herself deep among the trees. After a while the chimpanzees stopped fearing her And began to show her glimpses of their daily lives Her greatest discovery was the observation That chimpanzees made twigs into tools for catching termites To the world of science which had until then believed That only humans used tools This came as a great shock Goodall also showed that chimpanzees had emotions similar To those of humans' family bonds, sadness and conflict Her observations redrew from the very ground The line between humanity and other animals In her later years, Goodall devoted herself To the conservation of wildlife The youth program she founded, called Roots and Shoots Has become a starting point for young people in over 60 countries to take on environmental issues in their own neighborhoods. Hope lies in action. Her words remain even now. A steady encouragement for the many young people who carry concern for the future. you",
+  "segments": [
+    {
+      "start": 11.22,
+      "end": 18.44,
+      "text": "In 1960, a 26-year-old English woman named Jane Goodall"
+    },
+    {
+      "start": 18.44,
+      "end": 24.76,
+      "text": "Walked alone into the forest of Tanzania in East Africa"
+    },
+    {
+      "start": 24.76,
+      "end": 29.9,
+      "text": "Her aim was to observe wild chimpanzees"
+    },
+    {
+      "start": 29.9,
+      "end": 33.2,
+      "text": "In their own natural environment"
+    },
+    {
+      "start": 34.6,
+      "end": 38.72,
+      "text": "In those days it was almost unprecedented"
+    },
+    {
+      "start": 38.72,
+      "end": 45.22,
+      "text": "For a woman to enter the interior of Africa by herself"
+    },
+    {
+      "start": 45.22,
+      "end": 50.06,
+      "text": "She did not even have a university degree"
+    },
+    {
+      "start": 50.06,
+      "end": 61.0,
+      "text": "But the paleontologist Louis Leakey believed in her passion and patience and supported her."
+    },
+    {
+      "start": 62.7,
+      "end": 72.2,
+      "text": "In the forest of Gombe, she sat for months without showing herself deep among the trees."
+    },
+    {
+      "start": 73.48,
+      "end": 78.34,
+      "text": "After a while the chimpanzees stopped fearing her"
+    },
+    {
+      "start": 78.34,
+      "end": 85.1,
+      "text": "And began to show her glimpses of their daily lives"
+    },
+    {
+      "start": 86.82,
+      "end": 90.38,
+      "text": "Her greatest discovery was the observation"
+    },
+    {
+      "start": 90.38,
+      "end": 96.32,
+      "text": "That chimpanzees made twigs into tools for catching termites"
+    },
+    {
+      "start": 96.32,
+      "end": 101.84,
+      "text": "To the world of science which had until then believed"
+    },
+    {
+      "start": 101.84,
+      "end": 105.42,
+      "text": "That only humans used tools"
+    },
+    {
+      "start": 107.84,
+      "end": 110.3,
+      "text": "This came as a great shock"
+    },
+    {
+      "start": 111.84,
+      "end": 116.92,
+      "text": "Goodall also showed that chimpanzees had emotions similar"
+    },
+    {
+      "start": 116.92,
+      "end": 122.7,
+      "text": "To those of humans' family bonds, sadness and conflict"
+    },
+    {
+      "start": 122.7,
+      "end": 127.5,
+      "text": "Her observations redrew from the very ground"
+    },
+    {
+      "start": 127.5,
+      "end": 133.7,
+      "text": "The line between humanity and other animals"
+    },
+    {
+      "start": 134.5,
+      "end": 139.86,
+      "text": "In her later years, Goodall devoted herself"
+    },
+    {
+      "start": 140.5,
+      "end": 144.44,
+      "text": "To the conservation of wildlife"
+    },
+    {
+      "start": 147.5,
+      "end": 150.94,
+      "text": "The youth program she founded, called Roots and Shoots"
+    },
+    {
+      "start": 151.5,
+      "end": 155.7,
+      "text": "Has become a starting point for young people in over 60 countries"
+    },
+    {
+      "start": 155.7,
+      "end": 160.4,
+      "text": "to take on environmental issues in their own neighborhoods."
+    },
+    {
+      "start": 161.68,
+      "end": 164.54,
+      "text": "Hope lies in action."
+    },
+    {
+      "start": 166.0,
+      "end": 169.24,
+      "text": "Her words remain even now."
+    },
+    {
+      "start": 170.12,
+      "end": 174.88,
+      "text": "A steady encouragement for the many young people"
+    },
+    {
+      "start": 174.88,
+      "end": 179.24,
+      "text": "who carry concern for the future."
+    },
+    {
+      "start": 185.7,
+      "end": 185.9,
+      "text": "you"
+    }
+  ]
+}

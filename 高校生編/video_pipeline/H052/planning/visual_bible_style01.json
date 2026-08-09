@@ -1,0 +1,65 @@
+{
+  "lesson": "H052",
+  "title": "パンデミックと公衆衛生",
+  "style": "画風01・光彩のある劇場アニメ背景を基調にしたCOVID-19史と公衆衛生のドキュメンタリー",
+  "setting": "2019年末から2021年初頭の武漢の医療・公衆衛生現場、各国の学校・商店・病院・研究所・接種会場を経て、現在の備えへ戻る",
+  "continuity": {
+    "student": "H15基準の同じ17歳男子高校生。短い黒髪、紺の制服コート、灰色のマフラー、黒いリュック。現在の公衆衛生授業で過去の資料を学ぶ語り手",
+    "public_health_physician": "42歳前後の女性公衆衛生医。低く束ねた黒髪、濃紺ジャケットまたは白衣、白いシャツ。歴史場面と現在の備えをつなぐ",
+    "health_workers": "年齢・性別・地域の異なる医師、看護師、検査技師、救急隊員。現実的なPPEを正しく着用し、顔や患者の尊厳を守る",
+    "palette": "2019年末は冬の群青と病院の琥珀色、世界的拡大と閉鎖は低彩度の青灰、研究と接種は清潔な青緑、結末は夜明けの暖色"
+  },
+  "sequence": [
+    "2019年12月31日に武漢の原因不明のウイルス性肺炎症例が公衆衛生当局へ報告された時点",
+    "数週間で国境を越えて各地域へ感染が広がる",
+    "2020年3月11日のWHOによるpandemic評価",
+    "国ごとに異なるlockdowns、学校・企業の閉鎖、家庭での学習と仕事",
+    "各地域のhospitalsへ搬送されるpatientsと満床に近づくICU",
+    "riskを理解しPPEを着けて働く医師・看護師",
+    "人によって異なるSymptomsと発熱・咳・息苦しさ",
+    "軽症の在宅療養と、高齢者・基礎疾患のある人の重症化risk",
+    "前例のない速さで進むvaccine研究・臨床試験・規制審査・製造",
+    "2020年末以降の複数vaccine承認と世界各地の接種開始",
+    "pandemicが残したpublic health preparednessのlessons",
+    "surveillance、検査、PPE、医療人材、換気、情報共有、地域医療の備え",
+    "international cooperationと公平な医療資源へのアクセス",
+    "次のcrisisへ備える現在の男子高校生と地域社会"
+  ],
+  "accuracy": [
+    "2019年末の場面は新型ウイルスそのものの起源断定や研究所流出を示さず、武漢で原因不明のウイルス性肺炎症例が把握・報告された事実として描く",
+    "WHOは2020年3月11日にCOVID-19をpandemicと評価した。祝賀や政治的演説ではなく、地図・症例推移・加盟国との緊急会見として描く",
+    "lockdownは全世界で同時・同内容だったとせず、学校閉鎖、店舗休業、移動制限、在宅学習・仕事など国や地域で異なる対策を並置する",
+    "医療現場は患者の顔・氏名・記録を見せず、苦痛や死を扇情的に強調しない。ICUの逼迫は機器、ベッド、スタッフ配置で示す",
+    "医療従事者を無防備な自己犠牲として描かず、PPE、手指衛生、交代勤務、チーム連携の中でriskを負ったことを示す",
+    "症状の個人差を示し、発熱・咳・息苦しさだけが全例にそろうとは描かない。診断や治療の指示に見える読める文字は生成しない",
+    "多くの症例が軽症だった一方、高齢者や基礎疾患のある人は重症化しやすかったことを、在宅支援と医療監視を対比して示す",
+    "vaccineの速い開発は安全性確認の省略として描かず、既存研究、並行した臨床試験、独立した規制審査、製造準備の積み重ねとして描く",
+    "承認はWHO一機関だけで世界一斉に行われたとせず、各国・地域の規制当局とWHO緊急使用リストを区別し、接種開始の時期とアクセス格差も示す",
+    "preparednessは備蓄だけでなく、監視、検査、一次医療、病床・人材、信頼できる情報、換気、研究、国際的な共有と公平性を含める"
+  ],
+  "fact_check_sources": [
+    "https://www.who.int/news/item/30-12-2024-milestone-covid-19-five-years-ago",
+    "https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---11-march-2020",
+    "https://www.who.int/news-room/questions-and-answers/item/coronavirus-disease-covid-19-risks-and-safety-for-older-people",
+    "https://www.who.int/news/item/31-12-2020-who-issues-its-first-emergency-use-validation-for-a-covid-19-vaccine-and-emphasizes-need-for-equitable-global-access",
+    "https://www.who.int/publications/b/72303",
+    "https://www.who.int/news-room/questions-and-answers/item/pandemic-prevention--preparedness-and-response-accord"
+  ],
+  "composition": {
+    "aspect_ratio": "16:9",
+    "subtitle_safe_area": "主要な顔、手、医療機器、PPE、検体、輸送箱、接種動作、公衆衛生資料は画面下45%より上に置く",
+    "camera": "一ショットにつき一定方向の寄り、引き、静止のいずれか一つ",
+    "text": "読める患者情報、病院名、検査結果、ニュース本文、地名ラベル、ワクチン銘柄、企業名、ロゴ、接種証明を生成しない。年月や固有名詞は動画字幕で示す"
+  },
+  "avoid": [
+    "ウイルスの怪物化、赤い巨大粒子、研究所起源の断定、陰謀表現、死体、泣き叫ぶ患者、医療崩壊だけを見せる終末描写",
+    "WHOや政府の宣伝画、特定政治家、国旗の対立、特定企業やワクチン銘柄、注射針の極端な接写、接種だけで即座に終息する表現",
+    "読める文字・数値・ロゴ、写真調、油彩、3Dレンダー、透かし、過剰なネオン、空中ホログラム、四分割インフォグラフィック"
+  ],
+  "imagegen": {
+    "mode": "built-in ImageGen",
+    "planned_master_count": 14,
+    "selected_output_directory": "scenes/character_refs",
+    "video_scene_directory": "scenes/final_style01"
+  }
+}

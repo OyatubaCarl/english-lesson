@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Teacher Tacos English タコスパーティー</title>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>Teacher Tacos English タコスパーティー</title>
 <meta name="theme-color" content="#e8642a">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" sizes="192x192" href="app_assets/icon-192.png">
@@ -43,7 +43,8 @@
   }
 
   *{box-sizing:border-box}
-  html,body{height:100%;margin:0} /* body既定margin 8pxが1画面(100dvh)からはみ出す原因だったため除去 */
+  html,body{height:100%;margin:0;touch-action:manipulation;-webkit-text-size-adjust:100%} /* body既定margin 8pxが1画面(100dvh)からはみ出す原因だったため除去 */
+  button,[role="button"]{touch-action:manipulation}
   .ttf-wrap{font-family:var(--ui);color:var(--fg);background:var(--bg);min-height:100vh;display:flex;justify-content:center;
     padding:22px 14px;line-height:1.65;-webkit-font-smoothing:antialiased}
   /* デスクトップ=スマホ枠。ヘッダー(topbar)とフッター(tabs)は固定、本文(.view)だけスクロール */
@@ -80,6 +81,9 @@
   .levels button{flex:1;text-align:center;font-size:.74rem;font-weight:800;padding:8px 4px;border-radius:8px;color:var(--muted);
     background:none;border:none;cursor:pointer;font-family:inherit}
   .levels button.on{background:var(--accent);color:#fff;box-shadow:var(--shadow-sm)}
+  .levels.speed10{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:3px}
+  .levels.speed10 button{font-size:.7rem;padding:7px 3px}
+  .levels.mode4 button{font-size:.68rem;padding:7px 3px;white-space:nowrap}
 
   .lcard{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:13px 14px;
     box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:9px;cursor:pointer;transition:transform .12s,box-shadow .12s}
@@ -219,9 +223,9 @@
   .ytwrap{position:relative;width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;border:1px solid var(--border)}
   .ytwrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
   /* タコビート埋め込み(6品目) — 戻るヘッダー＋iframe＋極小キャプションで1画面(スクロールなし)に収める */
-  .beat-step{flex:1;min-height:0;display:flex;flex-direction:column;gap:6px}
-  .beat-stage{position:relative;flex:1;min-height:0;display:flex}
-  .beat-frame{display:block;flex:1;min-height:0;width:100%;height:100%;border:1px solid var(--border);border-radius:14px;background:#000;box-shadow:var(--shadow-sm)}
+  .beat-step{flex:1;min-height:0;display:flex;flex-direction:column;gap:6px;touch-action:none}
+  .beat-stage{position:relative;flex:1;min-height:0;display:flex;touch-action:none}
+  .beat-frame{display:block;flex:1;min-height:0;width:100%;height:100%;border:1px solid var(--border);border-radius:14px;background:#000;box-shadow:var(--shadow-sm);touch-action:none}
   /* 結果/準備中はiframeに重ねる(スクロール不要で視認)。バナーはクリックを透過し、ボタンだけ受ける */
   .beat-overlay{position:absolute;left:10px;right:10px;z-index:6;display:flex;flex-direction:column;gap:8px;pointer-events:none}
   .beat-overlay.top{top:10px}
@@ -678,7 +682,7 @@
   .star-fx{position:absolute;font-size:22px;z-index:11;pointer-events:none;animation:starfly .8s ease-out forwards}
   @keyframes starfly{to{transform:translate(var(--dx),var(--dy)) rotate(200deg);opacity:0}}
 
-  /* コース切替タブ（小学生編／中学生編） */
+  /* コース切替タブ（入門編／中学生編／高校生編） */
   .course-tabs{display:flex;gap:9px;margin:2px 0 12px}
   .ctab{flex:1;display:flex;flex-direction:column;align-items:center;gap:1px;background:#fff;border:2px solid #ece0cf;border-radius:14px;padding:9px 6px;cursor:pointer;font-family:inherit;color:#7c6a56;transition:.15s;box-shadow:0 2px 6px rgba(90,60,30,.06)}
   .ctab .ci{font-size:20px;line-height:1}
@@ -695,7 +699,7 @@
   .tm-slot{width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.4);box-shadow:inset 0 0 0 2px rgba(170,115,58,.4);display:grid;place-items:center;font-size:13px}
   .tm-slot.done{animation:tmpop .35s}
   @keyframes tmpop{0%{transform:scale(.3)}60%{transform:scale(1.25)}100%{transform:scale(1)}}
-  /* 中学の複数トマトも小学生編と同じ .vword（ヘタ付きトマト＋tomatoPop＋flyHarvest）を流用する */
+  /* 中学の複数トマトも入門編と同じ .vword（ヘタ付きトマト＋tomatoPop＋flyHarvest）を流用する */
   .qhint{text-align:center;font-size:.76rem;color:#a89b88;margin-top:12px}
   /* 中学ビート（準備中→本文リスニング） */
   .mid-read{margin-top:12px;display:flex;flex-direction:column;gap:7px}
@@ -706,12 +710,44 @@
 
   /* GASflare: 先生のURL経由で入ったときだけ出る「記録中」バッジ */
   .topbar .login-slot{flex:none;display:flex;align-items:center;position:relative}
+  .special-wallet{flex:none;display:flex;align-items:center;gap:3px;border:1.5px solid #d8b4fe;background:#faf5ff;color:#6b21a8;
+    border-radius:999px;padding:5px 7px;font-size:.66rem;font-weight:900;white-space:nowrap;box-shadow:0 2px 7px rgba(107,33,168,.10)}
+  .daily-bonus-card{background:linear-gradient(180deg,#fffdf7,#faf5ff);border:2px solid #d8b4fe}
+  .daily-bonus-card .ib-emoji{font-size:3.6rem;filter:drop-shadow(0 5px 9px rgba(107,33,168,.24))}
+  .daily-bonus-card .bonus-n{font-size:1.55rem;font-weight:900;color:#7e22ce;margin:4px 0}
+  .daily-bonus-card .bonus-streak{font-size:.8rem;font-weight:900;color:#c2410c;margin:-2px 0 4px}
+  .daily-bonus-card .bonus-note{font-size:.74rem;color:var(--muted);line-height:1.55}
+  .login-track{display:flex;align-items:flex-end;justify-content:center;gap:5px;max-width:100%;margin:6px auto 7px}
+  .login-track .more{align-self:center;color:#9a7a5a;font-weight:900}
+  .login-day{width:38px;min-width:0;padding:4px 2px 3px;border:1.5px solid #ead8bc;border-radius:10px;background:#fffdf7;display:flex;flex-direction:column;align-items:center;line-height:1}
+  .login-day .day-n{font-size:.58rem;color:#8a6d50;font-weight:900;margin-bottom:3px}
+  .login-day .day-icon{font-size:1.12rem;white-space:nowrap}
+  .login-day.frozen{border-color:#67cbb1;background:#effcf7;box-shadow:0 0 0 2px rgba(16,185,129,.09)}
+  .login-day.today{border-color:#f5a623;background:#fff8df;box-shadow:0 0 0 2px rgba(245,166,35,.12)}
+  .login-award{margin:6px auto 2px;padding:7px 10px;border-radius:12px;background:linear-gradient(90deg,#fff3c4,#ffe0a8);color:#8a3b0c;font-size:.76rem;font-weight:900;line-height:1.35}
+  .login-record-card{background:linear-gradient(180deg,#fffdf7,#fff8e8);border:2px solid #f3c56b;border-radius:14px;padding:11px 12px;margin-bottom:10px}
+  .login-record-head{display:flex;justify-content:space-between;gap:8px;align-items:center;font-weight:900;color:#9a4b12}
+  .login-record-sub{font-size:.72rem;color:var(--muted);margin-top:3px}
+  .award-medals{display:flex;justify-content:space-between;gap:4px;margin-top:9px}
+  .award-medal{flex:1;min-width:0;border-radius:9px;background:#f3eee6;color:#b8aa98;padding:5px 1px;text-align:center;font-size:1rem;line-height:1}
+  .award-medal small{display:block;font-size:.5rem;margin-top:3px;font-weight:900}
+  .award-medal.earned{background:#fff0bd;color:#9a4b12;box-shadow:inset 0 0 0 1px #f3c56b}
+  .lime-reward{margin:8px auto 0;padding:9px 12px;border-radius:13px;background:#effcf7;border:2px solid #67cbb1;color:#076b56;font-weight:900;text-align:center}
+  .lime-reward small{display:block;font-size:.68rem;margin-top:3px;color:#357a69}
   .gf-badge{border:1.5px solid var(--border);background:var(--card);color:var(--fg);border-radius:999px;
     font-family:inherit;font-size:.72rem;font-weight:800;padding:6px 11px;cursor:pointer;white-space:nowrap;transition:.12s}
   .gf-badge:hover{border-color:var(--accent);background:var(--accent-soft)}
   .gf-badge:active{transform:scale(.95)}
   .gf-note{position:absolute;top:36px;right:0;background:#fff;border:1px solid var(--border);border-radius:8px;
     padding:6px 9px;font-size:.66rem;font-weight:700;color:#b03a1a;white-space:nowrap;box-shadow:var(--shadow-sm);z-index:20}
+  @media(max-width:480px){
+    .topbar{gap:5px;padding-left:10px;padding-right:10px}
+    .topbar .logo{font-size:.82rem;line-height:1.18;min-width:0}
+    .topbar .logo small{display:none}
+    .special-wallet{font-size:.62rem;padding:4px 7px}
+    .gf-badge{width:30px;height:30px;padding:0;font-size:0;display:grid;place-items:center}
+    .gf-badge::before{content:'☁️';font-size:.78rem}
+  }
 
   /* タップしてスタート: 最初の1タップで音声を解錠してからタイトルへ */
   .tapstart{position:absolute;inset:0;z-index:95;display:flex;align-items:center;justify-content:center;cursor:pointer;
@@ -745,6 +781,7 @@
       <div class="logo" id="ttf-logo">Teacher Tacos English <em>タコスパーティー</em><small>TACOS PARTY ENGLISH</small></div>
       <div class="sp"></div>
       <div class="st" id="ttf-title"></div>
+      <span class="special-wallet" id="ttf-special" title="スペシャルタコス／時間停止ライム">🌟×0　⏳🍋‍🟩×0</span>
       <span class="login-slot" id="ttf-login"></span>
       <button class="mute" id="ttf-mute" type="button" aria-label="BGMのミュート切替" title="BGMのミュート（ゲームの音・発音は鳴ります）">🔊</button>
     </div>
@@ -758,13 +795,16 @@
 
 <script>
 (function(){
-  const BUILD_VER='v2026-07-17b'; // ⚙️設定最下部に表示（ホーム画面アプリのキャッシュ古さ診断用）
+  const BUILD_VER='v2026-08-02d'; // ⚙️設定最下部に表示（ホーム画面アプリのキャッシュ古さ診断用）
   const $=(h)=>{const d=document.createElement('div');d.innerHTML=h.trim();return d.firstChild;};
   const view=document.getElementById('ttf-view');
   const backBtn=document.getElementById('ttf-back');
   const titleEl=document.getElementById('ttf-title');
   const logoEl=document.getElementById('ttf-logo');
   const tabsEl=document.getElementById('ttf-tabs');
+  // スマホの素早い連打をダブルタップ拡大として扱わせない。ゲームiframe内にも同じガードを置く。
+  document.addEventListener('dblclick',e=>e.preventDefault(),{passive:false});
+  document.addEventListener('gesturestart',e=>e.preventDefault(),{passive:false});
 
   // ---------- アセット（WordTacos と同一素材。無い環境=Artifact では絵文字にフォールバック） ----------
   const A='app_assets';
@@ -1156,9 +1196,10 @@
     const grammarQ=ownCloze.map(c=>({pre:c.pre,post:c.post,choices:buildChoices(c.word),ans:0,ja:c.ja||'',
       e:`空所には <b>${c.word}</b> が入ります。`}));
     // 🥬レタス（並べ替え）: ここでは文法例文（en+ja）だけを入れる。
-    //   10問への補充は stepLettuce 側で行う（①ここ→②サルサ完成文→③本文の優先順。
+    //   10問への補充は stepLettuce 側で行う（①ここ→②サルサ完成文→③和訳つき本文の優先順。
     //   サルサ完成文の元データ COURSE_GRAMMAR は非同期読込で、ビルド時にはまだ無いことがある）
-    const roSrc=exs.map(ex=>({en:ex.en,ja:ex.ja}));
+    // 和訳がない例文は、手掛かりなしの並べ替えになってしまうのでレタスには使わない。
+    const roSrc=exs.filter(ex=>String(ex.ja||'').trim()).map(ex=>({en:ex.en,ja:ex.ja}));
     const byLen=roSrc.slice().sort((a,b)=>tokenizeEn(a.en).length-tokenizeEn(b.en).length);
     const ros=byLen.slice(0,10);
     const reorder=ros.map(s=>{
@@ -1172,12 +1213,16 @@
     const passage=(ml.enSentences||[]).filter(Boolean).map(en=>({en:String(en).trim(),jp:''})).filter(p=>p.en);
     // 🍅トマト（複数）: vocabSentences。固有名詞(Ken/Pochi/Tom/Mt. Fuji)は学習対象外なので
     //   マーカーを外して素の語として表示し、トマト(出題)にはしない。
+    const vocabSeen=new Set();
     const vocabSentences=(ml.vocabSentences||[]).map(s=>{
       const src=(s.words||[]).filter(w=>w.w&&w.ja);
       let i=0; const kept=[];
       const text=String(s.text||'').replace(/<([^>]+)>/g,(m,w)=>{
         const wd=src[i++]; if(!wd)return w;
         if(isProperNoun(wd.w,wd.ja))return wd.w;       // 固有名詞: マーカーを外す＝トマトにしない
+        const key=String(wd.w).trim().toLowerCase().replace(/’/g,"'");
+        if(vocabSeen.has(key))return wd.w;              // 同じ語の2回目以降: 表示は残すが再出題しない
+        vocabSeen.add(key);
         kept.push({w:wd.w,ja:wd.ja}); return m; });
       return {text, words:kept};
     }).filter(s=>s.words.length);
@@ -1202,12 +1247,12 @@
     LESSONS.length=0; items.forEach(x=>LESSONS.push(x));
     return true;
   }
-  // ---- コース定義（小学生編＝lessons.json / 中学・高校＝共通スキーマのJSON） ----
+  // ---- コース定義（入門編＝Funnics Island / 中学・高校＝共通スキーマのJSON） ----
   //  chartMax: タコビートの譜面がある最終レッスン番号。ここを超える課は譜面が無いので、
   //            ビート具材を「レッスン動画＋本文リスニング」(stepBeatMiddle)で代替する。
   //            高校は160課あるが、レッスン動画があるのは序盤の45課だけ。
   const COURSES={
-    beginner:{icon:'📒',label:'小学生編',sub:'Funnics・B1〜20',prefix:'b',chartMax:20,
+    beginner:{icon:'📒',label:'入門編',sub:'ファニックスアイランド・B1〜20',prefix:'b',chartMax:20,
       progKey:'prog',doneKey:'tacoDone',examKey:'exam',skipKey:'skip'},
     middle:{icon:'📘',label:'中学生編',sub:'家族の物語・L1〜45',prefix:'m',chartMax:45,
       json:'middle_lessons.json',grammar:'middle_grammar.json',
@@ -1263,7 +1308,113 @@
   try{const s=localStorage.getItem('ttf');if(s)STATE=JSON.parse(s);}catch(e){}
   if(STATE.course!=='middle'&&STATE.course!=='high')STATE.course='beginner'; // 'beginner'/'middle'/'high'
   function save(){try{localStorage.setItem('ttf',JSON.stringify(STATE));}catch(e){}
+    updateSpecialWallet();
     try{ if(window.gasflare)window.gasflare.pushLater(); }catch(e){}}   // 先生のURL経由なら記録も送る
+  // スペシャルタコス: タコビートの「続きから再開」1回につき1個。
+  // 端末の現地日付で1日1回、連続1日目=1個・2日目=2個・3日目以降=3個。ライムで埋められない空白があると1日目へ戻る。
+  // 時間停止ライムは未ログイン1日につき1個を自動消費し、最大2日分まで連続記録をつなぐ。
+  const FREEZE_LIME_MAX=2;
+  const LOGIN_AWARDS=[
+    {days:3,icon:'🥉',title:'ブロンズタコス賞'},
+    {days:7,icon:'🥈',title:'シルバータコス賞'},
+    {days:14,icon:'🥇',title:'ゴールドタコス賞'},
+    {days:30,icon:'🏆',title:'タコスマスター賞'},
+    {days:60,icon:'👑',title:'フィエスタ王冠賞'},
+    {days:100,icon:'🌟',title:'伝説のタコス賞'},
+  ];
+  const loginDateKey=(d=new Date())=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  function loginDayOrdinal(key){ const m=String(key||'').match(/^(\d{4})-(\d{2})-(\d{2})$/); return m?Math.floor(Date.UTC(+m[1],+m[2]-1,+m[3])/86400000):NaN; }
+  function loginStreak(){ const n=parseInt(STATE.loginStreak,10); return isFinite(n)?Math.max(1,Math.min(100000,n)):1; }
+  function loginBestStreak(){ const n=parseInt(STATE.loginBestStreak,10); return isFinite(n)?Math.max(loginStreak(),Math.min(100000,n)):loginStreak(); }
+  function freezeLimes(){ const n=parseInt(STATE.freezeLimes,10); return isFinite(n)?Math.max(0,Math.min(FREEZE_LIME_MAX,n)):0; }
+  function loginAward(days){ return LOGIN_AWARDS.find(a=>a.days===+days)||null; }
+  function nextLoginAward(streak=loginStreak()){ return LOGIN_AWARDS.find(a=>a.days>streak)||null; }
+  function loginBonusPlan(lastDate,currentStreak,today,freezeCount=0,currentBest=0){
+    const previous=Math.max(1,Math.min(100000,parseInt(currentStreak,10)||1));
+    const bestBefore=Math.max(previous,Math.min(100000,parseInt(currentBest,10)||previous));
+    const available=Math.max(0,Math.min(FREEZE_LIME_MAX,parseInt(freezeCount,10)||0));
+    if(lastDate===today)return {amount:0,previousStreak:previous,streak:previous,bestStreak:bestBefore,gap:0,missedDays:0,usedFreeze:0,freezeLeft:available,awardDays:0,reset:false};
+    const gap=loginDayOrdinal(today)-loginDayOrdinal(lastDate);
+    const missedDays=isFinite(gap)&&gap>1?gap-1:0;
+    const canFreeze=missedDays>0&&missedDays<=available;
+    const usedFreeze=canFreeze?missedDays:0;
+    const reset=!(gap===1||canFreeze);
+    const streak=gap===1?previous+1:(canFreeze?previous+gap:1);
+    const bestStreak=Math.max(bestBefore,streak);
+    const crossed=LOGIN_AWARDS.filter(a=>a.days>bestBefore&&a.days<=bestStreak);
+    return {amount:Math.min(3,streak),previousStreak:previous,streak,bestStreak,gap:isFinite(gap)?gap:0,missedDays,usedFreeze,
+      freezeLeft:available-usedFreeze,awardDays:crossed.length?crossed[crossed.length-1].days:0,reset}; }
+  function specialTacos(){ const n=parseInt(STATE.specialTacos,10); return isFinite(n)?Math.max(0,n):0; }
+  function updateSpecialWallet(){ const e=document.getElementById('ttf-special'); if(e)e.textContent='🌟×'+specialTacos()+'　⏳🍋‍🟩×'+freezeLimes(); }
+  function gasflareTokenCandidate(){
+    const valid=t=>{ try{ if(!t)return false; const p=String(t).split('.')[0].replace(/-/g,'+').replace(/_/g,'/');
+      const o=JSON.parse(decodeURIComponent(escape(atob(p+'==='.slice((p.length+3)%4))))); return !!(o&&o.sid&&o.url&&Number(o.exp)>Date.now()); }
+      catch(e){return false;} };
+    try{ const q=new URL(location.href).searchParams.get('tt'); if(valid(q))return true; }catch(e){}
+    try{return valid(localStorage.getItem('ttf_gf_token'));}catch(e){return false;}
+  }
+  let gasWalletMode=gasflareTokenCandidate()?'pending':'local'; // pending/server/offline/local(個人または旧GAS)
+  let walletFlushBusy=false;
+  function gasWalletSeed(){ return {
+    loginBonusDate:STATE.loginBonusDate||'', loginStreak:STATE.loginBonusDate?loginStreak():0,
+    loginBestStreak:STATE.loginBonusDate?loginBestStreak():0, specialTacos:specialTacos(), freezeLimes:freezeLimes(),
+    limeRewardedLessons:STATE.limeRewardedLessons||{}
+  }; }
+  function storeWalletLocal(){ try{localStorage.setItem('ttf',JSON.stringify(STATE));}catch(e){} updateSpecialWallet(); }
+  function queueWalletLime(lesson){ if(gasWalletMode!=='server'&&gasWalletMode!=='pending'&&gasWalletMode!=='offline')return;
+    const q=STATE.walletPendingLimes||(STATE.walletPendingLimes={}); q[String(lesson||'')]=1; storeWalletLocal(); }
+  function flushWalletLimes(){
+    if(walletFlushBusy||gasWalletMode!=='server'||!window.gasflare||!gasflare.on||!gasflare.wallet)return;
+    const q=STATE.walletPendingLimes||{}, lessons=Object.keys(q).filter(k=>q[k]); if(!lessons.length)return;
+    walletFlushBusy=true;
+    lessons.reduce((p,lesson)=>p.then(()=>gasflare.wallet({op:'grant_lime',lesson}).then(r=>{
+      if(r&&r.result&&r.result.ok){ delete q[lesson]; storeWalletLocal(); }
+    })),Promise.resolve()).finally(()=>{walletFlushBusy=false;});
+  }
+  function applyGasWallet(wallet,result,serverDate){
+    if(!wallet||typeof wallet!=='object')return;
+    gasWalletMode='server';
+    STATE.loginBonusDate=String(wallet.loginBonusDate||'');
+    STATE.loginStreak=Math.max(1,parseInt(wallet.loginStreak,10)||1);
+    STATE.loginBestStreak=Math.max(STATE.loginStreak,parseInt(wallet.loginBestStreak,10)||STATE.loginStreak);
+    STATE.specialTacos=Math.max(0,parseInt(wallet.specialTacos,10)||0);
+    STATE.freezeLimes=Math.max(0,Math.min(FREEZE_LIME_MAX,parseInt(wallet.freezeLimes,10)||0));
+    const rewarded={}; (Array.isArray(wallet.limeRewardedLessons)?wallet.limeRewardedLessons:[]).forEach(k=>rewarded[k]=true);
+    STATE.limeRewardedLessons=rewarded; STATE.walletServerDate=serverDate||wallet.serverDate||'';
+    if(result&&result.op==='login'){
+      STATE.lastLoginBonus=result.amount||0; STATE.lastLoginFreezeUsed=result.usedFreeze||0;
+      STATE.lastLoginMissedDays=result.missedDays||0; STATE.lastLoginPreviousStreak=result.previousStreak||1;
+      STATE.lastLoginAwardDays=result.awardDays||0; STATE.lastLoginWasReset=result.reset?1:0;
+      pendingDailyBonus=Math.max(0,parseInt(result.amount,10)||0);
+    }
+    if(result&&result.op==='grant_lime'&&result.lesson&&result.ok){
+      const q=STATE.walletPendingLimes||{}; delete q[result.lesson];
+    }
+    storeWalletLocal();
+    if(result&&result.op==='login'&&result.amount&&appStarted){
+      setTimeout(()=>{showDailyBonus(result.amount);pendingDailyBonus=0;},0);
+    }
+    setTimeout(flushWalletLimes,0);
+  }
+  function gasWalletUnavailable(reason){
+    if(reason==='unsupported'){
+      gasWalletMode='local'; const got=claimDailyBonus(); pendingDailyBonus=got;
+      if(got&&appStarted)setTimeout(()=>{showDailyBonus(got);pendingDailyBonus=0;},0);
+    }else gasWalletMode='offline'; // 学習は続行。サーバー確認が必要な配布・消費だけ保留
+    updateSpecialWallet();
+  }
+  let pendingDailyBonus=0, appStarted=false;
+  function claimDailyBonus(){
+    const today=loginDateKey();
+    if(STATE.loginBonusDate===today){ updateSpecialWallet(); return 0; }
+    const plan=loginBonusPlan(STATE.loginBonusDate,STATE.loginStreak,today,freezeLimes(),STATE.loginBestStreak), n=plan.amount;
+    STATE.loginBonusDate=today; STATE.loginStreak=plan.streak; STATE.loginBestStreak=plan.bestStreak;
+    STATE.freezeLimes=plan.freezeLeft; STATE.specialTacos=specialTacos()+n; STATE.lastLoginBonus=n;
+    STATE.lastLoginFreezeUsed=plan.usedFreeze; STATE.lastLoginMissedDays=plan.missedDays;
+    STATE.lastLoginPreviousStreak=plan.previousStreak;
+    STATE.lastLoginAwardDays=plan.awardDays; STATE.lastLoginWasReset=plan.reset?1:0;
+    save(); return n; }
+  pendingDailyBonus=gasWalletMode==='local'?claimDailyBonus():0;
   const isMiddleCourse=()=>STATE.course!=='beginner';   // JSONベースのコース(中学・高校)
 
   // ---------- GASflare（先生のスプレッドシートへ記録） ----------
@@ -1277,7 +1428,7 @@
   }
   function courseTitle(ck,id){ const x=courseRaw(ck,id); return (x&&x.title)||''; }
   // そのレッスンの新出語数。固有名詞(Ken/Pochi等)は出題対象外なので数えない。
-  //   小学=vocab[{w,ja}] / 中学・高校=vocabSentences[].words[{w,ja}]
+  //   入門=vocab[{w,ja}] / 中学・高校=vocabSentences[].words[{w,ja}]
   const TOMATO_IDX=STEPS.findIndex(x=>x.key==='tomato');
   function courseWordCount(ck,id){
     const x=courseRaw(ck,id); if(!x)return 0;
@@ -1365,7 +1516,12 @@
       catch(e){ STATE={level:1,prog:{}}; }
       if(STATE.course!=='middle'&&STATE.course!=='high')STATE.course='beginner';
       try{ rebuildActiveCourse(); }catch(e){}
+      const schoolMode=!!(window.gasflare&&gasflare.on); gasWalletMode=schoolMode?'pending':'local';
+      const got=schoolMode?0:claimDailyBonus(); pendingDailyBonus=got;
+      if(got&&appStarted)setTimeout(()=>{ showDailyBonus(got); pendingDailyBonus=0; },0);
+      updateSpecialWallet();
     },
+    wallet:{ login:true, seed:gasWalletSeed, apply:applyGasWallet, unavailable:gasWalletUnavailable },
     collect:()=>gfEntries(false),
     onPushed:(entries)=>gfCommit(entries),
     apply:(progress)=>gfApply(progress),
@@ -1399,14 +1555,19 @@
     }
     if(changed)save();
   })();
-  // 進捗はコース別に分離（小学生編=STATE.prog / 中学生編=STATE.progM。レッスンidが両コースで衝突するため）
+  // 進捗はコース別に分離（入門編=STATE.prog / 中学生編=STATE.progM。レッスンidが各コースで衝突するため）
   function progStore(){ const k=CS().progKey; return STATE[k]||(STATE[k]={}); }   // 進捗はコース別に分離
   function prog(id){const P=progStore();if(!P[id])P[id]=STEPS.map(()=>false);return P[id];}
-  // タコビートの既定設定: 速さ=ゆっくり(1)・判定=ふつう(1)
-  function beatSpeed(){ return STATE.beatSpeed===undefined?1:STATE.beatSpeed; }
+  // タコビート速度は10段階。旧4段階の保存値は、体感が近い新Lvへ1回だけ移行する。
+  const BEAT_SPEED_MAX=9, BEAT_SPEED_DEFAULT=4, BEAT_SPEED_LEGACY=[1,4,6,8];
+  function beatSpeed(){
+    if(STATE.beatSpeedVer!==2){ const old=parseInt(STATE.beatSpeed,10);
+      STATE.beatSpeed=isFinite(old)?BEAT_SPEED_LEGACY[Math.max(0,Math.min(3,old))]:BEAT_SPEED_DEFAULT;
+      STATE.beatSpeedVer=2; save(); }
+    const v=parseInt(STATE.beatSpeed,10); return isFinite(v)?Math.max(0,Math.min(BEAT_SPEED_MAX,v)):BEAT_SPEED_DEFAULT; }
   function beatDiff(){ return STATE.beatDiff===undefined?1:STATE.beatDiff; }
   function beatOff(){ const v=parseInt(STATE.beatOff,10); return isFinite(v)?Math.max(-200,Math.min(200,v)):0; } // ズレ調整(ms)。全体設定のみで変更
-  const BEAT_MODES=['easy','normal','hard']; // taco_beat の ?mode= に対応（既定 normal）
+  const BEAT_MODES=['easy','normal','hard','expert']; // taco_beat の ?mode= に対応（既定 normal）
   function beatMode(){ const k=STATE.beatMode===undefined?1:STATE.beatMode; return Math.max(0,Math.min(BEAT_MODES.length-1,k)); }
   // 昇級試験（厨房ラッシュ）合格フラグ。新規は STATE.exam[id]。旧・飛び級フラグ STATE.skip[id] も合格扱い（既存尊重）。
   function examPassed(id){ const c=CS(); return !!((STATE[c.examKey]&&STATE[c.examKey][id])||(STATE[c.skipKey]&&STATE[c.skipKey][id])); }
@@ -1414,9 +1575,31 @@
   function canComplete(id){ return prog(id).every(Boolean); }
   // タコス完成の演出は一度だけ（一度完成したら繰り返さない）
   function tacoIsDone(id){ const D=STATE[CS().doneKey]; return !!(D&&D[id]); }
-  function markTacoDone(id){ const k=CS().doneKey; STATE[k]=STATE[k]||{}; STATE[k][id]=true; save();
+  function grantFreezeLimeForLesson(id){
+    const key=CS().prefix+id, rewarded=STATE.limeRewardedLessons||(STATE.limeRewardedLessons={});
+    if(rewarded[key])return {earned:false,already:true,count:freezeLimes(),full:freezeLimes()>=FREEZE_LIME_MAX};
+    rewarded[key]=true;
+    const before=freezeLimes(), after=Math.min(FREEZE_LIME_MAX,before+1); STATE.freezeLimes=after;
+    return {earned:after>before,already:false,count:after,full:after>=FREEZE_LIME_MAX}; }
+  function markTacoDone(id){ const k=CS().doneKey; STATE[k]=STATE[k]||{};
+    if(STATE[k][id])return {earned:false,already:true,count:freezeLimes(),full:freezeLimes()>=FREEZE_LIME_MAX};
+    STATE[k][id]=true; const limeReward=grantFreezeLimeForLesson(id); save();
+    if(!limeReward.already)queueWalletLime(CS().prefix+id);
     try{ if(window.gasflare){ const c=CS(), l=LESSONS.find(x=>x.id===id);
-      gasflare.log(c.prefix+id, c.prefix.toUpperCase()+id+(l&&l.title?' '+l.title.slice(0,18):''), '🌮 タコス完成'); } }catch(e){} }
+      gasflare.log(c.prefix+id, c.prefix.toUpperCase()+id+(l&&l.title?' '+l.title.slice(0,18):''), '🌮 タコス完成'); } }catch(e){}
+    return limeReward; }
+  async function finishIngredientFlow(){
+    if(!canComplete(curLesson)){ lesson(curLesson); return; }
+    if(tacoIsDone(curLesson)){ lesson(curLesson); return; }
+    const finishedLesson=curLesson, finishedCourse=STATE.course, lessonKey=CS().prefix+curLesson;
+    let limeReward=markTacoDone(curLesson);
+    if(gasWalletMode!=='local'&&window.gasflare&&gasflare.on&&gasflare.wallet){
+      try{ const r=await Promise.race([gasflare.wallet({op:'grant_lime',lesson:lessonKey}),new Promise(ok=>setTimeout(()=>ok(null),3500))]);
+        const x=r&&r.result; if(x&&x.op==='grant_lime')limeReward={earned:!!x.earned,already:!!x.already,count:+x.count||0,full:!!x.full};
+      }catch(e){}
+    }
+    if(curLesson!==finishedLesson||STATE.course!==finishedCourse)return;
+    tacoComplete(limeReward); }
   function lessonDone(id){const l=LESSONS.find(x=>x.id===id);if(l&&l.done)return true;return canComplete(id);}
   function isUnlocked(id){ // 各ステージ先頭(L1/L6/L11/L16)は常に開放。以降は前レッスン完成 or 厨房ラッシュ合格で順次開放
     const idx=LESSONS.findIndex(x=>x.id===id);
@@ -1658,6 +1841,7 @@
       </div></div>`);
     const go=()=>{
       box.removeEventListener('pointerdown',go);
+      appStarted=true;
       try{ unlockAudioSession(); }catch(e){}     // この操作の中で音声を解錠しておく
       box.classList.add('out');
       setTimeout(()=>{ box.remove(); next(); },260);
@@ -1683,6 +1867,51 @@
       bg.appendChild(box);
       document.querySelector('.device').appendChild(bg);
     }catch(e){}
+  }
+  function loginTrackHTML(streak=loginStreak(),usedFreeze=0){
+    streak=Math.max(1,parseInt(streak,10)||1); usedFreeze=Math.max(0,Math.min(FREEZE_LIME_MAX,parseInt(usedFreeze,10)||0));
+    const first=Math.max(1,streak-6), frozenFrom=streak-usedFreeze;
+    let html='<div class="login-track" aria-label="連続ログイン '+streak+'日">';
+    if(first>1)html+='<span class="more">…</span>';
+    for(let day=first;day<=streak;day++){
+      const frozen=usedFreeze>0&&day>=frozenFrom&&day<streak, today=day===streak;
+      html+=`<span class="login-day ${frozen?'frozen':''} ${today?'today':''}"><span class="day-n">${day}</span><span class="day-icon">${frozen?'⏳🍋‍🟩':'🌮'}</span></span>`;
+    }
+    return html+'</div>'; }
+  function awardMedalsHTML(){ return `<div class="award-medals">${LOGIN_AWARDS.map(a=>
+    `<span class="award-medal ${loginBestStreak()>=a.days?'earned':''}" title="${a.title}">${a.icon}<small>${a.days}日</small></span>`).join('')}</div>`; }
+  function loginRecordHTML(){ const streak=loginStreak(), best=loginBestStreak(), next=nextLoginAward(best);
+    const sync=gasWalletMode==='server'?'☁️ 学校アカウントに同期（日本時間）'
+      :(gasWalletMode==='pending'?'☁️ 学校アカウントを確認中…':(gasWalletMode==='offline'?'☁️ 同期待ち（学習は続けられます）':'📱 この端末に保存'));
+    return `<div class="login-record-card"><div class="login-record-head"><span>🔥 ${streak}日連続</span><span>自己ベスト ${best}日</span></div>
+      <div class="login-record-sub">⏳🍋‍🟩 時間停止ライム ${freezeLimes()} / ${FREEZE_LIME_MAX}　${next?'次の表彰まであと'+(next.days-streak)+'日':'すべての表彰を達成！'}</div>
+      <div class="login-record-sub">${sync}</div>
+      ${awardMedalsHTML()}</div>`; }
+  function showDailyBonus(amount,onDone){
+    amount=Math.max(0,parseInt(amount,10)||0);
+    if(!amount){ onDone&&onDone(); return; }
+    try{
+      const dev=document.querySelector('.device'); if(!dev){onDone&&onDone();return;}
+      dev.querySelectorAll('.daily-bonus').forEach(e=>e.remove());
+      const streak=loginStreak(), usedFreeze=Math.max(0,parseInt(STATE.lastLoginFreezeUsed,10)||0);
+      const streakText=streak>=3?'連続ログイン'+streak+'日！ 最大ボーナス':'連続ログイン'+streak+'日目！';
+      const nextText=streak===1?'あしたもログインすると2個':(streak===2?'あしたは最大の3個':'連続ログイン中は3個をキープ');
+      const award=loginAward(STATE.lastLoginAwardDays);
+      const bridgeText=usedFreeze?`<div class="login-award">⏳🍋‍🟩 時間停止ライム ×${usedFreeze} が未ログイン日を埋めました！</div>`
+        :(STATE.lastLoginWasReset?'<div class="login-award">新しい連続記録をここからスタート！</div>':'');
+      const awardText=award?`<div class="login-award">${award.icon} ${award.days}日達成！ ${award.title}</div>`:'';
+      const bg=$('<div class="intro-bg daily-bonus"></div>');
+      const box=$(`<div class="intro-box daily-bonus-card"><div class="ib-emoji">🌟🌮</div>
+        <div class="ib-text"><b>きょうのログインボーナス！</b></div>
+        <div class="bonus-n">スペシャルタコス × ${amount}</div>
+        <div class="bonus-streak">${streakText}</div>
+        ${loginTrackHTML(streak,usedFreeze)}
+        ${bridgeText}${awardText}
+        <div class="bonus-note">${nextText}<br>1個使うとタコビートを続きから再開できます。</div>
+        <button class="btn" style="width:auto;padding:12px 28px;margin:8px auto 0">受け取る！</button></div>`);
+      box.querySelector('button').onclick=()=>{ bg.remove(); pendingDailyBonus=0; onDone&&onDone(); };
+      bg.appendChild(box); dev.appendChild(bg); sfxGet(); updateSpecialWallet();
+    }catch(e){onDone&&onDone();}
   }
 
   // ---------- 説明モーダル（初回のみ・1〜2文。常時バナーは置かない） ----------
@@ -1854,6 +2083,13 @@
     setTop('⚙️ 設定',true); backBtn.onclick=home; showTabs('settings'); bgmPlay('home');
     const wrap=$('<div></div>');
     wrap.appendChild($('<p style="font-size:.8rem;color:var(--muted);margin:2px 0 6px">アプリの動作を調整できます。</p>'));
+    wrap.appendChild($(loginRecordHTML()));
+    wrap.appendChild($(`<div class="settings-row" style="border-width:1px;border-radius:12px;margin-bottom:10px;background:#faf5ff">
+      <div style="font-size:1.45rem">🌟</div><div><div class="set-label">スペシャルタコス × ${specialTacos()}</div>
+      <div class="set-desc">連続1日目は1個、2日目は2個、3日目以降は3個。続きから再開に1個使います</div></div></div>`));
+    wrap.appendChild($(`<div class="settings-row" style="border-width:1px;border-radius:12px;margin-bottom:10px;background:#effcf7">
+      <div style="font-size:1.45rem">⏳🍋‍🟩</div><div><div class="set-label">時間停止ライム × ${freezeLimes()} / ${FREEZE_LIME_MAX}</div>
+      <div class="set-desc">レッスン初回クリアで1個。未ログイン1日につき1個を自動で使い、連続記録を守ります</div></div></div>`));
     const rows=[
       {key:'bgm',label:'🎵 BGM',desc:'場面ごとのテーマ曲を再生（学習中は自動停止）',val:SET.bgm},
       {key:'sfx',label:'🔔 効果音',desc:'正解・不正解・ファンファーレなどの効果音',val:SET.sfx},
@@ -1868,18 +2104,20 @@
         if(r.key==='bgm'){ if(e.target.checked)bgmPlay('home'); else bgmStop(); } });
       list.appendChild(row);
     });
-    // 🌮 タコビート（2品目）の速さ・判定（セグ選択・STATE に保存）
+    // 🌮 タコビート（6品目）の速さ・判定・モード（セグ選択・STATE に保存）
     const segRows=[
-      {key:'beatSpeed',label:'🌮 ビートの速さ',desc:'タコビートの曲の速さ',opts:['もっとゆっくり','ゆっくり','ふつう','はやい'],val:beatSpeed()},
-      {key:'beatDiff',label:'🌮 ビートの判定',desc:'タコビートの判定のきびしさ',opts:['やさしい','ふつう','きびしい'],val:beatDiff()},
-      {key:'beatMode',label:'🌮 ビートのモード',desc:'タコビートの遊び方モード',opts:['🌱 やさしい','🌮 ふつう','🔥 ハード'],val:beatMode()},
+      {key:'beatSpeed',label:'🌮 ビートの速さ',desc:'ノーツが奥から迫る速さ（5が標準・10が最高速）',opts:['1','2','3','4','5','6','7','8','9','10'],val:beatSpeed()},
+      {key:'beatDiff',label:'🌮 ビートの判定',desc:'標準も従来よりシビアです',opts:['やさしい','ふつう','シビア'],val:beatDiff()},
+      {key:'beatMode',label:'🌮 ビートのモード',desc:'エキスパートは5レーン・両手スライド・複合操作',opts:['🌱 やさしい','🌮 ふつう','🔥 ハード','⚡ エキスパート'],val:beatMode()},
     ];
     segRows.forEach(r=>{
       const row=$(`<div class="settings-row" style="flex-direction:column;align-items:stretch;gap:8px" data-set="${r.key}">
         <div><div class="set-label">${r.label}</div><div class="set-desc">${r.desc}</div></div></div>`);
       const seg=$('<div class="levels"></div>');
+      if(r.key==='beatSpeed')seg.classList.add('speed10');
+      if(r.key==='beatMode')seg.classList.add('mode4');
       r.opts.forEach((n,k)=>{ const b=$(`<button type="button" class="${k===r.val?'on':''}">${n}</button>`);
-        b.onclick=()=>{ STATE[r.key]=k; save();
+        b.onclick=()=>{ STATE[r.key]=k; if(r.key==='beatSpeed')STATE.beatSpeedVer=2; save();
           [...seg.children].forEach((x,q)=>x.classList.toggle('on',q===k)); };
         seg.appendChild(b); });
       row.appendChild(seg); list.appendChild(row);
@@ -1902,7 +2140,10 @@
     wrap.appendChild(list);
     if(showA2HSTip())wrap.appendChild($(`<div class="note" style="margin-top:10px;background:var(--panel);border-radius:10px;padding:9px 11px;line-height:1.6">${A2HS_TIP}</div>`)); // iOS Safariのみ常設
     const reset=$('<button class="btn ghost" style="margin-top:14px">🗑️ 進捗をすべてリセット</button>');
-    reset.onclick=()=>{ if(confirm('すべての進捗（完成タコス・飛び級）をリセットしますか?')){ localStorage.removeItem('ttf'); STATE={level:1,prog:{}}; alert('リセットしました'); home(); } };
+    reset.onclick=()=>{ if(confirm('すべての進捗（完成タコス・飛び級）をリセットしますか?')){
+      const wallet={loginBonusDate:STATE.loginBonusDate,loginStreak:STATE.loginStreak,loginBestStreak:STATE.loginBestStreak,
+        lastLoginBonus:STATE.lastLoginBonus,specialTacos:specialTacos(),freezeLimes:freezeLimes(),limeRewardedLessons:STATE.limeRewardedLessons||{}};
+      localStorage.removeItem('ttf'); STATE={level:1,prog:{},...wallet}; save(); alert('リセットしました'); home(); } };
     wrap.appendChild(reset);
     wrap.appendChild($(`<div class="note" style="text-align:center;margin-top:14px;opacity:.72">タコスパーティー ${BUILD_VER}</div>`)); // キャッシュ古さ診断用
     render(wrap);
@@ -1915,7 +2156,7 @@
   function stageLessons(si){ return LESSONS.slice(si*SGROUP,si*SGROUP+SGROUP); }
   function stageOf(id){ const idx=LESSONS.findIndex(x=>x.id===id); return Math.floor(Math.max(0,idx)/SGROUP); }
   function stageUnlocked(si){ return true; } // 全ステージ常時アクセス可（簡単な人がまどろっこしくないように）
-  // 小学生編／中学生編の切替タブ（home 上部）
+  // 入門編／中学生編／高校生編の切替タブ（home 上部）
   function courseSwitcher(){
     const box=$('<div class="course-tabs"></div>');
     Object.keys(COURSES).forEach(key=>{
@@ -2044,8 +2285,7 @@
   }
   function completeStep(i){const p=prog(curLesson);p[i]=true;save();
     // 5具材が揃った瞬間にタコス完成（ただし演出は一度だけ。既に完成済みならレッスンへ戻るだけ）
-    if(canComplete(curLesson)&&!tacoIsDone(curLesson)){ markTacoDone(curLesson); tacoComplete(); }
-    else lesson(curLesson);}
+    finishIngredientFlow();}
 
   // 🥩 中学ビート: レッスン動画(YouTube)で本文をまるごと聞く → 具材ゲット。
   //    リズム譜面(タコビート本体)は中学曲ぶんが未生成のため、いまは動画＋本文リスニング。譜面が出来たら stepBeat に切替える。
@@ -2073,7 +2313,7 @@
     render(wrap);
   }
 
-  // 🍅 中学トマトマト（複数トマト）: 1文に複数の英単語トマト → 全部収穫したら次の文へ
+  // 🍅 中学トマトマト（複数トマト）: 各英単語はレッスン内で1回だけ出題。1文のトマトを全部収穫したら次へ
   function stepVocabMulti(d,i){
     const SENTS=(d.vocabSentences||[]).filter(s=>s.words&&s.words.length).slice(0,MID_TOMATO_MAX);
     if(!SENTS.length){ // データ無しの保険（具材は渡す）
@@ -2209,7 +2449,7 @@
       verdictMark('ok'); sfxGet(); confettiBurst();
       const p=prog(curLesson); p[i]=true; save();
       btn.textContent='🫓 具材ゲット！ 次へ →'; btn.classList.add('green');
-      btn.onclick=()=>{ if(canComplete(curLesson))tacoComplete(); else lesson(curLesson); };
+      btn.onclick=finishIngredientFlow;
     }
     btn.onclick=finish;
     setGauge(0);
@@ -2237,10 +2477,9 @@
     resetAudioSession('beat-open'); audioBeforePlay(); // 親セッションがiframe内の曲音量に影響。開く直前に復帰＋保険のハード復帰
     releaseSong();                  // 常駐歌プレイヤーは廃止済み（no-op）。呼び出し互換のため残置
     const l=LESSONS.find(x=>x.id===curLesson)||{};
-    const songId=(COURSES[(d&&d.course)||'beginner']||COURSES.beginner).prefix+(l.b!=null?l.b:curLesson); // 小学=b / 中学=m / 高校=h
-    const vid=(d.youtube||l.youtube||'').trim();               // レッスン動画をタコビート内に流す(進行同期)
-    const vparam=vid?`&video=${encodeURIComponent(vid)}`:'';
-    const url=`${beatBase()}?song=${songId}&speed=${beatSpeed()}&diff=${beatDiff()}&mode=${BEAT_MODES[beatMode()]}&off=${beatOff()}${vparam}&embed=1`;
+    const songId=(COURSES[(d&&d.course)||'beginner']||COURSES.beginner).prefix+(l.b!=null?l.b:curLesson); // 入門=b / 中学=m / 高校=h
+    // 単体版と同じ自前動画(videos/<song>.mp4)を必ず上部に表示。YouTube設定の有無で見た目を分岐させない。
+    const url=`${beatBase()}?song=${songId}&speed=${beatSpeed()}&diff=${beatDiff()}&mode=${BEAT_MODES[beatMode()]}&off=${beatOff()}&special=${specialTacos()}&video=1&embed=1`;
     // 説明バナーは置かない(遊び方はゲーム内スタート画面にある)。iframeが残り高さを全部使い1画面に収まる
     const wrap=$('<div class="beat-step"></div>');
     const stage=$('<div class="beat-stage"></div>'); wrap.appendChild(stage);
@@ -2249,7 +2488,8 @@
     const msgTop=$('<div class="beat-overlay top"></div>'); stage.appendChild(msgTop); // 不合格(下端はゲーム内「もう一度」を隠すので上に重ねる)
     const msg=$('<div class="beat-overlay bot"></div>'); stage.appendChild(msg);       // 合格演出＋次へ
     // 譜面未生成への耐性: ready が来なければ「準備中」＋スキップを出す（ready 到着で消す）
-    let ready=false, passed=false, readyTimer=null, failTimer=null;
+    let ready=false, passed=false, readyTimer=null, failTimer=null, continueBusy=false;
+    let lastContinueId='', lastContinueResponse=null;
     const skipBox=$('<div class="beat-overlay bot" style="display:none"></div>');
     skipBox.appendChild($('<div class="banner ng">🛠️ この曲のビートは準備中です。</div>'));
     const skipBtn=$('<button class="btn soft">スキップして次へ →</button>');
@@ -2261,13 +2501,13 @@
       readyTimer=setTimeout(()=>{ if(!ready&&!passed&&document.body.contains(wrap))skipBox.style.display='flex'; },BEAT_READY_MS); };
     frame.addEventListener('load',armReadyTimer);
     function onPass(res){
-      if(passed)return; passed=true; clearTimeout(readyTimer); clearTimeout(failTimer); detachBeatHandler();
+      if(passed)return; passed=true; clearTimeout(readyTimer); clearTimeout(failTimer);
       const p=prog(curLesson); p[i]=true; save();       // completeStep 相当（画面遷移はボタンで）
       verdictMark('ok'); successFlash(); confettiBurst();
       msgTop.innerHTML=''; msg.innerHTML='';
       msg.appendChild($(`<div class="banner ok">🎉 合格！ 精度 ${res.acc}%（スコア ${res.score}・最大コンボ ${res.maxCombo}）</div>`));
       const nb=$('<button class="btn green">🥩 具材ゲット！ 次へ →</button>');
-      nb.onclick=()=>{ if(canComplete(curLesson))tacoComplete(); else lesson(curLesson); };
+      nb.onclick=finishIngredientFlow;
       msg.appendChild(nb);
     }
     function onFail(res){
@@ -2277,15 +2517,41 @@
     }
     render(wrap);
     armReadyTimer();
-    _beatMsgHandler=(e)=>{
+    _beatMsgHandler=async(e)=>{
       const m=e.data;
       if(!m||!m.type||e.source!==frame.contentWindow)return;
       if(m.type==='tacobeat:ready'){ if(m.songId===songId){ ready=true; clearTimeout(readyTimer); skipBox.style.display='none'; } return; }
       if(m.type==='tacobeat:settings'){                 // タコビートのスタート画面で難易度/判定/速度を変えた → アプリ設定へ保存
         const mi=BEAT_MODES.indexOf(m.mode); if(mi>=0)STATE.beatMode=mi;
         if(typeof m.diff==='number'&&m.diff>=0&&m.diff<=2)STATE.beatDiff=m.diff;
-        if(typeof m.speed==='number'&&m.speed>=0&&m.speed<=3)STATE.beatSpeed=m.speed;
+        if(typeof m.speed==='number'&&m.speed>=0&&m.speed<=BEAT_SPEED_MAX){STATE.beatSpeed=m.speed;STATE.beatSpeedVer=2;}
         save(); return; }
+      if(m.type==='tacobeat:run-start'&&m.songId===songId){
+        // 結果画面から「もう一度」を選んだとき、前回の親側合否バナーを残さない。
+        passed=false; clearTimeout(failTimer); msgTop.innerHTML=''; msg.innerHTML=''; return; }
+      if(m.type==='tacobeat:exit'&&m.songId===songId){
+        clearTimeout(readyTimer); clearTimeout(failTimer); detachBeatHandler(); lesson(curLesson); return; }
+      if(m.type==='tacobeat:continue-request'&&m.songId===songId){
+        if(m.requestId&&m.requestId===lastContinueId&&lastContinueResponse){
+          frame.contentWindow.postMessage(lastContinueResponse,'*'); return; }
+        if(continueBusy)return;
+        continueBusy=true;
+        let ok=false;
+        if(!passed&&gasWalletMode!=='local'&&window.gasflare&&gasflare.on&&gasflare.wallet){
+          const rid=String(m.requestId||('continue-'+songId)).replace(/[^a-zA-Z0-9_.-]/g,'').slice(0,80);
+          try{ const r=await gasflare.wallet({op:'spend_special',requestId:'tb:'+songId+':'+rid});
+            ok=!!(r&&r.result&&r.result.ok&&r.result.spent);
+            if(!r)ttoast('☁️ アイテムを確認できません。通信が戻ってから試してね');
+          }catch(e){ttoast('☁️ アイテムを確認できません。通信が戻ってから試してね');}
+        }else if(!passed){
+          ok=specialTacos()>0;
+          if(ok){ STATE.specialTacos=specialTacos()-1; save(); }
+        }
+        if(ok){ sfxGet(); ttoast('🌟 スペシャルタコスを1個使いました'); }
+        lastContinueId=String(m.requestId||'');
+        lastContinueResponse={type:'tacobeat:continue-response',songId,requestId:lastContinueId,ok,count:specialTacos()};
+        frame.contentWindow.postMessage(lastContinueResponse,'*');
+        continueBusy=false; return; }
       if(m.type==='tacobeat:result'&&m.songId===songId){
         const acc=Math.round(+m.acc||0);
         if(acc>=BEAT_PASS)onPass(m); else onFail(m);
@@ -2323,7 +2589,7 @@
       return {pre:(g.pre||'').trim(),post:(g.post||'').trim(),hasBlank:true,ja:g.ja||'',
         choices:g.choices.slice(),word:g.choices[g.ans||0],expl:g.e||''};
     }
-    // 出題セットの優先順: ①（中学=MIDDLE_GRAMMAR / 小学=grammar_questions.json）手作り ②旧手作り10問(L12) ③自動生成9問
+    // 出題セットの優先順: ①（中学=MIDDLE_GRAMMAR / 入門=grammar_questions.json）手作り ②旧手作り10問(L12) ③自動生成9問
     const gsrc=(d&&d.course&&d.course!=='beginner')?COURSE_GRAMMAR[d.course]:GRAMMAR_Q;
     const gj=gsrc?gsrc[String(curLesson)]:null;
     const gjQs=(gj&&Array.isArray(gj.questions)&&gj.questions.length)?gj.questions:null;
@@ -2675,6 +2941,10 @@
     if(item.lang==='ja')return jaFlexibleOk(item.answer,arr);
     return false;
   }
+  // 並べ替えは必ずお題（英語を作る問題なら和訳、和訳を作る問題なら英文）があるものだけ出す。
+  function reorderHasHint(item){
+    return !!(item&&Array.isArray(item.answer)&&item.answer.length&&String(item.prompt||'').trim());
+  }
   // タイルの表示を正規化して位置バレ(文頭大文字・末尾句読点)を消す。判定・完成表示には原文(orig)を使う。
   // 固有名詞=正解文の先頭以外で大文字出現する語。"I"(I'm等含む)は常に大文字。日本語(ja)は正規化しない。
   function reorderProperSet(answer){ const s=new Set();
@@ -2691,7 +2961,7 @@
   window.__ttfReorder={
     tiles:(item)=>{ const isEn=item.lang==='en', proper=reorderProperSet(item.answer);
       return [...(item.answer||[]),...(item.dummies||[])].map(w=>reorderNorm(w,isEn,proper)); },
-    final:(item)=>(item.answer||[]).join(item.lang==='en'?' ':''), ok:reorderOk };
+    final:(item)=>(item.answer||[]).join(item.lang==='en'?' ':''), ok:reorderOk, hasHint:reorderHasHint };
   function reorderProblem(host,item,onDone){
     host.innerHTML='';
     const isEn=item.lang==='en';
@@ -2780,7 +3050,7 @@
     const out=[];
     qs.forEach(q=>{
       const en=String(q.q||''); const c=(q.choices||[])[q.a||0];
-      if(!en||!c||en.indexOf('___')<0)return;
+      if(!en||!c||en.indexOf('___')<0||!String(q.ja||'').trim())return;
       const full=en.replace('___',c).replace(/\s+/g,' ').replace(/\s+([.,!?])/g,'$1').trim();
       const answer=full.split(/\s+/).filter(Boolean);
       if(answer.length<3||answer.length>12)return;
@@ -2792,12 +3062,13 @@
   function stepLettuce(d,i){
     document.querySelectorAll('.lt-modal').forEach(x=>x.remove());  // 再入場時の残骸掃除
     // 目標10問。①ビルダーの文法例文（1課3本前後しか無い）に、
-    // ②サルサの完成文（穴埋めを埋め戻した文＋和訳）→ ③本文 の順で重複なく補う。
+    // ②サルサの完成文（穴埋めを埋め戻した文＋和訳）→ ③和訳つき本文 の順で重複なく補う。
     // 何度入場しても増え続けないよう、seen で冪等にしてある。
-    d.reorder=d.reorder||[];
+    d.reorder=(d.reorder||[]).filter(reorderHasHint);
     const LT_TARGET=10;
     const ltSeen=new Set(d.reorder.map(r=>(r.answer||[]).join(' ').toLowerCase()));
     const ltMerge=(items)=>{ (items||[]).forEach(r=>{ if(d.reorder.length>=LT_TARGET)return;
+      if(!reorderHasHint(r))return;
       const k=(r.answer||[]).join(' ').toLowerCase(); if(!k||ltSeen.has(k))return; ltSeen.add(k); d.reorder.push(r); }); };
     if(d.reorder.length<LT_TARGET) ltMerge(reorderFromGrammarQs(d.course,curLesson));
     if(d.reorder.length<LT_TARGET && Array.isArray(d.passage)){
@@ -2806,13 +3077,14 @@
       d.passage.forEach(p=>String(p.en||'').split(/\s+/).forEach(w=>{ const k=w.toLowerCase().replace(/[^a-z']/g,'');
         if(!k||pseen.has(k))return; pseen.add(k); pool.push(w.replace(/[.!?,]+$/,'')); }));
       ltMerge(d.passage
-        .filter(p=>{ const n=String(p.en||'').trim().split(/\s+/).length; return n>=3&&n<=12; })
+        .filter(p=>{ const n=String(p.en||'').trim().split(/\s+/).length;
+          return String(p.jp||'').trim()&&n>=3&&n<=12; })
         .map((p,pi)=>{ const answer=String(p.en).replace(/\s+/g,' ').trim().split(/\s+/).filter(Boolean);
           const lower=new Set(answer.map(w=>w.toLowerCase().replace(/[^a-z']/g,'')));
           const dummies=pool.filter(w=>!lower.has(w.toLowerCase().replace(/[^a-z']/g,''))).slice(pi,pi+2);
           return {lang:'en',prompt:p.jp||'',answer,dummies}; }));
     }
-    const ros=(d.reorder||[]).slice();
+    const ros=(d.reorder||[]).filter(reorderHasHint).slice();
     const total=ros.length; let ri=0;
     if(!total){ completeStep(i); return; }
     const wrap=$('<div></div>');
@@ -3106,9 +3378,14 @@
   // ---------- 🌮 タコス完成演出（6具材コンプで自動再生 → パーティーテーブルへ） ----------
   // party_mockup の完成演出を移植: 具材が並ぶ→7層組み上げ→ライム絞り→いただきます→ぱくっ×3
   // 6具材コンプ → トム(掲げて大喜び)がポン登場 → かじる画にクロスフェード → 「タコス完成！」＋獲得ジングル → 数秒で閉じる
-  function tacoComplete(){
+  function tacoComplete(limeReward){
     const lid=curLesson, si=stageOf(lid);
     const C=`${A}/celebrate`;
+    const limeText=limeReward&&limeReward.earned
+      ?`<div class="lime-reward">⏳🍋‍🟩 時間停止ライム ＋1<small>所持 ${limeReward.count} / ${FREEZE_LIME_MAX}　未ログイン1日を自動でつなぎます</small></div>`
+      :(limeReward&&limeReward.already
+        ?`<div class="lime-reward">⏳🍋‍🟩 このレッスンのライムは受取済み<small>所持 ${freezeLimes()} / ${FREEZE_LIME_MAX}</small></div>`
+        :`<div class="lime-reward">⏳🍋‍🟩 時間停止ライムは満タン<small>所持 ${freezeLimes()} / ${FREEZE_LIME_MAX}　今回は追加されません</small></div>`);
     const ov=$(`<div class="final-ovl"><div class="final-wrap">
       <div class="final-head">🌮 タコス完成！ — Lesson ${curLesson}</div>
       <div class="final-stage">
@@ -3118,6 +3395,7 @@
         </div>
         <div class="final-word"></div>
       </div>
+      ${limeText}
       <div class="final-foot" style="display:flex;flex-direction:column;gap:8px">
         <button class="btn exam-go">🌶️ 昇級試験に挑戦 →</button>
         <button class="btn ghost table-go">🎉 テーブルへ →</button>
@@ -3346,7 +3624,8 @@
        courseKeys.forEach((k,i)=>{ const d=cds[i]; if(Array.isArray(d)&&d.length)COURSE_DATA[k]=d; });
        if(!rebuildActiveCourse()){ STATE.course='beginner'; if(data)buildLessons(data); } })
      .catch(()=>{})
-     .then(()=>{ tapToStart(()=>{ title(); showStandaloneHint(); }); }); // 「タップしてスタート」→ タイトルへ
+     .then(()=>{ tapToStart(()=>{ title();
+       showDailyBonus(pendingDailyBonus,showStandaloneHint); }); }); // 「タップしてスタート」→ ログインボーナス → タイトルへ
   })();
 
   // 検証・デバッグ用の内部フック（UI動作には影響しない）
@@ -3358,6 +3637,9 @@
     get course(){return STATE.course;}, get courses(){return COURSES;},
     get middleData(){return COURSE_DATA.middle;}, get highData(){return COURSE_DATA.high;},
     get courseData(){return COURSE_DATA;}, get courseGrammar(){return COURSE_GRAMMAR;},
+    specialTacos, claimDailyBonus, showDailyBonus, loginDateKey, loginDayOrdinal, loginBonusPlan, loginStreak, loginBestStreak,
+    freezeLimes, grantFreezeLimeForLesson, loginTrackHTML, loginRecordHTML, updateSpecialWallet,
+    get gasWalletMode(){return gasWalletMode;}, gasWalletSeed, applyGasWallet, gasWalletUnavailable,
     setCourse:(c)=>{ STATE.course=COURSES[c]?c:'beginner'; save(); return rebuildActiveCourse(); },
     buildMiddleLessons, buildMiddleLesson, rebuildActiveCourse };
 })();

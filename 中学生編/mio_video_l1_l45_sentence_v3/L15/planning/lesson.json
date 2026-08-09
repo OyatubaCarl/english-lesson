@@ -1,0 +1,183 @@
+{
+  "project_root": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成",
+  "audio": "taco_beat/songs/m15.mp3",
+  "chart": "taco_beat/charts/m15.js",
+  "title_en": "Lesson 15  Talking About Seasons",
+  "title_ja": "季節の話",
+  "title_position": [1410, 145],
+  "title_ja_position": [1410, 225],
+  "slug": "l15_talking_about_seasons_sentence_v3",
+  "duration": 55.124172,
+  "transition_duration": 0.30,
+  "sentence_image_count": 9,
+  "line_to_scene": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+  "lines": [
+    {
+      "start_index": 1,
+      "end_index": 17,
+      "en_words": ["One", "afternoon", "after", "school,", "Tom", "and", "I", "stayed", "in", "the", "classroom", "to", "talk", "about", "our", "favorite", "season."],
+      "break_after": [10],
+      "ja": "ある放課後、トムとわたしは教室に残って、好きな季節について話しました。"
+    },
+    {
+      "start_index": 18,
+      "end_index": 35,
+      "en_words": ["I", "think", "that", "summer", "is", "my", "favorite", "season,", "because", "I", "love", "going", "to", "the", "sea", "and", "the", "mountains."],
+      "break_after": [7],
+      "ja": "わたしは海や山へ行くのが大好きなので、夏がいちばん好きな季節です。"
+    },
+    {
+      "start_index": 36,
+      "end_index": 42,
+      "en_words": ["But", "Tom", "did", "not", "agree", "with", "me."],
+      "ja": "でも、トムはわたしの意見に賛成しませんでした。"
+    },
+    {
+      "start_index": 43,
+      "end_index": 46,
+      "en_words": ["“I", "like", "spring", "better."],
+      "ja": "「ぼくは春のほうが好き。"
+    },
+    {
+      "start_index": 47,
+      "end_index": 53,
+      "en_words": ["Cherry", "flowers", "are", "so", "beautiful,”", "he", "said."],
+      "ja": "桜の花はとてもきれいだよ」とトムは言いました。"
+    },
+    {
+      "start_index": 54,
+      "end_index": 63,
+      "en_words": ["When", "summer", "comes,", "my", "family", "always", "goes", "to", "the", "sea."],
+      "ja": "夏になると、わたしの家族はいつも海へ行きます。"
+    },
+    {
+      "start_index": 64,
+      "end_index": 74,
+      "en_words": ["While", "my", "brother", "plays", "baseball,", "I", "quietly", "read", "books", "at", "home."],
+      "break_after": [4],
+      "ja": "兄が野球をしている間、わたしは家で静かに本を読みます。"
+    },
+    {
+      "start_index": 75,
+      "end_index": 86,
+      "en_words": ["Although", "it", "is", "sometimes", "rainy,", "summer", "is", "still", "a", "lot", "of", "fun."],
+      "break_after": [4],
+      "ja": "ときどき雨でも、それでも夏はとても楽しいです。"
+    },
+    {
+      "start_index": 87,
+      "end_index": 100,
+      "en_words": ["If", "tomorrow", "is", "sunny,", "I", "will", "go", "to", "the", "beach", "with", "my", "family", "again."],
+      "break_after": [3],
+      "ja": "もし明日晴れたら、また家族と海へ行くつもりです。"
+    }
+  ],
+  "shots": [
+    {
+      "image": "scenes/01_after_school_season_talk.png",
+      "start": 0.0,
+      "end": 10.068,
+      "start_center": [0.38, 0.51],
+      "end_center": [0.60, 0.49],
+      "start_zoom": 1.08,
+      "end_zoom": 1.10,
+      "intent": "放課後の静かな教室を示してから会話するミオとトムへ視線を移す"
+    },
+    {
+      "image": "scenes/02_mio_loves_summer.png",
+      "start": 10.068,
+      "end": 17.608,
+      "start_center": [0.45, 0.60],
+      "end_center": [0.54, 0.41],
+      "start_zoom": 1.11,
+      "end_zoom": 1.04,
+      "transition": "circleopen",
+      "transition_duration": 0.30,
+      "intent": "話すミオから海と山のイメージへゆっくり広げる"
+    },
+    {
+      "image": "scenes/03_tom_disagrees.png",
+      "start": 17.608,
+      "end": 20.142,
+      "start_center": [0.62, 0.49],
+      "end_center": [0.43, 0.49],
+      "start_zoom": 1.09,
+      "end_zoom": 1.12,
+      "transition": "dissolve",
+      "transition_duration": 0.20,
+      "intent": "ミオからやさしく首を振るトムへ短く寄る"
+    },
+    {
+      "image": "scenes/04_tom_prefers_spring.png",
+      "start": 20.142,
+      "end": 21.569,
+      "start_center": [0.48, 0.54],
+      "end_center": [0.54, 0.43],
+      "start_zoom": 1.04,
+      "end_zoom": 1.12,
+      "transition": "smoothleft",
+      "transition_duration": 0.16,
+      "intent": "トムの表情から春を思う小さなイメージへ素早く寄る"
+    },
+    {
+      "image": "scenes/05_beautiful_cherry_flowers.png",
+      "start": 21.569,
+      "end": 25.991,
+      "start_center": [0.38, 0.44],
+      "end_center": [0.63, 0.47],
+      "start_zoom": 1.08,
+      "end_zoom": 1.05,
+      "transition": "circleopen",
+      "transition_duration": 0.22,
+      "intent": "思い描いた桜並木を花の流れに沿って見渡す"
+    },
+    {
+      "image": "scenes/06_family_always_goes_to_sea.png",
+      "start": 25.991,
+      "end": 30.233,
+      "start_center": [0.34, 0.51],
+      "end_center": [0.66, 0.49],
+      "start_zoom": 1.08,
+      "end_zoom": 1.06,
+      "transition": "hblur",
+      "transition_duration": 0.28,
+      "intent": "夏の海辺を歩く家族5人を進行方向に見渡す"
+    },
+    {
+      "image": "scenes/07_kenta_baseball_mio_reading.png",
+      "start": 30.233,
+      "end": 38.677,
+      "start_center": [0.32, 0.46],
+      "end_center": [0.68, 0.53],
+      "start_zoom": 1.06,
+      "end_zoom": 1.10,
+      "transition": "smoothleft",
+      "transition_duration": 0.28,
+      "intent": "窓外の野球場のケンタから室内で読むミオへ同時進行をたどる"
+    },
+    {
+      "image": "scenes/08_rainy_summer_fun.png",
+      "start": 38.677,
+      "end": 45.540,
+      "start_center": [0.50, 0.36],
+      "end_center": [0.50, 0.61],
+      "start_zoom": 1.05,
+      "end_zoom": 1.10,
+      "transition": "hblur",
+      "transition_duration": 0.28,
+      "intent": "夏の雨空から雨を楽しむミオとポチへ視線を下ろす"
+    },
+    {
+      "image": "scenes/09_tomorrow_beach_plan.png",
+      "start": 45.540,
+      "end": 55.124172,
+      "start_center": [0.42, 0.57],
+      "end_center": [0.58, 0.42],
+      "start_zoom": 1.11,
+      "end_zoom": 1.04,
+      "transition": "circleopen",
+      "transition_duration": 0.30,
+      "intent": "明日の天気を思うミオから家族で海へ行く未来イメージへ広げる"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "scope": "H001-H002",
+  "date": "2026-08-03",
+  "status": "PASS",
+  "reason": "5カットでは歌詞が注目する対象の変化を十分に表現できなかったため、描写単位の寄り画を追加",
+  "scene_counts": {
+    "H001_before": 5,
+    "H001_after": 12,
+    "H002_before": 5,
+    "H002_after": 13,
+    "new_images": 16
+  },
+  "focus_policy": "歌詞が新しい物・動き・表情へ注意を移すたび、広景から対象の寄り画または中景へ切り替える",
+  "prompt_record": "高校生編/video_pipeline/planning/H001-H002_DETAIL_SHOTS_PROMPTS_STYLE01.md",
+  "previous_versions": [
+    "高校生編/video_pipeline/H001/output/archive_before_detailshots_20260803/",
+    "高校生編/video_pipeline/H002/output/archive_before_detailshots_20260803/"
+  ],
+  "checks": {
+    "H001_structural_verification": "PASS",
+    "H002_structural_verification": "PASS",
+    "H001_full_video_audio_decode": "PASS",
+    "H002_full_video_audio_decode": "PASS",
+    "combined_H001_H010_full_video_audio_decode": "PASS",
+    "ruby_and_highlight_policy_unchanged": true,
+    "stable_camera_policy_unchanged": true
+  },
+  "visual_qa": [
+    "高校生編/video_pipeline/qa_contact_sheets/H001_detailshot_12scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H002_detailshot_13scene_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H001_detailshot_final_video_contact.jpg",
+    "高校生編/video_pipeline/qa_contact_sheets/H002_detailshot_final_video_contact.jpg"
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H079.md",
+  "audio": "高校生編/suno_ready/generated/audio/H079/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 126.32,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 205,
+  "transcribed_words": 205,
+  "matched_words": 202,
+  "coverage": 0.9854,
+  "precision": 0.9854,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 204,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 7,
+      "length": 1,
+      "words": [
+        "fifty"
+      ]
+    },
+    {
+      "start": 49,
+      "length": 1,
+      "words": [
+        "spacex"
+      ]
+    },
+    {
+      "start": 162,
+      "length": 1,
+      "words": [
+        "creates"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 49,
+      "actual_start": 48,
+      "expected": [
+        "spacex"
+      ],
+      "actual": [
+        "space",
+        "x"
+      ],
+      "actual_confidence": 0.4647,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 162,
+      "actual_start": 162,
+      "expected": [
+        "creates"
+      ],
+      "actual": [
+        "create"
+      ],
+      "actual_confidence": 0.1856,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 7,
+      "actual_start": 7,
+      "expected": [
+        "fifty"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "In 1969, humanity reached the moon. More than 50 years later, the goals of space exploration are set even farther away. The next goal is Mars. NASA is advancing plans to carry out a crewed mission to Mars in the 2030s. Private companies too have entered space development in earnest. Space X has developed a reusable rocket, greatly lowering the cost of launch, but the journey to Mars is full of obstacles. The distance from Earth to Mars, even at its closest, is about 55 million kilometers. During the six to nine month trip, astronauts are exposed to radiation, microgravity, and Psychological isolation For humans to live on Mars The supply of oxygen, water and food is essential In the future, a colony is envisioned In which water is extracted from underground And crops are grown in greenhouses Space exploration comes at an enormous cost Some argue that the budget should instead be used to solve problems on Earth But supporters argue that space, exploration create technological innovation and brings new solutions to Earth's problems as well. Space will remain the last frontier for humanity. The challenge of going, there is not only a matter of science. It is also a philosophical question. How far can humanity go?",
+  "segments": [
+    {
+      "start": 5.26,
+      "end": 8.64,
+      "text": "In 1969, humanity reached the moon."
+    },
+    {
+      "start": 9.16,
+      "end": 13.98,
+      "text": "More than 50 years later, the goals of space exploration are set even farther away."
+    },
+    {
+      "start": 14.66,
+      "end": 15.82,
+      "text": "The next goal is Mars."
+    },
+    {
+      "start": 16.74,
+      "end": 22.3,
+      "text": "NASA is advancing plans to carry out a crewed mission to Mars in the 2030s."
+    },
+    {
+      "start": 23.26,
+      "end": 28.74,
+      "text": "Private companies too have entered space development in earnest."
+    },
+    {
+      "start": 32.14,
+      "end": 38.12,
+      "text": "Space X has developed a reusable rocket, greatly lowering the cost of launch, but the journey"
+    },
+    {
+      "start": 38.12,
+      "end": 41.36,
+      "text": "to Mars is full of obstacles."
+    },
+    {
+      "start": 42.1,
+      "end": 48.54,
+      "text": "The distance from Earth to Mars, even at its closest, is about 55 million kilometers."
+    },
+    {
+      "start": 50.1,
+      "end": 58.72,
+      "text": "During the six to nine month trip, astronauts are exposed to radiation, microgravity, and"
+    },
+    {
+      "start": 58.72,
+      "end": 60.94,
+      "text": "Psychological isolation"
+    },
+    {
+      "start": 61.72,
+      "end": 63.84,
+      "text": "For humans to live on Mars"
+    },
+    {
+      "start": 63.84,
+      "end": 67.06,
+      "text": "The supply of oxygen, water and food is essential"
+    },
+    {
+      "start": 67.06,
+      "end": 70.02,
+      "text": "In the future, a colony is envisioned"
+    },
+    {
+      "start": 70.02,
+      "end": 73.34,
+      "text": "In which water is extracted from underground"
+    },
+    {
+      "start": 73.34,
+      "end": 75.9,
+      "text": "And crops are grown in greenhouses"
+    },
+    {
+      "start": 76.72,
+      "end": 80.9,
+      "text": "Space exploration comes at an enormous cost"
+    },
+    {
+      "start": 81.76,
+      "end": 87.22,
+      "text": "Some argue that the budget should instead be used to solve problems on Earth"
+    },
+    {
+      "start": 88.72,
+      "end": 94.66,
+      "text": "But supporters argue that space, exploration create technological innovation"
+    },
+    {
+      "start": 94.66,
+      "end": 98.74,
+      "text": "and brings new solutions to Earth's problems as well."
+    },
+    {
+      "start": 100.72,
+      "end": 105.46,
+      "text": "Space will remain the last frontier for humanity."
+    },
+    {
+      "start": 107.72,
+      "end": 111.0,
+      "text": "The challenge of going, there is not only a matter of science."
+    },
+    {
+      "start": 113.72,
+      "end": 115.78,
+      "text": "It is also a philosophical question."
+    },
+    {
+      "start": 117.72,
+      "end": 120.34,
+      "text": "How far can humanity go?"
+    }
+  ]
+}

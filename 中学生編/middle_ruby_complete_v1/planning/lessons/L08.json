@@ -1,0 +1,571 @@
+{
+  "lesson": 8,
+  "source_config": "中学生編/mio_video_l2_l10_sentence_v2/L8/planning/lesson.json",
+  "title_en": "Lesson 8  Tomorrow's Class Trip",
+  "title_ja": "明日は遠足",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 8,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Tomorrow, our class will go on a trip to a mountain.",
+      "source_ja": "明日、クラスのみんなで山へ遠足に行きます。",
+      "display_ja": "明日、クラスのみんなで山へ遠足に行きます。",
+      "corrected_translation": false,
+      "mixed": "明日、クラスのみんなで mountain へ遠足に行きます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "明日、クラスのみんなで ",
+          "parts": [
+            {
+              "text": "明日",
+              "ruby": "あした"
+            },
+            {
+              "text": "、クラスのみんなで",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "mountain",
+          "ruby": "山"
+        },
+        {
+          "type": "ja",
+          "text": " へ遠足に行きます。",
+          "parts": [
+            {
+              "text": "へ",
+              "ruby": ""
+            },
+            {
+              "text": "遠足",
+              "ruby": "えんそく"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "行",
+              "ruby": "い"
+            },
+            {
+              "text": "きます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "mountain",
+          "canonical_word": "mountain",
+          "meaning": "山"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "mountain",
+          "reading": "山",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "mountain",
+          "canonical_meaning": "山"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "english": "We will climb to the top and walk in the forest.",
+      "source_ja": "頂上まで登り、森の中を歩く予定です。",
+      "display_ja": "頂上まで登り、森の中を歩く予定です。",
+      "corrected_translation": false,
+      "mixed": "頂上まで climb して、森の中を歩く予定です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "頂上まで ",
+          "parts": [
+            {
+              "text": "頂上",
+              "ruby": "ちょうじょう"
+            },
+            {
+              "text": "まで",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "climb",
+          "ruby": "登る"
+        },
+        {
+          "type": "ja",
+          "text": " して、森の中を歩く予定です。",
+          "parts": [
+            {
+              "text": "して、",
+              "ruby": ""
+            },
+            {
+              "text": "森",
+              "ruby": "もり"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "中",
+              "ruby": "なか"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "歩",
+              "ruby": "ある"
+            },
+            {
+              "text": "く",
+              "ruby": ""
+            },
+            {
+              "text": "予定",
+              "ruby": "よてい"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "climb",
+          "canonical_word": "climb",
+          "meaning": "登る"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "climb",
+          "reading": "登る",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "climb",
+          "canonical_meaning": "登る"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "I will take my lunch and a hat.",
+      "source_ja": "わたしは、お弁当と帽子を持っていくつもりです。",
+      "display_ja": "わたしは、お弁当と帽子を持っていくつもりです。",
+      "corrected_translation": false,
+      "mixed": "わたしは、お弁当と hat を持っていくつもりです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしは、お弁当と ",
+          "parts": [
+            {
+              "text": "わたしは、お",
+              "ruby": ""
+            },
+            {
+              "text": "弁当",
+              "ruby": "べんとう"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "hat",
+          "ruby": "帽子"
+        },
+        {
+          "type": "ja",
+          "text": " を持っていくつもりです。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "持",
+              "ruby": "も"
+            },
+            {
+              "text": "っていくつもりです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "hat",
+          "canonical_word": "hat",
+          "meaning": "帽子"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "hat",
+          "reading": "帽子",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "hat",
+          "canonical_meaning": "帽子"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "“Will it rain tomorrow?”",
+      "source_ja": "「明日は雨が降るかな？」",
+      "display_ja": "「明日は雨が降るかな？」",
+      "corrected_translation": false,
+      "mixed": "「明日は雨が降るかな？」",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「明日は雨が降るかな？」",
+          "parts": [
+            {
+              "text": "「",
+              "ruby": ""
+            },
+            {
+              "text": "明日",
+              "ruby": "あした"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "雨",
+              "ruby": "あめ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "降",
+              "ruby": "ふ"
+            },
+            {
+              "text": "るかな？」",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 5,
+      "english": "asked my sister with worry.",
+      "source_ja": "と妹が心配そうに聞きました。",
+      "display_ja": "と妹が心配そうに聞きました。",
+      "corrected_translation": false,
+      "mixed": "と妹が心配そうに聞きました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "と妹が心配そうに聞きました。",
+          "parts": [
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "心配",
+              "ruby": "しんぱい"
+            },
+            {
+              "text": "そうに",
+              "ruby": ""
+            },
+            {
+              "text": "聞",
+              "ruby": "き"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 6,
+      "english": "My mother looked up at the sky and said, “The weather will be fine.”",
+      "source_ja": "母は空を見上げて、「きっと晴れるよ」と答えました。",
+      "display_ja": "母は空を見上げて、「きっと晴れるよ」と答えました。",
+      "corrected_translation": false,
+      "mixed": "母は空を見上げて、「weather は fine になるよ」と答えました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "母は空を見上げて、「",
+          "parts": [
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "空",
+              "ruby": "そら"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "見上",
+              "ruby": "みあ"
+            },
+            {
+              "text": "げて、「",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "weather",
+          "ruby": "天気"
+        },
+        {
+          "type": "ja",
+          "text": " は ",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "fine",
+          "ruby": "晴れた"
+        },
+        {
+          "type": "ja",
+          "text": " になるよ」と答えました。",
+          "parts": [
+            {
+              "text": "になるよ」と",
+              "ruby": ""
+            },
+            {
+              "text": "答",
+              "ruby": "こた"
+            },
+            {
+              "text": "えました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "weather",
+          "canonical_word": "weather",
+          "meaning": "天気"
+        },
+        {
+          "english": "fine",
+          "canonical_word": "fine",
+          "meaning": "晴れた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "weather",
+          "reading": "天気",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "weather",
+          "canonical_meaning": "天気"
+        },
+        {
+          "english": "fine",
+          "reading": "晴れた",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "fine",
+          "canonical_meaning": "晴れた"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "But just in case, I will not forget my umbrella.",
+      "source_ja": "でも、念のため傘も忘れないようにします。",
+      "display_ja": "でも、念のため傘も忘れないようにします。",
+      "corrected_translation": false,
+      "mixed": "でも、念のため umbrella も忘れないようにします。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "でも、念のため ",
+          "parts": [
+            {
+              "text": "でも、",
+              "ruby": ""
+            },
+            {
+              "text": "念",
+              "ruby": "ねん"
+            },
+            {
+              "text": "のため",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "umbrella",
+          "ruby": "傘"
+        },
+        {
+          "type": "ja",
+          "text": " も忘れないようにします。",
+          "parts": [
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "忘",
+              "ruby": "わす"
+            },
+            {
+              "text": "れないようにします。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "umbrella",
+          "canonical_word": "umbrella",
+          "meaning": "傘"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "umbrella",
+          "reading": "傘",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "umbrella",
+          "canonical_meaning": "傘"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "Tomorrow will be a fun day.",
+      "source_ja": "明日はきっと楽しい一日になるでしょう。",
+      "display_ja": "明日はきっと楽しい一日になるでしょう。",
+      "corrected_translation": false,
+      "mixed": "明日はきっと fun な一日になるでしょう。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "明日はきっと ",
+          "parts": [
+            {
+              "text": "明日",
+              "ruby": "あした"
+            },
+            {
+              "text": "はきっと",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "fun",
+          "ruby": "楽しい"
+        },
+        {
+          "type": "ja",
+          "text": " な一日になるでしょう。",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "一日",
+              "ruby": "いちにち"
+            },
+            {
+              "text": "になるでしょう。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "fun",
+          "canonical_word": "fun",
+          "meaning": "楽しい"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "fun",
+          "reading": "楽しい",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "fun",
+          "canonical_meaning": "楽しい"
+        }
+      ]
+    }
+  ]
+}

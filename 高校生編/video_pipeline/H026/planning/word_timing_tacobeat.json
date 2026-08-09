@@ -1,0 +1,928 @@
+{
+  "lesson": "H026",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h026_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H026/candidate1-full.mp3",
+  "source_audio_sha256": "7675281e10846baa3056924c28e3956e6f05f365785eae91f731600ccabd4596",
+  "bpm": 74.4,
+  "exact_word_match": true,
+  "word_count": 136,
+  "line_count": 12,
+  "first_word_start": 11.222,
+  "last_word_end": 108.52,
+  "lines": [
+    {
+      "line": 1,
+      "english": "If I were a bird, I would fly freely wherever I wished.",
+      "word_timings": [
+        {
+          "word": "If",
+          "display_index": 0,
+          "start": 11.222,
+          "end": 11.742
+        },
+        {
+          "word": "I",
+          "display_index": 1,
+          "start": 11.742,
+          "end": 12.162
+        },
+        {
+          "word": "were",
+          "display_index": 2,
+          "start": 12.162,
+          "end": 12.832
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 12.832,
+          "end": 13.002
+        },
+        {
+          "word": "bird,",
+          "display_index": 4,
+          "start": 13.002,
+          "end": 14.251
+        },
+        {
+          "word": "I",
+          "display_index": 5,
+          "start": 14.251,
+          "end": 14.343
+        },
+        {
+          "word": "would",
+          "display_index": 6,
+          "start": 14.343,
+          "end": 14.563
+        },
+        {
+          "word": "fly",
+          "display_index": 7,
+          "start": 14.563,
+          "end": 15.003
+        },
+        {
+          "word": "freely",
+          "display_index": 8,
+          "start": 15.003,
+          "end": 16.183
+        },
+        {
+          "word": "wherever",
+          "display_index": 9,
+          "start": 16.183,
+          "end": 17.389
+        },
+        {
+          "word": "I",
+          "display_index": 10,
+          "start": 17.389,
+          "end": 17.603
+        },
+        {
+          "word": "wished.",
+          "display_index": 11,
+          "start": 17.603,
+          "end": 19.004
+        }
+      ],
+      "start": 11.222,
+      "end": 19.004
+    },
+    {
+      "line": 2,
+      "english": "In the morning I would pass through the forest, at noon I would cross the valley, and at night I would sleep beside the stars.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 19.304,
+          "end": 19.448
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 19.448,
+          "end": 19.624
+        },
+        {
+          "word": "morning",
+          "display_index": 2,
+          "start": 19.624,
+          "end": 20.483
+        },
+        {
+          "word": "I",
+          "display_index": 3,
+          "start": 20.483,
+          "end": 20.684
+        },
+        {
+          "word": "would",
+          "display_index": 4,
+          "start": 20.684,
+          "end": 21.044
+        },
+        {
+          "word": "pass",
+          "display_index": 5,
+          "start": 21.044,
+          "end": 21.784
+        },
+        {
+          "word": "through",
+          "display_index": 6,
+          "start": 21.784,
+          "end": 22.481
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 22.481,
+          "end": 22.604
+        },
+        {
+          "word": "forest,",
+          "display_index": 8,
+          "start": 22.604,
+          "end": 25.145
+        },
+        {
+          "word": "at",
+          "display_index": 9,
+          "start": 25.145,
+          "end": 25.305
+        },
+        {
+          "word": "noon",
+          "display_index": 10,
+          "start": 25.305,
+          "end": 25.845
+        },
+        {
+          "word": "I",
+          "display_index": 11,
+          "start": 25.845,
+          "end": 25.925
+        },
+        {
+          "word": "would",
+          "display_index": 12,
+          "start": 25.865,
+          "end": 26.065
+        },
+        {
+          "word": "cross",
+          "display_index": 13,
+          "start": 26.065,
+          "end": 26.949
+        },
+        {
+          "word": "the",
+          "display_index": 14,
+          "start": 26.949,
+          "end": 27.305
+        },
+        {
+          "word": "valley,",
+          "display_index": 15,
+          "start": 27.305,
+          "end": 29.025
+        },
+        {
+          "word": "and",
+          "display_index": 16,
+          "start": 29.025,
+          "end": 29.245
+        },
+        {
+          "word": "at",
+          "display_index": 17,
+          "start": 29.245,
+          "end": 29.405
+        },
+        {
+          "word": "night",
+          "display_index": 18,
+          "start": 29.405,
+          "end": 30.652
+        },
+        {
+          "word": "I",
+          "display_index": 19,
+          "start": 30.652,
+          "end": 30.766
+        },
+        {
+          "word": "would",
+          "display_index": 20,
+          "start": 30.766,
+          "end": 31.026
+        },
+        {
+          "word": "sleep",
+          "display_index": 21,
+          "start": 31.026,
+          "end": 31.446
+        },
+        {
+          "word": "beside",
+          "display_index": 22,
+          "start": 31.446,
+          "end": 32.244
+        },
+        {
+          "word": "the",
+          "display_index": 23,
+          "start": 32.244,
+          "end": 32.406
+        },
+        {
+          "word": "stars.",
+          "display_index": 24,
+          "start": 32.406,
+          "end": 33.906
+        }
+      ],
+      "start": 19.304,
+      "end": 33.906
+    },
+    {
+      "line": 3,
+      "english": "If I had wings, I would soar above the clouds.",
+      "word_timings": [
+        {
+          "word": "If",
+          "display_index": 0,
+          "start": 38.347,
+          "end": 38.528
+        },
+        {
+          "word": "I",
+          "display_index": 1,
+          "start": 38.528,
+          "end": 38.727
+        },
+        {
+          "word": "had",
+          "display_index": 2,
+          "start": 38.727,
+          "end": 39.087
+        },
+        {
+          "word": "wings,",
+          "display_index": 3,
+          "start": 39.087,
+          "end": 40.364
+        },
+        {
+          "word": "I",
+          "display_index": 4,
+          "start": 40.364,
+          "end": 40.444
+        },
+        {
+          "word": "would",
+          "display_index": 5,
+          "start": 40.427,
+          "end": 40.708
+        },
+        {
+          "word": "soar",
+          "display_index": 6,
+          "start": 40.708,
+          "end": 41.208
+        },
+        {
+          "word": "above",
+          "display_index": 7,
+          "start": 41.208,
+          "end": 41.901
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 41.901,
+          "end": 42.048
+        },
+        {
+          "word": "clouds.",
+          "display_index": 9,
+          "start": 42.048,
+          "end": 43.454
+        }
+      ],
+      "start": 38.347,
+      "end": 43.454
+    },
+    {
+      "line": 4,
+      "english": "I would not feel constrained by the distance to faraway cities.",
+      "word_timings": [
+        {
+          "word": "I",
+          "display_index": 0,
+          "start": 43.754,
+          "end": 43.888
+        },
+        {
+          "word": "would",
+          "display_index": 1,
+          "start": 43.888,
+          "end": 44.148
+        },
+        {
+          "word": "not",
+          "display_index": 2,
+          "start": 44.148,
+          "end": 44.508
+        },
+        {
+          "word": "feel",
+          "display_index": 3,
+          "start": 44.508,
+          "end": 44.908
+        },
+        {
+          "word": "constrained",
+          "display_index": 4,
+          "start": 44.908,
+          "end": 45.969
+        },
+        {
+          "word": "by",
+          "display_index": 5,
+          "start": 45.969,
+          "end": 46.151
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 46.151,
+          "end": 46.349
+        },
+        {
+          "word": "distance",
+          "display_index": 7,
+          "start": 46.349,
+          "end": 47.705
+        },
+        {
+          "word": "to",
+          "display_index": 8,
+          "start": 47.705,
+          "end": 47.949
+        },
+        {
+          "word": "faraway",
+          "display_index": 9,
+          "start": 47.949,
+          "end": 48.969
+        },
+        {
+          "word": "cities.",
+          "display_index": 10,
+          "start": 48.969,
+          "end": 50.469
+        }
+      ],
+      "start": 43.754,
+      "end": 50.469
+    },
+    {
+      "line": 5,
+      "english": "If I were not bound to the ground, I would surely travel wherever the wind carried me.",
+      "word_timings": [
+        {
+          "word": "If",
+          "display_index": 0,
+          "start": 51.029,
+          "end": 51.204
+        },
+        {
+          "word": "I",
+          "display_index": 1,
+          "start": 51.204,
+          "end": 51.39
+        },
+        {
+          "word": "were",
+          "display_index": 2,
+          "start": 51.39,
+          "end": 51.61
+        },
+        {
+          "word": "not",
+          "display_index": 3,
+          "start": 51.61,
+          "end": 51.99
+        },
+        {
+          "word": "bound",
+          "display_index": 4,
+          "start": 51.99,
+          "end": 52.688
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 52.688,
+          "end": 52.992
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 52.992,
+          "end": 53.15
+        },
+        {
+          "word": "ground,",
+          "display_index": 7,
+          "start": 53.15,
+          "end": 54.034
+        },
+        {
+          "word": "I",
+          "display_index": 8,
+          "start": 54.034,
+          "end": 54.17
+        },
+        {
+          "word": "would",
+          "display_index": 9,
+          "start": 54.17,
+          "end": 54.39
+        },
+        {
+          "word": "surely",
+          "display_index": 10,
+          "start": 54.39,
+          "end": 54.97
+        },
+        {
+          "word": "travel",
+          "display_index": 11,
+          "start": 54.97,
+          "end": 55.83
+        },
+        {
+          "word": "wherever",
+          "display_index": 12,
+          "start": 55.83,
+          "end": 56.445
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 56.445,
+          "end": 56.65
+        },
+        {
+          "word": "wind",
+          "display_index": 14,
+          "start": 56.65,
+          "end": 57.271
+        },
+        {
+          "word": "carried",
+          "display_index": 15,
+          "start": 57.271,
+          "end": 58.251
+        },
+        {
+          "word": "me.",
+          "display_index": 16,
+          "start": 58.251,
+          "end": 59.151
+        }
+      ],
+      "start": 51.029,
+      "end": 59.151
+    },
+    {
+      "line": 6,
+      "english": "Yet, now I stand on the Earth.",
+      "word_timings": [
+        {
+          "word": "Yet,",
+          "display_index": 0,
+          "start": 59.451,
+          "end": 59.651
+        },
+        {
+          "word": "now",
+          "display_index": 1,
+          "start": 59.651,
+          "end": 59.919
+        },
+        {
+          "word": "I",
+          "display_index": 2,
+          "start": 59.919,
+          "end": 59.999
+        },
+        {
+          "word": "stand",
+          "display_index": 3,
+          "start": 59.991,
+          "end": 60.791
+        },
+        {
+          "word": "on",
+          "display_index": 4,
+          "start": 60.791,
+          "end": 61.323
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 61.323,
+          "end": 61.551
+        },
+        {
+          "word": "Earth.",
+          "display_index": 6,
+          "start": 61.551,
+          "end": 63.051
+        }
+      ],
+      "start": 59.451,
+      "end": 63.051
+    },
+    {
+      "line": 7,
+      "english": "I am not a bird.",
+      "word_timings": [
+        {
+          "word": "I",
+          "display_index": 0,
+          "start": 66.518,
+          "end": 66.912
+        },
+        {
+          "word": "am",
+          "display_index": 1,
+          "start": 66.912,
+          "end": 67.292
+        },
+        {
+          "word": "not",
+          "display_index": 2,
+          "start": 67.292,
+          "end": 67.556
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 67.556,
+          "end": 67.893
+        },
+        {
+          "word": "bird.",
+          "display_index": 4,
+          "start": 67.893,
+          "end": 69.024
+        }
+      ],
+      "start": 66.518,
+      "end": 69.024
+    },
+    {
+      "line": 8,
+      "english": "I can only imagine.",
+      "word_timings": [
+        {
+          "word": "I",
+          "display_index": 0,
+          "start": 69.324,
+          "end": 69.493
+        },
+        {
+          "word": "can",
+          "display_index": 1,
+          "start": 69.493,
+          "end": 69.853
+        },
+        {
+          "word": "only",
+          "display_index": 2,
+          "start": 69.853,
+          "end": 70.393
+        },
+        {
+          "word": "imagine.",
+          "display_index": 3,
+          "start": 70.393,
+          "end": 71.353
+        }
+      ],
+      "start": 69.324,
+      "end": 71.353
+    },
+    {
+      "line": 9,
+      "english": "Still, to imagine is a small form of freedom.",
+      "word_timings": [
+        {
+          "word": "Still,",
+          "display_index": 0,
+          "start": 71.653,
+          "end": 72.496
+        },
+        {
+          "word": "to",
+          "display_index": 1,
+          "start": 72.496,
+          "end": 72.793
+        },
+        {
+          "word": "imagine",
+          "display_index": 2,
+          "start": 72.793,
+          "end": 74.184
+        },
+        {
+          "word": "is",
+          "display_index": 3,
+          "start": 74.184,
+          "end": 74.381
+        },
+        {
+          "word": "a",
+          "display_index": 4,
+          "start": 74.381,
+          "end": 74.494
+        },
+        {
+          "word": "small",
+          "display_index": 5,
+          "start": 74.494,
+          "end": 75.114
+        },
+        {
+          "word": "form",
+          "display_index": 6,
+          "start": 75.114,
+          "end": 75.754
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 75.754,
+          "end": 75.934
+        },
+        {
+          "word": "freedom.",
+          "display_index": 8,
+          "start": 75.934,
+          "end": 77.114
+        }
+      ],
+      "start": 71.653,
+      "end": 77.114
+    },
+    {
+      "line": 10,
+      "english": "Looking up at the evening sky, I think: if I were a bird, how deeply would I admire this sky?",
+      "word_timings": [
+        {
+          "word": "Looking",
+          "display_index": 0,
+          "start": 77.414,
+          "end": 77.894
+        },
+        {
+          "word": "up",
+          "display_index": 1,
+          "start": 77.894,
+          "end": 78.234
+        },
+        {
+          "word": "at",
+          "display_index": 2,
+          "start": 78.234,
+          "end": 78.389
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 78.389,
+          "end": 78.635
+        },
+        {
+          "word": "evening",
+          "display_index": 4,
+          "start": 78.635,
+          "end": 79.115
+        },
+        {
+          "word": "sky,",
+          "display_index": 5,
+          "start": 79.115,
+          "end": 80.04
+        },
+        {
+          "word": "I",
+          "display_index": 6,
+          "start": 80.04,
+          "end": 80.155
+        },
+        {
+          "word": "think:",
+          "display_index": 7,
+          "start": 80.155,
+          "end": 80.855
+        },
+        {
+          "word": "if",
+          "display_index": 8,
+          "start": 80.855,
+          "end": 81.435
+        },
+        {
+          "word": "I",
+          "display_index": 9,
+          "start": 81.435,
+          "end": 81.815
+        },
+        {
+          "word": "were",
+          "display_index": 10,
+          "start": 81.815,
+          "end": 82.233
+        },
+        {
+          "word": "a",
+          "display_index": 11,
+          "start": 82.233,
+          "end": 82.415
+        },
+        {
+          "word": "bird,",
+          "display_index": 12,
+          "start": 82.415,
+          "end": 83.916
+        },
+        {
+          "word": "how",
+          "display_index": 13,
+          "start": 83.916,
+          "end": 84.276
+        },
+        {
+          "word": "deeply",
+          "display_index": 14,
+          "start": 84.276,
+          "end": 85.756
+        },
+        {
+          "word": "would",
+          "display_index": 15,
+          "start": 85.756,
+          "end": 86.176
+        },
+        {
+          "word": "I",
+          "display_index": 16,
+          "start": 86.176,
+          "end": 86.276
+        },
+        {
+          "word": "admire",
+          "display_index": 17,
+          "start": 86.276,
+          "end": 86.956
+        },
+        {
+          "word": "this",
+          "display_index": 18,
+          "start": 86.956,
+          "end": 87.256
+        },
+        {
+          "word": "sky?",
+          "display_index": 19,
+          "start": 87.256,
+          "end": 88.756
+        }
+      ],
+      "start": 77.414,
+      "end": 88.756
+    },
+    {
+      "line": 11,
+      "english": "Standing on the ground, I still look up at the same sky.",
+      "word_timings": [
+        {
+          "word": "Standing",
+          "display_index": 0,
+          "start": 90.717,
+          "end": 92.537
+        },
+        {
+          "word": "on",
+          "display_index": 1,
+          "start": 92.537,
+          "end": 93.644
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 93.644,
+          "end": 93.817
+        },
+        {
+          "word": "ground,",
+          "display_index": 3,
+          "start": 93.817,
+          "end": 96.256
+        },
+        {
+          "word": "I",
+          "display_index": 4,
+          "start": 96.256,
+          "end": 96.338
+        },
+        {
+          "word": "still",
+          "display_index": 5,
+          "start": 96.338,
+          "end": 96.878
+        },
+        {
+          "word": "look",
+          "display_index": 6,
+          "start": 96.878,
+          "end": 97.378
+        },
+        {
+          "word": "up",
+          "display_index": 7,
+          "start": 97.378,
+          "end": 98.238
+        },
+        {
+          "word": "at",
+          "display_index": 8,
+          "start": 98.238,
+          "end": 98.504
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 98.504,
+          "end": 98.918
+        },
+        {
+          "word": "same",
+          "display_index": 10,
+          "start": 98.918,
+          "end": 100.099
+        },
+        {
+          "word": "sky.",
+          "display_index": 11,
+          "start": 100.099,
+          "end": 101.599
+        }
+      ],
+      "start": 90.717,
+      "end": 101.599
+    },
+    {
+      "line": 12,
+      "english": "Imagination embraces me instead.",
+      "word_timings": [
+        {
+          "word": "Imagination",
+          "display_index": 0,
+          "start": 102.859,
+          "end": 105.36
+        },
+        {
+          "word": "embraces",
+          "display_index": 1,
+          "start": 105.36,
+          "end": 106.44
+        },
+        {
+          "word": "me",
+          "display_index": 2,
+          "start": 106.44,
+          "end": 107.02
+        },
+        {
+          "word": "instead.",
+          "display_index": 3,
+          "start": 107.02,
+          "end": 108.52
+        }
+      ],
+      "start": 102.859,
+      "end": 108.52
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

@@ -1,0 +1,171 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H090.md",
+  "audio": "高校生編/suno_ready/generated/audio/H090/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 177.56,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0051,
+  "expected_words": 197,
+  "transcribed_words": 198,
+  "matched_words": 196,
+  "coverage": 0.9949,
+  "precision": 0.9899,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 196,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 118,
+      "length": 1,
+      "words": [
+        "sought"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 118,
+      "actual_start": 118,
+      "expected": [
+        "sought"
+      ],
+      "actual": [
+        "solved"
+      ],
+      "actual_confidence": 0.7265,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 145,
+      "actual_start": 145,
+      "expected": [],
+      "actual": [
+        "a"
+      ],
+      "actual_confidence": 0.9614
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "Scientific inquiry begins with a question Why is the sky blue? Why does metal conduct heat easily? Within everyday doubt lies the seed of science A scientist first forms a hypothesis Then an experiment is designed to test it The conditions are carefully determined And the equipment is prepared In the experiment, the factor that could affect the result is controlled as much as possible. Only one factor is changed while the rest are kept constant. This allows the researcher to distinguish whether the result was caused by that factor. The data obtained are analyzed and compared with the hypothesis If the result supports the hypothesis further Testing follows If the hypothesis is rejected, a new explanation is solved The heart of the scientific method is that any conclusion is temporary No matter how established a theory may be There is always the possibility that a new evidence will rewrite it It is this repeated process that has driven the progress of science From biological research to electronic engineering, each component is carefully examined And the properties of each compound are described in an elaborate way Science is the work of an intelligence That never ceases to doubt",
+  "segments": [
+    {
+      "start": 12.62,
+      "end": 17.54,
+      "text": "Scientific inquiry begins with a question"
+    },
+    {
+      "start": 17.54,
+      "end": 22.92,
+      "text": "Why is the sky blue?"
+    },
+    {
+      "start": 24.9,
+      "end": 29.48,
+      "text": "Why does metal conduct heat easily?"
+    },
+    {
+      "start": 30.44,
+      "end": 34.4,
+      "text": "Within everyday doubt lies the seed of science"
+    },
+    {
+      "start": 35.58,
+      "end": 39.26,
+      "text": "A scientist first forms a hypothesis"
+    },
+    {
+      "start": 39.26,
+      "end": 42.92,
+      "text": "Then an experiment is designed to test it"
+    },
+    {
+      "start": 42.92,
+      "end": 45.66,
+      "text": "The conditions are carefully determined"
+    },
+    {
+      "start": 45.66,
+      "end": 48.08,
+      "text": "And the equipment is prepared"
+    },
+    {
+      "start": 51.72,
+      "end": 59.18,
+      "text": "In the experiment, the factor that could affect the result is controlled as much as possible."
+    },
+    {
+      "start": 59.62,
+      "end": 65.46,
+      "text": "Only one factor is changed while the rest are kept constant."
+    },
+    {
+      "start": 65.94,
+      "end": 76.0,
+      "text": "This allows the researcher to distinguish whether the result was caused by that factor."
+    },
+    {
+      "start": 80.8,
+      "end": 86.5,
+      "text": "The data obtained are analyzed and compared with the hypothesis"
+    },
+    {
+      "start": 86.5,
+      "end": 90.46,
+      "text": "If the result supports the hypothesis further"
+    },
+    {
+      "start": 91.0,
+      "end": 92.92,
+      "text": "Testing follows"
+    },
+    {
+      "start": 92.92,
+      "end": 98.38,
+      "text": "If the hypothesis is rejected, a new explanation is solved"
+    },
+    {
+      "start": 98.38,
+      "end": 104.26,
+      "text": "The heart of the scientific method is that any conclusion is temporary"
+    },
+    {
+      "start": 104.26,
+      "end": 110.44,
+      "text": "No matter how established a theory may be"
+    },
+    {
+      "start": 110.44,
+      "end": 118.96,
+      "text": "There is always the possibility that a new evidence will rewrite it"
+    },
+    {
+      "start": 118.96,
+      "end": 127.22,
+      "text": "It is this repeated process that has driven the progress of science"
+    },
+    {
+      "start": 130.84,
+      "end": 141.52,
+      "text": "From biological research to electronic engineering, each component is carefully examined"
+    },
+    {
+      "start": 142.22,
+      "end": 150.22,
+      "text": "And the properties of each compound are described in an elaborate way"
+    },
+    {
+      "start": 151.78,
+      "end": 160.82,
+      "text": "Science is the work of an intelligence That never ceases to doubt"
+    }
+  ]
+}

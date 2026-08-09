@@ -1,0 +1,59 @@
+{
+  "lesson": "H049",
+  "title": "気候変動と国際協力",
+  "style": "画風01・光彩のある劇場アニメ背景を基調にした科学・国際協力ドキュメンタリー",
+  "setting": "産業革命期の工業都市から現代の観測所、沿岸・森林・農地、1997年京都、2015年パリ、再生可能エネルギー施設、国際協力の現場へ時系列に進む",
+  "continuity": {
+    "student": "H15基準の同じ17歳男子高校生。短い黒髪、紺の制服コート、灰色のマフラー、黒いリュック。現代の観測・対策・結末に登場",
+    "scientist": "40歳前後の女性気候科学者。濃紺のジャケット、低い位置で束ねた黒髪。観測・国際会議・協力場面をつなぐ",
+    "planetary_scale": "一つの地球儀や宇宙からの地球だけで済ませず、同じ大気・海・生態系を具体的な土地と人間の作業で示す",
+    "palette": "過去は煤けた灰褐色、現在の影は群青、災害場面は抑えた土色、協力と対策は自然な琥珀色と青緑"
+  },
+  "sequence": [
+    "industrial revolution以降に急速に変化するclimate",
+    "産業革命前基準に対する世界平均気温約1.1度の上昇",
+    "fossil fuel燃焼で生じるcarbon dioxide emission",
+    "deforestationとagricultural practices",
+    "海面上昇・洪水・干ばつ・強い熱帯低気圧などの影響",
+    "ecosystemsの破壊とspeciesのextinction risk",
+    "1997年Kyoto Protocolと先進国等の差のある削減目標",
+    "2015年Paris Agreementとwell below 2度・1.5度を目指す共通方向",
+    "renewable energyへのinvestment",
+    "carsとfactoriesのemissions regulation",
+    "一国だけでは解決できない越境するclimate change",
+    "international cooperation",
+    "世代を超えたsustainable societyというshared goal"
+  ],
+  "accuracy": [
+    "約1.1度はIPCC AR6の2011〜2020年平均が1850〜1900年より高いという比較として扱い、現在の単一年の値や全地点一様の上昇として描かない",
+    "人間活動、主に温室効果ガス排出が地球温暖化を引き起こしたというIPCC評価に沿い、一本の煙突だけを唯一の原因にしない",
+    "森林減少と農業は土地利用変化や温室効果ガス排出に関わる要因として描き、農家個人を悪者にしない",
+    "洪水・干ばつ・沿岸浸水・強い嵐は地域差と複合要因のあるリスクとして描き、すべての台風が一様に強くなったと断定する図を作らない",
+    "Kyoto Protocolは1997年採択、拘束的な排出削減目標はAnnex Iの先進国等を主対象にした。全世界へ同一目標を割り当てる絵にしない",
+    "Paris Agreementは気温上昇を産業革命前よりwell below 2度に保ち、1.5度に抑える努力を追求する枠組み。1.5度以内を自動的に保証した絵にしない",
+    "renewable energyは発電設備だけでなく送電網・蓄電・保守・投資判断まで描き、導入が単独で全問題を即時解決する表現にしない",
+    "国際協力は外交文書だけでなく観測データ、技術、資金、防災、適応を複数地域で分担する姿として描く"
+  ],
+  "fact_check_sources": [
+    "https://www.ipcc.ch/report/ar6/syr/summary-for-policymakers/",
+    "https://unfccc.int/files/press/backgrounders/application/pdf/fact_sheet_the_kyoto_protocol.pdf",
+    "https://www.unfccc.int/process-and-meetings/the-paris-agreement"
+  ],
+  "composition": {
+    "aspect_ratio": "16:9",
+    "subtitle_safe_area": "主要な顔、手、観測器、煙突、海岸線、動植物、条約文書、発電設備は画面下45%より上に置く",
+    "camera": "一ショットにつき一定方向の寄り、引き、静止のいずれか一つ",
+    "text": "読める条約名、国名、数値、グラフ軸、看板、ロゴを画像内に生成しない。1997・2015・1.1・1.5は正確な動画字幕だけで示す"
+  },
+  "avoid": [
+    "燃える地球、半分緑半分砂漠の地球、巨大温度計だけの抽象図、終末論、災害の見世物化",
+    "特定企業ロゴ、読める文字・数値、国旗だけの国際協力、空中UI、ホログラム、写真調、油彩、透かし",
+    "農業従事者や特定国を悪役にする表現、会議だけで温暖化が解決する表現、未来技術の過剰な楽観"
+  ],
+  "imagegen": {
+    "mode": "built-in ImageGen",
+    "planned_master_count": 13,
+    "selected_output_directory": "scenes/character_refs",
+    "video_scene_directory": "scenes/final_style01"
+  }
+}

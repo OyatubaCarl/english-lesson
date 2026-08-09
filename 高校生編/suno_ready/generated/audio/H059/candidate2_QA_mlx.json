@@ -1,0 +1,191 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H059.md",
+  "audio": "高校生編/suno_ready/generated/audio/H059/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 167.4,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0044,
+  "expected_words": 226,
+  "transcribed_words": 227,
+  "matched_words": 225,
+  "coverage": 0.9956,
+  "precision": 0.9912,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 225,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 206,
+      "length": 1,
+      "words": [
+        "a"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 206,
+      "actual_start": 206,
+      "expected": [
+        "a"
+      ],
+      "actual": [
+        "the"
+      ],
+      "actual_confidence": 0.7471,
+      "substitution_words": 1,
+      "has_content_word": false
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 215,
+      "actual_start": 215,
+      "expected": [],
+      "actual": [
+        "mind"
+      ],
+      "actual_confidence": 0.9985
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": false,
+  "transcript": "Psychology is the discipline that studies human behavior and the workings of the mind In a scientific way, at the end of the 19th century Wilhelm Wundt founded the world's first psychology laboratory at the University of Leipzig. That moment is regarded as the academic beginning of the field. In the early 20th century, the Russian Ivan Pavlov observed that a dog produced saliva when it saw food. He further discovered that when a bell was rung repeatedly before the food The dog began to produce saliva at the sound of the bell alone This is the phenomenon known as classical conditioning Sigmund Freud argued that our unconscious desires were what drove much of our behavior. His theory caused much debate, but his great contribution was to spread the concept of the unconscious into the world. In the 1960s, Stanley Milgram's experiments showed how ordinary people under the instruction of an authority figure could perform cruel actions. This became one of the most shocking findings of social psychology. Recent research has revealed how often our decisions are distorted by many biases. Though we wish to be rational We are easily turned aside by emotion and assumption Therapy for people experiencing anxiety or depression Has also been the great contribution of psychology The science of the mind Mind is a tool by which we may better understand ourselves",
+  "segments": [
+    {
+      "start": 5.74,
+      "end": 14.8,
+      "text": "Psychology is the discipline that studies human behavior and the workings of the mind"
+    },
+    {
+      "start": 14.8,
+      "end": 21.66,
+      "text": "In a scientific way, at the end of the 19th century"
+    },
+    {
+      "start": 21.66,
+      "end": 27.66,
+      "text": "Wilhelm Wundt founded the world's first psychology laboratory"
+    },
+    {
+      "start": 27.66,
+      "end": 31.98,
+      "text": "at the University of Leipzig."
+    },
+    {
+      "start": 34.52,
+      "end": 39.92,
+      "text": "That moment is regarded as the academic beginning of the field."
+    },
+    {
+      "start": 40.46,
+      "end": 47.02,
+      "text": "In the early 20th century, the Russian Ivan Pavlov observed"
+    },
+    {
+      "start": 47.02,
+      "end": 50.94,
+      "text": "that a dog produced saliva when it saw food."
+    },
+    {
+      "start": 52.24,
+      "end": 58.98,
+      "text": "He further discovered that when a bell was rung repeatedly before the food"
+    },
+    {
+      "start": 58.98,
+      "end": 65.12,
+      "text": "The dog began to produce saliva at the sound of the bell alone"
+    },
+    {
+      "start": 66.26,
+      "end": 71.84,
+      "text": "This is the phenomenon known as classical conditioning"
+    },
+    {
+      "start": 74.8,
+      "end": 80.18,
+      "text": "Sigmund Freud argued that our unconscious desires"
+    },
+    {
+      "start": 80.18,
+      "end": 85.0,
+      "text": "were what drove much of our behavior."
+    },
+    {
+      "start": 85.7,
+      "end": 89.32,
+      "text": "His theory caused much debate,"
+    },
+    {
+      "start": 89.86,
+      "end": 95.4,
+      "text": "but his great contribution was to spread the concept"
+    },
+    {
+      "start": 96.18,
+      "end": 100.18,
+      "text": "of the unconscious into the world."
+    },
+    {
+      "start": 101.34,
+      "end": 107.02,
+      "text": "In the 1960s, Stanley Milgram's experiments showed"
+    },
+    {
+      "start": 107.02,
+      "end": 112.68,
+      "text": "how ordinary people under the instruction of an authority figure"
+    },
+    {
+      "start": 112.68,
+      "end": 115.28,
+      "text": "could perform cruel actions."
+    },
+    {
+      "start": 115.82,
+      "end": 121.46,
+      "text": "This became one of the most shocking findings of social psychology."
+    },
+    {
+      "start": 121.88,
+      "end": 131.34,
+      "text": "Recent research has revealed how often our decisions are distorted by many biases."
+    },
+    {
+      "start": 133.2,
+      "end": 136.14,
+      "text": "Though we wish to be rational"
+    },
+    {
+      "start": 136.14,
+      "end": 142.1,
+      "text": "We are easily turned aside by emotion and assumption"
+    },
+    {
+      "start": 143.58,
+      "end": 149.88,
+      "text": "Therapy for people experiencing anxiety or depression"
+    },
+    {
+      "start": 149.88,
+      "end": 156.64,
+      "text": "Has also been the great contribution of psychology"
+    },
+    {
+      "start": 158.02,
+      "end": 161.08,
+      "text": "The science of the mind"
+    },
+    {
+      "start": 161.08,
+      "end": 167.4,
+      "text": "Mind is a tool by which we may better understand ourselves"
+    }
+  ]
+}

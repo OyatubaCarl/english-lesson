@@ -1,0 +1,52 @@
+{
+  "project": "Teacher Tacos English 中学生編 L1",
+  "generation_mode": "built-in image_gen",
+  "identity_sources": [
+    "../characters/family_sheet_raw_alpha_v2.png",
+    "../characters/friends_sheet_raw_alpha_v2.png"
+  ],
+  "references": [
+    {
+      "id": "ken",
+      "path": "references/ken_ref.png",
+      "role": "locked_character_reference",
+      "source_region": "friends sheet, left boy",
+      "locked_features": "brown tousled hair, teal hoodie, tan cargo pants, teal sneakers, brown backpack, warm watercolor proportions"
+    },
+    {
+      "id": "sister",
+      "path": "references/sister_ref.png",
+      "role": "locked_character_reference",
+      "source_region": "friends sheet, center girl",
+      "locked_features": "brown twin braids, cream cardigan, blue plaid skirt, navy socks, brown loafers"
+    },
+    {
+      "id": "brother",
+      "path": "references/brother_ref.png",
+      "role": "locked_character_reference",
+      "source_region": "friends sheet, right boy",
+      "locked_features": "spiky brown hair, navy-and-cream track jacket, navy track pants, energetic expression"
+    },
+    {
+      "id": "father",
+      "path": "references/father_ref.png",
+      "role": "locked_character_reference",
+      "source_region": "family sheet, father",
+      "locked_features": "short dark hair, rectangular glasses, beige cardigan, blue shirt, charcoal trousers"
+    },
+    {
+      "id": "mother",
+      "path": "references/mother_ref.png",
+      "role": "locked_character_reference",
+      "source_region": "family sheet, mother",
+      "locked_features": "short brown bob, white shirt, mustard apron, rolled blue jeans"
+    },
+    {
+      "id": "pochi",
+      "path": "references/pochi_ref.png",
+      "role": "locked_character_reference",
+      "source_region": "Codex built-in image generation",
+      "locked_features": "small cream-and-white fluffy puppy, huge round glossy black eyes, tiny black nose, curled fluffy tail, red collar"
+    }
+  ]
+}

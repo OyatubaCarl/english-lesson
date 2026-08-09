@@ -1,0 +1,835 @@
+{
+  "lesson": "H010",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h010_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H010/candidate1-full.mp3",
+  "source_audio_sha256": "b592017510e36f02d5275017a243f91629cead44f37dee8e50ce5168ee65c9f3",
+  "bpm": 102.0,
+  "exact_word_match": true,
+  "word_count": 143,
+  "line_count": 13,
+  "first_word_start": 0.84,
+  "last_word_end": 77.638,
+  "lines": [
+    {
+      "line": 1,
+      "english": "This time tomorrow, I will be sitting in a meeting room.",
+      "word_timings": [
+        {
+          "word": "This",
+          "start": 0.84,
+          "end": 1.14
+        },
+        {
+          "word": "time",
+          "start": 1.14,
+          "end": 2.0
+        },
+        {
+          "word": "tomorrow,",
+          "start": 2.0,
+          "end": 2.809
+        },
+        {
+          "word": "I",
+          "start": 2.809,
+          "end": 2.941
+        },
+        {
+          "word": "will",
+          "start": 2.941,
+          "end": 3.221
+        },
+        {
+          "word": "be",
+          "start": 3.221,
+          "end": 3.481
+        },
+        {
+          "word": "sitting",
+          "start": 3.481,
+          "end": 4.061
+        },
+        {
+          "word": "in",
+          "start": 4.061,
+          "end": 4.281
+        },
+        {
+          "word": "a",
+          "start": 4.281,
+          "end": 4.521
+        },
+        {
+          "word": "meeting",
+          "start": 4.521,
+          "end": 5.161
+        },
+        {
+          "word": "room.",
+          "start": 5.161,
+          "end": 5.621
+        }
+      ],
+      "start": 0.84,
+      "end": 5.621
+    },
+    {
+      "line": 2,
+      "english": "At ten I will be attending a lecture, and in the afternoon I will be finishing the new project file.",
+      "word_timings": [
+        {
+          "word": "At",
+          "start": 5.621,
+          "end": 5.821
+        },
+        {
+          "word": "ten",
+          "start": 5.821,
+          "end": 6.358
+        },
+        {
+          "word": "I",
+          "start": 6.358,
+          "end": 6.442
+        },
+        {
+          "word": "will",
+          "start": 6.442,
+          "end": 6.622
+        },
+        {
+          "word": "be",
+          "start": 6.622,
+          "end": 6.762
+        },
+        {
+          "word": "attending",
+          "start": 6.762,
+          "end": 7.355
+        },
+        {
+          "word": "a",
+          "start": 7.355,
+          "end": 7.502
+        },
+        {
+          "word": "lecture,",
+          "start": 7.502,
+          "end": 8.122
+        },
+        {
+          "word": "and",
+          "start": 8.122,
+          "end": 8.302
+        },
+        {
+          "word": "in",
+          "start": 8.302,
+          "end": 8.533
+        },
+        {
+          "word": "the",
+          "start": 8.533,
+          "end": 8.742
+        },
+        {
+          "word": "afternoon",
+          "start": 8.742,
+          "end": 10.185
+        },
+        {
+          "word": "I",
+          "start": 10.185,
+          "end": 10.265
+        },
+        {
+          "word": "will",
+          "start": 10.262,
+          "end": 10.423
+        },
+        {
+          "word": "be",
+          "start": 10.423,
+          "end": 10.543
+        },
+        {
+          "word": "finishing",
+          "start": 10.543,
+          "end": 11.336
+        },
+        {
+          "word": "the",
+          "start": 11.336,
+          "end": 11.583
+        },
+        {
+          "word": "new",
+          "start": 11.583,
+          "end": 12.003
+        },
+        {
+          "word": "project",
+          "start": 12.003,
+          "end": 12.603
+        },
+        {
+          "word": "file.",
+          "start": 12.603,
+          "end": 14.103
+        }
+      ],
+      "start": 5.621,
+      "end": 14.103
+    },
+    {
+      "line": 3,
+      "english": "I have waited a long time for this appointment.",
+      "word_timings": [
+        {
+          "word": "I",
+          "start": 14.446,
+          "end": 14.684
+        },
+        {
+          "word": "have",
+          "start": 14.684,
+          "end": 15.284
+        },
+        {
+          "word": "waited",
+          "start": 15.284,
+          "end": 16.041
+        },
+        {
+          "word": "a",
+          "start": 16.041,
+          "end": 16.164
+        },
+        {
+          "word": "long",
+          "start": 16.164,
+          "end": 16.444
+        },
+        {
+          "word": "time",
+          "start": 16.444,
+          "end": 17.304
+        },
+        {
+          "word": "for",
+          "start": 17.304,
+          "end": 17.624
+        },
+        {
+          "word": "this",
+          "start": 17.624,
+          "end": 18.284
+        },
+        {
+          "word": "appointment.",
+          "start": 18.284,
+          "end": 19.385
+        }
+      ],
+      "start": 14.446,
+      "end": 19.385
+    },
+    {
+      "line": 4,
+      "english": "For more than a month, I have been making steady progress.",
+      "word_timings": [
+        {
+          "word": "For",
+          "start": 19.685,
+          "end": 19.985
+        },
+        {
+          "word": "more",
+          "start": 19.985,
+          "end": 20.565
+        },
+        {
+          "word": "than",
+          "start": 20.565,
+          "end": 20.921
+        },
+        {
+          "word": "a",
+          "start": 20.921,
+          "end": 21.001
+        },
+        {
+          "word": "month,",
+          "start": 20.985,
+          "end": 21.605
+        },
+        {
+          "word": "I",
+          "start": 21.605,
+          "end": 21.725
+        },
+        {
+          "word": "have",
+          "start": 21.725,
+          "end": 22.045
+        },
+        {
+          "word": "been",
+          "start": 22.045,
+          "end": 22.325
+        },
+        {
+          "word": "making",
+          "start": 22.325,
+          "end": 22.846
+        },
+        {
+          "word": "steady",
+          "start": 22.846,
+          "end": 23.326
+        },
+        {
+          "word": "progress.",
+          "start": 23.326,
+          "end": 24.126
+        }
+      ],
+      "start": 19.685,
+      "end": 24.126
+    },
+    {
+      "line": 5,
+      "english": "On the same day my colleague will also be engaged in another task.",
+      "word_timings": [
+        {
+          "word": "On",
+          "start": 24.426,
+          "end": 24.591
+        },
+        {
+          "word": "the",
+          "start": 24.591,
+          "end": 24.671
+        },
+        {
+          "word": "same",
+          "start": 24.666,
+          "end": 24.986
+        },
+        {
+          "word": "day",
+          "start": 24.986,
+          "end": 25.454
+        },
+        {
+          "word": "my",
+          "start": 25.454,
+          "end": 25.706
+        },
+        {
+          "word": "colleague",
+          "start": 25.706,
+          "end": 26.326
+        },
+        {
+          "word": "will",
+          "start": 26.326,
+          "end": 26.546
+        },
+        {
+          "word": "also",
+          "start": 26.546,
+          "end": 27.027
+        },
+        {
+          "word": "be",
+          "start": 27.027,
+          "end": 27.307
+        },
+        {
+          "word": "engaged",
+          "start": 27.307,
+          "end": 28.007
+        },
+        {
+          "word": "in",
+          "start": 28.007,
+          "end": 28.127
+        },
+        {
+          "word": "another",
+          "start": 28.127,
+          "end": 28.627
+        },
+        {
+          "word": "task.",
+          "start": 28.627,
+          "end": 29.427
+        }
+      ],
+      "start": 24.426,
+      "end": 29.427
+    },
+    {
+      "line": 6,
+      "english": "After lunch, I will probably move on to the afternoon meeting.",
+      "word_timings": [
+        {
+          "word": "After",
+          "start": 29.467,
+          "end": 29.847
+        },
+        {
+          "word": "lunch,",
+          "start": 29.847,
+          "end": 30.28
+        },
+        {
+          "word": "I",
+          "start": 30.28,
+          "end": 30.407
+        },
+        {
+          "word": "will",
+          "start": 30.407,
+          "end": 30.547
+        },
+        {
+          "word": "probably",
+          "start": 30.547,
+          "end": 31.148
+        },
+        {
+          "word": "move",
+          "start": 31.148,
+          "end": 31.608
+        },
+        {
+          "word": "on",
+          "start": 31.608,
+          "end": 32.004
+        },
+        {
+          "word": "to",
+          "start": 32.004,
+          "end": 32.208
+        },
+        {
+          "word": "the",
+          "start": 32.208,
+          "end": 32.428
+        },
+        {
+          "word": "afternoon",
+          "start": 32.428,
+          "end": 33.068
+        },
+        {
+          "word": "meeting.",
+          "start": 33.068,
+          "end": 33.808
+        }
+      ],
+      "start": 29.467,
+      "end": 33.808
+    },
+    {
+      "line": 7,
+      "english": "By evening I will nearly complete the report.",
+      "word_timings": [
+        {
+          "word": "By",
+          "start": 33.808,
+          "end": 34.168
+        },
+        {
+          "word": "evening",
+          "start": 34.168,
+          "end": 34.869
+        },
+        {
+          "word": "I",
+          "start": 34.869,
+          "end": 34.968
+        },
+        {
+          "word": "will",
+          "start": 34.968,
+          "end": 35.148
+        },
+        {
+          "word": "nearly",
+          "start": 35.148,
+          "end": 36.149
+        },
+        {
+          "word": "complete",
+          "start": 36.149,
+          "end": 36.923
+        },
+        {
+          "word": "the",
+          "start": 36.923,
+          "end": 37.069
+        },
+        {
+          "word": "report.",
+          "start": 37.069,
+          "end": 38.489
+        }
+      ],
+      "start": 33.808,
+      "end": 38.489
+    },
+    {
+      "line": 8,
+      "english": "Sometimes I wonder where I will be a year from now.",
+      "word_timings": [
+        {
+          "word": "Sometimes",
+          "start": 38.789,
+          "end": 39.703
+        },
+        {
+          "word": "I",
+          "start": 39.703,
+          "end": 39.89
+        },
+        {
+          "word": "wonder",
+          "start": 39.89,
+          "end": 40.57
+        },
+        {
+          "word": "where",
+          "start": 40.57,
+          "end": 41.33
+        },
+        {
+          "word": "I",
+          "start": 41.33,
+          "end": 41.47
+        },
+        {
+          "word": "will",
+          "start": 41.47,
+          "end": 41.75
+        },
+        {
+          "word": "be",
+          "start": 41.75,
+          "end": 42.161
+        },
+        {
+          "word": "a",
+          "start": 42.161,
+          "end": 42.39
+        },
+        {
+          "word": "year",
+          "start": 42.39,
+          "end": 42.87
+        },
+        {
+          "word": "from",
+          "start": 42.87,
+          "end": 43.23
+        },
+        {
+          "word": "now.",
+          "start": 43.23,
+          "end": 44.73
+        }
+      ],
+      "start": 38.789,
+      "end": 44.73
+    },
+    {
+      "line": 9,
+      "english": "Three years?",
+      "word_timings": [
+        {
+          "word": "Three",
+          "start": 45.531,
+          "end": 45.851
+        },
+        {
+          "word": "years?",
+          "start": 45.851,
+          "end": 47.031
+        }
+      ],
+      "start": 45.531,
+      "end": 47.031
+    },
+    {
+      "line": 10,
+      "english": "Life will continue, and I too will be living through many more days.",
+      "word_timings": [
+        {
+          "word": "Life",
+          "start": 47.331,
+          "end": 47.651
+        },
+        {
+          "word": "will",
+          "start": 47.651,
+          "end": 47.912
+        },
+        {
+          "word": "continue,",
+          "start": 47.912,
+          "end": 48.992
+        },
+        {
+          "word": "and",
+          "start": 48.992,
+          "end": 49.272
+        },
+        {
+          "word": "I",
+          "start": 49.272,
+          "end": 49.414
+        },
+        {
+          "word": "too",
+          "start": 49.414,
+          "end": 49.692
+        },
+        {
+          "word": "will",
+          "start": 49.692,
+          "end": 49.992
+        },
+        {
+          "word": "be",
+          "start": 49.992,
+          "end": 50.312
+        },
+        {
+          "word": "living",
+          "start": 50.312,
+          "end": 51.112
+        },
+        {
+          "word": "through",
+          "start": 51.112,
+          "end": 51.452
+        },
+        {
+          "word": "many",
+          "start": 51.452,
+          "end": 52.073
+        },
+        {
+          "word": "more",
+          "start": 52.073,
+          "end": 52.353
+        },
+        {
+          "word": "days.",
+          "start": 52.353,
+          "end": 53.153
+        }
+      ],
+      "start": 47.331,
+      "end": 53.153
+    },
+    {
+      "line": 11,
+      "english": "Placing myself within a schedule gives the day a gentle momentum.",
+      "word_timings": [
+        {
+          "word": "Placing",
+          "start": 53.193,
+          "end": 53.793
+        },
+        {
+          "word": "myself",
+          "start": 53.793,
+          "end": 54.393
+        },
+        {
+          "word": "within",
+          "start": 54.393,
+          "end": 54.861
+        },
+        {
+          "word": "a",
+          "start": 54.861,
+          "end": 55.053
+        },
+        {
+          "word": "schedule",
+          "start": 55.053,
+          "end": 55.873
+        },
+        {
+          "word": "gives",
+          "start": 55.873,
+          "end": 56.181
+        },
+        {
+          "word": "the",
+          "start": 56.181,
+          "end": 56.314
+        },
+        {
+          "word": "day",
+          "start": 56.314,
+          "end": 58.572
+        },
+        {
+          "word": "a",
+          "start": 58.572,
+          "end": 58.754
+        },
+        {
+          "word": "gentle",
+          "start": 58.754,
+          "end": 59.374
+        },
+        {
+          "word": "momentum.",
+          "start": 59.374,
+          "end": 60.874
+        }
+      ],
+      "start": 53.193,
+      "end": 60.874
+    },
+    {
+      "line": 12,
+      "english": "This time tomorrow, I will most likely be sitting at my desk.",
+      "word_timings": [
+        {
+          "word": "This",
+          "start": 62.055,
+          "end": 62.315
+        },
+        {
+          "word": "time",
+          "start": 62.315,
+          "end": 63.195
+        },
+        {
+          "word": "tomorrow,",
+          "start": 63.195,
+          "end": 63.966
+        },
+        {
+          "word": "I",
+          "start": 63.966,
+          "end": 64.135
+        },
+        {
+          "word": "will",
+          "start": 64.135,
+          "end": 64.376
+        },
+        {
+          "word": "most",
+          "start": 64.376,
+          "end": 64.696
+        },
+        {
+          "word": "likely",
+          "start": 64.696,
+          "end": 65.256
+        },
+        {
+          "word": "be",
+          "start": 65.256,
+          "end": 65.836
+        },
+        {
+          "word": "sitting",
+          "start": 65.836,
+          "end": 66.396
+        },
+        {
+          "word": "at",
+          "start": 66.396,
+          "end": 66.622
+        },
+        {
+          "word": "my",
+          "start": 66.622,
+          "end": 67.016
+        },
+        {
+          "word": "desk.",
+          "start": 67.016,
+          "end": 68.516
+        }
+      ],
+      "start": 62.055,
+      "end": 68.516
+    },
+    {
+      "line": 13,
+      "english": "But beyond that single moment, another tomorrow is already waiting quietly.",
+      "word_timings": [
+        {
+          "word": "But",
+          "start": 68.877,
+          "end": 69.137
+        },
+        {
+          "word": "beyond",
+          "start": 69.137,
+          "end": 69.737
+        },
+        {
+          "word": "that",
+          "start": 69.737,
+          "end": 70.057
+        },
+        {
+          "word": "single",
+          "start": 70.057,
+          "end": 70.637
+        },
+        {
+          "word": "moment,",
+          "start": 70.637,
+          "end": 71.817
+        },
+        {
+          "word": "another",
+          "start": 71.817,
+          "end": 72.818
+        },
+        {
+          "word": "tomorrow",
+          "start": 72.818,
+          "end": 74.137
+        },
+        {
+          "word": "is",
+          "start": 74.137,
+          "end": 74.478
+        },
+        {
+          "word": "already",
+          "start": 74.478,
+          "end": 75.558
+        },
+        {
+          "word": "waiting",
+          "start": 75.558,
+          "end": 76.138
+        },
+        {
+          "word": "quietly.",
+          "start": 76.138,
+          "end": 77.638
+        }
+      ],
+      "start": 68.877,
+      "end": 77.638
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

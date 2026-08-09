@@ -1,0 +1,179 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H017.md",
+  "audio": "高校生編/suno_ready/generated/audio/H017/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 113.56,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0146,
+  "expected_words": 137,
+  "transcribed_words": 139,
+  "matched_words": 135,
+  "coverage": 0.9854,
+  "precision": 0.9712,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 136,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 32,
+      "length": 1,
+      "words": [
+        "eighty"
+      ]
+    },
+    {
+      "start": 96,
+      "length": 1,
+      "words": [
+        "redone"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 96,
+      "actual_start": 95,
+      "expected": [
+        "redone"
+      ],
+      "actual": [
+        "red",
+        "and"
+      ],
+      "actual_confidence": 0.0,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 137,
+      "actual_start": 137,
+      "expected": [],
+      "actual": [
+        "thank",
+        "you"
+      ],
+      "actual_confidence": 0.0
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 32,
+      "actual_start": 32,
+      "expected": [
+        "eighty"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "In my town, an old western-style house has remained It had long been forgotten But one year the townspeople decided that it would be restored The house had been constructed about 80 years ago After the war it was abandoned for a long time Its roof had crumbled and the garden was covered with weeds Citizens raised their voices Saying this building should be preserved as part of our heritage The house was recognized as historically significant Finally a restoration budget was allocated by the city And the house was gradually repaired The roof was red and the walls were painted And the windows were replaced on the day it opened I stepped inside In its old pillars Traces of the past were carved Through the efforts of local people The old building was given A new life Thank you.",
+  "segments": [
+    {
+      "start": 10.5,
+      "end": 16.3,
+      "text": "In my town, an old western-style house has remained"
+    },
+    {
+      "start": 16.3,
+      "end": 19.22,
+      "text": "It had long been forgotten"
+    },
+    {
+      "start": 19.22,
+      "end": 26.62,
+      "text": "But one year the townspeople decided that it would be restored"
+    },
+    {
+      "start": 27.76,
+      "end": 33.78,
+      "text": "The house had been constructed about 80 years ago"
+    },
+    {
+      "start": 33.78,
+      "end": 39.56,
+      "text": "After the war it was abandoned for a long time"
+    },
+    {
+      "start": 41.08,
+      "end": 46.18,
+      "text": "Its roof had crumbled and the garden was covered with weeds"
+    },
+    {
+      "start": 46.18,
+      "end": 49.12,
+      "text": "Citizens raised their voices"
+    },
+    {
+      "start": 49.12,
+      "end": 55.08,
+      "text": "Saying this building should be preserved as part of our heritage"
+    },
+    {
+      "start": 55.08,
+      "end": 62.46,
+      "text": "The house was recognized as historically significant"
+    },
+    {
+      "start": 64.32,
+      "end": 69.38,
+      "text": "Finally a restoration budget was allocated by the city"
+    },
+    {
+      "start": 69.38,
+      "end": 73.64,
+      "text": "And the house was gradually repaired"
+    },
+    {
+      "start": 74.88,
+      "end": 78.3,
+      "text": "The roof was red and the walls were painted"
+    },
+    {
+      "start": 78.3,
+      "end": 82.92,
+      "text": "And the windows were replaced on the day it opened"
+    },
+    {
+      "start": 82.92,
+      "end": 85.72,
+      "text": "I stepped inside"
+    },
+    {
+      "start": 85.72,
+      "end": 88.8,
+      "text": "In its old pillars"
+    },
+    {
+      "start": 88.8,
+      "end": 92.98,
+      "text": "Traces of the past were carved"
+    },
+    {
+      "start": 94.22,
+      "end": 97.46,
+      "text": "Through the efforts of local people"
+    },
+    {
+      "start": 97.46,
+      "end": 101.2,
+      "text": "The old building was given"
+    },
+    {
+      "start": 101.2,
+      "end": 103.34,
+      "text": "A new life"
+    },
+    {
+      "start": 112.92,
+      "end": 113.56,
+      "text": "Thank you."
+    }
+  ]
+}

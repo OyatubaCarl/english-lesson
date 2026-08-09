@@ -1,0 +1,29 @@
+{
+  "lesson": "H092",
+  "updated_at": "2026-08-08",
+  "generator": "Codex built-in ImageGen",
+  "style": "画風01『光彩・劇場アニメ背景』固定",
+  "planned_master_count": 54,
+  "accepted_master_count": 54,
+  "dimensions": "1672x941",
+  "dimension_check": "54/54 PASS",
+  "unexpected_files": 0,
+  "accepted_through": "open_civic_horizon_finale_master.png",
+  "accepted_files_source": "visual_bible_style01.json > masters[].file",
+  "remaining_files": [],
+  "rejected_attempts": [],
+  "normalization": {
+    "reason": "ImageGen出力4枚の横幅が1671pxだった",
+    "action": "縦941pxを維持し、本編規格1672x941へ1pxだけ正規化。元ImageGen画像は別場所に保持",
+    "affected_count": 4
+  },
+  "qa_notes": [
+    "Hana、Ren、Maya、Emiの成人年齢・顔・髪・衣装を全編で固定",
+    "架空の市民ホールと公共図書館を固定し、実在政党・国家・SNSを特定しない",
+    "保護の必要性と過剰規制の危険を別場面にし、政府を単純な悪役にしない",
+    "支援を受けるEmiにも選択権と証言の主体性を持たせた",
+    "全54基準画を120カットへ展開し、各基準画最低2回使用",
+    "TacoBeat実測16行・180語と54意味時点の照合PASS",
+    "代表20時点と歌詞開始後16時点の完成動画目視PASS"
+  ]
+}

@@ -100,6 +100,8 @@ npx wrangler@latest pages deploy . --project-name=taco-beat --branch=main --comm
  → [1] ffmpeg 96kbps mp3化 ......... songs/<id>.mp3（既に mp3 96kbps 以下ならコピー）
  → [2] ffmpeg 16kHz mono wav化 ..... .cache/<id>/<id>_16k.wav（解析用・一時）
  → [3] Whisper medium .............. 「実際に歌われた」単語列 + 概略タイミング
+      └ 伴奏を同じ低信頼語として3回以上繰り返す誤認識と、無音区間の
+        `Thank(s) you for watching` 型の終端誤認識は自動除外
  → [4] torchaudio MMS_FA ........... wav2vec2 強制アライメントで単語開始時刻を高精度化
  → [5] spectral-flux オンセット検出 → 機能語だけオンセットに吸着（±0.14s）
  → [6] BPM/位相推定 ................ 粗0.5BPM → 細0.02BPM・8ms のグリッドサーチ
@@ -170,6 +172,8 @@ const SONG_BPM=70.34;
 | 初回実行がとても遅い / 大きな DL が始まる | Whisper medium (~1.4GB) と MMS_FA (~1.18GB) の初回モデル DL。`~/.cache/whisper/` と `~/.cache/torch/hub/checkpoints/` にキャッシュされ、2回目以降は不要 |
 | 単語の綴りがおかしい（固有名詞が別の語になる） | `make_chart.py` 冒頭の `SPELL_FIX` に `"聞き取られた綴り(小文字)": "正しい表記"` を追加して再実行（Whisper はキャッシュされるので速い） |
 | 認識された単語数が明らかに少ない | ボーカルが小さい・エフェクトが強い曲で起こりうる。`--force` で再認識しても同じなら、より歌が明瞭な音源（動画化前の Suno 原音）を使う |
+| 間奏に `music` / `thank` など同じ単語が何度も出る | Whisper の伴奏誤認識。現行パイプラインは「高い無音確率・低い単語確率・1語だけ」が同一曲内で3回以上反復した場合に自動除外する。旧譜面は再生成する |
+| 曲末に `Thank you for watching` が出る | Whisper が無音・残響を動画の定型句と誤認する既知パターン。無音確率75%以上の独立セグメントに限って自動除外する。本文中の通常の `thank you` や `watching TV` は除外しない |
 | BPM が倍/半分になっている | `BPM_MIN/BPM_MAX` を実際のテンポを挟む範囲に調整して再実行。BPM は🫓フィラーの間隔と演出にしか使わないので、多少ズレても致命的ではない |
 | 機能語のタイミングが微妙に合わない | `SNAP_WINDOW` を 0.10〜0.20 の範囲で調整。それでもダメなら `charts/<id>.js` の該当時刻を直接手修正してよい（形式は §4） |
 | 実機でだけ全体的に遅れて聞こえる | 端末の音声出力遅延（Bluetooth 等）。ゲーム内の「タイミング微調整」UI（localStorage `tb_off`）でプレイヤー側が吸収できるので譜面は直さない |

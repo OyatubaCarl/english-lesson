@@ -1,0 +1,325 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H123.md",
+  "audio": "高校生編/suno_ready/generated/audio/H123/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 177.92,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 245,
+  "transcribed_words": 245,
+  "matched_words": 237,
+  "coverage": 0.9673,
+  "precision": 0.9673,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 244,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 35,
+      "length": 2,
+      "words": [
+        "thirty",
+        "seven"
+      ]
+    },
+    {
+      "start": 99,
+      "length": 2,
+      "words": [
+        "are",
+        "counted"
+      ]
+    },
+    {
+      "start": 66,
+      "length": 1,
+      "words": [
+        "ten"
+      ]
+    },
+    {
+      "start": 92,
+      "length": 1,
+      "words": [
+        "reevaluated"
+      ]
+    },
+    {
+      "start": 143,
+      "length": 1,
+      "words": [
+        "at"
+      ]
+    },
+    {
+      "start": 146,
+      "length": 1,
+      "words": [
+        "kept"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 92,
+      "actual_start": 91,
+      "expected": [
+        "reevaluated"
+      ],
+      "actual": [
+        "re",
+        "evaluated"
+      ],
+      "actual_confidence": 0.8097,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 99,
+      "actual_start": 99,
+      "expected": [
+        "are",
+        "counted"
+      ],
+      "actual": [
+        "accounted"
+      ],
+      "actual_confidence": 0.5393,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 143,
+      "actual_start": 142,
+      "expected": [
+        "at"
+      ],
+      "actual": [
+        "that's"
+      ],
+      "actual_confidence": 0.6837,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 146,
+      "actual_start": 145,
+      "expected": [
+        "kept"
+      ],
+      "actual": [
+        "catch"
+      ],
+      "actual_confidence": 0.77,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 64,
+      "actual_start": 62,
+      "expected": [],
+      "actual": [
+        "two"
+      ],
+      "actual_confidence": 0.5873
+    },
+    {
+      "expected_start": 68,
+      "actual_start": 66,
+      "expected": [],
+      "actual": [
+        "his"
+      ],
+      "actual_confidence": 0.4129
+    },
+    {
+      "expected_start": 245,
+      "actual_start": 244,
+      "expected": [],
+      "actual": [
+        "ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo"
+      ],
+      "actual_confidence": 0.9448
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 35,
+      "actual_start": 35,
+      "expected": [
+        "thirty",
+        "seven"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 66,
+      "actual_start": 65,
+      "expected": [
+        "ten"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "The artist Van Gogh could barely sell any of his paintings during his lifetime. He was rejected and criticized by ordinary people and experienced severe mental distress. Just before he took his own life at 37, he had sold only one painting Without the support of his brother Theo, he could not even have bought paint Despite all this, Van Gogh created about two 100 works in 10 years His paintings and drawings, an enormous number together His dedication was not in pursuit of success Decades after his death, his paintings began to be re-evaluated Today, sunflowers and the starry night Accounted among the most popular paintings in the world They are traded for billions of yen each While Van Gogh was alive Few people recognized his potential His brother Theo was one of the few exceptions Theo believed in his brother's talent And that's considerable sacrifice Catch supporting him Van Gogh's story asks about The definition of success Is success to be recognized in life Is success to be recognized after death Perhaps for Van Gogh himself Success was to keep painting Whatever the reaction of the world He kept painting according to his inner voice That was the integrity of his life We can see the truth of a human being in the canvases Van Gogh left behind Colors that seem to yell, a life force that seems to burst Instead of staying silent, he continues to speak to the world through his paintings Ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+  "segments": [
+    {
+      "start": 9.92,
+      "end": 16.7,
+      "text": "The artist Van Gogh could barely sell any of his paintings during his lifetime."
+    },
+    {
+      "start": 16.96,
+      "end": 23.9,
+      "text": "He was rejected and criticized by ordinary people and experienced severe mental distress."
+    },
+    {
+      "start": 25.8,
+      "end": 33.14,
+      "text": "Just before he took his own life at 37, he had sold only one painting"
+    },
+    {
+      "start": 36.54,
+      "end": 41.94,
+      "text": "Without the support of his brother Theo, he could not even have bought paint"
+    },
+    {
+      "start": 41.94,
+      "end": 48.7,
+      "text": "Despite all this, Van Gogh created about two 100 works in 10 years"
+    },
+    {
+      "start": 48.7,
+      "end": 52.98,
+      "text": "His paintings and drawings, an enormous number together"
+    },
+    {
+      "start": 53.7,
+      "end": 58.08,
+      "text": "His dedication was not in pursuit of success"
+    },
+    {
+      "start": 59.7,
+      "end": 65.42,
+      "text": "Decades after his death, his paintings began to be re-evaluated"
+    },
+    {
+      "start": 66.7,
+      "end": 69.9,
+      "text": "Today, sunflowers and the starry night"
+    },
+    {
+      "start": 69.9,
+      "end": 74.0,
+      "text": "Accounted among the most popular paintings in the world"
+    },
+    {
+      "start": 74.0,
+      "end": 78.0,
+      "text": "They are traded for billions of yen each"
+    },
+    {
+      "start": 79.0,
+      "end": 81.52,
+      "text": "While Van Gogh was alive"
+    },
+    {
+      "start": 83.0,
+      "end": 86.04,
+      "text": "Few people recognized his potential"
+    },
+    {
+      "start": 88.64,
+      "end": 92.42,
+      "text": "His brother Theo was one of the few exceptions"
+    },
+    {
+      "start": 93.0,
+      "end": 95.18,
+      "text": "Theo believed in his brother's talent"
+    },
+    {
+      "start": 95.18,
+      "end": 98.2,
+      "text": "And that's considerable sacrifice"
+    },
+    {
+      "start": 98.2,
+      "end": 99.84,
+      "text": "Catch supporting him"
+    },
+    {
+      "start": 99.84,
+      "end": 102.46,
+      "text": "Van Gogh's story asks about"
+    },
+    {
+      "start": 102.46,
+      "end": 104.48,
+      "text": "The definition of success"
+    },
+    {
+      "start": 105.16,
+      "end": 108.48,
+      "text": "Is success to be recognized in life"
+    },
+    {
+      "start": 111.16,
+      "end": 114.68,
+      "text": "Is success to be recognized after death"
+    },
+    {
+      "start": 116.78,
+      "end": 119.32,
+      "text": "Perhaps for Van Gogh himself"
+    },
+    {
+      "start": 119.32,
+      "end": 121.74,
+      "text": "Success was to keep painting"
+    },
+    {
+      "start": 121.74,
+      "end": 124.66,
+      "text": "Whatever the reaction of the world"
+    },
+    {
+      "start": 124.66,
+      "end": 128.72,
+      "text": "He kept painting according to his inner voice"
+    },
+    {
+      "start": 129.66,
+      "end": 132.02,
+      "text": "That was the integrity of his life"
+    },
+    {
+      "start": 132.02,
+      "end": 139.0,
+      "text": "We can see the truth of a human being in the canvases Van Gogh left behind"
+    },
+    {
+      "start": 140.94,
+      "end": 148.32,
+      "text": "Colors that seem to yell, a life force that seems to burst"
+    },
+    {
+      "start": 151.18,
+      "end": 160.9,
+      "text": "Instead of staying silent, he continues to speak to the world through his paintings"
+    },
+    {
+      "start": 176.5,
+      "end": 177.9,
+      "text": "Ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo"
+    }
+  ]
+}

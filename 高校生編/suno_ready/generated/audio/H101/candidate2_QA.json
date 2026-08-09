@@ -1,0 +1,166 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H101.md",
+  "audio": "高校生編/suno_ready/generated/audio/H101/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 147.44,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 168,
+  "transcribed_words": 168,
+  "matched_words": 166,
+  "coverage": 0.9881,
+  "precision": 0.9881,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 167,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 62,
+      "length": 1,
+      "words": [
+        "defendant's"
+      ]
+    },
+    {
+      "start": 120,
+      "length": 1,
+      "words": [
+        "judgement"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 62,
+      "actual_start": 62,
+      "expected": [
+        "defendant's"
+      ],
+      "actual": [
+        "defendants"
+      ],
+      "actual_confidence": 0.642,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 120,
+      "actual_start": 120,
+      "expected": [
+        "judgement"
+      ],
+      "actual": [
+        "judgment"
+      ],
+      "actual_confidence": 0.6391,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "The court was silent, the prosecutor rose and began to lay out the details of the case, methodically The defendant was at the scene on the day of the crime This is definite from the testimony of several witnesses The defense attorney rose and argued back What seems apparent is not always the truth We have new evidence that will prove the defendants alibi On the witness stand, a young woman was trembling She was the person who had provided several clues to the police Her testimony was crucial That night I saw the defendant run from the scene She answered in a voice close to a whisper It was still too early for the judge to hand down his judgment Weeks later, the jury reached a verdict, guilty The defendant was sent to jail But the attorney decided to appeal Law must be strict, but it must not lose room for mercy The pursuit of justice is always also a confrontation With the limits of human judgement",
+  "segments": [
+    {
+      "start": 12.82,
+      "end": 22.2,
+      "text": "The court was silent, the prosecutor rose and began to lay out the details of the case,"
+    },
+    {
+      "start": 23.88,
+      "end": 24.96,
+      "text": "methodically"
+    },
+    {
+      "start": 26.32,
+      "end": 31.08,
+      "text": "The defendant was at the scene on the day of the crime"
+    },
+    {
+      "start": 32.28,
+      "end": 38.56,
+      "text": "This is definite from the testimony of several witnesses"
+    },
+    {
+      "start": 39.2,
+      "end": 43.46,
+      "text": "The defense attorney rose and argued back"
+    },
+    {
+      "start": 44.2,
+      "end": 49.72,
+      "text": "What seems apparent is not always the truth"
+    },
+    {
+      "start": 49.72,
+      "end": 55.84,
+      "text": "We have new evidence that will prove the defendants alibi"
+    },
+    {
+      "start": 55.84,
+      "end": 62.88,
+      "text": "On the witness stand, a young woman was trembling"
+    },
+    {
+      "start": 66.72,
+      "end": 73.3,
+      "text": "She was the person who had provided several clues to the police"
+    },
+    {
+      "start": 73.3,
+      "end": 77.96,
+      "text": "Her testimony was crucial"
+    },
+    {
+      "start": 79.28,
+      "end": 84.5,
+      "text": "That night I saw the defendant run from the scene"
+    },
+    {
+      "start": 84.5,
+      "end": 89.62,
+      "text": "She answered in a voice close to a whisper"
+    },
+    {
+      "start": 91.8,
+      "end": 97.14,
+      "text": "It was still too early for the judge to hand down his judgment"
+    },
+    {
+      "start": 97.14,
+      "end": 102.7,
+      "text": "Weeks later, the jury reached a verdict, guilty"
+    },
+    {
+      "start": 104.14,
+      "end": 106.98,
+      "text": "The defendant was sent to jail"
+    },
+    {
+      "start": 108.14,
+      "end": 113.12,
+      "text": "But the attorney decided to appeal"
+    },
+    {
+      "start": 116.3,
+      "end": 122.28,
+      "text": "Law must be strict, but it must not lose room for mercy"
+    },
+    {
+      "start": 122.28,
+      "end": 129.36,
+      "text": "The pursuit of justice is always also a confrontation"
+    },
+    {
+      "start": 130.98,
+      "end": 134.92,
+      "text": "With the limits of human judgement"
+    }
+  ]
+}

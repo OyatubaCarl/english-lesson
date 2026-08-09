@@ -1,0 +1,300 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H145.md",
+  "audio": "高校生編/suno_ready/generated/audio/H145/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 183.44,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 319,
+  "transcribed_words": 319,
+  "matched_words": 314,
+  "coverage": 0.9843,
+  "precision": 0.9843,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 318,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 214,
+      "length": 2,
+      "words": [
+        "an",
+        "e"
+      ]
+    },
+    {
+      "start": 13,
+      "length": 1,
+      "words": [
+        "bookshop"
+      ]
+    },
+    {
+      "start": 37,
+      "length": 1,
+      "words": [
+        "seventies"
+      ]
+    },
+    {
+      "start": 49,
+      "length": 1,
+      "words": [
+        "thirty"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 13,
+      "actual_start": 13,
+      "expected": [
+        "bookshop"
+      ],
+      "actual": [
+        "book",
+        "shop"
+      ],
+      "actual_confidence": 0.6353,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 37,
+      "actual_start": 38,
+      "expected": [
+        "seventies"
+      ],
+      "actual": [
+        "s"
+      ],
+      "actual_confidence": 0.7163,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 214,
+      "actual_start": 215,
+      "expected": [
+        "an",
+        "e"
+      ],
+      "actual": [
+        "any"
+      ],
+      "actual_confidence": 0.6828,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 196,
+      "actual_start": 196,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.5112
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 49,
+      "actual_start": 50,
+      "expected": [
+        "thirty"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "On a back street of the city, tucked away, there is a used book shop. It is not a so-called tourist spot, but it is known to lovers of books. The owner is a gentleman in his 70s, who has been selling books from this place for more than 30 years. When you step inside, the smell of old books surrounds you The shelves are filled with books up to the ceiling Literature, history, philosophy, science Whatever sort of book you want, you can find it if you search The owner is an expert on books When a customer says a title, within a few minutes he remembers Where on the shelf it is He can tell you the plot of any book The shop has a quiet atmosphere Like a private reading room Customers speak in low voices And handle the books carefully Sometimes a rare out-of-print book is brought in The owner promptly buys it And sells it at an appropriate price To deliver a book of worth to its next owner That is his mission This is the age of e-books Sales of paper books are decreasing Used bookshops too You are similarly shrinking in number, but the owner is not pessimistic. A paper book has a charm that any book does not, he says. The feel in your hand, the sound of turning a page, the weight of the book itself. Unlike books on a screen, you can line them on a shelf and make them part of your home. In this shop, I have met many treasured books The prices are low, but the contents are superior The owner opens the shutter every morning Arranges the books and waits for customers I will continue As long as I can continue, he says May this quiet place remain At least a little longer That is the wish of everyone who loves books",
+  "segments": [
+    {
+      "start": 2.4,
+      "end": 8.38,
+      "text": "On a back street of the city, tucked away, there is a used book shop."
+    },
+    {
+      "start": 9.74,
+      "end": 15.58,
+      "text": "It is not a so-called tourist spot, but it is known to lovers of books."
+    },
+    {
+      "start": 16.6,
+      "end": 26.72,
+      "text": "The owner is a gentleman in his 70s, who has been selling books from this place for more than 30 years."
+    },
+    {
+      "start": 26.72,
+      "end": 31.76,
+      "text": "When you step inside, the smell of old books surrounds you"
+    },
+    {
+      "start": 31.76,
+      "end": 35.2,
+      "text": "The shelves are filled with books up to the ceiling"
+    },
+    {
+      "start": 36.5,
+      "end": 40.88,
+      "text": "Literature, history, philosophy, science"
+    },
+    {
+      "start": 40.88,
+      "end": 45.98,
+      "text": "Whatever sort of book you want, you can find it if you search"
+    },
+    {
+      "start": 45.98,
+      "end": 49.34,
+      "text": "The owner is an expert on books"
+    },
+    {
+      "start": 50.88,
+      "end": 55.58,
+      "text": "When a customer says a title, within a few minutes he remembers"
+    },
+    {
+      "start": 55.58,
+      "end": 59.22,
+      "text": "Where on the shelf it is"
+    },
+    {
+      "start": 59.22,
+      "end": 62.76,
+      "text": "He can tell you the plot of any book"
+    },
+    {
+      "start": 62.76,
+      "end": 64.98,
+      "text": "The shop has a quiet atmosphere"
+    },
+    {
+      "start": 64.98,
+      "end": 68.86,
+      "text": "Like a private reading room"
+    },
+    {
+      "start": 68.86,
+      "end": 72.6,
+      "text": "Customers speak in low voices"
+    },
+    {
+      "start": 72.6,
+      "end": 75.56,
+      "text": "And handle the books carefully"
+    },
+    {
+      "start": 77.0,
+      "end": 80.9,
+      "text": "Sometimes a rare out-of-print book is brought in"
+    },
+    {
+      "start": 80.9,
+      "end": 83.88,
+      "text": "The owner promptly buys it"
+    },
+    {
+      "start": 83.88,
+      "end": 86.74,
+      "text": "And sells it at an appropriate price"
+    },
+    {
+      "start": 86.74,
+      "end": 90.16,
+      "text": "To deliver a book of worth to its next owner"
+    },
+    {
+      "start": 90.16,
+      "end": 91.88,
+      "text": "That is his mission"
+    },
+    {
+      "start": 91.88,
+      "end": 94.12,
+      "text": "This is the age of e-books"
+    },
+    {
+      "start": 94.12,
+      "end": 97.5,
+      "text": "Sales of paper books are decreasing"
+    },
+    {
+      "start": 108.56,
+      "end": 110.42,
+      "text": "Used bookshops too"
+    },
+    {
+      "start": 110.42,
+      "end": 117.16,
+      "text": "You are similarly shrinking in number, but the owner is not pessimistic."
+    },
+    {
+      "start": 118.24,
+      "end": 123.12,
+      "text": "A paper book has a charm that any book does not, he says."
+    },
+    {
+      "start": 123.64,
+      "end": 128.88,
+      "text": "The feel in your hand, the sound of turning a page, the weight of the book itself."
+    },
+    {
+      "start": 130.8,
+      "end": 139.32,
+      "text": "Unlike books on a screen, you can line them on a shelf and make them part of your home."
+    },
+    {
+      "start": 140.42,
+      "end": 144.96,
+      "text": "In this shop, I have met many treasured books"
+    },
+    {
+      "start": 145.92,
+      "end": 150.26,
+      "text": "The prices are low, but the contents are superior"
+    },
+    {
+      "start": 150.92,
+      "end": 153.74,
+      "text": "The owner opens the shutter every morning"
+    },
+    {
+      "start": 153.74,
+      "end": 156.56,
+      "text": "Arranges the books and waits for customers"
+    },
+    {
+      "start": 157.42,
+      "end": 158.74,
+      "text": "I will continue"
+    },
+    {
+      "start": 160.42,
+      "end": 164.28,
+      "text": "As long as I can continue, he says"
+    },
+    {
+      "start": 165.48,
+      "end": 168.06,
+      "text": "May this quiet place remain"
+    },
+    {
+      "start": 168.06,
+      "end": 170.72,
+      "text": "At least a little longer"
+    },
+    {
+      "start": 172.06,
+      "end": 176.22,
+      "text": "That is the wish of everyone who loves books"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H024.md",
+  "audio": "高校生編/suno_ready/generated/audio/H024/candidate1-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 121.28,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 154,
+  "transcribed_words": 154,
+  "matched_words": 149,
+  "coverage": 0.9675,
+  "precision": 0.9675,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 153,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 37,
+      "length": 2,
+      "words": [
+        "he",
+        "checked"
+      ]
+    },
+    {
+      "start": 49,
+      "length": 2,
+      "words": [
+        "he",
+        "worked"
+      ]
+    },
+    {
+      "start": 41,
+      "length": 1,
+      "words": [
+        "wiped"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 37,
+      "actual_start": 37,
+      "expected": [
+        "he",
+        "checked"
+      ],
+      "actual": [
+        "he'd",
+        "check"
+      ],
+      "actual_confidence": 0.9487,
+      "substitution_words": 2,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 41,
+      "actual_start": 41,
+      "expected": [
+        "wiped"
+      ],
+      "actual": [
+        "wipe"
+      ],
+      "actual_confidence": 0.9956,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 49,
+      "actual_start": 49,
+      "expected": [
+        "he",
+        "worked"
+      ],
+      "actual": [
+        "he'd",
+        "work"
+      ],
+      "actual_confidence": 0.7573,
+      "substitution_words": 2,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 3,
+  "suspicious_substitution_words": 5,
+  "suspicious_content_substitution": true,
+  "transcript": "My grandfather worked for many years As the keeper of a lighthouse In a seaside town That town was the place where he lived his whole life Every night he would climb the stairs of the tower He'd check the lamp, wipe the windows And when a storm approached He'd work through the whole night without sleep Every summer I visited his house and looked up at the light The moment when the lighthouse began to glow Was the time when I most wished to be there Once he revealed to me the reason why he had continued this work So that ships that come back from across the sea Can enter the harbor safely, he said I often think of the way he guided sailors Between my grandfather And the lighthouse was a long bond that needed no words I could never imagine how many sailors his light had guided on stormy nights",
+  "segments": [
+    {
+      "start": 11.96,
+      "end": 16.6,
+      "text": "My grandfather worked for many years"
+    },
+    {
+      "start": 16.6,
+      "end": 19.76,
+      "text": "As the keeper of a lighthouse"
+    },
+    {
+      "start": 21.2,
+      "end": 24.18,
+      "text": "In a seaside town"
+    },
+    {
+      "start": 25.6,
+      "end": 30.34,
+      "text": "That town was the place where he lived his whole life"
+    },
+    {
+      "start": 30.34,
+      "end": 36.66,
+      "text": "Every night he would climb the stairs of the tower"
+    },
+    {
+      "start": 38.52,
+      "end": 41.48,
+      "text": "He'd check the lamp, wipe the windows"
+    },
+    {
+      "start": 41.48,
+      "end": 43.82,
+      "text": "And when a storm approached"
+    },
+    {
+      "start": 43.82,
+      "end": 48.94,
+      "text": "He'd work through the whole night without sleep"
+    },
+    {
+      "start": 51.12,
+      "end": 56.84,
+      "text": "Every summer I visited his house and looked up at the light"
+    },
+    {
+      "start": 56.84,
+      "end": 61.62,
+      "text": "The moment when the lighthouse began to glow"
+    },
+    {
+      "start": 63.5,
+      "end": 67.7,
+      "text": "Was the time when I most wished to be there"
+    },
+    {
+      "start": 70.66,
+      "end": 77.54,
+      "text": "Once he revealed to me the reason why he had continued this work"
+    },
+    {
+      "start": 78.9,
+      "end": 83.64,
+      "text": "So that ships that come back from across the sea"
+    },
+    {
+      "start": 83.64,
+      "end": 87.58,
+      "text": "Can enter the harbor safely, he said"
+    },
+    {
+      "start": 87.58,
+      "end": 94.22,
+      "text": "I often think of the way he guided sailors"
+    },
+    {
+      "start": 95.7,
+      "end": 99.42,
+      "text": "Between my grandfather"
+    },
+    {
+      "start": 100.8,
+      "end": 104.56,
+      "text": "And the lighthouse was a long bond"
+    },
+    {
+      "start": 104.56,
+      "end": 107.4,
+      "text": "that needed no words"
+    },
+    {
+      "start": 107.4,
+      "end": 111.94,
+      "text": "I could never imagine"
+    },
+    {
+      "start": 111.94,
+      "end": 116.46,
+      "text": "how many sailors his light"
+    },
+    {
+      "start": 116.46,
+      "end": 121.28,
+      "text": "had guided on stormy nights"
+    }
+  ]
+}

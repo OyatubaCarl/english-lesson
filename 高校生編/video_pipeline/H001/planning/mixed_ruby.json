@@ -1,0 +1,1411 @@
+{
+  "lesson": "H001",
+  "title_ja": "夜明けの湖",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 23,
+  "canonical_target_lines": 13,
+  "mixed_lines": 13,
+  "japanese_only_lines": 10,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 12.08,
+      "end": 16.55,
+      "english": "At dawn, I stood by the lake.",
+      "japanese": "夜明けに、私は湖のそばに立っていました。",
+      "mixed": "dawn に、私は lake のそばに立っていました。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "dawn",
+          "ruby": "夜明け"
+        },
+        {
+          "type": "ja",
+          "text": " に、私は ",
+          "parts": [
+            {
+              "text": "に、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "lake",
+          "ruby": "湖"
+        },
+        {
+          "type": "ja",
+          "text": " のそばに立っていました。",
+          "parts": [
+            {
+              "text": "のそばに",
+              "ruby": ""
+            },
+            {
+              "text": "立",
+              "ruby": "た"
+            },
+            {
+              "text": "っていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "dawn",
+          "canonical_word": "dawn",
+          "meaning": "夜明け"
+        },
+        {
+          "english": "lake",
+          "canonical_word": "lake",
+          "meaning": "湖"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "dawn",
+          "reading": "夜明け",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "dawn",
+          "canonical_meaning": "夜明け"
+        },
+        {
+          "english": "lake",
+          "reading": "湖",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "lake",
+          "canonical_meaning": "湖"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 2,
+      "start": 16.55,
+      "end": 19.1,
+      "english": "The water lay still.",
+      "japanese": "水は静止していました。",
+      "mixed": "水は静止していました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "水は静止していました。",
+          "parts": [
+            {
+              "text": "水",
+              "ruby": "みず"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "静止",
+              "ruby": "せいし"
+            },
+            {
+              "text": "していました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 3,
+      "start": 21.38,
+      "end": 27.62,
+      "english": "A gentle mist drifted on the surface.",
+      "japanese": "表面には優しい霧が漂っていた。",
+      "mixed": "表面には優しい霧が drifted。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "表面には優しい霧が ",
+          "parts": [
+            {
+              "text": "表面",
+              "ruby": "ひょうめん"
+            },
+            {
+              "text": "には",
+              "ruby": ""
+            },
+            {
+              "text": "優",
+              "ruby": "やさ"
+            },
+            {
+              "text": "しい",
+              "ruby": ""
+            },
+            {
+              "text": "霧",
+              "ruby": "きり"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "drifted",
+          "ruby": "漂っていた"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "drifted",
+          "canonical_word": "drifted",
+          "meaning": "漂った"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "drifted",
+          "reading": "漂っていた",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "drifted",
+          "canonical_meaning": "漂った"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 4,
+      "start": 27.62,
+      "end": 32.48,
+      "english": "The world breathed quietly.",
+      "japanese": "世界は静かに息づいていた。",
+      "mixed": "世界は静かに breathed。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "世界は静かに ",
+          "parts": [
+            {
+              "text": "世界",
+              "ruby": "せかい"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "breathed",
+          "ruby": "息づいていた"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "breathed",
+          "canonical_word": "breathed",
+          "meaning": "呼吸した"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "breathed",
+          "reading": "息づいていた",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "breathed",
+          "canonical_meaning": "呼吸した"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 5,
+      "start": 32.48,
+      "end": 39.64,
+      "english": "The light gradually appeared in the distant sky.",
+      "japanese": "遠くの空に徐々に光が現れてきました。",
+      "mixed": "遠くの空に gradually 光が appeared。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "遠くの空に ",
+          "parts": [
+            {
+              "text": "遠",
+              "ruby": "とお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "空",
+              "ruby": "そら"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "gradually",
+          "ruby": "徐々に"
+        },
+        {
+          "type": "ja",
+          "text": " 光が ",
+          "parts": [
+            {
+              "text": "光",
+              "ruby": "ひかり"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "appeared",
+          "ruby": "現れてきました"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "gradually",
+          "canonical_word": "gradually",
+          "meaning": "徐々に"
+        },
+        {
+          "english": "appeared",
+          "canonical_word": "appeared",
+          "meaning": "現れた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "gradually",
+          "reading": "徐々に",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "gradually",
+          "canonical_meaning": "徐々に"
+        },
+        {
+          "english": "appeared",
+          "reading": "現れてきました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "appeared",
+          "canonical_meaning": "現れた"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 6,
+      "start": 39.64,
+      "end": 42.2,
+      "english": "The sun emerged.",
+      "japanese": "太陽が出てきました。",
+      "mixed": "太陽が emerged。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "太陽が ",
+          "parts": [
+            {
+              "text": "太陽",
+              "ruby": "たいよう"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "emerged",
+          "ruby": "立ち現れた"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "emerged",
+          "canonical_word": "emerged",
+          "meaning": "立ち現れた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "emerged",
+          "reading": "立ち現れた",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "emerged",
+          "canonical_meaning": "立ち現れた"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 7,
+      "start": 42.2,
+      "end": 46.7,
+      "english": "Its rays spread across the pure air.",
+      "japanese": "その光線は清らかな空気に広がります。",
+      "mixed": "その光は pure な空気に広がりました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "その光は ",
+          "parts": [
+            {
+              "text": "その",
+              "ruby": ""
+            },
+            {
+              "text": "光",
+              "ruby": "ひかり"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "pure",
+          "ruby": "澄んだ"
+        },
+        {
+          "type": "ja",
+          "text": " な空気に広がりました。",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "空気",
+              "ruby": "くうき"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "広",
+              "ruby": "ひろ"
+            },
+            {
+              "text": "がりました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "pure",
+          "canonical_word": "pure",
+          "meaning": "純粋な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "pure",
+          "reading": "澄んだ",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "pure",
+          "canonical_meaning": "純粋な"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 8,
+      "start": 50.44,
+      "end": 52.18,
+      "english": "No one spoke.",
+      "japanese": "誰も話さなかった。",
+      "mixed": "誰も話さなかった。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "誰も話さなかった。",
+          "parts": [
+            {
+              "text": "誰",
+              "ruby": "だれ"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "話",
+              "ruby": "はな"
+            },
+            {
+              "text": "さなかった。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 9,
+      "start": 52.18,
+      "end": 55.26,
+      "english": "I gazed at the shore.",
+      "japanese": "私は海岸を見つめた。",
+      "mixed": "私は海岸を gazed。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私は海岸を ",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "海岸",
+              "ruby": "かいがん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "gazed",
+          "ruby": "見つめた"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "gazed",
+          "canonical_word": "gazed",
+          "meaning": "見つめた"
+        },
+        {
+          "english": "shore",
+          "canonical_word": "shore",
+          "meaning": "岸"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "gazed",
+          "reading": "見つめた",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "gazed",
+          "canonical_meaning": "見つめた"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 10,
+      "start": 55.26,
+      "end": 61.0,
+      "english": "A narrow stream flowed near my feet.",
+      "japanese": "足元近くに細い小川が流れていました。",
+      "mixed": "足元近くに細い stream が flowed。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "足元近くに細い ",
+          "parts": [
+            {
+              "text": "足元",
+              "ruby": "あしもと"
+            },
+            {
+              "text": "近",
+              "ruby": "ちか"
+            },
+            {
+              "text": "くに",
+              "ruby": ""
+            },
+            {
+              "text": "細",
+              "ruby": "ほそ"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "stream",
+          "ruby": "小川"
+        },
+        {
+          "type": "ja",
+          "text": " が ",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "flowed",
+          "ruby": "流れていました"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "stream",
+          "canonical_word": "stream",
+          "meaning": "小川"
+        },
+        {
+          "english": "flowed",
+          "canonical_word": "flowed",
+          "meaning": "流れた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "stream",
+          "reading": "小川",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "stream",
+          "canonical_meaning": "小川"
+        },
+        {
+          "english": "flowed",
+          "reading": "流れていました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "flowed",
+          "canonical_meaning": "流れた"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 11,
+      "start": 61.0,
+      "end": 64.99,
+      "english": "The water whispered softly.",
+      "japanese": "水が静かにささやきました。",
+      "mixed": "水が静かに whispered。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "水が静かに ",
+          "parts": [
+            {
+              "text": "水",
+              "ruby": "みず"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "whispered",
+          "ruby": "ささやきました"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "whispered",
+          "canonical_word": "whispered",
+          "meaning": "ささやいた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "whispered",
+          "reading": "ささやきました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "whispered",
+          "canonical_meaning": "ささやいた"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 12,
+      "start": 64.99,
+      "end": 68.98,
+      "english": "Birds sang in distant trees.",
+      "japanese": "遠くの木々で鳥がさえずっていた。",
+      "mixed": "遠くの木々で鳥がさえずっていた。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "遠くの木々で鳥がさえずっていた。",
+          "parts": [
+            {
+              "text": "遠",
+              "ruby": "とお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "木々",
+              "ruby": "きぎ"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "鳥",
+              "ruby": "とり"
+            },
+            {
+              "text": "がさえずっていた。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 13,
+      "start": 68.98,
+      "end": 78.04,
+      "english": "A fish jumped, and gentle ripples ran outward from the edge.",
+      "japanese": "魚が跳ね上がり、エッジから外側に向かって緩やかな波紋が走った。",
+      "mixed": "魚が跳ね上がり、エッジから外側に向かって緩やかな波紋が走った。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "魚が跳ね上がり、エッジから外側に向かって緩やかな波紋が走った。",
+          "parts": [
+            {
+              "text": "魚",
+              "ruby": "さかな"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "跳ね上",
+              "ruby": "はねあ"
+            },
+            {
+              "text": "がり、エッジから",
+              "ruby": ""
+            },
+            {
+              "text": "外側",
+              "ruby": "そとがわ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "向",
+              "ruby": "む"
+            },
+            {
+              "text": "かって",
+              "ruby": ""
+            },
+            {
+              "text": "緩",
+              "ruby": "ゆる"
+            },
+            {
+              "text": "やかな",
+              "ruby": ""
+            },
+            {
+              "text": "波紋",
+              "ruby": "はもん"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "走",
+              "ruby": "はし"
+            },
+            {
+              "text": "った。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 14,
+      "start": 78.04,
+      "end": 84.52,
+      "english": "From the depths of the forest, a faint presence moved.",
+      "japanese": "森の奥から、微かな気配が動いた。",
+      "mixed": "森の depths から、かすかな presence が動きました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "森の ",
+          "parts": [
+            {
+              "text": "森",
+              "ruby": "もり"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "depths",
+          "ruby": "奥深く"
+        },
+        {
+          "type": "ja",
+          "text": " から、かすかな ",
+          "parts": [
+            {
+              "text": "から、かすかな",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "presence",
+          "ruby": "気配"
+        },
+        {
+          "type": "ja",
+          "text": " が動きました。",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "動",
+              "ruby": "うご"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "depths",
+          "canonical_word": "depth",
+          "meaning": "奥深さ"
+        },
+        {
+          "english": "presence",
+          "canonical_word": "presence",
+          "meaning": "存在"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "depths",
+          "reading": "奥深く",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "depth",
+          "canonical_meaning": "奥深さ"
+        },
+        {
+          "english": "presence",
+          "reading": "気配",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "presence",
+          "canonical_meaning": "存在"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 15,
+      "start": 84.52,
+      "end": 86.96,
+      "english": "I noticed a deer.",
+      "japanese": "鹿に気づきました。",
+      "mixed": "私は一頭の鹿を noticed。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私は一頭の鹿を ",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "いっ"
+            },
+            {
+              "text": "頭",
+              "ruby": "とう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "鹿",
+              "ruby": "しか"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "noticed",
+          "ruby": "見つけて気づいた"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "noticed",
+          "canonical_word": "noticed",
+          "meaning": "気づいた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "noticed",
+          "reading": "見つけて気づいた",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "noticed",
+          "canonical_meaning": "気づいた"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 16,
+      "start": 86.96,
+      "end": 88.92,
+      "english": "It stood still.",
+      "japanese": "それは静止していました。",
+      "mixed": "それは静止していました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "それは静止していました。",
+          "parts": [
+            {
+              "text": "それは",
+              "ruby": ""
+            },
+            {
+              "text": "静止",
+              "ruby": "せいし"
+            },
+            {
+              "text": "していました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 17,
+      "start": 88.92,
+      "end": 94.16,
+      "english": "Then it vanished into the trees.",
+      "japanese": "それからそれは木々の中に消えていきました。",
+      "mixed": "それからそれは木々の中に消えていきました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "それからそれは木々の中に消えていきました。",
+          "parts": [
+            {
+              "text": "それからそれは",
+              "ruby": ""
+            },
+            {
+              "text": "木々",
+              "ruby": "きぎ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "中",
+              "ruby": "なか"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "消",
+              "ruby": "き"
+            },
+            {
+              "text": "えていきました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 18,
+      "start": 94.16,
+      "end": 100.2,
+      "english": "I simply observed the landscape in silence.",
+      "japanese": "私はただ静かに風景を眺めていました。",
+      "mixed": "私は風景を、ただ静かに observed。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私は風景を、ただ静かに ",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "風景",
+              "ruby": "ふうけい"
+            },
+            {
+              "text": "を、ただ",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "observed",
+          "ruby": "観察した"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "observed",
+          "canonical_word": "observed",
+          "meaning": "観察した"
+        },
+        {
+          "english": "landscape",
+          "canonical_word": "landscape",
+          "meaning": "風景"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "observed",
+          "reading": "観察した",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "observed",
+          "canonical_meaning": "観察した"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 19,
+      "start": 101.16,
+      "end": 105.34,
+      "english": "Nothing spoke, yet everything lived.",
+      "japanese": "何も話さなかったが、すべてが生きていた。",
+      "mixed": "何も話さなかったが、すべてが生きていた。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "何も話さなかったが、すべてが生きていた。",
+          "parts": [
+            {
+              "text": "何",
+              "ruby": "なん"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "話",
+              "ruby": "はな"
+            },
+            {
+              "text": "さなかったが、すべてが",
+              "ruby": ""
+            },
+            {
+              "text": "生",
+              "ruby": "い"
+            },
+            {
+              "text": "きていた。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 20,
+      "start": 106.16,
+      "end": 108.64,
+      "english": "The morning continued.",
+      "japanese": "朝が続いた。",
+      "mixed": "朝が続いた。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "朝が続いた。",
+          "parts": [
+            {
+              "text": "朝",
+              "ruby": "あさ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "続",
+              "ruby": "つづ"
+            },
+            {
+              "text": "いた。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 21,
+      "start": 110.74,
+      "end": 114.44,
+      "english": "A new day arose.",
+      "japanese": "新しい日が始まりました。",
+      "mixed": "新しい一日が arose。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "新しい一日が ",
+          "parts": [
+            {
+              "text": "新",
+              "ruby": "あたら"
+            },
+            {
+              "text": "しい",
+              "ruby": ""
+            },
+            {
+              "text": "一日",
+              "ruby": "いちにち"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "arose",
+          "ruby": "始まった"
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "arose",
+          "canonical_word": "arose",
+          "meaning": "生じた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "arose",
+          "reading": "始まった",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "arose",
+          "canonical_meaning": "生じた"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 22,
+      "start": 116.9,
+      "end": 120.08,
+      "english": "I remained there.",
+      "japanese": "私はそこに残りました。",
+      "mixed": "私はそこに残りました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私はそこに残りました。",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "はそこに",
+              "ruby": ""
+            },
+            {
+              "text": "残",
+              "ruby": "のこ"
+            },
+            {
+              "text": "りました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 23,
+      "start": 121.68,
+      "end": 124.48,
+      "english": "Time passed.",
+      "japanese": "時間が経ちました。",
+      "mixed": "時間が経ちました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "時間が経ちました。",
+          "parts": [
+            {
+              "text": "時間",
+              "ruby": "じかん"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "経",
+              "ruby": "た"
+            },
+            {
+              "text": "ちました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    }
+  ]
+}

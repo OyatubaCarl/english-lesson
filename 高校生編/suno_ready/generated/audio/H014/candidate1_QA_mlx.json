@@ -1,0 +1,128 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H014.md",
+  "audio": "高校生編/suno_ready/generated/audio/H014/candidate1-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 71.64,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9915,
+  "expected_words": 118,
+  "transcribed_words": 117,
+  "matched_words": 116,
+  "coverage": 0.9831,
+  "precision": 0.9915,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 117,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 94,
+      "length": 2,
+      "words": [
+        "want",
+        "to"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 94,
+      "actual_start": 94,
+      "expected": [
+        "want",
+        "to"
+      ],
+      "actual": [
+        "wanna"
+      ],
+      "actual_confidence": 0.6431,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "In another five years, what will I accomplish? Will I have reached my goal? My ambition is not great But I hope to contribute quietly to the lives of others Perhaps five years from now I will have found a clearer sense of purpose Daily progress will have quietly become a single path By then I will have gathered many small achievements And I will have been seeking many things My courage will have grown through small choices I will have become a little more mature A grand prospect is not always needed I wanna be someone who can fulfill small goals My future will likely be opening quietly before me And I do believe that now",
+  "segments": [
+    {
+      "start": 5.64,
+      "end": 9.18,
+      "text": "In another five years, what will I accomplish?"
+    },
+    {
+      "start": 9.82,
+      "end": 11.98,
+      "text": "Will I have reached my goal?"
+    },
+    {
+      "start": 12.18,
+      "end": 13.9,
+      "text": "My ambition is not great"
+    },
+    {
+      "start": 13.9,
+      "end": 18.64,
+      "text": "But I hope to contribute quietly to the lives of others"
+    },
+    {
+      "start": 21.36,
+      "end": 23.84,
+      "text": "Perhaps five years from now"
+    },
+    {
+      "start": 23.84,
+      "end": 27.08,
+      "text": "I will have found a clearer sense of purpose"
+    },
+    {
+      "start": 27.08,
+      "end": 31.72,
+      "text": "Daily progress will have quietly become a single path"
+    },
+    {
+      "start": 33.06,
+      "end": 36.5,
+      "text": "By then I will have gathered many small achievements"
+    },
+    {
+      "start": 36.5,
+      "end": 39.46,
+      "text": "And I will have been seeking many things"
+    },
+    {
+      "start": 39.46,
+      "end": 42.96,
+      "text": "My courage will have grown through small choices"
+    },
+    {
+      "start": 42.96,
+      "end": 45.72,
+      "text": "I will have become a little more mature"
+    },
+    {
+      "start": 47.14,
+      "end": 52.26,
+      "text": "A grand prospect is not always needed"
+    },
+    {
+      "start": 52.26,
+      "end": 58.88,
+      "text": "I wanna be someone who can fulfill small goals"
+    },
+    {
+      "start": 58.88,
+      "end": 65.12,
+      "text": "My future will likely be opening quietly before me"
+    },
+    {
+      "start": 66.32,
+      "end": 71.64,
+      "text": "And I do believe that now"
+    }
+  ]
+}

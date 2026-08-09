@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "video": "output/h46_democracy_constitution_imagen_cinematic.mp4",
+  "container": "mp4",
+  "duration_seconds": 131.8,
+  "size_bytes": 63550520,
+  "video_stream": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "audio_stream": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  "sha256": "15c12d158e3a0f9379c49dc513fe3d0c5e88e810dc31283be08b7f467cc13ac9",
+  "checks": {
+    "full_decode": "pass",
+    "final_scene_count": 8,
+    "caption_count": 13,
+    "caption_word_count": 181,
+    "source_lyric_word_count": 181,
+    "caption_word_sequence_matches_source": true,
+    "visual_contact_sheet_review": "pass",
+    "text_overflow_review": "pass"
+  },
+  "audio_lyric_qa": {
+    "mlx_whisper_large_v3_turbo": {
+      "verdict": "pass",
+      "coverage": 0.9945,
+      "high_confidence_replacements": 0
+    },
+    "faster_whisper_large_v3_turbo": {
+      "verdict": "pass",
+      "coverage": 0.9945,
+      "high_confidence_replacements": 0
+    },
+    "review_note": "The two recognizers disagreed at low confidence on govern/governed and in/and. The second recognizer returned the expected 'govern themselves'; the first returned the expected 'in committee'. Neither system found a high-confidence wrong-lyric substitution."
+  }
+}

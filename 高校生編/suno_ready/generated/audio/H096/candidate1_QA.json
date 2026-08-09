@@ -1,0 +1,192 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H096.md",
+  "audio": "高校生編/suno_ready/generated/audio/H096/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 113.08,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.006,
+  "expected_words": 167,
+  "transcribed_words": 168,
+  "matched_words": 163,
+  "coverage": 0.976,
+  "precision": 0.9702,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 166,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 8,
+      "length": 1,
+      "words": [
+        "alliances"
+      ]
+    },
+    {
+      "start": 34,
+      "length": 1,
+      "words": [
+        "turn"
+      ]
+    },
+    {
+      "start": 49,
+      "length": 1,
+      "words": [
+        "twentieth"
+      ]
+    },
+    {
+      "start": 124,
+      "length": 1,
+      "words": [
+        "cyberattacks"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 8,
+      "actual_start": 8,
+      "expected": [
+        "alliances"
+      ],
+      "actual": [
+        "alliance's"
+      ],
+      "actual_confidence": 0.4878,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 34,
+      "actual_start": 34,
+      "expected": [
+        "turn"
+      ],
+      "actual": [
+        "turned"
+      ],
+      "actual_confidence": 0.7166,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 49,
+      "actual_start": 49,
+      "expected": [
+        "twentieth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.859,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 124,
+      "actual_start": 124,
+      "expected": [
+        "cyberattacks"
+      ],
+      "actual": [
+        "cyber",
+        "attacks"
+      ],
+      "actual_confidence": 0.8037,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "International relations are a complex web between nations Alliance's treaties and trade agreements form the framework that supports the order of the world But when the interests of nations conflict, tension rises Some nations turned to aggression while others choose to negotiate After the two world wars of the 20th century, the United Nations was established Its purpose was to resolve disputes peacefully through negotiation But the veto power of the Security Council has often become an obstacle During the Cold War, the world was divided into two opposite camps The threat of nuclear weapons served as an overwhelming deterrent But the world was constantly on the edge of crisis Even after the Cold War ended, new threats such as regional conflicts, terrorism and cyber attacks have continued to emerge. No problem can be resolved by one nation alone. The work of a diplomat is to build bridges between opposing interests for nations that oppose one another to find mutual benefit. That is the ultimate objective of diplomacy",
+  "segments": [
+    {
+      "start": 4.18,
+      "end": 9.06,
+      "text": "International relations are a complex web between nations"
+    },
+    {
+      "start": 9.98,
+      "end": 16.88,
+      "text": "Alliance's treaties and trade agreements form the framework that supports the order of the world"
+    },
+    {
+      "start": 18.0,
+      "end": 22.44,
+      "text": "But when the interests of nations conflict, tension rises"
+    },
+    {
+      "start": 25.56,
+      "end": 30.74,
+      "text": "Some nations turned to aggression while others choose to negotiate"
+    },
+    {
+      "start": 31.44,
+      "end": 38.18,
+      "text": "After the two world wars of the 20th century, the United Nations was established"
+    },
+    {
+      "start": 38.18,
+      "end": 44.12,
+      "text": "Its purpose was to resolve disputes peacefully through negotiation"
+    },
+    {
+      "start": 45.34,
+      "end": 51.7,
+      "text": "But the veto power of the Security Council has often become an obstacle"
+    },
+    {
+      "start": 51.7,
+      "end": 57.46,
+      "text": "During the Cold War, the world was divided into two opposite camps"
+    },
+    {
+      "start": 58.7,
+      "end": 64.22,
+      "text": "The threat of nuclear weapons served as an overwhelming deterrent"
+    },
+    {
+      "start": 64.22,
+      "end": 69.56,
+      "text": "But the world was constantly on the edge of crisis"
+    },
+    {
+      "start": 69.56,
+      "end": 76.58,
+      "text": "Even after the Cold War ended, new threats such as regional conflicts, terrorism"
+    },
+    {
+      "start": 76.58,
+      "end": 81.5,
+      "text": "and cyber attacks have continued to emerge."
+    },
+    {
+      "start": 82.12,
+      "end": 86.8,
+      "text": "No problem can be resolved by one nation alone."
+    },
+    {
+      "start": 87.42,
+      "end": 93.5,
+      "text": "The work of a diplomat is to build bridges between opposing interests"
+    },
+    {
+      "start": 93.5,
+      "end": 99.8,
+      "text": "for nations that oppose one another to find mutual benefit."
+    },
+    {
+      "start": 99.8,
+      "end": 105.52,
+      "text": "That is the ultimate objective of diplomacy"
+    }
+  ]
+}

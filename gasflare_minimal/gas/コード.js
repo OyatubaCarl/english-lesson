@@ -40,6 +40,7 @@
  *   ログ        … 1行1イベントの生データ（クリア等）
  *   students   … メール ↔ 不透明ID の対応表（メールはここだけ）
  *   _data      … 集計用（非表示）。触らない
+ *   _wallet    … 生徒ごとの連続ログイン・アイテム（非表示）。触らない
  *   デプロイ管理 … 日時 / URL / Ver。デプロイし直すと追記される
  */
 
@@ -189,6 +190,7 @@ var SH_PROGRESS = '進捗';
 var SH_LOG = 'ログ';
 var SH_STUDENTS = 'students';
 var SH_DATA = '_data';
+var SH_WALLET = '_wallet';
 var SH_DEPLOY = 'デプロイ管理';
 
 /* =========================================================
@@ -208,7 +210,7 @@ function doGet(e) {
     var d = { ok: true, sheets: {}, props: {} };
     try {
       var names = ss_().getSheets().map(function (x) { return x.getName(); });
-      [SH_PROGRESS, SH_LOG, SH_STUDENTS, SH_DATA, SH_DEPLOY, SH_SETTINGS].forEach(function (n) {
+      [SH_PROGRESS, SH_LOG, SH_STUDENTS, SH_DATA, SH_WALLET, SH_DEPLOY, SH_SETTINGS].forEach(function (n) {
         d.sheets[n] = names.indexOf(n) >= 0;
       });
       d.sheetCount = names.length;
@@ -291,8 +293,9 @@ function doPost(e) {
     // アプリの自己紹介（タイトル・集計項目）。起動時の load に添えられてくる
     if (req.manifest) registerManifest_(req.manifest);
 
-    if (req.action === 'load') res = apiLoad_(claims.sid);
+    if (req.action === 'load') res = apiLoad_(claims.sid, req);
     else if (req.action === 'record') res = apiRecord_(claims.sid, req);
+    else if (req.action === 'wallet') res = apiWallet_(claims.sid, req.wallet || {});
     else res = { ok: false, error: 'unknown_action' };
   } catch (err) {
     res = { ok: false, error: String((err && err.message) || err) };
@@ -305,8 +308,14 @@ function doPost(e) {
  * ========================================================= */
 
 /** 生徒の記録を返す（別端末から入っても続きが引き継がれる） */
-function apiLoad_(sid) {
-  return { ok: true, sid: sid, progress: getProgress_(sid) };
+function apiLoad_(sid, req) {
+  var out = { ok: true, sid: sid, progress: getProgress_(sid), serverDate: walletToday_() };
+  if (req && req.wallet) {
+    var wr = apiWallet_(sid, req.wallet);
+    out.wallet = wr.wallet;
+    out.walletResult = wr.result;
+  }
+  return out;
 }
 
 /**
@@ -345,6 +354,194 @@ function apiRecord_(sid, req) {
     lock.releaseLock();
   }
   return { ok: true, progress: progress };
+}
+
+/* =========================================================
+ *  生徒ウォレット（サーバー日付を正本にしたログイン・アイテム）
+ *
+ *  タコスパーティーが wallet を送ったときだけ使う任意API。
+ *  既存アプリの load / record 形式は変えないため、他アプリには影響しない。
+ *  全操作を ScriptLock 内で処理し、別端末から同時に開いても二重配布・二重消費を防ぐ。
+ * ========================================================= */
+var WALLET_HEADERS = ['sid', 'json', 'updatedAt'];
+var WALLET_LIME_MAX = 2;
+var WALLET_AWARD_DAYS = [3, 7, 14, 30, 60, 100];
+
+function walletSheet_() {
+  var sh = sheet_(SH_WALLET, WALLET_HEADERS);
+  if (sh.getLastColumn() < WALLET_HEADERS.length) {
+    sh.getRange(1, 1, 1, WALLET_HEADERS.length).setValues([WALLET_HEADERS])
+      .setFontWeight('bold').setBackground('#F4A26A');
+  }
+  if (!sh.isSheetHidden()) sh.hideSheet();
+  return sh;
+}
+
+function walletToday_() {
+  return Utilities.formatDate(new Date(), 'Asia/Tokyo', 'yyyy-MM-dd');
+}
+
+function walletDayOrdinal_(key) {
+  var m = String(key || '').match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  return m ? Math.floor(Date.UTC(Number(m[1]), Number(m[2]) - 1, Number(m[3])) / 86400000) : NaN;
+}
+
+function walletDefault_() {
+  return { v: 1, loginBonusDate: '', loginStreak: 0, loginBestStreak: 0,
+    specialTacos: 0, freezeLimes: 0, limeRewardedLessons: [], spentOps: [] };
+}
+
+function walletInt_(v, lo, hi) {
+  var n = Math.floor(Number(v));
+  return isFinite(n) ? Math.max(lo, Math.min(hi, n)) : lo;
+}
+
+function walletSanitize_(raw) {
+  raw = raw && typeof raw === 'object' ? raw : {};
+  var out = walletDefault_();
+  var date = String(raw.loginBonusDate || '');
+  out.loginBonusDate = /^\d{4}-\d{2}-\d{2}$/.test(date) ? date : '';
+  out.loginStreak = walletInt_(raw.loginStreak, out.loginBonusDate ? 1 : 0, 100000);
+  out.loginBestStreak = Math.max(out.loginStreak, walletInt_(raw.loginBestStreak, 0, 100000));
+  out.specialTacos = walletInt_(raw.specialTacos, 0, 9999);
+  out.freezeLimes = walletInt_(raw.freezeLimes, 0, WALLET_LIME_MAX);
+
+  var lessons = Array.isArray(raw.limeRewardedLessons)
+    ? raw.limeRewardedLessons
+    : Object.keys(raw.limeRewardedLessons && typeof raw.limeRewardedLessons === 'object' ? raw.limeRewardedLessons : {})
+      .filter(function (k) { return !!raw.limeRewardedLessons[k]; });
+  var seenLessons = {};
+  lessons.slice(0, 500).forEach(function (k) {
+    k = String(k || '').toLowerCase();
+    if (/^[bmh]\d{1,3}$/.test(k)) seenLessons[k] = 1;
+  });
+  out.limeRewardedLessons = Object.keys(seenLessons);
+
+  var seenOps = {};
+  (Array.isArray(raw.spentOps) ? raw.spentOps : []).slice(-100).forEach(function (id) {
+    id = String(id || '').slice(0, 120);
+    if (/^[a-zA-Z0-9:_.-]+$/.test(id)) seenOps[id] = 1;
+  });
+  out.spentOps = Object.keys(seenOps).slice(-100);
+  return out;
+}
+
+function walletRecord_(sid) {
+  var sh = walletSheet_();
+  var last = sh.getLastRow();
+  var rows = last > 1 ? sh.getRange(2, 1, last - 1, WALLET_HEADERS.length).getValues() : [];
+  for (var i = 0; i < rows.length; i++) {
+    if (String(rows[i][0]) !== String(sid)) continue;
+    var raw = {};
+    try { raw = JSON.parse(String(rows[i][1] || '{}')); } catch (e) { raw = {}; }
+    return { sh: sh, row: i + 2, exists: true, wallet: walletSanitize_(raw) };
+  }
+  return { sh: sh, row: Math.max(2, last + 1), exists: false, wallet: walletDefault_() };
+}
+
+function walletWrite_(rec, sid, wallet) {
+  rec.sh.getRange(rec.row, 1, 1, WALLET_HEADERS.length)
+    .setValues([[String(sid), JSON.stringify(walletSanitize_(wallet)), new Date()]]);
+}
+
+function walletPublic_(wallet) {
+  var w = walletSanitize_(wallet);
+  return { v: 1, serverDate: walletToday_(), loginBonusDate: w.loginBonusDate,
+    loginStreak: w.loginStreak, loginBestStreak: w.loginBestStreak,
+    specialTacos: w.specialTacos, freezeLimes: w.freezeLimes,
+    limeRewardedLessons: w.limeRewardedLessons.slice() };
+}
+
+function walletLogin_(wallet) {
+  var today = walletToday_();
+  var previous = Math.max(1, walletInt_(wallet.loginStreak, 1, 100000));
+  var bestBefore = Math.max(previous, walletInt_(wallet.loginBestStreak, 0, 100000));
+  if (wallet.loginBonusDate === today) {
+    return { ok: true, op: 'login', amount: 0, previousStreak: previous, streak: previous,
+      bestStreak: bestBefore, gap: 0, missedDays: 0, usedFreeze: 0,
+      freezeLeft: wallet.freezeLimes, awardDays: 0, reset: false, alreadyClaimed: true };
+  }
+
+  var gap = walletDayOrdinal_(today) - walletDayOrdinal_(wallet.loginBonusDate);
+  var missedDays = isFinite(gap) && gap > 1 ? gap - 1 : 0;
+  var canFreeze = missedDays > 0 && missedDays <= wallet.freezeLimes;
+  var usedFreeze = canFreeze ? missedDays : 0;
+  var reset = !(gap === 1 || canFreeze);
+  var streak = gap === 1 ? previous + 1 : (canFreeze ? previous + gap : 1);
+  streak = Math.min(100000, streak);
+  var bestStreak = Math.max(bestBefore, streak);
+  var awardDays = 0;
+  WALLET_AWARD_DAYS.forEach(function (days) {
+    if (days > bestBefore && days <= bestStreak) awardDays = days;
+  });
+  var amount = Math.min(3, streak);
+
+  wallet.loginBonusDate = today;
+  wallet.loginStreak = streak;
+  wallet.loginBestStreak = bestStreak;
+  wallet.freezeLimes -= usedFreeze;
+  wallet.specialTacos = Math.min(9999, wallet.specialTacos + amount);
+  return { ok: true, op: 'login', amount: amount, previousStreak: previous, streak: streak,
+    bestStreak: bestStreak, gap: isFinite(gap) ? gap : 0, missedDays: missedDays,
+    usedFreeze: usedFreeze, freezeLeft: wallet.freezeLimes, awardDays: awardDays,
+    reset: reset, alreadyClaimed: false };
+}
+
+function walletGrantLime_(wallet, op) {
+  var lesson = String(op.lesson || '').toLowerCase();
+  if (!/^[bmh]\d{1,3}$/.test(lesson)) {
+    return { ok: false, op: 'grant_lime', error: 'bad_lesson', earned: false, count: wallet.freezeLimes };
+  }
+  if (wallet.limeRewardedLessons.indexOf(lesson) >= 0) {
+    return { ok: true, op: 'grant_lime', lesson: lesson, earned: false, already: true,
+      full: wallet.freezeLimes >= WALLET_LIME_MAX, count: wallet.freezeLimes };
+  }
+  wallet.limeRewardedLessons.push(lesson);
+  var before = wallet.freezeLimes;
+  wallet.freezeLimes = Math.min(WALLET_LIME_MAX, before + 1);
+  return { ok: true, op: 'grant_lime', lesson: lesson, earned: wallet.freezeLimes > before,
+    already: false, full: wallet.freezeLimes >= WALLET_LIME_MAX, count: wallet.freezeLimes };
+}
+
+function walletSpendSpecial_(wallet, op) {
+  var id = String(op.requestId || '').slice(0, 120);
+  if (!/^[a-zA-Z0-9:_.-]+$/.test(id)) {
+    return { ok: false, op: 'spend_special', error: 'bad_request', spent: false, count: wallet.specialTacos };
+  }
+  if (wallet.spentOps.indexOf(id) >= 0) {
+    return { ok: true, op: 'spend_special', spent: true, duplicate: true, count: wallet.specialTacos };
+  }
+  if (wallet.specialTacos < 1) {
+    return { ok: false, op: 'spend_special', error: 'empty', spent: false, count: wallet.specialTacos };
+  }
+  wallet.specialTacos--;
+  wallet.spentOps.push(id);
+  wallet.spentOps = wallet.spentOps.slice(-100);
+  return { ok: true, op: 'spend_special', spent: true, duplicate: false, count: wallet.specialTacos };
+}
+
+function walletApplyOp_(wallet, op) {
+  var name = String((op && op.op) || 'sync');
+  if (name === 'login') return walletLogin_(wallet);
+  if (name === 'grant_lime') return walletGrantLime_(wallet, op || {});
+  if (name === 'spend_special') return walletSpendSpecial_(wallet, op || {});
+  if (name === 'sync') return { ok: true, op: 'sync' };
+  return { ok: false, op: name, error: 'unknown_wallet_op' };
+}
+
+function apiWallet_(sid, op) {
+  op = op && typeof op === 'object' ? op : {};
+  var lock = LockService.getScriptLock();
+  lock.waitLock(25000);
+  try {
+    var rec = walletRecord_(sid);
+    var wallet = rec.exists ? rec.wallet : walletSanitize_(op.seed || {});
+    var result = walletApplyOp_(wallet, op);
+    walletWrite_(rec, sid, wallet);
+    return { ok: true, sid: sid, serverDate: walletToday_(), wallet: walletPublic_(wallet), result: result };
+  } finally {
+    lock.releaseLock();
+  }
 }
 
 /** 自分の記録をブラウザから見る（?action=me）。ログイン済みの本人にだけ返す */
@@ -675,7 +872,7 @@ function recordAccess() {
 function hasExistingData_(ss) {
   return ss.getSheets().some(function (sh) {
     var n = sh.getName();
-    if ((n === SH_PROGRESS || n === SH_LOG || n === SH_STUDENTS || n === SH_DATA) && sh.getLastRow() > 1) return true;
+    if ((n === SH_PROGRESS || n === SH_LOG || n === SH_STUDENTS || n === SH_DATA || n === SH_WALLET) && sh.getLastRow() > 1) return true;
     if (n === SH_DEPLOY && sh.getRange(3, 2).getValue()) return true;
     return false;
   });
@@ -685,7 +882,7 @@ function clearAllData_(ss) {
   PropertiesService.getScriptProperties().deleteProperty('instanceId');
   ss.getSheets().forEach(function (sh) {
     var n = sh.getName();
-    if (n === SH_LOG || n === SH_STUDENTS || n === SH_DATA) {
+    if (n === SH_LOG || n === SH_STUDENTS || n === SH_DATA || n === SH_WALLET) {
       if (sh.getLastRow() > 1) sh.deleteRows(2, sh.getLastRow() - 1);
     } else if (n === SH_PROGRESS) {
       if (sh.getLastRow() > 2) sh.deleteRows(3, sh.getLastRow() - 2);
@@ -788,12 +985,12 @@ function resetAll() {
 /** 配布用に初期化: 「設定」だけ残して他のシートを全部削除し、記録・署名鍵を白紙に戻す。
  *  他の先生がこのスプレッドシートをコピーすれば、まっさらな自分専用DBとして使える。
  *  ・サイトURL（設定シートB2）は残す ── コピーに引き継ぐための設定なので消さない。
- *  ・データ系シート（進捗/ログ/students/_data/デプロイ管理 と手作りシート）は削除。次回アクセスで自動再生成される。
+ *  ・データ系シート（進捗/ログ/students/_data/_wallet/デプロイ管理 と手作りシート）は削除。次回アクセスで自動再生成される。
  *  ・鍵などのスクリプトプロパティは元々コピーで引き継がれないが、原本も白紙にしておく。 */
 function resetForHandoff() {
   var ui = SpreadsheetApp.getUi();
   if (ui.alert('配布用に初期化',
-      '「設定」以外のシート（進捗 / ログ / students / _data / デプロイ管理 など）を\n'
+      '「設定」以外のシート（進捗 / ログ / students / _data / _wallet / デプロイ管理 など）を\n'
       + 'すべて削除し、記録と署名鍵を白紙に戻します。\n'
       + 'サイトURL（設定シートのB2）は残します。\n\n'
       + '※ 元に戻せません。他の先生に配る直前にだけ実行してください。\n\n実行しますか？',
@@ -921,6 +1118,7 @@ function setup() {
   sheet_(SH_STUDENTS, ['メール', '生徒ID', '初回']);
   sheet_(SH_LOG, ['日時', '生徒', '項目ID', '項目', '内容']);
   dataSheet_();
+  walletSheet_();
   progressSheet_();
   getOrCreateDeploySheet_(ss_());
   signingKey_();

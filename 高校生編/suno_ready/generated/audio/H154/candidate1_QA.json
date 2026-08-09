@@ -1,0 +1,218 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H154.md",
+  "audio": "高校生編/suno_ready/generated/audio/H154/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 151.0,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 250,
+  "transcribed_words": 250,
+  "matched_words": 247,
+  "coverage": 0.988,
+  "precision": 0.988,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 249,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 3,
+      "length": 1,
+      "words": [
+        "thirty"
+      ]
+    },
+    {
+      "start": 130,
+      "length": 1,
+      "words": [
+        "moreover"
+      ]
+    },
+    {
+      "start": 214,
+      "length": 1,
+      "words": [
+        "seventy"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 130,
+      "actual_start": 129,
+      "expected": [
+        "moreover"
+      ],
+      "actual": [
+        "more",
+        "over"
+      ],
+      "actual_confidence": 0.6716,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 193,
+      "actual_start": 193,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.6986
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 3,
+      "actual_start": 3,
+      "expected": [
+        "thirty"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 214,
+      "actual_start": 215,
+      "expected": [
+        "seventy"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "Having worked for 30 years as the deputy branch manager of a bank, I retired at the mandatory age. On my last day, my younger colleagues gave me a bouquet and a handwritten letter. The letter said, thank you for the things you reminded us of I had never been an imposing manager But I had urged sincerity in my subordinates After retirement, my wife and I set off On an around the world trip On a luxury cruise ship, three months at sea The ship traveled the Mediterranean, the African coast, and the Gulf of Mexico At each port we bought items, but even luxurious days grow tiring Lavish meals, dinners in formal dress and polished evening music A pretty similar pattern Continued every day My wife and I more over Gained more time to talk It was time to rebuild the close relationship We had not been able to have in our working years Our son's birthday, our daughter's wedding The story of how we helped raise our grandchildren We would record our memories while also talking about plans for the future. The guests on the ship as an observer would see you were diverse. Retired bankers, writers, lawyers. Everyone had walked a different life. We talked with an elderly couple. The husband was 76. Six, life is a continuing series of stages He laughed, life has stages Youth, maturity, old age Each stage has its own unique beauty I want to live the rest of my life with gratitude",
+  "segments": [
+    {
+      "start": 8.88,
+      "end": 18.62,
+      "text": "Having worked for 30 years as the deputy branch manager of a bank, I retired at the mandatory age."
+    },
+    {
+      "start": 19.2,
+      "end": 25.54,
+      "text": "On my last day, my younger colleagues gave me a bouquet and a handwritten letter."
+    },
+    {
+      "start": 25.54,
+      "end": 31.88,
+      "text": "The letter said, thank you for the things you reminded us of"
+    },
+    {
+      "start": 31.88,
+      "end": 35.78,
+      "text": "I had never been an imposing manager"
+    },
+    {
+      "start": 35.78,
+      "end": 40.8,
+      "text": "But I had urged sincerity in my subordinates"
+    },
+    {
+      "start": 40.8,
+      "end": 44.9,
+      "text": "After retirement, my wife and I set off"
+    },
+    {
+      "start": 44.9,
+      "end": 47.44,
+      "text": "On an around the world trip"
+    },
+    {
+      "start": 47.44,
+      "end": 51.94,
+      "text": "On a luxury cruise ship, three months at sea"
+    },
+    {
+      "start": 51.94,
+      "end": 60.28,
+      "text": "The ship traveled the Mediterranean, the African coast, and the Gulf of Mexico"
+    },
+    {
+      "start": 60.94,
+      "end": 69.2,
+      "text": "At each port we bought items, but even luxurious days grow tiring"
+    },
+    {
+      "start": 69.94,
+      "end": 75.08,
+      "text": "Lavish meals, dinners in formal dress and polished evening music"
+    },
+    {
+      "start": 75.08,
+      "end": 79.48,
+      "text": "A pretty similar pattern Continued every day"
+    },
+    {
+      "start": 79.48,
+      "end": 84.54,
+      "text": "My wife and I more over Gained more time to talk"
+    },
+    {
+      "start": 85.96,
+      "end": 92.0,
+      "text": "It was time to rebuild the close relationship We had not been able to have in our working"
+    },
+    {
+      "start": 92.0,
+      "end": 96.68,
+      "text": "years Our son's birthday, our daughter's wedding"
+    },
+    {
+      "start": 97.4,
+      "end": 100.36,
+      "text": "The story of how we helped raise our grandchildren"
+    },
+    {
+      "start": 100.36,
+      "end": 108.8,
+      "text": "We would record our memories while also talking about plans for the future."
+    },
+    {
+      "start": 110.16,
+      "end": 114.5,
+      "text": "The guests on the ship as an observer would see you were diverse."
+    },
+    {
+      "start": 114.94,
+      "end": 119.7,
+      "text": "Retired bankers, writers, lawyers. Everyone had walked a different life."
+    },
+    {
+      "start": 120.32,
+      "end": 124.24,
+      "text": "We talked with an elderly couple. The husband was 76."
+    },
+    {
+      "start": 124.24,
+      "end": 128.28,
+      "text": "Six, life is a continuing series of stages"
+    },
+    {
+      "start": 129.24,
+      "end": 133.24,
+      "text": "He laughed, life has stages"
+    },
+    {
+      "start": 134.24,
+      "end": 138.1,
+      "text": "Youth, maturity, old age"
+    },
+    {
+      "start": 139.24,
+      "end": 143.14,
+      "text": "Each stage has its own unique beauty"
+    },
+    {
+      "start": 144.24,
+      "end": 148.48,
+      "text": "I want to live the rest of my life with gratitude"
+    }
+  ]
+}

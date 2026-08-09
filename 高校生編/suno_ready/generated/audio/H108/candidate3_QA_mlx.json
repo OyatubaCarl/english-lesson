@@ -1,0 +1,211 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H108.md",
+  "audio": "高校生編/suno_ready/generated/audio/H108/candidate3-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 149.48,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0053,
+  "expected_words": 187,
+  "transcribed_words": 188,
+  "matched_words": 186,
+  "coverage": 0.9947,
+  "precision": 0.9894,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 186,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 43,
+      "length": 1,
+      "words": [
+        "drop"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 43,
+      "actual_start": 43,
+      "expected": [
+        "drop"
+      ],
+      "actual": [
+        "dropped"
+      ],
+      "actual_confidence": 0.9985,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 176,
+      "actual_start": 176,
+      "expected": [],
+      "actual": [
+        "and"
+      ],
+      "actual_confidence": 0.7354
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "On the battlefield, there was a fear that no movie can convey. An armed unit advanced through the forest, everyone held their breath. Suddenly from the front, the sound of a blast echoed The commander gave orders in a low voice Scatter Everyone dropped to the ground Bullets flew between the trees Combat began Beside a young soldier A comrade fell, a bloody scene spread before them Minutes later, the shooting stopped And the area was wrapped in an uncanny silence The soldiers, trembling, rose to their feet Who had survived? Who had been lost? The tragedy of war is the accumulation of such moments Even the distinction between friend and enemy Is sometimes lost in confusion Soldiers who return from the battlefield Are haunted by those memories for life Some develop PTSD or depression And some are driven to suicide The wounds of war remain deep Long after the shooting has stopped There are no winners in war A veteran once said Both victory and defeat Give birth to the same grief In the end And will the day ever come When humanity can truly abolish war?",
+  "segments": [
+    {
+      "start": 12.58,
+      "end": 18.3,
+      "text": "On the battlefield, there was a fear that no movie can convey."
+    },
+    {
+      "start": 20.02,
+      "end": 25.54,
+      "text": "An armed unit advanced through the forest, everyone held their breath."
+    },
+    {
+      "start": 26.76,
+      "end": 32.22,
+      "text": "Suddenly from the front, the sound of a blast echoed"
+    },
+    {
+      "start": 32.22,
+      "end": 37.38,
+      "text": "The commander gave orders in a low voice"
+    },
+    {
+      "start": 37.38,
+      "end": 39.14,
+      "text": "Scatter"
+    },
+    {
+      "start": 42.06,
+      "end": 44.78,
+      "text": "Everyone dropped to the ground"
+    },
+    {
+      "start": 44.78,
+      "end": 47.34,
+      "text": "Bullets flew between the trees"
+    },
+    {
+      "start": 47.34,
+      "end": 49.7,
+      "text": "Combat began"
+    },
+    {
+      "start": 49.7,
+      "end": 53.32,
+      "text": "Beside a young soldier"
+    },
+    {
+      "start": 53.32,
+      "end": 59.26,
+      "text": "A comrade fell, a bloody scene spread before them"
+    },
+    {
+      "start": 59.26,
+      "end": 63.02,
+      "text": "Minutes later, the shooting stopped"
+    },
+    {
+      "start": 63.02,
+      "end": 67.22,
+      "text": "And the area was wrapped in an uncanny silence"
+    },
+    {
+      "start": 68.42,
+      "end": 75.32,
+      "text": "The soldiers, trembling, rose to their feet"
+    },
+    {
+      "start": 77.2,
+      "end": 81.04,
+      "text": "Who had survived? Who had been lost?"
+    },
+    {
+      "start": 81.04,
+      "end": 87.32,
+      "text": "The tragedy of war is the accumulation of such moments"
+    },
+    {
+      "start": 87.32,
+      "end": 92.28,
+      "text": "Even the distinction between friend and enemy"
+    },
+    {
+      "start": 92.28,
+      "end": 95.7,
+      "text": "Is sometimes lost in confusion"
+    },
+    {
+      "start": 95.7,
+      "end": 99.94,
+      "text": "Soldiers who return from the battlefield"
+    },
+    {
+      "start": 99.94,
+      "end": 104.26,
+      "text": "Are haunted by those memories for life"
+    },
+    {
+      "start": 105.6,
+      "end": 109.72,
+      "text": "Some develop PTSD or depression"
+    },
+    {
+      "start": 109.72,
+      "end": 112.52,
+      "text": "And some are driven to suicide"
+    },
+    {
+      "start": 112.52,
+      "end": 115.56,
+      "text": "The wounds of war remain deep"
+    },
+    {
+      "start": 115.56,
+      "end": 118.54,
+      "text": "Long after the shooting has stopped"
+    },
+    {
+      "start": 118.54,
+      "end": 122.12,
+      "text": "There are no winners in war"
+    },
+    {
+      "start": 122.12,
+      "end": 124.86,
+      "text": "A veteran once said"
+    },
+    {
+      "start": 124.86,
+      "end": 128.42,
+      "text": "Both victory and defeat"
+    },
+    {
+      "start": 128.42,
+      "end": 131.28,
+      "text": "Give birth to the same grief"
+    },
+    {
+      "start": 132.68,
+      "end": 135.9,
+      "text": "In the end"
+    },
+    {
+      "start": 135.9,
+      "end": 141.74,
+      "text": "And will the day ever come"
+    },
+    {
+      "start": 142.9,
+      "end": 149.48,
+      "text": "When humanity can truly abolish war?"
+    }
+  ]
+}

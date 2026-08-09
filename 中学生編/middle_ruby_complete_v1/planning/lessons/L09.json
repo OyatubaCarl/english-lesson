@@ -1,0 +1,685 @@
+{
+  "lesson": 9,
+  "source_config": "中学生編/mio_video_l2_l10_sentence_v2/L9/planning/lesson.json",
+  "title_en": "Lesson 9  A School Day",
+  "title_ja": "学校のある一日",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 8,
+  "lines": [
+    {
+      "line": 1,
+      "english": "At my school, students have to wear a uniform.",
+      "source_ja": "わたしの学校では、生徒は制服を着なければなりません。",
+      "display_ja": "わたしの学校では、生徒は制服を着なければなりません。",
+      "corrected_translation": false,
+      "mixed": "わたしの学校では、生徒は uniform を wear しなければなりません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしの学校では、生徒は ",
+          "parts": [
+            {
+              "text": "わたしの",
+              "ruby": ""
+            },
+            {
+              "text": "学校",
+              "ruby": "がっこう"
+            },
+            {
+              "text": "では、",
+              "ruby": ""
+            },
+            {
+              "text": "生徒",
+              "ruby": "せいと"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "uniform",
+          "ruby": "制服"
+        },
+        {
+          "type": "ja",
+          "text": " を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "wear",
+          "ruby": "着なけれ"
+        },
+        {
+          "type": "ja",
+          "text": " しなけれ",
+          "parts": [
+            {
+              "text": "しなけれ",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "ばなりません。",
+          "parts": [
+            {
+              "text": "ばなりません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "wear",
+          "canonical_word": "wear",
+          "meaning": "着る"
+        },
+        {
+          "english": "uniform",
+          "canonical_word": "uniform",
+          "meaning": "制服"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "uniform",
+          "reading": "制服",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "uniform",
+          "canonical_meaning": "制服"
+        },
+        {
+          "english": "wear",
+          "reading": "着なけれ",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "wear",
+          "canonical_meaning": "着る"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "english": "Every morning, we have to be in the classroom on time.",
+      "source_ja": "毎朝、時間どおりに教室にいなければなりません。",
+      "display_ja": "毎朝、時間どおりに教室にいなければなりません。",
+      "corrected_translation": false,
+      "mixed": "毎朝、時間どおりに教室にいなければなりません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "毎朝、時間どおりに教室にいなければなりません。",
+          "parts": [
+            {
+              "text": "毎朝",
+              "ruby": "まいあさ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "時間",
+              "ruby": "じかん"
+            },
+            {
+              "text": "どおりに",
+              "ruby": ""
+            },
+            {
+              "text": "教室",
+              "ruby": "きょうしつ"
+            },
+            {
+              "text": "にいなければなりません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 3,
+      "english": "In class, they have to study many subjects: math, science, and English.",
+      "source_ja": "授業では、数学、理科、英語など多くの教科を学びます。",
+      "display_ja": "授業では、数学、理科、英語など多くの教科を学びます。",
+      "corrected_translation": false,
+      "mixed": "授業では、 math、 science、英語など多くの subjects を学びます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "授業では、 ",
+          "parts": [
+            {
+              "text": "授業",
+              "ruby": "じゅぎょう"
+            },
+            {
+              "text": "では、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "math",
+          "ruby": "数学"
+        },
+        {
+          "type": "ja",
+          "text": "、 ",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "science",
+          "ruby": "理科"
+        },
+        {
+          "type": "ja",
+          "text": "、英語など多くの ",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "英語",
+              "ruby": "えいご"
+            },
+            {
+              "text": "など",
+              "ruby": ""
+            },
+            {
+              "text": "多",
+              "ruby": "おお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "subjects",
+          "ruby": "教科"
+        },
+        {
+          "type": "ja",
+          "text": " を学びます。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "学",
+              "ruby": "まな"
+            },
+            {
+              "text": "びます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "subjects",
+          "canonical_word": "subject",
+          "meaning": "教科"
+        },
+        {
+          "english": "math",
+          "canonical_word": "math",
+          "meaning": "数学"
+        },
+        {
+          "english": "science",
+          "canonical_word": "science",
+          "meaning": "理科"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "math",
+          "reading": "数学",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "math",
+          "canonical_meaning": "数学"
+        },
+        {
+          "english": "science",
+          "reading": "理科",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "science",
+          "canonical_meaning": "理科"
+        },
+        {
+          "english": "subjects",
+          "reading": "教科",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "subject",
+          "canonical_meaning": "教科"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "When I get home, I have to finish my homework before dinner.",
+      "source_ja": "家に帰ると、夕食前に宿題を終えなければなりません。",
+      "display_ja": "家に帰ると、夕食前に宿題を終えなければなりません。",
+      "corrected_translation": false,
+      "mixed": "家に帰ると、夕食前に homework を finish しなければなりません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "家に帰ると、夕食前に ",
+          "parts": [
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "帰",
+              "ruby": "かえ"
+            },
+            {
+              "text": "ると、",
+              "ruby": ""
+            },
+            {
+              "text": "夕食",
+              "ruby": "ゆうしょく"
+            },
+            {
+              "text": "前",
+              "ruby": "まえ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "homework",
+          "ruby": "宿題"
+        },
+        {
+          "type": "ja",
+          "text": " を ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "finish",
+          "ruby": "終えなけれ"
+        },
+        {
+          "type": "ja",
+          "text": " しなけれ",
+          "parts": [
+            {
+              "text": "しなけれ",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "ばなりません。",
+          "parts": [
+            {
+              "text": "ばなりません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "finish",
+          "canonical_word": "finish",
+          "meaning": "終える"
+        },
+        {
+          "english": "homework",
+          "canonical_word": "homework",
+          "meaning": "宿題"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "homework",
+          "reading": "宿題",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "homework",
+          "canonical_meaning": "宿題"
+        },
+        {
+          "english": "finish",
+          "reading": "終えなけれ",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "finish",
+          "canonical_meaning": "終える"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "My sister sometimes asks, “Do you have to finish all of it tonight?”",
+      "source_ja": "妹は時々、「全部今夜中に終えなければならないの？」と聞きます。",
+      "display_ja": "妹は時々、「全部今夜中に終えなければならないの？」と聞きます。",
+      "corrected_translation": false,
+      "mixed": "妹は時々、「全部今夜中に finish しなければならないの？」と聞きます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "妹は時々、「全部今夜中に ",
+          "parts": [
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "時々",
+              "ruby": "ときどき"
+            },
+            {
+              "text": "、「",
+              "ruby": ""
+            },
+            {
+              "text": "全部",
+              "ruby": "ぜんぶ"
+            },
+            {
+              "text": "今夜",
+              "ruby": "こんや"
+            },
+            {
+              "text": "中",
+              "ruby": "ちゅう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "finish",
+          "ruby": "終えなけれ"
+        },
+        {
+          "type": "ja",
+          "text": " しなけれ",
+          "parts": [
+            {
+              "text": "しなけれ",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "ばならないの？」と聞きます。",
+          "parts": [
+            {
+              "text": "ばならないの？」と",
+              "ruby": ""
+            },
+            {
+              "text": "聞",
+              "ruby": "き"
+            },
+            {
+              "text": "きます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "finish",
+          "canonical_word": "finish",
+          "meaning": "終える"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "finish",
+          "reading": "終えなけれ",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "finish",
+          "canonical_meaning": "終える"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "“Yes, I do,” I answer.",
+      "source_ja": "「うん、そうだよ」と、わたしは答えます。",
+      "display_ja": "「うん、そうだよ」と、わたしは答えます。",
+      "corrected_translation": false,
+      "mixed": "「うん、そうだよ」と、わたしは答えます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「うん、そうだよ」と、わたしは答えます。",
+          "parts": [
+            {
+              "text": "「うん、そうだよ」と、わたしは",
+              "ruby": ""
+            },
+            {
+              "text": "答",
+              "ruby": "こた"
+            },
+            {
+              "text": "えます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 7,
+      "english": "On Sunday, I do not have to go to school, but I have to wash the dishes at home.",
+      "source_ja": "日曜日は学校へ行かなくてよいですが、家で皿を洗わなければなりません。",
+      "display_ja": "日曜日は学校へ行かなくてよいですが、家で皿を洗わなければなりません。",
+      "corrected_translation": false,
+      "mixed": "日曜日は学校へ行かなくてよいですが、家で dishes を洗わなければなりません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "日曜日は学校へ行かなくてよいですが、家で ",
+          "parts": [
+            {
+              "text": "日曜",
+              "ruby": "にちよう"
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "学校",
+              "ruby": "がっこう"
+            },
+            {
+              "text": "へ",
+              "ruby": ""
+            },
+            {
+              "text": "行",
+              "ruby": "い"
+            },
+            {
+              "text": "かなくてよいですが、",
+              "ruby": ""
+            },
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "dishes",
+          "ruby": "皿"
+        },
+        {
+          "type": "ja",
+          "text": " を洗わなければなりません。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "洗",
+              "ruby": "あら"
+            },
+            {
+              "text": "わなければなりません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "dishes",
+          "canonical_word": "dish",
+          "meaning": "お皿"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "dishes",
+          "reading": "皿",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "dish",
+          "canonical_meaning": "お皿"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "It is sometimes hard, but helping my family is very important.",
+      "source_ja": "時には大変ですが、家族を助けることはとても大切です。",
+      "display_ja": "時には大変ですが、家族を助けることはとても大切です。",
+      "corrected_translation": false,
+      "mixed": "時には大変ですが、家族を助けることはとても大切です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "時には大変ですが、家族を助けることはとても大切です。",
+          "parts": [
+            {
+              "text": "時",
+              "ruby": "とき"
+            },
+            {
+              "text": "には",
+              "ruby": ""
+            },
+            {
+              "text": "大変",
+              "ruby": "たいへん"
+            },
+            {
+              "text": "ですが、",
+              "ruby": ""
+            },
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "助",
+              "ruby": "たす"
+            },
+            {
+              "text": "けることはとても",
+              "ruby": ""
+            },
+            {
+              "text": "大切",
+              "ruby": "たいせつ"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H150.md",
+  "audio": "高校生編/suno_ready/generated/audio/H150/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 149.72,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9922,
+  "expected_words": 258,
+  "transcribed_words": 256,
+  "matched_words": 252,
+  "coverage": 0.9767,
+  "precision": 0.9844,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 257,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 11,
+      "length": 2,
+      "words": [
+        "how",
+        "to"
+      ]
+    },
+    {
+      "start": 37,
+      "length": 1,
+      "words": [
+        "percent"
+      ]
+    },
+    {
+      "start": 87,
+      "length": 1,
+      "words": [
+        "in"
+      ]
+    },
+    {
+      "start": 143,
+      "length": 1,
+      "words": [
+        "emits"
+      ]
+    },
+    {
+      "start": 201,
+      "length": 1,
+      "words": [
+        "too"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 11,
+      "actual_start": 11,
+      "expected": [
+        "how",
+        "to"
+      ],
+      "actual": [
+        "cater"
+      ],
+      "actual_confidence": 0.3353,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 87,
+      "actual_start": 85,
+      "expected": [
+        "in"
+      ],
+      "actual": [
+        "and"
+      ],
+      "actual_confidence": 0.6615,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 143,
+      "actual_start": 141,
+      "expected": [
+        "emits"
+      ],
+      "actual": [
+        "amidst"
+      ],
+      "actual_confidence": 0.6511,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 201,
+      "actual_start": 199,
+      "expected": [
+        "too"
+      ],
+      "actual": [
+        "to"
+      ],
+      "actual_confidence": 0.2208,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 37,
+      "actual_start": 36,
+      "expected": [
+        "percent"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "By 2050, the world is predicted to have a population of 9,7 billion. Cater feed such a rapidly growing population is one of the greatest challenges in human history. Food production is said to need to increase by 70% from today. But we cannot increase arable land. Rather through climate change and desertification The land suitable for farming is shrinking A shift to plant-based foods rich in fiber Reducing excessive meat consumption And eating insects These alternatives are being proposed Vertical farming is gaining attention Inside buildings and cities Vegetables are grown hydroponically Without needing extensive farmland, fresh vegetables can be supplied from the urban outskirts. Gene editing technology also offers hope. Crops that increase yields resist pests and endure flood and drought. It is an issue that brings both promise and concern. The problem of meat is also serious. The livestock industry amidst huge amounts of greenhouse gases Cultured meat, meat grown in a factory May be an alternative that reduces environmental burdens The problem of food waste cannot be overlooked One third of food produced in the world is thrown away Just reducing this alone could feed many people There is something we can do at the individual level To plan meals, use leftovers, and reduce food waste Choose locally produced ingredients Gradually reduce meat consumption Food is the basis of survival And the core of culture The future dining table is built by the sum of choices made by each of us Our love for the earth should be reflected in our food choices too.",
+  "segments": [
+    {
+      "start": 6.1,
+      "end": 11.68,
+      "text": "By 2050, the world is predicted to have a population of 9,7 billion."
+    },
+    {
+      "start": 12.24,
+      "end": 17.56,
+      "text": "Cater feed such a rapidly growing population is one of the greatest challenges in human history."
+    },
+    {
+      "start": 18.54,
+      "end": 22.8,
+      "text": "Food production is said to need to increase by 70% from today."
+    },
+    {
+      "start": 23.7,
+      "end": 26.04,
+      "text": "But we cannot increase arable land."
+    },
+    {
+      "start": 26.04,
+      "end": 30.2,
+      "text": "Rather through climate change and desertification"
+    },
+    {
+      "start": 31.04,
+      "end": 34.48,
+      "text": "The land suitable for farming is shrinking"
+    },
+    {
+      "start": 35.04,
+      "end": 38.1,
+      "text": "A shift to plant-based foods rich in fiber"
+    },
+    {
+      "start": 38.1,
+      "end": 40.86,
+      "text": "Reducing excessive meat consumption"
+    },
+    {
+      "start": 42.04,
+      "end": 43.56,
+      "text": "And eating insects"
+    },
+    {
+      "start": 44.86,
+      "end": 47.52,
+      "text": "These alternatives are being proposed"
+    },
+    {
+      "start": 48.04,
+      "end": 49.96,
+      "text": "Vertical farming is gaining attention"
+    },
+    {
+      "start": 49.96,
+      "end": 52.32,
+      "text": "Inside buildings and cities"
+    },
+    {
+      "start": 52.32,
+      "end": 55.04,
+      "text": "Vegetables are grown hydroponically"
+    },
+    {
+      "start": 55.04,
+      "end": 63.38,
+      "text": "Without needing extensive farmland, fresh vegetables can be supplied from the urban outskirts."
+    },
+    {
+      "start": 63.68,
+      "end": 67.2,
+      "text": "Gene editing technology also offers hope."
+    },
+    {
+      "start": 67.52,
+      "end": 72.54,
+      "text": "Crops that increase yields resist pests and endure flood and drought."
+    },
+    {
+      "start": 73.02,
+      "end": 77.4,
+      "text": "It is an issue that brings both promise and concern."
+    },
+    {
+      "start": 78.24,
+      "end": 81.1,
+      "text": "The problem of meat is also serious."
+    },
+    {
+      "start": 83.68,
+      "end": 88.0,
+      "text": "The livestock industry amidst huge amounts of greenhouse gases"
+    },
+    {
+      "start": 88.0,
+      "end": 90.46,
+      "text": "Cultured meat, meat grown in a factory"
+    },
+    {
+      "start": 90.46,
+      "end": 94.44,
+      "text": "May be an alternative that reduces environmental burdens"
+    },
+    {
+      "start": 94.44,
+      "end": 97.1,
+      "text": "The problem of food waste cannot be overlooked"
+    },
+    {
+      "start": 97.68,
+      "end": 101.98,
+      "text": "One third of food produced in the world is thrown away"
+    },
+    {
+      "start": 101.98,
+      "end": 108.18,
+      "text": "Just reducing this alone could feed many people"
+    },
+    {
+      "start": 111.1,
+      "end": 113.82,
+      "text": "There is something we can do at the individual level"
+    },
+    {
+      "start": 113.82,
+      "end": 117.78,
+      "text": "To plan meals, use leftovers, and reduce food waste"
+    },
+    {
+      "start": 118.3,
+      "end": 120.4,
+      "text": "Choose locally produced ingredients"
+    },
+    {
+      "start": 120.4,
+      "end": 122.52,
+      "text": "Gradually reduce meat consumption"
+    },
+    {
+      "start": 123.1,
+      "end": 126.26,
+      "text": "Food is the basis of survival"
+    },
+    {
+      "start": 128.3,
+      "end": 130.06,
+      "text": "And the core of culture"
+    },
+    {
+      "start": 131.9,
+      "end": 137.56,
+      "text": "The future dining table is built by the sum of choices made by each of us"
+    },
+    {
+      "start": 137.56,
+      "end": 144.52,
+      "text": "Our love for the earth should be reflected in our food choices too."
+    }
+  ]
+}

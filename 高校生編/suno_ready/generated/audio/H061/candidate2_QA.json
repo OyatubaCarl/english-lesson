@@ -1,0 +1,258 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H061.md",
+  "audio": "高校生編/suno_ready/generated/audio/H061/candidate2-full.mp3",
+  "model": "small",
+  "audio_duration": 182.2,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0047,
+  "expected_words": 213,
+  "transcribed_words": 214,
+  "matched_words": 207,
+  "coverage": 0.9718,
+  "precision": 0.9673,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 212,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 75,
+      "length": 2,
+      "words": [
+        "among",
+        "themselves"
+      ]
+    },
+    {
+      "start": 41,
+      "length": 1,
+      "words": [
+        "crossbred"
+      ]
+    },
+    {
+      "start": 89,
+      "length": 1,
+      "words": [
+        "three"
+      ]
+    },
+    {
+      "start": 91,
+      "length": 1,
+      "words": [
+        "one"
+      ]
+    },
+    {
+      "start": 163,
+      "length": 1,
+      "words": [
+        "twentieth"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 41,
+      "actual_start": 41,
+      "expected": [
+        "crossbred"
+      ],
+      "actual": [
+        "crossed",
+        "bread"
+      ],
+      "actual_confidence": 0.6898,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 75,
+      "actual_start": 76,
+      "expected": [
+        "among",
+        "themselves"
+      ],
+      "actual": [
+        "the",
+        "mum",
+        "and",
+        "selves"
+      ],
+      "actual_confidence": 0.638,
+      "substitution_words": 2,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 163,
+      "actual_start": 164,
+      "expected": [
+        "twentieth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.8873,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 89,
+      "actual_start": 92,
+      "expected": [
+        "three"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 91,
+      "actual_start": 93,
+      "expected": [
+        "one"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "In 1856, in a small monastery of the Austrian Empire, a monk began to plant pea seeds. His name was Gregor Mendel Mendel paid attention to the traits of pea plants Their height, seed color, and seed shape For many years he crossed bread tens of thousands of plants And recorded each result with care When he crossed a tall parent with a short parent, the offspring were all tall. But when he crossed those tall offspring, the mum and selves, short plants appeared again in the next generation. The ratio was about 3 to 1 From this observation, Mendel reasoned That a trait was inherited from parent To offspring through two elements One was a dominant element That appeared on the surface The other was a recessive element that was hidden. In 1865, he presented his discovery to a local scientific society, but its importance was hardly understood by the scientists of the time. His paper lay buried in dust for decades At the start of the 20th century Three independent researchers rediscovered Mendel's laws His experiments finally came to be recognized As the starting point of modern genetics In a quiet monastery A single monk who kept facing his pea plants Was the first to bring the light of science To the way life is inherited",
+  "segments": [
+    {
+      "start": 13.08,
+      "end": 25.16,
+      "text": "In 1856, in a small monastery of the Austrian Empire, a monk began to plant pea seeds."
+    },
+    {
+      "start": 25.16,
+      "end": 27.46,
+      "text": "His name was Gregor Mendel"
+    },
+    {
+      "start": 28.16,
+      "end": 32.62,
+      "text": "Mendel paid attention to the traits of pea plants"
+    },
+    {
+      "start": 33.16,
+      "end": 37.84,
+      "text": "Their height, seed color, and seed shape"
+    },
+    {
+      "start": 42.16,
+      "end": 46.56,
+      "text": "For many years he crossed bread tens of thousands of plants"
+    },
+    {
+      "start": 47.16,
+      "end": 50.72,
+      "text": "And recorded each result with care"
+    },
+    {
+      "start": 52.92,
+      "end": 60.74,
+      "text": "When he crossed a tall parent with a short parent, the offspring were all tall."
+    },
+    {
+      "start": 64.5,
+      "end": 75.14,
+      "text": "But when he crossed those tall offspring, the mum and selves, short plants appeared again in the next generation."
+    },
+    {
+      "start": 75.14,
+      "end": 80.74,
+      "text": "The ratio was about 3 to 1"
+    },
+    {
+      "start": 83.04,
+      "end": 87.14,
+      "text": "From this observation, Mendel reasoned"
+    },
+    {
+      "start": 88.28,
+      "end": 91.14,
+      "text": "That a trait was inherited from parent"
+    },
+    {
+      "start": 91.78,
+      "end": 95.44,
+      "text": "To offspring through two elements"
+    },
+    {
+      "start": 98.12,
+      "end": 100.52,
+      "text": "One was a dominant element"
+    },
+    {
+      "start": 100.52,
+      "end": 102.74,
+      "text": "That appeared on the surface"
+    },
+    {
+      "start": 102.74,
+      "end": 106.52,
+      "text": "The other was a recessive element that was hidden."
+    },
+    {
+      "start": 107.66,
+      "end": 115.24,
+      "text": "In 1865, he presented his discovery to a local scientific society,"
+    },
+    {
+      "start": 115.84,
+      "end": 123.68,
+      "text": "but its importance was hardly understood by the scientists of the time."
+    },
+    {
+      "start": 124.86,
+      "end": 130.24,
+      "text": "His paper lay buried in dust for decades"
+    },
+    {
+      "start": 130.24,
+      "end": 133.86,
+      "text": "At the start of the 20th century"
+    },
+    {
+      "start": 133.86,
+      "end": 140.72,
+      "text": "Three independent researchers rediscovered Mendel's laws"
+    },
+    {
+      "start": 142.24,
+      "end": 146.22,
+      "text": "His experiments finally came to be recognized"
+    },
+    {
+      "start": 146.22,
+      "end": 152.28,
+      "text": "As the starting point of modern genetics"
+    },
+    {
+      "start": 156.24,
+      "end": 158.28,
+      "text": "In a quiet monastery"
+    },
+    {
+      "start": 160.24,
+      "end": 164.58,
+      "text": "A single monk who kept facing his pea plants"
+    },
+    {
+      "start": 165.24,
+      "end": 169.44,
+      "text": "Was the first to bring the light of science"
+    },
+    {
+      "start": 170.24,
+      "end": 174.84,
+      "text": "To the way life is inherited"
+    }
+  ]
+}

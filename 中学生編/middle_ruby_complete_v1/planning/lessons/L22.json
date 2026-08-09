@@ -1,0 +1,891 @@
+{
+  "lesson": 22,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L22/planning/lesson.json",
+  "title_en": "Lesson 22  The Old Album",
+  "title_ja": "古いアルバム",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 12,
+  "lines": [
+    {
+      "line": 1,
+      "english": "One Sunday, I opened an old family photo album.",
+      "source_ja": "ある日曜日、古い家族のアルバムを開きました。",
+      "display_ja": "ある日曜日、古い家族のアルバムを開きました。",
+      "corrected_translation": false,
+      "mixed": "ある日曜日、古い家族のアルバムを開きました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ある日曜日、古い家族のアルバムを開きました。",
+          "parts": [
+            {
+              "text": "ある",
+              "ruby": ""
+            },
+            {
+              "text": "日曜",
+              "ruby": "にちよう"
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "古",
+              "ruby": "ふる"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "のアルバムを",
+              "ruby": ""
+            },
+            {
+              "text": "開",
+              "ruby": "ひら"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 2,
+      "english": "My sister asked, “Have you ever been to Tokyo?”",
+      "source_ja": "妹が「東京に行ったことある?」と聞きました。",
+      "display_ja": "妹が「東京に行ったことある?」と聞きました。",
+      "corrected_translation": false,
+      "mixed": "妹が「東京に ever 行ったことある？」と聞きました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "妹が「東京に ",
+          "parts": [
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "が「",
+              "ruby": ""
+            },
+            {
+              "text": "東京",
+              "ruby": "とうきょう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "ever",
+          "ruby": "これまでに"
+        },
+        {
+          "type": "ja",
+          "text": " 行ったことある？」と聞きました。",
+          "parts": [
+            {
+              "text": "行",
+              "ruby": "い"
+            },
+            {
+              "text": "ったことある？」と",
+              "ruby": ""
+            },
+            {
+              "text": "聞",
+              "ruby": "き"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "ever",
+          "canonical_word": "ever",
+          "meaning": "これまでに"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "ever",
+          "reading": "これまでに",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "ever",
+          "canonical_meaning": "これまでに"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "“Yes, I have visited Tokyo three times,” I answered.",
+      "source_ja": "「うん、3回行ったことあるよ」とわたしは答えました。",
+      "display_ja": "「うん、3回行ったことあるよ」とわたしは答えました。",
+      "corrected_translation": false,
+      "mixed": "「うん、東京を3回 visited したことがあるよ」と答えました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「うん、東京を3回 ",
+          "parts": [
+            {
+              "text": "「うん、",
+              "ruby": ""
+            },
+            {
+              "text": "東京",
+              "ruby": "とうきょう"
+            },
+            {
+              "text": "を3",
+              "ruby": ""
+            },
+            {
+              "text": "回",
+              "ruby": "かい"
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "visited",
+          "ruby": "訪れた"
+        },
+        {
+          "type": "ja",
+          "text": " したことがあるよ」と答えました。",
+          "parts": [
+            {
+              "text": "したことがあるよ」と",
+              "ruby": ""
+            },
+            {
+              "text": "答",
+              "ruby": "こた"
+            },
+            {
+              "text": "えました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "visited",
+          "canonical_word": "visited",
+          "meaning": "訪れた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "visited",
+          "reading": "訪れた",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "visited",
+          "canonical_meaning": "訪れた"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "In the album, there was a picture of my brother on the top of a mountain.",
+      "source_ja": "アルバムには、兄が山のてっぺんに立っている写真がありました。",
+      "display_ja": "アルバムには、兄が山のてっぺんに立っている写真がありました。",
+      "corrected_translation": false,
+      "mixed": "アルバムには、兄が山のてっぺんに立っている写真がありました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "アルバムには、兄が山のてっぺんに立っている写真がありました。",
+          "parts": [
+            {
+              "text": "アルバムには、",
+              "ruby": ""
+            },
+            {
+              "text": "兄",
+              "ruby": "あに"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "山",
+              "ruby": "やま"
+            },
+            {
+              "text": "のてっぺんに",
+              "ruby": ""
+            },
+            {
+              "text": "立",
+              "ruby": "た"
+            },
+            {
+              "text": "っている",
+              "ruby": ""
+            },
+            {
+              "text": "写真",
+              "ruby": "しゃしん"
+            },
+            {
+              "text": "がありました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 5,
+      "english": "“Have you ever climbed a tall mountain, Tom?”",
+      "source_ja": "「トム、高い山に登ったことある？」とわたしは聞きました。",
+      "display_ja": "「トム、高い山に登ったことある？」とわたしは聞きました。",
+      "corrected_translation": false,
+      "mixed": "「トム、ever 高い山に climbed したことある？」と聞きました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「トム、",
+          "parts": [
+            {
+              "text": "「トム、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "ever",
+          "ruby": "これまでに"
+        },
+        {
+          "type": "ja",
+          "text": " 高い山に ",
+          "parts": [
+            {
+              "text": "高",
+              "ruby": "たか"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "山",
+              "ruby": "やま"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "climbed",
+          "ruby": "登った"
+        },
+        {
+          "type": "ja",
+          "text": " したことある？」と聞きました。",
+          "parts": [
+            {
+              "text": "したことある？」と",
+              "ruby": ""
+            },
+            {
+              "text": "聞",
+              "ruby": "き"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "ever",
+          "canonical_word": "ever",
+          "meaning": "これまでに"
+        },
+        {
+          "english": "climbed",
+          "canonical_word": "climbed",
+          "meaning": "登った"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "ever",
+          "reading": "これまでに",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "ever",
+          "canonical_meaning": "これまでに"
+        },
+        {
+          "english": "climbed",
+          "reading": "登った",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "climbed",
+          "canonical_meaning": "登った"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "“No, I have never climbed one,” he answered.",
+      "source_ja": "「いや、ぼくは一度もないな」とトムは答えました。",
+      "display_ja": "「いや、ぼくは一度もないな」とトムは答えました。",
+      "corrected_translation": false,
+      "mixed": "「いや、まだ一度も climbed したことがない」と答えました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「いや、まだ一度も ",
+          "parts": [
+            {
+              "text": "「いや、まだ",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "いち"
+            },
+            {
+              "text": "度",
+              "ruby": "ど"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "climbed",
+          "ruby": "登った"
+        },
+        {
+          "type": "ja",
+          "text": " したことがない」と答えました。",
+          "parts": [
+            {
+              "text": "したことがない」と",
+              "ruby": ""
+            },
+            {
+              "text": "答",
+              "ruby": "こた"
+            },
+            {
+              "text": "えました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "climbed",
+          "canonical_word": "climbed",
+          "meaning": "登った"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "climbed",
+          "reading": "登った",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "climbed",
+          "canonical_meaning": "登った"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "My sister has never seen snow before, and she said so with a little sadness.",
+      "source_ja": "妹は雪を一度も見たことがなく、少し寂しそうにそう言いました。",
+      "display_ja": "妹は雪を一度も見たことがなく、少し寂しそうにそう言いました。",
+      "corrected_translation": false,
+      "mixed": "妹は雪を一度も seen したことがなく、少し寂しそうでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "妹は雪を一度も ",
+          "parts": [
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "雪",
+              "ruby": "ゆき"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "いち"
+            },
+            {
+              "text": "度",
+              "ruby": "ど"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "seen",
+          "ruby": "見たことがある"
+        },
+        {
+          "type": "ja",
+          "text": " したことがなく、少し寂しそうでした。",
+          "parts": [
+            {
+              "text": "したことがなく、",
+              "ruby": ""
+            },
+            {
+              "text": "少",
+              "ruby": "すこ"
+            },
+            {
+              "text": "し",
+              "ruby": ""
+            },
+            {
+              "text": "寂",
+              "ruby": "さび"
+            },
+            {
+              "text": "しそうでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "seen",
+          "canonical_word": "seen",
+          "meaning": "見たことがある"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "seen",
+          "reading": "見たことがある",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "seen",
+          "canonical_meaning": "見たことがある"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "My father has traveled to many countries for work.",
+      "source_ja": "父は仕事でいろんな国を旅してきました。",
+      "display_ja": "父は仕事でいろんな国を旅してきました。",
+      "corrected_translation": false,
+      "mixed": "父は仕事でいろんな国を旅してきました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "父は仕事でいろんな国を旅してきました。",
+          "parts": [
+            {
+              "text": "父",
+              "ruby": "ちち"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "仕事",
+              "ruby": "しごと"
+            },
+            {
+              "text": "でいろんな",
+              "ruby": ""
+            },
+            {
+              "text": "国",
+              "ruby": "くに"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "旅",
+              "ruby": "たび"
+            },
+            {
+              "text": "してきました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 9,
+      "english": "He has been to America many times.",
+      "source_ja": "アメリカには何度も行っています。",
+      "display_ja": "アメリカには何度も行っています。",
+      "corrected_translation": false,
+      "mixed": "アメリカには何度も行っています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "アメリカには何度も行っています。",
+          "parts": [
+            {
+              "text": "アメリカには",
+              "ruby": ""
+            },
+            {
+              "text": "何",
+              "ruby": "なん"
+            },
+            {
+              "text": "度",
+              "ruby": "ど"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "行",
+              "ruby": "い"
+            },
+            {
+              "text": "っています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 10,
+      "english": "My mother has met a famous singer once, and she smiled with a little pride.",
+      "source_ja": "母は有名な歌手に一度会ったことがあって、ちょっと得意げに微笑みました。",
+      "display_ja": "母は有名な歌手に一度会ったことがあって、ちょっと得意げに微笑みました。",
+      "corrected_translation": false,
+      "mixed": "母は有名な歌手に once met したことがあり、少し得意げに微笑みました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "母は有名な歌手に ",
+          "parts": [
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "有名",
+              "ruby": "ゆうめい"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "歌手",
+              "ruby": "かしゅ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "once",
+          "ruby": "一度"
+        },
+        {
+          "type": "ja",
+          "text": " ",
+          "parts": []
+        },
+        {
+          "type": "en",
+          "text": "met",
+          "ruby": "会った"
+        },
+        {
+          "type": "ja",
+          "text": " したことがあり、少し得意げに微笑みました。",
+          "parts": [
+            {
+              "text": "したことがあり、",
+              "ruby": ""
+            },
+            {
+              "text": "少",
+              "ruby": "すこ"
+            },
+            {
+              "text": "し",
+              "ruby": ""
+            },
+            {
+              "text": "得意",
+              "ruby": "とくい"
+            },
+            {
+              "text": "げに",
+              "ruby": ""
+            },
+            {
+              "text": "微笑",
+              "ruby": "ほほえ"
+            },
+            {
+              "text": "みました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "met",
+          "canonical_word": "met",
+          "meaning": "会った"
+        },
+        {
+          "english": "once",
+          "canonical_word": "once",
+          "meaning": "一度"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "met",
+          "reading": "会った",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "met",
+          "canonical_meaning": "会った"
+        },
+        {
+          "english": "once",
+          "reading": "一度",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "once",
+          "canonical_meaning": "一度"
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "english": "I have read this book twice because it is so interesting.",
+      "source_ja": "わたしはこの本を2回読みました。それくらい面白いんです。",
+      "display_ja": "わたしはこの本を2回読みました。それくらい面白いんです。",
+      "corrected_translation": false,
+      "mixed": "わたしはこの本を twice 読みました。それくらい面白いんです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "わたしはこの本を ",
+          "parts": [
+            {
+              "text": "わたしはこの",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "twice",
+          "ruby": "2回"
+        },
+        {
+          "type": "ja",
+          "text": " 読みました。それくらい面白いんです。",
+          "parts": [
+            {
+              "text": "読",
+              "ruby": "よ"
+            },
+            {
+              "text": "みました。それくらい",
+              "ruby": ""
+            },
+            {
+              "text": "面白",
+              "ruby": "おもしろ"
+            },
+            {
+              "text": "いんです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "twice",
+          "canonical_word": "twice",
+          "meaning": "2回"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "twice",
+          "reading": "2回",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "twice",
+          "canonical_meaning": "2回"
+        }
+      ]
+    },
+    {
+      "line": 12,
+      "english": "My brother said he has never eaten such a sweet cake before.",
+      "source_ja": "兄は、こんなに甘いケーキは今まで食べたことがないと言っていました。",
+      "display_ja": "兄は、こんなに甘いケーキは今まで食べたことがないと言っていました。",
+      "corrected_translation": false,
+      "mixed": "兄は、こんなに甘いケーキを eaten したことがないと言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "兄は、こんなに甘いケーキを ",
+          "parts": [
+            {
+              "text": "兄",
+              "ruby": "あに"
+            },
+            {
+              "text": "は、こんなに",
+              "ruby": ""
+            },
+            {
+              "text": "甘",
+              "ruby": "あま"
+            },
+            {
+              "text": "いケーキを",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "eaten",
+          "ruby": "食べたことがある"
+        },
+        {
+          "type": "ja",
+          "text": " したことがないと言いました。",
+          "parts": [
+            {
+              "text": "したことがないと",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "eaten",
+          "canonical_word": "eaten",
+          "meaning": "食べたことがある"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "eaten",
+          "reading": "食べたことがある",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "eaten",
+          "canonical_meaning": "食べたことがある"
+        }
+      ]
+    }
+  ]
+}

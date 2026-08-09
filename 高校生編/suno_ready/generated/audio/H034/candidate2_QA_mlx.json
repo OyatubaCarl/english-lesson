@@ -1,0 +1,204 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H034.md",
+  "audio": "高校生編/suno_ready/generated/audio/H034/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 92.62,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.007,
+  "expected_words": 142,
+  "transcribed_words": 143,
+  "matched_words": 137,
+  "coverage": 0.9648,
+  "precision": 0.958,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 141,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 36,
+      "length": 2,
+      "words": [
+        "fam",
+        "lia"
+      ]
+    },
+    {
+      "start": 1,
+      "length": 1,
+      "words": [
+        "gaud"
+      ]
+    },
+    {
+      "start": 55,
+      "length": 1,
+      "words": [
+        "gaud"
+      ]
+    },
+    {
+      "start": 97,
+      "length": 1,
+      "words": [
+        "gaud"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 1,
+      "actual_start": 3,
+      "expected": [
+        "gaud"
+      ],
+      "actual": [
+        "gaudi"
+      ],
+      "actual_confidence": 0.7334,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 36,
+      "actual_start": 38,
+      "expected": [
+        "fam",
+        "lia"
+      ],
+      "actual": [
+        "familia"
+      ],
+      "actual_confidence": 0.96,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 55,
+      "actual_start": 56,
+      "expected": [
+        "gaud"
+      ],
+      "actual": [
+        "gaudi"
+      ],
+      "actual_confidence": 0.8164,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 97,
+      "actual_start": 98,
+      "expected": [
+        "gaud"
+      ],
+      "actual": [
+        "gaudi"
+      ],
+      "actual_confidence": 0.9487,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 0,
+      "actual_start": 0,
+      "expected": [],
+      "actual": [
+        "the",
+        "bacillica"
+      ],
+      "actual_confidence": 0.2544
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 4,
+  "suspicious_substitution_words": 4,
+  "suspicious_content_substitution": true,
+  "transcript": "The Bacillica Antoni Gaudi, from the end of the 19th century through the early 20th, was the architect who created a unique architectural language in Barcelona, Spain. His most famous work is the Basilica, known as the Sagrada Familia. For more than a hundred years, its construction has continued with interruptions. It is an unfinished masterpiece. Gaudi drew inspiration for his designs in nature. Trees, mountains, shells, bones, waves, every column, every curve was designed from a form found in nature. He described nature as his great teacher. For him, nature itself was a form of architecture In 1926, Gaudi was struck by a tram And died from his injuries several days later The cathedral, however, is still being built Century after century through donations and support From visitors around the world Perhaps its unfinished state has itself become part of the building's history.",
+  "segments": [
+    {
+      "start": 10.2,
+      "end": 10.92,
+      "text": "The Bacillica"
+    },
+    {
+      "start": 10.92,
+      "end": 15.7,
+      "text": "Antoni Gaudi, from the end of the 19th century through the early 20th,"
+    },
+    {
+      "start": 15.88,
+      "end": 21.14,
+      "text": "was the architect who created a unique architectural language in Barcelona, Spain."
+    },
+    {
+      "start": 22.08,
+      "end": 28.12,
+      "text": "His most famous work is the Basilica, known as the Sagrada Familia."
+    },
+    {
+      "start": 30.4,
+      "end": 37.04,
+      "text": "For more than a hundred years, its construction has continued with interruptions."
+    },
+    {
+      "start": 37.38,
+      "end": 40.06,
+      "text": "It is an unfinished masterpiece."
+    },
+    {
+      "start": 41.72,
+      "end": 44.42,
+      "text": "Gaudi drew inspiration for his designs in nature."
+    },
+    {
+      "start": 44.64,
+      "end": 51.48,
+      "text": "Trees, mountains, shells, bones, waves, every column, every curve was designed from a form found in nature."
+    },
+    {
+      "start": 52.56,
+      "end": 56.96,
+      "text": "He described nature as his great teacher."
+    },
+    {
+      "start": 56.96,
+      "end": 62.7,
+      "text": "For him, nature itself was a form of architecture"
+    },
+    {
+      "start": 62.7,
+      "end": 67.6,
+      "text": "In 1926, Gaudi was struck by a tram"
+    },
+    {
+      "start": 67.6,
+      "end": 72.7,
+      "text": "And died from his injuries several days later"
+    },
+    {
+      "start": 73.7,
+      "end": 78.16,
+      "text": "The cathedral, however, is still being built"
+    },
+    {
+      "start": 78.16,
+      "end": 81.9,
+      "text": "Century after century through donations and support"
+    },
+    {
+      "start": 81.9,
+      "end": 83.84,
+      "text": "From visitors around the world"
+    },
+    {
+      "start": 83.84,
+      "end": 92.62,
+      "text": "Perhaps its unfinished state has itself become part of the building's history."
+    }
+  ]
+}

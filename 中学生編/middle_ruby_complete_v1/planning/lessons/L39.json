@@ -1,0 +1,1004 @@
+{
+  "lesson": 39,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L39/planning/lesson.json",
+  "title_en": "Lesson 39  The Mystery of Time",
+  "title_ja": "時間のふしぎ",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 13,
+  "lines": [
+    {
+      "line": 1,
+      "english": "One afternoon, I suddenly felt, “Time is really something strange.”",
+      "source_ja": "ある午後、ふと「時間って、ほんとにふしぎだな」と感じました。",
+      "display_ja": "ある午後、ふと「時間って、ほんとにふしぎだな」と感じました。",
+      "corrected_translation": false,
+      "mixed": "ある午後、ふと「時間って、ほんとにふしぎだな」と感じました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ある午後、ふと「時間って、ほんとにふしぎだな」と感じました。",
+          "parts": [
+            {
+              "text": "ある",
+              "ruby": ""
+            },
+            {
+              "text": "午後",
+              "ruby": "ごご"
+            },
+            {
+              "text": "、ふと「",
+              "ruby": ""
+            },
+            {
+              "text": "時間",
+              "ruby": "じかん"
+            },
+            {
+              "text": "って、ほんとにふしぎだな」と",
+              "ruby": ""
+            },
+            {
+              "text": "感",
+              "ruby": "かん"
+            },
+            {
+              "text": "じました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 2,
+      "english": "When I looked at the clock, it was just past noon.",
+      "source_ja": "時計を見ると、ちょうど正午を過ぎたところ。",
+      "display_ja": "時計を見ると、ちょうど正午を過ぎたところ。",
+      "corrected_translation": false,
+      "mixed": "時計を見ると、ちょうど past noon でした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "時計を見ると、ちょうど ",
+          "parts": [
+            {
+              "text": "時計",
+              "ruby": "とけい"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "ると、ちょうど",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "past",
+          "ruby": "過去"
+        },
+        {
+          "type": "ja",
+          "text": " ",
+          "parts": []
+        },
+        {
+          "type": "en",
+          "text": "noon",
+          "ruby": "正午"
+        },
+        {
+          "type": "ja",
+          "text": " でした。",
+          "parts": [
+            {
+              "text": "でした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "past",
+          "canonical_word": "past",
+          "meaning": "過去"
+        },
+        {
+          "english": "noon",
+          "canonical_word": "noon",
+          "meaning": "正午"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "past",
+          "reading": "過去",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "past",
+          "canonical_meaning": "過去"
+        },
+        {
+          "english": "noon",
+          "reading": "正午",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "noon",
+          "canonical_meaning": "正午"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "Only one minute ago, I was cleaning up after lunch.",
+      "source_ja": "たった1分前に、お昼ご飯のあと片付けをしていたばかり。",
+      "display_ja": "たった1分前に、お昼ご飯のあと片付けをしていたばかり。",
+      "corrected_translation": false,
+      "mixed": "たった1 minute 前に、お昼ご飯のあと片付けをしていたばかり。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "たった1 ",
+          "parts": [
+            {
+              "text": "たった1",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "minute",
+          "ruby": "分"
+        },
+        {
+          "type": "ja",
+          "text": " 前に、お昼ご飯のあと片付けをしていたばかり。",
+          "parts": [
+            {
+              "text": "前",
+              "ruby": "まえ"
+            },
+            {
+              "text": "に、お",
+              "ruby": ""
+            },
+            {
+              "text": "昼ご飯",
+              "ruby": "ひるごはん"
+            },
+            {
+              "text": "のあと",
+              "ruby": ""
+            },
+            {
+              "text": "片付",
+              "ruby": "かたづ"
+            },
+            {
+              "text": "けをしていたばかり。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "minute",
+          "canonical_word": "minute",
+          "meaning": "分"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "minute",
+          "reading": "分",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "minute",
+          "canonical_meaning": "分"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "Yet already, I was thinking about the hours until dinner.",
+      "source_ja": "それなのに、もう夕ご飯までの時間のことを考えている自分がいました。",
+      "display_ja": "それなのに、もう夕ご飯までの時間のことを考えている自分がいました。",
+      "corrected_translation": false,
+      "mixed": "それなのに、もう夕ご飯までの hours のことを考えている自分がいました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "それなのに、もう夕ご飯までの ",
+          "parts": [
+            {
+              "text": "それなのに、もう",
+              "ruby": ""
+            },
+            {
+              "text": "夕ご飯",
+              "ruby": "ゆうごはん"
+            },
+            {
+              "text": "までの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "hours",
+          "ruby": "時間"
+        },
+        {
+          "type": "ja",
+          "text": " のことを考えている自分がいました。",
+          "parts": [
+            {
+              "text": "のことを",
+              "ruby": ""
+            },
+            {
+              "text": "考",
+              "ruby": "かんが"
+            },
+            {
+              "text": "えている",
+              "ruby": ""
+            },
+            {
+              "text": "自分",
+              "ruby": "じぶん"
+            },
+            {
+              "text": "がいました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "hours",
+          "canonical_word": "hour",
+          "meaning": "〜時間"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "hours",
+          "reading": "時間",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "hour",
+          "canonical_meaning": "〜時間"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "“In half an hour, my favorite anime will start,” my sister said, staring at the clock.",
+      "source_ja": "「あと30分で好きなアニメが始まる」と、妹は時計をじっと見つめて言いました。",
+      "display_ja": "「あと30分で好きなアニメが始まる」と、妹は時計をじっと見つめて言いました。",
+      "corrected_translation": false,
+      "mixed": "「あと half hour で好きなアニメが始まる」と妹は言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「あと ",
+          "parts": [
+            {
+              "text": "「あと",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "half",
+          "ruby": "半分"
+        },
+        {
+          "type": "ja",
+          "text": " ",
+          "parts": []
+        },
+        {
+          "type": "en",
+          "text": "hour",
+          "ruby": "〜時間"
+        },
+        {
+          "type": "ja",
+          "text": " で好きなアニメが始まる」と妹は言いました。",
+          "parts": [
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "好",
+              "ruby": "す"
+            },
+            {
+              "text": "きなアニメが",
+              "ruby": ""
+            },
+            {
+              "text": "始",
+              "ruby": "はじ"
+            },
+            {
+              "text": "まる」と",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "half",
+          "canonical_word": "half",
+          "meaning": "半分"
+        },
+        {
+          "english": "hour",
+          "canonical_word": "hour",
+          "meaning": "〜時間"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "half",
+          "reading": "半分",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "half",
+          "canonical_meaning": "半分"
+        },
+        {
+          "english": "hour",
+          "reading": "〜時間",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "hour",
+          "canonical_meaning": "〜時間"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "My father pointed at an old photograph.",
+      "source_ja": "父は、わたしが小さかったころの姿を見せてくれました。",
+      "display_ja": "父は古い写真を指さしました。",
+      "corrected_translation": true,
+      "mixed": "父は古い写真を指さしました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "父は古い写真を指さしました。",
+          "parts": [
+            {
+              "text": "父",
+              "ruby": "ちち"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "古",
+              "ruby": "ふる"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "写真",
+              "ruby": "しゃしん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "指",
+              "ruby": "ゆび"
+            },
+            {
+              "text": "さしました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 7,
+      "english": "“A century ago, people did not have such accurate clocks.”",
+      "source_ja": "「時間はみんなを少しずつ変えていくんだよ」と父は言いました。",
+      "display_ja": "「100年前、人々はこのような正確な時計を持っていませんでした。」",
+      "corrected_translation": true,
+      "mixed": "「century 前、人々はこのような正確な時計を持っていなかった」と父は言いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「",
+          "parts": [
+            {
+              "text": "「",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "century",
+          "ruby": "世紀"
+        },
+        {
+          "type": "ja",
+          "text": " 前、人々はこのような正確な時計を持っていなかった」と父は言いました。",
+          "parts": [
+            {
+              "text": "前",
+              "ruby": "まえ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "人々",
+              "ruby": "ひとびと"
+            },
+            {
+              "text": "はこのような",
+              "ruby": ""
+            },
+            {
+              "text": "正確",
+              "ruby": "せいかく"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "時計",
+              "ruby": "とけい"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "持",
+              "ruby": "も"
+            },
+            {
+              "text": "っていなかった」と",
+              "ruby": ""
+            },
+            {
+              "text": "父",
+              "ruby": "ちち"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "century",
+          "canonical_word": "century",
+          "meaning": "世紀"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "century",
+          "reading": "世紀",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "century",
+          "canonical_meaning": "世紀"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "When I think about the time of the past, I feel a little strange.",
+      "source_ja": "時間って不思議だとわたしは思いました。",
+      "display_ja": "過去の時間について考えると、わたしは少し不思議な気持ちになります。",
+      "corrected_translation": true,
+      "mixed": "past の時間について考えると、わたしは少し不思議な気持ちになります。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "past",
+          "ruby": "過去"
+        },
+        {
+          "type": "ja",
+          "text": " の時間について考えると、わたしは少し不思議な気持ちになります。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "時間",
+              "ruby": "じかん"
+            },
+            {
+              "text": "について",
+              "ruby": ""
+            },
+            {
+              "text": "考",
+              "ruby": "かんが"
+            },
+            {
+              "text": "えると、わたしは",
+              "ruby": ""
+            },
+            {
+              "text": "少",
+              "ruby": "すこ"
+            },
+            {
+              "text": "し",
+              "ruby": ""
+            },
+            {
+              "text": "不思議",
+              "ruby": "ふしぎ"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "気持",
+              "ruby": "きも"
+            },
+            {
+              "text": "ちになります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "past",
+          "canonical_word": "past",
+          "meaning": "過去"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "past",
+          "reading": "過去",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "past",
+          "canonical_meaning": "過去"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "There are still many hours until midnight.",
+      "source_ja": "夜中までにはまだたくさんの時間があります。",
+      "display_ja": "夜中までにはまだたくさんの時間があります。",
+      "corrected_translation": false,
+      "mixed": "midnight までにはまだたくさんの hours があります。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "midnight",
+          "ruby": "夜中"
+        },
+        {
+          "type": "ja",
+          "text": " までにはまだたくさんの ",
+          "parts": [
+            {
+              "text": "までにはまだたくさんの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "hours",
+          "ruby": "時間"
+        },
+        {
+          "type": "ja",
+          "text": " があります。",
+          "parts": [
+            {
+              "text": "があります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "hours",
+          "canonical_word": "hour",
+          "meaning": "〜時間"
+        },
+        {
+          "english": "midnight",
+          "canonical_word": "midnight",
+          "meaning": "真夜中"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "midnight",
+          "reading": "夜中",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "midnight",
+          "canonical_meaning": "真夜中"
+        },
+        {
+          "english": "hours",
+          "reading": "時間",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "hour",
+          "canonical_meaning": "〜時間"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "But second by second, the time moves forward into the future.",
+      "source_ja": "でも、一秒ずつ、時間は未来へと進んでいくのです。",
+      "display_ja": "でも、一秒ずつ、時間は未来へと進んでいくのです。",
+      "corrected_translation": false,
+      "mixed": "でも、一 second ずつ、時間は未来へと進んでいくのです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "でも、一 ",
+          "parts": [
+            {
+              "text": "でも、",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "いち"
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "second",
+          "ruby": "秒"
+        },
+        {
+          "type": "ja",
+          "text": " ずつ、時間は未来へと進んでいくのです。",
+          "parts": [
+            {
+              "text": "ずつ、",
+              "ruby": ""
+            },
+            {
+              "text": "時間",
+              "ruby": "じかん"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "未来",
+              "ruby": "みらい"
+            },
+            {
+              "text": "へと",
+              "ruby": ""
+            },
+            {
+              "text": "進",
+              "ruby": "すす"
+            },
+            {
+              "text": "んでいくのです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "second",
+          "canonical_word": "second",
+          "meaning": "秒"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "second",
+          "reading": "秒",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "second",
+          "canonical_meaning": "秒"
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "english": "A quarter of the day is morning, another quarter is before noon, another is afternoon, and the last quarter is night.",
+      "source_ja": "一日の4分の1は朝、次の4分の1は午前、その次が午後、最後の4分の1が夜。",
+      "display_ja": "一日の4分の1は朝、次の4分の1は午前、その次が午後、最後の4分の1が夜。",
+      "corrected_translation": false,
+      "mixed": "一日の quarter は朝で、次は noon 前、その次が午後、最後が夜です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "一日の ",
+          "parts": [
+            {
+              "text": "一日",
+              "ruby": "いちにち"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "quarter",
+          "ruby": "4分の1"
+        },
+        {
+          "type": "ja",
+          "text": " は朝で、次は ",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "朝",
+              "ruby": "あさ"
+            },
+            {
+              "text": "で、",
+              "ruby": ""
+            },
+            {
+              "text": "次",
+              "ruby": "つぎ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "noon",
+          "ruby": "正午"
+        },
+        {
+          "type": "ja",
+          "text": " 前、その次が午後、最後が夜です。",
+          "parts": [
+            {
+              "text": "前",
+              "ruby": "まえ"
+            },
+            {
+              "text": "、その",
+              "ruby": ""
+            },
+            {
+              "text": "次",
+              "ruby": "つぎ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "午後",
+              "ruby": "ごご"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "最後",
+              "ruby": "さいご"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "夜",
+              "ruby": "よる"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "quarter",
+          "canonical_word": "quarter",
+          "meaning": "4分の1"
+        },
+        {
+          "english": "noon",
+          "canonical_word": "noon",
+          "meaning": "正午"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "quarter",
+          "reading": "4分の1",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "quarter",
+          "canonical_meaning": "4分の1"
+        },
+        {
+          "english": "noon",
+          "reading": "正午",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "noon",
+          "canonical_meaning": "正午"
+        }
+      ]
+    },
+    {
+      "line": 12,
+      "english": "When I think of it that way, the flow of a day feels well balanced.",
+      "source_ja": "そんなふうに考えると、一日の流れが、きれいにバランスのとれたものに感じられます。",
+      "display_ja": "そんなふうに考えると、一日の流れが、きれいにバランスのとれたものに感じられます。",
+      "corrected_translation": false,
+      "mixed": "そんなふうに考えると、一日の流れが、きれいにバランスのとれたものに感じられます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "そんなふうに考えると、一日の流れが、きれいにバランスのとれたものに感じられます。",
+          "parts": [
+            {
+              "text": "そんなふうに",
+              "ruby": ""
+            },
+            {
+              "text": "考",
+              "ruby": "かんが"
+            },
+            {
+              "text": "えると、",
+              "ruby": ""
+            },
+            {
+              "text": "一日",
+              "ruby": "いちにち"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "流",
+              "ruby": "なが"
+            },
+            {
+              "text": "れが、きれいにバランスのとれたものに",
+              "ruby": ""
+            },
+            {
+              "text": "感",
+              "ruby": "かん"
+            },
+            {
+              "text": "じられます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 13,
+      "english": "Thank you for watching.",
+      "source_ja": "ご覧いただき、ありがとうございました。",
+      "display_ja": "ご覧いただき、ありがとうございました。",
+      "corrected_translation": false,
+      "mixed": "ご覧いただき、ありがとうございました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ご覧いただき、ありがとうございました。",
+          "parts": [
+            {
+              "text": "ご",
+              "ruby": ""
+            },
+            {
+              "text": "覧",
+              "ruby": "らん"
+            },
+            {
+              "text": "いただき、ありがとうございました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    }
+  ]
+}

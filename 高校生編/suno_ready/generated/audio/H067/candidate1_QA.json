@@ -1,0 +1,268 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H067.md",
+  "audio": "高校生編/suno_ready/generated/audio/H067/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 174.481,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0093,
+  "expected_words": 215,
+  "transcribed_words": 217,
+  "matched_words": 210,
+  "coverage": 0.9767,
+  "precision": 0.9677,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 214,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 14,
+      "length": 1,
+      "words": [
+        "in"
+      ]
+    },
+    {
+      "start": 43,
+      "length": 1,
+      "words": [
+        "netlike"
+      ]
+    },
+    {
+      "start": 80,
+      "length": 1,
+      "words": [
+        "twentieth"
+      ]
+    },
+    {
+      "start": 82,
+      "length": 1,
+      "words": [
+        "imaging"
+      ]
+    },
+    {
+      "start": 162,
+      "length": 1,
+      "words": [
+        "alzheimer's"
+      ]
+    }
+  ],
+  "replacement_count": 5,
+  "replacement_spans": [
+    {
+      "expected_start": 14,
+      "actual_start": 14,
+      "expected": [
+        "in"
+      ],
+      "actual": [
+        "and"
+      ],
+      "actual_confidence": 0.8312,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 43,
+      "actual_start": 43,
+      "expected": [
+        "netlike"
+      ],
+      "actual": [
+        "net",
+        "like"
+      ],
+      "actual_confidence": 0.7739,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 80,
+      "actual_start": 81,
+      "expected": [
+        "twentieth"
+      ],
+      "actual": [
+        "th"
+      ],
+      "actual_confidence": 0.9052,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 82,
+      "actual_start": 83,
+      "expected": [
+        "imaging"
+      ],
+      "actual": [
+        "imagining"
+      ],
+      "actual_confidence": 0.2268,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 162,
+      "actual_start": 163,
+      "expected": [
+        "alzheimer's"
+      ],
+      "actual": [
+        "all's",
+        "heimer's"
+      ],
+      "actual_confidence": 0.5819,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 3,
+  "suspicious_substitution_words": 3,
+  "suspicious_content_substitution": true,
+  "transcript": "The human brain weighs about 1.3 kilograms. Though only a tiny part of the body and weight, inside it lies a network of 86 billion neurons. Each neuron is linked with thousands of others through synapses. In the whole brain, around 100 trillion synapses form a net-like network. Memory, perception, emotion, judgment, everything we call self arises from this complex neural activity. How consciousness arises from the matter of the brain, this is one of the greatest mysteries of science. Since the late 20th century, imagining technology such as functional MRI has allowed researchers to directly observe the brain in action. What part of the brain becomes active when we see something, when we remember something? These can now be tracked in real time One recent discovery is the plasticity of the brain Once it had been believed that the adult brain no longer changed but it is now known that the connections between neurons continue to change throughout life through new experience and learning. All's Heimer's disease, Parkinson's disease and stroke. Treatments for those who suffer from brain diseases or brain injuries Are still being studied around the world To draw out to its fullest The power of the brain's recovery Brain research Leads us toward the deepest question We may ever ask What is a human being?",
+  "segments": [
+    {
+      "start": 7.3,
+      "end": 10.8,
+      "text": "The human brain weighs about 1.3 kilograms."
+    },
+    {
+      "start": 12.1,
+      "end": 18.78,
+      "text": "Though only a tiny part of the body and weight, inside it lies a network of 86 billion neurons."
+    },
+    {
+      "start": 19.68,
+      "end": 23.48,
+      "text": "Each neuron is linked with thousands of others through synapses."
+    },
+    {
+      "start": 25.46,
+      "end": 31.34,
+      "text": "In the whole brain, around 100 trillion synapses form a net-like network."
+    },
+    {
+      "start": 32.42,
+      "end": 40.52,
+      "text": "Memory, perception, emotion, judgment, everything we call self arises from this complex neural"
+    },
+    {
+      "start": 40.52,
+      "end": 41.28,
+      "text": "activity."
+    },
+    {
+      "start": 44.76,
+      "end": 51.98,
+      "text": "How consciousness arises from the matter of the brain, this is one of the greatest"
+    },
+    {
+      "start": 51.98,
+      "end": 54.02,
+      "text": "mysteries of science."
+    },
+    {
+      "start": 55.98,
+      "end": 58.42,
+      "text": "Since the late 20th century,"
+    },
+    {
+      "start": 58.72,
+      "end": 62.86,
+      "text": "imagining technology such as functional MRI"
+    },
+    {
+      "start": 63.98,
+      "end": 66.72,
+      "text": "has allowed researchers to directly"
+    },
+    {
+      "start": 66.72,
+      "end": 68.74,
+      "text": "observe the brain in action."
+    },
+    {
+      "start": 69.98,
+      "end": 72.68,
+      "text": "What part of the brain becomes active"
+    },
+    {
+      "start": 72.68,
+      "end": 74.12,
+      "text": "when we see something,"
+    },
+    {
+      "start": 74.58,
+      "end": 76.98,
+      "text": "when we remember something?"
+    },
+    {
+      "start": 76.98,
+      "end": 88.62,
+      "text": "These can now be tracked in real time One recent discovery is the plasticity of the brain"
+    },
+    {
+      "start": 99.36,
+      "end": 105.36,
+      "text": "Once it had been believed that the adult brain no longer changed"
+    },
+    {
+      "start": 105.36,
+      "end": 112.18,
+      "text": "but it is now known that the connections between neurons continue to change throughout life"
+    },
+    {
+      "start": 112.18,
+      "end": 123.68,
+      "text": "through new experience and learning. All's Heimer's disease, Parkinson's disease and stroke."
+    },
+    {
+      "start": 125.76,
+      "end": 132.46,
+      "text": "Treatments for those who suffer from brain diseases or brain injuries"
+    },
+    {
+      "start": 132.46,
+      "end": 136.56,
+      "text": "Are still being studied around the world"
+    },
+    {
+      "start": 136.56,
+      "end": 139.24,
+      "text": "To draw out to its fullest"
+    },
+    {
+      "start": 139.24,
+      "end": 142.96,
+      "text": "The power of the brain's recovery"
+    },
+    {
+      "start": 143.98,
+      "end": 145.9,
+      "text": "Brain research"
+    },
+    {
+      "start": 146.46,
+      "end": 149.92,
+      "text": "Leads us toward the deepest question"
+    },
+    {
+      "start": 149.92,
+      "end": 152.02,
+      "text": "We may ever ask"
+    },
+    {
+      "start": 153.0,
+      "end": 155.2,
+      "text": "What is a human being?"
+    }
+  ]
+}

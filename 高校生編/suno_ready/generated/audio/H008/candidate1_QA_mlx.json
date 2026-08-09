@@ -1,0 +1,148 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H008.md",
+  "audio": "高校生編/suno_ready/generated/audio/H008/candidate1-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 72.16,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9857,
+  "expected_words": 140,
+  "transcribed_words": 138,
+  "matched_words": 136,
+  "coverage": 0.9714,
+  "precision": 0.9855,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 139,
+  "longest_missing_run": 4,
+  "largest_missing_runs": [
+    {
+      "start": 18,
+      "length": 4,
+      "words": [
+        "i",
+        "am",
+        "going",
+        "to"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 18,
+      "actual_start": 18,
+      "expected": [
+        "i",
+        "am",
+        "going",
+        "to"
+      ],
+      "actual": [
+        "i'm",
+        "gonna"
+      ],
+      "actual_confidence": 0.0,
+      "substitution_words": 2,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "In the evening, the family gathered at the dinner table. Mother was finishing the meal preparations. Father said, I'm gonna have a drink tonight. He had already made up his mind. Sister wanted to discuss the trip. She proposed that I go with her. My brother offered, I will drive you both to the airport next weekend. Mother mentioned a new recipe. Father admitted, if you make pasta, I will help He is good at cooking What shall we do about dinner tomorrow? Sister asked Mother answered at once, I will make it I added my own suggestion, I will make a salad Several small decisions fell into place around the table Father, from his usual seat, said he would prefer fish Sister gave him a small nod and confirmed the plan Dinner flowed slowly, more slowly than usual",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.54,
+      "text": "In the evening, the family gathered at the dinner table."
+    },
+    {
+      "start": 5.54,
+      "end": 10.08,
+      "text": "Mother was finishing the meal preparations."
+    },
+    {
+      "start": 10.08,
+      "end": 12.88,
+      "text": "Father said, I'm gonna have a drink tonight."
+    },
+    {
+      "start": 12.88,
+      "end": 15.14,
+      "text": "He had already made up his mind."
+    },
+    {
+      "start": 15.36,
+      "end": 17.3,
+      "text": "Sister wanted to discuss the trip."
+    },
+    {
+      "start": 17.48,
+      "end": 20.36,
+      "text": "She proposed that I go with her."
+    },
+    {
+      "start": 21.68,
+      "end": 27.1,
+      "text": "My brother offered, I will drive you both to the airport next weekend."
+    },
+    {
+      "start": 27.4,
+      "end": 29.82,
+      "text": "Mother mentioned a new recipe."
+    },
+    {
+      "start": 31.54,
+      "end": 35.3,
+      "text": "Father admitted, if you make pasta, I will help"
+    },
+    {
+      "start": 35.3,
+      "end": 36.5,
+      "text": "He is good at cooking"
+    },
+    {
+      "start": 36.5,
+      "end": 39.12,
+      "text": "What shall we do about dinner tomorrow?"
+    },
+    {
+      "start": 39.62,
+      "end": 40.82,
+      "text": "Sister asked"
+    },
+    {
+      "start": 40.82,
+      "end": 45.56,
+      "text": "Mother answered at once, I will make it"
+    },
+    {
+      "start": 45.56,
+      "end": 50.1,
+      "text": "I added my own suggestion, I will make a salad"
+    },
+    {
+      "start": 50.1,
+      "end": 55.5,
+      "text": "Several small decisions fell into place around the table"
+    },
+    {
+      "start": 55.5,
+      "end": 60.7,
+      "text": "Father, from his usual seat, said he would prefer fish"
+    },
+    {
+      "start": 60.7,
+      "end": 65.24,
+      "text": "Sister gave him a small nod and confirmed the plan"
+    },
+    {
+      "start": 65.24,
+      "end": 72.16,
+      "text": "Dinner flowed slowly, more slowly than usual"
+    }
+  ]
+}

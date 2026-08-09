@@ -1,0 +1,940 @@
+{
+  "lesson": "H017",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h017_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H017/candidate1-full.mp3",
+  "source_audio_sha256": "c74958add7c986d215b19792cda2cd2635018c026ff7187542c5faae4bbfb0ba",
+  "bpm": 62.02,
+  "exact_word_match": true,
+  "word_count": 138,
+  "line_count": 12,
+  "first_word_start": 12.302,
+  "last_word_end": 107.458,
+  "lines": [
+    {
+      "line": 1,
+      "english": "In my town, an old Western style house has remained.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 12.302,
+          "end": 12.479
+        },
+        {
+          "word": "my",
+          "display_index": 1,
+          "start": 12.479,
+          "end": 12.702
+        },
+        {
+          "word": "town,",
+          "display_index": 2,
+          "start": 12.702,
+          "end": 13.762
+        },
+        {
+          "word": "an",
+          "display_index": 3,
+          "start": 13.762,
+          "end": 13.922
+        },
+        {
+          "word": "old",
+          "display_index": 4,
+          "start": 13.922,
+          "end": 14.162
+        },
+        {
+          "word": "Western",
+          "display_index": 5,
+          "start": 14.162,
+          "end": 14.723
+        },
+        {
+          "word": "style",
+          "display_index": 6,
+          "start": 14.723,
+          "end": 15.283
+        },
+        {
+          "word": "house",
+          "display_index": 7,
+          "start": 15.283,
+          "end": 16.003
+        },
+        {
+          "word": "has",
+          "display_index": 8,
+          "start": 16.003,
+          "end": 16.383
+        },
+        {
+          "word": "remained.",
+          "display_index": 9,
+          "start": 16.383,
+          "end": 17.883
+        }
+      ],
+      "start": 12.302,
+      "end": 17.883
+    },
+    {
+      "line": 2,
+      "english": "It had long been forgotten, but one year the townspeople decided that it would be restored.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 18.203,
+          "end": 18.303
+        },
+        {
+          "word": "had",
+          "display_index": 1,
+          "start": 18.303,
+          "end": 18.503
+        },
+        {
+          "word": "long",
+          "display_index": 2,
+          "start": 18.503,
+          "end": 18.903
+        },
+        {
+          "word": "been",
+          "display_index": 3,
+          "start": 18.903,
+          "end": 19.263
+        },
+        {
+          "word": "forgotten,",
+          "display_index": 4,
+          "start": 19.263,
+          "end": 21.304
+        },
+        {
+          "word": "but",
+          "display_index": 5,
+          "start": 21.304,
+          "end": 21.524
+        },
+        {
+          "word": "one",
+          "display_index": 6,
+          "start": 21.524,
+          "end": 21.764
+        },
+        {
+          "word": "year",
+          "display_index": 7,
+          "start": 21.764,
+          "end": 22.275
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 22.275,
+          "end": 22.424
+        },
+        {
+          "word": "townspeople",
+          "display_index": 9,
+          "start": 22.424,
+          "end": 23.684
+        },
+        {
+          "word": "decided",
+          "display_index": 10,
+          "start": 23.684,
+          "end": 24.944
+        },
+        {
+          "word": "that",
+          "display_index": 11,
+          "start": 24.944,
+          "end": 25.164
+        },
+        {
+          "word": "it",
+          "display_index": 12,
+          "start": 25.164,
+          "end": 25.284
+        },
+        {
+          "word": "would",
+          "display_index": 13,
+          "start": 25.284,
+          "end": 25.524
+        },
+        {
+          "word": "be",
+          "display_index": 14,
+          "start": 25.524,
+          "end": 26.505
+        },
+        {
+          "word": "restored.",
+          "display_index": 15,
+          "start": 26.505,
+          "end": 28.005
+        }
+      ],
+      "start": 18.203,
+      "end": 28.005
+    },
+    {
+      "line": 3,
+      "english": "The house had been constructed about eighty years ago.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 29.987,
+          "end": 30.105
+        },
+        {
+          "word": "house",
+          "display_index": 1,
+          "start": 30.105,
+          "end": 30.485
+        },
+        {
+          "word": "had",
+          "display_index": 2,
+          "start": 30.485,
+          "end": 30.645
+        },
+        {
+          "word": "been",
+          "display_index": 3,
+          "start": 30.645,
+          "end": 31.025
+        },
+        {
+          "word": "constructed",
+          "display_index": 4,
+          "start": 31.025,
+          "end": 32.006
+        },
+        {
+          "word": "about",
+          "display_index": 5,
+          "start": 32.006,
+          "end": 32.586
+        },
+        {
+          "word": "eighty",
+          "display_index": 6,
+          "start": 32.586,
+          "end": 33.446
+        },
+        {
+          "word": "years",
+          "display_index": 7,
+          "start": 33.446,
+          "end": 34.086
+        },
+        {
+          "word": "ago.",
+          "display_index": 8,
+          "start": 34.086,
+          "end": 35.586
+        }
+      ],
+      "start": 29.987,
+      "end": 35.586
+    },
+    {
+      "line": 4,
+      "english": "After the war it was abandoned for a long time.",
+      "word_timings": [
+        {
+          "word": "After",
+          "display_index": 0,
+          "start": 35.966,
+          "end": 36.325
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 36.325,
+          "end": 36.466
+        },
+        {
+          "word": "war",
+          "display_index": 2,
+          "start": 36.466,
+          "end": 37.106
+        },
+        {
+          "word": "it",
+          "display_index": 3,
+          "start": 37.106,
+          "end": 37.286
+        },
+        {
+          "word": "was",
+          "display_index": 4,
+          "start": 37.286,
+          "end": 37.527
+        },
+        {
+          "word": "abandoned",
+          "display_index": 5,
+          "start": 37.527,
+          "end": 38.507
+        },
+        {
+          "word": "for",
+          "display_index": 6,
+          "start": 38.507,
+          "end": 38.771
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 38.771,
+          "end": 38.927
+        },
+        {
+          "word": "long",
+          "display_index": 8,
+          "start": 38.927,
+          "end": 39.507
+        },
+        {
+          "word": "time.",
+          "display_index": 9,
+          "start": 39.507,
+          "end": 41.007
+        }
+      ],
+      "start": 35.966,
+      "end": 41.007
+    },
+    {
+      "line": 5,
+      "english": "Its roof had crumbled, and the garden was covered with weeds.",
+      "word_timings": [
+        {
+          "word": "Its",
+          "display_index": 0,
+          "start": 42.407,
+          "end": 42.587
+        },
+        {
+          "word": "roof",
+          "display_index": 1,
+          "start": 42.587,
+          "end": 42.807
+        },
+        {
+          "word": "had",
+          "display_index": 2,
+          "start": 42.807,
+          "end": 43.007
+        },
+        {
+          "word": "crumbled,",
+          "display_index": 3,
+          "start": 43.007,
+          "end": 44.408
+        },
+        {
+          "word": "and",
+          "display_index": 4,
+          "start": 44.408,
+          "end": 44.542
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 44.542,
+          "end": 44.708
+        },
+        {
+          "word": "garden",
+          "display_index": 6,
+          "start": 44.708,
+          "end": 45.228
+        },
+        {
+          "word": "was",
+          "display_index": 7,
+          "start": 45.228,
+          "end": 45.428
+        },
+        {
+          "word": "covered",
+          "display_index": 8,
+          "start": 45.428,
+          "end": 45.868
+        },
+        {
+          "word": "with",
+          "display_index": 9,
+          "start": 45.868,
+          "end": 46.068
+        },
+        {
+          "word": "weeds.",
+          "display_index": 10,
+          "start": 46.068,
+          "end": 47.288
+        }
+      ],
+      "start": 42.407,
+      "end": 47.288
+    },
+    {
+      "line": 6,
+      "english": "Citizens raised their voices, saying this building should be preserved as part of our heritage.",
+      "word_timings": [
+        {
+          "word": "Citizens",
+          "display_index": 0,
+          "start": 47.588,
+          "end": 48.388
+        },
+        {
+          "word": "raised",
+          "display_index": 1,
+          "start": 48.388,
+          "end": 48.728
+        },
+        {
+          "word": "their",
+          "display_index": 2,
+          "start": 48.728,
+          "end": 48.949
+        },
+        {
+          "word": "voices,",
+          "display_index": 3,
+          "start": 48.949,
+          "end": 50.069
+        },
+        {
+          "word": "saying",
+          "display_index": 4,
+          "start": 50.069,
+          "end": 50.529
+        },
+        {
+          "word": "this",
+          "display_index": 5,
+          "start": 50.529,
+          "end": 50.909
+        },
+        {
+          "word": "building",
+          "display_index": 6,
+          "start": 50.909,
+          "end": 51.609
+        },
+        {
+          "word": "should",
+          "display_index": 7,
+          "start": 51.609,
+          "end": 51.849
+        },
+        {
+          "word": "be",
+          "display_index": 8,
+          "start": 51.849,
+          "end": 53.049
+        },
+        {
+          "word": "preserved",
+          "display_index": 9,
+          "start": 53.049,
+          "end": 54.049
+        },
+        {
+          "word": "as",
+          "display_index": 10,
+          "start": 54.049,
+          "end": 54.209
+        },
+        {
+          "word": "part",
+          "display_index": 11,
+          "start": 54.209,
+          "end": 54.549
+        },
+        {
+          "word": "of",
+          "display_index": 12,
+          "start": 54.549,
+          "end": 54.73
+        },
+        {
+          "word": "our",
+          "display_index": 13,
+          "start": 54.73,
+          "end": 55.03
+        },
+        {
+          "word": "heritage.",
+          "display_index": 14,
+          "start": 55.03,
+          "end": 56.53
+        }
+      ],
+      "start": 47.588,
+      "end": 56.53
+    },
+    {
+      "line": 7,
+      "english": "The house was recognized as historically significant.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 57.653,
+          "end": 57.79
+        },
+        {
+          "word": "house",
+          "display_index": 1,
+          "start": 57.79,
+          "end": 58.35
+        },
+        {
+          "word": "was",
+          "display_index": 2,
+          "start": 58.35,
+          "end": 58.59
+        },
+        {
+          "word": "recognized",
+          "display_index": 3,
+          "start": 58.59,
+          "end": 60.33
+        },
+        {
+          "word": "as",
+          "display_index": 4,
+          "start": 60.33,
+          "end": 60.491
+        },
+        {
+          "word": "historically",
+          "display_index": 5,
+          "start": 60.491,
+          "end": 61.871
+        },
+        {
+          "word": "significant.",
+          "display_index": 6,
+          "start": 61.871,
+          "end": 63.371
+        }
+      ],
+      "start": 57.653,
+      "end": 63.371
+    },
+    {
+      "line": 8,
+      "english": "Finally a restoration budget was allocated by the city, and the house was gradually repaired.",
+      "word_timings": [
+        {
+          "word": "Finally",
+          "display_index": 0,
+          "start": 65.031,
+          "end": 65.603
+        },
+        {
+          "word": "a",
+          "display_index": 1,
+          "start": 65.603,
+          "end": 65.791
+        },
+        {
+          "word": "restoration",
+          "display_index": 2,
+          "start": 65.791,
+          "end": 67.052
+        },
+        {
+          "word": "budget",
+          "display_index": 3,
+          "start": 67.052,
+          "end": 67.792
+        },
+        {
+          "word": "was",
+          "display_index": 4,
+          "start": 67.792,
+          "end": 68.052
+        },
+        {
+          "word": "allocated",
+          "display_index": 5,
+          "start": 68.052,
+          "end": 68.692
+        },
+        {
+          "word": "by",
+          "display_index": 6,
+          "start": 68.692,
+          "end": 69.066
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 69.066,
+          "end": 69.232
+        },
+        {
+          "word": "city,",
+          "display_index": 8,
+          "start": 69.232,
+          "end": 70.512
+        },
+        {
+          "word": "and",
+          "display_index": 9,
+          "start": 70.512,
+          "end": 70.661
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 70.661,
+          "end": 70.832
+        },
+        {
+          "word": "house",
+          "display_index": 11,
+          "start": 70.832,
+          "end": 71.392
+        },
+        {
+          "word": "was",
+          "display_index": 12,
+          "start": 71.392,
+          "end": 71.572
+        },
+        {
+          "word": "gradually",
+          "display_index": 13,
+          "start": 71.572,
+          "end": 73.053
+        },
+        {
+          "word": "repaired.",
+          "display_index": 14,
+          "start": 73.053,
+          "end": 74.553
+        }
+      ],
+      "start": 65.031,
+      "end": 74.553
+    },
+    {
+      "line": 9,
+      "english": "The roof was redone, the walls were painted, and the windows were replaced.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 75.785,
+          "end": 75.953
+        },
+        {
+          "word": "roof",
+          "display_index": 1,
+          "start": 75.953,
+          "end": 76.313
+        },
+        {
+          "word": "was",
+          "display_index": 2,
+          "start": 76.313,
+          "end": 76.653
+        },
+        {
+          "word": "redone,",
+          "display_index": 3,
+          "start": 76.653,
+          "end": 77.25
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 77.25,
+          "end": 77.413
+        },
+        {
+          "word": "walls",
+          "display_index": 5,
+          "start": 77.413,
+          "end": 77.794
+        },
+        {
+          "word": "were",
+          "display_index": 6,
+          "start": 77.794,
+          "end": 77.954
+        },
+        {
+          "word": "painted,",
+          "display_index": 7,
+          "start": 77.954,
+          "end": 79.254
+        },
+        {
+          "word": "and",
+          "display_index": 8,
+          "start": 79.254,
+          "end": 79.383
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 79.383,
+          "end": 79.574
+        },
+        {
+          "word": "windows",
+          "display_index": 10,
+          "start": 79.574,
+          "end": 80.274
+        },
+        {
+          "word": "were",
+          "display_index": 11,
+          "start": 80.274,
+          "end": 80.554
+        },
+        {
+          "word": "replaced.",
+          "display_index": 12,
+          "start": 80.554,
+          "end": 81.534
+        }
+      ],
+      "start": 75.785,
+      "end": 81.534
+    },
+    {
+      "line": 10,
+      "english": "On the day it opened, I stepped inside.",
+      "word_timings": [
+        {
+          "word": "On",
+          "display_index": 0,
+          "start": 81.834,
+          "end": 82.125
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 82.125,
+          "end": 82.294
+        },
+        {
+          "word": "day",
+          "display_index": 2,
+          "start": 82.294,
+          "end": 82.754
+        },
+        {
+          "word": "it",
+          "display_index": 3,
+          "start": 82.754,
+          "end": 82.974
+        },
+        {
+          "word": "opened,",
+          "display_index": 4,
+          "start": 82.974,
+          "end": 84.426
+        },
+        {
+          "word": "I",
+          "display_index": 5,
+          "start": 84.426,
+          "end": 84.555
+        },
+        {
+          "word": "stepped",
+          "display_index": 6,
+          "start": 84.555,
+          "end": 85.075
+        },
+        {
+          "word": "inside.",
+          "display_index": 7,
+          "start": 85.075,
+          "end": 86.575
+        }
+      ],
+      "start": 81.834,
+      "end": 86.575
+    },
+    {
+      "line": 11,
+      "english": "In its old pillars, traces of the past were carved.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 88.195,
+          "end": 88.375
+        },
+        {
+          "word": "its",
+          "display_index": 1,
+          "start": 88.375,
+          "end": 88.695
+        },
+        {
+          "word": "old",
+          "display_index": 2,
+          "start": 88.695,
+          "end": 89.035
+        },
+        {
+          "word": "pillars,",
+          "display_index": 3,
+          "start": 89.035,
+          "end": 91.016
+        },
+        {
+          "word": "traces",
+          "display_index": 4,
+          "start": 91.016,
+          "end": 91.796
+        },
+        {
+          "word": "of",
+          "display_index": 5,
+          "start": 91.796,
+          "end": 92.545
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 92.545,
+          "end": 92.696
+        },
+        {
+          "word": "past",
+          "display_index": 7,
+          "start": 92.696,
+          "end": 93.456
+        },
+        {
+          "word": "were",
+          "display_index": 8,
+          "start": 93.456,
+          "end": 93.756
+        },
+        {
+          "word": "carved.",
+          "display_index": 9,
+          "start": 93.756,
+          "end": 95.256
+        }
+      ],
+      "start": 88.195,
+      "end": 95.256
+    },
+    {
+      "line": 12,
+      "english": "Through the efforts of local people, the old building was given a new life.",
+      "word_timings": [
+        {
+          "word": "Through",
+          "display_index": 0,
+          "start": 97.657,
+          "end": 98.08
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 98.08,
+          "end": 98.377
+        },
+        {
+          "word": "efforts",
+          "display_index": 2,
+          "start": 98.377,
+          "end": 98.957
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 98.957,
+          "end": 99.177
+        },
+        {
+          "word": "local",
+          "display_index": 4,
+          "start": 99.177,
+          "end": 99.757
+        },
+        {
+          "word": "people,",
+          "display_index": 5,
+          "start": 99.757,
+          "end": 102.2
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 102.2,
+          "end": 102.438
+        },
+        {
+          "word": "old",
+          "display_index": 7,
+          "start": 102.438,
+          "end": 102.798
+        },
+        {
+          "word": "building",
+          "display_index": 8,
+          "start": 102.798,
+          "end": 103.898
+        },
+        {
+          "word": "was",
+          "display_index": 9,
+          "start": 103.898,
+          "end": 104.258
+        },
+        {
+          "word": "given",
+          "display_index": 10,
+          "start": 104.258,
+          "end": 104.852
+        },
+        {
+          "word": "a",
+          "display_index": 11,
+          "start": 104.852,
+          "end": 105.018
+        },
+        {
+          "word": "new",
+          "display_index": 12,
+          "start": 105.018,
+          "end": 105.958
+        },
+        {
+          "word": "life.",
+          "display_index": 13,
+          "start": 105.958,
+          "end": 107.458
+        }
+      ],
+      "start": 97.657,
+      "end": 107.458
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

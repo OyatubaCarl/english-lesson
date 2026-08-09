@@ -1,0 +1,809 @@
+{
+  "lesson": "H001",
+  "method": "TacoBeat: Whisper word timestamps + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h001_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H001/candidate1-full.mp3",
+  "source_audio_sha256": "90fbf3a1d63596f0dd737b7f67fadc667261cdaf257db61134847cd512d36ef1",
+  "bpm": 85.98,
+  "exact_word_match": true,
+  "word_count": 122,
+  "line_count": 23,
+  "first_word_start": 12.882,
+  "last_word_end": 125.398,
+  "lines": [
+    {
+      "line": 1,
+      "english": "At dawn, I stood by the lake.",
+      "word_timings": [
+        {
+          "word": "At",
+          "start": 12.882,
+          "end": 13.182
+        },
+        {
+          "word": "dawn,",
+          "start": 13.182,
+          "end": 14.306
+        },
+        {
+          "word": "I",
+          "start": 14.306,
+          "end": 14.482
+        },
+        {
+          "word": "stood",
+          "start": 14.482,
+          "end": 15.122
+        },
+        {
+          "word": "by",
+          "start": 15.122,
+          "end": 15.703
+        },
+        {
+          "word": "the",
+          "start": 15.703,
+          "end": 15.822
+        },
+        {
+          "word": "lake.",
+          "start": 15.822,
+          "end": 16.962
+        }
+      ],
+      "start": 12.882,
+      "end": 16.962
+    },
+    {
+      "line": 2,
+      "english": "The water lay still.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 17.262,
+          "end": 17.403
+        },
+        {
+          "word": "water",
+          "start": 17.403,
+          "end": 18.083
+        },
+        {
+          "word": "lay",
+          "start": 18.083,
+          "end": 18.663
+        },
+        {
+          "word": "still.",
+          "start": 18.663,
+          "end": 20.163
+        }
+      ],
+      "start": 17.262,
+      "end": 20.163
+    },
+    {
+      "line": 3,
+      "english": "A gentle mist drifted on the surface.",
+      "word_timings": [
+        {
+          "word": "A",
+          "start": 22.69,
+          "end": 22.903
+        },
+        {
+          "word": "gentle",
+          "start": 22.903,
+          "end": 24.004
+        },
+        {
+          "word": "mist",
+          "start": 24.004,
+          "end": 25.024
+        },
+        {
+          "word": "drifted",
+          "start": 25.024,
+          "end": 25.884
+        },
+        {
+          "word": "on",
+          "start": 25.884,
+          "end": 26.469
+        },
+        {
+          "word": "the",
+          "start": 26.469,
+          "end": 26.764
+        },
+        {
+          "word": "surface.",
+          "start": 26.764,
+          "end": 28.264
+        }
+      ],
+      "start": 22.69,
+      "end": 28.264
+    },
+    {
+      "line": 4,
+      "english": "The world breathed quietly.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 29.759,
+          "end": 29.924
+        },
+        {
+          "word": "world",
+          "start": 29.924,
+          "end": 30.624
+        },
+        {
+          "word": "breathed",
+          "start": 30.624,
+          "end": 31.245
+        },
+        {
+          "word": "quietly.",
+          "start": 31.245,
+          "end": 32.745
+        }
+      ],
+      "start": 29.759,
+      "end": 32.745
+    },
+    {
+      "line": 5,
+      "english": "The light gradually appeared in the distant sky.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 34.698,
+          "end": 34.845
+        },
+        {
+          "word": "light",
+          "start": 34.845,
+          "end": 35.465
+        },
+        {
+          "word": "gradually",
+          "start": 35.465,
+          "end": 36.625
+        },
+        {
+          "word": "appeared",
+          "start": 36.625,
+          "end": 37.365
+        },
+        {
+          "word": "in",
+          "start": 37.365,
+          "end": 37.651
+        },
+        {
+          "word": "the",
+          "start": 37.651,
+          "end": 37.986
+        },
+        {
+          "word": "distant",
+          "start": 37.986,
+          "end": 39.186
+        },
+        {
+          "word": "sky.",
+          "start": 39.186,
+          "end": 40.686
+        }
+      ],
+      "start": 34.698,
+      "end": 40.686
+    },
+    {
+      "line": 6,
+      "english": "The sun emerged.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 41.031,
+          "end": 41.146
+        },
+        {
+          "word": "sun",
+          "start": 41.146,
+          "end": 41.466
+        },
+        {
+          "word": "emerged.",
+          "start": 41.466,
+          "end": 42.966
+        }
+      ],
+      "start": 41.031,
+      "end": 42.966
+    },
+    {
+      "line": 7,
+      "english": "Its rays spread across the pure air.",
+      "word_timings": [
+        {
+          "word": "Its",
+          "start": 43.766,
+          "end": 44.006
+        },
+        {
+          "word": "rays",
+          "start": 44.006,
+          "end": 44.467
+        },
+        {
+          "word": "spread",
+          "start": 44.467,
+          "end": 44.927
+        },
+        {
+          "word": "across",
+          "start": 44.927,
+          "end": 45.661
+        },
+        {
+          "word": "the",
+          "start": 45.661,
+          "end": 45.767
+        },
+        {
+          "word": "pure",
+          "start": 45.767,
+          "end": 46.467
+        },
+        {
+          "word": "air.",
+          "start": 46.467,
+          "end": 47.967
+        }
+      ],
+      "start": 43.766,
+      "end": 47.967
+    },
+    {
+      "line": 8,
+      "english": "No one spoke.",
+      "word_timings": [
+        {
+          "word": "No",
+          "start": 51.588,
+          "end": 51.888
+        },
+        {
+          "word": "one",
+          "start": 51.888,
+          "end": 52.168
+        },
+        {
+          "word": "spoke.",
+          "start": 52.168,
+          "end": 53.208
+        }
+      ],
+      "start": 51.588,
+      "end": 53.208
+    },
+    {
+      "line": 9,
+      "english": "I gazed at the shore.",
+      "word_timings": [
+        {
+          "word": "I",
+          "start": 53.508,
+          "end": 53.688
+        },
+        {
+          "word": "gazed",
+          "start": 53.688,
+          "end": 54.348
+        },
+        {
+          "word": "at",
+          "start": 54.348,
+          "end": 54.551
+        },
+        {
+          "word": "the",
+          "start": 54.551,
+          "end": 54.848
+        },
+        {
+          "word": "shore.",
+          "start": 54.848,
+          "end": 56.008
+        }
+      ],
+      "start": 53.508,
+      "end": 56.008
+    },
+    {
+      "line": 10,
+      "english": "A narrow stream flowed near my feet.",
+      "word_timings": [
+        {
+          "word": "A",
+          "start": 56.308,
+          "end": 56.388
+        },
+        {
+          "word": "narrow",
+          "start": 56.368,
+          "end": 57.028
+        },
+        {
+          "word": "stream",
+          "start": 57.028,
+          "end": 57.788
+        },
+        {
+          "word": "flowed",
+          "start": 57.788,
+          "end": 59.249
+        },
+        {
+          "word": "near",
+          "start": 59.249,
+          "end": 59.988
+        },
+        {
+          "word": "my",
+          "start": 59.988,
+          "end": 60.609
+        },
+        {
+          "word": "feet.",
+          "start": 60.609,
+          "end": 62.109
+        }
+      ],
+      "start": 56.308,
+      "end": 62.109
+    },
+    {
+      "line": 11,
+      "english": "The water whispered softly.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 62.571,
+          "end": 62.769
+        },
+        {
+          "word": "water",
+          "start": 62.769,
+          "end": 63.469
+        },
+        {
+          "word": "whispered",
+          "start": 63.469,
+          "end": 64.449
+        },
+        {
+          "word": "softly.",
+          "start": 64.449,
+          "end": 65.57
+        }
+      ],
+      "start": 62.571,
+      "end": 65.57
+    },
+    {
+      "line": 12,
+      "english": "Birds sang in distant trees.",
+      "word_timings": [
+        {
+          "word": "Birds",
+          "start": 65.87,
+          "end": 66.55
+        },
+        {
+          "word": "sang",
+          "start": 66.55,
+          "end": 67.21
+        },
+        {
+          "word": "in",
+          "start": 67.21,
+          "end": 67.63
+        },
+        {
+          "word": "distant",
+          "start": 67.63,
+          "end": 68.55
+        },
+        {
+          "word": "trees.",
+          "start": 68.55,
+          "end": 70.05
+        }
+      ],
+      "start": 65.87,
+      "end": 70.05
+    },
+    {
+      "line": 13,
+      "english": "A fish jumped, and gentle ripples ran outward from the edge.",
+      "word_timings": [
+        {
+          "word": "A",
+          "start": 70.961,
+          "end": 71.09
+        },
+        {
+          "word": "fish",
+          "start": 71.09,
+          "end": 71.771
+        },
+        {
+          "word": "jumped,",
+          "start": 71.771,
+          "end": 73.631
+        },
+        {
+          "word": "and",
+          "start": 73.631,
+          "end": 73.891
+        },
+        {
+          "word": "gentle",
+          "start": 73.891,
+          "end": 74.631
+        },
+        {
+          "word": "ripples",
+          "start": 74.631,
+          "end": 75.671
+        },
+        {
+          "word": "ran",
+          "start": 75.671,
+          "end": 76.111
+        },
+        {
+          "word": "outward",
+          "start": 76.111,
+          "end": 76.671
+        },
+        {
+          "word": "from",
+          "start": 76.671,
+          "end": 77.031
+        },
+        {
+          "word": "the",
+          "start": 77.031,
+          "end": 77.371
+        },
+        {
+          "word": "edge.",
+          "start": 77.371,
+          "end": 78.871
+        }
+      ],
+      "start": 70.961,
+      "end": 78.871
+    },
+    {
+      "line": 14,
+      "english": "From the depths of the forest, a faint presence moved.",
+      "word_timings": [
+        {
+          "word": "From",
+          "start": 79.792,
+          "end": 80.064
+        },
+        {
+          "word": "the",
+          "start": 80.064,
+          "end": 80.192
+        },
+        {
+          "word": "depths",
+          "start": 80.192,
+          "end": 80.612
+        },
+        {
+          "word": "of",
+          "start": 80.612,
+          "end": 80.757
+        },
+        {
+          "word": "the",
+          "start": 80.757,
+          "end": 80.892
+        },
+        {
+          "word": "forest,",
+          "start": 80.892,
+          "end": 82.501
+        },
+        {
+          "word": "a",
+          "start": 82.501,
+          "end": 82.632
+        },
+        {
+          "word": "faint",
+          "start": 82.632,
+          "end": 82.952
+        },
+        {
+          "word": "presence",
+          "start": 82.952,
+          "end": 84.032
+        },
+        {
+          "word": "moved.",
+          "start": 84.032,
+          "end": 85.352
+        }
+      ],
+      "start": 79.792,
+      "end": 85.352
+    },
+    {
+      "line": 15,
+      "english": "I noticed a deer.",
+      "word_timings": [
+        {
+          "word": "I",
+          "start": 85.652,
+          "end": 85.773
+        },
+        {
+          "word": "noticed",
+          "start": 85.773,
+          "end": 86.513
+        },
+        {
+          "word": "a",
+          "start": 86.513,
+          "end": 86.813
+        },
+        {
+          "word": "deer.",
+          "start": 86.813,
+          "end": 87.613
+        }
+      ],
+      "start": 85.652,
+      "end": 87.613
+    },
+    {
+      "line": 16,
+      "english": "It stood still.",
+      "word_timings": [
+        {
+          "word": "It",
+          "start": 87.613,
+          "end": 87.813
+        },
+        {
+          "word": "stood",
+          "start": 87.813,
+          "end": 88.473
+        },
+        {
+          "word": "still.",
+          "start": 88.473,
+          "end": 89.973
+        }
+      ],
+      "start": 87.613,
+      "end": 89.973
+    },
+    {
+      "line": 17,
+      "english": "Then it vanished into the trees.",
+      "word_timings": [
+        {
+          "word": "Then",
+          "start": 90.673,
+          "end": 90.953
+        },
+        {
+          "word": "it",
+          "start": 90.953,
+          "end": 91.373
+        },
+        {
+          "word": "vanished",
+          "start": 91.373,
+          "end": 92.514
+        },
+        {
+          "word": "into",
+          "start": 92.514,
+          "end": 93.499
+        },
+        {
+          "word": "the",
+          "start": 93.499,
+          "end": 93.714
+        },
+        {
+          "word": "trees.",
+          "start": 93.714,
+          "end": 95.121
+        }
+      ],
+      "start": 90.673,
+      "end": 95.121
+    },
+    {
+      "line": 18,
+      "english": "I simply observed the landscape in silence.",
+      "word_timings": [
+        {
+          "word": "I",
+          "start": 95.421,
+          "end": 95.554
+        },
+        {
+          "word": "simply",
+          "start": 95.554,
+          "end": 96.214
+        },
+        {
+          "word": "observed",
+          "start": 96.214,
+          "end": 97.321
+        },
+        {
+          "word": "the",
+          "start": 97.321,
+          "end": 97.634
+        },
+        {
+          "word": "landscape",
+          "start": 97.634,
+          "end": 98.954
+        },
+        {
+          "word": "in",
+          "start": 98.954,
+          "end": 99.355
+        },
+        {
+          "word": "silence.",
+          "start": 99.355,
+          "end": 100.855
+        }
+      ],
+      "start": 95.421,
+      "end": 100.855
+    },
+    {
+      "line": 19,
+      "english": "Nothing spoke, yet everything lived.",
+      "word_timings": [
+        {
+          "word": "Nothing",
+          "start": 101.835,
+          "end": 102.415
+        },
+        {
+          "word": "spoke,",
+          "start": 102.415,
+          "end": 103.755
+        },
+        {
+          "word": "yet",
+          "start": 103.755,
+          "end": 104.055
+        },
+        {
+          "word": "everything",
+          "start": 104.055,
+          "end": 105.015
+        },
+        {
+          "word": "lived.",
+          "start": 105.015,
+          "end": 106.252
+        }
+      ],
+      "start": 101.835,
+      "end": 106.252
+    },
+    {
+      "line": 20,
+      "english": "The morning continued.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 106.552,
+          "end": 106.736
+        },
+        {
+          "word": "morning",
+          "start": 106.736,
+          "end": 107.436
+        },
+        {
+          "word": "continued.",
+          "start": 107.436,
+          "end": 108.936
+        }
+      ],
+      "start": 106.552,
+      "end": 108.936
+    },
+    {
+      "line": 21,
+      "english": "A new day arose.",
+      "word_timings": [
+        {
+          "word": "A",
+          "start": 112.046,
+          "end": 112.336
+        },
+        {
+          "word": "new",
+          "start": 112.336,
+          "end": 112.857
+        },
+        {
+          "word": "day",
+          "start": 112.857,
+          "end": 113.497
+        },
+        {
+          "word": "arose.",
+          "start": 113.497,
+          "end": 114.997
+        }
+      ],
+      "start": 112.046,
+      "end": 114.997
+    },
+    {
+      "line": 22,
+      "english": "I remained there.",
+      "word_timings": [
+        {
+          "word": "I",
+          "start": 118.417,
+          "end": 118.677
+        },
+        {
+          "word": "remained",
+          "start": 118.677,
+          "end": 119.638
+        },
+        {
+          "word": "there.",
+          "start": 119.638,
+          "end": 121.138
+        }
+      ],
+      "start": 118.417,
+      "end": 121.138
+    },
+    {
+      "line": 23,
+      "english": "Time passed.",
+      "word_timings": [
+        {
+          "word": "Time",
+          "start": 122.438,
+          "end": 123.898
+        },
+        {
+          "word": "passed.",
+          "start": 123.898,
+          "end": 125.398
+        }
+      ],
+      "start": 122.438,
+      "end": 125.398
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H148.md",
+  "audio": "高校生編/suno_ready/generated/audio/H148/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 132.74,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0043,
+  "expected_words": 233,
+  "transcribed_words": 234,
+  "matched_words": 226,
+  "coverage": 0.97,
+  "precision": 0.9658,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 232,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 194,
+      "length": 2,
+      "words": [
+        "providing",
+        "local"
+      ]
+    },
+    {
+      "start": 124,
+      "length": 1,
+      "words": [
+        "lives"
+      ]
+    },
+    {
+      "start": 143,
+      "length": 1,
+      "words": [
+        "in"
+      ]
+    },
+    {
+      "start": 182,
+      "length": 1,
+      "words": [
+        "omawari"
+      ]
+    },
+    {
+      "start": 185,
+      "length": 1,
+      "words": [
+        "koban"
+      ]
+    },
+    {
+      "start": 199,
+      "length": 1,
+      "words": [
+        "police"
+      ]
+    }
+  ],
+  "replacement_count": 5,
+  "replacement_spans": [
+    {
+      "expected_start": 124,
+      "actual_start": 124,
+      "expected": [
+        "lives"
+      ],
+      "actual": [
+        "wives"
+      ],
+      "actual_confidence": 0.9575,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 182,
+      "actual_start": 181,
+      "expected": [
+        "omawari"
+      ],
+      "actual": [
+        "omowari"
+      ],
+      "actual_confidence": 0.5503,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 185,
+      "actual_start": 184,
+      "expected": [
+        "koban"
+      ],
+      "actual": [
+        "co",
+        "ban"
+      ],
+      "actual_confidence": 0.3268,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 194,
+      "actual_start": 194,
+      "expected": [
+        "providing",
+        "local"
+      ],
+      "actual": [
+        "by",
+        "following",
+        "legal"
+      ],
+      "actual_confidence": 0.4366,
+      "substitution_words": 2,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 199,
+      "actual_start": 200,
+      "expected": [
+        "police"
+      ],
+      "actual": [
+        "so"
+      ],
+      "actual_confidence": 0.6914,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 143,
+      "actual_start": 143,
+      "expected": [
+        "in"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "A police officer, that is a cop, is an important profession that protects the order of society. They patrol the streets around the clock and react to incidents and accidents. Their work involves many areas. Investigating a crime, enforcing traffic laws, consulting with residents, Responding to reports of suspicious activity while respecting civil rights There are dramatic scenes of tracking down a killer But much of daily duty is steady, quiet work Writing documents, investigating the scene Communication with a supervisor The role of correctional facilities that manage prisoners is also important The aim is not only to punish criminals but also to rehabilitate them But the work of police has dangerous moments Armed criminals, gunshots, explosions They often face risks to their own wives Police function only with the trust of citizens If there is violence or corruption Their reputation is lost an instant In America, excessive violence against black people has continued And the Black Lives Matter movement has spread This is not a rebellion against the entire police But a voice demanding reform Japanese police are called affectionately Omowari-san, the co-ban Police box system is unique in the world By following legal, community-based security So officers too are human They make mistakes And they have emotions While we expect much of them We must not demand perfection Mutual understanding and cooperation Are the foundation of a safe society",
+  "segments": [
+    {
+      "start": 3.92,
+      "end": 11.54,
+      "text": "A police officer, that is a cop, is an important profession that protects the order of society."
+    },
+    {
+      "start": 12.62,
+      "end": 18.82,
+      "text": "They patrol the streets around the clock and react to incidents and accidents."
+    },
+    {
+      "start": 19.24,
+      "end": 22.34,
+      "text": "Their work involves many areas."
+    },
+    {
+      "start": 23.4,
+      "end": 28.56,
+      "text": "Investigating a crime, enforcing traffic laws, consulting with residents,"
+    },
+    {
+      "start": 28.56,
+      "end": 34.3,
+      "text": "Responding to reports of suspicious activity while respecting civil rights"
+    },
+    {
+      "start": 34.3,
+      "end": 37.2,
+      "text": "There are dramatic scenes of tracking down a killer"
+    },
+    {
+      "start": 37.2,
+      "end": 40.26,
+      "text": "But much of daily duty is steady, quiet work"
+    },
+    {
+      "start": 40.26,
+      "end": 43.12,
+      "text": "Writing documents, investigating the scene"
+    },
+    {
+      "start": 43.12,
+      "end": 45.78,
+      "text": "Communication with a supervisor"
+    },
+    {
+      "start": 48.32,
+      "end": 53.64,
+      "text": "The role of correctional facilities that manage prisoners is also important"
+    },
+    {
+      "start": 53.64,
+      "end": 59.32,
+      "text": "The aim is not only to punish criminals but also to rehabilitate them"
+    },
+    {
+      "start": 59.32,
+      "end": 62.62,
+      "text": "But the work of police has dangerous moments"
+    },
+    {
+      "start": 62.62,
+      "end": 65.48,
+      "text": "Armed criminals, gunshots, explosions"
+    },
+    {
+      "start": 65.48,
+      "end": 69.44,
+      "text": "They often face risks to their own wives"
+    },
+    {
+      "start": 70.54,
+      "end": 74.98,
+      "text": "Police function only with the trust of citizens"
+    },
+    {
+      "start": 74.98,
+      "end": 78.06,
+      "text": "If there is violence or corruption"
+    },
+    {
+      "start": 78.06,
+      "end": 80.86,
+      "text": "Their reputation is lost an instant"
+    },
+    {
+      "start": 80.86,
+      "end": 86.24,
+      "text": "In America, excessive violence against black people has continued"
+    },
+    {
+      "start": 86.24,
+      "end": 90.66,
+      "text": "And the Black Lives Matter movement has spread"
+    },
+    {
+      "start": 91.68,
+      "end": 95.58,
+      "text": "This is not a rebellion against the entire police"
+    },
+    {
+      "start": 95.58,
+      "end": 97.7,
+      "text": "But a voice demanding reform"
+    },
+    {
+      "start": 97.7,
+      "end": 100.64,
+      "text": "Japanese police are called affectionately"
+    },
+    {
+      "start": 100.64,
+      "end": 103.48,
+      "text": "Omowari-san, the co-ban"
+    },
+    {
+      "start": 103.48,
+      "end": 106.74,
+      "text": "Police box system is unique in the world"
+    },
+    {
+      "start": 106.74,
+      "end": 110.0,
+      "text": "By following legal, community-based security"
+    },
+    {
+      "start": 110.0,
+      "end": 112.42,
+      "text": "So officers too are human"
+    },
+    {
+      "start": 113.0,
+      "end": 114.98,
+      "text": "They make mistakes"
+    },
+    {
+      "start": 114.98,
+      "end": 117.74,
+      "text": "And they have emotions"
+    },
+    {
+      "start": 117.74,
+      "end": 121.24,
+      "text": "While we expect much of them"
+    },
+    {
+      "start": 121.24,
+      "end": 124.26,
+      "text": "We must not demand perfection"
+    },
+    {
+      "start": 124.26,
+      "end": 127.76,
+      "text": "Mutual understanding and cooperation"
+    },
+    {
+      "start": 127.76,
+      "end": 132.74,
+      "text": "Are the foundation of a safe society"
+    }
+  ]
+}

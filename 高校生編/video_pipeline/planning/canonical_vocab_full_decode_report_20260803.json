@@ -1,0 +1,15 @@
+{
+  "date": "2026-08-03",
+  "scope": {
+    "middle": "L01-L45 v2_canonical_vocab",
+    "high": "H001-H015 and H046 v5_tacobeat_canonical_vocab_color_only"
+  },
+  "counts": {
+    "videos": 61,
+    "decode_pass": 61,
+    "decode_fail": 0
+  },
+  "command_policy": "ffmpeg -v error -i INPUT -f null -",
+  "error_log": "canonical_vocab_full_decode_errors_20260803.log",
+  "error_log_bytes": 0
+}

@@ -1,0 +1,717 @@
+{
+  "lesson": "H004",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h004_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H004/candidate1-full.mp3",
+  "source_audio_sha256": "4400628ac361fdfb891bcdabba16349b5ce61427040151d9d6ac522c50cfd29a",
+  "bpm": 71.62,
+  "exact_word_match": true,
+  "word_count": 121,
+  "line_count": 12,
+  "first_word_start": 12.124,
+  "last_word_end": 100.879,
+  "lines": [
+    {
+      "line": 1,
+      "english": "My father gave me a small box.",
+      "word_timings": [
+        {
+          "word": "My",
+          "start": 12.124,
+          "end": 12.302
+        },
+        {
+          "word": "father",
+          "start": 12.302,
+          "end": 12.942
+        },
+        {
+          "word": "gave",
+          "start": 12.942,
+          "end": 13.563
+        },
+        {
+          "word": "me",
+          "start": 13.563,
+          "end": 14.507
+        },
+        {
+          "word": "a",
+          "start": 14.507,
+          "end": 14.587
+        },
+        {
+          "word": "small",
+          "start": 14.563,
+          "end": 15.003
+        },
+        {
+          "word": "box.",
+          "start": 15.003,
+          "end": 15.943
+        }
+      ],
+      "start": 12.124,
+      "end": 15.943
+    },
+    {
+      "line": 2,
+      "english": "Inside were old photographs and one letter.",
+      "word_timings": [
+        {
+          "word": "Inside",
+          "start": 16.243,
+          "end": 16.883
+        },
+        {
+          "word": "were",
+          "start": 16.883,
+          "end": 17.143
+        },
+        {
+          "word": "old",
+          "start": 17.143,
+          "end": 17.623
+        },
+        {
+          "word": "photographs",
+          "start": 17.623,
+          "end": 18.984
+        },
+        {
+          "word": "and",
+          "start": 18.984,
+          "end": 19.304
+        },
+        {
+          "word": "one",
+          "start": 19.304,
+          "end": 19.604
+        },
+        {
+          "word": "letter.",
+          "start": 19.604,
+          "end": 21.104
+        }
+      ],
+      "start": 16.243,
+      "end": 21.104
+    },
+    {
+      "line": 3,
+      "english": "He had kept them safe for a long time.",
+      "word_timings": [
+        {
+          "word": "He",
+          "start": 22.564,
+          "end": 22.764
+        },
+        {
+          "word": "had",
+          "start": 22.764,
+          "end": 22.964
+        },
+        {
+          "word": "kept",
+          "start": 22.964,
+          "end": 23.284
+        },
+        {
+          "word": "them",
+          "start": 23.284,
+          "end": 23.625
+        },
+        {
+          "word": "safe",
+          "start": 23.625,
+          "end": 24.005
+        },
+        {
+          "word": "for",
+          "start": 24.005,
+          "end": 24.241
+        },
+        {
+          "word": "a",
+          "start": 24.241,
+          "end": 24.425
+        },
+        {
+          "word": "long",
+          "start": 24.425,
+          "end": 24.845
+        },
+        {
+          "word": "time.",
+          "start": 24.845,
+          "end": 25.645
+        }
+      ],
+      "start": 22.564,
+      "end": 25.645
+    },
+    {
+      "line": 4,
+      "english": "In one photo, my young father smiled next to my grandfather.",
+      "word_timings": [
+        {
+          "word": "In",
+          "start": 25.665,
+          "end": 25.905
+        },
+        {
+          "word": "one",
+          "start": 25.905,
+          "end": 26.165
+        },
+        {
+          "word": "photo,",
+          "start": 26.165,
+          "end": 28.185
+        },
+        {
+          "word": "my",
+          "start": 28.185,
+          "end": 28.345
+        },
+        {
+          "word": "young",
+          "start": 28.345,
+          "end": 28.706
+        },
+        {
+          "word": "father",
+          "start": 28.706,
+          "end": 29.246
+        },
+        {
+          "word": "smiled",
+          "start": 29.246,
+          "end": 31.146
+        },
+        {
+          "word": "next",
+          "start": 31.146,
+          "end": 31.526
+        },
+        {
+          "word": "to",
+          "start": 31.526,
+          "end": 31.796
+        },
+        {
+          "word": "my",
+          "start": 31.796,
+          "end": 32.146
+        },
+        {
+          "word": "grandfather.",
+          "start": 32.146,
+          "end": 33.646
+        }
+      ],
+      "start": 25.665,
+      "end": 33.646
+    },
+    {
+      "line": 5,
+      "english": "This is my childhood, he whispered softly.",
+      "word_timings": [
+        {
+          "word": "This",
+          "start": 35.347,
+          "end": 35.6
+        },
+        {
+          "word": "is",
+          "start": 35.6,
+          "end": 35.821
+        },
+        {
+          "word": "my",
+          "start": 35.821,
+          "end": 36.107
+        },
+        {
+          "word": "childhood,",
+          "start": 36.107,
+          "end": 37.647
+        },
+        {
+          "word": "he",
+          "start": 37.647,
+          "end": 37.867
+        },
+        {
+          "word": "whispered",
+          "start": 37.867,
+          "end": 38.487
+        },
+        {
+          "word": "softly.",
+          "start": 38.487,
+          "end": 39.987
+        }
+      ],
+      "start": 35.347,
+      "end": 39.987
+    },
+    {
+      "line": 6,
+      "english": "I came to see the ordinary box as something precious.",
+      "word_timings": [
+        {
+          "word": "I",
+          "start": 40.594,
+          "end": 40.728
+        },
+        {
+          "word": "came",
+          "start": 40.728,
+          "end": 41.004
+        },
+        {
+          "word": "to",
+          "start": 41.004,
+          "end": 41.228
+        },
+        {
+          "word": "see",
+          "start": 41.228,
+          "end": 41.645
+        },
+        {
+          "word": "the",
+          "start": 41.645,
+          "end": 41.968
+        },
+        {
+          "word": "ordinary",
+          "start": 41.968,
+          "end": 43.228
+        },
+        {
+          "word": "box",
+          "start": 43.228,
+          "end": 44.188
+        },
+        {
+          "word": "as",
+          "start": 44.188,
+          "end": 44.509
+        },
+        {
+          "word": "something",
+          "start": 44.509,
+          "end": 45.289
+        },
+        {
+          "word": "precious.",
+          "start": 45.289,
+          "end": 46.789
+        }
+      ],
+      "start": 40.594,
+      "end": 46.789
+    },
+    {
+      "line": 7,
+      "english": "I had never imagined that a piece of paper could carry such worth.",
+      "word_timings": [
+        {
+          "word": "I",
+          "start": 47.462,
+          "end": 47.669
+        },
+        {
+          "word": "had",
+          "start": 47.669,
+          "end": 47.949
+        },
+        {
+          "word": "never",
+          "start": 47.949,
+          "end": 48.789
+        },
+        {
+          "word": "imagined",
+          "start": 48.789,
+          "end": 50.79
+        },
+        {
+          "word": "that",
+          "start": 50.79,
+          "end": 51.004
+        },
+        {
+          "word": "a",
+          "start": 51.004,
+          "end": 51.19
+        },
+        {
+          "word": "piece",
+          "start": 51.19,
+          "end": 51.67
+        },
+        {
+          "word": "of",
+          "start": 51.67,
+          "end": 51.87
+        },
+        {
+          "word": "paper",
+          "start": 51.87,
+          "end": 53.51
+        },
+        {
+          "word": "could",
+          "start": 53.51,
+          "end": 53.73
+        },
+        {
+          "word": "carry",
+          "start": 53.73,
+          "end": 55.371
+        },
+        {
+          "word": "such",
+          "start": 55.371,
+          "end": 55.791
+        },
+        {
+          "word": "worth.",
+          "start": 55.791,
+          "end": 57.291
+        }
+      ],
+      "start": 47.462,
+      "end": 57.291
+    },
+    {
+      "line": 8,
+      "english": "Father taught me about the bonds and affection within a family, not with words, but quietly.",
+      "word_timings": [
+        {
+          "word": "Father",
+          "start": 59.131,
+          "end": 59.591
+        },
+        {
+          "word": "taught",
+          "start": 59.591,
+          "end": 60.052
+        },
+        {
+          "word": "me",
+          "start": 60.052,
+          "end": 60.312
+        },
+        {
+          "word": "about",
+          "start": 60.312,
+          "end": 60.881
+        },
+        {
+          "word": "the",
+          "start": 60.881,
+          "end": 61.072
+        },
+        {
+          "word": "bonds",
+          "start": 61.072,
+          "end": 61.792
+        },
+        {
+          "word": "and",
+          "start": 61.792,
+          "end": 61.952
+        },
+        {
+          "word": "affection",
+          "start": 61.952,
+          "end": 63.132
+        },
+        {
+          "word": "within",
+          "start": 63.132,
+          "end": 63.612
+        },
+        {
+          "word": "a",
+          "start": 63.612,
+          "end": 63.752
+        },
+        {
+          "word": "family,",
+          "start": 63.752,
+          "end": 65.713
+        },
+        {
+          "word": "not",
+          "start": 65.713,
+          "end": 65.973
+        },
+        {
+          "word": "with",
+          "start": 65.973,
+          "end": 66.253
+        },
+        {
+          "word": "words,",
+          "start": 66.253,
+          "end": 68.613
+        },
+        {
+          "word": "but",
+          "start": 68.613,
+          "end": 68.793
+        },
+        {
+          "word": "quietly.",
+          "start": 68.793,
+          "end": 70.293
+        }
+      ],
+      "start": 59.131,
+      "end": 70.293
+    },
+    {
+      "line": 9,
+      "english": "The photograph gave me comfort.",
+      "word_timings": [
+        {
+          "word": "The",
+          "start": 72.444,
+          "end": 72.594
+        },
+        {
+          "word": "photograph",
+          "start": 72.594,
+          "end": 73.474
+        },
+        {
+          "word": "gave",
+          "start": 73.474,
+          "end": 73.934
+        },
+        {
+          "word": "me",
+          "start": 73.934,
+          "end": 74.234
+        },
+        {
+          "word": "comfort.",
+          "start": 74.234,
+          "end": 75.194
+        }
+      ],
+      "start": 72.444,
+      "end": 75.194
+    },
+    {
+      "line": 10,
+      "english": "He said, I give you this, and the small gift carried years of respect and memory.",
+      "word_timings": [
+        {
+          "word": "He",
+          "start": 75.494,
+          "end": 75.815
+        },
+        {
+          "word": "said,",
+          "start": 75.815,
+          "end": 76.482
+        },
+        {
+          "word": "I",
+          "start": 76.482,
+          "end": 77.215
+        },
+        {
+          "word": "give",
+          "start": 77.215,
+          "end": 77.535
+        },
+        {
+          "word": "you",
+          "start": 77.535,
+          "end": 77.715
+        },
+        {
+          "word": "this,",
+          "start": 77.715,
+          "end": 79.375
+        },
+        {
+          "word": "and",
+          "start": 79.375,
+          "end": 79.568
+        },
+        {
+          "word": "the",
+          "start": 79.568,
+          "end": 79.675
+        },
+        {
+          "word": "small",
+          "start": 79.675,
+          "end": 80.155
+        },
+        {
+          "word": "gift",
+          "start": 80.155,
+          "end": 80.515
+        },
+        {
+          "word": "carried",
+          "start": 80.515,
+          "end": 81.156
+        },
+        {
+          "word": "years",
+          "start": 81.156,
+          "end": 81.916
+        },
+        {
+          "word": "of",
+          "start": 81.916,
+          "end": 82.216
+        },
+        {
+          "word": "respect",
+          "start": 82.216,
+          "end": 83.976
+        },
+        {
+          "word": "and",
+          "start": 83.976,
+          "end": 84.716
+        },
+        {
+          "word": "memory.",
+          "start": 84.716,
+          "end": 85.905
+        }
+      ],
+      "start": 75.494,
+      "end": 85.905
+    },
+    {
+      "line": 11,
+      "english": "I nodded to my father and accepted the box.",
+      "word_timings": [
+        {
+          "word": "I",
+          "start": 86.205,
+          "end": 86.397
+        },
+        {
+          "word": "nodded",
+          "start": 86.397,
+          "end": 87.244
+        },
+        {
+          "word": "to",
+          "start": 87.244,
+          "end": 87.487
+        },
+        {
+          "word": "my",
+          "start": 87.487,
+          "end": 87.837
+        },
+        {
+          "word": "father",
+          "start": 87.837,
+          "end": 89.397
+        },
+        {
+          "word": "and",
+          "start": 89.397,
+          "end": 89.617
+        },
+        {
+          "word": "accepted",
+          "start": 89.617,
+          "end": 90.89
+        },
+        {
+          "word": "the",
+          "start": 90.89,
+          "end": 91.077
+        },
+        {
+          "word": "box.",
+          "start": 91.077,
+          "end": 92.577
+        }
+      ],
+      "start": 86.205,
+      "end": 92.577
+    },
+    {
+      "line": 12,
+      "english": "A gentle desire to give something back grew in my heart.",
+      "word_timings": [
+        {
+          "word": "A",
+          "start": 92.998,
+          "end": 93.138
+        },
+        {
+          "word": "gentle",
+          "start": 93.138,
+          "end": 94.038
+        },
+        {
+          "word": "desire",
+          "start": 94.038,
+          "end": 95.676
+        },
+        {
+          "word": "to",
+          "start": 95.676,
+          "end": 95.918
+        },
+        {
+          "word": "give",
+          "start": 95.918,
+          "end": 96.478
+        },
+        {
+          "word": "something",
+          "start": 96.478,
+          "end": 97.319
+        },
+        {
+          "word": "back",
+          "start": 97.319,
+          "end": 97.919
+        },
+        {
+          "word": "grew",
+          "start": 97.919,
+          "end": 98.679
+        },
+        {
+          "word": "in",
+          "start": 98.679,
+          "end": 98.994
+        },
+        {
+          "word": "my",
+          "start": 98.994,
+          "end": 99.379
+        },
+        {
+          "word": "heart.",
+          "start": 99.379,
+          "end": 100.879
+        }
+      ],
+      "start": 92.998,
+      "end": 100.879
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

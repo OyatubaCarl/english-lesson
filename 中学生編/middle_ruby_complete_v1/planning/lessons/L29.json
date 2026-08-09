@@ -1,0 +1,688 @@
+{
+  "lesson": 29,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L29/planning/lesson.json",
+  "title_en": "Lesson 29  A Book from the Library",
+  "title_ja": "図書館の一冊",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 9,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Last Saturday, at the school library, I found a book that I will never forget.",
+      "source_ja": "先週の土曜日、学校の図書館で、忘れられない一冊に出会いました。",
+      "display_ja": "先週の土曜日、学校の図書館で、忘れられない一冊に出会いました。",
+      "corrected_translation": false,
+      "mixed": "先週の土曜日、学校の図書館で、忘れられない一冊に出会いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "先週の土曜日、学校の図書館で、忘れられない一冊に出会いました。",
+          "parts": [
+            {
+              "text": "先週",
+              "ruby": "せんしゅう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "土曜",
+              "ruby": "どよう"
+            },
+            {
+              "text": "日",
+              "ruby": "ひ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "学校",
+              "ruby": "がっこう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "図書",
+              "ruby": "としょ"
+            },
+            {
+              "text": "館",
+              "ruby": "かん"
+            },
+            {
+              "text": "で、",
+              "ruby": ""
+            },
+            {
+              "text": "忘",
+              "ruby": "わす"
+            },
+            {
+              "text": "れられない",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "いっ"
+            },
+            {
+              "text": "冊",
+              "ruby": "さつ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "出会",
+              "ruby": "であ"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 2,
+      "english": "“This is a book that contains stories which stay in your heart for a long time,” I said to Tom.",
+      "source_ja": "「これは、心にずっと残るお話が詰まっている本なんだ」とトムに話しました。",
+      "display_ja": "「これは、心にずっと残るお話が詰まっている本なんだ」とトムに話しました。",
+      "corrected_translation": false,
+      "mixed": "「これは、心に残る話を contains している本だよ」とトムに話しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「これは、心に残る話を ",
+          "parts": [
+            {
+              "text": "「これは、",
+              "ruby": ""
+            },
+            {
+              "text": "心",
+              "ruby": "こころ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "残",
+              "ruby": "のこ"
+            },
+            {
+              "text": "る",
+              "ruby": ""
+            },
+            {
+              "text": "話",
+              "ruby": "はなし"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "contains",
+          "ruby": "含む"
+        },
+        {
+          "type": "ja",
+          "text": " している本だよ」とトムに話しました。",
+          "parts": [
+            {
+              "text": "している",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "だよ」とトムに",
+              "ruby": ""
+            },
+            {
+              "text": "話",
+              "ruby": "はな"
+            },
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "contains",
+          "canonical_word": "contains",
+          "meaning": "含む"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "contains",
+          "reading": "含む",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "contains",
+          "canonical_meaning": "含む"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "The main character is a girl who loves books more than anything.",
+      "source_ja": "主人公は、本が何よりも大好きな女の子。",
+      "display_ja": "主人公は、本が何よりも大好きな女の子。",
+      "corrected_translation": false,
+      "mixed": "主人公は、本が何よりも大好きな女の子。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "主人公は、本が何よりも大好きな女の子。",
+          "parts": [
+            {
+              "text": "主人",
+              "ruby": "しゅじん"
+            },
+            {
+              "text": "公",
+              "ruby": "こう"
+            },
+            {
+              "text": "は、",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "何",
+              "ruby": "なん"
+            },
+            {
+              "text": "よりも",
+              "ruby": ""
+            },
+            {
+              "text": "大好",
+              "ruby": "だいす"
+            },
+            {
+              "text": "きな",
+              "ruby": ""
+            },
+            {
+              "text": "女の子",
+              "ruby": "おんなのこ"
+            },
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 4,
+      "english": "Every day, she walks to school through a forest.",
+      "source_ja": "毎日、森を通って学校へ歩いていきます。",
+      "display_ja": "毎日、森を通って学校へ歩いていきます。",
+      "corrected_translation": false,
+      "mixed": "毎日、森を通って学校へ歩いていきます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "毎日、森を通って学校へ歩いていきます。",
+          "parts": [
+            {
+              "text": "毎日",
+              "ruby": "まいにち"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "森",
+              "ruby": "もり"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "通",
+              "ruby": "かよ"
+            },
+            {
+              "text": "って",
+              "ruby": ""
+            },
+            {
+              "text": "学校",
+              "ruby": "がっこう"
+            },
+            {
+              "text": "へ",
+              "ruby": ""
+            },
+            {
+              "text": "歩",
+              "ruby": "ある"
+            },
+            {
+              "text": "いていきます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 5,
+      "english": "On another shelf, there are books which have beautiful pictures of animals.",
+      "source_ja": "別の棚には、動物のきれいな絵がたくさん載っている本が並んでいます。",
+      "display_ja": "別の棚には、動物のきれいな絵がたくさん載っている本が並んでいます。",
+      "corrected_translation": false,
+      "mixed": "別の棚には、動物のきれいな絵がたくさん載っている本が並んでいます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "別の棚には、動物のきれいな絵がたくさん載っている本が並んでいます。",
+          "parts": [
+            {
+              "text": "別",
+              "ruby": "べつ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "棚",
+              "ruby": "たな"
+            },
+            {
+              "text": "には、",
+              "ruby": ""
+            },
+            {
+              "text": "動物",
+              "ruby": "どうぶつ"
+            },
+            {
+              "text": "のきれいな",
+              "ruby": ""
+            },
+            {
+              "text": "絵",
+              "ruby": "え"
+            },
+            {
+              "text": "がたくさん",
+              "ruby": ""
+            },
+            {
+              "text": "載",
+              "ruby": "の"
+            },
+            {
+              "text": "っている",
+              "ruby": ""
+            },
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "並",
+              "ruby": "なら"
+            },
+            {
+              "text": "んでいます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 6,
+      "english": "The colors are so warm that they stay in my mind.",
+      "source_ja": "色合いが温かくて、一度見たら心から離れません。",
+      "display_ja": "色合いが温かくて、一度見たら心から離れません。",
+      "corrected_translation": false,
+      "mixed": "色合いが温かくて、一度見たら心から離れません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "色合いが温かくて、一度見たら心から離れません。",
+          "parts": [
+            {
+              "text": "色合",
+              "ruby": "いろあ"
+            },
+            {
+              "text": "いが",
+              "ruby": ""
+            },
+            {
+              "text": "温",
+              "ruby": "あたた"
+            },
+            {
+              "text": "かくて、",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "いち"
+            },
+            {
+              "text": "度",
+              "ruby": "ど"
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "たら",
+              "ruby": ""
+            },
+            {
+              "text": "心",
+              "ruby": "こころ"
+            },
+            {
+              "text": "から",
+              "ruby": ""
+            },
+            {
+              "text": "離",
+              "ruby": "はな"
+            },
+            {
+              "text": "れません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 7,
+      "english": "In the far corner of the library, there are tools that were used more than a hundred years ago.",
+      "source_ja": "図書館の奥のほうには、百年以上前に使われていた道具もありました。",
+      "display_ja": "図書館の奥のほうには、百年以上前に使われていた道具もありました。",
+      "corrected_translation": false,
+      "mixed": "図書館の奥のほうには、百年以上前に使われていた tools もありました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "図書館の奥のほうには、百年以上前に使われていた ",
+          "parts": [
+            {
+              "text": "図書",
+              "ruby": "としょ"
+            },
+            {
+              "text": "館",
+              "ruby": "かん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "奥",
+              "ruby": "おく"
+            },
+            {
+              "text": "のほうには、",
+              "ruby": ""
+            },
+            {
+              "text": "百",
+              "ruby": "ひゃく"
+            },
+            {
+              "text": "年",
+              "ruby": "ねん"
+            },
+            {
+              "text": "以上",
+              "ruby": "いじょう"
+            },
+            {
+              "text": "前",
+              "ruby": "まえ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "使",
+              "ruby": "つか"
+            },
+            {
+              "text": "われていた",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "tools",
+          "ruby": "道具"
+        },
+        {
+          "type": "ja",
+          "text": " もありました。",
+          "parts": [
+            {
+              "text": "もありました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "tools",
+          "canonical_word": "tools",
+          "meaning": "道具"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "tools",
+          "reading": "道具",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "tools",
+          "canonical_meaning": "道具"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "When I choose a book, I always look closely at the cover and the title.",
+      "source_ja": "本を選ぶときは、いつも表紙とタイトルをじっくり見ます。",
+      "display_ja": "本を選ぶときは、いつも表紙とタイトルをじっくり見ます。",
+      "corrected_translation": false,
+      "mixed": "本を選ぶときは、表紙と title をよく見ます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "本を選ぶときは、表紙と ",
+          "parts": [
+            {
+              "text": "本",
+              "ruby": "ほん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "選",
+              "ruby": "えら"
+            },
+            {
+              "text": "ぶときは、",
+              "ruby": ""
+            },
+            {
+              "text": "表紙",
+              "ruby": "ひょうし"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "title",
+          "ruby": "題名"
+        },
+        {
+          "type": "ja",
+          "text": " をよく見ます。",
+          "parts": [
+            {
+              "text": "をよく",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "ます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_manual",
+      "canonical_targets": [
+        {
+          "english": "title",
+          "canonical_word": "title",
+          "meaning": "題名"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "title",
+          "reading": "題名",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "title",
+          "canonical_meaning": "題名"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "I love the quiet time that I spend choosing one.",
+      "source_ja": "一冊選ぶのにかける、あの静かな時間がわたしは大好きです。",
+      "display_ja": "一冊選ぶのにかける、あの静かな時間がわたしは大好きです。",
+      "corrected_translation": false,
+      "mixed": "一冊選ぶのにかける、あの静かな時間がわたしは大好きです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "一冊選ぶのにかける、あの静かな時間がわたしは大好きです。",
+          "parts": [
+            {
+              "text": "一",
+              "ruby": "いち"
+            },
+            {
+              "text": "冊",
+              "ruby": "さつ"
+            },
+            {
+              "text": "選",
+              "ruby": "えら"
+            },
+            {
+              "text": "ぶのにかける、あの",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かな",
+              "ruby": ""
+            },
+            {
+              "text": "時間",
+              "ruby": "じかん"
+            },
+            {
+              "text": "がわたしは",
+              "ruby": ""
+            },
+            {
+              "text": "大好",
+              "ruby": "だいす"
+            },
+            {
+              "text": "きです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    }
+  ]
+}

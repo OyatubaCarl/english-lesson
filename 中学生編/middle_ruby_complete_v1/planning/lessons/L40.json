@@ -1,0 +1,965 @@
+{
+  "lesson": 40,
+  "source_config": "中学生編/mio_video_l1_l45_sentence_v3/L40/planning/lesson.json",
+  "title_en": "Lesson 40  Art Class",
+  "title_ja": "美術の時間",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 10,
+  "lines": [
+    {
+      "line": 1,
+      "english": "On Monday afternoon, I was drawing a still life in art class.",
+      "source_ja": "月曜の午後、美術の時間に静物画を描いていました。",
+      "display_ja": "月曜の午後、美術の時間に静物画を描いていました。",
+      "corrected_translation": false,
+      "mixed": "月曜の午後、美術の時間に静物画を描いていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "月曜の午後、美術の時間に静物画を描いていました。",
+          "parts": [
+            {
+              "text": "月曜",
+              "ruby": "げつよう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "午後",
+              "ruby": "ごご"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "美術",
+              "ruby": "びじゅつ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "時間",
+              "ruby": "じかん"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "静物",
+              "ruby": "せいぶつ"
+            },
+            {
+              "text": "画",
+              "ruby": "が"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "描",
+              "ruby": "えが"
+            },
+            {
+              "text": "いていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 2,
+      "english": "On the desk, there were a red apple, a green leaf, and a brown wooden bowl.",
+      "source_ja": "机の上には、赤いりんご、緑の葉っぱ、そして茶色い木のお椀がありました。",
+      "display_ja": "机の上には、赤いりんご、緑の葉っぱ、そして茶色い木のお椀がありました。",
+      "corrected_translation": false,
+      "mixed": "机の上には、赤いりんご、green の葉、brown の木のお椀がありました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "机の上には、赤いりんご、",
+          "parts": [
+            {
+              "text": "机",
+              "ruby": "つくえ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "上",
+              "ruby": "うえ"
+            },
+            {
+              "text": "には、",
+              "ruby": ""
+            },
+            {
+              "text": "赤",
+              "ruby": "あか"
+            },
+            {
+              "text": "いりんご、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "green",
+          "ruby": "緑色の"
+        },
+        {
+          "type": "ja",
+          "text": " の葉、",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "葉",
+              "ruby": "は"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "brown",
+          "ruby": "茶色の"
+        },
+        {
+          "type": "ja",
+          "text": " の木のお椀がありました。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "木",
+              "ruby": "き"
+            },
+            {
+              "text": "のお",
+              "ruby": ""
+            },
+            {
+              "text": "椀",
+              "ruby": "わん"
+            },
+            {
+              "text": "がありました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "green",
+          "canonical_word": "green",
+          "meaning": "緑色の"
+        },
+        {
+          "english": "brown",
+          "canonical_word": "brown",
+          "meaning": "茶色の"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "green",
+          "reading": "緑色の",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "green",
+          "canonical_meaning": "緑色の"
+        },
+        {
+          "english": "brown",
+          "reading": "茶色の",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "brown",
+          "canonical_meaning": "茶色の"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "english": "With a pencil, I first drew a large circle softly, and slowly changed it into the shape of an apple.",
+      "source_ja": "えんぴつで、まずやわらかく大きな円を描いて、ゆっくりとりんごの形に整えていきました。",
+      "display_ja": "えんぴつで、まずやわらかく大きな円を描いて、ゆっくりとりんごの形に整えていきました。",
+      "corrected_translation": false,
+      "mixed": "えんぴつで、まずやわらかく大きな circle を描いて、ゆっくりとりんごの shape に整えていきました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "えんぴつで、まずやわらかく大きな ",
+          "parts": [
+            {
+              "text": "えんぴつで、まずやわらかく",
+              "ruby": ""
+            },
+            {
+              "text": "大",
+              "ruby": "おお"
+            },
+            {
+              "text": "きな",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "circle",
+          "ruby": "円"
+        },
+        {
+          "type": "ja",
+          "text": " を描いて、ゆっくりとりんごの ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "描",
+              "ruby": "えが"
+            },
+            {
+              "text": "いて、ゆっくりとりんごの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "shape",
+          "ruby": "形"
+        },
+        {
+          "type": "ja",
+          "text": " に整えていきました。",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "整",
+              "ruby": "ととの"
+            },
+            {
+              "text": "えていきました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "circle",
+          "canonical_word": "circle",
+          "meaning": "円"
+        },
+        {
+          "english": "shape",
+          "canonical_word": "shape",
+          "meaning": "形"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "circle",
+          "reading": "円",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "circle",
+          "canonical_meaning": "円"
+        },
+        {
+          "english": "shape",
+          "reading": "形",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "shape",
+          "canonical_meaning": "形"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "“When you find a shape, first use pale lines softly.",
+      "source_ja": "「形を見つけたら、まずは薄い線でやわらかく描いてね。",
+      "display_ja": "「形を見つけたら、まずは薄い線でやわらかく描いてね。",
+      "corrected_translation": false,
+      "mixed": "「shape を見つけたら、まず pale な lines でやわらかく描いてね。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「",
+          "parts": [
+            {
+              "text": "「",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "shape",
+          "ruby": "形"
+        },
+        {
+          "type": "ja",
+          "text": " を見つけたら、まず ",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "つけたら、まず",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "pale",
+          "ruby": "淡い"
+        },
+        {
+          "type": "ja",
+          "text": " な ",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "lines",
+          "ruby": "線"
+        },
+        {
+          "type": "ja",
+          "text": " でやわらかく描いてね。",
+          "parts": [
+            {
+              "text": "でやわらかく",
+              "ruby": ""
+            },
+            {
+              "text": "描",
+              "ruby": "えが"
+            },
+            {
+              "text": "いてね。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "shape",
+          "canonical_word": "shape",
+          "meaning": "形"
+        },
+        {
+          "english": "pale",
+          "canonical_word": "pale",
+          "meaning": "淡い"
+        },
+        {
+          "english": "lines",
+          "canonical_word": "line",
+          "meaning": "線"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "shape",
+          "reading": "形",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "shape",
+          "canonical_meaning": "形"
+        },
+        {
+          "english": "pale",
+          "reading": "淡い",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "pale",
+          "canonical_meaning": "淡い"
+        },
+        {
+          "english": "lines",
+          "reading": "線",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "line",
+          "canonical_meaning": "線"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "Later, when you are used to it, use thick lines strongly.",
+      "source_ja": "慣れてきたら、濃い線でしっかり描いてみよう。",
+      "display_ja": "慣れてきたら、濃い線でしっかり描いてみよう。",
+      "corrected_translation": false,
+      "mixed": "慣れてきたら、thick な lines でしっかり描いてみよう。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "慣れてきたら、",
+          "parts": [
+            {
+              "text": "慣",
+              "ruby": "な"
+            },
+            {
+              "text": "れてきたら、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "thick",
+          "ruby": "太い"
+        },
+        {
+          "type": "ja",
+          "text": " な ",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "lines",
+          "ruby": "線"
+        },
+        {
+          "type": "ja",
+          "text": " でしっかり描いてみよう。",
+          "parts": [
+            {
+              "text": "でしっかり",
+              "ruby": ""
+            },
+            {
+              "text": "描",
+              "ruby": "えが"
+            },
+            {
+              "text": "いてみよう。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "thick",
+          "canonical_word": "thick",
+          "meaning": "太い"
+        },
+        {
+          "english": "lines",
+          "canonical_word": "line",
+          "meaning": "線"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "thick",
+          "reading": "太い",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "thick",
+          "canonical_meaning": "太い"
+        },
+        {
+          "english": "lines",
+          "reading": "線",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "line",
+          "canonical_meaning": "線"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "Then, the picture will become alive,” our teacher said kindly.",
+      "source_ja": "そうすれば、絵に命が宿ってくるよ」と先生がやさしく教えてくれました。",
+      "display_ja": "そうすれば、絵に命が宿ってくるよ」と先生がやさしく教えてくれました。",
+      "corrected_translation": false,
+      "mixed": "そうすれば、絵に命が宿ってくるよ」と先生がやさしく教えてくれました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "そうすれば、絵に命が宿ってくるよ」と先生がやさしく教えてくれました。",
+          "parts": [
+            {
+              "text": "そうすれば、",
+              "ruby": ""
+            },
+            {
+              "text": "絵",
+              "ruby": "え"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "命",
+              "ruby": "いのち"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "宿",
+              "ruby": "やど"
+            },
+            {
+              "text": "ってくるよ」と",
+              "ruby": ""
+            },
+            {
+              "text": "先生",
+              "ruby": "せんせい"
+            },
+            {
+              "text": "がやさしく",
+              "ruby": ""
+            },
+            {
+              "text": "教",
+              "ruby": "おし"
+            },
+            {
+              "text": "えてくれました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 7,
+      "english": "At the next desk, my sister was drawing a round moon and small stars with straight light.",
+      "source_ja": "隣の机では、妹が丸いお月さまと、まっすぐな光を放つ小さな星々を描いていました。",
+      "display_ja": "隣の机では、妹が丸いお月さまと、まっすぐな光を放つ小さな星々を描いていました。",
+      "corrected_translation": false,
+      "mixed": "隣の机では、妹が round な月と、straight な光を放つ星を描いていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "隣の机では、妹が ",
+          "parts": [
+            {
+              "text": "隣",
+              "ruby": "となり"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "机",
+              "ruby": "つくえ"
+            },
+            {
+              "text": "では、",
+              "ruby": ""
+            },
+            {
+              "text": "妹",
+              "ruby": "いもうと"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "round",
+          "ruby": "丸い"
+        },
+        {
+          "type": "ja",
+          "text": " な月と、",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "月",
+              "ruby": "つき"
+            },
+            {
+              "text": "と、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "straight",
+          "ruby": "まっすぐな"
+        },
+        {
+          "type": "ja",
+          "text": " な光を放つ星を描いていました。",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "光",
+              "ruby": "ひかり"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "放",
+              "ruby": "はな"
+            },
+            {
+              "text": "つ",
+              "ruby": ""
+            },
+            {
+              "text": "星",
+              "ruby": "ほし"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "描",
+              "ruby": "えが"
+            },
+            {
+              "text": "いていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "round",
+          "canonical_word": "round",
+          "meaning": "丸い"
+        },
+        {
+          "english": "straight",
+          "canonical_word": "straight",
+          "meaning": "まっすぐな"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "round",
+          "reading": "丸い",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "round",
+          "canonical_meaning": "丸い"
+        },
+        {
+          "english": "straight",
+          "reading": "まっすぐな",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "straight",
+          "canonical_meaning": "まっすぐな"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "Her paper was full of a quiet night sky.",
+      "source_ja": "彼女の画用紙には、静かな夜空がいっぱいに広がっていました。",
+      "display_ja": "彼女の画用紙には、静かな夜空がいっぱいに広がっていました。",
+      "corrected_translation": false,
+      "mixed": "彼女の画用紙には、静かな夜空がいっぱいに広がっていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼女の画用紙には、静かな夜空がいっぱいに広がっていました。",
+          "parts": [
+            {
+              "text": "彼女",
+              "ruby": "かのじょ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "画用",
+              "ruby": "がよう"
+            },
+            {
+              "text": "紙",
+              "ruby": "し"
+            },
+            {
+              "text": "には、",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かな",
+              "ruby": ""
+            },
+            {
+              "text": "夜空",
+              "ruby": "よぞら"
+            },
+            {
+              "text": "がいっぱいに",
+              "ruby": ""
+            },
+            {
+              "text": "広",
+              "ruby": "ひろ"
+            },
+            {
+              "text": "がっていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 9,
+      "english": "Tom drew a more abstract picture by putting many shapes together.",
+      "source_ja": "トムは、いろんな形を組み合わせて、もっと抽象的な絵を描いていました。",
+      "display_ja": "トムは、いろんな形を組み合わせて、もっと抽象的な絵を描いていました。",
+      "corrected_translation": false,
+      "mixed": "トムは、いろんな shapes を組み合わせて、もっと抽象的な絵を描いていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "トムは、いろんな ",
+          "parts": [
+            {
+              "text": "トムは、いろんな",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "shapes",
+          "ruby": "形"
+        },
+        {
+          "type": "ja",
+          "text": " を組み合わせて、もっと抽象的な絵を描いていました。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "組み合",
+              "ruby": "くみあ"
+            },
+            {
+              "text": "わせて、もっと",
+              "ruby": ""
+            },
+            {
+              "text": "抽象",
+              "ruby": "ちゅうしょう"
+            },
+            {
+              "text": "的",
+              "ruby": "てき"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "絵",
+              "ruby": "え"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "描",
+              "ruby": "えが"
+            },
+            {
+              "text": "いていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "shapes",
+          "canonical_word": "shape",
+          "meaning": "形"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "shapes",
+          "reading": "形",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "shape",
+          "canonical_meaning": "形"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "english": "“Each shape has its own character,” he said with a serious face.",
+      "source_ja": "「一つひとつの形には、それぞれの個性があるんだ」と真剣な顔で言っていました。",
+      "display_ja": "「一つひとつの形には、それぞれの個性があるんだ」と真剣な顔で言っていました。",
+      "corrected_translation": false,
+      "mixed": "「一つひとつの shape には、それぞれの個性があるんだ」と真剣な顔で言っていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "「一つひとつの ",
+          "parts": [
+            {
+              "text": "「",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "ひと"
+            },
+            {
+              "text": "つひとつの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "shape",
+          "ruby": "形"
+        },
+        {
+          "type": "ja",
+          "text": " には、それぞれの個性があるんだ」と真剣な顔で言っていました。",
+          "parts": [
+            {
+              "text": "には、それぞれの",
+              "ruby": ""
+            },
+            {
+              "text": "個性",
+              "ruby": "こせい"
+            },
+            {
+              "text": "があるんだ」と",
+              "ruby": ""
+            },
+            {
+              "text": "真剣",
+              "ruby": "しんけん"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "顔",
+              "ruby": "かお"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "っていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "shape",
+          "canonical_word": "shape",
+          "meaning": "形"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "shape",
+          "reading": "形",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "shape",
+          "canonical_meaning": "形"
+        }
+      ]
+    }
+  ]
+}

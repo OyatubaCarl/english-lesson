@@ -1,0 +1,970 @@
+{
+  "lesson": "H040",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h040_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H040/candidate1-full.mp3",
+  "source_audio_sha256": "8f5b068dceea48b531d25dba1831ff96880e1d3f4f2d0f8b85b7729d8c8804c4",
+  "bpm": 83.98,
+  "exact_word_match": true,
+  "word_count": 143,
+  "line_count": 12,
+  "first_word_start": 5.761,
+  "last_word_end": 92.919,
+  "lines": [
+    {
+      "line": 1,
+      "english": "In 1953, James Watson and Francis Crick published their discovery that DNA has the structure of a double helix.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 5.761,
+          "end": 5.841
+        },
+        {
+          "word": "1953,",
+          "display_index": 1,
+          "start": 5.821,
+          "end": 8.062
+        },
+        {
+          "word": "James",
+          "display_index": 2,
+          "start": 8.062,
+          "end": 8.442
+        },
+        {
+          "word": "Watson",
+          "display_index": 3,
+          "start": 8.442,
+          "end": 8.862
+        },
+        {
+          "word": "and",
+          "display_index": 4,
+          "start": 8.862,
+          "end": 9.062
+        },
+        {
+          "word": "Francis",
+          "display_index": 5,
+          "start": 9.062,
+          "end": 9.582
+        },
+        {
+          "word": "Crick",
+          "display_index": 6,
+          "start": 9.582,
+          "end": 9.942
+        },
+        {
+          "word": "published",
+          "display_index": 7,
+          "start": 9.942,
+          "end": 10.362
+        },
+        {
+          "word": "their",
+          "display_index": 8,
+          "start": 10.362,
+          "end": 10.522
+        },
+        {
+          "word": "discovery",
+          "display_index": 9,
+          "start": 10.522,
+          "end": 11.762
+        },
+        {
+          "word": "that",
+          "display_index": 10,
+          "start": 11.762,
+          "end": 11.962
+        },
+        {
+          "word": "DNA",
+          "display_index": 11,
+          "start": 11.962,
+          "end": 12.483
+        },
+        {
+          "word": "has",
+          "display_index": 12,
+          "start": 12.483,
+          "end": 12.695
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 12.695,
+          "end": 12.803
+        },
+        {
+          "word": "structure",
+          "display_index": 14,
+          "start": 12.803,
+          "end": 13.323
+        },
+        {
+          "word": "of",
+          "display_index": 15,
+          "start": 13.323,
+          "end": 13.418
+        },
+        {
+          "word": "a",
+          "display_index": 16,
+          "start": 13.418,
+          "end": 13.523
+        },
+        {
+          "word": "double",
+          "display_index": 17,
+          "start": 13.523,
+          "end": 13.803
+        },
+        {
+          "word": "helix.",
+          "display_index": 18,
+          "start": 13.803,
+          "end": 15.303
+        }
+      ],
+      "start": 5.761,
+      "end": 15.303
+    },
+    {
+      "line": 2,
+      "english": "But there was another scientist whose contribution was essential: Rosalind Franklin.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 16.263,
+          "end": 16.383
+        },
+        {
+          "word": "there",
+          "display_index": 1,
+          "start": 16.383,
+          "end": 16.523
+        },
+        {
+          "word": "was",
+          "display_index": 2,
+          "start": 16.523,
+          "end": 16.663
+        },
+        {
+          "word": "another",
+          "display_index": 3,
+          "start": 16.663,
+          "end": 17.024
+        },
+        {
+          "word": "scientist",
+          "display_index": 4,
+          "start": 17.024,
+          "end": 17.764
+        },
+        {
+          "word": "whose",
+          "display_index": 5,
+          "start": 17.764,
+          "end": 18.024
+        },
+        {
+          "word": "contribution",
+          "display_index": 6,
+          "start": 18.024,
+          "end": 18.844
+        },
+        {
+          "word": "was",
+          "display_index": 7,
+          "start": 18.844,
+          "end": 19.004
+        },
+        {
+          "word": "essential:",
+          "display_index": 8,
+          "start": 19.004,
+          "end": 20.104
+        },
+        {
+          "word": "Rosalind",
+          "display_index": 9,
+          "start": 20.104,
+          "end": 20.744
+        },
+        {
+          "word": "Franklin.",
+          "display_index": 10,
+          "start": 20.744,
+          "end": 22.185
+        }
+      ],
+      "start": 16.263,
+      "end": 22.185
+    },
+    {
+      "line": 3,
+      "english": "In her laboratory at King's College London, she was producing images of DNA using X-ray diffraction.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 22.485,
+          "end": 22.565
+        },
+        {
+          "word": "her",
+          "display_index": 1,
+          "start": 22.565,
+          "end": 22.725
+        },
+        {
+          "word": "laboratory",
+          "display_index": 2,
+          "start": 22.725,
+          "end": 23.445
+        },
+        {
+          "word": "at",
+          "display_index": 3,
+          "start": 23.445,
+          "end": 23.605
+        },
+        {
+          "word": "King's",
+          "display_index": 4,
+          "start": 23.605,
+          "end": 24.025
+        },
+        {
+          "word": "College",
+          "display_index": 5,
+          "start": 24.025,
+          "end": 24.505
+        },
+        {
+          "word": "London,",
+          "display_index": 6,
+          "start": 24.505,
+          "end": 25.705
+        },
+        {
+          "word": "she",
+          "display_index": 7,
+          "start": 25.705,
+          "end": 25.865
+        },
+        {
+          "word": "was",
+          "display_index": 8,
+          "start": 25.865,
+          "end": 26.025
+        },
+        {
+          "word": "producing",
+          "display_index": 9,
+          "start": 26.025,
+          "end": 26.565
+        },
+        {
+          "word": "images",
+          "display_index": 10,
+          "start": 26.565,
+          "end": 27.046
+        },
+        {
+          "word": "of",
+          "display_index": 11,
+          "start": 27.046,
+          "end": 27.206
+        },
+        {
+          "word": "DNA",
+          "display_index": 12,
+          "start": 27.206,
+          "end": 27.866
+        },
+        {
+          "word": "using",
+          "display_index": 13,
+          "start": 27.866,
+          "end": 28.346
+        },
+        {
+          "word": "X-ray",
+          "display_index": 14,
+          "start": 28.346,
+          "end": 28.546
+        },
+        {
+          "word": "X-ray",
+          "display_index": 14,
+          "start": 28.546,
+          "end": 28.786
+        },
+        {
+          "word": "diffraction.",
+          "display_index": 15,
+          "start": 28.786,
+          "end": 30.286
+        }
+      ],
+      "start": 22.485,
+      "end": 30.286
+    },
+    {
+      "line": 4,
+      "english": "One photograph, known as Photo 51, revealed an X-shaped pattern that provided crucial evidence for a helical structure.",
+      "word_timings": [
+        {
+          "word": "One",
+          "display_index": 0,
+          "start": 32.367,
+          "end": 32.567
+        },
+        {
+          "word": "photograph,",
+          "display_index": 1,
+          "start": 32.567,
+          "end": 33.327
+        },
+        {
+          "word": "known",
+          "display_index": 2,
+          "start": 33.327,
+          "end": 33.587
+        },
+        {
+          "word": "as",
+          "display_index": 3,
+          "start": 33.587,
+          "end": 33.767
+        },
+        {
+          "word": "Photo",
+          "display_index": 4,
+          "start": 33.767,
+          "end": 34.087
+        },
+        {
+          "word": "51,",
+          "display_index": 5,
+          "start": 34.087,
+          "end": 35.467
+        },
+        {
+          "word": "revealed",
+          "display_index": 6,
+          "start": 35.467,
+          "end": 35.847
+        },
+        {
+          "word": "an",
+          "display_index": 7,
+          "start": 35.847,
+          "end": 36.087
+        },
+        {
+          "word": "X-shaped",
+          "display_index": 8,
+          "start": 36.087,
+          "end": 36.207
+        },
+        {
+          "word": "X-shaped",
+          "display_index": 8,
+          "start": 36.207,
+          "end": 36.588
+        },
+        {
+          "word": "pattern",
+          "display_index": 9,
+          "start": 36.588,
+          "end": 37.028
+        },
+        {
+          "word": "that",
+          "display_index": 10,
+          "start": 37.028,
+          "end": 37.208
+        },
+        {
+          "word": "provided",
+          "display_index": 11,
+          "start": 37.208,
+          "end": 37.748
+        },
+        {
+          "word": "crucial",
+          "display_index": 12,
+          "start": 37.748,
+          "end": 38.268
+        },
+        {
+          "word": "evidence",
+          "display_index": 13,
+          "start": 38.268,
+          "end": 38.828
+        },
+        {
+          "word": "for",
+          "display_index": 14,
+          "start": 38.828,
+          "end": 39.028
+        },
+        {
+          "word": "a",
+          "display_index": 15,
+          "start": 39.028,
+          "end": 39.108
+        },
+        {
+          "word": "helical",
+          "display_index": 16,
+          "start": 39.108,
+          "end": 39.608
+        },
+        {
+          "word": "structure.",
+          "display_index": 17,
+          "start": 39.608,
+          "end": 41.108
+        }
+      ],
+      "start": 32.367,
+      "end": 41.108
+    },
+    {
+      "line": 5,
+      "english": "But her photograph was shown to Watson without her knowledge.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 41.469,
+          "end": 41.609
+        },
+        {
+          "word": "her",
+          "display_index": 1,
+          "start": 41.609,
+          "end": 41.749
+        },
+        {
+          "word": "photograph",
+          "display_index": 2,
+          "start": 41.749,
+          "end": 42.369
+        },
+        {
+          "word": "was",
+          "display_index": 3,
+          "start": 42.369,
+          "end": 42.549
+        },
+        {
+          "word": "shown",
+          "display_index": 4,
+          "start": 42.549,
+          "end": 42.892
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 42.892,
+          "end": 43.049
+        },
+        {
+          "word": "Watson",
+          "display_index": 6,
+          "start": 43.049,
+          "end": 43.589
+        },
+        {
+          "word": "without",
+          "display_index": 7,
+          "start": 43.589,
+          "end": 43.949
+        },
+        {
+          "word": "her",
+          "display_index": 8,
+          "start": 43.949,
+          "end": 44.089
+        },
+        {
+          "word": "knowledge.",
+          "display_index": 9,
+          "start": 44.089,
+          "end": 45.449
+        }
+      ],
+      "start": 41.469,
+      "end": 45.449
+    },
+    {
+      "line": 6,
+      "english": "The Nobel Prize was given in 1962 to Watson, Crick, and Wilkins.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 45.749,
+          "end": 45.849
+        },
+        {
+          "word": "Nobel",
+          "display_index": 1,
+          "start": 45.849,
+          "end": 46.25
+        },
+        {
+          "word": "Prize",
+          "display_index": 2,
+          "start": 46.25,
+          "end": 46.81
+        },
+        {
+          "word": "was",
+          "display_index": 3,
+          "start": 46.81,
+          "end": 46.99
+        },
+        {
+          "word": "given",
+          "display_index": 4,
+          "start": 46.99,
+          "end": 47.29
+        },
+        {
+          "word": "in",
+          "display_index": 5,
+          "start": 47.29,
+          "end": 47.43
+        },
+        {
+          "word": "1962",
+          "display_index": 6,
+          "start": 47.43,
+          "end": 48.869
+        },
+        {
+          "word": "to",
+          "display_index": 7,
+          "start": 48.869,
+          "end": 49.07
+        },
+        {
+          "word": "Watson,",
+          "display_index": 8,
+          "start": 49.07,
+          "end": 49.77
+        },
+        {
+          "word": "Crick,",
+          "display_index": 9,
+          "start": 49.77,
+          "end": 50.39
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 50.39,
+          "end": 50.57
+        },
+        {
+          "word": "Wilkins.",
+          "display_index": 11,
+          "start": 50.57,
+          "end": 52.07
+        }
+      ],
+      "start": 45.749,
+      "end": 52.07
+    },
+    {
+      "line": 7,
+      "english": "By then, Franklin was no longer in this world.",
+      "word_timings": [
+        {
+          "word": "By",
+          "display_index": 0,
+          "start": 53.051,
+          "end": 53.231
+        },
+        {
+          "word": "then,",
+          "display_index": 1,
+          "start": 53.231,
+          "end": 54.071
+        },
+        {
+          "word": "Franklin",
+          "display_index": 2,
+          "start": 54.071,
+          "end": 54.571
+        },
+        {
+          "word": "was",
+          "display_index": 3,
+          "start": 54.571,
+          "end": 54.751
+        },
+        {
+          "word": "no",
+          "display_index": 4,
+          "start": 54.751,
+          "end": 54.951
+        },
+        {
+          "word": "longer",
+          "display_index": 5,
+          "start": 54.951,
+          "end": 55.331
+        },
+        {
+          "word": "in",
+          "display_index": 6,
+          "start": 55.331,
+          "end": 55.431
+        },
+        {
+          "word": "this",
+          "display_index": 7,
+          "start": 55.431,
+          "end": 55.671
+        },
+        {
+          "word": "world.",
+          "display_index": 8,
+          "start": 55.671,
+          "end": 56.572
+        }
+      ],
+      "start": 53.051,
+      "end": 56.572
+    },
+    {
+      "line": 8,
+      "english": "She had died in 1958, at only thirty-seven.",
+      "word_timings": [
+        {
+          "word": "She",
+          "display_index": 0,
+          "start": 56.872,
+          "end": 56.992
+        },
+        {
+          "word": "had",
+          "display_index": 1,
+          "start": 56.992,
+          "end": 57.152
+        },
+        {
+          "word": "died",
+          "display_index": 2,
+          "start": 57.152,
+          "end": 57.572
+        },
+        {
+          "word": "in",
+          "display_index": 3,
+          "start": 57.572,
+          "end": 57.672
+        },
+        {
+          "word": "1958,",
+          "display_index": 4,
+          "start": 57.672,
+          "end": 59.172
+        },
+        {
+          "word": "at",
+          "display_index": 5,
+          "start": 59.172,
+          "end": 59.432
+        },
+        {
+          "word": "only",
+          "display_index": 6,
+          "start": 59.432,
+          "end": 60.092
+        },
+        {
+          "word": "thirty-seven.",
+          "display_index": 7,
+          "start": 60.092,
+          "end": 60.552
+        },
+        {
+          "word": "thirty-seven.",
+          "display_index": 7,
+          "start": 60.552,
+          "end": 62.052
+        }
+      ],
+      "start": 56.872,
+      "end": 62.052
+    },
+    {
+      "line": 9,
+      "english": "Under Nobel rules, the prize is not normally awarded posthumously.",
+      "word_timings": [
+        {
+          "word": "Under",
+          "display_index": 0,
+          "start": 62.453,
+          "end": 62.713
+        },
+        {
+          "word": "Nobel",
+          "display_index": 1,
+          "start": 62.713,
+          "end": 63.193
+        },
+        {
+          "word": "rules,",
+          "display_index": 2,
+          "start": 63.193,
+          "end": 64.152
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 64.152,
+          "end": 64.293
+        },
+        {
+          "word": "prize",
+          "display_index": 4,
+          "start": 64.293,
+          "end": 64.863
+        },
+        {
+          "word": "is",
+          "display_index": 5,
+          "start": 64.863,
+          "end": 64.993
+        },
+        {
+          "word": "not",
+          "display_index": 6,
+          "start": 64.993,
+          "end": 65.293
+        },
+        {
+          "word": "normally",
+          "display_index": 7,
+          "start": 65.293,
+          "end": 65.814
+        },
+        {
+          "word": "awarded",
+          "display_index": 8,
+          "start": 65.814,
+          "end": 66.454
+        },
+        {
+          "word": "posthumously.",
+          "display_index": 9,
+          "start": 66.454,
+          "end": 67.954
+        }
+      ],
+      "start": 62.453,
+      "end": 67.954
+    },
+    {
+      "line": 10,
+      "english": "Rosalind Franklin's dedication was underestimated for a long time.",
+      "word_timings": [
+        {
+          "word": "Rosalind",
+          "display_index": 0,
+          "start": 68.734,
+          "end": 69.414
+        },
+        {
+          "word": "Franklin's",
+          "display_index": 1,
+          "start": 69.414,
+          "end": 70.034
+        },
+        {
+          "word": "dedication",
+          "display_index": 2,
+          "start": 70.034,
+          "end": 70.835
+        },
+        {
+          "word": "was",
+          "display_index": 3,
+          "start": 70.835,
+          "end": 71.155
+        },
+        {
+          "word": "underestimated",
+          "display_index": 4,
+          "start": 71.155,
+          "end": 72.335
+        },
+        {
+          "word": "for",
+          "display_index": 5,
+          "start": 72.335,
+          "end": 72.544
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 72.544,
+          "end": 72.675
+        },
+        {
+          "word": "long",
+          "display_index": 7,
+          "start": 72.675,
+          "end": 73.155
+        },
+        {
+          "word": "time.",
+          "display_index": 8,
+          "start": 73.155,
+          "end": 74.655
+        }
+      ],
+      "start": 68.734,
+      "end": 74.655
+    },
+    {
+      "line": 11,
+      "english": "Now, we must remember her quiet contribution.",
+      "word_timings": [
+        {
+          "word": "Now,",
+          "display_index": 0,
+          "start": 75.155,
+          "end": 76.996
+        },
+        {
+          "word": "we",
+          "display_index": 1,
+          "start": 76.996,
+          "end": 77.136
+        },
+        {
+          "word": "must",
+          "display_index": 2,
+          "start": 77.136,
+          "end": 77.416
+        },
+        {
+          "word": "remember",
+          "display_index": 3,
+          "start": 77.416,
+          "end": 79.176
+        },
+        {
+          "word": "her",
+          "display_index": 4,
+          "start": 79.176,
+          "end": 79.316
+        },
+        {
+          "word": "quiet",
+          "display_index": 5,
+          "start": 79.316,
+          "end": 79.776
+        },
+        {
+          "word": "contribution.",
+          "display_index": 6,
+          "start": 79.776,
+          "end": 81.276
+        }
+      ],
+      "start": 75.155,
+      "end": 81.276
+    },
+    {
+      "line": 12,
+      "english": "The history of science is not made by loud voices alone.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 84.16,
+          "end": 84.297
+        },
+        {
+          "word": "history",
+          "display_index": 1,
+          "start": 84.297,
+          "end": 84.737
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 84.737,
+          "end": 84.897
+        },
+        {
+          "word": "science",
+          "display_index": 3,
+          "start": 84.897,
+          "end": 87.022
+        },
+        {
+          "word": "is",
+          "display_index": 4,
+          "start": 87.022,
+          "end": 87.198
+        },
+        {
+          "word": "not",
+          "display_index": 5,
+          "start": 87.198,
+          "end": 87.478
+        },
+        {
+          "word": "made",
+          "display_index": 6,
+          "start": 87.478,
+          "end": 89.098
+        },
+        {
+          "word": "by",
+          "display_index": 7,
+          "start": 89.098,
+          "end": 89.298
+        },
+        {
+          "word": "loud",
+          "display_index": 8,
+          "start": 89.298,
+          "end": 89.638
+        },
+        {
+          "word": "voices",
+          "display_index": 9,
+          "start": 89.638,
+          "end": 91.419
+        },
+        {
+          "word": "alone.",
+          "display_index": 10,
+          "start": 91.419,
+          "end": 92.919
+        }
+      ],
+      "start": 84.16,
+      "end": 92.919
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

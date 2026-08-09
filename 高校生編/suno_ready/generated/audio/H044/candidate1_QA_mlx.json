@@ -1,0 +1,290 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H044.md",
+  "audio": "高校生編/suno_ready/generated/audio/H044/candidate1-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 128.04,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.976,
+  "expected_words": 167,
+  "transcribed_words": 163,
+  "matched_words": 155,
+  "coverage": 0.9281,
+  "precision": 0.9509,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 166,
+  "longest_missing_run": 4,
+  "largest_missing_runs": [
+    {
+      "start": 23,
+      "length": 4,
+      "words": [
+        "three",
+        "hundred",
+        "eighty",
+        "five"
+      ]
+    },
+    {
+      "start": 8,
+      "length": 2,
+      "words": [
+        "seventy",
+        "eight"
+      ]
+    },
+    {
+      "start": 32,
+      "length": 2,
+      "words": [
+        "twenty",
+        "four"
+      ]
+    },
+    {
+      "start": 18,
+      "length": 1,
+      "words": [
+        "dandi"
+      ]
+    },
+    {
+      "start": 111,
+      "length": 1,
+      "words": [
+        "nonviolent"
+      ]
+    },
+    {
+      "start": 126,
+      "length": 1,
+      "words": [
+        "nonviolent"
+      ]
+    },
+    {
+      "start": 152,
+      "length": 1,
+      "words": [
+        "nonviolent"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 18,
+      "actual_start": 16,
+      "expected": [
+        "dandi"
+      ],
+      "actual": [
+        "dandy"
+      ],
+      "actual_confidence": 0.7607,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 111,
+      "actual_start": 103,
+      "expected": [
+        "nonviolent"
+      ],
+      "actual": [
+        "non",
+        "violent"
+      ],
+      "actual_confidence": 0.9011,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 126,
+      "actual_start": 119,
+      "expected": [
+        "nonviolent"
+      ],
+      "actual": [
+        "non",
+        "violent"
+      ],
+      "actual_confidence": 0.9871,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 152,
+      "actual_start": 146,
+      "expected": [
+        "nonviolent"
+      ],
+      "actual": [
+        "non",
+        "violent"
+      ],
+      "actual_confidence": 0.8616,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 167,
+      "actual_start": 162,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.1803
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 8,
+      "actual_start": 8,
+      "expected": [
+        "seventy",
+        "eight"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 23,
+      "actual_start": 21,
+      "expected": [
+        "three",
+        "hundred",
+        "eighty",
+        "five"
+      ],
+      "actual": []
+    },
+    {
+      "expected_start": 32,
+      "actual_start": 26,
+      "expected": [
+        "twenty",
+        "four"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 4,
+  "suspicious_substitution_words": 4,
+  "suspicious_content_substitution": true,
+  "transcript": "On March 12, 1930, the Indian leader Mohandas Gandhi, with 78 companions, began to walk toward the coast of Dandy. The distance was about 385 kilometers The journey would last 24 days Along the way more and more people joined And the march grew to thousands What was the purpose to make salt at the seashore? At the time the British colonial rule maintained a salt monopoly And prohibited Indians from producing or selling salt independently The salt tax weighed most heavily on the poorest The moment Gandhi picked up a handful of salt from the sand British rule was quietly, yet deeply shaken This was a disciplined, non-violent protest Carrying no weapons Gandhi was imprisoned many times by the British But his non-violent movement contributed to The movement for Indian independence And inspired movements throughout the world Martin Luther King Jr. later drew deeply From Gandhi's philosophy of non-violent resistance Movements around the world adapted its lessons In their own struggles for justice you",
+  "segments": [
+    {
+      "start": 11.14,
+      "end": 22.88,
+      "text": "On March 12, 1930, the Indian leader Mohandas Gandhi, with 78 companions, began to walk toward the coast of Dandy."
+    },
+    {
+      "start": 22.88,
+      "end": 28.58,
+      "text": "The distance was about 385 kilometers"
+    },
+    {
+      "start": 28.58,
+      "end": 32.76,
+      "text": "The journey would last 24 days"
+    },
+    {
+      "start": 34.22,
+      "end": 38.08,
+      "text": "Along the way more and more people joined"
+    },
+    {
+      "start": 38.08,
+      "end": 40.2,
+      "text": "And the march grew to thousands"
+    },
+    {
+      "start": 41.2,
+      "end": 45.94,
+      "text": "What was the purpose to make salt at the seashore?"
+    },
+    {
+      "start": 48.34,
+      "end": 54.38,
+      "text": "At the time the British colonial rule maintained a salt monopoly"
+    },
+    {
+      "start": 54.38,
+      "end": 60.92,
+      "text": "And prohibited Indians from producing or selling salt independently"
+    },
+    {
+      "start": 62.36,
+      "end": 66.84,
+      "text": "The salt tax weighed most heavily on the poorest"
+    },
+    {
+      "start": 66.84,
+      "end": 72.78,
+      "text": "The moment Gandhi picked up a handful of salt from the sand"
+    },
+    {
+      "start": 72.78,
+      "end": 78.36,
+      "text": "British rule was quietly, yet deeply shaken"
+    },
+    {
+      "start": 78.36,
+      "end": 82.92,
+      "text": "This was a disciplined, non-violent protest"
+    },
+    {
+      "start": 82.92,
+      "end": 85.42,
+      "text": "Carrying no weapons"
+    },
+    {
+      "start": 85.42,
+      "end": 90.64,
+      "text": "Gandhi was imprisoned many times by the British"
+    },
+    {
+      "start": 90.64,
+      "end": 95.26,
+      "text": "But his non-violent movement contributed to"
+    },
+    {
+      "start": 95.26,
+      "end": 98.06,
+      "text": "The movement for Indian independence"
+    },
+    {
+      "start": 98.06,
+      "end": 101.66,
+      "text": "And inspired movements throughout the world"
+    },
+    {
+      "start": 101.66,
+      "end": 108.76,
+      "text": "Martin Luther King Jr. later drew deeply"
+    },
+    {
+      "start": 108.76,
+      "end": 115.04,
+      "text": "From Gandhi's philosophy of non-violent resistance"
+    },
+    {
+      "start": 117.22,
+      "end": 122.02,
+      "text": "Movements around the world adapted its lessons"
+    },
+    {
+      "start": 122.02,
+      "end": 127.06,
+      "text": "In their own struggles for justice"
+    },
+    {
+      "start": 127.06,
+      "end": 128.04,
+      "text": "you"
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H151.md",
+  "audio": "高校生編/suno_ready/generated/audio/H151/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 204.32,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0115,
+  "expected_words": 260,
+  "transcribed_words": 263,
+  "matched_words": 254,
+  "coverage": 0.9769,
+  "precision": 0.9658,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 259,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 126,
+      "length": 2,
+      "words": [
+        "were",
+        "excluded"
+      ]
+    },
+    {
+      "start": 84,
+      "length": 1,
+      "words": [
+        "their"
+      ]
+    },
+    {
+      "start": 124,
+      "length": 1,
+      "words": [
+        "armed"
+      ]
+    },
+    {
+      "start": 210,
+      "length": 1,
+      "words": [
+        "eighty"
+      ]
+    },
+    {
+      "start": 212,
+      "length": 1,
+      "words": [
+        "era"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 84,
+      "actual_start": 84,
+      "expected": [
+        "their"
+      ],
+      "actual": [
+        "the"
+      ],
+      "actual_confidence": 0.696,
+      "substitution_words": 1,
+      "has_content_word": false
+    },
+    {
+      "expected_start": 124,
+      "actual_start": 128,
+      "expected": [
+        "armed"
+      ],
+      "actual": [
+        "arms"
+      ],
+      "actual_confidence": 0.5418,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 210,
+      "actual_start": 212,
+      "expected": [
+        "eighty"
+      ],
+      "actual": [
+        "eight"
+      ],
+      "actual_confidence": 0.0368,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 212,
+      "actual_start": 214,
+      "expected": [
+        "era"
+      ],
+      "actual": [
+        "error"
+      ],
+      "actual_confidence": 0.4105,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 117,
+      "actual_start": 117,
+      "expected": [],
+      "actual": [
+        "one",
+        "twenty",
+        "twenty",
+        "two"
+      ],
+      "actual_confidence": 0.6898
+    },
+    {
+      "expected_start": 260,
+      "actual_start": 262,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.0642
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 126,
+      "actual_start": 130,
+      "expected": [
+        "were",
+        "excluded"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "Abolition of nuclear weapons may sound idealistic, but in Japan, which experienced Hiroshima and Nagasaki, this is necessarily an unavoidable theme. Today, there are about 12 500 nuclear warheads in the world. Most are held by the United States and Russia. Their military value is said to lie in being unusable weapons that exercise deterrence. But deterrence may, like a flood, sweep everything away. A wrong judgment, an accident, a seizure by terrorists Once used, the civilized world ends Survivors of the bombs have kept telling the partly remembered stories Burnt skin, radiation, sickness, black rain Things a human must not do to another human In 2017, the treaty on the prohibition of nuclear weapons Was adopted at the UN One twenty-twenty-two countries voted in favor But all nuclear arms states Japan, though the only country to have been bombed, did not join the treaty because of its security policy. This contradiction is a great issue in Japanese society. Depending on America's nuclear umbrella while calling for abolition This tension remains the subject of ethical and security debate Nuclear weapons once made are hard to remove But humanity has banned chemical and biological weapons too With political will, nuclear weapons should also be capable of abolition The average age of survivors has passed eight The error when we can hear living testimony will soon end To pass their experience accurately To the next generation is our responsibility The flame at Hiroshima Peace Memorial Park has continued to burn without cease The day that flame goes out is the day nuclear weapons are abolished You",
+  "segments": [
+    {
+      "start": 6.28,
+      "end": 14.52,
+      "text": "Abolition of nuclear weapons may sound idealistic, but in Japan, which experienced Hiroshima and"
+    },
+    {
+      "start": 14.52,
+      "end": 18.94,
+      "text": "Nagasaki, this is necessarily an unavoidable theme."
+    },
+    {
+      "start": 20.58,
+      "end": 25.84,
+      "text": "Today, there are about 12 500 nuclear warheads in the world."
+    },
+    {
+      "start": 26.9,
+      "end": 30.62,
+      "text": "Most are held by the United States and Russia."
+    },
+    {
+      "start": 33.48,
+      "end": 39.78,
+      "text": "Their military value is said to lie in being unusable weapons that exercise deterrence."
+    },
+    {
+      "start": 40.66,
+      "end": 44.94,
+      "text": "But deterrence may, like a flood, sweep everything away."
+    },
+    {
+      "start": 44.94,
+      "end": 50.64,
+      "text": "A wrong judgment, an accident, a seizure by terrorists"
+    },
+    {
+      "start": 51.94,
+      "end": 55.1,
+      "text": "Once used, the civilized world ends"
+    },
+    {
+      "start": 57.34,
+      "end": 62.72,
+      "text": "Survivors of the bombs have kept telling the partly remembered stories"
+    },
+    {
+      "start": 62.72,
+      "end": 69.56,
+      "text": "Burnt skin, radiation, sickness, black rain"
+    },
+    {
+      "start": 69.56,
+      "end": 75.36,
+      "text": "Things a human must not do to another human"
+    },
+    {
+      "start": 75.36,
+      "end": 82.1,
+      "text": "In 2017, the treaty on the prohibition of nuclear weapons"
+    },
+    {
+      "start": 82.1,
+      "end": 85.14,
+      "text": "Was adopted at the UN"
+    },
+    {
+      "start": 87.98,
+      "end": 92.56,
+      "text": "One twenty-twenty-two countries voted in favor"
+    },
+    {
+      "start": 92.56,
+      "end": 96.12,
+      "text": "But all nuclear arms states"
+    },
+    {
+      "start": 101.38,
+      "end": 109.06,
+      "text": "Japan, though the only country to have been bombed, did not join the treaty because of"
+    },
+    {
+      "start": 109.06,
+      "end": 110.64,
+      "text": "its security policy."
+    },
+    {
+      "start": 112.36,
+      "end": 118.16,
+      "text": "This contradiction is a great issue in Japanese society."
+    },
+    {
+      "start": 118.16,
+      "end": 124.9,
+      "text": "Depending on America's nuclear umbrella while calling for abolition"
+    },
+    {
+      "start": 124.9,
+      "end": 131.7,
+      "text": "This tension remains the subject of ethical and security debate"
+    },
+    {
+      "start": 131.7,
+      "end": 137.68,
+      "text": "Nuclear weapons once made are hard to remove"
+    },
+    {
+      "start": 137.68,
+      "end": 145.6,
+      "text": "But humanity has banned chemical and biological weapons too"
+    },
+    {
+      "start": 145.6,
+      "end": 152.8,
+      "text": "With political will, nuclear weapons should also be capable of abolition"
+    },
+    {
+      "start": 153.6,
+      "end": 157.92,
+      "text": "The average age of survivors has passed eight"
+    },
+    {
+      "start": 159.4,
+      "end": 165.2,
+      "text": "The error when we can hear living testimony will soon end"
+    },
+    {
+      "start": 165.2,
+      "end": 169.16,
+      "text": "To pass their experience accurately"
+    },
+    {
+      "start": 169.16,
+      "end": 173.04,
+      "text": "To the next generation is our responsibility"
+    },
+    {
+      "start": 173.04,
+      "end": 185.72,
+      "text": "The flame at Hiroshima Peace Memorial Park has continued to burn without cease"
+    },
+    {
+      "start": 187.24,
+      "end": 197.1,
+      "text": "The day that flame goes out is the day nuclear weapons are abolished"
+    },
+    {
+      "start": 203.04,
+      "end": 204.28,
+      "text": "You"
+    }
+  ]
+}

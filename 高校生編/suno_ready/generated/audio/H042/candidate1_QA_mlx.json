@@ -1,0 +1,202 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H042.md",
+  "audio": "高校生編/suno_ready/generated/audio/H042/candidate1-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 104.44,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.7652,
+  "expected_words": 132,
+  "transcribed_words": 101,
+  "matched_words": 100,
+  "coverage": 0.7576,
+  "precision": 0.9901,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 131,
+  "longest_missing_run": 31,
+  "largest_missing_runs": [
+    {
+      "start": 3,
+      "length": 31,
+      "words": [
+        "from",
+        "ancient",
+        "times",
+        "connected",
+        "asia",
+        "in",
+        "the",
+        "east",
+        "and",
+        "europe",
+        "in",
+        "the",
+        "west",
+        "it",
+        "was",
+        "not",
+        "a",
+        "single",
+        "road",
+        "but",
+        "a",
+        "network",
+        "of",
+        "many",
+        "routes",
+        "chinese",
+        "silk",
+        "persian",
+        "glass",
+        "indian",
+        "spices"
+      ]
+    },
+    {
+      "start": 109,
+      "length": 1,
+      "words": [
+        "history"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 109,
+      "actual_start": 78,
+      "expected": [
+        "history"
+      ],
+      "actual": [
+        "histories"
+      ],
+      "actual_confidence": 0.8198,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 3,
+      "actual_start": 3,
+      "expected": [
+        "from",
+        "ancient",
+        "times",
+        "connected",
+        "asia",
+        "in",
+        "the",
+        "east",
+        "and",
+        "europe",
+        "in",
+        "the",
+        "west",
+        "it",
+        "was",
+        "not",
+        "a",
+        "single",
+        "road",
+        "but",
+        "a",
+        "network",
+        "of",
+        "many",
+        "routes",
+        "chinese",
+        "silk",
+        "persian",
+        "glass",
+        "indian",
+        "spices"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "The Silk Road And Roman gold traveled this road by caravan Merchants loaded their camels and crossed deserts and mountains But it was not only goods that traveled this road Religion also spread along this path Buddhism spread from India to China Islam spread from Arabia into Central Asia Language and art were also exchanged The Chinese way of making paper traveled westward And later contributed to learning and culture in Europe The Silk Road was one of histories Great networks of exchange The words carried by the desert wind Across many centuries Still quietly support the roots of many civilizations",
+  "segments": [
+    {
+      "start": 28.58,
+      "end": 29.98,
+      "text": "The Silk Road"
+    },
+    {
+      "start": 30.0,
+      "end": 35.52,
+      "text": "And Roman gold traveled this road by caravan"
+    },
+    {
+      "start": 37.2,
+      "end": 41.96,
+      "text": "Merchants loaded their camels and crossed deserts and mountains"
+    },
+    {
+      "start": 41.96,
+      "end": 46.22,
+      "text": "But it was not only goods that traveled this road"
+    },
+    {
+      "start": 47.0,
+      "end": 51.62,
+      "text": "Religion also spread along this path"
+    },
+    {
+      "start": 51.62,
+      "end": 56.66,
+      "text": "Buddhism spread from India to China"
+    },
+    {
+      "start": 56.66,
+      "end": 62.74,
+      "text": "Islam spread from Arabia into Central Asia"
+    },
+    {
+      "start": 63.66,
+      "end": 67.36,
+      "text": "Language and art were also exchanged"
+    },
+    {
+      "start": 68.52,
+      "end": 73.88,
+      "text": "The Chinese way of making paper traveled westward"
+    },
+    {
+      "start": 73.88,
+      "end": 79.36,
+      "text": "And later contributed to learning and culture in Europe"
+    },
+    {
+      "start": 79.36,
+      "end": 83.76,
+      "text": "The Silk Road was one of histories"
+    },
+    {
+      "start": 83.76,
+      "end": 88.46,
+      "text": "Great networks of exchange"
+    },
+    {
+      "start": 89.78,
+      "end": 94.2,
+      "text": "The words carried by the desert wind"
+    },
+    {
+      "start": 94.2,
+      "end": 97.28,
+      "text": "Across many centuries"
+    },
+    {
+      "start": 97.28,
+      "end": 104.44,
+      "text": "Still quietly support the roots of many civilizations"
+    }
+  ]
+}

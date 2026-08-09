@@ -1,0 +1,1558 @@
+{
+  "lesson": "H072",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h072_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H072/candidate1-full.mp3",
+  "source_audio_sha256": "f9f27a72007c193ead662a976d0733efafd1eec6df33581690f0ba663c4fe069",
+  "bpm": 85.54,
+  "exact_word_match": true,
+  "word_count": 237,
+  "line_count": 15,
+  "first_word_start": 12.501,
+  "last_word_end": 162.119,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Japan is one of the most earthquake-prone nations in the world.",
+      "word_timings": [
+        {
+          "word": "Japan",
+          "display_index": 0,
+          "start": 12.501,
+          "end": 13.417
+        },
+        {
+          "word": "is",
+          "display_index": 1,
+          "start": 13.417,
+          "end": 13.622
+        },
+        {
+          "word": "one",
+          "display_index": 2,
+          "start": 13.622,
+          "end": 13.782
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 13.782,
+          "end": 13.925
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 13.925,
+          "end": 14.082
+        },
+        {
+          "word": "most",
+          "display_index": 5,
+          "start": 14.082,
+          "end": 14.502
+        },
+        {
+          "word": "earthquake-prone",
+          "display_index": 6,
+          "start": 14.502,
+          "end": 15.122
+        },
+        {
+          "word": "earthquake-prone",
+          "display_index": 6,
+          "start": 15.122,
+          "end": 15.642
+        },
+        {
+          "word": "nations",
+          "display_index": 7,
+          "start": 15.642,
+          "end": 16.242
+        },
+        {
+          "word": "in",
+          "display_index": 8,
+          "start": 16.242,
+          "end": 16.534
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 16.534,
+          "end": 16.682
+        },
+        {
+          "word": "world.",
+          "display_index": 10,
+          "start": 16.682,
+          "end": 18.002
+        }
+      ],
+      "start": 12.501,
+      "end": 18.002
+    },
+    {
+      "line": 2,
+      "english": "It lies in a region where plates overlap in a complex way, and hundreds of tremors are observed every year.",
+      "word_timings": [
+        {
+          "word": "It",
+          "display_index": 0,
+          "start": 18.302,
+          "end": 18.442
+        },
+        {
+          "word": "lies",
+          "display_index": 1,
+          "start": 18.442,
+          "end": 18.862
+        },
+        {
+          "word": "in",
+          "display_index": 2,
+          "start": 18.862,
+          "end": 18.963
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 18.963,
+          "end": 19.142
+        },
+        {
+          "word": "region",
+          "display_index": 4,
+          "start": 19.142,
+          "end": 19.642
+        },
+        {
+          "word": "where",
+          "display_index": 5,
+          "start": 19.642,
+          "end": 19.822
+        },
+        {
+          "word": "plates",
+          "display_index": 6,
+          "start": 19.822,
+          "end": 20.262
+        },
+        {
+          "word": "overlap",
+          "display_index": 7,
+          "start": 20.262,
+          "end": 20.962
+        },
+        {
+          "word": "in",
+          "display_index": 8,
+          "start": 20.962,
+          "end": 21.072
+        },
+        {
+          "word": "a",
+          "display_index": 9,
+          "start": 21.072,
+          "end": 21.223
+        },
+        {
+          "word": "complex",
+          "display_index": 10,
+          "start": 21.223,
+          "end": 22.263
+        },
+        {
+          "word": "way,",
+          "display_index": 11,
+          "start": 22.263,
+          "end": 23.863
+        },
+        {
+          "word": "and",
+          "display_index": 12,
+          "start": 23.863,
+          "end": 24.023
+        },
+        {
+          "word": "hundreds",
+          "display_index": 13,
+          "start": 24.023,
+          "end": 24.563
+        },
+        {
+          "word": "of",
+          "display_index": 14,
+          "start": 24.563,
+          "end": 24.703
+        },
+        {
+          "word": "tremors",
+          "display_index": 15,
+          "start": 24.703,
+          "end": 25.289
+        },
+        {
+          "word": "are",
+          "display_index": 16,
+          "start": 25.289,
+          "end": 25.723
+        },
+        {
+          "word": "observed",
+          "display_index": 17,
+          "start": 25.723,
+          "end": 26.883
+        },
+        {
+          "word": "every",
+          "display_index": 18,
+          "start": 26.883,
+          "end": 27.503
+        },
+        {
+          "word": "year.",
+          "display_index": 19,
+          "start": 27.503,
+          "end": 28.463
+        }
+      ],
+      "start": 18.302,
+      "end": 28.463
+    },
+    {
+      "line": 3,
+      "english": "On March 11, 2011, a massive earthquake struck the Tohoku region.",
+      "word_timings": [
+        {
+          "word": "On",
+          "display_index": 0,
+          "start": 28.763,
+          "end": 28.923
+        },
+        {
+          "word": "March",
+          "display_index": 1,
+          "start": 28.923,
+          "end": 29.343
+        },
+        {
+          "word": "11,",
+          "display_index": 2,
+          "start": 29.343,
+          "end": 30.104
+        },
+        {
+          "word": "2011,",
+          "display_index": 3,
+          "start": 30.104,
+          "end": 31.909
+        },
+        {
+          "word": "a",
+          "display_index": 4,
+          "start": 31.909,
+          "end": 32.024
+        },
+        {
+          "word": "massive",
+          "display_index": 5,
+          "start": 32.024,
+          "end": 32.464
+        },
+        {
+          "word": "earthquake",
+          "display_index": 6,
+          "start": 32.464,
+          "end": 33.024
+        },
+        {
+          "word": "struck",
+          "display_index": 7,
+          "start": 33.024,
+          "end": 33.47
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 33.47,
+          "end": 33.604
+        },
+        {
+          "word": "Tohoku",
+          "display_index": 9,
+          "start": 33.604,
+          "end": 34.484
+        },
+        {
+          "word": "region.",
+          "display_index": 10,
+          "start": 34.484,
+          "end": 35.984
+        }
+      ],
+      "start": 28.763,
+      "end": 35.984
+    },
+    {
+      "line": 4,
+      "english": "At magnitude 9.0, it was one of the largest ever recorded.",
+      "word_timings": [
+        {
+          "word": "At",
+          "display_index": 0,
+          "start": 37.844,
+          "end": 37.984
+        },
+        {
+          "word": "magnitude",
+          "display_index": 1,
+          "start": 37.984,
+          "end": 38.705
+        },
+        {
+          "word": "9.0,",
+          "display_index": 2,
+          "start": 38.705,
+          "end": 39.385
+        },
+        {
+          "word": "9.0,",
+          "display_index": 2,
+          "start": 39.385,
+          "end": 40.305
+        },
+        {
+          "word": "it",
+          "display_index": 3,
+          "start": 40.305,
+          "end": 40.425
+        },
+        {
+          "word": "was",
+          "display_index": 4,
+          "start": 40.425,
+          "end": 40.705
+        },
+        {
+          "word": "one",
+          "display_index": 5,
+          "start": 40.705,
+          "end": 41.025
+        },
+        {
+          "word": "of",
+          "display_index": 6,
+          "start": 41.025,
+          "end": 41.148
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 41.148,
+          "end": 41.305
+        },
+        {
+          "word": "largest",
+          "display_index": 8,
+          "start": 41.305,
+          "end": 42.145
+        },
+        {
+          "word": "ever",
+          "display_index": 9,
+          "start": 42.145,
+          "end": 42.545
+        },
+        {
+          "word": "recorded.",
+          "display_index": 10,
+          "start": 42.545,
+          "end": 43.445
+        }
+      ],
+      "start": 37.844,
+      "end": 43.445
+    },
+    {
+      "line": 5,
+      "english": "The tsunami that followed swept the coasts of Iwate, Miyagi, and Fukushima, taking the lives of about twenty thousand people.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 43.745,
+          "end": 43.865
+        },
+        {
+          "word": "tsunami",
+          "display_index": 1,
+          "start": 43.865,
+          "end": 44.625
+        },
+        {
+          "word": "that",
+          "display_index": 2,
+          "start": 44.625,
+          "end": 44.945
+        },
+        {
+          "word": "followed",
+          "display_index": 3,
+          "start": 44.945,
+          "end": 45.485
+        },
+        {
+          "word": "swept",
+          "display_index": 4,
+          "start": 45.485,
+          "end": 45.893
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 45.893,
+          "end": 46.025
+        },
+        {
+          "word": "coasts",
+          "display_index": 6,
+          "start": 46.025,
+          "end": 46.806
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 46.806,
+          "end": 47.146
+        },
+        {
+          "word": "Iwate,",
+          "display_index": 8,
+          "start": 47.146,
+          "end": 48.786
+        },
+        {
+          "word": "Miyagi,",
+          "display_index": 9,
+          "start": 48.786,
+          "end": 49.686
+        },
+        {
+          "word": "and",
+          "display_index": 10,
+          "start": 49.686,
+          "end": 49.846
+        },
+        {
+          "word": "Fukushima,",
+          "display_index": 11,
+          "start": 49.846,
+          "end": 51.226
+        },
+        {
+          "word": "taking",
+          "display_index": 12,
+          "start": 51.226,
+          "end": 51.613
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 51.613,
+          "end": 51.766
+        },
+        {
+          "word": "lives",
+          "display_index": 14,
+          "start": 51.766,
+          "end": 52.366
+        },
+        {
+          "word": "of",
+          "display_index": 15,
+          "start": 52.366,
+          "end": 52.546
+        },
+        {
+          "word": "about",
+          "display_index": 16,
+          "start": 52.546,
+          "end": 53.086
+        },
+        {
+          "word": "twenty",
+          "display_index": 17,
+          "start": 53.086,
+          "end": 53.666
+        },
+        {
+          "word": "thousand",
+          "display_index": 18,
+          "start": 53.666,
+          "end": 54.346
+        },
+        {
+          "word": "people.",
+          "display_index": 19,
+          "start": 54.346,
+          "end": 55.846
+        }
+      ],
+      "start": 43.745,
+      "end": 55.846
+    },
+    {
+      "line": 6,
+      "english": "At the Fukushima Daiichi nuclear plant, the earthquake and tsunami caused the loss of cooling function, and a serious accident — a meltdown — occurred.",
+      "word_timings": [
+        {
+          "word": "At",
+          "display_index": 0,
+          "start": 57.227,
+          "end": 57.395
+        },
+        {
+          "word": "the",
+          "display_index": 1,
+          "start": 57.395,
+          "end": 57.507
+        },
+        {
+          "word": "Fukushima",
+          "display_index": 2,
+          "start": 57.507,
+          "end": 58.247
+        },
+        {
+          "word": "Daiichi",
+          "display_index": 3,
+          "start": 58.247,
+          "end": 58.787
+        },
+        {
+          "word": "nuclear",
+          "display_index": 4,
+          "start": 58.787,
+          "end": 59.407
+        },
+        {
+          "word": "plant,",
+          "display_index": 5,
+          "start": 59.407,
+          "end": 59.863
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 59.863,
+          "end": 60.067
+        },
+        {
+          "word": "earthquake",
+          "display_index": 7,
+          "start": 60.067,
+          "end": 61.107
+        },
+        {
+          "word": "and",
+          "display_index": 8,
+          "start": 61.107,
+          "end": 61.327
+        },
+        {
+          "word": "tsunami",
+          "display_index": 9,
+          "start": 61.327,
+          "end": 62.747
+        },
+        {
+          "word": "caused",
+          "display_index": 10,
+          "start": 62.747,
+          "end": 62.992
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 62.992,
+          "end": 63.147
+        },
+        {
+          "word": "loss",
+          "display_index": 12,
+          "start": 63.147,
+          "end": 63.527
+        },
+        {
+          "word": "of",
+          "display_index": 13,
+          "start": 63.527,
+          "end": 63.668
+        },
+        {
+          "word": "cooling",
+          "display_index": 14,
+          "start": 63.668,
+          "end": 64.328
+        },
+        {
+          "word": "function,",
+          "display_index": 15,
+          "start": 64.328,
+          "end": 65.628
+        },
+        {
+          "word": "and",
+          "display_index": 16,
+          "start": 65.628,
+          "end": 65.807
+        },
+        {
+          "word": "a",
+          "display_index": 17,
+          "start": 65.807,
+          "end": 65.928
+        },
+        {
+          "word": "serious",
+          "display_index": 18,
+          "start": 65.928,
+          "end": 66.568
+        },
+        {
+          "word": "accident",
+          "display_index": 19,
+          "start": 66.568,
+          "end": 68.251
+        },
+        {
+          "word": "a",
+          "display_index": 21,
+          "start": 68.251,
+          "end": 68.368
+        },
+        {
+          "word": "meltdown",
+          "display_index": 22,
+          "start": 68.368,
+          "end": 69.668
+        },
+        {
+          "word": "occurred.",
+          "display_index": 24,
+          "start": 69.668,
+          "end": 70.708
+        }
+      ],
+      "start": 57.227,
+      "end": 70.708
+    },
+    {
+      "line": 7,
+      "english": "Hundreds of thousands of people were forced to evacuate the land they had long called home.",
+      "word_timings": [
+        {
+          "word": "Hundreds",
+          "display_index": 0,
+          "start": 71.008,
+          "end": 71.408
+        },
+        {
+          "word": "of",
+          "display_index": 1,
+          "start": 71.408,
+          "end": 71.528
+        },
+        {
+          "word": "thousands",
+          "display_index": 2,
+          "start": 71.528,
+          "end": 72.309
+        },
+        {
+          "word": "of",
+          "display_index": 3,
+          "start": 72.309,
+          "end": 72.569
+        },
+        {
+          "word": "people",
+          "display_index": 4,
+          "start": 72.569,
+          "end": 73.809
+        },
+        {
+          "word": "were",
+          "display_index": 5,
+          "start": 73.809,
+          "end": 73.989
+        },
+        {
+          "word": "forced",
+          "display_index": 6,
+          "start": 73.989,
+          "end": 74.69
+        },
+        {
+          "word": "to",
+          "display_index": 7,
+          "start": 74.69,
+          "end": 74.949
+        },
+        {
+          "word": "evacuate",
+          "display_index": 8,
+          "start": 74.949,
+          "end": 75.931
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 75.931,
+          "end": 76.109
+        },
+        {
+          "word": "land",
+          "display_index": 10,
+          "start": 76.109,
+          "end": 76.649
+        },
+        {
+          "word": "they",
+          "display_index": 11,
+          "start": 76.649,
+          "end": 76.849
+        },
+        {
+          "word": "had",
+          "display_index": 12,
+          "start": 76.849,
+          "end": 77.169
+        },
+        {
+          "word": "long",
+          "display_index": 13,
+          "start": 77.169,
+          "end": 78.869
+        },
+        {
+          "word": "called",
+          "display_index": 14,
+          "start": 78.869,
+          "end": 79.589
+        },
+        {
+          "word": "home.",
+          "display_index": 15,
+          "start": 79.589,
+          "end": 81.089
+        }
+      ],
+      "start": 71.008,
+      "end": 81.089
+    },
+    {
+      "line": 8,
+      "english": "Right after the disaster, first responders such as firefighters, police officers, and Self-Defense Force members continued to rescue people from the rubble.",
+      "word_timings": [
+        {
+          "word": "Right",
+          "display_index": 0,
+          "start": 81.73,
+          "end": 82.03
+        },
+        {
+          "word": "after",
+          "display_index": 1,
+          "start": 82.03,
+          "end": 82.463
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 82.463,
+          "end": 82.61
+        },
+        {
+          "word": "disaster,",
+          "display_index": 3,
+          "start": 82.61,
+          "end": 84.35
+        },
+        {
+          "word": "first",
+          "display_index": 4,
+          "start": 84.35,
+          "end": 84.73
+        },
+        {
+          "word": "responders",
+          "display_index": 5,
+          "start": 84.73,
+          "end": 85.23
+        },
+        {
+          "word": "such",
+          "display_index": 6,
+          "start": 85.23,
+          "end": 85.43
+        },
+        {
+          "word": "as",
+          "display_index": 7,
+          "start": 85.43,
+          "end": 85.57
+        },
+        {
+          "word": "firefighters,",
+          "display_index": 8,
+          "start": 85.57,
+          "end": 87.49
+        },
+        {
+          "word": "police",
+          "display_index": 9,
+          "start": 87.49,
+          "end": 88.35
+        },
+        {
+          "word": "officers,",
+          "display_index": 10,
+          "start": 88.35,
+          "end": 89.471
+        },
+        {
+          "word": "and",
+          "display_index": 11,
+          "start": 89.471,
+          "end": 89.751
+        },
+        {
+          "word": "Self-Defense",
+          "display_index": 12,
+          "start": 89.751,
+          "end": 90.131
+        },
+        {
+          "word": "Self-Defense",
+          "display_index": 12,
+          "start": 90.131,
+          "end": 90.651
+        },
+        {
+          "word": "Force",
+          "display_index": 13,
+          "start": 90.651,
+          "end": 91.171
+        },
+        {
+          "word": "members",
+          "display_index": 14,
+          "start": 91.171,
+          "end": 92.931
+        },
+        {
+          "word": "continued",
+          "display_index": 15,
+          "start": 92.931,
+          "end": 93.838
+        },
+        {
+          "word": "to",
+          "display_index": 16,
+          "start": 93.838,
+          "end": 94.011
+        },
+        {
+          "word": "rescue",
+          "display_index": 17,
+          "start": 94.011,
+          "end": 94.691
+        },
+        {
+          "word": "people",
+          "display_index": 18,
+          "start": 94.691,
+          "end": 95.371
+        },
+        {
+          "word": "from",
+          "display_index": 19,
+          "start": 95.371,
+          "end": 95.79
+        },
+        {
+          "word": "the",
+          "display_index": 20,
+          "start": 95.79,
+          "end": 95.951
+        },
+        {
+          "word": "rubble.",
+          "display_index": 21,
+          "start": 95.951,
+          "end": 96.871
+        }
+      ],
+      "start": 81.73,
+      "end": 96.871
+    },
+    {
+      "line": 9,
+      "english": "Much aid was also sent from around the world.",
+      "word_timings": [
+        {
+          "word": "Much",
+          "display_index": 0,
+          "start": 97.171,
+          "end": 97.612
+        },
+        {
+          "word": "aid",
+          "display_index": 1,
+          "start": 97.612,
+          "end": 98.092
+        },
+        {
+          "word": "was",
+          "display_index": 2,
+          "start": 98.092,
+          "end": 98.312
+        },
+        {
+          "word": "also",
+          "display_index": 3,
+          "start": 98.312,
+          "end": 98.892
+        },
+        {
+          "word": "sent",
+          "display_index": 4,
+          "start": 98.892,
+          "end": 99.232
+        },
+        {
+          "word": "from",
+          "display_index": 5,
+          "start": 99.232,
+          "end": 99.532
+        },
+        {
+          "word": "around",
+          "display_index": 6,
+          "start": 99.532,
+          "end": 99.997
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 99.997,
+          "end": 100.152
+        },
+        {
+          "word": "world.",
+          "display_index": 8,
+          "start": 100.152,
+          "end": 101.632
+        }
+      ],
+      "start": 97.171,
+      "end": 101.632
+    },
+    {
+      "line": 10,
+      "english": "Preparedness for disaster has now become common sense in Japanese society.",
+      "word_timings": [
+        {
+          "word": "Preparedness",
+          "display_index": 0,
+          "start": 101.932,
+          "end": 103.172
+        },
+        {
+          "word": "for",
+          "display_index": 1,
+          "start": 103.172,
+          "end": 103.532
+        },
+        {
+          "word": "disaster",
+          "display_index": 2,
+          "start": 103.532,
+          "end": 104.752
+        },
+        {
+          "word": "has",
+          "display_index": 3,
+          "start": 104.752,
+          "end": 104.972
+        },
+        {
+          "word": "now",
+          "display_index": 4,
+          "start": 104.972,
+          "end": 105.492
+        },
+        {
+          "word": "become",
+          "display_index": 5,
+          "start": 105.492,
+          "end": 106.033
+        },
+        {
+          "word": "common",
+          "display_index": 6,
+          "start": 106.033,
+          "end": 106.753
+        },
+        {
+          "word": "sense",
+          "display_index": 7,
+          "start": 106.753,
+          "end": 107.353
+        },
+        {
+          "word": "in",
+          "display_index": 8,
+          "start": 107.353,
+          "end": 107.553
+        },
+        {
+          "word": "Japanese",
+          "display_index": 9,
+          "start": 107.553,
+          "end": 108.773
+        },
+        {
+          "word": "society.",
+          "display_index": 10,
+          "start": 108.773,
+          "end": 110.273
+        }
+      ],
+      "start": 101.932,
+      "end": 110.273
+    },
+    {
+      "line": 11,
+      "english": "Each household stocks emergency food and water, and schools and workplaces hold evacuation drills regularly.",
+      "word_timings": [
+        {
+          "word": "Each",
+          "display_index": 0,
+          "start": 111.573,
+          "end": 111.853
+        },
+        {
+          "word": "household",
+          "display_index": 1,
+          "start": 111.853,
+          "end": 112.493
+        },
+        {
+          "word": "stocks",
+          "display_index": 2,
+          "start": 112.493,
+          "end": 112.973
+        },
+        {
+          "word": "emergency",
+          "display_index": 3,
+          "start": 112.973,
+          "end": 113.933
+        },
+        {
+          "word": "food",
+          "display_index": 4,
+          "start": 113.933,
+          "end": 114.353
+        },
+        {
+          "word": "and",
+          "display_index": 5,
+          "start": 114.353,
+          "end": 114.514
+        },
+        {
+          "word": "water,",
+          "display_index": 6,
+          "start": 114.514,
+          "end": 115.554
+        },
+        {
+          "word": "and",
+          "display_index": 7,
+          "start": 115.554,
+          "end": 115.794
+        },
+        {
+          "word": "schools",
+          "display_index": 8,
+          "start": 115.794,
+          "end": 116.954
+        },
+        {
+          "word": "and",
+          "display_index": 9,
+          "start": 116.954,
+          "end": 117.114
+        },
+        {
+          "word": "workplaces",
+          "display_index": 10,
+          "start": 117.114,
+          "end": 118.374
+        },
+        {
+          "word": "hold",
+          "display_index": 11,
+          "start": 118.374,
+          "end": 118.834
+        },
+        {
+          "word": "evacuation",
+          "display_index": 12,
+          "start": 118.834,
+          "end": 119.954
+        },
+        {
+          "word": "drills",
+          "display_index": 13,
+          "start": 119.954,
+          "end": 120.654
+        },
+        {
+          "word": "regularly.",
+          "display_index": 14,
+          "start": 120.654,
+          "end": 121.946
+        }
+      ],
+      "start": 111.573,
+      "end": 121.946
+    },
+    {
+      "line": 12,
+      "english": "The early warning system of the meteorological agency is one of the most precise in the world.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 122.246,
+          "end": 122.494
+        },
+        {
+          "word": "early",
+          "display_index": 1,
+          "start": 122.494,
+          "end": 123.135
+        },
+        {
+          "word": "warning",
+          "display_index": 2,
+          "start": 123.135,
+          "end": 123.815
+        },
+        {
+          "word": "system",
+          "display_index": 3,
+          "start": 123.815,
+          "end": 124.755
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 124.755,
+          "end": 124.905
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 124.905,
+          "end": 125.075
+        },
+        {
+          "word": "meteorological",
+          "display_index": 6,
+          "start": 125.075,
+          "end": 126.795
+        },
+        {
+          "word": "agency",
+          "display_index": 7,
+          "start": 126.795,
+          "end": 128.456
+        },
+        {
+          "word": "is",
+          "display_index": 8,
+          "start": 128.456,
+          "end": 128.875
+        },
+        {
+          "word": "one",
+          "display_index": 9,
+          "start": 128.875,
+          "end": 129.055
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 129.055,
+          "end": 129.284
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 129.284,
+          "end": 129.475
+        },
+        {
+          "word": "most",
+          "display_index": 12,
+          "start": 129.475,
+          "end": 129.995
+        },
+        {
+          "word": "precise",
+          "display_index": 13,
+          "start": 129.995,
+          "end": 131.135
+        },
+        {
+          "word": "in",
+          "display_index": 14,
+          "start": 131.135,
+          "end": 131.282
+        },
+        {
+          "word": "the",
+          "display_index": 15,
+          "start": 131.282,
+          "end": 131.456
+        },
+        {
+          "word": "world.",
+          "display_index": 16,
+          "start": 131.456,
+          "end": 132.956
+        }
+      ],
+      "start": 122.246,
+      "end": 132.956
+    },
+    {
+      "line": 13,
+      "english": "Over ten years have passed since the Great East Japan Earthquake, and the affected area has been walking the road of reconstruction step by step.",
+      "word_timings": [
+        {
+          "word": "Over",
+          "display_index": 0,
+          "start": 133.976,
+          "end": 134.276
+        },
+        {
+          "word": "ten",
+          "display_index": 1,
+          "start": 134.276,
+          "end": 134.656
+        },
+        {
+          "word": "years",
+          "display_index": 2,
+          "start": 134.656,
+          "end": 135.016
+        },
+        {
+          "word": "have",
+          "display_index": 3,
+          "start": 135.016,
+          "end": 135.156
+        },
+        {
+          "word": "passed",
+          "display_index": 4,
+          "start": 135.156,
+          "end": 135.536
+        },
+        {
+          "word": "since",
+          "display_index": 5,
+          "start": 135.536,
+          "end": 135.693
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 135.693,
+          "end": 135.876
+        },
+        {
+          "word": "Great",
+          "display_index": 7,
+          "start": 135.876,
+          "end": 136.296
+        },
+        {
+          "word": "East",
+          "display_index": 8,
+          "start": 136.296,
+          "end": 136.756
+        },
+        {
+          "word": "Japan",
+          "display_index": 9,
+          "start": 136.756,
+          "end": 137.376
+        },
+        {
+          "word": "Earthquake,",
+          "display_index": 10,
+          "start": 137.376,
+          "end": 139.616
+        },
+        {
+          "word": "and",
+          "display_index": 11,
+          "start": 139.616,
+          "end": 139.766
+        },
+        {
+          "word": "the",
+          "display_index": 12,
+          "start": 139.766,
+          "end": 139.977
+        },
+        {
+          "word": "affected",
+          "display_index": 13,
+          "start": 139.977,
+          "end": 140.757
+        },
+        {
+          "word": "area",
+          "display_index": 14,
+          "start": 140.757,
+          "end": 141.717
+        },
+        {
+          "word": "has",
+          "display_index": 15,
+          "start": 141.717,
+          "end": 141.917
+        },
+        {
+          "word": "been",
+          "display_index": 16,
+          "start": 141.917,
+          "end": 142.237
+        },
+        {
+          "word": "walking",
+          "display_index": 17,
+          "start": 142.237,
+          "end": 142.802
+        },
+        {
+          "word": "the",
+          "display_index": 18,
+          "start": 142.802,
+          "end": 142.977
+        },
+        {
+          "word": "road",
+          "display_index": 19,
+          "start": 142.977,
+          "end": 143.377
+        },
+        {
+          "word": "of",
+          "display_index": 20,
+          "start": 143.377,
+          "end": 143.537
+        },
+        {
+          "word": "reconstruction",
+          "display_index": 21,
+          "start": 143.537,
+          "end": 144.837
+        },
+        {
+          "word": "step",
+          "display_index": 22,
+          "start": 144.837,
+          "end": 145.237
+        },
+        {
+          "word": "by",
+          "display_index": 23,
+          "start": 145.237,
+          "end": 145.677
+        },
+        {
+          "word": "step.",
+          "display_index": 24,
+          "start": 145.677,
+          "end": 146.737
+        }
+      ],
+      "start": 133.976,
+      "end": 146.737
+    },
+    {
+      "line": 14,
+      "english": "But not every wound has healed.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 147.037,
+          "end": 147.237
+        },
+        {
+          "word": "not",
+          "display_index": 1,
+          "start": 147.237,
+          "end": 147.537
+        },
+        {
+          "word": "every",
+          "display_index": 2,
+          "start": 147.537,
+          "end": 147.937
+        },
+        {
+          "word": "wound",
+          "display_index": 3,
+          "start": 147.937,
+          "end": 148.318
+        },
+        {
+          "word": "has",
+          "display_index": 4,
+          "start": 148.318,
+          "end": 148.618
+        },
+        {
+          "word": "healed.",
+          "display_index": 5,
+          "start": 148.618,
+          "end": 150.118
+        }
+      ],
+      "start": 147.037,
+      "end": 150.118
+    },
+    {
+      "line": 15,
+      "english": "We carry the responsibility of passing on the lessons learned from the disaster to the next generation.",
+      "word_timings": [
+        {
+          "word": "We",
+          "display_index": 0,
+          "start": 151.118,
+          "end": 151.298
+        },
+        {
+          "word": "carry",
+          "display_index": 1,
+          "start": 151.298,
+          "end": 151.875
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 151.875,
+          "end": 152.018
+        },
+        {
+          "word": "responsibility",
+          "display_index": 3,
+          "start": 152.018,
+          "end": 154.038
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 154.038,
+          "end": 154.198
+        },
+        {
+          "word": "passing",
+          "display_index": 5,
+          "start": 154.198,
+          "end": 155.198
+        },
+        {
+          "word": "on",
+          "display_index": 6,
+          "start": 155.198,
+          "end": 155.466
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 155.466,
+          "end": 155.638
+        },
+        {
+          "word": "lessons",
+          "display_index": 8,
+          "start": 155.638,
+          "end": 156.558
+        },
+        {
+          "word": "learned",
+          "display_index": 9,
+          "start": 156.558,
+          "end": 158.219
+        },
+        {
+          "word": "from",
+          "display_index": 10,
+          "start": 158.219,
+          "end": 158.439
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 158.439,
+          "end": 158.579
+        },
+        {
+          "word": "disaster",
+          "display_index": 12,
+          "start": 158.579,
+          "end": 159.47
+        },
+        {
+          "word": "to",
+          "display_index": 13,
+          "start": 159.47,
+          "end": 159.893
+        },
+        {
+          "word": "the",
+          "display_index": 14,
+          "start": 159.893,
+          "end": 160.079
+        },
+        {
+          "word": "next",
+          "display_index": 15,
+          "start": 160.079,
+          "end": 160.619
+        },
+        {
+          "word": "generation.",
+          "display_index": 16,
+          "start": 160.619,
+          "end": 162.119
+        }
+      ],
+      "start": 151.118,
+      "end": 162.119
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

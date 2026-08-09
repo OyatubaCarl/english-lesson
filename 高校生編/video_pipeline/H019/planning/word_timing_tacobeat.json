@@ -1,0 +1,888 @@
+{
+  "lesson": "H019",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h019_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H019/candidate2-full.mp3",
+  "source_audio_sha256": "37eaa1d3b609b8db2608a81e3e14af1e3ba9d8c8083d0d901fe8c93b385bb741",
+  "bpm": 71.8,
+  "exact_word_match": true,
+  "word_count": 128,
+  "line_count": 13,
+  "first_word_start": 6.981,
+  "last_word_end": 96.898,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Deep in the drawer of my father's desk, I discovered an old diary.",
+      "word_timings": [
+        {
+          "word": "Deep",
+          "display_index": 0,
+          "start": 6.981,
+          "end": 7.521
+        },
+        {
+          "word": "in",
+          "display_index": 1,
+          "start": 7.521,
+          "end": 7.682
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 7.682,
+          "end": 7.842
+        },
+        {
+          "word": "drawer",
+          "display_index": 3,
+          "start": 7.842,
+          "end": 8.962
+        },
+        {
+          "word": "of",
+          "display_index": 4,
+          "start": 8.962,
+          "end": 9.135
+        },
+        {
+          "word": "my",
+          "display_index": 5,
+          "start": 9.135,
+          "end": 9.482
+        },
+        {
+          "word": "father's",
+          "display_index": 6,
+          "start": 9.482,
+          "end": 10.122
+        },
+        {
+          "word": "desk,",
+          "display_index": 7,
+          "start": 10.122,
+          "end": 10.739
+        },
+        {
+          "word": "I",
+          "display_index": 8,
+          "start": 10.739,
+          "end": 10.942
+        },
+        {
+          "word": "discovered",
+          "display_index": 9,
+          "start": 10.942,
+          "end": 11.662
+        },
+        {
+          "word": "an",
+          "display_index": 10,
+          "start": 11.662,
+          "end": 11.882
+        },
+        {
+          "word": "old",
+          "display_index": 11,
+          "start": 11.882,
+          "end": 12.182
+        },
+        {
+          "word": "diary.",
+          "display_index": 12,
+          "start": 12.182,
+          "end": 13.682
+        }
+      ],
+      "start": 6.981,
+      "end": 13.682
+    },
+    {
+      "line": 2,
+      "english": "He seems to have been writing for a long time.",
+      "word_timings": [
+        {
+          "word": "He",
+          "display_index": 0,
+          "start": 14.243,
+          "end": 14.423
+        },
+        {
+          "word": "seems",
+          "display_index": 1,
+          "start": 14.423,
+          "end": 14.849
+        },
+        {
+          "word": "to",
+          "display_index": 2,
+          "start": 14.849,
+          "end": 15.063
+        },
+        {
+          "word": "have",
+          "display_index": 3,
+          "start": 15.063,
+          "end": 15.483
+        },
+        {
+          "word": "been",
+          "display_index": 4,
+          "start": 15.483,
+          "end": 15.843
+        },
+        {
+          "word": "writing",
+          "display_index": 5,
+          "start": 15.843,
+          "end": 16.863
+        },
+        {
+          "word": "for",
+          "display_index": 6,
+          "start": 16.863,
+          "end": 17.339
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 17.339,
+          "end": 17.543
+        },
+        {
+          "word": "long",
+          "display_index": 8,
+          "start": 17.543,
+          "end": 18.084
+        },
+        {
+          "word": "time.",
+          "display_index": 9,
+          "start": 18.084,
+          "end": 19.584
+        }
+      ],
+      "start": 14.243,
+      "end": 19.584
+    },
+    {
+      "line": 3,
+      "english": "I hesitated to open it.",
+      "word_timings": [
+        {
+          "word": "I",
+          "display_index": 0,
+          "start": 20.944,
+          "end": 21.104
+        },
+        {
+          "word": "hesitated",
+          "display_index": 1,
+          "start": 21.104,
+          "end": 22.285
+        },
+        {
+          "word": "to",
+          "display_index": 2,
+          "start": 22.285,
+          "end": 22.664
+        },
+        {
+          "word": "open",
+          "display_index": 3,
+          "start": 22.664,
+          "end": 23.225
+        },
+        {
+          "word": "it.",
+          "display_index": 4,
+          "start": 23.225,
+          "end": 23.945
+        }
+      ],
+      "start": 20.944,
+      "end": 23.945
+    },
+    {
+      "line": 4,
+      "english": "For a moment I held my breath.",
+      "word_timings": [
+        {
+          "word": "For",
+          "display_index": 0,
+          "start": 23.945,
+          "end": 24.202
+        },
+        {
+          "word": "a",
+          "display_index": 1,
+          "start": 24.202,
+          "end": 24.365
+        },
+        {
+          "word": "moment",
+          "display_index": 2,
+          "start": 24.365,
+          "end": 26.52
+        },
+        {
+          "word": "I",
+          "display_index": 3,
+          "start": 26.52,
+          "end": 26.765
+        },
+        {
+          "word": "held",
+          "display_index": 4,
+          "start": 26.765,
+          "end": 27.153
+        },
+        {
+          "word": "my",
+          "display_index": 5,
+          "start": 27.153,
+          "end": 27.545
+        },
+        {
+          "word": "breath.",
+          "display_index": 6,
+          "start": 27.545,
+          "end": 29.045
+        }
+      ],
+      "start": 23.945,
+      "end": 29.045
+    },
+    {
+      "line": 5,
+      "english": "Reading it would mean entering the private world of my father's heart.",
+      "word_timings": [
+        {
+          "word": "Reading",
+          "display_index": 0,
+          "start": 31.046,
+          "end": 31.566
+        },
+        {
+          "word": "it",
+          "display_index": 1,
+          "start": 31.566,
+          "end": 32.106
+        },
+        {
+          "word": "would",
+          "display_index": 2,
+          "start": 32.106,
+          "end": 32.346
+        },
+        {
+          "word": "mean",
+          "display_index": 3,
+          "start": 32.346,
+          "end": 32.826
+        },
+        {
+          "word": "entering",
+          "display_index": 4,
+          "start": 32.826,
+          "end": 33.766
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 33.766,
+          "end": 33.907
+        },
+        {
+          "word": "private",
+          "display_index": 6,
+          "start": 33.907,
+          "end": 34.427
+        },
+        {
+          "word": "world",
+          "display_index": 7,
+          "start": 34.427,
+          "end": 34.887
+        },
+        {
+          "word": "of",
+          "display_index": 8,
+          "start": 34.887,
+          "end": 35.065
+        },
+        {
+          "word": "my",
+          "display_index": 9,
+          "start": 35.065,
+          "end": 35.407
+        },
+        {
+          "word": "father's",
+          "display_index": 10,
+          "start": 35.407,
+          "end": 36.127
+        },
+        {
+          "word": "heart.",
+          "display_index": 11,
+          "start": 36.127,
+          "end": 37.247
+        }
+      ],
+      "start": 31.046,
+      "end": 37.247
+    },
+    {
+      "line": 6,
+      "english": "But I could not avoid the temptation.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 37.547,
+          "end": 37.987
+        },
+        {
+          "word": "I",
+          "display_index": 1,
+          "start": 37.987,
+          "end": 38.107
+        },
+        {
+          "word": "could",
+          "display_index": 2,
+          "start": 38.107,
+          "end": 38.407
+        },
+        {
+          "word": "not",
+          "display_index": 3,
+          "start": 38.407,
+          "end": 38.868
+        },
+        {
+          "word": "avoid",
+          "display_index": 4,
+          "start": 38.868,
+          "end": 39.82
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 39.82,
+          "end": 40.168
+        },
+        {
+          "word": "temptation.",
+          "display_index": 6,
+          "start": 40.168,
+          "end": 41.668
+        }
+      ],
+      "start": 37.547,
+      "end": 41.668
+    },
+    {
+      "line": 7,
+      "english": "I picked it up and began reading each line.",
+      "word_timings": [
+        {
+          "word": "I",
+          "display_index": 0,
+          "start": 43.825,
+          "end": 43.989
+        },
+        {
+          "word": "picked",
+          "display_index": 1,
+          "start": 43.989,
+          "end": 44.289
+        },
+        {
+          "word": "it",
+          "display_index": 2,
+          "start": 44.289,
+          "end": 44.509
+        },
+        {
+          "word": "up",
+          "display_index": 3,
+          "start": 44.509,
+          "end": 45.489
+        },
+        {
+          "word": "and",
+          "display_index": 4,
+          "start": 45.489,
+          "end": 45.649
+        },
+        {
+          "word": "began",
+          "display_index": 5,
+          "start": 45.649,
+          "end": 46.469
+        },
+        {
+          "word": "reading",
+          "display_index": 6,
+          "start": 46.469,
+          "end": 47.249
+        },
+        {
+          "word": "each",
+          "display_index": 7,
+          "start": 47.249,
+          "end": 47.589
+        },
+        {
+          "word": "line.",
+          "display_index": 8,
+          "start": 47.589,
+          "end": 48.549
+        }
+      ],
+      "start": 43.825,
+      "end": 48.549
+    },
+    {
+      "line": 8,
+      "english": "In his youth, my father had been composing poetry.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 48.849,
+          "end": 49.03
+        },
+        {
+          "word": "his",
+          "display_index": 1,
+          "start": 49.03,
+          "end": 49.31
+        },
+        {
+          "word": "youth,",
+          "display_index": 2,
+          "start": 49.31,
+          "end": 50.513
+        },
+        {
+          "word": "my",
+          "display_index": 3,
+          "start": 50.513,
+          "end": 50.87
+        },
+        {
+          "word": "father",
+          "display_index": 4,
+          "start": 50.87,
+          "end": 51.55
+        },
+        {
+          "word": "had",
+          "display_index": 5,
+          "start": 51.55,
+          "end": 51.91
+        },
+        {
+          "word": "been",
+          "display_index": 6,
+          "start": 51.91,
+          "end": 52.31
+        },
+        {
+          "word": "composing",
+          "display_index": 7,
+          "start": 52.31,
+          "end": 53.53
+        },
+        {
+          "word": "poetry.",
+          "display_index": 8,
+          "start": 53.53,
+          "end": 55.03
+        }
+      ],
+      "start": 48.849,
+      "end": 55.03
+    },
+    {
+      "line": 9,
+      "english": "In every word, there was a joy in life, but also a small regret at the bottom of his chest.",
+      "word_timings": [
+        {
+          "word": "In",
+          "display_index": 0,
+          "start": 56.811,
+          "end": 57.031
+        },
+        {
+          "word": "every",
+          "display_index": 1,
+          "start": 57.031,
+          "end": 57.591
+        },
+        {
+          "word": "word,",
+          "display_index": 2,
+          "start": 57.591,
+          "end": 58.011
+        },
+        {
+          "word": "there",
+          "display_index": 3,
+          "start": 58.011,
+          "end": 58.231
+        },
+        {
+          "word": "was",
+          "display_index": 4,
+          "start": 58.231,
+          "end": 58.365
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 58.365,
+          "end": 58.591
+        },
+        {
+          "word": "joy",
+          "display_index": 6,
+          "start": 58.591,
+          "end": 58.971
+        },
+        {
+          "word": "in",
+          "display_index": 7,
+          "start": 58.971,
+          "end": 59.231
+        },
+        {
+          "word": "life,",
+          "display_index": 8,
+          "start": 59.231,
+          "end": 59.692
+        },
+        {
+          "word": "but",
+          "display_index": 9,
+          "start": 59.692,
+          "end": 59.972
+        },
+        {
+          "word": "also",
+          "display_index": 10,
+          "start": 59.972,
+          "end": 60.714
+        },
+        {
+          "word": "a",
+          "display_index": 11,
+          "start": 60.714,
+          "end": 60.852
+        },
+        {
+          "word": "small",
+          "display_index": 12,
+          "start": 60.852,
+          "end": 61.572
+        },
+        {
+          "word": "regret",
+          "display_index": 13,
+          "start": 61.572,
+          "end": 62.312
+        },
+        {
+          "word": "at",
+          "display_index": 14,
+          "start": 62.312,
+          "end": 62.612
+        },
+        {
+          "word": "the",
+          "display_index": 15,
+          "start": 62.612,
+          "end": 62.812
+        },
+        {
+          "word": "bottom",
+          "display_index": 16,
+          "start": 62.812,
+          "end": 63.572
+        },
+        {
+          "word": "of",
+          "display_index": 17,
+          "start": 63.572,
+          "end": 63.872
+        },
+        {
+          "word": "his",
+          "display_index": 18,
+          "start": 63.872,
+          "end": 64.252
+        },
+        {
+          "word": "chest.",
+          "display_index": 19,
+          "start": 64.252,
+          "end": 65.752
+        }
+      ],
+      "start": 56.811,
+      "end": 65.752
+    },
+    {
+      "line": 10,
+      "english": "My father is always quiet and says little.",
+      "word_timings": [
+        {
+          "word": "My",
+          "display_index": 0,
+          "start": 67.238,
+          "end": 67.633
+        },
+        {
+          "word": "father",
+          "display_index": 1,
+          "start": 67.633,
+          "end": 68.373
+        },
+        {
+          "word": "is",
+          "display_index": 2,
+          "start": 68.373,
+          "end": 68.673
+        },
+        {
+          "word": "always",
+          "display_index": 3,
+          "start": 68.673,
+          "end": 69.273
+        },
+        {
+          "word": "quiet",
+          "display_index": 4,
+          "start": 69.273,
+          "end": 70.254
+        },
+        {
+          "word": "and",
+          "display_index": 5,
+          "start": 70.254,
+          "end": 70.594
+        },
+        {
+          "word": "says",
+          "display_index": 6,
+          "start": 70.594,
+          "end": 71.254
+        },
+        {
+          "word": "little.",
+          "display_index": 7,
+          "start": 71.254,
+          "end": 72.754
+        }
+      ],
+      "start": 67.238,
+      "end": 72.754
+    },
+    {
+      "line": 11,
+      "english": "But inside that diary, another father existed.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 73.554,
+          "end": 73.814
+        },
+        {
+          "word": "inside",
+          "display_index": 1,
+          "start": 73.814,
+          "end": 74.394
+        },
+        {
+          "word": "that",
+          "display_index": 2,
+          "start": 74.394,
+          "end": 74.674
+        },
+        {
+          "word": "diary,",
+          "display_index": 3,
+          "start": 74.674,
+          "end": 76.795
+        },
+        {
+          "word": "another",
+          "display_index": 4,
+          "start": 76.795,
+          "end": 77.435
+        },
+        {
+          "word": "father",
+          "display_index": 5,
+          "start": 77.435,
+          "end": 79.075
+        },
+        {
+          "word": "existed.",
+          "display_index": 6,
+          "start": 79.075,
+          "end": 80.575
+        }
+      ],
+      "start": 73.554,
+      "end": 80.575
+    },
+    {
+      "line": 12,
+      "english": "I quietly returned the diary and closed the drawer.",
+      "word_timings": [
+        {
+          "word": "I",
+          "display_index": 0,
+          "start": 81.767,
+          "end": 81.916
+        },
+        {
+          "word": "quietly",
+          "display_index": 1,
+          "start": 81.916,
+          "end": 82.616
+        },
+        {
+          "word": "returned",
+          "display_index": 2,
+          "start": 82.616,
+          "end": 83.449
+        },
+        {
+          "word": "the",
+          "display_index": 3,
+          "start": 83.449,
+          "end": 83.656
+        },
+        {
+          "word": "diary",
+          "display_index": 4,
+          "start": 83.656,
+          "end": 84.976
+        },
+        {
+          "word": "and",
+          "display_index": 5,
+          "start": 84.976,
+          "end": 85.277
+        },
+        {
+          "word": "closed",
+          "display_index": 6,
+          "start": 85.277,
+          "end": 85.821
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 85.821,
+          "end": 85.957
+        },
+        {
+          "word": "drawer.",
+          "display_index": 8,
+          "start": 85.957,
+          "end": 87.457
+        }
+      ],
+      "start": 81.767,
+      "end": 87.457
+    },
+    {
+      "line": 13,
+      "english": "Glimpsing my father's past filled me with a new respect for him.",
+      "word_timings": [
+        {
+          "word": "Glimpsing",
+          "display_index": 0,
+          "start": 88.277,
+          "end": 89.035
+        },
+        {
+          "word": "my",
+          "display_index": 1,
+          "start": 89.035,
+          "end": 89.557
+        },
+        {
+          "word": "father's",
+          "display_index": 2,
+          "start": 89.557,
+          "end": 90.197
+        },
+        {
+          "word": "past",
+          "display_index": 3,
+          "start": 90.197,
+          "end": 90.818
+        },
+        {
+          "word": "filled",
+          "display_index": 4,
+          "start": 90.818,
+          "end": 91.298
+        },
+        {
+          "word": "me",
+          "display_index": 5,
+          "start": 91.298,
+          "end": 93.598
+        },
+        {
+          "word": "with",
+          "display_index": 6,
+          "start": 93.598,
+          "end": 93.823
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 93.823,
+          "end": 93.978
+        },
+        {
+          "word": "new",
+          "display_index": 8,
+          "start": 93.978,
+          "end": 94.378
+        },
+        {
+          "word": "respect",
+          "display_index": 9,
+          "start": 94.378,
+          "end": 95.098
+        },
+        {
+          "word": "for",
+          "display_index": 10,
+          "start": 95.098,
+          "end": 95.398
+        },
+        {
+          "word": "him.",
+          "display_index": 11,
+          "start": 95.398,
+          "end": 96.898
+        }
+      ],
+      "start": 88.277,
+      "end": 96.898
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

@@ -1,0 +1,178 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H103.md",
+  "audio": "高校生編/suno_ready/generated/audio/H103/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 144.4,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0049,
+  "expected_words": 205,
+  "transcribed_words": 206,
+  "matched_words": 203,
+  "coverage": 0.9902,
+  "precision": 0.9854,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 204,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 7,
+      "length": 1,
+      "words": [
+        "bookshop"
+      ]
+    },
+    {
+      "start": 199,
+      "length": 1,
+      "words": [
+        "sixty"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 7,
+      "actual_start": 7,
+      "expected": [
+        "bookshop"
+      ],
+      "actual": [
+        "book",
+        "shop"
+      ],
+      "actual_confidence": 0.6915,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 30,
+      "actual_start": 31,
+      "expected": [],
+      "actual": [
+        "and"
+      ],
+      "actual_confidence": 0.0322
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 199,
+      "actual_start": 201,
+      "expected": [
+        "sixty"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "On Sunday afternoon I visited an old book shop in a corner at the back of the store wooden shelves reached up to the ceiling the owner was an elderly man And with white hair, he greeted me lightly And returned to his reading Inside the shop only the sound of turning pages And the ticking of an old clock echoed I stopped before a shelf of poetry and picked up a volume The book had not been touched by anyone for a long time And when I opened it, a peculiar scent rose As I turned the pages, I noticed a bookmark tucked inside An old handwritten note was on it I give this book to you, June 1968 From father, I let out a sigh A book once handed from a father to his son had traveled for more than half a century And was about to pass into my hands a stranger I told the owner that I wanted to purchase the book He glanced at the note and after a moment of silence Quietly remarked, this is something valuable back home I read the poems outside rain was gradually beginning to fall The words within the book across 60 years had reached me now",
+  "segments": [
+    {
+      "start": 9.32,
+      "end": 17.24,
+      "text": "On Sunday afternoon I visited an old book shop in a corner at the back of the"
+    },
+    {
+      "start": 17.24,
+      "end": 23.58,
+      "text": "store wooden shelves reached up to the ceiling the owner was an elderly man"
+    },
+    {
+      "start": 23.58,
+      "end": 26.36,
+      "text": "And with white hair, he greeted me lightly"
+    },
+    {
+      "start": 27.4,
+      "end": 30.04,
+      "text": "And returned to his reading"
+    },
+    {
+      "start": 30.58,
+      "end": 34.88,
+      "text": "Inside the shop only the sound of turning pages"
+    },
+    {
+      "start": 34.88,
+      "end": 38.72,
+      "text": "And the ticking of an old clock echoed"
+    },
+    {
+      "start": 38.72,
+      "end": 44.52,
+      "text": "I stopped before a shelf of poetry and picked up a volume"
+    },
+    {
+      "start": 44.52,
+      "end": 49.74,
+      "text": "The book had not been touched by anyone for a long time"
+    },
+    {
+      "start": 49.74,
+      "end": 54.84,
+      "text": "And when I opened it, a peculiar scent rose"
+    },
+    {
+      "start": 57.28,
+      "end": 62.14,
+      "text": "As I turned the pages, I noticed a bookmark tucked inside"
+    },
+    {
+      "start": 62.14,
+      "end": 64.96,
+      "text": "An old handwritten note was on it"
+    },
+    {
+      "start": 64.96,
+      "end": 69.5,
+      "text": "I give this book to you, June 1968"
+    },
+    {
+      "start": 70.24,
+      "end": 74.8,
+      "text": "From father, I let out a sigh"
+    },
+    {
+      "start": 75.68,
+      "end": 83.68,
+      "text": "A book once handed from a father to his son had traveled for more than half a century"
+    },
+    {
+      "start": 85.14,
+      "end": 89.56,
+      "text": "And was about to pass into my hands a stranger"
+    },
+    {
+      "start": 89.56,
+      "end": 96.62,
+      "text": "I told the owner that I wanted to purchase the book"
+    },
+    {
+      "start": 98.86,
+      "end": 105.42,
+      "text": "He glanced at the note and after a moment of silence"
+    },
+    {
+      "start": 106.1,
+      "end": 111.78,
+      "text": "Quietly remarked, this is something valuable back home"
+    },
+    {
+      "start": 111.78,
+      "end": 120.08,
+      "text": "I read the poems outside rain was gradually beginning to fall"
+    },
+    {
+      "start": 120.08,
+      "end": 130.96,
+      "text": "The words within the book across 60 years had reached me now"
+    }
+  ]
+}

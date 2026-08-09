@@ -1,0 +1,182 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H007.md",
+  "audio": "高校生編/suno_ready/generated/audio/H007/candidate1-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 114.64,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0134,
+  "expected_words": 149,
+  "transcribed_words": 151,
+  "matched_words": 147,
+  "coverage": 0.9866,
+  "precision": 0.9735,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 148,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 61,
+      "length": 1,
+      "words": [
+        "coworkers"
+      ]
+    },
+    {
+      "start": 143,
+      "length": 1,
+      "words": [
+        "lives"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 61,
+      "actual_start": 61,
+      "expected": [
+        "coworkers"
+      ],
+      "actual": [
+        "co",
+        "workers"
+      ],
+      "actual_confidence": 0.0,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 143,
+      "actual_start": 144,
+      "expected": [
+        "lives"
+      ],
+      "actual": [
+        "lies"
+      ],
+      "actual_confidence": 0.0,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 149,
+      "actual_start": 150,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.0
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "On Monday morning I get up at half past six This is my habit In the kitchen I make coffee and open the newspaper That is my daily rhythm At the station I take the train and commute to my office The journey is ordinary In a crowded car, many passengers stand silently I work for a small local company My co-workers are kind and a colleague often laughs loudly Each person carries out their duties At noon we gather for lunch together In the afternoon, I finish one task after another The phone rings and a new request appears Work proceeds in a steady way In the evening, the same common faces return to the station And people rush home Through the train window, I look beyond the tall buildings at the fading sky Within these quiet days, a small sense of purpose lies And I believe in it you",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.28,
+      "text": "On Monday morning I get up at half past six"
+    },
+    {
+      "start": 4.28,
+      "end": 6.2,
+      "text": "This is my habit"
+    },
+    {
+      "start": 9.0,
+      "end": 13.74,
+      "text": "In the kitchen I make coffee and open the newspaper"
+    },
+    {
+      "start": 13.74,
+      "end": 17.62,
+      "text": "That is my daily rhythm"
+    },
+    {
+      "start": 17.62,
+      "end": 24.98,
+      "text": "At the station I take the train and commute to my office"
+    },
+    {
+      "start": 24.98,
+      "end": 28.74,
+      "text": "The journey is ordinary"
+    },
+    {
+      "start": 32.28,
+      "end": 37.1,
+      "text": "In a crowded car, many passengers stand silently"
+    },
+    {
+      "start": 37.1,
+      "end": 41.7,
+      "text": "I work for a small local company"
+    },
+    {
+      "start": 41.7,
+      "end": 46.9,
+      "text": "My co-workers are kind and a colleague often laughs loudly"
+    },
+    {
+      "start": 46.9,
+      "end": 51.12,
+      "text": "Each person carries out their duties"
+    },
+    {
+      "start": 51.12,
+      "end": 56.32,
+      "text": "At noon we gather for lunch together"
+    },
+    {
+      "start": 56.32,
+      "end": 62.86,
+      "text": "In the afternoon, I finish one task after another"
+    },
+    {
+      "start": 65.52,
+      "end": 69.32,
+      "text": "The phone rings and a new request appears"
+    },
+    {
+      "start": 69.92,
+      "end": 73.28,
+      "text": "Work proceeds in a steady way"
+    },
+    {
+      "start": 74.9,
+      "end": 80.56,
+      "text": "In the evening, the same common faces return to the station"
+    },
+    {
+      "start": 80.56,
+      "end": 84.32,
+      "text": "And people rush home"
+    },
+    {
+      "start": 84.32,
+      "end": 93.58,
+      "text": "Through the train window, I look beyond the tall buildings at the fading sky"
+    },
+    {
+      "start": 94.74,
+      "end": 100.98,
+      "text": "Within these quiet days, a small sense of purpose lies"
+    },
+    {
+      "start": 102.4,
+      "end": 104.92,
+      "text": "And I believe in it"
+    },
+    {
+      "start": 114.32,
+      "end": 114.64,
+      "text": "you"
+    }
+  ]
+}

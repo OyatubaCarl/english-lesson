@@ -1,0 +1,157 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H051.md",
+  "audio": "高校生編/suno_ready/generated/audio/H051/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 119.12,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9946,
+  "expected_words": 184,
+  "transcribed_words": 183,
+  "matched_words": 182,
+  "coverage": 0.9891,
+  "precision": 0.9945,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 183,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 12,
+      "length": 1,
+      "words": [
+        "ten"
+      ]
+    },
+    {
+      "start": 34,
+      "length": 1,
+      "words": [
+        "assistance"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 34,
+      "actual_start": 33,
+      "expected": [
+        "assistance"
+      ],
+      "actual": [
+        "assistants"
+      ],
+      "actual_confidence": 0.436,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 12,
+      "actual_start": 12,
+      "expected": [
+        "ten"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "Artificial Intelligence, that is AI, has made remarkable progress over the past 10 years. Algorithms that learn from vast amounts of data now support humans in many fields including medicine, finance, and transportation, diagnostic assistants, self-driving cars, and natural language processing each application is changing our lives in some industries automation has already transformed the landscape of labor but rapid technological progress comes with serious risks as well invasion of privacy the Loss of jobs, the spread of misinformation Our society must face these consequences head on Who bears the responsibility for an algorithm? When a self-driving car causes an accident Who is held accountable in court? These questions still do not have complete answers. Governments around the world have begun to develop regulations for AI. The European Union has already established a comprehensive law concerning the ethical use of AI technology in itself is neutral. Whether it is used for an ethical purpose or not depends on our human judgment. AI must exist, not so that it can think in our place. But so that we can think better than before.",
+  "segments": [
+    {
+      "start": 2.62,
+      "end": 9.34,
+      "text": "Artificial Intelligence, that is AI, has made remarkable progress over the past 10 years."
+    },
+    {
+      "start": 11.36,
+      "end": 17.16,
+      "text": "Algorithms that learn from vast amounts of data now support humans in many fields including"
+    },
+    {
+      "start": 17.16,
+      "end": 27.92,
+      "text": "medicine, finance, and transportation, diagnostic assistants, self-driving cars, and natural"
+    },
+    {
+      "start": 27.92,
+      "end": 36.56,
+      "text": "language processing each application is changing our lives in some industries"
+    },
+    {
+      "start": 36.56,
+      "end": 41.5,
+      "text": "automation has already transformed the landscape of labor but rapid"
+    },
+    {
+      "start": 41.5,
+      "end": 47.88,
+      "text": "technological progress comes with serious risks as well invasion of privacy the"
+    },
+    {
+      "start": 47.88,
+      "end": 50.6,
+      "text": "Loss of jobs, the spread of misinformation"
+    },
+    {
+      "start": 60.88,
+      "end": 64.46,
+      "text": "Our society must face these consequences head on"
+    },
+    {
+      "start": 64.46,
+      "end": 68.52,
+      "text": "Who bears the responsibility for an algorithm?"
+    },
+    {
+      "start": 69.64,
+      "end": 72.3,
+      "text": "When a self-driving car causes an accident"
+    },
+    {
+      "start": 72.88,
+      "end": 74.84,
+      "text": "Who is held accountable in court?"
+    },
+    {
+      "start": 74.84,
+      "end": 79.02,
+      "text": "These questions still do not have complete answers."
+    },
+    {
+      "start": 79.6,
+      "end": 84.32,
+      "text": "Governments around the world have begun to develop regulations for AI."
+    },
+    {
+      "start": 85.96,
+      "end": 92.02,
+      "text": "The European Union has already established a comprehensive law concerning"
+    },
+    {
+      "start": 92.02,
+      "end": 98.1,
+      "text": "the ethical use of AI technology in itself is neutral."
+    },
+    {
+      "start": 102.56,
+      "end": 107.8,
+      "text": "Whether it is used for an ethical purpose or not depends on our human judgment."
+    },
+    {
+      "start": 108.44,
+      "end": 113.88,
+      "text": "AI must exist, not so that it can think in our place."
+    },
+    {
+      "start": 114.34,
+      "end": 118.1,
+      "text": "But so that we can think better than before."
+    }
+  ]
+}

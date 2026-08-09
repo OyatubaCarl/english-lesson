@@ -1,0 +1,68 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+ScaledBorderAndShadow: yes
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Title,Helvetica Neue,76,&H00FFFFFF,&H000000FF,&HAA000000,&H70000000,-1,0,0,0,100,100,1,0,1,4,2,5,100,100,20,1
+Style: TitleJa,Hiragino Sans,45,&H00FFFFFF,&H000000FF,&HAA000000,&H70000000,-1,0,0,0,100,100,1,0,1,3,1,5,100,100,20,1
+Style: Header,Helvetica Neue,30,&H00FFFFFF,&H000000FF,&HAA000000,&H70000000,-1,0,0,0,100,100,0,0,1,2,1,7,48,48,35,1
+Style: English,Helvetica Neue,51,&H00FFFFFF,&H000000FF,&HCC000000,&H00000000,-1,0,0,0,100,100,0,0,1,3,1,2,80,80,155,1
+Style: Japanese,Hiragino Sans,39,&H00D8F3FF,&H000000FF,&HCC000000,&H00000000,-1,0,0,0,100,100,0,0,1,3,1,2,70,70,50,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 2,0:00:00.50,0:00:09.50,Title,,0,0,0,,{\pos(960,465)}H001  Dawn Lake
+Dialogue: 2,0:00:00.50,0:00:09.50,TitleJa,,0,0,0,,{\pos(960,575)}夜明けの湖
+Dialogue: 2,0:00:12.08,0:02:04.68,Header,,0,0,0,,H001  •  Sentence Pattern 1  [S + V]
+Dialogue: 2,0:00:12.08,0:00:16.55,English,,0,0,0,,At dawn, I {\c&H0066D1FF&}stood{\c&H00FFFFFF&} by the lake.
+Dialogue: 2,0:00:12.08,0:00:16.55,Japanese,,0,0,0,,夜明けに、私は湖のほとりに立っていた。
+Dialogue: 2,0:00:16.55,0:00:19.10,English,,0,0,0,,The water {\c&H0066D1FF&}lay{\c&H00FFFFFF&} still.
+Dialogue: 2,0:00:16.55,0:00:19.10,Japanese,,0,0,0,,水面は静まり返っていた。
+Dialogue: 2,0:00:21.38,0:00:27.62,English,,0,0,0,,A gentle mist {\c&H0066D1FF&}drifted{\c&H00FFFFFF&} on the surface.
+Dialogue: 2,0:00:21.38,0:00:27.62,Japanese,,0,0,0,,薄い霧が水面を漂っていた。
+Dialogue: 2,0:00:27.62,0:00:32.48,English,,0,0,0,,The world {\c&H0066D1FF&}breathed{\c&H00FFFFFF&} quietly.
+Dialogue: 2,0:00:27.62,0:00:32.48,Japanese,,0,0,0,,世界は静かに呼吸していた。
+Dialogue: 2,0:00:32.48,0:00:39.64,English,,0,0,0,,The light gradually {\c&H0066D1FF&}appeared{\c&H00FFFFFF&} in the distant sky.
+Dialogue: 2,0:00:32.48,0:00:39.64,Japanese,,0,0,0,,遠くの空に、光が徐々に現れた。
+Dialogue: 2,0:00:39.64,0:00:42.20,English,,0,0,0,,The sun {\c&H0066D1FF&}emerged{\c&H00FFFFFF&}.
+Dialogue: 2,0:00:39.64,0:00:42.20,Japanese,,0,0,0,,太陽が姿を現した。
+Dialogue: 2,0:00:42.20,0:00:46.70,English,,0,0,0,,Its rays {\c&H0066D1FF&}spread{\c&H00FFFFFF&} across the pure air.
+Dialogue: 2,0:00:42.20,0:00:46.70,Japanese,,0,0,0,,その光が澄んだ空気の中に広がった。
+Dialogue: 2,0:00:50.44,0:00:52.18,English,,0,0,0,,No one {\c&H0066D1FF&}spoke{\c&H00FFFFFF&}.
+Dialogue: 2,0:00:50.44,0:00:52.18,Japanese,,0,0,0,,誰も口を開かなかった。
+Dialogue: 2,0:00:52.18,0:00:55.26,English,,0,0,0,,I {\c&H0066D1FF&}gazed{\c&H00FFFFFF&} at the shore.
+Dialogue: 2,0:00:52.18,0:00:55.26,Japanese,,0,0,0,,私は岸辺を見つめた。
+Dialogue: 2,0:00:55.26,0:01:01.00,English,,0,0,0,,A narrow stream {\c&H0066D1FF&}flowed{\c&H00FFFFFF&} near my feet.
+Dialogue: 2,0:00:55.26,0:01:01.00,Japanese,,0,0,0,,足元の近くを細い小川が流れていた。
+Dialogue: 2,0:01:01.00,0:01:04.99,English,,0,0,0,,The water {\c&H0066D1FF&}whispered{\c&H00FFFFFF&} softly.
+Dialogue: 2,0:01:01.00,0:01:04.99,Japanese,,0,0,0,,水は静かにささやいていた。
+Dialogue: 2,0:01:04.99,0:01:08.98,English,,0,0,0,,Birds {\c&H0066D1FF&}sang{\c&H00FFFFFF&} in distant trees.
+Dialogue: 2,0:01:04.99,0:01:08.98,Japanese,,0,0,0,,遠くの木々で鳥たちが歌っていた。
+Dialogue: 2,0:01:08.98,0:01:18.04,English,,0,0,0,,A fish {\c&H0066D1FF&}jumped{\c&H00FFFFFF&}, and gentle ripples {\c&H0066D1FF&}ran{\c&H00FFFFFF&} outward\Nfrom the edge.
+Dialogue: 2,0:01:08.98,0:01:18.04,Japanese,,0,0,0,,一匹の魚が跳ね、穏やかな波紋が水際から外へ広がった。
+Dialogue: 2,0:01:18.04,0:01:24.52,English,,0,0,0,,From the depths of the forest, a faint presence {\c&H0066D1FF&}moved{\c&H00FFFFFF&}.
+Dialogue: 2,0:01:18.04,0:01:24.52,Japanese,,0,0,0,,森の奥深くで、かすかな気配が動いた。
+Dialogue: 2,0:01:24.52,0:01:26.96,English,,0,0,0,,I {\c&H0066D1FF&}noticed{\c&H00FFFFFF&} a deer.
+Dialogue: 2,0:01:24.52,0:01:26.96,Japanese,,0,0,0,,私は一頭の鹿に気づいた。
+Dialogue: 2,0:01:26.96,0:01:28.92,English,,0,0,0,,It {\c&H0066D1FF&}stood{\c&H00FFFFFF&} still.
+Dialogue: 2,0:01:26.96,0:01:28.92,Japanese,,0,0,0,,それはじっと立っていた。
+Dialogue: 2,0:01:28.92,0:01:34.16,English,,0,0,0,,Then it {\c&H0066D1FF&}vanished{\c&H00FFFFFF&} into the trees.
+Dialogue: 2,0:01:28.92,0:01:34.16,Japanese,,0,0,0,,そして木々の中へ消えた。
+Dialogue: 2,0:01:34.16,0:01:40.20,English,,0,0,0,,I simply {\c&H0066D1FF&}observed{\c&H00FFFFFF&} the landscape in silence.
+Dialogue: 2,0:01:34.16,0:01:40.20,Japanese,,0,0,0,,私はただ、静けさの中でその風景を見つめていた。
+Dialogue: 2,0:01:41.16,0:01:45.34,English,,0,0,0,,Nothing {\c&H0066D1FF&}spoke{\c&H00FFFFFF&}, yet everything {\c&H0066D1FF&}lived{\c&H00FFFFFF&}.
+Dialogue: 2,0:01:41.16,0:01:45.34,Japanese,,0,0,0,,何も語らなかったが、すべてが生きていた。
+Dialogue: 2,0:01:46.16,0:01:48.64,English,,0,0,0,,The morning {\c&H0066D1FF&}continued{\c&H00FFFFFF&}.
+Dialogue: 2,0:01:46.16,0:01:48.64,Japanese,,0,0,0,,朝は続いていた。
+Dialogue: 2,0:01:50.74,0:01:54.44,English,,0,0,0,,A new day {\c&H0066D1FF&}arose{\c&H00FFFFFF&}.
+Dialogue: 2,0:01:50.74,0:01:54.44,Japanese,,0,0,0,,新しい一日が始まった。
+Dialogue: 2,0:01:56.90,0:02:00.08,English,,0,0,0,,I {\c&H0066D1FF&}remained{\c&H00FFFFFF&} there.
+Dialogue: 2,0:01:56.90,0:02:00.08,Japanese,,0,0,0,,私はそこに残っていた。
+Dialogue: 2,0:02:01.68,0:02:04.48,English,,0,0,0,,Time {\c&H0066D1FF&}passed{\c&H00FFFFFF&}.
+Dialogue: 2,0:02:01.68,0:02:04.48,Japanese,,0,0,0,,時が過ぎた。
+Dialogue: 2,0:02:05.98,0:02:17.04,Title,,0,0,0,,{\pos(960,465)}H001  Dawn Lake
+Dialogue: 2,0:02:05.98,0:02:17.04,TitleJa,,0,0,0,,{\pos(960,575)}夜明けの湖

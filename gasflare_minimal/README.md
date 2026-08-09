@@ -1,6 +1,31 @@
 # GASflare 最小実装
 
-**ボタンを押した回数を、先生のスプレッドシートに記録するだけ。** それ以上のことは何もしない。
+## 正本
+
+- GASflare最小構成: [Googleスプレッドシート](https://docs.google.com/spreadsheets/d/1XaYfKrT_hr2d701SXJVdaewPU9jKqspv09aV_OibFLk/edit)
+- タコスパーティー: [Googleスプレッドシート](https://docs.google.com/spreadsheets/d/1kRLx3I_Nq5s9YaX580XN2unTYXo8ZphxJbqE_w2w4q4/edit)
+
+`gas/.clasp.json` の接続先は認証アカウントによって変わる。上記正本とscriptの紐づきを確認せずに
+`clasp push` / `clasp deploy` を実行しない。teachertacos.comの公開環境では上記2シートを正本として扱う。
+
+### 共通コードを管理するApps Script（2026-08-03）
+
+次の5 projectは、すべて同じ `コード.js` / `Dashboard.html` / `appsscript.json` を使う。
+
+| アプリ | Script ID | 親スプレッドシート | 設定サイトURL |
+|---|---|---|---|
+| タコスパーティー | `1ipgb6IucgebZLommuPWHEgpBQ7uEMTKNrarY_UD-bWnW76Ybsf_6Ct9v` | `1kRLx3I_Nq5s9YaX580XN2unTYXo8ZphxJbqE_w2w4q4` | `https://taco-course.pages.dev/app` |
+| GASflare最小構成 | `1FQT6nFz14tyrgis2Z8Tuux4V78UhT5WgDJ7mSNNKm3_UfVNNwiXYyjZW` | `1XaYfKrT_hr2d701SXJVdaewPU9jKqspv09aV_OibFLk` | `https://gasflare-minimal.pages.dev/` |
+| Caltacos | `1tsU5Y0GozIC8AqxdtjacRXKqKY1yZUVU_yl9Jg6fidV1FIcjFdcp6y4V` | `1Hvm9tHPO5IybISP9YvEskjewtMF_1JdhloLMsBd9d7Q` | `https://tacomath.pages.dev/` |
+| 漢字たこす | `1U7SEPi_M5teGyb8OxBZQ31yzXOOcVGgZtMfrgxY2gu6XhURVm8a5VS6h` | `1eVMqi3mzUhepPQ8VHobYdbtfTDYqus4F-9g2ppN4jFg` | `https://mojisagashi.pages.dev/` |
+| WordTacos | `1p6rKqMS_icPv_S_OQ_U2MAqNoMfxgD7krssFpuK3hI6-uV7DmDWneS7Q` | `1zvoypLpTejgna6TYeFQYAEfTqJx8Cim0aHWJvrQAbJw` | `https://wordtacos.pages.dev/` |
+
+公開deploymentを持つのはGASflare最小構成。既存deployment IDを維持して`@2`へ更新済み。
+残り4件は`@HEAD`のみなので、明示的な公開指示なしにdeploymentを新規作成しない。
+統一前バックアップは `_backups/2026-08-03_before_common_gas/`。
+
+基本機能は、**ボタンを押した回数を先生のスプレッドシートへ記録すること**。
+対応アプリが要求した場合だけ、ログイン連続記録とアイテム残高も同じ生徒アカウントへ保存する。
 
 GASflare（GAS ＋ Cloudflare）の骨格だけを取り出したもの。
 これが動けば、あとは**記録する中身が増えるだけ**で、構造は変わらない。
@@ -79,6 +104,7 @@ npx wrangler@latest pages deploy . --project-name=gasflare-minimal --branch=main
 | ログ | 出来事の生データ（このアプリでは未使用） |
 | students | メール ↔ 不透明ID の対応表 |
 | _data | 集計用（非表示） |
+| _wallet | ログイン連続記録・スペシャルタコス・時間停止ライム（対応アプリ利用時のみ、非表示） |
 | 設定 | サイトURL（コピーで引き継がれる） |
 | **デプロイ管理** | 日時 / URL / Ver。**デプロイし直すたびに1行追記される** |
 
@@ -130,6 +156,20 @@ URLを知られても他人になりすまして書き込むことはできな�
 
 「同期済み」と表示するのは、**GASが受け取った回数を返してきたときだけ**。
 失敗した分は「未同期 +n」のまま残り、次の同期で必ず追いつく。
+
+## ログインボーナスとアイテム
+
+タコスパーティーは、GASflare接続時にログイン日・連続日数・自己ベスト・スペシャルタコス・
+時間停止ライムを `_wallet` シートへ保存する。日付は端末時計ではなく、GAS側の日本時間を使う。
+
+- 同じ学校アカウントなら端末を替えても同じ残高を読み込む
+- 同日ログイン、同じレッスン報酬、同じ「続きから再開」をサーバー側で重複処理しない
+- 通信できない間も学習は続けられるが、アイテムの付与・消費は接続回復後に確定する
+- GASflareを使わない個人モードは、従来どおり端末内だけで記録する
+
+`_wallet` は対応アプリから最初に利用されたとき自動生成される。古いGASコードのままの先生用コピーでは
+アプリが端末内記録へ自動フォールバックするため、アカウント同期を有効にするには最新の
+`gas/コード.js` を貼り直してウェブアプリを再デプロイする。
 
 ## 対応範囲について
 

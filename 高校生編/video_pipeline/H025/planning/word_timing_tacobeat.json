@@ -1,0 +1,774 @@
+{
+  "lesson": "H025",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h025_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H025/candidate2-full.mp3",
+  "source_audio_sha256": "01bc7577dde4e86895b71872a7e4273ce211027b5f5ee77f8000fbbdcd79b0c1",
+  "bpm": 92.0,
+  "exact_word_match": true,
+  "word_count": 113,
+  "line_count": 10,
+  "first_word_start": 8.107,
+  "last_word_end": 79.42,
+  "lines": [
+    {
+      "line": 1,
+      "english": "A small concert was held in the town hall.",
+      "word_timings": [
+        {
+          "word": "A",
+          "display_index": 0,
+          "start": 8.107,
+          "end": 8.202
+        },
+        {
+          "word": "small",
+          "display_index": 1,
+          "start": 8.202,
+          "end": 8.582
+        },
+        {
+          "word": "concert",
+          "display_index": 2,
+          "start": 8.582,
+          "end": 9.222
+        },
+        {
+          "word": "was",
+          "display_index": 3,
+          "start": 9.222,
+          "end": 9.422
+        },
+        {
+          "word": "held",
+          "display_index": 4,
+          "start": 9.422,
+          "end": 9.843
+        },
+        {
+          "word": "in",
+          "display_index": 5,
+          "start": 9.843,
+          "end": 10.05
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 10.05,
+          "end": 10.203
+        },
+        {
+          "word": "town",
+          "display_index": 7,
+          "start": 10.203,
+          "end": 10.583
+        },
+        {
+          "word": "hall.",
+          "display_index": 8,
+          "start": 10.583,
+          "end": 12.023
+        }
+      ],
+      "start": 8.107,
+      "end": 12.023
+    },
+    {
+      "line": 2,
+      "english": "Whoever came could enter with free admission.",
+      "word_timings": [
+        {
+          "word": "Whoever",
+          "display_index": 0,
+          "start": 12.323,
+          "end": 12.803
+        },
+        {
+          "word": "came",
+          "display_index": 1,
+          "start": 12.803,
+          "end": 13.183
+        },
+        {
+          "word": "could",
+          "display_index": 2,
+          "start": 13.183,
+          "end": 13.423
+        },
+        {
+          "word": "enter",
+          "display_index": 3,
+          "start": 13.423,
+          "end": 15.064
+        },
+        {
+          "word": "with",
+          "display_index": 4,
+          "start": 15.064,
+          "end": 15.384
+        },
+        {
+          "word": "free",
+          "display_index": 5,
+          "start": 15.384,
+          "end": 15.784
+        },
+        {
+          "word": "admission.",
+          "display_index": 6,
+          "start": 15.784,
+          "end": 17.224
+        }
+      ],
+      "start": 12.323,
+      "end": 17.224
+    },
+    {
+      "line": 3,
+      "english": "Whoever performed was warmly welcomed by the audience.",
+      "word_timings": [
+        {
+          "word": "Whoever",
+          "display_index": 0,
+          "start": 17.524,
+          "end": 18.025
+        },
+        {
+          "word": "performed",
+          "display_index": 1,
+          "start": 18.025,
+          "end": 18.585
+        },
+        {
+          "word": "was",
+          "display_index": 2,
+          "start": 18.585,
+          "end": 18.765
+        },
+        {
+          "word": "warmly",
+          "display_index": 3,
+          "start": 18.765,
+          "end": 19.245
+        },
+        {
+          "word": "welcomed",
+          "display_index": 4,
+          "start": 19.245,
+          "end": 19.865
+        },
+        {
+          "word": "by",
+          "display_index": 5,
+          "start": 19.865,
+          "end": 20.362
+        },
+        {
+          "word": "the",
+          "display_index": 6,
+          "start": 20.362,
+          "end": 20.665
+        },
+        {
+          "word": "audience.",
+          "display_index": 7,
+          "start": 20.665,
+          "end": 22.148
+        }
+      ],
+      "start": 17.524,
+      "end": 22.148
+    },
+    {
+      "line": 4,
+      "english": "The first to perform was a girl of ten, holding a violin.",
+      "word_timings": [
+        {
+          "word": "The",
+          "display_index": 0,
+          "start": 22.448,
+          "end": 22.566
+        },
+        {
+          "word": "first",
+          "display_index": 1,
+          "start": 22.566,
+          "end": 22.921
+        },
+        {
+          "word": "to",
+          "display_index": 2,
+          "start": 22.921,
+          "end": 23.046
+        },
+        {
+          "word": "perform",
+          "display_index": 3,
+          "start": 23.046,
+          "end": 23.606
+        },
+        {
+          "word": "was",
+          "display_index": 4,
+          "start": 23.606,
+          "end": 23.738
+        },
+        {
+          "word": "a",
+          "display_index": 5,
+          "start": 23.738,
+          "end": 23.906
+        },
+        {
+          "word": "girl",
+          "display_index": 6,
+          "start": 23.906,
+          "end": 24.246
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 24.246,
+          "end": 24.366
+        },
+        {
+          "word": "ten,",
+          "display_index": 8,
+          "start": 24.366,
+          "end": 25.166
+        },
+        {
+          "word": "holding",
+          "display_index": 9,
+          "start": 25.166,
+          "end": 25.672
+        },
+        {
+          "word": "a",
+          "display_index": 10,
+          "start": 25.672,
+          "end": 25.847
+        },
+        {
+          "word": "violin.",
+          "display_index": 11,
+          "start": 25.847,
+          "end": 27.347
+        }
+      ],
+      "start": 22.448,
+      "end": 27.347
+    },
+    {
+      "line": 5,
+      "english": "When she finished, however softly she played, every note reached the listeners in the room.",
+      "word_timings": [
+        {
+          "word": "When",
+          "display_index": 0,
+          "start": 28.747,
+          "end": 28.927
+        },
+        {
+          "word": "she",
+          "display_index": 1,
+          "start": 28.927,
+          "end": 29.087
+        },
+        {
+          "word": "finished,",
+          "display_index": 2,
+          "start": 29.087,
+          "end": 29.628
+        },
+        {
+          "word": "however",
+          "display_index": 3,
+          "start": 29.628,
+          "end": 30.228
+        },
+        {
+          "word": "softly",
+          "display_index": 4,
+          "start": 30.228,
+          "end": 30.748
+        },
+        {
+          "word": "she",
+          "display_index": 5,
+          "start": 30.748,
+          "end": 31.008
+        },
+        {
+          "word": "played,",
+          "display_index": 6,
+          "start": 31.008,
+          "end": 31.488
+        },
+        {
+          "word": "every",
+          "display_index": 7,
+          "start": 31.488,
+          "end": 31.708
+        },
+        {
+          "word": "note",
+          "display_index": 8,
+          "start": 31.708,
+          "end": 32.048
+        },
+        {
+          "word": "reached",
+          "display_index": 9,
+          "start": 32.048,
+          "end": 32.242
+        },
+        {
+          "word": "the",
+          "display_index": 10,
+          "start": 32.242,
+          "end": 32.388
+        },
+        {
+          "word": "listeners",
+          "display_index": 11,
+          "start": 32.388,
+          "end": 33.108
+        },
+        {
+          "word": "in",
+          "display_index": 12,
+          "start": 33.108,
+          "end": 33.384
+        },
+        {
+          "word": "the",
+          "display_index": 13,
+          "start": 33.384,
+          "end": 33.569
+        },
+        {
+          "word": "room.",
+          "display_index": 14,
+          "start": 33.569,
+          "end": 34.209
+        }
+      ],
+      "start": 28.747,
+      "end": 34.209
+    },
+    {
+      "line": 6,
+      "english": "Applause rose several times.",
+      "word_timings": [
+        {
+          "word": "Applause",
+          "display_index": 0,
+          "start": 34.209,
+          "end": 34.809
+        },
+        {
+          "word": "rose",
+          "display_index": 1,
+          "start": 34.809,
+          "end": 35.629
+        },
+        {
+          "word": "several",
+          "display_index": 2,
+          "start": 35.629,
+          "end": 36.549
+        },
+        {
+          "word": "times.",
+          "display_index": 3,
+          "start": 36.549,
+          "end": 38.049
+        }
+      ],
+      "start": 34.209,
+      "end": 38.049
+    },
+    {
+      "line": 7,
+      "english": "Whichever movement she played, her tone was pure.",
+      "word_timings": [
+        {
+          "word": "Whichever",
+          "display_index": 0,
+          "start": 39.05,
+          "end": 39.57
+        },
+        {
+          "word": "movement",
+          "display_index": 1,
+          "start": 39.57,
+          "end": 40.19
+        },
+        {
+          "word": "she",
+          "display_index": 2,
+          "start": 40.19,
+          "end": 40.41
+        },
+        {
+          "word": "played,",
+          "display_index": 3,
+          "start": 40.41,
+          "end": 41.811
+        },
+        {
+          "word": "her",
+          "display_index": 4,
+          "start": 41.811,
+          "end": 42.051
+        },
+        {
+          "word": "tone",
+          "display_index": 5,
+          "start": 42.051,
+          "end": 44.111
+        },
+        {
+          "word": "was",
+          "display_index": 6,
+          "start": 44.111,
+          "end": 44.351
+        },
+        {
+          "word": "pure.",
+          "display_index": 7,
+          "start": 44.351,
+          "end": 45.851
+        }
+      ],
+      "start": 39.05,
+      "end": 45.851
+    },
+    {
+      "line": 8,
+      "english": "Whoever listened could not help but admire the purity of her sound.",
+      "word_timings": [
+        {
+          "word": "Whoever",
+          "display_index": 0,
+          "start": 46.912,
+          "end": 47.392
+        },
+        {
+          "word": "listened",
+          "display_index": 1,
+          "start": 47.392,
+          "end": 47.852
+        },
+        {
+          "word": "could",
+          "display_index": 2,
+          "start": 47.852,
+          "end": 48.212
+        },
+        {
+          "word": "not",
+          "display_index": 3,
+          "start": 48.212,
+          "end": 48.512
+        },
+        {
+          "word": "help",
+          "display_index": 4,
+          "start": 48.512,
+          "end": 48.872
+        },
+        {
+          "word": "but",
+          "display_index": 5,
+          "start": 48.872,
+          "end": 49.233
+        },
+        {
+          "word": "admire",
+          "display_index": 6,
+          "start": 49.233,
+          "end": 49.706
+        },
+        {
+          "word": "the",
+          "display_index": 7,
+          "start": 49.706,
+          "end": 49.873
+        },
+        {
+          "word": "purity",
+          "display_index": 8,
+          "start": 49.873,
+          "end": 50.873
+        },
+        {
+          "word": "of",
+          "display_index": 9,
+          "start": 50.873,
+          "end": 51.013
+        },
+        {
+          "word": "her",
+          "display_index": 10,
+          "start": 51.013,
+          "end": 51.273
+        },
+        {
+          "word": "sound.",
+          "display_index": 11,
+          "start": 51.273,
+          "end": 51.793
+        }
+      ],
+      "start": 46.912,
+      "end": 51.793
+    },
+    {
+      "line": 9,
+      "english": "That evening, the hall was more peaceful than I had ever seen, and people exchanged smile after smile with one another.",
+      "word_timings": [
+        {
+          "word": "That",
+          "display_index": 0,
+          "start": 51.793,
+          "end": 52.053
+        },
+        {
+          "word": "evening,",
+          "display_index": 1,
+          "start": 52.053,
+          "end": 53.112
+        },
+        {
+          "word": "the",
+          "display_index": 2,
+          "start": 53.112,
+          "end": 53.234
+        },
+        {
+          "word": "hall",
+          "display_index": 3,
+          "start": 53.234,
+          "end": 53.594
+        },
+        {
+          "word": "was",
+          "display_index": 4,
+          "start": 53.594,
+          "end": 53.794
+        },
+        {
+          "word": "more",
+          "display_index": 5,
+          "start": 53.794,
+          "end": 54.034
+        },
+        {
+          "word": "peaceful",
+          "display_index": 6,
+          "start": 54.034,
+          "end": 54.774
+        },
+        {
+          "word": "than",
+          "display_index": 7,
+          "start": 54.774,
+          "end": 55.056
+        },
+        {
+          "word": "I",
+          "display_index": 8,
+          "start": 55.056,
+          "end": 55.136
+        },
+        {
+          "word": "had",
+          "display_index": 9,
+          "start": 55.114,
+          "end": 55.314
+        },
+        {
+          "word": "ever",
+          "display_index": 10,
+          "start": 55.314,
+          "end": 55.674
+        },
+        {
+          "word": "seen,",
+          "display_index": 11,
+          "start": 55.674,
+          "end": 57.555
+        },
+        {
+          "word": "and",
+          "display_index": 12,
+          "start": 57.555,
+          "end": 57.795
+        },
+        {
+          "word": "people",
+          "display_index": 13,
+          "start": 57.795,
+          "end": 58.855
+        },
+        {
+          "word": "exchanged",
+          "display_index": 14,
+          "start": 58.855,
+          "end": 59.755
+        },
+        {
+          "word": "smile",
+          "display_index": 15,
+          "start": 59.755,
+          "end": 61.196
+        },
+        {
+          "word": "after",
+          "display_index": 16,
+          "start": 61.196,
+          "end": 61.636
+        },
+        {
+          "word": "smile",
+          "display_index": 17,
+          "start": 61.636,
+          "end": 62.076
+        },
+        {
+          "word": "with",
+          "display_index": 18,
+          "start": 62.076,
+          "end": 62.436
+        },
+        {
+          "word": "one",
+          "display_index": 19,
+          "start": 62.436,
+          "end": 62.636
+        },
+        {
+          "word": "another.",
+          "display_index": 20,
+          "start": 62.636,
+          "end": 64.136
+        }
+      ],
+      "start": 51.793,
+      "end": 64.136
+    },
+    {
+      "line": 10,
+      "english": "This kind of place, whenever it exists, is a small community tradition that I want to treasure.",
+      "word_timings": [
+        {
+          "word": "This",
+          "display_index": 0,
+          "start": 67.257,
+          "end": 67.577
+        },
+        {
+          "word": "kind",
+          "display_index": 1,
+          "start": 67.577,
+          "end": 67.937
+        },
+        {
+          "word": "of",
+          "display_index": 2,
+          "start": 67.937,
+          "end": 68.057
+        },
+        {
+          "word": "place,",
+          "display_index": 3,
+          "start": 68.057,
+          "end": 69.398
+        },
+        {
+          "word": "whenever",
+          "display_index": 4,
+          "start": 69.398,
+          "end": 70.158
+        },
+        {
+          "word": "it",
+          "display_index": 5,
+          "start": 70.158,
+          "end": 70.418
+        },
+        {
+          "word": "exists,",
+          "display_index": 6,
+          "start": 70.418,
+          "end": 72.532
+        },
+        {
+          "word": "is",
+          "display_index": 7,
+          "start": 72.532,
+          "end": 72.63
+        },
+        {
+          "word": "a",
+          "display_index": 8,
+          "start": 72.63,
+          "end": 72.759
+        },
+        {
+          "word": "small",
+          "display_index": 9,
+          "start": 72.759,
+          "end": 73.299
+        },
+        {
+          "word": "community",
+          "display_index": 10,
+          "start": 73.299,
+          "end": 74.659
+        },
+        {
+          "word": "tradition",
+          "display_index": 11,
+          "start": 74.659,
+          "end": 77.14
+        },
+        {
+          "word": "that",
+          "display_index": 12,
+          "start": 77.14,
+          "end": 77.307
+        },
+        {
+          "word": "I",
+          "display_index": 13,
+          "start": 77.307,
+          "end": 77.5
+        },
+        {
+          "word": "want",
+          "display_index": 14,
+          "start": 77.5,
+          "end": 77.765
+        },
+        {
+          "word": "to",
+          "display_index": 15,
+          "start": 77.765,
+          "end": 77.92
+        },
+        {
+          "word": "treasure.",
+          "display_index": 16,
+          "start": 77.92,
+          "end": 79.42
+        }
+      ],
+      "start": 67.257,
+      "end": 79.42
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

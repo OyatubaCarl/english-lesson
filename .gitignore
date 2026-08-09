@@ -28,6 +28,10 @@ music/
 *.flac
 *.zip
 *.7z
+*.tar
+*.gz
+*.tgz
+*.json3
 
 # Local speech models and dictionaries are reproducible dependencies.
 *.onnx
@@ -56,13 +60,18 @@ descriptions/
 # Temporary renders, local archives, and downloaded publication copies.
 tmp*/
 **/tmp*/
+.cache/
+**/.cache/
 backups/
 **/backups/
+_backups/
+**/_backups/
 uploaded-videos/
 *.bak
 *.bak-*
 *.backup
 *.orig
+**/youtube_reference/*.info.json
 
 # Build / deploy artifacts (must NOT be committed)
 dist/
@@ -77,6 +86,16 @@ credentials*.json*
 client_secret*.json*
 *.pem
 *.key
+
+# Generated lesson-video artwork stays local; source scripts and plans remain trackable.
+中学生編/**/*.png
+中学生編/**/*.jpg
+中学生編/**/*.jpeg
+中学生編/**/*.webp
+高校生編/**/*.png
+高校生編/**/*.jpg
+高校生編/**/*.jpeg
+高校生編/**/*.webp
 
 # 中学生編レッスン動画・音声（YouTubeから取得。容量大のため管理外）
 中学生編/videos/*.mp4

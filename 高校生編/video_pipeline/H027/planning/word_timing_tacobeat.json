@@ -1,0 +1,986 @@
+{
+  "lesson": "H027",
+  "method": "TacoBeat: exact adopted lyrics + MMS_FA forced alignment + onset snapping",
+  "source_chart": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/video_pipeline/tacobeat_adopted/charts/h027_adopted.js",
+  "source_audio": "/Users/masaki/Documents/ClaudeCode/英語学習教材作成/高校生編/suno_ready/generated/audio/H027/candidate1-full.mp3",
+  "source_audio_sha256": "9a4903e70828347d8637d261ed25c366bcd6e632680a4a7b7d3da071ea5c1262",
+  "bpm": 76.26,
+  "exact_word_match": true,
+  "word_count": 147,
+  "line_count": 11,
+  "first_word_start": 11.902,
+  "last_word_end": 106.259,
+  "lines": [
+    {
+      "line": 1,
+      "english": "If I had sent the letter that day, everything might have been different.",
+      "word_timings": [
+        {
+          "word": "If",
+          "display_index": 0,
+          "start": 11.902,
+          "end": 12.241
+        },
+        {
+          "word": "I",
+          "display_index": 1,
+          "start": 12.241,
+          "end": 12.502
+        },
+        {
+          "word": "had",
+          "display_index": 2,
+          "start": 12.502,
+          "end": 12.862
+        },
+        {
+          "word": "sent",
+          "display_index": 3,
+          "start": 12.862,
+          "end": 13.509
+        },
+        {
+          "word": "the",
+          "display_index": 4,
+          "start": 13.509,
+          "end": 13.702
+        },
+        {
+          "word": "letter",
+          "display_index": 5,
+          "start": 13.702,
+          "end": 14.103
+        },
+        {
+          "word": "that",
+          "display_index": 6,
+          "start": 14.103,
+          "end": 14.483
+        },
+        {
+          "word": "day,",
+          "display_index": 7,
+          "start": 14.483,
+          "end": 15.343
+        },
+        {
+          "word": "everything",
+          "display_index": 8,
+          "start": 15.343,
+          "end": 16.083
+        },
+        {
+          "word": "might",
+          "display_index": 9,
+          "start": 16.083,
+          "end": 16.523
+        },
+        {
+          "word": "have",
+          "display_index": 10,
+          "start": 16.523,
+          "end": 16.703
+        },
+        {
+          "word": "been",
+          "display_index": 11,
+          "start": 16.703,
+          "end": 17.283
+        },
+        {
+          "word": "different.",
+          "display_index": 12,
+          "start": 17.283,
+          "end": 18.654
+        }
+      ],
+      "start": 11.902,
+      "end": 18.654
+    },
+    {
+      "line": 2,
+      "english": "My childhood friend had moved to a distant town.",
+      "word_timings": [
+        {
+          "word": "My",
+          "display_index": 0,
+          "start": 18.954,
+          "end": 19.243
+        },
+        {
+          "word": "childhood",
+          "display_index": 1,
+          "start": 19.243,
+          "end": 19.984
+        },
+        {
+          "word": "friend",
+          "display_index": 2,
+          "start": 19.984,
+          "end": 20.484
+        },
+        {
+          "word": "had",
+          "display_index": 3,
+          "start": 20.484,
+          "end": 20.664
+        },
+        {
+          "word": "moved",
+          "display_index": 4,
+          "start": 20.664,
+          "end": 21.202
+        },
+        {
+          "word": "to",
+          "display_index": 5,
+          "start": 21.202,
+          "end": 21.433
+        },
+        {
+          "word": "a",
+          "display_index": 6,
+          "start": 21.433,
+          "end": 21.624
+        },
+        {
+          "word": "distant",
+          "display_index": 7,
+          "start": 21.624,
+          "end": 22.364
+        },
+        {
+          "word": "town.",
+          "display_index": 8,
+          "start": 22.364,
+          "end": 23.864
+        }
+      ],
+      "start": 18.954,
+      "end": 23.864
+    },
+    {
+      "line": 3,
+      "english": "All I had to do was write a single word of thanks.",
+      "word_timings": [
+        {
+          "word": "All",
+          "display_index": 0,
+          "start": 24.884,
+          "end": 25.33
+        },
+        {
+          "word": "I",
+          "display_index": 1,
+          "start": 25.33,
+          "end": 25.41
+        },
+        {
+          "word": "had",
+          "display_index": 2,
+          "start": 25.385,
+          "end": 25.998
+        },
+        {
+          "word": "to",
+          "display_index": 3,
+          "start": 25.998,
+          "end": 26.205
+        },
+        {
+          "word": "do",
+          "display_index": 4,
+          "start": 26.205,
+          "end": 26.765
+        },
+        {
+          "word": "was",
+          "display_index": 5,
+          "start": 26.765,
+          "end": 27.005
+        },
+        {
+          "word": "write",
+          "display_index": 6,
+          "start": 27.005,
+          "end": 27.715
+        },
+        {
+          "word": "a",
+          "display_index": 7,
+          "start": 27.715,
+          "end": 27.825
+        },
+        {
+          "word": "single",
+          "display_index": 8,
+          "start": 27.825,
+          "end": 28.785
+        },
+        {
+          "word": "word",
+          "display_index": 9,
+          "start": 28.785,
+          "end": 29.685
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 29.685,
+          "end": 29.925
+        },
+        {
+          "word": "thanks.",
+          "display_index": 11,
+          "start": 29.925,
+          "end": 31.425
+        }
+      ],
+      "start": 24.884,
+      "end": 31.425
+    },
+    {
+      "line": 4,
+      "english": "A single letter would have been enough.",
+      "word_timings": [
+        {
+          "word": "A",
+          "display_index": 0,
+          "start": 31.901,
+          "end": 32.026
+        },
+        {
+          "word": "single",
+          "display_index": 1,
+          "start": 32.026,
+          "end": 32.826
+        },
+        {
+          "word": "letter",
+          "display_index": 2,
+          "start": 32.826,
+          "end": 33.606
+        },
+        {
+          "word": "would",
+          "display_index": 3,
+          "start": 33.606,
+          "end": 33.886
+        },
+        {
+          "word": "have",
+          "display_index": 4,
+          "start": 33.886,
+          "end": 34.166
+        },
+        {
+          "word": "been",
+          "display_index": 5,
+          "start": 34.166,
+          "end": 34.906
+        },
+        {
+          "word": "enough.",
+          "display_index": 6,
+          "start": 34.906,
+          "end": 36.406
+        }
+      ],
+      "start": 31.901,
+      "end": 36.406
+    },
+    {
+      "line": 5,
+      "english": "If I had had a little more courage at the time, the letter would have reached her, and she might have remembered me for longer.",
+      "word_timings": [
+        {
+          "word": "If",
+          "display_index": 0,
+          "start": 37.567,
+          "end": 38.067
+        },
+        {
+          "word": "I",
+          "display_index": 1,
+          "start": 38.067,
+          "end": 38.147
+        },
+        {
+          "word": "had",
+          "display_index": 2,
+          "start": 38.147,
+          "end": 38.347
+        },
+        {
+          "word": "had",
+          "display_index": 3,
+          "start": 38.347,
+          "end": 39.175
+        },
+        {
+          "word": "a",
+          "display_index": 4,
+          "start": 39.175,
+          "end": 39.347
+        },
+        {
+          "word": "little",
+          "display_index": 5,
+          "start": 39.347,
+          "end": 39.727
+        },
+        {
+          "word": "more",
+          "display_index": 6,
+          "start": 39.727,
+          "end": 40.047
+        },
+        {
+          "word": "courage",
+          "display_index": 7,
+          "start": 40.047,
+          "end": 40.847
+        },
+        {
+          "word": "at",
+          "display_index": 8,
+          "start": 40.847,
+          "end": 41.137
+        },
+        {
+          "word": "the",
+          "display_index": 9,
+          "start": 41.137,
+          "end": 41.267
+        },
+        {
+          "word": "time,",
+          "display_index": 10,
+          "start": 41.267,
+          "end": 42.353
+        },
+        {
+          "word": "the",
+          "display_index": 11,
+          "start": 42.353,
+          "end": 42.508
+        },
+        {
+          "word": "letter",
+          "display_index": 12,
+          "start": 42.508,
+          "end": 42.888
+        },
+        {
+          "word": "would",
+          "display_index": 13,
+          "start": 42.888,
+          "end": 43.128
+        },
+        {
+          "word": "have",
+          "display_index": 14,
+          "start": 43.128,
+          "end": 43.328
+        },
+        {
+          "word": "reached",
+          "display_index": 15,
+          "start": 43.328,
+          "end": 43.728
+        },
+        {
+          "word": "her,",
+          "display_index": 16,
+          "start": 43.728,
+          "end": 44.268
+        },
+        {
+          "word": "and",
+          "display_index": 17,
+          "start": 44.268,
+          "end": 44.448
+        },
+        {
+          "word": "she",
+          "display_index": 18,
+          "start": 44.448,
+          "end": 44.688
+        },
+        {
+          "word": "might",
+          "display_index": 19,
+          "start": 44.688,
+          "end": 45.308
+        },
+        {
+          "word": "have",
+          "display_index": 20,
+          "start": 45.308,
+          "end": 45.708
+        },
+        {
+          "word": "remembered",
+          "display_index": 21,
+          "start": 45.708,
+          "end": 46.968
+        },
+        {
+          "word": "me",
+          "display_index": 22,
+          "start": 46.968,
+          "end": 47.549
+        },
+        {
+          "word": "for",
+          "display_index": 23,
+          "start": 47.549,
+          "end": 47.829
+        },
+        {
+          "word": "longer.",
+          "display_index": 24,
+          "start": 47.829,
+          "end": 49.329
+        }
+      ],
+      "start": 37.567,
+      "end": 49.329
+    },
+    {
+      "line": 6,
+      "english": "But I did not put it into words.",
+      "word_timings": [
+        {
+          "word": "But",
+          "display_index": 0,
+          "start": 50.609,
+          "end": 51.01
+        },
+        {
+          "word": "I",
+          "display_index": 1,
+          "start": 51.01,
+          "end": 51.169
+        },
+        {
+          "word": "did",
+          "display_index": 2,
+          "start": 51.169,
+          "end": 51.569
+        },
+        {
+          "word": "not",
+          "display_index": 3,
+          "start": 51.569,
+          "end": 51.929
+        },
+        {
+          "word": "put",
+          "display_index": 4,
+          "start": 51.929,
+          "end": 52.269
+        },
+        {
+          "word": "it",
+          "display_index": 5,
+          "start": 52.269,
+          "end": 52.489
+        },
+        {
+          "word": "into",
+          "display_index": 6,
+          "start": 52.489,
+          "end": 53.17
+        },
+        {
+          "word": "words.",
+          "display_index": 7,
+          "start": 53.17,
+          "end": 53.97
+        }
+      ],
+      "start": 50.609,
+      "end": 53.97
+    },
+    {
+      "line": 7,
+      "english": "I hid my words away, treasuring them too carefully.",
+      "word_timings": [
+        {
+          "word": "I",
+          "display_index": 0,
+          "start": 54.09,
+          "end": 54.25
+        },
+        {
+          "word": "hid",
+          "display_index": 1,
+          "start": 54.25,
+          "end": 54.713
+        },
+        {
+          "word": "my",
+          "display_index": 2,
+          "start": 54.713,
+          "end": 55.05
+        },
+        {
+          "word": "words",
+          "display_index": 3,
+          "start": 55.05,
+          "end": 55.57
+        },
+        {
+          "word": "away,",
+          "display_index": 4,
+          "start": 55.57,
+          "end": 56.97
+        },
+        {
+          "word": "treasuring",
+          "display_index": 5,
+          "start": 56.97,
+          "end": 57.93
+        },
+        {
+          "word": "them",
+          "display_index": 6,
+          "start": 57.93,
+          "end": 58.576
+        },
+        {
+          "word": "too",
+          "display_index": 7,
+          "start": 58.576,
+          "end": 59.351
+        },
+        {
+          "word": "carefully.",
+          "display_index": 8,
+          "start": 59.351,
+          "end": 60.851
+        }
+      ],
+      "start": 54.09,
+      "end": 60.851
+    },
+    {
+      "line": 8,
+      "english": "When I realized it, I no longer knew the address of her town.",
+      "word_timings": [
+        {
+          "word": "When",
+          "display_index": 0,
+          "start": 63.191,
+          "end": 63.631
+        },
+        {
+          "word": "I",
+          "display_index": 1,
+          "start": 63.631,
+          "end": 63.771
+        },
+        {
+          "word": "realized",
+          "display_index": 2,
+          "start": 63.771,
+          "end": 65.032
+        },
+        {
+          "word": "it,",
+          "display_index": 3,
+          "start": 65.032,
+          "end": 65.345
+        },
+        {
+          "word": "I",
+          "display_index": 4,
+          "start": 65.345,
+          "end": 65.532
+        },
+        {
+          "word": "no",
+          "display_index": 5,
+          "start": 65.532,
+          "end": 65.892
+        },
+        {
+          "word": "longer",
+          "display_index": 6,
+          "start": 65.892,
+          "end": 66.812
+        },
+        {
+          "word": "knew",
+          "display_index": 7,
+          "start": 66.812,
+          "end": 67.285
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 67.285,
+          "end": 67.492
+        },
+        {
+          "word": "address",
+          "display_index": 9,
+          "start": 67.492,
+          "end": 68.072
+        },
+        {
+          "word": "of",
+          "display_index": 10,
+          "start": 68.072,
+          "end": 68.272
+        },
+        {
+          "word": "her",
+          "display_index": 11,
+          "start": 68.272,
+          "end": 68.592
+        },
+        {
+          "word": "town.",
+          "display_index": 12,
+          "start": 68.592,
+          "end": 69.312
+        }
+      ],
+      "start": 63.191,
+      "end": 69.312
+    },
+    {
+      "line": 9,
+      "english": "If I had written that one letter, I might have been corresponding with her to this day.",
+      "word_timings": [
+        {
+          "word": "If",
+          "display_index": 0,
+          "start": 69.312,
+          "end": 69.693
+        },
+        {
+          "word": "I",
+          "display_index": 1,
+          "start": 69.693,
+          "end": 69.793
+        },
+        {
+          "word": "had",
+          "display_index": 2,
+          "start": 69.793,
+          "end": 70.013
+        },
+        {
+          "word": "written",
+          "display_index": 3,
+          "start": 70.013,
+          "end": 71.553
+        },
+        {
+          "word": "that",
+          "display_index": 4,
+          "start": 71.553,
+          "end": 72.113
+        },
+        {
+          "word": "one",
+          "display_index": 5,
+          "start": 72.113,
+          "end": 72.773
+        },
+        {
+          "word": "letter,",
+          "display_index": 6,
+          "start": 72.773,
+          "end": 74.954
+        },
+        {
+          "word": "I",
+          "display_index": 7,
+          "start": 74.954,
+          "end": 75.094
+        },
+        {
+          "word": "might",
+          "display_index": 8,
+          "start": 75.094,
+          "end": 75.574
+        },
+        {
+          "word": "have",
+          "display_index": 9,
+          "start": 75.574,
+          "end": 75.894
+        },
+        {
+          "word": "been",
+          "display_index": 10,
+          "start": 75.894,
+          "end": 76.594
+        },
+        {
+          "word": "corresponding",
+          "display_index": 11,
+          "start": 76.594,
+          "end": 78.634
+        },
+        {
+          "word": "with",
+          "display_index": 12,
+          "start": 78.634,
+          "end": 79.014
+        },
+        {
+          "word": "her",
+          "display_index": 13,
+          "start": 79.014,
+          "end": 79.712
+        },
+        {
+          "word": "to",
+          "display_index": 14,
+          "start": 79.712,
+          "end": 80.034
+        },
+        {
+          "word": "this",
+          "display_index": 15,
+          "start": 80.034,
+          "end": 80.575
+        },
+        {
+          "word": "day.",
+          "display_index": 16,
+          "start": 80.575,
+          "end": 81.375
+        }
+      ],
+      "start": 69.312,
+      "end": 81.375
+    },
+    {
+      "line": 10,
+      "english": "Long after, when I heard the news of her marriage, I tasted that small regret once more.",
+      "word_timings": [
+        {
+          "word": "Long",
+          "display_index": 0,
+          "start": 81.375,
+          "end": 81.875
+        },
+        {
+          "word": "after,",
+          "display_index": 1,
+          "start": 81.875,
+          "end": 82.955
+        },
+        {
+          "word": "when",
+          "display_index": 2,
+          "start": 82.955,
+          "end": 83.34
+        },
+        {
+          "word": "I",
+          "display_index": 3,
+          "start": 83.34,
+          "end": 83.475
+        },
+        {
+          "word": "heard",
+          "display_index": 4,
+          "start": 83.475,
+          "end": 83.896
+        },
+        {
+          "word": "the",
+          "display_index": 5,
+          "start": 83.896,
+          "end": 84.095
+        },
+        {
+          "word": "news",
+          "display_index": 6,
+          "start": 84.095,
+          "end": 84.555
+        },
+        {
+          "word": "of",
+          "display_index": 7,
+          "start": 84.555,
+          "end": 84.735
+        },
+        {
+          "word": "her",
+          "display_index": 8,
+          "start": 84.735,
+          "end": 85.255
+        },
+        {
+          "word": "marriage,",
+          "display_index": 9,
+          "start": 85.255,
+          "end": 87.624
+        },
+        {
+          "word": "I",
+          "display_index": 10,
+          "start": 87.624,
+          "end": 87.936
+        },
+        {
+          "word": "tasted",
+          "display_index": 11,
+          "start": 87.936,
+          "end": 88.776
+        },
+        {
+          "word": "that",
+          "display_index": 12,
+          "start": 88.776,
+          "end": 89.216
+        },
+        {
+          "word": "small",
+          "display_index": 13,
+          "start": 89.216,
+          "end": 90.016
+        },
+        {
+          "word": "regret",
+          "display_index": 14,
+          "start": 90.016,
+          "end": 90.876
+        },
+        {
+          "word": "once",
+          "display_index": 15,
+          "start": 90.876,
+          "end": 91.536
+        },
+        {
+          "word": "more.",
+          "display_index": 16,
+          "start": 91.536,
+          "end": 93.036
+        }
+      ],
+      "start": 81.375,
+      "end": 93.036
+    },
+    {
+      "line": 11,
+      "english": "I learned that a life can turn on the courage it takes to send a single letter.",
+      "word_timings": [
+        {
+          "word": "I",
+          "display_index": 0,
+          "start": 94.078,
+          "end": 94.337
+        },
+        {
+          "word": "learned",
+          "display_index": 1,
+          "start": 94.337,
+          "end": 94.737
+        },
+        {
+          "word": "that",
+          "display_index": 2,
+          "start": 94.737,
+          "end": 94.93
+        },
+        {
+          "word": "a",
+          "display_index": 3,
+          "start": 94.93,
+          "end": 95.137
+        },
+        {
+          "word": "life",
+          "display_index": 4,
+          "start": 95.137,
+          "end": 95.897
+        },
+        {
+          "word": "can",
+          "display_index": 5,
+          "start": 95.897,
+          "end": 96.337
+        },
+        {
+          "word": "turn",
+          "display_index": 6,
+          "start": 96.337,
+          "end": 97.298
+        },
+        {
+          "word": "on",
+          "display_index": 7,
+          "start": 97.298,
+          "end": 97.592
+        },
+        {
+          "word": "the",
+          "display_index": 8,
+          "start": 97.592,
+          "end": 97.858
+        },
+        {
+          "word": "courage",
+          "display_index": 9,
+          "start": 97.858,
+          "end": 99.238
+        },
+        {
+          "word": "it",
+          "display_index": 10,
+          "start": 99.238,
+          "end": 99.478
+        },
+        {
+          "word": "takes",
+          "display_index": 11,
+          "start": 99.478,
+          "end": 101.458
+        },
+        {
+          "word": "to",
+          "display_index": 12,
+          "start": 101.458,
+          "end": 101.758
+        },
+        {
+          "word": "send",
+          "display_index": 13,
+          "start": 101.758,
+          "end": 102.822
+        },
+        {
+          "word": "a",
+          "display_index": 14,
+          "start": 102.822,
+          "end": 103.439
+        },
+        {
+          "word": "single",
+          "display_index": 15,
+          "start": 103.439,
+          "end": 104.759
+        },
+        {
+          "word": "letter.",
+          "display_index": 16,
+          "start": 104.759,
+          "end": 106.259
+        }
+      ],
+      "start": 94.078,
+      "end": 106.259
+    }
+  ],
+  "transcript_source": "exact adopted lyrics (ASR substitutions prohibited)"
+}

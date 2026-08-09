@@ -1,0 +1,903 @@
+{
+  "lesson": "H031",
+  "title_ja": "キュリー夫人の情熱",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 9,
+  "canonical_target_lines": 7,
+  "mixed_lines": 7,
+  "japanese_only_lines": 2,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 1.66,
+      "end": 5.74,
+      "english": "Marie Curie was born in Poland and later moved to Paris.",
+      "japanese": "マリー・キュリーはポーランドで生まれ、後にパリに移りました。",
+      "mixed": "マリー・キュリーはポーランドで生まれ、後にパリに移りました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "マリー・キュリーはポーランドで生まれ、後にパリに移りました。",
+          "parts": [
+            {
+              "text": "マリー・キュリーはポーランドで",
+              "ruby": ""
+            },
+            {
+              "text": "生",
+              "ruby": "う"
+            },
+            {
+              "text": "まれ、",
+              "ruby": ""
+            },
+            {
+              "text": "後",
+              "ruby": "あと"
+            },
+            {
+              "text": "にパリに",
+              "ruby": ""
+            },
+            {
+              "text": "移",
+              "ruby": "うつ"
+            },
+            {
+              "text": "りました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 2,
+      "start": 6.92,
+      "end": 12.04,
+      "english": "Her name, Marie Curie, is one of the most famous physicists in the history of science.",
+      "japanese": "彼女の名前はマリー・キュリーで、科学史上最も有名な物理学者の一人です。",
+      "mixed": "マリー・キュリーは、科学史上最も有名な physicists の一人です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "マリー・キュリーは、科学史上最も有名な ",
+          "parts": [
+            {
+              "text": "マリー・キュリーは、",
+              "ruby": ""
+            },
+            {
+              "text": "科学",
+              "ruby": "かがく"
+            },
+            {
+              "text": "史",
+              "ruby": "し"
+            },
+            {
+              "text": "上",
+              "ruby": "じょう"
+            },
+            {
+              "text": "最",
+              "ruby": "もっと"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "有名",
+              "ruby": "ゆうめい"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "physicists",
+          "ruby": "物理学者たち"
+        },
+        {
+          "type": "ja",
+          "text": " の一人です。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "一人",
+              "ruby": "ひとり"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "physicists",
+          "canonical_word": "physicist",
+          "meaning": "物理学者"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "physicists",
+          "reading": "物理学者たち",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "physicist",
+          "canonical_meaning": "物理学者"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 3,
+      "start": 12.98,
+      "end": 18.74,
+      "english": "Her passion, namely her devotion to science, was extraordinary.",
+      "japanese": "彼女の情熱、つまり科学に対する献身は並外れたものでした。",
+      "mixed": "彼女の passion、つまり科学への devotion は、並外れたものでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼女の ",
+          "parts": [
+            {
+              "text": "彼女",
+              "ruby": "かのじょ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "passion",
+          "ruby": "情熱"
+        },
+        {
+          "type": "ja",
+          "text": "、つまり科学への ",
+          "parts": [
+            {
+              "text": "、つまり",
+              "ruby": ""
+            },
+            {
+              "text": "科学",
+              "ruby": "かがく"
+            },
+            {
+              "text": "への",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "devotion",
+          "ruby": "献身"
+        },
+        {
+          "type": "ja",
+          "text": " は、並外れたものでした。",
+          "parts": [
+            {
+              "text": "は、",
+              "ruby": ""
+            },
+            {
+              "text": "並外",
+              "ruby": "なみはず"
+            },
+            {
+              "text": "れたものでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "passion",
+          "canonical_word": "passion",
+          "meaning": "情熱"
+        },
+        {
+          "english": "devotion",
+          "canonical_word": "devotion",
+          "meaning": "献身"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "passion",
+          "reading": "情熱",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "passion",
+          "canonical_meaning": "情熱"
+        },
+        {
+          "english": "devotion",
+          "reading": "献身",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "devotion",
+          "canonical_meaning": "献身"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 4,
+      "start": 21.22,
+      "end": 25.76,
+      "english": "Together with her husband Pierre, she devoted much of her life to research.",
+      "japanese": "彼女は夫のピエールとともに人生の多くを研究に捧げました。",
+      "mixed": "彼女は夫ピエールとともに、人生の多くを research に捧げました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼女は夫ピエールとともに、人生の多くを ",
+          "parts": [
+            {
+              "text": "彼女",
+              "ruby": "かのじょ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "夫",
+              "ruby": "おっと"
+            },
+            {
+              "text": "ピエールとともに、",
+              "ruby": ""
+            },
+            {
+              "text": "人生",
+              "ruby": "じんせい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "多",
+              "ruby": "おお"
+            },
+            {
+              "text": "くを",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "research",
+          "ruby": "研究"
+        },
+        {
+          "type": "ja",
+          "text": " に捧げました。",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "捧",
+              "ruby": "ささ"
+            },
+            {
+              "text": "げました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "research",
+          "canonical_word": "research",
+          "meaning": "研究"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "research",
+          "reading": "研究",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "research",
+          "canonical_meaning": "研究"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 5,
+      "start": 25.76,
+      "end": 32.1,
+      "english": "Their goal, to isolate and study the new element radium, meant years of endless difficulty.",
+      "japanese": "新元素ラジウムを単離して研究するという彼らの目標は、何年にもわたる終わりのない困難を意味しました。",
+      "mixed": "新しい element である radium を単離して研究する目標には、何年もの終わりなき困難が伴いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "新しい ",
+          "parts": [
+            {
+              "text": "新",
+              "ruby": "あたら"
+            },
+            {
+              "text": "しい",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "element",
+          "ruby": "元素"
+        },
+        {
+          "type": "ja",
+          "text": " である ",
+          "parts": [
+            {
+              "text": "である",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "radium",
+          "ruby": "ラジウム"
+        },
+        {
+          "type": "ja",
+          "text": " を単離して研究する目標には、何年もの終わりなき困難が伴いました。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "単離",
+              "ruby": "たんり"
+            },
+            {
+              "text": "して",
+              "ruby": ""
+            },
+            {
+              "text": "研究",
+              "ruby": "けんきゅう"
+            },
+            {
+              "text": "する",
+              "ruby": ""
+            },
+            {
+              "text": "目標",
+              "ruby": "もくひょう"
+            },
+            {
+              "text": "には、",
+              "ruby": ""
+            },
+            {
+              "text": "何",
+              "ruby": "なん"
+            },
+            {
+              "text": "年",
+              "ruby": "ねん"
+            },
+            {
+              "text": "もの",
+              "ruby": ""
+            },
+            {
+              "text": "終",
+              "ruby": "お"
+            },
+            {
+              "text": "わりなき",
+              "ruby": ""
+            },
+            {
+              "text": "困難",
+              "ruby": "こんなん"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "伴",
+              "ruby": "ともな"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "element",
+          "canonical_word": "element",
+          "meaning": "元素"
+        },
+        {
+          "english": "radium",
+          "canonical_word": "radium",
+          "meaning": "ラジウム"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "element",
+          "reading": "元素",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "element",
+          "canonical_meaning": "元素"
+        },
+        {
+          "english": "radium",
+          "reading": "ラジウム",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "radium",
+          "canonical_meaning": "ラジウム"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 6,
+      "start": 33.76,
+      "end": 38.56,
+      "english": "The work in the laboratory involved the work of turning many tons of mineral into powder.",
+      "japanese": "研究室での仕事は何トンもの鉱物を粉末にする作業でした。",
+      "mixed": "研究室での仕事は何トンもの鉱物を粉末にする作業でした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "研究室での仕事は何トンもの鉱物を粉末にする作業でした。",
+          "parts": [
+            {
+              "text": "研究",
+              "ruby": "けんきゅう"
+            },
+            {
+              "text": "室",
+              "ruby": "しつ"
+            },
+            {
+              "text": "での",
+              "ruby": ""
+            },
+            {
+              "text": "仕事",
+              "ruby": "しごと"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "何",
+              "ruby": "なん"
+            },
+            {
+              "text": "トンもの",
+              "ruby": ""
+            },
+            {
+              "text": "鉱物",
+              "ruby": "こうぶつ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "粉末",
+              "ruby": "ふんまつ"
+            },
+            {
+              "text": "にする",
+              "ruby": ""
+            },
+            {
+              "text": "作業",
+              "ruby": "さぎょう"
+            },
+            {
+              "text": "でした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 7,
+      "start": 39.02,
+      "end": 43.84,
+      "english": "The couple continued despite the risk, exposing themselves to radiation.",
+      "japanese": "夫婦は危険を顧みず放射線にさらされても活動を続けた。",
+      "mixed": "夫婦は risk を冒し、radiation にさらされながらも研究を続けました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "夫婦は ",
+          "parts": [
+            {
+              "text": "夫婦",
+              "ruby": "ふうふ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "risk",
+          "ruby": "危険"
+        },
+        {
+          "type": "ja",
+          "text": " を冒し、",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "冒",
+              "ruby": "おか"
+            },
+            {
+              "text": "し、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "radiation",
+          "ruby": "放射線"
+        },
+        {
+          "type": "ja",
+          "text": " にさらされながらも研究を続けました。",
+          "parts": [
+            {
+              "text": "にさらされながらも",
+              "ruby": ""
+            },
+            {
+              "text": "研究",
+              "ruby": "けんきゅう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "続",
+              "ruby": "つづ"
+            },
+            {
+              "text": "けました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "risk",
+          "canonical_word": "risk",
+          "meaning": "危険"
+        },
+        {
+          "english": "radiation",
+          "canonical_word": "radiation",
+          "meaning": "放射線"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "risk",
+          "reading": "危険",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "risk",
+          "canonical_meaning": "危険"
+        },
+        {
+          "english": "radiation",
+          "reading": "放射線",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "radiation",
+          "canonical_meaning": "放射線"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 8,
+      "start": 44.84,
+      "end": 52.48,
+      "english": "Her achievement of winning two Nobel Prizes could not have come without her pure love of study, namely her passion.",
+      "japanese": "彼女の 2 つのノーベル賞受賞という偉業は、彼女の純粋な研究への愛、つまり情熱がなければ成り立ちませんでした。",
+      "mixed": "二度の Nobel 受賞という偉業は、研究への純粋な愛、つまり彼女の passion なしには成し遂げられませんでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "二度の ",
+          "parts": [
+            {
+              "text": "二",
+              "ruby": "に"
+            },
+            {
+              "text": "度",
+              "ruby": "ど"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "Nobel",
+          "ruby": "ノーベル"
+        },
+        {
+          "type": "ja",
+          "text": " 受賞という偉業は、研究への純粋な愛、つまり彼女の ",
+          "parts": [
+            {
+              "text": "受賞",
+              "ruby": "じゅしょう"
+            },
+            {
+              "text": "という",
+              "ruby": ""
+            },
+            {
+              "text": "偉業",
+              "ruby": "いぎょう"
+            },
+            {
+              "text": "は、",
+              "ruby": ""
+            },
+            {
+              "text": "研究",
+              "ruby": "けんきゅう"
+            },
+            {
+              "text": "への",
+              "ruby": ""
+            },
+            {
+              "text": "純粋",
+              "ruby": "じゅんすい"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "愛",
+              "ruby": "あい"
+            },
+            {
+              "text": "、つまり",
+              "ruby": ""
+            },
+            {
+              "text": "彼女",
+              "ruby": "かのじょ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "passion",
+          "ruby": "情熱"
+        },
+        {
+          "type": "ja",
+          "text": " なしには成し遂げられませんでした。",
+          "parts": [
+            {
+              "text": "なしには",
+              "ruby": ""
+            },
+            {
+              "text": "成し遂",
+              "ruby": "なしと"
+            },
+            {
+              "text": "げられませんでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "Nobel",
+          "canonical_word": "nobel",
+          "meaning": "ノーベル"
+        },
+        {
+          "english": "passion",
+          "canonical_word": "passion",
+          "meaning": "情熱"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Nobel",
+          "reading": "ノーベル",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "nobel",
+          "canonical_meaning": "ノーベル"
+        },
+        {
+          "english": "passion",
+          "reading": "情熱",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "passion",
+          "canonical_meaning": "情熱"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 9,
+      "start": 53.54,
+      "end": 61.26,
+      "english": "As a woman, a mother, and a scientist, she opened a path for later generations.",
+      "japanese": "女性として、母親として、科学者として、彼女は後の世代に道を切り開きました。",
+      "mixed": "女性、母親、科学者として、彼女は後の generations への道を切り開きました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "女性、母親、科学者として、彼女は後の ",
+          "parts": [
+            {
+              "text": "女性",
+              "ruby": "じょせい"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "母親",
+              "ruby": "ははおや"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "科学",
+              "ruby": "かがく"
+            },
+            {
+              "text": "者",
+              "ruby": "しゃ"
+            },
+            {
+              "text": "として、",
+              "ruby": ""
+            },
+            {
+              "text": "彼女",
+              "ruby": "かのじょ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "後",
+              "ruby": "あと"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "generations",
+          "ruby": "世代"
+        },
+        {
+          "type": "ja",
+          "text": " への道を切り開きました。",
+          "parts": [
+            {
+              "text": "への",
+              "ruby": ""
+            },
+            {
+              "text": "道",
+              "ruby": "みち"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "切り開",
+              "ruby": "きりひら"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "generations",
+          "canonical_word": "generation",
+          "meaning": "世代"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "generations",
+          "reading": "世代",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "generation",
+          "canonical_meaning": "世代"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    }
+  ]
+}

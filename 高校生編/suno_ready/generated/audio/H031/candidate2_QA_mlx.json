@@ -1,0 +1,297 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H001-H045/H031.md",
+  "audio": "高校生編/suno_ready/generated/audio/H031/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 103.76,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.96,
+  "expected_words": 125,
+  "transcribed_words": 120,
+  "matched_words": 99,
+  "coverage": 0.792,
+  "precision": 0.825,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 124,
+  "longest_missing_run": 14,
+  "largest_missing_runs": [
+    {
+      "start": 15,
+      "length": 14,
+      "words": [
+        "is",
+        "one",
+        "of",
+        "the",
+        "most",
+        "famous",
+        "physicists",
+        "in",
+        "the",
+        "history",
+        "of",
+        "science",
+        "her",
+        "passion"
+      ]
+    },
+    {
+      "start": 2,
+      "length": 11,
+      "words": [
+        "was",
+        "born",
+        "in",
+        "poland",
+        "and",
+        "later",
+        "moved",
+        "to",
+        "paris",
+        "her",
+        "name"
+      ]
+    },
+    {
+      "start": 59,
+      "length": 1,
+      "words": [
+        "meant"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 15,
+      "actual_start": 4,
+      "expected": [
+        "is",
+        "one",
+        "of",
+        "the",
+        "most",
+        "famous",
+        "physicists",
+        "in",
+        "the",
+        "history",
+        "of",
+        "science",
+        "her",
+        "passion"
+      ],
+      "actual": [
+        "marie",
+        "curie",
+        "marie",
+        "curie",
+        "marie",
+        "curie",
+        "marie",
+        "curie",
+        "marie",
+        "curie",
+        "marie",
+        "curie",
+        "marie",
+        "curie",
+        "marie",
+        "curie",
+        "marie",
+        "curie",
+        "marie",
+        "curie"
+      ],
+      "actual_confidence": 0.7394,
+      "substitution_words": 14,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 59,
+      "actual_start": 54,
+      "expected": [
+        "meant"
+      ],
+      "actual": [
+        "and"
+      ],
+      "actual_confidence": 0.6123,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 2,
+      "actual_start": 2,
+      "expected": [
+        "was",
+        "born",
+        "in",
+        "poland",
+        "and",
+        "later",
+        "moved",
+        "to",
+        "paris",
+        "her",
+        "name"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 14,
+  "suspicious_content_substitution": true,
+  "transcript": "Marie Curie Marie Curie Marie Curie Marie Curie Marie Curie Marie Curie Marie Curie Marie Curie Marie Curie Marie Curie Marie Curie Marie Curie Namely, her devotion to science was extraordinary Together with her husband Pierre She devoted much of her life to research Their goal to isolate and study the new element Radium and years of endless difficulty The work in the laboratory involved the work of turning many tons of mineral into powder The couple continued despite the risk exposing themselves to radiation Her achievement of winning two Nobel Prizes Could not have come without her pure love of study Namely her passion As a woman, a mother, and a scientist She opened a path for later generations!",
+  "segments": [
+    {
+      "start": 10.96,
+      "end": 12.76,
+      "text": "Marie Curie"
+    },
+    {
+      "start": 12.76,
+      "end": 12.88,
+      "text": "Marie Curie"
+    },
+    {
+      "start": 12.88,
+      "end": 13.16,
+      "text": "Marie Curie"
+    },
+    {
+      "start": 13.16,
+      "end": 14.58,
+      "text": "Marie Curie"
+    },
+    {
+      "start": 14.58,
+      "end": 17.38,
+      "text": "Marie Curie"
+    },
+    {
+      "start": 17.38,
+      "end": 17.96,
+      "text": "Marie Curie"
+    },
+    {
+      "start": 17.96,
+      "end": 17.96,
+      "text": ""
+    },
+    {
+      "start": 17.96,
+      "end": 17.98,
+      "text": "Marie Curie"
+    },
+    {
+      "start": 17.98,
+      "end": 18.24,
+      "text": "Marie Curie"
+    },
+    {
+      "start": 18.24,
+      "end": 18.84,
+      "text": "Marie Curie"
+    },
+    {
+      "start": 18.84,
+      "end": 18.84,
+      "text": ""
+    },
+    {
+      "start": 18.84,
+      "end": 18.84,
+      "text": ""
+    },
+    {
+      "start": 18.84,
+      "end": 18.84,
+      "text": ""
+    },
+    {
+      "start": 18.84,
+      "end": 19.68,
+      "text": "Marie Curie"
+    },
+    {
+      "start": 19.68,
+      "end": 21.4,
+      "text": "Marie Curie"
+    },
+    {
+      "start": 28.0,
+      "end": 29.82,
+      "text": "Marie Curie"
+    },
+    {
+      "start": 30.0,
+      "end": 34.76,
+      "text": "Namely, her devotion to science was extraordinary"
+    },
+    {
+      "start": 39.6,
+      "end": 41.82,
+      "text": "Together with her husband Pierre"
+    },
+    {
+      "start": 41.82,
+      "end": 45.3,
+      "text": "She devoted much of her life to research"
+    },
+    {
+      "start": 45.3,
+      "end": 49.86,
+      "text": "Their goal to isolate and study the new element"
+    },
+    {
+      "start": 49.86,
+      "end": 54.52,
+      "text": "Radium and years of endless difficulty"
+    },
+    {
+      "start": 56.56,
+      "end": 66.62,
+      "text": "The work in the laboratory involved the work of turning many tons of mineral into powder"
+    },
+    {
+      "start": 68.0,
+      "end": 75.08,
+      "text": "The couple continued despite the risk exposing themselves to radiation"
+    },
+    {
+      "start": 77.68,
+      "end": 82.52,
+      "text": "Her achievement of winning two Nobel Prizes"
+    },
+    {
+      "start": 82.52,
+      "end": 88.04,
+      "text": "Could not have come without her pure love of study"
+    },
+    {
+      "start": 88.04,
+      "end": 91.14,
+      "text": "Namely her passion"
+    },
+    {
+      "start": 91.14,
+      "end": 96.56,
+      "text": "As a woman, a mother, and a scientist"
+    },
+    {
+      "start": 96.56,
+      "end": 103.5,
+      "text": "She opened a path for later generations"
+    },
+    {
+      "start": 103.5,
+      "end": 103.76,
+      "text": "!"
+    }
+  ]
+}

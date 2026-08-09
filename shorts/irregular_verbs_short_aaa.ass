@@ -1,0 +1,86 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Brand,Hiragino Sans W7,42,&H00FFFFFF,&H00FFFFFF,&H90000000,&H00000000,-1,0,0,0,100,100,2,0,1,2,0,5,0,0,0,1
+Style: Hook,Hiragino Sans W7,88,&H00FFFFFF,&H00FFFFFF,&H90000000,&H50000000,-1,0,0,0,100,100,2,0,1,5,2,5,70,70,0,1
+Style: Pattern,Hiragino Sans W7,64,&H0038E6FF,&H0038E6FF,&H90000000,&H30000000,-1,0,0,0,100,100,2,0,1,4,1,5,60,60,0,1
+Style: Meaning,Hiragino Sans W7,72,&H00FFFFFF,&H00FFFFFF,&H90000000,&H00000000,-1,0,0,0,100,100,2,0,1,5,1,5,60,60,0,1
+Style: Label,Hiragino Sans W6,30,&H00E7E2D8,&H00E7E2D8,&H90000000,&H00000000,-1,0,0,0,100,100,1,0,1,2,0,5,0,0,0,1
+Style: Form,Hiragino Sans W7,104,&H00FFFFFF,&H00FFFFFF,&H90000000,&H00000000,-1,0,0,0,100,100,1,0,1,5,2,5,0,0,0,1
+Style: Arrow,Hiragino Sans W7,58,&H00E7E2D8,&H00E7E2D8,&H90000000,&H00000000,-1,0,0,0,100,100,0,0,1,3,0,5,0,0,0,1
+Style: Progress,Hiragino Sans W7,38,&H00FFFFFF,&H00FFFFFF,&H90000000,&H00000000,-1,0,0,0,100,100,8,0,1,2,0,5,0,0,0,1
+Style: Handle,Helvetica,32,&HC8FFFFFF,&HC8FFFFFF,&H90000000,&H00000000,0,0,0,0,100,100,1,0,1,2,0,5,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 4,0:00:00.00,0:00:08.09,Brand,,0,0,0,,{\pos(540,112)\fad(100,80)}♪  不規則動詞の歌  ・  AAA型
+Dialogue: 5,0:00:00.00,0:00:01.46,Hook,,0,0,0,,{\pos(540,300)\fad(80,120)}3回とも同じ！\N歌える？
+Dialogue: 4,0:00:01.46,0:00:08.09,Pattern,,0,0,0,,{\pos(540,242)\fad(100,80)}変化しない「 A A A 型 」
+Dialogue: 3,0:00:00.00,0:00:08.09,Label,,0,0,0,,{\pos(210,1515)}原形  BASE
+Dialogue: 3,0:00:00.00,0:00:08.09,Label,,0,0,0,,{\pos(540,1515)}過去形  PAST
+Dialogue: 3,0:00:00.00,0:00:08.09,Label,,0,0,0,,{\pos(870,1515)}過去分詞  P.P.
+Dialogue: 3,0:00:00.00,0:00:08.09,Arrow,,0,0,0,,{\pos(375,1625)}→
+Dialogue: 3,0:00:00.00,0:00:08.09,Arrow,,0,0,0,,{\pos(705,1625)}→
+Dialogue: 3,0:00:00.00,0:00:08.09,Handle,,0,0,0,,{\pos(540,1840)}@TeacherTacosEnglish
+Dialogue: 4,0:00:00.00,0:00:02.89,Meaning,,0,0,0,,{\pos(540,1370)\fad(80,60)}切る
+Dialogue: 4,0:00:00.00,0:00:02.89,Progress,,0,0,0,,{\pos(540,1260)}●  ○  ○  ○
+Dialogue: 5,0:00:00.00,0:00:01.52,Form,,0,0,0,,{\pos(210,1625)\c&H00FFFFFF&\fscx100\fscy100}cut
+Dialogue: 5,0:00:00.00,0:00:01.52,Form,,0,0,0,,{\pos(540,1625)\c&H00FFFFFF&\fscx100\fscy100}cut
+Dialogue: 5,0:00:00.00,0:00:01.52,Form,,0,0,0,,{\pos(870,1625)\c&H00FFFFFF&\fscx100\fscy100}cut
+Dialogue: 5,0:00:01.52,0:00:01.88,Form,,0,0,0,,{\pos(210,1625)\c&H0038E6FF&\fscx116\fscy116}cut
+Dialogue: 5,0:00:01.52,0:00:01.88,Form,,0,0,0,,{\pos(540,1625)\c&H00FFFFFF&\fscx100\fscy100}cut
+Dialogue: 5,0:00:01.52,0:00:01.88,Form,,0,0,0,,{\pos(870,1625)\c&H00FFFFFF&\fscx100\fscy100}cut
+Dialogue: 5,0:00:01.88,0:00:02.22,Form,,0,0,0,,{\pos(210,1625)\c&H00FFFFFF&\fscx100\fscy100}cut
+Dialogue: 5,0:00:01.88,0:00:02.22,Form,,0,0,0,,{\pos(540,1625)\c&H0038E6FF&\fscx116\fscy116}cut
+Dialogue: 5,0:00:01.88,0:00:02.22,Form,,0,0,0,,{\pos(870,1625)\c&H00FFFFFF&\fscx100\fscy100}cut
+Dialogue: 5,0:00:02.22,0:00:02.89,Form,,0,0,0,,{\pos(210,1625)\c&H00FFFFFF&\fscx100\fscy100}cut
+Dialogue: 5,0:00:02.22,0:00:02.89,Form,,0,0,0,,{\pos(540,1625)\c&H00FFFFFF&\fscx100\fscy100}cut
+Dialogue: 5,0:00:02.22,0:00:02.89,Form,,0,0,0,,{\pos(870,1625)\c&H0038E6FF&\fscx116\fscy116}cut
+Dialogue: 4,0:00:02.89,0:00:04.91,Meaning,,0,0,0,,{\pos(540,1370)\fad(80,60)}打つ
+Dialogue: 4,0:00:02.89,0:00:04.91,Progress,,0,0,0,,{\pos(540,1260)}○  ●  ○  ○
+Dialogue: 5,0:00:02.89,0:00:03.24,Form,,0,0,0,,{\pos(210,1625)\c&H00FFFFFF&\fscx100\fscy100}hit
+Dialogue: 5,0:00:02.89,0:00:03.24,Form,,0,0,0,,{\pos(540,1625)\c&H00FFFFFF&\fscx100\fscy100}hit
+Dialogue: 5,0:00:02.89,0:00:03.24,Form,,0,0,0,,{\pos(870,1625)\c&H00FFFFFF&\fscx100\fscy100}hit
+Dialogue: 5,0:00:03.24,0:00:03.64,Form,,0,0,0,,{\pos(210,1625)\c&H0038E6FF&\fscx116\fscy116}hit
+Dialogue: 5,0:00:03.24,0:00:03.64,Form,,0,0,0,,{\pos(540,1625)\c&H00FFFFFF&\fscx100\fscy100}hit
+Dialogue: 5,0:00:03.24,0:00:03.64,Form,,0,0,0,,{\pos(870,1625)\c&H00FFFFFF&\fscx100\fscy100}hit
+Dialogue: 5,0:00:03.64,0:00:03.92,Form,,0,0,0,,{\pos(210,1625)\c&H00FFFFFF&\fscx100\fscy100}hit
+Dialogue: 5,0:00:03.64,0:00:03.92,Form,,0,0,0,,{\pos(540,1625)\c&H0038E6FF&\fscx116\fscy116}hit
+Dialogue: 5,0:00:03.64,0:00:03.92,Form,,0,0,0,,{\pos(870,1625)\c&H00FFFFFF&\fscx100\fscy100}hit
+Dialogue: 5,0:00:03.92,0:00:04.91,Form,,0,0,0,,{\pos(210,1625)\c&H00FFFFFF&\fscx100\fscy100}hit
+Dialogue: 5,0:00:03.92,0:00:04.91,Form,,0,0,0,,{\pos(540,1625)\c&H00FFFFFF&\fscx100\fscy100}hit
+Dialogue: 5,0:00:03.92,0:00:04.91,Form,,0,0,0,,{\pos(870,1625)\c&H0038E6FF&\fscx116\fscy116}hit
+Dialogue: 4,0:00:04.91,0:00:06.77,Meaning,,0,0,0,,{\pos(540,1370)\fad(80,60)}置く
+Dialogue: 4,0:00:04.91,0:00:06.77,Progress,,0,0,0,,{\pos(540,1260)}○  ○  ●  ○
+Dialogue: 5,0:00:04.91,0:00:05.26,Form,,0,0,0,,{\pos(210,1625)\c&H00FFFFFF&\fscx100\fscy100}put
+Dialogue: 5,0:00:04.91,0:00:05.26,Form,,0,0,0,,{\pos(540,1625)\c&H00FFFFFF&\fscx100\fscy100}put
+Dialogue: 5,0:00:04.91,0:00:05.26,Form,,0,0,0,,{\pos(870,1625)\c&H00FFFFFF&\fscx100\fscy100}put
+Dialogue: 5,0:00:05.26,0:00:05.62,Form,,0,0,0,,{\pos(210,1625)\c&H0038E6FF&\fscx116\fscy116}put
+Dialogue: 5,0:00:05.26,0:00:05.62,Form,,0,0,0,,{\pos(540,1625)\c&H00FFFFFF&\fscx100\fscy100}put
+Dialogue: 5,0:00:05.26,0:00:05.62,Form,,0,0,0,,{\pos(870,1625)\c&H00FFFFFF&\fscx100\fscy100}put
+Dialogue: 5,0:00:05.62,0:00:05.96,Form,,0,0,0,,{\pos(210,1625)\c&H00FFFFFF&\fscx100\fscy100}put
+Dialogue: 5,0:00:05.62,0:00:05.96,Form,,0,0,0,,{\pos(540,1625)\c&H0038E6FF&\fscx116\fscy116}put
+Dialogue: 5,0:00:05.62,0:00:05.96,Form,,0,0,0,,{\pos(870,1625)\c&H00FFFFFF&\fscx100\fscy100}put
+Dialogue: 5,0:00:05.96,0:00:06.77,Form,,0,0,0,,{\pos(210,1625)\c&H00FFFFFF&\fscx100\fscy100}put
+Dialogue: 5,0:00:05.96,0:00:06.77,Form,,0,0,0,,{\pos(540,1625)\c&H00FFFFFF&\fscx100\fscy100}put
+Dialogue: 5,0:00:05.96,0:00:06.77,Form,,0,0,0,,{\pos(870,1625)\c&H0038E6FF&\fscx116\fscy116}put
+Dialogue: 4,0:00:06.77,0:00:08.09,Meaning,,0,0,0,,{\pos(540,1370)\fad(80,60)}置く・設定する
+Dialogue: 4,0:00:06.77,0:00:08.09,Progress,,0,0,0,,{\pos(540,1260)}○  ○  ○  ●
+Dialogue: 5,0:00:06.77,0:00:07.12,Form,,0,0,0,,{\pos(210,1625)\c&H00FFFFFF&\fscx100\fscy100}set
+Dialogue: 5,0:00:06.77,0:00:07.12,Form,,0,0,0,,{\pos(540,1625)\c&H00FFFFFF&\fscx100\fscy100}set
+Dialogue: 5,0:00:06.77,0:00:07.12,Form,,0,0,0,,{\pos(870,1625)\c&H00FFFFFF&\fscx100\fscy100}set
+Dialogue: 5,0:00:07.12,0:00:07.48,Form,,0,0,0,,{\pos(210,1625)\c&H0038E6FF&\fscx116\fscy116}set
+Dialogue: 5,0:00:07.12,0:00:07.48,Form,,0,0,0,,{\pos(540,1625)\c&H00FFFFFF&\fscx100\fscy100}set
+Dialogue: 5,0:00:07.12,0:00:07.48,Form,,0,0,0,,{\pos(870,1625)\c&H00FFFFFF&\fscx100\fscy100}set
+Dialogue: 5,0:00:07.48,0:00:07.82,Form,,0,0,0,,{\pos(210,1625)\c&H00FFFFFF&\fscx100\fscy100}set
+Dialogue: 5,0:00:07.48,0:00:07.82,Form,,0,0,0,,{\pos(540,1625)\c&H0038E6FF&\fscx116\fscy116}set
+Dialogue: 5,0:00:07.48,0:00:07.82,Form,,0,0,0,,{\pos(870,1625)\c&H00FFFFFF&\fscx100\fscy100}set
+Dialogue: 5,0:00:07.82,0:00:08.09,Form,,0,0,0,,{\pos(210,1625)\c&H00FFFFFF&\fscx100\fscy100}set
+Dialogue: 5,0:00:07.82,0:00:08.09,Form,,0,0,0,,{\pos(540,1625)\c&H00FFFFFF&\fscx100\fscy100}set
+Dialogue: 5,0:00:07.82,0:00:08.09,Form,,0,0,0,,{\pos(870,1625)\c&H0038E6FF&\fscx116\fscy116}set

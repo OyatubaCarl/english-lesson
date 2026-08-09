@@ -21,6 +21,7 @@ from pathlib import Path
 
 SRC = Path(__file__).parent.parent / "index.html"
 YT = Path(__file__).parent.parent / "youtube-map.json"
+MIDDLE_OVERRIDES = Path(__file__).parent / "middle_lesson_overrides.json"
 
 BOOKS = {"middle": ["middle"], "high": ["high1", "high2", "high3"], "beginner": ["beginner"]}
 BOOK_LABEL = {"high1": "高1", "high2": "高2", "high3": "高3", "middle": "中"}
@@ -105,6 +106,11 @@ def main() -> int:
     which = sys.argv[1] if len(sys.argv) > 1 else "high"
     html = SRC.read_text(encoding="utf-8")
     ymap = json.loads(YT.read_text(encoding="utf-8"))
+    overrides = (
+        json.loads(MIDDLE_OVERRIDES.read_text(encoding="utf-8"))
+        if which == "middle" and MIDDLE_OVERRIDES.exists()
+        else {}
+    )
     out, n = [], 0
     for book in BOOKS[which]:
         seg = book_segment(html, book)
@@ -118,7 +124,7 @@ def main() -> int:
             v = vids.get(str(num))
             if isinstance(v, list):
                 v = v[0] if v else None
-            out.append({
+            item = {
                 "b": n,                                   # コース内の通し番号
                 "src": {"book": book, "lesson": num},     # 元のブック/課
                 "title": (f"{BOOK_LABEL.get(book, '')} L{num} " if len(BOOKS[which]) > 1 else "") + title,
@@ -127,7 +133,12 @@ def main() -> int:
                 "enSentences": parse_en_body(sec),
                 "passageJp": pj,
                 **({"video": v} if v else {}),
-            })
+            }
+            override = overrides.get(str(num), {})
+            for field in ("vocabSentences", "passageJp", "enSentences"):
+                if field in override:
+                    item[field] = override[field]
+            out.append(item)
     json.dump(out, sys.stdout, ensure_ascii=False, indent=1)
     return 0
 

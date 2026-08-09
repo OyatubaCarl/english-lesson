@@ -1,0 +1,275 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H147.md",
+  "audio": "高校生編/suno_ready/generated/audio/H147/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 207.4,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0078,
+  "expected_words": 258,
+  "transcribed_words": 260,
+  "matched_words": 255,
+  "coverage": 0.9884,
+  "precision": 0.9808,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 257,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 86,
+      "length": 1,
+      "words": [
+        "individual's"
+      ]
+    },
+    {
+      "start": 96,
+      "length": 1,
+      "words": [
+        "grameen"
+      ]
+    },
+    {
+      "start": 143,
+      "length": 1,
+      "words": [
+        "muhammad"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 86,
+      "actual_start": 86,
+      "expected": [
+        "individual's"
+      ],
+      "actual": [
+        "individual"
+      ],
+      "actual_confidence": 0.9926,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 96,
+      "actual_start": 97,
+      "expected": [
+        "grameen"
+      ],
+      "actual": [
+        "grammy"
+      ],
+      "actual_confidence": 0.362,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 143,
+      "actual_start": 144,
+      "expected": [
+        "muhammad"
+      ],
+      "actual": [
+        "mohamed"
+      ],
+      "actual_confidence": 0.5807,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 89,
+      "actual_start": 89,
+      "expected": [],
+      "actual": [
+        "it"
+      ],
+      "actual_confidence": 0.4661
+    },
+    {
+      "expected_start": 201,
+      "actual_start": 202,
+      "expected": [],
+      "actual": [
+        "it"
+      ],
+      "actual_confidence": 0.777
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "In this world, there are invisible borders of many kinds Some are clear, like national borders Others are invisible walls within society One of these is the cycle of poverty A child born into a poor family has limited educational opportunities Cannot get a good job And even as an adult cannot escape from poverty This is passed on from one generation to the next generation. To break this cycle requires the effort of society, as a whole. Education, medical care, housing, job, training, through one individual strength alone it It is difficult to escape poverty Bangladesh's Grammy bank created a new scheme against poverty Microfinance Small loans to low income people Money is lent even without collateral The repayment rate is surprisingly high It demonstrated that poor people are not lazy Given only the chance they succeed through their own power The founder, Mohamed Yunus, received the Nobel Peace Prize in 2006 Yunus argued that poverty reflects social systems rather than personal failure Meanwhile, in developed countries too, a new poverty has emerged. The working poor who can only make ends meet despite long hours. A divide in education caused by parents' income. Poverty not only torments those who experience it, But it also blocks the development of society As a whole A society in which every person can make use of their talent Is a sustainable society This is not a distant story Beside us, even now someone is fighting against poverty. What we can do for each one of us to think about it is the first step.",
+  "segments": [
+    {
+      "start": 10.78,
+      "end": 17.48,
+      "text": "In this world, there are invisible borders of many kinds"
+    },
+    {
+      "start": 18.54,
+      "end": 24.1,
+      "text": "Some are clear, like national borders"
+    },
+    {
+      "start": 25.1,
+      "end": 35.98,
+      "text": "Others are invisible walls within society One of these is the cycle of poverty"
+    },
+    {
+      "start": 39.1,
+      "end": 43.2,
+      "text": "A child born into a poor family has limited educational opportunities"
+    },
+    {
+      "start": 44.1,
+      "end": 45.16,
+      "text": "Cannot get a good job"
+    },
+    {
+      "start": 45.16,
+      "end": 49.06,
+      "text": "And even as an adult cannot escape from poverty"
+    },
+    {
+      "start": 50.84,
+      "end": 55.48,
+      "text": "This is passed on from one generation to the next generation."
+    },
+    {
+      "start": 56.54,
+      "end": 62.46,
+      "text": "To break this cycle requires the effort of society, as a whole."
+    },
+    {
+      "start": 65.54,
+      "end": 76.18,
+      "text": "Education, medical care, housing, job, training, through one individual strength alone it"
+    },
+    {
+      "start": 76.18,
+      "end": 78.8,
+      "text": "It is difficult to escape poverty"
+    },
+    {
+      "start": 79.78,
+      "end": 85.24,
+      "text": "Bangladesh's Grammy bank created a new scheme against poverty"
+    },
+    {
+      "start": 86.1,
+      "end": 87.14,
+      "text": "Microfinance"
+    },
+    {
+      "start": 87.14,
+      "end": 91.3,
+      "text": "Small loans to low income people"
+    },
+    {
+      "start": 93.22,
+      "end": 96.24,
+      "text": "Money is lent even without collateral"
+    },
+    {
+      "start": 98.5,
+      "end": 103.02,
+      "text": "The repayment rate is surprisingly high"
+    },
+    {
+      "start": 104.2,
+      "end": 109.1,
+      "text": "It demonstrated that poor people are not lazy"
+    },
+    {
+      "start": 109.1,
+      "end": 113.02,
+      "text": "Given only the chance they succeed through their own power"
+    },
+    {
+      "start": 113.56,
+      "end": 120.46,
+      "text": "The founder, Mohamed Yunus, received the Nobel Peace Prize in 2006"
+    },
+    {
+      "start": 121.02,
+      "end": 129.04,
+      "text": "Yunus argued that poverty reflects social systems rather than personal failure"
+    },
+    {
+      "start": 129.04,
+      "end": 138.48,
+      "text": "Meanwhile, in developed countries too, a new poverty has emerged."
+    },
+    {
+      "start": 140.3,
+      "end": 146.96,
+      "text": "The working poor who can only make ends meet despite long hours."
+    },
+    {
+      "start": 147.3,
+      "end": 151.68,
+      "text": "A divide in education caused by parents' income."
+    },
+    {
+      "start": 153.14,
+      "end": 157.54,
+      "text": "Poverty not only torments those who experience it,"
+    },
+    {
+      "start": 157.54,
+      "end": 162.18,
+      "text": "But it also blocks the development of society"
+    },
+    {
+      "start": 162.18,
+      "end": 165.82,
+      "text": "As a whole"
+    },
+    {
+      "start": 166.54,
+      "end": 172.84,
+      "text": "A society in which every person can make use of their talent"
+    },
+    {
+      "start": 172.84,
+      "end": 177.52,
+      "text": "Is a sustainable society"
+    },
+    {
+      "start": 178.8,
+      "end": 181.28,
+      "text": "This is not a distant story"
+    },
+    {
+      "start": 181.28,
+      "end": 184.14,
+      "text": "Beside us, even now"
+    },
+    {
+      "start": 184.14,
+      "end": 186.78,
+      "text": "someone is fighting against poverty."
+    },
+    {
+      "start": 188.06,
+      "end": 189.38,
+      "text": "What we can do"
+    },
+    {
+      "start": 190.98,
+      "end": 193.32,
+      "text": "for each one of us to think about it"
+    },
+    {
+      "start": 195.56,
+      "end": 197.46,
+      "text": "is the first step."
+    }
+  ]
+}

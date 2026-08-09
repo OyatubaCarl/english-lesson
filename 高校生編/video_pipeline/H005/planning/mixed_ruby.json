@@ -1,0 +1,998 @@
+{
+  "lesson": "H005",
+  "title_ja": "新しい家族 Sora",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 12,
+  "canonical_target_lines": 10,
+  "mixed_lines": 7,
+  "japanese_only_lines": 5,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 5.18,
+      "end": 10.1,
+      "english": "My father brought home a small puppy.",
+      "japanese": "僕の父が小さな子犬を家に連れて帰りました。",
+      "mixed": "僕の父が小さな子犬を家に連れて帰りました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "僕の父が小さな子犬を家に連れて帰りました。",
+          "parts": [
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "父",
+              "ruby": "ちち"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            },
+            {
+              "text": "子犬",
+              "ruby": "こいぬ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "連",
+              "ruby": "つ"
+            },
+            {
+              "text": "れて",
+              "ruby": ""
+            },
+            {
+              "text": "帰",
+              "ruby": "かえ"
+            },
+            {
+              "text": "りました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 2,
+      "start": 10.1,
+      "end": 18.28,
+      "english": "Mother decided to adopt her, and we named her Sora.",
+      "japanese": "母はその子を家族に迎えることに決め、僕たちはソラと名付けました。",
+      "mixed": "母はその子を adopt することに決め、僕たちはソラと名付けました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "母はその子を ",
+          "parts": [
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "はその",
+              "ruby": ""
+            },
+            {
+              "text": "子",
+              "ruby": "こ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "adopt",
+          "ruby": "家族に迎える"
+        },
+        {
+          "type": "ja",
+          "text": " することに決め、僕たちはソラと名付けました。",
+          "parts": [
+            {
+              "text": "することに",
+              "ruby": ""
+            },
+            {
+              "text": "決",
+              "ruby": "き"
+            },
+            {
+              "text": "め、",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "たちはソラと",
+              "ruby": ""
+            },
+            {
+              "text": "名付",
+              "ruby": "なづ"
+            },
+            {
+              "text": "けました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "adopt",
+          "canonical_word": "adopt",
+          "meaning": "家族に迎える"
+        },
+        {
+          "english": "named",
+          "canonical_word": "named",
+          "meaning": "名づけた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "adopt",
+          "reading": "家族に迎える",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "adopt",
+          "canonical_meaning": "家族に迎える"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 3,
+      "start": 18.28,
+      "end": 22.82,
+      "english": "Sora looked anxious at first.",
+      "japanese": "ソラは最初、不安そうでした。",
+      "mixed": "ソラは最初、不安そうでした。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ソラは最初、不安そうでした。",
+          "parts": [
+            {
+              "text": "ソラは",
+              "ruby": ""
+            },
+            {
+              "text": "最初",
+              "ruby": "さいしょ"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "不安",
+              "ruby": "ふあん"
+            },
+            {
+              "text": "そうでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 4,
+      "start": 22.82,
+      "end": 31.9,
+      "english": "Father declared her a member of our family, and we all welcomed her.",
+      "japanese": "父はソラを僕たちの家族の一員だと宣言し、僕たちは皆で歓迎しました。",
+      "mixed": "父はソラを僕たちの家族の一員だと declare し、僕たちは皆で歓迎しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "父はソラを僕たちの家族の一員だと ",
+          "parts": [
+            {
+              "text": "父",
+              "ruby": "ちち"
+            },
+            {
+              "text": "はソラを",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "たちの",
+              "ruby": ""
+            },
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "一員",
+              "ruby": "いちいん"
+            },
+            {
+              "text": "だと",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "declare",
+          "ruby": "宣言"
+        },
+        {
+          "type": "ja",
+          "text": " し、僕たちは皆で歓迎しました。",
+          "parts": [
+            {
+              "text": "し、",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "たちは",
+              "ruby": ""
+            },
+            {
+              "text": "皆",
+              "ruby": "みな"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "歓迎",
+              "ruby": "かんげい"
+            },
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "declared",
+          "canonical_word": "declared",
+          "meaning": "宣言した"
+        },
+        {
+          "english": "welcomed",
+          "canonical_word": "welcomed",
+          "meaning": "迎えた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "declare",
+          "reading": "宣言",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "declared",
+          "canonical_meaning": "宣言した"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 5,
+      "start": 31.9,
+      "end": 35.7,
+      "english": "Mother found her gentle.",
+      "japanese": "母はソラが優しい子だと気づきました。",
+      "mixed": "母はソラが gentle な子だと気づきました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "母はソラが ",
+          "parts": [
+            {
+              "text": "母",
+              "ruby": "はは"
+            },
+            {
+              "text": "はソラが",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "gentle",
+          "ruby": "優しい"
+        },
+        {
+          "type": "ja",
+          "text": " な子だと気づきました。",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "子",
+              "ruby": "こ"
+            },
+            {
+              "text": "だと",
+              "ruby": ""
+            },
+            {
+              "text": "気",
+              "ruby": "き"
+            },
+            {
+              "text": "づきました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "gentle",
+          "canonical_word": "gentle",
+          "meaning": "優しい"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "gentle",
+          "reading": "優しい",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "gentle",
+          "canonical_meaning": "優しい"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 6,
+      "start": 35.7,
+      "end": 42.14,
+      "english": "I considered her a good companion.",
+      "japanese": "僕はソラを良い相棒だと思いました。",
+      "mixed": "僕はソラを良い相棒だと思いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "僕はソラを良い相棒だと思いました。",
+          "parts": [
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "はソラを",
+              "ruby": ""
+            },
+            {
+              "text": "良",
+              "ruby": "よ"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "相棒",
+              "ruby": "あいぼう"
+            },
+            {
+              "text": "だと",
+              "ruby": ""
+            },
+            {
+              "text": "思",
+              "ruby": "おも"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "considered",
+          "canonical_word": "considered",
+          "meaning": "〜とみなした"
+        },
+        {
+          "english": "companion",
+          "canonical_word": "companion",
+          "meaning": "仲間"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 7,
+      "start": 42.14,
+      "end": 51.16,
+      "english": "Within a few days, she began to feel that our house belonged to her too.",
+      "japanese": "数日のうちに、ソラは僕たちの家を自分の家だと感じるようになりました。",
+      "mixed": "数日のうちに、ソラは僕たちの家を自分の家だと感じるようになりました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "数日のうちに、ソラは僕たちの家を自分の家だと感じるようになりました。",
+          "parts": [
+            {
+              "text": "数",
+              "ruby": "すう"
+            },
+            {
+              "text": "日",
+              "ruby": "じつ"
+            },
+            {
+              "text": "のうちに、ソラは",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "たちの",
+              "ruby": ""
+            },
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "自分",
+              "ruby": "じぶん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "だと",
+              "ruby": ""
+            },
+            {
+              "text": "感",
+              "ruby": "かん"
+            },
+            {
+              "text": "じるようになりました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "belonged",
+          "canonical_word": "belonged",
+          "meaning": "属した"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 8,
+      "start": 51.16,
+      "end": 54.72,
+      "english": "I promised to protect Sora.",
+      "japanese": "僕はソラを守ると誓いました。",
+      "mixed": "僕はソラを protect すると誓いました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "僕はソラを ",
+          "parts": [
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "はソラを",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "protect",
+          "ruby": "守る"
+        },
+        {
+          "type": "ja",
+          "text": " すると誓いました。",
+          "parts": [
+            {
+              "text": "すると",
+              "ruby": ""
+            },
+            {
+              "text": "誓",
+              "ruby": "ちか"
+            },
+            {
+              "text": "いました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "protect",
+          "canonical_word": "protect",
+          "meaning": "守る"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "protect",
+          "reading": "守る",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "protect",
+          "canonical_meaning": "守る"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 9,
+      "start": 54.72,
+      "end": 58.4,
+      "english": "She trusted us in return.",
+      "japanese": "ソラも僕たちを信頼してくれました。",
+      "mixed": "ソラも僕たちを信頼してくれました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ソラも僕たちを信頼してくれました。",
+          "parts": [
+            {
+              "text": "ソラも",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "たちを",
+              "ruby": ""
+            },
+            {
+              "text": "信頼",
+              "ruby": "しんらい"
+            },
+            {
+              "text": "してくれました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "trusted",
+          "canonical_word": "trusted",
+          "meaning": "信じた"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 10,
+      "start": 60.04,
+      "end": 68.94,
+      "english": "Father said, Let us accept this dog as family, and we embraced her together.",
+      "japanese": "父は「この犬を家族として迎えよう」と言い、僕たちは一緒にソラを抱きしめました。",
+      "mixed": "父は『この犬を家族として迎えよう』と言い、僕たちは一緒にソラを embrace しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "父は『この犬を家族として迎えよう』と言い、僕たちは一緒にソラを ",
+          "parts": [
+            {
+              "text": "父",
+              "ruby": "ちち"
+            },
+            {
+              "text": "は『この",
+              "ruby": ""
+            },
+            {
+              "text": "犬",
+              "ruby": "いぬ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "として",
+              "ruby": ""
+            },
+            {
+              "text": "迎",
+              "ruby": "むか"
+            },
+            {
+              "text": "えよう』と",
+              "ruby": ""
+            },
+            {
+              "text": "言",
+              "ruby": "い"
+            },
+            {
+              "text": "い、",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "たちは",
+              "ruby": ""
+            },
+            {
+              "text": "一緒",
+              "ruby": "いっしょ"
+            },
+            {
+              "text": "にソラを",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "embrace",
+          "ruby": "抱きしめる"
+        },
+        {
+          "type": "ja",
+          "text": " しました。",
+          "parts": [
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "accept",
+          "canonical_word": "accept",
+          "meaning": "受け入れる"
+        },
+        {
+          "english": "embraced",
+          "canonical_word": "embraced",
+          "meaning": "抱きしめた"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "embrace",
+          "reading": "抱きしめる",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "embraced",
+          "canonical_meaning": "抱きしめた"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 11,
+      "start": 72.8,
+      "end": 80.84,
+      "english": "After a few weeks, our care had made her a calm and contented dog.",
+      "japanese": "数週間後、僕たちの世話のおかげで、ソラは穏やかで満ち足りた犬になりました。",
+      "mixed": "数週間後、僕たちの世話のおかげで、ソラは calm で満ち足りた犬になりました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "数週間後、僕たちの世話のおかげで、ソラは ",
+          "parts": [
+            {
+              "text": "数",
+              "ruby": "すう"
+            },
+            {
+              "text": "週間",
+              "ruby": "しゅうかん"
+            },
+            {
+              "text": "後",
+              "ruby": "ご"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "たちの",
+              "ruby": ""
+            },
+            {
+              "text": "世話",
+              "ruby": "せわ"
+            },
+            {
+              "text": "のおかげで、ソラは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "calm",
+          "ruby": "穏やか"
+        },
+        {
+          "type": "ja",
+          "text": " で満ち足りた犬になりました。",
+          "parts": [
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "満ち足",
+              "ruby": "みちた"
+            },
+            {
+              "text": "りた",
+              "ruby": ""
+            },
+            {
+              "text": "犬",
+              "ruby": "いぬ"
+            },
+            {
+              "text": "になりました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "calm",
+          "canonical_word": "calm",
+          "meaning": "穏やかな"
+        },
+        {
+          "english": "contented",
+          "canonical_word": "content",
+          "meaning": "満足した"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "calm",
+          "reading": "穏やか",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "calm",
+          "canonical_meaning": "穏やかな"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 12,
+      "start": 84.06,
+      "end": 101.2,
+      "english": "Sora became the curious, affectionate heart of our home, and she carried a warm bond into every heart.",
+      "japanese": "好奇心旺盛で愛情深いソラは僕たちの家の中心となり、みんなの心に温かな絆をもたらしました。",
+      "mixed": "好奇心旺盛で affection に満ちたソラは僕たちの家の中心となり、みんなの心に温かな bond をもたらしました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "好奇心旺盛で ",
+          "parts": [
+            {
+              "text": "好奇",
+              "ruby": "こうき"
+            },
+            {
+              "text": "心",
+              "ruby": "しん"
+            },
+            {
+              "text": "旺盛",
+              "ruby": "おうせい"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "affection",
+          "ruby": "愛情"
+        },
+        {
+          "type": "ja",
+          "text": " に満ちたソラは僕たちの家の中心となり、みんなの心に温かな ",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "満",
+              "ruby": "み"
+            },
+            {
+              "text": "ちたソラは",
+              "ruby": ""
+            },
+            {
+              "text": "僕",
+              "ruby": "ぼく"
+            },
+            {
+              "text": "たちの",
+              "ruby": ""
+            },
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "中心",
+              "ruby": "ちゅうしん"
+            },
+            {
+              "text": "となり、みんなの",
+              "ruby": ""
+            },
+            {
+              "text": "心",
+              "ruby": "こころ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "温",
+              "ruby": "あたた"
+            },
+            {
+              "text": "かな",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "bond",
+          "ruby": "絆"
+        },
+        {
+          "type": "ja",
+          "text": " をもたらしました。",
+          "parts": [
+            {
+              "text": "をもたらしました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "curious",
+          "canonical_word": "curious",
+          "meaning": "好奇心のある"
+        },
+        {
+          "english": "bond",
+          "canonical_word": "bond",
+          "meaning": "絆"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "affection",
+          "reading": "愛情",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "affection",
+          "canonical_meaning": "愛情"
+        },
+        {
+          "english": "bond",
+          "reading": "絆",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "bond",
+          "canonical_meaning": "絆"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    }
+  ]
+}

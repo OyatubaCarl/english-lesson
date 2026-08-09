@@ -1,0 +1,252 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H081.md",
+  "audio": "高校生編/suno_ready/generated/audio/H081/candidate2-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 189.46,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0087,
+  "expected_words": 231,
+  "transcribed_words": 233,
+  "matched_words": 228,
+  "coverage": 0.987,
+  "precision": 0.9785,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 230,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 83,
+      "length": 1,
+      "words": [
+        "amundsen"
+      ]
+    },
+    {
+      "start": 176,
+      "length": 1,
+      "words": [
+        "he"
+      ]
+    },
+    {
+      "start": 190,
+      "length": 1,
+      "words": [
+        "pushed"
+      ]
+    }
+  ],
+  "replacement_count": 3,
+  "replacement_spans": [
+    {
+      "expected_start": 83,
+      "actual_start": 83,
+      "expected": [
+        "amundsen"
+      ],
+      "actual": [
+        "a",
+        "munson"
+      ],
+      "actual_confidence": 0.8618,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 176,
+      "actual_start": 177,
+      "expected": [
+        "he"
+      ],
+      "actual": [
+        "he'd"
+      ],
+      "actual_confidence": 0.7324,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 190,
+      "actual_start": 191,
+      "expected": [
+        "pushed"
+      ],
+      "actual": [
+        "push"
+      ],
+      "actual_confidence": 0.4832,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 231,
+      "actual_start": 232,
+      "expected": [],
+      "actual": [
+        "you"
+      ],
+      "actual_confidence": 0.2705
+    }
+  ],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 2,
+  "suspicious_substitution_words": 2,
+  "suspicious_content_substitution": true,
+  "transcript": "The history of exploration is also the history of humanity Being drawn toward places not yet seen At the end of the 15th century Columbus crossed the Atlantic And reached the Americas In the 16th century The fleet of Magellan achieved The first circumnavigation of the world Many sailors lost their lives But their voyage rewrote the map of the world In the 20th century The stage of exploration shifted to the poles The highest mountains, the deep sea and the sky In 1911, a Munson of Norway was the first to reach the South Pole. About a month later, the British team of Scott arrived, but all perished on their return. It was a story of endurance and sacrifice in a harsh environment. In 1953, Edmund Hillary and Tenzing Norgay became the first to stand on the summit of Everest. Their determination showed how strong the human spirit could be against the most difficult obstacles. The expedition of Ernest Shackleton Is another story still told today His ship was trapped in ice with no rescue in sight Yet he'd brought every member of his crew back alive It was leadership and courage Push to the extreme Today exploration heads toward the deep sea Outer space and the limits of the human body Why do people try to cross the boundary? Perhaps because the question itself What lies beyond is what makes us human you",
+  "segments": [
+    {
+      "start": 9.16,
+      "end": 17.02,
+      "text": "The history of exploration is also the history of humanity"
+    },
+    {
+      "start": 17.02,
+      "end": 24.48,
+      "text": "Being drawn toward places not yet seen"
+    },
+    {
+      "start": 26.14,
+      "end": 30.52,
+      "text": "At the end of the 15th century"
+    },
+    {
+      "start": 30.52,
+      "end": 34.84,
+      "text": "Columbus crossed the Atlantic"
+    },
+    {
+      "start": 34.84,
+      "end": 37.6,
+      "text": "And reached the Americas"
+    },
+    {
+      "start": 40.66,
+      "end": 43.16,
+      "text": "In the 16th century"
+    },
+    {
+      "start": 43.16,
+      "end": 47.26,
+      "text": "The fleet of Magellan achieved"
+    },
+    {
+      "start": 47.26,
+      "end": 52.0,
+      "text": "The first circumnavigation of the world"
+    },
+    {
+      "start": 52.0,
+      "end": 56.8,
+      "text": "Many sailors lost their lives"
+    },
+    {
+      "start": 56.8,
+      "end": 63.3,
+      "text": "But their voyage rewrote the map of the world"
+    },
+    {
+      "start": 65.98,
+      "end": 68.32,
+      "text": "In the 20th century"
+    },
+    {
+      "start": 68.32,
+      "end": 73.84,
+      "text": "The stage of exploration shifted to the poles"
+    },
+    {
+      "start": 73.84,
+      "end": 79.2,
+      "text": "The highest mountains, the deep sea and the sky"
+    },
+    {
+      "start": 79.2,
+      "end": 89.18,
+      "text": "In 1911, a Munson of Norway was the first to reach the South Pole."
+    },
+    {
+      "start": 90.46,
+      "end": 99.72,
+      "text": "About a month later, the British team of Scott arrived, but all perished on their return."
+    },
+    {
+      "start": 100.48,
+      "end": 108.42,
+      "text": "It was a story of endurance and sacrifice in a harsh environment."
+    },
+    {
+      "start": 109.2,
+      "end": 120.36,
+      "text": "In 1953, Edmund Hillary and Tenzing Norgay became the first to stand on the summit of Everest."
+    },
+    {
+      "start": 123.16,
+      "end": 131.76,
+      "text": "Their determination showed how strong the human spirit could be against the most difficult obstacles."
+    },
+    {
+      "start": 131.76,
+      "end": 136.82,
+      "text": "The expedition of Ernest Shackleton"
+    },
+    {
+      "start": 136.82,
+      "end": 143.2,
+      "text": "Is another story still told today"
+    },
+    {
+      "start": 144.94,
+      "end": 150.06,
+      "text": "His ship was trapped in ice with no rescue in sight"
+    },
+    {
+      "start": 150.06,
+      "end": 154.68,
+      "text": "Yet he'd brought every member of his crew back alive"
+    },
+    {
+      "start": 154.68,
+      "end": 157.56,
+      "text": "It was leadership and courage"
+    },
+    {
+      "start": 157.56,
+      "end": 159.36,
+      "text": "Push to the extreme"
+    },
+    {
+      "start": 159.36,
+      "end": 164.36,
+      "text": "Today exploration heads toward the deep sea"
+    },
+    {
+      "start": 164.36,
+      "end": 169.7,
+      "text": "Outer space and the limits of the human body"
+    },
+    {
+      "start": 170.36,
+      "end": 173.38,
+      "text": "Why do people try to cross the boundary?"
+    },
+    {
+      "start": 174.74,
+      "end": 177.56,
+      "text": "Perhaps because the question itself"
+    },
+    {
+      "start": 178.36,
+      "end": 184.26,
+      "text": "What lies beyond is what makes us human"
+    },
+    {
+      "start": 189.36,
+      "end": 189.46,
+      "text": "you"
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "schema_version": 3,
+  "sheet": "高校生編/suno_ready/H046-H160/H130.md",
+  "audio": "高校生編/suno_ready/generated/audio/H130/candidate3-full.mp3",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "audio_duration": 200.06,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0,
+  "expected_words": 284,
+  "transcribed_words": 284,
+  "matched_words": 281,
+  "coverage": 0.9894,
+  "precision": 0.9894,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 283,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 116,
+      "length": 2,
+      "words": [
+        "neuroscience",
+        "has"
+      ]
+    },
+    {
+      "start": 184,
+      "length": 1,
+      "words": [
+        "an"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 116,
+      "actual_start": 116,
+      "expected": [
+        "neuroscience",
+        "has"
+      ],
+      "actual": [
+        "neurosyns",
+        "have"
+      ],
+      "actual_confidence": 0.7056,
+      "substitution_words": 2,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 184,
+      "actual_start": 184,
+      "expected": [
+        "an"
+      ],
+      "actual": [
+        "and"
+      ],
+      "actual_confidence": 0.7324,
+      "substitution_words": 1,
+      "has_content_word": false
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": false,
+  "transcript": "Across time and space, music has always been with humanity. In the age when cave paintings were drawn, people were already playing instruments. Flutes made of bone, drums with stretched skins Though primitive, it was certainly music Music has a mysterious power Even between people who do not share a language Melody and rhythm reach the heart directly Across dialect and borders music Like a universal language connects people Ancient Greek philosophers regarded music as a branch of mathematics They thought the proportion and harmony of sound Reflected the order of the universe It may sound like a fancy theory But today's science too continues to describe the laws of music On the other hand, modern neurosyns have shown that music stimulates multiple regions of the brain simultaneously Hearing, movement, memory, emotion, few activities activate the brain as comprehensively as music Music therapy is employed even with patients with dementia and depression even those who have lost their words when they hear a song familiar from their youth their expressions may return music education should be highlighted in the growth of children Through learning and instrument, concentration, cooperation, and expression are nurtured But in recent years, school music education has been shrinking Budget restrictions is the main reason With the development of digital technology, an age has come when anyone can create music And share it with the world This is wonderful But at the same time Music has also come to be treated as mere consumer goods Music exists not for efficiency But for the nourishment of the heart Within our busy days Let us keep time to listen Attentively to music Even one song a day That is what keeps us human",
+  "segments": [
+    {
+      "start": 9.44,
+      "end": 15.38,
+      "text": "Across time and space, music has always been with humanity."
+    },
+    {
+      "start": 16.02,
+      "end": 23.76,
+      "text": "In the age when cave paintings were drawn, people were already playing instruments."
+    },
+    {
+      "start": 25.3,
+      "end": 30.0,
+      "text": "Flutes made of bone, drums with stretched skins"
+    },
+    {
+      "start": 30.0,
+      "end": 34.64,
+      "text": "Though primitive, it was certainly music"
+    },
+    {
+      "start": 36.26,
+      "end": 40.14,
+      "text": "Music has a mysterious power"
+    },
+    {
+      "start": 41.4,
+      "end": 45.06,
+      "text": "Even between people who do not share a language"
+    },
+    {
+      "start": 45.06,
+      "end": 48.92,
+      "text": "Melody and rhythm reach the heart directly"
+    },
+    {
+      "start": 50.2,
+      "end": 53.7,
+      "text": "Across dialect and borders music"
+    },
+    {
+      "start": 53.7,
+      "end": 57.6,
+      "text": "Like a universal language connects people"
+    },
+    {
+      "start": 57.6,
+      "end": 65.22,
+      "text": "Ancient Greek philosophers regarded music as a branch of mathematics"
+    },
+    {
+      "start": 67.0,
+      "end": 71.1,
+      "text": "They thought the proportion and harmony of sound"
+    },
+    {
+      "start": 71.1,
+      "end": 74.24,
+      "text": "Reflected the order of the universe"
+    },
+    {
+      "start": 74.24,
+      "end": 78.42,
+      "text": "It may sound like a fancy theory"
+    },
+    {
+      "start": 78.42,
+      "end": 84.54,
+      "text": "But today's science too continues to describe the laws of music"
+    },
+    {
+      "start": 84.54,
+      "end": 94.7,
+      "text": "On the other hand, modern neurosyns have shown that music stimulates multiple regions of the brain simultaneously"
+    },
+    {
+      "start": 95.22,
+      "end": 105.36,
+      "text": "Hearing, movement, memory, emotion, few activities activate the brain as comprehensively as music"
+    },
+    {
+      "start": 105.36,
+      "end": 108.02,
+      "text": "Music therapy"
+    },
+    {
+      "start": 108.02,
+      "end": 115.22,
+      "text": "is employed even with patients with dementia and depression"
+    },
+    {
+      "start": 117.56,
+      "end": 124.36,
+      "text": "even those who have lost their words when they hear a song familiar from their youth"
+    },
+    {
+      "start": 124.36,
+      "end": 132.42,
+      "text": "their expressions may return music education should be highlighted in the growth of children"
+    },
+    {
+      "start": 132.42,
+      "end": 140.52,
+      "text": "Through learning and instrument, concentration, cooperation, and expression are nurtured"
+    },
+    {
+      "start": 141.7,
+      "end": 148.94,
+      "text": "But in recent years, school music education has been shrinking"
+    },
+    {
+      "start": 148.94,
+      "end": 153.64,
+      "text": "Budget restrictions is the main reason"
+    },
+    {
+      "start": 154.16,
+      "end": 161.36,
+      "text": "With the development of digital technology, an age has come when anyone can create music"
+    },
+    {
+      "start": 161.36,
+      "end": 165.54,
+      "text": "And share it with the world"
+    },
+    {
+      "start": 166.46,
+      "end": 168.16,
+      "text": "This is wonderful"
+    },
+    {
+      "start": 168.16,
+      "end": 170.76,
+      "text": "But at the same time"
+    },
+    {
+      "start": 170.76,
+      "end": 176.14,
+      "text": "Music has also come to be treated as mere consumer goods"
+    },
+    {
+      "start": 177.42,
+      "end": 180.32,
+      "text": "Music exists not for efficiency"
+    },
+    {
+      "start": 180.32,
+      "end": 183.54,
+      "text": "But for the nourishment of the heart"
+    },
+    {
+      "start": 183.54,
+      "end": 186.14,
+      "text": "Within our busy days"
+    },
+    {
+      "start": 186.14,
+      "end": 189.34,
+      "text": "Let us keep time to listen"
+    },
+    {
+      "start": 189.34,
+      "end": 192.42,
+      "text": "Attentively to music"
+    },
+    {
+      "start": 192.42,
+      "end": 195.8,
+      "text": "Even one song a day"
+    },
+    {
+      "start": 195.8,
+      "end": 200.06,
+      "text": "That is what keeps us human"
+    }
+  ]
+}

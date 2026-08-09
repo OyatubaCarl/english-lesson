@@ -1,0 +1,257 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H114.md",
+  "audio": "高校生編/suno_ready/generated/audio/H114/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 156.841,
+  "verdict": "REVIEW_WRONG_LYRIC",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9949,
+  "expected_words": 198,
+  "transcribed_words": 197,
+  "matched_words": 195,
+  "coverage": 0.9848,
+  "precision": 0.9898,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 197,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 41,
+      "length": 1,
+      "words": [
+        "forty"
+      ]
+    },
+    {
+      "start": 101,
+      "length": 1,
+      "words": [
+        "cost"
+      ]
+    },
+    {
+      "start": 175,
+      "length": 1,
+      "words": [
+        "news"
+      ]
+    }
+  ],
+  "replacement_count": 2,
+  "replacement_spans": [
+    {
+      "expected_start": 101,
+      "actual_start": 100,
+      "expected": [
+        "cost"
+      ],
+      "actual": [
+        "costs"
+      ],
+      "actual_confidence": 0.6678,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 175,
+      "actual_start": 174,
+      "expected": [
+        "news"
+      ],
+      "actual": [
+        "new"
+      ],
+      "actual_confidence": 0.826,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 41,
+      "actual_start": 41,
+      "expected": [
+        "forty"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 1,
+  "suspicious_substitution_words": 1,
+  "suspicious_content_substitution": true,
+  "transcript": "A large social experiment revealed something about human nature Someone would lose a wallet and a stranger would find it The experiment was to assess whether the wallet was returned The result was astonishing Conducted in public places in more than 40 countries The more cash the wallet contained, the higher the percentage of return At first glance, this seems odd With more money, the temptation To keep it should be greater But humans typically strongly dislike Thinking of themselves as a thief The behavior of taking the money Upsets one's self-image The greater the amount The greater the psychological costs, so on the contrary The rate of return rises This experiment suggests that people care about others And about seeing themselves as honest It fundamentally challenges the notion Long presumed by economists That people act only out of self-interest Of course there are exceptions Crime is not zero But overall The majority of people are honest And wish to help others This fact brings us relief The wrongdoing we see In the new stands out But the quiet goodness of daily life Supports the world Trust in humanity Can rest on evidence From ordinary life",
+  "segments": [
+    {
+      "start": 9.48,
+      "end": 17.48,
+      "text": "A large social experiment revealed something about human nature"
+    },
+    {
+      "start": 18.0,
+      "end": 24.2,
+      "text": "Someone would lose a wallet and a stranger would find it"
+    },
+    {
+      "start": 24.2,
+      "end": 29.78,
+      "text": "The experiment was to assess whether the wallet was returned"
+    },
+    {
+      "start": 31.58,
+      "end": 34.92,
+      "text": "The result was astonishing"
+    },
+    {
+      "start": 36.92,
+      "end": 42.38,
+      "text": "Conducted in public places in more than 40 countries"
+    },
+    {
+      "start": 42.38,
+      "end": 48.28,
+      "text": "The more cash the wallet contained, the higher the percentage of return"
+    },
+    {
+      "start": 48.28,
+      "end": 51.6,
+      "text": "At first glance, this seems odd"
+    },
+    {
+      "start": 52.28,
+      "end": 55.02,
+      "text": "With more money, the temptation"
+    },
+    {
+      "start": 55.02,
+      "end": 57.9,
+      "text": "To keep it should be greater"
+    },
+    {
+      "start": 57.9,
+      "end": 61.36,
+      "text": "But humans typically strongly dislike"
+    },
+    {
+      "start": 61.36,
+      "end": 65.52,
+      "text": "Thinking of themselves as a thief"
+    },
+    {
+      "start": 67.16,
+      "end": 70.28,
+      "text": "The behavior of taking the money"
+    },
+    {
+      "start": 70.88,
+      "end": 73.36,
+      "text": "Upsets one's self-image"
+    },
+    {
+      "start": 74.28,
+      "end": 76.08,
+      "text": "The greater the amount"
+    },
+    {
+      "start": 76.08,
+      "end": 81.92,
+      "text": "The greater the psychological costs, so on the contrary"
+    },
+    {
+      "start": 81.92,
+      "end": 85.22,
+      "text": "The rate of return rises"
+    },
+    {
+      "start": 85.22,
+      "end": 90.18,
+      "text": "This experiment suggests that people care about others"
+    },
+    {
+      "start": 90.18,
+      "end": 94.36,
+      "text": "And about seeing themselves as honest"
+    },
+    {
+      "start": 94.36,
+      "end": 99.04,
+      "text": "It fundamentally challenges the notion"
+    },
+    {
+      "start": 99.04,
+      "end": 102.08,
+      "text": "Long presumed by economists"
+    },
+    {
+      "start": 102.08,
+      "end": 106.26,
+      "text": "That people act only out of self-interest"
+    },
+    {
+      "start": 107.36,
+      "end": 110.02,
+      "text": "Of course there are exceptions"
+    },
+    {
+      "start": 110.02,
+      "end": 112.82,
+      "text": "Crime is not zero"
+    },
+    {
+      "start": 112.82,
+      "end": 114.72,
+      "text": "But overall"
+    },
+    {
+      "start": 114.72,
+      "end": 118.02,
+      "text": "The majority of people are honest"
+    },
+    {
+      "start": 118.02,
+      "end": 119.74,
+      "text": "And wish to help others"
+    },
+    {
+      "start": 121.26,
+      "end": 125.88,
+      "text": "This fact brings us relief"
+    },
+    {
+      "start": 127.84,
+      "end": 130.54,
+      "text": "The wrongdoing we see"
+    },
+    {
+      "start": 130.54,
+      "end": 133.68,
+      "text": "In the new stands out"
+    },
+    {
+      "start": 134.54,
+      "end": 138.0,
+      "text": "But the quiet goodness of daily life"
+    },
+    {
+      "start": 138.54,
+      "end": 140.3,
+      "text": "Supports the world"
+    },
+    {
+      "start": 141.54,
+      "end": 144.06,
+      "text": "Trust in humanity"
+    },
+    {
+      "start": 144.06,
+      "end": 146.42,
+      "text": "Can rest on evidence"
+    },
+    {
+      "start": 147.54,
+      "end": 149.66,
+      "text": "From ordinary life"
+    }
+  ]
+}

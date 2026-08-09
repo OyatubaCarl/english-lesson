@@ -1,0 +1,244 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H075.md",
+  "audio": "高校生編/suno_ready/generated/audio/H075/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 154.681,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 0.9916,
+  "expected_words": 237,
+  "transcribed_words": 235,
+  "matched_words": 231,
+  "coverage": 0.9747,
+  "precision": 0.983,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 236,
+  "longest_missing_run": 2,
+  "largest_missing_runs": [
+    {
+      "start": 6,
+      "length": 2,
+      "words": [
+        "seven",
+        "thousand"
+      ]
+    },
+    {
+      "start": 58,
+      "length": 1,
+      "words": [
+        "mottainai"
+      ]
+    },
+    {
+      "start": 66,
+      "length": 1,
+      "words": [
+        "otsukaresama"
+      ]
+    },
+    {
+      "start": 134,
+      "length": 1,
+      "words": [
+        "and"
+      ]
+    },
+    {
+      "start": 182,
+      "length": 1,
+      "words": [
+        "deepl"
+      ]
+    }
+  ],
+  "replacement_count": 4,
+  "replacement_spans": [
+    {
+      "expected_start": 58,
+      "actual_start": 56,
+      "expected": [
+        "mottainai"
+      ],
+      "actual": [
+        "montenai"
+      ],
+      "actual_confidence": 0.5088,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 66,
+      "actual_start": 64,
+      "expected": [
+        "otsukaresama"
+      ],
+      "actual": [
+        "atsukarisama"
+      ],
+      "actual_confidence": 0.6801,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 134,
+      "actual_start": 132,
+      "expected": [
+        "and"
+      ],
+      "actual": [
+        "then"
+      ],
+      "actual_confidence": 0.0981,
+      "substitution_words": 1,
+      "has_content_word": true
+    },
+    {
+      "expected_start": 182,
+      "actual_start": 180,
+      "expected": [
+        "deepl"
+      ],
+      "actual": [
+        "deepol"
+      ],
+      "actual_confidence": 0.2026,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [],
+  "deletion_spans": [
+    {
+      "expected_start": 6,
+      "actual_start": 6,
+      "expected": [
+        "seven",
+        "thousand"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "There are said to be about 7000 languages spoken in the world today Each language reflects the way the people who speak it see the world Translation is the work of rebuilding the meaning of one language in the words of another But it is not a simple replacement of words For example, Japanese expressions such as Montenai The phrase used before a meal and Atsukarisama cannot be literally translated into English These words have the culture and sensitivity of Japan deeply embedded in them Conversely, English words like serendipity, nostalgia and privacy Are also hard to replace with a single Japanese word Each language has its meaning within its own cultural context The translation of poetry is one of the most difficult challenges To recreate in another language the rhythm, the sound Then even the silence between the lines of a poem Is nearly impossible even so translators Devote long hours to bring the spirit of the original Back to life in another tongue In recent years, the accuracy of machine translation by AI has improved rapidly. Google Translate and Deepol greatly help our daily communication. But the translation of cultural nuance and literary beauty is still the work of the human translator. Translation is the act of building a bridge between two worlds Even if no translation is perfect, as long as the work continues We draw a little closer to one another's hearts",
+  "segments": [
+    {
+      "start": 8.66,
+      "end": 16.2,
+      "text": "There are said to be about 7000 languages spoken in the world today"
+    },
+    {
+      "start": 17.0,
+      "end": 24.14,
+      "text": "Each language reflects the way the people who speak it see the world"
+    },
+    {
+      "start": 25.4,
+      "end": 32.36,
+      "text": "Translation is the work of rebuilding the meaning of one language in the words of another"
+    },
+    {
+      "start": 33.56,
+      "end": 37.02,
+      "text": "But it is not a simple replacement of words"
+    },
+    {
+      "start": 37.02,
+      "end": 42.42,
+      "text": "For example, Japanese expressions such as Montenai"
+    },
+    {
+      "start": 42.42,
+      "end": 50.8,
+      "text": "The phrase used before a meal and Atsukarisama cannot be literally translated into English"
+    },
+    {
+      "start": 50.8,
+      "end": 58.72,
+      "text": "These words have the culture and sensitivity of Japan deeply embedded in them"
+    },
+    {
+      "start": 60.4,
+      "end": 66.14,
+      "text": "Conversely, English words like serendipity, nostalgia and privacy"
+    },
+    {
+      "start": 66.14,
+      "end": 70.54,
+      "text": "Are also hard to replace with a single Japanese word"
+    },
+    {
+      "start": 70.54,
+      "end": 75.68,
+      "text": "Each language has its meaning within its own cultural context"
+    },
+    {
+      "start": 75.68,
+      "end": 81.54,
+      "text": "The translation of poetry is one of the most difficult challenges"
+    },
+    {
+      "start": 81.54,
+      "end": 85.9,
+      "text": "To recreate in another language the rhythm, the sound"
+    },
+    {
+      "start": 85.9,
+      "end": 89.46,
+      "text": "Then even the silence between the lines of a poem"
+    },
+    {
+      "start": 89.46,
+      "end": 94.4,
+      "text": "Is nearly impossible even so translators"
+    },
+    {
+      "start": 94.4,
+      "end": 98.94,
+      "text": "Devote long hours to bring the spirit of the original"
+    },
+    {
+      "start": 99.68,
+      "end": 103.3,
+      "text": "Back to life in another tongue"
+    },
+    {
+      "start": 105.68,
+      "end": 112.12,
+      "text": "In recent years, the accuracy of machine translation by AI has improved rapidly."
+    },
+    {
+      "start": 112.56,
+      "end": 118.36,
+      "text": "Google Translate and Deepol greatly help our daily communication."
+    },
+    {
+      "start": 118.9,
+      "end": 124.88,
+      "text": "But the translation of cultural nuance and literary beauty"
+    },
+    {
+      "start": 125.68,
+      "end": 129.58,
+      "text": "is still the work of the human translator."
+    },
+    {
+      "start": 131.12,
+      "end": 135.58,
+      "text": "Translation is the act of building a bridge between two worlds"
+    },
+    {
+      "start": 136.22,
+      "end": 142.22,
+      "text": "Even if no translation is perfect, as long as the work continues"
+    },
+    {
+      "start": 143.24,
+      "end": 147.94,
+      "text": "We draw a little closer to one another's hearts"
+    }
+  ]
+}

@@ -1,0 +1,1522 @@
+{
+  "lesson": "H126",
+  "title_ja": "桜と日本人",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 22,
+  "canonical_target_lines": 12,
+  "mixed_lines": 3,
+  "japanese_only_lines": 19,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 9.52,
+      "end": 15.44,
+      "english": "In spring, the cherry blossoms begin to open.",
+      "japanese": "春になると桜が咲き始めます。",
+      "mixed": "春になると桜が咲き始めます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "春になると桜が咲き始めます。",
+          "parts": [
+            {
+              "text": "春",
+              "ruby": "はる"
+            },
+            {
+              "text": "になると",
+              "ruby": ""
+            },
+            {
+              "text": "桜",
+              "ruby": "さくら"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "咲",
+              "ruby": "さ"
+            },
+            {
+              "text": "き",
+              "ruby": ""
+            },
+            {
+              "text": "始",
+              "ruby": "はじ"
+            },
+            {
+              "text": "めます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 2,
+      "start": 15.44,
+      "end": 25.88,
+      "english": "Last winter was especially harsh, and many people were anxious, waiting for the blossoms.",
+      "japanese": "昨年の冬は特に寒く、多くの人が不安を抱えて開花を待っていました。",
+      "mixed": "昨年の冬は特に寒く、多くの人が anxious を抱えて開花を待っていました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "昨年の冬は特に寒く、多くの人が ",
+          "parts": [
+            {
+              "text": "昨年",
+              "ruby": "さくねん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "冬",
+              "ruby": "ふゆ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "特",
+              "ruby": "とく"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "寒",
+              "ruby": "さむ"
+            },
+            {
+              "text": "く、",
+              "ruby": ""
+            },
+            {
+              "text": "多",
+              "ruby": "おお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "人",
+              "ruby": "ひと"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "anxious",
+          "ruby": "不安"
+        },
+        {
+          "type": "ja",
+          "text": " を抱えて開花を待っていました。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "抱",
+              "ruby": "かか"
+            },
+            {
+              "text": "えて",
+              "ruby": ""
+            },
+            {
+              "text": "開花",
+              "ruby": "かいか"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "待",
+              "ruby": "ま"
+            },
+            {
+              "text": "っていました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "Last",
+          "canonical_word": "last",
+          "meaning": "続く"
+        },
+        {
+          "english": "anxious",
+          "canonical_word": "anxious",
+          "meaning": "不安な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "anxious",
+          "reading": "不安",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "anxious",
+          "canonical_meaning": "不安な"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 3,
+      "start": 25.88,
+      "end": 31.64,
+      "english": "Cherry blossoms are a special flower for the Japanese.",
+      "japanese": "桜は日本人にとって特別な花です。",
+      "mixed": "桜は日本人にとって特別な花です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "桜は日本人にとって特別な花です。",
+          "parts": [
+            {
+              "text": "桜",
+              "ruby": "さくら"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "日本",
+              "ruby": "にっぽん"
+            },
+            {
+              "text": "人",
+              "ruby": "じん"
+            },
+            {
+              "text": "にとって",
+              "ruby": ""
+            },
+            {
+              "text": "特別",
+              "ruby": "とくべつ"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "花",
+              "ruby": "はな"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 4,
+      "start": 35.34,
+      "end": 45.44,
+      "english": "Since ancient times, they have been written into poems, drawn in paintings, and have become a feature of the culture.",
+      "japanese": "古くから詩に詠まれたり、絵画に描かれたりして文化の一つとなってきました。",
+      "mixed": "古くから詩に詠まれたり、絵画に描かれたりして文化の一つとなってきました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "古くから詩に詠まれたり、絵画に描かれたりして文化の一つとなってきました。",
+          "parts": [
+            {
+              "text": "古",
+              "ruby": "ふる"
+            },
+            {
+              "text": "くから",
+              "ruby": ""
+            },
+            {
+              "text": "詩",
+              "ruby": "し"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "詠",
+              "ruby": "よ"
+            },
+            {
+              "text": "まれたり、",
+              "ruby": ""
+            },
+            {
+              "text": "絵画",
+              "ruby": "かいが"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "描",
+              "ruby": "えが"
+            },
+            {
+              "text": "かれたりして",
+              "ruby": ""
+            },
+            {
+              "text": "文化",
+              "ruby": "ぶんか"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "一",
+              "ruby": "ひと"
+            },
+            {
+              "text": "つとなってきました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "feature",
+          "canonical_word": "feature",
+          "meaning": "特徴"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 5,
+      "start": 46.68,
+      "end": 56.88,
+      "english": "The custom of holding a flower-viewing party under the cherry trees has a history of more than a thousand years.",
+      "japanese": "桜の木の下で花見をする習慣は千年以上の歴史があります。",
+      "mixed": "桜の木の下で花見をする習慣は千年以上の歴史があります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "桜の木の下で花見をする習慣は千年以上の歴史があります。",
+          "parts": [
+            {
+              "text": "桜",
+              "ruby": "さくら"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "木",
+              "ruby": "き"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "下",
+              "ruby": "もと"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "花見",
+              "ruby": "はなみ"
+            },
+            {
+              "text": "をする",
+              "ruby": ""
+            },
+            {
+              "text": "習慣",
+              "ruby": "しゅうかん"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "千",
+              "ruby": "せん"
+            },
+            {
+              "text": "年",
+              "ruby": "ねん"
+            },
+            {
+              "text": "以上",
+              "ruby": "いじょう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "歴史",
+              "ruby": "れきし"
+            },
+            {
+              "text": "があります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "custom",
+          "canonical_word": "custom",
+          "meaning": "慣習"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 6,
+      "start": 56.88,
+      "end": 63.22,
+      "english": "When we see the cherry trees in full bloom, everyone holds their breath.",
+      "japanese": "満開の桜を見ると誰もが息を呑みます。",
+      "mixed": "満開の桜を見ると誰もが息を呑みます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "満開の桜を見ると誰もが息を呑みます。",
+          "parts": [
+            {
+              "text": "満開",
+              "ruby": "まんかい"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "桜",
+              "ruby": "さくら"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "ると",
+              "ruby": ""
+            },
+            {
+              "text": "誰",
+              "ruby": "だれ"
+            },
+            {
+              "text": "もが",
+              "ruby": ""
+            },
+            {
+              "text": "息",
+              "ruby": "いき"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "呑",
+              "ruby": "の"
+            },
+            {
+              "text": "みます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 7,
+      "start": 63.22,
+      "end": 71.52,
+      "english": "The sight of petals dancing in the wind is astonishing in its beauty.",
+      "japanese": "花びらが風に舞う姿は、その美しさに驚かされます。",
+      "mixed": "花びらが風に舞う姿は、その美しさに驚かされます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "花びらが風に舞う姿は、その美しさに驚かされます。",
+          "parts": [
+            {
+              "text": "花",
+              "ruby": "はな"
+            },
+            {
+              "text": "びらが",
+              "ruby": ""
+            },
+            {
+              "text": "風",
+              "ruby": "ふう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "舞",
+              "ruby": "ま"
+            },
+            {
+              "text": "う",
+              "ruby": ""
+            },
+            {
+              "text": "姿",
+              "ruby": "すがた"
+            },
+            {
+              "text": "は、その",
+              "ruby": ""
+            },
+            {
+              "text": "美",
+              "ruby": "うつく"
+            },
+            {
+              "text": "しさに",
+              "ruby": ""
+            },
+            {
+              "text": "驚",
+              "ruby": "おどろ"
+            },
+            {
+              "text": "かされます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "astonishing",
+          "canonical_word": "astonish",
+          "meaning": "驚かせる"
+        },
+        {
+          "english": "beauty",
+          "canonical_word": "beauty",
+          "meaning": "美"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 8,
+      "start": 72.66,
+      "end": 78.7,
+      "english": "But the beauty of the cherry blossom lies in its brevity.",
+      "japanese": "しかし、桜の美しさはその短さにあります。",
+      "mixed": "しかし、桜の美しさはその短さにあります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "しかし、桜の美しさはその短さにあります。",
+          "parts": [
+            {
+              "text": "しかし、",
+              "ruby": ""
+            },
+            {
+              "text": "桜",
+              "ruby": "さくら"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "美",
+              "ruby": "うつく"
+            },
+            {
+              "text": "しさはその",
+              "ruby": ""
+            },
+            {
+              "text": "短",
+              "ruby": "みじか"
+            },
+            {
+              "text": "さにあります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "beauty",
+          "canonical_word": "beauty",
+          "meaning": "美"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 9,
+      "start": 82.88,
+      "end": 85.66,
+      "english": "In about a week, the flowers fall.",
+      "japanese": "一週間ほどで花は散ってしまいます。",
+      "mixed": "一週間ほどで花は散ってしまいます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "一週間ほどで花は散ってしまいます。",
+          "parts": [
+            {
+              "text": "一",
+              "ruby": "いち"
+            },
+            {
+              "text": "週間",
+              "ruby": "しゅうかん"
+            },
+            {
+              "text": "ほどで",
+              "ruby": ""
+            },
+            {
+              "text": "花",
+              "ruby": "はな"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "散",
+              "ruby": "ち"
+            },
+            {
+              "text": "ってしまいます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 10,
+      "start": 85.992,
+      "end": 88.983,
+      "english": "The petals pile on the ground like a carpet.",
+      "japanese": "花びらが絨毯のように地面に重なります。",
+      "mixed": "花びらが絨毯のように地面に重なります。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "花びらが絨毯のように地面に重なります。",
+          "parts": [
+            {
+              "text": "花",
+              "ruby": "はな"
+            },
+            {
+              "text": "びらが",
+              "ruby": ""
+            },
+            {
+              "text": "絨毯",
+              "ruby": "じゅうたん"
+            },
+            {
+              "text": "のように",
+              "ruby": ""
+            },
+            {
+              "text": "地面",
+              "ruby": "じめん"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "重",
+              "ruby": "かさ"
+            },
+            {
+              "text": "なります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "pile",
+          "canonical_word": "pile",
+          "meaning": "積む"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 11,
+      "start": 89.402,
+      "end": 92.54,
+      "english": "That scene, too, has a unique beauty.",
+      "japanese": "あのシーンも独特の美しさがありますね。",
+      "mixed": "あのシーンも独特の美しさがありますね。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "あのシーンも独特の美しさがありますね。",
+          "parts": [
+            {
+              "text": "あのシーンも",
+              "ruby": ""
+            },
+            {
+              "text": "独特",
+              "ruby": "どくとく"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "美",
+              "ruby": "うつく"
+            },
+            {
+              "text": "しさがありますね。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "beauty",
+          "canonical_word": "beauty",
+          "meaning": "美"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 12,
+      "start": 93.66,
+      "end": 105.44,
+      "english": "In Japanese culture, cherry blossoms represent mono no aware — a quiet sadness and love toward that which inevitably fades.",
+      "japanese": "日本文化において、桜は「もののあはれ」、つまり静かな悲しみと、必然的に薄れていくものに対する愛を表します。",
+      "mixed": "日本文化において、桜は「もののあはれ」、つまり静かな悲しみと、必然的に薄れていくものに対する愛を表します。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "日本文化において、桜は「もののあはれ」、つまり静かな悲しみと、必然的に薄れていくものに対する愛を表します。",
+          "parts": [
+            {
+              "text": "日本",
+              "ruby": "にっぽん"
+            },
+            {
+              "text": "文化",
+              "ruby": "ぶんか"
+            },
+            {
+              "text": "において、",
+              "ruby": ""
+            },
+            {
+              "text": "桜",
+              "ruby": "さくら"
+            },
+            {
+              "text": "は「もののあはれ」、つまり",
+              "ruby": ""
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かな",
+              "ruby": ""
+            },
+            {
+              "text": "悲",
+              "ruby": "かな"
+            },
+            {
+              "text": "しみと、",
+              "ruby": ""
+            },
+            {
+              "text": "必然",
+              "ruby": "ひつぜん"
+            },
+            {
+              "text": "的",
+              "ruby": "てき"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "薄",
+              "ruby": "うす"
+            },
+            {
+              "text": "れていくものに",
+              "ruby": ""
+            },
+            {
+              "text": "対",
+              "ruby": "たい"
+            },
+            {
+              "text": "する",
+              "ruby": ""
+            },
+            {
+              "text": "愛",
+              "ruby": "あい"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "表",
+              "ruby": "あらわ"
+            },
+            {
+              "text": "します。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "represent",
+          "canonical_word": "represent",
+          "meaning": "代表する"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 13,
+      "start": 107.42,
+      "end": 112.24,
+      "english": "Because the time of bloom is short, it feels all the more beautiful.",
+      "japanese": "咲いている時間が短いので、余計に美しく感じます。",
+      "mixed": "咲いている時間が短いので、余計に美しく感じます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "咲いている時間が短いので、余計に美しく感じます。",
+          "parts": [
+            {
+              "text": "咲",
+              "ruby": "さ"
+            },
+            {
+              "text": "いている",
+              "ruby": ""
+            },
+            {
+              "text": "時間",
+              "ruby": "じかん"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "短",
+              "ruby": "みじか"
+            },
+            {
+              "text": "いので、",
+              "ruby": ""
+            },
+            {
+              "text": "余計",
+              "ruby": "よけい"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "美",
+              "ruby": "うつく"
+            },
+            {
+              "text": "しく",
+              "ruby": ""
+            },
+            {
+              "text": "感",
+              "ruby": "かん"
+            },
+            {
+              "text": "じます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 14,
+      "start": 112.24,
+      "end": 117.44,
+      "english": "Life, too, is as fleeting as cherry blossoms.",
+      "japanese": "人生も桜のように儚いものです。",
+      "mixed": "人生も桜のように儚いものです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "人生も桜のように儚いものです。",
+          "parts": [
+            {
+              "text": "人生",
+              "ruby": "じんせい"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "桜",
+              "ruby": "さくら"
+            },
+            {
+              "text": "のように",
+              "ruby": ""
+            },
+            {
+              "text": "儚",
+              "ruby": "はかな"
+            },
+            {
+              "text": "いものです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 15,
+      "start": 117.44,
+      "end": 121.84,
+      "english": "A decade, looking back, passes in an instant.",
+      "japanese": "振り返ると10年はあっという間に過ぎてしまいます。",
+      "mixed": "振り返ると decade はあっという間に過ぎてしまいます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "振り返ると ",
+          "parts": [
+            {
+              "text": "振り返",
+              "ruby": "ふりかえ"
+            },
+            {
+              "text": "ると",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "decade",
+          "ruby": "10年"
+        },
+        {
+          "type": "ja",
+          "text": " はあっという間に過ぎてしまいます。",
+          "parts": [
+            {
+              "text": "はあっという",
+              "ruby": ""
+            },
+            {
+              "text": "間",
+              "ruby": "ま"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "過",
+              "ruby": "す"
+            },
+            {
+              "text": "ぎてしまいます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "decade",
+          "canonical_word": "decade",
+          "meaning": "10年"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "decade",
+          "reading": "10年",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "decade",
+          "canonical_meaning": "10年"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 16,
+      "start": 121.84,
+      "end": 127.52,
+      "english": "Youth, health, time with loved ones — none of it will last forever.",
+      "japanese": "若さ、健康、愛する人との時間、どれも永遠に続くものではありません。",
+      "mixed": "若さ、健康、愛する人との時間、どれも永遠に last ものではありません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "若さ、健康、愛する人との時間、どれも永遠に ",
+          "parts": [
+            {
+              "text": "若",
+              "ruby": "わか"
+            },
+            {
+              "text": "さ、",
+              "ruby": ""
+            },
+            {
+              "text": "健康",
+              "ruby": "けんこう"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "愛",
+              "ruby": "あい"
+            },
+            {
+              "text": "する",
+              "ruby": ""
+            },
+            {
+              "text": "人",
+              "ruby": "ひと"
+            },
+            {
+              "text": "との",
+              "ruby": ""
+            },
+            {
+              "text": "時間",
+              "ruby": "じかん"
+            },
+            {
+              "text": "、どれも",
+              "ruby": ""
+            },
+            {
+              "text": "永遠",
+              "ruby": "えいえん"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "last",
+          "ruby": "続く"
+        },
+        {
+          "type": "ja",
+          "text": " ものではありません。",
+          "parts": [
+            {
+              "text": "ものではありません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "last",
+          "canonical_word": "last",
+          "meaning": "続く"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "last",
+          "reading": "続く",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "last",
+          "canonical_meaning": "続く"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 17,
+      "start": 133.8,
+      "end": 139.36,
+      "english": "That is why we should cherish this moment, right now.",
+      "japanese": "だからこそ、私たちは今、この瞬間を大切にしなければなりません。",
+      "mixed": "だからこそ、私たちは今、この瞬間を大切にしなければなりません。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "だからこそ、私たちは今、この瞬間を大切にしなければなりません。",
+          "parts": [
+            {
+              "text": "だからこそ、",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "たちは",
+              "ruby": ""
+            },
+            {
+              "text": "今",
+              "ruby": "いま"
+            },
+            {
+              "text": "、この",
+              "ruby": ""
+            },
+            {
+              "text": "瞬間",
+              "ruby": "しゅんかん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "大切",
+              "ruby": "たいせつ"
+            },
+            {
+              "text": "にしなければなりません。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 18,
+      "start": 140.72,
+      "end": 152.36,
+      "english": "Under the cherry trees, to speak with friends, laugh with family, and quietly look up at the sky alone.",
+      "japanese": "桜の木の下で、友達と語り合ったり、家族と笑ったり、一人静かに空を見上げたり。",
+      "mixed": "桜の木の下で、友達と語り合ったり、家族と笑ったり、一人静かに空を見上げたり。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "桜の木の下で、友達と語り合ったり、家族と笑ったり、一人静かに空を見上げたり。",
+          "parts": [
+            {
+              "text": "桜",
+              "ruby": "さくら"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "木",
+              "ruby": "き"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "下",
+              "ruby": "もと"
+            },
+            {
+              "text": "で、",
+              "ruby": ""
+            },
+            {
+              "text": "友達",
+              "ruby": "ともだち"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "語り合",
+              "ruby": "かたりあ"
+            },
+            {
+              "text": "ったり、",
+              "ruby": ""
+            },
+            {
+              "text": "家族",
+              "ruby": "かぞく"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "笑",
+              "ruby": "わら"
+            },
+            {
+              "text": "ったり、",
+              "ruby": ""
+            },
+            {
+              "text": "一人",
+              "ruby": "ひとり"
+            },
+            {
+              "text": "静",
+              "ruby": "しず"
+            },
+            {
+              "text": "かに",
+              "ruby": ""
+            },
+            {
+              "text": "空",
+              "ruby": "そら"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "見上",
+              "ruby": "みあ"
+            },
+            {
+              "text": "げたり。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 19,
+      "start": 152.36,
+      "end": 158.14,
+      "english": "The sum of such small moments is life itself.",
+      "japanese": "そんな小さな瞬間の積み重ねが人生そのものです。",
+      "mixed": "そんな小さな瞬間の積み重ねが人生そのものです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "そんな小さな瞬間の積み重ねが人生そのものです。",
+          "parts": [
+            {
+              "text": "そんな",
+              "ruby": ""
+            },
+            {
+              "text": "小",
+              "ruby": "ちい"
+            },
+            {
+              "text": "さな",
+              "ruby": ""
+            },
+            {
+              "text": "瞬間",
+              "ruby": "しゅんかん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "積",
+              "ruby": "つ"
+            },
+            {
+              "text": "み",
+              "ruby": ""
+            },
+            {
+              "text": "重",
+              "ruby": "かさ"
+            },
+            {
+              "text": "ねが",
+              "ruby": ""
+            },
+            {
+              "text": "人生",
+              "ruby": "じんせい"
+            },
+            {
+              "text": "そのものです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "sum",
+          "canonical_word": "sum",
+          "meaning": "合計"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 20,
+      "start": 158.14,
+      "end": 163.68,
+      "english": "The cherry trees bloomed again this year.",
+      "japanese": "今年も桜が咲きました。",
+      "mixed": "今年も桜が咲きました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "今年も桜が咲きました。",
+          "parts": [
+            {
+              "text": "今年",
+              "ruby": "ことし"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "桜",
+              "ruby": "さくら"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "咲",
+              "ruby": "さ"
+            },
+            {
+              "text": "きました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 21,
+      "start": 163.68,
+      "end": 174.52,
+      "english": "Next year, and the year after, I want to see as many cherry blossoms as I can.",
+      "japanese": "来年も再来年もできるだけたくさんの桜を見たいです。",
+      "mixed": "来年も再来年もできるだけたくさんの桜を見たいです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "来年も再来年もできるだけたくさんの桜を見たいです。",
+          "parts": [
+            {
+              "text": "来年",
+              "ruby": "らいねん"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "再来",
+              "ruby": "さらい"
+            },
+            {
+              "text": "年",
+              "ruby": "ねん"
+            },
+            {
+              "text": "もできるだけたくさんの",
+              "ruby": ""
+            },
+            {
+              "text": "桜",
+              "ruby": "さくら"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "たいです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 22,
+      "start": 176.18,
+      "end": 181.68,
+      "english": "That simple wish is what keeps us alive.",
+      "japanese": "そのシンプルな願いが私たちを生かします。",
+      "mixed": "そのシンプルな願いが私たちを生かします。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "そのシンプルな願いが私たちを生かします。",
+          "parts": [
+            {
+              "text": "そのシンプルな",
+              "ruby": ""
+            },
+            {
+              "text": "願",
+              "ruby": "ねが"
+            },
+            {
+              "text": "いが",
+              "ruby": ""
+            },
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "たちを",
+              "ruby": ""
+            },
+            {
+              "text": "生",
+              "ruby": "い"
+            },
+            {
+              "text": "かします。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "simple",
+          "canonical_word": "simple",
+          "meaning": "単純な"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    }
+  ]
+}

@@ -1,0 +1,1369 @@
+{
+  "lesson": "H097",
+  "title_ja": "環境と動物",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 14,
+  "canonical_target_lines": 13,
+  "mixed_lines": 13,
+  "japanese_only_lines": 1,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 4.48,
+      "end": 11.26,
+      "english": "On Earth, there are more than 6,000 known species of mammals alone.",
+      "japanese": "地球上には、既知の哺乳類だけでも 6,000 種以上が存在します。",
+      "mixed": "地球上には、既知の mammals だけでも6,000 species 以上が存在します。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "地球上には、既知の ",
+          "parts": [
+            {
+              "text": "地球",
+              "ruby": "ちきゅう"
+            },
+            {
+              "text": "上",
+              "ruby": "じょう"
+            },
+            {
+              "text": "には、",
+              "ruby": ""
+            },
+            {
+              "text": "既知",
+              "ruby": "きち"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "mammals",
+          "ruby": "哺乳類"
+        },
+        {
+          "type": "ja",
+          "text": " だけでも6,000 ",
+          "parts": [
+            {
+              "text": "だけでも6,000",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "species",
+          "ruby": "種"
+        },
+        {
+          "type": "ja",
+          "text": " 以上が存在します。",
+          "parts": [
+            {
+              "text": "以上",
+              "ruby": "いじょう"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            },
+            {
+              "text": "存在",
+              "ruby": "そんざい"
+            },
+            {
+              "text": "します。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "species",
+          "canonical_word": "species",
+          "meaning": "種"
+        },
+        {
+          "english": "mammals",
+          "canonical_word": "mammal",
+          "meaning": "哺乳類"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "mammals",
+          "reading": "哺乳類",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "mammal",
+          "canonical_meaning": "哺乳類"
+        },
+        {
+          "english": "species",
+          "reading": "種",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "species",
+          "canonical_meaning": "種"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 2,
+      "start": 11.72,
+      "end": 16.44,
+      "english": "The number of insect species is estimated in the millions.",
+      "japanese": "昆虫の種の数は数百万種と推定されています。",
+      "mixed": "insect の species の数は数百万種と推定されています。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "insect",
+          "ruby": "昆虫"
+        },
+        {
+          "type": "ja",
+          "text": " の ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "species",
+          "ruby": "種"
+        },
+        {
+          "type": "ja",
+          "text": " の数は数百万種と推定されています。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "数",
+              "ruby": "かず"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "数百",
+              "ruby": "すうひゃく"
+            },
+            {
+              "text": "万",
+              "ruby": "まん"
+            },
+            {
+              "text": "種",
+              "ruby": "しゅ"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "推定",
+              "ruby": "すいてい"
+            },
+            {
+              "text": "されています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "insect",
+          "canonical_word": "insect",
+          "meaning": "昆虫"
+        },
+        {
+          "english": "species",
+          "canonical_word": "species",
+          "meaning": "種"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "insect",
+          "reading": "昆虫",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "insect",
+          "canonical_meaning": "昆虫"
+        },
+        {
+          "english": "species",
+          "reading": "種",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "species",
+          "canonical_meaning": "種"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 3,
+      "start": 17.1,
+      "end": 26.2,
+      "english": "Tropical rainforests cover only about six percent of the Earth's surface, yet more than half of all species dwell there.",
+      "japanese": "熱帯雨林は地球の表面の約 6% しかカバーしていませんが、全種の半分以上がそこに生息しています。",
+      "mixed": "Tropical 雨林は地球表面の約6%しか占めませんが、全 species の半分以上がそこに dwell しています。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "Tropical",
+          "ruby": "熱帯の"
+        },
+        {
+          "type": "ja",
+          "text": " 雨林は地球表面の約6%しか占めませんが、全 ",
+          "parts": [
+            {
+              "text": "雨林",
+              "ruby": "うりん"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "地球",
+              "ruby": "ちきゅう"
+            },
+            {
+              "text": "表面",
+              "ruby": "ひょうめん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "約",
+              "ruby": "やく"
+            },
+            {
+              "text": "6%しか",
+              "ruby": ""
+            },
+            {
+              "text": "占",
+              "ruby": "し"
+            },
+            {
+              "text": "めませんが、",
+              "ruby": ""
+            },
+            {
+              "text": "全",
+              "ruby": "ぜん"
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "species",
+          "ruby": "種"
+        },
+        {
+          "type": "ja",
+          "text": " の半分以上がそこに ",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "半分",
+              "ruby": "はんぶん"
+            },
+            {
+              "text": "以上",
+              "ruby": "いじょう"
+            },
+            {
+              "text": "がそこに",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "dwell",
+          "ruby": "生息"
+        },
+        {
+          "type": "ja",
+          "text": " しています。",
+          "parts": [
+            {
+              "text": "しています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "Tropical",
+          "canonical_word": "Tropical",
+          "meaning": "熱帯の"
+        },
+        {
+          "english": "species",
+          "canonical_word": "species",
+          "meaning": "種"
+        },
+        {
+          "english": "dwell",
+          "canonical_word": "dwell",
+          "meaning": "住む"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Tropical",
+          "reading": "熱帯の",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "Tropical",
+          "canonical_meaning": "熱帯の"
+        },
+        {
+          "english": "species",
+          "reading": "種",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "species",
+          "canonical_meaning": "種"
+        },
+        {
+          "english": "dwell",
+          "reading": "生息",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "dwell",
+          "canonical_meaning": "住む"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 4,
+      "start": 26.2,
+      "end": 33.6,
+      "english": "These hotspots of biodiversity are shrinking rapidly.",
+      "japanese": "これらの生物多様性のホットスポットは急速に縮小しています。",
+      "mixed": "これらの生物多様性のホットスポットは急速に縮小しています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "これらの生物多様性のホットスポットは急速に縮小しています。",
+          "parts": [
+            {
+              "text": "これらの",
+              "ruby": ""
+            },
+            {
+              "text": "生物",
+              "ruby": "せいぶつ"
+            },
+            {
+              "text": "多様",
+              "ruby": "たよう"
+            },
+            {
+              "text": "性",
+              "ruby": "せい"
+            },
+            {
+              "text": "のホットスポットは",
+              "ruby": ""
+            },
+            {
+              "text": "急速",
+              "ruby": "きゅうそく"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "縮小",
+              "ruby": "しゅくしょう"
+            },
+            {
+              "text": "しています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 5,
+      "start": 37.0,
+      "end": 39.54,
+      "english": "The causes are numerous.",
+      "japanese": "原因は数多くあります。",
+      "mixed": "原因は numerous です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "原因は ",
+          "parts": [
+            {
+              "text": "原因",
+              "ruby": "げんいん"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "numerous",
+          "ruby": "数多く"
+        },
+        {
+          "type": "ja",
+          "text": " です。",
+          "parts": [
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "numerous",
+          "canonical_word": "numerous",
+          "meaning": "多数の"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "numerous",
+          "reading": "数多く",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "numerous",
+          "canonical_meaning": "多数の"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 6,
+      "start": 39.54,
+      "end": 43.62,
+      "english": "Logging, conversion to farmland, urban development.",
+      "japanese": "伐採、農地転用、都市開発。",
+      "mixed": "伐採、農地転用、 urban 開発。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "伐採、農地転用、 ",
+          "parts": [
+            {
+              "text": "伐採",
+              "ruby": "ばっさい"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "農地",
+              "ruby": "のうち"
+            },
+            {
+              "text": "転用",
+              "ruby": "てんよう"
+            },
+            {
+              "text": "、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "urban",
+          "ruby": "都市"
+        },
+        {
+          "type": "ja",
+          "text": " 開発。",
+          "parts": [
+            {
+              "text": "開発",
+              "ruby": "かいはつ"
+            },
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "urban",
+          "canonical_word": "urban",
+          "meaning": "都市の"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "urban",
+          "reading": "都市",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "urban",
+          "canonical_meaning": "都市の"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 7,
+      "start": 43.62,
+      "end": 49.54,
+      "english": "Human activity is steadily taking the habitat of animals away.",
+      "japanese": "人間の活動により、動物の生息地は着実に奪われています。",
+      "mixed": "人間の活動により、動物の habitat は steadily 奪われています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "人間の活動により、動物の ",
+          "parts": [
+            {
+              "text": "人間",
+              "ruby": "にんげん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "活動",
+              "ruby": "かつどう"
+            },
+            {
+              "text": "により、",
+              "ruby": ""
+            },
+            {
+              "text": "動物",
+              "ruby": "どうぶつ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "habitat",
+          "ruby": "生息地"
+        },
+        {
+          "type": "ja",
+          "text": " は ",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "steadily",
+          "ruby": "着実に"
+        },
+        {
+          "type": "ja",
+          "text": " 奪われています。",
+          "parts": [
+            {
+              "text": "奪",
+              "ruby": "うば"
+            },
+            {
+              "text": "われています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "steadily",
+          "canonical_word": "steadily",
+          "meaning": "着実に"
+        },
+        {
+          "english": "habitat",
+          "canonical_word": "habitat",
+          "meaning": "生息地"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "habitat",
+          "reading": "生息地",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "habitat",
+          "canonical_meaning": "生息地"
+        },
+        {
+          "english": "steadily",
+          "reading": "着実に",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "steadily",
+          "canonical_meaning": "着実に"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 8,
+      "start": 49.54,
+      "end": 52.6,
+      "english": "The oceans are also vulnerable.",
+      "japanese": "海洋も脆弱です。",
+      "mixed": "海洋も vulnerable です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "海洋も ",
+          "parts": [
+            {
+              "text": "海洋",
+              "ruby": "かいよう"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "vulnerable",
+          "ruby": "脆弱"
+        },
+        {
+          "type": "ja",
+          "text": " です。",
+          "parts": [
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "vulnerable",
+          "canonical_word": "vulnerable",
+          "meaning": "脆弱な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "vulnerable",
+          "reading": "脆弱",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "vulnerable",
+          "canonical_meaning": "脆弱な"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 9,
+      "start": 52.6,
+      "end": 59.72,
+      "english": "Plastic pollution harms whales and turtles, and the chemicals carried by the tide threaten the food chain.",
+      "japanese": "プラスチック汚染はクジラやカメに被害を与え、潮によって運ばれる化学物質は食物連鎖を脅かしています。",
+      "mixed": "Plastic 汚染は whales や turtles に被害を与え、tide によって運ばれる化学物質は食物連鎖を threaten しています。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "Plastic",
+          "ruby": "プラスチック"
+        },
+        {
+          "type": "ja",
+          "text": " 汚染は ",
+          "parts": [
+            {
+              "text": "汚染",
+              "ruby": "おせん"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "whales",
+          "ruby": "クジラ"
+        },
+        {
+          "type": "ja",
+          "text": " や ",
+          "parts": [
+            {
+              "text": "や",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "turtles",
+          "ruby": "カメ"
+        },
+        {
+          "type": "ja",
+          "text": " に被害を与え、",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "被害",
+              "ruby": "ひがい"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "与",
+              "ruby": "あた"
+            },
+            {
+              "text": "え、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "tide",
+          "ruby": "潮"
+        },
+        {
+          "type": "ja",
+          "text": " によって運ばれる化学物質は食物連鎖を ",
+          "parts": [
+            {
+              "text": "によって",
+              "ruby": ""
+            },
+            {
+              "text": "運",
+              "ruby": "はこ"
+            },
+            {
+              "text": "ばれる",
+              "ruby": ""
+            },
+            {
+              "text": "化学",
+              "ruby": "かがく"
+            },
+            {
+              "text": "物質",
+              "ruby": "ぶっしつ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "食物",
+              "ruby": "しょくもつ"
+            },
+            {
+              "text": "連鎖",
+              "ruby": "れんさ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "threaten",
+          "ruby": "脅かして"
+        },
+        {
+          "type": "ja",
+          "text": " しています。",
+          "parts": [
+            {
+              "text": "しています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "Plastic",
+          "canonical_word": "plastic",
+          "meaning": "プラスチック"
+        },
+        {
+          "english": "whales",
+          "canonical_word": "whale",
+          "meaning": "鯨"
+        },
+        {
+          "english": "turtles",
+          "canonical_word": "turtle",
+          "meaning": "亀"
+        },
+        {
+          "english": "tide",
+          "canonical_word": "tide",
+          "meaning": "潮"
+        },
+        {
+          "english": "threaten",
+          "canonical_word": "threaten",
+          "meaning": "脅かす"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Plastic",
+          "reading": "プラスチック",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "plastic",
+          "canonical_meaning": "プラスチック"
+        },
+        {
+          "english": "whales",
+          "reading": "クジラ",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "whale",
+          "canonical_meaning": "鯨"
+        },
+        {
+          "english": "turtles",
+          "reading": "カメ",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "turtle",
+          "canonical_meaning": "亀"
+        },
+        {
+          "english": "tide",
+          "reading": "潮",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "tide",
+          "canonical_meaning": "潮"
+        },
+        {
+          "english": "threaten",
+          "reading": "脅かして",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "threaten",
+          "canonical_meaning": "脅かす"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 10,
+      "start": 60.94,
+      "end": 66.4,
+      "english": "But conservation efforts are beginning to yield results.",
+      "japanese": "しかし、保全活動は成果を上げ始めています。",
+      "mixed": "しかし、保全活動は成果を yield し始めています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "しかし、保全活動は成果を ",
+          "parts": [
+            {
+              "text": "しかし、",
+              "ruby": ""
+            },
+            {
+              "text": "保全",
+              "ruby": "ほぜん"
+            },
+            {
+              "text": "活動",
+              "ruby": "かつどう"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "成果",
+              "ruby": "せいか"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "yield",
+          "ruby": "もたらし"
+        },
+        {
+          "type": "ja",
+          "text": " し始めています。",
+          "parts": [
+            {
+              "text": "し",
+              "ruby": ""
+            },
+            {
+              "text": "始",
+              "ruby": "はじ"
+            },
+            {
+              "text": "めています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "yield",
+          "canonical_word": "yield",
+          "meaning": "もたらす"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "yield",
+          "reading": "もたらし",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "yield",
+          "canonical_meaning": "もたらす"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 11,
+      "start": 68.44,
+      "end": 80.28,
+      "english": "One Indigenous community has protected the forest of its ancestors and established a pioneering model of community-led conservation.",
+      "japanese": "ある先住民コミュニティは、先祖たちの森林を保護し、コミュニティ主導の保全の先駆的なモデルを確立しました。",
+      "mixed": "ある先住民コミュニティは、先祖たちの森林を保護し、コミュニティ主導の pioneering な保全モデルを確立しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ある先住民コミュニティは、先祖たちの森林を保護し、コミュニティ主導の ",
+          "parts": [
+            {
+              "text": "ある",
+              "ruby": ""
+            },
+            {
+              "text": "先住",
+              "ruby": "せんじゅう"
+            },
+            {
+              "text": "民",
+              "ruby": "みん"
+            },
+            {
+              "text": "コミュニティは、",
+              "ruby": ""
+            },
+            {
+              "text": "先祖",
+              "ruby": "せんぞ"
+            },
+            {
+              "text": "たちの",
+              "ruby": ""
+            },
+            {
+              "text": "森林",
+              "ruby": "しんりん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "保護",
+              "ruby": "ほご"
+            },
+            {
+              "text": "し、コミュニティ",
+              "ruby": ""
+            },
+            {
+              "text": "主導",
+              "ruby": "しゅどう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "pioneering",
+          "ruby": "先駆的な"
+        },
+        {
+          "type": "ja",
+          "text": " な保全モデルを確立しました。",
+          "parts": [
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "保全",
+              "ruby": "ほぜん"
+            },
+            {
+              "text": "モデルを",
+              "ruby": ""
+            },
+            {
+              "text": "確立",
+              "ruby": "かくりつ"
+            },
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "pioneering",
+          "canonical_word": "pioneer",
+          "meaning": "先駆者"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "pioneering",
+          "reading": "先駆的な",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "pioneer",
+          "canonical_meaning": "先駆者"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 12,
+      "start": 80.28,
+      "end": 86.02,
+      "english": "An ecosystem is built on a subtle balance.",
+      "japanese": "エコシステムは微妙なバランスの上に構築されています。",
+      "mixed": "エコシステムは subtle なバランスの上に成り立っています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "エコシステムは ",
+          "parts": [
+            {
+              "text": "エコシステムは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "subtle",
+          "ruby": "微妙な"
+        },
+        {
+          "type": "ja",
+          "text": " なバランスの上に成り立っています。",
+          "parts": [
+            {
+              "text": "なバランスの",
+              "ruby": ""
+            },
+            {
+              "text": "上",
+              "ruby": "うえ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "成り立",
+              "ruby": "なりた"
+            },
+            {
+              "text": "っています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "subtle",
+          "canonical_word": "subtle",
+          "meaning": "微妙な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "subtle",
+          "reading": "微妙な",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "subtle",
+          "canonical_meaning": "微妙な"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    },
+    {
+      "line": 13,
+      "start": 86.02,
+      "end": 94.48,
+      "english": "The loss of one species affects others in a chain.",
+      "japanese": "ある種の喪失は連鎖的に他の種に影響を及ぼします。",
+      "mixed": "ある species の喪失は連鎖的に他の種に影響を及ぼします。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ある ",
+          "parts": [
+            {
+              "text": "ある",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "species",
+          "ruby": "種"
+        },
+        {
+          "type": "ja",
+          "text": " の喪失は連鎖的に他の種に影響を及ぼします。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "喪失",
+              "ruby": "そうしつ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "連鎖",
+              "ruby": "れんさ"
+            },
+            {
+              "text": "的",
+              "ruby": "てき"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "他",
+              "ruby": "ほか"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "種",
+              "ruby": "たね"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "影響",
+              "ruby": "えいきょう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "及",
+              "ruby": "およ"
+            },
+            {
+              "text": "ぼします。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "species",
+          "canonical_word": "species",
+          "meaning": "種"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "species",
+          "reading": "種",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "species",
+          "canonical_meaning": "種"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 14,
+      "start": 96.46,
+      "end": 107.78,
+      "english": "Whether we can find the wisdom to coexist with nature will determine the future of this planet.",
+      "japanese": "自然と共生する知恵を見つけられるかどうかが、この地球の未来を左右します。",
+      "mixed": "自然と coexist する知恵を見つけられるかどうかが、この地球の未来を左右します。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "自然と ",
+          "parts": [
+            {
+              "text": "自然",
+              "ruby": "しぜん"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "coexist",
+          "ruby": "共生"
+        },
+        {
+          "type": "ja",
+          "text": " する知恵を見つけられるかどうかが、この地球の未来を左右します。",
+          "parts": [
+            {
+              "text": "する",
+              "ruby": ""
+            },
+            {
+              "text": "知恵",
+              "ruby": "ちえ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "つけられるかどうかが、この",
+              "ruby": ""
+            },
+            {
+              "text": "地球",
+              "ruby": "ちきゅう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "未来",
+              "ruby": "みらい"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "左右",
+              "ruby": "さゆう"
+            },
+            {
+              "text": "します。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "coexist",
+          "canonical_word": "coexist",
+          "meaning": "共存する"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "coexist",
+          "reading": "共生",
+          "source": "canonical_new_word_manual",
+          "canonical_word": "coexist",
+          "canonical_meaning": "共存する"
+        }
+      ],
+      "preparation": "canonical_new_words_manual"
+    }
+  ]
+}

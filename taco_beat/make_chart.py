@@ -77,6 +77,15 @@ FILLER_EXCLUDE = 0.38 # 拍の±この範囲に単語があればフィラーを
 END_MARGIN = 0.60     # 曲の末尾この秒数にはフィラーを置かない [s]
 BPM_MIN, BPM_MAX = 55.0, 110.0  # BPM 探索範囲（範囲外の曲はここを調整）
 
+# --- Whisper の伴奏誤認識を除外する条件 ---
+# 長い間奏で、同じ低信頼の1語（例: "Music"）を何度も返す場合だけ除外する。
+# 単発の低信頼語は実際の歌詞である可能性があるため、この条件では消さない。
+HALLUCINATION_NO_SPEECH = 0.75
+HALLUCINATION_WORD_PROB = 0.01
+HALLUCINATION_REPEAT_COUNT = 3
+OUTRO_HALLUCINATION_RE = re.compile(
+    r"^thanks?(?:\s+you)?\s+for\s+watching[.!?]*$", re.IGNORECASE)
+
 # --- オンセット検出（spectral flux）パラメータ ---
 SR = 16000            # 解析サンプルレート [Hz]
 N_FFT = 1024          # STFT 窓長
@@ -175,8 +184,45 @@ def whisper_words(mp3, cache_dir, song_id, force):
         log("3/8", f"Whisper 完了: {json_path}")
 
     data = json.loads(json_path.read_text())
+    segments = data.get("segments", [])
+
+    # Whisper は長い伴奏を、非常に低い単語確率で "Music" や "Thank" などの
+    # 1語として繰り返し誤認することがある。同じ曲内で3回以上繰り返された
+    # 「高い無音確率 + 低い単語確率 + 1語だけ」のセグメントに限って除外する。
+    suspicious = {}
+    for i, seg in enumerate(segments):
+        seg_words = seg.get("words", [])
+        if len(seg_words) != 1:
+            continue
+        word = seg_words[0]
+        token = display_word(word.get("word", ""))
+        if (token
+                and float(seg.get("no_speech_prob", 0.0)) >= HALLUCINATION_NO_SPEECH
+                and float(word.get("probability", 1.0)) < HALLUCINATION_WORD_PROB):
+            suspicious.setdefault(token, []).append(i)
+    repeated_rejected = {
+        i for indices in suspicious.values()
+        if len(indices) >= HALLUCINATION_REPEAT_COUNT
+        for i in indices
+    }
+    outro_rejected = {
+        i for i, seg in enumerate(segments)
+        if float(seg.get("no_speech_prob", 0.0)) >= HALLUCINATION_NO_SPEECH
+        and OUTRO_HALLUCINATION_RE.fullmatch(seg.get("text", "").strip())
+    }
+    rejected = repeated_rejected | outro_rejected
+    if rejected:
+        details = []
+        if repeated_rejected:
+            labels = sorted({display_word(segments[i]["words"][0]["word"])
+                             for i in repeated_rejected})
+            details.append(f"反復語 {', '.join(labels)}: {len(repeated_rejected)}件")
+        if outro_rejected:
+            details.append(f"終端定型句: {len(outro_rejected)}件")
+        log("3/8", f"音声認識の誤認識を除外 ({'; '.join(details)})")
+
     words = [(w["word"].strip(), float(w["start"]))
-             for seg in data.get("segments", [])
+             for i, seg in enumerate(segments) if i not in rejected
              for w in seg.get("words", [])]
     if not words:
         die("Whisper が単語を1つも検出できませんでした（音源を確認してください）")

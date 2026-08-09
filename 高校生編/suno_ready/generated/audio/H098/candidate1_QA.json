@@ -1,0 +1,183 @@
+{
+  "schema_version": 2,
+  "sheet": "高校生編/suno_ready/H046-H160/H098.md",
+  "audio": "高校生編/suno_ready/generated/audio/H098/candidate1-full.mp3",
+  "model": "small",
+  "audio_duration": 103.6,
+  "verdict": "PASS",
+  "reached_expected_ending": true,
+  "transcribed_to_expected_ratio": 1.0063,
+  "expected_words": 159,
+  "transcribed_words": 160,
+  "matched_words": 157,
+  "coverage": 0.9874,
+  "precision": 0.9812,
+  "first_matched_expected_index": 0,
+  "last_matched_expected_index": 158,
+  "longest_missing_run": 1,
+  "largest_missing_runs": [
+    {
+      "start": 2,
+      "length": 1,
+      "words": [
+        "thirty"
+      ]
+    },
+    {
+      "start": 37,
+      "length": 1,
+      "words": [
+        "smartphone"
+      ]
+    }
+  ],
+  "replacement_count": 1,
+  "replacement_spans": [
+    {
+      "expected_start": 37,
+      "actual_start": 37,
+      "expected": [
+        "smartphone"
+      ],
+      "actual": [
+        "smart",
+        "phone"
+      ],
+      "actual_confidence": 0.6299,
+      "substitution_words": 1,
+      "has_content_word": true
+    }
+  ],
+  "insertion_spans": [
+    {
+      "expected_start": 29,
+      "actual_start": 28,
+      "expected": [],
+      "actual": [
+        "our"
+      ],
+      "actual_confidence": 0.0095
+    }
+  ],
+  "deletion_spans": [
+    {
+      "expected_start": 2,
+      "actual_start": 2,
+      "expected": [
+        "thirty"
+      ],
+      "actual": []
+    }
+  ],
+  "high_confidence_replacement_count": 0,
+  "suspicious_substitution_words": 0,
+  "suspicious_content_substitution": false,
+  "transcript": "in just 30 years technology has entirely changed our daily life electronic devices are beside us from the moment we wake until we sleep in the morning the alarm our rings and we check the news on a smart phone. We pay for breakfast by electronic payment and are guided to the office by the navigation of our automobile. At the office, equipment has been installed to handle vast amounts of data. Meetings are held remotely and documents are signed electronically. The electrification of vehicles is expected to reduce exhaust emissions And make city air considerably cleaner Battery technology is being enhanced at a rapid pace On the other hand, the problems of privacy loss And the digital divide are growing more serious To distribute the benefits of technology Fairly has become an obligation of society Technology is something that enables, not something that rules Whether we master technology or are dominated by it That choice is always in our hands",
+  "segments": [
+    {
+      "start": 9.82,
+      "end": 20.28,
+      "text": "in just 30 years technology has entirely changed our daily life electronic devices"
+    },
+    {
+      "start": 20.28,
+      "end": 28.04,
+      "text": "are beside us from the moment we wake until we sleep in the morning the alarm"
+    },
+    {
+      "start": 28.04,
+      "end": 30.84,
+      "text": "our rings and we check the news on a smart phone."
+    },
+    {
+      "start": 31.68,
+      "end": 33.42,
+      "text": "We pay for breakfast by electronic payment"
+    },
+    {
+      "start": 33.42,
+      "end": 35.7,
+      "text": "and are guided to the office by the navigation"
+    },
+    {
+      "start": 35.7,
+      "end": 36.94,
+      "text": "of our automobile."
+    },
+    {
+      "start": 38.08,
+      "end": 41.06,
+      "text": "At the office, equipment has been installed"
+    },
+    {
+      "start": 41.06,
+      "end": 43.78,
+      "text": "to handle vast amounts of data."
+    },
+    {
+      "start": 45.52,
+      "end": 48.02,
+      "text": "Meetings are held remotely and documents"
+    },
+    {
+      "start": 48.02,
+      "end": 49.54,
+      "text": "are signed electronically."
+    },
+    {
+      "start": 49.96,
+      "end": 51.78,
+      "text": "The electrification of vehicles"
+    },
+    {
+      "start": 51.78,
+      "end": 54.64,
+      "text": "is expected to reduce exhaust emissions"
+    },
+    {
+      "start": 54.64,
+      "end": 58.28,
+      "text": "And make city air considerably cleaner"
+    },
+    {
+      "start": 58.28,
+      "end": 64.12,
+      "text": "Battery technology is being enhanced at a rapid pace"
+    },
+    {
+      "start": 64.64,
+      "end": 67.74,
+      "text": "On the other hand, the problems of privacy loss"
+    },
+    {
+      "start": 67.74,
+      "end": 72.68,
+      "text": "And the digital divide are growing more serious"
+    },
+    {
+      "start": 72.68,
+      "end": 76.58,
+      "text": "To distribute the benefits of technology"
+    },
+    {
+      "start": 76.58,
+      "end": 82.1,
+      "text": "Fairly has become an obligation of society"
+    },
+    {
+      "start": 82.1,
+      "end": 88.82,
+      "text": "Technology is something that enables, not something that rules"
+    },
+    {
+      "start": 88.82,
+      "end": 94.36,
+      "text": "Whether we master technology or are dominated by it"
+    },
+    {
+      "start": 95.1,
+      "end": 98.6,
+      "text": "That choice is always in our hands"
+    }
+  ]
+}

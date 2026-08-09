@@ -1,0 +1,875 @@
+{
+  "lesson": 4,
+  "source_config": "中学生編/mio_video_l2_l10_sentence_v2/L4/planning/lesson.json",
+  "title_en": "Lesson 4  My New Friend Tom",
+  "title_ja": "新しい友達トム",
+  "policy": "Only canonical new vocabulary from the current lesson may appear in English. No whole-course or easy-word fallback. Every selected English word is embedded directly in the mixed Japanese body text; parenthetical glosses are prohibited. All Japanese kanji have hiragana ruby; every English segment has a Japanese meaning ruby.",
+  "line_count": 9,
+  "lines": [
+    {
+      "line": 1,
+      "english": "Today, a new boy came to our class.",
+      "source_ja": "今日、わたしたちのクラスに新しい男の子が来ました。",
+      "display_ja": "今日、わたしたちのクラスに新しい男の子が来ました。",
+      "corrected_translation": false,
+      "mixed": "Today、わたしたちのクラスに新しい boy が came しました。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "Today",
+          "ruby": "今日"
+        },
+        {
+          "type": "ja",
+          "text": "、わたしたちのクラスに新しい ",
+          "parts": [
+            {
+              "text": "、わたしたちのクラスに",
+              "ruby": ""
+            },
+            {
+              "text": "新",
+              "ruby": "あたら"
+            },
+            {
+              "text": "しい",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "boy",
+          "ruby": "男の子"
+        },
+        {
+          "type": "ja",
+          "text": " が ",
+          "parts": [
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "came",
+          "ruby": "来ました"
+        },
+        {
+          "type": "ja",
+          "text": " しました",
+          "parts": [
+            {
+              "text": "しました",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "ja",
+          "text": "。",
+          "parts": [
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words",
+      "canonical_targets": [
+        {
+          "english": "Today",
+          "canonical_word": "Today",
+          "meaning": "今日"
+        },
+        {
+          "english": "boy",
+          "canonical_word": "boy",
+          "meaning": "男の子"
+        },
+        {
+          "english": "came",
+          "canonical_word": "came",
+          "meaning": "来た"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Today",
+          "reading": "今日",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "Today",
+          "canonical_meaning": "今日"
+        },
+        {
+          "english": "boy",
+          "reading": "男の子",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "boy",
+          "canonical_meaning": "男の子"
+        },
+        {
+          "english": "came",
+          "reading": "来ました",
+          "source": "canonical_new_word_morph",
+          "canonical_word": "came",
+          "canonical_meaning": "来た"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "english": "His name is Tom.",
+      "source_ja": "名前はトムです。",
+      "display_ja": "名前はトムです。",
+      "corrected_translation": false,
+      "mixed": "名前はトムです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "名前はトムです。",
+          "parts": [
+            {
+              "text": "名前",
+              "ruby": "なまえ"
+            },
+            {
+              "text": "はトムです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    },
+    {
+      "line": 3,
+      "english": "Tom looks very kind, and his voice sounds friendly.",
+      "source_ja": "トムはとても親切そうで、声も優しく聞こえます。",
+      "display_ja": "トムはとても親切そうで、声も優しく聞こえます。",
+      "corrected_translation": false,
+      "mixed": "トムはとても kind に looks、声も friendly に sounds します。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "トムはとても ",
+          "parts": [
+            {
+              "text": "トムはとても",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "kind",
+          "ruby": "やさしい"
+        },
+        {
+          "type": "ja",
+          "text": " に ",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "looks",
+          "ruby": "〜に見える"
+        },
+        {
+          "type": "ja",
+          "text": "、声も ",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "声",
+              "ruby": "こえ"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "friendly",
+          "ruby": "親しみやすい"
+        },
+        {
+          "type": "ja",
+          "text": " に ",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "sounds",
+          "ruby": "〜に聞こえる"
+        },
+        {
+          "type": "ja",
+          "text": " します。",
+          "parts": [
+            {
+              "text": "します。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "looks",
+          "canonical_word": "looks",
+          "meaning": "〜に見える"
+        },
+        {
+          "english": "kind",
+          "canonical_word": "kind",
+          "meaning": "やさしい"
+        },
+        {
+          "english": "sounds",
+          "canonical_word": "sounds",
+          "meaning": "〜に聞こえる"
+        },
+        {
+          "english": "friendly",
+          "canonical_word": "friendly",
+          "meaning": "親しみやすい"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "looks",
+          "reading": "〜に見える",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "looks",
+          "canonical_meaning": "〜に見える"
+        },
+        {
+          "english": "kind",
+          "reading": "やさしい",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "kind",
+          "canonical_meaning": "やさしい"
+        },
+        {
+          "english": "sounds",
+          "reading": "〜に聞こえる",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "sounds",
+          "canonical_meaning": "〜に聞こえる"
+        },
+        {
+          "english": "friendly",
+          "reading": "親しみやすい",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "friendly",
+          "canonical_meaning": "親しみやすい"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "english": "At first, he felt shy, and he did not say much.",
+      "source_ja": "初めは恥ずかしそうで、あまり話しませんでした。",
+      "display_ja": "初めは恥ずかしそうで、あまり話しませんでした。",
+      "corrected_translation": false,
+      "mixed": "At first、彼は felt shy で、あまり話しませんでした。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "At first",
+          "ruby": "最初は"
+        },
+        {
+          "type": "ja",
+          "text": "、彼は ",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "felt",
+          "ruby": "感じた"
+        },
+        {
+          "type": "ja",
+          "text": " ",
+          "parts": []
+        },
+        {
+          "type": "en",
+          "text": "shy",
+          "ruby": "内気な"
+        },
+        {
+          "type": "ja",
+          "text": " で、あまり話しませんでした。",
+          "parts": [
+            {
+              "text": "で、あまり",
+              "ruby": ""
+            },
+            {
+              "text": "話",
+              "ruby": "はな"
+            },
+            {
+              "text": "しませんでした。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "At first",
+          "canonical_word": "at first",
+          "meaning": "最初は"
+        },
+        {
+          "english": "felt",
+          "canonical_word": "felt",
+          "meaning": "感じた"
+        },
+        {
+          "english": "shy",
+          "canonical_word": "shy",
+          "meaning": "内気な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "At first",
+          "reading": "最初は",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "at first",
+          "canonical_meaning": "最初は"
+        },
+        {
+          "english": "felt",
+          "reading": "感じた",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "felt",
+          "canonical_meaning": "感じた"
+        },
+        {
+          "english": "shy",
+          "reading": "内気な",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "shy",
+          "canonical_meaning": "内気な"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "english": "But by lunch time, he soon got happy.",
+      "source_ja": "でも昼休みには、すぐに明るくなりました。",
+      "display_ja": "でも昼休みには、すぐに明るくなりました。",
+      "corrected_translation": false,
+      "mixed": "でも昼休みには、彼は soon 明るい表情に got しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "でも昼休みには、彼は ",
+          "parts": [
+            {
+              "text": "でも",
+              "ruby": ""
+            },
+            {
+              "text": "昼休",
+              "ruby": "ひるやす"
+            },
+            {
+              "text": "みには、",
+              "ruby": ""
+            },
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "soon",
+          "ruby": "すぐに"
+        },
+        {
+          "type": "ja",
+          "text": " 明るい表情に ",
+          "parts": [
+            {
+              "text": "明",
+              "ruby": "あか"
+            },
+            {
+              "text": "るい",
+              "ruby": ""
+            },
+            {
+              "text": "表情",
+              "ruby": "ひょうじょう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "got",
+          "ruby": "〜になった"
+        },
+        {
+          "type": "ja",
+          "text": " しました。",
+          "parts": [
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "soon",
+          "canonical_word": "soon",
+          "meaning": "すぐに"
+        },
+        {
+          "english": "got",
+          "canonical_word": "got",
+          "meaning": "〜になった"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "soon",
+          "reading": "すぐに",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "soon",
+          "canonical_meaning": "すぐに"
+        },
+        {
+          "english": "got",
+          "reading": "〜になった",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "got",
+          "canonical_meaning": "〜になった"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "english": "His stories were funny, and we all laughed together.",
+      "source_ja": "話がおもしろくて、みんなで笑いました。",
+      "display_ja": "話がおもしろくて、みんなで笑いました。",
+      "corrected_translation": false,
+      "mixed": "彼の stories は funny で、みんな laughed しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "彼の ",
+          "parts": [
+            {
+              "text": "彼",
+              "ruby": "かれ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "stories",
+          "ruby": "話"
+        },
+        {
+          "type": "ja",
+          "text": " は ",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "funny",
+          "ruby": "面白い"
+        },
+        {
+          "type": "ja",
+          "text": " で、みんな ",
+          "parts": [
+            {
+              "text": "で、みんな",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "laughed",
+          "ruby": "笑った"
+        },
+        {
+          "type": "ja",
+          "text": " しました。",
+          "parts": [
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "stories",
+          "canonical_word": "stories",
+          "meaning": "話"
+        },
+        {
+          "english": "funny",
+          "canonical_word": "funny",
+          "meaning": "面白い"
+        },
+        {
+          "english": "laughed",
+          "canonical_word": "laughed",
+          "meaning": "笑った"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "stories",
+          "reading": "話",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "stories",
+          "canonical_meaning": "話"
+        },
+        {
+          "english": "funny",
+          "reading": "面白い",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "funny",
+          "canonical_meaning": "面白い"
+        },
+        {
+          "english": "laughed",
+          "reading": "笑った",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "laughed",
+          "canonical_meaning": "笑った"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "english": "By the end of the day, Tom and I became good friends.",
+      "source_ja": "一日の終わりには、トムとわたしは仲の良い友達になりました。",
+      "display_ja": "一日の終わりには、トムとわたしは仲の良い友達になりました。",
+      "corrected_translation": false,
+      "mixed": "一日の終わりには、トムとわたしは friends に became しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "一日の終わりには、トムとわたしは ",
+          "parts": [
+            {
+              "text": "一日",
+              "ruby": "いちにち"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "終",
+              "ruby": "お"
+            },
+            {
+              "text": "わりには、トムとわたしは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "friends",
+          "ruby": "友だち"
+        },
+        {
+          "type": "ja",
+          "text": " に ",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "became",
+          "ruby": "〜になった"
+        },
+        {
+          "type": "ja",
+          "text": " しました。",
+          "parts": [
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "became",
+          "canonical_word": "became",
+          "meaning": "〜になった"
+        },
+        {
+          "english": "friends",
+          "canonical_word": "friends",
+          "meaning": "友だち"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "became",
+          "reading": "〜になった",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "became",
+          "canonical_meaning": "〜になった"
+        },
+        {
+          "english": "friends",
+          "reading": "友だち",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "friends",
+          "canonical_meaning": "友だち"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "english": "On the way home, the sky became dark.",
+      "source_ja": "帰り道、空は暗くなりました。",
+      "display_ja": "帰り道、空は暗くなりました。",
+      "corrected_translation": false,
+      "mixed": "家へ帰る way で、sky は dark に became しました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "家へ帰る ",
+          "parts": [
+            {
+              "text": "家",
+              "ruby": "いえ"
+            },
+            {
+              "text": "へ",
+              "ruby": ""
+            },
+            {
+              "text": "帰",
+              "ruby": "かえ"
+            },
+            {
+              "text": "る",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "way",
+          "ruby": "道"
+        },
+        {
+          "type": "ja",
+          "text": " で、",
+          "parts": [
+            {
+              "text": "で、",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "sky",
+          "ruby": "空"
+        },
+        {
+          "type": "ja",
+          "text": " は ",
+          "parts": [
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "dark",
+          "ruby": "暗い"
+        },
+        {
+          "type": "ja",
+          "text": " に ",
+          "parts": [
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "became",
+          "ruby": "〜になった"
+        },
+        {
+          "type": "ja",
+          "text": " しました。",
+          "parts": [
+            {
+              "text": "しました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "canonical_new_words_inline_manual",
+      "canonical_targets": [
+        {
+          "english": "way",
+          "canonical_word": "way",
+          "meaning": "道"
+        },
+        {
+          "english": "sky",
+          "canonical_word": "sky",
+          "meaning": "空"
+        },
+        {
+          "english": "became",
+          "canonical_word": "became",
+          "meaning": "〜になった"
+        },
+        {
+          "english": "dark",
+          "canonical_word": "dark",
+          "meaning": "暗い"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "way",
+          "reading": "道",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "way",
+          "canonical_meaning": "道"
+        },
+        {
+          "english": "sky",
+          "reading": "空",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "sky",
+          "canonical_meaning": "空"
+        },
+        {
+          "english": "became",
+          "reading": "〜になった",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "became",
+          "canonical_meaning": "〜になった"
+        },
+        {
+          "english": "dark",
+          "reading": "暗い",
+          "source": "canonical_new_word_inline_manual",
+          "canonical_word": "dark",
+          "canonical_meaning": "暗い"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "english": "But I was very happy.",
+      "source_ja": "でも、わたしはとてもうれしかったです。",
+      "display_ja": "でも、わたしはとてもうれしかったです。",
+      "corrected_translation": false,
+      "mixed": "でも、わたしはとてもうれしかったです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "でも、わたしはとてもうれしかったです。",
+          "parts": [
+            {
+              "text": "でも、わたしはとてもうれしかったです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "replacement_source": "japanese_only_no_canonical_target",
+      "canonical_targets": [],
+      "replacements": []
+    }
+  ]
+}

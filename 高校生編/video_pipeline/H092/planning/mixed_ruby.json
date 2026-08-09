@@ -1,0 +1,1379 @@
+{
+  "lesson": "H092",
+  "title_ja": "表現の自由",
+  "policy": "Exact adopted lyric; word-synchronous fixed-size color-only lyric highlight. Canonical new vocabulary from the current lesson is woven into the Japanese meaning line wherever the meaning remains clear and natural, including meaning-aligned inflections or close lyric synonyms. No whole-course or easy-word fallback. Lines without a safe canonical replacement remain natural Japanese. Japanese-meaning ruby appears on every English segment and hiragana ruby on every Japanese kanji.",
+  "translation_source": "Exact adopted lyric Japanese translation; current-lesson canonical Teacher Tacos English vocabulary replacement and ruby validation",
+  "line_count": 16,
+  "canonical_target_lines": 14,
+  "mixed_lines": 11,
+  "japanese_only_lines": 5,
+  "noncanonical_replacements": 0,
+  "lines": [
+    {
+      "line": 1,
+      "start": 4.82,
+      "end": 10.2,
+      "english": "Freedom of expression is one of the essential pillars of democracy.",
+      "japanese": "表現の自由は民主主義の重要な柱の 1 つです。",
+      "mixed": "expression の自由は民主主義の重要な柱の 1 つです。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "expression",
+          "ruby": "表現"
+        },
+        {
+          "type": "ja",
+          "text": " の自由は民主主義の重要な柱の 1 つです。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "自由",
+              "ruby": "じゆう"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "民主",
+              "ruby": "みんしゅ"
+            },
+            {
+              "text": "主義",
+              "ruby": "しゅぎ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "重要",
+              "ruby": "じゅうよう"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "柱",
+              "ruby": "はしら"
+            },
+            {
+              "text": "の1つです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "expression",
+          "canonical_word": "expression",
+          "meaning": "表現"
+        },
+        {
+          "english": "essential",
+          "canonical_word": "essential",
+          "meaning": "本質的な"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "expression",
+          "reading": "表現",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "expression",
+          "canonical_meaning": "表現"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 2,
+      "start": 11.0,
+      "end": 13.44,
+      "english": "But how far should that freedom extend?",
+      "japanese": "しかし、その自由はどこまで拡張されるべきでしょうか?",
+      "mixed": "しかし、その自由はどこまで拡張されるべきでしょうか?",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "しかし、その自由はどこまで拡張されるべきでしょうか?",
+          "parts": [
+            {
+              "text": "しかし、その",
+              "ruby": ""
+            },
+            {
+              "text": "自由",
+              "ruby": "じゆう"
+            },
+            {
+              "text": "はどこまで",
+              "ruby": ""
+            },
+            {
+              "text": "拡張",
+              "ruby": "かくちょう"
+            },
+            {
+              "text": "されるべきでしょうか?",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 3,
+      "start": 15.4,
+      "end": 21.8,
+      "english": "This is one of the most controversial questions in modern society.",
+      "japanese": "これは現代社会で最も物議を醸している質問の 1 つです。",
+      "mixed": "これは現代社会で最も物議を醸している質問の 1 つです。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "これは現代社会で最も物議を醸している質問の 1 つです。",
+          "parts": [
+            {
+              "text": "これは",
+              "ruby": ""
+            },
+            {
+              "text": "現代",
+              "ruby": "げんだい"
+            },
+            {
+              "text": "社会",
+              "ruby": "しゃかい"
+            },
+            {
+              "text": "で",
+              "ruby": ""
+            },
+            {
+              "text": "最",
+              "ruby": "もっと"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "物議",
+              "ruby": "ぶつぎ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "醸",
+              "ruby": "かも"
+            },
+            {
+              "text": "している",
+              "ruby": ""
+            },
+            {
+              "text": "質問",
+              "ruby": "しつもん"
+            },
+            {
+              "text": "の1つです。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "controversial",
+          "canonical_word": "controversial",
+          "meaning": "論争の的の"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 4,
+      "start": 23.36,
+      "end": 29.78,
+      "english": "Hate speech, discriminatory expression, and deliberate misinformation.",
+      "japanese": "ヘイトスピーチ、差別的表現、意図的な誤った情報。",
+      "mixed": "ヘイトスピーチ、差別的 expression、意図的な誤った情報。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ヘイトスピーチ、差別的 ",
+          "parts": [
+            {
+              "text": "ヘイトスピーチ、",
+              "ruby": ""
+            },
+            {
+              "text": "差別",
+              "ruby": "さべつ"
+            },
+            {
+              "text": "的",
+              "ruby": "てき"
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "expression",
+          "ruby": "表現"
+        },
+        {
+          "type": "ja",
+          "text": "、意図的な誤った情報。",
+          "parts": [
+            {
+              "text": "、",
+              "ruby": ""
+            },
+            {
+              "text": "意図",
+              "ruby": "いと"
+            },
+            {
+              "text": "的",
+              "ruby": "てき"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "誤",
+              "ruby": "あやま"
+            },
+            {
+              "text": "った",
+              "ruby": ""
+            },
+            {
+              "text": "情報",
+              "ruby": "じょうほう"
+            },
+            {
+              "text": "。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "expression",
+          "canonical_word": "expression",
+          "meaning": "表現"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "expression",
+          "reading": "表現",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "expression",
+          "canonical_meaning": "表現"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 5,
+      "start": 31.64,
+      "end": 35.46,
+      "english": "Should these fall within the range of free speech?",
+      "japanese": "これらは言論の自由の範囲内にあるのでしょうか？",
+      "mixed": "これらは言論の自由の範囲内にあるのでしょうか？",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "これらは言論の自由の範囲内にあるのでしょうか？",
+          "parts": [
+            {
+              "text": "これらは",
+              "ruby": ""
+            },
+            {
+              "text": "言論",
+              "ruby": "げんろん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "自由",
+              "ruby": "じゆう"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "範囲",
+              "ruby": "はんい"
+            },
+            {
+              "text": "内",
+              "ruby": "ない"
+            },
+            {
+              "text": "にあるのでしょうか？",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [],
+      "replacements": [],
+      "preparation": "japanese_only_no_canonical_target"
+    },
+    {
+      "line": 6,
+      "start": 37.64,
+      "end": 43.28,
+      "english": "Many countries have placed limitations on forms of expression that cause harm.",
+      "japanese": "多くの国では、危害を及ぼす表現形式に制限を設けています。",
+      "mixed": "多くの国では、危害を及ぼす expression 形式に limitations を設けています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "多くの国では、危害を及ぼす ",
+          "parts": [
+            {
+              "text": "多",
+              "ruby": "おお"
+            },
+            {
+              "text": "くの",
+              "ruby": ""
+            },
+            {
+              "text": "国",
+              "ruby": "くに"
+            },
+            {
+              "text": "では、",
+              "ruby": ""
+            },
+            {
+              "text": "危害",
+              "ruby": "きがい"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "及",
+              "ruby": "およ"
+            },
+            {
+              "text": "ぼす",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "expression",
+          "ruby": "表現"
+        },
+        {
+          "type": "ja",
+          "text": " 形式に ",
+          "parts": [
+            {
+              "text": "形式",
+              "ruby": "けいしき"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "limitations",
+          "ruby": "制限"
+        },
+        {
+          "type": "ja",
+          "text": " を設けています。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "設",
+              "ruby": "もう"
+            },
+            {
+              "text": "けています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "limitations",
+          "canonical_word": "limitation",
+          "meaning": "制限"
+        },
+        {
+          "english": "expression",
+          "canonical_word": "expression",
+          "meaning": "表現"
+        },
+        {
+          "english": "harm",
+          "canonical_word": "harm",
+          "meaning": "害"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "expression",
+          "reading": "表現",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "expression",
+          "canonical_meaning": "表現"
+        },
+        {
+          "english": "limitations",
+          "reading": "制限",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "limitation",
+          "canonical_meaning": "制限"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 7,
+      "start": 43.28,
+      "end": 48.36,
+      "english": "On the other hand, regulation carries the danger of excess.",
+      "japanese": "一方で、規制には行き過ぎの危険性も伴います。",
+      "mixed": "一方で、規制には行き過ぎの危険性も伴います。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "一方で、規制には行き過ぎの危険性も伴います。",
+          "parts": [
+            {
+              "text": "一方",
+              "ruby": "いっぽう"
+            },
+            {
+              "text": "で、",
+              "ruby": ""
+            },
+            {
+              "text": "規制",
+              "ruby": "きせい"
+            },
+            {
+              "text": "には",
+              "ruby": ""
+            },
+            {
+              "text": "行",
+              "ruby": "い"
+            },
+            {
+              "text": "き",
+              "ruby": ""
+            },
+            {
+              "text": "過",
+              "ruby": "す"
+            },
+            {
+              "text": "ぎの",
+              "ruby": ""
+            },
+            {
+              "text": "危険",
+              "ruby": "きけん"
+            },
+            {
+              "text": "性",
+              "ruby": "せい"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "伴",
+              "ruby": "ともな"
+            },
+            {
+              "text": "います。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "excess",
+          "canonical_word": "excess",
+          "meaning": "過剰"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 8,
+      "start": 48.36,
+      "end": 57.74,
+      "english": "If a government controls expression too much, citizens become afraid and stop raising their voices.",
+      "japanese": "政府が表現を規制しすぎると国民は恐怖を感じて声を上げなくなる。",
+      "mixed": "政府が expression を規制しすぎると国民は恐怖を感じて声を上げなくなる。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "政府が ",
+          "parts": [
+            {
+              "text": "政府",
+              "ruby": "せいふ"
+            },
+            {
+              "text": "が",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "expression",
+          "ruby": "表現"
+        },
+        {
+          "type": "ja",
+          "text": " を規制しすぎると国民は恐怖を感じて声を上げなくなる。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "規制",
+              "ruby": "きせい"
+            },
+            {
+              "text": "しすぎると",
+              "ruby": ""
+            },
+            {
+              "text": "国民",
+              "ruby": "こくみん"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "恐怖",
+              "ruby": "きょうふ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "感",
+              "ruby": "かん"
+            },
+            {
+              "text": "じて",
+              "ruby": ""
+            },
+            {
+              "text": "声",
+              "ruby": "こえ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "上",
+              "ruby": "あ"
+            },
+            {
+              "text": "げなくなる。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "expression",
+          "canonical_word": "expression",
+          "meaning": "表現"
+        },
+        {
+          "english": "afraid",
+          "canonical_word": "afraid",
+          "meaning": "恐れて"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "expression",
+          "reading": "表現",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "expression",
+          "canonical_meaning": "表現"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 9,
+      "start": 58.92,
+      "end": 65.06,
+      "english": "Finding the balance between freedom and safety is extremely difficult.",
+      "japanese": "自由と安全のバランスを見つけるのは非常に困難です。",
+      "mixed": "自由と安全のバランスを見つけるのは非常に困難です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "自由と安全のバランスを見つけるのは非常に困難です。",
+          "parts": [
+            {
+              "text": "自由",
+              "ruby": "じゆう"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            },
+            {
+              "text": "安全",
+              "ruby": "あんぜん"
+            },
+            {
+              "text": "のバランスを",
+              "ruby": ""
+            },
+            {
+              "text": "見",
+              "ruby": "み"
+            },
+            {
+              "text": "つけるのは",
+              "ruby": ""
+            },
+            {
+              "text": "非常",
+              "ruby": "ひじょう"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "困難",
+              "ruby": "こんなん"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "extremely",
+          "canonical_word": "extremely",
+          "meaning": "極端に"
+        }
+      ],
+      "replacements": [],
+      "preparation": "japanese_only_no_safe_canonical_span"
+    },
+    {
+      "line": 10,
+      "start": 65.06,
+      "end": 70.8,
+      "english": "The emergence of the internet has made this issue considerably more complex.",
+      "japanese": "インターネットの出現により、この問題はかなり複雑になりました。",
+      "mixed": "インターネットの emergence により、この問題は considerably 複雑になりました。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "インターネットの ",
+          "parts": [
+            {
+              "text": "インターネットの",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "emergence",
+          "ruby": "出現"
+        },
+        {
+          "type": "ja",
+          "text": " により、この問題は ",
+          "parts": [
+            {
+              "text": "により、この",
+              "ruby": ""
+            },
+            {
+              "text": "問題",
+              "ruby": "もんだい"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "considerably",
+          "ruby": "かなり"
+        },
+        {
+          "type": "ja",
+          "text": " 複雑になりました。",
+          "parts": [
+            {
+              "text": "複雑",
+              "ruby": "ふくざつ"
+            },
+            {
+              "text": "になりました。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "emergence",
+          "canonical_word": "emergence",
+          "meaning": "出現"
+        },
+        {
+          "english": "considerably",
+          "canonical_word": "considerably",
+          "meaning": "かなり"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "emergence",
+          "reading": "出現",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "emergence",
+          "canonical_meaning": "出現"
+        },
+        {
+          "english": "considerably",
+          "reading": "かなり",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "considerably",
+          "canonical_meaning": "かなり"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 11,
+      "start": 70.8,
+      "end": 79.28,
+      "english": "A statement posted on social media spreads instantly, and removing it is virtually impossible.",
+      "japanese": "ソーシャルメディアに投稿された発言は瞬時に拡散し、削除することは事実上不可能です。",
+      "mixed": "ソーシャルメディアに投稿された発言は瞬時に拡散し、削除することは virtually 不可能です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "ソーシャルメディアに投稿された発言は瞬時に拡散し、削除することは ",
+          "parts": [
+            {
+              "text": "ソーシャルメディアに",
+              "ruby": ""
+            },
+            {
+              "text": "投稿",
+              "ruby": "とうこう"
+            },
+            {
+              "text": "された",
+              "ruby": ""
+            },
+            {
+              "text": "発言",
+              "ruby": "はつげん"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "瞬時",
+              "ruby": "しゅんじ"
+            },
+            {
+              "text": "に",
+              "ruby": ""
+            },
+            {
+              "text": "拡散",
+              "ruby": "かくさん"
+            },
+            {
+              "text": "し、",
+              "ruby": ""
+            },
+            {
+              "text": "削除",
+              "ruby": "さくじょ"
+            },
+            {
+              "text": "することは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "virtually",
+          "ruby": "事実上"
+        },
+        {
+          "type": "ja",
+          "text": " 不可能です。",
+          "parts": [
+            {
+              "text": "不",
+              "ruby": "ふ"
+            },
+            {
+              "text": "可能",
+              "ruby": "かのう"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "instantly",
+          "canonical_word": "instantly",
+          "meaning": "即座に"
+        },
+        {
+          "english": "virtually",
+          "canonical_word": "virtually",
+          "meaning": "事実上"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "virtually",
+          "reading": "事実上",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "virtually",
+          "canonical_meaning": "事実上"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 12,
+      "start": 81.0,
+      "end": 86.58,
+      "english": "Activists continue to fight to protect freedom of expression.",
+      "japanese": "活動家たちは表現の自由を守るために闘い続けている。",
+      "mixed": "Activists たちは expression の自由を守るために闘い続けている。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "Activists",
+          "ruby": "活動家"
+        },
+        {
+          "type": "ja",
+          "text": " たちは ",
+          "parts": [
+            {
+              "text": "たちは",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "expression",
+          "ruby": "表現"
+        },
+        {
+          "type": "ja",
+          "text": " の自由を守るために闘い続けている。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "自由",
+              "ruby": "じゆう"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "守",
+              "ruby": "まも"
+            },
+            {
+              "text": "るために",
+              "ruby": ""
+            },
+            {
+              "text": "闘",
+              "ruby": "たたか"
+            },
+            {
+              "text": "い",
+              "ruby": ""
+            },
+            {
+              "text": "続",
+              "ruby": "つづ"
+            },
+            {
+              "text": "けている。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "Activists",
+          "canonical_word": "Activist",
+          "meaning": "活動家"
+        },
+        {
+          "english": "expression",
+          "canonical_word": "expression",
+          "meaning": "表現"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "Activists",
+          "reading": "活動家",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "Activist",
+          "canonical_meaning": "活動家"
+        },
+        {
+          "english": "expression",
+          "reading": "表現",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "expression",
+          "canonical_meaning": "表現"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 13,
+      "start": 88.3,
+      "end": 97.66,
+      "english": "At the same time, there is a growing demand for laws that protect victims of harmful speech.",
+      "japanese": "同時に、有害な言論の被害者を保護する法律の要求も高まっています。",
+      "mixed": "同時に、有害な言論の victims を保護する法律の要求も高まっています。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "同時に、有害な言論の ",
+          "parts": [
+            {
+              "text": "同時",
+              "ruby": "どうじ"
+            },
+            {
+              "text": "に、",
+              "ruby": ""
+            },
+            {
+              "text": "有害",
+              "ruby": "ゆうがい"
+            },
+            {
+              "text": "な",
+              "ruby": ""
+            },
+            {
+              "text": "言論",
+              "ruby": "げんろん"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "victims",
+          "ruby": "被害者"
+        },
+        {
+          "type": "ja",
+          "text": " を保護する法律の要求も高まっています。",
+          "parts": [
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "保護",
+              "ruby": "ほご"
+            },
+            {
+              "text": "する",
+              "ruby": ""
+            },
+            {
+              "text": "法律",
+              "ruby": "ほうりつ"
+            },
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "要求",
+              "ruby": "ようきゅう"
+            },
+            {
+              "text": "も",
+              "ruby": ""
+            },
+            {
+              "text": "高",
+              "ruby": "たか"
+            },
+            {
+              "text": "まっています。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "victims",
+          "canonical_word": "victim",
+          "meaning": "被害者"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "victims",
+          "reading": "被害者",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "victim",
+          "canonical_meaning": "被害者"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 14,
+      "start": 98.76,
+      "end": 107.02,
+      "english": "What matters most is the attitude of listening even to opinions that are contrary to one's own.",
+      "japanese": "大切なのは、自分と反対の意見でも聞く姿勢です。",
+      "mixed": "大切なのは、自分と contrary 意見でも聞く姿勢です。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "大切なのは、自分と ",
+          "parts": [
+            {
+              "text": "大切",
+              "ruby": "たいせつ"
+            },
+            {
+              "text": "なのは、",
+              "ruby": ""
+            },
+            {
+              "text": "自分",
+              "ruby": "じぶん"
+            },
+            {
+              "text": "と",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "contrary",
+          "ruby": "反対の"
+        },
+        {
+          "type": "ja",
+          "text": " 意見でも聞く姿勢です。",
+          "parts": [
+            {
+              "text": "意見",
+              "ruby": "いけん"
+            },
+            {
+              "text": "でも",
+              "ruby": ""
+            },
+            {
+              "text": "聞",
+              "ruby": "き"
+            },
+            {
+              "text": "く",
+              "ruby": ""
+            },
+            {
+              "text": "姿勢",
+              "ruby": "しせい"
+            },
+            {
+              "text": "です。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "attitude",
+          "canonical_word": "attitude",
+          "meaning": "態度"
+        },
+        {
+          "english": "contrary",
+          "canonical_word": "contrary",
+          "meaning": "反対の"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "contrary",
+          "reading": "反対の",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "contrary",
+          "canonical_meaning": "反対の"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 15,
+      "start": 107.02,
+      "end": 117.2,
+      "english": "So long as we maintain dialogue, society can avoid division.",
+      "japanese": "私たちが対話を続ける限り、社会は分断を避けることができます。",
+      "mixed": "私たちが対話を続ける限り、社会は分断を avoid ことができます。",
+      "runs": [
+        {
+          "type": "ja",
+          "text": "私たちが対話を続ける限り、社会は分断を ",
+          "parts": [
+            {
+              "text": "私",
+              "ruby": "わたくし"
+            },
+            {
+              "text": "たちが",
+              "ruby": ""
+            },
+            {
+              "text": "対話",
+              "ruby": "たいわ"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            },
+            {
+              "text": "続",
+              "ruby": "つづ"
+            },
+            {
+              "text": "ける",
+              "ruby": ""
+            },
+            {
+              "text": "限",
+              "ruby": "かぎ"
+            },
+            {
+              "text": "り、",
+              "ruby": ""
+            },
+            {
+              "text": "社会",
+              "ruby": "しゃかい"
+            },
+            {
+              "text": "は",
+              "ruby": ""
+            },
+            {
+              "text": "分断",
+              "ruby": "ぶんだん"
+            },
+            {
+              "text": "を",
+              "ruby": ""
+            }
+          ]
+        },
+        {
+          "type": "en",
+          "text": "avoid",
+          "ruby": "避ける"
+        },
+        {
+          "type": "ja",
+          "text": " ことができます。",
+          "parts": [
+            {
+              "text": "ことができます。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "maintain",
+          "canonical_word": "maintain",
+          "meaning": "維持する"
+        },
+        {
+          "english": "avoid",
+          "canonical_word": "avoid",
+          "meaning": "避ける"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "avoid",
+          "reading": "避ける",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "avoid",
+          "canonical_meaning": "避ける"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    },
+    {
+      "line": 16,
+      "start": 121.82,
+      "end": 128.98,
+      "english": "Freedom of expression is also the freedom to listen.",
+      "japanese": "表現の自由は、聞く自由でもあります。",
+      "mixed": "expression の自由は、聞く自由でもあります。",
+      "runs": [
+        {
+          "type": "en",
+          "text": "expression",
+          "ruby": "表現"
+        },
+        {
+          "type": "ja",
+          "text": " の自由は、聞く自由でもあります。",
+          "parts": [
+            {
+              "text": "の",
+              "ruby": ""
+            },
+            {
+              "text": "自由",
+              "ruby": "じゆう"
+            },
+            {
+              "text": "は、",
+              "ruby": ""
+            },
+            {
+              "text": "聞",
+              "ruby": "き"
+            },
+            {
+              "text": "く",
+              "ruby": ""
+            },
+            {
+              "text": "自由",
+              "ruby": "じゆう"
+            },
+            {
+              "text": "でもあります。",
+              "ruby": ""
+            }
+          ]
+        }
+      ],
+      "canonical_targets": [
+        {
+          "english": "expression",
+          "canonical_word": "expression",
+          "meaning": "表現"
+        }
+      ],
+      "replacements": [
+        {
+          "english": "expression",
+          "reading": "表現",
+          "source": "canonical_new_word_exact",
+          "canonical_word": "expression",
+          "canonical_meaning": "表現"
+        }
+      ],
+      "preparation": "canonical_new_words"
+    }
+  ]
+}
